@@ -1,0 +1,23 @@
+<span class="headline">Editing package</span>
+
+<%= error_messages_for :package %>
+<%= render_flash %>
+
+<div class="inner0">
+<% form_for(:package, @package, :url => { :action => :update }) do |f| %>
+  <p>
+    <b>Name</b><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <b>Version</b><br />
+    <%= f.text_field :version %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', distribution_package_path(@package.distribution_id, @package) %> |
+<%= link_to 'Back', distribution_package_path(@package.distribution_id, @package) %>
+</div>

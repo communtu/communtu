@@ -1,0 +1,22 @@
+<%= render_flash %>
+
+<%= dist_show @distribution, "inner0", false %>
+	<table width="100%">
+	<tr>
+	<td><b>Repositories:</b></td>
+	<td align="right">
+		<% if is_admin? %>
+			<%= link_to image_tag("/images/add.png", :size => "22x22", :border => "0"), new_distribution_repository_path(@distribution.id) %>
+		<% end %>	
+	</td></tr></table>
+<%= repository_view @distribution.repositories, "inner0" %>
+
+<%= link_to 'Back', distributions_path %> |
+<%= link_to 'View Metapackages', distribution_metapackages_path(@distribution.id) %> |
+<%= link_to 'View all Packages', (distribution_packages_path @distribution.id) %>
+<% if is_admin? %>
+	| <%= link_to 'Edit', edit_distribution_path(@distribution) %> |
+	<%= link_to('Delete', {:controller => :distributions, :action => :destroy,\
+		:id => @distribution.id},\
+		{:method => :delete, :confirm => 'Are you sure?'} ) %>
+<% end %>

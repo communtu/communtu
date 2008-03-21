@@ -1,0 +1,30 @@
+<h3>Benutzerprofil Editieren</h3>
+
+<%= error_messages_for :user_profile %>
+
+<p>Hier koennen sie ihr Benutzerprofil editieren. Bewerten sie eine Option,
+um anzugeben, wie wichtigen ihnen der Bereich ist. Diese Informationen werden
+benutzt, damit das System ihnen Sinnvolle weitere Packete empfehlen kann.</p>
+
+<% form_tag user_user_profile_path(current_user), options = {:method => :put} do %>
+    <div>
+    		<% options = Array.new (Package.security_types.length), false%>
+				<% options[current_user.license] = true%>
+        <p>Hier koennen sie einstellen, wie sicher ihre Installationsquellen sein sollen</p>
+        <%= radio_button_tag "sec", "0", options[0] %> Nur Ubuntuquellen zulassen <br>
+        <%= radio_button_tag "sec", "1", options[1]%> Communityquellen zulassen <br>
+        <%= radio_button_tag "sec", "2", options[2]%> Alle Quellen zulassen <br>
+    </div>
+    <div style="margin-bottom:30px">
+    	    		<% options = Array.new (Package.license_types.length), false%>
+				<% options[current_user.license] = true%>
+        <p>Hier koennen sie auswaehlen, welche Lizenzen sie zulassen wollen</p>
+        <%= radio_button_tag "lic", "0", options[0] %> Open Source <br>
+        <%= radio_button_tag "lic", "1", options[1] %> Unfreie Lizenzen zulassen <br>
+    </div>
+	<% if (not @root.nil?) %>
+		<%= edit_profile_table(@root, @rank_map) %>	
+	<% end %>
+	<br>
+<%= submit_tag "Aendern" %>
+<% end %>

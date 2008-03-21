@@ -1,0 +1,7 @@
+<span class="headline">Show User</span>
+
+<div class="inner1">
+	<p>Name: <%= @user.login %></p>
+	<p>Email: <%= @user.email %></p>
+</div>
+<%= link_to 'Edit', edit_user_path(@user.id) %>

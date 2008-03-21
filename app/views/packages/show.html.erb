@@ -1,0 +1,31 @@
+
+<div class="inner0">
+<span class="headline">Package details</span>
+<p>
+  <b>Distribution:</b>
+  <%=h @package.distribution.name %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @package.name %>
+</p>
+<p>
+  <b>Description:</b>
+  <%= @package.description %>
+</p>
+<p>
+  <b>Version:</b>
+  <%=h @package.version %>
+</p>
+
+<p>
+  <b>Repository:</b>
+  <%=h @package.repository.url %>
+</p>
+</div>
+<%= link_to 'Back', distribution_packages_path(@package.distribution_id) %>
+<% if (not session[:meta_cart].nil?) and @package.distribution_id == @distribution_id %>
+		| <%= link_to_remote('Add to MetaPackage', :update => 'meta_cart',\
+			:url => { :controller => :temp_metapackages, :action => :add_to_cart, :id => @package.id}) %>
+		<% end %>

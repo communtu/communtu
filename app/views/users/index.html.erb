@@ -1,0 +1,12 @@
+<span class="headline">All Users</span>
+<div class="inner1">
+<table cellpadding="3">
+  <tr>
+    <th align="left">Username</th>
+    <th align="left">Email</th>
+    <th align="left">Enabled?</th>
+    <th align="left">Roles</th>
+  </tr>
+    <%= render :partial => 'user', :collection => @users %>
+</table>
+</div>

@@ -1,0 +1,41 @@
+<%= render_flash %>
+
+<div class="inner0">
+<span class="headline">Publish MetaPackage</span>
+<br/>
+<%= form_tag :controller => :temp_metapackages, :action => :transform_cart %>
+<%= hidden_field_tag 'id', @meta_id%>
+<table>
+<tr>
+	<td>Category:</td>
+	<td>
+		<%= select_tag('category_id', (get_category_select_options @categories))%>
+	</td>
+</tr>
+<tr>
+	<td>Name:</td>
+	<td><%= text_field_tag('meta_name', @meta_name, { :size => 16}) %></td>	
+</tr>
+<tr>
+	<td>Overwrite package, if it exists?</td>
+	<td><input type="checkbox" name="overwrite" value="1"></td>	
+</tr>
+<tr>
+	<td>Expert level:</td>
+	<% options = "" %>
+	<% 5.times do |level| %>
+		<% options += "<option>" + level.to_s + "</option>" %>
+	<% end %>
+	<td><%= select_tag('meta_level', options) %></td>	
+</tr>
+<tr>
+	<td valign='top'>Description:</td>
+	<td><%= text_area_tag('meta_description', @meta_description, { :rows => 20, :cols => 32 } ) %></td>	
+</tr>
+<tr>
+<td colspan="2" align="center"><%= submit_tag "Publish Meta package"%></td>
+</tr>
+
+</table>	
+</form>
+</div>

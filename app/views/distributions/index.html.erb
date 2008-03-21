@@ -1,0 +1,10 @@
+<div class='inner0'>
+<span class='headline'>Available distributions</span><br/>
+<% for distribution in @distributions %>
+ <%= dist_show distribution, "inner1" %>
+<% end %>
+<% if is_admin? %>
+<%= link_to 'New distribution', new_distribution_path %>
+<% end %>
+
+</div>

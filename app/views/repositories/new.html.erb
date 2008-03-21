@@ -1,0 +1,25 @@
+<div class="inner0">
+<span class="headline">New repository</span>
+
+<%= error_messages_for :repository %>
+<table>
+<% form_for(@repository, :url => { :action => :create }) do |f| %>
+<tr>
+	<td>License type:</td>
+	<td><%= select_license_type %></td>
+</tr>
+<tr>
+	<td>Security type:</td>
+	<td><%= select_security_type %></td>
+</tr>
+<tr>
+	<td>Path:</td>
+	<td><%= tag 'input', { :type => :text, :name => 'url'} %></td>
+</tr>
+<tr><td colspan="2" align="center">
+    <%= f.submit "Create" %>
+</td></tr>
+<% end %>
+</table>
+</div>
+<%= link_to 'Back', distribution_repositories_path(@distribution) %>

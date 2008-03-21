@@ -1,0 +1,25 @@
+<%= render_flash %>
+<%= link_to "Back", { :controller => :distributions, :action => :show,\
+	:id => @repository.distribution_id }%>
+<div class="inner0">
+<span class="headline">Synchronized Repository</span>
+<ul>
+	<li>Repository: <%= @repository.url %></li>
+	<li>Repository-URL: <%= @info["url"] %></li>
+	<li>Total packages: <%= @info["package_count"] %></li>
+	<li>Newly added packages: <%= @info["new_count"] %></li>
+	<li>Updated packages: <%= @info["update_count"] %></li>	
+</ul>
+<% if @info["failed"].size > 0%>
+<div class="inner1">
+<span class="headline">The following Packages couldn't be saved to the database:</span>
+<ul>	
+	<% @info["failed"].each do |name|%>
+		<li><%= name %></li>
+	<% end %>
+</ul>	
+</div>
+<% end %> 
+
+
+</div>

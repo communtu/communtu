@@ -1,0 +1,19 @@
+<p>
+	Dies ist die CommUntu Projektseite
+	<%= render_flash %>
+
+<% if logged_in? %>
+<p>The following things can be selected from the sidebar :</p>
+<ul>
+<li><b>Suggest</b> will offer you a suggestion of packages, that
+might be interesting for you, according to your current user profile</li>
+<li><b>Manage Profile</b> Allows you to edit your profile settings (Probably the first thing you should do after creating an account)</li>
+<li><b>Distributions</b> Here you can view the Ubuntu Distributions that have been created in the System</li>
+<li><b>My Meta packages</b> Manage the meta packages you created</li>
+</ul>
+<% else %>
+<br>
+	Clicken sie auf	<%= link_to 'Start', '/users/new' %>, um einen neuen Benutzer anzulegen, oder 
+	<%= link_to 'loggen', '/users/login' %> sie sich ein
+<% end %>
+</p>

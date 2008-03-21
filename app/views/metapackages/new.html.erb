@@ -1,0 +1,36 @@
+<h1>New metapackage</h1>
+
+<%= error_messages_for :metapackage %>
+
+<% form_for(@metapackage) do |f| %>
+  <p>
+    <b>Name</b><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <b>Description</b><br />
+    <%= f.text_area :description %>
+  </p>
+
+  <p>
+    <b>Category</b><br />
+    <%= f.text_field :category_id %>
+  </p>
+
+  <p>
+    <b>Rating</b><br />
+    <%= f.text_field :rating %>
+  </p>
+
+  <p>
+    <b>Distribution</b><br />
+    <%= f.text_field :distribution_id %>
+  </p>
+
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', metapackages_path %>

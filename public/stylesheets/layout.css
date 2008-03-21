@@ -1,0 +1,351 @@
+body { 
+
+	color: #333;
+	background-image: url(/images/bgrepeat.jpg);
+	background-color: #D3CAAA;
+	background-repeat: repeat-x;
+	padding: 20px;
+	margin: 0; 
+}
+
+div.main {
+	
+	border-style: solid;
+	border-width: 2px;
+	background-color: white;
+	margin: 0 auto;
+	padding: 0 20px 20px 10px;
+	position: relative;
+	width: 900px;
+	min-height: 600px;
+}
+
+div.navi {
+
+    margin: 20px 0 0 0;
+    padding: 0 0 15px 0;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+	width: 100%;
+}
+
+div.sidebar {
+	
+	margin: 15px 10px 0 0;
+	padding: 0px 8px 0px 5px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-right-width: 1px;
+	/*min-height: 300px;*/
+	width: 150px;
+}
+
+div.content{
+	
+	margin: 15px 10px 0 0;
+	padding: 8px 8px 8px 8px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-right-width: 1px;
+	width: 700px;
+	min-height: 400px;
+	
+}
+div.inner0 {
+	padding: 5px;
+	margin: 5px;
+}
+
+div.inner1 {
+	border-style: solid;
+	border-width: 1px;	
+	border-color: #ac873f;
+	padding: 5px 5px 5px 12px;
+	margin: 10px 5px 10px 5px;
+	background-color: #FFF8D2;
+}
+
+div.meta_cart{
+
+	margin: 15px 10px 0 0;
+	padding: 10px 5px 10px 5px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-right-width: 1px;
+	/*min-height: 300px;*/
+	width: 150px;
+}
+
+span.headline{
+	font-size: larger;
+	font-weight: bold;
+}
+
+table.form_table{
+	
+	padding: 10px 10px 10px 10px;
+	
+}
+
+img.link_img{
+	border: 0px;
+}
+
+ul.sidebar {
+
+    list-style-type: none;
+	padding: 0px 5px 5px 5px;
+}
+
+div.flash{
+	
+	border-style: dotted;
+	border-width: 1px;
+	border-color: #E2C890;
+	background: #FFF8D2;
+	margin: 5px 5px 5px 5px;
+	padding: 10px 10px 10px 10px;
+}
+
+#notice{
+	color: green;
+}
+
+#warning{
+	color: #FD6C00;
+}
+
+#error{
+	color: red;
+}
+
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   13px;
+  line-height: 18px;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a { color: #666; text-decoration:none; }
+a:visited { color: #666; }
+a:hover { color: #D3CAAA; background-color:#FFF; }
+
+.fieldWithErrors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+div.uploadStatus {
+  margin: 5px;
+}
+
+div.progressBar {
+  margin: 5px;
+}
+
+div.progressBar div.border {
+  background-color: #fff;
+  border: 1px solid gray;
+  width: 100%;
+}
+
+div.progressBar div.background {
+  background-color: #333;
+  height: 18px;
+  width: 0%;
+}
+
+table.profileTable {
+	width: 100%;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ac873f;
+}
+
+th.profileTableHeading {
+    padding-left: 5px;
+    border-color: #ac873f;
+	border-right-style: solid;
+	border-right-width: 1px;
+	background-image: url(/images/table-head.png);
+	background-repeat: repeat-x;
+}
+
+th.profileTableHeadingRight {
+    border-color: #ac873f;
+	background-image: url(/images/table-head.png);
+	background-repeat: repeat-x;
+}
+
+td.profileExpandColFirst {
+    border-color: #ac873f;
+    border-bottom-style: solid;
+	border-bottom-width: 1px;
+	width: 15px;
+	background: #fff7cd;
+}
+
+td.profileExpandCol {
+    border-color: #ac873f;
+	width: 15px;
+	background: #fff7cd;
+}
+
+td.profileNameCol0 {
+    padding: 10px 10px 10px 10px;
+    border-color: #ac873f;
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+
+td.profileNameCol1 {
+    padding-left: 5px;
+    border-color: #ac873f;
+    background: #fff7cd;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-right-style: solid;
+	border-right-width: 1px;
+	font-size: 82%;
+}
+
+
+td.profileRatingRowFirst {
+    border-color: #ac873f;
+	border-top-style: solid;
+	border-top-width: 1px;
+	width: 20px;
+}
+
+td.profileRatingCol {
+    border-color: #ac873f;
+	border-top-style: solid;
+	border-top-width: 1px;
+	width: 20px;
+}
+
+td.profileRatingColRight {
+    border-color: #ac873f;
+	border-top-style: solid;
+	border-top-width: 1px;
+	width: 20px;	
+}
+
+div.suggestion {
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+table.suggestion {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ac873f;
+}
+
+td.suggestion0 {
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:10px;
+    font-weight: bold;
+}
+
+td.suggestion1 {
+    background: #fff7cd;
+    padding-left:10px;
+    border-color: #ac873f;
+    border-top-style:
+    border-top-width: 1px;
+    font-size:82%;
+}
+
+td.suggestionTop {
+    padding-top: 10px;
+    border-top-style: solid;
+    border-top-width: 1px;
+}
+
+td.suggestionBottom {
+    padding-bottom: 10px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+th.packageList {
+    padding-bottom:5px;
+    border-bottom-style:solid;
+    border-bottom-width:1px;
+}
+
+td.packageList0 {
+    padding:5px 8px 5px 10px;
+    background-color: #FFF8D2;
+    border-bottom-style:solid;
+    border-bottom-width:1px;
+    border-color: #ac873f;
+}
+
+td.packageList1 {
+    padding:5px 8px 5px 10px;
+    background-color: #FFFFFF;
+    border-bottom-style:solid;
+    border-bottom-width:1px;
+    border-color: #ac873f;
+}

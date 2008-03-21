@@ -1,0 +1,58 @@
+<div class="inner0">
+<p>
+  <b>Name:</b>
+  <%=h @metapackage.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @metapackage.description %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%=h @metapackage.category.name %>
+</p>
+
+<p>
+  <b>Expert level:</b>
+  <%=h @metapackage.rating %>
+</p>
+<p>
+  <b>License type:</b>
+  <%= Package.license_types[@metapackage.license_type] %>
+</p>
+<p>
+  <b>Distribution:</b>
+  <%=h @metapackage.distribution.name %>
+</p>
+<div class="inner1">
+<table width="100%" cellspacing="0">
+	<% @metapackage.metacontents.each do |p| %>
+	<% css = cycle("packageList0", "packageList1") %>
+		<tr>
+			<td class="<%= css %>"><%= p.package.name %></td>
+			<td class="<%= css %>" align="right">
+				<%= link_to image_tag("search.png", :size => "22x22", :border => "0"), { :controller => :packages, :action => :show,\
+					:id => p.package.id } %>
+			<% if is_admin? %>
+				<%= link_to image_tag("edit-delete.png", :size => "22x22", :border => "0"), { :controller => :metapackages,\
+					 :action => :remove_package, :id => @metapackage.id, :package_id => p.id  } %> 
+			<% end %>
+			</td>
+		</tr>
+	<% end %>
+</table>	
+</div>
+<%= link_to 'Add Comment', { :controller => :metapackages, :action => :add_comment,\
+	:id => @metapackage.id} %>
+<%= show_comments @metapackage.comments%>
+</div>
+
+<%= link_to 'Back', distribution_metapackages_path(@metapackage.id) %>
+<% if logged_in? %>
+	 |
+	 <%= link_to_remote 'Add to Editor', :update => :meta_cart,\
+		:url => { :controller => :temp_metapackages, :action => :transform_to_temp,\
+		:id => @metapackage.id }%>
+<% end %>

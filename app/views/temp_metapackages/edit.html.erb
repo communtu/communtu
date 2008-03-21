@@ -1,0 +1,32 @@
+<h1>Editing temp_metapackages</h1>
+
+<%= error_messages_for :temp_metapackages %>
+
+<% form_for(@temp_metapackages) do |f| %>
+  <p>
+    <b>Name</b><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <b>Description</b><br />
+    <%= f.text_area :description %>
+  </p>
+
+  <p>
+    <b>Distribution</b><br />
+    <%= f.text_field :distribution_id %>
+  </p>
+
+  <p>
+    <b>User</b><br />
+    <%= f.text_field :user_id %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @temp_metapackages %> |
+<%= link_to 'Back', temp_metapackages_path %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  distrib_id: 1
+  name: MyString
+  version: MyString
+  source: MyString
+
+two:
+  distrib_id: 1
+  name: MyString
+  version: MyString
+  source: MyString

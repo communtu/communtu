@@ -1,0 +1,10 @@
+Based on the user profile you entered, the system generated the following suggestion of packages. If you click install these packages will be installed. Alternatively you can browse other packages in each category and make additional selections.
+
+<div class="suggestion">
+    <%= form_tag(user_path(current_user) + "/suggestion/install") %>
+    <%= show_suggestion @root, @selection %>    
+    <div style="padding-top:12px;padding-right:8px" align="right">
+        <input type="image" src="/images/apt.png" value="Submit"/>
+    </div>
+    </form>
+</div>

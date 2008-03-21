@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <title>UserProfiles: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'layout' %>
+</head>
+<body>
+<%= javascript_include_tag "prototype" %>
+<div class="main">
+	<table width='100%'>
+	<tr>
+		<td><h1>CommUntu</h1></td>
+		<td align='right'>
+		<%= image_tag("icon-ubuntu.png") %>
+		</td>
+	</tr>
+	</table>
+	<div class="navi">
+		<table width='100%'>
+	    <tr align="center">
+		<td width="100"><%= link_to 'Home', '/home' %></td>
+	  	<% if logged_in? %>
+	    	<td width="100"><%= link_to 'Account Data', edit_user_path(current_user)  %> </td>
+	    	<td width="100"><%= link_to 'Logout', logout_path  %> </td>
+	    <% else %>
+	    	<td width="100"><%= link_to 'Login', '/session/new' %></td>
+	    <% end %>
+	    	<td width="100"><%= link_to 'About', '/about' %></td>
+	    </tr>
+	  </table>
+	</div>
+	<table width="100%">
+	<tr><td valign="top">
+	<% if logged_in? %>
+		<div class="sidebar">
+		<%= render :partial => 'users/sidebar' %>
+		</div>
+	<% end %>
+	<% if logged_in? %>
+		<div id="meta_cart" class="meta_cart">
+		<%= render_partial 'temp_metapackages/meta_cart' %>
+		</div>
+	<% end %>
+	</td>
+	<td valign="top">
+	<div class="content">
+		<%= yield %>
+	</div>
+	</td></tr>
+	</table>
+</div>
+</body>
+</html>

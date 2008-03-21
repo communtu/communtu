@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  distribution_id: 1
+  type: MyText
+  url: MyString
+
+two:
+  distribution_id: 1
+  type: MyText
+  url: MyString
