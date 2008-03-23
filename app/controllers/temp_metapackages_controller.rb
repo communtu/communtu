@@ -176,6 +176,7 @@ class TempMetapackagesController < ApplicationController
       meta.category_id = params[:category_id]
       meta.rating = params[:meta_level]
       meta.license_type = license_type
+      meta.user_id = current_user.id
         
       if meta.save
         meta_cart.temp_metacontents.each do |content|

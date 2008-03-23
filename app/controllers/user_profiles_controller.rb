@@ -5,6 +5,7 @@ class UserProfilesController < ApplicationController
   def edit
     @user = current_user
     @root = Category.find(:first, :conditions => "id = '1'")
+    @distributions = Distribution.find(:all, :order => "name")
       
     @rank_map = {}
     @user.user_profiles.each do |profile|
@@ -19,6 +20,7 @@ class UserProfilesController < ApplicationController
     #user.update_attributes({ :security => params[:sec], :license => params[:lic] })
     user.security = params[:sec]
     user.license  = params[:lic]
+    user.distribution_id = params[:distribution]
     user.save false
     
     post.each do |key, value|

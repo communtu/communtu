@@ -12,12 +12,11 @@ ActionController::Routing::Routes.draw do |map|
     users.resource  :user_profile
     users.resource  :account
     users.resources :roles
-    users.resources :temp_metapackages
   end
   
   map.connect '/users/:distribution_id/suggestion', :controller => 'suggestion', :action => 'show'
   map.connect '/users/:id/suggestion/install', :controller => 'suggestion', :action => 'install'
-  map.connect '/users/:id/meta/tab/:id', :controller => 'user', :action => 'meta_packages'
+  map.connect '/users/:user_id/metapackages/:id', :controller => 'users', :action => 'metapackages'
   
   map.resources :distributions do |dist|
     dist.resources :metapackages

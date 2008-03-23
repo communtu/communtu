@@ -7,7 +7,7 @@
 	<th valign="middle" class="packageList" align="left"></th>
   </tr>
 <% id = 0 %>
-<% for metapackage in metalist %>
+<% for metapackage in packages %>
  <% id  = metapackage.distribution_id %>
  <% css = cycle("packageList0", "packageList1") %>
   <tr>
@@ -19,7 +19,7 @@
 		<%=h metapackage.rating %></td>
     <td class="<%= css %>" valign="middle">
 		<%=h metapackage.distribution.name %></td>
-    <td class="<%= css %>" valign="right" width="90">
+    <td class="<%= css %>" valign="middle" width="100">
 		<%= link_to image_tag("search.png", :size => "22x22", :border => "0"), metapackage %>
 	<% if logged_in? %>
 		<% if metapackage.user_id == current_user.id %>

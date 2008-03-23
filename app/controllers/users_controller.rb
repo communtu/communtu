@@ -1,3 +1,5 @@
+require 'user_meta_tabz'
+
 class UsersController < ApplicationController
     
   layout 'application'
@@ -6,6 +8,9 @@ class UsersController < ApplicationController
   before_filter :login_required, :only => [:show, :edit, :update]
   before_filter :check_administrator_role, :only => [:index, :destroy, :enable, :disable]
   
+  helper :users
+  helper :tabz
+    
   def index
     @users = User.find(:all)
   end
@@ -70,7 +75,7 @@ class UsersController < ApplicationController
       redirect_to :action => 'index'
   end
   
-  def meta_packages
+  def metapackages
   end
   
   def desc   

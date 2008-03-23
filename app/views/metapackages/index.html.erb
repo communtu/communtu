@@ -1,7 +1,7 @@
 <span class="headline">Metapackages</span>
 
 <div class="inner1">
-    <% render :partial => "metalist", :object => @metapackages %>
+    <% render :partial => "metalist", :locals => { :packages => @metapackages } %>
 </div>
 
 <%= link_to 'Back', distribution_path(id)%>

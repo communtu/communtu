@@ -5,7 +5,7 @@ class Symbol
     
     def to_tabz
         name = self.id2name + "_tabz"
-        eval(name.camelcase.instance)
+        eval(name.camelcase).instance
     end
     
 end
@@ -15,13 +15,10 @@ module Tabz
     # a single tab that contains all information to render itself
     class Tab
     
-        def initialize &block
+        attr_reader :title, :partial, :evaluator, :locals
     
-            # tab title and partial to render
-            attr_reader :title, :partial
-            # a block that gets evaluated before each display
-            attr_reader :evaulator, :locals
-            
+        def initialize &block
+                
             instance_eval(&block)
         
         end
@@ -30,15 +27,15 @@ module Tabz
         def titled(title)
             @title = title
         end
-        
+                
         # set the partial used to render the tab
         def looks_like(partial)
             @partial = partial
         end
             
         # sets the block that find the data for the rendering partial
-        def with_data(eval)
-            @evaluator = eval
+        def with_data(&block)
+            @evaluator = block
         end
    
         # sets the data used to display the tab partial     
@@ -47,8 +44,9 @@ module Tabz
         end
     
         # called before rendering to update the data context for the tab partial
-        def prepare_to_show
-            instance_eval(&block)
+        def prepare_to_show(user_data)
+            @user_data = user_data
+            instance_eval &@evaluator
         end
     end
 
@@ -56,20 +54,24 @@ module Tabz
     class Base
         include Singleton
 
-        attr_reader :tabs
-    
-        def initialize
-            @tabs = []
+        attr_accessor :tabs, :base, :controler
+   
+        def self.resides_in base
+            instance.base = base
         end
    
         # add a tab to the store (should be added in order)
         def self.add_tab &block
-            @tabs.push(Tabz::Tab.new(&block))
+            instance.tabs = [] if instance.tabs.nil?
+            instance.tabs << Tabz::Tab.new(&block)
         end
         
-        # get a tab with a certain id
-        def self.get_tab(id)
-           @tabs[id]
+        private 
+        
+        def initialize
+            @tabs = []
+            @base = "/tabs"
         end
+        
     end
 end

@@ -8,9 +8,20 @@ benutzt, damit das System ihnen Sinnvolle weitere Packete empfehlen kann.</p>
 
 <% form_tag user_user_profile_path(current_user), options = {:method => :put} do %>
     <div>
-    		<% options = Array.new (Package.security_types.length), false%>
-				<% options[current_user.license] = true%>
+        <p>Waehlen sie zunaechst ihre Distribution aus.</p>
+        
+        <% distrib_options = "" %>
+        <% @distributions.each do |distribution| %>
+            <% distrib_options << "<option value='" + distribution.id.to_s + "'>" + distribution.name + "</option>" %>
+        <% end %>
+        
+        <%= select_tag("distribution", distrib_options) %>
+        
+    	<% options = Array.new (Package.security_types.length), false%>
+		<% options[current_user.license] = true%>
+		
         <p>Hier koennen sie einstellen, wie sicher ihre Installationsquellen sein sollen</p>
+        
         <%= radio_button_tag "sec", "0", options[0] %> Nur Ubuntuquellen zulassen <br>
         <%= radio_button_tag "sec", "1", options[1]%> Communityquellen zulassen <br>
         <%= radio_button_tag "sec", "2", options[2]%> Alle Quellen zulassen <br>

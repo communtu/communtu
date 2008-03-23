@@ -11,7 +11,7 @@ module AuthenticatedSystem
     def current_user
       @current_user ||= (login_from_session || login_from_basic_auth || login_from_cookie || :false)
     end
- 
+     
     # Store the given user id in the session.
     def current_user=(new_user)
       session[:user_id] = (new_user.nil? || new_user.is_a?(Symbol)) ? nil : new_user.id
