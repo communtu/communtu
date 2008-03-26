@@ -20,44 +20,11 @@
 	<% end %>
 	</table>
 	<font size="1">
-		<%= link_to_remote('Up', :update => 'meta_cart',\
-			:url => { :controller => :temp_metapackages, :action => :go_up}) %> 
-		<% if is_admin? %>
-			| <%= link_to('Publish Meta', :controller => :temp_metapackages,\
-				 :action => :publish_cart, :id => session[:meta_cart]) %>
-		<% end %>
-		| <%= link_to('Save Meta', :controller => :temp_metapackages,\
-				 :action => :save_cart, :id => session[:meta_cart]) %>
-		| <%= link_to_remote('Clear Meta', :update => 'meta_cart',\
-			:url => { :controller => :temp_metapackages, :action => :clear_cart}) %>
+		<%= link_to(image_tag("save.png", :size => "16x16", :border => "0"), :controller => :temp_metapackages,\
+				:action => :save_cart, :id => session[:meta_cart]) %>
+	    <%= link_to_remote(image_tag("edit-delete.png", :size => "16x16", :border => "0"), :update => 'meta_cart',\
+                :url => { :controller => :temp_metapackages, :action => :clear_cart}) %>
 	</font>
-<% else %>
-	<font size="1">
-	<% distribs = Distribution.find(:all, :order => "name") %>
-	<% options = "" %>
-	<% distribs.each do |d| %>
-		<% options << "<option value='" << d.id.to_s << "'>" << d.name << "</option>" %> 
-	<% end %>
-	
-	<% metas = TempMetapackage.find(:all, :conditions => ["user_id=? AND is_saved='0'",\
-		current_user.id], :order => :name) %>
-	
-	<font size="1">Current Metas:</font>
-	<% metas.each do |m| %>
-		<br/><%= link_to_remote(m.name, :update => 'meta_cart',\
-			:url => { :controller => :temp_metapackages, :action => :goto_cart, :id => m.id}) %>	
-	<% end %>	
-
-	<%= form_remote_tag :update => 'meta_cart',\
-			:url => { :controller => :temp_metapackages, :action => :new_cart} %>
-	<hr/>
-	<table>
-	<tr><td><font size="1">New Meta</font></td></tr>
-	<tr><td><%= select_tag "distribution_id", options %></td></tr>
-	<tr><td><%= tag("input", { :type => 'text', :size => 10, :name => 'new_name'})  %></td></tr>
-	<tr><td><%= submit_tag('input', {:type => :submit, :value => 'Add'})%></font></td></tr>
-	</form>
-	</table>
 <% end %>
 
 

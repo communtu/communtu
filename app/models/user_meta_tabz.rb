@@ -5,8 +5,8 @@ class UserMetaTabz < Tabz::Base
     resides_in "/metapackages"
 
     add_tab do
-        titled "Meine Metapakete"
-        looks_like "metapackages/metalist"
+        titled "Erstellte Metapakete"
+        looks_like "users/ownmetas"
         with_data do 
             set_to({ :packages => Metapackage.find(:all, :conditions => ["user_id=? AND distribution_id=?", @user_data.id, 
                 @user_data.distribution_id]) })

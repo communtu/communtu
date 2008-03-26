@@ -24,8 +24,40 @@
 </p>
 <p>
   <b>Distribution:</b>
-  <%=h @metapackage.distribution.name %>
+  <%= link_to @metapackage.distribution.name, distribution_path(@metapackage.distribution) %>
 </p>
+<p>
+    <b>Published: </b>
+    <% if @metapackage.is_published? %>
+        <%= image_tag("yes.png", :size => "22x22", :border => "0")  %>
+    <% else %>
+        <%= image_tag("no.png", :size => "22x22", :border => "0")  %>
+    <% end %>
+</p>
+
+<div style="position:relative; left:540px; top:-35px; height:0px;width:120px;">
+<% if logged_in? %>
+
+    <ul>
+    <li style="display:inline;overflow: hidden;list-style-type:none;">
+    <%= link_to_remote image_tag("edit.png", :size => "22x22", :border => "0"), :update => :meta_cart,\
+		:url => { :controller => :temp_metapackages, :action => :transform_to_temp,\
+		:id => @metapackage.id }%>
+	</li>
+	<% if is_priviliged? %>
+        <li style="display:inline;overflow: hidden;list-style-type:none;">
+        <%= link_to image_tag("publish.png", :size => "22x22", :border => "0"), metapackage_path(@metapackage) + "/publish" %>
+        </li>
+        <li style="display:inline;overflow: hidden;list-style-type:none;">
+        <%= link_to image_tag("unpublish.png", :size => "22x22", :border => "0"), metapackage_path(@metapackage) + "/unpublish" %>
+        </li>
+	<% end %>
+	</li>
+	</ul>
+	
+<% end %>
+</div>
+
 <div class="inner1">
 <table width="100%" cellspacing="0">
 	<% @metapackage.metacontents.each do |p| %>
@@ -44,15 +76,8 @@
 	<% end %>
 </table>	
 </div>
-<%= link_to 'Add Comment', { :controller => :metapackages, :action => :add_comment,\
-	:id => @metapackage.id} %>
-<%= show_comments @metapackage.comments%>
+<!-- <%= link_to image_tag("back.png", :size => "22x22", :border => "0"), distribution_metapackages_path(@metapackage.id) %> -->
+<!-- <%= link_to'Add Comment', { :controller => :metapackages, :action => :add_comment, \
+	    :id => @metapackage.id } %>
+<%= show_comments @metapackage.comments%> -->
 </div>
-
-<%= link_to 'Back', distribution_metapackages_path(@metapackage.id) %>
-<% if logged_in? %>
-	 |
-	 <%= link_to_remote 'Add to Editor', :update => :meta_cart,\
-		:url => { :controller => :temp_metapackages, :action => :transform_to_temp,\
-		:id => @metapackage.id }%>
-<% end %>

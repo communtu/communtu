@@ -1,7 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :temp_metapackages
 
+  map.resources :temp_metapackages
   map.resources :metapackages
+
+  map.connect '/metapackages/:id/publish', :controller => "metapackages", :action => "publish", :method => :put
+  map.connect '/metapackages/:id/unpublish', :controller => "metapackages", :action => "unpublish", :method => :put
 
  # map.resources :packets
   
@@ -23,7 +26,7 @@ ActionController::Routing::Routes.draw do |map|
     dist.resources :packages  
     dist.resources :repositories
   end
-    
+  
   map.connect '/distributions/:id/packages/section', :controller => "packages", :action => "section", :method => :post
   map.connect '/distributions/:id/packages/search', :controller => "packages", :action => "search", :method => :post
     

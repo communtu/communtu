@@ -364,14 +364,8 @@ li.tabz {
 	list-style-type: none;
 	padding: 0px 20px 0px 20px;
 	margin: 0px 2px 0px 0px;
-    border-left-style: solid;
-    border-left-width: 1px;
-    border-right-style: solid;
-    border-right-width: 1px;
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
+    border-style: solid;
+    border-width: 1px;
     border-color: #ac873f;
 }
 

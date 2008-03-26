@@ -5,6 +5,10 @@ module ApplicationHelper
     logged_in? and current_user.has_role?('administrator') 
   end
   
+  def is_priviliged?
+    is_admin? or (logged_in? and current_user.has_role?('priviliged'))
+  end
+  
   def is_current_controller? name
     (controller.controller_name <=> name) == 0 
   end
@@ -24,6 +28,10 @@ module ApplicationHelper
     is_current_controller? 'categories' or
     is_current_controller? 'distributions' or
     is_current_controller? 'categories'
+  end
+  
+  def editing_metapackage?
+    session[:editing].nil?
   end
   
   def render_flash

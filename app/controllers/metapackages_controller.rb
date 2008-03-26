@@ -83,6 +83,22 @@ class MetapackagesController < ApplicationController
     end
   end
   
+  def publish
+    package = Metapackage.find(params[:id]);
+    package.published = Metapackage.state[:published]
+    package.save!
+    
+    redirect_to :controller => :metapackages, :action => :show
+  end
+  
+  def unpublish
+    package = Metapackage.find(params[:id]);
+    package.published = Metapackage.state[:rejected]
+    package.save!
+    
+    redirect_to :controller => :metapackages, :action => :show
+  end
+  
   def remove_package
     if Metacontent.delete(params[:package_id]).nil?
       flash[:error] = "Couldn't remove package from Meta Package"

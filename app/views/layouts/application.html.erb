@@ -36,12 +36,12 @@
 	<tr><td valign="top">
 	<% if logged_in? %>
 		<div class="sidebar">
-		<%= render :partial => 'users/sidebar' %>
+		    <%= render :partial => 'users/sidebar' %>
 		</div>
 	<% end %>
-	<% if logged_in? %>
+	<% if logged_in? and editing_metapackage? %>
 		<div id="meta_cart" class="meta_cart">
-		<%= render_partial 'temp_metapackages/meta_cart' %>
+		    <%= render_partial 'temp_metapackages/meta_cart' %>
 		</div>
 	<% end %>
 	</td>

@@ -1,9 +1,10 @@
-<table width="100%" cellspacing="0">
+<table style="height:100%;" width="100%" cellspacing="0">
   <tr>
     <th valign="middle" class="packageList" align="left">Name</th>
     <th valign="middle" class="packageList" align="left">Category</th>
     <th valign="middle" class="packageList" align="left">Level</th>
     <th valign="middle" class="packageList" align="left">Distribution</th>
+    <th valign="middle" class="packageList" align="left">Published</th>
 	<th valign="middle" class="packageList" align="left"></th>
   </tr>
 <% id = 0 %>
@@ -19,18 +20,30 @@
 		<%=h metapackage.rating %></td>
     <td class="<%= css %>" valign="middle">
 		<%=h metapackage.distribution.name %></td>
+	<td class="<%= css %>" valign="middle" align="middle">
+	    <% if metapackage.published == Metapackage.state[:published] %>
+	        <%= image_tag("yes.png", :size => "22x22", :border => "0") %>
+	    <% else %>
+	        <%= image_tag("no.png", :size => "22x22", :border => "0") %>
+	    <% end %>
+	</td>
     <td class="<%= css %>" valign="middle" width="100">
+    
 		<%= link_to image_tag("search.png", :size => "22x22", :border => "0"), metapackage %>
-	<% if logged_in? %>
-		<% if metapackage.user_id == current_user.id %>
-		    <%= link_to_remote image_tag("add.png", :size => "22x22", :border => "0"), :update => :meta_cart,\
-					:url => { :controller => :temp_metapackages, :action => :transform_to_temp,\
-					:id => metapackage.id }%>
-		    <%= link_to image_tag("publish.png", :size => "22x22", :border => "0"), :controler => "metapackages", :action => "publish" %>
-		<% end %>
-		<% if is_admin? %>
-    		<%= link_to image_tag("edit-delete.png", :size => "22x22", :border => "0"), metapackage, :confirm => 'Are you sure?', :method => :delete %>
-		<% end %>
+		
+	    <% if logged_in? %>
+	    
+		    <% if metapackage.user_id == current_user.id %>
+		        <%= link_to_remote image_tag("edit.png", :size => "22x22", :border => "0"), :update => :meta_cart,\
+		    			:url => { :controller => :temp_metapackages, :action => :transform_to_temp,\
+		    			:id => metapackage.id }%>
+		    <% end %>
+		    
+		    <% if is_admin? %>
+    		    <%= link_to image_tag("edit-delete.png", :size => "22x22", :border => "0"), metapackage, \
+    		        :confirm => 'Are you sure?', :method => :delete %>
+		    <% end %>
+		    
 	<% end %>
 	</td>
   </tr>

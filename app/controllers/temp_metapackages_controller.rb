@@ -206,7 +206,7 @@ class TempMetapackagesController < ApplicationController
     temp.is_saved = 1
     temp.save
     session[:meta_cart] = nil
-    redirect_to :controller => :users, :action => :my_meta_packages, :id => current_user.id
+    redirect_to :controller => :users, :action => :meta_packages, :id => current_user.id
   end
 
   def reset_cart

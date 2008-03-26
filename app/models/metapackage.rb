@@ -4,6 +4,7 @@ class Metapackage < ActiveRecord::Base
 #  has_many   :packages, :through => :metacontents
   belongs_to :category
   belongs_to :distribution
+  belongs_to :user
   
   validates_uniqueness_of :name, :scope => :distribution_id
   
@@ -11,6 +12,10 @@ class Metapackage < ActiveRecord::Base
   
   def self.state
     @state
+  end
+  
+  def is_published?
+    return self.published == Metapackage.state[:published]
   end
   
   def save_as_temp_meta user_id
