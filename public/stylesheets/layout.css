@@ -378,3 +378,24 @@ div.tabz_content {
     border-color: #ac873f;
     height: 100%;
 }
+
+div.cartlist {
+    
+    position:relative; 
+    left:130px; 
+    top:-14px; 
+    height:0px;
+    width:60px;
+}
+
+ul.cartlist {
+
+    margin:0 0 10px 0;
+    padding:0px;
+}
+
+li.cartlist {
+
+    list-style-type: none;
+}
+

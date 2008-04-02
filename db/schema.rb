@@ -9,7 +9,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 17) do
+ActiveRecord::Schema.define(:version => 19) do
+
+  create_table "base_packages", :force => true do |t|
+    t.integer  "distribution_id"
+    t.integer  "repository_id"
+    t.string   "name"
+    t.string   "section",         :default => "unknown"
+    t.string   "version"
+    t.text     "description"
+    t.integer  "category_id"
+    t.integer  "rating"
+    t.integer  "license_type"
+    t.integer  "user_id"
+    t.integer  "published",       :default => 0
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "categories", :force => true do |t|
     t.string   "name"
@@ -44,32 +60,8 @@ ActiveRecord::Schema.define(:version => 17) do
 
   create_table "metacontents", :force => true do |t|
     t.integer  "metapackage_id"
-    t.integer  "package_id"
+    t.integer  "base_package_id"
     t.boolean  "is_meta"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "metapackages", :force => true do |t|
-    t.string   "name"
-    t.text     "description"
-    t.integer  "category_id"
-    t.integer  "rating"
-    t.integer  "license_type"
-    t.integer  "distribution_id"
-    t.integer  "user_id"
-    t.integer  "published",       :default => 0
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "packages", :force => true do |t|
-    t.integer  "distribution_id"
-    t.integer  "repository_id"
-    t.string   "name"
-    t.string   "section",         :default => "unknown"
-    t.string   "version"
-    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

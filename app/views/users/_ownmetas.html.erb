@@ -1,4 +1,6 @@
 
 <%= render :partial => "metapackages/metalist", :locals => { :packages => packages } %>
 <br>
-<%= link_to("Neues Metapacket", users_cart_url(current_user)) %>
+<% if not editing_metapackage? %>
+    <%= link_to("Neues Metapacket", user_path(current_user) + "/cart/create") %>
+<% end %>

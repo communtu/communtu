@@ -1,7 +1,8 @@
 require 'open-uri'
 require 'zlib'
 
-class Package < ActiveRecord::Base
+class Package < BasePackage
+
   include PackagesHelper
   belongs_to :distribution
   belongs_to :repository

@@ -39,9 +39,9 @@
 		    <%= render :partial => 'users/sidebar' %>
 		</div>
 	<% end %>
-	<% if logged_in? and editing_metapackage? %>
+	<% if logged_in? %>
 		<div id="meta_cart" class="meta_cart">
-		    <%= render_partial 'temp_metapackages/meta_cart' %>
+		    <%= render_partial 'cart/metacart' %>
 		</div>
 	<% end %>
 	</td>

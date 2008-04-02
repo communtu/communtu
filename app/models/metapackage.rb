@@ -1,7 +1,8 @@
-class Metapackage < ActiveRecord::Base
+class Metapackage < BasePackage
+
   has_many   :metacontents, :dependent => :destroy
   has_many   :comments, :dependent => :destroy
-#  has_many   :packages, :through => :metacontents
+  has_many   :base_packages, :through => :metacontents
   belongs_to :category
   belongs_to :distribution
   belongs_to :user

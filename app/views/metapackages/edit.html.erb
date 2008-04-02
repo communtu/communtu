@@ -1,37 +1,40 @@
-<h1>Editing metapackage</h1>
+<div class="inner0">
 
-<%= error_messages_for :metapackage %>
+    <span class="headline">Metapaket Informationen anpassen</span>
+    <br/>
+    <%= form_tag distribution_path(@metapackage.distribution) + "/metapackages/" + metapackage.id.to_s %>
+    <%= hidden_field_tag 'id', @metapackage.id%>
+        <table>
+        <tr>
+	        <td>Category:</td>
+	        <td>
+		        <%= select_tag('category_id', (get_category_select_options @categories))%>
+	        </td>
+        </tr>
+        <tr>
+	        <td>Name:</td>
+	        <td><%= text_field_tag('meta_name', @meta_name, { :size => 16}) %></td>	
+        </tr>
+        <tr>
+	        <td>Overwrite package, if it exists?</td>
+	        <td><input type="checkbox" name="overwrite" value="1"></td>	
+        </tr>
+        <tr>
+	        <td>Expert level:</td>
+	        <% options = "" %>
+	        <% 5.times do |level| %>
+		        <% options += "<option>" + level.to_s + "</option>" %>
+	        <% end %>
+	        <td><%= select_tag('meta_level', options) %></td>	
+        </tr>
+        <tr>
+	        <td valign='top'>Description:</td>
+	        <td><%= text_area_tag('meta_description', @meta_description, { :rows => 20, :cols => 32 } ) %></td>	
+        </tr>
+        <tr>
+        <td colspan="2" align="center"><%= submit_tag "Publish Meta package"%></td>
+        </tr>
 
-<% form_for(@metapackage) do |f| %>
-  <p>
-    <b>Name</b><br />
-    <%= f.text_field :name %>
-  </p>
-
-  <p>
-    <b>Description</b><br />
-    <%= f.text_area :description %>
-  </p>
-
-  <p>
-    <b>Category</b><br />
-    <%= f.text_field :category_id %>
-  </p>
-
-  <p>
-    <b>Rating</b><br />
-    <%= f.text_field :rating %>
-  </p>
-
-  <p>
-    <b>Distribution</b><br />
-    <%= f.text_field :distribution_id %>
-  </p>
-
-  <p>
-    <%= f.submit "Update" %>
-  </p>
-<% end %>
-
-<%= link_to 'Show', @metapackage %> |
-<%= link_to 'Back', metapackages_path %>
+        </table>	
+    </form>
+</div>

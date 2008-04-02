@@ -61,8 +61,8 @@ class MetapackagesController < ApplicationController
 
     respond_to do |format|
       if @metapackage.update_attributes(params[:metapackage])
-        flash[:notice] = 'Metapackage was successfully updated.'
-        format.html { redirect_to(@metapackage) }
+        format.html { redirect_to("/distributions/" + meta.distribution_id.to_s + "/metapackages/" + \
+            meta.id + "/show") }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

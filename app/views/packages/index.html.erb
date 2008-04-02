@@ -35,10 +35,11 @@
     <td class="<%= css %>" width="80" align="right">
     <%= link_to image_tag("/images/search.png", :size => "22x22", :border => "0"), 
                                   distribution_package_path(@distribution.id, package) %> 
-		<% if (not session[:meta_cart].nil?) and package.distribution_id == @distribution.id %>
+		<% if editing_metapackage? and package.distribution_id == @distribution.id %>
 		    
-			<%= link_to_remote(image_tag("/images/add.png", :size => "22x22", :border => "0"), :update => 'meta_cart',\
-			:url => { :controller => :temp_metapackages, :action => :add_to_cart, :id => package.id}) %>
+			<%= link_to_remote(image_tag("/images/add.png", :size => "22x22", :border => "0"), \
+			        :url => user_path(current_user) + "/cart/add_to_cart/" + package.id.to_s,\
+			        :update => 'meta_cart') %>
 		<% end %>
     	<% if is_admin? %>
     		<%= link_to image_tag("/images/edit-delete.png", :size => "22x22", :border => "0"), distribution_package_path(@distribution.id, package),\

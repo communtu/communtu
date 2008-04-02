@@ -31,7 +31,7 @@ module ApplicationHelper
   end
   
   def editing_metapackage?
-    session[:editing].nil?
+    not session[:cart].nil?
   end
   
   def render_flash

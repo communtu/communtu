@@ -1,15 +1,11 @@
 ActionController::Routing::Routes.draw do |map|
 
-  map.resources :temp_metapackages
   map.resources :metapackages
 
   map.connect '/metapackages/:id/publish', :controller => "metapackages", :action => "publish", :method => :put
   map.connect '/metapackages/:id/unpublish', :controller => "metapackages", :action => "unpublish", :method => :put
-
- # map.resources :packets
   
   map.resources :categories
- # map.resources :repositories
   
   map.resources :users, :member => { :enable => :put } do |users|
     users.resource  :user_profile
@@ -20,6 +16,8 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/users/:distribution_id/suggestion', :controller => 'suggestion', :action => 'show'
   map.connect '/users/:id/suggestion/install', :controller => 'suggestion', :action => 'install'
   map.connect '/users/:user_id/metapackages/:id', :controller => 'users', :action => 'metapackages'
+
+  map.connect '/users/:id/cart/:action/:id', :controller => 'cart'
   
   map.resources :distributions do |dist|
     dist.resources :metapackages
@@ -51,9 +49,8 @@ ActionController::Routing::Routes.draw do |map|
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.categories '/categories', :controller => 'categories', :action => 'new' 
   map.admin '/admin', :controller => 'admin' 
-  #map.distributions '/distributions', :controller => 'distributions', :action => 'index'
-  #map.repositories '/admin/repositories', :controller => 'repositories', :action => 'new'
-  # Install the default routes as the lowest priority.
   
   map.connect ':controller/:action/:id'
-  map.connect ':controller/:action/:id.:format'end
+  map.connect ':controller/:action/:id.:format'
+  
+end
