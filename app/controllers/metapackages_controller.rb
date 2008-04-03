@@ -35,6 +35,7 @@ class MetapackagesController < ApplicationController
   # GET /metapackages/1/edit
   def edit
     @metapackage = Metapackage.find(params[:id])
+    @categories  = Category.find(1)
   end
 
   # POST /metapackages
@@ -44,7 +45,6 @@ class MetapackagesController < ApplicationController
 
     respond_to do |format|
       if @metapackage.save
-        flash[:notice] = 'Metapackage was successfully created.'
         format.html { redirect_to(@metapackage) }
         format.xml  { render :xml => @metapackage, :status => :created, :location => @metapackage }
       else
@@ -58,11 +58,10 @@ class MetapackagesController < ApplicationController
   # PUT /metapackages/1.xml
   def update
     @metapackage = Metapackage.find(params[:id])
-
+    
     respond_to do |format|
       if @metapackage.update_attributes(params[:metapackage])
-        format.html { redirect_to("/distributions/" + meta.distribution_id.to_s + "/metapackages/" + \
-            meta.id + "/show") }
+        format.html { redirect_to :action => :show, :id => @metapackage.id, :distribution_id => @metapackage.distribution.id }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -74,11 +73,11 @@ class MetapackagesController < ApplicationController
   # DELETE /metapackages/1
   # DELETE /metapackages/1.xml
   def destroy
-    @metapackage = Metapackage.find(params[:id])
-    @metapackage.destroy
+    metapackage  = Metapackage.find(params[:id])    
+    metapackage.destroy
 
     respond_to do |format|
-      format.html { redirect_to(metapackages_url) }
+      format.html { redirect_to(request.env['HTTP_REFERER']) }
       format.xml  { head :ok }
     end
   end

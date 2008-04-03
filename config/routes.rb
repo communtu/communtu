@@ -1,9 +1,4 @@
 ActionController::Routing::Routes.draw do |map|
-
-  map.resources :metapackages
-
-  map.connect '/metapackages/:id/publish', :controller => "metapackages", :action => "publish", :method => :put
-  map.connect '/metapackages/:id/unpublish', :controller => "metapackages", :action => "unpublish", :method => :put
   
   map.resources :categories
   
@@ -27,6 +22,8 @@ ActionController::Routing::Routes.draw do |map|
   
   map.connect '/distributions/:id/packages/section', :controller => "packages", :action => "section", :method => :post
   map.connect '/distributions/:id/packages/search', :controller => "packages", :action => "search", :method => :post
+  map.connect '/distributions/:distribution_id/metapackages/:id/publish', :controller => "metapackages", :action => "publish", :method => :put
+  map.connect '/distributions/:distribution_id/metapackages/:id/unpublish', :controller => "metapackages", :action => "unpublish", :method => :put
     
   map.resource :session
   map.resource :password

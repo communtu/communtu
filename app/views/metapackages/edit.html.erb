@@ -2,22 +2,18 @@
 
     <span class="headline">Metapaket Informationen anpassen</span>
     <br/>
-    <%= form_tag distribution_path(@metapackage.distribution) + "/metapackages/" + metapackage.id.to_s %>
+    <%= form_tag distribution_path(@metapackage.distribution) + "/metapackages/" + @metapackage.id.to_s, :method => :put %>
     <%= hidden_field_tag 'id', @metapackage.id%>
         <table>
         <tr>
 	        <td>Category:</td>
 	        <td>
-		        <%= select_tag('category_id', (get_category_select_options @categories))%>
+		        <%= select_tag('metapackage[category_id]', (get_category_select_options @categories))%>
 	        </td>
         </tr>
         <tr>
 	        <td>Name:</td>
-	        <td><%= text_field_tag('meta_name', @meta_name, { :size => 16}) %></td>	
-        </tr>
-        <tr>
-	        <td>Overwrite package, if it exists?</td>
-	        <td><input type="checkbox" name="overwrite" value="1"></td>	
+	        <td><%= text_field_tag('metapackage[name]', @metapackage.name, { :size => 16}) %></td>	
         </tr>
         <tr>
 	        <td>Expert level:</td>
@@ -25,14 +21,14 @@
 	        <% 5.times do |level| %>
 		        <% options += "<option>" + level.to_s + "</option>" %>
 	        <% end %>
-	        <td><%= select_tag('meta_level', options) %></td>	
+	        <td><%= select_tag('[metapackage[rating]', options) %></td>	
         </tr>
         <tr>
 	        <td valign='top'>Description:</td>
-	        <td><%= text_area_tag('meta_description', @meta_description, { :rows => 20, :cols => 32 } ) %></td>	
+	        <td><%= text_area_tag('metapackage[description]', @metapackage.description, { :rows => 12, :cols => 50 } ) %></td>	
         </tr>
         <tr>
-        <td colspan="2" align="center"><%= submit_tag "Publish Meta package"%></td>
+        <td colspan="2" align="center"><%= submit_tag "Save"%></td>
         </tr>
 
         </table>	

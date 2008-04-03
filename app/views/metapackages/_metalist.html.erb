@@ -13,7 +13,7 @@
  <% css = cycle("packageList0", "packageList1") %>
   <tr>
     <td class="<%= css %>" valign="middle">
-		<%=h metapackage.name %></td>
+		<%= link_to metapackage.name, distribution_metapackage_path(metapackage.distribution, metapackage) %></td>
     <td class="<%= css %>" valign="middle">
 		<%=h metapackage.category.name %></td>
     <td class="<%= css %>" valign="middle">
@@ -29,7 +29,8 @@
 	</td>
     <td class="<%= css %>" valign="middle" width="100">
     
-		<%= link_to image_tag("search.png", :size => "22x22", :border => "0"), metapackage %>
+		<%= link_to image_tag("search.png", :size => "22x22", :border => "0"), \
+		    distribution_metapackage_path(metapackage.distribution, metapackage) %>
 		
 	    <% if logged_in? %>
 	    
@@ -40,8 +41,9 @@
 		    <% end %>
 		    
 		    <% if is_admin? %>
-    		    <%= link_to image_tag("edit-delete.png", :size => "22x22", :border => "0"), metapackage, \
-    		        :confirm => 'Are you sure?', :method => :delete %>
+    		    <%= link_to image_tag("edit-delete.png", :size => "22x22", :border => "0"), \
+        		        distribution_metapackage_path(metapackage.distribution, metapackage), \
+        		        :confirm => 'Are you sure?', :method => :delete %>
 		    <% end %>
 		    
 	<% end %>

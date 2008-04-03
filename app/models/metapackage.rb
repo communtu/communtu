@@ -7,7 +7,7 @@ class Metapackage < BasePackage
   belongs_to :distribution
   belongs_to :user
   
-  validates_uniqueness_of :name, :scope => :distribution_id
+  validates_uniqueness_of :scope => :distribution_id
   
   @state = { :pending => 0, :published => 1, :rejected => 2 }
   

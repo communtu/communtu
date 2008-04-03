@@ -2,8 +2,7 @@ class CreateMetacontents < ActiveRecord::Migration
   def self.up
     create_table :metacontents do |t|
       t.integer :metapackage_id
-      t.integer :package_id
-      t.boolean :is_meta
+      t.integer :base_package_id
 
       t.timestamps
     end

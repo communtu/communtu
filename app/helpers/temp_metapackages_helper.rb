@@ -1,4 +1,5 @@
 module TempMetapackagesHelper
+
     def get_meta_cart
       temp = TempMetapackage.find(:first, :conditions => ["user_id=? AND id=?", current_user.id,\
         session[:meta_cart] ], :order => "name")
@@ -19,23 +20,4 @@ module TempMetapackagesHelper
       return []
     end
 
-    def get_category_select_options root, level = ""
-      
-      if not root.nil? and root.id != 1
-        options = "<option value='" + root.id.to_s + "'>" +\
-          level + " " + root.name + "</option>"
-      
-        level += "-"
-      else
-        options = ""
-      end
-      
-      if not root.children.nil?
-        root.children.each do |child|
-          options += (get_category_select_options child, level)
-        end
-      end
-      
-      return options
-    end
 end

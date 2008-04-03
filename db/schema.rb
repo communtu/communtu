@@ -12,6 +12,7 @@
 ActiveRecord::Schema.define(:version => 19) do
 
   create_table "base_packages", :force => true do |t|
+    t.string   "type"
     t.integer  "distribution_id"
     t.integer  "repository_id"
     t.string   "name"
@@ -61,7 +62,6 @@ ActiveRecord::Schema.define(:version => 19) do
   create_table "metacontents", :force => true do |t|
     t.integer  "metapackage_id"
     t.integer  "base_package_id"
-    t.boolean  "is_meta"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

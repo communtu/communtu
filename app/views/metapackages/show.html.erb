@@ -46,10 +46,12 @@
 	</li>
 	<% if is_priviliged? %>
         <li style="display:inline;overflow: hidden;list-style-type:none;">
-        <%= link_to image_tag("publish.png", :size => "22x22", :border => "0"), metapackage_path(@metapackage) + "/publish" %>
+        <%= link_to image_tag("publish.png", :size => "22x22", :border => "0"), \
+            distribution_metapackage_path(@metapackage.distribution, @metapackage) + "/publish" %>
         </li>
         <li style="display:inline;overflow: hidden;list-style-type:none;">
-        <%= link_to image_tag("unpublish.png", :size => "22x22", :border => "0"), metapackage_path(@metapackage) + "/unpublish" %>
+        <%= link_to image_tag("unpublish.png", :size => "22x22", :border => "0"), \
+            distribution_metapackage_path(@metapackage.distribution, @metapackage) + "/unpublish" %>
         </li>
 	<% end %>
 	</li>
@@ -63,7 +65,7 @@
 	<% @metapackage.metacontents.each do |p| %>
 	<% css = cycle("packageList0", "packageList1") %>
 		<tr>
-			<td class="<%= css %>"><%= p.abstract_package.name %></td>
+			<td class="<%= css %>"><%= p.package.name %></td>
 			<td class="<%= css %>" align="right">
 				<%= link_to image_tag("search.png", :size => "22x22", :border => "0"), { :controller => :packages, :action => :show,\
 					:id => p.package.id } %>
@@ -76,7 +78,7 @@
 	<% end %>
 </table>	
 </div>
-<!-- <%= link_to image_tag("back.png", :size => "22x22", :border => "0"), distribution_metapackages_path(@metapackage.id) %> -->
+<!-- <%= link_to "back", request.env['HTTP_REFERER'] %> -->
 <!-- <%= link_to'Add Comment', { :controller => :metapackages, :action => :add_comment, \
 	    :id => @metapackage.id } %>
 <%= show_comments @metapackage.comments%> -->
