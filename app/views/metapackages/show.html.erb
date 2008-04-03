@@ -39,11 +39,12 @@
 <% if logged_in? %>
 
     <ul>
-    <li style="display:inline;overflow: hidden;list-style-type:none;">
-    <%= link_to_remote image_tag("edit.png", :size => "22x22", :border => "0"), :update => :meta_cart,\
-		:url => { :controller => :temp_metapackages, :action => :transform_to_temp,\
-		:id => @metapackage.id }%>
-	</li>
+    <% if @metapackage.user_id == current_user.id or is_priviliged? %>
+        <li style="display:inline;overflow: hidden;list-style-type:none;">
+        <%= link_to image_tag("edit.png", :size => "22x22", :border => "0"), \
+		    distribution_metapackage_path(@metapackage.distribution, @metapackage) + "/edit"%>
+	    </li>
+	<% end %>
 	<% if is_priviliged? %>
         <li style="display:inline;overflow: hidden;list-style-type:none;">
         <%= link_to image_tag("publish.png", :size => "22x22", :border => "0"), \
