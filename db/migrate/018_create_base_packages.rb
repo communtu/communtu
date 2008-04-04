@@ -23,3 +23,4 @@ class CreateBasePackages < ActiveRecord::Migration
     drop_table :packages
   end
 
+end
