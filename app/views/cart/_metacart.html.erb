@@ -1,0 +1,38 @@
+<font size="1"><b>MetaPackage Editor</b></font><br/>
+
+<% if editing_metapackage? %>
+	<% cart = session[:cart] %>
+	<% name = cart.name %>
+	
+	<font size="1">Name: <b><%= name %></b></font>
+
+    <ul class="cartlist">
+	<% cart.content_by_name.each do |package|%>
+	
+	    <li class="cartlist">
+            <font size="1">
+            <%= package.name %>
+            <div class="cartlist">
+		        <%= link_to_remote((tag "img", { \
+		                :src => "/images/delete.png",\
+                        :class => "link_img",\
+			            :width => 12, :height => 12}),\
+			            :url => user_path(current_user) + "/cart/rem_from_cart/" + package.id.to_s,\
+			            :update => :meta_cart) %>
+			 </div>
+			 </font>
+	    </li>
+	<% end %>
+	</ul>
+
+	<%= link_to(image_tag("save.png", :size => "16x16", :border => "0"), user_path(current_user) + "/cart/save") %>
+    <%= link_to_remote(image_tag("edit-delete.png", :size => "16x16", :border => "0"), \
+            :update => 'meta_cart', \
+            :url => user_path(current_user) + "/cart/clear") %>
+<% else %>
+    <div style="valign:bottom;">
+        <font size="1"> 
+            <%= link_to("Create Metapackage", user_path(current_user) + "/cart/create") %>
+        </font>
+    </div>
+<% end %>
