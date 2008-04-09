@@ -44,13 +44,13 @@ module DistributionsHelper
     "<b>Packages: " + dist.packages.size.to_s + "</b><br/>"
     
     if with_buttons
-     out += (link_to 'Show', dist) + " | " + (link_to 'View Metapackages', distribution_metapackages_path(dist.id)) +\
-      " | " + (link_to 'View all Packages', (distribution_packages_path dist.id))
+     out += (link_to 'Anzeigen', dist) + " | " + (link_to 'Bündel anzeigen', distribution_metapackages_path(dist.id)) +\
+      " | " + (link_to 'Alle Pakete anzeigen', (distribution_packages_path dist.id))
       
     
       if is_admin?
-        out += " | " + (link_to 'Edit', edit_distribution_path(dist)) + " | " +\
-        (link_to 'Destroy', dist, :confirm => 'Are you sure?', :method => :delete)
+        out += " | " + (link_to 'Bearbeiten', edit_distribution_path(dist)) + " | " +\
+        (link_to 'Löschen', dist, :confirm => 'Bist du sicher?', :method => :delete)
       end
     end
     out + "</div>"
