@@ -15,7 +15,7 @@ class SessionsController < ApplicationController
     self.current_user.forget_me if logged_in?
     cookies.delete :auth_token
     reset_session
-    flash[:notice] = "You have been logged out."
+    flash[:notice] = "Du wurdest abgemeldet."
   redirect_to "/home"
   end
   
@@ -25,11 +25,11 @@ class SessionsController < ApplicationController
   def password_authentication(login, password)
     user = User.authenticate(login, password)
     if user == nil
-      failed_login("Your username or password is incorrect.")
+      failed_login("Dein Benutzername oder Passwort ist falsch.")
     elsif user.activated_at.blank?  
-      failed_login("Your account is not active, please check your email for the activation code.")
+      failed_login("Dein Benutzerkonto wurde noch nicht aktiviert. Der Aktivierungscode wurde dir per Email zugeschickt.")
     elsif user.enabled == false
-      failed_login("Your account has been disabled.")
+      failed_login("Dein Benutzerkonto wurde deaktiviert.")
     else
       self.current_user = user
       successful_login
@@ -39,7 +39,7 @@ class SessionsController < ApplicationController
   private
   
   def failed_login(message)
-    flash.now[:error] = message
+    flash[:notice] = message
     render :action => 'new'
   end
   
