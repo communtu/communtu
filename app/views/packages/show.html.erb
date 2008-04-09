@@ -11,7 +11,7 @@
   <%=h @package.name %>
 </p>
 <p>
-  <b>Description:</b>
+  <b>Beschreibung:</b>
   <%= @package.description %>
 </p>
 <p>
@@ -24,8 +24,8 @@
   <%=h @package.repository.url %>
 </p>
 </div>
-<%= link_to 'Back', distribution_packages_path(@package.distribution_id) %>
+<%= link_to 'Zurück', distribution_packages_path(@package.distribution_id) %>
 <% if (not session[:meta_cart].nil?) and @package.distribution_id == @distribution_id %>
-		| <%= link_to_remote('Add to MetaPackage', :update => 'meta_cart',\
+		| <%= link_to_remote('Zu Bündel hinzufügen', :update => 'meta_cart',\
 			:url => { :controller => :temp_metapackages, :action => :add_to_cart, :id => @package.id}) %>
 		<% end %>

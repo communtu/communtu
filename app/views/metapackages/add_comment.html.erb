@@ -7,14 +7,14 @@
 <% end %>
 <table>
 <%= form_tag ("/metapackages/save_comment/" + @id.to_s) %>
-	<tr><td>Attach meta package:</td><td><%= select_tag 'attach', options %></td></tr>
-	<tr><td valign='top'>Comment: </td><td>
+	<tr><td>Bündel anfügen:</td><td><%= select_tag 'attach', options %></td></tr>
+	<tr><td valign='top'>Kommentar: </td><td>
 		<%= text_area_tag 'input', nil, { :type => :textarea, :name => :comment, :cols => 16,\
 		:rows => 10 }%>
 	</td></tr>
 	<tr><td colspan='2' align="center">
 		<%= hidden_field_tag 'metapackage_id', @id %>
-		<%= submit_tag 'Add Comment' %>	
+		<%= submit_tag 'Kommentar hinzufügen' %>	
 	</td></tr>
 	
 </table>

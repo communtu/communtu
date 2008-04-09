@@ -20,7 +20,7 @@ class CreateBasePackages < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :packages
+    drop_table :base_packages
   end
 
 end

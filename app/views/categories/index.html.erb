@@ -1,11 +1,11 @@
-<h1>Listing categories</h1>
+<h1>Kategorien-Übersicht</h1>
 
 <table>
   <tr>
   	<th>Id</th>
     <th>Name</th>
-    <th>Description</th>
-    <th>Category</th>
+    <th>Beschreibung</th>
+    <th>Kategorie</th>
   </tr>
 
 <% for category in @categories %>
@@ -14,13 +14,13 @@
     <td><%=h category.name %></td>
     <td><%=h category.description %></td>
     <td><%=h category.parent_id %></td>
-    <td><%= link_to 'Show', category %></td>
-    <td><%= link_to 'Edit', edit_category_path(category) %></td>
-    <td><%= link_to 'Destroy', category, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Anzeigen', category %></td>
+    <td><%= link_to 'Bearbeiten', edit_category_path(category) %></td>
+    <td><%= link_to 'Löschen', category, :confirm => 'Biest du sicher?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New category', new_category_path %>
+<%= link_to 'Neue Kategorie', new_category_path %>

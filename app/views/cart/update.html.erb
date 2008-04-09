@@ -1,6 +1,6 @@
 <div class="inner0">
 
-    <span class="headline">Metapaket Informationen anpassen</span>
+    <span class="headline">Bündel-Informationen anpassen</span>
     <br/>
     <%= form_tag :controller => :cart, :action => :update %>
     <%= hidden_field_tag 'id', @meta_id%>
@@ -32,7 +32,7 @@
 	        <td><%= text_area_tag('meta_description', @meta_description, { :rows => 20, :cols => 32 } ) %></td>	
         </tr>
         <tr>
-        <td colspan="2" align="center"><%= submit_tag "Publish Meta package"%></td>
+        <td colspan="2" align="center"><%= submit_tag "Bündel veröffentlichen"%></td>
         </tr>
 
         </table>	

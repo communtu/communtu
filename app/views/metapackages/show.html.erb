@@ -5,21 +5,21 @@
 </p>
 
 <p>
-  <b>Description:</b>
+  <b>Beschreibung:</b>
   <%= @metapackage.description %>
 </p>
 
 <p>
-  <b>Category:</b>
+  <b>Kategorie:</b>
   <%=h @metapackage.category.name %>
 </p>
 
 <p>
-  <b>Expert level:</b>
+  <b>Expertenlevel:</b>
   <%=h @metapackage.rating %>
 </p>
 <p>
-  <b>License type:</b>
+  <b>Lizenzetyp:</b>
   <%= Package.license_types[@metapackage.license_type] %>
 </p>
 <p>
@@ -27,7 +27,7 @@
   <%= link_to @metapackage.distribution.name, distribution_path(@metapackage.distribution) %>
 </p>
 <p>
-    <b>Published: </b>
+    <b>Veröffentlicht: </b>
     <% if @metapackage.is_published? %>
         <%= image_tag("yes.png", :size => "22x22", :border => "0")  %>
     <% else %>

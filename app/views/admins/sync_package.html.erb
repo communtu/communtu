@@ -1,14 +1,14 @@
 <%= render_flash %>
-<%= link_to "Back", { :controller => :distributions, :action => :show,\
+<%= link_to "Zurück", { :controller => :distributions, :action => :show,\
 	:id => @repository.distribution_id }%>
 <div class="inner0">
-<span class="headline">Synchronized Repository</span>
+<span class="headline">Repository synchronisiert</span>
 <ul>
 	<li>Repository: <%= @repository.url %></li>
 	<li>Repository-URL: <%= @info["url"] %></li>
-	<li>Total packages: <%= @info["package_count"] %></li>
-	<li>Newly added packages: <%= @info["new_count"] %></li>
-	<li>Updated packages: <%= @info["update_count"] %></li>	
+	<li>Pakete insgesamt: <%= @info["package_count"] %></li>
+	<li>Neu hinzugefügte Pakete: <%= @info["new_count"] %></li>
+	<li>Aktualisierte Pakete: <%= @info["update_count"] %></li>	
 </ul>
 <% if @info["failed"].size > 0%>
 <div class="inner1">

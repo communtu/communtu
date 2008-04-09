@@ -1,4 +1,4 @@
-<font size="1"><b>MetaPackage Editor</b></font><br/>
+<font size="1"><b>Bündel-Editor</b></font><br/>
 <% if not session[:meta_cart].nil? %>
 	<% meta = TempMetapackage.find(:first, :conditions => [ "id=?", session[:meta_cart] ]) %>
 	<% if not meta.nil? %>
@@ -7,13 +7,13 @@
 		<% name = "Session error!" %>
 		<% session[:meta_cart] = nil %>
 	<% end %>
-	<font size="1">Current Meta: <b><%= name %></b></font>
+	<font size="1">Aktuelles Bündel: <b><%= name %></b></font>
 	<table width="100%">
 	<% get_meta_cart.each do |package|%>
 		<tr><td valign='middle'><font size="1"><%= package.name %></td>
 		<td align="right" valign='middle'>
 		<%= link_to_remote((tag "img", { :src => "/images/delete.png",\
-            :alt => "Synchronize repository", :class => "link_img",\
+            :alt => "Repository synchronisieren", :class => "link_img",\
 			:width => 12, :height => 12}),\
 			:update => :meta_cart, :url => { :controller => :temp_metapackages,\
 			:action => :delete_item_from_cart, :id => package.id}) %></font></td></tr>

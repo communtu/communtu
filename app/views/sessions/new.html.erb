@@ -2,17 +2,17 @@
 <%= error_messages_for :session %>
 <%= flash[:notice] %>
 
-<h2>Login with User ID and Password:</h2>
+<h2>Anmelden mit Benutzernamen und Passwort:</h2>
 <% form_tag session_path do %>
-<p><label for="login">Login</label><br/>
-<%= text_field_tag 'login' %></p>
+<p><label for="login">Benutzername</label><br/>
+<%= text_field_tag 'Login' %></p>
  
-<p><label for="password">Password</label><br />
-<%= password_field_tag 'password' %></p>
+<p><label for="password">Passwort</label><br />
+<%= password_field_tag 'Password' %></p>
  
  
-<p><label for="remember_me">Remember me:</label>
+<p><label for="remember_me">Benutzer auf diesem Computer dauerhaft anmelden</label>
 <%= check_box_tag 'remember_me' %></p>
  
-<p><%= submit_tag 'Log in' %><%= link_to "Sign Up", new_user_path %></p>
+<p><%= submit_tag 'Anmelden' %>&nbsp;&nbsp;&nbsp;<%= link_to "Registrieren", new_user_path %></p>
 <% end %>

@@ -1,4 +1,4 @@
-<span class="headline">Editing repository</span>
+<span class="headline">Repository bearbeiten</span>
 <div class="inner0">
 <%= error_messages_for :repository %>
 <table class="form_table">
@@ -10,28 +10,28 @@
 	<td><%= select_distribution @repository, @distributions %></td>
 	</tr>
 	<tr>
-	<td>License type:</td>
+	<td>Lizenztyp:</td>
 	<td><%= select_license_type @repository %></td>
 	</tr>
 	<tr>
-	<td>Security type</td>
+	<td>Sicherheitstyp</td>
 	<td><%= select_security_type @repository %></td>
 	</tr>
 	<tr>
-		<td>Path:</td>
+		<td>Pfad:</td>
 		<td><%= f.text_field :url %></td>
 	</tr>
 	<tr>
-		<td>Subtype</td>
+		<td>Subtyp</td>
 		<td><%= f.text_field :subtype %></td>
 	</tr>
 	<tr>
  	<td colspan="2" align="center">
-    	<%= f.submit "Update" %>
+    	<%= f.submit "Aktualisieren" %>
   	</td>
 	</tr>
 <% end %>
 </table>
 </div>
-<%= link_to 'Back', { :controller => :distributions, :action => :show,\
+<%= link_to 'Zurück', { :controller => :distributions, :action => :show,\
 	:id => @repository.distribution.id } %>
