@@ -14,6 +14,11 @@ class SessionsController < ApplicationController
   def destroy
     self.current_user.forget_me if logged_in?
     cookies.delete :auth_token
+    
+    if editing_metapackage?
+        Cart.find(session[:cart]).destroy
+    end
+    
     reset_session
     flash[:notice] = "Du wurdest abgemeldet."
   redirect_to "/home"
@@ -32,6 +37,9 @@ class SessionsController < ApplicationController
       failed_login("Dein Benutzerkonto wurde deaktiviert.")
     else
       self.current_user = user
+      if editing_metapackage?
+        Cart.find(session[:cart]).destroy
+      end
       successful_login
     end
   end

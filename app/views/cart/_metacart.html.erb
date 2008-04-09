@@ -1,14 +1,13 @@
 <font size="1"><b>Bündel-Editor</b></font><br/>
 
 <% if editing_metapackage? %>
-	<% cart = session[:cart] %>
+    <% cart = Cart.find(session[:cart]) %>
 	<% name = cart.name %>
 	
 	<font size="1">Name: <b><%= name %></b></font>
 
     <ul class="cartlist">
-	<% cart.content_by_name.each do |package|%>
-	
+	<% cart.base_packages.each do |package|%>
 	    <li class="cartlist">
             <font size="1">
             <%= package.name %>

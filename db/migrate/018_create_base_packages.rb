@@ -22,5 +22,5 @@ class CreateBasePackages < ActiveRecord::Migration
   def self.down
     drop_table :base_packages
   end
-
 end
+
