@@ -1,5 +1,11 @@
-Based on the user profile you entered, the system generated the following suggestion of packages. If you click install these packages will be installed. Alternatively you can browse other packages in each category and make additional selections.
-
+Based on the user profile you entered, the system generated the following suggestion of packages. 
+If you click install these packages will be installed. Alternatively you can browse other packages in 
+each category and make additional selections.
+<p>
+	Aufgrund deines Benutzerprofils hat das System folgende Zusammenstellungen von Programmbündeln erstellt. 
+	Wenn du auf "installieren" klickst, werden diese Bündel installiert. 
+	Du hast natürlich auch die Möglichkeit Bündel, die du nicht haben willst zu deselektieren.
+	Zukünftig kannst du in den Kategorien stöbern und zusätzliche Pakete und Bündel auswählen.
 <div class="suggestion">
     <%= form_tag(user_path(current_user) + "/suggestion/install") %>
     <%= show_suggestion @root, @selection %>    
