@@ -6,9 +6,9 @@ class InitData < ActiveRecord::Migration
  
   def self.down
     Role.find_by_rolename('administrator').destroy   
+    Role.find_by_rolename('priviliged').destroy;
     Role.find_by_rolename('user').destroy
     User.find_by_login('admin').destroy   
-    User.find_by_login('user').destroy
   end
   
   private
@@ -138,7 +138,7 @@ class InitData < ActiveRecord::Migration
   def self.user
     #Make sure the role migration file was generated first    
     Role.create(:rolename => 'administrator')
-    Role.create(:priviliged => 'priviliged')
+    Role.create(:rolename => 'priviliged')
     Role.create(:rolename => 'user')
     
     #Then, add default admin user
