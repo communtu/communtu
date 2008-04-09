@@ -1,4 +1,4 @@
-<font size="1"><b>MetaPackage Editor</b></font><br/>
+<font size="1"><b>Bündel-Editor</b></font><br/>
 
 <% if editing_metapackage? %>
 	<% cart = session[:cart] %>
@@ -32,7 +32,7 @@
 <% else %>
     <div style="valign:bottom;">
         <font size="1"> 
-            <%= link_to("Create Metapackage", user_path(current_user) + "/cart/create") %>
+            <%= link_to("Neues Bündel", user_path(current_user) + "/cart/create") %>
         </font>
     </div>
 <% end %>
