@@ -4,23 +4,23 @@
 
 <% form_for(@user_profile) do |f| %>
   <p>
-    <b>User</b><br />
+    <b>Benutzer</b><br />
     <%= f.text_field :user_id %>
   </p>
 
   <p>
-    <b>Category</b><br />
+    <b>Kategorie</b><br />
     <%= f.text_field :category_id %>
   </p>
 
   <p>
-    <b>Rating</b><br />
+    <b>Expertenlevel</b><br />
     <%= f.text_field :rating %>
   </p>
 
   <p>
-    <%= f.submit "Create" %>
+    <%= f.submit "Anlegen" %>
   </p>
 <% end %>
 
-<%= link_to 'Back', user_profiles_path %>
+<%= link_to 'Zurück', user_profiles_path %>
