@@ -3,17 +3,16 @@
 	<%= render_flash %>
 
 <% if logged_in? %>
-<p>The following things can be selected from the sidebar :</p>
+<p>Die Seitenleiste links bietet folgende Möglichkeiten:</p>
 <ul>
-<li><b>Suggest</b> will offer you a suggestion of packages, that
-might be interesting for you, according to your current user profile</li>
-<li><b>Manage Profile</b> Allows you to edit your profile settings (Probably the first thing you should do after creating an account)</li>
-<li><b>Distributions</b> Here you can view the Ubuntu Distributions that have been created in the System</li>
-<li><b>My Meta packages</b> Manage the meta packages you created</li>
+<li><b>Profil bearbeiten</b> erlaubt dir, deine Einstellungen zu bearbeiten: für welche Aufgaben willst du deinen Ubuntu-PC benutzen? Das solltest du als erstes eintragen.</li>
+<li><b>Installationsvorschläge</b> bietet dir eine Zusammenstellung (Bündelung) von Programmen für die Installation auf deinem Computer an (entsprechend deines aktuellen Benutzerprofils).</li>
+<li><b>Bündel verwalten</b> Hast du gute Erfahrungen mit Programmen gemacht? Dann kannst du sie hier thematisch bündeln. </li>
+<li><b>Distributionen</b> Übersicht über die im System verfügbaren Ubuntu-Distributionen.</li>
 </ul>
 <% else %>
 <br>
-	Clicken sie auf	<%= link_to 'Start', '/users/new' %>, um einen neuen Benutzer anzulegen, oder 
-	<%= link_to 'loggen', '/users/login' %> sie sich ein
+	Klicke auf	<%= link_to 'Start', '/users/new' %>, um einen neuen Benutzer anzulegen, oder 
+	<%= link_to 'logge', '/users/login' %> dich ein
 <% end %>
 </p>
