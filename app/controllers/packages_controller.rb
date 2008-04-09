@@ -4,24 +4,12 @@ class PackagesController < ApplicationController
   # GET /Packages.xml
   def index           
     @distribution = Distribution.find(params[:distribution_id])
+    @packages     = Package.find_packages(session[:search], session[:group], params[:page], @distribution)
+    @groups       = Package.find(:all, :select => "DISTINCT section", :order => "section")
     
-    if not session[:search].nil?
-        @packages = Package.find(:all, :page => {:size => 20, :current => params[:page]},
-            :conditions => ["distribution_id = ? AND name like ?", @distribution.id, "%" + session[:search] + "%"], :order => "name")
-    else
-        if session[:group].nil? or session[:group] == "all"
-          @packages = Package.find(:all, :page => {:size => 20, :current => params[:page]},
-            :conditions => ["distribution_id = ?", @distribution.id], :order => "name")
-        else
-          puts session[:group]
-          @packages = Package.find(:all, :page => {:size => 20, :current => params[:page]},
-            :conditions => ["distribution_id = ? and section = ?", @distribution.id, session[:group]], :order => "name")
-        end
-    end
-    @groups = Package.find(:all, :select => "DISTINCT section", :order => "section")
-        respond_to do |format|
-          format.html { render :action => "index.html.erb" }
-          format.xml  { render :xml => @Packages }
+    respond_to do |format|
+      format.html { render :action => "index.html.erb" }
+      format.xml  { render :xml => @Packages }
     end
   end
   

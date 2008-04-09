@@ -17,6 +17,7 @@ class User < ActiveRecord::Base
   has_many :roles, :through => :permissions
   has_many :user_profiles, :dependent => :destroy
   has_many :temp_metapackages, :dependent => :destroy
+  belongs_to :distribution
   belongs_to :language
  
   before_save :encrypt_password

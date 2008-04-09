@@ -1,3 +1,2 @@
-<%= render_flash %>
-<%= render_tabz(:user_meta, current_user) %>
+<%= render_tabz(:user_meta, { :user => current_user, :session => session, :params => params }) %>
 

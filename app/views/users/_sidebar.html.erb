@@ -1,12 +1,10 @@
 <ul class="sidebar">
-	<li><%= link_to 'Suggest', user_path(current_user) + "/suggestion" %></li>
-	<li><%= link_to 'Manage Profile', user_user_profile_path(current_user) + '/edit' %></li>
-	<li><%= link_to 'Distributions', distributions_path %></li>
-	<li>
-	<%= link_to 'Meta Packages', user_path(current_user) + "/metapackages/0" %>
-	</li>
+	<li><%= link_to 'Installationsvorschläge', user_path(current_user) + "/suggestion" %></li>
+	<li><%= link_to 'Pakete verwalten', user_path(current_user) + "/metapackages/0" %></li>
+	<li><%= link_to 'Distributionen', distributions_path %></li>
+	<li><%= link_to 'Profil bearbeiten', user_user_profile_path(current_user) + '/edit' %></li>
 	<% if is_admin? %>
-	    <li><%= link_to 'Users', users_path %></li>
+	    <li><%= link_to 'Benutzer verwalten', users_path %></li>
     <% end %>
 </ul>
 

@@ -4,7 +4,7 @@ class CartController < ApplicationController
         if not editing_metapackage?
             session[:cart] = Cart.new
         end
-        redirect_to "/users/" + current_user.id.to_s + "/metapackages/0"
+        redirect_to "/users/" + current_user.id.to_s + "/metapackages/2"
     end
     
     def save

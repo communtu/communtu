@@ -18,6 +18,21 @@ class Package < BasePackage
     security_types  = [ "Native", "Trusted", "Third-Party" ]
   end
  
+  def self.find_packages(search, group, page, distribution)
+    if not search.nil?
+          packages = Package.find(:all, :page => {:size => 10, :current => page},
+            :conditions => ["distribution_id = ? AND name like ?", distribution.id, "%" + search + "%"], :order => "name")
+    else
+        if group.nil? or group == "all"
+          packages = Package.find(:all, :page => {:size => 10, :current => page},
+            :conditions => ["distribution_id = ?", distribution.id], :order => "name")
+        else
+          packages = Package.find(:all, :page => {:size => 10, :current => page},
+            :conditions => ["distribution_id = ? and section = ?", distribution.id, group], :order => "name")
+        end
+    end
+  end
+ 
   def self.get_url_from_source source
     parts = source.split " "
     if parts.length == 4
