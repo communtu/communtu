@@ -2,6 +2,7 @@ class InitData < ActiveRecord::Migration
   def self.up
     user
     categories
+    distributions
   end
  
   def self.down
@@ -148,6 +149,7 @@ class InitData < ActiveRecord::Migration
     user.email = "info@yourapplication.com"
     user.password = "admin"
     user.password_confirmation = "admin"
+    user.distribution_id = 1
     user.save(false)
     user.send(:activate!)
     role = Role.find_by_rolename('administrator')
@@ -158,4 +160,16 @@ class InitData < ActiveRecord::Migration
     permission.save(false)
   end
   
+  def self.distributions
+    d = Distribution.new({ :name => "gutsy_test", :description => "a test distribution"})
+    d.save(false)
+
+    d = Repository.new({ :distribution_id => 1, :license_type => 0, :type => "deb",\
+      :url => "deb http://de.archive.ubuntu.com/ubuntu/ gutsy",\
+      :security_type => 0,\
+      :subtype => "main" })
+      
+    d.save(false)
+ end
+
 end
