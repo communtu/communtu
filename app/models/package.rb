@@ -41,6 +41,10 @@ class Package < BasePackage
   def self.get_url_from_source source
     parts = source.split " "
     if parts.length == 4
+      # add trailing "/" if necessary
+      if parts[1][-1] != 47 then
+        parts[1] += "/"
+      end
       url = parts[1] + "dists/" + parts[2] + "/" + parts[3] + "/binary-i386/Packages.gz"
     end    
     url
