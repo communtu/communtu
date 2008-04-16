@@ -45,6 +45,7 @@ class RepositoriesController < ApplicationController
     @repository = Repository.new(params[:repository])
     @repository.distribution_id = params[:distribution_id]
     @repository.url = params[:url]
+    @repository.subtype = "i386"
     
     respond_to do |format|
       if @repository.save

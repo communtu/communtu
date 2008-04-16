@@ -17,7 +17,6 @@ class UserProfilesController < ApplicationController
     
     post = params[:post]
     user = current_user
-    #user.update_attributes({ :security => params[:sec], :license => params[:lic] })
     user.security = params[:sec]
     user.license  = params[:lic]
     user.distribution_id = params[:distribution]
@@ -36,8 +35,7 @@ class UserProfilesController < ApplicationController
       end
       profile = nil
     end
-    flash[:notice] = 'User Profile saved succesfully!'
-    redirect_to :controller => :users, :action => :desc, :id => current_user
+    redirect_to :controller => :home
   end
   
 end

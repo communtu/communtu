@@ -1,6 +1,6 @@
 module DistributionsHelper
   
-  #shows a repos in a div
+  #shows a repository in a div
   #params:
   #repos=dist to show
   #style=div-class
