@@ -3,7 +3,7 @@
 
 <%= error_messages_for :repository %>
 <table>
-<% form_for(@repository, :url => { :action => :create }) do |f| %>
+<% form_for(:repository,@repository, :url => { :action => :create }) do |f| %>
 <tr>
 	<td>Lizenztyp:</td>
 	<td><%= select_license_type %></td>
@@ -14,12 +14,12 @@
 </tr>
 <tr>
 	<td>Pfad:</td>
-	<td><%= tag 'input', { :type => :text, :name => 'url'} %></td>
+	<td><%= f.text_field :url %></td>
 	<td> (z.B. <i>deb http://de.archive.ubuntu.com/ubuntu/ gutsy</i>)</td>
 </tr>
 <tr>
 	<td>Subtyp:</td>
-	<td><%= tag 'input', { :type => :text, :name => 'subtype'} %></td>
+	<td><%= f.text_field :subtype %></td>
 	<td> (z.B. <i>main</i>)</td>
 </tr>
 <tr><td colspan="2" align="center">
