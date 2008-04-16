@@ -2,7 +2,7 @@ require 'tabz'
 
 class UserMetaTabz < Tabz::Base
 
-    resides_in "/metapackages"
+    resides_in "/users/:user_id/metapackages"
 
     add_tab do
         titled "Erstellte Bündel"

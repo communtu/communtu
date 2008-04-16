@@ -54,7 +54,7 @@ module Tabz
     class Base
         include Singleton
 
-        attr_accessor :tabs, :base, :controler
+        attr_accessor :tabs, :base
    
         def self.resides_in base
             instance.base = base

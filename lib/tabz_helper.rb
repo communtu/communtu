@@ -11,7 +11,7 @@ module TabzHelper
         tabbing.tabs.each do |tab|
         
             result << tag("li", {:class => "tabz"}, true)
-            result << link_to(tab.title, build_url(n), {})
+            result << link_to(tab.title, build_url(tabbing, n), {})
             result << "</li>\n"
             
             n = n + 1
@@ -28,8 +28,8 @@ module TabzHelper
     
     private
     
-    def build_url(n)
-        request.request_uri.chop + n.to_s
+    def build_url(tabbing, n)
+        tabbing.base.gsub(/:([a-z|A-Z|_]*)/) { |match| params[$1] } + "/" + n.to_s
     end
 
 end

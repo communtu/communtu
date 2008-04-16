@@ -19,6 +19,11 @@ class Package < BasePackage
   end
  
   def self.find_packages(search, group, page, distribution)
+  
+    if distribution.nil?
+        return []
+    end
+  
     if not search.nil?
           packages = Package.find(:all, :page => {:size => 10, :current => page},
             :conditions => ["distribution_id = ? AND name like ?", distribution.id, "%" + search + "%"], :order => "name")

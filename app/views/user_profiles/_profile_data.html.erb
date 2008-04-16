@@ -1,0 +1,39 @@
+<h3>Grunddaten editieren</h3>
+
+<%= error_messages_for :user_profile %>
+
+<p>Hier kannst du dein Benutzerprofil editieren. Bewerte eine Option,
+um anzugeben, wie wichtigen dir der Bereich ist. Diese Informationen werden
+benutzt, damit das System dir sinnvolle weitere Pakete empfehlen kann.</p>
+
+<% form_tag user_user_profile_path(current_user) + "/update_data", options = {:name => "data", :method => :put} do %>
+    <div>
+        <p>Wähle zunächst deine Distribution aus.</p>
+        
+        <% distrib_options = "" %>
+        <% distributions.each do |distribution| %>
+            <% distrib_options << "<option value='" + distribution.id.to_s + "'>" + distribution.name + "</option>" %>
+        <% end %>
+        
+        <%= select_tag("distribution", distrib_options) %>
+        
+    	<% options = Array.new (Package.security_types.length), false%>
+		<% options[current_user.license] = true%>
+		
+        <p>Hier kannst du einstellen, wie sicher deine Installationsquellen sein sollen</p>
+        
+        <%= radio_button_tag "sec", "0", options[0] %> Nur Ubuntuquellen zulassen <br>
+        <%= radio_button_tag "sec", "1", options[1] %> Communityquellen zulassen <br>
+        <%= radio_button_tag "sec", "2", options[2] %> Alle Quellen zulassen <br>
+    </div>
+    <div style="margin-bottom:30px">
+    	<% options = Array.new (Package.license_types.length), false %>
+		<% options[current_user.license] = true %>
+        <p>Hier kannst du auswählen, welche Lizenzen du zulassen willst</p>
+        <%= radio_button_tag "lic", "0", options[0] %> Open Source <br>
+        <%= radio_button_tag "lic", "1", options[1] %> Unfreie Lizenzen zulassen <br>
+    </div>
+    <div style="margin-top:20px;">
+        <%= link_to "Speichern", "javascript:document.data.submit();" %>
+    </div>
+<% end %>
