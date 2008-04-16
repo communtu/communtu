@@ -44,7 +44,7 @@ class TempMetapackagesController < ApplicationController
 
     respond_to do |format|
       if @temp_metapackages.save
-        flash[:notice] = 'TempMetapackages was successfully created.'
+        flash[:notice] = 'TempMetapackages erzeugt.'
         format.html { redirect_to(@temp_metapackages) }
         format.xml  { render :xml => @temp_metapackages, :status => :created, :location => @temp_metapackages }
       else
@@ -61,7 +61,7 @@ class TempMetapackagesController < ApplicationController
 
     respond_to do |format|
       if @temp_metapackages.update_attributes(params[:temp_metapackages])
-        flash[:notice] = 'TempMetapackages was successfully updated.'
+        flash[:notice] = 'TempMetapackages aktualisiert.'
         format.html { redirect_to(@temp_metapackages) }
         format.xml  { head :ok }
       else

@@ -45,7 +45,7 @@ class DistributionsController < ApplicationController
 
     respond_to do |format|
       if @distribution.save
-        flash[:notice] = 'Distribution was successfully created.'
+        flash[:notice] = 'Distribution erzeugt.'
         format.html { redirect_to(@distribution) }
         format.xml  { render :xml => @distribution, :status => :created, :location => @distribution }
       else
@@ -62,7 +62,7 @@ class DistributionsController < ApplicationController
 
     respond_to do |format|
       if @distribution.update_attributes(params[:distribution])
-        flash[:notice] = 'Distribution was successfully updated.'
+        flash[:notice] = 'Distribution aktualisiert.'
         format.html { redirect_to(@distribution) }
         format.xml  { head :ok }
       else

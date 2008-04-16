@@ -1,5 +1,5 @@
 class AdminsController < ApplicationController
-  before_filter :check_administrator_role, :flash => { :notice => 'You are not an Administrator!' }
+  before_filter :check_administrator_role, :flash => { :notice => 'Du bist kein Administrator!' }
   
   def index
   end
@@ -14,7 +14,7 @@ class AdminsController < ApplicationController
   
   def sync_package
     @repository = Repository.find(params[:id])
-    @info = Package.import_source @repository   
+    @info = Package.import_source @repository  
   end
 
 end

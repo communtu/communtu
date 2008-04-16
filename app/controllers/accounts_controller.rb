@@ -11,13 +11,13 @@ class AccountsController < ApplicationController
     flash[:notice] = "Dein Benutzerkonto wurde aktiviert! Du kannst dich nun einloggen."
     redirect_to login_path
   rescue User::ArgumentError
-    flash[:notice] = 'Activation code not found. Please try creating a new account.'
+    flash[:notice] = 'Aktivierungs-Code nicht gefunden. Bitte versuche, ein neues Benutzerkonto anzulegen.'
     redirect_to new_user_path 
   rescue User::ActivationCodeNotFound
-    flash[:notice] = 'Activation code not found. Please try creating a new account.'
+    flash[:notice] = 'Aktivierungs-Code nicht gefunden. Bitte versuche, ein neues Benutzerkonto anzulegen.'
     redirect_to new_user_path
   rescue User::AlreadyActivated
-    flash[:notice] = 'Your account has already been activated. You can log in below.'
+    flash[:notice] = 'Bein Benutzerkonto wurde bereits aktiviert. Du kannst dich nun anmelden.'
     redirect_to login_path
   end
  
@@ -33,19 +33,19 @@ class AccountsController < ApplicationController
         current_user.password_confirmation= params[:password_confirmation]
         current_user.password= params[:password]        
         if current_user.save
-          flash[:notice] = "Password successfully updated."
+          flash[:notice] = "Passwort aktualisiert."
           redirect_to root_path #profile_url(current_user.login)
         else
-          flash[:error] = "An error occured, your password was not changed."
+          flash[:error] = "Es ist ein Fehler aufgetreten. Das Passwort wurde nicht geändert."
           render :action => 'edit'
         end
       else
-        flash[:error] = "New password does not match the password confirmation."
+        flash[:error] = "Das neue Passwort stimmt nicht mit der Bestätigung überein."
         @old_password = params[:old_password]
         render :action => 'edit'      
       end
     else
-      flash[:error] = "Your old password is incorrect."
+      flash[:error] = "Dein altes Passwort war inkorrekt."
       render :action => 'edit'
     end 
   end
