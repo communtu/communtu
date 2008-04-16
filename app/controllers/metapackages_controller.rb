@@ -100,7 +100,7 @@ class MetapackagesController < ApplicationController
   
   def remove_package
     if Metacontent.delete(params[:package_id]).nil?
-      flash[:error] = "Couldn't remove package from Meta Package"
+      flash[:error] = "Konnte Paket nicht aus Bündel entfernen."
     end
     redirect_to :controller => :metapackages, :action => :show, :id => params[:id] 
   end

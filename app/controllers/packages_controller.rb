@@ -74,7 +74,7 @@ class PackagesController < ApplicationController
 
     respond_to do |format|
       if @package.save
-        flash[:notice] = 'Package erzeugt.'
+        flash[:notice] = 'Paket erzeugt.'
         format.html { redirect_to(@Package) }
         format.xml  { render :xml => @package, :status => :created, :location => @package }
       else
@@ -91,7 +91,7 @@ class PackagesController < ApplicationController
 
     respond_to do |format|
       if @package.update_attributes(params[:Package])
-        flash[:notice] = 'Package aktualisiert.'
+        flash[:notice] = 'Paket aktualisiert.'
         format.html { redirect_to(@package) }
         format.xml  { head :ok }
       else
