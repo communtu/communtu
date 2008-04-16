@@ -3,7 +3,7 @@ class CartController < ApplicationController
     def create
         if not editing_metapackage?
             cart      = Cart.new
-            cart.name = "Neues Metapaket"
+            cart.name = "Neues Bündel"
             cart.save!
             
             session[:cart] = cart.id
