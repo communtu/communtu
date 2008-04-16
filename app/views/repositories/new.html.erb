@@ -1,5 +1,5 @@
 <div class="inner0">
-<span class="headline">Neu Repository</span>
+<span class="headline">Neues Repository</span>
 
 <%= error_messages_for :repository %>
 <table>
@@ -15,6 +15,12 @@
 <tr>
 	<td>Pfad:</td>
 	<td><%= tag 'input', { :type => :text, :name => 'url'} %></td>
+	<td> (z.B. <i>deb http://de.archive.ubuntu.com/ubuntu/ gutsy</i>)</td>
+</tr>
+<tr>
+	<td>Subtyp:</td>
+	<td><%= tag 'input', { :type => :text, :name => 'subtype'} %></td>
+	<td> (z.B. <i>main</i>)</td>
 </tr>
 <tr><td colspan="2" align="center">
     <%= f.submit "Anlegen" %>
