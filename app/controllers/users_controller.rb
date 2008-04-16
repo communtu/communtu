@@ -34,10 +34,10 @@ class UsersController < ApplicationController
     @user.save!
     #Uncomment to have the user logged in after creating an account - Not Recommended
     #self.current_user = @user
-  flash[:notice] = "Thanks for signing up!"
+  flash[:notice] = "Danke für die Registrierung bei Communtu!"
     redirect_to "/session/new"
   rescue ActiveRecord::RecordInvalid
-    flash[:error] = "There was a problem creating your account."
+    flash[:error] = "Es gab ein Problem mit der Registrierung."
     render :action => 'new'
   end
   
@@ -48,7 +48,7 @@ class UsersController < ApplicationController
   def update
     @user = User.find(current_user)
     if @user.update_attributes(params[:user])
-      flash[:notice] = "User updated"
+      flash[:notice] = "Benutzer aktualisiert"
       redirect_to :action => 'show', :id => current_user
     else
       render :action => 'edit'
@@ -58,9 +58,9 @@ class UsersController < ApplicationController
   def destroy
     @user = User.find(params[:id])
     if @user.update_attribute(:enabled, false)
-      flash[:notice] = "User disabled"
+      flash[:notice] = "Benutzer deaktiviert"
     else
-      flash[:error] = "There was a problem disabling this user."
+      flash[:error] = "Es gab ein Problem mit der Deaktivierung dieses Benutzers."
     end
     redirect_to :action => 'index'
   end
@@ -68,9 +68,9 @@ class UsersController < ApplicationController
   def enable
     @user = User.find(params[:id])
     if @user.update_attribute(:enabled, true)
-      flash[:notice] = "User enabled"
+      flash[:notice] = "Benutzer aktiviert"
     else
-      flash[:error] = "There was a problem enabling this user."
+      flash[:error] = "Es gab ein Problem mit der Aktivierung dieses Benutzers."
     end
       redirect_to :action => 'index'
   end
