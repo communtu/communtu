@@ -45,11 +45,10 @@ class RepositoriesController < ApplicationController
     @repository = Repository.new(params[:repository])
     @repository.distribution_id = params[:distribution_id]
     @repository.url = params[:url]
-    @repository.subtype = "i386"
     
     respond_to do |format|
       if @repository.save
-        flash[:notice] = 'Repository was successfully created.'
+        flash[:notice] = 'Repository erzeugt.'
         format.html { redirect_to(distribution_path(params[:distribution_id])) }
         format.xml  { render :xml => @repository, :status => :created, :location => @repository }
       else
@@ -66,7 +65,7 @@ class RepositoriesController < ApplicationController
     
     respond_to do |format|
       if @repository.update_attributes(params[:repository])
-        flash[:notice] = 'Repository was successfully updated.'
+        flash[:notice] = 'Repository aktualisiert.'
         format.html { redirect_to({ :controller => :distributions, :action => :show,\
           :id => @repository.distribution_id }) }
         format.xml  { head :ok }
