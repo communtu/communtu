@@ -8,7 +8,7 @@ class AccountsController < ApplicationController
     # Uncomment and change paths to have user logged in after activation - not recommended
     #self.current_user = User.find_and_activate!(params[:id])
   User.find_and_activate!(params[:id])
-    flash[:notice] = "Your account has been activated! You can now login."
+    flash[:notice] = "Dein Benutzerkonto wurde aktiviert! Du kannst dich nun einloggen."
     redirect_to login_path
   rescue User::ArgumentError
     flash[:notice] = 'Activation code not found. Please try creating a new account.'
