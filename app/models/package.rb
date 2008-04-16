@@ -46,6 +46,10 @@ class Package < BasePackage
     packages = packages_to_hash url
     distribution_id = repository.distribution_id
     
+    if packages.nil? then
+      return nil
+    end
+    
     info = { "package_count" => packages.size, "update_count" => 0, "new_count" => 0,\
       "failed" => [], "url" => url }
       
@@ -115,7 +119,7 @@ private
             end
             readpackage.call nil
         else
-            # error
+           # error
         end
     end
     ensure
