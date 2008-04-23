@@ -15,7 +15,7 @@
 
   <p>
     <b>Übergeordnete Kategorie</b><br />
-    <%= f.text_field :parent_id %>
+    	<%= select_tag('parent_id', (get_category_select_options (Category.find(1))))%>
   </p>
 
   <p>

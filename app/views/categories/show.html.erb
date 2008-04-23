@@ -15,7 +15,8 @@
 
 <p>
   <b>Übergeordnete Kategorie:</b>
-  <%=h @category.parent_id %>
+  <% @c = @category.category%>
+  <%=h (@c.nil? ? "" : @c.name) %>
 </p>
 
 
