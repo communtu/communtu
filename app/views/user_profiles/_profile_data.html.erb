@@ -5,8 +5,8 @@
 <% if current_user.first_login %>
 
 <p>Dies ist das erste mal, dass du dich angemeldet hast. Am besten editierst du auf dieser und der nächsten Seite
-zunaechst einmal dein Benutzerprofil. Diese Informationen werden dann dazu verwendet, um dir Softwarebündel zu
-empfehlen, die für dich interessant sein koennten.</p>
+zunächst einmal dein Benutzerprofil. Diese Informationen werden dann dazu verwendet, um dir Softwarebündel zu
+empfehlen, die für dich interessant sein könnten.</p>
 
 <% else %>
 
@@ -16,7 +16,7 @@ benutzt, damit das System dir sinnvolle weitere Pakete empfehlen kann.</p>
 
 <% end %>
 
-<p>Auf dieser Seite kannt du deine Stammdaten angeben, wie die Ubuntudistribution, die du verwendest.</p>
+<p>Auf dieser Seite kannt du deine Stammdaten angeben.</p>
 
 <% form_tag user_user_profile_path(current_user) + "/update_data", options = {:name => "data", :method => :put} do %>
     <div>

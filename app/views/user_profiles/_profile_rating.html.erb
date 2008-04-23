@@ -4,8 +4,8 @@
 
 <% if current_user.first_login %>
 
-<p>Die ist das erste mal, dass du dich angemeldet hast. Am besten editierst du auf dieser und der nächsten Seite
-zunaechst einmal dein Benutzerprofil. Diese Informationen werden dann dazu verwendet, um dir Softwarebündel zu
+<p>Dies ist das erste mal, dass du dich angemeldet hast. Am besten editierst du auf dieser 
+einmal dein Benutzerprofil. Diese Informationen werden dann dazu verwendet, um dir Softwarebündel zu
 empfehlen, die für dich interessant sein koennten.</p>
 
 <% else %>
@@ -16,8 +16,8 @@ benutzt, damit das System dir sinnvolle weitere Pakete empfehlen kann.</p>
 
 <% end %>
 
-<p>Auf dieser Seite kannst du Angeben, was fuer ein Typ von Benutzer du bist. Dazu bewertest du einfach
-die verschiedenen Taetigkeistfelder.</p>
+<p>Auf dieser Seite kannst du angeben, was für ein Typ von Benutzer du bist. Dazu bewertest du einfach
+die verschiedenen Tätigkeistfelder.</p>
 
 <% form_tag(user_user_profile_path(current_user) + "/update_rating", options = {:name => "ratings", :method => :put}) do %>
     <div>
