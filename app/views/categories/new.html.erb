@@ -15,7 +15,7 @@
 
   <p>
     <b>Übergeordnete Kategorie</b><br />
-    	<%= select_tag('parent_id', (get_category_select_options (Category.find(1))))%>
+    	<%= select_tag('parent_id', "<option value='1'> Root</option>"+(get_category_select_options (Category.find(1))))%>
   </p>
 
   <p>

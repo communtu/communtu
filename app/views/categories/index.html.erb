@@ -5,7 +5,7 @@
   	<th>Id</th>
     <th>Name</th>
     <th>Beschreibung</th>
-    <th>Kategorie</th>
+    <th>übergeordnete Kategorie</th>
   </tr>
 
 <% for category in @categories %>
@@ -13,7 +13,7 @@
   	<td><%=h category.id %></td>
     <td><%=h category.name %></td>
     <td><%=h category.description %></td>
-    <td><%=h category.parent_id %></td>
+    <td><%=h category.parent_name %></td>
     <td><%= link_to 'Anzeigen', category %></td>
     <td><%= link_to 'Bearbeiten', edit_category_path(category) %></td>
     <td><%= link_to 'Löschen', category, :confirm => 'Biest du sicher?', :method => :delete %></td>
