@@ -22,8 +22,7 @@ module DistributionsHelper
             { :controller => :admin, :action => :sync_package, :id => repo.id})
           del_link =  (link_to (tag "img", { :src => "/images/edit-delete.png", :width => "22", :height => "22",\
             :alt => "Delete repository", :class => "link_img"}) ,\
-            { :controller => :repositories, :action => :destroy,\
-            :id => repo.id, :distribution_id => repo.distribution_id })
+             "/distributions/#{repo.distribution_id}/repositories/#{repo.id}/destroy")
           row = "<tr><td class='" + css + "' valign='middle'>" + sync_link +\
              "</td><td class='" + css + "' valign='middle'>" + link + "</td>" +\
              "<td class='" + css + "' valign='middle'>" + del_link + "</td></tr>"
