@@ -8,7 +8,11 @@ each category and make additional selections.
 	Zukünftig kannst du in den Kategorien stöbern und zusätzliche Pakete und Bündel auswählen.
 <div class="suggestion">
     <%= form_tag(user_path(current_user) + "/suggestion/install") %>
-    <%= show_suggestion @root, @selection %>    
+    <%= show_suggestion @root, @selection %>   
+<br><br>Durch Klicken auf das Symbol rechts unten wird automatisch
+ein Skript erstellt, dass du auf deinem Computer abspeicherst und
+ausf&uuml;hrst. Das Skript installiert automatisch die gew&uuml;nschten
+Programme, inklusive Download aus dem Internet.
     <div style="padding-top:12px;padding-right:8px" align="right">
         <input type="image" src="/images/apt.png" value="Submit"/>
     </div>

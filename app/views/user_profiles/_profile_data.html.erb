@@ -20,7 +20,7 @@ benutzt, damit das System dir sinnvolle weitere Pakete empfehlen kann.</p>
 
 <% form_tag user_user_profile_path(current_user) + "/update_data", options = {:name => "data", :method => :put} do %>
     <div>
-        <p>Wähle zunächst deine Distribution aus.</p>
+        <p>Wähle zunächst deine Ubuntu-Version aus.</p>
         
         <% distrib_options = "" %>
         <% distributions.each do |distribution| %>

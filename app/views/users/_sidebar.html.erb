@@ -2,7 +2,7 @@
 	<li><%= link_to 'Profil bearbeiten', user_user_profile_path(current_user) + '/edit' %></li>
 	<li><%= link_to 'Installationsvorschläge', user_path(current_user) + "/suggestion" %></li>
 	<li><%= link_to 'Bündel verwalten', user_path(current_user) + "/metapackages/0" %></li>
-	<li><%= link_to 'Distributionen', distributions_path %></li>
+	<li><%= link_to 'Ubuntu-Versionen', distributions_path %></li>
 	<% if is_admin? %>
 	    <li><%= link_to 'Benutzer verwalten', users_path %></li>
 	    <li><%= link_to 'Kategorien verwalten', categories_path %></li>
