@@ -35,9 +35,9 @@
 	    <% if logged_in? %>
 	    
 		    <% if metapackage.user_id == current_user.id %>
-		        <%= link_to_remote image_tag("edit.png", :size => "22x22", :border => "0"), :update => :meta_cart,\
-		    			:url => { :controller => :temp_metapackages, :action => :transform_to_temp,\
-		    			:id => metapackage.id }%>
+		        <%= link_to_remote(image_tag("/images/add.png", :size => "22x22", :border => "0"), \
+			        :url => user_path(current_user) + "/cart/add_to_cart/" + metapackage.id.to_s,\
+			        :update => 'meta_cart') %>
 		    <% end %>
 		    
 		    <% if is_admin? %>

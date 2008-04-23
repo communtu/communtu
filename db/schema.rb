@@ -155,6 +155,7 @@ ActiveRecord::Schema.define(:version => 21) do
     t.integer  "security",                                :default => 0
     t.integer  "distribution_id"
     t.integer  "language_id",                             :default => 1
+    t.integer  "first_login",                             :default => 1
   end
 
 end

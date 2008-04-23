@@ -19,6 +19,9 @@ class SessionsController < ApplicationController
         Cart.find(session[:cart]).destroy
     end
     
+    self.current_user.first_login = 0
+    self.current_user.save!
+    
     reset_session
     flash[:notice] = "Du wurdest abgemeldet."
   redirect_to "/home"
@@ -58,7 +61,11 @@ class SessionsController < ApplicationController
     end
       return_to = session[:return_to]
       if return_to.nil?
-        redirect_to "/home"
+        if self.current_user.first_login == 1
+            redirect_to user_user_profile_path(self.current_user) + "/tabs/0"
+        else
+            redirect_to "/home"
+        end
       else
         redirect_to return_to
       end

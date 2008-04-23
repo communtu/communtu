@@ -17,10 +17,18 @@ class UserProfilesController < ApplicationController
     user.distribution_id = params[:distribution]
     user.save!
     
-    redirect_to user_user_profile_path(current_user) + "/tabs/0"
+    if current_user.first_login
+        redirect_to user_user_profile_path(current_user) + "/tabs/1"
+    else
+        redirect_to user_user_profile_path(current_user) + "/tabs/0"
+    end
   end
   
   def update_rating
+  
+    current_user.first_login = 0
+    current_user.save!
+  
     params[:post].each do |key, value|
       profile = UserProfile.find(:first, :conditions => ["category_id= ? and user_id= ?", key.to_s, current_user.id])
       if not profile.nil?
