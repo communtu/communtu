@@ -15,23 +15,35 @@ class SuggestionController < ApplicationController
     end
   end 
 
+  def recursive_packages meta, package_install, package_sources    
+    meta.base_packages.each do |p|
+        if p.class == Package
+            package_install << (p.name + " ")
+            package_sources.store(p.repository, p.repository.url)
+        else
+            recursive_packages p, package_install, package_sources
+        end
+    end
+  end
+
   def install
 
     script          = ""
     package_install = ""
+    sources         = {}
     package_sources = ""
    
     script += "#!/bin/bash\n\n"
     script += "file=\"/etc/apt/sources.list\"\n\n"
-   
+    
     packages = params[:post]
     packages.each do |id,unused|
+    
         package = Metapackage.find(id)
-        package.packages.each do |p|
-            package_install += (p.name + " ")
-            package_sources += gen_package_source p
-        end
+        recursive_packages package, package_install, sources
     end
+    
+    gen_package_sources sources, package_sources
     
     script += package_sources
     script += "apt-get update\n"
@@ -45,12 +57,15 @@ class SuggestionController < ApplicationController
   
   private
   
-    def gen_package_source package
-        out  = "source=\"" + package.repository.url + " " + package.repository.subtype + "\"\n"
-        out += "grep -q \"package.repository.url" + ".*" + package.repository.subtype + "\" $file\n\n"
-        out += "if [ \"$?\" != \"0\" ]; then\n" +
-        "\techo \"$source\" >> $file\n" +
-        "fi\n\n"
+    def gen_package_sources sources, package_sources
+        sources.each do |repository, url|
+            out  = "source=\"" + url + " " + repository.subtype + "\"\n"
+            out += "grep -q \"repository.url" + ".*" + repository.subtype + "\" $file\n\n"
+            out += "if [ \"$?\" != \"0\" ]; then\n" +
+            "\techo \"$source\" >> $file\n" +
+            "fi\n\n"
+            package_sources << out
+        end
     end
       
 end

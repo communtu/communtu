@@ -25,7 +25,9 @@ class UserProfilesController < ApplicationController
   end
   
   def update_rating
-  
+
+    was_first = current_user.first_login
+      
     current_user.first_login = 0
     current_user.save!
   
@@ -41,7 +43,10 @@ class UserProfilesController < ApplicationController
         profile.save!
       end
     end
-    redirect_to user_user_profile_path(current_user) + "/tabs/1"
+    if was_first == 1
+        redirect_to "/home"
+    else
+        redirect_to user_user_profile_path(current_user) + "/tabs/1"
   end
   
 end
