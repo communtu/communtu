@@ -60,7 +60,7 @@ class SuggestionController < ApplicationController
     def gen_package_sources sources, package_sources
         sources.each do |repository, url|
             out  = "source=\"" + url + " " + repository.subtype + "\"\n"
-            out += "grep -q \"repository.url" + ".*" + repository.subtype + "\" $file\n\n"
+            out += "grep -q \"" + repository.url + ".*" + repository.subtype + "\" $file\n\n"
             out += "if [ \"$?\" != \"0\" ]; then\n" +
             "\techo \"$source\" >> $file\n" +
             "fi\n\n"
