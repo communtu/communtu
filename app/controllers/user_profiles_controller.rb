@@ -47,6 +47,7 @@ class UserProfilesController < ApplicationController
         redirect_to "/home"
     else
         redirect_to user_user_profile_path(current_user) + "/tabs/1"
+    end    
   end
   
 end

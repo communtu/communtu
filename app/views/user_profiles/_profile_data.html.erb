@@ -34,16 +34,16 @@ benutzt, damit das System dir sinnvolle weitere Pakete empfehlen kann.</p>
 		
         <p>Hier kannst du einstellen, wie sicher deine Installationsquellen sein sollen</p>
         
-        <%= radio_button_tag "sec", "0", options[0] %> Nur Ubuntuquellen zulassen <br>
+        <%= radio_button_tag "sec", "0", options[0] %> Nur Ubuntuquellen zulassen (sehr sicher)<br>
         <%= radio_button_tag "sec", "1", options[1] %> Communityquellen zulassen <br>
-        <%= radio_button_tag "sec", "2", options[2] %> Alle Quellen zulassen <br>
+        <%= radio_button_tag "sec", "2", options[2] %> Alle Quellen zulassen (unsicherer, aber mehr Programme)<br>
     </div>
     <div style="margin-bottom:30px">
     	<% options = Array.new (Package.license_types.length), false %>
 		<% options[current_user.license] = true %>
         <p>Hier kannst du auswählen, welche Lizenzen du zulassen willst</p>
-        <%= radio_button_tag "lic", "0", options[0] %> Open Source <br>
-        <%= radio_button_tag "lic", "1", options[1] %> Unfreie Lizenzen zulassen <br>
+        <%= radio_button_tag "lic", "0", options[0] %> Freie Software (Quellen liegen offen und dürfen weiterentwickelt werden)<br>
+        <%= radio_button_tag "lic", "1", options[1] %> Unfreie Lizenzen zulassen (auch kostenlos, aber unfrei)<br>
     </div>
     <div style="margin-top:20px;">
         <% if current_user.first_login %>
