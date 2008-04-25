@@ -43,7 +43,7 @@ module UserProfilesHelper
   
   def edit_profile_table root, map
     table  = "<table class='profileTable' cellspacing='0'>\n"
-    table += "<tr><th></th><th></th><th>gar nicht</th><th>normal</th><th>erweitert</th><th>Experte</th><th>Freak</th></tr>"
+    table += "<tr><th></th><th></th><th>&nbsp;gar nicht&nbsp;</th><th>&nbsp;normal&nbsp;</th><th>&nbsp;erweitert&nbsp;</th><th>&nbsp;Experte&nbsp;</th><th>&nbsp;Freak&nbsp;</th></tr>"
     table += profile_rows root, map, 0
     table += "</table>\n"
   end

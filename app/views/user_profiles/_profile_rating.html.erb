@@ -17,7 +17,9 @@ benutzt, damit das System dir sinnvolle weitere Pakete empfehlen kann.</p>
 <% end %>
 
 <p>Auf dieser Seite kannst du angeben, was für ein Typ von Benutzer du bist. Dazu bewertest du einfach
-die verschiedenen Tätigkeistfelder.</p>
+die verschiedenen Tätigkeistfelder. Dein Interesse an einem Gebiet kann von "gar nicht" bis "Freak" reichen.
+Entsprechend wird aus diesem Bereich gar nichts oder sehr viel nachinstalliert.
+</p>
 
 <% form_tag(user_user_profile_path(current_user) + "/update_rating", options = {:name => "ratings", :method => :put}) do %>
     <div>
