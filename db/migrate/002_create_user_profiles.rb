@@ -3,7 +3,7 @@ class CreateUserProfiles < ActiveRecord::Migration
     create_table :user_profiles do |t|
       t.integer :user_id
       t.integer :category_id
-      t.integer :rating
+      t.integer :rating, :default => 1
 
       t.timestamps
     end

@@ -5,7 +5,7 @@ class UserMetaTabz < Tabz::Base
     resides_in "/users/:user_id/metapackages"
 
     add_tab do
-        titled "Erstellte Bündel"
+        titled "Meine Bündel"
         looks_like "users/ownmetas"
         with_data do 
             set_to({ :packages => Metapackage.find(:all, :conditions => ["user_id=? AND distribution_id=?", @user_data[:user].id, 

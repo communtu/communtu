@@ -19,15 +19,14 @@ class CartController < ApplicationController
 
             if meta.nil?
                 meta = Metapackage.new
+                meta.name            = cart.name
+                meta.user_id         = current_user.id
+                meta.distribution_id = current_user.distribution_id
+                meta.category_id     = 1
+                meta.description     = ""
+                meta.rating          = 0
+                meta.save!
             end
-            
-            meta.name            = cart.name
-            meta.user_id         = current_user.id
-            meta.distribution_id = current_user.distribution_id
-            meta.category_id     = 1
-            meta.description     = ""
-            meta.rating          = 0
-            meta.save!
             
             license = 0
             cart.cart_contents.each do |package|

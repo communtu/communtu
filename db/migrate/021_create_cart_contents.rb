@@ -5,6 +5,7 @@ class CreateCartContents < ActiveRecord::Migration
       t.integer :base_package_id
       t.timestamps
     end
+
   end
 
   def self.down
