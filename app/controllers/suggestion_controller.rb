@@ -18,7 +18,7 @@ class SuggestionController < ApplicationController
   def recursive_packages meta, package_install, package_sources    
     meta.base_packages.each do |p|
         if p.class == Package
-            package_install << (p.name + " ")
+            package_install.push(p)
             package_sources.store(p.repository, p.repository.url)
         else
             recursive_packages p, package_install, package_sources
@@ -28,30 +28,18 @@ class SuggestionController < ApplicationController
 
   def install
 
-    script          = ""
-    package_install = ""
+    @package_install = []
     sources         = {}
-    package_sources = ""
+    @package_sources = ""
    
-    script += "#!/bin/bash\n\n"
-    script += "file=\"/etc/apt/sources.list\"\n\n"
-    
     packages = params[:post]
     packages.each do |id,unused|
     
         package = Metapackage.find(id)
-        recursive_packages package, package_install, sources
+        recursive_packages package, @package_install, sources
     end
     
-    gen_package_sources sources, package_sources
-    
-    script += package_sources
-    script += "apt-get update\n"
-    script += "apt-get install " + package_install + "\n"
-    
-    respond_to do |format|
-        format.text { send_data(script, :filename => "install.sh", :type => "text", :disposition => "attachment") }
-    end
+    gen_package_sources sources, @package_sources
     
   end
   
