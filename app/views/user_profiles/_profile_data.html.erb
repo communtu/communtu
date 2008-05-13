@@ -24,13 +24,13 @@ benutzt, damit das System dir sinnvolle weitere Pakete empfehlen kann.</p>
         
         <% distrib_options = "" %>
         <% distributions.each do |distribution| %>
-            <% distrib_options << "<option value='" + distribution.id.to_s + "'>" + distribution.name + "</option>" %>
+            <% distrib_options << "<option value='" + distribution.id.to_s + "'" + (current_user.distribution_id==distribution.id ? "selected='selected'" : '') + ">" + distribution.name + "</option>" %>
         <% end %>
         
         <%= select_tag("distribution", distrib_options) %>
         
-    	<% options = Array.new (Package.security_types.length), false%>
-		<% options[current_user.license] = true%>
+    	<% options = Array.new (Package.security_types.length, false)%>
+		<% options[current_user.security] = true%>
 		
         <p>Hier kannst du einstellen, wie sicher deine Installationsquellen sein sollen</p>
         
@@ -39,17 +39,13 @@ benutzt, damit das System dir sinnvolle weitere Pakete empfehlen kann.</p>
         <%= radio_button_tag "sec", "2", options[2] %> Alle Quellen zulassen (unsicherer, aber mehr Programme)<br>
     </div>
     <div style="margin-bottom:30px">
-    	<% options = Array.new (Package.license_types.length), false %>
+    	<% options = Array.new (Package.license_types.length, false) %>
 		<% options[current_user.license] = true %>
         <p>Hier kannst du auswählen, welche Lizenzen du zulassen willst</p>
         <%= radio_button_tag "lic", "0", options[0] %> Freie Software (Quellen liegen offen und dürfen weiterentwickelt werden)<br>
         <%= radio_button_tag "lic", "1", options[1] %> Unfreie Lizenzen zulassen (auch kostenlos, aber unfrei)<br>
     </div>
     <div style="margin-top:20px;">
-        <% if current_user.first_login %>
-            <%= link_to "Weiter", "javascript:document.data.submit();" %>
-        <% else %>
-            <%= link_to "Speichern", "javascript:document.data.submit();" %>
-        <% end %>
+        <%= link_to "Speichern", "javascript:document.data.submit();" %>
     </div>
 <% end %>

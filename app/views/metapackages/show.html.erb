@@ -35,13 +35,13 @@
     <% end %>
 </p>
 
-<div style="position:relative; left:540px; top:-35px; height:0px;width:120px;">
+<div style="position:relative; left:510px; top:-35px; height:0px;width:150px;">
 <% if logged_in? %>
 
     <ul>
     <% if @metapackage.user_id == current_user.id or is_priviliged? %>
         <li style="display:inline;overflow: hidden;list-style-type:none;">
-        <%= link_to image_tag("icon-ubuntu.png", :size => "22x22", :border => "0"), \
+        <%= link_to image_tag("editp.png", :size => "22x22", :border => "0"), \
 		    distribution_metapackage_path(@metapackage.distribution, @metapackage) + "/edit_packages"%>
 	    </li>
 	<% end %>

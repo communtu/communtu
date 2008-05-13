@@ -2,35 +2,31 @@
 
     <span class="headline">Bündel-Informationen anpassen</span>
     <br/>
-    <%= form_tag distribution_path(@metapackage.distribution) + "/metapackages/" + @metapackage.id.to_s, :method => :put %>
-    <%= hidden_field_tag 'id', @metapackage.id%>
+    <% form_for(@metapackage, :url => distribution_path(@metapackage.distribution) + "/metapackages/" + @metapackage.id.to_s ) do |f| %>
         <table>
         <tr>
 	        <td>Kategorie:</td>
 	        <td>
-		        <%= select_tag('metapackage[category_id]', (get_category_select_options @categories))%>
+	        	<% @categories = Category.find(:all)%>
+		        <%= f.collection_select(:category_id,@categories,:id,:name)%>
 	        </td>
         </tr>
         <tr>
 	        <td>Name:</td>
-	        <td><%= text_field_tag('metapackage[name]', @metapackage.name, { :size => 16}) %></td>	
+	        <td><%= f.text_field(:name, { :size => 16}) %></td>	
         </tr>
         <tr>
 	        <td>Expertenlevel:</td>
-	        <% options = "" %>
-	        <% 5.times do |level| %>
-		        <% options += "<option>" + level.to_s + "</option>" %>
-	        <% end %>
-	        <td><%= select_tag('[metapackage[rating]', options) %></td>	
+	        <td><%= f.select(:rating, 1..5) %></td>	
         </tr>
         <tr>
 	        <td valign='top'>Beschreibung:</td>
-	        <td><%= text_area_tag('metapackage[description]', @metapackage.description, { :rows => 12, :cols => 50 } ) %></td>	
+	        <td><%= f.text_area(:description, { :rows => 12, :cols => 50 } ) %></td>	
         </tr>
         <tr>
         <td colspan="2" align="center"><%= submit_tag "Speichern"%></td>
         </tr>
 
         </table>	
-    </form>
+    <% end %>
 </div>

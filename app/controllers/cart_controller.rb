@@ -29,6 +29,9 @@ class CartController < ApplicationController
             end
             
             license = 0
+            # delete old packages...
+            meta.base_packages.each {|p| meta.base_packages(force_reload=true).delete(p)}
+            # ... and insert packages from cart
             cart.cart_contents.each do |package|
                 content = Metacontent.new
                 content.metapackage_id  = meta.id
