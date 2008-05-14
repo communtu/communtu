@@ -6,6 +6,8 @@
 	<td><b>Repositories:</b></td>
 	<td align="right">
 		<% if is_admin? %>
+			<%= link_to'sources.list einlesen', '/repositories/multinew/'+@distribution.id.to_s %>
+			&nbsp;&nbsp;&nbsp;&nbsp;
 			<%= link_to 'Repository hinzufügen', new_distribution_repository_path(@distribution.id) %>
 		<% end %>	
 	</td></tr></table>

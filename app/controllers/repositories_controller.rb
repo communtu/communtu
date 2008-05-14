@@ -33,6 +33,10 @@ class RepositoriesController < ApplicationController
     end
   end
 
+  def multinew
+    @distribution = Distribution.find(params[:id])    
+  end
+
   # GET /repositories/1/edit
   def edit
     @repository = Repository.find(params[:id])
@@ -73,6 +77,27 @@ class RepositoriesController < ApplicationController
         format.xml  { render :xml => @repository.errors, :status => :unprocessable_entity }
       end
     end
+  end
+
+  def multicreate
+    if !params[:datei][:name].nil?
+      params[:datei][:name].read.split("\n").each do |r|
+        parts = r.split(" ")
+        if !parts[0].nil? && !parts[0][0].nil? && parts[0][0]!='#'[0] then
+          for i in 3..parts.length-1 do
+            @repository = Repository.new
+            @repository.distribution_id = params[:id]
+            @repository.security_type = 0
+            @repository.license_type = 0
+            @repository.url = parts[0]+" "+parts[1]+" "+parts[2] 
+            @repository.subtype = parts[i] 
+            @repository.save
+          end  
+        end  
+      end
+      flash[:notice] = 'sources.list eingelesen.'
+    end
+    redirect_to(distribution_path(params[:id])) 
   end
 
   # DELETE /repositories/1
