@@ -1,6 +1,12 @@
 ActionController::Routing::Routes.draw do |map|
   
   map.resources :categories
+  map.resources :metapackages
+  
+  map.connect '/metapackage/action', :controller => 'metapackages', :action => 'action'
+  map.connect '/metapackage/changed', :controller => 'metapackages', :action => 'changed'
+  map.connect '/metapackage/migrate', :controller => 'metapackages', :action => 'migrate'
+  map.connect '/metapackage/finish_migrate', :controller => 'metapackages', :action => 'finish_migrate'
   
   map.resources :users, :member => { :enable => :put } do |users|
     users.resource  :user_profile

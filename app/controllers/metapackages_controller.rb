@@ -1,4 +1,7 @@
 class MetapackagesController < ApplicationController
+  
+  @@migrations = {}
+    
   # GET /metapackages
   # GET /metapackages.xml
   def index
@@ -117,6 +120,82 @@ class MetapackagesController < ApplicationController
       flash[:error] = "Konnte Paket nicht aus Bündel entfernen."
     end
     redirect_to :controller => :metapackages, :action => :show, :id => params[:id] 
+  end
+  
+  def action
+    
+    action   = params[:method]
+    packages = params[:packages]
+
+    if action == "0"
+        packages.each do |key,value|
+            if value[:select] == "1"
+                Metapackage.delete(key)
+            end
+        end
+        
+        render :partial => 'metalist.html.erb', \
+               :locals => { :packages => Metapackage.find(:all, :conditions => ["user_id=? AND distribution_id=?", current_user.id, \
+                    current_user.distribution_id]) }
+    elsif action == "1"
+        session[current_user.id] = packages
+        redirect_to "/metapackage/migrate"
+    end
+    
+  end
+  
+  def migrate
+    @distributions = Distribution.find(:all)
+  end
+  
+  def finish_migrate
+    packages     = session[current_user.id]
+    distribution = Distribution.find(params[:distribution])
+    if not packages.nil?
+        packages.each do |key,value|
+            if value[:select] = "1"
+                package = Metapackage.find(key)
+                if not package.nil?
+                    package.migrate distribution, current_user
+                end
+            end
+        end
+    end
+    redirect_to "/users/" + current_user.id.to_s + "/metapackages/0"
+  end
+  
+  def changed
+    
+    render_string = ""
+    owned         = true
+    num           = 0
+        
+    packages = params[:packages]
+    packages.each do |key, value|
+    
+        package = Metapackage.find(key)
+        if value[:select] == "1"
+            
+            if not is_admin? and package.user != current_user
+                owned = false;
+            end
+            
+            num += 1
+        
+        end
+   
+    end
+    
+    render_string += "<option>" + num.to_s + " Bündel ausgewählt</option>\n"
+    
+    if owned
+        render_string += "<option>---</option>"
+        render_string += "<option value='0'>Löschen</option>"
+        render_string += "<option value='1'>Migrieren</option>"
+    end
+    
+    render :text => render_string
+    
   end
   
   def add_comment

@@ -1,0 +1,14 @@
+<%= form_tag "/metapackage/finish_migrate" %>
+    <div>
+        <p>Zu welcher Distribution sollen die Bündel migriert werden ?</p>
+        
+        <% distrib_options = "" %>
+        <% @distributions.each do |distribution| %>
+            <% distrib_options << "<option value='" + distribution.id.to_s + "'" + (current_user.distribution_id==distribution.id ? "selected='selected'" : '') + ">" + distribution.name + "</option>" %>
+        <% end %>
+        
+        <%= select_tag("distribution", distrib_options) %>        
+        
+        <%= submit_tag("Migrieren") %>
+    </div>
+</form>

@@ -1,7 +1,7 @@
 <table>
 <tr>
 <td>Section:</td>
-<td><%= form_tag distribution_path(distribution) + '/packages/section', :method => "post" %>
+<td><%= form_tag(distribution_path(distribution) + '/packages/section', :method => "post") %>
     <select id="group" name="group" onchange="this.form.submit()">
         <option>all</option>
         <% groups.each do |group| %>

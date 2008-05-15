@@ -1,3 +1,5 @@
+<%= form_remote_tag(:update => "tabz_content", :url => "/metapackage/action", :html => { :id => "action_form" }) %>
+
 <table style="height:100%;" width="100%" cellspacing="0">
   <tr>
     <th valign="middle" class="packageList" align="left">Name</th>
@@ -7,48 +9,48 @@
     <th valign="middle" class="packageList" align="left">Veröffentlicht</th>
 	<th valign="middle" class="packageList" align="left"></th>
   </tr>
-<% id = 0 %>
-<% for metapackage in packages %>
- <% id  = metapackage.distribution_id %>
- <% css = cycle("packageList0", "packageList1") %>
-  <tr>
-    <td class="<%= css %>" valign="middle">
-		<%= link_to metapackage.name, distribution_metapackage_path(metapackage.distribution, metapackage) %></td>
-    <td class="<%= css %>" valign="middle">
-		<%=h metapackage.category.name %></td>
-    <td class="<%= css %>" valign="middle">
-		<%=h metapackage.rating %></td>
-    <td class="<%= css %>" valign="middle">
-		<%=h metapackage.distribution.name %></td>
-	<td class="<%= css %>" valign="middle" align="middle">
-	    <% if metapackage.published == Metapackage.state[:published] %>
-	        <%= image_tag("yes.png", :size => "22x22", :border => "0") %>
-	    <% else %>
-	        <%= image_tag("no.png", :size => "22x22", :border => "0") %>
-	    <% end %>
-	</td>
-    <td class="<%= css %>" valign="middle" width="100">
-    
-		<%= link_to image_tag("search.png", :size => "22x22", :border => "0"), \
-		    distribution_metapackage_path(metapackage.distribution, metapackage) %>
-		
-	    <% if logged_in? %>
-	    
-		    <% if metapackage.user_id == current_user.id %>
-		        <%= link_to_remote(image_tag("/images/add.png", :size => "22x22", :border => "0"), \
-			        :url => user_path(current_user) + "/cart/add_to_cart/" + metapackage.id.to_s,\
-			        :update => 'meta_cart') %>
-		    <% end %>
-		    
-		    <% if is_admin? %>
-    		    <%= link_to image_tag("edit-delete.png", :size => "22x22", :border => "0"), \
-        		        distribution_metapackage_path(metapackage.distribution, metapackage), \
-        		        :confirm => 'Are you sure?', :method => :delete %>
-		    <% end %>
-		    
-	<% end %>
-	</td>
-  </tr>
-<% end %>
-</table>
 
+    <% for metapackage in packages %>
+     <% id  = metapackage.distribution_id %>
+     <% css = cycle("packageList0", "packageList1") %>
+      <tr>
+        <td class="<%= css %>" valign="middle">
+		    <%= link_to metapackage.name, distribution_metapackage_path(metapackage.distribution, metapackage) %></td>
+        <td class="<%= css %>" valign="middle">
+		    <%=h metapackage.category.name %></td>
+        <td class="<%= css %>" valign="middle">
+		    <%=h metapackage.rating %></td>
+        <td class="<%= css %>" valign="middle">
+		    <%=h metapackage.distribution.name %></td>
+	    <td class="<%= css %>" valign="middle" align="middle">
+	        <% if metapackage.published == Metapackage.state[:published] %>
+	            <%= image_tag("yes.png", :size => "22x22", :border => "0") %>
+	        <% else %>
+	            <%= image_tag("no.png", :size => "22x22", :border => "0") %>
+	        <% end %>
+	    </td>
+        <td class="<%= css %>" valign="middle" width="60">
+        		
+	        <% if logged_in? %>
+	        
+		        <% if (metapackage.user_id == current_user.id) or is_admin? %>
+		            <% if editing_metapackage? %>
+		                <%= link_to_remote(image_tag("/images/add.png", :size => "22x22", :border => "0"), \
+			                :url => user_path(current_user) + "/cart/add_to_cart/" + metapackage.id.to_s,\
+			                :update => 'meta_cart') %>
+			        <% end %>
+		        <% end %>
+		        
+		        <%= check_box('packages[' + metapackage.id.to_s + ']', 'select', :checked => false) %>
+		        
+	    <% end %>
+	    </td>
+      </tr>
+    <% end %>
+    </table>    
+    <div style="position:relative; left:520px; top:10px; height:0px;width:150px;">
+    <%= select_tag("method", "<option>0 Bündel ausgewählt</option>", :onchange => "this.form.submit()") %>
+    </div>
+  </form>
+
+<%= observe_form('action_form', :url => "/metapackage/changed", :update => :method) %>

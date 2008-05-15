@@ -37,4 +37,35 @@ class Metapackage < BasePackage
     end
   end
   
+  def migrate distribution, current_user
+
+    meta = Metapackage.new
+    meta.name            = name
+    meta.user_id         = current_user.id
+    meta.distribution_id = distribution.id
+    meta.category_id     = category.id
+    meta.description     = description
+    meta.rating          = rating
+        
+    base_packages.each do |package|
+        if package.class == Package
+            
+            migrated = Package.find(:first, :conditions => ["name = ? and distribution_id = ?", package.name, distribution.id])
+            if not migrated.nil?
+                content = Metacontent.new
+                content.metapackage_id  = meta.id
+                content.base_package_id = migrated.id
+                content.save!
+            else
+                # TODO: warn user
+            end
+        else
+            package.migrate distribution
+        end
+    end
+    
+    meta.save!
+    
+  end
+  
 end

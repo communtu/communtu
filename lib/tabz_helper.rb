@@ -19,7 +19,7 @@ module TabzHelper
         end
         
         result << "</ul></div>\n"
-        result << tag("div", {:class => "tabz_content"}, true)
+        result << tag("div", {:class => "tabz_content", :id => "tabz_content"}, true)
         current.prepare_to_show(user_data)
         result << capture do render(:partial => current.partial, :locals => current.locals) end
         result << "</div>\n"
