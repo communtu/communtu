@@ -11,7 +11,6 @@ class UserProfilesController < ApplicationController
   end
   
   def update_data
-  xxx
     user = current_user
     user.security = params[:sec]
     user.license  = params[:lic]
