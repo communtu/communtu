@@ -6,6 +6,18 @@
     <%= form_tag(user_path(current_user) + "/suggestion/install") %>
     <%= show_suggestion @root, @selection %>   
 
+
+<br><br>Durch Klicken auf das Symbol rechts unten wird automatisch
+ein Skript erstellt, dass du auf deinem Computer abspeicherst und
+ausf&uuml;hrst (dazu musst du das Skript auf dem Desktop oder im Dateibrowser zunächst ausführbar machen: Rechtsklick mit der Maus, Eigenschaften, und dann ein Häkchen bei "Ausführen" setzen. Dann Doppelklick zum Ausführen). Das Skript installiert automatisch die gew&uuml;nschten
+Programme, inklusive Download aus dem Internet.
+    <div style="padding-top:12px;padding-right:8px" align="right">
+        <input type="image" src="/images/apt.png" value="Submit"/>
+    </div>
+    </form>
+</div>
+
+<!--
 <br><br>Durch Klicken auf den Weiterbutton rechts unten bestaetigst du die Auswahl der
     Pakete, die installiert werden sollen.
     <div style="padding-top:12px;padding-right:8px" align="right">
@@ -13,3 +25,4 @@
     </div>
     </form>
 </div>
+-->

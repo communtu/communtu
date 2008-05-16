@@ -51,7 +51,7 @@ class Package < BasePackage
   end
   
   def self.import_source repository
-    url  = get_url_from_source (repository.url + " " + repository.subtype)
+    url  = get_url_from_source(repository.url + " " + repository.subtype)
     packages = packages_to_hash url
     distribution_id = repository.distribution_id
     
@@ -75,10 +75,11 @@ class Package < BasePackage
  
       if res.nil?
         
-        res= Package.new ({ :name => key, :version => package["Version"],\
+        res= Package.new({ :name => key, :version => package["Version"],\
           :distribution_id => distribution_id, :description => package["Description"],\
           :section => package["Section"],\
-          :repository_id => repository.id})
+          :repository_id => repository.id,
+          :license_type => repository.license_type})
           
         if res.save
           info["new_count"] = info["new_count"].next 
