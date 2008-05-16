@@ -79,7 +79,7 @@ class SuggestionController < ApplicationController
             out  = "source=\"" + url + " " + repository.subtype + "\"\n"
             out += "grep -q \"" + repository.url + ".*" + repository.subtype + "\" $file\n\n"
             out += "if [ \"$?\" != \"0\" ]; then\n" +
-            "\techo \"$source\" >> $file\n" +
+            "\tsudo echo \"$source\" >> $file\n" +
             "fi\n\n"
             package_sources << out
         end
