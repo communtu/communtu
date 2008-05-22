@@ -18,7 +18,7 @@ class SuggestionController < ApplicationController
   def recursive_packages meta, package_install, package_sources    
     meta.base_packages.each do |p|
         if p.class == Package
-            package_install << ("apt-get install "+p.name + "\n") # package_install.push(p)
+            package_install << ("apt-get install  -y --force-yes "+p.name + "\n") # package_install.push(p)
             package_sources.store(p.repository, p.repository.url)
         else
             recursive_packages p, package_install, package_sources
