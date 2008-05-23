@@ -38,7 +38,7 @@ class CartController < ApplicationController
                 content.base_package_id = package.base_package_id
                 content.save!
                 
-                if package.type == Package
+                if package.class == Package
                     #lic = package.repository.license_type
                     #license = lic if lic > license
                 else 

@@ -138,7 +138,8 @@ class MetapackagesController < ApplicationController
                :locals => { :packages => Metapackage.find(:all, :conditions => ["user_id=? AND distribution_id=?", current_user.id, \
                     current_user.distribution_id]) }
     elsif action == "1"
-        session[current_user.id] = packages
+        session[:packages] = packages
+        session[:backlink] = request.env['HTTP_REFERER']
         redirect_to "/metapackage/migrate"
     end
     
@@ -149,19 +150,23 @@ class MetapackagesController < ApplicationController
   end
   
   def finish_migrate
-    packages     = session[current_user.id]
-    distribution = Distribution.find(params[:distribution])
+    @failed_packages = []
+    @distribution    = Distribution.find(params[:distribution])
+    @backlink        = session[:backlink]
+  
+    packages = session[:packages]
     if not packages.nil?
         packages.each do |key,value|
             if value[:select] = "1"
                 package = Metapackage.find(key)
                 if not package.nil?
-                    package.migrate distribution, current_user
+                    if package.migrate(@distribution, current_user) == false
+                        @failed_packages.push(package)
+                    end
                 end
             end
         end
     end
-    redirect_to "/users/" + current_user.id.to_s + "/metapackages/0"
   end
   
   def changed

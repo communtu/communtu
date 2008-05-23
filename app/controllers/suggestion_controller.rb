@@ -9,7 +9,9 @@ class SuggestionController < ApplicationController
     @profile.each do |p|
 
         category = Category.find(p.category_id)
-        metas    = Metapackage.find(:all, :conditions => ["category_id = ? and rating <= ? and license_type <= ?", category.id, p.rating, current_user.license])
+        metas    = Metapackage.find(:all, :conditions => ["category_id = ? and distribution_id = ? and rating <= ? and license_type <= ?", \
+            category.id, current_user.distribution.id, p.rating, current_user.license])
+            
         @selection.store(category, metas)
     
     end
@@ -58,7 +60,7 @@ class SuggestionController < ApplicationController
   def install_apt_url
 
     @package_install = []
-    sources         = {}
+    sources          = {}
     @package_sources = ""
    
     packages = params[:post]
