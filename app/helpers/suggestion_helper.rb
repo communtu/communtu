@@ -10,7 +10,7 @@ module SuggestionHelper
             out += "<tr>\n"
                 out += "<td width='15' bgcolor='#fff7cd'/>\n"
                 out += "<td width='20' class='suggestionTop' />\n"
-                out += "<td class='suggestionTop'>" + package.name + "</td>\n"
+                out += "<td class='suggestionTop'>" + link_to(package.name,metapackage_url(:id => package.id))+ "</td>\n"
                 out += "<td class='suggestionTop'>\n"
                     out += check_box_tag "post[" + package.id.to_s + "]", 0, selected
                 out += "</td>\n"
