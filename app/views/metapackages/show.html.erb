@@ -82,6 +82,11 @@
 			<% end %>
 			</td>
 		</tr>
+        <%if ! p.package.description.empty? %>
+		   <tr>
+			<td colspan="2" class="<%= css %>"><%= p.package.description %></td>
+		  </tr>
+	    <% end %>
 	<% end %>
 </table>	
 </div>

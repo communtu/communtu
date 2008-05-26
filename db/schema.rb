@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 21) do
+ActiveRecord::Schema.define(:version => 22) do
 
   create_table "base_packages", :force => true do |t|
     t.string   "type"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(:version => 21) do
     t.integer  "published",       :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "urls"
   end
 
   create_table "cart_contents", :force => true do |t|

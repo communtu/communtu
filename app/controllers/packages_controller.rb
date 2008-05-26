@@ -88,11 +88,10 @@ class PackagesController < ApplicationController
   # PUT /Packages/1.xml
   def update
     @package = Package.find(params[:id])
-
     respond_to do |format|
-      if @package.update_attributes(params[:Package])
+      if @package.update_attributes(params[:package])
         flash[:notice] = 'Paket aktualisiert.'
-        format.html { redirect_to(@package) }
+        format.html { redirect_to :action => 'show', :id => @package.id }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

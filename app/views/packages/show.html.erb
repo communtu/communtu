@@ -23,7 +23,14 @@
   <b>Repository:</b>
   <%=h @package.repository.url %>
 </p>
+
+<p>
+  <b>Weblinks:</b>
+  <%=auto_link @package.urls %>
+</p>
+
 </div>
+<%= link_to 'Bearbeiten', {:action => 'edit', :id => @package.id} %> &nbsp;&nbsp;
 <%= link_to 'Zurück', distribution_packages_path(@package.distribution_id) %>
 <% if (not session[:meta_cart].nil?) and @package.distribution_id == @distribution_id %>
 		| <%= link_to_remote('Zu Bündel hinzufügen', :update => 'meta_cart',\

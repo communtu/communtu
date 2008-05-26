@@ -31,6 +31,7 @@ ActionController::Routing::Routes.draw do |map|
   
   map.connect '/distributions/:id/packages/section', :controller => "packages", :action => "section", :method => :post
   map.connect '/distributions/:id/packages/search', :controller => "packages", :action => "search", :method => :post
+  map.connect '/distributions/:id/packages/update', :controller => "packages", :action => "update", :method => :post
   map.connect '/distributions/:distribution_id/metapackages/:id/publish', :controller => "metapackages", :action => "publish", :method => :put
   map.connect '/distributions/:distribution_id/metapackages/:id/unpublish', :controller => "metapackages", :action => "unpublish", :method => :put
   map.connect '/distributions/:distribution_id/metapackages/:id/edit_packages', :controller => "metapackages", :action => "edit_packages", :method => :put
