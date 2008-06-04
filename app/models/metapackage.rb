@@ -19,27 +19,17 @@ class Metapackage < BasePackage
     return self.published == Metapackage.state[:published]
   end
   
-  def save_as_temp_meta user_id
-    temp = TempMetapackage.new
-    temp.name = name
-    temp.description = description
-    temp.distribution_id = distribution_id
-    temp.user_id = user_id
-    temp.license_type = license_type
-    temp.rating = 0
-    
-    if temp.save
-      metacontents.each do |c|
-        t_content = TempMetacontent.new({ :package_id => c.package_id,\
-          :temp_metapackage_id => temp.id })
-         t_content.save
-      end
-    end
+  def migrate distribution, current_user, failed, doubles
+    ignore = []
+    migrate(distribution, current_user, failed, doubles, ignore)
   end
   
-  def migrate distribution, current_user, failed
+  def migrate distribution, current_user, failed, doubles, ignore
 
-    migrate = true
+    meta = Metapackage.find(:first, :conditions => ["name = ? and distribution_id = ?", self.name, distribution.id])
+    if not meta.nil? and not ignore.include? meta
+        doubles.push(meta)
+    end
 
     meta = Metapackage.new
     meta.name            = name
@@ -59,14 +49,13 @@ class Metapackage < BasePackage
                 contents.push(migrated.id)
             else
                 failed.push(package)
-                migrate = false
             end
         else
-            package.migrate(distribution, current_user, failed)
+            package.migrate(distribution, current_user, failed, doubles, ignore)
         end
     end
     
-    if migrate != false
+    if not contents.empty?
         meta.save!
         contents.each do |migrated|
             content = Metacontent.new
@@ -76,5 +65,4 @@ class Metapackage < BasePackage
         end
     end
   end
-  
 end
