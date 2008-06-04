@@ -58,7 +58,7 @@ class Metapackage < BasePackage
             if not migrated.nil?
                 contents.push(migrated.id)
             else
-                failed.push(migrated)
+                failed.push(package)
                 migrate = false
             end
         else
