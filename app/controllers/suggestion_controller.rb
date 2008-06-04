@@ -81,9 +81,9 @@ class SuggestionController < ApplicationController
             out  = "source=\"" + url + " " + repository.subtype + "\"\n"
             out += "grep -q \"" + repository.url + ".*" + repository.subtype + "\" $file\n\n"
             out += "if [ \"$?\" != \"0\" ]; then\n" +
-            "\techo \"$source\" >> $file\n" +
+            "\tgksudo echo \"$source\" >> $file\n" +
             if not repository.gpgkey.nil?
-                "\twget " + repository.gpgkey + " | sudo apt-key add -"
+                "\twget " + repository.gpgkey + " | gksudo apt-key add -"
             end
             "fi\n\n"
             package_sources << out
