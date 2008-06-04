@@ -7,6 +7,7 @@ class CreateRepositories < ActiveRecord::Migration
       t.text :type
       t.string :url
       t.string :subtype
+      t.string :gpgkey
 
       t.timestamps
     end
@@ -16,3 +17,4 @@ class CreateRepositories < ActiveRecord::Migration
     drop_table :repositories
   end
 end
+

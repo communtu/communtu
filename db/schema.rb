@@ -96,6 +96,7 @@ ActiveRecord::Schema.define(:version => 22) do
     t.string   "subtype"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "gpgkey"
   end
 
   create_table "roles", :force => true do |t|
