@@ -20,7 +20,7 @@ class SuggestionController < ApplicationController
   def recursive_packages meta, package_install, package_sources    
     meta.base_packages.each do |p|
         if p.class == Package
-            package_install << ("apt-get install  -y --force-yes "+p.name + "\n") # package_install.push(p)
+            package_install << ("gksudo apt-get install  -y --force-yes "+p.name + "\n") # package_install.push(p)
             package_sources.store(p.repository, p.repository.url)
         else
             recursive_packages p, package_install, package_sources
@@ -81,11 +81,11 @@ class SuggestionController < ApplicationController
             out  = "source=\"" + url + " " + repository.subtype + "\"\n"
             out += "grep -q \"" + repository.url + ".*" + repository.subtype + "\" $file\n\n"
             out += "if [ \"$?\" != \"0\" ]; then\n" +
-            "\tgksudo echo \"$source\" >> $file\n" +
+            "\tgksudo echo \"$source\" >> $file\n"
             if not repository.gpgkey.nil?
-                "\twget " + repository.gpgkey + " | gksudo apt-key add -"
+                out += "\twget " + repository.gpgkey + " | gksudo apt-key add -"
             end
-            "fi\n\n"
+            out += "fi\n\n"
             package_sources << out
         end
     end
