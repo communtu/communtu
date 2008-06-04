@@ -61,7 +61,7 @@ class Metapackage < BasePackage
                 ret = false
             end
         else
-            contents.merge(package.migrate distribution)
+            contents.merge(package.migrate, distribution)
         end
     end
    
