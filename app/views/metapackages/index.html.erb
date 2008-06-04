@@ -1,7 +1,7 @@
 <span class="headline">Bündel</span>
 
 <div class="inner1">
-    <% render :partial => "metalist", :locals => { :packages => @metapackages } %>
+    <%= render :partial => "metalist", :locals => { :packages => @metapackages } %>
 </div>
 
 <%= link_to 'Zurück', distribution_path(id)%>
