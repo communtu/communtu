@@ -48,7 +48,7 @@ class SuggestionController < ApplicationController
     gen_package_sources sources, package_sources
     
     script += package_sources
-    script += "apt-get update\n"
+    script += "gksudo apt-get update\n"
     script += package_install + "\n"
     
     respond_to do |format|

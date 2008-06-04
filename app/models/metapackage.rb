@@ -37,9 +37,9 @@ class Metapackage < BasePackage
     end
   end
   
-  def migrate distribution, current_user
+  def migrate distribution, current_user, failed
 
-    ret = true
+    migrate = true
 
     meta = Metapackage.new
     meta.name            = name
@@ -58,14 +58,15 @@ class Metapackage < BasePackage
             if not migrated.nil?
                 contents.push(migrated.id)
             else
-                ret = false
+                failed.push(migrated)
+                migrate = false
             end
         else
-            contents += package.migrate(distribution, current_user)
+            package.migrate(distribution, current_user, failed)
         end
     end
     
-    if ret != false
+    if migrate != false
         meta.save!
         contents.each do |migrated|
             content = Metacontent.new
@@ -74,8 +75,6 @@ class Metapackage < BasePackage
             content.save!
         end
     end
-    
-    ret
   end
   
 end

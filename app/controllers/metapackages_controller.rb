@@ -160,9 +160,7 @@ class MetapackagesController < ApplicationController
             if value[:select] = "1"
                 package = Metapackage.find(key)
                 if not package.nil?
-                    if package.migrate(@distribution, current_user) == false
-                        @failed_packages.push(package)
-                    end
+                    package.migrate(@distribution, current_user, @failed_packages)
                 end
             end
         end
