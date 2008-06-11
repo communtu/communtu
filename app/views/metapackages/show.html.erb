@@ -90,8 +90,8 @@
 	<% end %>
 </table>	
 </div>
-<!-- <%= link_to "back", request.env['HTTP_REFERER'] %> -->
-<!-- %= link_to'Add Comment', { :controller => :metapackages, :action => :add_comment, \
+<%= link_to "Zurück&nbsp;&nbsp;", request.env['HTTP_REFERER'] %>
+<%= link_to'Kommentieren', { :controller => :metapackages, :action => :add_comment, \
 	    :id => @metapackage.id } %>
-<%= show_comments @metapackage.comments % -->
+<%= show_comments @metapackage.comments %>
 </div>

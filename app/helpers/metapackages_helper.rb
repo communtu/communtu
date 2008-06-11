@@ -11,8 +11,8 @@ module MetapackagesHelper
       end
       
       
-      out += "<div class='inner1' style='max-width:50%;'><table  width='
-      100%'><tr><td>By: " +\
+      out += "<div class='inner1' style='max-width:80%;'><table  width='
+      100%'><tr><td>Von: " +\
           c.user.login + "</td><td align='right'>" + link + "</td></tr><tr><td colspan='2'><hr/>" +\
           c.comment + "</td></tr></table></div>"
     end
