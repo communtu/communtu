@@ -41,16 +41,15 @@ div.sidebar {
 	border-left-width: 1px;
 	border-right-style: solid;
 	border-right-width: 1px;
-	-moz-border-radius-topleft: 8px;
-    -moz-border-radius-topright: 8px;
-	/*min-height: 300px;*/
+	-moz-border-radius: 10px;
+    /*min-height: 300px;*/
 	width: 150px;
 }
 
 div.content{
 	
 	margin: 15px 10px 0 0;
-	padding: 8px 8px 8px 8px;
+	padding: 8px 15px 8px 15px;
 	border-top-style: solid;
 	border-top-width: 1px;
 	border-bottom-style: solid;
@@ -59,8 +58,7 @@ div.content{
 	border-left-width: 1px;
 	border-right-style: solid;
 	border-right-width: 1px;
-	-moz-border-radius-topleft: 8px;
-    -moz-border-radius-topright: 8px;
+	-moz-border-radius: 10px;
 	width: 700px;
 	height: 100%;
 	min-height: 400px;
@@ -94,8 +92,7 @@ div.meta_cart{
 	border-left-width: 1px;
 	border-right-style: solid;
 	border-right-width: 1px;
-	-moz-border-radius-topleft: 8px;
-    -moz-border-radius-topright: 8px;
+	-moz-border-radius: 10px;
 	/*min-height: 300px;*/
 	width: 150px;
 }
