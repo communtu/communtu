@@ -11,10 +11,6 @@
   <%=h @package.name %>
 </p>
 <p>
-  <b>Beschreibung:</b>
-  <%= @package.description %>
-</p>
-<p>
   <b>Version:</b>
   <%=h @package.version %>
 </p>
@@ -27,6 +23,10 @@
 <p>
   <b>Weblinks:</b>
   <%=auto_link @package.urls.gsub(/ /,'<br>'), link = :all%>
+</p>
+<p>
+  <b>Beschreibung:</b>
+  <%= @package.description %>
 </p>
 
 </div>
