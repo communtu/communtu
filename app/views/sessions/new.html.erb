@@ -1,3 +1,20 @@
+<script type="text/javascript">
+function onEnter( evt, frm ) {
+
+    var keyCode = null;
+
+    if( evt.which ) {
+        keyCode = evt.which;
+    } else if( evt.keyCode ) {
+        keyCode = evt.keyCode;
+    }
+    if( 13 == keyCode ) {
+        frm.submit();
+        return false;
+    }
+    return true;
+}
+</script>
 
 <%= error_messages_for :session %>
 <font color="#FF0000"><b><%= flash[:notice] %></b></font>
@@ -10,7 +27,7 @@
 <%= text_field_tag 'login' %></p>
  
 <p><label for="password">Passwort</label><br />
-<%= password_field_tag 'password' %></p>
+<%= password_field_tag 'password', '', :onkeypress => "return onEnter(event,this.form);" %></p>
  
 <p><label for="remember_me">Benutzer auf diesem Computer dauerhaft anmelden</label>
 <%= check_box_tag 'remember_me' %></p>
