@@ -35,34 +35,24 @@
     <% end %>
 </p>
 
-<div style="position:relative; left:510px; top:-35px; height:0px;width:150px;">
+<div style="position:relative; left:480px; top:-30px; height:0px;width:150px;">
 <% if logged_in? %>
-
-    <ul>
-    <% if @metapackage.user_id == current_user.id or is_priviliged? %>
-        <li style="display:inline;overflow: hidden;list-style-type:none;">
-        <%= link_to image_tag("editp.png", :size => "22x22", :border => "0"), \
-		    distribution_metapackage_path(@metapackage.distribution, @metapackage) + "/edit_packages"%>
-	    </li>
-	<% end %>
-    <% if @metapackage.user_id == current_user.id or is_priviliged? %>
-        <li style="display:inline;overflow: hidden;list-style-type:none;">
-        <%= link_to image_tag("edit.png", :size => "22x22", :border => "0"), \
-		    distribution_metapackage_path(@metapackage.distribution, @metapackage) + "/edit"%>
-	    </li>
-	<% end %>
-	<% if is_priviliged? %>
-        <li style="display:inline;overflow: hidden;list-style-type:none;">
-        <%= link_to image_tag("publish.png", :size => "22x22", :border => "0"), \
-            distribution_metapackage_path(@metapackage.distribution, @metapackage) + "/publish" %>
-        </li>
-        <li style="display:inline;overflow: hidden;list-style-type:none;">
-        <%= link_to image_tag("unpublish.png", :size => "22x22", :border => "0"), \
-            distribution_metapackage_path(@metapackage.distribution, @metapackage) + "/unpublish" %>
-        </li>
-	<% end %>
-	</ul>
-	
+  Aktionen:
+  <div style="position:relative; top:-22px; left:60px">
+  <%= form_tag(distribution_metapackage_path(@metapackage.distribution, @metapackage) + "/edit_action") %>
+    <select id="method" name="method" onchange="this.form.submit()">
+        <option value="noop">---</option>
+        <option value="edit">Editieren</option>
+        <option value="pedit">Inhalt Editieren</option>
+        
+        <% if not @metapackage.is_published? %>
+        <option value="publish">Veröffentlichen</option>
+        <% else %>
+        <option value="unpublish">Sperren</option>
+        <% end %>
+    </select>
+  </form>
+  </div>
 <% end %>
 </div>
 

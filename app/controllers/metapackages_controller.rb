@@ -28,6 +28,7 @@ class MetapackagesController < ApplicationController
   # GET /metapackages/new.xml
   def new
     @metapackage = Metapackage.new
+    @backlink    = request.env['HTTP_REFERER']
 
     respond_to do |format|
       format.html # new.html.erb
@@ -39,6 +40,7 @@ class MetapackagesController < ApplicationController
   def edit
     @metapackage = Metapackage.find(params[:id])
     @categories  = Category.find(1)
+    @backlink    = request.env['HTTP_REFERER']
   end
 
   # POST /metapackages
@@ -120,6 +122,27 @@ class MetapackagesController < ApplicationController
       flash[:error] = "Konnte Paket nicht aus Bündel entfernen."
     end
     redirect_to :controller => :metapackages, :action => :show, :id => params[:id] 
+  end
+  
+  def edit_action
+    action = params[:method]
+    meta   = Metapackage.find(params[:id])
+    
+    if not meta.nil?
+        if action == "edit"
+            redirect_to distribution_metapackage_path(meta.distribution, meta) + "/edit"
+        elsif action == "pedit"
+            edit_packages
+        elsif action == "publish" 
+            meta.published = 1
+            meta.save!
+            redirect_to distribution_metapackage_path(meta.distribution, meta)
+        elsif action == "unpublish"
+            meta.published = 0
+            meta.save!
+            redirect_to distribution_metapackage_path(meta.distribution, meta)
+        end
+    end
   end
   
   def action

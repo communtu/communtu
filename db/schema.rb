@@ -135,7 +135,7 @@ ActiveRecord::Schema.define(:version => 23) do
   create_table "user_profiles", :force => true do |t|
     t.integer  "user_id"
     t.integer  "category_id"
-    t.integer  "rating"
+    t.integer  "rating",      :default => 1
     t.datetime "created_at"
     t.datetime "updated_at"
   end

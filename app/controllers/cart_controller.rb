@@ -32,18 +32,18 @@ class CartController < ApplicationController
             # delete old packages...
             meta.base_packages.each {|p| meta.base_packages(force_reload=true).delete(p)}
             # ... and insert packages from cart
-            cart.cart_contents.each do |package|
+            cart.base_packages.each do |package|
                 content = Metacontent.new
                 content.metapackage_id  = meta.id
-                content.base_package_id = package.base_package_id
+                content.base_package_id = package.id
                 content.save!
                 
                 if package.class == Package
-                    #lic = package.repository.license_type
-                    #license = lic if lic > license
+                    lic = package.repository.license_type
+                    license = lic if lic > license
                 else 
-                    #lic = package.license_type
-                    #license = lic if lic > license
+                    lic = package.license_type
+                    license = lic if lic > license
                 end
             end
             
