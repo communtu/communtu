@@ -3,16 +3,17 @@
 <font color="#FF0000"><b><%= flash[:notice] %></b></font>
 
 <h2>Anmelden mit Benutzernamen und Passwort:</h2>
+
 <% form_tag session_path do %>
+
 <p><label for="login">Benutzername</label><br/>
 <%= text_field_tag 'login' %></p>
  
 <p><label for="password">Passwort</label><br />
 <%= password_field_tag 'password' %></p>
  
- 
 <p><label for="remember_me">Benutzer auf diesem Computer dauerhaft anmelden</label>
 <%= check_box_tag 'remember_me' %></p>
  
-<p><%= submit_tag 'Anmelden' %>&nbsp;&nbsp;&nbsp;<%= link_to "Registrieren", new_user_path %></p>
+<p><%= link_to_function("Anmelden", "$(this).up('form').submit()") %>&nbsp;&nbsp;&nbsp;<%= link_to("Registrieren", new_user_path)%></p>
 <% end %>
