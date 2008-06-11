@@ -41,6 +41,7 @@ div.sidebar {
 	border-left-width: 1px;
 	border-right-style: solid;
 	border-right-width: 1px;
+	moz-border-radius 
 	/*min-height: 300px;*/
 	width: 150px;
 }
@@ -151,7 +152,7 @@ pre {
   font-size: 11px;
 }
 
-a { color: #666; text-decoration:none; }
+a { color: #ff6309; text-decoration:none; }
 a:visited { color: #666; }
 a:hover { color: #D3CAAA; background-color:#FFF; }
 
