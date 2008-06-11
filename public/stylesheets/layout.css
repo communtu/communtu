@@ -41,8 +41,8 @@ div.sidebar {
 	border-left-width: 1px;
 	border-right-style: solid;
 	border-right-width: 1px;
-	moz-border-radius: 10px;
-	khtml-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-khtml-border-radius: 10px;
 	/*min-height: 300px;*/
 	width: 150px;
 }
@@ -59,8 +59,8 @@ div.content{
 	border-left-width: 1px;
 	border-right-style: solid;
 	border-right-width: 1px;
-	moz-border-radius: 10px;
-	khtml-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-khtml-border-radius: 10px;
 	width: 700px;
 	height: 100%;
 	min-height: 400px;
@@ -94,8 +94,8 @@ div.meta_cart{
 	border-left-width: 1px;
 	border-right-style: solid;
 	border-right-width: 1px;
-	moz-border-radius: 10px;
-	khtml-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-khtml-border-radius: 10px;
 	/*min-height: 300px;*/
 	width: 150px;
 }
