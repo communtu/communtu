@@ -74,7 +74,7 @@
 		</tr>
         <%if ! p.package.description.empty? %>
 		   <tr>
-			<td colspan="2" class="<%= css %>"><%= p.package.description %></td>
+			<td colspan="2" class="<%= css %>"><%= p.package.description[0,100]+(p.package.description.length<100 ? "" : " ...") %></td>
 		  </tr>
 	    <% end %>
 	<% end %>
