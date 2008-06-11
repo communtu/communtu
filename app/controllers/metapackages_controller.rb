@@ -123,7 +123,6 @@ class MetapackagesController < ApplicationController
   end
   
   def action
-    
     action   = params[:method]
     packages = params[:packages]
 
@@ -134,14 +133,27 @@ class MetapackagesController < ApplicationController
             end
         end
         
-        render :partial => 'metalist.html.erb', \
-               :locals => { :packages => Metapackage.find(:all, :conditions => ["user_id=? AND distribution_id=?", current_user.id, \
-                    current_user.distribution_id]) }
+        redirect_to request.env['HTTP_REFERER']
+                    
     elsif action == "1"
         session[:packages] = packages
         session[:backlink] = request.env['HTTP_REFERER']
         redirect_to "/metapackage/migrate"
-    end
+        
+    elsif action == "2"
+        
+        packages.each do |key,value|
+            if value[:select] == "1"
+                meta = Metapackage.find(key)
+                if not meta.nil?
+                    meta.published = 1
+                    meta.save!
+                end
+            end
+        end
+        
+        redirect_to request.env['HTTP_REFERER']
+    end    
     
   end
   
@@ -172,6 +184,7 @@ class MetapackagesController < ApplicationController
     
     render_string = ""
     owned         = true
+    publish       = true
     num           = 0
         
     packages = params[:packages]
@@ -181,7 +194,11 @@ class MetapackagesController < ApplicationController
         if value[:select] == "1"
             
             if not is_admin? and package.user != current_user
-                owned = false;
+                owned = false
+            end
+            
+            if package.is_published?
+                publish = false
             end
             
             num += 1
@@ -196,6 +213,9 @@ class MetapackagesController < ApplicationController
         render_string += "<option>---</option>"
         render_string += "<option value='0'>Löschen</option>"
         render_string += "<option value='1'>Migrieren</option>"
+        if publish
+            render_string += "<option value='2'>Veröffentlichen<option/>"
+        end
     end
     
     render :text => render_string

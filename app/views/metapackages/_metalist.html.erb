@@ -1,4 +1,4 @@
-<%= form_remote_tag(:update => "tabz_content", :url => "/metapackage/action", :html => { :id => "action_form" }) %>
+<%= form_tag("/metapackage/action", :id => "action_form") %>
 
 <table style="height:100%;" width="100%" cellspacing="0">
   <tr>
@@ -47,9 +47,9 @@
 	    </td>
       </tr>
     <% end %>
-    </table>    
-    <div style="position:relative; left:520px; top:10px; height:0px;width:150px;">
-    <%= select_tag("method", "<option>0 Bündel ausgewählt</option>", :onchange => "this.form.submit()") %>
+    </table>
+    <div style="position:relative; left:520px; top:15px; top:4px; height:24px;width:150px;">
+        <%= select_tag("method", "<option>0 Bündel ausgewählt</option>", :onchange => "this.form.submit()") %>
     </div>
   </form>
 
