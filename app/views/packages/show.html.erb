@@ -26,7 +26,7 @@
 
 <p>
   <b>Weblinks:</b>
-  <%=auto_link @package.urls %>
+  <%=auto_link @package.urls.gsub(/ /,'<br>'), link = :all%>
 </p>
 
 </div>
