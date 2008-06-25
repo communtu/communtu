@@ -49,7 +49,7 @@ class SuggestionController < ApplicationController
     
     script += "SOURCES=\""
     sources.each do |repo, url|
-        script += repo.url + "*"
+        script += repo.url + repo.subtype + "*"
     end
     script += "\"\n\n"
     
