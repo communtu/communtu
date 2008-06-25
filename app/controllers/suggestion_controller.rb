@@ -80,7 +80,7 @@ class SuggestionController < ApplicationController
     script += "\tURL=$( echo $source | cut -d \" \" -f 2 )\n"
     script += "\tTYPE=$( echo $source | cut -d \" \" -f 3-6 )\n"
     script += "\tgrep -q \"$URL.*$TYPE\" $APTLIST\n\n"
-    script += "\tif [ \"$?\" != \"0\" ]; then\n\t\tsudo sh -c \"echo $SOURCE >> $APTLIST\"\n"
+    script += "\tif [ \"$?\" != \"0\" ]; then\n\t\tsudo sh -c \"echo $source >> $APTLIST\"\n"
     script += "\tfi\n"
     script += "done\n\n"
     
