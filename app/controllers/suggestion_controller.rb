@@ -84,8 +84,8 @@ class SuggestionController < ApplicationController
     script += "\tfi\n"
     script += "done\n\n"
     
-    script += "gksudo apt-get update\n"
-    script += "gksudo apt-get install -y --force-yes $PACKAGES | zenity --progress" + "\n"
+    script += "sudo apt-get update\n"
+    script += "sudo apt-get install -y --force-yes $PACKAGES | zenity --progress" + "\n"
     
     respond_to do |format|
         format.text { send_data(script, :filename => "install.sh", :type => "text", :disposition => "attachment") }
