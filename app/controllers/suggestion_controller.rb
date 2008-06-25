@@ -85,7 +85,9 @@ class SuggestionController < ApplicationController
     script += "done\n\n"
     
     script += "sudo apt-get update\n"
-    script += "sudo apt-get install -y --force-yes $PACKAGES" + "\n"
+    script += "for package in $PACKAGES; do"
+    script += "\tsudo apt-get install -y --force-yes $package\n"
+    script += "done\n"
     
     respond_to do |format|
         format.text { send_data(script, :filename => "install.sh", :type => "text", :disposition => "attachment") }
