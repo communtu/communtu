@@ -30,7 +30,7 @@ class SuggestionController < ApplicationController
 
   def install
 
-    script          = ""
+    script          = "gksudo echo\n"
     package_install = ""
     sources         = {}
     package_sources = ""
@@ -81,7 +81,7 @@ class SuggestionController < ApplicationController
             out  = "source=\"" + url + " " + repository.subtype + "\"\n"
             out += "grep -q \"" + repository.url + ".*" + repository.subtype + "\" $file\n\n"
             out += "if [ \"$?\" != \"0\" ]; then\n" +
-            "\tgksudo sh -c \"echo $source >> $file\"\n"
+            "\tsudo sh -c \"echo $source >> $file\"\n"
             if not repository.gpgkey.nil?
                 out += "\twget " + repository.gpgkey + " | gksudo apt-key add -"
             end
