@@ -8,7 +8,7 @@
 
 <p>
   <b>Name:</b>
-  <%=h @package.name %>
+  <%= link_to(@package.name, "apt:" + @package.name) %>
 </p>
 <p>
   <b>Version:</b>
@@ -17,14 +17,18 @@
 
 <p>
   <b>Repository:</b>
-  <%=h @package.repository.url %>
+  <%= link_to(@package.repository.url, distribution_repository_path(@package.distribution, @package.repository)) %>
 </p>
+
+<% if not @package.urls.nil? %>
 
 <p>
   <b>Weblinks:</b>
   <%=auto_link @package.urls.gsub(/ /,'<br>'), link = :all%>
 </p>
 <p>
+<% end %>
+
   <b>Beschreibung:</b>
   <%= @package.description %>
 </p>

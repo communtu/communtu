@@ -29,10 +29,8 @@
 <% for package in packages %>
 <% css=cycle("packageList0", "packageList1") %>
   <tr>
-  	<td class="<%= css %>"><%= package.name %></td>
+  	<td class="<%= css %>"><%= link_to(package.name, distribution_package_path(package.distribution, package)) %></td>
     <td class="<%= css %>" width="80" align="right">
-    <%= link_to image_tag("/images/search.png", :size => "22x22", :border => "0"),
-                                  distribution_package_path(distribution.id, package) %> 
                                   
 		<% if editing_metapackage? and package.distribution_id == distribution.id %>
 		    

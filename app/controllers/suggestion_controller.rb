@@ -17,13 +17,14 @@ class SuggestionController < ApplicationController
     end
   end 
 
-  def recursive_packages meta, package_install, package_sources    
+  def recursive_packages meta, package_install, package_names, package_sources    
     meta.base_packages.each do |p|
         if p.class == Package
-            package_install << ("gksudo apt-get install  -y --force-yes "+p.name + "\n") # package_install.push(p)
+            #package_install << ("gksudo apt-get install  -y --force-yes "+p.name + "\n") # package_install.push(p)
+            package_names.push(p.name)
             package_sources.store(p.repository, p.repository.url)
         else
-            recursive_packages p, package_install, package_sources
+            recursive_packages p, package_install, package_names, package_sources
         end
     end
   end
@@ -31,25 +32,60 @@ class SuggestionController < ApplicationController
   def install
 
     script          = "gksudo echo\n"
+    package_names   = []
     package_install = ""
     sources         = {}
     package_sources = ""
    
     script += "#!/bin/bash\n\n"
-    script += "file=\"/etc/apt/sources.list\"\n\n"
-    
+    script += "APTLIST=\"/etc/apt/sources.list\"\n\n"
+        
     packages = params[:post]
     packages.each do |id,unused|
     
         package = Metapackage.find(id)
-        recursive_packages package, package_install, sources
+        recursive_packages package, package_install, package_names, sources
     end
+    
+    script += "SOURCES=\""
+    sources.each do |repo, url|
+        script += repo.url + "*"
+    end
+    script += "\"\n\n"
+    
+    script += "PACKAGES=\""
+    package_names.each do |name|
+        script += name + " "
+    end
+    script += "\"\n\n"
     
     gen_package_sources sources, package_sources
     
-    script += package_sources
+    script += "IFS=\"*\"\n"
+    script += "zenity --list --width 500 --height 300 --title \"Paketquellen hinzufügen\" " + 
+        "--text \"Folgende Paketquellen werden hinzugefügt\" --column \"Quelle\" $SOURCES\n"
+    script += "\n"
+
+    script += "if [ $? != 0 ]; then\n\texit 0\nfi\n\n"
+    
+    script += "IFS=\" \"\n"
+    script += "zenity --list --width 500 --height 300 --title \"Pakete installieren\" " +
+        "--text \"Folgende Pakete werden installiert\" --column \"Paket\" $PACKAGES \n"
+    script += "\n"
+    
+    script += "if [ $? != 0 ]; then\n\texit 0\nfi\n\n"
+    
+    script += "IFS=\"*\"\n"
+    script += "for source in $SOURCES; do\n"
+    script += "\tURL=$( echo $source | cut -d \" \" -f 2 )\n"
+    script += "\tTYPE=$( echo $source | cut -d \" \" -f 3-6 )\n"
+    script += "\tgrep -q \"$URL.*$TYPE\" $APTLIST\n\n"
+    script += "\tif [ \"$?\" != \"0\" ]; then\n\t\tsudo sh -c \"echo $SOURCE >> $APTLIST\"\n"
+    script += "\tfi\n"
+    script += "done\n\n"
+    
     script += "gksudo apt-get update\n"
-    script += package_install + "\n"
+    script += "gksudo apt-get install -y --force-yes $PACKAGES | zenity --progress" + "\n"
     
     respond_to do |format|
         format.text { send_data(script, :filename => "install.sh", :type => "text", :disposition => "attachment") }
@@ -78,10 +114,10 @@ class SuggestionController < ApplicationController
   
     def gen_package_sources sources, package_sources
         sources.each do |repository, url|
-            out  = "source=\"" + url + " " + repository.subtype + "\"\n"
-            out += "grep -q \"" + repository.url + ".*" + repository.subtype + "\" $file\n\n"
+            out  = "SOURCE=\"" + url + " " + repository.subtype + "\"\n"
+            out += "grep -q \"" + repository.url + ".*" + repository.subtype + "\" $APTLIST\n\n"
             out += "if [ \"$?\" != \"0\" ]; then\n" +
-            "\tsudo sh -c \"echo $source >> $file\"\n"
+                "\tsudo sh -c \"echo $SOURCE >> $APTLIST\"\n"
             if not repository.gpgkey.nil?
                 out += "\twget " + repository.gpgkey + " | gksudo apt-key add -"
             end

@@ -14,7 +14,7 @@ div.main {
 	border-width: 2px;
 	background-color: white;
 	margin: 0 auto;
-	padding: 0 20px 20px 10px;
+	padding: 0 30px 20px 10px;
 	position: relative;
 	width: 900px;
 	min-height: 600px;
@@ -32,7 +32,7 @@ div.navi {
 div.sidebar {
 	
 	margin: 15px 10px 0 0;
-	padding: 0px 8px 0px 5px;
+	padding: 0px 8px 0px 8px;
 	border-top-style: solid;
 	border-top-width: 1px;
 	border-bottom-style: solid;
@@ -48,7 +48,7 @@ div.sidebar {
 
 div.content{
 	
-	margin: 15px 10px 0 0;
+	margin: 15px 10px 15px 0;
 	padding: 8px 15px 8px 15px;
 	border-top-style: solid;
 	border-top-width: 1px;
@@ -83,7 +83,7 @@ div.inner1 {
 div.meta_cart{
 
 	margin: 15px 10px 0 0;
-	padding: 10px 5px 10px 5px;
+	padding: 10px 5px 10px 8px;
 	border-top-style: solid;
 	border-top-width: 1px;
 	border-bottom-style: solid;
