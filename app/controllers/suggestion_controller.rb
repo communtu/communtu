@@ -84,8 +84,9 @@ class SuggestionController < ApplicationController
     script += "\tfi\n"
     script += "done\n\n"
     
+    script += "IFS=\" \""
     script += "sudo apt-get update\n"
-    script += "for package in $PACKAGES; do"
+    script += "for package in $PACKAGES; do\n"
     script += "\tsudo apt-get install -y --force-yes $package\n"
     script += "done\n"
     
