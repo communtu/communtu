@@ -338,6 +338,7 @@ li.suggestionHeader {
     list-style-type: none;
     background: #fff7cd;
     font-weight: bold;
+    padding-left:5px;
 }
 
 li.suggestionPackage {
