@@ -4,7 +4,7 @@ module SuggestionHelper
         return selection.key? category
     end
 
-    def show_packages packages, selected
+    def show_packages packages, selected, id
         out = ""
         packages.each do |package|
             out += "<tr>\n"
@@ -27,7 +27,7 @@ module SuggestionHelper
     def show_selection_subtree root, selection, depth
     
         out = "<tr>\n"
-            out += "<td width='15' bgcolor='#fff7cd' />"
+            out += "<td width='15' bgcolor='#fff7cd'><img src='/images/add.png' width='12' height='12' onclick=\"['test" + depth.to_s + "', 'test2" + depth.to_s + "'].each(Element.toggle)\"></td>"
             out += "<td colspan='3' class='suggestion" + depth.to_s + "'><b>" + root.name + "</b></td>\n"
         out += "</tr>\n"
         

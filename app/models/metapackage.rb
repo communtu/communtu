@@ -19,12 +19,14 @@ class Metapackage < BasePackage
     return self.published == Metapackage.state[:published]
   end
   
-  def migrate distribution, current_user, failed, doubles
+  def migrate(distribution, current_user, failed, doubles)
     ignore = []
-    migrate(distribution, current_user, failed, doubles, ignore)
+    migrate_intern(distribution, current_user, failed, doubles, ignore)
   end
   
-  def migrate distribution, current_user, failed, doubles, ignore
+  protected
+  
+  def migrate_intern(distribution, current_user, failed, doubles, ignore)
 
     meta = Metapackage.find(:first, :conditions => ["name = ? and distribution_id = ?", self.name, distribution.id])
     if not meta.nil? and not ignore.include? meta
@@ -51,7 +53,7 @@ class Metapackage < BasePackage
                 failed.push(package)
             end
         else
-            package.migrate(distribution, current_user, failed, doubles, ignore)
+            package.migrate_intern(distribution, current_user, failed, doubles, ignore)
         end
     end
     

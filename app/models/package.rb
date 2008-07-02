@@ -37,7 +37,7 @@ class Package < BasePackage
         end
     end
   end
- 
+  
   def self.get_url_from_source source
     parts = source.split " "
     if parts.length == 4

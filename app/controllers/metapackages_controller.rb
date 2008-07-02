@@ -159,6 +159,7 @@ class MetapackagesController < ApplicationController
         redirect_to request.env['HTTP_REFERER']
                     
     elsif action == "1"
+
         session[:packages] = packages
         session[:backlink] = request.env['HTTP_REFERER']
         redirect_to "/metapackage/migrate"
@@ -193,7 +194,7 @@ class MetapackagesController < ApplicationController
     packages = session[:packages]
     if not packages.nil?
         packages.each do |key,value|
-            if value[:select] = "1"
+            if value[:select] == "1"
                 package = Metapackage.find(key)
                 if not package.nil?
                     package.migrate(@distribution, current_user, @failed_packages, @double_packages)

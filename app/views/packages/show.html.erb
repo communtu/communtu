@@ -3,7 +3,7 @@
 <span class="headline">Paket-Details</span>
 <p>
   <b>Distribution:</b>
-  <%=h @package.distribution.name %>
+  <%= link_to(@package.distribution.name, distribution_path(@package.distribution)) %>
 </p>
 
 <p>
@@ -17,7 +17,7 @@
 
 <p>
   <b>Repository:</b>
-  <%= link_to(@package.repository.url, distribution_repository_path(@package.distribution, @package.repository)) %>
+  <%= @package.repository.url + " " + @package.repository.subtype %>
 </p>
 
 <% if not @package.urls.nil? %>

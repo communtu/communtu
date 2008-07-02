@@ -64,8 +64,6 @@
 			<td class="<%= css %>"><%= link_to  p.package.name, { :controller => :packages, :action => :show,\
 					:id => p.package.id } %></td>
 			<td class="<%= css %>" align="right">
-				<%= link_to image_tag("search.png", :size => "22x22", :border => "0"), { :controller => :packages, :action => :show,\
-					:id => p.package.id } %>
 			<% if is_admin? %>
 				<%= link_to image_tag("edit-delete.png", :size => "22x22", :border => "0"), { :controller => :metapackages,\
 					 :action => :remove_package, :id => @metapackage.id, :package_id => p.id  } %> 
