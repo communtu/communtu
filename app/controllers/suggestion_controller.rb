@@ -15,7 +15,7 @@ class SuggestionController < ApplicationController
         @selection.store(category, metas)
     
     end
-  end 
+  end
 
   def recursive_packages meta, package_install, package_names, package_sources
     meta.base_packages.each do |p|

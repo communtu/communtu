@@ -55,7 +55,9 @@ module SuggestionHelper
         end
         
         root.children.each do |child|
-            out += show_selection_subtree child, selection, 0
+            if not child.metapackages.nil? and not child.metapackages.size == 0
+                out += show_selection_subtree child, selection, 0
+            end
         end
         
         return out + "</table>\n"
