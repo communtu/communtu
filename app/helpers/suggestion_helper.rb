@@ -7,31 +7,28 @@ module SuggestionHelper
     def show_packages packages, selected
         out = ""
         packages.each do |package|
-            out += "<tr>\n"
-                out += "<td width='15' bgcolor='#fff7cd'/>\n"
-                out += "<td width='20' class='suggestionTop' />\n"
-                out += "<td class='suggestionTop'>" + link_to(package.name,metapackage_url(:id => package.id))+ "</td>\n"
-                out += "<td class='suggestionTop'>\n"
-                    out += check_box_tag "post[" + package.id.to_s + "]", 0, selected
-                out += "</td>\n"
-            out += "</tr>\n"
-            out += "<tr>"
-                out += "<td width='15' bgcolor='#fff7cd' />\n"
-                out += "<td width='20' class='suggestionBottom'/>\n"
-                out += "<td colspan='2' class='suggestionBottom'>" + package.description + "</td>"
-            out += "</tr>"
+            out += "<div id='selected' class='suggestionPackage'>\n"
+                out += "<ul class='suggestionPackage'>"
+                out += "<li class='suggestionPackage'>" + check_box_tag("post[" + package.id.to_s + "]", 0, selected) + "</li>\n"
+                out += "<li class='suggestionPackage'>" + link_to(package.name,metapackage_url(:id => package.id)) + "</li>\n"
+                out += "</ul>"
+            out += "</div>\n"
+            out += "<div id='unselected' class='suggestionDescription'>"
+                out += package.description
+            out += "</div>"
         end
         return out
     end
 
     def show_selection_subtree root, selection, depth
-    
-        # onclick=\"['test" + depth.to_s + "', 'test2" + depth.to_s + "'].each(Element.toggle)\"
-    
-        out = "<tr>\n"
-            out += "<td width='15' class='suggestion" + depth.to_s + "' bgcolor='#fff7cd'><img src='/images/add.png' width='12' height='12'></td>"
-            out += "<td colspan='3' class='suggestion" + depth.to_s + "'><b>" + root.name + "</b></td>\n"
-        out += "</tr>\n"
+        
+        out = "<div class='suggestionHeader'><ul class='suggestionHeader'>\n"
+            out += "<li class='suggestionCollapse'><img src='/images/add.png' width='12' height='12' onclick=\"['packages" + \
+                root.name + "'].each(Element.toggle)\"></li>\n"
+            out += "<li class='suggestionHeader'><b>" + root.name + "</b></li>\n"
+        out += "</ul></div>\n"
+        
+        out += "<div class='suggestionPackages' id='packages" + root.name + "'>\n"
         
         selected = selection[root]
         if selected.nil? then selected = [] end
@@ -41,16 +38,18 @@ module SuggestionHelper
         end
         out += show_packages root.metapackages.select {|meta| not selected.include? meta and meta.distribution == @distribution }, false
         
-        root.children.each do |child|
-            out += show_selection_subtree child, selection, (depth + 1)
-        end
+#        root.children.each do |child|
+#            out += show_selection_subtree child, selection, (depth + 1)
+#        end
+        
+        out += "</div>\n"
         
         return out
     end
 
     def show_suggestion root, selection
         
-        out = "<table width='100%' cellspacing='0' class='suggestion'>\n"
+        out = "<div class='suggestion'>\n"
         
         if root.children.nil?
             return out
@@ -62,8 +61,10 @@ module SuggestionHelper
             end
         end
    
-        out += "<tr><td class='suggestionLast' colspan='4'></td></tr>"  
-        return out + "</table>\n"
+        out += "<div class='suggestionBottom'></div>" 
+   
+        return out + "</div>\n"
     end
 
 end
+

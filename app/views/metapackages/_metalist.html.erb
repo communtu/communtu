@@ -33,15 +33,13 @@
         <% if logged_in? %>
         <td class="<%= css %>" valign="middle" width="30">
         		
-	
-	        
-		        <% if (metapackage.user_id == current_user.id) or is_admin? %>
-		            <% if editing_metapackage? %>
-		                <%= link_to_remote(image_tag("/images/add.png", :size => "22x22", :border => "0"), \
-			                :url => user_path(current_user) + "/cart/add_to_cart/" + metapackage.id.to_s,\
-			                :update => 'meta_cart') %>
-			        <% end %>
-		        <% end %>
+                <% if (metapackage.user_id == current_user.id) or is_admin? %>
+                    <% if editing_metapackage? %>
+                        <%= link_to_remote(image_tag("/images/add.png", :size => "22x22", :border => "0"), \
+                                :url => user_path(current_user) + "/cart/add_to_cart/" + metapackage.id.to_s,\
+                                :update => 'meta_cart') %>
+                        <% end %>
+                <% end %>
 	</td>
 	<td class="<%= css %>" width="20">
 		        <%= check_box('packages[' + metapackage.id.to_s + ']', 'select', :checked => false) %>
