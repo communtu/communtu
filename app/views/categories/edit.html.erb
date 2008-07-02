@@ -15,7 +15,8 @@
 
   <p>
     <b>Übergeordnete Kategorie</b><br />
-	<%= select_tag('category[parent_id]', "<option value='1'> Root</option>"+(get_category_select_options (Category.find(1))))%>
+	<% cats = Category.find(:all)%>
+	<%= f.collection_select('parent_id', cats, :id, :name)%>
   </p>
 
   <p>
