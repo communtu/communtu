@@ -7,7 +7,8 @@
     <th valign="middle" class="packageList" align="left">Level</th>
     <th valign="middle" class="packageList" align="left">Distribution</th>
     <th valign="middle" class="packageList" align="left">Veröffentlicht</th>
-	<th valign="middle" class="packageList" align="left"></th>
+    <th valign="middle" class="packageList" align="left"></th>
+    <th valign="middle" class="packageList" align="left"></th>
   </tr>
 
     <% for metapackage in packages %>
@@ -19,7 +20,7 @@
         <td class="<%= css %>" valign="middle">
 		    <%=h metapackage.category.name %></td>
         <td class="<%= css %>" valign="middle">
-		    <%=h metapackage.rating %></td>
+		    <%=h Metapackage.level[metapackage.rating] %></td>
         <td class="<%= css %>" valign="middle">
 		    <%=h metapackage.distribution.name %></td>
 	    <td class="<%= css %>" valign="middle" align="middle">
@@ -29,9 +30,10 @@
 	            <%= image_tag("no.png", :size => "22x22", :border => "0") %>
 	        <% end %>
 	    </td>
-        <td class="<%= css %>" valign="middle" width="60">
+        <% if logged_in? %>
+        <td class="<%= css %>" valign="middle" width="30">
         		
-	        <% if logged_in? %>
+	
 	        
 		        <% if (metapackage.user_id == current_user.id) or is_admin? %>
 		            <% if editing_metapackage? %>
@@ -40,11 +42,11 @@
 			                :update => 'meta_cart') %>
 			        <% end %>
 		        <% end %>
-		        
+	</td>
+	<td class="<%= css %>" width="20">
 		        <%= check_box('packages[' + metapackage.id.to_s + ']', 'select', :checked => false) %>
-		        
-	    <% end %>
-	    </td>
+	</td>
+	<% end %>
       </tr>
     <% end %>
     </table>

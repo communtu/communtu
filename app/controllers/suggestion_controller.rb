@@ -3,9 +3,10 @@ class SuggestionController < ApplicationController
   before_filter :authorize_user_subresource
   
   def show
-    @profile   = current_user.user_profiles
-    @root      = Category.find(1)
-    @selection = {}
+    @profile      = current_user.user_profiles
+    @root         = Category.find(1)
+    @selection    = {}
+    @distribution = current_user.distribution
     @profile.each do |p|
 
         category = Category.find(p.category_id)

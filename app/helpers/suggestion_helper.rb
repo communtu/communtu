@@ -37,7 +37,7 @@ module SuggestionHelper
         if selected? root, selection
             out += show_packages selected, true
         end
-        out += show_packages root.metapackages.select {|meta| not selected.include? meta}, false
+        out += show_packages root.metapackages.select {|meta| not selected.include? meta and meta.distribution == @distribution }, false
         
         root.children.each do |child|
             out += show_selection_subtree child, selection, (depth + 1)

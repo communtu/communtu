@@ -10,9 +10,14 @@ class Metapackage < BasePackage
   validates_uniqueness_of :scope => :distribution_id
   
   @state = { :pending => 0, :published => 1, :rejected => 2 }
+  @level = [ "gar nicht", "normal", "erweitert", "Experte", "Freak" ]
   
   def self.state
     @state
+  end
+  
+  def self.level
+    @level
   end
   
   def is_published?
