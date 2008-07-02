@@ -307,10 +307,13 @@ table.suggestion {
 }
 
 td.suggestion0 {
+    background: #fff7cd;
     padding-top:10px;
     padding-bottom:10px;
     padding-left:10px;
     font-weight: bold;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
 }
 
 td.suggestion1 {
@@ -324,8 +327,6 @@ td.suggestion1 {
 
 td.suggestionTop {
     padding-top: 10px;
-    border-top-style: solid;
-    border-top-width: 1px;
 }
 
 td.suggestionBottom {
