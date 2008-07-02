@@ -335,6 +335,12 @@ td.suggestionBottom {
     border-bottom-width: 1px;
 }
 
+td.suggestionLast {
+
+    background: #fff7cd;
+    height: 15px;
+}
+
 th.packageList {
     padding-bottom:5px;
     padding-left:10px;

@@ -61,7 +61,8 @@ module SuggestionHelper
                 out += show_selection_subtree child, selection, 0
             end
         end
-        
+   
+        out += "<tr><td class='suggestionLast' colspan='4'></td></tr>"  
         return out + "</table>\n"
     end
 
