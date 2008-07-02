@@ -4,7 +4,7 @@ module SuggestionHelper
         return selection.key? category
     end
 
-    def show_packages packages, selected, id
+    def show_packages packages, selected
         out = ""
         packages.each do |package|
             out += "<tr>\n"

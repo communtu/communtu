@@ -4,7 +4,7 @@
 	Zukünftig kannst du in den Kategorien stöbern und zusätzliche Pakete und Bündel auswählen.
 <div class="suggestion">
     <%= form_tag(user_path(current_user) + "/suggestion/install") %>
-    <%= show_suggestion @root, @selection %>   
+    <%= show_suggestion(@root, @selection) %>
 
 
 <br><br>Durch Klicken auf das Symbol rechts unten wird automatisch
