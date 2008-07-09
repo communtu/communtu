@@ -141,6 +141,10 @@ class MetapackagesController < ApplicationController
             meta.published = 0
             meta.save!
             redirect_to distribution_metapackage_path(meta.distribution, meta)
+        elsif action == "delete"
+            path = distribution_metapackages_path(meta.distribution)
+            meta.destroy
+            redirect_to path
         end
     end
   end

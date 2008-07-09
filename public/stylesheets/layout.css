@@ -292,9 +292,6 @@ td.profileRatingColRight {
 
 div.suggestion {
     margin: 10px 5px 0 5px;
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-top-color: #ac873f;
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-bottom-color: #ac873f;
@@ -312,7 +309,7 @@ ul.suggestionPackage {
 
 div.suggestionHeader {
 
-    padding: 5px 0 5px 5px;
+    padding: 2px 0 2px 5px;
     background: #fff7cd;
     border-left-style: solid;
     border-left-width: 1px;
@@ -320,9 +317,9 @@ div.suggestionHeader {
     border-right-style: solid;
     border-right-width: 1px;
     border-right-color: #ac873f;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-bottom-color: #ac873f;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #ac873f;
 }
 
 li.suggestionCollapse {
@@ -338,6 +335,7 @@ li.suggestionHeader {
     list-style-type: none;
     background: #fff7cd;
     font-weight: bold;
+    font-size:80%;
     padding-left:5px;
 }
 
@@ -354,13 +352,15 @@ div.suggestionPackage {
     border-left-style: solid;
     border-left-width: 1px;
     border-left-color: #ac873f;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #ac873f;
 }
 
 div.suggestionDescription {
     padding:0 0 8px 5px;
     background: #ffffff;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
+    padding-right:40px;
     border-left-style: solid;
     border-left-width: 1px;
     border-left-color: #ac873f;
@@ -368,30 +368,13 @@ div.suggestionDescription {
 
 div.suggestionPackages {
     background: #fff7cd;
-    padding-left:20px;
+    padding-left:10px;
     border-left-style: solid;
     border-left-width: 1px;
     border-left-color: #ac873f;
     border-right-style: solid;
     border-right-width: 1px;
     border-right-color: #ac873f;
-}
-
-div.suggestionBottom {
-    border-left-style: solid;
-    border-left-width: 1px;
-    border-left-color: #ac873f;
-    border-right-style: solid;
-    border-right-width: 1px;
-    border-right-color: #ac873f;
-    padding-bottom: 10px;
-    background: #fff7cd;
-}
-
-td.suggestionLast {
-
-    background: #fff7cd;
-    height: 15px;
 }
 
 th.packageList {

@@ -23,7 +23,7 @@ module SuggestionHelper
     def show_selection_subtree root, selection, depth
         
         out = "<div class='suggestionHeader'><ul class='suggestionHeader'>\n"
-            out += "<li class='suggestionCollapse'><img src='/images/add.png' width='12' height='12' onclick=\"['packages" + \
+            out += "<li class='suggestionCollapse'><img src='/images/add.png' width='10' height='10' onclick=\"['packages" + \
                 root.name + "'].each(Element.toggle)\"></li>\n"
             out += "<li class='suggestionHeader'><b>" + root.name + "</b></li>\n"
         out += "</ul></div>\n"
@@ -60,8 +60,6 @@ module SuggestionHelper
                 out += show_selection_subtree child, selection, 0
             end
         end
-   
-        out += "<div class='suggestionBottom'></div>" 
    
         return out + "</div>\n"
     end

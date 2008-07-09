@@ -19,6 +19,10 @@ class Metapackage < BasePackage
   def self.level
     @level
   end
+
+  def owned_by? user
+    (user_id == user.id)
+  end
   
   def is_published?
     return self.published == Metapackage.state[:published]
