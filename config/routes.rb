@@ -45,6 +45,7 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/about', :controller => 'home', :action => 'about'
   map.connect '/admin/load_packages', :controller => 'admins', :action => 'load_packages'
   map.connect '/admin/sync_package/:id', :controller => 'admins', :action => 'sync_package'
+  map.connect '/admin/sync_all/:id', :controller => 'admins', :action => 'sync_all'
   map.connect '/admin/repositories', :controller => 'repositories', :action => 'new'
   map.connect '/distributions', :controller => 'distributions', :action => 'index'
 

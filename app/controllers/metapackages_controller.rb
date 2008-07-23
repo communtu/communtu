@@ -104,17 +104,8 @@ class MetapackagesController < ApplicationController
   end
 
   def edit_packages
-    package = Metapackage.find(params[:id]);
-    cart = Cart.new
-    cart.name = package.name
-    cart.save
-    package.base_packages.each do |p|
-      cart.base_packages << p
-    end
-    cart.save
-
-    session[:cart] = cart.id
-    redirect_to "/users/" + current_user.id.to_s + "/metapackages/2"    
+    @package = Metapackage.find(params[:id]);
+    card_editor(@package.name,@package.base_packages,session,current_user)
   end
   
   def remove_package

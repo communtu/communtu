@@ -112,4 +112,9 @@ class PackagesController < ApplicationController
     end
   end
   
+  # Ubuntu Metapaket in Bündel konvertieren
+  def convert
+    @package = Package.find(params[:id])
+    card_editor(@package.name,@package.depends_or_recommends,session,current_user)
+  end
 end

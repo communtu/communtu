@@ -43,4 +43,15 @@ module ApplicationHelper
     
     "<div class='flash'>" << out << "</div>" if not out.empty?
   end
+  
+  def card_editor(name,packages,session,current_user)
+    cart = Cart.new
+    cart.name = name
+    cart.save
+    packages.each do |p|
+      cart.base_packages << p
+    end
+    session[:cart] = cart.id
+    redirect_to "/users/" + current_user.id.to_s + "/metapackages/2"    
+  end
 end

@@ -38,5 +38,5 @@ module MetapackagesHelper
       
       return options
     end
-  
+
 end

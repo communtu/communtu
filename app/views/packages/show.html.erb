@@ -16,6 +16,10 @@
 </p>
 
 <p>
+  <b>Section:</b>
+  <%=h @package.fullsection %>
+</p>
+<p>
   <b>Repository:</b>
   <%= @package.repository.url + " " + @package.repository.subtype %>
 </p>
@@ -35,6 +39,9 @@
 
 </div>
 <%= link_to 'Bearbeiten', {:action => 'edit', :id => @package.id} %> &nbsp;&nbsp;
+<% if @package.section.include?("metapackage") then%>
+<%= link_to 'Metapaket in Bündel wandeln', {:action => 'convert', :id => @package.id} %> &nbsp;&nbsp;
+<% end %>
 <%= link_to 'Zurück', distribution_packages_path(@package.distribution_id) %>
 <% if (not session[:meta_cart].nil?) and @package.distribution_id == @distribution_id %>
 		| <%= link_to_remote('Zu Bündel hinzufügen', :update => 'meta_cart',\
