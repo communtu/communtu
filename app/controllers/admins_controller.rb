@@ -19,8 +19,7 @@ class AdminsController < ApplicationController
 
   def sync_all
     @distribution = Distribution.find(params[:id])
-    @infos = @distribution.repositories.map do |r|
-      Package.import_source r
+    @infos = @distribution.repositories.map { |r| Package.import_source r }
     end
   end
 
