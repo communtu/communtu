@@ -11,12 +11,12 @@
 <span class="headline">Repositories synchronisiert</span>
 <% for @info in @infos do%>
 <ul>
-	<li>Repository-URL: <%= @info["url"] %></li>
-	<li>Pakete insgesamt: <%= @info["package_count"] %></li>
-	<li>Neu hinzugefügte Pakete: <%= @info["new_count"] %></li>
-	<li>Aktualisierte Pakete: <%= @info["update_count"] %></li>	
+	<li>Repository-URL: <%= @info["url"].nil? ? "" : @info["url"] %></li>
+	<li>Pakete insgesamt: <%= @info["package_count"].nil? ? "" : @info["package_count"]  %></li>
+	<li>Neu hinzugefügte Pakete: <%= @info["new_count"].nil? ? "" : @info["new_count"] %></li>
+	<li>Aktualisierte Pakete: <%= @info["update_count"].nil? ? "" : @info["update_count"] %></li>	
 </ul>
-<% if @info["failed"].size > 0%>
+<% if !@info.nil? & @info["failed"].size > 0%>
 <div class="inner1">
 <span class="headline">Die folgenden Pakete konnten nicht in der Datenbank gespeichert werden:</span>
 <ul>	
