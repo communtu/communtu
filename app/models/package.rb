@@ -96,19 +96,22 @@ class Package < BasePackage
         package["Description"] = ""
       end
       
-      res = Package.find(:first, :conditions => ["name=? AND version=? AND distribution_id=?",\
-        key, package["Version"], distribution_id])
- 
-      if res.nil?
-        
-        res= Package.new({ :name => key, :version => package["Version"],\
-          :distribution_id => distribution_id, :description => package["Description"],\
+      attributes = { :name => key, :version => package["Version"],\
+          :distribution_id => distribution_id, 
+          :description => package["Description"],\
           :fullsection => package["Section"],\
           # für :section nur den letzten Teil verwenden
           :section => package["Section"].split("/")[-1],\
           :filename => package["Filename"],\
           :repository_id => repository.id,
-          :license_type => repository.license_type})
+          :license_type => repository.license_type}
+      
+      res = Package.find(:first, :conditions => ["name=? AND version=? AND distribution_id=?",\
+        key, package["Version"], distribution_id])
+ 
+      if res.nil?
+        
+        res= Package.new(attributes)
           
         if res.save
           info["new_count"] = info["new_count"].next 
@@ -117,8 +120,7 @@ class Package < BasePackage
         end
         
       else
-        if res.update_attributes({ :name => key, :version => package["Version"], :description => package["Description"], :section => package["Section"]})
-            
+        if res.update_attributes(attributes)
           info["update_count"] = info["update_count"].next
         else
           info["failed"].push key
