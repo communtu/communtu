@@ -37,9 +37,15 @@
   <%= @package.description %>
 </p>
 
+<% if @package.is_meta then%>
+<p>
+<b>Beinhaltet folgende Pakete:</b>
+<%= @package.depends_or_recommends.map{|p| p.name+" "}%>
+</p>
+<% end %>
 </div>
 <%= link_to 'Bearbeiten', {:action => 'edit', :id => @package.id} %> &nbsp;&nbsp;
-<% if @package.section.include?("metapackage") then%>
+<% if @package.is_meta then%>
 <%= link_to 'Metapaket in Bündel wandeln', {:action => 'convert', :id => @package.id} %> &nbsp;&nbsp;
 <% end %>
 <%= link_to 'Zurück', distribution_packages_path(@package.distribution_id) %>

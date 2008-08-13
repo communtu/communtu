@@ -34,7 +34,50 @@ class Package < BasePackage
       Dependency.create(:base_meta_package_id => id, :base_package_id => p.id, :dep_type => 2)
     end
   end
+  
+  def unique_name
+    name+"-"+distribution.name.split(" ")[0]
+  end
+  def is_meta
+    section=="metapackages"
+  end
+  
+  def is_sub_meta(m)
+    repository == m.repository &&
+    (self.depends_or_recommends - m.depends_or_recommends).empty? 
+  end
 
+  def self.sub_metas
+    metas = Package.find(:all, :conditions => ["section = ?","metapackages"])
+    submetas = []
+    metas.each do |m1|
+      metas.each do |m2|
+        if m1!=m2 && m1.is_sub_meta(m2) then submetas <<= [m1,m2] end
+      end
+    end
+    return submetas
+  end
+  
+  def meta_intersection(m)
+    if repository != m.repository 
+      return []
+    else 
+      self.depends_or_recommends & m.depends_or_recommends
+    end
+  end
+  
+  def self.meta_intersections
+    metas = Package.find(:all, :conditions => ["section = ?","metapackages"])
+    mis = []
+    metas.each do |m1|
+      metas.each do |m2|
+        if m1!=m2 && !m1.is_sub_meta(m2) && !m2.is_sub_meta(m1) && (m1.meta_intersection(m2)).length*10 >= m1.depends_or_recommends.length then mis <<= [m1,m2] end
+      end
+    end
+    return mis
+  end
+  
+  
   def self.license_types
     license_types = [ "OpenSource", "Commercial" ]
   end
