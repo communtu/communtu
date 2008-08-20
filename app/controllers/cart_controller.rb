@@ -15,7 +15,7 @@ class CartController < ApplicationController
         if editing_metapackage?
         
             cart = Cart.find(session[:cart])
-            meta = Metapackage.find(:first, :conditions => ["user_id = ? and name = ? and distribution = ?", current_user.id, cart.name, current_user.distribution_id])
+            meta = Metapackage.find(:first, :conditions => ["user_id = ? and name = ? and distribution_id = ?", current_user.id, cart.name, current_user.distribution_id])
 
             if meta.nil?
                 meta = Metapackage.new
