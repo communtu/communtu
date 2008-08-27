@@ -18,7 +18,9 @@ module UserProfilesHelper
   
   def profile_table_column node, rating, value, css
     out  = "<td class='" + css + "' align='center' >"
-    if node_is_leaf? node then out += profile_radio_tag node, rating, value end
+    #if node_is_leaf? node then
+    out += profile_radio_tag node, rating, value 
+    #end
     out += "</td>\n"
   end
     
@@ -42,8 +44,9 @@ module UserProfilesHelper
   end   
   
   def edit_profile_table root, map
+    level_string = (Metapackage.levels.map {|l| "<th>"+l+"&nbsp;</th>"}).join
     table  = "<table class='profileTable' cellspacing='0'>\n"
-    table += "<tr><th></th><th></th><th>&nbsp;gar nicht&nbsp;</th><th>&nbsp;normal&nbsp;</th><th>&nbsp;erweitert&nbsp;</th><th>&nbsp;Experte&nbsp;</th><th>&nbsp;Freak&nbsp;</th></tr>"
+    table += "<tr><th></th><th></th>"+level_string+"</tr>"
     table += profile_rows root, map, 0
     table += "</table>\n"
   end
