@@ -258,7 +258,7 @@ td.profileNameCol0 {
 }
 
 td.profileNameCol1 {
-    padding-left: 5px;
+    padding-left: 20px;
     border-color: #ac873f;
     background: #fff7cd;
 	border-top-style: solid;
@@ -268,7 +268,27 @@ td.profileNameCol1 {
 	font-size: 82%;
 }
 
+td.profileNameCol2 {
+    padding-left: 30px;
+    border-color: #ac873f;
+    background: #fff7cd;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-right-style: solid;
+	border-right-width: 1px;
+	font-size: 75%;
+}
 
+td.profileNameCol3 {
+    padding-left: 40px;
+    border-color: #ac873f;
+    background: #fff7cd;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-right-style: solid;
+	border-right-width: 1px;
+	font-size: 68%;
+}
 td.profileRatingRowFirst {
     border-color: #ac873f;
 	border-top-style: solid;
