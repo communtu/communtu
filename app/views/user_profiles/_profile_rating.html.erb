@@ -2,25 +2,16 @@
 
 <%= error_messages_for :user_profile %>
 
-<% if current_user.first_login == 1 %>
 
-<p>Dies ist das erste mal, dass du dich angemeldet hast. Am besten editierst du auf dieser 
-einmal dein Benutzerprofil. Diese Informationen werden dann dazu verwendet, um dir Softwarebündel zu
-empfehlen, die für dich interessant sein koennten.</p>
-
-<% else %>
-
-<p>Hier kannst du dein Benutzerprofil editieren. Bewerte eine Option,
+<p>Hier kannst du deine beabsichtige Computer-Nutzung noch genauer angeben. Bewerte eine Option,
 um anzugeben, wie wichtigen dir der Bereich ist. Diese Informationen werden
 benutzt, damit das System dir sinnvolle weitere Pakete empfehlen kann.</p>
-
-<% end %>
 
 <p>Auf dieser Seite kannst du angeben, was für ein Typ von Benutzer du bist. Dazu bewertest du einfach
 die verschiedenen Tätigkeistfelder. Dein Interesse an einem Gebiet kann von "gar nicht" bis "Freak" reichen.
 Entsprechend wird aus diesem Bereich gar nichts oder sehr viel nachinstalliert.
 </p>
-
+<p>Achtung! Zum Schluss auf "Speichern" klicken.</p>
 <% form_tag(user_user_profile_path(current_user) + "/update_rating", options = {:name => "ratings", :method => :put}) do %>
     <div>
         <%= edit_profile_table(root, ratings) %>

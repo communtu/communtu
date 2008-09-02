@@ -10,10 +10,24 @@ class UserProfilesController < ApplicationController
   def edit
   end
   
-  def update_data
+  def update_data 
     user = current_user
     user.security = params[:sec]
     user.license  = params[:lic]
+    # if template user has changed, update rating data
+    if user.template_id.to_s != params[:template].to_s then
+      # copy rating from template user
+      UserProfile.find(:all, :conditions => ["user_id= ?", params[:template]]).each do |p|
+        pold = UserProfile.find(:first,:conditions => ["category_id= ? and user_id= ?",p.category_id,user.id])
+        if pold.nil? then
+          UserProfile.create(:user_id => user.id, :category_id => p.category_id, :rating => p.rating)
+        else
+          pold.rating = p.rating
+          pold.save
+        end  
+      end
+    end
+    user.template_id = params[:template]
     user.distribution_id = params[:distribution]
     user.save!
     

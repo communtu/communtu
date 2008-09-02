@@ -10,8 +10,7 @@ empfehlen, die für dich interessant sein könnten.</p>
 
 <% else %>
 
-<p>Hier kannst du dein Benutzerprofil editieren. Bewerte eine Option,
-um anzugeben, wie wichtigen dir der Bereich ist. Diese Informationen werden
+<p>Hier kannst du dein Benutzerprofil editieren. Diese Informationen werden
 benutzt, damit das System dir sinnvolle weitere Pakete empfehlen kann.</p>
 
 <% end %>
@@ -20,7 +19,15 @@ benutzt, damit das System dir sinnvolle weitere Pakete empfehlen kann.</p>
 
 <% form_tag user_user_profile_path(current_user) + "/update_data", options = {:name => "data", :method => :put} do %>
     <div>
-        <p>Wähle zunächst deine Ubuntu-Version aus. <%= link_to('Wie stelle ich die Version fest?','/user_profiles/help')%></p>
+    	<p>Welcher Typ bist du am ehesten? (um grob eine Auswahl zu treffen, Feineinstellungen später möglich)<br>
+		<% tu = User.template_users %>
+    	<% options = Array.new (tu.length, false)%>
+		<% for i in 0..tu.length-1%>
+		  <% if tu[i].id == current_user.template_id then options[i] = true end%>
+          <%= radio_button_tag "template", tu[i].id, options[i] %> <%= tu[i].login%><br>
+		<% end %>
+		
+        <p>Wähle bitte deine Ubuntu-Version aus. <%= link_to('Wie stelle ich die Version fest?','/user_profiles/help')%></p>
         
         <% distrib_options = "" %>
         <% distributions.each do |distribution| %>
@@ -35,15 +42,15 @@ benutzt, damit das System dir sinnvolle weitere Pakete empfehlen kann.</p>
         <p>Hier kannst du einstellen, wie sicher deine Installationsquellen sein sollen</p>
         
         <%= radio_button_tag "sec", "0", options[0] %> Nur Ubuntuquellen zulassen (sehr sicher)<br>
-        <%= radio_button_tag "sec", "1", options[1] %> Communityquellen zulassen <br>
-        <%= radio_button_tag "sec", "2", options[2] %> Alle Quellen zulassen (unsicherer, aber mehr Programme)<br>
+        <%= radio_button_tag "sec", "1", options[1] %> Communityquellen zulassen (auch sicher, mehr Programme) <br>
+        <%= radio_button_tag "sec", "2", options[2] %> Alle Quellen zulassen (etwas unsicherer, aber noch mehr Programme)<br>
     </div>
     <div style="margin-bottom:30px">
     	<% options = Array.new (Package.license_types.length, false) %>
 		<% options[current_user.license] = true %>
         <p>Hier kannst du auswählen, welche Lizenzen du zulassen willst</p>
         <%= radio_button_tag "lic", "0", options[0] %> Freie Software (Quellen liegen offen und dürfen weiterentwickelt werden)<br>
-        <%= radio_button_tag "lic", "1", options[1] %> Unfreie Lizenzen zulassen (auch kostenlos, aber unfrei)<br>
+        <%= radio_button_tag "lic", "1", options[1] %> Unfreie Lizenzen zulassen (auch kostenlos, aber Quellen liegen nicht offen)<br>
     </div>
     <div style="margin-top:20px;">
         <%= link_to "Speichern", "javascript:document.data.submit();" %>

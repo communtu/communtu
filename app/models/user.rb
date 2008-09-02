@@ -22,6 +22,13 @@ class User < ActiveRecord::Base
  
   before_save :encrypt_password
   before_create :make_activation_code
+
+  
+  def self.template_users
+    template_role = Role.find(:first, :conditions => ["rolename = ?",'template'])
+    ps = Permission.find(:all,:conditions => ["role_id = ?",template_role.id])
+    ps.map {|p| p.user}
+  end
   
   # prevents a user from submitting a crafted form that bypasses activation
   # anything else you want your user to change should be added here.
