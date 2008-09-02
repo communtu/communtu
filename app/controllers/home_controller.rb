@@ -6,4 +6,6 @@ class HomeController < ApplicationController
   def about
   end
   
+  def derivatives
+  end
 end
