@@ -31,7 +31,8 @@
 <% else %>
     <div style="valign:bottom;">
         <font size="1"> 
-            <%= link_to("Neues Bündel", user_path(current_user) + "/cart/create") %>
+            <%= link_to("Neues Bündel", user_path(current_user) + "/cart/create") %> <br>
+            <%= link_to("Bündel aus Paketliste", user_path(current_user) + "/cart/new_from_list") %>
         </font>
     </div>
 <% end %>

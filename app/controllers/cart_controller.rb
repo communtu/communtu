@@ -1,6 +1,11 @@
 class CartController < ApplicationController
     
     def create
+        prepare_create
+        redirect_to "/users/" + current_user.id.to_s + "/metapackages/2"
+    end
+
+    def prepare_create
         if not editing_metapackage?
             cart      = Cart.new
             cart.name = "Neues Bündel"
@@ -8,8 +13,34 @@ class CartController < ApplicationController
             
             session[:cart] = cart.id
         end
+    end
+
+    def new_from_list
+        prepare_create
+    end
+        
+    def create_from_list
+        if !params[:datei][:attachment].nil? then
+          cart    = Cart.find(session[:cart])
+          err = ""
+          params[:datei][:attachment].read.split("\n").each do |n|
+            package = BasePackage.find(:first, :conditions => ["name = ? and distribution_id = ? ",n,current_user.distribution_id])
+            if package.nil? then
+              err += n+" "
+            else  
+              content = CartContent.new
+              content.cart_id         = cart.id
+              content.base_package_id = package.id
+              content.save!          
+            end  
+          end
+        end
+        if !err.empty? then
+          flash[:notice] = "Folgende Pakete wurden nicht gefunden: "+err
+        end
         redirect_to "/users/" + current_user.id.to_s + "/metapackages/2"
     end
+
     
     def save
         if editing_metapackage?

@@ -1,0 +1,13 @@
+<h3>Bündel aus einer Paketliste erstellen</h3>
+
+Hier kannst du ein Bündel aus einer vorhandenen Paketliste erstellen. Die Liste der auf deinem Computer installierten Pakete kannst du mit
+<pre>
+dpkg --get-selections | awk '!/deinstall|purge|hold/ {print $1}' > packages.list 
+</pre>
+herausfinden.
+
+<%= form_tag({:controller => :cart, :id => :current_user.id, :action => :create_from_list}, :multipart => true)%>
+<p>Datei, die die Paketliste enthält, ausw&auml;hlen:</p>
+<p><%= file_field(:datei, :attachment) %></p>
+<p><%= submit_tag('Speichern') %></p>
+</form>
