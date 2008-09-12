@@ -1,5 +1,7 @@
 <div class="inner0">
+<% if !request.env['HTTP_REFERER'].nil? then %>
 <%= link_to "Zurück&nbsp;&nbsp;", request.env['HTTP_REFERER'] %>
+<% end %>
 <p>
   <b>Name:</b>
   <%=h @metapackage.name %>
