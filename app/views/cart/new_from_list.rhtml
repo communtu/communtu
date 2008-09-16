@@ -1,6 +1,10 @@
 <h3>Bündel aus einer Paketliste erstellen</h3>
 
-Hier kannst du ein Bündel aus einer vorhandenen Paketliste erstellen. Die Liste der auf deinem Computer installierten Pakete kannst du mit
+Hier kannst du ein Bündel aus einer vorhandenen Paketliste erstellen. 
+Die Liste muss in Form einter Textdatei vorliegen (plain text), 
+mit einem Paketnamen pro Zeile.<br>
+
+Die Liste der auf deinem Computer installierten Pakete kannst du zum Beispiel mit
 <pre>
 dpkg --get-selections | awk '!/deinstall|purge|hold/ {print $1}' > packages.list 
 </pre>
