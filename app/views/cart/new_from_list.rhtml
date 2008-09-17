@@ -13,5 +13,5 @@ herausfinden.
 <%= form_tag({:controller => :cart, :id => :current_user.id, :action => :create_from_list}, :multipart => true)%>
 <p>Datei, die die Paketliste enthält, ausw&auml;hlen:</p>
 <p><%= file_field(:datei, :attachment) %></p>
-<p><%= submit_tag('Speichern') %></p>
+<p><%= submit_tag('Erstellen') %></p>
 </form>
