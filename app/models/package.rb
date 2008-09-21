@@ -114,24 +114,30 @@ class Package < BasePackage
         parts[1] += "/"
       end
       url = parts[1] + "dists/" + parts[2] + "/" + parts[3] + "/binary-i386/Packages.gz"
+      return {:url => url}
+    else
+      return {:error => source+"<br> hat nicht das richtige Format"}
     end    
-    url
   end
   
   def self.import_source repository
     url  = get_url_from_source(repository.url + " " + repository.subtype)
-    packages = packages_to_hash url
+    if !url[:error].nil? then
+      return url
+    end
+    url = url[:url]
+    packages = packages_to_hash url 
     distribution_id = repository.distribution_id
     
-    if packages.nil? then
-      return nil
+    if !packages[:error].nil? then
+      return packages
     end
     
     info = { "package_count" => packages.size, "update_count" => 0, "new_count" => 0,\
       "failed" => [], "url" => url }
 
     # enter packages
-    packages.each do |key,package|
+    packages[:packages].each do |key,package|
  
       if not package["Description"].nil?
         package["Description"] = package["Description"].gsub(/ . /, "<br/>")
@@ -172,7 +178,7 @@ class Package < BasePackage
     end
 
     # enter dependency info
-    packages.each do |key,package|
+    packages[:packages].each do |key,package|
       p = Package.find(:first, :conditions => ["name=? AND version=? AND distribution_id=?",\
              key, package["Version"], distribution_id])
       if not p.nil?
@@ -198,12 +204,16 @@ class Package < BasePackage
 
 private
   def self.packages_to_hash url
-    file = open(url, 'User-Agent' => 'Ruby-Wget')
-    
-    packages = {}
-    reader   = Zlib::GzipReader.new(file)
+    if url.nil? then return {:error => "Konnte keine URL feststellen"} end
+    begin
+      file = open(url, 'User-Agent' => 'Ruby-Wget')
+    rescue
+      return {:error => "Konnte "+url+" nicht lesen"}
+    else 
+      packages = {}
+      reader   = Zlib::GzipReader.new(file)
 
-    while line = reader.readline do
+      while !reader.eof? && line = reader.readline do
         if not line.sub!(/^Package: /, "").nil?
             package = line.chomp
             packages.store package, {}
@@ -225,11 +235,11 @@ private
             end
             readpackage.call nil
         else
-           # error
+           return {:error => "Inhalt von "+url+" entspricht nicht Repository-Syntax:<br><code>"+line+"</code>"}
         end
+      end
+      return {:packages => packages}
     end
-    ensure
-        return packages 
   end
   
   def self.is_valid_option? option

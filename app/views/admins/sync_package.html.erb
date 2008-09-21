@@ -1,9 +1,10 @@
 <%= render_flash %>
 <%= link_to "Zurück", { :controller => :distributions, :action => :show,\
 	:id => @repository.distribution_id }%>
-<% if @info.nil? then%>
+<% if !@info[:error].nil? then%>
 <div class="inner0">
-	<span class="headline">Fehler: Repository konnte nicht synchronisiert werden</span>
+	<span class="headline">Fehler: Repository konnte nicht synchronisiert werden</span><br>
+	<%= @info[:error]%>
 </div>
 
 <% else %>
