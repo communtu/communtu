@@ -88,7 +88,7 @@ class SuggestionController < ApplicationController
     sources.each do |repository, url|
       if not repository.gpgkey.nil?
         if not repository.gpgkey.empty?
-          script += "wget -q " + repository.gpgkey + " -O- | gksudo apt-key add -\n"
+          script += "wget -q " + repository.gpgkey + " -O- | sudo apt-key add -\n"
         end
       end   
     end
