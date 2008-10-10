@@ -59,8 +59,7 @@ class SuggestionController < ApplicationController
     end
     script += "\"\n\n"
     
-    gen_package_sources sources, package_sources
-    
+    # generate question ot the user
     script += "IFS=\"*\"\n"
     script += "zenity --list --width 500 --height 300 --title \"Paketquellen hinzufügen\" " + 
         "--text \"Folgende Paketquellen werden hinzugefügt\" --column \"Quelle\" $SOURCES\n"
@@ -75,6 +74,7 @@ class SuggestionController < ApplicationController
     
     script += "if [ $? != 0 ]; then\n\texit 0\nfi\n\n"
     
+    # add sources to /etc/apt/sources.list
     script += "IFS=\"*\"\n"
     script += "for source in $SOURCES; do\n"
     script += "\tURL=$( echo $source | cut -d \" \" -f 2 )\n"
@@ -83,11 +83,22 @@ class SuggestionController < ApplicationController
     script += "\tif [ \"$?\" != \"0\" ]; then\n\t\tsudo sh -c \"echo $source >> $APTLIST\"\n"
     script += "\tfi\n"
     script += "done\n\n"
+
+    # add gpg keys
+    sources.each do |repository, url|
+      if not repository.gpgkey.nil?
+        if not repository.gpgkey.empty?
+          script += "wget " + repository.gpgkey + " | gksudo apt-key add -\n"
+        end
+      end   
+    end
+    script += "\n"
     
+    # install packages
     script += "IFS=\" \"\n"
-    script += "sudo apt-get update\n"
+    script += "sudo aptitude update\n"
     script += "for package in $PACKAGES; do\n"
-    script += "\tsudo apt-get install -y --force-yes $package\n"
+    script += "\tsudo aptitude install -y $package\n"
     script += "done\n"
     
     respond_to do |format|
@@ -121,8 +132,8 @@ class SuggestionController < ApplicationController
             out += "grep -q \"" + repository.url + ".*" + repository.subtype + "\" $APTLIST\n\n"
             out += "if [ \"$?\" != \"0\" ]; then\n" +
                 "\tsudo sh -c \"echo $SOURCE >> $APTLIST\"\n"
-            if not repository.gpgkey.nil?
-                out += "\twget " + repository.gpgkey + " | gksudo apt-key add -"
+            if not repository.gpgkey.nil? && (not repository.gpgkey.empty?)
+                out += "wget " + repository.gpgkey + " | gksudo apt-key add -\n"
             end
             out += "fi\n\n"
             package_sources << out
