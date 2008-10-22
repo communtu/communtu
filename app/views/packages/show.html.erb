@@ -28,7 +28,7 @@
 
 <p>
   <b>Weblinks:</b>
-  <%=auto_link @package.urls.gsub(/ /,'<br>'), link = :all%>
+  <%=auto_link @package.urls.gsub(/ /,'<br>'), link = :all, :target => '_blank' %>
 </p>
 <p>
 <% end %>
