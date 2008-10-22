@@ -65,7 +65,10 @@
 	<% @metapackage.metacontents.each do |p| %>
 	<% css = cycle("packageList0", "packageList1") %>
 		<tr>
-			<td class="<%= css %>"><%= link_to  p.package.name, { :controller => :packages, :action => :show,\
+			<% if p.package.class == Package then @contr = :packages \
+                                            else @contr = :metapackages \
+			           end %>	   
+			<td class="<%= css %>"><%= link_to  p.package.name, { :controller => @contr, :action => :show,\
 					:id => p.package.id } %></td>
 			<td class="<%= css %>" align="right">
 			<% if is_admin? %>
