@@ -3,6 +3,7 @@ class Metapackage < BasePackage
   has_many   :metacontents, :dependent => :destroy
   has_many   :comments, :dependent => :destroy
   has_many   :base_packages, :through => :metacontents
+#  has_many   :packages, :through => :metacontents, :source => :base_package, :foreign_key => :base_package_id 
   belongs_to :category
   belongs_to :distribution
   belongs_to :user

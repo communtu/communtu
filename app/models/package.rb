@@ -6,6 +6,8 @@ class Package < BasePackage
   include PackagesHelper
   belongs_to :distribution
   belongs_to :repository
+  has_many :metacontents, :foreign_key => :base_package_id
+  has_many :metapackages, :through => :metacontents
   has_many :dependencies, :foreign_key => :base_meta_package_id
   has_many :depends, :through => :dependencies, :source => :base_package, \
     :conditions => 'dependencies.dep_type = 0'    

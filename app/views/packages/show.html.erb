@@ -43,6 +43,18 @@
 <%= @package.depends_or_recommends.map{|p| p.name+" "}%>
 </p>
 <% end %>
+
+<% if !@package.metapackages.empty? then%>
+<p>
+<b>Wird bei Communtu in folgenden Bündeln benutzt:<br></b>
+<% @package.metapackages.each do |m| %>
+   <%= link_to  m.name, { :controller => :metapackages, :action => :show,\
+					:id => m.id } %>
+	&nbsp;&nbsp;				
+<% end %>
+</p>
+<% end %>
+
 </div>
 <%= link_to 'Bearbeiten', {:action => 'edit', :id => @package.id} %> &nbsp;&nbsp;
 <% if !@package.depends_or_recommends.empty? then%>
