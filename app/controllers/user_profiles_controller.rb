@@ -69,7 +69,7 @@ class UserProfilesController < ApplicationController
         update_rating(user,child,val,is_new)
       end 
     end
-end
+  end
   
   # update meta package selection to default given by sel
   def update_meta(uid,m,sel)
