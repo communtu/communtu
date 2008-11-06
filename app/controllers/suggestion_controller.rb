@@ -29,24 +29,27 @@ class SuggestionController < ApplicationController
     end
   end
 
+  def install_new
+    install_aux(current_user.selected_packages)
+  end
+  
   def install
+    packages = params[:post].map {|id,unused| Metapackage.find(id)}
+    install_aux(packages)
+  end
 
-    script          = "gksudo echo\n"
+  def install_aux(packages)
     package_names   = []
     package_install = ""
     sources         = {}
-    package_sources = ""
-   
+    package_sources = "" 
+    packages.each do |p|    
+        recursive_packages p, package_install, package_names, sources
+    end
+
+    script          = "gksudo echo\n"
     script += "#!/bin/bash\n\n"
     script += "APTLIST=\"/etc/apt/sources.list\"\n\n"
-        
-    packages = params[:post]
-    packages.each do |id,unused|
-    
-        package = Metapackage.find(id)
-        recursive_packages package, package_install, package_names, sources
-    end
-    
     script += "SOURCES=\""
     sources.each do |repo, url|
         script += repo.url + " " + repo.subtype + "*"

@@ -19,6 +19,16 @@ class User < ActiveRecord::Base
   has_many :temp_metapackages, :dependent => :destroy
   belongs_to :distribution
   belongs_to :language
+  has_many :user_packages 
+  has_many :selected_packages, :through => :user_packages, :source => :base_package, \
+      :conditions => "user_packages.is_selected = 't'"    
+  has_many :deselected_packages, :through => :user_packages, :source => :base_package, \
+      :conditions => "user_packages.is_selected = 'f'"    
+#  has_many :selected_metapackages, :through => :user_packages, :source => :base_package, \
+#      :conditions => 'user_packages.base_package.class == Metapackage AND user_packages.is_selected'    
+#  has_many :unselected_metapackages, :through => :user_packages, :source => :package_id, \
+#      :conditions => 'user_packages.base_package.class == Metapackage && not user_packages.is_selected'    
+
  
   before_save :encrypt_password
   before_create :make_activation_code

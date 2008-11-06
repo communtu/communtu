@@ -52,7 +52,7 @@ module SuggestionHelper
         out = "<div class='suggestion'>\n"
         
         if root.children.nil?
-            return out
+           return out + "</div>\n"
         end
         
         root.children.each do |child|

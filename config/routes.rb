@@ -16,10 +16,13 @@ ActionController::Routing::Routes.draw do |map|
   
   map.connect '/users/:distribution_id/suggestion', :controller => 'suggestion', :action => 'show'
   map.connect '/users/:id/suggestion/install', :controller => 'suggestion', :action => 'install'
+  map.connect '/users/:id/suggestion/install_new', :controller => 'suggestion', :action => 'install_new'
+  map.connect '/users/:id/suggestion/shownew', :controller => 'suggestion', :action => 'shownew'
   map.connect '/users/:user_id/metapackages/:id', :controller => 'users', :action => 'metapackages'
   map.connect '/users/:user_id/user_profile/tabs/:id', :controller => 'user_profiles', :action => 'edit'
   map.connect '/users/:user_id/user_profile/update_data', :controller => 'user_profiles', :action => 'update_data'
   map.connect '/users/:user_id/user_profile/update_rating', :controller => 'user_profiles', :action => 'update_rating'
+  map.connect '/users/:user_id/user_profile/update_ratings', :controller => 'user_profiles', :action => 'update_ratings'
 
   map.connect '/users/:id/cart/:action/:id', :controller => 'cart'
   

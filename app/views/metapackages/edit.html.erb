@@ -2,6 +2,7 @@
 
     <span class="headline">Bündel-Informationen anpassen</span>
     <br/>
+	<% if @metapackage.rating<=1 then @metapackage.rating = 1 else @metapackage.rating = 0 end%>
     <% form_for(@metapackage, :url => distribution_path(@metapackage.distribution) + "/metapackages/" + @metapackage.id.to_s ) do |f| %>
         <table>
         <tr>
@@ -16,8 +17,8 @@
 	        <td><%= f.text_field(:name, { :size => 16}) %></td>	
         </tr>
         <tr>
-	        <td>Expertenlevel:</td>
-	        <td><%= f.select(:rating, 1..5) %></td>	
+	        <td>Standardmäßig installieren:</td>
+	        <td><%= f.check_box(:rating) %></td>	
         </tr>
         <tr>
 	        <td valign='top'>Beschreibung:</td>

@@ -4,7 +4,7 @@
   <tr>
     <th valign="middle" class="packageList" align="left">Name</th>
     <th valign="middle" class="packageList" align="left">Kategorie</th>
-    <th valign="middle" class="packageList" align="left">Level</th>
+    <th valign="middle" class="packageList" align="left">Standard</th>
     <th valign="middle" class="packageList" align="left">Distribution</th>
     <th valign="middle" class="packageList" align="left">Veröffentlicht</th>
     <th valign="middle" class="packageList" align="left"></th>
@@ -20,7 +20,7 @@
         <td class="<%= css %>" valign="middle">
 		    <%=h metapackage.category.name %></td>
         <td class="<%= css %>" valign="middle">
-		    <%=h Metapackage.levels[metapackage.rating] %></td>
+		    <%=metapackage.rating <= 1 ?  "ja" : "nein" %></td>
         <td class="<%= css %>" valign="middle">
 		    <%=h metapackage.distribution.name %></td>
 	    <td class="<%= css %>" valign="middle" align="middle">

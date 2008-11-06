@@ -18,8 +18,8 @@
 </p>
 
 <p>
-  <b>Expertenlevel:</b>
-  <%=h @metapackage.rating %>
+  <b>Standardmäßig installieren:</b>
+  <%=@metapackage.rating<=1 ? "ja" : "nein" %>
 </p>
 <p>
   <b>Lizenzetyp:</b>

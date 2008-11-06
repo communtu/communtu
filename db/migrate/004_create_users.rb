@@ -13,8 +13,8 @@ class CreateUsers < ActiveRecord::Migration
       t.column :activated_at, :datetime
       t.column :password_reset_code, :string, :limit => 40
       t.column :enabled, :boolean, :default => true      
-      t.integer :license, :default => 0
-      t.integer :security, :default => 0
+      t.integer :license, :default => 1
+      t.integer :security, :default => 2
       t.integer :distribution_id
       t.integer :language_id, :default => 1
       t.integer :first_login, :default => 1

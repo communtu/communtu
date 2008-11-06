@@ -10,58 +10,92 @@ class UserProfilesController < ApplicationController
   def edit
   end
   
+  # update the basic data of the user's software selection
   def update_data 
     user = current_user
+    is_new = user.first_login != 0
+    user.first_login = 0
+    
+    # get the list of categories selected via checkboxes
+    if params[:categories].nil? then
+      cats = []
+    else
+      cats = params[:categories].map {|s| s.to_i}
+    end
+    # update the data for all the main categories
+    Category.find(1).children.each do |child|
+      # we now use 1 for selected, in the future, this can be a boolean
+      if cats.include? child.id then val = 1 else val = 0 end
+      update_rating(user,child,val,is_new)
+    end
+
+    # update other user data
     user.security = params[:sec]
     user.license  = params[:lic]
-    # if template user has changed, update rating data
-    if user.template_id.to_s != params[:template].to_s then
-      # copy rating from template user
-      UserProfile.find(:all, :conditions => ["user_id= ?", params[:template]]).each do |p|
-        pold = UserProfile.find(:first,:conditions => ["category_id= ? and user_id= ?",p.category_id,user.id])
-        if pold.nil? then
-          UserProfile.create(:user_id => user.id, :category_id => p.category_id, :rating => p.rating)
-        else
-          pold.rating = p.rating
-          pold.save
-        end  
-      end
-    end
-    user.template_id = params[:template]
     user.distribution_id = params[:distribution]
     user.save!
     
-    if current_user.first_login
+    if !params[:choose].nil?
         redirect_to user_user_profile_path(current_user) + "/tabs/1"
     else
-        redirect_to user_user_profile_path(current_user) + "/tabs/0"
+        redirect_to user_user_profile_path(current_user) + "/tabs/2"
     end
   end
   
-  def update_rating
+  # update the rating for a category and all its children
+  def update_rating(user,cat,val,is_new)
+    uid = user.id
+    cid = cat.id
+    up = UserProfile.find(:first, :conditions => ["user_id = ? and category_id = ?",uid,cid])
+    if up.nil? then 
+      up = UserProfile.create(:user_id => uid, :category_id => cid, :rating => val)
+      # no profile yet - we are in a new situation
+      is_new = true  
+    else
+      # if rating has changed, it is new...
+      if up.rating != val then is_new = true end
+      up.rating = val
+      up.save
+    end
+    if is_new then
+      # if rating is new, then re-compute metapackage selection
+      metas = Metapackage.find(:all, :conditions => ["category_id = ? and distribution_id = ? and license_type <= ?", \
+               cid, user.distribution.id, user.license])
+      metas.each do |m|
+        update_meta(uid,m,m.rating <= up.rating)
+      end
+      # also recursively update all the children
+      cat.children.each do |child|
+        update_rating(user,child,val,is_new)
+      end 
+    end
+end
+  
+  # update meta package selection to default given by sel
+  def update_meta(uid,m,sel)
+    upk = UserPackage.find(:first, :conditions => ["user_id = ? and package_id = ?",uid,m.id])
+    if upk.nil? then
+      UserPackage.create(:user_id => uid,:package_id => m.id, :is_selected => sel)
+    else
+      upk.is_selected = sel
+      upk.save
+    end  
+  end
+  
+  def update_ratings
 
-    was_first = current_user.first_login
-      
     current_user.first_login = 0
     current_user.save!
-  
-    params[:post].each do |key, value|
-      profile = UserProfile.find(:first, :conditions => ["category_id= ? and user_id= ?", key.to_s, current_user.id])
-      if not profile.nil?
-        profile.update_attributes({:rating => value})
-      else
-        profile = UserProfile.new
-        profile.rating = value
-        profile.category_id = key
-        profile.user_id = params[:user_id]
-        profile.save!
-      end
+    uid = current_user.id
+    #replace old list of packages...
+    current_user.user_packages.each do |up|
+      up.destroy
     end
-    if was_first == 1
-        redirect_to "/home"
-    else
-        redirect_to user_user_profile_path(current_user) + "/tabs/1"
-    end    
+    #... with new one from the form
+    params[:post].each do |key, value|
+      UserPackage.create(:user_id => uid, :package_id => key, :is_selected => true)
+    end
+    redirect_to user_user_profile_path(current_user) + "/tabs/1"
   end
-  
+
 end

@@ -8,20 +8,27 @@ class UserProfileTabz < Tabz::Base
         titled "Grunddaten"
         looks_like "user_profiles/profile_data"
         with_data do
-            set_to({ :distributions => Distribution.find(:all) })
+            map = {}
+            @user_data.user_profiles.each do |profile|
+                map.store(profile.category_id, profile.rating!=0)
+            end
+            set_to({ :distributions => Distribution.find(:all), :root => Category.find(1), :ratings => map })
         end
     end
     
     add_tab do
-        titled "Profilbewertung"
+        titled "Detailauswahl"
         looks_like "user_profiles/profile_rating"
         with_data do
-        
-            map = {}
-            @user_data.user_profiles.each do |profile|
-                map.store(profile.category_id, profile.rating)
-            end
-            set_to({ :root => Category.find(1), :ratings => map })
+            set_to({ :root => Category.find(1), :selection => @user_data.selected_packages, :distribution => @user_data.distribution })
+        end
+    end
+
+    add_tab do
+        titled "Installation durchführen"
+        looks_like "user_profiles/installation"
+        with_data do
+          
         end
     end
 

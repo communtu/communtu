@@ -1,54 +1,64 @@
 module UserProfilesHelper
   
-  def node_is_leaf? node
-    node.children.nil? or node.children.length == 0
-  end
-  
-  def profile_radio_tag node, rating, value
-    out = "<input type='radio' id='post' name='post[" + node.id.to_s + "]' value='" + value.to_s + "'"
-    if (value == 0 and (rating.nil? or rating == value))
-      out += " checked='checked' />"
-    elsif (not rating.nil? and rating == value) 
-      out += " checked='checked' />"
-    else
-      out += ">"
+# copied from suggestion_helper and then modified
+
+    def selected? category, selection
+        return selection.key? category
     end
-    return out
-  end
-  
-  def profile_table_column node, rating, value, css
-    out  = "<td class='" + css + "' align='center' >"
-    #if node_is_leaf? node then
-    out += profile_radio_tag node, rating, value 
-    #end
-    out += "</td>\n"
-  end
-    
-  def profile_rows node, map, depth
-    out    = ""
-    node.children.each do |child|
-      rating = map[child.id]
-      out += "<tr>\n"
-      out += "<td class='profileExpandCol'></td>"
-      out += "<td class='profileNameCol" + depth.to_s + "' width='400'><b>" + child.name + "</b></td>\n"
-      5.times do |n|
-        css  = (if n == 4 then "profileRatingColRight" else "profileRatingCol" end)
-        out += profile_table_column child, rating, n, css
-      end
-      out += "</tr>\n"
-      if not child.children.nil?
-        out += profile_rows child, map, (depth + 1)
-      end
+
+    def show_packages packages, selection
+        out = ""
+        packages.each do |package|
+            selected = selection.include? package
+            out += "<div id='selected' class='suggestionPackage'>\n"
+                out += "<ul class='suggestionPackage'>"
+                out += "<li class='suggestionPackage'> " + check_box_tag("post[" + package.id.to_s + "]", 1, selected) + "</li>\n"
+                out += "<li class='suggestionPackage'>" + link_to(package.name,metapackage_url(:id => package.id)) + "</li>\n"
+                out += "</ul>"
+            out += "</div>\n"
+            out += "<div id='unselected' class='suggestionDescription'>"
+                out += package.description
+            out += "</div>"
+        end
+        return out
     end
-    return out
-  end   
-  
-  def edit_profile_table root, map
-    level_string = (Metapackage.levels.map {|l| "<th>"+l+"&nbsp;</th>"}).join
-    table  = "<table class='profileTable' cellspacing='0'>\n"
-    table += "<tr><th></th><th></th>"+level_string+"</tr>"
-    table += profile_rows root, map, 0
-    table += "</table>\n"
-  end
+
+    def show_selection_subtree root, selection, depth
+        
+        out = "<div class='suggestionHeader'><ul class='suggestionHeader'>\n"
+            out += "<li class='suggestionCollapse'><img src='/images/add.png' width='10' height='10' onclick=\"['packages" + \
+                root.name + "'].each(Element.toggle)\"></li>\n"
+            out += "<li class='suggestionHeader'><b>" + root.name + "</b></li>\n"
+        out += "</ul></div>\n"
+        
+        out += "<div class='suggestionPackages' id='packages" + root.name + "'>\n"
+
+        out += show_packages root.metapackages.select { |meta| meta.distribution == @distribution }, selection
+        
+        root.children.each do |child|
+            out += show_selection_subtree child, selection, (depth + 1)
+        end
+        
+        out += "</div>\n"
+        
+        return out
+    end
+
+    def show_suggestion root, selection
+        
+        out = "<div class='suggestion'>\n"
+        
+        if root.children.nil?
+           return out + "</div>\n"
+        end
+        
+        root.children.each do |child|
+            if not child.metapackages.nil? and not child.metapackages.empty?
+                out += show_selection_subtree child, selection, 0
+            end
+        end
+   
+        return out + "</div>\n"
+    end
   
 end

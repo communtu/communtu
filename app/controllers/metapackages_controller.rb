@@ -46,6 +46,11 @@ class MetapackagesController < ApplicationController
   # POST /metapackages
   # POST /metapackages.xml
   def create
+    # for historical reesons, for rating, we use 1=true and 2=false
+    if params[:metapackage][:rating]=="0"
+      then 
+      params[:metapackage][:rating]=2
+    end
     @metapackage = Metapackage.new(params[:metapackage])
 
     respond_to do |format|
@@ -63,7 +68,11 @@ class MetapackagesController < ApplicationController
   # PUT /metapackages/1.xml
   def update
     @metapackage = Metapackage.find(params[:id])
-    
+    # for historical reesons, for rating, we use 1=true and 2=false
+    if params[:metapackage][:rating]=="0"
+      then 
+      params[:metapackage][:rating]=2
+    end
     respond_to do |format|
       if @metapackage.update_attributes(params[:metapackage])
         format.html { redirect_to :action => :show, :id => @metapackage.id, :distribution_id => @metapackage.distribution.id }
