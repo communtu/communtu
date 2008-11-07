@@ -39,13 +39,9 @@ class SuggestionController < ApplicationController
   end
 
   def install_aux(packages)
-    package_names   = []
     package_install = ""
     sources         = {}
     package_sources = "" 
-    packages.each do |p|    
-        recursive_packages p, package_install, package_names, sources
-    end
 
     script          = "gksudo echo\n"
     script += "#!/bin/bash\n\n"
@@ -56,11 +52,19 @@ class SuggestionController < ApplicationController
     end
     script += "\"\n\n"
     
-    script += "PACKAGES=\""
-    package_names.each do |name|
-        script += name + " "
-    end
+    # generate list of packages, grouped by main bundles
+    script += "PACKAGES=\"\"\n"
+    packages.each do |p|    
+        package_names   = []
+        recursive_packages p, package_install, package_names, sources
+        script += "# Bündel: "+p.name+"\n"
+        script += "PACKAGES=$PACKAGES\""
+        package_names.each do |name|
+          script += name + " "
+        end
     script += "\"\n\n"
+    end    
+    script += "\n\n"
     
     # generate question ot the user
     script += "IFS=\"*\"\n"

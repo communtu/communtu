@@ -40,7 +40,10 @@
 <% if !@package.depends_or_recommends.empty? then%>
 <p>
 <b>Beinhaltet folgende Pakete:</b>
-<%= @package.depends_or_recommends.map{|p| p.name+" "}%>
+<% @package.depends_or_recommends.each do |p| %>
+  <%= link_to p.name, {:controller => 'packages', :action => 'show', :id => p.id}%>
+  &nbsp;
+<% end %>
 </p>
 <% end %>
 
