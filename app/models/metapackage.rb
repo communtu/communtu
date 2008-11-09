@@ -37,7 +37,7 @@ class Metapackage < BasePackage
   # icon for bundles
   def self.icon(size)
     s = size.to_s
-    return '<img border="0" height="'+s+'" width="'+s+'" src="/images/Metapackage.png"/>'
+    return '<img border="0" height="'+s+'" width="'+s+'" src="/images/apps/Metapackage.png"/>'
   
   end
   
