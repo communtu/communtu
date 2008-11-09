@@ -1,7 +1,7 @@
 module SuggestionHelper
 
     def selected? category, selection
-        return selection.key? category
+        return selection.key?(category)
     end
 
     def show_packages packages, selected

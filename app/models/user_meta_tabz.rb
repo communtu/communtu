@@ -26,7 +26,8 @@ class UserMetaTabz < Tabz::Base
         titled "Distributionspakete"
         looks_like "packages/packagelist"
         with_data do
-            set_to({ :packages => Package.find_packages(@user_data[:session][:search], @user_data[:session][:group],
+            set_to({ :packages => Package.find_packages(@user_data[:session][:search], 
+                        @user_data[:session][:group], @user_data[:session][:programs],
                         @user_data[:params][:page], @user_data[:user].distribution),
                      :distribution => @user_data[:user].distribution,
                      :groups => Package.find(:all, :select => "DISTINCT section", :order => "section") })

@@ -34,6 +34,13 @@ class Metapackage < BasePackage
     migrate_intern(distribution, current_user, failed, doubles, ignore)
   end
   
+  # icon for bundles
+  def self.icon(size)
+    s = size.to_s
+    return '<img border="0" height="'+s+'" width="'+s+'" src="/images/Metapackage.png"/>'
+  
+  end
+  
   protected
   
   def migrate_intern(distribution, current_user, failed, doubles, ignore)

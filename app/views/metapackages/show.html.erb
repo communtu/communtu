@@ -62,13 +62,15 @@
 
 <div class="inner1">
 <table width="100%" cellspacing="0">
-	<% @metapackage.metacontents.each do |p| %>
+	<% mc = @metapackage.metacontents.sort_by {|mc| [mc.package.ptype, mc.package.name] }%>
+	<% mc.each do |p| %>
 	<% css = cycle("packageList0", "packageList1") %>
 		<tr>
-			<% if p.package.class == Package then @contr = :packages \
-                                            else @contr = :metapackages \
+			<% if p.package.class == Package \
+                  then @contr = :packages; @icon = p.package.icon(20) \
+                  else @contr = :metapackages; @icon = Metapackage.icon(20) \
 			           end %>	   
-			<td class="<%= css %>"><%= link_to  p.package.name, { :controller => @contr, :action => :show,\
+			<td class="<%= css %>"><%= @icon %>&nbsp;<%= link_to  p.package.name, { :controller => @contr, :action => :show,\
 					:id => p.package.id } %></td>
 			<td class="<%= css %>" align="right">
 			<% if is_admin? %>

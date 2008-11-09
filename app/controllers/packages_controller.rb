@@ -2,9 +2,9 @@ class PackagesController < ApplicationController
   
   # GET /Packages
   # GET /Packages.xml
-  def index           
+  def index         
     @distribution = Distribution.find(params[:distribution_id])
-    @packages     = Package.find_packages(session[:search], session[:group], params[:page], @distribution)
+    @packages     = Package.find_packages(session[:search], session[:group], session[:programs], params[:page], @distribution)
     @groups       = Package.find(:all, :select => "DISTINCT section", :order => "section")
     
     respond_to do |format|
@@ -13,8 +13,10 @@ class PackagesController < ApplicationController
     end
   end
   
-  def section
-    session[:search] = nil
+  def search
+    session[:search] = params[:search]
+    session[:programs] = params[:programs]
+    if session[:programs].nil? then session[:programs] = false end
     group = params[:group]
     if group.nil? or group == "all"
       session[:group] = "all"
@@ -24,12 +26,6 @@ class PackagesController < ApplicationController
     redirect_to distribution_path(Distribution.find(params[:id])) + "/packages"
   end
   
-  def search
-    session[:search] = params[:search]
-    session[:group] = "all"
-    redirect_to distribution_path(Distribution.find(params[:id])) + "/packages"
-  end
-
   # GET /Packages/1
   # GET /Packages/1.xml
   def show

@@ -9,13 +9,21 @@
     <b>Name</b><br />
     <%= f.text_field :name %>
   </p>
+<p>
+  <b>Ist ein Programm:</b>
+  <%= f.check_box :is_program %>
+</p>
   <p>
     <b>Version</b><br />
     <%= f.text_field :version %>
   </p>
   <p>
     <b>Weblinks</b><br />
-    <%= f.text_area :urls, :rows =>3 %>
+    <%= f.text_area :urls, :rows =>3, :cols => 80 %>
+  </p>
+  <p>
+  <b>Beschreibung</b><br />
+  <%= f.text_area :description, :cols => 80 %>
   </p>
   <p>
     <%= f.submit "Speichern" %>

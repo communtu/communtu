@@ -1,5 +1,6 @@
 require 'open-uri'
 require 'zlib'
+require 'find'
 
 class Package < BasePackage
 
@@ -78,8 +79,7 @@ class Package < BasePackage
     end
     return mis
   end
-  
-  
+    
   def self.license_types
     license_types = [ "OpenSource", "Commercial" ]
   end
@@ -88,24 +88,28 @@ class Package < BasePackage
     security_types  = [ "Native", "Trusted", "Third-Party" ]
   end
  
-  def self.find_packages(search, group, page, distribution)
+  def self.find_packages(search, group, only_programs, page, distribution)
   
     if distribution.nil?
         return []
     end
-  
+    cond_str =  "distribution_id = ?"
+    cond_vals = [distribution.id]
     if not search.nil?
-          packages = Package.find(:all, :page => {:size => 10, :current => page},
-            :conditions => ["distribution_id = ? AND name like ?", distribution.id, "%" + search + "%"], :order => "name")
-    else
-        if group.nil? or group == "all"
-          packages = Package.find(:all, :page => {:size => 10, :current => page},
-            :conditions => ["distribution_id = ?", distribution.id], :order => "name")
-        else
-          packages = Package.find(:all, :page => {:size => 10, :current => page},
-            :conditions => ["distribution_id = ? and section = ?", distribution.id, group], :order => "name")
-        end
+        cond_str += " and name like ?"
+        cond_vals << "%" + search + "%"
+    end    
+    if !(group.nil? or group == "all") 
+        cond_str += " and section = ?"
+        cond_vals << group
     end
+    if only_programs then
+        cond_str += " and is_program = ?"
+        cond_vals << 't'
+    end
+    Package.find(:all, :page => {:size => 10, :current => page}, \
+                       :conditions => ([cond_str]+cond_vals), \
+                       :order => "name")
   end
   
   def self.get_url_from_source source
@@ -198,12 +202,103 @@ class Package < BasePackage
     if s.nil? then
       return []
     else
-      s.split(",").map{|s1| s1.split (" (").first.lstrip}.map{ |name|
+      s.split(",").map{|s1| s1.split(" (").first.lstrip}.map{ |name|
         Package.find(:first, :conditions => ["name=? AND distribution_id=?",\
                name, distribution]) }.compact
     end
   end
 
+  
+  # display an image in a given size
+  def self.show_image(url,size)
+      s = size.to_s
+      return '<img border="0" height="'+s+'" src="'+url+'"/>'
+  end
+  
+  # display icon for a package, if existing
+  def icon(size)
+    if !self.icon_file.nil? then
+      # show icon
+      Package.show_image("/images/apps/"+self.icon_file,size)
+    elsif self.is_program then
+      # program without icon, show a generic icon
+      Package.show_image("/images/apps/gnome-other.png",size)
+    else  
+      # no program, no icon, show nothing
+      return ""
+    end
+  end
+
+  # read in all .desktop files and get locations of icons
+  def self.read_icons
+    folder = "/usr/share/app-install/desktop"
+    # recursively look through all files
+    Find.find(folder) do |path|   
+       if FileTest.file?(path) then
+         local_path = path[folder.length+1, 500]
+#         print  "Reading "+local_path+"\n"
+         pname = nil
+         iname = nil
+         File.open(path,'r') do |f|
+           until f.eof? do
+             s = f.gets
+             if !(p=find_word("X-AppInstall-Package=",s)).nil? then
+               pname = p.chomp # record package name, delete trailing \n
+             end
+             if !(i=find_word("Icon=",s)).nil? then
+               iname = i.chomp # record icon file
+             end
+           end
+         end
+         if !(pname.nil? || iname.nil?) then
+           if iname.index(".").nil? then
+             iname+=".png"
+           end
+           found = true
+           path = File.dirname(__FILE__) + "/../../public/images/apps/"
+           if !FileTest.file?(path+iname) then 
+             if FileTest.file?(path+iname+".png") then iname +=".png"
+             else iname = chop_extension(iname)
+               if FileTest.file?(path+iname+".png") then iname +=".png"
+               elsif FileTest.file?(path+iname+".gif") then iname +=".gif"
+               elsif FileTest.file?(path+iname+".svg") then iname +=".svg"
+               else found = false
+               end  
+             end
+           end
+           if !found then
+             print "#{iname} not found\n"              
+           end
+#           print "Found package #{pname} with icon #{iname}\n" 
+           # add icon file for all packages of this name
+           Package.find(:all,:conditions => ["name = ?",pname]).each do |p|
+#               print "Added to package #{p.id}\n"
+              if found then p.icon_file = iname 
+              else 
+                p.icon_file = nil                 
+                print "#{iname} not found\n" 
+              end
+              p.is_program = true
+              p.save
+           end
+         end
+       end
+    end    
+  end
+
+  def self.chop_extension(fname)
+    parts = fname.split(".")
+    return parts[0,parts.length-1].join(".")
+  end
+  
+  def self.find_word(w,s)
+    if s[0,w.length]==w then
+      return s[w.length,s.length-w.length]
+    else
+      return nil
+    end
+  end
+  
 private
   def self.packages_to_hash url
     if url.nil? then return {:error => "Konnte keine URL feststellen"} end
