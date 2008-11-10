@@ -87,14 +87,14 @@ class PackagesController < ApplicationController
     if !params[:package][:icon_file].nil? && (params[:package][:icon_file].size > 0) then
        # file name without full path
        icon_file = params[:package][:icon_file].original_filename.split("/")[-1]
-       complete_path = RAILS_ROOT + '/public/images/apps/' + icon_file
+       path = RAILS_ROOT + '/public/images/apps/'
        # avoid duplicate file names
-       while FileTest.file?(complete_path + '/' + icon_file)
+       while FileTest.file?(path + icon_file)
          icon_file = "x"+icon_file
        end
        # save image file
        begin
-         f = File.open(complete_path + '/' + icon_file, 'wb')
+         f = File.open(path + icon_file, 'wb')
          # upload file to web server
          f.write(params[:package][:icon_file].read)
          params[:package][:icon_file] = icon_file
