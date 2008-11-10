@@ -239,6 +239,7 @@ class Package < BasePackage
 #         print  "Reading "+local_path+"\n"
          pname = nil
          iname = nil
+         popcon = nil
          File.open(path,'r') do |f|
            until f.eof? do
              s = f.gets
@@ -248,6 +249,9 @@ class Package < BasePackage
              if !(i=find_word("Icon=",s)).nil? then
                iname = i.chomp # record icon file
              end
+             if !(pop=find_word("X-AppInstall-Popcon=",s)).nil? then
+               popcon = pop.chomp # record popularity contest
+             end             
            end
          end
          if !(pname.nil? || iname.nil?) then
@@ -279,6 +283,7 @@ class Package < BasePackage
                 print "#{iname} not found\n" 
               end
               p.is_program = true
+              if !popcon.nil? then p.popcon = popcon.to_i end
               p.save
            end
          end
