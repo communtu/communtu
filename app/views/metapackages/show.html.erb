@@ -67,8 +67,8 @@
 	<% css = cycle("packageList0", "packageList1") %>
 		<tr>
 			<% if p.package.class == Package \
-                  then @contr = :packages; @icon = p.package.icon(20) \
-                  else @contr = :metapackages; @icon = Metapackage.icon(20) \
+                  then @contr = :packages; @icon = p.package.icon(30) \
+                  else @contr = :metapackages; @icon = Metapackage.icon(30) \
 			           end %>	   
 			<td class="<%= css %>"><%= @icon %>&nbsp;<%= link_to  p.package.name, { :controller => @contr, :action => :show,\
 					:id => p.package.id } %></td>

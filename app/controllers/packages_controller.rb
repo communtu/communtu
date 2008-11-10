@@ -84,6 +84,27 @@ class PackagesController < ApplicationController
   # PUT /Packages/1.xml
   def update
     @package = Package.find(params[:id])
+    if !params[:package][:icon_file].nil? && (params[:package][:icon_file].size > 0) then
+       # file name without full path
+       icon_file = params[:package][:icon_file].original_filename.split("/")[-1]
+       complete_path = RAILS_ROOT + '/public/images/apps/' + icon_file
+       # avoid duplicate file names
+       while FileTest.file?(complete_path + '/' + icon_file)
+         icon_file = "x"+icon_file
+       end
+       # save image file
+       begin
+         f = File.open(complete_path + '/' + icon_file, 'wb')
+         # upload file to web server
+         f.write(params[:package][:icon_file].read)
+         params[:package][:icon_file] = icon_file
+       rescue
+          # failed to sav? then ignore it
+          params[:package].delete(:icon_file)
+       ensure
+         f.close unless f.nil?
+       end  
+    end   
     respond_to do |format|
       if @package.update_attributes(params[:package])
         flash[:notice] = 'Paket aktualisiert.'

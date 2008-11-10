@@ -38,6 +38,15 @@
 <p>
 <% end %>
 
+<% if not @package.videos.nil? then %>
+
+<p>
+  <b>Videos:</b>
+  <%=auto_link @package.videos.gsub(/ /,'<br>'), link = :all, :target => '_blank' %>
+</p>
+<p>
+<% end %>
+
   <b>Beschreibung:</b>
   <%= @package.description %>
 </p>

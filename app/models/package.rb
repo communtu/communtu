@@ -255,7 +255,7 @@ class Package < BasePackage
              iname+=".png"
            end
            found = true
-           path = File.dirname(__FILE__) + "/../../public/images/apps/"
+           path = RAILS_ROOT + "/public/images/apps/"
            if !FileTest.file?(path+iname) then 
              if FileTest.file?(path+iname+".png") then iname +=".png"
              else iname = chop_extension(iname)
