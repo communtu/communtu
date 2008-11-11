@@ -9,8 +9,14 @@ class UserProfileTabz < Tabz::Base
         looks_like "user_profiles/profile_data"
         with_data do
             map = {}
-            @user_data.user_profiles.each do |profile|
+            if @user_data != :false then
+              @user_data.user_profiles.each do |profile|
                 map.store(profile.category_id, profile.rating!=0)
+            end
+            else
+              UserProfile.find(:all).each do |profile|
+                map.store(profile.category_id, false)
+              end
             end
             set_to({ :distributions => Distribution.find(:all), :root => Category.find(1), :ratings => map })
         end

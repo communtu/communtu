@@ -37,14 +37,12 @@ Rails::Initializer.run do |config|
   # Make sure the secret is at least 30 characters and all random, 
   # no regular words or you'll be exposed to dictionary attacks.
   config.action_controller.session = {
-    :session_key => '_communtu_session',
-    :secret      => '367e4806af33b2cd7ddc839f908a7ed6844a3b369ce46724a3c419a633c1c68d612692d3f441ba2b31158e167c4bb5c81a5be173e83a2d6a7f7043111be4fdfc'
+    :session_key     => '_communtu_session',
+    :secret          => '367e4806af33b2cd7ddc839f908a7ed6844a3b369ce46724a3c419a633c1c68d612692d3f441ba2b31158e167c4bb5c81a5be173e83a2d6a7f7043111be4fdfc'
   }
 
-  # Use the database for sessions instead of the cookie-based default,
-  # which shouldn't be used to store highly confidential information
-  # (create the session table with 'rake db:sessions:create')
-  # config.action_controller.session_store = :active_record_store
+  # use file system for session storing
+  # config.action_controller.session_store = :p_store
 
   # Use SQL instead of Active Record's schema dumper when creating the test database.
   # This is necessary if your schema can't be completely dumped by the schema dumper,

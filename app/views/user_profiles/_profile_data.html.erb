@@ -25,13 +25,15 @@ Wenn gewünscht, ist aber auch eine detailliertere Auswahl möglich. Achtung: zu
         
         <% distrib_options = "" %>
         <% distributions.each do |distribution| %>
-            <% distrib_options << "<option value='" + distribution.id.to_s + "'" + (current_user.distribution_id==distribution.id ? "selected='selected'" : '') + ">" + distribution.name + "</option>" %>
+            <% distrib_options << "<option value='" + distribution.id.to_s + "'" + 
+                                  ((logged_in? and current_user.distribution_id==distribution.id) ? "selected='selected'" : "") + ">" + 
+                                  distribution.name + "</option>" %>
         <% end %>
         
         <%= select_tag("distribution", distrib_options) %>
         
-    	<% options = Array.new (Package.security_types.length, false)%>
-		<% options[current_user.security] = true%>
+    	<% options = Array.new (Package.security_types.length, false) %>
+		<% options[logged_in? ? current_user.security : 0] = true %>
 		</li>
 		
      <li><p>Hier kannst du einstellen, wie sicher bzw. komfortabel deine Installationsquellen sein sollen</p>
@@ -42,14 +44,19 @@ Wenn gewünscht, ist aber auch eine detailliertere Auswahl möglich. Achtung: zu
          </li>
     <li><div style="margin-bottom:30px">
     	<% options = Array.new (Package.license_types.length, false) %>
-		<% options[current_user.license] = true %>
+		<% options[logged_in? ? current_user.license : 0] = true %>
         <p>Hier kannst du auswählen, welche Lizenzen du zulassen willst</p>
         <%= radio_button_tag "lic", "0", options[0] %> Freie Software (Quellen liegen offen und dürfen weiterentwickelt werden)<br>
         <%= radio_button_tag "lic", "1", options[1] %> Unfreie Lizenzen zulassen (auch kostenlos, aber Quellen liegen nicht offen - sozusagen das Methadon für einen weichen Übergang zu Linux)<br>
         </div></li>
 	</ol>
     <div style="margin-top:20px;">
+      <% if logged_in? %>
         <%= submit_tag "Speichern", :name => "install" %>
         <%= submit_tag "Speichern und feiner auswählen", :name => "choose" %>
+      <% else  %>
+        <%= submit_tag "Übernehmen", :name => "install" %>
+        <%= submit_tag "Übernehmen und verfeinern", :name => "choose" %>
+      <% end  %>
     </div>
 <% end %>

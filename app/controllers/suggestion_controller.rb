@@ -30,7 +30,22 @@ class SuggestionController < ApplicationController
   end
 
   def install_new
-    install_aux(current_user.selected_packages)
+    if logged_in? then
+      # package list has already been created for logged in user
+      install_aux(current_user.selected_packages)
+    else
+      # for anonymous installations, we have to build the package list now
+      distribution = session[:distribution]
+      security = session[:security]
+      license = session[:license]
+      packages = []
+      session[:profile].each do |category, value|
+        metas = Metapackage.find(:all, :conditions => ["category_id = ? and distribution_id = ? and license_type <= ?", \
+                                                       category, distribution, license])
+        packages += metas
+      end
+      install_aux(packages)
+    end
   end
 
   def quick_install

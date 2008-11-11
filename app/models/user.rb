@@ -32,7 +32,6 @@ class User < ActiveRecord::Base
  
   before_save :encrypt_password
   before_create :make_activation_code
-
   
   def self.template_users
     template_role = Role.find(:first, :conditions => ["rolename = ?",'template'])
