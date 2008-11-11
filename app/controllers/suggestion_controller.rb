@@ -32,7 +32,11 @@ class SuggestionController < ApplicationController
   def install_new
     install_aux(current_user.selected_packages)
   end
-  
+
+  def quick_install
+    install_aux(params[:mid])
+  end
+
   def install
     packages = params[:post].map {|id,unused| Metapackage.find(id)}
     install_aux(packages)

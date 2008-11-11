@@ -30,6 +30,9 @@
 	            <%= image_tag("no.png", :size => "22x22", :border => "0") %>
 	        <% end %>
 	    </td>
+		<td>
+			<%= link_to image_tag("/images/install.png", :size => "22x22"), :url => user_path(current_user) + "/suggestions/quick_install/" + metapackage.id.to_s%>		
+		</td>	
         <% if logged_in? %>
         <td class="<%= css %>" valign="middle" width="30">
                 <% if (metapackage.user_id == current_user.id) or is_admin? %>
