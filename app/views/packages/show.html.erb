@@ -20,7 +20,8 @@
    </tr></table>
   </p>
 <% end %>
-	
+<p>
+	Paket installieren:   <%= link_to image_tag("/images/install.png", :size => "22x22"), "apt://"+@package.name%>		
 <p>
   <b>Programm:</b>
   <%=if @package.is_program then "ja" else "nein" end %>

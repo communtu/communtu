@@ -46,7 +46,7 @@
      <% end %>
 	</td>
     <td class="<%= css %>" width="80" align="right">
-                                  
+        <%= link_to image_tag("/images/install.png", :size => "22x22"), "apt://"+package.name%>                          
 		<% if editing_metapackage? and package.distribution_id == distribution.id %>
 		    
 			<%= link_to_remote(image_tag("/images/add.png", :size => "22x22", :border => "0"), \
