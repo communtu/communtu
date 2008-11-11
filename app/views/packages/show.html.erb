@@ -11,6 +11,16 @@
   <%= @package.icon(35)%>
   <%= link_to(@package.name, "apt:" + @package.name) %>
 </p>
+<% if !@package.stars.nil? %>
+  <p>
+    <table><tr>
+     <td><b>Beliebtheit:</b></td> 	
+     <td><%= number_with_precision(@package.stars, 1) %>/5 Sterne&nbsp;&nbsp; </td>
+     <td nowrap class='star-rating' style='width:<%= (@package.stars * 18).to_i %>px; '></td>
+   </tr></table>
+  </p>
+<% end %>
+	
 <p>
   <b>Programm:</b>
   <%=if @package.is_program then "ja" else "nein" end %>

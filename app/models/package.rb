@@ -79,7 +79,15 @@ class Package < BasePackage
     end
     return mis
   end
-    
+
+  def stars
+    if popcon.nil? then
+      nil
+    else
+      5 * Math.log(popcon>0 ? popcon : 1) / Math.log(Package.maximum(:popcon))
+    end
+  end
+
   def self.license_types
     license_types = [ "OpenSource", "Commercial" ]
   end
@@ -220,6 +228,9 @@ class Package < BasePackage
     if !self.icon_file.nil? then
       # show icon
       Package.show_image("/images/apps/"+self.icon_file,size)
+    elsif self.is_meta then
+      # metapackage without icon, show a metapackage icon
+      Package.show_image("/images/apps/Metapackage.png",size)
     elsif self.is_program then
       # program without icon, show a generic icon
       Package.show_image("/images/apps/gnome-other.png",size)

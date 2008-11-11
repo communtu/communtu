@@ -40,6 +40,11 @@
   <tr> 
   	<td class="<%= css %>"> <%= package.icon(20)%>
   		<%= link_to(package.name, distribution_package_path(package.distribution, package)) %></td>
+	<td>
+     <% if !package.stars.nil? %>
+        <div class='star-rating-<%= css %>' style='width:<%= (package.stars * 18).to_i %>px; '> </div>
+     <% end %>
+	</td>
     <td class="<%= css %>" width="80" align="right">
                                   
 		<% if editing_metapackage? and package.distribution_id == distribution.id %>
