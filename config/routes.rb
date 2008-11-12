@@ -1,5 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :derivatives
+  map.resources :videos
 
   
   map.resources :categories

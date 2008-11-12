@@ -34,7 +34,8 @@
   <ul>
   <%for v in @package.videos %>
     <li><%=auto_link v.url.gsub(/ /,'<br>'), link = :all, :target => '_blank' %>
-    <%= v.description%></li>
+    <%= v.description%>
+	<%= link_to 'Bearbeiten', :controller => :videos, :action => :edit, :id => v.id %></li>
   <% end %>
   </ul></p>
 <% end %>
