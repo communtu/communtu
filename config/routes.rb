@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :derivatives
+
   
   map.resources :categories
   map.resources :metapackages

@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  base_package_id: 1
+  url: MyString
+  description: MyText
+
+two:
+  base_package_id: 1
+  url: MyString
+  description: MyText

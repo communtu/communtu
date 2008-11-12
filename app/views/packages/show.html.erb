@@ -49,15 +49,18 @@
 <p>
 <% end %>
 
-<% if not @package.videos.nil? then %>
-
-<p>
-  <b>Videos:</b>
-  <%=auto_link @package.videos.gsub(/ /,'<br>'), link = :all, :target => '_blank' %>
-</p>
-<p>
+<% if not @package.videos.empty? then %>
+  <p>
+  <b>Videos:<br></b>
+  <ul>
+  <%for v in @package.videos %>
+    <li><%=auto_link v.url.gsub(/ /,'<br>'), link = :all, :target => '_blank' %>
+    <%= v.description%></li>
+  <% end %>
+  </ul></p>
 <% end %>
 
+<p>
   <b>Beschreibung:</b>
   <%= @package.description %>
 </p>

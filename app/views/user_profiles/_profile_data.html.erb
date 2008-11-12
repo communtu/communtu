@@ -29,8 +29,12 @@ Wenn gewünscht, ist aber auch eine detailliertere Auswahl möglich. Achtung: zu
                                   ((logged_in? and current_user.distribution_id==distribution.id) ? "selected='selected'" : "") + ">" + 
                                   distribution.name + "</option>" %>
         <% end %>
-        
         <%= select_tag("distribution", distrib_options) %>
+
+        <% Derivative.find(:all).each do |der|%>
+		  <%=radio_button_tag(:derivative,der.id)%> <%=h der.name%>   
+        <% end %>
+		
         
     	<% options = Array.new (Package.security_types.length, false) %>
 		<% options[logged_in? ? current_user.security : 0] = true %>

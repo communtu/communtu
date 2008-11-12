@@ -1,0 +1,13 @@
+<p>
+  <b>Name:</b>
+  <%=h @derivative.name %>
+</p>
+
+<p>
+  <b>Icon file:</b>
+  <%=h @derivative.icon_file %>
+</p>
+
+
+<%= link_to 'Edit', edit_derivative_path(@derivative) %> |
+<%= link_to 'Back', derivatives_path %>

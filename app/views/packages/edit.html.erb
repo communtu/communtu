@@ -28,12 +28,24 @@
     <b>Weblinks</b><br />
     <%= f.text_area :urls, :rows =>3, :cols => 80 %>
   </p>
+<% if not @package.videos.empty? then %>
   <p>
-    <b>Links auf Videos</b><br />
-    <%= f.text_area :videos, :rows =>3, :cols => 80 %>
+  <b>Videos:<br></b>
+  <ul>
+  <%for v in @package.videos %>
+    <li><%=auto_link v.url.gsub(/ /,'<br>'), link = :all, :target => '_blank' %>
+    <%= v.description%></li>
+  <% end %>
+  </ul></p>
+<% end %>
+  <p>
+    <b>Neuer Link auf ein Video</b><br />
+    URL: <%= text_field_tag :video_url %><br> 
+    Beschreibung des Videos:<br>
+	<%= text_area :video_descr, :v, :rows => 3, :cols => 80 %>
   </p>
     <p>
-  <b>Beschreibung</b><br />
+  <b>Beschreibung des Pakets</b><br />
   <%= f.text_area :description, :cols => 80 %>
   </p>
   <p>

@@ -1,0 +1,20 @@
+<h1>Editing derivative</h1>
+
+<% form_for(@derivative) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :icon_file %><br />
+    <%= f.text_field :icon_file %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @derivative %> |
+<%= link_to 'Back', derivatives_path %>

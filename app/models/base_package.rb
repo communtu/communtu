@@ -1,5 +1,6 @@
 class BasePackage < ActiveRecord::Base
   has_many :user_packages, :foreign_key => :package_id
+  has_many :videos
   
     # type of a package, for sorting package lists
   def ptype
