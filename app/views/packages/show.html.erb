@@ -5,10 +5,6 @@
 </span>
 &nbsp;&nbsp;&nbsp;	<small>sofort installieren:</small>   <%= link_to image_tag("/images/install.png", :size => "22x22", :border => 0), "apt://"+@package.name%>		
 
-<p>
-  <b>Distribution:</b>
-  <%= link_to(@package.distribution.name, distribution_path(@package.distribution)) %>
-</p>
 
   <p>
 <table>
@@ -33,12 +29,15 @@
 </tr></table>
 </p>
 <p>
+  <b>Distribution:</b>
+  <%= link_to(@package.distribution.name, distribution_path(@package.distribution)) %>
+</p>
+<p>
   <b>Repository:</b>
   <%= @package.repository.url + " " + @package.repository.subtype %>
 </p>
 
 <% if not @package.urls.nil? then %>
-
 <p>
   <b>Weblinks:</b>
   <%=auto_link @package.urls.gsub(/ /,'<br>'), link = :all, :target => '_blank' %>
@@ -84,6 +83,9 @@
   <% end %>
   </p>
 <% end %>
+<%= link_to'Kommentieren', { :controller => :packages, :action => :add_comment, \
+	    :id => @package.id } %>
+<%= show_comments @package.comments %>
 
 </div>
 <%= link_to 'Bearbeiten', {:action => 'edit', :id => @package.id} %> &nbsp;&nbsp;
