@@ -117,7 +117,7 @@ class Package < BasePackage
     end
     Package.find(:all, :page => {:size => 10, :current => page}, \
                        :conditions => ([cond_str]+cond_vals), \
-                       :order => "name")
+                       :order => "popcon desc, name asc")
   end
   
   def self.get_url_from_source source
