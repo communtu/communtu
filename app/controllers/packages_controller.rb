@@ -82,7 +82,7 @@ class PackagesController < ApplicationController
 
   # PUT /Packages/1
   # PUT /Packages/1.xml
-  def update
+  def update 
     @package = Package.find(params[:id])
     # enter new video
     if !params[:video_url].nil? then
@@ -94,7 +94,7 @@ class PackagesController < ApplicationController
       Video.create(:base_package_id => @package.id, :url => params[:video_url], :description => descr)
     end
     # enter new icn file
-    if !params[:package][:icon_file].nil? && (params[:package][:icon_file].size > 0) then
+    if !params[:package][:icon_file].nil? && (params[:package][:icon_file].size > 1) then
        # file name without full path
        icon_file = params[:package][:icon_file].original_filename.split("/")[-1]
        path = RAILS_ROOT + '/public/images/apps/'
@@ -114,6 +114,8 @@ class PackagesController < ApplicationController
        ensure
          f.close unless f.nil?
        end  
+    else
+      params[:package][:icon_file] = @package.icon_file
     end   
     respond_to do |format|
       if @package.update_attributes(params[:package])
