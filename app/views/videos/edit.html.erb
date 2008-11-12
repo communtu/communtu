@@ -1,0 +1,19 @@
+<h1>Video bearbeiten</h1>
+
+<% form_for @video, :url => {:action => :update } do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :URL %><br />
+    <%= f.text_field :url %>
+  </p>
+  <p>
+    <%= f.label :Beschreibung %><br />
+    <%= f.text_area :description, :cols => 80, :rows => 6 %>
+  </p>
+  <p>
+    <%= f.submit "Speichern" %>
+  </p>
+<% end %>
+
+<%= link_to 'Zurück', :controller => :packages, :action => :edit, :id => @video.base_package_id %>
