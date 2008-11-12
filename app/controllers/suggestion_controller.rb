@@ -40,8 +40,8 @@ class SuggestionController < ApplicationController
       license = session[:license]
       packages = []
       session[:profile].each do |category, value|
-        metas = Metapackage.find(:all, :conditions => ["category_id = ? and distribution_id = ? and license_type <= ?", \
-                                                       category, distribution, license])
+        metas = Metapackage.find(:all, :conditions => ["category_id = ? and distribution_id = ? and license_type <= ? and rating <= ?", \
+                                                       category, distribution, license, value])
         packages += metas
       end
       install_aux(packages)
