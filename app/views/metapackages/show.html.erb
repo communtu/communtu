@@ -40,7 +40,7 @@
 
 <div style="position:relative; left:480px; top:-30px; height:0px;width:150px;">
 <% if logged_in? and (@metapackage.owned_by? current_user or is_admin?) %>
-  Aktionen:
+  Aktionen:&nbsp;&nbsp;
   <div style="position:relative; top:-22px; left:60px">
   <%= form_tag(distribution_metapackage_path(@metapackage.distribution, @metapackage) + "/edit_action") %>
     <select id="method" name="method" onchange="this.form.submit()">
