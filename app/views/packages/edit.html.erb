@@ -40,7 +40,7 @@
 <% end %>
   <p>
     <b>Neuer Link auf ein Video</b><br />
-    URL: <%= text_field_tag :video_url %><br> 
+    URL: <%= text_field_tag :video_url, "", :size => 65 %><br> 
     Beschreibung des Videos:<br>
 	<%= text_area :video_descr, :v, :rows => 3, :cols => 80 %>
   </p>
