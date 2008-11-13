@@ -2,10 +2,9 @@
 <div class="inner0">
 <span class="headline">  <%= @package.icon(35)%>
   <%= @package.name %>
-</span>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
-<small>sofort installieren:</small>   <%= link_to image_tag("/images/install.png", :size => "22x22", :border => 0), "apt://"+@package.name%>		
-<small>(ggf. über Synpatic untenstehende Quelle hinzufügen)</small>
+</span><br>
+<small>sofort installieren (ggf. über Synpatic untenstehende Quelle hinzufügen)</small>
+<%= link_to image_tag("/images/install.png", :size => "22x22", :border => 0), "apt://"+@package.name%>		
 
   <p>
 <table>
