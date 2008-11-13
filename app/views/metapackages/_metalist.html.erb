@@ -7,7 +7,7 @@
     <th valign="middle" class="packageList" align="left">Standard</th>
     <th valign="middle" class="packageList" align="left">Distribution</th>
     <th valign="middle" class="packageList" align="left">Veröff.</th>
-    <th valign="middle" class="packageList" align="left"></th>
+    <th valign="middle" class="packageList" align="left">Install.</th>
     <th valign="middle" class="packageList" align="left"></th>
   <th valign="middle" class="packageList" align="left"></th>
 </tr>
@@ -32,7 +32,7 @@
 	        <% end %>
 	    </td>
 		<td class="<%= css %>" valign="middle" align="middle">
-			<%= link_to image_tag("/images/install.png", :size => "22x22"), :url => user_path(current_user) + "/suggestions/quick_install/" + metapackage.id.to_s%>		
+			<%= link_to image_tag("/images/install.png", :size => "22x22", :border => 0), user_path(current_user) + "/suggestion/quick_install/" + metapackage.id.to_s%>		
 		</td>	
         <% if logged_in? %>
         <td class="<%= css %>" valign="middle" width="30">

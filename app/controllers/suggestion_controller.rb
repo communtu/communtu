@@ -49,7 +49,7 @@ class SuggestionController < ApplicationController
   end
 
   def quick_install
-    install_aux(params[:mid])
+    install_aux([Metapackage.find(params[:mid])])
   end
 
   def install
@@ -65,11 +65,6 @@ class SuggestionController < ApplicationController
     script          = "gksudo echo\n"
     script += "#!/bin/bash\n\n"
     script += "APTLIST=\"/etc/apt/sources.list\"\n\n"
-    script += "SOURCES=\""
-    sources.each do |repo, url|
-        script += repo.url + " " + repo.subtype + "*"
-    end
-    script += "\"\n\n"
     
     # generate list of packages, grouped by main bundles
     script += "PACKAGES=\"\"\n"
@@ -84,7 +79,14 @@ class SuggestionController < ApplicationController
     script += "\"\n\n"
     end    
     script += "\n\n"
-    
+
+    #  sources
+    script += "SOURCES=\""
+    sources.each do |repo, url|
+        script += repo.url + " " + repo.subtype + "*"
+    end
+    script += "\"\n\n"
+
     # generate question ot the user
     script += "IFS=\"*\"\n"
     script += "zenity --list --width 500 --height 300 --title \"Paketquellen hinzufügen\" " + 
