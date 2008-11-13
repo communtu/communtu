@@ -47,7 +47,7 @@ module SuggestionHelper
         return out
     end
 
-    def show_suggestion root, selection
+    def show_suggestion root, selection           
         
         out = "<div class='suggestion'>\n"
         

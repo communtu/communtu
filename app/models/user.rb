@@ -29,7 +29,6 @@ class User < ActiveRecord::Base
 #  has_many :unselected_metapackages, :through => :user_packages, :source => :package_id, \
 #      :conditions => 'user_packages.base_package.class == Metapackage && not user_packages.is_selected'    
 
- 
   before_save :encrypt_password
   before_create :make_activation_code
   

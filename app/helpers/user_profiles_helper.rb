@@ -6,8 +6,9 @@ module UserProfilesHelper
         return selection.key?(category)
     end
 
-    def show_packages packages, selection
+    def show_packages2 packages, selection
         out = ""
+        puts "PACKAGES: " + packages.size.to_s
         packages.each do |package|
             selected = selection.include? package
             out += "<div id='selected' class='suggestionPackage'>\n"
@@ -23,7 +24,7 @@ module UserProfilesHelper
         return out
     end
 
-    def show_selection_subtree root, selection, depth
+    def show_selection_subtree2 root, selection, depth
         
         out = "<div class='suggestionHeader'><ul class='suggestionHeader'>\n"
             out += "<li class='suggestionCollapse'><img src='/images/add.png' width='10' height='10' onclick=\"['packages" + \
@@ -33,28 +34,28 @@ module UserProfilesHelper
         
         out += "<div class='suggestionPackages' id='packages" + root.name + "'>\n"
 
-        out += show_packages root.metapackages.select { |meta| meta.distribution == @distribution }, selection
-        
+        out += show_packages2 root.metapackages.select { |meta| meta.distribution == @distribution }, selection
+
         root.children.each do |child|
-            out += show_selection_subtree child, selection, (depth + 1)
+            out += show_selection_subtree2 child, selection, (depth + 1)
         end
-        
+
         out += "</div>\n"
         
         return out
     end
 
-    def show_suggestion root, selection
+    def show_suggestion2 root, selection
         
         out = "<div class='suggestion'>\n"
         
         if root.children.nil?
            return out + "</div>\n"
         end
-        
+
         root.children.each do |child|
             if not child.metapackages.nil? and not child.metapackages.empty?
-                out += show_selection_subtree child, selection, 0
+                out += show_selection_subtree2 child, selection, 0
             end
         end
    

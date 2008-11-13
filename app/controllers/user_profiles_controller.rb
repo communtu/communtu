@@ -8,6 +8,37 @@ class UserProfilesController < ApplicationController
   helper :tabz
     
   def edit
+    @root = Category.find(1)
+    @distributions = Distribution.find(:all)
+    @ratings = {}
+    if logged_in? then
+      current_user.user_profiles.each do |profile|
+        @ratings.store(profile.category_id, profile.rating!=0)
+    end
+    else
+      Category.find(:all).each do |category|
+        @ratings.store(category.id, ((not session[:profile].nil?) and (session[:profile][category.id] != 0)))
+      end
+    end
+  end
+  
+  def refine
+    @root = Category.find(1)
+    @selection = []
+    if logged_in? then
+      @selection += current_user.selected_packages
+      @distribution = current_user.distribution
+    else
+      @distribution = Distribution.find(session[:distribution])
+      session[:profile].each do |category, value|
+        metas = Metapackage.find(:all, :conditions => ["category_id = ? and distribution_id = ? and license_type <= ? and rating <= ?", \
+            category, @distribution.id, session[:license], value])
+        @selection += metas
+      end
+    end
+  end
+  
+  def installation
   end
   
   # update the basic data of the user's software selection
@@ -27,8 +58,8 @@ class UserProfilesController < ApplicationController
     else
       session[:profile]      = {}
       session[:distribution] = distribution
-      session[:license]      = lic
-      session[:security]     = sec
+      session[:license]      = lic.to_i
+      session[:security]     = sec.to_i
     end
     
     # get the list of categories selected via checkboxes
@@ -45,9 +76,9 @@ class UserProfilesController < ApplicationController
     end
 
     if !params[:choose].nil?
-        redirect_to user_user_profile_path(current_user) + "/tabs/1"
+        redirect_to user_user_profile_path(current_user) + "/refine"
     else
-        redirect_to user_user_profile_path(current_user) + "/tabs/2"
+        redirect_to user_user_profile_path(current_user) + "/installation"
     end
   end
   
@@ -105,19 +136,25 @@ class UserProfilesController < ApplicationController
   end
   
   def update_ratings
-
-    current_user.first_login = 0
-    current_user.save!
-    uid = current_user.id
-    #replace old list of packages...
-    current_user.user_packages.each do |up|
-      up.destroy
+    if logged_in? then 
+      current_user.first_login = 0
+      current_user.save!
+      uid = current_user.id
+      #replace old list of packages...
+      current_user.user_packages.each do |up|
+        up.destroy
+      end
     end
+    
     #... with new one from the form
     params[:post].each do |key, value|
-      UserPackage.create(:user_id => uid, :package_id => key, :is_selected => true)
+      if logged_in? then
+        UserPackage.create(:user_id => uid, :package_id => key, :is_selected => true)
+      else
+        session[:profile][:key] = value
+      end
     end
-    redirect_to user_user_profile_path(current_user) + "/tabs/1"
+    redirect_to user_user_profile_path(current_user) + "/edit"
   end
 
 end

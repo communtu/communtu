@@ -27,6 +27,8 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/users/:user_id/user_profile/update_data', :controller => 'user_profiles', :action => 'update_data'
   map.connect '/users/:user_id/user_profile/update_rating', :controller => 'user_profiles', :action => 'update_rating'
   map.connect '/users/:user_id/user_profile/update_ratings', :controller => 'user_profiles', :action => 'update_ratings'
+  map.connect '/users/:user_id/user_profile/refine', :controller => 'user_profiles', :action => 'refine'
+  map.connect '/users/:user_id/user_profile/installation', :controller => 'user_profiles', :action => 'installation'
 
   map.connect '/users/:id/cart/:action/:id', :controller => 'cart'
   

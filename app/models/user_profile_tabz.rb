@@ -26,10 +26,23 @@ class UserProfileTabz < Tabz::Base
         titled "Detailauswahl"
         looks_like "user_profiles/profile_rating"
         with_data do
-            set_to({ :root => Category.find(1), :selection => @user_data.selected_packages, :distribution => @user_data.distribution })
+            selection    = []
+            distribution = nil
+            if @user_data != :false then
+              selection = @user_data.selected_packages
+              distribution = @user_data.distriubtion
+            else
+              distribution = session[:distriubtion]
+              session[:profile].each do |category, value|
+                metas = Metapackage.find(:all, :conditions => ["category_id = ? and distribution_id = ? and license_type <= ? and rating <= ?", \
+                                                       category, distribution, session[:license], value])
+                selection += metas
+              end
+            end
+            set_to({ :root => Category.find(1), :selection => selection, :distribution => distribution })
         end
     end
-
+    
     add_tab do
         titled "Installation durchführen"
         looks_like "user_profiles/installation"
