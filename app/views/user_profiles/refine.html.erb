@@ -1,0 +1,17 @@
+<h3>Feinauswahl der zu installierenden Programmbündel und Programme</h3>
+
+<%= error_messages_for :user_profile %>
+
+
+<p>Hier kannst du deine beabsichtigte Computer-Nutzung noch genauer angeben.</p>
+
+<p>Achtung! Zum Schluss auf "Speichern" klicken.</p>
+<% form_tag(user_user_profile_path(current_user) + "/update_ratings", options = {:name => "ratings", :method => :put}) do %>
+    <div>
+        <%= show_suggestion2(@root, @selection) %>
+    </div>
+    <div style="margin-top:20px;">
+        <%= link_to "Speichern", "javascript:document.ratings.submit();" %>
+    </div>
+<% end %>
+
