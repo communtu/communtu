@@ -28,14 +28,7 @@
  </td>
 </tr></table>
 </p>
-<p>
-  <b>Distribution:</b>
-  <%= link_to(@package.distribution.name, distribution_path(@package.distribution)) %>
-</p>
-<p>
-  <b>Repository:</b>
-  <%= @package.repository.url + " " + @package.repository.subtype %>
-</p>
+
 
 <% if not @package.urls.nil? then %>
 <p>
