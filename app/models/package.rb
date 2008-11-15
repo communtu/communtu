@@ -11,7 +11,7 @@ class Package < BasePackage
   has_many :metacontents, :foreign_key => :base_package_id
   has_many :metapackages, :through => :metacontents
   has_many :package_distrs, :foreign_key => :package_id
-  has_many :distributions, :through => :package_distrs
+#  has_many :distributions, :through => :package_distrs
   has_many :repositories, :through => :package_distrs
   has_many :dependencies, :foreign_key => :base_meta_package_id
   has_many :depends, :through => :dependencies, :source => :base_package, \
@@ -23,7 +23,10 @@ class Package < BasePackage
   has_many :conflicts, :through => :dependencies, :source => :base_package, \
     :conditions => 'dependencies.dep_type = 2'
   validates_presence_of :name, :version
-  
+
+  def distributions
+    self.package_distrs.map {|pd| Distribution.find(pd.distribution_id)}
+  end
   def assign_depends list
     list.each do |p|
       Dependency.create(:base_meta_package_id => id, :base_package_id => p.id, :dep_type => 0)

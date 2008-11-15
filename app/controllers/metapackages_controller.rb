@@ -75,10 +75,16 @@ class MetapackagesController < ApplicationController
       then 
       params[:metapackage][:rating]=2
     end
+    if params[:distributions].nil? then
+      params[:distributions] = []
+    end
     params[:distributions].each do |p, dists|
       mc = Metacontent.find(:first, :conditions => ["metapackage_id = ? and base_package_id = ?",@metapackage.id,p])
       mc.metacontents_distrs.each {|d| d.destroy} # delete all distributions
       dists.each {|d| mc.distributions << Distribution.find(d)}     # and add the selected ones
+    end
+    if params[:derivatives].nil? then
+      params[:derivatives] = []
     end
     params[:derivatives].each do |p, ders|
       mc = Metacontent.find(:first, :conditions => ["metapackage_id = ? and base_package_id = ?",@metapackage.id,p])
