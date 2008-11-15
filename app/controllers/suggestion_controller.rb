@@ -10,6 +10,7 @@ class SuggestionController < ApplicationController
     @profile.each do |p|
 
         category = Category.find(p.category_id)
+        # adapt: look for metas matching with user's distribution
         metas    = Metapackage.find(:all, :conditions => ["category_id = ? and distribution_id = ? and rating <= ? and license_type <= ?", \
             category.id, current_user.distribution.id, p.rating, current_user.license])
             
@@ -39,6 +40,7 @@ class SuggestionController < ApplicationController
       security = session[:security]
       license = session[:license]
       packages = []
+      # adpat, s.above
       session[:profile].each do |category, value|
         metas = Metapackage.find(:all, :conditions => ["category_id = ? and distribution_id = ? and license_type <= ? and rating <= ?", \
                                                        category, distribution, license, value])

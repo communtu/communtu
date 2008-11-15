@@ -17,6 +17,8 @@ class MetapackagesController < ApplicationController
   # GET /metapackages/1.xml
   def show
     @metapackage = Metapackage.find(params[:id])
+    @distribution = current_user.distribution
+    @derivative = current_user.derivative
 
     respond_to do |format|
       format.html # show.html.erb
@@ -73,9 +75,19 @@ class MetapackagesController < ApplicationController
       then 
       params[:metapackage][:rating]=2
     end
+    params[:distributions].each do |p, dists|
+      mc = Metacontent.find(:first, :conditions => ["metapackage_id = ? and base_package_id = ?",@metapackage.id,p])
+      mc.metacontents_distrs.each {|d| d.destroy} # delete all distributions
+      dists.each {|d| mc.distributions << Distribution.find(d)}     # and add the selected ones
+    end
+    params[:derivatives].each do |p, ders|
+      mc = Metacontent.find(:first, :conditions => ["metapackage_id = ? and base_package_id = ?",@metapackage.id,p])
+      mc.metacontents_derivatives.each {|d| d.destroy} # delete all derivatives
+      ders.each {|d| mc.derivatives << Derivative.find(d)}             # and add the selected ones
+    end
     respond_to do |format|
       if @metapackage.update_attributes(params[:metapackage])
-        format.html { redirect_to :action => :show, :id => @metapackage.id, :distribution_id => @metapackage.distribution.id }
+        format.html { redirect_to :action => :show, :id => @metapackage.id }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -127,24 +139,24 @@ class MetapackagesController < ApplicationController
   def edit_action
     action = params[:method]
     meta   = Metapackage.find(params[:id])
-    
     if not meta.nil?
         if action == "edit"
-            redirect_to distribution_metapackage_path(meta.distribution, meta) + "/edit"
+            redirect_to metapackage_path(meta) + "/edit"
         elsif action == "pedit"
             edit_packages
         elsif action == "publish" 
             meta.published = 1
             meta.save!
-            redirect_to distribution_metapackage_path(meta.distribution, meta)
+            redirect_to metapackage_path(meta)
         elsif action == "unpublish"
             meta.published = 0
             meta.save!
-            redirect_to distribution_metapackage_path(meta.distribution, meta)
+            redirect_to metapackage_path(meta)
         elsif action == "delete"
-            path = distribution_metapackages_path(meta.distribution)
             meta.destroy
-            redirect_to path
+            redirect_to metapackages_path
+        else    
+            redirect_to metapackage_path(meta)
         end
     end
   end

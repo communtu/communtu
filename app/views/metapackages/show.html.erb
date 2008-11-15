@@ -1,14 +1,20 @@
 <div class="inner0">
+<table>
+	<tr><td>
+		<span class="headline">   <%=h @metapackage.name %>
+</span> 
+</td>
 <% if !request.env['HTTP_REFERER'].nil? then %>
-<%= link_to "Zurück&nbsp;&nbsp;", request.env['HTTP_REFERER'] %>
+
+     <td width=500px></td>
+     <td>
+       <%= link_to "Zurück&nbsp;&nbsp;", request.env['HTTP_REFERER'] %>
+	 </td>  
 <% end %>
-<p>
-  <b>Name:</b>
-  <%=h @metapackage.name %>
-</p>
+    </tr>
+</table>
 
 <p>
-  <b>Beschreibung:</b>
   <%= @metapackage.description %>
 </p>
 
@@ -26,10 +32,6 @@
   <%= Package.license_types[@metapackage.license_type] %>
 </p>
 <p>
-  <b>Distribution:</b>
-  <%= link_to @metapackage.distribution.name, distribution_path(@metapackage.distribution) %>
-</p>
-<p>
     <b>Veröffentlicht: </b>
     <% if @metapackage.is_published? %>
         <%= image_tag("yes.png", :size => "22x22", :border => "0")  %>
@@ -41,12 +43,12 @@
 <div style="position:relative; left:480px; top:-30px; height:0px;width:150px;">
 <% if logged_in? and (@metapackage.owned_by? current_user or is_admin?) %>
   Aktionen:&nbsp;&nbsp;
-  <div style="position:relative; top:-22px; left:60px">
-  <%= form_tag(distribution_metapackage_path(@metapackage.distribution, @metapackage) + "/edit_action") %>
+  <div style="position:relative; top:-22px; left:64px">
+  <%= form_tag(metapackage_path(@metapackage) + "/edit_action") %>
     <select id="method" name="method" onchange="this.form.submit()">
         <option value="noop">---</option>
         <option value="edit">Editieren</option>
-        <option value="pedit">Inhalt Editieren</option>
+        <option value="pedit">Paketliste editieren</option>
         
         <% if not @metapackage.is_published? %>
         <option value="publish">Veröffentlichen</option>
@@ -60,33 +62,8 @@
 <% end %>
 </div>
 
-<div class="inner1">
-<table width="100%" cellspacing="0">
-	<% mc = @metapackage.metacontents.sort_by {|mc| [mc.package.ptype, mc.package.name] }%>
-	<% mc.each do |p| %>
-	<% css = cycle("packageList0", "packageList1") %>
-		<tr>
-			<% if p.package.class == Package \
-                  then @contr = :packages; @icon = p.package.icon(30) \
-                  else @contr = :metapackages; @icon = Metapackage.icon(30) \
-			           end %>	   
-			<td class="<%= css %>"><%= @icon %>&nbsp;<%= link_to  p.package.name, { :controller => @contr, :action => :show,\
-					:id => p.package.id } %></td>
-			<td class="<%= css %>" align="right">
-			<% if is_admin? %>
-				<%= link_to image_tag("edit-delete.png", :size => "22x22", :border => "0"), { :controller => :metapackages,\
-					 :action => :remove_package, :id => @metapackage.id, :package_id => p.id  } %> 
-			<% end %>
-			</td>
-		</tr>
-        <%if ! p.package.description.empty? %>
-		   <tr>
-			<td colspan="2" class="<%= css %>"><%= p.package.description[0,100]+(p.package.description.length<100 ? "" : " ...") %></td>
-		  </tr>
-	    <% end %>
-	<% end %>
-</table>	
-</div>
+<%= render :partial => "package_list", :locals => { :metapackage => @metapackage, :editable => false, :distribution => @distribution, :derivative =>  @derivative} %>
+
 <%= link_to'Kommentieren', { :controller => :metapackages, :action => :add_comment, \
 	    :id => @metapackage.id } %>
 <%= show_comments @metapackage.comments %>

@@ -31,6 +31,17 @@ Wenn gewünscht, ist aber auch eine detailliertere Auswahl möglich. Achtung: zu
         <% end %>
         
         <%= select_tag("distribution", distrib_options) %>
+
+        <% Derivative.find(:all).each do |der|%>
+          <% if logged_in? %>
+	  	    <% selected = der == current_user.derivative %>
+		  <% else %>
+		    <% selected = der == 1%>
+		  <% end %>  
+		  <%= radio_button_tag(:derivative,der.id, selected)%> <%=h der.name%>   
+        <% end %>
+		
+	</li>
         
     	<% options = Array.new (Package.security_types.length, false) %>
     	<% if logged_in? %>
@@ -38,9 +49,8 @@ Wenn gewünscht, ist aber auch eine detailliertere Auswahl möglich. Achtung: zu
 		<% elsif not session[:security].nil? %>
 		  <% options[session[:security]] = true %>
 		<% else %>
-		  <% options[0] = true %>
+		  <% options[2] = true %>
 		<% end %>
-		</li>
 		
      <li><p>Hier kannst du einstellen, wie sicher bzw. komfortabel deine Installationsquellen sein sollen</p>
         

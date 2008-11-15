@@ -18,6 +18,7 @@ class User < ActiveRecord::Base
   has_many :user_profiles, :dependent => :destroy
   has_many :temp_metapackages, :dependent => :destroy
   belongs_to :distribution
+  belongs_to :derivative
   belongs_to :language
   has_many :user_packages 
   has_many :selected_packages, :through => :user_packages, :source => :base_package, \

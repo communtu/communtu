@@ -420,6 +420,43 @@ td.packageList1 {
     border-color: #ac873f;
 }
 
+td.packageList0noborder {
+    padding:5px 8px 5px 10px;
+    background-color: #FFF8D2;
+#    border-bottom-style:solid;
+#    border-bottom-width:1px;
+    border-color: #ac873f;
+}
+
+td.packageList1noborder {
+    padding:5px 8px 5px 10px;
+    background-color: #FFFFFF;
+#    border-bottom-style:solid;
+#    border-bottom-width:1px;
+    border-color: #ac873f;
+}
+
+td.packageListGrey {
+    padding:5px 8px 5px 10px;
+    background-color: #DDDDDD;
+    border-bottom-style:solid;
+    border-bottom-width:1px;
+    border-color: #ac873f;
+	color: #EEEEEE;
+a { color: #888888; text-decoration:none; }
+}
+
+td.packageListGreynoborder {
+    padding:5px 8px 5px 10px;
+    background-color: #DDDDDD;
+#    border-bottom-style:solid;
+#    border-bottom-width:1px;
+    border-color: #ac873f;
+	color: #AAAAAA;
+a { color: #888888; text-decoration:none; }
+}
+
+
 ul.tabz {
     margin:0px;
     padding:0px;

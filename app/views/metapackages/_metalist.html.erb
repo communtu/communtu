@@ -5,9 +5,8 @@
     <th valign="middle" class="packageList" align="left">Name</th>
     <th valign="middle" class="packageList" align="left">Kategorie</th>
     <th valign="middle" class="packageList" align="left">Standard</th>
-    <th valign="middle" class="packageList" align="left">Distribution</th>
-    <th valign="middle" class="packageList" align="left">Veröff.</th>
-    <th valign="middle" class="packageList" align="left">Install.</th>
+    <th valign="middle" class="packageList" align="left">Veröffentl.</th>
+    <th valign="middle" class="packageList" align="left">Installieren</th>
     <th valign="middle" class="packageList" align="left"></th>
   <th valign="middle" class="packageList" align="left"></th>
 </tr>
@@ -22,8 +21,6 @@
 		    <%=h metapackage.category.name %></td>
         <td class="<%= css %>" valign="middle">
 		    <%=metapackage.rating <= 1 ?  "ja" : "nein" %></td>
-        <td class="<%= css %>" valign="middle">
-		    <%=h metapackage.distribution.name %></td>
 	    <td class="<%= css %>" valign="middle" align="middle">
 	        <% if metapackage.published == Metapackage.state[:published] %>
 	            <%= image_tag("yes.png", :size => "22x22", :border => "0") %>

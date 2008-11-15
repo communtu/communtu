@@ -8,8 +8,7 @@ class UserMetaTabz < Tabz::Base
         titled "Meine Bündel"
         looks_like "metapackages/metalist"
         with_data do 
-            set_to({ :packages => Metapackage.find(:all, :conditions => ["user_id=? AND distribution_id=?", @user_data[:user].id, 
-                @user_data[:user].distribution_id]) })
+            set_to({ :packages => Metapackage.find(:all, :conditions => ["user_id=?", @user_data[:user].id])})
         end
     end
     
@@ -17,7 +16,7 @@ class UserMetaTabz < Tabz::Base
         titled "Alle Bündel"
         looks_like "metapackages/metalist"
         with_data do 
-            set_to({ :packages => Metapackage.find(:all, :conditions => ["distribution_id=? AND published=?", @user_data[:user].distribution_id, 
+            set_to({ :packages => Metapackage.find(:all, :conditions => ["published=?", 
                 Metapackage.state[:published]]) })
         end
     end
@@ -28,7 +27,7 @@ class UserMetaTabz < Tabz::Base
         with_data do
             set_to({ :packages => Package.find_packages(@user_data[:session][:search], 
                         @user_data[:session][:group], @user_data[:session][:programs],
-                        @user_data[:params][:page], @user_data[:user].distribution),
+                        @user_data[:params][:page]),
                      :distribution => @user_data[:user].distribution,
                      :groups => Package.find(:all, :select => "DISTINCT section", :order => "section") })
         end

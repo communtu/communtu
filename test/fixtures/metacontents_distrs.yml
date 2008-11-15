@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  metacontents_id: 1
+  distribution_id: 1
+  derivative_id: 1
+
+two:
+  metacontents_id: 1
+  distribution_id: 1
+  derivative_id: 1

@@ -10,6 +10,9 @@ class Package < BasePackage
   has_many   :comments, :foreign_key => :metapackage_id, :dependent => :destroy
   has_many :metacontents, :foreign_key => :base_package_id
   has_many :metapackages, :through => :metacontents
+  has_many :package_distrs
+  has_many :distributions, :through => :package_distrs
+  has_many :repositories, :through => :package_distrs
   has_many :dependencies, :foreign_key => :base_meta_package_id
   has_many :depends, :through => :dependencies, :source => :base_package, \
     :conditions => 'dependencies.dep_type = 0'    
@@ -39,7 +42,7 @@ class Package < BasePackage
     end
   end
   
-  def unique_name
+  def unique_name(distribution)
     name+"-"+distribution.name.split(" ")[0]
   end
   def is_meta
@@ -97,13 +100,9 @@ class Package < BasePackage
     security_types  = [ "Native", "Trusted", "Third-Party" ]
   end
  
-  def self.find_packages(search, group, only_programs, page, distribution)
-  
-    if distribution.nil?
-        return []
-    end
-    cond_str =  "distribution_id = ?"
-    cond_vals = [distribution.id]
+  def self.find_packages(search, group, only_programs, page)
+    cond_str = "1"
+    cond_vals = []
     if not search.nil?
         cond_str += " and name like ?"
         cond_vals << "%" + search + "%"
@@ -314,6 +313,77 @@ class Package < BasePackage
     else
       return nil
     end
+  end
+
+  def self.markmc(mc,d)
+    dist = Distribution.find(d)
+    if !mc.distributions.include?(dist)
+          mc.distributions << dist
+    end
+    der = Derivative.find(1)
+    if !mc.derivatives.include?(der)
+          mc.derivatives << der
+    end      
+    der = Derivative.find(2)
+    if !mc.derivatives.include?(der)
+          mc.derivatives << der
+    end          
+  end
+  # migrate from old database structure to new one
+  def self.migrate_old
+#    # migrate all Gutsy packages 
+#    Package.find(:all, :conditions => ["distribution_id = ?",1]).each do |p|
+#      p1 = Package.find(:first, :conditions => ["distribution_id = ? and name = ?",2,p.name])
+#      if p1.nil? then # no Hardy package with same name? then keep Gutsy package
+#        p1 = p
+#        PackageDistr.create(:package_id => p1.id, :distribution_id => 1, :repository_id => p.repository_id) 
+#      else   
+#        PackageDistr.create(:package_id => p1.id, :distribution_id => 1, :repository_id => p.repository_id)      
+#      end
+#    end
+#    # mark all Hardy packages 
+#    Package.find(:all, :conditions => ["distribution_id = ?",2]).each do |p|
+#      PackageDistr.create(:package_id => p.id, :distribution_id => 2, :repository_id => p.repository_id)
+#    end
+    # migrate metapackages
+    Metapackage.find(:all).each do |meta|
+      if meta.distribution_id==2 then
+        meta.metacontents.each do |mc|
+          markmc(mc,2)
+        end
+      else  
+        meta1 =  Metapackage.find(:first,:conditions => ["distribution_id = ? and name = ?",2,meta.name])
+        if meta1.nil? then # no hardy bundle? then keep Gutsy bundle
+          meta.metacontents.each do |mc|
+          markmc(mc,1)
+          end
+        else  
+          meta.metacontents.each do |mc|
+            if !mc.base_package.nil? then
+              mc1s = meta1.metacontents.select{|mc1| !mc1.base_package.nil? && mc1.base_package.name == mc.base_package.name}
+              if mc1s.size==0 then #no package with same name in the bundle, create one
+                p = Package.find(:first,:conditions => ["name = ?",mc.base_package.name])
+                if !p.nil? then
+                  mcnew = Metacontent.create(:metapackage_id => meta1.id, :base_package_id => p.id)
+                 markmc(mcnew,1)
+                end
+              else
+                markmc(mc1s[0],1)
+              end
+            end 
+          end  
+          meta.destroy
+        end
+      end
+    end
+    # destroy all superfluous Gutsy packages 
+    Package.find(:all, :conditions => ["distribution_id = ?",1]).each do |p|
+      p1 = Package.find(:first, :conditions => ["distribution_id = ? and name = ?",2,p.name])
+      if !p1.nil? then # Hardy package with same name? then destroy Gutsy package
+        p.destroy
+      end  
+    end
+    
   end
   
 private

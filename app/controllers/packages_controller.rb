@@ -4,7 +4,7 @@ class PackagesController < ApplicationController
   # GET /Packages.xml
   def index         
     @distribution = Distribution.find(params[:distribution_id])
-    @packages     = Package.find_packages(session[:search], session[:group], session[:programs], params[:page], @distribution)
+    @packages     = Package.find_packages(session[:search], session[:group], session[:programs], params[:page])
     @groups       = Package.find(:all, :select => "DISTINCT section", :order => "section")
     
     respond_to do |format|

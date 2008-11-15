@@ -47,6 +47,7 @@ class UserProfilesController < ApplicationController
     lic          = params[:lic]
     sec          = params[:sec]
     distribution = params[:distribution]
+    derivative   = params[:derivative]
     if logged_in? then
       user.first_login = 0
 
@@ -54,10 +55,12 @@ class UserProfilesController < ApplicationController
       user.security = sec
       user.license  = lic
       user.distribution_id = distribution
+      user.derivative_id = derivative
       user.save!
     else
       session[:profile]      = {}
       session[:distribution] = distribution
+      session[:derivative]   = derivative
       session[:license]      = lic.to_i
       session[:security]     = sec.to_i
     end
@@ -154,7 +157,7 @@ class UserProfilesController < ApplicationController
         session[:profile][:key] = value
       end
     end
-    redirect_to user_user_profile_path(current_user) + "/edit"
+    redirect_to user_user_profile_path(current_user) + "/installation"
   end
 
 end

@@ -2,19 +2,22 @@
 
     <span class="headline">Bündel-Informationen anpassen</span>
     <br/>
+    <br/>
+        <div align="right"><%= submit_tag "Speichern"%></div>
+    <br/>
 	<% if @metapackage.rating<=1 then @metapackage.rating = 1 else @metapackage.rating = 0 end%>
     <% form_for(@metapackage, :url => distribution_path(@metapackage.distribution) + "/metapackages/" + @metapackage.id.to_s ) do |f| %>
         <table>
+        <tr>
+	        <td>Name:</td>
+	        <td><%= f.text_field(:name, { :size => 16}) %></td>	
+        </tr>
         <tr>
 	        <td>Kategorie:</td>
 	        <td>
 	        	<% @categories = Category.find(:all, :order => "name")%>
 		        <%= f.collection_select(:category_id,@categories,:id,:name)%>
 	        </td>
-        </tr>
-        <tr>
-	        <td>Name:</td>
-	        <td><%= f.text_field(:name, { :size => 16}) %></td>	
         </tr>
         <tr>
 	        <td>Standardmäßig installieren:</td>
@@ -24,11 +27,12 @@
 	        <td valign='top'>Beschreibung:</td>
 	        <td><%= f.text_area(:description, { :rows => 12, :cols => 50 } ) %></td>	
         </tr>
-        <tr>
-        <td colspan="2" align="center"><%= submit_tag "Speichern"%></td>
-        </tr>
 
         </table>	
+	<%= render :partial => "package_list", :locals => { :metapackage => @metapackage, :editable => true } %>	
+        <div align="right"><%= submit_tag "Speichern"%></div>
+		
+
     <% end %>
     <%= link_to 'Zurück', @backlink %>
 </div>
