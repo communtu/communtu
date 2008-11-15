@@ -1,0 +1,57 @@
+<div class="inner1">
+<table width="100%" cellspacing="0">
+	<% mcs = metapackage.metacontents.sort_by {|mc| [mc.package.ptype, mc.package.name] }%>
+	<% mcs.each do |mc| %>
+	<% basecss = cycle("packageList0", "packageList1") %>
+	<% if editable || (mc.distributions.include?(distribution) && mc.derivatives.include?(derivative))%>
+	   <% css = basecss%>
+	<% else %>   
+	   <% css = "packageListGrey"%>
+	<% end %>   
+		<tr>
+			<% if mc.package.class == Package \
+                  then @contr = :packages; @icon = mc.package.icon(30) \
+                  else @contr = :metapackages; @icon = Metapackage.icon(30) \
+			           end %>	   
+			<td class="<%= css+"noborder" %>"><%= @icon %>&nbsp;<%= link_to  mc.package.name, { :controller => @contr, :action => :show,\
+					:id => mc.package.id } %></td>
+			<td class="<%= css+"noborder" %>" align="right">
+			<% if is_admin? %>
+				<%= link_to image_tag("edit-delete.png", :size => "22x22", :border => "0"), { :controller => :metapackages,\
+					 :action => :remove_package, :id => metapackage.id, :package_id => mc.id  } %> 
+			<% end %>
+			</td>
+		</tr>
+        <%if ! mc.package.description.empty? %>
+		   <tr>
+			<td colspan="2" class="<%= css+"noborder" %>">
+				<%= mc.package.description[0,100]+(mc.package.description.length<100 ? "" : " ...") %></td>
+		  </tr>
+	    <% end %>
+          <tr><td colspan="2" class="<%= css %>">
+            <% for d in Distribution.find(:all) %>
+              <% if editable then %>
+			    <% if mc.package.distributions.include?(d) %>
+  	              <%= check_box_tag("distributions["+mc.package.id.to_s+"][]",d.id, mc.distributions.include?(d))%>
+                  <%= link_to d.short_name, distribution_path(d) %>
+				<% end %>
+              <% else %>
+			    <% if mc.distributions.include?(d)%>
+                  <%= link_to d.short_name, distribution_path(d) %>&nbsp;
+                <% end %>
+              <% end %>
+            <% end %> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <% for d in Derivative.find(:all) %>
+              <% if editable then %>
+	            <%= check_box_tag("derivatives["+mc.package.id.to_s+"][]",d.id, mc.derivatives.include?(d))%>
+                <%= link_to d.name, derivative_path(d) %>
+              <% else %>
+			    <% if mc.derivatives.include?(d)%>
+                  <%= link_to d.name, derivative_path(d) %>&nbsp;
+                <% end %>
+              <% end %>
+            <% end %>
+		  </td></tr>
+	<% end %>
+</table>	
+</div>
