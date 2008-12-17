@@ -1,7 +1,7 @@
 class UserMailer < ActionMailer::Base
   def signup_notification(user)
     setup_email(user)
-    @subject    += 'Du hast Dich erfolgreich angemeldet bei'  
+    @subject    += 'Herzlich Willkommen bei Communtu'  
     @body[:url]  = "http://www.communtu.de"  
   end
   
@@ -26,7 +26,7 @@ class UserMailer < ActionMailer::Base
     def setup_email(user)
       @recipients  = "#{user.email}"
       @from        = "info@communtu.de"
-      @subject     = "Communtu"
+#      @subject     = "Communtu"
       @sent_on     = Time.now
       @body[:user] = user
     end
