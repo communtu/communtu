@@ -54,6 +54,6 @@
   </p>
 <% end %>
 
-<%= link_to 'Anzeigen', distribution_package_path(@package.distribution_id, @package) %> |
-<%= link_to 'Zurück', distribution_package_path(@package.distribution_id, @package) %>
+<%= link_to 'Anzeigen', package_path(@package) %> |
+<%= link_to 'Zurück', package_path(@package) %>
 </div>

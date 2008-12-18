@@ -17,7 +17,7 @@
     
         <% css=cycle("packageList0", "packageList1") %>
         <tr>
-        <td class="<%= css %>"><%= link_to package.name, distribution_package_path(package.distribution, package) %></td>
+        <td class="<%= css %>"><%= link_to package.name, package_path(package) %></td>
         </tr>
     <% end %>
     </table>

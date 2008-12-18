@@ -34,7 +34,7 @@
 <% css=cycle("packageList0", "packageList1") %>
   <tr> 
   	<td class="<%= css %>"> <%= package.icon(20)%>
-  		<%= link_to(package.name, distribution_package_path(package.distribution, package)) %></td>
+  		<%= link_to(package.name, package_path(package)) %></td>
 	<td class="<%= css %>" align="middle" valign="middle">
      <% if !package.stars.nil? %>
         <div class='star-rating-<%= css %>' style='width:<%= (package.stars * 18).to_i %>px; '> </div>
@@ -50,7 +50,7 @@
 		<% end %>
     	<% if is_admin? %>
     		<%= link_to image_tag("/images/edit-delete.png", :size => "22x22", :border => "0"),
-    		        distribution_package_path(distribution.id, package), :confirm => 'Are you sure?', :method => :delete %>
+    		        package_path(package), :confirm => 'Are you sure?', :method => :delete %>
 			<% end %>
 	</td>
   </tr>
