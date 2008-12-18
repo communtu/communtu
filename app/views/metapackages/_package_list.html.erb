@@ -31,7 +31,7 @@
           <tr><td colspan="2" class="<%= css %>">
             <% for d in Distribution.find(:all) %>
               <% if editable then %>
-			    <% if mc.package.distributions.include?(d) %>
+			    <% if mc.distributions.include?(d) %>
   	              <%= check_box_tag("distributions["+mc.package.id.to_s+"][]",d.id, mc.distributions.include?(d))%>
                   <%= link_to d.short_name, distribution_path(d) %>
 				<% end %>
