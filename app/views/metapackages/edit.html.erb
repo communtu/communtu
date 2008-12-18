@@ -3,10 +3,9 @@
     <span class="headline">Bündel-Informationen anpassen</span>
     <br/>
     <br/>
-        <div align="right"><%= submit_tag "Speichern"%></div>
-    <br/>
-	<% if @metapackage.rating<=1 then @metapackage.rating = 1 else @metapackage.rating = 0 end%>
     <% form_for(@metapackage, :url => distribution_path(@metapackage.distribution) + "/metapackages/" + @metapackage.id.to_s ) do |f| %>
+        <br/>
+        <div align="right"><%= submit_tag "Speichern"%></div>
         <table>
         <tr>
 	        <td>Name:</td>
@@ -21,7 +20,7 @@
         </tr>
         <tr>
 	        <td>Standardmäßig installieren:</td>
-	        <td><%= f.check_box(:rating) %></td>	
+	        <td><%= f.check_box(:default_install) %></td>	
         </tr>
         <tr>
 	        <td valign='top'>Beschreibung:</td>

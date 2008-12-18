@@ -148,14 +148,12 @@ class PackagesController < ApplicationController
   end
   
   def add_comment
-    @files = TempMetapackage.find(:all, :conditions => ["user_id=? AND is_saved=?",\
-      current_user.id, 1])
     @id = params[:id]
   end
   
   def save_comment
     c = Comment.new({ :metapackage_id => params[:id],\
-      :temp_metapackage_id => params[:attach], :user_id => current_user.id,\
+      :user_id => current_user.id,\
       :comment => params[:comment] } )
     c.save 
     redirect_to :controller => :packages, :action => :show, :id => params[:id] 

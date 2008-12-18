@@ -19,9 +19,6 @@
 <% end %>
 </tr>
 <tr>
-	<td>  <b>Version:</b>
-  <%=h @package.version %>
-  </td>
   <td>
   <b>Section:</b>
   <%=h @package.fullsection %>
@@ -37,6 +34,20 @@
 </p>
 <p>
 <% end %>
+
+<p>
+  <table border="1">
+  <tr><th>Distribution</th> <th>Repository</th> <th>Paket-Version</th></tr>
+  <% for pd in @package.package_distrs%>
+    <tr><td><%= link_to(pd.distribution.name, distribution_path(pd.distribution)) %>
+	         </td>
+		<td><%= link_to(pd.repository.url, repository_path(pd.repository)) %>
+		     </td>
+		<td><%= pd.version %></td>	 
+    </tr>
+  <% end %>
+  </table>	
+</p>
 
 <% if not @package.videos.empty? then %>
   <p>
@@ -84,9 +95,4 @@
 <%= link_to 'Bearbeiten', {:action => 'edit', :id => @package.id} %> &nbsp;&nbsp;
 <% if !@package.depends_or_recommends.empty? then%>
 <%= link_to 'Metapaket in Bündel wandeln', {:action => 'convert', :id => @package.id} %> &nbsp;&nbsp;
-<% end %>
-<%= link_to 'Zurück', distribution_packages_path(@package.distribution_id) %>
-<% if (not session[:meta_cart].nil?) and @package.distribution_id == @distribution_id %>
-		| <%= link_to_remote('Zu Bündel hinzufügen', :update => 'meta_cart',\
-			:url => { :controller => :temp_metapackages, :action => :add_to_cart, :id => @package.id}) %>
 <% end %>

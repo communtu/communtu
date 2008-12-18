@@ -1,13 +1,8 @@
 <%= render_flash %>
 
 <div class="inner1">
-<% options = "<option value='0'>-----</option>" %>
-<% @files.each do |f|%>
-	<% options += "<option value='" + f.id.to_s + "'>" + f.name + "</option>"%>
-<% end %>
 <table>
 <%= form_tag ("/packages/save_comment/" + @id.to_s) %>
-	<!--<tr><td>Bündel anfügen:</td><td><%= select_tag 'attach', options %></td></tr>-->
 	<tr><td valign='top'>Kommentar: </td><td>
 		<%= text_area_tag 'input', nil, { :type => :textarea, :name => :comment, :cols => 80,\
 		:rows => 10 }%>

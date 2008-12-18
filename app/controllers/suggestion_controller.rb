@@ -11,29 +11,38 @@ class SuggestionController < ApplicationController
 
         category = Category.find(p.category_id)
         # adapt: look for metas matching with user's distribution
-        metas    = Metapackage.find(:all, :conditions => ["category_id = ? and distribution_id = ? and rating <= ? and license_type <= ?", \
-            category.id, current_user.distribution.id, p.rating, current_user.license])
-            
+        if p.rating == 0 then
+          metas = []
+        else
+          metas = Metapackage.find(:all, :conditions => ["category_id = ? and distribution_id = ? and default_install = ? and license_type <= ?", \
+            category.id, current_user.distribution.id, true, current_user.license])
+        end    
         @selection.store(category, metas)
     
     end
   end
 
-  def recursive_packages meta, package_install, package_names, package_sources
+  def recursive_packages meta, package_install, package_names, package_sources, dist
     meta.base_packages.each do |p|
         if p.class == Package
-            package_names.push(p.name)
-            package_sources.store(p.repository, p.repository.url)
+            rep = p.repository(dist)
+            if !rep.nil? then
+              package_names.push(p.name)
+              package_sources.store(rep, rep.url)
+            else
+              package_names.push(p.name+"NOREP")              
+            end
         else
-            recursive_packages p, package_install, package_names, package_sources
+            recursive_packages p, package_install, package_names, package_sources, dist
         end
     end
   end
 
   def install_new
     if logged_in? then
+      dist = current_user.distribution
       # package list has already been created for logged in user
-      install_aux(current_user.selected_packages)
+      install_aux(current_user.selected_packages,dist)
     else
       # for anonymous installations, we have to build the package list now
       distribution = session[:distribution]
@@ -42,24 +51,32 @@ class SuggestionController < ApplicationController
       packages = []
       # adpat, s.above
       session[:profile].each do |category, value|
-        metas = Metapackage.find(:all, :conditions => ["category_id = ? and distribution_id = ? and license_type <= ? and rating <= ?", \
-                                                       category, distribution, license, value])
+        if value == 0 then
+          metas = []
+        else
+           metas = Metapackage.find(:all, :conditions => ["category_id = ? and distribution_id = ? and license_type <= ? and default_install = ?", \
+                                                       category, distribution, license, true])
+        end                                               
         packages += metas
       end
-      install_aux(packages)
+      install_aux(packages,distribution)
     end
   end
 
   def quick_install
-    install_aux([Metapackage.find(params[:mid])])
+    dist = current_user.distribution
+    install_aux([Metapackage.find(params[:mid])],dist)
   end
 
   def install
     packages = params[:post].map {|id,unused| Metapackage.find(id)}
-    install_aux(packages)
+    dist = current_user.distribution
+    install_aux(packages,dist)
   end
 
-  def install_aux(packages)
+  def install_aux(packages,dist)
+
+
     package_install = ""
     sources         = {}
     package_sources = "" 
@@ -72,7 +89,7 @@ class SuggestionController < ApplicationController
     script += "PACKAGES=\"\"\n"
     packages.each do |p|    
         package_names   = []
-        recursive_packages p, package_install, package_names, sources
+        recursive_packages p, package_install, package_names, sources, dist
         script += "# Bündel: "+p.name+"\n"
         script += "PACKAGES=$PACKAGES\""
         package_names.each do |name|
@@ -139,6 +156,8 @@ class SuggestionController < ApplicationController
   
   def install_apt_url
 
+    dist = current_user.distribution
+    
     @package_install = []
     sources          = {}
     @package_sources = ""
@@ -147,7 +166,7 @@ class SuggestionController < ApplicationController
     packages.each do |id,unused|
     
         package = Metapackage.find(id)
-        recursive_packages package, @package_install, sources
+        recursive_packages package, @package_install, sources, dist
     end
     
     gen_package_sources sources, @package_sources

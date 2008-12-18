@@ -6,13 +6,10 @@ class CreateMetacontentsDerivatives < ActiveRecord::Migration
 
       t.timestamps
     end
-    
-#    Derivative.create(:name => "Ubuntu")
-#    Derivative.create(:name => "Kubuntu")
-#    Derivative.create(:name => "Xubuntu")
-    
+        
     add_column :users, :derivative_id, :integer
     add_column :distributions, :short_name, :string
+    add_column :base_packages, :default_install, :boolean
     g = Distribution.find(1)
     g.short_name = "Gutsy"
     g.save
@@ -25,5 +22,6 @@ class CreateMetacontentsDerivatives < ActiveRecord::Migration
     drop_table :metacontents_derivatives
     remove_column :users, :derivative_id, :integer
     remove_column :distributions, :short_name, :string
+    remove_column :base_packages, :default_install
   end
 end

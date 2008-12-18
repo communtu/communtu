@@ -5,8 +5,8 @@ require 'find'
 class Package < BasePackage
 
   include PackagesHelper
-  belongs_to :distribution
-  belongs_to :repository
+#  belongs_to :distribution
+#  belongs_to :repository
   has_many   :comments, :foreign_key => :metapackage_id, :dependent => :destroy
   has_many :metacontents, :foreign_key => :base_package_id
   has_many :metapackages, :through => :metacontents
@@ -24,9 +24,19 @@ class Package < BasePackage
     :conditions => 'dependencies.dep_type = 2'
   validates_presence_of :name, :version
 
+  def repository(distribution)
+    pd = PackageDistr.find(:first,:conditions=>["package_id = ? and distribution_id = ?",self.id,distribution.id])
+    if pd.nil? then
+      return nil
+    else
+      return pd.repository
+    end
+  end
+
   def distributions
     self.package_distrs.map {|pd| Distribution.find(pd.distribution_id)}
   end
+
   def assign_depends list
     list.each do |p|
       Dependency.create(:base_meta_package_id => id, :base_package_id => p.id, :dep_type => 0)
@@ -318,6 +328,16 @@ class Package < BasePackage
     end
   end
 
+
+  def self.adapt_id(id)
+    p = Package.find(:first, :conditions => ["id = ?",id])
+    if (!p.nil?) && p.distribution_id > 0 then
+      return p.repository_id
+    else
+      return nil
+    end
+  end
+  
   def self.markmc(mc,d)
     dist = Distribution.find(d)
     if !mc.distributions.include?(dist)
@@ -330,37 +350,80 @@ class Package < BasePackage
     der = Derivative.find(2)
     if !mc.derivatives.include?(der)
           mc.derivatives << der
-    end          
+    end   
+    
+    #adjust package id with new package id stored in repository_id
+    pid = adapt_id(mc.base_package_id)
+    if (!pid.nil?) then
+      mc.base_package_id = pid
+      mc.save
+    end
   end
-  # migrate from old database structure to new one
+  
+  # special migration method for a special database containing distributions 1=Gutsy and 2=Hardy
+  def migrate
+      puts "Package for distribution #{self.distribution_id}"
+      p = Package.find(:first, :conditions => ["distribution_id = ? and name = ?",0,self.name])
+      if p.nil? then 
+        # no new package with same name? then create new package
+        # ignore irrelevant and deprecated fields
+        p = BasePackage.create(:distribution_id => 0,:repository_id => 0, :name => self.name,
+               :section => self.section, :version => nil, :description => self.description, 
+               :category_id => self.category_id, :rating => nil, 
+               :license_type => self.license_type, :user_id => nil, :published => self.published,
+               :created_at => self.created_at, :updated_at => self.updated_at,
+               :urls => self.urls, :filename => self.filename, :fullsection => self.fullsection,
+               :icon_file => self.icon_file, :is_program => self.is_program, :popcon => self.popcon)
+        p.type="Package"
+        p.save
+        puts("Package "+self.name+" with id "+p.id.to_s+" newly created")
+      else #merge package with found package
+        puts("Merging packages "+self.id.to_s+" and "+p.id.to_s)
+        if self.distribution_id == 2 then
+          # hardy packages get priority
+          p.description = self.description
+          p.category_id = self.category_id
+          p.license_type = self.license_type
+          if !self.filename.nil? then p.filename = self.filename end
+          if !self.fullsection.nil? then p.fullsection = self.fullsection end
+          if !self.icon_file.nil? then p.icon_file = self.icon_file end
+          if !self.popcon.nil? then p.popcon = self.popcon end
+        end
+          if p.urls.nil? then p.urls = ""; p.save end
+          if !self.urls.nil? && !self.urls=="" then
+            p.urls += " "+self.urls
+          end  
+          p.is_program = p.is_program || self.is_program
+          p.save
+      end
+      PackageDistr.create(:package_id => p.id, :distribution_id => self.distribution_id, :repository_id => self.repository_id, :version => self.version) 
+      puts "packagedistr created: pid: #{p.id}, did:#{self.distribution_id}, repid:#{self.repository_id}"
+      # store link to new package
+      self.repository_id = p.id
+      self.save
+  end
+  
+  # migrate from old database structure to new one. Assumes a special database containing distributions 1=Gutsy and 2=Hardy
   def self.migrate_old
-#    # migrate all Gutsy packages 
-#    Package.find(:all, :conditions => ["distribution_id = ?",1]).each do |p|
-#      p1 = Package.find(:first, :conditions => ["distribution_id = ? and name = ?",2,p.name])
-#      if p1.nil? then # no Hardy package with same name? then keep Gutsy package
-#        p1 = p
-#        PackageDistr.create(:package_id => p1.id, :distribution_id => 1, :repository_id => p.repository_id) 
-#      else   
-#        PackageDistr.create(:package_id => p1.id, :distribution_id => 1, :repository_id => p.repository_id)      
-#      end
-#    end
-#    # mark all Hardy packages 
-#    Package.find(:all, :conditions => ["distribution_id = ?",2]).each do |p|
-#      PackageDistr.create(:package_id => p.id, :distribution_id => 2, :repository_id => p.repository_id)
-#    end
-    # migrate metapackages
+    puts "migrate all packages"
+    Package.find(:all).each do |p|
+      p.migrate
+    end
+    puts "migrate metapackages"
     Metapackage.find(:all).each do |meta|
-      if meta.distribution_id==2 then
+      if meta.distribution_id==2 then # keep Hardy bundle
+        meta.convert_rating
         meta.metacontents.each do |mc|
           markmc(mc,2)
         end
-      else  
+      else # a Gutsy bundle ... try to find matching Hardy bundle
         meta1 =  Metapackage.find(:first,:conditions => ["distribution_id = ? and name = ?",2,meta.name])
-        if meta1.nil? then # no hardy bundle? then keep Gutsy bundle
+        if meta1.nil? then # no Hardy bundle? then keep Gutsy bundle
+          meta.convert_rating
           meta.metacontents.each do |mc|
-          markmc(mc,1)
+            markmc(mc,1)
           end
-        else  
+        else # corresponding Hardy bundle found ... 
           meta.metacontents.each do |mc|
             if !mc.base_package.nil? then
               mc1s = meta1.metacontents.select{|mc1| !mc1.base_package.nil? && mc1.base_package.name == mc.base_package.name}
@@ -368,7 +431,7 @@ class Package < BasePackage
                 p = Package.find(:first,:conditions => ["name = ?",mc.base_package.name])
                 if !p.nil? then
                   mcnew = Metacontent.create(:metapackage_id => meta1.id, :base_package_id => p.id)
-                 markmc(mcnew,1)
+                  markmc(mcnew,1)
                 end
               else
                 markmc(mc1s[0],1)
@@ -379,16 +442,67 @@ class Package < BasePackage
         end
       end
     end
-    # destroy all superfluous Gutsy packages 
-    Package.find(:all, :conditions => ["distribution_id = ?",1]).each do |p|
-      p1 = Package.find(:first, :conditions => ["distribution_id = ? and name = ?",2,p.name])
-      if !p1.nil? then # Hardy package with same name? then destroy Gutsy package
-        p.destroy
-      end  
+
+    puts "Adapt all the comments"
+    Comment.find(:all).each do |c|
+      pid = adapt_id(c.metapackage_id)
+      if !pid.nil? then
+        c.metapackage_id = pid
+        c.save
+      end     
     end
-    
+
+    finish_migrate_old
   end
   
+  def self.finish_migrate_old
+    puts "Adapt all the dependencies"
+    last_id = Dependency.find(:last).id
+    (0..(last_id/1000)+1).each do |n|
+      puts "Adapting the #{n}th thousand"
+      Dependency.find(:all,:conditions => ["id >= ? and id < ?",n*1000,(n+1)*1000]).each do |d|
+        pid = adapt_id(d.base_meta_package_id)
+        if !pid.nil? then
+          d.base_meta_package_id = pid
+          d.save
+        end     
+        pid = adapt_id(d.base_package_id)
+        if !pid.nil? then
+          d.base_package_id = pid
+          d.save
+      end
+    end
+  end
+  
+    puts "Adapt all the videos"
+    Video.find(:all).each do |v|
+      pid = adapt_id(v.base_package_id)
+      if !pid.nil? then
+        v.base_package_id = pid
+        v.save
+      end     
+    end
+
+    puts "destroy all old packages"
+    Package.find(:all, :conditions => ["distribution_id != ?",0]).each do |p|
+        p.destroy
+    end
+
+    puts "Migration finished"
+  end
+  
+  def self.clean_dists
+    MetacontentsDistr.find(:all).each do |md|
+      if md.metacontent.nil? then
+        puts md.id.to_s+" is bad"
+      else  
+        if md.metacontent.base_package.repository(md.distribution).nil? then
+          puts "Removing #{md.metacontent.metapackage.name} / #{md.metacontent.base_package.name} / #{md.distribution.name}"
+          #md.destroy
+        end
+      end
+    end
+  end
 private
   def self.packages_to_hash url
     if url.nil? then return {:error => "Konnte keine URL feststellen"} end

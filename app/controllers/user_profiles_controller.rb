@@ -31,8 +31,12 @@ class UserProfilesController < ApplicationController
     else
       @distribution = Distribution.find(session[:distribution])
       session[:profile].each do |category, value|
-        metas = Metapackage.find(:all, :conditions => ["category_id = ? and distribution_id = ? and license_type <= ? and rating <= ?", \
-            category, @distribution.id, session[:license], value])
+        if value == 0 then
+          metas = []
+        else
+          metas = Metapackage.find(:all, :conditions => ["category_id = ? and distribution_id = ? and license_type <= ? and default_install = ?", \
+            category, @distribution.id, session[:license], true])
+        end    
         @selection += metas
       end
     end
@@ -117,7 +121,7 @@ class UserProfilesController < ApplicationController
                cid, distribution, lic])
       metas.each do |m|
         if logged_in? then
-          update_meta(uid,m,m.rating <= up.rating)
+          update_meta(uid,m,m.default_install && up.rating>0)
         end
       end
       # also recursively update all the children

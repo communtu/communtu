@@ -1,3 +1,5 @@
+# deprecated code, but should be reactivated
+
 require 'tabz'
 
 class UserProfileTabz < Tabz::Base

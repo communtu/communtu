@@ -22,7 +22,7 @@ class UserMetaTabz < Tabz::Base
     end
     
     add_tab do
-        titled "Distributionspakete"
+        titled "Ubuntu-Pakete"
         looks_like "packages/packagelist"
         with_data do
             set_to({ :packages => Package.find_packages(@user_data[:session][:search], 

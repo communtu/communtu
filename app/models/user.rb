@@ -149,46 +149,6 @@ class User < ActiveRecord::Base
   def has_role?(rolename)
     self.roles.find_by_rolename(rolename) ? true : false
   end
- 
-# auxilary method creating inital data for UserPackage table
-  def self.init_user_package
-    User.find(:all).each do |u| 
-      if ! u.distribution_id.nil? then
-        u.update_data
-      end  
-    end
-  end
-  
-  def update_data 
-    # update the data for all the main categories
-    Category.find(1).children.each do |child|
-      up = UserProfile.find(:first, :conditions => ["user_id = ? and category_id = ?",self.id,child.id])
-      if up.nil? then val = 0 else val = up.rating end
-      update_rating(child,val)
-    end
-  end
-  
-  # update the rating for a category and all its children
-  def update_rating(cat,val)
-    if val.nil? then val = 0 end
-    uid = self.id
-    cid = cat.id
-    up = UserProfile.find(:first, :conditions => ["user_id = ? and category_id = ?",uid,cid])
-    if up.nil? then 
-      up = UserProfile.create(:user_id => uid, :category_id => cid, :rating => val)
-    end
-      if up.rating.nil? then upval = 0 else upval = up.rating end
-      # if rating is new, then re-compute metapackage selection
-      metas = Metapackage.find(:all, :conditions => ["category_id = ? and distribution_id = ? and license_type <= ?", \
-               cid, self.distribution.id, self.license])
-      metas.each do |m|
-        update_meta(m,m.rating <= upval)
-      end
-      # also recursively update all the children
-      cat.children.each do |child|
-        update_rating(child,val)
-      end 
-  end
 
   # update meta package selection to default given by sel
   def update_meta(m,sel)

@@ -48,11 +48,6 @@ class MetapackagesController < ApplicationController
   # POST /metapackages
   # POST /metapackages.xml
   def create
-    # for historical reesons, for rating, we use 1=true and 2=false
-    if params[:metapackage][:rating]=="0"
-      then 
-      params[:metapackage][:rating]=2
-    end
     @metapackage = Metapackage.new(params[:metapackage])
 
     respond_to do |format|
@@ -70,21 +65,18 @@ class MetapackagesController < ApplicationController
   # PUT /metapackages/1.xml
   def update
     @metapackage = Metapackage.find(params[:id])
-    # for historical reesons, for rating, we use 1=true and 2=false
-    if params[:metapackage][:rating]=="0"
-      then 
-      params[:metapackage][:rating]=2
-    end
+    # correction of nil entries
     if params[:distributions].nil? then
       params[:distributions] = []
     end
+    if params[:derivatives].nil? then
+      params[:derivatives] = []
+    end
+    Metacontent.find(:first, :conditions => ["metapackage_id = ? and base_package_id = ?",@metapackage.id,p])
     params[:distributions].each do |p, dists|
       mc = Metacontent.find(:first, :conditions => ["metapackage_id = ? and base_package_id = ?",@metapackage.id,p])
       mc.metacontents_distrs.each {|d| d.destroy} # delete all distributions
       dists.each {|d| mc.distributions << Distribution.find(d)}     # and add the selected ones
-    end
-    if params[:derivatives].nil? then
-      params[:derivatives] = []
     end
     params[:derivatives].each do |p, ders|
       mc = Metacontent.find(:first, :conditions => ["metapackage_id = ? and base_package_id = ?",@metapackage.id,p])
@@ -269,14 +261,12 @@ class MetapackagesController < ApplicationController
   end
   
   def add_comment
-    @files = TempMetapackage.find(:all, :conditions => ["user_id=? AND is_saved=?",\
-      current_user.id, 1])
     @id = params[:id]
   end
   
   def save_comment
     c = Comment.new({ :metapackage_id => params[:id],\
-      :temp_metapackage_id => params[:attach], :user_id => current_user.id,\
+      :user_id => current_user.id,\
       :comment => params[:comment] } )
     c.save 
     redirect_to :controller => :metapackages, :action => :show, :id => params[:id] 

@@ -6,6 +6,10 @@ class CreateDerivatives < ActiveRecord::Migration
 
       t.timestamps
     end
+    Derivative.create(:name => "Ubuntu")
+    Derivative.create(:name => "Kubuntu")
+    Derivative.create(:name => "Xubuntu")
+
   end
 
   def self.down

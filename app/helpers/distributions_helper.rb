@@ -18,10 +18,10 @@ module DistributionsHelper
           link = (link_to (repo.url + " " + repo.subtype), { :controller => :repositories, :action => :edit,\
             :id => repo.id, :distribution_id => repo.distribution_id })
           sync_link = (link_to (tag "img", { :src => "/images/view-refresh.png", :width => "22", :height => "22",\
-            :alt => "Synchronize repository", :class => "link_img"}) ,\
+            :alt => "Repository synchronisieren", :class => "link_img"}) ,\
             { :controller => :admin, :action => :sync_package, :id => repo.id})
           del_link =  (link_to (tag "img", { :src => "/images/edit-delete.png", :width => "22", :height => "22",\
-            :alt => "Delete repository", :class => "link_img"}) ,\
+            :alt => "Repository löschen", :class => "link_img"}) ,\
              "/distributions/#{repo.distribution_id}/repositories/#{repo.id}/destroy")
           row = "<tr><td class='" + css + "' valign='middle'>" + sync_link +\
              "</td><td class='" + css + "' valign='middle'>" + link + "</td>" +\
@@ -43,8 +43,7 @@ module DistributionsHelper
   #with_buttons=should buttons be displayed?
   def dist_show dist, style, with_buttons = true
     out = "<div class='" + style + "'><span class='headline'>" +\
-    dist.name + "</span><p>" + dist.description + "</p>" + \
-    "<b>Packages: " + dist.packages.size.to_s + "</b><br/>"
+    dist.name + "</span><p>" + dist.description + "</p>"
     
     if with_buttons
      out += (link_to 'Anzeigen/Quellen hinzufügen', dist) + " | " + (link_to 'Bündel anzeigen', distribution_metapackages_path(dist.id)) +\

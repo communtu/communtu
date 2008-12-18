@@ -40,6 +40,12 @@ class Metapackage < BasePackage
     return '<img border="0" height="'+s+'" width="'+s+'" src="/images/apps/Metapackage.png"/>'
   
   end
+
+  # convert rating to new default_install field
+  def convert_rating
+    self.default_install = (!rating.nil?) && rating<=1
+    self.save
+  end
   
   protected
   

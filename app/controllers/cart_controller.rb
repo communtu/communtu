@@ -55,7 +55,7 @@ class CartController < ApplicationController
                 meta.distribution_id = current_user.distribution_id
                 meta.category_id     = 1
                 meta.description     = ""
-                meta.rating          = 0
+                meta.default_install = false
                 meta.save!
             end
             

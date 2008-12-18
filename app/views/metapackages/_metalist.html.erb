@@ -16,11 +16,11 @@
      <% css = cycle("packageList0", "packageList1") %>
       <tr>
         <td class="<%= css %>" valign="middle">
-		    <%= link_to metapackage.name, distribution_metapackage_path(metapackage.distribution, metapackage) %></td>
+		    <%= link_to metapackage.name, metapackage_path(metapackage) %></td>
         <td class="<%= css %>" valign="middle">
 		    <%=h metapackage.category.name %></td>
         <td class="<%= css %>" valign="middle">
-		    <%=metapackage.rating <= 1 ?  "ja" : "nein" %></td>
+		    <%=metapackage.default_install ?  "ja" : "nein" %></td>
 	    <td class="<%= css %>" valign="middle" align="middle">
 	        <% if metapackage.published == Metapackage.state[:published] %>
 	            <%= image_tag("yes.png", :size => "22x22", :border => "0") %>
