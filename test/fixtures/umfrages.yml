@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  einsteiger: false
+  freak: false
+  sammler: false
+  musik: false
+  video: false
+  netz: false
+  grafik: false
+  spiele: false
+  email: MyString
+
+two:
+  einsteiger: false
+  freak: false
+  sammler: false
+  musik: false
+  video: false
+  netz: false
+  grafik: false
+  spiele: false
+  email: MyString

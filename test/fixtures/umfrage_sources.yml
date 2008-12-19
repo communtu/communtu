@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  umfrage_id: 1
+  source: MyString
+
+two:
+  umfrage_id: 1
+  source: MyString
