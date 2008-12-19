@@ -8,10 +8,16 @@ Communtu hilft, die Installation von Ubuntu noch weiter zu vereinfachen und dabe
 <% if logged_in? %>
 <p>Die Seitenleiste links bietet folgende Möglichkeiten:</p>
 <ul>
-<li><b>Profil bearbeiten</b> erlaubt dir, deine Einstellungen zu bearbeiten: für welche Aufgaben willst du deinen Ubuntu-PC benutzen? Das solltest du als erstes eintragen.</li>
-<li><b>Installationsvorschläge</b> bietet dir eine Zusammenstellung (Bündelung) von Programmen für die Installation auf deinem Computer an (entsprechend deines aktuellen Benutzerprofils).</li>
-<li><b>Bündel verwalten</b> Hast du gute Erfahrungen mit Programmen gemacht? Dann kannst du sie hier thematisch bündeln. </li>
-<li><b>Ubuntu-Versionen</b> Übersicht über die im System verfügbaren Ubuntu-Distributionen.</li>
+<li><b>Installation</b> bietet dir eine Zusammenstellung (Bündelung) von Programmen für die Installation auf deinem Computer an, entsprechend deinen Angaben, für welche Aufgaben du deinen Ubuntu-PC benutzen willst.</li>
+<li><b>Bündel verwalten</b> Hast du gute Erfahrungen mit Programmen gemacht? Dann kannst du sie hier thematisch bündeln, oder auch bestehende Bündel angucken. </li>
+<li><b>Programme suchen</b> Hier kannst du nach einzelnen Ubuntu-Programmen (Paketen) suchen.</li>
+<li><b>Ubuntu-Derivate</b> bietet eine Übersicht über Kubuntu, Xubuntu, Medibuntu und wie sie alle heißén...</li>
+<li><b>Ubuntu-Versionen</b> Übersicht über die im System verfügbaren Ubuntu-Versionen (Distributionen).</li>
+<% if is_admin? %>
+<li><b>Benutzer verwalten</b> Hier kannst du als Admin die Rollen der Benutzer ändern. Vorsicht walten lassen!</li>
+<li><b>Kategorien verwalten</b> Hier kannst du als Admin neue Kategorien erstellen oder die Struktur des Kategorienbaums ändern. Vorsicht walten lassen!</li>
+<% end %>
+<li><b>Communtu-Blog</b> Austausch über Erfahrungen mit Communtu, Hinweise auf Veranstaltungen zu Communtu, ...</li>
 </ul>
 Es gibt auch noch <%= link_to 'genauere Infos', '/home/about' %> &uuml;ber das Projekt und &uuml;ber die Mitwirkenden im <%= link_to 'Impressum.', '/home/impressum' %>
 <% else %>
