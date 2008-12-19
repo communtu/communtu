@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
-    
+  protect_from_forgery :only => [:create, :update, :destroy] 
+  
   def home
   end
   
