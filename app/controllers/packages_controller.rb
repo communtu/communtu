@@ -3,7 +3,6 @@ class PackagesController < ApplicationController
   # GET /Packages
   # GET /Packages.xml
   def index         
-    @distribution = Distribution.find(params[:distribution_id])
     @packages     = Package.find_packages(session[:search], session[:group], session[:programs], params[:page])
     @groups       = Package.find(:all, :select => "DISTINCT section", :order => "section")
     
@@ -23,23 +22,13 @@ class PackagesController < ApplicationController
     else
       session[:group] = group
     end
-    redirect_to distribution_path(Distribution.find(params[:id])) + "/packages"
+    redirect_to "/packages"
   end
   
   # GET /Packages/1
   # GET /Packages/1.xml
   def show
     @package = Package.find(params[:id])
-    
-    if not session[:meta_cart].nil?
-      dist = TempMetapackage.find(:first, :conditions => [ "id=?", session[:meta_cart] ])
-    end
-    
-    if not dist.nil?
-      @distribution_id = dist.distribution_id
-    else
-      @distribution_id = -1 if @distribution_id.nil?
-    end
     
     respond_to do |format|
       format.html # show.html.erb

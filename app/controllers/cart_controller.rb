@@ -24,7 +24,7 @@ class CartController < ApplicationController
           cart    = Cart.find(session[:cart])
           err = ""
           params[:datei][:attachment].read.split("\n").each do |n|
-            package = BasePackage.find(:first, :conditions => ["name = ? and distribution_id = ? ",n,current_user.distribution_id])
+            package = BasePackage.find(:first, :conditions => ["name = ?",n])
             if package.nil? then
               err += n+" "
             else  
