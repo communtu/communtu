@@ -54,4 +54,8 @@ module ApplicationHelper
     session[:cart] = cart.id
     redirect_to "/users/" + current_user.id.to_s + "/metapackages/2"    
   end
+  
+  def change_date_time(datum) 
+    datum.strftime("%d.%m.%Y %H:%M")
+  end
 end

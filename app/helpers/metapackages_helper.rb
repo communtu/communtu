@@ -5,7 +5,7 @@ module MetapackagesHelper
     comments.each do |c|      
       out += "<div class='inner1' style='max-width:80%;'><table  width='
       100%'><tr><td>"+
-          c.created_at.to_s + "     Von: " + c.user.login + "</td><td align='right'>" + "</td></tr><tr><td colspan='2'><hr/>" +\
+          c.user.login + " - " + change_date_time(c.created_at).to_s + "</td><td align='right'>" + "</td></tr><tr><td colspan='2'><hr/>" +\
           c.comment + "</td></tr></table></div>"
     end
     return out
