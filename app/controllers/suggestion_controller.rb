@@ -25,12 +25,12 @@ class SuggestionController < ApplicationController
   def recursive_packages meta, package_install, package_names, package_sources, dist
     meta.base_packages.each do |p|
         if p.class == Package
-            rep = p.repository(dist)
-            if !rep.nil? then
+            reps = p.repositories(dist)
+            if !reps.empty? then
               package_names.push(p.name)
-              package_sources.store(rep, rep.url)
-            else
-              package_names.push(p.name+"NOREP")              
+              reps.each do |rep|
+                package_sources.store(rep, rep.url)
+              end
             end
         else
             recursive_packages p, package_install, package_names, package_sources, dist

@@ -56,6 +56,11 @@ module ApplicationHelper
   end
   
   def change_date_time(datum) 
-    datum.strftime("%d.%m.%Y %H:%M")
-  end
+    if datum.nil? then
+      ""
+    else
+      datum.strftime("%d.%m.%Y %H:%M")
+    end  
+  end  
+
 end

@@ -2,7 +2,7 @@ module MetapackagesHelper
 
   def show_comments comments
     out = ""
-    comments.each do |c|      
+    comments.reverse.each do |c|      
       out += "<div class='inner1' style='max-width:80%;'><table  width='
       100%'><tr><td>"+
           c.user.login + " - " + change_date_time(c.created_at).to_s + "</td><td align='right'>" + "</td></tr><tr><td colspan='2'><hr/>" +\

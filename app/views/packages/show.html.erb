@@ -61,21 +61,25 @@
 <% end %>
 
 <p>
-  <b>Beschreibung:</b>
+  <b>Beschreibung:</b><br />
   <%= @package.description %>
 </p>
 
-<% if !@package.depends_or_recommends.empty? then%>
   <p>
   <b>Beinhaltet folgende Pakete:</b>
-  <% @package.depends_or_recommends.each do |p| %>
-    <% if (icon=p.icon(20))!="" %>
-      &nbsp;<%= icon%>
-    <% end %>
+  <% @package.package_distrs.each do |pd| %>
+    <br />
+    <%= link_to(pd.distribution.name, distribution_path(pd.distribution)) %>
+	         <%= link_to(pd.repository.url, repository_path(pd.repository)) %>
+    <br />
+    <% pd.depends_or_recommends.each do |p| %>
+      <% if (icon=p.icon(20))!="" %>
+        &nbsp;<%= icon%>
+      <% end %>
     <%= link_to p.name, {:controller => 'packages', :action => 'show', :id => p.id}%>
+    <% end %>
   <% end %>
   </p>
-<% end %>
 
 <% if !@package.metapackages.empty? then%>
   <p>
@@ -93,6 +97,6 @@
 
 </div>
 <%= link_to 'Bearbeiten', {:action => 'edit', :id => @package.id} %> &nbsp;&nbsp;
-<% if !@package.depends_or_recommends.empty? then%>
+
 <%= link_to 'Metapaket in Bündel wandeln', {:action => 'convert', :id => @package.id} %> &nbsp;&nbsp;
-<% end %>
+

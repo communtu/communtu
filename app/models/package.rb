@@ -13,55 +13,25 @@ class Package < BasePackage
   has_many :package_distrs, :foreign_key => :package_id
 #  has_many :distributions, :through => :package_distrs
   has_many :repositories, :through => :package_distrs
-  has_many :dependencies, :foreign_key => :base_meta_package_id
-  has_many :depends, :through => :dependencies, :source => :base_package, \
-    :conditions => 'dependencies.dep_type = 0'    
-  has_many :recommends, :through => :dependencies, :source => :base_package, \
-    :conditions => 'dependencies.dep_type = 1'
-  has_many :depends_or_recommends, :through => :dependencies, :source => :base_package, \
-    :conditions => 'dependencies.dep_type <= 1'
-  has_many :conflicts, :through => :dependencies, :source => :base_package, \
-    :conditions => 'dependencies.dep_type = 2'
-  validates_presence_of :name, :version
+  validates_presence_of :name
 
-  def repository(distribution)
-    pd = PackageDistr.find(:first,:conditions=>["package_id = ? and distribution_id = ?",self.id,distribution.id])
-    if pd.nil? then
-      return nil
-    else
-      return pd.repository
-    end
+  def repositories(distribution)
+    pds = PackageDistr.find(:all,:conditions=>["package_id = ? and distribution_id = ?",self.id,distribution.id])
+    return pds.map{|pd| pd.repository}
   end
 
   def distributions
     self.package_distrs.map {|pd| Distribution.find(pd.distribution_id)}
   end
 
-  def assign_depends list
-    list.each do |p|
-      Dependency.create(:base_meta_package_id => id, :base_package_id => p.id, :dep_type => 0)
-    end
-  end
-
-  def assign_recommends list
-    list.each do |p|
-      Dependency.create(:base_meta_package_id => id, :base_package_id => p.id, :dep_type => 1)
-    end
-  end
-
-  def assign_conflicts list
-    list.each do |p|
-      Dependency.create(:base_meta_package_id => id, :base_package_id => p.id, :dep_type => 2)
-    end
-  end
-  
   def unique_name(distribution)
     name+"-"+distribution.name.split(" ")[0]
   end
+  
   def is_meta
     section=="metapackages"
   end
-  
+
   def is_sub_meta(m)
     repository == m.repository &&
     (self.depends_or_recommends - m.depends_or_recommends).empty? 
@@ -140,6 +110,7 @@ class Package < BasePackage
       if parts[1][-1] != 47 then
         parts[1] += "/"
       end
+      # get URL for 32 bit version - this should be changed in the future!
       url = parts[1] + "dists/" + parts[2] + "/" + parts[3] + "/binary-i386/Packages.gz"
       return {:url => url}
     else
@@ -147,15 +118,22 @@ class Package < BasePackage
     end    
   end
   
+  def self.min(x,y)
+    if x <= y then x else y end
+  end
+  
   def self.import_source repository
+
+    distribution_id = repository.distribution_id
+
+    # get URL for repository
     url  = get_url_from_source(repository.url + " " + repository.subtype)
     if !url[:error].nil? then
       return url
     end
     url = url[:url]
-    packages = packages_to_hash url 
-    distribution_id = repository.distribution_id
-    
+    # read in all packages from repository
+    packages = packages_to_hash url     
     if !packages[:error].nil? then
       return packages
     end
@@ -164,68 +142,106 @@ class Package < BasePackage
       "failed" => [], "url" => url }
 
     # enter packages
-    packages[:packages].each do |key,package|
+    packages[:packages].each do |name,package|
  
-      if not package["Description"].nil?
-        package["Description"] = package["Description"].gsub(/ . /, "<br/>")
-      else
+      # adapt description if nil
+      if package["Description"].nil?
         package["Description"] = ""
       end
-      
-      attributes = { :name => key, :version => package["Version"],\
-          :distribution_id => distribution_id, 
+
+      # compute attributes for package
+      attributes_package = { :name => name, 
           :description => package["Description"],\
           :fullsection => package["Section"],\
           # für :section nur den letzten Teil verwenden
-          :section => package["Section"].split("/")[-1],\
-          :filename => package["Filename"],\
-          :repository_id => repository.id,
-          :license_type => repository.license_type}
-      
-      res = Package.find(:first, :conditions => ["name=? AND version=? AND distribution_id=?",\
-        key, package["Version"], distribution_id])
- 
-      if res.nil?
-        
-        res= Package.new(attributes)
-          
-        if res.save
+          :section => package["Section"].split("/")[-1]}
+
+      # look for existing package
+      p = Package.find(:first, :conditions => ["name=?",name])
+      if p.nil?
+        # no package? create a new one
+        p= Package.new(attributes_package)
+        if p.save
           info["new_count"] = info["new_count"].next 
         else
-          info["failed"].push key
+          info["failed"].push name
         end
-        
       else
-        if res.update_attributes(attributes)
+        # package exists, then update attributes
+        if p.update_attributes(attributes_package)
           info["update_count"] = info["update_count"].next
         else
-          info["failed"].push key
+          info["failed"].push name
         end
       end
-    end
 
-    # enter dependency info
-    packages[:packages].each do |key,package|
-      p = Package.find(:first, :conditions => ["name=? AND version=? AND distribution_id=?",\
-             key, package["Version"], distribution_id])
+      # compute attributes for package_distr
+      attributes_package_distr = {
+          :package_id => p.id,
+          :version => package["Version"],
+          :distribution_id => distribution_id, 
+          :filename => package["Filename"],
+          :repository_id => repository.id,
+          :size => package["Size"], 
+          :installedsize => package["Installed-Size"]}
+
+      # compute license type by minimum with existing one
+      if p.license_type.nil? then
+        p.license_type = repository.license_type
+      else 
+        p.license_type = min(repository.license_type,p.license_type)
+      end
+
+      # compute security type by minimum with existing one
+      if p.security_type.nil? then
+        p.security_type = repository.security_type
+      else 
+        p.security_type = min(repository.security_type,p.security_type)
+      end   
+
+      # update package_distr
+      pd = PackageDistr.find(:first, :conditions => 
+             ["package_id = ? and repository_id = ?",p.id,repository.id])
+      if pd.nil?
+        # no package_distr? create a new one
+          pd = PackageDistr.new(attributes_package_distr)
+          if !pd.save then
+            info["failed"].push(name + " " + repository.url)
+          end
+      else
+        # package exists, then update attributes
+          if !pd.update_attributes(attributes_package_distr) then
+            info["failed"].push(name + " " + repository.url)
+          end
+      end         
+    end # packages[:packages].each 
+    
+    # enter dependency info - this must happen *after* creation of the packages!
+    packages[:packages].each do |name,package|
+      p = Package.find(:first, :conditions => ["name=?",name])
       if not p.nil?
-        p.dependencies.delete_all
-        p.assign_depends(parse_dependencies(package["Depends"],distribution_id))
-        p.assign_recommends(parse_dependencies(package["Recommends"],distribution_id))
-        p.assign_conflicts(parse_dependencies(package["Conflicts"],distribution_id))
-      end    
+        pd = PackageDistr.find(:first, :conditions => 
+           ["package_id = ? and repository_id = ?",p.id,repository.id])
+        if not pd.nil?
+          pd.dependencies.delete_all
+          pd.assign_depends(parse_dependencies(package["Depends"]))
+          pd.assign_recommends(parse_dependencies(package["Recommends"]))
+          pd.assign_conflicts(parse_dependencies(package["Conflicts"]))
+        else xx 
+        end
+      else xy
+      end
     end
   
     return info
   end
 
-  def self.parse_dependencies(s,distribution)
+  def self.parse_dependencies(s)
     if s.nil? then
       return []
     else
       s.split(",").map{|s1| s1.split(" (").first.lstrip}.map{ |name|
-        Package.find(:first, :conditions => ["name=? AND distribution_id=?",\
-               name, distribution]) }.compact
+        Package.find(:first, :conditions => ["name=?",name]) }.compact
     end
   end
 
@@ -503,6 +519,7 @@ class Package < BasePackage
       end
     end
   end
+  
 private
   def self.packages_to_hash url
     if url.nil? then return {:error => "Konnte keine URL feststellen"} end
@@ -546,7 +563,8 @@ private
   def self.is_valid_option? option
     option == "Version" or option == "Description" or option == "Section" \
      or option == "Depends" or option == "Recommends" \
-     or option == "Conflicts" or option == "Filename"
+     or option == "Conflicts" or option == "Filename" \
+     or option == "Installed-Size" or option == "Size"
   end
   
 end

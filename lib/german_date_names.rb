@@ -1,4 +1,4 @@
-silence_warnings do
+class Date
 
 Date::MONTHNAMES = [nil] + %w(Januar Februar März April Mai Juni Juli August September Oktober November Dezember)
 
@@ -8,15 +8,6 @@ Date::ABBR_MONTHNAMES = [nil] + %w(Jan Feb März Apr Mai Jun Jul Aug Sep Okt Nov
 
 Date::ABBR_DAYNAMES = %w(So Mo Di Mi Do Fr Sa)
 
-
-
-Time::MONTHNAMES = Date::MONTHNAMES
-
-Time::DAYNAMES = Date::DAYNAMES
-
-Time::ABBR_MONTHNAMES = Date::ABBR_MONTHNAMES
-
-Time::ABBR_DAYNAMES = Date::ABBR_DAYNAMES
 
 end
 
