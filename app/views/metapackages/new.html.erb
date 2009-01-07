@@ -15,17 +15,13 @@
 
   <p>
     <b>Kategorie</b><br />
-    <%= f.text_field :category_id %>
+      	<% @categories = Category.find(:all, :order => "name")%>
+        <%= f.collection_select(:category_id,@categories,:id,:name)%>
   </p>
 
   <p>
     <b>Standardmäßig installieren</b><br />
     <%= f.check_box :default_install %>
-  </p>
-
-  <p>
-    <b>Distribution</b><br />
-    <%= f.text_field :distribution_id %>
   </p>
 
   <p>

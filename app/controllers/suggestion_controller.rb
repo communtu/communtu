@@ -14,8 +14,8 @@ class SuggestionController < ApplicationController
         if p.rating == 0 then
           metas = []
         else
-          metas = Metapackage.find(:all, :conditions => ["category_id = ? and distribution_id = ? and default_install = ? and license_type <= ?", \
-            category.id, current_user.distribution.id, true, current_user.license])
+          metas = Metapackage.find(:all, :conditions => ["category_id = ? and default_install = ? and license_type <= ?", \
+            category.id, true, current_user.license])
         end    
         @selection.store(category, metas)
     
@@ -54,8 +54,8 @@ class SuggestionController < ApplicationController
         if value == 0 then
           metas = []
         else
-           metas = Metapackage.find(:all, :conditions => ["category_id = ? and distribution_id = ? and license_type <= ? and default_install = ?", \
-                                                       category, distribution, license, true])
+           metas = Metapackage.find(:all, :conditions => ["category_id = ? and license_type <= ? and default_install = ?", \
+                                                       category, license, true])
         end                                               
         packages += metas
       end

@@ -46,13 +46,12 @@ class CartController < ApplicationController
         if editing_metapackage?
         
             cart = Cart.find(session[:cart])
-            meta = Metapackage.find(:first, :conditions => ["user_id = ? and name = ? and distribution_id = ?", current_user.id, cart.name, current_user.distribution_id])
+            meta = Metapackage.find(:first, :conditions => ["user_id = ? and name = ?", current_user.id, cart.name])
 
             if meta.nil?
                 meta = Metapackage.new
                 meta.name            = cart.name
                 meta.user_id         = current_user.id
-                meta.distribution_id = current_user.distribution_id
                 meta.category_id     = 1
                 meta.description     = ""
                 meta.default_install = false
@@ -60,10 +59,15 @@ class CartController < ApplicationController
             end
             
             license = 0
-            # delete old packages...
-            meta.base_packages.each {|p| meta.base_packages(force_reload=true).delete(p)}
+            # delete packages outside cart...
+            meta.base_packages(force_reload=true).each do |p| 
+              if !cart.base_packages.include?(p) then
+                meta.base_packages(force_reload=true).delete(p)
+              end  
+            end
             # ... and insert packages from cart
             cart.base_packages.each do |package|
+              if !meta.base_packages.include?(package) then
                 content = Metacontent.new
                 content.metapackage_id  = meta.id
                 content.base_package_id = package.id
@@ -76,13 +80,14 @@ class CartController < ApplicationController
                     lic = package.license_type
                     license = lic if lic > license
                 end
+              end  
             end
             
             meta.update_attributes({:license_type => license})
             cart.destroy
             session[:cart] = nil
         end
-        redirect_to "/distributions/" + current_user.distribution_id.to_s + "/metapackages/" \
+        redirect_to "/metapackages/" \
             + meta.id.to_s + "/edit"
     end
     

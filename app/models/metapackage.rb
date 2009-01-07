@@ -8,7 +8,7 @@ class Metapackage < BasePackage
   belongs_to :distribution
   belongs_to :user
   
-  validates_uniqueness_of :scope => :distribution_id
+  validates_presence_of :name, :license_type, :user, :category
   
   @state = { :pending => 0, :published => 1, :rejected => 2 }
   @levels = [ "gar nicht", "normal", "erweitert", "Experte", "Freak" ]
@@ -48,10 +48,11 @@ class Metapackage < BasePackage
   end
   
   protected
-  
+
+  #### needs to be rewritten
   def migrate_intern(distribution, current_user, failed, doubles, ignore)
 
-    meta = Metapackage.find(:first, :conditions => ["name = ? and distribution_id = ?", self.name, distribution.id])
+    meta = Metapackage.find(:first, :conditions => ["name = ?", self.name])
     if not meta.nil? and not ignore.include? meta
         doubles.push(meta)
     end

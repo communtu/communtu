@@ -78,7 +78,11 @@ class Package < BasePackage
   def self.license_types
     license_types = [ "OpenSource", "Commercial" ]
   end
-  
+
+  def self.show_license_type(t)
+    if t.nil? then "Unbekannt" else license_types[t] end
+  end
+
   def self.security_types
     security_types  = [ "Native", "Trusted", "Third-Party" ]
   end

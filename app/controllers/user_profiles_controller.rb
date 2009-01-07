@@ -117,8 +117,8 @@ class UserProfilesController < ApplicationController
 
     if is_new then
       # if rating is new, then re-compute metapackage selection
-      metas = Metapackage.find(:all, :conditions => ["category_id = ? and distribution_id = ? and license_type <= ?", \
-               cid, distribution, lic])
+      metas = Metapackage.find(:all, :conditions => ["category_id = ? and license_type <= ?", \
+               cid, lic])
       metas.each do |m|
         if logged_in? then
           update_meta(uid,m,m.default_install && up.rating>0)
