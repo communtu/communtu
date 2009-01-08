@@ -154,6 +154,7 @@ class UserProfilesController < ApplicationController
     end
     
     #... with new one from the form
+    if params[:post].nil? then params[:post] = {} end
     params[:post].each do |key, value|
       if logged_in? then
         UserPackage.create(:user_id => uid, :package_id => key, :is_selected => true)
