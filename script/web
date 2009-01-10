@@ -1,0 +1,42 @@
+#!/bin/bash
+
+function start {
+     nohup script/server -e production -p $1 >> log/server$1.log 2>&1 &
+}
+
+function startall {
+    start 3002
+    start 3004
+    start 3005
+    start 3006
+}
+
+function stop {
+	pkill -2 -f "\-p $1"
+}
+
+function stopall {
+    stop 3002
+    stop 3004
+    stop 3005
+    stop 3006
+}
+
+# main script
+
+cd $(dirname $0)/..
+
+case $1 in
+	start)
+		startall
+	;;
+	stop)
+		stopall
+
+	;;
+	restart)
+		stopall
+		startall
+	;;
+
+esac
