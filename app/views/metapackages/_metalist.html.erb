@@ -15,26 +15,26 @@
      <% css = cycle("packageList0", "packageList1") %>
       <tr>
         <td class="<%= css %>" valign="middle">
-		    <%= link_to metapackage.name, metapackage_path(metapackage) %></td>
+		    <%= link_to(metapackage.name, metapackage_path(metapackage), :title => "zur Detailansicht") %></td>
         <td class="<%= css %>" valign="middle">
 		    <%=h metapackage.category.name %></td>
         <td class="<%= css %>" valign="middle">
 		    <%=metapackage.default_install ?  "ja" : "nein" %></td>
 	    <td class="<%= css %>" valign="middle" align="middle">
 	        <% if metapackage.published == Metapackage.state[:published] %>
-	            <%= image_tag("yes.png", :size => "22x22", :border => "0") %>
+	            <%= image_tag("yes.png", :size => "22x22", :border => "0", :title => "veröffentlicht", :alt => "veröffentlicht") %>
 	        <% else %>
-	            <%= image_tag("no.png", :size => "22x22", :border => "0") %>
+	            <%= image_tag("no.png", :size => "22x22", :border => "0", :title => "nicht veröffentlicht", :alt => "nicht veröffentlicht") %>
 	        <% end %>
 	    </td>
 		<td class="<%= css %>" valign="middle" align="middle">
-			<%= link_to image_tag("/images/install.png", :size => "22x22", :border => 0), user_path(current_user) + "/suggestion/quick_install/" + metapackage.id.to_s%>		
+			<%= link_to image_tag("/images/install.png", :size => "22x22", :border => "0", :title => "installieren", :alt => "installieren"), user_path(current_user) + "/suggestion/quick_install/" + metapackage.id.to_s%>		
 		</td>	
         <% if logged_in? %>
         <td class="<%= css %>" valign="middle" width="30">
                 <% if (metapackage.user_id == current_user.id) or is_admin? %>
                     <% if editing_metapackage? %>
-                        <%= link_to_remote(image_tag("/images/add.png", :size => "22x22", :border => "0"), \
+                        <%= link_to_remote(image_tag("/images/add.png", :size => "22x22", :border => "0", :title => "hinzufügen", :alt => "hinzufügen"), \
                                 :url => user_path(current_user) + "/cart/add_to_cart/" + metapackage.id.to_s,\
                                 :update => 'meta_cart') %>
                         <% end %>

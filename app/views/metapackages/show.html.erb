@@ -34,9 +34,9 @@
 <p>
     <b>Veröffentlicht: </b>
     <% if @metapackage.is_published? %>
-        <%= image_tag("yes.png", :size => "22x22", :border => "0")  %>
+        <%= image_tag("yes.png", :size => "22x22", :border => "0", :title => "veröffentlicht", :alt => "veröffentlicht")  %>
     <% else %>
-        <%= image_tag("no.png", :size => "22x22", :border => "0")  %>
+        <%= image_tag("no.png", :size => "22x22", :border => "0", :title => "nicht veröffentlicht", :alt => "nicht veröffentlicht")  %>
     <% end %>
 </p>
 

@@ -34,22 +34,22 @@
 <% css=cycle("packageList0", "packageList1") %>
   <tr> 
   	<td class="<%= css %>"> <%= package.icon(20)%>
-  		<%= link_to(package.name, package_path(package)) %></td>
+  		<%= link_to(package.name, package_path(package), :title => "zur Detailansicht") %></td>
 	<td class="<%= css %>" align="middle" valign="middle">
      <% if !package.stars.nil? %>
         <div class='star-rating-<%= css %>' style='width:<%= (package.stars * 18).to_i %>px; '> </div>
      <% end %>
 	</td>
     <td class="<%= css %>" width="80" align="right">
-        <%= link_to image_tag("/images/install.png", :size => "22x22"), "apt://"+package.name %>                          
+        <%= link_to image_tag("/images/install.png", :size => "22x22", :border => "0", :title => "installieren", :alt => "installieren"), "apt://"+package.name %>                          
 		<% if editing_metapackage? %>
 		    
-			<%= link_to_remote(image_tag("/images/add.png", :size => "22x22", :border => "0"), \
+			<%= link_to_remote(image_tag("/images/add.png", :size => "22x22", :border => "0", :title =>"hinzufügen", :alt => "hinzufügen"), \
 			        :url => user_path(current_user) + "/cart/add_to_cart/" + package.id.to_s,\
 			        :update => 'meta_cart') %>
 		<% end %>
     	<% if is_admin? %>
-    		<%= link_to image_tag("/images/edit-delete.png", :size => "22x22", :border => "0"),
+    		<%= link_to image_tag("/images/edit-delete.png", :size => "22x22", :border => "0", :title => "entfernen", :alt => "entfernen"),
     		        package_path(package), :confirm => 'Are you sure?', :method => :delete %>
 			<% end %>
 	</td>
