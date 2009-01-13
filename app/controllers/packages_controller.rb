@@ -1,5 +1,8 @@
 class PackagesController < ApplicationController
-  
+
+  def title
+    "Pakete"
+  end
   # GET /Packages
   # GET /Packages.xml
   def index         

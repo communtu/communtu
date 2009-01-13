@@ -5,7 +5,6 @@ class Metapackage < BasePackage
   has_many   :base_packages, :through => :metacontents
 #  has_many   :packages, :through => :metacontents, :source => :base_package, :foreign_key => :base_package_id 
   belongs_to :category
-  belongs_to :distribution
   belongs_to :user
   
   validates_presence_of :name, :license_type, :user, :category

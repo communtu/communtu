@@ -34,8 +34,8 @@ class UserProfilesController < ApplicationController
         if value == 0 then
           metas = []
         else
-          metas = Metapackage.find(:all, :conditions => ["category_id = ? and distribution_id = ? and license_type <= ? and default_install = ?", \
-            category, @distribution.id, session[:license], true])
+          metas = Metapackage.find(:all, :conditions => ["category_id = ? and license_type <= ? and default_install = ?", \
+            category, session[:license], true])
         end    
         @selection += metas
       end

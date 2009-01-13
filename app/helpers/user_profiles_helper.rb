@@ -34,7 +34,7 @@ module UserProfilesHelper
         
         out += "<div class='suggestionPackages' id='packages" + root.name + "'>\n"
 
-        out += show_packages2 root.metapackages.select { |meta| meta.distribution == @distribution }, selection
+        out += show_packages2 root.metapackages, selection
 
         root.children.each do |child|
             out += show_selection_subtree2 child, selection, (depth + 1)
