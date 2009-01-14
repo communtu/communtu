@@ -4,6 +4,7 @@ class PackageDistr < ActiveRecord::Base
   belongs_to :distribution
   has_many :dependencies
   
+  has_many :packages, :through => :dependencies, :source => :base_package
   has_many :depends, :through => :dependencies, :source => :base_package, \
     :conditions => 'dependencies.dep_type = 0'    
   has_many :recommends, :through => :dependencies, :source => :base_package, \

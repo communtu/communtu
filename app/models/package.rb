@@ -47,24 +47,41 @@ class Package < BasePackage
     end
     return submetas
   end
-  
-  def meta_intersection(m)
-    if repository != m.repository 
-      return []
-    else 
-      self.depends_or_recommends & m.depends_or_recommends
+
+  # compute a hash of dependencies for a package. per repository
+  # join the common dependencies
+  def dependencies_intersection
+    # fetch the repositories...
+    pds = self.package_distrs.clone
+    if pds.nil? then
+      return {}
     end
+    # arbitrarily start with the first one...
+    intersection = pds.pop.packages
+    pds.each do |pd|
+      # ... and then intersect with all the others
+      intersection = intersection & pd.packages
+    end
+    result = {:all => intersection}
+    self.package_distrs.each do |pd|
+      result[pd.repository] = pd.packages - intersection
+    end
+    return result
   end
-  
-  def self.meta_intersections
-    metas = Package.find(:all, :conditions => ["section = ?","metapackages"])
-    mis = []
-    metas.each do |m1|
-      metas.each do |m2|
-        if m1!=m2 && !m1.is_sub_meta(m2) && !m2.is_sub_meta(m1) && (m1.meta_intersection(m2)).length*10 >= m1.depends_or_recommends.length then mis <<= [m1,m2] end
+
+  # compute the union of all dependencies
+  # mark each package in the dependencies with the repositories
+  def dependencies_union
+    union = {}
+    self.package_distrs.each do |pd|
+      pd.packages.each do |p|
+        if union[p].nil? then
+          union[p] = []
+        end
+        union[p] << pd.repository
       end
     end
-    return mis
+    return union
   end
 
   def stars

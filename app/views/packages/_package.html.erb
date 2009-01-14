@@ -1,0 +1,4 @@
+<% if (icon=package.icon(20))!="" %>
+   &nbsp;<%= icon%>
+<% end %>
+<%= link_to package.name, package_path(package) %>

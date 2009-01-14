@@ -136,7 +136,9 @@ class PackagesController < ApplicationController
   # Ubuntu Metapaket in Bündel konvertieren
   def convert
     @package = Package.find(params[:id])
-    card_editor(@package.name,@package.depends_or_recommends,session,current_user)
+    # if the future, the editor should not only use the keys,
+    # but also extract the list of distributions per package
+    card_editor(@package.name,@package.dependencies_union.keys,session,current_user)
   end
   
   def add_comment
