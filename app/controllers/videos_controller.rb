@@ -1,4 +1,7 @@
 class VideosController < ApplicationController
+  def title
+    "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
+  end
   # GET /videos
   # GET /videos.xml
   def index

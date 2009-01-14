@@ -1,4 +1,7 @@
 class CategoriesController < ApplicationController
+  def title
+    "Kategorien"
+  end
   before_filter :check_administrator_role, :add_flash => { :notice => 'Du bist kein Administrator!' }
   
   # GET /categories

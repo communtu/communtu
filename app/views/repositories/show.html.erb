@@ -1,3 +1,45 @@
-
-<%= link_to 'Anzeigen', edit_repository_path(@repository) %> |
-<%= link_to 'Zurück', repositories_path %>
+<span class="headline">Repository anzeigen</span>
+<div class="inner0">
+<%= error_messages_for :repository %>
+<table class="form_table">
+	<tr>
+	<td>Pfad:</td>
+	<td><%= @repository.url %></td>
+	</tr>
+	<tr>
+	<td>Lizenztyp:</td>
+	<td><% if @repository.license_type == 0 %>
+        OpenSource
+        <%  else %>
+        kommerziell 
+        <% end %>
+</td>
+	</tr>
+	<tr>
+	<td>Sicherheitstyp:</td>
+	<td><% if @repository.security_type == 0 %>
+        Nativ
+        <% elsif @repository.security_type == 1 %>
+        Trusted
+        <%  else %>
+        Third-Party 
+        <% end %>
+</td>
+	</tr>
+	<tr>
+        <td>GPG Schlüssel (Optional): </td>
+        <td><%= @repository.gpgkey %><td>
+    </tr>
+	<tr>
+		<td>Subtyp:</td>
+		<td><%= @repository.subtype %></td>
+	</tr>
+	<tr>
+	<td>
+ 	<td>
+  	</td>
+	</tr>
+</table>
+</div>
+<%= link_to 'Zurück', { :controller => :distributions, :action => :show,\
+	:id => @repository.distribution.id } %>

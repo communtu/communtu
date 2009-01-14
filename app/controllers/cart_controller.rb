@@ -1,5 +1,7 @@
 class CartController < ApplicationController
-    
+    def title
+    "Bündel-Editor"
+    end
     def create
         prepare_create
         redirect_to "/users/" + current_user.id.to_s + "/metapackages/2"

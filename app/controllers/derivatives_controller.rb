@@ -1,4 +1,8 @@
 class DerivativesController < ApplicationController
+  
+  def title
+    "Ubuntu Derivate"
+  end
   # GET /derivatives
   # GET /derivatives.xml
   def index

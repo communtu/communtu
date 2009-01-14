@@ -1,5 +1,8 @@
 class RepositoriesController < ApplicationController
- 
+
+  def title
+    "Repositorys"
+  end  
   # GET /repositories
   # GET /repositories.xml
   def index

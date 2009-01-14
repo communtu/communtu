@@ -1,7 +1,9 @@
 require 'user_meta_tabz'
 
 class UsersController < ApplicationController
-    
+  def title
+    "Benutzerverwaltung"
+  end 
   layout 'application'
   
   before_filter :not_logged_in_required, :only => [:new, :create] 

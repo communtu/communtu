@@ -1,4 +1,8 @@
 class HomeController < ApplicationController
+  
+  def title
+    "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
+  end
   protect_from_forgery :only => [:create, :update, :destroy] 
   
   def home

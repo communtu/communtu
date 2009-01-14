@@ -1,5 +1,8 @@
 class DistributionsController < ApplicationController
-   
+  
+  def title
+    "Ubuntu Distributionen"
+  end
   # GET /distributions
   # GET /distributions.xml
   def index

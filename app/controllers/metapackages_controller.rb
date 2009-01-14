@@ -1,5 +1,9 @@
 class MetapackagesController < ApplicationController
   
+  def title
+    "Bündel"
+  end
+  
   @@migrations = {}
     
   # GET /metapackages

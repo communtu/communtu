@@ -1,5 +1,7 @@
 class SuggestionController < ApplicationController
-  
+  def title
+    "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
+  end
   before_filter :authorize_user_subresource
   
   def show
