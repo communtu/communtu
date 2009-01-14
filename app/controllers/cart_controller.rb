@@ -57,6 +57,7 @@ class CartController < ApplicationController
                 meta.category_id     = 1
                 meta.description     = ""
                 meta.default_install = false
+                meta.license_type = 0
                 meta.save!
             end
             
@@ -76,7 +77,7 @@ class CartController < ApplicationController
                 content.save!
                 
                 if package.class == Package
-                    lic = package.repository.license_type
+                    lic = package.repositories.map{|r| r.license_type}.max
                     license = lic if lic > license
                 else 
                     lic = package.license_type
@@ -88,9 +89,11 @@ class CartController < ApplicationController
             meta.update_attributes({:license_type => license})
             cart.destroy
             session[:cart] = nil
+            redirect_to({:controller => 'metapackages', :action => 'edit', :id => meta.id})
+        else
+        redirect_to "/users/" + current_user.id.to_s + "/metapackages/2"
         end
-        redirect_to "/metapackages/" \
-            + meta.id.to_s + "/edit"
+        
     end
     
     def clear

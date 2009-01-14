@@ -3,7 +3,7 @@
     <span class="headline">Bündel-Informationen anpassen</span>
     <br/>
     <br/>
-    <% form_for(@metapackage, :url => distribution_path(@metapackage.distribution) + "/metapackages/" + @metapackage.id.to_s ) do |f| %>
+    <% form_for(@metapackage) do |f| %>
         <br/>
         <div align="right"><%= submit_tag "Speichern"%></div>
         <table>

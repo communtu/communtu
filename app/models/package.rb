@@ -15,7 +15,7 @@ class Package < BasePackage
   has_many :repositories, :through => :package_distrs
   validates_presence_of :name
 
-  def repositories(distribution)
+  def repositories_dist(distribution)
     pds = PackageDistr.find(:all,:conditions=>["package_id = ? and distribution_id = ?",self.id,distribution.id])
     return pds.map{|pd| pd.repository}
   end
@@ -104,6 +104,11 @@ class Package < BasePackage
     security_types  = [ "Native", "Trusted", "Third-Party" ]
   end
  
+  # compute the license type for a bundle as the maximum of licesce types for the list of packages
+  def self.meta_license_type(ps)
+    ps.map{|p| p.repositories.map{|r| r.license_type}}.flatten.max
+  end
+    
   def self.find_packages(search, group, only_programs, page)
     cond_str = "1"
     cond_vals = []
