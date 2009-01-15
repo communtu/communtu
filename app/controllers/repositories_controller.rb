@@ -110,7 +110,7 @@ class RepositoriesController < ApplicationController
     @repository.destroy
 
     respond_to do |format|
-      format.html { redirect_to(repositories_url) }
+      format.html { redirect_to :back }
       format.xml  { head :ok }
     end
   end
