@@ -51,10 +51,11 @@
 
 <% if not @package.videos.empty? then %>
   <p>
-  <b>Videos:<br></b>
+  <b>Videos:</b><br />
   <ul>
   <%for v in @package.videos %>
     <li><%=auto_link v.url.gsub(/ /,'<br>'), link = :all, :target => '_blank' %>
+<br />
     <%= v.description%></li>
   <% end %>
   </ul></p>
@@ -88,7 +89,7 @@
 
 <% if !@package.metapackages.empty? then%>
   <p>
-  <b>Wird bei Communtu in folgenden Bündeln benutzt:<br></b>
+  <b>Wird bei Communtu in folgenden Bündeln benutzt:</b><br />
   <% @package.metapackages.each do |m| %>
      <%= link_to  m.name, { :controller => :metapackages, :action => :show,\
 	  				:id => m.id } %>
