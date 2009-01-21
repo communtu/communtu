@@ -204,9 +204,8 @@ class MetapackagesController < ApplicationController
   end
   
   def finish_migrate
-    @failed_packages = []
-    @double_packages = []
-    @distribution    = Distribution.find(params[:distribution])
+    @from_dist       = Distribution.find(params[:from_dist][:id])
+    @to_dist         = Distribution.find(params[:to_dist][:id])
     @backlink        = session[:backlink]
     
     packages = session[:packages]
@@ -215,7 +214,7 @@ class MetapackagesController < ApplicationController
             if value[:select] == "1"
                 package = Metapackage.find(key)
                 if not package.nil?
-                    package.migrate(@distribution, current_user, @failed_packages, @double_packages)
+                    package.migrate(@from_dist,@to_dist)
                 end
             end
         end

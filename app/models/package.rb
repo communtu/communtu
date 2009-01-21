@@ -13,15 +13,12 @@ class Package < BasePackage
   has_many :package_distrs, :foreign_key => :package_id
 #  has_many :distributions, :through => :package_distrs
   has_many :repositories, :through => :package_distrs
+  has_many :distributions, :through => :package_distrs
   validates_presence_of :name
 
   def repositories_dist(distribution)
     pds = PackageDistr.find(:all,:conditions=>["package_id = ? and distribution_id = ?",self.id,distribution.id])
     return pds.map{|pd| pd.repository}
-  end
-
-  def distributions
-    self.package_distrs.map {|pd| Distribution.find(pd.distribution_id)}
   end
 
   def unique_name(distribution)
