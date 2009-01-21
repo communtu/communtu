@@ -47,9 +47,7 @@ module DistributionsHelper
           "</span><p>" + dist.description + "</p>"
     
     if with_buttons
-     out += (link_to 'Anzeigen/Quellen hinzufügen', dist) + " | " + (link_to 'Bündel anzeigen', distribution_metapackages_path(dist.id)) +\
-      " | " + (link_to 'Alle Pakete anzeigen', (distribution_packages_path dist.id))
-      
+     out += (link_to 'Anzeigen/Quellen hinzufügen', dist)
     
       if is_admin?
         out += " | " + (link_to 'Bearbeiten', edit_distribution_path(dist)) + " | " +\
