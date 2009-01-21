@@ -43,7 +43,8 @@ module DistributionsHelper
   #with_buttons=should buttons be displayed?
   def dist_show dist, style, with_buttons = true
     out = "<div class='" + style + "'><span class='headline'>" +\
-    dist.name + "</span><p>" + dist.description + "</p>"
+          (if dist.url.nil? then dist.name else (link_to dist.name, dist.url, :target=>'blank') end)+\
+          "</span><p>" + dist.description + "</p>"
     
     if with_buttons
      out += (link_to 'Anzeigen/Quellen hinzufügen', dist) + " | " + (link_to 'Bündel anzeigen', distribution_metapackages_path(dist.id)) +\
