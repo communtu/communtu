@@ -25,6 +25,8 @@
 	<td>Subtyp:</td>
 	<td><%= f.text_field :subtype %></td>
 	<td> (z.B. <i>main</i>)</td>
+	 <%= hidden_field_tag 'distribution_id',@repository.distribution.id %>
+
 </tr>
 <tr><td colspan="2" align="center">
     <%= f.submit "Anlegen" %>
@@ -32,4 +34,4 @@
 <% end %>
 </table>
 </div>
-<%= link_to 'Zurück', distribution_repositories_path(@distribution) %>
+<%= link_to 'Zurück', distribution_repositories_path(@repository.distribution) %>

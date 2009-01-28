@@ -29,7 +29,7 @@ class RepositoriesController < ApplicationController
   # GET /repositories/new.xml
   def new
     @repository = Repository.new
-
+    @repository.distribution_id = params[:distribution_id]
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @repository }

@@ -30,15 +30,29 @@ class Metapackage < BasePackage
   
   # copy the metapackage contents from from_dist to to_dist
   def migrate(from_dist, to_dist)
+    not_found = []
     self.metacontents.each do |mc|
       # look for the mcs belonging to from_dist
       # *and* having packages available for to_dist
-      if mc.distributions.include?(from_dist) && 
-         (mc.base_package.class != Package || mc.base_package.distributions.include?(to_dist))
-        mc.distributions << to_dist
+      if mc.distributions.include?(from_dist)
+        if mc.base_package.class != Package 
+          # bundle, always append it
+          append = true
+        else
+          # package, only append it if present in the distribution
+          if mc.base_package.distributions.include?(to_dist)
+            append = true
+          else
+            not_found << mc.base_package
+            append = false
+          end
+        end
+        if append && !mc.distributions.include?(to_dist)
+          mc.distributions << to_dist
+        end
       end
     end
-    
+    return not_found    
   end
   
   # icon for bundles

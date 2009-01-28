@@ -36,7 +36,7 @@
 <% end %>
 
 <p>
-  <table border="1">
+  <table border=1, style="border-style:solid; border-width:1px; border-collapse:collapse", cellpadding=3 >
   <tr><th>Distribution</th> <th>Repository</th> <th>Paket-Version</th></tr>
   <% for pd in @package.package_distrs%>
     <tr><td><%= link_to(pd.distribution.name, distribution_path(pd.distribution)) %>

@@ -559,22 +559,26 @@ private
             package = line.chomp
             packages.store package, {}
             readpackage = lambda do |content|
+              if !reader.eof? then
                 line = reader.readline
                 if (not line == "\n")
                     if (line.match(/^ /).nil?)
-                        option  = line.match(/^.*: /)[0].chop.chop
+                        upto_colon = line.match(/^.*: /)
+                        option = if upto_colon.nil? then "" 
+                                 else upto_colon [0].chop.chop end
                         content = line.gsub(option+": ", "").strip.chomp
                         
                         if is_valid_option? option
                             packages[package].store option, content
                         end
                     else
-                        content << line
+                        content << (line.chomp)
                     end
                     readpackage.call content
                 end
+              end  
             end
-            readpackage.call nil
+            readpackage.call ""
         else
            return {:error => "Inhalt von "+url+" entspricht nicht Repository-Syntax:<br><code>"+line+"</code>"}
         end

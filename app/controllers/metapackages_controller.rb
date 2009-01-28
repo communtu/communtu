@@ -208,13 +208,14 @@ class MetapackagesController < ApplicationController
     @to_dist         = Distribution.find(params[:to_dist][:id])
     @backlink        = session[:backlink]
     
-    packages = session[:packages]
-    if not packages.nil?
-        packages.each do |key,value|
+    metas = session[:packages]
+    @not_found = {}
+    if not metas.nil?
+        metas.each do |key,value|
             if value[:select] == "1"
-                package = Metapackage.find(key)
-                if not package.nil?
-                    package.migrate(@from_dist,@to_dist)
+                meta = Metapackage.find(key)
+                if not meta.nil?
+                    @not_found[meta] = meta.migrate(@from_dist,@to_dist)
                 end
             end
         end
