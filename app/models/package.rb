@@ -542,7 +542,18 @@ class Package < BasePackage
       end
     end
   end
+
+  def replace_nl
+      self.description = self.description.gsub("\n","§§")
+      self.save
+  end
   
+  def self.replace_all_nl
+    Package.find(:all).each do |p|
+      p.replace_nl
+    end
+  end
+
 private
   def self.packages_to_hash url
     if url.nil? then return {:error => "Konnte keine URL feststellen"} end
