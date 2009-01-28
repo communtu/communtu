@@ -3,7 +3,6 @@
 <div class="inner1">
 <table>
 <%= form_tag ("/metapackages/save_comment/" + @id.to_s) %>
-	<!--<tr><td>Bündel anfügen:</td><td><%= select_tag 'attach', options %></td></tr>-->
 	<tr><td valign='top'>Kommentar: </td><td>
 		<%= text_area_tag 'input', nil, { :type => :textarea, :name => :comment, :cols => 80,\
 		:rows => 10 }%>
