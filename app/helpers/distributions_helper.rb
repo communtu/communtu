@@ -14,6 +14,8 @@ module DistributionsHelper
     
     repos.each do |repo|
         css = cycle("packageList0", "packageList1")
+        pic = if repo.license_type == 0 then "free.jpg" else "commercial.jpg" end
+        image = '<img border="0" height=25 src="/images/'+pic+'"/>'
         if is_admin?
           link = (link_to (repo.url + " " + repo.subtype), { :controller => :repositories, :action => :edit,\
             :id => repo.id, :distribution_id => repo.distribution_id })
@@ -24,10 +26,10 @@ module DistributionsHelper
             :alt => "Repository löschen", :class => "link_img"}) ,\
              "/repositories/destroy/#{repo.id}")
           row = "<tr><td class='" + css + "' valign='middle'>" + sync_link +\
-             "</td><td class='" + css + "' valign='middle'>" + link + "</td>" +\
+             "</td><td class='" + css + "' valign='middle'>" + image + link + "</td>" +\
              "<td class='" + css + "' valign='middle'>" + del_link + "</td></tr>"
         else
-           row = "<tr><td class='" + css + "'><i>" + repo.url + " " + repo.subtype  + "</i></td></tr>"
+           row = "<tr><td class='" + css + "'><i>" + image + repo.url + " " + repo.subtype  + "</i></td></tr>"
         end
         
         header[repo.security_type] += row
