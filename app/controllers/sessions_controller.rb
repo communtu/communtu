@@ -40,7 +40,7 @@ class SessionsController < ApplicationController
   def password_authentication(login, password)
     user = User.authenticate(login, password)
     if user == nil
-      failed_login("Dein Benutzername oder Passwort ist falsch.")
+      failed_login('Dein Benutzername oder Passwort ist falsch. Bitte ggf. unten auf "Registrieren" klicken.')
     elsif user.activated_at.blank?  
       failed_login("Dein Benutzerkonto wurde noch nicht aktiviert. Der Aktivierungscode wurde dir per Email zugeschickt.")
     elsif user.enabled == false
