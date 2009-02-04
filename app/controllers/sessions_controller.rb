@@ -10,6 +10,10 @@ class SessionsController < ApplicationController
   def new
   end
  
+  def show
+    redirect_to :action => 'new'
+  end
+  
   def create
     password_authentication(params[:login], params[:password])
   end
