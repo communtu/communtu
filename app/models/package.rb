@@ -148,7 +148,7 @@ class Package < BasePackage
   # test whether a source is present
   def self.test_source repository
     url  = get_url_from_source(repository.url + " " + repository.subtype)[:url]
-    if url.nil? then return {:error => "Konnte URL für #{repository.url + " " + repository.subtype} nicht feststellbar"} end
+    if url.nil? then return {:error => "Konnte URL für #{repository.url + " " + repository.subtype} nicht feststellen"} end
     begin
       file = open(url, 'User-Agent' => 'Ruby-Wget')
     rescue
