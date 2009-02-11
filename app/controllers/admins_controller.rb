@@ -25,4 +25,9 @@ class AdminsController < ApplicationController
     @infos = @distribution.repositories.map { |r| Package.import_source r }
   end
 
+  def test_all
+    @distribution = Distribution.find(params[:id])
+    @infos = @distribution.repositories.map { |r| Package.test_source r }
+  end
+
 end

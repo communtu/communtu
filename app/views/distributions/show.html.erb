@@ -6,6 +6,8 @@
 	<td><b>Repositories:</b></td>
 	<td align="right">
 		<% if is_admin? %>
+			<%= link_to'alles prüfen', '/admin/test_all/'+@distribution.id.to_s %>
+			&nbsp;&nbsp;&nbsp;&nbsp;
 			<%= link_to'alles synchronisieren', '/admin/sync_all/'+@distribution.id.to_s %>
 			&nbsp;&nbsp;&nbsp;&nbsp;
 			<%= link_to'sources.list einlesen', '/repositories/multinew/'+@distribution.id.to_s %>
