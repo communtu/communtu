@@ -119,7 +119,7 @@ class Package < BasePackage
     end
     if only_programs then
         cond_str += " and is_program = ?"
-        cond_vals << 't'
+        cond_vals << '1'
     end
     Package.find(:all, :page => {:size => 10, :current => page}, \
                        :conditions => ([cond_str]+cond_vals), \

@@ -22,9 +22,9 @@ class User < ActiveRecord::Base
   belongs_to :language
   has_many :user_packages 
   has_many :selected_packages, :through => :user_packages, :source => :base_package, \
-      :conditions => "user_packages.is_selected = 't'"    
+      :conditions => "user_packages.is_selected = '1'"    
   has_many :deselected_packages, :through => :user_packages, :source => :base_package, \
-      :conditions => "user_packages.is_selected = 'f'"    
+      :conditions => "user_packages.is_selected = '0'"    
 #  has_many :selected_metapackages, :through => :user_packages, :source => :base_package, \
 #      :conditions => 'user_packages.base_package.class == Metapackage AND user_packages.is_selected'    
 #  has_many :unselected_metapackages, :through => :user_packages, :source => :package_id, \
