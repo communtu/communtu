@@ -128,13 +128,17 @@ class Package < BasePackage
   
   def self.get_url_from_source source
     parts = source.split " "
-    if parts.length == 4
+    if parts.length >= 3
       # add trailing "/" if necessary
       if parts[1][-1] != 47 then
         parts[1] += "/"
       end
       # get URL for 32 bit version - this should be changed in the future!
-      url = parts[1] + "dists/" + parts[2] + "/" + parts[3] + "/binary-i386/Packages.gz"
+      if parts[3].nil? then
+        url = parts[1] + parts[2] + "/Packages.gz"
+      else  
+        url = parts[1] + "dists/" + parts[2] + "/" + parts[3] + "/binary-i386/Packages.gz"
+      end
       return {:url => url}
     else
       return {:error => source+"<br> hat nicht das richtige Format"}
@@ -151,7 +155,7 @@ class Package < BasePackage
     if url.nil? then return {:error => "Konnte URL für #{repository.url + " " + repository.subtype} nicht feststellen"} end
     begin
       file = open(url, 'User-Agent' => 'Ruby-Wget')
-    rescue
+    rescue  
       return {:error => url}
     else 
       return {}  
@@ -566,7 +570,15 @@ class Package < BasePackage
       p.replace_nl
     end
   end
-
+  def replace_quote
+    p=Package.find(64739)
+    p.description=p.description.gsub("'","bananenrepublik")
+    p.save
+    p=Package.find(67805)
+    p.description=p.description.gsub("'","bananenrepublik")
+    p.save
+  end
+  
 private
   def self.packages_to_hash url
     if url.nil? then return {:error => "Konnte keine URL feststellen"} end
