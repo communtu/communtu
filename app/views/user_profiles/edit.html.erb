@@ -42,8 +42,7 @@ Wenn gewünscht, ist aber auch eine detailliertere Auswahl möglich. Achtung: zu
         <% end %>
 		
 	</li>
-        
-    	<% options = Array.new (Package.security_types.length, false) %>
+    	<% options = Array.new(Package.security_types.length, false) %>
     	<% if logged_in? %>
 		  <% options[current_user.security] = true %>
 		<% elsif not session[:security].nil? %>
@@ -59,7 +58,7 @@ Wenn gewünscht, ist aber auch eine detailliertere Auswahl möglich. Achtung: zu
         <%= radio_button_tag "sec", "2", options[2] %> Alle Quellen zulassen (etwas unsicherer, aber noch mehr Programme/Komfort)<br>
          </li>
     <li><div style="margin-bottom:30px">
-    	<% options = Array.new (Package.license_types.length, false) %>
+    	<% options = Array.new(Package.license_types.length, false) %>
     	<% if logged_in? %>
     		<% options[current_user.license] = true %>
         <% elsif not session[:license].nil? %>
@@ -73,12 +72,7 @@ Wenn gewünscht, ist aber auch eine detailliertere Auswahl möglich. Achtung: zu
         </div></li>
 	</ol>
     <div style="margin-top:20px;">
-      <% if logged_in? %>
         <%= submit_tag "Speichern", :name => "install" %>
         <%= submit_tag "Speichern und feiner auswählen", :name => "choose" %>
-      <% else  %>
-        <%= submit_tag "Übernehmen", :name => "install" %>
-        <%= submit_tag "Übernehmen und verfeinern", :name => "choose" %>
-      <% end  %>
     </div>
 <% end %>

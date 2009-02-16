@@ -7,9 +7,9 @@
 
 <p>Achtung! Zum Schluss auf "Speichern" klicken.</p>
 <% form_tag(user_user_profile_path(current_user) + "/update_ratings", options = {:name => "ratings", :method => :put}) do %>
-    <div>
+    <div> 
         <%= show_suggestion2(@root, @selection) %>
-    </div>
+    </div> 
     <div style="margin-top:20px;">
         <%= link_to "Speichern", "javascript:document.ratings.submit();" %>
     </div>
