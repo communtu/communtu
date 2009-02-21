@@ -1,12 +1,14 @@
 <h2>Communtu -
  gemeinsam Ubuntu-Linux an individuelle Bed&uuml;rfnisse anpassen</h2>
 
+	<%= render_flash %>
+
+
 <a href="http://www.ubuntuusers.de">Ubuntu-Linux</a> steht für ein menschliches Linux, das einfach zu benutzen ist.
 Aber um Ubuntu wirklich gut nutzen zu können, muss man ganz schön viele Programme nachinstallieren, und es ist oft schwer, da den Überblick zu behalten.
 Bei Communtu gibst du nur an, welche Aufgaben du mit deinem Computer erledigen willst, und Communtu schlägt dir eine
 ganze Reihe von Programmen vor, die automatisch installiert werden können.
 <%= link_to 'Mehr ...', '/home/about'%><br>
-	<%= render_flash %>
 <% if logged_in? %>
 <p>Die Seitenleiste links bietet folgende Möglichkeiten:</p>
 <ul>

@@ -11,4 +11,10 @@ class ApplicationController < ActionController::Base
   # Uncomment the :secret if you're not using the cookie session store
   protect_from_forgery # :secret => '0b1deaf6bf7e9a53ea11187cd1bbe6a1'
   
+  rescue_from ActionController::InvalidAuthenticityToken, :with => :auth_error
+  
+  def auth_error
+    redirect_to(:controller => 'home', :action => 'auth_error')
+  end
+  
 end

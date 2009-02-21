@@ -17,6 +17,17 @@ class HomeController < ApplicationController
   def umfrage
   end
 
+  def auth_error
+  end
+
+  def mail
+  end
+
+  def submit_mail
+    flash[:notice] = "Wir werden dich per Mail benachrichtigen."
+    redirect_to 'home'
+  end
+
   def danke
     @u = Umfrage.find(params[:id])
   end
