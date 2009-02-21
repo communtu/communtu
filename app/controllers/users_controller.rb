@@ -36,7 +36,7 @@ class UsersController < ApplicationController
     @user.save!
     #Uncomment to have the user logged in after creating an account - Not Recommended
     #self.current_user = @user
-  flash[:notice] = "Danke für die Registrierung bei Communtu!"
+  flash[:notice] = "Danke für die Registrierung bei Communtu! Du kannst dich jetzt anmelden."
     redirect_to "/session/new"
   rescue ActiveRecord::RecordInvalid
     flash[:error] = "Es gab ein Problem mit der Registrierung."

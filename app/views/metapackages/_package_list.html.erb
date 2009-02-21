@@ -28,6 +28,7 @@
 				<%= mc.package.description[0,100]+(mc.package.description.length<100 ? "" : " ...") %></td>
 		  </tr>
 	    <% end %>
+		<% if mc.package.class == Package %>
           <tr><td colspan="2" class="<%= css %>">
             <% for d in Distribution.find(:all) %>
               <% if editable then %>
@@ -52,6 +53,7 @@
               <% end %>
             <% end %>
 		  </td></tr>
+		<% end %>  
 	<% end %>
 </table>	
 </div>
