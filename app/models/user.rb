@@ -162,6 +162,75 @@ class User < ActiveRecord::Base
     end  
   end
 
+  # update the rating for a category and all its children
+  def update_rating(cat,val,lic,sec,anonymous_info,force_new)
+
+    is_new = force_new
+    cid    = cat.id
+
+    if !anonymous_info[:anonymous] then
+
+      uid = self.id
+      up  = UserProfile.find(:first, :conditions => ["user_id = ? and category_id = ?",uid,cid])
+
+      if up.nil? then 
+        up = UserProfile.create(:user_id => uid, :category_id => cid, :rating => val)
+        # no profile yet - we are in a new situation
+        is_new = true  
+      else
+        # if rating has changed, it is new...
+        if up.rating != val then is_new = true end
+        up.rating = val
+        up.save
+      end
+    else
+      # anonymous user? then the rating is always new
+      is_new = true
+      anonymous_info[:session][:profile].store(cid, val)
+    end
+
+    if is_new then
+      # if rating is new, then re-compute metapackage selection
+      metas = Metapackage.find(:all, :conditions => ["category_id = ? and license_type <= ?", \
+               cid, lic])
+      metas.each do |m|
+        if !anonymous_info[:anonymous] then
+          update_meta(m,m.default_install && up.rating>0)
+        end
+      end
+      # also recursively update all the children
+      cat.children.each do |child|
+        update_rating(child,val,lic,sec,anonymous_info,force_new)
+      end 
+    end
+  end
+  
+  # update meta package selection to default given by sel
+  def update_meta(m,sel)
+    uid = self.id
+    upk = UserPackage.find(:first, :conditions => ["user_id = ? and package_id = ?",uid,m.id])
+    if upk.nil? then
+      UserPackage.create(:user_id => uid,:package_id => m.id, :is_selected => sel)
+    else
+      upk.is_selected = sel
+      upk.save
+    end  
+  end
+  
+  def init_ratings
+    self.first_login = 0
+    self.save!
+    #replace old list of packages...
+    self.user_packages.each do |up|
+      up.destroy
+    end
+    Category.find(1).children.each do |cat|
+      up = UserProfile.find(:first,:conditions => {:user_id => self.id, :category_id => cat.id})
+      val = if up.nil? then 0 else up.rating end
+      update_rating(cat,val,self.license,self.security,{:anonymous => false},true)
+    end  
+  end
+
  
   protected
   
@@ -184,6 +253,7 @@ class User < ActiveRecord::Base
     self.password_reset_code = Digest::SHA1.hexdigest( Time.now.to_s.split(//).sort_by {rand}.join )
   end
   
+ 
   
   private
   

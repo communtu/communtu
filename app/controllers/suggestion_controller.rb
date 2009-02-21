@@ -17,7 +17,7 @@ class SuggestionController < ApplicationController
           metas = []
         else
           metas = Metapackage.find(:all, :conditions => ["category_id = ? and default_install = ? and license_type <= ?", \
-            category.id, true, current_user.license])
+            category.id, 1, current_user.license])
         end    
         @selection.store(category, metas)
     
@@ -57,7 +57,7 @@ class SuggestionController < ApplicationController
           metas = []
         else
            metas = Metapackage.find(:all, :conditions => ["category_id = ? and license_type <= ? and default_install = ?", \
-                                                       category, license, true])
+                                                       category, license, 1])
         end                                               
         packages += metas
       end
