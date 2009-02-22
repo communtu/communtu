@@ -115,4 +115,19 @@ class RepositoriesController < ApplicationController
     end
   end
 
+  def migrate
+    @repository = Repository.find(params[:id])    
+  end
+
+  def finish_migrate
+    @repository = Repository.find(params[:id]) 
+    @distribution = Distribution.find(params[:distribution][:id])
+    if !@repository.nil? && !@distribution.nil? then
+      @repository.migrate(@distribution)
+      render(:action=> 'show')
+    else
+      redirect_to('migrate'+params[:id].to_s)
+    end
+  end
+
 end

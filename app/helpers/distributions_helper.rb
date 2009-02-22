@@ -16,20 +16,23 @@ module DistributionsHelper
         css = cycle("packageList0", "packageList1")
         pic = if repo.license_type == 0 then "free.jpg" else "commercial.jpg" end
         image = '<img border="0" height=25 src="/images/'+pic+'"/>'
+        link = (link_to (repo.url + " " + repo.subtype), { :controller => :repositories, :action => :show,\
+          :id => repo.id, :distribution_id => repo.distribution_id })
         if is_admin?
-          link = (link_to (repo.url + " " + repo.subtype), { :controller => :repositories, :action => :edit,\
-            :id => repo.id, :distribution_id => repo.distribution_id })
           sync_link = (link_to (tag "img", { :src => "/images/view-refresh.png", :width => "22", :height => "22",\
             :alt => "Repository synchronisieren", :class => "link_img"}) ,\
             { :controller => :admin, :action => :sync_package, :id => repo.id})
+          mig_link =  (link_to (tag "img", { :src => "/images/migrate.png", :width => "22", :height => "22",\
+            :alt => "Repository migieren", :class => "link_img"}) ,\
+             "/repositories/migrate/#{repo.id}")
           del_link =  (link_to (tag "img", { :src => "/images/edit-delete.png", :width => "22", :height => "22",\
             :alt => "Repository löschen", :class => "link_img"}) ,\
              "/repositories/destroy/#{repo.id}")
           row = "<tr><td class='" + css + "' valign='middle'>" + sync_link +\
              "</td><td class='" + css + "' valign='middle'>" + image + link + "</td>" +\
-             "<td class='" + css + "' valign='middle'>" + del_link + "</td></tr>"
+             "<td class='" + css + "' valign='middle'>" + mig_link + "&nbsp;&nbsp;" + del_link + "</td></tr>"
         else
-           row = "<tr><td class='" + css + "'><i>" + image + repo.url + " " + repo.subtype  + "</i></td></tr>"
+           row = "<tr><td class='" + css + "'>" + link + "</td></tr>"
         end
         
         header[repo.security_type] += row

@@ -1,4 +1,12 @@
 <span class="headline">Repository anzeigen</span>
+<p>
+<% if is_admin? %>
+<%= link_to 'Bearbeiten', { :action => :edit, :id => @repository.id } %>
+&nbsp;&nbsp;
+<% end %>
+<%= link_to 'Zurück', { :controller => :distributions, :action => :show,\
+	:id => @repository.distribution.id } %>
+
 <div class="inner0">
 <%= error_messages_for :repository %>
 <table class="form_table">
@@ -27,7 +35,7 @@
 </td>
 	</tr>
 	<tr>
-        <td>GPG Schlüssel (Optional): </td>
+        <td>GPG Schlüssel (optional): </td>
         <td><%= @repository.gpgkey %><td>
     </tr>
 	<tr>
@@ -41,5 +49,10 @@
 	</tr>
 </table>
 </div>
-<%= link_to 'Zurück', { :controller => :distributions, :action => :show,\
-	:id => @repository.distribution.id } %>
+
+<h2>Pakete</h2>
+<% @repository.packages.each do |p| %>
+   <%= p.icon(35)%>
+   <%= link_to p.name, package_path(p) %>
+   <br />
+<% end %>
