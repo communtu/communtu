@@ -75,7 +75,16 @@ class CartController < ApplicationController
                 content.metapackage_id  = meta.id
                 content.base_package_id = package.id
                 content.save!
+                # default: available in all distributions...
+                package.distributions.each do |d|
+                  content.distributions << d
+                end
+                # ... and all derivatives
+                Derivative.find(:all).each do |d|
+                  content.derivatives << d
+                end
                 
+                # compute license type
                 if package.class == Package
                     lic = package.repositories.map{|r| r.license_type}.max
                     license = lic if lic > license
