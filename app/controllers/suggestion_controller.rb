@@ -24,10 +24,10 @@ class SuggestionController < ApplicationController
     end
   end
 
-  def recursive_packages meta, package_install, package_names, package_sources, dist
+  def recursive_packages meta, package_install, package_names, package_sources, dist, license, security
     meta.base_packages.each do |p|
         if p.class == Package
-            reps = p.repositories_dist(dist)
+            reps = p.repositories_dist(dist).select{|r| r.security_type<=security && r.license_type<=license}
             if !reps.empty? then
               package_names.push(p.name)
               reps.each do |rep|
@@ -35,7 +35,7 @@ class SuggestionController < ApplicationController
               end
             end
         else
-            recursive_packages p, package_install, package_names, package_sources, dist
+            recursive_packages p, package_install, package_names, package_sources, dist, license, security
         end
     end
   end
@@ -44,7 +44,7 @@ class SuggestionController < ApplicationController
     if logged_in? then
       dist = current_user.distribution
       # package list has already been created for logged in user
-      install_aux(current_user.selected_packages,dist)
+      install_aux(current_user.selected_packages,dist,current_user.license,current_user.security)
     else
       # for anonymous installations, we have to build the package list now
       distribution = session[:distribution]
@@ -56,27 +56,27 @@ class SuggestionController < ApplicationController
         if value == 0 then
           metas = []
         else
-           metas = Metapackage.find(:all, :conditions => ["category_id = ? and license_type <= ? and default_install = ?", \
-                                                       category, license, 1])
+           metas = Metapackage.find(:all, :conditions => ["category_id = ? and default_install = ?", \
+                                                       category, 1])
         end                                               
         packages += metas
       end
-      install_aux(packages,distribution)
+      install_aux(packages,distribution,license,security)
     end
   end
 
   def quick_install
     dist = current_user.distribution
-    install_aux([Metapackage.find(params[:mid])],dist)
+    install_aux([Metapackage.find(params[:mid])],dist,current_user.license,current_user.security)
   end
 
   def install
     packages = params[:post].map {|id,unused| Metapackage.find(id)}
     dist = current_user.distribution
-    install_aux(packages,dist)
+    install_aux(packages,dist,current_user.license,current_user.security)
   end
 
-  def install_aux(packages,dist)
+  def install_aux(packages,dist,license,security)
 
 
     package_install = ""
@@ -91,7 +91,7 @@ class SuggestionController < ApplicationController
     script += "PACKAGES=\"\"\n"
     packages.each do |p|    
         package_names   = []
-        recursive_packages p, package_install, package_names, sources, dist
+        recursive_packages p, package_install, package_names, sources, dist, license, security
         script += "# Bündel: "+p.name+"\n"
         script += "PACKAGES=$PACKAGES\""
         package_names.each do |name|
