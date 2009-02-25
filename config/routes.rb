@@ -3,6 +3,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :videos
 
   
+  map.connect '/categories/show_tree', :controller => 'categories', :action => 'show_tree'
   map.resources :categories
   map.resources :metapackages
   map.resources :packages

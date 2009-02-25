@@ -54,9 +54,7 @@ module UserProfilesHelper
         end
 
         root.children.each do |child|
-            if not child.metapackages.nil? and not child.metapackages.empty?
-                out += show_selection_subtree2 child, selection, 0
-            end
+           out += show_selection_subtree2 child, selection, 0
         end
    
         return out + "</div>\n"

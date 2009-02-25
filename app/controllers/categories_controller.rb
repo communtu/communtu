@@ -87,4 +87,9 @@ class CategoriesController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  def show_tree
+    Category.draw_tree
+    system "dot -Tpng categories.dot > public/images/categories.png"
+  end
 end
