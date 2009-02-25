@@ -7,9 +7,10 @@ module UserProfilesHelper
     end
 
     def show_packages2 packages, selection
+        pub_packages = packages.select{|m| m.published == Metapackage.state[:published] or m.user_id == current_user.id or is_admin? }
         out = ""
-        puts "PACKAGES: " + packages.size.to_s
-        packages.each do |package|
+        puts "PACKAGES: " + pub_packages.size.to_s
+        pub_packages.each do |package|
             selected = selection.include? package
             out += "<div id='selected' class='suggestionPackage'>\n"
                 out += "<ul class='suggestionPackage'>"
