@@ -1,0 +1,19 @@
+<div class="text">
+  <h1>File Upload</h1>
+  <p>Here you can upload your Ubuntu package list.</p>
+</div>
+
+<div id="container">
+  <% form_tag (uploads_path, :multipart => true, :class =>  "niceform") do %>
+    <fieldset>
+    	<legend>Upload</legend>
+        <dl>
+        	<dt><label for="upload">Upload a File:</label></dt>
+          <dd><%= file_field 'upload', 'datafile' %></dd>  
+        </dl>
+    </fieldset>
+    <fieldset class="action">
+      <%= submit_tag "Upload your package file" %>
+    </fieldset>
+  <% end %>
+</div>

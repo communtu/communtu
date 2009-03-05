@@ -1,0 +1,4 @@
+cd public/data/fpgrowth
+fpgrowth -n10 -q-1 -m2 fp_source.txt - | head -n 10k >fp_data_out.txt
+
+echo "Suggestion.fillDb; nil" | ruby script/console

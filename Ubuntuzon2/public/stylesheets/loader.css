@@ -1,0 +1,13 @@
+/*****************************************
+	Name:    Main Screen CSS Import
+	Version: 1.0 (May 30 2008)
+	Author:  Sebastian Brink
+	Contact: http://www.quadrifolia.de
+******************************************/
+
+@import "_library/reset.css";
+@import "_library/core.css";
+@import "_library/rating.css";
+@import "_library/niceforms-default.css";
+
+@import "main.css";

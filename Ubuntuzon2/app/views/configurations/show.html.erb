@@ -1,0 +1,18 @@
+<p>
+  <b>Account:</b>
+  <%=h @configuration.account_id %>
+</p>
+
+<p>
+  <b>Package:</b>
+  <%=h @configuration.package_id %>
+</p>
+
+<p>
+  <b>Rating:</b>
+  <%=h @configuration.rating %>
+</p>
+
+
+<%= link_to 'Edit', edit_configuration_path(@configuration) %> |
+<%= link_to 'Back', configurations_path %>

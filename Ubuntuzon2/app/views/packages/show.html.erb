@@ -1,0 +1,45 @@
+
+<div id="column_left">
+  
+  <h1>Package Information:</h1>
+
+  <ul id="package_data">
+    <li>
+      <strong>Name:</strong><span class="red"><%=h @package.name %> <%= link_to image_tag("download.png"), "apt://#{@package.name}"  %></span>
+    </li>
+    <li>
+      <strong>Rating:</strong><span>&nbsp;</span>
+    </li>
+    <li>
+      <strong>Standard:</strong><span><% case @package.standard when 1 %>yes<% when 0 %>no<% when nil %>no<% end %></span>
+    </li>
+    <li>
+      <strong>Description:</strong><span><%=h @package.description %>&nbsp;</span>
+    </li>
+    <% if @current_account.admin? || @current_account.moderator? %>
+    <li class="clear">
+      <p class="right"><%= link_to 'Edit', :controller => "packages", :action => "admin_edit", :id => @package %></p>
+    </li>
+    <% end %>
+  </ul>
+  
+</div>
+
+<div id="column_right">
+  
+  <h1>Comments:</h1>
+  <ul id="comments">
+      <%= render :partial => @package.comments %>
+  </ul>
+  <% remote_form_for [@package, Comment.new] do |f| %>
+    <p>
+      <%= f.label :body, "New Comment" %><br />
+      <%= f.text_area :body %>
+    </p>
+    <p><%= f.submit "Add Comment" %></p>
+  <% end %>
+      
+      
+  
+  
+</div>

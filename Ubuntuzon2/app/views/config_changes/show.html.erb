@@ -1,0 +1,33 @@
+<h1>Changes since last upload</h1>
+
+<div id="column_left">
+  <h2>Installed packages:</h2>
+  <div>
+    <ul class="package_list">
+      <% @installedPackages.each do |p| %>
+      <li class="package_item">
+        <p class="package_name"><%= link_to p.name, p  %> <%= link_to image_tag("comment_edit.png"), p  %></p>
+        <div class="star-ratings-block" id="star-ratings-block-<%=h p.id %>">
+            <%= render :partial => "rating/rating", :locals => { :package => p } %>
+        </div>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+
+<div id="column_right">
+  <h2>Deinstalled packages:</h2>
+  <div>
+    <ul class="package_list">
+      <% @deinstalledPackages.each do |p| %>
+      <li class="package_item">
+        <p class="package_name"><%= link_to p.name, p  %> <%= link_to image_tag("comment_edit.png"), p  %></p>
+        <div class="star-ratings-block" id="star-ratings-block-<%=h p.id %>">
+            <%= render :partial => "rating/rating", :locals => { :package => p } %>
+        </div>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+</div>

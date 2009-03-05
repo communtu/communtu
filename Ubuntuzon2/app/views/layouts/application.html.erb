@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>UbuntuZon</title>
+  <%= stylesheet_link_tag "loader" %>
+  <%= javascript_include_tag :all %>
+
+</head>
+<body>
+<div id="page">
+  <!-- Header Begin -->
+  <div id="header"></div>
+  <!-- Header End -->
+  
+  <!-- Main Menu Begin -->
+  <div id="menu">
+    <ul class="left">
+      <% if @current_account != nil %>
+        <li class="devider"><%= link_to "Home", "/" %></li>
+        <li class="devider"><%= link_to "Upload", new_upload_path %></li>
+        <li class="devider"><%= link_to "Suggestions", suggestion_path(@current_account.id) %></li>
+        <li class="devider"><%= link_to "Configuration", account_path(@current_account) %></li>
+        <li><%= link_to "Configuration Changes", config_change_path(@current_account.id) %></li>
+      <% else %>
+        <li><%= link_to "Home", "/" %></li>
+      <% end %>
+    </ul>
+    <ul class="right">
+      <% if @current_account == nil || @current_account == false %>
+        <li class="devider"><%= link_to "Login", "/login" %></li>
+        <li><%= link_to "Sign Up", "/signup" %></li>
+      <% else %>
+        <% if @current_account.admin? %>
+          <li class="devider"><%= link_to "Admin Area", "/admin" %></li>
+        <% else %>
+          <li>Logged in as</li>
+        <% end %>
+          <li class="devider"><%= link_to @current_account.login, @current_account %></li>
+          <li><%= link_to "Logout", "/logout" %></li>
+      <% end %>
+    </ul>
+  </div>
+  <!-- Main Menu End -->
+  
+  <div id="content">
+    <% if flash[:notice] != nil %>
+      <div id="flash">
+        <p><%= flash[:notice] %></p>
+      </div>
+    <% end %>
+
+    <%= yield  %>
+    
+    <div class="clear"></div>
+    
+  </div>
+  
+  <div id="footer">
+    <p>Verein für Soziales, Ökologie und Bildung e.V. | Bauernstr. 2, 28203 Bremen | Tel. 70 66 16, <a href="mailto:solidaritaet_e_v@gmx.de">solidaritaet_e_v@gmx.de</a></p>
+  </div>
+
+</div>
+</body>
+</html>
+

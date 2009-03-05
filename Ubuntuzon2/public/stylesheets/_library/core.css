@@ -1,0 +1,83 @@
+/*****************************************
+	Name:    Core
+	Version: 1.0 (May 30 2008)
+	Author:  Sebastian Brink
+	Contact: http://www.quadrifolia.de
+******************************************/
+
+body {
+	font-family:			"Lucida Grande", "Bitstream Vera Sans", "Verdana";
+	font-size:				82.5%;
+	font-style:      	 	normal;
+	font-weight:      		normal;
+	text-decoration:  		none;
+	color: 					#333;
+	background-color:		#f0f0f0;
+}
+
+/* headlines */
+
+h1 {
+	font-size:				140%;
+	font-weight:   		   	bold;
+	color:					#666;
+	line-height:			1.6em;
+	padding:				0px 0px 20px 0px;
+}
+
+h2 {
+	font-size:				120%;
+	font-weight:     	 	bold;
+	color:					#666;
+	line-height:			1.6em;
+}
+
+h3 {
+	font-size:				105%;
+	font-weight:     	 	bold;
+	color:					#666;
+	line-height:			1.6em;
+}
+
+/* links */
+
+a, a:link {
+	color:					#c6001d;
+	text-decoration:		none;
+}
+a:active {
+	color:					#c6001d;
+	text-decoration:		none;
+}
+a:visited {
+	color:					#c6001d;
+	text-decoration:		none;
+}
+a:hover {
+	color:					#c6001d;
+	text-decoration:		underline;
+}
+
+/* helper */
+
+.right {
+	float:					right;
+}
+
+.left {
+	float:					left;
+}
+
+.clear {
+	clear:					both;
+}
+
+.red {
+	color:					#c70019;
+}
+
+/* firefox */
+
+:focus {
+	-moz-outline-style: 	none;
+}

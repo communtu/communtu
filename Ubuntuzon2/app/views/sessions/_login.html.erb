@@ -1,0 +1,9 @@
+  <% if @current_account == nil %>
+    <p><%= link_to "Login", "login" %>,&nbsp;
+      <%= link_to "Sign Up", "signup" %></p>
+
+  <% else %>
+    <p><%= link_to @current_account.login, account_path(@current_account) %>,&nbsp;
+    <%= link_to "Logout", "logout" %></p>
+  <% end %>
+
