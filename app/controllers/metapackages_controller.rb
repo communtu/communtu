@@ -54,6 +54,7 @@ class MetapackagesController < ApplicationController
   def create
     @metapackage = Metapackage.new(params[:metapackage])
 
+    #todo: check that name is unique and version is present
     respond_to do |format|
       if @metapackage.save
         format.html { redirect_to(@metapackage) }
@@ -68,6 +69,7 @@ class MetapackagesController < ApplicationController
   # PUT /metapackages/1
   # PUT /metapackages/1.xml
   def update
+    #todo: check version is increased
     @metapackage = Metapackage.find(params[:id])
     # correction of nil entries
     if params[:distributions].nil? then

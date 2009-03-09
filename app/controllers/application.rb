@@ -2,6 +2,8 @@
 # Likewise, all the methods added will be available for all controllers.
 
 class ApplicationController < ActionController::Base
+  require 'set.rb'
+
   helper :all # include all helpers, all the time
   include AuthenticatedSystem
   include ApplicationHelper

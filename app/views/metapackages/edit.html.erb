@@ -12,6 +12,10 @@
 	        <td><%= f.text_field(:name, { :size => 16}) %></td>	
         </tr>
         <tr>
+	        <td>Version:</td>
+	        <td><%= f.text_field(:version, { :size => 16}) %></td>	
+        </tr>
+        <tr>
 	        <td>Kategorie:</td>
 	        <td>
 	        	<% @categories = Category.find(:all, :order => "name")%>

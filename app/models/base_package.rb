@@ -15,4 +15,17 @@ class BasePackage < ActiveRecord::Base
     end
   end
 
+  def debian_name
+    if self.class == Metapackage then
+      n="communtu-"+self.name
+    else
+      n=self.name
+    end 
+    return debianize_name(n)
+  end
+  
+  def self.debianize_name(n)
+    return n.downcase.gsub("ä","ae").gsub("ö","oe").gsub("ü","ue").gsub("ß","ss").gsub(/[^a-z0-9._+-]/, '_')
+    # todo: is umlaut elimination really needed?
+  end
 end

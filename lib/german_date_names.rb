@@ -1,12 +1,15 @@
 class Date
 
-Date::MONTHNAMES = [nil] + %w(Januar Februar März April Mai Juni Juli August September Oktober November Dezember)
 
-Date::DAYNAMES = %w(Sonntag Montag Dienstag Mittwoch Donnerstag Freitag Samstag)
+# this is not useful, since we need the English names for debian packaging
 
-Date::ABBR_MONTHNAMES = [nil] + %w(Jan Feb März Apr Mai Jun Jul Aug Sep Okt Nov Dez) 
+#Date::MONTHNAMES = [nil] + %w(Januar Februar März April Mai Juni Juli August September Oktober November Dezember)
 
-Date::ABBR_DAYNAMES = %w(So Mo Di Mi Do Fr Sa)
+#Date::DAYNAMES = %w(Sonntag Montag Dienstag Mittwoch Donnerstag Freitag Samstag)
+
+#Date::ABBR_MONTHNAMES = [nil] + %w(Jan Feb März Apr Mai Jun Jul Aug Sep Okt Nov Dez) 
+
+#Date::ABBR_DAYNAMES = %w(So Mo Di Mi Do Fr Sa)
 
 
 end

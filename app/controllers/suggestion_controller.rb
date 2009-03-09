@@ -24,20 +24,37 @@ class SuggestionController < ApplicationController
     end
   end
 
-  def recursive_packages meta, package_install, package_names, package_sources, dist, license, security
-    meta.base_packages.each do |p|
-        if p.class == Package
-            reps = p.repositories_dist(dist).select{|r| r.security_type<=security && r.license_type<=license}
-            if !reps.empty? then
-              package_names.push(p.name)
-              reps.each do |rep|
-                package_sources.store(rep, rep.url)
-              end
-            end
-        else
-            recursive_packages p, package_install, package_names, package_sources, dist, license, security
-        end
+  def install_sources
+    # increase version number
+    if current_user.profile_version.nil? then
+      current_user.profile_version = 1
+        current_user.profile_changed = true
+    else
+      if current_user.profile_changed then
+        current_user.profile_version += 1
+      end  
     end
+
+    name = BasePackage.debianize_name("communtu-add-sources-"+current_user.login)
+    version = current_user.profile_version.to_s
+
+    # if profile has changed, generate new debian metapackage
+    if current_user.profile_changed then
+      description = "Quellen und Schluessel hinzufuegen fuer Benutzer "+current_user.login
+      debfile = Metapackage.makedeb_for_source_install(name,
+                 version,
+                 description,
+                 current_user.selected_packages,
+                 current_user.distribution, 
+                 current_user.license,
+                 current_user.security)
+      current_user.profile_changed = false
+    else
+      debfile = Dir.glob("debs/#{name}/#{name}_#{version}*deb")[0]
+    end
+    current_user.save
+    send_file debfile, :type => 'application/x-debian-package'
+    # todo: what to do if debfile is nil?
   end
 
   def install_new
@@ -78,20 +95,16 @@ class SuggestionController < ApplicationController
 
   def install_aux(packages,dist,license,security)
 
-
-    package_install = ""
-    sources         = {}
-    package_sources = "" 
-
     script          = "gksudo echo\n"
     script += "#!/bin/bash\n\n"
     script += "APTLIST=\"/etc/apt/sources.list\"\n\n"
     
     # generate list of packages, grouped by main bundles
     script += "PACKAGES=\"\"\n"
+    sources = Set.[]
     packages.each do |p|    
         package_names   = []
-        recursive_packages p, package_install, package_names, sources, dist, license, security
+        p.recursive_packages package_names, sources, dist, license, security
         script += "# Bündel: "+p.name+"\n"
         script += "PACKAGES=$PACKAGES\""
         package_names.each do |name|
@@ -103,7 +116,7 @@ class SuggestionController < ApplicationController
 
     #  sources
     script += "SOURCES=\""
-    sources.each do |repo, url|
+    sources.each do |repo|
         script += repo.url + " " + repo.subtype + "*"
     end
     script += "\"\n\n"
@@ -134,7 +147,7 @@ class SuggestionController < ApplicationController
     script += "done\n\n"
 
     # add gpg keys
-    sources.each do |repository, url|
+    sources.each do |repository|
       if not repository.gpgkey.nil?
         if not repository.gpgkey.empty?
           script += "wget -q " + repository.gpgkey + " -O- | sudo apt-key add -\n"
@@ -160,15 +173,14 @@ class SuggestionController < ApplicationController
 
     dist = current_user.distribution
     
-    @package_install = []
-    sources          = {}
+    sources          = Set.[]
     @package_sources = ""
    
     packages = params[:post]
     packages.each do |id,unused|
     
         package = Metapackage.find(id)
-        recursive_packages package, @package_install, sources, dist
+        package.recursive_packages sources, dist
     end
     
     gen_package_sources sources, @package_sources
@@ -178,8 +190,8 @@ class SuggestionController < ApplicationController
   private
   
     def gen_package_sources sources, package_sources
-        sources.each do |repository, url|
-            out  = "SOURCE=\"" + url + " " + repository.subtype + "\"\n"
+        sources.each do |repository|
+            out  = "SOURCE=\"" + repository.url + " " + repository.subtype + "\"\n"
             out += "grep -q \"" + repository.url + ".*" + repository.subtype + "\" $APTLIST\n\n"
             out += "if [ \"$?\" != \"0\" ]; then\n" +
                 "\tsudo sh -c \"echo $SOURCE >> $APTLIST\"\n"

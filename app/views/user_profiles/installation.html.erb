@@ -14,4 +14,9 @@ Programme installiert, inklusive Download aus dem Internet.
     <div style="padding-top:12px;padding-right:8px" align="right">
 	<%= link_to "<img src=/images/apt.png title='Installieren' alt='Installieren' border='0'>", user_path(current_user) + "/suggestion/install_new"%>
     </div>
-</div>
+<!--
+Um neue Quellen und Schlüssel einzutragen, bitte 
+<%= link_to 'dieses Paket', '/users/'+current_user.id.to_s + '/suggestion/install_sources'  %>
+installieren: einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer öffnen.
+Achtung: nach dem Anklicken dauert es eine gewisse Zeit, bis die Datei bereitgestellt wird.
+-->
