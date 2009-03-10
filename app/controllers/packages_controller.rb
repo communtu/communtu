@@ -78,12 +78,12 @@ class PackagesController < ApplicationController
     @package = Package.find(params[:id])
     # enter new video
     if !params[:video_url].nil? then
-      if !params[:video_descr].nil? then
-         descr = params[:video_descr][:v]
+      if params[:video_descr][:v]!= "" then
+        descr = params[:video_descr][:v]
       else 
         descr = nil
       end  
-      if ((descr == nil) && (!params[:video_url].nil))
+      if ((descr != nil) && (!params[:video_url].nil?))
       Video.create(:base_package_id => @package.id, :url => params[:video_url], :description => descr)
       end    
     end
