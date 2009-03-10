@@ -1,13 +1,13 @@
 <div class="inner0">
-<table>
-	<tr><td>
+<table width="100%">
+	<tr><td width="50%">
 		<span class="headline">   <%=h @metapackage.name %>
 </span> 
 </td>
 <% if !request.env['HTTP_REFERER'].nil? then %>
 
-     <td width=250px></td>
-     <td>
+     <td width="25%"></td>
+     <td width="25%" align="right">
        <%= link_to "Zurück&nbsp;&nbsp;", request.env['HTTP_REFERER'] %>
 	 </td>  
 <% end %>
@@ -63,7 +63,7 @@
 </div>
 
 <%= render :partial => "package_list", :locals => { :metapackage => @metapackage, :editable => false, :distribution => @distribution, :derivative =>  @derivative} %>
-
+<%= image_tag("/images/editp.png", :size => "22x22", :border => 0, :title => "Kommentieren", :alt => "Kommentieren") %> 
 <%= link_to'Kommentieren', { :controller => :metapackages, :action => :add_comment, \
 	    :id => @metapackage.id } %>
 <%= show_comments @metapackage.comments %>
