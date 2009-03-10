@@ -83,7 +83,9 @@ class PackagesController < ApplicationController
       else 
         descr = nil
       end  
+      if ((descr == nil) && (!params[:video_url].nil))
       Video.create(:base_package_id => @package.id, :url => params[:video_url], :description => descr)
+      end    
     end
     # enter new icn file
     if !params[:package][:icon_file].nil? && (params[:package][:icon_file].size > 1) then
