@@ -1,0 +1,80 @@
+Codename: ubuntu-gutsy
+Origin: communtu
+Label: communtu
+Suite: testing
+Architectures: i386 amd64 
+Components: free-native free-trusted free-all all-native all-trusted all-all
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: kubuntu-gutsy
+Origin: communtu
+Label: communtu
+Suite: testing
+Architectures: i386 amd64 
+Components: free-native free-trusted free-all all-native all-trusted all-all
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: xubuntu-gutsy
+Origin: communtu
+Label: communtu
+Suite: testing
+Architectures: i386 amd64 
+Components: free-native free-trusted free-all all-native all-trusted all-all
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: ubuntu-hardy
+Origin: communtu
+Label: communtu
+Suite: testing
+Architectures: i386 amd64 
+Components: free-native free-trusted free-all all-native all-trusted all-all
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: kubuntu-hardy
+Origin: communtu
+Label: communtu
+Suite: testing
+Architectures: i386 amd64 
+Components: free-native free-trusted free-all all-native all-trusted all-all
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: xubuntu-hardy
+Origin: communtu
+Label: communtu
+Suite: testing
+Architectures: i386 amd64 
+Components: free-native free-trusted free-all all-native all-trusted all-all
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: ubuntu-intrepid
+Origin: communtu
+Label: communtu
+Suite: testing
+Architectures: i386 amd64 
+Components: free-native free-trusted free-all all-native all-trusted all-all
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: kubuntu-intrepid
+Origin: communtu
+Label: communtu
+Suite: testing
+Architectures: i386 amd64 
+Components: free-native free-trusted free-all all-native all-trusted all-all
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: xubuntu-intrepid
+Origin: communtu
+Label: communtu
+Suite: testing
+Architectures: i386 amd64 
+Components: free-native free-trusted free-all all-native all-trusted all-all
+Description: metapackages generated from communtu.de
+#SignWith: yes

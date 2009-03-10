@@ -45,6 +45,7 @@ class UserProfilesController < ApplicationController
   end
   
   def installation
+    @metas = current_user.selected_packages.uniq.map{|m| m.debian_name}.join(",")
   end
   
   # update the basic data of the user's software selection

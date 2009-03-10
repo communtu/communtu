@@ -25,10 +25,12 @@ class SuggestionController < ApplicationController
   end
 
   def install_sources
+    Dir.chdir RAILS_ROOT
+    
     # increase version number
     if current_user.profile_version.nil? then
-      current_user.profile_version = 1
-        current_user.profile_changed = true
+       current_user.profile_version = 1
+       current_user.profile_changed = true
     else
       if current_user.profile_changed then
         current_user.profile_version += 1
@@ -46,6 +48,7 @@ class SuggestionController < ApplicationController
                  description,
                  current_user.selected_packages,
                  current_user.distribution, 
+                 current_user.derivative, 
                  current_user.license,
                  current_user.security)
       current_user.profile_changed = false

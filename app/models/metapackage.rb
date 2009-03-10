@@ -72,6 +72,10 @@ class Metapackage < BasePackage
 
 ## installation and creating debian metapackages
 
+  def self.codename(distribution,derivative)
+    "#{derivative.name.downcase}-#{distribution.short_name.downcase}"
+  end
+  
   def recursive_packages package_names, package_sources, dist, license, security
     self.base_packages.each do |p|
         if p.class == Package
@@ -88,7 +92,7 @@ class Metapackage < BasePackage
     end
   end
 
-  def self.makedeb_for_source_install(name,version,description,packages,distribution,license,security)
+  def self.makedeb_for_source_install(name,version,description,packages,distribution,derivative,license,security)
     #compute sources
     repos = Set.[]
     packages.each do |p|    
@@ -96,7 +100,7 @@ class Metapackage < BasePackage
       p.recursive_packages package_names, repos, distribution, license, security
     end
     # only install sources, no packages
-    makedeb(name,version,[],description,repos)
+    Metapackage.makedeb(name,version,[],description,distribution,derivative,repos)
   end 
   
   #free native = main
@@ -106,7 +110,7 @@ class Metapackage < BasePackage
   #nonfree trusted = multiverse
   #nonfree third-party = nonfree
   
-  def self.makedeb(name,version,packages,description,repos)
+  def self.makedeb(name,version,package_names,description,distribution,derivative,repos)
     Dir.chdir RAILS_ROOT+'/debs'
     if !File.exists?(name)
       Dir.mkdir name
@@ -123,39 +127,40 @@ class Metapackage < BasePackage
     # todo: adapt changelog according to difference in package list
     if !File.exists?('debian')
       Dir.mkdir 'debian'
+      Dir.chdir 'debian'
+      # copy file 'copyright'
+      system "cp ../../../copyright ."
+      # copy file 'rules'
+      system "cp ../../../rules ."
+      # copy file 'compat'
+      system "cp ../../../compat ."
+    else  
+      Dir.chdir 'debian'
     end  
-    Dir.chdir 'debian'
 
     # create file 'control'
     f=File.open("control","w")
     f.puts "Source: #{name}"
     f.puts "Section: metapackages"
+    f.puts "Priority: Optional"
     f.puts "Maintainer: Communtu <info@communtu.de>"
+    f.puts "Homepage: www.communtu.de"
     f.puts
     f.puts "Package: #{name}"
-    f.puts "Architecture: any"
-    f.puts "Depends: " + packages.map{|p| p.debian_name}.join(", ")
+    f.puts "Architecture: all"
+    f.puts "Depends: " + package_names.join(", ")
     # todo: better formatting of description
-    f.puts "Description: " + description.gsub('\n',' ')
+    f.puts "Description: " + description.gsub(/\n/,"\n  ").gsub(/\r/,"")
+
     f.close
-
-    # copy file 'copyright'
-    system "cp ../../../copyright ."
-
-    # copy file 'rules'
-    system "cp ../../../rules ."
-
-    # copy file 'compat'
-    system "cp ../../../compat ."
 
     # create file 'changelog'
     f=File.open("changelog","w")
-    f.puts "#{name} (#{version}) unstable; urgency=low"
+    f.puts "#{name} (#{version}) #{Metapackage.codename(distribution,derivative)}; urgency=low"
     f.puts
     f.puts "  * Initial release"
     f.puts
     f.puts " -- Communtu <info@communtu.de>  "+Time.now.strftime("%a, %d %b %Y %H:%M:%S")+" +0100"
-
     f.puts
     f.close
 
@@ -163,8 +168,8 @@ class Metapackage < BasePackage
     if !repos.empty?
       # add repository for communtu at the end
       # todo: add key for communtu package server
-      repos1 = repos.to_a
-      repos1 << Repository.new(:url => "deb file:/home/till/workspace/communtu-program/public/debs", :subtype => "./")
+      repos1 = repos.to_a.sort {|r1,r2| r1.url <=> r2.url}
+      repos1 << Repository.new(:url => "deb http://communtu.bremer-commune.dyndns.org/debs", :subtype => "./")
       # get urls and keys
       urls = []
       keys = []
@@ -200,17 +205,47 @@ class Metapackage < BasePackage
 
   def debianize
     # start with version 0.1 if there is none
-    if self.version.nil? then
+    if self.version.nil? or self.version.empty? then
       self.version = "0.1"
       self.save
     end
-    
-    makedeb(self.debian_name,self.version,self.base_packages,self.description)
+    # is someone else already debianizing this metapackage?
+    if Dir.glob("#{self.debian_name}*").empty?
+      version = self.version
+      description = self.description
+      Distribution.all.each do |dist|
+        Derivative.all.each do |der|
+          (0..1).each do |lic|
+            (0..2).each do |sec|
+              component = Package.license_components[lic]+"-"+Package.security_components[sec]
+              codename = Metapackage.codename(dist,der)
+              name = self.debian_name+"-"+component
+              # compute list of packages contained in metapackage (todo: delegate this to an own method, preferably using more :includes)
+              mcs = Metacontent.find(:all,:conditions => 
+                     ["metapackage_id = ? and metacontents_distrs.distribution_id = ? and metacontents_derivatives.derivative_id = ?",
+                      self.id,dist.id,der.id],:include => [:metacontents_distrs, :metacontents_derivatives])
+              packages = mcs.map{|mc| mc.base_package}.select{|p| p.is_present(dist,lic,sec)}.map{|p| p.debian_name+"-"+component}
+              # build metapackage
+              debfile = Metapackage.makedeb(name,version,packages,description,dist,der,[])
+              # upload metapackage
+              # todo: make name of .deb unique
+              system "reprepro -v -b #{RAILS_ROOT} --outdir public/debs --confdir debs --logdir log --dbdir debs/db --listdir debs/list -C #{component} includedeb #{codename} #{debfile}"
+              # remove package files, but not folder
+              system "rm #{RAILS_ROOT}/debs/#{name}/#{name}* || true"
+            end
+          end
+        end
+      end
+      # cleanup
+      system "rm -r #{RAILS_ROOT}/debs/#{self.debian_name}*"
+    end
   end
   
-  def self.sync_deblist
-    # generate new package index
-    Dir.chdir 'public/debs'
-    system "dpkg-scanpackages ./ /dev/null | gzip > Packages.gz"    
-  end  
+  def self.debianize_all
+    Metapackage.all.each do |m|
+      puts m.name
+      m.debianize
+    end
+  end 
+  
 end

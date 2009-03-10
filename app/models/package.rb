@@ -21,6 +21,11 @@ class Package < BasePackage
     return pds.map{|pd| pd.repository}
   end
 
+  def is_present(distribution,licence,security)
+#    PackageDistr.find(:all,:conditions=>["package_id = ? and distribution_id = ? and repositories.",self.id,distribution.id], :include => :repository)
+    !self.repositories_dist(distribution).select{|r| r.security_type<=security && r.license_type<=licence}.empty?
+  end
+
   def unique_name(distribution)
     name+"-"+distribution.name.split(" ")[0]
   end
@@ -100,7 +105,16 @@ class Package < BasePackage
   def self.security_types
     security_types  = [ "Native", "Trusted", "Third-Party" ]
   end
- 
+
+  # for debian packaging
+  def self.license_components
+    license_types = [ "free", "all" ]
+  end
+
+  def self.security_components
+    security_types  = [ "native", "trusted", "all" ]
+  end
+
   # compute the license type for a bundle as the maximum of licesce types for the list of packages
   def self.meta_license_type(ps)
     ps.map{|p| p.repositories.map{|r| r.license_type}}.flatten.max

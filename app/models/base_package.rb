@@ -21,7 +21,7 @@ class BasePackage < ActiveRecord::Base
     else
       n=self.name
     end 
-    return debianize_name(n)
+    return BasePackage.debianize_name(n)
   end
   
   def self.debianize_name(n)
