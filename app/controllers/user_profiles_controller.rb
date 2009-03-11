@@ -96,7 +96,7 @@ class UserProfilesController < ApplicationController
   def update_ratings
     if logged_in? then 
       current_user.first_login = 0
-      user.profile_changed = true
+      current_user.profile_changed = true
       current_user.save!
       uid = current_user.id
       #replace old list of packages...
