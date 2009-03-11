@@ -64,10 +64,7 @@ div.content{
 	min-height: 400px;
 	
 }
-.h2
-{
-color: green;
-}
+
 div.inner0 {
 	padding: 5px;
 	margin: 5px;
@@ -148,6 +145,14 @@ body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size:   13px;
   line-height: 18px;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+h2 {
+  font-family: verdana, arial, helvetica, sans-serif;
+ /* font-size:   13px; */
+  line-height: 22px;
 	word-wrap: break-word;
 	word-break: break-all;
 }
