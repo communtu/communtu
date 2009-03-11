@@ -30,7 +30,7 @@ sudo /etc/init.d/mysql reload
 # checkout rails project
 mkdir web2.0
 cd web2.0
-svn co http://$SVNSERVER/svn communtu-program --username commune 
+svn co http://$SVNSERVER/svn/communtu-program communtu-program --username commune 
 cd ..
 scp commune@$OLDSERVER:/home/commune/web2.0/communtu-program/config/database.yml /home/commune/web2.0/communtu-program/config/database.yml
 # start rails apps
