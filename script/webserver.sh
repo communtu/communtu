@@ -1,10 +1,14 @@
 #!/bin/bash
 # script for installing communtu on a new server
+# Es muss noch nach dem Script die Datei /etc/apache2/sites-enabled/all angepasst werden.
+# Weiter muss in der Apache-Config /etc/apache2/apache2.conf hoechstwahrscheinlich das Root-Verzeichnis
+# auskommentiert werden.
 OLDSERVER=bremer-commune.dyndns.org
 SVNSERVER=bremer-commune.dyndns.org
-# apache
+# apache und mail
 sudo apt-get install apache2
 scp -r commune@$OLDSERVER:/etc/apache2/* /etc/apache2/ 
+sudo apt-get install php5 libapache2-mod-python sendmail
 sudo /etc/init.d/apache2 restart
 # subversion
 sudo apt-get install subversion libapache2-svn
