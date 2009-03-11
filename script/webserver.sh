@@ -25,7 +25,9 @@ sudo apt-get install mysql-server libmysql-ruby ruby1.8-dev libmysqlclient15-dev
 sudo gem install mysql
 mysqladmin -u root -p create communtu
 scp commune@$OLDSERVER:/etc/mysql/my.cnf /etc/mysql/my.cnf
-ssh commune@$OLDSERVER "mysqldump -u root -p communtu | gzip -c" | mysql -u root -p communtu
+ssh commune@$OLDSERVER "mysqldump -u root -p communtu | gzip -c > /home/commune/web2.0/communtu-program/db.dump.gz"
+scp commune@$OLDSERVER:/home/commune/web2.0/communtu-program/db.dump.gz /home/commune/web2.0/communtu-program/
+gunzip -c /home/commune/web2.0/communtu-program/db.dump.gz | mysql -u root -p communtu
 sudo /etc/init.d/mysql reload
 # checkout rails project
 mkdir web2.0
