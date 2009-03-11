@@ -1,80 +1,432 @@
-Codename: ubuntu-gutsy
+Codename: ubuntu-gutsy-free-native
 Origin: communtu
 Label: communtu
-Suite: testing
-Architectures: i386 amd64 
-Components: free-native free-trusted free-all all-native all-trusted all-all
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
 Description: metapackages generated from communtu.de
 #SignWith: yes
 
-Codename: kubuntu-gutsy
+Codename: ubuntu-gutsy-free-trusted
 Origin: communtu
 Label: communtu
-Suite: testing
-Architectures: i386 amd64 
-Components: free-native free-trusted free-all all-native all-trusted all-all
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
 Description: metapackages generated from communtu.de
 #SignWith: yes
 
-Codename: xubuntu-gutsy
+Codename: ubuntu-gutsy-free-all
 Origin: communtu
 Label: communtu
-Suite: testing
-Architectures: i386 amd64 
-Components: free-native free-trusted free-all all-native all-trusted all-all
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
 Description: metapackages generated from communtu.de
 #SignWith: yes
 
-Codename: ubuntu-hardy
+Codename: ubuntu-gutsy-all-native
 Origin: communtu
 Label: communtu
-Suite: testing
-Architectures: i386 amd64 
-Components: free-native free-trusted free-all all-native all-trusted all-all
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
 Description: metapackages generated from communtu.de
 #SignWith: yes
 
-Codename: kubuntu-hardy
+Codename: ubuntu-gutsy-all-trusted
 Origin: communtu
 Label: communtu
-Suite: testing
-Architectures: i386 amd64 
-Components: free-native free-trusted free-all all-native all-trusted all-all
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
 Description: metapackages generated from communtu.de
 #SignWith: yes
 
-Codename: xubuntu-hardy
+Codename: ubuntu-gutsy-all-all
 Origin: communtu
 Label: communtu
-Suite: testing
-Architectures: i386 amd64 
-Components: free-native free-trusted free-all all-native all-trusted all-all
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
 Description: metapackages generated from communtu.de
 #SignWith: yes
 
-Codename: ubuntu-intrepid
+Codename: kubuntu-gutsy-free-native
 Origin: communtu
 Label: communtu
-Suite: testing
-Architectures: i386 amd64 
-Components: free-native free-trusted free-all all-native all-trusted all-all
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
 Description: metapackages generated from communtu.de
 #SignWith: yes
 
-Codename: kubuntu-intrepid
+Codename: kubuntu-gutsy-free-trusted
 Origin: communtu
 Label: communtu
-Suite: testing
-Architectures: i386 amd64 
-Components: free-native free-trusted free-all all-native all-trusted all-all
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
 Description: metapackages generated from communtu.de
 #SignWith: yes
 
-Codename: xubuntu-intrepid
+Codename: kubuntu-gutsy-free-all
 Origin: communtu
 Label: communtu
-Suite: testing
-Architectures: i386 amd64 
-Components: free-native free-trusted free-all all-native all-trusted all-all
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
 Description: metapackages generated from communtu.de
 #SignWith: yes
+
+Codename: kubuntu-gutsy-all-native
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: kubuntu-gutsy-all-trusted
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: kubuntu-gutsy-all-all
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: xubuntu-gutsy-free-native
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: xubuntu-gutsy-free-trusted
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: xubuntu-gutsy-free-all
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: xubuntu-gutsy-all-native
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: xubuntu-gutsy-all-trusted
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: xubuntu-gutsy-all-all
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: ubuntu-hardy-free-native
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: ubuntu-hardy-free-trusted
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: ubuntu-hardy-free-all
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: ubuntu-hardy-all-native
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: ubuntu-hardy-all-trusted
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: ubuntu-hardy-all-all
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: kubuntu-hardy-free-native
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: kubuntu-hardy-free-trusted
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: kubuntu-hardy-free-all
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: kubuntu-hardy-all-native
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: kubuntu-hardy-all-trusted
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: kubuntu-hardy-all-all
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: xubuntu-hardy-free-native
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: xubuntu-hardy-free-trusted
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: xubuntu-hardy-free-all
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: xubuntu-hardy-all-native
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: xubuntu-hardy-all-trusted
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: xubuntu-hardy-all-all
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: ubuntu-intrepid-free-native
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: ubuntu-intrepid-free-trusted
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: ubuntu-intrepid-free-all
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: ubuntu-intrepid-all-native
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: ubuntu-intrepid-all-trusted
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: ubuntu-intrepid-all-all
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: kubuntu-intrepid-free-native
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: kubuntu-intrepid-free-trusted
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: kubuntu-intrepid-free-all
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: kubuntu-intrepid-all-native
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: kubuntu-intrepid-all-trusted
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: kubuntu-intrepid-all-all
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: xubuntu-intrepid-free-native
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: xubuntu-intrepid-free-trusted
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: xubuntu-intrepid-free-all
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: xubuntu-intrepid-all-native
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: xubuntu-intrepid-all-trusted
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: xubuntu-intrepid-all-all
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+

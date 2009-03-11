@@ -1,6 +1,7 @@
 class Metapackage < BasePackage
 
   require 'set.rb'
+  require 'utils'
   
   has_many   :metacontents, :dependent => :destroy
   has_many   :comments, :dependent => :destroy
@@ -28,6 +29,14 @@ class Metapackage < BasePackage
   
   def is_published?
     return self.published == Metapackage.state[:published]
+  end
+
+  def compute_license_type
+    (self.base_packages.map{|p| p.compute_license_type} <<0).max
+  end
+  
+  def compute_security_type
+    (self.base_packages.map{|p| p.compute_security_type} <<0).max
   end
   
   # copy the metapackage contents from from_dist to to_dist
@@ -72,8 +81,8 @@ class Metapackage < BasePackage
 
 ## installation and creating debian metapackages
 
-  def self.codename(distribution,derivative)
-    "#{derivative.name.downcase}-#{distribution.short_name.downcase}"
+  def self.codename(distribution,derivative,license,security)
+    derivative.name.downcase+"-"+distribution.short_name.downcase+"-" +Package.license_components[license]+"-"+Package.security_components[security]
   end
   
   def recursive_packages package_names, package_sources, dist, license, security
@@ -100,17 +109,11 @@ class Metapackage < BasePackage
       p.recursive_packages package_names, repos, distribution, license, security
     end
     # only install sources, no packages
-    Metapackage.makedeb(name,version,[],description,distribution,derivative,repos)
+    codename = Metapackage.codename(distribution,derivative,license,security)
+    Metapackage.makedeb(name,version,[],description,codename,repos)
   end 
-  
-  #free native = main
-  #free trusted = universe
-  #free third-party = free
-  #nonfree native = restricted
-  #nonfree trusted = multiverse
-  #nonfree third-party = nonfree
-  
-  def self.makedeb(name,version,package_names,description,distribution,derivative,repos)
+
+  def self.makedeb(name,version,package_names,description,codename,repos)
     Dir.chdir RAILS_ROOT+'/debs'
     if !File.exists?(name)
       Dir.mkdir name
@@ -129,11 +132,11 @@ class Metapackage < BasePackage
       Dir.mkdir 'debian'
       Dir.chdir 'debian'
       # copy file 'copyright'
-      system "cp ../../../copyright ."
+      safe_system "cp ../../../copyright ."
       # copy file 'rules'
-      system "cp ../../../rules ."
+      safe_system "cp ../../../rules ."
       # copy file 'compat'
-      system "cp ../../../compat ."
+      safe_system "cp ../../../compat ."
     else  
       Dir.chdir 'debian'
     end  
@@ -156,7 +159,7 @@ class Metapackage < BasePackage
 
     # create file 'changelog'
     f=File.open("changelog","w")
-    f.puts "#{name} (#{version}) #{Metapackage.codename(distribution,derivative)}; urgency=low"
+    f.puts "#{name} (#{version}) #{codename}; urgency=low"
     f.puts
     f.puts "  * Initial release"
     f.puts
@@ -169,7 +172,8 @@ class Metapackage < BasePackage
       # add repository for communtu at the end
       # todo: add key for communtu package server
       repos1 = repos.to_a.sort {|r1,r2| r1.url <=> r2.url}
-      repos1 << Repository.new(:url => "deb http://communtu.bremer-commune.dyndns.org/debs", :subtype => "./")
+      Metapackage.components.flatten.each do |component|
+      repos1 << Repository.new(:url => "deb http://packages.communtu.org", :subtype => component)
       # get urls and keys
       urls = []
       keys = []
@@ -184,7 +188,7 @@ class Metapackage < BasePackage
       end
       # create  'preinst'
       # first half of standard script ...
-      system "cp ../../../preinst1 preinst"
+      safe_system "cp ../../../preinst1 preinst"
       # ... addition of new sources and keys ...
       f=File.open("preinst","a")
       f.puts '    SOURCES="'+urls.join('*')+'"'
@@ -192,17 +196,21 @@ class Metapackage < BasePackage
       f.puts '    SOURCESKEYS="'+urls_keys.join('*')+'"'
       f.close
       # ... and second half of standard script
-      system "cat ../../../preinst2 >> preinst"
+      safe_system "cat ../../../preinst2 >> preinst"
     end  
 
     # build deb package
     Dir.chdir '..'
-    system "dpkg-buildpackage -uc -us -rfakeroot"
+    safe_system "dpkg-buildpackage -uc -us -rfakeroot"
     Dir.chdir '../../..'
     # return filename of the newly created package
     return Dir.glob("debs/#{name}/#{name}_#{version}*deb")[0]
   end
 
+  def self.components
+    [["main","universe","free"],["restricted","multiverse","non-free"]]
+  end
+  
   def debianize
     # start with version 0.1 if there is none
     if self.version.nil? or self.version.empty? then
@@ -211,33 +219,45 @@ class Metapackage < BasePackage
     end
     # is someone else already debianizing this metapackage?
     if Dir.glob("#{self.debian_name}*").empty?
-      version = self.version
+      mlic = self.compute_license_type
+      msec = self.compute_security_type
       description = self.description
       Distribution.all.each do |dist|
         Derivative.all.each do |der|
           (0..1).each do |lic|
             (0..2).each do |sec|
-              component = Package.license_components[lic]+"-"+Package.security_components[sec]
-              codename = Metapackage.codename(dist,der)
-              name = self.debian_name+"-"+component
+              codename = Metapackage.codename(dist,der,lic,sec)
+              name = self.debian_name
+              version = "#{self.version}-#{dist.id}-#{der.id}-#{lic.id}-#{sec.id}"
+              puts "++++++++++++++++++ version #{version}"
               # compute list of packages contained in metapackage (todo: delegate this to an own method, preferably using more :includes)
               mcs = Metacontent.find(:all,:conditions => 
                      ["metapackage_id = ? and metacontents_distrs.distribution_id = ? and metacontents_derivatives.derivative_id = ?",
                       self.id,dist.id,der.id],:include => [:metacontents_distrs, :metacontents_derivatives])
-              packages = mcs.map{|mc| mc.base_package}.select{|p| p.is_present(dist,lic,sec)}.map{|p| p.debian_name+"-"+component}
+              packages = mcs.map{|mc| mc.base_package}.select{|p| p.is_present(dist,lic,sec)}.map{|p| p.debian_name}
               # build metapackage
-              debfile = Metapackage.makedeb(name,version,packages,description,dist,der,[])
+              debfile = Metapackage.makedeb(name,version,packages,description,codename,[])
+
+              # make name of .deb unique by adding the codename
+              # newfile = debfile.gsub("_all.deb","~"+codename+"_all.deb")
+              # safe_system "mv #{debfile} #{newfile}"
+              newfile = debfile
+
+              # what license types and security types are actually used in the bundle?
+              # use this info to determine the component
+              component = Metapackage.components[[lic,mlic].min][[sec,msec].min]
               # upload metapackage
               # todo: make name of .deb unique
-              system "reprepro -v -b #{RAILS_ROOT} --outdir public/debs --confdir debs --logdir log --dbdir debs/db --listdir debs/list -C #{component} includedeb #{codename} #{debfile}"
+              puts "Uploading #{newfile}"
+              safe_system "reprepro -v -b #{RAILS_ROOT} --outdir public/debs --confdir debs --logdir log --dbdir debs/db --listdir debs/list -C #{component} includedeb #{codename} #{newfile}"
               # remove package files, but not folder
-              system "rm #{RAILS_ROOT}/debs/#{name}/#{name}* || true"
+              safe_system "rm #{RAILS_ROOT}/debs/#{name}/#{name}* || true"
             end
           end
         end
       end
       # cleanup
-      system "rm -r #{RAILS_ROOT}/debs/#{self.debian_name}*"
+      safe_system "rm -r #{RAILS_ROOT}/debs/#{self.debian_name}*"
     end
   end
   
@@ -247,5 +267,27 @@ class Metapackage < BasePackage
       m.debianize
     end
   end 
+  
+  def self.write_conf_distributions
+    f=File.open(RAILS_ROOT+'/debs/distributions','w')
+    Distribution.all.each do |dist|
+      Derivative.all.each do |der|
+        (0..1).each do |lic|
+          (0..2).each do |sec|
+            codename = Metapackage.codename(dist,der,lic,sec)
+            f.puts "Codename: #{codename}"
+            f.puts "Origin: communtu"
+            f.puts "Label: communtu"
+            f.puts "Architectures: i386 amd64"
+            f.puts "Components: "+Metapackage.components.flatten.join(" ")
+            f.puts "Description: metapackages generated from communtu.de"
+            f.puts "#SignWith: yes"
+            f.puts 
+          end
+        end
+      end
+    end
+    f.close
+  end
   
 end

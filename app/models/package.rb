@@ -115,6 +115,14 @@ class Package < BasePackage
     security_types  = [ "native", "trusted", "all" ]
   end
 
+  def compute_license_type
+    self.repositories.map{|r| r.license_type}.max
+  end
+  
+  def compute_security_type
+    self.repositories.map{|r| r.security_type}.max
+  end
+  
   # compute the license type for a bundle as the maximum of licesce types for the list of packages
   def self.meta_license_type(ps)
     ps.map{|p| p.repositories.map{|r| r.license_type}}.flatten.max

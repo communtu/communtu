@@ -62,6 +62,7 @@ class CartController < ApplicationController
             end
             
             license = 0
+            security = 0
             # delete packages outside cart...
             meta.base_packages(force_reload=true).each do |p| 
               if !cart.base_packages.include?(p) then
@@ -92,10 +93,18 @@ class CartController < ApplicationController
                     lic = package.license_type
                     license = lic if lic > license
                 end
+                # compute security type
+                if package.class == Package
+                    sec = package.repositories.map{|r| r.security_type}.max
+                    security = sec if sec > security
+                else 
+                    sec = package.security_type
+                    security = sec if sec > security
+                end
               end  
             end
             
-            meta.update_attributes({:license_type => license})
+            meta.update_attributes({:license_type => license, :security_type => security})
             cart.destroy
             session[:cart] = nil
             redirect_to({:controller => 'metapackages', :action => 'edit', :id => meta.id})
