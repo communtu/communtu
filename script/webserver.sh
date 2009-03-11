@@ -16,7 +16,7 @@ cd rubygems-1.0.1
 sudo ruby setup.rb
 sudo ln -s /usr/bin/gem1.8 /usr/bin/gem
 sudo gem update --system
-sudo gem install rails -y 
+sudo gem install -v=2.1.0 rails -y 
 cd ..
 # debian packaging
 sudo apt-get install reprepro fakeroot dpkg-dev dh-make 

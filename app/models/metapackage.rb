@@ -173,7 +173,8 @@ class Metapackage < BasePackage
       # todo: add key for communtu package server
       repos1 = repos.to_a.sort {|r1,r2| r1.url <=> r2.url}
       Metapackage.components.flatten.each do |component|
-      repos1 << Repository.new(:url => "deb http://packages.communtu.org", :subtype => component)
+        repos1 << Repository.new(:url => "deb http://packages.communtu.org", :subtype => component)
+      end
       # get urls and keys
       urls = []
       keys = []
@@ -229,7 +230,10 @@ class Metapackage < BasePackage
               codename = Metapackage.codename(dist,der,lic,sec)
               name = self.debian_name
               version = "#{self.version}-#{dist.id}-#{der.id}-#{lic.id}-#{sec.id}"
-              puts "++++++++++++++++++ version #{version}"
+              puts
+              puts
+              puts "++++++++++++++++++++++ Processing version #{version}"
+              puts
               # compute list of packages contained in metapackage (todo: delegate this to an own method, preferably using more :includes)
               mcs = Metacontent.find(:all,:conditions => 
                      ["metapackage_id = ? and metacontents_distrs.distribution_id = ? and metacontents_derivatives.derivative_id = ?",
