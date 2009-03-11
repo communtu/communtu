@@ -232,7 +232,7 @@ class Metapackage < BasePackage
               version = "#{self.version}-#{dist.id}-#{der.id}-#{lic.id}-#{sec.id}"
               puts
               puts
-              puts "++++++++++++++++++++++ Processing version #{version}"
+              puts "++++++++++++++++++++++ Processing version #{name}-#{version}"
               puts
               # compute list of packages contained in metapackage (todo: delegate this to an own method, preferably using more :includes)
               mcs = Metacontent.find(:all,:conditions => 
@@ -255,7 +255,7 @@ class Metapackage < BasePackage
               puts "Uploading #{newfile}"
               safe_system "reprepro -v -b #{RAILS_ROOT} --outdir public/debs --confdir debs --logdir log --dbdir debs/db --listdir debs/list -C #{component} includedeb #{codename} #{newfile}"
               # remove package files, but not folder
-              safe_system "rm #{RAILS_ROOT}/debs/#{name}/#{name}* || true"
+              safe_system "rm #{RAILS_ROOT}/debs/#{name}/#{name}* >/dev/null 2>&1 || true"
             end
           end
         end
@@ -267,7 +267,10 @@ class Metapackage < BasePackage
   
   def self.debianize_all
     Metapackage.all.each do |m|
-      puts m.name
+      puts
+      puts
+      puts "++++++++++++++++++++++ Processing package #{n.name}"
+      puts
       m.debianize
     end
   end 
