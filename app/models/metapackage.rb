@@ -173,7 +173,7 @@ class Metapackage < BasePackage
       # todo: add key for communtu package server
       repos1 = repos.to_a.sort {|r1,r2| r1.url <=> r2.url}
       Metapackage.components.flatten.each do |component|
-        repos1 << Repository.new(:url => "deb http://packages.communtu.org", :subtype => component)
+        repos1 << Repository.new(:url => "deb http://packages.communtu.org "+codename, :subtype => component)
       end
       # get urls and keys
       urls = []
