@@ -163,7 +163,11 @@ class Metapackage < BasePackage
     if description.empty? then
       f.puts "Description: communtu metapackage (no further description)"
     else
-      f.puts "Description: " + description.gsub(/\n/,"\n  ").gsub(/\r/,"")
+      d = description.gsub(/\n/,"\n  ").gsub(/\r/,"")
+      while (newd=d.gsub(/\n\n/,"\n"))!=d
+        d = newd
+      end
+      f.puts "Description: " + newd
     end
     f.close
 
