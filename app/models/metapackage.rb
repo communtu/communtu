@@ -31,6 +31,11 @@ class Metapackage < BasePackage
     return self.published == Metapackage.state[:published]
   end
 
+  # this function is needed to complement is_present for class Package
+  def is_present(distribution,licence,security)
+    true
+  end
+
   def compute_license_type
     (self.base_packages.map{|p| p.compute_license_type} <<0).max
   end
