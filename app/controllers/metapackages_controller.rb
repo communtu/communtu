@@ -57,6 +57,7 @@ class MetapackagesController < ApplicationController
     #todo: check that name is unique and version is present
     respond_to do |format|
       if @metapackage.save
+        @metapackage.debianize
         format.html { redirect_to(@metapackage) }
         format.xml  { render :xml => @metapackage, :status => :created, :location => @metapackage }
       else
@@ -91,6 +92,7 @@ class MetapackagesController < ApplicationController
     end
     respond_to do |format|
       if @metapackage.update_attributes(params[:metapackage])
+        @metapackage.debianize
         format.html { redirect_to :action => :show, :id => @metapackage.id }
         format.xml  { head :ok }
       else
