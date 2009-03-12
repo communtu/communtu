@@ -55,7 +55,7 @@ class Package < BasePackage
   def dependencies_intersection
     # fetch the repositories...
     pds = self.package_distrs.clone
-    if pds.nil? then
+    if pds.nil? or pds.empty? then
       return {}
     end
     # arbitrarily start with the first one...
@@ -116,11 +116,11 @@ class Package < BasePackage
   end
 
   def compute_license_type
-    self.repositories.map{|r| r.license_type}.max
+    (self.repositories.map{|r| r.license_type} <<0).max
   end
   
   def compute_security_type
-    self.repositories.map{|r| r.security_type}.max
+    (self.repositories.map{|r| r.security_type} <<0).max
   end
   
   # compute the license type for a bundle as the maximum of licesce types for the list of packages
