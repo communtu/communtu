@@ -269,7 +269,7 @@ class Metapackage < BasePackage
     Metapackage.all.each do |m|
       puts
       puts
-      puts "++++++++++++++++++++++ Processing package #{n.name}"
+      puts "++++++++++++++++++++++ Processing package #{m.name}"
       puts
       m.debianize
     end
