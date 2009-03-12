@@ -173,7 +173,7 @@ class Metapackage < BasePackage
       # todo: add key for communtu package server
       repos1 = repos.to_a.sort {|r1,r2| r1.url <=> r2.url}
       Metapackage.components.flatten.each do |component|
-        repos1 << Repository.new(:url => "deb http://packages.communtu.org "+codename, :subtype => component)
+        repos1 << Repository.new(:url => "deb http://packages.communtu.de "+codename, :subtype => component)
       end
       # get urls and keys
       urls = []
@@ -229,7 +229,7 @@ class Metapackage < BasePackage
             (0..2).each do |sec|
               codename = Metapackage.codename(dist,der,lic,sec)
               name = self.debian_name
-              version = "#{self.version}-#{dist.id}-#{der.id}-#{lic.id}-#{sec.id}"
+              version = "#{self.version}-#{codename}1"
               puts
               puts
               puts "++++++++++++++++++++++ Processing version #{name}-#{version}"
