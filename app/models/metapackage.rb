@@ -160,8 +160,11 @@ class Metapackage < BasePackage
       f.puts "Depends: " + package_names.join(", ")
     end  
     # todo: better formatting of description
-    f.puts "Description: " + description.gsub(/\n/,"\n  ").gsub(/\r/,"")
-
+    if description.empty? then
+      f.puts "Description: communtu metapackage (no further description)"
+    else
+      f.puts "Description: " + description.gsub(/\n/,"\n  ").gsub(/\r/,"")
+    end
     f.close
 
     # create file 'changelog'
