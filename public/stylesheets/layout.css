@@ -149,7 +149,7 @@ body, p, ol, ul, td {
 	word-break: break-all;
 }
 
-h2 {
+h2, h1 {
   font-family: verdana, arial, helvetica, sans-serif;
  /* font-size:   13px; */
   line-height: 22px;
