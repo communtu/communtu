@@ -151,7 +151,9 @@ class Metapackage < BasePackage
     f.puts
     f.puts "Package: #{name}"
     f.puts "Architecture: all"
-    f.puts "Depends: " + package_names.join(", ")
+    if !package_names.empty? then
+      f.puts "Depends: " + package_names.join(", ")
+    end  
     # todo: better formatting of description
     f.puts "Description: " + description.gsub(/\n/,"\n  ").gsub(/\r/,"")
 
