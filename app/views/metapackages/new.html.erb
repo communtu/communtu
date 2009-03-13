@@ -1,5 +1,7 @@
 <h1>Neues Bündel</h1>
 
+<%= render_flash %>
+
 <%= error_messages_for :metapackage %>
 
 <% form_for(@metapackage) do |f| %>
@@ -29,4 +31,3 @@
   </p>
 <% end %>
 
-<%= link_to 'Zurück', @backlink %>

@@ -10,7 +10,7 @@ class Metapackage < BasePackage
   belongs_to :category
   belongs_to :user
   
-  validates_presence_of :name, :license_type, :user, :category
+  validates_presence_of :name, :license_type, :user, :category # , :version, :description
   
   @state = { :pending => 0, :published => 1, :rejected => 2 }
   @levels = [ "gar nicht", "normal", "erweitert", "Experte", "Freak" ]
@@ -216,7 +216,7 @@ class Metapackage < BasePackage
 
     # build deb package
     Dir.chdir '..'
-    safe_system "dpkg-buildpackage -uc -us -rfakeroot"
+    safe_system "dpkg-buildpackage -uc -us -rfakeroot >> #{RAILS_ROOT}/log/debianize.log 2>&1"
     Dir.chdir '../../..'
     # return filename of the newly created package
     return Dir.glob("debs/#{name}/#{name}_#{version}*deb")[0]
@@ -244,10 +244,12 @@ class Metapackage < BasePackage
               codename = Metapackage.codename(dist,der,lic,sec)
               name = self.debian_name
               version = "#{self.version}-#{codename}1"
-              puts
-              puts
-              puts "++++++++++++++++++++++ Processing version #{name}-#{version}"
-              puts
+              f=File.open("#{RAILS_ROOT}/log/debianize.log","a")
+              f.puts
+              f.puts
+              f.puts "++++++++++++++++++++++ Processing version #{name}-#{version}"
+              f.puts
+              f.close
               # compute list of packages contained in metapackage (todo: delegate this to an own method, preferably using more :includes)
               mcs = Metacontent.find(:all,:conditions => 
                      ["metapackage_id = ? and metacontents_distrs.distribution_id = ? and metacontents_derivatives.derivative_id = ?",
@@ -267,7 +269,7 @@ class Metapackage < BasePackage
               # upload metapackage
               # todo: make name of .deb unique
               puts "Uploading #{newfile}"
-              safe_system "reprepro -v -b #{RAILS_ROOT} --outdir public/debs --confdir debs --logdir log --dbdir debs/db --listdir debs/list -C #{component} includedeb #{codename} #{newfile}"
+              safe_system "reprepro -v -b #{RAILS_ROOT} --outdir public/debs --confdir debs --logdir log --dbdir debs/db --listdir debs/list -C #{component} includedeb #{codename} #{newfile} >> #{RAILS_ROOT}/log/debianize.log 2>&1"
               # remove package files, but not folder
               safe_system "rm #{RAILS_ROOT}/debs/#{name}/#{name}* >/dev/null 2>&1 || true"
             end

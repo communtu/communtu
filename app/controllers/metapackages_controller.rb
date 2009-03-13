@@ -53,25 +53,50 @@ class MetapackagesController < ApplicationController
   # POST /metapackages.xml
   def create
     @metapackage = Metapackage.new(params[:metapackage])
-
-    #todo: check that name is unique and version is present
-    respond_to do |format|
-      if @metapackage.save
-        @metapackage.debianize
-        format.html { redirect_to(@metapackage) }
-        format.xml  { render :xml => @metapackage, :status => :created, :location => @metapackage }
-      else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @metapackage.errors, :status => :unprocessable_entity }
+    if @metapackage.name=="Neues Bündel" or Metapackage.all.map{|m| m.debian_name}.include?(@metapackage.debian_name) then
+      flash[:error] = "Dieser Bündel-Name ist bereits vergeben!"
+      render :action => "new"
+    elsif params[:metapackage][:description].nil? or params[:metapackage][:description].empty? then
+      flash[:error] = "Die Beschreibung darf nicht leer sein"
+      render :action => "new"
+    else
+      #todo: check that name is unique and version is present
+      respond_to do |format|
+        if @metapackage.save
+          @metapackage.debianize
+          format.html { redirect_to(@metapackage) }
+          format.xml  { render :xml => @metapackage, :status => :created, :location => @metapackage }
+        else
+          format.html { render :action => "new" }
+          format.xml  { render :xml => @metapackage.errors, :status => :unprocessable_entity }
+        end  
       end
     end
   end
 
   # PUT /metapackages/1
   # PUT /metapackages/1.xml
-  def update
-    #todo: check version is increased
+  def update 
+    error = false
+    flash[:error] = ""
     @metapackage = Metapackage.find(params[:id])
+    if params[:metapackage][:name]=="Neues Bündel" or (Metapackage.all-[@metapackage]).map{|m| m.debian_name}.include?("communtu-"+BasePackage.debianize_name(params[:metapackage][:name])) then
+      flash[:error] += "Dieser Bündel-Name ist bereits vergeben<br>"
+      params[:metapackage][:name]=@metapackage.name
+      error = true
+    end
+    if params[:metapackage][:version].nil? or params[:metapackage][:version].empty? then
+      flash[:error] += "Es muss eine Version angegeben werden (z.B. 0.1)<br>"
+      error = true
+    end
+    if !@metapackage.version.nil? and !@metapackage.version.empty? and params[:metapackage][:version] <= @metapackage.version then
+      flash[:error] += "Bei Änderungen muss die Version größer werden<br>"
+      error = true
+    end
+    if params[:metapackage][:description].nil? or params[:metapackage][:description].empty? then
+      flash[:error] += "Die Beschreibung darf nicht leer sein<br>"
+      error = true
+    end  
     # correction of nil entries
     if params[:distributions].nil? then
       params[:distributions] = []
@@ -92,9 +117,13 @@ class MetapackagesController < ApplicationController
     end
     respond_to do |format|
       if @metapackage.update_attributes(params[:metapackage])
-        @metapackage.debianize
-        format.html { redirect_to :action => :show, :id => @metapackage.id }
-        format.xml  { head :ok }
+        if error then
+          format.html { render :action => "edit" }        
+        else 
+          @metapackage.debianize
+          format.html { redirect_to :action => :show, :id => @metapackage.id }
+          format.xml  { head :ok }
+        end  
       else
         format.html { render :action => "edit" }
         format.xml  { render :xml => @metapackage.errors, :status => :unprocessable_entity }

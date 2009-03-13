@@ -1,5 +1,6 @@
 <div class="inner0">
 
+<%= render_flash %>
     <span class="headline">Bündel-Informationen anpassen</span>
     <br/>
     <br/>
@@ -13,7 +14,11 @@
         </tr>
         <tr>
 	        <td>Version:</td>
+			<%if @metapackage.version.nil? or @metapackage.version.empty? %>
+	        <td><%= f.text_field(:version, { :size => 16, :value => "0.1"}) %></td>	
+			<% else %>
 	        <td><%= f.text_field(:version, { :size => 16}) %></td>	
+			<% end %>
         </tr>
         <tr>
 	        <td>Kategorie:</td>
@@ -37,5 +42,4 @@
 		
 
     <% end %>
-    <%= link_to 'Zurück', @backlink %>
 </div>
