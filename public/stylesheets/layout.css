@@ -165,7 +165,8 @@ pre {
 
 a { color: #ff6309; text-decoration:none; }
 a:visited { color: #ff6309; }
-a:hover { color: #D3CAAA; background-color:transparent; }
+a:hover { color: #ff6309; background-color:#cbcbcb; text-decoration:underline;}
+/*#D3CAAA;*/ 
 
 .fieldWithErrors {
   padding: 2px;

@@ -8,7 +8,7 @@
 Aber um Ubuntu wirklich gut nutzen zu können, muss man ganz schön viele Programme nachinstallieren, und es ist oft schwer, da den Überblick zu behalten.
 Bei Communtu gibst du nur an, welche Aufgaben du mit deinem Computer erledigen willst, und Communtu schlägt dir eine
 ganze Reihe von Programmen vor, die automatisch installiert werden können.
-<%= link_to 'Mehr ...', '/home/about'%><br>
+<%= link_to 'Mehr ...', '/home/about'%><br />
 <% if logged_in? %>
 <p>Die Seitenleiste links bietet folgende Möglichkeiten:</p>
 <ul>
@@ -25,12 +25,12 @@ ganze Reihe von Programmen vor, die automatisch installiert werden können.
 </ul>
 Es gibt auch noch <%= link_to 'genauere Infos', '/home/about' %> &uuml;ber das Projekt und &uuml;ber die Mitwirkenden im <%= link_to 'Impressum.', '/home/impressum' %>
 <% else %>
-<br>
+<br />
 	Klicke auf	<%= link_to 'Registrierung', '/users/new' %>, um einen neuen Benutzer anzulegen, oder 
 	<%= link_to 'melde', '/users/login' %> dich an. 
 	<!-- Wenn du dich noch nicht anmelden möchtest, kannst
     du trotzdem schon eine <%= link_to("<b>Nachinstallation</b>", "/users/false/user_profile/edit") %> für dein Ubuntu erzeugen lassen.-->
-<br><br>
+<br /><br />
 <%= link_to 'Zum Impressum', '/home/impressum' %>
 <% end %>
 </p>

@@ -48,16 +48,17 @@ module DistributionsHelper
   #with_buttons=should buttons be displayed?
   def dist_show dist, style, with_buttons = true
     out = "<div class='" + style + "'><span class='headline'>" +\
-          (if dist.url.nil? then dist.name else (link_to dist.name, dist.url, :target=>'blank') end)+\
-          "</span><p>" + dist.description + "</p>"
+      dist.name + "</span><p>" + dist.description + "</p>"      
+      #  (if dist.url.nil? then dist.name else (link_to dist.name, dist.url, :target=>'_blank') end)+\
     
     if with_buttons
-     out += (link_to 'Anzeigen/Quellen hinzufügen', dist)
-    
+     out += "Quellen " + (link_to ' anzeigen '+ if is_admin? then "und bearbeiten" else "" end, dist)
       if is_admin?
-        out += " | " + (link_to 'Bearbeiten', edit_distribution_path(dist)) + " | " +\
-        (link_to 'Löschen', dist, :confirm => 'Bist du sicher?', :method => :delete)
+        out += "<br />Distribution " + (link_to 'bearbeiten', edit_distribution_path(dist)) + " | " +\
+        (link_to 'löschen', dist, :confirm => 'Bist du sicher?', :method => :delete)
       end
+     out += "<p></p>"
+     out += (link_to 'Wikiseite bei Ubuntuusers', dist.url, :target=>'_blank')
     end
     out + "</div>"
   end
