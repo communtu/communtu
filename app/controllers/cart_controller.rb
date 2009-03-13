@@ -55,6 +55,7 @@ class CartController < ApplicationController
                 meta.name            = cart.name
                 meta.user_id         = current_user.id
                 meta.category_id     = 1
+                meta.version         = "0.1"
                 meta.description     = ""
                 meta.default_install = false
                 meta.license_type = 0

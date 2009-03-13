@@ -6,7 +6,6 @@
     <br/>
     <% form_for(@metapackage) do |f| %>
         <br/>
-        <div align="right"><%= submit_tag "Speichern"%></div>
         <table>
         <tr>
 	        <td>Name:</td>
@@ -14,12 +13,9 @@
         </tr>
         <tr>
 	        <td>Version:</td>
-			<%if @metapackage.version.nil? or @metapackage.version.empty? %>
-	        <td><%= f.text_field(:version, { :size => 16, :value => "0.1"}) %></td>	
-			<% else %>
 	        <td><%= f.text_field(:version, { :size => 16}) %></td>	
-			<% end %>
         </tr>
+		<tr><td colspan=2>Bitte Versionen => 1.0 nur für ausgereifte Bündel verwenden.</td></tr>
         <tr>
 	        <td>Kategorie:</td>
 	        <td>

@@ -232,52 +232,67 @@ class Metapackage < BasePackage
       self.version = "0.1"
       self.save
     end
-    # is someone else already debianizing this metapackage?
-    if Dir.glob("#{self.debian_name}*").empty?
-      mlic = self.compute_license_type
-      msec = self.compute_security_type
-      description = self.description
-      Distribution.all.each do |dist|
-        Derivative.all.each do |der|
-          (0..1).each do |lic|
-            (0..2).each do |sec|
-              codename = Metapackage.codename(dist,der,lic,sec)
-              name = self.debian_name
-              version = "#{self.version}-#{codename}1"
-              f=File.open("#{RAILS_ROOT}/log/debianize.log","a")
-              f.puts
-              f.puts
-              f.puts "++++++++++++++++++++++ Processing version #{name}-#{version}"
-              f.puts
-              f.close
-              # compute list of packages contained in metapackage (todo: delegate this to an own method, preferably using more :includes)
-              mcs = Metacontent.find(:all,:conditions => 
-                     ["metapackage_id = ? and metacontents_distrs.distribution_id = ? and metacontents_derivatives.derivative_id = ?",
-                      self.id,dist.id,der.id],:include => [:metacontents_distrs, :metacontents_derivatives])
-              packages = mcs.map{|mc| mc.base_package}.select{|p| p.is_present(dist,lic,sec)}.map{|p| p.debian_name}
-              # build metapackage
-              debfile = Metapackage.makedeb(name,version,packages,description,codename,[])
+    # only proceed if there is a new version
+    if self.version != self.debianized_version
+      # create a lock in order to avoid concurrent debianizations
+      safe_system "dotlockfile #{RAILS_ROOT}/debs/lock"
+      begin
+        # record verison
+        self.debianized_version = self.version
+        self.save
+        mlic = self.compute_license_type
+        msec = self.compute_security_type
+        description = self.description
+        Distribution.all.each do |dist|
+          Derivative.all.each do |der|
+            (0..1).each do |lic|
+              (0..2).each do |sec|
+                codename = Metapackage.codename(dist,der,lic,sec)
+                name = self.debian_name
+                version = "#{self.version}-#{codename}1"
+                f=File.open("#{RAILS_ROOT}/log/debianize.log","a")
+                f.puts
+                f.puts
+                f.puts "++++++++++++++++++++++ Processing version #{name}-#{version}"
+                f.puts
+                f.close
+                # compute list of packages contained in metapackage (todo: delegate this to an own method, preferably using more :includes)
+                mcs = Metacontent.find(:all,:conditions => 
+                       ["metapackage_id = ? and metacontents_distrs.distribution_id = ? and metacontents_derivatives.derivative_id = ?",
+                        self.id,dist.id,der.id],:include => [:metacontents_distrs, :metacontents_derivatives])
+                packages = mcs.map{|mc| mc.base_package}.select{|p| p.is_present(dist,lic,sec)}.map{|p| p.debian_name}
+                # build metapackage
+                debfile = Metapackage.makedeb(name,version,packages,description,codename,[])
+  
+                # make name of .deb unique by adding the codename
+                # newfile = debfile.gsub("_all.deb","~"+codename+"_all.deb")
+                # safe_system "mv #{debfile} #{newfile}"
+                newfile = debfile
 
-              # make name of .deb unique by adding the codename
-              # newfile = debfile.gsub("_all.deb","~"+codename+"_all.deb")
-              # safe_system "mv #{debfile} #{newfile}"
-              newfile = debfile
-
-              # what license types and security types are actually used in the bundle?
-              # use this info to determine the component
-              component = Metapackage.components[[lic,mlic].min][[sec,msec].min]
-              # upload metapackage
-              # todo: make name of .deb unique
-              puts "Uploading #{newfile}"
-              safe_system "reprepro -v -b #{RAILS_ROOT} --outdir public/debs --confdir debs --logdir log --dbdir debs/db --listdir debs/list -C #{component} includedeb #{codename} #{newfile} >> #{RAILS_ROOT}/log/debianize.log 2>&1"
-              # remove package files, but not folder
-              safe_system "rm #{RAILS_ROOT}/debs/#{name}/#{name}* >/dev/null 2>&1 || true"
+                # what license types and security types are actually used in the bundle?
+                # use this info to determine the component
+                component = Metapackage.components[[lic,mlic].min][[sec,msec].min]
+                # upload metapackage
+                # todo: make name of .deb unique
+                puts "Uploading #{newfile}"
+                safe_system "reprepro -v -b #{RAILS_ROOT} --outdir public/debs --confdir debs --logdir log --dbdir debs/db --listdir debs/list -C #{component} includedeb #{codename} #{newfile} >> #{RAILS_ROOT}/log/debianize.log 2>&1"
+                # remove package files, but not folder
+                safe_system "rm #{RAILS_ROOT}/debs/#{name}/#{name}* >/dev/null 2>&1 || true"
+              end
             end
           end
         end
-      end
+      rescue
+        f=File.open("#{RAILS_ROOT}/log/debianize.log","a")
+        f.puts
+        f.puts "Debianizing #{name} failed! (id = #{id})"
+        f.puts
+        f.close
+      end  
       # cleanup
       safe_system "rm -r #{RAILS_ROOT}/debs/#{self.debian_name}*"
+      # release lock
+      safe_system "dotlockfile -u #{RAILS_ROOT}/debs/lock"
     end
   end
   

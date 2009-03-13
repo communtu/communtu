@@ -63,7 +63,10 @@ class MetapackagesController < ApplicationController
       #todo: check that name is unique and version is present
       respond_to do |format|
         if @metapackage.save
-          @metapackage.debianize
+          flash[:notice] = "Bündel gespeichert. Es dauert ein paar Minuten, bis es auch als Metapaket verfügbar ist. "
+          fork do
+            system 'echo "Metapackage.find('+@metapackage.id.to_s+').debianize" | script/console production'
+          end
           format.html { redirect_to(@metapackage) }
           format.xml  { render :xml => @metapackage, :status => :created, :location => @metapackage }
         else
@@ -89,7 +92,7 @@ class MetapackagesController < ApplicationController
       flash[:error] += "Es muss eine Version angegeben werden (z.B. 0.1)<br>"
       error = true
     end
-    if !@metapackage.version.nil? and !@metapackage.version.empty? and params[:metapackage][:version] <= @metapackage.version then
+    if !@metapackage.debianized_version.nil? and !@metapackage.debianized_version.empty? and params[:metapackage][:version] <= @metapackage.debianized_version then
       flash[:error] += "Bei Änderungen muss die Version größer werden<br>"
       error = true
     end
@@ -116,14 +119,13 @@ class MetapackagesController < ApplicationController
       ders.each {|d| mc.derivatives << Derivative.find(d)}             # and add the selected ones
     end
     respond_to do |format|
-      if @metapackage.update_attributes(params[:metapackage])
-        if error then
-          format.html { render :action => "edit" }        
-        else 
-          @metapackage.debianize
-          format.html { redirect_to :action => :show, :id => @metapackage.id }
-          format.xml  { head :ok }
-        end  
+      if @metapackage.update_attributes(params[:metapackage]) and !error
+        flash[:notice] = "Bündel geändert. Es dauert ein paar Minuten, bis die Änderungen im zugehörigen Metapaket verfügbar sind. "
+        fork do
+          system 'echo "Metapackage.find('+@metapackage.id.to_s+').debianize" | script/console production'
+        end
+        format.html { redirect_to :action => :show, :id => @metapackage.id }
+        format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
         format.xml  { render :xml => @metapackage.errors, :status => :unprocessable_entity }

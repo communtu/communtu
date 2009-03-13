@@ -33,6 +33,7 @@ class UsersController < ApplicationController
     @user.enabled = true
     @user.activation_code = nil
     @user.activated_at = Time.now    
+    @user.profile_version = 1
     @user.save!
     #Uncomment to have the user logged in after creating an account - Not Recommended
     #self.current_user = @user
