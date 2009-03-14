@@ -8,7 +8,7 @@ Die Liste der auf deinem Computer installierten Pakete kannst du zum Beispiel mi
 <pre>
 deborphan -a | awk '{print $2}' > packages.list 
 </pre>
-herausfinden. (Dazu muss das Paket <%= link_to 'deborphan', package_url(Package.find(:first,:conditions =>{:name => "deborphan"}))%> installiert sein. Die erzeugte Liste enthält nur eine minimal notwendige Anzahl von (Meta-)Paketen, um deine
+herausfinden. (Dazu muss das Paket <%= link_to 'deborphan', package_url(Package.find(:first,:conditions =>{:name => "deborphan"}))%> installiert sein. Die erzeugte Liste enthält nur eine minimale Liste von (Meta-)Paketen, die notwendig ist, um deine
 Installation komplett wiederherzustellen.) 
 
 <%= form_tag({:controller => :cart, :id => :current_user.id, :action => :create_from_list}, :multipart => true)%>
