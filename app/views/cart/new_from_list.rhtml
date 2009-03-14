@@ -6,9 +6,10 @@ mit einem Paketnamen pro Zeile.<br>
 
 Die Liste der auf deinem Computer installierten Pakete kannst du zum Beispiel mit
 <pre>
-dpkg --get-selections | awk '!/deinstall|purge|hold/ {print $1}' > packages.list 
+deborphan -a | awk '{print $2}' > packages.list 
 </pre>
-herausfinden.
+herausfinden. (Dazu muss das Paket <%= link_to 'deborphan', package_url(Package.find(:first,:conditions =>{:name => "deborphan"}))%> installiert sein. Die erzeugte Liste enthält nur eine minimal notwendige Anzahl von (Meta-)Paketen, um deine
+Installation komplett wiederherzustellen.) 
 
 <%= form_tag({:controller => :cart, :id => :current_user.id, :action => :create_from_list}, :multipart => true)%>
 <p>Datei, die die Paketliste enthält, ausw&auml;hlen:</p>
