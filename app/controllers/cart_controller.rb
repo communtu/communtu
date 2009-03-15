@@ -22,7 +22,7 @@ class CartController < ApplicationController
     end
         
     def create_from_list
-        if !params[:datei][:attachment].nil? and !params[:datei][:attachment].empty?then
+        if !params[:datei][:attachment].nil? then
           cart    = Cart.find(session[:cart])
           err = ""
           params[:datei][:attachment].read.split("\n").each do |n|
@@ -89,18 +89,18 @@ class CartController < ApplicationController
                 # compute license type
                 if package.class == Package
                     lic = package.repositories.map{|r| r.license_type}.max
-                    license = lic if lic > license
+                    license = lic if !lic.nil? and lic > license
                 else 
                     lic = package.license_type
-                    license = lic if lic > license
+                    license = lic if !lic.nil? and lic > license
                 end
                 # compute security type
                 if package.class == Package
                     sec = package.repositories.map{|r| r.security_type}.max
-                    security = sec if sec > security
+                    security = sec if !sec.nil? and sec > security
                 else 
                     sec = package.security_type
-                    security = sec if sec > security
+                    security = sec if !sec.nil? and sec > security
                 end
               end  
             end
