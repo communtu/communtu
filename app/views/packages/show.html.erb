@@ -2,7 +2,7 @@
 <div class="inner0">
 <span class="headline">  <%= @package.icon(35)%>
   <%= @package.name %>
-</span><br>
+</span><br />
 <small>sofort installieren (ggf. über Synpatic untenstehende Quelle hinzufügen)</small>
 <%= link_to image_tag("/images/install.png", :size => "22x22", :border => 0, :title => "installieren", :alt => "installieren"), "apt://"+@package.name%>		
 
@@ -67,7 +67,7 @@
 </p>
 
 <p>
-  <b>Beinhaltet folgende Pakete:</b>
+  <b>Beinhaltet folgende Pakete:</b><br />
   <% depshash = @package.dependencies_intersection %>
   <% common = depshash.delete(:all)%>
   <%= render(:partial => 'package', :collection => common) %>

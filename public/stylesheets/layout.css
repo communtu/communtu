@@ -329,7 +329,7 @@ div.suggestion {
 
 ul.suggestionHeader {
     margin:0px;
-    padding:0px;        
+    padding:0px;      
 }
 
 ul.suggestionPackage {
@@ -338,7 +338,6 @@ ul.suggestionPackage {
 }
 
 div.suggestionHeader {
-
     padding: 2px 0 2px 5px;
     background: #fff7cd;
     border-left-style: solid;
@@ -397,6 +396,7 @@ div.suggestionDescription {
 }
 
 div.suggestionPackages {
+/* display: none; /*  
     background: #fff7cd;
     padding-left:10px;
     border-left-style: solid;
