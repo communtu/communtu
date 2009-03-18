@@ -7,7 +7,7 @@ class UsersController < ApplicationController
   layout 'application'
   
   before_filter :not_logged_in_required, :only => [:new, :create] 
-  before_filter :login_required, :only => [:show, :edit, :update]
+  before_filter :login_required, :only => [:show, :edit, :update, :disable, :distroy, :enable]
   before_filter :check_administrator_role, :only => [:index, :destroy, :enable, :disable]
   
   helper :users
@@ -68,6 +68,16 @@ class UsersController < ApplicationController
     redirect_to :action => 'index'
   end
  
+  def delete
+    @user = User.find(params[:id])
+    if @user.update_attribute(:enabled, false)
+      flash[:notice] = "Benutzer gelöscht"
+    else
+      flash[:error] = "Es gab ein Problem mit der Löschung."
+    end
+    redirect_to '/logout'
+  end
+  
   def enable
     @user = User.find(params[:id])
     if @user.update_attribute(:enabled, true)

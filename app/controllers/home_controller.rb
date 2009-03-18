@@ -24,7 +24,7 @@ class HomeController < ApplicationController
   end
 
   def submit_mail
-    flash[:notice] = "Wir werden dich per Mail benachrichtigen."
+    flash[:notice] = "Wir werden dich per E-Mail benachrichtigen."
     redirect_to 'home'
   end
 

@@ -30,7 +30,7 @@ class SessionsController < ApplicationController
     self.current_user.save!
     
     reset_session
-    flash[:notice] = "Du wurdest abgemeldet."
+       flash[:notice] = "Du wurdest abgemeldet."
   redirect_to "/home"
   end
   
@@ -44,7 +44,7 @@ class SessionsController < ApplicationController
     elsif user.activated_at.blank?  
       failed_login("Dein Benutzerkonto wurde noch nicht aktiviert. Der Aktivierungscode wurde dir per Email zugeschickt.")
     elsif user.enabled == false
-      failed_login("Dein Benutzerkonto wurde deaktiviert.")
+      failed_login("Dein Benutzerkonto wurde deaktiviert oder gelöscht.")
     else
       self.current_user = user
       if editing_metapackage?
