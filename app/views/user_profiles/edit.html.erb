@@ -53,9 +53,9 @@ Wenn gewünscht, ist aber auch eine detailliertere Auswahl möglich. Achtung: zu
 		
      <li><p>Hier kannst du einstellen, wie sicher bzw. komfortabel deine Installationsquellen sein sollen</p>
         
-        <%= radio_button_tag "sec", "0", options[0] %> Nur Ubuntuquellen zulassen (sehr sicher)<br>
-        <%= radio_button_tag "sec", "1", options[1] %> Communityquellen zulassen (auch sicher, mehr Programme/Komfort) <br>
-        <%= radio_button_tag "sec", "2", options[2] %> Alle Quellen zulassen (etwas unsicherer, aber noch mehr Programme/Komfort)<br>
+        <%= radio_button_tag "sec", "0", options[0] %> Nur Ubuntuquellen zulassen ("main/restricted", sehr sicher)<br>
+        <%= radio_button_tag "sec", "1", options[1] %> Communityquellen zulassen ("universe/multiverse", auch sicher, mehr Programme/Komfort) <br>
+        <%= radio_button_tag "sec", "2", options[2] %> Alle Quellen zulassen (etwas unsicherer: Fremdpakete können das System gefährden, aber noch mehr Programme/Komfort: <%= package_link "Acroread"%>, <%= package_link "Skype"%>, <%= package_link "Virtualbox"%>, DVDs ... )<br>
          </li>
     <li><div style="margin-bottom:30px">
     	<% options = Array.new(Package.license_types.length, false) %>

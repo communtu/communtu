@@ -63,4 +63,7 @@ module ApplicationHelper
     end  
   end  
 
+  def package_link name
+    link_to name, package_url(Package.find(:first,:conditions =>{:name => name.downcase}))
+  end
 end
