@@ -32,6 +32,7 @@ Wenn gewünscht, ist aber auch eine detailliertere Auswahl möglich. Achtung: zu
         
         <%= select_tag("distribution", distrib_options) %>
 
+        <% if current_user.derivative.nil? then current_user.derivative_id = 1 end %>
         <% Derivative.find(:all).each do |der|%>
           <% if logged_in? %>
 	  	    <% selected = der == current_user.derivative %>

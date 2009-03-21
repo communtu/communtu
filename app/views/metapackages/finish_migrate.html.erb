@@ -12,4 +12,6 @@
     <% end %>  
   </table>
 <% end %>  
-<%= link_to('Weiter', @backlink) %>
+<%if !@backlink.nil? %>
+  <%= link_to('Weiter', @backlink) %>
+<% end %>  
