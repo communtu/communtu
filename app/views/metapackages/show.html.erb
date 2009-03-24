@@ -40,18 +40,6 @@
         <%= image_tag("no.png", :size => "22x22", :border => "0", :title => "nicht veröffentlicht", :alt => "nicht veröffentlicht")  %>
     <% end %>
 </p>
-<% if !@metapackage.metapackages.empty? then%>
-  <p>
-  <b>Wird bei Communtu in folgenden Bündeln benutzt:</b><br />
-  <ul>
-  <% @metapackage.metapackages.each do |m| %>
-    <li>
-       <%= link_to  m.name, { :controller => :metapackages, :action => :show,\
-	  				:id => m.id } %>
-    </li>				
-  <% end %>
-  </p>
-<% end %>
   
 <div style="position:relative; left:480px; top:-30px; height:0px;width:150px;">
 <% if logged_in? and (@metapackage.owned_by? current_user or is_admin?) %>
@@ -74,6 +62,19 @@
   </div>
 <% end %>
 </div>
+
+<% if !@metapackage.metapackages.empty? then%>
+  <p>
+  <b>Wird bei Communtu in folgenden Bündeln benutzt:</b><br />
+  <ul>
+  <% @metapackage.metapackages.each do |m| %>
+    <li>
+       <%= link_to  m.name, { :controller => :metapackages, :action => :show,\
+	  				:id => m.id } %>
+    </li>				
+  <% end %>
+  </p>
+<% end %>
 
 <%= render :partial => "package_list", :locals => { :metapackage => @metapackage, :editable => false, :distribution => @distribution, :derivative =>  @derivative} %>
 <%= image_tag("/images/editp.png", :size => "22x22", :border => 0, :title => "Kommentieren", :alt => "Kommentieren") %> 
