@@ -31,6 +31,11 @@ class Metapackage < BasePackage
     return self.published == Metapackage.state[:published]
   end
 
+  # metapackages using this one
+  def metapackages
+    Metapackage.find(:all,:conditions => ["metacontents.base_package_id = ?",self.id], :include => :metacontents)
+  end
+  
   # this function is needed to complement is_present for class Package
   def is_present(distribution,licence,security)
     true
