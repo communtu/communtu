@@ -83,12 +83,6 @@ class Metapackage < BasePackage
   
   end
 
-  # convert rating to new default_install field
-  def convert_rating
-    self.default_install = (!rating.nil?) && rating<=1
-    self.save
-  end
-
 ## installation and creating debian metapackages
 
   def self.codename(distribution,derivative,license,security)

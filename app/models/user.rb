@@ -191,11 +191,9 @@ class User < ActiveRecord::Base
 
     if is_new then
       # if rating is new, then re-compute metapackage selection
-      metas = Metapackage.find(:all, :conditions => ["category_id = ? and license_type <= ?", \
-               cid, lic])
-      metas.each do |m|
+      cat.metapackages.each do |m|
         if !anonymous_info[:anonymous] then
-          update_meta(m,m.default_install && up.rating>0)
+          update_meta(m,m.default_install && up.rating>0 && (m.is_published? or m.user_id == self.id))
         end
       end
       # also recursively update all the children

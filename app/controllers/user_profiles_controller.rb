@@ -13,35 +13,16 @@ class UserProfilesController < ApplicationController
     @root = Category.find(1)
     @distributions = Distribution.find(:all)
     @ratings = {}
-    if logged_in? then
-      current_user.user_profiles.each do |profile|
-        @ratings.store(profile.category_id, profile.rating!=0)
-    end
-    else
-      Category.find(:all).each do |category|
-        @ratings.store(category.id, ((not session[:profile].nil?) and (session[:profile][category.id] != 0)))
-      end
+    current_user.user_profiles.each do |profile|
+      @ratings.store(profile.category_id, profile.rating!=0)
     end
   end
   
   def refine
     @root = Category.find(1)
     @selection = []
-    if logged_in? then
-      @selection += current_user.selected_packages
-      @distribution = current_user.distribution
-    else
-      @distribution = Distribution.find(session[:distribution])
-      session[:profile].each do |category, value|
-        if value == 0 then
-          metas = []
-        else
-          metas = Metapackage.find(:all, :conditions => ["category_id = ? and license_type <= ? and default_install = ?", \
-            category, session[:license], 1])
-        end    
-        @selection += metas
-      end
-    end
+    @selection += current_user.selected_packages
+    @distribution = current_user.distribution
   end
   
   def installation
@@ -83,7 +64,7 @@ class UserProfilesController < ApplicationController
     Category.find(1).children.each do |child|
       # we now use 1 for selected, in the future, this can be a boolean
       if cats.include? child.id then val = 1 else val = 0 end
-      user.update_rating(child,val,lic,sec,{:anonymous => !logged_in?, :session => session},false)
+      user.update_rating(child,val,lic,sec,{:anonymous => false, :session => session},false)
     end
 
     if !params[:choose].nil?
@@ -94,15 +75,13 @@ class UserProfilesController < ApplicationController
   end
   
   def update_ratings
-    if logged_in? then 
-      current_user.first_login = 0
-      current_user.profile_changed = true
-      current_user.save!
-      uid = current_user.id
-      #replace old list of packages...
-      current_user.user_packages.each do |up|
-        up.destroy
-      end
+    current_user.first_login = 0
+    current_user.profile_changed = true
+    current_user.save!
+    uid = current_user.id
+    #replace old list of packages...
+    current_user.user_packages.each do |up|
+      up.destroy
     end
     
     #... with new one from the form

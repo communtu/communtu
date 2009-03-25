@@ -4,26 +4,6 @@ class SuggestionController < ApplicationController
   end
   before_filter :authorize_user_subresource
   
-  def show
-    @profile      = current_user.user_profiles
-    @root         = Category.find(1)
-    @selection    = {}
-    @distribution = current_user.distribution
-    @profile.each do |p|
-
-        category = Category.find(p.category_id)
-        # adapt: look for metas matching with user's distribution
-        if p.rating == 0 then
-          metas = []
-        else
-          metas = Metapackage.find(:all, :conditions => ["category_id = ? and default_install = ? and license_type <= ?", \
-            category.id, 1, current_user.license])
-        end    
-        @selection.store(category, metas)
-    
-    end
-  end
-
   def install_sources
     Dir.chdir RAILS_ROOT
     
@@ -61,28 +41,9 @@ class SuggestionController < ApplicationController
   end
 
   def install_new
-    if logged_in? then
-      dist = current_user.distribution
-      # package list has already been created for logged in user
-      install_aux(current_user.selected_packages,dist,current_user.license,current_user.security)
-    else
-      # for anonymous installations, we have to build the package list now
-      distribution = session[:distribution]
-      security = session[:security]
-      license = session[:license]
-      packages = []
-      # adpat, s.above
-      session[:profile].each do |category, value|
-        if value == 0 then
-          metas = []
-        else
-           metas = Metapackage.find(:all, :conditions => ["category_id = ? and default_install = ?", \
-                                                       category, 1])
-        end                                               
-        packages += metas
-      end
-      install_aux(packages,distribution,license,security)
-    end
+    dist = current_user.distribution
+    # package list has already been created for logged in user
+    install_aux(current_user.selected_packages,dist,current_user.license,current_user.security)
   end
 
   def quick_install
