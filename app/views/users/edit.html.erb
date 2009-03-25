@@ -4,6 +4,7 @@
 <%= error_messages_for :user %>
  
 <% form_for :user, :url => user_url(@user), :html => { :method => :put } do |f| %>
+  <p>Benutzername:<br /><%= f.text_field :login, :size => 60 %></p>
   <p>E-Mail:<br /><%= f.text_field :email, :size => 60 %></p>
   
 <%= submit_tag 'Speichern' %>

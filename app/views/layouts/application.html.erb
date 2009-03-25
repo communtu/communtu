@@ -25,6 +25,7 @@
 	    <tr align="center">
 		<td width="100"><%= link_to 'Start', '/home' %></td>
 	  	<% if logged_in? %>
+	    	<td width="100"><%= current_user.login  %> </td>
 	    	<td width="100"><%= link_to 'Benutzerkonto', edit_user_path(current_user)  %> </td>
 	    	<td width="100"><%= link_to 'Abmelden', logout_path  %> </td>
 	    <% else %>

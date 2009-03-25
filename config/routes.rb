@@ -14,6 +14,7 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/metapackage/migrate', :controller => 'metapackages', :action => 'migrate'
   map.connect '/metapackage/finish_migrate', :controller => 'metapackages', :action => 'finish_migrate'
   
+  map.connect '/users/anonymous_login', :controller => 'users', :action => 'anonymous_login'
   map.resources :users, :member => { :enable => :put } do |users|
     users.resource  :user_profile
     users.resource  :account
