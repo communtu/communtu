@@ -55,7 +55,7 @@ class UsersController < ApplicationController
     else
       login = last_anonymous_user.login.succ
     end
-    while !User.find_by_login(login).nil?
+    while !User.find_by_login(login).nil? or !User.find_by_email(login+"@example.org").nil?
       login.succ!
     end
     @user = User.new(:login => login, :email => login+"@example.org",

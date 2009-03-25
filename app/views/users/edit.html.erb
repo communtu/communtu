@@ -8,5 +8,8 @@
   <p>E-Mail:<br /><%= f.text_field :email, :size => 60 %></p>
   
 <%= submit_tag 'Speichern' %>
+<% if @user.anonymous %>
+  Durch Klicken auf "Speichern" wird das Nutzerkonto zugleich dauerhaft gemacht.
+<% end %>
 <% end %>
 </div>
