@@ -85,13 +85,25 @@ class UsersController < ApplicationController
   
   def update
     @user = User.find(current_user)
-    # make user non-anonymous
-    @user.anonymous = false
-    @user.save
+    flash[:notice] = "Benutzerdaten aktualisiert"
+    if @user.anonymous then
+      if ((params[:password] == params[:password_confirmation]) && !params[:password_confirmation].blank?)
+        @user.password_confirmation= params[:password_confirmation]
+        @user.password= params[:password]        
+        # make user non-anonymous
+        @user.anonymous = false
+        @user.save
+        flash[:notice] = "Benutzerdaten übernommen und Benutzerkonto dauerhaft gemacht."
+      else
+        flash[:error] = "Das neue Passwort stimmt nicht mit der Bestätigung überein."
+        @old_password = params[:old_password]
+        render :action => 'edit'      
+      end
+    end  
     if @user.update_attributes(params[:user])
-      flash[:notice] = "Benutzer aktualisiert"
       redirect_to :action => 'show', :id => current_user
     else
+      flash[:notice] = ""
       render :action => 'edit'
     end
   end
