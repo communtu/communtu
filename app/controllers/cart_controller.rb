@@ -77,30 +77,32 @@ class CartController < ApplicationController
                 content.metapackage_id  = meta.id
                 content.base_package_id = package.id
                 content.save!
-                # default: available in all distributions...
-                package.distributions.each do |d|
-                  content.distributions << d
-                end
-                # ... and all derivatives
-                Derivative.find(:all).each do |d|
+                # default: available in all derivatives
+                Derivative.all.each do |d|
                   content.derivatives << d
                 end
-                
-                # compute license type
                 if package.class == Package
-                    lic = package.repositories.map{|r| r.license_type}.max
-                    license = lic if !lic.nil? and lic > license
-                else 
-                    lic = package.license_type
-                    license = lic if !lic.nil? and lic > license
-                end
-                # compute security type
-                if package.class == Package
-                    sec = package.repositories.map{|r| r.security_type}.max
-                    security = sec if !sec.nil? and sec > security
-                else 
-                    sec = package.security_type
-                    security = sec if !sec.nil? and sec > security
+                  # default: available in all distributions of the package
+                  package.distributions.each do |d|
+                    content.distributions << d
+                  end
+                  # compute license type
+                  lic = package.repositories.map{|r| r.license_type}.max
+                  license = lic if !lic.nil? and lic > license
+                  # compute security type
+                  sec = package.repositories.map{|r| r.security_type}.max
+                  security = sec if !sec.nil? and sec > security
+                else
+                  # default: available in all distributions
+                  Distribution.all.each do |d|
+                    content.distributions << d
+                  end
+                  # compute license type
+                  lic = package.license_type
+                  license = lic if !lic.nil? and lic > license
+                  # compute security type
+                  sec = package.security_type
+                  security = sec if !sec.nil? and sec > security
                 end
               end  
             end

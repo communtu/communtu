@@ -3,7 +3,7 @@
 	<% mcs = metapackage.metacontents.sort_by {|mc| [mc.package.ptype, mc.package.name] }%>
 	<% mcs.each do |mc| %>
 	<% basecss = cycle("packageList0", "packageList1") %>
-	<% if editable || (mc.distributions.include?(distribution) && mc.derivatives.include?(derivative))%>
+	<% if editable || mc.package.class == Metapackage || (mc.distributions.include?(distribution) && mc.derivatives.include?(derivative))%>
 	   <% css = basecss%>
 	<% else %>   
 	   <% css = "packageListGrey"%>
