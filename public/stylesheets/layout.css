@@ -396,7 +396,6 @@ div.suggestionDescription {
 }
 
 div.suggestionPackages {
-    display: none;   
     background: #fff7cd;
     padding-left:10px;
     border-left-style: solid;
