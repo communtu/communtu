@@ -9,7 +9,7 @@ module UserProfilesHelper
     def show_packages2 packages, selection
         pub_packages = packages.select{|m| m.is_published? or m.user_id == current_user.id or is_admin? }
         out = ""
-        puts "PACKAGES: " + pub_packages.size.to_s
+        # puts "PACKAGES: " + pub_packages.size.to_s
         pub_packages.each do |package|
             selected = selection.include? package
             out += "<div id='selected' class='suggestionPackage'>\n"
@@ -33,7 +33,7 @@ module UserProfilesHelper
             out += "<li class='suggestionHeader'><b>" + root.name + "</b></li>\n"
         out += "</ul></div>\n"
         
-        out += "<div class='suggestionPackages' id='packages" + root.name + "'>\n"
+        out += "<div class='suggestionPackages'  style='display: none' id='packages" + root.name + "'>\n"
 
         out += show_packages2 root.metapackages, selection
 
