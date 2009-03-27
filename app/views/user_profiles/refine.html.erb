@@ -3,7 +3,9 @@
 <%= error_messages_for :user_profile %>
 
 
-<p>Hier kannst du deine beabsichtigte Computer-Nutzung noch genauer angeben.</p>
+<p>Hier kannst du deine beabsichtigte Computer-Nutzung noch genauer angeben.
+Durch Klicken auf <img src='/images/add.png' width='10' height='10'> lässt
+sich ein Bereich ein- oder ausklappen.</p>
 
 <p>Achtung! Zum Schluss auf "Speichern" klicken.</p>
 <% form_tag(user_user_profile_path(current_user) + "/update_ratings", options = {:name => "ratings", :method => :put}) do %>
