@@ -114,10 +114,10 @@ class Metapackage < BasePackage
     end
     # only install sources, no packages
     codename = Metapackage.codename(distribution,derivative,license,security)
-    Metapackage.makedeb(name,version,[],description,codename,repos)
+    Metapackage.makedeb(name,version,[],description,codename,derivative,repos)
   end 
 
-  def self.makedeb(name,version,package_names,description,codename,repos)
+  def self.makedeb(name,version,package_names,description,codename,derivative,repos)
     Dir.chdir RAILS_ROOT+'/debs'
     if !File.exists?(name)
       Dir.mkdir name
@@ -198,19 +198,30 @@ class Metapackage < BasePackage
         if key.nil? then key = "" end
         urls << url
         keys << key
-        urls_keys << url+"*"+key
+        if derivative.dialog == "zenity" then
+          urls_keys << url+"*"+key
+        else  
+          urls_keys << url+"\t"+key
+        end  
       end
       # create  'preinst'
       # first half of standard script ...
       safe_system "cp ../../../preinst1 preinst"
-      # ... addition of new sources and keys ...
+      # ... handling of new sources and keys ...
       f=File.open("preinst","a")
       f.puts '    SOURCES="'+urls.join('*')+'"'
       f.puts '    KEYS="'+keys.select{|k| !k.empty?}.join('*')+'"'
-      f.puts '    SOURCESKEYS="'+urls_keys.join('*')+'"'
-      f.close
-      # ... and second half of standard script
-      safe_system "cat ../../../preinst2 >> preinst"
+      if derivative.dialog == "zenity" then
+        f.puts '    SOURCESKEYS="'+urls_keys.join('*')+'"'
+        f.close
+        safe_system "cat ../../../preinst2-zenity >> preinst"
+      else  
+        f.puts '    SOURCESKEYS="'+urls_keys.join('\\n')+'"'
+        f.close
+        safe_system "cat ../../../preinst2-kdialog >> preinst"
+      end  
+      # ... and main part of standard script
+      safe_system "cat ../../../preinst3 >> preinst"
     end  
 
     # build deb package
@@ -261,7 +272,7 @@ class Metapackage < BasePackage
                         self.id,dist.id,der.id],:include => [:metacontents_distrs, :metacontents_derivatives])
                 packages = mcs.map{|mc| mc.base_package}.select{|p| p.is_present(dist,lic,sec)}.map{|p| p.debian_name}
                 # build metapackage
-                debfile = Metapackage.makedeb(name,version,packages,description,codename,[])
+                debfile = Metapackage.makedeb(name,version,packages,description,codename,derivative,[])
   
                 # make name of .deb unique by adding the codename
                 # newfile = debfile.gsub("_all.deb","~"+codename+"_all.deb")

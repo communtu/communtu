@@ -3,13 +3,11 @@
 <table>
   <tr>
     <th>Name</th>
-    <th>Icon file</th>
   </tr>
 
 <% for derivative in @derivatives %>
   <tr>
     <td><%=h derivative.name %></td>
-    <td><%=h derivative.icon_file %></td>
     <td><%= link_to 'Show', derivative %></td>
     <td><%= link_to 'Edit', edit_derivative_path(derivative) %></td>
     <td><%= link_to 'Destroy', derivative, :confirm => 'Are you sure?', :method => :delete %></td>

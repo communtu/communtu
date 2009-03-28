@@ -43,23 +43,24 @@ class SuggestionController < ApplicationController
   def install_new
     dist = current_user.distribution
     # package list has already been created for logged in user
-    install_aux(current_user.selected_packages,dist,current_user.license,current_user.security)
+    install_aux(current_user.selected_packages,dist,current_user.license,current_user.security,current_user.derivative)
   end
 
   def quick_install
     dist = current_user.distribution
-    install_aux([Metapackage.find(params[:mid])],dist,current_user.license,current_user.security)
+    install_aux([Metapackage.find(params[:mid])],dist,current_user.license,current_user.security,current_user.derivative)
   end
 
   def install
     packages = params[:post].map {|id,unused| Metapackage.find(id)}
     dist = current_user.distribution
-    install_aux(packages,dist,current_user.license,current_user.security)
+    install_aux(packages,dist,current_user.license,current_user.security,current_user.derivative)
   end
 
-  def install_aux(packages,dist,license,security)
-
-    script          = "gksudo echo\n"
+  def install_aux(packages,dist,license,security,derivative)
+    sudo = derivative.sudo
+    dialog = derivative.dialog
+    script          = "#{sudo} echo\n"
     script += "#!/bin/bash\n\n"
     script += "APTLIST=\"/etc/apt/sources.list\"\n\n"
     
@@ -79,23 +80,35 @@ class SuggestionController < ApplicationController
     script += "\n\n"
 
     #  sources
-    script += "SOURCES=\""
+    sources_line = ""
     sources.each do |repo|
-        script += repo.url + " " + repo.subtype + "*"
+        sources_line += repo.url + " " + repo.subtype + "*"
     end
-    script += "\"\n\n"
+    script += "SOURCES=\"#{sources_line}\"\n\n"
 
     # generate question ot the user
-    script += "IFS=\"*\"\n"
-    script += "zenity --list --width 500 --height 300 --title \"Paketquellen hinzufügen\" " + 
-        "--text \"Folgende Paketquellen werden hinzugefügt\" --column \"Quelle\" $SOURCES\n"
+    if dialog == "zenity" then
+      script += "IFS=\"*\"\n"
+      script += "#{dialog} --list --width 500 --height 300 --title \"Paketquellen hinzufügen\" " + 
+          "--text \"Folgende Paketquellen werden hinzugefügt\" --column \"Quelle\" $SOURCES\n"
+    elsif dialog == "kdialog" then
+      sources_lined = sources_line.gsub("*","\\n")
+      script += "SOURCESD=\"#{sources_lined}\"\n\n"
+      script += "#{dialog} --geometry 500x300 --title \"Paketquellen hinzufügen\" " + 
+          "--yesno \"Folgende Paketquellen werden hinzugefügt\\n$SOURCESD\"\n"
+    end  
     script += "\n"
 
     script += "if [ $? != 0 ]; then\n\texit 0\nfi\n\n"
     
-    script += "IFS=\" \"\n"
-    script += "zenity --list --width 500 --height 300 --title \"Pakete installieren\" " +
-        "--text \"Folgende Pakete werden installiert\" --column \"Paket\" $PACKAGES \n"
+    if dialog == "zenity" then
+      script += "IFS=\" \"\n"
+      script += "#{dialog} --list --width 500 --height 300 --title \"Pakete installieren\" " +
+          "--text \"Folgende Pakete werden installiert\" --column \"Paket\" $PACKAGES \n"
+    elsif dialog == "kdialog" then
+      script += "#{dialog} --geometry 500x300 --title \"Pakete installieren\" " + 
+          "--yesno \"Folgende Pakete werden installiert\\n$PACKAGES\"\n"
+    end          
     script += "\n"
     
     script += "if [ $? != 0 ]; then\n\texit 0\nfi\n\n"
@@ -122,9 +135,9 @@ class SuggestionController < ApplicationController
     
     # install packages
     script += "IFS=\" \"\n"
-    script += "sudo aptitude update\n"
+    script += "#{sudo} aptitude update\n"
     script += "for package in $PACKAGES; do\n"
-    script += "\tsudo aptitude install -y $package\n"
+    script += "\tsudo aptitude install -y $package\n" # here normal sudo due to -y option
     script += "done\n"
     
     respond_to do |format|
@@ -160,7 +173,7 @@ class SuggestionController < ApplicationController
             out += "if [ \"$?\" != \"0\" ]; then\n" +
                 "\tsudo sh -c \"echo $SOURCE >> $APTLIST\"\n"
             if not repository.gpgkey.nil? && (not repository.gpgkey.empty?)
-                out += "wget " + repository.gpgkey + " | gksudo apt-key add -\n"
+                out += "wget " + repository.gpgkey + " | #{sudo} apt-key add -\n"
             end
             out += "fi\n\n"
             package_sources << out

@@ -8,6 +8,14 @@
     <%= f.text_field :name %>
   </p>
   <p>
+    <%= f.label "Programm für GUI-basiertes Sudo (z.B. gksudo, kdesudo)" %><br />
+    <%= f.text_field :sudo %>
+  </p>
+  <p>
+    <%= f.label "Programm für GUI-Dialoge (z.B. zenity, kdialog)" %><br />
+    <%= f.text_field :dialog %>
+  </p>
+  <p>
     <%= f.label :icon_file %><br />
     <%= f.text_field :icon_file %>
   </p>

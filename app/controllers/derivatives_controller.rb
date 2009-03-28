@@ -1,4 +1,5 @@
 class DerivativesController < ApplicationController
+  layout 'application'
   
   def title
     "Ubuntu Derivate"

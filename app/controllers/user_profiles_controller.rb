@@ -12,6 +12,17 @@ class UserProfilesController < ApplicationController
   def edit
     @root = Category.find(1)
     @distributions = Distribution.find(:all)
+    @dist_string = request.env['HTTP_USER_AGENT']
+    index = @dist_string.index("Ubuntu")
+    if index.nil? then
+      @dist_string = nil
+    else
+      @dist_string = @dist_string[index+7,@dist_string.length]
+      index = @dist_string.index(")")
+      if !index.nil? then
+        @dist_string = @dist_string[0,index+1]
+      end  
+    end  
     @ratings = {}
     current_user.user_profiles.each do |profile|
       @ratings.store(profile.category_id, profile.rating!=0)

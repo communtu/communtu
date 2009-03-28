@@ -21,8 +21,11 @@ Wenn gewünscht, ist aber auch eine detailliertere Auswahl möglich. Achtung: zu
 		<% end %>
 		</tr>
 		</table></li>
-     <li><p>Wähle bitte deine Ubuntu-Version aus. <%= link_to('Wie stelle ich die Version fest?','/user_profiles/help')%></p>
-        
+     <li><p>Wähle bitte deine Ubuntu-Version aus. <%= link_to('Wie stelle ich die Version fest?','/user_profiles/help')%><br />
+		<% if !@dist_string.nil? %>
+	     	Über den Browser festgestellte Version: <%= @dist_string%>
+		<% end %>
+		</p>
         <% distrib_options = "" %>
         <% @distributions.each do |distribution| %>
             <% distrib_options << "<option value='" + distribution.id.to_s + "'" + 

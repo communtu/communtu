@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # preinst script for communtu metapackage
 #
 # see: dh_installdeb(1)

@@ -1,17 +1,3 @@
-
-    IFS="*"
-    set +e
-    # test if zenity is present
-    zenity --version >/dev/null 2>&1
-    if [ $? = 0 ]; then
-      # if yes, display sources and keys to the user
-      zenity --list --width 1000 --height 800 --title "Paketquellen hinzufügen" --text "Folgende Paketquellen und Schlüssel werden hinzugefügt" --column "Quelle" --column "Schlüssel" $SOURCESKEYS
-      if [ $? != 0 ]; then
-          # abort if the user does not confirm
-          exit 1
-      fi
-    fi
-    set -e
     
     # add sources
     APTLIST="/etc/apt/sources.list"
