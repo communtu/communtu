@@ -1,6 +1,8 @@
 class UserObserver < ActiveRecord::Observer
   def after_create(user)
-    UserMailer.deliver_signup_notification(user)
+    if user.email[-11..-1]!="example.org"
+      UserMailer.deliver_signup_notification(user)
+    end  
   end
 
   def after_save(user)

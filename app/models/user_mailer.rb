@@ -1,11 +1,8 @@
 class UserMailer < ActionMailer::Base
   def signup_notification(user)
-#    if user.email[-13..-1]!="example.org"
-#    else
     setup_email(user)
     @subject    = 'Herzlich Willkommen bei Communtu'  
     @body[:url]  = "http://www.communtu.de"
-#    end    
   end
   
  # def contact_us(user)  
