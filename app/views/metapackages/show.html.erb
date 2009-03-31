@@ -3,7 +3,8 @@
 <table width="100%">
 	<tr><td width="50%">
 		<span class="headline">   <%=h @metapackage.name %>
-</span> 
+</span> <br />
+<font size="-3">Bündel erstellt von <b><%= @metapackage.user.login %></b></font>
 </td>
 <% if !request.env['HTTP_REFERER'].nil? then %>
 
