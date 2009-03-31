@@ -1,7 +1,7 @@
 <span class="headline">Benuzterprofil bearbeiten</span>
 <div class="inner1">
 <% if !@user.anonymous %>
-<p><%= link_to 'Profil anzeigen', user_path(@user) %> | <%= link_to 'Passwort ändern', change_password_path %> | <%= link_to 'Profil l&ouml;schen', :controller => 'users', :id => @user.id, :action => 'delete' %>  </p>
+<p><%= link_to 'Passwort ändern', change_password_path %> | <%= link_to 'Profil l&ouml;schen', :controller => 'users', :id => @user.id, :action => 'delete' %>  </p>
 <%= error_messages_for :user %>
 <% end %>
  
