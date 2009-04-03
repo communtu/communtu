@@ -430,3 +430,147 @@ Components: main universe free restricted multiverse non-free
 Description: metapackages generated from communtu.de
 #SignWith: yes
 
+Codename: ubuntu-jaunty-free-native
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: ubuntu-jaunty-free-trusted
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: ubuntu-jaunty-free-all
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: ubuntu-jaunty-all-native
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: ubuntu-jaunty-all-trusted
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: ubuntu-jaunty-all-all
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: kubuntu-jaunty-free-native
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: kubuntu-jaunty-free-trusted
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: kubuntu-jaunty-free-all
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: kubuntu-jaunty-all-native
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: kubuntu-jaunty-all-trusted
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: kubuntu-jaunty-all-all
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: xubuntu-jaunty-free-native
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: xubuntu-jaunty-free-trusted
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: xubuntu-jaunty-free-all
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: xubuntu-jaunty-all-native
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: xubuntu-jaunty-all-trusted
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
+Codename: xubuntu-jaunty-all-all
+Origin: communtu
+Label: communtu
+Architectures: i386 amd64
+Components: main universe free restricted multiverse non-free
+Description: metapackages generated from communtu.de
+#SignWith: yes
+
