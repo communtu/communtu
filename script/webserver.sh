@@ -5,10 +5,13 @@
 # auskommentiert werden.
 OLDSERVER=bremer-commune.dyndns.org
 SVNSERVER=bremer-commune.dyndns.org
+# folder for web projects
+mkdir web2.0
 # apache und mail
 sudo apt-get install apache2
-scp -r commune@$OLDSERVER:/etc/apache2/* /etc/apache2/ 
+#scp -r commune@$OLDSERVER:/etc/apache2/* /etc/apache2/ 
 sudo apt-get install php5 libapache2-mod-python sendmail
+sudo a2enmod proxy
 sudo /etc/init.d/apache2 restart
 # subversion
 sudo apt-get install subversion libapache2-svn
@@ -34,11 +37,11 @@ scp commune@$OLDSERVER:/home/commune/web2.0/communtu-program/db.dump.gz /home/co
 gunzip -c /home/commune/web2.0/communtu-program/db.dump.gz | mysql -u root -p communtu
 sudo /etc/init.d/mysql reload
 # checkout rails project
-mkdir web2.0
 cd web2.0
 svn co http://$SVNSERVER/svn/communtu-program communtu-program --username commune 
 cd ..
 scp commune@$OLDSERVER:/home/commune/web2.0/communtu-program/config/database.yml /home/commune/web2.0/communtu-program/config/database.yml
+ln -s communtu-program/public/debs/ communtu-packages
 # start rails apps
 scp commune@$OLDSERVER:/home/commune/rails-start . 
 /home/commune/web2.0/communtu-program/script/web start
