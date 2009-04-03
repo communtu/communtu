@@ -1,6 +1,9 @@
 require 'user_meta_tabz'
 
 class UsersController < ApplicationController
+  
+  DEFAULT_DISTRO = 2 # Hardy
+  DEFALUT_DERIVATIVE = 1 # Ubuntu
   def title
     "Benutzerverwaltung"
   end 
@@ -30,6 +33,8 @@ class UsersController < ApplicationController
   def create
     cookies.delete :auth_token
     @user = User.new(params[:user])
+    @user.derivative_id = DEFALUT_DERIVATIVE
+    @user.distribution_id = DEFAULT_DISTRO 
     @user.enabled = true
     @user.activation_code = nil
     @user.activated_at = Time.now    
@@ -60,6 +65,8 @@ class UsersController < ApplicationController
     end
     @user = User.new(:login => login, :email => login+"@example.org",
                 :password => login, :password_confirmation => login)
+    @user.derivative_id = DEFALUT_DERIVATIVE
+    @user.distribution_id = DEFAULT_DISTRO
     @user.enabled = true
     @user.anonymous = true
     @user.activation_code = nil
