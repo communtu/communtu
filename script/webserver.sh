@@ -26,7 +26,9 @@ sudo gem update --system
 sudo gem install -v=2.1.0 rails -y 
 cd ..
 # debian packaging
-sudo apt-get install reprepro fakeroot dpkg-dev dh-make 
+sudo apt-get install reprepro fakeroot dpkg-dev dh-make build-essential
+#backup
+sudo apt-get install rsync
 # mysql server
 sudo apt-get install mysql-server libmysql-ruby ruby1.8-dev libmysqlclient15-dev
 sudo gem install mysql
