@@ -6,7 +6,7 @@ class DistributionsController < ApplicationController
   # GET /distributions
   # GET /distributions.xml
   def index
-    @distributions = Distribution.find(:all)
+    @distributions = Distribution.find(:all, :order => 'short_name DESC')
     session[:search] = nil
     respond_to do |format|
       format.html # index.html.erb

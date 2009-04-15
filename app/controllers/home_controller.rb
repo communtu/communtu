@@ -19,8 +19,16 @@ class HomeController < ApplicationController
 
   def auth_error
   end
-
+  
   def mail
+  end
+
+ def email
+ #   def email_sent
+      MyMailer.deliver_mail(@user)
+ #   end
+    flash[:notice] = "Die E-Mail wurde ans uns gesendet. Vielen Dank für Dein Feedback."
+    redirect_to '/home'
   end
 
   def submit_mail
