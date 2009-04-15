@@ -10,17 +10,14 @@ class UserProfileTabz < Tabz::Base
         titled "Grunddaten"
         looks_like "user_profiles/profile_data"
         with_data do
-            map = {}
-            if @user_data != :false then
-              @user_data.user_profiles.each do |profile|
-                map.store(profile.category_id, profile.rating!=0)
-            end
-            else
-              UserProfile.find(:all).each do |profile|
-                map.store(profile.category_id, false)
-              end
-            end
-            set_to({ :distributions => Distribution.find(:all), :root => Category.find(1), :ratings => map })
+          @ratings = {}
+          @user_data[:user].user_profiles.each do |profile|
+            @ratings.store(profile.category_id, profile.rating!=0)
+          end
+          set_to({:distributions => Distribution.find(:all), 
+                  :root => Category.find(1), 
+                  :ratings => @ratings, 
+                  :dist_string => @user_data[:dist_string]})
         end
     end
     
@@ -28,20 +25,9 @@ class UserProfileTabz < Tabz::Base
         titled "Detailauswahl"
         looks_like "user_profiles/profile_rating"
         with_data do
-            selection    = []
-            distribution = nil
-            if @user_data != :false then
-              selection = @user_data.selected_packages
-              distribution = @user_data.distriubtion
-            else
-              distribution = session[:distriubtion]
-              session[:profile].each do |category, value|
-                metas = Metapackage.find(:all, :conditions => ["category_id = ? and distribution_id = ? and license_type <= ? and rating <= ?", \
-                                                       category, distribution, session[:license], value])
-                selection += metas
-              end
-            end
-            set_to({ :root => Category.find(1), :selection => selection, :distribution => distribution })
+            set_to({ :root => Category.find(1), 
+                     :selection => @user_data[:user].selected_packages, 
+                     :distribution => @user_data[:user].distribution })
         end
     end
     
@@ -49,7 +35,7 @@ class UserProfileTabz < Tabz::Base
         titled "Installation durchführen"
         looks_like "user_profiles/installation"
         with_data do
-          
+            set_to({ :metas => @user_data[:user].selected_packages.uniq.map{|m| m.debian_name}.join(",")})          
         end
     end
 

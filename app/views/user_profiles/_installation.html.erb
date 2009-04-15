@@ -12,6 +12,29 @@ Die Datei ist ein Skript, das automatisch die gewünschten
 Programme installiert, inklusive Download aus dem Internet.
 
     <div style="padding-top:12px;padding-right:8px" align="right">
-	<%= link_to "Installieren", user_path(current_user) + "/suggestion/install_new"%>
+	<%= link_to "<img src=/images/apt.png title='Installieren' alt='Installieren' border='0'>", user_path(current_user) + "/suggestion/install_new"%>
     </div>
-</div>
+
+<h3>Installation über Metapakete</h3>
+Die Installation über Metapakete ist noch in der Erprobungsphase. Sie wird die Skript-basierte Installation ablösen.
+Zwei Schritte sind zu tun:
+<ol>
+	<li><%= link_to 'Quellen und Schlüssel eintragen' , '/users/'+current_user.id.to_s + '/suggestion/install_sources'  %>
+        <br>Link einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer öffnen.
+        <% if current_user.profile_changed %> 
+		  <%if current_user.profile_version > 1 %>
+		     <br>Dieser Schritt muss neu ausgeführt werden, weil du die Einstellungen geändert hast.
+		  <% end %>
+          <br>Achtung: nach dem Anklicken dauert es eine gewisse Zeit, bis die Datei bereitgestellt wird.
+		<% else %>
+		   <br>Dieser Schritt wurde bereits schon einmal ausgeführt.
+		<% end %>
+    </li>
+	<li>
+		<%= link_to 'Pakete installieren', 'apt://'+metas%>
+        <% if current_user.profile_changed && current_user.profile_version > 1 %>
+		  <br>Dieser Schritt muss neu ausgeführt werden, weil du die Einstellungen geändert hast.
+		<% end %>
+		<br>Die Browser Konqueror und Opera bitte erst für <%= link_to 'apturl', 'http://wiki.ubuntuusers.de/apturl'%> konfigurieren.
+	</li>
+</ol>

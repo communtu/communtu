@@ -21,46 +21,62 @@ Wenn gewünscht, ist aber auch eine detailliertere Auswahl möglich. Achtung: zu
 		<% end %>
 		</tr>
 		</table></li>
-     <li><p>Wähle bitte deine Ubuntu-Version aus. <%= link_to('Wie stelle ich die Version fest?','/user_profiles/help')%></p>
-        
+     <li><p>Wähle bitte deine Ubuntu-Version aus. <%= link_to('Wie stelle ich die Version fest?','/user_profiles/help')%><br />
+		<% if !dist_string.nil? %>
+	     	Über den Browser festgestellte Version: <%= dist_string%>
+		<% end %>
+		</p>
         <% distrib_options = "" %>
         <% distributions.each do |distribution| %>
             <% distrib_options << "<option value='" + distribution.id.to_s + "'" + 
                                   ((logged_in? and current_user.distribution_id==distribution.id) ? "selected='selected'" : "") + ">" + 
                                   distribution.name + "</option>" %>
         <% end %>
+        
         <%= select_tag("distribution", distrib_options) %>
 
+        <% if current_user.derivative.nil? then current_user.derivative_id = 1 end %>
         <% Derivative.find(:all).each do |der|%>
-		  <%=radio_button_tag(:derivative,der.id)%> <%=h der.name%>   
+          <% if logged_in? %>
+	  	    <% selected = der == current_user.derivative %>
+		  <% else %>
+		    <% selected = der == 1%>
+		  <% end %>  
+		  <%= radio_button_tag(:derivative,der.id, selected)%> <%=h der.name%>   
         <% end %>
 		
-        
-    	<% options = Array.new (Package.security_types.length, false) %>
-		<% options[logged_in? ? current_user.security : 0] = true %>
-		</li>
+	</li>
+    	<% options = Array.new(Package.security_types.length, false) %>
+    	<% if logged_in? %>
+		  <% options[current_user.security] = true %>
+		<% elsif not session[:security].nil? %>
+		  <% options[session[:security]] = true %>
+		<% else %>
+		  <% options[2] = true %>
+		<% end %>
 		
      <li><p>Hier kannst du einstellen, wie sicher bzw. komfortabel deine Installationsquellen sein sollen</p>
         
-        <%= radio_button_tag "sec", "0", options[0] %> Nur Ubuntuquellen zulassen (sehr sicher)<br>
-        <%= radio_button_tag "sec", "1", options[1] %> Communityquellen zulassen (auch sicher, mehr Programme/Komfort) <br>
-        <%= radio_button_tag "sec", "2", options[2] %> Alle Quellen zulassen (etwas unsicherer, aber noch mehr Programme/Komfort)<br>
+        <%= radio_button_tag "sec", "0", options[0] %> Nur Ubuntuquellen zulassen ("main/restricted", sehr sicher)<br>
+        <%= radio_button_tag "sec", "1", options[1] %> Communityquellen zulassen ("universe/multiverse", auch sicher, mehr Programme/Komfort) <br>
+        <%= radio_button_tag "sec", "2", options[2] %> Alle Quellen zulassen (etwas unsicherer: Fremdpakete können das System gefährden, aber noch mehr Programme/Komfort: <%= package_link "Acroread"%>, <%= package_link "Skype"%>, <%= package_link "Virtualbox"%>, DVDs ... )<br>
          </li>
     <li><div style="margin-bottom:30px">
-    	<% options = Array.new (Package.license_types.length, false) %>
-		<% options[logged_in? ? current_user.license : 0] = true %>
+    	<% options = Array.new(Package.license_types.length, false) %>
+    	<% if logged_in? %>
+    		<% options[current_user.license] = true %>
+        <% elsif not session[:license].nil? %>
+            <% options[session[:license]] = true %>
+        <% else %>
+            <% options[1] = true %>
+        <% end %>
         <p>Hier kannst du auswählen, welche Lizenzen du zulassen willst</p>
         <%= radio_button_tag "lic", "0", options[0] %> Freie Software (Quellen liegen offen und dürfen weiterentwickelt werden)<br>
         <%= radio_button_tag "lic", "1", options[1] %> Unfreie Lizenzen zulassen (auch kostenlos, aber Quellen liegen nicht offen - sozusagen das Methadon für einen weichen Übergang zu Linux)<br>
         </div></li>
 	</ol>
     <div style="margin-top:20px;">
-      <% if logged_in? %>
         <%= submit_tag "Speichern", :name => "install" %>
         <%= submit_tag "Speichern und feiner auswählen", :name => "choose" %>
-      <% else  %>
-        <%= submit_tag "Übernehmen", :name => "install" %>
-        <%= submit_tag "Übernehmen und verfeinern", :name => "choose" %>
-      <% end  %>
     </div>
 <% end %>

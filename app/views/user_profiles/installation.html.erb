@@ -1,40 +1,5 @@
-<h2>Communtu-Nachinstallation</h2>
-Aufgrund deiner Auswahl werden jetzt Programme auf deinem Computer installiert.
-Folgende Schritte sind dafür zu tun:
-<ol>
-	<li>Klicke auf das Symbol rechts unten</li>
-	<li>Speichere die Datei auf deinem Computer ab, am einfachsten auf dem Desktop</li>
-	<li>Auf dem Desktop (oder im Dateibrowser): Rechtsklick mit der Maus, Eigenschaften, und dann ein Häkchen bei "Ausführen" setzen.</li>
-    <li>Doppelklick auf die Datei (zum Ausführen)</li>
-	<li>Es werden zur Information nochmal die hinzugefügten Quellen und Pakete angezeigt. Zweimal auf "OK" drücken.</li>
-</ol>
-Die Datei ist ein Skript, das automatisch die gewünschten
-Programme installiert, inklusive Download aus dem Internet.
-
-    <div style="padding-top:12px;padding-right:8px" align="right">
-	<%= link_to "<img src=/images/apt.png title='Installieren' alt='Installieren' border='0'>", user_path(current_user) + "/suggestion/install_new"%>
-    </div>
-
-<h3>Installation über Metapakete</h3>
-Die Installation über Metapakete ist noch in der Erprobungsphase. Sie wird die Skript-basierte Installation ablösen.
-Zwei Schritte sind zu tun:
-<ol>
-	<li><%= link_to 'Quellen und Schlüssel eintragen' , '/users/'+current_user.id.to_s + '/suggestion/install_sources'  %>
-        <br>Link einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer öffnen.
-        <% if current_user.profile_changed %> 
-		  <%if current_user.profile_version > 1 %>
-		     <br>Dieser Schritt muss neu ausgeführt werden, weil du die Einstellungen geändert hast.
-		  <% end %>
-          <br>Achtung: nach dem Anklicken dauert es eine gewisse Zeit, bis die Datei bereitgestellt wird.
-		<% else %>
-		   <br>Dieser Schritt wurde bereits schon einmal ausgeführt.
-		<% end %>
-    </li>
-	<li>
-		<%= link_to 'Pakete installieren', 'apt://'+@metas%>
-        <% if current_user.profile_changed && current_user.profile_version > 1 %>
-		  <br>Dieser Schritt muss neu ausgeführt werden, weil du die Einstellungen geändert hast.
-		<% end %>
-		<br>Die Browser Konqueror und Opera bitte erst für <%= link_to 'apturl', 'http://wiki.ubuntuusers.de/apturl'%> konfigurieren.
-	</li>
-</ol>
+<%= render_tabz(:user_profile, 
+      {:user => current_user, 
+       :dist_string => Distribution.browser_info(request.env['HTTP_USER_AGENT'])
+      })
+ %>
