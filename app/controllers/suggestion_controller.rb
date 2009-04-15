@@ -62,7 +62,8 @@ class SuggestionController < ApplicationController
     dialog = derivative.dialog
     script          = "#{sudo} echo\n"
     script += "#!/bin/bash\n\n"
-    script += "APTLIST=\"/etc/apt/sources.list\"\n\n"
+    script += "APTLIST=\"/etc/apt/sources.list\"\n"
+    script += "APTPIN=\"/etc/apt/preferences\"\n\n"
     
     # generate list of packages, grouped by main bundles
     script += "PACKAGES=\"\"\n"
@@ -117,9 +118,14 @@ class SuggestionController < ApplicationController
     script += "IFS=\"*\"\n"
     script += "for source in $SOURCES; do\n"
     script += "\tURL=$( echo $source | cut -d \" \" -f 2 )\n"
-    script += "\tTYPE=$( echo $source | cut -d \" \" -f 3-6 )\n"
-    script += "\tgrep -q \"$URL.*$TYPE\" $APTLIST\n\n"
+    script += "\tDISTRIBUTION=$( echo $source | cut -d \" \" -f 3 )\n"
+    script += "\tCOMPONENT=$( echo $source | cut -d \" \" -f 4-6 )\n"
+    script += "\tgrep -q \"^[^#]*$URL.*$DISTRIBUTION.*$COMPONENT\" $APTLIST\n\n"
     script += "\tif [ \"$?\" != \"0\" ]; then\n\t\tsudo sh -c \"echo $source >> $APTLIST\"\n"
+    script += "\t\tsudo sh -c \"echo >> $APTPIN\"\n"
+    script += "\t\tsudo sh -c \"echo \\\"Package: *\\\" >> $APTPIN\"\n"
+    script += "\t\tsudo sh -c \"echo \\\"Pin: $source\\\" >> $APTPIN\"\n"
+    script += "\t\tsudo sh -c \"echo \\\"Pin-Priority: 100\\\" >> $APTPIN\"\n"
     script += "\tfi\n"
     script += "done\n\n"
 

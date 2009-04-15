@@ -1,17 +1,24 @@
     
     # add sources
     APTLIST="/etc/apt/sources.list"
+    APTPIN="/etc/apt/preferences"
     echo "" >> $APTLIST
     echo "# Von Communtu hinzugefügte Quellen" >> $APTLIST
     for source in $SOURCES; do
     	URL=$( echo $source | cut -d " " -f 2 )
-    	TYPE=$( echo $source | cut -d " " -f 3-6 )
+    	DISTRIBUTION=$( echo $source | cut -d " " -f 3 )
+    	COMPONENT=$( echo $source | cut -d " " -f 4-6 )
     	set +e
     	# is source already present?
-    	grep -q "$URL.*$TYPE" $APTLIST   
+    	grep -q "^[^#]*$URL.*$DISTRIBUTION.*$COMPONENT" $APTLIST   
     	if [ "$?" != "0" ]; then
     	    # if not, add it
     		echo $source >> $APTLIST
+    		# and invoke apt pinning with a low preference
+    		echo >> $APTPIN
+    		echo "Package: *" >> $APTPIN
+			echo "Pin: $source" >> $APTPIN
+            echo "Pin-Priority: 100" >> $APTPIN    		
     	fi
     	set -e
     done

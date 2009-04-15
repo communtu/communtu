@@ -27,7 +27,7 @@
 </p>
 
 
-<% if not @package.urls.nil? then %>
+<% if not @package.urls.nil? and not @package.urls.empty? then %>
 <p>
   <b>Weblinks:</b><br />
   <%=auto_link @package.urls.gsub(/ /,'<br>'), link = :all, :target => '_blank' %>

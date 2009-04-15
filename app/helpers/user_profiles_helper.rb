@@ -1,7 +1,5 @@
 module UserProfilesHelper
   
-# copied from suggestion_helper and then modified
-
     def selected? category, selection
         return selection.key?(category)
     end
