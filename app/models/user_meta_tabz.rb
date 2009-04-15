@@ -13,7 +13,7 @@ class UserMetaTabz < Tabz::Base
     end
     
     add_tab do
-        titled "Alle Bündel"
+        titled "Alle veröffentlichte Bündel"
         looks_like "metapackages/metalist"
         with_data do 
             set_to({ :packages => Metapackage.find(:all, :conditions => ["published=?", 

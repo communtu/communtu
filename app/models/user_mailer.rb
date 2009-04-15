@@ -5,14 +5,14 @@ class UserMailer < ActionMailer::Base
     @body[:url]  = "http://www.communtu.de"
   end
   
- # def contact_us(user)  
- #   @body[:url]  = "http://www.communtu.de"  
- #   @recipients  = "info@toddy-franz.de"
- #   @from        = "#{user.email}"
- #   @subject     = 'Anfrage per Formular'
- #   @sent_on     = Time.now
- #   @body[:user] = user
- # end
+ def contact_us(user)  
+    @body[:url]  = "http://www.communtu.de"  
+    @recipients  = "info@toddy-franz.de"
+    @from        = "#{user.email}"
+    @subject     = 'Anfrage per Formular'
+    @sent_on     = Time.now
+    @body[:user] = user
+  end
   
   def activation(user)
     setup_email(user)
