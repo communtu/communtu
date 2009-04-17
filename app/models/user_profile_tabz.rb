@@ -32,11 +32,28 @@ class UserProfileTabz < Tabz::Base
     end
     
     add_tab do
+        titled "Quellen"
+        looks_like "user_profiles/sources"
+        with_data do
+            metas = @user_data[:user].selected_packages
+            dist = @user_data[:user].distribution
+            license = @user_data[:user].license
+            security = @user_data[:user].security
+            sources = {}
+            metas.each do |p|    
+              p.recursive_packages_sources sources, dist, license, security
+            end
+            set_to({ :sources => sources})
+        end
+    end
+    
+    add_tab do
         titled "Installation durchführen"
         looks_like "user_profiles/installation"
         with_data do
             set_to({ :metas => @user_data[:user].selected_packages.uniq.map{|m| m.debian_name}.join(",")})          
         end
     end
+
 
 end

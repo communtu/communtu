@@ -105,6 +105,25 @@ class Metapackage < BasePackage
     end
   end
 
+  def recursive_packages_sources package_sources, dist, license, security
+    self.base_packages.each do |p|
+        if p.class == Package
+            reps = p.repositories_dist(dist).select{|r| r.security_type<=security && r.license_type<=license}
+            if !reps.empty? then
+              reps.each do |rep|
+                if package_sources[rep].nil? then
+                  package_sources[rep] = [p]
+                else  
+                  package_sources[rep] << p
+                end
+              end
+            end
+        else
+            p.recursive_packages_sources package_sources, dist, license, security
+        end
+    end
+  end
+
   def self.makedeb_for_source_install(name,version,description,packages,distribution,derivative,license,security)
     #compute sources
     repos = Set.[]

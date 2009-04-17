@@ -16,10 +16,15 @@ class UserProfilesController < ApplicationController
     params[:id] = 1
   end
   
-  def installation
+  def sources
     params[:id] = 2
   end
+
+  def installation
+    params[:id] = 3
+  end
   
+
   # update the basic data of the user's software selection
   def update_data 
     user         = current_user

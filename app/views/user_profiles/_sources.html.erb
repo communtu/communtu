@@ -1,0 +1,21 @@
+<h3>Quellen für die zu installierenden Programme</h3>
+
+<%= error_messages_for :user_profile %>
+
+
+<p>Hier werden die zu installierenden Programme und Pakete nach den zugehörigen
+Quellen sortiert aufgelisetet, so dass du auch sehen kannst, weshalb die jeweiligen
+Quellen hinzugefügt werden.</p>
+
+<ul>
+<% sources.each do |repository,packages| %>
+<li>
+	<%= link_to(repository.url, repository_path(repository)) %>
+	<ul>
+		<% packages.each do |p|%>
+		<li> <%= p.icon(22) %> <%= link_to(p.name,package_path(p))%></li>
+		<% end %>
+	</ul>
+</li>
+<% end %>
+</ul>
