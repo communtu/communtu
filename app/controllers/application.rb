@@ -18,5 +18,5 @@ class ApplicationController < ActionController::Base
   def auth_error
     redirect_to(:controller => 'home', :action => 'auth_error')
   end
-  
+  filter_parameter_logging :password 
 end
