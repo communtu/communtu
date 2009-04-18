@@ -75,7 +75,7 @@ class UsersController < ApplicationController
     @user.save!
     # release lock
     system "dotlockfile -u #{RAILS_ROOT}/anolock"
-    flash[:notice] = "Du wurdest als Nutzer #{login} mit Kennwort #{login} eingeloggt. Bitte ggf. unter 'Benutzerkonto' in ein dauerhaftes Nutzerkonto umwandeln; ansonsten wird das Konto nach einem Tag wieder gelöscht."
+    flash[:notice] = "Du wurdest als Nutzer #{login} mit Kennwort #{login} eingeloggt. Bitte ggf. oben rechts auf Nutzer #{login} klicken und in ein dauerhaftes Nutzerkonto umwandeln; ansonsten wird das Konto nach einem Tag wieder gelöscht."
     #have the user logged in 
     self.current_user = @user
     redirect_to "/home/home"
