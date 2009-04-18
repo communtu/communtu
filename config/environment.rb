@@ -64,7 +64,7 @@ Rails::Initializer.run do |config|
   
   config.active_record.observers = :user_observer
 
-
+config.action_mailer.delivery_method = :smtp
 require 'german_date_names'
 
 end

@@ -14,8 +14,9 @@ module DistributionsHelper
     
     repos.each do |repo|
         css = cycle("packageList0", "packageList1")
-        pic = if repo.license_type == 0 then "free.jpg" else "commercial.jpg" end
-        image = '<img border="0" height=25 src="/images/'+pic+'"/>'
+        pic = if repo.license_type == 0 then "Tux2.png" else "24-security-lock.png" end
+        title = if repo.license_type == 0 then "free" else "non-free" end
+        image = '<img border="0" height=25 src="/images/'+pic+'" title="'+title+'"/>'
         link = (link_to (repo.url + " " + repo.subtype), { :controller => :repositories, :action => :show,\
           :id => repo.id, :distribution_id => repo.distribution_id })
         if is_admin?
