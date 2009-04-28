@@ -245,7 +245,7 @@ class Metapackage < BasePackage
 
     # build deb package
     Dir.chdir '..'
-    safe_system "dpkg-buildpackage -uc -us -rfakeroot >> #{RAILS_ROOT}/log/debianize.log 2>&1"
+    safe_system "dpkg-buildpackage -sgpg -kD66AFBC0 -rfakeroot >> #{RAILS_ROOT}/log/debianize.log 2>&1"
     Dir.chdir '../../..'
     # return filename of the newly created package
     return Dir.glob("debs/#{name}/#{name}_#{version}*deb")[0]

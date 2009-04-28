@@ -12,7 +12,7 @@ Quellen hinzugefügt werden.</p>
 <li>
 	<%= link_to(repository.url, repository_path(repository)) %>
 	<ul>
-		<% packages.each do |p|%>
+		<% packages.uniq.each do |p|%>
 		<li> <%= p.icon(22) %> <%= link_to(p.name,package_path(p))%></li>
 		<% end %>
 	</ul>
