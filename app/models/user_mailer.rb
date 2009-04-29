@@ -8,6 +8,7 @@ class UserMailer < ActionMailer::Base
  def contact_us(user)  
     @body[:url]  = "http://www.communtu.de"  
     @recipients  = "info@toddy-franz.de"
+    @from        = "info@toddy-franz.de"
     @from        = "#{user.email}"
     @subject     = 'Anfrage per Formular'
     @sent_on     = Time.now

@@ -1,6 +1,12 @@
 class MyMailer < ActionMailer::Base
   def mail(user)
     @from = 'info@communtu.de'
+    @recipients = 'info@communtu.de'
+    @sent_on = Time.now
+	  @body["title"] = 'Deine Frage bei Communtu'
+  	#@body["email"] = 'info@toddy-franz.de'
+   #	@body["message"] = @form_name
+    @headers = {}
     
 #    @recipients = params[:name]
 #    @subject = "Hi #{recipient}"
