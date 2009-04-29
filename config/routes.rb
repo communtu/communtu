@@ -58,6 +58,7 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/home',  :controller => 'home', :action => 'home'
   map.connect '/about', :controller => 'home', :action => 'about'
   map.connect '/umfrage', :controller => 'home', :action => 'umfrage'
+  map.connect '/contact_us', :controller => 'home', :action => 'contact_us'
   map.connect '/cancel', :controller => 'home', :action => 'cancel'
   map.connect '/success', :controller => 'home', :action => 'success'
   map.connect '/danke/:id', :controller => 'home', :action => 'danke', :method => :get
