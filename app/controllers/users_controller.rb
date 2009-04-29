@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   DEFAULT_DISTRO = 2 # Hardy
   DEFALUT_DERIVATIVE = 1 # Ubuntu
   def title
-    "Benutzerverwaltung"
+    "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
   end 
   layout 'application'
   
