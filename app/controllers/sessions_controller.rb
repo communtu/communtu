@@ -16,6 +16,15 @@ class SessionsController < ApplicationController
   
   def create
     password_authentication(params[:login], params[:password])
+    # check if distribution still exists
+    if current_user.distribution.nil? then
+      while current_user.distribution.nil?
+        current_user.distribution_id += 1
+        current_user.save
+      end  
+      flash[:error] = 
+        "Deine hier registrierte Distribution wurde auf #{current_user.distribution.short_name} geändert, weil deine alte Distribution von Ubuntu (und daher auch von Communtu) nicht mehr unterstützt wird. Wir empfehlen für deinen Computer ein <a href=\"http://wiki.ubuntuusers.de/Upgrade\">Upgrade</a> auf #{current_user.distribution.name}."
+    end
   end
  
   def destroy
