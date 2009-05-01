@@ -22,6 +22,7 @@ class CartController < ApplicationController
     end
         
     def create_from_list
+        if session[:cart].nil? then prepare_create end
         if !params[:datei][:attachment].nil? and params[:datei][:attachment]!="" then
           cart    = Cart.find(session[:cart])
           err = ""
