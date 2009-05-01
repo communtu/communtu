@@ -96,7 +96,7 @@ module AuthenticatedSystem
         format.html do
           store_location
           flash[:error] = "You don't have permission to complete that action."
-          domain = "http://localhost:3000" #modify for your application settings
+          domain = "http://www.communtu.de" #modify for your application settings
           http_referer = request.env["HTTP_REFERER"]
           request_path = request.env["REQUEST_PATH"]
           full_path = domain + request_path
@@ -106,7 +106,7 @@ module AuthenticatedSystem
             #Another area that needs to be modified for your app
             #The [0..20] represents the 21 characters in http://localhost:3000
             #You have to set that to the number of characters in your domain name
-            if (http_referer[0..20] == domain) && (http_referer != full_path)
+            if (http_referer[0..21] == domain) && (http_referer != full_path)
               redirect_to http_referer
             else
               redirect_to root_path

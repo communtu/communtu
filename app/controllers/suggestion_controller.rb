@@ -20,6 +20,12 @@ class SuggestionController < ApplicationController
     name = BasePackage.debianize_name("communtu-add-sources-"+current_user.login)
     version = current_user.profile_version.to_s
 
+    if current_user.selected_packages.empty? then
+      flash[:error] = "Um etwas installieren zu können, musst du zunächst etwas auswählen. Speichern nicht vergessen!"
+      redirect_to "/users/#{current_user.id}/user_profile/tabs/0"
+      return
+    end
+
     # if profile has changed, generate new debian metapackage
     if current_user.profile_changed then
       description = "Quellen und Schluessel hinzufuegen fuer Benutzer "+current_user.login
@@ -36,13 +42,17 @@ class SuggestionController < ApplicationController
       debfile = Dir.glob("debs/#{name}/#{name}_#{version}*deb")[0]
     end
     current_user.save
+    if debfile.nil? then
+      flash[:error] = "Bei der Erstellung des Pakets ist ein Fehler aufgetreten."
+      redirect_to "/users/#{current_user.id}/user_profile/tabs/3"
+      return
+    end
     send_file debfile, :type => 'application/x-debian-package'
     # todo: what to do if debfile is nil?
   end
 
   def install_new
     dist = current_user.distribution
-    # package list has already been created for logged in user
     install_aux(current_user.selected_packages,dist,current_user.license,current_user.security,current_user.derivative)
   end
 
