@@ -316,7 +316,7 @@ class Package < BasePackage
   
   # display icon for a package, if existing
   def icon(size)
-    if !self.icon_file.nil? then
+    if !self.icon_file.nil? and !self.icon_file.empty? then
       # show icon
       Package.show_image("/images/apps/"+self.icon_file,size)
     elsif self.is_meta then

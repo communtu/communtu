@@ -4,10 +4,14 @@ class SessionsController < ApplicationController
   end
   layout 'application'
   before_filter :login_required, :only => :destroy
-  before_filter :not_logged_in_required, :only => [:new, :create]
+#  before_filter :not_logged_in_required, :only => [:new, :create]
   
   # render new.rhtml
   def new
+    if logged_in?
+      flash[:error] = "Du bist bereits angemeldet."
+      redirect_to "/home"
+    end
   end
  
   def show
@@ -15,6 +19,11 @@ class SessionsController < ApplicationController
   end
   
   def create
+    if logged_in?
+      flash[:error] = "Du bist bereits angemeldet."
+      redirect_to "/home"
+      return
+    end
     password_authentication(params[:login], params[:password])
     # check if distribution still exists
     if current_user.distribution.nil? then
