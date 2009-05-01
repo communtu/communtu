@@ -95,10 +95,11 @@ module AuthenticatedSystem
       respond_to do |format|
         format.html do
           store_location
-          flash[:error] = "You don't have permission to complete that action."
+          flash[:error] = "Du hast keine Berechtigung für diese Aktion."
           domain = "http://www.communtu.de" #modify for your application settings
           http_referer = request.env["HTTP_REFERER"]
           request_path = request.env["REQUEST_PATH"]
+          if request_path.nil? then request_path = "" end
           full_path = domain + request_path
           if http_referer.nil? || full_path.nil?
             redirect_to root_path
@@ -116,7 +117,7 @@ module AuthenticatedSystem
         format.xml do
           headers["Status"]           = "Unauthorized"
           headers["WWW-Authenticate"] = %(Basic realm="Web Password")
-          render :text => "You don't have permission to complete this action.", :status => '401 Unauthorized'
+          render :text => "Du hast keine Berechtigung für diese Aktion.", :status => '401 Unauthorized'
         end
       end
     end
