@@ -22,5 +22,5 @@
 	| <%= link_to 'Bearbeiten', edit_distribution_path(@distribution) %> |
 	<%= link_to('Löschen', {:controller => :distributions, :action => :destroy,\
 		:id => @distribution.id},\
-		{:method => :delete, :confirm => 'Bist du sicher?'} ) %>
+		{:method => :delete, :confirm => 'Vor dem Löschen einer Distribution müssen alle Benutzer, die sie nutzen, ausgeloggt sein! Bist du sicher?'} ) %>
 <% end %>

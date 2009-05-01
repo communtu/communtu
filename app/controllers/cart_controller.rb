@@ -22,7 +22,7 @@ class CartController < ApplicationController
     end
         
     def create_from_list
-        if !params[:datei][:attachment].nil? then
+        if !params[:datei][:attachment].nil? and params[:datei][:attachment]!="" then
           cart    = Cart.find(session[:cart])
           err = ""
           params[:datei][:attachment].read.split("\n").each do |n|

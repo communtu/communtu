@@ -80,7 +80,9 @@ class DistributionsController < ApplicationController
   def destroy
     @distribution = Distribution.find(params[:id])
     @distribution.destroy
-
+    # re-compute configuration file for debianising bundles
+    Metapackage.write_conf_distributions
+    
     respond_to do |format|
       format.html { redirect_to(distributions_url) }
       format.xml  { head :ok }
