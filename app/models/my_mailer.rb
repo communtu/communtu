@@ -8,8 +8,8 @@ class MyMailer < ActionMailer::Base
   #      @from = 'info@communtu.de'
   #  else
         @recipients = 'info@toddy-franz.de'
-        @from = 'info@communtu.de'
-#        @from = current_user.email
+#        @from = 'info@communtu.de'
+        @from = current_user.email
   #  end
    # @recipients = 'info@communtu.de', current_user.email
    # @from = current_user.email
