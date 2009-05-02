@@ -14,7 +14,7 @@ class MyMailer < ActionMailer::Base
    # @recipients = 'info@communtu.de', current_user.email
    # @from = current_user.email
     @sent_on = Time.now
-    @subject = 'Deine Frage bei Communtu'
+    @subject = 'Feedback an das Communtu-Team'
 	 # @body = {:title => 'Deine Frage bei Communtu'}
   	#@body["email"] = 'info@toddy-franz.de'
    #	@body["message"] = @form_name
