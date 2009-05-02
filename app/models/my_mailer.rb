@@ -7,7 +7,7 @@ class MyMailer < ActionMailer::Base
   #      @recipients = 'info@communtu.de'
   #      @from = 'info@communtu.de'
   #  else
-        @recipients = 'info@toddy-franz.de'
+        @recipients = 'info@communtu.de'
 #        @from = 'info@communtu.de'
         @from = current_user.email
   #  end
