@@ -6,7 +6,7 @@ class Metapackage < BasePackage
   has_many   :metacontents, :dependent => :destroy
   has_many   :comments, :dependent => :destroy
   has_many   :base_packages, :through => :metacontents
-  has_many   :debs, :dependent => :destroy  
+  has_many   :debs # destroy via callback
 #  has_many   :packages, :through => :metacontents, :source => :base_package, :foreign_key => :base_package_id 
   belongs_to :category
   belongs_to :user
@@ -275,6 +275,7 @@ class Metapackage < BasePackage
           (0..1).each do |lic|
             (0..2).each do |sec|
               codename = Metapackage.codename(dist,der,lic,sec)
+              version = "#{self.version}-#{codename}1"
               deb = Deb.create({:metapackage_id => self.id, :distribution_id => dist.id, :derivative_id => der.id, 
                                 :license_type => lic, :security_type => sec, :version => self.version,
                                 :url => version, :generated => false})
@@ -319,6 +320,13 @@ class Metapackage < BasePackage
       end
     end
     f.close
+  end
+  
+  protected
+  
+  # :dependent => :destroy will not work since the metapackage is needed for destroying the debs
+  def before_destroy
+    Deb.destroy(self.debs.map{|d| d.id})
   end
   
 end

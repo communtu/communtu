@@ -205,7 +205,7 @@ class MetapackagesController < ApplicationController
     if action == "0"
         packages.each do |key,value|
             if value[:select] == "1"
-                Metapackage.delete(key)
+                Metapackage.destroy(key)
             end
         end
         

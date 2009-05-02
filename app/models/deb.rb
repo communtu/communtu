@@ -5,6 +5,17 @@ class Deb < ActiveRecord::Base
 
   require 'utils'
 
+  # command for uploading debs to repository
+  REPREPRO = "reprepro -v -b #{RAILS_ROOT} --outdir public/debs --confdir debs --logdir log --dbdir debs/db --listdir debs/list"
+
+  def codename
+    Metapackage.codename(self.distribution,self.derivative,self.license_type,self.security_type)
+  end
+
+  def name
+    self.metapackage.debian_name
+  end
+  
   # generate debian package
   def generate
     # create a lock in order to avoid concurrent debianizations
@@ -15,11 +26,11 @@ class Deb < ActiveRecord::Base
       der = self.derivative
       lic = self.license_type
       sec = self.security_type
-      name = meta.debian_name
+      name = self.name
+      codename = self.codename
       mlic = meta.compute_license_type
       msec = meta.compute_security_type
-      codename = Metapackage.codename(dist,der,lic,sec)
-      version = "#{meta.version}-#{codename}1"
+      version = "#{meta.version}-#{self.codename}1"
       f=File.open("#{RAILS_ROOT}/log/debianize.log","a")
       f.puts
       f.puts
@@ -47,7 +58,7 @@ class Deb < ActiveRecord::Base
         # upload metapackage
         # todo: make name of .deb unique
         puts "Uploading #{newfile}"
-        safe_system "reprepro -v -b #{RAILS_ROOT} --outdir public/debs --confdir debs --logdir log --dbdir debs/db --listdir debs/list -C #{component} includedeb #{codename} #{newfile} >> #{RAILS_ROOT}/log/debianize.log 2>&1"
+        safe_system "#{REPREPRO} -C #{component} includedeb #{codename} #{newfile} >> #{RAILS_ROOT}/log/debianize.log 2>&1"
         # remove package files, but not folder
         safe_system "rm #{RAILS_ROOT}/debs/#{name}/#{name}* >/dev/null 2>&1 || true"
         self.generated = true
@@ -72,8 +83,15 @@ class Deb < ActiveRecord::Base
       f.close
     end  
     # cleanup
-    system "rm -r #{RAILS_ROOT}/debs/#{meta.debian_name}*"
+    system "rm -r #{RAILS_ROOT}/debs/#{name}*"
     # release lock
     safe_system "dotlockfile -u #{RAILS_ROOT}/debs/lock"
   end
+  
+  protected
+  
+  def before_destroy
+    safe_system "#{REPREPRO} remove #{self.codename} #{self.name}"
+  end
+  
 end
