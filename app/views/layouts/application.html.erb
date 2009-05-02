@@ -42,7 +42,7 @@
         </div>
 <% if logged_in? %>
 <div align="right">
-<font size="-3"><%= link_to 'Feedback an Communtu', '/contact_us' %>&nbsp;&nbsp;&nbsp;angemeldet als  <%= link_to current_user.login, edit_user_path(current_user) %> <%= link_to image_tag("16-member.png", :border => '0', :title => current_user.login, :alt => current_user.login), edit_user_path(current_user) %></font></div>
+<font size="-3"><% link_to 'Feedback an Communtu', '/contact_us' %><!--&nbsp;&nbsp;&nbsp;-->angemeldet als  <%= link_to current_user.login, edit_user_path(current_user) %> <%= link_to image_tag("16-member.png", :border => '0', :title => current_user.login, :alt => current_user.login), edit_user_path(current_user) %></font></div>
 <% end %>
 
         <table width="100%">
