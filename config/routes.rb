@@ -25,6 +25,8 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/users/:id/suggestion/install', :controller => 'suggestion', :action => 'install'
   map.connect '/users/:id/suggestion/install_new', :controller => 'suggestion', :action => 'install_new'
   map.connect '/users/:id/suggestion/install_sources', :controller => 'suggestion', :action => 'install_sources'
+  map.connect '/users/:id/suggestion/install_package_sources/:pid', :controller => 'suggestion', :action => 'install_package_sources'
+  map.connect '/users/:id/suggestion/install_bundle_sources/:mid', :controller => 'suggestion', :action => 'install_bundle_sources'
   map.connect '/users/:id/suggestion/quick_install/:mid', :controller => 'suggestion', :action => 'quick_install'
   map.connect '/users/:id/suggestion/shownew', :controller => 'suggestion', :action => 'shownew'
   map.connect '/users/:user_id/metapackages/:id', :controller => 'users', :action => 'metapackages'

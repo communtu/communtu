@@ -44,13 +44,56 @@ class SuggestionController < ApplicationController
     current_user.save
     if debfile.nil? then
       flash[:error] = "Bei der Erstellung des Pakets ist ein Fehler aufgetreten."
-      redirect_to "/users/#{current_user.id}/user_profile/tabs/3"
+      redirect_to "/home"
       return
     end
     send_file debfile, :type => 'application/x-debian-package'
-    # todo: what to do if debfile is nil?
   end
 
+  def install_bundle_sources
+    Dir.chdir RAILS_ROOT
+    bundle = Metapackage.find(params[:mid])    
+
+    name = BasePackage.debianize_name("communtu-add-sources-#{current_user.login}-#{bundle.name}")
+    version = current_user.profile_version.to_s
+
+    description = "Quellen und Schluessel hinzufuegen fuer Buendel "+bundle.name
+    debfile = Metapackage.makedeb_for_source_install(name,
+                 version,
+                 description,
+                 [bundle],
+                 current_user.distribution, 
+                 current_user.derivative, 
+                 current_user.license,
+                 current_user.security)
+    if debfile.nil? then
+      flash[:error] = "Bei der Erstellung des Pakets ist ein Fehler aufgetreten."
+      redirect_to "/home"
+      return
+    end
+    send_file debfile, :type => 'application/x-debian-package'
+  end
+
+  def install_package_sources
+    Dir.chdir RAILS_ROOT
+    package = Package.find(params[:pid])    
+    repos = package.repositories_dist(current_user.distribution)
+    name = BasePackage.debianize_name("communtu-add-sources-#{current_user.login}-#{package.name}")
+    version = "0.1"
+    description = "Quellen und Schluessel hinzufuegen fuer Paket "+package.name
+    # only install sources, no packages
+    codename = Metapackage.codename(current_user.distribution, 
+                 current_user.derivative, 
+                 current_user.license,
+                 current_user.security)
+    debfile = Metapackage.makedeb(name,version,[],description,codename,current_user.derivative,repos)
+    if debfile.nil? then
+      flash[:error] = "Bei der Erstellung des Pakets ist ein Fehler aufgetreten."
+      return
+    end
+    send_file debfile, :type => 'application/x-debian-package'
+  end
+  
   def install_new
     dist = current_user.distribution
     install_aux(current_user.selected_packages,dist,current_user.license,current_user.security,current_user.derivative)

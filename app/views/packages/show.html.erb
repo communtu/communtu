@@ -2,10 +2,14 @@
 <div class="inner0">
 <span class="headline">  <%= @package.icon(35)%>
   <%= @package.name %>
-</span><br />
-<small>sofort installieren (ggf. über Synpatic untenstehende Quelle hinzufügen)</small>
-<%= link_to image_tag("/images/install.png", :size => "22x22", :border => 0, :title => "installieren", :alt => "installieren"), "apt://"+@package.name%>		
-
+</span><br /><br />
+<% url1 = "apt://"+@package.name %>
+<% url2 = "/users/#{current_user.id}/suggestion/install_package_sources/#{@package.id}" %>
+<%= link_to image_tag("/images/install.png", :size => "22x22", :border => "0", :title => 'Paket installieren. Bitte ggf. vorher die Quellen hinzufügen.', :alt => "installieren"), url1 %>		
+<%= link_to "Paket sofort installieren", url1%>		
+&nbsp;&nbsp;&nbsp;&nbsp;
+            <%= link_to image_tag("/images/sources.jpg", :size => "22x22", :border => "0", :title => "Quellen hinzufügen", :alt => "Quellen"), url2 %>
+<%= link_to("Quellen für diese Paket hinzufügen", url2) %>
   <p>
 <table>
 	<tr><td>

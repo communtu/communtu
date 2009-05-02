@@ -29,8 +29,9 @@
 	    </td>
 		<td class="<%= css %>" valign="middle" align="middle">
 			<%= link_to image_tag("/images/apt.png", :size => "22x22", :border => "0", :title => "installieren mittels Skript", :alt => "installieren"), user_path(current_user) + "/suggestion/quick_install/" + metapackage.id.to_s%>		
-			&nbsp;&nbsp;
-			<%= link_to image_tag("/images/install.png", :size => "22x22", :border => "0", :title => 'installieren mittels Metapaket. Bitte vorher die Communtu-Quellen eintragen (unter "Installation -> Installation durchführen")', :alt => "installieren"), "apt://#{metapackage.debian_name}" %>		
+			<%= link_to image_tag("/images/install.png", :size => "22x22", :border => "0", :title => 'installieren mittels Metapaket. Bitte vorher die Quellen hinzufügen.', :alt => "installieren"), "apt://#{metapackage.debian_name}" %>		
+            <%= link_to image_tag("/images/sources.jpg", :size => "22x22", :border => "0", :title => "Quellen hinzufügen", :alt => "Quellen"), "/users/#{current_user.id}/suggestion/install_bundle_sources/#{metapackage.id}" %>
+
 		</td>	
         <% if logged_in? %>
         <td class="<%= css %>" valign="middle" width="30">

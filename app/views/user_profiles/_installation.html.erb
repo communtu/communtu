@@ -24,7 +24,9 @@ Programme installiert, inklusive Download aus dem Internet.
 Die Installation über Metapakete ist noch in der Erprobungsphase. Sie wird die Skript-basierte Installation ablösen.
 Zwei Schritte sind zu tun (Bei einem Versionswechsel muss der erste Schritt erneut ausgeführt werden, da die Communtu Quellen durch das Upgrade deaktiviert wurden.):
 <ol>
-	<li><%= link_to 'Quellen und Schlüssel eintragen' , '/users/'+current_user.id.to_s + '/suggestion/install_sources'  %>
+	<li> <% url1 = '/users/'+current_user.id.to_s + '/suggestion/install_sources'%>	
+        <%= link_to image_tag("/images/sources.jpg", :size => "22x22", :border => "0", :title => "Quellen hinzufügen", :alt => "Quellen"), url1 %>
+		<%= link_to 'Quellen und Schlüssel eintragen' , url1  %>
         <br>Link einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer öffnen.
         <% if current_user.profile_changed %> 
 		  <%if current_user.profile_version > 1 %>
@@ -35,8 +37,9 @@ Zwei Schritte sind zu tun (Bei einem Versionswechsel muss der erste Schritt erne
 		   <br>Dieser Schritt wurde bereits schon einmal ausgeführt.
 		<% end %>
     </li>
-	<li>
-		<%= link_to 'Pakete installieren', 'apt://'+metas%>
+	<li> <% url2 = 'apt://'+metas%>
+	    <%= link_to image_tag("/images/install.png", :size => "22x22", :border => "0", :title => 'installieren der Metapakete. Bitte vorher die Quellen hinzufügen.', :alt => "installieren"), url2 %>		
+		<%= link_to 'Pakete installieren', url2 %>
         <% if current_user.profile_changed && current_user.profile_version > 1 %>
 		  <br>Dieser Schritt muss neu ausgeführt werden, weil du die Einstellungen geändert hast.
 		<% end %>
