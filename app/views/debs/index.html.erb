@@ -1,0 +1,42 @@
+<h1>Fehlgeschlagene Deb-Generierungen</h1>
+
+<p><%= link_to 'Zurück zum Communtu-Menü', '/home' %></p>
+<% if @debs.empty? then %>
+<p>  Keine fehlgeschlagenen Deb-Generierungen vorhanden! Glückwunsch!</p>
+<% else %>  
+<p><%= link_to "Alle fehlgeschlagenen debs erzeugen", :action => 'generate_all' %></p>
+<table>
+  <tr>
+    <th>Metapackage</th>
+    <th>Distribution</th>
+    <th>Derivative</th>
+    <th>License type</th>
+    <th>Security type</th>
+    <th>Version</th>
+    <th>Url</th>
+    <th>Generated</th>
+    <th>Outdated</th>
+    <th>Errmsg</th>
+  </tr>
+
+<% for deb in @debs %>
+  <tr>
+    <td><%=h deb.metapackage.name %></td>
+    <td><%=h deb.distribution.short_name %></td>
+    <td><%=h deb.derivative.name %></td>
+    <td><%=h deb.license_type %></td>
+    <td><%=h deb.security_type %></td>
+    <td><%=h deb.version %></td>
+    <td><%=h deb.url %></td>
+    <td><%=h deb.generated %></td>
+    <td><%=h deb.outdated %></td>
+    <td><%=h deb.errmsg %></td>
+    <td><%= link_to 'Show', deb %></td>
+    <td><%= link_to 'Generate', :action => 'generate', :id => deb.id %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<% end %>

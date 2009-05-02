@@ -1,4 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
+
+  
+  map.connect '/debs/generate', :controller => 'debs', :action => 'generate'
+  map.connect '/debs/generate_all', :controller => 'debs', :action => 'generate_all'
+  map.resources :debs
+
   map.resources :derivatives
   map.resources :videos
 

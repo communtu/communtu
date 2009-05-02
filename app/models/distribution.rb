@@ -1,6 +1,7 @@
 class Distribution < ActiveRecord::Base
   has_many :repositories, :dependent => :destroy
   has_many :metacontents_distrs, :dependent => :destroy
+  has_many :debs, :dependent => :destroy  
 
   # return the distribution info from the browser info string
   def self.browser_info(s)

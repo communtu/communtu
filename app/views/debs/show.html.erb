@@ -1,0 +1,58 @@
+<p>
+  <b>Metapackage:</b>
+  <%=h @deb.metapackage.name %>
+</p>
+
+<p>
+  <b>Distribution:</b>
+  <%=h @deb.distribution.short_name %>
+</p>
+
+<p>
+  <b>Derivative:</b>
+  <%=h @deb.derivative.name %>
+</p>
+
+<p>
+  <b>License type:</b>
+  <%=h @deb.license_type %>
+</p>
+
+<p>
+  <b>Security type:</b>
+  <%=h @deb.security_type %>
+</p>
+
+<p>
+  <b>Version:</b>
+  <%=h @deb.version %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%=h @deb.url %>
+</p>
+
+<p>
+  <b>Generated:</b>
+  <%=h @deb.generated %>
+</p>
+
+<p>
+  <b>Outdated:</b>
+  <%=h @deb.outdated %>
+</p>
+
+<p>
+  <b>Errmsg:</b>
+  <%=h @deb.errmsg %>
+</p>
+
+<p>
+  <b>Log:</b><br>
+  <tt><%= @deb.log.gsub(/\n/,'<br>') %></tt>
+</p>
+
+
+<%= link_to 'Edit', edit_deb_path(@deb) %> |
+<%= link_to 'Back', debs_path %>

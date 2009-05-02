@@ -1,0 +1,25 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  metapackage_id: 1
+  distribution_id: 1
+  derivative_id: 1
+  license_type: 1
+  security_type: 1
+  version: MyString
+  url: MyString
+  generated: false
+  outdated: false
+  errmsg: MyString
+
+two:
+  metapackage_id: 1
+  distribution_id: 1
+  derivative_id: 1
+  license_type: 1
+  security_type: 1
+  version: MyString
+  url: MyString
+  generated: false
+  outdated: false
+  errmsg: MyString
