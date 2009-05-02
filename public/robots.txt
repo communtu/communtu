@@ -5,4 +5,8 @@ User-Agent: *
 # Disallow: /
 Disallow: /users/
 Disallow: /sessions/
+Disallow: /packages/
+Disallow: /distributions/
+Disallow: /home/distributions/
+Disallow: /categories/
 
