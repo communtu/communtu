@@ -42,6 +42,7 @@
 	</td>
     <td class="<%= css %>" width="80" align="right">
         <%= link_to image_tag("/images/install.png", :size => "22x22", :border => "0", :title => "installieren", :alt => "installieren"), "apt://"+package.name %>                          
+	    <%= link_to image_tag("/images/sources.jpg", :size => "22x22", :border => "0", :title => "Quellen hinzufügen", :alt => "Quellen"), "/users/#{current_user.id}/suggestion/install_package_sources/#{package.id}" %>
 		<% if editing_metapackage? %>
 		    
 			<%= link_to_remote(image_tag("/images/add.png", :size => "22x22", :border => "0", :title =>"hinzufügen", :alt => "hinzufügen"), \

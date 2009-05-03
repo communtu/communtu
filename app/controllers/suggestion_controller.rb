@@ -7,15 +7,7 @@ class SuggestionController < ApplicationController
   def install_sources
     Dir.chdir RAILS_ROOT
     
-    # increase version number
-    if current_user.profile_version.nil? then
-       current_user.profile_version = 1
-       current_user.profile_changed = true
-    else
-      if current_user.profile_changed then
-        current_user.profile_version += 1
-      end  
-    end
+    current_user.increase_version
 
     name = BasePackage.debianize_name("communtu-add-sources-"+current_user.login)
     version = current_user.profile_version.to_s
@@ -26,8 +18,9 @@ class SuggestionController < ApplicationController
       return
     end
 
+    debfile = Dir.glob("debs/#{name}/#{name}_#{version}*deb")[0]
     # if profile has changed, generate new debian metapackage
-    if current_user.profile_changed then
+    if current_user.profile_changed or debfile.nil? then
       description = "Quellen und Schluessel hinzufuegen fuer Benutzer "+current_user.login
       debfile = Metapackage.makedeb_for_source_install(name,
                  version,
@@ -38,8 +31,6 @@ class SuggestionController < ApplicationController
                  current_user.license,
                  current_user.security)
       current_user.profile_changed = false
-    else
-      debfile = Dir.glob("debs/#{name}/#{name}_#{version}*deb")[0]
     end
     current_user.save
     if debfile.nil? then
@@ -93,7 +84,51 @@ class SuggestionController < ApplicationController
     end
     send_file debfile, :type => 'application/x-debian-package'
   end
+
+  def install_bundle_as_meta
+    Dir.chdir RAILS_ROOT
+
+    current_user.increase_version
+    
+    name = BasePackage.debianize_name("communtu-install-"+current_user.login)
+    version = current_user.profile_version.to_s
+
+    if current_user.selected_packages.empty? then
+      flash[:error] = "Um etwas installieren zu können, musst du zunächst etwas auswählen. Speichern nicht vergessen!"
+      redirect_to "/users/#{current_user.id}/user_profile/tabs/0"
+      return
+    end
+
+    debfile = Dir.glob("debs/#{name}/#{name}_#{version}*deb")[0]
+    # if profile has changed, generate new debian metapackage
+    if current_user.profile_changed or debfile.nil? then
+      description = "Communtu-Nachinstallation fuer Benutzer "+current_user.login
+      codename = Metapackage.codename(current_user.distribution, 
+                 current_user.derivative, 
+                 current_user.license,
+                 current_user.security)
+      debfile = Metapackage.makedeb(name,
+                 version,
+                 current_user.selected_packages.map{|p| p.debian_name},                 
+                 description,
+                 codename, 
+                 current_user.derivative, 
+                 [])
+      current_user.profile_changed = false
+    end
+    current_user.save
+    if debfile.nil? then
+      flash[:error] = "Bei der Erstellung des Pakets ist ein Fehler aufgetreten."
+      redirect_to "/home"
+      return
+    end
+    send_file debfile, :type => 'application/x-debian-package'
+  end
+
   
+###########################################################################
+# installation via shell script
+###########################################################################
   def install_new
     dist = current_user.distribution
     install_aux(current_user.selected_packages,dist,current_user.license,current_user.security,current_user.derivative)
@@ -194,9 +229,9 @@ class SuggestionController < ApplicationController
     
     # install packages
     script += "IFS=\" \"\n"
-    script += "#{sudo} aptitude update\n"
+    script += "#{sudo} apt-get update\n"
     script += "for package in $PACKAGES; do\n"
-    script += "\tsudo aptitude install -y $package\n" # here normal sudo due to -y option
+    script += "\tsudo apt-get install -y $package\n" # here normal sudo due to -y option
     script += "done\n"
     
     respond_to do |format|

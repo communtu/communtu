@@ -229,7 +229,19 @@ class User < ActiveRecord::Base
     end  
   end
 
- 
+  # increase profile version number 
+  def increase_version
+    if self.profile_version.nil? then
+       self.profile_version = 1
+       self.profile_changed = true
+    else
+      if self.profile_changed then
+        self.profile_version += 1
+      end  
+    end
+  end
+  
+
   protected
   
   # before filter
@@ -250,8 +262,6 @@ class User < ActiveRecord::Base
   def make_password_reset_code
     self.password_reset_code = Digest::SHA1.hexdigest( Time.now.to_s.split(//).sort_by {rand}.join )
   end
-  
- 
   
   private
   

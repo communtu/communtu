@@ -37,13 +37,17 @@ Zwei Schritte sind zu tun (Bei einem Versionswechsel muss der erste Schritt erne
 		   <br>Dieser Schritt wurde bereits schon einmal ausgeführt.
 		<% end %>
     </li>
-	<li> <% url2 = 'apt://'+metas%>
-	    <%= link_to image_tag("/images/install.png", :size => "22x22", :border => "0", :title => 'installieren der Metapakete. Bitte vorher die Quellen hinzufügen.', :alt => "installieren"), url2 %>		
-		<%= link_to 'Pakete installieren', url2 %>
-        <% if current_user.profile_changed && current_user.profile_version > 1 %>
-		  <br>Dieser Schritt muss neu ausgeführt werden, weil du die Einstellungen geändert hast.
-		<% end %>
-		<br>Die Browser Konqueror und Opera bitte erst für <%= link_to 'apturl', 'http://wiki.ubuntuusers.de/apturl'%> konfigurieren.
+	<li> <%= image_tag("/images/install.png", :size => "22x22", :border => "0", :title => 'installieren der Metapakete. Bitte vorher die Quellen hinzufügen.', :alt => "installieren")%>
+	    Pakete installieren. Es gibt zwei Alternativen:
+	    <ul>
+		<li><%= link_to 'Installation über ein Metapaket', '/suggestion/install_bundle_as_meta'%> </li>
+	    <li><% url2 = 'apt://'+metas%>
+             <%= link_to 'Installation über apturl', url2 %>
+             <% if current_user.profile_changed && current_user.profile_version > 1 %>
+		        <br>Dieser Schritt muss neu ausgeführt werden, weil du die Einstellungen geändert hast.
+		     <% end %>
+		     <br>Die Browser Konqueror und Opera bitte erst für <%= link_to 'apturl', 'http://wiki.ubuntuusers.de/apturl'%> konfigurieren.
+		</li></ul>
 	</li>
 </ol>
 

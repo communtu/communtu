@@ -203,6 +203,14 @@ class Package < BasePackage
     info = { "package_count" => packages.size, "update_count" => 0, "new_count" => 0,\
       "failed" => [], "url" => url }
 
+    # delete packages that are no longer in the repository
+    pps = packages[:packages].values
+    repository.package_distrs.each do |pd|
+      if !pps.include?(pd.package) then
+        pd.destroy
+      end
+    end
+
     # enter packages
     packages[:packages].each do |name,package|
  
