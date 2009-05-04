@@ -9,8 +9,11 @@ module TabzHelper
         
         n = 0
         tabbing.tabs.each do |tab|
-        
-            result << tag("li", {:class => "tabz"}, true)
+            if current == tabbing.tabs[n]
+              result << tag("li", {:class => "tabz_select"}, true)
+            else
+              result << tag("li", {:class => "tabz"}, true)
+            end
             result << link_to(tab.title, build_url(tabbing, n), {})
             result << "</li>\n"
             
