@@ -25,12 +25,8 @@ class HomeController < ApplicationController
 
  def email
      @form_name = params[:form][:name]
-     #@form.email = params[:form][:email]
      @form_frage = params[:form][:frage]
-    # @form = {:name => @form_name, :frage => @form_frage, :user => current_user}
-    # MyMailer.deliver_mail(@form)
      MyMailer.deliver_mail(@form_name, @form_frage, current_user)
- #   end
     flash[:notice] = "Die E-Mail wurde ans uns gesendet. Vielen Dank für Dein Feedback."
     redirect_to '/home'
   end

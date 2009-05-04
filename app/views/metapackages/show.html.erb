@@ -4,7 +4,7 @@
 	<tr><td width="50%">
 		<span class="headline">   <%=h @metapackage.name %>
 </span> <br />
-<font size="-3">Bündel erstellt von <b><%= @metapackage.user.login %></b></font>
+<font size="-3">Bündel erstellt von <b><%= link_to @metapackage.user.login, '/users/' + @metapackage.user.id.to_i.to_s + '/show' %></b></font>
 </td>
 <% if !request.env['HTTP_REFERER'].nil? then %>
 

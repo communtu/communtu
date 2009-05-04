@@ -1,7 +1,7 @@
 <tr class="<%= cycle('odd', 'even') %>">
-  <td align="left"><%=h user.login %></td>
-  <td align="left"><%=h user.email %></td>
-  <td><%= user.enabled ? 'yes' : 'no' %>
+  <td align="left" width="35%"><%=h user.login %></td>
+  <td align="left" width="35%"><%=h user.email %></td>
+  <td width="10%"><%= user.enabled ? 'yes' : 'no' %>
     <% unless user == current_user %>
       <% if user.enabled %>
         <%= link_to('disable', user_path(user.id), :method => :delete) %>
@@ -10,5 +10,11 @@
       <% end %>
     <% end %>
   </td>
-  <td><%= link_to 'edit roles', user_roles_path(user) %></td>
+  <td width="20%"><%= link_to 'edit roles', user_roles_path(user) %></td>
 </tr>
+<tr>
+  <td align="left"><font size="-3"><%=h user.created_at.day %>/<%=h user.created_at.month %>/<%=h user.created_at.year %></font></td>
+  <td align="left"><font size="-3"><%=h user.updated_at.day %>/<%=h user.updated_at.month %>/<%=h user.updated_at.year %></font></td>
+  <td></td><td></td>
+</tr>
+<tr><td colspan="4"><hr></td></tr>

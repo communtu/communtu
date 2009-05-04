@@ -22,7 +22,9 @@ class UsersController < ApplicationController
   
   #This show action only allows users to view their own profile
   def show
-    @user = current_user
+  #  @user = current_user
+    @user = User.find(params[:user_id])
+    @metas = Metapackage.find_all_by_user_id(params[:user_id])
   end
     
   # render new.rhtml
