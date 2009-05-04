@@ -299,29 +299,7 @@ class Metapackage < BasePackage
       m.debianize
     end
   end 
-  
-  def self.write_conf_distributions
-    f=File.open(RAILS_ROOT+'/debs/distributions','w')
-    Distribution.all.each do |dist|
-      Derivative.all.each do |der|
-        (0..1).each do |lic|
-          (0..2).each do |sec|
-            codename = Metapackage.codename(dist,der,lic,sec)
-            f.puts "Codename: #{codename}"
-            f.puts "Origin: communtu"
-            f.puts "Label: communtu"
-            f.puts "Architectures: i386 amd64"
-            f.puts "Components: "+Metapackage.components.flatten.join(" ")
-            f.puts "Description: metapackages generated from communtu.de"
-            f.puts "#SignWith: yes"
-            f.puts 
-          end
-        end
-      end
-    end
-    f.close
-  end
-  
+    
   protected
   
   # :dependent => :destroy will not work since the metapackage is needed for destroying the debs

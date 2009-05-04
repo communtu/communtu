@@ -17,4 +17,17 @@ class Distribution < ActiveRecord::Base
     end  
     return s
   end
+  
+  protected
+  def after_create
+    # generate new configuration file for reprepro
+    Deb.write_conf_distributions
+  end
+  
+  def after_destroy
+    # generate new configuration file for reprepro
+    Deb.write_conf_distributions
+    # remove debian packages
+    Deb.clearvanished
+  end
 end
