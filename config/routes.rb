@@ -43,6 +43,7 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/users/:user_id/user_profile/refine', :controller => 'user_profiles', :action => 'refine'
   map.connect '/users/:user_id/user_profile/installation', :controller => 'user_profiles', :action => 'installation'
   map.connect '/users/:user_id/destroy', :controller => 'users', :action => 'destroy' 
+  map.connect '/users/:user_id/show', :controller => 'users', :action => 'show'
   map.connect '/users/:id/cart/:action/:id', :controller => 'cart'
   
   map.resources :distributions do |dist|
