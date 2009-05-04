@@ -17,7 +17,11 @@ class BasePackage < ActiveRecord::Base
 
   def debian_name
     if self.class == Metapackage then
-      n="communtu-"+self.name
+      if self.is_published? then
+        n="communtu-"+self.name
+      else  
+        n="communtu-private-bundle-"+self.name
+      end
     else
       n=self.name
     end 

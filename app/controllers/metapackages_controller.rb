@@ -83,9 +83,10 @@ class MetapackagesController < ApplicationController
     error = false
     flash[:error] = ""
     @metapackage = Metapackage.find(params[:id])
-    if params[:metapackage][:name]=="Neues Bündel" or (Metapackage.all-[@metapackage]).map{|m| m.debian_name}.include?("communtu-"+BasePackage.debianize_name(params[:metapackage][:name])) then
+    # compute debian names of existing metapackages, without "communtu-" oder "communtu-private-bundle-" prefix
+    metanames = (Metapackage.all-[@metapackage]).map{|m| BasePackage.debianize_name(m.name)}
+    if params[:metapackage][:name]=="Neues Bündel" or metanames.include?(BasePackage.debianize_name(params[:metapackage][:name])) then
       flash[:error] += "Dieser Bündel-Name ist bereits vergeben<br>"
-      params[:metapackage][:name]=@metapackage.name
       error = true
     end
     if params[:metapackage][:version].nil? or params[:metapackage][:version].empty? then
