@@ -16,8 +16,12 @@ class UserMetaTabz < Tabz::Base
         titled "Alle veröffentlichten Bündel"
         looks_like "metapackages/metalist"
         with_data do 
+          if @user_data[:user].has_role?('administrator') then
+            set_to({ :packages => Metapackage.all })
+          else  
             set_to({ :packages => Metapackage.find(:all, :conditions => ["published=?", 
                 Metapackage.state[:published]]) })
+          end      
         end
     end
     
@@ -32,4 +36,5 @@ class UserMetaTabz < Tabz::Base
                      :groups => Package.find(:all, :select => "DISTINCT section", :order => "section") })
         end
     end
+    
 end

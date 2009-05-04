@@ -25,7 +25,7 @@ class BasePackage < ActiveRecord::Base
   end
   
   def self.debianize_name(n)
-    return n.downcase.gsub("ä","ae").gsub("ö","oe").gsub("ü","ue").gsub("ß","ss").gsub(/[^a-z0-9._+-]/, '-')
+    return n.downcase.gsub("ä","ae").gsub("ö","oe").gsub("ü","ue").gsub("ß","ss").gsub(/[^a-z0-9.+-]/, '-')
     # todo: is umlaut elimination really needed?
   end
 end
