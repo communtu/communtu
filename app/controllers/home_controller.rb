@@ -20,6 +20,9 @@ class HomeController < ApplicationController
   def auth_error
   end
   
+  def icons  
+  end
+
   def mail
   end
 
