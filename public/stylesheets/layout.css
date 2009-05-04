@@ -482,6 +482,17 @@ li.tabz {
     border-color: #ac873f;
 }
 
+li.tabz_select {
+    display: inline;
+    overflow: hidden;
+    list-style-type: none;
+    padding: 0px 20px 0px 20px;
+    margin: 0px 2px 0px 0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+}
+
 div.tabz_content {
 
     border-style: solid;
