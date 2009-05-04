@@ -24,7 +24,7 @@ class UsersController < ApplicationController
   def show
   #  @user = current_user
     @user = User.find(params[:user_id])
-    @metas = Metapackage.find_all_by_user_id(params[:user_id])
+    @metas_user = Metapackage.find_all_by_user_id(params[:user_id])
   end
     
   # render new.rhtml
