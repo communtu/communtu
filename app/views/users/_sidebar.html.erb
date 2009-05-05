@@ -1,7 +1,7 @@
 <ul class="sidebar">
 	<li><%= link_to 'Installation', user_user_profile_path(current_user) + '/edit' %></li>
 	<li><%= link_to 'Bündel verwalten', user_path(current_user) + "/metapackages/0" %></li>
-	<li><%= link_to 'Programme suchen', user_path(current_user) + "/metapackages/2" %></li>
+	<li><%= link_to 'Programme suchen', "/packages" %></li>
 	<li><%= link_to 'Ubuntu-Derivate', :controller => "home", :action => "derivatives" %></li>
 	<li><%= link_to 'Ubuntu-Versionen', distributions_path %></li>
 	<% if is_admin? %>
@@ -10,6 +10,6 @@
 	    <li><%= link_to 'Derivate verwalten', derivatives_path %></li>
 	    <li><%= link_to 'Fehlgeschlagene debs', debs_path %></li>
     <% end %>
-	<li><%= link_to 'Communtu-Blog', 'http://communtu.blogspot.com', :target => '_blank' %></li>
+	<li><%= link_to 'Aktuelles', 'http://communtu.blogspot.com', :target => '_blank' %></li>
 </ul>
 
