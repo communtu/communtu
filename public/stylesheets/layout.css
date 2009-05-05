@@ -479,7 +479,7 @@ li.tabz {
     margin: 0px 2px 0px 0px;
     border-style: solid;
     border-width: 1px;
-    border-color: #ac873f;
+    border-color: grey;
 }
 
 li.tabz_select {
@@ -487,10 +487,10 @@ li.tabz_select {
     overflow: hidden;
     list-style-type: none;
     padding: 0px 20px 0px 20px;
-    margin: 0px 2px 0px 0px;
+    margin: 0px 0px 0px 0px;
     border-style: solid;
-    border-width: 1px;
-    border-color: #000000;
+    border-width: 2px;
+    border-color: #ac873f;
 }
 
 div.tabz_content {
