@@ -36,6 +36,19 @@ class Metapackage < BasePackage
   def metapackages
     Metapackage.find(:all,:conditions => ["metacontents.base_package_id = ?",self.id], :include => :metacontents)
   end
+
+  #conflicts within the bundle
+  def conflicts
+    all_cons = {}
+    packages = self.all_recursive_packages
+    packages.each do |p|
+      cons = p.conflicts & packages
+      if !cons.empty? then
+        all_cons[p]=cons
+      end
+    end
+    return all_cons
+  end
   
   # this function is needed to complement is_present for class Package
   def is_present(distribution,licence,security)

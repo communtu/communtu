@@ -59,14 +59,14 @@ class Package < BasePackage
       return {}
     end
     # arbitrarily start with the first one...
-    intersection = pds.pop.packages
+    intersection = yield pds.pop
     pds.each do |pd|
       # ... and then intersect with all the others
-      intersection = intersection & pd.packages
+      intersection = intersection & (yield pd)
     end
     result = {:all => intersection}
     self.package_distrs.each do |pd|
-      result[pd.repository] = pd.packages - intersection
+      result[pd.repository] = (yield pd) - intersection
     end
     return result
   end
@@ -76,7 +76,7 @@ class Package < BasePackage
   def dependencies_union
     union = {}
     self.package_distrs.each do |pd|
-      pd.packages.each do |p|
+      (yield pd).each do |p|
         if union[p].nil? then
           union[p] = []
         end
@@ -84,6 +84,14 @@ class Package < BasePackage
       end
     end
     return union
+  end
+
+  def conflicts
+    c = Set.[]
+    self.package_distrs.each do |pd|
+      c.merge(pd.conflicts)
+    end
+    return c
   end
 
   def stars

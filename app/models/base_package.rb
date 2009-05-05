@@ -2,6 +2,8 @@ class BasePackage < ActiveRecord::Base
   has_many :user_packages, :foreign_key => :package_id
   has_many :videos
   
+    require 'set.rb'
+
     # type of a package, for sorting package lists
   def ptype
     # first display metapackages
@@ -32,4 +34,29 @@ class BasePackage < ActiveRecord::Base
     return n.downcase.gsub("ä","ae").gsub("ö","oe").gsub("ü","ue").gsub("ß","ss").gsub(/[^a-z0-9.+-]/, '-')
     # todo: is umlaut elimination really needed?
   end
+  
+  # packages directly or indirectly installed by this bundle
+  def all_recursive_packages
+    packages = Set.[]
+    all_recursive_packages_aux packages
+    return packages
+  end
+  
+  def all_recursive_packages_aux packages
+    if self.class == Package
+      if !packages.include?(self)
+        packages.add(self)
+        self.package_distrs.each do |pd|
+          pd.depends_or_recommends.each do |p|
+            p.all_recursive_packages_aux packages
+          end
+        end
+      end
+    else
+      self.base_packages.each do |p|
+        p.all_recursive_packages_aux packages
+      end
+    end
+  end
+
 end
