@@ -6,7 +6,7 @@
     <p>Nutzer seit: <%= @user.created_at.month %>/<%= @user.created_at.year %>&nbsp;<font size="-3">(Monat/Jahr)</font>
     <br />Zuletzt eingeloggt: <%= @user.updated_at.month %>/<%= @user.updated_at.year %>
     </p>
-        <p>Erstellte Bündel: <%= @metas_user.count
+        <p>Erstellte Bündel: <%= @metas_user.length
 %></p>
       <% if @user.id == current_user.id %>
         <p>E-Mail: <%= @user.email %></p>
