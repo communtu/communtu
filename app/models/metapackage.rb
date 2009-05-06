@@ -32,9 +32,27 @@ class Metapackage < BasePackage
     return self.published == Metapackage.state[:published]
   end
 
+  # contained packages (without bundles)
+  def packages
+    base_packages.select{|p| p.class == Package}
+  end
+  
   # metapackages using this one
   def metapackages
     Metapackage.find(:all,:conditions => ["metacontents.base_package_id = ?",self.id], :include => :metacontents)
+  end
+
+  #immediate conflicts within the bundle
+  def immediate_conflicts
+    all_cons = {}
+    packages = self.packages
+    packages.each do |p|
+      cons = p.conflicts & packages
+      if !cons.empty? then
+        all_cons[p]=cons
+      end
+    end
+    return all_cons
   end
 
   #conflicts within the bundle

@@ -4,7 +4,7 @@ class Deb < ActiveRecord::Base
   belongs_to :derivative
 
   require 'utils'
-
+  
   # command for uploading debs to repository
   REPREPRO = "reprepro -v -b #{RAILS_ROOT} --outdir public/debs --confdir debs --logdir log --dbdir debs/db --listdir debs/list"
 
@@ -36,12 +36,14 @@ class Deb < ActiveRecord::Base
       f.puts
       f.puts "++++++++++++++++++++++ Processing version #{name}-#{version}"
       f.puts
-      f.close
       # compute list of packages contained in metapackage (todo: delegate this to an own method, preferably using more :includes)
       mcs = Metacontent.find(:all,:conditions => 
              ["metapackage_id = ? and metacontents_distrs.distribution_id = ? and metacontents_derivatives.derivative_id = ?",
               meta.id,dist.id,der.id],:include => [:metacontents_distrs, :metacontents_derivatives])
       packages = mcs.map{|mc| mc.base_package}.select{|p| p.is_present(dist,lic,sec)}.map{|p| p.debian_name}
+      f.puts "Included packages:"
+      f.puts packages.join(", ")
+      f.close
       
       begin
         # build metapackage
@@ -115,6 +117,10 @@ class Deb < ActiveRecord::Base
     f.close
   end
 
+  def self.version_lt(v1,v2)
+    system('dpkg', '--compare-versions', v1, 'lt', v2)
+  end
+  
   protected
   
   def before_destroy

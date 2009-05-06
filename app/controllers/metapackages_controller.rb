@@ -93,7 +93,9 @@ class MetapackagesController < ApplicationController
       flash[:error] += "Es muss eine Version angegeben werden (z.B. 0.1)<br>"
       error = true
     end
-    if !@metapackage.debianized_version.nil? and !@metapackage.debianized_version.empty? and params[:metapackage][:version] <= @metapackage.debianized_version then
+    if !@metapackage.debianized_version.nil? \
+       and !@metapackage.debianized_version.empty? \
+       and Deb.version_lt(params[:metapackage][:version],@metapackage.debianized_version) then
       flash[:error] += "Bei Änderungen muss die Version größer werden<br>"
       error = true
     end
