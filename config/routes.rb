@@ -11,7 +11,6 @@ ActionController::Routing::Routes.draw do |map|
   
   map.connect '/categories/show_tree', :controller => 'categories', :action => 'show_tree'
   map.resources :categories
-  map.resources :metapackages
   map.resources :packages
   map.resources :repositories
   
@@ -20,7 +19,9 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/metapackage/changed', :controller => 'metapackages', :action => 'changed'
   map.connect '/metapackage/migrate', :controller => 'metapackages', :action => 'migrate'
   map.connect '/metapackage/finish_migrate', :controller => 'metapackages', :action => 'finish_migrate'
-  
+
+  map.resources :metapackages
+
   map.connect '/users/anonymous_login', :controller => 'users', :action => 'anonymous_login'
   map.resources :users, :member => { :enable => :put } do |users|
     users.resource  :user_profile
