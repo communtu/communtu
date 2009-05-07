@@ -26,6 +26,10 @@ function stopall {
 
 # main script
 
+if [ `whoami` == root ]; then
+  echo "This script must not be run as root."
+  exit 1
+fi
 cd $(dirname $0)/..
 
 case $1 in
