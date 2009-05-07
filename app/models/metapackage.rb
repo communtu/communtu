@@ -47,7 +47,7 @@ class Metapackage < BasePackage
     all_cons = {}
     packages = self.packages
     packages.each do |p|
-      cons = Set.[].add p # p.conflicts & packages
+      cons = p.conflicts & packages
       if !cons.empty? then
         all_cons[p]=cons
       end
