@@ -140,7 +140,7 @@ class PackagesController < ApplicationController
     @package = Package.find(params[:id])
     # if the future, the editor should not only use the keys,
     # but also extract the list of distributions per package
-    card_editor(@package.name,@package.dependencies_union.keys,session,current_user)
+    card_editor(@package.name,(@package.dependencies_union {|x| x.depends_or_recommends }).keys,session,current_user)
   end
   
   def add_comment
