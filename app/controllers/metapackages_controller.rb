@@ -313,4 +313,8 @@ class MetapackagesController < ApplicationController
     c.save 
     redirect_to :controller => :metapackages, :action => :show, :id => params[:id] 
   end
+  
+  def immediate_conflicts
+    @conflicts = Metapackage.all.map{|m| [m,m.immediate_conflicts]}
+  end
 end
