@@ -6,6 +6,7 @@ function start {
 
 function startall {
     start 3002
+    start 3003
     start 3004
     start 3005
     start 3006
@@ -17,6 +18,7 @@ function stop {
 
 function stopall {
     stop 3002
+    stop 3003
     stop 3004
     stop 3005
     stop 3006
