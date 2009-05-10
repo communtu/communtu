@@ -2,20 +2,20 @@ class MyMailer < ActionMailer::Base
   def mail(form_name, form_frage, current_user)
     @form_name = form_name
     @form_frage = form_frage
-  #  @email_helper = current_user
-  #  if @email_helper.nil or @email_helper == ""
-  #      @recipients = 'info@communtu.de'
-  #      @from = 'info@communtu.de'
-  #  else
-        @recipients = 'at@bremer-commune.de'
-#        @from = 'info@communtu.de'
-        @from = current_user.email
-  #  end
-   # @recipients = 'info@communtu.de', current_user.email
-   # @from = current_user.email
+    @recipients = 'at@bremer-commune.de'
+    @from = current_user.email
     @sent_on = Time.now
     @subject = 'Feedback an das Communtu-Team'
     @body = {:title => @form_name, :comment => @form_frage}
+    @headers = {}
+  end
+  def mailerror(form_email)
+    @form_email = form_email
+    @recipients = 'at@bremer-commune.de'
+    @from = @form_email
+    @sent_on = Time.now
+    @subject = 'Fehlermeldung an das Communtu-Team'
+   # @body = {:title => @form_name, :comment => @form_frage}
     @headers = {}
   end
 end

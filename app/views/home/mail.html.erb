@@ -1,6 +1,8 @@
 <h1>Benachrichtigung bei Fehlerbehebung</h1>
 Bitte benachrichtigt mich unter folgender E-Mail über die Fehlerbehebung.
 <%= form_tag(:controller => 'home', :action => 'submit_mail') %>
-<%= text_field_tag('E-Mail:') %>
+<%= #text_field_tag('E-Mail:')
+%>
+<p>E-Mail: <%= text_field(:form, :email) %></p>
 <%= submit_tag 'Abschicken' %>
 </form>
