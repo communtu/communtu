@@ -317,4 +317,9 @@ class MetapackagesController < ApplicationController
   def immediate_conflicts
     @conflicts = Metapackage.all.map{|m| [m,m.immediate_conflicts]}
   end
+  
+  def rdepends
+    @metapackage = Metapackage.find(params[:id])
+    @dependencies = @metapackage.structured_all_recursive_packages    
+  end
 end

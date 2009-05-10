@@ -64,6 +64,8 @@
 <% end %>
 </div>
 
+<%= link_to 'Direkt und indirekt enthaltene Pakete', :action => 'rdepends', :id => @metapackage.id %>
+
 <% if !@metapackage.metapackages.empty? then%>
   <p>
   <b>Wird bei Communtu in folgenden Bündeln benutzt:</b><br />
@@ -78,6 +80,8 @@
 </p>
 <% end %>
 
+
+<hr>
 <%= render :partial => "package_list", :locals => { :metapackage => @metapackage, :editable => false, :distribution => @distribution, :derivative =>  @derivative} %>
 <%= image_tag("/images/editp.png", :size => "22x22", :border => 0, :title => "Kommentieren", :alt => "Kommentieren") %> 
 <%= link_to'Kommentieren', { :controller => :metapackages, :action => :add_comment, \

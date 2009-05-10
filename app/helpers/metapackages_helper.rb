@@ -29,6 +29,6 @@ module MetapackagesHelper
       end
       
       return options
-    end
-
+  end
+  
 end

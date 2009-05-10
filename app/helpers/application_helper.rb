@@ -66,4 +66,25 @@ module ApplicationHelper
   def package_link name
     link_to name, package_url(Package.find(:first,:conditions =>{:name => name.downcase}))
   end
+  
+  # show dependencies of a bundle or a package in structured form
+  def show_rdependencies deps
+    out = []
+    show_rdependencies_aux deps, out
+    return out.join("\n")
+  end
+
+  def show_rdependencies_aux deps, out
+    out.push "<ul>"
+    deps.each do |p,deps_local|
+      out.push "<li>"
+      meta = if p.class == Package then "" else "meta" end
+      out.push "<a href=\"/#{meta}packages/#{p.id}\">#{p.name}</a>"
+      show_rdependencies_aux deps_local, out 
+      out.push "</li>"
+    end
+    out.push "</ul>"
+  end
+
+
 end

@@ -155,5 +155,9 @@ class PackagesController < ApplicationController
     redirect_to :controller => :packages, :action => :show, :id => params[:id] 
   end
 
+  def rdepends
+    @package = Package.find(params[:id])
+    @dependencies = @package.structured_all_recursive_packages    
+  end
 
 end

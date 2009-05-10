@@ -59,4 +59,32 @@ class BasePackage < ActiveRecord::Base
     end
   end
 
+  # packages directly or indirectly installed by this bundle, structured output
+  def structured_all_recursive_packages
+    packages = {} 
+    deps = []
+    structured_all_recursive_packages_aux packages, deps
+    return packages
+  end
+  
+  def structured_all_recursive_packages_aux packages, deps
+    if !deps.include?(self)
+      deps.push(self)
+      packages_local = {}
+      if self.class == Package
+        self.package_distrs.each do |pd|
+          pd.depends_or_recommends.each do |p|
+            p.structured_all_recursive_packages_aux packages_local, deps
+          end  
+        end
+        
+      else
+        self.base_packages.each do |p|
+          p.structured_all_recursive_packages_aux packages_local, deps
+        end
+      end
+      packages[self] = packages_local
+    end
+  end
+
 end

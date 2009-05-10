@@ -86,6 +86,13 @@ class Package < BasePackage
     return union
   end
 
+  # compute all packages that depend on (or recommend) the given one,
+  # iny any distribution
+  def used_by
+    Package.find(:all, :conditions => ["dependencies.base_package_id = ?",self.id],
+                 :include => {:package_distrs, :dependencies})
+  end
+  
   def conflicts
     c = Set.[]
     self.package_distrs.each do |pd|
@@ -112,6 +119,15 @@ class Package < BasePackage
 
   def self.security_types
     security_types  = [ "Native", "Trusted", "Third-Party" ]
+  end
+
+  def installedsize(dist)
+    pd = PackageDistr.find(:first,:conditions => {:package_id => self.id, :distribution_id => dist.id})
+    if pd.nil? 
+      return nil
+    else
+      return pd.installedsize
+    end
   end
 
   # for debian packaging

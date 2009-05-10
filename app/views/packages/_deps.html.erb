@@ -1,6 +1,10 @@
-  <% common = deps.delete(:all)%>
+<% common = deps.delete(:all) %>
+<% depsarr = deps.select {|rep,deps| !deps.empty?} %>
+<% if common.empty? and depsarr.empty? %>	
+  keine
+<% else %>
   <%= render(:partial => 'package', :collection => common) %>
-  <% if !(depsarr=deps.select {|rep,deps| !deps.empty?}).empty? %>	
+  <% if !depsarr.empty? %>	
     <ul>
     <% depsarr.each do |rd| %>
       <% rep = rd[0] %>
@@ -14,3 +18,4 @@
     <% end %>
 	</ul>
   <% end %>
+<% end %>

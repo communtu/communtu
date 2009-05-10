@@ -76,6 +76,8 @@
   <%= render(:partial => 'deps', :object => @package.dependencies_intersection {|x| x.depends_or_recommends }) %>
 </p>
 
+<%= link_to 'Direkt und indirekt enthaltene Pakete', :action => 'rdepends', :id => @package.id %>
+
 <p>
   <b>Konflikte mit folgenden Paketen:</b><br />
   <%= render(:partial => 'deps', :object => @package.dependencies_intersection {|x| x.conflicts }) %>
@@ -94,6 +96,20 @@
 </ul>
   </p>
 <% end %>
+
+<% if !@package.used_by.empty? then%>
+  <p>
+  <b>Wird in folgenden Paketen benutzt:</b><br />
+  <ul>
+  <% @package.used_by.each do |p| %>
+  <li>
+     <%= link_to  p.name, package_path(p) %>
+</li>				
+  <% end %>
+</ul>
+  </p>
+<% end %>
+
 <p>
 <%= image_tag("/images/editp.png", :size => "22x22", :border => 0, :title => "Kommentieren", :alt => "Kommentieren") %>
 <%= link_to 'Kommentieren', { :controller => :packages, :action => :add_comment, \
