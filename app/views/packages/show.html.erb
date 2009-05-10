@@ -1,5 +1,5 @@
-
-<div class="inner0">
+  <% if logged_in? %>
+    <div class="inner0">
 <span class="headline">  <%= @package.icon(35)%>
   <%= @package.name %>
 </span><br /><br />
@@ -79,7 +79,7 @@
 <%= link_to 'Direkt und indirekt enthaltene Pakete', :action => 'rdepends', :id => @package.id %>
 
 <p>
-  <b>Konflikte mit folgenden Paketen:</b><br />
+<b>Konflikte mit folgenden Paketen:</b><br />
   <%= render(:partial => 'deps', :object => @package.dependencies_intersection {|x| x.conflicts }) %>
 </p>
 
@@ -120,4 +120,8 @@
 <%= link_to 'Bearbeiten', {:action => 'edit', :id => @package.id} %> &nbsp;&nbsp;
 
 <%= link_to 'Metapaket in Bündel wandeln', {:action => 'convert', :id => @package.id} %> &nbsp;&nbsp;
-
+<% else %>
+<div class="inner0">
+<p>Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.</p>
+</div>
+<% end %>

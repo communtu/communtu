@@ -1,5 +1,5 @@
 <%= render_flash %>
-
+<% if logged_in? %>
 <div class="inner1">
 <table>
 <%= form_tag ("/packages/save_comment/" + @id.to_s) %>
@@ -15,3 +15,8 @@
 </table>
 </form>	
 </div>
+<% else %>
+<div class="inner0">
+<p>Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.</p>
+</div>
+<% end %>

@@ -1,3 +1,4 @@
+<% if is_admin? %>
 <h1>Neue Distribution</h1>
 
 <%= error_messages_for :distribution %>
@@ -28,3 +29,4 @@
 <% end %>
 
 <%= link_to 'Zurück', distributions_path %>
+<% end %>

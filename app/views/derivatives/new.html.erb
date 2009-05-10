@@ -1,3 +1,4 @@
+<% if is_admin? %>
 <h1>New derivative</h1>
 
 <% form_for(@derivative) do |f| %>
@@ -25,3 +26,4 @@
 <% end %>
 
 <%= link_to 'Back', derivatives_path %>
+<% end %>

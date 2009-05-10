@@ -1,3 +1,4 @@
+<% if logged_in? %>
 <span class="headline">Paket bearbeiten</span>
 
 <%= error_messages_for :package %>
@@ -52,3 +53,8 @@
 
 <%= link_to 'Zurück', package_path(@package) %>
 </div>
+<% else %>
+<div class="inner0">
+<p>Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.</p>
+</div>
+<% end %>

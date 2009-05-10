@@ -1,3 +1,4 @@
+<% if is_admin? %>
 <p>
   <b>Name:</b>
   <%=h @derivative.name %>
@@ -22,3 +23,4 @@
 
 <%= link_to 'Edit', edit_derivative_path(@derivative) %> |
 <%= link_to 'Back', derivatives_path %>
+<% end %>

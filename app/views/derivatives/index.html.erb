@@ -1,3 +1,4 @@
+<% if is_admin? %>
 <h1>Listing derivatives</h1>
 
 <table>
@@ -18,3 +19,4 @@
 <br />
 
 <%= link_to 'New derivative', new_derivative_path %>
+<% end %>

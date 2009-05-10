@@ -1,5 +1,5 @@
 <%= render_flash %>
-
+<% if logged_in? %>
 <%= dist_show @distribution, "inner0", false %>
 	<table width="100%">
 	<tr>
@@ -23,4 +23,9 @@
 	<%= link_to('Löschen', {:controller => :distributions, :action => :destroy,\
 		:id => @distribution.id},\
 		{:method => :delete, :confirm => 'Vor dem Löschen einer Distribution müssen alle Benutzer, die sie nutzen, ausgeloggt sein! Bist du sicher?'} ) %>
+<% end %>
+<% else %>
+<div class="inner0">
+<p>Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.</p>
+</div>
 <% end %>

@@ -1,3 +1,4 @@
+<% if logged_in? %>
 <div class='inner0'>
 <span class='headline'>Verfügbare Distributionen</span><br/>
 <% for distribution in @distributions %>
@@ -8,3 +9,8 @@
 <% end %>
 
 </div>
+<% else %>
+<div class="inner0">
+<p>Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.</p>
+</div>
+<% end %>
