@@ -10,7 +10,7 @@ Quellen hinzugefügt werden.</p>
 <ul>
 <% sources.each do |repository,packages| %>
 <li>
-	<%= link_to(repository.url, repository_path(repository)) %>
+	<%= link_to(repository.name, repository_path(repository)) %>
 	<ul>
 		<% packages.uniq.each do |p|%>
 		<li> <%= p.icon(22) %> <%= link_to(p.name,package_path(p))%></li>

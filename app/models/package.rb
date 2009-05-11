@@ -320,22 +320,38 @@ class Package < BasePackage
           pd.dependencies.delete_all
           pd.assign_depends(parse_dependencies(package["Depends"]))
           pd.assign_recommends(parse_dependencies(package["Recommends"]))
-          pd.assign_conflicts(parse_dependencies(package["Conflicts"]))
-        else xx 
+          pd.assign_conflicts(parse_unversioned_dependencies(package["Conflicts"]))
+        else raise "When syncing repository, could not find PackageDistr for #{p.name} in repository #{repository.name}"
         end
-      else xy
+      else raise "When syncing repository #{repository.name}, could not find package #{name}"
       end
     end
   
     return info
   end
 
+  # get all dependencies
   def self.parse_dependencies(s)
     if s.nil? then
       return []
     else
       s.split(",").map{|s1| s1.split(" (").first.lstrip}.map{ |name|
-        Package.find(:first, :conditions => ["name=?",name]) }.compact
+        Package.find_by_name(name) }.compact
+    end
+  end
+
+  # get all dependencies without version
+  def self.parse_unversioned_dependencies(s)
+    if s.nil? then
+      return []
+    else
+      packages = []
+      s.split(",").map{|s1| s1.split(" (")}.each do |p|
+        if p.length == 1 then
+          packages.push(Package.find_by_name(p.first.lstrip))
+        end
+      end
+      return packages.compact
     end
   end
 
@@ -483,24 +499,6 @@ class Package < BasePackage
     end
   end
 
-  def replace_nl
-      self.description = self.description.gsub("§§","\n")
-      self.save
-  end
-  
-  def self.replace_all_nl
-    Package.find(:all).each do |p|
-      p.replace_nl
-    end
-  end
-  def replace_quote
-    p=Package.find(64739)
-    p.description=p.description.gsub("'","bananenrepublik")
-    p.save
-    p=Package.find(67805)
-    p.description=p.description.gsub("'","bananenrepublik")
-    p.save
-  end
   
 private
   def self.packages_to_hash url

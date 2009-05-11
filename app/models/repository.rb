@@ -4,6 +4,10 @@ class Repository < ActiveRecord::Base
   has_many :packages, :through => :package_distrs
   validates_presence_of :license_type, :url, :distribution_id
   
+  def name
+    self.url+" "+self.subtype
+  end
+  
   # migrate a repository to a different distribution
   def migrate(dist)
     newurl = url.gsub(self.distribution.short_name.downcase, \

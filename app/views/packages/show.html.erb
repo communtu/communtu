@@ -63,7 +63,7 @@
   <% for pd in @package.package_distrs%>
     <tr><td><%= link_to(pd.distribution.name, distribution_path(pd.distribution)) %>
 	         </td>
-		<td><%= link_to(pd.repository.url, repository_path(pd.repository)) %>
+		<td><%= link_to(pd.repository.name, repository_path(pd.repository)) %>
 		     </td>
 		<td><%= pd.version %></td>	 
     </tr>
