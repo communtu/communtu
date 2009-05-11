@@ -13,7 +13,11 @@ Wenn gewünscht, ist aber auch eine detailliertere Auswahl möglich. <b>Achtung:
 		<% count = 0%>
         <% root.children.each do |child|%>
 		  <th align="left">
-		  <%= check_box_tag "categories[]", child.id, ratings[child.id] %> <%= child.name %>
+		  <%= check_box_tag "categories[]", child.id, ratings[child.id] %>
+          <%= child.name %>
+          <% if child.link != nil %>
+          <%= link_to(image_tag("16-em-open.png", :title => 'Weitere Informationen', :alt => 'Weitere Informationen', :border => '0'), child.link, :target => '_blank') %>
+          <% end %>
 		  </th>
 		  <% count += 1%>
 		  <% if count % 3 == 0 then  %>
