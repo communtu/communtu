@@ -12,7 +12,11 @@
 <table class="form_table">
 	<tr>
 	<td>Pfad:</td>
-	<td><%= @repository.url %></td>
+	<td><%= @repository.name %></td>
+	</tr>
+	<tr>
+	<td>Paketliste für i386:</td>
+	<td><%= auto_link(Package.get_url_from_source(@repository.name)[:url]) %></td>
 	</tr>
 	<tr>
 	<td>Lizenztyp:</td>

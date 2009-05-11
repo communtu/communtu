@@ -13,6 +13,8 @@ class PackageDistr < ActiveRecord::Base
 #    :conditions => 'dependencies.dep_type <= 1'
   has_many :conflicts, :through => :dependencies, :source => :base_package, \
     :conditions => 'dependencies.dep_type = 2'
+  has_many :suggests, :through => :dependencies, :source => :base_package, \
+    :conditions => 'dependencies.dep_type = 3'
 
   def assign_depends list
     list.each do |p|
@@ -32,6 +34,11 @@ class PackageDistr < ActiveRecord::Base
     end
   end
   
+  def assign_suggests list
+    list.each do |p|
+      Dependency.create(:package_distr_id => id, :base_package_id => p.id, :dep_type => 3)
+    end
+  end
 
   def depends_or_recommends
     Dependency.find(:all,:conditions => ["package_distr_id = ? and dep_type <= 1",id]).map{|d| d.base_package}

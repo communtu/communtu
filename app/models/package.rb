@@ -89,7 +89,7 @@ class Package < BasePackage
   # compute all packages that depend on (or recommend) the given one,
   # iny any distribution
   def used_by
-    Package.find(:all, :conditions => ["dependencies.base_package_id = ?",self.id],
+    Package.find(:all, :conditions => ["dependencies.base_package_id = ? and dependencies.dep_type <= ?",self.id,1],
                  :include => {:package_distrs, :dependencies})
   end
   
@@ -197,7 +197,7 @@ class Package < BasePackage
   
   # test whether a source is present
   def self.test_source repository
-    url  = get_url_from_source(repository.url + " " + repository.subtype)[:url]
+    url  = get_url_from_source(repository.name)[:url]
     if url.nil? then return {:error => "Konnte URL für #{repository.url + " " + repository.subtype} nicht feststellen"} end
     begin
       file = open(url, 'User-Agent' => 'Ruby-Wget')
@@ -213,7 +213,7 @@ class Package < BasePackage
     distribution_id = repository.distribution_id
 
     # get URL for repository
-    url  = get_url_from_source(repository.url + " " + repository.subtype)
+    url  = get_url_from_source(repository.name)
     if !url[:error].nil? then
       return url
     end
@@ -320,6 +320,7 @@ class Package < BasePackage
           pd.dependencies.delete_all
           pd.assign_depends(parse_dependencies(package["Depends"]))
           pd.assign_recommends(parse_dependencies(package["Recommends"]))
+          pd.assign_suggests(parse_dependencies(package["Suggests"]))
           pd.assign_conflicts(parse_unversioned_dependencies(package["Conflicts"]))
         else raise "When syncing repository, could not find PackageDistr for #{p.name} in repository #{repository.name}"
         end
@@ -547,8 +548,9 @@ private
   def self.is_valid_option? option
     option == "Version" or option == "Description" or option == "Section" \
      or option == "Depends" or option == "Recommends" \
-     or option == "Conflicts" or option == "Filename" \
-     or option == "Installed-Size" or option == "Size"
+     or option == "Conflicts" or option == "Suggests" \
+     or option == "Installed-Size" or option == "Size" \
+     or option == "Filename"
   end
   
 end

@@ -79,7 +79,7 @@
 <%= link_to 'Direkt und indirekt enthaltene Pakete', :action => 'rdepends', :id => @package.id %>
 
 <p>
-<b>Konflikte mit folgenden Paketen:</b><br />
+<b>Konflikte mit folgenden Paketen (nur solche ohne Version):</b><br />
   <%= render(:partial => 'deps', :object => @package.dependencies_intersection {|x| x.conflicts }) %>
 </p>
 

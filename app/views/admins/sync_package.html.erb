@@ -12,7 +12,7 @@
 <span class="headline">Repository synchronisiert</span>
 <ul>
 	<li>Repository: <%= @repository.name %></li>
-	<li>Repository-URL: <%= @info["url"] %></li>
+	<li>Repository-URL: <%= auto_link(@info["url"]) %></li>
 	<li>Pakete insgesamt: <%= @info["package_count"] %></li>
 	<li>Neu hinzugefügte Pakete: <%= @info["new_count"] %></li>
 	<li>Aktualisierte Pakete: <%= @info["update_count"] %></li>	
