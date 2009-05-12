@@ -64,7 +64,9 @@
 <% end %>
 </div>
 
+<% if is_admin? %>
 <%= link_to 'Direkt und indirekt enthaltene Pakete', :action => 'rdepends', :id => @metapackage.id %>
+<% end %>
 
 <% if !@metapackage.metapackages.empty? then%>
   <p>

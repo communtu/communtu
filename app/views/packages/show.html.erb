@@ -76,7 +76,9 @@
   <%= render(:partial => 'deps', :object => @package.dependencies_intersection {|x| x.depends_or_recommends }) %>
 </p>
 
+<% if is_admin? %>
 <%= link_to 'Direkt und indirekt enthaltene Pakete', :action => 'rdepends', :id => @package.id %>
+<% end %>
 
 <p>
 <b>Konflikte mit folgenden Paketen (nur solche ohne Version):</b><br />
