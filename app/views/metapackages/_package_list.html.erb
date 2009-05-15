@@ -1,5 +1,6 @@
 <div class="inner1">
 <table width="100%" cellspacing="0">
+    <% @size_helper = 0 %>
 	<% mcs = metapackage.metacontents.sort_by {|mc| [mc.package.ptype, mc.package.name] }%>
 	<% mcs.each do |mc| %>
 	<% basecss = cycle("packageList0", "packageList1") %>
@@ -14,7 +15,13 @@
                   else @contr = :metapackages; @icon = Metapackage.icon(30) \
 			           end %>	   
 			<td class="<%= css+"noborder" %>"><%= @icon %>&nbsp;<%= link_to  mc.package.name, { :controller => @contr, :action => :show,\
-					:id => mc.package.id } %></td>
+					:id => mc.package.id } %>
+                    <% if mc.package.installedsize(current_user.distribution) != nil %>
+                    <% @size_helper += mc.package.installedsize(current_user.distribution) %>
+                    (<%= number_to_human_size(mc.package.installedsize(current_user.distribution)*1024) %>)
+                    &nbsp;
+                    <% end %>
+                    </td>
 			<td class="<%= css+"noborder" %>" align="right">
 			<% if is_admin? %>
 				<%= link_to image_tag("edit-delete.png", :size => "22x22", :border => "0"), { :controller => :metapackages,\
@@ -35,7 +42,7 @@
 			    <% if mc.package.distributions.include?(d) %>
   	              <%= check_box_tag("distributions["+mc.package.id.to_s+"][]",d.id, mc.distributions.include?(d))%>
                   <%= link_to d.short_name, distribution_path(d) %>
-				<% end %>
+                  <% end %>
               <% else %>
 			    <% if mc.distributions.include?(d)%>
                   <%= link_to d.short_name, distribution_path(d) %>&nbsp;
@@ -53,8 +60,13 @@
               <% end %>
             <% end %>
 		  </td>
-		  <td><%= mc.package.installedsize(current_user.distribution) %></td> </tr>
+		 </tr>
 		<% end %>  
 	<% end %>
+    <tr>
+      <td class="packageList0noborder">Gesamtgröße des Bündels auf der Festplatte:
+    <% @size_helper = @size_helper * 1024  %>
+    <b><%= number_to_human_size(@size_helper) %></b>
+    </td></tr>
 </table>	
 </div>

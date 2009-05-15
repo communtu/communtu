@@ -16,7 +16,9 @@ Wenn gewünscht, ist aber auch eine detailliertere Auswahl möglich. <b>Achtung:
 		  <%= check_box_tag "categories[]", child.id, ratings[child.id] %>
           <%= child.name %>
           <% if child.link != nil %>
+          <% if child.link != "" %>
           <%= link_to(image_tag("16-em-open.png", :title => 'Weitere Informationen', :alt => 'Weitere Informationen', :border => '0'), child.link, :target => '_blank') %>
+          <% end %>
           <% end %>
 		  </th>
 		  <% count += 1%>
