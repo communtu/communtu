@@ -4,7 +4,7 @@
 <% if @debs.empty? then %>
 <p>  Keine fehlgeschlagenen Deb-Generierungen vorhanden! Glückwunsch!</p>
 <% else %>  
-<p><%= link_to "Alle fehlgeschlagenen debs erzeugen", :action => 'generate_all' %></p>
+<p><%= link_to "Alle fehlgeschlagenen debs erzeugen <b>Achtung: nur unter admin.communtu.de ausführen!</b>", :action => 'generate_all' %></p>
 <table>
   <tr>
     <th>Metapackage</th>
