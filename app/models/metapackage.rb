@@ -81,6 +81,10 @@ class Metapackage < BasePackage
     (self.base_packages.map{|p| p.compute_security_type} <<0).max
   end
   
+   def installedsize(dist)
+     self.base_packages.map{|p| p.installedsize(dist)}.sum
+  end
+  
   # copy the metapackage contents from from_dist to to_dist
   def migrate(from_dist, to_dist)
     not_found = []
