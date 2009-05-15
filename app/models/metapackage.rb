@@ -82,7 +82,7 @@ class Metapackage < BasePackage
   end
   
    def installedsize(dist)
-     self.base_packages.map{|p| p.installedsize(dist)}.sum
+     self.base_packages.map{|p| p.installedsize(dist)}.compact.sum
   end
   
   # copy the metapackage contents from from_dist to to_dist

@@ -16,9 +16,10 @@
 			           end %>	   
 			<td class="<%= css+"noborder" %>"><%= @icon %>&nbsp;<%= link_to  mc.package.name, { :controller => @contr, :action => :show,\
 					:id => mc.package.id } %>
-                    <% if mc.package.installedsize(current_user.distribution) != nil %>
-                    <% @size_helper += mc.package.installedsize(current_user.distribution) %>
-                    (<%= number_to_human_size(mc.package.installedsize(current_user.distribution)*1024) %>)
+					<% s=mc.package.installedsize(current_user.distribution) %>
+                    <% if !s.nil? %>
+                    <% @size_helper += s %>
+                    (<%= number_to_human_size(s*1024) %>)
                     &nbsp;
                     <% end %>
                     </td>
