@@ -1,3 +1,4 @@
+<% if logged_in? %>
 <%= form_tag("/metapackage/action", :id => "action_form") %>
 
 <table style="height:100%;" width="100%" cellspacing="0">
@@ -56,3 +57,6 @@
   </form>
 
 <%= observe_form('action_form', :url => "/metapackage/changed", :update => :method) %>
+<% else %>
+<p>Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.</p>
+<% end %>

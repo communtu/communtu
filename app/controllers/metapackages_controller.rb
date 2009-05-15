@@ -3,7 +3,7 @@ class MetapackagesController < ApplicationController
   def title
     "Bündel"
   end
-  
+
   @@migrations = {}
     
   # GET /metapackages
@@ -21,9 +21,10 @@ class MetapackagesController < ApplicationController
   # GET /metapackages/1.xml
   def show
     @metapackage = Metapackage.find(params[:id])
+    if logged_in?
     @distribution = current_user.distribution
     @derivative = current_user.derivative
-
+    end
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @metapackage }

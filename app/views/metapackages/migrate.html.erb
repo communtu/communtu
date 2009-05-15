@@ -1,3 +1,4 @@
+<% if logged_in? %>
 <%= form_tag "/metapackage/finish_migrate" %>
     <div>
         <p>Von welcher Distribution sollen die Bündel migriert werden ?</p>
@@ -11,3 +12,6 @@
         <p><%= submit_tag("Migrieren") %></p>
     </div>
 </form>
+<% else %>
+<p>Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.</p>
+<% end %>

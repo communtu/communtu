@@ -1,5 +1,5 @@
 <div class="inner0">
-
+<% if logged_in? %>
 <%= render_flash %>
     <span class="headline">Bündel-Informationen anpassen</span>
     <br/>
@@ -37,5 +37,8 @@
         <div align="right"><%= submit_tag "Speichern"%></div>
 		
 
+    <% end %>
+    <% else %>
+    <p>Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.</p>
     <% end %>
 </div>

@@ -1,3 +1,4 @@
+<% if logged_in? %>
 <h1>Kategorien-Übersicht</h1>
 
 <table>
@@ -26,3 +27,6 @@
 <%= link_to 'Neue Kategorie', new_category_path %>
 &nbsp;&nbsp;&nbsp;
 <%= link_to 'Kategorienbaum anzeigen', :action => 'show_tree' %>
+<% else %>
+<p>Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.</p>
+<% end %>

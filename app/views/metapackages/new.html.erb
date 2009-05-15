@@ -1,3 +1,4 @@
+<% if logged_in? %>
 <h1>Neues Bündel</h1>
 
 <%= render_flash %>
@@ -30,4 +31,6 @@
     <%= f.submit "Anlegen" %>
   </p>
 <% end %>
-
+<% else %>
+<p>Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.</p>
+<% end %>

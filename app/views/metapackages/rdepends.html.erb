@@ -1,2 +1,6 @@
+<% if logged_in? %>
 <h2>Im Bündel <%= @metapackage.name %> direkt und indirekt enthaltene Bündel und Pakete</h2> 
 <%= show_rdependencies @dependencies %>
+<% else %>
+<p>Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.</p>
+<% end %>

@@ -1,3 +1,4 @@
+<% if is_admin? %>
 <h1>Kategorie bearbeiten</h1>
 
 <%= error_messages_for :category %>
@@ -30,3 +31,6 @@
 
 <%= link_to 'Anzeigen', @category %> |
 <%= link_to 'Zurück', categories_path %>
+<% else %>
+<p>Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.</p>
+<% end %>

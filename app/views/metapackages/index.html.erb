@@ -1,3 +1,4 @@
+<% if logged_in? %>
 <span class="headline">Bündel</span>
 
 <div class="inner1">
@@ -5,4 +6,6 @@
 </div>
 
 <%= link_to 'Zurück', distribution_path(id)%>
-
+<% else %>
+<p>Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.</p>
+<% end %>
