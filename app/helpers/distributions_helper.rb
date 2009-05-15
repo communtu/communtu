@@ -21,13 +21,13 @@ module DistributionsHelper
           :id => repo.id, :distribution_id => repo.distribution_id })
         if is_admin?
           sync_link = (link_to (tag "img", { :src => "/images/view-refresh.png", :width => "22", :height => "22",\
-            :alt => "Repository synchronisieren", :class => "link_img"}) ,\
+            :alt => "Repository synchronisieren", :title => "Repository synchronisieren",:class => "link_img"}) ,\
             { :controller => :admin, :action => :sync_package, :id => repo.id})
           mig_link =  (link_to (tag "img", { :src => "/images/migrate.png", :width => "22", :height => "22",\
-            :alt => "Repository migieren", :class => "link_img"}) ,\
+            :alt => "Repository migieren", :title => "Repository migieren",:class => "link_img"}) ,\
              "/repositories/migrate/#{repo.id}")
           del_link =  (link_to (tag "img", { :src => "/images/edit-delete.png", :width => "22", :height => "22",\
-            :alt => "Repository löschen", :class => "link_img"}) ,\
+            :alt => "Repository löschen", :title => "Repository löschen", :class => "link_img"}) ,\
              "/repositories/destroy/#{repo.id}")
           row = "<tr><td class='" + css + "' valign='middle'>" + sync_link +\
              "</td><td class='" + css + "' valign='middle'>" + image + link + "</td>" +\
