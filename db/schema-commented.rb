@@ -27,8 +27,10 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.text     "description"
     # category of the bundle
     t.integer  "category_id",        :limit => 11
-    # only for bundles. 0 = free, 1 = free and non-free
+    # only for bundles. 0 = free, 1 = free and non-free. Derived from corresponding repository information.
     t.integer  "license_type",       :limit => 11
+    # 0 = main/restricted, 1 = also universe/multiverse. Derived from corresponding repository information.
+    t.integer  "security_type",      :limit => 11
     # maintainer of the bundle
     t.integer  "user_id",            :limit => 11
     # is the bundle published?
@@ -48,8 +50,6 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.integer  "popcon",             :limit => 11
     # should the bundle be installed by default, if the user selects the category?
     t.boolean  "default_install"
-    # 0 = main/restricted, 1 = also universe/multiverse
-    t.integer  "security_type",      :limit => 11
     # version of the bundle
     t.string   "version"
     # last version of the bundle that has been turned into a debian metapackage
@@ -168,6 +168,7 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
 # info about membership of a package in a specific distribution
   create_table "package_distrs", :force => true do |t|
     t.integer  "package_id",      :limit => 11
+    # todo: this could be obtained through a delegation
     t.integer  "distribution_id", :limit => 11
     # repository witnessing membership of package in distribution
     # this often is not unique, i.e. one and the same package
@@ -218,7 +219,7 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.integer  "user_id",     :limit => 11
     t.integer  "category_id", :limit => 11
     # 0 = not selected
-    # should be replaced by boolean
+    # todo: should be replaced by boolean
     t.integer  "rating",      :limit => 11
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -246,16 +247,16 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.integer  "security",                  :limit => 11, :default => 2
     # distribution selected by the user
     t.integer  "distribution_id",           :limit => 11, :default => 2
+    # derivative selected by the user
+    t.integer  "derivative_id",             :limit => 11
     # language selected by the user. Currently not used
     # Not sure whether this will be useful at all, because different localisations will be different rails instances
     t.integer  "language_id",               :limit => 11, :default => 1
     # 1 = this is the user's first login
-    # should be replaced by boolean
+    # todo: should be replaced by boolean
     t.integer  "first_login",               :limit => 11, :default => 1
-    # not needed, can be removed
+    # todo: not needed, can be removed
     t.integer  "template_id",               :limit => 11
-    # derivative selected by the user
-    t.integer  "derivative_id",             :limit => 11
     # version of the user_profiles data
     t.integer  "profile_version",           :limit => 11
     # has the profile changed since the last generation of a metapackage for the user?
