@@ -15,10 +15,10 @@
     	    # if not, add it
     		echo $source >> $APTLIST
     		# and invoke apt pinning with a low preference
-    		echo >> $APTPIN
-    		echo "Package: *" >> $APTPIN
-			echo "Pin: $source" >> $APTPIN
-            echo "Pin-Priority: 100" >> $APTPIN    		
+#    		echo >> $APTPIN
+#    		echo "Package: *" >> $APTPIN
+#			echo "Pin: $source" >> $APTPIN
+#            echo "Pin-Priority: 100" >> $APTPIN    		
     	fi
     	set -e
     done
