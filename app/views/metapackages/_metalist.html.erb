@@ -12,7 +12,7 @@
   <th valign="middle" class="packageList" align="left"></th>
 </tr>
 
-    <% for metapackage in packages %>
+    <% for metapackage in packages.sort_by {|m| m.category.name} %>
      <% css = cycle("packageList0", "packageList1") %>
       <tr>
         <td class="<%= css %>" valign="middle">
