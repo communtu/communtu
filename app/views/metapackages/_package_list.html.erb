@@ -1,7 +1,7 @@
 <div class="inner1">
 <table width="100%" cellspacing="0">
     <% @size_helper = 0 %>
-	<% mcs = metapackage.metacontents.sort_by {|mc| [mc.package.ptype, mc.package.name] }%>
+	<% mcs = metapackage.metacontents.sort_by {|mc| [mc.package.section, mc.package.ptype, mc.package.name] }%>
 	<% mcs.each do |mc| %>
 	<% basecss = cycle("packageList0", "packageList1") %>
 	<% if editable || mc.package.class == Metapackage || (mc.distributions.include?(distribution) && mc.derivatives.include?(derivative))%>
@@ -24,8 +24,9 @@
                     <% end %>
                     </td>
 			<td class="<%= css+"noborder" %>" align="right">
+                         <%= mc.package.section %>
 			<% if is_admin? %>
-				<%= link_to image_tag("edit-delete.png", :size => "22x22", :border => "0"), { :controller => :metapackages,\
+			&nbsp;&nbsp;	<%= link_to image_tag("edit-delete.png", :size => "22x22", :border => "0"), { :controller => :metapackages,\
 					 :action => :remove_package, :id => metapackage.id, :package_id => mc.id  } %> 
 			<% end %>
 			</td>
