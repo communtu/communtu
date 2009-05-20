@@ -253,26 +253,21 @@ class Metapackage < BasePackage
         if key.nil? then key = "" end
         urls << url
         keys << key
-        if derivative.dialog == "zenity" then
-          urls_keys << url+"*"+key
-        else  
-          urls_keys << url+"\t"+key
-        end  
+        urls_keys << url+"+"+key
       end
       # create  'preinst'
       # first half of standard script ...
       safe_system "cp ../../../preinst1 preinst"
       # ... handling of new sources and keys ...
       f=File.open("preinst","a")
-      f.puts '    SOURCES="'+urls.join('*')+'"'
       f.puts '    KEYS="'+keys.select{|k| !k.empty?}.join('*')+'"'
+      f.puts '    SOURCESKEYS="'+urls_keys.join('*')+'"'
+      f.close
+      # ... selection of sources according to sources.list
+      safe_system "cat ../../../preinst2 >> preinst"
       if derivative.dialog == "zenity" then
-        f.puts '    SOURCESKEYS="'+urls_keys.join('*')+'"'
-        f.close
         safe_system "cat ../../../preinst2-zenity >> preinst"
       else  
-        f.puts '    SOURCESKEYS="'+urls_keys.join('\\n')+'"'
-        f.close
         safe_system "cat ../../../preinst2-kdialog >> preinst"
       end  
       # ... and main part of standard script
