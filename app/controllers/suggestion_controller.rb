@@ -208,7 +208,7 @@ class SuggestionController < ApplicationController
     script += "\tURL=$( echo $source | cut -d \" \" -f 2 )\n"
     script += "\tDISTRIBUTION=$( echo $source | cut -d \" \" -f 3 )\n"
     script += "\tCOMPONENT=$( echo $source | cut -d \" \" -f 4-6 )\n"
-    script += "\tgrep -q \"^[^#]*$URL.*$DISTRIBUTION.*$COMPONENT\" $APTLIST\n\n"
+    script += "\tegrep -q \"^[^#]*$URL.*$DISTRIBUTION([a-zA-Z-]* )*$COMPONENT($| )\" $APTLIST\n\n"
     script += "\tif [ \"$?\" != \"0\" ]; then\n\t\tsudo sh -c \"echo $source >> $APTLIST\"\n"
 #    script += "\t\tsudo sh -c \"echo >> $APTPIN\"\n"
 #    script += "\t\tsudo sh -c \"echo \\\"Package: *\\\" >> $APTPIN\"\n"

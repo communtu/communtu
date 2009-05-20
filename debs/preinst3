@@ -10,7 +10,7 @@
     	COMPONENT=$( echo $source | cut -d " " -f 4-6 )
     	set +e
     	# is source already present?
-    	grep -q "^[^#]*$URL.*$DISTRIBUTION.*$COMPONENT" $APTLIST   
+    	egrep -q "^[^#]*$URL.*$DISTRIBUTION([a-zA-Z-]* )*$COMPONENT($| )" $APTLIST   
     	if [ "$?" != "0" ]; then
     	    # if not, add it
     		echo $source >> $APTLIST
