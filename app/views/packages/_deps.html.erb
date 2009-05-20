@@ -1,6 +1,6 @@
 <% common = deps.delete(:all) %>
 <% depsarr = deps.select {|rep,deps| !deps.empty?} %>
-<% if common.empty? and depsarr.empty? %>	
+<% if common.nil? or depsarr.nil? or (common.empty? and depsarr.empty?) %>	
   keine
 <% else %>
   <%= render(:partial => 'package', :collection => common) %>
