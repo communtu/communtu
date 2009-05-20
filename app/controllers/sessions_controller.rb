@@ -26,7 +26,7 @@ class SessionsController < ApplicationController
     end
     password_authentication(params[:login], params[:password])
     # check if distribution still exists
-    if current_user.distribution.nil? then
+    if logged_in? and current_user.distribution.nil? then
       while current_user.distribution.nil?
         current_user.distribution_id += 1
         current_user.save
