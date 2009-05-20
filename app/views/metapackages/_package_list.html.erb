@@ -25,7 +25,7 @@
                     </td>
 			<td class="<%= css+"noborder" %>" align="right">
                          <%= mc.package.section %>
-			<% if is_admin? %>
+			<% if is_admin? or metapackage.user==current_user %>
 			&nbsp;&nbsp;	<%= link_to image_tag("edit-delete.png", :size => "22x22", :border => "0"), { :controller => :metapackages,\
 					 :action => :remove_package, :id => metapackage.id, :package_id => mc.id  } %> 
 			<% end %>
