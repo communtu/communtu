@@ -21,7 +21,7 @@
 
   <p>
     <b>Übergeordnete Kategorie</b><br />
-	<%= f.collection_select('parent_id', Category.find(:all, :order => "name"), :id, :name)%>
+	<%= f.collection_select('parent_id', Category.find(:all, :order => "name"), :id, :name, {:include_blank => 'Wähle einen Parent aus!'})%>
   </p>
 
   <p>
