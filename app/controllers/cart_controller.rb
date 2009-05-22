@@ -26,8 +26,15 @@ class CartController < ApplicationController
         if !params[:datei][:attachment].nil? and params[:datei][:attachment]!="" then
           cart    = Cart.find(session[:cart])
           err = ""
+          metas = {}
+          Metapackage.all.each do |m|
+            metas[m.debian_name] = m
+          end
           params[:datei][:attachment].read.split("\n").each do |n|
             package = BasePackage.find(:first, :conditions => ["name = ?",n])
+            if package.nil? then
+              package = metas[n]
+            end
             if package.nil? then
               err += n+" "
             else  
