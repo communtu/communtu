@@ -14,8 +14,8 @@ class User < ActiveRecord::Base
   validates_format_of       :email, :with => /(^([^@\s]+)@((?:[-_a-z0-9]+\.)+[a-z]{2,})$)|(^$)/i
  
  #Messager dependencies
-  has_many :sent_messages, :class_name => "Message", :foreign_key => "author_id"
-  has_many :received_messages, :class_name => "MessageCopy", :foreign_key => "recipient_id"
+  has_many :sent_messages, :class_name => "Message", :foreign_key => "author_id", :dependent => :destroy
+  has_many :received_messages, :class_name => "MessageCopy", :foreign_key => "recipient_id", :dependent => :destroy
   has_many :folders
  #Messager dependencies END
  
