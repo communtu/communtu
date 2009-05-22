@@ -15,10 +15,11 @@
     <td><%=h category.name %></td>
     <td><%=h category.description %></td>
     <td><%=h category.parent_name %></td>
-    <td><%= link_to 'Anzeigen', category %></td>
-    <td><%= link_to 'Bearbeiten', edit_category_path(category) %></td>
-    <td><%= link_to 'Löschen', category, :confirm => 'Bist du sicher?', :method => :delete %></td>
+    <td><%= link_to image_tag("24-message-info.png", :title => 'Anzeigen', :alt => 'Anzeigen', :border => '0'), category %></td>
+    <td><%= link_to image_tag("edit.png", :title => 'Bearbeiten', :alt => 'Bearbeiten', :border => '0'), edit_category_path(category) %></td>
+    <td><%= link_to image_tag("delete.png", :title => 'Löschen', :alt => 'Löschen', :border => '0'), category, :confirm => 'Bist du sicher?', :method => :delete %></td>
   </tr>
+  <tr><td colspan="7"><hr></td> </tr>
 <% end %>
 </table>
 
