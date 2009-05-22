@@ -1,5 +1,7 @@
 <h2>Neue Nachricht</h2>
 
+<%= render_flash %>
+
 <%=form_tag(:controller => "sent", :action => "create")%>
   <p>An:<%= text_field :message,:to, {:onchange => remote_function(:url=>{:action=>:update_user_exists},:with=>'Form.Element.serialize(this)')} %><label id="user_exists"></label> </p>
   <p>Betreff: <%= text_field :message,:subject %></p>

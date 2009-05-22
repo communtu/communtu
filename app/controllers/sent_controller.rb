@@ -8,11 +8,17 @@ class SentController < ApplicationController
   end
 
   def new
-    @message = current_user.sent_messages.build
+    @message = current_user.sent_messages.build(params[:message])
   end
   
   def create
-    @message = current_user.sent_messages.build(params[:message])
+    if(!User.find_by_login(params[:message]['to']).nil?)
+      @message = current_user.sent_messages.build(params[:message])
+    else
+      flash[:error] = "Benutzer existiert nicht"
+      redirect_to new_sent_path({:message=>params[:message]})
+      return
+    end
     
     if @message.save
       respond_to do |format|
