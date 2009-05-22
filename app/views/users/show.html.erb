@@ -13,5 +13,11 @@
       <% end %>
 </div>
   <% if @user.id == current_user.id %>
-    <%= link_to 'Bearbeiten', edit_user_path(@user.id) %>
+    <%= link_to 'Bearbeiten', edit_user_path(@user.id) %> <br /><br />
+	
+	<!-- Messanger -->
+	<span class="headline">Nachrichten</span>
+	<div class="inner1">
+		<%= render :partial => 'mailbox_list' %>
+	</div>
   <% end %>

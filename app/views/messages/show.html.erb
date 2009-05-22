@@ -1,0 +1,9 @@
+<h2><%=h @message.subject %></h2>
+
+<p><strong>Von:</strong> <%=h @message.author.login %></p>
+<p><strong>An:</strong> <%=h @message.recipients.map(&:login).to_sentence %></p>
+<p><strong>erhalten am:</strong> <%= change_date_time(@message.created_at)%></p>
+
+<pre><%=h @message.body %></pre>
+
+<%= link_to "zurück", user_path(current_user.id)%>

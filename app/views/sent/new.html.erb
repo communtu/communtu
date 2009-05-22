@@ -1,0 +1,11 @@
+<h2>Neue Nachricht</h2>
+
+<%=form_remote_tag(:update=>:user_exists, :url => {:controller => "sent", :action => "create"} )%>
+  <p>An:<%= text_field :message,:to, {:onchange => remote_function(:update=>'user_exists', :url=>{:action=>:update_user_exists},:with=>'Form.Element.serialize(this)')} %><label id="user_exists">hallo</label> </p>
+  <p>Betreff: <%= text_field :message,:subject %></p>
+  <p>Nachricht:<br /> <%= text_area :message,:body %></p>
+  <p><%= submit_tag "Abschicken" %></p>
+</form>
+
+<%= link_to "zurück", user_path(current_user.id)%>
+

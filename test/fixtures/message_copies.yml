@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  recipient_id: 1
+  message_id: 1
+  folder_id: 1
+  is_read: false
+
+two:
+  recipient_id: 1
+  message_id: 1
+  folder_id: 1
+  is_read: false

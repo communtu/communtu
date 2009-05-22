@@ -2,7 +2,7 @@ require 'digest/sha1'
 class User < ActiveRecord::Base
   # Virtual attribute for the unencrypted password
   attr_accessor :password  
- 
+  
   validates_presence_of     :login, :email
   validates_presence_of     :password,                   :if => :password_required?
   validates_presence_of     :password_confirmation,      :if => :password_required?
@@ -12,6 +12,12 @@ class User < ActiveRecord::Base
   validates_length_of       :email,    :within => 6..100
   validates_uniqueness_of   :login, :email, :case_sensitive => false
   validates_format_of       :email, :with => /(^([^@\s]+)@((?:[-_a-z0-9]+\.)+[a-z]{2,})$)|(^$)/i
+ 
+ #Messager dependencies
+  has_many :sent_messages, :class_name => "Message", :foreign_key => "author_id"
+  has_many :received_messages, :class_name => "MessageCopy", :foreign_key => "recipient_id"
+  has_many :folders
+ #Messager dependencies END
  
   has_many :permissions
   has_many :roles, :through => :permissions
@@ -31,7 +37,7 @@ class User < ActiveRecord::Base
 #      :conditions => 'user_packages.base_package.class == Metapackage && not user_packages.is_selected'    
 
   before_save :encrypt_password
-  before_create :make_activation_code
+  before_create :make_activation_code, :build_inbox
   
   def self.template_users
     template_role = Role.find(:first, :conditions => ["rolename = ?",'template'])
@@ -241,6 +247,15 @@ class User < ActiveRecord::Base
     end
   end
   
+  #Messanger methods
+  def inbox
+    folders.find_by_name("Inbox")
+  end
+
+  def build_inbox
+    folders.build(:name => "Inbox")
+  end
+  #Messanger methods END
 
   protected
   

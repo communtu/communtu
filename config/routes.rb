@@ -1,6 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
 
-  
   map.connect '/debs/generate', :controller => 'debs', :action => 'generate'
   map.connect '/debs/generate_all', :controller => 'debs', :action => 'generate_all'
   map.resources :debs
@@ -82,6 +81,7 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/admin/repositories', :controller => 'repositories', :action => 'new'
   map.connect '/distributions', :controller => 'distributions', :action => 'index'
 
+  map.resources :sent, :messages, :mailbox
 
   map.activate '/activate/:id', :controller => 'accounts', :action => 'show'
   map.forgot_password '/forgot_password', :controller => 'passwords', :action => 'new'
@@ -91,7 +91,8 @@ ActionController::Routing::Routes.draw do |map|
   map.login '/login', :controller => 'sessions', :action => 'new'
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.categories '/categories', :controller => 'categories', :action => 'new' 
-  map.admin '/admin', :controller => 'admin' 
+  map.admin '/admin', :controller => 'admin'
+  map.inbox '/inbox', :controller => "mailbox", :action => "show"
   
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'

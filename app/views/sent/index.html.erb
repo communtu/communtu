@@ -1,0 +1,20 @@
+<h2>verschickte Nachrichten</h2>
+	<%= render_flash %>
+	
+	<table>
+      <tr>
+        <th>An</th>
+        <th>Betreff</th>
+        <th>Zeitpunkt</th>
+      </tr>
+
+      <% for message in @messages %>
+        <tr>
+          <td><%=h message.recipients.map(&:login).to_sentence %></td>
+          <td><%= link_to h(message.subject), sent_path(message) %></td>
+          <td><%= change_date_time(message.created_at) %></td>
+        </tr>
+      <% end %>
+    </table>
+	
+<%= link_to "zurück", user_path(current_user.id)%>
