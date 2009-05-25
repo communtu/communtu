@@ -17,7 +17,7 @@ class UsersController < ApplicationController
   helper :tabz
     
   def index
-    @users = User.find(:all)
+    @users = User.find(:all, :conditions => {:anonymous => false, :enabled => true})
   end
   
   #This show action only allows users to view their own profile
