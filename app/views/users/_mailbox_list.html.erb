@@ -2,6 +2,6 @@
   
   <p><strong>Mailbox</strong></p>
   <ul>
-    <li><%= link_to sprintf("Posteingang(%d)", count_new_messages), '/inbox' %></li>
+    <li><%= link_to "Posteingang" + sprintf((count_new_messages > 0 ? "(%d)" : ""), count_new_messages), '/inbox' %></li>
     <li><%= link_to "Postausgang", :controller => "sent", :action => "index" %></li>
   </ul>
