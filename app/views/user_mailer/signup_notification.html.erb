@@ -1,12 +1,12 @@
-Dein Benutzerkonto wurde bei www.communtu.de angelegt.
+<%=_('Dein Benutzerkonto wurde bei www.communtu.de angelegt.
  
-  Benutzername: <%=h @user.login %>
+  Benutzername: ')%><%=h @user.login %><%=_('
  
 Klicke auf folgenden Link:
  
-  <%= @url %>
+  ')%><%= @url %><%=_('
 
 um zu unserem Projekt zu gelangen.
 
 Freundliche Gruesse
-Das communtu-Team
+Das communtu-Team')%>

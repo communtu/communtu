@@ -1,13 +1,13 @@
-<h2>Neue Nachricht</h2>
+<h2><%=_('Neue Nachricht')%></h2>
 
 <%= render_flash %>
 
 <%=form_tag("/sent/create")%>
-  <div>An:<%= text_field :message,:to, {:onchange => remote_function(:url=>{:action=>:update_user_exists},:with=>'Form.Element.serialize(this)')} %><label id="user_exists"></label></div>
-  <p>Betreff: <%= text_field :message,:subject %></p>
-  <p>Nachricht:<br /> <%= text_area :message,:body %></p>
-  <p><%= submit_tag "Abschicken" %></p>
+  <div><%=_('An:')%><%= text_field :message,:to, {:onchange => remote_function(:url=>{:action=>:update_user_exists},:with=>'Form.Element.serialize(this)')} %><label id="user_exists"></label></div>
+  <p><%=_('Betreff: ')%><%= text_field :message,:subject %></p>
+  <p><%=_('Nachricht:')%><br /> <%= text_area :message,:body %></p>
+  <p><%= submit_tag _("Abschicken") %></p>
 </form>
 
-<%= link_to "zurück", :back %>
+<%= link_to _("zurück"), :back %>
 

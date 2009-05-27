@@ -1,6 +1,6 @@
 class PasswordsController < ApplicationController
   def title
-    "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
+    _("Ubuntu-Linux an die individuellen Bedürfnisse anpassen")
   end
   layout 'application'
   before_filter :not_logged_in_required, :only => [:new, :create]
@@ -15,10 +15,10 @@ class PasswordsController < ApplicationController
   if @user = User.find_for_forget(params[:email])
       @user.forgot_password
       @user.save      
-      flash[:notice] = "Ein Link zum Ändern des Passworts wurde an deine Email-Adresse geschickt."
+      flash[:notice] = _("Ein Link zum Ändern des Passworts wurde an deine Email-Adresse geschickt.")
     redirect_to login_path
     else
-      flash[:notice] = "Konnte keinen Benutzer mit dieser Email-Adresse finden."
+      flash[:notice] = _("Konnte keinen Benutzer mit dieser Email-Adresse finden.")
       render :action => 'new'
     end  
   end
@@ -35,8 +35,8 @@ class PasswordsController < ApplicationController
     @user = User.find_by_password_reset_code(params[:id]) if params[:id]
     raise if @user.nil?
   rescue
-    logger.error "Ungültiger Änderungscode eingegeben."
-    flash[:notice] = "Ungültiger Änderungscode. Bitte den Code prüfen und nochmals versuchen. (Vielleicht hat dein Email-Programm einen Zeilenumbruch eingefügt?)"
+    logger.error _("Ungültiger Änderungscode eingegeben.")
+    flash[:notice] = _("Ungültiger Änderungscode. Bitte den Code prüfen und nochmals versuchen. (Vielleicht hat dein Email-Programm einen Zeilenumbruch eingefügt?)")
     #redirect_back_or_default('/')
     redirect_to new_user_path
   end
@@ -49,7 +49,7 @@ class PasswordsController < ApplicationController
       return
     end
     if params[:password].blank?
-      flash[:notice] = "Passwort darf nicht leer sein."
+      flash[:notice] = _("Passwort darf nicht leer sein.")
       render :action => 'edit', :id => params[:id]
       return
     end
@@ -66,16 +66,16 @@ class PasswordsController < ApplicationController
     @user.password_confirmation = params[:password_confirmation]
     @user.password = params[:password]
     @user.reset_password        
-    flash[:notice] = @user.save ? "Passwort geändert." : "Passwort nicht geändert."
+    flash[:notice] = @user.save ? _("Passwort geändert.") : _("Passwort nicht geändert.")
       else
-        flash[:notice] = "Passwörter stimmen nicht überein."
+        flash[:notice] = _("Passwörter stimmen nicht überein.")
         render :action => 'edit', :id => params[:id]
       return
       end  
       redirect_to login_path
   rescue
-    logger.error "Ungültiger Änderungscode eingegeben."
-    flash[:notice] = "Ungültiger Änderungscode. Bitte den Code prüfen und nochmals versuchen. (Vielleicht hat dein Email-Programm einen Zeilenumbruch eingefügt?)"
+    logger.error _("Ungültiger Änderungscode eingegeben.")
+    flash[:notice] = _("Ungültiger Änderungscode. Bitte den Code prüfen und nochmals versuchen. (Vielleicht hat dein Email-Programm einen Zeilenumbruch eingefügt?)")
     redirect_to new_user_path
   end
     

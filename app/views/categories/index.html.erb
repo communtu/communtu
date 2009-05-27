@@ -1,12 +1,12 @@
 <% if logged_in? %>
-<h1>Kategorien-Übersicht</h1>
+<h1><%=_("Kategorien-Übersicht")%></h1>
 
 <table>
   <tr>
   	<th>Id</th>
-    <th>Name</th>
-    <th>Beschreibung</th>
-    <th>übergeordnete Kategorie</th>
+    <th><%=_("Name")%></th>
+    <th><%=_("Beschreibung")%></th>
+    <th><%=_("übergeordnete Kategorie")%></th>
   </tr>
 
 <% for category in @categories %>
@@ -15,9 +15,9 @@
     <td><%=h category.name %></td>
     <td><%=h category.description %></td>
     <td><%=h category.parent_name %></td>
-    <td><%= link_to image_tag("24-message-info.png", :title => 'Anzeigen', :alt => 'Anzeigen', :border => '0'), category %></td>
-    <td><%= link_to image_tag("edit.png", :title => 'Bearbeiten', :alt => 'Bearbeiten', :border => '0'), edit_category_path(category) %></td>
-    <td><%= link_to image_tag("delete.png", :title => 'Löschen', :alt => 'Löschen', :border => '0'), category, :confirm => 'Bist du sicher?', :method => :delete %></td>
+    <td><%= link_to image_tag("24-message-info.png", :title => _('Anzeigen'), :alt => _('Anzeigen'), :border => '0'), category %></td>
+    <td><%= link_to image_tag("edit.png", :title => _('Bearbeiten'), :alt => _('Bearbeiten'), :border => '0'), edit_category_path(category) %></td>
+    <td><%= link_to image_tag("delete.png", :title => _('Löschen'), :alt => _('Löschen'), :border => '0'), category, :confirm => _('Bist du sicher?'), :method => :delete %></td>
   </tr>
   <tr><td colspan="7"><hr></td> </tr>
 <% end %>
@@ -25,9 +25,9 @@
 
 <br />
 
-<%= link_to 'Neue Kategorie', new_category_path %>
+<%= link_to _('Neue Kategorie'), new_category_path %>
 &nbsp;&nbsp;&nbsp;
-<%= link_to 'Kategorienbaum anzeigen', '/images/categories.png', :target => '_blank' %>
+<%= link_to _('Kategorienbaum anzeigen'), '/images/categories.png', :target => '_blank' %>
 <% else %>
-<p>Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.</p>
+<p><%=_("Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.")%></p>
 <% end %>

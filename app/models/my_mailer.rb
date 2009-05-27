@@ -5,7 +5,7 @@ class MyMailer < ActionMailer::Base
     @recipients = 'at@bremer-commune.de'
     @from = current_user.email
     @sent_on = Time.now
-    @subject = 'Feedback an das Communtu-Team'
+    @subject = _('Feedback an das Communtu-Team')
     @body = {:title => @form_name, :comment => @form_frage}
     @headers = {}
   end
@@ -14,7 +14,7 @@ class MyMailer < ActionMailer::Base
     @recipients = 'at@bremer-commune.de'
     @from = @form_email
     @sent_on = Time.now
-    @subject = 'Fehlermeldung an das Communtu-Team'
+    @subject = _('Fehlermeldung an das Communtu-Team')
    # @body = {:title => @form_name, :comment => @form_frage}
     @headers = {}
   end

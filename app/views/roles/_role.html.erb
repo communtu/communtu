@@ -1,8 +1,8 @@
 <li>
   <%= role.rolename %>
     <% if @user.has_role?(role.rolename) %>
-      <%= link_to 'Rolle löschen', user_role_url(:id => role.id, :user_id => @user.id), :method => :delete %>
+      <%= link_to _('Rolle löschen'), user_role_url(:id => role.id, :user_id => @user.id), :method => :delete %>
     <% else %>
-      <%= link_to 'Rolle zuweisen', user_role_url(:id => role.id, :user_id => @user.id), :method => :put %>
+      <%= link_to _('Rolle zuweisen'), user_role_url(:id => role.id, :user_id => @user.id), :method => :put %>
     <% end %>
 </li>

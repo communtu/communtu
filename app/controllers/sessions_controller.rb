@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
   def title
-    "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
+    _("Ubuntu-Linux an die individuellen Bedürfnisse anpassen")
   end
   layout 'application'
   before_filter :login_required, :only => :destroy
@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
   # render new.rhtml
   def new
     if logged_in?
-      flash[:error] = "Du bist bereits angemeldet."
+      flash[:error] = _("Du bist bereits angemeldet.")
       redirect_to "/home"
     end
   end
@@ -20,7 +20,7 @@ class SessionsController < ApplicationController
   
   def create
     if logged_in?
-      flash[:error] = "Du bist bereits angemeldet."
+      flash[:error] = _("Du bist bereits angemeldet.")
       redirect_to "/home"
       return
     end
@@ -32,7 +32,7 @@ class SessionsController < ApplicationController
         current_user.save
       end  
       flash[:error] = 
-        "Deine hier registrierte Distribution wurde auf #{current_user.distribution.short_name} geändert, weil deine alte Distribution von Ubuntu (und daher auch von Communtu) nicht mehr unterstützt wird. Wir empfehlen für deinen Computer ein <a href=\"http://wiki.ubuntuusers.de/Upgrade\">Upgrade</a> auf #{current_user.distribution.name}."
+        _("Deine hier registrierte Distribution wurde auf #{current_user.distribution.short_name} geändert, weil deine alte Distribution von Ubuntu (und daher auch von Communtu) nicht mehr unterstützt wird. Wir empfehlen für deinen Computer ein <a href=\"http://wiki.ubuntuusers.de/Upgrade\">Upgrade</a> auf #{current_user.distribution.name}.")
     end
   end
  
@@ -48,7 +48,7 @@ class SessionsController < ApplicationController
     self.current_user.save!
     
     reset_session
-       flash[:notice] = "Du wurdest abgemeldet."
+       flash[:notice] = _("Du wurdest abgemeldet.")
   redirect_to "/home"
   end
   
@@ -58,11 +58,11 @@ class SessionsController < ApplicationController
   def password_authentication(login, password)
     user = User.authenticate(login, password)
     if user == nil
-      failed_login('Dein Benutzername oder Passwort ist falsch. Bitte ggf. unten auf "Registrieren" klicken.')
+      failed_login(_('Dein Benutzername oder Passwort ist falsch. Bitte ggf. unten auf "Registrieren" klicken.'))
     elsif user.activated_at.blank?  
-      failed_login("Dein Benutzerkonto wurde noch nicht aktiviert. Der Aktivierungscode wurde dir per Email zugeschickt.")
+      failed_login(_("Dein Benutzerkonto wurde noch nicht aktiviert. Der Aktivierungscode wurde dir per Email zugeschickt."))
     elsif user.enabled == false
-      failed_login("Dein Benutzerkonto wurde deaktiviert oder gelöscht.")
+      failed_login(_("Dein Benutzerkonto wurde deaktiviert oder gelöscht."))
     else
       self.current_user = user
       if editing_metapackage?

@@ -1,30 +1,30 @@
 <% if is_admin? %>
-<h1>Neue Kategorie</h1>
+<h1><%=_("Neue Kategorie")%></h1>
 
 <%= error_messages_for :category %>
 
 <% form_for(@category) do |f| %>
   <p>
-    <b>Name</b><br />
+    <b><%=_("Name")%></b><br />
     <%= f.text_field :name %>
   </p>
 
   <p>
-    <b>Beschreibung</b><br />
+    <b><%=_("Beschreibung")%></b><br />
     <%= f.text_field :description %>
   </p>
 
   <p>
-    <b>Übergeordnete Kategorie</b><br />
-    	<%= f.collection_select('parent_id', Category.find(:all, :order => "name"), :id, :name, {:include_blank => 'Wähle einen Parent aus!'})%>
+    <b><%=_("Übergeordnete Kategorie")%></b><br />
+    	<%= f.collection_select('parent_id', Category.find(:all, :order => "name"), :id, :name, {:include_blank => _('Wähle einen Parent aus!')})%>
   </p>
 
   <p>
-    <%= f.submit "Anlegen" %>
+    <%= f.submit _("Anlegen") %>
   </p>
 <% end %>
 
-<%= link_to 'Zurück', categories_path %>
+<%= link_to _('Zurück'), categories_path %>
 <% else %>
-<p>Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.</p>
+<p><%=_("Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.")%></p>
 <% end %>

@@ -1,17 +1,17 @@
 <%= render_flash %>
-<span class="headline">Passwort ändern</span>
+<span class="headline"><%=_("Passwort ändern")%></span>
 <div class="inner1">
 <% form_tag url_for(:action => "update") do %>
-  <p><label for="old_password" class="block">Altes Passwort</label><br />
+  <p><label for="old_password" class="block"><%=_("Altes Passwort")%></label><br />
   <%= password_field_tag 'old_password', @old_password, :size => 45 %></p>
  
-  <p><label for="password" class="block">Neues Passwort</label><br />
+  <p><label for="password" class="block"><%=_("Neues Passwort")%></label><br />
   <%= password_field_tag 'password', {}, :size => 45 %><br />
-  <small>Zwischen 4 und 40 Zeichen</small></p>
+  <small><%=_("Zwischen 4 und 40 Zeichen")%></small></p>
  
-  <p><label for="password_confirmation"  class="block">Neues Passwort bestätigen</label><br />
+  <p><label for="password_confirmation"  class="block"><%=_("Neues Passwort bestätigen")%></label><br />
   <%= password_field_tag 'password_confirmation', {}, :size => 45 %></p>
  
-  <%= submit_tag 'Passwort ändern' %>
+  <%= submit_tag (_('Passwort ändern')) %>
  </div>
 <% end %>

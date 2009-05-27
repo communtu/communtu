@@ -82,7 +82,7 @@ module AuthenticatedSystem
       respond_to do |format|
         format.html do
           store_location
-          flash[:error] = "You must be logged in to access this feature."
+          flash[:error] = _("Du musst eingeloggt sein, um dieses Feature zu benutzen.")
           redirect_to :controller => '/session', :action => 'new'
         end
         format.xml do
@@ -95,8 +95,8 @@ module AuthenticatedSystem
       respond_to do |format|
         format.html do
           store_location
-          flash[:error] = "Du hast keine Berechtigung für diese Aktion."
-          domain = "http://www.communtu.de" #modify for your application settings
+          flash[:error] = _("Du hast keine Berechtigung für diese Aktion.")
+          domain = _("http://www.communtu.de") #modify for your application settings
           http_referer = request.env["HTTP_REFERER"]
           request_path = request.env["REQUEST_PATH"]
           if request_path.nil? then request_path = "" end
@@ -117,7 +117,7 @@ module AuthenticatedSystem
         format.xml do
           headers["Status"]           = "Unauthorized"
           headers["WWW-Authenticate"] = %(Basic realm="Web Password")
-          render :text => "Du hast keine Berechtigung für diese Aktion.", :status => '401 Unauthorized'
+          render :text => _("Du hast keine Berechtigung für diese Aktion."), :status => '401 Unauthorized'
         end
       end
     end

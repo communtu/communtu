@@ -67,4 +67,15 @@ Rails::Initializer.run do |config|
 config.action_mailer.delivery_method = :smtp
 require 'german_date_names'
 
+# hack for intermediate stage of internationalisation
+def _(x)
+  "<i>"+x+"</i>"
+end
+#require 'i18n'
+
+# The internationalization framework can be changed
+# to have another default locale (standard is :en) or more load paths.
+# All files from config/locales/*.rb,yml are added automatically.
+#config.i18n.load_path << "#{RAILS_ROOT}/config/locales/template.yml"
+#config.i18n.default_locale = :de
 end

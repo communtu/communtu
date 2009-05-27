@@ -5,7 +5,7 @@ class UserMetaTabz < Tabz::Base
     resides_in "/users/:user_id/metapackages"
     
     add_tab do
-        titled "Meine Bündel"
+        titled _("Meine Bündel")
         looks_like "metapackages/metalist"
         with_data do 
             set_to({ :packages => Metapackage.find(:all, :conditions => ["user_id=?", @user_data[:user].id])})
@@ -13,7 +13,7 @@ class UserMetaTabz < Tabz::Base
     end
     
     add_tab do
-        titled "Alle veröffentlichten Bündel"
+        titled _("Alle veröffentlichten Bündel")
         looks_like "metapackages/metalist"
         with_data do 
           if @user_data[:user].has_role?('administrator') then
@@ -26,7 +26,7 @@ class UserMetaTabz < Tabz::Base
     end
     
     add_tab do
-        titled "Ubuntu-Pakete"
+        titled _("Ubuntu-Pakete")
         looks_like "packages/packagelist"
         with_data do
             set_to({ :packages => Package.find_packages(@user_data[:session][:search], 

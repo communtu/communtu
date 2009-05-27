@@ -1,6 +1,6 @@
 class DebsController < ApplicationController
   def title
-    "Debian-Pakete"
+    _("Debian-Pakete")
   end
   # GET /debs
   # GET /debs.xml
@@ -47,7 +47,7 @@ class DebsController < ApplicationController
 
     respond_to do |format|
       if @deb.save
-        flash[:notice] = 'Deb was successfully created.'
+        flash[:notice] = _('Deb erzeugt.')
         format.html { redirect_to(@deb) }
         format.xml  { render :xml => @deb, :status => :created, :location => @deb }
       else
@@ -64,7 +64,7 @@ class DebsController < ApplicationController
 
     respond_to do |format|
       if @deb.update_attributes(params[:deb])
-        flash[:notice] = 'Deb was successfully updated.'
+        flash[:notice] = _('Deb aktualisiert.')
         format.html { redirect_to(@deb) }
         format.xml  { head :ok }
       else

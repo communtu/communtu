@@ -1,14 +1,14 @@
-<h3>Installation vorbereiten: Grunddaten eingeben</h3>
+<h3><%=_('Installation vorbereiten: Grunddaten eingeben')%></h3>
 
 <%= render_flash %>
 <%= error_messages_for :user_profile %>
 
-<p>Auf dieser Seite kannst du in vier einfachen Schritten deine Communtu-Nachinstallation auswählen - fertig. 
-Wenn gewünscht, ist aber auch eine detailliertere Auswahl möglich. <b>Achtung: zum Schluss unten auf einen der 'Speichern'-Knöpfe klicken!</b></p>
+<p><%=_('Auf dieser Seite kannst du in vier einfachen Schritten deine Communtu-Nachinstallation auswählen - fertig. 
+Wenn gewünscht, ist aber auch eine detailliertere Auswahl möglich. ')%><b><%=_('Achtung: zum Schluss unten auf einen der 'Speichern'-Knöpfe klicken!')%></b></p>
 
 <% form_tag user_user_profile_path(current_user) + "/update_data", options = {:name => "data", :method => :put} do %>
     <ol>	
-    <li><p>Welche Aufgaben willst du mit deinem Computer erledigen? (um grob eine Auswahl zu treffen, Feineinstellungen später möglich)<br>
+    <li><p><%=_('Welche Aufgaben willst du mit deinem Computer erledigen? (um grob eine Auswahl zu treffen, Feineinstellungen später möglich)')%><br>
 		<table><tr>
 		<% count = 0%>
         <% root.children.each do |child|%>
@@ -17,7 +17,7 @@ Wenn gewünscht, ist aber auch eine detailliertere Auswahl möglich. <b>Achtung:
           <%= child.name %>
           <% if child.link != nil %>
           <% if child.link != "" %>
-          <%= link_to(image_tag("16-em-open.png", :title => 'Weitere Informationen', :alt => 'Weitere Informationen', :border => '0'), child.link, :target => '_blank') %>
+          <%= link_to(image_tag("16-em-open.png", :title => _('Weitere Informationen'), :alt => _('Weitere Informationen'), :border => '0'), child.link, :target => '_blank') %>
           <% end %>
           <% end %>
 		  </th>
@@ -28,9 +28,9 @@ Wenn gewünscht, ist aber auch eine detailliertere Auswahl möglich. <b>Achtung:
 		<% end %>
 		</tr>
 		</table></li>
-     <li><p>Wähle bitte deine Ubuntu-Version aus. <%= link_to('Wie stelle ich die Version fest?','/user_profiles/help')%><br />
-		<% if !dist_string.nil? %>
-	     	Über den Browser festgestellte Version: <%= dist_string %>
+     <li><p><%=_('Wähle bitte deine Ubuntu-Version aus. ')%><%= link_to(_('Wie stelle ich die Version fest?'),'/user_profiles/help')%><br />
+		<% if !dist_string.nil? %><%=_('
+	     	Über den Browser festgestellte Version: ')%><%= dist_string %>
 		<% end %>
 </p>
         <% distrib_options = "" %>
@@ -62,11 +62,11 @@ Wenn gewünscht, ist aber auch eine detailliertere Auswahl möglich. <b>Achtung:
 		  <% options[2] = true %>
 		<% end %>
 		
-     <li><p>Hier kannst du einstellen, wie sicher bzw. komfortabel deine Installationsquellen sein sollen</p>
+     <li><p><%=_('Hier kannst du einstellen, wie sicher bzw. komfortabel deine Installationsquellen sein sollen')%></p>
         
-        <%= radio_button_tag "sec", "0", options[0] %> Nur Ubuntuquellen zulassen ("main/restricted", sehr sicher)<br>
-        <%= radio_button_tag "sec", "1", options[1] %> Communityquellen zulassen ("universe/multiverse", auch sicher, mehr Programme/Komfort) <br>
-        <%= radio_button_tag "sec", "2", options[2] %> Alle Quellen zulassen (etwas unsicherer: Fremdpakete können das System gefährden, aber noch mehr Programme/Komfort: <%= package_link "Acroread"%>, <%= package_link "Skype"%>, <%= package_link "Virtualbox"%>, DVDs ... )<br>
+        <%= radio_button_tag "sec", "0", options[0] %><%=_(' Nur Ubuntuquellen zulassen ("main/restricted", sehr sicher)')%><br>
+        <%= radio_button_tag "sec", "1", options[1] %><%=_(' Communityquellen zulassen ("universe/multiverse", auch sicher, mehr Programme/Komfort) ')%><br>
+        <%= radio_button_tag "sec", "2", options[2] %><%=_(' Alle Quellen zulassen (etwas unsicherer: Fremdpakete können das System gefährden, aber noch mehr Programme/Komfort: ')%><%= package_link "Acroread"%>, <%= package_link "Skype"%>, <%= package_link "Virtualbox"%>, DVDs ... )<br>
          </li>
     <li><div style="margin-bottom:30px">
     	<% options = Array.new(Package.license_types.length, false) %>
@@ -77,13 +77,13 @@ Wenn gewünscht, ist aber auch eine detailliertere Auswahl möglich. <b>Achtung:
         <% else %>
             <% options[1] = true %>
         <% end %>
-        <p>Hier kannst du auswählen, welche Lizenzen du zulassen willst</p>
-        <%= radio_button_tag "lic", "0", options[0] %> Freie Software (Quellen liegen offen und dürfen weiterentwickelt werden)<br>
-        <%= radio_button_tag "lic", "1", options[1] %> Unfreie Lizenzen zulassen (auch kostenlos, aber Quellen liegen nicht offen - sozusagen das Methadon für einen weichen Übergang zu Linux)<br>
+        <p><%=_('Hier kannst du auswählen, welche Lizenzen du zulassen willst')%></p>
+        <%= radio_button_tag "lic", "0", options[0] %><%=_(' Freie Software (Quellen liegen offen und dürfen weiterentwickelt werden)')%><br>
+        <%= radio_button_tag "lic", "1", options[1] %><%=_(' Unfreie Lizenzen zulassen (auch kostenlos, aber Quellen liegen nicht offen - sozusagen das Methadon für einen weichen Übergang zu Linux)')%><br>
         </div></li>
 	</ol>
     <div style="margin-top:20px;">
-        <%= submit_tag "Speichern", :name => "install" %>
-        <%= submit_tag "Speichern und feiner auswählen", :name => "choose" %>
+        <%= submit_tag _("Speichern"), :name => "install" %>
+        <%= submit_tag _("Speichern und feiner auswählen"), :name => "choose" %>
     </div>
 <% end %>

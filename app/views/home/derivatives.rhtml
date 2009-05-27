@@ -1,80 +1,80 @@
-<h3>Ubuntu-Derivate</h3>
+<h3><%=_('Ubuntu-Derivate')%></h3><%=_('
 
 Communtu setzt auf einer Ubuntu-Basisinstallation auf.
-Es gibt nun eine ganze Reihe von <%= link_to 'Ubuntu-Derivaten', 'http://wiki.ubuntuusers.de/Was_ist_Linux?#Was-sind-Derivate-einer-Distribution', :target => '_blank'  %>, und viele Ubuntu-Nutzer fragen sich, 
+Es gibt nun eine ganze Reihe von ')%><%= link_to _('Ubuntu-Derivaten'), _('http://wiki.ubuntuusers.de/Was_ist_Linux?#Was-sind-Derivate-einer-Distribution'), :target => '_blank'  %><%=_(', und viele Ubuntu-Nutzer fragen sich, 
 ob sie statt Ubuntu lieber ein Derivat benutzen sollten.
 Die Antwort ist: meistens fährt man mit dem Standard-Ubuntu ganz gut, denn
 Communtu erlaubt, die Derivate auf einfache Weise nachzuinstallieren. 
 Allerdings ist das nicht bei allen Derivaten gleich sinnvoll.
 
-<b>Alle Derivate können unter der <%= link_to 'Installations-Feinauswahl', user_path(current_user) + "/user_profile/refine" %> 
-unter der Kategorie "Derivate" zur Installation ausgewählt werden.</b> 
+')%><b><%=_('Alle Derivate können unter der ')%><%= link_to _('Installations-Feinauswahl'), user_path(current_user) + "/user_profile/refine" %><%=_(' 
+unter der Kategorie "Derivate" zur Installation ausgewählt werden.')%></b><%=_(' 
 Ebenso kannst du dort nachgucken, aus welchen Paketen ein Derivat besteht.
 
-<h4>Über Communtu sinnvoll nachinstallierbare Derivate:</h4>
+')%><h4><%=_('Über Communtu sinnvoll nachinstallierbare Derivate:')%></h4>
 <ul>
 <li>
-<%= link_to 'Ubuntu Studio', 'http://wiki.ubuntuusers.de/Ubuntu_Studio', :target => '_blank' %> - Ubuntu Multimedie-Edition.
+<%= link_to 'Ubuntu Studio', _('http://wiki.ubuntuusers.de/Ubuntu_Studio'), :target => '_blank' %><%=_(' - Ubuntu Multimedie-Edition.
 Sie wird bei Communtu mitinstalliert, wenn du bei Audio, Film und/oder Grafik/Design "erweitert" anwählst.
-</li>
+')%></li>
 <li>
-<%= link_to 'Medibuntu', 'http://medibuntu.org', :target => '_blank' %> stellt Multimedia-Paketquellen bereit, die aus rechtlichen Gründen nicht von Ubuntu selbst angeboten wird. Medibuntu wird bei Communtu mit berücksichtigt (z.B. bei Audio und Film).
-</li>
+<%= link_to 'Medibuntu', 'http://medibuntu.org', :target => '_blank' %><%=_(' stellt Multimedia-Paketquellen bereit, die aus rechtlichen Gründen nicht von Ubuntu selbst angeboten wird. Medibuntu wird bei Communtu mit berücksichtigt (z.B. bei Audio und Film).
+')%></li>
 <li>
-<%= link_to 'Mythbuntu', 'http://www.mythbuntu.org/', :target => '_blank' %> - der PC wird zum Videorekorder. Bei Film "Freak" auswählen, und es wird mitinstalliert. Empfohlen: CPU mit 2 GHz, 1024 MByte RAM, 10 GByte Festplattenplatz für das Frontend, 80+ GByte für das Backend, eine Grafikkarte mit 128 MByte RAM mit TV-Ausgang und eine unterstützte TV-Karte.
-</li>
+<%= link_to 'Mythbuntu', 'http://www.mythbuntu.org/', :target => '_blank' %><%=_(' - der PC wird zum Videorekorder. Bei Film "Freak" auswählen, und es wird mitinstalliert. Empfohlen: CPU mit 2 GHz, 1024 MByte RAM, 10 GByte Festplattenplatz für das Frontend, 80+ GByte für das Backend, eine Grafikkarte mit 128 MByte RAM mit TV-Ausgang und eine unterstützte TV-Karte.
+')%></li>
 <li>
-<%= link_to 'Edubuntu', 'http://www.edubuntu.org/', :target => '_blank' %> - Lernsoftware. Bei "Bildung und Wissenschaft" den Level "erweitert" auswählen, und es wird mitinstalliert.
-</li>
+<%= link_to 'Edubuntu', 'http://www.edubuntu.org/', :target => '_blank' %><%=_(' - Lernsoftware. Bei "Bildung und Wissenschaft" den Level "erweitert" auswählen, und es wird mitinstalliert.
+')%></li>
 <li>
-<%= link_to 'Kubuntu', 'http://wiki.ubuntuusers.de/KDE', :target => '_blank' %> ist Ubuntu mit dem KDE-Desktop.	
-<li>
-<%= link_to 'Linux Mint', 'http://de.wikipedia.org/wiki/Linux_Mint', :target => '_blank' %> ist eine Ubuntu-Abspaltung mit eigener User-Community, die sich vor allem Benutzerfreundlichkeit auf die Fahnen schreibt.
-Linux Mint ähnelt Ubuntu sehr, hat aber viele Codes, z.B. für DVDs und MP3s, schon vorinstalliert. Diese Codecs gibt es allerdings auch bei Communtu, unter Unterhaltungsmedien. <b>Achtung! bei Communtu erst in Kürze verfügbar.</b></li>
-<li>
-	Automatix war eine Installationshilfe, die sich großer Beliebtheit erfreute (sie wurde sogar von der New York Times empfohlen), die aber nicht ganz den Ubuntu-Programmierstandards entsprach und inzwischen nicht mehr weiterentwickelt wird. </li>
+<%= link_to 'Kubuntu', _('http://wiki.ubuntuusers.de/KDE'), :target => '_blank' %><%=_(' ist Ubuntu mit dem KDE-Desktop.	
+')%><li>
+<%= link_to 'Linux Mint', _('http://de.wikipedia.org/wiki/Linux_Mint'), :target => '_blank' %><%=_(' ist eine Ubuntu-Abspaltung mit eigener User-Community, die sich vor allem Benutzerfreundlichkeit auf die Fahnen schreibt.
+Linux Mint ähnelt Ubuntu sehr, hat aber viele Codes, z.B. für DVDs und MP3s, schon vorinstalliert. Diese Codecs gibt es allerdings auch bei Communtu, unter Unterhaltungsmedien. ')%><b><%=_('Achtung! bei Communtu erst in Kürze verfügbar.')%></b></li>
+<li><%=_('
+	Automatix war eine Installationshilfe, die sich großer Beliebtheit erfreute (sie wurde sogar von der New York Times empfohlen), die aber nicht ganz den Ubuntu-Programmierstandards entsprach und inzwischen nicht mehr weiterentwickelt wird. ')%></li>
 </ul>
 
-<h4>Über Communtu nachinstallierbare Derivate, sinnvollerweise auf einer Xfce-basierten Installation (z.B. Xubuntu) aufzusetzen:</h4>
+<h4><%=_('Über Communtu nachinstallierbare Derivate, sinnvollerweise auf einer Xfce-basierten Installation (z.B. Xubuntu) aufzusetzen:')%></h4>
 <ul>
-<li> <%= link_to 'ZevenOS', 'http://www.zevenos.com/', :target => '_blank' %> - orient an BeOS, setzt auf Schnelligkeit, Kompatibilität mit alten Rechnern und einfache Bedienung. CPU mit mindestens 200 MHZ
+<li> <%= link_to 'ZevenOS', 'http://www.zevenos.com/', :target => '_blank' %><%=_(' - orient an BeOS, setzt auf Schnelligkeit, Kompatibilität mit alten Rechnern und einfache Bedienung. CPU mit mindestens 200 MHZ
 128 MB RAM (zum Betrieb, zur Installation werden 192 MB RAM benötigt);
 2 GB freier Festplattenplatz (Empfohlen: 4 GB oder mehr);
-16 MB Grafikkarte (Empfohlen: Intel GMA 9xx). <b>Achtung! bei Communtu erst in Kürze verfügbar.</b></li>
+16 MB Grafikkarte (Empfohlen: Intel GMA 9xx). ')%><b><%=_('Achtung! bei Communtu erst in Kürze verfügbar.')%></b></li>
 </ul>
 
-<h4>Derivate, die mit der Derivats-eigenen Installations-CD installiert werden sollten:</h4>
+<h4><%=_('Derivate, die mit der Derivats-eigenen Installations-CD installiert werden sollten:')%></h4>
 <ul>
 <li>
-<%= link_to 'Xubuntu', 'http://wiki.ubuntuusers.de/Xfce', :target => '_blank' %> - mit dem schlanken Xfce als grafischer Oberfläche - besonders für ältere Rechner geeignet: 128 MByte Arbeitsspeicher und 1,5 GB auf der Festplatte reichen aus. Sollte von CD installiert werden, um wirklich eine schlanke Installation zu haben. Nachinstallationen mit Communtu möglich.
-</li>
+<%= link_to 'Xubuntu', _('http://wiki.ubuntuusers.de/Xfce'), :target => '_blank' %><%=_(' - mit dem schlanken Xfce als grafischer Oberfläche - besonders für ältere Rechner geeignet: 128 MByte Arbeitsspeicher und 1,5 GB auf der Festplatte reichen aus. Sollte von CD installiert werden, um wirklich eine schlanke Installation zu haben. Nachinstallationen mit Communtu möglich.
+')%></li>
 <li>
-<%= link_to 'Linux MCE', 'http://de.wikipedia.org/wiki/LinuxMCE', :target => '_blank' %> - damit wird Ubuntu zum <%=link_to 'Fernsehcomputer', 'http://de.wikipedia.org/wiki/Home_Theater_Personal_Computer' %>. Aufgrund der notwendigen Treiberinstallation sollte Linux MCE direkt installiert werden, Communtu kann dann aber für die Installation weiterer Software genutzt werden.
-</li>
+<%= link_to 'Linux MCE', _('http://de.wikipedia.org/wiki/LinuxMCE'), :target => '_blank' %><%=_(' - damit wird Ubuntu zum ')%><%=link_to _('Fernsehcomputer'), _('http://de.wikipedia.org/wiki/Home_Theater_Personal_Computer') %><%=_('. Aufgrund der notwendigen Treiberinstallation sollte Linux MCE direkt installiert werden, Communtu kann dann aber für die Installation weiterer Software genutzt werden.
+')%></li>
 <li>
-<%= link_to 'Gobuntu', 'http://www.ubuntu.com/products/whatisubuntu/gobuntu', :target => '_blank' %> ist ein Ubuntu-Derivat komplett aus freier Software. Nur für erfahrene Nutzer geeignet. Sollte mit der Gobuntu-CD installiert werden, damit es auch wirklich nur freie Software ist. Nachinstallationen mit Communtu möglich, sinnvollerweise sollten dann im Nutzerprofil "freie Software" angewählt werden.
+<%= link_to 'Gobuntu', 'http://www.ubuntu.com/products/whatisubuntu/gobuntu', :target => '_blank' %><%=_(' ist ein Ubuntu-Derivat komplett aus freier Software. Nur für erfahrene Nutzer geeignet. Sollte mit der Gobuntu-CD installiert werden, damit es auch wirklich nur freie Software ist. Nachinstallationen mit Communtu möglich, sinnvollerweise sollten dann im Nutzerprofil "freie Software" angewählt werden.
 Dies Derivate ist in der Version 8.04 erhältlich und wird nicht weiterentwickelt.
-</li>
-<li> <%= link_to 'Nexenta OS', 'http://de.wikipedia.org/wiki/GNU-Varianten#Nexenta_OS', :target => '_blank' %> - ersetzt den Linux-Kern durch OpenSolaris. Stellt nur eine minimale Basis an Anwendungen bereit. Die Installation weiterer Pakete bleibt dem Benutzer überlassen; hierfür kann Communtu genutzt werden.</li>
+')%></li>
+<li> <%= link_to 'Nexenta OS', _('http://de.wikipedia.org/wiki/GNU-Varianten#Nexenta_OS'), :target => '_blank' %><%=_(' - ersetzt den Linux-Kern durch OpenSolaris. Stellt nur eine minimale Basis an Anwendungen bereit. Die Installation weiterer Pakete bleibt dem Benutzer überlassen; hierfür kann Communtu genutzt werden.')%></li>
 </ul>
 
-<h4>Es gibt noch weitere Derivate zu denen wir bisher noch keine Installationsempfehlung abgeben k&ouml;nnen:</h4>
+<h4><%=_('Es gibt noch weitere Derivate zu denen wir bisher noch keine Installationsempfehlung abgeben k&ouml;nnen:')%></h4>
 <ul>
-<li> <%= link_to 'Impi Linux', 'http://www.impi.org.za/', :target => '_blank' %> - eine afrikanische Ubuntu-Variante, die allerdings offenbar nicht übers Internet erhältlich ist.</li>
-<li> <%= link_to 'linex', 'http://de.wikipedia.org/wiki/LinEx', :target => '_blank' %> - öffentliche Distribution der spanischen Region Extremadura.</li>
-<li> <%= link_to 'U-lite', 'http://u-lite.org/', :target => '_blank' %> für ältere PCs. Sie baut auf einer LXDE Oberfläche auf.</li>
-<li> <%= link_to 'Ubuntu mobile', 'http://www.ubuntu.com/products/mobile', :target => '_blank' %> - für mobile Internetgeräte.</li>
-<li> Ubuntu ultimate  - Ubuntu mit vielen Desktop-Desgins und Programmen.</li>
-<li> <%= link_to 'gOS', 'http://www.thinkgos.com/', :target => '_blank' %> - spezialisiert auf Webdienste.</li>
-<li> <%= link_to 'OpenGEU', 'http://opengeu.intilinux.com', :target => '_blank' %> - basiert auf E17. 2D-Effekte auch ohne schnelle Grafikkarte.</li>
-<li> <%= link_to 'Fluxbuntu', 'http://wiki.fluxbuntu.org', :target => '_blank' %> - minimalistische schnelle Ubuntu-Version für ältere PCs.</li>
-<li> <%= link_to 'Ubuntu Server', 'http://wiki.ubuntuusers.de/Server_Installation', :target => '_blank' %> - Server-Version von Ubuntu, ohne grafische Oberfläche.</li>
-<li> <%= link_to 'Ubuntu JeOS', 'http://wiki.ubuntuusers.de/JeOS', :target => '_blank' %> - minimale Server-Version, vor allem für Virtualisierung geeignet..</li>
-<li> <%= link_to 'Elbuntu', 'http://e17blog.tuxfamily.org/', :target => '_blank' %> - Ubuntu mit Enlightenment als Desktopumgebung.</li>
-<li> <%= link_to 'nUbuntu', 'http://www.nubuntu.org/', :target => '_blank' %> - mit Fluxbox und verschiedenen Netzwerk-Sicherheitswerkzeugen .</li>
-<li> <%= link_to 'getDeb', 'http://www.getdeb.net', :target => '_blank' %> - Installation von Programmen und Versionen, die nicht über die offiziellen Repositories erhältlich sind.</li>
-<li> <%= link_to 'Ultamatix', 'http://ultamatix.com/', :target => '_blank' %> - eine Automatix für die Ultimate Edition.</li>
-<li> <%= link_to 'Minimal-CD', 'https://help.ubuntu.com/community/Installation/MinimalCD', :target => '_blank' %> - erlaubt schnellere Installation, da nur die aktuellsten Pakete heruntergeladen werden.</li>
-<li> <%= link_to 'Xbmc', 'http://xbmc.org/wiki/?title=HOW-TO:_Install_XBMC_for_Linux_on_Ubuntu_8.10_(Intrepid)_step-by-step', :target => '_blank' %> - Mediacenter.</li>
-<li> <%= link_to 'Ubuntu Netbook Remix', 'http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix', :target => '_blank'  %>für Subnotebooks/EEE-PCs</li>
+<li> <%= link_to 'Impi Linux', 'http://www.impi.org.za/', :target => '_blank' %><%=_(' - eine afrikanische Ubuntu-Variante, die allerdings offenbar nicht übers Internet erhältlich ist.')%></li>
+<li> <%= link_to 'linex', _('http://de.wikipedia.org/wiki/LinEx'), :target => '_blank' %><%=_(' - öffentliche Distribution der spanischen Region Extremadura.')%></li>
+<li> <%= link_to 'U-lite', 'http://u-lite.org/', :target => '_blank' %><%=_(' für ältere PCs. Sie baut auf einer LXDE Oberfläche auf.')%></li>
+<li> <%= link_to 'Ubuntu mobile', 'http://www.ubuntu.com/products/mobile', :target => '_blank' %><%=_(' - für mobile Internetgeräte.')%></li>
+<li><%=_(' Ubuntu ultimate  - Ubuntu mit vielen Desktop-Desgins und Programmen.')%></li>
+<li> <%= link_to 'gOS', 'http://www.thinkgos.com/', :target => '_blank' %><%=_(' - spezialisiert auf Webdienste.')%></li>
+<li> <%= link_to 'OpenGEU', 'http://opengeu.intilinux.com', :target => '_blank' %><%=_(' - basiert auf E17. 2D-Effekte auch ohne schnelle Grafikkarte.')%></li>
+<li> <%= link_to 'Fluxbuntu', 'http://wiki.fluxbuntu.org', :target => '_blank' %><%=_(' - minimalistische schnelle Ubuntu-Version für ältere PCs.')%></li>
+<li> <%= link_to 'Ubuntu Server', _('http://wiki.ubuntuusers.de/Server_Installation'), :target => '_blank' %><%=_(' - Server-Version von Ubuntu, ohne grafische Oberfläche.')%></li>
+<li> <%= link_to 'Ubuntu JeOS', _('http://wiki.ubuntuusers.de/JeOS'), :target => '_blank' %><%=_(' - minimale Server-Version, vor allem für Virtualisierung geeignet..')%></li>
+<li> <%= link_to 'Elbuntu', 'http://e17blog.tuxfamily.org/', :target => '_blank' %><%=_(' - Ubuntu mit Enlightenment als Desktopumgebung.')%></li>
+<li> <%= link_to 'nUbuntu', 'http://www.nubuntu.org/', :target => '_blank' %><%=_(' - mit Fluxbox und verschiedenen Netzwerk-Sicherheitswerkzeugen .')%></li>
+<li> <%= link_to 'getDeb', 'http://www.getdeb.net', :target => '_blank' %><%=_(' - Installation von Programmen und Versionen, die nicht über die offiziellen Repositories erhältlich sind.')%></li>
+<li> <%= link_to 'Ultamatix', 'http://ultamatix.com/', :target => '_blank' %><%=_(' - eine Automatix für die Ultimate Edition.')%></li>
+<li> <%= link_to 'Minimal-CD', 'https://help.ubuntu.com/community/Installation/MinimalCD', :target => '_blank' %><%=_(' - erlaubt schnellere Installation, da nur die aktuellsten Pakete heruntergeladen werden.')%></li>
+<li> <%= link_to 'Xbmc', 'http://xbmc.org/wiki/?title=HOW-TO:_Install_XBMC_for_Linux_on_Ubuntu_8.10_(Intrepid)_step-by-step', :target => '_blank' %><%=_(' - Mediacenter.')%></li>
+<li> <%= link_to 'Ubuntu Netbook Remix', _('http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix'), :target => '_blank'  %><%=_('für Subnotebooks/EEE-PCs')%></li>
 </ul>

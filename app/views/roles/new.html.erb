@@ -1,16 +1,16 @@
-<h1>Neue Rolle</h1>
+<h1><%=_('Neue Rolle')%></h1>
 
 <%= error_messages_for :role %>
 
 <% form_for(@role) do |f| %>
   <p>
-    <b>Rollenname</b><br />
+    <b><%=_('Rollenname')%></b><br />
     <%= f.text_field :rolename %>
   </p>
 
   <p>
-    <%= f.submit "Anlegen" %>
+    <%= f.submit _("Anlegen") %>
   </p>
 <% end %>
 
-<%= link_to 'Zurück', roles_path %>
+<%= link_to _('Zurück'), roles_path %>

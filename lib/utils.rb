@@ -1,5 +1,5 @@
   def safe_system cmd
     if !system cmd
-      raise "System-Befehl schlug fehl: "+cmd
+      raise _("System-Befehl schlug fehl: ")+cmd
     end
   end

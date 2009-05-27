@@ -21,13 +21,13 @@ module DistributionsHelper
           :id => repo.id, :distribution_id => repo.distribution_id })
         if is_admin?
           sync_link = (link_to (tag "img", { :src => "/images/view-refresh.png", :width => "22", :height => "22",\
-            :alt => "Repository synchronisieren", :title => "Repository synchronisieren",:class => "link_img"}) ,\
+            :alt => _("Repository synchronisieren"), :title => _("Repository synchronisieren"),:class => "link_img"}) ,\
             { :controller => :admin, :action => :sync_package, :id => repo.id})
           mig_link =  (link_to (tag "img", { :src => "/images/migrate.png", :width => "22", :height => "22",\
-            :alt => "Repository migieren", :title => "Repository migieren",:class => "link_img"}) ,\
+            :alt => _("Repository migieren"), :title => _("Repository migieren"),:class => "link_img"}) ,\
              "/repositories/migrate/#{repo.id}")
           del_link =  (link_to (tag "img", { :src => "/images/edit-delete.png", :width => "22", :height => "22",\
-            :alt => "Repository löschen", :title => "Repository löschen", :class => "link_img"}) ,\
+            :alt => _("Repository löschen"), :title => _("Repository löschen"), :class => "link_img"}) ,\
              "/repositories/destroy/#{repo.id}")
           row = "<tr><td class='" + css + "' valign='middle'>" + sync_link +\
              "</td><td class='" + css + "' valign='middle'>" + image + link + "</td>" +\
@@ -53,13 +53,13 @@ module DistributionsHelper
       #  (if dist.url.nil? then dist.name else (link_to dist.name, dist.url, :target=>'_blank') end)+\
     
     if with_buttons
-     out += "Quellen " + (link_to ' anzeigen '+ if is_admin? then "und bearbeiten" else "" end, dist)
+     out += _("Quellen ") + (link_to _(' anzeigen ')+ if is_admin? then _("und bearbeiten") else "" end, dist)
       if is_admin?
-        out += "<br />Distribution " + (link_to 'bearbeiten', edit_distribution_path(dist)) + " | " +\
-        (link_to 'löschen', dist, :confirm => 'Bist du sicher?', :method => :delete)
+        out += _("<br />Distribution ") + (link_to _('bearbeiten'), edit_distribution_path(dist)) + " | " +\
+        (link_to _('löschen'), dist, :confirm => _('Bist du sicher?'), :method => :delete)
       end
      out += "<p></p>"
-     out += (link_to 'Wikiseite bei Ubuntuusers', dist.url, :target=>'_blank')
+     out += (link_to _('Wikiseite bei Ubuntuusers'), dist.url, :target=>'_blank')
     end
     out + "</div>"
   end

@@ -1,5 +1,5 @@
 <% if is_admin? %>
-<h1>New derivative</h1>
+<h1><%=_("Neues Derivat")%></h1>
 
 <% form_for(@derivative) do |f| %>
   <%= f.error_messages %>
@@ -9,11 +9,11 @@
     <%= f.text_field :name %>
   </p>
   <p>
-    <%= f.label "Programm für GUI-basiertes Sudo (z.B. gksudo, kdesudo)" %><br />
+    <%= f.label _("Programm für GUI-basiertes Sudo (z.B. gksudo, kdesudo)") %><br />
     <%= f.text_field :sudo %>
   </p>
   <p>
-    <%= f.label "Programm für GUI-Dialoge (z.B. zenity, kdialog)" %><br />
+    <%= f.label _("Programm für GUI-Dialoge (z.B. zenity, kdialog)") %><br />
     <%= f.text_field :dialog %>
   </p>
   <p>
@@ -21,9 +21,9 @@
     <%= f.text_field :icon_file %>
   </p>
   <p>
-    <%= f.submit "Create" %>
+    <%= f.submit _("Speichern") %>
   </p>
 <% end %>
 
-<%= link_to 'Back', derivatives_path %>
+<%= link_to _('Zurück'), derivatives_path %>
 <% end %>

@@ -1,15 +1,15 @@
 <div class="inner0">
-<span class="headline">Sources.list einlesen</span>
+<span class="headline"/span>
 
 <%= error_messages_for :repository %>
 <%= form_tag({ :action => :multicreate, :id => @distribution.id }, :multipart => true) %>
 <table>
-<tr><th>Datei /etc/apt/sources.list ausw&auml;hlen</th></tr><tr><td>
+<tr><th/th></tr><tr><td>
 <%= file_field(:datei, :name) %></td></tr>
 <tr><td colspan="2" align="center">
-    <%= submit_tag "Einlesen" %>
+    <%= submit_tag _("Einlesen") %>
 </td></tr>
 </table>
 </form>
 </div>
-<%= link_to 'Zurück', distribution_repositories_path(@distribution) %>
+<%= link_to _('Zurück'), distribution_repositories_path(@distribution) %>

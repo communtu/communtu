@@ -1,41 +1,41 @@
-<h1>Neues Paket</h1>
+<h1><%=_('Neues Paket')%></h1>
 
 <%= error_messages_for :packet %>
 
 <% form_for(@packet) do |f| %>
   <p>
-    <b>Distribution</b><br />
+    <b><%=_('Distribution')%></b><br />
     <%= f.text_field :distrib_id %>
   </p>
 
   <p>
-    <b>Name</b><br />
+    <b><%=_('Name')%></b><br />
     <%= f.text_field :name %>
   </p>
 
   <p>
-    <b>Version</b><br />
+    <b><%=_('Version')%></b><br />
     <%= f.text_field :version %>
   </p>
 
   <p>
-    <b>Quelle</b><br />
+    <b><%=_('Quelle')%></b><br />
     <%= f.text_field :source %>
   </p>
 
   <p>
-    <b>Weblinks</b><br />
+    <b><%=_('Weblinks')%></b><br />
     <%= f.text_field :urls %>
   </p>
 
   <p>
-    <b>Videos</b><br />
+    <b><%=_('Videos')%></b><br />
     <%= f.text_field :videos %>
   </p>
 
   <p>
-    <%= f.submit "Speichern" %>
+    <%= f.submit _("Speichern") %>
   </p>
 <% end %>
 
-<%= link_to 'Zurück', packets_path %>
+<%= link_to _('Zurück'), packets_path %>

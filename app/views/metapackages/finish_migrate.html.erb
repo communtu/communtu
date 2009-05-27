@@ -1,9 +1,9 @@
-<p>Alle Bündel wurden von <%= @from_dist.short_name %> nach <%= @to_dist.short_name %> migriert.</p>
+<p><%=_('Alle Bündel wurden von ')%><%= @from_dist.short_name %><%=_(' nach ')%><%= @to_dist.short_name %><%=_(' migriert.')%></p>
 
 <% if !(not_found_arr=@not_found.select {|meta,packages| !packages.empty?}).empty? %>	
-  <p>Folgende Pakete konnten jedoch nicht migriert werden:<br><br>
+  <p><%=_('Folgende Pakete konnten jedoch nicht migriert werden:')%><br><br>
   <table border=1, style="border-style:solid; border-width:1px; border-collapse:collapse", cellpadding=3 >
-	<tr><th>Bündel</th><th>Pakete</th><tr>
+	<tr><th><%=_('Bündel')%></th><th><%=_('Pakete')%></th><tr>
     <% not_found_arr.each do |nf| %>
       <% meta = nf[0] %>
 	  <% packages = nf[1] %>
@@ -13,5 +13,5 @@
   </table>
 <% end %>  
 <%if !@backlink.nil? %>
-  <%= link_to('Weiter', @backlink) %>
+  <%= link_to(_('Weiter'), @backlink) %>
 <% end %>  

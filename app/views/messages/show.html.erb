@@ -1,11 +1,11 @@
 <h2><%=h @message.subject %></h2>
 
-<p><strong>Von:</strong> <%=h @message.author.login %></p>
-<p><strong>An:</strong> <%=h @message.recipients.map(&:login).to_sentence %></p>
-<p><strong>erhalten am:</strong> <%= change_date_time(@message.created_at)%></p>
+<p><strong><%=_('Von:')%></strong> <%=h @message.author.login %></p>
+<p><strong><%=_('An:')%></strong> <%=h @message.recipients.map(&:login).to_sentence %></p>
+<p><strong><%=_('erhalten am:')%></strong> <%= change_date_time(@message.created_at)%></p>
 
 <pre><%=h @message.body %></pre>
-<p><%= link_to "Antworten", reply_message_path(@message) %></p>
-<p><%= link_to "Weiterleiten", forward_message_path(@message) %></p>
+<p><%= link_to _("Antworten"), reply_message_path(@message) %></p>
+<p><%= link_to _("Weiterleiten"), forward_message_path(@message) %></p>
 
-<%= link_to "zurück", user_path(current_user.id)%>
+<%= link_to _("zurück"), user_path(current_user.id)%>

@@ -1,17 +1,17 @@
 <% if logged_in? %>
 <%= form_tag "/metapackage/finish_migrate" %>
     <div>
-        <p>Von welcher Distribution sollen die Bündel migriert werden ?</p>
+        <p><%=_('Von welcher Distribution sollen die Bündel migriert werden ?')%></p>
 
         <%= collection_select(:from_dist, :id, @distributions, :id, :name) %>        
 
-        <p>Zu welcher Distribution sollen die Bündel migriert werden ?</p>
+        <p><%=_('Zu welcher Distribution sollen die Bündel migriert werden ?')%></p>
 
         <%= collection_select(:to_dist, :id, @distributions, :id, :name) %>        
         
-        <p><%= submit_tag("Migrieren") %></p>
+        <p><%= submit_tag(_("Migrieren")) %></p>
     </div>
 </form>
 <% else %>
-<p>Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.</p>
+<p><%=_('Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.')%></p>
 <% end %>

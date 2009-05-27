@@ -1,5 +1,5 @@
 <% if logged_in? %>
-<h1>Neues Bündel</h1>
+<h1><%=_('Neues Bündel')%></h1>
 
 <%= render_flash %>
 
@@ -7,30 +7,30 @@
 
 <% form_for(@metapackage) do |f| %>
   <p>
-    <b>Name</b><br />
+    <b><%=_('Name')%></b><br />
     <%= f.text_field :name %>
   </p>
 
   <p>
-    <b>Beschreibung</b><br />
+    <b><%=_('Beschreibung')%></b><br />
     <%= f.text_area :description %>
   </p>
 
   <p>
-    <b>Kategorie</b><br />
+    <b><%=_('Kategorie')%></b><br />
       	<% @categories = Category.find(:all, :order => "name")%>
         <%= f.collection_select(:category_id,@categories,:id,:name)%>
   </p>
 
   <p>
-    <b>Standardmäßig installieren</b><br />
+    <b><%=_('Standardmäßig installieren')%></b><br />
     <%= f.check_box :default_install %>
   </p>
 
   <p>
-    <%= f.submit "Anlegen" %>
+    <%= f.submit _("Anlegen") %>
   </p>
 <% end %>
 <% else %>
-<p>Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.</p>
+<p><%=_('Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.')%></p>
 <% end %>

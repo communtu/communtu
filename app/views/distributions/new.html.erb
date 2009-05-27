@@ -5,28 +5,28 @@
 
 <% form_for(@distribution) do |f| %>
   <p>
-    <b>Name</b><br />
+    <b><%=_("Name")%></b><br />
     <%= f.text_field :name %>
   </p>
   
   <p>
-    <b>Kurzname</b><br />
+    <b><%=_("Kurzname")%></b><br />
     <%= f.text_field :short_name %>
   </p>
 
   <p>
-    <b>Url</b><br />
+    <b><%=_("Url")%></b><br />
     <%= f.text_field :url %>
   </p>
 
   <p>
-    <b>Beschreibung</b><br />
+    <b><%=_("Beschreibung")%></b><br />
     <%= f.text_area :description %>
   </p>
   <p>
-    <%= f.submit "Anlegen" %>
+    <%= f.submit _("Anlegen") %>
   </p>
 <% end %>
 
-<%= link_to 'Zurück', distributions_path %>
+<%= link_to _('Zurück'), distributions_path %>
 <% end %>

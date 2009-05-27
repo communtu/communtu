@@ -1,7 +1,7 @@
-  <p><%= link_to "Neue Nachricht", new_sent_path %></p>
+  <p><%= link_to _("Neue Nachricht"), new_sent_path %></p>
   
-  <p><strong>Mailbox</strong></p>
+  <p><strong><%=_('Mailbox')%></strong></p>
   <ul>
-    <li><%= link_to "Posteingang" + sprintf((count_new_messages > 0 ? "(%d)" : ""), count_new_messages), '/inbox' %></li>
-    <li><%= link_to "Versendete Nachrichten", :controller => "sent", :action => "index" %></li>
+    <li><%= link_to _("Posteingang") + sprintf((count_new_messages > 0 ? "(%d)" : ""), count_new_messages), '/inbox' %></li>
+    <li><%= link_to _("Versendete Nachrichten"), :controller => "sent", :action => "index" %></li>
   </ul>

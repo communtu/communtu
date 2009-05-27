@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
   
   def title
-    "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
+    _("Ubuntu-Linux an die individuellen Bedürfnisse anpassen")
   end
   protect_from_forgery :only => [:create, :update, :destroy] 
   
@@ -30,14 +30,14 @@ class HomeController < ApplicationController
      @form_name = params[:form][:name]
      @form_frage = params[:form][:frage]
      MyMailer.deliver_mail(@form_name, @form_frage, current_user)
-    flash[:notice] = "Die E-Mail wurde an uns gesendet. Vielen Dank für Dein Feedback."
+    flash[:notice] = _("Die E-Mail wurde an uns gesendet. Vielen Dank für Dein Feedback.")
     redirect_to '/home'
   end
 
   def submit_mail
     @form_email = params[:form][:email]
     MyMailer.deliver_mailerror(@form_email)
-    flash[:notice] = "Wir werden dich per E-Mail benachrichtigen."
+    flash[:notice] = _("Wir werden dich per E-Mail benachrichtigen.")
     redirect_to '/home'
   end
 
@@ -63,7 +63,7 @@ class HomeController < ApplicationController
       read_packages = true
       if err_count*3 > count then
         read_packages = false
-        flash[:error] = "Das sieht nicht nach einer Liste von Ubuntu-Paketen aus... <br />Die Paketliste muss einen Paketnamen pro Zeile enthalten"
+        flash[:error] = _("Das sieht nicht nach einer Liste von Ubuntu-Paketen aus... <br />Die Paketliste muss einen Paketnamen pro Zeile enthalten")
       end
       begin
         params[:attachment][:sources].read.split("\n").each do |n|
@@ -72,7 +72,7 @@ class HomeController < ApplicationController
       rescue
       end
     rescue
-      flash[:error] = "Es muss eine Datei mit der Paketliste (ein Paketname pro Zeile) angegeben werden"
+      flash[:error] = _("Es muss eine Datei mit der Paketliste (ein Paketname pro Zeile) angegeben werden")
       read_packages = false
     end
     if !read_packages then

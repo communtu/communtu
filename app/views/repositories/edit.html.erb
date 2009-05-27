@@ -1,4 +1,4 @@
-<span class="headline">Repository bearbeiten</span>
+<span class="headline"><%=_('Repository bearbeiten')%></span>
 <div class="inner0">
 <%= error_messages_for :repository %>
 <table class="form_table">
@@ -6,37 +6,37 @@
 		:action => :update, :distribution_id => params[:distribution_id], \
 		}, :html => { :method => :put } }) do |f| %>
 	<tr>
-	<td>Distribution:</td>
+	<td><%=_('Distribution:')%></td>
 	<td><%= select_distribution @repository, @distributions %></td>
 	</tr>
 	<tr>
-	<td>Lizenztyp:</td>
+	<td><%=_('Lizenztyp:')%></td>
 	<td><%= select_license_type @repository %></td>
 	</tr>
 	<tr>
-	<td>Sicherheitstyp:</td>
+	<td><%=_('Sicherheitstyp:')%></td>
 	<td><%= select_security_type @repository %></td>
 	</tr>
 	<tr>
-		<td>Pfad:</td>
+		<td><%=_('Pfad:')%></td>
 		<td><%= f.text_field :url %></td>
 	</tr>
 	<tr>
-        <td>GPG Schlüssel (Optional):</td>
+        <td><%=_('GPG Schlüssel (Optional):')%></td>
         <td><%= f.text_field :gpgkey %><td>
     </tr>
 	<tr>
-		<td>Subtyp:</td>
+		<td><%=_('Subtyp:')%></td>
 		<td><%= f.text_field :subtype %></td>
 	</tr>
 	<tr>
 	<td>
  	<td>
-    	<%= f.submit "Speichern" %>
+    	<%= f.submit _("Speichern") %>
   	</td>
 	</tr>
 <% end %>
 </table>
 </div>
-<%= link_to 'Zurück', { :controller => :distributions, :action => :show,\
+<%= link_to _('Zurück'), { :controller => :distributions, :action => :show,\
 	:id => @repository.distribution.id } %>

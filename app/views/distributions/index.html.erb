@@ -1,16 +1,16 @@
 <% if logged_in? %>
 <div class='inner0'>
-<span class='headline'>Verfügbare Distributionen</span><br/>
+<span class='headline'><%=_("Verfügbare Distributionen")%></span><br/>
 <% for distribution in @distributions %>
  <%= dist_show distribution, "inner1" %>
 <% end %>
 <% if is_admin? %>
-<%= link_to 'Neue Distribution', new_distribution_path %>
+<%= link_to _('Neue Distribution'), new_distribution_path %>
 <% end %>
 
 </div>
 <% else %>
 <div class="inner0">
-<p>Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.</p>
+<p><%=_("Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.")%></p>
 </div>
 <% end %>

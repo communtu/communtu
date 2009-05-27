@@ -1,49 +1,49 @@
-<span class="headline">Repository anzeigen</span>
+<span class="headline"><%=_('Repository anzeigen')%></span>
 <p>
 <% if is_admin? %>
-<%= link_to 'Bearbeiten', { :action => :edit, :id => @repository.id } %>
+<%= link_to _('Bearbeiten'), { :action => :edit, :id => @repository.id } %>
 &nbsp;&nbsp;
 <% end %>
-<%= link_to 'Zurück', { :controller => :distributions, :action => :show,\
+<%= link_to _('Zurück'), { :controller => :distributions, :action => :show,\
 	:id => @repository.distribution.id } %>
 
 <div class="inner0">
 <%= error_messages_for :repository %>
 <table class="form_table">
 	<tr>
-	<td>Pfad:</td>
+	<td><%=_('Pfad:')%></td>
 	<td><%= @repository.name %></td>
 	</tr>
 	<tr>
-	<td>Paketliste für i386:</td>
+	<td><%=_('Paketliste für i386:')%></td>
 	<td><%= auto_link(Package.get_url_from_source(@repository.name)[:url]) %></td>
 	</tr>
 	<tr>
-	<td>Lizenztyp:</td>
-	<td><% if @repository.license_type == 0 %>
+	<td><%=_('Lizenztyp:')%></td>
+	<td><% if @repository.license_type == 0 %><%=_('
         OpenSource
-        <%  else %>
+        ')%><%  else %><%=_('
         kommerziell 
-        <% end %>
+        ')%><% end %>
 </td>
 	</tr>
 	<tr>
-	<td>Sicherheitstyp:</td>
-	<td><% if @repository.security_type == 0 %>
+	<td><%=_('Sicherheitstyp:')%></td>
+	<td><% if @repository.security_type == 0 %><%=_('
         Nativ
-        <% elsif @repository.security_type == 1 %>
+        ')%><% elsif @repository.security_type == 1 %><%=_('
         Trusted
-        <%  else %>
+        ')%><%  else %><%=_('
         Third-Party 
-        <% end %>
+        ')%><% end %>
 </td>
 	</tr>
 	<tr>
-        <td>GPG Schlüssel (optional): </td>
+        <td><%=_('GPG Schlüssel (optional): ')%></td>
         <td><%= @repository.gpgkey %><td>
     </tr>
 	<tr>
-		<td>Subtyp:</td>
+		<td><%=_('Subtyp:')%></td>
 		<td><%= @repository.subtype %></td>
 	</tr>
 	<tr>
@@ -54,7 +54,7 @@
 </table>
 </div>
 
-<h2>Pakete</h2>
+<h2><%=_('Pakete')%></h2>
 <% @repository.packages.each do |p| %>
    <%= p.icon(35)%>
    <%= link_to p.name, package_path(p) %>

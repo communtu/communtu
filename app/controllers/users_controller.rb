@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   DEFAULT_DISTRO = 2 # Hardy
   DEFALUT_DERIVATIVE = 1 # Ubuntu
   def title
-    "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
+    _("Ubuntu-Linux an die individuellen Bedürfnisse anpassen")
   end 
   layout 'application'
   
@@ -44,10 +44,10 @@ class UsersController < ApplicationController
     @user.save!
     #Uncomment to have the user logged in after creating an account - Not Recommended
     #self.current_user = @user
-    flash[:notice] = "Danke für die Registrierung bei Communtu! Du kannst dich jetzt anmelden."
+    flash[:notice] = _("Danke für die Registrierung bei Communtu! Du kannst dich jetzt anmelden.")
     redirect_to "/session/new"
   rescue ActiveRecord::RecordInvalid
-    flash[:error] = "Es gab ein Problem mit der Registrierung."
+    flash[:error] = _("Es gab ein Problem mit der Registrierung.")
     render :action => 'new'
   end
 
@@ -77,14 +77,14 @@ class UsersController < ApplicationController
     @user.save!
     # release lock
     system "dotlockfile -u #{RAILS_ROOT}/anolock"
-    flash[:notice] = "Du wurdest als Nutzer #{login} mit Kennwort #{login} eingeloggt. Bitte ggf. oben rechts auf Nutzer #{login} klicken und in ein dauerhaftes Nutzerkonto umwandeln; ansonsten wird das Konto nach einem Tag wieder gelöscht."
+    flash[:notice] = _("Du wurdest als Nutzer #{login} mit Kennwort #{login} eingeloggt. Bitte ggf. oben rechts auf Nutzer #{login} klicken und in ein dauerhaftes Nutzerkonto umwandeln; ansonsten wird das Konto nach einem Tag wieder gelöscht.")
     #have the user logged in 
     self.current_user = @user
     redirect_to "/home/home"
   rescue ActiveRecord::RecordInvalid
     # release lock
     system "dotlockfile -u #{RAILS_ROOT}/anolock"
-    flash[:error] = "Es gab ein Problem mit der anonymen Nutzung."
+    flash[:error] = _("Es gab ein Problem mit der anonymen Nutzung.")
     render :action => 'new'
   end
 
@@ -94,7 +94,7 @@ class UsersController < ApplicationController
   
   def update
     @user = User.find(current_user)
-    flash[:notice] = "Benutzerdaten aktualisiert"
+    flash[:notice] = _("Benutzerdaten aktualisiert")
     if @user.anonymous then
       if ((params[:password] == params[:password_confirmation]) && !params[:password_confirmation].blank?)
         @user.password_confirmation= params[:password_confirmation]
@@ -102,9 +102,9 @@ class UsersController < ApplicationController
         # make user non-anonymous
         @user.anonymous = false
         @user.save
-        flash[:notice] = "Benutzerdaten übernommen und Benutzerkonto dauerhaft gemacht."
+        flash[:notice] = _("Benutzerdaten übernommen und Benutzerkonto dauerhaft gemacht.")
       else
-        flash[:error] = "Das neue Passwort stimmt nicht mit der Bestätigung überein."
+        flash[:error] = _("Das neue Passwort stimmt nicht mit der Bestätigung überein.")
         @old_password = params[:old_password]
         render :action => 'edit'      
       end
@@ -120,9 +120,9 @@ class UsersController < ApplicationController
   def destroy
     @user = User.find(params[:id])
     if @user.update_attribute(:enabled, false)
-      flash[:notice] = "Benutzer deaktiviert"
+      flash[:notice] = _("Benutzer deaktiviert")
     else
-      flash[:error] = "Es gab ein Problem mit der Deaktivierung dieses Benutzers."
+      flash[:error] = _("Es gab ein Problem mit der Deaktivierung dieses Benutzers.")
     end
     redirect_to :action => 'index'
   end
@@ -130,9 +130,9 @@ class UsersController < ApplicationController
   def delete
     @user = User.find(params[:id])
     if @user.update_attribute(:enabled, false)
-      flash[:notice] = "Benutzer gelöscht"
+      flash[:notice] = _("Benutzer gelöscht")
     else
-      flash[:error] = "Es gab ein Problem mit der Löschung."
+      flash[:error] = _("Es gab ein Problem mit der Löschung.")
     end
     redirect_to '/logout'
   end
@@ -140,9 +140,9 @@ class UsersController < ApplicationController
   def enable
     @user = User.find(params[:id])
     if @user.update_attribute(:enabled, true)
-      flash[:notice] = "Benutzer aktiviert"
+      flash[:notice] = _("Benutzer aktiviert")
     else
-      flash[:error] = "Es gab ein Problem mit der Aktivierung dieses Benutzers."
+      flash[:error] = _("Es gab ein Problem mit der Aktivierung dieses Benutzers.")
     end
       redirect_to :action => 'index'
   end

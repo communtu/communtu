@@ -1,10 +1,10 @@
-<font size="1"><b>Bündel-Editor</b></font><br/>
+<font size="1"><b><%=_("Bündel-Editor")%></b></font><br/>
 
 <% if editing_metapackage? %>
     <% cart = Cart.find(session[:cart]) %>
 	<% name = cart.name %>
 	
-	<font size="1">Name: <b><%= name %></b></font>
+	<font size="1"><%=_("Name: ")%><b><%= name %></b></font>
 
     <ul class="cartlist">
 	<% cart.base_packages.each do |package|%>
@@ -31,8 +31,8 @@
 <% else %>
     <div style="valign:bottom;">
         <font size="1"> 
-            <%= link_to("Neues Bündel", user_path(current_user) + "/cart/create") %> <br>
-            <%= link_to("Bündel aus Paketliste", user_path(current_user) + "/cart/new_from_list") %>
+            <%= link_to(_("Neues Bündel"), user_path(current_user) + "/cart/create") %> <br>
+            <%= link_to(_("Bündel aus Paketliste"), user_path(current_user) + "/cart/new_from_list") %>
         </font>
     </div>
 <% end %>

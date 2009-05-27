@@ -1,7 +1,7 @@
-<h2>Rollen für <%=h @user.login.capitalize %></h2>
+<h2><%=_('Rollen für ')%><%=h @user.login.capitalize %></h2>
  
-<h3>Zugewiesene Rollen:</h3>
+<h3><%=_('Zugewiesene Rollen:')%></h3>
 <ul><%= render :partial => 'role', :collection => @user.roles %></ul>
  
-<h3>Verfügbare Rollen:</h3>
+<h3><%=_('Verfügbare Rollen:')%></h3>
 <ul><%= render :partial => 'role', :collection => (@all_roles - @user.roles) %></ul>

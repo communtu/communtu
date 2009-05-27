@@ -19,18 +19,18 @@ function onEnter( evt, frm ) {
 <%= error_messages_for :session %>
 <font color="#FF0000"><b><%= flash[:notice] %></b></font>
 
-<h2>Anmelden mit Benutzernamen und Passwort:</h2>
+<h2><%=_('Anmelden mit Benutzernamen und Passwort:')%></h2>
 
 <% form_tag session_path do %>
 
-<p><label for="login">Benutzername</label><br/>
+<p><label for="login"><%=_('Benutzername')%></label><br/>
 <%= text_field_tag 'login' %></p>
  
-<p><label for="password">Passwort</label><br />
+<p><label for="password"><%=_('Passwort')%></label><br />
 <%= password_field_tag 'password', '', :onkeypress => "return onEnter(event,this.form);" %></p>
  
-<p><label for="remember_me">Benutzer auf diesem Computer dauerhaft anmelden</label>
+<p><label for="remember_me"><%=_('Benutzer auf diesem Computer dauerhaft anmelden')%></label>
 <%= check_box_tag 'remember_me' %></p>
  
-<p><%= link_to_function("Anmelden", "$(this).up('form').submit()") %>&nbsp;&nbsp;&nbsp;<%= link_to("Registrieren", new_user_path)%></p>
+<p><%= link_to_function(_("Anmelden"), "$(this).up('form').submit()") %>&nbsp;&nbsp;&nbsp;<%= link_to(_("Registrieren"), new_user_path)%></p>
 <% end %>

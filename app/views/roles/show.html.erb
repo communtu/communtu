@@ -1,8 +1,8 @@
 <p>
-  <b>Rollenname:</b>
+  <b><%=_('Rollenname:')%></b>
   <%=h @role.rolename %>
 </p>
 
 
-<%= link_to 'Bearbeiten', edit_role_path(@role) %> |
-<%= link_to 'Zurück', roles_path %>
+<%= link_to _('Bearbeiten'), edit_role_path(@role) %> |
+<%= link_to _('Zurück'), roles_path %>

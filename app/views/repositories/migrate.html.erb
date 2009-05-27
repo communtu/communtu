@@ -1,8 +1,8 @@
-<h1>Repository migieren</h1>
-<%= form_tag(:action => 'finish_migrate', :id => @repository.id) %>
-Kopiere Repository <%= @repository.name %> nach Distribution
-<p>
+<h1><%=_('Repository migieren')%></h1>
+<%= form_tag(:action => 'finish_migrate', :id => @repository.id) %><%=_('
+Kopiere Repository ')%><%= @repository.name %><%=_(' nach Distribution
+')%><p>
 <%= collection_select(:distribution, :id, Distribution.find(:all),:id, :name) %>
-<%= submit_tag 'Migrieren' %>
+<%= submit_tag _('Migrieren') %>
 </p>
 </form>

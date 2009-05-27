@@ -1,13 +1,13 @@
 <p>
-  <b>Url:</b>
+  <b><%=_('Url:')%></b>
   <%=h @video.url %>
 </p>
 
 <p>
-  <b>Beschreibung:</b>
+  <b><%=_('Beschreibung:')%></b>
   <%=h @video.description %>
 </p>
 
 
-<%= link_to 'Bearbeiten', edit_video_path(@video) %> |
-<%= link_to 'Zurück', video_path %>
+<%= link_to _('Bearbeiten'), edit_video_path(@video) %> |
+<%= link_to _('Zurück'), video_path %>

@@ -14,16 +14,11 @@ class Metapackage < BasePackage
   validates_presence_of :name, :license_type, :user, :category # , :version, :description
   
   @state = { :pending => 0, :published => 1, :rejected => 2 }
-  @levels = [ "gar nicht", "normal", "erweitert", "Experte", "Freak" ]
   
   def self.state
     @state
   end
   
-  def self.levels
-    @levels
-  end
-
   def owned_by? user
     (user_id == user.id)
   end

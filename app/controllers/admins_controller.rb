@@ -1,8 +1,8 @@
 class AdminsController < ApplicationController
   def title
-    "Administratorbereich"
+    _("Administratorbereich")
   end
-  before_filter :check_administrator_role, :flash => { :notice => 'Du bist kein Administrator!' }
+  before_filter :check_administrator_role, :flash => { :notice => _('Du bist kein Administrator!') }
   
   def index
   end

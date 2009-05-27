@@ -2,6 +2,6 @@
 <%= render :partial => "packagelist", :locals => { :packages => @packages, :distribution => @distribution, :groups => @groups } %>
 <% else %>
 <div class="inner0">
-<p>Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.</p>
+<p><%=_('Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.')%></p>
 </div>
 <% end %>

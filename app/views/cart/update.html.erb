@@ -1,6 +1,6 @@
 <div class="inner0">
 
-    <span class="headline">Bündel-Informationen anpassen</span>
+    <span class="headline"><%=_("Bündel-Informationen anpassen")%></span>
     <br/>
     <%= form_tag :controller => :cart, :action => :update %>
     <%= hidden_field_tag 'id', @meta_id%>
@@ -16,11 +16,11 @@
 	        <td><%= text_field_tag('meta_name', @meta_name, { :size => 16}) %></td>	
         </tr>
         <tr>
-	        <td>Bündel überschreiben, falls es existiert?</td>
+	        <td><%=_("Bündel überschreiben, falls es existiert?")%></td>
 	        <td><input type="checkbox" name="overwrite" value="1"></td>	
         </tr>
         <tr>
-	        <td>Expertenlevel:</td>
+	        <td><%=_("Expertenlevel:")%></td>
 	        <% options = "" %>
 	        <% 5.times do |level| %>
 		        <% options += "<option>" + level.to_s + "</option>" %>
@@ -28,11 +28,11 @@
 	        <td><%= select_tag('meta_level', options) %></td>	
         </tr>
         <tr>
-	        <td valign='top'>Beschreibung:</td>
+	        <td valign='top'><%=_("Beschreibung:")%></td>
 	        <td><%= text_area_tag('meta_description', @meta_description, { :rows => 20, :cols => 32 } ) %></td>	
         </tr>
         <tr>
-        <td colspan="2" align="center"><%= submit_tag "Bündel veröffentlichen"%></td>
+        <td colspan="2" align="center"><%= submit_tag _("Bündel veröffentlichen")%></td>
         </tr>
 
         </table>	

@@ -18,7 +18,7 @@ class SentController < ApplicationController
     if(!User.find_by_login(params[:message]['to']).nil?)
       @message = current_user.sent_messages.build(params[:message])
     else
-      flash[:error] = "Benutzer existiert nicht"
+      flash[:error] = _("Benutzer existiert nicht")
       redirect_to new_sent_path({:message=>params[:message]})
       return
     end
@@ -26,7 +26,7 @@ class SentController < ApplicationController
     if @message.save
       respond_to do |format|
         format.html do 
-          flash[:notice] = "Nachricht erfolgreich versendet"
+          flash[:notice] = _("Nachricht erfolgreich versendet")
           #Redirects to metapackages where message was sent if successful else to new message
           redirect_to  request.get? ? request.env["HTTP_REFERER"] : session[:return_to]
         end

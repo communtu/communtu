@@ -1,4 +1,4 @@
-<h1>Repositories</h1>
+<h1><%=_('Repositories')%></h1>
 
 <table>
   <tr>
@@ -6,13 +6,13 @@
 
 <% for repository in @repositories %>
   <tr>
-    <td><%= link_to 'Anzeigne', repository %></td>
-    <td><%= link_to 'Bearbeiten', edit_repository_path(repository) %></td>
-    <td><%= link_to 'Löschen', repository, :confirm => 'Bist du sicher?', :method => :delete %></td>
+    <td><%= link_to _('Anzeigen'), repository %></td>
+    <td><%= link_to _('Bearbeiten'), edit_repository_path(repository) %></td>
+    <td><%= link_to _('Löschen'), repository, :confirm => _('Bist du sicher?'), :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'Neues Repository', new_repository_path %>
+<%= link_to _('Neues Repository'), new_repository_path %>

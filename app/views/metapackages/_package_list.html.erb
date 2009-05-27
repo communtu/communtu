@@ -66,8 +66,8 @@
 		<% end %>  
 	<% end %>
     <tr>
-      <td class="packageList0noborder">Gesamtgröße des Bündels auf der Festplatte:
-    <% @size_helper = @size_helper * 1024  %>
+      <td class="packageList0noborder"><%=_('Gesamtgröße des Bündels auf der Festplatte:
+    ')%><% @size_helper = @size_helper * 1024  %>
     <b><%= number_to_human_size(@size_helper) %></b>
     </td></tr>
 </table>	

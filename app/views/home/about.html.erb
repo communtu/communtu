@@ -1,77 +1,75 @@
-<h2>Communtu -
- gemeinsam Ubuntu-Linux an individuelle Bed&uuml;rfnisse anpassen</h2>
+<h2><%=_('Communtu -
+ gemeinsam Ubuntu-Linux an individuelle Bed&uuml;rfnisse anpassen')%></h2>
  
-<h3>Wozu Communtu?</h3>
-Ubuntu ist eine Linux-Distribution, die Linux einfach handhabbar und verständlich macht.
+<h3><%=_('Wozu Communtu?')%></h3>
+<%=_('Ubuntu ist eine Linux-Distribution, die Linux einfach handhabbar und verständlich macht.
 Nach der Installation von Ubuntu mittels einer CD oder DVD ist dein Computer schon 
 gut ausgerüstet für Internet, Textverarbeitung und vieles andere.
-
-<p>Es gibt aber auch viele Anwendungen, die erst noch nachinstalliert werden müssen,
+')%>
+<p><%=_('Es gibt aber auch viele Anwendungen, die erst noch nachinstalliert werden müssen,
 z.B. in den Bereichen Audio, Video und Grafik, damit dein Computer mit Ubuntu wirklich 
 benutzbar ist. Communtu macht diese Nachinstallation jetzt noch einfacher
-und hat zudem spezielle Bereiche für Einsteiger und Windows-Umsteiger.</p>
+und hat zudem spezielle Bereiche für Einsteiger und Windows-Umsteiger.')%></p>
 
-<h3>Wie verwende ich Communtu?</h3>
+<h3><%=_('Wie verwende ich Communtu?')%></h3>
 
-<p>Zum Starten wählst du <b>Installation</b> auf der linken 
-<% if logged_in? %>
-  Seitenleiste.
-<% else %>
-  Seitenleiste (diese erscheint erst nach <%= link_to 'Anmeldung', '/session/new' %>).
+<p><%=_('Zum Starten wählst du <b>Installation</b> auf der linken Seitenleiste.')%> 
+<% if !logged_in? %>
+<%=_('  (Diese erscheint erst nach ')%><%= link_to _('Anmeldung'), '/session/new' %>).
 <% end %>
-Dort kannst du deine Einstellungen bearbeiten.
+<%=_('Dort kannst du deine Einstellungen bearbeiten.
 Unter den Grunddaten musst du zunächst eintragen, welche Ubuntu-Version du auf deinem PC installiert hast,
 außerdem, ob du unfreie Programme nutzen willst oder nicht.
-Zudem wählst du aus, für welche Aufgaben du deinen Ubuntu-PC nutzen willst. 
+Zudem wählst du aus, für welche Aufgaben du deinen Ubuntu-PC nutzen willst. ')%>
 </p>
 
-<p>Danach kannst du mit "Speichern und feiner Auswählen" noch einen detaillierteren Überblick
+<p><%=_('Danach kannst du mit "Speichern und feiner Auswählen" noch einen detaillierteren Überblick
 über die installierten Bündel und Programme bekommen und die Auswahl auch noch verändern.
 Falls du dazu keine Lust oder Zeit hast, klicke einfach auf "Speichern".
 Dies führt dich zur Installations-Seite.
 Dort findest du einen Installationsknopf, mit dem die Communtu-Nachinstallation gestartet werden
-kann. Es dauert etwas, bis die Programme automatisch aus dem Internet geladen und installiert werden. Fertig ist der vielseitig einsetzbare Ubuntu-PC!
+kann. Es dauert etwas, bis die Programme automatisch aus dem Internet geladen und installiert werden. Fertig ist der vielseitig einsetzbare Ubuntu-PC!')%>
 </p>
 
-<p>Wichtig: Man braucht schon eine schnelle Internet-Verbindung. Für Ubuntu-Nutzer, die noch ein Modem oder Ähnliches
-nutzen, planen wir die Möglichkeit, automatisch CDs und DVDs zu erstellen.</p>
+<p><%=_('Wichtig: Man braucht schon eine schnelle Internet-Verbindung. Für Ubuntu-Nutzer, die noch ein Modem oder Ähnliches
+nutzen, planen wir die Möglichkeit, automatisch CDs und DVDs zu erstellen.')%></p>
 
 
-<h3>Wie kann ich meine Erfahrungen mit Programmen ins Communtu-System eintragen?</h3>
-Hast du gute Erfahrungen mit Programmen gemacht? Dann kannst du thematisch zusammengehörige
+<h3><%=_('Wie kann ich meine Erfahrungen mit Programmen ins Communtu-System eintragen?')%></h3>
+<%=_('Hast du gute Erfahrungen mit Programmen gemacht? Dann kannst du thematisch zusammengehörige
 Programme zu einem Bündel zusammenfassen und ins System eintragen. Dazu wählst du <b>Neues Bündel</b>
 unterhalb von <b>Bündel-Editor</b> auf der linken Seitenleiste. Du kannst dann Ubuntu-Pakete hinzufügen und mit Klick auf das Disketten-Symbol
 das Bündel im System abspeichern. Das Bündel soll einen Namen, eine Beschreibung und eine
 thematische Einordnung erhalten, damit andere Nutzer es auch verwenden können.
 Wie bei Ordnern und Dateien können Bündel nicht nur Ubuntu-Pakete, sondern auch andere
-Bündel enthalten. <b>Bündel verwalten</b> auf der linken Seitenleiste gibt dir einen Überblick
+Bündel enthalten. ')%><%=_('<b>Bündel verwalten</b> auf der linken Seitenleiste gibt dir einen Überblick
 über die verfügbaren Bündel.
-Schließlich gibt es unter <b>Ubuntu-Versionen</b> eine Übersicht über die im System verfügbaren Ubuntu-Versionen (Distributionen).
+Schließlich gibt es unter <b>Ubuntu-Versionen</b> eine Übersicht über die im System verfügbaren Ubuntu-Versionen (Distributionen).')%>
 
-<h3>Nachinstallation einzelner Funktionen</h3>
-<p>Du
+<h3><%=_('Nachinstallation einzelner Funktionen')%></h3>
+<p><%=_('Du
 hast schon eine lauff&auml;hige Ubuntu-Installation und m&ouml;chtest
 bestimmte Funktionen hinzuf&uuml;gen? Auch dafür kannst du Communtu benutzen.
 Du kannst unter <b>Bündel verwalten</b> einzelne Bündel installieren,
-und unter <b>Programme suchen</b> auch einzelne Programme.
+und unter <b>Programme suchen</b> auch einzelne Programme.')%>
 </p>
 <% if !logged_in? %>
-    <h3>Registrierung</h3>
-<p>Um Communtu nutzen zu können, kannst du dich registrieren.
-Das geht ganz einfach über den "Anmelden"-Knopf in der oberen Leiste.
+    <h3><%=_('Registrierung')%></h3>
+<p><%=_('Um Communtu nutzen zu können, kannst du dich registrieren.
+Das geht ganz einfach über den "Anmelden"-Knopf in der oberen Leiste.')%>
 </p>
 <% end %>
 
-<h3>Impressum</h3>
-<p>Natur, Geist und Technik - Verein zur Förderung der Allgemeinbildung e.V.<br />
-c/o <a href="http://www.solidarische-oekonomie-bremen.de" target="_blank">Zentrum f&uuml;r Solidarische &Ouml;konomie</a><br />
+<h3><%=_('Impressum')%></h3>
+<p><%=_('Natur, Geist und Technik - Verein zur Förderung der Allgemeinbildung e.V.')%><br />
+c/o <a href="http://www.solidarische-oekonomie-bremen.de" target="_blank"><%=_('Zentrum f&uuml;r Solidarische &Ouml;konomie')%></a><br />
 Bauernstr. 2<br />
 28203 Bremen<br />
 <a href="mailto:in&#102o&#64c&#111m&#109&#117&#110&#116&#117.&#100e">in&#102o&#64c&#111m&#109&#117&#110&#116&#117.&#100e</a><br />	
 </p>
-<h3>Spendenm&ouml;glichkeit</h3>
-<p>Allgemeinbildung e.V.<br />
-Konto 172 9375, Sparkasse Bremen, BLZ 290 501 01<br /> 
-Verwendungszweck: Communtu<br />
-Spendenbescheinigung kann ausgestellt werden.
+<h3><%=_('Spendenm&ouml;glichkeit')%></h3>
+<p><%=_('Allgemeinbildung e.V.')%><br />
+<%=_('Konto 172 9375, Sparkasse Bremen, BLZ 290 501 01')%><br /><%=_(' 
+Verwendungszweck: Communtu')%><br />
+<%=_('Spendenbescheinigung kann ausgestellt werden.')%>
 </p>

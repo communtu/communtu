@@ -1,26 +1,26 @@
 <% if is_admin? %>
 <p>
-  <b>Name:</b>
+  <b><%=_("Name:")%></b>
   <%=h @derivative.name %>
 </p>
 
 <p>
-  <b>Sudo-Programm:</b>
+  <b><%=_("Sudo-Programm:")%></b>
   <%=h @derivative.sudo %>
 </p>
 
 <p>
-  <b>Dialog-Programm:</b>
+  <b><%=_("Dialog-Programm:")%></b>
   <%=h @derivative.dialog %>
 </p>
 
 
 <p>
-  <b>Icon file:</b>
+  <b><%=_("Icon file:")%></b>
   <%=h @derivative.icon_file %>
 </p>
 
 
-<%= link_to 'Edit', edit_derivative_path(@derivative) %> |
-<%= link_to 'Back', derivatives_path %>
+<%= link_to _('Bearbeiten'), edit_derivative_path(@derivative) %> |
+<%= link_to _('Zurück'), derivatives_path %>
 <% end %>

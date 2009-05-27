@@ -2,9 +2,9 @@
 
 <table>
   <tr>
-    <th>Von</th>
-    <th>Betreff</th>
-    <th>erhalten</th>
+    <th><%=_('Von')%></th>
+    <th><%=_('Betreff')%></th>
+    <th><%=_('erhalten')%></th>
   </tr>
   
   <% for message in @messages %>
@@ -21,4 +21,4 @@
   <% end %>
 </table>
 
-<%= link_to "zurück", user_path(current_user.id)%>
+<%= link_to _("zurück"), user_path(current_user.id)%>

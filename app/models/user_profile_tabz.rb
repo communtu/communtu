@@ -7,7 +7,7 @@ class UserProfileTabz < Tabz::Base
     resides_in "/users/:user_id/user_profile/tabs"
     
     add_tab do 
-        titled "Grunddaten"
+        titled _("Grunddaten")
         looks_like "user_profiles/profile_data"
         with_data do
           @ratings = {}
@@ -22,7 +22,7 @@ class UserProfileTabz < Tabz::Base
     end
     
     add_tab do
-        titled "Detailauswahl"
+        titled _("Detailauswahl")
         looks_like "user_profiles/profile_rating"
         with_data do
             set_to({ :root => Category.find(1), 
@@ -32,7 +32,7 @@ class UserProfileTabz < Tabz::Base
     end
     
     add_tab do
-        titled "Quellen"
+        titled _("Quellen")
         looks_like "user_profiles/sources"
         with_data do
             metas = @user_data[:user].selected_packages
@@ -48,7 +48,7 @@ class UserProfileTabz < Tabz::Base
     end
     
     add_tab do
-        titled "Installation durchführen"
+        titled _("Installation durchführen")
         looks_like "user_profiles/installation"
         with_data do
             set_to({ :metas => @user_data[:user].selected_packages.uniq.map{|m| m.debian_name}.join(",")})          

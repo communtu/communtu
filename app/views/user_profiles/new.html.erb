@@ -1,26 +1,26 @@
-<h1>New user_profile</h1>
+<h1><%=_('Neues Nutzerprofil')%></h1>
 
 <%= error_messages_for :user_profile %>
 
 <% form_for(@user_profile) do |f| %>
   <p>
-    <b>Benutzer</b><br />
+    <b><%=_('Benutzer')%></b><br />
     <%= f.text_field :user_id %>
   </p>
 
   <p>
-    <b>Kategorie</b><br />
+    <b><%=_('Kategorie')%></b><br />
     <%= f.text_field :category_id %>
   </p>
 
   <p>
-    <b>Expertenlevel</b><br />
+    <b><%=_('Expertenlevel')%></b><br />
     <%= f.text_field :rating %>
   </p>
 
   <p>
-    <%= f.submit "Anlegen" %>
+    <%= f.submit _("Anlegen") %>
   </p>
 <% end %>
 
-<%= link_to 'Zurück', user_profiles_path %>
+<%= link_to _('Zurück'), user_profiles_path %>

@@ -1,7 +1,7 @@
 class PackagesController < ApplicationController
 
   def title
-    "Pakete"
+    _("Pakete")
   end
   # GET /Packages
   # GET /Packages.xml
@@ -62,7 +62,7 @@ class PackagesController < ApplicationController
 
     respond_to do |format|
       if @package.save
-        flash[:notice] = 'Paket erzeugt.'
+        flash[:notice] = _('Paket erzeugt.')
         format.html { redirect_to(@Package) }
         format.xml  { render :xml => @package, :status => :created, :location => @package }
       else
@@ -113,7 +113,7 @@ class PackagesController < ApplicationController
     end   
     respond_to do |format|
       if @package.update_attributes(params[:package])
-        flash[:notice] = 'Paket aktualisiert.'
+        flash[:notice] = _('Paket aktualisiert.')
         format.html { redirect_to :action => 'show', :id => @package.id }
         format.xml  { head :ok }
       else

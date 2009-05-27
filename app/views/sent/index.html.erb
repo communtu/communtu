@@ -1,11 +1,11 @@
-<h2>verschickte Nachrichten</h2>
+<h2><%=_('verschickte Nachrichten')%></h2>
 	<%= render_flash %>
 	
 	<table>
       <tr>
-        <th>An</th>
-        <th>Betreff</th>
-        <th>Zeitpunkt</th>
+        <th><%=_('An')%></th>
+        <th><%=_('Betreff')%></th>
+        <th><%=_('Zeitpunkt')%></th>
       </tr>
 
       <% for message in @messages %>
@@ -17,4 +17,4 @@
       <% end %>
     </table>
 	
-<%= link_to "zurück", user_path(current_user.id)%>
+<%= link_to _("zurück"), user_path(current_user.id)%>

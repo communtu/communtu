@@ -5,26 +5,26 @@
 </span><br /><br />
 <% url1 = "apt://"+@package.name %>
 <% url2 = "/users/#{current_user.id}/suggestion/install_package_sources/#{@package.id}" %>
-<%= link_to image_tag("/images/install.png", :size => "22x22", :border => "0", :title => 'Paket installieren. Bitte ggf. vorher die Quellen hinzufügen.', :alt => "installieren"), url1 %>		
-<%= link_to "Paket sofort installieren", url1%>		
+<%= link_to image_tag("/images/install.png", :size => "22x22", :border => "0", :title => _('Paket installieren. Bitte ggf. vorher die Quellen hinzufügen.'), :alt => _("installieren")), url1 %>		
+<%= link_to _("Paket sofort installieren"), url1%>		
 &nbsp;&nbsp;&nbsp;&nbsp;
-            <%= link_to image_tag("/images/sources.jpg", :size => "22x22", :border => "0", :title => "Quellen hinzufügen", :alt => "Quellen"), url2 %>
-<%= link_to("Quellen für diese Paket hinzufügen", url2) %>
+            <%= link_to image_tag("/images/sources.jpg", :size => "22x22", :border => "0", :title => _("Quellen hinzufügen"), :alt => _("Quellen")), url2 %>
+<%= link_to(_("Quellen für diese Paket hinzufügen"), url2) %>
   <p>
 <table>
 	<tr><td>
   <b>Programm:</b>
-  <%=if @package.is_program then "ja" else "nein" end %>
+  <%=if @package.is_program then _("ja") else _("nein") end %>
    </td>
 <% if !@package.stars.nil? %>
-     <td><b>Beliebtheit:</b></td> 	
-     <td><%= number_with_precision(@package.stars, 1) %>/5 Sterne&nbsp;&nbsp; </td>
+     <td><b><%=_('Beliebtheit:')%></b></td> 	
+     <td><%= number_with_precision(@package.stars, 1) %><%=_('/5 Sterne&nbsp;&nbsp; ')%></td>
      <td nowrap class='star-rating' style='width:<%= (@package.stars * 18).to_i %>px; '></td>
 <% end %>
 </tr>
 <tr>
   <td>
-  <b>Debian-Section:</b>
+  <b><%=_('Debian-Section:')%></b>
   <%=h @package.fullsection %>
  </td>
 </tr></table>
@@ -33,7 +33,7 @@
 
 <% if not @package.urls.nil? and not @package.urls.empty? then %>
 <p>
-  <b>Weblinks:</b><br />
+  <b><%=_('Weblinks:')%></b><br />
   <%=auto_link @package.urls.gsub(/ /,'<br>'), link = :all, :target => '_blank' %>
 </p>
 <p>
@@ -42,7 +42,7 @@
 
 <% if not @package.videos.empty? then %>
   <p>
-  <b>Videos:</b><br />
+  <b><%=_('Videos:')%></b><br />
   <ul>
   <%for v in @package.videos %>
     <li><%=auto_link v.url.gsub(/ /,'<br>'), link = :all, :target => '_blank' %>
@@ -53,13 +53,13 @@
 <% end %>
 
 <p>
-  <b>Beschreibung:</b><br />
+  <b><%=_('Beschreibung:')%></b><br />
   <%= @package.description %>
 </p>
 
 <p>
   <table border=1 style="border-style:solid; border-width:1px; border-collapse:collapse" cellpadding=3 >
-  <tr><th>Distribution</th> <th>Quelle/Repository</th> <th>Paket-Version</th></tr>
+  <tr><th><%=_('Distribution')%></th> <th><%=_('Quelle/Repository')%></th> <th><%=_('Paket-Version')%></th></tr>
   <% for pd in @package.package_distrs%>
     <tr><td><%= link_to(pd.distribution.name, distribution_path(pd.distribution)) %>
 	         </td>
@@ -72,22 +72,22 @@
 </p>
 
 <p>
-  <b>Beinhaltet folgende Pakete ("depends" und "recommends"):</b><br />
+  <b><%=_('Beinhaltet folgende Pakete ("depends" und "recommends"):')%></b><br />
   <%= render(:partial => 'deps', :object => @package.dependencies_intersection {|x| x.depends_or_recommends }) %>
 </p>
 
 <% if is_admin? %>
-<%= link_to 'Direkt und indirekt enthaltene Pakete', :action => 'rdepends', :id => @package.id %>
+<%= link_to _('Direkt und indirekt enthaltene Pakete'), :action => 'rdepends', :id => @package.id %>
 <% end %>
 
 <p>
-<b>Konflikte mit folgenden Paketen (nur solche ohne Version):</b><br />
+<b><%=_('Konflikte mit folgenden Paketen (nur solche ohne Version):')%></b><br />
   <%= render(:partial => 'deps', :object => @package.dependencies_intersection {|x| x.conflicts }) %>
 </p>
 
 <% if !@package.metapackages.empty? then%>
   <p>
-  <b>Wird bei Communtu in folgenden Bündeln benutzt:</b><br />
+  <b><%=_('Wird bei Communtu in folgenden Bündeln benutzt:')%></b><br />
   <ul>
   <% @package.metapackages.each do |m| %>
   <li>
@@ -101,7 +101,7 @@
 
 <% if !@package.used_by.empty? then%>
   <p>
-  <b>Wird in folgenden Paketen benutzt:</b><br />
+  <b><%=_('Wird in folgenden Paketen benutzt:')%></b><br />
   <ul>
   <% @package.used_by.each do |p| %>
   <li>
@@ -113,17 +113,17 @@
 <% end %>
 
 <p>
-<%= image_tag("/images/editp.png", :size => "22x22", :border => 0, :title => "Kommentieren", :alt => "Kommentieren") %>
-<%= link_to 'Kommentieren', { :controller => :packages, :action => :add_comment, \
+<%= image_tag("/images/editp.png", :size => "22x22", :border => 0, :title => _("Kommentieren"), :alt => _("Kommentieren")) %>
+<%= link_to _('Kommentieren'), { :controller => :packages, :action => :add_comment, \
 	    :id => @package.id } %>
 <%= show_comments @package.comments %>
 </p>
 </div>
-<%= link_to 'Bearbeiten', {:action => 'edit', :id => @package.id} %> &nbsp;&nbsp;
+<%= link_to _('Bearbeiten'), {:action => 'edit', :id => @package.id} %> &nbsp;&nbsp;
 
-<%= link_to 'Metapaket in Bündel wandeln', {:action => 'convert', :id => @package.id} %> &nbsp;&nbsp;
+<%= link_to _('Metapaket in Bündel wandeln'), {:action => 'convert', :id => @package.id} %> &nbsp;&nbsp;
 <% else %>
 <div class="inner0">
-<p>Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.</p>
+<p><%=_('Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.')%></p>
 </div>
 <% end %>
