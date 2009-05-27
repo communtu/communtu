@@ -3,7 +3,6 @@
 
 class ApplicationController < ActionController::Base
   require 'set.rb'
-  require 'i18n'
   
   helper :all # include all helpers, all the time
   include AuthenticatedSystem
