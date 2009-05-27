@@ -1,4 +1,7 @@
 class DebsController < ApplicationController
+  def title
+    "Debian-Pakete"
+  end
   # GET /debs
   # GET /debs.xml
   def index
