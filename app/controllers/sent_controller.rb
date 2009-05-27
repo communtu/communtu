@@ -9,6 +9,8 @@ class SentController < ApplicationController
 
   def new
     @message = current_user.sent_messages.build(params[:message])
+    #Looks for User Id from URL and fills into inputbox
+    !params[:mail_to].nil? ? @message.to = User.find(params[:mail_to]).login : nil
   end
   
   def create
@@ -24,7 +26,7 @@ class SentController < ApplicationController
       respond_to do |format|
         format.html do 
           flash[:notice] = "Nachricht gesendet."
-          redirect_to :action => "index"
+          redirect_to :back
         end
       end
     else

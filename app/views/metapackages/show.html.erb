@@ -1,12 +1,15 @@
 <div class="inner0">
 <%= render_flash %>
 <% if logged_in? %>
+
 <table width="100%">
 	<tr><td width="50%">
-		<span class="headline">   <%=h @metapackage.name %>
+			<span class="headline">   <%=h @metapackage.name %>
 </span> <br />
-<font size="-3">Bündel erstellt von <b><%= link_to @metapackage.user.login, '/users/' + @metapackage.user.id.to_i.to_s + '/show' %></b></font>
+<font size="-3">Bündel erstellt von <b><%= link_to @metapackage.user.login, user_path(@metapackage.user.id) %></b></font> 
+<%=link_to (image_tag("message.png", :alt=>"neue Nachricht",:title=>"neue Nachricht", :mouseover=>"message_rollover.png",:border=>"0" ), {:controller=>"sent", :action=>"new", :mail_to=>@metapackage.user.id}) %>
 </td>
+	
 <% if !request.env['HTTP_REFERER'].nil? then %>
 
      <td width="25%"></td>

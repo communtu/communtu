@@ -524,6 +524,22 @@ li.cartlist {
     list-style-type: none;
 }
 
+/* Classes for Message Picture and Rollover 
+.message {
+	height:			20px;
+	width:			27px;
+	margin-left:	10px;
+}
+
+.msg_pic {
+	background-image:		url(/images/message.png)
+}
+
+.msg_pic:hover {
+	background-image:		url(/images/message_rollover.png)
+}
+*/
+
     /*             styles for the star rater                */    
     .star-rating{
         list-style:none;
