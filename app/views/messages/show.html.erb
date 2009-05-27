@@ -5,5 +5,7 @@
 <p><strong>erhalten am:</strong> <%= change_date_time(@message.created_at)%></p>
 
 <pre><%=h @message.body %></pre>
+<p><%= link_to "Antworten", reply_message_path(@message) %></p>
+<p><%= link_to "Weiterleiten", forward_message_path(@message) %></p>
 
 <%= link_to "zurück", user_path(current_user.id)%>

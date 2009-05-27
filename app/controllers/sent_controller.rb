@@ -27,6 +27,7 @@ class SentController < ApplicationController
       respond_to do |format|
         format.html do 
           flash[:notice] = "Nachricht erfolgreich versendet"
+          #Redirects to metapackages where message was sent if successful else to new message
           redirect_to  request.get? ? request.env["HTTP_REFERER"] : session[:return_to]
         end
       end

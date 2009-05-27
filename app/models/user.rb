@@ -253,7 +253,9 @@ class User < ActiveRecord::Base
   end
 
   def build_inbox
-    folders.build(:name => "Inbox")
+    if !self.anonymous?
+      folders.build(:name => "Inbox")
+    end
   end
   #Messanger methods END
 

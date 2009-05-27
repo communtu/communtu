@@ -540,6 +540,12 @@ li.cartlist {
 }
 */
 
+	.check_img {
+		height:			15px;
+		width:			15px;
+		margin-left: 	5px;
+	}
+
     /*             styles for the star rater                */    
     .star-rating{
         list-style:none;

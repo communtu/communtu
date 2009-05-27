@@ -19,4 +19,10 @@ class ApplicationController < ActionController::Base
     redirect_to(:controller => 'home', :action => 'auth_error')
   end
   filter_parameter_logging :password 
+  
+  def is_anonymous 
+    if current_user.anonymous?
+      redirect_to root_path
+    end
+  end
 end

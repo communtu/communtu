@@ -81,7 +81,8 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/admin/repositories', :controller => 'repositories', :action => 'new'
   map.connect '/distributions', :controller => 'distributions', :action => 'index'
 
-  map.resources :sent, :messages, :mailbox
+  map.resources :sent, :mailbox
+  map.resources :messages, :member => { :reply => :get, :forward => :get }
 
   map.activate '/activate/:id', :controller => 'accounts', :action => 'show'
   map.forgot_password '/forgot_password', :controller => 'passwords', :action => 'new'

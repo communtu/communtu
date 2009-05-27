@@ -3,7 +3,7 @@
 <%= render_flash %>
 
 <%=form_tag("/sent/create")%>
-  <p>An:<%= text_field :message,:to, {:onchange => remote_function(:url=>{:action=>:update_user_exists},:with=>'Form.Element.serialize(this)')} %><label id="user_exists"></label> </p>
+  <div>An:<%= text_field :message,:to, {:onchange => remote_function(:url=>{:action=>:update_user_exists},:with=>'Form.Element.serialize(this)')} %><label id="user_exists"></label></div>
   <p>Betreff: <%= text_field :message,:subject %></p>
   <p>Nachricht:<br /> <%= text_area :message,:body %></p>
   <p><%= submit_tag "Abschicken" %></p>
