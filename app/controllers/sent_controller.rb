@@ -11,6 +11,7 @@ class SentController < ApplicationController
     @message = current_user.sent_messages.build(params[:message])
     #Looks for User Id from URL and fills into inputbox
     !params[:mail_to].nil? ? @message.to = User.find(params[:mail_to]).login : nil
+    session[:return_to] = request.env["HTTP_REFERER"]
   end
   
   def create
@@ -25,8 +26,8 @@ class SentController < ApplicationController
     if @message.save
       respond_to do |format|
         format.html do 
-          flash[:notice] = "Nachricht gesendet."
-          redirect_to :back
+          flash[:notice] = "Nachricht erfolgreich versendet"
+          redirect_to  request.get? ? request.env["HTTP_REFERER"] : session[:return_to]
         end
       end
     else
