@@ -1,5 +1,5 @@
 <% if is_admin? %>
-<h1><%=_("Listing derivatives")%></h1>
+<h1><%=_("Derivate auflisten")%></h1>
 
 <table>
   <tr>
@@ -11,7 +11,7 @@
     <td><%=h derivative.name %></td>
     <td><%= link_to _('Anzeigen'), derivative %></td>
     <td><%= link_to _('Bearbeiten'), edit_derivative_path(derivative) %></td>
-    <td><%= link_to _('Löschen'), derivative, :confirm => _('Bist du sicher?'), :method => :delete %></td>
+    <td><%= link_to _('LÃ¶schen'), derivative, :confirm => _('Bist du sicher?'), :method => :delete %></td>
   </tr>
 <% end %>
 </table>

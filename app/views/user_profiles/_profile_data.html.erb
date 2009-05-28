@@ -4,7 +4,7 @@
 <%= error_messages_for :user_profile %>
 
 <p><%=_('Auf dieser Seite kannst du in vier einfachen Schritten deine Communtu-Nachinstallation auswählen - fertig. 
-Wenn gewünscht, ist aber auch eine detailliertere Auswahl möglich. ')%><b><%=_('Achtung: zum Schluss unten auf einen der 'Speichern'-Knöpfe klicken!')%></b></p>
+Wenn gewünscht, ist aber auch eine detailliertere Auswahl möglich. ')%><b><%=_("Achtung: zum Schluss unten auf einen der 'Speichern'-Knöpfe klicken!") %></b></p>
 
 <% form_tag user_user_profile_path(current_user) + "/update_data", options = {:name => "data", :method => :put} do %>
     <ol>	

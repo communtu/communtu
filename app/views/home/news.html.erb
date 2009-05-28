@@ -1,11 +1,11 @@
 <h2><%=_('Aktuelles')%></h2>
 <h3><%=_('Unsere Mailinglisten')%></h3>
 <p><%=_('Um die Kommunikation mit unseren Nutzern zu verbessern, haben wir Mailinglisten eingerichtet:')%></p>
-<p><%= link_to _("mailto:communtu-announce-de+subscribe@googlegroups.com"), _("communtu-announce-de+subscribe@googlegroups.com") %>
+<p><%= mail_to _("communtu-announce-de+subscribe@googlegroups.com"), _("communtu-announce-de+subscribe@googlegroups.com") %>
 <br /><%=_('Diese Liste ist für allgemeine Ankündigungen aus den Communtu Team für die Nutzer gedacht.
  Es wir hier ungefähr einmal die Woche eine E-Mail über den Verteiler geschickt. 
  Die Nachrichten werden in einem ')%><%= link_to _("Archiv"), _("http://groups.google.com/group/communtu-announce-de/topics?start="), :target=> "_blank" %><%=_(' gesammelt.')%></p>
-<p><%= link_to_("mailto:communtu-discuss-de+subscribe@googlegroups.com"), _("communtu-discuss-de+subscribe@googlegroups.com") %>
+<p><%= mail_to _("communtu-discuss-de+subscribe@googlegroups.com"), _("communtu-discuss-de+subscribe@googlegroups.com") %>
 <br /><%=_('Diese Liste ist für eine Diskussion rund um die Plattform gedacht.
  Hier kommt etwas mehr als einmal die Woche eine E-Mail über den Verteiler. 
  Die Nachrichten werden in einem ')%><%= link_to _("Archiv"), _("http://groups.google.com/group/communtu-discuss-de/topics?start="), :target=>"_blank" %><%=_(' gesammelt.')%></p>
