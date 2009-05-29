@@ -22,6 +22,7 @@ class ApplicationController < ActionController::Base
   
   def is_anonymous 
     if current_user.anonymous?
+      flash[:error] = _("Diese Funktion ist für anonyme Nutzer nicht verfügbar.")
       redirect_to root_path
     end
   end

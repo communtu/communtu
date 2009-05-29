@@ -1,4 +1,6 @@
 class MessagesController < ApplicationController
+  before_filter :is_anonymous
+  
   def show
     @message = current_user.received_messages.find(params[:id])
     @message.is_read = true;
@@ -14,6 +16,7 @@ class MessagesController < ApplicationController
     body = @original.body.gsub(/^/, "> ")
     @message = current_user.sent_messages.build(:to => [@original.author.login], :subject => subject, :body => body)
     render :template => "sent/new"
+    
   end
   
   def forward

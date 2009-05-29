@@ -1,4 +1,6 @@
 class SentController < ApplicationController
+  before_filter :is_anonymous
+  
   def index
     @messages = current_user.sent_messages.find(:all, :limit=>10, :order => "created_at DESC")
   end
@@ -15,7 +17,7 @@ class SentController < ApplicationController
   end
   
   def create
-    if(!User.find_by_login(params[:message]['to']).nil?)
+    if(!User.find(:all,:conditions=>["login = ? and anonymous = ?",params[:message]['to'],false]).empty?)
       @message = current_user.sent_messages.build(params[:message])
     else
       flash[:error] = _("Benutzer existiert nicht")
@@ -38,7 +40,8 @@ class SentController < ApplicationController
   
   def update_user_exists
     render :update do |page|
-      if(User.find_by_login(params[:message]['to']).nil?)
+     
+      if(User.find(:all,:conditions=>["login = ? and anonymous = ?",params[:message]['to'],false]).empty?)
         page.replace_html :user_exists, :partial => 'user_not_exists'
       else
         page.replace_html :user_exists, :partial => 'user_exists'

@@ -1,5 +1,5 @@
 class MailboxController < ApplicationController
-  before_filter :is_anonymous, :flash =>{:error=>_("Anonyme Nutzer dürfen keine Mails verwenden")}
+  before_filter :is_anonymous
   
   def index
     @folder = current_user.inbox
