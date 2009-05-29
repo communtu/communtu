@@ -1,6 +1,6 @@
 class SentController < ApplicationController
   before_filter :is_anonymous
-  
+ 
   def index
     @messages = current_user.sent_messages.find(:all, :limit=>10, :order => "created_at DESC")
   end
@@ -11,13 +11,16 @@ class SentController < ApplicationController
 
   def new
     @message = current_user.sent_messages.build(params[:message])
-    #Looks for User Id from URL and fills into inputbox
+    #Looks for User login (:mail_to) from URL and fills into inputbox
     !params[:mail_to].nil? ? @message.to = User.find(params[:mail_to]).login : nil
     session[:return_to] = request.env["HTTP_REFERER"]
   end
   
   def create
     if(!User.find(:all,:conditions=>["login = ? and anonymous = ?",params[:message]['to'],false]).empty?)
+      if params[:subject].nil? or params[:subject].empty?
+        flash[:error] = _("Der Betreff darf nicht leer sein.")
+      end
       @message = current_user.sent_messages.build(params[:message])
     else
       flash[:error] = _("Benutzer existiert nicht")
@@ -28,6 +31,8 @@ class SentController < ApplicationController
     if @message.save
       respond_to do |format|
         format.html do 
+          #Clears the flash[:error] Message
+          flash.delete(:error)
           flash[:notice] = _("Nachricht erfolgreich versendet")
           #Redirects to metapackages where message was sent if successful else to new message
           redirect_to  request.get? ? request.env["HTTP_REFERER"] : session[:return_to]

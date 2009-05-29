@@ -5,6 +5,7 @@ class Message < ActiveRecord::Base
   #Allows to list recipients: e.g. User.find(:first).sent_messages.find(:first).recipients OR
 
   before_create :prepare_copies
+  validates_presence_of :subject, :on => :create, :message => _("Bitte einen Betreff angeben")
   
   attr_accessor  :to # recipient
   attr_accessible :subject, :body, :to
