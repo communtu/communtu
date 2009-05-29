@@ -1,34 +1,34 @@
 <h2><%=_('Communtu-Nachinstallation')%></h2>
 <%= render_flash %>
 
-<% if current_user.selected_packages.empty? %><%=_('
-Um etwas installieren zu können, musst du zunächst unter "Grunddaten" oder "Detailauswahl" etwas auswählen.
-')%><% else %><%=_('
-Aufgrund deiner Auswahl werden jetzt Programme auf deinem Computer installiert.
-Folgende Schritte sind dafür zu tun:
-')%><ol>
+<% if current_user.selected_packages.empty? %>
+<%=_('Um etwas installieren zu können, musst du zunächst unter "Grunddaten" oder "Detailauswahl" etwas auswählen.')%>
+<% else %>
+<%=_('Aufgrund deiner Auswahl werden jetzt Programme auf deinem Computer installiert.
+Folgende Schritte sind dafür zu tun:')%>
+<ol>
 	<li><%=_('Klicke auf das Symbol rechts unten')%></li>
 	<li><%=_('Speichere die Datei auf deinem Computer ab, am einfachsten auf dem Desktop')%></li>
 	<li><%=_('Auf dem Desktop (oder im Dateibrowser): Rechtsklick mit der Maus, Eigenschaften, und dann ein Häkchen bei "Ausführen" setzen.')%></li>
     <li><%=_('Doppelklick auf die Datei (zum Ausführen)')%></li>
 	<li><%=_('Es werden zur Information nochmal die hinzugefügten Quellen und Pakete angezeigt. Zweimal auf "OK" drücken.')%></li>
-</ol><%=_('
-Die Datei ist ein Skript, das automatisch die gewünschten
-Programme installiert, inklusive Download aus dem Internet.
+</ol>
+<%=_('Die Datei ist ein Skript, das automatisch die gewünschten
+Programme installiert, inklusive Download aus dem Internet.')%>
 
-    ')%><div style="padding-top:12px;padding-right:8px" align="right">
+<div style="padding-top:12px;padding-right:8px" align="right">
 	<%= link_to image_tag("/images/apt.png", :title=>_('Installieren'), :alt=>_('Installieren'), :border=>'0'), user_path(current_user) + "/suggestion/install_new"%>
     </div>
 
-<h3><%=_('Installation über Metapakete')%></h3><%=_('
-Die Installation über Metapakete ist noch in der Erprobungsphase. Sie wird die Skript-basierte Installation ablösen.
-')%><%=_('<b>Zwei Schritte</b> sind zu tun (Bei einem Versionswechsel muss der erste Schritt erneut ausgeführt werden, da die Communtu Quellen durch das Upgrade deaktiviert wurden.):
-')%><ol>
+<h3><%=_('Installation über Metapakete')%></h3>
+<%=_('Die Installation über Metapakete ist noch in der Erprobungsphase. Sie wird die Skript-basierte Installation ablösen.')%>
+<%=_('<b>Zwei Schritte</b> sind zu tun (Bei einem Versionswechsel muss der erste Schritt erneut ausgeführt werden, da die Communtu Quellen durch das Upgrade deaktiviert wurden.):')%>
+<ol>
 	<li> <% url1 = '/users/'+current_user.id.to_s + '/suggestion/install_sources'%>	
         <%= link_to image_tag("/images/sources.jpg", :size => "22x22", :border => "0", :title => _("Quellen hinzufügen"), :alt => _("Quellen")), url1 %>
 		<%= link_to _('Quellen und Schlüssel eintragen') , url1  %>
-        <br><%=_('Link einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer öffnen.
-        ')%><% if current_user.profile_changed %> 
+        <br><%=_('Link einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer öffnen.')%>
+<% if current_user.profile_changed %> 
 		  <%if current_user.profile_version > 1 %>
 		     <br><%=_('Dieser Schritt muss neu ausgeführt werden, weil du die Einstellungen geändert hast.
 		  ')%><% end %>
@@ -37,8 +37,8 @@ Die Installation über Metapakete ist noch in der Erprobungsphase. Sie wird die 
 		   <br><%=_('Dieser Schritt wurde bereits schon einmal ausgeführt.
 		')%><% end %>
     </li>
-	<li> <%= image_tag("/images/install.png", :size => "22x22", :border => "0", :title => _('installieren der Metapakete. Bitte vorher die Quellen hinzufügen.'), :alt => _("installieren"))%><%=_('
-	    Pakete installieren. Es gibt zwei Alternativen:
+	<li> <%= image_tag("/images/install.png", :size => "22x22", :border => "0", :title => _('installieren der Metapakete. Bitte vorher die Quellen hinzufügen.'), :alt => _("installieren"))%>
+<%=_('	    Pakete installieren. Es gibt zwei Alternativen:
 	    ')%><ul>
 		<li><%= link_to _('Installation über ein Metapaket'), '/suggestion/install_bundle_as_meta'%> </li>
 	    <li><% url2 = 'apt://'+metas%>
@@ -49,7 +49,6 @@ Die Installation über Metapakete ist noch in der Erprobungsphase. Sie wird die 
 		     <br><%=_('Die Browser Konqueror und Opera bitte erst für ')%><%= link_to 'apturl', _('http://wiki.ubuntuusers.de/apturl')%><%=_(' konfigurieren.
 		')%></li></ul>
 	</li>
-</ol><%=_('
-Hinweis: Bitte .deb-Dateien nicht umbenennen.
-
-')%><% end %>
+</ol>
+<%=_('Hinweis: Bitte .deb-Dateien nicht umbenennen.')%>
+<% end %>

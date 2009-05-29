@@ -13,8 +13,8 @@
 <p>
   <p>
     <b><%=_('Icon')%></b><br />
-     <%= @package.icon(35)%><%=_('
-	 &nbsp;&nbsp;Neues Icon: ')%><%= file_field(:package,:icon_file) %>
+     <%= @package.icon(35)%>
+<%=_('	 &nbsp;&nbsp;Neues Icon: ')%><%= file_field(:package,:icon_file) %>
   </p>
 <p>
 
@@ -38,8 +38,8 @@
 <% end %>
   <p>
     <b><%=_('Neuer Link auf ein Video')%></b><br />
-    URL: <%= text_field_tag :video_url, "", :size => 65 %><br><%=_(' 
-    Beschreibung des Videos:')%><br>
+    URL: <%= text_field_tag :video_url, "", :size => 65 %><br>
+<%=_('    Beschreibung des Videos:')%><br>
 	<%= text_area :video_descr, :v, :rows => 3, :cols => 80 %>
   </p>
     <p>

@@ -8,8 +8,8 @@
 		<ul>
 			<% conflicts.each do |p,cons|%>
 			  <li>
-                 <%= link_to p.name, package_path(p)%><%=_(' ist in Konflikt mit 
-			  	 ')%><% for conp in cons %>
+                 <%= link_to p.name, package_path(p)%><%=_(' ist in Konflikt mit ')%>
+<% for conp in cons %>
 				   <%= link_to conp.name, package_path(conp)%>&nbsp; 
 				 <% end %>
 			  </li>

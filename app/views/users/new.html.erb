@@ -1,7 +1,7 @@
 <%= error_messages_for :user %>
 <h2><%=_('Registrierung')%></h2>
-<p><%=_('Hier hast du die M&ouml;glichkeit dich zu registrieren.')%><br /><%=_('
-Wenn du über die Weiterentwicklung von Communtu informiert werden m&ouml;chtest, dann gebe bitte deine richige E-Mail-Adresse an.')%></p>
+<p><%=_('Hier hast du die M&ouml;glichkeit dich zu registrieren.')%><br />
+<%=_('Wenn du über die Weiterentwicklung von Communtu informiert werden m&ouml;chtest, dann gebe bitte deine richige E-Mail-Adresse an.')%></p>
 <% form_for :user, :url => users_path do |f| %>
 <p><label for="login"><%=_('Benutzername')%></label><br/>
 <%= f.text_field :login %></p>

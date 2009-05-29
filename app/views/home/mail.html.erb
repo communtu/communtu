@@ -1,6 +1,6 @@
-<h1><%=_('Benachrichtigung bei Fehlerbehebung')%></h1><%=_('
-Bitte benachrichtigt mich unter folgender E-Mail über die Fehlerbehebung.
-')%><%= form_tag(:controller => 'home', :action => 'submit_mail') %>
+<h1><%=_('Benachrichtigung bei Fehlerbehebung')%></h1>
+<%=_('Bitte benachrichtigt mich unter folgender E-Mail über die Fehlerbehebung.')%>
+<%= form_tag(:controller => 'home', :action => 'submit_mail') %>
 <%= #text_field_tag(_('E-Mail:'))
 %>
 <p><%=_('E-Mail: ')%><%= text_field(:form, :email) %></p>

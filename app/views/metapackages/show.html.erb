@@ -47,9 +47,9 @@
 </p>
   
 <div style="position:relative; left:480px; top:-30px; height:0px;width:150px;">
-<% if logged_in? and (@metapackage.owned_by? current_user or is_admin?) %><%=_('
-  Aktionen:&nbsp;&nbsp;
-  ')%><div style="position:relative; top:-22px; left:64px">
+<% if logged_in? and (@metapackage.owned_by? current_user or is_admin?) %>
+<%=_('  Aktionen:&nbsp;&nbsp;')%>
+<div style="position:relative; top:-22px; left:64px">
   <%= form_tag(metapackage_path(@metapackage) + "/edit_action") %>
     <select id="method" name="method" onchange="this.form.submit()">
         <option value="noop">---</option>

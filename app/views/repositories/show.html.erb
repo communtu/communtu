@@ -20,22 +20,22 @@
 	</tr>
 	<tr>
 	<td><%=_('Lizenztyp:')%></td>
-	<td><% if @repository.license_type == 0 %><%=_('
-        OpenSource
-        ')%><%  else %><%=_('
-        kommerziell 
-        ')%><% end %>
+	<td><% if @repository.license_type == 0 %>
+<%=_('        OpenSource')%>
+<%  else %>
+<%=_('        kommerziell ')%>
+<% end %>
 </td>
 	</tr>
 	<tr>
 	<td><%=_('Sicherheitstyp:')%></td>
-	<td><% if @repository.security_type == 0 %><%=_('
-        Nativ
-        ')%><% elsif @repository.security_type == 1 %><%=_('
-        Trusted
-        ')%><%  else %><%=_('
-        Third-Party 
-        ')%><% end %>
+	<td><% if @repository.security_type == 0 %>
+<%=_('Nativ')%>
+<% elsif @repository.security_type == 1 %>
+<%=_('Trusted')%>
+<%  else %>
+<%=_('Third-Party ')%>
+<% end %>
 </td>
 	</tr>
 	<tr>

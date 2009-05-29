@@ -7,8 +7,8 @@
 <a href=_("http://www.ubuntuusers.de")><%=_('Ubuntu-Linux')%></a><%=_(' steht für ein menschliches Linux, das einfach zu benutzen ist.
 Aber um Ubuntu wirklich gut nutzen zu können, muss man ganz schön viele Programme nachinstallieren, und es ist oft schwer, da den Überblick zu behalten.
 Bei Communtu gibst du nur an, welche Aufgaben du mit deinem Computer erledigen willst, und Communtu schlägt dir eine
-ganze Reihe von Programmen vor, die automatisch installiert werden können.
-')%><%= link_to _('Mehr ...'), '/home/about'%><br />
+ganze Reihe von Programmen vor, die automatisch installiert werden können.')%>
+<%= link_to _('Mehr ...'), '/home/about'%><br />
 <% if logged_in? %>
 <p><%=_('Die Seitenleiste links bietet folgende Möglichkeiten:')%></p>
 <ul>
@@ -22,12 +22,12 @@ ganze Reihe von Programmen vor, die automatisch installiert werden können.
 <li><%=_('<b>Kategorien verwalten</b> Hier kannst du als Admin neue Kategorien erstellen oder die Struktur des Kategorienbaums ändern. Vorsicht walten lassen!')%></li>
 <% end %>
 <li><%=_('<b>Aktuelles</b> Hinweise auf Veranstaltungen zu Communtu, Communtu-Blog ...')%></li>
-</ul><%=_('
-Es gibt auch noch ')%><%= link_to _('genauere Infos'), '/home/about' %><%=_(' &uuml;ber das Projekt und &uuml;ber die Mitwirkenden im ')%><%= link_to _('Impressum.'), '/home/impressum' %>
+</ul>
+<%=_('Es gibt auch noch ')%><%= link_to _('genauere Infos'), '/home/about' %><%=_(' &uuml;ber das Projekt und &uuml;ber die Mitwirkenden im ')%><%= link_to _('Impressum.'), '/home/impressum' %>
 <% else %>
-<br /><%=_('
-	Klicke auf	')%><%= link_to _('Registrierung'), '/users/new' %><%=_(', um einen neuen Benutzer anzulegen, oder 
-	')%><%= link_to _('melde'), '/users/login' %><%=_(' dich an, oder ')%><%= link_to _('nutze Communtu anonym'), '/users/anonymous_login' %>. 
+<br />
+<%=_('	Klicke auf	')%><%= link_to _('Registrierung'), '/users/new' %><%=_(', um einen neuen Benutzer anzulegen, oder ')%>
+<%= link_to _('melde'), '/users/login' %><%=_(' dich an, oder ')%><%= link_to _('nutze Communtu anonym'), '/users/anonymous_login' %>. 
 <br /><br />
 <%= link_to _('Zum Impressum'), '/home/impressum' %>
 <% end %>

@@ -1,6 +1,6 @@
 <h2><%=_('Passwort vergessen')%></h2>
-<% form_tag url_for(:action => 'create') do %><%=_('
-    Mit welcher Email-Adresse hast du das Benutzerkonto angelegt?')%><br />
+<% form_tag url_for(:action => 'create') do %>
+<%=_('    Mit welcher Email-Adresse hast du das Benutzerkonto angelegt?')%><br />
     <%= text_field_tag :email, "", :size => 50 %><br />
     <%= submit_tag _('Passwort zurücksetzen') %>
 <% end %>

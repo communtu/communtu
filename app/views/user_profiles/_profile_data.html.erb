@@ -29,8 +29,8 @@ Wenn gewünscht, ist aber auch eine detailliertere Auswahl möglich. ')%><b><%=_
 		</tr>
 		</table></li>
      <li><p><%=_('Wähle bitte deine Ubuntu-Version aus. ')%><%= link_to(_('Wie stelle ich die Version fest?'),'/user_profiles/help')%><br />
-		<% if !dist_string.nil? %><%=_('
-	     	Über den Browser festgestellte Version: ')%><%= dist_string %>
+		<% if !dist_string.nil? %>
+<%=_('	     	Über den Browser festgestellte Version: ')%><%= dist_string %>
 		<% end %>
 </p>
         <% distrib_options = "" %>
