@@ -7,6 +7,6 @@
 <pre><%=h @message.body %></pre>
 <%= link_to t(:view_messages_show_3), reply_message_path(@message) %><br/>
 <%= link_to t(:view_messages_show_4), forward_message_path(@message) %><br/><br/>
-<%= link_to _("Löschen"), {:controller => "messages", :action => "destroy", :id => @message},:method =>:delete  %><br/>
+<%= link_to t(:view_messages_show_5), {:controller => "messages", :action => "destroy", :id => @message},:method =>:delete  %><br/>
 
-<%= link_to t(:view_messages_show_5), user_path(current_user.id)%>
+<%= link_to t(:view_messages_show_6), user_path(current_user.id)%>
