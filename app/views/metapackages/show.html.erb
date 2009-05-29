@@ -90,7 +90,7 @@
 <hr>
 <%= render :partial => "package_list", :locals => { :metapackage => @metapackage, :editable => false, :distribution => @distribution, :derivative =>  @derivative} %>
 <%= image_tag("/images/editp.png", :size => "22x22", :border => 0, :title => _("Kommentieren"), :alt => _("Kommentieren")) %> 
-<%= link_to_('Kommentieren'), { :controller => :metapackages, :action => :add_comment, \
+<%= link_to _('Kommentieren'), { :controller => :metapackages, :action => :add_comment, \
 	    :id => @metapackage.id } %>
 <%= show_comments @metapackage.comments %>
 <% else %>
