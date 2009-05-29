@@ -30,5 +30,11 @@ class MessagesController < ApplicationController
     @message = current_user.sent_messages.build(:subject => subject, :body => body)
     render :template => "sent/new"
   end
+  
+  def destroy
+    @message = current_user.received_messages.find(params[:id])
+    @message.destroy
+    redirect_to inbox_path
+  end
 
 end

@@ -5,7 +5,8 @@
 <p><strong><%=t(:view_messages_show_2)%></strong> <%= change_date_time(@message.created_at)%></p>
 
 <pre><%=h @message.body %></pre>
-<p><%= link_to t(:view_messages_show_3), reply_message_path(@message) %></p>
-<p><%= link_to t(:view_messages_show_4), forward_message_path(@message) %></p>
+<%= link_to t(:view_messages_show_3), reply_message_path(@message) %><br/>
+<%= link_to t(:view_messages_show_4), forward_message_path(@message) %><br/><br/>
+<%= link_to _("Löschen"), {:controller => "messages", :action => "destroy", :id => @message},:method =>:delete  %><br/>
 
 <%= link_to t(:view_messages_show_5), user_path(current_user.id)%>
