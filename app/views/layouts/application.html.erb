@@ -42,7 +42,12 @@
         </div>
 <% if logged_in? %>
 <div align="right">
-<font size="-3"><%= link_to _('Feedback an Communtu'), '/home/contact_us' %>&nbsp;&nbsp;&nbsp;<%=_('angemeldet als  ')%><%= link_to current_user.login, '/users/' + current_user.id.to_i.to_s + '/show' %> <%= link_to image_tag("16-member.png", :border => '0', :title => current_user.login, :alt => current_user.login), '/users/' + current_user.id.to_i.to_s + '/show' %></font></div>
+<font size="-3"><%= link_to _('Feedback an Communtu'), '/home/contact_us' %>&nbsp;&nbsp;&nbsp;<%=_('angemeldet als  ')%>
+	<%= link_to current_user.login, user_path(current_user.id) %>
+	<%= link_to image_tag("16-member.png", :border => '0', :title => current_user.login, :alt => current_user.login), user_path(current_user.id) %>
+</font>
+	<%= new_message? ? link_to(image_tag("message_rollover.png", :alt=>_("neue Nachricht"),:title=>_("neue Nachricht"), :border=>"0"), '/inbox') : link_to(image_tag("message.png", :alt=>_("keine neuen Nachrichten"),:title=>_("keine neuen Nachrichten"), :border=>"0"), '/inbox') %>
+</div>
 <% end %>
 
         <table width="100%">

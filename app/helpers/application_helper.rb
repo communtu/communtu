@@ -86,5 +86,8 @@ module ApplicationHelper
     out.push "</ul>"
   end
 
+  def new_message?
+    !current_user.received_messages.find(:first, :conditions=>["is_read = ?", false]).nil?
+  end
 
 end
