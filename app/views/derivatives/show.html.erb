@@ -1,26 +1,26 @@
 <% if is_admin? %>
 <p>
-  <b><%=_("Name:")%></b>
+  <b><%=t(:view_derivatives_show_0)%></b>
   <%=h @derivative.name %>
 </p>
 
 <p>
-  <b><%=_("Sudo-Programm:")%></b>
+  <b><%=t(:view_derivatives_show_1)%></b>
   <%=h @derivative.sudo %>
 </p>
 
 <p>
-  <b><%=_("Dialog-Programm:")%></b>
+  <b><%=t(:view_derivatives_show_2)%></b>
   <%=h @derivative.dialog %>
 </p>
 
 
 <p>
-  <b><%=_("Icon file:")%></b>
+  <b><%=t(:view_derivatives_show_3)%></b>
   <%=h @derivative.icon_file %>
 </p>
 
 
-<%= link_to _('Bearbeiten'), edit_derivative_path(@derivative) %> |
-<%= link_to _('Zurück'), derivatives_path %>
+<%= link_to t(:view_derivatives_show_4), edit_derivative_path(@derivative) %> |
+<%= link_to t(:view_derivatives_show_5), derivatives_path %>
 <% end %>

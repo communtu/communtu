@@ -1,34 +1,30 @@
-<h2><%=_('Communtu -
- gemeinsam Ubuntu-Linux an individuelle Bed&uuml;rfnisse anpassen')%></h2>
+<h2><%=t(:view_home_home_0)%></h2>
 
 	<%= render_flash %>
 
 
-<a href=_("http://www.ubuntuusers.de")><%=_('Ubuntu-Linux')%></a><%=_(' steht für ein menschliches Linux, das einfach zu benutzen ist.
-Aber um Ubuntu wirklich gut nutzen zu können, muss man ganz schön viele Programme nachinstallieren, und es ist oft schwer, da den Überblick zu behalten.
-Bei Communtu gibst du nur an, welche Aufgaben du mit deinem Computer erledigen willst, und Communtu schlägt dir eine
-ganze Reihe von Programmen vor, die automatisch installiert werden können.')%>
-<%= link_to _('Mehr ...'), '/home/about'%><br />
+<a href=t(:view_home_home_1)><%=t(:view_home_home_2)%></a><%=t(:view_home_home_3)%>
+<%= link_to t(:view_home_home_4), '/home/about'%><br />
 <% if logged_in? %>
-<p><%=_('Die Seitenleiste links bietet folgende Möglichkeiten:')%></p>
+<p><%=t(:view_home_home_5)%></p>
 <ul>
-<li><%=_('<b>Installation</b> bietet dir eine Zusammenstellung (Bündelung) von Programmen für die Installation auf deinem Computer an, entsprechend deinen Angaben, für welche Aufgaben du deinen Ubuntu-PC benutzen willst.')%></li>
-<li><b>Bündel verwalten</b><%=_(' Hast du gute Erfahrungen mit Programmen gemacht? Dann kannst du sie hier thematisch bündeln, oder auch bestehende Bündel angucken. ')%></li>
-<li><%=_('<b>Programme suchen</b> Hier kannst du nach einzelnen Ubuntu-Programmen (Paketen) suchen.')%></li>
-<li><%=_('<b>Ubuntu-Derivate</b> bietet eine Übersicht über Kubuntu, Xubuntu, Medibuntu und wie sie alle heißen ...')%></li>
-<li><%=_('<b>Ubuntu-Versionen</b> Übersicht über die im System verfügbaren Ubuntu-Versionen (Distributionen).')%></li>
+<li><%=t(:view_home_home_6)%></li>
+<li><b>Bündel verwalten</b><%=t(:view_home_home_7)%></li>
+<li><%=t(:view_home_home_8)%></li>
+<li><%=t(:view_home_home_9)%></li>
+<li><%=t(:view_home_home_10)%></li>
 <% if is_admin? %>
-<li><%=_('<b>Benutzer verwalten</b> Hier kannst du als Admin die Rollen der Benutzer ändern. Vorsicht walten lassen!')%></li>
-<li><%=_('<b>Kategorien verwalten</b> Hier kannst du als Admin neue Kategorien erstellen oder die Struktur des Kategorienbaums ändern. Vorsicht walten lassen!')%></li>
+<li><%=t(:view_home_home_11)%></li>
+<li><%=t(:view_home_home_12)%></li>
 <% end %>
-<li><%=_('<b>Aktuelles</b> Hinweise auf Veranstaltungen zu Communtu, Communtu-Blog ...')%></li>
+<li><%=t(:view_home_home_13)%></li>
 </ul>
-<%=_('Es gibt auch noch ')%><%= link_to _('genauere Infos'), '/home/about' %><%=_(' &uuml;ber das Projekt und &uuml;ber die Mitwirkenden im ')%><%= link_to _('Impressum.'), '/home/impressum' %>
+<%=t(:view_home_home_14)%><%= link_to t(:view_home_home_15), '/home/about' %><%=t(:view_home_home_16)%><%= link_to t(:view_home_home_17), '/home/impressum' %>
 <% else %>
 <br />
-<%=_('	Klicke auf	')%><%= link_to _('Registrierung'), '/users/new' %><%=_(', um einen neuen Benutzer anzulegen, oder ')%>
-<%= link_to _('melde'), '/users/login' %><%=_(' dich an, oder ')%><%= link_to _('nutze Communtu anonym'), '/users/anonymous_login' %>. 
+<%=t(:view_home_home_18)%><%= link_to t(:view_home_home_19), '/users/new' %><%=t(:view_home_home_20)%>
+<%= link_to t(:view_home_home_21), '/users/login' %><%=t(:view_home_home_22)%><%= link_to t(:view_home_home_23), '/users/anonymous_login' %>. 
 <br /><br />
-<%= link_to _('Zum Impressum'), '/home/impressum' %>
+<%= link_to t(:view_home_home_24), '/home/impressum' %>
 <% end %>
 </p>

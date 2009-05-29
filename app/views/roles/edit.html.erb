@@ -1,17 +1,17 @@
-<h1><%=_('Rolle bearbeiten')%></h1>
+<h1><%=t(:view_roles_edit_0)%></h1>
 
 <%= error_messages_for :role %>
 <div class="inner1">
 <% form_for(@role) do |f| %>
   <p>
-    <b><%=_('Rollenname')%></b><br />
+    <b><%=t(:view_roles_edit_1)%></b><br />
     <%= f.text_field :rolename %>
   </p>
 
   <p>
-    <%= f.submit _("Speichern") %>
+    <%= f.submit t(:view_roles_edit_2) %>
   </p>
 <% end %>
 </div>
-<%= link_to _('Anzeigen'), @role %> |
-<%= link_to _('Zurück'), roles_path %>
+<%= link_to t(:view_roles_edit_3), @role %> |
+<%= link_to t(:view_roles_edit_4), roles_path %>

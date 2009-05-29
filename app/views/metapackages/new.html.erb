@@ -1,5 +1,5 @@
 <% if logged_in? %>
-<h1><%=_('Neues Bündel')%></h1>
+<h1><%=t(:view_metapackages_new_0)%></h1>
 
 <%= render_flash %>
 
@@ -7,30 +7,30 @@
 
 <% form_for(@metapackage) do |f| %>
   <p>
-    <b><%=_('Name')%></b><br />
+    <b><%=t(:view_metapackages_new_1)%></b><br />
     <%= f.text_field :name %>
   </p>
 
   <p>
-    <b><%=_('Beschreibung')%></b><br />
+    <b><%=t(:view_metapackages_new_2)%></b><br />
     <%= f.text_area :description %>
   </p>
 
   <p>
-    <b><%=_('Kategorie')%></b><br />
+    <b><%=t(:view_metapackages_new_3)%></b><br />
       	<% @categories = Category.find(:all, :order => "name")%>
         <%= f.collection_select(:category_id,@categories,:id,:name)%>
   </p>
 
   <p>
-    <b><%=_('Standardmäßig installieren')%></b><br />
+    <b><%=t(:view_metapackages_new_4)%></b><br />
     <%= f.check_box :default_install %>
   </p>
 
   <p>
-    <%= f.submit _("Anlegen") %>
+    <%= f.submit t(:view_metapackages_new_5) %>
   </p>
 <% end %>
 <% else %>
-<p><%=_('Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.')%></p>
+<p><%=t(:view_metapackages_new_6)%></p>
 <% end %>

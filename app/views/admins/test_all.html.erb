@@ -1,12 +1,12 @@
 <%= render_flash %>
 <% if !(errs = @infos.select{|i| !i.nil? && !i[:error].nil?}).empty?%>
-<%=_("Folgende Repositories konnten nicht gelesen werden:")%>
+<%=t(:view_admins_test_all_0)%>
 <ul>
   <% for @info in errs do%>
       <li><%= @info[:error]%> </li>
   <% end %> 
   </ul>
 <% else %>
-<%=_("Alle Repositories wurden erreicht.")%>
+<%=t(:view_admins_test_all_1)%>
 <% end %> 
 

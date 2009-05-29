@@ -1,49 +1,49 @@
-<span class="headline"><%=_('Repository anzeigen')%></span>
+<span class="headline"><%=t(:view_repositories_show_0)%></span>
 <p>
 <% if is_admin? %>
-<%= link_to _('Bearbeiten'), { :action => :edit, :id => @repository.id } %>
+<%= link_to t(:view_repositories_show_1), { :action => :edit, :id => @repository.id } %>
 &nbsp;&nbsp;
 <% end %>
-<%= link_to _('Zurück'), { :controller => :distributions, :action => :show,\
+<%= link_to t(:view_repositories_show_2), { :controller => :distributions, :action => :show,\
 	:id => @repository.distribution.id } %>
 
 <div class="inner0">
 <%= error_messages_for :repository %>
 <table class="form_table">
 	<tr>
-	<td><%=_('Pfad:')%></td>
+	<td><%=t(:view_repositories_show_3)%></td>
 	<td><%= @repository.name %></td>
 	</tr>
 	<tr>
-	<td><%=_('Paketliste für i386:')%></td>
+	<td><%=t(:view_repositories_show_4)%></td>
 	<td><%= auto_link(Package.get_url_from_source(@repository.name)[:url]) %></td>
 	</tr>
 	<tr>
-	<td><%=_('Lizenztyp:')%></td>
+	<td><%=t(:view_repositories_show_5)%></td>
 	<td><% if @repository.license_type == 0 %>
-<%=_('        OpenSource')%>
+<%=t(:view_repositories_show_6)%>
 <%  else %>
-<%=_('        kommerziell ')%>
+<%=t(:view_repositories_show_7)%>
 <% end %>
 </td>
 	</tr>
 	<tr>
-	<td><%=_('Sicherheitstyp:')%></td>
+	<td><%=t(:view_repositories_show_8)%></td>
 	<td><% if @repository.security_type == 0 %>
-<%=_('Nativ')%>
+<%=t(:view_repositories_show_9)%>
 <% elsif @repository.security_type == 1 %>
-<%=_('Trusted')%>
+<%=t(:view_repositories_show_10)%>
 <%  else %>
-<%=_('Third-Party ')%>
+<%=t(:view_repositories_show_11)%>
 <% end %>
 </td>
 	</tr>
 	<tr>
-        <td><%=_('GPG Schlüssel (optional): ')%></td>
+        <td><%=t(:view_repositories_show_12)%></td>
         <td><%= @repository.gpgkey %><td>
     </tr>
 	<tr>
-		<td><%=_('Subtyp:')%></td>
+		<td><%=t(:view_repositories_show_13)%></td>
 		<td><%= @repository.subtype %></td>
 	</tr>
 	<tr>
@@ -54,7 +54,7 @@
 </table>
 </div>
 
-<h2><%=_('Pakete')%></h2>
+<h2><%=t(:view_repositories_show_14)%></h2>
 <% @repository.packages.each do |p| %>
    <%= p.icon(35)%>
    <%= link_to p.name, package_path(p) %>

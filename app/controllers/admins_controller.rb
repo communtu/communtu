@@ -1,8 +1,8 @@
 class AdminsController < ApplicationController
   def title
-    _("Administratorbereich")
+    t(:controller_admins_0)
   end
-  before_filter :check_administrator_role, :flash => { :notice => _('Du bist kein Administrator!') }
+  before_filter :check_administrator_role, :flash => { :notice => I18n.t(:controller_admins_1) }
   
   def index
   end

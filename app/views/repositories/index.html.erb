@@ -1,4 +1,4 @@
-<h1><%=_('Repositories')%></h1>
+<h1><%=t(:view_repositories_index_0)%></h1>
 
 <table>
   <tr>
@@ -6,13 +6,13 @@
 
 <% for repository in @repositories %>
   <tr>
-    <td><%= link_to _('Anzeigen'), repository %></td>
-    <td><%= link_to _('Bearbeiten'), edit_repository_path(repository) %></td>
-    <td><%= link_to _('Löschen'), repository, :confirm => _('Bist du sicher?'), :method => :delete %></td>
+    <td><%= link_to t(:view_repositories_index_1), repository %></td>
+    <td><%= link_to t(:view_repositories_index_2), edit_repository_path(repository) %></td>
+    <td><%= link_to t(:view_repositories_index_3), repository, :confirm => t(:view_repositories_index_4), :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to _('Neues Repository'), new_repository_path %>
+<%= link_to t(:view_repositories_index_5), new_repository_path %>

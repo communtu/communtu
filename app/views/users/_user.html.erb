@@ -4,13 +4,13 @@
   <td width="10%"><%= user.enabled ? 'yes' : 'no' %>
     <% unless user == current_user %>
       <% if user.enabled %>
-        <%= link_to(_('aktivieren'), user_path(user.id), :method => :delete) %>
+        <%= link_to(t(:view_users__user_0), user_path(user.id), :method => :delete) %>
       <% else %>
-        <%= link_to(_('deaktivieren'), enable_user_path(user.id), :method => :put) %>
+        <%= link_to(t(:view_users__user_1), enable_user_path(user.id), :method => :put) %>
       <% end %>
     <% end %>
   </td>
-  <td width="20%"><%= link_to _('Rollen bearbeiten'), user_roles_path(user) %></td>
+  <td width="20%"><%= link_to t(:view_users__user_2), user_roles_path(user) %></td>
 </tr>
 <tr>
   <td align="left"><font size="-3"><%=h user.created_at.day %>/<%=h user.created_at.month %>/<%=h user.created_at.year %></font></td>

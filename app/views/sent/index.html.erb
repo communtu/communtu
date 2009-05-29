@@ -1,11 +1,11 @@
-<h2><%=_('verschickte Nachrichten')%></h2>
+<h2><%=t(:view_sent_index_0)%></h2>
 	<%= render_flash %>
 	
 	<table>
       <tr>
-        <th><%=_('An')%></th>
-        <th><%=_('Betreff')%></th>
-        <th><%=_('Zeitpunkt')%></th>
+        <th><%=t(:view_sent_index_1)%></th>
+        <th><%=t(:view_sent_index_2)%></th>
+        <th><%=t(:view_sent_index_3)%></th>
       </tr>
 
       <% for message in @messages %>
@@ -17,4 +17,4 @@
       <% end %>
     </table>
 	
-<%= link_to _("zurück"), user_path(current_user.id)%>
+<%= link_to t(:view_sent_index_4), user_path(current_user.id)%>

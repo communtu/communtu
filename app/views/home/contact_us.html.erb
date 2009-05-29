@@ -1,9 +1,9 @@
-<h3><%=_('Feedbackformular')%></h3>
-<p><%=_('Hier hast Du die Möglichkeit uns ein Feedback zu senden.')%></p>
+<h3><%=t(:view_home_contact_us_0)%></h3>
+<p><%=t(:view_home_contact_us_1)%></p>
 <%= form_tag({:controller => :home, :action => :email}, :multipart => true)%>
-<p><%=_('Betreff')%>
+<p><%=t(:view_home_contact_us_2)%>
 <%= text_field(:form, :name) %></p>
-<p><%=_('Feedback')%><br/>
+<p><%=t(:view_home_contact_us_3)%><br/>
 <%= text_area(:form, :frage, :rows =>10, :cols => 80) %></p>
-<p><%= submit_tag(_('Senden')) %></p>
+<p><%= submit_tag(t(:view_home_contact_us_4)) %></p>
 </form>

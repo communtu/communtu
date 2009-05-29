@@ -1,6 +1,6 @@
 class VideosController < ApplicationController
   def title
-    _("Ubuntu-Linux an die individuellen Bedürfnisse anpassen")
+    t(:controller_videos_0)
   end
 
   # GET /videos/1

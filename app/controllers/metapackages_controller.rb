@@ -1,7 +1,7 @@
 class MetapackagesController < ApplicationController
   
   def title
-    _("Bündel")
+    t(:controller_metapackages_0)
   end
 
   @@migrations = {}
@@ -54,17 +54,17 @@ class MetapackagesController < ApplicationController
   # POST /metapackages.xml
   def create
     @metapackage = Metapackage.new(params[:metapackage])
-    if @metapackage.name==_("Neues Bündel") or Metapackage.all.map{|m| m.debian_name}.include?(@metapackage.debian_name) then
-      flash[:error] = _("Dieser Bündel-Name ist bereits vergeben!")
+    if @metapackage.name==t(:controller_metapackages_1) or Metapackage.all.map{|m| m.debian_name}.include?(@metapackage.debian_name) then
+      flash[:error] = t(:controller_metapackages_2)
       render :action => "new"
     elsif params[:metapackage][:description].nil? or params[:metapackage][:description].empty? then
-      flash[:error] = _("Die Beschreibung darf nicht leer sein")
+      flash[:error] = t(:controller_metapackages_3)
       render :action => "new"
     else
       #todo: check that name is unique and version is present
       respond_to do |format|
         if @metapackage.save
-          flash[:notice] = _("Bündel gespeichert. Es dauert ein paar Minuten, bis es auch als Metapaket verfügbar ist. ")
+          flash[:notice] = t(:controller_metapackages_4)
           fork do
             system 'echo "Metapackage.find('+@metapackage.id.to_s+').debianize" | script/console production'
           end
@@ -86,22 +86,22 @@ class MetapackagesController < ApplicationController
     @metapackage = Metapackage.find(params[:id])
     # compute debian names of existing metapackages, without "communtu-" oder "communtu-private-bundle-" prefix
     metanames = (Metapackage.all-[@metapackage]).map{|m| BasePackage.debianize_name(m.name)}
-    if params[:metapackage][:name]==_("Neues Bündel") or metanames.include?(BasePackage.debianize_name(params[:metapackage][:name])) then
-      flash[:error] += _("Dieser Bündel-Name ist bereits vergeben<br>")
+    if params[:metapackage][:name]==t(:controller_metapackages_5) or metanames.include?(BasePackage.debianize_name(params[:metapackage][:name])) then
+      flash[:error] += t(:controller_metapackages_6)
       error = true
     end
     if params[:metapackage][:version].nil? or params[:metapackage][:version].empty? then
-      flash[:error] += _("Es muss eine Version angegeben werden (z.B. 0.1)<br>")
+      flash[:error] += t(:controller_metapackages_7)
       error = true
     end
     if !@metapackage.debianized_version.nil? \
        and !@metapackage.debianized_version.empty? \
        and Deb.version_lt(params[:metapackage][:version],@metapackage.debianized_version) then
-      flash[:error] += _("Bei Änderungen muss die Version größer werden<br>")
+      flash[:error] += t(:controller_metapackages_8)
       error = true
     end
     if params[:metapackage][:description].nil? or params[:metapackage][:description].empty? then
-      flash[:error] += _("Die Beschreibung darf nicht leer sein<br>")
+      flash[:error] += t(:controller_metapackages_9)
       error = true
     end  
     # correction of nil entries
@@ -124,7 +124,7 @@ class MetapackagesController < ApplicationController
     end
     respond_to do |format|
       if @metapackage.update_attributes(params[:metapackage]) and !error
-        flash[:notice] = _("Bündel geändert. Es dauert ein paar Minuten, bis die Änderungen im zugehörigen Metapaket verfügbar sind. ")
+        flash[:notice] = t(:controller_metapackages_10)
         fork do
           system 'echo "Metapackage.find('+@metapackage.id.to_s+').debianize" | script/console production'
         end
@@ -172,7 +172,7 @@ class MetapackagesController < ApplicationController
   
   def remove_package
     if Metacontent.delete(params[:package_id]).nil?
-      flash[:error] = _("Konnte Paket nicht aus Bündel entfernen.")
+      flash[:error] = t(:controller_metapackages_11)
     end
     redirect_to :controller => :metapackages, :action => :show, :id => params[:id] 
   end
@@ -288,14 +288,14 @@ class MetapackagesController < ApplicationController
    
     end
     
-    render_string += "<option>" + num.to_s + _(" Bündel ausgewählt</option>\n")
+    render_string += "<option>" + num.to_s + t(:controller_metapackages_12)
     
     if owned
         render_string += "<option>---</option>"
-        render_string += _("<option value='0'>Löschen</option>")
-        render_string += _("<option value='1'>Migrieren</option>")
+        render_string += t(:controller_metapackages_13)
+        render_string += t(:controller_metapackages_14)
         if publish
-            render_string += _("<option value='2'>Veröffentlichen<option/>")
+            render_string += t(:controller_metapackages_15)
         end
     end
     

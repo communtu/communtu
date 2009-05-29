@@ -1,11 +1,6 @@
-<%=_('Dein Benutzerkonto wurde bei www.communtu.de angelegt.
- 
-  Benutzername: ')%><%=h @user.login %>
+<%=t(:view_user_mailer_signup_notification_0)%><%=h @user.login %>
 
-<%=_('Klicke auf folgenden Link:')%>
+<%=t(:view_user_mailer_signup_notification_1)%>
 <%= @url %>
 
-<%=_('um zu unserem Projekt zu gelangen.
-
-Freundliche Gruesse
-Das communtu-Team')%>
+<%=t(:view_user_mailer_signup_notification_2)%>

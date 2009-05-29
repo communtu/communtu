@@ -3,7 +3,7 @@
 <%= form_tag('/packages/search', :method => "post") %>
 <table>
 <tr>
-<td><%=_('Debian-Section:')%></td>
+<td><%=t(:view_packages__packagelist_0)%></td>
 <td>
     <select id="group" name="group" onchange="this.form.submit()">
         <option>all</option>
@@ -13,12 +13,12 @@
     </select>
 </td>
 <td width="100%"/></td>
-<td width="50%"><%=_('&nbsp;&nbsp;Nur&nbsp;Programme:')%></td>
+<td width="50%"><%=t(:view_packages__packagelist_1)%></td>
 <td>
      <%= check_box_tag("programs",1,session[:programs]) %>
 </td>
 <td width="100%"/></td>
-<td><%=_('&nbsp;&nbsp;Suche:')%></td>
+<td><%=t(:view_packages__packagelist_2)%></td>
 <td>
     <input type="textbox" id="search" name="search" value="<%= session[:search]%>"/>
 </td>
@@ -34,24 +34,24 @@
 <% css=cycle("packageList0", "packageList1") %>
   <tr> 
   	<td class="<%= css %>"> <%= package.icon(20)%>
-  		<%= link_to(package.name, package_path(package), :title => _("zur Detailansicht")) %></td>
+  		<%= link_to(package.name, package_path(package), :title => t(:view_packages__packagelist_3)) %></td>
 	<td class="<%= css %>" align="middle" valign="middle">
      <% if !package.stars.nil? %>
         <div class='star-rating-<%= css %>' style='width:<%= (package.stars * 18).to_i %>px; '> </div>
      <% end %>
 	</td>
     <td class="<%= css %>" width="80" align="right">
-        <%= link_to image_tag("/images/install.png", :size => "22x22", :border => "0", :title => _("installieren"), :alt => _("installieren")), "apt://"+package.name %>                          
-	    <%= link_to image_tag("/images/sources.jpg", :size => "22x22", :border => "0", :title => _("Quellen hinzufügen"), :alt => _("Quellen")), "/users/#{current_user.id}/suggestion/install_package_sources/#{package.id}" %>
+        <%= link_to image_tag("/images/install.png", :size => "22x22", :border => "0", :title => t(:view_packages__packagelist_4), :alt => t(:view_packages__packagelist_5)), "apt://"+package.name %>                          
+	    <%= link_to image_tag("/images/sources.jpg", :size => "22x22", :border => "0", :title => t(:view_packages__packagelist_6), :alt => t(:view_packages__packagelist_7)), "/users/#{current_user.id}/suggestion/install_package_sources/#{package.id}" %>
 		<% if editing_metapackage? %>
 		    
-			<%= link_to_remote(image_tag("/images/add.png", :size => "22x22", :border => "0", :title =>_("hinzufügen"), :alt => _("hinzufügen")), \
+			<%= link_to_remote(image_tag("/images/add.png", :size => "22x22", :border => "0", :title =>t(:view_packages__packagelist_8), :alt => t(:view_packages__packagelist_9)), \
 			        :url => user_path(current_user) + "/cart/add_to_cart/" + package.id.to_s,\
 			        :update => 'meta_cart') %>
 		<% end %>
     	<% if is_admin? %>
-    		<%= link_to image_tag("/images/edit-delete.png", :size => "22x22", :border => "0", :title => _("entfernen"), :alt => _("entfernen")),
-    		        package_path(package), :confirm => _('Bist du sicher?'), :method => :delete %>
+    		<%= link_to image_tag("/images/edit-delete.png", :size => "22x22", :border => "0", :title => t(:view_packages__packagelist_10), :alt => t(:view_packages__packagelist_11)),
+    		        package_path(package), :confirm => t(:view_packages__packagelist_12), :method => :delete %>
 			<% end %>
 	</td>
   </tr>

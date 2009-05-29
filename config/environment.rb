@@ -5,7 +5,7 @@
 # ENV['RAILS_ENV'] ||= 'development'
 
 # Specifies gem version of Rails to use when vendor/rails is not present
-RAILS_GEM_VERSION = '2.1.0' unless defined? RAILS_GEM_VERSION
+RAILS_GEM_VERSION = '2.2.2' # unless defined? RAILS_GEM_VERSION
 
 # Bootstrap the Rails environment, frameworks, and default configuration
 require File.join(File.dirname(__FILE__), 'boot')
@@ -66,16 +66,12 @@ Rails::Initializer.run do |config|
 
 config.action_mailer.delivery_method = :smtp
 require 'german_date_names'
-
-# hack for intermediate stage of internationalisation
-def _(x)
-  "<i>"+x+"</i>"
-end
-#require 'i18n'
+require 'i18n'
 
 # The internationalization framework can be changed
 # to have another default locale (standard is :en) or more load paths.
 # All files from config/locales/*.rb,yml are added automatically.
-#config.i18n.load_path << "#{RAILS_ROOT}/config/locales/template.yml"
-#config.i18n.default_locale = :de
+config.i18n.load_path = [ "#{RAILS_ROOT}/config/locales/template.yml"]
+config.i18n.default_locale = :de
+
 end

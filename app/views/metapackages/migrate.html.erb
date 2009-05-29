@@ -1,17 +1,17 @@
 <% if logged_in? %>
 <%= form_tag "/metapackage/finish_migrate" %>
     <div>
-        <p><%=_('Von welcher Distribution sollen die Bündel migriert werden ?')%></p>
+        <p><%=t(:view_metapackages_migrate_0)%></p>
 
         <%= collection_select(:from_dist, :id, @distributions, :id, :name) %>        
 
-        <p><%=_('Zu welcher Distribution sollen die Bündel migriert werden ?')%></p>
+        <p><%=t(:view_metapackages_migrate_1)%></p>
 
         <%= collection_select(:to_dist, :id, @distributions, :id, :name) %>        
         
-        <p><%= submit_tag(_("Migrieren")) %></p>
+        <p><%= submit_tag(t(:view_metapackages_migrate_2)) %></p>
     </div>
 </form>
 <% else %>
-<p><%=_('Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.')%></p>
+<p><%=t(:view_metapackages_migrate_3)%></p>
 <% end %>

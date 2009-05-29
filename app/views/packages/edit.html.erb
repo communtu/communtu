@@ -1,5 +1,5 @@
 <% if logged_in? %>
-<span class="headline"><%=_('Paket bearbeiten')%></span>
+<span class="headline"><%=t(:view_packages_edit_0)%></span>
 
 <%= error_messages_for :package %>
 <%= render_flash %>
@@ -7,54 +7,54 @@
 <div class="inner0">
 <% form_for(:package, @package, :url => ("/packages/update/"+@package.id.to_s), :html => { :multipart => true }) do |f| %>
   <p>
-    <b><%=_('Name')%></b><br />
+    <b><%=t(:view_packages_edit_1)%></b><br />
     <%= f.text_field :name %>
   </p>
 <p>
   <p>
-    <b><%=_('Icon')%></b><br />
+    <b><%=t(:view_packages_edit_2)%></b><br />
      <%= @package.icon(35)%>
-<%=_('	 &nbsp;&nbsp;Neues Icon: ')%><%= file_field(:package,:icon_file) %>
+<%=t(:view_packages_edit_3)%><%= file_field(:package,:icon_file) %>
   </p>
 <p>
 
-  <b><%=_('Ist ein Programm:')%></b>
+  <b><%=t(:view_packages_edit_4)%></b>
   <%= f.check_box :is_program %>
 </p>
   <p>
-    <b><%=_('Weblinks')%></b><br />
+    <b><%=t(:view_packages_edit_5)%></b><br />
     <%= f.text_area :urls, :rows =>3, :cols => 80 %>
   </p>
 <% if not @package.videos.empty? then %>
   <p>
-  <b><%=_('Videos:')%><br></b>
+  <b><%=t(:view_packages_edit_6)%><br></b>
   <ul>
   <%for v in @package.videos %>
     <li><%=auto_link v.url.gsub(/ /,'<br>'), link = :all, :target => '_blank' %>
     <%= v.description%>
-	<%= link_to _('Bearbeiten'), :controller => :videos, :action => :edit, :id => v.id %></li>
+	<%= link_to t(:view_packages_edit_7), :controller => :videos, :action => :edit, :id => v.id %></li>
   <% end %>
   </ul></p>
 <% end %>
   <p>
-    <b><%=_('Neuer Link auf ein Video')%></b><br />
+    <b><%=t(:view_packages_edit_8)%></b><br />
     URL: <%= text_field_tag :video_url, "", :size => 65 %><br>
-<%=_('    Beschreibung des Videos:')%><br>
+<%=t(:view_packages_edit_9)%><br>
 	<%= text_area :video_descr, :v, :rows => 3, :cols => 80 %>
   </p>
     <p>
-  <b><%=_('Beschreibung des Pakets')%></b><br />
+  <b><%=t(:view_packages_edit_10)%></b><br />
   <%= f.text_area :description, :cols => 80 %>
   </p>
   <p>
-    <%= f.submit _("Speichern") %>
+    <%= f.submit t(:view_packages_edit_11) %>
   </p>
 <% end %>
 
-<%= link_to _('Zurück'), package_path(@package) %>
+<%= link_to t(:view_packages_edit_12), package_path(@package) %>
 </div>
 <% else %>
 <div class="inner0">
-<p><%=_('Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.')%></p>
+<p><%=t(:view_packages_edit_13)%></p>
 </div>
 <% end %>

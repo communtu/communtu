@@ -1,19 +1,17 @@
-<h3><%=_('Feinauswahl der zu installierenden Programmbündel und Programme')%></h3>
+<h3><%=t(:view_user_profiles__profile_rating_0)%></h3>
 
 <%= error_messages_for :user_profile %>
 
 
-<p><%=_('Hier kannst du deine beabsichtigte Computer-Nutzung noch genauer angeben.
-Durch Klicken auf ')%><img src='/images/add.png' width='10' height='10'><%=_(' lässt
-sich ein Bereich ein- oder ausklappen.')%></p>
+<p><%=t(:view_user_profiles__profile_rating_1)%><img src='/images/add.png' width='10' height='10'><%=t(:view_user_profiles__profile_rating_2)%></p>
 
-<p><b><%=_('Achtung! Zum Schluss auf "Speichern" klicken.')%></b></p>
+<p><b><%=t(:view_user_profiles__profile_rating_3)%></b></p>
 <% form_tag(user_user_profile_path(current_user) + "/update_ratings", options = {:name => "ratings", :method => :put}) do %>
     <div> 
         <%= show_suggestion2(root, selection) %>
     </div> 
     <div style="margin-top:20px;">
-        <%= link_to _("Speichern"), "javascript:document.ratings.submit();" %>
+        <%= link_to t(:view_user_profiles__profile_rating_4), "javascript:document.ratings.submit();" %>
     </div>
 <% end %>
 

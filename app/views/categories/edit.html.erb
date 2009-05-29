@@ -1,27 +1,27 @@
 <% if is_admin? %>
-<h1><%=_("Kategorie bearbeiten")%></h1>
+<h1><%=t(:view_categories_edit_0)%></h1>
 
 <%= error_messages_for :category %>
 
 <% form_for(@category) do |f| %>
   <p>
-    <b><%=_("Name")%></b><br />
+    <b><%=t(:view_categories_edit_1)%></b><br />
     <%= f.text_field :name %>
   </p>
 
   <p>
-    <b><%=_("Beschreibung")%></b><br />
+    <b><%=t(:view_categories_edit_2)%></b><br />
     <%= f.text_field :description %>
   </p>
 
   <p>
-    <b><%=_("Link für weitere Informationen")%></b><br />
+    <b><%=t(:view_categories_edit_3)%></b><br />
     <%= f.text_field :link %>
   </p>
 
   <p>
-    <b><%=_("Übergeordnete Kategorie")%></b><br />
-	<%= f.collection_select('parent_id', Category.find(:all, :order => "name"), :id, :name, {:include_blank => _('Wähle einen Parent aus!')})%>
+    <b><%=t(:view_categories_edit_4)%></b><br />
+	<%= f.collection_select('parent_id', Category.find(:all, :order => "name"), :id, :name, {:include_blank => t(:view_categories_edit_5)})%>
   </p>
 
   <p>
@@ -29,8 +29,8 @@
   </p>
 <% end %>
 
-<%= link_to _('Anzeigen'), @category %> |
-<%= link_to _('Zurück'), categories_path %>
+<%= link_to t(:view_categories_edit_6), @category %> |
+<%= link_to t(:view_categories_edit_7), categories_path %>
 <% else %>
-<p><%=_("Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.")%></p>
+<p><%=t(:view_categories_edit_8)%></p>
 <% end %>

@@ -5,28 +5,28 @@
 </p>
 
 <p>
-  <b><%=_("Name:")%></b>
+  <b><%=t(:view_categories_show_0)%></b>
   <%=h @category.name %>
 </p>
 
 <p>
-  <b><%=_("Beschreibung:")%></b>
+  <b><%=t(:view_categories_show_1)%></b>
   <%=h @category.description %>
 </p>
 
 <p>
-  <b><%=_("Weitere Informationen:")%></b>
+  <b><%=t(:view_categories_show_2)%></b>
   <%=h @category.link %>
 </p>
 
 <p>
-  <b><%=_("Übergeordnete Kategorie:")%></b>
+  <b><%=t(:view_categories_show_3)%></b>
   <%= h @category.parent_name%>
 </p>
 
 
-<%= link_to _('Bearbeiten'), edit_category_path(@category) %> |
-<%= link_to _('Zurück'), categories_path %>
+<%= link_to t(:view_categories_show_4), edit_category_path(@category) %> |
+<%= link_to t(:view_categories_show_5), categories_path %>
 <% else %>
-<p><%=_("Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.")%></p>
+<p><%=t(:view_categories_show_6)%></p>
 <% end %>

@@ -1,11 +1,9 @@
-<h3><%=_('Quellen für die zu installierenden Programme')%></h3>
+<h3><%=t(:view_user_profiles__sources_0)%></h3>
 
 <%= error_messages_for :user_profile %>
 
 
-<p><%=_('Hier werden die zu installierenden Programme und Pakete nach den zugehörigen
-Quellen sortiert aufgelisetet, so dass du auch sehen kannst, weshalb die jeweiligen
-Quellen hinzugefügt werden.')%></p>
+<p><%=t(:view_user_profiles__sources_1)%></p>
 
 <ul>
 <% sources.each do |repository,packages| %>

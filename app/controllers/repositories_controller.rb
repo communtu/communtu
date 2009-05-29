@@ -1,7 +1,7 @@
 class RepositoriesController < ApplicationController
 
   def title
-    _("Repositorys")
+    t(:controller_repositories_0)
   end  
   # GET /repositories
   # GET /repositories.xml
@@ -54,7 +54,7 @@ class RepositoriesController < ApplicationController
     
     respond_to do |format|
       if @repository.save
-        flash[:notice] = _('Repository erzeugt.')
+        flash[:notice] = t(:controller_repositories_1)
         format.html { redirect_to(distribution_path(params[:distribution_id])) }
         format.xml  { render :xml => @repository, :status => :created, :location => @repository }
       else
@@ -71,7 +71,7 @@ class RepositoriesController < ApplicationController
     
     respond_to do |format|
       if @repository.update_attributes(params[:repository])
-        flash[:notice] = _('Repository aktualisiert.')
+        flash[:notice] = t(:controller_repositories_2)
         format.html { redirect_to({ :controller => :distributions, :action => :show,\
           :id => @repository.distribution_id }) }
         format.xml  { head :ok }
@@ -98,7 +98,7 @@ class RepositoriesController < ApplicationController
           end  
         end  
       end
-      flash[:notice] = _('sources.list eingelesen.')
+      flash[:notice] = t(:controller_repositories_3)
     end
     redirect_to(distribution_path(params[:id])) 
   end

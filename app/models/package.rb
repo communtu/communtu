@@ -110,15 +110,15 @@ class Package < BasePackage
   end
 
   def self.license_types
-    license_types = [ _("OpenSource"), _("Commercial") ]
+    license_types = [ I18n.t(:model_package_0), I18n.t(:model_package_1) ]
   end
 
   def self.show_license_type(t)
-    if t.nil? then _("Unbekannt") else license_types[t] end
+    if t.nil? then I18n.t(:model_package_2) else license_types[t] end
   end
 
   def self.security_types
-    security_types  = [ _("Native"), _("Trusted"), _("Third-Party") ]
+    security_types  = [ I18n.t(:model_package_3), I18n.t(:model_package_4), I18n.t(:model_package_5) ]
   end
 
   def installedsize(dist)
@@ -187,7 +187,7 @@ class Package < BasePackage
       end
       return {:url => url}
     else
-      return {:error => source+_("<br> hat nicht das richtige Format")}
+      return {:error => source+t(:model_package_6)}
     end    
   end
   
@@ -198,7 +198,7 @@ class Package < BasePackage
   # test whether a source is present
   def self.test_source repository
     url  = get_url_from_source(repository.name)[:url]
-    if url.nil? then return {:error => _("Konnte URL für ") + repository.url + " " + repository.subtype + _(" nicht feststellen")} end
+    if url.nil? then return {:error => I18n.t(:model_package_7) + repository.url + " " + repository.subtype + I18n.t(:model_package_8)} end
     begin
       file = open(url, 'User-Agent' => 'Ruby-Wget')
     rescue  
@@ -322,9 +322,9 @@ class Package < BasePackage
           pd.assign_recommends(parse_dependencies(package["Recommends"]))
           pd.assign_suggests(parse_dependencies(package["Suggests"]))
           pd.assign_conflicts(parse_unversioned_dependencies(package["Conflicts"]))
-        else raise _("When syncing repository, could not find PackageDistr for #{p.name} in repository #{repository.name}")
+        else raise I18n.t(:model_package_9)
         end
-      else raise _("When syncing repository #{repository.name}, could not find package #{name}")
+      else raise I18n.t(:model_package_10)
       end
     end
   
@@ -503,7 +503,7 @@ class Package < BasePackage
   
 private
   def self.packages_to_hash url
-    if url.nil? then return {:error => _("Konnte keine URL feststellen")} end
+    if url.nil? then return {:error => I18n.t(:model_package_11)} end
     begin
       file = open(url, 'User-Agent' => 'Ruby-Wget')
     rescue
@@ -538,7 +538,7 @@ private
             end
             readpackage.call ""
         else
-           return {:error => _("Inhalt von ")+url+_(" entspricht nicht Repository-Syntax")+":<br><code>"+line+"</code>"}
+           return {:error => I18n.t(:model_package_12)+url+t(:model_package_13)+":<br><code>"+line+"</code>"}
         end
       end
       return {:packages => packages}

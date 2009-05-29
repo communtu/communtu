@@ -19,11 +19,11 @@ class SentController < ApplicationController
   def create
     if(!User.find(:all,:conditions=>["login = ? and anonymous = ?",params[:message]['to'],false]).empty?)
       if params[:subject].nil? or params[:subject].empty?
-        flash[:error] = _("Der Betreff darf nicht leer sein.")
+        flash[:error] = t(:controller_sent_0)
       end
       @message = current_user.sent_messages.build(params[:message])
     else
-      flash[:error] = _("Benutzer existiert nicht")
+      flash[:error] = t(:controller_sent_1)
       redirect_to new_sent_path({:message=>params[:message]})
       return
     end
@@ -33,7 +33,7 @@ class SentController < ApplicationController
         format.html do 
           #Clears the flash[:error] Message
           flash.delete(:error)
-          flash[:notice] = _("Nachricht erfolgreich versendet")
+          flash[:notice] = t(:controller_sent_2)
           #Redirects to metapackages where message was sent if successful else to new message
           redirect_to  request.get? ? request.env["HTTP_REFERER"] : session[:return_to]
         end

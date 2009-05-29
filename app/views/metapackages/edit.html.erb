@@ -8,16 +8,16 @@
         <br/>
         <table>
         <tr>
-	        <td><%=_('Name:')%></td>
+	        <td><%=t(:view_metapackages_edit_0)%></td>
 	        <td><%= f.text_field(:name, { :size => 16}) %></td>	
         </tr>
         <tr>
-	        <td><%=_('Version:')%></td>
+	        <td><%=t(:view_metapackages_edit_1)%></td>
 	        <td><%= f.text_field(:version, { :size => 16}) %></td>	
         </tr>
-		<tr><td colspan=2><%=_('Bitte Versionen => 1.0 nur für ausgereifte Bündel verwenden.')%></td></tr>
+		<tr><td colspan=2><%=t(:view_metapackages_edit_2)%></td></tr>
         <tr>
-	        <td><%=_('Kategorie:')%></td>
+	        <td><%=t(:view_metapackages_edit_3)%></td>
 	        <td>
 	        	<% @categories = Category.find(:all, :order => "name")%>
 		        <%= f.collection_select(:category_id,@categories,:id,:name)%>
@@ -25,22 +25,22 @@
         </tr>
         <% if is_admin? %>
         <tr>
-	        <td><%=_('Standardmäßig installieren:')%></td>
+	        <td><%=t(:view_metapackages_edit_4)%></td>
 	        <td><%= f.check_box(:default_install) %></td>	
         </tr>
         <% end %>
         <tr>
-	        <td valign='top'><%=_('Beschreibung:')%></td>
+	        <td valign='top'><%=t(:view_metapackages_edit_5)%></td>
 	        <td><%= f.text_area(:description, { :rows => 12, :cols => 50 } ) %></td>	
         </tr>
 
         </table>	
 	<%= render :partial => "package_list", :locals => { :metapackage => @metapackage, :editable => true } %>	
-        <div align="right"><%= submit_tag _("Speichern")%></div>
+        <div align="right"><%= submit_tag t(:view_metapackages_edit_6)%></div>
 		
 
     <% end %>
     <% else %>
-    <p><%=_('Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.')%></p>
+    <p><%=t(:view_metapackages_edit_7)%></p>
     <% end %>
 </div>

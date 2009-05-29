@@ -4,9 +4,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
   <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-  <meta name="keywords" content=" <%= _("Communtu, Ubuntu, Installation, Installationshilfe") %>" />
-  <meta name="description" content=" <%= _("Communtu passt Dein Linux-Ubuntu-System an Deine individuellen Bedürfnisse an.") %>" />
-  <title><%=_('Communtu')%><%= begin ": "+controller.title rescue "" end %></title>
+  <meta name="keywords" content=" <%= t(:view_layouts_application_0) %>" />
+  <meta name="description" content=" <%= t(:view_layouts_application_1) %>" />
+  <title><%=t(:view_layouts_application_2)%><%= begin ": "+controller.title rescue "" end %></title>
   <%= stylesheet_link_tag 'layout' %>
 </head>
 <body>
@@ -15,12 +15,12 @@
 	<table width='100%'>
 	<tr>
 		<td align='left'>
-		<%= link_to image_tag("communtu_logo.png", :title => _('Zur Startseite'), :alt => _('Zur Startseite'), :border => '0'), '/home'  %>
+		<%= link_to image_tag("communtu_logo.png", :title => t(:view_layouts_application_3), :alt => t(:view_layouts_application_4), :border => '0'), '/home'  %>
 		</td>
-		<td align='right'><%=_('per PayPal:')%><form action="https://www.paypal.com/cgi-bin/webscr" target="_blank" method="post">
+		<td align='right'><%=t(:view_layouts_application_5)%><form action="https://www.paypal.com/cgi-bin/webscr" target="_blank" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="4916205">
-<input type="image" src="https://www.paypal.com/de_DE/DE/i/btn/btn_donate_LG.gif" border="0" name="submit" title='_("Jetzt einfach, schnell und sicher online spenden – mit PayPal.")' alt='_("Jetzt einfach, schnell und sicher online spenden – mit PayPal.")'>
+<input type="image" src="https://www.paypal.com/de_DE/DE/i/btn/btn_donate_LG.gif" border="0" name="submit" title='t(:view_layouts_application_6)' alt='t(:view_layouts_application_7)'>
 <img alt="" border="0" src="https://www.paypal.com/de_DE/i/scr/pixel.gif" width="1" height="1">
 </form></td>
 	</tr>
@@ -28,25 +28,25 @@
 	<div class="navi">
 		<table width='100%'>
 	    <tr align="center">
-		<td width="100"><%= link_to _('Start'), '/home' %></td>
+		<td width="100"><%= link_to t(:view_layouts_application_8), '/home' %></td>
 	  	<% if logged_in? %>
-	    	<td width="100"><%= link_to _('Abmelden'), logout_path  %> </td>
+	    	<td width="100"><%= link_to t(:view_layouts_application_9), logout_path  %> </td>
 	    <% else %>
-	    	<td width="100"><%= link_to _('Anmelden'), '/session/new' %></td>
-	    	<td width="100"><%= link_to _('Anonym nutzen'), '/users/anonymous_login' %></td>
-	    	<td width="100"><%= link_to _('Registrieren'), '/users/new' %></td>
+	    	<td width="100"><%= link_to t(:view_layouts_application_10), '/session/new' %></td>
+	    	<td width="100"><%= link_to t(:view_layouts_application_11), '/users/anonymous_login' %></td>
+	    	<td width="100"><%= link_to t(:view_layouts_application_12), '/users/new' %></td>
 	    <% end %>
-	    	<td width="100"><%= link_to _('Über Communtu'), '/about' %></td>
+	    	<td width="100"><%= link_to t(:view_layouts_application_13), '/about' %></td>
 	    </tr>
 	  </table>
         </div>
 <% if logged_in? %>
 <div align="right">
-<font size="-3"><%= link_to _('Feedback an Communtu'), '/home/contact_us' %>&nbsp;&nbsp;&nbsp;<%=_('angemeldet als  ')%>
+<font size="-3"><%= link_to t(:view_layouts_application_14), '/home/contact_us' %>&nbsp;&nbsp;&nbsp;<%=t(:view_layouts_application_15)%>
 	<%= link_to current_user.login, user_path(current_user.id) %>
 	<%= link_to image_tag("16-member.png", :border => '0', :title => current_user.login, :alt => current_user.login), user_path(current_user.id) %>
 </font>
-	<%= new_message? ? link_to(image_tag("message_rollover.png", :alt=>_("neue Nachricht"),:title=>_("neue Nachricht"), :border=>"0"), '/inbox') : link_to(image_tag("message.png", :alt=>_("keine neuen Nachrichten"),:title=>_("keine neuen Nachrichten"), :border=>"0"), '/inbox') %>
+	<%= new_message? ? link_to(image_tag("message_rollover.png", :alt=>t(:view_layouts_application_16),:title=>t(:view_layouts_application_17), :border=>"0"), '/inbox') : link_to(image_tag("message.png", :alt=>t(:view_layouts_application_18),:title=>t(:view_layouts_application_19), :border=>"0"), '/inbox') %>
 </div>
 <% end %>
 

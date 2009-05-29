@@ -1,6 +1,6 @@
 class RolesController < ApplicationController
   def title
-    _("Ubuntu-Linux an die individuellen Bedürfnisse anpassen")
+    t(:controller_roles_0)
   end
   layout 'application'
   before_filter :check_administrator_role

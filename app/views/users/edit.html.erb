@@ -1,26 +1,26 @@
-<span class="headline"><%=_('Benuzterprofil bearbeiten')%></span>
+<span class="headline"><%=t(:view_users_edit_0)%></span>
 <div class="inner1">
 <% if !@user.anonymous %>
-<p><%= link_to _('Passwort ändern'), change_password_path %> | <%= link_to _('Profil l&ouml;schen'), :id => @user.id, :action => 'delete' %>  </p>
+<p><%= link_to t(:view_users_edit_1), change_password_path %> | <%= link_to t(:view_users_edit_2), :id => @user.id, :action => 'delete' %>  </p>
 <%= error_messages_for :user %>
 <% end %>
  
 <% form_for :user, :url => user_url(@user), :html => { :method => :put } do |f| %>
-  <p><%=_('Benutzername:')%><br /><%= f.text_field :login, :size => 60 %></p>
-  <p><%=_('E-Mail:')%><br /><%= f.text_field :email, :size => 60 %></p>
+  <p><%=t(:view_users_edit_3)%><br /><%= f.text_field :login, :size => 60 %></p>
+  <p><%=t(:view_users_edit_4)%><br /><%= f.text_field :email, :size => 60 %></p>
 
 <% if @user.anonymous %>
-  <p><label for="password" class="block"><%=_('Neues Passwort')%></label><br />
+  <p><label for="password" class="block"><%=t(:view_users_edit_5)%></label><br />
   <%= password_field_tag 'password', {}, :size => 45 %><br />
-  <small><%=_('Zwischen 4 und 40 Zeichen')%></small></p>
+  <small><%=t(:view_users_edit_6)%></small></p>
  
-  <p><label for="password_confirmation"  class="block"><%=_('Neues Passwort bestätigen')%></label><br />
+  <p><label for="password_confirmation"  class="block"><%=t(:view_users_edit_7)%></label><br />
   <%= password_field_tag 'password_confirmation', {}, :size => 45 %></p>
 <% end %>
   
-<%= submit_tag _('Speichern') %>
+<%= submit_tag t(:view_users_edit_8) %>
 <% if @user.anonymous %>
-<%=_('  Durch Klicken auf "Speichern" wird das Nutzerkonto zugleich dauerhaft gemacht.')%>
+<%=t(:view_users_edit_9)%>
 <% end %>
 <% end %>
 </div>

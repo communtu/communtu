@@ -1,23 +1,23 @@
-<span class="headline"><%=_('Benutzer anzeigen')%></span>
+<span class="headline"><%=t(:view_users_show_0)%></span>
 
 <%= render_flash %>
 <div class="inner1">
-	<p><%=_('Name: ')%><%= @user.login %></p>
-    <p><%=_('Nutzer seit: ')%><%= @user.created_at.month %>/<%= @user.created_at.year %>&nbsp;<font size="-3"><%=_('(Monat/Jahr)')%></font>
-    <br /><%=_('Zuletzt eingeloggt: ')%><%= @user.updated_at.month %>/<%= @user.updated_at.year %>
+	<p><%=t(:view_users_show_1)%><%= @user.login %></p>
+    <p><%=t(:view_users_show_2)%><%= @user.created_at.month %>/<%= @user.created_at.year %>&nbsp;<font size="-3"><%=t(:view_users_show_3)%></font>
+    <br /><%=t(:view_users_show_4)%><%= @user.updated_at.month %>/<%= @user.updated_at.year %>
     </p>
-        <p><%=_('Erstellte Bündel: ')%><%= @metas_user.length
+        <p><%=t(:view_users_show_5)%><%= @metas_user.length
 %></p>
       <% if @user.id == current_user.id %>
-        <p><%=_('E-Mail: ')%><%= @user.email %></p>
+        <p><%=t(:view_users_show_6)%><%= @user.email %></p>
       <% end %>
 </div>
   <% if @user.id == current_user.id %>
-    <%= link_to _('Bearbeiten'), edit_user_path(@user.id) %> <br /><br />
+    <%= link_to t(:view_users_show_7), edit_user_path(@user.id) %> <br /><br />
 	
 	<% if !@user.anonymous %>
 		<!-- Messanger -->
-		<span class="headline"><%=_('Nachrichten')%></span>
+		<span class="headline"><%=t(:view_users_show_8)%></span>
 		<div class="inner1">
 			<%= render :partial => 'mailbox_list' %>
 		</div>

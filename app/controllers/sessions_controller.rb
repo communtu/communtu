@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
   def title
-    _("Ubuntu-Linux an die individuellen Bedürfnisse anpassen")
+    t(:controller_sessions_0)
   end
   layout 'application'
   before_filter :login_required, :only => :destroy
@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
   # render new.rhtml
   def new
     if logged_in?
-      flash[:error] = _("Du bist bereits angemeldet.")
+      flash[:error] = t(:controller_sessions_1)
       redirect_to "/home"
     end
   end
@@ -20,7 +20,7 @@ class SessionsController < ApplicationController
   
   def create
     if logged_in?
-      flash[:error] = _("Du bist bereits angemeldet.")
+      flash[:error] = t(:controller_sessions_2)
       redirect_to "/home"
       return
     end
@@ -32,7 +32,7 @@ class SessionsController < ApplicationController
         current_user.save
       end  
       flash[:error] = 
-        _("Deine hier registrierte Distribution wurde auf #{current_user.distribution.short_name} geändert, weil deine alte Distribution von Ubuntu (und daher auch von Communtu) nicht mehr unterstützt wird. Wir empfehlen für deinen Computer ein <a href=\"http://wiki.ubuntuusers.de/Upgrade\">Upgrade</a> auf #{current_user.distribution.name}.")
+        t(:controller_sessions_3)
     end
   end
  
@@ -48,7 +48,7 @@ class SessionsController < ApplicationController
     self.current_user.save!
     
     reset_session
-       flash[:notice] = _("Du wurdest abgemeldet.")
+       flash[:notice] = t(:controller_sessions_4)
   redirect_to "/home"
   end
   
@@ -58,11 +58,11 @@ class SessionsController < ApplicationController
   def password_authentication(login, password)
     user = User.authenticate(login, password)
     if user == nil
-      failed_login(_('Dein Benutzername oder Passwort ist falsch. Bitte ggf. unten auf "Registrieren" klicken.'))
+      failed_login(t(:controller_sessions_5))
     elsif user.activated_at.blank?  
-      failed_login(_("Dein Benutzerkonto wurde noch nicht aktiviert. Der Aktivierungscode wurde dir per Email zugeschickt."))
+      failed_login(t(:controller_sessions_6))
     elsif user.enabled == false
-      failed_login(_("Dein Benutzerkonto wurde deaktiviert oder gelöscht."))
+      failed_login(t(:controller_sessions_7))
     else
       self.current_user = user
       if editing_metapackage?

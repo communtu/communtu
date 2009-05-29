@@ -1,16 +1,16 @@
 <ul class="sidebar">
-	<li><%= link_to _('Installation'), user_user_profile_path(current_user) + '/edit' %></li>
-	<li><%= link_to _('Bündel verwalten'), user_path(current_user) + "/metapackages/0" %></li>
-	<li><%= link_to _('Programme suchen'), "/packages" %></li>
-	<li><%= link_to _('Ubuntu-Derivate'), :controller => "home", :action => "derivatives" %></li>
-	<li><%= link_to _('Ubuntu-Versionen'), distributions_path %></li>
+	<li><%= link_to t(:view_users__sidebar_0), user_user_profile_path(current_user) + '/edit' %></li>
+	<li><%= link_to t(:view_users__sidebar_1), user_path(current_user) + "/metapackages/0" %></li>
+	<li><%= link_to t(:view_users__sidebar_2), "/packages" %></li>
+	<li><%= link_to t(:view_users__sidebar_3), :controller => "home", :action => "derivatives" %></li>
+	<li><%= link_to t(:view_users__sidebar_4), distributions_path %></li>
 	<% if is_admin? %>
-	    <li><%= link_to _('Benutzer verwalten'), users_path %></li>
-	    <li><%= link_to _('Kategorien verwalten'), categories_path %></li>
-	    <li><%= link_to _('Derivate verwalten'), derivatives_path %></li>
-	    <li><%= link_to _('Fehlgeschlagene debs'), debs_path %></li>
-	    <li><%= link_to _('Konflikte'), '/metapackages/immediate_conflicts' %></li>
+	    <li><%= link_to t(:view_users__sidebar_5), users_path %></li>
+	    <li><%= link_to t(:view_users__sidebar_6), categories_path %></li>
+	    <li><%= link_to t(:view_users__sidebar_7), derivatives_path %></li>
+	    <li><%= link_to t(:view_users__sidebar_8), debs_path %></li>
+	    <li><%= link_to t(:view_users__sidebar_9), '/metapackages/immediate_conflicts' %></li>
     <% end %>
-	<li><%= link_to _('Aktuelles'), '/home/news' %></li>
+	<li><%= link_to t(:view_users__sidebar_10), '/home/news' %></li>
 </ul>
 

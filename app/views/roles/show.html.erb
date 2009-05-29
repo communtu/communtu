@@ -1,8 +1,8 @@
 <p>
-  <b><%=_('Rollenname:')%></b>
+  <b><%=t(:view_roles_show_0)%></b>
   <%=h @role.rolename %>
 </p>
 
 
-<%= link_to _('Bearbeiten'), edit_role_path(@role) %> |
-<%= link_to _('Zurück'), roles_path %>
+<%= link_to t(:view_roles_show_1), edit_role_path(@role) %> |
+<%= link_to t(:view_roles_show_2), roles_path %>

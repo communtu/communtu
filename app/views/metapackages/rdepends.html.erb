@@ -1,6 +1,6 @@
 <% if logged_in? %>
-<h2><%=_('Im Bündel ')%><%= @metapackage.name %><%=_(' direkt und indirekt enthaltene Bündel und Pakete')%></h2> 
+<h2><%=t(:view_metapackages_rdepends_0)%><%= @metapackage.name %><%=t(:view_metapackages_rdepends_1)%></h2> 
 <%= show_rdependencies @dependencies %>
 <% else %>
-<p><%=_('Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.')%></p>
+<p><%=t(:view_metapackages_rdepends_2)%></p>
 <% end %>

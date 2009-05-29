@@ -1,4 +1,4 @@
-<h2><%=_('Konflikte innerhalb von Bündeln')%></h2>
+<h2><%=t(:view_metapackages_immediate_conflicts_0)%></h2>
 <ol>
 	<% for c in @conflicts %>
 	<% m = c[0] %>
@@ -8,7 +8,7 @@
 		<ul>
 			<% conflicts.each do |p,cons|%>
 			  <li>
-                 <%= link_to p.name, package_path(p)%><%=_(' ist in Konflikt mit ')%>
+                 <%= link_to p.name, package_path(p)%><%=t(:view_metapackages_immediate_conflicts_1)%>
 <% for conp in cons %>
 				   <%= link_to conp.name, package_path(conp)%>&nbsp; 
 				 <% end %>

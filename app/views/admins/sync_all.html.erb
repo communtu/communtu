@@ -1,25 +1,25 @@
 <%= render_flash %>
-<%= link_to _("Zurück"), { :controller => :distributions, :action => :show,\
+<%= link_to t(:view_admins_sync_all_0), { :controller => :distributions, :action => :show,\
 	:id => @distribution.id }%>
 <% if @distribution.nil? | @infos.nil? then%>
 <div class="inner0">
-	<span class="headline"><%=_("Fehler: Repositories konnten nicht synchronisiert werden")%></span>
+	<span class="headline"><%=t(:view_admins_sync_all_1)%></span>
 </div>
 
 <% else %>
 <div class="inner0">
-<span class="headline"><%=_("Repositories synchronisiert")%></span>
+<span class="headline"><%=t(:view_admins_sync_all_2)%></span>
 <% for @info in @infos do%>
 <% if !@info.nil?%>
 <ul>
-	<li><%=_("Repository-URL: ")%><%= @info["url"].nil? ? "" : @info["url"] %></li>
-	<li><%=_("Pakete insgesamt: ")%><%= @info["package_count"].nil? ? "" : @info["package_count"]  %></li>
-	<li><%=_("Neu hinzugefügte Pakete: ")%><%= @info["new_count"].nil? ? "" : @info["new_count"] %></li>
-	<li><%=_("Aktualisierte Pakete: ")%><%= @info["update_count"].nil? ? "" : @info["update_count"] %></li>	
+	<li><%=t(:view_admins_sync_all_3)%><%= @info["url"].nil? ? "" : @info["url"] %></li>
+	<li><%=t(:view_admins_sync_all_4)%><%= @info["package_count"].nil? ? "" : @info["package_count"]  %></li>
+	<li><%=t(:view_admins_sync_all_5)%><%= @info["new_count"].nil? ? "" : @info["new_count"] %></li>
+	<li><%=t(:view_admins_sync_all_6)%><%= @info["update_count"].nil? ? "" : @info["update_count"] %></li>	
 </ul>
 <% if (!@info["failed"].nil?) && (@info["failed"].size > 0)%>
 <div class="inner1">
-<span class="headline"><%=_("Die folgenden Pakete konnten nicht in der Datenbank gespeichert werden:")%></span>
+<span class="headline"><%=t(:view_admins_sync_all_7)%></span>
 <ul>	
 	<% @info["failed"].each do |name|%>
 		<li><%= name %></li>

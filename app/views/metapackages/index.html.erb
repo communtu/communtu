@@ -1,11 +1,11 @@
 <% if logged_in? %>
-<span class="headline"><%=_('Bündel')%></span>
+<span class="headline"><%=t(:view_metapackages_index_0)%></span>
 
 <div class="inner1">
     <%= render :partial => "metalist", :locals => { :packages => @metapackages } %>
 </div>
 
-<%= link_to _('Zurück'), distribution_path(id)%>
+<%= link_to t(:view_metapackages_index_1), distribution_path(id)%>
 <% else %>
-<p><%=_('Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.')%></p>
+<p><%=t(:view_metapackages_index_2)%></p>
 <% end %>

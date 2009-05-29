@@ -1,8 +1,8 @@
-<h1><%=_('Benachrichtigung bei Fehlerbehebung')%></h1>
-<%=_('Bitte benachrichtigt mich unter folgender E-Mail über die Fehlerbehebung.')%>
+<h1><%=t(:view_home_mail_0)%></h1>
+<%=t(:view_home_mail_1)%>
 <%= form_tag(:controller => 'home', :action => 'submit_mail') %>
-<%= #text_field_tag(_('E-Mail:'))
+<%= #text_field_tag(t(:view_home_mail_2))
 %>
-<p><%=_('E-Mail: ')%><%= text_field(:form, :email) %></p>
-<%= submit_tag _('Abschicken') %>
+<p><%=t(:view_home_mail_3)%><%= text_field(:form, :email) %></p>
+<%= submit_tag t(:view_home_mail_4) %>
 </form>

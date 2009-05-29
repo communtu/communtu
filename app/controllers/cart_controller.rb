@@ -1,6 +1,6 @@
 class CartController < ApplicationController
     def title
-    _("Bündel-Editor")
+    t(:controller_cart_0)
     end
     def create
         prepare_create
@@ -10,7 +10,7 @@ class CartController < ApplicationController
     def prepare_create
         if not editing_metapackage?
             cart      = Cart.new
-            cart.name = _("Neues Bündel")
+            cart.name = t(:controller_cart_1)
             cart.save!
             
             session[:cart] = cart.id
@@ -46,7 +46,7 @@ class CartController < ApplicationController
           end
         end
         if !err.empty? then
-          flash[:notice] = _("Folgende Pakete wurden nicht gefunden: ")+err
+          flash[:notice] = t(:controller_cart_2)+err
         end
         redirect_to "/users/" + current_user.id.to_s + "/metapackages/2"
     end

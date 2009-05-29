@@ -1,10 +1,10 @@
-<h1><%=_("Fehlgeschlagene oder laufende Deb-Generierungen")%></h1>
+<h1><%=t(:view_debs_index_0)%></h1>
 
-<p><%= link_to _('Zurück zum Communtu-Menü'), '/home' %></p>
+<p><%= link_to t(:view_debs_index_1), '/home' %></p>
 <% if @debs.empty? then %>
-<p><%=_("  Keine fehlgeschlagenen Deb-Generierungen vorhanden! Glückwunsch!")%></p>
+<p><%=t(:view_debs_index_2)%></p>
 <% else %>  
-<p><%= link_to _("Alle fehlgeschlagenen debs erzeugen <b>Achtung: nur unter admin.communtu.de ausführen!</b>"), :action => 'generate_all' %></p>
+<p><%= link_to t(:view_debs_index_3), :action => 'generate_all' %></p>
 <table>
   <tr>
     <th>Metapackage</th>
@@ -31,8 +31,8 @@
     <td><%=h deb.generated %></td>
     <td><%=h deb.outdated %></td>
     <td><%=h deb.errmsg %></td>
-    <td><%= link_to _('Anzeigen'), deb %></td>
-    <td><%= link_to _('Erzeugen'), :action => 'generate', :id => deb.id %></td>
+    <td><%= link_to t(:view_debs_index_4), deb %></td>
+    <td><%= link_to t(:view_debs_index_5), :action => 'generate', :id => deb.id %></td>
   </tr>
 <% end %>
 </table>

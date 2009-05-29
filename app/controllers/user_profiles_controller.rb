@@ -2,7 +2,7 @@ require 'user_meta_tabz'
 
 class UserProfilesController < ApplicationController
   def title
-    _("Installation von Bündeln")
+    t(:controller_profiles_0)
   end  
   before_filter :authorize_user_subresource
   

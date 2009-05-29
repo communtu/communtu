@@ -3,11 +3,11 @@
 
 <table style="height:100%;" width="100%" cellspacing="0">
   <tr>
-    <th valign="middle" class="packageList" align="left"><%=_('Name')%></th>
-    <th valign="middle" class="packageList" align="left"><%=_('Kategorie')%></th>
-    <th valign="middle" class="packageList" align="left"><%=_('Standard')%></th>
-    <th valign="middle" class="packageList" align="left"><%=_('Veröffentl.')%></th>
-    <th valign="middle" class="packageList" align="left"><%=_('Installieren')%></th>
+    <th valign="middle" class="packageList" align="left"><%=t(:view_metapackages__metalist_0)%></th>
+    <th valign="middle" class="packageList" align="left"><%=t(:view_metapackages__metalist_1)%></th>
+    <th valign="middle" class="packageList" align="left"><%=t(:view_metapackages__metalist_2)%></th>
+    <th valign="middle" class="packageList" align="left"><%=t(:view_metapackages__metalist_3)%></th>
+    <th valign="middle" class="packageList" align="left"><%=t(:view_metapackages__metalist_4)%></th>
     <th valign="middle" class="packageList" align="left"></th>
   <th valign="middle" class="packageList" align="left"></th>
 </tr>
@@ -16,29 +16,29 @@
      <% css = cycle("packageList0", "packageList1") %>
       <tr>
         <td class="<%= css %>" valign="middle">
-		    <%= link_to(metapackage.name, metapackage_path(metapackage), :title => _("zur Detailansicht")) %></td>
+		    <%= link_to(metapackage.name, metapackage_path(metapackage), :title => t(:view_metapackages__metalist_5)) %></td>
         <td class="<%= css %>" valign="middle">
 		    <%=h metapackage.category.name %></td>
         <td class="<%= css %>" valign="middle">
-		    <%=metapackage.default_install ?  _("ja") : _("nein") %></td>
+		    <%=metapackage.default_install ?  t(:view_metapackages__metalist_6) : t(:view_metapackages__metalist_7) %></td>
 	    <td class="<%= css %>" valign="middle" align="middle">
 	        <% if metapackage.published == Metapackage.state[:published] %>
-	            <%= image_tag("yes.png", :size => "22x22", :border => "0", :title => _("veröffentlicht"), :alt => _("veröffentlicht")) %>
+	            <%= image_tag("yes.png", :size => "22x22", :border => "0", :title => t(:view_metapackages__metalist_8), :alt => t(:view_metapackages__metalist_9)) %>
 	        <% else %>
-	            <%= image_tag("no.png", :size => "22x22", :border => "0", :title => _("nicht veröffentlicht"), :alt => _("nicht veröffentlicht")) %>
+	            <%= image_tag("no.png", :size => "22x22", :border => "0", :title => t(:view_metapackages__metalist_10), :alt => t(:view_metapackages__metalist_11)) %>
 	        <% end %>
 	    </td>
 		<td class="<%= css %>" valign="middle" align="middle">
-			<%= link_to image_tag("/images/apt.png", :size => "22x22", :border => "0", :title => _("installieren mittels Skript"), :alt => _("installieren")), user_path(current_user) + "/suggestion/quick_install/" + metapackage.id.to_s%>		
-			<%= link_to image_tag("/images/install.png", :size => "22x22", :border => "0", :title => _('installieren mittels Metapaket. Bitte vorher die Quellen hinzufügen.'), :alt => _("installieren")), "apt://#{metapackage.debian_name}" %>		
-            <%= link_to image_tag("/images/sources.jpg", :size => "22x22", :border => "0", :title => _("Quellen hinzufügen"), :alt => _("Quellen")), "/users/#{current_user.id}/suggestion/install_bundle_sources/#{metapackage.id}" %>
+			<%= link_to image_tag("/images/apt.png", :size => "22x22", :border => "0", :title => t(:view_metapackages__metalist_12), :alt => t(:view_metapackages__metalist_13)), user_path(current_user) + "/suggestion/quick_install/" + metapackage.id.to_s%>		
+			<%= link_to image_tag("/images/install.png", :size => "22x22", :border => "0", :title => t(:view_metapackages__metalist_14), :alt => t(:view_metapackages__metalist_15)), "apt://#{metapackage.debian_name}" %>		
+            <%= link_to image_tag("/images/sources.jpg", :size => "22x22", :border => "0", :title => t(:view_metapackages__metalist_16), :alt => t(:view_metapackages__metalist_17)), "/users/#{current_user.id}/suggestion/install_bundle_sources/#{metapackage.id}" %>
 
 		</td>	
         <% if logged_in? %>
         <td class="<%= css %>" valign="middle" width="30">
                 <% if (metapackage.user_id == current_user.id) or is_admin? %>
                     <% if editing_metapackage? %>
-                        <%= link_to_remote(image_tag("/images/add.png", :size => "22x22", :border => "0", :title => _("hinzufügen"), :alt => _("hinzufügen")), \
+                        <%= link_to_remote(image_tag("/images/add.png", :size => "22x22", :border => "0", :title => t(:view_metapackages__metalist_18), :alt => t(:view_metapackages__metalist_19)), \
                                 :url => user_path(current_user) + "/cart/add_to_cart/" + metapackage.id.to_s,\
                                 :update => 'meta_cart') %>
                         <% end %>
@@ -52,11 +52,11 @@
     <% end %>
     </table>
     <div style="position:relative; left:520px; top:15px; top:4px; height:24px;width:150px;">
-        <%= select_tag("method", _("<option>0 Bündel ausgewählt</option>"), :onchange => "this.form.submit()") %>
+        <%= select_tag("method", t(:view_metapackages__metalist_20), :onchange => "this.form.submit()") %>
     </div>
   </form>
 
 <%= observe_form('action_form', :url => "/metapackage/changed", :update => :method) %>
 <% else %>
-<p><%=_('Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.')%></p>
+<p><%=t(:view_metapackages__metalist_21)%></p>
 <% end %>

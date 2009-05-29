@@ -1,41 +1,41 @@
-<h1><%=_('Neues Paket')%></h1>
+<h1><%=t(:view_packages_new_0)%></h1>
 
 <%= error_messages_for :packet %>
 
 <% form_for(@packet) do |f| %>
   <p>
-    <b><%=_('Distribution')%></b><br />
+    <b><%=t(:view_packages_new_1)%></b><br />
     <%= f.text_field :distrib_id %>
   </p>
 
   <p>
-    <b><%=_('Name')%></b><br />
+    <b><%=t(:view_packages_new_2)%></b><br />
     <%= f.text_field :name %>
   </p>
 
   <p>
-    <b><%=_('Version')%></b><br />
+    <b><%=t(:view_packages_new_3)%></b><br />
     <%= f.text_field :version %>
   </p>
 
   <p>
-    <b><%=_('Quelle')%></b><br />
+    <b><%=t(:view_packages_new_4)%></b><br />
     <%= f.text_field :source %>
   </p>
 
   <p>
-    <b><%=_('Weblinks')%></b><br />
+    <b><%=t(:view_packages_new_5)%></b><br />
     <%= f.text_field :urls %>
   </p>
 
   <p>
-    <b><%=_('Videos')%></b><br />
+    <b><%=t(:view_packages_new_6)%></b><br />
     <%= f.text_field :videos %>
   </p>
 
   <p>
-    <%= f.submit _("Speichern") %>
+    <%= f.submit t(:view_packages_new_7) %>
   </p>
 <% end %>
 
-<%= link_to _('Zurück'), packets_path %>
+<%= link_to t(:view_packages_new_8), packets_path %>

@@ -1,79 +1,68 @@
-<h3><%=_('Ubuntu-Derivate')%></h3>
+<h3><%=t(:view_home_derivatives_0)%></h3>
 
-<%=_('Communtu setzt auf einer Ubuntu-Basisinstallation auf.
-Es gibt nun eine ganze Reihe von ')%><%= link_to _('Ubuntu-Derivaten'), _('http://wiki.ubuntuusers.de/Was_ist_Linux?#Was-sind-Derivate-einer-Distribution'), :target => '_blank'  %><%=_(', und viele Ubuntu-Nutzer fragen sich, 
-ob sie statt Ubuntu lieber ein Derivat benutzen sollten.
-Die Antwort ist: meistens fährt man mit dem Standard-Ubuntu ganz gut, denn
-Communtu erlaubt, die Derivate auf einfache Weise nachzuinstallieren. 
-Allerdings ist das nicht bei allen Derivaten gleich sinnvoll.')%>
+<%=t(:view_home_derivatives_1)%><%= link_to t(:view_home_derivatives_2), t(:view_home_derivatives_3), :target => '_blank'  %><%=t(:view_home_derivatives_4)%>
 
-<b><%=_('Alle Derivate können unter der ')%><%= link_to _('Installations-Feinauswahl'), user_path(current_user) + "/user_profile/refine" %>
-<%=_('unter der Kategorie "Derivate" zur Installation ausgewählt werden.')%></b>
-<%=_('Ebenso kannst du dort nachgucken, aus welchen Paketen ein Derivat besteht.')%>
-<h4><%=_('Über Communtu sinnvoll nachinstallierbare Derivate:')%></h4>
+<b><%=t(:view_home_derivatives_5)%><%= link_to t(:view_home_derivatives_6), user_path(current_user) + "/user_profile/refine" %>
+<%=t(:view_home_derivatives_7)%></b>
+<%=t(:view_home_derivatives_8)%>
+<h4><%=t(:view_home_derivatives_9)%></h4>
 <ul>
 <li>
-<%= link_to 'Ubuntu Studio', _('http://wiki.ubuntuusers.de/Ubuntu_Studio'), :target => '_blank' %><%=_(' - Ubuntu Multimedie-Edition.
-Sie wird bei Communtu mitinstalliert, wenn du bei Audio, Film und/oder Grafik/Design "erweitert" anwählst.')%>
+<%= link_to 'Ubuntu Studio', t(:view_home_derivatives_10), :target => '_blank' %><%=t(:view_home_derivatives_11)%>
 </li>
 <li>
-<%= link_to 'Medibuntu', 'http://medibuntu.org', :target => '_blank' %><%=_(' stellt Multimedia-Paketquellen bereit, die aus rechtlichen Gründen nicht von Ubuntu selbst angeboten wird. Medibuntu wird bei Communtu mit berücksichtigt (z.B. bei Audio und Film).')%>
+<%= link_to 'Medibuntu', 'http://medibuntu.org', :target => '_blank' %><%=t(:view_home_derivatives_12)%>
 </li>
 <li>
-<%= link_to 'Mythbuntu', 'http://www.mythbuntu.org/', :target => '_blank' %><%=_(' - der PC wird zum Videorekorder. Bei Film "Freak" auswählen, und es wird mitinstalliert. Empfohlen: CPU mit 2 GHz, 1024 MByte RAM, 10 GByte Festplattenplatz für das Frontend, 80+ GByte für das Backend, eine Grafikkarte mit 128 MByte RAM mit TV-Ausgang und eine unterstützte TV-Karte.')%>
+<%= link_to 'Mythbuntu', 'http://www.mythbuntu.org/', :target => '_blank' %><%=t(:view_home_derivatives_13)%>
 </li>
 <li>
-<%= link_to 'Edubuntu', 'http://www.edubuntu.org/', :target => '_blank' %><%=_(' - Lernsoftware. Bei "Bildung und Wissenschaft" den Level "erweitert" auswählen, und es wird mitinstalliert.')%>
+<%= link_to 'Edubuntu', 'http://www.edubuntu.org/', :target => '_blank' %><%=t(:view_home_derivatives_14)%>
 </li>
 <li>
-<%= link_to 'Kubuntu', _('http://wiki.ubuntuusers.de/KDE'), :target => '_blank' %><%=_(' ist Ubuntu mit dem KDE-Desktop.	')%>
+<%= link_to 'Kubuntu', t(:view_home_derivatives_15), :target => '_blank' %><%=t(:view_home_derivatives_16)%>
 <li>
-<%= link_to 'Linux Mint', _('http://de.wikipedia.org/wiki/Linux_Mint'), :target => '_blank' %><%=_(' ist eine Ubuntu-Abspaltung mit eigener User-Community, die sich vor allem Benutzerfreundlichkeit auf die Fahnen schreibt.
-Linux Mint ähnelt Ubuntu sehr, hat aber viele Codes, z.B. für DVDs und MP3s, schon vorinstalliert. Diese Codecs gibt es allerdings auch bei Communtu, unter Unterhaltungsmedien. ')%><b><%=_('Achtung! bei Communtu erst in Kürze verfügbar.')%></b></li>
+<%= link_to 'Linux Mint', t(:view_home_derivatives_17), :target => '_blank' %><%=t(:view_home_derivatives_18)%><b><%=t(:view_home_derivatives_19)%></b></li>
 <li>
-<%=_('	Automatix war eine Installationshilfe, die sich großer Beliebtheit erfreute (sie wurde sogar von der New York Times empfohlen), die aber nicht ganz den Ubuntu-Programmierstandards entsprach und inzwischen nicht mehr weiterentwickelt wird. ')%></li>
+<%=t(:view_home_derivatives_20)%></li>
 </ul>
 
-<h4><%=_('Über Communtu nachinstallierbare Derivate, sinnvollerweise auf einer Xfce-basierten Installation (z.B. Xubuntu) aufzusetzen:')%></h4>
+<h4><%=t(:view_home_derivatives_21)%></h4>
 <ul>
-<li> <%= link_to 'ZevenOS', 'http://www.zevenos.com/', :target => '_blank' %><%=_(' - orient an BeOS, setzt auf Schnelligkeit, Kompatibilität mit alten Rechnern und einfache Bedienung. CPU mit mindestens 200 MHZ
-128 MB RAM (zum Betrieb, zur Installation werden 192 MB RAM benötigt);
-2 GB freier Festplattenplatz (Empfohlen: 4 GB oder mehr);
-16 MB Grafikkarte (Empfohlen: Intel GMA 9xx). ')%><b><%=_('Achtung! bei Communtu erst in Kürze verfügbar.')%></b></li>
+<li> <%= link_to 'ZevenOS', 'http://www.zevenos.com/', :target => '_blank' %><%=t(:view_home_derivatives_22)%><b><%=t(:view_home_derivatives_23)%></b></li>
 </ul>
 
-<h4><%=_('Derivate, die mit der Derivats-eigenen Installations-CD installiert werden sollten:')%></h4>
+<h4><%=t(:view_home_derivatives_24)%></h4>
 <ul>
 <li>
-<%= link_to 'Xubuntu', _('http://wiki.ubuntuusers.de/Xfce'), :target => '_blank' %><%=_(' - mit dem schlanken Xfce als grafischer Oberfläche - besonders für ältere Rechner geeignet: 128 MByte Arbeitsspeicher und 1,5 GB auf der Festplatte reichen aus. Sollte von CD installiert werden, um wirklich eine schlanke Installation zu haben. Nachinstallationen mit Communtu möglich.')%>
+<%= link_to 'Xubuntu', t(:view_home_derivatives_25), :target => '_blank' %><%=t(:view_home_derivatives_26)%>
 </li>
 <li>
-<%= link_to 'Linux MCE', _('http://de.wikipedia.org/wiki/LinuxMCE'), :target => '_blank' %><%=_(' - damit wird Ubuntu zum ')%><%=link_to _('Fernsehcomputer'), _('http://de.wikipedia.org/wiki/Home_Theater_Personal_Computer') %><%=_('. Aufgrund der notwendigen Treiberinstallation sollte Linux MCE direkt installiert werden, Communtu kann dann aber für die Installation weiterer Software genutzt werden.')%>
+<%= link_to 'Linux MCE', t(:view_home_derivatives_27), :target => '_blank' %><%=t(:view_home_derivatives_28)%><%=link_to t(:view_home_derivatives_29), t(:view_home_derivatives_30) %><%=t(:view_home_derivatives_31)%>
 </li>
 <li>
-<%= link_to 'Gobuntu', 'http://www.ubuntu.com/products/whatisubuntu/gobuntu', :target => '_blank' %><%=_(' ist ein Ubuntu-Derivat komplett aus freier Software. Nur für erfahrene Nutzer geeignet. Sollte mit der Gobuntu-CD installiert werden, damit es auch wirklich nur freie Software ist. Nachinstallationen mit Communtu möglich, sinnvollerweise sollten dann im Nutzerprofil "freie Software" angewählt werden.
-Dies Derivate ist in der Version 8.04 erhältlich und wird nicht weiterentwickelt.')%>
+<%= link_to 'Gobuntu', 'http://www.ubuntu.com/products/whatisubuntu/gobuntu', :target => '_blank' %><%=t(:view_home_derivatives_32)%>
 </li>
-<li> <%= link_to 'Nexenta OS', _('http://de.wikipedia.org/wiki/GNU-Varianten#Nexenta_OS'), :target => '_blank' %><%=_(' - ersetzt den Linux-Kern durch OpenSolaris. Stellt nur eine minimale Basis an Anwendungen bereit. Die Installation weiterer Pakete bleibt dem Benutzer überlassen; hierfür kann Communtu genutzt werden.')%></li>
+<li> <%= link_to 'Nexenta OS', t(:view_home_derivatives_33), :target => '_blank' %><%=t(:view_home_derivatives_34)%></li>
 </ul>
 
-<h4><%=_('Es gibt noch weitere Derivate zu denen wir bisher noch keine Installationsempfehlung abgeben k&ouml;nnen:')%></h4>
+<h4><%=t(:view_home_derivatives_35)%></h4>
 <ul>
-<li> <%= link_to 'Impi Linux', 'http://www.impi.org.za/', :target => '_blank' %><%=_(' - eine afrikanische Ubuntu-Variante, die allerdings offenbar nicht übers Internet erhältlich ist.')%></li>
-<li> <%= link_to 'linex', _('http://de.wikipedia.org/wiki/LinEx'), :target => '_blank' %><%=_(' - öffentliche Distribution der spanischen Region Extremadura.')%></li>
-<li> <%= link_to 'U-lite', 'http://u-lite.org/', :target => '_blank' %><%=_(' für ältere PCs. Sie baut auf einer LXDE Oberfläche auf.')%></li>
-<li> <%= link_to 'Ubuntu mobile', 'http://www.ubuntu.com/products/mobile', :target => '_blank' %><%=_(' - für mobile Internetgeräte.')%></li>
-<li><%=_(' Ubuntu ultimate  - Ubuntu mit vielen Desktop-Desgins und Programmen.')%></li>
-<li> <%= link_to 'gOS', 'http://www.thinkgos.com/', :target => '_blank' %><%=_(' - spezialisiert auf Webdienste.')%></li>
-<li> <%= link_to 'OpenGEU', 'http://opengeu.intilinux.com', :target => '_blank' %><%=_(' - basiert auf E17. 2D-Effekte auch ohne schnelle Grafikkarte.')%></li>
-<li> <%= link_to 'Fluxbuntu', 'http://wiki.fluxbuntu.org', :target => '_blank' %><%=_(' - minimalistische schnelle Ubuntu-Version für ältere PCs.')%></li>
-<li> <%= link_to 'Ubuntu Server', _('http://wiki.ubuntuusers.de/Server_Installation'), :target => '_blank' %><%=_(' - Server-Version von Ubuntu, ohne grafische Oberfläche.')%></li>
-<li> <%= link_to 'Ubuntu JeOS', _('http://wiki.ubuntuusers.de/JeOS'), :target => '_blank' %><%=_(' - minimale Server-Version, vor allem für Virtualisierung geeignet..')%></li>
-<li> <%= link_to 'Elbuntu', 'http://e17blog.tuxfamily.org/', :target => '_blank' %><%=_(' - Ubuntu mit Enlightenment als Desktopumgebung.')%></li>
-<li> <%= link_to 'nUbuntu', 'http://www.nubuntu.org/', :target => '_blank' %><%=_(' - mit Fluxbox und verschiedenen Netzwerk-Sicherheitswerkzeugen .')%></li>
-<li> <%= link_to 'getDeb', 'http://www.getdeb.net', :target => '_blank' %><%=_(' - Installation von Programmen und Versionen, die nicht über die offiziellen Repositories erhältlich sind.')%></li>
-<li> <%= link_to 'Ultamatix', 'http://ultamatix.com/', :target => '_blank' %><%=_(' - eine Automatix für die Ultimate Edition.')%></li>
-<li> <%= link_to 'Minimal-CD', 'https://help.ubuntu.com/community/Installation/MinimalCD', :target => '_blank' %><%=_(' - erlaubt schnellere Installation, da nur die aktuellsten Pakete heruntergeladen werden.')%></li>
-<li> <%= link_to 'Xbmc', 'http://xbmc.org/wiki/?title=HOW-TO:_Install_XBMC_for_Linux_on_Ubuntu_8.10_(Intrepid)_step-by-step', :target => '_blank' %><%=_(' - Mediacenter.')%></li>
-<li> <%= link_to 'Ubuntu Netbook Remix', _('http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix'), :target => '_blank'  %><%=_('für Subnotebooks/EEE-PCs')%></li>
+<li> <%= link_to 'Impi Linux', 'http://www.impi.org.za/', :target => '_blank' %><%=t(:view_home_derivatives_36)%></li>
+<li> <%= link_to 'linex', t(:view_home_derivatives_37), :target => '_blank' %><%=t(:view_home_derivatives_38)%></li>
+<li> <%= link_to 'U-lite', 'http://u-lite.org/', :target => '_blank' %><%=t(:view_home_derivatives_39)%></li>
+<li> <%= link_to 'Ubuntu mobile', 'http://www.ubuntu.com/products/mobile', :target => '_blank' %><%=t(:view_home_derivatives_40)%></li>
+<li><%=t(:view_home_derivatives_41)%></li>
+<li> <%= link_to 'gOS', 'http://www.thinkgos.com/', :target => '_blank' %><%=t(:view_home_derivatives_42)%></li>
+<li> <%= link_to 'OpenGEU', 'http://opengeu.intilinux.com', :target => '_blank' %><%=t(:view_home_derivatives_43)%></li>
+<li> <%= link_to 'Fluxbuntu', 'http://wiki.fluxbuntu.org', :target => '_blank' %><%=t(:view_home_derivatives_44)%></li>
+<li> <%= link_to 'Ubuntu Server', t(:view_home_derivatives_45), :target => '_blank' %><%=t(:view_home_derivatives_46)%></li>
+<li> <%= link_to 'Ubuntu JeOS', t(:view_home_derivatives_47), :target => '_blank' %><%=t(:view_home_derivatives_48)%></li>
+<li> <%= link_to 'Elbuntu', 'http://e17blog.tuxfamily.org/', :target => '_blank' %><%=t(:view_home_derivatives_49)%></li>
+<li> <%= link_to 'nUbuntu', 'http://www.nubuntu.org/', :target => '_blank' %><%=t(:view_home_derivatives_50)%></li>
+<li> <%= link_to 'getDeb', 'http://www.getdeb.net', :target => '_blank' %><%=t(:view_home_derivatives_51)%></li>
+<li> <%= link_to 'Ultamatix', 'http://ultamatix.com/', :target => '_blank' %><%=t(:view_home_derivatives_52)%></li>
+<li> <%= link_to 'Minimal-CD', 'https://help.ubuntu.com/community/Installation/MinimalCD', :target => '_blank' %><%=t(:view_home_derivatives_53)%></li>
+<li> <%= link_to 'Xbmc', 'http://xbmc.org/wiki/?title=HOW-TO:_Install_XBMC_for_Linux_on_Ubuntu_8.10t(:view_home_derivatives_54)_step-by-step', :target => '_blank' %><%=t(:view_home_derivatives_55)%></li>
+<li> <%= link_to 'Ubuntu Netbook Remix', t(:view_home_derivatives_56), :target => '_blank'  %><%=t(:view_home_derivatives_57)%></li>
 </ul>

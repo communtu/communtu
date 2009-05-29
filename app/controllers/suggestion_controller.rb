@@ -1,6 +1,6 @@
 class SuggestionController < ApplicationController
   def title
-    _("Ubuntu-Linux an die individuellen Bedürfnisse anpassen")
+    t(:controller_suggestion_0)
   end
   before_filter :authorize_user_subresource
   
@@ -13,7 +13,7 @@ class SuggestionController < ApplicationController
     version = current_user.profile_version.to_s
 
     if current_user.selected_packages.empty? then
-      flash[:error] = _("Um etwas installieren zu können, musst du zunächst etwas auswählen. Speichern nicht vergessen!")
+      flash[:error] = t(:controller_suggestion_1)
       redirect_to "/users/#{current_user.id}/user_profile/tabs/0"
       return
     end
@@ -21,7 +21,7 @@ class SuggestionController < ApplicationController
     debfile = Dir.glob("debs/#{name}/#{name}_#{version}*deb")[0]
     # if profile has changed, generate new debian metapackage
     if current_user.profile_changed or debfile.nil? then
-      description = _("Quellen und Schluessel hinzufuegen fuer Benutzer ")+current_user.login
+      description = t(:controller_suggestion_2)+current_user.login
       debfile = Metapackage.makedeb_for_source_install(name,
                  version,
                  description,
@@ -34,7 +34,7 @@ class SuggestionController < ApplicationController
     end
     current_user.save
     if debfile.nil? then
-      flash[:error] = _("Bei der Erstellung des Pakets ist ein Fehler aufgetreten.")
+      flash[:error] = t(:controller_suggestion_3)
       redirect_to "/home"
       return
     end
@@ -48,7 +48,7 @@ class SuggestionController < ApplicationController
     name = BasePackage.debianize_name("communtu-add-sources-#{current_user.login}-#{bundle.name}")
     version = current_user.profile_version.to_s
 
-    description = _("Quellen und Schluessel hinzufuegen fuer Buendel ")+bundle.name
+    description = t(:controller_suggestion_4)+bundle.name
     debfile = Metapackage.makedeb_for_source_install(name,
                  version,
                  description,
@@ -58,7 +58,7 @@ class SuggestionController < ApplicationController
                  current_user.license,
                  current_user.security)
     if debfile.nil? then
-      flash[:error] = _("Bei der Erstellung des Pakets ist ein Fehler aufgetreten.")
+      flash[:error] = t(:controller_suggestion_5)
       redirect_to "/home"
       return
     end
@@ -71,7 +71,7 @@ class SuggestionController < ApplicationController
     repos = package.repositories_dist(current_user.distribution)
     name = BasePackage.debianize_name("communtu-add-sources-#{current_user.login}-#{package.name}")
     version = "0.1"
-    description = _("Quellen und Schluessel hinzufuegen fuer Paket ")+package.name
+    description = t(:controller_suggestion_6)+package.name
     # only install sources, no packages
     codename = Metapackage.codename(current_user.distribution, 
                  current_user.derivative, 
@@ -94,7 +94,7 @@ class SuggestionController < ApplicationController
     version = current_user.profile_version.to_s
 
     if current_user.selected_packages.empty? then
-      flash[:error] = _("Um etwas installieren zu können, musst du zunächst etwas auswählen. Speichern nicht vergessen!")
+      flash[:error] = t(:controller_suggestion_7)
       redirect_to "/users/#{current_user.id}/user_profile/tabs/0"
       return
     end
@@ -102,7 +102,7 @@ class SuggestionController < ApplicationController
     debfile = Dir.glob("debs/#{name}/#{name}_#{version}*deb")[0]
     # if profile has changed, generate new debian metapackage
     if current_user.profile_changed or debfile.nil? then
-      description = _("Communtu-Nachinstallation fuer Benutzer ")+current_user.login
+      description = t(:controller_suggestion_8)+current_user.login
       codename = Metapackage.codename(current_user.distribution, 
                  current_user.derivative, 
                  current_user.license,
@@ -118,7 +118,7 @@ class SuggestionController < ApplicationController
     end
     current_user.save
     if debfile.nil? then
-      flash[:error] = _("Bei der Erstellung des Pakets ist ein Fehler aufgetreten.")
+      flash[:error] = t(:controller_suggestion_9)
       redirect_to "/home"
       return
     end
@@ -159,7 +159,7 @@ class SuggestionController < ApplicationController
     packages.each do |p|    
         package_names   = []
         p.recursive_packages package_names, sources, dist, license, security
-        script += _("# Bündel: ")+p.name+"\n"
+        script += t(:controller_suggestion_10)+p.name+"\n"
         script += "PACKAGES=$PACKAGES\""
         package_names.each do |name|
           script += name + " "
@@ -178,13 +178,13 @@ class SuggestionController < ApplicationController
     # generate question ot the user
     if dialog == "zenity" then
       script += "IFS=\"*\"\n"
-      script += "#{dialog} --list --width 500 --height 300 --title \""+ _("Paketquellen hinzufügen") + "\" " + 
-          "--text \""+ _("Folgende Paketquellen werden hinzugefügt")+"\" --column \"Quelle\" $SOURCES\n"
+      script += "#{dialog} --list --width 500 --height 300 --title \""+ t(:controller_suggestion_11) + "\" " + 
+          "--text \""+ t(:controller_suggestion_12)+"\" --column \"Quelle\" $SOURCES\n"
     elsif dialog == "kdialog" then
       sources_lined = sources_line.gsub("*","\\n")
       script += "SOURCESD=\"#{sources_lined}\"\n\n"
-      script += "#{dialog} --geometry 500x300 --title \""+ _("Paketquellen hinzufügen") + "\"" + 
-          "--yesno \"" + _("Folgende Paketquellen werden hinzugefügt") + "\\n$SOURCESD\"\n"
+      script += "#{dialog} --geometry 500x300 --title \""+ t(:controller_suggestion_13) + "\"" + 
+          "--yesno \"" + t(:controller_suggestion_14) + "\\n$SOURCESD\"\n"
     end  
     script += "\n"
 
@@ -192,11 +192,11 @@ class SuggestionController < ApplicationController
     
     if dialog == "zenity" then
       script += "IFS=\" \"\n"
-      script += "#{dialog} --list --width 500 --height 300 --title \""+ _("Pakete installieren") + "\" " +
-          "--text \"" + _("Folgende Pakete werden installiert") + "\" --column \"Paket\" $PACKAGES \n"
+      script += "#{dialog} --list --width 500 --height 300 --title \""+ t(:controller_suggestion_15) + "\" " +
+          "--text \"" + t(:controller_suggestion_16) + "\" --column \"Paket\" $PACKAGES \n"
     elsif dialog == "kdialog" then
-      script += "#{dialog} --geometry 500x300 --title \"" + _("Pakete installieren") + "\" " + 
-          "--yesno \"" + _("Folgende Pakete werden installiert") + "\\n$PACKAGES\"\n"
+      script += "#{dialog} --geometry 500x300 --title \"" + t(:controller_suggestion_17) + "\" " + 
+          "--yesno \"" + t(:controller_suggestion_18) + "\\n$PACKAGES\"\n"
     end          
     script += "\n"
     

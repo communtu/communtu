@@ -1,25 +1,25 @@
 <%= render_flash %>
-<%= link_to _("Zurück"), { :controller => :distributions, :action => :show,\
+<%= link_to t(:view_admins_sync_package_0), { :controller => :distributions, :action => :show,\
 	:id => @repository.distribution_id }%>
 <% if !@info[:error].nil? then%>
 <div class="inner0">
-	<span class="headline"><%=_("Fehler: Repository konnte nicht synchronisiert werden")%></span><br>
+	<span class="headline"><%=t(:view_admins_sync_package_1)%></span><br>
 	<%= @info[:error]%>
 </div>
 
 <% else %>
 <div class="inner0">
-<span class="headline"><%=_("Repository synchronisiert")%></span>
+<span class="headline"><%=t(:view_admins_sync_package_2)%></span>
 <ul>
-	<li><%=_("Repository: ")%><%= @repository.name %></li>
-	<li><%=_("Repository-URL: ")%><%= auto_link(@info["url"]) %></li>
-	<li><%=_("Pakete insgesamt: ")%><%= @info["package_count"] %></li>
-	<li><%=_("Neu hinzugefügte Pakete: ")%><%= @info["new_count"] %></li>
-	<li><%=_("Aktualisierte Pakete: ")%><%= @info["update_count"] %></li>	
+	<li><%=t(:view_admins_sync_package_3)%><%= @repository.name %></li>
+	<li><%=t(:view_admins_sync_package_4)%><%= auto_link(@info["url"]) %></li>
+	<li><%=t(:view_admins_sync_package_5)%><%= @info["package_count"] %></li>
+	<li><%=t(:view_admins_sync_package_6)%><%= @info["new_count"] %></li>
+	<li><%=t(:view_admins_sync_package_7)%><%= @info["update_count"] %></li>	
 </ul>
 <% if @info["failed"].size > 0%>
 <div class="inner1">
-<span class="headline"><%=_("Die folgenden Pakete konnten nicht in der Datenbank gespeichert werden:")%></span>
+<span class="headline"><%=t(:view_admins_sync_package_8)%></span>
 <ul>	
 	<% @info["failed"].each do |name|%>
 		<li><%= name %></li>

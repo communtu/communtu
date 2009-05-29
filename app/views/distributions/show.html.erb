@@ -3,29 +3,29 @@
 <%= dist_show @distribution, "inner0", false %>
 	<table width="100%">
 	<tr>
-	<td><b><%=_("Repositories:")%></b></td>
+	<td><b><%=t(:view_distributions_show_0)%></b></td>
 	<td align="right">
 		<% if is_admin? %>
-			<%= link_to _('alles prüfen'), '/admin/test_all/'+@distribution.id.to_s %>
+			<%= link_to t(:view_distributions_show_1), '/admin/test_all/'+@distribution.id.to_s %>
 			&nbsp;&nbsp;&nbsp;&nbsp;
-			<%= link_to _('alles synchronisieren'), '/admin/sync_all/'+@distribution.id.to_s %>
+			<%= link_to t(:view_distributions_show_2), '/admin/sync_all/'+@distribution.id.to_s %>
 			&nbsp;&nbsp;&nbsp;&nbsp;
-			<%= link_to _('sources.list einlesen'), '/repositories/multinew/'+@distribution.id.to_s %>
+			<%= link_to t(:view_distributions_show_3), '/repositories/multinew/'+@distribution.id.to_s %>
 			&nbsp;&nbsp;&nbsp;&nbsp;
-			<%= link_to _('Repository hinzufügen'), new_distribution_repository_path(@distribution.id) %>
+			<%= link_to t(:view_distributions_show_4), new_distribution_repository_path(@distribution.id) %>
 		<% end %>	
 	</td></tr></table>
 <%= repository_view @distribution.repositories, "inner0" %>
 
-<%= link_to _('Zurück'), distributions_path %> 
+<%= link_to t(:view_distributions_show_5), distributions_path %> 
 <% if is_admin? %>
-	| <%= link_to _('Bearbeiten'), edit_distribution_path(@distribution) %> |
-	<%= link_to(_('Löschen'), {:controller => :distributions, :action => :destroy,\
+	| <%= link_to t(:view_distributions_show_6), edit_distribution_path(@distribution) %> |
+	<%= link_to(t(:view_distributions_show_7), {:controller => :distributions, :action => :destroy,\
 		:id => @distribution.id},\
-		{:method => :delete, :confirm => _('Vor dem Löschen einer Distribution müssen alle Benutzer, die sie nutzen, ausgeloggt sein! Bist du sicher?')} ) %>
+		{:method => :delete, :confirm => t(:view_distributions_show_8)} ) %>
 <% end %>
 <% else %>
 <div class="inner0">
-<p><%=_("Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.")%></p>
+<p><%=t(:view_distributions_show_9)%></p>
 </div>
 <% end %>

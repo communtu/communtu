@@ -1,54 +1,46 @@
-<h2><%=_('Communtu-Nachinstallation')%></h2>
+<h2><%=t(:view_user_profiles__installation_0)%></h2>
 <%= render_flash %>
 
 <% if current_user.selected_packages.empty? %>
-<%=_('Um etwas installieren zu können, musst du zunächst unter "Grunddaten" oder "Detailauswahl" etwas auswählen.')%>
+<%=t(:view_user_profiles__installation_1)%>
 <% else %>
-<%=_('Aufgrund deiner Auswahl werden jetzt Programme auf deinem Computer installiert.
-Folgende Schritte sind dafür zu tun:')%>
+<%=t(:view_user_profiles__installation_2)%>
 <ol>
-	<li><%=_('Klicke auf das Symbol rechts unten')%></li>
-	<li><%=_('Speichere die Datei auf deinem Computer ab, am einfachsten auf dem Desktop')%></li>
-	<li><%=_('Auf dem Desktop (oder im Dateibrowser): Rechtsklick mit der Maus, Eigenschaften, und dann ein Häkchen bei "Ausführen" setzen.')%></li>
-    <li><%=_('Doppelklick auf die Datei (zum Ausführen)')%></li>
-	<li><%=_('Es werden zur Information nochmal die hinzugefügten Quellen und Pakete angezeigt. Zweimal auf "OK" drücken.')%></li>
+	<li><%=t(:view_user_profiles__installation_3)%></li>
+	<li><%=t(:view_user_profiles__installation_4)%></li>
+	<li><%=t(:view_user_profiles__installation_5)%></li>
+    <li><%=t(:view_user_profiles__installation_6)%></li>
+	<li><%=t(:view_user_profiles__installation_7)%></li>
 </ol>
-<%=_('Die Datei ist ein Skript, das automatisch die gewünschten
-Programme installiert, inklusive Download aus dem Internet.')%>
+<%=t(:view_user_profiles__installation_8)%>
 
 <div style="padding-top:12px;padding-right:8px" align="right">
-	<%= link_to image_tag("/images/apt.png", :title=>_('Installieren'), :alt=>_('Installieren'), :border=>'0'), user_path(current_user) + "/suggestion/install_new"%>
+	<%= link_to image_tag("/images/apt.png", :title=>t(:view_user_profiles__installation_9), :alt=>t(:view_user_profiles__installation_10), :border=>'0'), user_path(current_user) + "/suggestion/install_new"%>
     </div>
 
-<h3><%=_('Installation über Metapakete')%></h3>
-<%=_('Die Installation über Metapakete ist noch in der Erprobungsphase. Sie wird die Skript-basierte Installation ablösen.')%>
-<%=_('<b>Zwei Schritte</b> sind zu tun (Bei einem Versionswechsel muss der erste Schritt erneut ausgeführt werden, da die Communtu Quellen durch das Upgrade deaktiviert wurden.):')%>
+<h3><%=t(:view_user_profiles__installation_11)%></h3>
+<%=t(:view_user_profiles__installation_12)%>
+<%=t(:view_user_profiles__installation_13)%>
 <ol>
 	<li> <% url1 = '/users/'+current_user.id.to_s + '/suggestion/install_sources'%>	
-        <%= link_to image_tag("/images/sources.jpg", :size => "22x22", :border => "0", :title => _("Quellen hinzufügen"), :alt => _("Quellen")), url1 %>
-		<%= link_to _('Quellen und Schlüssel eintragen') , url1  %>
-        <br><%=_('Link einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer öffnen.')%>
+        <%= link_to image_tag("/images/sources.jpg", :size => "22x22", :border => "0", :title => t(:view_user_profiles__installation_14), :alt => t(:view_user_profiles__installation_15)), url1 %>
+		<%= link_to t(:view_user_profiles__installation_16) , url1  %>
+        <br><%=t(:view_user_profiles__installation_17)%>
 <% if current_user.profile_changed %> 
 		  <%if current_user.profile_version > 1 %>
-		     <br><%=_('Dieser Schritt muss neu ausgeführt werden, weil du die Einstellungen geändert hast.
-		  ')%><% end %>
-          <br><%=_('Achtung: nach dem Anklicken dauert es eine gewisse Zeit, bis die Datei bereitgestellt wird.
-		')%><% else %>
-		   <br><%=_('Dieser Schritt wurde bereits schon einmal ausgeführt.
-		')%><% end %>
+		     <br><%=t(:view_user_profiles__installation_18)%><% end %>
+          <br><%=t(:view_user_profiles__installation_19)%><% else %>
+		   <br><%=t(:view_user_profiles__installation_20)%><% end %>
     </li>
-	<li> <%= image_tag("/images/install.png", :size => "22x22", :border => "0", :title => _('installieren der Metapakete. Bitte vorher die Quellen hinzufügen.'), :alt => _("installieren"))%>
-<%=_('	    Pakete installieren. Es gibt zwei Alternativen:
-	    ')%><ul>
-		<li><%= link_to _('Installation über ein Metapaket'), '/suggestion/install_bundle_as_meta'%> </li>
+	<li> <%= image_tag("/images/install.png", :size => "22x22", :border => "0", :title => t(:view_user_profiles__installation_21), :alt => t(:view_user_profiles__installation_22))%>
+<%=t(:view_user_profiles__installation_23)%><ul>
+		<li><%= link_to t(:view_user_profiles__installation_24), '/suggestion/install_bundle_as_meta'%> </li>
 	    <li><% url2 = 'apt://'+metas%>
-             <%= link_to _('Installation über apturl'), url2 %>
+             <%= link_to t(:view_user_profiles__installation_25), url2 %>
              <% if current_user.profile_changed && current_user.profile_version > 1 %>
-		        <br><%=_('Dieser Schritt muss neu ausgeführt werden, weil du die Einstellungen geändert hast.
-		     ')%><% end %>
-		     <br><%=_('Die Browser Konqueror und Opera bitte erst für ')%><%= link_to 'apturl', _('http://wiki.ubuntuusers.de/apturl')%><%=_(' konfigurieren.
-		')%></li></ul>
+		        <br><%=t(:view_user_profiles__installation_26)%><% end %>
+		     <br><%=t(:view_user_profiles__installation_27)%><%= link_to 'apturl', t(:view_user_profiles__installation_28)%><%=t(:view_user_profiles__installation_29)%></li></ul>
 	</li>
 </ol>
-<%=_('Hinweis: Bitte .deb-Dateien nicht umbenennen.')%>
+<%=t(:view_user_profiles__installation_30)%>
 <% end %>

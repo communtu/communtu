@@ -1,18 +1,15 @@
-<h3><%=_("Bündel aus einer Paketliste erstellen")%></h3>
+<h3><%=t(:view_cart_new_from_list_0)%></h3>
 
-<%=_("Hier kannst du ein Bündel aus einer vorhandenen Paketliste erstellen. 
-Die Liste muss in Form einter Textdatei vorliegen (plain text), 
-mit einem Paketnamen pro Zeile.")%><br>
+<%=t(:view_cart_new_from_list_1)%><br>
 
-<%=_("Die Liste der auf deinem Computer installierten Pakete kannst du zum Beispiel mit")%>
+<%=t(:view_cart_new_from_list_2)%>
 <pre>
 debfoster -sn | tail -n +2 | tr ' ' '\n' > packages.list
 </pre>
-<%=_("herausfinden. (Dazu muss das Paket ")%><%= package_link("debfoster")%><%=_(" installiert sein. Die erzeugte Liste enthält nur eine minimale Liste von (Meta-)Paketen, die notwendig ist, um deine
-Installation komplett wiederherzustellen.)")%>
+<%=t(:view_cart_new_from_list_3)%>
 
 <%= form_tag({:controller => :cart, :id => :current_user.id, :action => :create_from_list}, :multipart => true)%>
-<p><%=_("Datei, die die Paketliste enthält, ausw&auml;hlen:")%></p>
+<p><%=t(:view_cart_new_from_list_4)%></p>
 <p><%= file_field(:datei, :attachment) %></p>
-<p><%= submit_tag(_('Erstellen')) %></p>
+<p><%= submit_tag(t(:view_cart_new_from_list_5)) %></p>
 </form>

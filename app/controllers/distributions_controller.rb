@@ -1,7 +1,7 @@
 class DistributionsController < ApplicationController
   
   def title
-    _("Ubuntu Distributionen")
+    t(:controller_distributions_0)
   end
   # GET /distributions
   # GET /distributions.xml
@@ -48,7 +48,7 @@ class DistributionsController < ApplicationController
 
     respond_to do |format|
       if @distribution.save
-        flash[:notice] = _('Distribution erzeugt.')
+        flash[:notice] = t(:controller_distributions_1)
         format.html { redirect_to(@distribution) }
         format.xml  { render :xml => @distribution, :status => :created, :location => @distribution }
       else
@@ -65,7 +65,7 @@ class DistributionsController < ApplicationController
 
     respond_to do |format|
       if @distribution.update_attributes(params[:distribution])
-        flash[:notice] = _('Distribution aktualisiert.')
+        flash[:notice] = t(:controller_distributions_2)
         format.html { redirect_to(@distribution) }
         format.xml  { head :ok }
       else

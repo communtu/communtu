@@ -1,8 +1,8 @@
 class CategoriesController < ApplicationController
   def title
-    _("Kategorien")
+    t(:controller_categories_0)
   end
-  before_filter :check_administrator_role, :add_flash => { :notice => _('Du bist kein Administrator!') }
+  before_filter :check_administrator_role, :add_flash => { :notice => I18n.t(:controller_categories_1) }
   
   # GET /categories
   # GET /categories.xml
@@ -49,7 +49,7 @@ class CategoriesController < ApplicationController
 
     respond_to do |format|
       if @category.save
-        flash[:notice] = _('Kategorie erzeugt.')
+        flash[:notice] = t(:controller_categories_2)
         format.html { redirect_to(@category) }
         format.xml  { render :xml => @category, :status => :created, :location => @category }
       else
@@ -66,7 +66,7 @@ class CategoriesController < ApplicationController
 
     respond_to do |format|
       if @category.update_attributes(params[:category])
-        flash[:notice] = _('Kategorie aktualisiert.')
+        flash[:notice] = t(:controller_categories_3)
         format.html { redirect_to(@category) }
         format.xml  { head :ok }
       else

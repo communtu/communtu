@@ -2,7 +2,7 @@ class DerivativesController < ApplicationController
   layout 'application'
   
   def title
-    _("Ubuntu Derivate")
+    t(:controller_derivatives_0)
   end
   # GET /derivatives
   # GET /derivatives.xml
@@ -49,7 +49,7 @@ class DerivativesController < ApplicationController
 
     respond_to do |format|
       if @derivative.save
-        flash[:notice] = _('Derivative erzeugt.')
+        flash[:notice] = t(:controller_derivatives_1)
         format.html { redirect_to(@derivative) }
         format.xml  { render :xml => @derivative, :status => :created, :location => @derivative }
       else
@@ -66,7 +66,7 @@ class DerivativesController < ApplicationController
 
     respond_to do |format|
       if @derivative.update_attributes(params[:derivative])
-        flash[:notice] = _('Derivat aktualisiert.')
+        flash[:notice] = t(:controller_derivatives_2)
         format.html { redirect_to(@derivative) }
         format.xml  { head :ok }
       else

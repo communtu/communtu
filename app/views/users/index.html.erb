@@ -1,12 +1,12 @@
-<span class="headline"><%=_('Alle Benutzer')%></span>
+<span class="headline"><%=t(:view_users_index_0)%></span>
 <div class="inner1">
-  <p><%=_('Insgesamt haben wir ')%><%= @users.length %><%=_(' angemeldete Benutzer.')%></p>
+  <p><%=t(:view_users_index_1)%><%= @users.length %><%=t(:view_users_index_2)%></p>
 <table cellpadding="3">
   <tr>
-    <th align="left"><%=_('Benutzername')%></th>
-    <th align="left"><%=_('E-Mail')%></th>
-    <th align="left"><%=_('Aktiviert?')%></th>
-    <th align="left"><%=_('Rollen')%></th>
+    <th align="left"><%=t(:view_users_index_3)%></th>
+    <th align="left"><%=t(:view_users_index_4)%></th>
+    <th align="left"><%=t(:view_users_index_5)%></th>
+    <th align="left"><%=t(:view_users_index_6)%></th>
   </tr>
   <tr><td colspan="4"><hr></td></tr>
     <%= render :partial => 'user', :collection => @users %>

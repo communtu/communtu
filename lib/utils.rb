@@ -1,5 +1,5 @@
   def safe_system cmd
     if !system cmd
-      raise _("System-Befehl schlug fehl: ")+cmd
+      raise t(:message_0, :scope => [:txt, :lib, :utils])+cmd
     end
   end

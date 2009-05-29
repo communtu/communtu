@@ -1,13 +1,13 @@
-  <p><%= link_to _("Neue Nachricht"), new_sent_path %></p>
+  <p><%= link_to t(:view_users__mailbox_list_0), new_sent_path %></p>
 
   
 
-  <p><strong><%=_('Mailbox')%></strong></p>
+  <p><strong><%=t(:view_users__mailbox_list_1)%></strong></p>
 
   <ul>
 
-    <li><%= link_to _("Posteingang") + sprintf((count_new_messages > 0 ? "(%d)" : ""), count_new_messages), '/inbox' %></li>
+    <li><%= link_to t(:view_users__mailbox_list_2) + sprintf((count_new_messages > 0 ? "(%d)" : ""), count_new_messages), '/inbox' %></li>
 
-    <li><%= link_to _("Versendete Nachrichten"), :controller => "sent", :action => "index" %></li>
+    <li><%= link_to t(:view_users__mailbox_list_3), :controller => "sent", :action => "index" %></li>
 
   </ul>

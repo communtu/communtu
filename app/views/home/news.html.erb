@@ -1,20 +1,15 @@
-<h2><%=_('Aktuelles')%></h2>
-<h3><%=_('Unsere Mailinglisten')%></h3>
-<p><%=_('Um die Kommunikation mit unseren Nutzern zu verbessern, haben wir Mailinglisten eingerichtet:')%></p>
-<p><%= mail_to _("communtu-announce-de+subscribe@googlegroups.com"), _("communtu-announce-de+subscribe@googlegroups.com") %>
-<br /><%=_('Diese Liste ist für allgemeine Ankündigungen aus den Communtu Team für die Nutzer gedacht.
- Es wir hier ungefähr einmal die Woche eine E-Mail über den Verteiler geschickt. 
- Die Nachrichten werden in einem ')%><%= link_to _("Archiv"), _("http://groups.google.com/group/communtu-announce-de/topics?start="), :target=> "_blank" %><%=_(' gesammelt.')%></p>
-<p><%= mail_to _("communtu-discuss-de+subscribe@googlegroups.com"), _("communtu-discuss-de+subscribe@googlegroups.com") %>
-<br /><%=_('Diese Liste ist für eine Diskussion rund um die Plattform gedacht.
- Hier kommt etwas mehr als einmal die Woche eine E-Mail über den Verteiler. 
- Die Nachrichten werden in einem ')%><%= link_to _("Archiv"), _("http://groups.google.com/group/communtu-discuss-de/topics?start="), :target=>"_blank" %><%=_(' gesammelt.')%></p>
-<table><tr><td valign="top"><h3><%=_('Unser Blog')%></h3>
-<p><%=_('Wir haben einen Blog, wo wir aktuelle Informationen zu Communtu eintragen.
-Hier wird ungefähr einmal die Woche etwas gepostet. Hier werden Ankündigungen und neue Features präsentiert.')%></p>
-<p><%= link_to _("Zum Blog"), _("http://communtu.blogspot.com"), :target=>"_blank" %></a></p>
+<h2><%=t(:view_home_news_0)%></h2>
+<h3><%=t(:view_home_news_1)%></h3>
+<p><%=t(:view_home_news_2)%></p>
+<p><%= mail_to t(:view_home_news_3), t(:view_home_news_4) %>
+<br /><%=t(:view_home_news_5)%><%= link_to t(:view_home_news_6), t(:view_home_news_7), :target=> "_blank" %><%=t(:view_home_news_8)%></p>
+<p><%= mail_to t(:view_home_news_9), t(:view_home_news_10) %>
+<br /><%=t(:view_home_news_11)%><%= link_to t(:view_home_news_12), t(:view_home_news_13), :target=>"_blank" %><%=t(:view_home_news_14)%></p>
+<table><tr><td valign="top"><h3><%=t(:view_home_news_15)%></h3>
+<p><%=t(:view_home_news_16)%></p>
+<p><%= link_to t(:view_home_news_17), t(:view_home_news_18), :target=>"_blank" %></a></p>
 </td><td>
-  <%= link_to image_tag("blog.gif", :title => _('Der Blog von Communtu'), :alt => _('Der Blog von Communtu'), :border => '0'), _('http://communtu.blogspot.com'), :target => '_blank' %>
+  <%= link_to image_tag("blog.gif", :title => t(:view_home_news_19), :alt => t(:view_home_news_20), :border => '0'), t(:view_home_news_21), :target => '_blank' %>
 </td></tr></table>
-<h3><%=_('Beteiligungsmöglichkeiten')%></h3>
-<p><%=_('Du kannst Dich auch ')%><%= link_to _('beteiligen'), '/home/beteiligung' %>.</p>
+<h3><%=t(:view_home_news_22)%></h3>
+<p><%=t(:view_home_news_23)%><%= link_to t(:view_home_news_24), '/home/beteiligung' %>.</p>

@@ -7,9 +7,9 @@
 <tr><th/th></tr><tr><td>
 <%= file_field(:datei, :name) %></td></tr>
 <tr><td colspan="2" align="center">
-    <%= submit_tag _("Einlesen") %>
+    <%= submit_tag t(:view_repositories_multinew_0) %>
 </td></tr>
 </table>
 </form>
 </div>
-<%= link_to _('Zurück'), distribution_repositories_path(@distribution) %>
+<%= link_to t(:view_repositories_multinew_1), distribution_repositories_path(@distribution) %>
