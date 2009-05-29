@@ -1,0 +1,15 @@
+#!/usr/bin/ruby
+y = YAML::load_file(ARGV[0])
+
+f = File.open(ARGV[1],"w")
+
+# use German localisaiton
+y["de"].to_a.sort.each do |tag_msg|
+  tag = tag_msg[0]
+  msg = tag_msg[1]
+  f.puts "#: #{tag}"
+  f.puts "msgid \"#{msg}\""
+  f.puts 'msgstr ""'
+
+end
+f.close

@@ -1,0 +1,10 @@
+echo "calling gettext_to_i18n"
+rake gettext_to_i18n:transform
+echo "calling script/tag_convert"
+find app -name "*[rm][bl]" -exec script/tag_convert {} \; -print
+echo "calling script/tag_convert_yaml"
+script/tag_convert_yaml config/locales/template.yml
+echo "calling script/sort_yaml"
+script/sort_yaml config/locales/template.yml
+echo "calling script/yaml2po"
+script/yaml2po config/locales/template.yml config/locales/template.po
