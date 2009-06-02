@@ -76,11 +76,13 @@ de:
   controller_sessions_0: "Ubuntu-Linux an die individuellen Bed\xC3\xBCrfnisse anpassen"
   controller_sessions_1: Du bist bereits angemeldet.
   controller_sessions_2: Du bist bereits angemeldet.
-  controller_sessions_3: "Deine hier registrierte Distribution wurde auf #{current_user.distribution.short_name} ge\xC3\xA4ndert, weil deine alte Distribution von Ubuntu (und daher auch von Communtu) nicht mehr unterst\xC3\xBCtzt wird. Wir empfehlen f\xC3\xBCr deinen Computer ein <a href=\\"
+  controller_sessions_3: "Deine hier registrierte Distribution wurde auf "
   controller_sessions_4: Du wurdest abgemeldet.
   controller_sessions_5: Dein Benutzername oder Passwort ist falsch. Bitte ggf. unten auf "Registrieren" klicken.
   controller_sessions_6: Dein Benutzerkonto wurde noch nicht aktiviert. Der Aktivierungscode wurde dir per Email zugeschickt.
   controller_sessions_7: "Dein Benutzerkonto wurde deaktiviert oder gel\xC3\xB6scht."
+  controller_sessions_8: " ge\xC3\xA4ndert, weil deine alte Distribution von Ubuntu (und daher auch von Communtu) nicht mehr unterst\xC3\xBCtzt wird. Wir empfehlen f\xC3\xBCr deinen Computer ein <a href='http://wiki.ubuntuusers.de/Upgrade'>Upgrade</a> auf "
+  controller_sessions_9: "."
   controller_suggestion_0: "Ubuntu-Linux an die individuellen Bed\xC3\xBCrfnisse anpassen"
   controller_suggestion_10: "# B\xC3\xBCndel: "
   controller_suggestion_11: "Paketquellen hinzuf\xC3\xBCgen"
