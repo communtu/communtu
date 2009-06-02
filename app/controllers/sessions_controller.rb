@@ -31,8 +31,7 @@ class SessionsController < ApplicationController
         current_user.distribution_id += 1
         current_user.save
       end  
-      flash[:error] = 
-        t(:controller_sessions_3)
+      flash[:error] = t(:controller_sessions_3)+current_user.distribution.short_name+t.(:controller_sessions_8)+current_user.distribution.name+t.(:controller_sessions_9)
     end
   end
  
