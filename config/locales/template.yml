@@ -110,7 +110,7 @@ de:
   controller_users_16: " klicken und in ein dauerhaftes Nutzerkonto umwandeln; ansonsten wird das Konto nach einem Tag wieder gel\xC3\xB6scht."
   controller_users_1: "Danke f\xC3\xBCr die Registrierung bei Communtu! Du kannst dich jetzt anmelden."
   controller_users_2: Es gab ein Problem mit der Registrierung.
-  controller_users_3: "Du wurdest als Nutzer "#{login} mit Kennwort #{login} eingeloggt. Bitte ggf. oben rechts auf Nutzer #{login} klicken und in ein dauerhaftes Nutzerkonto umwandeln; ansonsten wird das Konto nach einem Tag wieder gel\xC3\xB6scht."
+  controller_users_3: "Du wurdest als Nutzer "
   controller_users_4: Es gab ein Problem mit der anonymen Nutzung.
   controller_users_5: Benutzerdaten aktualisiert
   controller_users_6: "Benutzerdaten \xC3\xBCbernommen und Benutzerkonto dauerhaft gemacht."
