@@ -966,8 +966,7 @@ msgid "Communtu -
  leider hat da etwas beim Spenden nicht funktioniert."
 msgstr ""
 #: view_home_cancel_1
-msgid "Endweder versuchst Du es noch einmal oder Du nutzt die Möglichkeit per �
-berweisung"
+msgid "Endweder versuchst Du es noch einmal oder Du nutzt die Möglichkeit per Überweisung"
 msgstr ""
 #: view_home_cancel_2
 msgid "Allgemeinbildung e.V."
