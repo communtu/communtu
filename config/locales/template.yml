@@ -33,11 +33,11 @@ de:
   controller_home_2: Wir werden dich per E-Mail benachrichtigen.
   controller_home_3: Das sieht nicht nach einer Liste von Ubuntu-Paketen aus... <br />Die Paketliste muss einen Paketnamen pro Zeile enthalten
   controller_home_4: Es muss eine Datei mit der Paketliste (ein Paketname pro Zeile) angegeben werden
-  controller_messages_0: "Urspr\xC3\xBCngliche Nachricht von %s am %s \\n \\n"
+  controller_messages_0: "Urspr\xC3\xBCngliche Nachricht von %s am %s  \\n  \\n"
   controller_metapackages_0: "B\xC3\xBCndel"
   controller_metapackages_10: "B\xC3\xBCndel ge\xC3\xA4ndert. Es dauert ein paar Minuten, bis die \xC3\x84nderungen im zugeh\xC3\xB6rigen Metapaket verf\xC3\xBCgbar sind. "
   controller_metapackages_11: "Konnte Paket nicht aus B\xC3\xBCndel entfernen."
-  controller_metapackages_12: " B\xC3\xBCndel ausgew\xC3\xA4hlt</option>\\n"
+  controller_metapackages_12: " B\xC3\xBCndel ausgew\xC3\xA4hlt</option> \\n"
   controller_metapackages_13: "<option value='0'>L\xC3\xB6schen</option>"
   controller_metapackages_14: <option value='1'>Migrieren</option>
   controller_metapackages_15: "<option value='2'>Ver\xC3\xB6ffentlichen<option/>"
@@ -201,12 +201,12 @@ de:
   view_cart__metacart_2: "Neues B\xC3\xBCndel"
   view_cart__metacart_3: "B\xC3\xBCndel aus Paketliste"
   view_cart_new_from_list_0: "B\xC3\xBCndel aus einer Paketliste erstellen"
-  view_cart_new_from_list_1: "Hier kannst du ein B\xC3\xBCndel aus einer vorhandenen Paketliste erstellen. \n\
-    Die Liste muss in Form einter Textdatei vorliegen (plain text), \n\
+  view_cart_new_from_list_1: "Hier kannst du ein B\xC3\xBCndel aus einer vorhandenen Paketliste erstellen.  \
+    Die Liste muss in Form einter Textdatei vorliegen (plain text),  \
     mit einem Paketnamen pro Zeile."
   view_cart_new_from_list_2: Die Liste der auf deinem Computer installierten Pakete kannst du zum Beispiel mit
   view_cart_new_from_list_3: "herausfinden. (Dazu muss das Paket "
-  view_cart_new_from_list_4: "Datei, die die Paketliste enth\xC3\xA4lt, ausw&auml;hlen:"
+  view_cart_new_from_list_4: "Datei, die die Paketliste enth\xC3\xA4lt, ausw\xC3\xA4hlen:"
   view_cart_new_from_list_5: Erstellen
   view_cart_update_0: "B\xC3\xBCndel-Informationen anpassen"
   view_cart_update_1: "B\xC3\xBCndel \xC3\xBCberschreiben, falls es existiert?"
@@ -309,60 +309,60 @@ de:
   view_distributions_show_9: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
   view_home_about_0: |-
     Communtu -
-     gemeinsam Ubuntu-Linux an individuelle Bed&uuml;rfnisse anpassen
+     gemeinsam Ubuntu-Linux an individuelle Bed\xC3\xBCrfnisse anpassen
   view_home_about_10: Wie kann ich meine Erfahrungen mit Programmen ins Communtu-System eintragen?
-  view_home_about_11: "Hast du gute Erfahrungen mit Programmen gemacht? Dann kannst du thematisch zusammengeh\xC3\xB6rige\n\
-    Programme zu einem B\xC3\xBCndel zusammenfassen und ins System eintragen. Dazu w\xC3\xA4hlst du <b>Neues B\xC3\xBCndel</b>\n\
-    unterhalb von <b>B\xC3\xBCndel-Editor</b> auf der linken Seitenleiste. Du kannst dann Ubuntu-Pakete hinzuf\xC3\xBCgen und mit Klick auf das Disketten-Symbol\n\
-    das B\xC3\xBCndel im System abspeichern. Das B\xC3\xBCndel soll einen Namen, eine Beschreibung und eine\n\
-    thematische Einordnung erhalten, damit andere Nutzer es auch verwenden k\xC3\xB6nnen.\n\
-    Wie bei Ordnern und Dateien k\xC3\xB6nnen B\xC3\xBCndel nicht nur Ubuntu-Pakete, sondern auch andere\n\
+  view_home_about_11: "Hast du gute Erfahrungen mit Programmen gemacht? Dann kannst du thematisch zusammengeh\xC3\xB6rige \
+    Programme zu einem B\xC3\xBCndel zusammenfassen und ins System eintragen. Dazu w\xC3\xA4hlst du <b>Neues B\xC3\xBCndel</b> \
+    unterhalb von <b>B\xC3\xBCndel-Editor</b> auf der linken Seitenleiste. Du kannst dann Ubuntu-Pakete hinzuf\xC3\xBCgen und mit Klick auf das Disketten-Symbol \
+    das B\xC3\xBCndel im System abspeichern. Das B\xC3\xBCndel soll einen Namen, eine Beschreibung und eine \
+    thematische Einordnung erhalten, damit andere Nutzer es auch verwenden k\xC3\xB6nnen. \
+    Wie bei Ordnern und Dateien k\xC3\xB6nnen B\xC3\xBCndel nicht nur Ubuntu-Pakete, sondern auch andere \
     B\xC3\xBCndel enthalten. "
-  view_home_about_12: "<b>B\xC3\xBCndel verwalten</b> auf der linken Seitenleiste gibt dir einen \xC3\x9Cberblick\n\
-    \xC3\xBCber die verf\xC3\xBCgbaren B\xC3\xBCndel.\n\
+  view_home_about_12: "<b>B\xC3\xBCndel verwalten</b> auf der linken Seitenleiste gibt dir einen \xC3\x9Cberblick \
+    \xC3\xBCber die verf\xC3\xBCgbaren B\xC3\xBCndel. \
     Schlie\xC3\x9Flich gibt es unter <b>Ubuntu-Versionen</b> eine \xC3\x9Cbersicht \xC3\xBCber die im System verf\xC3\xBCgbaren Ubuntu-Versionen (Distributionen)."
   view_home_about_13: Nachinstallation einzelner Funktionen
-  view_home_about_14: "Du\n\
-    hast schon eine lauff&auml;hige Ubuntu-Installation und m&ouml;chtest\n\
-    bestimmte Funktionen hinzuf&uuml;gen? Auch daf\xC3\xBCr kannst du Communtu benutzen.\n\
-    Du kannst unter <b>B\xC3\xBCndel verwalten</b> einzelne B\xC3\xBCndel installieren,\n\
+  view_home_about_14: "Du \
+    hast schon eine lauff\xC3\xA4hige Ubuntu-Installation und m\xC3\xB6chtest \
+    bestimmte Funktionen hinzuf\xC3\xBCgen? Auch daf\xC3\xBCr kannst du Communtu benutzen. \
+    Du kannst unter <b>B\xC3\xBCndel verwalten</b> einzelne B\xC3\xBCndel installieren, \
     und unter <b>Programme suchen</b> auch einzelne Programme."
   view_home_about_15: Registrierung
-  view_home_about_16: "Um Communtu nutzen zu k\xC3\xB6nnen, kannst du dich registrieren.\n\
+  view_home_about_16: "Um Communtu nutzen zu k\xC3\xB6nnen, kannst du dich registrieren. \
     Das geht ganz einfach \xC3\xBCber den \"Anmelden\"-Knopf in der oberen Leiste."
   view_home_about_17: Impressum
   view_home_about_18: "Natur, Geist und Technik - Verein zur F\xC3\xB6rderung der Allgemeinbildung e.V."
-  view_home_about_19: Zentrum f&uuml;r Solidarische &Ouml;konomie
+  view_home_about_19: Zentrum f\xC3\xBCr Solidarische \xC3\x96konomie
   view_home_about_1: Wozu Communtu?
-  view_home_about_20: Spendenm&ouml;glichkeit
+  view_home_about_20: Spendenm\xC3\xB6glichkeit
   view_home_about_21: Allgemeinbildung e.V.
   view_home_about_22: Konto 172 9375, Sparkasse Bremen, BLZ 290 501 01
   view_home_about_23: "Verwendungszweck: Communtu"
   view_home_about_24: Spendenbescheinigung kann ausgestellt werden.
-  view_home_about_2: "Ubuntu ist eine Linux-Distribution, die Linux einfach handhabbar und verst\xC3\xA4ndlich macht.\n\
-    Nach der Installation von Ubuntu mittels einer CD oder DVD ist dein Computer schon \n\
+  view_home_about_2: "Ubuntu ist eine Linux-Distribution, die Linux einfach handhabbar und verst\xC3\xA4ndlich macht. \
+    Nach der Installation von Ubuntu mittels einer CD oder DVD ist dein Computer schon  \
     gut ausger\xC3\xBCstet f\xC3\xBCr Internet, Textverarbeitung und vieles andere."
-  view_home_about_3: "Es gibt aber auch viele Anwendungen, die erst noch nachinstalliert werden m\xC3\xBCssen,\n\
-    z.B. in den Bereichen Audio, Video und Grafik, damit dein Computer mit Ubuntu wirklich \n\
-    benutzbar ist. Communtu macht diese Nachinstallation jetzt noch einfacher\n\
+  view_home_about_3: "Es gibt aber auch viele Anwendungen, die erst noch nachinstalliert werden m\xC3\xBCssen, \
+    z.B. in den Bereichen Audio, Video und Grafik, damit dein Computer mit Ubuntu wirklich  \
+    benutzbar ist. Communtu macht diese Nachinstallation jetzt noch einfacher \
     und hat zudem spezielle Bereiche f\xC3\xBCr Einsteiger und Windows-Umsteiger."
   view_home_about_4: Wie verwende ich Communtu?
   view_home_about_5: "Zum Starten w\xC3\xA4hlst du <b>Installation</b> auf der linken Seitenleiste."
   view_home_about_6: "  (Diese erscheint erst nach "
-  view_home_about_7: "Dort kannst du deine Einstellungen bearbeiten.\n\
-    Unter den Grunddaten musst du zun\xC3\xA4chst eintragen, welche Ubuntu-Version du auf deinem PC installiert hast,\n\
-    au\xC3\x9Ferdem, ob du unfreie Programme nutzen willst oder nicht.\n\
+  view_home_about_7: "Dort kannst du deine Einstellungen bearbeiten. \
+    Unter den Grunddaten musst du zun\xC3\xA4chst eintragen, welche Ubuntu-Version du auf deinem PC installiert hast, \
+    au\xC3\x9Ferdem, ob du unfreie Programme nutzen willst oder nicht. \
     Zudem w\xC3\xA4hlst du aus, f\xC3\xBCr welche Aufgaben du deinen Ubuntu-PC nutzen willst. "
-  view_home_about_8: "Danach kannst du mit \"Speichern und feiner Ausw\xC3\xA4hlen\" noch einen detaillierteren \xC3\x9Cberblick\n\
-    \xC3\xBCber die installierten B\xC3\xBCndel und Programme bekommen und die Auswahl auch noch ver\xC3\xA4ndern.\n\
-    Falls du dazu keine Lust oder Zeit hast, klicke einfach auf \"Speichern\".\n\
-    Dies f\xC3\xBChrt dich zur Installations-Seite.\n\
-    Dort findest du einen Installationsknopf, mit dem die Communtu-Nachinstallation gestartet werden\n\
+  view_home_about_8: "Danach kannst du mit \"Speichern und feiner Ausw\xC3\xA4hlen\" noch einen detaillierteren \xC3\x9Cberblick \
+    \xC3\xBCber die installierten B\xC3\xBCndel und Programme bekommen und die Auswahl auch noch ver\xC3\xA4ndern. \
+    Falls du dazu keine Lust oder Zeit hast, klicke einfach auf \"Speichern\". \
+    Dies f\xC3\xBChrt dich zur Installations-Seite. \
+    Dort findest du einen Installationsknopf, mit dem die Communtu-Nachinstallation gestartet werden \
     kann. Es dauert etwas, bis die Programme automatisch aus dem Internet geladen und installiert werden. Fertig ist der vielseitig einsetzbare Ubuntu-PC!"
-  view_home_about_9: "Wichtig: Man braucht schon eine schnelle Internet-Verbindung. F\xC3\xBCr Ubuntu-Nutzer, die noch ein Modem oder \xC3\x84hnliches\n\
+  view_home_about_9: "Wichtig: Man braucht schon eine schnelle Internet-Verbindung. F\xC3\xBCr Ubuntu-Nutzer, die noch ein Modem oder \xC3\x84hnliches \
     nutzen, planen wir die M\xC3\xB6glichkeit, automatisch CDs und DVDs zu erstellen."
   view_home_auth_error_0: Authentifizierungs-Fehler
-  view_home_auth_error_1: "Die Daten, die du an Communtu geschickt hast, konnten nicht korrekt authentifiziert werden.\n\
+  view_home_auth_error_1: "Die Daten, die du an Communtu geschickt hast, konnten nicht korrekt authentifiziert werden. \
     Bitte versuche, dich noch einmal anzumelden bzw. das entsprechende Formular noch einmal auszuf\xC3\xBCllen."
   view_home_beteiligung_0: "Beteiligungsm\xC3\xB6glichkeiten"
   view_home_beteiligung_10: Grafik
@@ -372,9 +372,9 @@ de:
   view_home_beteiligung_14: "Wir k\xC3\xB6nnen Dir auch helfen diese Programmiersprache zu lernen. Also melde Dich einfach bei "
   view_home_beteiligung_15: uns
   view_home_beteiligung_1: Anwenden der Plattform
-  view_home_beteiligung_2: "Als erstes w\xC3\xBCrden wir uns nat\xC3\xBCrlich freuen, wenn Du Communtu nutzt, um eine Installation durchzuf\xC3\xBChren. \n\
-    In unseren B\xC3\xBCndeln gibt es schon ein paar ganz gut auf bestimmte Eigenschaften zugeschnittende Installationsvorschl\xC3\xA4ge.\n\
-    Vielleicht ist ja etwas f\xC3\xBCr Dich dabei. Weiter gibt es dort auch die M\xC3\xB6glichkeit die eigene Paketliste hochzuladen, damit diese auch anderen zur Verf\xC3\xBCgung gestellt wird.\n\
+  view_home_beteiligung_2: "Als erstes w\xC3\xBCrden wir uns nat\xC3\xBCrlich freuen, wenn Du Communtu nutzt, um eine Installation durchzuf\xC3\xBChren.  \
+    In unseren B\xC3\xBCndeln gibt es schon ein paar ganz gut auf bestimmte Eigenschaften zugeschnittende Installationsvorschl\xC3\xA4ge. \
+    Vielleicht ist ja etwas f\xC3\xBCr Dich dabei. Weiter gibt es dort auch die M\xC3\xB6glichkeit die eigene Paketliste hochzuladen, damit diese auch anderen zur Verf\xC3\xBCgung gestellt wird. \
     Dies ist die einfachste Form ein B\xC3\xBCndel anzulegen. Du musst diese Paketliste aber auch nicht ver\xC3\xB6ffentlichen. Du kannst Communtu auch einfach nur als Speicherort f\xC3\xBCr Deine Paketliste gebrauchen und dann auf anderen Rechnern dieses B\xC3\xBCndel installieren."
   view_home_beteiligung_3: Wir brauchen die Informationen
   view_home_beteiligung_4: |-
@@ -384,15 +384,15 @@ de:
     den Videos zu den Programmen in Communtu ein.
   view_home_beteiligung_5: Umfrage zu beteiligen
   view_home_beteiligung_6: Feedback
-  view_home_beteiligung_7: "Wir ben\xC3\xB6tigen Feedback. Wir m\xC3\xB6chten, dass Communtu von allen genutzt werden kann. Dazu ben\xC3\xB6tigen wir Feedback. Hast Du einen Fehler auf der Plattform gefunden?\n\
-    Findest Du etwas unverst\xC3\xA4ndlich? Glaubst Du, dass wir was besser machen k\xC3\xB6nnen? Hast Du eine Anregung f\xC3\xBCr uns?\n\
+  view_home_beteiligung_7: "Wir ben\xC3\xB6tigen Feedback. Wir m\xC3\xB6chten, dass Communtu von allen genutzt werden kann. Dazu ben\xC3\xB6tigen wir Feedback. Hast Du einen Fehler auf der Plattform gefunden? \
+    Findest Du etwas unverst\xC3\xA4ndlich? Glaubst Du, dass wir was besser machen k\xC3\xB6nnen? Hast Du eine Anregung f\xC3\xBCr uns? \
     Feedback ist uns Willkommen unter "
   view_home_beteiligung_8: Mitarbeit
   view_home_beteiligung_9: "Momentan ben\xC3\xB6tigen wir noch Unterst\xC3\xBCtzung bei der Entwicklung des Projektes bei folgenden zwei T\xC3\xA4tigkeiten:"
   view_home_cancel_0: |-
     Communtu -
      leider hat da etwas beim Spenden nicht funktioniert.
-  view_home_cancel_1: Endweder versuchst Du es noch einmal oder Du nutzt die M&ouml;glichkeit per &Uuml;berweisung
+  view_home_cancel_1: Endweder versuchst Du es noch einmal oder Du nutzt die M\xC3\xB6glichkeit per \x9c\x0aberweisung
   view_home_cancel_2: Allgemeinbildung e.V.
   view_home_cancel_3: Konto 172 9375, Sparkasse Bremen, BLZ 290 501 01
   view_home_cancel_4: "Verwendungszweck: Communtu"
@@ -404,7 +404,7 @@ de:
   view_home_contact_us_4: Senden
   view_home_derivatives_0: Ubuntu-Derivate
   view_home_derivatives_10: http://wiki.ubuntuusers.de/Ubuntu_Studio
-  view_home_derivatives_11: " - Ubuntu Multimedie-Edition.\n\
+  view_home_derivatives_11: " - Ubuntu Multimedie-Edition. \
     Sie wird bei Communtu mitinstalliert, wenn du bei Audio, Film und/oder Grafik/Design \"erweitert\" anw\xC3\xA4hlst."
   view_home_derivatives_12: " stellt Multimedia-Paketquellen bereit, die aus rechtlichen Gr\xC3\xBCnden nicht von Ubuntu selbst angeboten wird. Medibuntu wird bei Communtu mit ber\xC3\xBCcksichtigt (z.B. bei Audio und Film)."
   view_home_derivatives_13: " - der PC wird zum Videorekorder. Bei Film \"Freak\" ausw\xC3\xA4hlen, und es wird mitinstalliert. Empfohlen: CPU mit 2 GHz, 1024 MByte RAM, 10 GByte Festplattenplatz f\xC3\xBCr das Frontend, 80+ GByte f\xC3\xBCr das Backend, eine Grafikkarte mit 128 MByte RAM mit TV-Ausgang und eine unterst\xC3\xBCtzte TV-Karte."
@@ -412,16 +412,16 @@ de:
   view_home_derivatives_15: http://wiki.ubuntuusers.de/KDE
   view_home_derivatives_16: " ist Ubuntu mit dem KDE-Desktop.\t"
   view_home_derivatives_17: http://de.wikipedia.org/wiki/Linux_Mint
-  view_home_derivatives_18: " ist eine Ubuntu-Abspaltung mit eigener User-Community, die sich vor allem Benutzerfreundlichkeit auf die Fahnen schreibt.\n\
+  view_home_derivatives_18: " ist eine Ubuntu-Abspaltung mit eigener User-Community, die sich vor allem Benutzerfreundlichkeit auf die Fahnen schreibt. \
     Linux Mint \xC3\xA4hnelt Ubuntu sehr, hat aber viele Codes, z.B. f\xC3\xBCr DVDs und MP3s, schon vorinstalliert. Diese Codecs gibt es allerdings auch bei Communtu, unter Unterhaltungsmedien. "
   view_home_derivatives_19: "Achtung! bei Communtu erst in K\xC3\xBCrze verf\xC3\xBCgbar."
-  view_home_derivatives_1: "Communtu setzt auf einer Ubuntu-Basisinstallation auf.\n\
+  view_home_derivatives_1: "Communtu setzt auf einer Ubuntu-Basisinstallation auf. \
     Es gibt nun eine ganze Reihe von "
   view_home_derivatives_20: "\tAutomatix war eine Installationshilfe, die sich gro\xC3\x9Fer Beliebtheit erfreute (sie wurde sogar von der New York Times empfohlen), die aber nicht ganz den Ubuntu-Programmierstandards entsprach und inzwischen nicht mehr weiterentwickelt wird. "
   view_home_derivatives_21: "\xC3\x9Cber Communtu nachinstallierbare Derivate, sinnvollerweise auf einer Xfce-basierten Installation (z.B. Xubuntu) aufzusetzen:"
-  view_home_derivatives_22: " - orient an BeOS, setzt auf Schnelligkeit, Kompatibilit\xC3\xA4t mit alten Rechnern und einfache Bedienung. CPU mit mindestens 200 MHZ\n\
-    128 MB RAM (zum Betrieb, zur Installation werden 192 MB RAM ben\xC3\xB6tigt);\n\
-    2 GB freier Festplattenplatz (Empfohlen: 4 GB oder mehr);\n\
+  view_home_derivatives_22: " - orient an BeOS, setzt auf Schnelligkeit, Kompatibilit\xC3\xA4t mit alten Rechnern und einfache Bedienung. CPU mit mindestens 200 MHZ \
+    128 MB RAM (zum Betrieb, zur Installation werden 192 MB RAM ben\xC3\xB6tigt); \
+    2 GB freier Festplattenplatz (Empfohlen: 4 GB oder mehr); \
     16 MB Grafikkarte (Empfohlen: Intel GMA 9xx). "
   view_home_derivatives_23: "Achtung! bei Communtu erst in K\xC3\xBCrze verf\xC3\xBCgbar."
   view_home_derivatives_24: "Derivate, die mit der Derivats-eigenen Installations-CD installiert werden sollten:"
@@ -433,11 +433,11 @@ de:
   view_home_derivatives_2: Ubuntu-Derivaten
   view_home_derivatives_30: http://de.wikipedia.org/wiki/Home_Theater_Personal_Computer
   view_home_derivatives_31: ". Aufgrund der notwendigen Treiberinstallation sollte Linux MCE direkt installiert werden, Communtu kann dann aber f\xC3\xBCr die Installation weiterer Software genutzt werden."
-  view_home_derivatives_32: " ist ein Ubuntu-Derivat komplett aus freier Software. Nur f\xC3\xBCr erfahrene Nutzer geeignet. Sollte mit der Gobuntu-CD installiert werden, damit es auch wirklich nur freie Software ist. Nachinstallationen mit Communtu m\xC3\xB6glich, sinnvollerweise sollten dann im Nutzerprofil \"freie Software\" angew\xC3\xA4hlt werden.\n\
+  view_home_derivatives_32: " ist ein Ubuntu-Derivat komplett aus freier Software. Nur f\xC3\xBCr erfahrene Nutzer geeignet. Sollte mit der Gobuntu-CD installiert werden, damit es auch wirklich nur freie Software ist. Nachinstallationen mit Communtu m\xC3\xB6glich, sinnvollerweise sollten dann im Nutzerprofil \"freie Software\" angew\xC3\xA4hlt werden. \
     Dies Derivate ist in der Version 8.04 erh\xC3\xA4ltlich und wird nicht weiterentwickelt."
   view_home_derivatives_33: http://de.wikipedia.org/wiki/GNU-Varianten#Nexenta_OS
   view_home_derivatives_34: " - ersetzt den Linux-Kern durch OpenSolaris. Stellt nur eine minimale Basis an Anwendungen bereit. Die Installation weiterer Pakete bleibt dem Benutzer \xC3\xBCberlassen; hierf\xC3\xBCr kann Communtu genutzt werden."
-  view_home_derivatives_35: "Es gibt noch weitere Derivate zu denen wir bisher noch keine Installationsempfehlung abgeben k&ouml;nnen:"
+  view_home_derivatives_35: "Es gibt noch weitere Derivate zu denen wir bisher noch keine Installationsempfehlung abgeben k\xC3\xB6nnen:"
   view_home_derivatives_36: " - eine afrikanische Ubuntu-Variante, die allerdings offenbar nicht \xC3\xBCbers Internet erh\xC3\xA4ltlich ist."
   view_home_derivatives_37: http://de.wikipedia.org/wiki/LinEx
   view_home_derivatives_38: " - \xC3\xB6ffentliche Distribution der spanischen Region Extremadura."
@@ -453,10 +453,10 @@ de:
   view_home_derivatives_47: http://wiki.ubuntuusers.de/JeOS
   view_home_derivatives_48: " - minimale Server-Version, vor allem f\xC3\xBCr Virtualisierung geeignet.."
   view_home_derivatives_49: " - Ubuntu mit Enlightenment als Desktopumgebung."
-  view_home_derivatives_4: ", und viele Ubuntu-Nutzer fragen sich, \n\
-    ob sie statt Ubuntu lieber ein Derivat benutzen sollten.\n\
-    Die Antwort ist: meistens f\xC3\xA4hrt man mit dem Standard-Ubuntu ganz gut, denn\n\
-    Communtu erlaubt, die Derivate auf einfache Weise nachzuinstallieren. \n\
+  view_home_derivatives_4: ", und viele Ubuntu-Nutzer fragen sich,  \
+    ob sie statt Ubuntu lieber ein Derivat benutzen sollten. \
+    Die Antwort ist: meistens f\xC3\xA4hrt man mit dem Standard-Ubuntu ganz gut, denn \
+    Communtu erlaubt, die Derivate auf einfache Weise nachzuinstallieren.  \
     Allerdings ist das nicht bei allen Derivaten gleich sinnvoll."
   view_home_derivatives_50: " - mit Fluxbox und verschiedenen Netzwerk-Sicherheitswerkzeugen ."
   view_home_derivatives_51: " - Installation von Programmen und Versionen, die nicht \xC3\xBCber die offiziellen Repositories erh\xC3\xA4ltlich sind."
@@ -473,14 +473,14 @@ de:
   view_home_derivatives_9: "\xC3\x9Cber Communtu sinnvoll nachinstallierbare Derivate:"
   view_home_home_0: |-
     Communtu -
-     gemeinsam Ubuntu-Linux an individuelle Bed&uuml;rfnisse anpassen
+     gemeinsam Ubuntu-Linux an individuelle Bed\xC3\xBCrfnisse anpassen
   view_home_home_10: "<b>Ubuntu-Versionen</b> \xC3\x9Cbersicht \xC3\xBCber die im System verf\xC3\xBCgbaren Ubuntu-Versionen (Distributionen)."
   view_home_home_11: "<b>Benutzer verwalten</b> Hier kannst du als Admin die Rollen der Benutzer \xC3\xA4ndern. Vorsicht walten lassen!"
   view_home_home_12: "<b>Kategorien verwalten</b> Hier kannst du als Admin neue Kategorien erstellen oder die Struktur des Kategorienbaums \xC3\xA4ndern. Vorsicht walten lassen!"
   view_home_home_13: <b>Aktuelles</b> Hinweise auf Veranstaltungen zu Communtu, Communtu-Blog ...
   view_home_home_14: "Es gibt auch noch "
   view_home_home_15: genauere Infos
-  view_home_home_16: " &uuml;ber das Projekt und &uuml;ber die Mitwirkenden im "
+  view_home_home_16: " \xC3\xBCber das Projekt und \xC3\xBCber die Mitwirkenden im "
   view_home_home_17: Impressum.
   view_home_home_18: "\tKlicke auf\t"
   view_home_home_19: Registrierung
@@ -491,9 +491,9 @@ de:
   view_home_home_23: nutze Communtu anonym
   view_home_home_24: Zum Impressum
   view_home_home_2: Ubuntu-Linux
-  view_home_home_3: " steht f\xC3\xBCr ein menschliches Linux, das einfach zu benutzen ist.\n\
-    Aber um Ubuntu wirklich gut nutzen zu k\xC3\xB6nnen, muss man ganz sch\xC3\xB6n viele Programme nachinstallieren, und es ist oft schwer, da den \xC3\x9Cberblick zu behalten.\n\
-    Bei Communtu gibst du nur an, welche Aufgaben du mit deinem Computer erledigen willst, und Communtu schl\xC3\xA4gt dir eine\n\
+  view_home_home_3: " steht f\xC3\xBCr ein menschliches Linux, das einfach zu benutzen ist. \
+    Aber um Ubuntu wirklich gut nutzen zu k\xC3\xB6nnen, muss man ganz sch\xC3\xB6n viele Programme nachinstallieren, und es ist oft schwer, da den \xC3\x9Cberblick zu behalten. \
+    Bei Communtu gibst du nur an, welche Aufgaben du mit deinem Computer erledigen willst, und Communtu schl\xC3\xA4gt dir eine \
     ganze Reihe von Programmen vor, die automatisch installiert werden k\xC3\xB6nnen."
   view_home_home_4: Mehr ...
   view_home_home_5: "Die Seitenleiste links bietet folgende M\xC3\xB6glichkeiten:"
@@ -531,10 +531,10 @@ de:
   view_home_impressum_13: beteiligen
   view_home_impressum_1: "Natur, Geist und Technik - Verein zur F\xC3\xB6rderung der Allgemeinbildung e.V."
   view_home_impressum_2: AG Communtu
-  view_home_impressum_3: Zentrum f&uuml;r Solidarische &Ouml;konomie
+  view_home_impressum_3: Zentrum f\xC3\xBCr Solidarische \xC3\x96konomie
   view_home_impressum_4: Bauernstr. 2
   view_home_impressum_5: 28203 Bremen
-  view_home_impressum_6: Spendenm&ouml;glichkeit
+  view_home_impressum_6: Spendenm\xC3\xB6glichkeit
   view_home_impressum_7: Allgemeinbildung e.V.
   view_home_impressum_8: Konto 172 9375, Sparkasse Bremen, BLZ 290 501 01
   view_home_impressum_9: "Verwendungszweck: Communtu"
@@ -545,12 +545,12 @@ de:
   view_home_mail_4: Abschicken
   view_home_news_0: Aktuelles
   view_home_news_10: communtu-discuss-de+subscribe@googlegroups.com
-  view_home_news_11: "Diese Liste ist f\xC3\xBCr eine Diskussion rund um die Plattform gedacht.\n Hier kommt etwas mehr als einmal die Woche eine E-Mail \xC3\xBCber den Verteiler. \n Die Nachrichten werden in einem "
+  view_home_news_11: "Diese Liste ist f\xC3\xBCr eine Diskussion rund um die Plattform gedacht.  Hier kommt etwas mehr als einmal die Woche eine E-Mail \xC3\xBCber den Verteiler.   Die Nachrichten werden in einem "
   view_home_news_12: Archiv
   view_home_news_13: http://groups.google.com/group/communtu-discuss-de/topics?start=
   view_home_news_14: " gesammelt."
   view_home_news_15: Unser Blog
-  view_home_news_16: "Wir haben einen Blog, wo wir aktuelle Informationen zu Communtu eintragen.\n\
+  view_home_news_16: "Wir haben einen Blog, wo wir aktuelle Informationen zu Communtu eintragen. \
     Hier wird ungef\xC3\xA4hr einmal die Woche etwas gepostet. Hier werden Ank\xC3\xBCndigungen und neue Features pr\xC3\xA4sentiert."
   view_home_news_17: Zum Blog
   view_home_news_18: http://communtu.blogspot.com
@@ -564,12 +564,12 @@ de:
   view_home_news_2: "Um die Kommunikation mit unseren Nutzern zu verbessern, haben wir Mailinglisten eingerichtet:"
   view_home_news_3: communtu-announce-de+subscribe@googlegroups.com
   view_home_news_4: communtu-announce-de+subscribe@googlegroups.com
-  view_home_news_5: "Diese Liste ist f\xC3\xBCr allgemeine Ank\xC3\xBCndigungen aus den Communtu Team f\xC3\xBCr die Nutzer gedacht.\n Es wir hier ungef\xC3\xA4hr einmal die Woche eine E-Mail \xC3\xBCber den Verteiler geschickt. \n Die Nachrichten werden in einem "
+  view_home_news_5: "Diese Liste ist f\xC3\xBCr allgemeine Ank\xC3\xBCndigungen aus den Communtu Team f\xC3\xBCr die Nutzer gedacht.  Es wir hier ungef\xC3\xA4hr einmal die Woche eine E-Mail \xC3\xBCber den Verteiler geschickt.   Die Nachrichten werden in einem "
   view_home_news_6: Archiv
   view_home_news_7: http://groups.google.com/group/communtu-announce-de/topics?start=
   view_home_news_8: " gesammelt."
   view_home_news_9: communtu-discuss-de+subscribe@googlegroups.com
-  view_home_success_0: " Vielen Dank f&uuml;r die Spende"
+  view_home_success_0: " Vielen Dank f\xC3\xBCr die Spende"
   view_home_success_1: "Eine Spendenbescheinigung kann ausgestellt werden. Dazu schicke uns bitte eine E-Mail mit Deiner Adresse an: "
   view_layouts_application_0: Communtu, Ubuntu, Installation, Installationshilfe
   view_layouts_application_10: Anmelden
@@ -695,13 +695,13 @@ de:
     
     es wurde auf www.communtu.de ein Feedback gesendet. Der Betreff ist:
   view_my_mailer_mail_1: "Folgendender Kommentar wurde hinterlassen:"
-  view_my_mailer_mailerror_0: "Hallo,\n\n\
-    es wurde auf www.communtu.de ein Error gemeldet.\n\n\
+  view_my_mailer_mailerror_0: "Hallo,  \
+    es wurde auf www.communtu.de ein Error gemeldet.  \
     Der Benutzer m\xC3\xB6chte ganz gern, dar\xC3\xBCber benachrichtigt werden, wenn der Fehler nicht mehr auftritt."
   view_packages_add_comment_0: "Kommentar: "
   view_packages_add_comment_1: "Kommentar hinzuf\xC3\xBCgen"
   view_packages_add_comment_2: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
-  view_packages__deps_0: "\t\n  keine"
+  view_packages__deps_0: "\t   keine"
   view_packages__deps_1: "          Nur f\xC3\xBCr "
   view_packages_edit_0: Paket bearbeiten
   view_packages_edit_10: Beschreibung des Pakets
@@ -867,7 +867,7 @@ de:
   view_user_mailer_activation_0: ", dein Benutzerkonto wurde aktiviert.  Folge nun dem Link:"
   view_user_mailer_forgot_password_0: ", um ein neues Passwort zu erhalten, folge dem Link:"
   view_user_mailer_reset_password_0: ", du hast ein neues Passwort erhalten."
-  view_user_mailer_signup_notification_0: "Dein Benutzerkonto wurde bei www.communtu.de angelegt.\n \n  Benutzername: "
+  view_user_mailer_signup_notification_0: "Dein Benutzerkonto wurde bei www.communtu.de angelegt.     Benutzername: "
   view_user_mailer_signup_notification_1: "Klicke auf folgenden Link:"
   view_user_mailer_signup_notification_2: |-
     um zu unserem Projekt zu gelangen.
@@ -889,26 +889,26 @@ de:
   view_user_profiles__installation_15: Quellen
   view_user_profiles__installation_16: "Quellen und Schl\xC3\xBCssel eintragen"
   view_user_profiles__installation_17: "Link einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer \xC3\xB6ffnen."
-  view_user_profiles__installation_18: "Dieser Schritt muss neu ausgef\xC3\xBChrt werden, weil du die Einstellungen ge\xC3\xA4ndert hast.\n\
+  view_user_profiles__installation_18: "Dieser Schritt muss neu ausgef\xC3\xBChrt werden, weil du die Einstellungen ge\xC3\xA4ndert hast. \
     \t\t  "
-  view_user_profiles__installation_19: "Achtung: nach dem Anklicken dauert es eine gewisse Zeit, bis die Datei bereitgestellt wird.\n\
+  view_user_profiles__installation_19: "Achtung: nach dem Anklicken dauert es eine gewisse Zeit, bis die Datei bereitgestellt wird. \
     \t\t"
   view_user_profiles__installation_1: "Um etwas installieren zu k\xC3\xB6nnen, musst du zun\xC3\xA4chst unter \"Grunddaten\" oder \"Detailauswahl\" etwas ausw\xC3\xA4hlen."
-  view_user_profiles__installation_20: "Dieser Schritt wurde bereits schon einmal ausgef\xC3\xBChrt.\n\
+  view_user_profiles__installation_20: "Dieser Schritt wurde bereits schon einmal ausgef\xC3\xBChrt. \
     \t\t"
   view_user_profiles__installation_21: "installieren der Metapakete. Bitte vorher die Quellen hinzuf\xC3\xBCgen."
   view_user_profiles__installation_22: installieren
-  view_user_profiles__installation_23: "\t    Pakete installieren. Es gibt zwei Alternativen:\n\
+  view_user_profiles__installation_23: "\t    Pakete installieren. Es gibt zwei Alternativen: \
     \t    "
   view_user_profiles__installation_24: "Installation \xC3\xBCber ein Metapaket"
   view_user_profiles__installation_25: "Installation \xC3\xBCber apturl"
-  view_user_profiles__installation_26: "Dieser Schritt muss neu ausgef\xC3\xBChrt werden, weil du die Einstellungen ge\xC3\xA4ndert hast.\n\
+  view_user_profiles__installation_26: "Dieser Schritt muss neu ausgef\xC3\xBChrt werden, weil du die Einstellungen ge\xC3\xA4ndert hast. \
     \t\t     "
   view_user_profiles__installation_27: "Die Browser Konqueror und Opera bitte erst f\xC3\xBCr "
   view_user_profiles__installation_28: http://wiki.ubuntuusers.de/apturl
-  view_user_profiles__installation_29: " konfigurieren.\n\
+  view_user_profiles__installation_29: " konfigurieren. \
     \t\t"
-  view_user_profiles__installation_2: "Aufgrund deiner Auswahl werden jetzt Programme auf deinem Computer installiert.\n\
+  view_user_profiles__installation_2: "Aufgrund deiner Auswahl werden jetzt Programme auf deinem Computer installiert. \
     Folgende Schritte sind daf\xC3\xBCr zu tun:"
   view_user_profiles__installation_30: "Hinweis: Bitte .deb-Dateien nicht umbenennen."
   view_user_profiles__installation_3: Klicke auf das Symbol rechts unten
@@ -916,7 +916,7 @@ de:
   view_user_profiles__installation_5: "Auf dem Desktop (oder im Dateibrowser): Rechtsklick mit der Maus, Eigenschaften, und dann ein H\xC3\xA4kchen bei \"Ausf\xC3\xBChren\" setzen."
   view_user_profiles__installation_6: "Doppelklick auf die Datei (zum Ausf\xC3\xBChren)"
   view_user_profiles__installation_7: "Es werden zur Information nochmal die hinzugef\xC3\xBCgten Quellen und Pakete angezeigt. Zweimal auf \"OK\" dr\xC3\xBCcken."
-  view_user_profiles__installation_8: "Die Datei ist ein Skript, das automatisch die gew\xC3\xBCnschten\n\
+  view_user_profiles__installation_8: "Die Datei ist ein Skript, das automatisch die gew\xC3\xBCnschten \
     Programme installiert, inklusive Download aus dem Internet."
   view_user_profiles__installation_9: Installieren
   view_user_profiles_new_0: Neues Nutzerprofil
@@ -934,7 +934,7 @@ de:
   view_user_profiles__profile_data_15: " Unfreie Lizenzen zulassen (auch kostenlos, aber Quellen liegen nicht offen - sozusagen das Methadon f\xC3\xBCr einen weichen \xC3\x9Cbergang zu Linux)"
   view_user_profiles__profile_data_16: Speichern
   view_user_profiles__profile_data_17: "Speichern und feiner ausw\xC3\xA4hlen"
-  view_user_profiles__profile_data_1: "Auf dieser Seite kannst du in vier einfachen Schritten deine Communtu-Nachinstallation ausw\xC3\xA4hlen - fertig. \n\
+  view_user_profiles__profile_data_1: "Auf dieser Seite kannst du in vier einfachen Schritten deine Communtu-Nachinstallation ausw\xC3\xA4hlen - fertig.  \
     Wenn gew\xC3\xBCnscht, ist aber auch eine detailliertere Auswahl m\xC3\xB6glich. "
   view_user_profiles__profile_data_2: "Achtung: zum Schluss unten auf einen der 'Speichern'-Kn\xC3\xB6pfe klicken!"
   view_user_profiles__profile_data_3: "Welche Aufgaben willst du mit deinem Computer erledigen? (um grob eine Auswahl zu treffen, Feineinstellungen sp\xC3\xA4ter m\xC3\xB6glich)"
@@ -945,19 +945,19 @@ de:
   view_user_profiles__profile_data_8: "\t     \t\xC3\x9Cber den Browser festgestellte Version: "
   view_user_profiles__profile_data_9: Hier kannst du einstellen, wie sicher bzw. komfortabel deine Installationsquellen sein sollen
   view_user_profiles__profile_rating_0: "Feinauswahl der zu installierenden Programmb\xC3\xBCndel und Programme"
-  view_user_profiles__profile_rating_1: "Hier kannst du deine beabsichtigte Computer-Nutzung noch genauer angeben.\n\
+  view_user_profiles__profile_rating_1: "Hier kannst du deine beabsichtigte Computer-Nutzung noch genauer angeben. \
     Durch Klicken auf "
-  view_user_profiles__profile_rating_2: " l\xC3\xA4sst\n\
+  view_user_profiles__profile_rating_2: " l\xC3\xA4sst \
     sich ein Bereich ein- oder ausklappen."
   view_user_profiles__profile_rating_3: Achtung! Zum Schluss auf "Speichern" klicken.
   view_user_profiles__profile_rating_4: Speichern
   view_user_profiles__sources_0: "Quellen f\xC3\xBCr die zu installierenden Programme"
-  view_user_profiles__sources_1: "Hier werden die zu installierenden Programme und Pakete nach den zugeh\xC3\xB6rigen\n\
-    Quellen sortiert aufgelisetet, so dass du auch sehen kannst, weshalb die jeweiligen\n\
+  view_user_profiles__sources_1: "Hier werden die zu installierenden Programme und Pakete nach den zugeh\xC3\xB6rigen \
+    Quellen sortiert aufgelisetet, so dass du auch sehen kannst, weshalb die jeweiligen \
     Quellen hinzugef\xC3\xBCgt werden."
   view_users_edit_0: Benuzterprofil bearbeiten
   view_users_edit_1: "Passwort \xC3\xA4ndern"
-  view_users_edit_2: Profil l&ouml;schen
+  view_users_edit_2: Profil l\xC3\xB6schen
   view_users_edit_3: "Benutzername:"
   view_users_edit_4: "E-Mail:"
   view_users_edit_5: Neues Passwort
@@ -977,8 +977,8 @@ de:
   view_users__mailbox_list_2: Posteingang
   view_users__mailbox_list_3: Versendete Nachrichten
   view_users_new_0: Registrierung
-  view_users_new_1: Hier hast du die M&ouml;glichkeit dich zu registrieren.
-  view_users_new_2: "Wenn du \xC3\xBCber die Weiterentwicklung von Communtu informiert werden m&ouml;chtest, dann gebe bitte deine richige E-Mail-Adresse an."
+  view_users_new_1: Hier hast du die M\xC3\xB6glichkeit dich zu registrieren.
+  view_users_new_2: "Wenn du \xC3\xBCber die Weiterentwicklung von Communtu informiert werden m\xC3\xB6chtest, dann gebe bitte deine richige E-Mail-Adresse an."
   view_users_new_3: Benutzername
   view_users_new_4: E-Mail
   view_users_new_5: Passwort
