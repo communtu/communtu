@@ -307,9 +307,7 @@ de:
   view_distributions_show_7: "L\xC3\xB6schen"
   view_distributions_show_8: "Vor dem L\xC3\xB6schen einer Distribution m\xC3\xBCssen alle Benutzer, die sie nutzen, ausgeloggt sein! Bist du sicher?"
   view_distributions_show_9: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
-  view_home_about_0: |-
-    Communtu -
-     gemeinsam Ubuntu-Linux an individuelle Bed\xC3\xBCrfnisse anpassen
+  view_home_about_0: "Communtu - gemeinsam Ubuntu-Linux an individuelle Bed\xC3\xBCrfnisse anpassen"
   view_home_about_10: Wie kann ich meine Erfahrungen mit Programmen ins Communtu-System eintragen?
   view_home_about_11: "Hast du gute Erfahrungen mit Programmen gemacht? Dann kannst du thematisch zusammengeh\xC3\xB6rige \
     Programme zu einem B\xC3\xBCndel zusammenfassen und ins System eintragen. Dazu w\xC3\xA4hlst du <b>Neues B\xC3\xBCndel</b> \
@@ -332,9 +330,9 @@ de:
     Das geht ganz einfach \xC3\xBCber den \"Anmelden\"-Knopf in der oberen Leiste."
   view_home_about_17: Impressum
   view_home_about_18: "Natur, Geist und Technik - Verein zur F\xC3\xB6rderung der Allgemeinbildung e.V."
-  view_home_about_19: Zentrum f\xC3\xBCr Solidarische \xC3\x96konomie
+  view_home_about_19: "Zentrum f\xC3\xBCr Solidarische \xC3\x96konomie"
   view_home_about_1: Wozu Communtu?
-  view_home_about_20: Spendenm\xC3\xB6glichkeit
+  view_home_about_20: "Spendenm\xC3\xB6glichkeit"
   view_home_about_21: Allgemeinbildung e.V.
   view_home_about_22: Konto 172 9375, Sparkasse Bremen, BLZ 290 501 01
   view_home_about_23: "Verwendungszweck: Communtu"
@@ -392,7 +390,7 @@ de:
   view_home_cancel_0: |-
     Communtu -
      leider hat da etwas beim Spenden nicht funktioniert.
-  view_home_cancel_1: Endweder versuchst Du es noch einmal oder Du nutzt die M\xC3\xB6glichkeit per \x9c\x0aberweisung
+  view_home_cancel_1: "Endweder versuchst Du es noch einmal oder Du nutzt die M\xC3\xB6glichkeit per \x9c\x0aberweisung"
   view_home_cancel_2: Allgemeinbildung e.V.
   view_home_cancel_3: Konto 172 9375, Sparkasse Bremen, BLZ 290 501 01
   view_home_cancel_4: "Verwendungszweck: Communtu"
@@ -471,9 +469,7 @@ de:
   view_home_derivatives_7: "unter der Kategorie \"Derivate\" zur Installation ausgew\xC3\xA4hlt werden."
   view_home_derivatives_8: Ebenso kannst du dort nachgucken, aus welchen Paketen ein Derivat besteht.
   view_home_derivatives_9: "\xC3\x9Cber Communtu sinnvoll nachinstallierbare Derivate:"
-  view_home_home_0: |-
-    Communtu -
-     gemeinsam Ubuntu-Linux an individuelle Bed\xC3\xBCrfnisse anpassen
+  view_home_home_0: "Communtu - gemeinsam Ubuntu-Linux an individuelle Bed\xC3\xBCrfnisse anpassen"
   view_home_home_10: "<b>Ubuntu-Versionen</b> \xC3\x9Cbersicht \xC3\xBCber die im System verf\xC3\xBCgbaren Ubuntu-Versionen (Distributionen)."
   view_home_home_11: "<b>Benutzer verwalten</b> Hier kannst du als Admin die Rollen der Benutzer \xC3\xA4ndern. Vorsicht walten lassen!"
   view_home_home_12: "<b>Kategorien verwalten</b> Hier kannst du als Admin neue Kategorien erstellen oder die Struktur des Kategorienbaums \xC3\xA4ndern. Vorsicht walten lassen!"
@@ -531,10 +527,10 @@ de:
   view_home_impressum_13: beteiligen
   view_home_impressum_1: "Natur, Geist und Technik - Verein zur F\xC3\xB6rderung der Allgemeinbildung e.V."
   view_home_impressum_2: AG Communtu
-  view_home_impressum_3: Zentrum f\xC3\xBCr Solidarische \xC3\x96konomie
+  view_home_impressum_3: "Zentrum f\xC3\xBCr Solidarische \xC3\x96konomie"
   view_home_impressum_4: Bauernstr. 2
   view_home_impressum_5: 28203 Bremen
-  view_home_impressum_6: Spendenm\xC3\xB6glichkeit
+  view_home_impressum_6: "Spendenm\xC3\xB6glichkeit"
   view_home_impressum_7: Allgemeinbildung e.V.
   view_home_impressum_8: Konto 172 9375, Sparkasse Bremen, BLZ 290 501 01
   view_home_impressum_9: "Verwendungszweck: Communtu"
@@ -957,7 +953,7 @@ de:
     Quellen hinzugef\xC3\xBCgt werden."
   view_users_edit_0: Benuzterprofil bearbeiten
   view_users_edit_1: "Passwort \xC3\xA4ndern"
-  view_users_edit_2: Profil l\xC3\xB6schen
+  view_users_edit_2: "Profil l\xC3\xB6schen"
   view_users_edit_3: "Benutzername:"
   view_users_edit_4: "E-Mail:"
   view_users_edit_5: Neues Passwort
@@ -977,7 +973,7 @@ de:
   view_users__mailbox_list_2: Posteingang
   view_users__mailbox_list_3: Versendete Nachrichten
   view_users_new_0: Registrierung
-  view_users_new_1: Hier hast du die M\xC3\xB6glichkeit dich zu registrieren.
+  view_users_new_1: "Hier hast du die M\xC3\xB6glichkeit dich zu registrieren."
   view_users_new_2: "Wenn du \xC3\xBCber die Weiterentwicklung von Communtu informiert werden m\xC3\xB6chtest, dann gebe bitte deine richige E-Mail-Adresse an."
   view_users_new_3: Benutzername
   view_users_new_4: E-Mail
