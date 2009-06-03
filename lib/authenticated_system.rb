@@ -82,7 +82,7 @@ module AuthenticatedSystem
       respond_to do |format|
         format.html do
           store_location
-          flash[:error] = t(:message_0, :scope => [:txt, :lib, :system])
+          flash[:error] = t(:lib_system_0)
           redirect_to :controller => '/session', :action => 'new'
         end
         format.xml do
@@ -95,8 +95,8 @@ module AuthenticatedSystem
       respond_to do |format|
         format.html do
           store_location
-          flash[:error] = t(:message_1, :scope => [:txt, :lib, :system])
-          domain = t(:message_2, :scope => [:txt, :lib, :system]) #modify for your application settings
+          flash[:error] = t(:lib_system_1)
+          domain = t(:lib_system_2) #modify for your application settings
           http_referer = request.env["HTTP_REFERER"]
           request_path = request.env["REQUEST_PATH"]
           if request_path.nil? then request_path = "" end
@@ -117,7 +117,7 @@ module AuthenticatedSystem
         format.xml do
           headers["Status"]           = "Unauthorized"
           headers["WWW-Authenticate"] = %(Basic realm="Web Password")
-          render :text => t(:message_3, :scope => [:txt, :lib, :system]), :status => '401 Unauthorized'
+          render :text => t(:lib_system_3), :status => '401 Unauthorized'
         end
       end
     end
