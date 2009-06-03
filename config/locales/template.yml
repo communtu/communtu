@@ -645,6 +645,7 @@ de:
   view_metapackages__metalist_7: nein
   view_metapackages__metalist_8: "ver\xC3\xB6ffentlicht"
   view_metapackages__metalist_9: "ver\xC3\xB6ffentlicht"
+  view_metapackages__metalist_10: Bewertung
   view_metapackages_migrate_0: "Von welcher Distribution sollen die B\xC3\xBCndel migriert werden ?"
   view_metapackages_migrate_1: "Zu welcher Distribution sollen die B\xC3\xBCndel migriert werden ?"
   view_metapackages_migrate_2: Migrieren
