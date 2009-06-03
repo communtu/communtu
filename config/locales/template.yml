@@ -144,7 +144,7 @@ de:
   model_mailer_0: Herzlich Willkommen bei Communtu
   model_mailer_1: Anfrage per Formular
   model_mailer_2: Dein Benutzerkonto wurde aktiviert.
-  model_mailer_3: "Du hast angefordert, dein Kennwort zur\xFCckzusetzen"
+  model_mailer_3: "Du hast angefordert, dein Kennwort zur\xC3\xBCckzusetzen"
   model_mailer_4: Dein Passwort wurde zurueckgesetzt..
   model_message_0: Bitte einen Betreff angeben
   model_package_0: OpenSource

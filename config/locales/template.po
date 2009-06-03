@@ -1,3 +1,18 @@
+msgid ""
+msgstr ""
+"Plural-Forms: n != 1\n"
+"Project-Id-Version: test 0.1\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Timo Denissen <timo-denissen@gmx.de>\n"
+"Language-Team: test <test@test.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
 #: controller_accounts_0
 msgid "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
 msgstr ""
@@ -227,7 +242,7 @@ msgstr ""
 msgid "Du bist bereits angemeldet."
 msgstr ""
 #: controller_sessions_3
-msgid "Deine hier registrierte Distribution wurde auf #{current_user.distribution.short_name} geändert, weil deine alte Distribution von Ubuntu (und daher auch von Communtu) nicht mehr unterstützt wird. Wir empfehlen für deinen Computer ein <a href=\"
+msgid "Deine hier registrierte Distribution wurde auf "
 msgstr ""
 #: controller_sessions_4
 msgid "Du wurdest abgemeldet."
@@ -240,6 +255,12 @@ msgid "Dein Benutzerkonto wurde noch nicht aktiviert. Der Aktivierungscode wurde
 msgstr ""
 #: controller_sessions_7
 msgid "Dein Benutzerkonto wurde deaktiviert oder gelöscht."
+msgstr ""
+#: controller_sessions_8
+msgid " geändert, weil deine alte Distribution von Ubuntu (und daher auch von Communtu) nicht mehr unterstützt wird. Wir empfehlen für deinen Computer ein <a href='http://wiki.ubuntuusers.de/Upgrade'>Upgrade</a> auf "
+msgstr ""
+#: controller_sessions_9
+msgid "."
 msgstr ""
 #: controller_suggestion_0
 msgid "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
@@ -316,11 +337,20 @@ msgstr ""
 #: controller_users_13
 msgid "Es gab ein Problem mit der Aktivierung dieses Benutzers."
 msgstr ""
+#: controller_users_14
+msgid " mit Kennwort "
+msgstr ""
+#: controller_users_15
+msgid " eingeloggt. Bitte ggf. oben rechts auf Nutzer "
+msgstr ""
+#: controller_users_16
+msgid " klicken und in ein dauerhaftes Nutzerkonto umwandeln; ansonsten wird das Konto nach einem Tag wieder gelöscht."
+msgstr ""
 #: controller_users_2
 msgid "Es gab ein Problem mit der Registrierung."
 msgstr ""
 #: controller_users_3
-msgid "Du wurdest als Nutzer #{login} mit Kennwort #{login} eingeloggt. Bitte ggf. oben rechts auf Nutzer #{login} klicken und in ein dauerhaftes Nutzerkonto umwandeln; ansonsten wird das Konto nach einem Tag wieder gelöscht."
+msgid "Du wurdest als Nutzer "
 msgstr ""
 #: controller_users_4
 msgid "Es gab ein Problem mit der anonymen Nutzung."
@@ -416,7 +446,7 @@ msgstr ""
 msgid "Dein Benutzerkonto wurde aktiviert."
 msgstr ""
 #: model_mailer_3
-msgid "Du hast angefordert, dein Kennwort zur�ckzusetzen"
+msgid "Du hast angefordert, dein Kennwort zurückzusetzen"
 msgstr ""
 #: model_mailer_4
 msgid "Dein Passwort wurde zurueckgesetzt.."
@@ -1667,6 +1697,9 @@ msgstr ""
 msgid "Weiterleiten"
 msgstr ""
 #: view_messages_show_5
+msgid "Löschen"
+msgstr ""
+#: view_messages_show_6
 msgid "zurück"
 msgstr ""
 #: view_metapackages__metalist_0
@@ -2576,7 +2609,7 @@ msgstr ""
 msgid " Communityquellen zulassen ("universe/multiverse", auch sicher, mehr Programme/Komfort) "
 msgstr ""
 #: view_user_profiles__profile_data_12
-msgid " Alle Quellen zulassen (etwas unsicherer: Fremdpakete können das System gefährden, aber noch mehr Programme/Komfort: "
+msgid " Alle Quellen zulassen (etwas unsicherer: <a href="http://wiki.ubuntuusers.de/Fremdquellen">Fremdpakete</a> können das System gefährden, aber noch mehr Programme/Komfort: "
 msgstr ""
 #: view_user_profiles__profile_data_13
 msgid "Hier kannst du auswählen, welche Lizenzen du zulassen willst"
