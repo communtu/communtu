@@ -198,7 +198,7 @@ class Package < BasePackage
   # test whether a source is present
   def self.test_source repository
     url  = get_url_from_source(repository.name)[:url]
-    if url.nil? then return {:error => I18n.t(:model_package_7) + repository.url + " " + repository.subtype + I18n.t(:model_package_8)} end
+    if url.nil? then return {:error => I18n.t(:model_package_7,{:repo=> repository.url + " " + repository.subtype})} end
     begin
       file = open(url, 'User-Agent' => 'Ruby-Wget')
     rescue  
@@ -538,7 +538,7 @@ private
             end
             readpackage.call ""
         else
-           return {:error => I18n.t(:model_package_12)+url+t(:model_package_13)+":<br><code>"+line+"</code>"}
+           return {:error => I18n.t(:model_package_12,{:file=>url})+":<br><code>"+line+"</code>"}
         end
       end
       return {:packages => packages}

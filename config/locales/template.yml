@@ -3,7 +3,6 @@ de:
   controller_accounts_0: "Ubuntu-Linux an die individuellen Bed\xC3\xBCrfnisse anpassen"
   controller_accounts_1: Dein Benutzerkonto wurde aktiviert! Du kannst dich nun einloggen.
   controller_accounts_2: Aktivierungs-Code nicht gefunden. Bitte versuche, ein neues Benutzerkonto anzulegen.
-  controller_accounts_3: Aktivierungs-Code nicht gefunden. Bitte versuche, ein neues Benutzerkonto anzulegen.
   controller_accounts_4: Bein Benutzerkonto wurde bereits aktiviert. Du kannst dich nun anmelden.
   controller_accounts_5: Passwort aktualisiert.
   controller_accounts_6: "Es ist ein Fehler aufgetreten. Das Passwort wurde nicht ge\xC3\xA4ndert."
@@ -75,31 +74,22 @@ de:
   controller_sent_2: Nachricht erfolgreich versendet
   controller_sessions_0: "Ubuntu-Linux an die individuellen Bed\xC3\xBCrfnisse anpassen"
   controller_sessions_1: Du bist bereits angemeldet.
-  controller_sessions_2: Du bist bereits angemeldet.
-  controller_sessions_3: "Deine hier registrierte Distribution wurde auf "
+  controller_sessions_3: "Deine hier registrierte Distribution wurde auf {{dist_old}} ge\xC3\xA4ndert, weil deine alte Distribution von Ubuntu (und daher auch von Communtu) nicht mehr unterst\xC3\xBCtzt wird. Wir empfehlen f\xC3\xBCr deinen Computer ein <a href='http://wiki.ubuntuusers.de/Upgrade'>Upgrade</a> auf {{dist_new}}."
   controller_sessions_4: Du wurdest abgemeldet.
   controller_sessions_5: Dein Benutzername oder Passwort ist falsch. Bitte ggf. unten auf "Registrieren" klicken.
   controller_sessions_6: Dein Benutzerkonto wurde noch nicht aktiviert. Der Aktivierungscode wurde dir per Email zugeschickt.
   controller_sessions_7: "Dein Benutzerkonto wurde deaktiviert oder gel\xC3\xB6scht."
-  controller_sessions_8: " ge\xC3\xA4ndert, weil deine alte Distribution von Ubuntu (und daher auch von Communtu) nicht mehr unterst\xC3\xBCtzt wird. Wir empfehlen f\xC3\xBCr deinen Computer ein <a href='http://wiki.ubuntuusers.de/Upgrade'>Upgrade</a> auf "
-  controller_sessions_9: "."
   controller_suggestion_0: "Ubuntu-Linux an die individuellen Bed\xC3\xBCrfnisse anpassen"
   controller_suggestion_10: "# B\xC3\xBCndel: "
   controller_suggestion_11: "Paketquellen hinzuf\xC3\xBCgen"
   controller_suggestion_12: "Folgende Paketquellen werden hinzugef\xC3\xBCgt"
-  controller_suggestion_13: "Paketquellen hinzuf\xC3\xBCgen"
-  controller_suggestion_14: "Folgende Paketquellen werden hinzugef\xC3\xBCgt"
   controller_suggestion_15: Pakete installieren
   controller_suggestion_16: Folgende Pakete werden installiert
-  controller_suggestion_17: Pakete installieren
-  controller_suggestion_18: Folgende Pakete werden installiert
   controller_suggestion_1: "Um etwas installieren zu k\xC3\xB6nnen, musst du zun\xC3\xA4chst etwas ausw\xC3\xA4hlen. Speichern nicht vergessen!"
   controller_suggestion_2: "Quellen und Schluessel hinzufuegen fuer Benutzer "
   controller_suggestion_3: Bei der Erstellung des Pakets ist ein Fehler aufgetreten.
   controller_suggestion_4: "Quellen und Schluessel hinzufuegen fuer Buendel "
-  controller_suggestion_5: Bei der Erstellung des Pakets ist ein Fehler aufgetreten.
   controller_suggestion_6: "Quellen und Schluessel hinzufuegen fuer Paket "
-  controller_suggestion_7: "Um etwas installieren zu k\xC3\xB6nnen, musst du zun\xC3\xA4chst etwas ausw\xC3\xA4hlen. Speichern nicht vergessen!"
   controller_suggestion_8: "Communtu-Nachinstallation fuer Benutzer "
   controller_suggestion_9: Bei der Erstellung des Pakets ist ein Fehler aufgetreten.
   controller_users_0: "Ubuntu-Linux an die individuellen Bed\xC3\xBCrfnisse anpassen"
@@ -107,12 +97,9 @@ de:
   controller_users_11: "Es gab ein Problem mit der L\xC3\xB6schung."
   controller_users_12: Benutzer aktiviert
   controller_users_13: Es gab ein Problem mit der Aktivierung dieses Benutzers.
-  controller_users_14: " mit Kennwort "
-  controller_users_15: " eingeloggt. Bitte ggf. oben rechts auf Nutzer "
-  controller_users_16: " klicken und in ein dauerhaftes Nutzerkonto umwandeln; ansonsten wird das Konto nach einem Tag wieder gel\xC3\xB6scht."
   controller_users_1: "Danke f\xC3\xBCr die Registrierung bei Communtu! Du kannst dich jetzt anmelden."
   controller_users_2: Es gab ein Problem mit der Registrierung.
-  controller_users_3: "Du wurdest als Nutzer "
+  controller_users_3: "Du wurdest als Nutzer {{anonymous_user}} mit Kennwort {{anonymous_user}} eingeloggt. Bitte ggf. oben rechts auf Nutzer {{anonymous_user}} klicken und in ein dauerhaftes Nutzerkonto umwandeln; ansonsten wird das Konto nach einem Tag wieder gel\xC3\xB6scht."
   controller_users_4: Es gab ein Problem mit der anonymen Nutzung.
   controller_users_5: Benutzerdaten aktualisiert
   controller_users_6: "Benutzerdaten \xC3\xBCbernommen und Benutzerkonto dauerhaft gemacht."
@@ -129,37 +116,30 @@ de:
   helper_distributions_15: Wikiseite bei Ubuntuusers
   helper_distributions_1: non-free
   helper_distributions_2: Repository synchronisieren
-  helper_distributions_3: Repository synchronisieren
   helper_distributions_4: Repository migieren
-  helper_distributions_5: Repository migieren
   helper_distributions_6: "Repository l\xC3\xB6schen"
-  helper_distributions_7: "Repository l\xC3\xB6schen"
-  helper_distributions_8: "Quellen "
-  helper_distributions_9: " anzeigen "
+  helper_distributions_8: "Quellen anzeigen"
   lib_system_0: Du musst eingeloggt sein, um dieses Feature zu benutzen.
   lib_system_1: "Du hast keine Berechtigung f\xC3\xBCr diese Aktion."
   lib_system_2: http://www.communtu.de
-  lib_system_3: "Du hast keine Berechtigung f\xC3\xBCr diese Aktion."
   lib_utils_0: "System-Befehl schlug fehl: "
   model_mailer_0: Herzlich Willkommen bei Communtu
   model_mailer_1: Anfrage per Formular
   model_mailer_2: Dein Benutzerkonto wurde aktiviert.
   model_mailer_3: "Du hast angefordert, dein Kennwort zur\xC3\xBCckzusetzen"
-  model_mailer_4: Dein Passwort wurde zurueckgesetzt..
+  model_mailer_4: "Dein Passwort wurde zur\xC3\xBCckgesetzt."
   model_message_0: Bitte einen Betreff angeben
   model_package_0: OpenSource
   model_package_10: "When syncing repository #{repository.name}, could not find package #{name}"
   model_package_11: Konnte keine URL feststellen
-  model_package_12: "Inhalt von "
-  model_package_13: " entspricht nicht Repository-Syntax"
+  model_package_12: "Inhalt von {{file}} entspricht nicht Repository-Syntax"
   model_package_1: Commercial
   model_package_2: Unbekannt
   model_package_3: Native
   model_package_4: Trusted
   model_package_5: Third-Party
   model_package_6: <br> hat nicht das richtige Format
-  model_package_7: "Konnte URL f\xC3\xBCr "
-  model_package_8: " nicht feststellen"
+  model_package_7: "Konnte URL f\xC3\xBCr {{repo}} nicht feststellen"
   model_package_9: "When syncing repository, could not find PackageDistr for #{p.name} in repository #{repository.name}"
   model_user_meta_tabz_0: "Meine B\xC3\xBCndel"
   model_user_meta_tabz_1: "Alle ver\xC3\xB6ffentlichten B\xC3\xBCndel"
@@ -226,31 +206,22 @@ de:
   view_categories_index_10: Bist du sicher?
   view_categories_index_11: Neue Kategorie
   view_categories_index_12: Kategorienbaum anzeigen
-  view_categories_index_13: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
   view_categories_index_1: Name
   view_categories_index_2: Beschreibung
   view_categories_index_3: "\xC3\xBCbergeordnete Kategorie"
   view_categories_index_4: Anzeigen
-  view_categories_index_5: Anzeigen
   view_categories_index_6: Bearbeiten
-  view_categories_index_7: Bearbeiten
   view_categories_index_8: "L\xC3\xB6schen"
-  view_categories_index_9: "L\xC3\xB6schen"
   view_categories_new_0: Neue Kategorie
-  view_categories_new_1: Name
-  view_categories_new_2: Beschreibung
   view_categories_new_3: "\xC3\x9Cbergeordnete Kategorie"
   view_categories_new_4: "W\xC3\xA4hle einen Parent aus!"
   view_categories_new_5: Anlegen
   view_categories_new_6: "Zur\xC3\xBCck"
-  view_categories_new_7: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
   view_categories_show_0: "Name:"
   view_categories_show_1: "Beschreibung:"
   view_categories_show_2: "Weitere Informationen:"
   view_categories_show_3: "\xC3\x9Cbergeordnete Kategorie:"
-  view_categories_show_4: Bearbeiten
   view_categories_show_5: "Zur\xC3\xBCck"
-  view_categories_show_6: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
   view_debs_index_0: Fehlgeschlagene oder laufende Deb-Generierungen
   view_debs_index_1: "Zur\xC3\xBCck zum Communtu-Men\xC3\xBC"
   view_debs_index_2: "  Keine fehlgeschlagenen Deb-Generierungen vorhanden! Gl\xC3\xBCckwunsch!"
@@ -270,10 +241,6 @@ de:
   view_derivatives_index_4: Bist du sicher?
   view_derivatives_index_5: Neues Derivat
   view_derivatives_new_0: Neues Derivat
-  view_derivatives_new_1: "Programm f\xC3\xBCr GUI-basiertes Sudo (z.B. gksudo, kdesudo)"
-  view_derivatives_new_2: "Programm f\xC3\xBCr GUI-Dialoge (z.B. zenity, kdialog)"
-  view_derivatives_new_3: Speichern
-  view_derivatives_new_4: "Zur\xC3\xBCck"
   view_derivatives_show_0: "Name:"
   view_derivatives_show_1: "Sudo-Programm:"
   view_derivatives_show_2: "Dialog-Programm:"
@@ -499,26 +466,20 @@ de:
   view_home_home_9: "<b>Ubuntu-Derivate</b> bietet eine \xC3\x9Cbersicht \xC3\xBCber Kubuntu, Xubuntu, Medibuntu und wie sie alle hei\xC3\x9Fen ..."
   view_home_icons_0: Icons bei Communtu
   view_home_icons_10: Programm
-  view_home_icons_11: Programm
   view_home_icons_12: " Programm (wenn kein anderes Programm-Icon vorhanden)"
   view_home_icons_13: "Programm-B\xC3\xBCndel"
-  view_home_icons_14: "Programm-B\xC3\xBCndel"
   view_home_icons_15: " Programm-B\xC3\xBCndel"
   view_home_icons_16: " Migration von Repositories"
   view_home_icons_17: externer Link
-  view_home_icons_18: externer Link
   view_home_icons_19: " externer Link"
   view_home_icons_1: "Paket installieren. Bitte ggf. vorher die Quellen hinzuf\xC3\xBCgen."
   view_home_icons_20: User-Icon
-  view_home_icons_21: User-Icon
   view_home_icons_22: " User Icon"
   view_home_icons_2: "Paket installieren. Bitte ggf. vorher die Quellen hinzuf\xC3\xBCgen."
   view_home_icons_3: " Paket(e) installieren."
   view_home_icons_4: "Quellen hinzuf\xC3\xBCgen"
-  view_home_icons_5: "Quellen hinzuf\xC3\xBCgen"
   view_home_icons_6: " Quellen installieren"
   view_home_icons_7: installieren mittels Skript
-  view_home_icons_8: installieren mittels Skript
   view_home_icons_9: " Installation per Shell-Script"
   view_home_impressum_0: Impressum
   view_home_impressum_10: Spendenbescheinigung kann ausgestellt werden.
@@ -553,18 +514,14 @@ de:
   view_home_news_19: Der Blog von Communtu
   view_home_news_1: Unsere Mailinglisten
   view_home_news_20: Der Blog von Communtu
-  view_home_news_21: http://communtu.blogspot.com
   view_home_news_22: "Beteiligungsm\xC3\xB6glichkeiten"
   view_home_news_23: "Du kannst Dich auch "
   view_home_news_24: beteiligen
   view_home_news_2: "Um die Kommunikation mit unseren Nutzern zu verbessern, haben wir Mailinglisten eingerichtet:"
   view_home_news_3: communtu-announce-de+subscribe@googlegroups.com
-  view_home_news_4: communtu-announce-de+subscribe@googlegroups.com
   view_home_news_5: "Diese Liste ist f\xC3\xBCr allgemeine Ank\xC3\xBCndigungen aus den Communtu Team f\xC3\xBCr die Nutzer gedacht.  Es wir hier ungef\xC3\xA4hr einmal die Woche eine E-Mail \xC3\xBCber den Verteiler geschickt.   Die Nachrichten werden in einem "
   view_home_news_6: Archiv
-  view_home_news_7: http://groups.google.com/group/communtu-announce-de/topics?start=
   view_home_news_8: " gesammelt."
-  view_home_news_9: communtu-discuss-de+subscribe@googlegroups.com
   view_home_success_0: " Vielen Dank f\xC3\xBCr die Spende"
   view_home_success_1: "Eine Spendenbescheinigung kann ausgestellt werden. Dazu schicke uns bitte eine E-Mail mit Deiner Adresse an: "
   view_layouts_application_0: Communtu, Ubuntu, Installation, Installationshilfe
@@ -575,16 +532,12 @@ de:
   view_layouts_application_14: Feedback an Communtu
   view_layouts_application_15: "angemeldet als  "
   view_layouts_application_16: neue Nachricht
-  view_layouts_application_17: neue Nachricht
   view_layouts_application_18: keine neuen Nachrichten
-  view_layouts_application_19: keine neuen Nachrichten
   view_layouts_application_1: "Communtu passt Dein Linux-Ubuntu-System an Deine individuellen Bed\xC3\xBCrfnisse an."
   view_layouts_application_2: Communtu
   view_layouts_application_3: Zur Startseite
-  view_layouts_application_4: Zur Startseite
   view_layouts_application_5: "per PayPal:"
   view_layouts_application_6: "Jetzt einfach, schnell und sicher online spenden \xE2\x80\x93 mit PayPal."
-  view_layouts_application_7: "Jetzt einfach, schnell und sicher online spenden \xE2\x80\x93 mit PayPal."
   view_layouts_application_8: Start
   view_layouts_application_9: Abmelden
   view_mailbox_show_0: Posteingang
@@ -625,15 +578,12 @@ de:
   view_metapackages_index_2: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
   view_metapackages__metalist_0: Name
   view_metapackages__metalist_10: "nicht ver\xC3\xB6ffentlicht"
-  view_metapackages__metalist_11: "nicht ver\xC3\xB6ffentlicht"
   view_metapackages__metalist_12: installieren mittels Skript
   view_metapackages__metalist_13: installieren
   view_metapackages__metalist_14: "installieren mittels Metapaket. Bitte vorher die Quellen hinzuf\xC3\xBCgen."
-  view_metapackages__metalist_15: installieren
   view_metapackages__metalist_16: "Quellen hinzuf\xC3\xBCgen"
   view_metapackages__metalist_17: Quellen
   view_metapackages__metalist_18: "hinzuf\xC3\xBCgen"
-  view_metapackages__metalist_19: "hinzuf\xC3\xBCgen"
   view_metapackages__metalist_1: Kategorie
   view_metapackages__metalist_20: "<option>0 B\xC3\xBCndel ausgew\xC3\xA4hlt</option>"
   view_metapackages__metalist_21: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
@@ -644,7 +594,6 @@ de:
   view_metapackages__metalist_6: ja
   view_metapackages__metalist_7: nein
   view_metapackages__metalist_8: "ver\xC3\xB6ffentlicht"
-  view_metapackages__metalist_9: "ver\xC3\xB6ffentlicht"
   view_metapackages__metalist_10: Bewertung
   view_metapackages_migrate_0: "Von welcher Distribution sollen die B\xC3\xBCndel migriert werden ?"
   view_metapackages_migrate_1: "Zu welcher Distribution sollen die B\xC3\xBCndel migriert werden ?"
@@ -663,9 +612,7 @@ de:
   view_metapackages_rdepends_2: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
   view_metapackages_show_0: "B\xC3\xBCndel erstellt von "
   view_metapackages_show_10: "ver\xC3\xB6ffentlicht"
-  view_metapackages_show_11: "ver\xC3\xB6ffentlicht"
   view_metapackages_show_12: "nicht ver\xC3\xB6ffentlicht"
-  view_metapackages_show_13: "nicht ver\xC3\xB6ffentlicht"
   view_metapackages_show_14: "  Aktionen:&nbsp;&nbsp;"
   view_metapackages_show_15: Editieren
   view_metapackages_show_16: Paketliste editieren
@@ -676,8 +623,6 @@ de:
   view_metapackages_show_20: Direkt und indirekt enthaltene Pakete
   view_metapackages_show_21: "Wird bei Communtu in folgenden B\xC3\xBCndeln benutzt:"
   view_metapackages_show_22: Kommentieren
-  view_metapackages_show_23: Kommentieren
-  view_metapackages_show_24: Kommentieren
   view_metapackages_show_25: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
   view_metapackages_show_2: neue Nachricht schreiben
   view_metapackages_show_3: "Zur\xC3\xBCck&nbsp;&nbsp;"
@@ -726,17 +671,14 @@ de:
   view_packages_new_8: "Zur\xC3\xBCck"
   view_packages__packagelist_0: "Debian-Section:"
   view_packages__packagelist_10: entfernen
-  view_packages__packagelist_11: entfernen
   view_packages__packagelist_12: Bist du sicher?
   view_packages__packagelist_1: "&nbsp;&nbsp;Nur&nbsp;Programme:"
   view_packages__packagelist_2: "&nbsp;&nbsp;Suche:"
   view_packages__packagelist_3: zur Detailansicht
   view_packages__packagelist_4: installieren
-  view_packages__packagelist_5: installieren
   view_packages__packagelist_6: "Quellen hinzuf\xC3\xBCgen"
   view_packages__packagelist_7: Quellen
   view_packages__packagelist_8: "hinzuf\xC3\xBCgen"
-  view_packages__packagelist_9: "hinzuf\xC3\xBCgen"
   view_packages_rdepends_0: "Im Paket "
   view_packages_rdepends_1: " direkt und indirekt enthaltene Pakete"
   view_packages__search_0: Suche nach Paketen
@@ -755,8 +697,6 @@ de:
   view_packages_show_20: "Wird bei Communtu in folgenden B\xC3\xBCndeln benutzt:"
   view_packages_show_21: "Wird in folgenden Paketen benutzt:"
   view_packages_show_22: Kommentieren
-  view_packages_show_23: Kommentieren
-  view_packages_show_24: Kommentieren
   view_packages_show_25: Bearbeiten
   view_packages_show_26: "Metapaket in B\xC3\xBCndel wandeln"
   view_packages_show_27: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
@@ -827,7 +767,6 @@ de:
   view_roles_index_1: "Zugewiesene Rollen:"
   view_roles_index_2: "Verf\xC3\xBCgbare Rollen:"
   view_roles_new_0: Neue Rolle
-  view_roles_new_1: Rollenname
   view_roles_new_2: Anlegen
   view_roles_new_3: "Zur\xC3\xBCck"
   view_roles__role_0: "Rolle l\xC3\xB6schen"
@@ -852,9 +791,7 @@ de:
   view_sent_show_2: "Zeitpunkt:"
   view_sent_show_3: "zur\xC3\xBCck"
   view_sent__user_exists_0: User gefunden
-  view_sent__user_exists_1: User gefunden
   view_sent__user_not_exists_0: User nicht gefunden
-  view_sent__user_not_exists_1: User nicht gefunden
   view_sessions_new_0: "Anmelden mit Benutzernamen und Passwort:"
   view_sessions_new_1: Benutzername
   view_sessions_new_2: Passwort
@@ -936,7 +873,6 @@ de:
   view_user_profiles__profile_data_2: "Achtung: zum Schluss unten auf einen der 'Speichern'-Kn\xC3\xB6pfe klicken!"
   view_user_profiles__profile_data_3: "Welche Aufgaben willst du mit deinem Computer erledigen? (um grob eine Auswahl zu treffen, Feineinstellungen sp\xC3\xA4ter m\xC3\xB6glich)"
   view_user_profiles__profile_data_4: Weitere Informationen
-  view_user_profiles__profile_data_5: Weitere Informationen
   view_user_profiles__profile_data_6: "W\xC3\xA4hle bitte deine Ubuntu-Version aus. "
   view_user_profiles__profile_data_7: Wie stelle ich die Version fest?
   view_user_profiles__profile_data_8: "\t     \t\xC3\x9Cber den Browser festgestellte Version: "
@@ -1009,5 +945,4 @@ de:
   view_videos_edit_2: "Zur\xC3\xBCck"
   view_videos_show_0: "Url:"
   view_videos_show_1: "Beschreibung:"
-  view_videos_show_2: Bearbeiten
   view_videos_show_3: "Zur\xC3\xBCck"

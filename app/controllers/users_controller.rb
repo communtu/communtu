@@ -77,7 +77,7 @@ class UsersController < ApplicationController
     @user.save!
     # release lock
     system "dotlockfile -u #{RAILS_ROOT}/anolock"
-    flash[:notice] = t(:controller_users_3)+@user.login+t(:controller_users_14)+@user.login+t(:controller_users_15)+@user.login+t(:controller_users_16)
+    flash[:notice] = t(:controller_users_3,{:anonymous_user=>@user.login})
     #have the user logged in 
     self.current_user = @user
     redirect_to "/home/home"

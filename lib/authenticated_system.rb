@@ -117,7 +117,7 @@ module AuthenticatedSystem
         format.xml do
           headers["Status"]           = "Unauthorized"
           headers["WWW-Authenticate"] = %(Basic realm="Web Password")
-          render :text => t(:lib_system_3), :status => '401 Unauthorized'
+          render :text => t(:lib_system_1), :status => '401 Unauthorized'
         end
       end
     end

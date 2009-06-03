@@ -58,7 +58,7 @@ class SuggestionController < ApplicationController
                  current_user.license,
                  current_user.security)
     if debfile.nil? then
-      flash[:error] = t(:controller_suggestion_5)
+      flash[:error] = t(:controller_suggestion_3)
       redirect_to "/home"
       return
     end
@@ -94,7 +94,7 @@ class SuggestionController < ApplicationController
     version = current_user.profile_version.to_s
 
     if current_user.selected_packages.empty? then
-      flash[:error] = t(:controller_suggestion_7)
+      flash[:error] = t(:controller_suggestion_1)
       redirect_to "/users/#{current_user.id}/user_profile/tabs/0"
       return
     end
@@ -183,8 +183,8 @@ class SuggestionController < ApplicationController
     elsif dialog == "kdialog" then
       sources_lined = sources_line.gsub("*","\\n")
       script += "SOURCESD=\"#{sources_lined}\"\n\n"
-      script += "#{dialog} --geometry 500x300 --title \""+ t(:controller_suggestion_13) + "\"" + 
-          "--yesno \"" + t(:controller_suggestion_14) + "\\n$SOURCESD\"\n"
+      script += "#{dialog} --geometry 500x300 --title \""+ t(:controller_suggestion_11) + "\"" + 
+          "--yesno \"" + t(:controller_suggestion_12) + "\\n$SOURCESD\"\n"
     end  
     script += "\n"
 
@@ -195,8 +195,8 @@ class SuggestionController < ApplicationController
       script += "#{dialog} --list --width 500 --height 300 --title \""+ t(:controller_suggestion_15) + "\" " +
           "--text \"" + t(:controller_suggestion_16) + "\" --column \"Paket\" $PACKAGES \n"
     elsif dialog == "kdialog" then
-      script += "#{dialog} --geometry 500x300 --title \"" + t(:controller_suggestion_17) + "\" " + 
-          "--yesno \"" + t(:controller_suggestion_18) + "\\n$PACKAGES\"\n"
+      script += "#{dialog} --geometry 500x300 --title \"" + t(:controller_suggestion_15) + "\" " + 
+          "--yesno \"" + t(:controller_suggestion_16) + "\\n$PACKAGES\"\n"
     end          
     script += "\n"
     

@@ -40,9 +40,9 @@
 <p>
     <b><%=t(:view_metapackages_show_9)%></b>
     <% if @metapackage.is_published? %>
-        <%= image_tag("yes.png", :size => "22x22", :border => "0", :title => t(:view_metapackages_show_10), :alt => t(:view_metapackages_show_11))  %>
+        <%= image_tag("yes.png", :size => "22x22", :border => "0", :title => t(:view_metapackages_show_10), :alt => t(:view_metapackages_show_10))  %>
     <% else %>
-        <%= image_tag("no.png", :size => "22x22", :border => "0", :title => t(:view_metapackages_show_12), :alt => t(:view_metapackages_show_13))  %>
+        <%= image_tag("no.png", :size => "22x22", :border => "0", :title => t(:view_metapackages_show_12), :alt => t(:view_metapackages_show_12))  %>
     <% end %>
 </p>
   
@@ -89,8 +89,8 @@
 
 <hr>
 <%= render :partial => "package_list", :locals => { :metapackage => @metapackage, :editable => false, :distribution => @distribution, :derivative =>  @derivative} %>
-<%= image_tag("/images/editp.png", :size => "22x22", :border => 0, :title => t(:view_metapackages_show_22), :alt => t(:view_metapackages_show_23)) %> 
-<%= link_to t(:view_metapackages_show_24), { :controller => :metapackages, :action => :add_comment, \
+<%= image_tag("/images/editp.png", :size => "22x22", :border => 0, :title => t(:view_metapackages_show_22), :alt => t(:view_metapackages_show_22)) %> 
+<%= link_to t(:view_metapackages_show_22), { :controller => :metapackages, :action => :add_comment, \
 	    :id => @metapackage.id } %>
 <%= show_comments @metapackage.comments %>
 <% else %>

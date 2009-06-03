@@ -17,7 +17,7 @@ class AccountsController < ApplicationController
     flash[:notice] = t(:controller_accounts_2)
     redirect_to new_user_path 
   rescue User::ActivationCodeNotFound
-    flash[:notice] = t(:controller_accounts_3)
+    flash[:notice] = t(:controller_accounts_2)
     redirect_to new_user_path
   rescue User::AlreadyActivated
     flash[:notice] = t(:controller_accounts_4)

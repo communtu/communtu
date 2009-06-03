@@ -21,13 +21,13 @@ module DistributionsHelper
           :id => repo.id, :distribution_id => repo.distribution_id })
         if is_admin?
           sync_link = (link_to (tag "img", { :src => "/images/view-refresh.png", :width => "22", :height => "22",\
-            :alt => t(:helper_distributions_2), :title => t(:helper_distributions_3),:class => "link_img"}) ,\
+            :alt => t(:helper_distributions_2), :title => t(:helper_distributions_2),:class => "link_img"}) ,\
             { :controller => :admin, :action => :sync_package, :id => repo.id})
           mig_link =  (link_to (tag "img", { :src => "/images/migrate.png", :width => "22", :height => "22",\
-            :alt => t(:helper_distributions_4), :title => t(:helper_distributions_5),:class => "link_img"}) ,\
+            :alt => t(:helper_distributions_4), :title => t(:helper_distributions_4),:class => "link_img"}) ,\
              "/repositories/migrate/#{repo.id}")
           del_link =  (link_to (tag "img", { :src => "/images/edit-delete.png", :width => "22", :height => "22",\
-            :alt => t(:helper_distributions_6), :title => t(:helper_distributions_7), :class => "link_img"}) ,\
+            :alt => t(:helper_distributions_6), :title => t(:helper_distributions_6), :class => "link_img"}) ,\
              "/repositories/destroy/#{repo.id}")
           row = "<tr><td class='" + css + "' valign='middle'>" + sync_link +\
              "</td><td class='" + css + "' valign='middle'>" + image + link + "</td>" +\
@@ -53,7 +53,7 @@ module DistributionsHelper
       #  (if dist.url.nil? then dist.name else (link_to dist.name, dist.url, :target=>'_blank') end)+\
     
     if with_buttons
-     out += t(:helper_distributions_8) + (link_to t(:helper_distributions_9)+ if is_admin? then t(:helper_distributions_10) else "" end, dist)
+     out += (link_to t(:helper_distributions_8)+ if is_admin? then t(:helper_distributions_10) else "" end, dist)
       if is_admin?
         out += t(:helper_distributions_11) + (link_to t(:helper_distributions_12), edit_distribution_path(dist)) + " | " +\
         (link_to t(:helper_distributions_13), dist, :confirm => t(:helper_distributions_14), :method => :delete)

@@ -5,12 +5,12 @@
 
 <% form_for(@category) do |f| %>
   <p>
-    <b><%=t(:view_categories_new_1)%></b><br />
+    <b><%=t(:view_categories_index_1)%></b><br />
     <%= f.text_field :name %>
   </p>
 
   <p>
-    <b><%=t(:view_categories_new_2)%></b><br />
+    <b><%=t(:view_categories_index_2)%></b><br />
     <%= f.text_field :description %>
   </p>
 
@@ -26,5 +26,5 @@
 
 <%= link_to t(:view_categories_new_6), categories_path %>
 <% else %>
-<p><%=t(:view_categories_new_7)%></p>
+<p><%=t(:view_categories_edit_8)%></p>
 <% end %>

@@ -20,7 +20,7 @@ class SessionsController < ApplicationController
   
   def create
     if logged_in?
-      flash[:error] = t(:controller_sessions_2)
+      flash[:error] = t(:controller_sessions_1)
       redirect_to "/home"
       return
     end
@@ -31,7 +31,7 @@ class SessionsController < ApplicationController
         current_user.distribution_id += 1
         current_user.save
       end  
-      flash[:error] = t(:controller_sessions_3)+current_user.distribution.short_name+t.(:controller_sessions_8)+current_user.distribution.name+t.(:controller_sessions_9)
+      flash[:error] = t(:controller_sessions_3,{:dist_old=>current_user.distribution.short_name,:dist_new=>current_user.distribution.name})
     end
   end
  

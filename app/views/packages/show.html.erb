@@ -113,8 +113,8 @@
 <% end %>
 
 <p>
-<%= image_tag("/images/editp.png", :size => "22x22", :border => 0, :title => t(:view_packages_show_22), :alt => t(:view_packages_show_23)) %>
-<%= link_to t(:view_packages_show_24), { :controller => :packages, :action => :add_comment, \
+<%= image_tag("/images/editp.png", :size => "22x22", :border => 0, :title => t(:view_packages_show_22), :alt => t(:view_packages_show_22)) %>
+<%= link_to t(:view_packages_show_22), { :controller => :packages, :action => :add_comment, \
 	    :id => @package.id } %>
 <%= show_comments @package.comments %>
 </p>

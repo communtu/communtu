@@ -41,16 +41,16 @@
      <% end %>
 	</td>
     <td class="<%= css %>" width="80" align="right">
-        <%= link_to image_tag("/images/install.png", :size => "22x22", :border => "0", :title => t(:view_packages__packagelist_4), :alt => t(:view_packages__packagelist_5)), "apt://"+package.name %>                          
+        <%= link_to image_tag("/images/install.png", :size => "22x22", :border => "0", :title => t(:view_packages__packagelist_4), :alt => t(:view_packages__packagelist_4)), "apt://"+package.name %>                          
 	    <%= link_to image_tag("/images/sources.jpg", :size => "22x22", :border => "0", :title => t(:view_packages__packagelist_6), :alt => t(:view_packages__packagelist_7)), "/users/#{current_user.id}/suggestion/install_package_sources/#{package.id}" %>
 		<% if editing_metapackage? %>
 		    
-			<%= link_to_remote(image_tag("/images/add.png", :size => "22x22", :border => "0", :title =>t(:view_packages__packagelist_8), :alt => t(:view_packages__packagelist_9)), \
+			<%= link_to_remote(image_tag("/images/add.png", :size => "22x22", :border => "0", :title =>t(:view_packages__packagelist_8), :alt => t(:view_packages__packagelist_8)), \
 			        :url => user_path(current_user) + "/cart/add_to_cart/" + package.id.to_s,\
 			        :update => 'meta_cart') %>
 		<% end %>
     	<% if is_admin? %>
-    		<%= link_to image_tag("/images/edit-delete.png", :size => "22x22", :border => "0", :title => t(:view_packages__packagelist_10), :alt => t(:view_packages__packagelist_11)),
+    		<%= link_to image_tag("/images/edit-delete.png", :size => "22x22", :border => "0", :title => t(:view_packages__packagelist_10), :alt => t(:view_packages__packagelist_10)),
     		        package_path(package), :confirm => t(:view_packages__packagelist_12), :method => :delete %>
 			<% end %>
 	</td>
