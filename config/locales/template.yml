@@ -926,7 +926,7 @@ de:
   view_user_profiles__profile_data_0: "Installation vorbereiten: Grunddaten eingeben"
   view_user_profiles__profile_data_10: " Nur Ubuntuquellen zulassen (\"main/restricted\", sehr sicher)"
   view_user_profiles__profile_data_11: " Communityquellen zulassen (\"universe/multiverse\", auch sicher, mehr Programme/Komfort) "
-  view_user_profiles__profile_data_12: " Alle Quellen zulassen (etwas unsicherer: Fremdpakete k\xC3\xB6nnen das System gef\xC3\xA4hrden, aber noch mehr Programme/Komfort: "
+  view_user_profiles__profile_data_12: " Alle Quellen zulassen (etwas unsicherer: <a href=\"http://wiki.ubuntuusers.de/Fremdquellen\">Fremdpakete</a> k\xC3\xB6nnen das System gef\xC3\xA4hrden, aber noch mehr Programme/Komfort: "
   view_user_profiles__profile_data_13: "Hier kannst du ausw\xC3\xA4hlen, welche Lizenzen du zulassen willst"
   view_user_profiles__profile_data_14: " Freie Software (Quellen liegen offen und d\xC3\xBCrfen weiterentwickelt werden)"
   view_user_profiles__profile_data_15: " Unfreie Lizenzen zulassen (auch kostenlos, aber Quellen liegen nicht offen - sozusagen das Methadon f\xC3\xBCr einen weichen \xC3\x9Cbergang zu Linux)"
