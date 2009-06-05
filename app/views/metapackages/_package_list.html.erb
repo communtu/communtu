@@ -34,7 +34,7 @@
         <%if ! mc.package.description.empty? %>
 		   <tr>
 			<td colspan="2" class="<%= css+"noborder" %>">
-				<%= mc.package.description[0,100]+(mc.package.description.length<100 ? "" : " ...") %></td>
+				<%= mc.package.description[0,170]+(mc.package.description.length<170 ? "" : " ...") %></td>
 		  </tr>
 	    <% end %>
 		<% if mc.package.class == Package %>

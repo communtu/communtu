@@ -119,7 +119,7 @@ msgstr ""
 msgid "Neues Bündel"
 msgstr ""
 #: controller_metapackages_10
-msgid "Bündel geändert. Es dauert ein paar Minuten, bis die Änderungen im zugehörigen Metapaket verfügbar sind. "
+msgid "Bündel geändert. Es dauert ein paar Minuten, bis die Anderungen im zugehörigen Metapaket verfügbar sind. "
 msgstr ""
 #: controller_metapackages_11
 msgid "Konnte Paket nicht aus Bündel entfernen."
@@ -155,7 +155,7 @@ msgstr ""
 msgid "Es muss eine Version angegeben werden (z.B. 0.1)<br>"
 msgstr ""
 #: controller_metapackages_8
-msgid "Bei Änderungen muss die Version größer werden<br>"
+msgid "Bei Anderungen muss die Version größer werden<br>"
 msgstr ""
 #: controller_metapackages_9
 msgid "Die Beschreibung darf nicht leer sein<br>"
@@ -173,19 +173,19 @@ msgstr ""
 msgid "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
 msgstr ""
 #: controller_passwords_1
-msgid "Ein Link zum Ändern des Passworts wurde an deine Email-Adresse geschickt."
+msgid "Ein Link zum Andern des Passworts wurde an deine Email-Adresse geschickt."
 msgstr ""
 #: controller_passwords_10
-msgid "Ungültiger Änderungscode. Bitte den Code prüfen und nochmals versuchen. (Vielleicht hat dein Email-Programm einen Zeilenumbruch eingefügt?)"
+msgid "Ungültiger Anderungscode. Bitte den Code prüfen und nochmals versuchen. (Vielleicht hat dein Email-Programm einen Zeilenumbruch eingefügt?)"
 msgstr ""
 #: controller_passwords_2
 msgid "Konnte keinen Benutzer mit dieser Email-Adresse finden."
 msgstr ""
 #: controller_passwords_3
-msgid "Ungültiger Änderungscode eingegeben."
+msgid "Ungültiger Anderungscode eingegeben."
 msgstr ""
 #: controller_passwords_4
-msgid "Ungültiger Änderungscode. Bitte den Code prüfen und nochmals versuchen. (Vielleicht hat dein Email-Programm einen Zeilenumbruch eingefügt?)"
+msgid "Ungültiger Anderungscode. Bitte den Code prüfen und nochmals versuchen. (Vielleicht hat dein Email-Programm einen Zeilenumbruch eingefügt?)"
 msgstr ""
 #: controller_passwords_5
 msgid "Passwort darf nicht leer sein."
@@ -200,7 +200,7 @@ msgstr ""
 msgid "Passwörter stimmen nicht überein."
 msgstr ""
 #: controller_passwords_9
-msgid "Ungültiger Änderungscode eingegeben."
+msgid "Ungültiger Anderungscode eingegeben."
 msgstr ""
 #: controller_profiles_0
 msgid "Installation von Bündeln"
@@ -563,13 +563,16 @@ msgstr ""
 msgid "Die Liste der auf deinem Computer installierten Pakete kannst du zum Beispiel mit"
 msgstr ""
 #: view_cart_new_from_list_3
-msgid "herausfinden. (Dazu muss das Paket "
+msgid "herausfinden. (Dazu muss das Paket {{debfoster}} installiert sein. Die erzeugte Liste enthält nur eine minimale Liste von (Meta-)Paketen, die notwendig ist, um deine Installation komplett wiederherzustellen.)"
 msgstr ""
 #: view_cart_new_from_list_4
 msgid "Datei, die die Paketliste enthält, auswählen:"
 msgstr ""
 #: view_cart_new_from_list_5
 msgid "Erstellen"
+msgstr ""
+#: view_cart_new_from_list_tip
+msgid "Tipp: eine große Liste kannst du auch zunächst mit einem Editor thematisch sortieren und die resultierenden Teillisten einzeln hier hochladen. Die entstehenden Bündel kannst du wiederum zu einem Bündel zusammenfassen. Dadurch entsteht ein besser strukturiertes Bündel."
 msgstr ""
 #: view_cart_update_0
 msgid "Bündel-Informationen anpassen"
@@ -902,7 +905,7 @@ msgstr ""
 msgid "Danach kannst du mit "Speichern und feiner Auswählen" noch einen detaillierteren Überblick über die installierten Bündel und Programme bekommen und die Auswahl auch noch verändern. Falls du dazu keine Lust oder Zeit hast, klicke einfach auf "Speichern". Dies führt dich zur Installations-Seite. Dort findest du einen Installationsknopf, mit dem die Communtu-Nachinstallation gestartet werden kann. Es dauert etwas, bis die Programme automatisch aus dem Internet geladen und installiert werden. Fertig ist der vielseitig einsetzbare Ubuntu-PC!"
 msgstr ""
 #: view_home_about_9
-msgid "Wichtig: Man braucht schon eine schnelle Internet-Verbindung. Für Ubuntu-Nutzer, die noch ein Modem oder Ähnliches nutzen, planen wir die Möglichkeit, automatisch CDs und DVDs zu erstellen."
+msgid "Wichtig: Man braucht schon eine schnelle Internet-Verbindung. Für Ubuntu-Nutzer, die noch ein Modem oder Ahnliches nutzen, planen wir die Möglichkeit, automatisch CDs und DVDs zu erstellen."
 msgstr ""
 #: view_home_auth_error_0
 msgid "Authentifizierungs-Fehler"

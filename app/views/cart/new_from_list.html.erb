@@ -6,10 +6,12 @@
 <pre>
 debfoster -sn | tail -n +2 | tr ' ' '\n' > packages.list
 </pre>
-<%=t(:view_cart_new_from_list_3)%>
+<%=t(:view_cart_new_from_list_3,{:debfoster=>package_link("debfoster")})%>
 
 <%= form_tag({:controller => :cart, :id => :current_user.id, :action => :create_from_list}, :multipart => true)%>
 <p><%=t(:view_cart_new_from_list_4)%></p>
 <p><%= file_field(:datei, :attachment) %></p>
 <p><%= submit_tag(t(:view_cart_new_from_list_5)) %></p>
 </form>
+
+<%=t(:view_cart_new_from_list_tip)%>
