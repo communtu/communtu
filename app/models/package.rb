@@ -322,9 +322,9 @@ class Package < BasePackage
           pd.assign_recommends(parse_dependencies(package["Recommends"]))
           pd.assign_suggests(parse_dependencies(package["Suggests"]))
           pd.assign_conflicts(parse_unversioned_dependencies(package["Conflicts"]))
-        else raise I18n.t(:model_package_9)
+        else raise I18n.t(:model_package_9,{:repo_name => repository.name, :package_name => p.name})
         end
-      else raise I18n.t(:model_package_10)
+      else raise I18n.t(:model_package_10,{:repo_name => repository.name, :package_name => name})
       end
     end
   

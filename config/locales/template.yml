@@ -80,7 +80,7 @@ de:
   controller_sessions_6: Dein Benutzerkonto wurde noch nicht aktiviert. Der Aktivierungscode wurde dir per Email zugeschickt.
   controller_sessions_7: "Dein Benutzerkonto wurde deaktiviert oder gelöscht."
   controller_suggestion_0: "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
-  controller_suggestion_10: "# Bündel: "
+  controller_suggestion_10: "Bündel"
   controller_suggestion_11: "Paketquellen hinzufügen"
   controller_suggestion_12: "Folgende Paketquellen werden hinzugefügt"
   controller_suggestion_15: Pakete installieren
@@ -130,7 +130,7 @@ de:
   model_mailer_4: "Dein Passwort wurde zurückgesetzt."
   model_message_0: Bitte einen Betreff angeben
   model_package_0: OpenSource
-  model_package_10: "When syncing repository #{repository.name}, could not find package #{name}"
+  model_package_10: "Bei der Synchronisation des Repositories {{repo_name}} konnte das Paket {{package_name}} nicht gefunden werden."
   model_package_11: Konnte keine URL feststellen
   model_package_12: "Inhalt von {{file}} entspricht nicht Repository-Syntax"
   model_package_1: Commercial
@@ -140,7 +140,7 @@ de:
   model_package_5: Third-Party
   model_package_6: <br> hat nicht das richtige Format
   model_package_7: "Konnte URL für {{repo}} nicht feststellen"
-  model_package_9: "When syncing repository, could not find PackageDistr for #{p.name} in repository #{repository.name}"
+  model_package_9: "Bei der Synchronisation des Repositories {{repo_name}} konnte kein PackageDistr-Eintrag für das Paket {{package_name}} gefunden werden."
   model_user_meta_tabz_0: "Meine Bündel"
   model_user_meta_tabz_1: "Alle veröffentlichten Bündel"
   model_user_meta_tabz_2: Ubuntu-Pakete
@@ -426,7 +426,7 @@ de:
     Allerdings ist das nicht bei allen Derivaten gleich sinnvoll."
   view_home_derivatives_50: " - mit Fluxbox und verschiedenen Netzwerk-Sicherheitswerkzeugen ."
   view_home_derivatives_51: " - Installation von Programmen und Versionen, die nicht über die offiziellen Repositories erhältlich sind."
-  view_home_derivatives_52: " - eine Automatix für die Ultimate Edition."
+  view_home_derivatives_52: " - eine Art Automatix für die Ultimate Edition."
   view_home_derivatives_53: " - erlaubt schnellere Installation, da nur die aktuellsten Pakete heruntergeladen werden."
   view_home_derivatives_54: 
   view_home_derivatives_55: " - Mediacenter."
