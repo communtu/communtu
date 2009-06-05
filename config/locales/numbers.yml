@@ -61,53 +61,53 @@
   # Used in distance_of_time_in_words(), distance_of_time_in_words_to_now(), time_ago_in_words()
   datetime:
     distance_in_words:
-      half_a_minute: "half a minute"
+      half_a_minute: "eine halbe Minute"
       less_than_x_seconds:
-        one: "less than 1 second"
-        other: "less than {{count}} seconds"
+        one: "weniger als 1 Sekunde"
+        other: "weniger als {{count}} Sekunden"
       x_seconds:
-        one: "1 second"
-        other: "{{count}} seconds"
+        one: "1 Sekunde"
+        other: "{{count}} Sekunden"
       less_than_x_minutes:
-        one: "less than a minute"
-        other: "less than {{count}} minutes"
+        one: "weniger als ein Minute"
+        other: "weniger als {{count}} Minuten"
       x_minutes:
-        one: "1 minute"
-        other: "{{count}} minutes"
-      about_x_hours:
-        one: "about 1 hour"
-        other: "about {{count}} hours"
+        one: "1 Minute"
+        other: "{{count}} Minuten"
+      ungefähr_x_hours:
+        one: "ungefähr 1 Stunde"
+        other: "ungefähr {{count}} Stunden"
       x_days:
-        one: "1 day"
-        other: "{{count}} days"
+        one: "1 Tag"
+        other: "{{count}} Tage"
       about_x_months:
-        one: "about 1 month"
-        other: "about {{count}} months"
+        one: "ungefähr 1 Monat"
+        other: "ungefähr {{count}} Monate"
       x_months:
-        one: "1 month"
-        other: "{{count}} months"
-      about_x_years:
-        one: "about 1 year"
-        other: "about {{count}} years"
+        one: "1 Monat"
+        other: "{{count}} Monate"
+      about_x_Jahrs:
+        one: "ungefähr 1 Jahr"
+        other: "ungefähr {{count}} Jahre"
       over_x_years:
-        one: "over 1 year"
-        other: "over {{count}} years"
+        one: "mehr als 1 Jahr"
+        other: "mehr als {{count}} Jahre"
     prompts:
-      year: "Year"
-      month: "Month"
-      day: "Day"
-      hour: "Hour"
+      year: "Jahr"
+      month: "Monat"
+      day: "Tag"
+      hour: "Stunde"
       minute: "Minute"
-      second: "Seconds"
+      second: "Sekunden"
 
   activerecord:
     errors:
       template:
         header:
-          one: "1 error prohibited this {{model}} from being saved"
-          other: "{{count}} errors prohibited this {{model}} from being saved"
+          one: "1 Fehler verhinderte das Abspeichern dieses {{model}}"
+          other: "{{count}} Fehler verhinderten das Abspeichern dieses {{model}}"
         # The variable :count is also available
-        body: "There were problems with the following fields:"
+        body: "Es gab Probleme mit folgenden Feldern:"
 
 "en":
   number:
