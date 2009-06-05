@@ -66,7 +66,6 @@ Rails::Initializer.run do |config|
 
 config.action_mailer.delivery_method = :smtp
 require 'german_date_names'
-require 'i18n'
 
 # The internationalization framework can be changed
 # to have another default locale (standard is :en) or more load paths.
