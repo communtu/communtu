@@ -1,0 +1,15 @@
+<% @options = params.merge(:controller => "rating", :action => "rate", :id => metapackage.id) %>
+<% @convert = %w[one two three four five] %>
+<ul class="star-rating">
+	<% unless metapackage.rated_by_user?(current_user) %>
+    <li class="current-rating" style="width:<%= metapackage.rating*25 %>px">
+      <% 1.upto(5) do |x| -%>
+  	    <% rate_options = @options.merge(:rating => x) -%>
+  	    <li><%= link_to_remote "#{x}", { :url => url_for( rate_options ), :loading => "Element.show('t-#{metapackage.id}-indicator')" }, { :href => url_for( rate_options ), :class => "#{@convert[x-1]}-stars", :title => "#{x} #{t(:view_rating_rating_rate)}" } -%>
+      <%end -%>
+  <% else %>
+    <li class="current-rating-rated" style="width:<%= metapackage.rating*25 %>px">
+  <% end %>
+ 
+  </li>
+</ul>

@@ -546,37 +546,34 @@ li.cartlist {
 		margin-left: 	5px;
 	}
 
-    /*             styles for the star rater                */    
+    /*             styles for the star rater               
+     * Credits: http://www.komodomedia.com/blog/2006/01/css-star-rating-part-deux/# (last visit: June 5th, 2009) 
+     * */
+	.star-rating-foreign{
+        list-style:none;
+        margin: 0px;
+        padding:0px;
+        width: 150px;
+        height: 30px;
+        position: relative;
+        background: url(/images/star2.gif) top left repeat-x;        
+    }
+	
+	.star-ratings-block {
+		width: 125px;
+		float: right;
+	}
+	   
     .star-rating{
         list-style:none;
         margin: 0px;
         padding:0px;
-        width: 150px;
-        height: 30px;
+        width: 125px;
+        height: 25px;
         position: relative;
-        background: url(/images/star_rating.gif) top left repeat-x;        
+        background: url(/images/star_trans.gif) top left repeat-x;        
     }
-    .star-rating-packageList0{
-        list-style:none;
-        margin: 0px;
-        padding:0px;
-        width: 150px;
-        height: 30px;
-        position: relative;
-        background: url(/images/star_rating.gif) top left repeat-x;        
-	    background-color: #FFF8D2;
-    }
-    .star-rating-packageList1{
-        list-style:none;
-        margin: 0px;
-        padding:0px;
-        width: 150px;
-        height: 30px;
-        position: relative;
-        background: url(/images/star_rating.gif) top left repeat-x;        
-	    background-color: #FFFFFF;
-    }
-
+	
     .star-rating li{
         padding:0px;
         margin:0px;
@@ -587,7 +584,7 @@ li.cartlist {
     .star-rating li a{
         display:block;
         width:30px;
-        height: 30px;
+        height: 25px;
         text-decoration: none;
         text-indent: -9000px;
         z-index: 20;
@@ -595,7 +592,7 @@ li.cartlist {
         padding: 0px;
     }
     .star-rating li a:hover{
-        background: url(/images/star_rating.gif) left center;
+        background: url(/images/star_trans.gif) left center;
         z-index: 2;
         left: 0px;
         border:none;
@@ -604,38 +601,47 @@ li.cartlist {
         left: 0px;
     }
     .star-rating a.one-star:hover{
-        width:30px;
+        width:25px;
     }
     .star-rating a.two-stars{
-        left:30px;
+        left:25px;
     }
     .star-rating a.two-stars:hover{
-        width: 60px;
+        width: 50px;
     }
     .star-rating a.three-stars{
-        left: 60px;
+        left: 50px;
     }
     .star-rating a.three-stars:hover{
-        width: 90px;
+        width: 75px;
     }
     .star-rating a.four-stars{
-        left: 90px;
+        left: 75px;
     }    
     .star-rating a.four-stars:hover{
-        width: 120px;
+        width: 100px;
     }
     .star-rating a.five-stars{
-        left: 120px;
+        left: 100px;
     }
     .star-rating a.five-stars:hover{
-        width: 150px;
+        width: 125px;
     }
     .star-rating li.current-rating{
-        background: url(/images/star_rating.gif) left bottom;
+        background: url(/images/star_trans.gif) left bottom;
         position: absolute;
-        height: 30px;
+        height: 25px;
         display: block;
         text-indent: -9000px;
         z-index: 1;
     }
+	
+	.star-rating li.current-rating-rated {
+	  position: absolute;
+	  background: url(/images/stars-rated.gif) repeat-x left bottom;
+	  height: 25px;
+	  display: block;
+	  text-indent: -9000px;
+	  z-index: 1;
+	}
 

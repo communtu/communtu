@@ -89,5 +89,13 @@ module ApplicationHelper
   def new_message?
     !current_user.received_messages.find(:first, :conditions=>["is_read = ?", false]).nil?
   end
-
+  
+  def received_messages?
+    !current_user.received_messages.find(:first).nil?
+  end
+  
+  def sent_messages?
+    !current_user.sent_messages.find(:first).nil?
+  end
+  
 end

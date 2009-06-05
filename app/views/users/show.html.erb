@@ -2,7 +2,7 @@
 
 <%= render_flash %>
 <div class="inner1">
-	<p><%=t(:view_users_show_1)%><%= @user.login %></p>
+	<p><%=t(:view_users_show_1)%><%= @user.login %> <%=link_to (image_tag("message.png", :alt=>t(:view_metapackages_show_1),:title=>t(:view_metapackages_show_2), :mouseover=>"message_rollover.png",:border=>"0" ), {:controller=>"sent", :action=>"new", :mail_to=>@user})%> </p>
     <p><%=t(:view_users_show_2)%><%= @user.created_at.month %>/<%= @user.created_at.year %>&nbsp;<font size="-3"><%=t(:view_users_show_3)%></font>
     <br /><%=t(:view_users_show_4)%><%= @user.updated_at.month %>/<%= @user.updated_at.year %>
     </p>

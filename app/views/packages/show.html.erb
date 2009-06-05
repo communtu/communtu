@@ -19,7 +19,7 @@
 <% if !@package.stars.nil? %>
      <td><b><%=t(:view_packages_show_8)%></b></td> 	
      <td><%= number_with_precision(@package.stars, 1) %><%=t(:view_packages_show_9)%></td>
-     <td nowrap class='star-rating' style='width:<%= (@package.stars * 18).to_i %>px; '></td>
+     <td nowrap class='star-rating-foreign' style='width:<%= (@package.stars * 18).to_i %>px; '></td>
 <% end %>
 </tr>
 <tr>

@@ -716,7 +716,8 @@ de:
   view_passwords_new_1: "    Mit welcher Email-Adresse hast du das Benutzerkonto angelegt?"
   view_passwords_new_2: "Passwort zurücksetzen"
   view_rating_show_title_no_ratings: noch keine User Bewertung
-  view_rating_show_title_got_ratings: von 5
+  view_rating_show_title_got_ratings: von 5 Sternen
+  view_rating_rating_rate: von 5 Sternen vergeben
   view_repositories_edit_0: Repository bearbeiten
   view_repositories_edit_1: "Distribution:"
   view_repositories_edit_2: "Lizenztyp:"

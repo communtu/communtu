@@ -11,6 +11,8 @@ class Metapackage < BasePackage
   belongs_to :category
   belongs_to :user
   
+  acts_as_rateable
+  
   validates_presence_of :name, :license_type, :user, :category # , :version, :description
   
   @state = { :pending => 0, :published => 1, :rejected => 2 }

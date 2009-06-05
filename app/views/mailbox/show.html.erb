@@ -1,28 +1,29 @@
 <h2><%=t(:view_mailbox_show_0) %></h2>
 
-
-
-<table>
-  <tr>
-    <th><%=t(:view_mailbox_show_1)%></th>
-    <th><%=t(:view_mailbox_show_2)%></th>
-    <th><%=t(:view_mailbox_show_3)%></th>
-  </tr>
-
-  <% for message in @messages %>
-    <tr>
-      <td><%=h message.author.login %></td>
-	  <!-- New Messages are bold --> 
-	  <% if !message.is_read %>
-      	<td><b><%= link_to h(message.subject), message_path(message) %></b></td>
-	  <% else %>
-	    <td><%= link_to h(message.subject), message_path(message) %></td>
+<% if received_messages? %>
+	<table>
+	  <tr>
+	    <th><%=t(:view_mailbox_show_1)%></th>
+	    <th><%=t(:view_mailbox_show_2)%></th>
+	    <th><%=t(:view_mailbox_show_3)%></th>
+	  </tr>
+	
+	  <% for message in @messages %>
+	    <tr>
+	      <td><%= link_to h(message.author.login), user_path(message.author) %></td>
+		  <!-- New Messages are bold --> 
+		  <% if !message.is_read %>
+	      	<td><b><%= link_to h(message.subject), message_path(message) %></b></td>
+		  <% else %>
+		    <td><%= link_to h(message.subject), message_path(message) %></td>
+		  <% end %>
+		  <td><%= change_date_time(message.created_at) %></td>
+	    </tr>
 	  <% end %>
-	  <td><%= change_date_time(message.created_at) %></td>
-    </tr>
-  <% end %>
-</table>
-
+	</table>
+<% else %>
+	<p><%=t(:view_mailbox_show_5)%></p>
+<% end %>
 
 
 <%= link_to t(:view_mailbox_show_4), user_path(current_user.id)%>

@@ -7,6 +7,7 @@
     <th valign="middle" class="packageList" align="left"><%=t(:view_metapackages__metalist_1)%></th>
     <th valign="middle" class="packageList" align="left"><%=t(:view_metapackages__metalist_2)%></th>
     <th valign="middle" class="packageList" align="left"><%=t(:view_metapackages__metalist_3)%></th>
+	<th valign="middle" class="packageList" align="left"><%=t(:view_metapackages__metalist_10)%></th>
     <th valign="middle" class="packageList" align="left"><%=t(:view_metapackages__metalist_4)%></th>
     <th valign="middle" class="packageList" align="left"></th>
   <th valign="middle" class="packageList" align="left"></th>
@@ -28,6 +29,19 @@
 	            <%= image_tag("no.png", :size => "22x22", :border => "0", :title => t(:view_metapackages__metalist_10), :alt => t(:view_metapackages__metalist_10)) %>
 	        <% end %>
 	    </td>
+		<td class="<%= css %>" valign="middle">
+			<% if metapackage.rated_by_user?(current_user)%>
+				<!-- STARS if not voted yet -->
+				<div class="star-ratings-block" id="star-ratings-block-<%=h metapackage.id %>">
+	            	<%= render :partial => "rating/show", :locals => { :metapackage => metapackage } %>
+	        	</div>
+			<%else%>
+				<!-- allready voted -->
+				<div class="star-ratings-block" id="star-ratings-block-<%=h metapackage.id %>">
+            		<%= render :partial => "rating/rating", :locals => { :metapackage => metapackage } %>
+        		</div>
+			<%end%>
+		</td>
 		<td class="<%= css %>" valign="middle" align="middle">
 			<%= link_to image_tag("/images/apt.png", :size => "22x22", :border => "0", :title => t(:view_metapackages__metalist_12), :alt => t(:view_metapackages__metalist_13)), user_path(current_user) + "/suggestion/quick_install/" + metapackage.id.to_s%>		
 			<%= link_to image_tag("/images/install.png", :size => "22x22", :border => "0", :title => t(:view_metapackages__metalist_14), :alt => t(:view_metapackages__metalist_13)), "apt://#{metapackage.debian_name}" %>		
