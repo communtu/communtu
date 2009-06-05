@@ -861,7 +861,7 @@ de:
   view_user_profiles_new_4: Anlegen
   view_user_profiles_new_5: "Zurück"
   view_user_profiles__profile_data_0: "Installation vorbereiten: Grunddaten eingeben"
-  view_user_profiles__profile_data_10: " Nur Ubuntuquellen zulassen (\"main/restricted\", sehr sicher)"
+  view_user_profiles__profile_data_10: " Nur Ubuntuquellen zulassen (\"main/restricted\", sehr sicher: Sicherheits-Updates von Ubuntu)"
   view_user_profiles__profile_data_11: " Communityquellen zulassen (\"universe/multiverse\", auch sicher, mehr Programme/Komfort) "
   view_user_profiles__profile_data_12: " Alle Quellen zulassen (etwas unsicherer: <a href=\"http://wiki.ubuntuusers.de/Fremdquellen\">Fremdpakete</a> können das System gefährden, aber noch mehr Programme/Komfort: "
   view_user_profiles__profile_data_13: "Hier kannst du auswählen, welche Lizenzen du zulassen willst"
