@@ -25,7 +25,7 @@ class MessagesController < ApplicationController
     @original = current_user.received_messages.find(params[:id])
     
     subject = @original.subject.sub(/^(Fwd: )?/, "Fwd: ")
-    body = sprintf(t(:controller_messages_0), @original.author.login, change_date_time(@original.created_at))
+    body = t(:controller_messages_0, {:user=>@original.author.login, :datum=>change_date_time(@original.created_at)})
     body += @original.body.gsub(/^/, "> ")
     @message = current_user.sent_messages.build(:subject => subject, :body => body)
     render :template => "sent/new"

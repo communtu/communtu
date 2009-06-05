@@ -32,7 +32,7 @@ de:
   controller_home_2: Wir werden dich per E-Mail benachrichtigen.
   controller_home_3: Das sieht nicht nach einer Liste von Ubuntu-Paketen aus... <br />Die Paketliste muss einen Paketnamen pro Zeile enthalten
   controller_home_4: Es muss eine Datei mit der Paketliste (ein Paketname pro Zeile) angegeben werden
-  controller_messages_0: "Ursprüngliche Nachricht von %s am %s  \\n  \\n"
+  controller_messages_0: "Ursprüngliche Nachricht von {{user}} am {{datum}}  \\n  \\n"
   controller_metapackages_0: "Bündel"
   controller_metapackages_10: "Bündel geändert. Es dauert ein paar Minuten, bis die Anderungen im zugehörigen Metapaket verfügbar sind. "
   controller_metapackages_11: "Konnte Paket nicht aus Bündel entfernen."
@@ -715,6 +715,8 @@ de:
   view_passwords_new_0: Passwort vergessen
   view_passwords_new_1: "    Mit welcher Email-Adresse hast du das Benutzerkonto angelegt?"
   view_passwords_new_2: "Passwort zurücksetzen"
+  view_rating_show_title_no_ratings: noch keine User Bewertung
+  view_rating_show_title_got_ratings: von 5
   view_repositories_edit_0: Repository bearbeiten
   view_repositories_edit_1: "Distribution:"
   view_repositories_edit_2: "Lizenztyp:"
