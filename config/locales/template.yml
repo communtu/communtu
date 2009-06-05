@@ -32,7 +32,7 @@ de:
   controller_home_2: Wir werden dich per E-Mail benachrichtigen.
   controller_home_3: Das sieht nicht nach einer Liste von Ubuntu-Paketen aus... <br />Die Paketliste muss einen Paketnamen pro Zeile enthalten
   controller_home_4: Es muss eine Datei mit der Paketliste (ein Paketname pro Zeile) angegeben werden
-  controller_messages_0: "Ursprüngliche Nachricht von {{user}} am {{datum}}  \\n  \\n"
+  controller_messages_0: "Ursprüngliche Nachricht von {{user}} am {{datum}}  \n  \n"
   controller_metapackages_0: "Bündel"
   controller_metapackages_10: "Bündel geändert. Es dauert ein paar Minuten, bis die Anderungen im zugehörigen Metapaket verfügbar sind. "
   controller_metapackages_11: "Konnte Paket nicht aus Bündel entfernen."
