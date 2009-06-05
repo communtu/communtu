@@ -16,7 +16,7 @@ div.main {
 	margin: 0 auto;
 	padding: 0 30px 20px 10px;
 	position: relative;
-	width: 900px;
+	width: 1000px;
 	min-height: 600px;
 }
 
@@ -59,7 +59,7 @@ div.content{
 	border-right-style: solid;
 	border-right-width: 1px;
 	-moz-border-radius: 10px;
-	width: 700px;
+	width: 800px;
 	height: 100%;
 	min-height: 400px;
 	
@@ -550,13 +550,11 @@ li.cartlist {
      * Credits: http://www.komodomedia.com/blog/2006/01/css-star-rating-part-deux/# (last visit: June 5th, 2009) 
      * */
 	.star-rating-foreign{
-        list-style:none;
         margin: 0px;
         padding:0px;
-        width: 150px;
+        width: 125px;
         height: 30px;
-        position: relative;
-        background: url(/images/star2.gif) top left repeat-x;        
+        background: url(/images/star3.gif) top left repeat-x;        
     }
 	
 	.star-ratings-block {

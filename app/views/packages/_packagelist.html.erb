@@ -37,7 +37,7 @@
   		<%= link_to(package.name, package_path(package), :title => t(:view_packages__packagelist_3)) %></td>
 	<td class="<%= css %>" align="middle" valign="middle">
      <% if !package.stars.nil? %>
-        <div class='star-rating-foreign' style='width:<%= (package.stars * 18).to_i %>px; '> </div>
+        <div class='star-rating-foreign' style='width:<%= (package.stars * 25).to_i %>px; '> </div>
      <% end %>
 	</td>
     <td class="<%= css %>" width="80" align="right">
