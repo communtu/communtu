@@ -114,7 +114,7 @@ class Deb < ActiveRecord::Base
             f.puts "Architectures: i386 amd64"
             f.puts "Components: "+Metapackage.components.flatten.join(" ")
             f.puts "Description: metapackages generated from communtu.de"
-            f.puts "#SignWith: yes"
+            f.puts "SignWith: #{COMMUNTU_KEY}"
             f.puts 
           end
         end
