@@ -17,7 +17,7 @@
     IFS="*"
     for key in $KEYS; do
     	set +e
-        wget -q $key -O- | apt-key add -
+        sudo apt-key adv --recv-keys --keyserver $KEYSERVER $key
     	if [ "$?" != "0" ]; then
     		echo "Konnte Schlüssel nicht installieren: "$key
     		exit 1

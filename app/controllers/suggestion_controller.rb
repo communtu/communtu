@@ -221,7 +221,7 @@ class SuggestionController < ApplicationController
     sources.each do |repository|
       if not repository.gpgkey.nil?
         if not repository.gpgkey.empty?
-          script += "wget -q " + repository.gpgkey + " -O- | sudo apt-key add -\n"
+          script += "sudo #{Deb::APT_KEY_COMMAND} #{Deb::KEYSERVER} #{repository.gpgkey}\n"
         end
       end   
     end
@@ -267,7 +267,7 @@ class SuggestionController < ApplicationController
             out += "if [ \"$?\" != \"0\" ]; then\n" +
                 "\tsudo sh -c \"echo $SOURCE >> $APTLIST\"\n"
             if not repository.gpgkey.nil? && (not repository.gpgkey.empty?)
-                out += "wget " + repository.gpgkey + " | #{sudo} apt-key add -\n"
+                out += "#{sudo} #{Deb::APT_KEY_COMMAND} #{Deb::KEYSERVER} #{repository.gpgkey} \n"
             end
             out += "fi\n\n"
             package_sources << out

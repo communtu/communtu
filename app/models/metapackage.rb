@@ -236,7 +236,7 @@ class Metapackage < BasePackage
       # todo: add key for communtu package server
       repos1 = repos.to_a.sort {|r1,r2| r1.url <=> r2.url}
       Metapackage.components.flatten.each do |component|
-        repos1 << Repository.new(:url => "deb http://packages.communtu.de "+codename, :subtype => component)
+        repos1 << Repository.new(:url => "deb #{Deb::COMMUNTU_REPO} "+codename, :subtype => component, :gpgkey => Deb::COMMUNTU_KEY)
       end
       # get urls and keys
       urls = []
@@ -257,6 +257,7 @@ class Metapackage < BasePackage
       f=File.open("preinst","a")
       f.puts '    KEYS="'+keys.select{|k| !k.empty?}.join('*')+'"'
       f.puts '    SOURCESKEYS="'+urls_keys.join('*')+'"'
+      f.puts '    KEYSERVER="'+Deb::KEYSERVER+'"'
       f.close
       # ... selection of sources according to sources.list
       safe_system "cat ../../../preinst2 >> preinst"
@@ -271,8 +272,7 @@ class Metapackage < BasePackage
 
     # build deb package
     Dir.chdir '..'
-    safe_system "dpkg-buildpackage -uc -us -rfakeroot >> #{RAILS_ROOT}/log/debianize.log 2>&1" 
-#    safe_system "dpkg-buildpackage -sgpg -kD66AFBC0 -rfakeroot >> #{RAILS_ROOT}/log/debianize.log 2>&1"
+    safe_system "dpkg-buildpackage -sgpg -k#{Deb::COMMUNTU_KEY} -rfakeroot >> #{RAILS_ROOT}/log/debianize.log 2>&1"
     Dir.chdir '../../..'
     # return filename of the newly created package
     return Dir.glob("debs/#{name}/#{name}_#{version}*deb")[0]
