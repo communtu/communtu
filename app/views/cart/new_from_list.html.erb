@@ -4,7 +4,7 @@
 
 <%=t(:view_cart_new_from_list_2)%>
 <pre>
-debfoster -sn | tail -n +2 | tr ' ' '\n' > packages.list
+debfoster -sn | tail -n +2 | tr ' ' '\n' | sort -u > packages.list
 </pre>
 <%=t(:view_cart_new_from_list_3,{:debfoster=>package_link("debfoster")})%>
 
