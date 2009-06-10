@@ -8,7 +8,7 @@ module TabzHelper
         result << tag("ul", {:class => "tabz"}, true)
         
         n = 0
-        m = 2
+        m = 3
         tabbing.tabs.each do |tab|
             if current == tabbing.tabs[n]
               result << tag("li", {:class => "tabz_select"}, true)
