@@ -10,11 +10,19 @@ module TabzHelper
         n = 0
         m = 3
         tabbing.tabs.each do |tab|
+            go_title = tab.title
             if current == tabbing.tabs[n]
               result << tag("li", {:class => "tabz_select"}, true)
               result << link_to(tab.title, build_url(tabbing, n), {})
             result << "</li>\n"
-            elsif n <= m
+            elsif n == 0
+              result << tag("li", {:class => "tabz"}, true)
+              result << link_to(tab.title, build_url(tabbing, n), {})
+            result << "</li>\n"
+            #elsif go_title != tab.title[n]
+            # p = u
+            elsif n <= m and go_title != "Meine Bündel"
+            #  result << go_title
               result << tag("li", {:class => "tabz"}, true)
               result << link_to(tab.title, build_url(tabbing, n), {})
             result << "</li>\n"
