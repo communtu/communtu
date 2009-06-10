@@ -8,19 +8,24 @@ module TabzHelper
         result << tag("ul", {:class => "tabz"}, true)
         
         n = 0
+        m = 2
         tabbing.tabs.each do |tab|
             if current == tabbing.tabs[n]
               result << tag("li", {:class => "tabz_select"}, true)
-            else
-              result << tag("li", {:class => "tabz"}, true)
-            end
-            result << link_to(tab.title, build_url(tabbing, n), {})
+              result << link_to(tab.title, build_url(tabbing, n), {})
             result << "</li>\n"
-            
+            elsif n <= m
+              result << tag("li", {:class => "tabz"}, true)
+              result << link_to(tab.title, build_url(tabbing, n), {})
+            result << "</li>\n"
+            else
+              #result << tag("li", {:class => "tabz"}, true)
+            end
+           
             n = n + 1
-        
+     
         end
-        
+
         result << "</ul></div>\n"
         result << tag("div", {:class => "tabz_content", :id => "tabz_content"}, true)
         current.prepare_to_show(user_data)
