@@ -257,8 +257,8 @@ class Metapackage < BasePackage
       safe_system "cp ../../../preinst1 preinst"
       # ... handling of new sources and keys ...
       f=File.open("preinst","a")
-      f.puts '    KEYS="'+keys.select{|k| !k.empty?}.join('*')+'"'
-      f.puts '    SOURCESKEYS="'+urls_keys.join('*')+'"'
+      f.puts '    KEYS="'+keys.select{|k| !k.empty?}.join('§')+'"'
+      f.puts '    SOURCESKEYS="'+urls_keys.join('§')+'"'
       f.puts '    KEYSERVER="'+Deb::KEYSERVER+'"'
       f.close
       # ... selection of sources according to sources.list
