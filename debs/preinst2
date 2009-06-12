@@ -1,0 +1,25 @@
+    APTLIST="/etc/apt/sources.list"
+    APTALTLISTS="/etc/apt/sources.list.d/*.list"
+
+    IFS="§"
+    NEWSOURCES=""
+    NEWSOURCESKEYS=""
+    for sourcekey in $SOURCESKEYS; do
+        # split string into pieces
+        source=$( echo $sourcekey| cut  -d "+" -f 1 )
+        key=$( echo $sourcekey| cut  -d "+" -f 2 )
+    	URL=$( echo $source | cut -d " " -f 2 )
+    	DISTRIBUTION=$( echo $source | cut -d " " -f 3 )
+    	COMPONENT=$( echo $source | cut -d " " -f 4-6 )
+    	set +e
+    	# is source already present?
+    	egrep -q "^[^#]*$URL.*$DISTRIBUTION([a-zA-Z-]* )*$COMPONENT($| )" $APTLIST $APTALTLISTS
+    	if [ "$?" != "0" ]; then
+    	    # if not, add it, with separator §
+            NEWSOURCES=$NEWSOURCES$source§
+            NEWSOURCESKEYS=$NEWSOURCESKEYS$source§$key§
+    	fi
+    	set -e
+    done
+    # replace separators for display to human
+    SOURCESKEYSDISP=$(echo $NEWSOURCESKEYS | tr '§' '\n')
