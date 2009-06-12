@@ -9,7 +9,11 @@
         <table>
         <tr>
 	        <td><%=t(:view_metapackages_edit_0)%></td>
-	        <td><%= f.text_field(:name, { :size => 16}) %></td>	
+	        <% if @metapackage.is_published? then %>
+              <td><%= @metapackage.name %></td>	
+            <% else %>
+              <td><%= f.text_field(:name, { :size => 16}) %></td>
+            <% end  %>
         </tr>
         <tr>
 	        <td><%=t(:view_metapackages_edit_1)%></td>
@@ -23,20 +27,23 @@
 		        <%= f.collection_select(:category_id,@categories,:id,:name)%>
 	        </td>
         </tr>
-        <% if is_admin? %>
         <tr>
 	        <td><%=t(:view_metapackages_edit_4)%></td>
-	        <td><%= f.check_box(:default_install) %></td>	
-        </tr>
+        <% if is_admin? %>
+	        <td><%= f.check_box(:default_install) %></td>
+        <% else %>
+            <td><%= if @metapackage.default_install then t(:view_metapackages__metalist_6) else t(:view_metapackages__metalist_7) end  %></td>
         <% end %>
+        </tr>
         <tr>
 	        <td valign='top'><%=t(:view_metapackages_edit_5)%></td>
 	        <td><%= f.text_area(:description, { :rows => 12, :cols => 50 } ) %></td>	
         </tr>
 
         </table>	
-	<%= render :partial => "package_list", :locals => { :metapackage => @metapackage, :editable => true } %>	
-        <div align="right"><%= submit_tag t(:view_metapackages_edit_6)%></div>
+	<%= render :partial => "package_list", :locals => { :metapackage => @metapackage, :editable => true } %>
+        <%= t(:view_metapackages_edit_gpl) %><br>
+        <%= submit_tag t(:view_metapackages_edit_6)%>
 		
 
     <% end %>

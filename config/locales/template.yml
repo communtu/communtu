@@ -49,6 +49,8 @@ de:
   controller_metapackages_7: Es muss eine Version angegeben werden (z.B. 0.1)<br>
   controller_metapackages_8: "Bei Anderungen muss die Version größer werden<br>"
   controller_metapackages_9: Die Beschreibung darf nicht leer sein<br>
+  controller_metapackages_cannot_destroy: Veröffentlichte Bündel können nicht gelöscht werden.
+  controller_metapackages_no_renaming: Veröffentlichte Bündel können nicht umbenannt werden.
   controller_packages_0: Pakete
   controller_packages_1: Paket erzeugt.
   controller_packages_2: Paket aktualisiert.
@@ -559,12 +561,13 @@ de:
   view_metapackages_add_comment_2: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
   view_metapackages_edit_0: "Name:"
   view_metapackages_edit_1: "Version:"
-  view_metapackages_edit_2: "Bitte Versionen => 1.0 nur für ausgereifte Bündel verwenden."
+  view_metapackages_edit_2: "Bitte Versionen => 1.0 nur für ausgereifte Bündel verwenden. Versionsnummern müssen stets ansteigen. 0.10 ist höher als 0.9."
   view_metapackages_edit_3: "Kategorie:"
   view_metapackages_edit_4: "Standardmäßig installieren:"
   view_metapackages_edit_5: "Beschreibung:"
   view_metapackages_edit_6: Speichern
   view_metapackages_edit_7: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
+  view_metapackages_edit_gpl: "Ich stimme zu, die Bündel Information unter der <a href=\"http://www.gnu.de/documents/gpl.de.html\">GNU General public license</a> (Version 2.0 oder höher) zu veröffentlichen."
   view_metapackages_finish_migrate_0: "Alle Bündel wurden von "
   view_metapackages_finish_migrate_1: " nach "
   view_metapackages_finish_migrate_2: " migriert."
@@ -618,7 +621,7 @@ de:
   view_metapackages_show_15: Editieren
   view_metapackages_show_16: Paketliste editieren
   view_metapackages_show_17: "Veröffentlichen"
-  view_metapackages_show_18: Sperren
+  view_metapackages_show_18: Wenn du das Bündel veröffentlichst, wird es für alle Nutzer zugänglich. Allerdings kann es danach nicht mehr gelöscht oder unbenannt werden.
   view_metapackages_show_19: "Löschen"
   view_metapackages_show_1: neue Nachricht schreiben
   view_metapackages_show_20: Direkt und indirekt enthaltene Pakete

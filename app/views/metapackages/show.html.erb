@@ -58,8 +58,6 @@
         
         <% if not @metapackage.is_published? %>
         <option value="publish"><%=t(:view_metapackages_show_17)%></option>
-        <% else %>
-        <option value="unpublish"><%=t(:view_metapackages_show_18)%></option>
         <% end %>
         <option value="delete"><%=t(:view_metapackages_show_19)%></option>
     </select>
@@ -67,6 +65,10 @@
   </div>
 <% end %>
 </div>
+
+<% if logged_in? and (@metapackage.owned_by? current_user or is_admin?) and (not @metapackage.is_published?) %>
+<p>  <%=t(:view_metapackages_show_18)%> </p>
+<%  end %>
 
 <% if is_admin? %>
 <%= link_to t(:view_metapackages_show_20), :action => 'rdepends', :id => @metapackage.id %>

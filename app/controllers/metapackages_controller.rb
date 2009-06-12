@@ -84,11 +84,18 @@ class MetapackagesController < ApplicationController
     error = false
     flash[:error] = ""
     @metapackage = Metapackage.find(params[:id])
-    # compute debian names of existing metapackages, without "communtu-" oder "communtu-private-bundle-" prefix
-    metanames = (Metapackage.all-[@metapackage]).map{|m| BasePackage.debianize_name(m.name)}
-    if params[:metapackage][:name]==t(:controller_metapackages_5) or metanames.include?(BasePackage.debianize_name(params[:metapackage][:name])) then
-      flash[:error] += t(:controller_metapackages_6)
-      error = true
+    if @metapackage.is_published? then
+      if params[:metapackage][:name]!=@metapackage.name then
+        flash[:error] += t(:controller_metapackages_no_renaming)
+        error = true
+      end
+    else
+      # compute debian names of existing metapackages, without "communtu-" oder "communtu-private-bundle-" prefix
+      metanames = (Metapackage.all-[@metapackage]).map{|m| BasePackage.debianize_name(m.name)}
+      if params[:metapackage][:name]==t(:controller_metapackages_5) or metanames.include?(BasePackage.debianize_name(params[:metapackage][:name])) then
+        flash[:error] += t(:controller_metapackages_6)
+        error = true
+      end
     end
     if params[:metapackage][:version].nil? or params[:metapackage][:version].empty? then
       flash[:error] += t(:controller_metapackages_7)
@@ -140,11 +147,15 @@ class MetapackagesController < ApplicationController
   # DELETE /metapackages/1
   # DELETE /metapackages/1.xml
   def destroy
-    metapackage  = Metapackage.find(params[:id])    
+    metapackage  = Metapackage.find(params[:id])   
+    if metapackage.is_published? then
+      flash[:error] = t(:controller_metapackages_cannot_destroy)
+      return  
+    end
     metapackage.destroy
 
     respond_to do |format|
-      format.html { redirect_to(request.env['HTTP_REFERER']) }
+      format.html { redirect_to (user_path(current_user) + "/metapackages/0") }
       format.xml  { head :ok }
     end
   end
