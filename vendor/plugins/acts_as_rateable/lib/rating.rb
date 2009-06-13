@@ -4,6 +4,8 @@ class Rating < ActiveRecord::Base
   # NOTE: Comments belong to a user
   belongs_to :user
   
+  validates_presence_of :comment
+  
   # Helper class method to lookup all ratings assigned
   # to all rateable types for a given user.
   def self.find_ratings_by_user(user)

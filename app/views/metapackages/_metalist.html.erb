@@ -1,5 +1,5 @@
+
 <% if logged_in? %>
-<%= form_tag("/metapackage/action", :id => "action_form") %>
 
 <table style="height:100%;" width="100%" cellspacing="0">
   <tr>
@@ -9,7 +9,7 @@
     <th valign="middle" class="packageList" align="left"><%=t(:view_metapackages__metalist_3)%></th>
 	<th valign="middle" class="packageList" align="left"><%=t(:view_metapackages__metalist_10)%></th>
     <th valign="middle" class="packageList" align="left"><%=t(:view_metapackages__metalist_4)%></th>
-    <th valign="middle" class="packageList" align="left"></th>
+	<th valign="middle" class="packageList" align="left"></th>
   <th valign="middle" class="packageList" align="left"></th>
 </tr>
 
@@ -31,12 +31,12 @@
 	    </td>
 		<td class="<%= css %>" valign="middle">
 			<% if metapackage.rated_by_user?(current_user)%>
-				<!-- STARS if not voted yet -->
+				<!-- STARS allready voted -->
 				<div class="star-ratings-block" id="star-ratings-block-<%=h metapackage.id %>">
 	            	<%= render :partial => "rating/show", :locals => { :metapackage => metapackage } %>
 	        	</div>
 			<%else%>
-				<!-- allready voted -->
+				<!-- if not voted yet  -->
 				<div class="star-ratings-block" id="star-ratings-block-<%=h metapackage.id %>">
             		<%= render :partial => "rating/rating", :locals => { :metapackage => metapackage } %>
         		</div>
@@ -49,7 +49,7 @@
 
 		</td>	
         <% if logged_in? %>
-        <td class="<%= css %>" valign="middle" width="30">
+        <td class="<%= css %>" valign="middle" width="10">
                 <% if (metapackage.user_id == current_user.id) or is_admin? %>
                     <% if editing_metapackage? %>
                         <%= link_to_remote(image_tag("/images/add.png", :size => "22x22", :border => "0", :title => t(:view_metapackages__metalist_18), :alt => t(:view_metapackages__metalist_18)), \
@@ -58,19 +58,20 @@
                         <% end %>
                 <% end %>
 	</td>
-	<td class="<%= css %>" width="20" aligh="middle">
-                <%= check_box('packages[' + metapackage.id.to_s + ']', 'select', :checked => false) %>
+	<td class="<%= css %>" valign="middle">
+		<% unless metapackage.is_published? %>
+			<%= link_to (image_tag("edit-delete-small.png", :alt=>"",:title=>"", :border=>"0")), '/metapackages/' + metapackage.id.to_s, :method=>"delete"%>
+		<%end%>
 	</td>
 	<% end %>
       </tr>
+	<tr id="comment_<%=metapackage.id%>" style="display:none;">
+		<td class="<%= css %>" aligh="left" colspan="8">  
+			<%= render :partial=>"rating/rating_comment" ,:locals => { :metapackage => metapackage } %>
+		</td>
+	</tr>
     <% end %>
     </table>
-    <div style="position:relative; left:620px; top:15px; top:4px; height:24px;width:150px;">
-        <%= select_tag("method", t(:view_metapackages__metalist_20), :onchange => "this.form.submit()") %>
-    </div>
-  </form>
-
-<%= observe_form('action_form', :url => "/metapackage/changed", :update => :method) %>
 <% else %>
 <p><%=t(:view_metapackages__metalist_21)%></p>
 <% end %>

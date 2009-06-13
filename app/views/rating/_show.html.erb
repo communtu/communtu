@@ -1,4 +1,3 @@
-<% @options = params.merge(:controller => "rating", :action => "rate", :id => metapackage.id) %>
 <% @convert = %w[one two three four five] %>
 <ul class="star-rating" alt="<%= metapackage.ratings.size == 0 ? t(:view_rating_show_title_no_ratings) : "#{metapackage.rating} #{t(:view_rating_show_title_got_ratings)}" %>" title="<%= metapackage.ratings.size == 0 ? t(:view_rating_show_title_no_ratings) : "#{metapackage.rating} #{t(:view_rating_show_title_got_ratings)}" %>">
     <li class="current-rating" style="width:<%=  metapackage.rating*25 %>px"></li>

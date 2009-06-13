@@ -80,6 +80,7 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/admin/test_all/:id', :controller => 'admins', :action => 'test_all'
   map.connect '/admin/repositories', :controller => 'repositories', :action => 'new'
   map.connect '/distributions', :controller => 'distributions', :action => 'index'
+  map.connect '/rating/rate', :controller => 'rating', :action => 'rate'
 
   map.resources :sent, :mailbox
   map.resources :messages, :member => { :reply => :get, :forward => :get }

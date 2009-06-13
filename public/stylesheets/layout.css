@@ -524,6 +524,12 @@ li.cartlist {
     list-style-type: none;
 }
 
+ .rating_comment_field {
+ 	width: 750px;
+	height: 100px;
+	margin-bottom: 10px;
+ }
+
 /* Classes for Message Picture and Rollover 
 .message {
 	height:			20px;
