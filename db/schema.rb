@@ -183,6 +183,7 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.string   "rateable_type", :limit => 15, :default => "", :null => false
     t.integer  "rateable_id",                 :default => 0,  :null => false
     t.integer  "user_id",                     :default => 0,  :null => false
+    t.text     "comment"
   end
 
   add_index "ratings", ["user_id"], :name => "fk_ratings_user"
