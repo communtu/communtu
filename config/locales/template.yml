@@ -582,8 +582,6 @@ de:
   view_metapackages_index_2: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
   view_metapackages__metalist_0: Name
   view_metapackages__metalist_10: "nicht veröffentlicht"
-  view_metapackages__metalist_12: installieren mittels Skript
-  view_metapackages__metalist_13: installieren
   view_metapackages__metalist_14: "installieren mittels Metapaket. Bitte vorher die Quellen hinzufügen."
   view_metapackages__metalist_16: "Quellen hinzufügen"
   view_metapackages__metalist_17: Quellen
@@ -825,8 +823,6 @@ de:
   view_user_profiles_help_4: du machst ein Upgrade auf eine neuere Version
   view_user_profiles_help_5: du erweiterst Communtu um deine Version
   view_user_profiles__installation_0: Communtu-Nachinstallation
-  view_user_profiles__installation_10: Installieren
-  view_user_profiles__installation_11: "Installation über Shellscript (läuft demnächst aus)"
   view_user_profiles__installation_13: "(Bei einem Versionswechsel muss der erste Schritt erneut ausgeführt werden, da die Communtu Quellen durch das Upgrade deaktiviert wurden.):"
   view_user_profiles__installation_14: "Quellen hinzufügen"
   view_user_profiles__installation_15: Quellen
@@ -855,14 +851,6 @@ de:
     Folgende Schritte sind dafür zu tun"
   view_user_profiles__installation_30: "Hinweis: Bitte .deb-Dateien nicht umbenennen."
   view_user_profiles__installation_31: "Die Communtu-Metapakete können auch mittles {{synaptic}} (unter System -> Systemverwaltung) angezeigt, installiert und deinstalliert werden. Änderungen an Bündeln werden über die Ubuntu-Paketverwaltung automatisch eingespielt."
-  view_user_profiles__installation_3: Klicke auf das Symbol rechts unten
-  view_user_profiles__installation_4: Speichere die Datei auf deinem Computer ab, am einfachsten auf dem Desktop
-  view_user_profiles__installation_5: "Auf dem Desktop (oder im Dateibrowser): Rechtsklick mit der Maus, Eigenschaften, und dann ein Häkchen bei \"Ausführen\" setzen."
-  view_user_profiles__installation_6: "Doppelklick auf die Datei (zum Ausführen)"
-  view_user_profiles__installation_7: "Es werden zur Information nochmal die hinzugefügten Quellen und Pakete angezeigt. Zweimal auf \"OK\" drücken."
-  view_user_profiles__installation_8: "Die Datei ist ein Skript, das automatisch die gewünschten \
-    Programme installiert, inklusive Download aus dem Internet."
-  view_user_profiles__installation_9: Installieren
   view_user_profiles_new_0: Neues Nutzerprofil
   view_user_profiles_new_1: Benutzer
   view_user_profiles_new_2: Kategorie

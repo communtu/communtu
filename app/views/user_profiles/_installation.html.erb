@@ -31,19 +31,6 @@
 <%=t(:view_user_profiles__installation_30)%><br>
 <%=t(:view_user_profiles__installation_31, {:synaptic => package_link("Synaptic")})%>
 
-<h3><%=t(:view_user_profiles__installation_11)%></h3>
-<%=t(:view_user_profiles__installation_2)%>:
-<ol>
-	<li><%=t(:view_user_profiles__installation_3)%></li>
-	<li><%=t(:view_user_profiles__installation_4)%></li>
-	<li><%=t(:view_user_profiles__installation_5)%></li>
-    <li><%=t(:view_user_profiles__installation_6)%></li>
-	<li><%=t(:view_user_profiles__installation_7)%></li>
-</ol>
-<%=t(:view_user_profiles__installation_8)%>
 
-<div style="padding-top:12px;padding-right:8px" align="right">
-	<%= link_to image_tag("/images/apt.png", :title=>t(:view_user_profiles__installation_9), :alt=>t(:view_user_profiles__installation_10), :border=>'0'), user_path(current_user) + "/suggestion/install_new"%>
-    </div>
 
 <% end %>

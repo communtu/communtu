@@ -43,7 +43,6 @@
 			<%end%>
 		</td>
 		<td class="<%= css %>" valign="middle" align="middle">
-			<%= link_to image_tag("/images/apt.png", :size => "22x22", :border => "0", :title => t(:view_metapackages__metalist_12), :alt => t(:view_metapackages__metalist_13)), user_path(current_user) + "/suggestion/quick_install/" + metapackage.id.to_s%>		
 			<%= link_to image_tag("/images/install.png", :size => "22x22", :border => "0", :title => t(:view_metapackages__metalist_14), :alt => t(:view_metapackages__metalist_13)), "apt://#{metapackage.debian_name}" %>		
             <%= link_to image_tag("/images/sources.jpg", :size => "22x22", :border => "0", :title => t(:view_metapackages__metalist_16), :alt => t(:view_metapackages__metalist_17)), "/users/#{current_user.id}/suggestion/install_bundle_sources/#{metapackage.id}" %>
 
