@@ -5,7 +5,7 @@ class MyMailer < ActionMailer::Base
     @recipients = 'at@bremer-commune.de'
     @from = current_user.email
     @sent_on = Time.now
-    @subject = I18n.t(:model_mailer_0)
+    @subject = I18n.t(:model_mailer_1)
     @body = {:title => @form_name, :comment => @form_frage}
     @headers = {}
   end
