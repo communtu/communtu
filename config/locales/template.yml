@@ -3,7 +3,7 @@ de:
   controller_accounts_0: "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
   controller_accounts_1: Dein Benutzerkonto wurde aktiviert! Du kannst dich nun einloggen.
   controller_accounts_2: Aktivierungs-Code nicht gefunden. Bitte versuche, ein neues Benutzerkonto anzulegen.
-  controller_accounts_4: Bein Benutzerkonto wurde bereits aktiviert. Du kannst dich nun anmelden.
+  controller_accounts_4: Bein Benutzerkontoutzerkonto wurde bereits aktiviert. Du kannst dich nun anmelden.
   controller_accounts_5: Passwort aktualisiert.
   controller_accounts_6: "Es ist ein Fehler aufgetreten. Das Passwort wurde nicht geändert."
   controller_accounts_7: "Das neue Passwort stimmt nicht mit der Bestätigung überein."
@@ -649,7 +649,7 @@ de:
     Hallo,
 
     es wurde auf www.communtu.de ein Vorschlag für ein neues Repository gemacht:
-  view_my_mailer_repo_1: "Folgendere Begründung wurde angegeben:"
+  view_my_mailer_repo_1: "Folgende Begründung wurde angegeben:"
   view_my_mailer_mailerror_0: "Hallo,  \
     es wurde auf www.communtu.de ein Error gemeldet.  \
     Der Benutzer möchte ganz gern, darüber benachrichtigt werden, wenn der Fehler nicht mehr auftritt."
