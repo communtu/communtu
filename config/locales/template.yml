@@ -32,6 +32,7 @@ de:
   controller_home_2: Wir werden dich per E-Mail benachrichtigen.
   controller_home_3: Das sieht nicht nach einer Liste von Ubuntu-Paketen aus... <br />Die Paketliste muss einen Paketnamen pro Zeile enthalten
   controller_home_4: Es muss eine Datei mit der Paketliste (ein Paketname pro Zeile) angegeben werden
+  controller_home_5: "Wir haben Deinen Vorschlag erhalten und werden Dich informieren, ob und wann wir das vorgeschlagene Repository aufnehmen werden."
   controller_messages_0: "Ursprüngliche Nachricht von {{user}} am {{datum}}  \n  \n"
   controller_metapackages_0: "Bündel"
   controller_metapackages_10: "Bündel geändert. Es dauert ein paar Minuten, bis die Anderungen im zugehörigen Metapaket verfügbar sind. "
@@ -130,6 +131,7 @@ de:
   model_mailer_2: Dein Benutzerkonto wurde aktiviert.
   model_mailer_3: "Du hast angefordert, dein Kennwort zurückzusetzen"
   model_mailer_4: "Dein Passwort wurde zurückgesetzt."
+  model_mailer_5: Vorschlag eines Repositorys
   model_message_0: Bitte einen Betreff angeben
   model_package_0: OpenSource
   model_package_10: "Bei der Synchronisation des Repositories {{repo_name}} konnte das Paket {{package_name}} nicht gefunden werden."
@@ -525,6 +527,10 @@ de:
   view_home_news_5: "Diese Liste ist für allgemeine Ankündigungen aus den Communtu Team für die Nutzer gedacht.  Es wir hier ungefähr einmal die Woche eine E-Mail über den Verteiler geschickt.   Die Nachrichten werden in einem "
   view_home_news_6: Archiv
   view_home_news_8: " gesammelt."
+  view_home_new_repository_0: Repository vorschlagen
+  view_home_new_repository_1: Du vermisst hier eine Quelle? Dann kannst Du ein Repository vorschlagen.
+  view_home_new_repository_2: Link zum Repository
+  view_home_new_repository_3: Warum soll dies in Communtu eingebaut werden? (Bitte gebe Kontaktdaten an, wenn Du über die Aufnahme informiert werden willst)
   view_home_success_0: " Vielen Dank für die Spende"
   view_home_success_1: "Eine Spendenbescheinigung kann ausgestellt werden. Dazu schicke uns bitte eine E-Mail mit Deiner Adresse an: "
   view_layouts_application_0: Communtu, Ubuntu, Installation, Installationshilfe
@@ -639,6 +645,11 @@ de:
     
     es wurde auf www.communtu.de ein Feedback gesendet. Der Betreff ist:
   view_my_mailer_mail_1: "Folgender Kommentar wurde hinterlassen:"
+  view_my_mailer_repo_0: |-
+    Hallo,
+
+    es wurde auf www.communtu.de ein Vorschlag für ein neues Repository gemacht:
+  view_my_mailer_repo_1: "Folgendere Begründung wurde angegeben:"
   view_my_mailer_mailerror_0: "Hallo,  \
     es wurde auf www.communtu.de ein Error gemeldet.  \
     Der Benutzer möchte ganz gern, darüber benachrichtigt werden, wenn der Fehler nicht mehr auftritt."
@@ -884,7 +895,7 @@ de:
   view_user_profiles__profile_rating_4: Speichern
   view_user_profiles__sources_0: "Quellen für die zu installierenden Programme"
   view_user_profiles__sources_1: "Hier werden die zu installierenden Programme und Pakete nach den zugehörigen \
-    Quellen sortiert aufgelisetet, so dass du auch sehen kannst, weshalb die jeweiligen \
+    Quellen sortiert aufgelistet, so dass du auch sehen kannst, weshalb die jeweiligen \
     Quellen hinzugefügt werden."
   view_users_edit_0: Benuzterprofil bearbeiten
   view_users_edit_1: "Passwort ändern"

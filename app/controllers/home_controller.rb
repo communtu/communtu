@@ -34,6 +34,14 @@ class HomeController < ApplicationController
     redirect_to '/home'
   end
 
+ def repo
+     @form_name = params[:form][:name]
+     @form_frage = params[:form][:frage]
+     MyMailer.deliver_repo(@form_name, @form_frage, current_user)
+     flash[:notice] = t(:controller_home_5)
+     redirect_to '/home'
+ end                           
+
   def submit_mail
     @form_email = params[:form][:email]
     MyMailer.deliver_mailerror(@form_email)
