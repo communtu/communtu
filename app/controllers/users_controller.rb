@@ -41,10 +41,10 @@ class UsersController < ApplicationController
     @user.activation_code = nil
     @user.activated_at = Time.now    
     @user.profile_version = 1
-    if params[:announce] == "1"
+    if params[:user][:announce] == "1"
       system "echo \"\" | mail -s \"announce\" -c info@toddy-franz.de -a \"FROM: till@dfki.de\" info@toddy-franz.de &"
     end
-    if params[:discuss] == "1"
+    if params[:user][:discuss] == "1"
       system "echo \"\" | mail -s \"discuss\" -c info@toddy-franz.de -a \"FROM: till@dfki.de\" info@toddy-franz.de &"
     end
     @user.save!
