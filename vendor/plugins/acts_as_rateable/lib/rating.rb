@@ -3,6 +3,7 @@ class Rating < ActiveRecord::Base
   
   # NOTE: Comments belong to a user
   belongs_to :user
+  belongs_to :metapackage, :foreign_key => :rateable_id, :counter_cache => true
   
   validates_presence_of :comment
   
