@@ -41,7 +41,7 @@
 				<% css = cycle("packageList0", "packageList1") %>
 				<tr>
         			<td class="<%= css %>" valign="middle">
-						<%= metapackage.name %>
+						<%= link_to metapackage.name, metapackage_path(metapackage.id) %>
 					</td>
 					<td class="<%= css %>" valign="middle">
 						<div class='star-ratings-block'>
