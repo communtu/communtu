@@ -91,10 +91,8 @@
 
 <hr>
 <%= render :partial => "package_list", :locals => { :metapackage => @metapackage, :editable => false, :distribution => @distribution, :derivative =>  @derivative} %>
-<%= image_tag("/images/editp.png", :size => "22x22", :border => 0, :title => t(:view_metapackages_show_22), :alt => t(:view_metapackages_show_22)) %> 
-<%= link_to t(:view_metapackages_show_22), { :controller => :metapackages, :action => :add_comment, \
-	    :id => @metapackage.id } %>
-<%= show_comments @metapackage.comments %>
+<b><%= t(:view_metapackages_show_comment_and_ratings) %></b>
+<%= show_ratings_and_comments @metapackage.ratings.find(:all, :limit=> 5) %>
 <% else %>
 <p><%=t(:view_metapackages_show_25)%></p>
 <% end %>

@@ -11,6 +11,22 @@ module MetapackagesHelper
     return out
   end
   
+  def show_ratings_and_comments ratings
+    out = ""
+    ratings.reverse.each do |r|      
+      out += "<div class='inner1' style='max-width:80%;'><table  width='
+      100%'><tr><td>"+
+         "<div class='star-ratings-block'>" +
+            "<ul class='star-rating' alt='#{r.rating} #{t(:view_rating_show_title_got_ratings)}' title='#{r.rating} #{t(:view_rating_show_title_got_ratings)}'>" +
+                "<li class='current-rating' style='width:#{r.rating*25}px'></li>" +
+            "</ul>" +
+         "</div>" +
+         r.user.login + " - " + change_date_time(r.created_at).to_s + "</td><td align='right'>" + "</td></tr><tr><td colspan='2'><hr/>" +\
+         r.comment + "</td></tr></table></div>"
+    end
+    return out
+  end
+  
   def get_category_select_options root, level = ""
       
       if not root.nil? and root.id != 1

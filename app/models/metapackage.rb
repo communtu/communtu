@@ -4,7 +4,6 @@ class Metapackage < BasePackage
   require 'utils'
   
   has_many   :metacontents, :dependent => :destroy
-  has_many   :comments, :dependent => :destroy
   has_many   :base_packages, :through => :metacontents
   has_many   :debs # destroy via callback
 #  has_many   :packages, :through => :metacontents, :source => :base_package, :foreign_key => :base_package_id 

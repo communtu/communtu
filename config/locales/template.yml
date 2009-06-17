@@ -458,6 +458,9 @@ de:
   view_home_home_22: " dich an, oder "
   view_home_home_23: nutze Communtu anonym
   view_home_home_24: Zum Impressum
+  view_home_home_rating_headline: Am besten bewertete Bündel
+  view_home_home_rating_package: Bündel
+  :view_home_home_rating_rating: Wertung
   view_home_home_2: Ubuntu-Linux
   view_home_home_3: " steht für ein menschliches Linux, das einfach zu benutzen ist. \
     Aber um Ubuntu wirklich gut nutzen zu können, muss man ganz schön viele Programme nachinstallieren, und es ist oft schwer, da den Überblick zu behalten. \
@@ -633,6 +636,7 @@ de:
   view_metapackages_show_21: "Wird bei Communtu in folgenden Bündeln benutzt:"
   view_metapackages_show_22: Kommentieren
   view_metapackages_show_25: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
+  view_metapackages_show_comment_and_ratings: Neuste Kommentare und Bewertungen für dieses Metapackage
   view_metapackages_show_2: neue Nachricht schreiben
   view_metapackages_show_3: "Zurück&nbsp;&nbsp;"
   view_metapackages_show_4: "Kategorie:"

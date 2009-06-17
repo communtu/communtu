@@ -2,29 +2,53 @@
 
 	<%= render_flash %>
 
-
-<a href=t(:view_home_home_1)><%=t(:view_home_home_2)%></a><%=t(:view_home_home_3)%>
-<%= link_to t(:view_home_home_4), '/home/about'%><br />
-<% if logged_in? %>
-<p><%=t(:view_home_home_5)%></p>
-<ul>
-<li><%=t(:view_home_home_6)%></li>
-<li><b>Bündel verwalten</b><%=t(:view_home_home_7)%></li>
-<li><%=t(:view_home_home_8)%></li>
-<li><%=t(:view_home_home_9)%></li>
-<li><%=t(:view_home_home_10)%></li>
-<% if is_admin? %>
-<li><%=t(:view_home_home_11)%></li>
-<li><%=t(:view_home_home_12)%></li>
-<% end %>
-<li><%=t(:view_home_home_13)%></li>
-</ul>
-<%=t(:view_home_home_14)%><%= link_to t(:view_home_home_15), '/home/about' %><%=t(:view_home_home_16)%><%= link_to t(:view_home_home_17), '/home/impressum' %>
-<% else %>
-<br />
-<%=t(:view_home_home_18)%><%= link_to t(:view_home_home_19), '/users/new' %><%=t(:view_home_home_20)%>
-<%= link_to t(:view_home_home_21), '/users/login' %><%=t(:view_home_home_22)%><%= link_to t(:view_home_home_23), '/users/anonymous_login' %>. 
-<br /><br />
-<%= link_to t(:view_home_home_24), '/home/impressum' %>
-<% end %>
-</p>
+<table>
+	<tr>
+		<td width='70%'>
+			<a href=t(:view_home_home_1)><%=t(:view_home_home_2)%></a><%=t(:view_home_home_3)%>
+			<%= link_to t(:view_home_home_4), '/home/about'%><br />
+			<% if logged_in? %>
+			<p><%=t(:view_home_home_5)%></p>
+			<ul>
+			<li><%=t(:view_home_home_6)%></li>
+			<li><b>Bündel verwalten</b><%=t(:view_home_home_7)%></li>
+			<li><%=t(:view_home_home_8)%></li>
+			<li><%=t(:view_home_home_9)%></li>
+			<li><%=t(:view_home_home_10)%></li>
+			<% if is_admin? %>
+			<li><%=t(:view_home_home_11)%></li>
+			<li><%=t(:view_home_home_12)%></li>
+			<% end %>
+			<li><%=t(:view_home_home_13)%></li>
+			</ul>
+			<%=t(:view_home_home_14)%><%= link_to t(:view_home_home_15), '/home/about' %><%=t(:view_home_home_16)%><%= link_to t(:view_home_home_17), '/home/impressum' %>
+			<% else %>
+			<br />
+			<%=t(:view_home_home_18)%><%= link_to t(:view_home_home_19), '/users/new' %><%=t(:view_home_home_20)%>
+			<%= link_to t(:view_home_home_21), '/users/login' %><%=t(:view_home_home_22)%><%= link_to t(:view_home_home_23), '/users/anonymous_login' %>. 
+			<br /><br />
+			<%= link_to t(:view_home_home_24), '/home/impressum' %>
+			<% end %>
+			</p>
+		</td>
+		<td>
+			<h5><%=t(:view_home_home_rating_headline)%></h5>
+			<table cellspacing="0">
+				
+				<th valign="middle" class="packageList" align="left"><%=t(:view_home_home_rating_package)%></th>
+				<th valign="middle" class="packageList" align="left"><%=t(:view_home_home_rating_rating)%></th>
+				<% for metapackage in @metapackges do %>
+				<% css = cycle("packageList0", "packageList1") %>
+				<tr>
+        			<td class="<%= css %>" valign="middle">
+						<%= metapackage.name %>
+					</td>
+					<td class="<%= css %>" valign="middle">
+						<%= metapackage.rating %>
+					</td>
+				</tr>
+				<%end%>
+			</table>
+		</td>
+	</tr>
+</table>
