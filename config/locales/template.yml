@@ -52,6 +52,7 @@ de:
   controller_metapackages_9: Die Beschreibung darf nicht leer sein<br>
   controller_metapackages_cannot_destroy: Veröffentlichte Bündel können nicht gelöscht werden.
   controller_metapackages_no_renaming: Veröffentlichte Bündel können nicht umbenannt werden.
+  controller_metapackages_conflicts: Das Bündel enthält Pakete, die in Konflikt zueinander stehen.
   controller_packages_0: Pakete
   controller_packages_1: Paket erzeugt.
   controller_packages_2: Paket aktualisiert.
