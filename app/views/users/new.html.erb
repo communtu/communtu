@@ -14,7 +14,11 @@
  
 <p><label for="password_confirmation"><%=t(:view_users_new_6)%></label><br/>
 <%= f.password_field :password_confirmation %></p>
- 
+
+<p><%= check_box_tag "announce" %><label for="announce"><%=t(:view_users_new_8)%></label></p>
+
+<p><%= check_box_tag "discuss" %><label for="discuss"><%=t(:view_users_new_9)%></label></p>
+
 <p><%= submit_tag t(:view_users_new_7) %></p>
 <% end %>
 	
