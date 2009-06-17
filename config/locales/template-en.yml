@@ -1,0 +1,868 @@
+--- 
+en: 
+  view_distributions_show_5: back
+  view_user_profiles__installation_11: installation via metapackages
+  view_distributions_show_6: edit
+  view_user_profiles__installation_12: Delete this sentence.
+  controller_accounts_0: Match Ubuntu-Linux to your personal needs
+  view_home_beteiligung_10: Graphic
+  view_distributions_show_7: delete
+  view_user_profiles__installation_13: "<b>Two simple steps</b> have to be done (when chaning the version, the first step has to be done twice, because the Communtu-sources will be deactivated by the upgrade.):"
+  controller_accounts_1: Your account has been activated. You can now log in.
+  view_home_beteiligung_11: We need someone who is responsible for the project's layout. This means to integrate every graphic and to take over the main responsibility for the CSS.
+  view_user_profiles__installation_14: add sources
+  controller_accounts_2: Could'nt find the activation code. Please try to create a new account.
+  view_home_beteiligung_12: Programming
+  view_distributions_show_8: Before a distribution can be deleted, every user must be logged out! Are you sure?
+  view_user_profiles__installation_15: sources
+  view_roles_index_0: roles for
+  view_home_beteiligung_13: Since we have many ideas for the platform's further development, we need programmers. Ideally you already have some experience with Ruby on Rails.
+  view_distributions_show_9: You are currently not logged in. Please click on \"log in\".
+  view_user_profiles__installation_16: register sources and keys
+  controller_accounts_4: Your account has already been activated. You can now log in.
+  view_roles_index_1: "Assigned roles:"
+  view_home_beteiligung_14: We can also help you to learn this programming-language. You just have to contact
+  view_user_profiles__installation_17: Just click on the link and open the file and open it with the recommended package-installer.
+  controller_accounts_5: Password has been updated.
+  view_roles_index_2: "Available roles:"
+  view_home_beteiligung_15: us
+  view_user_profiles__installation_18: This step has to be carried out again because you changed the settings.
+  view_categories_edit_0: Edit category
+  view_user_profiles_new_0: new profile
+  view_user_profiles__installation_19: "Attention: after clicking it will take a moment until the file is provided."
+  controller_accounts_6: An error occured. The password has not been changed.
+  view_categories_edit_1: Name
+  view_user_profiles_new_1: user
+  view_metapackages__package_list_0: "Total size of bundle on disk:"
+  controller_accounts_7: The new password does not comply with the verification.
+  view_categories_edit_2: Description
+  view_user_profiles_new_2: category
+  view_user_profiles__installation_20: This step has already been carried out.
+  controller_accounts_8: Your old password was incorrect.
+  view_categories_edit_3: Link for further information
+  view_user_profiles_new_3: level of expert
+  view_categories_edit_4: higher category
+  view_user_profiles_new_4: create
+  view_user_profiles__installation_21: Installation of the metapackages. Please add the sources first.
+  view_categories_edit_5: Choose a Partent!
+  view_user_profiles_new_5: back
+  view_user_profiles__installation_22: install
+  view_categories_edit_6: View
+  view_user_profiles__installation_23: "\t    Installing packages. There are two alternatives:"
+  view_categories_edit_7: Back
+  view_user_profiles__installation_24: installation via metapackages
+  view_categories_edit_8: You are currently not logged in. Please click \"Log in\".
+  controller_users_10: User deleted
+  view_user_profiles__installation_25: installatin via apturl
+  view_users__sidebar_10: News
+  controller_users_11: A problem while deleting a user occured.
+  view_user_profiles__installation_26: This step has to be carried out again because you changed the settings.
+  controller_users_12: User activated
+  view_user_profiles__installation_27: "Please configure "
+  view_user_profiles__installation_28: https://wiki.ubuntu.com/AptUrl
+  controller_distributions_0: Ubuntu distributions
+  controller_users_13: A Problem occured while activating this user.
+  view_user_profiles__installation_29: for the Konqueror and Opera browsers.
+  controller_passwords_0: Match Ubuntu-Linux to your personal needs
+  controller_distributions_1: Distribution created.
+  controller_passwords_1: A link for chaning the password has been sent to your e-mail-address.
+  view_home_contact_us_0: Feedback-form
+  controller_distributions_2: Distribution updated.
+  controller_passwords_2: No user found with this e-mail-address.
+  view_home_home_0: Communtu - ceno-match Ubuntu-Linux to your personal needs
+  view_home_contact_us_1: Here you have the possibility to send us feedback.
+  view_user_profiles__installation_30: "Advice: please don't rename the .deb-file."
+  controller_passwords_3: Invalid change-code entered.
+  view_home_home_1: http://www.ubuntuusers.de
+  view_home_contact_us_2: Subject
+  controller_passwords_4: Invalid activation code. Please check the code and try again. (Perhaps you e-mail-program did a line break?)
+  view_home_home_2: Ubuntu-Linux
+  view_home_contact_us_3: Feedback
+  controller_passwords_5: Password must not be empty.
+  view_home_home_3: " stands for a human Linux that is easy to use. In order to use Ubuntu effectively a whole bunch of programs have to be installed. It is not always easy to keep an overview. At Communtu you only specify for which purposes you want to use your computer and Communtu suggests a bunch of programs to you which will be installed automatically."
+  view_home_contact_us_4: Send
+  view_metapackages_show_0: Bundle created by
+  controller_passwords_6: Password changed.
+  view_home_home_4: More ...
+  view_metapackages_show_1: compose a new message
+  controller_passwords_7: Password not changed.
+  view_home_home_5: "The menu on the left offers the following possibilities:"
+  controller_passwords_8: Passwords do not match.
+  view_home_home_6: <b>Installation</b> offers you a summary (bundling) of programs for the installation on your computer, according to your instructions on how you want to use your Ubuntu-PC.
+  view_metapackages_show_2: compose a new message
+  controller_passwords_9: Invalid activation code entered.
+  view_home_home_7: Did you make good experiences with programs? Bundle them thematically ot take a look at existing bundles.
+  view_metapackages_show_3: Back&nbsp;&nbsp;
+  view_home_home_8: <b>Search program</b> Here you can search for single Ubuntu-programs (packages).
+  view_metapackages_show_4: "Category:"
+  view_home_home_9: <b>Ubuntu-derivatives</b> is a small overview about Kubuntu, Xubuntu, Medibuntu, etc.
+  view_metapackages_show_5: "Install by default:"
+  view_metapackages_show_6: "yes"
+  view_home_impressum_10: Donation receipt can be issued.
+  view_metapackages_show_7: "no"
+  view_home_impressum_11: "Participants of the Communtu-groupd (alphabetical order):"
+  view_metapackages_show_8: "License type:"
+  view_home_impressum_12: "You can "
+  view_roles__role_0: delete role
+  view_metapackages_show_9: "Published:"
+  view_home_impressum_13: Join too
+  view_roles__role_1: assign role
+  view_repositories_edit_0: edit repositories
+  controller_videos_0: macht Ubuntu-Linux to your personal needs
+  view_repositories_edit_1: "Distribution:"
+  view_categories_show_0: "Name:"
+  view_repositories_edit_2: "Licence:"
+  view_categories_show_1: Description;
+  view_repositories_edit_3: "Security type:"
+  controller_suggestion_0: match Ubuntu-Linux to your personal needs
+  view_categories_show_2: "Further information:"
+  view_repositories_edit_4: "Path:"
+  controller_suggestion_1: In order to install something, you first have to choose something. Don't forget to save!
+  view_categories_show_3: "Higher category:"
+  view_repositories_edit_5: "GPG-key (optional):"
+  controller_suggestion_2: Add repositories and keys for the user
+  view_repositories_edit_6: "Subtype:"
+  controller_suggestion_3: While creating the package an error occured.
+  view_categories_show_5: Back
+  view_repositories_edit_7: save
+  controller_suggestion_4: Add repositories and keys for the bundle
+  view_users__mailbox_list_0: new message
+  view_repositories_migrate_0: migrate repository
+  view_repositories_edit_8: back
+  controller_suggestion_6: Add repositories and keys for the package
+  view_users__mailbox_list_1: Mailbox
+  view_users__mailbox_list_2: Inbox
+  view_repositories_migrate_1: copy repository
+  view_packages_new_0: New package
+  view_users__mailbox_list_3: sent messages
+  view_repositories_migrate_2: " to distribution"
+  controller_suggestion_8: Communtu post-installation for users
+  view_packages_new_1: Distribution
+  view_repositories_migrate_3: migrate
+  controller_suggestion_9: While creating the package an error occured.
+  view_packages_new_2: Name
+  view_home_news_0: News
+  view_packages_new_3: Version
+  view_home_news_1: Our mailinglists
+  view_packages_new_4: Source
+  view_home_news_2: To improve communication with our users we have set up some mailing lists.
+  view_metapackages_index_0: bundle
+  view_packages_new_5: Weblinks
+  view_home_news_3: communtu-announce-de+subscribe@googlegroups.com
+  view_metapackages_index_1: Back
+  view_packages_new_6: Videos
+  view_home_cancel_0: Communtu
+  view_metapackages_index_2: You are not currently logged in. Please click on 'log in' above.
+  view_home_cancel_1: Either you try a again or you use the possibility via bank transfer
+  view_home_news_5: This list is intended for general announcements from the Communtu team to the users. The frequency is a little higher than once a week. Posts will be collected in an
+  view_packages_new_7: Save
+  view_home_cancel_2: Allgemeinbildung e.V.
+  view_metapackages_new_0: New bundle
+  view_home_news_6: archive
+  view_packages_new_8: Back
+  view_home_cancel_3: "Bank-account: 172 9375, Sparkasse Bremen, Bank-number 290 501 01"
+  view_user_mailer_activation_0: ", your account has been activated. Please follow this link:"
+  view_metapackages_new_1: Name
+  view_home_cancel_4: "Purpose: Communtu"
+  view_home_news_8: .
+  view_distributions_index_0: available distributions
+  view_home_cancel_5: Donation receipt can be issued.
+  view_metapackages_new_2: Description
+  view_distributions_index_1: new distribution
+  view_metapackages_new_3: Category
+  view_distributions_index_2: You are currently not logged in. Please click on \"log in\".
+  view_metapackages_new_4: Install by default
+  view_metapackages_new_5: Create
+  view_metapackages_new_6: You are not currently logged in. Please click on 'log in' above.
+  model_mailer_0: Welcome to Communtu
+  model_mailer_1: Query via formular
+  model_mailer_2: Your account has been activated.
+  view_home_derivatives_10: https://wiki.ubuntu.com/UbuntuStudio
+  model_mailer_3: You asked for resetting your password
+  view_home_derivatives_11: " - Ubuntu multimedia-edition. This will be automatically installed when \\\"enhanced\\\" is checked at audio, film and/or graphic/design."
+  model_mailer_4: Your password has been restored.
+  view_home_about_0: Communtu - ceno-match Ubuntu-Linux to your personal needs
+  view_home_derivatives_12: " provides multimedia package-sources. Because of legal reasons they cannot be offered by Ubuntu. Medibuntu is supported by Communtu (e. g. for audio or films)."
+  view_home_about_1: Why Communtu?
+  view_home_derivatives_13: " - the PC becomes a VCR. Select \\\"Freak\\\" at \\\"Movie\\\" and it will be installed. Recommended: CPU with 2 GHz, 1024 MB-RAM, 10 GB free harddisk space for the frontend, at least 80 GB for the backend, a graphic card with at least 128 MB RAM and a TV Out and a supported TV card."
+  view_home_about_2: Ubuntu is a linux-based distribution which makes Linux easier to use and more comprehendible. After the installation of Ubuntu via a CD or DVD your computer is already equipped to surf the internet, to do some word processing and to do much more.
+  view_home_derivatives_14: " - learning software. Choose \\\"advanced\\\" under \\\"Education and science\\\" and it will be installed."
+  view_home_about_3: There are many applications which have to be post-installed, e. g. programs for audio, video and graphics, so the computer is usable with Ubuntu. Communtu helps to make the post-installation more easier and moreover has special sections for beginners and users comming from Windows.
+  view_home_derivatives_15: http://wiki.ubuntuusers.de/KDE
+  view_home_about_4: How do I use Communtu?
+  view_home_derivatives_16: is Ubuntu with the KDE-Dekstop
+  view_home_about_5: To start, choose <b>Installation</b> on the left side.
+  view_home_derivatives_17: http://en.wikipedia.org/wiki/Linux_Mint
+  view_home_about_6: (This appeas not until
+  view_home_about_7: There you can edit your settings. First, you have to specify the basic data, like which Ubuntu-version you want to install on your computer. Additionally you have to specify if you want to use free or non-free software. Finally you have to indicate for which purposes you want to use your computer.
+  view_home_derivatives_18: " is a Ubuntu spin-off with its own user community which has dedicated itself to usability. Linux Mint is quite similar to Ubuntu but has more codecs, like to watch DVDs or listen to MP3s, pre-installed. Those codecs are available via Communtu, listet at \\\"Sound & Video\\\"."
+  controller_messages_0: ngliche Nachricht von %s am %s  \n
+  view_home_derivatives_19: Attention! Will be available soon at Communtu.
+  lib_utils_0: "The followong system-command failed:"
+  view_home_about_8: After a click on \"Save and choose packages\" you can get a detailed overview of the installed bundles and programmes and the possibility to change the pre-made selections. In the case you don't have the time or energy to choose the packages in detail, just click on \"Save\". This leads you to the installation page. There you will find a button with which the installation process starts. This takes some time because the applications have to be downloaded from the internet and installed on your computer. When finished, you have a all-round Ubuntu-PC!
+  view_accounts_edit_0: change password
+  view_home_derivatives_20: "\tAutomatix was a programm to assist the installation of software and enjoyed great popularity (Automatix was even recommended by the New York Times). However, Automatix did not meet the Ubuntu-standards and the delevopment stopped."
+  view_home_about_9: "Important: a fast internet-connection is needed. For Ubuntu-users with a slow internet-connection, e. g. a modem, we intend to introduce a feature to create CDs and DVDs automatically."
+  view_accounts_edit_1: old password
+  view_home_derivatives_21: "Derivatives, which are based on a Xfce-installation (like Xubuntu) and that can be installed afterwards with Communtu:"
+  view_accounts_edit_2: new password
+  view_home_derivatives_22: " - leaned to be like BeOS, ZevenOS focuses on speed and compatibility for old computers with a simple interface. CPU with at least 200 MHz, 128 MB RAM (for operating, while installing 192 MB RAM are required), at least 2 GB free hard disk space (recommended are 4 GB free hard disk space or more), 16 MB graphic card (recommended: Intel GMA 9xx)."
+  view_accounts_edit_3: Between 4 and 40 letters
+  view_users_index_0: All users
+  view_admins_load_packages_0: "New package:"
+  view_home_derivatives_23: Attention! This is soon available at Communtu.
+  view_accounts_edit_4: Confirm new password
+  view_users_new_0: registration
+  view_users_index_1: Wie have a total of
+  view_admins_load_packages_1: "Updated package:"
+  view_home_derivatives_24: "Derivatives, which should be installed with the derivative installation-CD:"
+  view_accounts_edit_5: change password
+  view_users_new_1: Here you have the possibility to register yourself.
+  view_users_index_2: " registered users."
+  view_home_derivatives_25: http://wiki.ubuntuusers.de/Xfce
+  view_repositories_show_10: Trusted
+  view_users_new_2: If you want to be informed about the development of Communtu you have to enter a valid e-mail-address.
+  view_users_index_3: username
+  helper_distributions_10: and edit
+  view_home_derivatives_26: " - with the slim Xfce as graphical interface - particularly suitable for older computers: 128 MB RAM and 1,5 GB free hard disk space are sufficiant. Should be installed from the CD to guarantee a slim installation. Post-installation can be done with Communtu."
+  view_repositories_show_11: "Third-Party "
+  view_users_new_3: user
+  view_users_index_4: e-mail
+  helper_distributions_11: <br />distribution
+  view_home_derivatives_27: http://en.wikipedia.org/wiki/LinuxMCE
+  view_repositories_show_12: "GPG-key (optional):"
+  view_users_new_4: e-mail
+  view_users_index_5: Activated?
+  view_derivatives_edit_0: edit derivative
+  helper_distributions_12: Edit
+  view_home_derivatives_28: " - with this, Ubuntu is going to be "
+  view_repositories_show_13: "Subtype:"
+  view_sent__user_not_exists_0: user not found
+  view_users_new_5: password
+  view_users_index_6: Roles
+  view_derivatives_edit_1: Program for GUI-based sudo (e.g. gksudo, kdesudo)
+  helper_distributions_13: delete
+  view_repositories_show_14: packages
+  view_users_new_6: confirm password
+  view_derivatives_edit_2: Program for GUI-dialogs (e.g. zenity, kdialog)
+  helper_distributions_14: Are you sure?
+  view_home_derivatives_29: a computer to watch TV
+  view_users_new_7: Register
+  view_derivatives_edit_3: Save
+  helper_distributions_15: informational page at www.ubuntuusers.de (German)
+  view_derivatives_edit_4: View
+  view_home_derivatives_30: http://en.wikipedia.org/wiki/Home_theater_PC
+  view_derivatives_edit_5: Back
+  view_home_derivatives_31: . Because of the necessary installation of drivers, Linux MCE should be installed directly. However, Communtu can be used to install additional software.
+  view_user_mailer_signup_notification_0: "Your account at www.communtu.de has been created.     Username:"
+  view_user_mailer_reset_password_0: ", you have received a new password."
+  view_home_derivatives_32: " is a Ubuntu derivative consisting only of free software. Suitable only for experienced users. Should only be installed with the Gobuntu-CD so that only free software is provided. A further installation with Communtu is possible, but \\\"free software\\\" should be selected in the user profile. This derivative is available in Ubuntu 8.04 and development is currently discontinued."
+  view_user_mailer_signup_notification_1: "Please click on the following link:"
+  view_home_derivatives_33: http://en.wikipedia.org/wiki/Nexenta_OS
+  view_user_mailer_signup_notification_2: to get to our project
+  view_metapackages_add_comment_0: "Comment:"
+  view_home_derivatives_34: " - replaces the Linux core with OpenSolaris. Provides only a minimal basis to applications. The installation of additional software is left to the user; Communtu can be used for this."
+  view_home_derivatives_35: "There are several other derivatives for which we cannot give any recommendations for installation:"
+  view_metapackages_add_comment_1: Add comment
+  view_videos_edit_0: edit video
+  view_home_derivatives_36: " - an African Ubuntu-version, which is apparently not available over the internet."
+  view_metapackages_add_comment_2: You are not currently logged in. Please click on 'log in' above.
+  view_videos_edit_1: Save
+  view_home_derivatives_37: http://en.wikipedia.org/wiki/LinEx
+  view_videos_edit_2: Back
+  view_home_derivatives_38: " - public distribution for the Spanish region of Extremadura."
+  view_home_derivatives_39: " for older PCs. It is based on the LXDE-GUI."
+  view_home_news_10: communtu-discuss-de+subscribe@googlegroups.com
+  controller_passwords_10: Invalid activation code. Please check the code and try again. (Perhaps you e-mail-program did a line break?)
+  view_home_news_11: This list is intended for discussion about the platform. The frequency is a little higher than once a week. Posts will be collected in an
+  view_repositories_multinew_0: read
+  view_packages_index_0: You are not currently logged in. Please click on 'log in' above.
+  view_home_news_12: archive
+  view_repositories_multinew_1: back
+  view_home_news_13: http://groups.google.com/group/communtu-discuss-de/topics?start=
+  view_home_derivatives_40: " - for portable internet devices."
+  view_home_news_14: .
+  view_home_derivatives_41: Ubuntu ultimate - Ubuntu with many desktop-designs and applications.
+  view_home_news_15: Our blog
+  view_home_derivatives_42: " - specialised for webservices."
+  view_home_news_16: Wir have a blog where we post updated information about Communtu. It gets a new post about once a week. Announcement and new features will be presented here.
+  view_home_derivatives_43: " - based on E17. 2D-effects even without a fast graphic card."
+  view_user_profiles__profile_data_0: "Preparing the installation: enter the base data"
+  view_home_news_17: Go to blog
+  view_home_derivatives_44: " - minimalist and fast Ubuntu-version for older PCs."
+  view_user_profiles__profile_data_1: On this page you can prepare the post-installation with Communtu in four easy steps. If desired, you can choose the bundles in a detaild overview.
+  view_home_news_18: http://communtu.blogspot.com
+  view_home_derivatives_45: http://wiki.ubuntuusers.de/Server_Installation
+  view_user_profiles__profile_data_2: "Attention: when finished, don't forget to click on one of the \\\"Save\\\"-buttons!"
+  view_home_news_19: The Communtu blog
+  view_home_derivatives_46: " - Ubuntu server-version without any GUI."
+  view_repositories_new_0: new repository for
+  controller_metapackages_0: bundle
+  view_user_profiles__profile_data_3: What tasks do you want to do with your computer? (only a rough choice, can be chosen in detail later)
+  view_home_derivatives_47: http://wiki.ubuntuusers.de/JeOS
+  view_repositories_new_1: "Licence:"
+  controller_metapackages_1: new bundle
+  view_user_profiles__profile_data_4: further information
+  view_home_derivatives_48: " - minimal server-version, suitable for virtualizations."
+  view_repositories_new_2: "Security type:"
+  controller_metapackages_2: The bundle-name is already in use!
+  view_users__sidebar_0: installation
+  view_home_news_20: The Communtu blog
+  view_home_derivatives_49: " - Ubuntu with Enlightenment as a desktop environment."
+  view_repositories_new_3: "Path:"
+  controller_metapackages_3: Description must not be empty
+  view_user_profiles_help_0: determination of the Ubuntu-version
+  view_user_profiles__profile_data_6: Please select a Ubuntu-version,
+  view_cart_new_from_list_0: Create bundle from a packages-list
+  view_repositories_new_4: GPG-key (optional)
+  controller_metapackages_4: Bundle saved. It could take a couple of minutes until it is available as a metapackage.
+  view_users__sidebar_1: administrate bundles
+  view_user_profiles_help_1: Open a new terminal. Click on \"Applications\" -> \"Accessories\" -> \"Terminal\"
+  view_user_profiles__profile_data_7: How do I finalize a version?
+  view_home_news_22: Ways to participate
+  view_cart_new_from_list_1: Here you can create a bundle from an existing package-list. The list must be formated as a plain text-file with only one package-name per line.
+  view_repositories_new_5: "Subtype:"
+  controller_metapackages_5: new bundle
+  view_users__sidebar_2: Search programs
+  view_user_profiles_help_2: "There you enter the following:"
+  view_user_profiles__profile_data_8: "\t     \tVia your webbrowser detected version:"
+  view_home_news_23: You are welcome to
+  view_home_derivatives_50: " - with Fluxbox and several network-tools."
+  view_cart_new_from_list_2: A list of all programs installed on your computer can be found with
+  view_repositories_new_6: create
+  controller_metapackages_6: The bundle-name is already in use<br>
+  view_users__sidebar_3: Ubuntu-derivatives
+  view_user_profiles_help_3: "If you version is not supported by Communtu, you now have two possibilities:"
+  view_user_profiles__profile_data_9: Here you can select how secure or comfortable you sources should be
+  view_home_news_24: participate
+  view_home_derivatives_51: " - Installation of programs and version, which are not available through the official repositories."
+  view_roles_edit_0: edit role
+  view_cart_new_from_list_3: . (For this, the package
+  view_repositories_new_7: back
+  controller_metapackages_7: Specify a version (e. g. 0.1)<br>
+  view_users__sidebar_4: Ubuntu-versions
+  view_user_profiles_help_4: you upgrade to a newer, supported, version
+  view_home_derivatives_52: " - a kind of Automatix for the ultimate edition."
+  view_roles_edit_1: rolename
+  view_cart_new_from_list_4: "Choose the file, which contains the package-list:"
+  controller_metapackages_8: With each update the version has to be increased<br>
+  view_users__sidebar_5: administrate users
+  view_user_profiles_help_5: you expand Communtu with your version
+  view_home_derivatives_53: " - allows a faster installation, as only the latest packages are downloaded."
+  view_roles_edit_2: save
+  view_cart_new_from_list_5: Create
+  controller_metapackages_9: The description must not be empty<br>
+  view_users__sidebar_6: administrate categories
+  view_roles_edit_3: show
+  view_sent__user_exists_0: user found
+  view_users__sidebar_7: administrate derivatives
+  view_home_derivatives_55: " - Mediacenter."
+  view_roles_edit_4: back
+  view_users__sidebar_8: failed debs
+  view_home_derivatives_56: http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix
+  view_users__sidebar_9: conflicts
+  view_home_derivatives_57: for subnotebooks/EEE-PCs
+  view_home_beteiligung_0: participation possibilities
+  helper_distributions_0: free
+  view_messages_show_0: "From:"
+  view_home_beteiligung_1: using the platform
+  helper_distributions_1: non-free
+  view_messages_show_1: "To:"
+  view_home_beteiligung_2: We would be very delighted if you would use Communtu to carry out an installation. We already have many bundles which are set up to specific characteristics. Maybe one of the bundles is suitable for you. Furthermore you can upload your own package-list to share it with other users. This is the most simple way to create a bundle, but you don't have to publish it. Of course you can use Communtu only as a saving place for your package list so you can install it on an other computer.
+  controller_cart_0: bundle-editor
+  helper_distributions_2: synchronise repository
+  view_messages_show_2: "received on:"
+  view_home_beteiligung_3: We need the information
+  controller_cart_1: new bundle
+  view_messages_show_3: Reply
+  controller_profiles_0: Installation of bundles
+  view_home_beteiligung_4: You think, you now much about open source programs
+  controller_cart_2: "The following packages couldn't be found:"
+  helper_distributions_4: migrate repository
+  view_messages_show_4: Forward
+  view_home_derivatives_0: Ubuntu-derivatives
+  view_home_beteiligung_5: participate in the survey
+  view_packages_rdepends_0: In the package
+  view_messages_show_5: Delete
+  view_home_derivatives_1: Communtu is based on a standard-installation of Ubuntu. There are many different
+  view_home_beteiligung_6: feedback
+  view_packages_rdepends_1: " directly and indirectly contained packages"
+  helper_distributions_6: delete repository
+  view_messages_show_6: back
+  view_home_derivatives_2: Ubuntu-derivatives
+  model_message_0: Please enter a subject
+  view_home_beteiligung_7: We need feedback. Our desire is, that Communtu will be used by everyone and for this we need feedback. You found an error in the system? Is there something that is incomprehensible to you? You think, you could do something better? You have some suggestions for us? Feedback is accepted under
+  view_home_derivatives_3: http://wiki.ubuntuusers.de/Was_ist_Linux?#Was-sind-Derivate-einer-Distribution
+  view_home_beteiligung_8: co-operation
+  helper_distributions_8: show sources
+  view_home_derivatives_4: ", and many Ubuntu-users may ask themselves if they should use a derivative instead of Ubuntu. The answer is: normally the standard Ubuntu-version completely sufficiant because with Communtu it is quite easy to install a derivaitve. However, this is not always a wise decision."
+  view_home_beteiligung_9: "For the development of the project we currently need support with these two jobs:"
+  view_users__user_0: activate
+  view_home_derivatives_5: "Each derivative under "
+  view_users__user_1: deactivate
+  view_home_derivatives_6: \"detailed selection\"
+  view_users__user_2: edit roles
+  view_home_derivatives_7: can be chosen to be installed in the category \"Derivatives\".
+  view_home_derivatives_8: You can also take a look of which packages a derivative consists.
+  view_my_mailer_mailerror_0: Hello, an error was reported on www.communtu.de. The user would like to be notified when the error has been fixed.
+  view_home_derivatives_9: "With Communtu installable derivatives:"
+  view_roles_show_0: "Rolename:"
+  view_cart_update_0: edit bundle-information
+  view_roles_show_1: edit
+  view_home_success_0: " Thank you for your donation"
+  view_roles_show_2: back
+  view_cart_update_1: Overwrite bundle, if it already exists?
+  view_home_success_1: "We can issue a donation receipt. Please send an email with your address to:"
+  view_users_edit_0: edit profile
+  view_cart_update_2: "Level of expert:"
+  view_users_edit_1: change password
+  view_cart_update_3: "Description:"
+  view_sent_index_0: sent messages
+  controller_users_0: Match Ubuntu-Linux to your personal needs
+  view_users_edit_2: delete profile
+  view_cart_update_4: Publish bundle
+  view_sent_index_1: To
+  view_cart__metacart_0: bundle-editor
+  controller_users_1: Thank you for registering at Communtu! You can now log in.
+  view_users_edit_3: "Username:"
+  view_sent_index_2: Subject
+  view_cart__metacart_1: "Name:"
+  controller_users_2: An error occured while registering.
+  view_users_edit_4: "E-Mail:"
+  view_sent_index_3: Date
+  view_cart__metacart_2: New Bundle
+  controller_users_3: You have been logged in as {{anonymous_user}} with the password {{anonymous_user}}. If applicable click on the username {{anonymous_user}} in the above-right corner to change the account into an permanent account, otherwise the account will be deleted after one day.
+  view_users_edit_5: new password
+  view_metapackages_show_10: published
+  view_sent_index_4: back
+  view_cart__metacart_3: Bundle from packages-list
+  controller_users_4: An error occured with the anonymous use.
+  view_users_edit_6: Between 4 and 40 letters
+  view_sent_index_5: You haven't sent any messages yet.
+  model_user_meta_tabz_0: My bundles
+  controller_users_5: user data updated
+  view_users_edit_7: Conform new password
+  view_metapackages_show_12: not published
+  model_user_meta_tabz_1: all published bundles
+  controller_users_6: Userdata changed and account made permanent.
+  view_users_edit_8: save
+  model_user_meta_tabz_2: Ubuntu packages
+  controller_users_7: The new password does not match with the confirmation.
+  view_users_edit_9: "  With a click on \\\"save\\\" this account will be made permanent."
+  view_metapackages_show_14: " Actions:&nbsp;&nbsp;"
+  controller_users_8: user deactivated
+  view_metapackages_show_15: Edit
+  controller_users_9: An error occured while deactivating this user.
+  view_layouts_application_0: Communtu, Ubuntu, installation, installation help
+  view_admins_sync_package_0: back
+  view_metapackages_show_16: Edit package list
+  view_layouts_application_1: Communtu customizes your Ubuntu system to your individual needs.
+  view_admins_sync_package_1: "Error: couldn't synchronise repositories"
+  view_metapackages_show_17: Publish
+  view_layouts_application_2: Communtu
+  view_admins_sync_package_2: repository synchronised
+  view_metapackages_show_18: Block
+  view_layouts_application_3: Go to home page
+  view_admins_sync_package_3: "Repository: "
+  view_metapackages_show_19: Delete
+  view_packages__packagelist_10: delete
+  model_package_10: "When syncing repository #{repository.name}, could not find package #{name}"
+  view_admins_sync_package_4: "Repository-URL: "
+  model_package_11: could not determine URL
+  view_layouts_application_5: "by PayPal:"
+  view_admins_sync_package_5: "Total packages:"
+  view_packages__packagelist_12: Are you sure?
+  view_sent_new_0: New message
+  model_package_12: content of {{file}} does not match with repository-syntax
+  view_metapackages_show_20: Directly and indirectly contained packages
+  view_layouts_application_6: Donate now online using PayPal, it is easy, quick, and secure.
+  view_passwords_new_0: forgotten password
+  view_admins_sync_package_6: "Newly added packages:"
+  view_sent_new_1: "To:"
+  view_metapackages_show_21: "Is used in Cummuntu in the following bundles:"
+  view_passwords_new_1: "    Which e-mail-address did you enter when you created the account?"
+  view_admins_sync_package_7: "Updated Packages:"
+  view_metapackages_finish_migrate_0: All bundles were migrated from
+  view_sent_new_2: "Subject:"
+  view_metapackages_show_22: Comment
+  view_layouts_application_8: Start
+  view_passwords_new_2: reset password
+  view_admins_sync_package_8: "The following packages couldn't be saved in the database:"
+  view_metapackages_finish_migrate_1: " to"
+  view_sent_new_3: "Message:"
+  view_my_mailer_mail_0: Hello
+  view_packages_edit_0: Edit package
+  view_layouts_application_9: Log out
+  view_metapackages_finish_migrate_2: .
+  view_sent_new_4: Send
+  view_my_mailer_mail_1: "The following comment was made:"
+  view_packages_edit_1: Name
+  view_metapackages_finish_migrate_3: "The following packages could not be migrated:"
+  view_sent_new_5: back
+  view_packages_edit_2: Icon
+  view_metapackages_edit_0: "Name:"
+  controller_repositories_0: repositories
+  view_metapackages_finish_migrate_4: Bundle
+  view_packages_edit_3: "\t &nbsp;&nbsp;New icon: "
+  view_metapackages_edit_1: "Version:"
+  view_sessions_new_0: "Log in with username and password:"
+  view_metapackages_show_25: You are not currently logged in. Please click on 'log in' above.
+  controller_repositories_1: Repository created.
+  view_metapackages_finish_migrate_5: Package
+  view_packages_edit_4: "Is a program:"
+  view_metapackages_edit_2: Pleas use versions => 1.0 only for stable bundles.
+  controller_admins_0: admninistration section
+  view_sessions_new_1: Username
+  controller_repositories_2: Repository updated.
+  view_metapackages_finish_migrate_6: Forward
+  view_packages_edit_5: Weblinks
+  view_metapackages_edit_3: "Category:"
+  controller_admins_1: You are not an administrator!
+  view_sessions_new_2: Password
+  controller_repositories_3: sources.list read.
+  view_admins_show_0: Here should be an introduction to the admin area
+  view_packages_edit_6: "Videos:"
+  view_metapackages_edit_4: "Install by default:"
+  view_sessions_new_3: Log this user permanently in on this computer
+  view_user_mailer_forgot_password_0: ", to receive a new password, please folloe the link:"
+  view_packages_add_comment_0: "Comment:"
+  view_packages_edit_7: Edit
+  view_metapackages_edit_5: "Description:"
+  view_sessions_new_4: Log in
+  view_packages_add_comment_1: Add comment
+  view_packages_edit_8: New link to a video
+  view_metapackages_edit_6: Save
+  view_sessions_new_5: Register
+  view_packages_add_comment_2: You are not currently logged in. Please click on 'log in' above.
+  view_packages_edit_9: "    Video description:"
+  view_metapackages_edit_7: You are not currently logged in. Please click on 'log in' above.
+  view_metapackages__metalist_10: Rating
+  view_users_show_0: show user
+  view_metapackages__metalist_12: install using script
+  view_metapackages__metalist_13: install
+  view_users_show_1: "Name:"
+  view_roles_new_0: new role
+  view_metapackages__metalist_14: install through meta package. Please add the sources first.
+  view_users_show_2: "user since:"
+  view_users_show_3: (month/year)
+  view_roles_new_2: create
+  view_metapackages__metalist_16: Add sources
+  view_users_show_4: "last login:"
+  view_roles_new_3: back
+  view_admins_test_all_0: "The following repositories couldn't be read:"
+  view_metapackages__metalist_17: Sources
+  view_users_show_5: "Created bundles:"
+  view_admins_test_all_1: Every repositorie could be reached.
+  view_metapackages__metalist_18: add
+  view_users_show_6: "E-Mail:"
+  view_users_show_7: Edit
+  view_users_show_8: Message
+  view_metapackages__metalist_20: <option>0 bundles selected</option>
+  view_distributions_new_0: name
+  view_packages__packagelist_0: "Debian section:"
+  view_metapackages__metalist_21: You are not currently logged in. Please click on 'log in' above.
+  view_distributions_new_1: short name
+  view_categories_index_0: category-overview
+  view_packages__packagelist_1: "&nbsp;&nbsp;Programs&nbsp;only:"
+  view_distributions_new_2: URL
+  view_categories_index_1: Name
+  view_repositories_show_0: show repository
+  view_packages__packagelist_2: "&nbsp;&nbsp;Search:"
+  view_distributions_new_3: description
+  view_categories_index_2: Description
+  view_repositories_show_1: edit
+  view_packages__packagelist_3: go to details
+  view_distributions_new_4: create
+  view_categories_index_3: higher category
+  view_repositories_show_2: back
+  view_packages__packagelist_4: install
+  view_distributions_new_5: back
+  view_categories_index_4: View
+  view_repositories_show_3: "Path:"
+  view_repositories_show_4: "package-list for i386:"
+  view_packages__packagelist_6: Add sources
+  controller_application_0: This function is not available for anonymous users.
+  view_repositories_show_5: "Licence:"
+  view_packages__packagelist_7: Sources
+  view_categories_index_6: Edit
+  view_repositories_show_6: "        OpenSource"
+  view_packages__packagelist_8: add
+  view_home_mail_0: Notification in bugfixing
+  view_categories_index_10: Are you sure?
+  view_repositories_show_7: "        commercial "
+  view_packages_show_0: Install package. Please add the sources first, if needed.
+  view_home_mail_1: Please contact me at the following e-mail-adress concerning the bugfixing.
+  view_categories_index_8: Delete
+  view_categories_index_11: New category
+  view_repositories_show_8: "Security type:"
+  view_packages_show_1: Install
+  view_home_mail_2: "E-Mail:"
+  view_categories_index_12: show category-tree
+  view_repositories_show_9: native
+  view_packages_show_2: install package instantly
+  view_home_mail_3: "E-Mail:"
+  view_packages_show_3: add sources
+  view_home_mail_4: Send
+  view_packages_show_10: Debian section
+  view_packages_show_4: sources
+  view_passwords_edit_0: "    Password:"
+  view_packages_show_5: add sources for this package
+  view_passwords_edit_1: "    confirm password:"
+  view_packages_show_11: "Weblinks:"
+  view_packages_show_6: "yes"
+  view_passwords_edit_2: receive new password
+  view_user_profiles__profile_data_10: " only allow Ubuntu-sources (\\\"main/restricted\\\", very secure)"
+  view_packages_show_12: "Videos:"
+  view_packages_show_7: "no"
+  view_user_profiles__profile_data_11: " allow community-sources (\\\"universe/multiverse\\\", secure, more programs/better comfort)"
+  view_home_icons_10: program
+  view_metapackages__metalist_0: Name
+  view_packages_show_13: "Description:"
+  view_packages_show_8: "Popularity:"
+  view_derivatives_show_0: "Name:"
+  controller_sessions_0: Match Ubuntu-Linux to your personal needs.
+  view_user_profiles__profile_data_12: " allow every source (slightly unsecure but with even more programs/better comfort. Attention: programs installed from foreign sources can do harm to your computer!):"
+  view_metapackages__metalist_1: Category
+  view_packages_show_14: Distribution
+  view_packages_show_9: "/5 stars&nbsp;&nbsp; "
+  view_user_profiles__installation_0: Communtu post-installation
+  view_packages__deps_0: "\t   none"
+  view_derivatives_show_1: "sudo-program:"
+  controller_packages_0: packages
+  controller_sessions_1: You are already logged in.
+  view_user_profiles__profile_data_13: Here you can choose which licences you want to accept
+  view_home_icons_12: " Program (if not other program-icon is available)"
+  view_metapackages__metalist_2: standard
+  view_packages_show_15: source/repository
+  view_user_profiles__installation_1: In order to install, you have to specify some things at \"Base data\" or \"Details\".
+  view_packages__deps_1: "          Only for "
+  view_derivatives_show_2: "dialog-program:"
+  controller_packages_1: Package created
+  view_user_profiles__profile_data_14: " Free software (sources are open and further development is allowed)"
+  view_home_icons_13: program-bundle
+  view_metapackages__metalist_3: Publish
+  view_packages_show_16: package-version
+  view_user_profiles__installation_2: "Because of your choice the programs will now be installed on your computer. Please follow these steps:"
+  view_derivatives_show_3: "icon-file:"
+  controller_packages_2: Package updated.
+  controller_sessions_3: Your registered distribution was changed to {{dist_old}} because your old distribution is not supported by Ubuntu (and therefore by Communtu) anymore. We suggest an upgrade to {{dist_new}}.
+  view_user_profiles__profile_data_15: " allow unfree licences (free to, but the sources are closed - quasi the methadone for a fluent changeover to Linux)"
+  view_metapackages__metalist_4: Install
+  view_packages_show_17: "Contains these packages (\\\"depends\\\" and \\\"recommends\\\"):"
+  view_user_profiles__installation_3: Click on the icon in the lower right corner
+  view_derivatives_show_4: Edit
+  controller_sessions_4: You have been logged in.
+  view_home_icons_15: " program-bundle"
+  view_metapackages__metalist_5: go to detailed view
+  view_packages_show_18: direct and indirect covered packages
+  view_user_profiles__installation_4: Save the file on your computer, preferable on the desktop
+  controller_sessions_5: Your username or password is wrong. If applicable click on \"Register\" below.
+  view_user_profiles__profile_data_16: save
+  view_home_icons_16: migration from repositories
+  view_metapackages__metalist_6: "yes"
+  view_packages_show_19: "Conflicts with these packages (only those without a version):"
+  view_user_profiles__installation_5: "On your desktop (or your filemanager): make a right-click on the file, choose Properties and place a tick in front of \\\"Execute\\\"."
+  view_categories_new_0: New category
+  view_derivatives_show_5: Back
+  controller_sessions_6: Your account has not been activated yet. The activation code has been sent to you via e-mail.
+  view_user_profiles__profile_data_17: Save and choose packages
+  view_home_icons_17: external link
+  view_metapackages__metalist_7: "no"
+  view_user_profiles__installation_6: Double-click on the file to execure it.
+  controller_sessions_7: Your account has been deactivated or deleted.
+  view_metapackages__metalist_8: published
+  view_user_profiles__installation_7: For your information, the added sources and packages will be shown. Click on \"OK\" twice.
+  view_packages_show_20: "Is used at Communtu in these bundles:"
+  view_home_icons_19: " external link"
+  view_user_profiles__installation_8: The file is a script that automatically installs the preferred programs, including the download from the internet.
+  view_categories_new_3: Higher category
+  view_packages_show_21: "Is used in this packages:"
+  view_videos_show_0: "Url:"
+  view_user_profiles__installation_9: install
+  view_categories_new_4: Choose a Parent!
+  view_packages_show_22: comment
+  view_videos_show_1: "Description:"
+  controller_roles_0: Match Ubuntu-Linux to your personal needs.
+  view_home_icons_20: user-icon
+  view_categories_new_5: Create
+  view_categories_new_6: Back
+  view_videos_show_3: Back
+  view_home_icons_22: " user-icon"
+  view_packages_show_25: edit
+  view_packages_show_26: change metapackage into bundle
+  controller_debs_0: Debian-packages
+  view_packages_show_27: You are currently not logged in. Please click the above \"log in\"-button.
+  view_mailbox_show_0: Inbox
+  controller_debs_1: Deb created.
+  view_packages_edit_10: Package description
+  view_mailbox_show_1: From
+  view_derivatives_new_0: New derivative
+  controller_debs_2: Deb updated.
+  view_packages_edit_11: Save
+  view_mailbox_show_2: Subject
+  view_packages_edit_12: Back
+  view_mailbox_show_3: received
+  view_packages_edit_13: You are not currently logged in. Please click on 'log in' above.
+  view_mailbox_show_4: back
+  view_mailbox_show_5: You have no messages in your inbox.
+  view_admins_sync_all_0: back
+  view_admins_sync_all_1: "Error: couldn't synchronise repositories"
+  model_user_profile_tabz_0: base date
+  controller_suggestion_10: "# bundle:"
+  view_admins_sync_all_2: repositories synchronised
+  model_user_profile_tabz_1: detailed choice
+  controller_suggestion_11: add repository
+  view_admins_sync_all_3: "Repository-URL: "
+  model_user_profile_tabz_2: sources
+  controller_suggestion_12: The following repositories will be added
+  view_admins_sync_all_4: "Total packages:"
+  view_home_auth_error_0: Error with authentication
+  model_user_profile_tabz_3: carry out an installation
+  view_admins_sync_all_5: "Newly added packages:"
+  view_home_auth_error_1: The file you sent to Communtu couldn't be authenticated. Please try again with logging in again or filling in the form again.
+  view_admins_sync_all_6: "Updated packages:"
+  controller_suggestion_15: Install package
+  view_admins_sync_all_7: "The following packages couldn't be saved in the database:"
+  controller_suggestion_16: The following packages will be installed
+  view_home_impressum_0: imprint
+  controller_sent_0: Subject must not be empty.
+  view_home_impressum_1: "Natur, Geist und Technik - Verein zur F\xC3\xB6rderung der Allgemeinbildung e.V."
+  controller_sent_1: user does not exist
+  view_user_profiles__sources_0: Sources for the soon be installed programs
+  view_home_impressum_2: AG Communtu
+  controller_sent_2: message successfully send
+  view_user_profiles__sources_1: The soon be installed programs and packages are shown and ordered by the appropriate sources so you can see why some sources will be added.
+  model_package_0: open source
+  view_home_impressum_3: "Zentrum f\xC3\xBCr Solidarische \xC3\x96konomie"
+  view_user_profiles__profile_rating_0: detailed choice of the programs and bundles that shall be installed
+  model_package_1: Commercial
+  view_home_impressum_4: Bauernstr. 2
+  view_user_profiles__profile_rating_1: "Here you can choose the use of your computer in detail. With a click on "
+  model_package_2: unknown
+  view_home_icons_0: icons used in Communtu
+  view_home_impressum_5: 28203 BremenGermany
+  view_user_profiles__profile_rating_2: " you can open or close a section to make a detailed selection."
+  model_package_3: native
+  view_home_icons_1: Install package. If necessary please add the sources beforehand.
+  view_home_impressum_6: Possibility to donate
+  view_user_profiles__profile_rating_3: Attention! When finished, don't forget to click on \"Save\".
+  model_package_4: trusted
+  view_home_icons_2: Install package. If necessary please add the sources beforehand.
+  view_home_impressum_7: Allgemeinbildung e.V.
+  view_user_profiles__profile_rating_4: save
+  model_package_5: third party
+  view_home_icons_3: Install package(s).
+  view_home_impressum_8: "Bank-account: 172 9375, Sparkasse Bremen, Bank-number 290 501 01"
+  model_package_6: <br> has not the right format
+  view_home_icons_4: add source
+  view_home_impressum_9: "Purpose: Communtu"
+  model_package_7: couldn't determine URL for {{repo}}
+  view_home_icons_6: " install sources"
+  view_home_about_10: How can i submit my experience with programs to the Communtu-system?
+  model_package_9: "When syncing repository, could not find PackageDistr for #{p.name} in repository #{repository.name}"
+  view_home_icons_7: install via script
+  view_home_about_11: Did you make good experience with programs? You can merge thematic programs to a bundle and add this to the system. To do so, you choose <b>new bundle</b> below of <b>bundle-editor</b> on the left side. Then you can add Ubuntu-Packages to the bundle and, after you have finished, click on the floppy-icon to save the bundle. The bundle needs a name, a description and a thematic classification so that other users can use it too. Just like folders and files the bundle can not only consist of Ubuntu-packages but also of other bundles too.
+  view_home_about_12: <b>administrate bundles</b> on the left side offers an overview about the available bundles. At last, an overview about the available Ubuntu-versions (distributions) can be found at <b>Ubuntu-versions</b>.
+  view_home_icons_9: " installatin via shell-script"
+  view_home_about_13: post-installation of single functions
+  lib_system_0: In order to use this feature you have to be logged in.
+  controller_derivatives_0: Ubuntu derivatives
+  view_packages__search_0: Search for packages
+  view_home_about_14: You already have a executable Ubuntu-installation and want to add some functions? You can also use Communtu for this. You can install single bundles at <b>administrate bundle</b> and at <b>search program</b> even single programs.
+  view_distributions_edit_0: edit distribution
+  lib_system_1: You are not privileged to do this.
+  controller_derivatives_1: Derivative created.
+  view_home_about_15: Registration
+  view_distributions_edit_1: name
+  lib_system_2: http://www.communtu.de
+  controller_derivatives_2: Derivative updated.
+  view_home_about_16: In order to use Communtu you need to register yourself. To do so, just click on the \"Registration\"-button in the menu above.
+  view_distributions_edit_2: short name
+  view_home_home_10: <b>Ubuntu-releases</b> Overview about the available Ubuntu-releases (distributions).
+  view_home_about_17: Imprint
+  view_debs_index_0: Failed or running deb-generation
+  view_distributions_edit_3: URL
+  view_home_home_11: <b>administrate user</b> As an administrator you can change the role of the users. Act with caution!
+  view_home_about_18: "Natur, Geist und Technik - Verein zur F\xC3\xB6rderung der Allgemeinbildung e.V."
+  view_debs_index_1: Go back to the Communtu-menu
+  view_distributions_edit_4: description
+  view_home_home_12: <b>administrate categories</b> As an administrator you can create new categories or change the structure of a category-tree here. Act with caution!
+  view_debs_index_2: "  There are no failed deb-generations! Congratulations!"
+  view_distributions_edit_5: save
+  view_home_home_13: <b>News</b> Reference to events about Communtu, the Communtu-blog ...
+  view_home_about_19: "Zentrum f\xC3\xBCr Solidarische \xC3\x96konomie"
+  view_debs_index_3: "Create every failed deb <b>Warning: only do this at admin.communtu.de!</b>"
+  view_distributions_edit_6: view
+  view_home_home_14: There are also
+  view_debs_index_4: View
+  view_home_about_20: possibility to donate
+  view_distributions_edit_7: back
+  view_home_home_15: more detailled information
+  view_metapackages_rdepends_0: In bundle
+  view_debs_index_5: Create
+  view_home_about_21: Allgemeinbildung e.V.
+  view_home_home_16: " about this project and its participants in the"
+  view_metapackages_rdepends_1: " directly an indirectly contained bundles and packages"
+  controller_home_0: Match Ubuntu-Linux to your personal needs
+  view_home_about_22: "Bank-account: 172 9375, Sparkasse Bremen, Bank-number 290 501 01"
+  view_metapackages_immediate_conflicts_0: Conflicts inside bundles
+  view_metapackages_rdepends_2: You are not currently logged in. Please click on 'log in' above.
+  controller_home_1: The e-mail has been sent to us. Many thanks for your feedback.
+  view_home_about_23: "Purpose: Communtu"
+  view_home_home_17: imprint.
+  view_metapackages_immediate_conflicts_1: " conflicts with"
+  controller_home_2: We will notify you via e-mail.
+  view_home_about_24: Donation receipt can be issued.
+  view_home_home_18: "\tClick on\t"
+  controller_home_3: This does not appear to be a list with Ubuntu-packages... <br />The packagelist must contain one packagename per line
+  view_home_home_19: Registration
+  controller_home_4: A file with the package list (one package name per line) has to be given
+  view_derivatives_index_0: show derivatives
+  view_home_home_20: ", to create a new user, or"
+  view_derivatives_index_1: View
+  view_home_home_21: log
+  view_derivatives_index_2: Edit
+  view_home_home_22: in, or
+  view_derivatives_index_3: Delete
+  view_home_home_23: use Communtu anonymously.
+  view_derivatives_index_4: Are you sure?
+  controller_categories_0: Categories
+  view_layouts_application_10: Log in
+  view_home_home_24: to the imprint
+  view_derivatives_index_5: New derivative
+  controller_categories_1: You are not an administrator!
+  view_layouts_application_11: Anonymous access
+  controller_categories_2: Category created.
+  view_sent_show_0: "Subject:"
+  controller_categories_3: Category updated.
+  view_layouts_application_12: Register
+  view_sent_show_1: "To:"
+  view_layouts_application_13: About Communtu
+  view_sent_show_2: "Date:"
+  view_layouts_application_14: Feedback to Communtu
+  view_sent_show_3: back
+  view_layouts_application_15: logged in as
+  view_repositories_index_0: repositories
+  view_layouts_application_16: new message
+  view_repositories_index_1: show
+  view_repositories_index_2: edit
+  controller_metapackages_10: Bundle changed. It could take a couple of minutes until the changes are available in the corresponding metapackage.
+  view_repositories_index_3: delete
+  view_layouts_application_18: no new messages
+  controller_metapackages_11: Couldn't delete package from bundle.
+  view_repositories_index_4: Are you sure?
+  controller_metapackages_12: " bundle selected </option> \\n"
+  view_repositories_index_5: new repository
+  controller_metapackages_13: <option calue='0'>Delete</option>
+  view_distributions_show_0: "Repositories:"
+  view_metapackages_migrate_0: Wich distribution are the bundles to be migrated from?
+  controller_metapackages_14: <option value='1'>Migrate</option>
+  view_distributions_show_1: check everything
+  view_metapackages_migrate_1: Which distribution are the bundles to be migrated to?
+  controller_metapackages_15: <option value='2'>Publish<option/>
+  view_distributions_show_2: synchronise everything
+  view_metapackages_migrate_2: Migrate
+  view_distributions_show_3: read sources.list
+  view_metapackages_migrate_3: You are not currently logged in. Please click on 'log in' above.
+  view_distributions_show_4: add repository
+  view_user_profiles__installation_10: install

@@ -70,7 +70,7 @@ require 'german_date_names'
 # The internationalization framework can be changed
 # to have another default locale (standard is :en) or more load paths.
 # All files from config/locales/*.rb,yml are added automatically.
-config.i18n.load_path += ["#{RAILS_ROOT}/config/locales/template.yml","#{RAILS_ROOT}/config/locales/numbers.yml"]
+config.i18n.load_path += ["#{RAILS_ROOT}/config/locales/template.yml","#{RAILS_ROOT}/config/locales/template-en.yml","#{RAILS_ROOT}/config/locales/numbers.yml"]
 config.i18n.default_locale = :de
 
 end
