@@ -42,10 +42,10 @@ class UsersController < ApplicationController
     @user.activated_at = Time.now    
     @user.profile_version = 1
     if params[:announce] == "1"
-      system "echo \"\" | mail -s \"announce\" -c info@toddy-franz.de -a \"FROM: #{@user.email}\" info@toddy-franz.de &"
+      system "echo \"\" | mail -s \"announce\" -c info@toddy-franz.de -a \"FROM: #{@user.email}\" communtu-announce-de+subscribe@googlegroups.com &"
     end
     if params[:discuss] == "1"
-      system "echo \"\" | mail -s \"discuss\" -c info@toddy-franz.de -a \"FROM: till@dfki.de\" info@toddy-franz.de &"
+      system "echo \"\" | mail -s \"discuss\" -c info@toddy-franz.de -a \"FROM: #{@user.email}\" communtu-discuss-de+subscribe@googlegroups.com &"
     end
     @user.save!
     #Uncomment to have the user logged in after creating an account - Not Recommended
