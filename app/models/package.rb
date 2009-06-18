@@ -93,7 +93,7 @@ class Package < BasePackage
                  :include => {:package_distrs, :dependencies})
   end
   
-  def conflicts
+  def slow_conflicts
     c = Set.[]
     self.package_distrs.each do |pd|
       c.merge(pd.conflicts)

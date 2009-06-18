@@ -63,6 +63,13 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.datetime "updated_at"
   end
 
+  create_table "conflicts", :force => true do |t|
+    t.integer  "package_id"
+    t.integer  "package2_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "debs", :force => true do |t|
     t.integer  "metapackage_id"
     t.integer  "distribution_id"

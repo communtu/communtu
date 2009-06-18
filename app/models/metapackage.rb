@@ -52,7 +52,7 @@ class Metapackage < BasePackage
   end
 
   #conflicts within the bundle
-  def conflicts
+  def internal_conflicts
     all_cons = {}
     packages = self.all_recursive_packages
     packages.each do |p|
@@ -62,6 +62,24 @@ class Metapackage < BasePackage
       end
     end
     return all_cons
+  end
+
+  #conflicts within the bundle
+  def conflicts1
+    all_cons = Conflict.all
+    our_cons = {}
+    packages = self.base_packages
+    packages_ids = packages.map{|p| p.id}
+    packages.each do |p|
+      potential_cons = all_cons[p.id]
+      if !potential_cons.nil? then
+        cons = potential_cons & packages_ids
+        if !cons.empty? then
+          our_cons[p]=Package.find(cons)
+        end
+      end
+    end
+    return our_cons
   end
   
   # this function is needed to complement is_present for class Package

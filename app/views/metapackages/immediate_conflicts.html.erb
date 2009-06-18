@@ -1,20 +1,8 @@
 <h2><%=t(:view_metapackages_immediate_conflicts_0)%></h2>
 <ol>
 	<% for c in @conflicts %>
-	<% m = c[0] %>
-	<% conflicts = c[1]%>
 	<li>
-		<%= link_to m.name, metapackage_path(m)%>
-		<ul>
-			<% conflicts.each do |p,cons|%>
-			  <li>
-                 <%= link_to p.name, package_path(p)%><%=t(:view_metapackages_immediate_conflicts_1)%>
-<% for conp in cons %>
-				   <%= link_to conp.name, package_path(conp)%>&nbsp; 
-				 <% end %>
-			  </li>
-			<% end %>
-		</ul>
-	</li>
+      <%= render(:partial => "conflict", :object => c) %>
+    </li>
 	<% end %>
 </ol>

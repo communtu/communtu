@@ -48,6 +48,7 @@ class MetapackagesController < ApplicationController
     @metapackage = Metapackage.find(params[:id])
     @categories  = Category.find(1)
     @backlink    = request.env['HTTP_REFERER']
+    @conflicts   = {}
   end
 
   # POST /metapackages
@@ -84,8 +85,13 @@ class MetapackagesController < ApplicationController
     error = false
     flash[:error] = ""
     @metapackage = Metapackage.find(params[:id])
+    @conflicts = {} # @metapackage.conflicts1
+    if !@conflicts.empty? then
+        flash[:error] += t(:controller_metapackages_conflicts)
+        error = true
+    end
     if @metapackage.is_published? then
-      if params[:metapackage][:name]!=@metapackage.name then
+      if !params[:metapackage][:name].nil? and params[:metapackage][:name]!=@metapackage.name then
         flash[:error] += t(:controller_metapackages_no_renaming)
         error = true
       end
@@ -333,6 +339,11 @@ class MetapackagesController < ApplicationController
   
   def immediate_conflicts
     @conflicts = Metapackage.all.map{|m| [m,m.immediate_conflicts]}
+  end
+
+  def conflicts
+    @metapackage = Metapackage.find(params[:id])
+    @conflict = [@metapackage,@metapackage.conflicts_new]
   end
   
   def rdepends

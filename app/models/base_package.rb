@@ -1,8 +1,10 @@
 class BasePackage < ActiveRecord::Base
+  require 'set.rb'
+
   has_many :user_packages, :foreign_key => :package_id
   has_many :videos
-  
-    require 'set.rb'
+  has_many :conflicts, :foreign_key => :package_id
+  has_many :conflicting_packages, :source => :base_package, :through => :conflicts, :foreign_key => :package2_id
 
     # type of a package, for sorting package lists
   def ptype
@@ -58,6 +60,29 @@ class BasePackage < ActiveRecord::Base
       end
     end
   end
+
+    # packages directly or indirectly installed by this bundle
+  def all_recursive_packages1(deps)
+    packages = Set.[]
+    all_recursive_packages_aux1 deps, packages
+    return packages
+  end
+
+  def all_recursive_packages_aux1 deps, packages
+    if self.class == Package
+      if !packages.include?(self)
+        packages.add(self)
+        deps[self].each do |p|
+            p.all_recursive_packages_aux packages
+        end
+      end
+    else
+      self.base_packages.each do |p|
+        p.all_recursive_packages_aux packages
+      end
+    end
+  end
+
 
   # packages directly or indirectly installed by this bundle, structured output
   def structured_all_recursive_packages
