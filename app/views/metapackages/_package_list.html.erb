@@ -3,12 +3,18 @@
     <% @size_helper = 0 %>
 	<% mcs = metapackage.metacontents.sort_by {|mc| [mc.package.section, mc.package.ptype, mc.package.name] }%>
 	<% mcs.each do |mc| %>
-	<% basecss = cycle("packageList0", "packageList1") %>
-	<% if editable || mc.package.class == Metapackage || (mc.distributions.include?(distribution) && mc.derivatives.include?(derivative))%>
-	   <% css = basecss%>
-	<% else %>   
-	   <% css = "packageListGrey"%>
-	<% end %>   
+    <% conflicts =@conflicts[mc.package] %>
+    <% if conflicts.nil? then conflicts = [] end %>
+    <% if conflicts.empty? then %>
+      <% if editable || mc.package.class == Metapackage || (mc.distributions.include?(distribution) && mc.derivatives.include?(derivative))%>
+    	<% css = cycle("packageList0", "packageList1") %>
+	  <% else %>
+	     <% css = "packageListGrey"%>
+	  <% end %>
+    <% else %>
+        <% css=cycle("packageList0conflict", "packageList1conflict") %>
+    <% end  %>
+
 		<tr>
 			<% if mc.package.class == Package \
                   then @contr = :packages; @icon = mc.package.icon(30) \
@@ -31,6 +37,14 @@
 			<% end %>
 			</td>
 		</tr>
+        <% if !conflicts.empty? %>
+           <tr><td colspan="2" class="<%= css+"noborder" %>">
+             <%=t(:view_metapackages__package_list_conflicts) %>
+             <% for c in conflicts %>
+               &nbsp; <%= c.name %>
+             <% end %>
+           </td></tr>
+        <% end %>
         <%if ! mc.package.description.empty? %>
 		   <tr>
 			<td colspan="2" class="<%= css+"noborder" %>">

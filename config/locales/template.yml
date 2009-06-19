@@ -35,7 +35,6 @@ de:
   controller_home_5: "Wir haben Deinen Vorschlag erhalten und werden Dich informieren, ob und wann wir das vorgeschlagene Repository aufnehmen werden."
   controller_messages_0: "Ursprüngliche Nachricht von {{user}} am {{datum}}  \n  \n"
   controller_metapackages_0: "Bündel"
-  controller_metapackages_10: "Bündel geändert. Es dauert ein paar Minuten, bis die Anderungen im zugehörigen Metapaket verfügbar sind. "
   controller_metapackages_11: "Konnte Paket nicht aus Bündel entfernen."
   controller_metapackages_12: " Bündel ausgewählt</option> \\n"
   controller_metapackages_13: "<option value='0'>Löschen</option>"
@@ -52,7 +51,10 @@ de:
   controller_metapackages_9: Die Beschreibung darf nicht leer sein<br>
   controller_metapackages_cannot_destroy: Veröffentlichte Bündel können nicht gelöscht werden.
   controller_metapackages_no_renaming: Veröffentlichte Bündel können nicht umbenannt werden.
-  controller_metapackages_conflicts: Das Bündel enthält Pakete, die in Konflikt zueinander stehen.
+  controller_metapackages_conflicts: Das Bündel enthält Pakete, die in Konflikt zueinander stehen!
+  controller_metapackages_no_save: Das Bündel enthält Konflikte und kann deshalb nicht als Metapaket gespeichert werden.
+  controller_metapackages_debianizing: Das Bündel wird gerade als Metapaket erzeugt und hochgeladen. Dies dauert ein paar Minuten.
+  controller_metapackages_not_changed: Das Bündel wurde schon als Metapaket erzeugt und hochgeladen.
   controller_packages_0: Pakete
   controller_packages_1: Paket erzeugt.
   controller_packages_2: Paket aktualisiert.
@@ -579,6 +581,7 @@ de:
   view_metapackages_edit_6: Speichern
   view_metapackages_edit_7: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
   view_metapackages_edit_gpl: "Ich stimme zu, die Bündel Information unter der <a href=\"http://www.gnu.de/documents/gpl.de.html\">GNU General public license</a> (Version 2.0 oder höher) zu veröffentlichen."
+  view_metapackages__package_list_conflicts: "Konflikte mit folgenden Paketen/Bündeln:"
   view_metapackages_finish_migrate_0: "Alle Bündel wurden von "
   view_metapackages_finish_migrate_1: " nach "
   view_metapackages_finish_migrate_2: " migriert."
@@ -646,6 +649,11 @@ de:
   view_metapackages_show_7: nein
   view_metapackages_show_8: "Lizenztyp:"
   view_metapackages_show_9: "Veröffentlicht: "
+  view_metapackages_show_modified: "Das Bündel enthält Änderungen."
+  view_metapackages_show_save: "Bündel als Metapaket speichern"
+  view_metapackages_show_deb_error: Beim Erzeugen von Metapaketen ist ein Fehler aufgetreten. Wir kümmern uns um das Problem.
+  view_metapackages_show_version_v: "(Version {{v}})"
+  view_metapackages_show_version: "Version:"
   view_my_mailer_mail_0: |-
     Hallo,
     
@@ -953,7 +961,6 @@ de:
   view_users__sidebar_6: Kategorien verwalten
   view_users__sidebar_7: Derivate verwalten
   view_users__sidebar_8: Fehlgeschlagene debs
-  view_users__sidebar_9: Konflikte
   view_users__user_0: aktivieren
   view_users__user_1: deaktivieren
   view_users__user_2: Rollen bearbeiten

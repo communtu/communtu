@@ -69,21 +69,33 @@ class Deb < ActiveRecord::Base
         safe_system "#{REPREPRO} -C #{component} includedeb #{codename} #{newfile} >> #{RAILS_ROOT}/log/debianize.log 2>&1"
         # remove package files, but not folder
         safe_system "rm #{RAILS_ROOT}/debs/#{name}/#{name}* >/dev/null 2>&1 || true"
-        self.generated = true
+        # mark this deb as susccessfully generated
+        # self.generated = true
         self.errmsg = nil
         self.log = IO.popen("tail -n80 #{RAILS_ROOT}/log/debianize.log").read
         self.save
+        # was this the last deb to be generated for the bundle? Then mark bundle as updated
+        if Deb.find(:first,:conditions => ["metapackage_id = ? and generated = ?",meta.id,false]).nil?
+          meta.modified = false
+          meta.debianizing = false
+          meta.deb_error = false
+          meta.save
+        end
       rescue StandardError => err
         self.generated = false
         self.errmsg = err
         self.log = IO.popen("tail -n80 #{RAILS_ROOT}/log/debianize.log").read
         self.save
+        meta.deb_error = true
+        meta.save
       end
     rescue 
-        self.generated = false
-        self.errmsg = "unknown"
-        self.log = IO.popen("tail -n80 #{RAILS_ROOT}/log/debianize.log").read
-        self.save
+      self.generated = false
+      self.errmsg = "unknown"
+      self.log = IO.popen("tail -n80 #{RAILS_ROOT}/log/debianize.log").read
+      self.save
+      meta.deb_error = true
+      meta.save
       f=File.open("#{RAILS_ROOT}/log/debianize.log","a")
       f.puts
       f.puts "Debianizing #{name} failed! (id = #{id})"
@@ -123,8 +135,8 @@ class Deb < ActiveRecord::Base
     f.close
   end
 
-  def self.version_lt(v1,v2)
-    system('dpkg', '--compare-versions', v1, 'lt', v2)
+  def self.version_gt(v1,v2)
+    system('dpkg', '--compare-versions', v1, 'gt', v2)
   end
   
   protected

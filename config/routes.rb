@@ -13,6 +13,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :packages
   map.resources :repositories
   
+  map.connect '/metapackages/save', :controller => 'metapackages', :action => 'save'
   map.connect '/metapackages/immediate_conflicts', :controller => 'metapackages', :action => 'immediate_conflicts'
   map.connect '/metapackages/conflicts', :controller => 'metapackages', :action => 'conflicts'
   map.connect '/metapackages/rdepends', :controller => 'metapackages', :action => 'rdepends'

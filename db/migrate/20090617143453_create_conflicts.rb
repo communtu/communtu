@@ -14,22 +14,9 @@ class CreateConflicts < ActiveRecord::Migration
         Conflict.create(:package_id => p.id, :package2_id => c.id)
       end
     end
+    Conflict.find(:all,:conditions => ["package_id = package2_id"]).each{|c| c.destroy}
     puts "Computing bundle conflicts"
-    begin
-      modified = false
-      puts "New iteration"
-      Metapackage.all.each do |m|
-        puts m.id
-        m.base_packages.each do |p|
-          p.conflicting_packages.each do |cp|
-            if Conflict.find(:first,:conditions => {:package_id => p.id, :package2_id => cp.id}).nil?
-              modified = true
-              Conflict.create(:package_id => p.id, :package2_id => cp.id)
-            end
-          end
-        end
-      end
-    end while modified
+    Metapackage.update_conflicts
   end
 
   def self.down

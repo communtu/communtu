@@ -21,6 +21,7 @@ class MetapackagesController < ApplicationController
   # GET /metapackages/1.xml
   def show
     @metapackage = Metapackage.find(params[:id])
+    @conflicts = @metapackage.internal_conflicts
     if logged_in?
     @distribution = current_user.distribution
     @derivative = current_user.derivative
@@ -55,6 +56,7 @@ class MetapackagesController < ApplicationController
   # POST /metapackages.xml
   def create
     @metapackage = Metapackage.new(params[:metapackage])
+    @metapackage.modified = true
     if @metapackage.name==t(:controller_metapackages_1) or Metapackage.all.map{|m| m.debian_name}.include?(@metapackage.debian_name) then
       flash[:error] = t(:controller_metapackages_2)
       render :action => "new"
@@ -85,7 +87,7 @@ class MetapackagesController < ApplicationController
     error = false
     flash[:error] = ""
     @metapackage = Metapackage.find(params[:id])
-    @conflicts = {} # @metapackage.conflicts1
+    @conflicts = @metapackage.internal_conflicts
     if !@conflicts.empty? then
         flash[:error] += t(:controller_metapackages_conflicts)
         error = true
@@ -109,7 +111,7 @@ class MetapackagesController < ApplicationController
     end
     if !@metapackage.debianized_version.nil? \
        and !@metapackage.debianized_version.empty? \
-       and Deb.version_lt(params[:metapackage][:version],@metapackage.debianized_version) then
+       and !Deb.version_gt(params[:metapackage][:version],@metapackage.debianized_version) then
       flash[:error] += t(:controller_metapackages_8)
       error = true
     end
@@ -124,7 +126,10 @@ class MetapackagesController < ApplicationController
     if params[:derivatives].nil? then
       params[:derivatives] = []
     end
-    Metacontent.find(:first, :conditions => ["metapackage_id = ? and base_package_id = ?",@metapackage.id,p])
+    # mark bundle as modified
+    @metapackage.modified = true
+    @metapackage.save
+    # save selection of distributions and deriviatives
     params[:distributions].each do |p, dists|
       mc = Metacontent.find(:first, :conditions => ["metapackage_id = ? and base_package_id = ?",@metapackage.id,p])
       mc.metacontents_distrs.each {|d| d.destroy} # delete all distributions
@@ -136,11 +141,9 @@ class MetapackagesController < ApplicationController
       ders.each {|d| mc.derivatives << Derivative.find(d)}             # and add the selected ones
     end
     respond_to do |format|
+      # save other attributes
       if @metapackage.update_attributes(params[:metapackage]) and !error
-        flash[:notice] = t(:controller_metapackages_10)
-        fork do
-          system 'echo "Metapackage.find('+@metapackage.id.to_s+').debianize" | script/console production'
-        end
+        flash.delete(:error)
         format.html { redirect_to :action => :show, :id => @metapackage.id }
         format.xml  { head :ok }
       else
@@ -150,6 +153,22 @@ class MetapackagesController < ApplicationController
     end
   end
 
+  def save
+    @metapackage = Metapackage.find(params[:id])
+    if !@metapackage.internal_conflicts.empty?
+      flash[:error] = t(:controller_metapackages_no_save)
+    elsif !@metapackage.modified
+      flash[:notice] = t(:controller_metapackages_not_changed)
+    elsif @metapackage.debianizing
+      flash[:notice] = t(:controller_metapackages_debianizing)
+    else
+      @metapackage.debianize
+      fork do
+        system 'echo "Metapackage.find('+@metapackage.id.to_s+').generate_debs" | script/console production'
+      end
+    end
+    redirect_to :action => :show, :id => @metapackage.id
+  end
   # DELETE /metapackages/1
   # DELETE /metapackages/1.xml
   def destroy
@@ -169,19 +188,12 @@ class MetapackagesController < ApplicationController
   def publish
     package = Metapackage.find(params[:id]);
     package.published = Metapackage.state[:published]
+    package.modified = true
     package.save!
     
     redirect_to :controller => :metapackages, :action => :show
   end
   
-  def unpublish
-    package = Metapackage.find(params[:id]);
-    package.published = Metapackage.state[:rejected]
-    package.save!
-    
-    redirect_to :controller => :metapackages, :action => :show
-  end
-
   def edit_packages
     @package = Metapackage.find(params[:id]);
     card_editor(@package.name,@package.base_packages,session,current_user)
@@ -191,7 +203,7 @@ class MetapackagesController < ApplicationController
     if Metacontent.delete(params[:package_id]).nil?
       flash[:error] = t(:controller_metapackages_11)
     end
-    redirect_to :controller => :metapackages, :action => :show, :id => params[:id] 
+    redirect_to :controller => :metapackages, :action => :edit, :id => params[:id]
   end
   
   def edit_action
@@ -204,14 +216,13 @@ class MetapackagesController < ApplicationController
             edit_packages
         elsif action == "publish" 
             meta.published = 1
-            meta.save!
-            redirect_to metapackage_path(meta)
-        elsif action == "unpublish"
-            meta.published = 0
+            meta.modified = true
             meta.save!
             redirect_to metapackage_path(meta)
         elsif action == "delete"
-            meta.destroy
+            if !meta.published
+              meta.destroy
+            end
             redirect_to metapackages_path
         else    
             redirect_to metapackage_path(meta)
@@ -335,15 +346,6 @@ class MetapackagesController < ApplicationController
       :comment => params[:comment] } )
     c.save 
     redirect_to :controller => :metapackages, :action => :show, :id => params[:id] 
-  end
-  
-  def immediate_conflicts
-    @conflicts = Metapackage.all.map{|m| [m,m.immediate_conflicts]}
-  end
-
-  def conflicts
-    @metapackage = Metapackage.find(params[:id])
-    @conflict = [@metapackage,@metapackage.conflicts_new]
   end
   
   def rdepends

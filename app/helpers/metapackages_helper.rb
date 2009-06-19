@@ -46,5 +46,21 @@ module MetapackagesHelper
       
       return options
   end
-  
+
+  def show_version meta
+    if meta.version!=meta.debianized_version
+      t(:view_metapackages_show_version_v, :v=> meta.version)
+    else
+      ""
+    end
+  end
+
+  def show_debversion meta
+    if meta.version!=meta.debianized_version
+      t(:view_metapackages_show_version_v, :v=> meta.debianized_version)
+    else
+      ""
+    end
+  end
+
 end

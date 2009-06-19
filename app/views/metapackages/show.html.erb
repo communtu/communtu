@@ -1,10 +1,28 @@
 <div class="inner0">
 <%= render_flash %>
 <% if logged_in? %>
-
+<% if !@conflicts.empty?  %>
+  <div class="flash" id="error"><%=t(:controller_metapackages_conflicts)%> 
+  <%=show_version(@metapackage)%></div>
+<% end %>
+<% if @metapackage.deb_error  %>
+  <div class="flash" id="error"><%=t(:view_metapackages_show_deb_error)%>
+  <%=show_debversion(@metapackage)%></div>
+<% elsif @metapackage.debianizing %>
+  <div class="flash" id="notice"><%=t(:controller_metapackages_debianizing)%>
+  <%=show_debversion(@metapackage)%></div>
+<% end %>
+<% if @metapackage.modified and !(@metapackage.debianizing and !@metapackage.deb_error and @metapackage.version==@metapackage.debianized_version) %>
+  <div class="flash" id="notice">
+    <%=t(:view_metapackages_show_modified)%>  <%=show_version(@metapackage)%> &nbsp;
+    <% if !@metapackage.debianizing %> 
+      <%=link_to t(:view_metapackages_show_save), :action => 'save', :id => @metapackage.id%>
+    <% end %>
+  </div>
+<% end %>
 <table width="100%">
 	<tr><td width="50%">
-			<span class="headline">   <%=h @metapackage.name %>
+			<span class="headline">   <%=h @metapackage.name %> 
 </span> <br />
 <font size="-3"><%=t(:view_metapackages_show_0)%><b><%= link_to @metapackage.user.login, user_path(@metapackage.user.id) %></b></font> 
 <%=link_to (image_tag("message.png", :alt=>t(:view_metapackages_show_1),:title=>t(:view_metapackages_show_2), :mouseover=>"message_rollover.png",:border=>"0" ), {:controller=>"sent", :action=>"new", :mail_to=>@metapackage.user.id}) %>
@@ -24,19 +42,23 @@
   <%= @metapackage.description %>
 </p>
 
-<p>
-  <b><%=t(:view_metapackages_show_4)%></b>
-  <%=h @metapackage.category.name %>
-</p>
+<table>
+  <tr><td><b><%=t(:view_metapackages_show_version)%></b>
+          <%= h @metapackage.version %> </td>
+  <td><b><%=t(:view_metapackages_show_4)%></b>
+  <%=h @metapackage.category.name %></td>
+  </tr>
 
-<p>
+<tr><td>
   <b><%=t(:view_metapackages_show_5)%></b>
   <%=@metapackage.default_install ? t(:view_metapackages_show_6) : t(:view_metapackages_show_7) %>
-</p>
-<p>
+  &nbsp; &nbsp;
+</td>
+<td>
   <b><%=t(:view_metapackages_show_8)%></b>
   <%= Package.show_license_type(@metapackage.license_type) %>
-</p>
+</tr>
+</table>
 <p>
     <b><%=t(:view_metapackages_show_9)%></b>
     <% if @metapackage.is_published? %>

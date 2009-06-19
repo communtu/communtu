@@ -10,7 +10,7 @@
 	  <% deps = rd[1] %>
         <li>
 <%=t(:view_packages__deps_1)%><%= link_to(rep.distribution.name, distribution_path(rep.distribution)) %>
-	              <%= link_to(rep.url, repository_path(rep)) %> :
+	              <%= link_to(rep.name, repository_path(rep)) %> :
           <br />
 	      <%= render(:partial => 'package', :collection => deps) %>
 	    </li>

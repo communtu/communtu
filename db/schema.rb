@@ -31,6 +31,9 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.integer  "security_type"
     t.string   "version"
     t.string   "debianized_version"
+    t.boolean  "modified",           :default => false
+    t.boolean  "debianizing",        :default => false
+    t.boolean  "deb_error",          :default => false
   end
 
   create_table "cart_contents", :force => true do |t|

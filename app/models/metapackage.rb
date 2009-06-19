@@ -38,25 +38,12 @@ class Metapackage < BasePackage
     Metapackage.find(:all,:conditions => ["metacontents.base_package_id = ?",self.id], :include => :metacontents)
   end
 
-  #immediate conflicts within the bundle
-  def immediate_conflicts
-    all_cons = {}
-    packages = self.packages
-    packages.each do |p|
-      cons = p.conflicts & packages
-      if !cons.empty? then
-        all_cons[p]=cons
-      end
-    end
-    return all_cons
-  end
-
   #conflicts within the bundle
   def internal_conflicts
     all_cons = {}
-    packages = self.all_recursive_packages
+    packages = self.base_packages
     packages.each do |p|
-      cons = p.conflicts & packages
+      cons = p.conflicting_packages & packages
       if !cons.empty? then
         all_cons[p]=cons
       end
@@ -64,22 +51,21 @@ class Metapackage < BasePackage
     return all_cons
   end
 
-  #conflicts within the bundle
-  def conflicts1
-    all_cons = Conflict.all
-    our_cons = {}
-    packages = self.base_packages
-    packages_ids = packages.map{|p| p.id}
-    packages.each do |p|
-      potential_cons = all_cons[p.id]
-      if !potential_cons.nil? then
-        cons = potential_cons & packages_ids
-        if !cons.empty? then
-          our_cons[p]=Package.find(cons)
+  def self.update_conflicts
+    begin
+      puts "New iteration"
+      modified = false
+      Metapackage.all.each do |m|
+        m.base_packages.each do |p|
+          p.conflicting_packages.each do |cp|
+            if Conflict.find(:first,:conditions => {:package_id => m.id, :package2_id => cp.id}).nil?
+              modified = true
+              Conflict.create(:package_id => m.id, :package2_id => cp.id)
+            end
+          end
         end
       end
-    end
-    return our_cons
+    end while modified
   end
   
   # this function is needed to complement is_present for class Package
@@ -306,32 +292,37 @@ class Metapackage < BasePackage
     # start with version 0.1 if there is none
     if self.version.nil? or self.version.empty? then
       self.version = "0.1"
+      self.debianized_version = "0.1"
       self.save
     end
-    # only proceed if there is a new version
-    if self.version != self.debianized_version
-      # record verison
-      self.debianized_version = self.version
-      self.save
-      description = self.description
-      # generate debs
-      Distribution.all.each do |dist|
-        Derivative.all.each do |der|
-          (0..1).each do |lic|
-            (0..2).each do |sec|
-              codename = Metapackage.codename(dist,der,lic,sec)
-              version = "#{self.version}-#{codename}1"
-              deb = Deb.create({:metapackage_id => self.id, :distribution_id => dist.id, :derivative_id => der.id, 
-                                :license_type => lic, :security_type => sec, :version => self.version,
-                                :url => version, :generated => false})
-            end
+    # abort if it does not make sense to debianize
+    if !self.modified or self.debianizing
+      return false
+    end
+    self.debianized_version = self.version
+    self.debianizing = true
+    self.save
+    # generate debs
+    Distribution.all.each do |dist|
+      Derivative.all.each do |der|
+        (0..1).each do |lic|
+          (0..2).each do |sec|
+            codename = Metapackage.codename(dist,der,lic,sec)
+            version = "#{self.version}-#{codename}1"
+            deb = Deb.create({:metapackage_id => self.id, :distribution_id => dist.id, :derivative_id => der.id, 
+                              :license_type => lic, :security_type => sec, :version => self.version,
+                              :url => version, :generated => false})
           end
         end
-      end  
-      # generate debian packages from debs
-      Deb.find(:all,:conditions => ["metapackage_id = ? and version = ?",self.id,self.version]).each do |deb|
-        deb.generate
       end
+    end
+    return true
+  end
+  
+  def generate_debs
+    # generate debian packages from debs
+    Deb.find(:all,:conditions => ["metapackage_id = ? and version = ?",self.id,self.version]).each do |deb|
+      deb.generate
     end
   end
   
