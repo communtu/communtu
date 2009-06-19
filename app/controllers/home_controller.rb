@@ -6,8 +6,7 @@ class HomeController < ApplicationController
   protect_from_forgery :only => [:create, :update, :destroy] 
   
   def home
-    @metapackges = Metapackage.find(:all, :limit=>5, :include => :ratings, :order=>"rating DESC", :conditions => "ratings.rating > 2")
-    #@metapackges = Metapackage.find(:all, :limit=>5, :include => :ratings, :order=>"rating DESC", :conditions => "ratings.rating > 3 AND COUNT(ratings) > 2")
+    @metapackges = Metapackage.find(:all, :limit=>5, :include => :ratings, :order=>"ratings.rating DESC", :conditions => "ratings_count >= 2")
   end
   
   def about
