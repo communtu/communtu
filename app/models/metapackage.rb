@@ -38,6 +38,9 @@ class Metapackage < BasePackage
     Metapackage.find(:all,:conditions => ["metacontents.base_package_id = ?",self.id], :include => :metacontents)
   end
 
+  def metaconents_for(package)
+    Metacontent.find(:first,:conditions => ["metapackage_id = ? and base_package_id = ?",self.id,package.id])
+  end
   #conflicts within the bundle
   def internal_conflicts
     all_cons = {}
@@ -45,7 +48,17 @@ class Metapackage < BasePackage
     packages.each do |p|
       cons = p.conflicting_packages & packages
       if !cons.empty? then
-        all_cons[p]=cons
+        mcp = metaconents_for(p)
+        newcons = cons.clone
+        cons.each do |c|
+          mcc = metaconents_for(c)
+          if (mcp.distributions & mcc.distributions).empty? or (mcp.derivatives & mcc.derivatives).empty?
+            newcons.delete(c)
+          end
+        end
+        if !newcons.empty? then
+          all_cons[p]=newcons
+        end
       end
     end
     return all_cons
