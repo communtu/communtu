@@ -6,7 +6,13 @@ class HomeController < ApplicationController
   protect_from_forgery :only => [:create, :update, :destroy] 
   
   def home
-    @metapackges = Metapackage.find(:all, :limit=>5, :include => :ratings, :order=>"ratings.rating DESC", :conditions => "ratings_count >= 2")
+    @metapackges = Metapackage.find(:all,
+      :select => "base_packages.*, avg(ratings.rating) AS rating",
+      :joins => "LEFT JOIN ratings ON base_packages.id = ratings.rateable_id",
+      :conditions => "ratings.rateable_type = 'BasePackage' AND ratings_count >= 2",
+      :group => "ratings.rateable_id",
+      :order => "rating DESC",
+      :limit => 5 )
   end
   
   def about
