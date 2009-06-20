@@ -4,7 +4,7 @@
 
 <table>
 	<tr>
-		<td width='40%'>
+		<td width='40%' colspan="2">
 			<a href=t(:view_home_home_1)><%=t(:view_home_home_2)%></a><%=t(:view_home_home_3)%>
 			<%= link_to t(:view_home_home_4), '/home/about'%><br />
 			<% if logged_in? %>
@@ -18,12 +18,12 @@
 			<% end %>
 			</p>
 		</td>
-		<td width='5%'>
-		</td>
+		
+	</tr>
+	<tr>
 		<td>
 			<h3><%=t(:view_home_home_rating_headline)%></h3>
 			<table cellspacing="0">
-				
 				<th valign="middle" class="packageList" align="left"><%=t(:view_home_home_rating_package)%></th>
 				<th valign="middle" class="packageList" align="left"><%=t(:view_home_home_rating_rating)%></th>
 				<% for metapackage in @metapackges do %>
@@ -42,6 +42,12 @@
 				</tr>
 				<%end%>
 			</table>
+		</td>
+		<td width="50%">
+			<% if new_message?%>
+				<h4 align="center"><%= t(:view_home_home_new_messages_desc) %></h4>
+				<p align="center"><%= link_to(image_tag("message_big.png",:size=>"60x45", :alt=>t(:view_home_home_new_message_icon),:title=>t(:view_home_home_new_message_icon), :border=>"0"), '/inbox') %></p>
+			<% end %>
 		</td>
 	</tr>
 </table>
