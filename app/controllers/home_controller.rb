@@ -9,7 +9,7 @@ class HomeController < ApplicationController
     @metapackges = Metapackage.find(:all,
       :select => "base_packages.*, avg(ratings.rating) AS rating",
       :joins => "LEFT JOIN ratings ON base_packages.id = ratings.rateable_id",
-      :conditions => "ratings.rateable_type = 'BasePackage' AND ratings_count >= 2",
+      :conditions => "ratings.rateable_type = 'BasePackage' AND ratings_count >= 3",
       :group => "ratings.rateable_id",
       :order => "rating DESC",
       :limit => 5 )
