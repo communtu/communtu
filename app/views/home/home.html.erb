@@ -44,9 +44,11 @@
 			</table>
 		</td>
 		<td width="50%">
-			<% if new_message?%>
-				<h4 align="center"><%= t(:view_home_home_new_messages_desc) %></h4>
-				<p align="center"><%= link_to(image_tag("message_big.png",:size=>"60x45", :alt=>t(:view_home_home_new_message_icon),:title=>t(:view_home_home_new_message_icon), :border=>"0"), '/inbox') %></p>
+			<% if logged_in? %>
+				<% if new_message?%>
+					<h4 align="center"><%= t(:view_home_home_new_messages_desc) %></h4>
+					<p align="center"><%= link_to(image_tag("message_big.png",:size=>"60x45", :alt=>t(:view_home_home_new_message_icon),:title=>t(:view_home_home_new_message_icon), :border=>"0"), '/inbox') %></p>
+				<% end %>
 			<% end %>
 		</td>
 	</tr>
