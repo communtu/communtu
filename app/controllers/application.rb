@@ -2,6 +2,18 @@
 # Likewise, all the methods added will be available for all controllers.
 
 class ApplicationController < ActionController::Base
+  def available_locales; AVAILABLE_LOCALES; end 
+  
+    before_filter :set_locale
+
+  def set_locale
+    I18n.locale = extract_locale_from_subdomain
+  end
+
+  def extract_locale_from_subdomain
+    parsed_locale = request.subdomains.second
+    (AVAILABLE_LOCALES.include? parsed_locale) ? parsed_locale : nil
+  end
   require 'set.rb'
   
   helper :all # include all helpers, all the time
@@ -26,11 +38,6 @@ class ApplicationController < ActionController::Base
       redirect_to root_path
     end
   end
-
-  before_filter :set_locale
-  def set_locale 
-    I18n.locale = extract_locale_from_subdomain
-  end
   
 #  def default_url_options(options={})
 #    logger.debug "default_url_options is passed options: #{options.inspect}\n"
@@ -41,8 +48,4 @@ class ApplicationController < ActionController::Base
     ## if params[:locale] is nil then I18n.default_locale will be used
 #    I18n.locale = params[:locale]
 #  end
-  def extract_locale_from_subdomain
-    parsed_locale = request.subdomains.first
-    (AVAILABLE_LOCALES.include? parsed_locale) ? parsed_locale : nil
-  end 
 end
