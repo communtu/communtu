@@ -1,4 +1,5 @@
 #!/usr/bin/ruby
+require 'yaml.rb'
 f = File.open(ARGV[0])
 y = {}
 while not f.eof? do
