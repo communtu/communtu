@@ -43,7 +43,9 @@
 				<%end%>
 			</table>
 			<br/>
-			<%= link_to t(:view_home_home_rating_link), 'users/'+ current_user.id.to_s + '/metapackages/1', :alt=>t(:view_home_home_rating_link),:title=>t(:view_home_home_rating_link) %>
+			<% if logged_in? and !current_user.anonymous? %>
+				<%= link_to t(:view_home_home_rating_link), 'users/'+ current_user.id.to_s + '/metapackages/1', :alt=>t(:view_home_home_rating_link),:title=>t(:view_home_home_rating_link) %>
+			<% end %>
 		</td>
 		<td width="50%">
 			<% if logged_in? %>

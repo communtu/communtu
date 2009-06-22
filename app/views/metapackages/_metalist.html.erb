@@ -30,7 +30,7 @@
 	        <% end %>
 	    </td>
 		<td class="<%= css %>" valign="middle">
-			<% if metapackage.rated_by_user?(current_user)%>
+			<% if metapackage.rated_by_user?(current_user) or current_user.anonymous?%>
 				<!-- STARS allready voted -->
 				<div class="star-ratings-block" id="star-ratings-block-<%=h metapackage.id %>">
 	            	<%= render :partial => "rating/show", :locals => { :metapackage => metapackage } %>
