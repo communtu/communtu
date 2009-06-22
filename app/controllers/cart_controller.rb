@@ -1,4 +1,5 @@
 class CartController < ApplicationController
+  before_filter :login_required
     def title
     t(:controller_cart_0)
     end

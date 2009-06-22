@@ -1,4 +1,5 @@
 class RepositoriesController < ApplicationController
+  before_filter :login_required
 
   def title
     t(:controller_repositories_0)

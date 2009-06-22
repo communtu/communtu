@@ -1,4 +1,5 @@
 class MetapackagesController < ApplicationController
+  before_filter :login_required
   
   def title
     t(:controller_metapackages_0)
