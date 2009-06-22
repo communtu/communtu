@@ -12,9 +12,9 @@
     if(user_data[:params][:order] == "categories.name")
       if(user_type == 2)
           statement = Metapackage.find( :all, :conditions => ['published=?', Metapackage.state[:published]],:joins => 'LEFT JOIN categories ON base_packages.category_id = categories.id', :order =>user_data[:params][:order])
-        elsif(user_type == 1)  
+        elsif(user_type == 1)
           statement = Metapackage.find( :all, :joins => 'LEFT JOIN categories ON base_packages.category_id = categories.id', :order =>user_data[:params][:order])
-        elsif(user_type == 0)    
+        elsif(user_type == 0)
           statement = Metapackage.find( :all, :conditions => ["user_id=?", user_data[:user].id],:joins => 'LEFT JOIN categories ON base_packages.category_id = categories.id', :order =>user_data[:params][:order])
       end
       
@@ -31,7 +31,7 @@
           statement = Metapackage.find( :all,
             :select => "base_packages.*, avg(ratings.rating) AS rating",
             :joins => "LEFT JOIN ratings ON base_packages.id = ratings.rateable_id",
-            :conditions => ["user_id=? AND ratings.rateable_type = 'BasePackage'", user_data[:user].id],
+            :conditions => ["ratings.rateable_type = 'BasePackage'"],
             :group => "ratings.rateable_id",
             :order => "#{user_data[:params][:order]} DESC")
       
@@ -39,7 +39,7 @@
           statement = Metapackage.find( :all,
             :select => "base_packages.*, avg(ratings.rating) AS rating",
             :joins => "LEFT JOIN ratings ON base_packages.id = ratings.rateable_id",
-            :conditions => ["ratings.rateable_type = 'BasePackage'"],
+            :conditions => ["base_packages.user_id=? AND ratings.rateable_type = 'BasePackage'", user_data[:user].id],
             :group => "ratings.rateable_id",
             :order => "#{user_data[:params][:order]} DESC")
        end
