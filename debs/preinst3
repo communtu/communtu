@@ -1,7 +1,7 @@
     
     # add sources
     APTPIN="/etc/apt/preferences"
-    echo "" >> $APTLIST
+    echo "#" >> $APTLIST
     echo "# Von Communtu hinzugefügte Quellen" >> $APTLIST
     echo >> $APTPIN
     echo "# Von Communtu hinzugefügte Prioritäten" >> $APTPIN

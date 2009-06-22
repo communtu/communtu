@@ -1,0 +1,19 @@
+#!/usr/bin/ruby
+f = File.open(ARGV[0])
+y = {}
+while not f.eof? do
+  while((line = f.gets)[0]!="#"[0] && !f.eof) do
+  end
+  f.gets # original
+  line1 = f.gets # translation
+  if !line1.nil? then
+    line1 = line1[8,line1.size-10]
+    y[line[3,line.size-4]] = line1
+  end
+end
+f.close
+
+File.open(ARGV[1],"w") do |f|
+  YAML::dump({"en" => y}, f)
+  f.close
+end
