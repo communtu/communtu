@@ -1,6 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+
+"Plural-Forms: n != 1\n"
+"Project-Id-Version: Communtu 0.1\n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: Timo Denissen <timo-denissen@gmx.de>\n"
