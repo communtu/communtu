@@ -1,8 +1,21 @@
 class Category < ActiveRecord::Base
+  require "lib/utils.rb"
   acts_as_tree :order => "name"
   has_many :metapackages
   belongs_to :category, :foreign_key => 'parent_id'
-  
+
+  def name
+    translation(self.name_tid)
+  end
+
+  def description
+    translation(self.description_tid)
+  end
+
+   def url
+    translation(self.url_tid)
+  end
+
   def parent_name
     if category.nil? then "" else category.name end
   end
