@@ -1,4 +1,4 @@
 <% @convert = %w[one two three four five] %>
-<ul class="star-rating" alt="<%= metapackage.ratings.size == 0 ? t(:view_rating_show_title_no_ratings) : "#{number_with_precision(metapackage.rating, 2)} #{t(:view_rating_show_title_got_ratings)}" %>" title="<%= metapackage.ratings.size == 0 ? t(:view_rating_show_title_no_ratings) : "#{number_with_precision(metapackage.rating, 2)} #{t(:view_rating_show_title_got_ratings)}" %>">
+<ul class="star-rating" alt="<%= metapackage.ratings.size == 0 ? t(:view_rating_show_title_no_ratings) : "#{number_with_precision(metapackage.rating, 2)} #{t(:view_rating_show_title_got_ratings)} #{t(:view_rating_show_title_ratings_count, {:votes=>metapackage.ratings.count})}" %>" title="<%= metapackage.ratings.size == 0 ? t(:view_rating_show_title_no_ratings) : "#{number_with_precision(metapackage.rating, 2)} #{t(:view_rating_show_title_got_ratings)} #{t(:view_rating_show_title_ratings_count, {:votes=>metapackage.ratings.count})}" %>">
     <li class="current-rating" style="width:<%=  metapackage.rating*25 %>px"></li>
 </ul>

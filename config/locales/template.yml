@@ -747,6 +747,7 @@ de:
   view_rating_show_title_no_ratings: noch keine User Bewertung
   view_rating_show_title_got_ratings: von 5 Sternen
   view_rating_rating_rate: von 5 Sternen vergeben
+  view_rating_show_title_ratings_count: (Basierend auf {{votes}} Bewertung(en))
   view_rating_new_comment_info: Geben sie eine Beschreibung zu Ihrer Bewertung an. Diese Angabe ist <b>Pflicht</b>.
   view_rating_new_comment_textfield_label: Kommentar 
   view_rating_new_comment_cancel: Abbrechen
