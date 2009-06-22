@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
   end
 
   def extract_locale_from_subdomain
-    parsed_locale = request.subdomains.second
+    parsed_locale = request.subdomains.first
     (AVAILABLE_LOCALES.include? parsed_locale) ? parsed_locale : nil
   end
   require 'set.rb'
