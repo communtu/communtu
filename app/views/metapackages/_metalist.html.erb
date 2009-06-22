@@ -3,17 +3,17 @@
 
 <table style="height:100%;" width="100%" cellspacing="0">
   <tr>
-    <th valign="middle" class="packageList" align="left"><%=t(:view_metapackages__metalist_0)%></th>
-    <th valign="middle" class="packageList" align="left"><%=t(:view_metapackages__metalist_1)%></th>
+    <th valign="middle" class="packageList" align="left"><%= link_to t(:view_metapackages__metalist_0), '?order=name' %></th>
+    <th valign="middle" class="packageList" align="left"><%= link_to t(:view_metapackages__metalist_1), '?order=categories.name' %></th>
     <th valign="middle" class="packageList" align="left"><%=t(:view_metapackages__metalist_2)%></th>
     <th valign="middle" class="packageList" align="left"><%=t(:view_metapackages__metalist_3)%></th>
-	<th valign="middle" class="packageList" align="left"><%=t(:view_metapackages__metalist_10)%></th>
+	<th valign="middle" class="packageList" align="left"><%= link_to t(:view_metapackages__metalist_10), '?order=rating' %></th>
     <th valign="middle" class="packageList" align="left"><%=t(:view_metapackages__metalist_4)%></th>
 	<th valign="middle" class="packageList" align="left"></th>
   <th valign="middle" class="packageList" align="left"></th>
 </tr>
 
-    <% for metapackage in packages.sort_by {|m| m.category.name} %>
+    <% for metapackage in packages %>
      <% css = cycle("packageList0", "packageList1") %>
       <tr>
         <td class="<%= css %>" valign="middle">

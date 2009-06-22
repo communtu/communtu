@@ -1,4 +1,5 @@
 require 'tabz'
+require 'utils'
 
 class UserMetaTabz < Tabz::Base
 
@@ -8,20 +9,22 @@ class UserMetaTabz < Tabz::Base
         titled I18n.t(:model_user_meta_tabz_0)
         looks_like "metapackages/metalist"
         with_data do 
-            set_to({ :packages => Metapackage.find(:all, :conditions => ["user_id=?", @user_data[:user].id])})
+            result = sort_metalist(@user_data, 0) #owner
+            set_to({ :packages => result })
         end
     end
     
     add_tab do
         titled I18n.t(:model_user_meta_tabz_1)
         looks_like "metapackages/metalist"
-        with_data do 
+        with_data do              
           if @user_data[:user].has_role?('administrator') then
-            set_to({ :packages => Metapackage.all })
+            result = sort_metalist(@user_data, 1) #admin
+            set_to({ :packages => result })
           else  
-            set_to({ :packages => Metapackage.find(:all, :conditions => ["published=?", 
-                Metapackage.state[:published]]) })
-          end      
+            result = sort_metalist(@user_data, 2) #other
+            set_to({ :packages => result })
+          end
         end
     end
     

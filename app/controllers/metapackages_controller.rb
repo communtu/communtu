@@ -232,11 +232,6 @@ class MetapackagesController < ApplicationController
   end
   
   def action
-    if params[:rating]
-      redirect_to '/rating/rate', :params => params
-      return
-    end
-    
     action   = params[:method]
     packages = params[:packages]
 
