@@ -1,11 +1,10 @@
 msgid ""
 msgstr ""
-
 "Plural-Forms: n != 1\n"
 "Project-Id-Version: Communtu 0.1\n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
-"Last-Translator: Timo Denissen <timo-denissen@gmx.de>\n"
+"Last-Translator: Timo Denissen <timo@communtu.de>\n"
 "Language-Team: Communtu <info@communtu.de>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -13,7 +12,7 @@ msgstr ""
 
 #: controller_accounts_0
 msgid "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
-msgstr "Match Ubuntu-Linux to your personal needs"
+msgstr "Match Ubuntu to your personal needs"
 
 #: controller_accounts_1
 msgid "Dein Benutzerkonto wurde aktiviert! Du kannst dich nun einloggen."
@@ -121,7 +120,7 @@ msgstr "Distribution updated."
 
 #: controller_home_0
 msgid "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
-msgstr "Match Ubuntu-Linux to your personal needs"
+msgstr "Match Ubuntu to your personal needs"
 
 #: controller_home_1
 msgid "Die E-Mail wurde an uns gesendet. Vielen Dank für Dein Feedback."
@@ -223,7 +222,7 @@ msgstr "Package updated."
 
 #: controller_passwords_0
 msgid "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
-msgstr "Match Ubuntu-Linux to your personal needs"
+msgstr "Match Ubuntu to your personal needs"
 
 #: controller_passwords_1
 msgid "Ein Link zum Ändern des Passworts wurde an deine Email-Adresse geschickt."
@@ -287,7 +286,7 @@ msgstr "sources.list read."
 
 #: controller_roles_0
 msgid "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
-msgstr "Match Ubuntu-Linux to your personal needs."
+msgstr "Match Ubuntu to your personal needs."
 
 #: controller_sent_0
 msgid "Der Betreff darf nicht leer sein."
@@ -303,7 +302,7 @@ msgstr "message successfully send"
 
 #: controller_sessions_0
 msgid "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
-msgstr "Match Ubuntu-Linux to your personal needs."
+msgstr "Match Ubuntu to your personal needs."
 
 #: controller_sessions_1
 msgid "Du bist bereits angemeldet."
@@ -331,7 +330,7 @@ msgstr "Your account has been deactivated or deleted."
 
 #: controller_suggestion_0
 msgid "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
-msgstr "match Ubuntu-Linux to your personal needs"
+msgstr "match Ubuntu to your personal needs"
 
 #: controller_suggestion_1
 msgid "Um etwas installieren zu können, musst du zunächst etwas auswählen. Speichern nicht vergessen!"
@@ -383,7 +382,7 @@ msgstr "While creating the package an error occured."
 
 #: controller_users_0
 msgid "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
-msgstr "Match Ubuntu-Linux to your personal needs"
+msgstr "Match Ubuntu to your personal needs"
 
 #: controller_users_1
 msgid "Danke für die Registrierung bei Communtu! Du kannst dich jetzt anmelden."
@@ -439,7 +438,7 @@ msgstr "An error occured while deactivating this user."
 
 #: controller_videos_0
 msgid "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
-msgstr "macht Ubuntu-Linux to your personal needs"
+msgstr "macht Ubuntu to your personal needs"
 
 #: helper_distributions_0
 msgid "free"
@@ -471,7 +470,7 @@ msgstr "Are you sure?"
 
 #: helper_distributions_15
 msgid "Wikiseite bei Ubuntuusers"
-msgstr "informational page at www.ubuntuusers.de (German)"
+msgstr "Informational page at www.ubuntuusers.de (German)"
 
 #: helper_distributions_2
 msgid "Repository synchronisieren"
@@ -487,7 +486,7 @@ msgstr "delete repository"
 
 #: helper_distributions_8
 msgid "Quellen anzeigen"
-msgstr "show sources"
+msgstr "Show sources"
 
 #: lib_system_0
 msgid "Du musst eingeloggt sein, um dieses Feature zu benutzen."
@@ -583,7 +582,7 @@ msgstr "My bundles"
 
 #: model_user_meta_tabz_1
 msgid "Alle veröffentlichten Bündel"
-msgstr "all published bundles"
+msgstr "All published bundles"
 
 #: model_user_meta_tabz_2
 msgid "Ubuntu-Pakete"
@@ -591,19 +590,19 @@ msgstr "Ubuntu packages"
 
 #: model_user_profile_tabz_0
 msgid "Grunddaten"
-msgstr "base date"
+msgstr "Base data"
 
 #: model_user_profile_tabz_1
 msgid "Detailauswahl"
-msgstr "detailed choice"
+msgstr "Detailed choice"
 
 #: model_user_profile_tabz_2
 msgid "Quellen"
-msgstr "sources"
+msgstr "Sources"
 
 #: model_user_profile_tabz_3
 msgid "Installation durchführen"
-msgstr "carry out an installation"
+msgstr "Start installation"
 
 #: view_accounts_edit_0
 msgid "Passwort ändern"
@@ -795,11 +794,11 @@ msgstr "Link for further information"
 
 #: view_categories_edit_4
 msgid "Übergeordnete Kategorie"
-msgstr "higher category"
+msgstr "Superior category"
 
 #: view_categories_edit_5
 msgid "Wähle einen Parent aus!"
-msgstr "Choose a Partent!"
+msgstr "Choose a Parent!"
 
 #: view_categories_edit_6
 msgid "Anzeigen"
@@ -839,7 +838,7 @@ msgstr "Description"
 
 #: view_categories_index_3
 msgid "übergeordnete Kategorie"
-msgstr "higher category"
+msgstr "Superior category"
 
 #: view_categories_index_4
 msgid "Anzeigen"
@@ -859,7 +858,7 @@ msgstr "New category"
 
 #: view_categories_new_3
 msgid "Übergeordnete Kategorie"
-msgstr "Higher category"
+msgstr "superior category"
 
 #: view_categories_new_4
 msgid "Wähle einen Parent aus!"
@@ -887,7 +886,7 @@ msgstr "Further information:"
 
 #: view_categories_show_3
 msgid "Übergeordnete Kategorie:"
-msgstr "Higher category:"
+msgstr "Superior category:"
 
 #: view_categories_show_5
 msgid "Zurück"
@@ -1027,7 +1026,7 @@ msgstr "back"
 
 #: view_distributions_index_0
 msgid "Verfügbare Distributionen"
-msgstr "available distributions"
+msgstr "Available distributions"
 
 #: view_distributions_index_1
 msgid "Neue Distribution"
@@ -1103,7 +1102,7 @@ msgstr "You are currently not logged in. Please click on \"log in\"."
 
 #: view_home_about_0
 msgid "Communtu - gemeinsam Ubuntu-Linux an individuelle Bedürfnisse anpassen"
-msgstr "Communtu - ceno-match Ubuntu-Linux to your personal needs"
+msgstr "Communtu - match Ubuntu to your personal needs"
 
 #: view_home_about_1
 msgid "Wozu Communtu?"
@@ -1111,23 +1110,23 @@ msgstr "Why Communtu?"
 
 #: view_home_about_10
 msgid "Wie kann ich meine Erfahrungen mit Programmen ins Communtu-System eintragen?"
-msgstr "How can i submit my experience with programs to the Communtu-system?"
+msgstr "How can I submit my experience with programs to the Communtu-system?"
 
 #: view_home_about_11
 msgid "Hast du gute Erfahrungen mit Programmen gemacht? Dann kannst du thematisch zusammengehörige Programme zu einem Bündel zusammenfassen und ins System eintragen. Dazu wählst du <b>Neues Bündel</b> unterhalb von <b>Bündel-Editor</b> auf der linken Seitenleiste. Du kannst dann Ubuntu-Pakete hinzufügen und mit Klick auf das Disketten-Symbol das Bündel im System abspeichern. Das Bündel soll einen Namen, eine Beschreibung und eine thematische Einordnung erhalten, damit andere Nutzer es auch verwenden können. Wie bei Ordnern und Dateien können Bündel nicht nur Ubuntu-Pakete, sondern auch andere Bündel enthalten. "
-msgstr "Did you make good experience with programs? You can merge thematic programs to a bundle and add this to the system. To do so, you choose <b>new bundle</b> below of <b>bundle-editor</b> on the left side. Then you can add Ubuntu-Packages to the bundle and, after you have finished, click on the floppy-icon to save the bundle. The bundle needs a name, a description and a thematic classification so that other users can use it too. Just like folders and files the bundle can not only consist of Ubuntu-packages but also of other bundles too."
+msgstr "Did you make good experience with programs? You can merge thematic programs to a bundle and add this to the system. To do so, you choose <b>new bundle</b> below of <b>bundle-editor</b> on the left side. Then you can add Ubuntu packages to the bundle and, after you have finished, click on the floppy-icon to save the bundle. The bundle needs a name, a description and a thematic classification so that other users can use it too. Just like folders and files the bundle can not only consist of Ubuntu packages but also of other bundles too. "
 
 #: view_home_about_12
 msgid "<b>Bündel verwalten</b> auf der linken Seitenleiste gibt dir einen Überblick über die verfügbaren Bündel. Schließlich gibt es unter <b>Ubuntu-Versionen</b> eine Übersicht über die im System verfügbaren Ubuntu-Versionen (Distributionen)."
-msgstr "<b>administrate bundles</b> on the left side offers an overview about the available bundles. At last, an overview about the available Ubuntu-versions (distributions) can be found at <b>Ubuntu-versions</b>."
+msgstr "<b>Administrate bundles</b> on the left side offers an overview about the available bundles. At last, an overview about the available Ubunt versions (distributions) can be found at <b>Ubuntu versions</b>."
 
 #: view_home_about_13
 msgid "Nachinstallation einzelner Funktionen"
-msgstr "post-installation of single functions"
+msgstr "Post-installation of single functions"
 
 #: view_home_about_14
 msgid "Du hast schon eine lauffähige Ubuntu-Installation und möchtest bestimmte Funktionen hinzufügen? Auch dafür kannst du Communtu benutzen. Du kannst unter <b>Bündel verwalten</b> einzelne Bündel installieren, und unter <b>Programme suchen</b> auch einzelne Programme."
-msgstr "You already have a executable Ubuntu-installation and want to add some functions? You can also use Communtu for this. You can install single bundles at <b>administrate bundle</b> and at <b>search program</b> even single programs."
+msgstr "You already have a useful Ubuntu-installation and want to add some functions? You can also use Communtu for this. You can install single bundles at <b>Administrate bundle</b> and at <b>Search programs</b>, even single programs."
 
 #: view_home_about_15
 msgid "Registrierung"
@@ -1155,7 +1154,7 @@ msgstr "Ubuntu is a linux-based distribution which makes Linux easier to use and
 
 #: view_home_about_20
 msgid "Spendenmöglichkeit"
-msgstr "possibility to donate"
+msgstr "Donation possibility"
 
 #: view_home_about_21
 msgid "Allgemeinbildung e.V."
@@ -1175,7 +1174,7 @@ msgstr "Donation receipt can be issued."
 
 #: view_home_about_3
 msgid "Es gibt aber auch viele Anwendungen, die erst noch nachinstalliert werden müssen, z.B. in den Bereichen Audio, Video und Grafik, damit dein Computer mit Ubuntu wirklich  benutzbar ist. Communtu macht diese Nachinstallation jetzt noch einfacher und hat zudem spezielle Bereiche für Einsteiger und Windows-Umsteiger."
-msgstr "There are many applications which have to be post-installed, e. g. programs for audio, video and graphics, so the computer is usable with Ubuntu. Communtu helps to make the post-installation more easier and moreover has special sections for beginners and users comming from Windows."
+msgstr "There are many applications which have to be post-installed, e. g. programs for audio, video and graphics, in order to make the computer really usable  Ubuntu. Communtu helps to make the post-installation more easier and moreover has special sections for beginners and users comming from Windows."
 
 #: view_home_about_4
 msgid "Wie verwende ich Communtu?"
@@ -1191,11 +1190,11 @@ msgstr "(This appeas not until"
 
 #: view_home_about_7
 msgid "Dort kannst du deine Einstellungen bearbeiten. Unter den Grunddaten musst du zunächst eintragen, welche Ubuntu-Version du auf deinem PC installiert hast, außerdem, ob du unfreie Programme nutzen willst oder nicht. Zudem wählst du aus, für welche Aufgaben du deinen Ubuntu-PC nutzen willst. "
-msgstr "There you can edit your settings. First, you have to specify the basic data, like which Ubuntu-version you want to install on your computer. Additionally you have to specify if you want to use free or non-free software. Finally you have to indicate for which purposes you want to use your computer."
+msgstr "There you can edit your settings. First, you have to specify the basic data, like which Ubuntu version you want to install on your computer. Additionally you have to specify if you want to use free or non-free software. Finally you have to indicate for which purposes you want to use your computer."
 
 #: view_home_about_8
 msgid "Danach kannst du mit "Speichern und feiner Auswählen" noch einen detaillierteren Überblick über die installierten Bündel und Programme bekommen und die Auswahl auch noch verändern. Falls du dazu keine Lust oder Zeit hast, klicke einfach auf "Speichern". Dies führt dich zur Installations-Seite. Dort findest du einen Installationsknopf, mit dem die Communtu-Nachinstallation gestartet werden kann. Es dauert etwas, bis die Programme automatisch aus dem Internet geladen und installiert werden. Fertig ist der vielseitig einsetzbare Ubuntu-PC!"
-msgstr "After a click on \"Save and choose packages\" you can get a detailed overview of the installed bundles and programmes and the possibility to change the pre-made selections. In the case you don't have the time or energy to choose the packages in detail, just click on \"Save\". This leads you to the installation page. There you will find a button with which the installation process starts. This takes some time because the applications have to be downloaded from the internet and installed on your computer. When finished, you have a all-round Ubuntu-PC!"
+msgstr "After a click on \"Save and choose packages\" you can get a detailed overview of the installed bundles and programs and the possibility to change the pre-made selections. In the case you don't have the time or energy to choose the packages in detail, just click on \"Save\". This leads you to the installation page. There you will find a button with which the installation process starts. This takes some time because the applications have to be downloaded from the internet and installed on your computer. When finished, you have a all-round Ubuntu-PC!"
 
 #: view_home_about_9
 msgid "Wichtig: Man braucht schon eine schnelle Internet-Verbindung. Für Ubuntu-Nutzer, die noch ein Modem oder Ähnliches nutzen, planen wir die Möglichkeit, automatisch CDs und DVDs zu erstellen."
@@ -1299,7 +1298,7 @@ msgstr "Donation receipt can be issued."
 
 #: view_home_contact_us_0
 msgid "Feedbackformular"
-msgstr "Feedback-form"
+msgstr "Feedback"
 
 #: view_home_contact_us_1
 msgid "Hier hast Du die Möglichkeit uns ein Feedback zu senden."
@@ -1319,11 +1318,11 @@ msgstr "Send"
 
 #: view_home_derivatives_0
 msgid "Ubuntu-Derivate"
-msgstr "Ubuntu-derivatives"
+msgstr "Ubuntu derivatives"
 
 #: view_home_derivatives_1
 msgid "Communtu setzt auf einer Ubuntu-Basisinstallation auf. Es gibt nun eine ganze Reihe von "
-msgstr "Communtu is based on a standard-installation of Ubuntu. There are many different"
+msgstr "Communtu is based on a standard-installation of Ubuntu. There are many different "
 
 #: view_home_derivatives_10
 msgid "http://wiki.ubuntuusers.de/Ubuntu_Studio"
@@ -1331,7 +1330,7 @@ msgstr "https://wiki.ubuntu.com/UbuntuStudio"
 
 #: view_home_derivatives_11
 msgid " - Ubuntu Multimedie-Edition. Sie wird bei Communtu mitinstalliert, wenn du bei Audio, Film und/oder Grafik/Design "erweitert" anwählst."
-msgstr " - Ubuntu multimedia-edition. This will be automatically installed when \"enhanced\" is checked at audio, film and/or graphic/design."
+msgstr " - Ubuntu multimedia-edition. This will be automatically installed when \"advanced\" is checked at audio, film and/or graphic/design."
 
 #: view_home_derivatives_12
 msgid " stellt Multimedia-Paketquellen bereit, die aus rechtlichen Gründen nicht von Ubuntu selbst angeboten wird. Medibuntu wird bei Communtu mit berücksichtigt (z.B. bei Audio und Film)."
@@ -1351,7 +1350,7 @@ msgstr "http://wiki.ubuntuusers.de/KDE"
 
 #: view_home_derivatives_16
 msgid " ist Ubuntu mit dem KDE-Desktop.	"
-msgstr "is Ubuntu with the KDE-Dekstop"
+msgstr " is Ubuntu with the KDE-Dekstop"
 
 #: view_home_derivatives_17
 msgid "http://de.wikipedia.org/wiki/Linux_Mint"
@@ -1367,15 +1366,15 @@ msgstr "Attention! Will be available soon at Communtu."
 
 #: view_home_derivatives_2
 msgid "Ubuntu-Derivaten"
-msgstr "Ubuntu-derivatives"
+msgstr "Ubuntu derivatives"
 
 #: view_home_derivatives_20
 msgid "	Automatix war eine Installationshilfe, die sich großer Beliebtheit erfreute (sie wurde sogar von der New York Times empfohlen), die aber nicht ganz den Ubuntu-Programmierstandards entsprach und inzwischen nicht mehr weiterentwickelt wird. "
-msgstr "	Automatix was a programm to assist the installation of software and enjoyed great popularity (Automatix was even recommended by the New York Times). However, Automatix did not meet the Ubuntu-standards and the delevopment stopped."
+msgstr "	Automatix was a programm to assist the installation of software and enjoyed great popularity (Automatix was even recommended by the New York Times). However, Automatix did not meet the Ubuntu-standards and the delevopment had been stopped."
 
 #: view_home_derivatives_21
 msgid "Über Communtu nachinstallierbare Derivate, sinnvollerweise auf einer Xfce-basierten Installation (z.B. Xubuntu) aufzusetzen:"
-msgstr "Derivatives, which are based on a Xfce-installation (like Xubuntu) and that can be installed afterwards with Communtu:"
+msgstr "Derivatives which are based on a Xfce-installation (like Xubuntu) and that can be post-installed with Communtu:"
 
 #: view_home_derivatives_22
 msgid " - orient an BeOS, setzt auf Schnelligkeit, Kompatibilität mit alten Rechnern und einfache Bedienung. CPU mit mindestens 200 MHZ 128 MB RAM (zum Betrieb, zur Installation werden 192 MB RAM benötigt); 2 GB freier Festplattenplatz (Empfohlen: 4 GB oder mehr); 16 MB Grafikkarte (Empfohlen: Intel GMA 9xx). "
@@ -1383,7 +1382,7 @@ msgstr " - leaned to be like BeOS, ZevenOS focuses on speed and compatibility fo
 
 #: view_home_derivatives_23
 msgid "Achtung! bei Communtu erst in Kürze verfügbar."
-msgstr "Attention! This is soon available at Communtu."
+msgstr "Attention! Will be available soon at Communtu."
 
 #: view_home_derivatives_24
 msgid "Derivate, die mit der Derivats-eigenen Installations-CD installiert werden sollten:"
@@ -1395,7 +1394,7 @@ msgstr "http://wiki.ubuntuusers.de/Xfce"
 
 #: view_home_derivatives_26
 msgid " - mit dem schlanken Xfce als grafischer Oberfläche - besonders für ältere Rechner geeignet: 128 MByte Arbeitsspeicher und 1,5 GB auf der Festplatte reichen aus. Sollte von CD installiert werden, um wirklich eine schlanke Installation zu haben. Nachinstallationen mit Communtu möglich."
-msgstr " - with the slim Xfce as graphical interface - particularly suitable for older computers: 128 MB RAM and 1,5 GB free hard disk space are sufficiant. Should be installed from the CD to guarantee a slim installation. Post-installation can be done with Communtu."
+msgstr " - with the slim Xfce as the graphical interface. Particularly suitable for older computers: 128 MB RAM and 1,5 GB free hard disk space are sufficiant. Should be installed from the CD to guarantee a slim installation. Post-installation can be done with Communtu."
 
 #: view_home_derivatives_27
 msgid "http://de.wikipedia.org/wiki/LinuxMCE"
@@ -1423,7 +1422,7 @@ msgstr ". Because of the necessary installation of drivers, Linux MCE should be 
 
 #: view_home_derivatives_32
 msgid " ist ein Ubuntu-Derivat komplett aus freier Software. Nur für erfahrene Nutzer geeignet. Sollte mit der Gobuntu-CD installiert werden, damit es auch wirklich nur freie Software ist. Nachinstallationen mit Communtu möglich, sinnvollerweise sollten dann im Nutzerprofil "freie Software" angewählt werden. Dies Derivate ist in der Version 8.04 erhältlich und wird nicht weiterentwickelt."
-msgstr " is a Ubuntu derivative consisting only of free software. Suitable only for experienced users. Should only be installed with the Gobuntu-CD so that only free software is provided. A further installation with Communtu is possible, but \"free software\" should be selected in the user profile. This derivative is available in Ubuntu 8.04 and development is currently discontinued."
+msgstr " is a Ubuntu derivative consisting only of free software. Suitable only for experienced users. Should only be installed with the Gobuntu-CD so that only free software is provided. A further installation with Communtu is possible, but \"Free software\" should be selected in the user profile. This derivative is available in Ubuntu 8.04 and development is currently discontinued."
 
 #: view_home_derivatives_33
 msgid "http://de.wikipedia.org/wiki/GNU-Varianten#Nexenta_OS"
@@ -1439,7 +1438,7 @@ msgstr "There are several other derivatives for which we cannot give any recomme
 
 #: view_home_derivatives_36
 msgid " - eine afrikanische Ubuntu-Variante, die allerdings offenbar nicht übers Internet erhältlich ist."
-msgstr " - an African Ubuntu-version, which is apparently not available over the internet."
+msgstr " - an African version of Ubuntu, which is apparently not available over the internet."
 
 #: view_home_derivatives_37
 msgid "http://de.wikipedia.org/wiki/LinEx"
@@ -1455,7 +1454,7 @@ msgstr " for older PCs. It is based on the LXDE-GUI."
 
 #: view_home_derivatives_4
 msgid ", und viele Ubuntu-Nutzer fragen sich,  ob sie statt Ubuntu lieber ein Derivat benutzen sollten. Die Antwort ist: meistens fährt man mit dem Standard-Ubuntu ganz gut, denn Communtu erlaubt, die Derivate auf einfache Weise nachzuinstallieren.  Allerdings ist das nicht bei allen Derivaten gleich sinnvoll."
-msgstr ", and many Ubuntu-users may ask themselves if they should use a derivative instead of Ubuntu. The answer is: normally the standard Ubuntu-version completely sufficiant because with Communtu it is quite easy to install a derivaitve. However, this is not always a wise decision."
+msgstr " and many Ubuntu-users may ask themselves if they should use a derivative instead of Ubuntu. The answer is: normally the standard version of Ubuntu completely sufficiant because with Communtu it is quite easy to install a derivaitve. However, this is not always a wise decision."
 
 #: view_home_derivatives_40
 msgid " - für mobile Internetgeräte."
@@ -1475,7 +1474,7 @@ msgstr " - based on E17. 2D-effects even without a fast graphic card."
 
 #: view_home_derivatives_44
 msgid " - minimalistische schnelle Ubuntu-Version für ältere PCs."
-msgstr " - minimalist and fast Ubuntu-version for older PCs."
+msgstr " - minimalist and fast version of Ubuntu for older PCs."
 
 #: view_home_derivatives_45
 msgid "http://wiki.ubuntuusers.de/Server_Installation"
@@ -1527,7 +1526,7 @@ msgstr "http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix"
 
 #: view_home_derivatives_57
 msgid "für Subnotebooks/EEE-PCs"
-msgstr "for subnotebooks/EEE-PCs"
+msgstr " for subnotebooks/EEE-PCs."
 
 #: view_home_derivatives_6
 msgid "Installations-Feinauswahl"
@@ -1547,7 +1546,7 @@ msgstr "With Communtu installable derivatives:"
 
 #: view_home_home_0
 msgid "Communtu - gemeinsam Ubuntu-Linux an individuelle Bedürfnisse anpassen"
-msgstr "Communtu - ceno-match Ubuntu-Linux to your personal needs"
+msgstr "Communtu - match Ubuntu to your personal needs"
 
 #: view_home_home_1
 msgid "http://www.ubuntuusers.de"
@@ -1559,11 +1558,11 @@ msgstr "<b>Ubuntu-releases</b> Overview about the available Ubuntu-releases (dis
 
 #: view_home_home_11
 msgid "<b>Benutzer verwalten</b> Hier kannst du als Admin die Rollen der Benutzer ändern. Vorsicht walten lassen!"
-msgstr "<b>administrate user</b> As an administrator you can change the role of the users. Act with caution!"
+msgstr "<b>Administrate users</b> As an administrator you can change the role of the users. Act with caution!"
 
 #: view_home_home_12
 msgid "<b>Kategorien verwalten</b> Hier kannst du als Admin neue Kategorien erstellen oder die Struktur des Kategorienbaums ändern. Vorsicht walten lassen!"
-msgstr "<b>administrate categories</b> As an administrator you can create new categories or change the structure of a category-tree here. Act with caution!"
+msgstr "<b>Administrate categories</b> As an administrator you can create new categories or change the structure of a category-tree here. Act with caution!"
 
 #: view_home_home_13
 msgid "<b>Aktuelles</b> Hinweise auf Veranstaltungen zu Communtu, Communtu-Blog ..."
@@ -1571,7 +1570,7 @@ msgstr "<b>News</b> Reference to events about Communtu, the Communtu-blog ..."
 
 #: view_home_home_14
 msgid "Es gibt auch noch "
-msgstr "There are also"
+msgstr "There are also "
 
 #: view_home_home_15
 msgid "genauere Infos"
@@ -1579,7 +1578,7 @@ msgstr "more detailled information"
 
 #: view_home_home_16
 msgid " über das Projekt und über die Mitwirkenden im "
-msgstr " about this project and its participants in the"
+msgstr " about this project and its participants in the "
 
 #: view_home_home_17
 msgid "Impressum."
@@ -1595,31 +1594,31 @@ msgstr "Registration"
 
 #: view_home_home_2
 msgid "Ubuntu-Linux"
-msgstr "Ubuntu-Linux"
+msgstr "Ubuntu"
 
 #: view_home_home_20
 msgid ", um einen neuen Benutzer anzulegen, oder "
-msgstr ", to create a new user, or"
+msgstr " to create a new user or"
 
 #: view_home_home_21
 msgid "melde"
-msgstr "log"
+msgstr "log "
 
 #: view_home_home_22
 msgid " dich an, oder "
-msgstr "in, or"
+msgstr "in, or "
 
 #: view_home_home_23
 msgid "nutze Communtu anonym"
-msgstr "use Communtu anonymously."
+msgstr "use Communtu anonymously"
 
 #: view_home_home_24
 msgid "Zum Impressum"
-msgstr "to the imprint"
+msgstr "To the imprint"
 
 #: view_home_home_3
 msgid " steht für ein menschliches Linux, das einfach zu benutzen ist. Aber um Ubuntu wirklich gut nutzen zu können, muss man ganz schön viele Programme nachinstallieren, und es ist oft schwer, da den Überblick zu behalten. Bei Communtu gibst du nur an, welche Aufgaben du mit deinem Computer erledigen willst, und Communtu schlägt dir eine ganze Reihe von Programmen vor, die automatisch installiert werden können."
-msgstr " stands for a human Linux that is easy to use. In order to use Ubuntu effectively a whole bunch of programs have to be installed. It is not always easy to keep an overview. At Communtu you only specify for which purposes you want to use your computer and Communtu suggests a bunch of programs to you which will be installed automatically."
+msgstr " stands for a human Linux that is easy to use. In order to use Ubuntu effectively, a whole bunch of programs have to be installed. It is not always easy to keep an overview. With Communtu you only specify for which purposes you want to use your computer and Communtu suggests a bunch of programs to you which will be installed automatically."
 
 #: view_home_home_4
 msgid "Mehr ..."
@@ -1635,7 +1634,7 @@ msgstr "<b>Installation</b> offers you a summary (bundling) of programs for the 
 
 #: view_home_home_7
 msgid " Hast du gute Erfahrungen mit Programmen gemacht? Dann kannst du sie hier thematisch bündeln, oder auch bestehende Bündel angucken. "
-msgstr "Did you make good experiences with programs? Bundle them thematically ot take a look at existing bundles."
+msgstr "Did you make good experiences with programs? Bundle them thematically or take a look at existing bundles."
 
 #: view_home_home_8
 msgid "<b>Programme suchen</b> Hier kannst du nach einzelnen Ubuntu-Programmen (Paketen) suchen."
@@ -1643,7 +1642,7 @@ msgstr "<b>Search program</b> Here you can search for single Ubuntu-programs (pa
 
 #: view_home_home_9
 msgid "<b>Ubuntu-Derivate</b> bietet eine Übersicht über Kubuntu, Xubuntu, Medibuntu und wie sie alle heißen ..."
-msgstr "<b>Ubuntu-derivatives</b> is a small overview about Kubuntu, Xubuntu, Medibuntu, etc."
+msgstr "<b>Ubuntu derivatives</b> is a small overview about Kubuntu, Xubuntu, Medibuntu, etc."
 
 #: view_home_icons_0
 msgid "Icons bei Communtu"
@@ -1711,11 +1710,11 @@ msgstr "install via script"
 
 #: view_home_icons_9
 msgid " Installation per Shell-Script"
-msgstr " installatin via shell-script"
+msgstr " installation via shell-script"
 
 #: view_home_impressum_0
 msgid "Impressum"
-msgstr "imprint"
+msgstr "Imprint"
 
 #: view_home_impressum_1
 msgid "Natur, Geist und Technik - Verein zur Förderung der Allgemeinbildung e.V."
@@ -1727,7 +1726,7 @@ msgstr "Donation receipt can be issued."
 
 #: view_home_impressum_11
 msgid "Mitwirkende an der AG Communtu (Alphabetische Reihenfolge):"
-msgstr "Participants of the Communtu-groupd (alphabetical order):"
+msgstr "Participants of the Communtu-team (alphabetical order):"
 
 #: view_home_impressum_12
 msgid "Du kannst Dich auch "
@@ -1735,7 +1734,7 @@ msgstr "You can "
 
 #: view_home_impressum_13
 msgid "beteiligen"
-msgstr "Join too"
+msgstr "join the team too"
 
 #: view_home_impressum_2
 msgid "AG Communtu"
@@ -1755,7 +1754,7 @@ msgstr "28203 BremenGermany"
 
 #: view_home_impressum_6
 msgid "Spendenmöglichkeit"
-msgstr "Possibility to donate"
+msgstr "Donation possibility"
 
 #: view_home_impressum_7
 msgid "Allgemeinbildung e.V."
@@ -1775,7 +1774,7 @@ msgstr "Notification in bugfixing"
 
 #: view_home_mail_1
 msgid "Bitte benachrichtigt mich unter folgender E-Mail über die Fehlerbehebung."
-msgstr "Please contact me at the following e-mail-adress concerning the bugfixing."
+msgstr "Please contact me at the following e-mail-address concerning the bugfixing."
 
 #: view_home_mail_2
 msgid "E-Mail:"
@@ -1803,7 +1802,7 @@ msgstr "communtu-discuss-de+subscribe@googlegroups.com"
 
 #: view_home_news_11
 msgid "Diese Liste ist für eine Diskussion rund um die Plattform gedacht.  Hier kommt etwas mehr als einmal die Woche eine E-Mail über den Verteiler.   Die Nachrichten werden in einem "
-msgstr "This list is intended for discussion about the platform. The frequency is a little higher than once a week. Posts will be collected in an"
+msgstr "This list is intended for discussion about the platform. The frequency is a little higher than once a week. Posts will be collected in an "
 
 #: view_home_news_12
 msgid "Archiv"
@@ -1823,11 +1822,11 @@ msgstr "Our blog"
 
 #: view_home_news_16
 msgid "Wir haben einen Blog, wo wir aktuelle Informationen zu Communtu eintragen. Hier wird ungefähr einmal die Woche etwas gepostet. Hier werden Ankündigungen und neue Features präsentiert."
-msgstr "Wir have a blog where we post updated information about Communtu. It gets a new post about once a week. Announcement and new features will be presented here."
+msgstr "We have a blog where we post updated information about Communtu. It gets a new post about once a week. Announcement and new features will be presented here."
 
 #: view_home_news_17
 msgid "Zum Blog"
-msgstr "Go to blog"
+msgstr "Go to the blog"
 
 #: view_home_news_18
 msgid "http://communtu.blogspot.com"
@@ -1851,7 +1850,7 @@ msgstr "Ways to participate"
 
 #: view_home_news_23
 msgid "Du kannst Dich auch "
-msgstr "You are welcome to"
+msgstr "You are welcome to "
 
 #: view_home_news_24
 msgid "beteiligen"
@@ -1879,7 +1878,7 @@ msgstr " Thank you for your donation"
 
 #: view_home_success_1
 msgid "Eine Spendenbescheinigung kann ausgestellt werden. Dazu schicke uns bitte eine E-Mail mit Deiner Adresse an: "
-msgstr "We can issue a donation receipt. Please send an email with your address to:"
+msgstr "We can issue a donation receipt. Please send an e-mail with your address to:"
 
 #: view_layouts_application_0
 msgid "Communtu, Ubuntu, Installation, Installationshilfe"
@@ -1899,7 +1898,7 @@ msgstr "Anonymous access"
 
 #: view_layouts_application_12
 msgid "Registrieren"
-msgstr "Register"
+msgstr "Registration"
 
 #: view_layouts_application_13
 msgid "Über Communtu"
@@ -1911,7 +1910,7 @@ msgstr "Feedback to Communtu"
 
 #: view_layouts_application_15
 msgid "angemeldet als  "
-msgstr "logged in as"
+msgstr "logged in as "
 
 #: view_layouts_application_16
 msgid "neue Nachricht"
@@ -2035,7 +2034,7 @@ msgstr "add"
 
 #: view_metapackages__metalist_2
 msgid "Standard"
-msgstr "standard"
+msgstr "Standard"
 
 #: view_metapackages__metalist_20
 msgid "<option>0 Bündel ausgewählt</option>"
@@ -3023,7 +3022,7 @@ msgstr "This step has to be carried out again because you changed the settings."
 
 #: view_user_profiles__installation_19
 msgid "Achtung: nach dem Anklicken dauert es eine gewisse Zeit, bis die Datei bereitgestellt wird. 		"
-msgstr "Attention: after clicking it will take a moment until the file is provided."
+msgstr "Attention: after clicking, it will take a moment until the file is provided."
 
 #: view_user_profiles__installation_2
 msgid "Aufgrund deiner Auswahl werden jetzt Programme auf deinem Computer installiert. Folgende Schritte sind dafür zu tun:"
@@ -3067,7 +3066,7 @@ msgstr "https://wiki.ubuntu.com/AptUrl"
 
 #: view_user_profiles__installation_29
 msgid " konfigurieren. 		"
-msgstr "for the Konqueror and Opera browsers."
+msgstr " for the Konqueror and Opera browsers."
 
 #: view_user_profiles__installation_3
 msgid "Klicke auf das Symbol rechts unten"
@@ -3111,15 +3110,15 @@ msgstr "On this page you can prepare the post-installation with Communtu in four
 
 #: view_user_profiles__profile_data_10
 msgid " Nur Ubuntuquellen zulassen ("main/restricted", sehr sicher)"
-msgstr " only allow Ubuntu-sources (\"main/restricted\", very secure)"
+msgstr " Only allow Ubuntu-sources (\"main/restricted\", very secure)"
 
 #: view_user_profiles__profile_data_11
 msgid " Communityquellen zulassen ("universe/multiverse", auch sicher, mehr Programme/Komfort) "
-msgstr " allow community-sources (\"universe/multiverse\", secure, more programs/better comfort)"
+msgstr " Allow community-sources (\"universe/multiverse\", secure, more programs/better comfort)"
 
 #: view_user_profiles__profile_data_12
 msgid " Alle Quellen zulassen (etwas unsicherer: <a href="http://wiki.ubuntuusers.de/Fremdquellen">Fremdpakete</a> können das System gefährden, aber noch mehr Programme/Komfort: "
-msgstr " allow every source (slightly unsecure but with even more programs/better comfort. Attention: programs installed from foreign sources can do harm to your computer!):"
+msgstr " Allow every source (slightly unsecure but with even more programs/better comfort. Attention: programs installed from foreign sources can do harm to your computer!):"
 
 #: view_user_profiles__profile_data_13
 msgid "Hier kannst du auswählen, welche Lizenzen du zulassen willst"
@@ -3131,11 +3130,11 @@ msgstr " Free software (sources are open and further development is allowed)"
 
 #: view_user_profiles__profile_data_15
 msgid " Unfreie Lizenzen zulassen (auch kostenlos, aber Quellen liegen nicht offen - sozusagen das Methadon für einen weichen Übergang zu Linux)"
-msgstr " allow unfree licences (free to, but the sources are closed - quasi the methadone for a fluent changeover to Linux)"
+msgstr " Allow unfree licences (free too, but the sources are closed - quasi the methadone for a fluent changeover to Linux)"
 
 #: view_user_profiles__profile_data_16
 msgid "Speichern"
-msgstr "save"
+msgstr "Save"
 
 #: view_user_profiles__profile_data_17
 msgid "Speichern und feiner auswählen"
@@ -3155,15 +3154,15 @@ msgstr "further information"
 
 #: view_user_profiles__profile_data_6
 msgid "Wähle bitte deine Ubuntu-Version aus. "
-msgstr "Please select a Ubuntu-version,"
+msgstr "Please select a Ubuntu version. "
 
 #: view_user_profiles__profile_data_7
 msgid "Wie stelle ich die Version fest?"
-msgstr "How do I finalize a version?"
+msgstr "How do I find out the version which is in use?"
 
 #: view_user_profiles__profile_data_8
 msgid "	     	Über den Browser festgestellte Version: "
-msgstr "	     	Via your webbrowser detected version:"
+msgstr "	     	Via your webbrowser detected version: "
 
 #: view_user_profiles__profile_data_9
 msgid "Hier kannst du einstellen, wie sicher bzw. komfortabel deine Installationsquellen sein sollen"
@@ -3171,11 +3170,11 @@ msgstr "Here you can select how secure or comfortable you sources should be"
 
 #: view_user_profiles__profile_rating_0
 msgid "Feinauswahl der zu installierenden Programmbündel und Programme"
-msgstr "detailed choice of the programs and bundles that shall be installed"
+msgstr "Detailed choice of the programs and bundles that shall be installed"
 
 #: view_user_profiles__profile_rating_1
 msgid "Hier kannst du deine beabsichtigte Computer-Nutzung noch genauer angeben. Durch Klicken auf "
-msgstr "Here you can choose the use of your computer in detail. With a click on "
+msgstr "Here you can choose the use of your computer in detail. With a click on the "
 
 #: view_user_profiles__profile_rating_2
 msgid " lässt sich ein Bereich ein- oder ausklappen."
@@ -3187,7 +3186,7 @@ msgstr "Attention! When finished, don't forget to click on \"Save\"."
 
 #: view_user_profiles__profile_rating_4
 msgid "Speichern"
-msgstr "save"
+msgstr "Save"
 
 #: view_user_profiles__sources_0
 msgid "Quellen für die zu installierenden Programme"
@@ -3199,7 +3198,7 @@ msgstr "The soon be installed programs and packages are shown and ordered by the
 
 #: view_user_profiles_help_0
 msgid "Feststellen der Ubuntu-Version"
-msgstr "determination of the Ubuntu-version"
+msgstr "Determination of the Ubuntu version"
 
 #: view_user_profiles_help_1
 msgid "Öffne ein Terminal unter "Anwendungen" -> "Zubehör" -> "Terminal"
@@ -3263,11 +3262,11 @@ msgstr "sent messages"
 
 #: view_users__sidebar_0
 msgid "Installation"
-msgstr "installation"
+msgstr "Installation"
 
 #: view_users__sidebar_1
 msgid "Bündel verwalten"
-msgstr "administrate bundles"
+msgstr "Administrate bundles"
 
 #: view_users__sidebar_10
 msgid "Aktuelles"
@@ -3279,31 +3278,31 @@ msgstr "Search programs"
 
 #: view_users__sidebar_3
 msgid "Ubuntu-Derivate"
-msgstr "Ubuntu-derivatives"
+msgstr "Ubuntu derivatives"
 
 #: view_users__sidebar_4
 msgid "Ubuntu-Versionen"
-msgstr "Ubuntu-versions"
+msgstr "Ubuntu versions"
 
 #: view_users__sidebar_5
 msgid "Benutzer verwalten"
-msgstr "administrate users"
+msgstr "Administrate users"
 
 #: view_users__sidebar_6
 msgid "Kategorien verwalten"
-msgstr "administrate categories"
+msgstr "Administrate categories"
 
 #: view_users__sidebar_7
 msgid "Derivate verwalten"
-msgstr "administrate derivatives"
+msgstr "Administrate derivatives"
 
 #: view_users__sidebar_8
 msgid "Fehlgeschlagene debs"
-msgstr "failed debs"
+msgstr "Failed debs"
 
 #: view_users__sidebar_9
 msgid "Konflikte"
-msgstr "conflicts"
+msgstr "Conflicts"
 
 #: view_users__user_0
 msgid "aktivieren"
@@ -3363,7 +3362,7 @@ msgstr "All users"
 
 #: view_users_index_1
 msgid "Insgesamt haben wir "
-msgstr "Wie have a total of"
+msgstr "We have a total of "
 
 #: view_users_index_2
 msgid " angemeldete Benutzer."
@@ -3371,11 +3370,11 @@ msgstr " registered users."
 
 #: view_users_index_3
 msgid "Benutzername"
-msgstr "username"
+msgstr "Username"
 
 #: view_users_index_4
 msgid "E-Mail"
-msgstr "e-mail"
+msgstr "E-mail"
 
 #: view_users_index_5
 msgid "Aktiviert?"
