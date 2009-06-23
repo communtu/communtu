@@ -70,7 +70,7 @@ class Deb < ActiveRecord::Base
         # remove package files, but not folder
         safe_system "rm #{RAILS_ROOT}/debs/#{name}/#{name}* >/dev/null 2>&1 || true"
         # mark this deb as susccessfully generated
-        # self.generated = true
+        self.generated = true
         self.errmsg = nil
         self.log = IO.popen("tail -n80 #{RAILS_ROOT}/log/debianize.log").read
         self.save
