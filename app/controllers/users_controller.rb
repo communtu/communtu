@@ -107,6 +107,8 @@ class UsersController < ApplicationController
         @user.password= params[:password]        
         # make user non-anonymous
         @user.anonymous = false
+        #Create Inbox when user is not anonymous anymore
+        Folder.create!(:user_id =>@user.id, :name=>"Inbox", :created_at=>Time.now(), :updated_at=>Time.now())
         @user.save
         flash[:notice] = t(:controller_users_6)
       else
