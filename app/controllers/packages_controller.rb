@@ -6,7 +6,7 @@ class PackagesController < ApplicationController
   end
   # GET /Packages
   # GET /Packages.xml
-  def index         
+  def index
     @packages     = Package.find_packages(session[:search], session[:group], session[:programs], params[:page])
     @groups       = Package.find(:all, :select => "DISTINCT section", :order => "section")
     

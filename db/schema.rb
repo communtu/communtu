@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.integer  "security_type"
     t.string   "version"
     t.string   "debianized_version"
+    t.integer  "ratings_count"
     t.boolean  "modified",           :default => false
     t.boolean  "debianizing",        :default => false
     t.boolean  "deb_error",          :default => false
@@ -56,6 +57,9 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "link"
+    t.integer  "name_tid"
+    t.integer  "description_tid"
+    t.integer  "link_tid"
   end
 
   create_table "comments", :force => true do |t|
@@ -113,6 +117,8 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.datetime "updated_at"
     t.string   "short_name"
     t.string   "url"
+    t.integer  "description_tid"
+    t.integer  "url_tid"
   end
 
   create_table "folders", :force => true do |t|
@@ -221,6 +227,8 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.text     "contents"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "translatable_id"
+    t.string   "language_code"
   end
 
   create_table "umfrage_packages", :force => true do |t|
