@@ -3,7 +3,7 @@
     APTPIN="/etc/apt/preferences"
     echo "#" >> $APTLIST
     echo "# Von Communtu hinzugefügte Quellen" >> $APTLIST
-    echo >> $APTPIN
+    echo "#" >> $APTPIN
     echo "# Von Communtu hinzugefügte Prioritäten" >> $APTPIN
     IFS="§"
     for source in $NEWSOURCES; do
