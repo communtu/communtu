@@ -1,7 +1,7 @@
     
     # add sources
     APTPIN="/etc/apt/preferences"
-    echo "#" >> $APTLIST
+    echo  >> $APTLIST
     echo "# Von Communtu hinzugefügte Quellen" >> $APTLIST
     echo "#" >> $APTPIN
     echo "# Von Communtu hinzugefügte Prioritäten" >> $APTPIN
@@ -12,10 +12,10 @@
     	url=$( echo $source | cut -d " " -f 2 )
     	distribution=$( echo $source | cut -d " " -f 3 )
     	component=$( echo $source | cut -d " " -f 4-6 )
-    	echo >> $APTPIN
     	echo "Package: *" >> $APTPIN
 	    echo "Pin: release c=$component, origin=$url" >> $APTPIN
         echo "Pin-Priority: 100" >> $APTPIN
+    	echo >> $APTPIN
     done
 
     # add keys
