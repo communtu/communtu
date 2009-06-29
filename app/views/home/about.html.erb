@@ -8,9 +8,7 @@
 <h3><%=t(:view_home_about_4)%></h3>
 
 <p><%=t(:view_home_about_5)%> 
-<% if !logged_in? %>
-<%=t(:view_home_about_6)%>.
-<% end %>
+<%=t(:view_home_about_6)%><%= link_to("Anmeldung", "/session/new") %>
 <%=t(:view_home_about_7)%>
 </p>
 
@@ -18,7 +16,7 @@
 </p>
 
 <p><%=t(:view_home_about_9)%></p>
-
+<% if logged_in? %>
 			<p><%=t(:view_home_home_5)%></p>
 			<ul>
 			<li><%=t(:view_home_home_6)%></li>
@@ -32,7 +30,7 @@
 			<% end %>
 			<li><%=t(:view_home_home_13)%></li>
 			</ul>
-
+<% end %>
 <h3><%=t(:view_home_about_10)%></h3>
 <%=t(:view_home_about_11)%><%=t(:view_home_about_12)%>
 
