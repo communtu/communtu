@@ -302,7 +302,7 @@ de:
     und unter <b>Programme suchen</b> auch einzelne Programme."
   view_home_about_15: Registrierung
   view_home_about_16: "Um Communtu nutzen zu können, kannst du dich registrieren. \
-    Das geht ganz einfach über den \"Anmelden\"-Knopf in der oberen Leiste."
+    Das geht ganz einfach über den \"Registrieren\"-Knopf in der oberen Leiste."
   view_home_about_17: Impressum
   view_home_about_18: "Natur, Geist und Technik - Verein zur Förderung der Allgemeinbildung e.V."
   view_home_about_19: "Zentrum für Solidarische Ökonomie"
@@ -321,8 +321,8 @@ de:
     und hat zudem spezielle Bereiche für Einsteiger und Windows-Umsteiger."
   view_home_about_4: Wie verwende ich Communtu?
   view_home_about_5: "Zum Starten wählst du <b>Installation</b> auf der linken Seitenleiste."
-  view_home_about_6: "  (Diese erscheint erst nach "
-  view_home_about_7: "Dort kannst du deine Einstellungen bearbeiten. \
+  view_home_about_6: "  (Diese erscheint erst nach einer "
+  view_home_about_7: ".) Dort kannst du deine Einstellungen bearbeiten. \
     Unter den Grunddaten musst du zunächst eintragen, welche Ubuntu-Version du auf deinem PC installiert hast, \
     außerdem, ob du unfreie Programme nutzen willst oder nicht. \
     Zudem wählst du aus, für welche Aufgaben du deinen Ubuntu-PC nutzen willst. "
@@ -332,7 +332,7 @@ de:
     Dies führt dich zur Installations-Seite. \
     Dort findest du einen Installationsknopf, mit dem die Communtu-Nachinstallation gestartet werden \
     kann. Es dauert etwas, bis die Programme automatisch aus dem Internet geladen und installiert werden. Fertig ist der vielseitig einsetzbare Ubuntu-PC!"
-  view_home_about_9: "Wichtig: Man braucht schon eine schnelle Internet-Verbindung. Für Ubuntu-Nutzer, die noch ein Modem oder Ahnliches \
+  view_home_about_9: "Wichtig: Man braucht schon eine schnelle Internet-Verbindung. Für Ubuntu-Nutzer, die noch ein Modem oder ähnliches \
     nutzen, planen wir die Möglichkeit, automatisch CDs und DVDs zu erstellen."
   view_home_auth_error_0: Authentifizierungs-Fehler
   view_home_auth_error_1: "Die Daten, die du an Communtu geschickt hast, konnten nicht korrekt authentifiziert werden. \
