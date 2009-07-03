@@ -34,7 +34,7 @@
 					</td>
 					<td class="<%= css %>" valign="middle">
 						<div class='star-ratings-block'>
-            				<ul class='star-rating' alt='<%= number_with_precision(metapackage.rating, :precision => 2).to_s + " " + t(:view_rating_show_title_ratings_count, {:votes=>metapackage.ratings.count}) %>' title='<%= number_with_precision(metapackage.rating, 2).to_s + " " + t(:view_rating_show_title_ratings_count, {:votes=>metapackage.ratings.count}) %>'>
+            				<ul class='star-rating' alt='<%= number_with_precision(metapackage.rating, :precision => 2).to_s + " " + t(:view_rating_show_title_ratings_count, {:votes=>metapackage.ratings.count}) %>' title='<%= number_with_precision(metapackage.rating, :precision => 2).to_s + " " + t(:view_rating_show_title_ratings_count, {:votes=>metapackage.ratings.count}) %>'>
                 				<li class='current-rating' style='width:<%= metapackage.rating*25 %>px'></li>
             				</ul>
          				</div>
