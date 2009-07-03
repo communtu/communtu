@@ -13,6 +13,9 @@ class Distribution < ActiveRecord::Base
 
   # return the distribution info from the browser info string
   def self.browser_info(s)
+    if s.nil? then
+      return nil
+    end
     index = s.index("Ubuntu")
     if index.nil? then
       s = nil

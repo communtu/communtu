@@ -48,11 +48,12 @@
   <%=h @deb.errmsg %>
 </p>
 
+<% if !@deb.log.nil? %>
 <p>
   <b>Log:</b><br>
   <tt><%= @deb.log.gsub(/\n/,'<br>') %></tt>
 </p>
-
+<% end %>
 
 <%= link_to 'Edit', edit_deb_path(@deb) %> |
 <%= link_to 'Back', debs_path %>
