@@ -14,7 +14,7 @@ module MetapackagesHelper
   def show_ratings_and_comments ratings
     out = ""
     ratings.reverse.each do |r|      
-      out += "<div class='inner1' style='max-width:80%;'><table  width='
+      out += "<b>#{t(:view_metapackages_show_comment_and_ratings)}</b><div class='inner1' style='max-width:80%;'><table  width='
       100%'><tr><td>"+
          "<div class='star-ratings-block'>" +
             "<ul class='star-rating' alt='#{r.rating} #{t(:view_rating_show_title_got_ratings)}' title='#{r.rating} #{t(:view_rating_show_title_got_ratings)}'>" +
