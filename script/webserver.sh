@@ -5,11 +5,13 @@
 # auskommentiert werden.
 OLDSERVER=bremer-commune.dyndns.org
 SVNSERVER=bremer-commune.dyndns.org
+OLDUSERNAME=communtu
+NEWUSERNAME=communtu
 # folder for web projects
 mkdir web2.0
 # apache und mail
 sudo apt-get install apache2
-#scp -r commune@$OLDSERVER:/etc/apache2/* /etc/apache2/ 
+#scp -r $OLDUSERNAME@$OLDSERVER:/etc/apache2/* /etc/apache2/
 sudo apt-get install php5 libapache2-mod-python sendmail
 sudo a2enmod proxy
 sudo /etc/init.d/apache2 restart
@@ -33,19 +35,19 @@ sudo apt-get install rsync
 # mysql server
 sudo apt-get install mysql-server libmysql-ruby ruby1.8-dev libmysqlclient15-dev
 sudo gem install mysql
-mysqladmin -u root -p create communtu
-scp commune@$OLDSERVER:/etc/mysql/my.cnf /etc/mysql/my.cnf
-ssh commune@$OLDSERVER "mysqldump -u root -p communtu | gzip -c > /home/commune/web2.0/communtu-program/db.dump.gz"
-scp commune@$OLDSERVER:/home/commune/web2.0/communtu-program/db.dump.gz /home/commune/web2.0/communtu-program/
-gunzip -c /home/commune/web2.0/communtu-program/db.dump.gz | mysql -u root -p communtu
+scp $OLDUSERNAME@$OLDSERVER:/etc/mysql/my.cnf /etc/mysql/my.cnf
 sudo /etc/init.d/mysql reload
+mysqladmin -u root -p create communtu
+ssh $OLDUSERNAME@$OLDSERVER "mysqldump -u root -p communtu | gzip -c > /home/$OLDUSERNAME/web2.0/communtu-program/db.dump.gz"
+scp $OLDUSERNAME@$OLDSERVER:/home/$OLDUSERNAME/web2.0/communtu-program/db.dump.gz /home/$NEWUSERNAME/web2.0/communtu-program/
+gunzip -c /home/$NEWUSERNAME/web2.0/communtu-program/db.dump.gz | mysql -u root -p communtu
 # checkout rails project
 cd web2.0
 svn co http://$SVNSERVER/svn/communtu-program communtu-program --username commune 
 cd ..
-scp commune@$OLDSERVER:/home/commune/web2.0/communtu-program/config/database.yml /home/commune/web2.0/communtu-program/config/database.yml
+scp $OLDUSERNAME@$OLDSERVER:/home/$OLDUSERNAME/web2.0/communtu-program/config/database.yml /home/$NEWUSERNAME/web2.0/communtu-program/config/database.yml
 ln -s communtu-program/public/debs/ communtu-packages
 # start rails apps
-scp commune@$OLDSERVER:/home/commune/rails-start . 
-/home/commune/web2.0/communtu-program/script/web start
+scp $OLDUSERNAME@$OLDSERVER:/home/$OLDUSERNAME/rails-start .
+/home/$NEWUSERNAME/web2.0/communtu-program/script/web start
 
