@@ -6,7 +6,7 @@
 	<tr>
 		<td width='40%' colspan="2">
 			<%=link_to t(:view_home_home_2), "http://www.ubuntu.com"%><%=t(:view_home_home_3)%>
-			<%= link_to t(:view_home_home_4), '/home/about'%><br />
+			<%= link_to t(:view_home_home_4), '/home/about'%><br /><br />
 			<% if logged_in? %>
 			<%=t(:view_home_home_14)%><%= link_to t(:view_home_home_15), '/home/about' %><%=t(:view_home_home_16)%><%= link_to t(:view_home_home_17), '/home/impressum' %>
 			<% else %>
@@ -40,7 +40,7 @@
          				</div>
 					</td>
 				</tr>
-				<%end%>
+				<% end %>
 			</table>
 			<br/>
 			<% if logged_in? and !current_user.anonymous? %>
