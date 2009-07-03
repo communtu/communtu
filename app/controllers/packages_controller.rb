@@ -1,5 +1,6 @@
 class PackagesController < ApplicationController
   before_filter :login_required
+  before_filter :check_administrator_role, :add_flash => { :notice => I18n.t(:controller_categories_1) }, :only => :destroy
 
   def title
     t(:controller_packages_0)
@@ -131,7 +132,7 @@ class PackagesController < ApplicationController
     @package.destroy
 
     respond_to do |format|
-      format.html { redirect_to(Packages_url) }
+      format.html { redirect_to(packages_url) }
       format.xml  { head :ok }
     end
   end

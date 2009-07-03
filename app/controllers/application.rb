@@ -34,7 +34,7 @@ class ApplicationController < ActionController::Base
   filter_parameter_logging :password 
   
   def is_anonymous 
-    if current_user.anonymous?
+    if (!logged_in?) or current_user.anonymous?
       flash[:error] = t(:controller_application_0)
       redirect_to root_path
     end

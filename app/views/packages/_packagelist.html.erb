@@ -49,10 +49,6 @@
 			        :url => user_path(current_user) + "/cart/add_to_cart/" + package.id.to_s,\
 			        :update => 'meta_cart') %>
 		<% end %>
-    	<% if is_admin? %>
-    		<%= link_to image_tag("/images/edit-delete.png", :size => "22x22", :border => "0", :title => t(:view_packages__packagelist_10), :alt => t(:view_packages__packagelist_10)),
-    		        package_path(package), :confirm => t(:view_packages__packagelist_12), :method => :delete %>
-			<% end %>
 	</td>
   </tr>
 <% end %>
