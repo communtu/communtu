@@ -113,7 +113,7 @@
 
 <hr>
 <%= render :partial => "package_list", :locals => { :metapackage => @metapackage, :editable => false, :distribution => @distribution, :derivative =>  @derivative} %>
-<b><%= t(:view_metapackages_show_comment_and_ratings) %></b>
+
 <%= show_ratings_and_comments @metapackage.ratings.find(:all, :limit=> 5) %>
 <% else %>
 <p><%=t(:view_metapackages_show_25)%></p>
