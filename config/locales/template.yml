@@ -874,16 +874,20 @@ de:
   view_user_mailer_reset_password_0: ", du hast ein neues Passwort erhalten."
   view_user_mailer_signup_notification_0: "Hallo und herzliche Willkommen bei Communtu!
 
+
  Du hast Dich bei Communtu http://www.communtu.de
  erfolgreich registriert. Jetzt kannst Du alle Features der Plattform
  benutzen."
   view_user_mailer_signup_notification_1: "Dein Benutzername lautet:"
   view_user_mailer_signup_notification_2: "
   Viele Grüße
+
   das Communtu-Team
+
 
   Weitere Informationen zu den Projekt insbesondere was Du für Möglichkeiten der Nutzung hast, findest Du in unserer FAQ-Liste unter
   http://www.communtu.de/home/faq
+
 
   Unsere Ankündigungen und Mailinglisten findest Du unter:
   http://www.communtu.de/home/news"
