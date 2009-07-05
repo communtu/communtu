@@ -14,9 +14,23 @@ module DistributionsHelper
     
     repos.each do |repo|
         css = cycle("packageList0", "packageList1")
-        pic = if repo.license_type == 0 then "Tux2.png" else "24-security-lock.png" end
-        title = if repo.license_type == 0 then "t(:helper_distributions_0)" else "t(:helper_distributions_1)" end
-        image = '<img border="0" height=25 src="/images/'+pic+'" title="'+title+'"/>'
+        pic = if repo.license_type == 0 and repo.security_type == 0 then "tux_canonical.png"
+              elsif repo.license_type == 0 and repo.security_type == 1 then "tux_community.png"
+              elsif repo.license_type == 0 and repo.security_type == 2 then "tux_free.png"
+              elsif repo.license_type == 1 and repo.security_type == 0 then "non_free_canonical.png"
+              elsif repo.license_type == 1 and repo.security_type == 1 then "non_free_community.png"
+              else "non_free.png"
+              end
+        title = if repo.license_type == 0 and repo.security_type == 0 then t(:helper_distributions_16)
+              elsif repo.license_type == 0 and repo.security_type == 1 then t(:helper_distributions_17)
+              elsif repo.license_type == 0 and repo.security_type == 2 then t(:helper_distributions_18)
+              elsif repo.license_type == 1 and repo.security_type == 0 then t(:helper_distributions_19)
+              elsif repo.license_type == 1 and repo.security_type == 1 then t(:helper_distributions_20)
+              else t(:helper_distributions_21)
+              end
+      #  pic = if repo.license_type == 0 then "Tux2.png" else "24-security-lock.png" end
+        #title = if repo.license_type == 0 then t(:helper_distributions_0) else t(:helper_distributions_1) end
+        image = '<img border="0" height=24 src="/images/'+pic+'" title="'+title+'"/>'
         link = (link_to (repo.url + " " + repo.subtype), { :controller => :repositories, :action => :show,\
           :id => repo.id, :distribution_id => repo.distribution_id })
         if is_admin?
@@ -33,7 +47,7 @@ module DistributionsHelper
              "</td><td class='" + css + "' valign='middle'>" + image + link + "</td>" +\
              "<td class='" + css + "' valign='middle'>" + mig_link + "&nbsp;&nbsp;" + del_link + "</td></tr>"
         else
-           row = "<tr><td class='" + css + "'>" + link + "</td></tr>"
+           row = "<tr><td class='" + css + "'>" + image + link + "</td></tr>"
         end
         
         header[repo.security_type] += row
