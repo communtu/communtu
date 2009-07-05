@@ -8,6 +8,8 @@ class User < ActiveRecord::Base
   validates_presence_of     :password_confirmation,      :if => :password_required?
   validates_length_of       :password, :within => 4..40, :if => :password_required?
   validates_confirmation_of :password,                   :if => :password_required?
+#  validates_length_of       :firstname,    :within => 2..40
+#  validates_length_of       :surname,    :within => 2..40
   validates_length_of       :login,    :within => 3..40
   validates_length_of       :email,    :within => 6..100
   validates_uniqueness_of   :login, :email, :case_sensitive => false
@@ -47,7 +49,7 @@ class User < ActiveRecord::Base
   
   # prevents a user from submitting a crafted form that bypasses activation
   # anything else you want your user to change should be added here.
-  attr_accessible :login, :email, :password, :password_confirmation
+  attr_accessible :login, :email, :password, :password_confirmation, :surname, :firstname
  
   class ActivationCodeNotFound < StandardError; end
   class AlreadyActivated < StandardError
