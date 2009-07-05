@@ -3,6 +3,12 @@
 <p><%=t(:view_users_new_1)%><br />
 <%=t(:view_users_new_2)%></p>
 <% form_for :user, :url => users_path do |f| %>
+<p><label for="firstname"><%=t(:view_users_new_10)%> <%=t(:view_users_new_12)%></label><br/>
+<%= f.text_field :firstname %></p>
+
+<p><label for="surname"><%=t(:view_users_new_11)%> <%=t(:view_users_new_12)%></label><br/>
+<%= f.text_field :surname %></p>
+
 <p><label for="login"><%=t(:view_users_new_3)%></label><br/>
 <%= f.text_field :login %></p>
  

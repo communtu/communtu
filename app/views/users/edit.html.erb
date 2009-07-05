@@ -8,6 +8,8 @@
 <% form_for :user, :url => user_url(@user), :html => { :method => :put } do |f| %>
   <p><%=t(:view_users_edit_3)%><br /><%= f.text_field :login, :size => 60 %></p>
   <p><%=t(:view_users_edit_4)%><br /><%= f.text_field :email, :size => 60 %></p>
+  <p><%=t(:view_users_new_10)%><br /><%= f.text_field :firstname, :size => 60 %></p>
+  <p><%=t(:view_users_new_11)%><br /><%= f.text_field :surname, :size => 60 %></p>
 
 <% if @user.anonymous %>
   <p><label for="password" class="block"><%=t(:view_users_edit_5)%></label><br />
