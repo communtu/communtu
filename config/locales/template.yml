@@ -114,14 +114,20 @@ de:
   controller_users_9: Es gab ein Problem mit der Deaktivierung dieses Benutzers.
   controller_videos_0: "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
   helper_distributions_0: free
-  helper_distributions_10: und bearbeiten
+  helper_distributions_10: " und bearbeiten"
   helper_distributions_11: "<br />Distribution "
   helper_distributions_12: bearbeiten
   helper_distributions_13: "löschen"
   helper_distributions_14: Bist du sicher?
   helper_distributions_15: Wikiseite bei Ubuntuusers
+  helper_distributions_16: free und aus den main Paketquellen
+  helper_distributions_17: free und aus den Community Paketquellen
+  helper_distributions_18: free und aus Third Party Paketquellen
+  helper_distributions_19: non-free und aus den main Paketquellen
   helper_distributions_1: non-free
   helper_distributions_2: Repository synchronisieren
+  helper_distributions_20: non-free und aus den Community Paketquellen
+  helper_distributions_21: non-free und aus Third Party Paketquellen
   helper_distributions_4: Repository migieren
   helper_distributions_6: "Repository löschen"
   helper_distributions_8: "Quellen anzeigen"
@@ -444,6 +450,35 @@ de:
   view_home_derivatives_7: "unter der Kategorie \"Derivate\" zur Installation ausgewählt werden."
   view_home_derivatives_8: Ebenso kannst du dort nachgucken, aus welchen Paketen ein Derivat besteht.
   view_home_derivatives_9: "Über Communtu sinnvoll nachinstallierbare Derivate:"
+  view_home_faq_00: Häufig gestellte Fragen
+  view_home_faq_01: Was ist ein Bündel?
+  view_home_faq_02: Ein Bündel ist eine Zusammenstellung von Software für einen bestimmten Aufgabenbereich, den Du mit Deinem Rechner erledigen kannst.
+  view_home_faq_03: Wie installiere ich ein Bündel?
+  view_home_faq_04: "Ein Bündel kann einmal in einer Zusammenstellung mit weiteren über den Punkt \"Installation\" zum Computer hinzugefügt werden.
+  Anderseits kann auch ein Bündel direkt installiert werden, wenn Du über den Menüpunkt \"Bündel verwalten\" gehst."
+  view_home_faq_05: Wie erstelle ich ein Bündel?
+  view_home_faq_06: "Auf den linken Bereich der Webseite gibt es den Bündel-Editor. Dort bitte den Punkt \"Neues Bündel\" anklicken.
+  Aus den Paketen im Hauptfenster der Webseite kannst Du dann die einzelnen Pakete auswählen und hinzufügen. Zum Schluss muss dann auf das Speichernsymbol im Bündeleditor geklickt werden.
+  Hier öffnet sich dann im Hauptfenster ein Formular, wo Du einen sinnvollen Titel und Beschreibung eingeben kannst. Bitte ordne Deinem Bündel auch eine entsprechende Kategorie zu."
+  view_home_faq_07: Wie kann ich ein Bündel bewerten?
+  view_home_faq_08: "Du gehst auf den Menüpunkt \"Bündel verwalten\" und lässt Dir unter \"Alle veröffentlichten Bündel\" die Bündel anzeigen. Dort kannst Du bis zu fünf Sterne anklicken.
+  Danach erscheint ein Kommentarfeld, in dem Du diese Bewertung qualifizieren kannst."
+  view_home_faq_09: Wie kann ich ein Bündel ändern?
+  view_home_faq_10: "Du gehst auf den Menüpunkt \"Bündel verwalten\" und läßt Dir da Deine Bündel auflisten. Das zu ändernde Bündel klickst Du nun an. Du bekommst nun alle wichtigen Informationen zu Deinem Bündel angezeigt.
+  Unter \"Aktionen\" kannst Du nun dieses Bündel oder auch die Paketliste editieren. Wenn das Paket nicht veröffentlicht ist, dann kannst Du es auch löschen oder ansonsten auch veröffentlichen."
+  view_home_faq_11: Wie sichere ich die Programmliste meines Gesamtsystems?
+  view_home_faq_12: "Auf den linken Bereich der Webseite gibt es den Bündel-Editor. Dort bitte den Punkt \"Bündel aus Paketliste\" anklicken.
+  Dort ist beschrieben, wie Du Deine Paketliste in Communtu hochladen kannst."
+  view_home_faq_13: Wie finde ich Programme?
+  view_home_faq_14: "Gehe dazu bitte auf den Menüpunkt \"Programme suchen\". Hier hast Du ein Suchfeld, in dem Du den Namen des gesuchten Prgramms angeben kannst.
+  Weiter ist es möglich die Suche nur über Programme durchzuführen, in dem das Feld \"Nur Programme\" angeklickt wird und somit sonstige Bibliotheken nicht mehr angezeigt werden.
+  Weiter ist es auch möglich eine Debian-Section auszuwählen, der die Auswahl an Programmen anhand von Kategorien vorselektiert."
+  view_home_faq_15: Wie kann ich ein einzelnes Programm installieren?
+  view_home_faq_16: "Gehe dazu bitte auf den Menüpunkt \"Programme suchen\". Dort bekommst Du eine Auswahl von Programmen. Wenn Du Dein gewünschtes Programm gefunden hast, kannst Du dieses durch Klicken auf das Installationssymbol installieren. 
+  Es ist möglich, dass Du vorher noch auf \"Quellen hinzufügen\" klicken musst, da es sein kann, dass das Programm in einer Quelle verfügabr ist, die Deinem System noch nicht bekannt ist."
+  view_home_faq_17: Wie kann ich Programme vorschlagen, dass diese in Communtu mit aufgenommen werden?
+  view_home_faq_18: "Wenn Du über \"Programme suchen\" ein bestimmtes Programm nicht gefunden hst, kann es daran liegen, das wir die Quelle aus dem das Programm kommt, noch nicht in Communtu eingetragen haben.
+  Du kannst uns diese Quelle über den \"Bündel-Editor\" unter den Punkt \"Repository vorschlagen\" melden, damit diese auch in Communtu eingearbeitet werden kann."
   view_home_home_0: "Communtu - gemeinsam Ubuntu-Linux an individuelle Bedürfnisse anpassen"
   view_home_home_10: "<b>Ubuntu-Versionen</b> Übersicht über die im System verfügbaren Ubuntu-Versionen (Distributionen)."
   view_home_home_11: "<b>Benutzer verwalten</b> Hier kannst du als Admin die Rollen der Benutzer ändern. Vorsicht walten lassen!"
@@ -837,13 +872,21 @@ de:
   view_user_mailer_activation_0: ", dein Benutzerkonto wurde aktiviert.  Folge nun dem Link:"
   view_user_mailer_forgot_password_0: ", um ein neues Passwort zu erhalten, folge dem Link:"
   view_user_mailer_reset_password_0: ", du hast ein neues Passwort erhalten."
-  view_user_mailer_signup_notification_0: "Dein Benutzerkonto wurde bei www.communtu.de angelegt.     Benutzername: "
-  view_user_mailer_signup_notification_1: "Klicke auf folgenden Link:"
-  view_user_mailer_signup_notification_2: |-
-    um zu unserem Projekt zu gelangen.
-    
-    Freundliche Gruesse
-    Das communtu-Team
+  view_user_mailer_signup_notification_0: "Hallo und herzliche Willkommen bei Communtu!
+
+ Du hast Dich bei Communtu http://www.communtu.de
+ erfolgreich registriert. Jetzt kannst Du alle Features der Plattform
+ benutzen."
+  view_user_mailer_signup_notification_1: "Dein Benutzername lautet:"
+  view_user_mailer_signup_notification_2: "
+  Viele Grüße
+  das Communtu-Team
+
+  Weitere Informationen zu den Projekt insbesondere was Du für Möglichkeiten der Nutzung hast, findest Du in unserer FAQ-Liste unter
+  http://www.communtu.de/home/faq
+
+  Unsere Ankündigungen und Mailinglisten findest Du unter:
+  http://www.communtu.de/home/news"
   view_user_profiles_help_0: Feststellen der Ubuntu-Version
   view_user_profiles_help_1: "Öffne ein Terminal unter \"Anwendungen\" -> \"Zubehör\" -> \"Terminal"
   view_user_profiles_help_2: "Gebe dort ein: "
@@ -937,7 +980,10 @@ de:
   view_users__mailbox_list_3: Versendete Nachrichten
   view_users_new_0: Registrierung
   view_users_new_1: "Hier hast du die Möglichkeit dich zu registrieren."
-  view_users_new_2: "Wenn du über die Weiterentwicklung von Communtu informiert werden möchtest, dann gebe bitte deine richige E-Mail-Adresse an."
+  view_users_new_10: "Dein Vorname"
+  view_users_new_11: "Dein Nachname"
+  view_users_new_12: "(optional)"
+  view_users_new_2: "Wenn du über die Weiterentwicklung von Communtu informiert werden möchtest, dann gebe bitte deine richtige E-Mail-Adresse an."
   view_users_new_3: Benutzername
   view_users_new_4: E-Mail
   view_users_new_5: Passwort
