@@ -2,9 +2,9 @@ class SuggestionController < ApplicationController
   def title
     t(:controller_suggestion_0)
   end
-  before_filter :authorize_user_subresource
-  
+
   def install_sources
+    if check_login then return end
     Dir.chdir RAILS_ROOT
     
     current_user.increase_version
@@ -42,6 +42,7 @@ class SuggestionController < ApplicationController
   end
 
   def install_bundle_sources
+    if check_login then return end
     Dir.chdir RAILS_ROOT
     bundle = Metapackage.find(params[:mid])    
 
@@ -66,6 +67,7 @@ class SuggestionController < ApplicationController
   end
 
   def install_package_sources
+    if check_login then return end
     Dir.chdir RAILS_ROOT
     package = Package.find(params[:pid])    
     repos = package.repositories_dist(current_user.distribution)
@@ -86,6 +88,7 @@ class SuggestionController < ApplicationController
   end
 
   def install_bundle_as_meta
+    if check_login then return end
     Dir.chdir RAILS_ROOT
 
     current_user.increase_version
@@ -241,6 +244,7 @@ class SuggestionController < ApplicationController
   end
   
   def install_apt_url
+    if check_login then return end
 
     dist = current_user.distribution
     

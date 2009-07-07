@@ -39,6 +39,17 @@ class ApplicationController < ActionController::Base
       redirect_to root_path
     end
   end
+
+  # berfore_filters are useless, because path is /users/...
+  def check_login
+    if !authorize_user_subresource then
+      flash[:error] = t(:lib_system_0)
+      redirect_to "/home/home"
+      return true
+    else
+      return false
+    end
+  end
   
 #  def default_url_options(options={})
 #    logger.debug "default_url_options is passed options: #{options.inspect}\n"

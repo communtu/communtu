@@ -4,29 +4,33 @@ class UserProfilesController < ApplicationController
   def title
     t(:controller_profiles_0)
   end  
-  before_filter :authorize_user_subresource
   
   helper :user_profiles  
   helper :tabz
     
   def edit
+    if check_login then return end
   end
   
   def refine
+    if check_login then return end
     params[:id] = 1
   end
   
   def sources
+    if check_login then return end
     params[:id] = 2
   end
 
   def installation
+    if check_login then return end
     params[:id] = 3
   end
   
 
   # update the basic data of the user's software selection
   def update_data 
+    if check_login then return end
     user         = current_user
     lic          = params[:lic]
     sec          = params[:sec]
@@ -71,6 +75,7 @@ class UserProfilesController < ApplicationController
   end
   
   def update_ratings
+    if check_login then return end
     current_user.first_login = 0
     current_user.profile_changed = true
     current_user.save!
