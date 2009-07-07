@@ -1,6 +1,6 @@
 class PasswordsController < ApplicationController
   def title
-    t(:controller_passwords_0)
+    t(:match_ubuntu)
   end
   layout 'application'
   before_filter :not_logged_in_required, :only => [:new, :create]
@@ -35,8 +35,8 @@ class PasswordsController < ApplicationController
     @user = User.find_by_password_reset_code(params[:id]) if params[:id]
     raise if @user.nil?
   rescue
-    logger.error t(:controller_passwords_3)
-    flash[:notice] = t(:controller_passwords_4)
+    logger.error t(:invalid_activation_code_entered)
+    flash[:notice] = t(:invalid_activation_code_please_check_again)
     #redirect_back_or_default('/')
     redirect_to new_user_path
   end
@@ -74,8 +74,8 @@ class PasswordsController < ApplicationController
       end  
       redirect_to login_path
   rescue
-    logger.error t(:controller_passwords_9)
-    flash[:notice] = t(:controller_passwords_10)
+    logger.error t(:invalid_activation_code_entered)
+    flash[:notice] = t(:invalid_activation_code_please_check_again)
     redirect_to new_user_path
   end
     

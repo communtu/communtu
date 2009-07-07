@@ -23,14 +23,14 @@ function onEnter( evt, frm ) {
 
 <% form_tag session_path do %>
 
-<p><label for="login"><%=t(:view_sessions_new_1)%></label><br/>
+<p><label for="login"><%=t(:username)%></label><br/>
 <%= text_field_tag 'login' %></p>
  
-<p><label for="password"><%=t(:view_sessions_new_2)%></label><br />
+<p><label for="password"><%=t(:passwd)%></label><br />
 <%= password_field_tag 'password', '', :onkeypress => "return onEnter(event,this.form);" %></p>
  
 <p><label for="remember_me"><%=t(:view_sessions_new_3)%></label>
 <%= check_box_tag 'remember_me' %></p>
  
-<p><%= link_to_function(t(:view_sessions_new_4), "$(this).up('form').submit()") %>&nbsp;&nbsp;&nbsp;<%= link_to(t(:view_sessions_new_5), new_user_path)%></p>
+<p><%= link_to_function(t(:anmelden), "$(this).up('form').submit()") %>&nbsp;&nbsp;&nbsp;<%= link_to(t(:register), new_user_path)%></p>
 <% end %>

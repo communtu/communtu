@@ -2,7 +2,7 @@ class DerivativesController < ApplicationController
   layout 'application'
   
   def title
-    t(:controller_derivatives_0)
+    t(:ubuntu_derivatives)
   end
   # GET /derivatives
   # GET /derivatives.xml

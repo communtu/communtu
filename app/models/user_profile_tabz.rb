@@ -36,7 +36,7 @@ class UserProfileTabz < Tabz::Base
     end
     
     add_tab do
-        titled I18n.t(:model_user_profile_tabz_2)
+        titled I18n.t(:sources)
         looks_like "user_profiles/sources"
         with_data do
           if @user_data[:user].class==User then

@@ -2,10 +2,10 @@
 
 <%= render_flash %>
 <div class="inner1">
-	<p><%=t(:view_users_edit_3)%> <%= @user.login %> <%=link_to (image_tag("message.png", :alt=>t(:view_metapackages_show_1),:title=>t(:view_metapackages_show_2), :mouseover=>"message_rollover.png",:border=>"0" ), {:controller=>"sent", :action=>"new", :mail_to=>@user})%> </p>
+	<p><%=t(:view_users_edit_3)%> <%= @user.login %> <%=link_to (image_tag("message.png", :alt=>t(:compose_new_message),:title=>t(:compose_new_message), :mouseover=>"message_rollover.png",:border=>"0" ), {:controller=>"sent", :action=>"new", :mail_to=>@user})%> </p>
    <% if @user.id == current_user.id %>
     <% if @user.surname? %>
-      <p><%=t(:view_users_show_1)%><%= @user.firstname %> <%= @user.surname %></p>
+      <p><%=t(:name_with_colon)%><%= @user.firstname %> <%= @user.surname %></p>
     <% end %>
    <% end %>
     <p><%=t(:view_users_show_2)%><%= @user.created_at.month %>/<%= @user.created_at.year %>&nbsp;<font size="-3"><%=t(:view_users_show_3)%></font>
@@ -14,11 +14,11 @@
         <p><%=t(:view_users_show_5)%><%= @metas_user.length
 %></p>
       <% if @user.id == current_user.id %>
-        <p><%=t(:view_users_show_6)%><%= @user.email %></p>
+        <p><%=t(:email_with_colon)%><%= @user.email %></p>
       <% end %>
 </div>
   <% if @user.id == current_user.id %>
-    <%= link_to t(:view_users_show_7), edit_user_path(@user.id) %> <br /><br />
+    <%= link_to t(:edit), edit_user_path(@user.id) %> <br /><br />
 	
 	<% if !@user.anonymous %>
 		<!-- Messanger -->

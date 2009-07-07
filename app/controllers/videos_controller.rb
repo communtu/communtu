@@ -1,7 +1,7 @@
 class VideosController < ApplicationController
   before_filter :login_required
   def title
-    t(:controller_videos_0)
+    t(:match_ubuntu)
   end
 
   # GET /videos/1

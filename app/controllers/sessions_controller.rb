@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
   def title
-    t(:controller_sessions_0)
+    t(:match_ubuntu)
   end
   layout 'application'
   before_filter :login_required, :only => :destroy

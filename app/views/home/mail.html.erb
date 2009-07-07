@@ -1,8 +1,8 @@
 <h1><%=t(:view_home_mail_0)%></h1>
 <%=t(:view_home_mail_1)%>
 <%= form_tag(:controller => 'home', :action => 'submit_mail') %>
-<%= #text_field_tag(t(:view_home_mail_2))
+<%= #text_field_tag(t(:email_with_colon))
 %>
-<p><%=t(:view_home_mail_3)%><%= text_field(:form, :email) %></p>
-<%= submit_tag t(:view_home_mail_4) %>
+<p><%=t(:email_with_colon)%><%= text_field(:form, :email) %></p>
+<%= submit_tag t(:senden) %>
 </form>

@@ -4,10 +4,10 @@
 </p>
 
 <p>
-  <b><%=t(:view_videos_show_1)%></b>
+  <b><%=t(:description_with_colon)%></b>
   <%=h @video.description %>
 </p>
 
 
-<%= link_to t(:view_users_show_7), edit_video_path(@video) %> |
-<%= link_to t(:view_videos_show_3), video_path %>
+<%= link_to t(:edit), edit_video_path(@video) %> |
+<%= link_to t(:back), video_path %>

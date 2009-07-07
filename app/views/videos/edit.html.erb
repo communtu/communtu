@@ -12,8 +12,8 @@
     <%= f.text_area :description, :cols => 80, :rows => 6 %>
   </p>
   <p>
-    <%= f.submit t(:view_videos_edit_1) %>
+    <%= f.submit t(:save) %>
   </p>
 <% end %>
 
-<%= link_to t(:view_videos_edit_2), :controller => :packages, :action => :edit, :id => @video.base_package_id %>
+<%= link_to t(:back), :controller => :packages, :action => :edit, :id => @video.base_package_id %>

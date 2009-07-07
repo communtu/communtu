@@ -1,6 +1,6 @@
 class RolesController < ApplicationController
   def title
-    t(:controller_roles_0)
+    t(:match_ubuntu)
   end
   layout 'application'
   before_filter :check_administrator_role

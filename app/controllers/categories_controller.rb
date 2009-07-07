@@ -2,7 +2,7 @@ class CategoriesController < ApplicationController
   def title
     t(:controller_categories_0)
   end
-  before_filter :check_administrator_role, :add_flash => { :notice => I18n.t(:controller_categories_1) }
+  before_filter :check_administrator_role, :add_flash => { :notice => I18n.t(:no_admin) }
   
   # GET /categories
   # GET /categories.xml

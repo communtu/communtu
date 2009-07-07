@@ -1,9 +1,9 @@
 class PackagesController < ApplicationController
   before_filter :login_required
-  before_filter :check_administrator_role, :add_flash => { :notice => I18n.t(:controller_categories_1) }, :only => :destroy
+  before_filter :check_administrator_role, :add_flash => { :notice => I18n.t(:no_admin) }, :only => :destroy
 
   def title
-    t(:controller_packages_0)
+    t(:packages)
   end
   # GET /Packages
   # GET /Packages.xml

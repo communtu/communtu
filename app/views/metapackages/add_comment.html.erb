@@ -4,18 +4,18 @@
   <% if logged_in? %>
 <table>
 <%= form_tag ("/metapackages/save_comment/" + @id.to_s) %>
-	<tr><td valign='top'><%=t(:view_metapackages_add_comment_0)%></td><td>
+	<tr><td valign='top'><%=t(:Kommentar)%></td><td>
 		<%= text_area_tag 'input', nil, { :type => :textarea, :name => :comment, :cols => 80,\
 		:rows => 10 }%>
 	</td></tr>
 	<tr><td colspan='2' align="center">
 		<%= hidden_field_tag 'metapackage_id', @id %>
-		<%= submit_tag t(:view_metapackages_add_comment_1) %>	
+		<%= submit_tag t(:add_comment) %>	
 	</td></tr>
 	
 </table>
 </form>
 <% else %>
-<p><%=t(:view_metapackages_add_comment_2)%></p>
+<p><%=t(:not_logged_in)%></p>
 <% end %>
 </div>

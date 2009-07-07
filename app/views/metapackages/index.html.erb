@@ -1,11 +1,11 @@
 <% if logged_in? %>
-<span class="headline"><%=t(:view_metapackages_index_0)%></span>
+<span class="headline"><%=t(:bundle)%></span>
 
 <div class="inner1">
     <%= render :partial => "metalist", :locals => { :packages => @metapackages } %>
 </div>
 
-<%= link_to t(:view_metapackages_index_1), distribution_path(id)%>
+<%= link_to t(:back), distribution_path(id)%>
 <% else %>
-<p><%=t(:view_metapackages_index_2)%></p>
+<p><%=t(:not_logged_in)%></p>
 <% end %>

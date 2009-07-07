@@ -9,9 +9,9 @@
 
         <%= collection_select(:to_dist, :id, @distributions, :id, :name) %>        
         
-        <p><%= submit_tag(t(:view_metapackages_migrate_2)) %></p>
+        <p><%= submit_tag(t(:migrate)) %></p>
     </div>
 </form>
 <% else %>
-<p><%=t(:view_metapackages_migrate_3)%></p>
+<p><%=t(:not_logged_in)%></p>
 <% end %>

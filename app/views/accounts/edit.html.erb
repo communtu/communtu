@@ -1,17 +1,17 @@
 <%= render_flash %>
-<span class="headline"><%=t(:view_accounts_edit_0)%></span>
+<span class="headline"><%=t(:change_passwd)%></span>
 <div class="inner1">
 <% form_tag url_for(:action => "update") do %>
   <p><label for="old_password" class="block"><%=t(:view_accounts_edit_1)%></label><br />
   <%= password_field_tag 'old_password', @old_password, :size => 45 %></p>
  
-  <p><label for="password" class="block"><%=t(:view_accounts_edit_2)%></label><br />
+  <p><label for="password" class="block"><%=t(:new_passwd)%></label><br />
   <%= password_field_tag 'password', {}, :size => 45 %><br />
-  <small><%=t(:view_accounts_edit_3)%></small></p>
+  <small><%=t(:four_and_fourty_letters)%></small></p>
  
-  <p><label for="password_confirmation"  class="block"><%=t(:view_accounts_edit_4)%></label><br />
+  <p><label for="password_confirmation"  class="block"><%=t(:confirm_new_passwd)%></label><br />
   <%= password_field_tag 'password_confirmation', {}, :size => 45 %></p>
  
-  <%= submit_tag (t(:view_accounts_edit_5)) %>
+  <%= submit_tag (t(:change_passwd)) %>
  </div>
 <% end %>

@@ -3,7 +3,7 @@
 <%= form_tag('/packages/search', :method => "post") %>
 <table>
 <tr>
-<td><%=t(:view_packages__packagelist_0)%></td>
+<td><%=t(:debian_section)%></td>
 <td>
     <select id="group" name="group" onchange="this.form.submit()">
         <option>all</option>
@@ -34,18 +34,18 @@
 <% css=cycle("packageList0", "packageList1") %>
   <tr> 
   	<td class="<%= css %>"> <%= package.icon(20)%>
-  		<%= link_to(package.name, package_path(package), :title => t(:view_packages__packagelist_3)) %></td>
+  		<%= link_to(package.name, package_path(package), :title => t(:detailed_view)) %></td>
 	<td class="<%= css %>" align="middle" valign="middle">
      <% if !package.stars.nil? %>
         <div class='star-rating-foreign' style='width:<%= (package.stars * 25).to_i %>px; '> </div>
      <% end %>
 	</td>
     <td class="<%= css %>" width="80" align="right">
-        <%= link_to image_tag("/images/install.png", :size => "22x22", :border => "0", :title => t(:view_packages__packagelist_4), :alt => t(:view_packages__packagelist_4)), "apt://"+package.name %>                          
-	    <%= link_to image_tag("/images/sources.jpg", :size => "22x22", :border => "0", :title => t(:view_packages__packagelist_6), :alt => t(:view_packages__packagelist_7)), "/users/#{current_user.id}/suggestion/install_package_sources/#{package.id}" %>
+        <%= link_to image_tag("/images/install.png", :size => "22x22", :border => "0", :title => t(:install2), :alt => t(:install2)), "apt://"+package.name %>                          
+	    <%= link_to image_tag("/images/sources.jpg", :size => "22x22", :border => "0", :title => t(:add_sources), :alt => t(:sources)), "/users/#{current_user.id}/suggestion/install_package_sources/#{package.id}" %>
 		<% if editing_metapackage? %>
 		    
-			<%= link_to_remote(image_tag("/images/add.png", :size => "22x22", :border => "0", :title =>t(:view_packages__packagelist_8), :alt => t(:view_packages__packagelist_8)), \
+			<%= link_to_remote(image_tag("/images/add.png", :size => "22x22", :border => "0", :title =>t(:add), :alt => t(:add)), \
 			        :url => user_path(current_user) + "/cart/add_to_cart/" + package.id.to_s,\
 			        :update => 'meta_cart') %>
 		<% end %>

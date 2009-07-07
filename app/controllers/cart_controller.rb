@@ -1,7 +1,7 @@
 class CartController < ApplicationController
   before_filter :login_required
     def title
-    t(:controller_cart_0)
+    t(:bundle_editor)
     end
     def create
         prepare_create
@@ -11,7 +11,7 @@ class CartController < ApplicationController
     def prepare_create
         if not editing_metapackage?
             cart      = Cart.new
-            cart.name = t(:controller_cart_1)
+            cart.name = t(:new_bundle)
             cart.save!
             
             session[:cart] = cart.id

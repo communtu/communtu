@@ -5,15 +5,15 @@
 <table>
 <% form_for(:repository,@repository, :url => { :action => :create }) do |f| %>
 <tr>
-	<td><%=t(:view_repositories_new_1)%></td>
+	<td><%=t(:licence)%></td>
 	<td><%= select_license_type %></td>
 </tr>
 <tr>
-	<td><%=t(:view_repositories_new_2)%></td>
+	<td><%=t(:security_type)%></td>
 	<td><%= select_security_type %></td>
 </tr>
 <tr>
-	<td><%=t(:view_repositories_new_3)%></td>
+	<td><%=t(:path)%></td>
 	<td><%= f.text_field :url %></td>
 	<td> (z.B. <i>deb http://de.archive.ubuntu.com/ubuntu/ gutsy</i>)</td>
 </tr>
@@ -22,16 +22,16 @@
     <td><%= f.text_field :gpgkey %><td>
 </tr>
 <tr>
-	<td><%=t(:view_repositories_new_5)%></td>
+	<td><%=t(:subtype)%></td>
 	<td><%= f.text_field :subtype %></td>
 	<td> (z.B. <i>main</i>)</td>
 	 <%= hidden_field_tag 'distribution_id',@repository.distribution.id %>
 
 </tr>
 <tr><td colspan="2" align="center">
-    <%= f.submit t(:view_repositories_new_6) %>
+    <%= f.submit t(:create) %>
 </td></tr>
 <% end %>
 </table>
 </div>
-<%= link_to t(:view_repositories_new_7), distribution_repositories_path(@repository.distribution) %>
+<%= link_to t(:back), distribution_repositories_path(@repository.distribution) %>

@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   DEFAULT_DISTRO = 2 # Hardy
   DEFALUT_DERIVATIVE = 1 # Ubuntu
   def title
-    t(:controller_users_0)
+    t(:match_ubuntu)
   end 
   layout 'application'
   
@@ -112,7 +112,7 @@ class UsersController < ApplicationController
         @user.save
         flash[:notice] = t(:controller_users_6)
       else
-        flash[:error] = t(:controller_users_7)
+        flash[:error] = t(:passwd_no_match)
         @old_password = params[:old_password]
         render :action => 'edit'      
       end

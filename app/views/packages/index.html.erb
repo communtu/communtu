@@ -2,6 +2,6 @@
 <%= render :partial => "packagelist", :locals => { :packages => @packages, :distribution => @distribution, :groups => @groups } %>
 <% else %>
 <div class="inner0">
-<p><%=t(:view_packages_index_0)%></p>
+<p><%=t(:not_logged_in)%></p>
 </div>
 <% end %>

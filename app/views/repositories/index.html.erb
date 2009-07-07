@@ -6,9 +6,9 @@
 
 <% for repository in @repositories %>
   <tr>
-    <td><%= link_to t(:view_repositories_index_1), repository %></td>
-    <td><%= link_to t(:view_repositories_index_2), edit_repository_path(repository) %></td>
-    <td><%= link_to t(:view_repositories_index_3), repository, :confirm => t(:view_repositories_index_4), :method => :delete %></td>
+    <td><%= link_to t(:show), repository %></td>
+    <td><%= link_to t(:edit), edit_repository_path(repository) %></td>
+    <td><%= link_to t(:delete), repository, :confirm => t(:are_you_sure), :method => :delete %></td>
   </tr>
 <% end %>
 </table>

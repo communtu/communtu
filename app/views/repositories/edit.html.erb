@@ -10,33 +10,33 @@
 	<td><%= select_distribution @repository, @distributions %></td>
 	</tr>
 	<tr>
-	<td><%=t(:view_repositories_edit_2)%></td>
+	<td><%=t(:licence)%></td>
 	<td><%= select_license_type @repository %></td>
 	</tr>
 	<tr>
-	<td><%=t(:view_repositories_edit_3)%></td>
+	<td><%=t(:security_type)%></td>
 	<td><%= select_security_type @repository %></td>
 	</tr>
 	<tr>
-		<td><%=t(:view_repositories_edit_4)%></td>
+		<td><%=t(:path)%></td>
 		<td><%= f.text_field :url %></td>
 	</tr>
 	<tr>
-        <td><%=t(:view_repositories_edit_5)%></td>
+        <td><%=t(:gpg_key)%></td>
         <td><%= f.text_field :gpgkey %><td>
     </tr>
 	<tr>
-		<td><%=t(:view_repositories_edit_6)%></td>
+		<td><%=t(:subtype)%></td>
 		<td><%= f.text_field :subtype %></td>
 	</tr>
 	<tr>
 	<td>
  	<td>
-    	<%= f.submit t(:view_repositories_edit_7) %>
+    	<%= f.submit t(:save) %>
   	</td>
 	</tr>
 <% end %>
 </table>
 </div>
-<%= link_to t(:view_repositories_edit_8), { :controller => :distributions, :action => :show,\
+<%= link_to t(:back), { :controller => :distributions, :action => :show,\
 	:id => @repository.distribution.id } %>

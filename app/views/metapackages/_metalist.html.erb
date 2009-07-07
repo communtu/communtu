@@ -3,12 +3,12 @@
 
 <table style="height:100%;" width="100%" cellspacing="0">
   <tr>
-    <th valign="middle" class="packageList" align="left"><%= link_to t(:view_metapackages__metalist_0), '?order=name' %></th>
-    <th valign="middle" class="packageList" align="left"><%= link_to t(:view_metapackages__metalist_1), '?order=categories.name' %></th>
+    <th valign="middle" class="packageList" align="left"><%= link_to t(:name_without_colon), '?order=name' %></th>
+    <th valign="middle" class="packageList" align="left"><%= link_to t(:category_without_colon), '?order=categories.name' %></th>
     <th valign="middle" class="packageList" align="left"><%=t(:view_metapackages__metalist_2)%></th>
     <th valign="middle" class="packageList" align="left"><%=t(:view_metapackages__metalist_3)%></th>
 	<th valign="middle" class="packageList" align="left"><%= link_to t(:view_metapackages__metalist_10), '?order=rating' %></th>
-    <th valign="middle" class="packageList" align="left"><%=t(:view_metapackages__metalist_4)%></th>
+    <th valign="middle" class="packageList" align="left"><%=t(:install)%></th>
 	<th valign="middle" class="packageList" align="left"></th>
   <th valign="middle" class="packageList" align="left"></th>
 </tr>
@@ -17,14 +17,14 @@
      <% css = cycle("packageList0", "packageList1") %>
       <tr>
         <td class="<%= css %>" valign="middle">
-		    <%= link_to(metapackage.name, metapackage_path(metapackage), :title => t(:view_metapackages__metalist_5)) %></td>
+		    <%= link_to(metapackage.name, metapackage_path(metapackage), :title => t(:detailed_view)) %></td>
         <td class="<%= css %>" valign="middle">
 		    <%=h metapackage.category.name %></td>
         <td class="<%= css %>" valign="middle">
-		    <%=metapackage.default_install ?  t(:view_metapackages__metalist_6) : t(:view_metapackages__metalist_7) %></td>
+		    <%=metapackage.default_install ?  t(:yes) : t(:no) %></td>
 	    <td class="<%= css %>" valign="middle" align="middle">
 	        <% if metapackage.published == Metapackage.state[:published] %>
-	            <%= image_tag("yes.png", :size => "22x22", :border => "0", :title => t(:view_metapackages__metalist_8), :alt => t(:view_metapackages__metalist_8)) %>
+	            <%= image_tag("yes.png", :size => "22x22", :border => "0", :title => t(:published), :alt => t(:published)) %>
 	        <% else %>
 	            <%= image_tag("no.png", :size => "22x22", :border => "0", :title => t(:view_metapackages__metalist_10), :alt => t(:view_metapackages__metalist_10)) %>
 	        <% end %>
@@ -43,15 +43,15 @@
 			<%end%>
 		</td>
 		<td class="<%= css %>" valign="middle" align="middle">
-			<%= link_to image_tag("/images/install.png", :size => "22x22", :border => "0", :title => t(:view_metapackages__metalist_14), :alt => t(:view_metapackages__metalist_13)), "apt://#{metapackage.debian_name}" %>		
-            <%= link_to image_tag("/images/sources.jpg", :size => "22x22", :border => "0", :title => t(:view_metapackages__metalist_16), :alt => t(:view_metapackages__metalist_17)), "/users/#{current_user.id}/suggestion/install_bundle_sources/#{metapackage.id}" %>
+			<%= link_to image_tag("/images/install.png", :size => "22x22", :border => "0", :title => t(:view_metapackages__metalist_14), :alt => t(:install2)), "apt://#{metapackage.debian_name}" %>		
+            <%= link_to image_tag("/images/sources.jpg", :size => "22x22", :border => "0", :title => t(:add_sources), :alt => t(:sources)), "/users/#{current_user.id}/suggestion/install_bundle_sources/#{metapackage.id}" %>
 
 		</td>	
         <% if logged_in? %>
         <td class="<%= css %>" valign="middle" width="10">
                 <% if (metapackage.user_id == current_user.id) or is_admin? %>
                     <% if editing_metapackage? %>
-                        <%= link_to_remote(image_tag("/images/add.png", :size => "22x22", :border => "0", :title => t(:view_metapackages__metalist_18), :alt => t(:view_metapackages__metalist_18)), \
+                        <%= link_to_remote(image_tag("/images/add.png", :size => "22x22", :border => "0", :title => t(:add), :alt => t(:add)), \
                                 :url => user_path(current_user) + "/cart/add_to_cart/" + metapackage.id.to_s,\
                                 :update => 'meta_cart') %>
                         <% end %>
@@ -72,5 +72,5 @@
     <% end %>
     </table>
 <% else %>
-<p><%=t(:view_metapackages__metalist_21)%></p>
+<p><%=t(:not_logged_in)%></p>
 <% end %>

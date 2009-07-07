@@ -1,5 +1,5 @@
 <%= render_flash %>
-<%= link_to t(:view_admins_sync_all_0), { :controller => :distributions, :action => :show,\
+<%= link_to t(:back), { :controller => :distributions, :action => :show,\
 	:id => @distribution.id }%>
 <% if @distribution.nil? | @infos.nil? then%>
 <div class="inner0">
@@ -12,14 +12,14 @@
 <% for @info in @infos do%>
 <% if !@info.nil?%>
 <ul>
-	<li><%=t(:view_admins_sync_all_3)%><%= @info["url"].nil? ? "" : @info["url"] %></li>
-	<li><%=t(:view_admins_sync_all_4)%><%= @info["package_count"].nil? ? "" : @info["package_count"]  %></li>
-	<li><%=t(:view_admins_sync_all_5)%><%= @info["new_count"].nil? ? "" : @info["new_count"] %></li>
-	<li><%=t(:view_admins_sync_all_6)%><%= @info["update_count"].nil? ? "" : @info["update_count"] %></li>	
+	<li><%=t(:repository_url)%><%= @info["url"].nil? ? "" : @info["url"] %></li>
+	<li><%=t(:total_packages)%><%= @info["package_count"].nil? ? "" : @info["package_count"]  %></li>
+	<li><%=t(:new_packages)%><%= @info["new_count"].nil? ? "" : @info["new_count"] %></li>
+	<li><%=t(:updatedPackages)%><%= @info["update_count"].nil? ? "" : @info["update_count"] %></li>	
 </ul>
 <% if (!@info["failed"].nil?) && (@info["failed"].size > 0)%>
 <div class="inner1">
-<span class="headline"><%=t(:view_admins_sync_all_7)%></span>
+<span class="headline"><%=t(:no_save_database)%></span>
 <ul>	
 	<% @info["failed"].each do |name|%>
 		<li><%= name %></li>

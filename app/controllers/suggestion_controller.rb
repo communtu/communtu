@@ -1,6 +1,6 @@
 class SuggestionController < ApplicationController
   def title
-    t(:controller_suggestion_0)
+    t(:match_ubuntu)
   end
 
   def install_sources
@@ -34,7 +34,7 @@ class SuggestionController < ApplicationController
     end
     current_user.save
     if debfile.nil? then
-      flash[:error] = t(:controller_suggestion_3)
+      flash[:error] = t(:creation_error)
       redirect_to "/home"
       return
     end
@@ -59,7 +59,7 @@ class SuggestionController < ApplicationController
                  current_user.license,
                  current_user.security)
     if debfile.nil? then
-      flash[:error] = t(:controller_suggestion_3)
+      flash[:error] = t(:creation_error)
       redirect_to "/home"
       return
     end
@@ -121,7 +121,7 @@ class SuggestionController < ApplicationController
     end
     current_user.save
     if debfile.nil? then
-      flash[:error] = t(:controller_suggestion_9)
+      flash[:error] = t(:creation_error)
       redirect_to "/home"
       return
     end

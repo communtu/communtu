@@ -5,28 +5,28 @@
 
 <% form_for(@distribution) do |f| %>
   <p>
-    <b><%=t(:view_distributions_new_0)%></b><br />
+    <b><%=t(:name_without_colon)%></b><br />
     <%= f.text_field :name %>
   </p>
   
   <p>
-    <b><%=t(:view_distributions_new_1)%></b><br />
+    <b><%=t(:kurzname)%></b><br />
     <%= f.text_field :short_name %>
   </p>
 
   <p>
-    <b><%=t(:view_distributions_new_2)%></b><br />
+    <b><%=t(:url)%></b><br />
     <%= f.text_field :url %>
   </p>
 
   <p>
-    <b><%=t(:view_distributions_new_3)%></b><br />
+    <b><%=t(:description_without_colon)%></b><br />
     <%= f.text_area :description %>
   </p>
   <p>
-    <%= f.submit t(:view_distributions_new_4) %>
+    <%= f.submit t(:create) %>
   </p>
 <% end %>
 
-<%= link_to t(:view_distributions_new_5), distributions_path %>
+<%= link_to t(:back), distributions_path %>
 <% end %>

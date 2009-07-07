@@ -34,9 +34,9 @@
 	  	<% if logged_in? %>
 	    	<td width="100"><%= link_to t(:view_layouts_application_9), logout_path  %> </td>
 	    <% else %>
-	    	<td width="100"><%= link_to t(:view_layouts_application_10), '/session/new' %></td>
+	    	<td width="100"><%= link_to t(:anmelden), '/session/new' %></td>
 	    	<td width="100"><%= link_to t(:view_layouts_application_11), '/users/anonymous_login' %></td>
-	    	<td width="100"><%= link_to t(:view_layouts_application_12), '/users/new' %></td>
+	    	<td width="100"><%= link_to t(:register), '/users/new' %></td>
 	    <% end %>
 	    	<td width="100"><%= link_to t(:view_layouts_application_13), '/about' %></td>
 	    </tr>

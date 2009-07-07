@@ -3,7 +3,7 @@
 <% if !(not_found_arr=@not_found.select {|meta,packages| !packages.empty?}).empty? %>	
   <p><%=t(:view_metapackages_finish_migrate_3)%><br><br>
   <table border=1, style="border-style:solid; border-width:1px; border-collapse:collapse", cellpadding=3 >
-	<tr><th><%=t(:view_metapackages_finish_migrate_4)%></th><th><%=t(:view_metapackages_finish_migrate_5)%></th><tr>
+	<tr><th><%=t(:bundle)%></th><th><%=t(:packages)%></th><tr>
     <% not_found_arr.each do |nf| %>
       <% meta = nf[0] %>
 	  <% packages = nf[1] %>

@@ -5,12 +5,12 @@
 
 <% form_for(@category) do |f| %>
   <p>
-    <b><%=t(:view_categories_edit_1)%></b><br />
+    <b><%=t(:name_without_colon)%></b><br />
     <%= f.text_field :name %>
   </p>
 
   <p>
-    <b><%=t(:view_categories_edit_2)%></b><br />
+    <b><%=t(:description_without_colon)%></b><br />
     <%= f.text_field :description %>
   </p>
 
@@ -20,8 +20,8 @@
   </p>
 
   <p>
-    <b><%=t(:view_categories_edit_4)%></b><br />
-	<%= f.collection_select('parent_id', Category.find(:all, :order => "name"), :id, :name, {:include_blank => t(:view_categories_edit_5)})%>
+    <b><%=t(:superior_category)%></b><br />
+	<%= f.collection_select('parent_id', Category.find(:all, :order => "name"), :id, :name, {:include_blank => t(:choose_parent)})%>
   </p>
 
   <p>
@@ -29,8 +29,8 @@
   </p>
 <% end %>
 
-<%= link_to t(:view_categories_edit_6), @category %> |
-<%= link_to t(:view_categories_edit_7), categories_path %>
+<%= link_to t(:show), @category %> |
+<%= link_to t(:back), categories_path %>
 <% else %>
-<p><%=t(:view_categories_edit_8)%></p>
+<p><%=t(:not_logged_in)%></p>
 <% end %>

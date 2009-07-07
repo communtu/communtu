@@ -5,29 +5,29 @@ x<% if is_admin? %>
 
 <% form_for(@distribution) do |f| %>
   <p>
-    <b><%=t(:view_distributions_edit_1)%></b><br />
+    <b><%=t(:name_without_colon)%></b><br />
     <%= f.text_field :name %>
   </p>
   
   <p>
-    <b><%=t(:view_distributions_edit_2)%></b><br />
+    <b><%=t(:kurzname)%></b><br />
     <%= f.text_field :short_name %>
   </p>
 
   <p>
-    <b><%=t(:view_distributions_edit_3)%></b><br />
+    <b><%=t(:url)%></b><br />
     <%= f.text_field :url %>
   </p>
 
   <p>
-    <b><%=t(:view_distributions_edit_4)%></b><br />
+    <b><%=t(:description_without_colon)%></b><br />
     <%= f.text_area :description %>
   </p>
   <p>
-    <%= f.submit t(:view_distributions_edit_5) %>
+    <%= f.submit t(:save) %>
   </p>
 <% end %>
 
-<%= link_to t(:view_distributions_edit_6), @distribution %> |
-<%= link_to t(:view_distributions_edit_7), distributions_path %>
+<%= link_to t(:show), @distribution %> |
+<%= link_to t(:back), distributions_path %>
 <% end %>

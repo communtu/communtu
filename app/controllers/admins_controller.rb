@@ -2,7 +2,7 @@ class AdminsController < ApplicationController
   def title
     t(:controller_admins_0)
   end
-  before_filter :check_administrator_role, :flash => { :notice => I18n.t(:controller_admins_1) }
+  before_filter :check_administrator_role, :flash => { :notice => I18n.t(:no_admin) }
   
   def index
   end

@@ -9,22 +9,22 @@
 <%=t(:view_user_profiles__installation_13)%>
 <ol>
 	<li> <% url1 = '/users/'+current_user.id.to_s + '/suggestion/install_sources'%>	
-        <%= link_to image_tag("/images/sources.jpg", :size => "22x22", :border => "0", :title => t(:view_user_profiles__installation_14), :alt => t(:view_user_profiles__installation_15)), url1 %>
+        <%= link_to image_tag("/images/sources.jpg", :size => "22x22", :border => "0", :title => t(:add_sources), :alt => t(:sources)), url1 %>
 		<%= link_to t(:view_user_profiles__installation_16) , url1  %>
         <br><%=t(:view_user_profiles__installation_17)%>
 <% if current_user.profile_changed %> 
 		  <%if current_user.profile_version > 1 %>
-		     <br><%=t(:view_user_profiles__installation_18)%><% end %>
+		     <br><%=t(:changed_settings)%><% end %>
           <br><%=t(:view_user_profiles__installation_19)%><% else %>
 		   <br><%=t(:view_user_profiles__installation_20)%><% end %>
     </li>
-	<li> <%= image_tag("/images/install.png", :size => "22x22", :border => "0", :title => t(:view_user_profiles__installation_21), :alt => t(:view_user_profiles__installation_22))%>
+	<li> <%= image_tag("/images/install.png", :size => "22x22", :border => "0", :title => t(:view_user_profiles__installation_21), :alt => t(:install2))%>
 <%=t(:view_user_profiles__installation_23)%><ul>
 		<li><%= link_to t(:view_user_profiles__installation_24), '/suggestion/install_bundle_as_meta'%> </li>
 	    <li><% url2 = 'apt://'+metas%>
              <%= link_to t(:view_user_profiles__installation_25), url2 %>
              <% if current_user.profile_changed && current_user.profile_version > 1 %>
-		        <br><%=t(:view_user_profiles__installation_26)%><% end %>
+		        <br><%=t(:changed_settings)%><% end %>
 		     <br><%=t(:view_user_profiles__installation_27)%><%= link_to 'apturl', t(:view_user_profiles__installation_28)%><%=t(:view_user_profiles__installation_29)%></li></ul>
 	</li>
 </ol>

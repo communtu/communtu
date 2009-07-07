@@ -1,6 +1,6 @@
 <% if is_admin? %>
 <p>
-  <b><%=t(:view_derivatives_show_0)%></b>
+  <b><%=t(:name_with_colon)%></b>
   <%=h @derivative.name %>
 </p>
 
@@ -21,6 +21,6 @@
 </p>
 
 
-<%= link_to t(:view_derivatives_show_4), edit_derivative_path(@derivative) %> |
-<%= link_to t(:view_derivatives_show_5), derivatives_path %>
+<%= link_to t(:edit), edit_derivative_path(@derivative) %> |
+<%= link_to t(:back), derivatives_path %>
 <% end %>

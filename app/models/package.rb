@@ -118,7 +118,7 @@ class Package < BasePackage
   end
 
   def self.security_types
-    security_types  = [ I18n.t(:model_package_3), I18n.t(:model_package_4), I18n.t(:model_package_5) ]
+    security_types  = [ I18n.t(:native), I18n.t(:trusted), I18n.t(:third_party) ]
   end
 
   def installedsize(dist)

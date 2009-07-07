@@ -38,7 +38,7 @@ module DistributionsHelper
             :alt => t(:helper_distributions_2), :title => t(:helper_distributions_2),:class => "link_img"}) ,\
             { :controller => :admin, :action => :sync_package, :id => repo.id})
           mig_link =  (link_to (tag "img", { :src => "/images/migrate.png", :width => "22", :height => "22",\
-            :alt => t(:helper_distributions_4), :title => t(:helper_distributions_4),:class => "link_img"}) ,\
+            :alt => t(:migrate_repository), :title => t(:migrate_repository),:class => "link_img"}) ,\
              "/repositories/migrate/#{repo.id}")
           del_link =  (link_to (tag "img", { :src => "/images/edit-delete.png", :width => "22", :height => "22",\
             :alt => t(:helper_distributions_6), :title => t(:helper_distributions_6), :class => "link_img"}) ,\
@@ -70,7 +70,7 @@ module DistributionsHelper
      out += (link_to t(:helper_distributions_8)+ if is_admin? then t(:helper_distributions_10) else "" end, dist)
       if is_admin?
         out += t(:helper_distributions_11) + (link_to t(:helper_distributions_12), edit_distribution_path(dist)) + " | " +\
-        (link_to t(:helper_distributions_13), dist, :confirm => t(:helper_distributions_14), :method => :delete)
+        (link_to t(:helper_distributions_13), dist, :confirm => t(:are_you_sure), :method => :delete)
       end
      out += "<p></p>"
      out += (link_to t(:helper_distributions_15), dist.url, :target=>'_blank')

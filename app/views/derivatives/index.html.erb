@@ -9,14 +9,14 @@
 <% for derivative in @derivatives %>
   <tr>
     <td><%=h derivative.name %></td>
-    <td><%= link_to t(:view_derivatives_index_1), derivative %></td>
-    <td><%= link_to t(:view_derivatives_index_2), edit_derivative_path(derivative) %></td>
-    <td><%= link_to t(:view_derivatives_index_3), derivative, :confirm => t(:view_derivatives_index_4), :method => :delete %></td>
+    <td><%= link_to t(:show), derivative %></td>
+    <td><%= link_to t(:edit), edit_derivative_path(derivative) %></td>
+    <td><%= link_to t(:delete), derivative, :confirm => t(:are_you_sure), :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to t(:view_derivatives_index_5), new_derivative_path %>
+<%= link_to t(:new_derivative), new_derivative_path %>
 <% end %>

@@ -2,7 +2,7 @@ class MetapackagesController < ApplicationController
   before_filter :login_required
   
   def title
-    t(:controller_metapackages_0)
+    t(:bundle)
   end
 
   @@migrations = {}
@@ -58,7 +58,7 @@ class MetapackagesController < ApplicationController
   def create
     @metapackage = Metapackage.new(params[:metapackage])
     @metapackage.modified = true
-    if @metapackage.name==t(:controller_metapackages_1) or Metapackage.all.map{|m| m.debian_name}.include?(@metapackage.debian_name) then
+    if @metapackage.name==t(:new_bundle) or Metapackage.all.map{|m| m.debian_name}.include?(@metapackage.debian_name) then
       flash[:error] = t(:controller_metapackages_2)
       render :action => "new"
     elsif params[:metapackage][:description].nil? or params[:metapackage][:description].empty? then
@@ -101,7 +101,7 @@ class MetapackagesController < ApplicationController
     else
       # compute debian names of existing metapackages, without "communtu-" oder "communtu-private-bundle-" prefix
       metanames = (Metapackage.all-[@metapackage]).map{|m| BasePackage.debianize_name(m.name)}
-      if params[:metapackage][:name]==t(:controller_metapackages_5) or metanames.include?(BasePackage.debianize_name(params[:metapackage][:name])) then
+      if params[:metapackage][:name]==t(:new_bundle) or metanames.include?(BasePackage.debianize_name(params[:metapackage][:name])) then
         flash[:error] += t(:controller_metapackages_6)
         error = true
       end

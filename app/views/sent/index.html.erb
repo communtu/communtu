@@ -4,8 +4,8 @@
 <% if sent_messages? %>
 	<table>
       <tr>
-        <th><%=t(:view_sent_index_1)%></th>
-        <th><%=t(:view_sent_index_2)%></th>
+        <th><%=t(:an)%></th>
+        <th><%=t(:subject_without_colon)%></th>
         <th><%=t(:view_sent_index_3)%></th>
       </tr>
 
@@ -21,4 +21,4 @@
 	<p><%=t(:view_sent_index_5)%></p>
 <% end %>
 	
-<%= link_to t(:view_sent_index_4), user_path(current_user.id)%>
+<%= link_to t(:back), user_path(current_user.id)%>

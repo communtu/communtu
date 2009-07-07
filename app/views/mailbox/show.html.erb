@@ -1,10 +1,10 @@
-<h2><%=t(:view_mailbox_show_0) %></h2>
+<h2><%=t(:inbox) %></h2>
 
 <% if received_messages? %>
 	<table>
 	  <tr>
 	    <th><%=t(:view_mailbox_show_1)%></th>
-	    <th><%=t(:view_mailbox_show_2)%></th>
+	    <th><%=t(:subject_without_colon)%></th>
 	    <th><%=t(:view_mailbox_show_3)%></th>
 	  </tr>
 	
@@ -26,4 +26,4 @@
 <% end %>
 
 
-<%= link_to t(:view_mailbox_show_4), user_path(current_user.id)%>
+<%= link_to t(:back), user_path(current_user.id)%>

@@ -8,7 +8,7 @@
         <br/>
         <table>
         <tr>
-	        <td><%=t(:view_metapackages_edit_0)%></td>
+	        <td><%=t(:name_with_colon)%></td>
 	        <% if @metapackage.is_published? then %>
               <td><%= @metapackage.name %></td>	
             <% else %>
@@ -21,33 +21,33 @@
         </tr>
 		<tr><td colspan=2><%=t(:view_metapackages_edit_2)%></td></tr>
         <tr>
-	        <td><%=t(:view_metapackages_edit_3)%></td>
+	        <td><%=t(:category_with_colon)%></td>
 	        <td>
 	        	<% @categories = Category.find(:all, :order => "name")%>
 		        <%= f.collection_select(:category_id,@categories,:id,:name)%>
 	        </td>
         </tr>
         <tr>
-	        <td><%=t(:view_metapackages_edit_4)%></td>
+	        <td><%=t(:install_by_default)%></td>
         <% if is_admin? %>
 	        <td><%= f.check_box(:default_install) %></td>
         <% else %>
-            <td><%= if @metapackage.default_install then t(:view_metapackages__metalist_6) else t(:view_metapackages__metalist_7) end  %></td>
+            <td><%= if @metapackage.default_install then t(:yes) else t(:no) end  %></td>
         <% end %>
         </tr>
         <tr>
-	        <td valign='top'><%=t(:view_metapackages_edit_5)%></td>
+	        <td valign='top'><%=t(:description_with_colon)%></td>
 	        <td><%= f.text_area(:description, { :rows => 12, :cols => 50 } ) %></td>	
         </tr>
 
         </table>	
 	<%= render :partial => "package_list", :locals => { :metapackage => @metapackage, :editable => true } %>
         <%= t(:view_metapackages_edit_gpl) %><br>
-        <%= submit_tag t(:view_metapackages_edit_6)%>
+        <%= submit_tag t(:save)%>
 		
 
     <% end %>
     <% else %>
-    <p><%=t(:view_metapackages_edit_7)%></p>
+    <p><%=t(:not_logged_in)%></p>
     <% end %>
 </div>

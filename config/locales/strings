@@ -325,8 +325,8 @@ view_repositories_show_13 subtype
 view_repositories_new_5 subtype
 view_repositories_edit_6 subtype
 
-view_repositories_show_11 3rd_party
-model_package_5 3rd_party
+view_repositories_show_11 third_party
+model_package_5 third_party
 
 model_package_4 trusted
 view_repositories_show_10 trusted
@@ -401,8 +401,8 @@ view_messages_show_6 back
 view_sent_new_5 back
 view_mailbox_show_4 back
 
-view_users_edit_6 4_and_40_letters
-view_accounts_edit_3 4_and_40_letters
+view_users_edit_6 four_and_fourty_letters
+view_accounts_edit_3 four_and_fourty_letters
 
 view_metapackages__metalist_18 add
 view_packages__packagelist_8 add

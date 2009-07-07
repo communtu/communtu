@@ -1,4 +1,4 @@
-  <p><%= link_to t(:view_users__mailbox_list_0), new_sent_path %></p>
+  <p><%= link_to t(:new_message), new_sent_path %></p>
 
   
 
@@ -6,7 +6,7 @@
 
   <ul>
 
-    <li><%= link_to t(:view_users__mailbox_list_2) + sprintf((count_new_messages > 0 ? "(%d)" : ""), count_new_messages), '/inbox' %></li>
+    <li><%= link_to t(:inbox) + sprintf((count_new_messages > 0 ? "(%d)" : ""), count_new_messages), '/inbox' %></li>
 
     <li><%= link_to t(:view_users__mailbox_list_3), :controller => "sent", :action => "index" %></li>
 

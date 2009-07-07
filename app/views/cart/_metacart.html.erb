@@ -1,10 +1,10 @@
-<font size="1"><b><%=t(:view_cart__metacart_0)%></b></font><br/>
+<font size="1"><b><%=t(:bundle_editor)%></b></font><br/>
 
 <% if editing_metapackage? %>
     <% cart = Cart.find(session[:cart]) %>
 	<% name = cart.name %>
 	
-	<font size="1"><%=t(:view_cart__metacart_1)%><b><%= name %></b></font>
+	<font size="1"><%=t(:name_with_colon)%><b><%= name %></b></font>
 
     <ul class="cartlist">
 	<% cart.base_packages.each do |package|%>
@@ -31,7 +31,7 @@
 <% else %>
     <div style="valign:bottom;">
         <font size="1"> 
-            <%= link_to(t(:view_cart__metacart_2), user_path(current_user) + "/cart/create") %> <br>
+            <%= link_to(t(:new_bundle), user_path(current_user) + "/cart/create") %> <br>
             <%= link_to(t(:view_cart__metacart_3), user_path(current_user) + "/cart/new_from_list") %><br>
             <%= link_to(t(:view_home_new_repository_0), "/home/new_repository") %>
         </font>

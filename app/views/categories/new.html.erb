@@ -1,30 +1,30 @@
 <% if is_admin? %>
-<h1><%=t(:view_categories_new_0)%></h1>
+<h1><%=t(:new_category)%></h1>
 
 <%= error_messages_for :category %>
 
 <% form_for(@category) do |f| %>
   <p>
-    <b><%=t(:view_categories_index_1)%></b><br />
+    <b><%=t(:name_without_colon)%></b><br />
     <%= f.text_field :name %>
   </p>
 
   <p>
-    <b><%=t(:view_categories_index_2)%></b><br />
+    <b><%=t(:description_without_colon)%></b><br />
     <%= f.text_field :description %>
   </p>
 
   <p>
-    <b><%=t(:view_categories_new_3)%></b><br />
-    	<%= f.collection_select('parent_id', Category.find(:all, :order => "name"), :id, :name, {:include_blank => t(:view_categories_new_4)})%>
+    <b><%=t(:superior_category)%></b><br />
+    	<%= f.collection_select('parent_id', Category.find(:all, :order => "name"), :id, :name, {:include_blank => t(:choose_parent)})%>
   </p>
 
   <p>
-    <%= f.submit t(:view_categories_new_5) %>
+    <%= f.submit t(:create) %>
   </p>
 <% end %>
 
-<%= link_to t(:view_categories_new_6), categories_path %>
+<%= link_to t(:back), categories_path %>
 <% else %>
-<p><%=t(:view_categories_edit_8)%></p>
+<p><%=t(:not_logged_in)%></p>
 <% end %>

@@ -1,17 +1,17 @@
 <span class="headline"><%=t(:view_repositories_show_0)%></span>
 <p>
 <% if is_admin? %>
-<%= link_to t(:view_repositories_show_1), { :action => :edit, :id => @repository.id } %>
+<%= link_to t(:edit), { :action => :edit, :id => @repository.id } %>
 &nbsp;&nbsp;
 <% end %>
-<%= link_to t(:view_repositories_show_2), { :controller => :distributions, :action => :show,\
+<%= link_to t(:back), { :controller => :distributions, :action => :show,\
 	:id => @repository.distribution.id } %>
 
 <div class="inner0">
 <%= error_messages_for :repository %>
 <table class="form_table">
 	<tr>
-	<td><%=t(:view_repositories_show_3)%></td>
+	<td><%=t(:path)%></td>
 	<td><%= @repository.name %></td>
 	</tr>
 	<tr>
@@ -19,7 +19,7 @@
 	<td><%= auto_link(Package.get_url_from_source(@repository.name)[:url]) %></td>
 	</tr>
 	<tr>
-	<td><%=t(:view_repositories_show_5)%></td>
+	<td><%=t(:licence)%></td>
 	<td><% if @repository.license_type == 0 %>
 <%=t(:view_repositories_show_6)%>
 <%  else %>
@@ -28,22 +28,22 @@
 </td>
 	</tr>
 	<tr>
-	<td><%=t(:view_repositories_show_8)%></td>
+	<td><%=t(:security_type)%></td>
 	<td><% if @repository.security_type == 0 %>
-<%=t(:view_repositories_show_9)%>
+<%=t(:native)%>
 <% elsif @repository.security_type == 1 %>
-<%=t(:view_repositories_show_10)%>
+<%=t(:trusted)%>
 <%  else %>
-<%=t(:view_repositories_show_11)%>
+<%=t(:third_party)%>
 <% end %>
 </td>
 	</tr>
 	<tr>
-        <td><%=t(:view_repositories_show_12)%></td>
+        <td><%=t(:gpg_key)%></td>
         <td><%= @repository.gpgkey %><td>
     </tr>
 	<tr>
-		<td><%=t(:view_repositories_show_13)%></td>
+		<td><%=t(:subtype)%></td>
 		<td><%= @repository.subtype %></td>
 	</tr>
 	<tr>
@@ -54,7 +54,7 @@
 </table>
 </div>
 
-<h2><%=t(:view_repositories_show_14)%></h2>
+<h2><%=t(:packages)%></h2>
 <% @repository.packages.each do |p| %>
    <%= p.icon(35)%>
    <%= link_to p.name, package_path(p) %>

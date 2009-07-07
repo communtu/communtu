@@ -1,6 +1,6 @@
 class AccountsController < ApplicationController
   def title
-    t(:controller_accounts_0)
+    t(:match_ubuntu)
   end
   layout 'application'
   before_filter :login_required, :except => :show
@@ -43,7 +43,7 @@ class AccountsController < ApplicationController
           render :action => 'edit'
         end
       else
-        flash[:error] = t(:controller_accounts_7)
+        flash[:error] = t(:passwd_no_match)
         @old_password = params[:old_password]
         render :action => 'edit'      
       end

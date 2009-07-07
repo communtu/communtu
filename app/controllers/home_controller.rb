@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
   
   def title
-    t(:controller_home_0)
+    t(:match_ubuntu)
   end
   protect_from_forgery :only => [:create, :update, :destroy] 
   

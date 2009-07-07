@@ -1,5 +1,5 @@
 <% if is_admin? %>
-<h1><%=t(:view_derivatives_new_0)%></h1>
+<h1><%=t(:new_derivative)%></h1>
 
 <% form_for(@derivative) do |f| %>
   <%= f.error_messages %>
@@ -21,9 +21,9 @@
     <%= f.text_field :icon_file %>
   </p>
   <p>
-    <%= f.submit t(:view_derivatives_edit_3) %>
+    <%= f.submit t(:save) %>
   </p>
 <% end %>
 
-<%= link_to t(:view_derivatives_edit_5), derivatives_path %>
+<%= link_to t(:back), derivatives_path %>
 <% end %>

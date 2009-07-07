@@ -5,16 +5,16 @@
 </span><br /><br />
 <% url1 = "apt://"+@package.name %>
 <% url2 = "/users/#{current_user.id}/suggestion/install_package_sources/#{@package.id}" %>
-<%= link_to image_tag("/images/install.png", :size => "22x22", :border => "0", :title => t(:view_packages_show_0), :alt => t(:view_packages_show_1)), url1 %>		
+<%= link_to image_tag("/images/install.png", :size => "22x22", :border => "0", :title => t(:install_package_sources_first), :alt => t(:install2)), url1 %>		
 <%= link_to t(:view_packages_show_2), url1%>		
 &nbsp;&nbsp;&nbsp;&nbsp;
-            <%= link_to image_tag("/images/sources.jpg", :size => "22x22", :border => "0", :title => t(:view_packages_show_3), :alt => t(:view_packages_show_4)), url2 %>
+            <%= link_to image_tag("/images/sources.jpg", :size => "22x22", :border => "0", :title => t(:add_sources), :alt => t(:sources)), url2 %>
 <%= link_to(t(:view_packages_show_5), url2) %>
   <p>
 <table>
 	<tr><td>
   <b>Programm:</b>
-  <%=if @package.is_program then t(:view_packages_show_6) else t(:view_packages_show_7) end %>
+  <%=if @package.is_program then t(:yes) else t(:no) end %>
    </td>
 <% if !@package.stars.nil? %>
      <td><b><%=t(:view_packages_show_8)%></b></td> 	
@@ -24,7 +24,7 @@
 </tr>
 <tr>
   <td>
-  <b><%=t(:view_packages_show_10)%></b>
+  <b><%=t(:debian_section)%></b>
   <%=h @package.fullsection %>
  </td>
 </tr></table>
@@ -42,7 +42,7 @@
 
 <% if not @package.videos.empty? then %>
   <p>
-  <b><%=t(:view_packages_show_12)%></b><br />
+  <b><%=t(:videos)%></b><br />
   <ul>
   <%for v in @package.videos %>
     <li><%=auto_link v.url.gsub(/ /,'<br>'), link = :all, :target => '_blank' %>
@@ -53,13 +53,13 @@
 <% end %>
 
 <p>
-  <b><%=t(:view_packages_show_13)%></b><br />
+  <b><%=t(:description_with_colon)%></b><br />
   <%= @package.description %>
 </p>
 
 <p>
   <table border=1 style="border-style:solid; border-width:1px; border-collapse:collapse" cellpadding=3 >
-  <tr><th><%=t(:view_packages_show_14)%></th> <th><%=t(:view_packages_show_15)%></th> <th><%=t(:view_packages_show_16)%></th></tr>
+  <tr><th><%=t(:distribution)%></th> <th><%=t(:view_packages_show_15)%></th> <th><%=t(:view_packages_show_16)%></th></tr>
   <% for pd in @package.package_distrs%>
     <tr><td><%= link_to(pd.distribution.name, distribution_path(pd.distribution)) %>
 	         </td>
@@ -77,7 +77,7 @@
 </p>
 
 <% if is_admin? %>
-<%= link_to t(:view_packages_show_18), :action => 'rdepends', :id => @package.id %>
+<%= link_to t(:direct_indirect_covered_packages), :action => 'rdepends', :id => @package.id %>
 <% end %>
 
 <p>
@@ -87,7 +87,7 @@
 
 <% if !@package.metapackages.empty? then%>
   <p>
-  <b><%=t(:view_packages_show_20)%></b><br />
+  <b><%=t(:used_in_bundles)%></b><br />
   <ul>
   <% @package.metapackages.each do |m| %>
   <li>
@@ -113,17 +113,17 @@
 <% end %>
 
 <p>
-<%= image_tag("/images/editp.png", :size => "22x22", :border => 0, :title => t(:view_packages_show_22), :alt => t(:view_packages_show_22)) %>
-<%= link_to t(:view_packages_show_22), { :controller => :packages, :action => :add_comment, \
+<%= image_tag("/images/editp.png", :size => "22x22", :border => 0, :title => t(:kommentieren), :alt => t(:kommentieren)) %>
+<%= link_to t(:kommentieren), { :controller => :packages, :action => :add_comment, \
 	    :id => @package.id } %>
 <%= show_comments @package.comments %>
 </p>
 </div>
-<%= link_to t(:view_packages_show_25), {:action => 'edit', :id => @package.id} %> &nbsp;&nbsp;
+<%= link_to t(:edit), {:action => 'edit', :id => @package.id} %> &nbsp;&nbsp;
 
 <%= link_to t(:view_packages_show_26), {:action => 'convert', :id => @package.id} %> &nbsp;&nbsp;
 <% else %>
 <div class="inner0">
-<p><%=t(:view_packages_show_27)%></p>
+<p><%=t(:not_logged_in)%></p>
 </div>
 <% end %>

@@ -25,7 +25,7 @@
 			<span class="headline">   <%=h @metapackage.name %> 
 </span> <br />
 <font size="-3"><%=t(:view_metapackages_show_0)%><b><%= link_to @metapackage.user.login, user_path(@metapackage.user.id) %></b></font> 
-<%=link_to (image_tag("message.png", :alt=>t(:view_metapackages_show_1),:title=>t(:view_metapackages_show_2), :mouseover=>"message_rollover.png",:border=>"0" ), {:controller=>"sent", :action=>"new", :mail_to=>@metapackage.user.id}) %>
+<%=link_to (image_tag("message.png", :alt=>t(:compose_new_message),:title=>t(:compose_new_message), :mouseover=>"message_rollover.png",:border=>"0" ), {:controller=>"sent", :action=>"new", :mail_to=>@metapackage.user.id}) %>
 </td>
 	
 <% if !request.env['HTTP_REFERER'].nil? then %>
@@ -45,24 +45,24 @@
 <table>
   <tr><td><b><%=t(:view_metapackages_show_version)%></b>
           <%= h @metapackage.version %> </td>
-  <td><b><%=t(:view_metapackages_show_4)%></b>
+  <td><b><%=t(:category_with_colon)%></b>
   <%=h @metapackage.category.name %></td>
   </tr>
 
 <tr><td>
-  <b><%=t(:view_metapackages_show_5)%></b>
-  <%=@metapackage.default_install ? t(:view_metapackages_show_6) : t(:view_metapackages_show_7) %>
+  <b><%=t(:install_by_default)%></b>
+  <%=@metapackage.default_install ? t(:yes) : t(:no) %>
   &nbsp; &nbsp;
 </td>
 <td>
-  <b><%=t(:view_metapackages_show_8)%></b>
+  <b><%=t(:licence)%></b>
   <%= Package.show_license_type(@metapackage.license_type) %>
 </tr>
 </table>
 <p>
     <b><%=t(:view_metapackages_show_9)%></b>
     <% if @metapackage.is_published? %>
-        <%= image_tag("yes.png", :size => "22x22", :border => "0", :title => t(:view_metapackages_show_10), :alt => t(:view_metapackages_show_10))  %>
+        <%= image_tag("yes.png", :size => "22x22", :border => "0", :title => t(:published), :alt => t(:published))  %>
     <% else %>
         <%= image_tag("no.png", :size => "22x22", :border => "0", :title => t(:view_metapackages_show_12), :alt => t(:view_metapackages_show_12))  %>
     <% end %>
@@ -81,7 +81,7 @@
         <% if not @metapackage.is_published? %>
         <option value="publish"><%=t(:view_metapackages_show_17)%></option>
         <% end %>
-        <option value="delete"><%=t(:view_metapackages_show_19)%></option>
+        <option value="delete"><%=t(:delete)%></option>
     </select>
   </form>
   </div>
@@ -93,12 +93,12 @@
 <%  end %>
 
 <% if is_admin? %>
-<%= link_to t(:view_metapackages_show_20), :action => 'rdepends', :id => @metapackage.id %>
+<%= link_to t(:direct_indirect_covered_packages), :action => 'rdepends', :id => @metapackage.id %>
 <% end %>
 
 <% if !@metapackage.metapackages.empty? then%>
   <p>
-  <b><%=t(:view_metapackages_show_21)%></b><br />
+  <b><%=t(:used_in_bundles)%></b><br />
   <ul>
   <% @metapackage.metapackages.each do |m| %>
     <li>
@@ -116,6 +116,6 @@
 
 <%= show_ratings_and_comments @metapackage.ratings.find(:all, :limit=> 5) %>
 <% else %>
-<p><%=t(:view_metapackages_show_25)%></p>
+<p><%=t(:not_logged_in)%></p>
 <% end %>
 </div>
