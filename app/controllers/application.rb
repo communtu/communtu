@@ -42,7 +42,7 @@ class ApplicationController < ActionController::Base
 
   # berfore_filters are useless, because path is /users/...
   def check_login
-    if !authorize_user_subresource then
+    if !logged_in? then
       flash[:error] = t(:lib_system_0)
       redirect_to "/home/home"
       return true
