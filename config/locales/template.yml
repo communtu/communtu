@@ -1,83 +1,26 @@
 --- 
 de: 
   achtung: "Achtung! bei Communtu erst in Kürze verfügbar."
-  achtung: "Achtung! bei Communtu erst in Kürze verfügbar."
-  add_comment: "Kommentar hinzufügen"
   add_comment: "Kommentar hinzufügen"
   add: "hinzufügen"
-  add: "hinzufügen"
   add_sources: "Quellen hinzufügen"
-  add_sources: "Quellen hinzufügen"
-  add_sources: "Quellen hinzufügen"
-  add_sources: "Quellen hinzufügen"
-  add_sources: "Quellen hinzufügen"
-  allgemeinbildung: Allgemeinbildung e.V.
-  allgemeinbildung: Allgemeinbildung e.V.
   allgemeinbildung: Allgemeinbildung e.V.
   an: An
   an: "An:"
-  an: "An:"
-  an: "An:"
-  anmelden: Anmelden
   anmelden: Anmelden
   archive: Archiv
-  archive: Archiv
-  are_you_sure: Bist du sicher?
-  are_you_sure: Bist du sicher?
-  are_you_sure: Bist du sicher?
   are_you_sure: Bist du sicher?
   back: "zurück"
-  back: "zurück"
-  back: "zurück"
-  back: "zurück"
-  back: "zurück"
-  back: "Zurück"
-  back: "Zurück"
-  back: "Zurück"
-  back: "Zurück"
-  back: "Zurück"
-  back: "Zurück"
-  back: "Zurück"
-  back: "Zurück"
-  back: "Zurück"
-  back: "Zurück"
-  back: "Zurück"
-  back: "Zurück"
-  back: "Zurück"
-  back: "Zurück"
-  back: "Zurück"
-  back: "Zurück"
-  back: "Zurück"
-  back: "Zurück"
-  back: "Zurück"
-  back: "Zurück"
-  back: "Zurück"
-  back: "Zurück"
-  back: "Zurück"
-  blog: Der Blog von Communtu
   blog: Der Blog von Communtu
   bundle: "Bündel"
-  bundle: "Bündel"
-  bundle: "Bündel"
-  bundle_editor: "Bündel-Editor"
   bundle_editor: "Bündel-Editor"
   category_with_colon: "Kategorie:"
-  category_with_colon: "Kategorie:"
-  category_without_colon: Kategorie
-  category_without_colon: Kategorie
   category_without_colon: Kategorie
   changed_settings: "Dieser Schritt muss neu ausgeführt werden, weil du die Einstellungen geändert hast. \
     \t\t     "
-  changed_settings: "Dieser Schritt muss neu ausgeführt werden, weil du die Einstellungen geändert hast. \
-    \t\t  "
-  change_passwd: "Passwort ändern"
-  change_passwd: "Passwort ändern"
   change_passwd: "Passwort ändern"
   choose_parent: "Wähle einen Parent aus!"
-  choose_parent: "Wähle einen Parent aus!"
   compose_new_message: neue Nachricht schreiben
-  compose_new_message: neue Nachricht schreiben
-  confirm_new_passwd: "Neues Passwort bestätigen"
   confirm_new_passwd: "Neues Passwort bestätigen"
   controller_accounts_1: Dein Benutzerkonto wurde aktiviert! Du kannst dich nun einloggen.
   controller_accounts_2: Aktivierungs-Code nicht gefunden. Bitte versuche, ein neues Benutzerkonto anzulegen.
@@ -168,67 +111,22 @@ de:
   controller_users_8: Benutzer deaktiviert
   controller_users_9: Es gab ein Problem mit der Deaktivierung dieses Benutzers.
   create: Anlegen
-  create: Anlegen
-  create: Anlegen
-  create: Anlegen
-  create: Anlegen
-  create: Anlegen
-  creation_error: Bei der Erstellung des Pakets ist ein Fehler aufgetreten.
   creation_error: Bei der Erstellung des Pakets ist ein Fehler aufgetreten.
   debian_section: "Debian-Section:"
-  debian_section: "Debian-Section:"
-  delete: "Löschen"
-  delete: "Löschen"
-  delete: "Löschen"
-  delete: "Löschen"
-  delete: "Löschen"
   delete: "Löschen"
   description_with_colon: "Beschreibung:"
-  description_with_colon: "Beschreibung:"
-  description_with_colon: "Beschreibung:"
-  description_with_colon: "Beschreibung:"
-  description_with_colon: "Beschreibung:"
-  description_without_colon: Beschreibung
-  description_without_colon: Beschreibung
-  description_without_colon: Beschreibung
-  description_without_colon: Beschreibung
-  description_without_colon: Beschreibung
-  detailed_view: zur Detailansicht
   detailed_view: zur Detailansicht
   direct_indirect_covered_packages: Direkt und indirekt enthaltene Pakete
-  direct_indirect_covered_packages: Direkt und indirekt enthaltene Pakete
-  distribution: Distribution
   distribution: Distribution
   donation_possibility: "Spendenmöglichkeit"
-  donation_possibility: "Spendenmöglichkeit"
-  donation_purpose: "Verwendungszweck: Communtu"
-  donation_purpose: "Verwendungszweck: Communtu"
   donation_purpose: "Verwendungszweck: Communtu"
   donation_receipt: Spendenbescheinigung kann ausgestellt werden.
-  donation_receipt: Spendenbescheinigung kann ausgestellt werden.
-  donation_receipt: Spendenbescheinigung kann ausgestellt werden.
-  edit: Bearbeiten
-  edit: Bearbeiten
-  edit: Bearbeiten
-  edit: Bearbeiten
-  edit: Bearbeiten
-  edit: Bearbeiten
-  edit: Bearbeiten
-  edit: Bearbeiten
-  edit: Bearbeiten
   edit: Bearbeiten
   email_with_colon: "E-Mail: "
-  email_with_colon: "E-Mail: "
-  email_with_colon: "E-Mail:"
-  email_with_colon: "E-Mail:"
-  email_without_colon: E-Mail
   email_without_colon: E-Mail
   feedback: Feedback
-  feedback: Feedback
-  four_and_fourty_letters: Zwischen 4 und 40 Zeichen
   four_and_fourty_letters: Zwischen 4 und 40 Zeichen
   gpg_key: "GPG Schlüssel (optional): "
-  gpg_key: "GPG Schlüssel (Optional):"
   helper_distributions_0: free
   helper_distributions_10: " und bearbeiten"
   helper_distributions_11: "<br />Distribution "
@@ -246,53 +144,26 @@ de:
   helper_distributions_6: "Repository löschen"
   helper_distributions_8: "Quellen anzeigen"
   imprint: Impressum
-  imprint: Impressum
-  inbox: Posteingang
   inbox: Posteingang
   install2: installieren
-  install2: installieren
-  install2: installieren
-  install_by_default: "Standardmäßig installieren:"
   install_by_default: "Standardmäßig installieren:"
   installing_using_script: installieren mittels Skript
   install: Installieren
   install_package_sources_first: "Paket installieren. Bitte ggf. vorher die Quellen hinzufügen."
-  install_package_sources_first: "Paket installieren. Bitte ggf. vorher die Quellen hinzufügen."
-  install_package_sources_first: "Paket installieren. Bitte ggf. vorher die Quellen hinzufügen."
-  invalid_activation_code_entered: "Ungültiger Anderungscode eingegeben."
   invalid_activation_code_entered: "Ungültiger Anderungscode eingegeben."
   invalid_activation_code_please_check_again: "Ungültiger Anderungscode. Bitte den Code prüfen und nochmals versuchen. (Vielleicht hat dein Email-Programm einen Zeilenumbruch eingefügt?)"
-  invalid_activation_code_please_check_again: "Ungültiger Anderungscode. Bitte den Code prüfen und nochmals versuchen. (Vielleicht hat dein Email-Programm einen Zeilenumbruch eingefügt?)"
-  Kommentar: "Kommentar: "
   Kommentar: "Kommentar: "
   kommentieren: Kommentieren
-  kommentieren: Kommentieren
   kontodaten: Konto 172 9375, Sparkasse Bremen, BLZ 290 501 01
-  kontodaten: Konto 172 9375, Sparkasse Bremen, BLZ 290 501 01
-  kontodaten: Konto 172 9375, Sparkasse Bremen, BLZ 290 501 01
-  kurzname: Kurzname
   kurzname: Kurzname
   lib_system_0: Du musst eingeloggt sein, um dieses Feature zu benutzen.
   lib_system_1: "Du hast keine Berechtigung für diese Aktion."
   lib_system_2: http://www.communtu.de
   lib_utils_0: "System-Befehl schlug fehl: "
   licence: "Lizenztyp:"
-  licence: "Lizenztyp:"
-  licence: "Lizenztyp:"
-  licence: "Lizenztyp:"
-  match_ubuntu: "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
-  match_ubuntu: "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
-  match_ubuntu: "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
-  match_ubuntu: "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
-  match_ubuntu: "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
-  match_ubuntu: "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
-  match_ubuntu: "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
   match_ubuntu: "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
   match_with_communtu: "Communtu - gemeinsam Ubuntu-Linux an individuelle Bedürfnisse anpassen"
-  match_with_communtu: "Communtu - gemeinsam Ubuntu-Linux an individuelle Bedürfnisse anpassen"
   migrate: Migrieren
-  migrate: Migrieren
-  migrate_repository: Repository migieren
   migrate_repository: Repository migieren
   model_mailer_0: Herzlich Willkommen bei Communtu
   model_mailer_1: Anfrage per Formular
@@ -331,127 +202,42 @@ de:
   native: Nativ
   native: Native
   natur_geist_und_technik: "Natur, Geist und Technik - Verein zur Förderung der Allgemeinbildung e.V."
-  natur_geist_und_technik: "Natur, Geist und Technik - Verein zur Förderung der Allgemeinbildung e.V."
-  new_bundle: "Neues Bündel"
-  new_bundle: "Neues Bündel"
-  new_bundle: "Neues Bündel"
-  new_bundle: "Neues Bündel"
   new_bundle: "Neues Bündel"
   new_category: Neue Kategorie
-  new_category: Neue Kategorie
-  new_derivative: Neues Derivat
   new_derivative: Neues Derivat
   new_message: Neue Nachricht
-  new_message: Neue Nachricht
-  new_packages: "Neu hinzugefügte Pakete: "
   new_packages: "Neu hinzugefügte Pakete: "
   new_passwd: Neues Passwort
-  new_passwd: Neues Passwort
-  news: Aktuelles
   news: Aktuelles
   no_admin: Du bist kein Administrator!
-  no_admin: Du bist kein Administrator!
-  no: nein
-  no: nein
   no: nein
   no_save_database: "Die folgenden Pakete konnten nicht in der Datenbank gespeichert werden:"
-  no_save_database: "Die folgenden Pakete konnten nicht in der Datenbank gespeichert werden:"
   not_logged_in: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
-  not_logged_in: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
-  not_logged_in: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
-  not_logged_in: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
-  not_logged_in: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
-  not_logged_in: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
-  not_logged_in: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
-  not_logged_in: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
-  not_logged_in: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
-  not_logged_in: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
-  not_logged_in: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
-  not_logged_in: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
-  not_logged_in: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
-  not_logged_in: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
-  not_logged_in: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
-  packages: Pakete
-  packages: Pakete
   packages: Pakete
   participation: "Beteiligungsmöglichkeiten"
-  participation: "Beteiligungsmöglichkeiten"
-  passwd_no_match: "Das neue Passwort stimmt nicht mit der Bestätigung überein."
   passwd_no_match: "Das neue Passwort stimmt nicht mit der Bestätigung überein."
   passwd: Passwort
-  passwd: Passwort
-  path: "Pfad:"
-  path: "Pfad:"
   path: "Pfad:"
   published: "veröffentlicht"
-  published: "veröffentlicht"
-  register: Registrieren
-  register: Registrieren
   register: Registrieren
   Registration: Registrieren
-  Registration: Registrierung
-  Registration: Registrierung
-  repository_url: "Repository-URL: "
   repository_url: "Repository-URL: "
   save: Speichern
-  save: Speichern
-  save: Speichern
-  save: Speichern
-  save: Speichern
-  save: Speichern
-  save: Speichern
-  save: Speichern
-  save: Speichern
-  save: Speichern
-  save: Speichern
-  security_type: "Sicherheitstyp:"
-  security_type: "Sicherheitstyp:"
   security_type: "Sicherheitstyp:"
   senden: Abschicken
   show: Anzeigen
-  show: Anzeigen
-  show: Anzeigen
-  show: Anzeigen
-  show: Anzeigen
-  show: Anzeigen
-  show: Anzeigen
-  show: Anzeigen
-  sources: Quellen
-  sources: Quellen
-  sources: Quellen
-  sources: Quellen
   sources: Quellen
   subject_with_colon: "Betreff: "
-  subject_with_colon: "Betreff: "
-  subject_without_colon: Betreff
-  subject_without_colon: Betreff
   subject_without_colon: Betreff
   subtype: "Subtyp:"
-  subtype: "Subtyp:"
-  subtype: "Subtyp:"
-  superior_category: "übergeordnete Kategorie"
-  superior_category: "Übergeordnete Kategorie"
   superior_category: "Übergeordnete Kategorie"
   third_party: Third-Party
-  third_party: "Third-Party "
-  total_packages: "Pakete insgesamt: "
   total_packages: "Pakete insgesamt: "
   trusted: Trusted
-  trusted: Trusted
-  ubuntu_derivatives: Ubuntu Derivate
   ubuntu_derivatives: Ubuntu-Derivate
-  ubuntu_derivatives: Ubuntu-Derivate
-  updatedPackages: "Aktualisierte Pakete: "
-  updatedPackages: "Aktualisierte Pakete: "
-  updatedPackages: "Aktualisierte Pakete: "
-  url: Url
   url: Url
   used_in_bundles: "Wird bei Communtu in folgenden Bündeln benutzt:"
-  used_in_bundles: "Wird bei Communtu in folgenden Bündeln benutzt:"
   username: Benutzername
-  username: Benutzername
-  username: Benutzername
-  videos: "Videos:"
   videos: "Videos:"
   view_accounts_edit_1: Altes Passwort
   view_admins_load_packages_0: "Neue Pakete: "
@@ -1015,9 +801,6 @@ de:
   view_videos_edit_0: Video bearbeiten
   view_videos_show_0: "Url:"
   weblinks: Weblinks
-  weblinks: Weblinks
   yes: ja
   you_can: "Du kannst Dich auch "
-  you_can: "Du kannst Dich auch "
-  zentrum_solidarische_oekonomie: "Zentrum für Solidarische Ökonomie"
   zentrum_solidarische_oekonomie: "Zentrum für Solidarische Ökonomie"
