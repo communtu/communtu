@@ -1,5 +1,7 @@
 #!/usr/bin/ruby
 
+require 'yaml.rb'
+
 y = YAML::load_file(ARGV[0])
 
 f = File.open(ARGV[1],"w")
