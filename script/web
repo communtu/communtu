@@ -1,6 +1,7 @@
 #!/bin/bash
 
 function start {
+     echo "Starting mongrels server at port $1"
      nohup script/server -e production -p $1 >> log/server$1.log 2>&1 &
 }
 
@@ -13,6 +14,7 @@ function startall {
 }
 
 function stop {
+    echo "Stopping mongrels server at port $1"
 	pkill -2 -f "\-p $1"
 }
 
