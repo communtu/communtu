@@ -88,7 +88,6 @@ de:
   controller_sessions_5: Dein Benutzername oder Passwort ist falsch. Bitte ggf. unten auf "Registrieren" klicken.
   controller_sessions_6: Dein Benutzerkonto wurde noch nicht aktiviert. Der Aktivierungscode wurde dir per Email zugeschickt.
   controller_sessions_7: "Dein Benutzerkonto wurde deaktiviert oder gelöscht."
-  controller_suggestion_10: "Bündel"
   controller_suggestion_11: "Paketquellen hinzufügen"
   controller_suggestion_12: "Folgende Paketquellen werden hinzugefügt"
   controller_suggestion_15: Pakete installieren
@@ -188,16 +187,6 @@ de:
   model_user_profile_tabz_1: Detailauswahl
   model_user_profile_tabz_3: "Installation durchführen"
   name_with_colon: "Name: "
-  name_with_colon: "Name: "
-  name_with_colon: "Name:"
-  name_with_colon: "Name:"
-  name_without_colon: Name
-  name_without_colon: Name
-  name_without_colon: Name
-  name_without_colon: Name
-  name_without_colon: Name
-  name_without_colon: Name
-  name_without_colon: Name
   name_without_colon: Name
   native: Nativ
   native: Native
@@ -220,7 +209,6 @@ de:
   path: "Pfad:"
   published: "veröffentlicht"
   register: Registrieren
-  Registration: Registrieren
   repository_url: "Repository-URL: "
   save: Speichern
   security_type: "Sicherheitstyp:"
@@ -491,7 +479,6 @@ de:
   view_home_home_new_messages_desc: Sie haben neue Nachrichten in Ihrem Posteingang.
   view_home_home_rating_headline: Am besten bewertete Bündel
   view_home_home_rating_link: Zum Bündel bewerten
-  view_home_home_rating_package: Bündel
   view_home_home_rating_rating: Wertung
   view_home_icons_0: Icons bei Communtu
   view_home_icons_10: Programm
@@ -507,7 +494,6 @@ de:
   view_home_icons_6: " Quellen installieren"
   view_home_icons_9: " Installation per Shell-Script"
   view_home_impressum_11: "Mitwirkende an der AG Communtu (Alphabetische Reihenfolge):"
-  view_home_impressum_13: beteiligen
   view_home_impressum_2: AG Communtu
   view_home_impressum_4: Bauernstr. 2
   view_home_impressum_5: 28203 Bremen
@@ -520,7 +506,6 @@ de:
   view_home_news_10: communtu-discuss-de+subscribe@googlegroups.com
   view_home_news_11: "Diese Liste ist für eine Diskussion rund um die Plattform gedacht.  Hier kommt etwas mehr als einmal die Woche eine E-Mail über den Verteiler.   Die Nachrichten werden in einem "
   view_home_news_13: http://groups.google.com/group/communtu-discuss-de/topics?start=
-  view_home_news_14: " gesammelt."
   view_home_news_15: Unser Blog
   view_home_news_16: "Wir haben einen Blog, wo wir aktuelle Informationen zu Communtu eintragen. \
     Hier wird ungefähr einmal die Woche etwas gepostet. Hier werden Ankündigungen und neue Features präsentiert."
@@ -557,7 +542,6 @@ de:
   view_messages_show_2: "erhalten am:"
   view_messages_show_3: Antworten
   view_messages_show_4: Weiterleiten
-  view_metapackages_edit_1: "Version:"
   view_metapackages_edit_2: "Bitte Versionen => 1.0 nur für ausgereifte Bündel verwenden. Versionsnummern müssen stets ansteigen. 0.10 ist höher als 0.9."
   view_metapackages_edit_gpl: "Ich stimme zu, die Bündel Information unter der <a href=\"http://www.gnu.de/documents/gpl.de.html\">GNU General public license</a> (Version 2.0 oder höher) zu veröffentlichen."
   view_metapackages_finish_migrate_0: "Alle Bündel wurden von "
@@ -568,7 +552,6 @@ de:
   view_metapackages_immediate_conflicts_0: "Konflikte innerhalb von Bündeln"
   view_metapackages_immediate_conflicts_1: " ist in Konflikt mit "
   view_metapackages__metalist_10: Bewertung
-  view_metapackages__metalist_10: "nicht veröffentlicht"
   view_metapackages__metalist_14: "installieren mittels Metapaket. Bitte vorher die Quellen hinzufügen."
   view_metapackages__metalist_20: "<option>0 Bündel ausgewählt</option>"
   view_metapackages__metalist_2: Standard
@@ -595,18 +578,10 @@ de:
   view_metapackages_show_save: "Bündel als Metapaket speichern"
   view_metapackages_show_version: "Version:"
   view_metapackages_show_version_v: "(Version {{v}})"
-  view_my_mailer_mail_0: |-
-    Hallo,
-    
-    es wurde auf www.communtu.de ein Feedback gesendet. Der Betreff ist:
+  view_my_mailer_mail_0: "Hallo, \n\nes wurde auf www.communtu.de ein Feedback gesendet. Der Betreff ist:"
   view_my_mailer_mail_1: "Folgender Kommentar wurde hinterlassen:"
-  view_my_mailer_mailerror_0: "Hallo,  \
-    es wurde auf www.communtu.de ein Error gemeldet.  \
-    Der Benutzer möchte ganz gern, darüber benachrichtigt werden, wenn der Fehler nicht mehr auftritt."
-  view_my_mailer_repo_0: |-
-    Hallo,
-
-    es wurde auf www.communtu.de ein Vorschlag für ein neues Repository gemacht:
+  view_my_mailer_mailerror_0: "Hallo,  \n es wurde auf www.communtu.de ein Fehlerr gemeldet.  \nDer Benutzer möchte ganz gern, darüber benachrichtigt werden, wenn der Fehler nicht mehr auftritt."
+  view_my_mailer_repo_0: "Hallo, \n\nes wurde auf www.communtu.de ein Vorschlag für ein neues Repository gemacht:"
   view_my_mailer_repo_1: "Folgende Begründung wurde angegeben:"
   view_packages__deps_0: "\t   keine"
   view_packages__deps_1: "          Nur für "
@@ -676,7 +651,6 @@ de:
   view_sent_index_3: Zeitpunkt
   view_sent_index_5: Sie haben noch keine Nachrichten versendet.
   view_sent_new_3: "Nachricht:"
-  view_sent_new_4: Abschicken
   view_sent_show_2: "Zeitpunkt:"
   view_sent__user_exists_0: User gefunden
   view_sent__user_not_exists_0: User nicht gefunden
@@ -685,25 +659,9 @@ de:
   view_user_mailer_activation_0: ", dein Benutzerkonto wurde aktiviert.  Folge nun dem Link:"
   view_user_mailer_forgot_password_0: ", um ein neues Passwort zu erhalten, folge dem Link:"
   view_user_mailer_reset_password_0: ", du hast ein neues Passwort erhalten."
-  view_user_mailer_signup_notification_0: "Hallo und herzliche Willkommen bei Communtu!
-
-
- Du hast Dich bei Communtu http://www.communtu.de
- erfolgreich registriert. Jetzt kannst Du alle Features der Plattform
- benutzen."
+  view_user_mailer_signup_notification_0: "Hallo und herzliche Willkommen bei Communtu!\n\n\n Du hast Dich bei Communtu http://www.communtu.de\nerfolgreich registriert. Jetzt kannst Du alle Features der Plattform\nbenutzen."
   view_user_mailer_signup_notification_1: "Dein Benutzername lautet:"
-  view_user_mailer_signup_notification_2: "
-  Viele Grüße
-
-  das Communtu-Team
-
-
-  Weitere Informationen zu den Projekt insbesondere was Du für Möglichkeiten der Nutzung hast, findest Du in unserer FAQ-Liste unter
-  http://www.communtu.de/home/faq
-
-
-  Unsere Ankündigungen und Mailinglisten findest Du unter:
-  http://www.communtu.de/home/news"
+  view_user_mailer_signup_notification_2: "\nViele Grüße\n\ndas Communtu-Team\n\n  Weitere Informationen zu den Projekt insbesondere was Du für Möglichkeiten der Nutzung hast, findest Du in unserer FAQ-Liste unter\n http://www.communtu.de/home/faq\n\n  Unsere Ankündigungen und Mailinglisten findest Du unter:\nhttp://www.communtu.de/home/news"
   view_user_profiles_help_0: Feststellen der Ubuntu-Version
   view_user_profiles_help_1: "Öffne ein Terminal unter \"Anwendungen\" -> \"Zubehör\" -> \"Terminal"
   view_user_profiles_help_2: "Gebe dort ein: "
@@ -753,10 +711,8 @@ de:
   view_user_profiles__profile_data_8: "\t     \tÜber den Browser festgestellte Version: "
   view_user_profiles__profile_data_9: Hier kannst du einstellen, wie sicher bzw. komfortabel deine Installationsquellen sein sollen
   view_user_profiles__profile_rating_0: "Feinauswahl der zu installierenden Programmbündel und Programme"
-  view_user_profiles__profile_rating_1: "Hier kannst du deine beabsichtigte Computer-Nutzung noch genauer angeben. \
-    Durch Klicken auf "
-  view_user_profiles__profile_rating_2: " lässt \
-    sich ein Bereich ein- oder ausklappen."
+  view_user_profiles__profile_rating_1: "Hier kannst du deine beabsichtigte Computer-Nutzung noch genauer angeben. \nDurch Klicken auf "
+  view_user_profiles__profile_rating_2: " lässt \nsich ein Bereich ein- oder ausklappen."
   view_user_profiles__profile_rating_3: Achtung! Zum Schluss auf "Speichern" klicken.
   view_user_profiles__sources_0: "Quellen für die zu installierenden Programme"
   view_user_profiles__sources_1: "Hier werden die zu installierenden Programme und Pakete nach den zugehörigen \

@@ -11,7 +11,7 @@
 			<%=t(:view_home_home_14)%><%= link_to t(:view_home_home_15), '/home/about' %><%=t(:view_home_home_16)%><%= link_to t(:view_home_home_17), '/home/impressum' %>
 			<% else %>
 			<br />
-			<%=t(:view_home_home_18)%><%= link_to t(:Registration), '/users/new' %><%=t(:view_home_home_20)%>
+			<%=t(:view_home_home_18)%><%= link_to t(:register), '/users/new' %><%=t(:view_home_home_20)%>
 			<%= link_to t(:view_home_home_21), '/users/login' %><%=t(:view_home_home_22)%><%= link_to t(:view_home_home_23), '/users/anonymous_login' %>. 
 			<br /><br />
 			<%= link_to t(:view_home_home_24), '/home/impressum' %>
@@ -24,7 +24,7 @@
 		<td>
 			<h3><%=t(:view_home_home_rating_headline)%></h3>
 			<table cellspacing="0">
-				<th valign="middle" class="packageList" align="left"><%=t(:view_home_home_rating_package)%></th>
+				<th valign="middle" class="packageList" align="left"><%=t(:bundle)%></th>
 				<th valign="middle" class="packageList" align="left"><%=t(:view_home_home_rating_rating)%></th>
 				<% for metapackage in @metapackges do %>
 				<% css = cycle("packageList0", "packageList1") %>

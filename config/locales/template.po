@@ -71,7 +71,7 @@ msgid "  Aktionen:&nbsp;&nbsp;"
 msgstr " Actions:&nbsp;&nbsp;"
 
 #: view_users_edit_9
-msgid "  Durch Klicken auf "Speichern" wird das Nutzerkonto zugleich dauerhaft gemacht."
+msgid "  Durch Klicken auf \"Speichern\" wird das Nutzerkonto zugleich dauerhaft gemacht."
 msgstr "  With a click on \"save\" this account will be made permanent."
 
 #: view_debs_index_2
@@ -83,7 +83,7 @@ msgid " - Installation von Programmen und Versionen, die nicht über die offizie
 msgstr " - Installation of programs and version, which are not available through the official repositories."
 
 #: view_home_derivatives_14
-msgid " - Lernsoftware. Bei "Bildung und Wissenschaft" den Level "erweitert" auswählen, und es wird mitinstalliert."
+msgid " - Lernsoftware. Bei \"Bildung und Wissenschaft\" den Level \"erweitert\" auswählen, und es wird mitinstalliert."
 msgstr " - learning software. Choose \"advanced\" under \"Education and science\" and it will be installed."
 
 #: view_home_derivatives_55
@@ -95,7 +95,7 @@ msgid " - Server-Version von Ubuntu, ohne grafische Oberfläche."
 msgstr " - Ubuntu server-version without any GUI."
 
 #: view_home_derivatives_11
-msgid " - Ubuntu Multimedie-Edition. Sie wird bei Communtu mitinstalliert, wenn du bei Audio, Film und/oder Grafik/Design "erweitert" anwählst."
+msgid " - Ubuntu Multimedie-Edition. Sie wird bei Communtu mitinstalliert, wenn du bei Audio, Film und/oder Grafik/Design \"erweitert\" anwählst."
 msgstr " - Ubuntu multimedia-edition. This will be automatically installed when \"advanced\" is checked at audio, film and/or graphic/design."
 
 #: view_home_derivatives_49
@@ -111,7 +111,7 @@ msgid " - damit wird Ubuntu zum "
 msgstr " - with this, Ubuntu is going to be "
 
 #: view_home_derivatives_13
-msgid " - der PC wird zum Videorekorder. Bei Film "Freak" auswählen, und es wird mitinstalliert. Empfohlen: CPU mit 2 GHz, 1024 MByte RAM, 10 GByte Festplattenplatz für das Frontend, 80+ GByte für das Backend, eine Grafikkarte mit 128 MByte RAM mit TV-Ausgang und eine unterstützte TV-Karte."
+msgid " - der PC wird zum Videorekorder. Bei Film \"Freak\" auswählen, und es wird mitinstalliert. Empfohlen: CPU mit 2 GHz, 1024 MByte RAM, 10 GByte Festplattenplatz für das Frontend, 80+ GByte für das Backend, eine Grafikkarte mit 128 MByte RAM mit TV-Ausgang und eine unterstützte TV-Karte."
 msgstr " - the PC becomes a VCR. Select \"Freak\" at \"Movie\" and it will be installed. Recommended: CPU with 2 GHz, 1024 MB-RAM, 10 GB free harddisk space for the frontend, at least 80 GB for the backend, a graphic card with at least 128 MB RAM and a TV Out and a supported TV card."
 
 #: view_home_derivatives_52
@@ -163,7 +163,7 @@ msgid " - öffentliche Distribution der spanischen Region Extremadura."
 msgstr " - public distribution for the Spanish region of Extremadura."
 
 #: view_user_profiles__profile_data_12
-msgid " Alle Quellen zulassen (etwas unsicherer: <a href="http://wiki.ubuntuusers.de/Fremdquellen">Fremdpakete</a> können das System gefährden, aber noch mehr Programme/Komfort: "
+msgid " Alle Quellen zulassen (etwas unsicherer: <a href=\"http://wiki.ubuntuusers.de/Fremdquellen\">Fremdpakete</a> können das System gefährden, aber noch mehr Programme/Komfort: "
 msgstr " Allow every source (slightly unsecure but with even more programs/better comfort. Attention: programs installed from foreign sources can do harm to your computer!):"
 
 #: controller_metapackages_12
@@ -171,7 +171,7 @@ msgid " Bündel ausgewählt</option> \n"
 msgstr " bundle selected </option> \n"
 
 #: view_user_profiles__profile_data_11
-msgid " Communityquellen zulassen ("universe/multiverse", auch sicher, mehr Programme/Komfort) "
+msgid " Communityquellen zulassen (\"universe/multiverse\", auch sicher, mehr Programme/Komfort) "
 msgstr " Allow community-sources (\"universe/multiverse\", secure, more programs/better comfort)"
 
 #: view_user_profiles__profile_data_14
@@ -191,7 +191,7 @@ msgid " Migration von Repositories"
 msgstr "migration from repositories"
 
 #: view_user_profiles__profile_data_10
-msgid " Nur Ubuntuquellen zulassen ("main/restricted", sehr sicher)"
+msgid " Nur Ubuntuquellen zulassen (\"main/restricted\", sehr sicher)"
 msgstr " Only allow Ubuntu-sources (\"main/restricted\", very secure)"
 
 #: view_home_icons_3
@@ -254,16 +254,12 @@ msgstr " for older PCs. It is based on the LXDE-GUI."
 msgid " gesammelt."
 msgstr "."
 
-#: view_home_news_14
-msgid " gesammelt."
-msgstr "."
-
 #: view_home_derivatives_16
 msgid " ist Ubuntu mit dem KDE-Desktop.	"
 msgstr " is Ubuntu with the KDE-Dekstop"
 
 #: view_home_derivatives_32
-msgid " ist ein Ubuntu-Derivat komplett aus freier Software. Nur für erfahrene Nutzer geeignet. Sollte mit der Gobuntu-CD installiert werden, damit es auch wirklich nur freie Software ist. Nachinstallationen mit Communtu möglich, sinnvollerweise sollten dann im Nutzerprofil "freie Software" angewählt werden. Dies Derivate ist in der Version 8.04 erhältlich und wird nicht weiterentwickelt."
+msgid " ist ein Ubuntu-Derivat komplett aus freier Software. Nur für erfahrene Nutzer geeignet. Sollte mit der Gobuntu-CD installiert werden, damit es auch wirklich nur freie Software ist. Nachinstallationen mit Communtu möglich, sinnvollerweise sollten dann im Nutzerprofil \"freie Software\" angewählt werden. Dies Derivate ist in der Version 8.04 erhältlich und wird nicht weiterentwickelt."
 msgstr " is a Ubuntu derivative consisting only of free software. Suitable only for experienced users. Should only be installed with the Gobuntu-CD so that only free software is provided. A further installation with Communtu is possible, but \"Free software\" should be selected in the user profile. This derivative is available in Ubuntu 8.04 and development is currently discontinued."
 
 #: view_home_derivatives_18
@@ -433,7 +429,7 @@ msgid "Abschicken"
 msgstr "Send"
 
 #: view_user_profiles__profile_rating_3
-msgid "Achtung! Zum Schluss auf "Speichern" klicken."
+msgid "Achtung! Zum Schluss auf \"Speichern\" klicken."
 msgstr "Attention! When finished, don't forget to click on \"Save\"."
 
 #: view_home_derivatives_19
@@ -542,10 +538,10 @@ msgstr "Show"
 
 #: view_home_news_12
 msgid "Archiv"
-msgstr "archive""
+msgstr "archive"
 
 #: view_user_profiles__installation_5
-msgid "Auf dem Desktop (oder im Dateibrowser): Rechtsklick mit der Maus, Eigenschaften, und dann ein Häkchen bei "Ausführen" setzen."
+msgid "Auf dem Desktop (oder im Dateibrowser): Rechtsklick mit der Maus, Eigenschaften, und dann ein Häkchen bei \"Ausführen\" setzen."
 msgstr "On your desktop (or your filemanager): make a right-click on the file, choose Properties and place a tick in front of \"Execute\"."
 
 #: view_user_profiles__profile_data_1
@@ -581,7 +577,7 @@ msgid "Bein Benutzerkonto wurde bereits aktiviert. Du kannst dich nun anmelden."
 msgstr "Your account has already been activated. You can now log in."
 
 #: view_packages_show_17
-msgid "Beinhaltet folgende Pakete ("depends" und "recommends"):"
+msgid "Beinhaltet folgende Pakete (\"depends\" und \"recommends\"):"
 msgstr "Contains these packages (\"depends\" and \"recommends\"):"
 
 #: view_packages_show_8
@@ -773,7 +769,7 @@ msgid "Da wir viele Ideen für die Weiterentwicklung der Plattform haben, benöt
 msgstr "Since we have many ideas for the platform's further development, we need programmers. Ideally you already have some experience with Ruby on Rails."
 
 #: view_home_about_8
-msgid "Danach kannst du mit "Speichern und feiner Auswählen" noch einen detaillierteren Überblick über die installierten Bündel und Programme bekommen und die Auswahl auch noch verändern. Falls du dazu keine Lust oder Zeit hast, klicke einfach auf "Speichern". Dies führt dich zur Installations-Seite. Dort findest du einen Installationsknopf, mit dem die Communtu-Nachinstallation gestartet werden kann. Es dauert etwas, bis die Programme automatisch aus dem Internet geladen und installiert werden. Fertig ist der vielseitig einsetzbare Ubuntu-PC!"
+msgid "Danach kannst du mit \"Speichern und feiner Auswählen\" noch einen detaillierteren Überblick über die installierten Bündel und Programme bekommen und die Auswahl auch noch verändern. Falls du dazu keine Lust oder Zeit hast, klicke einfach auf \"Speichern\". Dies führt dich zur Installations-Seite. Dort findest du einen Installationsknopf, mit dem die Communtu-Nachinstallation gestartet werden kann. Es dauert etwas, bis die Programme automatisch aus dem Internet geladen und installiert werden. Fertig ist der vielseitig einsetzbare Ubuntu-PC!"
 msgstr "After a click on \"Save and choose packages\" you can get a detailed overview of the installed bundles and programs and the possibility to change the pre-made selections. In the case you don't have the time or energy to choose the packages in detail, just click on \"Save\". This leads you to the installation page. There you will find a button with which the installation process starts. This takes some time because the applications have to be downloaded from the internet and installed on your computer. When finished, you have a all-round Ubuntu-PC!"
 
 #: controller_users_1
@@ -829,7 +825,7 @@ msgid "Dein Benutzerkonto wurde noch nicht aktiviert. Der Aktivierungscode wurde
 msgstr "Your account has not been activated yet. The activation code has been sent to you via e-mail."
 
 #: controller_sessions_5
-msgid "Dein Benutzername oder Passwort ist falsch. Bitte ggf. unten auf "Registrieren" klicken."
+msgid "Dein Benutzername oder Passwort ist falsch. Bitte ggf. unten auf \"Registrieren\" klicken."
 msgstr "Your username or password is wrong. If applicable click on \"Register\" below."
 
 #: model_mailer_4
@@ -1113,7 +1109,7 @@ msgid "Es muss eine Version angegeben werden (z.B. 0.1)<br>"
 msgstr "Specify a version (e. g. 0.1)<br>"
 
 #: view_user_profiles__installation_7
-msgid "Es werden zur Information nochmal die hinzugefügten Quellen und Pakete angezeigt. Zweimal auf "OK" drücken."
+msgid "Es werden zur Information nochmal die hinzugefügten Quellen und Pakete angezeigt. Zweimal auf \"OK\" drücken."
 msgstr "For your information, the added sources and packages will be shown. Click on \"OK\" twice."
 
 #: view_user_profiles_new_3
@@ -1330,7 +1326,7 @@ msgstr "Installation"
 
 #: view_home_derivatives_6
 msgid "Installations-Feinauswahl"
-msgstr "\"detailed selection\""
+msgstr "detailed selection"
 
 #: view_user_profiles__installation_9
 msgid "Installieren"
@@ -1507,10 +1503,6 @@ msgstr "Message"
 #: view_categories_edit_1
 msgid "Name"
 msgstr "Name"
-
-#: view_cart__metacart_1
-msgid "Name: "
-msgstr "Name:"
 
 #: view_users_show_1
 msgid "Name: "
@@ -1977,7 +1969,7 @@ msgid "Ubuntu-Versionen"
 msgstr "Ubuntu versions"
 
 #: view_home_about_16
-msgid "Um Communtu nutzen zu können, kannst du dich registrieren. Das geht ganz einfach über den "Anmelden"-Knopf in der oberen Leiste."
+msgid "Um Communtu nutzen zu können, kannst du dich registrieren. Das geht ganz einfach über den \"Anmelden\"-Knopf in der oberen Leiste."
 msgstr "In order to use Communtu you need to register yourself. To do so, just click on the \"Registration\"-button in the menu above."
 
 #: view_home_news_2
@@ -1989,7 +1981,7 @@ msgid "Um etwas installieren zu können, musst du zunächst etwas auswählen. Sp
 msgstr "In order to install something, you first have to choose something. Don't forget to save!"
 
 #: view_user_profiles__installation_1
-msgid "Um etwas installieren zu können, musst du zunächst unter "Grunddaten" oder "Detailauswahl" etwas auswählen."
+msgid "Um etwas installieren zu können, musst du zunächst unter \"Grunddaten\" oder \"Detailauswahl\" etwas auswählen."
 msgstr "In order to install, you have to specify some things at \"Base data\" or \"Details\"."
 
 #: view_home_beteiligung_5
@@ -2284,10 +2276,6 @@ msgstr "logged in as "
 msgid "bearbeiten"
 msgstr "Edit"
 
-#: view_home_impressum_13
-msgid "beteiligen"
-msgstr "join the team too"
-
 #: view_home_news_24
 msgid "beteiligen"
 msgstr "participate"
@@ -2497,7 +2485,7 @@ msgid "uns"
 msgstr "us"
 
 #: view_home_derivatives_7
-msgid "unter der Kategorie "Derivate" zur Installation ausgewählt werden."
+msgid "unter der Kategorie \"Derivate\" zur Installation ausgewählt werden."
 msgstr "can be chosen to be installed in the category \"Derivatives\"."
 
 #: view_sent_index_0
@@ -2513,7 +2501,7 @@ msgid "zur Detailansicht"
 msgstr "go to detailed view"
 
 #: view_user_profiles_help_1
-msgid "Öffne ein Terminal unter "Anwendungen" -> "Zubehör" -> "Terminal"
+msgid "Öffne ein Terminal unter \"Anwendungen\" -> \"Zubehör\" -> \"Terminal\""
 msgstr "Open a new terminal. Click on \"Applications\" -> \"Accessories\" -> \"Terminal\""
 
 #: view_home_derivatives_21

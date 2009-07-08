@@ -162,7 +162,7 @@ class SuggestionController < ApplicationController
     packages.each do |p|    
         package_names   = []
         p.recursive_packages package_names, sources, dist, license, security
-        script += "# "+t(:controller_suggestion_10)+": "+p.name+"\n"
+        script += "# "+t(:bundle)+": "+p.name+"\n"
         script += "PACKAGES=$PACKAGES\""
         package_names.each do |name|
           script += name + " "
