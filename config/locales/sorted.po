@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: Communtu 0.1\n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
-"Last-Translator: Timo Denissen <timo@communtu.de>\n"
+"Last-Translator: Timo <timo@communtu.de>\n"
 "Language-Team: Communtu <info@communtu.de>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -2535,3 +2535,4 @@ msgstr "superior category"
 #: view_categories_show_3
 msgid "Übergeordnete Kategorie:"
 msgstr "Superior category:"
+

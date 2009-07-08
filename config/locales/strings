@@ -1,8 +1,8 @@
 view_home_mail_4 senden
 view_home_sent_4 senden
 
-view_home_derivatives_19 achtung
-view_home_derivatives_23 achtung
+view_home_derivatives_19 attention
+view_home_derivatives_23 attention
 
 view_admins_load_packages_1 updatedPackages
 view_admins_sync_package_7 updatedPackages
@@ -15,10 +15,10 @@ view_home_cancel_2 allgemeinbildung
 view_home_impressum_7 allgemeinbildung
 view_home_about_21 allgemeinbildung
 
-view_sent_index_1 an
-view_sent_show_1 an
-view_sent_new_1 an
-view_messages_show_1 an
+view_sent_index_1 sendTo
+view_sent_show_1 sendTo
+view_sent_new_1 sendTo
+view_messages_show_1 sendTo
 
 view_metapackages_new_5 create
 view_repositories_new_6 create
@@ -27,8 +27,8 @@ view_categories_new_5 create
 view_roles_new_2 create
 view_user_profiles_new_4 create
 
-view_sessions_new_4 anmelden
-view_layouts_application_10 anmelden
+view_sessions_new_4 login
+view_layouts_application_10 login
 
 view_categories_index_4 show
 view_derivatives_index_1 show
@@ -66,11 +66,11 @@ view_distributions_new_3 description_without_colon
 view_metapackages_new_2 description_without_colon
 view_categories_index_2 description_without_colon
 
-view_cart_update_3 description_with_colon
-view_packages_show_13 description_with_colon
-view_categories_show_1 description_with_colon
-view_videos_show_1 description_with_colon
-view_metapackages_edit_5 description_with_colon
+view_cart_update_3 description
+view_packages_show_13 description
+view_categories_show_1 description
+view_videos_show_1 description
+view_metapackages_edit_5 description
 
 view_home_beteiligung_0 participation
 view_home_news_22 participation
@@ -79,8 +79,8 @@ view_home_contact_us_2 subject_without_colon
 view_sent_index_2 subject_without_colon
 view_mailbox_show_2 subject_without_colon
 
-view_sent_show_0 subject_with_colon
-view_sent_new_2 subject_with_colon
+view_sent_show_0 subject
+view_sent_new_2 subject
 
 view_derivatives_index_4 are_you_sure
 helper_distributions_14 are_you_sure
@@ -144,10 +144,10 @@ view_home_news_23 you_can
 view_users_new_4 email_without_colon
 view_users_index_4 email_without_colon
 
-view_users_show_6 email_with_colon
-view_home_mail_3 email_with_colon
-view_users_edit_4 email_with_colon
-view_home_mail_2 email_with_colon
+view_users_show_6 email
+view_home_mail_3 email
+view_users_edit_4 email
+view_home_mail_2 email
 
 view_home_beteiligung_6 feedback
 view_home_contact_us_3 feedback
@@ -166,24 +166,24 @@ view_metapackages__metalist_1 category_without_colon
 view_metapackages_new_3 category_without_colon
 view_user_profiles_new_2 category_without_colon
 
-view_metapackages_edit_3 category_with_colon
-view_metapackages_show_4 category_with_colon
+view_metapackages_edit_3 category
+view_metapackages_show_4 category
 
 view_metapackages_add_comment_1 add_comment
 view_packages_add_comment_1 add_comment
 
-view_packages_add_comment_0 Kommentar
-view_metapackages_add_comment_0 Kommentar
+view_packages_add_comment_0 comment
+view_metapackages_add_comment_0 comment
 
-view_metapackages_show_22 kommentieren
-view_packages_show_22 kommentieren
+view_metapackages_show_22 toComment
+view_packages_show_22 toComment
 
-view_home_cancel_3 kontodaten
-view_home_impressum_8 kontodaten
-view_home_about_22 kontodaten
+view_home_cancel_3 bank_account
+view_home_impressum_8 bank_account
+view_home_about_22 bank_account
 
-view_distributions_new_1 kurzname
-view_distributions_edit_2 kurzname
+view_distributions_new_1 shotname
+view_distributions_edit_2 shortname
 
 view_repositories_edit_2 licence
 view_repositories_show_5 licence
@@ -209,10 +209,10 @@ view_packages_edit_1 name_without_colon
 view_categories_index_1 name_without_colon
 view_distributions_edit_1 name_without_colon
 
-view_cart__metacart_1 name_with_colon
-view_users_show_1 name_with_colon
-view_metapackages_edit_0 name_with_colon
-view_derivatives_show_0 name_with_colon
+view_cart__metacart_1 name
+view_users_show_1 name
+view_metapackages_edit_0 name
+view_derivatives_show_0 name
 
 view_repositories_show_9 native
 model_package_3 native
