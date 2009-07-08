@@ -9,7 +9,9 @@ while not f.eof? do
   line1 = f.gets # translation
   if !line1.nil? then
     line1 = line1[8,line1.size-10]
-    y[line[3,line.size-4]] = line1.gsub(/\\\"/,'"')
+    if !line1.nil? then
+      y[line[3,line.size-4]] = line1.gsub(/\\\"/,'"')
+    end
   end
 end
 f.close
