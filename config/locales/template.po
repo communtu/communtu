@@ -33,7 +33,7 @@ msgstr "Add comment"
 
 #: add_sources
 msgid "Quellen hinzufügen"
-msgstr "add sources"
+msgstr "Add sources"
 
 #: allgemeinbildung
 msgid "Allgemeinbildung e.V."
@@ -259,7 +259,7 @@ msgstr "Released bundles cannot be deleted."
 
 #: controller_metapackages_conflicts
 msgid "Das Bündel enthält Pakete, die in Konflikt zueinander stehen!"
-msgstr ""
+msgstr "This bundle contains packages, which are in conflict!"
 
 #: controller_metapackages_debianizing
 msgid "Das Bündel wird gerade als Metapaket erzeugt und hochgeladen. Dies dauert ein paar Minuten."
@@ -703,7 +703,7 @@ msgstr "Commercial"
 
 #: model_package_10
 msgid "Bei der Synchronisation des Repositories {{repo_name}} konnte das Paket {{package_name}} nicht gefunden werden."
-msgstr ""
+msgstr "While the synchronization of the repository {{repo_name}} the package {{package_name}} couldn't be found."
 
 #: model_package_11
 msgid "Konnte keine URL feststellen"
@@ -727,7 +727,7 @@ msgstr "couldn't determine URL for {{repo}}"
 
 #: model_package_9
 msgid "Bei der Synchronisation des Repositories {{repo_name}} konnte kein PackageDistr-Eintrag für das Paket {{package_name}} gefunden werden."
-msgstr ""
+msgstr "While the synchronization of the repository {{repo_name}} no PackageDistr-entry for the package {{package_name}} could be found."
 
 #: model_user_meta_tabz_0
 msgid "Meine Bündel"
@@ -967,11 +967,11 @@ msgstr "Here you can create a bundle from an existing package-list. The list mus
 
 #: view_cart_new_from_list_2
 msgid "Die Liste der auf deinem Computer installierten Pakete kannst du zum Beispiel mit"
-msgstr "A list of all programs installed on your computer can be found with"
+msgstr "A list of all programs installed on your computer"
 
 #: view_cart_new_from_list_3
 msgid "herausfinden. (Dazu muss das Paket {{debfoster}} installiert sein. Die erzeugte Liste enthält nur eine minimale Liste von (Meta-)Paketen, die notwendig ist, um deine Installation komplett wiederherzustellen.)"
-msgstr ""
+msgstr " can be found with. (For this, the package {{debfoster}} has to be install. The created list only contains a minimal list of (meta-)packages which are necessary to rebuild your installation.)"
 
 #: view_cart_new_from_list_4
 msgid "Datei, die die Paketliste enthält, auswählen:"
@@ -983,7 +983,7 @@ msgstr "Create"
 
 #: view_cart_new_from_list_tip
 msgid "Tipp: eine große Liste kannst du auch zunächst mit einem Editor thematisch sortieren und die resultierenden Teillisten einzeln hier hochladen. Die entstehenden Bündel kannst du wiederum zu einem Bündel zusammenfassen. Dadurch entsteht ein besser strukturiertes Bündel."
-msgstr ""
+msgstr "Hint: you can sort a huge list thematically and upload the sorted list in small parts. The created bundles can be merged into a new bundle. Thus a more structured bundle is created."
 
 #: view_cart_update_0
 msgid "Bündel-Informationen anpassen"
@@ -1224,6 +1224,10 @@ msgid ""
 "Video zu dem Programm bei Youtube gesehen? Dann trag es doch gleich bei\n"
 "den Videos zu den Programmen in Communtu ein."
 msgstr ""
+"You think you already know a lot abot Open Source programs? \n"
+"Write your experience into the comments of the according package our maybe you have seen\n"
+"a video of the program at YouTube? Add the video\n"
+"to the corresponding program."
 
 #: view_home_beteiligung_5
 msgid "Umfrage zu beteiligen"
@@ -1246,6 +1250,8 @@ msgid ""
 "Communtu -\n"
 " leider hat da etwas beim Spenden nicht funktioniert."
 msgstr ""
+"Communtu -\n"
+" something went wrong while donating."
 
 #: view_home_cancel_1
 msgid "Endweder versuchst Du es noch einmal oder Du nutzt die Möglichkeit per Überweisung"
@@ -1481,7 +1487,7 @@ msgstr "With Communtu installable derivatives:"
 
 #: view_home_faq_00
 msgid "Häufig gestellte Fragen"
-msgstr ""
+msgstr "Frequently Asked Questions"
 
 #: view_home_faq_01
 msgid "Was ist ein Bündel?"
@@ -1489,7 +1495,7 @@ msgstr "What is a bundle?"
 
 #: view_home_faq_02
 msgid "Ein Bündel ist eine Zusammenstellung von Software für einen bestimmten Aufgabenbereich, den Du mit Deinem Rechner erledigen kannst."
-msgstr ""
+msgstr "A bundle is a compilation of software for a specific task you want to do with your computer."
 
 #: view_home_faq_03
 msgid "Wie installiere ich ein Bündel?"
@@ -1497,7 +1503,7 @@ msgstr "How do I install a bundle?"
 
 #: view_home_faq_04
 msgid "Ein Bündel kann einmal in einer Zusammenstellung mit weiteren über den Punkt \"Installation\" zum Computer hinzugefügt werden. Andererseits kann auch ein Bündel direkt installiert werden, wenn Du über den Menüpunkt \"Bündel verwalten\" gehst."
-msgstr ""
+msgstr "A bundle, together with other bundles, can be installed as a compilation via \"Installation\". A bundle can be installed directly via the menu-entry \"Administrate bundles\"."
 
 #: view_home_faq_05
 msgid "Wie erstelle ich ein Bündel?"
@@ -1505,31 +1511,31 @@ msgstr "How do I create a bundle?"
 
 #: view_home_faq_06
 msgid "Auf den linken Bereich der Webseite gibt es den Bündel-Editor. Dort bitte den Punkt \"Neues Bündel\" anklicken. Aus den Paketen im Hauptfenster der Webseite kannst Du dann die einzelnen Pakete auswählen und hinzufügen. Zum Schluss muss dann auf das Speichernsymbol im Bündeleditor geklickt werden. Hier öffnet sich dann im Hauptfenster ein Formular, wo Du einen sinnvollen Titel und Beschreibung eingeben kannst. Bitte ordne Deinem Bündel auch eine entsprechende Kategorie zu."
-msgstr ""
+msgstr "On the left side of the webpage is the bundle-editor. There you have to click \"New Bundle\". In the main-window you can choose packages and add them to the bundle. When finished, you have to click on the \"Save\"-symbol in the bundle-editor. Now a new window pop ups in the main-window where you have to enter a meaningful name and a description. Don't forget to assign your bundle to a category."
 
 #: view_home_faq_07
 msgid "Wie kann ich ein Bündel bewerten?"
-msgstr ""
+msgstr "How can I rate a bundle?"
 
 #: view_home_faq_08
 msgid "Du gehst auf den Menüpunkt \"Bündel verwalten\" und lässt Dir unter \"Alle veröffentlichten Bündel\" die Bündel anzeigen. Dort kannst Du bis zu fünf Sterne anklicken. Danach erscheint ein Kommentarfeld, in dem Du diese Bewertung qualifizieren kannst."
-msgstr ""
+msgstr "You go to \"Administrate bundles\" and click on \"All published bundles\" to view all bundles. There you can rate a program with up to five stars and, after that, a commentbox appears where you have to enter a comment to justify your rating."
 
 #: view_home_faq_09
 msgid "Wie kann ich ein Bündel ändern?"
-msgstr ""
+msgstr "How can I change a bundle?"
 
 #: view_home_faq_10
 msgid "Du gehst auf den Menüpunkt \"Bündel verwalten\" und läßt Dir da Deine Bündel auflisten. Das zu ändernde Bündel klickst Du nun an. Du bekommst nun alle wichtigen Informationen zu Deinem Bündel angezeigt. Unter \"Aktionen\" kannst Du nun dieses Bündel oder auch die Paketliste editieren. Wenn das Paket nicht veröffentlicht ist, dann kannst Du es auch löschen oder ansonsten auch veröffentlichen."
-msgstr ""
+msgstr "You go to \"Administrate bundles\" and let show you your bundles and then you click on the bundle you want to change. Every important information concerning this bundle is now shown. With a click on \"Actions\" you can edit the bundle or the package-list. If the bundle is not published, you can delete it or publish the bundle, if you like to do so."
 
 #: view_home_faq_11
 msgid "Wie sichere ich die Programmliste meines Gesamtsystems?"
-msgstr ""
+msgstr "How do I save the program-list of my system?"
 
 #: view_home_faq_12
 msgid "Auf den linken Bereich der Webseite gibt es den Bündel-Editor. Dort bitte den Punkt \"Bündel aus Paketliste\" anklicken. Dort ist beschrieben, wie Du Deine Paketliste in Communtu hochladen kannst."
-msgstr ""
+msgstr "On the left side of the webpage is the bundle-editor. There you have to click on \"Bundle from package-list\". A new page is loaded with instructions how to upload your package-list to Communtu."
 
 #: view_home_faq_13
 msgid "Wie finde ich Programme?"
@@ -1537,7 +1543,7 @@ msgstr "How do i find programes?"
 
 #: view_home_faq_14
 msgid "Gehe dazu bitte auf den Menüpunkt \"Programme suchen\". Hier hast Du ein Suchfeld, in dem Du den Namen des gesuchten Prgramms angeben kannst. Weiter ist es möglich die Suche nur über Programme durchzuführen, in dem das Feld \"Nur Programme\" angeklickt wird und somit sonstige Bibliotheken nicht mehr angezeigt werden. Weiter ist es auch möglich eine Debian-Section auszuwählen, der die Auswahl an Programmen anhand von Kategorien vorselektiert."
-msgstr ""
+msgstr "To find a program, go to \"Search programs\". Enter the name of the program, you're looking for, into the search field. If you want to search only the programs click on \"Programs only\" and the libraries are not searched. Furthermore it is possible to choose a Debian-section where programs are preselected."
 
 #: view_home_faq_15
 msgid "Wie kann ich ein einzelnes Programm installieren?"
@@ -1545,15 +1551,15 @@ msgstr "How can I install a single program?"
 
 #: view_home_faq_16
 msgid "Gehe dazu bitte auf den Menüpunkt \"Programme suchen\". Dort bekommst Du eine Auswahl von Programmen. Wenn Du Dein gewünschtes Programm gefunden hast, kannst Du dieses durch Klicken auf das Installationssymbol installieren.  Es ist möglich, dass Du vorher noch auf \"Quellen hinzufügen\" klicken musst, da es sein kann, dass das Programm in einer Quelle verfügabr ist, die Deinem System noch nicht bekannt ist."
-msgstr ""
+msgstr "To install a program, go to \"Search programs\" and you get a list of all programs. When you found the program, you were looking for, you just have to click on the installation-icon. It could be that you have to add the repository of that program first. To do so, click on \"Add sources\" and Communtu will add the sources to your system."
 
 #: view_home_faq_17
 msgid "Wie kann ich Programme vorschlagen, dass diese in Communtu mit aufgenommen werden?"
-msgstr ""
+msgstr "How can I propose a program so it can be added to Communtu?"
 
 #: view_home_faq_18
 msgid "Wenn Du über \"Programme suchen\" ein bestimmtes Programm nicht gefunden hst, kann es daran liegen, das wir die Quelle aus dem das Programm kommt, noch nicht in Communtu eingetragen haben. Du kannst uns diese Quelle über den \"Bündel-Editor\" unter den Punkt \"Repository vorschlagen\" melden, damit diese auch in Communtu eingearbeitet werden kann."
-msgstr ""
+msgstr "If you haven't found a program via \"Search programs\", chances are high we don't have the corresponding repositories, where the program is in, in Communtu. You can suggest the repository, where the program is in, to us via \"Suggest repository\" in the bundle-editor so we can implement the repository."
 
 #: view_home_home_1
 msgid "http://www.ubuntuusers.de"
@@ -1657,7 +1663,7 @@ msgstr "You have new messages in your inbox."
 
 #: view_home_home_rating_headline
 msgid "Am besten bewertete Bündel"
-msgstr ""
+msgstr "Best rated bundles"
 
 #: view_home_home_rating_link
 msgid "Zum Bündel bewerten"
@@ -1733,7 +1739,9 @@ msgstr "Bauernstr. 2"
 
 #: view_home_impressum_5
 msgid "28203 Bremen"
-msgstr "28203 BremenGermany"
+msgstr ""
+"28203 Bremen\n"
+"Germany"
 
 #: view_home_mail_0
 msgid "Benachrichtigung bei Fehlerbehebung"
@@ -1745,11 +1753,11 @@ msgstr "Please contact me at the following e-mail-address concerning the bugfixi
 
 #: view_home_new_repository_0
 msgid "Repository vorschlagen"
-msgstr "suggest repository"
+msgstr "Suggest repository"
 
 #: view_home_new_repository_1
 msgid "Du vermisst hier eine Quelle? Dann kannst Du ein Repository vorschlagen."
-msgstr ""
+msgstr "You're missing some sources? You can suggest a repository to us."
 
 #: view_home_new_repository_2
 msgid "Link zum Repository"
@@ -1757,7 +1765,7 @@ msgstr "link to the repository"
 
 #: view_home_new_repository_3
 msgid "Warum soll dies in Communtu eingebaut werden? (Bitte gebe Kontaktdaten an, wenn Du über die Aufnahme informiert werden willst)"
-msgstr ""
+msgstr "Why should this be implemented in Communtu? (If you want to be informed about the take-up, please enter your contact information="
 
 #: view_home_news_1
 msgid "Unsere Mailinglisten"
@@ -1857,7 +1865,7 @@ msgstr "no new messages"
 
 #: view_layouts_application_19
 msgid "https://www.paypal.com/de_DE/DE/i/btn/btn_donate_LG.gif"
-msgstr ""
+msgstr "https://www.paypal.com/de_DE/DE/i/btn/btn_donate_LG.gif"
 
 #: view_layouts_application_2
 msgid "Communtu"
@@ -1929,7 +1937,7 @@ msgstr "<option>0 bundles selected</option>"
 
 #: view_metapackages__metalist_3
 msgid "Öff."
-msgstr ""
+msgstr "publ."
 
 #: view_metapackages__package_list_0
 msgid "Gesamtgröße des Bündels auf der Festplatte:"
@@ -1945,7 +1953,7 @@ msgstr "Pleas use versions => 1.0 only for stable bundles. A version must always
 
 #: view_metapackages_edit_gpl
 msgid "Ich stimme zu, die Bündel Information unter der <a href=\"http://www.gnu.de/documents/gpl.de.html\">GNU General public license</a> (Version 2.0 oder höher) zu veröffentlichen."
-msgstr ""
+msgstr "I accept to publish the bundle information under the <a href=\"http://www.gnu.de/documents/gpl.de.html\">GNU General public license</a> (Version 2.0 or higher)."
 
 #: view_metapackages_finish_migrate_0
 msgid "Alle Bündel wurden von "
@@ -2021,7 +2029,7 @@ msgstr "Publish"
 
 #: view_metapackages_show_18
 msgid "Wenn du das Bündel veröffentlichst, wird es für alle Nutzer zugänglich. Allerdings kann es danach nicht mehr gelöscht oder unbenannt werden."
-msgstr ""
+msgstr "If you publish the bundle every user has access to this bundle. However, the bundle cannot be deleted or renamed after publishing."
 
 #: view_metapackages_show_3
 msgid "Zurück&nbsp;&nbsp;"
@@ -2033,15 +2041,15 @@ msgstr "Published:"
 
 #: view_metapackages_show_comment_and_ratings
 msgid "Neuste Kommentare und Bewertungen für dieses Bündel"
-msgstr ""
+msgstr "Latest comments and ratings for this bundle"
 
 #: view_metapackages_show_deb_error
 msgid "Beim Erzeugen von Metapaketen ist ein Fehler aufgetreten. Wir kümmern uns um das Problem."
-msgstr ""
+msgstr "While creating metapackages, an error occurred. We'll solve that problem as fast as possible."
 
 #: view_metapackages_show_modified
 msgid "Das Bündel enthält Änderungen."
-msgstr ""
+msgstr "This bundle contains changes."
 
 #: view_metapackages_show_save
 msgid "Bündel als Metapaket speichern"
@@ -2061,6 +2069,9 @@ msgid ""
 "\n"
 "es wurde auf www.communtu.de ein Feedback gesendet. Der Betreff ist:"
 msgstr ""
+"Hello, \n"
+"\n"
+"a feedback from en.communtu.org has arrived. The subject is:"
 
 #: view_my_mailer_mail_1
 msgid "Folgender Kommentar wurde hinterlassen:"
@@ -2082,6 +2093,9 @@ msgid ""
 "\n"
 "es wurde auf www.communtu.de ein Vorschlag für ein neues Repository gemacht:"
 msgstr ""
+"Hello, \n"
+"\n"
+"a suggestion for a new repository has been made at en.communtu.org:"
 
 #: view_my_mailer_repo_1
 msgid "Folgende Begründung wurde angegeben:"
@@ -2233,7 +2247,7 @@ msgstr "cancel"
 
 #: view_rating_new_comment_info
 msgid "Geben sie eine Beschreibung zu Ihrer Bewertung an. Diese Angabe ist <b>Pflicht</b>."
-msgstr ""
+msgstr "Please enter a review to your rating. This is a <b>obligatory</b> step."
 
 #: view_rating_new_comment_textfield_label
 msgid "Kommentar"
@@ -2241,7 +2255,7 @@ msgstr "comment"
 
 #: view_rating_rating_rate
 msgid "von 5 Sternen vergeben"
-msgstr ""
+msgstr "out of 5 stars awarded"
 
 #: view_rating_show_title_got_ratings
 msgid "von 5 Sternen"
@@ -2249,11 +2263,11 @@ msgstr "of 5 stars"
 
 #: view_rating_show_title_no_ratings
 msgid "noch keine User Bewertung"
-msgstr ""
+msgstr "no user rating"
 
 #: view_rating_show_title_ratings_count
 msgid "(Basierend auf {{votes}} Bewertung(en))"
-msgstr ""
+msgstr "(Based on {{votes}} rating(s))"
 
 #: view_repositories_edit_0
 msgid "Repository bearbeiten"
@@ -2400,6 +2414,12 @@ msgid ""
 "erfolgreich registriert. Jetzt kannst Du alle Features der Plattform\n"
 "benutzen."
 msgstr ""
+"Hello and welcome to Communtu!\n"
+"\n"
+"\n"
+" You successfully registered yourselfe\n"
+"at http://en.communtu.org. You can now use every\n"
+"featrue of the platform."
 
 #: view_user_mailer_signup_notification_1
 msgid "Dein Benutzername lautet:"
@@ -2418,6 +2438,16 @@ msgid ""
 "  Unsere Ankündigungen und Mailinglisten findest Du unter:\n"
 "http://www.communtu.de/home/news"
 msgstr ""
+"\n"
+"Greetings\n"
+"\n"
+"the Communtu-team\n"
+"\n"
+"  Further information about the project and your possibilities to use Communtu can be found at\n"
+" http://en.communtu.org/home/faq\n"
+"\n"
+"  Our anouncements and mailinglists can be found at:\n"
+"http://en.communtu.org/home/news"
 
 #: view_user_profiles__installation_0
 msgid "Communtu-Nachinstallation"
@@ -2485,7 +2515,7 @@ msgstr "Advice: please don't rename the .deb-file."
 
 #: view_user_profiles__installation_31
 msgid "Die Communtu-Metapakete können auch mittles {{synaptic}} (unter System -> Systemverwaltung) angezeigt, installiert und deinstalliert werden. Änderungen an Bündeln werden über die Ubuntu-Paketverwaltung automatisch eingespielt."
-msgstr ""
+msgstr "The Communtu-metapackages can be shown, installed and uninstalled using {{synaptic}} (go to \"System\" --> \"Administration\"). Updates of the programs inside the bundle are installed via the Ubuntu-updatemanager automatically."
 
 #: view_user_profiles__profile_data_0
 msgid "Installation vorbereiten: Grunddaten eingeben"
@@ -2733,11 +2763,11 @@ msgstr "confirm password"
 
 #: view_users_new_8
 msgid "Ja, ich möchte die Maillingliste für Ankündigungen abbonieren."
-msgstr ""
+msgstr "Yes, I want to be added to the announcement-mailinglist."
 
 #: view_users_new_9
 msgid "Ja, ich möchte die Maillingliste für Diskussionen abbonieren."
-msgstr ""
+msgstr "Yes, I want to be added to the discussion-mailinglist."
 
 #: view_users_show_0
 msgid "Benutzer anzeigen"
