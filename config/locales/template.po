@@ -1,404 +1,217 @@
 msgid ""
 msgstr ""
-"Plural-Forms: n != 1\n"
-"Project-Id-Version: Communtu 0.1\n"
+"Project-Id-Version: Communtu 0.2\n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: Timo <timo@communtu.de>\n"
 "Language-Team: Communtu <info@communtu.de>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: n != 1\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: /home/timo/Ubuntu/communtu-program/config/locales/template.pot\n"
 
-#: view_user_profiles__profile_data_8
-msgid "	     	Über den Browser festgestellte Version: "
-msgstr "	     	Via your webbrowser detected version: "
+#: Kommentar
+msgid "Kommentar: "
+msgstr "Comment:"
 
-#: view_user_profiles__installation_23
-msgid "	    Pakete installieren. Es gibt zwei Alternativen: 	    "
-msgstr "	    Installing packages. There are two alternatives:"
+#: achtung
+msgid "Achtung! bei Communtu erst in Kürze verfügbar."
+msgstr "Attention! Will be available soon at Communtu."
 
-#: view_packages__deps_0
-msgid "	   keine"
-msgstr "	   none"
+#: add
+msgid "hinzufügen"
+msgstr "add"
 
-#: view_packages_edit_3
-msgid "	 &nbsp;&nbsp;Neues Icon: "
-msgstr "	 &nbsp;&nbsp;New icon: "
+#: add_comment
+msgid "Kommentar hinzufügen"
+msgstr "Add comment"
 
-#: view_home_derivatives_20
-msgid "	Automatix war eine Installationshilfe, die sich großer Beliebtheit erfreute (sie wurde sogar von der New York Times empfohlen), die aber nicht ganz den Ubuntu-Programmierstandards entsprach und inzwischen nicht mehr weiterentwickelt wird. "
-msgstr "	Automatix was a programm to assist the installation of software and enjoyed great popularity (Automatix was even recommended by the New York Times). However, Automatix did not meet the Ubuntu-standards and the delevopment had been stopped."
+#: add_sources
+msgid "Quellen hinzufügen"
+msgstr "add sources"
 
-#: view_home_home_18
-msgid "	Klicke auf	"
-msgstr "	Click on	"
+#: allgemeinbildung
+msgid "Allgemeinbildung e.V."
+msgstr "Allgemeinbildung e.V."
 
-#: view_packages__deps_1
-msgid "          Nur für "
-msgstr "          Only for "
+#: an
+msgid "An:"
+msgstr "To"
 
-#: view_repositories_show_6
-msgid "        OpenSource"
-msgstr "        OpenSource"
+#: anmelden
+msgid "Anmelden"
+msgstr "Log in"
 
-#: view_repositories_show_7
-msgid "        kommerziell "
-msgstr "        commercial "
+#: archive
+msgid "Archiv"
+msgstr "archive"
 
-#: view_packages_edit_9
-msgid "    Beschreibung des Videos:"
-msgstr "    Video description:"
+#: are_you_sure
+msgid "Bist du sicher?"
+msgstr "Are you sure?"
 
-#: view_passwords_new_1
-msgid "    Mit welcher Email-Adresse hast du das Benutzerkonto angelegt?"
-msgstr "    Which e-mail-address did you enter when you created the account?"
+#: back
+msgid "zurück"
+msgstr "Back"
 
-#: view_passwords_edit_1
-msgid "    Passwort bestätigen:"
-msgstr "    confirm password:"
+#: blog
+msgid "Der Blog von Communtu"
+msgstr "The Communtu blog"
 
-#: view_passwords_edit_0
-msgid "    Passwort:"
-msgstr "    Password:"
+#: bundle
+msgid "Bündel"
+msgstr "bundle"
 
-#: view_home_about_6
-msgid "  (Diese erscheint erst nach "
-msgstr "(This appeas not until"
+#: bundle_editor
+msgid "Bündel-Editor"
+msgstr "bundle-editor"
 
-#: view_metapackages_show_14
-msgid "  Aktionen:&nbsp;&nbsp;"
-msgstr " Actions:&nbsp;&nbsp;"
+#: category_with_colon
+msgid "Kategorie:"
+msgstr "Category:"
 
-#: view_users_edit_9
-msgid "  Durch Klicken auf \"Speichern\" wird das Nutzerkonto zugleich dauerhaft gemacht."
-msgstr "  With a click on \"save\" this account will be made permanent."
+#: category_without_colon
+msgid "Kategorie"
+msgstr "Category"
 
-#: view_debs_index_2
-msgid "  Keine fehlgeschlagenen Deb-Generierungen vorhanden! Glückwunsch!"
-msgstr "  There are no failed deb-generations! Congratulations!"
+#: change_passwd
+msgid "Passwort ändern"
+msgstr "change password"
 
-#: view_home_derivatives_51
-msgid " - Installation von Programmen und Versionen, die nicht über die offiziellen Repositories erhältlich sind."
-msgstr " - Installation of programs and version, which are not available through the official repositories."
+#: changed_settings
+msgid "Dieser Schritt muss neu ausgeführt werden, weil du die Einstellungen geändert hast. \t\t     "
+msgstr "This step has to be carried out again because you changed the settings."
 
-#: view_home_derivatives_14
-msgid " - Lernsoftware. Bei \"Bildung und Wissenschaft\" den Level \"erweitert\" auswählen, und es wird mitinstalliert."
-msgstr " - learning software. Choose \"advanced\" under \"Education and science\" and it will be installed."
+#: choose_parent
+msgid "Wähle einen Parent aus!"
+msgstr "Choose a Parent!"
 
-#: view_home_derivatives_55
-msgid " - Mediacenter."
-msgstr " - Mediacenter."
+#: compose_new_message
+msgid "neue Nachricht schreiben"
+msgstr "compose a new message"
 
-#: view_home_derivatives_46
-msgid " - Server-Version von Ubuntu, ohne grafische Oberfläche."
-msgstr " - Ubuntu server-version without any GUI."
+#: confirm_new_passwd
+msgid "Neues Passwort bestätigen"
+msgstr "Confirm new password"
 
-#: view_home_derivatives_11
-msgid " - Ubuntu Multimedie-Edition. Sie wird bei Communtu mitinstalliert, wenn du bei Audio, Film und/oder Grafik/Design \"erweitert\" anwählst."
-msgstr " - Ubuntu multimedia-edition. This will be automatically installed when \"advanced\" is checked at audio, film and/or graphic/design."
+#: controller_accounts_1
+msgid "Dein Benutzerkonto wurde aktiviert! Du kannst dich nun einloggen."
+msgstr "Your account has been activated. You can now log in."
 
-#: view_home_derivatives_49
-msgid " - Ubuntu mit Enlightenment als Desktopumgebung."
-msgstr " - Ubuntu with Enlightenment as a desktop environment."
+#: controller_accounts_2
+msgid "Aktivierungs-Code nicht gefunden. Bitte versuche, ein neues Benutzerkonto anzulegen."
+msgstr "Could'nt find the activation code. Please try to create a new account."
 
-#: view_home_derivatives_43
-msgid " - basiert auf E17. 2D-Effekte auch ohne schnelle Grafikkarte."
-msgstr " - based on E17. 2D-effects even without a fast graphic card."
+#: controller_accounts_4
+msgid "Bein Benutzerkontoutzerkonto wurde bereits aktiviert. Du kannst dich nun anmelden."
+msgstr "Your account has already been activated. You can now log in."
 
-#: view_home_derivatives_28
-msgid " - damit wird Ubuntu zum "
-msgstr " - with this, Ubuntu is going to be "
+#: controller_accounts_5
+msgid "Passwort aktualisiert."
+msgstr "Password has been updated."
 
-#: view_home_derivatives_13
-msgid " - der PC wird zum Videorekorder. Bei Film \"Freak\" auswählen, und es wird mitinstalliert. Empfohlen: CPU mit 2 GHz, 1024 MByte RAM, 10 GByte Festplattenplatz für das Frontend, 80+ GByte für das Backend, eine Grafikkarte mit 128 MByte RAM mit TV-Ausgang und eine unterstützte TV-Karte."
-msgstr " - the PC becomes a VCR. Select \"Freak\" at \"Movie\" and it will be installed. Recommended: CPU with 2 GHz, 1024 MB-RAM, 10 GB free harddisk space for the frontend, at least 80 GB for the backend, a graphic card with at least 128 MB RAM and a TV Out and a supported TV card."
+#: controller_accounts_6
+msgid "Es ist ein Fehler aufgetreten. Das Passwort wurde nicht geändert."
+msgstr "An error occured. The password has not been changed."
 
-#: view_home_derivatives_52
-msgid " - eine Automatix für die Ultimate Edition."
-msgstr " - a kind of Automatix for the ultimate edition."
+#: controller_accounts_8
+msgid "Dein altes Passwort war inkorrekt."
+msgstr "Your old password was incorrect."
 
-#: view_home_derivatives_36
-msgid " - eine afrikanische Ubuntu-Variante, die allerdings offenbar nicht übers Internet erhältlich ist."
-msgstr " - an African version of Ubuntu, which is apparently not available over the internet."
+#: controller_admins_0
+msgid "Administratorbereich"
+msgstr "admninistration section"
 
-#: view_home_derivatives_53
-msgid " - erlaubt schnellere Installation, da nur die aktuellsten Pakete heruntergeladen werden."
-msgstr " - allows a faster installation, as only the latest packages are downloaded."
+#: controller_application_0
+msgid "Diese Funktion ist für anonyme Nutzer nicht verfügbar."
+msgstr "This function is not available for anonymous users."
 
-#: view_home_derivatives_34
-msgid " - ersetzt den Linux-Kern durch OpenSolaris. Stellt nur eine minimale Basis an Anwendungen bereit. Die Installation weiterer Pakete bleibt dem Benutzer überlassen; hierfür kann Communtu genutzt werden."
-msgstr " - replaces the Linux core with OpenSolaris. Provides only a minimal basis to applications. The installation of additional software is left to the user; Communtu can be used for this."
+#: controller_cart_2
+msgid "Folgende Pakete wurden nicht gefunden: "
+msgstr "The following packages couldn't be found:"
 
-#: view_home_derivatives_40
-msgid " - für mobile Internetgeräte."
-msgstr " - for portable internet devices."
+#: controller_categories_0
+msgid "Kategorien"
+msgstr "Categories"
 
-#: view_home_derivatives_48
-msgid " - minimale Server-Version, vor allem für Virtualisierung geeignet.."
-msgstr " - minimal server-version, suitable for virtualizations."
+#: controller_categories_2
+msgid "Kategorie erzeugt."
+msgstr "Category created."
 
-#: view_home_derivatives_44
-msgid " - minimalistische schnelle Ubuntu-Version für ältere PCs."
-msgstr " - minimalist and fast version of Ubuntu for older PCs."
+#: controller_categories_3
+msgid "Kategorie aktualisiert."
+msgstr "Category updated."
 
-#: view_home_derivatives_50
-msgid " - mit Fluxbox und verschiedenen Netzwerk-Sicherheitswerkzeugen ."
-msgstr " - with Fluxbox and several network-tools."
+#: controller_debs_0
+msgid "Debian-Pakete"
+msgstr "Debian-packages"
 
-#: view_home_derivatives_26
-msgid " - mit dem schlanken Xfce als grafischer Oberfläche - besonders für ältere Rechner geeignet: 128 MByte Arbeitsspeicher und 1,5 GB auf der Festplatte reichen aus. Sollte von CD installiert werden, um wirklich eine schlanke Installation zu haben. Nachinstallationen mit Communtu möglich."
-msgstr " - with the slim Xfce as the graphical interface. Particularly suitable for older computers: 128 MB RAM and 1,5 GB free hard disk space are sufficiant. Should be installed from the CD to guarantee a slim installation. Post-installation can be done with Communtu."
+#: controller_debs_1
+msgid "Deb erzeugt."
+msgstr "Deb created."
 
-#: view_home_derivatives_22
-msgid " - orient an BeOS, setzt auf Schnelligkeit, Kompatibilität mit alten Rechnern und einfache Bedienung. CPU mit mindestens 200 MHZ 128 MB RAM (zum Betrieb, zur Installation werden 192 MB RAM benötigt); 2 GB freier Festplattenplatz (Empfohlen: 4 GB oder mehr); 16 MB Grafikkarte (Empfohlen: Intel GMA 9xx). "
-msgstr " - leaned to be like BeOS, ZevenOS focuses on speed and compatibility for old computers with a simple interface. CPU with at least 200 MHz, 128 MB RAM (for operating, while installing 192 MB RAM are required), at least 2 GB free hard disk space (recommended are 4 GB free hard disk space or more), 16 MB graphic card (recommended: Intel GMA 9xx)."
+#: controller_debs_2
+msgid "Deb aktualisiert."
+msgstr "Deb updated."
 
-#: view_home_derivatives_42
-msgid " - spezialisiert auf Webdienste."
-msgstr " - specialised for webservices."
+#: controller_derivatives_1
+msgid "Derivative erzeugt."
+msgstr "Derivative created."
 
-#: view_home_derivatives_38
-msgid " - öffentliche Distribution der spanischen Region Extremadura."
-msgstr " - public distribution for the Spanish region of Extremadura."
+#: controller_derivatives_2
+msgid "Derivat aktualisiert."
+msgstr "Derivative updated."
 
-#: view_user_profiles__profile_data_12
-msgid " Alle Quellen zulassen (etwas unsicherer: <a href=\"http://wiki.ubuntuusers.de/Fremdquellen\">Fremdpakete</a> können das System gefährden, aber noch mehr Programme/Komfort: "
-msgstr " Allow every source (slightly unsecure but with even more programs/better comfort. Attention: programs installed from foreign sources can do harm to your computer!):"
+#: controller_distributions_0
+msgid "Ubuntu Distributionen"
+msgstr "Ubuntu distributions"
+
+#: controller_distributions_1
+msgid "Distribution erzeugt."
+msgstr "Distribution created."
+
+#: controller_distributions_2
+msgid "Distribution aktualisiert."
+msgstr "Distribution updated."
+
+#: controller_home_1
+msgid "Die E-Mail wurde an uns gesendet. Vielen Dank für Dein Feedback."
+msgstr "The e-mail has been sent to us. Many thanks for your feedback."
+
+#: controller_home_2
+msgid "Wir werden dich per E-Mail benachrichtigen."
+msgstr "We will notify you via e-mail."
+
+#: controller_home_3
+msgid "Das sieht nicht nach einer Liste von Ubuntu-Paketen aus... <br />Die Paketliste muss einen Paketnamen pro Zeile enthalten"
+msgstr "This does not appear to be a list with Ubuntu-packages... <br />The packagelist must contain one packagename per line"
+
+#: controller_home_4
+msgid "Es muss eine Datei mit der Paketliste (ein Paketname pro Zeile) angegeben werden"
+msgstr "A file with the package list (one package name per line) has to be given"
+
+#: controller_home_5
+msgid "Wir haben Deinen Vorschlag erhalten und werden Dich informieren, ob und wann wir das vorgeschlagene Repository aufnehmen werden."
+msgstr "We received your suggestion and we will inform you if imbibe the suggested repository and when we will imbibe it."
+
+#: controller_messages_0
+msgid ""
+"Ursprüngliche Nachricht von {{user}} am {{datum}}  \n"
+"  \n"
+msgstr "Original message by {{user}} from {{datum}}}  \n"
+
+#: controller_metapackages_11
+msgid "Konnte Paket nicht aus Bündel entfernen."
+msgstr "Couldn't delete package from bundle."
 
 #: controller_metapackages_12
 msgid " Bündel ausgewählt</option> \n"
 msgstr " bundle selected </option> \n"
-
-#: view_user_profiles__profile_data_11
-msgid " Communityquellen zulassen (\"universe/multiverse\", auch sicher, mehr Programme/Komfort) "
-msgstr " Allow community-sources (\"universe/multiverse\", secure, more programs/better comfort)"
-
-#: view_user_profiles__profile_data_14
-msgid " Freie Software (Quellen liegen offen und dürfen weiterentwickelt werden)"
-msgstr " Free software (sources are open and further development is allowed)"
-
-#: view_home_home_7
-msgid " Hast du gute Erfahrungen mit Programmen gemacht? Dann kannst du sie hier thematisch bündeln, oder auch bestehende Bündel angucken. "
-msgstr "Did you make good experiences with programs? Bundle them thematically or take a look at existing bundles."
-
-#: view_home_icons_9
-msgid " Installation per Shell-Script"
-msgstr " installation via shell-script"
-
-#: view_home_icons_16
-msgid " Migration von Repositories"
-msgstr "migration from repositories"
-
-#: view_user_profiles__profile_data_10
-msgid " Nur Ubuntuquellen zulassen (\"main/restricted\", sehr sicher)"
-msgstr " Only allow Ubuntu-sources (\"main/restricted\", very secure)"
-
-#: view_home_icons_3
-msgid " Paket(e) installieren."
-msgstr "Install package(s)."
-
-#: view_home_icons_12
-msgid " Programm (wenn kein anderes Programm-Icon vorhanden)"
-msgstr " Program (if not other program-icon is available)"
-
-#: view_home_icons_15
-msgid " Programm-Bündel"
-msgstr " program-bundle"
-
-#: view_home_icons_6
-msgid " Quellen installieren"
-msgstr " install sources"
-
-#: view_home_derivatives_41
-msgid " Ubuntu ultimate  - Ubuntu mit vielen Desktop-Desgins und Programmen."
-msgstr "Ubuntu ultimate - Ubuntu with many desktop-designs and applications."
-
-#: view_user_profiles__profile_data_15
-msgid " Unfreie Lizenzen zulassen (auch kostenlos, aber Quellen liegen nicht offen - sozusagen das Methadon für einen weichen Übergang zu Linux)"
-msgstr " Allow unfree licences (free too, but the sources are closed - quasi the methadone for a fluent changeover to Linux)"
-
-#: view_home_icons_22
-msgid " User Icon"
-msgstr " user-icon"
-
-#: view_home_success_0
-msgid " Vielen Dank für die Spende"
-msgstr " Thank you for your donation"
-
-#: view_users_index_2
-msgid " angemeldete Benutzer."
-msgstr " registered users."
-
-#: view_home_home_22
-msgid " dich an, oder "
-msgstr "in, or "
-
-#: view_metapackages_rdepends_1
-msgid " direkt und indirekt enthaltene Bündel und Pakete"
-msgstr " directly an indirectly contained bundles and packages"
-
-#: view_packages_rdepends_1
-msgid " direkt und indirekt enthaltene Pakete"
-msgstr " directly and indirectly contained packages"
-
-#: view_home_icons_19
-msgid " externer Link"
-msgstr " external link"
-
-#: view_home_derivatives_39
-msgid " für ältere PCs. Sie baut auf einer LXDE Oberfläche auf."
-msgstr " for older PCs. It is based on the LXDE-GUI."
-
-#: view_home_news_8
-msgid " gesammelt."
-msgstr "."
-
-#: view_home_derivatives_16
-msgid " ist Ubuntu mit dem KDE-Desktop.	"
-msgstr " is Ubuntu with the KDE-Dekstop"
-
-#: view_home_derivatives_32
-msgid " ist ein Ubuntu-Derivat komplett aus freier Software. Nur für erfahrene Nutzer geeignet. Sollte mit der Gobuntu-CD installiert werden, damit es auch wirklich nur freie Software ist. Nachinstallationen mit Communtu möglich, sinnvollerweise sollten dann im Nutzerprofil \"freie Software\" angewählt werden. Dies Derivate ist in der Version 8.04 erhältlich und wird nicht weiterentwickelt."
-msgstr " is a Ubuntu derivative consisting only of free software. Suitable only for experienced users. Should only be installed with the Gobuntu-CD so that only free software is provided. A further installation with Communtu is possible, but \"Free software\" should be selected in the user profile. This derivative is available in Ubuntu 8.04 and development is currently discontinued."
-
-#: view_home_derivatives_18
-msgid " ist eine Ubuntu-Abspaltung mit eigener User-Community, die sich vor allem Benutzerfreundlichkeit auf die Fahnen schreibt. Linux Mint ähnelt Ubuntu sehr, hat aber viele Codes, z.B. für DVDs und MP3s, schon vorinstalliert. Diese Codecs gibt es allerdings auch bei Communtu, unter Unterhaltungsmedien. "
-msgstr " is a Ubuntu spin-off with its own user community which has dedicated itself to usability. Linux Mint is quite similar to Ubuntu but has more codecs, like to watch DVDs or listen to MP3s, pre-installed. Those codecs are available via Communtu, listet at \"Sound & Video\"."
-
-#: view_metapackages_immediate_conflicts_1
-msgid " ist in Konflikt mit "
-msgstr " conflicts with"
-
-#: view_user_profiles__installation_29
-msgid " konfigurieren. 		"
-msgstr " for the Konqueror and Opera browsers."
-
-#: view_user_profiles__profile_rating_2
-msgid " lässt sich ein Bereich ein- oder ausklappen."
-msgstr " you can open or close a section to make a detailed selection."
-
-#: view_metapackages_finish_migrate_2
-msgid " migriert."
-msgstr "."
-
-#: view_metapackages_finish_migrate_1
-msgid " nach "
-msgstr " to"
-
-#: view_repositories_migrate_2
-msgid " nach Distribution"
-msgstr " to distribution"
-
-#: view_home_home_3
-msgid " steht für ein menschliches Linux, das einfach zu benutzen ist. Aber um Ubuntu wirklich gut nutzen zu können, muss man ganz schön viele Programme nachinstallieren, und es ist oft schwer, da den Überblick zu behalten. Bei Communtu gibst du nur an, welche Aufgaben du mit deinem Computer erledigen willst, und Communtu schlägt dir eine ganze Reihe von Programmen vor, die automatisch installiert werden können."
-msgstr " stands for a human Linux that is easy to use. In order to use Ubuntu effectively, a whole bunch of programs have to be installed. It is not always easy to keep an overview. With Communtu you only specify for which purposes you want to use your computer and Communtu suggests a bunch of programs to you which will be installed automatically."
-
-#: view_home_derivatives_12
-msgid " stellt Multimedia-Paketquellen bereit, die aus rechtlichen Gründen nicht von Ubuntu selbst angeboten wird. Medibuntu wird bei Communtu mit berücksichtigt (z.B. bei Audio und Film)."
-msgstr " provides multimedia package-sources. Because of legal reasons they cannot be offered by Ubuntu. Medibuntu is supported by Communtu (e. g. for audio or films)."
-
-#: view_home_home_16
-msgid " über das Projekt und über die Mitwirkenden im "
-msgstr " about this project and its participants in the "
-
-#: controller_messages_0
-msgid ""
-"Ursprüngliche Nachricht von %s am %s  \n"
-"  \n"
-msgstr "Original message by %s from %s \n"
-
-#: controller_suggestion_10
-msgid "# Bündel: "
-msgstr "# bundle:"
-
-#: view_packages__packagelist_1
-msgid "&nbsp;&nbsp;Nur&nbsp;Programme:"
-msgstr "&nbsp;&nbsp;Programs&nbsp;only:"
-
-#: view_packages__packagelist_2
-msgid "&nbsp;&nbsp;Suche:"
-msgstr "&nbsp;&nbsp;Search:"
-
-#: view_users_show_3
-msgid "(Monat/Jahr)"
-msgstr "(month/year)"
-
-#: view_user_mailer_activation_0
-msgid ", dein Benutzerkonto wurde aktiviert.  Folge nun dem Link:"
-msgstr ", your account has been activated. Please follow this link:"
-
-#: view_user_mailer_reset_password_0
-msgid ", du hast ein neues Passwort erhalten."
-msgstr ", you have received a new password."
-
-#: view_user_mailer_forgot_password_0
-msgid ", um ein neues Passwort zu erhalten, folge dem Link:"
-msgstr ", to receive a new password, please folloe the link:"
-
-#: view_home_home_20
-msgid ", um einen neuen Benutzer anzulegen, oder "
-msgstr " to create a new user or"
-
-#: view_home_derivatives_4
-msgid ", und viele Ubuntu-Nutzer fragen sich,  ob sie statt Ubuntu lieber ein Derivat benutzen sollten. Die Antwort ist: meistens fährt man mit dem Standard-Ubuntu ganz gut, denn Communtu erlaubt, die Derivate auf einfache Weise nachzuinstallieren.  Allerdings ist das nicht bei allen Derivaten gleich sinnvoll."
-msgstr " and many Ubuntu-users may ask themselves if they should use a derivative instead of Ubuntu. The answer is: normally the standard version of Ubuntu completely sufficiant because with Communtu it is quite easy to install a derivaitve. However, this is not always a wise decision."
-
-#: view_home_derivatives_31
-msgid ". Aufgrund der notwendigen Treiberinstallation sollte Linux MCE direkt installiert werden, Communtu kann dann aber für die Installation weiterer Software genutzt werden."
-msgstr ". Because of the necessary installation of drivers, Linux MCE should be installed directly. However, Communtu can be used to install additional software."
-
-#: view_packages_show_9
-msgid "/5 Sterne&nbsp;&nbsp; "
-msgstr "/5 stars&nbsp;&nbsp; "
-
-#: view_home_impressum_5
-msgid "28203 Bremen"
-msgstr "28203 BremenGermany"
-
-#: view_home_home_13
-msgid "<b>Aktuelles</b> Hinweise auf Veranstaltungen zu Communtu, Communtu-Blog ..."
-msgstr "<b>News</b> Reference to events about Communtu, the Communtu-blog ..."
-
-#: view_home_home_11
-msgid "<b>Benutzer verwalten</b> Hier kannst du als Admin die Rollen der Benutzer ändern. Vorsicht walten lassen!"
-msgstr "<b>Administrate users</b> As an administrator you can change the role of the users. Act with caution!"
-
-#: view_home_about_12
-msgid "<b>Bündel verwalten</b> auf der linken Seitenleiste gibt dir einen Überblick über die verfügbaren Bündel. Schließlich gibt es unter <b>Ubuntu-Versionen</b> eine Übersicht über die im System verfügbaren Ubuntu-Versionen (Distributionen)."
-msgstr "<b>Administrate bundles</b> on the left side offers an overview about the available bundles. At last, an overview about the available Ubunt versions (distributions) can be found at <b>Ubuntu versions</b>."
-
-#: view_home_home_6
-msgid "<b>Installation</b> bietet dir eine Zusammenstellung (Bündelung) von Programmen für die Installation auf deinem Computer an, entsprechend deinen Angaben, für welche Aufgaben du deinen Ubuntu-PC benutzen willst."
-msgstr "<b>Installation</b> offers you a summary (bundling) of programs for the installation on your computer, according to your instructions on how you want to use your Ubuntu-PC."
-
-#: view_home_home_12
-msgid "<b>Kategorien verwalten</b> Hier kannst du als Admin neue Kategorien erstellen oder die Struktur des Kategorienbaums ändern. Vorsicht walten lassen!"
-msgstr "<b>Administrate categories</b> As an administrator you can create new categories or change the structure of a category-tree here. Act with caution!"
-
-#: view_home_home_8
-msgid "<b>Programme suchen</b> Hier kannst du nach einzelnen Ubuntu-Programmen (Paketen) suchen."
-msgstr "<b>Search program</b> Here you can search for single Ubuntu-programs (packages)."
-
-#: view_home_home_9
-msgid "<b>Ubuntu-Derivate</b> bietet eine Übersicht über Kubuntu, Xubuntu, Medibuntu und wie sie alle heißen ..."
-msgstr "<b>Ubuntu derivatives</b> is a small overview about Kubuntu, Xubuntu, Medibuntu, etc."
-
-#: view_home_home_10
-msgid "<b>Ubuntu-Versionen</b> Übersicht über die im System verfügbaren Ubuntu-Versionen (Distributionen)."
-msgstr "<b>Ubuntu-releases</b> Overview about the available Ubuntu-releases (distributions)."
-
-#: view_user_profiles__installation_13
-msgid "<b>Zwei Schritte</b> sind zu tun (Bei einem Versionswechsel muss der erste Schritt erneut ausgeführt werden, da die Communtu Quellen durch das Upgrade deaktiviert wurden.):"
-msgstr "<b>Two simple steps</b> have to be done (when chaning the version, the first step has to be done twice, because the Communtu-sources will be deactivated by the upgrade.):"
-
-#: helper_distributions_11
-msgid "<br />Distribution "
-msgstr "<br />distribution"
-
-#: model_package_6
-msgid "<br> hat nicht das richtige Format"
-msgstr "<br> has not the right format"
 
 #: controller_metapackages_13
 msgid "<option value='0'>Löschen</option>"
@@ -412,1237 +225,73 @@ msgstr "<option value='1'>Migrate</option>"
 msgid "<option value='2'>Veröffentlichen<option/>"
 msgstr "<option value='2'>Publish<option/>"
 
-#: view_metapackages__metalist_20
-msgid "<option>0 Bündel ausgewählt</option>"
-msgstr "<option>0 bundles selected</option>"
-
-#: view_home_impressum_2
-msgid "AG Communtu"
-msgstr "AG Communtu"
-
-#: view_layouts_application_9
-msgid "Abmelden"
-msgstr "Log out"
-
-#: view_home_mail_4
-msgid "Abschicken"
-msgstr "Send"
-
-#: view_user_profiles__profile_rating_3
-msgid "Achtung! Zum Schluss auf \"Speichern\" klicken."
-msgstr "Attention! When finished, don't forget to click on \"Save\"."
-
-#: view_home_derivatives_19
-msgid "Achtung! bei Communtu erst in Kürze verfügbar."
-msgstr "Attention! Will be available soon at Communtu."
-
-#: view_user_profiles__installation_19
-msgid "Achtung: nach dem Anklicken dauert es eine gewisse Zeit, bis die Datei bereitgestellt wird. 		"
-msgstr "Attention: after clicking, it will take a moment until the file is provided."
-
-#: view_user_profiles__profile_data_2
-msgid "Achtung: zum Schluss unten auf einen der 'Speichern'-Knöpfe klicken!"
-msgstr "Attention: when finished, don't forget to click on one of the \"Save\"-buttons!"
-
-#: controller_admins_0
-msgid "Administratorbereich"
-msgstr "admninistration section"
-
-#: view_users_index_5
-msgid "Aktiviert?"
-msgstr "Activated?"
-
-#: controller_accounts_2
-msgid "Aktivierungs-Code nicht gefunden. Bitte versuche, ein neues Benutzerkonto anzulegen."
-msgstr "Could'nt find the activation code. Please try to create a new account."
-
-#: view_admins_load_packages_1
-msgid "Aktualisierte Pakete: "
-msgstr "Updated package:"
-
-#: view_users__sidebar_10
-msgid "Aktuelles"
-msgstr "News"
-
-#: view_users_index_0
-msgid "Alle Benutzer"
-msgstr "All users"
-
-#: view_metapackages_finish_migrate_0
-msgid "Alle Bündel wurden von "
-msgstr "All bundles were migrated from"
-
-#: view_home_derivatives_5
-msgid "Alle Derivate können unter der "
-msgstr "Each derivative under "
-
-#: view_admins_test_all_1
-msgid "Alle Repositories wurden erreicht."
-msgstr "Every repositorie could be reached."
-
-#: view_debs_index_3
-msgid "Alle fehlgeschlagenen debs erzeugen <b>Achtung: nur unter admin.communtu.de ausführen!</b>"
-msgstr "Create every failed deb <b>Warning: only do this at admin.communtu.de!</b>"
-
-#: model_user_meta_tabz_1
-msgid "Alle veröffentlichten Bündel"
-msgstr "All published bundles"
-
-#: view_home_cancel_2
-msgid "Allgemeinbildung e.V."
-msgstr "Allgemeinbildung e.V."
-
-#: view_home_beteiligung_2
-msgid "Als erstes würden wir uns natürlich freuen, wenn Du Communtu nutzt, um eine Installation durchzuführen.  In unseren Bündeln gibt es schon ein paar ganz gut auf bestimmte Eigenschaften zugeschnittende Installationsvorschläge. Vielleicht ist ja etwas für Dich dabei. Weiter gibt es dort auch die Möglichkeit die eigene Paketliste hochzuladen, damit diese auch anderen zur Verfügung gestellt wird. Dies ist die einfachste Form ein Bündel anzulegen. Du musst diese Paketliste aber auch nicht veröffentlichen. Du kannst Communtu auch einfach nur als Speicherort für Deine Paketliste gebrauchen und dann auf anderen Rechnern dieses Bündel installieren."
-msgstr "We would be very delighted if you would use Communtu to carry out an installation. We already have many bundles which are set up to specific characteristics. Maybe one of the bundles is suitable for you. Furthermore you can upload your own package-list to share it with other users. This is the most simple way to create a bundle, but you don't have to publish it. Of course you can use Communtu only as a saving place for your package list so you can install it on an other computer."
-
-#: view_accounts_edit_1
-msgid "Altes Passwort"
-msgstr "old password"
-
-#: view_sent_index_1
-msgid "An"
-msgstr "To"
-
-#: model_mailer_1
-msgid "Anfrage per Formular"
-msgstr "Query via formular"
-
-#: view_metapackages_new_5
-msgid "Anlegen"
-msgstr "Create"
-
-#: view_sessions_new_0
-msgid "Anmelden mit Benutzernamen und Passwort:"
-msgstr "Log in with username and password:"
-
-#: view_sessions_new_4
-msgid "Anmelden"
-msgstr "Log in"
-
-#: view_layouts_application_11
-msgid "Anonym nutzen"
-msgstr "Anonymous access"
-
-#: view_messages_show_3
-msgid "Antworten"
-msgstr "Reply"
-
-#: view_home_beteiligung_1
-msgid "Anwenden der Plattform"
-msgstr "using the platform"
-
-#: view_categories_index_4
-msgid "Anzeigen"
-msgstr "Show"
-
-#: view_home_news_12
-msgid "Archiv"
-msgstr "archive"
-
-#: view_user_profiles__installation_5
-msgid "Auf dem Desktop (oder im Dateibrowser): Rechtsklick mit der Maus, Eigenschaften, und dann ein Häkchen bei \"Ausführen\" setzen."
-msgstr "On your desktop (or your filemanager): make a right-click on the file, choose Properties and place a tick in front of \"Execute\"."
-
-#: view_user_profiles__profile_data_1
-msgid "Auf dieser Seite kannst du in vier einfachen Schritten deine Communtu-Nachinstallation auswählen - fertig.  Wenn gewünscht, ist aber auch eine detailliertere Auswahl möglich. "
-msgstr "On this page you can prepare the post-installation with Communtu in four easy steps. If desired, you can choose the bundles in a detaild overview."
-
-#: view_user_profiles__installation_2
-msgid "Aufgrund deiner Auswahl werden jetzt Programme auf deinem Computer installiert. Folgende Schritte sind dafür zu tun:"
-msgstr "Because of your choice the programs will now be installed on your computer. Please follow these steps:"
-
-#: view_home_auth_error_0
-msgid "Authentifizierungs-Fehler"
-msgstr "Error with authentication"
-
-#: view_home_impressum_4
-msgid "Bauernstr. 2"
-msgstr "Bauernstr. 2"
-
-#: view_repositories_index_2
-msgid "Bearbeiten"
-msgstr "edit"
-
-#: controller_suggestion_3
-msgid "Bei der Erstellung des Pakets ist ein Fehler aufgetreten."
-msgstr "While creating the package an error occured."
-
-#: controller_metapackages_8
-msgid "Bei Änderungen muss die Version größer werden<br>"
-msgstr "With each update the version has to be increased<br>"
-
-#: controller_accounts_4
-msgid "Bein Benutzerkonto wurde bereits aktiviert. Du kannst dich nun anmelden."
-msgstr "Your account has already been activated. You can now log in."
-
-#: view_packages_show_17
-msgid "Beinhaltet folgende Pakete (\"depends\" und \"recommends\"):"
-msgstr "Contains these packages (\"depends\" and \"recommends\"):"
-
-#: view_packages_show_8
-msgid "Beliebtheit:"
-msgstr "Popularity:"
-
-#: view_home_mail_0
-msgid "Benachrichtigung bei Fehlerbehebung"
-msgstr "Notification in bugfixing"
-
-#: controller_users_12
-msgid "Benutzer aktiviert"
-msgstr "User activated"
-
-#: view_users_show_0
-msgid "Benutzer anzeigen"
-msgstr "show user"
-
-#: view_sessions_new_3
-msgid "Benutzer auf diesem Computer dauerhaft anmelden"
-msgstr "Log this user permanently in on this computer"
-
-#: controller_users_8
-msgid "Benutzer deaktiviert"
-msgstr "user deactivated"
-
-#: controller_sent_1
-msgid "Benutzer existiert nicht"
-msgstr "user does not exist"
-
-#: controller_users_10
-msgid "Benutzer gelöscht"
-msgstr "User deleted"
-
-#: view_users__sidebar_5
-msgid "Benutzer verwalten"
-msgstr "Administrate users"
-
-#: view_user_profiles_new_1
-msgid "Benutzer"
-msgstr "user"
-
-#: controller_users_5
-msgid "Benutzerdaten aktualisiert"
-msgstr "user data updated"
-
-#: controller_users_6
-msgid "Benutzerdaten übernommen und Benutzerkonto dauerhaft gemacht."
-msgstr "Userdata changed and account made permanent."
-
-#: view_users_new_3
-msgid "Benutzername"
-msgstr "Username"
-
-#: view_users_edit_3
-msgid "Benutzername:"
-msgstr "Username:"
-
-#: view_users_edit_0
-msgid "Benuzterprofil bearbeiten"
-msgstr "edit profile"
-
-#: view_packages_edit_10
-msgid "Beschreibung des Pakets"
-msgstr "Package description"
-
-#: view_distributions_edit_4
-msgid "Beschreibung"
-msgstr "description"
-
-#: view_cart_update_3
-msgid "Beschreibung:"
-msgstr "Description:"
-
-#: view_home_beteiligung_0
-msgid "Beteiligungsmöglichkeiten"
-msgstr "Ways to participate"
-
-#: view_home_contact_us_2
-msgid "Betreff"
-msgstr "Subject"
-
-#: view_sent_show_0
-msgid "Betreff: "
-msgstr "Subject:"
-
-#: view_metapackages__metalist_10
-msgid "Bewertung"
-msgstr "Rating"
-
-#: view_derivatives_index_4
-msgid "Bist du sicher?"
-msgstr "Are you sure?"
-
-#: view_metapackages_edit_2
-msgid "Bitte Versionen => 1.0 nur für ausgereifte Bündel verwenden."
-msgstr "Pleas use versions => 1.0 only for stable bundles."
-
-#: view_home_mail_1
-msgid "Bitte benachrichtigt mich unter folgender E-Mail über die Fehlerbehebung."
-msgstr "Please contact me at the following e-mail-address concerning the bugfixing."
-
-#: model_message_0
-msgid "Bitte einen Betreff angeben"
-msgstr "Please enter a subject"
-
-#: view_cart__metacart_3
-msgid "Bündel aus Paketliste"
-msgstr "Bundle from packages-list"
-
-#: view_cart_new_from_list_0
-msgid "Bündel aus einer Paketliste erstellen"
-msgstr "Create bundle from a packages-list"
-
-#: view_metapackages_show_0
-msgid "Bündel erstellt von "
-msgstr "Bundle created by"
-
-#: controller_metapackages_4
-msgid "Bündel gespeichert. Es dauert ein paar Minuten, bis es auch als Metapaket verfügbar ist. "
-msgstr "Bundle saved. It could take a couple of minutes until it is available as a metapackage."
-
-#: controller_metapackages_10
-msgid "Bündel geändert. Es dauert ein paar Minuten, bis die Änderungen im zugehörigen Metapaket verfügbar sind. "
-msgstr "Bundle changed. It could take a couple of minutes until the changes are available in the corresponding metapackage."
-
-#: view_users__sidebar_1
-msgid "Bündel verwalten"
-msgstr "Administrate bundles"
-
-#: view_cart_update_4
-msgid "Bündel veröffentlichen"
-msgstr "Publish bundle"
-
-#: view_cart_update_1
-msgid "Bündel überschreiben, falls es existiert?"
-msgstr "Overwrite bundle, if it already exists?"
-
-#: controller_metapackages_0
-msgid "Bündel"
-msgstr "bundle"
-
-#: controller_cart_0
-msgid "Bündel-Editor"
-msgstr "bundle-editor"
-
-#: view_cart_update_0
-msgid "Bündel-Informationen anpassen"
-msgstr "edit bundle-information"
-
-#: model_package_1
-msgid "Commercial"
-msgstr "Commercial"
-
-#: view_home_cancel_0
-msgid "Communtu "
-msgstr "Communtu"
-
-#: view_home_about_0
-msgid "Communtu - gemeinsam Ubuntu-Linux an individuelle Bedürfnisse anpassen"
-msgstr "Communtu - match Ubuntu to your personal needs"
-
-#: view_layouts_application_1
-msgid "Communtu passt Dein Linux-Ubuntu-System an Deine individuellen Bedürfnisse an."
-msgstr "Communtu customizes your Ubuntu system to your individual needs."
-
-#: view_home_derivatives_1
-msgid "Communtu setzt auf einer Ubuntu-Basisinstallation auf. Es gibt nun eine ganze Reihe von "
-msgstr "Communtu is based on a standard-installation of Ubuntu. There are many different "
-
-#: view_layouts_application_2
-msgid "Communtu"
-msgstr "Communtu"
-
-#: view_layouts_application_0
-msgid "Communtu, Ubuntu, Installation, Installationshilfe"
-msgstr "Communtu, Ubuntu, installation, installation help"
-
-#: controller_suggestion_8
-msgid "Communtu-Nachinstallation fuer Benutzer "
-msgstr "Communtu post-installation for users"
-
-#: view_user_profiles__installation_0
-msgid "Communtu-Nachinstallation"
-msgstr "Communtu post-installation"
-
-#: view_home_beteiligung_13
-msgid "Da wir viele Ideen für die Weiterentwicklung der Plattform haben, benötigen wir noch eine/n ProgrammiererIn. Idealerweise hast Du schon Erfahrungen in Ruby on Rails sammeln können."
-msgstr "Since we have many ideas for the platform's further development, we need programmers. Ideally you already have some experience with Ruby on Rails."
-
-#: view_home_about_8
-msgid "Danach kannst du mit \"Speichern und feiner Auswählen\" noch einen detaillierteren Überblick über die installierten Bündel und Programme bekommen und die Auswahl auch noch verändern. Falls du dazu keine Lust oder Zeit hast, klicke einfach auf \"Speichern\". Dies führt dich zur Installations-Seite. Dort findest du einen Installationsknopf, mit dem die Communtu-Nachinstallation gestartet werden kann. Es dauert etwas, bis die Programme automatisch aus dem Internet geladen und installiert werden. Fertig ist der vielseitig einsetzbare Ubuntu-PC!"
-msgstr "After a click on \"Save and choose packages\" you can get a detailed overview of the installed bundles and programs and the possibility to change the pre-made selections. In the case you don't have the time or energy to choose the packages in detail, just click on \"Save\". This leads you to the installation page. There you will find a button with which the installation process starts. This takes some time because the applications have to be downloaded from the internet and installed on your computer. When finished, you have a all-round Ubuntu-PC!"
-
-#: controller_users_1
-msgid "Danke für die Registrierung bei Communtu! Du kannst dich jetzt anmelden."
-msgstr "Thank you for registering at Communtu! You can now log in."
-
-#: controller_accounts_7
-msgid "Das neue Passwort stimmt nicht mit der Bestätigung überein."
-msgstr "The new password does not comply with the verification."
-
-#: controller_home_3
-msgid "Das sieht nicht nach einer Liste von Ubuntu-Paketen aus... <br />Die Paketliste muss einen Paketnamen pro Zeile enthalten"
-msgstr "This does not appear to be a list with Ubuntu-packages... <br />The packagelist must contain one packagename per line"
-
-#: view_cart_new_from_list_4
-msgid "Datei, die die Paketliste enthält, auswählen:"
-msgstr "Choose the file, which contains the package-list:"
-
-#: controller_debs_2
-msgid "Deb aktualisiert."
-msgstr "Deb updated."
-
-#: controller_debs_1
-msgid "Deb erzeugt."
-msgstr "Deb created."
-
-#: controller_debs_0
-msgid "Debian-Pakete"
-msgstr "Debian-packages"
-
-#: view_packages_show_10
-msgid "Debian-Section:"
-msgstr "Debian section"
-
-#: controller_accounts_1
-msgid "Dein Benutzerkonto wurde aktiviert! Du kannst dich nun einloggen."
-msgstr "Your account has been activated. You can now log in."
-
-#: model_mailer_2
-msgid "Dein Benutzerkonto wurde aktiviert."
-msgstr "Your account has been activated."
-
-#: view_user_mailer_signup_notification_0
-msgid "Dein Benutzerkonto wurde bei www.communtu.de angelegt.     Benutzername: "
-msgstr "Your account at www.communtu.de has been created.     Username:"
-
-#: controller_sessions_7
-msgid "Dein Benutzerkonto wurde deaktiviert oder gelöscht."
-msgstr "Your account has been deactivated or deleted."
-
-#: controller_sessions_6
-msgid "Dein Benutzerkonto wurde noch nicht aktiviert. Der Aktivierungscode wurde dir per Email zugeschickt."
-msgstr "Your account has not been activated yet. The activation code has been sent to you via e-mail."
-
-#: controller_sessions_5
-msgid "Dein Benutzername oder Passwort ist falsch. Bitte ggf. unten auf \"Registrieren\" klicken."
-msgstr "Your username or password is wrong. If applicable click on \"Register\" below."
-
-#: model_mailer_4
-msgid "Dein Passwort wurde zurückgesetzt."
-msgstr "Your password has been restored."
-
-#: controller_accounts_8
-msgid "Dein altes Passwort war inkorrekt."
-msgstr "Your old password was incorrect."
-
-#: controller_sessions_3
-msgid "Deine hier registrierte Distribution wurde auf {{dist_old}} geändert, weil deine alte Distribution von Ubuntu (und daher auch von Communtu) nicht mehr unterstützt wird. Wir empfehlen für deinen Computer ein <a href='http://wiki.ubuntuusers.de/Upgrade'>Upgrade</a> auf {{dist_new}}."
-msgstr "Your registered distribution was changed to {{dist_old}} because your old distribution is not supported by Ubuntu (and therefore by Communtu) anymore. We suggest an upgrade to {{dist_new}}."
-
-#: controller_sent_0
-msgid "Der Betreff darf nicht leer sein."
-msgstr "Subject must not be empty."
-
-#: view_home_news_19
-msgid "Der Blog von Communtu"
-msgstr "The Communtu blog"
-
-#: controller_derivatives_2
-msgid "Derivat aktualisiert."
-msgstr "Derivative updated."
-
-#: view_derivatives_index_0
-msgid "Derivate auflisten"
-msgstr "show derivatives"
-
-#: view_users__sidebar_7
-msgid "Derivate verwalten"
-msgstr "Administrate derivatives"
-
-#: view_home_derivatives_24
-msgid "Derivate, die mit der Derivats-eigenen Installations-CD installiert werden sollten:"
-msgstr "Derivatives, which should be installed with the derivative installation-CD:"
-
-#: view_derivatives_edit_0
-msgid "Derivative bearbeiten"
-msgstr "edit derivative"
-
-#: controller_derivatives_1
-msgid "Derivative erzeugt."
-msgstr "Derivative created."
-
-#: model_user_profile_tabz_1
-msgid "Detailauswahl"
-msgstr "Detailed choice"
-
-#: view_derivatives_show_2
-msgid "Dialog-Programm:"
-msgstr "dialog-program:"
+#: controller_metapackages_2
+msgid "Dieser Bündel-Name ist bereits vergeben!"
+msgstr "The bundle-name is already in use!"
 
 #: controller_metapackages_3
 msgid "Die Beschreibung darf nicht leer sein"
 msgstr "Description must not be empty"
 
-#: controller_metapackages_9
-msgid "Die Beschreibung darf nicht leer sein<br>"
-msgstr "The description must not be empty<br>"
-
-#: view_user_profiles__installation_27
-msgid "Die Browser Konqueror und Opera bitte erst für "
-msgstr "Please configure "
-
-#: view_user_profiles__installation_8
-msgid "Die Datei ist ein Skript, das automatisch die gewünschten Programme installiert, inklusive Download aus dem Internet."
-msgstr "The file is a script that automatically installs the preferred programs, including the download from the internet."
-
-#: view_home_auth_error_1
-msgid "Die Daten, die du an Communtu geschickt hast, konnten nicht korrekt authentifiziert werden. Bitte versuche, dich noch einmal anzumelden bzw. das entsprechende Formular noch einmal auszufüllen."
-msgstr "The file you sent to Communtu couldn't be authenticated. Please try again with logging in again or filling in the form again."
-
-#: controller_home_1
-msgid "Die E-Mail wurde an uns gesendet. Vielen Dank für Dein Feedback."
-msgstr "The e-mail has been sent to us. Many thanks for your feedback."
-
-#: view_cart_new_from_list_2
-msgid "Die Liste der auf deinem Computer installierten Pakete kannst du zum Beispiel mit"
-msgstr "A list of all programs installed on your computer can be found with"
-
-#: view_home_home_5
-msgid "Die Seitenleiste links bietet folgende Möglichkeiten:"
-msgstr "The menu on the left offers the following possibilities:"
-
-#: view_admins_sync_package_8
-msgid "Die folgenden Pakete konnten nicht in der Datenbank gespeichert werden:"
-msgstr "The following packages couldn't be saved in the database:"
-
-#: controller_application_0
-msgid "Diese Funktion ist für anonyme Nutzer nicht verfügbar."
-msgstr "This function is not available for anonymous users."
-
-#: view_home_news_5
-msgid "Diese Liste ist für allgemeine Ankündigungen aus den Communtu Team für die Nutzer gedacht.  Es wir hier ungefähr einmal die Woche eine E-Mail über den Verteiler geschickt.   Die Nachrichten werden in einem "
-msgstr "This list is intended for general announcements from the Communtu team to the users. The frequency is a little higher than once a week. Posts will be collected in an"
-
-#: view_home_news_11
-msgid "Diese Liste ist für eine Diskussion rund um die Plattform gedacht.  Hier kommt etwas mehr als einmal die Woche eine E-Mail über den Verteiler.   Die Nachrichten werden in einem "
-msgstr "This list is intended for discussion about the platform. The frequency is a little higher than once a week. Posts will be collected in an "
-
-#: controller_metapackages_2
-msgid "Dieser Bündel-Name ist bereits vergeben!"
-msgstr "The bundle-name is already in use!"
+#: controller_metapackages_4
+msgid "Bündel gespeichert. Es dauert ein paar Minuten, bis es auch als Metapaket verfügbar ist. "
+msgstr "Bundle saved. It could take a couple of minutes until it is available as a metapackage."
 
 #: controller_metapackages_6
 msgid "Dieser Bündel-Name ist bereits vergeben<br>"
 msgstr "The bundle-name is already in use<br>"
 
-#: view_user_profiles__installation_26
-msgid "Dieser Schritt muss neu ausgeführt werden, weil du die Einstellungen geändert hast. 		     "
-msgstr "This step has to be carried out again because you changed the settings."
-
-#: view_user_profiles__installation_20
-msgid "Dieser Schritt wurde bereits schon einmal ausgeführt. 		"
-msgstr "This step has already been carried out."
-
-#: view_metapackages_show_20
-msgid "Direkt und indirekt enthaltene Pakete"
-msgstr "direct and indirect covered packages"
-
-#: controller_distributions_2
-msgid "Distribution aktualisiert."
-msgstr "Distribution updated."
-
-#: view_distributions_edit_0
-msgid "Distribution bearbeiten"
-msgstr "edit distribution"
-
-#: controller_distributions_1
-msgid "Distribution erzeugt."
-msgstr "Distribution created."
-
-#: view_packages_new_1
-msgid "Distribution"
-msgstr "Distribution"
-
-#: view_repositories_edit_1
-msgid "Distribution:"
-msgstr "Distribution:"
-
-#: view_user_profiles__installation_6
-msgid "Doppelklick auf die Datei (zum Ausführen)"
-msgstr "Double-click on the file to execute it."
-
-#: view_home_about_7
-msgid "Dort kannst du deine Einstellungen bearbeiten. Unter den Grunddaten musst du zunächst eintragen, welche Ubuntu-Version du auf deinem PC installiert hast, außerdem, ob du unfreie Programme nutzen willst oder nicht. Zudem wählst du aus, für welche Aufgaben du deinen Ubuntu-PC nutzen willst. "
-msgstr "There you can edit your settings. First, you have to specify the basic data, like which Ubuntu version you want to install on your computer. Additionally you have to specify if you want to use free or non-free software. Finally you have to indicate for which purposes you want to use your computer."
-
-#: controller_sessions_1
-msgid "Du bist bereits angemeldet."
-msgstr "You are already logged in."
-
-#: controller_categories_1
-msgid "Du bist kein Administrator!"
-msgstr "You are not an administrator!"
-
-#: view_metapackages_new_6
-msgid "Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden."
-msgstr "You are currently not logged in. Please click on \"log in\" above."
-
-#: view_home_beteiligung_4
-msgid "Du denkst, dass Du schon vieles zu Open Source Programmen weisst"
-msgstr "You think, you now much about open source programs"
-
-#: model_mailer_3
-msgid "Du hast angefordert, dein Kennwort zurückzusetzen"
-msgstr "You asked for resetting your password"
-
-#: lib_system_1
-msgid "Du hast keine Berechtigung für diese Aktion."
-msgstr "You are not privileged to do this."
-
-#: view_home_about_14
-msgid "Du hast schon eine lauffähige Ubuntu-Installation und möchtest bestimmte Funktionen hinzufügen? Auch dafür kannst du Communtu benutzen. Du kannst unter <b>Bündel verwalten</b> einzelne Bündel installieren, und unter <b>Programme suchen</b> auch einzelne Programme."
-msgstr "You already have a useful Ubuntu-installation and want to add some functions? You can also use Communtu for this. You can install single bundles at <b>Administrate bundle</b> and at <b>Search programs</b>, even single programs."
-
-#: view_home_impressum_12
-msgid "Du kannst Dich auch "
-msgstr "You can "
-
-#: lib_system_0
-msgid "Du musst eingeloggt sein, um dieses Feature zu benutzen."
-msgstr "In order to use this feature you have to be logged in."
-
-#: controller_sessions_4
-msgid "Du wurdest abgemeldet."
-msgstr "You have been logged in."
-
-#: controller_users_3
-msgid "Du wurdest als Nutzer {{anonymous_user}} mit Kennwort {{anonymous_user}} eingeloggt. Bitte ggf. oben rechts auf Nutzer {{anonymous_user}} klicken und in ein dauerhaftes Nutzerkonto umwandeln; ansonsten wird das Konto nach einem Tag wieder gelöscht."
-msgstr "You have been logged in as {{anonymous_user}} with the password {{anonymous_user}}. If applicable click on the username {{anonymous_user}} in the above-right corner to change the account into an permanent account, otherwise the account will be deleted after one day."
-
-#: view_users_new_4
-msgid "E-Mail"
-msgstr "e-mail"
-
-#: view_users_show_6
-msgid "E-Mail: "
-msgstr "E-Mail:"
-
-#: view_home_derivatives_8
-msgid "Ebenso kannst du dort nachgucken, aus welchen Paketen ein Derivat besteht."
-msgstr "You can also take a look of which packages a derivative consists."
-
-#: view_metapackages_show_15
-msgid "Editieren"
-msgstr "Edit"
-
-#: controller_passwords_1
-msgid "Ein Link zum Ändern des Passworts wurde an deine Email-Adresse geschickt."
-msgstr "A link for chaning the password has been sent to your e-mail-address."
-
-#: view_home_success_1
-msgid "Eine Spendenbescheinigung kann ausgestellt werden. Dazu schicke uns bitte eine E-Mail mit Deiner Adresse an: "
-msgstr "We can issue a donation receipt. Please send an e-mail with your address to: "
-
-#: view_repositories_multinew_0
-msgid "Einlesen"
-msgstr "read"
-
-#: view_home_cancel_1
-msgid "Endweder versuchst Du es noch einmal oder Du nutzt die Möglichkeit per Überweisung"
-msgstr "Either you try a again or you use the possibility via bank transfer"
-
-#: view_cart_new_from_list_5
-msgid "Erstellen"
-msgstr "Create"
-
-#: view_users_show_5
-msgid "Erstellte Bündel: "
-msgstr "Created bundles:"
-
-#: view_debs_index_5
-msgid "Erzeugen"
-msgstr "Create"
-
-#: controller_users_13
-msgid "Es gab ein Problem mit der Aktivierung dieses Benutzers."
-msgstr "A Problem occured while activating this user."
-
-#: controller_users_9
-msgid "Es gab ein Problem mit der Deaktivierung dieses Benutzers."
-msgstr "An error occured while deactivating this user."
-
-#: controller_users_11
-msgid "Es gab ein Problem mit der Löschung."
-msgstr "A problem while deleting a user occured."
-
-#: controller_users_2
-msgid "Es gab ein Problem mit der Registrierung."
-msgstr "An error occured while registering."
-
-#: controller_users_4
-msgid "Es gab ein Problem mit der anonymen Nutzung."
-msgstr "An error occured with the anonymous use."
-
-#: view_home_about_3
-msgid "Es gibt aber auch viele Anwendungen, die erst noch nachinstalliert werden müssen, z.B. in den Bereichen Audio, Video und Grafik, damit dein Computer mit Ubuntu wirklich  benutzbar ist. Communtu macht diese Nachinstallation jetzt noch einfacher und hat zudem spezielle Bereiche für Einsteiger und Windows-Umsteiger."
-msgstr "There are many applications which have to be post-installed, e. g. programs for audio, video and graphics, in order to make the computer really usable  Ubuntu. Communtu helps to make the post-installation more easier and moreover has special sections for beginners and users comming from Windows."
-
-#: view_home_home_14
-msgid "Es gibt auch noch "
-msgstr "There are also "
-
-#: view_home_derivatives_35
-msgid "Es gibt noch weitere Derivate zu denen wir bisher noch keine Installationsempfehlung abgeben können:"
-msgstr "There are several other derivatives for which we cannot give any recommendations for installation:"
-
-#: controller_accounts_6
-msgid "Es ist ein Fehler aufgetreten. Das Passwort wurde nicht geändert."
-msgstr "An error occured. The password has not been changed."
-
-#: controller_home_4
-msgid "Es muss eine Datei mit der Paketliste (ein Paketname pro Zeile) angegeben werden"
-msgstr "A file with the package list (one package name per line) has to be given"
-
 #: controller_metapackages_7
 msgid "Es muss eine Version angegeben werden (z.B. 0.1)<br>"
 msgstr "Specify a version (e. g. 0.1)<br>"
 
-#: view_user_profiles__installation_7
-msgid "Es werden zur Information nochmal die hinzugefügten Quellen und Pakete angezeigt. Zweimal auf \"OK\" drücken."
-msgstr "For your information, the added sources and packages will be shown. Click on \"OK\" twice."
-
-#: view_user_profiles_new_3
-msgid "Expertenlevel"
-msgstr "level of expert"
-
-#: view_cart_update_2
-msgid "Expertenlevel:"
-msgstr "Level of expert:"
-
-#: view_layouts_application_14
-msgid "Feedback an Communtu"
-msgstr "Feedback to Communtu"
-
-#: view_home_beteiligung_6
-msgid "Feedback"
-msgstr "feedback"
-
-#: view_home_contact_us_0
-msgid "Feedbackformular"
-msgstr "Feedback"
-
-#: view_admins_sync_all_1
-msgid "Fehler: Repositories konnten nicht synchronisiert werden"
-msgstr "Error: couldn't synchronise repositories"
-
-#: view_admins_sync_package_1
-msgid "Fehler: Repository konnte nicht synchronisiert werden"
-msgstr "Error: couldn't synchronise repositories"
-
-#: view_users__sidebar_8
-msgid "Fehlgeschlagene debs"
-msgstr "Failed debs"
-
-#: view_debs_index_0
-msgid "Fehlgeschlagene oder laufende Deb-Generierungen"
-msgstr "Failed or running deb-generation"
-
-#: view_user_profiles__profile_rating_0
-msgid "Feinauswahl der zu installierenden Programmbündel und Programme"
-msgstr "Detailed choice of the programs and bundles that shall be installed"
-
-#: view_home_derivatives_29
-msgid "Fernsehcomputer"
-msgstr "a computer to watch TV"
-
-#: view_user_profiles_help_0
-msgid "Feststellen der Ubuntu-Version"
-msgstr "Determination of the Ubuntu version"
-
-#: view_metapackages_finish_migrate_3
-msgid "Folgende Pakete konnten jedoch nicht migriert werden:"
-msgstr "The following packages could not be migrated:"
-
-#: controller_suggestion_16
-msgid "Folgende Pakete werden installiert"
-msgstr "The following packages will be installed"
-
-#: controller_cart_2
-msgid "Folgende Pakete wurden nicht gefunden: "
-msgstr "The following packages couldn't be found:"
-
-#: controller_suggestion_12
-msgid "Folgende Paketquellen werden hinzugefügt"
-msgstr "The following repositories will be added"
-
-#: view_admins_test_all_0
-msgid "Folgende Repositories konnten nicht gelesen werden:"
-msgstr "The following repositories couldn't be read:"
-
-#: view_my_mailer_mail_1
-msgid "Folgendender Kommentar wurde hinterlassen:"
-msgstr "The following comment was made:"
-
-#: view_repositories_new_4
-msgid "GPG Schlüssel (Optional)"
-msgstr "GPG-key (optional)"
-
-#: view_repositories_edit_5
-msgid "GPG Schlüssel (Optional):"
-msgstr "GPG-key (optional):"
-
-#: view_user_profiles_help_2
-msgid "Gebe dort ein: "
-msgstr "There you enter the following:"
-
-#: view_metapackages__package_list_0
-msgid "Gesamtgröße des Bündels auf der Festplatte:"
-msgstr "Total size of bundle on disk:"
-
-#: view_home_beteiligung_10
-msgid "Grafik"
-msgstr "Graphic"
-
-#: model_user_profile_tabz_0
-msgid "Grunddaten"
-msgstr "Base data"
-
-#: view_my_mailer_mail_0
-msgid "Hallo"
-msgstr "Hello"
-
-#: view_my_mailer_mailerror_0
-msgid "Hallo,  es wurde auf www.communtu.de ein Error gemeldet.  Der Benutzer möchte ganz gern, darüber benachrichtigt werden, wenn der Fehler nicht mehr auftritt."
-msgstr "Hello, an error was reported on www.communtu.de. The user would like to be notified when the error has been fixed."
-
-#: view_home_about_11
-msgid "Hast du gute Erfahrungen mit Programmen gemacht? Dann kannst du thematisch zusammengehörige Programme zu einem Bündel zusammenfassen und ins System eintragen. Dazu wählst du <b>Neues Bündel</b> unterhalb von <b>Bündel-Editor</b> auf der linken Seitenleiste. Du kannst dann Ubuntu-Pakete hinzufügen und mit Klick auf das Disketten-Symbol das Bündel im System abspeichern. Das Bündel soll einen Namen, eine Beschreibung und eine thematische Einordnung erhalten, damit andere Nutzer es auch verwenden können. Wie bei Ordnern und Dateien können Bündel nicht nur Ubuntu-Pakete, sondern auch andere Bündel enthalten. "
-msgstr "Did you make good experience with programs? You can merge thematic programs to a bundle and add this to the system. To do so, you choose <b>new bundle</b> below of <b>bundle-editor</b> on the left side. Then you can add Ubuntu packages to the bundle and, after you have finished, click on the floppy-icon to save the bundle. The bundle needs a name, a description and a thematic classification so that other users can use it too. Just like folders and files the bundle can not only consist of Ubuntu packages but also of other bundles too. "
-
-#: view_admins_show_0
-msgid "Here should be an introduction to the admin area"
-msgstr "Here should be an introduction to the admin area"
-
-#: model_mailer_0
-msgid "Herzlich Willkommen bei Communtu"
-msgstr "Welcome to Communtu"
-
-#: view_home_contact_us_1
-msgid "Hier hast Du die Möglichkeit uns ein Feedback zu senden."
-msgstr "Here you have the possibility to send us feedback."
-
-#: view_users_new_1
-msgid "Hier hast du die Möglichkeit dich zu registrieren."
-msgstr "Here you have the possibility to register yourself."
-
-#: view_user_profiles__profile_data_13
-msgid "Hier kannst du auswählen, welche Lizenzen du zulassen willst"
-msgstr "Here you can choose which licences you want to accept"
-
-#: view_user_profiles__profile_rating_1
-msgid "Hier kannst du deine beabsichtigte Computer-Nutzung noch genauer angeben. Durch Klicken auf "
-msgstr "Here you can choose the use of your computer in detail. With a click on the "
-
-#: view_cart_new_from_list_1
-msgid "Hier kannst du ein Bündel aus einer vorhandenen Paketliste erstellen.  Die Liste muss in Form einter Textdatei vorliegen (plain text),  mit einem Paketnamen pro Zeile."
-msgstr "Here you can create a bundle from an existing package-list. The list must be formated as a plain text-file with only one package-name per line."
-
-#: view_user_profiles__profile_data_9
-msgid "Hier kannst du einstellen, wie sicher bzw. komfortabel deine Installationsquellen sein sollen"
-msgstr "Here you can select how secure or comfortable you sources should be"
-
-#: view_user_profiles__sources_1
-msgid "Hier werden die zu installierenden Programme und Pakete nach den zugehörigen Quellen sortiert aufgelisetet, so dass du auch sehen kannst, weshalb die jeweiligen Quellen hinzugefügt werden."
-msgstr "The soon be installed programs and packages are shown and ordered by the appropriate sources so you can see why some sources will be added."
-
-#: view_user_profiles__installation_30
-msgid "Hinweis: Bitte .deb-Dateien nicht umbenennen."
-msgstr "Advice: please don't rename the .deb-file."
-
-#: view_derivatives_show_3
-msgid "Icon file:"
-msgstr "icon-file:"
-
-#: view_packages_edit_2
-msgid "Icon"
-msgstr "Icon"
-
-#: view_home_icons_0
-msgid "Icons bei Communtu"
-msgstr "icons used in Communtu"
-
-#: view_metapackages_rdepends_0
-msgid "Im Bündel "
-msgstr "In bundle"
-
-#: view_packages_rdepends_0
-msgid "Im Paket "
-msgstr "In the package"
-
-#: view_home_about_17
-msgid "Impressum"
-msgstr "Imprint"
-
-#: view_home_home_17
-msgid "Impressum."
-msgstr "imprint."
-
-#: model_package_12
-msgid "Inhalt von {{file}} entspricht nicht Repository-Syntax"
-msgstr "content of {{file}} does not match with repository-syntax"
-
-#: view_users_index_1
-msgid "Insgesamt haben wir "
-msgstr "We have a total of "
-
-#: model_user_profile_tabz_3
-msgid "Installation durchführen"
-msgstr "Start installation"
-
-#: controller_profiles_0
-msgid "Installation von Bündeln"
-msgstr "Installation of bundles"
-
-#: view_user_profiles__profile_data_0
-msgid "Installation vorbereiten: Grunddaten eingeben"
-msgstr "Preparing the installation: enter the base data"
-
-#: view_user_profiles__installation_11
-msgid "Installation über Metapakete"
-msgstr "installation via metapackages"
-
-#: view_user_profiles__installation_25
-msgid "Installation über apturl"
-msgstr "installatin via apturl"
-
-#: view_user_profiles__installation_24
-msgid "Installation über ein Metapaket"
-msgstr "installation via metapackages"
-
-#: view_users__sidebar_0
-msgid "Installation"
-msgstr "Installation"
-
-#: view_home_derivatives_6
-msgid "Installations-Feinauswahl"
-msgstr "detailed selection"
-
-#: view_user_profiles__installation_9
-msgid "Installieren"
-msgstr "install"
-
-#: view_packages_edit_4
-msgid "Ist ein Programm:"
-msgstr "Is a program:"
-
-#: view_layouts_application_6
-msgid "Jetzt einfach, schnell und sicher online spenden – mit PayPal."
-msgstr "Donate now online using PayPal, it is easy, quick and secure."
-
-#: controller_categories_3
-msgid "Kategorie aktualisiert."
-msgstr "Category updated."
-
-#: view_categories_edit_0
-msgid "Kategorie bearbeiten"
-msgstr "Edit category"
-
-#: controller_categories_2
-msgid "Kategorie erzeugt."
-msgstr "Category created."
-
-#: view_metapackages__metalist_1
-msgid "Kategorie"
-msgstr "Category"
-
-#: view_metapackages_edit_3
-msgid "Kategorie:"
-msgstr "Category:"
-
-#: view_users__sidebar_6
-msgid "Kategorien verwalten"
-msgstr "Administrate categories"
-
-#: controller_categories_0
-msgid "Kategorien"
-msgstr "Categories"
-
-#: view_categories_index_0
-msgid "Kategorien-Übersicht"
-msgstr "category-overview"
-
-#: view_categories_index_12
-msgid "Kategorienbaum anzeigen"
-msgstr "show category-tree"
-
-#: view_user_profiles__installation_3
-msgid "Klicke auf das Symbol rechts unten"
-msgstr "Click on the icon in the lower right corner"
-
-#: view_user_mailer_signup_notification_1
-msgid "Klicke auf folgenden Link:"
-msgstr "Please click on the following link:"
-
-#: view_metapackages_add_comment_1
-msgid "Kommentar hinzufügen"
-msgstr "Add comment"
-
-#: view_packages_add_comment_0
-msgid "Kommentar: "
-msgstr "Comment:"
-
-#: view_metapackages_show_22
-msgid "Kommentieren"
-msgstr "Comment"
-
-#: view_metapackages_immediate_conflicts_0
-msgid "Konflikte innerhalb von Bündeln"
-msgstr "Conflicts inside bundles"
-
-#: view_packages_show_19
-msgid "Konflikte mit folgenden Paketen (nur solche ohne Version):"
-msgstr "Conflicts with these packages (only those without a version):"
-
-#: view_users__sidebar_9
-msgid "Konflikte"
-msgstr "Conflicts"
-
-#: controller_metapackages_11
-msgid "Konnte Paket nicht aus Bündel entfernen."
-msgstr "Couldn't delete package from bundle."
-
-#: model_package_7
-msgid "Konnte URL für {{repo}} nicht feststellen"
-msgstr "couldn't determine URL for {{repo}}"
-
-#: model_package_11
-msgid "Konnte keine URL feststellen"
-msgstr "could not determine URL"
-
-#: controller_passwords_2
-msgid "Konnte keinen Benutzer mit dieser Email-Adresse finden."
-msgstr "No user found with this e-mail-address."
-
-#: view_home_cancel_3
-msgid "Konto 172 9375, Sparkasse Bremen, BLZ 290 501 01"
-msgstr "Bank-account: 172 9375, Sparkasse Bremen, Bank-number 290 501 01"
-
-#: view_repositories_migrate_1
-msgid "Kopiere Repository "
-msgstr "copy repository"
-
-#: view_distributions_new_1
-msgid "Kurzname"
-msgstr "short name"
-
-#: view_user_profiles__installation_17
-msgid "Link einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer öffnen."
-msgstr "Just click on the link and open the file and open it with the recommended package-installer."
-
-#: view_categories_edit_3
-msgid "Link für weitere Informationen"
-msgstr "Link for further information"
-
-#: view_repositories_edit_2
-msgid "Lizenztyp:"
-msgstr "Licence:"
-
-#: view_categories_index_8
-msgid "Löschen"
-msgstr "Delete"
-
-#: view_users__mailbox_list_1
-msgid "Mailbox"
-msgstr "Mailbox"
-
-#: view_home_home_4
-msgid "Mehr ..."
-msgstr "More ..."
-
-#: model_user_meta_tabz_0
-msgid "Meine Bündel"
-msgstr "My bundles"
-
-#: view_packages_show_26
-msgid "Metapaket in Bündel wandeln"
-msgstr "change metapackage into bundle"
-
-#: view_metapackages_migrate_2
-msgid "Migrieren"
-msgstr "Migrate"
-
-#: view_home_beteiligung_8
-msgid "Mitarbeit"
-msgstr "co-operation"
-
-#: view_home_impressum_11
-msgid "Mitwirkende an der AG Communtu (Alphabetische Reihenfolge):"
-msgstr "Participants of the Communtu-team (alphabetical order):"
-
-#: view_home_beteiligung_9
-msgid "Momentan benötigen wir noch Unterstützung bei der Entwicklung des Projektes bei folgenden zwei Tätigkeiten:"
-msgstr "For the development of the project we currently need support with these two jobs:"
-
-#: view_home_about_13
-msgid "Nachinstallation einzelner Funktionen"
-msgstr "Post-installation of single functions"
-
-#: controller_sent_2
-msgid "Nachricht erfolgreich versendet"
-msgstr "message successfully send"
-
-#: view_sent_new_3
-msgid "Nachricht:"
-msgstr "Message:"
-
-#: view_users_show_8
-msgid "Nachrichten"
-msgstr "Message"
-
-#: view_categories_edit_1
-msgid "Name"
-msgstr "Name"
-
-#: view_users_show_1
-msgid "Name: "
-msgstr "Name:"
-
-#: view_repositories_show_9
-msgid "Nativ"
-msgstr "native"
-
-#: view_home_about_18
-msgid "Natur, Geist und Technik - Verein zur Förderung der Allgemeinbildung e.V."
-msgstr "Natur, Geist und Technik - Verein zur Förderung der Allgemeinbildung e.V."
-
-#: view_admins_sync_all_5
-msgid "Neu hinzugefügte Pakete: "
-msgstr "Newly added packages: "
-
-#: view_distributions_index_1
-msgid "Neue Distribution"
-msgstr "new distribution"
-
-#: view_categories_new_0
-msgid "Neue Kategorie"
-msgstr "New category"
-
-#: view_users__mailbox_list_0
-msgid "Neue Nachricht"
-msgstr "New message"
-
-#: view_admins_load_packages_0
-msgid "Neue Pakete: "
-msgstr "New package:"
-
-#: view_roles_new_0
-msgid "Neue Rolle"
-msgstr "New role"
-
-#: view_packages_edit_8
-msgid "Neuer Link auf ein Video"
-msgstr "New link to a video"
-
-#: controller_cart_1
-msgid "Neues Bündel"
-msgstr "new bundle"
-
-#: view_derivatives_index_5
-msgid "Neues Derivat"
-msgstr "New derivative"
-
-#: view_user_profiles_new_0
-msgid "Neues Nutzerprofil"
-msgstr "new profile"
-
-#: view_packages_new_0
-msgid "Neues Paket"
-msgstr "New package"
-
-#: view_users_edit_7
-msgid "Neues Passwort bestätigen"
-msgstr "Confirm new password"
-
-#: view_passwords_edit_2
-msgid "Neues Passwort erhalten"
-msgstr "receive new password"
-
-#: view_users_edit_5
-msgid "Neues Passwort"
-msgstr "new password"
-
-#: view_repositories_new_0
-msgid "Neues Repository für "
-msgstr "new repository for"
-
-#: view_repositories_index_5
-msgid "Neues Repository"
-msgstr "new repository"
-
-#: view_users_show_2
-msgid "Nutzer seit: "
-msgstr "user since:"
-
-#: model_package_0
-msgid "OpenSource"
-msgstr "open source"
-
-#: controller_packages_2
-msgid "Paket aktualisiert."
-msgstr "Package updated."
-
-#: view_packages_edit_0
-msgid "Paket bearbeiten"
-msgstr "Edit package"
+#: controller_metapackages_8
+msgid "Bei Anderungen muss die Version größer werden<br>"
+msgstr "With each update the version has to be increased<br>"
+
+#: controller_metapackages_9
+msgid "Die Beschreibung darf nicht leer sein<br>"
+msgstr "The description must not be empty<br>"
+
+#: controller_metapackages_cannot_destroy
+msgid "Veröffentlichte Bündel können nicht gelöscht werden."
+msgstr "Released bundles cannot be deleted."
+
+#: controller_metapackages_conflicts
+msgid "Das Bündel enthält Pakete, die in Konflikt zueinander stehen!"
+msgstr ""
+
+#: controller_metapackages_debianizing
+msgid "Das Bündel wird gerade als Metapaket erzeugt und hochgeladen. Dies dauert ein paar Minuten."
+msgstr "The bundle is currently created as a metapackaged and uploaded. This could take a couple of minutes."
+
+#: controller_metapackages_no_renaming
+msgid "Veröffentlichte Bündel können nicht umbenannt werden."
+msgstr "Released bundles cannot be renamed."
+
+#: controller_metapackages_no_save
+msgid "Das Bündel enthält Konflikte und kann deshalb nicht als Metapaket gespeichert werden."
+msgstr "This bundle contains conflicts and therefor it cannot be saved as a metapackage."
+
+#: controller_metapackages_not_changed
+msgid "Das Bündel wurde schon als Metapaket erzeugt und hochgeladen."
+msgstr "This bundle is already created as a metapackage and uploaded."
 
 #: controller_packages_1
 msgid "Paket erzeugt."
 msgstr "Package created"
 
-#: view_packages_show_0
-msgid "Paket installieren. Bitte ggf. vorher die Quellen hinzufügen."
-msgstr "Install package. If necessary please add the sources beforehand."
+#: controller_packages_2
+msgid "Paket aktualisiert."
+msgstr "Package updated."
 
-#: view_packages_show_2
-msgid "Paket sofort installieren"
-msgstr "install package instantly"
+#: controller_passwords_1
+msgid "Ein Link zum Andern des Passworts wurde an deine Email-Adresse geschickt."
+msgstr "A link for chaning the password has been sent to your e-mail-address."
 
-#: view_packages_show_16
-msgid "Paket-Version"
-msgstr "package-version"
-
-#: view_admins_sync_package_5
-msgid "Pakete insgesamt: "
-msgstr "Total packages:"
-
-#: controller_suggestion_15
-msgid "Pakete installieren"
-msgstr "Install package"
-
-#: controller_packages_0
-msgid "Pakete"
-msgstr "packages"
-
-#: view_metapackages_show_16
-msgid "Paketliste editieren"
-msgstr "Edit package list"
-
-#: view_repositories_show_4
-msgid "Paketliste für i386:"
-msgstr "package-list for i386:"
-
-#: controller_suggestion_11
-msgid "Paketquellen hinzufügen"
-msgstr "add repository"
-
-#: controller_accounts_5
-msgid "Passwort aktualisiert."
-msgstr "Password has been updated."
-
-#: view_users_new_6
-msgid "Passwort bestätigen"
-msgstr "confirm password"
+#: controller_passwords_2
+msgid "Konnte keinen Benutzer mit dieser Email-Adresse finden."
+msgstr "No user found with this e-mail-address."
 
 #: controller_passwords_5
 msgid "Passwort darf nicht leer sein."
@@ -1656,85 +305,85 @@ msgstr "Password changed."
 msgid "Passwort nicht geändert."
 msgstr "Password not changed."
 
-#: view_passwords_new_0
-msgid "Passwort vergessen"
-msgstr "forgotten password"
-
-#: view_passwords_new_2
-msgid "Passwort zurücksetzen"
-msgstr "reset password"
-
-#: view_accounts_edit_0
-msgid "Passwort ändern"
-msgstr "change password"
-
-#: view_sessions_new_2
-msgid "Passwort"
-msgstr "Password"
-
 #: controller_passwords_8
 msgid "Passwörter stimmen nicht überein."
 msgstr "Passwords do not match."
 
-#: view_repositories_edit_4
-msgid "Pfad:"
-msgstr "Path:"
+#: controller_profiles_0
+msgid "Installation von Bündeln"
+msgstr "Installation of bundles"
 
-#: view_users__mailbox_list_2
-msgid "Posteingang"
-msgstr "Inbox"
+#: controller_repositories_0
+msgid "Repositorys"
+msgstr "repositories"
 
-#: view_users_edit_2
-msgid "Profil löschen"
-msgstr "delete profile"
+#: controller_repositories_1
+msgid "Repository erzeugt."
+msgstr "Repository created."
 
-#: view_derivatives_edit_2
-msgid "Programm für GUI-Dialoge (z.B. zenity, kdialog)"
-msgstr "Program for GUI-dialogs (e.g. zenity, kdialog)"
+#: controller_repositories_2
+msgid "Repository aktualisiert."
+msgstr "Repository updated."
 
-#: view_derivatives_edit_1
-msgid "Programm für GUI-basiertes Sudo (z.B. gksudo, kdesudo)"
-msgstr "Program for GUI-based sudo (e.g. gksudo, kdesudo)"
+#: controller_repositories_3
+msgid "sources.list eingelesen."
+msgstr "sources.list read."
 
-#: view_home_icons_10
-msgid "Programm"
-msgstr "program"
+#: controller_sent_0
+msgid "Der Betreff darf nicht leer sein."
+msgstr "Subject must not be empty."
 
-#: view_home_icons_13
-msgid "Programm-Bündel"
-msgstr "program-bundle"
+#: controller_sent_1
+msgid "Benutzer existiert nicht"
+msgstr "user does not exist"
 
-#: view_users__sidebar_2
-msgid "Programme suchen"
-msgstr "Search programs"
+#: controller_sent_2
+msgid "Nachricht erfolgreich versendet"
+msgstr "message successfully send"
 
-#: view_home_beteiligung_12
-msgid "Programmierung"
-msgstr "Programming"
+#: controller_sessions_1
+msgid "Du bist bereits angemeldet."
+msgstr "You are already logged in."
 
-#: view_packages_new_4
-msgid "Quelle"
-msgstr "Source"
+#: controller_sessions_3
+msgid "Deine hier registrierte Distribution wurde auf {{dist_old}} geändert, weil deine alte Distribution von Ubuntu (und daher auch von Communtu) nicht mehr unterstützt wird. Wir empfehlen für deinen Computer ein <a href='http://wiki.ubuntuusers.de/Upgrade'>Upgrade</a> auf {{dist_new}}."
+msgstr "Your registered distribution was changed to {{dist_old}} because your old distribution is not supported by Ubuntu (and therefore by Communtu) anymore. We suggest an upgrade to {{dist_new}}."
 
-#: view_packages_show_15
-msgid "Quelle/Repository"
-msgstr "source/repository"
+#: controller_sessions_4
+msgid "Du wurdest abgemeldet."
+msgstr "You have been logged in."
 
-#: helper_distributions_8
-msgid "Quellen anzeigen"
-msgstr "Show sources"
+#: controller_sessions_5
+msgid "Dein Benutzername oder Passwort ist falsch. Bitte ggf. unten auf \"Registrieren\" klicken."
+msgstr "Your username or password is wrong. If applicable click on \"Register\" below."
 
-#: view_user_profiles__sources_0
-msgid "Quellen für die zu installierenden Programme"
-msgstr "Sources for the soon be installed programs"
+#: controller_sessions_6
+msgid "Dein Benutzerkonto wurde noch nicht aktiviert. Der Aktivierungscode wurde dir per Email zugeschickt."
+msgstr "Your account has not been activated yet. The activation code has been sent to you via e-mail."
 
-#: view_packages_show_5
-msgid "Quellen für diese Paket hinzufügen"
-msgstr "add sources for this package"
+#: controller_sessions_7
+msgid "Dein Benutzerkonto wurde deaktiviert oder gelöscht."
+msgstr "Your account has been deactivated or deleted."
 
-#: view_packages_show_3
-msgid "Quellen hinzufügen"
-msgstr "add sources"
+#: controller_suggestion_1
+msgid "Um etwas installieren zu können, musst du zunächst etwas auswählen. Speichern nicht vergessen!"
+msgstr "In order to install something, you first have to choose something. Don't forget to save!"
+
+#: controller_suggestion_11
+msgid "Paketquellen hinzufügen"
+msgstr "add repository"
+
+#: controller_suggestion_12
+msgid "Folgende Paketquellen werden hinzugefügt"
+msgstr "The following repositories will be added"
+
+#: controller_suggestion_15
+msgid "Pakete installieren"
+msgstr "Install package"
+
+#: controller_suggestion_16
+msgid "Folgende Pakete werden installiert"
+msgstr "The following packages will be installed"
 
 #: controller_suggestion_2
 msgid "Quellen und Schluessel hinzufuegen fuer Benutzer "
@@ -1748,517 +397,701 @@ msgstr "Add repositories and keys for the bundle"
 msgid "Quellen und Schluessel hinzufuegen fuer Paket "
 msgstr "Add repositories and keys for the package"
 
-#: view_user_profiles__installation_16
-msgid "Quellen und Schlüssel eintragen"
-msgstr "register sources and keys"
+#: controller_suggestion_8
+msgid "Communtu-Nachinstallation fuer Benutzer "
+msgstr "Communtu post-installation for users"
 
-#: view_user_profiles__installation_15
-msgid "Quellen"
-msgstr "Sources"
+#: controller_users_1
+msgid "Danke für die Registrierung bei Communtu! Du kannst dich jetzt anmelden."
+msgstr "Thank you for registering at Communtu! You can now log in."
 
-#: view_sessions_new_5
-msgid "Registrieren"
-msgstr "Register"
+#: controller_users_10
+msgid "Benutzer gelöscht"
+msgstr "User deleted"
 
-#: view_home_home_19
-msgid "Registrierung"
-msgstr "Registration"
+#: controller_users_11
+msgid "Es gab ein Problem mit der Löschung."
+msgstr "A problem while deleting a user occured."
 
-#: view_admins_sync_all_2
-msgid "Repositories synchronisiert"
-msgstr "repositories synchronised"
+#: controller_users_12
+msgid "Benutzer aktiviert"
+msgstr "User activated"
 
-#: view_repositories_index_0
-msgid "Repositories"
-msgstr "repositories"
+#: controller_users_13
+msgid "Es gab ein Problem mit der Aktivierung dieses Benutzers."
+msgstr "A Problem occured while activating this user."
 
-#: view_distributions_show_0
-msgid "Repositories:"
-msgstr "Repositories:"
+#: controller_users_2
+msgid "Es gab ein Problem mit der Registrierung."
+msgstr "An error occured while registering."
 
-#: controller_repositories_2
-msgid "Repository aktualisiert."
-msgstr "Repository updated."
+#: controller_users_3
+msgid "Du wurdest als Nutzer {{anonymous_user}} mit Kennwort {{anonymous_user}} eingeloggt. Bitte ggf. oben rechts auf Nutzer {{anonymous_user}} klicken und in ein dauerhaftes Nutzerkonto umwandeln; ansonsten wird das Konto nach einem Tag wieder gelöscht."
+msgstr "You have been logged in as {{anonymous_user}} with the password {{anonymous_user}}. If applicable click on the username {{anonymous_user}} in the above-right corner to change the account into an permanent account, otherwise the account will be deleted after one day."
 
-#: view_repositories_show_0
-msgid "Repository anzeigen"
-msgstr "show repository"
+#: controller_users_4
+msgid "Es gab ein Problem mit der anonymen Nutzung."
+msgstr "An error occured with the anonymous use."
 
-#: view_repositories_edit_0
-msgid "Repository bearbeiten"
-msgstr "edit repositories"
+#: controller_users_5
+msgid "Benutzerdaten aktualisiert"
+msgstr "user data updated"
 
-#: controller_repositories_1
-msgid "Repository erzeugt."
-msgstr "Repository created."
+#: controller_users_6
+msgid "Benutzerdaten übernommen und Benutzerkonto dauerhaft gemacht."
+msgstr "Userdata changed and account made permanent."
 
-#: view_distributions_show_4
-msgid "Repository hinzufügen"
-msgstr "add repository"
+#: controller_users_8
+msgid "Benutzer deaktiviert"
+msgstr "user deactivated"
 
-#: helper_distributions_6
-msgid "Repository löschen"
-msgstr "delete repository"
+#: controller_users_9
+msgid "Es gab ein Problem mit der Deaktivierung dieses Benutzers."
+msgstr "An error occured while deactivating this user."
 
-#: view_repositories_migrate_0
-msgid "Repository migrieren"
-msgstr "migrate repository"
+#: create
+msgid "Anlegen"
+msgstr "Create"
 
-#: helper_distributions_2
-msgid "Repository synchronisieren"
-msgstr "synchronise repository"
+#: creation_error
+msgid "Bei der Erstellung des Pakets ist ein Fehler aufgetreten."
+msgstr "While creating the package an error occured."
 
-#: view_admins_sync_package_2
-msgid "Repository synchronisiert"
-msgstr "repository synchronised"
+#: debian_section
+msgid "Debian-Section:"
+msgstr "Debian section"
 
-#: view_admins_sync_all_3
-msgid "Repository-URL: "
-msgstr "Repository-URL: "
+#: delete
+msgid "Löschen"
+msgstr "Delete"
 
-#: view_admins_sync_package_3
-msgid "Repository: "
-msgstr "Repository: "
+#: description_with_colon
+msgid "Beschreibung:"
+msgstr "Description:"
 
-#: controller_repositories_0
-msgid "Repositorys"
-msgstr "repositories"
+#: detailed_view
+msgid "zur Detailansicht"
+msgstr "go to detailed view"
 
-#: view_roles_edit_0
-msgid "Rolle bearbeiten"
-msgstr "edit role"
+#: direct_indirect_covered_packages
+msgid "Direkt und indirekt enthaltene Pakete"
+msgstr "direct and indirect covered packages"
 
-#: view_roles__role_0
-msgid "Rolle löschen"
-msgstr "delete role"
+#: distribution
+msgid "Distribution"
+msgstr "Distribution"
 
-#: view_roles__role_1
-msgid "Rolle zuweisen"
-msgstr "assign role"
-
-#: view_users__user_2
-msgid "Rollen bearbeiten"
-msgstr "edit roles"
-
-#: view_roles_index_0
-msgid "Rollen für "
-msgstr "roles for"
-
-#: view_users_index_6
-msgid "Rollen"
-msgstr "Roles"
-
-#: view_roles_edit_1
-msgid "Rollenname"
-msgstr "rolename"
-
-#: view_roles_show_0
-msgid "Rollenname:"
-msgstr "Rolename:"
-
-#: view_home_contact_us_4
-msgid "Senden"
-msgstr "Send"
-
-#: view_repositories_new_2
-msgid "Sicherheitstyp:"
-msgstr "Security type:"
-
-#: view_mailbox_show_5
-msgid "Sie haben keine Nachrichten in ihrem Posteingang."
-msgstr "You have no messages in your inbox."
-
-#: view_sent_index_5
-msgid "Sie haben noch keine Nachrichten versendet."
-msgstr "You haven't sent any messages yet."
-
-#: view_user_profiles__installation_4
-msgid "Speichere die Datei auf deinem Computer ab, am einfachsten auf dem Desktop"
-msgstr "Save the file on your computer, preferable on the desktop"
-
-#: view_user_profiles__profile_data_17
-msgid "Speichern und feiner auswählen"
-msgstr "Save and choose packages"
-
-#: view_distributions_edit_5
-msgid "Speichern"
-msgstr "save"
-
-#: view_home_impressum_10
-msgid "Spendenbescheinigung kann ausgestellt werden."
-msgstr "Donation receipt can be issued."
-
-#: view_home_impressum_6
+#: donation_possibility
 msgid "Spendenmöglichkeit"
 msgstr "Donation possibility"
 
-#: view_metapackages_show_18
-msgid "Sperren"
-msgstr "Block"
-
-#: view_metapackages__metalist_2
-msgid "Standard"
-msgstr "Standard"
-
-#: view_metapackages_new_4
-msgid "Standardmäßig installieren"
-msgstr "Install by default"
-
-#: view_metapackages_show_5
-msgid "Standardmäßig installieren:"
-msgstr "Install by default:"
-
-#: view_layouts_application_8
-msgid "Start"
-msgstr "Start"
-
-#: view_repositories_show_13
-msgid "Subtyp:"
-msgstr "Subtype:"
-
-#: view_packages__search_0
-msgid "Suche nach Paketen"
-msgstr "Search for packages"
-
-#: view_derivatives_show_1
-msgid "Sudo-Programm:"
-msgstr "sudo-program:"
-
-#: lib_utils_0
-msgid "System-Befehl schlug fehl: "
-msgstr "The followong system-command failed:"
-
-#: view_repositories_show_11
-msgid "Third-Party "
-msgstr "Third-Party "
-
-#: model_package_4
-msgid "Trusted"
-msgstr "trusted"
-
-#: controller_derivatives_0
-msgid "Ubuntu Derivate"
-msgstr "Ubuntu derivatives"
-
-#: controller_distributions_0
-msgid "Ubuntu Distributionen"
-msgstr "Ubuntu distributions"
-
-#: view_home_about_2
-msgid "Ubuntu ist eine Linux-Distribution, die Linux einfach handhabbar und verständlich macht. Nach der Installation von Ubuntu mittels einer CD oder DVD ist dein Computer schon  gut ausgerüstet für Internet, Textverarbeitung und vieles andere."
-msgstr "Ubuntu is a linux-based distribution which makes Linux easier to use and more comprehendible. After the installation of Ubuntu via a CD or DVD your computer is already equipped to surf the internet, to do some word processing and to do much more."
-
-#: view_home_derivatives_2
-msgid "Ubuntu-Derivaten"
-msgstr "Ubuntu derivatives"
-
-#: controller_accounts_0
-msgid "Ubuntu an die individuellen Bedürfnisse anpassen"
-msgstr "Match Ubuntu to your personal needs"
-
-#: view_home_home_2
-msgid "Ubuntu"
-msgstr "Ubuntu"
-
-#: model_user_meta_tabz_2
-msgid "Ubuntu-Pakete"
-msgstr "Ubuntu packages"
-
-#: view_users__sidebar_4
-msgid "Ubuntu-Versionen"
-msgstr "Ubuntu versions"
-
-#: view_home_about_16
-msgid "Um Communtu nutzen zu können, kannst du dich registrieren. Das geht ganz einfach über den \"Anmelden\"-Knopf in der oberen Leiste."
-msgstr "In order to use Communtu you need to register yourself. To do so, just click on the \"Registration\"-button in the menu above."
-
-#: view_home_news_2
-msgid "Um die Kommunikation mit unseren Nutzern zu verbessern, haben wir Mailinglisten eingerichtet:"
-msgstr "To improve communication with our users we have set up some mailing lists."
-
-#: controller_suggestion_1
-msgid "Um etwas installieren zu können, musst du zunächst etwas auswählen. Speichern nicht vergessen!"
-msgstr "In order to install something, you first have to choose something. Don't forget to save!"
-
-#: view_user_profiles__installation_1
-msgid "Um etwas installieren zu können, musst du zunächst unter \"Grunddaten\" oder \"Detailauswahl\" etwas auswählen."
-msgstr "In order to install, you have to specify some things at \"Base data\" or \"Details\"."
-
-#: view_home_beteiligung_5
-msgid "Umfrage zu beteiligen"
-msgstr "participate in the survey"
-
-#: model_package_2
-msgid "Unbekannt"
-msgstr "unknown"
-
-#: controller_passwords_9
-msgid "Ungültiger Änderungscode eingegeben."
-msgstr "Invalid activation code entered."
-
-#: controller_passwords_4
-msgid "Ungültiger Änderungscode. Bitte den Code prüfen und nochmals versuchen. (Vielleicht hat dein Email-Programm einen Zeilenumbruch eingefügt?)"
-msgstr "Invalid activation code. Please check the code and try again. (Perhaps you e-mail-program did a line break?)"
-
-#: view_home_news_15
-msgid "Unser Blog"
-msgstr "Our blog"
-
-#: view_home_news_1
-msgid "Unsere Mailinglisten"
-msgstr "Our mailinglists"
-
-#: view_distributions_edit_3
-msgid "Url"
-msgstr "URL"
-
-#: view_videos_show_0
-msgid "Url:"
-msgstr "Url:"
-
-#: view_sent__user_exists_0
-msgid "User gefunden"
-msgstr "user found"
-
-#: view_sent__user_not_exists_0
-msgid "User nicht gefunden"
-msgstr "user not found"
-
-#: view_home_icons_20
-msgid "User-Icon"
-msgstr "user-icon"
-
-#: view_distributions_index_0
-msgid "Verfügbare Distributionen"
-msgstr "Available distributions"
-
-#: view_roles_index_2
-msgid "Verfügbare Rollen:"
-msgstr "Available roles:"
-
-#: view_users__mailbox_list_3
-msgid "Versendete Nachrichten"
-msgstr "sent messages"
-
-#: view_packages_new_3
-msgid "Version"
-msgstr "Version"
-
-#: view_metapackages_edit_1
-msgid "Version:"
-msgstr "Version:"
-
-#: view_home_impressum_9
+#: donation_purpose
 msgid "Verwendungszweck: Communtu"
 msgstr "Purpose: Communtu"
 
-#: view_metapackages__metalist_3
-msgid "Veröffentl."
-msgstr "Publish"
+#: donation_receipt
+msgid "Spendenbescheinigung kann ausgestellt werden."
+msgstr "Donation receipt can be issued."
 
-#: view_metapackages_show_17
-msgid "Veröffentlichen"
-msgstr "Publish"
+#: edit
+msgid "Bearbeiten"
+msgstr "edit"
 
-#: view_metapackages_show_9
-msgid "Veröffentlicht: "
-msgstr "Published:"
+#: email_with_colon
+msgid "E-Mail: "
+msgstr "E-Mail:"
 
-#: view_videos_edit_0
-msgid "Video bearbeiten"
-msgstr "edit video"
+#: email_without_colon
+msgid "E-Mail"
+msgstr "e-mail"
 
-#: view_packages_new_6
-msgid "Videos"
-msgstr "Videos"
+#: feedback
+msgid "Feedback"
+msgstr "feedback"
 
-#: view_packages_show_12
-msgid "Videos:"
-msgstr "Videos:"
+#: four_and_fourty_letters
+msgid "Zwischen 4 und 40 Zeichen"
+msgstr "Between 4 and 40 letters"
 
-#: view_metapackages_migrate_0
-msgid "Von welcher Distribution sollen die Bündel migriert werden ?"
-msgstr "Wich distribution are the bundles to be migrated from?"
+#: gpg_key
+msgid "GPG Schlüssel (optional): "
+msgstr "GPG-key (optional):"
 
-#: view_mailbox_show_1
-msgid "Von"
-msgstr "From"
+#: helper_distributions_0
+msgid "free"
+msgstr "free"
 
-#: view_messages_show_0
-msgid "Von:"
-msgstr "From:"
+#: helper_distributions_1
+msgid "non-free"
+msgstr "non-free"
 
-#: view_distributions_show_8
-msgid "Vor dem Löschen einer Distribution müssen alle Benutzer, die sie nutzen, ausgeloggt sein! Bist du sicher?"
-msgstr "Before a distribution can be deleted, every user must be logged out! Are you sure?"
+#: helper_distributions_10
+msgid " und bearbeiten"
+msgstr " and edit"
 
-#: view_packages_new_5
-msgid "Weblinks"
-msgstr "Weblinks"
+#: helper_distributions_11
+msgid "<br />Distribution "
+msgstr "<br />distribution"
 
-#: view_packages_show_11
-msgid "Weblinks:"
-msgstr "Weblinks:"
+#: helper_distributions_12
+msgid "bearbeiten"
+msgstr "Edit"
 
-#: view_metapackages_finish_migrate_6
-msgid "Weiter"
-msgstr "Forward"
-
-#: view_user_profiles__profile_data_4
-msgid "Weitere Informationen"
-msgstr "further information"
-
-#: view_categories_show_2
-msgid "Weitere Informationen:"
-msgstr "Further information:"
-
-#: view_messages_show_4
-msgid "Weiterleiten"
-msgstr "Forward"
-
-#: view_user_profiles__profile_data_3
-msgid "Welche Aufgaben willst du mit deinem Computer erledigen? (um grob eine Auswahl zu treffen, Feineinstellungen später möglich)"
-msgstr "What tasks do you want to do with your computer? (only a rough choice, can be chosen in detail later)"
-
-#: view_user_profiles_help_3
-msgid "Wenn deine Version von Communtu nicht unterstützt wird, gibt es zwei Möglichkeiten:"
-msgstr "If you version is not supported by Communtu, you now have two possibilities:"
-
-#: view_users_new_2
-msgid "Wenn du über die Weiterentwicklung von Communtu informiert werden möchtest, dann gebe bitte deine richige E-Mail-Adresse an."
-msgstr "If you want to be informed about the development of Communtu you have to enter a valid e-mail-address."
-
-#: model_package_10
-msgid "When syncing repository #{repository.name}, could not find package #{name}"
-msgstr "When syncing repository #{repository.name}, could not find package #{name}"
-
-#: model_package_9
-msgid "When syncing repository, could not find PackageDistr for #{p.name} in repository #{repository.name}"
-msgstr "When syncing repository, could not find PackageDistr for #{p.name} in repository #{repository.name}"
-
-#: view_home_about_9
-msgid "Wichtig: Man braucht schon eine schnelle Internet-Verbindung. Für Ubuntu-Nutzer, die noch ein Modem oder Ähnliches nutzen, planen wir die Möglichkeit, automatisch CDs und DVDs zu erstellen."
-msgstr "Important: a fast internet-connection is needed. For Ubuntu-users with a slow internet-connection, e. g. a modem, we intend to introduce a feature to create CDs and DVDs automatically."
-
-#: view_home_about_10
-msgid "Wie kann ich meine Erfahrungen mit Programmen ins Communtu-System eintragen?"
-msgstr "How can I submit my experience with programs to the Communtu-system?"
-
-#: view_user_profiles__profile_data_7
-msgid "Wie stelle ich die Version fest?"
-msgstr "How do I find out the version which is in use?"
-
-#: view_home_about_4
-msgid "Wie verwende ich Communtu?"
-msgstr "How do I use Communtu?"
+#: helper_distributions_13
+msgid "löschen"
+msgstr "delete"
 
 #: helper_distributions_15
 msgid "Wikiseite bei Ubuntuusers"
 msgstr "Informational page at www.ubuntuusers.de (German)"
 
-#: view_home_beteiligung_7
-msgid "Wir benötigen Feedback. Wir möchten, dass Communtu von allen genutzt werden kann. Dazu benötigen wir Feedback. Hast Du einen Fehler auf der Plattform gefunden? Findest Du etwas unverständlich? Glaubst Du, dass wir was besser machen können? Hast Du eine Anregung für uns? Feedback ist uns Willkommen unter "
-msgstr "We need feedback. Our desire is, that Communtu will be used by everyone and for this we need feedback. You found an error in the system? Is there something that is incomprehensible to you? You think, you could do something better? You have some suggestions for us? Feedback is accepted under"
+#: helper_distributions_16
+msgid "free und aus den main Paketquellen"
+msgstr "free and from the main repositories"
 
-#: view_home_beteiligung_11
-msgid "Wir benötigen eine Person, die für das Projekt das Layout übernimmt. Dies bedeutet Grafiken einbinden und die Hauptverantwortung für das CSS übernehmen."
-msgstr "We need someone who is responsible for the project's layout. This means to integrate every graphic and to take over the main responsibility for the CSS."
+#: helper_distributions_17
+msgid "free und aus den Community Paketquellen"
+msgstr "free and from the community repositories"
 
-#: view_home_beteiligung_3
-msgid "Wir brauchen die Informationen"
-msgstr "We need the information"
+#: helper_distributions_18
+msgid "free und aus Third Party Paketquellen"
+msgstr "free and from third party repositories"
 
-#: view_home_news_16
-msgid "Wir haben einen Blog, wo wir aktuelle Informationen zu Communtu eintragen. Hier wird ungefähr einmal die Woche etwas gepostet. Hier werden Ankündigungen und neue Features präsentiert."
-msgstr "We have a blog where we post updated information about Communtu. It gets a new post about once a week. Announcement and new features will be presented here."
+#: helper_distributions_19
+msgid "non-free und aus den main Paketquellen"
+msgstr "non-free and from the main repositories"
 
-#: view_home_beteiligung_14
-msgid "Wir können Dir auch helfen diese Programmiersprache zu lernen. Also melde Dich einfach bei "
-msgstr "We can also help you to learn this programming-language. You just have to contact"
+#: helper_distributions_2
+msgid "Repository synchronisieren"
+msgstr "synchronise repository"
 
-#: controller_home_2
-msgid "Wir werden dich per E-Mail benachrichtigen."
-msgstr "We will notify you via e-mail."
+#: helper_distributions_20
+msgid "non-free und aus den Community Paketquellen"
+msgstr "non-free and from the community repositories"
 
-#: view_packages_show_20
+#: helper_distributions_21
+msgid "non-free und aus Third Party Paketquellen"
+msgstr "non-free and from third party repositories"
+
+#: helper_distributions_6
+msgid "Repository löschen"
+msgstr "delete repository"
+
+#: helper_distributions_8
+msgid "Quellen anzeigen"
+msgstr "Show sources"
+
+#: imprint
+msgid "Impressum"
+msgstr "Imprint"
+
+#: inbox
+msgid "Posteingang"
+msgstr "Inbox"
+
+#: install
+msgid "Installieren"
+msgstr "install"
+
+#: install2
+msgid "installieren"
+msgstr "Install"
+
+#: install_by_default
+msgid "Standardmäßig installieren:"
+msgstr "Install by default:"
+
+#: install_package_sources_first
+msgid "Paket installieren. Bitte ggf. vorher die Quellen hinzufügen."
+msgstr "Install package. If necessary please add the sources beforehand."
+
+#: installing_using_script
+msgid "installieren mittels Skript"
+msgstr "installing via script"
+
+#: invalid_activation_code_entered
+msgid "Ungültiger Anderungscode eingegeben."
+msgstr "Invalid activation code entered."
+
+#: invalid_activation_code_please_check_again
+msgid "Ungültiger Anderungscode. Bitte den Code prüfen und nochmals versuchen. (Vielleicht hat dein Email-Programm einen Zeilenumbruch eingefügt?)"
+msgstr "Invalid activation code. Please check the code and try again. (Perhaps you e-mail-program did a line break?)"
+
+#: kommentieren
+msgid "Kommentieren"
+msgstr "Comment"
+
+#: kontodaten
+msgid "Konto 172 9375, Sparkasse Bremen, BLZ 290 501 01"
+msgstr "Bank-account: 172 9375, Sparkasse Bremen, Bank-number 290 501 01"
+
+#: kurzname
+msgid "Kurzname"
+msgstr "short name"
+
+#: lib_system_0
+msgid "Du musst eingeloggt sein, um dieses Feature zu benutzen."
+msgstr "In order to use this feature you have to be logged in."
+
+#: lib_system_1
+msgid "Du hast keine Berechtigung für diese Aktion."
+msgstr "You are not privileged to do this."
+
+#: lib_system_2
+msgid "http://www.communtu.de"
+msgstr "http://www.communtu.de"
+
+#: lib_utils_0
+msgid "System-Befehl schlug fehl: "
+msgstr "The followong system-command failed:"
+
+#: licence
+msgid "Lizenztyp:"
+msgstr "Licence:"
+
+#: match_ubuntu
+msgid "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
+msgstr "Match Ubuntu to your personal needs"
+
+#: match_with_communtu
+msgid "Communtu - gemeinsam Ubuntu-Linux an individuelle Bedürfnisse anpassen"
+msgstr "Communtu - match Ubuntu to your personal needs"
+
+#: migrate
+msgid "Migrieren"
+msgstr "Migrate"
+
+#: migrate_repository
+msgid "Repository migieren"
+msgstr "migrate repository"
+
+#: model_mailer_0
+msgid "Herzlich Willkommen bei Communtu"
+msgstr "Welcome to Communtu"
+
+#: model_mailer_1
+msgid "Anfrage per Formular"
+msgstr "Query via formular"
+
+#: model_mailer_2
+msgid "Dein Benutzerkonto wurde aktiviert."
+msgstr "Your account has been activated."
+
+#: model_mailer_3
+msgid "Du hast angefordert, dein Kennwort zurückzusetzen"
+msgstr "You asked for resetting your password"
+
+#: model_mailer_4
+msgid "Dein Passwort wurde zurückgesetzt."
+msgstr "Your password has been restored."
+
+#: model_mailer_5
+msgid "Vorschlag eines Repositorys"
+msgstr "suggestion of a repository"
+
+#: model_message_0
+msgid "Bitte einen Betreff angeben"
+msgstr "Please enter a subject"
+
+#: model_package_0
+msgid "OpenSource"
+msgstr "open source"
+
+#: model_package_1
+msgid "Commercial"
+msgstr "Commercial"
+
+#: model_package_10
+msgid "Bei der Synchronisation des Repositories {{repo_name}} konnte das Paket {{package_name}} nicht gefunden werden."
+msgstr ""
+
+#: model_package_11
+msgid "Konnte keine URL feststellen"
+msgstr "could not determine URL"
+
+#: model_package_12
+msgid "Inhalt von {{file}} entspricht nicht Repository-Syntax"
+msgstr "content of {{file}} does not match with repository-syntax"
+
+#: model_package_2
+msgid "Unbekannt"
+msgstr "unknown"
+
+#: model_package_6
+msgid "<br> hat nicht das richtige Format"
+msgstr "<br> has not the right format"
+
+#: model_package_7
+msgid "Konnte URL für {{repo}} nicht feststellen"
+msgstr "couldn't determine URL for {{repo}}"
+
+#: model_package_9
+msgid "Bei der Synchronisation des Repositories {{repo_name}} konnte kein PackageDistr-Eintrag für das Paket {{package_name}} gefunden werden."
+msgstr ""
+
+#: model_user_meta_tabz_0
+msgid "Meine Bündel"
+msgstr "My bundles"
+
+#: model_user_meta_tabz_1
+msgid "Alle veröffentlichten Bündel"
+msgstr "All published bundles"
+
+#: model_user_meta_tabz_2
+msgid "Ubuntu-Pakete"
+msgstr "Ubuntu packages"
+
+#: model_user_profile_tabz_0
+msgid "Grunddaten"
+msgstr "Base data"
+
+#: model_user_profile_tabz_1
+msgid "Detailauswahl"
+msgstr "Detailed choice"
+
+#: model_user_profile_tabz_3
+msgid "Installation durchführen"
+msgstr "Start installation"
+
+#: name_with_colon
+msgid "Name: "
+msgstr "Name:"
+
+#: name_without_colon
+msgid "Name"
+msgstr "Name"
+
+#: native
+msgid "Native"
+msgstr "native"
+
+#: natur_geist_und_technik
+msgid "Natur, Geist und Technik - Verein zur Förderung der Allgemeinbildung e.V."
+msgstr "Natur, Geist und Technik - Verein zur Förderung der Allgemeinbildung e.V."
+
+#: new_bundle
+msgid "Neues Bündel"
+msgstr "new bundle"
+
+#: new_category
+msgid "Neue Kategorie"
+msgstr "New category"
+
+#: new_derivative
+msgid "Neues Derivat"
+msgstr "New derivative"
+
+#: new_message
+msgid "Neue Nachricht"
+msgstr "New message"
+
+#: new_packages
+msgid "Neu hinzugefügte Pakete: "
+msgstr "Newly added packages: "
+
+#: new_passwd
+msgid "Neues Passwort"
+msgstr "new password"
+
+#: news
+msgid "Aktuelles"
+msgstr "News"
+
+#: no1
+msgid "nein"
+msgstr "no"
+
+#: no_admin
+msgid "Du bist kein Administrator!"
+msgstr "You are not an administrator!"
+
+#: no_save_database
+msgid "Die folgenden Pakete konnten nicht in der Datenbank gespeichert werden:"
+msgstr "The following packages couldn't be saved in the database:"
+
+#: not_logged_in
+msgid "Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden."
+msgstr "You are currently not logged in. Please click on \"log in\" above."
+
+#: packages
+msgid "Pakete"
+msgstr "packages"
+
+#: participation
+msgid "Beteiligungsmöglichkeiten"
+msgstr "Ways to participate"
+
+#: passwd
+msgid "Passwort"
+msgstr "Password"
+
+#: passwd_no_match
+msgid "Das neue Passwort stimmt nicht mit der Bestätigung überein."
+msgstr "The new password does not comply with the verification."
+
+#: path
+msgid "Pfad:"
+msgstr "Path:"
+
+#: published
+msgid "veröffentlicht"
+msgstr "published"
+
+#: register
+msgid "Registrieren"
+msgstr "Register"
+
+#: repository_url
+msgid "Repository-URL: "
+msgstr "Repository-URL: "
+
+#: save
+msgid "Speichern"
+msgstr "save"
+
+#: security_type
+msgid "Sicherheitstyp:"
+msgstr "Security type:"
+
+#: senden
+msgid "Abschicken"
+msgstr "Send"
+
+#: show
+msgid "Anzeigen"
+msgstr "Show"
+
+#: sources
+msgid "Quellen"
+msgstr "Sources"
+
+#: subject_with_colon
+msgid "Betreff: "
+msgstr "Subject:"
+
+#: subject_without_colon
+msgid "Betreff"
+msgstr "Subject"
+
+#: subtype
+msgid "Subtyp:"
+msgstr "Subtype:"
+
+#: superior_category
+msgid "Übergeordnete Kategorie"
+msgstr "superior category"
+
+#: third_party
+msgid "Third-Party"
+msgstr "third-party "
+
+#: total_packages
+msgid "Pakete insgesamt: "
+msgstr "Total packages:"
+
+#: trusted
+msgid "Trusted"
+msgstr "trusted"
+
+#: ubuntu_derivatives
+msgid "Ubuntu-Derivate"
+msgstr "Ubuntu derivatives"
+
+#: url
+msgid "Url"
+msgstr "URL"
+
+#: used_in_bundles
 msgid "Wird bei Communtu in folgenden Bündeln benutzt:"
 msgstr "Is used at Communtu in these bundles:"
 
-#: view_packages_show_21
-msgid "Wird in folgenden Paketen benutzt:"
-msgstr "Is used in this packages:"
+#: username
+msgid "Benutzername"
+msgstr "Username"
 
-#: view_home_about_1
-msgid "Wozu Communtu?"
-msgstr "Why Communtu?"
+#: videos
+msgid "Videos:"
+msgstr "Videos:"
 
-#: view_user_profiles__profile_data_6
-msgid "Wähle bitte deine Ubuntu-Version aus. "
-msgstr "Please select a Ubuntu version. "
+#: view_accounts_edit_1
+msgid "Altes Passwort"
+msgstr "old password"
 
-#: view_categories_new_4
-msgid "Wähle einen Parent aus!"
-msgstr "Choose a Parent!"
+#: view_admins_load_packages_0
+msgid "Neue Pakete: "
+msgstr "New package:"
 
-#: view_sent_index_3
-msgid "Zeitpunkt"
-msgstr "Date"
+#: view_admins_show_0
+msgid "Here should be an introduction to the admin area"
+msgstr "Here should be an introduction to the admin area"
 
-#: view_sent_show_2
-msgid "Zeitpunkt:"
-msgstr "Date:"
+#: view_admins_sync_all_1
+msgid "Fehler: Repositories konnten nicht synchronisiert werden"
+msgstr "Error: couldn't synchronise repositories"
 
-#: view_home_impressum_3
-msgid "Zentrum für Solidarische Ökonomie"
-msgstr "Zentrum für Solidarische Ökonomie"
+#: view_admins_sync_all_2
+msgid "Repositories synchronisiert"
+msgstr "repositories synchronised"
 
-#: view_metapackages_migrate_1
-msgid "Zu welcher Distribution sollen die Bündel migriert werden ?"
-msgstr "Which distribution are the bundles to be migrated to?"
+#: view_admins_sync_package_1
+msgid "Fehler: Repository konnte nicht synchronisiert werden"
+msgstr "Error: couldn't synchronise repositories"
 
-#: view_roles_index_1
-msgid "Zugewiesene Rollen:"
-msgstr "Assigned roles:"
+#: view_admins_sync_package_2
+msgid "Repository synchronisiert"
+msgstr "repository synchronised"
 
-#: view_users_show_4
-msgid "Zuletzt eingeloggt: "
-msgstr "last login:"
+#: view_admins_sync_package_3
+msgid "Repository: "
+msgstr "Repository: "
 
-#: view_home_news_17
-msgid "Zum Blog"
-msgstr "Go to the blog"
+#: view_admins_test_all_0
+msgid "Folgende Repositories konnten nicht gelesen werden:"
+msgstr "The following repositories couldn't be read:"
 
-#: view_home_home_24
-msgid "Zum Impressum"
-msgstr "To the imprint"
+#: view_admins_test_all_1
+msgid "Alle Repositories wurden erreicht."
+msgstr "Every repositorie could be reached."
 
-#: view_home_about_5
-msgid "Zum Starten wählst du <b>Installation</b> auf der linken Seitenleiste."
-msgstr "To start, choose <b>Installation</b> on the left side."
+#: view_cart__metacart_3
+msgid "Bündel aus Paketliste"
+msgstr "Bundle from packages-list"
 
-#: view_layouts_application_3
-msgid "Zur Startseite"
-msgstr "Go to home page"
+#: view_cart_new_from_list_0
+msgid "Bündel aus einer Paketliste erstellen"
+msgstr "Create bundle from a packages-list"
+
+#: view_cart_new_from_list_1
+msgid "Hier kannst du ein Bündel aus einer vorhandenen Paketliste erstellen.  Die Liste muss in Form einter Textdatei vorliegen (plain text),  mit einem Paketnamen pro Zeile."
+msgstr "Here you can create a bundle from an existing package-list. The list must be formated as a plain text-file with only one package-name per line."
+
+#: view_cart_new_from_list_2
+msgid "Die Liste der auf deinem Computer installierten Pakete kannst du zum Beispiel mit"
+msgstr "A list of all programs installed on your computer can be found with"
+
+#: view_cart_new_from_list_3
+msgid "herausfinden. (Dazu muss das Paket {{debfoster}} installiert sein. Die erzeugte Liste enthält nur eine minimale Liste von (Meta-)Paketen, die notwendig ist, um deine Installation komplett wiederherzustellen.)"
+msgstr ""
+
+#: view_cart_new_from_list_4
+msgid "Datei, die die Paketliste enthält, auswählen:"
+msgstr "Choose the file, which contains the package-list:"
+
+#: view_cart_new_from_list_5
+msgid "Erstellen"
+msgstr "Create"
+
+#: view_cart_new_from_list_tip
+msgid "Tipp: eine große Liste kannst du auch zunächst mit einem Editor thematisch sortieren und die resultierenden Teillisten einzeln hier hochladen. Die entstehenden Bündel kannst du wiederum zu einem Bündel zusammenfassen. Dadurch entsteht ein besser strukturiertes Bündel."
+msgstr ""
+
+#: view_cart_update_0
+msgid "Bündel-Informationen anpassen"
+msgstr "edit bundle-information"
+
+#: view_cart_update_1
+msgid "Bündel überschreiben, falls es existiert?"
+msgstr "Overwrite bundle, if it already exists?"
+
+#: view_cart_update_2
+msgid "Expertenlevel:"
+msgstr "Level of expert:"
+
+#: view_cart_update_4
+msgid "Bündel veröffentlichen"
+msgstr "Publish bundle"
+
+#: view_categories_edit_0
+msgid "Kategorie bearbeiten"
+msgstr "Edit category"
+
+#: view_categories_edit_3
+msgid "Link für weitere Informationen"
+msgstr "Link for further information"
+
+#: view_categories_index_0
+msgid "Kategorien-Übersicht"
+msgstr "category-overview"
+
+#: view_categories_index_12
+msgid "Kategorienbaum anzeigen"
+msgstr "show category-tree"
+
+#: view_categories_show_0
+msgid "Name:"
+msgstr "Name:"
+
+#: view_categories_show_2
+msgid "Weitere Informationen:"
+msgstr "Further information:"
+
+#: view_categories_show_3
+msgid "Übergeordnete Kategorie:"
+msgstr "Superior category:"
+
+#: view_debs_index_0
+msgid "Fehlgeschlagene oder laufende Deb-Generierungen"
+msgstr "Failed or running deb-generation"
 
 #: view_debs_index_1
 msgid "Zurück zum Communtu-Menü"
 msgstr "Go back to the Communtu-menu"
 
-#: view_metapackages_index_1
-msgid "Zurück"
-msgstr "Back"
+#: view_debs_index_2
+msgid "  Keine fehlgeschlagenen Deb-Generierungen vorhanden! Glückwunsch!"
+msgstr "  There are no failed deb-generations! Congratulations!"
 
-#: view_metapackages_show_3
-msgid "Zurück&nbsp;&nbsp;"
-msgstr "Back&nbsp;&nbsp;"
+#: view_debs_index_3
+msgid "Alle fehlgeschlagenen debs erzeugen <b>Achtung: nur unter admin.communtu.de ausführen!</b>"
+msgstr "Create every failed deb <b>Warning: only do this at admin.communtu.de!</b>"
 
-#: view_users_edit_6
-msgid "Zwischen 4 und 40 Zeichen"
-msgstr "Between 4 and 40 letters"
+#: view_debs_index_5
+msgid "Erzeugen"
+msgstr "Create"
 
-#: view_users__user_0
-msgid "aktivieren"
-msgstr "activate"
+#: view_derivatives_edit_0
+msgid "Derivative bearbeiten"
+msgstr "edit derivative"
+
+#: view_derivatives_edit_1
+msgid "Programm für GUI-basiertes Sudo (z.B. gksudo, kdesudo)"
+msgstr "Program for GUI-based sudo (e.g. gksudo, kdesudo)"
+
+#: view_derivatives_edit_2
+msgid "Programm für GUI-Dialoge (z.B. zenity, kdialog)"
+msgstr "Program for GUI-dialogs (e.g. zenity, kdialog)"
+
+#: view_derivatives_index_0
+msgid "Derivate auflisten"
+msgstr "show derivatives"
+
+#: view_derivatives_show_1
+msgid "Sudo-Programm:"
+msgstr "sudo-program:"
+
+#: view_derivatives_show_2
+msgid "Dialog-Programm:"
+msgstr "dialog-program:"
+
+#: view_derivatives_show_3
+msgid "Icon file:"
+msgstr "icon-file:"
+
+#: view_distributions_edit_0
+msgid "Distribution bearbeiten"
+msgstr "edit distribution"
+
+#: view_distributions_index_0
+msgid "Verfügbare Distributionen"
+msgstr "Available distributions"
+
+#: view_distributions_index_1
+msgid "Neue Distribution"
+msgstr "new distribution"
+
+#: view_distributions_show_0
+msgid "Repositories:"
+msgstr "Repositories:"
 
 #: view_distributions_show_1
 msgid "alles prüfen"
@@ -2268,13 +1101,699 @@ msgstr "check everything"
 msgid "alles synchronisieren"
 msgstr "synchronise everything"
 
-#: view_layouts_application_15
-msgid "angemeldet als  "
-msgstr "logged in as "
+#: view_distributions_show_3
+msgid "sources.list einlesen"
+msgstr "read sources.list"
 
-#: helper_distributions_12
-msgid "bearbeiten"
-msgstr "Edit"
+#: view_distributions_show_4
+msgid "Repository hinzufügen"
+msgstr "add repository"
+
+#: view_distributions_show_8
+msgid "Vor dem Löschen einer Distribution müssen alle Benutzer, die sie nutzen, ausgeloggt sein! Bist du sicher?"
+msgstr "Before a distribution can be deleted, every user must be logged out! Are you sure?"
+
+#: view_home_about_1
+msgid "Wozu Communtu?"
+msgstr "Why Communtu?"
+
+#: view_home_about_10
+msgid "Wie kann ich meine Erfahrungen mit Programmen ins Communtu-System eintragen?"
+msgstr "How can I submit my experience with programs to the Communtu-system?"
+
+#: view_home_about_11
+msgid "Hast du gute Erfahrungen mit Programmen gemacht? Dann kannst du thematisch zusammengehörige Programme zu einem Bündel zusammenfassen und ins System eintragen. Dazu wählst du <b>Neues Bündel</b> unterhalb von <b>Bündel-Editor</b> auf der linken Seitenleiste. Du kannst dann Ubuntu-Pakete hinzufügen und mit Klick auf das Disketten-Symbol das Bündel im System abspeichern. Das Bündel soll einen Namen, eine Beschreibung und eine thematische Einordnung erhalten, damit andere Nutzer es auch verwenden können. Wie bei Ordnern und Dateien können Bündel nicht nur Ubuntu-Pakete, sondern auch andere Bündel enthalten. "
+msgstr "Did you make good experience with programs? You can merge thematic programs to a bundle and add this to the system. To do so, you choose <b>new bundle</b> below of <b>bundle-editor</b> on the left side. Then you can add Ubuntu packages to the bundle and, after you have finished, click on the floppy-icon to save the bundle. The bundle needs a name, a description and a thematic classification so that other users can use it too. Just like folders and files the bundle can not only consist of Ubuntu packages but also of other bundles too. "
+
+#: view_home_about_12
+msgid "<b>Bündel verwalten</b> auf der linken Seitenleiste gibt dir einen Überblick über die verfügbaren Bündel. Schließlich gibt es unter <b>Ubuntu-Versionen</b> eine Übersicht über die im System verfügbaren Ubuntu-Versionen (Distributionen)."
+msgstr "<b>Administrate bundles</b> on the left side offers an overview about the available bundles. At last, an overview about the available Ubunt versions (distributions) can be found at <b>Ubuntu versions</b>."
+
+#: view_home_about_13
+msgid "Nachinstallation einzelner Funktionen"
+msgstr "Post-installation of single functions"
+
+#: view_home_about_14
+msgid "Du hast schon eine lauffähige Ubuntu-Installation und möchtest bestimmte Funktionen hinzufügen? Auch dafür kannst du Communtu benutzen. Du kannst unter <b>Bündel verwalten</b> einzelne Bündel installieren, und unter <b>Programme suchen</b> auch einzelne Programme."
+msgstr "You already have a useful Ubuntu-installation and want to add some functions? You can also use Communtu for this. You can install single bundles at <b>Administrate bundle</b> and at <b>Search programs</b>, even single programs."
+
+#: view_home_about_16
+msgid "Um Communtu nutzen zu können, kannst du dich registrieren. Das geht ganz einfach über den \"Registrieren\"-Knopf in der oberen Leiste."
+msgstr "In order to use Communtu you need to register yourself. To do so, just click on the \"Registration\"-button in the menu above."
+
+#: view_home_about_2
+msgid "Ubuntu ist eine Linux-Distribution, die Linux einfach handhabbar und verständlich macht. Nach der Installation von Ubuntu mittels einer CD oder DVD ist dein Computer schon  gut ausgerüstet für Internet, Textverarbeitung und vieles andere."
+msgstr "Ubuntu is a linux-based distribution which makes Linux easier to use and more comprehendible. After the installation of Ubuntu via a CD or DVD your computer is already equipped to surf the internet, to do some word processing and to do much more."
+
+#: view_home_about_3
+msgid "Es gibt aber auch viele Anwendungen, die erst noch nachinstalliert werden müssen, z.B. in den Bereichen Audio, Video und Grafik, damit dein Computer mit Ubuntu wirklich  benutzbar ist. Communtu macht diese Nachinstallation jetzt noch einfacher und hat zudem spezielle Bereiche für Einsteiger und Windows-Umsteiger."
+msgstr "There are many applications which have to be post-installed, e. g. programs for audio, video and graphics, in order to make the computer really usable  Ubuntu. Communtu helps to make the post-installation more easier and moreover has special sections for beginners and users comming from Windows."
+
+#: view_home_about_4
+msgid "Wie verwende ich Communtu?"
+msgstr "How do I use Communtu?"
+
+#: view_home_about_5
+msgid "Zum Starten wählst du <b>Installation</b> auf der linken Seitenleiste."
+msgstr "To start, choose <b>Installation</b> on the left side."
+
+#: view_home_about_6
+msgid "  (Diese erscheint erst nach einer "
+msgstr "  (This appeas not until"
+
+#: view_home_about_7
+msgid ".) Dort kannst du deine Einstellungen bearbeiten. Unter den Grunddaten musst du zunächst eintragen, welche Ubuntu-Version du auf deinem PC installiert hast, außerdem, ob du unfreie Programme nutzen willst oder nicht. Zudem wählst du aus, für welche Aufgaben du deinen Ubuntu-PC nutzen willst. "
+msgstr ".) There you can edit your settings. First, you have to specify the basic data, like which Ubuntu version you want to install on your computer. Additionally you have to specify if you want to use free or non-free software. Finally you have to indicate for which purposes you want to use your computer."
+
+#: view_home_about_8
+msgid "Danach kannst du mit \"Speichern und feiner Auswählen\" noch einen detaillierteren Überblick über die installierten Bündel und Programme bekommen und die Auswahl auch noch verändern. Falls du dazu keine Lust oder Zeit hast, klicke einfach auf \"Speichern\". Dies führt dich zur Installations-Seite. Dort findest du einen Installationsknopf, mit dem die Communtu-Nachinstallation gestartet werden kann. Es dauert etwas, bis die Programme automatisch aus dem Internet geladen und installiert werden. Fertig ist der vielseitig einsetzbare Ubuntu-PC!"
+msgstr "After a click on \"Save and choose packages\" you can get a detailed overview of the installed bundles and programs and the possibility to change the pre-made selections. In the case you don't have the time or energy to choose the packages in detail, just click on \"Save\". This leads you to the installation page. There you will find a button with which the installation process starts. This takes some time because the applications have to be downloaded from the internet and installed on your computer. When finished, you have a all-round Ubuntu-PC!"
+
+#: view_home_about_9
+msgid "Wichtig: Man braucht schon eine schnelle Internet-Verbindung. Für Ubuntu-Nutzer, die noch ein Modem oder ähnliches nutzen, planen wir die Möglichkeit, automatisch CDs und DVDs zu erstellen."
+msgstr "Important: a fast internet-connection is needed. For Ubuntu-users with a slow internet-connection, e. g. a modem, we intend to introduce a feature to create CDs and DVDs automatically."
+
+#: view_home_auth_error_0
+msgid "Authentifizierungs-Fehler"
+msgstr "Error with authentication"
+
+#: view_home_auth_error_1
+msgid "Die Daten, die du an Communtu geschickt hast, konnten nicht korrekt authentifiziert werden. Bitte versuche, dich noch einmal anzumelden bzw. das entsprechende Formular noch einmal auszufüllen."
+msgstr "The file you sent to Communtu couldn't be authenticated. Please try again with logging in again or filling in the form again."
+
+#: view_home_beteiligung_1
+msgid "Anwenden der Plattform"
+msgstr "using the platform"
+
+#: view_home_beteiligung_10
+msgid "Grafik"
+msgstr "Graphic"
+
+#: view_home_beteiligung_11
+msgid "Wir benötigen eine Person, die für das Projekt das Layout übernimmt. Dies bedeutet Grafiken einbinden und die Hauptverantwortung für das CSS übernehmen."
+msgstr "We need someone who is responsible for the project's layout. This means to integrate every graphic and to take over the main responsibility for the CSS."
+
+#: view_home_beteiligung_12
+msgid "Programmierung"
+msgstr "Programming"
+
+#: view_home_beteiligung_13
+msgid "Da wir viele Ideen für die Weiterentwicklung der Plattform haben, benötigen wir noch eine/n ProgrammiererIn. Idealerweise hast Du schon Erfahrungen in Ruby on Rails sammeln können."
+msgstr "Since we have many ideas for the platform's further development, we need programmers. Ideally you already have some experience with Ruby on Rails."
+
+#: view_home_beteiligung_14
+msgid "Wir können Dir auch helfen diese Programmiersprache zu lernen. Also melde Dich einfach bei "
+msgstr "We can also help you to learn this programming-language. You just have to contact"
+
+#: view_home_beteiligung_15
+msgid "uns"
+msgstr "us"
+
+#: view_home_beteiligung_2
+msgid "Als erstes würden wir uns natürlich freuen, wenn Du Communtu nutzt, um eine Installation durchzuführen.  In unseren Bündeln gibt es schon ein paar ganz gut auf bestimmte Eigenschaften zugeschnittende Installationsvorschläge. Vielleicht ist ja etwas für Dich dabei. Weiter gibt es dort auch die Möglichkeit die eigene Paketliste hochzuladen, damit diese auch anderen zur Verfügung gestellt wird. Dies ist die einfachste Form ein Bündel anzulegen. Du musst diese Paketliste aber auch nicht veröffentlichen. Du kannst Communtu auch einfach nur als Speicherort für Deine Paketliste gebrauchen und dann auf anderen Rechnern dieses Bündel installieren."
+msgstr "We would be very delighted if you would use Communtu to carry out an installation. We already have many bundles which are set up to specific characteristics. Maybe one of the bundles is suitable for you. Furthermore you can upload your own package-list to share it with other users. This is the most simple way to create a bundle, but you don't have to publish it. Of course you can use Communtu only as a saving place for your package list so you can install it on an other computer."
+
+#: view_home_beteiligung_3
+msgid "Wir brauchen die Informationen"
+msgstr "We need the information"
+
+#: view_home_beteiligung_4
+msgid ""
+"Du denkst, dass Du schon vieles zu Open Source Programmen weisst? \n"
+"Dann schreibe Deine Erfahrungen in den Kommentaren zu den Paketen oder hast Du vielleicht ein tolles\n"
+"Video zu dem Programm bei Youtube gesehen? Dann trag es doch gleich bei\n"
+"den Videos zu den Programmen in Communtu ein."
+msgstr ""
+
+#: view_home_beteiligung_5
+msgid "Umfrage zu beteiligen"
+msgstr "participate in the survey"
+
+#: view_home_beteiligung_7
+msgid "Wir benötigen Feedback. Wir möchten, dass Communtu von allen genutzt werden kann. Dazu benötigen wir Feedback. Hast Du einen Fehler auf der Plattform gefunden? Findest Du etwas unverständlich? Glaubst Du, dass wir was besser machen können? Hast Du eine Anregung für uns? Feedback ist uns Willkommen unter "
+msgstr "We need feedback. Our desire is, that Communtu will be used by everyone and for this we need feedback. You found an error in the system? Is there something that is incomprehensible to you? You think, you could do something better? You have some suggestions for us? Feedback is accepted under"
+
+#: view_home_beteiligung_8
+msgid "Mitarbeit"
+msgstr "co-operation"
+
+#: view_home_beteiligung_9
+msgid "Momentan benötigen wir noch Unterstützung bei der Entwicklung des Projektes bei folgenden zwei Tätigkeiten:"
+msgstr "For the development of the project we currently need support with these two jobs:"
+
+#: view_home_cancel_0
+msgid ""
+"Communtu -\n"
+" leider hat da etwas beim Spenden nicht funktioniert."
+msgstr ""
+
+#: view_home_cancel_1
+msgid "Endweder versuchst Du es noch einmal oder Du nutzt die Möglichkeit per Überweisung"
+msgstr "Either you try a again or you use the possibility via bank transfer"
+
+#: view_home_contact_us_0
+msgid "Feedbackformular"
+msgstr "Feedback"
+
+#: view_home_contact_us_1
+msgid "Hier hast Du die Möglichkeit uns ein Feedback zu senden."
+msgstr "Here you have the possibility to send us feedback."
+
+#: view_home_contact_us_4
+msgid "Senden"
+msgstr "Send"
+
+#: view_home_derivatives_1
+msgid "Communtu setzt auf einer Ubuntu-Basisinstallation auf. Es gibt nun eine ganze Reihe von "
+msgstr "Communtu is based on a standard-installation of Ubuntu. There are many different "
+
+#: view_home_derivatives_10
+msgid "http://wiki.ubuntuusers.de/Ubuntu_Studio"
+msgstr "https://wiki.ubuntu.com/UbuntuStudio"
+
+#: view_home_derivatives_11
+msgid " - Ubuntu Multimedie-Edition. Sie wird bei Communtu mitinstalliert, wenn du bei Audio, Film und/oder Grafik/Design \"erweitert\" anwählst."
+msgstr " - Ubuntu multimedia-edition. This will be automatically installed when \"advanced\" is checked at audio, film and/or graphic/design."
+
+#: view_home_derivatives_12
+msgid " stellt Multimedia-Paketquellen bereit, die aus rechtlichen Gründen nicht von Ubuntu selbst angeboten wird. Medibuntu wird bei Communtu mit berücksichtigt (z.B. bei Audio und Film)."
+msgstr " provides multimedia package-sources. Because of legal reasons they cannot be offered by Ubuntu. Medibuntu is supported by Communtu (e. g. for audio or films)."
+
+#: view_home_derivatives_13
+msgid " - der PC wird zum Videorekorder. Bei Film \"Freak\" auswählen, und es wird mitinstalliert. Empfohlen: CPU mit 2 GHz, 1024 MByte RAM, 10 GByte Festplattenplatz für das Frontend, 80+ GByte für das Backend, eine Grafikkarte mit 128 MByte RAM mit TV-Ausgang und eine unterstützte TV-Karte."
+msgstr " - the PC becomes a VCR. Select \"Freak\" at \"Movie\" and it will be installed. Recommended: CPU with 2 GHz, 1024 MB-RAM, 10 GB free harddisk space for the frontend, at least 80 GB for the backend, a graphic card with at least 128 MB RAM and a TV Out and a supported TV card."
+
+#: view_home_derivatives_14
+msgid " - Lernsoftware. Bei \"Bildung und Wissenschaft\" den Level \"erweitert\" auswählen, und es wird mitinstalliert."
+msgstr " - learning software. Choose \"advanced\" under \"Education and science\" and it will be installed."
+
+#: view_home_derivatives_15
+msgid "http://wiki.ubuntuusers.de/KDE"
+msgstr "http://en.wikipedia.org/wiki/KDE"
+
+#: view_home_derivatives_16
+msgid " ist Ubuntu mit dem KDE-Desktop.\t"
+msgstr " is Ubuntu with the KDE-Dekstop"
+
+#: view_home_derivatives_17
+msgid "http://de.wikipedia.org/wiki/Linux_Mint"
+msgstr "http://en.wikipedia.org/wiki/Linux_Mint"
+
+#: view_home_derivatives_18
+msgid " ist eine Ubuntu-Abspaltung mit eigener User-Community, die sich vor allem Benutzerfreundlichkeit auf die Fahnen schreibt. Linux Mint ähnelt Ubuntu sehr, hat aber viele Codes, z.B. für DVDs und MP3s, schon vorinstalliert. Diese Codecs gibt es allerdings auch bei Communtu, unter Unterhaltungsmedien. "
+msgstr " is a Ubuntu spin-off with its own user community which has dedicated itself to usability. Linux Mint is quite similar to Ubuntu but has more codecs, like to watch DVDs or listen to MP3s, pre-installed. Those codecs are available via Communtu, listet at \"Sound & Video\"."
+
+#: view_home_derivatives_2
+msgid "Ubuntu-Derivaten"
+msgstr "Ubuntu derivatives"
+
+#: view_home_derivatives_20
+msgid "\tAutomatix war eine Installationshilfe, die sich großer Beliebtheit erfreute (sie wurde sogar von der New York Times empfohlen), die aber nicht ganz den Ubuntu-Programmierstandards entsprach und inzwischen nicht mehr weiterentwickelt wird. "
+msgstr "\tAutomatix was a programm to assist the installation of software and enjoyed great popularity (Automatix was even recommended by the New York Times). However, Automatix did not meet the Ubuntu-standards and the delevopment had been stopped."
+
+#: view_home_derivatives_21
+msgid "Über Communtu nachinstallierbare Derivate, sinnvollerweise auf einer Xfce-basierten Installation (z.B. Xubuntu) aufzusetzen:"
+msgstr "Derivatives which are based on a Xfce-installation (like Xubuntu) and that can be post-installed with Communtu:"
+
+#: view_home_derivatives_22
+msgid " - orient an BeOS, setzt auf Schnelligkeit, Kompatibilität mit alten Rechnern und einfache Bedienung. CPU mit mindestens 200 MHZ 128 MB RAM (zum Betrieb, zur Installation werden 192 MB RAM benötigt); 2 GB freier Festplattenplatz (Empfohlen: 4 GB oder mehr); 16 MB Grafikkarte (Empfohlen: Intel GMA 9xx). "
+msgstr " - leaned to be like BeOS, ZevenOS focuses on speed and compatibility for old computers with a simple interface. CPU with at least 200 MHz, 128 MB RAM (for operating, while installing 192 MB RAM are required), at least 2 GB free hard disk space (recommended are 4 GB free hard disk space or more), 16 MB graphic card (recommended: Intel GMA 9xx)."
+
+#: view_home_derivatives_24
+msgid "Derivate, die mit der Derivats-eigenen Installations-CD installiert werden sollten:"
+msgstr "Derivatives, which should be installed with the derivative installation-CD:"
+
+#: view_home_derivatives_25
+msgid "http://wiki.ubuntuusers.de/Xfce"
+msgstr "http://en.wikipedia.org/wiki/Xfce"
+
+#: view_home_derivatives_26
+msgid " - mit dem schlanken Xfce als grafischer Oberfläche - besonders für ältere Rechner geeignet: 128 MByte Arbeitsspeicher und 1,5 GB auf der Festplatte reichen aus. Sollte von CD installiert werden, um wirklich eine schlanke Installation zu haben. Nachinstallationen mit Communtu möglich."
+msgstr " - with the slim Xfce as the graphical interface. Particularly suitable for older computers: 128 MB RAM and 1,5 GB free hard disk space are sufficiant. Should be installed from the CD to guarantee a slim installation. Post-installation can be done with Communtu."
+
+#: view_home_derivatives_27
+msgid "http://de.wikipedia.org/wiki/LinuxMCE"
+msgstr "http://en.wikipedia.org/wiki/LinuxMCE"
+
+#: view_home_derivatives_28
+msgid " - damit wird Ubuntu zum "
+msgstr " - with this, Ubuntu is going to be "
+
+#: view_home_derivatives_29
+msgid "Fernsehcomputer"
+msgstr "a computer to watch TV"
+
+#: view_home_derivatives_3
+msgid "http://wiki.ubuntuusers.de/Was_ist_Linux?#Was-sind-Derivate-einer-Distribution"
+msgstr "http://wiki.ubuntuusers.de/Was_ist_Linux?#Was-sind-Derivate-einer-Distribution (German)"
+
+#: view_home_derivatives_30
+msgid "http://de.wikipedia.org/wiki/Home_Theater_Personal_Computer"
+msgstr "http://en.wikipedia.org/wiki/Home_theater_PC"
+
+#: view_home_derivatives_31
+msgid ". Aufgrund der notwendigen Treiberinstallation sollte Linux MCE direkt installiert werden, Communtu kann dann aber für die Installation weiterer Software genutzt werden."
+msgstr ". Because of the necessary installation of drivers, Linux MCE should be installed directly. However, Communtu can be used to install additional software."
+
+#: view_home_derivatives_32
+msgid " ist ein Ubuntu-Derivat komplett aus freier Software. Nur für erfahrene Nutzer geeignet. Sollte mit der Gobuntu-CD installiert werden, damit es auch wirklich nur freie Software ist. Nachinstallationen mit Communtu möglich, sinnvollerweise sollten dann im Nutzerprofil \"freie Software\" angewählt werden. Dies Derivate ist in der Version 8.04 erhältlich und wird nicht weiterentwickelt."
+msgstr " is a Ubuntu derivative consisting only of free software. Suitable only for experienced users. Should only be installed with the Gobuntu-CD so that only free software is provided. A further installation with Communtu is possible, but \"Free software\" should be selected in the user profile. This derivative is available in Ubuntu 8.04 and development is currently discontinued."
+
+#: view_home_derivatives_33
+msgid "http://de.wikipedia.org/wiki/GNU-Varianten#Nexenta_OS"
+msgstr "http://en.wikipedia.org/wiki/Nexenta_OS"
+
+#: view_home_derivatives_34
+msgid " - ersetzt den Linux-Kern durch OpenSolaris. Stellt nur eine minimale Basis an Anwendungen bereit. Die Installation weiterer Pakete bleibt dem Benutzer überlassen; hierfür kann Communtu genutzt werden."
+msgstr " - replaces the Linux core with OpenSolaris. Provides only a minimal basis to applications. The installation of additional software is left to the user; Communtu can be used for this."
+
+#: view_home_derivatives_35
+msgid "Es gibt noch weitere Derivate zu denen wir bisher noch keine Installationsempfehlung abgeben können:"
+msgstr "There are several other derivatives for which we cannot give any recommendations for installation:"
+
+#: view_home_derivatives_36
+msgid " - eine afrikanische Ubuntu-Variante, die allerdings offenbar nicht übers Internet erhältlich ist."
+msgstr " - an African version of Ubuntu, which is apparently not available over the internet."
+
+#: view_home_derivatives_37
+msgid "http://de.wikipedia.org/wiki/LinEx"
+msgstr "http://en.wikipedia.org/wiki/LinEx"
+
+#: view_home_derivatives_38
+msgid " - öffentliche Distribution der spanischen Region Extremadura."
+msgstr " - public distribution for the Spanish region of Extremadura."
+
+#: view_home_derivatives_39
+msgid " für ältere PCs. Sie baut auf einer LXDE Oberfläche auf."
+msgstr " for older PCs. It is based on the LXDE-GUI."
+
+#: view_home_derivatives_4
+msgid ", und viele Ubuntu-Nutzer fragen sich,  ob sie statt Ubuntu lieber ein Derivat benutzen sollten. Die Antwort ist: meistens fährt man mit dem Standard-Ubuntu ganz gut, denn Communtu erlaubt, die Derivate auf einfache Weise nachzuinstallieren.  Allerdings ist das nicht bei allen Derivaten gleich sinnvoll."
+msgstr " and many Ubuntu-users may ask themselves if they should use a derivative instead of Ubuntu. The answer is: normally the standard version of Ubuntu completely sufficiant because with Communtu it is quite easy to install a derivaitve. However, this is not always a wise decision."
+
+#: view_home_derivatives_40
+msgid " - für mobile Internetgeräte."
+msgstr " - for portable internet devices."
+
+#: view_home_derivatives_41
+msgid " Ubuntu ultimate  - Ubuntu mit vielen Desktop-Desgins und Programmen."
+msgstr "Ubuntu ultimate - Ubuntu with many desktop-designs and applications."
+
+#: view_home_derivatives_42
+msgid " - spezialisiert auf Webdienste."
+msgstr " - specialised for webservices."
+
+#: view_home_derivatives_43
+msgid " - basiert auf E17. 2D-Effekte auch ohne schnelle Grafikkarte."
+msgstr " - based on E17. 2D-effects even without a fast graphic card."
+
+#: view_home_derivatives_44
+msgid " - minimalistische schnelle Ubuntu-Version für ältere PCs."
+msgstr " - minimalist and fast version of Ubuntu for older PCs."
+
+#: view_home_derivatives_45
+msgid "http://wiki.ubuntuusers.de/Server_Installation"
+msgstr "http://wiki.ubuntuusers.de/Server_Installation (German)"
+
+#: view_home_derivatives_46
+msgid " - Server-Version von Ubuntu, ohne grafische Oberfläche."
+msgstr " - Ubuntu server-version without any GUI."
+
+#: view_home_derivatives_47
+msgid "http://wiki.ubuntuusers.de/JeOS"
+msgstr "http://en.wikipedia.org/wiki/JeOS"
+
+#: view_home_derivatives_48
+msgid " - minimale Server-Version, vor allem für Virtualisierung geeignet.."
+msgstr " - minimal server-version, suitable for virtualizations."
+
+#: view_home_derivatives_49
+msgid " - Ubuntu mit Enlightenment als Desktopumgebung."
+msgstr " - Ubuntu with Enlightenment as a desktop environment."
+
+#: view_home_derivatives_5
+msgid "Alle Derivate können unter der "
+msgstr "Each derivative under "
+
+#: view_home_derivatives_50
+msgid " - mit Fluxbox und verschiedenen Netzwerk-Sicherheitswerkzeugen ."
+msgstr " - with Fluxbox and several network-tools."
+
+#: view_home_derivatives_51
+msgid " - Installation von Programmen und Versionen, die nicht über die offiziellen Repositories erhältlich sind."
+msgstr " - Installation of programs and version, which are not available through the official repositories."
+
+#: view_home_derivatives_52
+msgid " - eine Art Automatix für die Ultimate Edition."
+msgstr " - a kind of Automatix for the ultimate edition."
+
+#: view_home_derivatives_53
+msgid " - erlaubt schnellere Installation, da nur die aktuellsten Pakete heruntergeladen werden."
+msgstr " - allows a faster installation, as only the latest packages are downloaded."
+
+#: view_home_derivatives_55
+msgid " - Mediacenter."
+msgstr " - Mediacenter."
+
+#: view_home_derivatives_56
+msgid "http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix"
+msgstr "http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix (German)"
+
+#: view_home_derivatives_57
+msgid "für Subnotebooks/EEE-PCs"
+msgstr " for subnotebooks/EEE-PCs."
+
+#: view_home_derivatives_6
+msgid "Installations-Feinauswahl"
+msgstr "detailed selection"
+
+#: view_home_derivatives_7
+msgid "unter der Kategorie \"Derivate\" zur Installation ausgewählt werden."
+msgstr "can be chosen to be installed in the category \"Derivatives\"."
+
+#: view_home_derivatives_8
+msgid "Ebenso kannst du dort nachgucken, aus welchen Paketen ein Derivat besteht."
+msgstr "You can also take a look of which packages a derivative consists."
+
+#: view_home_derivatives_9
+msgid "Über Communtu sinnvoll nachinstallierbare Derivate:"
+msgstr "With Communtu installable derivatives:"
+
+#: view_home_faq_00
+msgid "Häufig gestellte Fragen"
+msgstr ""
+
+#: view_home_faq_01
+msgid "Was ist ein Bündel?"
+msgstr "What is a bundle?"
+
+#: view_home_faq_02
+msgid "Ein Bündel ist eine Zusammenstellung von Software für einen bestimmten Aufgabenbereich, den Du mit Deinem Rechner erledigen kannst."
+msgstr ""
+
+#: view_home_faq_03
+msgid "Wie installiere ich ein Bündel?"
+msgstr "How do I install a bundle?"
+
+#: view_home_faq_04
+msgid "Ein Bündel kann einmal in einer Zusammenstellung mit weiteren über den Punkt \"Installation\" zum Computer hinzugefügt werden. Andererseits kann auch ein Bündel direkt installiert werden, wenn Du über den Menüpunkt \"Bündel verwalten\" gehst."
+msgstr ""
+
+#: view_home_faq_05
+msgid "Wie erstelle ich ein Bündel?"
+msgstr "How do I create a bundle?"
+
+#: view_home_faq_06
+msgid "Auf den linken Bereich der Webseite gibt es den Bündel-Editor. Dort bitte den Punkt \"Neues Bündel\" anklicken. Aus den Paketen im Hauptfenster der Webseite kannst Du dann die einzelnen Pakete auswählen und hinzufügen. Zum Schluss muss dann auf das Speichernsymbol im Bündeleditor geklickt werden. Hier öffnet sich dann im Hauptfenster ein Formular, wo Du einen sinnvollen Titel und Beschreibung eingeben kannst. Bitte ordne Deinem Bündel auch eine entsprechende Kategorie zu."
+msgstr ""
+
+#: view_home_faq_07
+msgid "Wie kann ich ein Bündel bewerten?"
+msgstr ""
+
+#: view_home_faq_08
+msgid "Du gehst auf den Menüpunkt \"Bündel verwalten\" und lässt Dir unter \"Alle veröffentlichten Bündel\" die Bündel anzeigen. Dort kannst Du bis zu fünf Sterne anklicken. Danach erscheint ein Kommentarfeld, in dem Du diese Bewertung qualifizieren kannst."
+msgstr ""
+
+#: view_home_faq_09
+msgid "Wie kann ich ein Bündel ändern?"
+msgstr ""
+
+#: view_home_faq_10
+msgid "Du gehst auf den Menüpunkt \"Bündel verwalten\" und läßt Dir da Deine Bündel auflisten. Das zu ändernde Bündel klickst Du nun an. Du bekommst nun alle wichtigen Informationen zu Deinem Bündel angezeigt. Unter \"Aktionen\" kannst Du nun dieses Bündel oder auch die Paketliste editieren. Wenn das Paket nicht veröffentlicht ist, dann kannst Du es auch löschen oder ansonsten auch veröffentlichen."
+msgstr ""
+
+#: view_home_faq_11
+msgid "Wie sichere ich die Programmliste meines Gesamtsystems?"
+msgstr ""
+
+#: view_home_faq_12
+msgid "Auf den linken Bereich der Webseite gibt es den Bündel-Editor. Dort bitte den Punkt \"Bündel aus Paketliste\" anklicken. Dort ist beschrieben, wie Du Deine Paketliste in Communtu hochladen kannst."
+msgstr ""
+
+#: view_home_faq_13
+msgid "Wie finde ich Programme?"
+msgstr "How do i find programes?"
+
+#: view_home_faq_14
+msgid "Gehe dazu bitte auf den Menüpunkt \"Programme suchen\". Hier hast Du ein Suchfeld, in dem Du den Namen des gesuchten Prgramms angeben kannst. Weiter ist es möglich die Suche nur über Programme durchzuführen, in dem das Feld \"Nur Programme\" angeklickt wird und somit sonstige Bibliotheken nicht mehr angezeigt werden. Weiter ist es auch möglich eine Debian-Section auszuwählen, der die Auswahl an Programmen anhand von Kategorien vorselektiert."
+msgstr ""
+
+#: view_home_faq_15
+msgid "Wie kann ich ein einzelnes Programm installieren?"
+msgstr "How can I install a single program?"
+
+#: view_home_faq_16
+msgid "Gehe dazu bitte auf den Menüpunkt \"Programme suchen\". Dort bekommst Du eine Auswahl von Programmen. Wenn Du Dein gewünschtes Programm gefunden hast, kannst Du dieses durch Klicken auf das Installationssymbol installieren.  Es ist möglich, dass Du vorher noch auf \"Quellen hinzufügen\" klicken musst, da es sein kann, dass das Programm in einer Quelle verfügabr ist, die Deinem System noch nicht bekannt ist."
+msgstr ""
+
+#: view_home_faq_17
+msgid "Wie kann ich Programme vorschlagen, dass diese in Communtu mit aufgenommen werden?"
+msgstr ""
+
+#: view_home_faq_18
+msgid "Wenn Du über \"Programme suchen\" ein bestimmtes Programm nicht gefunden hst, kann es daran liegen, das wir die Quelle aus dem das Programm kommt, noch nicht in Communtu eingetragen haben. Du kannst uns diese Quelle über den \"Bündel-Editor\" unter den Punkt \"Repository vorschlagen\" melden, damit diese auch in Communtu eingearbeitet werden kann."
+msgstr ""
+
+#: view_home_home_1
+msgid "http://www.ubuntuusers.de"
+msgstr "http://www.ubuntuusers.de (German)"
+
+#: view_home_home_10
+msgid "<b>Ubuntu-Versionen</b> Übersicht über die im System verfügbaren Ubuntu-Versionen (Distributionen)."
+msgstr "<b>Ubuntu-releases</b> Overview about the available Ubuntu-releases (distributions)."
+
+#: view_home_home_11
+msgid "<b>Benutzer verwalten</b> Hier kannst du als Admin die Rollen der Benutzer ändern. Vorsicht walten lassen!"
+msgstr "<b>Administrate users</b> As an administrator you can change the role of the users. Act with caution!"
+
+#: view_home_home_12
+msgid "<b>Kategorien verwalten</b> Hier kannst du als Admin neue Kategorien erstellen oder die Struktur des Kategorienbaums ändern. Vorsicht walten lassen!"
+msgstr "<b>Administrate categories</b> As an administrator you can create new categories or change the structure of a category-tree here. Act with caution!"
+
+#: view_home_home_13
+msgid "<b>Aktuelles</b> Hinweise auf Veranstaltungen zu Communtu, Communtu-Blog ..."
+msgstr "<b>News</b> Reference to events about Communtu, the Communtu-blog ..."
+
+#: view_home_home_14
+msgid "Es gibt auch noch "
+msgstr "There are also "
+
+#: view_home_home_15
+msgid "genauere Infos"
+msgstr "more detailled information"
+
+#: view_home_home_16
+msgid " über das Projekt und über die Mitwirkenden im "
+msgstr " about this project and its participants in the "
+
+#: view_home_home_17
+msgid "Impressum."
+msgstr "imprint."
+
+#: view_home_home_18
+msgid "\tKlicke auf\t"
+msgstr "\tClick on\t"
+
+#: view_home_home_2
+msgid "Ubuntu-Linux"
+msgstr "Ubuntu"
+
+#: view_home_home_20
+msgid ", um einen neuen Benutzer anzulegen, oder "
+msgstr " to create a new user or"
+
+#: view_home_home_21
+msgid "melde"
+msgstr "log "
+
+#: view_home_home_22
+msgid " dich an, oder "
+msgstr "in, or "
+
+#: view_home_home_23
+msgid "nutze Communtu anonym"
+msgstr "use Communtu anonymously"
+
+#: view_home_home_24
+msgid "Zum Impressum"
+msgstr "To the imprint"
+
+#: view_home_home_3
+msgid " steht für ein menschliches Linux, das einfach zu benutzen ist. Aber um Ubuntu wirklich gut nutzen zu können, muss man ganz schön viele Programme nachinstallieren, und es ist oft schwer, da den Überblick zu behalten. Bei Communtu gibst du nur an, welche Aufgaben du mit deinem Computer erledigen willst, und Communtu schlägt dir eine ganze Reihe von Programmen vor, die automatisch installiert werden können."
+msgstr " stands for a human Linux that is easy to use. In order to use Ubuntu effectively, a whole bunch of programs have to be installed. It is not always easy to keep an overview. With Communtu you only specify for which purposes you want to use your computer and Communtu suggests a bunch of programs to you which will be installed automatically."
+
+#: view_home_home_4
+msgid "Mehr ..."
+msgstr "More ..."
+
+#: view_home_home_5
+msgid "Die Seitenleiste links bietet folgende Möglichkeiten:"
+msgstr "The menu on the left offers the following possibilities:"
+
+#: view_home_home_6
+msgid "<b>Installation</b> bietet dir eine Zusammenstellung (Bündelung) von Programmen für die Installation auf deinem Computer an, entsprechend deinen Angaben, für welche Aufgaben du deinen Ubuntu-PC benutzen willst."
+msgstr "<b>Installation</b> offers you a summary (bundling) of programs for the installation on your computer, according to your instructions on how you want to use your Ubuntu-PC."
+
+#: view_home_home_7
+msgid "<b>Bündel verwalten</b> Hast du gute Erfahrungen mit Programmen gemacht? Dann kannst du sie hier thematisch bündeln, oder auch bestehende Bündel angucken. "
+msgstr "<b>Administrate bundles</b> Did you make good experiences with programs? Bundle them thematically or take a look at existing bundles."
+
+#: view_home_home_8
+msgid "<b>Programme suchen</b> Hier kannst du nach einzelnen Ubuntu-Programmen (Paketen) suchen."
+msgstr "<b>Search program</b> Here you can search for single Ubuntu-programs (packages)."
+
+#: view_home_home_9
+msgid "<b>Ubuntu-Derivate</b> bietet eine Übersicht über Kubuntu, Xubuntu, Medibuntu und wie sie alle heißen ..."
+msgstr "<b>Ubuntu derivatives</b> is a small overview about Kubuntu, Xubuntu, Medibuntu, etc."
+
+#: view_home_home_new_message_icon
+msgid "zum Posteingang"
+msgstr "to the inbox"
+
+#: view_home_home_new_messages_desc
+msgid "Sie haben neue Nachrichten in Ihrem Posteingang."
+msgstr "You have new messages in your inbox."
+
+#: view_home_home_rating_headline
+msgid "Am besten bewertete Bündel"
+msgstr ""
+
+#: view_home_home_rating_link
+msgid "Zum Bündel bewerten"
+msgstr "rate bundles"
+
+#: view_home_home_rating_rating
+msgid "Wertung"
+msgstr "Rating"
+
+#: view_home_icons_0
+msgid "Icons bei Communtu"
+msgstr "icons used in Communtu"
+
+#: view_home_icons_10
+msgid "Programm"
+msgstr "program"
+
+#: view_home_icons_12
+msgid " Programm (wenn kein anderes Programm-Icon vorhanden)"
+msgstr " Program (if not other program-icon is available)"
+
+#: view_home_icons_13
+msgid "Programm-Bündel"
+msgstr "program-bundle"
+
+#: view_home_icons_15
+msgid " Programm-Bündel"
+msgstr " program-bundle"
+
+#: view_home_icons_16
+msgid " Migration von Repositories"
+msgstr "migration from repositories"
+
+#: view_home_icons_17
+msgid "externer Link"
+msgstr "external link"
+
+#: view_home_icons_19
+msgid " externer Link"
+msgstr " external link"
+
+#: view_home_icons_20
+msgid "User-Icon"
+msgstr "user-icon"
+
+#: view_home_icons_22
+msgid " User Icon"
+msgstr " user-icon"
+
+#: view_home_icons_3
+msgid " Paket(e) installieren."
+msgstr "Install package(s)."
+
+#: view_home_icons_6
+msgid " Quellen installieren"
+msgstr " install sources"
+
+#: view_home_icons_9
+msgid " Installation per Shell-Script"
+msgstr " installation via shell-script"
+
+#: view_home_impressum_11
+msgid "Mitwirkende an der AG Communtu (Alphabetische Reihenfolge):"
+msgstr "Participants of the Communtu-team (alphabetical order):"
+
+#: view_home_impressum_2
+msgid "AG Communtu"
+msgstr "AG Communtu"
+
+#: view_home_impressum_4
+msgid "Bauernstr. 2"
+msgstr "Bauernstr. 2"
+
+#: view_home_impressum_5
+msgid "28203 Bremen"
+msgstr "28203 BremenGermany"
+
+#: view_home_mail_0
+msgid "Benachrichtigung bei Fehlerbehebung"
+msgstr "Notification in bugfixing"
+
+#: view_home_mail_1
+msgid "Bitte benachrichtigt mich unter folgender E-Mail über die Fehlerbehebung."
+msgstr "Please contact me at the following e-mail-address concerning the bugfixing."
+
+#: view_home_new_repository_0
+msgid "Repository vorschlagen"
+msgstr "suggest repository"
+
+#: view_home_new_repository_1
+msgid "Du vermisst hier eine Quelle? Dann kannst Du ein Repository vorschlagen."
+msgstr ""
+
+#: view_home_new_repository_2
+msgid "Link zum Repository"
+msgstr "link to the repository"
+
+#: view_home_new_repository_3
+msgid "Warum soll dies in Communtu eingebaut werden? (Bitte gebe Kontaktdaten an, wenn Du über die Aufnahme informiert werden willst)"
+msgstr ""
+
+#: view_home_news_1
+msgid "Unsere Mailinglisten"
+msgstr "Our mailinglists"
+
+#: view_home_news_10
+msgid "communtu-discuss-de+subscribe@googlegroups.com"
+msgstr "communtu-discuss-de+subscribe@googlegroups.com"
+
+#: view_home_news_11
+msgid "Diese Liste ist für eine Diskussion rund um die Plattform gedacht.  Hier kommt etwas mehr als einmal die Woche eine E-Mail über den Verteiler.   Die Nachrichten werden in einem "
+msgstr "This list is intended for discussion about the platform. The frequency is a little higher than once a week. Posts will be collected in an "
+
+#: view_home_news_13
+msgid "http://groups.google.com/group/communtu-discuss-de/topics?start="
+msgstr "http://groups.google.com/group/communtu-discuss-de/topics?start="
+
+#: view_home_news_15
+msgid "Unser Blog"
+msgstr "Our blog"
+
+#: view_home_news_16
+msgid "Wir haben einen Blog, wo wir aktuelle Informationen zu Communtu eintragen. Hier wird ungefähr einmal die Woche etwas gepostet. Hier werden Ankündigungen und neue Features präsentiert."
+msgstr "We have a blog where we post updated information about Communtu. It gets a new post about once a week. Announcement and new features will be presented here."
+
+#: view_home_news_17
+msgid "Zum Blog"
+msgstr "Go to the blog"
+
+#: view_home_news_18
+msgid "http://communtu.blogspot.com"
+msgstr "http://communtu.blogspot.com"
+
+#: view_home_news_2
+msgid "Um die Kommunikation mit unseren Nutzern zu verbessern, haben wir Mailinglisten eingerichtet:"
+msgstr "To improve communication with our users we have set up some mailing lists."
 
 #: view_home_news_24
 msgid "beteiligen"
@@ -2284,243 +1803,1064 @@ msgstr "participate"
 msgid "communtu-announce-de+subscribe@googlegroups.com"
 msgstr "communtu-announce-de+subscribe@googlegroups.com"
 
-#: view_home_news_10
-msgid "communtu-discuss-de+subscribe@googlegroups.com"
-msgstr "communtu-discuss-de+subscribe@googlegroups.com"
+#: view_home_news_5
+msgid "Diese Liste ist für allgemeine Ankündigungen aus den Communtu Team für die Nutzer gedacht.  Es wir hier ungefähr einmal die Woche eine E-Mail über den Verteiler geschickt.   Die Nachrichten werden in einem "
+msgstr "This list is intended for general announcements from the Communtu team to the users. The frequency is a little higher than once a week. Posts will be collected in an"
 
-#: view_users__user_1
-msgid "deaktivieren"
-msgstr "deactivate"
+#: view_home_news_7
+msgid "http://groups.google.com/group/communtu-announce-de/topics?start="
+msgstr "http://groups.google.com/group/communtu-discuss-en/topics?start="
 
-#: view_user_profiles_help_5
-msgid "du erweiterst Communtu um deine Version"
-msgstr "you expand Communtu with your version"
+#: view_home_news_8
+msgid " gesammelt."
+msgstr "."
 
-#: view_user_profiles_help_4
-msgid "du machst ein Upgrade auf eine neuere Version"
-msgstr "you upgrade to a newer, supported, version"
+#: view_home_success_0
+msgid " Vielen Dank für die Spende"
+msgstr " Thank you for your donation"
 
-#: view_packages__packagelist_10
-msgid "entfernen"
-msgstr "delete"
+#: view_home_success_1
+msgid "Eine Spendenbescheinigung kann ausgestellt werden. Dazu schicke uns bitte eine E-Mail mit Deiner Adresse an: "
+msgstr "We can issue a donation receipt. Please send an e-mail with your address to: "
 
-#: view_messages_show_2
-msgid "erhalten am:"
-msgstr "received on:"
+#: view_layouts_application_0
+msgid "Communtu, Ubuntu, Installation, Installationshilfe"
+msgstr "Communtu, Ubuntu, installation, installation help"
 
-#: view_mailbox_show_3
-msgid "erhalten"
-msgstr "received"
+#: view_layouts_application_1
+msgid "Communtu passt Dein Linux-Ubuntu-System an Deine individuellen Bedürfnisse an."
+msgstr "Communtu customizes your Ubuntu system to your individual needs."
 
-#: view_home_icons_17
-msgid "externer Link"
-msgstr "external link"
-
-#: helper_distributions_0
-msgid "free"
-msgstr "free"
-
-#: view_home_derivatives_57
-msgid "für Subnotebooks/EEE-PCs"
-msgstr " for subnotebooks/EEE-PCs."
-
-#: view_home_home_15
-msgid "genauere Infos"
-msgstr "more detailled information"
-
-#: view_cart_new_from_list_3
-msgid "herausfinden. (Dazu muss das Paket "
-msgstr ". (For this, the package"
-
-#: view_metapackages__metalist_18
-msgid "hinzufügen"
-msgstr "add"
-
-#: view_home_news_18
-msgid "http://communtu.blogspot.com"
-msgstr "http://communtu.blogspot.com"
-
-#: view_home_derivatives_33
-msgid "http://de.wikipedia.org/wiki/GNU-Varianten#Nexenta_OS"
-msgstr "http://en.wikipedia.org/wiki/Nexenta_OS"
-
-#: view_home_derivatives_30
-msgid "http://de.wikipedia.org/wiki/Home_Theater_Personal_Computer"
-msgstr "http://en.wikipedia.org/wiki/Home_theater_PC"
-
-#: view_home_derivatives_37
-msgid "http://de.wikipedia.org/wiki/LinEx"
-msgstr "http://en.wikipedia.org/wiki/LinEx"
-
-#: view_home_derivatives_27
-msgid "http://de.wikipedia.org/wiki/LinuxMCE"
-msgstr "http://en.wikipedia.org/wiki/LinuxMCE"
-
-#: view_home_derivatives_17
-msgid "http://de.wikipedia.org/wiki/Linux_Mint"
-msgstr "http://en.wikipedia.org/wiki/Linux_Mint"
-
-#: view_home_news_13
-msgid "http://groups.google.com/group/communtu-discuss-de/topics?start="
-msgstr "http://groups.google.com/group/communtu-discuss-de/topics?start="
-
-#: view_home_derivatives_47
-msgid "http://wiki.ubuntuusers.de/JeOS"
-msgstr "http://en.wikipedia.org/wiki/JeOS"
-
-#: view_home_derivatives_15
-msgid "http://wiki.ubuntuusers.de/KDE"
-msgstr "http://en.wikipedia.org/wiki/KDE"
-
-#: view_home_derivatives_45
-msgid "http://wiki.ubuntuusers.de/Server_Installation"
-msgstr "http://wiki.ubuntuusers.de/Server_Installation (German)"
-
-#: view_home_derivatives_56
-msgid "http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix"
-msgstr "http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix (German)"
-
-#: view_home_derivatives_10
-msgid "http://wiki.ubuntuusers.de/Ubuntu_Studio"
-msgstr "https://wiki.ubuntu.com/UbuntuStudio"
-
-#: view_home_derivatives_3
-msgid "http://wiki.ubuntuusers.de/Was_ist_Linux?#Was-sind-Derivate-einer-Distribution"
-msgstr "http://wiki.ubuntuusers.de/Was_ist_Linux?#Was-sind-Derivate-einer-Distribution (German)"
-
-#: view_home_derivatives_25
-msgid "http://wiki.ubuntuusers.de/Xfce"
-msgstr "http://en.wikipedia.org/wiki/Xfce"
-
-#: view_user_profiles__installation_28
-msgid "http://wiki.ubuntuusers.de/apturl"
-msgstr "https://wiki.ubuntu.com/AptUrl"
-
-#: lib_system_2
-msgid "http://www.communtu.de"
-msgstr "http://www.communtu.de"
-
-#: view_home_home_1
-msgid "http://www.ubuntuusers.de"
-msgstr "http://www.ubuntuusers.de (German)"
-
-#: view_user_profiles__installation_21
-msgid "installieren der Metapakete. Bitte vorher die Quellen hinzufügen."
-msgstr "Installation of the metapackages. Please add the sources first."
-
-#: view_metapackages__metalist_14
-msgid "installieren mittels Metapaket. Bitte vorher die Quellen hinzufügen."
-msgstr "install through meta package. Please add the sources first."
-
-#: view_home_icons_7
-msgid "installieren mittels Skript"
-msgstr "installing via script"
-
-#: view_packages_show_1
-msgid "installieren"
-msgstr "Install"
-
-#: view_packages_show_6
-msgid "ja"
-msgstr "yes"
-
-#: view_layouts_application_18
-msgid "keine neuen Nachrichten"
-msgstr "no new messages"
-
-#: helper_distributions_13
-msgid "löschen"
-msgstr "delete"
-
-#: view_home_home_21
-msgid "melde"
-msgstr "log "
-
-#: view_metapackages__metalist_7
-msgid "nein"
-msgstr "no"
-
-#: view_metapackages_show_1
-msgid "neue Nachricht schreiben"
-msgstr "compose a new message"
-
-#: view_layouts_application_16
-msgid "neue Nachricht"
-msgstr "new message"
-
-#: view_metapackages_show_12
-msgid "nicht veröffentlicht"
-msgstr "not published"
-
-#: helper_distributions_1
-msgid "non-free"
-msgstr "non-free"
-
-#: view_home_home_23
-msgid "nutze Communtu anonym"
-msgstr "use Communtu anonymously"
-
-#: view_layouts_application_5
-msgid "per PayPal:"
-msgstr "by PayPal:"
-
-#: controller_repositories_3
-msgid "sources.list eingelesen."
-msgstr "sources.list read."
-
-#: view_distributions_show_3
-msgid "sources.list einlesen"
-msgstr "read sources.list"
-
-#: view_user_mailer_signup_notification_2
-msgid "um zu unserem Projekt zu gelangen"
-msgstr "to get to our project"
-
-#: helper_distributions_10
-msgid "und bearbeiten"
-msgstr "and edit"
-
-#: view_home_beteiligung_15
-msgid "uns"
-msgstr "us"
-
-#: view_home_derivatives_7
-msgid "unter der Kategorie \"Derivate\" zur Installation ausgewählt werden."
-msgstr "can be chosen to be installed in the category \"Derivatives\"."
-
-#: view_sent_index_0
-msgid "verschickte Nachrichten"
-msgstr "sent messages"
-
-#: view_metapackages_show_10
-msgid "veröffentlicht"
-msgstr "published"
-
-#: view_metapackages__metalist_5
-msgid "zur Detailansicht"
-msgstr "go to detailed view"
-
-#: view_user_profiles_help_1
-msgid "Öffne ein Terminal unter \"Anwendungen\" -> \"Zubehör\" -> \"Terminal\""
-msgstr "Open a new terminal. Click on \"Applications\" -> \"Accessories\" -> \"Terminal\""
-
-#: view_home_derivatives_21
-msgid "Über Communtu nachinstallierbare Derivate, sinnvollerweise auf einer Xfce-basierten Installation (z.B. Xubuntu) aufzusetzen:"
-msgstr "Derivatives which are based on a Xfce-installation (like Xubuntu) and that can be post-installed with Communtu:"
-
-#: view_home_derivatives_9
-msgid "Über Communtu sinnvoll nachinstallierbare Derivate:"
-msgstr "With Communtu installable derivatives:"
+#: view_layouts_application_11
+msgid "Anonym nutzen"
+msgstr "Anonymous access"
 
 #: view_layouts_application_13
 msgid "Über Communtu"
 msgstr "About Communtu"
 
-#: view_categories_new_3
-msgid "Übergeordnete Kategorie"
-msgstr "superior category"
+#: view_layouts_application_14
+msgid "Feedback an Communtu"
+msgstr "Feedback to Communtu"
 
-#: view_categories_show_3
-msgid "Übergeordnete Kategorie:"
-msgstr "Superior category:"
+#: view_layouts_application_15
+msgid "angemeldet als  "
+msgstr "logged in as "
+
+#: view_layouts_application_16
+msgid "neue Nachricht"
+msgstr "new message"
+
+#: view_layouts_application_18
+msgid "keine neuen Nachrichten"
+msgstr "no new messages"
+
+#: view_layouts_application_19
+msgid "https://www.paypal.com/de_DE/DE/i/btn/btn_donate_LG.gif"
+msgstr ""
+
+#: view_layouts_application_2
+msgid "Communtu"
+msgstr "Communtu"
+
+#: view_layouts_application_3
+msgid "Ubuntu Logo"
+msgstr "Ubuntu logo"
+
+#: view_layouts_application_5
+msgid "per PayPal:"
+msgstr "by PayPal:"
+
+#: view_layouts_application_6
+msgid "Jetzt einfach, schnell und sicher online spenden – mit PayPal."
+msgstr "Donate now online using PayPal, it is easy, quick and secure."
+
+#: view_layouts_application_8
+msgid "Start"
+msgstr "Start"
+
+#: view_layouts_application_9
+msgid "Abmelden"
+msgstr "Log out"
+
+#: view_mailbox_show_1
+msgid "Von"
+msgstr "From"
+
+#: view_mailbox_show_3
+msgid "erhalten"
+msgstr "received"
+
+#: view_mailbox_show_5
+msgid "Sie haben keine Nachrichten in ihrem Posteingang."
+msgstr "You have no messages in your inbox."
+
+#: view_messages_show_0
+msgid "Von:"
+msgstr "From:"
+
+#: view_messages_show_2
+msgid "erhalten am:"
+msgstr "received on:"
+
+#: view_messages_show_3
+msgid "Antworten"
+msgstr "Reply"
+
+#: view_messages_show_4
+msgid "Weiterleiten"
+msgstr "Forward"
+
+#: view_metapackages__metalist_10
+msgid "Bewertung"
+msgstr "Rating"
+
+#: view_metapackages__metalist_14
+msgid "installieren mittels Metapaket. Bitte vorher die Quellen hinzufügen."
+msgstr "install through meta package. Please add the sources first."
+
+#: view_metapackages__metalist_2
+msgid "Standard"
+msgstr "Standard"
+
+#: view_metapackages__metalist_20
+msgid "<option>0 Bündel ausgewählt</option>"
+msgstr "<option>0 bundles selected</option>"
+
+#: view_metapackages__metalist_3
+msgid "Öff."
+msgstr ""
+
+#: view_metapackages__package_list_0
+msgid "Gesamtgröße des Bündels auf der Festplatte:"
+msgstr "Total size of bundle on disk:"
+
+#: view_metapackages__package_list_conflicts
+msgid "Konflikte mit folgenden Paketen/Bündeln:"
+msgstr "Conflicts with the following packages/bundles:"
+
+#: view_metapackages_edit_2
+msgid "Bitte Versionen => 1.0 nur für ausgereifte Bündel verwenden. Versionsnummern müssen stets ansteigen. 0.10 ist höher als 0.9."
+msgstr "Pleas use versions => 1.0 only for stable bundles. A version must always increase. 0.10 is higher than 0.9."
+
+#: view_metapackages_edit_gpl
+msgid "Ich stimme zu, die Bündel Information unter der <a href=\"http://www.gnu.de/documents/gpl.de.html\">GNU General public license</a> (Version 2.0 oder höher) zu veröffentlichen."
+msgstr ""
+
+#: view_metapackages_finish_migrate_0
+msgid "Alle Bündel wurden von "
+msgstr "All bundles were migrated from"
+
+#: view_metapackages_finish_migrate_1
+msgid " nach "
+msgstr " to"
+
+#: view_metapackages_finish_migrate_2
+msgid " migriert."
+msgstr "."
+
+#: view_metapackages_finish_migrate_3
+msgid "Folgende Pakete konnten jedoch nicht migriert werden:"
+msgstr "The following packages could not be migrated:"
+
+#: view_metapackages_finish_migrate_6
+msgid "Weiter"
+msgstr "Forward"
+
+#: view_metapackages_immediate_conflicts_0
+msgid "Konflikte innerhalb von Bündeln"
+msgstr "Conflicts inside bundles"
+
+#: view_metapackages_immediate_conflicts_1
+msgid " ist in Konflikt mit "
+msgstr " conflicts with"
+
+#: view_metapackages_migrate_0
+msgid "Von welcher Distribution sollen die Bündel migriert werden ?"
+msgstr "Wich distribution are the bundles to be migrated from?"
+
+#: view_metapackages_migrate_1
+msgid "Zu welcher Distribution sollen die Bündel migriert werden ?"
+msgstr "Which distribution are the bundles to be migrated to?"
+
+#: view_metapackages_new_4
+msgid "Standardmäßig installieren"
+msgstr "Install by default"
+
+#: view_metapackages_rdepends_0
+msgid "Im Bündel "
+msgstr "In bundle"
+
+#: view_metapackages_rdepends_1
+msgid " direkt und indirekt enthaltene Bündel und Pakete"
+msgstr " directly an indirectly contained bundles and packages"
+
+#: view_metapackages_show_0
+msgid "Bündel erstellt von "
+msgstr "Bundle created by"
+
+#: view_metapackages_show_12
+msgid "nicht veröffentlicht"
+msgstr "not published"
+
+#: view_metapackages_show_14
+msgid "  Aktionen:&nbsp;&nbsp;"
+msgstr " Actions:&nbsp;&nbsp;"
+
+#: view_metapackages_show_15
+msgid "Editieren"
+msgstr "Edit"
+
+#: view_metapackages_show_16
+msgid "Paketliste editieren"
+msgstr "Edit package list"
+
+#: view_metapackages_show_17
+msgid "Veröffentlichen"
+msgstr "Publish"
+
+#: view_metapackages_show_18
+msgid "Wenn du das Bündel veröffentlichst, wird es für alle Nutzer zugänglich. Allerdings kann es danach nicht mehr gelöscht oder unbenannt werden."
+msgstr ""
+
+#: view_metapackages_show_3
+msgid "Zurück&nbsp;&nbsp;"
+msgstr "Back&nbsp;&nbsp;"
+
+#: view_metapackages_show_9
+msgid "Veröffentlicht: "
+msgstr "Published:"
+
+#: view_metapackages_show_comment_and_ratings
+msgid "Neuste Kommentare und Bewertungen für dieses Bündel"
+msgstr ""
+
+#: view_metapackages_show_deb_error
+msgid "Beim Erzeugen von Metapaketen ist ein Fehler aufgetreten. Wir kümmern uns um das Problem."
+msgstr ""
+
+#: view_metapackages_show_modified
+msgid "Das Bündel enthält Änderungen."
+msgstr ""
+
+#: view_metapackages_show_save
+msgid "Bündel als Metapaket speichern"
+msgstr "save bundle as a metapackage"
+
+#: view_metapackages_show_version
+msgid "Version:"
+msgstr "Version:"
+
+#: view_metapackages_show_version_v
+msgid "(Version {{v}})"
+msgstr "(version {{v}})"
+
+#: view_my_mailer_mail_0
+msgid ""
+"Hallo, \n"
+"\n"
+"es wurde auf www.communtu.de ein Feedback gesendet. Der Betreff ist:"
+msgstr ""
+
+#: view_my_mailer_mail_1
+msgid "Folgender Kommentar wurde hinterlassen:"
+msgstr "The following comment was made:"
+
+#: view_my_mailer_mailerror_0
+msgid ""
+"Hallo,  \n"
+" es wurde auf www.communtu.de ein Fehlerr gemeldet.  \n"
+"Der Benutzer möchte ganz gern, darüber benachrichtigt werden, wenn der Fehler nicht mehr auftritt."
+msgstr ""
+"Hello, \n"
+" an error was reported on www.communtu.de. \n"
+"The user would like to be notified when the error has been fixed."
+
+#: view_my_mailer_repo_0
+msgid ""
+"Hallo, \n"
+"\n"
+"es wurde auf www.communtu.de ein Vorschlag für ein neues Repository gemacht:"
+msgstr ""
+
+#: view_my_mailer_repo_1
+msgid "Folgende Begründung wurde angegeben:"
+msgstr "The following reason has been stated:"
+
+#: view_packages__deps_0
+msgid "\t   keine"
+msgstr "\t   none"
+
+#: view_packages__deps_1
+msgid "          Nur für "
+msgstr "          Only for "
+
+#: view_packages__packagelist_1
+msgid "&nbsp;&nbsp;Nur&nbsp;Programme:"
+msgstr "&nbsp;&nbsp;Programs&nbsp;only:"
+
+#: view_packages__packagelist_2
+msgid "&nbsp;&nbsp;Suche:"
+msgstr "&nbsp;&nbsp;Search:"
+
+#: view_packages__search_0
+msgid "Suche nach Paketen"
+msgstr "Search for packages"
+
+#: view_packages_edit_0
+msgid "Paket bearbeiten"
+msgstr "Edit package"
+
+#: view_packages_edit_10
+msgid "Beschreibung des Pakets"
+msgstr "Package description"
+
+#: view_packages_edit_2
+msgid "Icon"
+msgstr "Icon"
+
+#: view_packages_edit_3
+msgid "\t &nbsp;&nbsp;Neues Icon: "
+msgstr "\t &nbsp;&nbsp;New icon: "
+
+#: view_packages_edit_4
+msgid "Ist ein Programm:"
+msgstr "Is a program:"
+
+#: view_packages_edit_8
+msgid "Neuer Link auf ein Video"
+msgstr "New link to a video"
+
+#: view_packages_edit_9
+msgid "    Beschreibung des Videos:"
+msgstr "    Video description:"
+
+#: view_packages_new_0
+msgid "Neues Paket"
+msgstr "New package"
+
+#: view_packages_new_3
+msgid "Version"
+msgstr "Version"
+
+#: view_packages_new_4
+msgid "Quelle"
+msgstr "Source"
+
+#: view_packages_new_6
+msgid "Videos"
+msgstr "Videos"
+
+#: view_packages_rdepends_0
+msgid "Im Paket "
+msgstr "In the package"
+
+#: view_packages_rdepends_1
+msgid " direkt und indirekt enthaltene Pakete"
+msgstr " directly and indirectly contained packages"
+
+#: view_packages_show_11
+msgid "Weblinks:"
+msgstr "Weblinks:"
+
+#: view_packages_show_15
+msgid "Quelle/Repository"
+msgstr "source/repository"
+
+#: view_packages_show_16
+msgid "Paket-Version"
+msgstr "package-version"
+
+#: view_packages_show_17
+msgid "Beinhaltet folgende Pakete (\"depends\" und \"recommends\"):"
+msgstr "Contains these packages (\"depends\" and \"recommends\"):"
+
+#: view_packages_show_19
+msgid "Konflikte mit folgenden Paketen (nur solche ohne Version):"
+msgstr "Conflicts with these packages (only those without a version):"
+
+#: view_packages_show_2
+msgid "Paket sofort installieren"
+msgstr "install package instantly"
+
+#: view_packages_show_21
+msgid "Wird in folgenden Paketen benutzt:"
+msgstr "Is used in this packages:"
+
+#: view_packages_show_26
+msgid "Metapaket in Bündel wandeln"
+msgstr "change metapackage into bundle"
+
+#: view_packages_show_5
+msgid "Quellen für diese Paket hinzufügen"
+msgstr "add sources for this package"
+
+#: view_packages_show_8
+msgid "Beliebtheit:"
+msgstr "Popularity:"
+
+#: view_packages_show_9
+msgid "/5 Sterne&nbsp;&nbsp; "
+msgstr "/5 stars&nbsp;&nbsp; "
+
+#: view_passwords_edit_0
+msgid "    Passwort:"
+msgstr "    Password:"
+
+#: view_passwords_edit_1
+msgid "    Passwort bestätigen:"
+msgstr "    confirm password:"
+
+#: view_passwords_edit_2
+msgid "Neues Passwort erhalten"
+msgstr "receive new password"
+
+#: view_passwords_new_0
+msgid "Passwort vergessen"
+msgstr "forgotten password"
+
+#: view_passwords_new_1
+msgid "    Mit welcher Email-Adresse hast du das Benutzerkonto angelegt?"
+msgstr "    Which e-mail-address did you enter when you created the account?"
+
+#: view_passwords_new_2
+msgid "Passwort zurücksetzen"
+msgstr "reset password"
+
+#: view_rating_new_comment_cancel
+msgid "Abbrechen"
+msgstr "cancel"
+
+#: view_rating_new_comment_info
+msgid "Geben sie eine Beschreibung zu Ihrer Bewertung an. Diese Angabe ist <b>Pflicht</b>."
+msgstr ""
+
+#: view_rating_new_comment_textfield_label
+msgid "Kommentar"
+msgstr "comment"
+
+#: view_rating_rating_rate
+msgid "von 5 Sternen vergeben"
+msgstr ""
+
+#: view_rating_show_title_got_ratings
+msgid "von 5 Sternen"
+msgstr "of 5 stars"
+
+#: view_rating_show_title_no_ratings
+msgid "noch keine User Bewertung"
+msgstr ""
+
+#: view_rating_show_title_ratings_count
+msgid "(Basierend auf {{votes}} Bewertung(en))"
+msgstr ""
+
+#: view_repositories_edit_0
+msgid "Repository bearbeiten"
+msgstr "edit repositories"
+
+#: view_repositories_edit_1
+msgid "Distribution:"
+msgstr "Distribution:"
+
+#: view_repositories_index_0
+msgid "Repositories"
+msgstr "repositories"
+
+#: view_repositories_index_5
+msgid "Neues Repository"
+msgstr "new repository"
+
+#: view_repositories_migrate_1
+msgid "Kopiere Repository "
+msgstr "copy repository"
+
+#: view_repositories_migrate_2
+msgid " nach Distribution"
+msgstr " to distribution"
+
+#: view_repositories_multinew_0
+msgid "Einlesen"
+msgstr "read"
+
+#: view_repositories_new_0
+msgid "Neues Repository für "
+msgstr "new repository for"
+
+#: view_repositories_new_4
+msgid "GPG Schlüssel (Optional)"
+msgstr "GPG-key (optional)"
+
+#: view_repositories_show_0
+msgid "Repository anzeigen"
+msgstr "show repository"
+
+#: view_repositories_show_4
+msgid "Paketliste für i386:"
+msgstr "package-list for i386:"
+
+#: view_repositories_show_6
+msgid "        OpenSource"
+msgstr "        OpenSource"
+
+#: view_repositories_show_7
+msgid "        kommerziell "
+msgstr "        commercial "
+
+#: view_roles__role_0
+msgid "Rolle löschen"
+msgstr "delete role"
+
+#: view_roles__role_1
+msgid "Rolle zuweisen"
+msgstr "assign role"
+
+#: view_roles_edit_0
+msgid "Rolle bearbeiten"
+msgstr "edit role"
+
+#: view_roles_edit_1
+msgid "Rollenname"
+msgstr "rolename"
+
+#: view_roles_index_0
+msgid "Rollen für "
+msgstr "roles for"
+
+#: view_roles_index_1
+msgid "Zugewiesene Rollen:"
+msgstr "Assigned roles:"
+
+#: view_roles_index_2
+msgid "Verfügbare Rollen:"
+msgstr "Available roles:"
+
+#: view_roles_new_0
+msgid "Neue Rolle"
+msgstr "New role"
+
+#: view_roles_show_0
+msgid "Rollenname:"
+msgstr "Rolename:"
+
+#: view_sent__user_exists_0
+msgid "User gefunden"
+msgstr "user found"
+
+#: view_sent__user_not_exists_0
+msgid "User nicht gefunden"
+msgstr "user not found"
+
+#: view_sent_index_0
+msgid "verschickte Nachrichten"
+msgstr "sent messages"
+
+#: view_sent_index_3
+msgid "Zeitpunkt"
+msgstr "Date"
+
+#: view_sent_index_5
+msgid "Sie haben noch keine Nachrichten versendet."
+msgstr "You haven't sent any messages yet."
+
+#: view_sent_new_3
+msgid "Nachricht:"
+msgstr "Message:"
+
+#: view_sent_show_2
+msgid "Zeitpunkt:"
+msgstr "Date:"
+
+#: view_sessions_new_0
+msgid "Anmelden mit Benutzernamen und Passwort:"
+msgstr "Log in with username and password:"
+
+#: view_sessions_new_3
+msgid "Benutzer auf diesem Computer dauerhaft anmelden"
+msgstr "Log this user permanently in on this computer"
+
+#: view_user_mailer_activation_0
+msgid ", dein Benutzerkonto wurde aktiviert.  Folge nun dem Link:"
+msgstr ", your account has been activated. Please follow this link:"
+
+#: view_user_mailer_forgot_password_0
+msgid ", um ein neues Passwort zu erhalten, folge dem Link:"
+msgstr ", to receive a new password, please folloe the link:"
+
+#: view_user_mailer_reset_password_0
+msgid ", du hast ein neues Passwort erhalten."
+msgstr ", you have received a new password."
+
+#: view_user_mailer_signup_notification_0
+msgid ""
+"Hallo und herzliche Willkommen bei Communtu!\n"
+"\n"
+"\n"
+" Du hast Dich bei Communtu http://www.communtu.de\n"
+"erfolgreich registriert. Jetzt kannst Du alle Features der Plattform\n"
+"benutzen."
+msgstr ""
+
+#: view_user_mailer_signup_notification_1
+msgid "Dein Benutzername lautet:"
+msgstr "Your username is:"
+
+#: view_user_mailer_signup_notification_2
+msgid ""
+"\n"
+"Viele Grüße\n"
+"\n"
+"das Communtu-Team\n"
+"\n"
+"  Weitere Informationen zu den Projekt insbesondere was Du für Möglichkeiten der Nutzung hast, findest Du in unserer FAQ-Liste unter\n"
+" http://www.communtu.de/home/faq\n"
+"\n"
+"  Unsere Ankündigungen und Mailinglisten findest Du unter:\n"
+"http://www.communtu.de/home/news"
+msgstr ""
+
+#: view_user_profiles__installation_0
+msgid "Communtu-Nachinstallation"
+msgstr "Communtu post-installation"
+
+#: view_user_profiles__installation_1
+msgid "Um etwas installieren zu können, musst du zunächst unter \"Grunddaten\" oder \"Detailauswahl\" etwas auswählen."
+msgstr "In order to install, you have to specify some things at \"Base data\" or \"Details\"."
+
+#: view_user_profiles__installation_13
+msgid "(Bei einem Versionswechsel muss der erste Schritt erneut ausgeführt werden, da die Communtu Quellen durch das Upgrade deaktiviert wurden.):"
+msgstr "(When chaning the version, the first step has to be done twice, because the Communtu-sources will be deactivated by the upgrade.):"
+
+#: view_user_profiles__installation_16
+msgid "Quellen und Schlüssel eintragen"
+msgstr "register sources and keys"
+
+#: view_user_profiles__installation_17
+msgid "Link einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer öffnen."
+msgstr "Just click on the link and open the file and open it with the recommended package-installer."
+
+#: view_user_profiles__installation_19
+msgid "Achtung: nach dem Anklicken dauert es eine gewisse Zeit, bis die Datei bereitgestellt wird. \t\t"
+msgstr "Attention: after clicking, it will take a moment until the file is provided."
+
+#: view_user_profiles__installation_2
+msgid "Aufgrund deiner Auswahl werden jetzt Programme auf deinem Computer installiert. Folgende Schritte sind dafür zu tun"
+msgstr "Because of your choice the programs will now be installed on your computer. Please follow these steps:"
+
+#: view_user_profiles__installation_20
+msgid "Dieser Schritt wurde bereits schon einmal ausgeführt. \t\t"
+msgstr "This step has already been carried out."
+
+#: view_user_profiles__installation_21
+msgid "installieren der Metapakete. Bitte vorher die Quellen hinzufügen."
+msgstr "Installation of the metapackages. Please add the sources first."
+
+#: view_user_profiles__installation_23
+msgid "\t    Pakete installieren. Es gibt zwei Alternativen: \t    "
+msgstr "\t    Installing packages. There are two alternatives:"
+
+#: view_user_profiles__installation_24
+msgid "Installation über ein Metapaket"
+msgstr "installation via metapackages"
+
+#: view_user_profiles__installation_25
+msgid "Installation über apturl"
+msgstr "installatin via apturl"
+
+#: view_user_profiles__installation_27
+msgid "Die Browser Konqueror und Opera bitte erst für "
+msgstr "Please configure "
+
+#: view_user_profiles__installation_28
+msgid "http://wiki.ubuntuusers.de/apturl"
+msgstr "https://wiki.ubuntu.com/AptUrl"
+
+#: view_user_profiles__installation_29
+msgid " konfigurieren. \t\t"
+msgstr " for the Konqueror and Opera browsers."
+
+#: view_user_profiles__installation_30
+msgid "Hinweis: Bitte .deb-Dateien nicht umbenennen."
+msgstr "Advice: please don't rename the .deb-file."
+
+#: view_user_profiles__installation_31
+msgid "Die Communtu-Metapakete können auch mittles {{synaptic}} (unter System -> Systemverwaltung) angezeigt, installiert und deinstalliert werden. Änderungen an Bündeln werden über die Ubuntu-Paketverwaltung automatisch eingespielt."
+msgstr ""
+
+#: view_user_profiles__profile_data_0
+msgid "Installation vorbereiten: Grunddaten eingeben"
+msgstr "Preparing the installation: enter the base data"
+
+#: view_user_profiles__profile_data_1
+msgid "Auf dieser Seite kannst du in vier einfachen Schritten deine Communtu-Nachinstallation auswählen - fertig.  Wenn gewünscht, ist aber auch eine detailliertere Auswahl möglich. "
+msgstr "On this page you can prepare the post-installation with Communtu in four easy steps. If desired, you can choose the bundles in a detaild overview."
+
+#: view_user_profiles__profile_data_10
+msgid " Nur Ubuntuquellen zulassen (\"main/restricted\", sehr sicher: Sicherheits-Updates von Ubuntu)"
+msgstr " Only allow Ubuntu-sources (\"main/restricted\", very secure)"
+
+#: view_user_profiles__profile_data_11
+msgid " Auch Communityquellen zulassen (\"universe/multiverse\", auch sicher, mehr Programme/Komfort: "
+msgstr " Allow community-sources (\"universe/multiverse\", secure, more programs/better comfort):"
+
+#: view_user_profiles__profile_data_12
+msgid " Alle Quellen zulassen (etwas unsicherer: <a href=\"http://wiki.ubuntuusers.de/Fremdquellen\">Fremdpakete</a> können das System gefährden, aber noch mehr Programme/Komfort: "
+msgstr " Allow every source (slightly unsecure but with even more programs/better comfort. Attention: programs installed from foreign sources can do harm to your computer!):"
+
+#: view_user_profiles__profile_data_13
+msgid "Hier kannst du auswählen, welche Lizenzen du zulassen willst"
+msgstr "Here you can choose which licences you want to accept"
+
+#: view_user_profiles__profile_data_14
+msgid " Freie Software (Quellen liegen offen und dürfen weiterentwickelt werden)"
+msgstr " Free software (sources are open and further development is allowed)"
+
+#: view_user_profiles__profile_data_15
+msgid " Unfreie Lizenzen zulassen (auch kostenlos, aber Quellen liegen nicht offen - sozusagen das Methadon für einen weichen Übergang zu Linux: "
+msgstr " Allow unfree licences (free too, but the sources are closed - quasi the methadone for a fluent changeover to Linux)"
+
+#: view_user_profiles__profile_data_17
+msgid "Speichern und feiner auswählen"
+msgstr "Save and choose packages"
+
+#: view_user_profiles__profile_data_2
+msgid "Achtung: zum Schluss unten auf einen der 'Speichern'-Knöpfe klicken!"
+msgstr "Attention: when finished, don't forget to click on one of the \"Save\"-buttons!"
+
+#: view_user_profiles__profile_data_3
+msgid "Welche Aufgaben willst du mit deinem Computer erledigen? (um grob eine Auswahl zu treffen, Feineinstellungen später möglich)"
+msgstr "What tasks do you want to do with your computer? (only a rough choice, can be chosen in detail later)"
+
+#: view_user_profiles__profile_data_4
+msgid "Weitere Informationen"
+msgstr "further information"
+
+#: view_user_profiles__profile_data_6
+msgid "Wähle bitte deine Ubuntu-Version aus. "
+msgstr "Please select a Ubuntu version. "
+
+#: view_user_profiles__profile_data_7
+msgid "Wie stelle ich die Version fest?"
+msgstr "How do I find out the version which is in use?"
+
+#: view_user_profiles__profile_data_8
+msgid "\t     \tÜber den Browser festgestellte Version: "
+msgstr "\t     \tVia your webbrowser detected version: "
+
+#: view_user_profiles__profile_data_9
+msgid "Hier kannst du einstellen, wie sicher bzw. komfortabel deine Installationsquellen sein sollen"
+msgstr "Here you can select how secure or comfortable you sources should be"
+
+#: view_user_profiles__profile_rating_0
+msgid "Feinauswahl der zu installierenden Programmbündel und Programme"
+msgstr "Detailed choice of the programs and bundles that shall be installed"
+
+#: view_user_profiles__profile_rating_1
+msgid ""
+"Hier kannst du deine beabsichtigte Computer-Nutzung noch genauer angeben. \n"
+"Durch Klicken auf "
+msgstr ""
+"Here you can choose the use of your computer in detail. \n"
+"With a click on the "
+
+#: view_user_profiles__profile_rating_2
+msgid ""
+" lässt \n"
+"sich ein Bereich ein- oder ausklappen."
+msgstr ""
+" you can \n"
+"open or close a section to make a detailed selection."
+
+#: view_user_profiles__profile_rating_3
+msgid "Achtung! Zum Schluss auf \"Speichern\" klicken."
+msgstr "Attention! When finished, don't forget to click on \"Save\"."
+
+#: view_user_profiles__sources_0
+msgid "Quellen für die zu installierenden Programme"
+msgstr "Sources for the soon be installed programs"
+
+#: view_user_profiles__sources_1
+msgid "Hier werden die zu installierenden Programme und Pakete nach den zugehörigen Quellen sortiert aufgelistet, so dass du auch sehen kannst, weshalb die jeweiligen Quellen hinzugefügt werden."
+msgstr "The soon be installed programs and packages are shown and ordered by the appropriate sources so you can see why some sources will be added."
+
+#: view_user_profiles_help_0
+msgid "Feststellen der Ubuntu-Version"
+msgstr "Determination of the Ubuntu version"
+
+#: view_user_profiles_help_1
+msgid "Öffne ein Terminal unter \"Anwendungen\" -> \"Zubehör\" -> \"Terminal"
+msgstr "Open a new terminal. Click on \"Applications\" -> \"Accessories\" -> \"Terminal\""
+
+#: view_user_profiles_help_2
+msgid "Gebe dort ein: "
+msgstr "There you enter the following:"
+
+#: view_user_profiles_help_3
+msgid "Wenn deine Version von Communtu nicht unterstützt wird, gibt es zwei Möglichkeiten:"
+msgstr "If you version is not supported by Communtu, you now have two possibilities:"
+
+#: view_user_profiles_help_4
+msgid "du machst ein Upgrade auf eine neuere Version"
+msgstr "you upgrade to a newer, supported, version"
+
+#: view_user_profiles_help_5
+msgid "du erweiterst Communtu um deine Version"
+msgstr "you expand Communtu with your version"
+
+#: view_user_profiles_new_0
+msgid "Neues Nutzerprofil"
+msgstr "new profile"
+
+#: view_user_profiles_new_1
+msgid "Benutzer"
+msgstr "user"
+
+#: view_user_profiles_new_3
+msgid "Expertenlevel"
+msgstr "level of expert"
+
+#: view_users__mailbox_list_1
+msgid "Mailbox"
+msgstr "Mailbox"
+
+#: view_users__mailbox_list_3
+msgid "Versendete Nachrichten"
+msgstr "sent messages"
+
+#: view_users__sidebar_0
+msgid "Installation"
+msgstr "Installation"
+
+#: view_users__sidebar_1
+msgid "Bündel verwalten"
+msgstr "Administrate bundles"
+
+#: view_users__sidebar_2
+msgid "Programme suchen"
+msgstr "Search programs"
+
+#: view_users__sidebar_4
+msgid "Ubuntu-Versionen"
+msgstr "Ubuntu versions"
+
+#: view_users__sidebar_5
+msgid "Benutzer verwalten"
+msgstr "Administrate users"
+
+#: view_users__sidebar_6
+msgid "Kategorien verwalten"
+msgstr "Administrate categories"
+
+#: view_users__sidebar_7
+msgid "Derivate verwalten"
+msgstr "Administrate derivatives"
+
+#: view_users__sidebar_8
+msgid "Fehlgeschlagene debs"
+msgstr "Failed debs"
+
+#: view_users__user_0
+msgid "aktivieren"
+msgstr "activate"
+
+#: view_users__user_1
+msgid "deaktivieren"
+msgstr "deactivate"
+
+#: view_users__user_2
+msgid "Rollen bearbeiten"
+msgstr "edit roles"
+
+#: view_users_edit_0
+msgid "Benuzterprofil bearbeiten"
+msgstr "edit profile"
+
+#: view_users_edit_2
+msgid "Profil löschen"
+msgstr "delete profile"
+
+#: view_users_edit_3
+msgid "Benutzername:"
+msgstr "Username:"
+
+#: view_users_edit_9
+msgid "  Durch Klicken auf \"Speichern\" wird das Nutzerkonto zugleich dauerhaft gemacht."
+msgstr "  With a click on \"save\" this account will be made permanent."
+
+#: view_users_index_0
+msgid "Alle Benutzer"
+msgstr "All users"
+
+#: view_users_index_1
+msgid "Insgesamt haben wir "
+msgstr "We have a total of "
+
+#: view_users_index_2
+msgid " angemeldete Benutzer."
+msgstr " registered users."
+
+#: view_users_index_5
+msgid "Aktiviert?"
+msgstr "Activated?"
+
+#: view_users_index_6
+msgid "Rollen"
+msgstr "Roles"
+
+#: view_users_new_1
+msgid "Hier hast du die Möglichkeit dich zu registrieren."
+msgstr "Here you have the possibility to register yourself."
+
+#: view_users_new_10
+msgid "Dein Vorname"
+msgstr "your first name"
+
+#: view_users_new_11
+msgid "Dein Nachname"
+msgstr "your last name"
+
+#: view_users_new_12
+msgid "(optional)"
+msgstr "(optional)"
+
+#: view_users_new_2
+msgid "Wenn du über die Weiterentwicklung von Communtu informiert werden möchtest, dann gebe bitte deine richtige E-Mail-Adresse an."
+msgstr "If you want to be informed about the development of Communtu you have to enter a valid e-mail-address."
+
+#: view_users_new_6
+msgid "Passwort bestätigen"
+msgstr "confirm password"
+
+#: view_users_new_8
+msgid "Ja, ich möchte die Maillingliste für Ankündigungen abbonieren."
+msgstr ""
+
+#: view_users_new_9
+msgid "Ja, ich möchte die Maillingliste für Diskussionen abbonieren."
+msgstr ""
+
+#: view_users_show_0
+msgid "Benutzer anzeigen"
+msgstr "show user"
+
+#: view_users_show_2
+msgid "Nutzer seit: "
+msgstr "user since:"
+
+#: view_users_show_3
+msgid "(Monat/Jahr)"
+msgstr "(month/year)"
+
+#: view_users_show_4
+msgid "Zuletzt eingeloggt: "
+msgstr "last login:"
+
+#: view_users_show_5
+msgid "Erstellte Bündel: "
+msgstr "Created bundles:"
+
+#: view_users_show_8
+msgid "Nachrichten"
+msgstr "Message"
+
+#: view_videos_edit_0
+msgid "Video bearbeiten"
+msgstr "edit video"
+
+#: view_videos_show_0
+msgid "Url:"
+msgstr "Url:"
+
+#: weblinks
+msgid "Weblinks"
+msgstr "Weblinks"
+
+#: yes1
+msgid "ja"
+msgstr "yes"
+
+#: you_can
+msgid "Du kannst Dich auch "
+msgstr "You can "
+
+#: zentrum_solidarische_oekonomie
+msgid "Zentrum für Solidarische Ökonomie"
+msgstr "Zentrum für Solidarische Ökonomie"
+
+#~ msgid "# Bündel: "
+#~ msgstr "# bundle:"
+#~ msgid "Aktualisierte Pakete: "
+#~ msgstr "Updated package:"
+#~ msgid ""
+#~ "Auf dem Desktop (oder im Dateibrowser): Rechtsklick mit der Maus, "
+#~ "Eigenschaften, und dann ein Häkchen bei \"Ausführen\" setzen."
+#~ msgstr ""
+#~ "On your desktop (or your filemanager): make a right-click on the file, "
+#~ "choose Properties and place a tick in front of \"Execute\"."
+#~ msgid "Beschreibung"
+#~ msgstr "description"
+#~ msgid ""
+#~ "Bündel geändert. Es dauert ein paar Minuten, bis die Änderungen im "
+#~ "zugehörigen Metapaket verfügbar sind. "
+#~ msgstr ""
+#~ "Bundle changed. It could take a couple of minutes until the changes are "
+#~ "available in the corresponding metapackage."
+#~ msgid "Communtu "
+#~ msgstr "Communtu"
+#~ msgid ""
+#~ "Dein Benutzerkonto wurde bei www.communtu.de angelegt.     Benutzername: "
+#~ msgstr "Your account at www.communtu.de has been created.     Username:"
+#~ msgid ""
+#~ "Die Datei ist ein Skript, das automatisch die gewünschten Programme "
+#~ "installiert, inklusive Download aus dem Internet."
+#~ msgstr ""
+#~ "The file is a script that automatically installs the preferred programs, "
+#~ "including the download from the internet."
+#~ msgid "Doppelklick auf die Datei (zum Ausführen)"
+#~ msgstr "Double-click on the file to execute it."
+#~ msgid "Du denkst, dass Du schon vieles zu Open Source Programmen weisst"
+#~ msgstr "You think, you now much about open source programs"
+#~ msgid ""
+#~ "Es werden zur Information nochmal die hinzugefügten Quellen und Pakete "
+#~ "angezeigt. Zweimal auf \"OK\" drücken."
+#~ msgstr ""
+#~ "For your information, the added sources and packages will be shown. Click "
+#~ "on \"OK\" twice."
+#~ msgid "Hallo"
+#~ msgstr "Hello"
+#~ msgid "Installation über Metapakete"
+#~ msgstr "installation via metapackages"
+#~ msgid "Klicke auf das Symbol rechts unten"
+#~ msgstr "Click on the icon in the lower right corner"
+#~ msgid "Klicke auf folgenden Link:"
+#~ msgstr "Please click on the following link:"
+#~ msgid "Konflikte"
+#~ msgstr "Conflicts"
+#~ msgid "Registrierung"
+#~ msgstr "Registration"
+#~ msgid ""
+#~ "Speichere die Datei auf deinem Computer ab, am einfachsten auf dem Desktop"
+#~ msgstr "Save the file on your computer, preferable on the desktop"
+#~ msgid "Sperren"
+#~ msgstr "Block"
+#~ msgid "Ubuntu Derivate"
+#~ msgstr "Ubuntu derivatives"
+#~ msgid "Veröffentl."
+#~ msgstr "Publish"
+#~ msgid ""
+#~ "When syncing repository #{repository.name}, could not find package #{name}"
+#~ msgstr ""
+#~ "When syncing repository #{repository.name}, could not find package #{name}"
+#~ msgid ""
+#~ "When syncing repository, could not find PackageDistr for #{p.name} in "
+#~ "repository #{repository.name}"
+#~ msgstr ""
+#~ "When syncing repository, could not find PackageDistr for #{p.name} in "
+#~ "repository #{repository.name}"
+#~ msgid "Zur Startseite"
+#~ msgstr "Go to home page"
+#~ msgid "herausfinden. (Dazu muss das Paket "
+#~ msgstr ". (For this, the package"
+#~ msgid "um zu unserem Projekt zu gelangen"
+#~ msgstr "to get to our project"
 
