@@ -210,7 +210,7 @@ de:
   new_passwd: Neues Passwort
   news: Aktuelles
   no_admin: Du bist kein Administrator!
-  no: nein
+  no1: nein
   no_save_database: "Die folgenden Pakete konnten nicht in der Datenbank gespeichert werden:"
   not_logged_in: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
   packages: Pakete
@@ -801,6 +801,6 @@ de:
   view_videos_edit_0: Video bearbeiten
   view_videos_show_0: "Url:"
   weblinks: Weblinks
-  yes: ja
+  yes1: ja
   you_can: "Du kannst Dich auch "
   zentrum_solidarische_oekonomie: "Zentrum für Solidarische Ökonomie"

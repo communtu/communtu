@@ -32,7 +32,7 @@
         <% if is_admin? %>
 	        <td><%= f.check_box(:default_install) %></td>
         <% else %>
-            <td><%= if @metapackage.default_install then t(:yes) else t(:no) end  %></td>
+            <td><%= if @metapackage.default_install then t(:yes1) else t(:no1) end  %></td>
         <% end %>
         </tr>
         <tr>

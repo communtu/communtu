@@ -21,7 +21,7 @@
         <td class="<%= css %>" valign="middle">
 		    <%=h metapackage.category.name %></td>
         <td class="<%= css %>" valign="middle">
-		    <%=metapackage.default_install ?  t(:yes) : t(:no) %></td>
+		    <%=metapackage.default_install ?  t(:yes1) : t(:no1) %></td>
 	    <td class="<%= css %>" valign="middle" align="middle">
 	        <% if metapackage.published == Metapackage.state[:published] %>
 	            <%= image_tag("yes.png", :size => "22x22", :border => "0", :title => t(:published), :alt => t(:published)) %>
