@@ -30,7 +30,11 @@ ActionController::Routing::Routes.draw do |map|
     users.resource  :account
     users.resources :roles
   end
-  
+ map.connect '/users/:user_id/user_profile/:pack_name', :controller => 'user_profiles', :action => 'refine', :requirements => {
+                :pack_name => /#
+                  \w{15,60}
+                /x
+              }
   map.connect '/users/:distribution_id/suggestion', :controller => 'suggestion', :action => 'show'
   map.connect '/users/:id/suggestion/install', :controller => 'suggestion', :action => 'install'
   map.connect '/users/:id/suggestion/install_new', :controller => 'suggestion', :action => 'install_new'
@@ -45,7 +49,6 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/users/:user_id/user_profile/update_rating', :controller => 'user_profiles', :action => 'update_rating'
   map.connect '/users/:user_id/user_profile/update_ratings', :controller => 'user_profiles', :action => 'update_ratings'
   map.connect '/users/:user_id/user_profile/refine', :controller => 'user_profiles', :action => 'refine'
-  map.connect '/users/:user_id/user_profile/packagesProgrammieren', :controller => 'user_profiles', :action => 'refine'
   map.connect '/users/:user_id/user_profile/installation', :controller => 'user_profiles', :action => 'installation'
   map.connect '/users/:id/destroy', :controller => 'users', :action => 'destroy' 
   map.connect '/users/:id/show', :controller => 'users', :action => 'show'
