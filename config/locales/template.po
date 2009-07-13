@@ -475,7 +475,7 @@ msgstr "go to detailed view"
 
 #: direct_indirect_covered_packages
 msgid "Direkt und indirekt enthaltene Pakete"
-msgstr "direct and indirect covered packages"
+msgstr "Direct and indirect covered packages"
 
 #: distribution
 msgid "Distribution"
@@ -495,7 +495,7 @@ msgstr "Donation receipt can be issued."
 
 #: edit
 msgid "Bearbeiten"
-msgstr "edit"
+msgstr "Edit"
 
 #: email_with_colon
 msgid "E-Mail: "
@@ -599,7 +599,7 @@ msgstr "Install"
 
 #: install_by_default
 msgid "Standardmäßig installieren:"
-msgstr "Install by default:"
+msgstr "Installed by default:"
 
 #: install_package_sources_first
 msgid "Paket installieren. Bitte ggf. vorher die Quellen hinzufügen."
@@ -771,7 +771,7 @@ msgstr "Natur, Geist und Technik - Verein zur Förderung der Allgemeinbildung e.
 
 #: new_bundle
 msgid "Neues Bündel"
-msgstr "new bundle"
+msgstr "New bundle"
 
 #: new_category
 msgid "Neue Kategorie"
@@ -879,7 +879,7 @@ msgstr "Subtype:"
 
 #: superior_category
 msgid "Übergeordnete Kategorie"
-msgstr "superior category"
+msgstr "Superior category"
 
 #: third_party
 msgid "Third-Party"
@@ -971,11 +971,11 @@ msgstr "A list of all programs installed on your computer"
 
 #: view_cart_new_from_list_3
 msgid "herausfinden. (Dazu muss das Paket {{debfoster}} installiert sein. Die erzeugte Liste enthält nur eine minimale Liste von (Meta-)Paketen, die notwendig ist, um deine Installation komplett wiederherzustellen.)"
-msgstr " can be found with. (For this, the package {{debfoster}} has to be install. The created list only contains a minimal list of (meta-)packages which are necessary to rebuild your installation.)"
+msgstr " can be found with the above-mentioned command. (For this, the package {{debfoster}} has to be install. The created list only contains a minimal list of (meta-)packages which are necessary to rebuild your installation.)"
 
 #: view_cart_new_from_list_4
 msgid "Datei, die die Paketliste enthält, auswählen:"
-msgstr "Choose the file, which contains the package-list:"
+msgstr "Choose the file which contains the package-list:"
 
 #: view_cart_new_from_list_5
 msgid "Erstellen"
@@ -1011,7 +1011,7 @@ msgstr "Link for further information"
 
 #: view_categories_index_0
 msgid "Kategorien-Übersicht"
-msgstr "category-overview"
+msgstr "Category-overview"
 
 #: view_categories_index_12
 msgid "Kategorienbaum anzeigen"
@@ -1785,11 +1785,11 @@ msgstr "You're missing some sources? You can suggest a repository to us."
 
 #: view_home_new_repository_2
 msgid "Link zum Repository"
-msgstr "link to the repository"
+msgstr "Link to the repository"
 
 #: view_home_new_repository_3
 msgid "Warum soll dies in Communtu eingebaut werden? (Bitte gebe Kontaktdaten an, wenn Du über die Aufnahme informiert werden willst)"
-msgstr "Why should this be implemented in Communtu? (If you want to be informed about the take-up, please enter your contact information="
+msgstr "Why should this be implemented in Communtu? (If you want to be informed about the take-up, please enter your contact information)"
 
 #: view_home_news_1
 msgid "Unsere Mailinglisten"
@@ -1797,7 +1797,7 @@ msgstr "Our mailinglists"
 
 #: view_home_news_10
 msgid "communtu-discuss-de+subscribe@googlegroups.com"
-msgstr "communtu-discuss-de+subscribe@googlegroups.com"
+msgstr "communtu-discuss-en+subscribe@googlegroups.com"
 
 #: view_home_news_11
 msgid "Diese Liste ist für eine Diskussion rund um die Plattform gedacht.  Hier kommt etwas mehr als einmal die Woche eine E-Mail über den Verteiler.   Die Nachrichten werden in einem "
@@ -1833,7 +1833,7 @@ msgstr "participate"
 
 #: view_home_news_3
 msgid "communtu-announce-de+subscribe@googlegroups.com"
-msgstr "communtu-announce-de+subscribe@googlegroups.com"
+msgstr "communtu-announce-en+subscribe@googlegroups.com"
 
 #: view_home_news_5
 msgid "Diese Liste ist für allgemeine Ankündigungen aus den Communtu Team für die Nutzer gedacht.  Es wir hier ungefähr einmal die Woche eine E-Mail über den Verteiler geschickt.   Die Nachrichten werden in einem "
@@ -1877,7 +1877,7 @@ msgstr "Feedback to Communtu"
 
 #: view_layouts_application_15
 msgid "angemeldet als  "
-msgstr "logged in as "
+msgstr "Logged in as "
 
 #: view_layouts_application_16
 msgid "neue Nachricht"
@@ -1933,7 +1933,7 @@ msgstr "From:"
 
 #: view_messages_show_2
 msgid "erhalten am:"
-msgstr "received on:"
+msgstr "Received on:"
 
 #: view_messages_show_3
 msgid "Antworten"
@@ -1949,7 +1949,7 @@ msgstr "Rating"
 
 #: view_metapackages__metalist_14
 msgid "installieren mittels Metapaket. Bitte vorher die Quellen hinzufügen."
-msgstr "install through meta package. Please add the sources first."
+msgstr "Install through metapackage. Please add the sources first."
 
 #: view_metapackages__metalist_2
 msgid "Standard"
@@ -2029,11 +2029,11 @@ msgstr " directly an indirectly contained bundles and packages"
 
 #: view_metapackages_show_0
 msgid "Bündel erstellt von "
-msgstr "Bundle created by"
+msgstr "Bundle created by "
 
 #: view_metapackages_show_12
 msgid "nicht veröffentlicht"
-msgstr "not published"
+msgstr "Not published"
 
 #: view_metapackages_show_14
 msgid "  Aktionen:&nbsp;&nbsp;"
@@ -2267,7 +2267,7 @@ msgstr "reset password"
 
 #: view_rating_new_comment_cancel
 msgid "Abbrechen"
-msgstr "cancel"
+msgstr "Cancel"
 
 #: view_rating_new_comment_info
 msgid "Geben sie eine Beschreibung zu Ihrer Bewertung an. Diese Angabe ist <b>Pflicht</b>."
@@ -2275,7 +2275,7 @@ msgstr "Please enter a review to your rating. This is a <b>obligatory</b> step."
 
 #: view_rating_new_comment_textfield_label
 msgid "Kommentar"
-msgstr "comment"
+msgstr "Comment"
 
 #: view_rating_rating_rate
 msgid "von 5 Sternen vergeben"

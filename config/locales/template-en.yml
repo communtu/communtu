@@ -90,7 +90,7 @@ en:
   view_home_home_new_message_icon: to the inbox
   show: Show
   view_home_derivatives_17: http://en.wikipedia.org/wiki/Linux_Mint
-  view_rating_new_comment_cancel: cancel
+  view_rating_new_comment_cancel: Cancel
   helper_distributions_6: delete repository
   view_user_profiles_new_0: new profile
   view_roles_index_0: roles for
@@ -113,7 +113,7 @@ en:
   invalid_activation_code_please_check_again: Invalid activation code. Please check the code and try again. (Perhaps you e-mail-program did a line break?)
   view_user_profiles_new_3: level of expert
   controller_categories_3: Category updated.
-  install_by_default: "Install by default:"
+  install_by_default: "Installed by default:"
   controller_sent_0: Subject must not be empty.
   view_home_home_13: <b>News</b> Reference to events about Communtu, the Communtu-blog ...
   controller_sent_1: user does not exist
@@ -133,7 +133,7 @@ en:
   view_repositories_show_0: show repository
   view_packages__search_0: Search for packages
   view_my_mailer_repo_0: \n
-  view_metapackages__metalist_14: install through meta package. Please add the sources first.
+  view_metapackages__metalist_14: Install through metapackage. Please add the sources first.
   view_home_icons_13: program-bundle
   match_ubuntu: Match Ubuntu to your personal needs
   view_home_home_18: \tClick on\t
@@ -171,7 +171,7 @@ en:
   view_home_beteiligung_7: We need feedback. Our desire is, that Communtu will be used by everyone and for this we need feedback. You found an error in the system? Is there something that is incomprehensible to you? You think, you could do something better? You have some suggestions for us? Feedback is accepted under
   no_save_database: "The following packages couldn't be saved in the database:"
   view_home_about_2: Ubuntu is a linux-based distribution which makes Linux easier to use and more comprehendible. After the installation of Ubuntu via a CD or DVD your computer is already equipped to surf the internet, to do some word processing and to do much more.
-  view_categories_index_0: category-overview
+  view_categories_index_0: Category-overview
   msgstr "": "\"OK\" twice."
   view_user_profiles__profile_data_14: " Free software (sources are open and further development is allowed)"
   view_user_profiles__installation_31: The Communtu-metapackages can be shown, installed and uninstalled using {{synaptic}} (go to "System" --> "Administration"). Updates of the programs inside the bundle are installed via the Ubuntu-updatemanager automatically.
@@ -227,21 +227,21 @@ en:
   view_cart_new_from_list_2: A list of all programs installed on your computer
   view_home_derivatives_43: " - based on E17. 2D-effects even without a fast graphic card."
   view_home_about_8: After a click on "Save and choose packages" you can get a detailed overview of the installed bundles and programs and the possibility to change the pre-made selections. In the case you don't have the time or energy to choose the packages in detail, just click on "Save". This leads you to the installation page. There you will find a button with which the installation process starts. This takes some time because the applications have to be downloaded from the internet and installed on your computer. When finished, you have a all-round Ubuntu-PC!
-  new_bundle: new bundle
-  view_cart_new_from_list_3: " can be found with. (For this, the package {{debfoster}} has to be install. The created list only contains a minimal list of (meta-)packages which are necessary to rebuild your installation.)"
+  new_bundle: New bundle
+  view_cart_new_from_list_3: " can be found with the above-mentioned command. (For this, the package {{debfoster}} has to be install. The created list only contains a minimal list of (meta-)packages which are necessary to rebuild your installation.)"
   view_home_derivatives_44: " - minimalist and fast version of Ubuntu for older PCs."
   view_home_about_9: "Important: a fast internet-connection is needed. For Ubuntu-users with a slow internet-connection, e. g. a modem, we intend to introduce a feature to create CDs and DVDs automatically."
   controller_users_8: user deactivated
   view_users_show_2: "user since:"
   view_categories_index_12: show category-tree
   controller_accounts_6: An error occured. The password has not been changed.
-  view_cart_new_from_list_4: "Choose the file, which contains the package-list:"
+  view_cart_new_from_list_4: "Choose the file which contains the package-list:"
   donation_possibility: Donation possibility
   controller_sessions_1: You are already logged in.
   view_home_derivatives_45: http://wiki.ubuntuusers.de/Server_Installation (German)
   controller_users_9: An error occured while deactivating this user.
   view_users_show_3: (month/year)
-  view_home_news_10: communtu-discuss-de+subscribe@googlegroups.com
+  view_home_news_10: communtu-discuss-en+subscribe@googlegroups.com
   view_cart_new_from_list_5: Create
   view_home_derivatives_46: " - Ubuntu server-version without any GUI."
   view_users_show_4: "last login:"
@@ -268,7 +268,7 @@ en:
   view_home_news_16: We have a blog where we post updated information about Communtu. It gets a new post about once a week. Announcement and new features will be presented here.
   view_derivatives_show_3: "icon-file:"
   packages: packages
-  direct_indirect_covered_packages: direct and indirect covered packages
+  direct_indirect_covered_packages: Direct and indirect covered packages
   view_home_news_17: Go to the blog
   add: add
   install: install
@@ -293,7 +293,7 @@ en:
   view_user_profiles__profile_data_2: "Attention: when finished, don't forget to click on one of the \"Save\"-buttons!"
   view_sent_index_3: Date
   view_rating_show_title_no_ratings: no user rating
-  view_home_new_repository_2: link to the repository
+  view_home_new_repository_2: Link to the repository
   model_user_meta_tabz_0: My bundles
   view_home_faq_11: How do I save the program-list of my system?
   subtype: "Subtype:"
@@ -302,7 +302,7 @@ en:
   view_home_derivatives_5: "Each derivative under "
   view_user_profiles__profile_data_3: What tasks do you want to do with your computer? (only a rough choice, can be chosen in detail later)
   view_packages_show_21: "Is used in this packages:"
-  view_home_new_repository_3: Why should this be implemented in Communtu? (If you want to be informed about the take-up, please enter your contact information=
+  view_home_new_repository_3: Why should this be implemented in Communtu? (If you want to be informed about the take-up, please enter your contact information)
   model_user_meta_tabz_1: All published bundles
   add_sources: Add sources
   view_home_faq_12: On the left side of the webpage is the bundle-editor. There you have to click on "Bundle from package-list". A new page is loaded with instructions how to upload your package-list to Communtu.
@@ -429,7 +429,7 @@ en:
   view_metapackages__metalist_20: <option>0 bundles selected</option>
   invalid_activation_code_entered: Invalid activation code entered.
   view_users__sidebar_7: Administrate derivatives
-  view_metapackages_show_12: not published
+  view_metapackages_show_12: Not published
   view_home_icons_20: user-icon
   back: Back
   view_cart_update_0: edit bundle-information
@@ -442,7 +442,7 @@ en:
   view_metapackages_show_14: " Actions:&nbsp;&nbsp;"
   view_home_icons_22: " user-icon"
   view_home_contact_us_0: Feedback
-  edit: edit
+  edit: Edit
   view_cart_update_1: Overwrite bundle, if it already exists?
   controller_suggestion_1: In order to install something, you first have to choose something. Don't forget to save!
   msgstr "Conflicts": r "Registration
@@ -518,7 +518,7 @@ en:
   view_distributions_show_1: check everything
   view_admins_sync_all_2: repositories synchronised
   view_home_derivatives_55: " - Mediacenter."
-  view_rating_new_comment_textfield_label: comment
+  view_rating_new_comment_textfield_label: Comment
   view_home_home_6: <b>Installation</b> offers you a summary (bundling) of programs for the installation on your computer, according to your instructions on how you want to use your Ubuntu-PC.
   model_mailer_5: suggestion of a repository
   controller_metapackages_conflicts: This bundle contains packages, which are in conflict!
@@ -552,10 +552,10 @@ en:
   natur_geist_und_technik: "Natur, Geist und Technik - Verein zur F\xC3\xB6rderung der Allgemeinbildung e.V."
   controller_metapackages_11: Couldn't delete package from bundle.
   controller_metapackages_12: " bundle selected </option> \\n"
-  view_messages_show_2: "received on:"
+  view_messages_show_2: "Received on:"
   sources: Sources
   repository_url: "Repository-URL: "
-  superior_category: superior category
+  superior_category: Superior category
   controller_metapackages_13: <option calue='0'>Delete</option>
   helper_distributions_15: Informational page at www.ubuntuusers.de (German)
   view_messages_show_3: Reply
@@ -664,7 +664,7 @@ en:
   view_home_derivatives_38: " - public distribution for the Spanish region of Extremadura."
   you_can: "You can "
   view_users_new_2: If you want to be informed about the development of Communtu you have to enter a valid e-mail-address.
-  view_home_news_3: communtu-announce-de+subscribe@googlegroups.com
+  view_home_news_3: communtu-announce-en+subscribe@googlegroups.com
   view_home_derivatives_39: " for older PCs. It is based on the LXDE-GUI."
   controller_suggestion_11: add repository
   confirm_new_passwd: Confirm new password
@@ -696,8 +696,8 @@ en:
   archive: archive
   controller_users_10: User deleted
   view_users_new_9: Yes, I want to be added to the discussion-mailinglist.
-  view_metapackages_show_0: Bundle created by
-  view_layouts_application_15: "logged in as "
+  view_metapackages_show_0: "Bundle created by "
+  view_layouts_application_15: "Logged in as "
   path: "Path:"
   view_home_faq_00: Frequently Asked Questions
   new_category: New category
