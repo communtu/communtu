@@ -354,6 +354,7 @@ en:
   view_user_profiles__installation_13: "(When chaning the version, the first step has to be done twice, because the Communtu-sources will be deactivated by the upgrade.):"
   view_packages_edit_2: Icon
   view_home_derivatives_20: \tAutomatix was a programm to assist the installation of software and enjoyed great popularity (Automatix was even recommended by the New York Times). However, Automatix did not meet the Ubuntu-standards and the delevopment had been stopped.
+  view_home_faq_19: What are sources or repositories?
   username: Username
   view_packages_new_0: New package
   view_packages_edit_3: "\\t &nbsp;&nbsp;New icon: "
@@ -413,13 +414,13 @@ en:
   view_home_derivatives_29: a computer to watch TV
   view_home_home_21: "log "
   view_home_mail_0: Notification in bugfixing
-  no1: "no"
   view_home_home_22: "in, or "
+  no1: "no"
   view_users__sidebar_4: Ubuntu versions
   view_home_mail_1: Please contact me at the following e-mail-address concerning the bugfixing.
+  view_home_home_23: use Communtu anonymously
   new_packages: "Newly added packages: "
   kommentieren: Comment
-  view_home_home_23: use Communtu anonymously
   view_users__sidebar_5: Administrate users
   view_home_home_24: To the imprint
   controller_metapackages_debianizing: The bundle is currently created as a metapackaged and uploaded. This could take a couple of minutes.
@@ -502,19 +503,19 @@ en:
   view_home_auth_error_0: Error with authentication
   view_home_derivatives_52: " - a kind of Automatix for the ultimate edition."
   view_user_profiles__sources_1: The soon be installed programs and packages are shown and ordered by the appropriate sources so you can see why some sources will be added.
-  model_mailer_2: Your account has been activated.
   view_home_home_3: " stands for a human Linux that is easy to use. In order to use Ubuntu effectively, a whole bunch of programs have to be installed. It is not always easy to keep an overview. With Communtu you only specify for which purposes you want to use your computer and Communtu suggests a bunch of programs to you which will be installed automatically."
+  model_mailer_2: Your account has been activated.
   view_home_auth_error_1: The file you sent to Communtu couldn't be authenticated. Please try again with logging in again or filling in the form again.
   view_home_derivatives_53: " - allows a faster installation, as only the latest packages are downloaded."
   "\"choose Properties and place a tick in front of \\\"Execute\\\".\"": r "description
+  view_home_home_4: More ...
   controller_messages_0: ngliche Nachricht von {{user}} am {{datum}}  \n
   model_mailer_3: You asked for resetting your password
   view_distributions_show_0: "Repositories:"
-  view_home_home_4: More ...
   view_admins_sync_all_1: "Error: couldn't synchronise repositories"
+  view_home_home_5: "The menu on the left offers the following possibilities:"
   model_mailer_4: Your password has been restored.
   view_distributions_show_1: check everything
-  view_home_home_5: "The menu on the left offers the following possibilities:"
   view_admins_sync_all_2: repositories synchronised
   view_home_derivatives_55: " - Mediacenter."
   view_rating_new_comment_textfield_label: comment
@@ -570,19 +571,24 @@ en:
   helper_distributions_18: free and from third party repositories
   msgid "Hallo": " \"Installation \xC3\xBCber Metapakete"
   view_user_profiles__profile_rating_0: Detailed choice of the programs and bundles that shall be installed
+  view_home_faq_20: Programs within Ubuntu are provided via packages, which are located in the package-sources or repositories. Further information about <a href="https://help.ubuntu.com/community/Repositories" target="_blank">Repositorys</a>.
   helper_distributions_19: non-free and from the main repositories
   view_user_profiles__profile_rating_1: nnst du deine beabsichtigte Computer-Nutzung noch genauer angeben. \n
   view_metapackages_edit_gpl: I accept to publish the bundle information under the <a href="http://www.gnu.de/documents/gpl.de.html">GNU General public license</a> (Version 2.0 or higher).
   view_mailbox_show_3: received
+  view_home_faq_21: How do I find the Communtu sources in my system?
   view_user_profiles__profile_rating_2: " \\n"
+  view_home_faq_22: To find the Communtu-sources, you go to "System" --> "Administration" --> "Software Sources" --> "Third-Party Software". Here you deactivate the Communtu-sources. When deactivating the Communtu-sources, the installed programs won't be uninstalled nor the updates are held back. Updates are still obtained from the official sources, which may be added by Communtu.
   view_user_profiles__profile_rating_3: Attention! When finished, don't forget to click on "Save".
   view_roles_new_0: New role
   view_repositories_multinew_0: read
   view_mailbox_show_5: You have no messages in your inbox.
   view_home_impressum_11: "Participants of the Communtu-team (alphabetical order):"
+  view_home_faq_23: How do I delete the metapackages?
   view_videos_edit_0: edit video
   view_packages_show_2: install package instantly
   senden: Send
+  view_home_faq_24: This can be done with Synaptic. To reach Synaptic you open the menu "System" -> "Administration" -> "Synaptic Package Manager". Next you choose the menu-entry "Origin" in the lower-left corner. In the list, which now appears above this section of Synaptic, you choose the entry "packages.communtu.de". In the main-part of Synaptic, on the right side of the program-window, you now have a list of the installed metapackages. To remove a metapackage you right-click it and choose "Mark for Removal". To finish the removal of a metapackage you now have just to click on "Apply" in the menu-bar above. However, the packages contained in this metapackage will not be removed! To remove these you have to choose the packages with Synaptic and remove them individually.
   view_user_profiles__installation_20: This step has already been carried out.
   view_admins_load_packages_0: "New package:"
   creation_error: While creating the package an error occured.
