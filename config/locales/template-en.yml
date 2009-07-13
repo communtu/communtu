@@ -256,6 +256,7 @@ en:
   controller_sessions_5: Your username or password is wrong. If applicable click on "Register" below.
   view_home_derivatives_49: " - Ubuntu with Enlightenment as a desktop environment."
   controller_packages_1: Package created
+  view_layouts_application_20: Javascript is not activated! Please activate Javascript in your browser-settings.
   view_derivatives_show_1: "sudo-program:"
   view_distributions_edit_0: edit distribution
   controller_sessions_6: Your account has not been activated yet. The activation code has been sent to you via e-mail.
@@ -578,7 +579,7 @@ en:
   view_mailbox_show_3: received
   view_home_faq_21: How do I find the Communtu sources in my system?
   view_user_profiles__profile_rating_2: " \\n"
-  view_home_faq_22: To find the Communtu-sources, you go to "System" --> "Administration" --> "Software Sources" --> "Third-Party Software". Here you deactivate the Communtu-sources. When deactivating the Communtu-sources, the installed programs won't be uninstalled nor the updates are held back. Updates are still obtained from the official sources, which may be added by Communtu.
+  view_home_faq_22: To find the Communtu-sources in a Gnome-based system, you navigate to "System" -> "Administration" -> "Software Sources" -> "Third-Party Software". To find the Communtu-sources in a KDE-based system, you open the K-menu and then navigate to "Programs" -> "System" -> "Administration" -> Software Sources" -> "Third-Party Software". Here you deactivate the Communtu-sources. When deactivating the Communtu-sources, the installed programs won't be uninstalled nor the updates are held back. Updates are still obtained from the official sources, which may be added by Communtu.
   view_user_profiles__profile_rating_3: Attention! When finished, don't forget to click on "Save".
   view_roles_new_0: New role
   view_repositories_multinew_0: read
@@ -588,7 +589,7 @@ en:
   view_videos_edit_0: edit video
   view_packages_show_2: install package instantly
   senden: Send
-  view_home_faq_24: This can be done with Synaptic. To reach Synaptic you open the menu "System" -> "Administration" -> "Synaptic Package Manager". Next you choose the menu-entry "Origin" in the lower-left corner. In the list, which now appears above this section of Synaptic, you choose the entry "packages.communtu.de". In the main-part of Synaptic, on the right side of the program-window, you now have a list of the installed metapackages. To remove a metapackage you right-click it and choose "Mark for Removal". To finish the removal of a metapackage you now have just to click on "Apply" in the menu-bar above. However, the packages contained in this metapackage will not be removed! To remove these you have to choose the packages with Synaptic and remove them individually.
+  view_home_faq_24: This can be done with Synaptic. To reach Synaptic in a Gnome-based system, you open the menu "System" -> "Administration" -> "Synaptic Package Manager". To reach Synaptic in a KDE-based system, you open the K-menu and then navigate to "Programs" -> "System" -> "Administration" -> "Synaptic Package Manager". Next you choose the menu-entry "Origin" in the lower-left corner. In the list, which now appears above this section of Synaptic, you choose the entry "packages.communtu.de". In the main-part of Synaptic, on the right side of the program-window, you now have a list of the installed metapackages. To remove a metapackage you right-click it and choose "Mark for Removal". To finish the removal of a metapackage you now have just to click on "Apply" in the menu-bar above. However, the packages contained in this metapackage will not be removed! To remove these you have to choose the packages with Synaptic and remove them individually.
   view_user_profiles__installation_20: This step has already been carried out.
   view_admins_load_packages_0: "New package:"
   creation_error: While creating the package an error occured.
