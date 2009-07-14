@@ -1,0 +1,93 @@
+msgid ""
+msgstr ""
+"Plural-Forms: n != 1\n"
+"Project-Id-Version: test 0.1\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Timo Denissen <timo-denissen@gmx.de>\n"
+"Language-Team: Communtu <info@communtu.de>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: Root
+msgid "Root category"
+msgstr ""
+#: Grafik/Design
+msgid "Aktivitaeten rund um Grafik"
+msgstr ""
+#: Audio
+msgid "Alles rund um Musik"
+msgstr ""
+#: Musik Hoeren
+msgid "Musik hoeren"
+msgstr ""
+#: Musik Machen
+msgid "Musik machen"
+msgstr ""
+#: Film
+msgid "Alles rund um Filme"
+msgstr ""
+#: Filme Gucken
+msgid "Filme gucken"
+msgstr ""
+#: Filme Machen
+msgid "Filme machen"
+msgstr ""
+#: Programmieren
+msgid "Programme schreiben"
+msgstr ""
+#: Büro
+msgid "Programme, die zum Büroalltag benötigt werden"
+msgstr ""
+#: Fremdsprachen
+msgid "Lernprogramme, Dictionarys und andere Software, die mit Sprachen zu tun hat"
+msgstr ""
+#: Naturwissenschaften
+msgid "Physik, Chemie und Biologie"
+msgstr ""
+#: Geisteswissenschaften
+msgid "Software für Dichter und Denker..."
+msgstr ""
+#: Spiele
+msgid "Für die Entspannung zwischendurch"
+msgstr ""
+#: Webdesign
+msgid "Software, die für die Erstellung einer Internetpräsenz gebraucht wird"
+msgstr ""
+#: Planen und Organisieren
+msgid "Projektmanagement? Verwaltung? Terminplanung? Hier sind sie richtig"
+msgstr ""
+#: Kommunikation
+msgid "Chatten, Telefonieren & Co"
+msgstr ""
+#: Barrierefreiheit
+msgid "Hilfsmittel für Benutzer mit körperlichen Einschränkungen"
+msgstr ""
+#: Brennen
+msgid "CD/DVD brennen"
+msgstr ""
+#: System
+msgid "Programme zur Pflege des Sytems"
+msgstr ""
+#: Umstieg auf Ubuntu
+msgid "Hilfe beim Umstieg"
+msgstr ""
+#: Unterhaltungsmedien
+msgid "Musik/Filme abspielen/brennen/machen"
+msgstr ""
+#: Bildung und Wissenschaft
+msgid ""
+msgstr ""
+#: Internet
+msgid "Alles rund ums Internet"
+msgstr ""
+#: Filesharing
+msgid "hoch- und runterladen von Software"
+msgstr ""
+#: Derivate
+msgid "Ubuntu-Derivate"
+msgstr ""
