@@ -1,93 +1,111 @@
 msgid ""
 msgstr ""
-"Plural-Forms: n != 1\n"
-"Project-Id-Version: test 0.1\n"
+"Project-Id-Version: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
-"Last-Translator: Timo Denissen <timo-denissen@gmx.de>\n"
+"Last-Translator: Timo <timo@communtu.de>\n"
 "Language-Team: Communtu <info@communtu.de>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: German\n"
-"X-Poedit-Country: GERMANY\n"
-"X-Poedit-SourceCharset: utf-8\n"
 
 #: Root
 msgid "Root category"
-msgstr ""
+msgstr "root category"
+
 #: Grafik/Design
 msgid "Aktivitaeten rund um Grafik"
-msgstr ""
+msgstr "everything that has to with graphics"
+
 #: Audio
 msgid "Alles rund um Musik"
-msgstr ""
+msgstr "everything that has to do with music"
+
 #: Musik Hoeren
 msgid "Musik hoeren"
-msgstr ""
+msgstr "listen to music"
+
 #: Musik Machen
 msgid "Musik machen"
-msgstr ""
+msgstr "make music"
+
 #: Film
 msgid "Alles rund um Filme"
-msgstr ""
+msgstr "everything that has to do with movies"
+
 #: Filme Gucken
 msgid "Filme gucken"
-msgstr ""
+msgstr "watch movies"
+
 #: Filme Machen
 msgid "Filme machen"
-msgstr ""
+msgstr "make movies"
+
 #: Programmieren
 msgid "Programme schreiben"
-msgstr ""
-#: BÃ¼ro
-msgid "Programme, die zum BÃ¼roalltag benÃ¶tigt werden"
-msgstr ""
+msgstr "programming"
+
+#: Büro
+msgid "Programme, die zum Büroalltag benötigt werden"
+msgstr "programs, which are used in office every day"
+
 #: Fremdsprachen
 msgid "Lernprogramme, Dictionarys und andere Software, die mit Sprachen zu tun hat"
-msgstr ""
+msgstr "educational software, dictionaries and similar software that has to do with languages"
+
 #: Naturwissenschaften
 msgid "Physik, Chemie und Biologie"
-msgstr ""
+msgstr "physics, chemistry and biology"
+
 #: Geisteswissenschaften
-msgid "Software fÃ¼r Dichter und Denker..."
-msgstr ""
+msgid "Software für Dichter und Denker..."
+msgstr "software for poets..."
+
 #: Spiele
-msgid "FÃ¼r die Entspannung zwischendurch"
-msgstr ""
+msgid "Für die Entspannung zwischendurch"
+msgstr "for the relaxation in between"
+
 #: Webdesign
-msgid "Software, die fÃ¼r die Erstellung einer InternetprÃ¤senz gebraucht wird"
-msgstr ""
+msgid "Software, die für die Erstellung einer Internetpräsenz gebraucht wird"
+msgstr "Software needed for creating webpages"
+
 #: Planen und Organisieren
 msgid "Projektmanagement? Verwaltung? Terminplanung? Hier sind sie richtig"
-msgstr ""
+msgstr "Project management? Administration? Scheduling? You're totally right here"
+
 #: Kommunikation
 msgid "Chatten, Telefonieren & Co"
-msgstr ""
+msgstr "chatting, telephoning, etc."
+
 #: Barrierefreiheit
-msgid "Hilfsmittel fÃ¼r Benutzer mit kÃ¶rperlichen EinschrÃ¤nkungen"
-msgstr ""
+msgid "Hilfsmittel für Benutzer mit körperlichen Einschränkungen"
+msgstr "utilities for disabled user"
+
 #: Brennen
 msgid "CD/DVD brennen"
-msgstr ""
+msgstr "burning CDs/DVDs"
+
 #: System
 msgid "Programme zur Pflege des Sytems"
-msgstr ""
+msgstr "programs for system maintenance"
+
 #: Umstieg auf Ubuntu
 msgid "Hilfe beim Umstieg"
-msgstr ""
+msgstr "software supporting a change to Ubuntu"
+
 #: Unterhaltungsmedien
 msgid "Musik/Filme abspielen/brennen/machen"
-msgstr ""
-#: Bildung und Wissenschaft
-msgid ""
-msgstr ""
+msgstr "play/burn/make music/movies"
+
 #: Internet
 msgid "Alles rund ums Internet"
-msgstr ""
+msgstr "everything that has to do with the Internet"
+
 #: Filesharing
 msgid "hoch- und runterladen von Software"
-msgstr ""
+msgstr "up- and downloading of software"
+
 #: Derivate
 msgid "Ubuntu-Derivate"
-msgstr ""
+msgstr "Ubuntu derivatives"
+
