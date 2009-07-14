@@ -21,6 +21,7 @@ en:
   view_home_beteiligung_13: Since we have many ideas for the platform's further development, we need programmers. Ideally you already have some experience with Ruby on Rails.
   view_accounts_edit_1: old password
   view_home_about_13: Post-installation of single functions
+  ~: "f\xC3\xBCr Solidarische \xC3\x96konom"
   view_packages_show_15: source/repository
   view_metapackages_show_version_v: (version {{v}})
   view_home_faq_06: On the left side of the webpage is the bundle-editor. There you have to click "New Bundle". In the main-window you can choose packages and add them to the bundle. When finished, you have to click on the "Save"-symbol in the bundle-editor. Now a new window pop ups in the main-window where you have to enter a meaningful name and a description. Don't forget to assign your bundle to a category.
@@ -117,7 +118,7 @@ en:
   controller_sent_1: user does not exist
   view_home_home_14: "There are also "
   controller_cart_2: "The following packages couldn't be found:"
-  view_metapackages__metalist_10: Rating
+  view_metapackages__metalist_10: "Rating "
   controller_sent_2: message successfully send
   view_categories_edit_3: Link for further information
   view_home_home_15: more detailled information
@@ -128,7 +129,10 @@ en:
   view_home_home_17: imprint.
   view_repositories_show_0: show repository
   view_packages__search_0: Search for packages
-  view_my_mailer_repo_0: \n
+  view_my_mailer_repo_0: |-
+    Hello, 
+    
+    a suggestion for a new repository has been made at en.communtu.org:
   view_metapackages__metalist_14: Install through metapackage. Please add the sources first.
   view_home_icons_13: program-bundle
   match_ubuntu: Match Ubuntu to your personal needs
@@ -146,7 +150,11 @@ en:
   view_packages_rdepends_1: " directly and indirectly contained packages"
   view_home_icons_16: migration from repositories
   trusted: trusted
-  view_home_beteiligung_4: st, dass Du schon vieles zu Open Source Programmen weisst? \n
+  view_home_beteiligung_4: |-
+    You think you already know a lot abot Open Source programs? 
+    Write your experience into the comments of the according package our maybe you have seen
+    a video of the program at YouTube? Add the video
+    to the corresponding program.
   bundle_editor: bundle-editor
   view_user_profiles__profile_data_11: " Allow community-sources (\"universe/multiverse\", secure, more programs/better comfort):"
   view_repositories_show_4: "package-list for i386:"
@@ -233,7 +241,7 @@ en:
   controller_users_9: An error occured while deactivating this user.
   view_users_show_3: (month/year)
   view_home_news_10: communtu-discuss-en+subscribe@googlegroups.com
-  view_cart_new_from_list_5: Create
+  view_cart_new_from_list_5: "Create "
   view_home_derivatives_46: " - Ubuntu server-version without any GUI."
   view_users_show_4: "last login:"
   view_home_news_11: "This list is intended for discussion about the platform. The frequency is a little higher than once a week. Posts will be collected in an "
@@ -268,7 +276,7 @@ en:
   view_sent_index_0: sent messages
   view_home_news_18: http://communtu.blogspot.com
   name_without_colon: Name
-  view_home_derivatives_2: Ubuntu derivatives
+  view_home_derivatives_2: "Ubuntu derivatives "
   view_user_profiles__profile_data_0: "Preparing the installation: enter the base data"
   view_user_mailer_activation_0: ", your account has been activated. Please follow this link:"
   view_packages__deps_0: \t   none
@@ -301,7 +309,9 @@ en:
   view_debs_index_1: Go back to the Communtu-menu
   licence: "Licence:"
   view_home_derivatives_6: detailed selection
-  view_home_cancel_0: u -\n
+  view_home_cancel_0: |-
+    Communtu -
+     something went wrong while donating.
   view_user_profiles__profile_data_4: further information
   view_sent_index_5: You haven't sent any messages yet.
   category_with_colon: "Category:"
@@ -325,11 +335,11 @@ en:
   view_home_home_rating_link: rate bundles
   view_home_home_new_messages_desc: You have new messages in your inbox.
   view_home_faq_16: To install a program, go to "Search programs" and you get a list of all programs. When you found the program, you were looking for, you just have to click on the installation-icon. It could be that you have to add the repository of that program first. To do so, click on "Add sources" and Communtu will add the sources to your system.
-  view_debs_index_5: Create
+  view_debs_index_5: "Create  "
   view_home_derivatives_9: "With Communtu installable derivatives:"
   view_users_new_11: your last name
   view_user_profiles__profile_data_8: "\\t     \\tVia your webbrowser detected version: "
-  view_repositories_index_0: repositories
+  view_repositories_index_0: "repositories "
   view_packages_show_26: change metapackage into bundle
   view_packages_edit_10: Package description
   view_packages_edit_0: Edit package
@@ -358,7 +368,10 @@ en:
   installing_using_script: installing via script
   view_user_profiles__installation_16: register sources and keys
   view_repositories_index_5: new repository
-  view_my_mailer_mail_0: \n
+  view_my_mailer_mail_0: |-
+    Hello, 
+    
+    a feedback from en.communtu.org has arrived. The subject is:
   view_admins_test_all_1: Every repositorie could be reached.
   yes1: "yes"
   view_user_profiles__installation_17: Just click on the link and open the file and open it with the recommended package-installer.
@@ -368,7 +381,7 @@ en:
   view_home_home_rating_headline: Best rated bundles
   view_home_derivatives_24: "Derivatives, which should be installed with the derivative installation-CD:"
   view_packages_new_4: Source
-  view_categories_show_0: "Name:"
+  view_categories_show_0: "Name: "
   controller_debs_0: Debian-packages
   view_home_derivatives_25: http://en.wikipedia.org/wiki/Xfce
   view_user_profiles__installation_19: "Attention: after clicking, it will take a moment until the file is provided."
@@ -434,7 +447,7 @@ en:
   view_cart_update_1: Overwrite bundle, if it already exists?
   controller_suggestion_1: In order to install something, you first have to choose something. Don't forget to save!
   view_user_profiles__installation_2: "Because of your choice the programs will now be installed on your computer. Please follow these steps:"
-  view_metapackages_show_15: Edit
+  view_metapackages_show_15: "Edit "
   view_home_contact_us_1: Here you have the possibility to send us feedback.
   view_cart_update_2: "Level of expert:"
   controller_suggestion_2: Add repositories and keys for the user
@@ -448,14 +461,22 @@ en:
   view_users__user_0: activate
   view_metapackages_show_18: If you publish the bundle every user has access to this bundle. However, the bundle cannot be deleted or renamed after publishing.
   view_home_impressum_4: Bauernstr. 2
-  view_home_contact_us_4: Send
+  view_home_contact_us_4: "Send "
   view_users__user_1: deactivate
-  view_home_impressum_5: ""
+  view_home_impressum_5: |-
+    28203 Bremen
+    Germany
   controller_suggestion_6: Add repositories and keys for the package
   view_users__user_2: edit roles
   view_repositories_edit_0: edit repositories
   view_metapackages_finish_migrate_0: All bundles were migrated from
-  view_user_mailer_signup_notification_0: nd herzliche Willkommen bei Communtu!\n
+  view_user_mailer_signup_notification_0: |-
+    Hello and welcome to Communtu!
+    
+    
+     You successfully registered yourselfe
+    at http://en.communtu.org. You can now use every
+    featrue of the platform.
   view_roles_edit_0: edit role
   view_repositories_edit_1: "Distribution:"
   view_metapackages_finish_migrate_1: " to"
@@ -463,10 +484,24 @@ en:
   view_user_mailer_signup_notification_1: "Your username is:"
   view_roles_edit_1: rolename
   view_roles__role_0: delete role
-  view_metapackages_finish_migrate_2: .
+  view_metapackages_finish_migrate_2: ". "
   controller_suggestion_8: Communtu post-installation for users
+  view_user_mailer_signup_notification_2: |-
+    
+    Greetings
+    
+    the Communtu-team
+    
+      Further information about the project and your possibilities to use Communtu can be found at
+     http://en.communtu.org/home/faq
+    
+      Our anouncements and mailinglists can be found at:
+    http://en.communtu.org/home/news
   view_roles__role_1: assign role
-  view_my_mailer_mailerror_0: " \\n"
+  view_my_mailer_mailerror_0: |-
+    Hello, 
+     an error was reported on www.communtu.de. 
+    The user would like to be notified when the error has been fixed.
   view_metapackages_finish_migrate_3: "The following packages could not be migrated:"
   ubuntu_derivatives: Ubuntu derivatives
   view_rating_new_comment_info: Please enter a review to your rating. This is a <b>obligatory</b> step.
@@ -474,7 +509,7 @@ en:
   view_passwords_edit_0: "    Password:"
   view_home_derivatives_50: " - with Fluxbox and several network-tools."
   view_passwords_edit_1: "    confirm password:"
-  view_metapackages_finish_migrate_6: Forward
+  view_metapackages_finish_migrate_6: "Forward "
   model_mailer_0: Welcome to Communtu
   controller_metapackages_no_renaming: Released bundles cannot be renamed.
   view_home_home_1: http://www.ubuntuusers.de (German)
@@ -493,7 +528,9 @@ en:
   view_home_auth_error_1: The file you sent to Communtu couldn't be authenticated. Please try again with logging in again or filling in the form again.
   view_home_derivatives_53: " - allows a faster installation, as only the latest packages are downloaded."
   view_home_home_4: More ...
-  controller_messages_0: ngliche Nachricht von {{user}} am {{datum}}  \n
+  controller_messages_0: |
+    Original message by {{user}} from {{datum}}}  
+
   model_mailer_3: You asked for resetting your password
   view_distributions_show_0: "Repositories:"
   view_admins_sync_all_1: "Error: couldn't synchronise repositories"
@@ -502,13 +539,13 @@ en:
   view_distributions_show_1: check everything
   view_admins_sync_all_2: repositories synchronised
   view_home_derivatives_55: " - Mediacenter."
-  view_rating_new_comment_textfield_label: Comment
+  view_rating_new_comment_textfield_label: "Comment "
   view_home_home_6: <b>Installation</b> offers you a summary (bundling) of programs for the installation on your computer, according to your instructions on how you want to use your Ubuntu-PC.
   model_mailer_5: suggestion of a repository
   controller_metapackages_conflicts: This bundle contains packages, which are in conflict!
   controller_repositories_0: repositories
   view_distributions_show_2: synchronise everything
-  view_admins_sync_package_1: "Error: couldn't synchronise repositories"
+  view_admins_sync_package_1: "Error: couldn't synchronise repository"
   view_home_derivatives_56: http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix (German)
   view_home_home_7: <b>Administrate bundles</b> Did you make good experiences with programs? Bundle them thematically or take a look at existing bundles.
   view_admins_show_0: Here should be an introduction to the admin area
@@ -524,10 +561,10 @@ en:
   view_distributions_index_0: Available distributions
   are_you_sure: Are you sure?
   controller_repositories_2: Repository updated.
-  view_distributions_show_4: add repository
+  view_distributions_show_4: "add repository "
   view_admins_sync_package_3: "Repository: "
   view_home_home_9: <b>Ubuntu derivatives</b> is a small overview about Kubuntu, Xubuntu, Medibuntu, etc.
-  helper_distributions_12: Edit
+  helper_distributions_12: edit
   view_distributions_index_1: new distribution
   controller_repositories_3: sources.list read.
   view_messages_show_0: "From:"
@@ -535,7 +572,7 @@ en:
   helper_distributions_13: delete
   natur_geist_und_technik: "Natur, Geist und Technik - Verein zur F\xC3\xB6rderung der Allgemeinbildung e.V."
   controller_metapackages_11: Couldn't delete package from bundle.
-  controller_metapackages_12: " bundle selected </option> \\n"
+  controller_metapackages_12: " bundle selected </option> \n"
   view_messages_show_2: "Received on:"
   sources: Sources
   repository_url: "Repository-URL: "
@@ -555,11 +592,13 @@ en:
   view_user_profiles__profile_rating_0: Detailed choice of the programs and bundles that shall be installed
   view_home_faq_20: Programs within Ubuntu are provided via packages, which are located in the package-sources or repositories. Further information about <a href="https://help.ubuntu.com/community/Repositories" target="_blank">Repositorys</a>.
   helper_distributions_19: non-free and from the main repositories
-  view_user_profiles__profile_rating_1: nnst du deine beabsichtigte Computer-Nutzung noch genauer angeben. \n
+  view_user_profiles__profile_rating_1: "Here you can choose the use of your computer in detail. \n\
+    With a click on the "
   view_metapackages_edit_gpl: I accept to publish the bundle information under the <a href="http://www.gnu.de/documents/gpl.de.html">GNU General public license</a> (Version 2.0 or higher).
   view_mailbox_show_3: received
   view_home_faq_21: How do I find the Communtu sources in my system?
-  view_user_profiles__profile_rating_2: " \\n"
+  view_user_profiles__profile_rating_2: " you can \n\
+    open or close a section to make a detailed selection."
   view_home_faq_22: To find the Communtu-sources in a Gnome-based system, you navigate to "System" -> "Administration" -> "Software Sources" -> "Third-Party Software". To find the Communtu-sources in a KDE-based system, you open the K-menu and then navigate to "Programs" -> "System" -> "Administration" -> Software Sources" -> "Third-Party Software". Here you deactivate the Communtu-sources. When deactivating the Communtu-sources, the installed programs won't be uninstalled nor the updates are held back. Updates are still obtained from the official sources, which may be added by Communtu.
   view_user_profiles__profile_rating_3: Attention! When finished, don't forget to click on "Save".
   view_roles_new_0: New role
@@ -587,7 +626,7 @@ en:
   view_repositories_migrate_2: " to distribution"
   view_layouts_application_1: Communtu customizes your Ubuntu system to your individual needs.
   view_home_derivatives_30: http://en.wikipedia.org/wiki/Home_theater_PC
-  view_users__mailbox_list_3: sent messages
+  view_users__mailbox_list_3: "sent messages "
   view_user_profiles_help_0: Determination of the Ubuntu version
   view_user_profiles__installation_24: installation via metapackages
   view_packages_show_8: "Popularity:"

@@ -535,7 +535,7 @@ msgstr "<br />distribution"
 
 #: helper_distributions_12
 msgid "bearbeiten"
-msgstr "Edit"
+msgstr "edit"
 
 #: helper_distributions_13
 msgid "löschen"
@@ -935,7 +935,7 @@ msgstr "repositories synchronised"
 
 #: view_admins_sync_package_1
 msgid "Fehler: Repository konnte nicht synchronisiert werden"
-msgstr "Error: couldn't synchronise repositories"
+msgstr "Error: couldn't synchronise repository"
 
 #: view_admins_sync_package_2
 msgid "Repository synchronisiert"
@@ -979,7 +979,7 @@ msgstr "Choose the file which contains the package-list:"
 
 #: view_cart_new_from_list_5
 msgid "Erstellen"
-msgstr "Create"
+msgstr "Create "
 
 #: view_cart_new_from_list_tip
 msgid "Tipp: eine große Liste kannst du auch zunächst mit einem Editor thematisch sortieren und die resultierenden Teillisten einzeln hier hochladen. Die entstehenden Bündel kannst du wiederum zu einem Bündel zusammenfassen. Dadurch entsteht ein besser strukturiertes Bündel."
@@ -1019,7 +1019,7 @@ msgstr "show category-tree"
 
 #: view_categories_show_0
 msgid "Name:"
-msgstr "Name:"
+msgstr "Name: "
 
 #: view_categories_show_2
 msgid "Weitere Informationen:"
@@ -1047,7 +1047,7 @@ msgstr "Create every failed deb <b>Warning: only do this at admin.communtu.de!</
 
 #: view_debs_index_5
 msgid "Erzeugen"
-msgstr "Create"
+msgstr "Create  "
 
 #: view_derivatives_edit_0
 msgid "Derivative bearbeiten"
@@ -1107,7 +1107,7 @@ msgstr "read sources.list"
 
 #: view_distributions_show_4
 msgid "Repository hinzufügen"
-msgstr "add repository"
+msgstr "add repository "
 
 #: view_distributions_show_8
 msgid "Vor dem Löschen einer Distribution müssen alle Benutzer, die sie nutzen, ausgeloggt sein! Bist du sicher?"
@@ -1267,7 +1267,7 @@ msgstr "Here you have the possibility to send us feedback."
 
 #: view_home_contact_us_4
 msgid "Senden"
-msgstr "Send"
+msgstr "Send "
 
 #: view_home_derivatives_1
 msgid "Communtu setzt auf einer Ubuntu-Basisinstallation auf. Es gibt nun eine ganze Reihe von "
@@ -1311,7 +1311,7 @@ msgstr " is a Ubuntu spin-off with its own user community which has dedicated it
 
 #: view_home_derivatives_2
 msgid "Ubuntu-Derivaten"
-msgstr "Ubuntu derivatives"
+msgstr "Ubuntu derivatives "
 
 #: view_home_derivatives_20
 msgid "\tAutomatix war eine Installationshilfe, die sich großer Beliebtheit erfreute (sie wurde sogar von der New York Times empfohlen), die aber nicht ganz den Ubuntu-Programmierstandards entsprach und inzwischen nicht mehr weiterentwickelt wird. "
@@ -1949,7 +1949,7 @@ msgstr "Forward"
 
 #: view_metapackages__metalist_10
 msgid "Bewertung"
-msgstr "Rating"
+msgstr "Rating "
 
 #: view_metapackages__metalist_14
 msgid "installieren mittels Metapaket. Bitte vorher die Quellen hinzufügen."
@@ -1993,7 +1993,7 @@ msgstr " to"
 
 #: view_metapackages_finish_migrate_2
 msgid " migriert."
-msgstr "."
+msgstr ". "
 
 #: view_metapackages_finish_migrate_3
 msgid "Folgende Pakete konnten jedoch nicht migriert werden:"
@@ -2001,7 +2001,7 @@ msgstr "The following packages could not be migrated:"
 
 #: view_metapackages_finish_migrate_6
 msgid "Weiter"
-msgstr "Forward"
+msgstr "Forward "
 
 #: view_metapackages_immediate_conflicts_0
 msgid "Konflikte innerhalb von Bündeln"
@@ -2045,7 +2045,7 @@ msgstr " Actions:&nbsp;&nbsp;"
 
 #: view_metapackages_show_15
 msgid "Editieren"
-msgstr "Edit"
+msgstr "Edit "
 
 #: view_metapackages_show_16
 msgid "Paketliste editieren"
@@ -2279,7 +2279,7 @@ msgstr "Please enter a review to your rating. This is a <b>obligatory</b> step."
 
 #: view_rating_new_comment_textfield_label
 msgid "Kommentar"
-msgstr "Comment"
+msgstr "Comment "
 
 #: view_rating_rating_rate
 msgid "von 5 Sternen vergeben"
@@ -2307,7 +2307,7 @@ msgstr "Distribution:"
 
 #: view_repositories_index_0
 msgid "Repositories"
-msgstr "repositories"
+msgstr "repositories "
 
 #: view_repositories_index_5
 msgid "Neues Repository"
@@ -2683,7 +2683,7 @@ msgstr "Mailbox"
 
 #: view_users__mailbox_list_3
 msgid "Versendete Nachrichten"
-msgstr "sent messages"
+msgstr "sent messages "
 
 #: view_users__sidebar_0
 msgid "Installation"
