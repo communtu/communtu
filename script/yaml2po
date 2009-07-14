@@ -2,6 +2,7 @@
 
 require 'yaml.rb'
 
+
 def quote s
   if s.nil?
     return nil
@@ -9,9 +10,12 @@ def quote s
   s.gsub(/"/,'\\\"').gsub(/\n/,'\\\n')
 end
 
-y = YAML::load_file(ARGV[0])
+if ARGV.size < 3 then
+  puts "usage: yaml2po language-code source-file target-file"
+else
+y = YAML::load_file(ARGV[1])
 
-f = File.open(ARGV[1],"w")
+f = File.open(ARGV[2],"w")
 
 f.puts 'msgid ""'
 f.puts 'msgstr ""'
@@ -30,7 +34,7 @@ f.puts '"X-Poedit-SourceCharset: utf-8\n"'
 f.puts ""
 
 # use German localisaiton
-y["de"].to_a.sort.each do |tag_msg|
+y[ARGV[0]].to_a.sort.each do |tag_msg|
   tag = tag_msg[0]
   msg = tag_msg[1]
   f.puts "#: #{tag}"
@@ -39,3 +43,4 @@ y["de"].to_a.sort.each do |tag_msg|
 
 end
 f.close
+end
