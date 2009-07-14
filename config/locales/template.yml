@@ -594,7 +594,7 @@ de:
   view_metapackages_show_version_v: "(Version {{v}})"
   view_my_mailer_mail_0: "Hallo, \n\nes wurde auf www.communtu.de ein Feedback gesendet. Der Betreff ist:"
   view_my_mailer_mail_1: "Folgender Kommentar wurde hinterlassen:"
-  view_my_mailer_mailerror_0: "Hallo,  \n es wurde auf www.communtu.de ein Fehlerr gemeldet.  \nDer Benutzer möchte ganz gern, darüber benachrichtigt werden, wenn der Fehler nicht mehr auftritt."
+  view_my_mailer_mailerror_0: "Hallo,  \n es wurde auf www.communtu.de ein Fehler gemeldet.  \nDer Benutzer möchte ganz gern, darüber benachrichtigt werden, wenn der Fehler nicht mehr auftritt."
   view_my_mailer_repo_0: "Hallo, \n\nes wurde auf www.communtu.de ein Vorschlag für ein neues Repository gemacht:"
   view_my_mailer_repo_1: "Folgende Begründung wurde angegeben:"
   view_packages__deps_0: "\t   keine"
