@@ -290,6 +290,8 @@ class Metapackage < BasePackage
 
     # build deb package
     Dir.chdir '..'
+    safe_system "echo >>  #{RAILS_ROOT}/log/debianize.log 2>&1"
+    safe_system "date >>  #{RAILS_ROOT}/log/debianize.log 2>&1"
     safe_system "dpkg-buildpackage -uc -us -rfakeroot >> #{RAILS_ROOT}/log/debianize.log 2>&1"
 #    safe_system "dpkg-buildpackage -sgpg -k#{Deb::COMMUNTU_KEY} -rfakeroot >> #{RAILS_ROOT}/log/debianize.log 2>&1"
     Dir.chdir '../../..'

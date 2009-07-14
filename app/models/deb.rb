@@ -41,6 +41,7 @@ class Deb < ActiveRecord::Base
       f.puts
       f.puts
       f.puts "++++++++++++++++++++++ Processing version #{name}-#{version}"
+      f.puts Time.now
       f.puts
       # compute list of packages contained in metapackage (todo: delegate this to an own method, preferably using more :includes)
       mcs = Metacontent.find(:all,:conditions => 
