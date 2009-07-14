@@ -1,6 +1,7 @@
 class MetapackagesController < ApplicationController
   before_filter :login_required
-  
+  before_filter :is_anonymous, :only => :publish
+
   def title
     t(:bundle)
   end
@@ -215,11 +216,16 @@ class MetapackagesController < ApplicationController
             redirect_to metapackage_path(meta) + "/edit"
         elsif action == "pedit"
             edit_packages
-        elsif action == "publish" 
+        elsif action == "publish"
+          if current_user.anonymous? then
+            flash[:error] = t(:controller_application_0)
+            redirect_to root_path
+          else
             meta.published = 1
             meta.modified = true
             meta.save!
             redirect_to metapackage_path(meta)
+          end
         elsif action == "delete"
             if !meta.published
               meta.destroy

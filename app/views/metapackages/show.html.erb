@@ -78,7 +78,7 @@
         <option value="edit"><%=t(:view_metapackages_show_15)%></option>
         <option value="pedit"><%=t(:view_metapackages_show_16)%></option>
         
-        <% if not @metapackage.is_published? %>
+        <% if not @metapackage.is_published? and !current_user.anonymous? then %>
         <option value="publish"><%=t(:view_metapackages_show_17)%></option>
         <% end %>
         <option value="delete"><%=t(:delete)%></option>

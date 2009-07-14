@@ -31,10 +31,10 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.integer  "security_type"
     t.string   "version"
     t.string   "debianized_version"
-    t.integer  "ratings_count"
     t.boolean  "modified",           :default => false
     t.boolean  "debianizing",        :default => false
     t.boolean  "deb_error",          :default => false
+    t.integer  "ratings_count"
   end
 
   create_table "cart_contents", :force => true do |t|
@@ -298,6 +298,8 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.integer  "profile_version"
     t.boolean  "profile_changed",                         :default => false
     t.boolean  "anonymous",                               :default => false
+    t.string   "surname",                   :limit => 30, :default => ""
+    t.string   "firstname",                 :limit => 30, :default => ""
   end
 
   create_table "videos", :force => true do |t|
