@@ -34,7 +34,7 @@ f.puts '"X-Poedit-SourceCharset: utf-8\n"'
 f.puts ""
 
 # use German localisaiton
-y[ARGV[0]].to_a.sort.each do |tag_msg|
+y[ARGV[0]].to_a.each do |tag_msg|
   tag = tag_msg[0]
   msg = tag_msg[1]
   f.puts "#: #{tag}"
