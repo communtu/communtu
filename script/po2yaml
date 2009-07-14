@@ -3,7 +3,7 @@ require 'yaml.rb'
 f = File.open(ARGV[0])
 y = {}
 while not f.eof? do
-  while((line = f.gets)[0]!="#"[0] && !f.eof) do
+  while((line = f.gets)[0,2]!="#:" && !f.eof) do
   end
   f.gets # original
   line1 = f.gets # translation
