@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: test 0.1\n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
-"Last-Translator: Timo Denissen <timo-denissen@gmx.de>\n"
+"Last-Translator: Timo <timo@communtu.de>\n"
 "Language-Team: Communtu <info@communtu.de>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -16,396 +16,528 @@ msgstr ""
 #: Drucken
 msgid "Drucken"
 msgstr ""
+
 #: Rechtschreibprüfung
 msgid "Rechtschreibprüfung"
 msgstr ""
+
 #: Texte lesen
 msgid "Texte lesen"
 msgstr ""
+
 #: Textverarbeitung
 msgid "Textverarbeitung"
 msgstr ""
+
 #: Desktop
 msgid "Desktop"
-msgstr ""
+msgstr "Desktop"
+
 #: Grafik
 msgid "Grafik"
 msgstr ""
+
 #: Geoinformationssysteme
 msgid "Geoinformationssysteme"
 msgstr ""
+
 #: Umstieg von Windows
 msgid "Umstieg von Windows"
 msgstr ""
+
 #: Pdf
 msgid "Pdf"
 msgstr ""
+
 #: System-Werkzeuge
 msgid "System-Werkzeuge"
 msgstr ""
+
 #: Landkarten
 msgid "Landkarten"
 msgstr ""
+
 #: Unfreie Software
 msgid "Unfreie Software"
 msgstr ""
+
 #: Spiele
 msgid "Spiele"
 msgstr ""
+
 #: Telefonieren, Chatten, Mailen
 msgid "Telefonieren, Chatten, Mailen"
 msgstr ""
+
 #: Multimedia
 msgid "Multimedia"
 msgstr ""
+
 #: Internet
 msgid "Internet"
 msgstr ""
+
 #: Compilieren
 msgid "Compilieren"
 msgstr ""
+
 #: Brennen
 msgid "Brennen"
 msgstr ""
+
 #: Audio-Grundlagen
 msgid "Audio-Grundlagen"
 msgstr ""
+
 #: Video-Grundlagen
 msgid "Video-Grundlagen"
 msgstr ""
+
 #: Audio erweitert
 msgid "Audio erweitert"
 msgstr ""
+
 #: Grafik erweitert
 msgid "Grafik erweitert"
 msgstr ""
+
 #: PC als TV und Videorekorder
 msgid "PC als TV und Videorekorder"
 msgstr ""
+
 #: Video erweitert
 msgid "Video erweitert"
 msgstr ""
+
 #: Ubuntustudio
 msgid "Ubuntustudio"
 msgstr ""
+
 #: Mythbuntu-Desktop
 msgid "Mythbuntu-Desktop"
 msgstr ""
+
 #: Mythbuntu
 msgid "Mythbuntu"
 msgstr ""
+
 #: Linux Mint
 msgid "Linux Mint"
 msgstr ""
+
 #: Edubuntu
 msgid "Edubuntu"
 msgstr ""
+
 #: Gobuntu
 msgid "Gobuntu"
 msgstr ""
+
 #: Kubuntu
 msgid "Kubuntu"
 msgstr ""
+
 #: Xubuntu
 msgid "Xubuntu"
 msgstr ""
+
 #: LaTeX
 msgid "LaTeX"
 msgstr ""
+
 #: Filmemachen
 msgid "Filmemachen"
 msgstr ""
+
 #: Cliparts
 msgid "Cliparts"
 msgstr ""
+
 #: Kompressionstools
 msgid "Kompressionstools"
 msgstr ""
+
 #: Entwicklungs-Werkzeuge
 msgid "Entwicklungs-Werkzeuge"
 msgstr ""
+
 #: Extrafonts
 msgid "Extrafonts"
 msgstr ""
+
 #: automatix-firefoxmplayerplugin
 msgid "automatix-firefoxmplayerplugin"
 msgstr ""
+
 #: automatix-base
 msgid "automatix-base"
 msgstr ""
+
 #: Ipod
 msgid "Ipod"
 msgstr ""
+
 #: Automatix
 msgid "Automatix"
 msgstr ""
+
 #: Ripping
 msgid "Ripping"
 msgstr ""
+
 #: Sunjava
 msgid "Sunjava"
 msgstr ""
+
 #: Windows-codecs
 msgid "Windows-codecs"
 msgstr ""
+
 #: Dvdshrink
 msgid "Dvdshrink"
 msgstr ""
+
 #: Texte einscannen
 msgid "Texte einscannen"
 msgstr ""
+
 #: ZevenOS Beta 5
 msgid "ZevenOS Beta 5"
 msgstr ""
+
 #: ZevenOS beta 6
 msgid "ZevenOS beta 6"
 msgstr ""
+
 #: Videoschnitt
 msgid "Videoschnitt"
 msgstr ""
+
 #: Lernsoftware
 msgid "Lernsoftware"
 msgstr ""
+
 #: texlive-full-deutsch
 msgid "texlive-full-deutsch"
 msgstr ""
+
 #: Lernsoftware 6-10 Jahre
 msgid "Lernsoftware 6-10 Jahre"
 msgstr ""
+
 #: Grundlagen für Webdesign
 msgid "Grundlagen für Webdesign"
 msgstr ""
+
 #: EEE-PC für Schulen
 msgid "EEE-PC für Schulen"
 msgstr ""
+
 #: Internet-Radio
 msgid "Internet-Radio"
 msgstr ""
+
 #: Internet2
 msgid "Internet2"
 msgstr ""
+
 #: Büro
 msgid "Büro"
 msgstr ""
+
 #: Habu Netbook
 msgid "Habu Netbook"
 msgstr ""
+
 #: Tinos erster versuch
 msgid "Tinos erster versuch"
 msgstr ""
+
 #: Oerm_Standard
 msgid "Oerm_Standard"
 msgstr ""
+
 #: Rennspiele
 msgid "Rennspiele"
 msgstr ""
+
 #: Übersetzen
 msgid "Übersetzen"
 msgstr ""
+
 #: Mathematik
 msgid "Mathematik"
 msgstr ""
+
 #: Installation HU-Berlin Rechner Berlin
 msgid "Installation HU-Berlin Rechner Berlin"
 msgstr ""
+
 #: Auswertungen und Statistiken
 msgid "Auswertungen und Statistiken"
 msgstr ""
+
 #: Caros Netbook
 msgid "Caros Netbook"
 msgstr ""
+
 #: timos bündel 3
 msgid "timos bündel 3"
 msgstr ""
+
 #: bernds KDE 4.2
 msgid "bernds KDE 4.2"
 msgstr ""
+
 #: Azd325's Bündel
 msgid "Azd325's Bündel"
 msgstr ""
+
 #: Neues Bündel
 msgid "Neues Bündel"
 msgstr ""
+
 #: Ruby on Rails mit Mysql
 msgid "Ruby on Rails mit Mysql"
 msgstr ""
+
 #: hets-dev
 msgid "hets-dev"
 msgstr ""
+
 #: Ubuntu Netbook Remix
 msgid "Ubuntu Netbook Remix"
 msgstr ""
+
 #: Professionell Musik machen
 msgid "Professionell Musik machen"
 msgstr ""
+
 #: gobuntu-desktop
 msgid "gobuntu-desktop"
 msgstr ""
+
 #: Chemie
 msgid "Chemie"
 msgstr ""
+
 #: Grundlagen
 msgid "Grundlagen"
 msgstr ""
+
 #: Java Programmierumgebung
 msgid "Java Programmierumgebung"
 msgstr ""
+
 #: Text Browser
 msgid "Text Browser"
 msgstr ""
+
 #: Mindmaps und Organisationsdiagramme
 msgid "Mindmaps und Organisationsdiagramme"
 msgstr ""
+
 #: kino
 msgid "kino"
 msgstr ""
+
 #: neu
 msgid "neu"
 msgstr ""
+
 #: Ruby-Programmierung
 msgid "Ruby-Programmierung"
 msgstr ""
+
 #: ljkölutrfgkuzdr
 msgid "ljkölutrfgkuzdr"
 msgstr ""
+
 #: minimal-ubuntu
 msgid "minimal-ubuntu"
 msgstr ""
+
 #: gnome-panel-light
 msgid "gnome-panel-light"
 msgstr ""
+
 #: mein testbuendel
 msgid "mein testbuendel"
 msgstr ""
+
 #: Python-Programmierung
 msgid "Python-Programmierung"
 msgstr ""
+
 #: Gubuntu
 msgid "Gubuntu"
 msgstr ""
+
 #: Desktop PC
 msgid "Desktop PC"
 msgstr ""
+
 #: testbündel
 msgid "testbündel"
 msgstr ""
+
 #: communtu-dev
 msgid "communtu-dev"
 msgstr ""
+
 #: timos bündel 2
 msgid "timos bündel 2"
 msgstr ""
+
 #: torstens pakete
 msgid "torstens pakete"
 msgstr ""
+
 #: Maltes Installation
 msgid "Maltes Installation"
 msgstr ""
+
 #: Neues Bündel
 msgid "Neues Bündel"
 msgstr ""
+
 #: test
 msgid "test"
 msgstr ""
+
 #: vpn
 msgid "vpn"
 msgstr ""
+
 #: Carolins Standardinstallation
 msgid "Carolins Standardinstallation"
 msgstr ""
-#:  Bündel090526
+
+#: Bündel090526
 msgid " Bündel090526"
 msgstr ""
+
 #: Neues Bündel
 msgid "Neues Bündel"
 msgstr ""
+
 #: Debian-Metapaket-Bau
 msgid "Debian-Metapaket-Bau"
 msgstr ""
+
 #: chris
 msgid "chris"
 msgstr ""
+
 #: Janas Bündel
 msgid "Janas Bündel"
 msgstr ""
+
 #: LinuxMint6_0
 msgid "LinuxMint6_0"
 msgstr ""
+
 #: deborphan
 msgid "deborphan"
 msgstr ""
+
 #: test
 msgid "test"
 msgstr ""
+
 #: Neues Bündel
 msgid "Neues Bündel"
 msgstr ""
+
 #: InstallationDurutti
 msgid "InstallationDurutti"
 msgstr ""
+
 #: timos Spiele
 msgid "timos Spiele"
 msgstr ""
+
 #: Katrins Installation
 msgid "Katrins Installation"
 msgstr ""
+
 #: timos Bündel
 msgid "timos Bündel"
 msgstr ""
+
 #: Uebersetzen
 msgid "Uebersetzen"
 msgstr ""
+
 #: Tills Standardinstallation
 msgid "Tills Standardinstallation"
 msgstr ""
+
 #: Internet-Grundlagen Linuxtag-Demo
 msgid "Internet-Grundlagen Linuxtag-Demo"
 msgstr ""
+
 #: Neues Bündel
 msgid "Neues Bündel"
 msgstr ""
+
 #: Tills Installation
 msgid "Tills Installation"
 msgstr ""
+
 #: Mp3 tagging
 msgid "Mp3 tagging"
 msgstr ""
+
 #: pakonb.panticz.de
 msgid "pakonb.panticz.de"
 msgstr ""
+
 #: Neues Bündel5
 msgid "Neues Bündel5"
 msgstr ""
+
 #: Video
 msgid "Video"
 msgstr ""
+
 #: v
 msgid "v"
 msgstr ""
+
 #: Neues Bündel
 msgid "Neues Bündel"
 msgstr ""
+
 #: Neues Bündel
 msgid "Neues Bündel"
 msgstr ""
+
 #: Neues Bündel
 msgid "Neues Bündel"
 msgstr ""
+
 #: test-spiele
 msgid "test-spiele"
 msgstr ""
+
 #: Test120000
 msgid "Test120000"
 msgstr ""
+
 #: Gesindel-Bündel
 msgid "Gesindel-Bündel"
 msgstr ""
+
 #: ignore
 msgid "ignore"
 msgstr ""
+
 #: BerndsKDE42Desktop
 msgid "BerndsKDE42Desktop"
 msgstr ""
+
 #: Audio-Grundlagen
 msgid "Audio-Grundlagen"
 msgstr ""
+
