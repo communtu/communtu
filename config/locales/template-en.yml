@@ -47,7 +47,6 @@ en:
   model_package_11: could not determine URL
   imprint: Imprint
   view_home_derivatives_10: https://wiki.ubuntu.com/UbuntuStudio
-  "\"The file is a script that automatically installs the preferred programs, \"": " \"Doppelklick auf die Datei (zum Ausf\xC3\xBChren)"
   view_users_index_2: " registered users."
   view_repositories_new_0: new repository for
   view_packages_show_19: "Conflicts with these packages (only those without a version):"
@@ -86,7 +85,6 @@ en:
   view_metapackages_show_modified: This bundle contains changes.
   view_home_derivatives_16: " is Ubuntu with the KDE-Dekstop"
   controller_metapackages_9: The description must not be empty<br>
-  msgid "Klicke auf folgenden Link:": " \"Konflikte"
   view_home_home_new_message_icon: to the inbox
   show: Show
   view_home_derivatives_17: http://en.wikipedia.org/wiki/Linux_Mint
@@ -125,11 +123,9 @@ en:
   view_home_home_15: more detailled information
   view_home_icons_10: program
   view_home_home_16: " about this project and its participants in the "
-  msgstr "Updated package:": "dem Desktop (oder im Dateibrowser): Rechtsklick mit der Maus, "
   view_home_icons_12: " Program (if not other program-icon is available)"
   used_in_bundles: "Is used at Communtu in these bundles:"
   view_home_home_17: imprint.
-  "\"repository #{repository.name}\"": r "Go to home page
   view_repositories_show_0: show repository
   view_packages__search_0: Search for packages
   view_my_mailer_repo_0: \n
@@ -142,8 +138,6 @@ en:
   view_my_mailer_repo_1: "The following reason has been stated:"
   view_home_beteiligung_2: We would be very delighted if you would use Communtu to carry out an installation. We already have many bundles which are set up to specific characteristics. Maybe one of the bundles is suitable for you. Furthermore you can upload your own package-list to share it with other users. This is the most simple way to create a bundle, but you don't have to publish it. Of course you can use Communtu only as a saving place for your package list so you can install it on an other computer.
   kurzname: short name
-  "\"When syncing repository #{repository.name}, could not find package #{name}\"": " syncing repository, could not find PackageDistr for #{p.name} in "
-  "\"Die Datei ist ein Skript, das automatisch die gew\xC3\xBCnschten Programme \"": r "
   view_packages_rdepends_0: In the package
   view_home_icons_15: " program-bundle"
   no_admin: You are not an administrator!
@@ -172,7 +166,6 @@ en:
   no_save_database: "The following packages couldn't be saved in the database:"
   view_home_about_2: Ubuntu is a linux-based distribution which makes Linux easier to use and more comprehendible. After the installation of Ubuntu via a CD or DVD your computer is already equipped to surf the internet, to do some word processing and to do much more.
   view_categories_index_0: Category-overview
-  msgstr "": "\"OK\" twice."
   view_user_profiles__profile_data_14: " Free software (sources are open and further development is allowed)"
   view_user_profiles__installation_31: The Communtu-metapackages can be shown, installed and uninstalled using {{synaptic}} (go to "System" --> "Administration"). Updates of the programs inside the bundle are installed via the Ubuntu-updatemanager automatically.
   view_repositories_show_7: "        commercial "
@@ -187,7 +180,6 @@ en:
   view_home_beteiligung_9: "For the development of the project we currently need support with these two jobs:"
   view_derivatives_index_0: show derivatives
   view_home_about_4: How do I use Communtu?
-  "\"Eigenschaften, und dann ein H\xC3\xA4kchen bei \\\"Ausf\xC3\xBChren\\\" setzen.\"": "our desktop (or your filemanager): make a right-click on the file, "
   lib_system_0: In order to use this feature you have to be logged in.
   controller_users_3: You have been logged in as {{anonymous_user}} with the password {{anonymous_user}}. If applicable click on the username {{anonymous_user}} in the above-right corner to change the account into an permanent account, otherwise the account will be deleted after one day.
   controller_accounts_1: Your account has been activated. You can now log in.
@@ -215,7 +207,6 @@ en:
   view_home_about_7: .) There you can edit your settings. First, you have to specify the basic data, like which Ubuntu version you want to install on your computer. Additionally you have to specify if you want to use free or non-free software. Finally you have to indicate for which purposes you want to use your computer.
   lib_system_2: http://www.communtu.de
   controller_users_5: user data updated
-  msgstr "Ubuntu derivatives": r "Publish
   view_users_show_0: show user
   controller_accounts_4: Your account has already been activated. You can now log in.
   view_cart_new_from_list_1: Here you can create a bundle from an existing package-list. The list must be formated as a plain text-file with only one package-name per line.
@@ -327,7 +318,6 @@ en:
   view_user_profiles__profile_data_6: "Please select a Ubuntu version. "
   view_home_success_0: " Thank you for your donation"
   view_home_faq_15: How can I install a single program?
-  msgid "Communtu ": " \""
   view_users_new_10: your first name
   view_user_profiles__profile_data_7: How do I find out the version which is in use?
   view_metapackages_show_deb_error: While creating metapackages, an error occurred. We'll solve that problem as fast as possible.
@@ -337,7 +327,6 @@ en:
   view_home_faq_16: To install a program, go to "Search programs" and you get a list of all programs. When you found the program, you were looking for, you just have to click on the installation-icon. It could be that you have to add the repository of that program first. To do so, click on "Add sources" and Communtu will add the sources to your system.
   view_debs_index_5: Create
   view_home_derivatives_9: "With Communtu installable derivatives:"
-  msgid "Sperren": " \"Ubuntu Derivate"
   view_users_new_11: your last name
   view_user_profiles__profile_data_8: "\\t     \\tVia your webbrowser detected version: "
   view_repositories_index_0: repositories
@@ -348,7 +337,6 @@ en:
   view_metapackages_edit_2: Pleas use versions => 1.0 only for stable bundles. A version must always increase. 0.10 is higher than 0.9.
   new_message: New message
   view_home_faq_17: How can I propose a program so it can be added to Communtu?
-  msgstr "Double-click on the file to execute it.": r "You think, you now much about open source programs
   view_users_new_12: (optional)
   view_user_profiles__profile_data_9: Here you can select how secure or comfortable you sources should be
   view_home_faq_18: If you haven't found a program via "Search programs", chances are high we don't have the corresponding repositories, where the program is in, in Communtu. You can suggest the repository, where the program is in, to us via "Suggest repository" in the bundle-editor so we can implement the repository.
@@ -425,7 +413,6 @@ en:
   view_users__sidebar_5: Administrate users
   view_home_home_24: To the imprint
   controller_metapackages_debianizing: The bundle is currently created as a metapackaged and uploaded. This could take a couple of minutes.
-  "msgid \"# B\xC3\xBCndel: \"": " \"Aktualisierte Pakete: "
   view_users__sidebar_6: Administrate categories
   view_metapackages__metalist_20: <option>0 bundles selected</option>
   invalid_activation_code_entered: Invalid activation code entered.
@@ -446,7 +433,6 @@ en:
   edit: Edit
   view_cart_update_1: Overwrite bundle, if it already exists?
   controller_suggestion_1: In order to install something, you first have to choose something. Don't forget to save!
-  msgstr "Conflicts": r "Registration
   view_user_profiles__installation_2: "Because of your choice the programs will now be installed on your computer. Please follow these steps:"
   view_metapackages_show_15: Edit
   view_home_contact_us_1: Here you have the possibility to send us feedback.
@@ -479,7 +465,6 @@ en:
   view_roles__role_0: delete role
   view_metapackages_finish_migrate_2: .
   controller_suggestion_8: Communtu post-installation for users
-  msgid "": r "
   view_roles__role_1: assign role
   view_my_mailer_mailerror_0: " \\n"
   view_metapackages_finish_migrate_3: "The following packages could not be migrated:"
@@ -488,7 +473,6 @@ en:
   install2: Install
   view_passwords_edit_0: "    Password:"
   view_home_derivatives_50: " - with Fluxbox and several network-tools."
-  "\"Dein Benutzerkonto wurde bei www.communtu.de angelegt.     Benutzername: \"": " \""
   view_passwords_edit_1: "    confirm password:"
   view_metapackages_finish_migrate_6: Forward
   model_mailer_0: Welcome to Communtu
@@ -508,7 +492,6 @@ en:
   model_mailer_2: Your account has been activated.
   view_home_auth_error_1: The file you sent to Communtu couldn't be authenticated. Please try again with logging in again or filling in the form again.
   view_home_derivatives_53: " - allows a faster installation, as only the latest packages are downloaded."
-  "\"choose Properties and place a tick in front of \\\"Execute\\\".\"": r "description
   view_home_home_4: More ...
   controller_messages_0: ngliche Nachricht von {{user}} am {{datum}}  \n
   model_mailer_3: You asked for resetting your password
@@ -567,10 +550,8 @@ en:
   new_derivative: New derivative
   controller_metapackages_15: <option value='2'>Publish<option/>
   helper_distributions_17: free and from the community repositories
-  msgstr "installation via metapackages": r "Click on the icon in the lower right corner
   view_mailbox_show_1: From
   helper_distributions_18: free and from third party repositories
-  msgid "Hallo": " \"Installation \xC3\xBCber Metapakete"
   view_user_profiles__profile_rating_0: Detailed choice of the programs and bundles that shall be installed
   view_home_faq_20: Programs within Ubuntu are provided via packages, which are located in the package-sources or repositories. Further information about <a href="https://help.ubuntu.com/community/Repositories" target="_blank">Repositorys</a>.
   helper_distributions_19: non-free and from the main repositories
@@ -632,7 +613,6 @@ en:
   view_derivatives_edit_0: edit derivative
   controller_metapackages_no_save: This bundle contains conflicts and therefor it cannot be saved as a metapackage.
   third_party: "third-party "
-  msgid "herausfinden. (Dazu muss das Paket ": " \"um zu unserem Projekt zu gelangen"
   view_user_profiles_help_4: you upgrade to a newer, supported, version
   view_user_profiles__installation_28: https://wiki.ubuntu.com/AptUrl
   view_passwords_new_0: forgotten password

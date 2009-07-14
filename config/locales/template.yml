@@ -155,7 +155,7 @@ de:
   kommentieren: Kommentieren
   kontodaten: Konto 172 9375, Sparkasse Bremen, BLZ 290 501 01
   kurzname: Kurzname
-  lib_system_0: Du musst eingeloggt sein, um dieses Feature zu benutzen.
+  lib_system_0: "Du musst eingeloggt sein, um dieses Feature zu benutzen. \"Anonym nutzen\" geht auch."
   lib_system_1: "Du hast keine Berechtigung für diese Aktion."
   lib_system_2: http://www.communtu.de
   lib_utils_0: "System-Befehl schlug fehl: "
