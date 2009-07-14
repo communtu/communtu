@@ -1,16 +1,26 @@
 #!/usr/bin/ruby
 require 'yaml.rb'
+if ARGV.size < 2 then
+  puts "usage: po2yaml2 source-file target-file"
+else
 f = File.open(ARGV[0])
 y = {}
 while not f.eof? do
   while((line = f.gets)[0,2]!="#:" && !f.eof) do
   end
   f.gets # original
-  line1 = f.gets # translation
-  if !line1.nil? then
-    line1 = line1[8,line1.size-10]
-    if !line1.nil? then
-      y[line[3,line.size-4]] = line1.gsub(/\\\"/,'"')
+  # skip to msgstr
+  if !f.eof then
+    while((trans_line = f.gets)[0,6]!="msgstr" && !f.eof) do
+    end
+  end
+  if !trans_line.nil? then
+    trans_line = trans_line[8,trans_line.size-10] # eliminate "msgstr"
+    while((line1 = f.gets)!="\n" && !f.eof) do
+      trans_line += line1[1,line1.size-3]
+    end
+    if !trans_line.nil? then
+      y[line[3,line.size-4]] = trans_line.gsub(/\\\"/,'"').gsub(/\\n/,"\n")
     end
   end
 end
@@ -19,4 +29,6 @@ f.close
 File.open(ARGV[1],"w") do |f|
   YAML::dump({"en" => y}, f)
   f.close
+end
+
 end
