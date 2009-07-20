@@ -477,6 +477,7 @@ de:
   view_home_home_22: " dich an, oder "
   view_home_home_23: nutze Communtu anonym
   view_home_home_24: Zum Impressum
+  view_home_home_25: "Für Fragen zu Communtu haben wir \"Häufig gestellte Fragen\" zusammengestellt."
   view_home_home_2: Ubuntu-Linux
   view_home_home_3: " steht für ein menschliches Linux, das einfach zu benutzen ist. \
     Aber um Ubuntu wirklich gut nutzen zu können, muss man ganz schön viele Programme nachinstallieren, und es ist oft schwer, da den Überblick zu behalten. \
@@ -503,6 +504,8 @@ de:
   view_home_icons_19: " externer Link"
   view_home_icons_20: User-Icon
   view_home_icons_22: " User Icon"
+  view_home_icons_23: Nachrichtensymbol
+  view_home_icons_24: Nachrichtensymbol für Post erhalten
   view_home_icons_3: " Paket(e) installieren."
   view_home_icons_6: " Quellen installieren"
   view_home_icons_9: " Installation per Shell-Script"
