@@ -427,6 +427,7 @@ en:
   view_home_home_24: To the imprint
   view_users__sidebar_5: Administrate users
   invalid_activation_code_entered: Invalid activation code entered.
+  view_home_home_25: For questions concerning Communtu we have created a "FAQ".
   view_metapackages__metalist_20: <option>0 bundles selected</option>
   view_users__sidebar_6: Administrate categories
   view_cart_update_0: edit bundle-information
@@ -449,9 +450,11 @@ en:
   controller_suggestion_2: Add repositories and keys for the user
   view_cart_update_2: "Level of expert:"
   view_home_contact_us_1: Here you have the possibility to send us feedback.
+  view_home_icons_23: Message-icon
   view_metapackages_show_15: "Edit "
   view_user_profiles__installation_2: "Because of your choice the programs will now be installed on your computer. Please follow these steps:"
   published: published
+  view_home_icons_24: Receive a message-icon for new messages
   view_home_impressum_2: AG Communtu
   view_metapackages_show_16: Edit package list
   create: Create

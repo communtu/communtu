@@ -1699,6 +1699,10 @@ msgstr "Administrate categories"
 msgid "<option>0 Bündel ausgewählt</option>"
 msgstr "<option>0 bundles selected</option>"
 
+#: view_home_home_25
+msgid "Für Fragen zu Communtu haben wir \"Häufig gestellte Fragen\" zusammengestellt."
+msgstr "For questions concerning Communtu we have created a \"FAQ\"."
+
 #: invalid_activation_code_entered
 msgid "Ungültiger Anderungscode eingegeben."
 msgstr "Invalid activation code entered."
@@ -1779,6 +1783,10 @@ msgstr "Because of your choice the programs will now be installed on your comput
 msgid "Editieren"
 msgstr "Edit "
 
+#: view_home_icons_23
+msgid "Nachrichtensymbol"
+msgstr "Message-icon"
+
 #: view_home_contact_us_1
 msgid "Hier hast Du die Möglichkeit uns ein Feedback zu senden."
 msgstr "Here you have the possibility to send us feedback."
@@ -1798,6 +1806,10 @@ msgstr "Edit package list"
 #: view_home_impressum_2
 msgid "AG Communtu"
 msgstr "AG Communtu"
+
+#: view_home_icons_24
+msgid "Nachrichtensymbol für Post erhalten"
+msgstr "Receive a message-icon for new messages"
 
 #: published
 msgid "veröffentlicht"
