@@ -113,6 +113,7 @@ de:
   creation_error: Bei der Erstellung des Pakets ist ein Fehler aufgetreten.
   debian_section: "Debian-Section:"
   delete: "Löschen"
+  description: "Beschreibung"
   description_with_colon: "Beschreibung:"
   detailed_view: zur Detailansicht
   direct_indirect_covered_packages: Direkt und indirekt enthaltene Pakete

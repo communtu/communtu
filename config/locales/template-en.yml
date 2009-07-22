@@ -406,13 +406,15 @@ en:
   bundle: bundle
   controller_home_3: This does not appear to be a list with Ubuntu-packages... <br />The packagelist must contain one packagename per line
   view_home_derivatives_28: " - with this, Ubuntu is going to be "
+  view_metapackages__package_list_1: "available for:"
   controller_home_4: A file with the package list (one package name per line) has to be given
   view_users__sidebar_1: Administrate bundles
   view_home_home_20: " to create a new user or"
-  debian_section: Debian section
-  controller_home_5: We received your suggestion and we will inform you if imbibe the suggested repository and when we will imbibe it.
-  view_users__sidebar_2: Search programs
   view_home_derivatives_29: a computer to watch TV
+  controller_home_5: We received your suggestion and we will inform you if imbibe the suggested repository and when we will imbibe it.
+  view_metapackages__package_list_2: remove package/program from bundle
+  debian_section: Debian section
+  view_users__sidebar_2: Search programs
   view_home_home_21: "log "
   no1: "no"
   view_home_home_22: "in, or "
@@ -556,6 +558,7 @@ en:
   view_distributions_show_3: read sources.list
   participation: Ways to participate
   controller_repositories_1: Repository created.
+  description: Description
   helper_distributions_10: " and edit"
   view_admins_show_0: Here should be an introduction to the admin area
   view_home_home_7: <b>Administrate bundles</b> Did you make good experiences with programs? Bundle them thematically or take a look at existing bundles.
