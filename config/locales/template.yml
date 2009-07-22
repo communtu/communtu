@@ -30,7 +30,7 @@ de:
   controller_accounts_8: Dein altes Passwort war inkorrekt.
   controller_admins_0: Administratorbereich
   controller_application_0: "Diese Funktion ist für anonyme Nutzer nicht verfügbar."
-  controller_cart_2: "Folgende Pakete wurden nicht gefunden: "
+  controller_cart_2: "Folgende Pakete wurden nicht gefunden: {{message}}<br> Bitte suche die Repositories heraus, die die Pakete enthalten, und <a href=\"{{url}}\">schlage sie zur Aufnahme in Communtu vor.</a>"
   controller_categories_0: Kategorien
   controller_categories_2: Kategorie erzeugt.
   controller_categories_3: Kategorie aktualisiert.

@@ -47,7 +47,7 @@ class CartController < ApplicationController
           end
         end
         if !err.empty? then
-          flash[:notice] = t(:controller_cart_2)+err
+          flash[:error] = t(:controller_cart_2, :message => err, :url => "/home/new_repository")
         end
         redirect_to "/users/" + current_user.id.to_s + "/metapackages/2"
     end

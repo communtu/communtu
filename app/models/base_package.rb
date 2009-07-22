@@ -46,7 +46,7 @@ class BasePackage < ActiveRecord::Base
   end
   
   def all_recursive_packages_aux packages
-    if packages.include?(self) then
+    if !packages.include?(self) then
       packages.add(self)
       if self.class == Package
         self.package_distrs.each do |pd|
