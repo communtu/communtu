@@ -65,7 +65,7 @@ msgstr "go to detailed view"
 
 #: view_layouts_application_19
 msgid "https://www.paypal.com/de_DE/DE/i/btn/btn_donate_LG.gif"
-msgstr "https://www.paypal.com/de_DE/DE/i/btn/btn_donate_LG.gif"
+msgstr "https://www.paypal.com/en_GB/i/btn/btn_donate_LG.gif"
 
 #: view_home_faq_04
 msgid "Ein Bündel kann einmal in einer Zusammenstellung mit weiteren über den Punkt \"Installation\" zum Computer hinzugefügt werden. Andererseits kann auch ein Bündel direkt installiert werden, wenn Du über den Menüpunkt \"Bündel verwalten\" gehst."

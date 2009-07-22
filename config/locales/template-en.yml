@@ -16,7 +16,7 @@ en:
   view_home_beteiligung_12: Programming
   changed_settings: This step has to be carried out again because you changed the settings.
   view_home_about_12: <b>Administrate bundles</b> on the left side offers an overview about the available bundles. At last, an overview about the available Ubunt versions (distributions) can be found at <b>Ubuntu versions</b>.
-  view_layouts_application_19: https://www.paypal.com/de_DE/DE/i/btn/btn_donate_LG.gif
+  view_layouts_application_19: https://www.paypal.com/en_GB/i/btn/btn_donate_LG.gif
   view_home_faq_05: How do I create a bundle?
   view_home_beteiligung_13: Since we have many ideas for the platform's further development, we need programmers. Ideally you already have some experience with Ruby on Rails.
   view_accounts_edit_1: old password
@@ -564,7 +564,7 @@ en:
   controller_repositories_2: Repository updated.
   are_you_sure: Are you sure?
   view_distributions_index_0: Available distributions
-  helper_distributions_11: <br />distribution
+  helper_distributions_11: "<br />distribution "
   view_home_home_8: <b>Search program</b> Here you can search for single Ubuntu-programs (packages).
   controller_repositories_3: sources.list read.
   view_distributions_index_1: new distribution
@@ -576,7 +576,7 @@ en:
   view_home_news_24: participate
   view_messages_show_0: "From:"
   controller_metapackages_12: " bundle selected </option> \n"
-  helper_distributions_15: Informational page at www.ubuntuusers.de (German)
+  helper_distributions_15: Informational page at ubuntu.com
   controller_metapackages_13: <option calue='0'>Delete</option>
   superior_category: Superior category
   repository_url: "Repository-URL: "
