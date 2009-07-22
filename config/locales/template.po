@@ -550,8 +550,8 @@ msgid "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
 msgstr "Match Ubuntu to your personal needs"
 
 #: view_home_home_18
-msgid "\tKlicke auf\t"
-msgstr "\tClick on\t"
+msgid "Klicke auf"
+msgstr "Click on"
 
 #: view_home_beteiligung_1
 msgid "Anwenden der Plattform"
