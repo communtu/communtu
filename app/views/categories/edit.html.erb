@@ -7,10 +7,11 @@
   <p>
     <b><%=t(:name_without_colon)%></b><br />
     <%= f.text_field :name %>
+   # Translation.find(:first, :order => "name"), :id, :contents
   </p>
 
   <p>
-    <b><%=t(:description_without_colon)%></b><br />
+    <b><%=t(:description)%></b><br />
     <%= f.text_field :description %>
   </p>
 
