@@ -1453,6 +1453,10 @@ msgstr " - leaned to be like BeOS, ZevenOS focuses on speed and compatibility fo
 msgid "Aktuelles"
 msgstr "News"
 
+#: model_package_need_not_update
+msgid "{{url}} hat sich nicht geändert"
+msgstr "{{url}} has not changed"
+
 #: view_admins_test_all_0
 msgid "Folgende Repositories konnten nicht gelesen werden:"
 msgstr "The following repositories couldn't be read:"
@@ -1627,13 +1631,13 @@ msgstr "Administrate bundles"
 msgid "verfügbar für:"
 msgstr "available for:"
 
-#: controller_home_4
-msgid "Es muss eine Datei mit der Paketliste (ein Paketname pro Zeile) angegeben werden"
-msgstr "A file with the package list (one package name per line) has to be given"
-
 #: view_home_home_20
 msgid ", um einen neuen Benutzer anzulegen, oder "
 msgstr " to create a new user or"
+
+#: controller_home_4
+msgid "Es muss eine Datei mit der Paketliste (ein Paketname pro Zeile) angegeben werden"
+msgstr "A file with the package list (one package name per line) has to be given"
 
 #: view_users__sidebar_2
 msgid "Programme suchen"
@@ -2007,6 +2011,10 @@ msgstr "    confirm password:"
 msgid "Weiter"
 msgstr "Forward "
 
+#: view_home_home_1
+msgid "http://www.ubuntuusers.de"
+msgstr "http://www.ubuntuusers.de (German)"
+
 #: model_mailer_0
 msgid "Herzlich Willkommen bei Communtu"
 msgstr "Welcome to Communtu"
@@ -2014,10 +2022,6 @@ msgstr "Welcome to Communtu"
 #: controller_metapackages_no_renaming
 msgid "Veröffentlichte Bündel können nicht umbenannt werden."
 msgstr "Released bundles cannot be renamed."
-
-#: view_home_home_1
-msgid "http://www.ubuntuusers.de"
-msgstr "http://www.ubuntuusers.de (German)"
 
 #: view_home_derivatives_51
 msgid " - Installation von Programmen und Versionen, die nicht über die offiziellen Repositories erhältlich sind."
@@ -2696,6 +2700,10 @@ msgstr "To improve communication with our users we have set up some mailing list
 #: view_home_derivatives_38
 msgid " - öffentliche Distribution der spanischen Region Extremadura."
 msgstr " - public distribution for the Spanish region of Extremadura."
+
+#: model_package_could_not_read
+msgid "Konnte {{url}} nicht lesen"
+msgstr "couldn't read {{url}}"
 
 #: you_can
 msgid "Du kannst Dich auch "

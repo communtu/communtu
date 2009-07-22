@@ -363,6 +363,7 @@ en:
   view_home_derivatives_22: " - leaned to be like BeOS, ZevenOS focuses on speed and compatibility for old computers with a simple interface. CPU with at least 200 MHz, 128 MB RAM (for operating, while installing 192 MB RAM are required), at least 2 GB free hard disk space (recommended are 4 GB free hard disk space or more), 16 MB graphic card (recommended: Intel GMA 9xx)."
   view_sent_show_2: "Date:"
   news: News
+  model_package_need_not_update: "{{url}} has not changed"
   view_admins_test_all_0: "The following repositories couldn't be read:"
   view_packages_edit_4: "Is a program:"
   installing_using_script: installing via script
@@ -414,9 +415,9 @@ en:
   view_home_derivatives_29: a computer to watch TV
   controller_home_5: We received your suggestion and we will inform you if imbibe the suggested repository and when we will imbibe it.
   debian_section: Debian section
+  view_home_home_21: "log "
   view_metapackages__package_list_2: remove package/program from bundle
   view_users__sidebar_2: Search programs
-  view_home_home_21: "log "
   no1: "no"
   view_home_home_22: "in, or "
   view_home_mail_0: Notification in bugfixing
@@ -514,9 +515,9 @@ en:
   view_home_derivatives_50: " - with Fluxbox and several network-tools."
   view_passwords_edit_0: "    Password:"
   view_home_derivatives_51: " - Installation of programs and version, which are not available through the official repositories."
-  view_home_home_1: http://www.ubuntuusers.de (German)
   controller_metapackages_no_renaming: Released bundles cannot be renamed.
   model_mailer_0: Welcome to Communtu
+  view_home_home_1: http://www.ubuntuusers.de (German)
   view_metapackages_finish_migrate_6: "Forward "
   view_passwords_edit_1: "    confirm password:"
   view_home_derivatives_52: " - a kind of Automatix for the ultimate edition."
@@ -683,6 +684,7 @@ en:
   view_layouts_application_8: Start
   view_metapackages_migrate_0: Wich distribution are the bundles to be migrated from?
   view_passwords_new_2: reset password
+  model_package_could_not_read: couldn't read {{url}}
   view_home_derivatives_38: " - public distribution for the Spanish region of Extremadura."
   view_home_news_2: To improve communication with our users we have set up some mailing lists.
   view_layouts_application_9: Log out
