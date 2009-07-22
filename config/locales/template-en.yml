@@ -260,6 +260,7 @@ en:
   controller_sessions_6: Your account has not been activated yet. The activation code has been sent to you via e-mail.
   controller_packages_2: Package updated.
   view_derivatives_show_2: "dialog-program:"
+  view_layouts_application_21: eases Ubuntu installations
   controller_sessions_7: Your account has been deactivated or deleted.
   view_home_news_15: Our blog
   view_users_show_8: Message
@@ -412,8 +413,8 @@ en:
   view_home_home_20: " to create a new user or"
   view_home_derivatives_29: a computer to watch TV
   controller_home_5: We received your suggestion and we will inform you if imbibe the suggested repository and when we will imbibe it.
-  view_metapackages__package_list_2: remove package/program from bundle
   debian_section: Debian section
+  view_metapackages__package_list_2: remove package/program from bundle
   view_users__sidebar_2: Search programs
   view_home_home_21: "log "
   no1: "no"

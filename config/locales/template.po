@@ -1041,6 +1041,10 @@ msgstr "Package updated."
 msgid "Nachrichten"
 msgstr "Message"
 
+#: view_layouts_application_21
+msgid "macht Ubuntu-Installationen einfach"
+msgstr "eases Ubuntu installations"
+
 #: view_home_news_15
 msgid "Unser Blog"
 msgstr "Our blog"
