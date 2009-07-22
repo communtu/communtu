@@ -16,7 +16,7 @@
 	</tr>
 	<tr>
 	<td><%=t(:view_repositories_show_4)%></td>
-	<td><%= auto_link(Package.get_url_from_source(@repository.name)[:url]) %></td>
+	<td><%= auto_link(Repository.get_url_from_source(@repository.name)[:url]) %></td>
 	</tr>
 	<tr>
 	<td><%=t(:licence)%></td>

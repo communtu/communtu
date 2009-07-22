@@ -9,25 +9,20 @@ class AdminsController < ApplicationController
 
   def show
   end
-
-  def load_packages
-    dist     = Distribution.find(:first)
-    @new_count, @update_count = Package.import_source dist.id, dist.native
-  end 
   
   def sync_package
     @repository = Repository.find(params[:id])
-    @info = Package.import_source @repository  
+    @info = @repository.import_source
   end
 
   def sync_all
     @distribution = Distribution.find(params[:id])
-    @infos = @distribution.repositories.map { |r| Package.import_source r }
+    @infos = @distribution.repositories.map { |r| r.import_source }
   end
 
   def test_all
     @distribution = Distribution.find(params[:id])
-    @infos = @distribution.repositories.map { |r| Package.test_source r }
+    @infos = @distribution.repositories.map { |r| r.test_source }
   end
 
 end

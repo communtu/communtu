@@ -5,6 +5,7 @@ class BasePackage < ActiveRecord::Base
   has_many :videos
   has_many :conflicts, :foreign_key => :package_id
   has_many :conflicting_packages, :source => :base_package, :through => :conflicts
+  has_many :dependencies, :dependent => :destroy
 
     # type of a package, for sorting package lists
   def ptype
@@ -45,18 +46,18 @@ class BasePackage < ActiveRecord::Base
   end
   
   def all_recursive_packages_aux packages
-    if self.class == Package
-      if !packages.include?(self)
-        packages.add(self)
+    if packages.include?(self) then
+      packages.add(self)
+      if self.class == Package
         self.package_distrs.each do |pd|
           pd.depends_or_recommends.each do |p|
             p.all_recursive_packages_aux packages
           end
         end
-      end
-    else
-      self.base_packages.each do |p|
-        p.all_recursive_packages_aux packages
+      else
+        self.base_packages.each do |p|
+          p.all_recursive_packages_aux packages
+        end
       end
     end
   end

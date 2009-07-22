@@ -67,3 +67,7 @@
     end
     return tr.contents
   end
+
+ def min(x,y)
+    if x <= y then x else y end
+  end

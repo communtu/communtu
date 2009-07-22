@@ -80,7 +80,6 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/cancel', :controller => 'home', :action => 'cancel'
   map.connect '/success', :controller => 'home', :action => 'success'
   map.connect '/danke/:id', :controller => 'home', :action => 'danke', :method => :get
-  map.connect '/admin/load_packages', :controller => 'admins', :action => 'load_packages'
   map.connect '/admin/sync_package/:id', :controller => 'admins', :action => 'sync_package'
   map.connect '/admin/sync_all/:id', :controller => 'admins', :action => 'sync_all'
   map.connect '/admin/test_all/:id', :controller => 'admins', :action => 'test_all'

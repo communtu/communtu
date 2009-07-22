@@ -181,6 +181,8 @@ de:
   model_package_6: <br> hat nicht das richtige Format
   model_package_7: "Konnte URL für {{repo}} nicht feststellen"
   model_package_9: "Bei der Synchronisation des Repositories {{repo_name}} konnte kein PackageDistr-Eintrag für das Paket {{package_name}} gefunden werden."
+  model_package_could_not_read: "Konnte {{url}} nicht lesen"
+  model_package_need_not_update: "{{url}} hat sich nicht geändert"
   model_user_meta_tabz_0: "Meine Bündel"
   model_user_meta_tabz_1: "Alle veröffentlichten Bündel"
   model_user_meta_tabz_2: Ubuntu-Pakete

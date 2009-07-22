@@ -213,6 +213,7 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "gpgkey"
+    t.text     "package_file"
   end
 
   create_table "roles", :force => true do |t|

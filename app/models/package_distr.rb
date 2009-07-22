@@ -2,7 +2,7 @@ class PackageDistr < ActiveRecord::Base
   belongs_to :package
   belongs_to :repository
   belongs_to :distribution
-  has_many :dependencies
+  has_many :dependencies, :dependent => :destroy
   
   has_many :packages, :through => :dependencies, :source => :base_package
   has_many :depends, :through => :dependencies, :source => :base_package, \

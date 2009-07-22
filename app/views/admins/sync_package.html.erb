@@ -7,6 +7,11 @@
 	<%= @info[:error]%>
 </div>
 
+<% elsif !@info[:notice].nil? then%>
+<div class="inner0">
+	<%= @info[:notice]%>
+</div>
+
 <% else %>
 <div class="inner0">
 <span class="headline"><%=t(:view_admins_sync_package_2)%></span>
