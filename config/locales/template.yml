@@ -578,6 +578,8 @@ de:
   view_metapackages_migrate_1: "Zu welcher Distribution sollen die Bündel migriert werden ?"
   view_metapackages_new_4: "Standardmäßig installieren"
   view_metapackages__package_list_0: "Gesamtgröße des Bündels auf der Festplatte:"
+  view_metapackages__package_list_1: "verfügbar für:"
+  view_metapackages__package_list_2: "Paket/Programm aus Bündel entfernen"
   view_metapackages__package_list_conflicts: "Konflikte mit folgenden Paketen/Bündeln:"
   view_metapackages_rdepends_0: "Im Bündel "
   view_metapackages_rdepends_1: " direkt und indirekt enthaltene Bündel und Pakete"
