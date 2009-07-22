@@ -2183,7 +2183,7 @@ msgstr "<b>Search program</b> Here you can search for single Ubuntu-programs (pa
 
 #: helper_distributions_11
 msgid "<br />Distribution "
-msgstr "<br />distribution"
+msgstr "<br />distribution "
 
 #: view_distributions_index_0
 msgid "Verfügbare Distributionen"
@@ -2267,7 +2267,7 @@ msgstr "<option calue='0'>Delete</option>"
 
 #: helper_distributions_15
 msgid "Wikiseite bei Ubuntuusers"
-msgstr "Informational page at www.ubuntuusers.de (German)"
+msgstr "Informational page at ubuntu.com"
 
 #: view_messages_show_3
 msgid "Antworten"
