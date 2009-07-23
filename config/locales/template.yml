@@ -197,6 +197,7 @@ de:
   new_bundle: "Neues Bündel"
   new_category: Neue Kategorie
   new_derivative: Neues Derivat
+  new_distribution: Neue Distribution
   new_message: Neue Nachricht
   new_packages: "Neu hinzugefügte Pakete: "
   new_passwd: Neues Passwort
@@ -473,7 +474,7 @@ de:
   view_home_home_15: genauere Infos
   view_home_home_16: " über das Projekt und über die Mitwirkenden im "
   view_home_home_17: Impressum.
-  view_home_home_18: "Klicke auf"
+  view_home_home_18: "Klicke auf "
   view_home_home_1: http://www.ubuntuusers.de
   view_home_home_20: ", um einen neuen Benutzer anzulegen, oder "
   view_home_home_21: melde
