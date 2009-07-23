@@ -38,14 +38,28 @@ class DistributionsController < ApplicationController
 
   # GET /distributions/1/edit
   def edit
+    require "lib/utils.rb"
     @distribution = Distribution.find(params[:id])
   end
-
+  
   # POST /distributions
   # POST /distributions.xml
   def create
     @distribution = Distribution.new(params[:distribution])
-
+    @translation1 = Translation.new
+    @translation2 = Translation.new
+    @last_trans = Translation.find(:first, :order => "translatable_id DESC")
+    last_id = @last_trans.translatable_id
+    @translation1.translatable_id = last_id + 1
+    @translation1.contents = params[:distribution][:description]
+    @translation2.translatable_id = last_id + 2
+    @translation2.contents = params[:distribution][:url]
+    @distribution.description_tid = last_id + 1
+    @distribution.url_tid = last_id + 2
+    @translation1.language_code = I18n.locale.to_s
+    @translation2.language_code = I18n.locale.to_s
+    @translation1.save
+    @translation2.save
     respond_to do |format|
       if @distribution.save
         flash[:notice] = t(:controller_distributions_1)
@@ -62,7 +76,27 @@ class DistributionsController < ApplicationController
   # PUT /distributions/1.xml
   def update
     @distribution = Distribution.find(params[:id])
-
+    @trans_update_des = Translation.find(:first, :conditions => { :translatable_id => @distribution.description_tid, :language_code => I18n.locale.to_s})
+    if @trans_update_des == nil
+      @trans_update_des = Translation.new
+      @trans_update_des.translatable_id = @distribution.description_tid
+      @trans_update_des.contents = params[:distribution][:description]
+      @trans_update_des.language_code = I18n.locale.to_s
+    else
+    @trans_update_des.contents = params[:distribution][:description]
+    end
+    @trans_update_des.save
+    @trans_update_url = Translation.find(:first, :conditions =>
+        { :translatable_id => @distribution.url_tid, :language_code => I18n.locale.to_s})
+    if @trans_update_url == nil
+      @trans_update_url = Translation.new
+      @trans_update_url.translatable_id = @distribution.url_tid
+      @trans_update_url.contents = params[:distribution][:url]
+      @trans_update_url.language_code = I18n.locale.to_s
+    else
+    @trans_update_url.contents = params[:distribution][:url]
+    end
+    @trans_update_url.save
     respond_to do |format|
       if @distribution.update_attributes(params[:distribution])
         flash[:notice] = t(:controller_distributions_2)
@@ -79,7 +113,21 @@ class DistributionsController < ApplicationController
   # DELETE /distributions/1.xml
   def destroy
     @distribution = Distribution.find(params[:id])
-    @distribution.destroy
+    @translation_url = Translation.find(:all, :conditions => { :translatable_id => @distribution.url_tid })
+    m = @translation_url.count
+    e = 0
+    m.times do
+     @translation_url[e].delete
+     e = e + 1
+    end
+    @translation_des = Translation.find(:all, :conditions => { :translatable_id => @distribution.description_tid })
+    m = @translation_des.count
+    e = 0
+    m.times do
+     @translation_des[e].delete
+     e = e + 1
+    end
+    @distribution.delete
     
     respond_to do |format|
       format.html { redirect_to(distributions_url) }
