@@ -21,6 +21,7 @@ en:
   view_home_beteiligung_13: Since we have many ideas for the platform's further development, we need programmers. Ideally you already have some experience with Ruby on Rails.
   view_accounts_edit_1: old password
   view_home_about_13: Post-installation of single functions
+  ~: ivat
   view_packages_show_15: source/repository
   view_home_faq_06: On the left side of the webpage is the bundle-editor. There you have to click "New Bundle". In the main-window you can choose packages and add them to the bundle. When finished, you have to click on the "Save"-symbol in the bundle-editor. Now a new window pop ups in the main-window where you have to enter a meaningful name and a description. Don't forget to assign your bundle to a category.
   view_home_beteiligung_14: We can also help you to learn this programming-language. You just have to contact
@@ -116,7 +117,7 @@ en:
   view_user_profiles_new_3: level of expert
   controller_sent_1: user does not exist
   view_home_home_14: "There are also "
-  controller_cart_2: "The following packages couldn't be found:"
+  controller_cart_2: "The following packages couldn't be found: {{message}}<br> Please find the repositories which contain these packages and <a href=\"{{url}}\">make a suggestion to add the repository to Communtu.</a>"
   controller_sent_2: message successfully send
   view_categories_edit_3: Link for further information
   view_home_home_15: more detailled information
