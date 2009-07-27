@@ -6,19 +6,19 @@
 <% form_for(@category) do |f| %>
   <p>
     <b><%=t(:name_without_colon)%></b><br />
-    <%= f.text_field :name %>
-   # Translation.find(:first, :order => "name"), :id, :contents
+<input id="category_name" name="category[name]" size="50" type="text" value="<%= @category.name %>">
   </p>
 
   <p>
     <b><%=t(:description)%></b><br />
-    <%= f.text_field :description %>
+<input id="category_description" name="category[description]" size="50" type="text" value="<%= @category.description %>">
   </p>
 
   <p>
     <b><%=t(:view_categories_edit_3)%></b><br />
-    <%= f.text_field :link %>
+<input id="category_link" name="category[link]" size="50" type="text" value="<%= @category.link %>">
   </p>
+
 
   <p>
     <b><%=t(:superior_category)%></b><br />
@@ -26,7 +26,7 @@
   </p>
 
   <p>
-    <%= f.submit ("Speichern") %>
+    <%= f.submit (t(:save)) %>
   </p>
 <% end %>
 
