@@ -57,10 +57,11 @@
     return statement
   end
 
-   def translation(id)
-    tr=Translation.find(:first, :conditions => {:translatable_id => id, :language_code => I18n.locale.to_s })
+   def translation(translatable_id)
+     #I18n.locale.to_s
+    tr=Translation.find(:first, :conditions => {:translatable_id => translatable_id, :language_code => I18n.locale.to_s })
     if tr.nil? then
-      tr=Translation.find(:first, :conditions => {:translatable_id => id, :language_code => "en" })
+      tr=Translation.find(:first, :conditions => {:translatable_id => translatable_id, :language_code => "en" })
         if tr.nil? then
           return "unknown"
         end
