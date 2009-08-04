@@ -38,6 +38,7 @@ en:
   view_packages__packagelist_1: "&nbsp;&nbsp;Programs&nbsp;only:"
   model_package_10: While the synchronization of the repository {{repo_name}} the package {{package_name}} couldn't be found.
   view_home_about_16: In order to use Communtu you need to register yourself. To do so, just click on the "Registration"-button in the menu above.
+  view_metapackages_show_8: "Rating: "
   new_passwd: new password
   view_users_index_0: All users
   view_home_faq_09: How can I change a bundle?
@@ -573,7 +574,6 @@ en:
   helper_distributions_11: "<br />distribution "
   view_home_home_8: <b>Search program</b> Here you can search for single Ubuntu-programs (packages).
   controller_repositories_3: sources.list read.
-  view_distributions_index_1: New distribution
   helper_distributions_12: edit
   view_home_home_9: <b>Ubuntu derivatives</b> is a small overview about Kubuntu, Xubuntu, Medibuntu, etc.
   controller_metapackages_11: Couldn't delete package from bundle.

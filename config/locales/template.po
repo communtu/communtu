@@ -147,6 +147,10 @@ msgstr "Contains these packages (\"depends\" and \"recommends\"):"
 msgid "&nbsp;&nbsp;Nur&nbsp;Programme:"
 msgstr "&nbsp;&nbsp;Programs&nbsp;only:"
 
+#: view_metapackages_show_8
+msgid "Bewertung: "
+msgstr "Rating: "
+
 #: view_home_faq_08
 msgid "Du gehst auf den Menüpunkt \"Bündel verwalten\" und lässt Dir unter \"Alle veröffentlichten Bündel\" die Bündel anzeigen. Dort kannst Du bis zu fünf Sterne anklicken. Danach erscheint ein Kommentarfeld, in dem Du diese Bewertung qualifizieren kannst."
 msgstr "You go to \"Administrate bundles\" and click on \"All published bundles\" to view all bundles. There you can rate a program with up to five stars and, after that, a commentbox appears where you have to enter a comment to justify your rating."
@@ -545,13 +549,13 @@ msgstr "Install through metapackage. Please add the sources first."
 msgid "Programm-Bündel"
 msgstr "program-bundle"
 
-#: view_home_home_18
-msgid "Klicke auf "
-msgstr "Click on"
-
 #: match_ubuntu
 msgid "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
 msgstr "Match Ubuntu to your personal needs"
+
+#: view_home_home_18
+msgid "Klicke auf "
+msgstr "Click on"
 
 #: view_home_beteiligung_1
 msgid "Anwenden der Plattform"
@@ -2233,10 +2237,6 @@ msgstr "<b>Ubuntu derivatives</b> is a small overview about Kubuntu, Xubuntu, Me
 msgid "bearbeiten"
 msgstr "edit"
 
-#: view_distributions_index_1
-msgid "Neue Distribution "
-msgstr "New distribution"
-
 #: controller_repositories_3
 msgid "sources.list eingelesen."
 msgstr "sources.list read."
@@ -2889,6 +2889,8 @@ msgstr "What is a bundle?"
 msgid "Benutzer aktiviert"
 msgstr "User activated"
 
+#~ msgid "Neue Distribution "
+#~ msgstr "New distribution"
 #~ msgid "Sie haben neue Nachrichten in Ihrem Posteingang."
 #~ msgstr "You have new messages in your inbox."
 #~ msgid "Folgende Pakete wurden nicht gefunden: "
