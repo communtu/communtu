@@ -58,6 +58,30 @@
   <b><%=t(:licence)%></b>
   <%= Package.show_license_type(@metapackage.license_type) %>
 </tr>
+
+<tr>
+	<td>
+		<b>Bewertung:</b>
+	</td>
+	<td>
+		<% if @metapackage.rated_by_user?(current_user) or current_user.anonymous?%>
+			<!-- STARS allready voted -->
+			<div class="star-ratings-block" id="star-ratings-block-<%=h @metapackage.id %>">
+	        	<%= render :partial => "rating/show", :locals => { :metapackage => @metapackage } %>
+	    	</div>
+		<%else%>
+			<!-- if not voted yet  -->
+			<div class="star-ratings-block" id="star-ratings-block-<%=h @metapackage.id %>">
+	    		<%= render :partial => "rating/rating", :locals => { :metapackage => @metapackage } %>
+			</div>
+		<%end%>
+	</td>
+</tr>
+<tr id="comment_<%=@metapackage.id%>" style="display:none;">
+	<td colspan="2">  
+		<%= render :partial=>"rating/rating_comment" ,:locals => { :metapackage => @metapackage } %>
+	</td>
+</tr>
 </table>
 <p>
     <b><%=t(:view_metapackages_show_9)%></b>
