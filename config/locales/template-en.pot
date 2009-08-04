@@ -62,7 +62,7 @@ msgstr ""
 msgid "<b>Administrate bundles</b> on the left side offers an overview about the available bundles. At last, an overview about the available Ubunt versions (distributions) can be found at <b>Ubuntu versions</b>."
 msgstr ""
 #: view_layouts_application_19
-msgid "https://www.paypal.com/de_DE/DE/i/btn/btn_donate_LG.gif"
+msgid "https://www.paypal.com/en_GB/i/btn/btn_donate_LG.gif"
 msgstr ""
 #: view_home_faq_05
 msgid "How do I create a bundle?"
@@ -92,7 +92,7 @@ msgstr ""
 msgid "(version {{v}})"
 msgstr ""
 #: 
-msgid "für Solidarische Ökonom"
+msgid "ivat"
 msgstr ""
 #: view_packages_show_16
 msgid "package-version"
@@ -365,7 +365,7 @@ msgstr ""
 msgid "There are also "
 msgstr ""
 #: controller_cart_2
-msgid "The following packages couldn't be found:"
+msgid "The following packages couldn't be found: {{message}}<br> Please find the repositories which contain these packages and <a href=\"{{url}}\">make a suggestion to add the repository to Communtu.</a>"
 msgstr ""
 #: controller_sent_2
 msgid "message successfully send"
@@ -401,7 +401,7 @@ msgstr ""
 msgid "program-bundle"
 msgstr ""
 #: view_home_home_18
-msgid "\tClick on\t"
+msgid "Click on"
 msgstr ""
 #: view_repositories_show_0
 msgid "show repository"
@@ -557,7 +557,7 @@ msgstr ""
 msgid "How do I use Communtu?"
 msgstr ""
 #: lib_system_0
-msgid "In order to use this feature you have to be logged in."
+msgid "In order to use this feature you have to be logged in. Logging in via \"Anonymous access\" is also possible."
 msgstr ""
 #: controller_users_3
 msgid "You have been logged in as {{anonymous_user}} with the password {{anonymous_user}}. If applicable click on the username {{anonymous_user}} in the above-right corner to change the account into an permanent account, otherwise the account will be deleted after one day."
@@ -774,6 +774,9 @@ msgid "Package updated."
 msgstr ""
 #: view_derivatives_show_2
 msgid "dialog-program:"
+msgstr ""
+#: view_layouts_application_21
+msgid "eases Ubuntu installations"
 msgstr ""
 #: controller_sessions_7
 msgid "Your account has been deactivated or deleted."
@@ -1075,6 +1078,9 @@ msgstr ""
 #: news
 msgid "News"
 msgstr ""
+#: model_package_need_not_update
+msgid "{{url}} has not changed"
+msgstr ""
 #: view_admins_test_all_0
 msgid "The following repositories couldn't be read:"
 msgstr ""
@@ -1198,6 +1204,9 @@ msgstr ""
 #: view_home_derivatives_28
 msgid " - with this, Ubuntu is going to be "
 msgstr ""
+#: view_metapackages__package_list_1
+msgid "available for:"
+msgstr ""
 #: controller_home_4
 msgid "A file with the package list (one package name per line) has to be given"
 msgstr ""
@@ -1206,6 +1215,12 @@ msgid "Administrate bundles"
 msgstr ""
 #: view_home_home_20
 msgid " to create a new user or"
+msgstr ""
+#: view_users__sidebar_2
+msgid "Search programs"
+msgstr ""
+#: view_metapackages__package_list_2
+msgid "remove package/program from bundle"
 msgstr ""
 #: view_home_home_21
 msgid "log "
@@ -1216,191 +1231,194 @@ msgstr ""
 #: controller_home_5
 msgid "We received your suggestion and we will inform you if imbibe the suggested repository and when we will imbibe it."
 msgstr ""
-#: view_users__sidebar_2
-msgid "Search programs"
-msgstr ""
 #: view_home_derivatives_29
 msgid "a computer to watch TV"
-msgstr ""
-#: no1
-msgid "no"
-msgstr ""
-#: view_home_home_22
-msgid "in, or "
 msgstr ""
 #: view_home_mail_0
 msgid "Notification in bugfixing"
 msgstr ""
-#: kommentieren
-msgid "Comment"
+#: view_home_home_22
+msgid "in, or "
 msgstr ""
-#: new_packages
-msgid "Newly added packages: "
-msgstr ""
-#: view_home_home_23
-msgid "use Communtu anonymously"
-msgstr ""
-#: view_home_mail_1
-msgid "Please contact me at the following e-mail-address concerning the bugfixing."
+#: no1
+msgid "no"
 msgstr ""
 #: view_users__sidebar_4
 msgid "Ubuntu versions"
 msgstr ""
-#: controller_metapackages_debianizing
-msgid "The bundle is currently created as a metapackaged and uploaded. This could take a couple of minutes."
+#: view_home_mail_1
+msgid "Please contact me at the following e-mail-address concerning the bugfixing."
 msgstr ""
-#: view_home_home_24
-msgid "To the imprint"
+#: view_home_home_23
+msgid "use Communtu anonymously"
+msgstr ""
+#: new_packages
+msgid "Newly added packages: "
+msgstr ""
+#: kommentieren
+msgid "Comment"
 msgstr ""
 #: view_users__sidebar_5
 msgid "Administrate users"
 msgstr ""
-#: invalid_activation_code_entered
-msgid "Invalid activation code entered."
+#: view_home_home_24
+msgid "To the imprint"
 msgstr ""
-#: view_metapackages__metalist_20
-msgid "<option>0 bundles selected</option>"
+#: controller_metapackages_debianizing
+msgid "The bundle is currently created as a metapackaged and uploaded. This could take a couple of minutes."
 msgstr ""
 #: view_users__sidebar_6
 msgid "Administrate categories"
 msgstr ""
-#: view_cart_update_0
-msgid "edit bundle-information"
+#: view_metapackages__metalist_20
+msgid "<option>0 bundles selected</option>"
 msgstr ""
-#: back
-msgid "Back"
+#: view_home_home_25
+msgid "For questions concerning Communtu we have created a \"FAQ\"."
 msgstr ""
-#: view_home_icons_20
-msgid "user-icon"
-msgstr ""
-#: view_metapackages_show_12
-msgid "Not published"
+#: invalid_activation_code_entered
+msgid "Invalid activation code entered."
 msgstr ""
 #: view_users__sidebar_7
 msgid "Administrate derivatives"
 msgstr ""
-#: security_type
-msgid "Security type:"
+#: view_metapackages_show_12
+msgid "Not published"
 msgstr ""
-#: allgemeinbildung
-msgid "Allgemeinbildung e.V."
+#: view_home_icons_20
+msgid "user-icon"
 msgstr ""
-#: controller_profiles_0
-msgid "Installation of bundles"
+#: back
+msgid "Back"
 msgstr ""
-#: view_user_profiles__installation_0
-msgid "Communtu post-installation"
+#: view_cart_update_0
+msgid "edit bundle-information"
 msgstr ""
 #: view_users__sidebar_8
 msgid "Failed debs"
 msgstr ""
-#: controller_suggestion_1
-msgid "In order to install something, you first have to choose something. Don't forget to save!"
+#: view_user_profiles__installation_0
+msgid "Communtu post-installation"
 msgstr ""
-#: view_cart_update_1
-msgid "Overwrite bundle, if it already exists?"
+#: controller_profiles_0
+msgid "Installation of bundles"
 msgstr ""
-#: edit
-msgid "Edit"
+#: allgemeinbildung
+msgid "Allgemeinbildung e.V."
 msgstr ""
-#: view_home_contact_us_0
-msgid "Feedback"
-msgstr ""
-#: view_home_icons_22
-msgid " user-icon"
-msgstr ""
-#: view_metapackages_show_14
-msgid " Actions:&nbsp;&nbsp;"
+#: security_type
+msgid "Security type:"
 msgstr ""
 #: view_user_profiles__installation_1
 msgid "In order to install, you have to specify some things at \"Base data\" or \"Details\"."
 msgstr ""
-#: controller_suggestion_2
-msgid "Add repositories and keys for the user"
+#: view_metapackages_show_14
+msgid " Actions:&nbsp;&nbsp;"
 msgstr ""
-#: view_cart_update_2
-msgid "Level of expert:"
+#: view_home_icons_22
+msgid " user-icon"
 msgstr ""
-#: view_home_contact_us_1
-msgid "Here you have the possibility to send us feedback."
+#: view_home_contact_us_0
+msgid "Feedback"
 msgstr ""
-#: view_metapackages_show_15
-msgid "Edit "
+#: edit
+msgid "Edit"
+msgstr ""
+#: view_cart_update_1
+msgid "Overwrite bundle, if it already exists?"
+msgstr ""
+#: controller_suggestion_1
+msgid "In order to install something, you first have to choose something. Don't forget to save!"
 msgstr ""
 #: view_user_profiles__installation_2
 msgid "Because of your choice the programs will now be installed on your computer. Please follow these steps:"
 msgstr ""
-#: published
-msgid "published"
+#: view_metapackages_show_15
+msgid "Edit "
 msgstr ""
-#: view_home_impressum_2
-msgid "AG Communtu"
+#: view_home_icons_23
+msgid "Message-icon"
+msgstr ""
+#: view_home_contact_us_1
+msgid "Here you have the possibility to send us feedback."
+msgstr ""
+#: view_cart_update_2
+msgid "Level of expert:"
+msgstr ""
+#: controller_suggestion_2
+msgid "Add repositories and keys for the user"
 msgstr ""
 #: view_metapackages_show_16
 msgid "Edit package list"
 msgstr ""
-#: create
-msgid "Create"
+#: view_home_impressum_2
+msgid "AG Communtu"
 msgstr ""
-#: controller_suggestion_4
-msgid "Add repositories and keys for the bundle"
+#: view_home_icons_24
+msgid "Receive a message-icon for new messages"
 msgstr ""
-#: view_cart_update_4
-msgid "Publish bundle"
+#: published
+msgid "published"
 msgstr ""
 #: view_metapackages_show_17
 msgid "Publish"
 msgstr ""
-#: view_home_contact_us_4
-msgid "Send "
+#: view_cart_update_4
+msgid "Publish bundle"
 msgstr ""
-#: view_home_impressum_4
-msgid "Bauernstr. 2"
+#: controller_suggestion_4
+msgid "Add repositories and keys for the bundle"
 msgstr ""
-#: view_metapackages_show_18
-msgid "If you publish the bundle every user has access to this bundle. However, the bundle cannot be deleted or renamed after publishing."
+#: create
+msgid "Create"
 msgstr ""
 #: view_users__user_0
 msgid "activate"
 msgstr ""
-#: controller_suggestion_6
-msgid "Add repositories and keys for the package"
+#: view_metapackages_show_18
+msgid "If you publish the bundle every user has access to this bundle. However, the bundle cannot be deleted or renamed after publishing."
 msgstr ""
-#: view_home_impressum_5
-msgid "28203 Bremen\nGermany"
+#: view_home_impressum_4
+msgid "Bauernstr. 2"
+msgstr ""
+#: view_home_contact_us_4
+msgid "Send "
 msgstr ""
 #: view_users__user_1
 msgid "deactivate"
 msgstr ""
-#: view_metapackages_finish_migrate_0
-msgid "All bundles were migrated from"
+#: view_home_impressum_5
+msgid "28203 Bremen\nGermany"
 msgstr ""
-#: view_repositories_edit_0
-msgid "edit repositories"
+#: controller_suggestion_6
+msgid "Add repositories and keys for the package"
 msgstr ""
 #: view_users__user_2
 msgid "edit roles"
 msgstr ""
-#: migrate
-msgid "Migrate"
+#: view_repositories_edit_0
+msgid "edit repositories"
 msgstr ""
-#: view_metapackages_finish_migrate_1
-msgid " to"
-msgstr ""
-#: view_repositories_edit_1
-msgid "Distribution:"
-msgstr ""
-#: view_roles_edit_0
-msgid "edit role"
+#: view_metapackages_finish_migrate_0
+msgid "All bundles were migrated from"
 msgstr ""
 #: view_user_mailer_signup_notification_0
 msgid "Hello and welcome to Communtu!\n\n\n You successfully registered yourselfe\nat http://en.communtu.org. You can now use every\nfeatrue of the platform."
 msgstr ""
-#: controller_suggestion_8
-msgid "Communtu post-installation for users"
+#: view_roles_edit_0
+msgid "edit role"
 msgstr ""
-#: view_metapackages_finish_migrate_2
-msgid ". "
+#: view_repositories_edit_1
+msgid "Distribution:"
+msgstr ""
+#: view_metapackages_finish_migrate_1
+msgid " to"
+msgstr ""
+#: migrate
+msgid "Migrate"
+msgstr ""
+#: view_user_mailer_signup_notification_1
+msgid "Your username is:"
 msgstr ""
 #: view_roles__role_0
 msgid "delete role"
@@ -1408,65 +1426,62 @@ msgstr ""
 #: view_roles_edit_1
 msgid "rolename"
 msgstr ""
-#: view_user_mailer_signup_notification_1
-msgid "Your username is:"
+#: view_metapackages_finish_migrate_2
+msgid ". "
 msgstr ""
-#: ubuntu_derivatives
-msgid "Ubuntu derivatives"
-msgstr ""
-#: view_metapackages_finish_migrate_3
-msgid "The following packages could not be migrated:"
-msgstr ""
-#: view_my_mailer_mailerror_0
-msgid "Hello, \n an error was reported on www.communtu.de. \nThe user would like to be notified when the error has been fixed."
-msgstr ""
-#: view_roles__role_1
-msgid "assign role"
+#: controller_suggestion_8
+msgid "Communtu post-installation for users"
 msgstr ""
 #: view_user_mailer_signup_notification_2
 msgid "\nGreetings\n\nthe Communtu-team\n\n  Further information about the project and your possibilities to use Communtu can be found at\n http://en.communtu.org/home/faq\n\n  Our anouncements and mailinglists can be found at:\nhttp://en.communtu.org/home/news"
 msgstr ""
-#: install2
-msgid "Install"
+#: view_roles__role_1
+msgid "assign role"
+msgstr ""
+#: view_my_mailer_mailerror_0
+msgid "Hello, \n an error was reported on www.communtu.de. \nThe user would really like to be notified when the error has been fixed."
+msgstr ""
+#: view_metapackages_finish_migrate_3
+msgid "The following packages could not be migrated:"
+msgstr ""
+#: ubuntu_derivatives
+msgid "Ubuntu derivatives"
 msgstr ""
 #: view_rating_new_comment_info
-msgid "Please enter a review to your rating. This is a <b>obligatory</b> step."
+msgid "Please enter a description to your rating. This is a <b>mandatory</b> step."
 msgstr ""
-#: view_home_derivatives_50
-msgid " - with Fluxbox and several network-tools."
+#: install2
+msgid "Install"
 msgstr ""
 #: view_passwords_edit_0
 msgid "    Password:"
 msgstr ""
-#: view_home_derivatives_51
-msgid " - Installation of programs and version, which are not available through the official repositories."
-msgstr ""
-#: view_home_home_1
-msgid "http://www.ubuntuusers.de (German)"
-msgstr ""
-#: controller_metapackages_no_renaming
-msgid "Released bundles cannot be renamed."
-msgstr ""
-#: model_mailer_0
-msgid "Welcome to Communtu"
-msgstr ""
-#: view_metapackages_finish_migrate_6
-msgid "Forward "
+#: view_home_derivatives_50
+msgid " - with Fluxbox and several network-tools."
 msgstr ""
 #: view_passwords_edit_1
 msgid "    confirm password:"
 msgstr ""
-#: view_home_derivatives_52
-msgid " - a kind of Automatix for the ultimate edition."
+#: view_metapackages_finish_migrate_6
+msgid "Forward "
 msgstr ""
-#: view_home_auth_error_0
-msgid "Error with authentication"
+#: view_home_home_1
+msgid "http://www.ubuntuusers.de (German)"
 msgstr ""
-#: passwd_no_match
-msgid "The new password does not comply with the verification."
+#: model_mailer_0
+msgid "Welcome to Communtu"
 msgstr ""
-#: change_passwd
-msgid "change password"
+#: controller_metapackages_no_renaming
+msgid "Released bundles cannot be renamed."
+msgstr ""
+#: view_home_derivatives_51
+msgid " - Installation of programs and version, which are not available through the official repositories."
+msgstr ""
+#: view_user_profiles__sources_0
+msgid "Sources for the soon be installed programs"
+msgstr ""
+#: view_passwords_edit_2
+msgid "receive new password"
 msgstr ""
 #: view_home_home_2
 msgid "Ubuntu"
@@ -1474,323 +1489,326 @@ msgstr ""
 #: model_mailer_1
 msgid "Query via formular"
 msgstr ""
-#: view_passwords_edit_2
-msgid "receive new password"
+#: change_passwd
+msgid "change password"
 msgstr ""
-#: view_user_profiles__sources_0
-msgid "Sources for the soon be installed programs"
+#: passwd_no_match
+msgid "The new password does not comply with the verification."
 msgstr ""
-#: view_home_derivatives_53
-msgid " - allows a faster installation, as only the latest packages are downloaded."
+#: view_home_auth_error_0
+msgid "Error with authentication"
 msgstr ""
-#: view_home_auth_error_1
-msgid "The file you sent to Communtu couldn't be authenticated. Please try again with logging in again or filling in the form again."
-msgstr ""
-#: model_mailer_2
-msgid "Your account has been activated."
-msgstr ""
-#: view_home_home_3
-msgid " stands for a human Linux that is easy to use. In order to use Ubuntu effectively, a whole bunch of programs have to be installed. It is not always easy to keep an overview. With Communtu you only specify for which purposes you want to use your computer and Communtu suggests a bunch of programs to you which will be installed automatically."
+#: view_home_derivatives_52
+msgid " - a kind of Automatix for the ultimate edition."
 msgstr ""
 #: view_user_profiles__sources_1
 msgid "The soon be installed programs and packages are shown and ordered by the appropriate sources so you can see why some sources will be added."
 msgstr ""
-#: view_admins_sync_all_1
-msgid "Error: couldn't synchronise repositories"
+#: view_home_home_3
+msgid " stands for a human Linux that is easy to use. In order to use Ubuntu effectively, a whole bunch of programs have to be installed. It is not always easy to keep an overview. With Communtu you only specify for which purposes you want to use your computer and Communtu suggests a bunch of programs to you which will be installed automatically."
 msgstr ""
-#: view_distributions_show_0
-msgid "Repositories:"
+#: model_mailer_2
+msgid "Your account has been activated."
 msgstr ""
-#: model_mailer_3
-msgid "You asked for resetting your password"
+#: view_home_auth_error_1
+msgid "The file you sent to Communtu couldn't be authenticated. Please try again with logging in again or filling in the form again."
 msgstr ""
-#: controller_messages_0
-msgid "Original message by {{user}} from {{datum}}}  \n"
+#: view_home_derivatives_53
+msgid " - allows a faster installation, as only the latest packages are downloaded."
 msgstr ""
 #: view_home_home_4
 msgid "More ..."
 msgstr ""
-#: view_home_derivatives_55
-msgid " - Mediacenter."
+#: controller_messages_0
+msgid "Original message by {{user}} from {{datum}}}  \n"
 msgstr ""
-#: view_admins_sync_all_2
-msgid "repositories synchronised"
+#: model_mailer_3
+msgid "You asked for resetting your password"
 msgstr ""
-#: view_distributions_show_1
-msgid "check everything"
+#: view_distributions_show_0
+msgid "Repositories:"
 msgstr ""
-#: model_mailer_4
-msgid "Your password has been restored."
+#: view_admins_sync_all_1
+msgid "Error: couldn't synchronise repositories"
+msgstr ""
+#: view_layouts_application_warning
+msgid "Attention: the webserver will be down soon due to some maintenance work!"
 msgstr ""
 #: view_home_home_5
 msgid "The menu on the left offers the following possibilities:"
 msgstr ""
-#: view_home_derivatives_56
-msgid "http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix (German)"
+#: model_mailer_4
+msgid "Your password has been restored."
 msgstr ""
-#: view_admins_sync_package_1
-msgid "Error: couldn't synchronise repository"
+#: view_distributions_show_1
+msgid "check everything"
 msgstr ""
-#: view_distributions_show_2
-msgid "synchronise everything"
+#: view_admins_sync_all_2
+msgid "repositories synchronised"
 msgstr ""
-#: controller_repositories_0
-msgid "repositories"
-msgstr ""
-#: controller_metapackages_conflicts
-msgid "This bundle contains packages, which are in conflict!"
-msgstr ""
-#: model_mailer_5
-msgid "suggestion of a repository"
-msgstr ""
-#: view_home_home_6
-msgid "<b>Installation</b> offers you a summary (bundling) of programs for the installation on your computer, according to your instructions on how you want to use your Ubuntu-PC."
+#: view_home_derivatives_55
+msgid " - Mediacenter."
 msgstr ""
 #: view_rating_new_comment_textfield_label
 msgid "Comment "
 msgstr ""
-#: view_home_derivatives_57
-msgid " for subnotebooks/EEE-PCs."
+#: view_home_home_6
+msgid "<b>Installation</b> offers you a summary (bundling) of programs for the installation on your computer, according to your instructions on how you want to use your Ubuntu-PC."
 msgstr ""
-#: view_admins_sync_package_2
-msgid "repository synchronised"
+#: model_mailer_5
+msgid "suggestion of a repository"
 msgstr ""
-#: name_with_colon
-msgid "Name:"
+#: controller_metapackages_conflicts
+msgid "This bundle contains packages, which are in conflict!"
 msgstr ""
-#: view_distributions_show_3
-msgid "read sources.list"
+#: controller_repositories_0
+msgid "repositories"
 msgstr ""
-#: participation
-msgid "Ways to participate"
+#: view_distributions_show_2
+msgid "synchronise everything"
 msgstr ""
-#: controller_repositories_1
-msgid "Repository created."
+#: view_admins_sync_package_1
+msgid "Error: couldn't synchronise repository"
 msgstr ""
-#: helper_distributions_10
-msgid " and edit"
-msgstr ""
-#: view_admins_show_0
-msgid "Here should be an introduction to the admin area"
+#: view_home_derivatives_56
+msgid "http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix (German)"
 msgstr ""
 #: view_home_home_7
 msgid "<b>Administrate bundles</b> Did you make good experiences with programs? Bundle them thematically or take a look at existing bundles."
 msgstr ""
-#: view_admins_sync_package_3
-msgid "Repository: "
+#: view_admins_show_0
+msgid "Here should be an introduction to the admin area"
 msgstr ""
-#: view_distributions_show_4
-msgid "add repository "
+#: helper_distributions_10
+msgid " and edit"
 msgstr ""
-#: controller_repositories_2
-msgid "Repository updated."
+#: description
+msgid "Description"
 msgstr ""
-#: are_you_sure
-msgid "Are you sure?"
+#: controller_repositories_1
+msgid "Repository created."
 msgstr ""
-#: view_distributions_index_0
-msgid "Available distributions"
+#: participation
+msgid "Ways to participate"
 msgstr ""
-#: helper_distributions_11
-msgid "<br />distribution"
+#: view_distributions_show_3
+msgid "read sources.list"
+msgstr ""
+#: name_with_colon
+msgid "Name:"
+msgstr ""
+#: view_admins_sync_package_2
+msgid "repository synchronised"
+msgstr ""
+#: view_home_derivatives_57
+msgid " for subnotebooks/EEE-PCs."
 msgstr ""
 #: view_home_home_8
 msgid "<b>Search program</b> Here you can search for single Ubuntu-programs (packages)."
 msgstr ""
-#: controller_repositories_3
-msgid "sources.list read."
+#: helper_distributions_11
+msgid "<br />distribution "
 msgstr ""
-#: view_distributions_index_1
-msgid "new distribution"
+#: view_distributions_index_0
+msgid "Available distributions"
 msgstr ""
-#: helper_distributions_12
-msgid "edit"
+#: are_you_sure
+msgid "Are you sure?"
+msgstr ""
+#: controller_repositories_2
+msgid "Repository updated."
+msgstr ""
+#: view_distributions_show_4
+msgid "add repository "
+msgstr ""
+#: view_admins_sync_package_3
+msgid "Repository: "
 msgstr ""
 #: view_home_home_9
 msgid "<b>Ubuntu derivatives</b> is a small overview about Kubuntu, Xubuntu, Medibuntu, etc."
 msgstr ""
-#: controller_metapackages_11
-msgid "Couldn't delete package from bundle."
+#: helper_distributions_12
+msgid "edit"
 msgstr ""
-#: natur_geist_und_technik
-msgid "Natur, Geist und Technik - Verein zur Förderung der Allgemeinbildung e.V."
+#: view_distributions_index_1
+msgid "New distribution"
 msgstr ""
-#: helper_distributions_13
-msgid "delete"
-msgstr ""
-#: view_home_news_24
-msgid "participate"
+#: controller_repositories_3
+msgid "sources.list read."
 msgstr ""
 #: view_messages_show_0
 msgid "From:"
 msgstr ""
+#: view_home_news_24
+msgid "participate"
+msgstr ""
+#: helper_distributions_13
+msgid "delete"
+msgstr ""
+#: natur_geist_und_technik
+msgid "Natur, Geist und Technik - Verein zur Förderung der Allgemeinbildung e.V."
+msgstr ""
+#: controller_metapackages_11
+msgid "Couldn't delete package from bundle."
+msgstr ""
 #: controller_metapackages_12
 msgid " bundle selected </option> \n"
-msgstr ""
-#: helper_distributions_15
-msgid "Informational page at www.ubuntuusers.de (German)"
-msgstr ""
-#: controller_metapackages_13
-msgid "<option calue='0'>Delete</option>"
-msgstr ""
-#: superior_category
-msgid "Superior category"
-msgstr ""
-#: repository_url
-msgid "Repository-URL: "
-msgstr ""
-#: sources
-msgid "Sources"
 msgstr ""
 #: view_messages_show_2
 msgid "Received on:"
 msgstr ""
-#: helper_distributions_16
-msgid "free and from the main repositories"
+#: sources
+msgid "Sources"
 msgstr ""
-#: controller_metapackages_14
-msgid "<option value='1'>Migrate</option>"
+#: repository_url
+msgid "Repository-URL: "
 msgstr ""
-#: view_distributions_show_8
-msgid "Before a distribution can be deleted, every user must be logged out! Are you sure?"
+#: superior_category
+msgid "Superior category"
+msgstr ""
+#: controller_metapackages_13
+msgid "<option calue='0'>Delete</option>"
+msgstr ""
+#: helper_distributions_15
+msgid "Informational page at ubuntu.com"
 msgstr ""
 #: view_messages_show_3
 msgid "Reply"
 msgstr ""
-#: helper_distributions_17
-msgid "free and from the community repositories"
+#: view_distributions_show_8
+msgid "Before a distribution can be deleted, every user must be logged out! Are you sure?"
 msgstr ""
-#: controller_metapackages_15
-msgid "<option value='2'>Publish<option/>"
+#: controller_metapackages_14
+msgid "<option value='1'>Migrate</option>"
 msgstr ""
-#: new_derivative
-msgid "New derivative"
+#: helper_distributions_16
+msgid "free and from the main repositories"
 msgstr ""
 #: view_messages_show_4
 msgid "Forward"
 msgstr ""
-#: helper_distributions_18
-msgid "free and from third party repositories"
+#: new_derivative
+msgid "New derivative"
+msgstr ""
+#: controller_metapackages_15
+msgid "<option value='2'>Publish<option/>"
+msgstr ""
+#: helper_distributions_17
+msgid "free and from the community repositories"
 msgstr ""
 #: view_mailbox_show_1
 msgid "From"
 msgstr ""
-#: helper_distributions_19
-msgid "non-free and from the main repositories"
-msgstr ""
-#: view_home_faq_20
-msgid "Programs within Ubuntu are provided via packages, which are located in the package-sources or repositories. Further information about <a href=\"https://help.ubuntu.com/community/Repositories\" target=\"_blank\">Repositorys</a>."
+#: helper_distributions_18
+msgid "free and from third party repositories"
 msgstr ""
 #: view_user_profiles__profile_rating_0
 msgid "Detailed choice of the programs and bundles that shall be installed"
 msgstr ""
-#: view_home_faq_21
-msgid "How do I find the Communtu sources in my system?"
+#: view_home_faq_20
+msgid "Programs within Ubuntu are provided via packages, which are located in the package-sources or repositories. Further information about <a href=\"https://help.ubuntu.com/community/Repositories\" target=\"_blank\">Repositorys</a>."
 msgstr ""
-#: view_mailbox_show_3
-msgid "received"
-msgstr ""
-#: view_metapackages_edit_gpl
-msgid "I accept to publish the bundle information under the <a href=\"http://www.gnu.de/documents/gpl.de.html\">GNU General public license</a> (Version 2.0 or higher)."
+#: helper_distributions_19
+msgid "non-free and from the main repositories"
 msgstr ""
 #: view_user_profiles__profile_rating_1
 msgid "Here you can choose the use of your computer in detail. \nWith a click on the "
 msgstr ""
-#: view_home_faq_22
-msgid "To find the Communtu-sources in a Gnome-based system, you navigate to \"System\" -> \"Administration\" -> \"Software Sources\" -> \"Third-Party Software\". To find the Communtu-sources in a KDE-based system, you open the K-menu and then navigate to \"Programs\" -> \"System\" -> \"Administration\" -> Software Sources\" -> \"Third-Party Software\". Here you deactivate the Communtu-sources. When deactivating the Communtu-sources, the installed programs won't be uninstalled nor the updates are held back. Updates are still obtained from the official sources, which may be added by Communtu."
+#: view_metapackages_edit_gpl
+msgid "I accept to publish the bundle information under the <a href=\"http://www.gnu.de/documents/gpl.de.html\">GNU General public license</a> (Version 2.0 or higher)."
+msgstr ""
+#: view_mailbox_show_3
+msgid "received"
+msgstr ""
+#: view_home_faq_21
+msgid "How do I find the Communtu sources in my system?"
 msgstr ""
 #: view_user_profiles__profile_rating_2
 msgid " you can \nopen or close a section to make a detailed selection."
 msgstr ""
-#: view_home_faq_23
-msgid "How do I delete the metapackages?"
-msgstr ""
-#: view_home_impressum_11
-msgid "Participants of the Communtu-team (alphabetical order):"
-msgstr ""
-#: view_mailbox_show_5
-msgid "You have no messages in your inbox."
-msgstr ""
-#: view_repositories_multinew_0
-msgid "read"
-msgstr ""
-#: view_roles_new_0
-msgid "New role"
+#: view_home_faq_22
+msgid "To find the Communtu-sources in a Gnome-based system, you navigate to \"System\" -> \"Administration\" -> \"Software Sources\" -> \"Third-Party Software\". To find the Communtu-sources in a KDE-based system, you open the K-menu and then navigate to \"Programs\" -> \"System\" -> \"Administration\" -> Software Sources\" -> \"Third-Party Software\". Here you deactivate the Communtu-sources. When deactivating the Communtu-sources, the installed programs won't be uninstalled nor the updates are held back. Updates are still obtained from the official sources, which may be added by Communtu."
 msgstr ""
 #: view_user_profiles__profile_rating_3
 msgid "Attention! When finished, don't forget to click on \"Save\"."
 msgstr ""
-#: view_home_faq_24
-msgid "This can be done with Synaptic. To reach Synaptic in a Gnome-based system, you open the menu \"System\" -> \"Administration\" -> \"Synaptic Package Manager\". To reach Synaptic in a KDE-based system, you open the K-menu and then navigate to \"Programs\" -> \"System\" -> \"Administration\" -> \"Synaptic Package Manager\". Next you choose the menu-entry \"Origin\" in the lower-left corner. In the list, which now appears above this section of Synaptic, you choose the entry \"packages.communtu.de\". In the main-part of Synaptic, on the right side of the program-window, you now have a list of the installed metapackages. To remove a metapackage you right-click it and choose \"Mark for Removal\". To finish the removal of a metapackage you now have just to click on \"Apply\" in the menu-bar above. However, the packages contained in this metapackage will not be removed! To remove these you have to choose the packages with Synaptic and remove them individually."
+#: view_roles_new_0
+msgid "New role"
 msgstr ""
-#: senden
-msgid "Send"
+#: view_repositories_multinew_0
+msgid "read"
 msgstr ""
-#: view_packages_show_2
-msgid "install package instantly"
+#: view_mailbox_show_5
+msgid "You do not have any messages in your inbox."
+msgstr ""
+#: view_home_impressum_11
+msgid "Participants of the Communtu-team (alphabetical order):"
+msgstr ""
+#: view_home_faq_23
+msgid "How do I delete the metapackages?"
 msgstr ""
 #: view_videos_edit_0
 msgid "edit video"
 msgstr ""
-#: total_packages
-msgid "Total packages:"
+#: view_packages_show_2
+msgid "install package instantly"
 msgstr ""
-#: creation_error
-msgid "While creating the package an error occured."
+#: senden
+msgid "Send"
 msgstr ""
-#: view_admins_load_packages_0
-msgid "New package:"
+#: view_home_faq_24
+msgid "This can be done with Synaptic. To reach Synaptic in a Gnome-based system, you open the menu \"System\" -> \"Administration\" -> \"Synaptic Package Manager\". To reach Synaptic in a KDE-based system, you open the K-menu and then navigate to \"Programs\" -> \"System\" -> \"Administration\" -> \"Synaptic Package Manager\". Next you choose the menu-entry \"Origin\" in the lower-left corner. In the list, which now appears above this section of Synaptic, you choose the entry \"packages.communtu.de\". In the main-part of Synaptic, on the right side of the program-window, you now have a list of the installed metapackages. To remove a metapackage you right-click it and choose \"Mark for Removal\". To finish the removal of a metapackage you now have just to click on \"Apply\" in the menu-bar above. However, the packages contained in this metapackage will not be removed! To remove these you have to choose the packages with Synaptic and remove them individually."
 msgstr ""
 #: view_user_profiles__installation_20
 msgid "This step has already been carried out."
 msgstr ""
+#: view_admins_load_packages_0
+msgid "New package:"
+msgstr ""
+#: creation_error
+msgid "While creating the package an error occured."
+msgstr ""
+#: total_packages
+msgid "Total packages:"
+msgstr ""
 #: kontodaten
 msgid "Bank-account: 172 9375, Sparkasse Bremen, Bank-number 290 501 01"
-msgstr ""
-#: description_with_colon
-msgid "Description:"
-msgstr ""
-#: view_home_icons_0
-msgid "icons used in Communtu"
-msgstr ""
-#: view_packages_show_5
-msgid "add sources for this package"
 msgstr ""
 #: view_user_profiles__installation_21
 msgid "Installation of the metapackages. Please add the sources first."
 msgstr ""
-#: view_layouts_application_0
-msgid "Communtu, Ubuntu, installation, installation help"
+#: view_packages_show_5
+msgid "add sources for this package"
 msgstr ""
-#: view_repositories_migrate_1
-msgid "copy repository"
+#: view_home_icons_0
+msgid "icons used in Communtu"
+msgstr ""
+#: description_with_colon
+msgid "Description:"
 msgstr ""
 #: view_users__mailbox_list_1
 msgid "Mailbox"
 msgstr ""
-#: view_home_derivatives_30
-msgid "http://en.wikipedia.org/wiki/Home_theater_PC"
+#: view_repositories_migrate_1
+msgid "copy repository"
 msgstr ""
-#: view_layouts_application_1
-msgid "Communtu customizes your Ubuntu system to your individual needs."
-msgstr ""
-#: view_repositories_migrate_2
-msgid " to distribution"
+#: view_layouts_application_0
+msgid "Communtu, Ubuntu, installation, installation help"
 msgstr ""
 #: view_user_profiles__installation_23
 msgid "\t    Installing packages. There are two alternatives:"
 msgstr ""
-#: view_home_derivatives_31
-msgid ". Because of the necessary installation of drivers, Linux MCE should be installed directly. However, Communtu can be used to install additional software."
+#: view_repositories_migrate_2
+msgid " to distribution"
 msgstr ""
-#: view_home_icons_3
-msgid "Install package(s)."
+#: view_layouts_application_1
+msgid "Communtu customizes your Ubuntu system to your individual needs."
 msgstr ""
-#: view_layouts_application_2
-msgid "Communtu"
+#: view_home_derivatives_30
+msgid "http://en.wikipedia.org/wiki/Home_theater_PC"
 msgstr ""
-#: view_packages_show_8
-msgid "Popularity:"
+#: view_users__mailbox_list_3
+msgid "sent messages "
 msgstr ""
 #: view_user_profiles__installation_24
 msgid "installation via metapackages"
@@ -1798,23 +1816,17 @@ msgstr ""
 #: view_user_profiles_help_0
 msgid "Determination of the Ubuntu version"
 msgstr ""
-#: view_users__mailbox_list_3
-msgid "sent messages "
+#: view_packages_show_8
+msgid "Popularity:"
 msgstr ""
-#: Kommentar
-msgid "Comment:"
+#: view_layouts_application_2
+msgid "Communtu"
 msgstr ""
-#: view_home_derivatives_32
-msgid " is a Ubuntu derivative consisting only of free software. Suitable only for experienced users. Should only be installed with the Gobuntu-CD so that only free software is provided. A further installation with Communtu is possible, but \"Free software\" should be selected in the user profile. This derivative is available in Ubuntu 8.04 and development is currently discontinued."
+#: view_home_icons_3
+msgid "Install package(s)."
 msgstr ""
-#: save
-msgid "save"
-msgstr ""
-#: view_layouts_application_3
-msgid "Ubuntu logo"
-msgstr ""
-#: view_packages_show_9
-msgid "/5 stars&nbsp;&nbsp; "
+#: view_home_derivatives_31
+msgid ". Because of the necessary installation of drivers, Linux MCE should be installed directly. However, Communtu can be used to install additional software."
 msgstr ""
 #: view_user_profiles__installation_25
 msgid "installatin via apturl"
@@ -1822,35 +1834,29 @@ msgstr ""
 #: view_user_profiles_help_1
 msgid "Open a new terminal. Click on \"Applications\" -> \"Accessories\" -> \"Terminal\""
 msgstr ""
-#: view_home_derivatives_33
-msgid "http://en.wikipedia.org/wiki/Nexenta_OS"
+#: view_packages_show_9
+msgid "/5 stars&nbsp;&nbsp; "
 msgstr ""
-#: view_user_profiles_help_2
-msgid "There you enter the following:"
+#: view_layouts_application_3
+msgid "Ubuntu logo"
+msgstr ""
+#: save
+msgid "save"
+msgstr ""
+#: view_home_derivatives_32
+msgid " is a Ubuntu derivative consisting only of free software. Suitable only for experienced users. Should only be installed with the Gobuntu-CD so that only free software is provided. A further installation with Communtu is possible, but \"Free software\" should be selected in the user profile. This derivative is available in Ubuntu 8.04 and development is currently discontinued."
+msgstr ""
+#: Kommentar
+msgid "Comment:"
 msgstr ""
 #: zentrum_solidarische_oekonomie
 msgid "Zentrum für Solidarische Ökonomie"
 msgstr ""
-#: third_party
-msgid "third-party "
+#: view_user_profiles_help_2
+msgid "There you enter the following:"
 msgstr ""
-#: controller_metapackages_no_save
-msgid "This bundle contains conflicts and therefor it cannot be saved as a metapackage."
-msgstr ""
-#: view_derivatives_edit_0
-msgid "edit derivative"
-msgstr ""
-#: view_home_derivatives_34
-msgid " - replaces the Linux core with OpenSolaris. Provides only a minimal basis to applications. The installation of additional software is left to the user; Communtu can be used for this."
-msgstr ""
-#: model_package_0
-msgid "open source"
-msgstr ""
-#: view_home_icons_6
-msgid " install sources"
-msgstr ""
-#: view_layouts_application_5
-msgid "by PayPal:"
+#: view_home_derivatives_33
+msgid "http://en.wikipedia.org/wiki/Nexenta_OS"
 msgstr ""
 #: view_user_profiles__installation_27
 msgid "Please configure "
@@ -1858,23 +1864,29 @@ msgstr ""
 #: view_user_profiles_help_3
 msgid "If you version is not supported by Communtu, you now have two possibilities:"
 msgstr ""
-#: view_derivatives_edit_1
-msgid "Program for GUI-based sudo (e.g. gksudo, kdesudo)"
+#: view_layouts_application_5
+msgid "by PayPal:"
 msgstr ""
-#: view_home_derivatives_35
-msgid "There are several other derivatives for which we cannot give any recommendations for installation:"
+#: view_home_icons_6
+msgid " install sources"
 msgstr ""
-#: model_package_1
-msgid "Commercial"
+#: model_package_0
+msgid "open source"
 msgstr ""
-#: view_layouts_application_6
-msgid "Donate now online using PayPal, it is easy, quick and secure."
+#: view_home_derivatives_34
+msgid " - replaces the Linux core with OpenSolaris. Provides only a minimal basis to applications. The installation of additional software is left to the user; Communtu can be used for this."
 msgstr ""
-#: view_metapackages_rdepends_0
-msgid "In bundle"
+#: new_distribution
+msgid "new distribution"
 msgstr ""
-#: view_passwords_new_0
-msgid "forgotten password"
+#: view_derivatives_edit_0
+msgid "edit derivative"
+msgstr ""
+#: controller_metapackages_no_save
+msgid "This bundle contains conflicts and therefor it cannot be saved as a metapackage."
+msgstr ""
+#: third_party
+msgid "third-party "
 msgstr ""
 #: view_user_profiles__installation_28
 msgid "https://wiki.ubuntu.com/AptUrl"
@@ -1882,23 +1894,23 @@ msgstr ""
 #: view_user_profiles_help_4
 msgid "you upgrade to a newer, supported, version"
 msgstr ""
-#: view_derivatives_edit_2
-msgid "Program for GUI-dialogs (e.g. zenity, kdialog)"
+#: view_passwords_new_0
+msgid "forgotten password"
 msgstr ""
-#: view_home_derivatives_36
-msgid " - an African version of Ubuntu, which is apparently not available over the internet."
+#: view_metapackages_rdepends_0
+msgid "In bundle"
 msgstr ""
-#: model_package_2
-msgid "unknown"
+#: view_layouts_application_6
+msgid "Donate now online using PayPal, it is easy, quick and secure."
 msgstr ""
-#: controller_passwords_1
-msgid "A link for chaning the password has been sent to your e-mail-address."
+#: model_package_1
+msgid "Commercial"
 msgstr ""
-#: view_metapackages_rdepends_1
-msgid " directly an indirectly contained bundles and packages"
+#: view_home_derivatives_35
+msgid "There are several other derivatives for which we cannot give any recommendations for installation:"
 msgstr ""
-#: view_passwords_new_1
-msgid "    Which e-mail-address did you enter when you created the account?"
+#: view_derivatives_edit_1
+msgid "Program for GUI-based sudo (e.g. gksudo, kdesudo)"
 msgstr ""
 #: view_user_profiles__installation_29
 msgid " for the Konqueror and Opera browsers."
@@ -1906,180 +1918,201 @@ msgstr ""
 #: view_user_profiles_help_5
 msgid "you expand Communtu with your version"
 msgstr ""
-#: view_home_derivatives_37
-msgid "http://en.wikipedia.org/wiki/LinEx"
+#: view_passwords_new_1
+msgid "    Which e-mail-address did you enter when you created the account?"
 msgstr ""
-#: controller_passwords_2
-msgid "No user found with this e-mail-address."
+#: view_metapackages_rdepends_1
+msgid " directly an indirectly contained bundles and packages"
 msgstr ""
-#: anmelden
-msgid "Log in"
+#: controller_passwords_1
+msgid "A link for chaning the password has been sent to your e-mail-address."
 msgstr ""
-#: view_home_icons_9
-msgid " installation via shell-script"
+#: model_package_2
+msgid "unknown"
 msgstr ""
-#: view_home_news_1
-msgid "Our mailinglists"
+#: view_home_derivatives_36
+msgid " - an African version of Ubuntu, which is apparently not available over the internet."
 msgstr ""
-#: view_layouts_application_8
-msgid "Start"
-msgstr ""
-#: view_metapackages_migrate_0
-msgid "Wich distribution are the bundles to be migrated from?"
+#: view_derivatives_edit_2
+msgid "Program for GUI-dialogs (e.g. zenity, kdialog)"
 msgstr ""
 #: view_passwords_new_2
 msgid "reset password"
 msgstr ""
-#: view_home_derivatives_38
-msgid " - public distribution for the Spanish region of Extremadura."
+#: view_metapackages_migrate_0
+msgid "Wich distribution are the bundles to be migrated from?"
 msgstr ""
-#: view_home_news_2
-msgid "To improve communication with our users we have set up some mailing lists."
+#: view_layouts_application_8
+msgid "Start"
 msgstr ""
-#: view_layouts_application_9
-msgid "Log out"
+#: view_home_news_1
+msgid "Our mailinglists"
 msgstr ""
-#: view_metapackages_migrate_1
-msgid "Which distribution are the bundles to be migrated to?"
+#: view_home_icons_9
+msgid " installation via shell-script"
 msgstr ""
-#: view_users_edit_0
-msgid "edit profile"
+#: anmelden
+msgid "Log in"
+msgstr ""
+#: controller_passwords_2
+msgid "No user found with this e-mail-address."
+msgstr ""
+#: view_home_derivatives_37
+msgid "http://en.wikipedia.org/wiki/LinEx"
 msgstr ""
 #: view_users_new_1
 msgid "Here you have the possibility to register yourself."
 msgstr ""
-#: compose_new_message
-msgid "compose a new message"
+#: view_users_edit_0
+msgid "edit profile"
 msgstr ""
-#: confirm_new_passwd
-msgid "Confirm new password"
+#: view_metapackages_migrate_1
+msgid "Which distribution are the bundles to be migrated to?"
 msgstr ""
-#: controller_suggestion_11
-msgid "add repository"
+#: view_layouts_application_9
+msgid "Log out"
 msgstr ""
-#: view_home_derivatives_39
-msgid " for older PCs. It is based on the LXDE-GUI."
+#: view_home_news_2
+msgid "To improve communication with our users we have set up some mailing lists."
 msgstr ""
-#: view_home_news_3
-msgid "communtu-announce-en+subscribe@googlegroups.com"
+#: view_home_derivatives_38
+msgid " - public distribution for the Spanish region of Extremadura."
 msgstr ""
-#: view_users_new_2
-msgid "If you want to be informed about the development of Communtu you have to enter a valid e-mail-address."
+#: model_package_could_not_read
+msgid "couldn't read {{url}}"
 msgstr ""
 #: you_can
 msgid "You can "
 msgstr ""
-#: controller_suggestion_12
-msgid "The following repositories will be added"
+#: view_users_new_2
+msgid "If you want to be informed about the development of Communtu you have to enter a valid e-mail-address."
 msgstr ""
-#: model_package_6
-msgid "<br> has not the right format"
+#: view_home_news_3
+msgid "communtu-announce-en+subscribe@googlegroups.com"
 msgstr ""
-#: controller_passwords_5
-msgid "Password must not be empty."
+#: view_home_derivatives_39
+msgid " for older PCs. It is based on the LXDE-GUI."
+msgstr ""
+#: controller_suggestion_11
+msgid "add repository"
+msgstr ""
+#: confirm_new_passwd
+msgid "Confirm new password"
+msgstr ""
+#: compose_new_message
+msgid "compose a new message"
 msgstr ""
 #: view_users_edit_2
 msgid "delete profile"
 msgstr ""
-#: model_package_7
-msgid "couldn't determine URL for {{repo}}"
+#: controller_passwords_5
+msgid "Password must not be empty."
 msgstr ""
-#: controller_passwords_6
-msgid "Password changed."
+#: model_package_6
+msgid "<br> has not the right format"
 msgstr ""
-#: view_home_news_5
-msgid "This list is intended for general announcements from the Communtu team to the users. The frequency is a little higher than once a week. Posts will be collected in an"
-msgstr ""
-#: view_layouts_application_11
-msgid "Anonymous access"
-msgstr ""
-#: view_rating_show_title_got_ratings
-msgid "of 5 stars"
+#: controller_suggestion_12
+msgid "The following repositories will be added"
 msgstr ""
 #: view_users_edit_3
 msgid "Username:"
 msgstr ""
-#: donation_receipt
-msgid "Donation receipt can be issued."
+#: view_rating_show_title_got_ratings
+msgid "of 5 stars"
+msgstr ""
+#: view_layouts_application_11
+msgid "Anonymous access"
+msgstr ""
+#: view_home_news_5
+msgid "This list is intended for general announcements from the Communtu team to the users. The frequency is a little higher than once a week. Posts will be collected in an"
+msgstr ""
+#: controller_passwords_6
+msgid "Password changed."
+msgstr ""
+#: model_package_7
+msgid "couldn't determine URL for {{repo}}"
 msgstr ""
 #: controller_passwords_7
 msgid "Password not changed."
 msgstr ""
-#: controller_suggestion_15
-msgid "Install package"
-msgstr ""
-#: model_package_9
-msgid "While the synchronization of the repository {{repo_name}} no PackageDistr-entry for the package {{package_name}} could be found."
-msgstr ""
-#: controller_passwords_8
-msgid "Passwords do not match."
-msgstr ""
-#: view_home_news_7
-msgid "http://groups.google.com/group/communtu-discuss-en/topics?start="
+#: donation_receipt
+msgid "Donation receipt can be issued."
 msgstr ""
 #: view_users_new_6
 msgid "confirm password"
 msgstr ""
-#: subject_with_colon
-msgid "Subject:"
+#: view_home_news_7
+msgid "http://groups.google.com/group/communtu-discuss-en/topics?start="
 msgstr ""
-#: controller_suggestion_16
-msgid "The following packages will be installed"
+#: controller_passwords_8
+msgid "Passwords do not match."
 msgstr ""
-#: view_home_news_8
-msgid "."
+#: model_package_9
+msgid "While the synchronization of the repository {{repo_name}} no PackageDistr-entry for the package {{package_name}} could be found."
+msgstr ""
+#: controller_suggestion_15
+msgid "Install package"
 msgstr ""
 #: view_layouts_application_13
 msgid "About Communtu"
 msgstr ""
-#: controller_users_10
-msgid "User deleted"
+#: view_home_news_8
+msgid "."
 msgstr ""
-#: archive
-msgid "archive"
+#: controller_suggestion_16
+msgid "The following packages will be installed"
 msgstr ""
-#: view_layouts_application_14
-msgid "Feedback to Communtu"
-msgstr ""
-#: view_metapackages_show_save
-msgid "save bundle as a metapackage"
+#: subject_with_colon
+msgid "Subject:"
 msgstr ""
 #: view_users_new_8
 msgid "Yes, I want to be added to the announcement-mailinglist."
 msgstr ""
-#: category_without_colon
-msgid "Category"
+#: view_metapackages_show_save
+msgid "save bundle as a metapackage"
 msgstr ""
-#: controller_users_11
-msgid "A problem while deleting a user occured."
+#: view_layouts_application_14
+msgid "Feedback to Communtu"
 msgstr ""
-#: new_category
-msgid "New category"
+#: archive
+msgid "archive"
 msgstr ""
-#: view_home_faq_00
-msgid "Frequently Asked Questions"
-msgstr ""
-#: path
-msgid "Path:"
-msgstr ""
-#: view_layouts_application_15
-msgid "Logged in as "
-msgstr ""
-#: view_metapackages_show_0
-msgid "Bundle created by "
+#: controller_users_10
+msgid "User deleted"
 msgstr ""
 #: view_users_new_9
 msgid "Yes, I want to be added to the discussion-mailinglist."
 msgstr ""
-#: controller_users_12
-msgid "User activated"
+#: view_metapackages_show_0
+msgid "Bundle created by "
 msgstr ""
-#: view_home_faq_01
-msgid "What is a bundle?"
+#: view_layouts_application_15
+msgid "Logged in as "
+msgstr ""
+#: path
+msgid "Path:"
+msgstr ""
+#: view_home_faq_00
+msgid "Frequently Asked Questions"
+msgstr ""
+#: new_category
+msgid "New category"
+msgstr ""
+#: controller_users_11
+msgid "A problem while deleting a user occured."
+msgstr ""
+#: category_without_colon
+msgid "Category"
+msgstr ""
+#: view_users_edit_9
+msgid "  With a click on \"save\" this account will be made permanent."
 msgstr ""
 #: view_layouts_application_16
 msgid "new message"
 msgstr ""
-#: view_users_edit_9
-msgid "  With a click on \"save\" this account will be made permanent."
+#: view_home_faq_01
+msgid "What is a bundle?"
+msgstr ""
+#: controller_users_12
+msgid "User activated"
 msgstr ""

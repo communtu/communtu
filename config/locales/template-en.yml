@@ -512,7 +512,7 @@ en:
       Our anouncements and mailinglists can be found at:
     http://en.communtu.org/home/news
   install2: Install
-  view_rating_new_comment_info: Please enter a review to your rating. This is a <b>obligatory</b> step.
+  view_rating_new_comment_info: Please enter a description to your rating. This is a <b>mandatory</b> step.
   view_home_derivatives_50: " - with Fluxbox and several network-tools."
   view_passwords_edit_0: "    Password:"
   view_home_derivatives_51: " - Installation of programs and version, which are not available through the official repositories."
@@ -573,7 +573,7 @@ en:
   helper_distributions_11: "<br />distribution "
   view_home_home_8: <b>Search program</b> Here you can search for single Ubuntu-programs (packages).
   controller_repositories_3: sources.list read.
-  view_distributions_index_1: new distribution
+  view_distributions_index_1: New distribution
   helper_distributions_12: edit
   view_home_home_9: <b>Ubuntu derivatives</b> is a small overview about Kubuntu, Xubuntu, Medibuntu, etc.
   controller_metapackages_11: Couldn't delete package from bundle.
@@ -611,7 +611,7 @@ en:
     open or close a section to make a detailed selection."
   view_home_faq_23: How do I delete the metapackages?
   view_home_impressum_11: "Participants of the Communtu-team (alphabetical order):"
-  view_mailbox_show_5: You have no messages in your inbox.
+  view_mailbox_show_5: You do not have any messages in your inbox.
   view_repositories_multinew_0: read
   view_roles_new_0: New role
   view_user_profiles__profile_rating_3: Attention! When finished, don't forget to click on "Save".
@@ -655,6 +655,7 @@ en:
   third_party: "third-party "
   controller_metapackages_no_save: This bundle contains conflicts and therefor it cannot be saved as a metapackage.
   view_derivatives_edit_0: edit derivative
+  new_distribution: new distribution
   view_home_derivatives_34: " - replaces the Linux core with OpenSolaris. Provides only a minimal basis to applications. The installation of additional software is left to the user; Communtu can be used for this."
   model_package_0: open source
   view_home_icons_6: " install sources"

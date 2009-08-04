@@ -545,13 +545,13 @@ msgstr "Install through metapackage. Please add the sources first."
 msgid "Programm-Bündel"
 msgstr "program-bundle"
 
+#: view_home_home_18
+msgid "Klicke auf "
+msgstr "Click on"
+
 #: match_ubuntu
 msgid "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
 msgstr "Match Ubuntu to your personal needs"
-
-#: view_home_home_18
-msgid "Klicke auf"
-msgstr "Click on"
 
 #: view_home_beteiligung_1
 msgid "Anwenden der Plattform"
@@ -1250,7 +1250,7 @@ msgid "Weitere Informationen"
 msgstr "further information"
 
 #: view_sent_index_5
-msgid "Sie haben noch keine Nachrichten versendet."
+msgid "Du hast noch keine Nachrichten versendet."
 msgstr "You haven't sent any messages yet."
 
 #: category_with_colon
@@ -1988,8 +1988,8 @@ msgid "Ubuntu-Derivate"
 msgstr "Ubuntu derivatives"
 
 #: view_rating_new_comment_info
-msgid "Geben sie eine Beschreibung zu Ihrer Bewertung an. Diese Angabe ist <b>Pflicht</b>."
-msgstr "Please enter a review to your rating. This is a <b>obligatory</b> step."
+msgid "Gib bitte eine Beschreibung zu deiner Bewertung an. Diese Angabe ist <b>Pflicht</b>."
+msgstr "Please enter a description to your rating. This is a <b>mandatory</b> step."
 
 #: install2
 msgid "installieren"
@@ -2234,8 +2234,8 @@ msgid "bearbeiten"
 msgstr "edit"
 
 #: view_distributions_index_1
-msgid "Neue Distribution"
-msgstr "new distribution"
+msgid "Neue Distribution "
+msgstr "New distribution"
 
 #: controller_repositories_3
 msgid "sources.list eingelesen."
@@ -2386,8 +2386,8 @@ msgid "Einlesen"
 msgstr "read"
 
 #: view_mailbox_show_5
-msgid "Sie haben keine Nachrichten in ihrem Posteingang."
-msgstr "You have no messages in your inbox."
+msgid "Du hast keine Nachrichten in deinem Posteingang."
+msgstr "You do not have any messages in your inbox."
 
 #: view_home_impressum_11
 msgid "Mitwirkende an der AG Communtu (Alphabetische Reihenfolge):"
@@ -2568,6 +2568,10 @@ msgstr "open source"
 #: view_home_derivatives_34
 msgid " - ersetzt den Linux-Kern durch OpenSolaris. Stellt nur eine minimale Basis an Anwendungen bereit. Die Installation weiterer Pakete bleibt dem Benutzer überlassen; hierfür kann Communtu genutzt werden."
 msgstr " - replaces the Linux core with OpenSolaris. Provides only a minimal basis to applications. The installation of additional software is left to the user; Communtu can be used for this."
+
+#: new_distribution
+msgid "Neue Distribution"
+msgstr "new distribution"
 
 #: view_derivatives_edit_0
 msgid "Derivative bearbeiten"
