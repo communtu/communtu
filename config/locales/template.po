@@ -1330,7 +1330,7 @@ msgid "Zum Bündel bewerten"
 msgstr "rate bundles"
 
 #: view_home_home_new_messages_desc
-msgid "Sie haben neue Nachrichten in Ihrem Posteingang."
+msgid "Du hast neue Nachrichten in deinem Posteingang."
 msgstr "You have new messages in your inbox."
 
 #: view_home_faq_16
@@ -2889,6 +2889,8 @@ msgstr "What is a bundle?"
 msgid "Benutzer aktiviert"
 msgstr "User activated"
 
+#~ msgid "Sie haben neue Nachrichten in Ihrem Posteingang."
+#~ msgstr "You have new messages in your inbox."
 #~ msgid "Folgende Pakete wurden nicht gefunden: "
 #~ msgstr "The following packages couldn't be found:"
 
