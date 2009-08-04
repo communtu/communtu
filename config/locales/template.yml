@@ -560,7 +560,7 @@ de:
   view_layouts_application_warning: "Achtung: in Kürze werden auf diesem Webserver kurze Wartungsarbeiten durchgeführt!"
   view_mailbox_show_1: Von
   view_mailbox_show_3: erhalten
-  view_mailbox_show_5: Sie haben keine Nachrichten in ihrem Posteingang.
+  view_mailbox_show_5: Du hast keine Nachrichten in deinem Posteingang.
   view_messages_show_0: "Von:"
   view_messages_show_2: "erhalten am:"
   view_messages_show_3: Antworten
@@ -644,7 +644,7 @@ de:
   view_passwords_new_1: "    Mit welcher Email-Adresse hast du das Benutzerkonto angelegt?"
   view_passwords_new_2: "Passwort zurücksetzen"
   view_rating_new_comment_cancel: Abbrechen
-  view_rating_new_comment_info: Geben sie eine Beschreibung zu Ihrer Bewertung an. Diese Angabe ist <b>Pflicht</b>.
+  view_rating_new_comment_info: Gib bitte eine Beschreibung zu deiner Bewertung an. Diese Angabe ist <b>Pflicht</b>.
   view_rating_new_comment_textfield_label: Kommentar 
   view_rating_rating_rate: von 5 Sternen vergeben
   view_rating_show_title_got_ratings: von 5 Sternen
@@ -674,7 +674,7 @@ de:
   view_roles_show_0: "Rollenname:"
   view_sent_index_0: verschickte Nachrichten
   view_sent_index_3: Zeitpunkt
-  view_sent_index_5: Sie haben noch keine Nachrichten versendet.
+  view_sent_index_5: Du hast noch keine Nachrichten versendet.
   view_sent_new_3: "Nachricht:"
   view_sent_show_2: "Zeitpunkt:"
   view_sent__user_exists_0: User gefunden
