@@ -1,11 +1,209 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+--- 
+messages_025: 
+  created_at: 2009-07-07 16:30:52
+  body: |-
+    > buuuuuh, kde...
+    
+    Du weist ja nicht was gut ist!
+  updated_at: 2009-07-07 16:30:52
+  subject: "Re: buuuh"
+  id: "25"
+  author_id: "33"
+messages_014: 
+  created_at: 2009-06-25 10:58:32
+  body: asd
+  updated_at: 2009-06-25 10:58:32
+  subject: dasd
+  id: "14"
+  author_id: "828"
+messages_003: 
+  created_at: 2009-05-31 00:30:12
+  body: TOLL!
+  updated_at: 2009-05-31 00:30:12
+  subject: Das bin ich!
+  id: "3"
+  author_id: "828"
+messages_026: 
+  created_at: 2009-07-22 17:15:40
+  body: "eine Nachricht bekommst.\r\n\
+    \r\n\
+    Gru\xC3\x9F\r\n\
+    Torsten"
+  updated_at: 2009-07-22 17:15:40
+  subject: Damit Du auch mal
+  id: "26"
+  author_id: "1021"
+messages_015: 
+  created_at: 2009-06-25 15:11:42
+  body: das
+  updated_at: 2009-06-25 15:11:42
+  subject: das
+  id: "15"
+  author_id: "1211"
+messages_004: 
+  created_at: 2009-06-03 14:11:23
+  body: !binary |
+    TmEgd2llIGfDpMOkw6TDpMOkw6TDpHRzICE=
 
-one:
-  author_id: 1
-  subject: MyString
-  body: MyText
-
-two:
-  author_id: 1
-  subject: MyString
-  body: MyText
+  updated_at: 2009-06-03 14:11:23
+  subject: Hallo
+  id: "4"
+  author_id: "828"
+messages_016: 
+  created_at: 2009-06-25 15:15:42
+  body: "> das"
+  updated_at: 2009-06-25 15:15:42
+  subject: "Re: das"
+  id: "16"
+  author_id: "1211"
+messages_005: 
+  created_at: 2009-06-05 16:03:50
+  body: |-
+    > TOLL!
+    
+    
+    dasdasd
+  updated_at: 2009-06-05 16:03:50
+  subject: "Re: Das bin ich!"
+  id: "5"
+  author_id: "828"
+messages_017: 
+  created_at: 2009-06-25 15:15:54
+  body: "Urspr\xC3\xBCngliche Nachricht von damli am 25.06.2009 15:15  \r\n  \r\n\
+    > > das"
+  updated_at: 2009-06-25 15:15:54
+  subject: "Fwd: Re: das"
+  id: "17"
+  author_id: "1211"
+messages_006: 
+  created_at: 2009-06-05 16:04:32
+  body: Es funktioniert... zumindest das schreiben und antworten!
+  updated_at: 2009-06-05 16:04:32
+  subject: Hallo Till
+  id: "6"
+  author_id: "828"
+messages_018: 
+  created_at: 2009-06-26 11:12:15
+  body: das
+  updated_at: 2009-06-26 11:12:15
+  subject: damian
+  id: "18"
+  author_id: "1264"
+messages_007: 
+  created_at: 2009-06-05 16:05:15
+  body: |-
+    > Es funktioniert... zumindest das schreiben und antworten!
+    
+    Indeed!
+  updated_at: 2009-06-05 16:05:15
+  subject: "Re: Hallo Till"
+  id: "7"
+  author_id: "1"
+messages_020: 
+  created_at: 2009-06-26 11:12:39
+  body: "> das"
+  updated_at: 2009-06-26 11:12:39
+  subject: "Re: das"
+  id: "20"
+  author_id: "1264"
+messages_019: 
+  created_at: 2009-06-26 11:12:33
+  body: das
+  updated_at: 2009-06-26 11:12:33
+  subject: das
+  id: "19"
+  author_id: "1264"
+messages_008: 
+  created_at: 2009-06-12 19:31:43
+  body: Hier du musst unbedingt mal das hier ausprobieren --> hier <--!!
+  updated_at: 2009-06-12 19:31:43
+  subject: Installationsparty
+  id: "8"
+  author_id: "828"
+messages_021: 
+  created_at: 2009-06-26 11:12:51
+  body: "Urspr\xC3\xBCngliche Nachricht von messagetest am 26.06.2009 11:12  \r\n  \r\n\
+    > > das"
+  updated_at: 2009-06-26 11:12:51
+  subject: "Fwd: Re: das"
+  id: "21"
+  author_id: "1264"
+messages_010: 
+  created_at: 2009-06-12 23:51:43
+  body: dasdasd
+  updated_at: 2009-06-12 23:51:43
+  subject: dasdasdasdsa
+  id: "10"
+  author_id: "828"
+messages_009: 
+  created_at: 2009-06-12 21:57:20
+  body: buuuuuh, kde...
+  updated_at: 2009-06-12 21:57:20
+  subject: buuuh
+  id: "9"
+  author_id: "5"
+messages_022: 
+  created_at: 2009-06-26 11:13:11
+  body: das
+  updated_at: 2009-06-26 11:13:11
+  subject: das
+  id: "22"
+  author_id: "828"
+messages_011: 
+  created_at: 2009-06-12 23:51:59
+  body: |-
+    > dasdasd
+    
+    adsdasda
+  updated_at: 2009-06-12 23:51:59
+  subject: "Re: dasdasdasdsa"
+  id: "11"
+  author_id: "828"
+messages_023: 
+  created_at: 2009-06-26 11:13:46
+  body: das
+  updated_at: 2009-06-26 11:13:46
+  subject: das
+  id: "23"
+  author_id: "1307"
+messages_012: 
+  created_at: 2009-06-12 23:52:18
+  body: "Urspr\xC3\xBCngliche Nachricht von lilla am 12.06.2009 23:51  \r\n  \r\n\
+    > > dasdasd\r\n\
+    > \r\n\
+    > adsdasda\r\n\
+    \r\n\
+    \r\n\
+    dasdasd"
+  updated_at: 2009-06-12 23:52:18
+  subject: "Fwd: Re: dasdasdasdsa"
+  id: "12"
+  author_id: "828"
+messages_001: 
+  created_at: 2009-05-27 19:18:12
+  body: test
+  updated_at: 2009-05-27 19:18:12
+  subject: test
+  id: "1"
+  author_id: "733"
+messages_024: 
+  created_at: 2009-06-26 11:23:04
+  body: "Hi Till ich habe nun auch alles was ich brauche f\xC3\xBCr den Messanger."
+  updated_at: 2009-06-26 11:23:04
+  subject: Messanger
+  id: "24"
+  author_id: "1264"
+messages_013: 
+  created_at: 2009-06-23 17:15:50
+  body: toll!
+  updated_at: 2009-06-23 17:15:50
+  subject: hmmm
+  id: "13"
+  author_id: "828"
+messages_002: 
+  created_at: 2009-05-28 11:26:33
+  body: Der messanger geht offiziel!
+  updated_at: 2009-05-28 11:26:33
+  subject: Testnachricht
+  id: "2"
+  author_id: "807"

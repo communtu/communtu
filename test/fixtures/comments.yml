@@ -1,11 +1,8 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
-one:
-  user_id: 1
-  temp_metapackage_id: 1
-  comment: MyText
-
-two:
-  user_id: 1
-  temp_metapackage_id: 1
-  comment: MyText
+--- 
+comments_001: 
+  comment: Das ist klasse!
+  created_at: 2009-03-15 10:10:19
+  updated_at: 2009-03-15 10:10:19
+  metapackage_id: "55643"
+  id: "2"
+  user_id: "77"

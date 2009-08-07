@@ -1,11 +1,289 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+--- 
+categories_020: 
+  name: System
+  created_at: 2008-04-16 16:35:27
+  description_tid: "68"
+  updated_at: 2009-07-27 18:46:16
+  id: "20"
+  parent_id: "1"
+  link: http://wiki.ubuntuusers.de/Kategorie/System
+  description: Programme zur Pflege des Sytems
+  name_tid: "67"
+  link_tid: "69"
+categories_009: 
+  name: Programmieren
+  created_at: 2008-04-16 16:35:27
+  description_tid: "35"
+  updated_at: 2009-07-27 18:38:04
+  id: "9"
+  parent_id: "1"
+  link: http://wiki.ubuntuusers.de/programmierung
+  description: Programme schreiben
+  name_tid: "34"
+  link_tid: "36"
+categories_021: 
+  name: Umstieg auf Ubuntu
+  created_at: 2008-04-23 15:30:35
+  description_tid: "71"
+  updated_at: 2009-07-27 18:46:36
+  id: "21"
+  parent_id: "1"
+  link: http://wiki.ubuntuusers.de/Grundlagen
+  description: Hilfe beim Umstieg
+  name_tid: "70"
+  link_tid: "72"
+categories_010: 
+  name: !binary |
+    QsO8cm8=
 
-one:
-  name: MyString
-  description: MyString
-  category_id: 1
-
-two:
-  name: MyString
-  description: MyString
-  category_id: 1
+  created_at: 2008-04-16 16:35:27
+  description_tid: "38"
+  updated_at: 2009-07-27 18:38:40
+  id: "10"
+  parent_id: "1"
+  link: http://wiki.ubuntuusers.de/B%C3%BCroanwendungen
+  description: "Programme, die zum B\xC3\xBCroalltag ben\xC3\xB6tigt werden"
+  name_tid: "37"
+  link_tid: "39"
+categories_022: 
+  name: Unterhaltungsmedien
+  created_at: 2008-04-23 18:09:29
+  description_tid: "74"
+  updated_at: 2009-07-27 18:47:36
+  id: "22"
+  parent_id: "1"
+  link: 
+  description: Musik/Filme abspielen/brennen/machen
+  name_tid: "73"
+  link_tid: 
+categories_011: 
+  name: Fremdsprachen
+  created_at: 2008-04-16 16:35:27
+  description_tid: "41"
+  updated_at: 2009-07-27 18:39:04
+  id: "11"
+  parent_id: "23"
+  link: http://wiki.ubuntuusers.de/Bildung_und_Wissenschaft#Geistes- und Sprachwissenschaften
+  description: Lernprogramme, Dictionarys und andere Software, die mit Sprachen zu tun hat
+  name_tid: "40"
+  link_tid: "42"
+categories_023: 
+  name: Bildung und Wissenschaft
+  created_at: 2008-07-02 17:18:40
+  description_tid: 
+  updated_at: 2009-07-27 18:48:28
+  id: "23"
+  parent_id: "1"
+  link: 
+  description: ""
+  name_tid: "75"
+  link_tid: 
+categories_012: 
+  name: Naturwissenschaften
+  created_at: 2008-04-16 16:35:27
+  description_tid: "44"
+  updated_at: 2009-07-27 18:40:57
+  id: "12"
+  parent_id: "23"
+  link: Naturwissenschaften
+  description: Physik, Chemie und Biologie
+  name_tid: "43"
+  link_tid: "45"
+categories_001: 
+  name: Root
+  created_at: 2008-04-16 16:35:26
+  description_tid: "13"
+  updated_at: 2009-07-27 18:32:26
+  id: "1"
+  parent_id: "0"
+  link: 
+  description: Root category
+  name_tid: "12"
+  link_tid: 
+categories_024: 
+  name: Internet
+  created_at: 2008-07-02 17:22:59
+  description_tid: "77"
+  updated_at: 2009-07-27 18:48:54
+  id: "24"
+  parent_id: "1"
+  link: http://wiki.ubuntuusers.de/Internetanwendungen
+  description: Alles rund ums Internet
+  name_tid: "76"
+  link_tid: "78"
+categories_013: 
+  name: Geisteswissenschaften
+  created_at: 2008-04-16 16:35:27
+  description_tid: "47"
+  updated_at: 2009-07-27 18:42:01
+  id: "13"
+  parent_id: "23"
+  link: http://wiki.ubuntuusers.de/Bildung_und_Wissenschaft#Geistes- und Sprachwissenschaften
+  description: "Software f\xC3\xBCr Dichter und Denker..."
+  name_tid: "46"
+  link_tid: "48"
+categories_002: 
+  name: Grafik/Design
+  created_at: 2008-04-16 16:35:26
+  description_tid: "15"
+  updated_at: 2009-07-27 18:33:46
+  id: "2"
+  parent_id: "1"
+  link: http://wiki.ubuntuusers.de/Grafik
+  description: Aktivitaeten rund um Grafik
+  name_tid: "14"
+  link_tid: "16"
+categories_025: 
+  name: Filesharing
+  created_at: 2008-07-02 17:58:21
+  description_tid: "80"
+  updated_at: 2009-07-27 18:52:56
+  id: "25"
+  parent_id: "24"
+  link: http://wiki.ubuntuusers.de/Internetanwendungen#Filesharing
+  description: hoch- und runterladen von Software
+  name_tid: "79"
+  link_tid: "81"
+categories_014: 
+  name: Spiele
+  created_at: 2008-04-16 16:35:27
+  description_tid: "50"
+  updated_at: 2009-07-27 18:42:30
+  id: "14"
+  parent_id: "1"
+  link: http://wiki.ubuntuusers.de/Spiele
+  description: "F\xC3\xBCr die Entspannung zwischendurch"
+  name_tid: "49"
+  link_tid: "51"
+categories_003: 
+  name: Audio
+  created_at: 2008-04-16 16:35:26
+  description_tid: "18"
+  updated_at: 2009-07-27 18:35:27
+  id: "3"
+  parent_id: "22"
+  link: 
+  description: Alles rund um Musik
+  name_tid: "17"
+  link_tid: 
+categories_026: 
+  name: Derivate
+  created_at: 2008-09-10 17:42:24
+  description_tid: "83"
+  updated_at: 2009-07-27 18:53:16
+  id: "26"
+  parent_id: "1"
+  link: http://wiki.ubuntu-forum.de/index.php/Ubuntu_und_Derivate
+  description: Ubuntu-Derivate
+  name_tid: "82"
+  link_tid: "84"
+categories_015: 
+  name: Webdesign
+  created_at: 2008-04-16 16:35:27
+  description_tid: "53"
+  updated_at: 2009-07-27 18:42:54
+  id: "15"
+  parent_id: "24"
+  link: http://www.formann.de/old/linux/webdesign/index.html
+  description: "Software, die f\xC3\xBCr die Erstellung einer Internetpr\xC3\xA4senz gebraucht wird"
+  name_tid: "52"
+  link_tid: "54"
+categories_004: 
+  name: Musik Hoeren
+  created_at: 2008-04-16 16:35:26
+  description_tid: "20"
+  updated_at: 2009-07-27 18:35:54
+  id: "4"
+  parent_id: "3"
+  link: http://wiki.ubuntuusers.de/Multimedia#Bearbeitung
+  description: Musik hoeren
+  name_tid: "19"
+  link_tid: "21"
+categories_016: 
+  name: Planen und Organisieren
+  created_at: 2008-04-16 16:35:27
+  description_tid: "56"
+  updated_at: 2009-07-27 18:44:04
+  id: "16"
+  parent_id: "10"
+  link: http://wiki.ubuntuusers.de/Projektmanagement
+  description: Projektmanagement? Verwaltung? Terminplanung? Hier sind sie richtig
+  name_tid: "55"
+  link_tid: "57"
+categories_005: 
+  name: Musik Machen
+  created_at: 2008-04-16 16:35:26
+  description_tid: "23"
+  updated_at: 2009-07-27 18:36:21
+  id: "5"
+  parent_id: "3"
+  link: http://wiki.ubuntuusers.de/Multimedia#Tonstudio
+  description: Musik machen
+  name_tid: "22"
+  link_tid: "24"
+categories_017: 
+  name: Kommunikation
+  created_at: 2008-04-16 16:35:27
+  description_tid: "59"
+  updated_at: 2009-07-27 18:44:29
+  id: "17"
+  parent_id: "24"
+  link: http://wiki.ubuntuusers.de/Kategorie/Kommunikation
+  description: Chatten, Telefonieren & Co
+  name_tid: "58"
+  link_tid: "60"
+categories_006: 
+  name: Film
+  created_at: 2008-04-16 16:35:26
+  description_tid: "26"
+  updated_at: 2009-07-27 18:36:45
+  id: "6"
+  parent_id: "22"
+  link: http://wiki.ubuntuusers.de/Multimedia#Bearbeitung
+  description: Alles rund um Filme
+  name_tid: "25"
+  link_tid: "27"
+categories_018: 
+  name: Barrierefreiheit
+  created_at: 2008-04-16 16:35:27
+  description_tid: "62"
+  updated_at: 2009-07-27 18:45:08
+  id: "18"
+  parent_id: "1"
+  link: http://wiki.ubuntuusers.de/Hilfsmittel
+  description: "Hilfsmittel f\xC3\xBCr Benutzer mit k\xC3\xB6rperlichen Einschr\xC3\xA4nkungen"
+  name_tid: "61"
+  link_tid: "63"
+categories_007: 
+  name: Filme Gucken
+  created_at: 2008-04-16 16:35:27
+  description_tid: "29"
+  updated_at: 2009-07-27 18:37:08
+  id: "7"
+  parent_id: "6"
+  link: http://wiki.ubuntuusers.de/Multimedia#Bearbeitung
+  description: Filme gucken
+  name_tid: "28"
+  link_tid: "30"
+categories_019: 
+  name: Brennen
+  created_at: 2008-04-16 16:35:27
+  description_tid: "65"
+  updated_at: 2009-07-27 18:45:50
+  id: "19"
+  parent_id: "22"
+  link: http://wiki.ubuntuusers.de/Brennprogramme
+  description: CD/DVD brennen
+  name_tid: "64"
+  link_tid: "66"
+categories_008: 
+  name: Filme Machen
+  created_at: 2008-04-16 16:35:27
+  description_tid: "32"
+  updated_at: 2009-07-27 18:37:32
+  id: "8"
+  parent_id: "6"
+  link: http://wiki.ubuntuusers.de/Multimedia#Bearbeitung
+  description: Filme machen
+  name_tid: "31"
+  link_tid: "33"
