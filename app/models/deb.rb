@@ -12,7 +12,7 @@ class Deb < ActiveRecord::Base
   COMMUNTU_REPO = "http://packages.communtu.de"
   COMMUNTU_KEY = "D66AFBC0"
   # command for uploading debs to repository
-  REPREPRO = "reprepro -v -b #{RAILS_ROOT} --outdir public/debs --confdir debs --logdir log --dbdir debs/db --listdir debs/list"
+  REPREPRO = "GNUPGHOME=/home/communtu/.gnupg reprepro -v -b #{RAILS_ROOT} --outdir public/debs --confdir debs --logdir log --dbdir debs/db --listdir debs/list"
 
   def codename
     Metapackage.codename(self.distribution,self.derivative,self.license_type,self.security_type)
