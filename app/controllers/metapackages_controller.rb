@@ -1,6 +1,7 @@
 class MetapackagesController < ApplicationController
   before_filter :login_required
   before_filter :is_anonymous, :only => :publish
+  before_filter :check_administrator_role, :flash => { :notice => I18n.t(:no_admin) }, :only => :reset
 
   def title
     t(:bundle)
@@ -8,16 +9,6 @@ class MetapackagesController < ApplicationController
 
   @@migrations = {}
     
-  # GET /metapackages
-  # GET /metapackages.xml
-  def index
-    @metapackages = Metapackage.find(:all)
-  
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @metapackages }
-    end
-  end
 
   # GET /metapackages/1
   # GET /metapackages/1.xml
@@ -49,6 +40,9 @@ class MetapackagesController < ApplicationController
   # GET /metapackages/1/edit
   def edit
     @metapackage = Metapackage.find(params[:id])
+    if !check_owner(@metapackage,current_user) then
+      return
+    end
     @categories  = Category.find(1)
     @backlink    = request.env['HTTP_REFERER']
     @conflicts   = {}
@@ -89,6 +83,9 @@ class MetapackagesController < ApplicationController
     error = false
     flash[:error] = ""
     @metapackage = Metapackage.find(params[:id])
+    if !check_owner(@metapackage,current_user) then
+      return
+    end
     @conflicts = @metapackage.internal_conflicts
     if !@conflicts.empty? then
         flash[:error] += t(:controller_metapackages_conflicts)
@@ -157,6 +154,9 @@ class MetapackagesController < ApplicationController
 
   def save
     @metapackage = Metapackage.find(params[:id])
+    if !check_owner(@metapackage,current_user) then
+      return
+    end
     if !@metapackage.internal_conflicts.empty?
       flash[:error] = t(:controller_metapackages_no_save)
     elsif !@metapackage.modified
@@ -175,6 +175,10 @@ class MetapackagesController < ApplicationController
   # DELETE /metapackages/1.xml
   def destroy
     metapackage  = Metapackage.find(params[:id])   
+    if !check_owner(metapackage,current_user) then
+      redirect_to "/home"
+      return
+    end
     if metapackage.is_published? then
       flash[:error] = t(:controller_metapackages_cannot_destroy)
       return  
@@ -189,6 +193,9 @@ class MetapackagesController < ApplicationController
   
   def publish
     package = Metapackage.find(params[:id]);
+    if !check_owner(package,current_user) then
+      return
+    end
     package.published = Metapackage.state[:published]
     package.modified = true
     package.save!
@@ -198,10 +205,16 @@ class MetapackagesController < ApplicationController
   
   def edit_packages
     @package = Metapackage.find(params[:id]);
+    if !check_owner(@package,current_user) then
+      return
+    end
     card_editor(@package.name,@package.base_packages,session,current_user)
   end
   
   def remove_package
+    if !check_owner(Metacontent.find(params[:package_id]).metapackage,current_user) then
+      return
+    end
     if Metacontent.delete(params[:package_id]).nil?
       flash[:error] = t(:controller_metapackages_11)
     end
@@ -211,6 +224,9 @@ class MetapackagesController < ApplicationController
   def edit_action
     action = params[:method]
     meta   = Metapackage.find(params[:id])
+    if !check_owner(meta,current_user) then
+      return
+    end
     if not meta.nil?
         if action == "edit"
             redirect_to metapackage_path(meta) + "/edit"
@@ -227,52 +243,17 @@ class MetapackagesController < ApplicationController
             redirect_to metapackage_path(meta)
           end
         elsif action == "delete"
-            if !meta.published
+            if !meta.is_published?
               meta.destroy
             end
-            redirect_to metapackages_path
+            redirect_to (user_path(current_user) + "/metapackages/0")
         else    
             redirect_to metapackage_path(meta)
         end
     end
   end
   
-  def action
-    action   = params[:method]
-    packages = params[:packages]
 
-    if action == "0"
-        packages.each do |key,value|
-            if value[:select] == "1"
-                Metapackage.destroy(key)
-            end
-        end
-        
-        redirect_to request.env['HTTP_REFERER']
-                    
-    elsif action == "1"
-
-        session[:packages] = packages
-        session[:backlink] = request.env['HTTP_REFERER']
-        redirect_to "/metapackage/migrate"
-        
-    elsif action == "2"
-        
-        packages.each do |key,value|
-            if value[:select] == "1"
-                meta = Metapackage.find(key)
-                if not meta.nil?
-                    meta.published = 1
-                    meta.save!
-                end
-            end
-        end
-        
-        redirect_to request.env['HTTP_REFERER']
-    end    
-    
-  end
-  
   def migrate
     @distributions = Distribution.find(:all)
   end
@@ -296,47 +277,6 @@ class MetapackagesController < ApplicationController
     end
   end
   
-  def changed
-    
-    render_string = ""
-    owned         = true
-    publish       = true
-    num           = 0
-        
-    packages = params[:packages]
-    packages.each do |key, value|
-    
-        package = Metapackage.find(key)
-        if value[:select] == "1"
-            
-            if not is_admin? and package.user != current_user
-                owned = false
-            end
-            
-            if package.is_published?
-                publish = false
-            end
-            
-            num += 1
-        
-        end
-   
-    end
-    
-    render_string += "<option>" + num.to_s + t(:controller_metapackages_12)
-    
-    if owned
-        render_string += "<option>---</option>"
-        render_string += t(:controller_metapackages_13)
-        render_string += t(:controller_metapackages_14)
-        if publish
-            render_string += t(:controller_metapackages_15)
-        end
-    end
-    
-    render :text => render_string
-    
-  end
   
   def add_comment
     @id = params[:id]
@@ -368,4 +308,19 @@ class MetapackagesController < ApplicationController
     flash[:notice] = t(:controller_metapackages_please_regenerate)
     redirect_to :action => :show, :id => params[:id]
   end
+
+  private
+
+  def check_owner(meta,user)
+    if meta.nil? then
+      flash[:error] = t(:controller_metapackages_bundle_not_found)
+      return false
+    end
+    ok = meta.user==user
+    if !ok then
+      flash[:error] = t(:controller_metapackages_not_allowed)
+    end
+    return ok
+  end
+
 end

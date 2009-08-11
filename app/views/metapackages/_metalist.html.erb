@@ -58,7 +58,7 @@
                 <% end %>
 	</td>
 	<td class="<%= css %>" valign="middle">
-		<% unless metapackage.is_published? %>
+		<% if !metapackage.is_published? and (metapackage.user_id == current_user.id or is_admin?) %>
 			<%= link_to (image_tag("edit-delete-small.png", :alt=>"",:title=>"", :border=>"0")), '/metapackages/' + metapackage.id.to_s, :method=>"delete"%>
 		<%end%>
 	</td>
