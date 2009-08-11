@@ -361,6 +361,10 @@ class MetapackagesController < ApplicationController
     @metapackage.deb_error = false
     @metapackage.modified = true
     @metapackage.save
+    Deb.find(:all,:conditions => ["metapackage_id = ? and generated = ?",@metapackage.id,false]).each do |d|
+      d.generated = true
+      d.save
+    end
     flash[:notice] = t(:controller_metapackages_please_regenerate)
     redirect_to :action => :show, :id => params[:id]
   end
