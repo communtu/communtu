@@ -66,6 +66,8 @@ de:
   controller_metapackages_no_renaming: Veröffentlichte Bündel können nicht umbenannt werden.
   controller_metapackages_no_save: Das Bündel enthält Konflikte und kann deshalb nicht als Metapaket gespeichert werden.
   controller_metapackages_not_changed: Das Bündel wurde schon als Metapaket erzeugt und hochgeladen.
+  controller_metapackages_reset: Bündel-Fehler manuell zurücksetzen (nach Behebung des Problems).
+  controller_metapackages_please_regenerate: Das Bündel wurde zurückgesetzt. Bitte die Version hochzählen und Metapaket neu erzeugen.
   controller_packages_1: Paket erzeugt.
   controller_packages_2: Paket aktualisiert.
   controller_passwords_1: "Ein Link zum Andern des Passworts wurde an deine Email-Adresse geschickt."

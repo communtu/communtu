@@ -354,4 +354,14 @@ class MetapackagesController < ApplicationController
     @metapackage = Metapackage.find(params[:id])
     @dependencies = @metapackage.structured_all_recursive_packages    
   end
+
+  def reset
+    @metapackage = Metapackage.find(params[:id])
+    @metapackage.debianizing = false
+    @metapackage.deb_error = false
+    @metapackage.modified = true
+    @metapackage.save
+    flash[:notice] = t(:controller_metapackages_please_regenerate)
+    redirect_to :action => :show, :id => params[:id]
+  end
 end

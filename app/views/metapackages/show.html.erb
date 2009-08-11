@@ -8,6 +8,9 @@
 <% if @metapackage.deb_error  %>
   <div class="flash" id="error"><%=t(:view_metapackages_show_deb_error)%>
   <%=show_debversion(@metapackage)%></div>
+  <% if is_admin? %>
+  <p><%= link_to(t(:controller_metapackages_reset),'reset/'+@metapackage.id.to_s) %>
+  <% end %>
 <% elsif @metapackage.debianizing %>
   <div class="flash" id="notice"><%=t(:controller_metapackages_debianizing)%>
   <%=show_debversion(@metapackage)%></div>
