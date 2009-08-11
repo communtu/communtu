@@ -379,6 +379,10 @@ msgstr "Cancel"
 msgid "Repository löschen"
 msgstr "delete repository"
 
+#: controller_metapackages_please_regenerate
+msgid "Das Bündel wurde zurückgesetzt. Bitte die Version hochzählen und Metapaket neu erzeugen."
+msgstr "The bundle has been reset. Please raise the version and re-create the meta-package."
+
 #: view_user_profiles_new_0
 msgid "Neues Nutzerprofil"
 msgstr "new profile"
@@ -390,6 +394,10 @@ msgstr "roles for"
 #: view_metapackages_new_4
 msgid "Standardmäßig installieren"
 msgstr "Install by default"
+
+#: controller_metapackages_not_allowed
+msgid "Nur der Eigentümer des Bündels darf diese Aktion ausführen."
+msgstr "Only the owner of the bundle is allowed to perform this action."
 
 #: controller_categories_0
 msgid "Kategorien"
@@ -549,13 +557,13 @@ msgstr "Install through metapackage. Please add the sources first."
 msgid "Programm-Bündel"
 msgstr "program-bundle"
 
-#: match_ubuntu
-msgid "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
-msgstr "Match Ubuntu to your personal needs"
-
 #: view_home_home_18
 msgid "Klicke auf "
 msgstr "Click on"
+
+#: match_ubuntu
+msgid "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
+msgstr "Match Ubuntu to your personal needs"
 
 #: view_home_beteiligung_1
 msgid "Anwenden der Plattform"
@@ -1551,6 +1559,10 @@ msgstr "Ubuntu distributions"
 msgid "Die E-Mail wurde an uns gesendet. Vielen Dank für Dein Feedback."
 msgstr "The e-mail has been sent to us. Many thanks for your feedback."
 
+#: controller_metapackages_bundle_not_found
+msgid "Bündel nicht gefunden."
+msgstr "Bundle not found."
+
 #: controller_debs_1
 msgid "Deb erzeugt."
 msgstr "Deb created."
@@ -2121,6 +2133,10 @@ msgstr "Your password has been restored."
 msgid "alles prüfen"
 msgstr "check everything"
 
+#: controller_metapackages_reset
+msgid "Bündel-Fehler manuell zurücksetzen (nach Behebung des Problems)."
+msgstr "Reset bundle error manually (after solving the problems)."
+
 #: view_admins_sync_all_2
 msgid "Repositories synchronisiert"
 msgstr "repositories synchronised"
@@ -2261,10 +2277,6 @@ msgstr "Natur, Geist und Technik - Verein zur Förderung der Allgemeinbildung e.
 msgid "Konnte Paket nicht aus Bündel entfernen."
 msgstr "Couldn't delete package from bundle."
 
-#: controller_metapackages_12
-msgid " Bündel ausgewählt</option> \n"
-msgstr " bundle selected </option> \n"
-
 #: view_messages_show_2
 msgid "erhalten am:"
 msgstr "Received on:"
@@ -2281,10 +2293,6 @@ msgstr "Repository-URL: "
 msgid "Übergeordnete Kategorie"
 msgstr "Superior category"
 
-#: controller_metapackages_13
-msgid "<option value='0'>Löschen</option>"
-msgstr "<option calue='0'>Delete</option>"
-
 #: helper_distributions_15
 msgid "Wikiseite bei Ubuntuusers"
 msgstr "Informational page at ubuntu.com"
@@ -2296,10 +2304,6 @@ msgstr "Reply"
 #: view_distributions_show_8
 msgid "Vor dem Löschen einer Distribution müssen alle Benutzer, die sie nutzen, ausgeloggt sein! Bist du sicher?"
 msgstr "Before a distribution can be deleted, every user must be logged out! Are you sure?"
-
-#: controller_metapackages_14
-msgid "<option value='1'>Migrieren</option>"
-msgstr "<option value='1'>Migrate</option>"
 
 #: helper_distributions_16
 msgid "free und aus den main Paketquellen"
@@ -2889,6 +2893,12 @@ msgstr "What is a bundle?"
 msgid "Benutzer aktiviert"
 msgstr "User activated"
 
+#~ msgid " Bündel ausgewählt</option> \n"
+#~ msgstr " bundle selected </option> \n"
+#~ msgid "<option value='0'>Löschen</option>"
+#~ msgstr "<option calue='0'>Delete</option>"
+#~ msgid "<option value='1'>Migrieren</option>"
+#~ msgstr "<option value='1'>Migrate</option>"
 #~ msgid "Neue Distribution "
 #~ msgstr "New distribution"
 #~ msgid "Sie haben neue Nachrichten in Ihrem Posteingang."

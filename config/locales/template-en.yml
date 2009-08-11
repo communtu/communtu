@@ -92,6 +92,8 @@ en:
   view_home_derivatives_17: http://en.wikipedia.org/wiki/Linux_Mint
   helper_distributions_6: delete repository
   view_rating_new_comment_cancel: Cancel
+  controller_metapackages_please_regenerate: The bundle has been reset. Please raise the version and re-create the meta-package.
+  controller_metapackages_not_allowed: Only the owner of the bundle is allowed to perform this action.
   controller_categories_0: Categories
   helper_distributions_20: non-free and from the community repositories
   view_roles_index_0: roles for
@@ -390,6 +392,7 @@ en:
   controller_distributions_0: Ubuntu distributions
   controller_home_1: The e-mail has been sent to us. Many thanks for your feedback.
   view_packages_edit_8: New link to a video
+  controller_metapackages_bundle_not_found: Bundle not found.
   view_user_profiles__installation_19: "Attention: after clicking, it will take a moment until the file is provided."
   controller_debs_1: Deb created.
   view_home_derivatives_26: " - with the slim Xfce as the graphical interface. Particularly suitable for older computers: 128 MB RAM and 1,5 GB free hard disk space are sufficiant. Should be installed from the CD to guarantee a slim installation. Post-installation can be done with Communtu."
@@ -410,10 +413,10 @@ en:
   bundle: bundle
   controller_home_3: This does not appear to be a list with Ubuntu-packages... <br />The packagelist must contain one packagename per line
   view_home_derivatives_28: " - with this, Ubuntu is going to be "
-  view_metapackages__package_list_1: "available for:"
   controller_home_4: A file with the package list (one package name per line) has to be given
-  view_users__sidebar_1: Administrate bundles
   view_home_home_20: " to create a new user or"
+  view_metapackages__package_list_1: "available for:"
+  view_users__sidebar_1: Administrate bundles
   view_home_derivatives_29: a computer to watch TV
   controller_home_5: We received your suggestion and we will inform you if imbibe the suggested repository and when we will imbibe it.
   debian_section: Debian section
@@ -544,6 +547,7 @@ en:
   view_home_home_4: More ...
   view_home_derivatives_55: " - Mediacenter."
   view_admins_sync_all_2: repositories synchronised
+  controller_metapackages_reset: Reset bundle error manually (after solving the problems).
   view_distributions_show_1: check everything
   model_mailer_4: Your password has been restored.
   view_home_home_5: "The menu on the left offers the following possibilities:"
@@ -581,15 +585,12 @@ en:
   helper_distributions_13: delete
   view_home_news_24: participate
   view_messages_show_0: "From:"
-  controller_metapackages_12: " bundle selected </option> \n"
   helper_distributions_15: Informational page at ubuntu.com
-  controller_metapackages_13: <option calue='0'>Delete</option>
   superior_category: Superior category
   repository_url: "Repository-URL: "
   sources: Sources
   view_messages_show_2: "Received on:"
   helper_distributions_16: free and from the main repositories
-  controller_metapackages_14: <option value='1'>Migrate</option>
   view_distributions_show_8: Before a distribution can be deleted, every user must be logged out! Are you sure?
   view_messages_show_3: Reply
   helper_distributions_17: free and from the community repositories
