@@ -566,7 +566,7 @@ msgstr ""
 msgid "How do I use Communtu?"
 msgstr ""
 #: lib_system_0
-msgid "In order to use this feature you have to be logged in. Logging in via \"Anonymous access\" is also possible."
+msgid "In order to use this feature you have to be logged in. Logging in via \"Guest session\" is also possible."
 msgstr ""
 #: controller_users_3
 msgid "You have been logged in as {{anonymous_user}} with the password {{anonymous_user}}. If applicable click on the username {{anonymous_user}} in the above-right corner to change the account into an permanent account, otherwise the account will be deleted after one day."
@@ -587,7 +587,7 @@ msgstr ""
 msgid "To start, choose <b>Installation</b> on the left side."
 msgstr ""
 #: controller_users_4
-msgid "An error occured with the anonymous use."
+msgid "An error occurred with the guest session."
 msgstr ""
 #: controller_accounts_2
 msgid "Could'nt find the activation code. Please try to create a new account."
@@ -857,7 +857,7 @@ msgstr ""
 msgid "\t   none"
 msgstr ""
 #: view_user_profiles__profile_data_1
-msgid "On this page you can prepare the post-installation with Communtu in four easy steps. If desired, you can choose the bundles in a detaild overview."
+msgid "On this page you can prepare the post-installation for your Ubuntu installation in four easy steps. If desired, you can choose the bundles in a detaild overview."
 msgstr ""
 #: view_rating_show_title_ratings_count
 msgid "(Based on {{votes}} rating(s))"
@@ -959,7 +959,7 @@ msgstr ""
 msgid "Either you try a again or you use the possibility via bank transfer"
 msgstr ""
 #: controller_application_0
-msgid "This function is not available for anonymous users."
+msgid "This function is not available for guests."
 msgstr ""
 #: view_sent__user_exists_0
 msgid "user found"
@@ -1262,7 +1262,7 @@ msgstr ""
 msgid "Please contact me at the following e-mail-address concerning the bugfixing."
 msgstr ""
 #: view_home_home_23
-msgid "use Communtu anonymously"
+msgid "use Communtu as a guest"
 msgstr ""
 #: new_packages
 msgid "Newly added packages: "
@@ -1310,7 +1310,7 @@ msgstr ""
 msgid "Failed debs"
 msgstr ""
 #: view_user_profiles__installation_0
-msgid "Communtu post-installation"
+msgid "Ubuntu post-installation"
 msgstr ""
 #: controller_profiles_0
 msgid "Installation of bundles"
@@ -1442,7 +1442,7 @@ msgstr ""
 msgid ". "
 msgstr ""
 #: controller_suggestion_8
-msgid "Communtu post-installation for users"
+msgid "Ubuntu post-installation for users"
 msgstr ""
 #: view_user_mailer_signup_notification_2
 msgid "\nGreetings\n\nthe Communtu-team\n\n  Further information about the project and your possibilities to use Communtu can be found at\n http://en.communtu.org/home/faq\n\n  Our anouncements and mailinglists can be found at:\nhttp://en.communtu.org/home/news"
@@ -2024,7 +2024,7 @@ msgstr ""
 msgid "of 5 stars"
 msgstr ""
 #: view_layouts_application_11
-msgid "Anonymous access"
+msgid "Guestsession"
 msgstr ""
 #: view_home_news_5
 msgid "This list is intended for general announcements from the Communtu team to the users. The frequency is a little higher than once a week. Posts will be collected in an"

@@ -191,14 +191,14 @@ en:
   view_derivatives_index_0: show derivatives
   view_roles_show_0: "Rolename:"
   view_home_about_4: How do I use Communtu?
-  lib_system_0: In order to use this feature you have to be logged in. Logging in via "Anonymous access" is also possible.
+  lib_system_0: In order to use this feature you have to be logged in. Logging in via "Guest session" is also possible.
   controller_users_3: You have been logged in as {{anonymous_user}} with the password {{anonymous_user}}. If applicable click on the username {{anonymous_user}} in the above-right corner to change the account into an permanent account, otherwise the account will be deleted after one day.
   controller_accounts_1: Your account has been activated. You can now log in.
   controller_admins_0: admninistration section
   distribution: Distribution
   register: Register
   view_home_about_5: To start, choose <b>Installation</b> on the left side.
-  controller_users_4: An error occured with the anonymous use.
+  controller_users_4: An error occurred with the guest session.
   controller_accounts_2: Could'nt find the activation code. Please try to create a new account.
   model_user_profile_tabz_0: Base data
   model_message_0: Please enter a subject
@@ -288,7 +288,7 @@ en:
   view_home_derivatives_3: http://wiki.ubuntuusers.de/Was_ist_Linux?#Was-sind-Derivate-einer-Distribution (German)
   view_home_new_repository_0: Suggest repository
   view_packages__deps_0: \t   none
-  view_user_profiles__profile_data_1: On this page you can prepare the post-installation with Communtu in four easy steps. If desired, you can choose the bundles in a detaild overview.
+  view_user_profiles__profile_data_1: On this page you can prepare the post-installation for your Ubuntu installation in four easy steps. If desired, you can choose the bundles in a detaild overview.
   view_rating_show_title_ratings_count: (Based on {{votes}} rating(s))
   view_home_faq_10: You go to "Administrate bundles" and let show you your bundles and then you click on the bundle you want to change. Every important information concerning this bundle is now shown. With a click on "Actions" you can edit the bundle or the package-list. If the bundle is not published, you can delete it or publish the bundle, if you like to do so.
   view_home_derivatives_4: " and many Ubuntu-users may ask themselves if they should use a derivative instead of Ubuntu. The answer is: normally the standard version of Ubuntu completely sufficiant because with Communtu it is quite easy to install a derivaitve. However, this is not always a wise decision."
@@ -324,7 +324,7 @@ en:
   view_debs_index_2: "  There are no failed deb-generations! Congratulations!"
   view_home_derivatives_7: can be chosen to be installed in the category "Derivatives".
   view_home_cancel_1: Either you try a again or you use the possibility via bank transfer
-  controller_application_0: This function is not available for anonymous users.
+  controller_application_0: This function is not available for guests.
   view_sent__user_exists_0: user found
   view_home_faq_14: To find a program, go to "Search programs". Enter the name of the program, you're looking for, into the search field. If you want to search only the programs click on "Programs only" and the libraries are not searched. Furthermore it is possible to choose a Debian-section where programs are preselected.
   view_debs_index_3: "Create every failed deb <b>Warning: only do this at admin.communtu.de!</b>"
@@ -428,7 +428,7 @@ en:
   view_home_mail_0: Notification in bugfixing
   kommentieren: Comment
   new_packages: "Newly added packages: "
-  view_home_home_23: use Communtu anonymously
+  view_home_home_23: use Communtu as a guest
   view_home_mail_1: Please contact me at the following e-mail-address concerning the bugfixing.
   view_users__sidebar_4: Ubuntu versions
   controller_metapackages_debianizing: The bundle is currently created as a metapackaged and uploaded. This could take a couple of minutes.
@@ -446,7 +446,7 @@ en:
   security_type: "Security type:"
   allgemeinbildung: Allgemeinbildung e.V.
   controller_profiles_0: Installation of bundles
-  view_user_profiles__installation_0: Communtu post-installation
+  view_user_profiles__installation_0: Ubuntu post-installation
   view_users__sidebar_8: Failed debs
   controller_suggestion_1: In order to install something, you first have to choose something. Don't forget to save!
   view_cart_update_1: Overwrite bundle, if it already exists?
@@ -492,7 +492,7 @@ en:
      You successfully registered yourselfe
     at http://en.communtu.org. You can now use every
     featrue of the platform.
-  controller_suggestion_8: Communtu post-installation for users
+  controller_suggestion_8: Ubuntu post-installation for users
   view_metapackages_finish_migrate_2: ". "
   view_roles_edit_1: rolename
   view_roles__role_0: delete role
@@ -708,7 +708,7 @@ en:
   model_package_7: couldn't determine URL for {{repo}}
   controller_passwords_6: Password changed.
   view_home_news_5: This list is intended for general announcements from the Communtu team to the users. The frequency is a little higher than once a week. Posts will be collected in an
-  view_layouts_application_11: Anonymous access
+  view_layouts_application_11: Guestsession
   view_rating_show_title_got_ratings: of 5 stars
   view_users_edit_3: "Username:"
   donation_receipt: Donation receipt can be issued.

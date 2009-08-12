@@ -762,8 +762,8 @@ msgid "Wie verwende ich Communtu?"
 msgstr "How do I use Communtu?"
 
 #: lib_system_0
-msgid "Du musst eingeloggt sein, um dieses Feature zu benutzen. \"Anonym nutzen\" geht auch."
-msgstr "In order to use this feature you have to be logged in. Logging in via \"Anonymous access\" is also possible."
+msgid "Du musst eingeloggt sein, um dieses Feature zu benutzen. \"Gastzugang\" geht auch."
+msgstr "In order to use this feature you have to be logged in. Logging in via \"Guest session\" is also possible."
 
 #: controller_users_3
 msgid "Du wurdest als Nutzer {{anonymous_user}} mit Kennwort {{anonymous_user}} eingeloggt. Bitte ggf. oben rechts auf Nutzer {{anonymous_user}} klicken und in ein dauerhaftes Nutzerkonto umwandeln; ansonsten wird das Konto nach einem Tag wieder gelöscht."
@@ -794,8 +794,8 @@ msgid "Url:"
 msgstr "Url:"
 
 #: controller_users_4
-msgid "Es gab ein Problem mit der anonymen Nutzung."
-msgstr "An error occured with the anonymous use."
+msgid "Es gab ein Problem mit dem Gastzugang."
+msgstr "An error occurred with the guest session."
 
 #: controller_accounts_2
 msgid "Aktivierungs-Code nicht gefunden. Bitte versuche, ein neues Benutzerkonto anzulegen."
@@ -910,7 +910,7 @@ msgid " - basiert auf E17. 2D-Effekte auch ohne schnelle Grafikkarte."
 msgstr " - based on E17. 2D-effects even without a fast graphic card."
 
 #: view_home_about_8
-msgid "Danach kannst du mit \"Speichern und feiner Auswählen\" noch einen detaillierteren Überblick über die installierten Bündel und Programme bekommen und die Auswahl auch noch verändern. Falls du dazu keine Lust oder Zeit hast, klicke einfach auf \"Speichern\". Dies führt dich zur Installations-Seite. Dort findest du einen Installationsknopf, mit dem die Communtu-Nachinstallation gestartet werden kann. Es dauert etwas, bis die Programme automatisch aus dem Internet geladen und installiert werden. Fertig ist der vielseitig einsetzbare Ubuntu-PC!"
+msgid "Danach kannst du mit \"Speichern und feiner Auswählen\" noch einen detaillierteren Überblick über die installierten Bündel und Programme bekommen und die Auswahl auch noch verändern. Falls du dazu keine Lust oder Zeit hast, klicke einfach auf \"Speichern\". Dies führt dich zur Installations-Seite. Dort findest du einen Installationsknopf, mit dem die Ubuntu-Nachinstallation gestartet werden kann. Es dauert etwas, bis die Programme automatisch aus dem Internet geladen und installiert werden. Fertig ist der vielseitig einsetzbare Ubuntu-PC!"
 msgstr "After a click on \"Save and choose packages\" you can get a detailed overview of the installed bundles and programs and the possibility to change the pre-made selections. In the case you don't have the time or energy to choose the packages in detail, just click on \"Save\". This leads you to the installation page. There you will find a button with which the installation process starts. This takes some time because the applications have to be downloaded from the internet and installed on your computer. When finished, you have a all-round Ubuntu-PC!"
 
 #: new_bundle
@@ -1150,8 +1150,8 @@ msgid "http://wiki.ubuntuusers.de/Was_ist_Linux?#Was-sind-Derivate-einer-Distrib
 msgstr "http://wiki.ubuntuusers.de/Was_ist_Linux?#Was-sind-Derivate-einer-Distribution (German)"
 
 #: view_user_profiles__profile_data_1
-msgid "Auf dieser Seite kannst du in vier einfachen Schritten deine Communtu-Nachinstallation auswählen - fertig.  Wenn gewünscht, ist aber auch eine detailliertere Auswahl möglich. "
-msgstr "On this page you can prepare the post-installation with Communtu in four easy steps. If desired, you can choose the bundles in a detaild overview."
+msgid "Auf dieser Seite kannst du in vier einfachen Schritten deine Ubuntu-Nachinstallation auswählen - fertig.  Wenn gewünscht, ist aber auch eine detailliertere Auswahl möglich. "
+msgstr "On this page you can prepare the post-installation for your Ubuntu installation in four easy steps. If desired, you can choose the bundles in a detaild overview."
 
 #: view_rating_show_title_ratings_count
 msgid "(Basierend auf {{votes}} Bewertung(en))"
@@ -1290,8 +1290,8 @@ msgid "Endweder versuchst Du es noch einmal oder Du nutzt die Möglichkeit per �
 msgstr "Either you try a again or you use the possibility via bank transfer"
 
 #: controller_application_0
-msgid "Diese Funktion ist für anonyme Nutzer nicht verfügbar."
-msgstr "This function is not available for anonymous users."
+msgid "Diese Funktion ist für Gäste nicht verfügbar."
+msgstr "This function is not available for guests."
 
 #: view_sent__user_exists_0
 msgid "User gefunden"
@@ -1700,8 +1700,8 @@ msgid "Bitte benachrichtigt mich unter folgender E-Mail über die Fehlerbehebung
 msgstr "Please contact me at the following e-mail-address concerning the bugfixing."
 
 #: view_home_home_23
-msgid "nutze Communtu anonym"
-msgstr "use Communtu anonymously"
+msgid "nutze Communtu als Gast"
+msgstr "use Communtu as a guest"
 
 #: new_packages
 msgid "Neu hinzugefügte Pakete: "
@@ -1764,8 +1764,8 @@ msgid "Fehlgeschlagene debs"
 msgstr "Failed debs"
 
 #: view_user_profiles__installation_0
-msgid "Communtu-Nachinstallation"
-msgstr "Communtu post-installation"
+msgid "Ubuntu-Nachinstallation"
+msgstr "Ubuntu post-installation"
 
 #: controller_profiles_0
 msgid "Installation von Bündeln"
@@ -1954,8 +1954,8 @@ msgid " migriert."
 msgstr ". "
 
 #: controller_suggestion_8
-msgid "Communtu-Nachinstallation fuer Benutzer "
-msgstr "Communtu post-installation for users"
+msgid "Ubuntu-Nachinstallation fuer Benutzer "
+msgstr "Ubuntu post-installation for users"
 
 #: view_user_mailer_signup_notification_2
 msgid ""
@@ -2766,8 +2766,8 @@ msgid "von 5 Sternen"
 msgstr "of 5 stars"
 
 #: view_layouts_application_11
-msgid "Anonym nutzen"
-msgstr "Anonymous access"
+msgid "Gastzugang"
+msgstr "Guestsession"
 
 #: view_home_news_5
 msgid "Diese Liste ist für allgemeine Ankündigungen aus den Communtu Team für die Nutzer gedacht.  Es wir hier ungefähr einmal die Woche eine E-Mail über den Verteiler geschickt.   Die Nachrichten werden in einem "
@@ -2893,6 +2893,10 @@ msgstr "What is a bundle?"
 msgid "Benutzer aktiviert"
 msgstr "User activated"
 
+#~ msgid "Es gab ein Problem mit der anonymen Nutzung."
+#~ msgstr "An error occured with the anonymous use."
+#~ msgid "Anonym nutzen"
+#~ msgstr "Anonymous access"
 #~ msgid " Bündel ausgewählt</option> \n"
 #~ msgstr " bundle selected </option> \n"
 #~ msgid "<option value='0'>Löschen</option>"

@@ -29,7 +29,7 @@ de:
   controller_accounts_6: "Es ist ein Fehler aufgetreten. Das Passwort wurde nicht geändert."
   controller_accounts_8: Dein altes Passwort war inkorrekt.
   controller_admins_0: Administratorbereich
-  controller_application_0: "Diese Funktion ist für anonyme Nutzer nicht verfügbar."
+  controller_application_0: "Diese Funktion ist für Gäste nicht verfügbar."
   controller_cart_2: "Folgende Pakete wurden nicht gefunden: {{message}}<br> Bitte suche die Repositories heraus, die die Pakete enthalten, und <a href=\"{{url}}\">schlage sie zur Aufnahme in Communtu vor.</a>"
   controller_categories_0: Kategorien
   controller_categories_2: Kategorie erzeugt.
@@ -97,7 +97,7 @@ de:
   controller_suggestion_2: "Quellen und Schluessel hinzufuegen fuer Benutzer "
   controller_suggestion_4: "Quellen und Schluessel hinzufuegen fuer Buendel "
   controller_suggestion_6: "Quellen und Schluessel hinzufuegen fuer Paket "
-  controller_suggestion_8: "Communtu-Nachinstallation fuer Benutzer "
+  controller_suggestion_8: "Ubuntu-Nachinstallation fuer Benutzer "
   controller_users_10: "Benutzer gelöscht"
   controller_users_11: "Es gab ein Problem mit der Löschung."
   controller_users_12: Benutzer aktiviert
@@ -105,7 +105,7 @@ de:
   controller_users_1: "Danke für die Registrierung bei Communtu! Du kannst dich jetzt anmelden."
   controller_users_2: Es gab ein Problem mit der Registrierung.
   controller_users_3: "Du wurdest als Nutzer {{anonymous_user}} mit Kennwort {{anonymous_user}} eingeloggt. Bitte ggf. oben rechts auf Nutzer {{anonymous_user}} klicken und in ein dauerhaftes Nutzerkonto umwandeln; ansonsten wird das Konto nach einem Tag wieder gelöscht."
-  controller_users_4: Es gab ein Problem mit der anonymen Nutzung.
+  controller_users_4: Es gab ein Problem mit dem Gastzugang.
   controller_users_5: Benutzerdaten aktualisiert
   controller_users_6: "Benutzerdaten übernommen und Benutzerkonto dauerhaft gemacht."
   controller_users_8: Benutzer deaktiviert
@@ -157,7 +157,7 @@ de:
   kommentieren: Kommentieren
   kontodaten: Konto 172 9375, Sparkasse Bremen, BLZ 290 501 01
   kurzname: Kurzname
-  lib_system_0: "Du musst eingeloggt sein, um dieses Feature zu benutzen. \"Anonym nutzen\" geht auch."
+  lib_system_0: "Du musst eingeloggt sein, um dieses Feature zu benutzen. \"Gastzugang\" geht auch."
   lib_system_1: "Du hast keine Berechtigung für diese Aktion."
   lib_system_2: http://www.communtu.de
   lib_utils_0: "System-Befehl schlug fehl: "
@@ -321,7 +321,7 @@ de:
     über die installierten Bündel und Programme bekommen und die Auswahl auch noch verändern. \
     Falls du dazu keine Lust oder Zeit hast, klicke einfach auf \"Speichern\". \
     Dies führt dich zur Installations-Seite. \
-    Dort findest du einen Installationsknopf, mit dem die Communtu-Nachinstallation gestartet werden \
+    Dort findest du einen Installationsknopf, mit dem die Ubuntu-Nachinstallation gestartet werden \
     kann. Es dauert etwas, bis die Programme automatisch aus dem Internet geladen und installiert werden. Fertig ist der vielseitig einsetzbare Ubuntu-PC!"
   view_home_about_9: "Wichtig: Man braucht schon eine schnelle Internet-Verbindung. Für Ubuntu-Nutzer, die noch ein Modem oder ähnliches \
     nutzen, planen wir die Möglichkeit, automatisch CDs und DVDs zu erstellen."
@@ -479,7 +479,7 @@ de:
   view_home_home_20: ", um einen neuen Benutzer anzulegen, oder "
   view_home_home_21: melde
   view_home_home_22: " dich an, oder "
-  view_home_home_23: nutze Communtu anonym
+  view_home_home_23: nutze Communtu als Gast
   view_home_home_24: Zum Impressum
   view_home_home_25: "Für Fragen zu Communtu haben wir \"Häufig gestellte Fragen\" zusammengestellt."
   view_home_home_2: Ubuntu-Linux
@@ -541,7 +541,7 @@ de:
   view_home_success_0: " Vielen Dank für die Spende"
   view_home_success_1: "Eine Spendenbescheinigung kann ausgestellt werden. Dazu schicke uns bitte eine E-Mail mit Deiner Adresse an: "
   view_layouts_application_0: Communtu, Ubuntu, Installation, Installationshilfe
-  view_layouts_application_11: Anonym nutzen
+  view_layouts_application_11: Gastzugang
   view_layouts_application_13: "Über Communtu"
   view_layouts_application_14: Feedback an Communtu
   view_layouts_application_15: "angemeldet als  "
@@ -694,7 +694,7 @@ de:
   view_user_profiles_help_3: "Wenn deine Version von Communtu nicht unterstützt wird, gibt es zwei Möglichkeiten:"
   view_user_profiles_help_4: du machst ein Upgrade auf eine neuere Version
   view_user_profiles_help_5: du erweiterst Communtu um deine Version
-  view_user_profiles__installation_0: Communtu-Nachinstallation
+  view_user_profiles__installation_0: Ubuntu-Nachinstallation
   view_user_profiles__installation_13: "(Bei einem Versionswechsel muss der erste Schritt erneut ausgeführt werden, da die Communtu Quellen durch das Upgrade deaktiviert wurden.):"
   view_user_profiles__installation_16: "Quellen und Schlüssel eintragen"
   view_user_profiles__installation_17: "Link einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer öffnen."
@@ -727,7 +727,7 @@ de:
   view_user_profiles__profile_data_14: " Freie Software (Quellen liegen offen und dürfen weiterentwickelt werden)"
   view_user_profiles__profile_data_15: " Unfreie Lizenzen zulassen (auch kostenlos, aber Quellen liegen nicht offen - sozusagen das Methadon für einen weichen Übergang zu Linux: "
   view_user_profiles__profile_data_17: "Speichern und feiner auswählen"
-  view_user_profiles__profile_data_1: "Auf dieser Seite kannst du in vier einfachen Schritten deine Communtu-Nachinstallation auswählen - fertig.  \
+  view_user_profiles__profile_data_1: "Auf dieser Seite kannst du in vier einfachen Schritten deine Ubuntu-Nachinstallation auswählen - fertig.  \
     Wenn gewünscht, ist aber auch eine detailliertere Auswahl möglich. "
   view_user_profiles__profile_data_2: "Achtung: zum Schluss unten auf einen der 'Speichern'-Knöpfe klicken!"
   view_user_profiles__profile_data_3: "Welche Aufgaben willst du mit deinem Computer erledigen? (um grob eine Auswahl zu treffen, Feineinstellungen später möglich)"
