@@ -8,7 +8,7 @@ en:
   view_home_about_10: How can I submit my experience with programs to the Communtu-system?
   view_home_faq_03: How do I install a bundle?
   view_home_beteiligung_11: We need someone who is responsible for the project's layout. This means to integrate every graphic and to take over the main responsibility for the CSS.
-  view_home_about_11: "Did you make good experience with programs? You can merge thematic programs to a bundle and add this to the system. To do so, you choose <b>new bundle</b> below of <b>bundle-editor</b> on the left side. Then you can add Ubuntu packages to the bundle and, after you have finished, click on the floppy-icon to save the bundle. The bundle needs a name, a description and a thematic classification so that other users can use it too. Just like folders and files the bundle can not only consist of Ubuntu packages but also of other bundles too. "
+  view_home_about_11: "Did you have good experience with the programs? You can merge thematic programs to a bundle and add this to the system. To do so, you choose <b>new bundle</b> below <b>bundle-editor</b> on the left side. Then you can add Ubuntu packages to the bundle. After you have finished, click on the floppy-icon to save the bundle. The bundle needs a name, a description and a thematic classification so that other users can use it too. Just like folders and files, the bundle can consist not only of Ubuntu packages but also of other bundles too. "
   view_metapackages_show_3: Back&nbsp;&nbsp;
   view_layouts_application_18: no new messages
   detailed_view: go to detailed view
@@ -85,7 +85,7 @@ en:
   view_home_derivatives_15: http://en.wikipedia.org/wiki/KDE
   controller_metapackages_8: With each update the version has to be increased<br>
   view_metapackages_show_modified: This bundle contains changes.
-  view_home_derivatives_16: " is Ubuntu with the KDE-Dekstop"
+  view_home_derivatives_16: " is Ubuntu with the KDE-Desktop"
   controller_metapackages_9: The description must not be empty<br>
   view_home_home_new_message_icon: to the inbox
   show: Show
@@ -98,7 +98,7 @@ en:
   helper_distributions_20: non-free and from the community repositories
   view_roles_index_0: roles for
   view_home_home_10: <b>Ubuntu-releases</b> Overview about the available Ubuntu-releases (distributions).
-  view_home_derivatives_18: " is a Ubuntu spin-off with its own user community which has dedicated itself to usability. Linux Mint is quite similar to Ubuntu but has more codecs, like to watch DVDs or listen to MP3s, pre-installed. Those codecs are available via Communtu, listet at \"Sound & Video\"."
+  view_home_derivatives_18: " is an Ubuntu spin-off with its own user community which has dedicated itself to usability. Linux Mint is quite similar to Ubuntu but has more codecs, like to watch DVDs or listen to MP3s, pre-installed. Those codecs are available via Communtu, listet at \"Sound & Video\"."
   view_metapackages_new_4: Install by default
   view_user_profiles_new_0: new profile
   helper_distributions_8: Show sources
@@ -119,11 +119,11 @@ en:
   view_home_home_13: <b>News</b> Reference to events about Communtu, the Communtu-blog ...
   view_user_profiles_new_3: level of expert
   controller_sent_1: user does not exist
-  view_home_home_14: "There are also "
+  view_home_home_14: "There is also "
   controller_cart_2: "The following packages couldn't be found: {{message}}<br> Please find the repositories which contain these packages and <a href=\"{{url}}\">make a suggestion to add the repository to Communtu.</a>"
   controller_sent_2: message successfully send
   view_categories_edit_3: Link for further information
-  view_home_home_15: more detailled information
+  view_home_home_15: detailled information
   view_metapackages__metalist_10: "Rating "
   view_home_icons_10: program
   view_home_home_16: " about this project and its participants in the "
@@ -166,14 +166,14 @@ en:
   migrate_repository: migrate repository
   view_rating_rating_rate: out of 5 stars awarded
   blog: The Communtu blog
-  view_user_profiles__profile_data_12: " Allow every source (slightly unsecure but with even more programs/better comfort. Attention: programs installed from foreign sources can do harm to your computer!):"
+  view_user_profiles__profile_data_12: " Allow every source (slightly insecure but with even more programs/better comfort. Attention: programs installed from foreign sources can do harm to your computer!):"
   view_home_about_1: Why Communtu?
   donation_purpose: "Purpose: Communtu"
   view_home_icons_19: " external link"
   view_repositories_show_6: "        OpenSource"
   view_home_beteiligung_7: We need feedback. Our desire is, that Communtu will be used by everyone and for this we need feedback. You found an error in the system? Is there something that is incomprehensible to you? You think, you could do something better? You have some suggestions for us? Feedback is accepted under
   view_user_profiles__installation_30: "Advice: please don't rename the .deb-file."
-  view_user_profiles__profile_data_13: Here you can choose which licences you want to accept
+  view_user_profiles__profile_data_13: Here you can choose which licenses you want to accept
   no_save_database: "The following packages couldn't be saved in the database:"
   view_home_about_2: Ubuntu is a linux-based distribution which makes Linux easier to use and more comprehendible. After the installation of Ubuntu via a CD or DVD your computer is already equipped to surf the internet, to do some word processing and to do much more.
   view_categories_index_0: Category-overview
@@ -183,11 +183,11 @@ en:
   view_home_beteiligung_8: co-operation
   view_user_profiles__installation_31: The Communtu-metapackages can be shown, installed and uninstalled using {{synaptic}} (go to "System" --> "Administration"). Updates of the programs inside the bundle are installed via the Ubuntu-updatemanager automatically.
   view_user_profiles__profile_data_14: " Free software (sources are open and further development is allowed)"
-  view_home_about_3: There are many applications which have to be post-installed, e. g. programs for audio, video and graphics, in order to make the computer really usable  Ubuntu. Communtu helps to make the post-installation more easier and moreover has special sections for beginners and users comming from Windows.
+  view_home_about_3: There are many applications which have to be post-installed, e. g. programs for audio, video and graphics, in order to really make the computer able to use Ubuntu. Communtu helps to make the post-installation easier, and furthermore, has special sections for beginners and users coming from Windows.
   controller_users_2: An error occured while registering.
   controller_derivatives_2: Derivative updated.
   view_home_beteiligung_9: "For the development of the project we currently need support with these two jobs:"
-  view_user_profiles__profile_data_15: " Allow unfree licences (free too, but the sources are closed - quasi the methadone for a fluent changeover to Linux)"
+  view_user_profiles__profile_data_15: " Allow commercial licenses (free too, but the sources are closed - quasi the methadone for a fluent changeover to Linux)"
   view_derivatives_index_0: show derivatives
   view_roles_show_0: "Rolename:"
   view_home_about_4: How do I use Communtu?
@@ -207,7 +207,7 @@ en:
   videos: "Videos:"
   install_package_sources_first: Install package. If necessary please add the sources beforehand.
   view_home_derivatives_40: " - for portable internet devices."
-  view_home_about_6: "  (This appeas not until"
+  view_home_about_6: "  (This does not appear until"
   lib_system_1: You are not privileged to do this.
   model_user_profile_tabz_1: Detailed choice
   passwd: Password
@@ -215,7 +215,7 @@ en:
   controller_metapackages_not_changed: This bundle is already created as a metapackage and uploaded.
   view_home_derivatives_41: Ubuntu ultimate - Ubuntu with many desktop-designs and applications.
   view_user_profiles__profile_data_17: Save and choose packages
-  view_home_about_7: .) There you can edit your settings. First, you have to specify the basic data, like which Ubuntu version you want to install on your computer. Additionally you have to specify if you want to use free or non-free software. Finally you have to indicate for which purposes you want to use your computer.
+  view_home_about_7: .) There you can edit your settings. First, you have to specify the basic data, such as which Ubuntu version you want to install on your computer. Additionally, you must specify if you want to use free or commercial software. Finally you must indicate for which purposes you want to use your computer.
   lib_system_2: http://www.communtu.de
   controller_users_5: user data updated
   controller_accounts_4: Your account has already been activated. You can now log in.
@@ -228,7 +228,7 @@ en:
   choose_parent: Choose a Parent!
   view_cart_new_from_list_2: A list of all programs installed on your computer
   view_home_derivatives_43: " - based on E17. 2D-effects even without a fast graphic card."
-  view_home_about_8: After a click on "Save and choose packages" you can get a detailed overview of the installed bundles and programs and the possibility to change the pre-made selections. In the case you don't have the time or energy to choose the packages in detail, just click on "Save". This leads you to the installation page. There you will find a button with which the installation process starts. This takes some time because the applications have to be downloaded from the internet and installed on your computer. When finished, you have a all-round Ubuntu-PC!
+  view_home_about_8: After clicking on "Save and choose packages" you can get a detailed overview of the installed bundles and programs and the possibility to change the pre-made selections. In the case you don't have the time or energy to choose the packages in detail, just click on "Save". This leads you to the installation page. There you will find a button which starts the installation process. This takes some time because the applications have to be downloaded from the internet and installed on your computer. When finished, you have an all-round Ubuntu-PC!
   new_bundle: New bundle
   view_cart_new_from_list_3: " can be found with the above-mentioned command. (For this, the package {{debfoster}} has to be install. The created list only contains a minimal list of (meta-)packages which are necessary to rebuild your installation.)"
   view_home_derivatives_44: " - minimalist and fast version of Ubuntu for older PCs."
@@ -288,10 +288,10 @@ en:
   view_home_derivatives_3: http://wiki.ubuntuusers.de/Was_ist_Linux?#Was-sind-Derivate-einer-Distribution (German)
   view_home_new_repository_0: Suggest repository
   view_packages__deps_0: \t   none
-  view_user_profiles__profile_data_1: On this page you can prepare the post-installation for your Ubuntu installation in four easy steps. If desired, you can choose the bundles in a detaild overview.
+  view_user_profiles__profile_data_1: On this page you can prepare the post-installation for your Ubuntu installation in four easy steps. If desired, you can choose the bundles in a detailed overview.
   view_rating_show_title_ratings_count: (Based on {{votes}} rating(s))
-  view_home_faq_10: You go to "Administrate bundles" and let show you your bundles and then you click on the bundle you want to change. Every important information concerning this bundle is now shown. With a click on "Actions" you can edit the bundle or the package-list. If the bundle is not published, you can delete it or publish the bundle, if you like to do so.
-  view_home_derivatives_4: " and many Ubuntu-users may ask themselves if they should use a derivative instead of Ubuntu. The answer is: normally the standard version of Ubuntu completely sufficiant because with Communtu it is quite easy to install a derivaitve. However, this is not always a wise decision."
+  view_home_faq_10: Click on "Administrate bundles", which shows you your bundles, and then you click on the bundle you want to change. All important information concerning this bundle is now shown. With a click on "Actions" you can edit the bundle or the package-list. If the bundle is not published, you can delete it or publish the bundle, if you would like to do so.
+  view_home_derivatives_4: " and many Ubuntu-users may ask themselves if they should use a derivative instead of Ubuntu. The answer is: normally the standard version of Ubuntu is completely sufficiant because with Communtu it is quite easy to install a derivative. However, this is not always a wise decision."
   view_home_new_repository_1: You're missing some sources? You can suggest a repository to us.
   view_packages__deps_1: "          Only for "
   view_user_profiles__profile_data_2: "Attention: when finished, don't forget to click on one of the \"Save\"-buttons!"
@@ -304,11 +304,11 @@ en:
   view_debs_index_0: Failed or running deb-generation
   view_home_derivatives_5: "Each derivative under "
   view_home_new_repository_2: Link to the repository
-  view_user_profiles__profile_data_3: What tasks do you want to do with your computer? (only a rough choice, can be chosen in detail later)
+  view_user_profiles__profile_data_3: What tasks do you want to do with your computer? (only a rough choice; they can be chosen in detail later)
   model_user_meta_tabz_1: All published bundles
   add_sources: Add sources
   view_packages_show_21: "Is used in this packages:"
-  view_home_faq_12: On the left side of the webpage is the bundle-editor. There you have to click on "Bundle from package-list". A new page is loaded with instructions how to upload your package-list to Communtu.
+  view_home_faq_12: On the left side of the webpage is the bundle-editor. There you have to click on "Bundle from package-list". A new page is loaded with instructions on how to upload your package-list to Communtu.
   view_debs_index_1: Go back to the Communtu-menu
   licence: "Licence:"
   view_home_derivatives_6: detailed selection
@@ -319,21 +319,21 @@ en:
   view_user_profiles__profile_data_4: further information
   category_with_colon: "Category:"
   model_user_meta_tabz_2: Ubuntu packages
-  view_home_faq_13: How do i find programes?
+  view_home_faq_13: How do I find programs?
   view_sent_index_5: You haven't sent any messages yet.
   view_debs_index_2: "  There are no failed deb-generations! Congratulations!"
   view_home_derivatives_7: can be chosen to be installed in the category "Derivatives".
   view_home_cancel_1: Either you try a again or you use the possibility via bank transfer
   controller_application_0: This function is not available for guests.
   view_sent__user_exists_0: user found
-  view_home_faq_14: To find a program, go to "Search programs". Enter the name of the program, you're looking for, into the search field. If you want to search only the programs click on "Programs only" and the libraries are not searched. Furthermore it is possible to choose a Debian-section where programs are preselected.
+  view_home_faq_14: To find a program, go to "Search programs". Enter the name of the program you are looking for into the search field. If you want to search only the programs click on "Programs only" and the libraries are not searched. Furthermore it is possible to choose a Debian-section where programs are preselected.
   view_debs_index_3: "Create every failed deb <b>Warning: only do this at admin.communtu.de!</b>"
   view_home_derivatives_8: You can also take a look of which packages a derivative consists.
-  view_user_profiles__profile_data_6: "Please select a Ubuntu version. "
+  view_user_profiles__profile_data_6: "Please select an Ubuntu version. "
   view_home_faq_15: How can I install a single program?
   view_home_success_0: " Thank you for your donation"
   view_user_profiles__profile_data_7: How do I find out the version which is in use?
-  view_home_faq_16: To install a program, go to "Search programs" and you get a list of all programs. When you found the program, you were looking for, you just have to click on the installation-icon. It could be that you have to add the repository of that program first. To do so, click on "Add sources" and Communtu will add the sources to your system.
+  view_home_faq_16: To install a program, go to "Search programs" and you get a list of all programs. When you find the program you are looking for, you just have to click on the installation-icon. It could be that you have to add the repository of that program first. To do so, click on "Add sources" and Communtu will add the sources to your system.
   view_metapackages_show_deb_error: While creating metapackages, an error occurred. We'll solve that problem as fast as possible.
   view_debs_index_5: "Create  "
   view_home_derivatives_9: "With Communtu installable derivatives:"
@@ -351,11 +351,11 @@ en:
   view_users_new_11: your last name
   view_packages_edit_0: Edit package
   view_repositories_index_0: "repositories "
-  view_home_faq_18: If you haven't found a program via "Search programs", chances are high we don't have the corresponding repositories, where the program is in, in Communtu. You can suggest the repository, where the program is in, to us via "Suggest repository" in the bundle-editor so we can implement the repository.
+  view_home_faq_18: If you haven't found a program via "Search programs", chances are high Communtu doesn't have the corresponding repositories containing that program. You can suggest the repository, where the program is in, to us via "Suggest repository" in the bundle-editor so we can implement the repository.
   view_users_new_12: (optional)
   view_user_profiles__profile_data_9: Here you can select how secure or comfortable you sources should be
   view_user_profiles__installation_13: "(When chaning the version, the first step has to be done twice, because the Communtu-sources will be deactivated by the upgrade.):"
-  view_home_derivatives_20: \tAutomatix was a programm to assist the installation of software and enjoyed great popularity (Automatix was even recommended by the New York Times). However, Automatix did not meet the Ubuntu-standards and the delevopment had been stopped.
+  view_home_derivatives_20: \tAutomatix was a programm to assist the installation of software and enjoyed great popularity (Automatix was even recommended by the New York Times). However, Automatix did not meet the Ubuntu-standards and the development has been stopped.
   view_home_faq_19: What are sources or repositories?
   username: Username
   view_packages_edit_2: Icon
@@ -364,7 +364,7 @@ en:
   view_packages_new_0: New package
   native: native
   view_packages_edit_3: "\\t &nbsp;&nbsp;New icon: "
-  view_home_derivatives_22: " - leaned to be like BeOS, ZevenOS focuses on speed and compatibility for old computers with a simple interface. CPU with at least 200 MHz, 128 MB RAM (for operating, while installing 192 MB RAM are required), at least 2 GB free hard disk space (recommended are 4 GB free hard disk space or more), 16 MB graphic card (recommended: Intel GMA 9xx)."
+  view_home_derivatives_22: " - in some ways like BeOS, ZevenOS focuses on speed and compatibility for old computers with a simple interface. CPU with at least 200 MHz, 128 MB RAM (for operating, while installing 192 MB RAM are required), at least 2 GB free hard disk space (recommended are 4 GB free hard disk space or more), 16 MB graphic card (recommended: Intel GMA 9xx)."
   view_sent_show_2: "Date:"
   news: News
   model_package_need_not_update: "{{url}} has not changed"
@@ -395,7 +395,7 @@ en:
   controller_metapackages_bundle_not_found: Bundle not found.
   view_user_profiles__installation_19: "Attention: after clicking, it will take a moment until the file is provided."
   controller_debs_1: Deb created.
-  view_home_derivatives_26: " - with the slim Xfce as the graphical interface. Particularly suitable for older computers: 128 MB RAM and 1,5 GB free hard disk space are sufficiant. Should be installed from the CD to guarantee a slim installation. Post-installation can be done with Communtu."
+  view_home_derivatives_26: " - with the slim Xfce as the graphical interface. Particularly suitable for older computers: 128 MB RAM and 1,5 GB free hard disk space are sufficient. Should be installed from the CD to guarantee a slim installation. Post-installation can be done with Communtu."
   controller_distributions_1: Distribution created.
   view_packages_new_6: Videos
   feedback: feedback
@@ -536,7 +536,7 @@ en:
   view_home_derivatives_53: " - allows a faster installation, as only the latest packages are downloaded."
   view_home_auth_error_1: The file you sent to Communtu couldn't be authenticated. Please try again with logging in again or filling in the form again.
   model_mailer_2: Your account has been activated.
-  view_home_home_3: " stands for a human Linux that is easy to use. In order to use Ubuntu effectively, a whole bunch of programs have to be installed. It is not always easy to keep an overview. With Communtu you only specify for which purposes you want to use your computer and Communtu suggests a bunch of programs to you which will be installed automatically."
+  view_home_home_3: " stands for a human Linux that is easy to use. In order to use Ubuntu effectively, an excessive amount of programs have to be installed. It is not always easy to keep an overview. With Communtu you just specify for which purposes you want to use your computer and Communtu suggests several programs to you which will be installed automatically."
   view_user_profiles__sources_1: The soon be installed programs and packages are shown and ordered by the appropriate sources so you can see why some sources will be added.
   view_admins_sync_all_1: "Error: couldn't synchronise repositories"
   view_distributions_show_0: "Repositories:"
@@ -569,7 +569,7 @@ en:
   description: Description
   helper_distributions_10: " and edit"
   view_admins_show_0: Here should be an introduction to the admin area
-  view_home_home_7: <b>Administrate bundles</b> Did you make good experiences with programs? Bundle them thematically or take a look at existing bundles.
+  view_home_home_7: <b>Administrate bundles</b> Did you have good experiences with the programs? Bundle them thematically or take a look at existing bundles.
   view_admins_sync_package_3: "Repository: "
   view_distributions_show_4: "add repository "
   controller_repositories_2: Repository updated.
@@ -600,14 +600,14 @@ en:
   helper_distributions_18: free and from third party repositories
   view_mailbox_show_1: From
   helper_distributions_19: non-free and from the main repositories
-  view_home_faq_20: Programs within Ubuntu are provided via packages, which are located in the package-sources or repositories. Further information about <a href="https://help.ubuntu.com/community/Repositories" target="_blank">Repositorys</a>.
+  view_home_faq_20: Programs within Ubuntu are provided via packages, which are located in the package-sources or repositories. Further information about <a href="https://help.ubuntu.com/community/Repositories" target="_blank">Repositories</a>.
   view_user_profiles__profile_rating_0: Detailed choice of the programs and bundles that shall be installed
   view_home_faq_21: How do I find the Communtu sources in my system?
   view_mailbox_show_3: received
   view_metapackages_edit_gpl: I accept to publish the bundle information under the <a href="http://www.gnu.de/documents/gpl.de.html">GNU General public license</a> (Version 2.0 or higher).
   view_user_profiles__profile_rating_1: "Here you can choose the use of your computer in detail. \n\
     With a click on the "
-  view_home_faq_22: To find the Communtu-sources in a Gnome-based system, you navigate to "System" -> "Administration" -> "Software Sources" -> "Third-Party Software". To find the Communtu-sources in a KDE-based system, you open the K-menu and then navigate to "Programs" -> "System" -> "Administration" -> Software Sources" -> "Third-Party Software". Here you deactivate the Communtu-sources. When deactivating the Communtu-sources, the installed programs won't be uninstalled nor the updates are held back. Updates are still obtained from the official sources, which may be added by Communtu.
+  view_home_faq_22: To find the Communtu-sources in a Gnome-based system, you navigate to "System" -> "Administration" -> "Software Sources" -> "Third-Party Software". To find the Communtu-sources in a KDE-based system, you open the K-menu and then navigate to "Programs" -> "System" -> "Administration" -> Software Sources" -> "Third-Party Software". Here you deactivate the Communtu-sources. When deactivating the Communtu-sources, the installed programs won't be uninstalled nor are the updates. Updates are still obtained from the official sources, which may be added by Communtu.
   view_user_profiles__profile_rating_2: " you can \n\
     open or close a section to make a detailed selection."
   view_home_faq_23: How do I delete the metapackages?
@@ -644,7 +644,7 @@ en:
   view_user_profiles__installation_24: installation via metapackages
   view_users__mailbox_list_3: "sent messages "
   Kommentar: "Comment:"
-  view_home_derivatives_32: " is a Ubuntu derivative consisting only of free software. Suitable only for experienced users. Should only be installed with the Gobuntu-CD so that only free software is provided. A further installation with Communtu is possible, but \"Free software\" should be selected in the user profile. This derivative is available in Ubuntu 8.04 and development is currently discontinued."
+  view_home_derivatives_32: " is an Ubuntu derivative consisting only of free software. Suitable only for experienced users. Should only be installed with the Gobuntu-CD so that only free software is provided. A further installation with Communtu is possible, but \"Free software\" should be selected in the user profile. This derivative is available in Ubuntu 8.04 and development is currently discontinued."
   save: save
   view_layouts_application_3: Ubuntu logo
   view_packages_show_9: "/5 stars&nbsp;&nbsp; "

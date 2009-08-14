@@ -38,7 +38,7 @@ msgstr ""
 msgid "We need someone who is responsible for the project's layout. This means to integrate every graphic and to take over the main responsibility for the CSS."
 msgstr ""
 #: view_home_about_11
-msgid "Did you make good experience with programs? You can merge thematic programs to a bundle and add this to the system. To do so, you choose <b>new bundle</b> below of <b>bundle-editor</b> on the left side. Then you can add Ubuntu packages to the bundle and, after you have finished, click on the floppy-icon to save the bundle. The bundle needs a name, a description and a thematic classification so that other users can use it too. Just like folders and files the bundle can not only consist of Ubuntu packages but also of other bundles too. "
+msgid "Did you have good experience with the programs? You can merge thematic programs to a bundle and add this to the system. To do so, you choose <b>new bundle</b> below <b>bundle-editor</b> on the left side. Then you can add Ubuntu packages to the bundle. After you have finished, click on the floppy-icon to save the bundle. The bundle needs a name, a description and a thematic classification so that other users can use it too. Just like folders and files, the bundle can consist not only of Ubuntu packages but also of other bundles too. "
 msgstr ""
 #: view_metapackages_show_3
 msgid "Back&nbsp;&nbsp;"
@@ -269,7 +269,7 @@ msgstr ""
 msgid "This bundle contains changes."
 msgstr ""
 #: view_home_derivatives_16
-msgid " is Ubuntu with the KDE-Dekstop"
+msgid " is Ubuntu with the KDE-Desktop"
 msgstr ""
 #: controller_metapackages_9
 msgid "The description must not be empty<br>"
@@ -308,7 +308,7 @@ msgstr ""
 msgid "<b>Ubuntu-releases</b> Overview about the available Ubuntu-releases (distributions)."
 msgstr ""
 #: view_home_derivatives_18
-msgid " is a Ubuntu spin-off with its own user community which has dedicated itself to usability. Linux Mint is quite similar to Ubuntu but has more codecs, like to watch DVDs or listen to MP3s, pre-installed. Those codecs are available via Communtu, listet at \"Sound & Video\"."
+msgid " is an Ubuntu spin-off with its own user community which has dedicated itself to usability. Linux Mint is quite similar to Ubuntu but has more codecs, like to watch DVDs or listen to MP3s, pre-installed. Those codecs are available via Communtu, listet at \"Sound & Video\"."
 msgstr ""
 #: view_metapackages_new_4
 msgid "Install by default"
@@ -371,7 +371,7 @@ msgstr ""
 msgid "user does not exist"
 msgstr ""
 #: view_home_home_14
-msgid "There are also "
+msgid "There is also "
 msgstr ""
 #: controller_cart_2
 msgid "The following packages couldn't be found: {{message}}<br> Please find the repositories which contain these packages and <a href=\"{{url}}\">make a suggestion to add the repository to Communtu.</a>"
@@ -383,7 +383,7 @@ msgstr ""
 msgid "Link for further information"
 msgstr ""
 #: view_home_home_15
-msgid "more detailled information"
+msgid "detailled information"
 msgstr ""
 #: view_metapackages__metalist_10
 msgid "Rating "
@@ -491,7 +491,7 @@ msgstr ""
 msgid "The Communtu blog"
 msgstr ""
 #: view_user_profiles__profile_data_12
-msgid " Allow every source (slightly unsecure but with even more programs/better comfort. Attention: programs installed from foreign sources can do harm to your computer!):"
+msgid " Allow every source (slightly insecure but with even more programs/better comfort. Attention: programs installed from foreign sources can do harm to your computer!):"
 msgstr ""
 #: view_home_about_1
 msgid "Why Communtu?"
@@ -512,7 +512,7 @@ msgstr ""
 msgid "Advice: please don't rename the .deb-file."
 msgstr ""
 #: view_user_profiles__profile_data_13
-msgid "Here you can choose which licences you want to accept"
+msgid "Here you can choose which licenses you want to accept"
 msgstr ""
 #: no_save_database
 msgid "The following packages couldn't be saved in the database:"
@@ -542,7 +542,7 @@ msgstr ""
 msgid " Free software (sources are open and further development is allowed)"
 msgstr ""
 #: view_home_about_3
-msgid "There are many applications which have to be post-installed, e. g. programs for audio, video and graphics, in order to make the computer really usable  Ubuntu. Communtu helps to make the post-installation more easier and moreover has special sections for beginners and users comming from Windows."
+msgid "There are many applications which have to be post-installed, e. g. programs for audio, video and graphics, in order to really make the computer able to use Ubuntu. Communtu helps to make the post-installation easier, and furthermore, has special sections for beginners and users coming from Windows."
 msgstr ""
 #: controller_users_2
 msgid "An error occured while registering."
@@ -554,7 +554,7 @@ msgstr ""
 msgid "For the development of the project we currently need support with these two jobs:"
 msgstr ""
 #: view_user_profiles__profile_data_15
-msgid " Allow unfree licences (free too, but the sources are closed - quasi the methadone for a fluent changeover to Linux)"
+msgid " Allow commercial licenses (free too, but the sources are closed - quasi the methadone for a fluent changeover to Linux)"
 msgstr ""
 #: view_derivatives_index_0
 msgid "show derivatives"
@@ -614,7 +614,7 @@ msgstr ""
 msgid " - for portable internet devices."
 msgstr ""
 #: view_home_about_6
-msgid "  (This appeas not until"
+msgid "  (This does not appear until"
 msgstr ""
 #: lib_system_1
 msgid "You are not privileged to do this."
@@ -638,7 +638,7 @@ msgstr ""
 msgid "Save and choose packages"
 msgstr ""
 #: view_home_about_7
-msgid ".) There you can edit your settings. First, you have to specify the basic data, like which Ubuntu version you want to install on your computer. Additionally you have to specify if you want to use free or non-free software. Finally you have to indicate for which purposes you want to use your computer."
+msgid ".) There you can edit your settings. First, you have to specify the basic data, such as which Ubuntu version you want to install on your computer. Additionally, you must specify if you want to use free or commercial software. Finally you must indicate for which purposes you want to use your computer."
 msgstr ""
 #: lib_system_2
 msgid "http://www.communtu.de"
@@ -677,7 +677,7 @@ msgstr ""
 msgid " - based on E17. 2D-effects even without a fast graphic card."
 msgstr ""
 #: view_home_about_8
-msgid "After a click on \"Save and choose packages\" you can get a detailed overview of the installed bundles and programs and the possibility to change the pre-made selections. In the case you don't have the time or energy to choose the packages in detail, just click on \"Save\". This leads you to the installation page. There you will find a button with which the installation process starts. This takes some time because the applications have to be downloaded from the internet and installed on your computer. When finished, you have a all-round Ubuntu-PC!"
+msgid "After clicking on \"Save and choose packages\" you can get a detailed overview of the installed bundles and programs and the possibility to change the pre-made selections. In the case you don't have the time or energy to choose the packages in detail, just click on \"Save\". This leads you to the installation page. There you will find a button which starts the installation process. This takes some time because the applications have to be downloaded from the internet and installed on your computer. When finished, you have an all-round Ubuntu-PC!"
 msgstr ""
 #: new_bundle
 msgid "New bundle"
@@ -857,16 +857,16 @@ msgstr ""
 msgid "\t   none"
 msgstr ""
 #: view_user_profiles__profile_data_1
-msgid "On this page you can prepare the post-installation for your Ubuntu installation in four easy steps. If desired, you can choose the bundles in a detaild overview."
+msgid "On this page you can prepare the post-installation for your Ubuntu installation in four easy steps. If desired, you can choose the bundles in a detailed overview."
 msgstr ""
 #: view_rating_show_title_ratings_count
 msgid "(Based on {{votes}} rating(s))"
 msgstr ""
 #: view_home_faq_10
-msgid "You go to \"Administrate bundles\" and let show you your bundles and then you click on the bundle you want to change. Every important information concerning this bundle is now shown. With a click on \"Actions\" you can edit the bundle or the package-list. If the bundle is not published, you can delete it or publish the bundle, if you like to do so."
+msgid "Click on \"Administrate bundles\", which shows you your bundles, and then you click on the bundle you want to change. All important information concerning this bundle is now shown. With a click on \"Actions\" you can edit the bundle or the package-list. If the bundle is not published, you can delete it or publish the bundle, if you would like to do so."
 msgstr ""
 #: view_home_derivatives_4
-msgid " and many Ubuntu-users may ask themselves if they should use a derivative instead of Ubuntu. The answer is: normally the standard version of Ubuntu completely sufficiant because with Communtu it is quite easy to install a derivaitve. However, this is not always a wise decision."
+msgid " and many Ubuntu-users may ask themselves if they should use a derivative instead of Ubuntu. The answer is: normally the standard version of Ubuntu is completely sufficiant because with Communtu it is quite easy to install a derivative. However, this is not always a wise decision."
 msgstr ""
 #: view_home_new_repository_1
 msgid "You're missing some sources? You can suggest a repository to us."
@@ -905,7 +905,7 @@ msgstr ""
 msgid "Link to the repository"
 msgstr ""
 #: view_user_profiles__profile_data_3
-msgid "What tasks do you want to do with your computer? (only a rough choice, can be chosen in detail later)"
+msgid "What tasks do you want to do with your computer? (only a rough choice; they can be chosen in detail later)"
 msgstr ""
 #: model_user_meta_tabz_1
 msgid "All published bundles"
@@ -917,7 +917,7 @@ msgstr ""
 msgid "Is used in this packages:"
 msgstr ""
 #: view_home_faq_12
-msgid "On the left side of the webpage is the bundle-editor. There you have to click on \"Bundle from package-list\". A new page is loaded with instructions how to upload your package-list to Communtu."
+msgid "On the left side of the webpage is the bundle-editor. There you have to click on \"Bundle from package-list\". A new page is loaded with instructions on how to upload your package-list to Communtu."
 msgstr ""
 #: view_debs_index_1
 msgid "Go back to the Communtu-menu"
@@ -944,7 +944,7 @@ msgstr ""
 msgid "Ubuntu packages"
 msgstr ""
 #: view_home_faq_13
-msgid "How do i find programes?"
+msgid "How do I find programs?"
 msgstr ""
 #: view_sent_index_5
 msgid "You haven't sent any messages yet."
@@ -965,7 +965,7 @@ msgstr ""
 msgid "user found"
 msgstr ""
 #: view_home_faq_14
-msgid "To find a program, go to \"Search programs\". Enter the name of the program, you're looking for, into the search field. If you want to search only the programs click on \"Programs only\" and the libraries are not searched. Furthermore it is possible to choose a Debian-section where programs are preselected."
+msgid "To find a program, go to \"Search programs\". Enter the name of the program you are looking for into the search field. If you want to search only the programs click on \"Programs only\" and the libraries are not searched. Furthermore it is possible to choose a Debian-section where programs are preselected."
 msgstr ""
 #: view_debs_index_3
 msgid "Create every failed deb <b>Warning: only do this at admin.communtu.de!</b>"
@@ -974,7 +974,7 @@ msgstr ""
 msgid "You can also take a look of which packages a derivative consists."
 msgstr ""
 #: view_user_profiles__profile_data_6
-msgid "Please select a Ubuntu version. "
+msgid "Please select an Ubuntu version. "
 msgstr ""
 #: view_home_faq_15
 msgid "How can I install a single program?"
@@ -986,7 +986,7 @@ msgstr ""
 msgid "How do I find out the version which is in use?"
 msgstr ""
 #: view_home_faq_16
-msgid "To install a program, go to \"Search programs\" and you get a list of all programs. When you found the program, you were looking for, you just have to click on the installation-icon. It could be that you have to add the repository of that program first. To do so, click on \"Add sources\" and Communtu will add the sources to your system."
+msgid "To install a program, go to \"Search programs\" and you get a list of all programs. When you find the program you are looking for, you just have to click on the installation-icon. It could be that you have to add the repository of that program first. To do so, click on \"Add sources\" and Communtu will add the sources to your system."
 msgstr ""
 #: view_metapackages_show_deb_error
 msgid "While creating metapackages, an error occurred. We'll solve that problem as fast as possible."
@@ -1040,7 +1040,7 @@ msgstr ""
 msgid "repositories "
 msgstr ""
 #: view_home_faq_18
-msgid "If you haven't found a program via \"Search programs\", chances are high we don't have the corresponding repositories, where the program is in, in Communtu. You can suggest the repository, where the program is in, to us via \"Suggest repository\" in the bundle-editor so we can implement the repository."
+msgid "If you haven't found a program via \"Search programs\", chances are high Communtu doesn't have the corresponding repositories containing that program. You can suggest the repository, where the program is in, to us via \"Suggest repository\" in the bundle-editor so we can implement the repository."
 msgstr ""
 #: view_users_new_12
 msgid "(optional)"
@@ -1052,7 +1052,7 @@ msgstr ""
 msgid "(When chaning the version, the first step has to be done twice, because the Communtu-sources will be deactivated by the upgrade.):"
 msgstr ""
 #: view_home_derivatives_20
-msgid "\tAutomatix was a programm to assist the installation of software and enjoyed great popularity (Automatix was even recommended by the New York Times). However, Automatix did not meet the Ubuntu-standards and the delevopment had been stopped."
+msgid "\tAutomatix was a programm to assist the installation of software and enjoyed great popularity (Automatix was even recommended by the New York Times). However, Automatix did not meet the Ubuntu-standards and the development has been stopped."
 msgstr ""
 #: view_home_faq_19
 msgid "What are sources or repositories?"
@@ -1079,7 +1079,7 @@ msgstr ""
 msgid "\t &nbsp;&nbsp;New icon: "
 msgstr ""
 #: view_home_derivatives_22
-msgid " - leaned to be like BeOS, ZevenOS focuses on speed and compatibility for old computers with a simple interface. CPU with at least 200 MHz, 128 MB RAM (for operating, while installing 192 MB RAM are required), at least 2 GB free hard disk space (recommended are 4 GB free hard disk space or more), 16 MB graphic card (recommended: Intel GMA 9xx)."
+msgid " - in some ways like BeOS, ZevenOS focuses on speed and compatibility for old computers with a simple interface. CPU with at least 200 MHz, 128 MB RAM (for operating, while installing 192 MB RAM are required), at least 2 GB free hard disk space (recommended are 4 GB free hard disk space or more), 16 MB graphic card (recommended: Intel GMA 9xx)."
 msgstr ""
 #: view_sent_show_2
 msgid "Date:"
@@ -1163,7 +1163,7 @@ msgstr ""
 msgid "Deb created."
 msgstr ""
 #: view_home_derivatives_26
-msgid " - with the slim Xfce as the graphical interface. Particularly suitable for older computers: 128 MB RAM and 1,5 GB free hard disk space are sufficiant. Should be installed from the CD to guarantee a slim installation. Post-installation can be done with Communtu."
+msgid " - with the slim Xfce as the graphical interface. Particularly suitable for older computers: 128 MB RAM and 1,5 GB free hard disk space are sufficient. Should be installed from the CD to guarantee a slim installation. Post-installation can be done with Communtu."
 msgstr ""
 #: controller_distributions_1
 msgid "Distribution created."
@@ -1517,7 +1517,7 @@ msgstr ""
 msgid "The soon be installed programs and packages are shown and ordered by the appropriate sources so you can see why some sources will be added."
 msgstr ""
 #: view_home_home_3
-msgid " stands for a human Linux that is easy to use. In order to use Ubuntu effectively, a whole bunch of programs have to be installed. It is not always easy to keep an overview. With Communtu you only specify for which purposes you want to use your computer and Communtu suggests a bunch of programs to you which will be installed automatically."
+msgid " stands for a human Linux that is easy to use. In order to use Ubuntu effectively, an excessive amount of programs have to be installed. It is not always easy to keep an overview. With Communtu you just specify for which purposes you want to use your computer and Communtu suggests several programs to you which will be installed automatically."
 msgstr ""
 #: model_mailer_2
 msgid "Your account has been activated."
@@ -1589,7 +1589,7 @@ msgstr ""
 msgid "http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix (German)"
 msgstr ""
 #: view_home_home_7
-msgid "<b>Administrate bundles</b> Did you make good experiences with programs? Bundle them thematically or take a look at existing bundles."
+msgid "<b>Administrate bundles</b> Did you have good experiences with the programs? Bundle them thematically or take a look at existing bundles."
 msgstr ""
 #: view_admins_show_0
 msgid "Here should be an introduction to the admin area"
@@ -1709,7 +1709,7 @@ msgstr ""
 msgid "Detailed choice of the programs and bundles that shall be installed"
 msgstr ""
 #: view_home_faq_20
-msgid "Programs within Ubuntu are provided via packages, which are located in the package-sources or repositories. Further information about <a href=\"https://help.ubuntu.com/community/Repositories\" target=\"_blank\">Repositorys</a>."
+msgid "Programs within Ubuntu are provided via packages, which are located in the package-sources or repositories. Further information about <a href=\"https://help.ubuntu.com/community/Repositories\" target=\"_blank\">Repositories</a>."
 msgstr ""
 #: helper_distributions_19
 msgid "non-free and from the main repositories"
@@ -1730,7 +1730,7 @@ msgstr ""
 msgid " you can \nopen or close a section to make a detailed selection."
 msgstr ""
 #: view_home_faq_22
-msgid "To find the Communtu-sources in a Gnome-based system, you navigate to \"System\" -> \"Administration\" -> \"Software Sources\" -> \"Third-Party Software\". To find the Communtu-sources in a KDE-based system, you open the K-menu and then navigate to \"Programs\" -> \"System\" -> \"Administration\" -> Software Sources\" -> \"Third-Party Software\". Here you deactivate the Communtu-sources. When deactivating the Communtu-sources, the installed programs won't be uninstalled nor the updates are held back. Updates are still obtained from the official sources, which may be added by Communtu."
+msgid "To find the Communtu-sources in a Gnome-based system, you navigate to \"System\" -> \"Administration\" -> \"Software Sources\" -> \"Third-Party Software\". To find the Communtu-sources in a KDE-based system, you open the K-menu and then navigate to \"Programs\" -> \"System\" -> \"Administration\" -> Software Sources\" -> \"Third-Party Software\". Here you deactivate the Communtu-sources. When deactivating the Communtu-sources, the installed programs won't be uninstalled nor are the updates. Updates are still obtained from the official sources, which may be added by Communtu."
 msgstr ""
 #: view_user_profiles__profile_rating_3
 msgid "Attention! When finished, don't forget to click on \"Save\"."
@@ -1847,7 +1847,7 @@ msgstr ""
 msgid "save"
 msgstr ""
 #: view_home_derivatives_32
-msgid " is a Ubuntu derivative consisting only of free software. Suitable only for experienced users. Should only be installed with the Gobuntu-CD so that only free software is provided. A further installation with Communtu is possible, but \"Free software\" should be selected in the user profile. This derivative is available in Ubuntu 8.04 and development is currently discontinued."
+msgid " is an Ubuntu derivative consisting only of free software. Suitable only for experienced users. Should only be installed with the Gobuntu-CD so that only free software is provided. A further installation with Communtu is possible, but \"Free software\" should be selected in the user profile. This derivative is available in Ubuntu 8.04 and development is currently discontinued."
 msgstr ""
 #: Kommentar
 msgid "Comment:"

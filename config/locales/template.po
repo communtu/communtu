@@ -57,7 +57,7 @@ msgstr "We need someone who is responsible for the project's layout. This means 
 
 #: view_home_about_11
 msgid "Hast du gute Erfahrungen mit Programmen gemacht? Dann kannst du thematisch zusammengehörige Programme zu einem Bündel zusammenfassen und ins System eintragen. Dazu wählst du <b>Neues Bündel</b> unterhalb von <b>Bündel-Editor</b> auf der linken Seitenleiste. Du kannst dann Ubuntu-Pakete hinzufügen und mit Klick auf das Disketten-Symbol das Bündel im System abspeichern. Das Bündel soll einen Namen, eine Beschreibung und eine thematische Einordnung erhalten, damit andere Nutzer es auch verwenden können. Wie bei Ordnern und Dateien können Bündel nicht nur Ubuntu-Pakete, sondern auch andere Bündel enthalten. "
-msgstr "Did you make good experience with programs? You can merge thematic programs to a bundle and add this to the system. To do so, you choose <b>new bundle</b> below of <b>bundle-editor</b> on the left side. Then you can add Ubuntu packages to the bundle and, after you have finished, click on the floppy-icon to save the bundle. The bundle needs a name, a description and a thematic classification so that other users can use it too. Just like folders and files the bundle can not only consist of Ubuntu packages but also of other bundles too. "
+msgstr "Did you have good experience with the programs? You can merge thematic programs to a bundle and add this to the system. To do so, you choose <b>new bundle</b> below <b>bundle-editor</b> on the left side. Then you can add Ubuntu packages to the bundle. After you have finished, click on the floppy-icon to save the bundle. The bundle needs a name, a description and a thematic classification so that other users can use it too. Just like folders and files, the bundle can consist not only of Ubuntu packages but also of other bundles too. "
 
 #: detailed_view
 msgid "zur Detailansicht"
@@ -353,7 +353,7 @@ msgstr "This bundle contains changes."
 
 #: view_home_derivatives_16
 msgid " ist Ubuntu mit dem KDE-Desktop.\t"
-msgstr " is Ubuntu with the KDE-Dekstop"
+msgstr " is Ubuntu with the KDE-Desktop"
 
 #: controller_metapackages_9
 msgid "Die Beschreibung darf nicht leer sein<br>"
@@ -409,7 +409,7 @@ msgstr "non-free and from the community repositories"
 
 #: view_home_derivatives_18
 msgid " ist eine Ubuntu-Abspaltung mit eigener User-Community, die sich vor allem Benutzerfreundlichkeit auf die Fahnen schreibt. Linux Mint ähnelt Ubuntu sehr, hat aber viele Codes, z.B. für DVDs und MP3s, schon vorinstalliert. Diese Codecs gibt es allerdings auch bei Communtu, unter Unterhaltungsmedien. "
-msgstr " is a Ubuntu spin-off with its own user community which has dedicated itself to usability. Linux Mint is quite similar to Ubuntu but has more codecs, like to watch DVDs or listen to MP3s, pre-installed. Those codecs are available via Communtu, listet at \"Sound & Video\"."
+msgstr " is an Ubuntu spin-off with its own user community which has dedicated itself to usability. Linux Mint is quite similar to Ubuntu but has more codecs, like to watch DVDs or listen to MP3s, pre-installed. Those codecs are available via Communtu, listet at \"Sound & Video\"."
 
 #: view_home_home_10
 msgid "<b>Ubuntu-Versionen</b> Übersicht über die im System verfügbaren Ubuntu-Versionen (Distributionen)."
@@ -489,7 +489,7 @@ msgstr "user does not exist"
 
 #: view_home_home_14
 msgid "Es gibt auch noch "
-msgstr "There are also "
+msgstr "There is also "
 
 #: controller_cart_2
 msgid "Folgende Pakete wurden nicht gefunden: {{message}}<br> Bitte suche die Repositories heraus, die die Pakete enthalten, und <a href=\"{{url}}\">schlage sie zur Aufnahme in Communtu vor.</a>"
@@ -509,7 +509,7 @@ msgstr "Link for further information"
 
 #: view_home_home_15
 msgid "genauere Infos"
-msgstr "more detailled information"
+msgstr "detailled information"
 
 #: view_home_icons_10
 msgid "Programm"
@@ -651,7 +651,7 @@ msgstr "participate in the survey"
 
 #: view_user_profiles__profile_data_12
 msgid " Alle Quellen zulassen (etwas unsicherer: <a href=\"http://wiki.ubuntuusers.de/Fremdquellen\">Fremdpakete</a> können das System gefährden, aber noch mehr Programme/Komfort: "
-msgstr " Allow every source (slightly unsecure but with even more programs/better comfort. Attention: programs installed from foreign sources can do harm to your computer!):"
+msgstr " Allow every source (slightly insecure but with even more programs/better comfort. Attention: programs installed from foreign sources can do harm to your computer!):"
 
 #: view_rating_rating_rate
 msgid "von 5 Sternen vergeben"
@@ -675,7 +675,7 @@ msgstr "Purpose: Communtu"
 
 #: view_user_profiles__profile_data_13
 msgid "Hier kannst du auswählen, welche Lizenzen du zulassen willst"
-msgstr "Here you can choose which licences you want to accept"
+msgstr "Here you can choose which licenses you want to accept"
 
 #: view_user_profiles__installation_30
 msgid "Hinweis: Bitte .deb-Dateien nicht umbenennen."
@@ -731,11 +731,11 @@ msgstr "co-operation"
 
 #: view_home_about_3
 msgid "Es gibt aber auch viele Anwendungen, die erst noch nachinstalliert werden müssen, z.B. in den Bereichen Audio, Video und Grafik, damit dein Computer mit Ubuntu wirklich  benutzbar ist. Communtu macht diese Nachinstallation jetzt noch einfacher und hat zudem spezielle Bereiche für Einsteiger und Windows-Umsteiger."
-msgstr "There are many applications which have to be post-installed, e. g. programs for audio, video and graphics, in order to make the computer really usable  Ubuntu. Communtu helps to make the post-installation more easier and moreover has special sections for beginners and users comming from Windows."
+msgstr "There are many applications which have to be post-installed, e. g. programs for audio, video and graphics, in order to really make the computer able to use Ubuntu. Communtu helps to make the post-installation easier, and furthermore, has special sections for beginners and users coming from Windows."
 
 #: view_user_profiles__profile_data_15
 msgid " Unfreie Lizenzen zulassen (auch kostenlos, aber Quellen liegen nicht offen - sozusagen das Methadon für einen weichen Übergang zu Linux: "
-msgstr " Allow unfree licences (free too, but the sources are closed - quasi the methadone for a fluent changeover to Linux)"
+msgstr " Allow commercial licenses (free too, but the sources are closed - quasi the methadone for a fluent changeover to Linux)"
 
 #: view_roles_show_0
 msgid "Rollenname:"
@@ -827,7 +827,7 @@ msgstr " - for portable internet devices."
 
 #: view_home_about_6
 msgid "  (Diese erscheint erst nach einer "
-msgstr "  (This appeas not until"
+msgstr "  (This does not appear until"
 
 #: lib_system_1
 msgid "Du hast keine Berechtigung für diese Aktion."
@@ -859,7 +859,7 @@ msgstr "Ubuntu ultimate - Ubuntu with many desktop-designs and applications."
 
 #: view_home_about_7
 msgid ".) Dort kannst du deine Einstellungen bearbeiten. Unter den Grunddaten musst du zunächst eintragen, welche Ubuntu-Version du auf deinem PC installiert hast, außerdem, ob du unfreie Programme nutzen willst oder nicht. Zudem wählst du aus, für welche Aufgaben du deinen Ubuntu-PC nutzen willst. "
-msgstr ".) There you can edit your settings. First, you have to specify the basic data, like which Ubuntu version you want to install on your computer. Additionally you have to specify if you want to use free or non-free software. Finally you have to indicate for which purposes you want to use your computer."
+msgstr ".) There you can edit your settings. First, you have to specify the basic data, such as which Ubuntu version you want to install on your computer. Additionally, you must specify if you want to use free or commercial software. Finally you must indicate for which purposes you want to use your computer."
 
 #: lib_system_2
 msgid "http://www.communtu.de"
@@ -911,7 +911,7 @@ msgstr " - based on E17. 2D-effects even without a fast graphic card."
 
 #: view_home_about_8
 msgid "Danach kannst du mit \"Speichern und feiner Auswählen\" noch einen detaillierteren Überblick über die installierten Bündel und Programme bekommen und die Auswahl auch noch verändern. Falls du dazu keine Lust oder Zeit hast, klicke einfach auf \"Speichern\". Dies führt dich zur Installations-Seite. Dort findest du einen Installationsknopf, mit dem die Ubuntu-Nachinstallation gestartet werden kann. Es dauert etwas, bis die Programme automatisch aus dem Internet geladen und installiert werden. Fertig ist der vielseitig einsetzbare Ubuntu-PC!"
-msgstr "After a click on \"Save and choose packages\" you can get a detailed overview of the installed bundles and programs and the possibility to change the pre-made selections. In the case you don't have the time or energy to choose the packages in detail, just click on \"Save\". This leads you to the installation page. There you will find a button with which the installation process starts. This takes some time because the applications have to be downloaded from the internet and installed on your computer. When finished, you have a all-round Ubuntu-PC!"
+msgstr "After clicking on \"Save and choose packages\" you can get a detailed overview of the installed bundles and programs and the possibility to change the pre-made selections. In the case you don't have the time or energy to choose the packages in detail, just click on \"Save\". This leads you to the installation page. There you will find a button which starts the installation process. This takes some time because the applications have to be downloaded from the internet and installed on your computer. When finished, you have an all-round Ubuntu-PC!"
 
 #: new_bundle
 msgid "Neues Bündel"
@@ -1151,7 +1151,7 @@ msgstr "http://wiki.ubuntuusers.de/Was_ist_Linux?#Was-sind-Derivate-einer-Distri
 
 #: view_user_profiles__profile_data_1
 msgid "Auf dieser Seite kannst du in vier einfachen Schritten deine Ubuntu-Nachinstallation auswählen - fertig.  Wenn gewünscht, ist aber auch eine detailliertere Auswahl möglich. "
-msgstr "On this page you can prepare the post-installation for your Ubuntu installation in four easy steps. If desired, you can choose the bundles in a detaild overview."
+msgstr "On this page you can prepare the post-installation for your Ubuntu installation in four easy steps. If desired, you can choose the bundles in a detailed overview."
 
 #: view_rating_show_title_ratings_count
 msgid "(Basierend auf {{votes}} Bewertung(en))"
@@ -1167,11 +1167,11 @@ msgstr "You're missing some sources? You can suggest a repository to us."
 
 #: view_home_faq_10
 msgid "Du gehst auf den Menüpunkt \"Bündel verwalten\" und läßt Dir da Deine Bündel auflisten. Das zu ändernde Bündel klickst Du nun an. Du bekommst nun alle wichtigen Informationen zu Deinem Bündel angezeigt. Unter \"Aktionen\" kannst Du nun dieses Bündel oder auch die Paketliste editieren. Wenn das Paket nicht veröffentlicht ist, dann kannst Du es auch löschen oder ansonsten auch veröffentlichen."
-msgstr "You go to \"Administrate bundles\" and let show you your bundles and then you click on the bundle you want to change. Every important information concerning this bundle is now shown. With a click on \"Actions\" you can edit the bundle or the package-list. If the bundle is not published, you can delete it or publish the bundle, if you like to do so."
+msgstr "Click on \"Administrate bundles\", which shows you your bundles, and then you click on the bundle you want to change. All important information concerning this bundle is now shown. With a click on \"Actions\" you can edit the bundle or the package-list. If the bundle is not published, you can delete it or publish the bundle, if you would like to do so."
 
 #: view_home_derivatives_4
 msgid ", und viele Ubuntu-Nutzer fragen sich,  ob sie statt Ubuntu lieber ein Derivat benutzen sollten. Die Antwort ist: meistens fährt man mit dem Standard-Ubuntu ganz gut, denn Communtu erlaubt, die Derivate auf einfache Weise nachzuinstallieren.  Allerdings ist das nicht bei allen Derivaten gleich sinnvoll."
-msgstr " and many Ubuntu-users may ask themselves if they should use a derivative instead of Ubuntu. The answer is: normally the standard version of Ubuntu completely sufficiant because with Communtu it is quite easy to install a derivaitve. However, this is not always a wise decision."
+msgstr " and many Ubuntu-users may ask themselves if they should use a derivative instead of Ubuntu. The answer is: normally the standard version of Ubuntu is completely sufficiant because with Communtu it is quite easy to install a derivative. However, this is not always a wise decision."
 
 #: view_user_profiles__profile_data_2
 msgid "Achtung: zum Schluss unten auf einen der 'Speichern'-Knöpfe klicken!"
@@ -1215,7 +1215,7 @@ msgstr "Each derivative under "
 
 #: view_user_profiles__profile_data_3
 msgid "Welche Aufgaben willst du mit deinem Computer erledigen? (um grob eine Auswahl zu treffen, Feineinstellungen später möglich)"
-msgstr "What tasks do you want to do with your computer? (only a rough choice, can be chosen in detail later)"
+msgstr "What tasks do you want to do with your computer? (only a rough choice; they can be chosen in detail later)"
 
 #: view_packages_show_21
 msgid "Wird in folgenden Paketen benutzt:"
@@ -1235,7 +1235,7 @@ msgstr "Add sources"
 
 #: view_home_faq_12
 msgid "Auf den linken Bereich der Webseite gibt es den Bündel-Editor. Dort bitte den Punkt \"Bündel aus Paketliste\" anklicken. Dort ist beschrieben, wie Du Deine Paketliste in Communtu hochladen kannst."
-msgstr "On the left side of the webpage is the bundle-editor. There you have to click on \"Bundle from package-list\". A new page is loaded with instructions how to upload your package-list to Communtu."
+msgstr "On the left side of the webpage is the bundle-editor. There you have to click on \"Bundle from package-list\". A new page is loaded with instructions on how to upload your package-list to Communtu."
 
 #: view_debs_index_1
 msgid "Zurück zum Communtu-Menü"
@@ -1275,7 +1275,7 @@ msgstr "Ubuntu packages"
 
 #: view_home_faq_13
 msgid "Wie finde ich Programme?"
-msgstr "How do i find programes?"
+msgstr "How do I find programs?"
 
 #: view_debs_index_2
 msgid "  Keine fehlgeschlagenen Deb-Generierungen vorhanden! Glückwunsch!"
@@ -1299,7 +1299,7 @@ msgstr "user found"
 
 #: view_home_faq_14
 msgid "Gehe dazu bitte auf den Menüpunkt \"Programme suchen\". Hier hast Du ein Suchfeld, in dem Du den Namen des gesuchten Prgramms angeben kannst. Weiter ist es möglich die Suche nur über Programme durchzuführen, in dem das Feld \"Nur Programme\" angeklickt wird und somit sonstige Bibliotheken nicht mehr angezeigt werden. Weiter ist es auch möglich eine Debian-Section auszuwählen, der die Auswahl an Programmen anhand von Kategorien vorselektiert."
-msgstr "To find a program, go to \"Search programs\". Enter the name of the program, you're looking for, into the search field. If you want to search only the programs click on \"Programs only\" and the libraries are not searched. Furthermore it is possible to choose a Debian-section where programs are preselected."
+msgstr "To find a program, go to \"Search programs\". Enter the name of the program you are looking for into the search field. If you want to search only the programs click on \"Programs only\" and the libraries are not searched. Furthermore it is possible to choose a Debian-section where programs are preselected."
 
 #: view_debs_index_3
 msgid "Alle fehlgeschlagenen debs erzeugen <b>Achtung: nur unter admin.communtu.de ausführen!</b>"
@@ -1311,7 +1311,7 @@ msgstr "You can also take a look of which packages a derivative consists."
 
 #: view_user_profiles__profile_data_6
 msgid "Wähle bitte deine Ubuntu-Version aus. "
-msgstr "Please select a Ubuntu version. "
+msgstr "Please select an Ubuntu version. "
 
 #: view_home_success_0
 msgid " Vielen Dank für die Spende"
@@ -1347,7 +1347,7 @@ msgstr "You have new messages in your inbox."
 
 #: view_home_faq_16
 msgid "Gehe dazu bitte auf den Menüpunkt \"Programme suchen\". Dort bekommst Du eine Auswahl von Programmen. Wenn Du Dein gewünschtes Programm gefunden hast, kannst Du dieses durch Klicken auf das Installationssymbol installieren.  Es ist möglich, dass Du vorher noch auf \"Quellen hinzufügen\" klicken musst, da es sein kann, dass das Programm in einer Quelle verfügabr ist, die Deinem System noch nicht bekannt ist."
-msgstr "To install a program, go to \"Search programs\" and you get a list of all programs. When you found the program, you were looking for, you just have to click on the installation-icon. It could be that you have to add the repository of that program first. To do so, click on \"Add sources\" and Communtu will add the sources to your system."
+msgstr "To install a program, go to \"Search programs\" and you get a list of all programs. When you find the program you are looking for, you just have to click on the installation-icon. It could be that you have to add the repository of that program first. To do so, click on \"Add sources\" and Communtu will add the sources to your system."
 
 #: view_debs_index_5
 msgid "Erzeugen"
@@ -1407,7 +1407,7 @@ msgstr "Here you can select how secure or comfortable you sources should be"
 
 #: view_home_faq_18
 msgid "Wenn Du über \"Programme suchen\" ein bestimmtes Programm nicht gefunden hst, kann es daran liegen, das wir die Quelle aus dem das Programm kommt, noch nicht in Communtu eingetragen haben. Du kannst uns diese Quelle über den \"Bündel-Editor\" unter den Punkt \"Repository vorschlagen\" melden, damit diese auch in Communtu eingearbeitet werden kann."
-msgstr "If you haven't found a program via \"Search programs\", chances are high we don't have the corresponding repositories, where the program is in, in Communtu. You can suggest the repository, where the program is in, to us via \"Suggest repository\" in the bundle-editor so we can implement the repository."
+msgstr "If you haven't found a program via \"Search programs\", chances are high Communtu doesn't have the corresponding repositories containing that program. You can suggest the repository, where the program is in, to us via \"Suggest repository\" in the bundle-editor so we can implement the repository."
 
 #: view_user_profiles__installation_13
 msgid "(Bei einem Versionswechsel muss der erste Schritt erneut ausgeführt werden, da die Communtu Quellen durch das Upgrade deaktiviert wurden.):"
@@ -1419,7 +1419,7 @@ msgstr "Icon"
 
 #: view_home_derivatives_20
 msgid "\tAutomatix war eine Installationshilfe, die sich großer Beliebtheit erfreute (sie wurde sogar von der New York Times empfohlen), die aber nicht ganz den Ubuntu-Programmierstandards entsprach und inzwischen nicht mehr weiterentwickelt wird. "
-msgstr "\tAutomatix was a programm to assist the installation of software and enjoyed great popularity (Automatix was even recommended by the New York Times). However, Automatix did not meet the Ubuntu-standards and the delevopment had been stopped."
+msgstr "\tAutomatix was a programm to assist the installation of software and enjoyed great popularity (Automatix was even recommended by the New York Times). However, Automatix did not meet the Ubuntu-standards and the development has been stopped."
 
 #: view_home_faq_19
 msgid "Was sind eigentlich Quellen bzw. Repositories?"
@@ -1459,7 +1459,7 @@ msgstr "Is a program:"
 
 #: view_home_derivatives_22
 msgid " - orient an BeOS, setzt auf Schnelligkeit, Kompatibilität mit alten Rechnern und einfache Bedienung. CPU mit mindestens 200 MHZ 128 MB RAM (zum Betrieb, zur Installation werden 192 MB RAM benötigt); 2 GB freier Festplattenplatz (Empfohlen: 4 GB oder mehr); 16 MB Grafikkarte (Empfohlen: Intel GMA 9xx). "
-msgstr " - leaned to be like BeOS, ZevenOS focuses on speed and compatibility for old computers with a simple interface. CPU with at least 200 MHz, 128 MB RAM (for operating, while installing 192 MB RAM are required), at least 2 GB free hard disk space (recommended are 4 GB free hard disk space or more), 16 MB graphic card (recommended: Intel GMA 9xx)."
+msgstr " - in some ways like BeOS, ZevenOS focuses on speed and compatibility for old computers with a simple interface. CPU with at least 200 MHz, 128 MB RAM (for operating, while installing 192 MB RAM are required), at least 2 GB free hard disk space (recommended are 4 GB free hard disk space or more), 16 MB graphic card (recommended: Intel GMA 9xx)."
 
 #: news
 msgid "Aktuelles"
@@ -1569,7 +1569,7 @@ msgstr "Deb created."
 
 #: view_home_derivatives_26
 msgid " - mit dem schlanken Xfce als grafischer Oberfläche - besonders für ältere Rechner geeignet: 128 MByte Arbeitsspeicher und 1,5 GB auf der Festplatte reichen aus. Sollte von CD installiert werden, um wirklich eine schlanke Installation zu haben. Nachinstallationen mit Communtu möglich."
-msgstr " - with the slim Xfce as the graphical interface. Particularly suitable for older computers: 128 MB RAM and 1,5 GB free hard disk space are sufficiant. Should be installed from the CD to guarantee a slim installation. Post-installation can be done with Communtu."
+msgstr " - with the slim Xfce as the graphical interface. Particularly suitable for older computers: 128 MB RAM and 1,5 GB free hard disk space are sufficient. Should be installed from the CD to guarantee a slim installation. Post-installation can be done with Communtu."
 
 #: view_users__sidebar_0
 msgid "Installation"
@@ -2081,7 +2081,7 @@ msgstr "The soon be installed programs and packages are shown and ordered by the
 
 #: view_home_home_3
 msgid " steht für ein menschliches Linux, das einfach zu benutzen ist. Aber um Ubuntu wirklich gut nutzen zu können, muss man ganz schön viele Programme nachinstallieren, und es ist oft schwer, da den Überblick zu behalten. Bei Communtu gibst du nur an, welche Aufgaben du mit deinem Computer erledigen willst, und Communtu schlägt dir eine ganze Reihe von Programmen vor, die automatisch installiert werden können."
-msgstr " stands for a human Linux that is easy to use. In order to use Ubuntu effectively, a whole bunch of programs have to be installed. It is not always easy to keep an overview. With Communtu you only specify for which purposes you want to use your computer and Communtu suggests a bunch of programs to you which will be installed automatically."
+msgstr " stands for a human Linux that is easy to use. In order to use Ubuntu effectively, an excessive amount of programs have to be installed. It is not always easy to keep an overview. With Communtu you just specify for which purposes you want to use your computer and Communtu suggests several programs to you which will be installed automatically."
 
 #: model_mailer_2
 msgid "Dein Benutzerkonto wurde aktiviert."
@@ -2179,7 +2179,7 @@ msgstr "http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix (German)"
 
 #: view_home_home_7
 msgid "<b>Bündel verwalten</b> Hast du gute Erfahrungen mit Programmen gemacht? Dann kannst du sie hier thematisch bündeln, oder auch bestehende Bündel angucken. "
-msgstr "<b>Administrate bundles</b> Did you make good experiences with programs? Bundle them thematically or take a look at existing bundles."
+msgstr "<b>Administrate bundles</b> Did you have good experiences with the programs? Bundle them thematically or take a look at existing bundles."
 
 #: view_admins_show_0
 msgid "Here should be an introduction to the admin area"
@@ -2339,7 +2339,7 @@ msgstr "Detailed choice of the programs and bundles that shall be installed"
 
 #: view_home_faq_20
 msgid "Programme werden in Ubuntu in Paketen bereitgestellt, die in sogenannten Paketquellen bzw. Repositories auf Webservern liegen.  Nähere Information zu <a href=\"http://wiki.ubuntuusers.de/Paketquellen\" target=\"_blank\">Repositorys</a>."
-msgstr "Programs within Ubuntu are provided via packages, which are located in the package-sources or repositories. Further information about <a href=\"https://help.ubuntu.com/community/Repositories\" target=\"_blank\">Repositorys</a>."
+msgstr "Programs within Ubuntu are provided via packages, which are located in the package-sources or repositories. Further information about <a href=\"https://help.ubuntu.com/community/Repositories\" target=\"_blank\">Repositories</a>."
 
 #: helper_distributions_19
 msgid "non-free und aus den main Paketquellen"
@@ -2375,7 +2375,7 @@ msgstr ""
 
 #: view_home_faq_22
 msgid "Bei einem Gnome-System: Unter \"System -> Systemverwaltung -> Software-Quellen -> Softwarequellen von Drittanbietern\" sind die Communtu Quellen auffindbar. Bei einem KDE4-System sind sie unter \"K-Menu-> Programme-> System-> Systemverwaltung -> Software-Quellen -> Softwarequellen von Drittanbietern\" zu finden. Hier können sie auch wieder deaktiviert werden. Das Deaktivieren führt nicht zum Deinstallieren von Paketen noch werden dadurch die Updates für die installierten Pakete unterbrochen.  Diese werden aus anderen Softwarequellen, die ggf. von Communtu installiert wurden, bedient."
-msgstr "To find the Communtu-sources in a Gnome-based system, you navigate to \"System\" -> \"Administration\" -> \"Software Sources\" -> \"Third-Party Software\". To find the Communtu-sources in a KDE-based system, you open the K-menu and then navigate to \"Programs\" -> \"System\" -> \"Administration\" -> Software Sources\" -> \"Third-Party Software\". Here you deactivate the Communtu-sources. When deactivating the Communtu-sources, the installed programs won't be uninstalled nor the updates are held back. Updates are still obtained from the official sources, which may be added by Communtu."
+msgstr "To find the Communtu-sources in a Gnome-based system, you navigate to \"System\" -> \"Administration\" -> \"Software Sources\" -> \"Third-Party Software\". To find the Communtu-sources in a KDE-based system, you open the K-menu and then navigate to \"Programs\" -> \"System\" -> \"Administration\" -> Software Sources\" -> \"Third-Party Software\". Here you deactivate the Communtu-sources. When deactivating the Communtu-sources, the installed programs won't be uninstalled nor are the updates. Updates are still obtained from the official sources, which may be added by Communtu."
 
 #: view_user_profiles__profile_rating_3
 msgid "Achtung! Zum Schluss auf \"Speichern\" klicken."
@@ -2531,7 +2531,7 @@ msgstr "save"
 
 #: view_home_derivatives_32
 msgid " ist ein Ubuntu-Derivat komplett aus freier Software. Nur für erfahrene Nutzer geeignet. Sollte mit der Gobuntu-CD installiert werden, damit es auch wirklich nur freie Software ist. Nachinstallationen mit Communtu möglich, sinnvollerweise sollten dann im Nutzerprofil \"freie Software\" angewählt werden. Dies Derivate ist in der Version 8.04 erhältlich und wird nicht weiterentwickelt."
-msgstr " is a Ubuntu derivative consisting only of free software. Suitable only for experienced users. Should only be installed with the Gobuntu-CD so that only free software is provided. A further installation with Communtu is possible, but \"Free software\" should be selected in the user profile. This derivative is available in Ubuntu 8.04 and development is currently discontinued."
+msgstr " is an Ubuntu derivative consisting only of free software. Suitable only for experienced users. Should only be installed with the Gobuntu-CD so that only free software is provided. A further installation with Communtu is possible, but \"Free software\" should be selected in the user profile. This derivative is available in Ubuntu 8.04 and development is currently discontinued."
 
 #: Kommentar
 msgid "Kommentar: "
