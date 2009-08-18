@@ -114,7 +114,8 @@ class UsersController < ApplicationController
       else
         flash[:error] = t(:passwd_no_match)
         @old_password = params[:old_password]
-        render :action => 'edit'      
+        render :action => 'edit'
+        return
       end
     end  
     if @user.update_attributes(params[:user])
