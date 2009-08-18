@@ -152,7 +152,7 @@ class CartController < ApplicationController
         if editing_metapackage?
             cart    = Cart.find(session[:cart])            
             content = CartContent.find(:first, :conditions => ["cart_id = ? and base_package_id = ?", cart.id, params[:id]])
-            content.destroy
+            if !content.nil? then content.destroy end
         end
         render_cart
     end
