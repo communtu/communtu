@@ -112,6 +112,7 @@ class UsersController < ApplicationController
         @user.save
         flash[:notice] = t(:controller_users_6)
       else
+        flash[:notice] = ""
         flash[:error] = t(:passwd_no_match)
         @old_password = params[:old_password]
         render :action => 'edit'
