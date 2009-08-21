@@ -1,5 +1,6 @@
 #!/bin/bash
 cd `dirname "$0"`/..
 touch log/repo.log
+date >> log/repo.log
 /usr/bin/rake db:repo:sync >> log/repo.log 2>&1
 echo "done" >> log/repo.log
