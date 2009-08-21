@@ -8,6 +8,9 @@ namespace :db do
       puts "Shrinking database, this will take some time"
       m = Metapackage.find_by_name("Textverarbeitung")
       packages = m.all_recursive_packages << m
+      ["gdmap", "pdfedit", "Acroread", "Skype", "Virtualbox"].each do |p|
+        packages << Package_find_by_name(p)
+      end
       BasePackage.all.each do |p|
         if !packages.include?(p) then p.destroy end
       end
