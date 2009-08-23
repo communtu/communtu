@@ -11,6 +11,16 @@ class Repository < ActiveRecord::Base
   def name
     self.url+" "+self.subtype
   end
+
+  # folder for storing package info
+  def dir_name
+    distribution.dir_name
+  end
+
+  # file for storing package info
+  def file_name
+    self.dir_name + "/" + self.id.to_s
+  end
   
   # migrate a repository to a different distribution
   def migrate(dist)
@@ -214,16 +224,22 @@ class Repository < ActiveRecord::Base
     rescue
       return {:error => I18n.t(:model_package_could_not_read,:url => url)}
     else
-      contents = file.read
-      if contents==self.package_file then
+      # check whether repository contents has changed
+      tmp_name = "/tmp/"+Time.now.to_f.to_s
+      tmp_file = File.open(tmp_name+".gz","w")
+      tmp_file.write file.read
+      tmp_file.close
+      system "gunzip #{tmp_name}.gz"
+      # contents unchanged? then we are done
+      if system "diff #{tmp_name} #{self.file_name}" then
         return {:notice => I18n.t(:model_package_need_not_update,:url => url)}
       end
-      self.package_file = contents
-      self.save
+      # store new package list
+      system "mkdir -p #{self.dir_name}"
+      system "mv #{tmp_name} #{self.file_name}"
       file.seek(0,IO::SEEK_SET)
       packages = {}
       reader   = Zlib::GzipReader.new(file)
-
       while !reader.eof? && line = reader.readline do
         if not line.sub!(/^Package: /, "").nil?
             package = line.chomp

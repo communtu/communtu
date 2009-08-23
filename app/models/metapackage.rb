@@ -41,6 +41,15 @@ class Metapackage < BasePackage
   def metaconents_for(package)
     Metacontent.find(:first,:conditions => ["metapackage_id = ? and base_package_id = ?",self.id,package.id])
   end
+
+  # list of packages used for generation of debian metapackage
+  def package_names_for_deb(dist,der,lic,sec)
+      mcs = Metacontent.find(:all,:conditions =>
+             ["metapackage_id = ? and metacontents_distrs.distribution_id = ? and metacontents_derivatives.derivative_id = ?",
+              self.id,dist.id,der.id],:include => [:metacontents_distrs, :metacontents_derivatives])
+      packages = mcs.map{|mc| mc.base_package}.select{|p| p.is_present(dist,lic,sec)}.map{|p| p.debian_name}
+  end
+
   #conflicts within the bundle
   def internal_conflicts
     all_cons = {}
@@ -80,7 +89,24 @@ class Metapackage < BasePackage
       end
     end while modified
   end
-  
+
+  # use edos_checkdeb for detection of conflicts
+  def edos_conflicts
+    Distribution.all.each do |dist|
+      Derivative.all.each do |der|
+        name = self.debian_name
+        # use largest license and security type, this should reveal all conflicts  
+        package_names = package_names_for_deb(dist,der,1,2)
+        description = "test"
+        Dir.chdir dist.dir_name
+        # TODO: better check *all* bundles, since there can be indirect conflicts
+        Deb.write_control(name,package_names,description,1)
+        system "cat [0-9]* control | edos-debcheck -explain #{name}"
+        system "rm control"
+      end
+    end
+  end
+
   # this function is needed to complement is_present for class Package
   def is_present(distribution,licence,security)
     true
@@ -134,10 +160,6 @@ class Metapackage < BasePackage
 
 ## installation and creating debian metapackages
 
-  def self.codename(distribution,derivative,license,security)
-    derivative.name.downcase+"-"+distribution.short_name.downcase+"-" +Package.license_components[license]+"-"+Package.security_components[security]
-  end
-  
   def recursive_packages package_names, package_sources, dist, license, security
     self.base_packages.each do |p|
         if p.class == Package
@@ -173,136 +195,6 @@ class Metapackage < BasePackage
     end
   end
 
-  def self.makedeb_for_source_install(name,version,description,packages,distribution,derivative,license,security)
-    #compute sources
-    repos = Set.[]
-    packages.each do |p|    
-      package_names   = []
-      p.recursive_packages package_names, repos, distribution, license, security
-    end
-    # only install sources, no packages
-    codename = Metapackage.codename(distribution,derivative,license,security)
-    Metapackage.makedeb(name,version,[],description,codename,derivative,repos)
-  end 
-
-  def self.makedeb(name,version,package_names,description,codename,derivative,repos)
-    Dir.chdir RAILS_ROOT+'/debs'
-    if !File.exists?(name)
-      Dir.mkdir name
-    end
-    Dir.chdir name
-    nameversion = name+"-"+version
-    if !File.exists?(nameversion)
-      Dir.mkdir nameversion
-    end  
-    Dir.chdir nameversion
-    #  simulate the commands:
-    #    system 'dh_make --email "info@communtu.de" --copyright gpl --single --createorig --packagename ' + pname
-    #    system 'rm -f docs dirs README.Debian *.ex *.EX'
-    # todo: adapt changelog according to difference in package list
-    if !File.exists?('debian')
-      Dir.mkdir 'debian'
-      Dir.chdir 'debian'
-      # copy file 'copyright'
-      safe_system "cp ../../../copyright ."
-      # copy file 'rules'
-      safe_system "cp ../../../rules ."
-      # copy file 'compat'
-      safe_system "cp ../../../compat ."
-    else  
-      Dir.chdir 'debian'
-    end  
-
-    # create file 'control'
-    f=File.open("control","w")
-    f.puts "Source: #{name}"
-    f.puts "Section: metapackages"
-    f.puts "Priority: Optional"
-    f.puts "Maintainer: Communtu <info@communtu.de>"
-    f.puts "Homepage: www.communtu.de"
-    f.puts
-    f.puts "Package: #{name}"
-    f.puts "Architecture: all"
-    if !package_names.empty? then
-      f.puts "Depends: " + package_names.join(", ")
-    end  
-    if description.empty? then
-      lines = ["communtu metapackage (no further description)"]
-    else
-      #replace empty lines by "."
-      lines = description.gsub(/\r/,"").split("\n").map do |l|
-        if l.gsub(/ \t/,"").empty? then "." else l end
-      end
-    end
-    #start each new line with two spaces
-    f.puts "Description: " + lines.join("\n  ")
-    f.close
-
-    # create file 'changelog'
-    f=File.open("changelog","w")
-    f.puts "#{name} (#{version}) #{codename}; urgency=low"
-    f.puts
-    f.puts "  * Initial release"
-    f.puts
-    f.puts " -- Communtu <info@communtu.de>  "+Time.now.strftime("%a, %d %b %Y %H:%M:%S")+" +0100"
-    f.puts
-    f.close
-
-    # create maintainer scripts
-    if !repos.empty?
-      # add repository for communtu at the end
-      # todo: add key for communtu package server
-      repos1 = repos.to_a.sort {|r1,r2| r1.url <=> r2.url}
-      Metapackage.components.flatten.each do |component|
-        repos1 << Repository.new(:url => "deb #{Deb::COMMUNTU_REPO} "+codename, :subtype => component, :gpgkey => Deb::COMMUNTU_KEY)
-      end
-      # get urls and keys
-      urls = []
-      keys = []
-      urls_keys = []
-      repos1.each do |repository|
-        url = repository.url + " " + repository.subtype
-        key = repository.gpgkey
-        if key.nil? then key = "" end
-        urls << url
-        keys << key
-        urls_keys << url+"+"+key
-      end
-      # create  'preinst'
-      # first half of standard script ...
-      safe_system "cp ../../../preinst1 preinst"
-      # ... handling of new sources and keys ...
-      f=File.open("preinst","a")
-      f.puts '    KEYS="'+keys.select{|k| !k.empty?}.join('§')+'"'
-      f.puts '    SOURCESKEYS="'+urls_keys.join('§')+'"'
-      f.puts '    KEYSERVER="'+Deb::KEYSERVER+'"'
-      f.close
-      # ... selection of sources according to sources.list
-      safe_system "cat ../../../preinst2 >> preinst"
-      if derivative.dialog == "zenity" then
-        safe_system "cat ../../../preinst2-zenity >> preinst"
-      else  
-        safe_system "cat ../../../preinst2-kdialog >> preinst"
-      end  
-      # ... and main part of standard script
-      safe_system "cat ../../../preinst3 >> preinst"
-    end  
-
-    # build deb package
-    Dir.chdir '..'
-    safe_system "echo >>  #{RAILS_ROOT}/log/debianize.log 2>&1"
-    safe_system "date >>  #{RAILS_ROOT}/log/debianize.log 2>&1"
-    safe_system "dpkg-buildpackage -uc -us -rfakeroot >> #{RAILS_ROOT}/log/debianize.log 2>&1"
-#    safe_system "dpkg-buildpackage -sgpg -k#{Deb::COMMUNTU_KEY} -rfakeroot >> #{RAILS_ROOT}/log/debianize.log 2>&1"
-    Dir.chdir '../../..'
-    # return filename of the newly created package
-    return Dir.glob("debs/#{name}/#{name}_#{version}*deb")[0]
-  end
-
-  def self.components
-    [["main","universe","free"],["restricted","multiverse","non-free"]]
-  end
-  
   def debianize
     # start with version 0.1 if there is none
     if self.version.nil? or self.version.empty? then
@@ -322,7 +214,7 @@ class Metapackage < BasePackage
       Derivative.all.each do |der|
         (0..1).each do |lic|
           (0..2).each do |sec|
-            codename = Metapackage.codename(dist,der,lic,sec)
+            codename = Deb.compute_codename(dist,der,lic,sec)
             version = "#{self.version}-#{codename}1"
             deb = Deb.create({:metapackage_id => self.id, :distribution_id => dist.id, :derivative_id => der.id, 
                               :license_type => lic, :security_type => sec, :version => self.version,

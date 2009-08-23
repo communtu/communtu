@@ -22,7 +22,7 @@ class SuggestionController < ApplicationController
     # if profile has changed, generate new debian metapackage
     if current_user.profile_changed or debfile.nil? then
       description = t(:controller_suggestion_2)+current_user.login
-      debfile = Metapackage.makedeb_for_source_install(name,
+      debfile = Deb.makedeb_for_source_install(name,
                  version,
                  description,
                  current_user.selected_packages,
@@ -50,7 +50,7 @@ class SuggestionController < ApplicationController
     version = current_user.profile_version.to_s
 
     description = t(:controller_suggestion_4)+bundle.name
-    debfile = Metapackage.makedeb_for_source_install(name,
+    debfile = Deb.makedeb_for_source_install(name,
                  version,
                  description,
                  [bundle],
@@ -75,11 +75,11 @@ class SuggestionController < ApplicationController
     version = "0.1"
     description = t(:controller_suggestion_6)+package.name
     # only install sources, no packages
-    codename = Metapackage.codename(current_user.distribution, 
+    codename = Deb.codename(current_user.distribution,
                  current_user.derivative, 
                  current_user.license,
                  current_user.security)
-    debfile = Metapackage.makedeb(name,version,[],description,codename,current_user.derivative,repos)
+    debfile = Deb.makedeb(name,version,[],description,codename,current_user.derivative,repos)
     if debfile.nil? then
       flash[:error] = "Bei der Erstellung des Pakets ist ein Fehler aufgetreten."
       return
@@ -106,11 +106,11 @@ class SuggestionController < ApplicationController
     # if profile has changed, generate new debian metapackage
     if current_user.profile_changed or debfile.nil? then
       description = t(:controller_suggestion_8)+current_user.login
-      codename = Metapackage.codename(current_user.distribution, 
+      codename = Deb.codename(current_user.distribution,
                  current_user.derivative, 
                  current_user.license,
                  current_user.security)
-      debfile = Metapackage.makedeb(name,
+      debfile = Deb.makedeb(name,
                  version,
                  current_user.selected_packages.map{|p| p.debian_name},                 
                  description,

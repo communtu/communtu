@@ -12,6 +12,11 @@ class Distribution < ActiveRecord::Base
     translation(self.url_tid)
   end
 
+  # folder for storing repository information
+  def dir_name
+    RAILS_ROOT + "/debs/repos/" + self.short_name
+  end
+
   # return the distribution info from the browser info string
   def self.browser_info(s)
     if s.nil? then
@@ -34,6 +39,8 @@ class Distribution < ActiveRecord::Base
   def after_create
     # generate new configuration file for reprepro
     Deb.write_conf_distributions
+    # make folder for package info
+    system "mkdir -p #{self.dir_name}"
   end
   
   def after_destroy
@@ -41,5 +48,7 @@ class Distribution < ActiveRecord::Base
     Deb.write_conf_distributions
     # remove debian packages
     Deb.clearvanished
+    # remove package info
+    system "rm -r #{self.dir_name}"
   end
 end
