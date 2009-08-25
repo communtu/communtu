@@ -41,6 +41,7 @@ class MetapackagesController < ApplicationController
   def edit
     @metapackage = Metapackage.find(params[:id])
     if !check_owner(@metapackage,current_user) then
+      redirect_to metapackage_path(@metapackage)
       return
     end
     @categories  = Category.find(1)
@@ -84,6 +85,7 @@ class MetapackagesController < ApplicationController
     flash[:error] = ""
     @metapackage = Metapackage.find(params[:id])
     if !check_owner(@metapackage,current_user) then
+      redirect_to metapackage_path(@metapackage)
       return
     end
     @conflicts = @metapackage.internal_conflicts
@@ -154,7 +156,8 @@ class MetapackagesController < ApplicationController
 
   def save
     @metapackage = Metapackage.find(params[:id])
-    if !check_owner(@metapackage,current_user) then
+    if !is_admin? and !check_owner(@metapackage,current_user) then
+      redirect_to metapackage_path(@metapackage)
       return
     end
     if !@metapackage.internal_conflicts.empty?
@@ -175,8 +178,8 @@ class MetapackagesController < ApplicationController
   # DELETE /metapackages/1.xml
   def destroy
     metapackage  = Metapackage.find(params[:id])   
-    if !check_owner(metapackage,current_user) then
-      redirect_to "/home"
+    if !is_admin? and !check_owner(metapackage,current_user) then
+      redirect_to metapackage_path(metapackage)
       return
     end
     if metapackage.is_published? then
@@ -194,6 +197,7 @@ class MetapackagesController < ApplicationController
   def publish
     package = Metapackage.find(params[:id]);
     if !check_owner(package,current_user) then
+      redirect_to metapackage_path(package)
       return
     end
     package.published = Metapackage.state[:published]
@@ -206,6 +210,7 @@ class MetapackagesController < ApplicationController
   def edit_packages
     @package = Metapackage.find(params[:id]);
     if !check_owner(@package,current_user) then
+      redirect_to metapackage_path(@metapackage)
       return
     end
     card_editor(@package.name,@package.base_packages,session,current_user)
@@ -213,6 +218,7 @@ class MetapackagesController < ApplicationController
   
   def remove_package
     if !check_owner(Metacontent.find(params[:package_id]).metapackage,current_user) then
+      redirect_to :controller => :metapackages, :action => :edit, :id => params[:id]
       return
     end
     if Metacontent.delete(params[:package_id]).nil?
@@ -225,6 +231,7 @@ class MetapackagesController < ApplicationController
     action = params[:method]
     meta   = Metapackage.find(params[:id])
     if !check_owner(meta,current_user) then
+      redirect_to metapackage_path(meta)
       return
     end
     if not meta.nil?
