@@ -53,7 +53,7 @@ class Deb < ActiveRecord::Base
       f.puts Time.now
       f.puts
       # compute list of packages contained in metapackage 
-      packages = package_names_for_deb(dist,der,lic,sec)
+      packages = meta.package_names_for_deb(dist,der,lic,sec)
       f.puts "Included packages:"
       f.puts packages.join(", ")
       f.close
@@ -130,8 +130,8 @@ class Deb < ActiveRecord::Base
   # create file 'control'
   def self.write_control(name,package_names,description,version = nil)
     f=File.open("control","w")
-    f.puts "Package: #{name}"
     if !version.nil? then
+      f.puts "Package: #{name}"
       f.puts "Version: #{version}"
     end
     f.puts "Source: #{name}"
@@ -140,6 +140,9 @@ class Deb < ActiveRecord::Base
     f.puts "Maintainer: Communtu <info@communtu.de>"
     f.puts "Homepage: www.communtu.de"
     f.puts
+    if version.nil? then
+      f.puts "Package: #{name}"
+    end
     f.puts "Architecture: all"
     if !package_names.empty? then
       f.puts "Depends: " + package_names.join(", ")
