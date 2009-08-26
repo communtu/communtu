@@ -139,7 +139,9 @@ class Deb < ActiveRecord::Base
     f.puts "Priority: Optional"
     f.puts "Maintainer: Communtu <info@communtu.de>"
     f.puts "Homepage: www.communtu.de"
-    f.puts
+    if version.nil? then
+      f.puts
+    end
     if version.nil? then
       f.puts "Package: #{name}"
     end

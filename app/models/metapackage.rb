@@ -92,12 +92,17 @@ class Metapackage < BasePackage
 
   # use edos_checkdeb for detection of conflicts
   def edos_conflicts
+    name = self.debian_name
+    description = "test"
     Distribution.all.each do |dist|
+      package_list_list = []
       Derivative.all.each do |der|
-        name = self.debian_name
         # use largest license and security type, this should reveal all conflicts  
-        package_names = package_names_for_deb(dist,der,1,2)
-        description = "test"
+        package_list_list << package_names_for_deb(dist,der,1,2)
+      end
+      package_list_list.uniq.each do |package_names|
+        puts
+        puts name, dist.name
         Dir.chdir dist.dir_name
         # TODO: better check *all* bundles, since there can be indirect conflicts
         Deb.write_control(name,package_names,description,1)
