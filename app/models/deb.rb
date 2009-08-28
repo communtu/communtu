@@ -123,7 +123,7 @@ class Deb < ActiveRecord::Base
       p.recursive_packages package_names, repos, distribution, license, security
     end
     # only install sources, no packages
-    codename = Deb.codename(distribution,derivative,license,security)
+    codename = Deb.compute_codename(distribution,derivative,license,security)
     Deb.makedeb(name,version,[],description,codename,derivative,repos)
   end
 
@@ -266,7 +266,7 @@ class Deb < ActiveRecord::Base
       Derivative.all.each do |der|
         (0..1).each do |lic|
           (0..2).each do |sec|
-            codename = Deb.codename(dist,der,lic,sec)
+            codename = Deb.compute_codename(dist,der,lic,sec)
             f.puts "Codename: #{codename}"
             f.puts "Origin: communtu"
             f.puts "Label: communtu"

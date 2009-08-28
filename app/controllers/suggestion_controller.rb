@@ -75,7 +75,7 @@ class SuggestionController < ApplicationController
     version = "0.1"
     description = t(:controller_suggestion_6)+package.name
     # only install sources, no packages
-    codename = Deb.codename(current_user.distribution,
+    codename = Deb.compute_codename(current_user.distribution,
                  current_user.derivative, 
                  current_user.license,
                  current_user.security)
@@ -106,7 +106,7 @@ class SuggestionController < ApplicationController
     # if profile has changed, generate new debian metapackage
     if current_user.profile_changed or debfile.nil? then
       description = t(:controller_suggestion_8)+current_user.login
-      codename = Deb.codename(current_user.distribution,
+      codename = Deb.compute_codename(current_user.distribution,
                  current_user.derivative, 
                  current_user.license,
                  current_user.security)
