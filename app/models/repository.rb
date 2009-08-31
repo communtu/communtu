@@ -280,5 +280,12 @@ class Repository < ActiveRecord::Base
      or option == "Installed-Size" or option == "Size" \
      or option == "Filename"
   end
-  
+
+  def self.write_apt_list(filename)
+    f = File.open(filename)
+    Repository.all.each do |r|
+      f.puts "#{r.url} #{r.subtype}"
+    end
+    f.close
+  end
 end

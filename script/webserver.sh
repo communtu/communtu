@@ -29,7 +29,7 @@ sudo gem install -v=2.2.2 rails -y
 sudo gem install i18n
 cd ..
 # debian packaging
-sudo apt-get install reprepro fakeroot dpkg-dev dh-make build-essential debootstrap schroot
+sudo apt-get install reprepro fakeroot dpkg-dev dh-make build-essential debootstrap schroot edos-debcheck apt-mirror
 #backup
 sudo apt-get install rsync
 # mysql server
