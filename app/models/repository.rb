@@ -281,11 +281,14 @@ class Repository < ActiveRecord::Base
      or option == "Filename"
   end
 
-  def self.write_apt_list(filename)
-    f = File.open(filename,"w")
+  def self.write_mirror_list
+    f = File.open("mirror.list","w")
+    f.puts "set nthreads     20"
+    f.puts "set _tilde 0"
     Repository.all.each do |r|
       f.puts "#{r.url} #{r.subtype}"
     end
+    f.puts "clean http://archive.ubuntu.com/ubuntu"
     f.close
   end
 end
