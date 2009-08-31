@@ -286,7 +286,10 @@ class Repository < ActiveRecord::Base
     f.puts "set nthreads     20"
     f.puts "set _tilde 0"
     Repository.all.each do |r|
-      f.puts "#{r.url} #{r.subtype}"
+      ["i386","amd64"].each do |arch|
+        plain_url = r.url.gsub(/deb /,"")
+        f.puts "deb-#{arch} #{plain_url} #{r.subtype}"
+      end
     end
     f.puts "clean http://archive.ubuntu.com/ubuntu"
     f.close
