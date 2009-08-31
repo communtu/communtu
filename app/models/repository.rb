@@ -282,7 +282,7 @@ class Repository < ActiveRecord::Base
   end
 
   def self.write_apt_list(filename)
-    f = File.open(filename)
+    f = File.open(filename,"w")
     Repository.all.each do |r|
       f.puts "#{r.url} #{r.subtype}"
     end
