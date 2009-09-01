@@ -26,7 +26,7 @@ msgstr ""
 
 #: view_home_beteiligung_10
 msgid "Graphic"
-msgstr ""
+msgstr "Grafik"
 
 #: controller_users_13
 msgid "A Problem occured while activating this user."
