@@ -9,5 +9,8 @@ namespace :db do
         end
       end
     end
+    task :mirrorlist => :environment do
+      Repository.write_mirror_list
+    end
   end
 end
