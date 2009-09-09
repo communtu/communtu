@@ -616,7 +616,7 @@ en:
   view_repositories_multinew_0: read
   view_roles_new_0: New role
   view_user_profiles__profile_rating_3: Attention! When finished, don't forget to click on "Save".
-  view_home_faq_24: This can be done with Synaptic. To reach Synaptic in a Gnome-based system, you open the menu "System" -> "Administration" -> "Synaptic Package Manager". To reach Synaptic in a KDE-based system, you open the K-menu and then navigate to "Programs" -> "System" -> "Administration" -> "Synaptic Package Manager". Next you choose the menu-entry "Origin" in the lower-left corner. In the list, which now appears above this section of Synaptic, you choose the entry "packages.communtu.de". In the main-part of Synaptic, on the right side of the program-window, you now have a list of the installed metapackages. To remove a metapackage you right-click it and choose "Mark for Removal". To finish the removal of a metapackage you now have just to click on "Apply" in the menu-bar above. However, the packages contained in this metapackage will not be removed! To remove these you have to choose the packages with Synaptic and remove them individually.
+  view_home_faq_24: This can be done with Synaptic. To reach Synaptic in a Gnome-based system, you open the menu "System" -> "Administration" -> "Synaptic Package Manager". To reach Synaptic in a KDE-based system, you open the K-menu and then navigate to "Programs" -> "System" -> "Administration" -> "Software Management". Next you choose the menu-entry "Origin" in the lower-left corner. In the list, which now appears above this section of Synaptic, you choose the entry "packages.communtu.de". In the main-part of Synaptic, on the right side of the program-window, you now have a list of the installed metapackages. To remove a metapackage you right-click it and choose "Mark for Removal". To finish the removal of a metapackage you now have just to click on "Apply" in the menu-bar above. However, the packages contained in this metapackage will not be removed! To remove these you have to choose the packages with Synaptic and remove them individually.
   senden: Send
   view_packages_show_2: install package instantly
   view_videos_edit_0: edit video
@@ -718,6 +718,7 @@ en:
   controller_passwords_8: Passwords do not match.
   view_home_news_7: http://groups.google.com/group/communtu-discuss-en/topics?start=
   view_users_new_6: confirm password
+  choose_category: Please make a choice
   subject_with_colon: "Subject:"
   controller_suggestion_16: The following packages will be installed
   view_home_news_8: .

@@ -2414,8 +2414,8 @@ msgid "Abschicken"
 msgstr "Send"
 
 #: view_home_faq_24
-msgid "Dies kann über Synaptic erfolgen. Hierzu gehst Du bei einem Gnome-System auf \"System -> Systemverwaltung -> Synaptic-Paketverwaltung\". Bei einem KDE4-System musst Du über \"K-Menu -> Programme-> System -> Systemverwaltung -> Synaptic-Paketverwaltung\" gehen. Wähle hier unten links den Punkt Ursprung. Suche nun in der darüber liegenden Liste packages.communtu.de und klicke es an. Auf der rechten Seite werden nun die verfügbaren Metapakete in Communtu angezeigt.  Das Entfernen geht über Rechtsmausklick und dann \"Zum Entfernen vormerken\". Dies muss dann danach durch \"Anwenden\" bestätigt werden.  Die einzelnen Pakete werden dadurch nicht deinstalliert, sondern lassen sich wie gewohnt über <a href=\"http://wiki.ubuntuusers.de/Synaptic\" target=\"_blank\">Synaptic</a> auswählen und deinstallieren."
-msgstr "This can be done with Synaptic. To reach Synaptic in a Gnome-based system, you open the menu \"System\" -> \"Administration\" -> \"Synaptic Package Manager\". To reach Synaptic in a KDE-based system, you open the K-menu and then navigate to \"Programs\" -> \"System\" -> \"Administration\" -> \"Synaptic Package Manager\". Next you choose the menu-entry \"Origin\" in the lower-left corner. In the list, which now appears above this section of Synaptic, you choose the entry \"packages.communtu.de\". In the main-part of Synaptic, on the right side of the program-window, you now have a list of the installed metapackages. To remove a metapackage you right-click it and choose \"Mark for Removal\". To finish the removal of a metapackage you now have just to click on \"Apply\" in the menu-bar above. However, the packages contained in this metapackage will not be removed! To remove these you have to choose the packages with Synaptic and remove them individually."
+msgid "Dies kann über Synaptic erfolgen. Hierzu gehst Du bei einem Gnome-System auf \"System -> Systemverwaltung -> Synaptic-Paketverwaltung\". Bei einem KDE4-System musst Du über \"K-Menu -> Programme-> System -> Systemverwaltung -> Software-Verwaltung\" gehen. Wähle hier unten links den Punkt Ursprung. Suche nun in der darüber liegenden Liste packages.communtu.de und klicke es an. Auf der rechten Seite werden nun die verfügbaren Metapakete in Communtu angezeigt.  Das Entfernen geht über Rechtsmausklick und dann \"Zum Entfernen vormerken\". Dies muss dann danach durch \"Anwenden\" bestätigt werden.  Die einzelnen Pakete werden dadurch nicht deinstalliert, sondern lassen sich wie gewohnt über <a href=\"http://wiki.ubuntuusers.de/Synaptic\" target=\"_blank\">Synaptic</a> auswählen und deinstallieren."
+msgstr "This can be done with Synaptic. To reach Synaptic in a Gnome-based system, you open the menu \"System\" -> \"Administration\" -> \"Synaptic Package Manager\". To reach Synaptic in a KDE-based system, you open the K-menu and then navigate to \"Programs\" -> \"System\" -> \"Administration\" -> \"Software Management\". Next you choose the menu-entry \"Origin\" in the lower-left corner. In the list, which now appears above this section of Synaptic, you choose the entry \"packages.communtu.de\". In the main-part of Synaptic, on the right side of the program-window, you now have a list of the installed metapackages. To remove a metapackage you right-click it and choose \"Mark for Removal\". To finish the removal of a metapackage you now have just to click on \"Apply\" in the menu-bar above. However, the packages contained in this metapackage will not be removed! To remove these you have to choose the packages with Synaptic and remove them individually."
 
 #: view_user_profiles__installation_20
 msgid "Dieser Schritt wurde bereits schon einmal ausgeführt. \t\t"
@@ -2788,6 +2788,10 @@ msgstr "Password not changed."
 #: donation_receipt
 msgid "Spendenbescheinigung kann ausgestellt werden."
 msgstr "Donation receipt can be issued."
+
+#: choose_category
+msgid "Bitte auswählen"
+msgstr "Please make a choice"
 
 #: view_users_new_6
 msgid "Passwort bestätigen"
