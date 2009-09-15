@@ -33,6 +33,9 @@ class HomeController < ApplicationController
   def mail
   end
 
+  def donate
+  end
+  
  def email
      @form_name = params[:form][:name]
      @form_frage = params[:form][:frage]
