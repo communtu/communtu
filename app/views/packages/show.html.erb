@@ -1,8 +1,10 @@
   <% if logged_in? %>
     <div class="inner0">
-<span class="headline">  <%= @package.icon(35)%>
-  <%= @package.name %>
-</span><br /><br />
+<span class="headline">
+	<%= @package.icon(35)%>
+	<%= @package.name %>
+</span>
+<p align="right"><%= link_to t(:view_metapackages_show_3), request.env['HTTP_REFERER'] %></p>
 <% url1 = "apt://"+@package.name %>
 <% url2 = "/users/#{current_user.id}/suggestion/install_package_sources/#{@package.id}" %>
 <%= link_to image_tag("/images/install.png", :size => "22x22", :border => "0", :title => t(:install_package_sources_first), :alt => t(:install2)), url1 %>		
