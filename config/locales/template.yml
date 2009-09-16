@@ -601,7 +601,8 @@ de:
   view_metapackages_show_comment_and_ratings: Neuste Kommentare und Bewertungen für dieses Bündel
   view_metapackages_show_deb_error: Beim Erzeugen von Metapaketen ist ein Fehler aufgetreten. Wir kümmern uns um das Problem.
   view_metapackages_show_modified: "Das Bündel enthält Änderungen."
-  view_metapackages_show_save: "Neues Metapaket erstellen:"
+  view_metapackages_show_save: "Bündel als Metapaket speichern"
+  view_metapackages_show_save_2: "Neues Metapake erstellen:"
   view_metapackages_show_version: "Version:"
   view_metapackages_show_version_v: "(Version {{v}})"
   view_my_mailer_mail_0: "Hallo, \n\nes wurde auf www.communtu.de ein Feedback gesendet. Der Betreff ist:"
