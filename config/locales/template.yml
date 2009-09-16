@@ -42,8 +42,8 @@ de:
   controller_distributions_0: Ubuntu Distributionen
   controller_distributions_1: Distribution erzeugt.
   controller_distributions_2: Distribution aktualisiert.
-  controller_home_1: "Die E-Mail wurde an uns gesendet. Vielen Dank für Dein Feedback."
-  controller_home_2: Wir werden dich per E-Mail benachrichtigen.
+  controller_home_1: "Die E-Mail wurde an uns gesendet. Vielen Dank für Deine Nachricht."
+  controller_home_2: Wir werden uns per E-Mail bei Dir melden.
   controller_home_3: Das sieht nicht nach einer Liste von Ubuntu-Paketen aus... <br />Die Paketliste muss einen Paketnamen pro Zeile enthalten
   controller_home_4: Es muss eine Datei mit der Paketliste (ein Paketname pro Zeile) angegeben werden
   controller_home_5: "Wir haben Deinen Vorschlag erhalten und werden Dich informieren, ob und wann wir das vorgeschlagene Repository aufnehmen werden."
@@ -125,7 +125,7 @@ de:
   edit: Bearbeiten
   email_with_colon: "E-Mail: "
   email_without_colon: E-Mail
-  feedback: Feedback
+  feedback: Kommentar
   four_and_fourty_letters: Zwischen 4 und 40 Zeichen
   gpg_key: "GPG Schlüssel (optional): "
   helper_distributions_0: free
@@ -356,7 +356,7 @@ de:
      leider hat da etwas beim Spenden nicht funktioniert.
   view_home_cancel_1: "Endweder versuchst Du es noch einmal oder Du nutzt die Möglichkeit per Überweisung"
   view_home_contact_us_0: Feedbackformular
-  view_home_contact_us_1: "Hier hast Du die Möglichkeit uns ein Feedback zu senden."
+  view_home_contact_us_1: "Hier hast Du die Möglichkeit uns Anregungen und Kritik zu Communtu zu senden."
   view_home_contact_us_4: Senden
   view_home_derivatives_10: http://wiki.ubuntuusers.de/Ubuntu_Studio
   view_home_derivatives_11: " - Ubuntu Multimedie-Edition. \
