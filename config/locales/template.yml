@@ -424,6 +424,8 @@ de:
   view_home_derivatives_7: "unter der Kategorie \"Derivate\" zur Installation ausgewählt werden."
   view_home_derivatives_8: Ebenso kannst du dort nachgucken, aus welchen Paketen ein Derivat besteht.
   view_home_derivatives_9: "Über Communtu sinnvoll nachinstallierbare Derivate:"
+  view_home_donate: Für Communtu spenden
+  view_home_donate_why: Der Betrieb der Communtu-Webseite basiert vor allem auf dem Einsatz von Freiwilligen; er kostet aber auch Geld (u.a. für Server und Räume).
   view_home_faq_00: Häufig gestellte Fragen
   view_home_faq_01: Was ist ein Bündel?
   view_home_faq_02: Ein Bündel ist eine Zusammenstellung von Software für einen bestimmten Aufgabenbereich, den Du mit Deinem Rechner erledigen kannst.
@@ -558,6 +560,7 @@ de:
   view_layouts_application_8: Start
   view_layouts_application_9: Abmelden
   view_layouts_application_warning: "Achtung: in Kürze werden auf diesem Webserver kurze Wartungsarbeiten durchgeführt!"
+  view_layouts_donate: Spenden
   view_mailbox_show_1: Von
   view_mailbox_show_3: erhalten
   view_mailbox_show_5: Du hast keine Nachrichten in deinem Posteingang.
@@ -648,7 +651,6 @@ de:
   view_passwords_new_2: "Passwort zurücksetzen"
   view_rating_new_comment_cancel: Abbrechen
   view_rating_new_comment_info: Gib bitte eine Beschreibung zu deiner Bewertung an. Diese Angabe ist <b>Pflicht</b>.
-  view_rating_new_comment_textfield_label: Kommentar 
   view_rating_rating_rate: von 5 Sternen vergeben
   view_rating_show_title_got_ratings: von 5 Sternen
   view_rating_show_title_no_ratings: noch keine User Bewertung
@@ -789,4 +791,3 @@ de:
   you_can: "Du kannst Dich auch "
   zentrum_solidarische_oekonomie: "Zentrum für Solidarische Ökonomie"
   choose_category: "Bitte auswählen"
-  bundel_information_edit: Bündel-Informationen anpassen

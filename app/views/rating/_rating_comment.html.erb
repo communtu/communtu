@@ -1,7 +1,7 @@
 <% form_for :rating, :html=>{:name=>"rating_comment_#{metapackage.id}"},:url=>{ :id=>metapackage.id, :action=>"rate", :controller=>"rating"} do |f| %>
 
 <p><%= t(:view_rating_new_comment_info)%></p>
-<%=t(:view_rating_new_comment_textfield_label)%>
+<%=t(:feedback)%>
 <%= f.text_area :comment, :class=>"rating_comment_field" %>
 <%= hidden_field_tag(:user_rating)%>
 <input name="commit" value="<%=t(:view_home_contact_us_4)%>" onclick="this.form.user_rating.value = ajax_rating" type="submit">        <%= link_to_function "#{t(:view_rating_new_comment_cancel)}", update_page { |page| page.visual_effect(:toggle_appear, ("comment_" + metapackage.id.to_s),:duration => 1);page.remove('current-rating-rated-' + metapackage.id.to_s);page.show("stars-#{metapackage.id}-1","stars-#{metapackage.id}-2","stars-#{metapackage.id}-3","stars-#{metapackage.id}-4","stars-#{metapackage.id}-5")}%>

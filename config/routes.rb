@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :architectures
+
 
   map.connect '/debs/generate', :controller => 'debs', :action => 'generate'
   map.connect '/debs/generate_all', :controller => 'debs', :action => 'generate_all'
