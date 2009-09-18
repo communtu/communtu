@@ -203,6 +203,10 @@ msgstr "could not determine URL"
 msgid "Impressum"
 msgstr "Imprint"
 
+#: view_home_donate_why
+msgid "Der Betrieb der Communtu-Webseite basiert vor allem auf dem Einsatz von Freiwilligen; er kostet aber auch Geld (u.a. für Server und Räume)."
+msgstr "The development of Communtu is mainly based on the effort of volunteers but it also costs money (amongst others the server and the rooms)."
+
 #: view_home_derivatives_10
 msgid "http://wiki.ubuntuusers.de/Ubuntu_Studio"
 msgstr "https://wiki.ubuntu.com/UbuntuStudio"
@@ -523,13 +527,13 @@ msgstr " about this project and its participants in the "
 msgid " Programm (wenn kein anderes Programm-Icon vorhanden)"
 msgstr " Program (if not other program-icon is available)"
 
-#: used_in_bundles
-msgid "Wird bei Communtu in folgenden Bündeln benutzt:"
-msgstr "Is used at Communtu in these bundles:"
-
 #: view_home_home_17
 msgid "Impressum."
 msgstr "imprint."
+
+#: used_in_bundles
+msgid "Wird bei Communtu in folgenden Bündeln benutzt:"
+msgstr "Is used at Communtu in these bundles:"
 
 #: view_repositories_show_0
 msgid "Repository anzeigen"
@@ -589,6 +593,10 @@ msgstr "short name"
 msgid "Im Paket "
 msgstr "In the package"
 
+#: view_metapackages_show_save_2
+msgid "Neues Metapaket erstellen:"
+msgstr "Create new meta-package:"
+
 #: view_home_icons_15
 msgid " Programm-Bündel"
 msgstr " program-bundle"
@@ -640,6 +648,10 @@ msgstr " Allow community-sources (\"universe/multiverse\", secure, more programs
 #: view_repositories_show_4
 msgid "Paketliste für i386:"
 msgstr "package-list for i386:"
+
+#: view_metapackages_show_save_3
+msgid "Zum Erstellen des Metapakets muss ein englischer Titel vergeben werden."
+msgstr "To create a meta-package an English title is needed."
 
 #: view_home_icons_17
 msgid "externer Link"
@@ -734,8 +746,8 @@ msgid "Es gibt aber auch viele Anwendungen, die erst noch nachinstalliert werden
 msgstr "There are many applications which have to be post-installed, e. g. programs for audio, video and graphics, in order to really make the computer able to use Ubuntu. Communtu helps to make the post-installation easier, and furthermore, has special sections for beginners and users coming from Windows."
 
 #: view_user_profiles__profile_data_15
-msgid " Unfreie Lizenzen zulassen (auch kostenlos, aber Quellen liegen nicht offen - sozusagen das Methadon für einen weichen Übergang zu Linux: "
-msgstr " Allow commercial licenses (free too, but the sources are closed - quasi the methadone for a fluent changeover to Linux)"
+msgid " Unfreie Lizenzen zulassen (auch kostenlos, aber Quellen liegen nicht offen - der weiche Übergang zu Linux: "
+msgstr " Allow commercial licenses (free too, but the sources are closed - the fluent change to Linux:"
 
 #: view_roles_show_0
 msgid "Rollenname:"
@@ -1088,6 +1100,10 @@ msgstr "packages"
 #: direct_indirect_covered_packages
 msgid "Direkt und indirekt enthaltene Pakete"
 msgstr "Direct and indirect covered packages"
+
+#: view_home_donate
+msgid "Für Communtu spenden"
+msgstr "Make a donation for Communtu"
 
 #: view_home_news_17
 msgid "Zum Blog"
@@ -1556,8 +1572,8 @@ msgid "Ubuntu Distributionen"
 msgstr "Ubuntu distributions"
 
 #: controller_home_1
-msgid "Die E-Mail wurde an uns gesendet. Vielen Dank für Dein Feedback."
-msgstr "The e-mail has been sent to us. Many thanks for your feedback."
+msgid "Die E-Mail wurde an uns gesendet. Vielen Dank für Deine Nachricht."
+msgstr "The e-mail has been sent to us. Many thanks for your message."
 
 #: controller_metapackages_bundle_not_found
 msgid "Bündel nicht gefunden."
@@ -1588,15 +1604,15 @@ msgid "Distribution erzeugt."
 msgstr "Distribution created."
 
 #: feedback
-msgid "Feedback"
-msgstr "feedback"
+msgid "Kommentar"
+msgstr "Comment "
 
 #: view_categories_show_2
 msgid "Weitere Informationen:"
 msgstr "Further information:"
 
 #: controller_home_2
-msgid "Wir werden dich per E-Mail benachrichtigen."
+msgid "Wir werden uns per E-Mail bei Dir melden."
 msgstr "We will notify you via e-mail."
 
 #: not_logged_in
@@ -1820,8 +1836,8 @@ msgid "Nachrichtensymbol"
 msgstr "Message-icon"
 
 #: view_home_contact_us_1
-msgid "Hier hast Du die Möglichkeit uns ein Feedback zu senden."
-msgstr "Here you have the possibility to send us feedback."
+msgid "Hier hast Du die Möglichkeit uns Anregungen und Kritik zu Communtu zu senden."
+msgstr "Here you have the possibility to send us suggestions and critique about Communtu."
 
 #: view_cart_update_2
 msgid "Expertenlevel:"
@@ -2144,10 +2160,6 @@ msgstr "repositories synchronised"
 #: view_home_derivatives_55
 msgid " - Mediacenter."
 msgstr " - Mediacenter."
-
-#: view_rating_new_comment_textfield_label
-msgid "Kommentar"
-msgstr "Comment "
 
 #: view_home_home_6
 msgid "<b>Installation</b> bietet dir eine Zusammenstellung (Bündelung) von Programmen für die Installation auf deinem Computer an, entsprechend deinen Angaben, für welche Aufgaben du deinen Ubuntu-PC benutzen willst."
@@ -2545,6 +2557,10 @@ msgstr "Zentrum für Solidarische Ökonomie"
 msgid "Gebe dort ein: "
 msgstr "There you enter the following:"
 
+#: view_layouts_donate
+msgid "Spenden"
+msgstr "Donate"
+
 #: view_home_derivatives_33
 msgid "http://de.wikipedia.org/wiki/GNU-Varianten#Nexenta_OS"
 msgstr "http://en.wikipedia.org/wiki/Nexenta_OS"
@@ -2896,21 +2912,4 @@ msgstr "What is a bundle?"
 #: controller_users_12
 msgid "Benutzer aktiviert"
 msgstr "User activated"
-
-#~ msgid "Es gab ein Problem mit der anonymen Nutzung."
-#~ msgstr "An error occured with the anonymous use."
-#~ msgid "Anonym nutzen"
-#~ msgstr "Anonymous access"
-#~ msgid " Bündel ausgewählt</option> \n"
-#~ msgstr " bundle selected </option> \n"
-#~ msgid "<option value='0'>Löschen</option>"
-#~ msgstr "<option calue='0'>Delete</option>"
-#~ msgid "<option value='1'>Migrieren</option>"
-#~ msgstr "<option value='1'>Migrate</option>"
-#~ msgid "Neue Distribution "
-#~ msgstr "New distribution"
-#~ msgid "Sie haben neue Nachrichten in Ihrem Posteingang."
-#~ msgstr "You have new messages in your inbox."
-#~ msgid "Folgende Pakete wurden nicht gefunden: "
-#~ msgstr "The following packages couldn't be found:"
 

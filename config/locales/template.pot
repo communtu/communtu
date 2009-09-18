@@ -154,6 +154,9 @@ msgstr ""
 #: imprint
 msgid "Impressum"
 msgstr ""
+#: view_home_donate_why
+msgid "Der Betrieb der Communtu-Webseite basiert vor allem auf dem Einsatz von Freiwilligen; er kostet aber auch Geld (u.a. für Server und Räume)."
+msgstr ""
 #: view_home_derivatives_10
 msgid "http://wiki.ubuntuusers.de/Ubuntu_Studio"
 msgstr ""
@@ -394,11 +397,11 @@ msgstr ""
 #: view_home_icons_12
 msgid " Programm (wenn kein anderes Programm-Icon vorhanden)"
 msgstr ""
-#: used_in_bundles
-msgid "Wird bei Communtu in folgenden Bündeln benutzt:"
-msgstr ""
 #: view_home_home_17
 msgid "Impressum."
+msgstr ""
+#: used_in_bundles
+msgid "Wird bei Communtu in folgenden Bündeln benutzt:"
 msgstr ""
 #: view_repositories_show_0
 msgid "Repository anzeigen"
@@ -439,6 +442,9 @@ msgstr ""
 #: view_packages_rdepends_0
 msgid "Im Paket "
 msgstr ""
+#: view_metapackages_show_save_2
+msgid "Neues Metapaket erstellen:"
+msgstr ""
 #: view_home_icons_15
 msgid " Programm-Bündel"
 msgstr ""
@@ -471,6 +477,9 @@ msgid " Auch Communityquellen zulassen (\"universe/multiverse\", auch sicher, me
 msgstr ""
 #: view_repositories_show_4
 msgid "Paketliste für i386:"
+msgstr ""
+#: view_metapackages_show_save_3
+msgid "Zum Erstellen des Metapakets muss ein englischer Titel vergeben werden."
 msgstr ""
 #: view_home_icons_17
 msgid "externer Link"
@@ -542,7 +551,7 @@ msgstr ""
 msgid "Es gibt aber auch viele Anwendungen, die erst noch nachinstalliert werden müssen, z.B. in den Bereichen Audio, Video und Grafik, damit dein Computer mit Ubuntu wirklich  benutzbar ist. Communtu macht diese Nachinstallation jetzt noch einfacher und hat zudem spezielle Bereiche für Einsteiger und Windows-Umsteiger."
 msgstr ""
 #: view_user_profiles__profile_data_15
-msgid " Unfreie Lizenzen zulassen (auch kostenlos, aber Quellen liegen nicht offen - sozusagen das Methadon für einen weichen Übergang zu Linux: "
+msgid " Unfreie Lizenzen zulassen (auch kostenlos, aber Quellen liegen nicht offen - der weiche Übergang zu Linux: "
 msgstr ""
 #: view_roles_show_0
 msgid "Rollenname:"
@@ -807,6 +816,9 @@ msgid "Pakete"
 msgstr ""
 #: direct_indirect_covered_packages
 msgid "Direkt und indirekt enthaltene Pakete"
+msgstr ""
+#: view_home_donate
+msgid "Für Communtu spenden"
 msgstr ""
 #: view_home_news_17
 msgid "Zum Blog"
@@ -1151,7 +1163,7 @@ msgstr ""
 msgid "Ubuntu Distributionen"
 msgstr ""
 #: controller_home_1
-msgid "Die E-Mail wurde an uns gesendet. Vielen Dank für Dein Feedback."
+msgid "Die E-Mail wurde an uns gesendet. Vielen Dank für Deine Nachricht."
 msgstr ""
 #: controller_metapackages_bundle_not_found
 msgid "Bündel nicht gefunden."
@@ -1175,13 +1187,13 @@ msgstr ""
 msgid "Distribution erzeugt."
 msgstr ""
 #: feedback
-msgid "Feedback"
+msgid "Kommentar"
 msgstr ""
 #: view_categories_show_2
 msgid "Weitere Informationen:"
 msgstr ""
 #: controller_home_2
-msgid "Wir werden dich per E-Mail benachrichtigen."
+msgid "Wir werden uns per E-Mail bei Dir melden."
 msgstr ""
 #: not_logged_in
 msgid "Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden."
@@ -1349,7 +1361,7 @@ msgstr ""
 msgid "Nachrichtensymbol"
 msgstr ""
 #: view_home_contact_us_1
-msgid "Hier hast Du die Möglichkeit uns ein Feedback zu senden."
+msgid "Hier hast Du die Möglichkeit uns Anregungen und Kritik zu Communtu zu senden."
 msgstr ""
 #: view_cart_update_2
 msgid "Expertenlevel:"
@@ -1563,9 +1575,6 @@ msgid "Repositories synchronisiert"
 msgstr ""
 #: view_home_derivatives_55
 msgid " - Mediacenter."
-msgstr ""
-#: view_rating_new_comment_textfield_label
-msgid "Kommentar"
 msgstr ""
 #: view_home_home_6
 msgid "<b>Installation</b> bietet dir eine Zusammenstellung (Bündelung) von Programmen für die Installation auf deinem Computer an, entsprechend deinen Angaben, für welche Aufgaben du deinen Ubuntu-PC benutzen willst."
@@ -1857,6 +1866,9 @@ msgid "Zentrum für Solidarische Ökonomie"
 msgstr ""
 #: view_user_profiles_help_2
 msgid "Gebe dort ein: "
+msgstr ""
+#: view_layouts_donate
+msgid "Spenden"
 msgstr ""
 #: view_home_derivatives_33
 msgid "http://de.wikipedia.org/wiki/GNU-Varianten#Nexenta_OS"

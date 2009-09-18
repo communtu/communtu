@@ -21,7 +21,6 @@ en:
   view_home_beteiligung_13: Since we have many ideas for the platform's further development, we need programmers. Ideally you already have some experience with Ruby on Rails.
   view_accounts_edit_1: old password
   view_home_about_13: Post-installation of single functions
-  ~: ivat
   view_packages_show_15: source/repository
   view_home_faq_06: On the left side of the webpage is the bundle-editor. There you have to click "New Bundle". In the main-window you can choose packages and add them to the bundle. When finished, you have to click on the "Save"-symbol in the bundle-editor. Now a new window pop ups in the main-window where you have to enter a meaningful name and a description. Don't forget to assign your bundle to a category.
   view_home_beteiligung_14: We can also help you to learn this programming-language. You just have to contact
@@ -48,6 +47,7 @@ en:
   imprint: Imprint
   view_metapackages_show_9: "Published:"
   view_users_index_1: "We have a total of "
+  view_home_donate_why: The development of Communtu is mainly based on the effort of volunteers but it also costs money (amongst others the server and the rooms).
   view_home_derivatives_10: https://wiki.ubuntu.com/UbuntuStudio
   controller_metapackages_4: Bundle saved. It could take a couple of minutes until it is available as a metapackage.
   view_repositories_new_0: new repository for
@@ -149,6 +149,7 @@ en:
   no_admin: You are not an administrator!
   view_home_beteiligung_3: We need the information
   view_packages_rdepends_0: In the package
+  view_metapackages_show_save_2: "Create new meta-package:"
   view_home_icons_16: migration from repositories
   trusted: trusted
   view_home_beteiligung_4: |-
@@ -162,6 +163,7 @@ en:
   view_home_icons_17: external link
   view_repositories_show_4: "package-list for i386:"
   view_home_beteiligung_5: participate in the survey
+  view_metapackages_show_save_3: To create a meta-package an English title is needed.
   view_user_profiles__profile_data_11: " Allow community-sources (\"universe/multiverse\", secure, more programs/better comfort):"
   migrate_repository: migrate repository
   view_rating_rating_rate: out of 5 stars awarded
@@ -187,7 +189,7 @@ en:
   controller_users_2: An error occured while registering.
   controller_derivatives_2: Derivative updated.
   view_home_beteiligung_9: "For the development of the project we currently need support with these two jobs:"
-  view_user_profiles__profile_data_15: " Allow commercial licenses (free too, but the sources are closed - quasi the methadone for a fluent changeover to Linux)"
+  view_user_profiles__profile_data_15: " Allow commercial licenses (free too, but the sources are closed - the fluent change to Linux:"
   view_derivatives_index_0: show derivatives
   view_roles_show_0: "Rolename:"
   view_home_about_4: How do I use Communtu?
@@ -273,6 +275,7 @@ en:
   view_home_news_16: We have a blog where we post updated information about Communtu. It gets a new post about once a week. Announcement and new features will be presented here.
   packages: packages
   direct_indirect_covered_packages: Direct and indirect covered packages
+  view_home_donate: Make a donation for Communtu
   add: add
   view_home_news_17: Go to the blog
   install: install
@@ -390,7 +393,7 @@ en:
   controller_debs_0: Debian-packages
   view_home_derivatives_25: http://en.wikipedia.org/wiki/Xfce
   controller_distributions_0: Ubuntu distributions
-  controller_home_1: The e-mail has been sent to us. Many thanks for your feedback.
+  controller_home_1: The e-mail has been sent to us. Many thanks for your message.
   view_packages_edit_8: New link to a video
   controller_metapackages_bundle_not_found: Bundle not found.
   view_user_profiles__installation_19: "Attention: after clicking, it will take a moment until the file is provided."
@@ -398,7 +401,7 @@ en:
   view_home_derivatives_26: " - with the slim Xfce as the graphical interface. Particularly suitable for older computers: 128 MB RAM and 1,5 GB free hard disk space are sufficient. Should be installed from the CD to guarantee a slim installation. Post-installation can be done with Communtu."
   controller_distributions_1: Distribution created.
   view_packages_new_6: Videos
-  feedback: feedback
+  feedback: "Comment "
   view_categories_show_2: "Further information:"
   controller_home_2: We will notify you via e-mail.
   view_users__sidebar_0: Installation
@@ -406,13 +409,13 @@ en:
   not_logged_in: You are currently not logged in. Please click on "log in" above.
   controller_debs_2: Deb updated.
   view_home_derivatives_27: http://en.wikipedia.org/wiki/LinuxMCE
+  view_home_derivatives_28: " - with this, Ubuntu is going to be "
+  controller_home_3: This does not appear to be a list with Ubuntu-packages... <br />The packagelist must contain one packagename per line
   controller_distributions_2: Distribution updated.
   view_metapackages__package_list_0: "Total size of bundle on disk:"
   view_user_mailer_reset_password_0: ", you have received a new password."
   view_categories_show_3: "Superior category:"
   bundle: bundle
-  controller_home_3: This does not appear to be a list with Ubuntu-packages... <br />The packagelist must contain one packagename per line
-  view_home_derivatives_28: " - with this, Ubuntu is going to be "
   controller_home_4: A file with the package list (one package name per line) has to be given
   view_home_home_20: " to create a new user or"
   view_metapackages__package_list_1: "available for:"
@@ -457,7 +460,7 @@ en:
   view_user_profiles__installation_1: In order to install, you have to specify some things at "Base data" or "Details".
   controller_suggestion_2: Add repositories and keys for the user
   view_cart_update_2: "Level of expert:"
-  view_home_contact_us_1: Here you have the possibility to send us feedback.
+  view_home_contact_us_1: Here you have the possibility to send us suggestions and critique about Communtu.
   view_home_icons_23: Message-icon
   view_metapackages_show_15: "Edit "
   view_user_profiles__installation_2: "Because of your choice the programs will now be installed on your computer. Please follow these steps:"
@@ -559,7 +562,6 @@ en:
   controller_metapackages_conflicts: This bundle contains packages, which are in conflict!
   model_mailer_5: suggestion of a repository
   view_home_home_6: <b>Installation</b> offers you a summary (bundling) of programs for the installation on your computer, according to your instructions on how you want to use your Ubuntu-PC.
-  view_rating_new_comment_textfield_label: "Comment "
   view_home_derivatives_57: " for subnotebooks/EEE-PCs."
   view_admins_sync_package_2: repository synchronised
   name_with_colon: "Name:"
@@ -651,6 +653,7 @@ en:
   view_user_profiles_help_1: Open a new terminal. Click on "Applications" -> "Accessories" -> "Terminal"
   view_user_profiles__installation_25: installatin via apturl
   view_home_derivatives_33: http://en.wikipedia.org/wiki/Nexenta_OS
+  view_layouts_donate: Donate
   view_user_profiles_help_2: "There you enter the following:"
   zentrum_solidarische_oekonomie: "Zentrum f\xC3\xBCr Solidarische \xC3\x96konomie"
   third_party: "third-party "

@@ -91,9 +91,6 @@ msgstr ""
 #: view_metapackages_show_version_v
 msgid "(version {{v}})"
 msgstr ""
-#: 
-msgid "ivat"
-msgstr ""
 #: view_packages_show_16
 msgid "package-version"
 msgstr ""
@@ -156,6 +153,9 @@ msgid "Published:"
 msgstr ""
 #: view_users_index_1
 msgid "We have a total of "
+msgstr ""
+#: view_home_donate_why
+msgid "The development of Communtu is mainly based on the effort of volunteers but it also costs money (amongst others the server and the rooms)."
 msgstr ""
 #: view_home_derivatives_10
 msgid "https://wiki.ubuntu.com/UbuntuStudio"
@@ -451,6 +451,9 @@ msgstr ""
 #: view_packages_rdepends_0
 msgid "In the package"
 msgstr ""
+#: view_metapackages_show_save_2
+msgid "Create new meta-package:"
+msgstr ""
 #: view_home_icons_16
 msgid "migration from repositories"
 msgstr ""
@@ -477,6 +480,9 @@ msgid "package-list for i386:"
 msgstr ""
 #: view_home_beteiligung_5
 msgid "participate in the survey"
+msgstr ""
+#: view_metapackages_show_save_3
+msgid "To create a meta-package an English title is needed."
 msgstr ""
 #: view_user_profiles__profile_data_11
 msgid " Allow community-sources (\"universe/multiverse\", secure, more programs/better comfort):"
@@ -554,7 +560,7 @@ msgstr ""
 msgid "For the development of the project we currently need support with these two jobs:"
 msgstr ""
 #: view_user_profiles__profile_data_15
-msgid " Allow commercial licenses (free too, but the sources are closed - quasi the methadone for a fluent changeover to Linux)"
+msgid " Allow commercial licenses (free too, but the sources are closed - the fluent change to Linux:"
 msgstr ""
 #: view_derivatives_index_0
 msgid "show derivatives"
@@ -810,6 +816,9 @@ msgid "packages"
 msgstr ""
 #: direct_indirect_covered_packages
 msgid "Direct and indirect covered packages"
+msgstr ""
+#: view_home_donate
+msgid "Make a donation for Communtu"
 msgstr ""
 #: add
 msgid "add"
@@ -1148,7 +1157,7 @@ msgstr ""
 msgid "Ubuntu distributions"
 msgstr ""
 #: controller_home_1
-msgid "The e-mail has been sent to us. Many thanks for your feedback."
+msgid "The e-mail has been sent to us. Many thanks for your message."
 msgstr ""
 #: view_packages_edit_8
 msgid "New link to a video"
@@ -1172,7 +1181,7 @@ msgstr ""
 msgid "Videos"
 msgstr ""
 #: feedback
-msgid "feedback"
+msgid "Comment "
 msgstr ""
 #: view_categories_show_2
 msgid "Further information:"
@@ -1195,6 +1204,12 @@ msgstr ""
 #: view_home_derivatives_27
 msgid "http://en.wikipedia.org/wiki/LinuxMCE"
 msgstr ""
+#: bundle
+msgid "bundle"
+msgstr ""
+#: view_categories_show_3
+msgid "Superior category:"
+msgstr ""
 #: controller_distributions_2
 msgid "Distribution updated."
 msgstr ""
@@ -1203,12 +1218,6 @@ msgid "Total size of bundle on disk:"
 msgstr ""
 #: view_user_mailer_reset_password_0
 msgid ", you have received a new password."
-msgstr ""
-#: view_categories_show_3
-msgid "Superior category:"
-msgstr ""
-#: bundle
-msgid "bundle"
 msgstr ""
 #: controller_home_3
 msgid "This does not appear to be a list with Ubuntu-packages... <br />The packagelist must contain one packagename per line"
@@ -1352,7 +1361,7 @@ msgstr ""
 msgid "Message-icon"
 msgstr ""
 #: view_home_contact_us_1
-msgid "Here you have the possibility to send us feedback."
+msgid "Here you have the possibility to send us suggestions and critique about Communtu."
 msgstr ""
 #: view_cart_update_2
 msgid "Level of expert:"
@@ -1563,9 +1572,6 @@ msgid "repositories synchronised"
 msgstr ""
 #: view_home_derivatives_55
 msgid " - Mediacenter."
-msgstr ""
-#: view_rating_new_comment_textfield_label
-msgid "Comment "
 msgstr ""
 #: view_home_home_6
 msgid "<b>Installation</b> offers you a summary (bundling) of programs for the installation on your computer, according to your instructions on how you want to use your Ubuntu-PC."
@@ -1857,6 +1863,9 @@ msgid "Zentrum für Solidarische Ökonomie"
 msgstr ""
 #: view_user_profiles_help_2
 msgid "There you enter the following:"
+msgstr ""
+#: view_layouts_donate
+msgid "Donate"
 msgstr ""
 #: view_home_derivatives_33
 msgid "http://en.wikipedia.org/wiki/Nexenta_OS"
