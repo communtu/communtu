@@ -805,6 +805,9 @@ msgstr ""
 #: view_derivatives_show_3
 msgid "icon-file:"
 msgstr ""
+#: view_layouts_application_22
+msgid "to the profile"
+msgstr ""
 #: view_metapackages_show_comment_and_ratings
 msgid "Latest comments and ratings for this bundle"
 msgstr ""
@@ -832,6 +835,9 @@ msgstr ""
 #: view_home_derivatives_1
 msgid "Communtu is based on a standard-installation of Ubuntu. There are many different "
 msgstr ""
+#: view_layouts_application_23
+msgid "BUNDLE"
+msgstr ""
 #: view_home_news_18
 msgid "http://communtu.blogspot.com"
 msgstr ""
@@ -843,6 +849,9 @@ msgid "sent messages"
 msgstr ""
 #: view_home_derivatives_2
 msgid "Ubuntu derivatives "
+msgstr ""
+#: view_layouts_application_24
+msgid "DOWNLOAD"
 msgstr ""
 #: view_user_profiles__profile_data_0
 msgid "Preparing the installation: enter the base data"
@@ -865,6 +874,9 @@ msgstr ""
 #: view_packages__deps_0
 msgid "\t   none"
 msgstr ""
+#: view_layouts_application_25
+msgid "COMMUNTU"
+msgstr ""
 #: view_user_profiles__profile_data_1
 msgid "On this page you can prepare the post-installation for your Ubuntu installation in four easy steps. If desired, you can choose the bundles in a detailed overview."
 msgstr ""
@@ -882,6 +894,9 @@ msgid "You're missing some sources? You can suggest a repository to us."
 msgstr ""
 #: view_packages__deps_1
 msgid "          Only for "
+msgstr ""
+#: view_layouts_application_26
+msgid "Navigation bundle"
 msgstr ""
 #: view_user_profiles__profile_data_2
 msgid "Attention: when finished, don't forget to click on one of the \"Save\"-buttons!"
@@ -913,6 +928,9 @@ msgstr ""
 #: view_home_new_repository_2
 msgid "Link to the repository"
 msgstr ""
+#: view_layouts_application_27
+msgid "Navigation download"
+msgstr ""
 #: view_user_profiles__profile_data_3
 msgid "What tasks do you want to do with your computer? (only a rough choice; they can be chosen in detail later)"
 msgstr ""
@@ -942,6 +960,9 @@ msgid "Communtu -\n something went wrong while donating."
 msgstr ""
 #: view_home_new_repository_3
 msgid "Why should this be implemented in Communtu? (If you want to be informed about the take-up, please enter your contact information)"
+msgstr ""
+#: view_layouts_application_28
+msgid "Navigation Communtu"
 msgstr ""
 #: view_user_profiles__profile_data_4
 msgid "further information"
@@ -981,6 +1002,9 @@ msgid "Create every failed deb <b>Warning: only do this at admin.communtu.de!</b
 msgstr ""
 #: view_home_derivatives_8
 msgid "You can also take a look of which packages a derivative consists."
+msgstr ""
+#: view_layouts_application_29
+msgid "guest"
 msgstr ""
 #: view_user_profiles__profile_data_6
 msgid "Please select an Ubuntu version. "
@@ -1174,6 +1198,15 @@ msgstr ""
 #: view_home_derivatives_26
 msgid " - with the slim Xfce as the graphical interface. Particularly suitable for older computers: 128 MB RAM and 1,5 GB free hard disk space are sufficient. Should be installed from the CD to guarantee a slim installation. Post-installation can be done with Communtu."
 msgstr ""
+#: view_packages_edit_9
+msgid "    Video description:"
+msgstr ""
+#: view_users__sidebar_0
+msgid "Installation"
+msgstr ""
+#: controller_home_2
+msgid "We will notify you via e-mail."
+msgstr ""
 #: controller_distributions_1
 msgid "Distribution created."
 msgstr ""
@@ -1186,15 +1219,6 @@ msgstr ""
 #: view_categories_show_2
 msgid "Further information:"
 msgstr ""
-#: controller_home_2
-msgid "We will notify you via e-mail."
-msgstr ""
-#: view_users__sidebar_0
-msgid "Installation"
-msgstr ""
-#: view_packages_edit_9
-msgid "    Video description:"
-msgstr ""
 #: not_logged_in
 msgid "You are currently not logged in. Please click on \"log in\" above."
 msgstr ""
@@ -1204,20 +1228,20 @@ msgstr ""
 #: view_home_derivatives_27
 msgid "http://en.wikipedia.org/wiki/LinuxMCE"
 msgstr ""
-#: bundle
-msgid "bundle"
-msgstr ""
-#: view_categories_show_3
-msgid "Superior category:"
-msgstr ""
-#: controller_distributions_2
-msgid "Distribution updated."
+#: view_user_mailer_reset_password_0
+msgid ", you have received a new password."
 msgstr ""
 #: view_metapackages__package_list_0
 msgid "Total size of bundle on disk:"
 msgstr ""
-#: view_user_mailer_reset_password_0
-msgid ", you have received a new password."
+#: controller_distributions_2
+msgid "Distribution updated."
+msgstr ""
+#: view_categories_show_3
+msgid "Superior category:"
+msgstr ""
+#: bundle
+msgid "bundle"
 msgstr ""
 #: controller_home_3
 msgid "This does not appear to be a list with Ubuntu-packages... <br />The packagelist must contain one packagename per line"
@@ -1309,6 +1333,9 @@ msgstr ""
 #: view_home_icons_20
 msgid "user-icon"
 msgstr ""
+#: view_home_home_26
+msgid "You installed Ubuntu and now you are looking for programs, which run with Ubuntu?"
+msgstr ""
 #: back
 msgid "Back"
 msgstr ""
@@ -1320,6 +1347,9 @@ msgid "Failed debs"
 msgstr ""
 #: view_user_profiles__installation_0
 msgid "Ubuntu post-installation"
+msgstr ""
+#: view_home_home_27
+msgid "Communtu helps you:"
 msgstr ""
 #: controller_profiles_0
 msgid "Installation of bundles"
@@ -1360,6 +1390,9 @@ msgstr ""
 #: view_home_icons_23
 msgid "Message-icon"
 msgstr ""
+#: view_home_home_28
+msgid "Download:"
+msgstr ""
 #: view_home_contact_us_1
 msgid "Here you have the possibility to send us suggestions and critique about Communtu."
 msgstr ""
@@ -1377,6 +1410,9 @@ msgid "AG Communtu"
 msgstr ""
 #: view_home_icons_24
 msgid "Receive a message-icon for new messages"
+msgstr ""
+#: view_home_home_29
+msgid "To which topic do look for programs (office, graphics, ...)? Enter your fields of interest and pre-configured bundles will be downloaded."
 msgstr ""
 #: published
 msgid "published"
@@ -1657,6 +1693,9 @@ msgstr ""
 #: view_messages_show_0
 msgid "From:"
 msgstr ""
+#: view_layouts_application_30
+msgid "Help"
+msgstr ""
 #: view_home_news_24
 msgid "participate"
 msgstr ""
@@ -1668,6 +1707,9 @@ msgid "Natur, Geist und Technik - Verein zur Förderung der Allgemeinbildung e.V
 msgstr ""
 #: controller_metapackages_11
 msgid "Couldn't delete package from bundle."
+msgstr ""
+#: view_layouts_application_31
+msgid "Contact"
 msgstr ""
 #: view_messages_show_2
 msgid "Received on:"
@@ -2002,6 +2044,9 @@ msgstr ""
 #: view_home_news_3
 msgid "communtu-announce-en+subscribe@googlegroups.com"
 msgstr ""
+#: view_home_home_30
+msgid "Bundle:"
+msgstr ""
 #: view_home_derivatives_39
 msgid " for older PCs. It is based on the LXDE-GUI."
 msgstr ""
@@ -2016,6 +2061,9 @@ msgid "compose a new message"
 msgstr ""
 #: view_users_edit_2
 msgid "delete profile"
+msgstr ""
+#: view_home_home_31
+msgid "Here you can choose the topics in detail, download single programs or complete bundles and you can create and manage your own bundles."
 msgstr ""
 #: controller_passwords_5
 msgid "Password must not be empty."
@@ -2038,11 +2086,17 @@ msgstr ""
 #: view_home_news_5
 msgid "This list is intended for general announcements from the Communtu team to the users. The frequency is a little higher than once a week. Posts will be collected in an"
 msgstr ""
+#: view_home_home_32
+msgid "Communtu:"
+msgstr ""
 #: controller_passwords_6
 msgid "Password changed."
 msgstr ""
 #: model_package_7
 msgid "couldn't determine URL for {{repo}}"
+msgstr ""
+#: view_home_home_33
+msgid "Do you want to know more about Communtu? Do you have suggestions or questions? We are looking forward to be in touch with you."
 msgstr ""
 #: controller_passwords_7
 msgid "Password not changed."

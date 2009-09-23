@@ -271,6 +271,7 @@ en:
   view_home_news_15: Our blog
   view_users_show_8: Message
   view_derivatives_show_3: "icon-file:"
+  view_layouts_application_22: to the profile
   view_metapackages_show_comment_and_ratings: Latest comments and ratings for this bundle
   view_home_news_16: We have a blog where we post updated information about Communtu. It gets a new post about once a week. Announcement and new features will be presented here.
   packages: packages
@@ -280,10 +281,12 @@ en:
   view_home_news_17: Go to the blog
   install: install
   view_home_derivatives_1: "Communtu is based on a standard-installation of Ubuntu. There are many different "
+  view_layouts_application_23: BUNDLE
   view_home_news_18: http://communtu.blogspot.com
   name_without_colon: Name
   view_sent_index_0: sent messages
   view_home_derivatives_2: "Ubuntu derivatives "
+  view_layouts_application_24: DOWNLOAD
   view_user_profiles__profile_data_0: "Preparing the installation: enter the base data"
   email_with_colon: "E-Mail:"
   email_without_colon: e-mail
@@ -291,12 +294,14 @@ en:
   view_home_derivatives_3: http://wiki.ubuntuusers.de/Was_ist_Linux?#Was-sind-Derivate-einer-Distribution (German)
   view_home_new_repository_0: Suggest repository
   view_packages__deps_0: \t   none
+  view_layouts_application_25: COMMUNTU
   view_user_profiles__profile_data_1: On this page you can prepare the post-installation for your Ubuntu installation in four easy steps. If desired, you can choose the bundles in a detailed overview.
   view_rating_show_title_ratings_count: (Based on {{votes}} rating(s))
   view_home_faq_10: Click on "Administrate bundles", which shows you your bundles, and then you click on the bundle you want to change. All important information concerning this bundle is now shown. With a click on "Actions" you can edit the bundle or the package-list. If the bundle is not published, you can delete it or publish the bundle, if you would like to do so.
   view_home_derivatives_4: " and many Ubuntu-users may ask themselves if they should use a derivative instead of Ubuntu. The answer is: normally the standard version of Ubuntu is completely sufficiant because with Communtu it is quite easy to install a derivative. However, this is not always a wise decision."
   view_home_new_repository_1: You're missing some sources? You can suggest a repository to us.
   view_packages__deps_1: "          Only for "
+  view_layouts_application_26: Navigation bundle
   view_user_profiles__profile_data_2: "Attention: when finished, don't forget to click on one of the \"Save\"-buttons!"
   view_rating_show_title_no_ratings: no user rating
   model_user_meta_tabz_0: My bundles
@@ -307,6 +312,7 @@ en:
   view_debs_index_0: Failed or running deb-generation
   view_home_derivatives_5: "Each derivative under "
   view_home_new_repository_2: Link to the repository
+  view_layouts_application_27: Navigation download
   view_user_profiles__profile_data_3: What tasks do you want to do with your computer? (only a rough choice; they can be chosen in detail later)
   model_user_meta_tabz_1: All published bundles
   add_sources: Add sources
@@ -319,6 +325,7 @@ en:
     Communtu -
      something went wrong while donating.
   view_home_new_repository_3: Why should this be implemented in Communtu? (If you want to be informed about the take-up, please enter your contact information)
+  view_layouts_application_28: Navigation Communtu
   view_user_profiles__profile_data_4: further information
   category_with_colon: "Category:"
   model_user_meta_tabz_2: Ubuntu packages
@@ -332,6 +339,7 @@ en:
   view_home_faq_14: To find a program, go to "Search programs". Enter the name of the program you are looking for into the search field. If you want to search only the programs click on "Programs only" and the libraries are not searched. Furthermore it is possible to choose a Debian-section where programs are preselected.
   view_debs_index_3: "Create every failed deb <b>Warning: only do this at admin.communtu.de!</b>"
   view_home_derivatives_8: You can also take a look of which packages a derivative consists.
+  view_layouts_application_29: guest
   view_user_profiles__profile_data_6: "Please select an Ubuntu version. "
   view_home_faq_15: How can I install a single program?
   view_home_success_0: " Thank you for your donation"
@@ -399,6 +407,9 @@ en:
   view_user_profiles__installation_19: "Attention: after clicking, it will take a moment until the file is provided."
   controller_debs_1: Deb created.
   view_home_derivatives_26: " - with the slim Xfce as the graphical interface. Particularly suitable for older computers: 128 MB RAM and 1,5 GB free hard disk space are sufficient. Should be installed from the CD to guarantee a slim installation. Post-installation can be done with Communtu."
+  view_home_derivatives_27: http://en.wikipedia.org/wiki/LinuxMCE
+  controller_debs_2: Deb updated.
+  not_logged_in: You are currently not logged in. Please click on "log in" above.
   controller_distributions_1: Distribution created.
   view_packages_new_6: Videos
   feedback: "Comment "
@@ -406,16 +417,13 @@ en:
   controller_home_2: We will notify you via e-mail.
   view_users__sidebar_0: Installation
   view_packages_edit_9: "    Video description:"
-  not_logged_in: You are currently not logged in. Please click on "log in" above.
-  controller_debs_2: Deb updated.
-  view_home_derivatives_27: http://en.wikipedia.org/wiki/LinuxMCE
   view_home_derivatives_28: " - with this, Ubuntu is going to be "
   controller_home_3: This does not appear to be a list with Ubuntu-packages... <br />The packagelist must contain one packagename per line
+  bundle: bundle
+  view_categories_show_3: "Superior category:"
   controller_distributions_2: Distribution updated.
   view_metapackages__package_list_0: "Total size of bundle on disk:"
   view_user_mailer_reset_password_0: ", you have received a new password."
-  view_categories_show_3: "Superior category:"
-  bundle: bundle
   controller_home_4: A file with the package list (one package name per line) has to be given
   view_home_home_20: " to create a new user or"
   view_metapackages__package_list_1: "available for:"
@@ -443,12 +451,14 @@ en:
   view_users__sidebar_6: Administrate categories
   view_cart_update_0: edit bundle-information
   back: Back
+  view_home_home_26: You installed Ubuntu and now you are looking for programs, which run with Ubuntu?
   view_home_icons_20: user-icon
   view_metapackages_show_12: Not published
   view_users__sidebar_7: Administrate derivatives
   security_type: "Security type:"
   allgemeinbildung: Allgemeinbildung e.V.
   controller_profiles_0: Installation of bundles
+  view_home_home_27: "Communtu helps you:"
   view_user_profiles__installation_0: Ubuntu post-installation
   view_users__sidebar_8: Failed debs
   controller_suggestion_1: In order to install something, you first have to choose something. Don't forget to save!
@@ -461,10 +471,12 @@ en:
   controller_suggestion_2: Add repositories and keys for the user
   view_cart_update_2: "Level of expert:"
   view_home_contact_us_1: Here you have the possibility to send us suggestions and critique about Communtu.
+  view_home_home_28: "Download:"
   view_home_icons_23: Message-icon
   view_metapackages_show_15: "Edit "
   view_user_profiles__installation_2: "Because of your choice the programs will now be installed on your computer. Please follow these steps:"
   published: published
+  view_home_home_29: To which topic do look for programs (office, graphics, ...)? Enter your fields of interest and pre-configured bundles will be downloaded.
   view_home_icons_24: Receive a message-icon for new messages
   view_home_impressum_2: AG Communtu
   view_metapackages_show_16: Edit package list
@@ -586,7 +598,9 @@ en:
   natur_geist_und_technik: "Natur, Geist und Technik - Verein zur F\xC3\xB6rderung der Allgemeinbildung e.V."
   helper_distributions_13: delete
   view_home_news_24: participate
+  view_layouts_application_30: Help
   view_messages_show_0: "From:"
+  view_layouts_application_31: Contact
   helper_distributions_15: Informational page at ubuntu.com
   superior_category: Superior category
   repository_url: "Repository-URL: "
@@ -701,21 +715,25 @@ en:
   confirm_new_passwd: Confirm new password
   controller_suggestion_11: add repository
   view_home_derivatives_39: " for older PCs. It is based on the LXDE-GUI."
+  view_home_home_30: "Bundle:"
   view_home_news_3: communtu-announce-en+subscribe@googlegroups.com
   view_users_new_2: If you want to be informed about the development of Communtu you have to enter a valid e-mail-address.
   you_can: "You can "
   controller_suggestion_12: The following repositories will be added
   model_package_6: <br> has not the right format
   controller_passwords_5: Password must not be empty.
+  view_home_home_31: Here you can choose the topics in detail, download single programs or complete bundles and you can create and manage your own bundles.
   view_users_edit_2: delete profile
   model_package_7: couldn't determine URL for {{repo}}
   controller_passwords_6: Password changed.
+  view_home_home_32: "Communtu:"
   view_home_news_5: This list is intended for general announcements from the Communtu team to the users. The frequency is a little higher than once a week. Posts will be collected in an
   view_layouts_application_11: Guestsession
   view_rating_show_title_got_ratings: of 5 stars
   view_users_edit_3: "Username:"
   donation_receipt: Donation receipt can be issued.
   controller_passwords_7: Password not changed.
+  view_home_home_33: Do you want to know more about Communtu? Do you have suggestions or questions? We are looking forward to be in touch with you.
   controller_suggestion_15: Install package
   model_package_9: While the synchronization of the repository {{repo_name}} no PackageDistr-entry for the package {{package_name}} could be found.
   controller_passwords_8: Passwords do not match.

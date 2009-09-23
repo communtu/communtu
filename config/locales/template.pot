@@ -805,6 +805,9 @@ msgstr ""
 #: view_metapackages_show_comment_and_ratings
 msgid "Neuste Kommentare und Bewertungen für dieses Bündel"
 msgstr ""
+#: view_layouts_application_22
+msgid "zum Benutzerprofil"
+msgstr ""
 #: view_home_news_16
 msgid "Wir haben einen Blog, wo wir aktuelle Informationen zu Communtu eintragen. Hier wird ungefähr einmal die Woche etwas gepostet. Hier werden Ankündigungen und neue Features präsentiert."
 msgstr ""
@@ -835,6 +838,9 @@ msgstr ""
 #: view_sent_index_0
 msgid "verschickte Nachrichten"
 msgstr ""
+#: view_layouts_application_23
+msgid "BÜNDEL"
+msgstr ""
 #: view_home_news_18
 msgid "http://communtu.blogspot.com"
 msgstr ""
@@ -852,6 +858,9 @@ msgid ", dein Benutzerkonto wurde aktiviert.  Folge nun dem Link:"
 msgstr ""
 #: view_packages__deps_0
 msgid "	   keine"
+msgstr ""
+#: view_layouts_application_24
+msgid "DOWNLOAD"
 msgstr ""
 #: view_home_new_repository_0
 msgid "Repository vorschlagen"
@@ -874,6 +883,9 @@ msgstr ""
 #: view_packages__deps_1
 msgid "          Nur für "
 msgstr ""
+#: view_layouts_application_25
+msgid "COMMUNTU"
+msgstr ""
 #: view_home_new_repository_1
 msgid "Du vermisst hier eine Quelle? Dann kannst Du ein Repository vorschlagen."
 msgstr ""
@@ -891,6 +903,9 @@ msgid "Zeitpunkt"
 msgstr ""
 #: view_rating_show_title_no_ratings
 msgid "noch keine User Bewertung"
+msgstr ""
+#: view_layouts_application_26
+msgid "Navigation Bündel"
 msgstr ""
 #: view_home_new_repository_2
 msgid "Link zum Repository"
@@ -918,6 +933,9 @@ msgid "Welche Aufgaben willst du mit deinem Computer erledigen? (um grob eine Au
 msgstr ""
 #: view_packages_show_21
 msgid "Wird in folgenden Paketen benutzt:"
+msgstr ""
+#: view_layouts_application_27
+msgid "Navigation Download"
 msgstr ""
 #: view_home_new_repository_3
 msgid "Warum soll dies in Communtu eingebaut werden? (Bitte gebe Kontaktdaten an, wenn Du über die Aufnahme informiert werden willst)"
@@ -949,6 +967,9 @@ msgstr ""
 #: view_sent_index_5
 msgid "Du hast noch keine Nachrichten versendet."
 msgstr ""
+#: view_layouts_application_28
+msgid "Navigation Communtu"
+msgstr ""
 #: category_with_colon
 msgid "Kategorie:"
 msgstr ""
@@ -972,6 +993,9 @@ msgid "Diese Funktion ist für Gäste nicht verfügbar."
 msgstr ""
 #: view_sent__user_exists_0
 msgid "User gefunden"
+msgstr ""
+#: view_layouts_application_29
+msgid "Gast"
 msgstr ""
 #: view_home_faq_14
 msgid "Gehe dazu bitte auf den Menüpunkt \"Programme suchen\". Hier hast Du ein Suchfeld, in dem Du den Namen des gesuchten Prgramms angeben kannst. Weiter ist es möglich die Suche nur über Programme durchzuführen, in dem das Feld \"Nur Programme\" angeklickt wird und somit sonstige Bibliotheken nicht mehr angezeigt werden. Weiter ist es auch möglich eine Debian-Section auszuwählen, der die Auswahl an Programmen anhand von Kategorien vorselektiert."
@@ -1309,6 +1333,9 @@ msgstr ""
 #: view_home_icons_20
 msgid "User-Icon"
 msgstr ""
+#: view_home_home_26
+msgid "Du hast Ubuntu installiert und suchst nun nach Progammen, die unter Ubuntu laufen?"
+msgstr ""
 #: back
 msgid "zurück"
 msgstr ""
@@ -1320,6 +1347,9 @@ msgid "Fehlgeschlagene debs"
 msgstr ""
 #: view_user_profiles__installation_0
 msgid "Ubuntu-Nachinstallation"
+msgstr ""
+#: view_home_home_27
+msgid "Communtu hilft Dir dabei:"
 msgstr ""
 #: controller_profiles_0
 msgid "Installation von Bündeln"
@@ -1360,6 +1390,9 @@ msgstr ""
 #: view_home_icons_23
 msgid "Nachrichtensymbol"
 msgstr ""
+#: view_home_home_28
+msgid "Download:"
+msgstr ""
 #: view_home_contact_us_1
 msgid "Hier hast Du die Möglichkeit uns Anregungen und Kritik zu Communtu zu senden."
 msgstr ""
@@ -1377,6 +1410,9 @@ msgid "AG Communtu"
 msgstr ""
 #: view_home_icons_24
 msgid "Nachrichtensymbol für Post erhalten"
+msgstr ""
+#: view_home_home_29
+msgid "Zu welchem Thema suchst Du Programme (Büro, Grafik,...)? Hier kannst du deine Interessensgebiete eingeben und passende vorkonfigurierte Programmbündel downloaden."
 msgstr ""
 #: published
 msgid "veröffentlicht"
@@ -1660,6 +1696,9 @@ msgstr ""
 #: view_messages_show_0
 msgid "Von:"
 msgstr ""
+#: view_layouts_application_30
+msgid "Hilfe"
+msgstr ""
 #: view_home_news_24
 msgid "beteiligen"
 msgstr ""
@@ -1671,6 +1710,9 @@ msgid "Natur, Geist und Technik - Verein zur Förderung der Allgemeinbildung e.V
 msgstr ""
 #: controller_metapackages_11
 msgid "Konnte Paket nicht aus Bündel entfernen."
+msgstr ""
+#: view_layouts_application_31
+msgid "Kontakt"
 msgstr ""
 #: view_messages_show_2
 msgid "erhalten am:"
@@ -2005,6 +2047,9 @@ msgstr ""
 #: view_home_news_3
 msgid "communtu-announce-de+subscribe@googlegroups.com"
 msgstr ""
+#: view_home_home_30
+msgid "Bündel:"
+msgstr ""
 #: view_home_derivatives_39
 msgid " für ältere PCs. Sie baut auf einer LXDE Oberfläche auf."
 msgstr ""
@@ -2019,6 +2064,9 @@ msgid "neue Nachricht schreiben"
 msgstr ""
 #: view_users_edit_2
 msgid "Profil löschen"
+msgstr ""
+#: view_home_home_31
+msgid "Hier kannst du Themen detaillierter auswählen und dazu Programme und Programmbündel laden, aber auch eigene Bündel erstellen und verwalten."
 msgstr ""
 #: controller_passwords_5
 msgid "Passwort darf nicht leer sein."
@@ -2041,11 +2089,17 @@ msgstr ""
 #: view_home_news_5
 msgid "Diese Liste ist für allgemeine Ankündigungen aus den Communtu Team für die Nutzer gedacht.  Es wir hier ungefähr einmal die Woche eine E-Mail über den Verteiler geschickt.   Die Nachrichten werden in einem "
 msgstr ""
+#: view_home_home_32
+msgid "Communtu:"
+msgstr ""
 #: controller_passwords_6
 msgid "Passwort geändert."
 msgstr ""
 #: model_package_7
 msgid "Konnte URL für {{repo}} nicht feststellen"
+msgstr ""
+#: view_home_home_33
+msgid "Möchtest Du mehr über Communtu wissen? Hast Du Anregungen, Fragen - wir freuen uns auf den Kontakt mit Dir."
 msgstr ""
 #: controller_passwords_7
 msgid "Passwort nicht geändert."

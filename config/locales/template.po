@@ -1085,6 +1085,10 @@ msgstr "Your account has been deactivated or deleted."
 msgid "Neuste Kommentare und Bewertungen für dieses Bündel"
 msgstr "Latest comments and ratings for this bundle"
 
+#: view_layouts_application_22
+msgid "zum Benutzerprofil"
+msgstr "to the profile"
+
 #: view_home_news_16
 msgid "Wir haben einen Blog, wo wir aktuelle Informationen zu Communtu eintragen. Hier wird ungefähr einmal die Woche etwas gepostet. Hier werden Ankündigungen und neue Features präsentiert."
 msgstr "We have a blog where we post updated information about Communtu. It gets a new post about once a week. Announcement and new features will be presented here."
@@ -1125,6 +1129,10 @@ msgstr "Communtu is based on a standard-installation of Ubuntu. There are many d
 msgid "verschickte Nachrichten"
 msgstr "sent messages"
 
+#: view_layouts_application_23
+msgid "BÜNDEL"
+msgstr "BUNDLE"
+
 #: view_home_news_18
 msgid "http://communtu.blogspot.com"
 msgstr "http://communtu.blogspot.com"
@@ -1148,6 +1156,10 @@ msgstr ", your account has been activated. Please follow this link:"
 #: view_packages__deps_0
 msgid "\t   keine"
 msgstr "\t   none"
+
+#: view_layouts_application_24
+msgid "DOWNLOAD"
+msgstr "DOWNLOAD"
 
 #: view_home_new_repository_0
 msgid "Repository vorschlagen"
@@ -1177,6 +1189,10 @@ msgstr "(Based on {{votes}} rating(s))"
 msgid "          Nur für "
 msgstr "          Only for "
 
+#: view_layouts_application_25
+msgid "COMMUNTU"
+msgstr "COMMUNTU"
+
 #: view_home_new_repository_1
 msgid "Du vermisst hier eine Quelle? Dann kannst Du ein Repository vorschlagen."
 msgstr "You're missing some sources? You can suggest a repository to us."
@@ -1200,6 +1216,10 @@ msgstr "Date"
 #: view_rating_show_title_no_ratings
 msgid "noch keine User Bewertung"
 msgstr "no user rating"
+
+#: view_layouts_application_26
+msgid "Navigation Bündel"
+msgstr "Navigation bundle"
 
 #: view_home_new_repository_2
 msgid "Link zum Repository"
@@ -1236,6 +1256,10 @@ msgstr "What tasks do you want to do with your computer? (only a rough choice; t
 #: view_packages_show_21
 msgid "Wird in folgenden Paketen benutzt:"
 msgstr "Is used in this packages:"
+
+#: view_layouts_application_27
+msgid "Navigation Download"
+msgstr "Navigation download"
 
 #: view_home_new_repository_3
 msgid "Warum soll dies in Communtu eingebaut werden? (Bitte gebe Kontaktdaten an, wenn Du über die Aufnahme informiert werden willst)"
@@ -1281,6 +1305,10 @@ msgstr "further information"
 msgid "Du hast noch keine Nachrichten versendet."
 msgstr "You haven't sent any messages yet."
 
+#: view_layouts_application_28
+msgid "Navigation Communtu"
+msgstr "Navigation Communtu"
+
 #: category_with_colon
 msgid "Kategorie:"
 msgstr "Category:"
@@ -1312,6 +1340,10 @@ msgstr "This function is not available for guests."
 #: view_sent__user_exists_0
 msgid "User gefunden"
 msgstr "user found"
+
+#: view_layouts_application_29
+msgid "Gast"
+msgstr "guest"
 
 #: view_home_faq_14
 msgid "Gehe dazu bitte auf den Menüpunkt \"Programme suchen\". Hier hast Du ein Suchfeld, in dem Du den Namen des gesuchten Prgramms angeben kannst. Weiter ist es möglich die Suche nur über Programme durchzuführen, in dem das Feld \"Nur Programme\" angeklickt wird und somit sonstige Bibliotheken nicht mehr angezeigt werden. Weiter ist es auch möglich eine Debian-Section auszuwählen, der die Auswahl an Programmen anhand von Kategorien vorselektiert."
@@ -1767,6 +1799,10 @@ msgstr "Not published"
 msgid "User-Icon"
 msgstr "user-icon"
 
+#: view_home_home_26
+msgid "Du hast Ubuntu installiert und suchst nun nach Progammen, die unter Ubuntu laufen?"
+msgstr "You installed Ubuntu and now you are looking for programs, which run with Ubuntu?"
+
 #: back
 msgid "zurück"
 msgstr "Back"
@@ -1782,6 +1818,10 @@ msgstr "Failed debs"
 #: view_user_profiles__installation_0
 msgid "Ubuntu-Nachinstallation"
 msgstr "Ubuntu post-installation"
+
+#: view_home_home_27
+msgid "Communtu hilft Dir dabei:"
+msgstr "Communtu helps you:"
 
 #: controller_profiles_0
 msgid "Installation von Bündeln"
@@ -1835,6 +1875,10 @@ msgstr "Edit "
 msgid "Nachrichtensymbol"
 msgstr "Message-icon"
 
+#: view_home_home_28
+msgid "Download:"
+msgstr "Download:"
+
 #: view_home_contact_us_1
 msgid "Hier hast Du die Möglichkeit uns Anregungen und Kritik zu Communtu zu senden."
 msgstr "Here you have the possibility to send us suggestions and critique about Communtu."
@@ -1858,6 +1902,10 @@ msgstr "AG Communtu"
 #: view_home_icons_24
 msgid "Nachrichtensymbol für Post erhalten"
 msgstr "Receive a message-icon for new messages"
+
+#: view_home_home_29
+msgid "Zu welchem Thema suchst Du Programme (Büro, Grafik,...)? Hier kannst du deine Interessensgebiete eingeben und passende vorkonfigurierte Programmbündel downloaden."
+msgstr "To which topic do look for programs (office, graphics, ...)? Enter your fields of interest and pre-configured bundles will be downloaded."
 
 #: published
 msgid "veröffentlicht"
@@ -2273,6 +2321,10 @@ msgstr "sources.list read."
 msgid "Von:"
 msgstr "From:"
 
+#: view_layouts_application_30
+msgid "Hilfe"
+msgstr "Help"
+
 #: view_home_news_24
 msgid "beteiligen"
 msgstr "participate"
@@ -2288,6 +2340,10 @@ msgstr "Natur, Geist und Technik - Verein zur Förderung der Allgemeinbildung e.
 #: controller_metapackages_11
 msgid "Konnte Paket nicht aus Bündel entfernen."
 msgstr "Couldn't delete package from bundle."
+
+#: view_layouts_application_31
+msgid "Kontakt"
+msgstr "Contact"
 
 #: view_messages_show_2
 msgid "erhalten am:"
@@ -2741,6 +2797,10 @@ msgstr "If you want to be informed about the development of Communtu you have to
 msgid "communtu-announce-de+subscribe@googlegroups.com"
 msgstr "communtu-announce-en+subscribe@googlegroups.com"
 
+#: view_home_home_30
+msgid "Bündel:"
+msgstr "Bundle:"
+
 #: view_home_derivatives_39
 msgid " für ältere PCs. Sie baut auf einer LXDE Oberfläche auf."
 msgstr " for older PCs. It is based on the LXDE-GUI."
@@ -2760,6 +2820,10 @@ msgstr "compose a new message"
 #: view_users_edit_2
 msgid "Profil löschen"
 msgstr "delete profile"
+
+#: view_home_home_31
+msgid "Hier kannst du Themen detaillierter auswählen und dazu Programme und Programmbündel laden, aber auch eigene Bündel erstellen und verwalten."
+msgstr "Here you can choose the topics in detail, download single programs or complete bundles and you can create and manage your own bundles."
 
 #: controller_passwords_5
 msgid "Passwort darf nicht leer sein."
@@ -2789,6 +2853,10 @@ msgstr "Guestsession"
 msgid "Diese Liste ist für allgemeine Ankündigungen aus den Communtu Team für die Nutzer gedacht.  Es wir hier ungefähr einmal die Woche eine E-Mail über den Verteiler geschickt.   Die Nachrichten werden in einem "
 msgstr "This list is intended for general announcements from the Communtu team to the users. The frequency is a little higher than once a week. Posts will be collected in an"
 
+#: view_home_home_32
+msgid "Communtu:"
+msgstr "Communtu:"
+
 #: controller_passwords_6
 msgid "Passwort geändert."
 msgstr "Password changed."
@@ -2796,6 +2864,10 @@ msgstr "Password changed."
 #: model_package_7
 msgid "Konnte URL für {{repo}} nicht feststellen"
 msgstr "couldn't determine URL for {{repo}}"
+
+#: view_home_home_33
+msgid "Möchtest Du mehr über Communtu wissen? Hast Du Anregungen, Fragen - wir freuen uns auf den Kontakt mit Dir."
+msgstr "Do you want to know more about Communtu? Do you have suggestions or questions? We are looking forward to be in touch with you."
 
 #: controller_passwords_7
 msgid "Passwort nicht geändert."
