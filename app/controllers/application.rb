@@ -15,6 +15,7 @@ class ApplicationController < ActionController::Base
     #firstparsed_locale = request.subdomains.first
     (AVAILABLE_LOCALES.include? parsed_locale) ? parsed_locale : nil
   end
+
   require 'set.rb'
   
   helper :all # include all helpers, all the time

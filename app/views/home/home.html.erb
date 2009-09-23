@@ -1,31 +1,27 @@
-<h2><%= t(:match_with_communtu) %></h2>
 
-	<%= render_flash %>
 
-<table>
-	<tr>
-		<td width='40%' colspan="2">
-			<%=link_to t(:view_home_home_2), "http://www.ubuntu.com"%><%=t(:view_home_home_3)%>
-			<%= link_to t(:view_home_home_4), '/home/about'%><br /><br />
-            <%=link_to t(:view_home_home_25), '/home/faq'%><br /><br />
-			<% if logged_in? %>
-			<%=t(:view_home_home_14)%><%= link_to t(:view_home_home_15), '/home/about' %><%=t(:view_home_home_16)%><%= link_to t(:view_home_home_17), '/home/impressum' %>
-			<% else %>
-			<br />
-			<%=t(:view_home_home_18)%><%= link_to t(:register), '/users/new' %><%=t(:view_home_home_20)%>
-			<%= link_to t(:view_home_home_21), '/users/login' %><%=t(:view_home_home_22)%><%= link_to t(:view_home_home_23), '/users/anonymous_login' %>. 
-			<br /><br />
-			<%= link_to t(:view_home_home_24), '/home/impressum' %>
-			<% end %>
-			</p>
-		</td>
-		
-	</tr>
-	<tr>
-		<td>
-			<h3><%=t(:view_home_home_rating_headline)%></h3>
-			<table cellspacing="0">
-				<th valign="middle" class="packageList" align="left"><%=t(:bundle)%></th>
+<%= render_flash %>
+
+<%=t(:view_home_home_26)%>
+<br />
+<%=t(:view_home_home_27)%>
+	<ul>
+		<li>
+			<a href="/communtu/index.php?action=downloadon&amp;seite=download" class="teaser"><%=t(:view_home_home_28)%></a><br>
+			<%=t(:view_home_home_29)%>
+		</li>
+		<li>
+			<a href="/communtu/index.php?action=buendelon&amp;seite=buendel" class="teaser"><%=t(:view_home_home_30)%></a><br>
+<%=t(:view_home_home_31)%>
+		</li>
+		<li>
+			<a href="/communtu/index.php?action=downloadon&amp;seite=communtu" class="teaser"><%=t(:view_home_home_32)%></a><br>
+			<%=t(:view_home_home_33)%>
+		</li>
+	</ul>
+<h3><%=t(:view_home_home_rating_headline)%></h3>
+<table cellspacing="0">
+      <tbody><tr><th class="packageList" align="left" valign="middle"><%=t(:bundle)%></th>
 				<th valign="middle" class="packageList" align="left"><%=t(:view_home_home_rating_rating)%></th>
 				<% for metapackage in @metapackges do %>
 				<% css = cycle("packageList0", "packageList1") %>
@@ -58,3 +54,4 @@
 		</td>
 	</tr>
 </table>
+

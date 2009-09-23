@@ -29,8 +29,7 @@
 	</li>
 </ol>
 <%=t(:view_user_profiles__installation_30)%><br>
-<%=t(:view_user_profiles__installation_31, {:synaptic => package_link("Synaptic")})%>
-
-
+<%=t(:view_user_profiles__installation_31, {:synaptic => package_link("Synaptic")})%><br /><br />
+<%=t(:view_user_profiles__installation_32, {:Quellen => link_to (t(:sources), user_path(current_user) + "/user_profile/tabs/2")})%>
 
 <% end %>

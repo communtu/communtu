@@ -76,6 +76,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.root :controller => 'home', :action => 'home'
   map.connect '/home',  :controller => 'home', :action => 'home'
+  map.connect '/mail/:navi', :controller => 'home', :action => 'mail'
   map.connect '/about', :controller => 'home', :action => 'about'
   map.connect '/umfrage', :controller => 'home', :action => 'umfrage'
   map.connect '/contact_us', :controller => 'home', :action => 'contact_us'

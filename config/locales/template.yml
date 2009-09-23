@@ -1,5 +1,6 @@
 --- 
-de: 
+de:
+  about_us: Über uns
   achtung: "Achtung! bei Communtu erst in Kürze verfügbar."
   add_comment: "Kommentar hinzufügen"
   add: "hinzufügen"
@@ -157,7 +158,7 @@ de:
   kommentieren: Kommentieren
   kontodaten: Konto 172 9375, Sparkasse Bremen, BLZ 290 501 01
   kurzname: Kurzname
-  lib_system_0: "Du musst eingeloggt sein, um dieses Feature zu benutzen. \"Gastzugang\" geht auch."
+  lib_system_0: "Du musst eingeloggt sein, um dieses Feature zu benutzen. Geht auch als \"Gast\"."
   lib_system_1: "Du hast keine Berechtigung für diese Aktion."
   lib_system_2: http://www.communtu.de
   lib_utils_0: "System-Befehl schlug fehl: "
@@ -187,9 +188,12 @@ de:
   model_user_meta_tabz_0: "Meine Bündel"
   model_user_meta_tabz_1: "Alle veröffentlichten Bündel"
   model_user_meta_tabz_2: Ubuntu-Pakete
+  model_user_meta_tabz_3: "Veröffentlichte Bündel"
   model_user_profile_tabz_0: Grunddaten
   model_user_profile_tabz_1: Detailauswahl
   model_user_profile_tabz_3: "Installation durchführen"
+  model_user_profile_tabz_4: Voreinstellungen
+  model_user_profile_tabz_5: Durchführen
   name_with_colon: "Name: "
   name_without_colon: Name
   native: Nativ
@@ -573,6 +577,7 @@ de:
   view_layouts_application_3: Ubuntu Logo
   view_layouts_application_30: Hilfe
   view_layouts_application_31: Kontakt
+  view_layouts_application_32: Admin
   view_layouts_application_5: "per PayPal:"
   view_layouts_application_6: "Jetzt einfach, schnell und sicher online spenden – mit PayPal."
   view_layouts_application_8: Start
@@ -738,6 +743,7 @@ de:
     Folgende Schritte sind dafür zu tun"
   view_user_profiles__installation_30: "Hinweis: Bitte .deb-Dateien nicht umbenennen."
   view_user_profiles__installation_31: "Die Communtu-Metapakete können auch mittles {{synaptic}} (unter System -> Systemverwaltung) angezeigt, installiert und deinstalliert werden. Änderungen an Bündeln werden über die Ubuntu-Paketverwaltung automatisch eingespielt."
+  view_user_profiles__installation_32: Folgende {{Quellen}} werden zu dem System hinzugefügt.
   view_user_profiles_new_0: Neues Nutzerprofil
   view_user_profiles_new_1: Benutzer
   view_user_profiles_new_3: Expertenlevel

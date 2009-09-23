@@ -1,6 +1,10 @@
 <%= render_flash %>
-
+<div class="ubuntupakete">
+<div class="editorh1">
+Pakete für Ubuntu
+</div>
 <%= form_tag('/packages/search', :method => "post") %>
+<br />
 <table>
 <tr>
 <td><%=t(:debian_section)%></td>
@@ -17,7 +21,7 @@
 <td>
      <%= check_box_tag("programs",1,session[:programs]) %>
 </td>
-<td width="100%"/></td>
+<td width="100%"/></td></tr><tr>
 <td><%=t(:view_packages__packagelist_2)%></td>
 <td>
     <input type="textbox" id="search" name="search" value="<%= session[:search]%>"/>
@@ -26,7 +30,7 @@
 </table>
 </form>
 
-<div class="inner1">
+<!--<div class="inner1">-->
 <table width="100%" cellspacing="0">
 
 <% if !packages.empty? then%>
@@ -40,10 +44,10 @@
         <div class='star-rating-foreign' style='width:<%= (package.stars * 25).to_i %>px; '> </div>
      <% end %>
 	</td>
-    <td class="<%= css %>" width="80" align="right">
-        <%= link_to image_tag("/images/install.png", :size => "22x22", :border => "0", :title => t(:install2), :alt => t(:install2)), "apt://"+package.name %>                          
+    <td class="<%= css %>" width="30" align="right">
+<!--        <%= link_to image_tag("/images/install.png", :size => "22x22", :border => "0", :title => t(:install2), :alt => t(:install2)), "apt://"+package.name %>                          
 	    <%= link_to image_tag("/images/sources.jpg", :size => "22x22", :border => "0", :title => t(:add_sources), :alt => t(:sources)), "/users/#{current_user.id}/suggestion/install_package_sources/#{package.id}" %>
-		<% if editing_metapackage? %>
+-->		<% if editing_metapackage? %>
 		    
 			<%= link_to_remote(image_tag("/images/add.png", :size => "22x22", :border => "0", :title =>t(:add), :alt => t(:add)), \
 			        :url => user_path(current_user) + "/cart/add_to_cart/" + package.id.to_s,\
@@ -55,4 +59,13 @@
 <tr><td colspan="4" style="padding-top:15px"><%= paginating_links(packages, :window_size => 10) %></td></tr>
 <% end %>
 </table>
+<!--</div>
+</div>-->
+<div class="neues_buendel">
+<div class="editorh1">
+Neues Bündel
+</div>
+<br /><br /><br />
+<%= render(:partial => 'cart/metacart') %>
+</div>
 </div>

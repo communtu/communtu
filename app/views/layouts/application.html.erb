@@ -9,40 +9,83 @@
   <title><%=t(:view_layouts_application_2)%><%= begin ": "+controller.title rescue "" end %></title>
   <%= stylesheet_link_tag 'layout' %>
 </head>
-<body>
+<body MARGINWIDTH="0" MARGINHEIGHT="0" topmargin="0" leftmargin="0">
 <%= javascript_include_tag "prototype" %>
 <%= javascript_include_tag "effects" %>
-<div class="main">
-	<table width='100%'>
-	<tr>
-		<td align='left'>
-		<%= image_tag("icon-ubuntu.png", :title => t(:view_layouts_application_3), :alt => t(:view_layouts_application_3), :border => '0') %>
-        </td><td align='left'><h1>Communtu</h1><h2><%= t(:view_layouts_application_21) %></h2>
-		</td>
-        <td><%= link_to(t(:view_layouts_donate),'/home/donate') %></td>
-	</tr>
-	</table>
-    <noscript>
-<div align="center" style="width:100%; height:24px; top:0px; background: #FF0000;"><p style="color:#FFFFFF; font-size:12px;"><%=t(:view_layouts_application_20)%></p></div>
-</noscript>
-<% if Date.today.cwday==1 and Time.now.hour==3 %>
-<div align="center" style="width:100%; height:24px; top:0px; background: #FF0000;"><p style="color:#FFFFFF; font-size:12px;"><%=t(:view_layouts_application_warning)%></p></div>
+<div id="head">
+	<div id="navihead">
+<% if is_admin? %>
+		<a href="/categories"><%= t(:view_layouts_application_32) %></a> | <% end %><a href="/home/faq"><%= t(:view_layouts_application_30) %></a> | <a href="/home/contact_us"><%= t(:view_layouts_application_31) %></a> | <a href="/home/donate"><%= t(:view_layouts_donate) %></a>
+</div>
+	<div id="lang">
+				<!-- sprachauswahl -->
+				<form action="" method="post">
+				<select name="language">
+					<option value="german">deutsch</option>
+					<option value="english">english</option>
+
+				</select>
+				</form>
+	</div>
+	
+	<!-- registrieren -->
+	<div id="register">
+  <% if logged_in? %>
+                <%= link_to t(:view_layouts_application_9), logout_path  %>
+            <% else %>
+                <%= link_to t(:anmelden), '/session/new' %> | <%= link_to t(:register), '/users/new' %> | 
+<%= link_to t(:view_layouts_application_29), '/users/anonymous_login' %>
+            <% end %>
+  <% if logged_in? and current_user.anonymous? %>
+| <%= link_to t(:register), user_path(current_user.id) %>
 <% end %>
-	<div class="navi">
-		<table width='100%'>
-	    <tr align="center">
-		<td width="100"><%= link_to t(:view_layouts_application_8), '/home' %></td>
-	  	<% if logged_in? %>
-	    	<td width="100"><%= link_to t(:view_layouts_application_9), logout_path  %> </td>
-	    <% else %>
-	    	<td width="100"><%= link_to t(:anmelden), '/session/new' %></td>
-	    	<td width="100"><%= link_to t(:view_layouts_application_11), '/users/anonymous_login' %></td>
-	    	<td width="100"><%= link_to t(:register), '/users/new' %></td>
-	    <% end %>
-	    	<td width="100"><%= link_to t(:view_layouts_application_13), '/about' %></td>
-	    </tr>
-	  </table>
-        </div>
+	</div>
+	
+	
+</div>
+
+<!-- hauptnavigation -->
+<div class="navi">
+	<!-- button -->
+	<%= "<a href=" + user_path(current_user) + "/metapackages/0>" %>
+<% if params[:action] == "metapackages" and params[:controller] == "users" %>
+<%= image_tag("/images/navi_buendelon.png", :border => '0', :alt=>t(:view_layouts_application_26),:title=>t(:view_layouts_application_26)) %> <div class="navi_eins"><%= t(:view_layouts_application_23) %></div>
+<% else %>
+<%= image_tag("/images/navi_buendel.png", :border => '0', :alt=>t(:view_layouts_application_26),:title=>t(:view_layouts_application_26)) %> <div class="navi_eins"><%= t(:view_layouts_application_23) %></div>
+<% end %>
+		</a>
+<%= "<a href=" + user_path(current_user) + "/user_profile/edit>" %>
+<% if params[:controller] == "user_profiles" %>
+                 <%= image_tag("/images/navi_downloadon.png", :border => '0', :alt=>t(:view_layouts_application_27),:title=>t(:view_layouts_application_27)) %>  <div class="navi_zwei"><%= t(:view_layouts_application_24) %></div>
+<% else %>   
+		 <%= image_tag("/images/navi_download.png", :border => '0', :alt=>t(:view_layouts_application_27),:title=>t(:view_layouts_application_27)) %> 			<div class="navi_zwei"><%= t(:view_layouts_application_24) %></div>
+<% end %>
+</a>
+<a href="/home/about">
+  <% if params[:controller] == "home" and params[:action] != "home" %>
+ <%= image_tag("/images/navi_communtuon.png", :border => '0', :alt=>t(:view_layouts_application_28),:title=>t(:view_layouts_application_28))  %>
+ 			<div class="navi_drei"><%= t(:view_layouts_application_25) %></div>
+		</a>
+  <% else %>
+<%= image_tag("/images/navi_communtu.png", :border => '0', :alt=>t(:view_layouts_application_28),:title=>t(:view_layouts_application_28))  %>	
+ 			<div class="navi_drei"><%= t(:view_layouts_application_25) %></div>
+		</a>
+<% end %>
+		
+
+	<!-- user -->
+<% if logged_in? %>
+<div id="person">
+		<%= link_to current_user.login, user_path(current_user.id), :alt=>t(:view_layouts_application_22),:title=>t(:view_layouts_application_22) %> 
+                <%= link_to image_tag("/images/icon_user.png", :border => '0', :alt=>t(:view_layouts_application_22),:title=>t(:view_layouts_application_22)), user_path(current_user.id), :class => 'person' %>
+                <%= new_message? ? link_to(image_tag("icon_msg.png", :alt=>t(:view_layouts_application_16),:title=>t(:view_layouts_application_16), :border=>"0"), '/inbox') : link_to(image_tag("icon_msg.png", :alt=>t(:view_layouts_application_18),:title=>t(:view_layouts_application_18), :border=>"0"), '/inbox') %>
+</div>
+<% end %>
+</div>
+
+<!-- content -->
+<div class="content">
+<!--
 <% if logged_in? %>
 <div align="right">
 <font size="-3"><%= link_to t(:view_layouts_application_14), '/home/contact_us' %>&nbsp;&nbsp;&nbsp;<%=t(:view_layouts_application_15)%>
@@ -52,26 +95,25 @@
 	<%= new_message? ? link_to(image_tag("message_rollover.png", :alt=>t(:view_layouts_application_16),:title=>t(:view_layouts_application_16), :border=>"0"), '/inbox') : link_to(image_tag("message.png", :alt=>t(:view_layouts_application_18),:title=>t(:view_layouts_application_18), :border=>"0"), '/inbox') %>
 </div>
 <% end %>
-
-        <table width="100%">
-	<tr><td valign="top">
-	<% if logged_in? %>
-		<div class="sidebar">
-		    <%= render :partial => 'users/sidebar' %>
-		</div>
-	<% end %>
-	<% if logged_in? %>
-		<div id="meta_cart" class="meta_cart">
-		    <%= render :partial => 'cart/metacart' %>
-		</div>
-	<% end %>
-	</td>
-	<td valign="top">
-	<div class="content" id="content">
+-->
+<% if params[:controller] == "home" and params[:action] != "home" %>
+<%= render(:partial => 'navi_communtu') %>
+<div class="content1"> 
+<% elsif params[:action] == "metapackages" and params[:controller] == "users" %>
+<%= render(:partial => 'navi_bundle') %>
+<div class="content1">
+<% elsif params[:controller] == "users" or params[:controller] == "categories" or params[:controller] == "debs" or params[:controller] == "distributions" or params[:controller] == "roles" %>
+<%= render(:partial => 'layouts/navi_admin') %>
+<div class="content1">
+<% elsif params[:controller] == "user_profiles" %>
+<%= render(:partial => 'navi_download') %>
+<div class="content1">
+<% elsif params[:action] == "home" %>
+<div class="contentstart">
+<% end %>
+<div class="content2">
 		<%= yield %>
-	</div>
-	</td></tr>
-	</table>
 </div>
-</body>
+</div>
+ </body>
 </html>
