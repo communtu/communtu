@@ -198,6 +198,7 @@ en:
   controller_accounts_1: Your account has been activated. You can now log in.
   controller_admins_0: admninistration section
   distribution: Distribution
+  view_user_profiles__installation_32: The following {{sources}} will be added to our system.
   register: Register
   view_home_about_5: To start, choose <b>Installation</b> on the left side.
   controller_users_4: An error occurred with the guest session.
@@ -232,12 +233,14 @@ en:
   view_home_derivatives_43: " - based on E17. 2D-effects even without a fast graphic card."
   view_home_about_8: After clicking on "Save and choose packages" you can get a detailed overview of the installed bundles and programs and the possibility to change the pre-made selections. In the case you don't have the time or energy to choose the packages in detail, just click on "Save". This leads you to the installation page. There you will find a button which starts the installation process. This takes some time because the applications have to be downloaded from the internet and installed on your computer. When finished, you have an all-round Ubuntu-PC!
   new_bundle: New bundle
+  model_user_profile_tabz_4: Preadjustment
   view_cart_new_from_list_3: " can be found with the above-mentioned command. (For this, the package {{debfoster}} has to be install. The created list only contains a minimal list of (meta-)packages which are necessary to rebuild your installation.)"
   view_home_derivatives_44: " - minimalist and fast version of Ubuntu for older PCs."
   view_home_about_9: "Important: a fast internet-connection is needed. For Ubuntu-users with a slow internet-connection, e. g. a modem, we intend to introduce a feature to create CDs and DVDs automatically."
   controller_users_8: user deactivated
   view_categories_index_12: show category-tree
   controller_accounts_6: An error occured. The password has not been changed.
+  model_user_profile_tabz_5: Start installation
   view_cart_new_from_list_4: "Choose the file which contains the package-list:"
   donation_possibility: Donation possibility
   controller_sessions_1: You are already logged in.
@@ -336,6 +339,7 @@ en:
   view_home_cancel_1: Either you try a again or you use the possibility via bank transfer
   controller_application_0: This function is not available for guests.
   view_sent__user_exists_0: user found
+  model_user_meta_tabz_3: Published bundles
   view_home_faq_14: To find a program, go to "Search programs". Enter the name of the program you are looking for into the search field. If you want to search only the programs click on "Programs only" and the libraries are not searched. Furthermore it is possible to choose a Debian-section where programs are preselected.
   view_debs_index_3: "Create every failed deb <b>Warning: only do this at admin.communtu.de!</b>"
   view_home_derivatives_8: You can also take a look of which packages a derivative consists.
@@ -410,11 +414,11 @@ en:
   view_home_derivatives_27: http://en.wikipedia.org/wiki/LinuxMCE
   controller_debs_2: Deb updated.
   not_logged_in: You are currently not logged in. Please click on "log in" above.
+  controller_home_2: We will notify you via e-mail.
+  view_categories_show_2: "Further information:"
+  feedback: "Comment "
   controller_distributions_1: Distribution created.
   view_packages_new_6: Videos
-  feedback: "Comment "
-  view_categories_show_2: "Further information:"
-  controller_home_2: We will notify you via e-mail.
   view_users__sidebar_0: Installation
   view_packages_edit_9: "    Video description:"
   view_home_derivatives_28: " - with this, Ubuntu is going to be "
@@ -605,6 +609,7 @@ en:
   superior_category: Superior category
   repository_url: "Repository-URL: "
   sources: Sources
+  view_layouts_application_32: admin
   view_messages_show_2: "Received on:"
   helper_distributions_16: free and from the main repositories
   view_distributions_show_8: Before a distribution can be deleted, every user must be logged out! Are you sure?
@@ -712,6 +717,7 @@ en:
   view_users_edit_0: edit profile
   view_users_new_1: Here you have the possibility to register yourself.
   compose_new_message: compose a new message
+  about_us: About us
   confirm_new_passwd: Confirm new password
   controller_suggestion_11: add repository
   view_home_derivatives_39: " for older PCs. It is based on the LXDE-GUI."

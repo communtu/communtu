@@ -443,6 +443,10 @@ msgstr "Weblinks"
 msgid "Verfügbare Rollen:"
 msgstr "Available roles:"
 
+#: view_home_home_12
+msgid "<b>Kategorien verwalten</b> Hier kannst du als Admin neue Kategorien erstellen oder die Struktur des Kategorienbaums ändern. Vorsicht walten lassen!"
+msgstr "<b>Administrate categories</b> As an administrator you can create new categories or change the structure of a category-tree here. Act with caution!"
+
 #: url
 msgid "Url"
 msgstr "URL"
@@ -459,10 +463,6 @@ msgstr "non-free and from third party repositories"
 msgid "Kategorie bearbeiten"
 msgstr "Edit category"
 
-#: view_home_home_12
-msgid "<b>Kategorien verwalten</b> Hier kannst du als Admin neue Kategorien erstellen oder die Struktur des Kategorienbaums ändern. Vorsicht walten lassen!"
-msgstr "<b>Administrate categories</b> As an administrator you can create new categories or change the structure of a category-tree here. Act with caution!"
-
 #: invalid_activation_code_please_check_again
 msgid "Ungültiger Anderungscode. Bitte den Code prüfen und nochmals versuchen. (Vielleicht hat dein Email-Programm einen Zeilenumbruch eingefügt?)"
 msgstr "Invalid activation code. Please check the code and try again. (Perhaps you e-mail-program did a line break?)"
@@ -470,6 +470,10 @@ msgstr "Invalid activation code. Please check the code and try again. (Perhaps y
 #: view_user_profiles_new_3
 msgid "Expertenlevel"
 msgstr "level of expert"
+
+#: view_home_home_13
+msgid "<b>Aktuelles</b> Hinweise auf Veranstaltungen zu Communtu, Communtu-Blog ..."
+msgstr "<b>News</b> Reference to events about Communtu, the Communtu-blog ..."
 
 #: controller_categories_3
 msgid "Kategorie aktualisiert."
@@ -483,17 +487,13 @@ msgstr "Installed by default:"
 msgid "Der Betreff darf nicht leer sein."
 msgstr "Subject must not be empty."
 
-#: view_home_home_13
-msgid "<b>Aktuelles</b> Hinweise auf Veranstaltungen zu Communtu, Communtu-Blog ..."
-msgstr "<b>News</b> Reference to events about Communtu, the Communtu-blog ..."
+#: view_home_home_14
+msgid "Es gibt auch noch "
+msgstr "There is also "
 
 #: controller_sent_1
 msgid "Benutzer existiert nicht"
 msgstr "user does not exist"
-
-#: view_home_home_14
-msgid "Es gibt auch noch "
-msgstr "There is also "
 
 #: controller_cart_2
 msgid "Folgende Pakete wurden nicht gefunden: {{message}}<br> Bitte suche die Repositories heraus, die die Pakete enthalten, und <a href=\"{{url}}\">schlage sie zur Aufnahme in Communtu vor.</a>"
@@ -503,6 +503,10 @@ msgstr "The following packages couldn't be found: {{message}}<br> Please find th
 msgid "Bewertung"
 msgstr "Rating "
 
+#: view_home_home_15
+msgid "genauere Infos"
+msgstr "detailled information"
+
 #: controller_sent_2
 msgid "Nachricht erfolgreich versendet"
 msgstr "message successfully send"
@@ -510,10 +514,6 @@ msgstr "message successfully send"
 #: view_categories_edit_3
 msgid "Link für weitere Informationen"
 msgstr "Link for further information"
-
-#: view_home_home_15
-msgid "genauere Infos"
-msgstr "detailled information"
 
 #: view_home_icons_10
 msgid "Programm"
@@ -773,8 +773,12 @@ msgstr "show derivatives"
 msgid "Wie verwende ich Communtu?"
 msgstr "How do I use Communtu?"
 
+#: view_user_profiles__installation_32
+msgid "Folgende {{Quellen}} werden zu dem System hinzugefügt."
+msgstr "The following {{sources}} will be added to our system."
+
 #: lib_system_0
-msgid "Du musst eingeloggt sein, um dieses Feature zu benutzen. \"Gastzugang\" geht auch."
+msgid "Du musst eingeloggt sein, um dieses Feature zu benutzen. Geht auch als \"Gast\"."
 msgstr "In order to use this feature you have to be logged in. Logging in via \"Guest session\" is also possible."
 
 #: controller_users_3
@@ -929,6 +933,10 @@ msgstr "After clicking on \"Save and choose packages\" you can get a detailed ov
 msgid "Neues Bündel"
 msgstr "New bundle"
 
+#: model_user_profile_tabz_4
+msgid "Voreinstellungen"
+msgstr "Preadjustment"
+
 #: view_cart_new_from_list_3
 msgid "herausfinden. (Dazu muss das Paket {{debfoster}} installiert sein. Die erzeugte Liste enthält nur eine minimale Liste von (Meta-)Paketen, die notwendig ist, um deine Installation komplett wiederherzustellen.)"
 msgstr " can be found with the above-mentioned command. (For this, the package {{debfoster}} has to be install. The created list only contains a minimal list of (meta-)packages which are necessary to rebuild your installation.)"
@@ -956,6 +964,10 @@ msgstr "show category-tree"
 #: controller_accounts_6
 msgid "Es ist ein Fehler aufgetreten. Das Passwort wurde nicht geändert."
 msgstr "An error occured. The password has not been changed."
+
+#: model_user_profile_tabz_5
+msgid "Durchführen"
+msgstr "Start installation"
 
 #: view_cart_new_from_list_4
 msgid "Datei, die die Paketliste enthält, auswählen:"
@@ -1344,6 +1356,10 @@ msgstr "user found"
 #: view_layouts_application_29
 msgid "Gast"
 msgstr "guest"
+
+#: model_user_meta_tabz_3
+msgid "Veröffentlichte Bündel"
+msgstr "Published bundles"
 
 #: view_home_faq_14
 msgid "Gehe dazu bitte auf den Menüpunkt \"Programme suchen\". Hier hast Du ein Suchfeld, in dem Du den Namen des gesuchten Prgramms angeben kannst. Weiter ist es möglich die Suche nur über Programme durchzuführen, in dem das Feld \"Nur Programme\" angeklickt wird und somit sonstige Bibliotheken nicht mehr angezeigt werden. Weiter ist es auch möglich eine Debian-Section auszuwählen, der die Auswahl an Programmen anhand von Kategorien vorselektiert."
@@ -2349,6 +2365,10 @@ msgstr "Contact"
 msgid "erhalten am:"
 msgstr "Received on:"
 
+#: view_layouts_application_32
+msgid "Admin"
+msgstr "admin"
+
 #: sources
 msgid "Quellen"
 msgstr "Sources"
@@ -2812,6 +2832,10 @@ msgstr "add repository"
 #: confirm_new_passwd
 msgid "Neues Passwort bestätigen"
 msgstr "Confirm new password"
+
+#: about_us
+msgid "Über uns"
+msgstr "About us"
 
 #: compose_new_message
 msgid "neue Nachricht schreiben"

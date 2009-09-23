@@ -586,6 +586,9 @@ msgstr ""
 #: distribution
 msgid "Distribution"
 msgstr ""
+#: view_user_profiles__installation_32
+msgid "The following {{sources}} will be added to our system."
+msgstr ""
 #: register
 msgid "Register"
 msgstr ""
@@ -688,6 +691,9 @@ msgstr ""
 #: new_bundle
 msgid "New bundle"
 msgstr ""
+#: model_user_profile_tabz_4
+msgid "Preadjustment"
+msgstr ""
 #: view_cart_new_from_list_3
 msgid " can be found with the above-mentioned command. (For this, the package {{debfoster}} has to be install. The created list only contains a minimal list of (meta-)packages which are necessary to rebuild your installation.)"
 msgstr ""
@@ -705,6 +711,9 @@ msgid "show category-tree"
 msgstr ""
 #: controller_accounts_6
 msgid "An error occured. The password has not been changed."
+msgstr ""
+#: model_user_profile_tabz_5
+msgid "Start installation"
 msgstr ""
 #: view_cart_new_from_list_4
 msgid "Choose the file which contains the package-list:"
@@ -994,6 +1003,9 @@ msgstr ""
 #: view_sent__user_exists_0
 msgid "user found"
 msgstr ""
+#: model_user_meta_tabz_3
+msgid "Published bundles"
+msgstr ""
 #: view_home_faq_14
 msgid "To find a program, go to \"Search programs\". Enter the name of the program you are looking for into the search field. If you want to search only the programs click on \"Programs only\" and the libraries are not searched. Furthermore it is possible to choose a Debian-section where programs are preselected."
 msgstr ""
@@ -1204,20 +1216,20 @@ msgstr ""
 #: view_users__sidebar_0
 msgid "Installation"
 msgstr ""
-#: controller_home_2
-msgid "We will notify you via e-mail."
+#: view_packages_new_6
+msgid "Videos"
 msgstr ""
 #: controller_distributions_1
 msgid "Distribution created."
-msgstr ""
-#: view_packages_new_6
-msgid "Videos"
 msgstr ""
 #: feedback
 msgid "Comment "
 msgstr ""
 #: view_categories_show_2
 msgid "Further information:"
+msgstr ""
+#: controller_home_2
+msgid "We will notify you via e-mail."
 msgstr ""
 #: not_logged_in
 msgid "You are currently not logged in. Please click on \"log in\" above."
@@ -1714,6 +1726,9 @@ msgstr ""
 #: view_messages_show_2
 msgid "Received on:"
 msgstr ""
+#: view_layouts_application_32
+msgid "admin"
+msgstr ""
 #: sources
 msgid "Sources"
 msgstr ""
@@ -2055,6 +2070,9 @@ msgid "add repository"
 msgstr ""
 #: confirm_new_passwd
 msgid "Confirm new password"
+msgstr ""
+#: about_us
+msgid "About us"
 msgstr ""
 #: compose_new_message
 msgid "compose a new message"

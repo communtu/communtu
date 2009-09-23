@@ -334,6 +334,9 @@ msgstr ""
 #: view_roles_index_2
 msgid "Verfügbare Rollen:"
 msgstr ""
+#: view_home_home_12
+msgid "<b>Kategorien verwalten</b> Hier kannst du als Admin neue Kategorien erstellen oder die Struktur des Kategorienbaums ändern. Vorsicht walten lassen!"
+msgstr ""
 #: url
 msgid "Url"
 msgstr ""
@@ -346,14 +349,14 @@ msgstr ""
 #: view_categories_edit_0
 msgid "Kategorie bearbeiten"
 msgstr ""
-#: view_home_home_12
-msgid "<b>Kategorien verwalten</b> Hier kannst du als Admin neue Kategorien erstellen oder die Struktur des Kategorienbaums ändern. Vorsicht walten lassen!"
-msgstr ""
 #: invalid_activation_code_please_check_again
 msgid "Ungültiger Anderungscode. Bitte den Code prüfen und nochmals versuchen. (Vielleicht hat dein Email-Programm einen Zeilenumbruch eingefügt?)"
 msgstr ""
 #: view_user_profiles_new_3
 msgid "Expertenlevel"
+msgstr ""
+#: view_home_home_13
+msgid "<b>Aktuelles</b> Hinweise auf Veranstaltungen zu Communtu, Communtu-Blog ..."
 msgstr ""
 #: controller_categories_3
 msgid "Kategorie aktualisiert."
@@ -364,14 +367,11 @@ msgstr ""
 #: controller_sent_0
 msgid "Der Betreff darf nicht leer sein."
 msgstr ""
-#: view_home_home_13
-msgid "<b>Aktuelles</b> Hinweise auf Veranstaltungen zu Communtu, Communtu-Blog ..."
+#: view_home_home_14
+msgid "Es gibt auch noch "
 msgstr ""
 #: controller_sent_1
 msgid "Benutzer existiert nicht"
-msgstr ""
-#: view_home_home_14
-msgid "Es gibt auch noch "
 msgstr ""
 #: controller_cart_2
 msgid "Folgende Pakete wurden nicht gefunden: {{message}}<br> Bitte suche die Repositories heraus, die die Pakete enthalten, und <a href=\"{{url}}\">schlage sie zur Aufnahme in Communtu vor.</a>"
@@ -379,14 +379,14 @@ msgstr ""
 #: view_metapackages__metalist_10
 msgid "Bewertung"
 msgstr ""
+#: view_home_home_15
+msgid "genauere Infos"
+msgstr ""
 #: controller_sent_2
 msgid "Nachricht erfolgreich versendet"
 msgstr ""
 #: view_categories_edit_3
 msgid "Link für weitere Informationen"
-msgstr ""
-#: view_home_home_15
-msgid "genauere Infos"
 msgstr ""
 #: view_home_icons_10
 msgid "Programm"
@@ -571,8 +571,11 @@ msgstr ""
 #: view_home_about_4
 msgid "Wie verwende ich Communtu?"
 msgstr ""
+#: view_user_profiles__installation_32
+msgid "Folgende {{Quellen}} werden zu dem System hinzugefügt."
+msgstr ""
 #: lib_system_0
-msgid "Du musst eingeloggt sein, um dieses Feature zu benutzen. \"Gastzugang\" geht auch."
+msgid "Du musst eingeloggt sein, um dieses Feature zu benutzen. Geht auch als \"Gast\"."
 msgstr ""
 #: controller_users_3
 msgid "Du wurdest als Nutzer {{anonymous_user}} mit Kennwort {{anonymous_user}} eingeloggt. Bitte ggf. oben rechts auf Nutzer {{anonymous_user}} klicken und in ein dauerhaftes Nutzerkonto umwandeln; ansonsten wird das Konto nach einem Tag wieder gelöscht."
@@ -688,6 +691,9 @@ msgstr ""
 #: new_bundle
 msgid "Neues Bündel"
 msgstr ""
+#: model_user_profile_tabz_4
+msgid "Voreinstellungen"
+msgstr ""
 #: view_cart_new_from_list_3
 msgid "herausfinden. (Dazu muss das Paket {{debfoster}} installiert sein. Die erzeugte Liste enthält nur eine minimale Liste von (Meta-)Paketen, die notwendig ist, um deine Installation komplett wiederherzustellen.)"
 msgstr ""
@@ -708,6 +714,9 @@ msgid "Kategorienbaum anzeigen"
 msgstr ""
 #: controller_accounts_6
 msgid "Es ist ein Fehler aufgetreten. Das Passwort wurde nicht geändert."
+msgstr ""
+#: model_user_profile_tabz_5
+msgid "Durchführen"
 msgstr ""
 #: view_cart_new_from_list_4
 msgid "Datei, die die Paketliste enthält, auswählen:"
@@ -996,6 +1005,9 @@ msgid "User gefunden"
 msgstr ""
 #: view_layouts_application_29
 msgid "Gast"
+msgstr ""
+#: model_user_meta_tabz_3
+msgid "Veröffentlichte Bündel"
 msgstr ""
 #: view_home_faq_14
 msgid "Gehe dazu bitte auf den Menüpunkt \"Programme suchen\". Hier hast Du ein Suchfeld, in dem Du den Namen des gesuchten Prgramms angeben kannst. Weiter ist es möglich die Suche nur über Programme durchzuführen, in dem das Feld \"Nur Programme\" angeklickt wird und somit sonstige Bibliotheken nicht mehr angezeigt werden. Weiter ist es auch möglich eine Debian-Section auszuwählen, der die Auswahl an Programmen anhand von Kategorien vorselektiert."
@@ -1717,6 +1729,9 @@ msgstr ""
 #: view_messages_show_2
 msgid "erhalten am:"
 msgstr ""
+#: view_layouts_application_32
+msgid "Admin"
+msgstr ""
 #: sources
 msgid "Quellen"
 msgstr ""
@@ -2058,6 +2073,9 @@ msgid "Paketquellen hinzufügen"
 msgstr ""
 #: confirm_new_passwd
 msgid "Neues Passwort bestätigen"
+msgstr ""
+#: about_us
+msgid "Über uns"
 msgstr ""
 #: compose_new_message
 msgid "neue Nachricht schreiben"
