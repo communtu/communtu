@@ -484,11 +484,19 @@ de:
   view_home_home_23: nutze Communtu als Gast
   view_home_home_24: Zum Impressum
   view_home_home_25: "Für Fragen zu Communtu haben wir \"Häufig gestellte Fragen\" zusammengestellt."
+  view_home_home_26: Du hast Ubuntu installiert und suchst nun nach Progammen, die unter Ubuntu laufen?
+  view_home_home_27: "Communtu hilft Dir dabei:"
+  view_home_home_28: "Download:"
+  view_home_home_29: Zu welchem Thema suchst Du Programme (Büro, Grafik,...)? Hier kannst du deine Interessensgebiete eingeben und passende vorkonfigurierte Programmbündel downloaden.
   view_home_home_2: Ubuntu-Linux
   view_home_home_3: " steht für ein menschliches Linux, das einfach zu benutzen ist. \
     Aber um Ubuntu wirklich gut nutzen zu können, muss man ganz schön viele Programme nachinstallieren, und es ist oft schwer, da den Überblick zu behalten. \
     Bei Communtu gibst du nur an, welche Aufgaben du mit deinem Computer erledigen willst, und Communtu schlägt dir eine \
     ganze Reihe von Programmen vor, die automatisch installiert werden können."
+  view_home_home_30: "Bündel:"
+  view_home_home_31: Hier kannst du Themen detaillierter auswählen und dazu Programme und Programmbündel laden, aber auch eigene Bündel erstellen und verwalten.
+  view_home_home_32: "Communtu:"
+  view_home_home_33: Möchtest Du mehr über Communtu wissen? Hast Du Anregungen, Fragen - wir freuen uns auf den Kontakt mit Dir.
   view_home_home_4: Mehr ...
   view_home_home_5: "Die Seitenleiste links bietet folgende Möglichkeiten:"
   view_home_home_6: "<b>Installation</b> bietet dir eine Zusammenstellung (Bündelung) von Programmen für die Installation auf deinem Computer an, entsprechend deinen Angaben, für welche Aufgaben du deinen Ubuntu-PC benutzen willst."
