@@ -27,6 +27,8 @@
     <%= link_to_remote(image_tag("edit-delete.png", :size => "16x16", :border => "0"), \
             :update => 'meta_cart', \
             :url => user_path(current_user) + "/cart/clear") %>
+<br /><br />
+<%= t(:metacart_choose)%>
 <% else %>
     <div style="valign:bottom;">
             <%= link_to(t(:new_bundle), user_path(current_user) + "/cart/create") %> <br />

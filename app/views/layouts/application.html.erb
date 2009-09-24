@@ -55,7 +55,7 @@
 <% end %>
 </a>
 	<%= "<a href=" + user_path(current_user) + "/metapackages/0>" %>
-<% if ((params[:controller] == "users" and params[:action] == "metapackages") or (params[:controller] == "home" and params[:action] == "new_repository") or params[:controller] == "metapackages") %>
+<% if ((params[:controller] == "users" and params[:action] == "metapackages") or (params[:controller] == "home" and params[:action] == "new_repository") or params[:controller] == "metapackages" or params[:controller] == "distributions" or params[:controller] == "repositories") %>
 <%= image_tag("/images/navi_buendelon.png", :border => '0', :alt=>t(:view_layouts_application_26),:title=>t(:view_layouts_application_26)) %> <div class="navi_zwei"><%= t(:view_layouts_application_23) %></div>
 <% else %>
 <%= image_tag("/images/navi_buendel.png", :border => '0', :alt=>t(:view_layouts_application_26),:title=>t(:view_layouts_application_26)) %> <div class="navi_zwei"><%= t(:view_layouts_application_23) %></div>
@@ -102,10 +102,10 @@
 <% elsif params[:action] == "metapackages" and params[:controller] == "users" %>
 <%= render(:partial => 'navi_bundle') %>
 <div class="content1">
-<% elsif ((params[:controller] == "users" and params[:action] == "metapackages") or (params[:controller] == "home" and params[:action] == "new_repository") or params[:controller] == "metapackages")  %>
+<% elsif ((params[:controller] == "users" and params[:action] == "metapackages") or (params[:controller] == "home" and params[:action] == "new_repository") or params[:controller] == "metapackages" or params[:controller] == "distributions" or params[:controller] == "repositories")  %>
 <%= render(:partial => 'users/navi_bundle') %>
 <div class="content1">
-<% elsif params[:controller] == "users" and params[:action] != "metapackages" or params[:controller] == "categories" or params[:controller] == "debs" or params[:controller] == "distributions" or params[:controller] == "roles" %>
+<% elsif params[:controller] == "users" and params[:action] != "metapackages" or params[:controller] == "categories" or params[:controller] == "debs" or params[:controller] == "roles" %>
 <%= render(:partial => 'layouts/navi_admin') %>
 <div class="content1">
 <% elsif params[:controller] == "user_profiles" %>

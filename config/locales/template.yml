@@ -166,6 +166,7 @@ de:
   licence: "Lizenztyp:"
   match_ubuntu: "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
   match_with_communtu: "Communtu - gemeinsam Ubuntu-Linux an individuelle Bedürfnisse anpassen"
+  metacart_choose: Füge Programme aus der rechten Spalte zu Deinem Bündel hinzu.
   migrate: Migrieren
   migrate_repository: Repository migieren
   model_mailer_0: Herzlich Willkommen bei Communtu
