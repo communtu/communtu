@@ -55,7 +55,7 @@
 <% end %>
 </a>
 	<%= "<a href=" + user_path(current_user) + "/metapackages/0>" %>
-<% if params[:controller] == "users" or params[:controller] == "users" or params[:controller] == "metapackages" and params[:action] == "edit" or params[:action] == "metapackages" or params[:controller] == "home" and params[:action] == "new_repository" %>
+<% if ((params[:controller] == "users" and params[:action] == "metapackages") or (params[:controller] == "home" and params[:action] == "new_repository") or params[:controller] == "metapackages") %>
 <%= image_tag("/images/navi_buendelon.png", :border => '0', :alt=>t(:view_layouts_application_26),:title=>t(:view_layouts_application_26)) %> <div class="navi_zwei"><%= t(:view_layouts_application_23) %></div>
 <% else %>
 <%= image_tag("/images/navi_buendel.png", :border => '0', :alt=>t(:view_layouts_application_26),:title=>t(:view_layouts_application_26)) %> <div class="navi_zwei"><%= t(:view_layouts_application_23) %></div>
@@ -102,7 +102,7 @@
 <% elsif params[:action] == "metapackages" and params[:controller] == "users" %>
 <%= render(:partial => 'navi_bundle') %>
 <div class="content1">
-<% elsif params[:controller] == "metapackages" and params[:action] == "edit" or params[:controller] == "home" and params[:action] == "new_repository" %>
+<% elsif ((params[:controller] == "users" and params[:action] == "metapackages") or (params[:controller] == "home" and params[:action] == "new_repository") or params[:controller] == "metapackages")  %>
 <%= render(:partial => 'users/navi_bundle') %>
 <div class="content1">
 <% elsif params[:controller] == "users" and params[:action] != "metapackages" or params[:controller] == "categories" or params[:controller] == "debs" or params[:controller] == "distributions" or params[:controller] == "roles" %>

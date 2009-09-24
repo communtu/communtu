@@ -213,7 +213,7 @@ de:
   no_save_database: "Die folgenden Pakete konnten nicht in der Datenbank gespeichert werden:"
   not_logged_in: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
   packages: Pakete
-  packages_for_ubuntu: Paket für Ubuntu
+  packages_for_ubuntu: Pakete für Ubuntu
   participation: "Beteiligungsmöglichkeiten"
   passwd_no_match: "Das neue Passwort stimmt nicht mit der Bestätigung überein."
   passwd: Passwort
