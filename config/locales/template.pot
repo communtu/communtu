@@ -110,7 +110,7 @@ msgstr ""
 msgid "Beinhaltet folgende Pakete (\"depends\" und \"recommends\"):"
 msgstr ""
 #: view_packages__packagelist_1
-msgid "&nbsp;&nbsp;Nur&nbsp;Programme:"
+msgid "Nur&nbsp;Programme:"
 msgstr ""
 #: view_metapackages_show_8
 msgid "Bewertung: "
@@ -137,7 +137,7 @@ msgstr ""
 msgid "Insgesamt haben wir "
 msgstr ""
 #: view_packages__packagelist_2
-msgid "&nbsp;&nbsp;Suche:"
+msgid "Suche:"
 msgstr ""
 #: view_metapackages_show_9
 msgid "Veröffentlicht: "
@@ -301,6 +301,9 @@ msgstr ""
 #: view_metapackages_new_4
 msgid "Standardmäßig installieren"
 msgstr ""
+#: view_home_home_10
+msgid "<b>Ubuntu-Versionen</b> Übersicht über die im System verfügbaren Ubuntu-Versionen (Distributionen)."
+msgstr ""
 #: controller_metapackages_not_allowed
 msgid "Nur der Eigentümer des Bündels darf diese Aktion ausführen."
 msgstr ""
@@ -313,20 +316,17 @@ msgstr ""
 #: view_home_derivatives_18
 msgid " ist eine Ubuntu-Abspaltung mit eigener User-Community, die sich vor allem Benutzerfreundlichkeit auf die Fahnen schreibt. Linux Mint ähnelt Ubuntu sehr, hat aber viele Codes, z.B. für DVDs und MP3s, schon vorinstalliert. Diese Codecs gibt es allerdings auch bei Communtu, unter Unterhaltungsmedien. "
 msgstr ""
-#: view_home_home_10
-msgid "<b>Ubuntu-Versionen</b> Übersicht über die im System verfügbaren Ubuntu-Versionen (Distributionen)."
-msgstr ""
 #: view_user_profiles_new_1
 msgid "Benutzer"
 msgstr ""
 #: view_roles_index_1
 msgid "Zugewiesene Rollen:"
 msgstr ""
-#: helper_distributions_8
-msgid "Quellen anzeigen"
-msgstr ""
 #: view_home_home_11
 msgid "<b>Benutzer verwalten</b> Hier kannst du als Admin die Rollen der Benutzer ändern. Vorsicht walten lassen!"
+msgstr ""
+#: helper_distributions_8
+msgid "Quellen anzeigen"
 msgstr ""
 #: weblinks
 msgid "Weblinks"
@@ -372,6 +372,9 @@ msgid "Es gibt auch noch "
 msgstr ""
 #: controller_sent_1
 msgid "Benutzer existiert nicht"
+msgstr ""
+#: homepage
+msgid "Startseite"
 msgstr ""
 #: controller_cart_2
 msgid "Folgende Pakete wurden nicht gefunden: {{message}}<br> Bitte suche die Repositories heraus, die die Pakete enthalten, und <a href=\"{{url}}\">schlage sie zur Aufnahme in Communtu vor.</a>"
@@ -822,6 +825,9 @@ msgid "Wir haben einen Blog, wo wir aktuelle Informationen zu Communtu eintragen
 msgstr ""
 #: view_derivatives_show_3
 msgid "Icon file:"
+msgstr ""
+#: packages_for_ubuntu
+msgid "Paket für Ubuntu"
 msgstr ""
 #: packages
 msgid "Pakete"

@@ -144,8 +144,8 @@ msgid "Beinhaltet folgende Pakete (\"depends\" und \"recommends\"):"
 msgstr "Contains these packages (\"depends\" and \"recommends\"):"
 
 #: view_packages__packagelist_1
-msgid "&nbsp;&nbsp;Nur&nbsp;Programme:"
-msgstr "&nbsp;&nbsp;Programs&nbsp;only:"
+msgid "Nur&nbsp;Programme:"
+msgstr "Programs&nbsp;only:"
 
 #: view_metapackages_show_8
 msgid "Bewertung: "
@@ -180,8 +180,8 @@ msgid "Insgesamt haben wir "
 msgstr "We have a total of "
 
 #: view_packages__packagelist_2
-msgid "&nbsp;&nbsp;Suche:"
-msgstr "&nbsp;&nbsp;Search:"
+msgid "Suche:"
+msgstr "Search:"
 
 #: view_metapackages_show_9
 msgid "Veröffentlicht: "
@@ -399,6 +399,10 @@ msgstr "roles for"
 msgid "Standardmäßig installieren"
 msgstr "Install by default"
 
+#: view_home_home_10
+msgid "<b>Ubuntu-Versionen</b> Übersicht über die im System verfügbaren Ubuntu-Versionen (Distributionen)."
+msgstr "<b>Ubuntu-releases</b> Overview about the available Ubuntu-releases (distributions)."
+
 #: controller_metapackages_not_allowed
 msgid "Nur der Eigentümer des Bündels darf diese Aktion ausführen."
 msgstr "Only the owner of the bundle is allowed to perform this action."
@@ -415,10 +419,6 @@ msgstr "non-free and from the community repositories"
 msgid " ist eine Ubuntu-Abspaltung mit eigener User-Community, die sich vor allem Benutzerfreundlichkeit auf die Fahnen schreibt. Linux Mint ähnelt Ubuntu sehr, hat aber viele Codes, z.B. für DVDs und MP3s, schon vorinstalliert. Diese Codecs gibt es allerdings auch bei Communtu, unter Unterhaltungsmedien. "
 msgstr " is an Ubuntu spin-off with its own user community which has dedicated itself to usability. Linux Mint is quite similar to Ubuntu but has more codecs, like to watch DVDs or listen to MP3s, pre-installed. Those codecs are available via Communtu, listet at \"Sound & Video\"."
 
-#: view_home_home_10
-msgid "<b>Ubuntu-Versionen</b> Übersicht über die im System verfügbaren Ubuntu-Versionen (Distributionen)."
-msgstr "<b>Ubuntu-releases</b> Overview about the available Ubuntu-releases (distributions)."
-
 #: view_user_profiles_new_1
 msgid "Benutzer"
 msgstr "user"
@@ -427,13 +427,13 @@ msgstr "user"
 msgid "Zugewiesene Rollen:"
 msgstr "Assigned roles:"
 
-#: helper_distributions_8
-msgid "Quellen anzeigen"
-msgstr "Show sources"
-
 #: view_home_home_11
 msgid "<b>Benutzer verwalten</b> Hier kannst du als Admin die Rollen der Benutzer ändern. Vorsicht walten lassen!"
 msgstr "<b>Administrate users</b> As an administrator you can change the role of the users. Act with caution!"
+
+#: helper_distributions_8
+msgid "Quellen anzeigen"
+msgstr "Show sources"
 
 #: weblinks
 msgid "Weblinks"
@@ -494,6 +494,10 @@ msgstr "There is also "
 #: controller_sent_1
 msgid "Benutzer existiert nicht"
 msgstr "user does not exist"
+
+#: homepage
+msgid "Startseite"
+msgstr "Start"
 
 #: controller_cart_2
 msgid "Folgende Pakete wurden nicht gefunden: {{message}}<br> Bitte suche die Repositories heraus, die die Pakete enthalten, und <a href=\"{{url}}\">schlage sie zur Aufnahme in Communtu vor.</a>"
@@ -1108,6 +1112,10 @@ msgstr "We have a blog where we post updated information about Communtu. It gets
 #: view_derivatives_show_3
 msgid "Icon file:"
 msgstr "icon-file:"
+
+#: packages_for_ubuntu
+msgid "Paket für Ubuntu"
+msgstr "Packages for Ubuntu"
 
 #: packages
 msgid "Pakete"
@@ -3008,4 +3016,7 @@ msgstr "What is a bundle?"
 #: controller_users_12
 msgid "Benutzer aktiviert"
 msgstr "User activated"
+
+#~ msgid "&nbsp;&nbsp;Suche:"
+#~ msgstr "&nbsp;&nbsp;Search:"
 

@@ -91,6 +91,9 @@ msgstr ""
 #: view_metapackages_show_version_v
 msgid "(version {{v}})"
 msgstr ""
+#: 
+msgid "ivat"
+msgstr ""
 #: view_packages_show_16
 msgid "package-version"
 msgstr ""
@@ -116,7 +119,7 @@ msgstr ""
 msgid "Communtu - match Ubuntu to your personal needs"
 msgstr ""
 #: view_packages__packagelist_1
-msgid "&nbsp;&nbsp;Programs&nbsp;only:"
+msgid "Programs&nbsp;only:"
 msgstr ""
 #: model_package_10
 msgid "While the synchronization of the repository {{repo_name}} the package {{package_name}} couldn't be found."
@@ -140,7 +143,7 @@ msgstr ""
 msgid "Description must not be empty"
 msgstr ""
 #: view_packages__packagelist_2
-msgid "&nbsp;&nbsp;Search:"
+msgid "Search:"
 msgstr ""
 #: model_package_11
 msgid "could not determine URL"
@@ -372,6 +375,9 @@ msgid "user does not exist"
 msgstr ""
 #: view_home_home_14
 msgid "There is also "
+msgstr ""
+#: homepage
+msgid "Start"
 msgstr ""
 #: controller_cart_2
 msgid "The following packages couldn't be found: {{message}}<br> Please find the repositories which contain these packages and <a href=\"{{url}}\">make a suggestion to add the repository to Communtu.</a>"
@@ -820,6 +826,9 @@ msgstr ""
 #: view_metapackages_show_comment_and_ratings
 msgid "Latest comments and ratings for this bundle"
 msgstr ""
+#: packages_for_ubuntu
+msgid "Packages for Ubuntu"
+msgstr ""
 #: view_home_news_16
 msgid "We have a blog where we post updated information about Communtu. It gets a new post about once a week. Announcement and new features will be presented here."
 msgstr ""
@@ -1210,14 +1219,14 @@ msgstr ""
 #: view_home_derivatives_26
 msgid " - with the slim Xfce as the graphical interface. Particularly suitable for older computers: 128 MB RAM and 1,5 GB free hard disk space are sufficient. Should be installed from the CD to guarantee a slim installation. Post-installation can be done with Communtu."
 msgstr ""
-#: view_packages_edit_9
-msgid "    Video description:"
-msgstr ""
 #: view_users__sidebar_0
 msgid "Installation"
 msgstr ""
 #: view_packages_new_6
 msgid "Videos"
+msgstr ""
+#: view_packages_edit_9
+msgid "    Video description:"
 msgstr ""
 #: controller_distributions_1
 msgid "Distribution created."

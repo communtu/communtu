@@ -21,6 +21,7 @@ en:
   view_home_beteiligung_13: Since we have many ideas for the platform's further development, we need programmers. Ideally you already have some experience with Ruby on Rails.
   view_accounts_edit_1: old password
   view_home_about_13: Post-installation of single functions
+  ~: ivat
   view_packages_show_15: source/repository
   view_home_faq_06: On the left side of the webpage is the bundle-editor. There you have to click "New Bundle". In the main-window you can choose packages and add them to the bundle. When finished, you have to click on the "Save"-symbol in the bundle-editor. Now a new window pop ups in the main-window where you have to enter a meaningful name and a description. Don't forget to assign your bundle to a category.
   view_home_beteiligung_14: We can also help you to learn this programming-language. You just have to contact
@@ -34,7 +35,7 @@ en:
   view_home_faq_08: You go to "Administrate bundles" and click on "All published bundles" to view all bundles. There you can rate a program with up to five stars and, after that, a commentbox appears where you have to enter a comment to justify your rating.
   controller_metapackages_2: The bundle-name is already in use!
   match_with_communtu: Communtu - match Ubuntu to your personal needs
-  view_packages__packagelist_1: "&nbsp;&nbsp;Programs&nbsp;only:"
+  view_packages__packagelist_1: "Programs&nbsp;only:"
   model_package_10: While the synchronization of the repository {{repo_name}} the package {{package_name}} couldn't be found.
   view_home_about_16: In order to use Communtu you need to register yourself. To do so, just click on the "Registration"-button in the menu above.
   view_metapackages_show_8: "Rating: "
@@ -42,7 +43,7 @@ en:
   view_users_index_0: All users
   view_home_faq_09: How can I change a bundle?
   controller_metapackages_3: Description must not be empty
-  view_packages__packagelist_2: "&nbsp;&nbsp;Search:"
+  view_packages__packagelist_2: "Search:"
   model_package_11: could not determine URL
   imprint: Imprint
   view_metapackages_show_9: "Published:"
@@ -120,6 +121,7 @@ en:
   view_user_profiles_new_3: level of expert
   controller_sent_1: user does not exist
   view_home_home_14: "There is also "
+  homepage: Start
   controller_cart_2: "The following packages couldn't be found: {{message}}<br> Please find the repositories which contain these packages and <a href=\"{{url}}\">make a suggestion to add the repository to Communtu.</a>"
   controller_sent_2: message successfully send
   view_categories_edit_3: Link for further information
@@ -276,6 +278,7 @@ en:
   view_derivatives_show_3: "icon-file:"
   view_layouts_application_22: to the profile
   view_metapackages_show_comment_and_ratings: Latest comments and ratings for this bundle
+  packages_for_ubuntu: Packages for Ubuntu
   view_home_news_16: We have a blog where we post updated information about Communtu. It gets a new post about once a week. Announcement and new features will be presented here.
   packages: packages
   direct_indirect_covered_packages: Direct and indirect covered packages
@@ -418,9 +421,9 @@ en:
   view_categories_show_2: "Further information:"
   feedback: "Comment "
   controller_distributions_1: Distribution created.
+  view_packages_edit_9: "    Video description:"
   view_packages_new_6: Videos
   view_users__sidebar_0: Installation
-  view_packages_edit_9: "    Video description:"
   view_home_derivatives_28: " - with this, Ubuntu is going to be "
   controller_home_3: This does not appear to be a list with Ubuntu-packages... <br />The packagelist must contain one packagename per line
   bundle: bundle
