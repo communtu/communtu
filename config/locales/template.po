@@ -1114,7 +1114,7 @@ msgid "Icon file:"
 msgstr "icon-file:"
 
 #: packages_for_ubuntu
-msgid "Paket für Ubuntu"
+msgid "Pakete für Ubuntu"
 msgstr "Packages for Ubuntu"
 
 #: packages

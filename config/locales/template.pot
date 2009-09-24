@@ -827,7 +827,7 @@ msgstr ""
 msgid "Icon file:"
 msgstr ""
 #: packages_for_ubuntu
-msgid "Paket für Ubuntu"
+msgid "Pakete für Ubuntu"
 msgstr ""
 #: packages
 msgid "Pakete"
