@@ -1,2 +1,8 @@
+<% if params[:id] == "0" %>
+<h2><%= t(:model_user_meta_tabz_0) %></h2>
+<% elsif params[:id] == "1" %>
+<h2><%= t(:model_user_meta_tabz_3) %></h2>
+<% end %>
+
 <%= render_tabz(:user_meta, { :user => current_user, :session => session, :params => params }) %>
 

@@ -1,13 +1,13 @@
 <%= render_flash %>
 <div class="ubuntupakete">
 <div class="editorh1">
-Pakete für Ubuntu
+<%=t(:packages_for_ubuntu)%>
 </div>
 <%= form_tag('/packages/search', :method => "post") %>
 <br />
-<table>
+<table border="0">
 <tr>
-<td><%=t(:debian_section)%></td>
+<td valign="left"><%=t(:debian_section)%></td>
 <td>
     <select id="group" name="group" onchange="this.form.submit()">
         <option>all</option>
@@ -16,16 +16,17 @@ Pakete für Ubuntu
         <% end %>
     </select>
 </td>
-<td width="100%"/></td>
-<td width="50%"><%=t(:view_packages__packagelist_1)%></td>
+<td><%= link_to((t:view_home_new_repository_0), '/home/new_repository') %></td></tr><tr>
+<td valign="left"><%=t(:view_packages__packagelist_1)%></td>
 <td>
      <%= check_box_tag("programs",1,session[:programs]) %>
 </td>
-<td width="100%"/></td></tr><tr>
-<td><%=t(:view_packages__packagelist_2)%></td>
+<td></td></tr><tr>
+<td valign="left"><%=t(:view_packages__packagelist_2)%></td>
 <td>
     <input type="textbox" id="search" name="search" value="<%= session[:search]%>"/>
 </td>
+<td></td>
 </tr>
 </table>
 </form>
@@ -63,9 +64,12 @@ Pakete für Ubuntu
 </div>-->
 <div class="neues_buendel">
 <div class="editorh1">
-Neues Bündel
+<%=t(:new_bundle)%>
 </div>
 <br /><br /><br />
+<div align="right"><%= link_to(t(:view_cart_new_from_list_0), user_path(current_user) + "/cart/new_from_list") %></div>
+<div id="meta_cart" class="meta_cart">
 <%= render(:partial => 'cart/metacart') %>
+</div>
 </div>
 </div>

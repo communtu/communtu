@@ -212,6 +212,7 @@ de:
   no_save_database: "Die folgenden Pakete konnten nicht in der Datenbank gespeichert werden:"
   not_logged_in: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
   packages: Pakete
+  packages_for_ubuntu: Paket für Ubuntu
   participation: "Beteiligungsmöglichkeiten"
   passwd_no_match: "Das neue Passwort stimmt nicht mit der Bestätigung überein."
   passwd: Passwort
@@ -650,8 +651,8 @@ de:
   view_packages_new_3: Version
   view_packages_new_4: Quelle
   view_packages_new_6: Videos
-  view_packages__packagelist_1: "&nbsp;&nbsp;Nur&nbsp;Programme:"
-  view_packages__packagelist_2: "&nbsp;&nbsp;Suche:"
+  view_packages__packagelist_1: "Nur&nbsp;Programme:"
+  view_packages__packagelist_2: "Suche:"
   view_packages_rdepends_0: "Im Paket "
   view_packages_rdepends_1: " direkt und indirekt enthaltene Pakete"
   view_packages__search_0: Suche nach Paketen

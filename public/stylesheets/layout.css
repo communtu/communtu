@@ -941,12 +941,30 @@ a.download:hover, a.download:active{
 	border-top:2px solid #C6C6C6;
 	}
 /* start */
-.contentstart{
+/*.contentstart{
 	position:absolute; 
 	left:150px;
 	top:80px;
 	width:575px;
-	}
+	}*/
+.contentstart{
+ position:absolute; 
+ left:150px; 
+ top:80px;
+ width:400px;
+ }
+.beste_buendel{
+ position:absolute; 
+ left:606px; 
+ top:80px;
+ width:290px;
+ }
+.beste_buendel ul li{
+ list-style-image:url(images/star_trans.gif);
+ list-style-position:outside;
+ margin-left:-0.6em; 
+ padding-bottom:1px;
+ }
 /* allgemein */
 .content2{
 	position:absolute; 
@@ -1020,13 +1038,13 @@ a.download:hover, a.download:active{
 .navi_eins{
 	position:absolute; 
 	top:16px; 
-	left:67px;
+	left:50px;
 	z-index:2;
 }
 .navi_zwei{
 	position:absolute; 
 	top:16px; 
-	left:250px;
+	left:260px;
 	z-index:2;
 }
 .navi_drei{
@@ -1047,7 +1065,7 @@ a.download:hover, a.download:active{
 	border:0px solid #ff0;
 	z-index:2;
 	}
-#register{
+/*#register{
 	position:absolute; 
 	right:7px; 
 	width:225px; 
@@ -1056,13 +1074,25 @@ a.download:hover, a.download:active{
 	text-align:center;
 	padding-top:5px;
 	z-index:4;
-	}
+	}*/
+#register{
+ position:absolute; 
+ right:7px; 
+ width:210px; 
+ height:20px; 
+ background-color:#9FE7F7; 
+text-align:right;
+ padding-top:5px;
+ padding-right:15px;
+ z-index:4;
+ }
 #lang{
 	position:absolute; 
 	right:241px;  
 	text-align:center;
 	padding-top:2px;
 	z-index:4;
+        visibility:hidden;
 	}
 #navihead{
 	position:absolute;

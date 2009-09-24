@@ -1,10 +1,8 @@
-<font size="1"><b><%=t(:bundle_editor)%></b></font><br/>
-
 <% if editing_metapackage? %>
     <% cart = Cart.find(session[:cart]) %>
 	<% name = cart.name %>
 	
-	<font size="1"><%=t(:name_with_colon)%><b><%= name %></b></font>
+	<%=t(:name_with_colon)%><b><%= name %></b>
 
     <ul class="cartlist">
 	<% cart.base_packages.each do |package|%>

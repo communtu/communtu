@@ -7,15 +7,15 @@
 <%=t(:view_home_home_27)%>
 	<ul>
 		<li>
-			<a href="/communtu/index.php?action=downloadon&amp;seite=download" class="teaser"><%=t(:view_home_home_28)%></a><br>
+			<a href="<%= user_path(current_user) + "/user_profile/edit" %>" class="teaser"><%=t(:view_home_home_28)%></a><br>
 			<%=t(:view_home_home_29)%>
 		</li>
 		<li>
-			<a href="/communtu/index.php?action=buendelon&amp;seite=buendel" class="teaser"><%=t(:view_home_home_30)%></a><br>
+			<a href="<%= user_path(current_user) + "/metapackages/0" %>" class="teaser"><%=t(:view_home_home_30)%></a><br>
 <%=t(:view_home_home_31)%>
 		</li>
 		<li>
-			<a href="/communtu/index.php?action=downloadon&amp;seite=communtu" class="teaser"><%=t(:view_home_home_32)%></a><br>
+			<a href="/home/about" class="teaser"><%=t(:view_home_home_32)%></a><br>
 			<%=t(:view_home_home_33)%>
 		</li>
 	</ul>
