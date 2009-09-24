@@ -8,7 +8,7 @@
 <h3><%=t(:view_home_about_4)%></h3>
 
 <p><%=t(:view_home_about_5)%> 
-<%=t(:view_home_about_6)%><%= link_to("Anmeldung", "/session/new") %>
+
 <%=t(:view_home_about_7)%>
 </p>
 
@@ -16,23 +16,8 @@
 </p>
 
 <p><%=t(:view_home_about_9)%></p>
-<% if logged_in? %>
-			<p><%=t(:view_home_home_5)%></p>
-			<ul>
-			<li><%=t(:view_home_home_6)%></li>
-			<li><%=t(:view_home_home_7)%></li>
-			<li><%=t(:view_home_home_8)%></li>
-			<li><%=t(:view_home_home_9)%></li>
-			<li><%=t(:view_home_home_10)%></li>
-			<% if is_admin? %>
-			<li><%=t(:view_home_home_11)%></li>
-			<li><%=t(:view_home_home_12)%></li>
-			<% end %>
-			<li><%=t(:view_home_home_13)%></li>
-			</ul>
-<% end %>
 <h3><%=t(:view_home_about_10)%></h3>
-<%=t(:view_home_about_11)%><%=t(:view_home_about_12)%>
+<%=t(:view_home_about_11)%>
 
 <h3><%=t(:view_home_about_13)%></h3>
 <p><%=t(:view_home_about_14)%>

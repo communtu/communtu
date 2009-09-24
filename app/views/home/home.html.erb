@@ -19,9 +19,10 @@
 			<%=t(:view_home_home_33)%>
 		</li>
 	</ul>
+<!--<div class="beste_buendel">-->
 <h3><%=t(:view_home_home_rating_headline)%></h3>
 <table cellspacing="0">
-      <tbody><tr><th class="packageList" align="left" valign="middle"><%=t(:bundle)%></th>
+      <tbody><tr><th class="packageList" align="left" valign="middle">--><%=t(:bundle)%></th>
 				<th valign="middle" class="packageList" align="left"><%=t(:view_home_home_rating_rating)%></th>
 				<% for metapackage in @metapackges do %>
 				<% css = cycle("packageList0", "packageList1") %>
@@ -53,5 +54,5 @@
 			<% end %>
 		</td>
 	</tr>
-</table>
+</table><!--</div>-->
 

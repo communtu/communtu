@@ -292,7 +292,7 @@ de:
   view_home_about_10: Wie kann ich meine Erfahrungen mit Programmen ins Communtu-System eintragen?
   view_home_about_11: "Hast du gute Erfahrungen mit Programmen gemacht? Dann kannst du thematisch zusammengehörige \
     Programme zu einem Bündel zusammenfassen und ins System eintragen. Dazu wählst du <b>Neues Bündel</b> \
-    unterhalb von <b>Bündel-Editor</b> auf der linken Seitenleiste. Du kannst dann Ubuntu-Pakete hinzufügen und mit Klick auf das Disketten-Symbol \
+    unterhalb von <b>Bündel</b>. Du kannst dann Ubuntu-Pakete hinzufügen und mit Klick auf das Disketten-Symbol \
     das Bündel im System abspeichern. Das Bündel soll einen Namen, eine Beschreibung und eine \
     thematische Einordnung erhalten, damit andere Nutzer es auch verwenden können. \
     Wie bei Ordnern und Dateien können Bündel nicht nur Ubuntu-Pakete, sondern auch andere \
@@ -304,8 +304,7 @@ de:
   view_home_about_14: "Du \
     hast schon eine lauffähige Ubuntu-Installation und möchtest \
     bestimmte Funktionen hinzufügen? Auch dafür kannst du Communtu benutzen. \
-    Du kannst unter <b>Bündel verwalten</b> einzelne Bündel installieren, \
-    und unter <b>Programme suchen</b> auch einzelne Programme."
+    Du kannst unter <b>Bündel</b> einzelne Bündel installieren."
   view_home_about_16: "Um Communtu nutzen zu können, kannst du dich registrieren. \
     Das geht ganz einfach über den \"Registrieren\"-Knopf in der oberen Leiste."
   view_home_about_1: Wozu Communtu?
@@ -317,10 +316,10 @@ de:
     benutzbar ist. Communtu macht diese Nachinstallation jetzt noch einfacher \
     und hat zudem spezielle Bereiche für Einsteiger und Windows-Umsteiger."
   view_home_about_4: Wie verwende ich Communtu?
-  view_home_about_5: "Zum Starten wählst du <b>Installation</b> auf der linken Seitenleiste."
+  view_home_about_5: "Zum Starten wählst du <b>Download</b>."
   view_home_about_6: "  (Diese erscheint erst nach einer "
-  view_home_about_7: ".) Dort kannst du deine Einstellungen bearbeiten. \
-    Unter den Grunddaten musst du zunächst eintragen, welche Ubuntu-Version du auf deinem PC installiert hast, \
+  view_home_about_7: "Dort kannst du deine Einstellungen bearbeiten. \
+    Unter den Voreinstellungen musst du zunächst eintragen, welche Ubuntu-Version du auf deinem PC installiert hast, \
     außerdem, ob du unfreie Programme nutzen willst oder nicht. \
     Zudem wählst du aus, für welche Aufgaben du deinen Ubuntu-PC nutzen willst. "
   view_home_about_8: "Danach kannst du mit \"Speichern und feiner Auswählen\" noch einen detaillierteren Überblick \
@@ -436,20 +435,20 @@ de:
   view_home_faq_01: Was ist ein Bündel?
   view_home_faq_02: Ein Bündel ist eine Zusammenstellung von Software für einen bestimmten Aufgabenbereich, den Du mit Deinem Rechner erledigen kannst.
   view_home_faq_03: Wie installiere ich ein Bündel?
-  view_home_faq_04: "Ein Bündel kann einmal in einer Zusammenstellung mit weiteren über den Punkt \"Installation\" zum Computer hinzugefügt werden.
-  Andererseits kann auch ein Bündel direkt installiert werden, wenn Du über den Menüpunkt \"Bündel verwalten\" gehst."
+  view_home_faq_04: "Ein Bündel kann einmal in einer Zusammenstellung mit weiteren über den Punkt \"Download\" zum Computer hinzugefügt werden.
+  Andererseits kann auch ein Bündel direkt installiert werden, wenn Du über den Menüpunkt \"Bündel\" gehst."
   view_home_faq_05: Wie erstelle ich ein Bündel?
-  view_home_faq_06: "Auf den linken Bereich der Webseite gibt es den Bündel-Editor. Dort bitte den Punkt \"Neues Bündel\" anklicken.
-  Aus den Paketen im Hauptfenster der Webseite kannst Du dann die einzelnen Pakete auswählen und hinzufügen. Zum Schluss muss dann auf das Speichernsymbol im Bündeleditor geklickt werden.
-  Hier öffnet sich dann im Hauptfenster ein Formular, wo Du einen sinnvollen Titel und Beschreibung eingeben kannst. Bitte ordne Deinem Bündel auch eine entsprechende Kategorie zu."
+  view_home_faq_06: "Klicke dazu bitte den Punkt \"Neues Bündel\" unter \"Bündel\".
+  Aus den Paketen im linken Fenster der Webseite kannst Du dann die einzelnen Pakete auswählen und hinzufügen. Zum Schluss muss dann auf das Speichernsymbol im Bündelbereich geklickt werden.
+  Hier öffnet sich dann auf einer neuen Seite ein Formular, wo Du einen sinnvollen Titel und Beschreibung eingeben kannst. Bitte ordne Deinem Bündel auch eine entsprechende Kategorie zu."
   view_home_faq_07: Wie kann ich ein Bündel bewerten?
-  view_home_faq_08: "Du gehst auf den Menüpunkt \"Bündel verwalten\" und lässt Dir unter \"Alle veröffentlichten Bündel\" die Bündel anzeigen. Dort kannst Du bis zu fünf Sterne anklicken.
+  view_home_faq_08: "Du gehst auf den Menüpunkt \"Bündel\" und lässt Dir unter \"Veröffentlichte Bündel\" die Bündel anzeigen. Dort kannst Du bis zu fünf Sterne anklicken.
   Danach erscheint ein Kommentarfeld, in dem Du diese Bewertung qualifizieren kannst."
   view_home_faq_09: Wie kann ich ein Bündel ändern?
-  view_home_faq_10: "Du gehst auf den Menüpunkt \"Bündel verwalten\" und läßt Dir da Deine Bündel auflisten. Das zu ändernde Bündel klickst Du nun an. Du bekommst nun alle wichtigen Informationen zu Deinem Bündel angezeigt.
+  view_home_faq_10: "Du gehst auf den Menüpunkt \"Meine Bündel\" unter \"Bündel\" und läßt Dir da Deine Bündel auflisten. Das zu ändernde Bündel klickst Du nun an. Du bekommst nun alle wichtigen Informationen zu Deinem Bündel angezeigt.
   Unter \"Aktionen\" kannst Du nun dieses Bündel oder auch die Paketliste editieren. Wenn das Paket nicht veröffentlicht ist, dann kannst Du es auch löschen oder ansonsten auch veröffentlichen."
   view_home_faq_11: Wie sichere ich die Programmliste meines Gesamtsystems?
-  view_home_faq_12: "Auf den linken Bereich der Webseite gibt es den Bündel-Editor. Dort bitte den Punkt \"Bündel aus Paketliste\" anklicken.
+  view_home_faq_12: "Unter \"Bündel\" und dann \"Neues Bündel\" gibt es den Punkt \"Bündel aus Paketliste\", der anzuklicken ist.
   Dort ist beschrieben, wie Du Deine Paketliste in Communtu hochladen kannst."
   view_home_faq_13: Wie finde ich Programme?
   view_home_faq_14: "Gehe dazu bitte auf den Menüpunkt \"Programme suchen\". Hier hast Du ein Suchfeld, in dem Du den Namen des gesuchten Prgramms angeben kannst.
@@ -459,8 +458,8 @@ de:
   view_home_faq_16: "Gehe dazu bitte auf den Menüpunkt \"Programme suchen\". Dort bekommst Du eine Auswahl von Programmen. Wenn Du Dein gewünschtes Programm gefunden hast, kannst Du dieses durch Klicken auf das Installationssymbol installieren. 
   Es ist möglich, dass Du vorher noch auf \"Quellen hinzufügen\" klicken musst, da es sein kann, dass das Programm in einer Quelle verfügabr ist, die Deinem System noch nicht bekannt ist."
   view_home_faq_17: Wie kann ich Programme vorschlagen, dass diese in Communtu mit aufgenommen werden?
-  view_home_faq_18: "Wenn Du über \"Programme suchen\" ein bestimmtes Programm nicht gefunden hst, kann es daran liegen, das wir die Quelle aus dem das Programm kommt, noch nicht in Communtu eingetragen haben.
-  Du kannst uns diese Quelle über den \"Bündel-Editor\" unter den Punkt \"Repository vorschlagen\" melden, damit diese auch in Communtu eingearbeitet werden kann."
+  view_home_faq_18: "Wenn Du über \"Bündel\" -> \"Neues Bündel\" ein bestimmtes Programm nicht gefunden hst, kann es daran liegen, das wir die Quelle aus dem das Programm kommt, noch nicht in Communtu eingetragen haben.
+  Du kannst uns diese Quelle dort über den Punkt \"Repository vorschlagen\" melden, damit diese auch in Communtu eingearbeitet werden kann."
   view_home_faq_19: Was sind eigentlich Quellen bzw. Repositories?
   view_home_faq_20: "Programme werden in Ubuntu in Paketen bereitgestellt, die in sogenannten Paketquellen bzw. Repositories auf Webservern liegen. 
   Nähere Information zu <a href=\"http://wiki.ubuntuusers.de/Paketquellen\" target=\"_blank\">Repositorys</a>."
@@ -729,7 +728,7 @@ de:
   view_user_profiles__installation_17: "Link einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer öffnen."
   view_user_profiles__installation_19: "Achtung: nach dem Anklicken dauert es eine gewisse Zeit, bis die Datei bereitgestellt wird. \
     \t\t"
-  view_user_profiles__installation_1: "Um etwas installieren zu können, musst du zunächst unter \"Grunddaten\" oder \"Detailauswahl\" etwas auswählen."
+  view_user_profiles__installation_1: "Um etwas installieren zu können, musst du zunächst unter \"Voreinstellungen\" oder \"Detailauswahl\" etwas auswählen."
   view_user_profiles__installation_20: "Dieser Schritt wurde bereits schon einmal ausgeführt. \
     \t\t"
   view_user_profiles__installation_21: "installieren der Metapakete. Bitte vorher die Quellen hinzufügen."
@@ -749,7 +748,7 @@ de:
   view_user_profiles_new_0: Neues Nutzerprofil
   view_user_profiles_new_1: Benutzer
   view_user_profiles_new_3: Expertenlevel
-  view_user_profiles__profile_data_0: "Installation vorbereiten: Grunddaten eingeben"
+  view_user_profiles__profile_data_0: "Installation vorbereiten: Voreinstellungen eingeben"
   view_user_profiles__profile_data_10: " Nur Ubuntuquellen zulassen (\"main/restricted\", sehr sicher: Sicherheits-Updates von Ubuntu)"
   view_user_profiles__profile_data_11: " Auch Communityquellen zulassen (\"universe/multiverse\", auch sicher, mehr Programme/Komfort: "
   view_user_profiles__profile_data_12: " Alle Quellen zulassen (etwas unsicherer: <a href=\"http://wiki.ubuntuusers.de/Fremdquellen\">Fremdpakete</a> können das System gefährden, aber noch mehr Programme/Komfort: "

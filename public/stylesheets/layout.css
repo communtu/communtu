@@ -839,8 +839,8 @@ h2, h1, h3 {
   font-family: verdana, arial, helvetica, sans-serif;
  /* font-size:   13px; */
   line-height: 22px;
-	word-wrap: break-word;
-	word-break: break-all;
+/*	word-wrap: break-word;
+	word-break: break-all;*/
 }
 p {
   font-family: verdana, arial, helvetica, sans-serif;
@@ -951,7 +951,7 @@ a.download:hover, a.download:active{
  position:absolute; 
  left:150px; 
  top:80px;
- width:400px;
+ width:435px;
  }
 .beste_buendel{
  position:absolute; 
@@ -1121,7 +1121,6 @@ text-align:right;
 	color:#63605E;
 	list-style-image:none;
 	}
-body{ font-size:9pt; font-family:Verdana,Arial,Helvetica,sans-serif; color:#451B00;  background-color:#FFFFFF; SCROLLBAR-FACE-COLOR: #F0E4C5; SCROLLBAR-HIGHLIGHT-COLOR:#ffffff; SCROLLBAR-SHADOW-COLOR: #101010; SCROLLBAR-3DLIGHT-COLOR: #D0C4A5;SCROLLBAR-ARROW-COLOR: #303435; SCROLLBAR-TRACK-COLOR: #E0D4B5; }
-
+body{ font-size:9pt; font-family:Verdana,Arial,Helvetica,sans-serif; color:#451B00;  background-color:#FFFFFF; SCROLLBAR-FACE-COLOR: #F0E4C5; SCROLLBAR-HIGHLIGHT-COLOR:#ffffff; SCROLLBAR-SHADOW-COLOR: #101010; SCROLLBAR:-3;DLIGHT-COLOR: #D0C4A5;SCROLLBAR-ARROW-COLOR: #303435; SCROLLBAR-TRACK-COLOR: #E0D4B5; }
 
 
