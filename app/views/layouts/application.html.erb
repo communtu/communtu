@@ -113,11 +113,15 @@
 <div class="content1">
 <% elsif params[:action] == "home" %>
 <div class="contentstart">
-<% end %>
+<% else %>
 <div class="content2">
-<a></a>
+<% jutta = 1 %>
+<% end %>
 		<%= yield %>
+<% if jutta == 1 %>
 </div>
+<% end %>
+<p></p>
 </div>
  </body>
 </html>

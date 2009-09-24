@@ -640,6 +640,9 @@ ul.tabz {
     padding:0px;
     visibility:hidden;
 }
+div.tabz {
+    left:0px;
+}
 
 li.tabz {
     display: inline;
