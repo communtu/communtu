@@ -37,12 +37,8 @@ class HomeController < ApplicationController
   end
   
  def email
-     if logged_in?
      @form_name = params[:form][:name]
-     else
-     @form_name = "nobody"
      @form_frage = params[:form][:frage]
-     end
      if logged_in?
      MyMailer.deliver_mail(@form_name, @form_frage, current_user)
      else
