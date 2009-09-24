@@ -15,18 +15,18 @@
 <div id="head">
 	<div id="navihead">
 <% if is_admin? %>
-		<a href="/categories"><%= t(:view_layouts_application_32) %></a> | <% end %><a href="/home/faq"><%= t(:view_layouts_application_30) %></a> | <a href="/home/contact_us"><%= t(:view_layouts_application_31) %></a> | <a href="/home/donate"><%= t(:view_layouts_donate) %></a>
+		<a href="/categories"><%= t(:view_layouts_application_32) %></a> | <% end %><a href="/home/home"><%= t(:homepage) %></a> | <a href="/home/faq"><%= t(:view_layouts_application_30) %></a> | <a href="/home/contact_us"><%= t(:view_layouts_application_31) %></a> | <a href="/home/donate"><%= t(:view_layouts_donate) %></a>
 </div>
-	<div id="lang">
-				<!-- sprachauswahl -->
-			<!--	<form action="" method="post">
+	<!--<div id="lang">
+				
+				<form action="" method="post">
 				<select name="language">
 					<option value="german">deutsch</option>
 					<option value="english">english</option>
 
 				</select>
-				</form> -->
-	</div>
+				</form> 
+	</div>-->
 	
 	<!-- registrieren -->
 	<div id="register">
@@ -62,7 +62,7 @@
 <% end %>
 		</a>
 <a href="/home/about">
-  <% if params[:controller] == "home" and params[:action] != "home" or params[:controller] == "home" and params[:action] != "new_repository" %>
+  <% if params[:controller] == "home" and params[:action] != ("home" or "new_repository") %>
  <%= image_tag("/images/navi_communtuon.png", :border => '0', :alt=>t(:view_layouts_application_28),:title=>t(:view_layouts_application_28))  %>
  			<div class="navi_drei"><%= t(:view_layouts_application_25) %></div>
 		</a>
@@ -96,7 +96,7 @@
 </div>
 <% end %>
 -->
-<% if params[:controller] == "home" and params[:action] != "home" or params[:controller] == "home" and params[:action] != "new_repository" %>
+<% if params[:controller] == "home" and params[:action] != ("home" or "new_repository") %>
 <%= render(:partial => 'navi_communtu') %>
 <div class="content1"> 
 <% elsif params[:action] == "metapackages" and params[:controller] == "users" %>
