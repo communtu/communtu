@@ -105,7 +105,7 @@
 <% elsif ((params[:controller] == "users" and params[:action] == "metapackages") or (params[:controller] == "home" and params[:action] == "new_repository") or params[:controller] == "metapackages" or params[:controller] == "distributions" or params[:controller] == "repositories")  %>
 <%= render(:partial => 'users/navi_bundle') %>
 <div class="content1">
-<% elsif params[:controller] == "users" and params[:action] != "metapackages" or params[:controller] == "categories" or params[:controller] == "debs" or params[:controller] == "roles" %>
+<% elsif ((params[:controller] == "users" and params[:action] != "metapackages" or params[:controller] == "categories" or params[:controller] == "debs" or params[:controller] == "roles") and !is_admin?) %>
 <%= render(:partial => 'layouts/navi_admin') %>
 <div class="content1">
 <% elsif params[:controller] == "user_profiles" %>
