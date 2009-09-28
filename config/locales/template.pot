@@ -59,7 +59,7 @@ msgstr ""
 msgid "Programmierung"
 msgstr ""
 #: changed_settings
-msgid "Dieser Schritt muss neu ausgeführt werden, weil du die Einstellungen geändert hast. 		     "
+msgid "Dieser Schritt muss neu ausgeführt werden, weil du die Einstellungen geändert hast."
 msgstr ""
 #: view_home_about_12
 msgid "<b>Bündel verwalten</b> auf der linken Seitenleiste gibt dir einen Überblick über die verfügbaren Bündel. Schließlich gibt es unter <b>Ubuntu-Versionen</b> eine Übersicht über die im System verfügbaren Ubuntu-Versionen (Distributionen)."
@@ -269,7 +269,7 @@ msgstr ""
 msgid "Das Bündel enthält Änderungen."
 msgstr ""
 #: view_home_derivatives_16
-msgid " ist Ubuntu mit dem KDE-Desktop.	"
+msgid " ist Ubuntu mit dem KDE-Desktop."
 msgstr ""
 #: controller_metapackages_9
 msgid "Die Beschreibung darf nicht leer sein<br>"
@@ -872,7 +872,7 @@ msgstr ""
 msgid ", dein Benutzerkonto wurde aktiviert.  Folge nun dem Link:"
 msgstr ""
 #: view_packages__deps_0
-msgid "	   keine"
+msgid "keine"
 msgstr ""
 #: view_layouts_application_24
 msgid "DOWNLOAD"
@@ -1064,7 +1064,7 @@ msgstr ""
 msgid "Dein Nachname"
 msgstr ""
 #: view_user_profiles__profile_data_8
-msgid "	     	Über den Browser festgestellte Version: "
+msgid "Über den Browser festgestellte Version: "
 msgstr ""
 #: view_repositories_index_0
 msgid "Repositories"
@@ -1106,7 +1106,7 @@ msgstr ""
 msgid "Icon"
 msgstr ""
 #: view_home_derivatives_20
-msgid "	Automatix war eine Installationshilfe, die sich großer Beliebtheit erfreute (sie wurde sogar von der New York Times empfohlen), die aber nicht ganz den Ubuntu-Programmierstandards entsprach und inzwischen nicht mehr weiterentwickelt wird. "
+msgid "Automatix war eine Installationshilfe, die sich großer Beliebtheit erfreute (sie wurde sogar von der New York Times empfohlen), die aber nicht ganz den Ubuntu-Programmierstandards entsprach und inzwischen nicht mehr weiterentwickelt wird. "
 msgstr ""
 #: view_home_faq_19
 msgid "Was sind eigentlich Quellen bzw. Repositories?"
@@ -1118,7 +1118,7 @@ msgstr ""
 msgid "Neues Paket"
 msgstr ""
 #: view_packages_edit_3
-msgid "	 &nbsp;&nbsp;Neues Icon: "
+msgid "&nbsp;&nbsp;Neues Icon: "
 msgstr ""
 #: view_home_derivatives_21
 msgid "Über Communtu nachinstallierbare Derivate, sinnvollerweise auf einer Xfce-basierten Installation (z.B. Xubuntu) aufzusetzen:"
@@ -1196,7 +1196,7 @@ msgstr ""
 msgid "http://wiki.ubuntuusers.de/Xfce"
 msgstr ""
 #: view_user_profiles__installation_19
-msgid "Achtung: nach dem Anklicken dauert es eine gewisse Zeit, bis die Datei bereitgestellt wird. 		"
+msgid "Achtung: nach dem Anklicken dauert es eine gewisse Zeit, bis die Datei bereitgestellt wird."
 msgstr ""
 #: view_packages_edit_8
 msgid "Neuer Link auf ein Video"
@@ -1838,7 +1838,7 @@ msgstr ""
 msgid "Abschicken"
 msgstr ""
 #: view_user_profiles__installation_20
-msgid "Dieser Schritt wurde bereits schon einmal ausgeführt. 		"
+msgid "Dieser Schritt wurde bereits schon einmal ausgeführt."
 msgstr ""
 #: view_admins_load_packages_0
 msgid "Neue Pakete: "
@@ -1874,7 +1874,7 @@ msgstr ""
 msgid "Communtu, Ubuntu, Installation, Installationshilfe"
 msgstr ""
 #: view_user_profiles__installation_23
-msgid "	    Pakete installieren. Es gibt zwei Alternativen: 	    "
+msgid "Pakete installieren. Es gibt zwei Alternativen:"
 msgstr ""
 #: view_repositories_migrate_2
 msgid " nach Distribution"
@@ -1994,7 +1994,7 @@ msgstr ""
 msgid "Programm für GUI-basiertes Sudo (z.B. gksudo, kdesudo)"
 msgstr ""
 #: view_user_profiles__installation_29
-msgid " konfigurieren. 		"
+msgid " konfigurieren."
 msgstr ""
 #: view_user_profiles_help_5
 msgid "du erweiterst Communtu um deine Version"

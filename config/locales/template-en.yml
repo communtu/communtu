@@ -298,7 +298,7 @@ en:
   view_user_mailer_activation_0: ", your account has been activated. Please follow this link:"
   view_home_derivatives_3: http://wiki.ubuntuusers.de/Was_ist_Linux?#Was-sind-Derivate-einer-Distribution (German)
   view_home_new_repository_0: Suggest repository
-  view_packages__deps_0: \t   none
+  view_packages__deps_0: none
   view_layouts_application_25: COMMUNTU
   view_user_profiles__profile_data_1: "On this page you can prepare the post-installation for your Ubuntu installation in four easy steps. If desired, you can choose the bundles in a detailed overview. "
   view_rating_show_title_ratings_count: (Based on {{votes}} rating(s))
@@ -372,7 +372,7 @@ en:
   view_users_new_12: (optional)
   view_user_profiles__profile_data_9: "Here you can select how secure or comfortable your sources should be:"
   view_user_profiles__installation_13: "(When chaning the version, the first step has to be done twice, because the Communtu-sources will be deactivated by the upgrade.):"
-  view_home_derivatives_20: \tAutomatix was a programm to assist the installation of software and enjoyed great popularity (Automatix was even recommended by the New York Times). However, Automatix did not meet the Ubuntu-standards and the development has been stopped.
+  view_home_derivatives_20: Automatix was a programm to assist the installation of software and enjoyed great popularity (Automatix was even recommended by the New York Times). However, Automatix did not meet the Ubuntu-standards and the development has been stopped.
   view_home_faq_19: What are sources or repositories?
   username: Username
   view_packages_edit_2: Icon
@@ -380,7 +380,7 @@ en:
   subject_without_colon: Subject
   view_packages_new_0: New package
   native: native
-  view_packages_edit_3: "\\t &nbsp;&nbsp;New icon: "
+  view_packages_edit_3: "&nbsp;&nbsp;New icon: "
   view_home_derivatives_22: " - in some ways like BeOS, ZevenOS focuses on speed and compatibility for old computers with a simple interface. CPU with at least 200 MHz, 128 MB RAM (for operating, while installing 192 MB RAM are required), at least 2 GB free hard disk space (recommended are 4 GB free hard disk space or more), 16 MB graphic card (recommended: Intel GMA 9xx)."
   view_sent_show_2: "Date:"
   news: News
@@ -659,7 +659,7 @@ en:
   view_home_derivatives_30: http://en.wikipedia.org/wiki/Home_theater_PC
   view_layouts_application_1: Communtu customizes your Ubuntu system to your individual needs.
   view_repositories_migrate_2: " to distribution"
-  view_user_profiles__installation_23: "\\t    Installing packages. There are two alternatives:"
+  view_user_profiles__installation_23: "Installing packages. There are two alternatives:"
   view_home_derivatives_31: . Because of the necessary installation of drivers, Linux MCE should be installed directly. However, Communtu can be used to install additional software.
   view_home_icons_3: Install package(s).
   view_layouts_application_2: Communtu

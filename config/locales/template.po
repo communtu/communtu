@@ -76,7 +76,7 @@ msgid "Programmierung"
 msgstr "Programming"
 
 #: changed_settings
-msgid "Dieser Schritt muss neu ausgeführt werden, weil du die Einstellungen geändert hast. \t\t     "
+msgid "Dieser Schritt muss neu ausgeführt werden, weil du die Einstellungen geändert hast."
 msgstr "This step has to be carried out again because you changed the settings."
 
 #: view_home_about_12
@@ -356,7 +356,7 @@ msgid "Das Bündel enthält Änderungen."
 msgstr "This bundle contains changes."
 
 #: view_home_derivatives_16
-msgid " ist Ubuntu mit dem KDE-Desktop.\t"
+msgid " ist Ubuntu mit dem KDE-Desktop."
 msgstr " is Ubuntu with the KDE-Desktop"
 
 #: controller_metapackages_9
@@ -1174,8 +1174,8 @@ msgid ", dein Benutzerkonto wurde aktiviert.  Folge nun dem Link:"
 msgstr ", your account has been activated. Please follow this link:"
 
 #: view_packages__deps_0
-msgid "\t   keine"
-msgstr "\t   none"
+msgid "keine"
+msgstr "none"
 
 #: view_layouts_application_24
 msgid "DOWNLOAD"
@@ -1434,7 +1434,7 @@ msgid "Dein Nachname"
 msgstr "your last name"
 
 #: view_user_profiles__profile_data_8
-msgid "\t     \tÜber den Browser festgestellte Version: "
+msgid "Über den Browser festgestellte Version: "
 msgstr "Via your webbrowser detected version: "
 
 #: view_repositories_index_0
@@ -1490,8 +1490,8 @@ msgid "Icon"
 msgstr "Icon"
 
 #: view_home_derivatives_20
-msgid "\tAutomatix war eine Installationshilfe, die sich großer Beliebtheit erfreute (sie wurde sogar von der New York Times empfohlen), die aber nicht ganz den Ubuntu-Programmierstandards entsprach und inzwischen nicht mehr weiterentwickelt wird. "
-msgstr "\tAutomatix was a programm to assist the installation of software and enjoyed great popularity (Automatix was even recommended by the New York Times). However, Automatix did not meet the Ubuntu-standards and the development has been stopped."
+msgid "Automatix war eine Installationshilfe, die sich großer Beliebtheit erfreute (sie wurde sogar von der New York Times empfohlen), die aber nicht ganz den Ubuntu-Programmierstandards entsprach und inzwischen nicht mehr weiterentwickelt wird. "
+msgstr "Automatix was a programm to assist the installation of software and enjoyed great popularity (Automatix was even recommended by the New York Times). However, Automatix did not meet the Ubuntu-standards and the development has been stopped."
 
 #: view_home_faq_19
 msgid "Was sind eigentlich Quellen bzw. Repositories?"
@@ -1506,8 +1506,8 @@ msgid "Neues Paket"
 msgstr "New package"
 
 #: view_packages_edit_3
-msgid "\t &nbsp;&nbsp;Neues Icon: "
-msgstr "\t &nbsp;&nbsp;New icon: "
+msgid "&nbsp;&nbsp;Neues Icon: "
+msgstr "&nbsp;&nbsp;New icon: "
 
 #: view_home_derivatives_21
 msgid "Über Communtu nachinstallierbare Derivate, sinnvollerweise auf einer Xfce-basierten Installation (z.B. Xubuntu) aufzusetzen:"
@@ -1616,7 +1616,7 @@ msgid "http://wiki.ubuntuusers.de/Xfce"
 msgstr "http://en.wikipedia.org/wiki/Xfce"
 
 #: view_user_profiles__installation_19
-msgid "Achtung: nach dem Anklicken dauert es eine gewisse Zeit, bis die Datei bereitgestellt wird. \t\t"
+msgid "Achtung: nach dem Anklicken dauert es eine gewisse Zeit, bis die Datei bereitgestellt wird."
 msgstr "Attention: after clicking, it will take a moment until the file is provided."
 
 #: view_packages_edit_8
@@ -2518,7 +2518,7 @@ msgid "Abschicken"
 msgstr "Send"
 
 #: view_user_profiles__installation_20
-msgid "Dieser Schritt wurde bereits schon einmal ausgeführt. \t\t"
+msgid "Dieser Schritt wurde bereits schon einmal ausgeführt."
 msgstr "This step has already been carried out."
 
 #: view_admins_load_packages_0
@@ -2566,8 +2566,8 @@ msgid "Communtu, Ubuntu, Installation, Installationshilfe"
 msgstr "Communtu, Ubuntu, installation, installation help"
 
 #: view_user_profiles__installation_23
-msgid "\t    Pakete installieren. Es gibt zwei Alternativen: \t    "
-msgstr "\t    Installing packages. There are two alternatives:"
+msgid "Pakete installieren. Es gibt zwei Alternativen:"
+msgstr "Installing packages. There are two alternatives:"
 
 #: view_repositories_migrate_2
 msgid " nach Distribution"
@@ -2726,7 +2726,7 @@ msgid "Programm für GUI-basiertes Sudo (z.B. gksudo, kdesudo)"
 msgstr "Program for GUI-based sudo (e.g. gksudo, kdesudo)"
 
 #: view_user_profiles__installation_29
-msgid " konfigurieren. \t\t"
+msgid " konfigurieren."
 msgstr " for the Konqueror and Opera browsers."
 
 #: view_user_profiles_help_5
