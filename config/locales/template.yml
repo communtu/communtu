@@ -17,8 +17,7 @@ de:
   bundle_editor: "Bündel-Editor"
   category_with_colon: "Kategorie:"
   category_without_colon: Kategorie
-  changed_settings: "Dieser Schritt muss neu ausgeführt werden, weil du die Einstellungen geändert hast. \
-    \t\t     "
+  changed_settings: "Dieser Schritt muss neu ausgeführt werden, weil du die Einstellungen geändert hast."
   change_passwd: "Passwort ändern"
   choose_parent: "Wähle einen Parent aus!"
   compose_new_message: neue Nachricht schreiben
@@ -371,13 +370,13 @@ de:
   view_home_derivatives_13: " - der PC wird zum Videorekorder. Bei Film \"Freak\" auswählen, und es wird mitinstalliert. Empfohlen: CPU mit 2 GHz, 1024 MByte RAM, 10 GByte Festplattenplatz für das Frontend, 80+ GByte für das Backend, eine Grafikkarte mit 128 MByte RAM mit TV-Ausgang und eine unterstützte TV-Karte."
   view_home_derivatives_14: " - Lernsoftware. Bei \"Bildung und Wissenschaft\" den Level \"erweitert\" auswählen, und es wird mitinstalliert."
   view_home_derivatives_15: http://wiki.ubuntuusers.de/KDE
-  view_home_derivatives_16: " ist Ubuntu mit dem KDE-Desktop.\t"
+  view_home_derivatives_16: " ist Ubuntu mit dem KDE-Desktop."
   view_home_derivatives_17: http://de.wikipedia.org/wiki/Linux_Mint
   view_home_derivatives_18: " ist eine Ubuntu-Abspaltung mit eigener User-Community, die sich vor allem Benutzerfreundlichkeit auf die Fahnen schreibt. \
     Linux Mint ähnelt Ubuntu sehr, hat aber viele Codes, z.B. für DVDs und MP3s, schon vorinstalliert. Diese Codecs gibt es allerdings auch bei Communtu, unter Unterhaltungsmedien. "
   view_home_derivatives_1: "Communtu setzt auf einer Ubuntu-Basisinstallation auf. \
     Es gibt nun eine ganze Reihe von "
-  view_home_derivatives_20: "\tAutomatix war eine Installationshilfe, die sich großer Beliebtheit erfreute (sie wurde sogar von der New York Times empfohlen), die aber nicht ganz den Ubuntu-Programmierstandards entsprach und inzwischen nicht mehr weiterentwickelt wird. "
+  view_home_derivatives_20: "Automatix war eine Installationshilfe, die sich großer Beliebtheit erfreute (sie wurde sogar von der New York Times empfohlen), die aber nicht ganz den Ubuntu-Programmierstandards entsprach und inzwischen nicht mehr weiterentwickelt wird. "
   view_home_derivatives_21: "Über Communtu nachinstallierbare Derivate, sinnvollerweise auf einer Xfce-basierten Installation (z.B. Xubuntu) aufzusetzen:"
   view_home_derivatives_22: " - orient an BeOS, setzt auf Schnelligkeit, Kompatibilität mit alten Rechnern und einfache Bedienung. CPU mit mindestens 200 MHZ \
     128 MB RAM (zum Betrieb, zur Installation werden 192 MB RAM benötigt); \
@@ -639,12 +638,12 @@ de:
   view_my_mailer_mailerror_0: "Hallo,  \n es wurde auf www.communtu.de ein Fehler gemeldet.  \nDer Benutzer möchte ganz gern, darüber benachrichtigt werden, wenn der Fehler nicht mehr auftritt."
   view_my_mailer_repo_0: "Hallo, \n\nes wurde auf www.communtu.de ein Vorschlag für ein neues Repository gemacht:"
   view_my_mailer_repo_1: "Folgende Begründung wurde angegeben:"
-  view_packages__deps_0: "\t   keine"
+  view_packages__deps_0: "keine"
   view_packages__deps_1: "          Nur für "
   view_packages_edit_0: Paket bearbeiten
   view_packages_edit_10: Beschreibung des Pakets
   view_packages_edit_2: Icon
-  view_packages_edit_3: "\t &nbsp;&nbsp;Neues Icon: "
+  view_packages_edit_3: "&nbsp;&nbsp;Neues Icon: "
   view_packages_edit_4: "Ist ein Programm:"
   view_packages_edit_8: Neuer Link auf ein Video
   view_packages_edit_9: "    Beschreibung des Videos:"
@@ -727,20 +726,16 @@ de:
   view_user_profiles__installation_13: "(Bei einem Versionswechsel muss der erste Schritt erneut ausgeführt werden, da die Communtu Quellen durch das Upgrade deaktiviert wurden.):"
   view_user_profiles__installation_16: "Quellen und Schlüssel eintragen"
   view_user_profiles__installation_17: "Link einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer öffnen."
-  view_user_profiles__installation_19: "Achtung: nach dem Anklicken dauert es eine gewisse Zeit, bis die Datei bereitgestellt wird. \
-    \t\t"
+  view_user_profiles__installation_19: "Achtung: nach dem Anklicken dauert es eine gewisse Zeit, bis die Datei bereitgestellt wird."
   view_user_profiles__installation_1: "Um etwas installieren zu können, musst du zunächst unter \"Voreinstellungen\" oder \"Detailauswahl\" etwas auswählen."
-  view_user_profiles__installation_20: "Dieser Schritt wurde bereits schon einmal ausgeführt. \
-    \t\t"
+  view_user_profiles__installation_20: "Dieser Schritt wurde bereits schon einmal ausgeführt."
   view_user_profiles__installation_21: "installieren der Metapakete. Bitte vorher die Quellen hinzufügen."
-  view_user_profiles__installation_23: "\t    Pakete installieren. Es gibt zwei Alternativen: \
-    \t    "
+  view_user_profiles__installation_23: "Pakete installieren. Es gibt zwei Alternativen:"
   view_user_profiles__installation_24: "Installation über ein Metapaket"
   view_user_profiles__installation_25: "Installation über apturl"
   view_user_profiles__installation_27: "Die Browser Konqueror und Opera bitte erst für "
   view_user_profiles__installation_28: http://wiki.ubuntuusers.de/apturl
-  view_user_profiles__installation_29: " konfigurieren. \
-    \t\t"
+  view_user_profiles__installation_29: " konfigurieren."
   view_user_profiles__installation_2: "Aufgrund deiner Auswahl werden jetzt Programme auf deinem Computer installiert. \
     Folgende Schritte sind dafür zu tun"
   view_user_profiles__installation_30: "Hinweis: Bitte .deb-Dateien nicht umbenennen."
@@ -764,7 +759,7 @@ de:
   view_user_profiles__profile_data_4: Weitere Informationen
   view_user_profiles__profile_data_6: "Wähle bitte deine Ubuntu-Version aus. "
   view_user_profiles__profile_data_7: Wie stelle ich die Version fest?
-  view_user_profiles__profile_data_8: "\t     \tÜber den Browser festgestellte Version: "
+  view_user_profiles__profile_data_8: "Über den Browser festgestellte Version: "
   view_user_profiles__profile_data_9: Hier kannst du einstellen, wie sicher bzw. komfortabel deine Installationsquellen sein sollen
   view_user_profiles__profile_rating_0: "Feinauswahl der zu installierenden Programmbündel und Programme"
   view_user_profiles__profile_rating_1: "Hier kannst du deine beabsichtigte Computer-Nutzung noch genauer angeben. \nDurch Klicken auf "
