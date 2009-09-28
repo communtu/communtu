@@ -283,16 +283,16 @@ p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size:   13px;
   line-height: 18px;
-	word-wrap: break-word;
-	word-break: break-all;
+/*	word-wrap: break-word;
+	word-break: break-all; */
 }
 
 h2, h1 {
   font-family: verdana, arial, helvetica, sans-serif;
  /* font-size:   13px; */
   line-height: 22px;
-	word-wrap: break-word;
-	word-break: break-all;
+ /*	word-wrap: break-word;
+	word-break: break-all; */
 }
 
 pre {
