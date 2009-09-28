@@ -56,8 +56,8 @@ msgid "Wir benötigen eine Person, die für das Projekt das Layout übernimmt. D
 msgstr "We need someone who is responsible for the project's layout. This means to integrate every graphic and to take over the main responsibility for the CSS."
 
 #: view_home_about_11
-msgid "Hast du gute Erfahrungen mit Programmen gemacht? Dann kannst du thematisch zusammengehörige Programme zu einem Bündel zusammenfassen und ins System eintragen. Dazu wählst du <b>Neues Bündel</b> unterhalb von <b>Bündel-Editor</b> auf der linken Seitenleiste. Du kannst dann Ubuntu-Pakete hinzufügen und mit Klick auf das Disketten-Symbol das Bündel im System abspeichern. Das Bündel soll einen Namen, eine Beschreibung und eine thematische Einordnung erhalten, damit andere Nutzer es auch verwenden können. Wie bei Ordnern und Dateien können Bündel nicht nur Ubuntu-Pakete, sondern auch andere Bündel enthalten. "
-msgstr "Did you have good experience with the programs? You can merge thematic programs to a bundle and add this to the system. To do so, you choose <b>new bundle</b> below <b>bundle-editor</b> on the left side. Then you can add Ubuntu packages to the bundle. After you have finished, click on the floppy-icon to save the bundle. The bundle needs a name, a description and a thematic classification so that other users can use it too. Just like folders and files, the bundle can consist not only of Ubuntu packages but also of other bundles too. "
+msgid "Hast du gute Erfahrungen mit Programmen gemacht? Dann kannst du thematisch zusammengehörige Programme zu einem Bündel zusammenfassen und ins System eintragen. Dazu wählst du <b>Neues Bündel</b> unterhalb von <b>Bündel</b>. Du kannst dann Ubuntu-Pakete hinzufügen und mit Klick auf das Disketten-Symbol das Bündel im System abspeichern. Das Bündel soll einen Namen, eine Beschreibung und eine thematische Einordnung erhalten, damit andere Nutzer es auch verwenden können. Wie bei Ordnern und Dateien können Bündel nicht nur Ubuntu-Pakete, sondern auch andere Bündel enthalten. "
+msgstr "Did you have good experience with the programs? You can merge thematic programs to a bundle and add this to the system. To do so, you choose <b>new bundle</b> below <b>Bundles</b>. Then you can add Ubuntu packages to the bundle. After you have finished, click on the floppy-icon to save the bundle. The bundle needs a name, a description and a thematic classification so that other users can use it too. Just like folders and files, the bundle can consist not only of Ubuntu packages but also of other bundles too. "
 
 #: detailed_view
 msgid "zur Detailansicht"
@@ -68,8 +68,8 @@ msgid "https://www.paypal.com/de_DE/DE/i/btn/btn_donate_LG.gif"
 msgstr "https://www.paypal.com/en_GB/i/btn/btn_donate_LG.gif"
 
 #: view_home_faq_04
-msgid "Ein Bündel kann einmal in einer Zusammenstellung mit weiteren über den Punkt \"Installation\" zum Computer hinzugefügt werden. Andererseits kann auch ein Bündel direkt installiert werden, wenn Du über den Menüpunkt \"Bündel verwalten\" gehst."
-msgstr "A bundle, together with other bundles, can be installed as a compilation via \"Installation\". A bundle can be installed directly via the menu-entry \"Administrate bundles\"."
+msgid "Ein Bündel kann einmal in einer Zusammenstellung mit weiteren über den Punkt \"Download\" zum Computer hinzugefügt werden. Andererseits kann auch ein Bündel direkt installiert werden, wenn Du über den Menüpunkt \"Bündel\" gehst."
+msgstr "A bundle, together with other bundles, can be installed as a compilation via \"Download\". A bundle can also be installed directly via the menu-entry \"Bundle\""
 
 #: view_home_beteiligung_12
 msgid "Programmierung"
@@ -108,16 +108,16 @@ msgid "(Version {{v}})"
 msgstr "(version {{v}})"
 
 #: view_home_faq_06
-msgid "Auf den linken Bereich der Webseite gibt es den Bündel-Editor. Dort bitte den Punkt \"Neues Bündel\" anklicken. Aus den Paketen im Hauptfenster der Webseite kannst Du dann die einzelnen Pakete auswählen und hinzufügen. Zum Schluss muss dann auf das Speichernsymbol im Bündeleditor geklickt werden. Hier öffnet sich dann im Hauptfenster ein Formular, wo Du einen sinnvollen Titel und Beschreibung eingeben kannst. Bitte ordne Deinem Bündel auch eine entsprechende Kategorie zu."
-msgstr "On the left side of the webpage is the bundle-editor. There you have to click \"New Bundle\". In the main-window you can choose packages and add them to the bundle. When finished, you have to click on the \"Save\"-symbol in the bundle-editor. Now a new window pop ups in the main-window where you have to enter a meaningful name and a description. Don't forget to assign your bundle to a category."
+msgid "Klicke dazu bitte den Punkt \"Neues Bündel\" unter \"Bündel\". Aus den Paketen im linken Fenster der Webseite kannst Du dann die einzelnen Pakete auswählen und hinzufügen. Zum Schluss muss dann auf das Speichernsymbol im Bündelbereich geklickt werden. Hier öffnet sich dann auf einer neuen Seite ein Formular, wo Du einen sinnvollen Titel und Beschreibung eingeben kannst. Bitte ordne Deinem Bündel auch eine entsprechende Kategorie zu."
+msgstr "Click on \"Bundle\" and then you have to click \"New Bundle\". In the left box you can choose packages and add them to the bundle. When finished, you have to click on the \"Save\"-symbol in the bundle-editor. Now a new window appears in the main-window where you have to enter a meaningful name and a description. Don't forget to assign your bundle to a category."
 
 #: view_home_beteiligung_14
 msgid "Wir können Dir auch helfen diese Programmiersprache zu lernen. Also melde Dich einfach bei "
-msgstr "We can also help you to learn this programming-language. You just have to contact"
+msgstr "We can also help you to learn this programming-language. You just have to contact "
 
 #: view_home_about_14
-msgid "Du hast schon eine lauffähige Ubuntu-Installation und möchtest bestimmte Funktionen hinzufügen? Auch dafür kannst du Communtu benutzen. Du kannst unter <b>Bündel verwalten</b> einzelne Bündel installieren, und unter <b>Programme suchen</b> auch einzelne Programme."
-msgstr "You already have a useful Ubuntu-installation and want to add some functions? You can also use Communtu for this. You can install single bundles at <b>Administrate bundle</b> and at <b>Search programs</b>, even single programs."
+msgid "Du hast schon eine lauffähige Ubuntu-Installation und möchtest bestimmte Funktionen hinzufügen? Auch dafür kannst du Communtu benutzen. Du kannst unter <b>Bündel</b> einzelne Bündel installieren."
+msgstr "You already have a Ubuntu-installation in use and want to add some functions? You can also use Communtu for this. You can install single bundles at <b>Bundles</b>."
 
 #: view_packages_show_16
 msgid "Paket-Version"
@@ -152,8 +152,8 @@ msgid "Bewertung: "
 msgstr "Rating: "
 
 #: view_home_faq_08
-msgid "Du gehst auf den Menüpunkt \"Bündel verwalten\" und lässt Dir unter \"Alle veröffentlichten Bündel\" die Bündel anzeigen. Dort kannst Du bis zu fünf Sterne anklicken. Danach erscheint ein Kommentarfeld, in dem Du diese Bewertung qualifizieren kannst."
-msgstr "You go to \"Administrate bundles\" and click on \"All published bundles\" to view all bundles. There you can rate a program with up to five stars and, after that, a commentbox appears where you have to enter a comment to justify your rating."
+msgid "Du gehst auf den Menüpunkt \"Bündel\" und lässt Dir unter \"Veröffentlichte Bündel\" die Bündel anzeigen. Dort kannst Du bis zu fünf Sterne anklicken. Danach erscheint ein Kommentarfeld, in dem Du diese Bewertung qualifizieren kannst."
+msgstr "You go to \"Bundle\" and click on \"Published bundles\" to view all bundles. There you can rate a program with up to five stars and, after that, a commentbox appears where you have to enter a comment to justify your rating."
 
 #: controller_metapackages_2
 msgid "Dieser Bündel-Name ist bereits vergeben!"
@@ -575,7 +575,7 @@ msgstr "Match Ubuntu to your personal needs"
 
 #: view_home_beteiligung_1
 msgid "Anwenden der Plattform"
-msgstr "using the platform"
+msgstr "Using the platform"
 
 #: controller_metapackages_cannot_destroy
 msgid "Veröffentlichte Bündel können nicht gelöscht werden."
@@ -636,7 +636,7 @@ msgid ""
 "Video zu dem Programm bei Youtube gesehen? Dann trag es doch gleich bei\n"
 "den Videos zu den Programmen in Communtu ein."
 msgstr ""
-"You think you already know a lot abot Open Source programs? \n"
+"You think you already know a lot about Open Source programs? \n"
 "Write your experience into the comments of the according package our maybe you have seen\n"
 "a video of the program at YouTube? Add the video\n"
 "to the corresponding program."
@@ -691,7 +691,7 @@ msgstr "Purpose: Communtu"
 
 #: view_user_profiles__profile_data_13
 msgid "Hier kannst du auswählen, welche Lizenzen du zulassen willst"
-msgstr "Here you can choose which licenses you want to accept"
+msgstr "Here you can choose which licenses you want to accept:"
 
 #: view_user_profiles__installation_30
 msgid "Hinweis: Bitte .deb-Dateien nicht umbenennen."
@@ -707,7 +707,7 @@ msgstr " external link"
 
 #: view_home_beteiligung_7
 msgid "Wir benötigen Feedback. Wir möchten, dass Communtu von allen genutzt werden kann. Dazu benötigen wir Feedback. Hast Du einen Fehler auf der Plattform gefunden? Findest Du etwas unverständlich? Glaubst Du, dass wir was besser machen können? Hast Du eine Anregung für uns? Feedback ist uns Willkommen unter "
-msgstr "We need feedback. Our desire is, that Communtu will be used by everyone and for this we need feedback. You found an error in the system? Is there something that is incomprehensible to you? You think, you could do something better? You have some suggestions for us? Feedback is accepted under"
+msgstr "We need feedback. Our desire is that Communtu will be used by everyone and for this we need feedback. You found an error in the system? Is there something that is incomprehensible to you? You think you could do something better? You have some suggestions for us? Feedback is accepted under "
 
 #: no_save_database
 msgid "Die folgenden Pakete konnten nicht in der Datenbank gespeichert werden:"
@@ -743,7 +743,7 @@ msgstr "Derivative created."
 
 #: view_home_beteiligung_8
 msgid "Mitarbeit"
-msgstr "co-operation"
+msgstr "Co-operation"
 
 #: view_home_about_3
 msgid "Es gibt aber auch viele Anwendungen, die erst noch nachinstalliert werden müssen, z.B. in den Bereichen Audio, Video und Grafik, damit dein Computer mit Ubuntu wirklich  benutzbar ist. Communtu macht diese Nachinstallation jetzt noch einfacher und hat zudem spezielle Bereiche für Einsteiger und Windows-Umsteiger."
@@ -806,8 +806,8 @@ msgid "Registrieren"
 msgstr "Register"
 
 #: view_home_about_5
-msgid "Zum Starten wählst du <b>Installation</b> auf der linken Seitenleiste."
-msgstr "To start, choose <b>Installation</b> on the left side."
+msgid "Zum Starten wählst du <b>Download</b>."
+msgstr "To start, choose <b>Installation</b>."
 
 #: view_videos_show_0
 msgid "Url:"
@@ -878,7 +878,7 @@ msgid " Ubuntu ultimate  - Ubuntu mit vielen Desktop-Desgins und Programmen."
 msgstr "Ubuntu ultimate - Ubuntu with many desktop-designs and applications."
 
 #: view_home_about_7
-msgid ".) Dort kannst du deine Einstellungen bearbeiten. Unter den Grunddaten musst du zunächst eintragen, welche Ubuntu-Version du auf deinem PC installiert hast, außerdem, ob du unfreie Programme nutzen willst oder nicht. Zudem wählst du aus, für welche Aufgaben du deinen Ubuntu-PC nutzen willst. "
+msgid "Dort kannst du deine Einstellungen bearbeiten. Unter den Voreinstellungen musst du zunächst eintragen, welche Ubuntu-Version du auf deinem PC installiert hast, außerdem, ob du unfreie Programme nutzen willst oder nicht. Zudem wählst du aus, für welche Aufgaben du deinen Ubuntu-PC nutzen willst. "
 msgstr ".) There you can edit your settings. First, you have to specify the basic data, such as which Ubuntu version you want to install on your computer. Additionally, you must specify if you want to use free or commercial software. Finally you must indicate for which purposes you want to use your computer."
 
 #: lib_system_2
@@ -1166,8 +1166,8 @@ msgid "Ubuntu-Derivaten"
 msgstr "Ubuntu derivatives "
 
 #: view_user_profiles__profile_data_0
-msgid "Installation vorbereiten: Grunddaten eingeben"
-msgstr "Preparing the installation: enter the base data"
+msgid "Installation vorbereiten: Voreinstellungen eingeben"
+msgstr "Preparing the installation: adjust the preadjustments"
 
 #: view_user_mailer_activation_0
 msgid ", dein Benutzerkonto wurde aktiviert.  Folge nun dem Link:"
@@ -1199,7 +1199,7 @@ msgstr "http://wiki.ubuntuusers.de/Was_ist_Linux?#Was-sind-Derivate-einer-Distri
 
 #: view_user_profiles__profile_data_1
 msgid "Auf dieser Seite kannst du in vier einfachen Schritten deine Ubuntu-Nachinstallation auswählen - fertig.  Wenn gewünscht, ist aber auch eine detailliertere Auswahl möglich. "
-msgstr "On this page you can prepare the post-installation for your Ubuntu installation in four easy steps. If desired, you can choose the bundles in a detailed overview."
+msgstr "On this page you can prepare the post-installation for your Ubuntu installation in four easy steps. If desired, you can choose the bundles in a detailed overview. "
 
 #: view_rating_show_title_ratings_count
 msgid "(Basierend auf {{votes}} Bewertung(en))"
@@ -1218,8 +1218,8 @@ msgid "Du vermisst hier eine Quelle? Dann kannst Du ein Repository vorschlagen."
 msgstr "You're missing some sources? You can suggest a repository to us."
 
 #: view_home_faq_10
-msgid "Du gehst auf den Menüpunkt \"Bündel verwalten\" und läßt Dir da Deine Bündel auflisten. Das zu ändernde Bündel klickst Du nun an. Du bekommst nun alle wichtigen Informationen zu Deinem Bündel angezeigt. Unter \"Aktionen\" kannst Du nun dieses Bündel oder auch die Paketliste editieren. Wenn das Paket nicht veröffentlicht ist, dann kannst Du es auch löschen oder ansonsten auch veröffentlichen."
-msgstr "Click on \"Administrate bundles\", which shows you your bundles, and then you click on the bundle you want to change. All important information concerning this bundle is now shown. With a click on \"Actions\" you can edit the bundle or the package-list. If the bundle is not published, you can delete it or publish the bundle, if you would like to do so."
+msgid "Du gehst auf den Menüpunkt \"Meine Bündel\" unter \"Bündel\" und läßt Dir da Deine Bündel auflisten. Das zu ändernde Bündel klickst Du nun an. Du bekommst nun alle wichtigen Informationen zu Deinem Bündel angezeigt. Unter \"Aktionen\" kannst Du nun dieses Bündel oder auch die Paketliste editieren. Wenn das Paket nicht veröffentlicht ist, dann kannst Du es auch löschen oder ansonsten auch veröffentlichen."
+msgstr "Click on \"Bundles\" -> \"My bundles\", which shows you your bundles, and then you click on the bundle you want to change. All important information concerning this bundle is now shown. With a click on \"Actions\" you can edit the bundle or the package-list. If the bundle is not published, you can delete it or publish the bundle, if you would like to do so."
 
 #: view_home_derivatives_4
 msgid ", und viele Ubuntu-Nutzer fragen sich,  ob sie statt Ubuntu lieber ein Derivat benutzen sollten. Die Antwort ist: meistens fährt man mit dem Standard-Ubuntu ganz gut, denn Communtu erlaubt, die Derivate auf einfache Weise nachzuinstallieren.  Allerdings ist das nicht bei allen Derivaten gleich sinnvoll."
@@ -1271,7 +1271,7 @@ msgstr "Each derivative under "
 
 #: view_user_profiles__profile_data_3
 msgid "Welche Aufgaben willst du mit deinem Computer erledigen? (um grob eine Auswahl zu treffen, Feineinstellungen später möglich)"
-msgstr "What tasks do you want to do with your computer? (only a rough choice; they can be chosen in detail later)"
+msgstr "What tasks do you want to do with your computer (only a rough choice, they can be chosen in detail later)?"
 
 #: view_packages_show_21
 msgid "Wird in folgenden Paketen benutzt:"
@@ -1294,8 +1294,8 @@ msgid "Quellen hinzufügen"
 msgstr "Add sources"
 
 #: view_home_faq_12
-msgid "Auf den linken Bereich der Webseite gibt es den Bündel-Editor. Dort bitte den Punkt \"Bündel aus Paketliste\" anklicken. Dort ist beschrieben, wie Du Deine Paketliste in Communtu hochladen kannst."
-msgstr "On the left side of the webpage is the bundle-editor. There you have to click on \"Bundle from package-list\". A new page is loaded with instructions on how to upload your package-list to Communtu."
+msgid "Unter \"Bündel\" und dann \"Neues Bündel\" gibt es den Punkt \"Bündel aus Paketliste\", der anzuklicken ist. Dort ist beschrieben, wie Du Deine Paketliste in Communtu hochladen kannst."
+msgstr "After a click on \"Bundle\" and \"New bundle\" you can find the link \"Create bundle from a packages-list\". A new page is loaded with instructions on how to upload your package-list to Communtu."
 
 #: view_debs_index_1
 msgid "Zurück zum Communtu-Menü"
@@ -1363,7 +1363,7 @@ msgstr "user found"
 
 #: view_layouts_application_29
 msgid "Gast"
-msgstr "guest"
+msgstr "Guest"
 
 #: model_user_meta_tabz_3
 msgid "Veröffentlichte Bündel"
@@ -1435,7 +1435,7 @@ msgstr "your last name"
 
 #: view_user_profiles__profile_data_8
 msgid "\t     \tÜber den Browser festgestellte Version: "
-msgstr "\t     \tVia your webbrowser detected version: "
+msgstr "Via your webbrowser detected version: "
 
 #: view_repositories_index_0
 msgid "Repositories"
@@ -1475,11 +1475,11 @@ msgstr "(optional)"
 
 #: view_user_profiles__profile_data_9
 msgid "Hier kannst du einstellen, wie sicher bzw. komfortabel deine Installationsquellen sein sollen"
-msgstr "Here you can select how secure or comfortable you sources should be"
+msgstr "Here you can select how secure or comfortable your sources should be:"
 
 #: view_home_faq_18
-msgid "Wenn Du über \"Programme suchen\" ein bestimmtes Programm nicht gefunden hst, kann es daran liegen, das wir die Quelle aus dem das Programm kommt, noch nicht in Communtu eingetragen haben. Du kannst uns diese Quelle über den \"Bündel-Editor\" unter den Punkt \"Repository vorschlagen\" melden, damit diese auch in Communtu eingearbeitet werden kann."
-msgstr "If you haven't found a program via \"Search programs\", chances are high Communtu doesn't have the corresponding repositories containing that program. You can suggest the repository, where the program is in, to us via \"Suggest repository\" in the bundle-editor so we can implement the repository."
+msgid "Wenn Du über \"Bündel\" -> \"Neues Bündel\" ein bestimmtes Programm nicht gefunden hst, kann es daran liegen, das wir die Quelle aus dem das Programm kommt, noch nicht in Communtu eingetragen haben. Du kannst uns diese Quelle dort über den Punkt \"Repository vorschlagen\" melden, damit diese auch in Communtu eingearbeitet werden kann."
+msgstr "If you haven't found a program via \"Bundle\" -> \"New bundle\", chances are high Communtu doesn't have the corresponding repositories containing that program. You can suggest the repository, where the program is in, to us via \"Suggest repository\" so we can implement the repository."
 
 #: view_user_profiles__installation_13
 msgid "(Bei einem Versionswechsel muss der erste Schritt erneut ausgeführt werden, da die Communtu Quellen durch das Upgrade deaktiviert wurden.):"
@@ -1860,8 +1860,8 @@ msgid "Sicherheitstyp:"
 msgstr "Security type:"
 
 #: view_user_profiles__installation_1
-msgid "Um etwas installieren zu können, musst du zunächst unter \"Grunddaten\" oder \"Detailauswahl\" etwas auswählen."
-msgstr "In order to install, you have to specify some things at \"Base data\" or \"Details\"."
+msgid "Um etwas installieren zu können, musst du zunächst unter \"Voreinstellungen\" oder \"Detailauswahl\" etwas auswählen."
+msgstr "In order to install, you have to specify some things at \"Preadjustment\" or \"Details\"."
 
 #: view_metapackages_show_14
 msgid "  Aktionen:&nbsp;&nbsp;"
@@ -1929,7 +1929,7 @@ msgstr "Receive a message-icon for new messages"
 
 #: view_home_home_29
 msgid "Zu welchem Thema suchst Du Programme (Büro, Grafik,...)? Hier kannst du deine Interessensgebiete eingeben und passende vorkonfigurierte Programmbündel downloaden."
-msgstr "To which topic do look for programs (office, graphics, ...)? Enter your fields of interest and pre-configured bundles will be downloaded."
+msgstr "To which topic do you look for programs (office, graphics, ...)? Enter your fields of interest and pre-configured bundles can be downloaded."
 
 #: published
 msgid "veröffentlicht"
@@ -2147,6 +2147,10 @@ msgstr "Ubuntu"
 msgid "Anfrage per Formular"
 msgstr "Query via formular"
 
+#: metacart_choose
+msgid "Füge Programme aus der linken Spalte zu Deinem Bündel hinzu."
+msgstr "Please add programs from the left box to your bundle."
+
 #: change_passwd
 msgid "Passwort ändern"
 msgstr "change password"
@@ -2307,7 +2311,7 @@ msgstr "<b>Search program</b> Here you can search for single Ubuntu-programs (pa
 
 #: helper_distributions_11
 msgid "<br />Distribution "
-msgstr "<br />distribution "
+msgstr "<br />Distribution "
 
 #: view_distributions_index_0
 msgid "Verfügbare Distributionen"
@@ -2375,7 +2379,7 @@ msgstr "Received on:"
 
 #: view_layouts_application_32
 msgid "Admin"
-msgstr "admin"
+msgstr "Admin"
 
 #: sources
 msgid "Quellen"
@@ -2505,13 +2509,13 @@ msgstr "edit video"
 msgid "Paket sofort installieren"
 msgstr "install package instantly"
 
-#: senden
-msgid "Abschicken"
-msgstr "Send"
-
 #: view_home_faq_24
 msgid "Dies kann über Synaptic erfolgen. Hierzu gehst Du bei einem Gnome-System auf \"System -> Systemverwaltung -> Synaptic-Paketverwaltung\". Bei einem KDE4-System musst Du über \"K-Menu -> Programme-> System -> Systemverwaltung -> Software-Verwaltung\" gehen. Wähle hier unten links den Punkt Ursprung. Suche nun in der darüber liegenden Liste packages.communtu.de und klicke es an. Auf der rechten Seite werden nun die verfügbaren Metapakete in Communtu angezeigt.  Das Entfernen geht über Rechtsmausklick und dann \"Zum Entfernen vormerken\". Dies muss dann danach durch \"Anwenden\" bestätigt werden.  Die einzelnen Pakete werden dadurch nicht deinstalliert, sondern lassen sich wie gewohnt über <a href=\"http://wiki.ubuntuusers.de/Synaptic\" target=\"_blank\">Synaptic</a> auswählen und deinstallieren."
 msgstr "This can be done with Synaptic. To reach Synaptic in a Gnome-based system, you open the menu \"System\" -> \"Administration\" -> \"Synaptic Package Manager\". To reach Synaptic in a KDE-based system, you open the K-menu and then navigate to \"Programs\" -> \"System\" -> \"Administration\" -> \"Software Management\". Next you choose the menu-entry \"Origin\" in the lower-left corner. In the list, which now appears above this section of Synaptic, you choose the entry \"packages.communtu.de\". In the main-part of Synaptic, on the right side of the program-window, you now have a list of the installed metapackages. To remove a metapackage you right-click it and choose \"Mark for Removal\". To finish the removal of a metapackage you now have just to click on \"Apply\" in the menu-bar above. However, the packages contained in this metapackage will not be removed! To remove these you have to choose the packages with Synaptic and remove them individually."
+
+#: senden
+msgid "Abschicken"
+msgstr "Send"
 
 #: view_user_profiles__installation_20
 msgid "Dieser Schritt wurde bereits schon einmal ausgeführt. \t\t"
@@ -2623,7 +2627,7 @@ msgstr "Ubuntu logo"
 
 #: save
 msgid "Speichern"
-msgstr "save"
+msgstr "Save"
 
 #: view_home_derivatives_32
 msgid " ist ein Ubuntu-Derivat komplett aus freier Software. Nur für erfahrene Nutzer geeignet. Sollte mit der Gobuntu-CD installiert werden, damit es auch wirklich nur freie Software ist. Nachinstallationen mit Communtu möglich, sinnvollerweise sollten dann im Nutzerprofil \"freie Software\" angewählt werden. Dies Derivate ist in der Version 8.04 erhältlich und wird nicht weiterentwickelt."
@@ -2675,7 +2679,7 @@ msgstr " - replaces the Linux core with OpenSolaris. Provides only a minimal bas
 
 #: new_distribution
 msgid "Neue Distribution"
-msgstr "new distribution"
+msgstr "New distribution"
 
 #: view_derivatives_edit_0
 msgid "Derivative bearbeiten"
@@ -2695,7 +2699,7 @@ msgstr "https://wiki.ubuntu.com/AptUrl"
 
 #: view_user_profiles_help_4
 msgid "du machst ein Upgrade auf eine neuere Version"
-msgstr "you upgrade to a newer, supported, version"
+msgstr "You upgrade to a newer, supported, version or"
 
 #: view_passwords_new_0
 msgid "Passwort vergessen"
@@ -2727,7 +2731,7 @@ msgstr " for the Konqueror and Opera browsers."
 
 #: view_user_profiles_help_5
 msgid "du erweiterst Communtu um deine Version"
-msgstr "you expand Communtu with your version"
+msgstr "you expand Communtu with your version."
 
 #: view_passwords_new_1
 msgid "    Mit welcher Email-Adresse hast du das Benutzerkonto angelegt?"
@@ -3016,7 +3020,4 @@ msgstr "What is a bundle?"
 #: controller_users_12
 msgid "Benutzer aktiviert"
 msgstr "User activated"
-
-#~ msgid "&nbsp;&nbsp;Suche:"
-#~ msgstr "&nbsp;&nbsp;Search:"
 

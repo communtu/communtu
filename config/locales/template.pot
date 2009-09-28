@@ -44,7 +44,7 @@ msgstr ""
 msgid "Wir benötigen eine Person, die für das Projekt das Layout übernimmt. Dies bedeutet Grafiken einbinden und die Hauptverantwortung für das CSS übernehmen."
 msgstr ""
 #: view_home_about_11
-msgid "Hast du gute Erfahrungen mit Programmen gemacht? Dann kannst du thematisch zusammengehörige Programme zu einem Bündel zusammenfassen und ins System eintragen. Dazu wählst du <b>Neues Bündel</b> unterhalb von <b>Bündel-Editor</b> auf der linken Seitenleiste. Du kannst dann Ubuntu-Pakete hinzufügen und mit Klick auf das Disketten-Symbol das Bündel im System abspeichern. Das Bündel soll einen Namen, eine Beschreibung und eine thematische Einordnung erhalten, damit andere Nutzer es auch verwenden können. Wie bei Ordnern und Dateien können Bündel nicht nur Ubuntu-Pakete, sondern auch andere Bündel enthalten. "
+msgid "Hast du gute Erfahrungen mit Programmen gemacht? Dann kannst du thematisch zusammengehörige Programme zu einem Bündel zusammenfassen und ins System eintragen. Dazu wählst du <b>Neues Bündel</b> unterhalb von <b>Bündel</b>. Du kannst dann Ubuntu-Pakete hinzufügen und mit Klick auf das Disketten-Symbol das Bündel im System abspeichern. Das Bündel soll einen Namen, eine Beschreibung und eine thematische Einordnung erhalten, damit andere Nutzer es auch verwenden können. Wie bei Ordnern und Dateien können Bündel nicht nur Ubuntu-Pakete, sondern auch andere Bündel enthalten. "
 msgstr ""
 #: detailed_view
 msgid "zur Detailansicht"
@@ -53,7 +53,7 @@ msgstr ""
 msgid "https://www.paypal.com/de_DE/DE/i/btn/btn_donate_LG.gif"
 msgstr ""
 #: view_home_faq_04
-msgid "Ein Bündel kann einmal in einer Zusammenstellung mit weiteren über den Punkt \"Installation\" zum Computer hinzugefügt werden. Andererseits kann auch ein Bündel direkt installiert werden, wenn Du über den Menüpunkt \"Bündel verwalten\" gehst."
+msgid "Ein Bündel kann einmal in einer Zusammenstellung mit weiteren über den Punkt \"Download\" zum Computer hinzugefügt werden. Andererseits kann auch ein Bündel direkt installiert werden, wenn Du über den Menüpunkt \"Bündel\" gehst."
 msgstr ""
 #: view_home_beteiligung_12
 msgid "Programmierung"
@@ -83,13 +83,13 @@ msgstr ""
 msgid "(Version {{v}})"
 msgstr ""
 #: view_home_faq_06
-msgid "Auf den linken Bereich der Webseite gibt es den Bündel-Editor. Dort bitte den Punkt \"Neues Bündel\" anklicken. Aus den Paketen im Hauptfenster der Webseite kannst Du dann die einzelnen Pakete auswählen und hinzufügen. Zum Schluss muss dann auf das Speichernsymbol im Bündeleditor geklickt werden. Hier öffnet sich dann im Hauptfenster ein Formular, wo Du einen sinnvollen Titel und Beschreibung eingeben kannst. Bitte ordne Deinem Bündel auch eine entsprechende Kategorie zu."
+msgid "Klicke dazu bitte den Punkt \"Neues Bündel\" unter \"Bündel\". Aus den Paketen im linken Fenster der Webseite kannst Du dann die einzelnen Pakete auswählen und hinzufügen. Zum Schluss muss dann auf das Speichernsymbol im Bündelbereich geklickt werden. Hier öffnet sich dann auf einer neuen Seite ein Formular, wo Du einen sinnvollen Titel und Beschreibung eingeben kannst. Bitte ordne Deinem Bündel auch eine entsprechende Kategorie zu."
 msgstr ""
 #: view_home_beteiligung_14
 msgid "Wir können Dir auch helfen diese Programmiersprache zu lernen. Also melde Dich einfach bei "
 msgstr ""
 #: view_home_about_14
-msgid "Du hast schon eine lauffähige Ubuntu-Installation und möchtest bestimmte Funktionen hinzufügen? Auch dafür kannst du Communtu benutzen. Du kannst unter <b>Bündel verwalten</b> einzelne Bündel installieren, und unter <b>Programme suchen</b> auch einzelne Programme."
+msgid "Du hast schon eine lauffähige Ubuntu-Installation und möchtest bestimmte Funktionen hinzufügen? Auch dafür kannst du Communtu benutzen. Du kannst unter <b>Bündel</b> einzelne Bündel installieren."
 msgstr ""
 #: view_packages_show_16
 msgid "Paket-Version"
@@ -116,7 +116,7 @@ msgstr ""
 msgid "Bewertung: "
 msgstr ""
 #: view_home_faq_08
-msgid "Du gehst auf den Menüpunkt \"Bündel verwalten\" und lässt Dir unter \"Alle veröffentlichten Bündel\" die Bündel anzeigen. Dort kannst Du bis zu fünf Sterne anklicken. Danach erscheint ein Kommentarfeld, in dem Du diese Bewertung qualifizieren kannst."
+msgid "Du gehst auf den Menüpunkt \"Bündel\" und lässt Dir unter \"Veröffentlichte Bündel\" die Bündel anzeigen. Dort kannst Du bis zu fünf Sterne anklicken. Danach erscheint ein Kommentarfeld, in dem Du diese Bewertung qualifizieren kannst."
 msgstr ""
 #: controller_metapackages_2
 msgid "Dieser Bündel-Name ist bereits vergeben!"
@@ -596,7 +596,7 @@ msgstr ""
 msgid "Registrieren"
 msgstr ""
 #: view_home_about_5
-msgid "Zum Starten wählst du <b>Installation</b> auf der linken Seitenleiste."
+msgid "Zum Starten wählst du <b>Download</b>."
 msgstr ""
 #: view_videos_show_0
 msgid "Url:"
@@ -650,7 +650,7 @@ msgstr ""
 msgid " Ubuntu ultimate  - Ubuntu mit vielen Desktop-Desgins und Programmen."
 msgstr ""
 #: view_home_about_7
-msgid ".) Dort kannst du deine Einstellungen bearbeiten. Unter den Grunddaten musst du zunächst eintragen, welche Ubuntu-Version du auf deinem PC installiert hast, außerdem, ob du unfreie Programme nutzen willst oder nicht. Zudem wählst du aus, für welche Aufgaben du deinen Ubuntu-PC nutzen willst. "
+msgid "Dort kannst du deine Einstellungen bearbeiten. Unter den Voreinstellungen musst du zunächst eintragen, welche Ubuntu-Version du auf deinem PC installiert hast, außerdem, ob du unfreie Programme nutzen willst oder nicht. Zudem wählst du aus, für welche Aufgaben du deinen Ubuntu-PC nutzen willst. "
 msgstr ""
 #: lib_system_2
 msgid "http://www.communtu.de"
@@ -866,7 +866,7 @@ msgstr ""
 msgid "Ubuntu-Derivaten"
 msgstr ""
 #: view_user_profiles__profile_data_0
-msgid "Installation vorbereiten: Grunddaten eingeben"
+msgid "Installation vorbereiten: Voreinstellungen eingeben"
 msgstr ""
 #: view_user_mailer_activation_0
 msgid ", dein Benutzerkonto wurde aktiviert.  Folge nun dem Link:"
@@ -905,7 +905,7 @@ msgstr ""
 msgid "Du vermisst hier eine Quelle? Dann kannst Du ein Repository vorschlagen."
 msgstr ""
 #: view_home_faq_10
-msgid "Du gehst auf den Menüpunkt \"Bündel verwalten\" und läßt Dir da Deine Bündel auflisten. Das zu ändernde Bündel klickst Du nun an. Du bekommst nun alle wichtigen Informationen zu Deinem Bündel angezeigt. Unter \"Aktionen\" kannst Du nun dieses Bündel oder auch die Paketliste editieren. Wenn das Paket nicht veröffentlicht ist, dann kannst Du es auch löschen oder ansonsten auch veröffentlichen."
+msgid "Du gehst auf den Menüpunkt \"Meine Bündel\" unter \"Bündel\" und läßt Dir da Deine Bündel auflisten. Das zu ändernde Bündel klickst Du nun an. Du bekommst nun alle wichtigen Informationen zu Deinem Bündel angezeigt. Unter \"Aktionen\" kannst Du nun dieses Bündel oder auch die Paketliste editieren. Wenn das Paket nicht veröffentlicht ist, dann kannst Du es auch löschen oder ansonsten auch veröffentlichen."
 msgstr ""
 #: view_home_derivatives_4
 msgid ", und viele Ubuntu-Nutzer fragen sich,  ob sie statt Ubuntu lieber ein Derivat benutzen sollten. Die Antwort ist: meistens fährt man mit dem Standard-Ubuntu ganz gut, denn Communtu erlaubt, die Derivate auf einfache Weise nachzuinstallieren.  Allerdings ist das nicht bei allen Derivaten gleich sinnvoll."
@@ -962,7 +962,7 @@ msgstr ""
 msgid "Quellen hinzufügen"
 msgstr ""
 #: view_home_faq_12
-msgid "Auf den linken Bereich der Webseite gibt es den Bündel-Editor. Dort bitte den Punkt \"Bündel aus Paketliste\" anklicken. Dort ist beschrieben, wie Du Deine Paketliste in Communtu hochladen kannst."
+msgid "Unter \"Bündel\" und dann \"Neues Bündel\" gibt es den Punkt \"Bündel aus Paketliste\", der anzuklicken ist. Dort ist beschrieben, wie Du Deine Paketliste in Communtu hochladen kannst."
 msgstr ""
 #: view_debs_index_1
 msgid "Zurück zum Communtu-Menü"
@@ -1097,7 +1097,7 @@ msgstr ""
 msgid "Hier kannst du einstellen, wie sicher bzw. komfortabel deine Installationsquellen sein sollen"
 msgstr ""
 #: view_home_faq_18
-msgid "Wenn Du über \"Programme suchen\" ein bestimmtes Programm nicht gefunden hst, kann es daran liegen, das wir die Quelle aus dem das Programm kommt, noch nicht in Communtu eingetragen haben. Du kannst uns diese Quelle über den \"Bündel-Editor\" unter den Punkt \"Repository vorschlagen\" melden, damit diese auch in Communtu eingearbeitet werden kann."
+msgid "Wenn Du über \"Bündel\" -> \"Neues Bündel\" ein bestimmtes Programm nicht gefunden hst, kann es daran liegen, das wir die Quelle aus dem das Programm kommt, noch nicht in Communtu eingetragen haben. Du kannst uns diese Quelle dort über den Punkt \"Repository vorschlagen\" melden, damit diese auch in Communtu eingearbeitet werden kann."
 msgstr ""
 #: view_user_profiles__installation_13
 msgid "(Bei einem Versionswechsel muss der erste Schritt erneut ausgeführt werden, da die Communtu Quellen durch das Upgrade deaktiviert wurden.):"
@@ -1379,7 +1379,7 @@ msgstr ""
 msgid "Sicherheitstyp:"
 msgstr ""
 #: view_user_profiles__installation_1
-msgid "Um etwas installieren zu können, musst du zunächst unter \"Grunddaten\" oder \"Detailauswahl\" etwas auswählen."
+msgid "Um etwas installieren zu können, musst du zunächst unter \"Voreinstellungen\" oder \"Detailauswahl\" etwas auswählen."
 msgstr ""
 #: view_metapackages_show_14
 msgid "  Aktionen:&nbsp;&nbsp;"
@@ -1563,6 +1563,9 @@ msgid "Ubuntu-Linux"
 msgstr ""
 #: model_mailer_1
 msgid "Anfrage per Formular"
+msgstr ""
+#: metacart_choose
+msgid "Füge Programme aus der linken Spalte zu Deinem Bündel hinzu."
 msgstr ""
 #: change_passwd
 msgid "Passwort ändern"
@@ -1828,11 +1831,11 @@ msgstr ""
 #: view_packages_show_2
 msgid "Paket sofort installieren"
 msgstr ""
-#: senden
-msgid "Abschicken"
-msgstr ""
 #: view_home_faq_24
 msgid "Dies kann über Synaptic erfolgen. Hierzu gehst Du bei einem Gnome-System auf \"System -> Systemverwaltung -> Synaptic-Paketverwaltung\". Bei einem KDE4-System musst Du über \"K-Menu -> Programme-> System -> Systemverwaltung -> Software-Verwaltung\" gehen. Wähle hier unten links den Punkt Ursprung. Suche nun in der darüber liegenden Liste packages.communtu.de und klicke es an. Auf der rechten Seite werden nun die verfügbaren Metapakete in Communtu angezeigt.  Das Entfernen geht über Rechtsmausklick und dann \"Zum Entfernen vormerken\". Dies muss dann danach durch \"Anwenden\" bestätigt werden.  Die einzelnen Pakete werden dadurch nicht deinstalliert, sondern lassen sich wie gewohnt über <a href=\"http://wiki.ubuntuusers.de/Synaptic\" target=\"_blank\">Synaptic</a> auswählen und deinstallieren."
+msgstr ""
+#: senden
+msgid "Abschicken"
 msgstr ""
 #: view_user_profiles__installation_20
 msgid "Dieser Schritt wurde bereits schon einmal ausgeführt. 		"
