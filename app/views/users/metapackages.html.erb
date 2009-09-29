@@ -7,5 +7,5 @@
 
 <%= render_tabz(:user_meta, { :user => current_user, :session => session, :params => params }) %>
 <% else %>
-
+<%=t(:not_logged_in)%>
 <% end %>
