@@ -15,6 +15,6 @@
 <tr>
   <td align="left"><font size="-3"><%=h user.created_at.day %>/<%=h user.created_at.month %>/<%=h user.created_at.year %></font></td>
   <td align="left"><font size="-3"><%=h user.updated_at.day %>/<%=h user.updated_at.month %>/<%=h user.updated_at.year %></font></td>
-  <td></td><td></td>
+  <td>erstellte Bündel</td><td><%= BasePackage.find(:all, :conditions => {:type => "Metapackage", :user_id => user.id}).length %></td>
 </tr>
 <tr><td colspan="4"><hr></td></tr>
