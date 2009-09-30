@@ -15,6 +15,7 @@ de:
   blog: Der Blog von Communtu
   bundle: "Bündel"
   bundle_editor: "Bündel-Editor"
+  by_bank_transfer: "per Überweisung"
   category_with_colon: "Kategorie:"
   category_without_colon: Kategorie
   changed_settings: "Dieser Schritt muss neu ausgeführt werden, weil du die Einstellungen geändert hast."
@@ -430,7 +431,8 @@ de:
   view_home_derivatives_8: Ebenso kannst du dort nachgucken, aus welchen Paketen ein Derivat besteht.
   view_home_derivatives_9: "Über Communtu sinnvoll nachinstallierbare Derivate:"
   view_home_donate: Für Communtu spenden
-  view_home_donate_why: Der Betrieb der Communtu-Webseite basiert vor allem auf dem Einsatz von Freiwilligen; er kostet aber auch Geld (u.a. für Server und Räume).
+  view_home_donate_why: Der Betrieb der Communtu-Webseite basiert vor allem auf dem Einsatz von Freiwilligen; er kostet aber auch Geld (u.a. für Server und Räume). Communtu ist daher auf Spenden angewiesen. Auch kleine Beträge helfen.
+  view_home_donate_options: Es gibt verschiedene Möglichkeiten, etwas zu spenden.
   view_home_faq_00: Häufig gestellte Fragen
   view_home_faq_01: Was ist ein Bündel?
   view_home_faq_02: Ein Bündel ist eine Zusammenstellung von Software für einen bestimmten Aufgabenbereich, den Du mit Deinem Rechner erledigen kannst.
