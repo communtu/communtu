@@ -21,7 +21,7 @@
 	</ul>
 </div>
 <div class="beste_buendel">
-<table><tr><td><font size="+3"><%= BasePackage.find(:all, :conditions => {:type => "Metapackage", :published => 1}).count %></font><p>vorkonfigurierte veröffentlichte Programmbündel in Communtu</p></td>
+<table><tr><td><font size="+3"><%= BasePackage.find(:all, :conditions => {:type => "Metapackage", :published => 1}).length %></font><p>vorkonfigurierte veröffentlichte Programmbündel in Communtu</p></td>
 <td><img src="/images/apps/Metapackage.png"></td></tr></table>
 <h3><%=t(:view_home_home_rating_headline)%></h3>
 <table cellspacing="0">
