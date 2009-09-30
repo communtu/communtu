@@ -15,9 +15,7 @@ function onEnter( evt, frm ) {
     return true;
 }
 </script>
-
-<%= error_messages_for :session %>
-<font color="#FF0000"><b><%= flash[:notice] %></b></font>
+<%= render_flash %>
 
 <h2><%=t(:view_sessions_new_0)%></h2>
 
