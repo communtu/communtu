@@ -35,6 +35,13 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.boolean  "debianizing",        :default => false
     t.boolean  "deb_error",          :default => false
     t.integer  "ratings_count"
+    t.integer  "description_tid"
+    t.integer  "url_tid"
+    t.integer  "fullsection_tid"
+    t.integer  "section_tid"
+    t.integer  "name_tid"
+    t.integer  "section_id"
+    t.integer  "fullsection_id"
   end
 
   create_table "cart_contents", :force => true do |t|
@@ -60,6 +67,7 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.integer  "name_tid"
     t.integer  "description_tid"
     t.integer  "link_tid"
+    t.boolean  "main",            :default => false
   end
 
   create_table "comments", :force => true do |t|
@@ -68,6 +76,7 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.text     "comment"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "comment_tid"
   end
 
   create_table "conflicts", :force => true do |t|
@@ -119,6 +128,11 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.string   "url"
     t.integer  "description_tid"
     t.integer  "url_tid"
+  end
+
+  create_table "faqs", :force => true do |t|
+    t.integer "name_tid"
+    t.integer "answer_tid"
   end
 
   create_table "folders", :force => true do |t|
@@ -193,6 +207,11 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.datetime "updated_at"
   end
 
+  create_table "questions", :force => true do |t|
+    t.integer "name_tid"
+    t.integer "answer_tid"
+  end
+
   create_table "ratings", :force => true do |t|
     t.integer  "rating",                      :default => 0
     t.datetime "created_at",                                  :null => false
@@ -214,10 +233,34 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.datetime "updated_at"
     t.string   "gpgkey"
     t.text     "package_file"
+    t.integer  "gpgkey_tid"
+    t.integer  "url_tid"
   end
 
   create_table "roles", :force => true do |t|
     t.string   "rolename"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "sections", :force => true do |t|
+    t.integer  "name_tid"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.boolean  "section_flag", :default => false
+  end
+
+  create_table "sectionss", :force => true do |t|
+    t.integer  "name_tid"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "torstens", :force => true do |t|
+    t.text     "name"
+    t.integer  "name_tid"
+    t.integer  "answer_tid"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -309,6 +352,8 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "description_tid"
+    t.integer  "url_tid"
   end
 
 end

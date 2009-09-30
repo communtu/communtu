@@ -944,18 +944,18 @@ a.download:hover, a.download:active{
 	border-top:2px solid #C6C6C6;
 	}
 /* start */
-.contentstart{
+/*.contentstart{
 	position:absolute; 
 	left:150px;
 	top:80px;
 	width:575px;
-	}
-/*.contentstart{
+	}*/
+.contentstart{
  position:absolute; 
- left:150px; 
+ left:56px; 
  top:80px;
- width:435px;
- }*/
+ width:480px;
+ }
 .beste_buendel{
  position:absolute; 
  left:606px; 

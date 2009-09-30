@@ -24,6 +24,11 @@
   <%= h @category.parent_name%>
 </p>
 
+<p>
+  <b><%=t(:view_categories_edit_4)%></b>
+  <%= h @category.main%>
+</p>
+
 
 <%= link_to t(:edit), edit_category_path(@category) %> |
 <%= link_to t(:back), categories_path %>

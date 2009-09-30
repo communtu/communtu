@@ -61,7 +61,9 @@ class UserProfilesController < ApplicationController
       cats = params[:categories].map {|s| s.to_i}
     end
     # update the data for all the main categories
-    Category.find(1).children.each do |child|
+    main_categories = Category.find(:all, :conditions => {:parent_id => 1, :main => true})
+   # Category.find(1).children.each do |child|
+      main_categories.each do |child|
       # we now use 1 for selected, in the future, this can be a boolean
       if cats.include? child.id then val = 1 else val = 0 end
       user.update_rating(child,val,lic,sec,{:anonymous => false, :session => session},false)

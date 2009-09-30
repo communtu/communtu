@@ -10,7 +10,8 @@
     <li><p><%=t(:view_user_profiles__profile_data_3)%><br>
 		<table><tr>
 		<% count = 0%>
-        <% root.children.each do |child|%>
+  <% main_categories = Category.find(:all, :conditions => {:parent_id => 1, :main => true}) %>
+ <% main_categories.each do |child|%>
 		  <th align="left">
 		  <%= check_box_tag "categories[]", child.id, ratings[child.id] %>
           <%= child.name %>
