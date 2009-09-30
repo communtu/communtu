@@ -1932,7 +1932,7 @@ msgid "Nachrichtensymbol für Post erhalten"
 msgstr "Receive a message-icon for new messages"
 
 #: view_home_home_29
-msgid "Zu welchem Thema suchst Du Programme (Büro, Grafik,...)? Hier kannst du deine Interessensgebiete eingeben und passende vorkonfigurierte Programmbündel downloaden."
+msgid "Zu welchem Thema suchst Du Programme (Büro, Grafik,...)? Hier kannst du deine Interessengebiete eingeben und passende vorkonfigurierte Programmbündel downloaden."
 msgstr "To which topic do you look for programs (office, graphics, ...)? Enter your fields of interest and pre-configured bundles can be downloaded."
 
 #: published

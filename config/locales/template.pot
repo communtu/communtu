@@ -1433,7 +1433,7 @@ msgstr ""
 msgid "Nachrichtensymbol für Post erhalten"
 msgstr ""
 #: view_home_home_29
-msgid "Zu welchem Thema suchst Du Programme (Büro, Grafik,...)? Hier kannst du deine Interessensgebiete eingeben und passende vorkonfigurierte Programmbündel downloaden."
+msgid "Zu welchem Thema suchst Du Programme (Büro, Grafik,...)? Hier kannst du deine Interessengebiete eingeben und passende vorkonfigurierte Programmbündel downloaden."
 msgstr ""
 #: published
 msgid "veröffentlicht"
