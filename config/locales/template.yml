@@ -14,6 +14,7 @@ de:
   back: "zurück"
   blog: Der Blog von Communtu
   bundle: "Bündel"
+  bundle_by_owner: erstellte Bündel
   bundle_editor: "Bündel-Editor"
   by_bank_transfer: "per Überweisung"
   category_with_colon: "Kategorie:"
@@ -211,6 +212,7 @@ de:
   news: Aktuelles
   no_admin: Du bist kein Administrator!
   no1: nein
+  no_cookies: Du hast Deine Cookies deaktiviert. Zum Nutzen von Communtu sind diese erforderlich. Wir empfehlen Dir, die Cookies wieder anzuschalten.
   no_save_database: "Die folgenden Pakete konnten nicht in der Datenbank gespeichert werden:"
   not_logged_in: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
   packages: Pakete
@@ -334,7 +336,7 @@ de:
     nutzen, planen wir die Möglichkeit, automatisch CDs und DVDs zu erstellen."
   view_home_auth_error_0: Authentifizierungs-Fehler
   view_home_auth_error_1: "Die Daten, die du an Communtu geschickt hast, konnten nicht korrekt authentifiziert werden. \
-    Bitte versuche, dich noch einmal anzumelden bzw. das entsprechende Formular noch einmal auszufüllen."
+    Bitte versuche, dich noch einmal anzumelden bzw. das entsprechende Formular noch einmal auszufüllen. Dies kann daher kommen, dass Du Deine Cookies nicht aktiviert hast."
   view_home_beteiligung_10: Grafik
   view_home_beteiligung_11: "Wir benötigen eine Person, die für das Projekt das Layout übernimmt. Dies bedeutet Grafiken einbinden und die Hauptverantwortung für das CSS übernehmen."
   view_home_beteiligung_12: Programmierung
