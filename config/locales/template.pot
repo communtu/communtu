@@ -155,7 +155,7 @@ msgstr ""
 msgid "Impressum"
 msgstr ""
 #: view_home_donate_why
-msgid "Der Betrieb der Communtu-Webseite basiert vor allem auf dem Einsatz von Freiwilligen; er kostet aber auch Geld (u.a. für Server und Räume)."
+msgid "Der Betrieb der Communtu-Webseite basiert vor allem auf dem Einsatz von Freiwilligen; er kostet aber auch Geld (u.a. für Server und Räume). Communtu ist daher auf Spenden angewiesen. Auch kleine Beträge helfen."
 msgstr ""
 #: view_home_derivatives_10
 msgid "http://wiki.ubuntuusers.de/Ubuntu_Studio"
@@ -574,9 +574,6 @@ msgstr ""
 #: view_home_about_4
 msgid "Wie verwende ich Communtu?"
 msgstr ""
-#: view_user_profiles__installation_32
-msgid "Folgende {{Quellen}} werden zu dem System hinzugefügt."
-msgstr ""
 #: lib_system_0
 msgid "Du musst eingeloggt sein, um dieses Feature zu benutzen. Geht auch als \"Gast\"."
 msgstr ""
@@ -600,6 +597,9 @@ msgid "Zum Starten wählst du <b>Download</b>."
 msgstr ""
 #: view_videos_show_0
 msgid "Url:"
+msgstr ""
+#: view_user_profiles__installation_33
+msgid "Folgende"
 msgstr ""
 #: controller_users_4
 msgid "Es gab ein Problem mit dem Gastzugang."
@@ -633,6 +633,9 @@ msgid "Du hast keine Berechtigung für diese Aktion."
 msgstr ""
 #: view_user_profiles__profile_data_17
 msgid "Speichern und feiner auswählen"
+msgstr ""
+#: view_user_profiles__installation_34
+msgid "werden zu dem System hinzugefügt."
 msgstr ""
 #: model_user_profile_tabz_1
 msgid "Detailauswahl"
@@ -1807,6 +1810,9 @@ msgstr ""
 #: view_home_faq_22
 msgid "Bei einem Gnome-System: Unter \"System -> Systemverwaltung -> Software-Quellen -> Softwarequellen von Drittanbietern\" sind die Communtu Quellen auffindbar. Bei einem KDE4-System sind sie unter \"K-Menu-> Programme-> System-> Systemverwaltung -> Software-Quellen -> Softwarequellen von Drittanbietern\" zu finden. Hier können sie auch wieder deaktiviert werden. Das Deaktivieren führt nicht zum Deinstallieren von Paketen noch werden dadurch die Updates für die installierten Pakete unterbrochen.  Diese werden aus anderen Softwarequellen, die ggf. von Communtu installiert wurden, bedient."
 msgstr ""
+#: view_home_donate_options
+msgid "Es gibt verschiedene Möglichkeiten, etwas zu spenden."
+msgstr ""
 #: view_user_profiles__profile_rating_3
 msgid "Achtung! Zum Schluss auf \"Speichern\" klicken."
 msgstr ""
@@ -1905,6 +1911,9 @@ msgid " Paket(e) installieren."
 msgstr ""
 #: view_home_derivatives_31
 msgid ". Aufgrund der notwendigen Treiberinstallation sollte Linux MCE direkt installiert werden, Communtu kann dann aber für die Installation weiterer Software genutzt werden."
+msgstr ""
+#: by_bank_transfer
+msgid "per Überweisung"
 msgstr ""
 #: view_user_profiles__installation_25
 msgid "Installation über apturl"

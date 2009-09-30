@@ -47,7 +47,7 @@ en:
   imprint: Imprint
   view_metapackages_show_9: "Published:"
   view_users_index_1: "We have a total of "
-  view_home_donate_why: The development of Communtu is mainly based on the effort of volunteers but it also costs money (amongst others the server and the rooms).
+  view_home_donate_why: The development of Communtu is mainly based on the effort of volunteers but it also costs money (amongst others the server and the rooms). Therefore Communtu depends on donations. Even small amounts of money help.
   view_home_derivatives_10: https://wiki.ubuntu.com/UbuntuStudio
   controller_metapackages_4: Bundle saved. It could take a couple of minutes until it is available as a metapackage.
   view_repositories_new_0: new repository for
@@ -199,7 +199,6 @@ en:
   controller_accounts_1: Your account has been activated. You can now log in.
   controller_admins_0: admninistration section
   distribution: Distribution
-  view_user_profiles__installation_32: The following {{sources}} will be added to our system.
   register: Register
   view_home_about_5: To start, choose <b>Installation</b>.
   controller_users_4: An error occurred with the guest session.
@@ -209,6 +208,7 @@ en:
   view_videos_show_0: "Url:"
   inbox: Inbox
   videos: "Videos:"
+  view_user_profiles__installation_33: The following
   install_package_sources_first: Install package. If necessary please add the sources beforehand.
   view_home_derivatives_40: " - for portable internet devices."
   view_home_about_6: "  (This does not appear until"
@@ -217,6 +217,7 @@ en:
   passwd: Password
   view_cart_new_from_list_0: Create bundle from a packages-list
   controller_metapackages_not_changed: This bundle is already created as a metapackage and uploaded.
+  view_user_profiles__installation_34: will be added to our system.
   view_home_derivatives_41: Ubuntu ultimate - Ubuntu with many desktop-designs and applications.
   view_user_profiles__profile_data_17: Save and choose packages
   view_home_about_7: .) There you can edit your settings. First, you have to specify the basic data, such as which Ubuntu version you want to install on your computer. Additionally, you must specify if you want to use free or commercial software. Finally you must indicate for which purposes you want to use your computer.
@@ -631,6 +632,7 @@ en:
   view_metapackages_edit_gpl: I accept to publish the bundle information under the <a href="http://www.gnu.de/documents/gpl.de.html">GNU General public license</a> (Version 2.0 or higher).
   view_user_profiles__profile_rating_1: "Here you can choose the use of your computer in detail. \n\
     With a click on the "
+  view_home_donate_options: There are several ways of donating.
   view_home_faq_22: To find the Communtu-sources in a Gnome-based system, you navigate to "System" -> "Administration" -> "Software Sources" -> "Third-Party Software". To find the Communtu-sources in a KDE-based system, you open the K-menu and then navigate to "Programs" -> "System" -> "Administration" -> Software Sources" -> "Third-Party Software". Here you deactivate the Communtu-sources. When deactivating the Communtu-sources, the installed programs won't be uninstalled nor are the updates. Updates are still obtained from the official sources, which may be added by Communtu.
   view_user_profiles__profile_rating_2: " you can \n\
     open or close a section to make a detailed selection."
@@ -660,6 +662,7 @@ en:
   view_layouts_application_1: Communtu customizes your Ubuntu system to your individual needs.
   view_repositories_migrate_2: " to distribution"
   view_user_profiles__installation_23: "Installing packages. There are two alternatives:"
+  by_bank_transfer: per bank transfer
   view_home_derivatives_31: . Because of the necessary installation of drivers, Linux MCE should be installed directly. However, Communtu can be used to install additional software.
   view_home_icons_3: Install package(s).
   view_layouts_application_2: Communtu
@@ -685,7 +688,7 @@ en:
   view_home_derivatives_34: " - replaces the Linux core with OpenSolaris. Provides only a minimal basis to applications. The installation of additional software is left to the user; Communtu can be used for this."
   model_package_0: open source
   view_home_icons_6: " install sources"
-  view_layouts_application_5: "by PayPal:"
+  view_layouts_application_5: "per PayPal:"
   view_user_profiles_help_3: "If you version is not supported by Communtu, you now have two possibilities:"
   view_user_profiles__installation_27: "Please configure "
   view_derivatives_edit_1: Program for GUI-based sudo (e.g. gksudo, kdesudo)

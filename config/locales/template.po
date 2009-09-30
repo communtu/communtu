@@ -204,8 +204,8 @@ msgid "Impressum"
 msgstr "Imprint"
 
 #: view_home_donate_why
-msgid "Der Betrieb der Communtu-Webseite basiert vor allem auf dem Einsatz von Freiwilligen; er kostet aber auch Geld (u.a. für Server und Räume)."
-msgstr "The development of Communtu is mainly based on the effort of volunteers but it also costs money (amongst others the server and the rooms)."
+msgid "Der Betrieb der Communtu-Webseite basiert vor allem auf dem Einsatz von Freiwilligen; er kostet aber auch Geld (u.a. für Server und Räume). Communtu ist daher auf Spenden angewiesen. Auch kleine Beträge helfen."
+msgstr "The development of Communtu is mainly based on the effort of volunteers but it also costs money (amongst others the server and the rooms). Therefore Communtu depends on donations. Even small amounts of money help."
 
 #: view_home_derivatives_10
 msgid "http://wiki.ubuntuusers.de/Ubuntu_Studio"
@@ -777,10 +777,6 @@ msgstr "show derivatives"
 msgid "Wie verwende ich Communtu?"
 msgstr "How do I use Communtu?"
 
-#: view_user_profiles__installation_32
-msgid "Folgende {{Quellen}} werden zu dem System hinzugefügt."
-msgstr "The following {{sources}} will be added to our system."
-
 #: lib_system_0
 msgid "Du musst eingeloggt sein, um dieses Feature zu benutzen. Geht auch als \"Gast\"."
 msgstr "In order to use this feature you have to be logged in. Logging in via \"Guest session\" is also possible."
@@ -812,6 +808,10 @@ msgstr "To start, choose <b>Installation</b>."
 #: view_videos_show_0
 msgid "Url:"
 msgstr "Url:"
+
+#: view_user_profiles__installation_33
+msgid "Folgende"
+msgstr "The following"
 
 #: controller_users_4
 msgid "Es gab ein Problem mit dem Gastzugang."
@@ -856,6 +856,10 @@ msgstr "You are not privileged to do this."
 #: view_user_profiles__profile_data_17
 msgid "Speichern und feiner auswählen"
 msgstr "Save and choose packages"
+
+#: view_user_profiles__installation_34
+msgid "werden zu dem System hinzugefügt."
+msgstr "will be added to our system."
 
 #: model_user_profile_tabz_1
 msgid "Detailauswahl"
@@ -2477,6 +2481,10 @@ msgstr ""
 msgid "Bei einem Gnome-System: Unter \"System -> Systemverwaltung -> Software-Quellen -> Softwarequellen von Drittanbietern\" sind die Communtu Quellen auffindbar. Bei einem KDE4-System sind sie unter \"K-Menu-> Programme-> System-> Systemverwaltung -> Software-Quellen -> Softwarequellen von Drittanbietern\" zu finden. Hier können sie auch wieder deaktiviert werden. Das Deaktivieren führt nicht zum Deinstallieren von Paketen noch werden dadurch die Updates für die installierten Pakete unterbrochen.  Diese werden aus anderen Softwarequellen, die ggf. von Communtu installiert wurden, bedient."
 msgstr "To find the Communtu-sources in a Gnome-based system, you navigate to \"System\" -> \"Administration\" -> \"Software Sources\" -> \"Third-Party Software\". To find the Communtu-sources in a KDE-based system, you open the K-menu and then navigate to \"Programs\" -> \"System\" -> \"Administration\" -> Software Sources\" -> \"Third-Party Software\". Here you deactivate the Communtu-sources. When deactivating the Communtu-sources, the installed programs won't be uninstalled nor are the updates. Updates are still obtained from the official sources, which may be added by Communtu."
 
+#: view_home_donate_options
+msgid "Es gibt verschiedene Möglichkeiten, etwas zu spenden."
+msgstr "There are several ways of donating."
+
 #: view_user_profiles__profile_rating_3
 msgid "Achtung! Zum Schluss auf \"Speichern\" klicken."
 msgstr "Attention! When finished, don't forget to click on \"Save\"."
@@ -2609,6 +2617,10 @@ msgstr "Install package(s)."
 msgid ". Aufgrund der notwendigen Treiberinstallation sollte Linux MCE direkt installiert werden, Communtu kann dann aber für die Installation weiterer Software genutzt werden."
 msgstr ". Because of the necessary installation of drivers, Linux MCE should be installed directly. However, Communtu can be used to install additional software."
 
+#: by_bank_transfer
+msgid "per Überweisung"
+msgstr "per bank transfer"
+
 #: view_user_profiles__installation_25
 msgid "Installation über apturl"
 msgstr "installatin via apturl"
@@ -2663,7 +2675,7 @@ msgstr "If you version is not supported by Communtu, you now have two possibilit
 
 #: view_layouts_application_5
 msgid "per PayPal:"
-msgstr "by PayPal:"
+msgstr "per PayPal:"
 
 #: view_home_icons_6
 msgid " Quellen installieren"

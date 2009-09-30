@@ -155,7 +155,7 @@ msgstr ""
 msgid "We have a total of "
 msgstr ""
 #: view_home_donate_why
-msgid "The development of Communtu is mainly based on the effort of volunteers but it also costs money (amongst others the server and the rooms)."
+msgid "The development of Communtu is mainly based on the effort of volunteers but it also costs money (amongst others the server and the rooms). Therefore Communtu depends on donations. Even small amounts of money help."
 msgstr ""
 #: view_home_derivatives_10
 msgid "https://wiki.ubuntu.com/UbuntuStudio"
@@ -589,9 +589,6 @@ msgstr ""
 #: distribution
 msgid "Distribution"
 msgstr ""
-#: view_user_profiles__installation_32
-msgid "The following {{sources}} will be added to our system."
-msgstr ""
 #: register
 msgid "Register"
 msgstr ""
@@ -619,6 +616,9 @@ msgstr ""
 #: videos
 msgid "Videos:"
 msgstr ""
+#: view_user_profiles__installation_33
+msgid "The following"
+msgstr ""
 #: install_package_sources_first
 msgid "Install package. If necessary please add the sources beforehand."
 msgstr ""
@@ -642,6 +642,9 @@ msgid "Create bundle from a packages-list"
 msgstr ""
 #: controller_metapackages_not_changed
 msgid "This bundle is already created as a metapackage and uploaded."
+msgstr ""
+#: view_user_profiles__installation_34
+msgid "will be added to our system."
 msgstr ""
 #: view_home_derivatives_41
 msgid "Ubuntu ultimate - Ubuntu with many desktop-designs and applications."
@@ -1804,6 +1807,9 @@ msgstr ""
 #: view_home_faq_22
 msgid "To find the Communtu-sources in a Gnome-based system, you navigate to \"System\" -> \"Administration\" -> \"Software Sources\" -> \"Third-Party Software\". To find the Communtu-sources in a KDE-based system, you open the K-menu and then navigate to \"Programs\" -> \"System\" -> \"Administration\" -> Software Sources\" -> \"Third-Party Software\". Here you deactivate the Communtu-sources. When deactivating the Communtu-sources, the installed programs won't be uninstalled nor are the updates. Updates are still obtained from the official sources, which may be added by Communtu."
 msgstr ""
+#: view_home_donate_options
+msgid "There are several ways of donating."
+msgstr ""
 #: view_user_profiles__profile_rating_3
 msgid "Attention! When finished, don't forget to click on \"Save\"."
 msgstr ""
@@ -1903,6 +1909,9 @@ msgstr ""
 #: view_home_derivatives_31
 msgid ". Because of the necessary installation of drivers, Linux MCE should be installed directly. However, Communtu can be used to install additional software."
 msgstr ""
+#: by_bank_transfer
+msgid "per bank transfer"
+msgstr ""
 #: view_user_profiles__installation_25
 msgid "installatin via apturl"
 msgstr ""
@@ -1943,7 +1952,7 @@ msgstr ""
 msgid "If you version is not supported by Communtu, you now have two possibilities:"
 msgstr ""
 #: view_layouts_application_5
-msgid "by PayPal:"
+msgid "per PayPal:"
 msgstr ""
 #: view_home_icons_6
 msgid " install sources"
