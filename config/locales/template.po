@@ -527,6 +527,10 @@ msgstr "program"
 msgid " über das Projekt und über die Mitwirkenden im "
 msgstr " about this project and its participants in the "
 
+#: view_categories_edit_4
+msgid "Hauptkategory, die auf der Startseite Download angezeigt wird:"
+msgstr "Maincategory, which is shown on the first page under Download:"
+
 #: view_home_icons_12
 msgid " Programm (wenn kein anderes Programm-Icon vorhanden)"
 msgstr " Program (if not other program-icon is available)"

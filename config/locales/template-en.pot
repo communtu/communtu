@@ -394,6 +394,9 @@ msgstr ""
 #: view_home_icons_10
 msgid "program"
 msgstr ""
+#: view_categories_edit_4
+msgid "Maincategory, which is shown on the first page under Download:"
+msgstr ""
 #: view_home_home_16
 msgid " about this project and its participants in the "
 msgstr ""
@@ -1198,6 +1201,9 @@ msgstr ""
 #: view_home_derivatives_25
 msgid "http://en.wikipedia.org/wiki/Xfce"
 msgstr ""
+#: controller_debs_1
+msgid "Deb created."
+msgstr ""
 #: controller_distributions_0
 msgid "Ubuntu distributions"
 msgstr ""
@@ -1212,9 +1218,6 @@ msgid "Bundle not found."
 msgstr ""
 #: view_user_profiles__installation_19
 msgid "Attention: after clicking, it will take a moment until the file is provided."
-msgstr ""
-#: controller_debs_1
-msgid "Deb created."
 msgstr ""
 #: view_home_derivatives_26
 msgid " - with the slim Xfce as the graphical interface. Particularly suitable for older computers: 128 MB RAM and 1,5 GB free hard disk space are sufficient. Should be installed from the CD to guarantee a slim installation. Post-installation can be done with Communtu."

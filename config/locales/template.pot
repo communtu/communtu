@@ -397,6 +397,9 @@ msgstr ""
 #: view_home_home_16
 msgid " über das Projekt und über die Mitwirkenden im "
 msgstr ""
+#: view_categories_edit_4
+msgid "Hauptkategory, die auf der Startseite Download angezeigt wird:"
+msgstr ""
 #: view_home_icons_12
 msgid " Programm (wenn kein anderes Programm-Icon vorhanden)"
 msgstr ""

@@ -127,6 +127,7 @@ en:
   view_home_home_15: detailled information
   view_metapackages__metalist_10: "Rating "
   view_home_icons_10: program
+  view_categories_edit_4: "Maincategory, which is shown on the first page under Download:"
   view_home_home_16: " about this project and its participants in the "
   used_in_bundles: "Is used at Communtu in these bundles:"
   view_home_icons_12: " Program (if not other program-icon is available)"
@@ -407,13 +408,13 @@ en:
   view_categories_show_0: "Name: "
   controller_debs_0: Debian-packages
   view_home_derivatives_25: http://en.wikipedia.org/wiki/Xfce
+  view_home_derivatives_26: " - with the slim Xfce as the graphical interface. Particularly suitable for older computers: 128 MB RAM and 1,5 GB free hard disk space are sufficient. Should be installed from the CD to guarantee a slim installation. Post-installation can be done with Communtu."
   controller_distributions_0: Ubuntu distributions
   controller_home_1: The e-mail has been sent to us. Many thanks for your message.
   view_packages_edit_8: New link to a video
   controller_metapackages_bundle_not_found: Bundle not found.
   view_user_profiles__installation_19: "Attention: after clicking, it will take a moment until the file is provided."
   controller_debs_1: Deb created.
-  view_home_derivatives_26: " - with the slim Xfce as the graphical interface. Particularly suitable for older computers: 128 MB RAM and 1,5 GB free hard disk space are sufficient. Should be installed from the CD to guarantee a slim installation. Post-installation can be done with Communtu."
   view_home_derivatives_27: http://en.wikipedia.org/wiki/LinuxMCE
   controller_debs_2: Deb updated.
   not_logged_in: You are currently not logged in. Please click on "log in" above.
