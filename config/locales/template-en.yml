@@ -129,6 +129,7 @@ en:
   view_home_icons_10: program
   view_categories_edit_4: "Maincategory, which is shown on the first page under Download:"
   view_home_home_16: " about this project and its participants in the "
+  no_cookies: You don't have cookies enabled which are necessary in order to use Communtu. We recommend that you enable cookies in your webbrowser.
   used_in_bundles: "Is used at Communtu in these bundles:"
   view_home_icons_12: " Program (if not other program-icon is available)"
   view_home_home_17: imprint.
@@ -409,17 +410,18 @@ en:
   controller_debs_0: Debian-packages
   view_home_derivatives_25: http://en.wikipedia.org/wiki/Xfce
   view_home_derivatives_26: " - with the slim Xfce as the graphical interface. Particularly suitable for older computers: 128 MB RAM and 1,5 GB free hard disk space are sufficient. Should be installed from the CD to guarantee a slim installation. Post-installation can be done with Communtu."
+  controller_debs_1: Deb created.
   controller_distributions_0: Ubuntu distributions
   controller_home_1: The e-mail has been sent to us. Many thanks for your message.
   view_packages_edit_8: New link to a video
   controller_metapackages_bundle_not_found: Bundle not found.
   view_user_profiles__installation_19: "Attention: after clicking, it will take a moment until the file is provided."
-  controller_debs_1: Deb created.
   view_home_derivatives_27: http://en.wikipedia.org/wiki/LinuxMCE
   controller_debs_2: Deb updated.
   not_logged_in: You are currently not logged in. Please click on "log in" above.
   controller_home_2: We will notify you via e-mail.
   view_categories_show_2: "Further information:"
+  bundle_by_owner: Created bundles
   feedback: "Comment "
   controller_distributions_1: Distribution created.
   view_packages_edit_9: "    Video description:"
@@ -558,7 +560,7 @@ en:
   view_passwords_edit_2: receive new password
   view_user_profiles__sources_0: Sources for the soon be installed programs
   view_home_derivatives_53: " - allows a faster installation, as only the latest packages are downloaded."
-  view_home_auth_error_1: The file you sent to Communtu couldn't be authenticated. Please try again with logging in again or filling in the form again.
+  view_home_auth_error_1: The file you sent to Communtu couldn't be authenticated. Please try again with logging in again or filling in the form again. This could also come from disabled cookie settings.
   model_mailer_2: Your account has been activated.
   view_home_home_3: " stands for a human Linux that is easy to use. In order to use Ubuntu effectively, an excessive amount of programs have to be installed. It is not always easy to keep an overview. With Communtu you just specify for which purposes you want to use your computer and Communtu suggests several programs to you which will be installed automatically."
   view_user_profiles__sources_1: The soon be installed programs and packages are shown and ordered by the appropriate sources so you can see why some sources will be added.

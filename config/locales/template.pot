@@ -400,6 +400,9 @@ msgstr ""
 #: view_categories_edit_4
 msgid "Hauptkategory, die auf der Startseite Download angezeigt wird:"
 msgstr ""
+#: no_cookies
+msgid "Du hast Deine Cookies deaktiviert. Zum Nutzen von Communtu sind diese erforderlich. Wir empfehlen Dir, die Cookies wieder anzuschalten."
+msgstr ""
 #: view_home_icons_12
 msgid " Programm (wenn kein anderes Programm-Icon vorhanden)"
 msgstr ""
@@ -1111,11 +1114,11 @@ msgstr ""
 #: view_packages_edit_2
 msgid "Icon"
 msgstr ""
-#: view_home_derivatives_20
-msgid "Automatix war eine Installationshilfe, die sich großer Beliebtheit erfreute (sie wurde sogar von der New York Times empfohlen), die aber nicht ganz den Ubuntu-Programmierstandards entsprach und inzwischen nicht mehr weiterentwickelt wird. "
-msgstr ""
 #: view_home_faq_19
 msgid "Was sind eigentlich Quellen bzw. Repositories?"
+msgstr ""
+#: view_home_derivatives_20
+msgid "Automatix war eine Installationshilfe, die sich großer Beliebtheit erfreute (sie wurde sogar von der New York Times empfohlen), die aber nicht ganz den Ubuntu-Programmierstandards entsprach und inzwischen nicht mehr weiterentwickelt wird. "
 msgstr ""
 #: username
 msgid "Benutzername"
@@ -1236,6 +1239,9 @@ msgid "Distribution erzeugt."
 msgstr ""
 #: feedback
 msgid "Kommentar"
+msgstr ""
+#: bundle_by_owner
+msgid "erstellte Bündel"
 msgstr ""
 #: view_categories_show_2
 msgid "Weitere Informationen:"
@@ -1595,7 +1601,7 @@ msgstr ""
 msgid "Dein Benutzerkonto wurde aktiviert."
 msgstr ""
 #: view_home_auth_error_1
-msgid "Die Daten, die du an Communtu geschickt hast, konnten nicht korrekt authentifiziert werden. Bitte versuche, dich noch einmal anzumelden bzw. das entsprechende Formular noch einmal auszufüllen."
+msgid "Die Daten, die du an Communtu geschickt hast, konnten nicht korrekt authentifiziert werden. Bitte versuche, dich noch einmal anzumelden bzw. das entsprechende Formular noch einmal auszufüllen. Dies kann daher kommen, dass Du Deine Cookies nicht aktiviert hast."
 msgstr ""
 #: view_home_derivatives_53
 msgid " - erlaubt schnellere Installation, da nur die aktuellsten Pakete heruntergeladen werden."

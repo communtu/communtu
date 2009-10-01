@@ -400,6 +400,9 @@ msgstr ""
 #: view_home_home_16
 msgid " about this project and its participants in the "
 msgstr ""
+#: no_cookies
+msgid "You don't have cookies enabled which are necessary in order to use Communtu. We recommend that you enable cookies in your webbrowser."
+msgstr ""
 #: used_in_bundles
 msgid "Is used at Communtu in these bundles:"
 msgstr ""
@@ -1201,8 +1204,11 @@ msgstr ""
 #: view_home_derivatives_25
 msgid "http://en.wikipedia.org/wiki/Xfce"
 msgstr ""
-#: controller_debs_1
-msgid "Deb created."
+#: view_user_profiles__installation_19
+msgid "Attention: after clicking, it will take a moment until the file is provided."
+msgstr ""
+#: controller_metapackages_bundle_not_found
+msgid "Bundle not found."
 msgstr ""
 #: controller_distributions_0
 msgid "Ubuntu distributions"
@@ -1213,11 +1219,8 @@ msgstr ""
 #: view_packages_edit_8
 msgid "New link to a video"
 msgstr ""
-#: controller_metapackages_bundle_not_found
-msgid "Bundle not found."
-msgstr ""
-#: view_user_profiles__installation_19
-msgid "Attention: after clicking, it will take a moment until the file is provided."
+#: controller_debs_1
+msgid "Deb created."
 msgstr ""
 #: view_home_derivatives_26
 msgid " - with the slim Xfce as the graphical interface. Particularly suitable for older computers: 128 MB RAM and 1,5 GB free hard disk space are sufficient. Should be installed from the CD to guarantee a slim installation. Post-installation can be done with Communtu."
@@ -1236,6 +1239,9 @@ msgid "Distribution created."
 msgstr ""
 #: feedback
 msgid "Comment "
+msgstr ""
+#: bundle_by_owner
+msgid "Created bundles"
 msgstr ""
 #: view_categories_show_2
 msgid "Further information:"
@@ -1595,7 +1601,7 @@ msgstr ""
 msgid "Your account has been activated."
 msgstr ""
 #: view_home_auth_error_1
-msgid "The file you sent to Communtu couldn't be authenticated. Please try again with logging in again or filling in the form again."
+msgid "The file you sent to Communtu couldn't be authenticated. Please try again with logging in again or filling in the form again. This could also come from disabled cookie settings."
 msgstr ""
 #: view_home_derivatives_53
 msgid " - allows a faster installation, as only the latest packages are downloaded."

@@ -531,6 +531,10 @@ msgstr " about this project and its participants in the "
 msgid "Hauptkategory, die auf der Startseite Download angezeigt wird:"
 msgstr "Maincategory, which is shown on the first page under Download:"
 
+#: no_cookies
+msgid "Du hast Deine Cookies deaktiviert. Zum Nutzen von Communtu sind diese erforderlich. Wir empfehlen Dir, die Cookies wieder anzuschalten."
+msgstr "You don't have cookies enabled which are necessary in order to use Communtu. We recommend that you enable cookies in your webbrowser."
+
 #: view_home_icons_12
 msgid " Programm (wenn kein anderes Programm-Icon vorhanden)"
 msgstr " Program (if not other program-icon is available)"
@@ -1497,13 +1501,13 @@ msgstr "(When chaning the version, the first step has to be done twice, because 
 msgid "Icon"
 msgstr "Icon"
 
-#: view_home_derivatives_20
-msgid "Automatix war eine Installationshilfe, die sich großer Beliebtheit erfreute (sie wurde sogar von der New York Times empfohlen), die aber nicht ganz den Ubuntu-Programmierstandards entsprach und inzwischen nicht mehr weiterentwickelt wird. "
-msgstr "Automatix was a programm to assist the installation of software and enjoyed great popularity (Automatix was even recommended by the New York Times). However, Automatix did not meet the Ubuntu-standards and the development has been stopped."
-
 #: view_home_faq_19
 msgid "Was sind eigentlich Quellen bzw. Repositories?"
 msgstr "What are sources or repositories?"
+
+#: view_home_derivatives_20
+msgid "Automatix war eine Installationshilfe, die sich großer Beliebtheit erfreute (sie wurde sogar von der New York Times empfohlen), die aber nicht ganz den Ubuntu-Programmierstandards entsprach und inzwischen nicht mehr weiterentwickelt wird. "
+msgstr "Automatix was a programm to assist the installation of software and enjoyed great popularity (Automatix was even recommended by the New York Times). However, Automatix did not meet the Ubuntu-standards and the development has been stopped."
 
 #: username
 msgid "Benutzername"
@@ -1670,6 +1674,10 @@ msgstr "Distribution created."
 #: feedback
 msgid "Kommentar"
 msgstr "Comment "
+
+#: bundle_by_owner
+msgid "erstellte Bündel"
+msgstr "Created bundles"
 
 #: view_categories_show_2
 msgid "Weitere Informationen:"
@@ -2188,8 +2196,8 @@ msgid "Dein Benutzerkonto wurde aktiviert."
 msgstr "Your account has been activated."
 
 #: view_home_auth_error_1
-msgid "Die Daten, die du an Communtu geschickt hast, konnten nicht korrekt authentifiziert werden. Bitte versuche, dich noch einmal anzumelden bzw. das entsprechende Formular noch einmal auszufüllen."
-msgstr "The file you sent to Communtu couldn't be authenticated. Please try again with logging in again or filling in the form again."
+msgid "Die Daten, die du an Communtu geschickt hast, konnten nicht korrekt authentifiziert werden. Bitte versuche, dich noch einmal anzumelden bzw. das entsprechende Formular noch einmal auszufüllen. Dies kann daher kommen, dass Du Deine Cookies nicht aktiviert hast."
+msgstr "The file you sent to Communtu couldn't be authenticated. Please try again with logging in again or filling in the form again. This could also come from disabled cookie settings."
 
 #: view_home_derivatives_53
 msgid " - erlaubt schnellere Installation, da nur die aktuellsten Pakete heruntergeladen werden."
