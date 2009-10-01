@@ -965,7 +965,7 @@ a.download:hover, a.download:active{
 .beste_buendel ul li{
  list-style-image:url(images/star_trans.gif);
  list-style-position:outside;
- margin-left:-0.6em; 
+ /*margin-left:-0.6em;*/  /*Verursachte die Verschiebung der besten Bündelsterne*/
  padding-bottom:1px;
  }
 /* allgemein */
