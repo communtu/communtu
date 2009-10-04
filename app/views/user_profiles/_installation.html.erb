@@ -1,6 +1,10 @@
 <h2><%=t(:view_user_profiles__installation_0)%></h2>
 <%= render_flash %>
-
+<% if current_user.profile_changed  %>  
+                  <% if current_user.profile_version > 1 %> 
+                     <p><%=t(:changed_settings)%></p><p>----------</p><% end %>  
+          <p><%=t(:view_user_profiles__installation_19)%></p><p>----------</p><% else %>  
+                   <p><%=t(:view_user_profiles__installation_20)%></p><p>----------</p><% end %>  
 <% if current_user.selected_packages.empty? %>
 <%=t(:view_user_profiles__installation_1)%>
 
@@ -12,11 +16,6 @@
         <%= link_to image_tag("/images/sources.jpg", :size => "22x22", :border => "0", :title => t(:add_sources), :alt => t(:sources)), url1 %>
 		<%= link_to t(:view_user_profiles__installation_16) , url1  %>
         <br><%=t(:view_user_profiles__installation_17)%>
-<% if current_user.profile_changed %> 
-		  <%if current_user.profile_version > 1 %>
-		     <br><%=t(:changed_settings)%><% end %>
-          <br><%=t(:view_user_profiles__installation_19)%><% else %>
-		   <br><%=t(:view_user_profiles__installation_20)%><% end %>
     </li>
 	<li> <%= image_tag("/images/install.png", :size => "22x22", :border => "0", :title => t(:view_user_profiles__installation_21), :alt => t(:install2))%>
 <%=t(:view_user_profiles__installation_23)%><ul>
