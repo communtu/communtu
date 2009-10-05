@@ -1855,6 +1855,9 @@ msgstr ""
 #: view_user_profiles__installation_20
 msgid "Dieser Schritt wurde bereits schon einmal ausgeführt."
 msgstr ""
+#: view_home_home_bundle
+msgid "vorkonfigurierte veröffentlichte Programmbündel in Communtu"
+msgstr ""
 #: view_admins_load_packages_0
 msgid "Neue Pakete: "
 msgstr ""

@@ -2541,6 +2541,10 @@ msgstr "Send"
 msgid "Dieser Schritt wurde bereits schon einmal ausgeführt."
 msgstr "This step has already been carried out."
 
+#: view_home_home_bundle
+msgid "vorkonfigurierte veröffentlichte Programmbündel in Communtu"
+msgstr "Preconfigured and published bundles in Communtu"
+
 #: view_admins_load_packages_0
 msgid "Neue Pakete: "
 msgstr "New package:"

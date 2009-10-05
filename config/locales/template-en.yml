@@ -652,6 +652,7 @@ en:
   total_packages: "Total packages:"
   creation_error: While creating the package an error occured.
   view_admins_load_packages_0: "New package:"
+  view_home_home_bundle: Preconfigured and published bundles in Communtu
   view_user_profiles__installation_20: This step has already been carried out.
   kontodaten: "Bank-account: 172 9375, Sparkasse Bremen, Bank-number 290 501 01"
   description_with_colon: "Description:"
