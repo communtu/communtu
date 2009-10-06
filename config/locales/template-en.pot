@@ -863,7 +863,7 @@ msgstr ""
 msgid "BUNDLE"
 msgstr ""
 #: view_home_news_18
-msgid "http://communtu.blogspot.com"
+msgid "http://communtu.wordpress.com"
 msgstr ""
 #: name_without_colon
 msgid "Name"
