@@ -21,6 +21,7 @@ de:
   category_without_colon: Kategorie
   changed_settings: "Dieser Schritt muss neu ausgeführt werden, weil du die Einstellungen geändert hast."
   change_passwd: "Passwort ändern"
+  chat: Chat
   chat_channel: de-communtu
   choose_parent: "Wähle einen Parent aus!"
   compose_new_message: neue Nachricht schreiben
@@ -222,6 +223,7 @@ de:
   passwd_no_match: "Das neue Passwort stimmt nicht mit der Bestätigung überein."
   passwd: Passwort
   path: "Pfad:"
+  promote_chat: Du kannst gucken, ob sich gerade jemand von uns im Chat aufhält und mit uns über den Chat kommunizieren.
   published: "veröffentlicht"
   register: Registrieren
   repository_url: "Repository-URL: "
@@ -235,6 +237,7 @@ de:
   subtype: "Subtyp:"
   superior_category: "Übergeordnete Kategorie"
   third_party: Third-Party
+  to_chat: zum Chat
   total_packages: "Pakete insgesamt: "
   trusted: Trusted
   ubuntu_derivatives: Ubuntu-Derivate

@@ -1,1 +1,1 @@
-<iframe src="http://webchat.freenode.net/?channels=<%=t(:chat_channel)%>" width="800" height="400"></iframe>
+<iframe src="http://webchat.freenode.net/?nick=<% if logged_in? %><%= current_user.login %><% end %>&channels=<%=t(:chat_channel)%>" width="800" height="400"></iframe>
