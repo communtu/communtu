@@ -999,7 +999,7 @@ a.download:hover, a.download:active{
  height:159px;
  padding-right:1em;
  padding-bottom:1em;
- background-image:url(images/hg_news.png);
+ background-image:url(/images/hg_news.png);
  background-repeat: no-repeat;
  }
 .communtu_box_line{
