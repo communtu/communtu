@@ -9,7 +9,7 @@ en:
   view_home_faq_03: How do I install a bundle?
   view_home_beteiligung_11: We need someone who is responsible for the project's layout. This means to integrate every graphic and to take over the main responsibility for the CSS.
   view_home_about_11: "Did you have good experience with the programs? You can merge thematic programs to a bundle and add this to the system. To do so, you choose <b>new bundle</b> below <b>Bundles</b>. Then you can add Ubuntu packages to the bundle. After you have finished, click on the floppy-icon to save the bundle. The bundle needs a name, a description and a thematic classification so that other users can use it too. Just like folders and files, the bundle can consist not only of Ubuntu packages but also of other bundles too. "
-  view_metapackages_show_3: Back&nbsp;&nbsp;
+  view_metapackages_show_3: Back
   view_layouts_application_18: no new messages
   detailed_view: go to detailed view
   view_home_faq_04: A bundle, together with other bundles, can be installed as a compilation via "Download". A bundle can also be installed directly via the menu-entry "Bundle"
@@ -21,6 +21,7 @@ en:
   view_home_beteiligung_13: Since we have many ideas for the platform's further development, we need programmers. Ideally you already have some experience with Ruby on Rails.
   view_accounts_edit_1: old password
   view_home_about_13: Post-installation of single functions
+  ~: ivat
   view_packages_show_15: source/repository
   view_home_faq_06: Click on "Bundle" and then you have to click "New Bundle". In the left box you can choose packages and add them to the bundle. When finished, you have to click on the "Save"-symbol in the bundle-editor. Now a new window appears in the main-window where you have to enter a meaningful name and a description. Don't forget to assign your bundle to a category.
   view_home_beteiligung_14: "We can also help you to learn this programming-language. You just have to contact "
@@ -472,6 +473,7 @@ en:
   view_user_profiles__installation_0: Ubuntu post-installation
   view_users__sidebar_8: Failed debs
   controller_suggestion_1: In order to install something, you first have to choose something. Don't forget to save!
+  chat_channel: en-ommuntu
   view_cart_update_1: Overwrite bundle, if it already exists?
   edit: Edit
   view_home_contact_us_0: Feedback

@@ -41,7 +41,7 @@ msgstr ""
 msgid "Did you have good experience with the programs? You can merge thematic programs to a bundle and add this to the system. To do so, you choose <b>new bundle</b> below <b>Bundles</b>. Then you can add Ubuntu packages to the bundle. After you have finished, click on the floppy-icon to save the bundle. The bundle needs a name, a description and a thematic classification so that other users can use it too. Just like folders and files, the bundle can consist not only of Ubuntu packages but also of other bundles too. "
 msgstr ""
 #: view_metapackages_show_3
-msgid "Back&nbsp;&nbsp;"
+msgid "Back"
 msgstr ""
 #: view_layouts_application_18
 msgid "no new messages"
@@ -90,6 +90,9 @@ msgid "You already have a Ubuntu-installation in use and want to add some functi
 msgstr ""
 #: view_metapackages_show_version_v
 msgid "(version {{v}})"
+msgstr ""
+#: 
+msgid "ivat"
 msgstr ""
 #: view_packages_show_16
 msgid "package-version"
@@ -1210,14 +1213,14 @@ msgstr ""
 #: controller_metapackages_bundle_not_found
 msgid "Bundle not found."
 msgstr ""
+#: view_packages_edit_8
+msgid "New link to a video"
+msgstr ""
 #: controller_distributions_0
 msgid "Ubuntu distributions"
 msgstr ""
 #: controller_home_1
 msgid "The e-mail has been sent to us. Many thanks for your message."
-msgstr ""
-#: view_packages_edit_8
-msgid "New link to a video"
 msgstr ""
 #: controller_debs_1
 msgid "Deb created."
@@ -1407,6 +1410,9 @@ msgid "Edit"
 msgstr ""
 #: view_cart_update_1
 msgid "Overwrite bundle, if it already exists?"
+msgstr ""
+#: chat_channel
+msgid "en-ommuntu"
 msgstr ""
 #: controller_suggestion_1
 msgid "In order to install something, you first have to choose something. Don't forget to save!"

@@ -6,7 +6,7 @@ msgstr ""
 "Last-Translator: Timo <timo@communtu.de>\n"
 "Language-Team: Communtu <info@communtu.de>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: n != 1\n"
 "X-Poedit-Language: German\n"
@@ -40,8 +40,8 @@ msgid "Wie kann ich meine Erfahrungen mit Programmen ins Communtu-System eintrag
 msgstr "How can I submit my experience with programs to the Communtu-system?"
 
 #: view_metapackages_show_3
-msgid "Zurück&nbsp;&nbsp;"
-msgstr "Back&nbsp;&nbsp;"
+msgid "Zurück"
+msgstr "Back"
 
 #: view_layouts_application_18
 msgid "keine neuen Nachrichten"
@@ -1899,6 +1899,10 @@ msgstr "Edit"
 msgid "Bündel überschreiben, falls es existiert?"
 msgstr "Overwrite bundle, if it already exists?"
 
+#: chat_channel
+msgid "de-communtu"
+msgstr "en-ommuntu"
+
 #: controller_suggestion_1
 msgid "Um etwas installieren zu können, musst du zunächst etwas auswählen. Speichern nicht vergessen!"
 msgstr "In order to install something, you first have to choose something. Don't forget to save!"
@@ -3048,4 +3052,7 @@ msgstr "What is a bundle?"
 #: controller_users_12
 msgid "Benutzer aktiviert"
 msgstr "User activated"
+
+#~ msgid "Zurück&nbsp;&nbsp;"
+#~ msgstr "Back&nbsp;&nbsp;"
 
