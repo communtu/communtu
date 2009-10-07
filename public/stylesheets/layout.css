@@ -979,8 +979,55 @@ a.download:hover, a.download:active{
 	position:absolute; 
 	left:5px; 
 	top:87px;
-	width: 725px;
+	width:700px;
 	}
+.communtu_box{
+ position:absolute; 
+ left:750px; 
+ top:95px;
+ width:11em;
+ padding-right:1em;
+ padding-bottom:1em;
+ border:1px solid#A33700;
+ background-color: #FFF8D2;
+ }
+.communtu_box_zweite{
+ position:absolute; 
+ left:750px; 
+ top:250px;
+ width:150px;
+ height:159px;
+ padding-right:1em;
+ padding-bottom:1em;
+ background-image:url(images/hg_news.png);
+ background-repeat: no-repeat;
+ }
+.communtu_box_line{
+ width:11.2em;
+ padding-left:1em;
+ padding-top:0.8em;
+ padding-bottom:0.8em;
+ background-color: #A33700;
+ color:#fff;
+ font-weight:bold;
+ }
+.communtu_box_drin{
+ width:11em;
+ border-top:1px solid#A33700;
+ border-top-style:dotted;
+ margin-bottom:0.5em;
+ padding-top:0.5em;
+ padding-left:1em;
+ }
+.communtu_box_drin ul li{
+  list-style-type: none;
+  list-style-image: none;
+  list-style-position:none;
+  padding-left:0em;
+  margin-left:-2em;
+  padding-bottom:0.5em;
+  padding-top:0em;
+}
 .unternavi{
 	position:absolute; 
 	left:0px; 

@@ -8,11 +8,13 @@ de:
   allgemeinbildung: Allgemeinbildung e.V.
   an: An
   an: "An:"
+  announce: announce
   anmelden: Anmelden
   archive: Archiv
   are_you_sure: Bist du sicher?
   back: "zurück"
   blog: Der Blog von Communtu
+  blog_2: Blog
   bundle: "Bündel"
   bundle_by_owner: erstellte Bündel
   bundle_editor: "Bündel-Editor"
@@ -123,6 +125,7 @@ de:
   description_with_colon: "Beschreibung:"
   detailed_view: zur Detailansicht
   direct_indirect_covered_packages: Direkt und indirekt enthaltene Pakete
+  discuss: discuss
   distribution: Distribution
   donation_possibility: "Spendenmöglichkeit"
   donation_purpose: "Verwendungszweck: Communtu"
@@ -168,6 +171,7 @@ de:
   lib_system_2: http://www.communtu.de
   lib_utils_0: "System-Befehl schlug fehl: "
   licence: "Lizenztyp:"
+  mailinglist: "Mailinglisten:"
   match_ubuntu: "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
   match_with_communtu: "Communtu - gemeinsam Ubuntu-Linux an individuelle Bedürfnisse anpassen"
   metacart_choose: Füge Programme aus der linken Spalte zu Deinem Bündel hinzu.
@@ -820,6 +824,7 @@ de:
   view_users__user_2: Rollen bearbeiten
   view_videos_edit_0: Video bearbeiten
   view_videos_show_0: "Url:"
+  we_want_you: Wir brauchen Dich
   weblinks: Weblinks
   yes1: ja
   you_can: "Du kannst Dich auch "

@@ -62,7 +62,7 @@
 <% end %>
 		</a>
 <a href="/home/about">
-  <% if params[:controller] == "home" and params[:action] != ("home" and "new_repository") %>
+  <% if params[:controller] == "home" and params[:action] != "home" %>
  <%= image_tag("/images/navi_communtuon.png", :border => '0', :alt=>t(:view_layouts_application_28),:title=>t(:view_layouts_application_28))  %>
  			<div class="navi_drei"><%= t(:view_layouts_application_25) %></div>
 		</a>
@@ -95,7 +95,7 @@
 </div>
 <% end %>
 -->
-<% if params[:controller] == "home" and params[:action] != ("home" and "new_repository") %>
+<% if params[:controller] == "home" and params[:action] != "home" %>
 <%= render(:partial => 'navi_communtu') %>
 <div class="content1"> 
 <% elsif params[:action] == "metapackages" and params[:controller] == "users" %>
@@ -114,6 +114,7 @@
 <div class="contentstart">
 <% else %>
 <div class="content2">
+<% div_helper = 0 %>
 <% jutta = 1 %>
 <% end %>
 		<%= yield %>
@@ -121,6 +122,8 @@
 </div>
 <% end %>
 <p></p>
+<% if div_helper != 1 %>
 </div>
+<% end %>
  </body>
 </html>
