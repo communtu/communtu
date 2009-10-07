@@ -384,6 +384,7 @@ en:
   view_packages_new_0: New package
   native: native
   view_packages_edit_3: "&nbsp;&nbsp;New icon: "
+  package_list: back to the package-list
   view_home_derivatives_22: " - in some ways like BeOS, ZevenOS focuses on speed and compatibility for old computers with a simple interface. CPU with at least 200 MHz, 128 MB RAM (for operating, while installing 192 MB RAM are required), at least 2 GB free hard disk space (recommended are 4 GB free hard disk space or more), 16 MB graphic card (recommended: Intel GMA 9xx)."
   view_sent_show_2: "Date:"
   news: News
@@ -411,10 +412,10 @@ en:
   view_home_derivatives_25: http://en.wikipedia.org/wiki/Xfce
   view_home_derivatives_26: " - with the slim Xfce as the graphical interface. Particularly suitable for older computers: 128 MB RAM and 1,5 GB free hard disk space are sufficient. Should be installed from the CD to guarantee a slim installation. Post-installation can be done with Communtu."
   controller_debs_1: Deb created.
+  controller_metapackages_bundle_not_found: Bundle not found.
   controller_distributions_0: Ubuntu distributions
   controller_home_1: The e-mail has been sent to us. Many thanks for your message.
   view_packages_edit_8: New link to a video
-  controller_metapackages_bundle_not_found: Bundle not found.
   view_user_profiles__installation_19: "Attention: after clicking, it will take a moment until the file is provided."
   view_home_derivatives_27: http://en.wikipedia.org/wiki/LinuxMCE
   controller_debs_2: Deb updated.
@@ -545,6 +546,7 @@ en:
   install2: Install
   view_rating_new_comment_info: Please enter a description to your rating. This is a <b>mandatory</b> step.
   view_home_derivatives_50: " - with Fluxbox and several network-tools."
+  choose_bundle: Choose bundle
   view_passwords_edit_0: "    Password:"
   view_home_derivatives_51: " - Installation of programs and version, which are not available through the official repositories."
   controller_metapackages_no_renaming: Released bundles cannot be renamed.

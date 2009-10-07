@@ -1138,6 +1138,9 @@ msgstr ""
 #: view_packages_edit_3
 msgid "&nbsp;&nbsp;New icon: "
 msgstr ""
+#: package_list
+msgid "back to the package-list"
+msgstr ""
 #: view_home_derivatives_22
 msgid " - in some ways like BeOS, ZevenOS focuses on speed and compatibility for old computers with a simple interface. CPU with at least 200 MHz, 128 MB RAM (for operating, while installing 192 MB RAM are required), at least 2 GB free hard disk space (recommended are 4 GB free hard disk space or more), 16 MB graphic card (recommended: Intel GMA 9xx)."
 msgstr ""
@@ -1207,17 +1210,17 @@ msgstr ""
 #: view_user_profiles__installation_19
 msgid "Attention: after clicking, it will take a moment until the file is provided."
 msgstr ""
-#: controller_metapackages_bundle_not_found
-msgid "Bundle not found."
-msgstr ""
-#: controller_distributions_0
-msgid "Ubuntu distributions"
+#: view_packages_edit_8
+msgid "New link to a video"
 msgstr ""
 #: controller_home_1
 msgid "The e-mail has been sent to us. Many thanks for your message."
 msgstr ""
-#: view_packages_edit_8
-msgid "New link to a video"
+#: controller_distributions_0
+msgid "Ubuntu distributions"
+msgstr ""
+#: controller_metapackages_bundle_not_found
+msgid "Bundle not found."
 msgstr ""
 #: controller_debs_1
 msgid "Deb created."
@@ -1548,6 +1551,9 @@ msgid "Install"
 msgstr ""
 #: view_passwords_edit_0
 msgid "    Password:"
+msgstr ""
+#: choose_bundle
+msgid "Choose bundle"
 msgstr ""
 #: view_home_derivatives_50
 msgid " - with Fluxbox and several network-tools."

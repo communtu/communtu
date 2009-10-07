@@ -1341,6 +1341,10 @@ msgstr "You haven't sent any messages yet."
 msgid "Navigation Communtu"
 msgstr "Navigation Communtu"
 
+#: view_home_faq_13
+msgid "Wie finde ich Programme?"
+msgstr "How do I find programs?"
+
 #: category_with_colon
 msgid "Kategorie:"
 msgstr "Category:"
@@ -1348,10 +1352,6 @@ msgstr "Category:"
 #: model_user_meta_tabz_2
 msgid "Ubuntu-Pakete"
 msgstr "Ubuntu packages"
-
-#: view_home_faq_13
-msgid "Wie finde ich Programme?"
-msgstr "How do I find programs?"
 
 #: view_debs_index_2
 msgid "  Keine fehlgeschlagenen Deb-Generierungen vorhanden! Glückwunsch!"
@@ -1377,13 +1377,13 @@ msgstr "user found"
 msgid "Gast"
 msgstr "Guest"
 
-#: model_user_meta_tabz_3
-msgid "Veröffentlichte Bündel"
-msgstr "Published bundles"
-
 #: view_home_faq_14
 msgid "Gehe dazu bitte auf den Menüpunkt \"Programme suchen\". Hier hast Du ein Suchfeld, in dem Du den Namen des gesuchten Prgramms angeben kannst. Weiter ist es möglich die Suche nur über Programme durchzuführen, in dem das Feld \"Nur Programme\" angeklickt wird und somit sonstige Bibliotheken nicht mehr angezeigt werden. Weiter ist es auch möglich eine Debian-Section auszuwählen, der die Auswahl an Programmen anhand von Kategorien vorselektiert."
 msgstr "To find a program, go to \"Search programs\". Enter the name of the program you are looking for into the search field. If you want to search only the programs click on \"Programs only\" and the libraries are not searched. Furthermore it is possible to choose a Debian-section where programs are preselected."
+
+#: model_user_meta_tabz_3
+msgid "Veröffentlichte Bündel"
+msgstr "Published bundles"
 
 #: view_debs_index_3
 msgid "Alle fehlgeschlagenen debs erzeugen <b>Achtung: nur unter admin.communtu.de ausführen!</b>"
@@ -1532,6 +1532,10 @@ msgstr "Subject"
 #: native
 msgid "Native"
 msgstr "native"
+
+#: package_list
+msgid "zurück zur Paketliste"
+msgstr "back to the package-list"
 
 #: view_sent_show_2
 msgid "Zeitpunkt:"
@@ -2126,6 +2130,10 @@ msgstr "Install"
 #: view_passwords_edit_0
 msgid "    Passwort:"
 msgstr "    Password:"
+
+#: choose_bundle
+msgid "Bündel auswählen"
+msgstr "Choose bundle"
 
 #: view_home_derivatives_50
 msgid " - mit Fluxbox und verschiedenen Netzwerk-Sicherheitswerkzeugen ."

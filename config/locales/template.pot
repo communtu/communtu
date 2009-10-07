@@ -994,14 +994,14 @@ msgstr ""
 #: view_layouts_application_28
 msgid "Navigation Communtu"
 msgstr ""
+#: view_home_faq_13
+msgid "Wie finde ich Programme?"
+msgstr ""
 #: category_with_colon
 msgid "Kategorie:"
 msgstr ""
 #: model_user_meta_tabz_2
 msgid "Ubuntu-Pakete"
-msgstr ""
-#: view_home_faq_13
-msgid "Wie finde ich Programme?"
 msgstr ""
 #: view_debs_index_2
 msgid "  Keine fehlgeschlagenen Deb-Generierungen vorhanden! Glückwunsch!"
@@ -1021,11 +1021,11 @@ msgstr ""
 #: view_layouts_application_29
 msgid "Gast"
 msgstr ""
-#: model_user_meta_tabz_3
-msgid "Veröffentlichte Bündel"
-msgstr ""
 #: view_home_faq_14
 msgid "Gehe dazu bitte auf den Menüpunkt \"Programme suchen\". Hier hast Du ein Suchfeld, in dem Du den Namen des gesuchten Prgramms angeben kannst. Weiter ist es möglich die Suche nur über Programme durchzuführen, in dem das Feld \"Nur Programme\" angeklickt wird und somit sonstige Bibliotheken nicht mehr angezeigt werden. Weiter ist es auch möglich eine Debian-Section auszuwählen, der die Auswahl an Programmen anhand von Kategorien vorselektiert."
+msgstr ""
+#: model_user_meta_tabz_3
+msgid "Veröffentlichte Bündel"
 msgstr ""
 #: view_debs_index_3
 msgid "Alle fehlgeschlagenen debs erzeugen <b>Achtung: nur unter admin.communtu.de ausführen!</b>"
@@ -1137,6 +1137,9 @@ msgid "Betreff"
 msgstr ""
 #: native
 msgid "Native"
+msgstr ""
+#: package_list
+msgid "zurück zur Paketliste"
 msgstr ""
 #: view_sent_show_2
 msgid "Zeitpunkt:"
@@ -1548,6 +1551,9 @@ msgid "installieren"
 msgstr ""
 #: view_passwords_edit_0
 msgid "    Passwort:"
+msgstr ""
+#: choose_bundle
+msgid "Bündel auswählen"
 msgstr ""
 #: view_home_derivatives_50
 msgid " - mit Fluxbox und verschiedenen Netzwerk-Sicherheitswerkzeugen ."
