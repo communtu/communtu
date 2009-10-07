@@ -55,7 +55,8 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/users/:id/destroy', :controller => 'users', :action => 'destroy' 
   map.connect '/users/:id/show', :controller => 'users', :action => 'show'
   map.connect '/users/:id/cart/:action/:id', :controller => 'cart'
-  
+  map.connect '/bundle', :controller => 'packages', :action => 'bundle'
+
   map.resources :distributions do |dist|
     dist.resources :metapackages
     dist.resources :packages  

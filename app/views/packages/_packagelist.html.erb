@@ -3,6 +3,7 @@
 <div class="editorh1">
 <%=t(:packages_for_ubuntu)%>
 </div>
+<p></p>
 <%= form_tag('/packages/search', :method => "post") %>
 <br />
 <table border="0">
@@ -26,7 +27,7 @@
 <td>
     <input type="textbox" id="search" name="search" value="<%= session[:search]%>"/>
 </td>
-<td></td>
+<td><%= link_to(t(:choose_bundle), "/bundle")%></td>
 </tr>
 </table>
 </form>

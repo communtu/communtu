@@ -17,6 +17,17 @@ class PackagesController < ApplicationController
     end
   end
   
+  def bundle
+    #session[:search], session[:group], session[:programs], params[:page])
+    @packages = BasePackage.find(:all, :conditions => {:type => "Metapackage",:published => 1})
+    @packages += BasePackage.find(:all, :conditions => {:type => "Metapackage",:user_id => current_user.id}) 
+#    @packages = @packages(session[:search], params[:page])
+    respond_to do |format|
+      format.html { render :action => "bundle.html.erb" }
+      format.xml  { render :xml => @Packages }
+    end
+  end                                
+  
   def search
     session[:search] = params[:search]
     session[:programs] = params[:programs]
@@ -29,6 +40,12 @@ class PackagesController < ApplicationController
     end
     redirect_to "/packages"
   end
+
+  def search_bundle
+    session[:search] = params[:search]
+    redirect_to "/bundle"
+  end
+                                                
   
   # GET /Packages/1
   # GET /Packages/1.xml

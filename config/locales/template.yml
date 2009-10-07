@@ -23,6 +23,7 @@ de:
   change_passwd: "Passwort ändern"
   chat: Chat
   chat_channel: de-communtu
+  choose_bundle: Bündel auswählen 
   choose_parent: "Wähle einen Parent aus!"
   compose_new_message: neue Nachricht schreiben
   confirm_new_passwd: "Neues Passwort bestätigen"
@@ -217,6 +218,7 @@ de:
   no_cookies: Du hast Deine Cookies deaktiviert. Zum Nutzen von Communtu sind diese erforderlich. Wir empfehlen Dir, die Cookies wieder anzuschalten.
   no_save_database: "Die folgenden Pakete konnten nicht in der Datenbank gespeichert werden:"
   not_logged_in: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
+  package_list: zurück zur Paketliste
   packages: Pakete
   packages_for_ubuntu: Pakete für Ubuntu
   participation: "Beteiligungsmöglichkeiten"
