@@ -1473,13 +1473,13 @@ msgstr "Version:"
 msgid "Bitte Versionen => 1.0 nur für ausgereifte Bündel verwenden. Versionsnummern müssen stets ansteigen. 0.10 ist höher als 0.9."
 msgstr "Pleas use versions => 1.0 only for stable bundles. A version must always increase. 0.10 is higher than 0.9."
 
-#: new_message
-msgid "Neue Nachricht"
-msgstr "New message"
-
 #: view_home_faq_17
 msgid "Wie kann ich Programme vorschlagen, dass diese in Communtu mit aufgenommen werden?"
 msgstr "How can I propose a program so it can be added to Communtu?"
+
+#: new_message
+msgid "Neue Nachricht"
+msgstr "New message"
 
 #: view_users_new_12
 msgid "(optional)"
@@ -1774,6 +1774,10 @@ msgstr "Notification in bugfixing"
 #: view_home_home_22
 msgid " dich an, oder "
 msgstr "in, or "
+
+#: chat
+msgid "Chat"
+msgstr "Chat"
 
 #: no1
 msgid "nein"
@@ -2541,6 +2545,10 @@ msgstr "This can be done with Synaptic. To reach Synaptic in a Gnome-based syste
 msgid "Abschicken"
 msgstr "Send"
 
+#: promote_chat
+msgid "Du kannst gucken, ob sich gerade jemand von uns im Chat aufhält und mit uns über den Chat kommunizieren."
+msgstr "You can look if one of us is currently in the chat and talk with us."
+
 #: view_user_profiles__installation_20
 msgid "Dieser Schritt wurde bereits schon einmal ausgeführt."
 msgstr "This step has already been carried out."
@@ -2704,6 +2712,10 @@ msgstr " install sources"
 #: model_package_0
 msgid "OpenSource"
 msgstr "open source"
+
+#: to_chat
+msgid "zum Chat"
+msgstr "to the chat"
 
 #: view_home_derivatives_34
 msgid " - ersetzt den Linux-Kern durch OpenSolaris. Stellt nur eine minimale Basis an Anwendungen bereit. Die Installation weiterer Pakete bleibt dem Benutzer überlassen; hierfür kann Communtu genutzt werden."
@@ -3052,7 +3064,4 @@ msgstr "What is a bundle?"
 #: controller_users_12
 msgid "Benutzer aktiviert"
 msgstr "User activated"
-
-#~ msgid "Zurück&nbsp;&nbsp;"
-#~ msgstr "Back&nbsp;&nbsp;"
 

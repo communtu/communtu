@@ -1093,11 +1093,11 @@ msgstr ""
 #: view_metapackages_edit_2
 msgid "Bitte Versionen => 1.0 nur für ausgereifte Bündel verwenden. Versionsnummern müssen stets ansteigen. 0.10 ist höher als 0.9."
 msgstr ""
-#: new_message
-msgid "Neue Nachricht"
-msgstr ""
 #: view_home_faq_17
 msgid "Wie kann ich Programme vorschlagen, dass diese in Communtu mit aufgenommen werden?"
+msgstr ""
+#: new_message
+msgid "Neue Nachricht"
 msgstr ""
 #: view_users_new_12
 msgid "(optional)"
@@ -1314,6 +1314,9 @@ msgid "Benachrichtigung bei Fehlerbehebung"
 msgstr ""
 #: view_home_home_22
 msgid " dich an, oder "
+msgstr ""
+#: chat
+msgid "Chat"
 msgstr ""
 #: no1
 msgid "nein"
@@ -1855,6 +1858,9 @@ msgstr ""
 #: senden
 msgid "Abschicken"
 msgstr ""
+#: promote_chat
+msgid "Du kannst gucken, ob sich gerade jemand von uns im Chat aufhält und mit uns über den Chat kommunizieren."
+msgstr ""
 #: view_user_profiles__installation_20
 msgid "Dieser Schritt wurde bereits schon einmal ausgeführt."
 msgstr ""
@@ -1977,6 +1983,9 @@ msgid " Quellen installieren"
 msgstr ""
 #: model_package_0
 msgid "OpenSource"
+msgstr ""
+#: to_chat
+msgid "zum Chat"
 msgstr ""
 #: view_home_derivatives_34
 msgid " - ersetzt den Linux-Kern durch OpenSolaris. Stellt nur eine minimale Basis an Anwendungen bereit. Die Installation weiterer Pakete bleibt dem Benutzer überlassen; hierfür kann Communtu genutzt werden."

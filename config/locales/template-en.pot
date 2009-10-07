@@ -91,9 +91,6 @@ msgstr ""
 #: view_metapackages_show_version_v
 msgid "(version {{v}})"
 msgstr ""
-#: 
-msgid "ivat"
-msgstr ""
 #: view_packages_show_16
 msgid "package-version"
 msgstr ""
@@ -1213,14 +1210,14 @@ msgstr ""
 #: controller_metapackages_bundle_not_found
 msgid "Bundle not found."
 msgstr ""
-#: view_packages_edit_8
-msgid "New link to a video"
-msgstr ""
 #: controller_distributions_0
 msgid "Ubuntu distributions"
 msgstr ""
 #: controller_home_1
 msgid "The e-mail has been sent to us. Many thanks for your message."
+msgstr ""
+#: view_packages_edit_8
+msgid "New link to a video"
 msgstr ""
 #: controller_debs_1
 msgid "Deb created."
@@ -1317,6 +1314,9 @@ msgid "Notification in bugfixing"
 msgstr ""
 #: view_home_home_22
 msgid "in, or "
+msgstr ""
+#: chat
+msgid "Chat"
 msgstr ""
 #: no1
 msgid "no"
@@ -1855,6 +1855,9 @@ msgstr ""
 #: senden
 msgid "Send"
 msgstr ""
+#: promote_chat
+msgid "You can look if one of us is currently in the chat and talk with us."
+msgstr ""
 #: view_user_profiles__installation_20
 msgid "This step has already been carried out."
 msgstr ""
@@ -1977,6 +1980,9 @@ msgid " install sources"
 msgstr ""
 #: model_package_0
 msgid "open source"
+msgstr ""
+#: to_chat
+msgid "to the chat"
 msgstr ""
 #: view_home_derivatives_34
 msgid " - replaces the Linux core with OpenSolaris. Provides only a minimal basis to applications. The installation of additional software is left to the user; Communtu can be used for this."
