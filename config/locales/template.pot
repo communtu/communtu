@@ -55,6 +55,9 @@ msgstr ""
 #: view_home_faq_04
 msgid "Ein Bündel kann einmal in einer Zusammenstellung mit weiteren über den Punkt \"Download\" zum Computer hinzugefügt werden. Andererseits kann auch ein Bündel direkt installiert werden, wenn Du über den Menüpunkt \"Bündel\" gehst."
 msgstr ""
+#: discuss
+msgid "discuss"
+msgstr ""
 #: view_home_beteiligung_12
 msgid "Programmierung"
 msgstr ""
@@ -130,6 +133,9 @@ msgstr ""
 #: view_home_about_16
 msgid "Um Communtu nutzen zu können, kannst du dich registrieren. Das geht ganz einfach über den \"Registrieren\"-Knopf in der oberen Leiste."
 msgstr ""
+#: mailinglist
+msgid "Mailinglisten:"
+msgstr ""
 #: new_passwd
 msgid "Neues Passwort"
 msgstr ""
@@ -199,6 +205,9 @@ msgstr ""
 #: view_cart_new_from_list_tip
 msgid "Tipp: eine große Liste kannst du auch zunächst mit einem Editor thematisch sortieren und die resultierenden Teillisten einzeln hier hochladen. Die entstehenden Bündel kannst du wiederum zu einem Bündel zusammenfassen. Dadurch entsteht ein besser strukturiertes Bündel."
 msgstr ""
+#: we_want_you
+msgid "Wir brauchen Dich"
+msgstr ""
 #: view_metapackages__metalist_2
 msgid "Standard"
 msgstr ""
@@ -213,6 +222,9 @@ msgid "Achtung! bei Communtu erst in Kürze verfügbar."
 msgstr ""
 #: helper_distributions_1
 msgid "non-free"
+msgstr ""
+#: blog_2
+msgid "Blog"
 msgstr ""
 #: view_home_derivatives_13
 msgid " - der PC wird zum Videorekorder. Bei Film \"Freak\" auswählen, und es wird mitinstalliert. Empfohlen: CPU mit 2 GHz, 1024 MByte RAM, 10 GByte Festplattenplatz für das Frontend, 80+ GByte für das Backend, eine Grafikkarte mit 128 MByte RAM mit TV-Ausgang und eine unterstützte TV-Karte."
@@ -396,6 +408,9 @@ msgid "Programm"
 msgstr ""
 #: view_home_home_16
 msgid " über das Projekt und über die Mitwirkenden im "
+msgstr ""
+#: announce
+msgid "announce"
 msgstr ""
 #: view_categories_edit_4
 msgid "Hauptkategory, die auf der Startseite Download angezeigt wird:"
@@ -934,11 +949,11 @@ msgstr ""
 #: view_home_new_repository_2
 msgid "Link zum Repository"
 msgstr ""
-#: model_user_meta_tabz_0
-msgid "Meine Bündel"
-msgstr ""
 #: view_home_faq_11
 msgid "Wie sichere ich die Programmliste meines Gesamtsystems?"
+msgstr ""
+#: model_user_meta_tabz_0
+msgid "Meine Bündel"
 msgstr ""
 #: subtype
 msgid "Subtyp:"
@@ -964,14 +979,14 @@ msgstr ""
 #: view_home_new_repository_3
 msgid "Warum soll dies in Communtu eingebaut werden? (Bitte gebe Kontaktdaten an, wenn Du über die Aufnahme informiert werden willst)"
 msgstr ""
+#: view_home_faq_12
+msgid "Unter \"Bündel\" und dann \"Neues Bündel\" gibt es den Punkt \"Bündel aus Paketliste\", der anzuklicken ist. Dort ist beschrieben, wie Du Deine Paketliste in Communtu hochladen kannst."
+msgstr ""
 #: model_user_meta_tabz_1
 msgid "Alle veröffentlichten Bündel"
 msgstr ""
 #: add_sources
 msgid "Quellen hinzufügen"
-msgstr ""
-#: view_home_faq_12
-msgid "Unter \"Bündel\" und dann \"Neues Bündel\" gibt es den Punkt \"Bündel aus Paketliste\", der anzuklicken ist. Dort ist beschrieben, wie Du Deine Paketliste in Communtu hochladen kannst."
 msgstr ""
 #: view_debs_index_1
 msgid "Zurück zum Communtu-Menü"

@@ -71,6 +71,10 @@ msgstr "https://www.paypal.com/en_GB/i/btn/btn_donate_LG.gif"
 msgid "Ein Bündel kann einmal in einer Zusammenstellung mit weiteren über den Punkt \"Download\" zum Computer hinzugefügt werden. Andererseits kann auch ein Bündel direkt installiert werden, wenn Du über den Menüpunkt \"Bündel\" gehst."
 msgstr "A bundle, together with other bundles, can be installed as a compilation via \"Download\". A bundle can also be installed directly via the menu-entry \"Bundle\""
 
+#: discuss
+msgid "discuss"
+msgstr "discuss"
+
 #: view_home_beteiligung_12
 msgid "Programmierung"
 msgstr "Programming"
@@ -171,6 +175,10 @@ msgstr "While the synchronization of the repository {{repo_name}} the package {{
 msgid "Um Communtu nutzen zu können, kannst du dich registrieren. Das geht ganz einfach über den \"Registrieren\"-Knopf in der oberen Leiste."
 msgstr "In order to use Communtu you need to register yourself. To do so, just click on the \"Registration\"-button in the menu above."
 
+#: mailinglist
+msgid "Mailinglisten:"
+msgstr "Mailinglists:"
+
 #: new_passwd
 msgid "Neues Passwort"
 msgstr "new password"
@@ -263,6 +271,10 @@ msgstr "GPG-key (optional):"
 msgid "Tipp: eine große Liste kannst du auch zunächst mit einem Editor thematisch sortieren und die resultierenden Teillisten einzeln hier hochladen. Die entstehenden Bündel kannst du wiederum zu einem Bündel zusammenfassen. Dadurch entsteht ein besser strukturiertes Bündel."
 msgstr "Hint: you can sort a huge list thematically and upload the sorted list in small parts. The created bundles can be merged into a new bundle. Thus a more structured bundle is created."
 
+#: we_want_you
+msgid "Wir brauchen Dich"
+msgstr "We need you"
+
 #: view_metapackages__metalist_2
 msgid "Standard"
 msgstr "Standard"
@@ -282,6 +294,10 @@ msgstr "Attention! Will be available soon at Communtu."
 #: helper_distributions_1
 msgid "non-free"
 msgstr "non-free"
+
+#: blog_2
+msgid "Blog"
+msgstr "Blog"
 
 #: view_home_derivatives_13
 msgid " - der PC wird zum Videorekorder. Bei Film \"Freak\" auswählen, und es wird mitinstalliert. Empfohlen: CPU mit 2 GHz, 1024 MByte RAM, 10 GByte Festplattenplatz für das Frontend, 80+ GByte für das Backend, eine Grafikkarte mit 128 MByte RAM mit TV-Ausgang und eine unterstützte TV-Karte."
@@ -526,6 +542,10 @@ msgstr "program"
 #: view_home_home_16
 msgid " über das Projekt und über die Mitwirkenden im "
 msgstr " about this project and its participants in the "
+
+#: announce
+msgid "announce"
+msgstr "announce"
 
 #: view_categories_edit_4
 msgid "Hauptkategory, die auf der Startseite Download angezeigt wird:"
@@ -1257,13 +1277,13 @@ msgstr "Navigation bundle"
 msgid "Link zum Repository"
 msgstr "Link to the repository"
 
-#: model_user_meta_tabz_0
-msgid "Meine Bündel"
-msgstr "My bundles"
-
 #: view_home_faq_11
 msgid "Wie sichere ich die Programmliste meines Gesamtsystems?"
 msgstr "How do I save the program-list of my system?"
+
+#: model_user_meta_tabz_0
+msgid "Meine Bündel"
+msgstr "My bundles"
 
 #: subtype
 msgid "Subtyp:"
@@ -1297,6 +1317,10 @@ msgstr "Navigation download"
 msgid "Warum soll dies in Communtu eingebaut werden? (Bitte gebe Kontaktdaten an, wenn Du über die Aufnahme informiert werden willst)"
 msgstr "Why should this be implemented in Communtu? (If you want to be informed about the take-up, please enter your contact information)"
 
+#: view_home_faq_12
+msgid "Unter \"Bündel\" und dann \"Neues Bündel\" gibt es den Punkt \"Bündel aus Paketliste\", der anzuklicken ist. Dort ist beschrieben, wie Du Deine Paketliste in Communtu hochladen kannst."
+msgstr "After a click on \"Bundle\" and \"New bundle\" you can find the link \"Create bundle from a packages-list\". A new page is loaded with instructions on how to upload your package-list to Communtu."
+
 #: model_user_meta_tabz_1
 msgid "Alle veröffentlichten Bündel"
 msgstr "All published bundles"
@@ -1304,10 +1328,6 @@ msgstr "All published bundles"
 #: add_sources
 msgid "Quellen hinzufügen"
 msgstr "Add sources"
-
-#: view_home_faq_12
-msgid "Unter \"Bündel\" und dann \"Neues Bündel\" gibt es den Punkt \"Bündel aus Paketliste\", der anzuklicken ist. Dort ist beschrieben, wie Du Deine Paketliste in Communtu hochladen kannst."
-msgstr "After a click on \"Bundle\" and \"New bundle\" you can find the link \"Create bundle from a packages-list\". A new page is loaded with instructions on how to upload your package-list to Communtu."
 
 #: view_debs_index_1
 msgid "Zurück zum Communtu-Menü"

@@ -13,6 +13,7 @@ en:
   view_layouts_application_18: no new messages
   detailed_view: go to detailed view
   view_home_faq_04: A bundle, together with other bundles, can be installed as a compilation via "Download". A bundle can also be installed directly via the menu-entry "Bundle"
+  discuss: discuss
   view_home_beteiligung_12: Programming
   changed_settings: This step has to be carried out again because you changed the settings.
   view_home_about_12: <b>Administrate bundles</b> on the left side offers an overview about the available bundles. At last, an overview about the available Ubunt versions (distributions) can be found at <b>Ubuntu versions</b>.
@@ -37,6 +38,7 @@ en:
   view_packages__packagelist_1: "Programs&nbsp;only:"
   model_package_10: While the synchronization of the repository {{repo_name}} the package {{package_name}} couldn't be found.
   view_home_about_16: In order to use Communtu you need to register yourself. To do so, just click on the "Registration"-button in the menu above.
+  mailinglist: "Mailinglists:"
   view_metapackages_show_8: "Rating: "
   new_passwd: new password
   view_users_index_0: All users
@@ -64,8 +66,10 @@ en:
   view_cart_new_from_list_tip: "Hint: you can sort a huge list thematically and upload the sorted list in small parts. The created bundles can be merged into a new bundle. Thus a more structured bundle is created."
   view_home_home_rating_rating: Rating
   view_metapackages__metalist_2: Standard
+  we_want_you: We need you
   achtung: Attention! Will be available soon at Communtu.
   helper_distributions_1: non-free
+  blog_2: Blog
   view_home_derivatives_13: " - the PC becomes a VCR. Select \"Freak\" at \"Movie\" and it will be installed. Recommended: CPU with 2 GHz, 1024 MB-RAM, 10 GB free harddisk space for the frontend, at least 80 GB for the backend, a graphic card with at least 128 MB RAM and a TV Out and a supported TV card."
   view_metapackages_immediate_conflicts_0: Conflicts inside bundles
   controller_metapackages_6: The bundle-name is already in use<br>
@@ -126,6 +130,7 @@ en:
   view_categories_edit_3: Link for further information
   view_home_home_15: detailled information
   view_metapackages__metalist_10: "Rating "
+  announce: announce
   view_home_icons_10: program
   view_categories_edit_4: "Maincategory, which is shown on the first page under Download:"
   view_home_home_16: " about this project and its participants in the "
@@ -406,15 +411,15 @@ en:
   yes1: "yes"
   view_user_profiles__installation_17: Just click on the link and open the file and open it with the recommended package-installer.
   view_home_derivatives_24: "Derivatives, which should be installed with the derivative installation-CD:"
+  view_home_derivatives_25: http://en.wikipedia.org/wiki/Xfce
   view_packages_new_4: Source
   view_categories_show_0: "Name: "
   controller_debs_0: Debian-packages
-  view_home_derivatives_25: http://en.wikipedia.org/wiki/Xfce
   view_home_derivatives_26: " - with the slim Xfce as the graphical interface. Particularly suitable for older computers: 128 MB RAM and 1,5 GB free hard disk space are sufficient. Should be installed from the CD to guarantee a slim installation. Post-installation can be done with Communtu."
   controller_debs_1: Deb created.
   controller_metapackages_bundle_not_found: Bundle not found.
-  controller_distributions_0: Ubuntu distributions
   controller_home_1: The e-mail has been sent to us. Many thanks for your message.
+  controller_distributions_0: Ubuntu distributions
   view_packages_edit_8: New link to a video
   view_user_profiles__installation_19: "Attention: after clicking, it will take a moment until the file is provided."
   view_home_derivatives_27: http://en.wikipedia.org/wiki/LinuxMCE

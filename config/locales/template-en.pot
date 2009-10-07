@@ -52,6 +52,9 @@ msgstr ""
 #: view_home_faq_04
 msgid "A bundle, together with other bundles, can be installed as a compilation via \"Download\". A bundle can also be installed directly via the menu-entry \"Bundle\""
 msgstr ""
+#: discuss
+msgid "discuss"
+msgstr ""
 #: view_home_beteiligung_12
 msgid "Programming"
 msgstr ""
@@ -123,6 +126,9 @@ msgid "While the synchronization of the repository {{repo_name}} the package {{p
 msgstr ""
 #: view_home_about_16
 msgid "In order to use Communtu you need to register yourself. To do so, just click on the \"Registration\"-button in the menu above."
+msgstr ""
+#: mailinglist
+msgid "Mailinglists:"
 msgstr ""
 #: view_metapackages_show_8
 msgid "Rating: "
@@ -205,11 +211,17 @@ msgstr ""
 #: view_metapackages__metalist_2
 msgid "Standard"
 msgstr ""
+#: we_want_you
+msgid "We need you"
+msgstr ""
 #: achtung
 msgid "Attention! Will be available soon at Communtu."
 msgstr ""
 #: helper_distributions_1
 msgid "non-free"
+msgstr ""
+#: blog_2
+msgid "Blog"
 msgstr ""
 #: view_home_derivatives_13
 msgid " - the PC becomes a VCR. Select \"Freak\" at \"Movie\" and it will be installed. Recommended: CPU with 2 GHz, 1024 MB-RAM, 10 GB free harddisk space for the frontend, at least 80 GB for the backend, a graphic card with at least 128 MB RAM and a TV Out and a supported TV card."
@@ -390,6 +402,9 @@ msgid "detailled information"
 msgstr ""
 #: view_metapackages__metalist_10
 msgid "Rating "
+msgstr ""
+#: announce
+msgid "announce"
 msgstr ""
 #: view_home_icons_10
 msgid "program"
@@ -1195,14 +1210,14 @@ msgstr ""
 #: view_home_derivatives_24
 msgid "Derivatives, which should be installed with the derivative installation-CD:"
 msgstr ""
+#: controller_debs_0
+msgid "Debian-packages"
+msgstr ""
 #: view_packages_new_4
 msgid "Source"
 msgstr ""
 #: view_categories_show_0
 msgid "Name: "
-msgstr ""
-#: controller_debs_0
-msgid "Debian-packages"
 msgstr ""
 #: view_home_derivatives_25
 msgid "http://en.wikipedia.org/wiki/Xfce"
@@ -1213,11 +1228,11 @@ msgstr ""
 #: view_packages_edit_8
 msgid "New link to a video"
 msgstr ""
-#: controller_home_1
-msgid "The e-mail has been sent to us. Many thanks for your message."
-msgstr ""
 #: controller_distributions_0
 msgid "Ubuntu distributions"
+msgstr ""
+#: controller_home_1
+msgid "The e-mail has been sent to us. Many thanks for your message."
 msgstr ""
 #: controller_metapackages_bundle_not_found
 msgid "Bundle not found."
