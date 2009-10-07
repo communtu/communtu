@@ -12,5 +12,8 @@ namespace :db do
     task :mirrorlist => :environment do
       Repository.write_mirror_list
     end
+    task :distributions => :environment do
+      Deb.write_conf_distributions
+    end
   end
 end
