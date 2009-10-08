@@ -854,7 +854,7 @@ p {
 /* div + blockelemente */
 /* buendel */
 .ubuntupakete{
-	position:absolute; 
+	position:relative; 
 	padding-left:0.8em;
 	padding-right:0.8em;
 	padding-top:0.5em;
@@ -862,7 +862,7 @@ p {
 	left:0px; 
 	top:15px;
 	width: 420px;
-	height: 620px;
+/*	height: 620px;*/
 	border:2px solid #C6C6C6;
 	}
 .neues_buendel{
@@ -874,7 +874,7 @@ p {
 	left:448px; 
 	top:-2px;
 	width: 420px;
-	height: 620px;
+/*	height: 620px; */
 	border:2px solid #C6C6C6;
 	}
 .editorh1{
