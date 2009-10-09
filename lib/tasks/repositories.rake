@@ -20,5 +20,6 @@ namespace :db do
         puts m.name
         system "grep \"Package: #{m.debian_name}\" #{RAILS_ROOT}/public/debs/dists/*/*/binary-i386/Packages |wc -l"
       end
+    end
   end
 end
