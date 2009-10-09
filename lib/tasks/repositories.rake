@@ -15,5 +15,10 @@ namespace :db do
     task :distributions => :environment do
       Deb.write_conf_distributions
     end
+    task :check_debs => :environment do
+      Metapackage.all.each do |m|
+        puts m.name
+        system "grep \"Package: #{m.debian_name}\" #{RAILS_ROOT}/public/debs/dists/*/*/binary-i386/Packages |wc -l"
+      end
   end
 end
