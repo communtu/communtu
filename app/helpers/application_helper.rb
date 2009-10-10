@@ -97,5 +97,17 @@ module ApplicationHelper
   def sent_messages?
     !current_user.sent_messages.find(:first).nil?
   end
+
+  def is_gnome?
+    !logged_in? or current_user.derivative.name=="Ubuntu"
+  end
+
+  def is_kde?
+    logged_in? and current_user.derivative.name=="Kubuntu"
+  end
+
+  def is_xfce?
+    logged_in? and current_user.derivative.name=="Xubuntu"
+  end
   
 end
