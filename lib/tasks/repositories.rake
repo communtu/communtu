@@ -16,9 +16,20 @@ namespace :db do
       Deb.write_conf_distributions
     end
     task :check_debs => :environment do
+      cnt = Distribution.count * Derivative.count * Package.license_types.size * Package.security_types.size
       Metapackage.all.each do |m|
-        puts m.name
-        system "grep \"Package: #{m.debian_name}\" #{RAILS_ROOT}/public/debs/dists/*/*/binary-i386/Packages |wc -l"
+        if !m.debianized_version.nil? then
+          cmd = "grep \"Package: #{m.debian_name}$\" #{RAILS_ROOT}/public/debs/dists/*/*/binary-i386/Packages |wc -l"
+          if (mcnt= IO.popen(cmd).map{|s| s}[0].to_i) != cnt then
+            puts "#{m.name} should have #{cnt.to_s} debian packages but has #{mcnt.to_s}"
+          end
+          if mcnt<cnt then
+            puts "Generating the missing debian packages"
+            m.modified = true
+            m.save
+            m.debianze
+          end
+        end
       end
     end
   end

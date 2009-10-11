@@ -45,7 +45,7 @@ class Deb < ActiveRecord::Base
       codename = self.codename
       mlic = meta.compute_license_type
       msec = meta.compute_security_type
-      version = "#{meta.version}-#{self.codename}1"
+      version = "#{meta.version}-#{self.codename}"
       f=File.open("#{RAILS_ROOT}/log/debianize.log","a")
       f.puts
       f.puts
@@ -59,6 +59,13 @@ class Deb < ActiveRecord::Base
       f.close
       
       begin
+        # look for a version that does not exist yet
+        v=1
+        while !IO.popen("#{REPREPRO} listfilter #{codename} \"Package (== #{name}), Version (== #{version+v.to_s})\"").read.empty?
+          v+=1
+        end
+        version += v.to_s
+
         # build metapackage
         debfile = Deb.makedeb(name,version,packages,meta.description,codename,Derivative.find(:first),[])
   
@@ -70,6 +77,7 @@ class Deb < ActiveRecord::Base
         # what license types and security types are actually used in the bundle?
         # use this info to determine the component
         component = Deb.components[[lic,mlic].min][[sec,msec].min]
+
         # upload metapackage
         # todo: make name of .deb unique
         puts "Uploading #{newfile}"
