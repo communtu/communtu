@@ -220,7 +220,7 @@ class Metapackage < BasePackage
         (0..1).each do |lic|
           (0..2).each do |sec|
             codename = Deb.compute_codename(dist,der,lic,sec)
-            version = "#{self.version}-#{codename}1"
+            version = "#{self.version}-#{codename}"
             deb = Deb.create({:metapackage_id => self.id, :distribution_id => dist.id, :derivative_id => der.id, 
                               :license_type => lic, :security_type => sec, :version => self.version,
                               :url => version, :generated => false})
@@ -235,6 +235,12 @@ class Metapackage < BasePackage
     # generate debian packages from debs
     Deb.find(:all,:conditions => ["metapackage_id = ? and version = ?",self.id,self.version]).each do |deb|
       deb.generate
+    end
+  end
+  
+  def self.fork_generate_debs
+    fork do
+      system 'echo "Metapackage.find('+self.id.to_s+').generate_debs" | script/console production'
     end
   end
   

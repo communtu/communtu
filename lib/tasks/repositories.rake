@@ -25,9 +25,12 @@ namespace :db do
           end
           if mcnt<cnt then
             puts "Generating the missing debian packages"
-            m.modified = true
-            m.save
-            m.debianze
+            if Deb.find(:first,:conditions => ["metapackage_id = ? and version = ?",m.id,m.version]).nil?
+              m.modified = true
+              m.save
+              m.debianze
+            end
+            m.fork_generate_debs
           end
         end
       end

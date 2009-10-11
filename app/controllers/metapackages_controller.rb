@@ -168,9 +168,7 @@ class MetapackagesController < ApplicationController
       flash[:notice] = t(:controller_metapackages_debianizing)
     else
       @metapackage.debianize
-      fork do
-        system 'echo "Metapackage.find('+@metapackage.id.to_s+').generate_debs" | script/console production'
-      end
+      @metapackage.fork_generate_debs
     end
     redirect_to :action => :show, :id => @metapackage.id
   end
