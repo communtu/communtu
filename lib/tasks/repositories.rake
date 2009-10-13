@@ -24,12 +24,13 @@ namespace :db do
             puts "#{m.name} should have #{cnt.to_s} debian packages but has #{mcnt.to_s}"
           end
           if mcnt<cnt then
-            puts "Generating the missing debian packages"
             if Deb.find(:first,:conditions => ["metapackage_id = ? and version = ? and generated = ?",m.id,m.version,false]).nil?
+              puts "Generating new debs"
               m.modified = true
               m.save
-              m.debianze
+              m.debianize
             end
+            puts "Generating the missing debian packages"
             m.fork_generate_debs
           end
         end
