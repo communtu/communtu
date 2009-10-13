@@ -238,7 +238,7 @@ class Metapackage < BasePackage
     end
   end
   
-  def self.fork_generate_debs
+  def fork_generate_debs
     fork do
       system 'echo "Metapackage.find('+self.id.to_s+').generate_debs" | script/console production'
     end
