@@ -34,7 +34,7 @@ class Deb < ActiveRecord::Base
   # generate debian package
   def generate
     # create a lock in order to avoid concurrent debianizations
-    safe_system "dotlockfile #{RAILS_ROOT}/debs/lock"
+    safe_system "dotlockfile -r 1000 #{RAILS_ROOT}/debs/lock"
     begin
       meta = self.metapackage
       dist = self.distribution

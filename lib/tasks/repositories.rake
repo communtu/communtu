@@ -30,6 +30,8 @@ namespace :db do
               m.save
               m.debianize
             end
+          end
+          if !Deb.find(:first,:conditions => ["metapackage_id = ? and generated = ?",m.id,false]).nil?
             puts "Generating the missing debian packages"
             m.fork_generate_debs
           end
