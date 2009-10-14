@@ -1,38 +1,4 @@
 <%= render_flash %>
 <%= link_to t(:back), { :controller => :distributions, :action => :show,\
 	:id => @repository.distribution_id }%>
-<% if !@info[:error].nil? then%>
-<div class="inner0">
-	<span class="headline"><%=t(:view_admins_sync_package_1)%></span><br>
-	<%= @info[:error]%>
-</div>
-
-<% elsif !@info[:notice].nil? then%>
-<div class="inner0">
-	<%= @info[:notice]%>
-</div>
-
-<% else %>
-<div class="inner0">
-<span class="headline"><%=t(:view_admins_sync_package_2)%></span>
-<ul>
-	<li><%=t(:view_admins_sync_package_3)%><%= @repository.name %></li>
-	<li><%=t(:repository_url)%><%= auto_link(@info["url"]) %></li>
-	<li><%=t(:total_packages)%><%= @info["package_count"] %></li>
-	<li><%=t(:new_packages)%><%= @info["new_count"] %></li>
-	<li><%=t(:updatedPackages)%><%= @info["update_count"] %></li>	
-</ul>
-<% if @info["failed"].size > 0%>
-<div class="inner1">
-<span class="headline"><%=t(:no_save_database)%></span>
-<ul>	
-	<% @info["failed"].each do |name|%>
-		<li><%= name %></li>
-	<% end %>
-</ul>	
-</div>
-<% end %> 
-
-<% end %> 
-
-</div>
+<%= render :partial => 'info', :object => @info %>

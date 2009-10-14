@@ -247,6 +247,7 @@ de:
   total_packages: "Pakete insgesamt: "
   trusted: Trusted
   ubuntu_derivatives: Ubuntu-Derivate
+  updatedPackages: "geänderte Pakete: "
   url: Url
   used_in_bundles: "Wird bei Communtu in folgenden Bündeln benutzt:"
   username: Benutzername
@@ -705,7 +706,7 @@ de:
   view_repositories_new_0: "Neues Repository für "
   view_repositories_new_4: "GPG Schlüssel (Optional)"
   view_repositories_show_0: Repository anzeigen
-  view_repositories_show_4: "Paketliste für i386:"
+  view_repositories_show_4: "Paketliste für {{arch}}:"
   view_repositories_show_6: "        OpenSource"
   view_repositories_show_7: "        kommerziell "
   view_roles_edit_0: Rolle bearbeiten

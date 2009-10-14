@@ -28,6 +28,7 @@ class User < ActiveRecord::Base
   belongs_to :distribution
   belongs_to :derivative
   belongs_to :language
+  belongs_to :architecture
   has_many :user_packages 
   has_many :selected_packages, :through => :user_packages, :source => :base_package, \
       :conditions => "user_packages.is_selected = '1'"    

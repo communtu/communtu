@@ -1,0 +1,16 @@
+<h1>Editing architecture</h1>
+
+<% form_for(@architecture) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @architecture %> |
+<%= link_to 'Back', architectures_path %>

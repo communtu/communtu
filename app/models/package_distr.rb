@@ -3,7 +3,8 @@ class PackageDistr < ActiveRecord::Base
   belongs_to :repository
   belongs_to :distribution
   has_many :dependencies, :dependent => :destroy
-  
+  has_many :package_distrs_architectures, :dependent => :destroy
+
   has_many :packages, :through => :dependencies, :source => :base_package
   has_many :depends, :through => :dependencies, :source => :base_package, \
     :conditions => 'dependencies.dep_type = 0'    

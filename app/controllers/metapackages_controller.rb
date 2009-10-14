@@ -187,7 +187,7 @@ class MetapackagesController < ApplicationController
     metapackage.destroy
 
     respond_to do |format|
-      format.html { redirect_to (user_path(current_user) + "/metapackages/0") }
+      format.html { redirect_to(user_path(current_user) + "/metapackages/0") }
       format.xml  { head :ok }
     end
   end
