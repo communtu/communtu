@@ -18,25 +18,27 @@ namespace :db do
     task :check_debs => :environment do
       cnt = Distribution.count * Derivative.count * Package.license_types.size * Package.security_types.size
       Metapackage.all.each do |m|
+        puts m.name
         if !m.debianized_version.nil? then
           cmd = "grep \"Package: #{m.debian_name}$\" #{RAILS_ROOT}/public/debs/dists/*/*/binary-i386/Packages |wc -l"
           if (mcnt= IO.popen(cmd).map{|s| s}[0].to_i) != cnt then
-            puts "#{m.name} should have #{cnt.to_s} debian packages but has #{mcnt.to_s}"
+            puts "  ... should have #{cnt.to_s} debian packages but has #{mcnt.to_s}"
           end
           if mcnt<cnt then
             if Deb.find(:first,:conditions => ["metapackage_id = ? and version = ? and generated = ?",m.id,m.version,false]).nil?
-              puts "Generating new debs"
+              puts "  ... generating new debs"
               m.modified = true
               m.save
               m.debianize
             end
           end
           if !Deb.find(:first,:conditions => ["metapackage_id = ? and generated = ?",m.id,false]).nil?
-            puts "Generating the missing debian packages"
+            puts "  ... generating the missing debian packages"
             m.fork_generate_debs
           end
         end
       end
+      return true
     end
   end
 end
