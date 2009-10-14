@@ -55,6 +55,7 @@ en:
   view_repositories_new_0: new repository for
   model_package_12: content of {{file}} does not match with repository-syntax
   view_users_index_2: " registered users."
+  updatedPackages: "Changed packages:"
   view_home_derivatives_11: " - Ubuntu multimedia-edition. This will be automatically installed when \"advanced\" is checked at audio, film and/or graphic/design."
   view_packages_show_19: "Conflicts with these packages (only those without a version):"
   lib_utils_0: "The followong system-command failed:"
@@ -169,7 +170,7 @@ en:
   view_packages_rdepends_1: " directly and indirectly contained packages"
   view_user_profiles__profile_data_10: " Only allow Ubuntu-sources (\"main/restricted\", very secure)"
   view_home_icons_17: external link
-  view_repositories_show_4: "package-list for i386:"
+  view_repositories_show_4: "Package-list for {{arch}}:"
   view_home_beteiligung_5: participate in the survey
   view_metapackages_show_save_3: To create a meta-package an English title is needed.
   view_user_profiles__profile_data_11: " Allow community-sources (\"universe/multiverse\", secure, more programs/better comfort):"
@@ -412,9 +413,9 @@ en:
   view_user_profiles__installation_17: Just click on the link and open the file and open it with the recommended package-installer.
   view_home_derivatives_24: "Derivatives, which should be installed with the derivative installation-CD:"
   view_home_derivatives_25: http://en.wikipedia.org/wiki/Xfce
+  controller_debs_0: Debian-packages
   view_packages_new_4: Source
   view_categories_show_0: "Name: "
-  controller_debs_0: Debian-packages
   view_home_derivatives_26: " - with the slim Xfce as the graphical interface. Particularly suitable for older computers: 128 MB RAM and 1,5 GB free hard disk space are sufficient. Should be installed from the CD to guarantee a slim installation. Post-installation can be done with Communtu."
   controller_debs_1: Deb created.
   controller_metapackages_bundle_not_found: Bundle not found.

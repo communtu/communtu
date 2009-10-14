@@ -239,6 +239,10 @@ msgstr "Bundle saved. It could take a couple of minutes until it is available as
 msgid "Inhalt von {{file}} entspricht nicht Repository-Syntax"
 msgstr "content of {{file}} does not match with repository-syntax"
 
+#: updatedPackages
+msgid "geänderte Pakete: "
+msgstr "Changed packages:"
+
 #: view_home_derivatives_11
 msgid " - Ubuntu Multimedie-Edition. Sie wird bei Communtu mitinstalliert, wenn du bei Audio, Film und/oder Grafik/Design \"erweitert\" anwählst."
 msgstr " - Ubuntu multimedia-edition. This will be automatically installed when \"advanced\" is checked at audio, film and/or graphic/design."
@@ -678,8 +682,8 @@ msgid " Auch Communityquellen zulassen (\"universe/multiverse\", auch sicher, me
 msgstr " Allow community-sources (\"universe/multiverse\", secure, more programs/better comfort):"
 
 #: view_repositories_show_4
-msgid "Paketliste für i386:"
-msgstr "package-list for i386:"
+msgid "Paketliste für {{arch}}:"
+msgstr "Package-list for {{arch}}:"
 
 #: view_metapackages_show_save_3
 msgid "Zum Erstellen des Metapakets muss ein englischer Titel vergeben werden."

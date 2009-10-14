@@ -178,6 +178,9 @@ msgstr ""
 #: view_users_index_2
 msgid " registered users."
 msgstr ""
+#: updatedPackages
+msgid "Changed packages:"
+msgstr ""
 #: view_home_derivatives_11
 msgid " - Ubuntu multimedia-edition. This will be automatically installed when \"advanced\" is checked at audio, film and/or graphic/design."
 msgstr ""
@@ -500,7 +503,7 @@ msgstr ""
 msgid "external link"
 msgstr ""
 #: view_repositories_show_4
-msgid "package-list for i386:"
+msgid "Package-list for {{arch}}:"
 msgstr ""
 #: view_home_beteiligung_5
 msgid "participate in the survey"
@@ -1210,14 +1213,14 @@ msgstr ""
 #: view_home_derivatives_24
 msgid "Derivatives, which should be installed with the derivative installation-CD:"
 msgstr ""
-#: controller_debs_0
-msgid "Debian-packages"
+#: view_categories_show_0
+msgid "Name: "
 msgstr ""
 #: view_packages_new_4
 msgid "Source"
 msgstr ""
-#: view_categories_show_0
-msgid "Name: "
+#: controller_debs_0
+msgid "Debian-packages"
 msgstr ""
 #: view_home_derivatives_25
 msgid "http://en.wikipedia.org/wiki/Xfce"
