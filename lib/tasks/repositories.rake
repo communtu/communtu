@@ -9,6 +9,13 @@ namespace :db do
         end
       end
     end
+    desc 'Synchronise all repositories.'
+    task :sync_all => :environment do
+      Repository.all.each do |r|
+          puts "Synchronising repository #{r.id}"
+          r.import_source
+      end
+    end
     task :mirrorlist => :environment do
       Repository.write_mirror_list
     end
