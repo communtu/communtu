@@ -236,11 +236,12 @@ class Metapackage < BasePackage
     Deb.find(:all,:conditions => ["metapackage_id = ? and version = ?",self.id,self.version]).each do |deb|
       deb.generate
     end
+    return true
   end
   
   def fork_generate_debs
     fork do
-      system 'echo "Metapackage.find('+self.id.to_s+').generate_debs" | script/console production'
+      system 'echo "Metapackage.find('+self.id.to_s+').generate_debs" | nohup script/console production'
     end
   end
   
