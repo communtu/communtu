@@ -46,81 +46,102 @@ class Deb < ActiveRecord::Base
       mlic = meta.compute_license_type
       msec = meta.compute_security_type
       version = "#{meta.version}-#{self.codename}"
+      # compute list of packages contained in metapackage
+      packages = {}
+      plist = nil
+      homogeneous = true
+      Architecture.all.each do |arch|
+        packages[arch] = meta.package_names_for_deb(dist,der,lic,sec,arch)
+        if plist.nil? then
+          plist = packages[arch]
+        elsif plist != packages[arch] then
+          homogeneous = false
+        end
+      end
+      if homogeneous then
+        architectures = [Architecture.find(:first)]
+      else
+        architectures = Architecture.all
+      end
+      # logging
       f=File.open("#{RAILS_ROOT}/log/debianize.log","a")
       f.puts
       f.puts
       f.puts "++++++++++++++++++++++ Processing version #{name}-#{version}"
       f.puts Time.now
       f.puts
-      # compute list of packages contained in metapackage 
-      packages = meta.package_names_for_deb(dist,der,lic,sec)
       f.puts "Included packages:"
-      f.puts packages.join(", ")
+      architectures.all.each do |arch|
+         f.puts (if homogeneous then arch.name else "" end)+": "+packages[arch].join(", ")
+      end
       f.close
-      
-      begin
-        # look for a version that does not exist yet
-        v=1
-        while !IO.popen("#{REPREPRO} listfilter #{codename} \"Package (== #{name}), Version (== #{version+v.to_s})\"").read.empty?
-          v+=1
-        end
-        version += v.to_s
 
-        # build metapackage
-        debfile = Deb.makedeb(name,version,packages,meta.description,codename,Derivative.find(:first),[])
-  
-        # make name of .deb unique by adding the codename
-        # newfile = debfile.gsub("_all.deb","~"+codename+"_all.deb")
-        # safe_system "mv #{debfile} #{newfile}"
-        newfile = debfile
+      # look for a version that does not exist yet
+      v=1
+      while !IO.popen("#{REPREPRO} listfilter #{codename} \"Package (== #{name}), Version (== #{version+v.to_s})\"").read.empty?
+        v+=1
+      end
+      version += v.to_s
 
-        # what license types and security types are actually used in the bundle?
-        # use this info to determine the component
-        component = Deb.components[[lic,mlic].min][[sec,msec].min]
+      architectures.each do |arch|
+        begin
+          # build metapackage
+          archname = if homogeneous then "all" else arch.name end
+          debfile = Deb.makedeb(name,version,packages[arch],meta.description,codename,Derivative.find(:first),[],archname)
 
-        # upload metapackage
-        # todo: make name of .deb unique
-        puts "Uploading #{newfile}"
-        safe_system "#{REPREPRO} -C #{component} includedeb #{codename} #{newfile} >> #{RAILS_ROOT}/log/debianize.log 2>&1"
-        # remove package files, but not folder
-        safe_system "rm #{RAILS_ROOT}/debs/#{name}/#{name}* >/dev/null 2>&1 || true"
-        # mark this deb as susccessfully generated
-        self.generated = true
-        self.errmsg = nil
-        self.log = IO.popen("tail -n80 #{RAILS_ROOT}/log/debianize.log").read
-        self.save
-        # was this the last deb to be generated for the bundle? Then mark bundle as updated
-        if Deb.find(:first,:conditions => ["metapackage_id = ? and generated = ?",meta.id,false]).nil?
-          meta.modified = false
-          meta.debianizing = false
-          meta.deb_error = false
+          # make name of .deb unique by adding the codename
+          # newfile = debfile.gsub("_all.deb","~"+codename+"_all.deb")
+          # safe_system "mv #{debfile} #{newfile}"
+          newfile = debfile
+
+          # what license types and security types are actually used in the bundle?
+          # use this info to determine the component
+          component = Deb.components[[lic,mlic].min][[sec,msec].min]
+
+          # upload metapackage
+          # todo: make name of .deb unique
+          puts "Uploading #{newfile}"
+          safe_system "#{REPREPRO} -C #{component} includedeb #{codename} #{newfile} >> #{RAILS_ROOT}/log/debianize.log 2>&1"
+          # remove package files, but not folder
+          safe_system "rm #{RAILS_ROOT}/debs/#{name}/#{name}* >/dev/null 2>&1 || true"
+          # mark this deb as susccessfully generated
+          self.generated = true
+          self.errmsg = nil
+          self.log = IO.popen("tail -n80 #{RAILS_ROOT}/log/debianize.log").read
+          self.save
+        rescue StandardError => err
+          self.generated = false
+          self.errmsg = err
+          self.log = IO.popen("tail -n80 #{RAILS_ROOT}/log/debianize.log").read
+          self.save
+          meta.deb_error = true
           meta.save
         end
-      rescue StandardError => err
+      end
+      # was this the last deb to be generated for the bundle? Then mark bundle as updated
+      if Deb.find(:first,:conditions => ["metapackage_id = ? and generated = ?",meta.id,false]).nil?
+        meta.modified = false
+        meta.debianizing = false
+        meta.deb_error = false
+        meta.save
+      end
+      rescue
         self.generated = false
-        self.errmsg = err
+        self.errmsg = "unknown"
         self.log = IO.popen("tail -n80 #{RAILS_ROOT}/log/debianize.log").read
         self.save
         meta.deb_error = true
         meta.save
+        f=File.open("#{RAILS_ROOT}/log/debianize.log","a")
+        f.puts
+        f.puts "Debianizing #{name} failed! (id = #{id})"
+        f.puts
+        f.close
       end
-    rescue 
-      self.generated = false
-      self.errmsg = "unknown"
-      self.log = IO.popen("tail -n80 #{RAILS_ROOT}/log/debianize.log").read
-      self.save
-      meta.deb_error = true
-      meta.save
-      f=File.open("#{RAILS_ROOT}/log/debianize.log","a")
-      f.puts
-      f.puts "Debianizing #{name} failed! (id = #{id})"
-      f.puts
-      f.close
-    end  
-    # cleanup
-    system "rm -r #{RAILS_ROOT}/debs/#{name}*"
-    # release lock
-    safe_system "dotlockfile -u #{RAILS_ROOT}/debs/lock"
+      # cleanup
+      system "rm -r #{RAILS_ROOT}/debs/#{name}*"
+      # release lock
+      safe_system "dotlockfile -u #{RAILS_ROOT}/debs/lock"
   end
 
   def self.makedeb_for_source_install(name,version,description,packages,distribution,derivative,license,security)
@@ -136,7 +157,7 @@ class Deb < ActiveRecord::Base
   end
 
   # create file 'control'
-  def self.write_control(name,package_names,description,version = nil)
+  def self.write_control(name,package_names,description,version = nil,archname = "all")
     f=File.open("control","w")
     if !version.nil? then
       f.puts "Package: #{name}"
@@ -153,7 +174,7 @@ class Deb < ActiveRecord::Base
     if version.nil? then
       f.puts "Package: #{name}"
     end
-    f.puts "Architecture: all"
+    f.puts "Architecture: #{archname}"
     if !package_names.empty? then
       f.puts "Depends: " + package_names.join(", ")
     end
@@ -171,7 +192,7 @@ class Deb < ActiveRecord::Base
 
   end
 
-  def self.makedeb(name,version,package_names,description,codename,derivative,repos)
+  def self.makedeb(name,version,package_names,description,codename,derivative,repos,archname = "all")
     Dir.chdir RAILS_ROOT+'/debs'
     if !File.exists?(name)
       Dir.mkdir name
@@ -200,7 +221,7 @@ class Deb < ActiveRecord::Base
     end
 
     # create file 'control'
-    Deb.write_control(name,package_names,description)
+    Deb.write_control(name,package_names,description,nil,archname)
 
     # create file 'changelog'
     f=File.open("changelog","w")

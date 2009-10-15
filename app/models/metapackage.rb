@@ -43,11 +43,11 @@ class Metapackage < BasePackage
   end
 
   # list of packages used for generation of debian metapackage
-  def package_names_for_deb(dist,der,lic,sec)
+  def package_names_for_deb(dist,der,lic,sec,arch)
       mcs = Metacontent.find(:all,:conditions =>
              ["metapackage_id = ? and metacontents_distrs.distribution_id = ? and metacontents_derivatives.derivative_id = ?",
               self.id,dist.id,der.id],:include => [:metacontents_distrs, :metacontents_derivatives])
-      packages = mcs.map{|mc| mc.base_package}.select{|p| p.is_present(dist,lic,sec)}.map{|p| p.debian_name}
+      packages = mcs.map{|mc| mc.base_package}.select{|p| p.is_present(dist,lic,sec,arch)}.map{|p| p.debian_name}
   end
 
   #conflicts within the bundle
@@ -113,7 +113,7 @@ class Metapackage < BasePackage
   end
 
   # this function is needed to complement is_present for class Package
-  def is_present(distribution,licence,security)
+  def is_present(distribution,licence,security,arch)
     true
   end
 
@@ -166,9 +166,10 @@ class Metapackage < BasePackage
 ## installation and creating debian metapackages
 
   def recursive_packages package_names, package_sources, dist, license, security
+    arch = Architecture.find(:first) # TODO: make this more generic
     self.base_packages.each do |p|
         if p.class == Package
-            reps = p.repositories_dist(dist).select{|r| r.security_type<=security && r.license_type<=license}
+            reps = p.repositories_dist(dist,arch).select{|r| r.security_type<=security && r.license_type<=license}
             if !reps.empty? then
               package_names.push(p.name)
               reps.each do |rep|
@@ -182,9 +183,10 @@ class Metapackage < BasePackage
   end
 
   def recursive_packages_sources package_sources, dist, license, security
+    arch = Architecture.find(:first) # TODO: make this more generic
     self.base_packages.each do |p|
         if p.class == Package
-            reps = p.repositories_dist(dist).select{|r| r.security_type<=security && r.license_type<=license}
+            reps = p.repositories_dist(dist,arch).select{|r| r.security_type<=security && r.license_type<=license}
             if !reps.empty? then
               reps.each do |rep|
                 if package_sources[rep].nil? then

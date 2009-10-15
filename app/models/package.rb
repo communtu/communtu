@@ -14,14 +14,16 @@ class Package < BasePackage
   has_many :distributions, :through => :package_distrs
   validates_presence_of :name
 
-  def repositories_dist(distribution)
+  def repositories_dist(distribution,arch)
     pds = PackageDistr.find(:all,:conditions=>["package_id = ? and distribution_id = ?",self.id,distribution.id])
+    #new version, use after database update
+    #pds = PackageDistr.find(:all,:conditions=>["package_id = ? and distribution_id = ? and package_distrs_architectures.architecture_id = ?",self.id,distribution.id,arch.id],:include => :package_distrs_architectures)
     return pds.map{|pd| pd.repository}
   end
 
-  def is_present(distribution,licence,security)
+  def is_present(distribution,licence,security,arch)
 #    PackageDistr.find(:all,:conditions=>["package_id = ? and distribution_id = ? and repositories.",self.id,distribution.id], :include => :repository)
-    !self.repositories_dist(distribution).select{|r| r.security_type<=security && r.license_type<=licence}.empty?
+    !self.repositories_dist(distribution,arch).select{|r| r.security_type<=security && r.license_type<=licence}.empty?
   end
 
   def unique_name(distribution)

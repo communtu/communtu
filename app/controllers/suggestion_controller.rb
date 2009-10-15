@@ -70,7 +70,7 @@ class SuggestionController < ApplicationController
     if check_login then return end
     Dir.chdir RAILS_ROOT
     package = Package.find(params[:pid])    
-    repos = package.repositories_dist(current_user.distribution)
+    repos = package.repositories_dist(current_user.distribution,current_user.architecture)
     name = BasePackage.debianize_name("communtu-add-sources-#{current_user.login}-#{package.name}")
     version = "0.1"
     description = t(:controller_suggestion_6)+package.name
@@ -128,120 +128,7 @@ class SuggestionController < ApplicationController
     send_file debfile, :type => 'application/x-debian-package'
   end
 
-  
-###########################################################################
-# installation via shell script
-###########################################################################
-  def install_new
-    dist = current_user.distribution
-    install_aux(current_user.selected_packages,dist,current_user.license,current_user.security,current_user.derivative)
-  end
-
-  def quick_install
-    dist = current_user.distribution
-    install_aux([Metapackage.find(params[:mid])],dist,current_user.license,current_user.security,current_user.derivative)
-  end
-
-  def install
-    packages = params[:post].map {|id,unused| Metapackage.find(id)}
-    dist = current_user.distribution
-    install_aux(packages,dist,current_user.license,current_user.security,current_user.derivative)
-  end
-
-  def install_aux(packages,dist,license,security,derivative)
-    sudo = derivative.sudo
-    dialog = derivative.dialog
-    script          = "#{sudo} echo\n"
-    script += "#!/bin/bash\n\n"
-    script += "APTLIST=\"/etc/apt/sources.list\"\n"
-    script += "APTPIN=\"/etc/apt/preferences\"\n\n"
-    
-    # generate list of packages, grouped by main bundles
-    script += "PACKAGES=\"\"\n"
-    sources = Set.[]
-    packages.each do |p|    
-        package_names   = []
-        p.recursive_packages package_names, sources, dist, license, security
-        script += "# "+t(:bundle)+": "+p.name+"\n"
-        script += "PACKAGES=$PACKAGES\""
-        package_names.each do |name|
-          script += name + " "
-        end
-    script += "\"\n\n"
-    end    
-    script += "\n\n"
-
-    #  sources
-    sources_line = ""
-    sources.each do |repo|
-        sources_line += repo.url + " " + repo.subtype + "*"
-    end
-    script += "SOURCES=\"#{sources_line}\"\n\n"
-
-    # generate question ot the user
-    if dialog == "zenity" then
-      script += "IFS=\"*\"\n"
-      script += "#{dialog} --list --width 500 --height 300 --title \""+ t(:controller_suggestion_11) + "\" " + 
-          "--text \""+ t(:controller_suggestion_12)+"\" --column \"Quelle\" $SOURCES\n"
-    elsif dialog == "kdialog" then
-      sources_lined = sources_line.gsub("*","\\n")
-      script += "SOURCESD=\"#{sources_lined}\"\n\n"
-      script += "#{dialog} --geometry 500x300 --title \""+ t(:controller_suggestion_11) + "\"" + 
-          "--yesno \"" + t(:controller_suggestion_12) + "\\n$SOURCESD\"\n"
-    end  
-    script += "\n"
-
-    script += "if [ $? != 0 ]; then\n\texit 0\nfi\n\n"
-    
-    if dialog == "zenity" then
-      script += "IFS=\" \"\n"
-      script += "#{dialog} --list --width 500 --height 300 --title \""+ t(:controller_suggestion_15) + "\" " +
-          "--text \"" + t(:controller_suggestion_16) + "\" --column \"Paket\" $PACKAGES \n"
-    elsif dialog == "kdialog" then
-      script += "#{dialog} --geometry 500x300 --title \"" + t(:controller_suggestion_15) + "\" " + 
-          "--yesno \"" + t(:controller_suggestion_16) + "\\n$PACKAGES\"\n"
-    end          
-    script += "\n"
-    
-    script += "if [ $? != 0 ]; then\n\texit 0\nfi\n\n"
-    
-    # add sources to /etc/apt/sources.list
-    script += "IFS=\"*\"\n"
-    script += "for source in $SOURCES; do\n"
-    script += "\tURL=$( echo $source | cut -d \" \" -f 2 )\n"
-    script += "\tDISTRIBUTION=$( echo $source | cut -d \" \" -f 3 )\n"
-    script += "\tCOMPONENT=$( echo $source | cut -d \" \" -f 4-6 )\n"
-    script += "\tegrep -q \"^[^#]*$URL.*$DISTRIBUTION([a-zA-Z-]* )*$COMPONENT($| )\" $APTLIST\n\n"
-    script += "\tif [ \"$?\" != \"0\" ]; then\n\t\tsudo sh -c \"echo $source >> $APTLIST\"\n"
-#    script += "\t\tsudo sh -c \"echo >> $APTPIN\"\n"
-#    script += "\t\tsudo sh -c \"echo \\\"Package: *\\\" >> $APTPIN\"\n"
-#    script += "\t\tsudo sh -c \"echo \\\"Pin: $source\\\" >> $APTPIN\"\n"
-#    script += "\t\tsudo sh -c \"echo \\\"Pin-Priority: 100\\\" >> $APTPIN\"\n"
-    script += "\tfi\n"
-    script += "done\n\n"
-
-    # add gpg keys
-    sources.each do |repository|
-      if not repository.gpgkey.nil?
-        if not repository.gpgkey.empty?
-          script += "sudo #{Deb::APT_KEY_COMMAND} #{Deb::KEYSERVER} #{repository.gpgkey}\n"
-        end
-      end   
-    end
-    script += "\n"
-    
-    # install packages
-    script += "IFS=\" \"\n"
-    script += "#{sudo} apt-get update\n"
-    script += "for package in $PACKAGES; do\n"
-    script += "\tsudo apt-get install -y $package\n" # here normal sudo due to -y option
-    script += "done\n"
-    
-    respond_to do |format|
-        format.text { send_data(script, :filename => "install.sh", :type => "text", :disposition => "attachment") }
-    end
-    
-  end
+ 
   
   def install_apt_url
     if check_login then return end
