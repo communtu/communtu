@@ -35,6 +35,21 @@ class Repository < ActiveRecord::Base
                        :gpgkey => gpgkey})
   end
 
+  # write repository list for usage with apt-mirror
+  def self.write_mirror_list
+    f = File.open("mirror.list","w")
+    f.puts "set nthreads     20"
+    f.puts "set _tilde 0"
+    Repository.all.each do |r|
+      ["i386","amd64"].each do |arch|
+        plain_url = r.url.gsub(/deb /,"")
+        f.puts "deb-#{arch} #{plain_url} #{r.subtype}"
+      end
+    end
+    f.puts "clean http://archive.ubuntu.com/ubuntu"
+    f.close
+  end
+
   def self.get_url_from_source source, arch
     parts = source.split " "
     if parts.length >= 3
@@ -71,6 +86,9 @@ class Repository < ActiveRecord::Base
 
   # import repository info from the url
   def import_source
+    # delete package_distrs of the repository; the are rebuilt later on
+    PackageDistr.destroy_all(:repository_id => self.id)
+
     infos = {}
     Architecture.all.each do |arch|
       infos[arch] = import_source_arch arch
@@ -78,7 +96,11 @@ class Repository < ActiveRecord::Base
     return infos
   end
 
-   def import_source_arch arch
+  protected
+  # these methods should not be called from outside, since they depend on proper preparation
+
+  # import repository for on architecture
+  def import_source_arch arch
 
       distribution_id = self.distribution_id
 
@@ -100,14 +122,6 @@ class Repository < ActiveRecord::Base
 
       info = { "package_count" => packages[:packages].size, "update_count" => 0, "new_count" => 0,\
         "failed" => [], "url" => url }
-
-      # delete packages that are no longer in the repository
-      pps = packages[:packages].values
-      self.package_distrs.each do |pd|
-        if !pps.include?(pd.package) then
-          pd.destroy
-        end
-      end
 
       # enter packages
       packages[:packages].each do |name,package|
@@ -191,6 +205,7 @@ class Repository < ActiveRecord::Base
       end # packages[:packages].each
       # enter dependency info - this must happen *after* creation of the packages!
       # do this only for the first architecture (usually i386)
+      # we generally only have a rough approximation of the dependencies
       if arch.id==1 then
         packages[:packages].each do |name,package|
           p = Package.find(:first, :conditions => ["name=?",name])
@@ -237,6 +252,7 @@ class Repository < ActiveRecord::Base
     end
   end
 
+  # parse Packages file
   def packages_to_hash url, arch
     if url.nil? then return {:error => I18n.t(:model_package_11)} end
     begin
@@ -301,17 +317,4 @@ class Repository < ActiveRecord::Base
      or option == "Filename"
   end
 
-  def self.write_mirror_list
-    f = File.open("mirror.list","w")
-    f.puts "set nthreads     20"
-    f.puts "set _tilde 0"
-    Repository.all.each do |r|
-      ["i386","amd64"].each do |arch|
-        plain_url = r.url.gsub(/deb /,"")
-        f.puts "deb-#{arch} #{plain_url} #{r.subtype}"
-      end
-    end
-    f.puts "clean http://archive.ubuntu.com/ubuntu"
-    f.close
-  end
 end
