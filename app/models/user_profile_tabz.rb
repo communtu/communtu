@@ -11,13 +11,8 @@ class UserProfileTabz < Tabz::Base
         looks_like "user_profiles/profile_data"
         with_data do
           if @user_data[:user].class==User then
-            @ratings = {}
-            @user_data[:user].user_profiles.each do |profile|
-              @ratings.store(profile.category_id, profile.rating!=0)
-            end
             set_to({:distributions => Distribution.find(:all),
                     :root => Category.find(1),
-                    :ratings => @ratings,
                     :dist_string => @user_data[:dist_string]})
           end
         end
@@ -28,7 +23,12 @@ class UserProfileTabz < Tabz::Base
         looks_like "user_profiles/profile_rating"
         with_data do
           if @user_data[:user].class==User then
+            @ratings = {}
+            @user_data[:user].user_profiles.each do |profile|
+              @ratings.store(profile.category_id, profile.rating!=0)
+            end
             set_to({ :root => Category.find(1), 
+                     :ratings => @ratings,
                      :selection => @user_data[:user].selected_packages, 
                      :distribution => @user_data[:user].distribution })
           end

@@ -23,10 +23,10 @@ module UserProfilesHelper
         return out
     end
 
-    def show_selection_subtree2 root, selection, depth
-        
+    def show_selection_subtree2 root, selection, rating, depth
+        # +check_box_tag("post[" + root.name + "]", 1, rating[root.id])
         out = "<div class='suggestionHeader'><ul class='suggestionHeader'>\n"
-            out += "<li class='suggestionCollapse'><img src='/images/add.png' width='10' height='10' onclick=\"['packages" + \
+            out += "<li class='suggestionCollapse'>"+"<img src='/images/add.png' width='10' height='10' onclick=\"['packages" + \
                 root.name + "'].each(Element.toggle)\"></li>\n"
             out += "<li class='suggestionHeader'><b>" + root.name + "</b></li>\n"
         out += "</ul></div>\n"
@@ -36,7 +36,7 @@ module UserProfilesHelper
         out += show_packages2 root.metapackages, selection
 
         root.children.each do |child|
-            out += show_selection_subtree2 child, selection, (depth + 1)
+            out += show_selection_subtree2 child, selection, rating, (depth + 1)
         end
 
         out += "</div>\n"
@@ -44,7 +44,7 @@ module UserProfilesHelper
         return out
     end
 
-    def show_suggestion2 root, selection
+    def show_suggestion2 root, selection, rating
         
         out = "<div class='suggestion'>\n"
         
@@ -53,7 +53,7 @@ module UserProfilesHelper
         end
 
         root.children.each do |child|
-           out += show_selection_subtree2 child, selection, 0
+           out += show_selection_subtree2 child, selection, rating, 0
         end
    
         return out + "</div>\n"

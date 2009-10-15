@@ -7,27 +7,6 @@
 
 <% form_tag user_user_profile_path(current_user) + "/update_data", options = {:name => "data", :method => :put} do %>
     <ol>	
-    <li><p><%=t(:view_user_profiles__profile_data_3)%><br>
-		<table><tr>
-		<% count = 0%>
-  <% main_categories = Category.find(:all, :conditions => {:parent_id => 1, :main => true}) %>
- <% main_categories.each do |child|%>
-		  <th align="left">
-		  <%= check_box_tag "categories[]", child.id, ratings[child.id] %>
-          <%= child.name %>
-          <% if child.link != nil %>
-          <% if child.link != "" %>
-          <%= link_to(image_tag("info_out_pfeil.png", :title => t(:view_user_profiles__profile_data_4), :alt => t(:view_user_profiles__profile_data_4), :border => '0'), child.link, :target => '_blank') %>
-          <% end %>
-          <% end %>
-		  </th>
-		  <% count += 1%>
-		  <% if count % 3 == 0 then  %>
-		     </tr><tr>
-		  <% end %> 	
-		<% end %>
-		</tr>
-		</table></li>
      <li><p><%=t(:view_user_profiles__profile_data_6)%><%= link_to(t(:view_user_profiles__profile_data_7),'/user_profiles/help')%><br />
 		<% if !dist_string.nil? %>
 <%=t(:view_user_profiles__profile_data_8)%><%= dist_string %>
@@ -81,7 +60,6 @@
         </div></li>
 	</ol>
     <div style="margin-top:20px;">
-        <%= submit_tag t(:save), :name => "install" %>
-        <%= submit_tag t(:view_user_profiles__profile_data_17), :name => "choose" %>
+        <%= submit_tag t(:save), :name => "choose" %>
     </div>
 <% end %>

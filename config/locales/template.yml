@@ -134,6 +134,7 @@ de:
   email_with_colon: "E-Mail: "
   email_without_colon: E-Mail
   feedback: Kommentar
+  fine_selection: "Feinauswahl"
   four_and_fourty_letters: Zwischen 4 und 40 Zeichen
   gpg_key: "GPG Schlüssel (optional): "
   helper_distributions_0: free
@@ -200,7 +201,7 @@ de:
   model_user_meta_tabz_2: Ubuntu-Pakete
   model_user_meta_tabz_3: "Veröffentlichte Bündel"
   model_user_profile_tabz_0: Grunddaten
-  model_user_profile_tabz_1: Detailauswahl
+  model_user_profile_tabz_1: Softwareauswahl
   model_user_profile_tabz_3: "Installation durchführen"
   model_user_profile_tabz_4: Voreinstellungen
   model_user_profile_tabz_5: Durchführen
@@ -233,7 +234,10 @@ de:
   published: "veröffentlicht"
   register: Registrieren
   repository_url: "Repository-URL: "
+  rough_selection: "Grobauswahl"
   save: Speichern
+  save_fine: Feinauswahl speichern
+  save_rough: Grobauswahl speichern
   security_type: "Sicherheitstyp:"
   senden: Abschicken
   show: Anzeigen
@@ -440,7 +444,7 @@ de:
   view_home_derivatives_56: http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix
   view_home_derivatives_57: "für Subnotebooks/EEE-PCs"
   view_home_derivatives_5: "Alle Derivate können unter der "
-  view_home_derivatives_6: Installations-Feinauswahl
+  view_home_derivatives_6: Software-Auswahl
   view_home_derivatives_7: "unter der Kategorie \"Derivate\" zur Installation ausgewählt werden."
   view_home_derivatives_8: Ebenso kannst du dort nachgucken, aus welchen Paketen ein Derivat besteht.
   view_home_derivatives_9: "Über Communtu sinnvoll nachinstallierbare Derivate:"
@@ -770,19 +774,18 @@ de:
   view_user_profiles__profile_data_14: " Freie Software (Quellen liegen offen und dürfen weiterentwickelt werden)"
   view_user_profiles__profile_data_15: " Unfreie Lizenzen zulassen (auch kostenlos, aber Quellen liegen nicht offen - der weiche Übergang zu Linux: "
   view_user_profiles__profile_data_17: "Speichern und feiner auswählen"
-  view_user_profiles__profile_data_1: "Auf dieser Seite kannst du in vier einfachen Schritten deine Ubuntu-Nachinstallation auswählen - fertig.  \
-    Wenn gewünscht, ist aber auch eine detailliertere Auswahl möglich. "
-  view_user_profiles__profile_data_2: "Achtung: zum Schluss unten auf einen der 'Speichern'-Knöpfe klicken!"
+  view_user_profiles__profile_data_1: "Auf dieser Seite kannst du die Grundeinstellungen deines Computers angeben. "
+  view_user_profiles__profile_data_2: "Achtung: zum Schluss unten auf den 'Speichern'-Knopf klicken!"
   view_user_profiles__profile_data_3: "Welche Aufgaben willst du mit deinem Computer erledigen? (um grob eine Auswahl zu treffen, Feineinstellungen später möglich)"
   view_user_profiles__profile_data_4: Weitere Informationen
   view_user_profiles__profile_data_6: "Wähle bitte deine Ubuntu-Version aus. "
   view_user_profiles__profile_data_7: Wie stelle ich die Version fest?
   view_user_profiles__profile_data_8: "Über den Browser festgestellte Version: "
   view_user_profiles__profile_data_9: Hier kannst du einstellen, wie sicher bzw. komfortabel deine Installationsquellen sein sollen
-  view_user_profiles__profile_rating_0: "Feinauswahl der zu installierenden Programmbündel und Programme"
+  view_user_profiles__profile_rating_0: "Auswahl der zu installierenden Programmbündel und Programme"
   view_user_profiles__profile_rating_1: "Hier kannst du deine beabsichtigte Computer-Nutzung noch genauer angeben. \nDurch Klicken auf "
   view_user_profiles__profile_rating_2: " lässt \nsich ein Bereich ein- oder ausklappen."
-  view_user_profiles__profile_rating_3: Achtung! Zum Schluss auf "Speichern" klicken.
+  view_user_profiles__profile_rating_3: Achtung! Zum Schluss auf "Feinauswahl speichern" klicken.
   view_user_profiles__sources_0: "Quellen für die zu installierenden Programme"
   view_user_profiles__sources_1: "Hier werden die zu installierenden Programme und Pakete nach den zugehörigen \
     Quellen sortiert aufgelistet, so dass du auch sehen kannst, weshalb die jeweiligen \

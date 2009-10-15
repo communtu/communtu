@@ -1,17 +1,44 @@
-<h3><%=t(:view_user_profiles__profile_rating_0)%></h3>
+<h2><%=t(:view_user_profiles__profile_rating_0)%></h2>
 
 <%= error_messages_for :user_profile %>
 
-
-<p><%=t(:view_user_profiles__profile_rating_1)%><img src='/images/add.png' width='10' height='10'><%=t(:view_user_profiles__profile_rating_2)%></p>
-
-<p><b><%=t(:view_user_profiles__profile_rating_3)%></b></p>
 <% form_tag(user_user_profile_path(current_user) + "/update_ratings", options = {:name => "ratings", :method => :put}) do %>
+
+<h3><%=t(:rough_selection)%></h3>
+<p><%=t(:view_user_profiles__profile_data_3)%><br>
+		<table><tr>
+		<% count = 0%>
+  <% main_categories = Category.find(:all, :conditions => {:parent_id => 1, :main => true}) %>
+ <% main_categories.each do |child|%>
+		  <th align="left">
+		  <%= check_box_tag "categories[]", child.id, ratings[child.id] %>
+          <%= child.name %>
+          <% if child.link != nil %>
+          <% if child.link != "" %>
+          <%= link_to(image_tag("info_out_pfeil.png", :title => t(:view_user_profiles__profile_data_4), :alt => t(:view_user_profiles__profile_data_4), :border => '0'), child.link, :target => '_blank') %>
+          <% end %>
+          <% end %>
+		  </th>
+		  <% count += 1%>
+		  <% if count % 3 == 0 then  %>
+		     </tr><tr>
+		  <% end %>
+		<% end %>
+		</tr>
+		</table></p>
+    <div style="margin-top:20px;">
+        <%= submit_tag t(:save_rough), :name => "rough" %>
+    </div>
+<br>
+<h3><%=t(:fine_selection)%></h3>
+
+<p><%=t(:view_user_profiles__profile_rating_1)%><img src='/images/add.png' width='10' height='10'><%=t(:view_user_profiles__profile_rating_2)%>
+<b><%=t(:view_user_profiles__profile_rating_3)%></b></p>
     <div> 
-        <%= show_suggestion2(root, selection) %>
+        <%= show_suggestion2(root, selection, ratings) %>
     </div> 
     <div style="margin-top:20px;">
-        <%= link_to t(:save), "javascript:document.ratings.submit();" %>
+        <%= submit_tag t(:save_fine), :name => "fine" %>
     </div>
 <% end %>
 
