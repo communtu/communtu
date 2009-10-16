@@ -15,7 +15,7 @@
         <% distrib_options = "" %>
         <% distributions.each do |distribution| %>
             <% distrib_options << "<option value='" + distribution.id.to_s + "'" + 
-                                  ((logged_in? and current_user.distribution_id==distribution.id) ? "selected='selected'" : "") + ">" + 
+                                  ((current_user.distribution_id==distribution.id) ? "selected='selected'" : "") + ">" + 
                                   distribution.name + "</option>" %>
         <% end %>
         
@@ -60,6 +60,6 @@
         </div></li>
 	</ol>
     <div style="margin-top:20px;">
-        <%= submit_tag t(:save_fine), :name => "choose" %>
+        <%= submit_tag t(:save), :name => "choose" %>
     </div>
 <% end %>

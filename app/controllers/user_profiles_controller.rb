@@ -55,7 +55,7 @@ class UserProfilesController < ApplicationController
     user.profile_changed = true
     user.save!
     uid = user.id
-    if !params[:rough].nil? # update rough selection
+    if (!params[:rough].nil?) or (!params[:rough_install].nil?) # update rough selection
       # get the list of categories selected via checkboxes
       if params[:categories].nil? then
         cats = []
@@ -85,7 +85,11 @@ class UserProfilesController < ApplicationController
         end
       end
     end
-    redirect_to user_user_profile_path(current_user) + "/refine"
+    if (!params[:rough_install].nil?) or (!params[:fine_install].nil?) then
+      redirect_to user_user_profile_path(current_user) + "/tabs/1"
+    else
+      redirect_to user_user_profile_path(current_user) + "/tabs/0"
+    end
   end
 
 end

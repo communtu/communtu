@@ -2,7 +2,7 @@ require 'user_meta_tabz'
 
 class UsersController < ApplicationController
   
-  DEFAULT_DISTRO = 2 # Hardy
+  DEFAULT_DISTRO = 4 # Jaunty
   DEFALUT_DERIVATIVE = 1 # Ubuntu
   def title
     t(:match_ubuntu)
@@ -35,8 +35,9 @@ class UsersController < ApplicationController
   def create
     cookies.delete :auth_token
     @user = User.new(params[:user])
+    browser_dist = Distribution.browser_distribution(request.env['HTTP_USER_AGENT'])
+    set_dist(@user)
     @user.derivative_id = DEFALUT_DERIVATIVE
-    @user.distribution_id = DEFAULT_DISTRO 
     @user.enabled = true
     @user.activation_code = nil
     @user.activated_at = Time.now    
@@ -73,8 +74,9 @@ class UsersController < ApplicationController
     end
     @user = User.new(:login => login, :email => login+"@example.org",
                 :password => login, :password_confirmation => login)
+    browser_dist = Distribution.browser_distribution(request.env['HTTP_USER_AGENT'])
+    set_dist(@user)
     @user.derivative_id = DEFALUT_DERIVATIVE
-    @user.distribution_id = DEFAULT_DISTRO
     @user.enabled = true
     @user.anonymous = true
     @user.activation_code = nil
@@ -162,5 +164,14 @@ class UsersController < ApplicationController
   
   def desc   
   end
- 
+
+  def set_dist(user)
+    browser_dist = Distribution.browser_distribution(request.env['HTTP_USER_AGENT'])
+    if browser_dist.nil? then
+      user.distribution_id = DEFAULT_DISTRO
+    else
+      user.distribution_id = browser_dist.id
+    end
+    user.save
+  end
 end

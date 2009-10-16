@@ -30,9 +30,23 @@ class Distribution < ActiveRecord::Base
       index = s.index(")")
       if !index.nil? then
         s = s[0,index+1]
-      end  
-    end  
+      end
+    end
     return s
+  end
+
+  def self.browser_distribution(s)
+    s1 = Distribution.browser_info(s)
+    if s1.nil? then
+      return nil
+    end
+    s1 = s1.downcase
+    Distribution.all.each do |d|
+      if !s1.index(d.short_name.downcase).nil? then
+        return d
+      end
+    end
+    return nil
   end
   
   protected

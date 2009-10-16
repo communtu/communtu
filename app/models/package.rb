@@ -121,6 +121,10 @@ class Package < BasePackage
     security_types  = [ I18n.t(:native), I18n.t(:trusted), I18n.t(:third_party) ]
   end
 
+    def self.show_security_type(t)
+    if t.nil? then I18n.t(:model_package_2) else security_types[t] end
+  end
+
   def installedsize(dist)
     pd = PackageDistr.find(:first,:conditions => {:package_id => self.id, :distribution_id => dist.id})
     if pd.nil? 

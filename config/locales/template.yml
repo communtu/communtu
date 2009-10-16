@@ -22,6 +22,7 @@ de:
   category_with_colon: "Kategorie:"
   category_without_colon: Kategorie
   changed_settings: "Dieser Schritt muss neu ausgeführt werden, weil du die Einstellungen geändert hast."
+  change: ändern
   change_passwd: "Passwort ändern"
   chat: Chat
   chat_channel: de-communtu
@@ -185,11 +186,11 @@ de:
   model_mailer_4: "Dein Passwort wurde zurückgesetzt."
   model_mailer_5: Vorschlag eines Repositorys
   model_message_0: Bitte einen Betreff angeben
-  model_package_0: OpenSource
+  model_package_0: Freie Software
   model_package_10: "Bei der Synchronisation des Repositories {{repo_name}} konnte das Paket {{package_name}} nicht gefunden werden."
   model_package_11: Konnte keine URL feststellen
   model_package_12: "Inhalt von {{file}} entspricht nicht Repository-Syntax"
-  model_package_1: Commercial
+  model_package_1: Frei+proprietär
   model_package_2: Unbekannt
   model_package_6: <br> hat nicht das richtige Format
   model_package_7: "Konnte URL für {{repo}} nicht feststellen"
@@ -204,11 +205,10 @@ de:
   model_user_profile_tabz_1: Softwareauswahl
   model_user_profile_tabz_3: "Installation durchführen"
   model_user_profile_tabz_4: Voreinstellungen
-  model_user_profile_tabz_5: Durchführen
+  model_user_profile_tabz_5: Installieren
   name_with_colon: "Name: "
   name_without_colon: Name
-  native: Nativ
-  native: Native
+  native: nur Ubuntu
   natur_geist_und_technik: "Natur, Geist und Technik - Verein zur Förderung der Allgemeinbildung e.V."
   new_bundle: "Neues Bündel"
   new_category: Neue Kategorie
@@ -237,19 +237,22 @@ de:
   rough_selection: "Grobauswahl"
   save: Speichern
   save_fine: Feinauswahl speichern
+  save_fine_install: Feinauswahl speichern und installieren
   save_rough: Grobauswahl speichern
+  save_rough_install: Grobauswahl speichern und installieren
   security_type: "Sicherheitstyp:"
   senden: Abschicken
+  settings: Einstellungen
   show: Anzeigen
   sources: Quellen
   subject_with_colon: "Betreff: "
   subject_without_colon: Betreff
   subtype: "Subtyp:"
   superior_category: "Übergeordnete Kategorie"
-  third_party: Third-Party
+  third_party: alle Anbieter
   to_chat: zum Chat
   total_packages: "Pakete insgesamt: "
-  trusted: Trusted
+  trusted: Ubuntu+Community
   ubuntu_derivatives: Ubuntu-Derivate
   updatedPackages: "geänderte Pakete: "
   url: Url

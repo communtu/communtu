@@ -1,5 +1,6 @@
 <h2><%=t(:view_user_profiles__installation_0)%></h2>
 <%= render_flash %>
+<%= render :partial => 'box' %>
 <% if current_user.profile_changed  %>  
                   <% if current_user.profile_version > 1 %> 
                      <p><%=t(:changed_settings)%></p><p>----------</p><% end %>  

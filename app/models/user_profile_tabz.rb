@@ -6,18 +6,6 @@ class UserProfileTabz < Tabz::Base
 
     resides_in "/users/:user_id/user_profile/tabs"
     
-    add_tab do 
-        titled I18n.t(:model_user_profile_tabz_0)
-        looks_like "user_profiles/profile_data"
-        with_data do
-          if @user_data[:user].class==User then
-            set_to({:distributions => Distribution.find(:all),
-                    :root => Category.find(1),
-                    :dist_string => @user_data[:dist_string]})
-          end
-        end
-    end
-    
     add_tab do
         titled I18n.t(:model_user_profile_tabz_1)
         looks_like "user_profiles/profile_rating"
@@ -36,6 +24,28 @@ class UserProfileTabz < Tabz::Base
     end
     
     add_tab do
+        titled I18n.t(:model_user_profile_tabz_3)
+        looks_like "user_profiles/installation"
+        with_data do
+          if @user_data[:user].class==User then
+            set_to({ :metas => @user_data[:user].selected_packages.uniq.map{|m| m.debian_name}.join(",")})
+          end
+        end
+    end
+
+    add_tab do
+        titled I18n.t(:model_user_profile_tabz_0)
+        looks_like "user_profiles/profile_data"
+        with_data do
+          if @user_data[:user].class==User then
+            set_to({:distributions => Distribution.find(:all),
+                    :root => Category.find(1),
+                    :dist_string => @user_data[:dist_string]})
+          end
+        end
+    end
+
+    add_tab do
         titled I18n.t(:sources)
         looks_like "user_profiles/sources"
         with_data do
@@ -45,20 +55,10 @@ class UserProfileTabz < Tabz::Base
             license = @user_data[:user].license
             security = @user_data[:user].security
             sources = {}
-            metas.each do |p|    
+            metas.each do |p|
               p.recursive_packages_sources sources, dist, license, security
             end
             set_to({ :sources => sources})
-          end
-        end
-    end
-    
-    add_tab do
-        titled I18n.t(:model_user_profile_tabz_3)
-        looks_like "user_profiles/installation"
-        with_data do
-          if @user_data[:user].class==User then
-            set_to({ :metas => @user_data[:user].selected_packages.uniq.map{|m| m.debian_name}.join(",")})
           end
         end
     end

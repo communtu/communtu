@@ -2,6 +2,7 @@
 
 <%= error_messages_for :user_profile %>
 
+<%= render :partial => 'box' %>
 <% form_tag(user_user_profile_path(current_user) + "/update_ratings", options = {:name => "ratings", :method => :put}) do %>
 
 <h3><%=t(:rough_selection)%></h3>
@@ -28,7 +29,9 @@
 		</table></p>
     <div style="margin-top:20px;">
         <%= submit_tag t(:save_rough), :name => "rough" %>
+        <%= submit_tag t(:save_rough_install), :name => "rough_install" %>
     </div>
+
 <br>
 <h3><%=t(:fine_selection)%></h3>
 
@@ -39,6 +42,7 @@
     </div> 
     <div style="margin-top:20px;">
         <%= submit_tag t(:save_fine), :name => "fine" %>
+        <%= submit_tag t(:save_fine_install), :name => "fine_install" %>
     </div>
 <% end %>
 
