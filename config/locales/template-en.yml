@@ -22,6 +22,7 @@ en:
   view_home_beteiligung_13: Since we have many ideas for the platform's further development, we need programmers. Ideally you already have some experience with Ruby on Rails.
   view_accounts_edit_1: old password
   view_home_about_13: Post-installation of single functions
+  ~: ivat
   view_packages_show_15: source/repository
   view_home_faq_06: Click on "Bundle" and then you have to click "New Bundle". In the left box you can choose packages and add them to the bundle. When finished, you have to click on the "Save"-symbol in the bundle-editor. Now a new window appears in the main-window where you have to enter a meaningful name and a description. Don't forget to assign your bundle to a category.
   view_home_beteiligung_14: "We can also help you to learn this programming-language. You just have to contact "
@@ -221,7 +222,7 @@ en:
   view_home_derivatives_40: " - for portable internet devices."
   view_home_about_6: "  (This does not appear until"
   lib_system_1: You are not privileged to do this.
-  model_user_profile_tabz_1: Detailed choice
+  model_user_profile_tabz_1: Software selection
   passwd: Password
   view_cart_new_from_list_0: Create bundle from a packages-list
   controller_metapackages_not_changed: This bundle is already created as a metapackage and uploaded.
@@ -247,6 +248,8 @@ en:
   view_cart_new_from_list_3: " can be found with the above-mentioned command. (For this, the package {{debfoster}} has to be install. The created list only contains a minimal list of (meta-)packages which are necessary to rebuild your installation.)"
   view_home_derivatives_44: " - minimalist and fast version of Ubuntu for older PCs."
   view_home_about_9: "Important: a fast internet-connection is needed. For Ubuntu-users with a slow internet-connection, e. g. a modem, we intend to introduce a feature to create CDs and DVDs automatically."
+  save_rough: Save rough selection
+  rough_selection: Rough selection
   controller_users_8: user deactivated
   view_categories_index_12: show category-tree
   controller_accounts_6: An error occured. The password has not been changed.
@@ -309,14 +312,14 @@ en:
   view_home_new_repository_0: Suggest repository
   view_packages__deps_0: none
   view_layouts_application_25: COMMUNTU
-  view_user_profiles__profile_data_1: "On this page you can prepare the post-installation for your Ubuntu installation in four easy steps. If desired, you can choose the bundles in a detailed overview. "
+  view_user_profiles__profile_data_1: On this page you can enter the basic settings of your computer.
   view_rating_show_title_ratings_count: (Based on {{votes}} rating(s))
   view_home_faq_10: Click on "Bundles" -> "My bundles", which shows you your bundles, and then you click on the bundle you want to change. All important information concerning this bundle is now shown. With a click on "Actions" you can edit the bundle or the package-list. If the bundle is not published, you can delete it or publish the bundle, if you would like to do so.
   view_home_derivatives_4: " and many Ubuntu-users may ask themselves if they should use a derivative instead of Ubuntu. The answer is: normally the standard version of Ubuntu is completely sufficiant because with Communtu it is quite easy to install a derivative. However, this is not always a wise decision."
   view_home_new_repository_1: You're missing some sources? You can suggest a repository to us.
   view_packages__deps_1: "          Only for "
   view_layouts_application_26: Navigation bundle
-  view_user_profiles__profile_data_2: "Attention: when finished, don't forget to click on one of the \"Save\"-buttons!"
+  view_user_profiles__profile_data_2: "Attention: when finished, don't forget to click on the \"Save\"-button!"
   view_rating_show_title_no_ratings: no user rating
   model_user_meta_tabz_0: My bundles
   view_home_faq_11: How do I save the program-list of my system?
@@ -334,7 +337,7 @@ en:
   view_home_faq_12: After a click on "Bundle" and "New bundle" you can find the link "Create bundle from a packages-list". A new page is loaded with instructions on how to upload your package-list to Communtu.
   view_debs_index_1: Go back to the Communtu-menu
   licence: "Licence:"
-  view_home_derivatives_6: detailed selection
+  view_home_derivatives_6: Software selection
   view_home_cancel_0: |-
     Communtu -
      something went wrong while donating.
@@ -414,8 +417,8 @@ en:
   view_home_derivatives_24: "Derivatives, which should be installed with the derivative installation-CD:"
   view_home_derivatives_25: http://en.wikipedia.org/wiki/Xfce
   controller_debs_0: Debian-packages
-  view_packages_new_4: Source
   view_categories_show_0: "Name: "
+  view_packages_new_4: Source
   view_home_derivatives_26: " - with the slim Xfce as the graphical interface. Particularly suitable for older computers: 128 MB RAM and 1,5 GB free hard disk space are sufficient. Should be installed from the CD to guarantee a slim installation. Post-installation can be done with Communtu."
   controller_debs_1: Deb created.
   controller_metapackages_bundle_not_found: Bundle not found.
@@ -442,6 +445,7 @@ en:
   view_metapackages__package_list_0: "Total size of bundle on disk:"
   view_user_mailer_reset_password_0: ", you have received a new password."
   controller_home_4: A file with the package list (one package name per line) has to be given
+  fine_selection: Fine selection
   view_home_home_20: " to create a new user or"
   view_metapackages__package_list_1: "available for:"
   view_users__sidebar_1: Administrate bundles
@@ -654,7 +658,7 @@ en:
   view_mailbox_show_5: You do not have any messages in your inbox.
   view_repositories_multinew_0: read
   view_roles_new_0: New role
-  view_user_profiles__profile_rating_3: Attention! When finished, don't forget to click on "Save".
+  view_user_profiles__profile_rating_3: Attention! When finished, don't forget to click on "Save fine selection".
   promote_chat: You can look if one of us is currently in the chat and talk with us.
   senden: Send
   view_home_faq_24: This can be done with Synaptic. To reach Synaptic in a Gnome-based system, you open the menu "System" -> "Administration" -> "Synaptic Package Manager". To reach Synaptic in a KDE-based system, you open the K-menu and then navigate to "Programs" -> "System" -> "Administration" -> "Software Management". Next you choose the menu-entry "Origin" in the lower-left corner. In the list, which now appears above this section of Synaptic, you choose the entry "packages.communtu.de". In the main-part of Synaptic, on the right side of the program-window, you now have a list of the installed metapackages. To remove a metapackage you right-click it and choose "Mark for Removal". To finish the removal of a metapackage you now have just to click on "Apply" in the menu-bar above. However, the packages contained in this metapackage will not be removed! To remove these you have to choose the packages with Synaptic and remove them individually.
@@ -666,6 +670,7 @@ en:
   view_home_home_bundle: Preconfigured and published bundles in Communtu
   view_user_profiles__installation_20: This step has already been carried out.
   kontodaten: "Bank-account: 172 9375, Sparkasse Bremen, Bank-number 290 501 01"
+  save_fine: Save fine selection
   description_with_colon: "Description:"
   view_home_icons_0: icons used in Communtu
   view_packages_show_5: add sources for this package

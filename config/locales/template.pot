@@ -662,7 +662,7 @@ msgstr ""
 msgid "werden zu dem System hinzugefügt."
 msgstr ""
 #: model_user_profile_tabz_1
-msgid "Detailauswahl"
+msgid "Softwareauswahl"
 msgstr ""
 #: passwd
 msgid "Passwort"
@@ -732,6 +732,12 @@ msgid " - minimalistische schnelle Ubuntu-Version für ältere PCs."
 msgstr ""
 #: view_home_about_9
 msgid "Wichtig: Man braucht schon eine schnelle Internet-Verbindung. Für Ubuntu-Nutzer, die noch ein Modem oder ähnliches nutzen, planen wir die Möglichkeit, automatisch CDs und DVDs zu erstellen."
+msgstr ""
+#: save_rough
+msgid "Grobauswahl speichern"
+msgstr ""
+#: rough_selection
+msgid "Grobauswahl"
 msgstr ""
 #: controller_users_8
 msgid "Benutzer deaktiviert"
@@ -917,7 +923,7 @@ msgstr ""
 msgid "http://wiki.ubuntuusers.de/Was_ist_Linux?#Was-sind-Derivate-einer-Distribution"
 msgstr ""
 #: view_user_profiles__profile_data_1
-msgid "Auf dieser Seite kannst du in vier einfachen Schritten deine Ubuntu-Nachinstallation auswählen - fertig.  Wenn gewünscht, ist aber auch eine detailliertere Auswahl möglich. "
+msgid "Auf dieser Seite kannst du die Grundeinstellungen deines Computers angeben. "
 msgstr ""
 #: view_rating_show_title_ratings_count
 msgid "(Basierend auf {{votes}} Bewertung(en))"
@@ -938,7 +944,7 @@ msgstr ""
 msgid ", und viele Ubuntu-Nutzer fragen sich,  ob sie statt Ubuntu lieber ein Derivat benutzen sollten. Die Antwort ist: meistens fährt man mit dem Standard-Ubuntu ganz gut, denn Communtu erlaubt, die Derivate auf einfache Weise nachzuinstallieren.  Allerdings ist das nicht bei allen Derivaten gleich sinnvoll."
 msgstr ""
 #: view_user_profiles__profile_data_2
-msgid "Achtung: zum Schluss unten auf einen der 'Speichern'-Knöpfe klicken!"
+msgid "Achtung: zum Schluss unten auf den 'Speichern'-Knopf klicken!"
 msgstr ""
 #: view_sent_index_3
 msgid "Zeitpunkt"
@@ -998,7 +1004,7 @@ msgstr ""
 msgid "Lizenztyp:"
 msgstr ""
 #: view_home_derivatives_6
-msgid "Installations-Feinauswahl"
+msgid "Software-Auswahl"
 msgstr ""
 #: view_home_cancel_0
 msgid "Communtu -\n leider hat da etwas beim Spenden nicht funktioniert."
@@ -1308,6 +1314,9 @@ msgid "verfügbar für:"
 msgstr ""
 #: view_home_home_20
 msgid ", um einen neuen Benutzer anzulegen, oder "
+msgstr ""
+#: fine_selection
+msgid "Feinauswahl"
 msgstr ""
 #: controller_home_4
 msgid "Es muss eine Datei mit der Paketliste (ein Paketname pro Zeile) angegeben werden"
@@ -1823,7 +1832,7 @@ msgstr ""
 msgid "free und aus Third Party Paketquellen"
 msgstr ""
 #: view_user_profiles__profile_rating_0
-msgid "Feinauswahl der zu installierenden Programmbündel und Programme"
+msgid "Auswahl der zu installierenden Programmbündel und Programme"
 msgstr ""
 #: view_home_faq_20
 msgid "Programme werden in Ubuntu in Paketen bereitgestellt, die in sogenannten Paketquellen bzw. Repositories auf Webservern liegen.  Nähere Information zu <a href=\"http://wiki.ubuntuusers.de/Paketquellen\" target=\"_blank\">Repositorys</a>."
@@ -1853,7 +1862,7 @@ msgstr ""
 msgid "Es gibt verschiedene Möglichkeiten, etwas zu spenden."
 msgstr ""
 #: view_user_profiles__profile_rating_3
-msgid "Achtung! Zum Schluss auf \"Speichern\" klicken."
+msgid "Achtung! Zum Schluss auf \"Feinauswahl speichern\" klicken."
 msgstr ""
 #: view_roles_new_0
 msgid "Neue Rolle"
@@ -1914,6 +1923,9 @@ msgid "Icons bei Communtu"
 msgstr ""
 #: description_with_colon
 msgid "Beschreibung:"
+msgstr ""
+#: save_fine
+msgid "Feinauswahl speichern"
 msgstr ""
 #: view_users__mailbox_list_1
 msgid "Mailbox"

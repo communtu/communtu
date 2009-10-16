@@ -894,8 +894,8 @@ msgid "werden zu dem System hinzugefügt."
 msgstr "will be added to our system."
 
 #: model_user_profile_tabz_1
-msgid "Detailauswahl"
-msgstr "Detailed choice"
+msgid "Softwareauswahl"
+msgstr "Software selection"
 
 #: passwd
 msgid "Passwort"
@@ -988,6 +988,14 @@ msgstr " - minimalist and fast version of Ubuntu for older PCs."
 #: view_home_about_9
 msgid "Wichtig: Man braucht schon eine schnelle Internet-Verbindung. Für Ubuntu-Nutzer, die noch ein Modem oder ähnliches nutzen, planen wir die Möglichkeit, automatisch CDs und DVDs zu erstellen."
 msgstr "Important: a fast internet-connection is needed. For Ubuntu-users with a slow internet-connection, e. g. a modem, we intend to introduce a feature to create CDs and DVDs automatically."
+
+#: save_rough
+msgid "Grobauswahl speichern"
+msgstr "Save rough selection"
+
+#: rough_selection
+msgid "Grobauswahl"
+msgstr "Rough selection"
 
 #: controller_users_8
 msgid "Benutzer deaktiviert"
@@ -1234,8 +1242,8 @@ msgid "http://wiki.ubuntuusers.de/Was_ist_Linux?#Was-sind-Derivate-einer-Distrib
 msgstr "http://wiki.ubuntuusers.de/Was_ist_Linux?#Was-sind-Derivate-einer-Distribution (German)"
 
 #: view_user_profiles__profile_data_1
-msgid "Auf dieser Seite kannst du in vier einfachen Schritten deine Ubuntu-Nachinstallation auswählen - fertig.  Wenn gewünscht, ist aber auch eine detailliertere Auswahl möglich. "
-msgstr "On this page you can prepare the post-installation for your Ubuntu installation in four easy steps. If desired, you can choose the bundles in a detailed overview. "
+msgid "Auf dieser Seite kannst du die Grundeinstellungen deines Computers angeben. "
+msgstr "On this page you can enter the basic settings of your computer."
 
 #: view_rating_show_title_ratings_count
 msgid "(Basierend auf {{votes}} Bewertung(en))"
@@ -1262,8 +1270,8 @@ msgid ", und viele Ubuntu-Nutzer fragen sich,  ob sie statt Ubuntu lieber ein De
 msgstr " and many Ubuntu-users may ask themselves if they should use a derivative instead of Ubuntu. The answer is: normally the standard version of Ubuntu is completely sufficiant because with Communtu it is quite easy to install a derivative. However, this is not always a wise decision."
 
 #: view_user_profiles__profile_data_2
-msgid "Achtung: zum Schluss unten auf einen der 'Speichern'-Knöpfe klicken!"
-msgstr "Attention: when finished, don't forget to click on one of the \"Save\"-buttons!"
+msgid "Achtung: zum Schluss unten auf den 'Speichern'-Knopf klicken!"
+msgstr "Attention: when finished, don't forget to click on the \"Save\"-button!"
 
 #: view_sent_index_3
 msgid "Zeitpunkt"
@@ -1342,8 +1350,8 @@ msgid "Lizenztyp:"
 msgstr "Licence:"
 
 #: view_home_derivatives_6
-msgid "Installations-Feinauswahl"
-msgstr "detailed selection"
+msgid "Software-Auswahl"
+msgstr "Software selection"
 
 #: view_home_cancel_0
 msgid ""
@@ -1766,6 +1774,10 @@ msgstr "available for:"
 #: view_home_home_20
 msgid ", um einen neuen Benutzer anzulegen, oder "
 msgstr " to create a new user or"
+
+#: fine_selection
+msgid "Feinauswahl"
+msgstr "Fine selection"
 
 #: controller_home_4
 msgid "Es muss eine Datei mit der Paketliste (ein Paketname pro Zeile) angegeben werden"
@@ -2490,7 +2502,7 @@ msgid "free und aus Third Party Paketquellen"
 msgstr "free and from third party repositories"
 
 #: view_user_profiles__profile_rating_0
-msgid "Feinauswahl der zu installierenden Programmbündel und Programme"
+msgid "Auswahl der zu installierenden Programmbündel und Programme"
 msgstr "Detailed choice of the programs and bundles that shall be installed"
 
 #: view_home_faq_20
@@ -2538,8 +2550,8 @@ msgid "Es gibt verschiedene Möglichkeiten, etwas zu spenden."
 msgstr "There are several ways of donating."
 
 #: view_user_profiles__profile_rating_3
-msgid "Achtung! Zum Schluss auf \"Speichern\" klicken."
-msgstr "Attention! When finished, don't forget to click on \"Save\"."
+msgid "Achtung! Zum Schluss auf \"Feinauswahl speichern\" klicken."
+msgstr "Attention! When finished, don't forget to click on \"Save fine selection\"."
 
 #: view_roles_new_0
 msgid "Neue Rolle"
@@ -2620,6 +2632,10 @@ msgstr "icons used in Communtu"
 #: description_with_colon
 msgid "Beschreibung:"
 msgstr "Description:"
+
+#: save_fine
+msgid "Feinauswahl speichern"
+msgstr "Save fine selection"
 
 #: view_users__mailbox_list_1
 msgid "Mailbox"
@@ -3096,4 +3112,15 @@ msgstr "What is a bundle?"
 #: controller_users_12
 msgid "Benutzer aktiviert"
 msgstr "User activated"
+
+#~ msgid ""
+#~ "Auf dieser Seite kannst du in vier einfachen Schritten deine Ubuntu-"
+#~ "Nachinstallation auswählen - fertig.  Wenn gewünscht, ist aber auch eine "
+#~ "detailliertere Auswahl möglich. "
+#~ msgstr ""
+#~ "On this page you can prepare the post-installation for your Ubuntu "
+#~ "installation in four easy steps. If desired, you can choose the bundles "
+#~ "in a detailed overview. "
+#~ msgid "Installations-Feinauswahl"
+#~ msgstr "detailed selection"
 

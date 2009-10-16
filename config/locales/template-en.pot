@@ -94,6 +94,9 @@ msgstr ""
 #: view_metapackages_show_version_v
 msgid "(version {{v}})"
 msgstr ""
+#: 
+msgid "ivat"
+msgstr ""
 #: view_packages_show_16
 msgid "package-version"
 msgstr ""
@@ -656,7 +659,7 @@ msgstr ""
 msgid "You are not privileged to do this."
 msgstr ""
 #: model_user_profile_tabz_1
-msgid "Detailed choice"
+msgid "Software selection"
 msgstr ""
 #: passwd
 msgid "Password"
@@ -732,6 +735,12 @@ msgid " - minimalist and fast version of Ubuntu for older PCs."
 msgstr ""
 #: view_home_about_9
 msgid "Important: a fast internet-connection is needed. For Ubuntu-users with a slow internet-connection, e. g. a modem, we intend to introduce a feature to create CDs and DVDs automatically."
+msgstr ""
+#: save_rough
+msgid "Save rough selection"
+msgstr ""
+#: rough_selection
+msgid "Rough selection"
 msgstr ""
 #: controller_users_8
 msgid "user deactivated"
@@ -920,7 +929,7 @@ msgstr ""
 msgid "COMMUNTU"
 msgstr ""
 #: view_user_profiles__profile_data_1
-msgid "On this page you can prepare the post-installation for your Ubuntu installation in four easy steps. If desired, you can choose the bundles in a detailed overview. "
+msgid "On this page you can enter the basic settings of your computer."
 msgstr ""
 #: view_rating_show_title_ratings_count
 msgid "(Based on {{votes}} rating(s))"
@@ -941,7 +950,7 @@ msgstr ""
 msgid "Navigation bundle"
 msgstr ""
 #: view_user_profiles__profile_data_2
-msgid "Attention: when finished, don't forget to click on one of the \"Save\"-buttons!"
+msgid "Attention: when finished, don't forget to click on the \"Save\"-button!"
 msgstr ""
 #: view_rating_show_title_no_ratings
 msgid "no user rating"
@@ -995,7 +1004,7 @@ msgstr ""
 msgid "Licence:"
 msgstr ""
 #: view_home_derivatives_6
-msgid "detailed selection"
+msgid "Software selection"
 msgstr ""
 #: view_home_cancel_0
 msgid "Communtu -\n something went wrong while donating."
@@ -1192,6 +1201,9 @@ msgstr ""
 #: view_user_profiles__installation_16
 msgid "register sources and keys"
 msgstr ""
+#: view_home_derivatives_24
+msgid "Derivatives, which should be installed with the derivative installation-CD:"
+msgstr ""
 #: view_home_home_rating_headline
 msgid "Best rated bundles"
 msgstr ""
@@ -1210,14 +1222,11 @@ msgstr ""
 #: view_user_profiles__installation_17
 msgid "Just click on the link and open the file and open it with the recommended package-installer."
 msgstr ""
-#: view_home_derivatives_24
-msgid "Derivatives, which should be installed with the derivative installation-CD:"
+#: view_packages_new_4
+msgid "Source"
 msgstr ""
 #: view_categories_show_0
 msgid "Name: "
-msgstr ""
-#: view_packages_new_4
-msgid "Source"
 msgstr ""
 #: controller_debs_0
 msgid "Debian-packages"
@@ -1308,6 +1317,9 @@ msgid "available for:"
 msgstr ""
 #: view_home_home_20
 msgid " to create a new user or"
+msgstr ""
+#: fine_selection
+msgid "Fine selection"
 msgstr ""
 #: controller_home_4
 msgid "A file with the package list (one package name per line) has to be given"
@@ -1850,7 +1862,7 @@ msgstr ""
 msgid "There are several ways of donating."
 msgstr ""
 #: view_user_profiles__profile_rating_3
-msgid "Attention! When finished, don't forget to click on \"Save\"."
+msgid "Attention! When finished, don't forget to click on \"Save fine selection\"."
 msgstr ""
 #: view_roles_new_0
 msgid "New role"
@@ -1911,6 +1923,9 @@ msgid "icons used in Communtu"
 msgstr ""
 #: description_with_colon
 msgid "Description:"
+msgstr ""
+#: save_fine
+msgid "Save fine selection"
 msgstr ""
 #: view_users__mailbox_list_1
 msgid "Mailbox"
