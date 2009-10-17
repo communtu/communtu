@@ -658,8 +658,8 @@ msgid " Migration von Repositories"
 msgstr "migration from repositories"
 
 #: trusted
-msgid "Trusted"
-msgstr "trusted"
+msgid "Ubuntu+Community"
+msgstr "Ubuntu+Community"
 
 #: view_home_beteiligung_4
 msgid ""
@@ -832,6 +832,10 @@ msgstr "Distribution"
 #: register
 msgid "Registrieren"
 msgstr "Register"
+
+#: change
+msgid "ändern"
+msgstr "change"
 
 #: view_home_about_5
 msgid "Zum Starten wählst du <b>Download</b>."
@@ -1012,10 +1016,6 @@ msgstr "show category-tree"
 #: controller_accounts_6
 msgid "Es ist ein Fehler aufgetreten. Das Passwort wurde nicht geändert."
 msgstr "An error occured. The password has not been changed."
-
-#: model_user_profile_tabz_5
-msgid "Durchführen"
-msgstr "Start installation"
 
 #: view_cart_new_from_list_4
 msgid "Datei, die die Paketliste enthält, auswählen:"
@@ -1562,8 +1562,8 @@ msgid "Betreff"
 msgstr "Subject"
 
 #: native
-msgid "Native"
-msgstr "native"
+msgid "nur Ubuntu"
+msgstr "only Ubuntu"
 
 #: package_list
 msgid "zurück zur Paketliste"
@@ -2573,6 +2573,10 @@ msgstr "Participants of the Communtu-team (alphabetical order):"
 msgid "Wie entferne ich die Metapakete wieder?"
 msgstr "How do I delete the metapackages?"
 
+#: settings
+msgid "Einstellungen"
+msgstr "Settings"
+
 #: view_videos_edit_0
 msgid "Video bearbeiten"
 msgstr "edit video"
@@ -2632,6 +2636,10 @@ msgstr "icons used in Communtu"
 #: description_with_colon
 msgid "Beschreibung:"
 msgstr "Description:"
+
+#: save_rough_install
+msgid "Grobauswahl speichern und installieren"
+msgstr "Save rough selection and install"
 
 #: save_fine
 msgid "Feinauswahl speichern"
@@ -2758,8 +2766,8 @@ msgid " Quellen installieren"
 msgstr " install sources"
 
 #: model_package_0
-msgid "OpenSource"
-msgstr "open source"
+msgid "Freie Software"
+msgstr "Free software"
 
 #: to_chat
 msgid "zum Chat"
@@ -2782,8 +2790,8 @@ msgid "Das Bündel enthält Konflikte und kann deshalb nicht als Metapaket gespe
 msgstr "This bundle contains conflicts and therefor it cannot be saved as a metapackage."
 
 #: third_party
-msgid "Third-Party"
-msgstr "third-party "
+msgid "alle Anbieter"
+msgstr "all providers"
 
 #: view_user_profiles__installation_28
 msgid "http://wiki.ubuntuusers.de/apturl"
@@ -2806,8 +2814,8 @@ msgid "Jetzt einfach, schnell und sicher online spenden – mit PayPal."
 msgstr "Donate now online using PayPal, it is easy, quick and secure."
 
 #: model_package_1
-msgid "Commercial"
-msgstr "Commercial"
+msgid "Frei+proprietär"
+msgstr "free+proprietary"
 
 #: view_home_derivatives_35
 msgid "Es gibt noch weitere Derivate zu denen wir bisher noch keine Installationsempfehlung abgeben können:"
@@ -3061,6 +3069,10 @@ msgstr "Feedback to Communtu"
 msgid "Archiv"
 msgstr "archive"
 
+#: save_fine_install
+msgid "Feinauswahl speichern und installieren"
+msgstr "Save fine selection and install"
+
 #: controller_users_10
 msgid "Benutzer gelöscht"
 msgstr "User deleted"
@@ -3113,6 +3125,18 @@ msgstr "What is a bundle?"
 msgid "Benutzer aktiviert"
 msgstr "User activated"
 
+#~ msgid "Trusted"
+#~ msgstr "trusted"
+#~ msgid "Durchführen"
+#~ msgstr "Start installation"
+#~ msgid "Native"
+#~ msgstr "native"
+#~ msgid "OpenSource"
+#~ msgstr "open source"
+#~ msgid "Third-Party"
+#~ msgstr "third-party "
+#~ msgid "Commercial"
+#~ msgstr "Commercial"
 #~ msgid ""
 #~ "Auf dieser Seite kannst du in vier einfachen Schritten deine Ubuntu-"
 #~ "Nachinstallation auswählen - fertig.  Wenn gewünscht, ist aber auch eine "

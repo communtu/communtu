@@ -161,7 +161,7 @@ en:
   view_packages_rdepends_0: In the package
   view_metapackages_show_save_2: "Create new meta-package:"
   view_home_icons_16: migration from repositories
-  trusted: trusted
+  trusted: Ubuntu+Community
   view_home_beteiligung_4: |-
     You think you already know a lot about Open Source programs? 
     Write your experience into the comments of the according package our maybe you have seen
@@ -209,6 +209,7 @@ en:
   controller_admins_0: admninistration section
   distribution: Distribution
   register: Register
+  change: change
   view_home_about_5: To start, choose <b>Installation</b>.
   controller_users_4: An error occurred with the guest session.
   controller_accounts_2: Could'nt find the activation code. Please try to create a new account.
@@ -253,7 +254,6 @@ en:
   controller_users_8: user deactivated
   view_categories_index_12: show category-tree
   controller_accounts_6: An error occured. The password has not been changed.
-  model_user_profile_tabz_5: Start installation
   view_cart_new_from_list_4: "Choose the file which contains the package-list:"
   donation_possibility: Donation possibility
   controller_sessions_1: You are already logged in.
@@ -391,7 +391,7 @@ en:
   view_home_derivatives_21: "Derivatives which are based on a Xfce-installation (like Xubuntu) and that can be post-installed with Communtu:"
   subject_without_colon: Subject
   view_packages_new_0: New package
-  native: native
+  native: only Ubuntu
   view_packages_edit_3: "&nbsp;&nbsp;New icon: "
   package_list: back to the package-list
   view_home_derivatives_22: " - in some ways like BeOS, ZevenOS focuses on speed and compatibility for old computers with a simple interface. CPU with at least 200 MHz, 128 MB RAM (for operating, while installing 192 MB RAM are required), at least 2 GB free hard disk space (recommended are 4 GB free hard disk space or more), 16 MB graphic card (recommended: Intel GMA 9xx)."
@@ -653,6 +653,7 @@ en:
   view_home_faq_22: To find the Communtu-sources in a Gnome-based system, you navigate to "System" -> "Administration" -> "Software Sources" -> "Third-Party Software". To find the Communtu-sources in a KDE-based system, you open the K-menu and then navigate to "Programs" -> "System" -> "Administration" -> Software Sources" -> "Third-Party Software". Here you deactivate the Communtu-sources. When deactivating the Communtu-sources, the installed programs won't be uninstalled nor are the updates. Updates are still obtained from the official sources, which may be added by Communtu.
   view_user_profiles__profile_rating_2: " you can \n\
     open or close a section to make a detailed selection."
+  settings: Settings
   view_home_faq_23: How do I delete the metapackages?
   view_home_impressum_11: "Participants of the Communtu-team (alphabetical order):"
   view_mailbox_show_5: You do not have any messages in your inbox.
@@ -671,6 +672,7 @@ en:
   view_user_profiles__installation_20: This step has already been carried out.
   kontodaten: "Bank-account: 172 9375, Sparkasse Bremen, Bank-number 290 501 01"
   save_fine: Save fine selection
+  save_rough_install: Save rough selection and install
   description_with_colon: "Description:"
   view_home_icons_0: icons used in Communtu
   view_packages_show_5: add sources for this package
@@ -701,20 +703,20 @@ en:
   view_layouts_donate: Donate
   view_user_profiles_help_2: "There you enter the following:"
   zentrum_solidarische_oekonomie: "Zentrum f\xC3\xBCr Solidarische \xC3\x96konomie"
-  third_party: "third-party "
+  third_party: all providers
   controller_metapackages_no_save: This bundle contains conflicts and therefor it cannot be saved as a metapackage.
   view_derivatives_edit_0: edit derivative
   new_distribution: New distribution
   view_home_derivatives_34: " - replaces the Linux core with OpenSolaris. Provides only a minimal basis to applications. The installation of additional software is left to the user; Communtu can be used for this."
   to_chat: to the chat
-  model_package_0: open source
+  model_package_0: Free software
   view_home_icons_6: " install sources"
   view_layouts_application_5: "per PayPal:"
   view_user_profiles_help_3: "If you version is not supported by Communtu, you now have two possibilities:"
   view_user_profiles__installation_27: "Please configure "
   view_derivatives_edit_1: Program for GUI-based sudo (e.g. gksudo, kdesudo)
   view_home_derivatives_35: "There are several other derivatives for which we cannot give any recommendations for installation:"
-  model_package_1: Commercial
+  model_package_1: free+proprietary
   view_layouts_application_6: Donate now online using PayPal, it is easy, quick and secure.
   view_metapackages_rdepends_0: In bundle
   view_passwords_new_0: forgotten password
@@ -778,6 +780,7 @@ en:
   view_home_news_8: .
   view_layouts_application_13: About Communtu
   controller_users_10: User deleted
+  save_fine_install: Save fine selection and install
   archive: archive
   view_layouts_application_14: Feedback to Communtu
   view_metapackages_show_save: save bundle as a metapackage

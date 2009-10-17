@@ -491,7 +491,7 @@ msgstr ""
 msgid " Migration von Repositories"
 msgstr ""
 #: trusted
-msgid "Trusted"
+msgid "Ubuntu+Community"
 msgstr ""
 #: view_home_beteiligung_4
 msgid "Du denkst, dass Du schon vieles zu Open Source Programmen weisst? \nDann schreibe Deine Erfahrungen in den Kommentaren zu den Paketen oder hast Du vielleicht ein tolles\nVideo zu dem Programm bei Youtube gesehen? Dann trag es doch gleich bei\nden Videos zu den Programmen in Communtu ein."
@@ -615,6 +615,9 @@ msgid "Distribution"
 msgstr ""
 #: register
 msgid "Registrieren"
+msgstr ""
+#: change
+msgid "ändern"
 msgstr ""
 #: view_home_about_5
 msgid "Zum Starten wählst du <b>Download</b>."
@@ -750,9 +753,6 @@ msgid "Kategorienbaum anzeigen"
 msgstr ""
 #: controller_accounts_6
 msgid "Es ist ein Fehler aufgetreten. Das Passwort wurde nicht geändert."
-msgstr ""
-#: model_user_profile_tabz_5
-msgid "Durchführen"
 msgstr ""
 #: view_cart_new_from_list_4
 msgid "Datei, die die Paketliste enthält, auswählen:"
@@ -1160,7 +1160,7 @@ msgstr ""
 msgid "Betreff"
 msgstr ""
 #: native
-msgid "Native"
+msgid "nur Ubuntu"
 msgstr ""
 #: package_list
 msgid "zurück zur Paketliste"
@@ -1879,6 +1879,9 @@ msgstr ""
 #: view_home_faq_23
 msgid "Wie entferne ich die Metapakete wieder?"
 msgstr ""
+#: settings
+msgid "Einstellungen"
+msgstr ""
 #: view_videos_edit_0
 msgid "Video bearbeiten"
 msgstr ""
@@ -1923,6 +1926,9 @@ msgid "Icons bei Communtu"
 msgstr ""
 #: description_with_colon
 msgid "Beschreibung:"
+msgstr ""
+#: save_rough_install
+msgid "Grobauswahl speichern und installieren"
 msgstr ""
 #: save_fine
 msgid "Feinauswahl speichern"
@@ -2018,7 +2024,7 @@ msgstr ""
 msgid " Quellen installieren"
 msgstr ""
 #: model_package_0
-msgid "OpenSource"
+msgid "Freie Software"
 msgstr ""
 #: to_chat
 msgid "zum Chat"
@@ -2036,7 +2042,7 @@ msgstr ""
 msgid "Das Bündel enthält Konflikte und kann deshalb nicht als Metapaket gespeichert werden."
 msgstr ""
 #: third_party
-msgid "Third-Party"
+msgid "alle Anbieter"
 msgstr ""
 #: view_user_profiles__installation_28
 msgid "http://wiki.ubuntuusers.de/apturl"
@@ -2054,7 +2060,7 @@ msgstr ""
 msgid "Jetzt einfach, schnell und sicher online spenden – mit PayPal."
 msgstr ""
 #: model_package_1
-msgid "Commercial"
+msgid "Frei+proprietär"
 msgstr ""
 #: view_home_derivatives_35
 msgid "Es gibt noch weitere Derivate zu denen wir bisher noch keine Installationsempfehlung abgeben können:"
@@ -2244,6 +2250,9 @@ msgid "Feedback an Communtu"
 msgstr ""
 #: archive
 msgid "Archiv"
+msgstr ""
+#: save_fine_install
+msgid "Feinauswahl speichern und installieren"
 msgstr ""
 #: controller_users_10
 msgid "Benutzer gelöscht"

@@ -488,7 +488,7 @@ msgstr ""
 msgid "migration from repositories"
 msgstr ""
 #: trusted
-msgid "trusted"
+msgid "Ubuntu+Community"
 msgstr ""
 #: view_home_beteiligung_4
 msgid "You think you already know a lot about Open Source programs? \nWrite your experience into the comments of the according package our maybe you have seen\na video of the program at YouTube? Add the video\nto the corresponding program."
@@ -618,6 +618,9 @@ msgid "Distribution"
 msgstr ""
 #: register
 msgid "Register"
+msgstr ""
+#: change
+msgid "change"
 msgstr ""
 #: view_home_about_5
 msgid "To start, choose <b>Installation</b>."
@@ -750,9 +753,6 @@ msgid "show category-tree"
 msgstr ""
 #: controller_accounts_6
 msgid "An error occured. The password has not been changed."
-msgstr ""
-#: model_user_profile_tabz_5
-msgid "Start installation"
 msgstr ""
 #: view_cart_new_from_list_4
 msgid "Choose the file which contains the package-list:"
@@ -1160,7 +1160,7 @@ msgstr ""
 msgid "New package"
 msgstr ""
 #: native
-msgid "native"
+msgid "only Ubuntu"
 msgstr ""
 #: view_packages_edit_3
 msgid "&nbsp;&nbsp;New icon: "
@@ -1879,6 +1879,9 @@ msgstr ""
 #: view_home_faq_23
 msgid "How do I delete the metapackages?"
 msgstr ""
+#: settings
+msgid "Settings"
+msgstr ""
 #: view_videos_edit_0
 msgid "edit video"
 msgstr ""
@@ -1923,6 +1926,9 @@ msgid "icons used in Communtu"
 msgstr ""
 #: description_with_colon
 msgid "Description:"
+msgstr ""
+#: save_rough_install
+msgid "Save rough selection and install"
 msgstr ""
 #: save_fine
 msgid "Save fine selection"
@@ -2018,7 +2024,7 @@ msgstr ""
 msgid " install sources"
 msgstr ""
 #: model_package_0
-msgid "open source"
+msgid "Free software"
 msgstr ""
 #: to_chat
 msgid "to the chat"
@@ -2036,7 +2042,7 @@ msgstr ""
 msgid "This bundle contains conflicts and therefor it cannot be saved as a metapackage."
 msgstr ""
 #: third_party
-msgid "third-party "
+msgid "all providers"
 msgstr ""
 #: view_user_profiles__installation_28
 msgid "https://wiki.ubuntu.com/AptUrl"
@@ -2054,7 +2060,7 @@ msgstr ""
 msgid "Donate now online using PayPal, it is easy, quick and secure."
 msgstr ""
 #: model_package_1
-msgid "Commercial"
+msgid "free+proprietary"
 msgstr ""
 #: view_home_derivatives_35
 msgid "There are several other derivatives for which we cannot give any recommendations for installation:"
@@ -2244,6 +2250,9 @@ msgid "Feedback to Communtu"
 msgstr ""
 #: archive
 msgid "archive"
+msgstr ""
+#: save_fine_install
+msgid "Save fine selection and install"
 msgstr ""
 #: controller_users_10
 msgid "User deleted"
