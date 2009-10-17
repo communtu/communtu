@@ -1,0 +1,27 @@
+#!/bin/bash
+############################
+# Author: Timo Denissen    #
+# E-Mail: timo@communtu.de #
+# Version: 1.0             #
+############################
+
+echo -e 'Convert yml-file to pot-file.\nWhich language do you translate to?\nUse one of the following language strings.'
+echo "" | tr -s " " "\012"
+echo '1) Abort'
+read language
+case $language in
+  $language) script/yaml2po en config/locales/template-en.yml config/locales/template-$language.pot;;
+  1) exit;;
+esac
+echo 'Do you want to edit the file 'template-$language.po' now?'
+echo '1) Yes'
+echo '2) No'
+read poedit
+case $poedit in
+  1) if [ -f config/locales/template-$language.po ]
+     then poedit config/locales/template-$language.po
+     else cp config/locales/template-$language.pot config/locales/template-$language.po ; poedit config/locales/template-$language.po
+     fi;;
+  2) exit;;
+esac
+exit
