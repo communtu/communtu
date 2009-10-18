@@ -2,13 +2,13 @@
 ############################
 # Author: Timo Denissen    #
 # E-Mail: timo@communtu.de #
-# Version: 2.0             #
+# Version: 2.1             #
 ############################
-
+default=en
 language=$1
 poedit=$2
 
-script/yaml2po en config/locales/template-en.yml config/locales/template-$language.pot
+script/yaml2po $default config/locales/template-en.yml config/locales/template-$language.pot
 if [ $poedit = 1 ]
 then 
   if [ -f config/locales/template-$language.po ]
