@@ -72,7 +72,7 @@ class Deb < ActiveRecord::Base
       f.puts
       f.puts "Included packages:"
       architectures.all.each do |arch|
-         f.puts (if homogeneous then arch.name else "" end)+": "+packages[arch].join(", ")
+         f.puts((if homogeneous then arch.name else "" end)+": "+packages[arch].join(", "))
       end
       f.close
 
