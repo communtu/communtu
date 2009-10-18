@@ -71,7 +71,7 @@ class Deb < ActiveRecord::Base
       f.puts Time.now
       f.puts
       f.puts "Included packages:"
-      architectures.all.each do |arch|
+      architectures.each do |arch|
          f.puts((if homogeneous then arch.name else "" end)+": "+packages[arch].join(", "))
       end
       f.close
