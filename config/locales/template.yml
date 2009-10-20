@@ -5,6 +5,7 @@ de:
   add_comment: "Kommentar hinzufügen"
   add: "hinzufügen"
   add_sources: "Quellen hinzufügen"
+  advanced_user: "Ich bin fortgeschrittener Benutzer und will auch unfertige Versionen von Ubuntu sehen."
   allgemeinbildung: Allgemeinbildung e.V.
   an: An
   an: "An:"
@@ -232,6 +233,7 @@ de:
   passwd_no_match: "Das neue Passwort stimmt nicht mit der Bestätigung überein."
   passwd: Passwort
   path: "Pfad:"
+  preliminary_distribution: "Vorläufige Distribution"
   promote_chat: Du kannst gucken, ob sich gerade jemand von uns im Chat aufhält und mit uns über den Chat kommunizieren.
   published: "veröffentlicht"
   register: Registrieren
