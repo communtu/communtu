@@ -28,6 +28,7 @@ de:
   chat_channel: de-communtu
   choose_bundle: Bündel auswählen 
   choose_parent: "Wähle einen Parent aus!"
+  community_title: ubuntuusers
   compose_new_message: neue Nachricht schreiben
   confirm_new_passwd: "Neues Passwort bestätigen"
   controller_accounts_1: Dein Benutzerkonto wurde aktiviert! Du kannst dich nun einloggen.
@@ -173,6 +174,8 @@ de:
   lib_system_2: http://www.communtu.de
   lib_utils_0: "System-Befehl schlug fehl: "
   licence: "Lizenztyp:"
+  link_community: "http://www.ubuntuusers.de"
+  link_community_title: "Externer Link: zu den Seiten von ubuntuusers"
   mailinglist: "Mailinglisten:"
   match_ubuntu: "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
   match_with_communtu: "Communtu - gemeinsam Ubuntu-Linux an individuelle Bedürfnisse anpassen"
