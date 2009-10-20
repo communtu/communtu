@@ -14,8 +14,7 @@
 <%= javascript_include_tag "effects" %>
 <div id="head">
 	<div id="navihead">
-<% if is_admin? %>
-		<a href="/categories"><%= t(:view_layouts_application_32) %></a> | <% end %><a href="<%=t(:link_community)%>" target="_blank" title="<%=t(:link_community_title)%>"><%=t(:community_title)%></a> || 
+<a href="<%=t(:link_community)%>" target="_blank" title="<%=t(:link_community_title)%>"><%=t(:community_title)%></a> || 
 <a href="/home/home"><%= t(:homepage) %></a> | <a href="/home/faq"><%= t(:view_layouts_application_30) %></a> | <a href="/home/contact_us"><%= t(:view_layouts_application_31) %></a> | <a href="/home/donate"><%= t(:view_layouts_donate) %></a>
 </div>
 	<!--<div id="lang">
@@ -31,6 +30,8 @@
 	
 	<!-- registrieren -->
 	<div id="register">
+<% if is_admin? %>
+                <a href="/categories"><%= t(:view_layouts_application_32) %></a> | <% end %>
   <% if logged_in? %>
                 <%= link_to t(:view_layouts_application_9), logout_path  %>
             <% else %>
