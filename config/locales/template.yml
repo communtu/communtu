@@ -20,6 +20,7 @@ de:
   bundle_by_owner: erstellte Bündel
   bundle_editor: "Bündel-Editor"
   by_bank_transfer: "per Überweisung"
+  cannot_migrate: "Kann nur migrieren, wenn die folgende Distribution frisch ist"
   category_with_colon: "Kategorie:"
   category_without_colon: Kategorie
   changed_settings: "Dieser Schritt muss neu ausgeführt werden, weil du die Einstellungen geändert hast."

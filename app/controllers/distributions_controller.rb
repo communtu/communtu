@@ -134,4 +134,19 @@ class DistributionsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+  def migrate
+    @distribution = Distribution.find(params[:id])
+    @new_dist = Distribution.find(:first,:conditions => {:id => @distribution.id+1})
+    # only proceed if new distribution is new and fresh
+    if !@new_dist.nil? and Repository.find_by_distribution_id(@new_dist.id).nil? then
+      @distribution.repositories.each do |r|
+        r.migrate(@new_dist)
+      end
+      redirect_to(@new_dist)
+    else
+      flash[:error] = t(:cannot_migrate)
+      redirect_to(@distribution)
+    end
+  end
 end
