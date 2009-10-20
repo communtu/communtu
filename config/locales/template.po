@@ -1143,7 +1143,7 @@ msgstr "Your account has been deactivated or deleted."
 
 #: link_community_title
 msgid "Externer Link: zu den Seiten von ubuntuusers"
-msgstr "External link: to the official Ubuntu forums"
+msgstr "External link: to the official Ubuntu Forums"
 
 #: view_metapackages_show_comment_and_ratings
 msgid "Neuste Kommentare und Bewertungen für dieses Bündel"

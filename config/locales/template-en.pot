@@ -851,7 +851,7 @@ msgstr ""
 msgid "Message"
 msgstr ""
 #: link_community_title
-msgid "External link: to the official Ubuntu forums"
+msgid "External link: to the official Ubuntu Forums"
 msgstr ""
 #: view_derivatives_show_3
 msgid "icon-file:"
