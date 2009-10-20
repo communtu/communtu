@@ -1443,7 +1443,7 @@ msgstr "How can I install a single program?"
 
 #: community_title
 msgid "ubuntuusers"
-msgstr "http://ubuntuforums.org/"
+msgstr "Ubuntu Forums"
 
 #: view_users_new_10
 msgid "Dein Vorname"
@@ -2555,7 +2555,7 @@ msgstr "There are several ways of donating."
 
 #: link_community
 msgid "http://www.ubuntuusers.de"
-msgstr "http://www.ubuntuusers.de (German)"
+msgstr "http://ubuntuforums.org"
 
 #: view_user_profiles__profile_rating_3
 msgid "Achtung! Zum Schluss auf \"Feinauswahl speichern\" klicken."

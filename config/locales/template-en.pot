@@ -1067,7 +1067,7 @@ msgstr ""
 msgid "Please select an Ubuntu version. "
 msgstr ""
 #: community_title
-msgid "http://ubuntuforums.org/"
+msgid "Ubuntu Forums"
 msgstr ""
 #: view_home_faq_15
 msgid "How can I install a single program?"
@@ -1865,7 +1865,7 @@ msgstr ""
 msgid "There are several ways of donating."
 msgstr ""
 #: link_community
-msgid "http://www.ubuntuusers.de (German)"
+msgid "http://ubuntuforums.org"
 msgstr ""
 #: view_user_profiles__profile_rating_3
 msgid "Attention! When finished, don't forget to click on \"Save fine selection\"."
