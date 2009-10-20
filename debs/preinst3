@@ -10,11 +10,11 @@
       for source in $NEWSOURCES; do
       	echo $source >> $APTLIST
       	# and invoke apt pinning with a low preference
-    	url=$( echo $source | cut -d " " -f 2 )
-    	distribution=$( echo $source | cut -d " " -f 3 )
-    	component=$( echo $source | cut -d " " -f 4-6 )
+    	url=$( echo $source | cut -d " " -f 2  | cut -d / -f 3)
+    	# distribution=$( echo $source | cut -d " " -f 3 )
+    	# component=$( echo $source | cut -d " " -f 4-6 )
     	echo "Package: *" >> $APTPIN
-	    echo "Pin: release c=$component, origin=$url" >> $APTPIN
+	    echo "Pin: origin $url" >> $APTPIN
         echo "Pin-Priority: 100" >> $APTPIN
     	echo >> $APTPIN
       done
