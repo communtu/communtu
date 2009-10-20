@@ -42,10 +42,15 @@ class UserProfilesController < ApplicationController
     user.distribution_id = uparams[:distribution_id]
     user.derivative_id = uparams[:derivative_id]
     user.architecture_id = uparams[:architecture_id]
+    newly_advanced = !user.advanced and uparams[:advanced]
+    user.advanced = uparams[:advanced]
     user.profile_changed = true
     user.save!
-    
-    redirect_to user_user_profile_path(current_user) + "/refine"
+    if newly_advanced then
+      redirect_to user_user_profile_path(current_user) + "/tabs/2"
+    else
+      redirect_to user_user_profile_path(current_user) + "/refine"
+    end
   end
   
   def update_ratings

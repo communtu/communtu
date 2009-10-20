@@ -58,6 +58,7 @@
         <%= radio_button_tag "user[license]", "1", options[1] %><%=t(:view_user_profiles__profile_data_15)%>
          <%= package_link "Skype"%>, <%= package_link "Acroread"%>, ... )<br>
         </div></li>
+    <li><%= check_box_tag "user[advanced]", 1, current_user.advanced %><%=t(:advanced_user)%><br></li>
 	</ol>
     <div style="margin-top:20px;">
         <%= submit_tag t(:save), :name => "choose" %>

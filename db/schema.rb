@@ -131,6 +131,7 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.string   "url"
     t.integer  "description_tid"
     t.integer  "url_tid"
+    t.boolean  "preliminary",     :default => true
   end
 
   create_table "folders", :force => true do |t|
@@ -323,6 +324,7 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.string   "surname",                   :limit => 30, :default => ""
     t.string   "firstname",                 :limit => 30, :default => ""
     t.integer  "architecture_id",                         :default => 1
+    t.boolean  "advanced",                                :default => false
   end
 
   create_table "videos", :force => true do |t|
