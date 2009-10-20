@@ -102,63 +102,63 @@ class Repository < ActiveRecord::Base
   # import repository for on architecture
   def import_source_arch arch
 
-      distribution_id = self.distribution_id
+    distribution_id = self.distribution_id
 
-      # get URL for repository
-      url  = Repository.get_url_from_source(self.name,arch)
+    # get URL for repository
+    url  = Repository.get_url_from_source(self.name,arch)
 
-      # repository not found? then return
-      if !url[:error].nil? then
-        return url
+    # repository not found? then return
+    if !url[:error].nil? then
+      return url
+    end
+    url = url[:url]
+
+    # read in all packages from repository
+    tmp_name = (IO.popen "mktemp").read.chomp
+    packages = self.packages_to_hash url, arch, tmp_name
+    # errors while reading in? then return
+    if !packages[:error].nil? or !packages[:notice].nil? then
+      return packages
+    end
+
+    info = { "package_count" => packages[:packages].size, "update_count" => 0, "new_count" => 0,\
+      "failed" => [], "url" => url }
+
+    # enter packages
+    packages[:packages].each do |name,package|
+
+      # adapt description if nil
+      if package["Description"].nil?
+        package["Description"] = ""
       end
-      url = url[:url]
 
-      # read in all packages from repository
-      packages = self.packages_to_hash url, arch
-      # errors while reading in? then return
-      if !packages[:error].nil? or !packages[:notice].nil? then
-        return packages
-      end
-
-      info = { "package_count" => packages[:packages].size, "update_count" => 0, "new_count" => 0,\
-        "failed" => [], "url" => url }
-
-      # enter packages
-      packages[:packages].each do |name,package|
-
-        # adapt description if nil
-        if package["Description"].nil?
-          package["Description"] = ""
-        end
-
-        # compute attributes for package
-        attributes_package = { :name => name,
-            :description => package["Description"],\
-            :fullsection => package["Section"],\
-            # für :section nur den letzten Teil verwenden
-            :section => package["Section"].split("/")[-1]}
-
-        # look for existing package
-        p = Package.find(:first, :conditions => ["name=?",name])
-        if p.nil?
-          # no package? create a new one
-          p= Package.new(attributes_package)
-          if p.save
-            info["new_count"] = info["new_count"].next
-          else
-            info["failed"].push name
-          end
+      # compute attributes for package
+      attributes_package = { :name => name,
+          :description => package["Description"],\
+          :fullsection => package["Section"],\
+          # use last part for :section
+          :section => package["Section"].split("/")[-1]}
+      # look for existing package
+      p = Package.find(:first, :conditions => ["name=?",name])
+      if p.nil?
+        # no package? create a new one
+        p= Package.new(attributes_package)
+        if p.save
+          info["new_count"] = info["new_count"].next
         else
-          # package exists, then update attributes
-          if p.update_attributes(attributes_package)
-            info["update_count"] = info["update_count"].next
-          else
-            info["failed"].push name
-          end
+          info["failed"].push name
         end
+      else
+        # package exists, then update attributes
+        if p.update_attributes(attributes_package)
+          info["update_count"] = info["update_count"].next
+        else
+          info["failed"].push name
+        end
+      end
 
-        # compute attributes for package_distr
-        attributes_package_distr = {
+      # compute attributes for package_distr
+      attributes_package_distr = {
             :package_id => p.id,
             :version => package["Version"],
             :distribution_id => distribution_id,
@@ -167,65 +167,68 @@ class Repository < ActiveRecord::Base
             :size => package["Size"],
             :installedsize => package["Installed-Size"]}
 
-        # compute license type by minimum with existing one
-        if p.license_type.nil? then
-          p.license_type = self.license_type
-        else
-          p.license_type = min(self.license_type,p.license_type)
-        end
+      # compute license type by minimum with existing one
+      if p.license_type.nil? then
+        p.license_type = self.license_type
+      else
+        p.license_type = min(self.license_type,p.license_type)
+      end
 
-        # compute security type by minimum with existing one
-        if p.security_type.nil? then
-          p.security_type = self.security_type
-        else
-          p.security_type = min(self.security_type,p.security_type)
-        end
+      # compute security type by minimum with existing one
+      if p.security_type.nil? then
+        p.security_type = self.security_type
+      else
+        p.security_type = min(self.security_type,p.security_type)
+      end
 
-        # update package_distr
-        pd = PackageDistr.find(:first, :conditions =>
-               ["package_id = ? and repository_id = ?",p.id,self.id])
-        if pd.nil?
-          # no package_distr? create a new one
-            pd = PackageDistr.new(attributes_package_distr)
-            if !pd.save then
-              info["failed"].push(name + " " + self.url)
-            end
-        else
-          # package exists, then update attributes
-            if !pd.update_attributes(attributes_package_distr) then
-              info["failed"].push(name + " " + self.url)
-            end
-        end
-        if !pd.nil? then
-            # enter architecture
-            if  PackageDistrsArchitecture.find(:first,:conditions => ["package_distr_id = ? and architecture_id = ?",pd.id,arch.id]).nil? then
-                PackageDistrsArchitecture.create(:package_distr_id => pd.id, :architecture_id => arch.id)
-            end
-        end
-      end # packages[:packages].each
-      # enter dependency info - this must happen *after* creation of the packages!
-      # do this only for the first architecture (usually i386)
-      # we generally only have a rough approximation of the dependencies
-      if arch.id==1 then
-        packages[:packages].each do |name,package|
-          p = Package.find(:first, :conditions => ["name=?",name])
-          if not p.nil?
-            pd = PackageDistr.find(:first, :conditions =>
-               ["package_id = ? and repository_id = ?",p.id,self.id])
-            if not pd.nil?
-              pd.dependencies.delete_all
-              pd.assign_depends(Repository.parse_dependencies(package["Depends"]))
-              pd.assign_recommends(Repository.parse_dependencies(package["Recommends"]))
-              pd.assign_suggests(Repository.parse_dependencies(package["Suggests"]))
-              pd.assign_conflicts(Repository.parse_unversioned_dependencies(package["Conflicts"]))
-            else raise I18n.t(:model_package_9,{:repo_name => self.name, :package_name => p.name})
-            end
-          else raise I18n.t(:model_package_10,{:repo_name => self.name, :package_name => name})
+      # update package_distr
+      pd = PackageDistr.find(:first, :conditions =>
+             ["package_id = ? and repository_id = ?",p.id,self.id])
+      if pd.nil?
+        # no package_distr? create a new one
+          pd = PackageDistr.new(attributes_package_distr)
+          if !pd.save then
+            info["failed"].push(name + " " + self.url)
           end
+      else
+        # package exists, then update attributes
+          if !pd.update_attributes(attributes_package_distr) then
+            info["failed"].push(name + " " + self.url)
+          end
+      end
+      if !pd.nil? then
+          # enter architecture
+          if  PackageDistrsArchitecture.find(:first,:conditions => ["package_distr_id = ? and architecture_id = ?",pd.id,arch.id]).nil? then
+              PackageDistrsArchitecture.create(:package_distr_id => pd.id, :architecture_id => arch.id)
+          end
+      end
+    end # packages[:packages].each
+    # enter dependency info - this must happen *after* creation of the packages!
+    # do this only for the first architecture (usually i386)
+    # we generally only have a rough approximation of the dependencies
+    if arch.id==1 then
+      packages[:packages].each do |name,package|
+        p = Package.find(:first, :conditions => ["name=?",name])
+        if not p.nil?
+          pd = PackageDistr.find(:first, :conditions =>
+             ["package_id = ? and repository_id = ?",p.id,self.id])
+          if not pd.nil?
+            pd.dependencies.delete_all
+            pd.assign_depends(Repository.parse_dependencies(package["Depends"]))
+            pd.assign_recommends(Repository.parse_dependencies(package["Recommends"]))
+            pd.assign_suggests(Repository.parse_dependencies(package["Suggests"]))
+            pd.assign_conflicts(Repository.parse_unversioned_dependencies(package["Conflicts"]))
+          else raise I18n.t(:model_package_9,{:repo_name => self.name, :package_name => p.name})
+          end
+        else raise I18n.t(:model_package_10,{:repo_name => self.name, :package_name => name})
         end
       end
-   return info
-   end
+    end
+    # store new package list
+    system "mkdir -p #{self.dir_name}"
+    system "mv #{tmp_name} #{self.file_name arch}"
+    return info
+  end
 
   # get all dependencies
   def self.parse_dependencies(s)
@@ -252,8 +255,8 @@ class Repository < ActiveRecord::Base
     end
   end
 
-  # parse Packages file
-  def packages_to_hash url, arch
+  # parse Packages file at url for arch, save it in tmp_name and return infos about contained packages
+  def packages_to_hash url, arch, tmp_name
     if url.nil? then return {:error => I18n.t(:model_package_11)} end
     begin
       file = open(url, 'User-Agent' => 'Ruby-Wget')
@@ -261,18 +264,14 @@ class Repository < ActiveRecord::Base
       return {:error => I18n.t(:model_package_could_not_read,:url => url)}
     else
       # check whether repository contents has changed
-      tmp_name = "/tmp/"+Time.now.to_f.to_s
       tmp_file = File.open(tmp_name+".gz","w")
       tmp_file.write file.read
       tmp_file.close
-      system "gunzip #{tmp_name}.gz"
+      system "gunzip -f #{tmp_name}.gz"
       # contents unchanged? then we are done
       if system "diff #{tmp_name} #{self.file_name arch}" then
         return {:notice => I18n.t(:model_package_need_not_update,:url => url)}
       end
-      # store new package list
-      system "mkdir -p #{self.dir_name}"
-      system "mv #{tmp_name} #{self.file_name arch}"
       file.seek(0,IO::SEEK_SET)
       packages = {}
       reader   = Zlib::GzipReader.new(file)
