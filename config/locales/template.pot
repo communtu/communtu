@@ -151,6 +151,9 @@ msgstr ""
 #: view_home_faq_09
 msgid "Wie kann ich ein Bündel ändern?"
 msgstr ""
+#: view_home_donate_why
+msgid "Der Betrieb der Communtu-Webseite basiert vor allem auf dem Einsatz von Freiwilligen; er kostet aber auch Geld (u.a. für Server und Räume). Communtu ist daher auf Spenden angewiesen. Auch kleine Beträge helfen."
+msgstr ""
 #: controller_metapackages_3
 msgid "Die Beschreibung darf nicht leer sein"
 msgstr ""
@@ -159,9 +162,6 @@ msgid "Konnte keine URL feststellen"
 msgstr ""
 #: imprint
 msgid "Impressum"
-msgstr ""
-#: view_home_donate_why
-msgid "Der Betrieb der Communtu-Webseite basiert vor allem auf dem Einsatz von Freiwilligen; er kostet aber auch Geld (u.a. für Server und Räume). Communtu ist daher auf Spenden angewiesen. Auch kleine Beträge helfen."
 msgstr ""
 #: view_home_derivatives_10
 msgid "http://wiki.ubuntuusers.de/Ubuntu_Studio"
@@ -847,6 +847,9 @@ msgstr ""
 #: controller_sessions_7
 msgid "Dein Benutzerkonto wurde deaktiviert oder gelöscht."
 msgstr ""
+#: link_community_title
+msgid "Externer Link: zu den Seiten von ubuntuusers"
+msgstr ""
 #: view_metapackages_show_comment_and_ratings
 msgid "Neuste Kommentare und Bewertungen für dieses Bündel"
 msgstr ""
@@ -855,6 +858,9 @@ msgid "zum Benutzerprofil"
 msgstr ""
 #: view_home_news_16
 msgid "Wir haben einen Blog, wo wir aktuelle Informationen zu Communtu eintragen. Hier wird ungefähr einmal die Woche etwas gepostet. Hier werden Ankündigungen und neue Features präsentiert."
+msgstr ""
+#: view_home_donate
+msgid "Für Communtu spenden"
 msgstr ""
 #: view_derivatives_show_3
 msgid "Icon file:"
@@ -867,9 +873,6 @@ msgid "Pakete"
 msgstr ""
 #: direct_indirect_covered_packages
 msgid "Direkt und indirekt enthaltene Pakete"
-msgstr ""
-#: view_home_donate
-msgid "Für Communtu spenden"
 msgstr ""
 #: view_home_news_17
 msgid "Zum Blog"
@@ -1066,6 +1069,9 @@ msgstr ""
 #: view_home_faq_15
 msgid "Wie kann ich ein einzelnes Programm installieren?"
 msgstr ""
+#: community_title
+msgid "ubuntuusers"
+msgstr ""
 #: view_users_new_10
 msgid "Dein Vorname"
 msgstr ""
@@ -1087,11 +1093,11 @@ msgstr ""
 #: view_home_faq_16
 msgid "Gehe dazu bitte auf den Menüpunkt \"Programme suchen\". Dort bekommst Du eine Auswahl von Programmen. Wenn Du Dein gewünschtes Programm gefunden hast, kannst Du dieses durch Klicken auf das Installationssymbol installieren.  Es ist möglich, dass Du vorher noch auf \"Quellen hinzufügen\" klicken musst, da es sein kann, dass das Programm in einer Quelle verfügabr ist, die Deinem System noch nicht bekannt ist."
 msgstr ""
-#: view_debs_index_5
-msgid "Erzeugen"
-msgstr ""
 #: view_home_derivatives_9
 msgid "Über Communtu sinnvoll nachinstallierbare Derivate:"
+msgstr ""
+#: view_debs_index_5
+msgid "Erzeugen"
 msgstr ""
 #: view_users_new_11
 msgid "Dein Nachname"
@@ -1591,9 +1597,6 @@ msgstr ""
 #: view_metapackages_finish_migrate_6
 msgid "Weiter"
 msgstr ""
-#: view_home_home_1
-msgid "http://www.ubuntuusers.de"
-msgstr ""
 #: model_mailer_0
 msgid "Herzlich Willkommen bei Communtu"
 msgstr ""
@@ -1861,6 +1864,9 @@ msgstr ""
 #: view_home_donate_options
 msgid "Es gibt verschiedene Möglichkeiten, etwas zu spenden."
 msgstr ""
+#: link_community
+msgid "http://www.ubuntuusers.de"
+msgstr ""
 #: view_user_profiles__profile_rating_3
 msgid "Achtung! Zum Schluss auf \"Feinauswahl speichern\" klicken."
 msgstr ""
@@ -2010,6 +2016,9 @@ msgid "Spenden"
 msgstr ""
 #: view_home_derivatives_33
 msgid "http://de.wikipedia.org/wiki/GNU-Varianten#Nexenta_OS"
+msgstr ""
+#: preliminary_distribution
+msgid "Vorläufige Distribution"
 msgstr ""
 #: view_user_profiles__installation_27
 msgid "Die Browser Konqueror und Opera bitte erst für "
@@ -2266,11 +2275,11 @@ msgstr ""
 #: view_layouts_application_15
 msgid "angemeldet als  "
 msgstr ""
-#: path
-msgid "Pfad:"
-msgstr ""
 #: view_home_faq_00
 msgid "Häufig gestellte Fragen"
+msgstr ""
+#: path
+msgid "Pfad:"
 msgstr ""
 #: new_category
 msgid "Neue Kategorie"
@@ -2289,6 +2298,9 @@ msgid "neue Nachricht"
 msgstr ""
 #: view_home_faq_01
 msgid "Was ist ein Bündel?"
+msgstr ""
+#: advanced_user
+msgid "Ich bin fortgeschrittener Benutzer und will auch unfertige Versionen von Ubuntu sehen."
 msgstr ""
 #: controller_users_12
 msgid "Benutzer aktiviert"

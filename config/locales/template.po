@@ -199,6 +199,10 @@ msgstr "Published:"
 msgid "Wie kann ich ein Bündel ändern?"
 msgstr "How can I change a bundle?"
 
+#: view_home_donate_why
+msgid "Der Betrieb der Communtu-Webseite basiert vor allem auf dem Einsatz von Freiwilligen; er kostet aber auch Geld (u.a. für Server und Räume). Communtu ist daher auf Spenden angewiesen. Auch kleine Beträge helfen."
+msgstr "The development of Communtu is mainly based on the effort of volunteers but it also costs money (amongst others the server and the rooms). Therefore Communtu depends on donations. Even small amounts of money help."
+
 #: controller_metapackages_3
 msgid "Die Beschreibung darf nicht leer sein"
 msgstr "Description must not be empty"
@@ -210,10 +214,6 @@ msgstr "could not determine URL"
 #: imprint
 msgid "Impressum"
 msgstr "Imprint"
-
-#: view_home_donate_why
-msgid "Der Betrieb der Communtu-Webseite basiert vor allem auf dem Einsatz von Freiwilligen; er kostet aber auch Geld (u.a. für Server und Räume). Communtu ist daher auf Spenden angewiesen. Auch kleine Beträge helfen."
-msgstr "The development of Communtu is mainly based on the effort of volunteers but it also costs money (amongst others the server and the rooms). Therefore Communtu depends on donations. Even small amounts of money help."
 
 #: view_home_derivatives_10
 msgid "http://wiki.ubuntuusers.de/Ubuntu_Studio"
@@ -1141,6 +1141,10 @@ msgstr "dialog-program:"
 msgid "Dein Benutzerkonto wurde deaktiviert oder gelöscht."
 msgstr "Your account has been deactivated or deleted."
 
+#: link_community_title
+msgid "Externer Link: zu den Seiten von ubuntuusers"
+msgstr "External link: to the official Ubuntu forums"
+
 #: view_metapackages_show_comment_and_ratings
 msgid "Neuste Kommentare und Bewertungen für dieses Bündel"
 msgstr "Latest comments and ratings for this bundle"
@@ -1152,6 +1156,10 @@ msgstr "to the profile"
 #: view_home_news_16
 msgid "Wir haben einen Blog, wo wir aktuelle Informationen zu Communtu eintragen. Hier wird ungefähr einmal die Woche etwas gepostet. Hier werden Ankündigungen und neue Features präsentiert."
 msgstr "We have a blog where we post updated information about Communtu. It gets a new post about once a week. Announcement and new features will be presented here."
+
+#: view_home_donate
+msgid "Für Communtu spenden"
+msgstr "Make a donation for Communtu"
 
 #: view_derivatives_show_3
 msgid "Icon file:"
@@ -1168,10 +1176,6 @@ msgstr "packages"
 #: direct_indirect_covered_packages
 msgid "Direkt und indirekt enthaltene Pakete"
 msgstr "Direct and indirect covered packages"
-
-#: view_home_donate
-msgid "Für Communtu spenden"
-msgstr "Make a donation for Communtu"
 
 #: view_home_news_17
 msgid "Zum Blog"
@@ -1437,6 +1441,10 @@ msgstr " Thank you for your donation"
 msgid "Wie kann ich ein einzelnes Programm installieren?"
 msgstr "How can I install a single program?"
 
+#: community_title
+msgid "ubuntuusers"
+msgstr "http://ubuntuforums.org/"
+
 #: view_users_new_10
 msgid "Dein Vorname"
 msgstr "your first name"
@@ -1465,13 +1473,13 @@ msgstr "You have new messages in your inbox."
 msgid "Gehe dazu bitte auf den Menüpunkt \"Programme suchen\". Dort bekommst Du eine Auswahl von Programmen. Wenn Du Dein gewünschtes Programm gefunden hast, kannst Du dieses durch Klicken auf das Installationssymbol installieren.  Es ist möglich, dass Du vorher noch auf \"Quellen hinzufügen\" klicken musst, da es sein kann, dass das Programm in einer Quelle verfügabr ist, die Deinem System noch nicht bekannt ist."
 msgstr "To install a program, go to \"Search programs\" and you get a list of all programs. When you find the program you are looking for, you just have to click on the installation-icon. It could be that you have to add the repository of that program first. To do so, click on \"Add sources\" and Communtu will add the sources to your system."
 
-#: view_debs_index_5
-msgid "Erzeugen"
-msgstr "Create  "
-
 #: view_home_derivatives_9
 msgid "Über Communtu sinnvoll nachinstallierbare Derivate:"
 msgstr "With Communtu installable derivatives:"
+
+#: view_debs_index_5
+msgid "Erzeugen"
+msgstr "Create  "
 
 #: view_users_new_11
 msgid "Dein Nachname"
@@ -2183,10 +2191,6 @@ msgstr "    confirm password:"
 msgid "Weiter"
 msgstr "Forward "
 
-#: view_home_home_1
-msgid "http://www.ubuntuusers.de"
-msgstr "http://www.ubuntuusers.de (German)"
-
 #: model_mailer_0
 msgid "Herzlich Willkommen bei Communtu"
 msgstr "Welcome to Communtu"
@@ -2549,6 +2553,10 @@ msgstr "To find the Communtu-sources in a Gnome-based system, you navigate to \"
 msgid "Es gibt verschiedene Möglichkeiten, etwas zu spenden."
 msgstr "There are several ways of donating."
 
+#: link_community
+msgid "http://www.ubuntuusers.de"
+msgstr "http://www.ubuntuusers.de (German)"
+
 #: view_user_profiles__profile_rating_3
 msgid "Achtung! Zum Schluss auf \"Feinauswahl speichern\" klicken."
 msgstr "Attention! When finished, don't forget to click on \"Save fine selection\"."
@@ -2748,6 +2756,10 @@ msgstr "Donate"
 #: view_home_derivatives_33
 msgid "http://de.wikipedia.org/wiki/GNU-Varianten#Nexenta_OS"
 msgstr "http://en.wikipedia.org/wiki/Nexenta_OS"
+
+#: preliminary_distribution
+msgid "Vorläufige Distribution"
+msgstr "Preliminary distribution"
 
 #: view_user_profiles__installation_27
 msgid "Die Browser Konqueror und Opera bitte erst für "
@@ -3089,13 +3101,13 @@ msgstr "Bundle created by "
 msgid "angemeldet als  "
 msgstr "Logged in as "
 
-#: path
-msgid "Pfad:"
-msgstr "Path:"
-
 #: view_home_faq_00
 msgid "Häufig gestellte Fragen"
 msgstr "Frequently Asked Questions"
+
+#: path
+msgid "Pfad:"
+msgstr "Path:"
 
 #: new_category
 msgid "Neue Kategorie"
@@ -3120,6 +3132,10 @@ msgstr "new message"
 #: view_home_faq_01
 msgid "Was ist ein Bündel?"
 msgstr "What is a bundle?"
+
+#: advanced_user
+msgid "Ich bin fortgeschrittener Benutzer und will auch unfertige Versionen von Ubuntu sehen."
+msgstr "I'm an advanced user and want to see the preliminary Ubuntu versions."
 
 #: controller_users_12
 msgid "Benutzer aktiviert"

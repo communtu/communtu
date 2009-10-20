@@ -850,6 +850,9 @@ msgstr ""
 #: view_users_show_8
 msgid "Message"
 msgstr ""
+#: link_community_title
+msgid "External link: to the official Ubuntu forums"
+msgstr ""
 #: view_derivatives_show_3
 msgid "icon-file:"
 msgstr ""
@@ -1063,6 +1066,9 @@ msgstr ""
 #: view_user_profiles__profile_data_6
 msgid "Please select an Ubuntu version. "
 msgstr ""
+#: community_title
+msgid "http://ubuntuforums.org/"
+msgstr ""
 #: view_home_faq_15
 msgid "How can I install a single program?"
 msgstr ""
@@ -1201,8 +1207,14 @@ msgstr ""
 #: view_user_profiles__installation_16
 msgid "register sources and keys"
 msgstr ""
-#: view_home_derivatives_24
-msgid "Derivatives, which should be installed with the derivative installation-CD:"
+#: view_user_profiles__installation_17
+msgid "Just click on the link and open the file and open it with the recommended package-installer."
+msgstr ""
+#: yes1
+msgid "yes"
+msgstr ""
+#: view_packages_new_3
+msgid "Version"
 msgstr ""
 #: view_home_home_rating_headline
 msgid "Best rated bundles"
@@ -1213,14 +1225,8 @@ msgstr ""
 #: view_sent_new_3
 msgid "Message:"
 msgstr ""
-#: view_packages_new_3
-msgid "Version"
-msgstr ""
-#: yes1
-msgid "yes"
-msgstr ""
-#: view_user_profiles__installation_17
-msgid "Just click on the link and open the file and open it with the recommended package-installer."
+#: view_home_derivatives_24
+msgid "Derivatives, which should be installed with the derivative installation-CD:"
 msgstr ""
 #: view_packages_new_4
 msgid "Source"
@@ -1594,9 +1600,6 @@ msgstr ""
 #: view_metapackages_finish_migrate_6
 msgid "Forward "
 msgstr ""
-#: view_home_home_1
-msgid "http://www.ubuntuusers.de (German)"
-msgstr ""
 #: model_mailer_0
 msgid "Welcome to Communtu"
 msgstr ""
@@ -1861,6 +1864,9 @@ msgstr ""
 #: view_home_donate_options
 msgid "There are several ways of donating."
 msgstr ""
+#: link_community
+msgid "http://www.ubuntuusers.de (German)"
+msgstr ""
 #: view_user_profiles__profile_rating_3
 msgid "Attention! When finished, don't forget to click on \"Save fine selection\"."
 msgstr ""
@@ -2010,6 +2016,9 @@ msgid "Donate"
 msgstr ""
 #: view_home_derivatives_33
 msgid "http://en.wikipedia.org/wiki/Nexenta_OS"
+msgstr ""
+#: preliminary_distribution
+msgid "Preliminary distribution"
 msgstr ""
 #: view_user_profiles__installation_27
 msgid "Please configure "
@@ -2266,11 +2275,11 @@ msgstr ""
 #: view_layouts_application_15
 msgid "Logged in as "
 msgstr ""
-#: path
-msgid "Path:"
-msgstr ""
 #: view_home_faq_00
 msgid "Frequently Asked Questions"
+msgstr ""
+#: path
+msgid "Path:"
 msgstr ""
 #: new_category
 msgid "New category"
@@ -2289,6 +2298,9 @@ msgid "new message"
 msgstr ""
 #: view_home_faq_01
 msgid "What is a bundle?"
+msgstr ""
+#: advanced_user
+msgid "I'm an advanced user and want to see the preliminary Ubuntu versions."
 msgstr ""
 #: controller_users_12
 msgid "User activated"

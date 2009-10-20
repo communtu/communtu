@@ -286,6 +286,7 @@ en:
   controller_sessions_7: Your account has been deactivated or deleted.
   view_home_news_15: Our blog
   view_users_show_8: Message
+  link_community_title: "External link: to the official Ubuntu forums"
   view_derivatives_show_3: "icon-file:"
   view_layouts_application_22: to the profile
   view_metapackages_show_comment_and_ratings: Latest comments and ratings for this bundle
@@ -359,6 +360,7 @@ en:
   view_home_derivatives_8: You can also take a look of which packages a derivative consists.
   view_layouts_application_29: Guest
   view_user_profiles__profile_data_6: "Please select an Ubuntu version. "
+  community_title: http://ubuntuforums.org/
   view_home_faq_15: How can I install a single program?
   view_home_success_0: " Thank you for your donation"
   view_user_profiles__profile_data_7: How do I find out the version which is in use?
@@ -408,13 +410,13 @@ en:
   view_admins_test_all_1: Every repositorie could be reached.
   view_repositories_index_5: new repository
   view_user_profiles__installation_16: register sources and keys
+  view_home_derivatives_24: "Derivatives, which should be installed with the derivative installation-CD:"
   view_home_home_rating_headline: Best rated bundles
   view_my_mailer_mail_1: "The following comment was made:"
   view_sent_new_3: "Message:"
   view_packages_new_3: Version
   yes1: "yes"
   view_user_profiles__installation_17: Just click on the link and open the file and open it with the recommended package-installer.
-  view_home_derivatives_24: "Derivatives, which should be installed with the derivative installation-CD:"
   view_home_derivatives_25: http://en.wikipedia.org/wiki/Xfce
   controller_debs_0: Debian-packages
   view_categories_show_0: "Name: "
@@ -561,7 +563,6 @@ en:
   view_home_derivatives_51: " - Installation of programs and version, which are not available through the official repositories."
   controller_metapackages_no_renaming: Released bundles cannot be renamed.
   model_mailer_0: Welcome to Communtu
-  view_home_home_1: http://www.ubuntuusers.de (German)
   view_metapackages_finish_migrate_6: "Forward "
   view_passwords_edit_1: "    confirm password:"
   view_home_derivatives_52: " - a kind of Automatix for the ultimate edition."
@@ -649,6 +650,7 @@ en:
   view_metapackages_edit_gpl: I accept to publish the bundle information under the <a href="http://www.gnu.de/documents/gpl.de.html">GNU General public license</a> (Version 2.0 or higher).
   view_user_profiles__profile_rating_1: "Here you can choose the use of your computer in detail. \n\
     With a click on the "
+  link_community: http://www.ubuntuusers.de (German)
   view_home_donate_options: There are several ways of donating.
   view_home_faq_22: To find the Communtu-sources in a Gnome-based system, you navigate to "System" -> "Administration" -> "Software Sources" -> "Third-Party Software". To find the Communtu-sources in a KDE-based system, you open the K-menu and then navigate to "Programs" -> "System" -> "Administration" -> Software Sources" -> "Third-Party Software". Here you deactivate the Communtu-sources. When deactivating the Communtu-sources, the installed programs won't be uninstalled nor are the updates. Updates are still obtained from the official sources, which may be added by Communtu.
   view_user_profiles__profile_rating_2: " you can \n\
@@ -699,6 +701,7 @@ en:
   view_packages_show_9: "/5 stars&nbsp;&nbsp; "
   view_user_profiles_help_1: Open a new terminal. Click on "Applications" -> "Accessories" -> "Terminal"
   view_user_profiles__installation_25: installatin via apturl
+  preliminary_distribution: Preliminary distribution
   view_home_derivatives_33: http://en.wikipedia.org/wiki/Nexenta_OS
   view_layouts_donate: Donate
   view_user_profiles_help_2: "There you enter the following:"
@@ -788,12 +791,13 @@ en:
   category_without_colon: Category
   controller_users_11: A problem while deleting a user occured.
   new_category: New category
-  view_home_faq_00: Frequently Asked Questions
   path: "Path:"
+  view_home_faq_00: Frequently Asked Questions
   view_layouts_application_15: "Logged in as "
   view_metapackages_show_0: "Bundle created by "
   view_users_new_9: Yes, I want to be added to the discussion-mailinglist.
   controller_users_12: User activated
+  advanced_user: I'm an advanced user and want to see the preliminary Ubuntu versions.
   view_home_faq_01: What is a bundle?
   view_layouts_application_16: new message
   view_users_edit_9: "  With a click on \"save\" this account will be made permanent."
