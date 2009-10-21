@@ -53,14 +53,14 @@ class VideosController < ApplicationController
   def destroy
     @video = Video.find(params[:id])
         @translation_url = Translation.find(:all, :conditions => { :translatable_id => @video.url_tid })
-    m = @translation_url.count
+    m = @translation_url.length
     e = 0
     m.times do
      @translation_url[e].delete
      e = e + 1
     end
     @translation_des = Translation.find(:all, :conditions => { :translatable_id => @video.description_tid })
-    m = @translation_des.count
+    m = @translation_des.length
     e = 0
     m.times do
      @translation_des[e].delete

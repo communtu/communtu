@@ -96,15 +96,35 @@ class PackagesController < ApplicationController
   def update 
     @package = Package.find(params[:id])
     # enter new video
-    if !params[:video_url].nil? then
+if !params[:video_url].nil? then
       if params[:video_descr][:v]!= "" then
         descr = params[:video_descr][:v]
-      else 
+      else
         descr = nil
-      end  
+      end
       if ((descr != nil) && (!params[:video_url].nil?))
-      Video.create(:base_package_id => @package.id, :url => params[:video_url], :description => descr)
-      end    
+    @video = Video.new(params[:video])
+    @translation1 = Translation.new
+    @translation2 = Translation.new
+    @last_trans = Translation.find(:first, :order => "translatable_id DESC")
+    last_id = @last_trans.translatable_id
+    @translation1.translatable_id = last_id + 1
+    @translation1.contents = descr
+    @translation2.translatable_id = last_id + 2
+    @translation2.contents = params[:video_url]
+    if @translation1.contents != ""
+      @video.description_tid = last_id + 1
+      @translation1.language_code = I18n.locale.to_s
+      @translation1.save
+    end
+       if @translation2.contents != ""
+      @video.url_tid = last_id + 2
+      @translation2.language_code = I18n.locale.to_s
+      @translation2.save
+    end
+      @video.base_package_id = @package.id
+      @video.save
+        end
     end
     # enter new icn file
     if !params[:package][:icon_file].nil? && (params[:package][:icon_file].size > 1) then
