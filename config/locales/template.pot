@@ -157,6 +157,9 @@ msgstr ""
 #: controller_metapackages_3
 msgid "Die Beschreibung darf nicht leer sein"
 msgstr ""
+#: invisible_distribution
+msgid "Unsichtbare Distribution"
+msgstr ""
 #: model_package_11
 msgid "Konnte keine URL feststellen"
 msgstr ""
@@ -228,6 +231,9 @@ msgid "non-free"
 msgstr ""
 #: blog_2
 msgid "Blog"
+msgstr ""
+#: migrate_bundles
+msgid "Bündel von Vorgänger übernehmen"
 msgstr ""
 #: view_home_derivatives_13
 msgid " - der PC wird zum Videorekorder. Bei Film \"Freak\" auswählen, und es wird mitinstalliert. Empfohlen: CPU mit 2 GHz, 1024 MByte RAM, 10 GByte Festplattenplatz für das Frontend, 80+ GByte für das Backend, eine Grafikkarte mit 128 MByte RAM mit TV-Ausgang und eine unterstützte TV-Karte."
@@ -616,6 +622,9 @@ msgstr ""
 #: register
 msgid "Registrieren"
 msgstr ""
+#: cannot_migrate
+msgid "Kann nur migrieren, wenn die Distribution frisch ist"
+msgstr ""
 #: change
 msgid "ändern"
 msgstr ""
@@ -919,6 +928,9 @@ msgstr ""
 #: email_with_colon
 msgid "E-Mail: "
 msgstr ""
+#: predecessor
+msgid "Vorgänger"
+msgstr ""
 #: email_without_colon
 msgid "E-Mail"
 msgstr ""
@@ -964,6 +976,9 @@ msgstr ""
 #: view_home_faq_11
 msgid "Wie sichere ich die Programmliste meines Gesamtsystems?"
 msgstr ""
+#: view_home_derivatives_5
+msgid "Alle Derivate können unter der "
+msgstr ""
 #: model_user_meta_tabz_0
 msgid "Meine Bündel"
 msgstr ""
@@ -975,9 +990,6 @@ msgid "Bündel aus Paketliste"
 msgstr ""
 #: view_debs_index_0
 msgid "Fehlgeschlagene oder laufende Deb-Generierungen"
-msgstr ""
-#: view_home_derivatives_5
-msgid "Alle Derivate können unter der "
 msgstr ""
 #: view_user_profiles__profile_data_3
 msgid "Welche Aufgaben willst du mit deinem Computer erledigen? (um grob eine Auswahl zu treffen, Feineinstellungen später möglich)"
@@ -994,6 +1006,9 @@ msgstr ""
 #: view_home_faq_12
 msgid "Unter \"Bündel\" und dann \"Neues Bündel\" gibt es den Punkt \"Bündel aus Paketliste\", der anzuklicken ist. Dort ist beschrieben, wie Du Deine Paketliste in Communtu hochladen kannst."
 msgstr ""
+#: view_home_derivatives_6
+msgid "Software-Auswahl"
+msgstr ""
 #: model_user_meta_tabz_1
 msgid "Alle veröffentlichten Bündel"
 msgstr ""
@@ -1005,9 +1020,6 @@ msgid "Zurück zum Communtu-Menü"
 msgstr ""
 #: licence
 msgid "Lizenztyp:"
-msgstr ""
-#: view_home_derivatives_6
-msgid "Software-Auswahl"
 msgstr ""
 #: view_home_cancel_0
 msgid "Communtu -\n leider hat da etwas beim Spenden nicht funktioniert."
@@ -1024,6 +1036,9 @@ msgstr ""
 #: view_home_faq_13
 msgid "Wie finde ich Programme?"
 msgstr ""
+#: view_home_derivatives_7
+msgid "unter der Kategorie \"Derivate\" zur Installation ausgewählt werden."
+msgstr ""
 #: category_with_colon
 msgid "Kategorie:"
 msgstr ""
@@ -1032,9 +1047,6 @@ msgid "Ubuntu-Pakete"
 msgstr ""
 #: view_debs_index_2
 msgid "  Keine fehlgeschlagenen Deb-Generierungen vorhanden! Glückwunsch!"
-msgstr ""
-#: view_home_derivatives_7
-msgid "unter der Kategorie \"Derivate\" zur Installation ausgewählt werden."
 msgstr ""
 #: view_home_cancel_1
 msgid "Endweder versuchst Du es noch einmal oder Du nutzt die Möglichkeit per Überweisung"
@@ -1051,14 +1063,14 @@ msgstr ""
 #: view_home_faq_14
 msgid "Gehe dazu bitte auf den Menüpunkt \"Programme suchen\". Hier hast Du ein Suchfeld, in dem Du den Namen des gesuchten Prgramms angeben kannst. Weiter ist es möglich die Suche nur über Programme durchzuführen, in dem das Feld \"Nur Programme\" angeklickt wird und somit sonstige Bibliotheken nicht mehr angezeigt werden. Weiter ist es auch möglich eine Debian-Section auszuwählen, der die Auswahl an Programmen anhand von Kategorien vorselektiert."
 msgstr ""
+#: view_home_derivatives_8
+msgid "Ebenso kannst du dort nachgucken, aus welchen Paketen ein Derivat besteht."
+msgstr ""
 #: model_user_meta_tabz_3
 msgid "Veröffentlichte Bündel"
 msgstr ""
 #: view_debs_index_3
 msgid "Alle fehlgeschlagenen debs erzeugen <b>Achtung: nur unter admin.communtu.de ausführen!</b>"
-msgstr ""
-#: view_home_derivatives_8
-msgid "Ebenso kannst du dort nachgucken, aus welchen Paketen ein Derivat besteht."
 msgstr ""
 #: view_user_profiles__profile_data_6
 msgid "Wähle bitte deine Ubuntu-Version aus. "
@@ -1468,6 +1480,9 @@ msgstr ""
 #: view_home_contact_us_1
 msgid "Hier hast Du die Möglichkeit uns Anregungen und Kritik zu Communtu zu senden."
 msgstr ""
+#: migrate_repositories
+msgid "Repositories von Vorgänger übernehmen"
+msgstr ""
 #: view_cart_update_2
 msgid "Expertenlevel:"
 msgstr ""
@@ -1573,6 +1588,9 @@ msgstr ""
 #: view_metapackages_finish_migrate_3
 msgid "Folgende Pakete konnten jedoch nicht migriert werden:"
 msgstr ""
+#: first_sync_repos
+msgid "Bitte erst die Repositories synchronisieren. Dies geschieht normalerweise automatisch innerhalb von einer Woche. Achtung: an dieser Stelle wird nur geprüft, ob überhaupt etwas synchronisiert wurde, nicht, ob der Prozess fertig ist."
+msgstr ""
 #: ubuntu_derivatives
 msgid "Ubuntu-Derivate"
 msgstr ""
@@ -1672,6 +1690,9 @@ msgstr ""
 #: view_home_home_5
 msgid "Die Seitenleiste links bietet folgende Möglichkeiten:"
 msgstr ""
+#: view_home_derivatives_55
+msgid " - Mediacenter."
+msgstr ""
 #: model_mailer_4
 msgid "Dein Passwort wurde zurückgesetzt."
 msgstr ""
@@ -1684,11 +1705,11 @@ msgstr ""
 #: view_admins_sync_all_2
 msgid "Repositories synchronisiert"
 msgstr ""
-#: view_home_derivatives_55
-msgid " - Mediacenter."
-msgstr ""
 #: view_home_home_6
 msgid "<b>Installation</b> bietet dir eine Zusammenstellung (Bündelung) von Programmen für die Installation auf deinem Computer an, entsprechend deinen Angaben, für welche Aufgaben du deinen Ubuntu-PC benutzen willst."
+msgstr ""
+#: view_home_derivatives_56
+msgid "http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix"
 msgstr ""
 #: model_mailer_5
 msgid "Vorschlag eines Repositorys"
@@ -1705,11 +1726,11 @@ msgstr ""
 #: view_admins_sync_package_1
 msgid "Fehler: Repository konnte nicht synchronisiert werden"
 msgstr ""
-#: view_home_derivatives_56
-msgid "http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix"
-msgstr ""
 #: view_home_home_7
 msgid "<b>Bündel verwalten</b> Hast du gute Erfahrungen mit Programmen gemacht? Dann kannst du sie hier thematisch bündeln, oder auch bestehende Bündel angucken. "
+msgstr ""
+#: view_home_derivatives_57
+msgid "für Subnotebooks/EEE-PCs"
 msgstr ""
 #: view_admins_show_0
 msgid "Here should be an introduction to the admin area"
@@ -1734,9 +1755,6 @@ msgid "Name: "
 msgstr ""
 #: view_admins_sync_package_2
 msgid "Repository synchronisiert"
-msgstr ""
-#: view_home_derivatives_57
-msgid "für Subnotebooks/EEE-PCs"
 msgstr ""
 #: view_home_home_8
 msgid "<b>Programme suchen</b> Hier kannst du nach einzelnen Ubuntu-Programmen (Paketen) suchen."
@@ -2298,6 +2316,9 @@ msgid "neue Nachricht"
 msgstr ""
 #: view_home_faq_01
 msgid "Was ist ein Bündel?"
+msgstr ""
+#: bundle_open_new_window
+msgid "Bündel wird im neuen Fenster geöffnet."
 msgstr ""
 #: advanced_user
 msgid "Ich bin fortgeschrittener Benutzer und will auch unfertige Versionen von Ubuntu sehen."

@@ -148,6 +148,9 @@ msgstr ""
 #: controller_metapackages_3
 msgid "Description must not be empty"
 msgstr ""
+#: invisible_distribution
+msgid " Invisible distribution"
+msgstr ""
 #: view_packages__packagelist_2
 msgid "Search:"
 msgstr ""
@@ -228,6 +231,9 @@ msgid "non-free"
 msgstr ""
 #: blog_2
 msgid "Blog"
+msgstr ""
+#: migrate_bundles
+msgid "Take over bundles from parent"
 msgstr ""
 #: view_home_derivatives_13
 msgid " - the PC becomes a VCR. Select \"Freak\" at \"Movie\" and it will be installed. Recommended: CPU with 2 GHz, 1024 MB-RAM, 10 GB free harddisk space for the frontend, at least 80 GB for the backend, a graphic card with at least 128 MB RAM and a TV Out and a supported TV card."
@@ -619,6 +625,9 @@ msgstr ""
 #: register
 msgid "Register"
 msgstr ""
+#: cannot_migrate
+msgid "Can only migrate to fresh distribution"
+msgstr ""
 #: change
 msgid "change"
 msgstr ""
@@ -912,6 +921,9 @@ msgid "Preparing the installation: adjust the preadjustments"
 msgstr ""
 #: email_with_colon
 msgid "E-Mail:"
+msgstr ""
+#: predecessor
+msgid "Parent"
 msgstr ""
 #: email_without_colon
 msgid "e-mail"
@@ -1207,23 +1219,23 @@ msgstr ""
 #: view_user_profiles__installation_16
 msgid "register sources and keys"
 msgstr ""
+#: yes1
+msgid "yes"
+msgstr ""
 #: view_user_profiles__installation_17
 msgid "Just click on the link and open the file and open it with the recommended package-installer."
 msgstr ""
-#: yes1
-msgid "yes"
+#: view_sent_new_3
+msgid "Message:"
 msgstr ""
 #: view_packages_new_3
 msgid "Version"
 msgstr ""
-#: view_home_home_rating_headline
-msgid "Best rated bundles"
-msgstr ""
 #: view_my_mailer_mail_1
 msgid "The following comment was made:"
 msgstr ""
-#: view_sent_new_3
-msgid "Message:"
+#: view_home_home_rating_headline
+msgid "Best rated bundles"
 msgstr ""
 #: view_home_derivatives_24
 msgid "Derivatives, which should be installed with the derivative installation-CD:"
@@ -1471,6 +1483,9 @@ msgstr ""
 #: view_home_contact_us_1
 msgid "Here you have the possibility to send us suggestions and critique about Communtu."
 msgstr ""
+#: migrate_repositories
+msgid "Take over repositories from parent"
+msgstr ""
 #: view_cart_update_2
 msgid "Level of expert:"
 msgstr ""
@@ -1576,6 +1591,9 @@ msgstr ""
 #: view_metapackages_finish_migrate_3
 msgid "The following packages could not be migrated:"
 msgstr ""
+#: first_sync_repos
+msgid "Please synchronise the repositories first. Normally, this is done automatically within one weak. Attention: it is only checked if anything is being synchronised at all, not if the process is finished."
+msgstr ""
 #: ubuntu_derivatives
 msgid "Ubuntu derivatives"
 msgstr ""
@@ -1672,6 +1690,9 @@ msgstr ""
 #: view_home_home_5
 msgid "The menu on the left offers the following possibilities:"
 msgstr ""
+#: view_home_derivatives_55
+msgid " - Mediacenter."
+msgstr ""
 #: model_mailer_4
 msgid "Your password has been restored."
 msgstr ""
@@ -1684,11 +1705,11 @@ msgstr ""
 #: view_admins_sync_all_2
 msgid "repositories synchronised"
 msgstr ""
-#: view_home_derivatives_55
-msgid " - Mediacenter."
-msgstr ""
 #: view_home_home_6
 msgid "<b>Installation</b> offers you a summary (bundling) of programs for the installation on your computer, according to your instructions on how you want to use your Ubuntu-PC."
+msgstr ""
+#: view_home_derivatives_56
+msgid "http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix (German)"
 msgstr ""
 #: model_mailer_5
 msgid "suggestion of a repository"
@@ -1705,11 +1726,11 @@ msgstr ""
 #: view_admins_sync_package_1
 msgid "Error: couldn't synchronise repository"
 msgstr ""
-#: view_home_derivatives_56
-msgid "http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix (German)"
-msgstr ""
 #: view_home_home_7
 msgid "<b>Administrate bundles</b> Did you have good experiences with the programs? Bundle them thematically or take a look at existing bundles."
+msgstr ""
+#: view_home_derivatives_57
+msgid " for subnotebooks/EEE-PCs."
 msgstr ""
 #: view_admins_show_0
 msgid "Here should be an introduction to the admin area"
@@ -1734,9 +1755,6 @@ msgid "Name:"
 msgstr ""
 #: view_admins_sync_package_2
 msgid "repository synchronised"
-msgstr ""
-#: view_home_derivatives_57
-msgid " for subnotebooks/EEE-PCs."
 msgstr ""
 #: view_home_home_8
 msgid "<b>Search program</b> Here you can search for single Ubuntu-programs (packages)."
@@ -2298,6 +2316,9 @@ msgid "new message"
 msgstr ""
 #: view_home_faq_01
 msgid "What is a bundle?"
+msgstr ""
+#: bundle_open_new_window
+msgid "Bundle will be opend in a new window."
 msgstr ""
 #: advanced_user
 msgid "I'm an advanced user and want to see the preliminary Ubuntu versions."

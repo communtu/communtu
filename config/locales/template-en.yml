@@ -45,6 +45,7 @@ en:
   view_users_index_0: All users
   view_home_faq_09: How can I change a bundle?
   controller_metapackages_3: Description must not be empty
+  invisible_distribution: " Invisible distribution"
   view_packages__packagelist_2: "Search:"
   model_package_11: could not determine URL
   imprint: Imprint
@@ -72,6 +73,7 @@ en:
   achtung: Attention! Will be available soon at Communtu.
   helper_distributions_1: non-free
   blog_2: Blog
+  migrate_bundles: Take over bundles from parent
   view_home_derivatives_13: " - the PC becomes a VCR. Select \"Freak\" at \"Movie\" and it will be installed. Recommended: CPU with 2 GHz, 1024 MB-RAM, 10 GB free harddisk space for the frontend, at least 80 GB for the backend, a graphic card with at least 128 MB RAM and a TV Out and a supported TV card."
   view_metapackages_immediate_conflicts_0: Conflicts inside bundles
   controller_metapackages_6: The bundle-name is already in use<br>
@@ -209,6 +211,7 @@ en:
   controller_admins_0: admninistration section
   distribution: Distribution
   register: Register
+  cannot_migrate: Can only migrate to fresh distribution
   change: change
   view_home_about_5: To start, choose <b>Installation</b>.
   controller_users_4: An error occurred with the guest session.
@@ -307,6 +310,7 @@ en:
   view_layouts_application_24: DOWNLOAD
   view_user_profiles__profile_data_0: "Preparing the installation: adjust the preadjustments"
   email_with_colon: "E-Mail:"
+  predecessor: Parent
   email_without_colon: e-mail
   view_user_mailer_activation_0: ", your account has been activated. Please follow this link:"
   view_home_derivatives_3: http://wiki.ubuntuusers.de/Was_ist_Linux?#Was-sind-Derivate-einer-Distribution (German)
@@ -413,10 +417,10 @@ en:
   view_home_derivatives_24: "Derivatives, which should be installed with the derivative installation-CD:"
   view_home_home_rating_headline: Best rated bundles
   view_my_mailer_mail_1: "The following comment was made:"
-  view_sent_new_3: "Message:"
   view_packages_new_3: Version
-  yes1: "yes"
+  view_sent_new_3: "Message:"
   view_user_profiles__installation_17: Just click on the link and open the file and open it with the recommended package-installer.
+  yes1: "yes"
   view_home_derivatives_25: http://en.wikipedia.org/wiki/Xfce
   controller_debs_0: Debian-packages
   view_categories_show_0: "Name: "
@@ -495,6 +499,7 @@ en:
   view_user_profiles__installation_1: In order to install, you have to specify some things at "Preadjustment" or "Details".
   controller_suggestion_2: Add repositories and keys for the user
   view_cart_update_2: "Level of expert:"
+  migrate_repositories: Take over repositories from parent
   view_home_contact_us_1: Here you have the possibility to send us suggestions and critique about Communtu.
   view_home_home_28: "Download:"
   view_home_icons_23: Message-icon
@@ -538,6 +543,7 @@ en:
   view_roles__role_0: delete role
   view_user_mailer_signup_notification_1: "Your username is:"
   ubuntu_derivatives: Ubuntu derivatives
+  first_sync_repos: "Please synchronise the repositories first. Normally, this is done automatically within one weak. Attention: it is only checked if anything is being synchronised at all, not if the process is finished."
   view_metapackages_finish_migrate_3: "The following packages could not be migrated:"
   view_my_mailer_mailerror_0: |-
     Hello, 
@@ -586,21 +592,20 @@ en:
     Original message by {{user}} from {{datum}}}  
 
   view_home_home_4: More ...
-  view_home_derivatives_55: " - Mediacenter."
   view_admins_sync_all_2: repositories synchronised
   controller_metapackages_reset: Reset bundle error manually (after solving the problems).
   view_distributions_show_1: check everything
   model_mailer_4: Your password has been restored.
+  view_home_derivatives_55: " - Mediacenter."
   view_home_home_5: "The menu on the left offers the following possibilities:"
   view_layouts_application_warning: "Attention: the webserver will be down soon due to some maintenance work!"
-  view_home_derivatives_56: http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix (German)
   view_admins_sync_package_1: "Error: couldn't synchronise repository"
   view_distributions_show_2: synchronise everything
   controller_repositories_0: repositories
   controller_metapackages_conflicts: This bundle contains packages, which are in conflict!
   model_mailer_5: suggestion of a repository
+  view_home_derivatives_56: http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix (German)
   view_home_home_6: <b>Installation</b> offers you a summary (bundling) of programs for the installation on your computer, according to your instructions on how you want to use your Ubuntu-PC.
-  view_home_derivatives_57: " for subnotebooks/EEE-PCs."
   view_admins_sync_package_2: repository synchronised
   name_with_colon: "Name:"
   view_distributions_show_3: read sources.list
@@ -609,6 +614,7 @@ en:
   description: Description
   helper_distributions_10: " and edit"
   view_admins_show_0: Here should be an introduction to the admin area
+  view_home_derivatives_57: " for subnotebooks/EEE-PCs."
   view_home_home_7: <b>Administrate bundles</b> Did you have good experiences with the programs? Bundle them thematically or take a look at existing bundles.
   view_admins_sync_package_3: "Repository: "
   view_distributions_show_4: "add repository "
@@ -798,6 +804,7 @@ en:
   view_users_new_9: Yes, I want to be added to the discussion-mailinglist.
   controller_users_12: User activated
   advanced_user: I'm an advanced user and want to see the preliminary Ubuntu versions.
+  bundle_open_new_window: Bundle will be opend in a new window.
   view_home_faq_01: What is a bundle?
   view_layouts_application_16: new message
   view_users_edit_9: "  With a click on \"save\" this account will be made permanent."

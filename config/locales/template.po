@@ -207,6 +207,10 @@ msgstr "The development of Communtu is mainly based on the effort of volunteers 
 msgid "Die Beschreibung darf nicht leer sein"
 msgstr "Description must not be empty"
 
+#: invisible_distribution
+msgid "Unsichtbare Distribution"
+msgstr " Invisible distribution"
+
 #: model_package_11
 msgid "Konnte keine URL feststellen"
 msgstr "could not determine URL"
@@ -302,6 +306,10 @@ msgstr "non-free"
 #: blog_2
 msgid "Blog"
 msgstr "Blog"
+
+#: migrate_bundles
+msgid "Bündel von Vorgänger übernehmen"
+msgstr "Take over bundles from parent"
 
 #: view_home_derivatives_13
 msgid " - der PC wird zum Videorekorder. Bei Film \"Freak\" auswählen, und es wird mitinstalliert. Empfohlen: CPU mit 2 GHz, 1024 MByte RAM, 10 GByte Festplattenplatz für das Frontend, 80+ GByte für das Backend, eine Grafikkarte mit 128 MByte RAM mit TV-Ausgang und eine unterstützte TV-Karte."
@@ -833,6 +841,10 @@ msgstr "Distribution"
 msgid "Registrieren"
 msgstr "Register"
 
+#: cannot_migrate
+msgid "Kann nur migrieren, wenn die Distribution frisch ist"
+msgstr "Can only migrate to fresh distribution"
+
 #: change
 msgid "ändern"
 msgstr "change"
@@ -1237,6 +1249,10 @@ msgstr "Suggest repository"
 msgid "E-Mail: "
 msgstr "E-Mail:"
 
+#: predecessor
+msgid "Vorgänger"
+msgstr "Parent"
+
 #: email_without_colon
 msgid "E-Mail"
 msgstr "e-mail"
@@ -1297,6 +1313,10 @@ msgstr "Link to the repository"
 msgid "Wie sichere ich die Programmliste meines Gesamtsystems?"
 msgstr "How do I save the program-list of my system?"
 
+#: view_home_derivatives_5
+msgid "Alle Derivate können unter der "
+msgstr "Each derivative under "
+
 #: model_user_meta_tabz_0
 msgid "Meine Bündel"
 msgstr "My bundles"
@@ -1312,10 +1332,6 @@ msgstr "Bundle from packages-list"
 #: view_debs_index_0
 msgid "Fehlgeschlagene oder laufende Deb-Generierungen"
 msgstr "Failed or running deb-generation"
-
-#: view_home_derivatives_5
-msgid "Alle Derivate können unter der "
-msgstr "Each derivative under "
 
 #: view_user_profiles__profile_data_3
 msgid "Welche Aufgaben willst du mit deinem Computer erledigen? (um grob eine Auswahl zu treffen, Feineinstellungen später möglich)"
@@ -1337,6 +1353,10 @@ msgstr "Why should this be implemented in Communtu? (If you want to be informed 
 msgid "Unter \"Bündel\" und dann \"Neues Bündel\" gibt es den Punkt \"Bündel aus Paketliste\", der anzuklicken ist. Dort ist beschrieben, wie Du Deine Paketliste in Communtu hochladen kannst."
 msgstr "After a click on \"Bundle\" and \"New bundle\" you can find the link \"Create bundle from a packages-list\". A new page is loaded with instructions on how to upload your package-list to Communtu."
 
+#: view_home_derivatives_6
+msgid "Software-Auswahl"
+msgstr "Software selection"
+
 #: model_user_meta_tabz_1
 msgid "Alle veröffentlichten Bündel"
 msgstr "All published bundles"
@@ -1352,10 +1372,6 @@ msgstr "Go back to the Communtu-menu"
 #: licence
 msgid "Lizenztyp:"
 msgstr "Licence:"
-
-#: view_home_derivatives_6
-msgid "Software-Auswahl"
-msgstr "Software selection"
 
 #: view_home_cancel_0
 msgid ""
@@ -1381,6 +1397,10 @@ msgstr "Navigation Communtu"
 msgid "Wie finde ich Programme?"
 msgstr "How do I find programs?"
 
+#: view_home_derivatives_7
+msgid "unter der Kategorie \"Derivate\" zur Installation ausgewählt werden."
+msgstr "can be chosen to be installed in the category \"Derivatives\"."
+
 #: category_with_colon
 msgid "Kategorie:"
 msgstr "Category:"
@@ -1392,10 +1412,6 @@ msgstr "Ubuntu packages"
 #: view_debs_index_2
 msgid "  Keine fehlgeschlagenen Deb-Generierungen vorhanden! Glückwunsch!"
 msgstr "  There are no failed deb-generations! Congratulations!"
-
-#: view_home_derivatives_7
-msgid "unter der Kategorie \"Derivate\" zur Installation ausgewählt werden."
-msgstr "can be chosen to be installed in the category \"Derivatives\"."
 
 #: view_home_cancel_1
 msgid "Endweder versuchst Du es noch einmal oder Du nutzt die Möglichkeit per Überweisung"
@@ -1417,6 +1433,10 @@ msgstr "Guest"
 msgid "Gehe dazu bitte auf den Menüpunkt \"Programme suchen\". Hier hast Du ein Suchfeld, in dem Du den Namen des gesuchten Prgramms angeben kannst. Weiter ist es möglich die Suche nur über Programme durchzuführen, in dem das Feld \"Nur Programme\" angeklickt wird und somit sonstige Bibliotheken nicht mehr angezeigt werden. Weiter ist es auch möglich eine Debian-Section auszuwählen, der die Auswahl an Programmen anhand von Kategorien vorselektiert."
 msgstr "To find a program, go to \"Search programs\". Enter the name of the program you are looking for into the search field. If you want to search only the programs click on \"Programs only\" and the libraries are not searched. Furthermore it is possible to choose a Debian-section where programs are preselected."
 
+#: view_home_derivatives_8
+msgid "Ebenso kannst du dort nachgucken, aus welchen Paketen ein Derivat besteht."
+msgstr "You can also take a look of which packages a derivative consists."
+
 #: model_user_meta_tabz_3
 msgid "Veröffentlichte Bündel"
 msgstr "Published bundles"
@@ -1424,10 +1444,6 @@ msgstr "Published bundles"
 #: view_debs_index_3
 msgid "Alle fehlgeschlagenen debs erzeugen <b>Achtung: nur unter admin.communtu.de ausführen!</b>"
 msgstr "Create every failed deb <b>Warning: only do this at admin.communtu.de!</b>"
-
-#: view_home_derivatives_8
-msgid "Ebenso kannst du dort nachgucken, aus welchen Paketen ein Derivat besteht."
-msgstr "You can also take a look of which packages a derivative consists."
 
 #: view_user_profiles__profile_data_6
 msgid "Wähle bitte deine Ubuntu-Version aus. "
@@ -1979,6 +1995,10 @@ msgstr "Download:"
 msgid "Hier hast Du die Möglichkeit uns Anregungen und Kritik zu Communtu zu senden."
 msgstr "Here you have the possibility to send us suggestions and critique about Communtu."
 
+#: migrate_repositories
+msgid "Repositories von Vorgänger übernehmen"
+msgstr "Take over repositories from parent"
+
 #: view_cart_update_2
 msgid "Expertenlevel:"
 msgstr "Level of expert:"
@@ -2159,6 +2179,10 @@ msgstr ""
 msgid "Folgende Pakete konnten jedoch nicht migriert werden:"
 msgstr "The following packages could not be migrated:"
 
+#: first_sync_repos
+msgid "Bitte erst die Repositories synchronisieren. Dies geschieht normalerweise automatisch innerhalb von einer Woche. Achtung: an dieser Stelle wird nur geprüft, ob überhaupt etwas synchronisiert wurde, nicht, ob der Prozess fertig ist."
+msgstr "Please synchronise the repositories first. Normally, this is done automatically within one weak. Attention: it is only checked if anything is being synchronised at all, not if the process is finished."
+
 #: ubuntu_derivatives
 msgid "Ubuntu-Derivate"
 msgstr "Ubuntu derivatives"
@@ -2289,6 +2313,10 @@ msgstr "Attention: the webserver will be down soon due to some maintenance work!
 msgid "Die Seitenleiste links bietet folgende Möglichkeiten:"
 msgstr "The menu on the left offers the following possibilities:"
 
+#: view_home_derivatives_55
+msgid " - Mediacenter."
+msgstr " - Mediacenter."
+
 #: model_mailer_4
 msgid "Dein Passwort wurde zurückgesetzt."
 msgstr "Your password has been restored."
@@ -2305,13 +2333,13 @@ msgstr "Reset bundle error manually (after solving the problems)."
 msgid "Repositories synchronisiert"
 msgstr "repositories synchronised"
 
-#: view_home_derivatives_55
-msgid " - Mediacenter."
-msgstr " - Mediacenter."
-
 #: view_home_home_6
 msgid "<b>Installation</b> bietet dir eine Zusammenstellung (Bündelung) von Programmen für die Installation auf deinem Computer an, entsprechend deinen Angaben, für welche Aufgaben du deinen Ubuntu-PC benutzen willst."
 msgstr "<b>Installation</b> offers you a summary (bundling) of programs for the installation on your computer, according to your instructions on how you want to use your Ubuntu-PC."
+
+#: view_home_derivatives_56
+msgid "http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix"
+msgstr "http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix (German)"
 
 #: model_mailer_5
 msgid "Vorschlag eines Repositorys"
@@ -2333,13 +2361,13 @@ msgstr "synchronise everything"
 msgid "Fehler: Repository konnte nicht synchronisiert werden"
 msgstr "Error: couldn't synchronise repository"
 
-#: view_home_derivatives_56
-msgid "http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix"
-msgstr "http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix (German)"
-
 #: view_home_home_7
 msgid "<b>Bündel verwalten</b> Hast du gute Erfahrungen mit Programmen gemacht? Dann kannst du sie hier thematisch bündeln, oder auch bestehende Bündel angucken. "
 msgstr "<b>Administrate bundles</b> Did you have good experiences with the programs? Bundle them thematically or take a look at existing bundles."
+
+#: view_home_derivatives_57
+msgid "für Subnotebooks/EEE-PCs"
+msgstr " for subnotebooks/EEE-PCs."
 
 #: view_admins_show_0
 msgid "Here should be an introduction to the admin area"
@@ -2372,10 +2400,6 @@ msgstr "Name:"
 #: view_admins_sync_package_2
 msgid "Repository synchronisiert"
 msgstr "repository synchronised"
-
-#: view_home_derivatives_57
-msgid "für Subnotebooks/EEE-PCs"
-msgstr " for subnotebooks/EEE-PCs."
 
 #: view_home_home_8
 msgid "<b>Programme suchen</b> Hier kannst du nach einzelnen Ubuntu-Programmen (Paketen) suchen."
@@ -3132,6 +3156,10 @@ msgstr "new message"
 #: view_home_faq_01
 msgid "Was ist ein Bündel?"
 msgstr "What is a bundle?"
+
+#: bundle_open_new_window
+msgid "Bündel wird im neuen Fenster geöffnet."
+msgstr "Bundle will be opend in a new window."
 
 #: advanced_user
 msgid "Ich bin fortgeschrittener Benutzer und will auch unfertige Versionen von Ubuntu sehen."
