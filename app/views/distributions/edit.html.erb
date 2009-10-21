@@ -23,8 +23,14 @@
     <b><%=t(:description)%></b><br />
 <textarea name="distribution[description]" rows="5" cols="60"><%= @distribution.description %></textarea>    
   </p>
+  <p>
+    <b><%=t(:predecessor)%></b><br />
+	<%= f.collection_select('distribution_id', Distribution.all, :id, :name)%>
+  </p>
   <p><%=t(:preliminary_distribution)%></b>&nbsp;
     <b><%= f.check_box(:preliminary) %><br></li>
+  <p><%=t(:invisible_distribution)%></b>&nbsp;
+    <b><%= f.check_box(:invisible) %><br></li>
 
   <p>
     <%= f.submit t(:save) %>

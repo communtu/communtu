@@ -9,7 +9,7 @@ class Deb < ActiveRecord::Base
   APT_KEY_COMMAND = "apt-key adv --recv-keys --keyserver"
   KEYSERVER = "wwwkeys.eu.pgp.net"
   # communtu repository
-  COMMUNTU_REPO = "http://packages.communtu.de"
+  COMMUNTU_REPO = "http://packages.communtu.org"
   COMMUNTU_KEY = "D66AFBC0"
   # command for uploading debs to repository
   REPREPRO = "GNUPGHOME=/home/communtu/.gnupg reprepro -v -b #{RAILS_ROOT} --outdir public/debs --confdir debs --logdir log --dbdir debs/db --listdir debs/list"

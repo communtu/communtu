@@ -21,7 +21,7 @@ de:
   bundle_editor: "Bündel-Editor"
   bundle_open_new_window: Bündel wird im neuen Fenster geöffnet.
   by_bank_transfer: "per Überweisung"
-  cannot_migrate: "Kann nur migrieren, wenn die folgende Distribution frisch ist"
+  cannot_migrate: "Kann nur migrieren, wenn die Distribution frisch ist"
   category_with_colon: "Kategorie:"
   category_without_colon: Kategorie
   changed_settings: "Dieser Schritt muss neu ausgeführt werden, weil du die Einstellungen geändert hast."
@@ -140,6 +140,7 @@ de:
   email_without_colon: E-Mail
   feedback: Kommentar
   fine_selection: "Feinauswahl"
+  first_sync_repos: "Bitte erst die Repositories synchronisieren. Dies geschieht normalerweise automatisch innerhalb von einer Woche. Achtung: an dieser Stelle wird nur geprüft, ob überhaupt etwas synchronisiert wurde, nicht, ob der Prozess fertig ist."
   four_and_fourty_letters: Zwischen 4 und 40 Zeichen
   gpg_key: "GPG Schlüssel (optional): "
   helper_distributions_0: free
@@ -160,6 +161,7 @@ de:
   helper_distributions_8: "Quellen anzeigen"
   homepage: Startseite
   imprint: Impressum
+  invisible_distribution: Unsichtbare Distribution
   inbox: Posteingang
   install2: installieren
   install_by_default: "Standardmäßig installieren:"
@@ -184,7 +186,9 @@ de:
   match_with_communtu: "Communtu - gemeinsam Ubuntu-Linux an individuelle Bedürfnisse anpassen"
   metacart_choose: Füge Programme aus der linken Spalte zu Deinem Bündel hinzu.
   migrate: Migrieren
+  migrate_bundles: Bündel von Vorgänger übernehmen
   migrate_repository: Repository migieren
+  migrate_repositories: Repositories von Vorgänger übernehmen
   model_mailer_0: Herzlich Willkommen bei Communtu
   model_mailer_1: Anfrage per Formular
   model_mailer_2: Dein Benutzerkonto wurde aktiviert.
@@ -235,6 +239,7 @@ de:
   passwd_no_match: "Das neue Passwort stimmt nicht mit der Bestätigung überein."
   passwd: Passwort
   path: "Pfad:"
+  predecessor: Vorgänger
   preliminary_distribution: "Vorläufige Distribution"
   promote_chat: Du kannst gucken, ob sich gerade jemand von uns im Chat aufhält und mit uns über den Chat kommunizieren.
   published: "veröffentlicht"

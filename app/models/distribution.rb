@@ -2,8 +2,13 @@ class Distribution < ActiveRecord::Base
   require "lib/utils.rb"
   has_many :repositories, :dependent => :destroy
   has_many :metacontents_distrs, :dependent => :destroy
-  has_many :debs, :dependent => :destroy  
+  has_many :debs, :dependent => :destroy
+  belongs_to :distribution
 
+  def predecessor
+    self.distribution
+  end
+  
   def description
     translation(self.description_tid)
   end

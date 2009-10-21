@@ -13,8 +13,6 @@
 			<%= link_to t(:view_distributions_show_3), '/repositories/multinew/'+@distribution.id.to_s %>
 			&nbsp;&nbsp;&nbsp;&nbsp;
 			<%= link_to t(:view_distributions_show_4), new_distribution_repository_path(@distribution.id) %>
-			&nbsp;&nbsp;&nbsp;&nbsp;
-			<%= link_to t(:migrate), '/distributions/migrate/'+@distribution.id.to_s %>
 		<% end %>	
 	</td></tr></table>
 <%= repository_view @distribution.repositories, "inner0" %>

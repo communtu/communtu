@@ -63,7 +63,7 @@ class DistributionsController < ApplicationController
     respond_to do |format|
       if @distribution.save
         flash[:notice] = t(:controller_distributions_1)
-        format.html { redirect_to(@distribution) }
+        format.html { redirect_to(distributions_url) }
         format.xml  { render :xml => @distribution, :status => :created, :location => @distribution }
       else
         format.html { render :action => "new" }
@@ -136,17 +136,32 @@ class DistributionsController < ApplicationController
   end
 
   def migrate
-    @distribution = Distribution.find(params[:id])
-    @new_dist = Distribution.find(:first,:conditions => {:id => @distribution.id+1})
+    @new_dist = Distribution.find(params[:id])
+    @old_dist = @new_dist.predecessor
     # only proceed if new distribution is new and fresh
-    if !@new_dist.nil? and Repository.find_by_distribution_id(@new_dist.id).nil? then
-      @distribution.repositories.each do |r|
+    if @old_dist.nil? or !Repository.find_by_distribution_id(@new_dist.id).nil? then
+      flash[:error] = t(:cannot_migrate)
+    else
+      @old_dist.repositories.each do |r|
         r.migrate(@new_dist)
       end
-      redirect_to(@new_dist)
-    else
-      flash[:error] = t(:cannot_migrate)
-      redirect_to(@distribution)
     end
+    redirect_to(distributions_url)
+  end
+
+  def migrate_bundles
+    @new_dist = Distribution.find(params[:id])
+    @old_dist = @new_dist.predecessor
+    # only proceed if new distribution is snychronised and fresh
+    if @old_dist.nil? or !MetacontentsDistr.find_by_distribution_id(@new_dist.id).nil? then
+      flash[:error] = t(:cannot_migrate)
+    elsif PackageDistr.find_by_distribution_id(@new_dist.id).nil?
+      flash[:error] = t(:first_sync_repos)
+    else
+      Metapackage.all.each do |m|
+        m.migrate(@old_dist, @new_dist)
+      end
+    end
+    redirect_to(distributions_url)
   end
 end

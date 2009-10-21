@@ -24,6 +24,10 @@
     <%= f.text_area :description %>
   </p>
   <p>
+    <b><%=t(:predecessor)%></b><br />
+	<%= f.collection_select('distribution_id', Distribution.all, :id, :name)%>
+  </p>
+  <p>
     <%= f.submit t(:create) %>
   </p>
 <% end %>

@@ -132,6 +132,8 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.integer  "description_tid"
     t.integer  "url_tid"
     t.boolean  "preliminary",     :default => true
+    t.integer  "distribution_id"
+    t.boolean  "invisible",       :default => true
   end
 
   create_table "folders", :force => true do |t|

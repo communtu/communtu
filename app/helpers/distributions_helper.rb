@@ -65,12 +65,20 @@ module DistributionsHelper
     out = "<div class='" + style + "'><span class='headline'>" +\
       dist.name + "</span><p>" + dist.description + "</p>"      
       #  (if dist.url.nil? then dist.name else (link_to dist.name, dist.url, :target=>'_blank') end)+\
-    
+    if !dist.predecessor.nil? then
+      out += t(:predecessor)+": "+link_to(dist.predecessor.short_name,distribution_path(dist.predecessor))+"<br />"
+    end
     if with_buttons
      out += (link_to t(:helper_distributions_8)+ if is_admin? then t(:helper_distributions_10) else "" end, dist)
       if is_admin?
         out += t(:helper_distributions_11) + (link_to t(:helper_distributions_12), edit_distribution_path(dist)) + " | " +\
-        (link_to t(:helper_distributions_13), dist, :confirm => t(:are_you_sure), :method => :delete)
+        (link_to t(:helper_distributions_13), dist, :confirm => t(:view_distributions_show_8), :method => :delete)
+        if Repository.find_by_distribution_id(dist.id).nil? then
+          out += " | " + (link_to t(:migrate_repositories), "/distributions/migrate/"+dist.id.to_s)
+        end
+        if MetacontentsDistr.find_by_distribution_id(dist.id).nil? then
+          out += " | " + (link_to t(:migrate_bundles), "/distributions/migrate_bundles/"+dist.id.to_s)
+        end
       end
      out += "<p></p>"
      out += (link_to t(:helper_distributions_15), dist.url, :target=>'_blank')

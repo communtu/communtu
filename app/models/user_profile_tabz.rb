@@ -39,8 +39,8 @@ class UserProfileTabz < Tabz::Base
         with_data do
           if @user_data[:user].class==User then
             set_to({:distributions => if @user_data[:user].advanced  
-                                      then Distribution.all
-                                      else Distribution.find_all_by_preliminary(false) end,
+                                      then Distribution.find_all_by_invisible(false)
+                                      else Distribution.find_all_by_preliminary_and_invisible(false,false) end,
                     :root => Category.find(1),
                     :dist_string => @user_data[:dist_string]})
           end
