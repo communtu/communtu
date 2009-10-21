@@ -5,11 +5,11 @@
 
   <p>
     <%= f.label :URL %><br />
-    <%= f.text_field :url %>
+    <input id="video_url" name="video[url]" size="50" type="text" value="<%= @video.url %>">
   </p>
   <p>
     <%= f.label :Beschreibung %><br />
-    <%= f.text_area :description, :cols => 80, :rows => 6 %>
+   <textarea id="video_description" name="video[description]" rows="6" cols="80"><%= @video.description %></textarea>
   </p>
   <p>
     <%= f.submit t(:save) %>

@@ -24,6 +24,19 @@ class VideosController < ApplicationController
   # PUT /videos/1.xml
   def update
     @video = Video.find(params[:id])
+    @trans_update_url = Translation.find(:first, :conditions => { :translatable_id => @video.url_tid, :language_code => I18n.locale.to_s})
+    @trans_update_url.contents = params[:video][:url]
+    @trans_update_url.save
+    @trans_update_des = Translation.find(:first, :conditions => { :translatable_id => @video.description_tid, :language_code => I18n.locale.to_s})
+    if @trans_update_des == nil
+      @trans_update_des = Translation.new
+      @trans_update_des.translatable_id = @video.description_tid
+      @trans_update_des.contents = params[:video][:description]
+      @trans_update_des.language_code = I18n.locale.to_s
+    else
+      @trans_update_des.contents = params[:video][:description]
+    end
+    @trans_update_des.save
     respond_to do |format|
       if @video.update_attributes(params[:video])
         format.html { redirect_to :controller => :packages, :action => :edit, :id => @video.base_package_id }
@@ -39,6 +52,20 @@ class VideosController < ApplicationController
   # DELETE /videos/1.xml
   def destroy
     @video = Video.find(params[:id])
+        @translation_url = Translation.find(:all, :conditions => { :translatable_id => @video.url_tid })
+    m = @translation_url.count
+    e = 0
+    m.times do
+     @translation_url[e].delete
+     e = e + 1
+    end
+    @translation_des = Translation.find(:all, :conditions => { :translatable_id => @video.description_tid })
+    m = @translation_des.count
+    e = 0
+    m.times do
+     @translation_des[e].delete
+     e = e + 1
+    end
     @video.destroy
 
     respond_to do |format|

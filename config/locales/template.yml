@@ -19,6 +19,7 @@ de:
   bundle: "Bündel"
   bundle_by_owner: erstellte Bündel
   bundle_editor: "Bündel-Editor"
+  bundle_open_new_window: Bündel wird im neuen Fenster geöffnet.
   by_bank_transfer: "per Überweisung"
   cannot_migrate: "Kann nur migrieren, wenn die folgende Distribution frisch ist"
   category_with_colon: "Kategorie:"
