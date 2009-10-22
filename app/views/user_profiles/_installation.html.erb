@@ -15,8 +15,8 @@
 <ol>
 	<li> <% url1 = '/users/'+current_user.id.to_s + '/suggestion/install_sources'%>	
         <%= link_to image_tag("/images/sources.jpg", :size => "22x22", :border => "0", :title => t(:add_sources), :alt => t(:sources)), url1 %>
-		<%= link_to t(:view_user_profiles__installation_16) , url1  %>
-        <br><%=t(:view_user_profiles__installation_17)%>
+		<%= link_to t(:view_user_profiles__installation_16) , url1  %> 
+        <br /><%=t(:view_user_profiles__installation_17)%> <%= link_to t(:more_about_sources), '/home/faq/#a19', :target => '_blank'%>
     </li>
 	<li> <%= image_tag("/images/install.png", :size => "22x22", :border => "0", :title => t(:view_user_profiles__installation_21), :alt => t(:install2))%>
 <%=t(:view_user_profiles__installation_23)%><ul>
