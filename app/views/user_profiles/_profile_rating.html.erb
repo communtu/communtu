@@ -1,7 +1,6 @@
 <h2><%=t(:view_user_profiles__profile_rating_0)%></h2>
 
 <%= error_messages_for :user_profile %>
-
 <%= render :partial => 'box' %>
 <% form_tag(user_user_profile_path(current_user) + "/update_ratings", options = {:name => "ratings", :method => :put}) do %>
 

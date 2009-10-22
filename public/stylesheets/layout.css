@@ -511,7 +511,7 @@ li.suggestionPackage {
     display: inline;
     overflow: hidden;
     list-style-type: none;
-    background: #ffffff;
+    background:transparent none repeat scroll 0 0;
     margin-left:2px;
 }
 
