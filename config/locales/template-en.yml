@@ -22,7 +22,6 @@ en:
   view_home_beteiligung_13: Since we have many ideas for the platform's further development, we need programmers. Ideally you already have some experience with Ruby on Rails.
   view_accounts_edit_1: old password
   view_home_about_13: Post-installation of single functions
-  ~: ivat
   view_packages_show_15: source/repository
   view_home_faq_06: Click on "Bundle" and then you have to click "New Bundle". In the left box you can choose packages and add them to the bundle. When finished, you have to click on the "Save"-symbol in the bundle-editor. Now a new window appears in the main-window where you have to enter a meaningful name and a description. Don't forget to assign your bundle to a category.
   view_home_beteiligung_14: "We can also help you to learn this programming-language. You just have to contact "
@@ -248,7 +247,7 @@ en:
   view_home_derivatives_43: " - based on E17. 2D-effects even without a fast graphic card."
   view_home_about_8: After clicking on "Save and choose packages" you can get a detailed overview of the installed bundles and programs and the possibility to change the pre-made selections. In the case you don't have the time or energy to choose the packages in detail, just click on "Save". This leads you to the installation page. There you will find a button which starts the installation process. This takes some time because the applications have to be downloaded from the internet and installed on your computer. When finished, you have an all-round Ubuntu-PC!
   new_bundle: New bundle
-  model_user_profile_tabz_4: Preadjustment
+  model_user_profile_tabz_4: Settings
   view_cart_new_from_list_3: " can be found with the above-mentioned command. (For this, the package {{debfoster}} has to be install. The created list only contains a minimal list of (meta-)packages which are necessary to rebuild your installation.)"
   view_home_derivatives_44: " - minimalist and fast version of Ubuntu for older PCs."
   view_home_about_9: "Important: a fast internet-connection is needed. For Ubuntu-users with a slow internet-connection, e. g. a modem, we intend to introduce a feature to create CDs and DVDs automatically."
@@ -300,7 +299,7 @@ en:
   view_home_donate: Make a donation for Communtu
   add: add
   view_home_news_17: Go to the blog
-  install: install
+  install: Install
   view_home_derivatives_1: "Communtu is based on a standard-installation of Ubuntu. There are many different "
   view_layouts_application_23: BUNDLE
   view_home_news_18: http://communtu.wordpress.com
@@ -389,7 +388,7 @@ en:
   view_home_faq_18: If you haven't found a program via "Bundle" -> "New bundle", chances are high Communtu doesn't have the corresponding repositories containing that program. You can suggest the repository, where the program is in, to us via "Suggest repository" so we can implement the repository.
   view_users_new_12: (optional)
   view_user_profiles__profile_data_9: "Here you can select how secure or comfortable your sources should be:"
-  view_user_profiles__installation_13: "(When chaning the version, the first step has to be done twice, because the Communtu-sources will be deactivated by the upgrade.):"
+  view_user_profiles__installation_13: "(When changing the version, the first step has to be done twice, because the Communtu-sources will be deactivated by the upgrade.):"
   view_home_derivatives_20: Automatix was a programm to assist the installation of software and enjoyed great popularity (Automatix was even recommended by the New York Times). However, Automatix did not meet the Ubuntu-standards and the development has been stopped.
   view_home_faq_19: What are sources or repositories?
   username: Username
@@ -413,7 +412,7 @@ en:
     a feedback from en.communtu.org has arrived. The subject is:
   view_admins_test_all_1: Every repositorie could be reached.
   view_repositories_index_5: new repository
-  view_user_profiles__installation_16: register sources and keys
+  view_user_profiles__installation_16: Add sources and keys
   view_home_derivatives_24: "Derivatives, which should be installed with the derivative installation-CD:"
   view_home_home_rating_headline: Best rated bundles
   view_my_mailer_mail_1: "The following comment was made:"
@@ -445,7 +444,7 @@ en:
   view_users__sidebar_0: Installation
   view_home_derivatives_28: " - with this, Ubuntu is going to be "
   controller_home_3: This does not appear to be a list with Ubuntu-packages... <br />The packagelist must contain one packagename per line
-  bundle: bundle
+  bundle: Bundle
   view_categories_show_3: "Superior category:"
   controller_distributions_2: Distribution updated.
   view_metapackages__package_list_0: "Total size of bundle on disk:"
@@ -490,7 +489,7 @@ en:
   view_user_profiles__installation_0: Ubuntu post-installation
   view_users__sidebar_8: Failed debs
   controller_suggestion_1: In order to install something, you first have to choose something. Don't forget to save!
-  chat_channel: en-ommuntu
+  chat_channel: en-communtu
   view_cart_update_1: Overwrite bundle, if it already exists?
   edit: Edit
   view_home_contact_us_0: Feedback
@@ -698,7 +697,7 @@ en:
   view_layouts_application_2: Communtu
   view_packages_show_8: "Popularity:"
   view_user_profiles_help_0: Determination of the Ubuntu version
-  view_user_profiles__installation_24: installation via metapackages
+  view_user_profiles__installation_24: Installation via metapackage
   view_users__mailbox_list_3: "sent messages "
   Kommentar: "Comment:"
   view_home_derivatives_32: " is an Ubuntu derivative consisting only of free software. Suitable only for experienced users. Should only be installed with the Gobuntu-CD so that only free software is provided. A further installation with Communtu is possible, but \"Free software\" should be selected in the user profile. This derivative is available in Ubuntu 8.04 and development is currently discontinued."
@@ -706,7 +705,7 @@ en:
   view_layouts_application_3: Ubuntu logo
   view_packages_show_9: "/5 stars&nbsp;&nbsp; "
   view_user_profiles_help_1: Open a new terminal. Click on "Applications" -> "Accessories" -> "Terminal"
-  view_user_profiles__installation_25: installatin via apturl
+  view_user_profiles__installation_25: Installatin via apturl
   preliminary_distribution: Preliminary distribution
   view_home_derivatives_33: http://en.wikipedia.org/wiki/Nexenta_OS
   view_layouts_donate: Donate
@@ -734,7 +733,7 @@ en:
   view_derivatives_edit_2: Program for GUI-dialogs (e.g. zenity, kdialog)
   view_home_derivatives_36: " - an African version of Ubuntu, which is apparently not available over the internet."
   model_package_2: unknown
-  controller_passwords_1: A link for chaning the password has been sent to your e-mail-address.
+  controller_passwords_1: A link for changing the password has been sent to your e-mail-address.
   view_metapackages_rdepends_1: " directly an indirectly contained bundles and packages"
   view_passwords_new_1: "    Which e-mail-address did you enter when you created the account?"
   view_user_profiles_help_5: you expand Communtu with your version.

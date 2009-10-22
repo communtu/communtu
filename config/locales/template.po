@@ -991,7 +991,7 @@ msgstr "New bundle"
 
 #: model_user_profile_tabz_4
 msgid "Voreinstellungen"
-msgstr "Preadjustment"
+msgstr "Settings"
 
 #: view_cart_new_from_list_3
 msgid "herausfinden. (Dazu muss das Paket {{debfoster}} installiert sein. Die erzeugte Liste enthält nur eine minimale Liste von (Meta-)Paketen, die notwendig ist, um deine Installation komplett wiederherzustellen.)"
@@ -1199,7 +1199,7 @@ msgstr "add"
 
 #: install
 msgid "Installieren"
-msgstr "install"
+msgstr "Install"
 
 #: view_home_derivatives_1
 msgid "Communtu setzt auf einer Ubuntu-Basisinstallation auf. Es gibt nun eine ganze Reihe von "
@@ -1551,7 +1551,7 @@ msgstr "If you haven't found a program via \"Bundle\" -> \"New bundle\", chances
 
 #: view_user_profiles__installation_13
 msgid "(Bei einem Versionswechsel muss der erste Schritt erneut ausgeführt werden, da die Communtu Quellen durch das Upgrade deaktiviert wurden.):"
-msgstr "(When chaning the version, the first step has to be done twice, because the Communtu-sources will be deactivated by the upgrade.):"
+msgstr "(When changing the version, the first step has to be done twice, because the Communtu-sources will be deactivated by the upgrade.):"
 
 #: view_packages_edit_2
 msgid "Icon"
@@ -1623,7 +1623,7 @@ msgstr "installing via script"
 
 #: view_user_profiles__installation_16
 msgid "Quellen und Schlüssel eintragen"
-msgstr "register sources and keys"
+msgstr "Add sources and keys"
 
 #: view_repositories_index_5
 msgid "Neues Repository"
@@ -1777,7 +1777,7 @@ msgstr "Superior category:"
 
 #: bundle
 msgid "Bündel"
-msgstr "bundle"
+msgstr "Bundle"
 
 #: controller_home_3
 msgid "Das sieht nicht nach einer Liste von Ubuntu-Paketen aus... <br />Die Paketliste muss einen Paketnamen pro Zeile enthalten"
@@ -1969,7 +1969,7 @@ msgstr "Overwrite bundle, if it already exists?"
 
 #: chat_channel
 msgid "de-communtu"
-msgstr "en-ommuntu"
+msgstr "en-communtu"
 
 #: controller_suggestion_1
 msgid "Um etwas installieren zu können, musst du zunächst etwas auswählen. Speichern nicht vergessen!"
@@ -2711,7 +2711,7 @@ msgstr "sent messages "
 
 #: view_user_profiles__installation_24
 msgid "Installation über ein Metapaket"
-msgstr "installation via metapackages"
+msgstr "Installation via metapackage"
 
 #: view_user_profiles_help_0
 msgid "Feststellen der Ubuntu-Version"
@@ -2739,7 +2739,7 @@ msgstr "per bank transfer"
 
 #: view_user_profiles__installation_25
 msgid "Installation über apturl"
-msgstr "installatin via apturl"
+msgstr "Installatin via apturl"
 
 #: view_user_profiles_help_1
 msgid "Öffne ein Terminal unter \"Anwendungen\" -> \"Zubehör\" -> \"Terminal"
@@ -2879,7 +2879,7 @@ msgstr " directly an indirectly contained bundles and packages"
 
 #: controller_passwords_1
 msgid "Ein Link zum Andern des Passworts wurde an deine Email-Adresse geschickt."
-msgstr "A link for chaning the password has been sent to your e-mail-address."
+msgstr "A link for changing the password has been sent to your e-mail-address."
 
 #: model_package_2
 msgid "Unbekannt"
@@ -3168,27 +3168,4 @@ msgstr "I'm an advanced user and want to see the preliminary Ubuntu versions."
 #: controller_users_12
 msgid "Benutzer aktiviert"
 msgstr "User activated"
-
-#~ msgid "Trusted"
-#~ msgstr "trusted"
-#~ msgid "Durchführen"
-#~ msgstr "Start installation"
-#~ msgid "Native"
-#~ msgstr "native"
-#~ msgid "OpenSource"
-#~ msgstr "open source"
-#~ msgid "Third-Party"
-#~ msgstr "third-party "
-#~ msgid "Commercial"
-#~ msgstr "Commercial"
-#~ msgid ""
-#~ "Auf dieser Seite kannst du in vier einfachen Schritten deine Ubuntu-"
-#~ "Nachinstallation auswählen - fertig.  Wenn gewünscht, ist aber auch eine "
-#~ "detailliertere Auswahl möglich. "
-#~ msgstr ""
-#~ "On this page you can prepare the post-installation for your Ubuntu "
-#~ "installation in four easy steps. If desired, you can choose the bundles "
-#~ "in a detailed overview. "
-#~ msgid "Installations-Feinauswahl"
-#~ msgstr "detailed selection"
 

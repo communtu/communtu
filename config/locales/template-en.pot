@@ -94,9 +94,6 @@ msgstr ""
 #: view_metapackages_show_version_v
 msgid "(version {{v}})"
 msgstr ""
-#: 
-msgid "ivat"
-msgstr ""
 #: view_packages_show_16
 msgid "package-version"
 msgstr ""
@@ -737,7 +734,7 @@ msgstr ""
 msgid "New bundle"
 msgstr ""
 #: model_user_profile_tabz_4
-msgid "Preadjustment"
+msgid "Settings"
 msgstr ""
 #: view_cart_new_from_list_3
 msgid " can be found with the above-mentioned command. (For this, the package {{debfoster}} has to be install. The created list only contains a minimal list of (meta-)packages which are necessary to rebuild your installation.)"
@@ -893,7 +890,7 @@ msgstr ""
 msgid "Go to the blog"
 msgstr ""
 #: install
-msgid "install"
+msgid "Install"
 msgstr ""
 #: view_home_derivatives_1
 msgid "Communtu is based on a standard-installation of Ubuntu. There are many different "
@@ -1154,7 +1151,7 @@ msgstr ""
 msgid "Here you can select how secure or comfortable your sources should be:"
 msgstr ""
 #: view_user_profiles__installation_13
-msgid "(When chaning the version, the first step has to be done twice, because the Communtu-sources will be deactivated by the upgrade.):"
+msgid "(When changing the version, the first step has to be done twice, because the Communtu-sources will be deactivated by the upgrade.):"
 msgstr ""
 #: view_home_derivatives_20
 msgid "Automatix was a programm to assist the installation of software and enjoyed great popularity (Automatix was even recommended by the New York Times). However, Automatix did not meet the Ubuntu-standards and the development has been stopped."
@@ -1217,7 +1214,7 @@ msgstr ""
 msgid "new repository"
 msgstr ""
 #: view_user_profiles__installation_16
-msgid "register sources and keys"
+msgid "Add sources and keys"
 msgstr ""
 #: yes1
 msgid "yes"
@@ -1319,7 +1316,7 @@ msgstr ""
 msgid "Superior category:"
 msgstr ""
 #: bundle
-msgid "bundle"
+msgid "Bundle"
 msgstr ""
 #: controller_home_3
 msgid "This does not appear to be a list with Ubuntu-packages... <br />The packagelist must contain one packagename per line"
@@ -1463,7 +1460,7 @@ msgstr ""
 msgid "Overwrite bundle, if it already exists?"
 msgstr ""
 #: chat_channel
-msgid "en-ommuntu"
+msgid "en-communtu"
 msgstr ""
 #: controller_suggestion_1
 msgid "In order to install something, you first have to choose something. Don't forget to save!"
@@ -1982,7 +1979,7 @@ msgstr ""
 msgid "sent messages "
 msgstr ""
 #: view_user_profiles__installation_24
-msgid "installation via metapackages"
+msgid "Installation via metapackage"
 msgstr ""
 #: view_user_profiles_help_0
 msgid "Determination of the Ubuntu version"
@@ -2003,7 +2000,7 @@ msgstr ""
 msgid "per bank transfer"
 msgstr ""
 #: view_user_profiles__installation_25
-msgid "installatin via apturl"
+msgid "Installatin via apturl"
 msgstr ""
 #: view_user_profiles_help_1
 msgid "Open a new terminal. Click on \"Applications\" -> \"Accessories\" -> \"Terminal\""
@@ -2108,7 +2105,7 @@ msgstr ""
 msgid " directly an indirectly contained bundles and packages"
 msgstr ""
 #: controller_passwords_1
-msgid "A link for chaning the password has been sent to your e-mail-address."
+msgid "A link for changing the password has been sent to your e-mail-address."
 msgstr ""
 #: model_package_2
 msgid "unknown"
