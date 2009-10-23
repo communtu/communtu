@@ -43,7 +43,7 @@ namespace :db do
       end
       puts "  ... generating the missing debian packages"
       Deb.find_all_by_generated(false).each do |d|
-        d.generate
+         system 'echo "Deb.find('+d.id.to_s+').generate" | script/console production'
       end
       return true
     end
