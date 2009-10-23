@@ -39,11 +39,11 @@ namespace :db do
               m.debianize
             end
           end
-          if !Deb.find(:first,:conditions => ["metapackage_id = ? and generated = ?",m.id,false]).nil?
-            puts "  ... generating the missing debian packages"
-            m.fork_generate_debs
-          end
         end
+      end
+      puts "  ... generating the missing debian packages"
+      Deb.find_all_by_generated(false).each do |d|
+        d.generate
       end
       return true
     end
