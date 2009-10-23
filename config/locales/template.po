@@ -131,6 +131,10 @@ msgstr "package-version"
 msgid "Wie kann ich ein Bündel bewerten?"
 msgstr "How can I rate a bundle?"
 
+#: more_about_sources
+msgid "(Mehr Informationen zum Thema Schlüssel und Quellen in den Faqs)"
+msgstr "(More information about Keys and Sources in the FAQ)"
+
 #: view_home_beteiligung_15
 msgid "uns"
 msgstr "us"
@@ -1648,8 +1652,8 @@ msgid "ja"
 msgstr "yes"
 
 #: view_user_profiles__installation_17
-msgid "Link einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer öffnen."
-msgstr "Just click on the link and open the file and open it with the recommended package-installer."
+msgid "Link einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer öffnen - wenn kein Prorgammdialog erscheint, wurde die Datei auf Deinem Rechner heruntergeladen. Dort kannst Du sie mit Doppelklick starten."
+msgstr "Just click on the link and open the file with the recommended package-installer - if no dialog-window pops up the file has been saved on your harddisk. You can open it with a double click."
 
 #: view_sent_new_3
 msgid "Nachricht:"

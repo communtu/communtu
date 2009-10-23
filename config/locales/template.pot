@@ -100,6 +100,9 @@ msgstr ""
 #: view_home_faq_07
 msgid "Wie kann ich ein Bündel bewerten?"
 msgstr ""
+#: more_about_sources
+msgid "(Mehr Informationen zum Thema Schlüssel und Quellen in den Faqs)"
+msgstr ""
 #: view_home_beteiligung_15
 msgid "uns"
 msgstr ""
@@ -1220,7 +1223,7 @@ msgstr ""
 msgid "ja"
 msgstr ""
 #: view_user_profiles__installation_17
-msgid "Link einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer öffnen."
+msgid "Link einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer öffnen - wenn kein Prorgammdialog erscheint, wurde die Datei auf Deinem Rechner heruntergeladen. Dort kannst Du sie mit Doppelklick starten."
 msgstr ""
 #: view_sent_new_3
 msgid "Nachricht:"
@@ -1669,6 +1672,9 @@ msgstr ""
 #: view_home_home_4
 msgid "Mehr ..."
 msgstr ""
+#: view_home_derivatives_54
+msgid ""
+msgstr ""
 #: controller_messages_0
 msgid "Ursprüngliche Nachricht von {{user}} am {{datum}}  \n  \n"
 msgstr ""
@@ -1680,9 +1686,6 @@ msgid "Repositories:"
 msgstr ""
 #: view_admins_sync_all_1
 msgid "Fehler: Repositories konnten nicht synchronisiert werden"
-msgstr ""
-#: view_home_derivatives_54
-msgid ""
 msgstr ""
 #: view_layouts_application_warning
 msgid "Achtung: in Kürze werden auf diesem Webserver kurze Wartungsarbeiten durchgeführt!"

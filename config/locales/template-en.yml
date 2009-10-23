@@ -29,6 +29,7 @@ en:
   view_metapackages_show_version_v: (version {{v}})
   view_packages_show_16: package-version
   view_home_faq_07: How can I rate a bundle?
+  more_about_sources: (More information about Keys and Sources in the FAQ)
   view_home_beteiligung_15: us
   delete: Delete
   view_packages_show_17: "Contains these packages (\"depends\" and \"recommends\"):"
@@ -418,7 +419,7 @@ en:
   view_my_mailer_mail_1: "The following comment was made:"
   view_packages_new_3: Version
   view_sent_new_3: "Message:"
-  view_user_profiles__installation_17: Just click on the link and open the file and open it with the recommended package-installer.
+  view_user_profiles__installation_17: Just click on the link and open the file with the recommended package-installer - if no dialog-window pops up the file has been saved on your harddisk. You can open it with a double click.
   yes1: "yes"
   view_home_derivatives_25: http://en.wikipedia.org/wiki/Xfce
   controller_debs_0: Debian-packages

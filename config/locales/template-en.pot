@@ -100,6 +100,9 @@ msgstr ""
 #: view_home_faq_07
 msgid "How can I rate a bundle?"
 msgstr ""
+#: more_about_sources
+msgid "(More information about Keys and Sources in the FAQ)"
+msgstr ""
 #: view_home_beteiligung_15
 msgid "us"
 msgstr ""
@@ -1220,7 +1223,7 @@ msgstr ""
 msgid "yes"
 msgstr ""
 #: view_user_profiles__installation_17
-msgid "Just click on the link and open the file and open it with the recommended package-installer."
+msgid "Just click on the link and open the file with the recommended package-installer - if no dialog-window pops up the file has been saved on your harddisk. You can open it with a double click."
 msgstr ""
 #: view_sent_new_3
 msgid "Message:"
