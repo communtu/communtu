@@ -267,15 +267,7 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  create_table "torstens", :force => true do |t|
-    t.text     "name"
-    t.integer  "name_tid"
-    t.integer  "answer_tid"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
+  
   create_table "translations", :force => true do |t|
     t.integer  "language_id"
     t.string   "tag"
@@ -331,7 +323,6 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
   end
 
   create_table "userlogs", :force => true do |t|
-    t.integer  "rating"
     t.datetime "created_at",                                :null => false
     t.string   "refferer",   :limit => 240, :default => ""
     t.integer  "user_id"
