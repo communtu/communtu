@@ -13,8 +13,16 @@
   <td width="20%"><%= link_to t(:view_users__user_2), user_roles_path(user) %></td>
 </tr>
 <tr>
-  <td align="left"><font size="-3"><%=h user.created_at.day %>/<%=h user.created_at.month %>/<%=h user.created_at.year %></font></td>
-  <td align="left"><font size="-3"><%=h user.updated_at.day %>/<%=h user.updated_at.month %>/<%=h user.updated_at.year %></font></td>
+  <td align="left"><font size="-3">
+<% @userlog = Userlog.find(:last, :conditions => {:user_id => user.id}) %>
+<%=h user.created_at.day %>/<%=h user.created_at.month %>/<%=h user.created_at.year %></font></td>
+  <td align="left"><font size="-3">
+<% if @userlog != nil %>
+<%= @userlog.created_at.day %>/<%= @userlog.created_at.month %>/<%= @userlog.created_at.year %>
+<% else %>
+<%=h user.updated_at.day %>/<%=h user.updated_at.month %>/<%=h user.updated_at.year %>
+<% end %>
+</font></td>
   <td><%=t(:bundle_by_owner)%></td><td><%= BasePackage.find(:all, :conditions => {:type => "Metapackage", :user_id => user.id}).length %></td>
 </tr>
 <tr><td colspan="4"><hr></td></tr>

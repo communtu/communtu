@@ -48,7 +48,7 @@ class HomeController < ApplicationController
      current_user = ""
      end
     flash[:notice] = t(:controller_home_1)
-    redirect_to '/home'
+    redirect_to params[:form][:backlink]
   end
 
  def repo

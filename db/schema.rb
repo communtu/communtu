@@ -132,8 +132,11 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.integer  "description_tid"
     t.integer  "url_tid"
     t.boolean  "preliminary",     :default => true
-    t.integer  "distribution_id"
-    t.boolean  "invisible",       :default => true
+  end
+
+  create_table "faqs", :force => true do |t|
+    t.integer "name_tid"
+    t.integer "answer_tid"
   end
 
   create_table "folders", :force => true do |t|
@@ -215,6 +218,11 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.datetime "updated_at"
   end
 
+  create_table "questions", :force => true do |t|
+    t.integer "name_tid"
+    t.integer "answer_tid"
+  end
+
   create_table "ratings", :force => true do |t|
     t.integer  "rating",                      :default => 0
     t.datetime "created_at",                                  :null => false
@@ -242,6 +250,28 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
 
   create_table "roles", :force => true do |t|
     t.string   "rolename"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "sections", :force => true do |t|
+    t.integer  "name_tid"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.boolean  "section_flag", :default => false
+  end
+
+  create_table "sectionss", :force => true do |t|
+    t.integer  "name_tid"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "torstens", :force => true do |t|
+    t.text     "name"
+    t.integer  "name_tid"
+    t.integer  "answer_tid"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -298,6 +328,13 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.integer  "rating"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "userlogs", :force => true do |t|
+    t.integer  "rating"
+    t.datetime "created_at",                                :null => false
+    t.string   "refferer",   :limit => 240, :default => ""
+    t.integer  "user_id"
   end
 
   create_table "users", :force => true do |t|
