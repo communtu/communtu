@@ -1351,6 +1351,9 @@ msgstr ""
 #: view_home_home_21
 msgid "melde"
 msgstr ""
+#: last_user
+msgid "Wir begrüßen unseren zuletzt neu-registrierte Nutzer"
+msgstr ""
 #: debian_section
 msgid "Debian-Section:"
 msgstr ""
@@ -1407,6 +1410,9 @@ msgid "Für Fragen zu Communtu haben wir \"Häufig gestellte Fragen\" zusammenge
 msgstr ""
 #: invalid_activation_code_entered
 msgid "Ungültiger Anderungscode eingegeben."
+msgstr ""
+#: hello
+msgid "Herzlich Willkommen"
 msgstr ""
 #: view_users__sidebar_7
 msgid "Derivate verwalten"
@@ -1636,6 +1642,9 @@ msgstr ""
 #: view_home_home_2
 msgid "Ubuntu-Linux"
 msgstr ""
+#: view_home_derivatives_52
+msgid " - eine Art Automatix für die Ultimate Edition."
+msgstr ""
 #: model_mailer_1
 msgid "Anfrage per Formular"
 msgstr ""
@@ -1651,23 +1660,20 @@ msgstr ""
 #: view_home_auth_error_0
 msgid "Authentifizierungs-Fehler"
 msgstr ""
-#: view_home_derivatives_52
-msgid " - eine Art Automatix für die Ultimate Edition."
-msgstr ""
 #: view_user_profiles__sources_1
 msgid "Hier werden die zu installierenden Programme und Pakete nach den zugehörigen Quellen sortiert aufgelistet, so dass du auch sehen kannst, weshalb die jeweiligen Quellen hinzugefügt werden."
 msgstr ""
 #: view_home_home_3
 msgid " steht für ein menschliches Linux, das einfach zu benutzen ist. Aber um Ubuntu wirklich gut nutzen zu können, muss man ganz schön viele Programme nachinstallieren, und es ist oft schwer, da den Überblick zu behalten. Bei Communtu gibst du nur an, welche Aufgaben du mit deinem Computer erledigen willst, und Communtu schlägt dir eine ganze Reihe von Programmen vor, die automatisch installiert werden können."
 msgstr ""
+#: view_home_derivatives_53
+msgid " - erlaubt schnellere Installation, da nur die aktuellsten Pakete heruntergeladen werden."
+msgstr ""
 #: model_mailer_2
 msgid "Dein Benutzerkonto wurde aktiviert."
 msgstr ""
 #: view_home_auth_error_1
 msgid "Die Daten, die du an Communtu geschickt hast, konnten nicht korrekt authentifiziert werden. Bitte versuche, dich noch einmal anzumelden bzw. das entsprechende Formular noch einmal auszufüllen. Dies kann daher kommen, dass Du Deine Cookies nicht aktiviert hast."
-msgstr ""
-#: view_home_derivatives_53
-msgid " - erlaubt schnellere Installation, da nur die aktuellsten Pakete heruntergeladen werden."
 msgstr ""
 #: view_home_home_4
 msgid "Mehr ..."

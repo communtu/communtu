@@ -458,6 +458,7 @@ en:
   view_home_derivatives_29: a computer to watch TV
   controller_home_5: We received your suggestion and we will inform you if imbibe the suggested repository and when we will imbibe it.
   debian_section: Debian section
+  last_user: We welcome out newest user
   view_home_home_21: "log "
   view_metapackages__package_list_2: remove package/program from bundle
   view_users__sidebar_2: Search programs
@@ -473,6 +474,7 @@ en:
   controller_metapackages_debianizing: The bundle is currently created as a metapackaged and uploaded. This could take a couple of minutes.
   view_home_home_24: To the imprint
   view_users__sidebar_5: Administrate users
+  hello: Welcome
   invalid_activation_code_entered: Invalid activation code entered.
   view_home_home_25: For questions concerning Communtu we have created a "FAQ".
   view_metapackages__metalist_20: <option>0 bundles selected</option>
@@ -571,18 +573,18 @@ en:
   model_mailer_0: Welcome to Communtu
   view_metapackages_finish_migrate_6: "Forward "
   view_passwords_edit_1: "    confirm password:"
-  view_home_derivatives_52: " - a kind of Automatix for the ultimate edition."
   view_home_auth_error_0: Error with authentication
   passwd_no_match: The new password does not comply with the verification.
   change_passwd: change password
   metacart_choose: Please add programs from the left box to your bundle.
   model_mailer_1: Query via formular
+  view_home_derivatives_52: " - a kind of Automatix for the ultimate edition."
   view_home_home_2: Ubuntu
   view_passwords_edit_2: receive new password
   view_user_profiles__sources_0: Sources for the soon be installed programs
-  view_home_derivatives_53: " - allows a faster installation, as only the latest packages are downloaded."
   view_home_auth_error_1: The file you sent to Communtu couldn't be authenticated. Please try again with logging in again or filling in the form again. This could also come from disabled cookie settings.
   model_mailer_2: Your account has been activated.
+  view_home_derivatives_53: " - allows a faster installation, as only the latest packages are downloaded."
   view_home_home_3: " stands for a human Linux that is easy to use. In order to use Ubuntu effectively, an excessive amount of programs have to be installed. It is not always easy to keep an overview. With Communtu you just specify for which purposes you want to use your computer and Communtu suggests several programs to you which will be installed automatically."
   view_user_profiles__sources_1: The soon be installed programs and packages are shown and ordered by the appropriate sources so you can see why some sources will be added.
   view_admins_sync_all_1: "Error: couldn't synchronise repositories"

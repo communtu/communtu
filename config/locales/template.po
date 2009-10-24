@@ -1823,6 +1823,10 @@ msgstr "remove package/program from bundle"
 msgid "melde"
 msgstr "log "
 
+#: last_user
+msgid "Wir begrüßen unseren zuletzt neu-registrierte Nutzer"
+msgstr "We welcome out newest user"
+
 #: debian_section
 msgid "Debian-Section:"
 msgstr "Debian section"
@@ -1898,6 +1902,10 @@ msgstr "For questions concerning Communtu we have created a \"FAQ\"."
 #: invalid_activation_code_entered
 msgid "Ungültiger Anderungscode eingegeben."
 msgstr "Invalid activation code entered."
+
+#: hello
+msgid "Herzlich Willkommen"
+msgstr "Welcome"
 
 #: view_users__sidebar_7
 msgid "Derivate verwalten"
@@ -2243,6 +2251,10 @@ msgstr "receive new password"
 msgid "Ubuntu-Linux"
 msgstr "Ubuntu"
 
+#: view_home_derivatives_52
+msgid " - eine Art Automatix für die Ultimate Edition."
+msgstr " - a kind of Automatix for the ultimate edition."
+
 #: model_mailer_1
 msgid "Anfrage per Formular"
 msgstr "Query via formular"
@@ -2263,10 +2275,6 @@ msgstr "The new password does not comply with the verification."
 msgid "Authentifizierungs-Fehler"
 msgstr "Error with authentication"
 
-#: view_home_derivatives_52
-msgid " - eine Art Automatix für die Ultimate Edition."
-msgstr " - a kind of Automatix for the ultimate edition."
-
 #: view_user_profiles__sources_1
 msgid "Hier werden die zu installierenden Programme und Pakete nach den zugehörigen Quellen sortiert aufgelistet, so dass du auch sehen kannst, weshalb die jeweiligen Quellen hinzugefügt werden."
 msgstr "The soon be installed programs and packages are shown and ordered by the appropriate sources so you can see why some sources will be added."
@@ -2275,6 +2283,10 @@ msgstr "The soon be installed programs and packages are shown and ordered by the
 msgid " steht für ein menschliches Linux, das einfach zu benutzen ist. Aber um Ubuntu wirklich gut nutzen zu können, muss man ganz schön viele Programme nachinstallieren, und es ist oft schwer, da den Überblick zu behalten. Bei Communtu gibst du nur an, welche Aufgaben du mit deinem Computer erledigen willst, und Communtu schlägt dir eine ganze Reihe von Programmen vor, die automatisch installiert werden können."
 msgstr " stands for a human Linux that is easy to use. In order to use Ubuntu effectively, an excessive amount of programs have to be installed. It is not always easy to keep an overview. With Communtu you just specify for which purposes you want to use your computer and Communtu suggests several programs to you which will be installed automatically."
 
+#: view_home_derivatives_53
+msgid " - erlaubt schnellere Installation, da nur die aktuellsten Pakete heruntergeladen werden."
+msgstr " - allows a faster installation, as only the latest packages are downloaded."
+
 #: model_mailer_2
 msgid "Dein Benutzerkonto wurde aktiviert."
 msgstr "Your account has been activated."
@@ -2282,10 +2294,6 @@ msgstr "Your account has been activated."
 #: view_home_auth_error_1
 msgid "Die Daten, die du an Communtu geschickt hast, konnten nicht korrekt authentifiziert werden. Bitte versuche, dich noch einmal anzumelden bzw. das entsprechende Formular noch einmal auszufüllen. Dies kann daher kommen, dass Du Deine Cookies nicht aktiviert hast."
 msgstr "The file you sent to Communtu couldn't be authenticated. Please try again with logging in again or filling in the form again. This could also come from disabled cookie settings."
-
-#: view_home_derivatives_53
-msgid " - erlaubt schnellere Installation, da nur die aktuellsten Pakete heruntergeladen werden."
-msgstr " - allows a faster installation, as only the latest packages are downloaded."
 
 #: view_home_home_4
 msgid "Mehr ..."

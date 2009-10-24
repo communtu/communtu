@@ -1351,6 +1351,9 @@ msgstr ""
 #: view_home_home_21
 msgid "log "
 msgstr ""
+#: last_user
+msgid "We welcome out newest user"
+msgstr ""
 #: debian_section
 msgid "Debian section"
 msgstr ""
@@ -1407,6 +1410,9 @@ msgid "For questions concerning Communtu we have created a \"FAQ\"."
 msgstr ""
 #: invalid_activation_code_entered
 msgid "Invalid activation code entered."
+msgstr ""
+#: hello
+msgid "Welcome"
 msgstr ""
 #: view_users__sidebar_7
 msgid "Administrate derivatives"
@@ -1636,6 +1642,9 @@ msgstr ""
 #: view_home_home_2
 msgid "Ubuntu"
 msgstr ""
+#: view_home_derivatives_52
+msgid " - a kind of Automatix for the ultimate edition."
+msgstr ""
 #: model_mailer_1
 msgid "Query via formular"
 msgstr ""
@@ -1651,23 +1660,20 @@ msgstr ""
 #: view_home_auth_error_0
 msgid "Error with authentication"
 msgstr ""
-#: view_home_derivatives_52
-msgid " - a kind of Automatix for the ultimate edition."
-msgstr ""
 #: view_user_profiles__sources_1
 msgid "The soon be installed programs and packages are shown and ordered by the appropriate sources so you can see why some sources will be added."
 msgstr ""
 #: view_home_home_3
 msgid " stands for a human Linux that is easy to use. In order to use Ubuntu effectively, an excessive amount of programs have to be installed. It is not always easy to keep an overview. With Communtu you just specify for which purposes you want to use your computer and Communtu suggests several programs to you which will be installed automatically."
 msgstr ""
+#: view_home_derivatives_53
+msgid " - allows a faster installation, as only the latest packages are downloaded."
+msgstr ""
 #: model_mailer_2
 msgid "Your account has been activated."
 msgstr ""
 #: view_home_auth_error_1
 msgid "The file you sent to Communtu couldn't be authenticated. Please try again with logging in again or filling in the form again. This could also come from disabled cookie settings."
-msgstr ""
-#: view_home_derivatives_53
-msgid " - allows a faster installation, as only the latest packages are downloaded."
 msgstr ""
 #: view_home_home_4
 msgid "More ..."
