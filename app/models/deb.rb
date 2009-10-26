@@ -33,36 +33,36 @@ class Deb < ActiveRecord::Base
 
   # generate debian package
   def generate
+    meta = self.metapackage
+    dist = self.distribution
+    der = self.derivative
+    lic = self.license_type
+    sec = self.security_type
+    name = self.name
+    codename = self.codename
+    mlic = meta.compute_license_type
+    msec = meta.compute_security_type
+    version = "#{meta.version}-#{self.codename}"
+    # compute list of packages contained in metapackage
+    packages = {}
+    plist = nil
+    homogeneous = true
+    Architecture.all.each do |arch|
+      packages[arch] = meta.package_names_for_deb(dist,der,lic,sec,arch)
+      if plist.nil? then
+        plist = packages[arch]
+      elsif plist != packages[arch] then
+        homogeneous = false
+      end
+    end
+    if homogeneous then
+      architectures = [Architecture.find(:first)]
+    else
+      architectures = Architecture.all
+    end
     # create a lock in order to avoid concurrent debianizations
     safe_system "dotlockfile -r 1000 #{RAILS_ROOT}/debs/lock"
     begin
-      meta = self.metapackage
-      dist = self.distribution
-      der = self.derivative
-      lic = self.license_type
-      sec = self.security_type
-      name = self.name
-      codename = self.codename
-      mlic = meta.compute_license_type
-      msec = meta.compute_security_type
-      version = "#{meta.version}-#{self.codename}"
-      # compute list of packages contained in metapackage
-      packages = {}
-      plist = nil
-      homogeneous = true
-      Architecture.all.each do |arch|
-        packages[arch] = meta.package_names_for_deb(dist,der,lic,sec,arch)
-        if plist.nil? then
-          plist = packages[arch]
-        elsif plist != packages[arch] then
-          homogeneous = false
-        end
-      end
-      if homogeneous then
-        architectures = [Architecture.find(:first)]
-      else
-        architectures = Architecture.all
-      end
       # logging
       f=File.open("#{RAILS_ROOT}/log/debianize.log","a")
       f.puts
