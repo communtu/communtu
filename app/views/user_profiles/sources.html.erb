@@ -1,5 +1,5 @@
 <%= render_tabz(:user_profile, 
       {:user => current_user, 
-       :dist_string => Distribution.browser_info(request.env['HTTP_USER_AGENT'])
+       :dist_string => (Distribution.browser_info(request.env['HTTP_USER_AGENT'])+" "+Architecture.browser_info(request.env['HTTP_USER_AGENT']))
       })
  %>

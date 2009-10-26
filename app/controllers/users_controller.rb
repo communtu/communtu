@@ -2,8 +2,6 @@ require 'user_meta_tabz'
 
 class UsersController < ApplicationController
   
-  DEFAULT_DISTRO = 4 # Jaunty
-  DEFALUT_DERIVATIVE = 1 # Ubuntu
   def title
     t(:match_ubuntu)
   end 
@@ -36,8 +34,8 @@ class UsersController < ApplicationController
     cookies.delete :auth_token
     @user = User.new(params[:user])
     browser_dist = Distribution.browser_distribution(request.env['HTTP_USER_AGENT'])
-    set_dist(@user)
-    @user.derivative_id = DEFALUT_DERIVATIVE
+    set_dist_and_arch(@user)
+    @user.derivative = Derivative.default
     @user.enabled = true
     @user.activation_code = nil
     @user.activated_at = Time.now    
@@ -75,8 +73,8 @@ class UsersController < ApplicationController
     @user = User.new(:login => login, :email => login+"@example.org",
                 :password => login, :password_confirmation => login)
     browser_dist = Distribution.browser_distribution(request.env['HTTP_USER_AGENT'])
-    set_dist(@user)
-    @user.derivative_id = DEFALUT_DERIVATIVE
+    set_dist_and_arch(@user)
+    @user.derivative = Derivative.default
     @user.enabled = true
     @user.anonymous = true
     @user.activation_code = nil
@@ -165,13 +163,10 @@ class UsersController < ApplicationController
   def desc   
   end
 
-  def set_dist(user)
-    browser_dist = Distribution.browser_distribution(request.env['HTTP_USER_AGENT'])
-    if browser_dist.nil? then
-      user.distribution_id = DEFAULT_DISTRO
-    else
-      user.distribution_id = browser_dist.id
-    end
+  def set_dist_and_arch(user)
+    s = request.env['HTTP_USER_AGENT']
+    user.distribution = Distribution.browser_distribution_with_default(s)
+    user.architecture = Architecture.browser_architecture_with_default(s)
     user.save
   end
 end

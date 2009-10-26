@@ -5,6 +5,8 @@ class Distribution < ActiveRecord::Base
   has_many :debs, :dependent => :destroy
   belongs_to :distribution
 
+  DEFAULT_DISTRO_NAME = "Jaunty"
+
   def predecessor
     self.distribution
   end
@@ -22,36 +24,35 @@ class Distribution < ActiveRecord::Base
     RAILS_ROOT + "/debs/repos/" + self.short_name
   end
 
-  # return the distribution info from the browser info string
-  def self.browser_info(s)
+  def self.browser_distribution(s)
     if s.nil? then
       return nil
     end
-    index = s.index("Ubuntu")
-    if index.nil? then
-      s = nil
-    else
-      s = s[index+7,s.length]
-      index = s.index(")")
-      if !index.nil? then
-        s = s[0,index+1]
-      end
-    end
-    return s
-  end
-
-  def self.browser_distribution(s)
-    s1 = Distribution.browser_info(s)
-    if s1.nil? then
-      return nil
-    end
-    s1 = s1.downcase
+    s1 = s.downcase
     Distribution.all.each do |d|
       if !s1.index(d.short_name.downcase).nil? then
         return d
       end
     end
     return nil
+  end
+
+  def self.browser_distribution_with_default(s)
+    d = Distribution.browser_distribution(s)
+    if d.nil? then
+      return Distribution.find_by_short_name(DEFAULT_DISTRO_NAME)
+    else
+      return d
+    end
+  end
+
+  def self.browser_info(s)
+    d = Distribution.browser_distribution(s)
+    if d.nil? then
+      return ""
+    else
+      return d.name
+    end
   end
   
   protected

@@ -2,6 +2,12 @@ class Derivative < ActiveRecord::Base
   has_many :metacontents_derivatives
   has_many :users
   has_many :debs, :dependent => :destroy 
+
+  DEFALUT_DERIVATIVE_NAME = "Ubuntu"
+
+  def self.default
+    return Derivative.find_by_name(DEFALUT_DERIVATIVE_NAME)
+  end
   
   protected
   def after_create
