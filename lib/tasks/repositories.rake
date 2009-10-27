@@ -41,9 +41,15 @@ namespace :db do
           end
         end
       end
-      puts "  ... generating the first 1000 missing debian packages"
-      Deb.find(:all,:conditions=>{:generated=>:false},:limit=>1000).each do |d|
-         system 'echo "Deb.find('+d.id.to_s+').generate" | script/console production'
+      limit = 1000
+      debs = Deb.find(:all,:conditions=>{:generated=>:false},:limit=>limit)
+      cnt = debs.size
+      if cnt>0 then
+        s = if cnt==limit then "first "+limit.to_s else cnt.to_s end
+        puts "  ... generating the #{s} missing debian packages"
+        debs.each do |d|
+           system 'echo "Deb.find('+d.id.to_s+').generate" | script/console production'
+        end
       end
       return true
     end
