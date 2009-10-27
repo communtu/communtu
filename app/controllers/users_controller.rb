@@ -33,7 +33,7 @@ class UsersController < ApplicationController
   def create
     cookies.delete :auth_token
     @user = User.new(params[:user])
-    browser_dist = Distribution.browser_distribution(request.env['HTTP_USER_AGENT'])
+    browser_dist = Distribution.browser_distribution(request.env['HTTP_USER_AGENT'])    
     set_dist_and_arch(@user)
     @user.derivative = Derivative.default
     @user.enabled = true
@@ -84,6 +84,7 @@ class UsersController < ApplicationController
     # release lock
     system "dotlockfile -u #{RAILS_ROOT}/anolock"
     flash[:notice] = t(:controller_users_3,{:anonymous_user=>@user.login})
+    
     #have the user logged in 
     self.current_user = @user
     redirect_to "/home/home"

@@ -11,8 +11,9 @@
   <% main_categories = Category.find(:all, :conditions => {:parent_id => 1, :main => true}) %>
  <% main_categories.each do |child|%>
 		  <th align="left">
-		  <%= check_box_tag "categories[]", child.id, ratings[child.id] %>
-          <%= child.name %>
+		  <%= check_box_tag "categories[]", child.id, ratings[child.id], :id => "categories_"+child.id.to_s %>
+<!--<input id="categories_<%= child.id %>" name="categories[]" value="<%= child.id %>" type="checkbox">-->
+          <label for="categories_<%= child.id %>"><%= child.name %></label>
           <% if child.link != nil %>
           <% if child.link != "" %>
           <%= link_to(image_tag("info_out_pfeil.png", :title => t(:view_user_profiles__profile_data_4), :alt => t(:view_user_profiles__profile_data_4), :border => '0'), child.link, :target => '_blank') %>

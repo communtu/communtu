@@ -28,7 +28,8 @@ module UserProfilesHelper
         out = "<div class='suggestionHeader'><ul class='suggestionHeader'>\n"
             out += "<li class='suggestionCollapse'>"+"<img src='/images/add.png' width='10' height='10' onclick=\"['packages" + \
                 root.name + "'].each(Element.toggle)\"></li>\n"
-            out += "<li class='suggestionHeader'><b>" + root.name + "</b></li>\n"
+            out += "<li class='suggestionHeader' onclick=\"['packages" + \
+                            root.name + "'].each(Element.toggle)\"><b>" + root.name + "</b></li>\n"
         out += "</ul></div>\n"
         
         out += "<div class='suggestionPackages'  style='display: none' id='packages" + root.name + "'>\n"
