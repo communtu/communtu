@@ -1,6 +1,6 @@
 class SuggestionController < ApplicationController
   def title
-    t(:match_ubuntu)
+    t(:view_layouts_application_21)
   end
 
   def install_sources

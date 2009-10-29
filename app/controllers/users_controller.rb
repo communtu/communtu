@@ -3,7 +3,7 @@ require 'user_meta_tabz'
 class UsersController < ApplicationController
   
   def title
-    t(:match_ubuntu)
+    t(:view_layouts_application_21)
   end 
   layout 'application'
   
