@@ -3,4 +3,5 @@
 	<a href="/home/news"><%=t(:news)%></a> |
 	<a href="/home/contact_us"><%=t(:view_layouts_application_31)%></a> |
 	<a href="/home/impressum"><%=t(:imprint)%></a>
+     <% if is_admin? %> | <a href="/articles"><%=t(:press_archiv)%></a><%end%>
 </div>

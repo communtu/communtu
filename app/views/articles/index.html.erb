@@ -1,0 +1,12 @@
+<span class="headline"><%=t(:press_archiv)%></span>
+<div class="inner1">
+<p><%=t(:press_archiv_editorial)%></p>
+<ul>
+    <%= render :partial => 'article', :collection => @articles %>
+</ul>
+<% if is_admin? %>
+<%=link_to(t(:new_article), '/articles/new')%>
+<% end %>
+</div>
+
+
