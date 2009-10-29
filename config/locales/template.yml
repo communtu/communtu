@@ -136,6 +136,7 @@ de:
   donation_purpose: "Verwendungszweck: Communtu"
   donation_receipt: Spendenbescheinigung kann ausgestellt werden.
   edit: Bearbeiten
+  edit_press_archiv: Pressearchiv bearbeiten
   email_with_colon: "E-Mail: "
   email_without_colon: E-Mail
   feedback: Kommentar
@@ -222,6 +223,7 @@ de:
   name_without_colon: Name
   native: nur Ubuntu
   natur_geist_und_technik: "Natur, Geist und Technik - Verein zur Förderung der Allgemeinbildung e.V."
+  new_article: Neuen Artikel anlegen
   new_bundle: "Neues Bündel"
   new_category: Neue Kategorie
   new_derivative: Neues Derivat
@@ -244,6 +246,8 @@ de:
   path: "Pfad:"
   predecessor: Vorgänger
   preliminary_distribution: "Vorläufige Distribution"
+  press_archiv: Pressearchiv
+  press_archiv_editorial: Hier haben wir eine Auswahl von Artikeln aus der Presse über uns aufgelistet.
   promote_chat: Du kannst gucken, ob sich gerade jemand von uns im Chat aufhält und mit uns über den Chat kommunizieren.
   published: "veröffentlicht"
   register: Registrieren
@@ -603,7 +607,7 @@ de:
   view_layouts_application_1: "Communtu passt Dein Linux-Ubuntu-System an Deine individuellen Bedürfnisse an."
   view_layouts_application_2: Communtu
   view_layouts_application_20: Javascript ist nicht aktiviert! Bitte aktiviere Javascript in Deinen Browsereinstellungen.
-  view_layouts_application_21: macht Ubuntu-Installationen einfach
+  view_layouts_application_21: Communtu macht Ubuntu-Installationen einfach
   view_layouts_application_22: zum Benutzerprofil
   view_layouts_application_23: BÜNDEL
   view_layouts_application_24: DOWNLOAD
