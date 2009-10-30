@@ -86,13 +86,20 @@ class Repository < ActiveRecord::Base
 
   # import repository info from the url
   def import_source
-    # delete package_distrs of the repository; the are rebuilt later on
-    PackageDistr.destroy_all(:repository_id => self.id)
-
+    # need lock in order to ensur that only we mark things as outdated
+    safe_system "dotlockfile -r 1000 #{RAILS_ROOT}/repo_lock"
     infos = {}
+    first_run = true
     Architecture.all.each do |arch|
-      infos[arch] = import_source_arch arch
+      infos[arch] = import_source_arch arch, first_run
+      if !infos[arch]["package_count"].nil? then
+        first_run = false
+      end
     end
+    # remove orphans
+    PackageDistrsArchitecture.destroy_all(:outdated => true)
+    PackageDistr.destroy_all(:outdated => true)
+    safe_system "dotlockfile -u #{RAILS_ROOT}/repo_lock"
     return infos
   end
 
@@ -100,7 +107,7 @@ class Repository < ActiveRecord::Base
   # these methods should not be called from outside, since they depend on proper preparation
 
   # import repository for on architecture
-  def import_source_arch arch
+  def import_source_arch arch, first_run
 
     distribution_id = self.distribution_id
 
@@ -116,11 +123,25 @@ class Repository < ActiveRecord::Base
     # read in all packages from repository
     tmp_name = (IO.popen "mktemp").read.chomp
     packages = self.packages_to_hash url, arch, tmp_name
-    # errors while reading in? then return
+    # errors while reading or still up-to-date? then return
     if !packages[:error].nil? or !packages[:notice].nil? then
       return packages
     end
 
+    if first_run
+      # mark all PackageDistrs for this repository as outdated
+      PackageDistr.find(:all,:conditions => ["repository_id = ?",self.id]).each do |pd|
+        pd.outdated = true
+        pd.save
+      end
+    end
+    
+    # mark all PackageDistrsArchitectures for this repository and architecture as outdated
+    PackageDistrsArchitecture.find(:all,:conditions => ["package_distrs.repository_id = ? and architecture_id = ?",self.id,arch.id],:include=>:package_distr).each do |pda|
+      pda.outdated = true
+      pda.save
+    end
+    
     info = { "package_count" => packages[:packages].size, "update_count" => 0, "new_count" => 0,\
       "failed" => [], "url" => url }
 
@@ -198,9 +219,14 @@ class Repository < ActiveRecord::Base
       end
       if !pd.nil? then
           # enter architecture
-          if  PackageDistrsArchitecture.find(:first,:conditions => ["package_distr_id = ? and architecture_id = ?",pd.id,arch.id]).nil? then
-              PackageDistrsArchitecture.create(:package_distr_id => pd.id, :architecture_id => arch.id)
+          if  (pda=PackageDistrsArchitecture.find(:first,:conditions => ["package_distr_id = ? and architecture_id = ?",pd.id,arch.id])).nil? then
+              PackageDistrsArchitecture.create(:package_distr_id => pd.id, :architecture_id => arch.id,:outdated => false)
+          else
+            pda.outdated = false
+            pda.save
           end
+          pd.outdated = false
+          pd.save
       end
     end # packages[:packages].each
     # enter dependency info - this must happen *after* creation of the packages!

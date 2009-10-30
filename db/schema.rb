@@ -132,11 +132,8 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.integer  "description_tid"
     t.integer  "url_tid"
     t.boolean  "preliminary",     :default => true
-  end
-
-  create_table "faqs", :force => true do |t|
-    t.integer "name_tid"
-    t.integer "answer_tid"
+    t.integer  "distribution_id"
+    t.boolean  "invisible",       :default => true
   end
 
   create_table "folders", :force => true do |t|
@@ -202,6 +199,7 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.string   "filename"
     t.integer  "size"
     t.integer  "installedsize"
+    t.boolean  "outdated"
   end
 
   create_table "package_distrs_architectures", :force => true do |t|
@@ -209,6 +207,7 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.integer  "architecture_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "outdated"
   end
 
   create_table "permissions", :force => true do |t|
@@ -216,11 +215,6 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.integer  "user_id",    :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
-  end
-
-  create_table "questions", :force => true do |t|
-    t.integer "name_tid"
-    t.integer "answer_tid"
   end
 
   create_table "ratings", :force => true do |t|
@@ -254,20 +248,6 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.datetime "updated_at"
   end
 
-  create_table "sections", :force => true do |t|
-    t.integer  "name_tid"
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.boolean  "section_flag", :default => false
-  end
-
-  create_table "sectionss", :force => true do |t|
-    t.integer  "name_tid"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-  
   create_table "translations", :force => true do |t|
     t.integer  "language_id"
     t.string   "tag"
@@ -323,9 +303,9 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
   end
 
   create_table "userlogs", :force => true do |t|
+    t.integer  "user_id"
     t.datetime "created_at",                                :null => false
     t.string   "refferer",   :limit => 240, :default => ""
-    t.integer  "user_id"
   end
 
   create_table "users", :force => true do |t|
