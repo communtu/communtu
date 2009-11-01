@@ -9,3 +9,6 @@
 <% else %>
 <%=t(:not_logged_in)%>
 <% end %>
+<% if params[:id] != "2" %>
+<%= render(:partial => 'conny')%>
+<%end%>

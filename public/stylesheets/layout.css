@@ -1028,6 +1028,36 @@ a.download:hover, a.download:active{
   padding-bottom:0.5em;
   padding-top:0em;
 }
+.conny_withbox{
+ position:relative; 
+ left:765px; 
+ top:320px;
+ border:0;
+ width:122px;
+ height:153px;
+ padding-right:1em;
+ padding-bottom:1em;
+ }
+.conny{
+ position:absolute; 
+ left:765px; 
+ top:95px;
+ border:0;
+ width:122px;
+ height:153px; 
+ padding-right:1em;
+ padding-bottom:1em;
+ }
+.conny_index{
+ position:absolute; 
+ left:815px; 
+ top:620px;
+ border:0;
+ width:122px;
+ height:153px; 
+ padding-right:1em;
+ padding-bottom:1em;
+ }
 .unternavi{
 	position:absolute; 
 	left:0px; 
