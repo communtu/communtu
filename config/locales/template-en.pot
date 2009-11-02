@@ -79,6 +79,9 @@ msgstr ""
 #: view_home_about_13
 msgid "Post-installation of single functions"
 msgstr ""
+#: new_article
+msgid "New article"
+msgstr ""
 #: view_packages_show_15
 msgid "source/repository"
 msgstr ""
@@ -848,7 +851,7 @@ msgstr ""
 msgid "dialog-program:"
 msgstr ""
 #: view_layouts_application_21
-msgid "eases Ubuntu installations"
+msgid "Communtu eases Ubuntu installations"
 msgstr ""
 #: controller_sessions_7
 msgid "Your account has been deactivated or deleted."
@@ -1207,6 +1210,9 @@ msgstr ""
 #: installing_using_script
 msgid "installing via script"
 msgstr ""
+#: view_user_profiles__installation_16
+msgid "Add sources and keys"
+msgstr ""
 #: view_my_mailer_mail_0
 msgid "Hello, \n\na feedback from en.communtu.org has arrived. The subject is:"
 msgstr ""
@@ -1215,9 +1221,6 @@ msgid "Every repositorie could be reached."
 msgstr ""
 #: view_repositories_index_5
 msgid "new repository"
-msgstr ""
-#: view_user_profiles__installation_16
-msgid "Add sources and keys"
 msgstr ""
 #: yes1
 msgid "yes"
@@ -1429,6 +1432,9 @@ msgstr ""
 #: back
 msgid "Back"
 msgstr ""
+#: questionmark_conny
+msgid "Click me and tell what is unclear to you."
+msgstr ""
 #: view_cart_update_0
 msgid "edit bundle-information"
 msgstr ""
@@ -1612,11 +1618,11 @@ msgstr ""
 #: view_passwords_edit_0
 msgid "    Password:"
 msgstr ""
-#: choose_bundle
-msgid "Choose bundle"
-msgstr ""
 #: view_home_derivatives_50
 msgid " - with Fluxbox and several network-tools."
+msgstr ""
+#: choose_bundle
+msgid "Choose bundle"
 msgstr ""
 #: view_passwords_edit_1
 msgid "    confirm password:"
@@ -1624,14 +1630,14 @@ msgstr ""
 #: view_metapackages_finish_migrate_6
 msgid "Forward "
 msgstr ""
+#: view_home_derivatives_51
+msgid " - Installation of programs and version, which are not available through the official repositories."
+msgstr ""
 #: model_mailer_0
 msgid "Welcome to Communtu"
 msgstr ""
 #: controller_metapackages_no_renaming
 msgid "Released bundles cannot be renamed."
-msgstr ""
-#: view_home_derivatives_51
-msgid " - Installation of programs and version, which are not available through the official repositories."
 msgstr ""
 #: view_user_profiles__sources_0
 msgid "Sources for the soon be installed programs"
@@ -1945,6 +1951,9 @@ msgstr ""
 #: kontodaten
 msgid "Bank-account: 172 9375, Sparkasse Bremen, Bank-number 290 501 01"
 msgstr ""
+#: edit_press_archiv
+msgid "edit press archives"
+msgstr ""
 #: view_user_profiles__installation_21
 msgid "Installation of the metapackages. Please add the sources first."
 msgstr ""
@@ -1971,6 +1980,9 @@ msgid "copy repository"
 msgstr ""
 #: view_layouts_application_0
 msgid "Communtu, Ubuntu, installation, installation help"
+msgstr ""
+#: press_archiv_editorial
+msgid "Here we have listed a selection of press articles about us."
 msgstr ""
 #: view_user_profiles__installation_23
 msgid "Installing packages. There are two alternatives:"
@@ -2067,6 +2079,9 @@ msgid " - replaces the Linux core with OpenSolaris. Provides only a minimal basi
 msgstr ""
 #: new_distribution
 msgid "New distribution"
+msgstr ""
+#: press_archiv
+msgid "Press archives"
 msgstr ""
 #: view_derivatives_edit_0
 msgid "edit derivative"

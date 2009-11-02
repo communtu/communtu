@@ -115,6 +115,10 @@ msgstr "(version {{v}})"
 msgid "Klicke dazu bitte den Punkt \"Neues Bündel\" unter \"Bündel\". Aus den Paketen im linken Fenster der Webseite kannst Du dann die einzelnen Pakete auswählen und hinzufügen. Zum Schluss muss dann auf das Speichernsymbol im Bündelbereich geklickt werden. Hier öffnet sich dann auf einer neuen Seite ein Formular, wo Du einen sinnvollen Titel und Beschreibung eingeben kannst. Bitte ordne Deinem Bündel auch eine entsprechende Kategorie zu."
 msgstr "Click on \"Bundle\" and then you have to click \"New Bundle\". In the left box you can choose packages and add them to the bundle. When finished, you have to click on the \"Save\"-symbol in the bundle-editor. Now a new window appears in the main-window where you have to enter a meaningful name and a description. Don't forget to assign your bundle to a category."
 
+#: new_article
+msgid "Neuen Artikel anlegen"
+msgstr "New article"
+
 #: view_home_beteiligung_14
 msgid "Wir können Dir auch helfen diese Programmiersprache zu lernen. Also melde Dich einfach bei "
 msgstr "We can also help you to learn this programming-language. You just have to contact "
@@ -1093,25 +1097,25 @@ msgstr "Your old password was incorrect."
 msgid "Erstellte Bündel: "
 msgstr "Created bundles:"
 
-#: controller_sessions_4
-msgid "Du wurdest abgemeldet."
-msgstr "You have been logged in."
-
 #: view_home_derivatives_48
 msgid " - minimale Server-Version, vor allem für Virtualisierung geeignet.."
 msgstr " - minimal server-version, suitable for virtualizations."
+
+#: controller_sessions_4
+msgid "Du wurdest abgemeldet."
+msgstr "You have been logged in."
 
 #: view_home_news_13
 msgid "http://groups.google.com/group/communtu-discuss-de/topics?start="
 msgstr "http://groups.google.com/group/communtu-discuss-de/topics?start="
 
-#: controller_sessions_5
-msgid "Dein Benutzername oder Passwort ist falsch. Bitte ggf. unten auf \"Registrieren\" klicken."
-msgstr "Your username or password is wrong. If applicable click on \"Register\" below."
-
 #: view_home_derivatives_49
 msgid " - Ubuntu mit Enlightenment als Desktopumgebung."
 msgstr " - Ubuntu with Enlightenment as a desktop environment."
+
+#: controller_sessions_5
+msgid "Dein Benutzername oder Passwort ist falsch. Bitte ggf. unten auf \"Registrieren\" klicken."
+msgstr "Your username or password is wrong. If applicable click on \"Register\" below."
 
 #: controller_packages_1
 msgid "Paket erzeugt."
@@ -1142,8 +1146,8 @@ msgid "Nachrichten"
 msgstr "Message"
 
 #: view_layouts_application_21
-msgid "macht Ubuntu-Installationen einfach"
-msgstr "eases Ubuntu installations"
+msgid "Communtu macht Ubuntu-Installationen einfach"
+msgstr "Communtu eases Ubuntu installations"
 
 #: view_home_news_15
 msgid "Unser Blog"
@@ -1927,6 +1931,10 @@ msgstr "You installed Ubuntu and now you are looking for programs, which run wit
 msgid "zurück"
 msgstr "Back"
 
+#: questionmark_conny
+msgid "Klick mich und sag mir, was Dir unklar ist."
+msgstr "Click me and tell what is unclear to you."
+
 #: view_cart_update_0
 msgid "Bündel-Informationen anpassen"
 msgstr "edit bundle-information"
@@ -2211,13 +2219,13 @@ msgstr "Install"
 msgid "    Passwort:"
 msgstr "    Password:"
 
-#: choose_bundle
-msgid "Bündel auswählen"
-msgstr "Choose bundle"
-
 #: view_home_derivatives_50
 msgid " - mit Fluxbox und verschiedenen Netzwerk-Sicherheitswerkzeugen ."
 msgstr " - with Fluxbox and several network-tools."
+
+#: choose_bundle
+msgid "Bündel auswählen"
+msgstr "Choose bundle"
 
 #: view_passwords_edit_1
 msgid "    Passwort bestätigen:"
@@ -2227,6 +2235,10 @@ msgstr "    confirm password:"
 msgid "Weiter"
 msgstr "Forward "
 
+#: view_home_derivatives_51
+msgid " - Installation von Programmen und Versionen, die nicht über die offiziellen Repositories erhältlich sind."
+msgstr " - Installation of programs and version, which are not available through the official repositories."
+
 #: model_mailer_0
 msgid "Herzlich Willkommen bei Communtu"
 msgstr "Welcome to Communtu"
@@ -2234,10 +2246,6 @@ msgstr "Welcome to Communtu"
 #: controller_metapackages_no_renaming
 msgid "Veröffentlichte Bündel können nicht umbenannt werden."
 msgstr "Released bundles cannot be renamed."
-
-#: view_home_derivatives_51
-msgid " - Installation von Programmen und Versionen, die nicht über die offiziellen Repositories erhältlich sind."
-msgstr " - Installation of programs and version, which are not available through the official repositories."
 
 #: view_user_profiles__sources_0
 msgid "Quellen für die zu installierenden Programme"
@@ -2665,6 +2673,10 @@ msgstr "Total packages:"
 msgid "Konto 172 9375, Sparkasse Bremen, BLZ 290 501 01"
 msgstr "Bank-account: 172 9375, Sparkasse Bremen, Bank-number 290 501 01"
 
+#: edit_press_archiv
+msgid "Pressearchiv bearbeiten"
+msgstr "edit press archives"
+
 #: view_user_profiles__installation_21
 msgid "installieren der Metapakete. Bitte vorher die Quellen hinzufügen."
 msgstr "Installation of the metapackages. Please add the sources first."
@@ -2700,6 +2712,10 @@ msgstr "copy repository"
 #: view_layouts_application_0
 msgid "Communtu, Ubuntu, Installation, Installationshilfe"
 msgstr "Communtu, Ubuntu, installation, installation help"
+
+#: press_archiv_editorial
+msgid "Hier haben wir eine Auswahl von Artikeln aus der Presse über uns aufgelistet."
+msgstr "Here we have listed a selection of press articles about us."
 
 #: view_user_profiles__installation_23
 msgid "Pakete installieren. Es gibt zwei Alternativen:"
@@ -2828,6 +2844,10 @@ msgstr " - replaces the Linux core with OpenSolaris. Provides only a minimal bas
 #: new_distribution
 msgid "Neue Distribution"
 msgstr "New distribution"
+
+#: press_archiv
+msgid "Pressearchiv"
+msgstr "Press archives"
 
 #: view_derivatives_edit_0
 msgid "Derivative bearbeiten"

@@ -88,6 +88,9 @@ msgstr ""
 #: view_home_faq_06
 msgid "Klicke dazu bitte den Punkt \"Neues Bündel\" unter \"Bündel\". Aus den Paketen im linken Fenster der Webseite kannst Du dann die einzelnen Pakete auswählen und hinzufügen. Zum Schluss muss dann auf das Speichernsymbol im Bündelbereich geklickt werden. Hier öffnet sich dann auf einer neuen Seite ein Formular, wo Du einen sinnvollen Titel und Beschreibung eingeben kannst. Bitte ordne Deinem Bündel auch eine entsprechende Kategorie zu."
 msgstr ""
+#: new_article
+msgid "Neuen Artikel anlegen"
+msgstr ""
 #: view_home_beteiligung_14
 msgid "Wir können Dir auch helfen diese Programmiersprache zu lernen. Also melde Dich einfach bei "
 msgstr ""
@@ -811,20 +814,20 @@ msgstr ""
 #: view_users_show_5
 msgid "Erstellte Bündel: "
 msgstr ""
-#: controller_sessions_4
-msgid "Du wurdest abgemeldet."
-msgstr ""
 #: view_home_derivatives_48
 msgid " - minimale Server-Version, vor allem für Virtualisierung geeignet.."
+msgstr ""
+#: controller_sessions_4
+msgid "Du wurdest abgemeldet."
 msgstr ""
 #: view_home_news_13
 msgid "http://groups.google.com/group/communtu-discuss-de/topics?start="
 msgstr ""
-#: controller_sessions_5
-msgid "Dein Benutzername oder Passwort ist falsch. Bitte ggf. unten auf \"Registrieren\" klicken."
-msgstr ""
 #: view_home_derivatives_49
 msgid " - Ubuntu mit Enlightenment als Desktopumgebung."
+msgstr ""
+#: controller_sessions_5
+msgid "Dein Benutzername oder Passwort ist falsch. Bitte ggf. unten auf \"Registrieren\" klicken."
 msgstr ""
 #: controller_packages_1
 msgid "Paket erzeugt."
@@ -848,7 +851,7 @@ msgstr ""
 msgid "Nachrichten"
 msgstr ""
 #: view_layouts_application_21
-msgid "macht Ubuntu-Installationen einfach"
+msgid "Communtu macht Ubuntu-Installationen einfach"
 msgstr ""
 #: view_home_news_15
 msgid "Unser Blog"
@@ -1429,6 +1432,9 @@ msgstr ""
 #: back
 msgid "zurück"
 msgstr ""
+#: questionmark_conny
+msgid "Klick mich und sag mir, was Dir unklar ist."
+msgstr ""
 #: view_cart_update_0
 msgid "Bündel-Informationen anpassen"
 msgstr ""
@@ -1612,11 +1618,11 @@ msgstr ""
 #: view_passwords_edit_0
 msgid "    Passwort:"
 msgstr ""
-#: choose_bundle
-msgid "Bündel auswählen"
-msgstr ""
 #: view_home_derivatives_50
 msgid " - mit Fluxbox und verschiedenen Netzwerk-Sicherheitswerkzeugen ."
+msgstr ""
+#: choose_bundle
+msgid "Bündel auswählen"
 msgstr ""
 #: view_passwords_edit_1
 msgid "    Passwort bestätigen:"
@@ -1624,14 +1630,14 @@ msgstr ""
 #: view_metapackages_finish_migrate_6
 msgid "Weiter"
 msgstr ""
+#: view_home_derivatives_51
+msgid " - Installation von Programmen und Versionen, die nicht über die offiziellen Repositories erhältlich sind."
+msgstr ""
 #: model_mailer_0
 msgid "Herzlich Willkommen bei Communtu"
 msgstr ""
 #: controller_metapackages_no_renaming
 msgid "Veröffentlichte Bündel können nicht umbenannt werden."
-msgstr ""
-#: view_home_derivatives_51
-msgid " - Installation von Programmen und Versionen, die nicht über die offiziellen Repositories erhältlich sind."
 msgstr ""
 #: view_user_profiles__sources_0
 msgid "Quellen für die zu installierenden Programme"
@@ -1948,6 +1954,9 @@ msgstr ""
 #: kontodaten
 msgid "Konto 172 9375, Sparkasse Bremen, BLZ 290 501 01"
 msgstr ""
+#: edit_press_archiv
+msgid "Pressearchiv bearbeiten"
+msgstr ""
 #: view_user_profiles__installation_21
 msgid "installieren der Metapakete. Bitte vorher die Quellen hinzufügen."
 msgstr ""
@@ -1974,6 +1983,9 @@ msgid "Kopiere Repository "
 msgstr ""
 #: view_layouts_application_0
 msgid "Communtu, Ubuntu, Installation, Installationshilfe"
+msgstr ""
+#: press_archiv_editorial
+msgid "Hier haben wir eine Auswahl von Artikeln aus der Presse über uns aufgelistet."
 msgstr ""
 #: view_user_profiles__installation_23
 msgid "Pakete installieren. Es gibt zwei Alternativen:"
@@ -2070,6 +2082,9 @@ msgid " - ersetzt den Linux-Kern durch OpenSolaris. Stellt nur eine minimale Bas
 msgstr ""
 #: new_distribution
 msgid "Neue Distribution"
+msgstr ""
+#: press_archiv
+msgid "Pressearchiv"
 msgstr ""
 #: view_derivatives_edit_0
 msgid "Derivative bearbeiten"

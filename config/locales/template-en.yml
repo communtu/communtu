@@ -22,6 +22,7 @@ en:
   view_home_beteiligung_13: Since we have many ideas for the platform's further development, we need programmers. Ideally you already have some experience with Ruby on Rails.
   view_accounts_edit_1: old password
   view_home_about_13: Post-installation of single functions
+  new_article: New article
   view_packages_show_15: source/repository
   view_home_faq_06: Click on "Bundle" and then you have to click "New Bundle". In the left box you can choose packages and add them to the bundle. When finished, you have to click on the "Save"-symbol in the bundle-editor. Now a new window appears in the main-window where you have to enter a meaningful name and a description. Don't forget to assign your bundle to a category.
   view_home_beteiligung_14: "We can also help you to learn this programming-language. You just have to contact "
@@ -285,7 +286,7 @@ en:
   controller_sessions_6: Your account has not been activated yet. The activation code has been sent to you via e-mail.
   controller_packages_2: Package updated.
   view_derivatives_show_2: "dialog-program:"
-  view_layouts_application_21: eases Ubuntu installations
+  view_layouts_application_21: Communtu eases Ubuntu installations
   controller_sessions_7: Your account has been deactivated or deleted.
   view_home_news_15: Our blog
   view_users_show_8: Message
@@ -407,11 +408,11 @@ en:
   view_admins_test_all_0: "The following repositories couldn't be read:"
   view_packages_edit_4: "Is a program:"
   installing_using_script: installing via script
+  view_admins_test_all_1: Every repositorie could be reached.
   view_my_mailer_mail_0: |-
     Hello, 
     
     a feedback from en.communtu.org has arrived. The subject is:
-  view_admins_test_all_1: Every repositorie could be reached.
   view_repositories_index_5: new repository
   view_user_profiles__installation_16: Add sources and keys
   view_home_derivatives_24: "Derivatives, which should be installed with the derivative installation-CD:"
@@ -480,6 +481,7 @@ en:
   view_metapackages__metalist_20: <option>0 bundles selected</option>
   view_users__sidebar_6: Administrate categories
   view_cart_update_0: edit bundle-information
+  questionmark_conny: Click me and tell what is unclear to you.
   back: Back
   view_home_home_26: You installed Ubuntu and now you are looking for programs, which run with Ubuntu?
   view_home_icons_20: user-icon
@@ -565,12 +567,12 @@ en:
     http://en.communtu.org/home/news
   install2: Install
   view_rating_new_comment_info: Please enter a description to your rating. This is a <b>mandatory</b> step.
-  view_home_derivatives_50: " - with Fluxbox and several network-tools."
   choose_bundle: Choose bundle
+  view_home_derivatives_50: " - with Fluxbox and several network-tools."
   view_passwords_edit_0: "    Password:"
-  view_home_derivatives_51: " - Installation of programs and version, which are not available through the official repositories."
   controller_metapackages_no_renaming: Released bundles cannot be renamed.
   model_mailer_0: Welcome to Communtu
+  view_home_derivatives_51: " - Installation of programs and version, which are not available through the official repositories."
   view_metapackages_finish_migrate_6: "Forward "
   view_passwords_edit_1: "    confirm password:"
   view_home_auth_error_0: Error with authentication
@@ -680,6 +682,7 @@ en:
   view_admins_load_packages_0: "New package:"
   view_home_home_bundle: Preconfigured and published bundles in Communtu
   view_user_profiles__installation_20: This step has already been carried out.
+  edit_press_archiv: edit press archives
   kontodaten: "Bank-account: 172 9375, Sparkasse Bremen, Bank-number 290 501 01"
   save_fine: Save fine selection
   save_rough_install: Save rough selection and install
@@ -687,6 +690,7 @@ en:
   view_home_icons_0: icons used in Communtu
   view_packages_show_5: add sources for this package
   view_user_profiles__installation_21: Installation of the metapackages. Please add the sources first.
+  press_archiv_editorial: Here we have listed a selection of press articles about us.
   view_layouts_application_0: Communtu, Ubuntu, installation, installation help
   view_repositories_migrate_1: copy repository
   view_users__mailbox_list_1: Mailbox
@@ -717,6 +721,7 @@ en:
   third_party: all providers
   controller_metapackages_no_save: This bundle contains conflicts and therefor it cannot be saved as a metapackage.
   view_derivatives_edit_0: edit derivative
+  press_archiv: Press archives
   new_distribution: New distribution
   view_home_derivatives_34: " - replaces the Linux core with OpenSolaris. Provides only a minimal basis to applications. The installation of additional software is left to the user; Communtu can be used for this."
   to_chat: to the chat
