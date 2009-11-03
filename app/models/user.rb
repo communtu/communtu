@@ -376,7 +376,7 @@ class User < ActiveRecord::Base
       system "echo hallo > #{iso}"
     end
     system "dotlockfile -u #{RAILS_ROOT}/livecd_lock"
-    UserMailer.create_livecd(self,iso)
+    UserMailer.deliver_livecd(self,iso)
   end
 
 
