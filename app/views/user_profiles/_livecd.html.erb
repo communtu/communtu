@@ -1,0 +1,14 @@
+<h2><%=t(:livecd)%></h2>
+<%= render_flash %>
+<%= render :partial => 'box' %>
+<% if current_user.selected_packages.empty? %>
+<%=t(:view_user_profiles__installation_1)%>
+
+<% else %>
+<p><%=t(:livecd_message,:cdimage_link => (link_to t(:livecd_image), t(:livecd_image_link)))%></p>
+<p><%=link_to t(:livecd_start), "/user_profiles/create_livecd/"+ current_user.id.to_s %></p>
+<p><%=t(:view_user_profiles__installation_33)%>
+<%= link_to (t(:sources), user_path(current_user) + "/user_profile/tabs/4")%>
+<%=t(:view_user_profiles__installation_34)%>
+</p>
+<% end %>

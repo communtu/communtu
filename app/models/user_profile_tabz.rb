@@ -48,6 +48,19 @@ class UserProfileTabz < Tabz::Base
     end
 
     add_tab do
+        titled I18n.t(:livecd)
+        looks_like "user_profiles/livecd"
+        with_data do
+          if @user_data[:user].class==User then
+            dist = @user_data[:user].distribution
+            der = @user_data[:user].derivative
+            arch = @user_data[:user].architecture
+            set_to({ :dist => dist, :der => der, :arch => arch})
+          end
+        end
+    end
+
+    add_tab do
         titled I18n.t(:sources)
         looks_like "user_profiles/sources"
         with_data do

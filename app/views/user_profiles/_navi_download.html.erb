@@ -1,5 +1,8 @@
 <div class="unternavi">
-        <%= link_to t(:model_user_profile_tabz_1), user_path(current_user) + "/user_profile/tabs/0" %> |
-        <%= link_to t(:install), user_path(current_user) + "/user_profile/tabs/1" %> |
-        <%= link_to t(:model_user_profile_tabz_4), user_path(current_user) + "/user_profile/tabs/2" %>
+        <%= link_to t(:model_user_profile_tabz_1), user_path(current_user) + "/user_profile/tabs/0" %>
+      | <%= link_to t(:install), user_path(current_user) + "/user_profile/tabs/1" %>
+      | <%= link_to t(:model_user_profile_tabz_4), user_path(current_user) + "/user_profile/tabs/2" %>
+    <% if is_priviliged? %>
+       | <%= link_to t(:livecd), user_path(current_user) + "/user_profile/tabs/3" %>
+    <% end %>
 </div>

@@ -97,4 +97,10 @@ class UserProfilesController < ApplicationController
     end
   end
 
+  def livecd
+    uid = params[:id]
+    fork do
+      system 'echo "User.find('+uid.to_s+').livecd" | nohup script/console production'
+    end
+  end
 end

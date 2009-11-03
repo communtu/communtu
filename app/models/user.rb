@@ -262,6 +262,124 @@ class User < ActiveRecord::Base
   end
   #Messanger methods END
 
+
+  def install_sources
+    if self.selected_packages.empty? then
+      return nil
+    end
+
+    Dir.chdir RAILS_ROOT
+
+    self.increase_version
+
+    name = BasePackage.debianize_name("communtu-add-sources-"+self.login)
+    version = self.profile_version.to_s
+
+    debfile = Dir.glob("debs/#{name}/#{name}_#{version}*deb")[0]
+    # if profile has changed, generate new debian metapackage
+    if self.profile_changed or debfile.nil? then
+      description = I18n.t(:controller_suggestion_2)+self.login
+      debfile = Deb.makedeb_for_source_install(name,
+                 version,
+                 description,
+                 self.selected_packages,
+                 self.distribution,
+                 self.derivative,
+                 self.license,
+                 self.security)
+      self.profile_changed = false
+    end
+    self.save
+    return debfile
+  end
+
+  def install_bundle_sources(bundle)
+    Dir.chdir RAILS_ROOT
+
+    name = BasePackage.debianize_name("communtu-add-sources-#{self.login}-#{bundle.name}")
+    version = self.profile_version.to_s
+
+    description = I18n.t(:controller_suggestion_4)+bundle.name
+    debfile = Deb.makedeb_for_source_install(name,
+                 version,
+                 description,
+                 [bundle],
+                 self.distribution,
+                 self.derivative,
+                 self.license,
+                 self.security)
+    return debfile
+  end
+
+  def install_package_sources(package)
+    Dir.chdir RAILS_ROOT
+    repos = package.repositories_dist(self.distribution,self.architecture)
+    name = BasePackage.debianize_name("communtu-add-sources-#{self.login}-#{package.name}")
+    version = "0.1"
+    description = I18n.t(:controller_suggestion_6)+package.name
+    # only install sources, no packages
+    codename = Deb.compute_codename(self.distribution,
+                 self.derivative,
+                 self.license,
+                 self.security)
+    debfile = Deb.makedeb(name,version,[],description,codename,self.derivative,repos)
+    return debfile
+  end
+
+  def install_bundle_as_meta
+    if self.selected_packages.empty? then
+      return nil
+    end
+
+    Dir.chdir RAILS_ROOT
+    self.increase_version
+
+    name = BasePackage.debianize_name("communtu-install-"+self.login)
+    version = self.profile_version.to_s
+
+    debfile = Dir.glob("debs/#{name}/#{name}_#{version}*deb")[0]
+    # if profile has changed, generate new debian metapackage
+    if self.profile_changed or debfile.nil? then
+      description = I18n.t(:controller_suggestion_8)+self.login
+      codename = Deb.compute_codename(self.distribution,
+                 self.derivative,
+                 self.license,
+                 self.security)
+      debfile = Deb.makedeb(name,
+                 version,
+                 self.selected_packages.map{|p| p.debian_name},
+                 description,
+                 codename,
+                 self.derivative,
+                 [])
+      self.profile_changed = false
+    end
+    self.save
+    return debfile
+  end
+
+  def fullversion
+    self.derivative.name.downcase+"-"+self.distribution.name.gsub(/[a-zA-Z ]/,'')+"-desktop-"+self.architecture.name
+  end
+
+  def livecd
+    system "dotlockfile -r 1000 #{RAILS_ROOT}/livecd_lock"
+    ver = self.fullversion
+    deb1 = RAILS_ROOT + "/" + self.install_sources
+    deb2 = RAILS_ROOT + "/" + self.install_bundle_as_meta
+    isobase = File.basename(deb2).gsub(/\.deb$/,'')
+    iso = "#{RAILS_ROOT}/public/debs/#{isobase}.iso"
+    isourl = "http://communtu.org/debs/#{isobase}.iso"
+    if Dir.glob(iso)[0].nil? then
+      #system "mklivecd remaster #{ver} #{deb1} #{deb2} #{iso}>> #{RAILS_ROOT}/log/livecd.log"
+      system "echo #{ver} #{deb1} #{deb2} #{iso}>> #{RAILS_ROOT}/log/livecd.log"
+      system "echo hallo > #{iso}"
+    end
+    system "dotlockfile -u #{RAILS_ROOT}/livecd_lock"
+    UserMailer.create_livecd(self,iso)
+  end
+
+
   protected
   
   # before filter
@@ -282,7 +400,7 @@ class User < ActiveRecord::Base
   def make_password_reset_code
     self.password_reset_code = Digest::SHA1.hexdigest( Time.now.to_s.split(//).sort_by {rand}.join )
   end
-  
+
   private
   
   def activate!

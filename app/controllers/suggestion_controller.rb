@@ -5,34 +5,12 @@ class SuggestionController < ApplicationController
 
   def install_sources
     if check_login then return end
-    Dir.chdir RAILS_ROOT
-    
-    current_user.increase_version
-
-    name = BasePackage.debianize_name("communtu-add-sources-"+current_user.login)
-    version = current_user.profile_version.to_s
-
     if current_user.selected_packages.empty? then
       flash[:error] = t(:controller_suggestion_1)
-      redirect_to "/users/#{current_user.id}/user_profile/tabs/0"
+      redirect_to "/users/#{self.id}/user_profile/tabs/0"
       return
     end
-
-    debfile = Dir.glob("debs/#{name}/#{name}_#{version}*deb")[0]
-    # if profile has changed, generate new debian metapackage
-    if current_user.profile_changed or debfile.nil? then
-      description = t(:controller_suggestion_2)+current_user.login
-      debfile = Deb.makedeb_for_source_install(name,
-                 version,
-                 description,
-                 current_user.selected_packages,
-                 current_user.distribution, 
-                 current_user.derivative, 
-                 current_user.license,
-                 current_user.security)
-      current_user.profile_changed = false
-    end
-    current_user.save
+    debfile = current_user.install_sources
     if debfile.nil? then
       flash[:error] = t(:creation_error)
       redirect_to "/home"
@@ -43,21 +21,8 @@ class SuggestionController < ApplicationController
 
   def install_bundle_sources
     if check_login then return end
-    Dir.chdir RAILS_ROOT
-    bundle = Metapackage.find(params[:mid])    
-
-    name = BasePackage.debianize_name("communtu-add-sources-#{current_user.login}-#{bundle.name}")
-    version = current_user.profile_version.to_s
-
-    description = t(:controller_suggestion_4)+bundle.name
-    debfile = Deb.makedeb_for_source_install(name,
-                 version,
-                 description,
-                 [bundle],
-                 current_user.distribution, 
-                 current_user.derivative, 
-                 current_user.license,
-                 current_user.security)
+    bundle = Metapackage.find(params[:mid])
+    debfile = current_user.install_bundle_sources(bundle)
     if debfile.nil? then
       flash[:error] = t(:creation_error)
       redirect_to "/home"
@@ -68,18 +33,8 @@ class SuggestionController < ApplicationController
 
   def install_package_sources
     if check_login then return end
-    Dir.chdir RAILS_ROOT
-    package = Package.find(params[:pid])    
-    repos = package.repositories_dist(current_user.distribution,current_user.architecture)
-    name = BasePackage.debianize_name("communtu-add-sources-#{current_user.login}-#{package.name}")
-    version = "0.1"
-    description = t(:controller_suggestion_6)+package.name
-    # only install sources, no packages
-    codename = Deb.compute_codename(current_user.distribution,
-                 current_user.derivative, 
-                 current_user.license,
-                 current_user.security)
-    debfile = Deb.makedeb(name,version,[],description,codename,current_user.derivative,repos)
+    package = Package.find(params[:pid])
+    debfile = current_user.install_package_sources(package)
     if debfile.nil? then
       flash[:error] = "Bei der Erstellung des Pakets ist ein Fehler aufgetreten."
       return
@@ -89,37 +44,12 @@ class SuggestionController < ApplicationController
 
   def install_bundle_as_meta
     if check_login then return end
-    Dir.chdir RAILS_ROOT
-
-    current_user.increase_version
-    
-    name = BasePackage.debianize_name("communtu-install-"+current_user.login)
-    version = current_user.profile_version.to_s
-
     if current_user.selected_packages.empty? then
       flash[:error] = t(:controller_suggestion_1)
       redirect_to "/users/#{current_user.id}/user_profile/tabs/0"
       return
     end
-
-    debfile = Dir.glob("debs/#{name}/#{name}_#{version}*deb")[0]
-    # if profile has changed, generate new debian metapackage
-    if current_user.profile_changed or debfile.nil? then
-      description = t(:controller_suggestion_8)+current_user.login
-      codename = Deb.compute_codename(current_user.distribution,
-                 current_user.derivative, 
-                 current_user.license,
-                 current_user.security)
-      debfile = Deb.makedeb(name,
-                 version,
-                 current_user.selected_packages.map{|p| p.debian_name},                 
-                 description,
-                 codename, 
-                 current_user.derivative, 
-                 [])
-      current_user.profile_changed = false
-    end
-    current_user.save
+    debfile = current_user.install_bundle_as_meta
     if debfile.nil? then
       flash[:error] = t(:creation_error)
       redirect_to "/home"

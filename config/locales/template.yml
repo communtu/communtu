@@ -184,6 +184,15 @@ de:
   licence: "Lizenztyp:"
   link_community: "http://www.ubuntuusers.de"
   link_community_title: "Externer Link: zu den Seiten von ubuntuusers"
+  livecd: "Live-CD/DVD"
+  livecd_create: "Die Live-CD/DVD wird jetzt erstellt. Wir benachrichtigen dich per Email, sobald sie fertig ist."
+  livecd_email: "Communtu: Benachrichtigung über Live-CD/DVD"
+  livecd_email_body: ", die Live-CD/DVD wurde erstellt! Folge dem Link: "
+  livecd_image: CD-Image
+  livecd_image_link: "http://wiki.ubuntuusers.de/CD-Images"
+  livecd_message: "Hier kannst du eine Live-CD/DVD erstellen lassen, die die von dir ausgewählte Software enthält. Über die Live-CD kann die Software dann sowohl ausprobiert als
+auch installiert werden.<br /><br /> Dazu wird zunächst ein sogenanntes {{cdimage_link}} erstellt, in Form einer iso-Datei, die du dann brennen kannst. Zum Brennen benötigst du eine CD, falls du viel Software ausgewählt hast, eine DVD.<br /><br /> Die Erstellung des Images dauert eine gewisse Zeit. Du wirst per Email benachrichtigt, sobald das Image fertig ist. Bitte achte darauf, dass in deinen Benutzereinstellungen eine gültige Email-Adresse angegeben ist."
+  livecd_start: "Live-CD/DVD erstellen"
   mailinglist: "Mailinglisten:"
   match_ubuntu: "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
   match_with_communtu: "Communtu - gemeinsam Ubuntu-Linux an individuelle Bedürfnisse anpassen"

@@ -26,6 +26,8 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :metapackages
 
+  map.connect '/user_profiles/create_livecd/:id', :controller => 'user_profiles', :action => 'create_livecd'
+
   map.connect '/users/anonymous_login', :controller => 'users', :action => 'anonymous_login'
   map.resources :users, :member => { :enable => :put } do |users|
     users.resource  :user_profile
