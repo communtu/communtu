@@ -34,9 +34,8 @@ class UserMailer < ActionMailer::Base
 
  def livecd(user,iso)
     @body[:url]  = iso
-    @recipients  = "info@toddy-franz.de"
-    @from        = "info@toddy-franz.de"
-    @from        = "#{user.email}"
+    @recipients  = "#{user.email}"
+    @from        = "info@communtu.org"
     @subject     = I18n.t(:livecd_email)
     @sent_on     = Time.now
     @body[:user] = user
