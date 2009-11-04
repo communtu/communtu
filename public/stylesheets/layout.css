@@ -476,6 +476,8 @@ ul.suggestionPackage {
 }
 
 div.suggestionHeader {
+    cursor: pointer; 
+    cursor: hand;
     padding: 2px 0 2px 5px;
     background: #fff7cd;
     border-left-style: solid;
