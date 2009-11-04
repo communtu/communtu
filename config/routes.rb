@@ -1,6 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :architectures
 
+  map.connect '/articles/show', :controller => 'articles', :action => 'show'
+  map.connect '/articles/edit/:id', :controller => 'articles', :action => 'edit'
+  map.connect '/articles/new', :controller => 'articles', :action => 'new'
+  map.resources :articles      
 
   map.connect '/debs/generate', :controller => 'debs', :action => 'generate'
   map.connect '/debs/generate_all', :controller => 'debs', :action => 'generate_all'
