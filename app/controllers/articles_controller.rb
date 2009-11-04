@@ -48,9 +48,9 @@ class ArticlesController < ApplicationController
 #    end
     respond_to do |format|
    if @article.save   
-     flash[:notice] = t(:controller_categories_2)
-     format.html { redirect_to(@article) }
-       format.xml  { render :xml => @article, :status => :created, :location => @article }
+#     flash[:notice] = t(:controller_categories_2)
+#     format.html { redirect_to(@article) }
+       format.xml  { }        
    else
      format.html { render :action => "new" }
      format.xml  { render :xml => @article.errors, :status => :unprocessable_entity }
