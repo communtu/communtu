@@ -23,7 +23,7 @@ class Architecture < ActiveRecord::Base
   def self.browser_architecture_with_default(s)
     a = Architecture.browser_architecture(s)
     if a.nil? then
-      return Architecture.find_by_short_name(DEFAULT_ARCH_NAME)
+      return Architecture.find_by_name(DEFAULT_ARCH_NAME)
     else
       return a
     end
