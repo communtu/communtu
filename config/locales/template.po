@@ -503,6 +503,10 @@ msgstr "Mailbox"
 msgid "Veröffentlichte Bündel können nicht umbenannt werden."
 msgstr "Released bundles cannot be renamed."
 
+#: not_accepted
+msgid "Die eingegebene E-Mail-Adresse hat ungültige Formate oder ist unvollständig."
+msgstr "The entered e-mail address contains forbidden characters or is not entered completely."
+
 #: view_repositories_migrate_1
 msgid "Kopiere Repository "
 msgstr "copy repository"

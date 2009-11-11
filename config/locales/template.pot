@@ -379,6 +379,9 @@ msgstr ""
 #: controller_metapackages_no_renaming
 msgid "Veröffentlichte Bündel können nicht umbenannt werden."
 msgstr ""
+#: not_accepted
+msgid "Die eingegebene E-Mail-Adresse hat ungültige Formate oder ist unvollständig."
+msgstr ""
 #: view_repositories_migrate_1
 msgid "Kopiere Repository "
 msgstr ""
