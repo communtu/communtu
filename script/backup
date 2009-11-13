@@ -16,7 +16,7 @@ date=`date +%Y-%m-%d--%H:%M:%S`
 mode=$1
 
 # read directory list from dar-gui generated config file, if not given as argument
-configfile=$HOME/backup.config
+configfile=$HOME/backup.config.dargui
 passwdfile=$HOME/backup.password
 if [ $# -gt 1 ] 
 then
@@ -35,19 +35,29 @@ else
   paths=`cat $configfile | tr '\000' '\n' | awk '/IncludeDirectories/ {getline; s=getline; print "" ; while($s ~ /home/) { print " -g "; print $s; s=getline  } }'  |tr -d '\000-\011' |tr -d '\013-\037' | tr '\n' ' ' | sed "s/\/home\/${USER}\///g"`
 fi
 
+
 # do not compress already compressed files
 comp="--bzip2=9 -Z \*.zip -Z \*.jpg -Z \*.bz2 -Z \*.gz -Z \*.gif -Z \*.png"
 
 cd
 
+$ssh "mkdir -p \$HOME/${USER}"
+echo >> $HOME/backup.log
+echo >> $HOME/backup.log
+echo "*******************************************************" >> $HOME/backup.log
+echo $date >> $HOME/backup.log
+echo "*******************************************************" >> $HOME/backup.log
+
+echo >> $HOME/backup.log
+
 # call dar
 case $mode in
 	full)
-		dar -c - ${paths} -R $HOME -v $comp --key ${passwd} | $ssh "cat > backup_${USER}_${date}_full.1.dar" 
+		(dar -c - ${paths} -R $HOME -v $comp --key ${passwd} | $ssh "cat > \$HOME/${USER}/backup_${USER}_${date}_full.1.dar")  2>&1 | tee -a $HOME/backup.log 
 		;;
 	diff)
-		$ssh "name=\`/bin/ls -1 | grep backup_${USER}_ | /usr/bin/sort -r | /usr/bin/head -1\`; name2=\`basename \$name .1.dar\`; dar $comp -A \$name2 -C - --key ${passwd} --key-ref ${passwd}" > $HOME/CAT_$USER.1.dar
-		dar -c - -A $HOME/CAT_$USER -v  --key ${passwd} --key-ref ${passwd} -R $HOME ${paths} $comp | $ssh "cat > backup_${USER}_${date}_diff.1.dar"
+		$ssh "name=\`/bin/ls -1 \$HOME/${USER}/ | grep backup_${USER}_ | /usr/bin/sort -r | /usr/bin/head -1\`; name2=\`basename \$name .1.dar\`; dar $comp -A \$HOME/${USER}/\$name2 -C - --key ${passwd} --key-ref ${passwd}" > $HOME/CAT_$USER.1.dar
+		(dar -c - -A $HOME/CAT_$USER -v  --key ${passwd} --key-ref ${passwd} -R $HOME ${paths} $comp | $ssh "cat > \$HOME/${USER}/backup_${USER}_${date}_diff.1.dar")  2>&1 | tee -a $HOME/backup.log 
 		;;
 esac
 
