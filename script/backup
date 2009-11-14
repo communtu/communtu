@@ -16,7 +16,7 @@ date=`date +%Y-%m-%d--%H:%M:%S`
 mode=$1
 
 # read directory list from dar-gui generated config file, if not given as argument
-configfile=$HOME/backup.config.dargui
+configfile=$HOME/backup.dargui
 passwdfile=$HOME/backup.password
 if [ $# -gt 1 ] 
 then
