@@ -387,8 +387,8 @@ end
     iso = "#{RAILS_ROOT}/public/debs/#{isobase}.iso"
     isourl = "http://communtu.org/debs/#{isobase}.iso"
     if Dir.glob(iso)[0].nil? then
-      #system "mklivecd remaster #{ver} #{deb1} #{deb2} #{iso}>> #{RAILS_ROOT}/log/livecd.log"
-      system "echo #{ver} #{deb1} #{deb2} #{iso}>> #{RAILS_ROOT}/log/livecd.log"
+      #system "remaster create #{ver} #{iso} #{isobase} #{deb1} #{deb2} >> #{RAILS_ROOT}/log/livecd.log"
+      system "echo \"##{ver} #{iso} #{isobase} #{deb1} #{deb2}\" >> #{RAILS_ROOT}/log/livecd.log"
       system "echo hallo > #{iso}"
     end
     system "dotlockfile -u #{RAILS_ROOT}/livecd_lock"
