@@ -5,8 +5,8 @@ module ApplicationHelper
     logged_in? and current_user.has_role?('administrator') 
   end
   
-  def is_priviliged?
-    is_admin? or (logged_in? and current_user.has_role?('priviliged'))
+  def is_power_user?
+    is_admin? or (logged_in? and current_user.has_role?('power user'))
   end
   
   def is_current_controller? name
