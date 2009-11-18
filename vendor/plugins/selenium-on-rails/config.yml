@@ -20,7 +20,7 @@ browsers:
   #firefox: 'd:\Browser\Mozilla Firefox\firefox.exe'
   #ie: 'c:\Programme\Internet Explorer\iexplore.exe'
 
-  firefox: '/usr/bin/firefox'
+  firefox: 'firefox'
 
   # Mac OS X
   #firefox: '/Applications/Firefox.app/Contents/MacOS/firefox-bin'
