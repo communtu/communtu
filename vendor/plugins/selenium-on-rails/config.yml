@@ -26,7 +26,7 @@ browsers:
   #firefox: '/Applications/Firefox.app/Contents/MacOS/firefox-bin'
   #safari: '/Applications/Safari.app/Contents/MacOS/Safari'
 
-#host: 'localhost'
+host: 'test.communtu.de'
 #port_start: 3000
 #port_end: 3005
 #base_url_path: '/'
