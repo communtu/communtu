@@ -38,3 +38,11 @@ RewriteRule ^(.*)$ dispatch.cgi [QSA,L]
 #   ErrorDocument 500 /500.html
 
 ErrorDocument 500 "<h2>Application error</h2>Rails application failed to start properly"
+
+
+<Directory /home/communtu/web2.0/communtu-program/public/images/>
+    <IfModule mod_fcgid.c>
+        ExpiresActive On
+        ExpiresDefault "access plus 1 month"
+    </IfModule>
+</Directory>
