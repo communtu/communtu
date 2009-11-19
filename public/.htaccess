@@ -41,7 +41,7 @@ ErrorDocument 500 "<h2>Application error</h2>Rails application failed to start p
 
 
 <Directory /home/communtu/web2.0/communtu-program/public/images/>
-    <IfModule mod_fcgid.c>
+    <IfModule mod_expires.c>
         ExpiresActive On
         ExpiresDefault "access plus 1 month"
     </IfModule>
