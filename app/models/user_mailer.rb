@@ -4,17 +4,7 @@ class UserMailer < ActionMailer::Base
     @subject    = I18n.t(:model_mailer_0)  
     @body[:url]  = "http://www.communtu.de"
   end
-  
- def contact_us(user)  
-    @body[:url]  = "http://www.communtu.de"  
-    @recipients  = "info@toddy-franz.de"
-    @from        = "info@toddy-franz.de"
-    @from        = "#{user.email}"
-    @subject     = I18n.t(:model_mailer_1)
-    @sent_on     = Time.now
-    @body[:user] = user
-  end
-  
+
   def activation(user)
     setup_email(user)
     @subject    = I18n.t(:model_mailer_2)
@@ -32,15 +22,6 @@ class UserMailer < ActionMailer::Base
     @subject    = I18n.t(:model_mailer_4)
   end
 
- def livecd(user,iso)
-    @body[:url]  = iso
-    @recipients  = "#{user.email}"
-    @from        = "info@communtu.org"
-    @subject     = I18n.t(:livecd_email)
-    @sent_on     = Time.now
-    @body[:user] = user
-  end
-  
   protected
     def setup_email(user)
       @recipients  = "#{user.email}"
