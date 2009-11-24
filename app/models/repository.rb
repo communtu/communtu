@@ -65,7 +65,7 @@ class Repository < ActiveRecord::Base
       end
       return {:url => url}
     else
-      return {:error => source+t(:model_package_6)}
+      return {:error => source+I18n.t(:model_package_6)}
     end
   end
 
