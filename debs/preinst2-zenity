@@ -11,17 +11,17 @@
             # abort if the user does not confirm
             exit 1
         fi
-      else
-        echo "Folgende Paketquellen und Schlüssel werden hinzugefügt"
-        echo $SOURCESKEYSDISP
-        while ! [[ $abfrage == [JjNn] ]]; do
-          echo -n "OK? (j/n) "
-          read abfrage
-        done
-        if ! [[ $abfrage == [jJ] ]]; then
-            # abort if the user does not confirm
-            exit 1
-        fi
+#      else
+#        echo "Folgende Paketquellen und Schlüssel werden hinzugefügt"
+#        echo $SOURCESKEYSDISP
+#        while ! [[ $abfrage == [JjNn] ]]; do
+#          echo -n "OK? (j/n) "
+#          read abfrage
+#        done
+#        if ! [[ $abfrage == [jJ] ]]; then
+#            # abort if the user does not confirm
+#            exit 1
+#        fi
       fi
       set -e
 
