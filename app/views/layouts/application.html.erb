@@ -64,7 +64,7 @@
 <% end %>
 		</a>
 <a href="/home/about">
-  <% if params[:controller] == "home" and params[:action] != "home" or params[:controller] == "articles" %>
+  <% if ((params[:controller] == "home" and params[:action] != "home") and (params[:controller] == "home" and params[:action] != "new_repository")) or params[:controller] == "articles" %>
  <%= image_tag("/images/navi_communtuon.png", :border => '0', :alt=>t(:view_layouts_application_28),:title=>t(:view_layouts_application_28))  %>
  			<div class="navi_drei"><%= t(:view_layouts_application_25) %></div>
 		</a>
@@ -97,7 +97,7 @@
 </div>
 <% end %>
 -->
-<% if params[:controller] == "home" and params[:action] != "home" %>
+<% if ((params[:controller] == "home" and params[:action] != "home") and (params[:controller] == "home" and params[:action] != "new_repository")) %>
 <%= render(:partial => 'navi_communtu') %>
 <div class="content1"> 
 <% elsif params[:controller] == "articles" %>
