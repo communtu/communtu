@@ -387,7 +387,7 @@ end
     iso = "#{RAILS_ROOT}/public/debs/#{isobase}.iso"
     isourl = "http://communtu.org/debs/#{isobase}.iso"
     if Dir.glob(iso)[0].nil? then
-      system "#{RAILS_ROOT}/script/remaster create #{ver} #{iso} #{isobase} #{deb1} #{deb2} >> #{RAILS_ROOT}/log/livecd.log"
+      system "#{RAILS_ROOT}/script/remaster create #{ver} #{iso} #{isobase} #{deb1} #{deb2} >> #{RAILS_ROOT}/log/livecd.log 2>&1"
     end
     system "dotlockfile -u #{RAILS_ROOT}/livecd_lock"
     MyMailer.deliver_livecd(self,isourl)
