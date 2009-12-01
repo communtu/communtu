@@ -13,6 +13,10 @@
 <%= javascript_include_tag "prototype" %>
 <%= javascript_include_tag "effects" %>
 <div id="head">
+<!-- headlline -->
+ <div id="headline">
+  <span class="headfont"><%= t(:headline) %></span>
+ </div>
 	<div id="navihead">
 <a href="<%=t(:link_community)%>" target="_blank" title="<%=t(:link_community_title)%>"><%=t(:community_title)%></a> || 
 <a href="/home/home"><%= t(:homepage) %></a> | <a href="/home/faq"><%= t(:view_layouts_application_30) %></a> | <a href="/home/contact_us"><%= t(:view_layouts_application_31) %></a> | <a href="/home/donate"><%= t(:view_layouts_donate) %></a>
@@ -66,6 +70,7 @@
 <a href="/home/about">
   <% if ((params[:controller] == "home" and params[:action] != "home") and (params[:controller] == "home" and params[:action] != "new_repository")) or params[:controller] == "articles" %>
  <%= image_tag("/images/navi_communtuon.png", :border => '0', :alt=>t(:view_layouts_application_28),:title=>t(:view_layouts_application_28))  %>
+
  			<div class="navi_drei"><%= t(:view_layouts_application_25) %></div>
 		</a>
   <% else %>
@@ -74,7 +79,6 @@
 		</a>
 <% end %>
 		
-
 	<!-- user -->
 <% if logged_in? %>
 <div id="person">
