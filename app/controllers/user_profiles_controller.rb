@@ -103,4 +103,13 @@ class UserProfilesController < ApplicationController
       system 'echo "User.find('+uid.to_s+').livecd" | nohup script/console production'
     end
   end
+
+    def test_livecd
+    uid = params[:id]
+    fork do
+      system 'echo "User.find('+uid.to_s+').test_livecd" | nohup script/console production'
+    end
+    render :action => 'create_livecd'
+  end
+
 end

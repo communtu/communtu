@@ -17,7 +17,6 @@
     <% Architecture.all.each do |arch| %>
   	  <tr>
 	  <td><%=t(:view_repositories_show_4, :arch => arch.name)%></td>
-	  <td><%= auto_link(Repository.get_url_from_source(@repository.name,arch)[:url]) %></td>
 	  </tr>
     <% end %>
 	<tr>

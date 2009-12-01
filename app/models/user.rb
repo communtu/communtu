@@ -387,11 +387,23 @@ end
     iso = "#{RAILS_ROOT}/public/debs/#{isobase}.iso"
     isourl = "http://communtu.org/debs/#{isobase}.iso"
     if Dir.glob(iso)[0].nil? then
-      #system "remaster create #{ver} #{iso} #{isobase} #{deb1} #{deb2} >> #{RAILS_ROOT}/log/livecd.log"
+      system "#{RAILS_ROOT}/script/remaster create #{ver} #{iso} #{isobase} #{deb1} #{deb2} >> #{RAILS_ROOT}/log/livecd.log"
+    end
+    system "dotlockfile -u #{RAILS_ROOT}/livecd_lock"
+    MyMailer.deliver_livecd(self,isourl)
+  end
+
+  def test_livecd
+    ver = self.fullversion
+    deb1 = RAILS_ROOT + "/" + self.install_sources
+    deb2 = RAILS_ROOT + "/" + self.install_bundle_as_meta
+    isobase = File.basename(deb2).gsub(/\.deb$/,'')
+    iso = "#{RAILS_ROOT}/public/debs/#{isobase}.iso"
+    isourl = "http://communtu.org/debs/#{isobase}.iso"
+    if Dir.glob(iso)[0].nil? then
       system "echo \"##{ver} #{iso} #{isobase} #{deb1} #{deb2}\" >> #{RAILS_ROOT}/log/livecd.log"
       system "echo hallo > #{iso}"
     end
-    system "dotlockfile -u #{RAILS_ROOT}/livecd_lock"
     MyMailer.deliver_livecd(self,isourl)
   end
 
