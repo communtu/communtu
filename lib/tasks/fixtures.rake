@@ -17,7 +17,7 @@ namespace :db do
       Dependency.find(:all,:conditions=>["package_distr_id is NULL"]).each{|d| d.destroy}
       Dependency.find(:all,:conditions=>["package_distrs.id is NULL"],:include => :package_distr).each{|d| d.destroy}
       User.all.each do |u|
-        if u.id > 3 then u.delete end
+        if u.id > 3 then u.destroy end
       end
       sql  = "SELECT * FROM %s"
       skip_tables = ["schema_info","cart_contents", "carts"]
