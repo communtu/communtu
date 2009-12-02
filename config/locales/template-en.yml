@@ -36,6 +36,7 @@ en:
   view_user_profiles__installation_19: "Attention: after clicking, it will take a moment until the file is provided."
   controller_accounts_6: An error occured. The password has not been changed.
   view_user_profiles_new_0: new profile
+  english_description: "English description:"
   view_layouts_application_32: Admin
   view_metapackages__package_list_0: "Total size of bundle on disk:"
   view_user_profiles_new_1: user
@@ -129,6 +130,7 @@ en:
   view_users__mailbox_list_3: "sent messages "
   view_repositories_migrate_2: " to distribution"
   controller_suggestion_8: Ubuntu post-installation for users
+  english_name: "English name:"
   view_packages_new_3: Version
   view_home_news_1: Our mailinglists
   view_packages_new_4: Source
@@ -305,6 +307,7 @@ en:
   view_home_news_17: Go to the blog
   view_home_derivatives_44: " - minimalist and fast version of Ubuntu for older PCs."
   view_home_faq_04: A bundle, together with other bundles, can be installed as a compilation via "Download". A bundle can also be installed directly via the menu-entry "Bundle"
+  bundel_information_edit: edit bundle information
   view_metapackages_show_deb_error: While creating metapackages, an error occurred. We'll solve that problem as fast as possible.
   view_user_profiles__profile_data_1: On this page you can enter the basic settings of your computer.
   view_home_news_18: http://communtu.wordpress.com
@@ -468,6 +471,7 @@ en:
   view_sent_index_0: sent messages
   an: To
   view_users_edit_2: delete profile
+  livecd_test: Do not create Live-CD/DVD but only send an e-mail (for testing purposes only)
   view_cart_update_4: Publish bundle
   controller_users_1: Thank you for registering at Communtu! You can now log in.
   view_users_edit_3: "Username:"
@@ -584,7 +588,9 @@ en:
   edit_press_archiv: edit press archives
   four_and_fourty_letters: Between 4 and 40 letters
   view_repositories_show_4: "Package-list for {{arch}}:"
+  livecd_email_failed: "Communtu: creation of Live-CD/DVD failed."
   controller_application_0: This function is not available for guests.
+  livecd_email_body_failed: While creating metapackages, an error occurred. We'll solve that problem as fast as possible.
   bundle_by_owner: Created bundles
   view_repositories_show_6: "        OpenSource"
   view_home_mail_0: Notification in bugfixing
@@ -637,7 +643,7 @@ en:
   view_packages_show_17: "Contains these packages (\"depends\" and \"recommends\"):"
   archive: archive
   controller_sessions_4: You have been logged in.
-  view_metapackages_show_save_3: To create a meta-package an English title is needed.
+  view_metapackages_show_save_3: To create a meta-package an English title and descriptionis needed.
   view_home_icons_15: " program-bundle"
   controller_sessions_5: Your username or password is wrong. If applicable click on "Register" below.
   view_home_icons_16: migration from repositories
@@ -655,6 +661,7 @@ en:
   feedback: "Comment "
   view_videos_show_0: "Url:"
   view_home_icons_20: user-icon
+  headline: eases Ubuntu installations
   first_sync_repos: "Please synchronise the repositories first. Normally, this is done automatically within one weak. Attention: it is only checked if anything is being synchronised at all, not if the process is finished."
   view_home_icons_22: " user-icon"
   email_with_colon: "E-Mail:"
@@ -816,11 +823,11 @@ en:
   view_distributions_show_1: check everything
   migrate: Migrate
   view_layouts_application_21: Communtu eases Ubuntu installations
-  view_metapackages_migrate_1: Which distribution are the bundles to be migrated to?
-  controller_metapackages_15: <option value='2'>Publish<option/>
-  view_distributions_show_2: synchronise everything
   view_layouts_application_22: to the profile
+  view_distributions_show_2: synchronise everything
+  controller_metapackages_15: <option value='2'>Publish<option/>
+  view_metapackages_migrate_1: Which distribution are the bundles to be migrated to?
   view_distributions_show_3: read sources.list
   install: Install
-  view_distributions_show_4: "add repository "
   view_layouts_application_23: BUNDLE
+  view_distributions_show_4: "add repository "

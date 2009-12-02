@@ -121,6 +121,9 @@ msgstr ""
 #: view_user_profiles_new_0
 msgid "new profile"
 msgstr ""
+#: english_description
+msgid "English description:"
+msgstr ""
 #: view_layouts_application_32
 msgid "Admin"
 msgstr ""
@@ -399,6 +402,9 @@ msgid " to distribution"
 msgstr ""
 #: controller_suggestion_8
 msgid "Ubuntu post-installation for users"
+msgstr ""
+#: english_name
+msgid "English name:"
 msgstr ""
 #: view_packages_new_3
 msgid "Version"
@@ -868,6 +874,9 @@ msgstr ""
 #: view_home_faq_04
 msgid "A bundle, together with other bundles, can be installed as a compilation via \"Download\". A bundle can also be installed directly via the menu-entry \"Bundle\""
 msgstr ""
+#: bundel_information_edit
+msgid "edit bundle information"
+msgstr ""
 #: view_metapackages_show_deb_error
 msgid "While creating metapackages, an error occurred. We'll solve that problem as fast as possible."
 msgstr ""
@@ -1327,6 +1336,9 @@ msgstr ""
 #: view_users_edit_2
 msgid "delete profile"
 msgstr ""
+#: livecd_test
+msgid "Do not create Live-CD/DVD but only send an e-mail (for testing purposes only)"
+msgstr ""
 #: view_cart_update_4
 msgid "Publish bundle"
 msgstr ""
@@ -1666,8 +1678,14 @@ msgstr ""
 #: view_repositories_show_4
 msgid "Package-list for {{arch}}:"
 msgstr ""
+#: livecd_email_failed
+msgid "Communtu: creation of Live-CD/DVD failed."
+msgstr ""
 #: controller_application_0
 msgid "This function is not available for guests."
+msgstr ""
+#: livecd_email_body_failed
+msgid "While creating metapackages, an error occurred. We'll solve that problem as fast as possible."
 msgstr ""
 #: bundle_by_owner
 msgid "Created bundles"
@@ -1826,7 +1844,7 @@ msgstr ""
 msgid "You have been logged in."
 msgstr ""
 #: view_metapackages_show_save_3
-msgid "To create a meta-package an English title is needed."
+msgid "To create a meta-package an English title and descriptionis needed."
 msgstr ""
 #: view_home_icons_15
 msgid " program-bundle"
@@ -1878,6 +1896,9 @@ msgid "Url:"
 msgstr ""
 #: view_home_icons_20
 msgid "user-icon"
+msgstr ""
+#: headline
+msgid "eases Ubuntu installations"
 msgstr ""
 #: first_sync_repos
 msgid "Please synchronise the repositories first. Normally, this is done automatically within one weak. Attention: it is only checked if anything is being synchronised at all, not if the process is finished."
@@ -2365,11 +2386,11 @@ msgstr ""
 #: view_distributions_show_3
 msgid "read sources.list"
 msgstr ""
-#: view_layouts_application_23
-msgid "BUNDLE"
-msgstr ""
 #: view_distributions_show_4
 msgid "add repository "
+msgstr ""
+#: view_layouts_application_23
+msgid "BUNDLE"
 msgstr ""
 #: install
 msgid "Install"

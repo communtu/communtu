@@ -159,6 +159,10 @@ msgstr "An error occured. The password has not been changed."
 msgid "Neues Nutzerprofil"
 msgstr "new profile"
 
+#: english_description
+msgid "Englische Beschreibung:"
+msgstr "English description:"
+
 #: view_layouts_application_32
 msgid "Admin"
 msgstr "Admin"
@@ -531,6 +535,10 @@ msgstr " to distribution"
 msgid "Ubuntu-Nachinstallation fuer Benutzer "
 msgstr "Ubuntu post-installation for users"
 
+#: english_name
+msgid "Englischer Name:"
+msgstr "English name:"
+
 #: view_packages_new_3
 msgid "Version"
 msgstr "Version"
@@ -881,6 +889,10 @@ msgstr "Activated?"
 msgid "User nicht gefunden"
 msgstr "user not found"
 
+#: weblinks
+msgid "Weblinks"
+msgstr "Weblinks"
+
 #: view_derivatives_edit_1
 msgid "Programm für GUI-basiertes Sudo (z.B. gksudo, kdesudo)"
 msgstr "Program for GUI-based sudo (e.g. gksudo, kdesudo)"
@@ -888,10 +900,6 @@ msgstr "Program for GUI-based sudo (e.g. gksudo, kdesudo)"
 #: helper_distributions_13
 msgid "löschen"
 msgstr "delete"
-
-#: weblinks
-msgid "Weblinks"
-msgstr "Weblinks"
 
 #: view_users_index_6
 msgid "Rollen"
@@ -1033,6 +1041,10 @@ msgstr "There are several other derivatives for which we cannot give any recomme
 msgid "non-free und aus den Community Paketquellen"
 msgstr "non-free and from the community repositories"
 
+#: view_videos_edit_0
+msgid "Video bearbeiten"
+msgstr "edit video"
+
 #: category_without_colon
 msgid "Kategorie"
 msgstr "Category"
@@ -1040,10 +1052,6 @@ msgstr "Category"
 #: view_home_derivatives_36
 msgid " - eine afrikanische Ubuntu-Variante, die allerdings offenbar nicht übers Internet erhältlich ist."
 msgstr " - an African version of Ubuntu, which is apparently not available over the internet."
-
-#: view_videos_edit_0
-msgid "Video bearbeiten"
-msgstr "edit video"
 
 #: subject_without_colon
 msgid "Betreff"
@@ -1192,6 +1200,10 @@ msgstr " - minimalist and fast version of Ubuntu for older PCs."
 #: view_home_faq_04
 msgid "Ein Bündel kann einmal in einer Zusammenstellung mit weiteren über den Punkt \"Download\" zum Computer hinzugefügt werden. Andererseits kann auch ein Bündel direkt installiert werden, wenn Du über den Menüpunkt \"Bündel\" gehst."
 msgstr "A bundle, together with other bundles, can be installed as a compilation via \"Download\". A bundle can also be installed directly via the menu-entry \"Bundle\""
+
+#: bundel_information_edit
+msgid "Bündel Informationen bearbeiten"
+msgstr "edit bundle information"
 
 #: view_metapackages_show_deb_error
 msgid "Beim Erzeugen von Metapaketen ist ein Fehler aufgetreten. Wir kümmern uns um das Problem."
@@ -1825,6 +1837,10 @@ msgstr "To"
 msgid "Profil löschen"
 msgstr "delete profile"
 
+#: livecd_test
+msgid "Live-CD/DVD nicht erstellen, sondern nur EMail versenden (zu Testzwecken)"
+msgstr "Do not create Live-CD/DVD but only send an e-mail (for testing purposes only)"
+
 #: view_cart_update_4
 msgid "Bündel veröffentlichen"
 msgstr "Publish bundle"
@@ -2283,9 +2299,17 @@ msgstr "Between 4 and 40 letters"
 msgid "Paketliste für {{arch}}:"
 msgstr "Package-list for {{arch}}:"
 
+#: livecd_email_failed
+msgid "Communtu: Erstellung der Live-CD/DVD fehlgeschlagen"
+msgstr "Communtu: creation of Live-CD/DVD failed."
+
 #: controller_application_0
 msgid "Diese Funktion ist für Gäste nicht verfügbar."
 msgstr "This function is not available for guests."
+
+#: livecd_email_body_failed
+msgid ", die Live-CD/DVD konnte leider erstellt werden. Wir kümmern uns um das Problem."
+msgstr "While creating metapackages, an error occurred. We'll solve that problem as fast as possible."
 
 #: bundle_by_owner
 msgid "erstellte Bündel"
@@ -2383,6 +2407,10 @@ msgstr "New bundle"
 msgid " Alle Quellen zulassen (etwas unsicherer: <a href=\"http://wiki.ubuntuusers.de/Fremdquellen\">Fremdpakete</a> können das System gefährden, aber noch mehr Programme/Komfort: "
 msgstr " Allow every source (slightly insecure but with even more programs/better comfort. Attention: programs installed from foreign sources can do harm to your computer!):"
 
+#: yes1
+msgid "ja"
+msgstr "yes"
+
 #: view_packages_show_9
 msgid "/5 Sterne&nbsp;&nbsp; "
 msgstr "/5 stars&nbsp;&nbsp; "
@@ -2390,10 +2418,6 @@ msgstr "/5 stars&nbsp;&nbsp; "
 #: view_user_profiles__installation_0
 msgid "Ubuntu-Nachinstallation"
 msgstr "Ubuntu post-installation"
-
-#: yes1
-msgid "ja"
-msgstr "yes"
 
 #: view_packages__deps_0
 msgid "keine"
@@ -2496,8 +2520,8 @@ msgid "Du wurdest abgemeldet."
 msgstr "You have been logged in."
 
 #: view_metapackages_show_save_3
-msgid "Zum Erstellen des Metapakets muss ein englischer Titel vergeben werden."
-msgstr "To create a meta-package an English title is needed."
+msgid "Zum Erstellen des Metapakets muss ein englischer Titel und eine englische Beschreibung vergeben werden."
+msgstr "To create a meta-package an English title and descriptionis needed."
 
 #: view_home_icons_15
 msgid " Programm-Bündel"
@@ -2555,17 +2579,21 @@ msgstr "Is used in this packages:"
 msgid "discuss"
 msgstr "discuss"
 
-#: feedback
-msgid "Kommentar"
-msgstr "Comment "
-
 #: view_videos_show_0
 msgid "Url:"
 msgstr "Url:"
 
+#: feedback
+msgid "Kommentar"
+msgstr "Comment "
+
 #: view_home_icons_20
 msgid "User-Icon"
 msgstr "user-icon"
+
+#: headline
+msgid "macht Ubuntu-Installationen einfach"
+msgstr "eases Ubuntu installations"
 
 #: first_sync_repos
 msgid "Bitte erst die Repositories synchronisieren. Dies geschieht normalerweise automatisch innerhalb von einer Woche. Achtung: an dieser Stelle wird nur geprüft, ob überhaupt etwas synchronisiert wurde, nicht, ob der Prozess fertig ist."
@@ -2711,13 +2739,13 @@ msgstr "Install package"
 msgid "Feinauswahl speichern"
 msgstr "Save fine selection"
 
-#: controller_suggestion_16
-msgid "Folgende Pakete werden installiert"
-msgstr "The following packages will be installed"
-
 #: we_want_you
 msgid "Wir brauchen Dich"
 msgstr "We need you"
+
+#: controller_suggestion_16
+msgid "Folgende Pakete werden installiert"
+msgstr "The following packages will be installed"
 
 #: controller_sent_0
 msgid "Der Betreff darf nicht leer sein."
