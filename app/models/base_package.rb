@@ -1,11 +1,25 @@
 class BasePackage < ActiveRecord::Base
   require 'set.rb'
+  require 'lib/utils.rb'
 
   has_many :user_packages, :foreign_key => :package_id
   has_many :videos
   has_many :conflicts, :foreign_key => :package_id
   has_many :conflicting_packages, :source => :base_package, :through => :conflicts
   has_many :dependencies, :dependent => :destroy
+
+#  def name
+#    translation(self.name_tid)
+#  end
+        
+#  def name_english
+#    trans = Translation.find(:first, :conditions => {:translatable_id => self.name_tid, :language_code => "en"})
+#    return trans.contents
+#  end
+                  
+#  def description
+#    translation(self.description_tid)
+#  end                           
 
     # type of a package, for sorting package lists
   def ptype
@@ -23,9 +37,9 @@ class BasePackage < ActiveRecord::Base
   def debian_name
     if self.class == Metapackage then
       if self.is_published? then
-        n="communtu-"+self.name
-      else  
-        n="communtu-private-bundle-"+self.name
+        n="communtu-"+self.name_english
+      else 
+        n="communtu-private-bundle-"+self.name_english
       end
     else
       n=self.name

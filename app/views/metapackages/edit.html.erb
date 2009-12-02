@@ -1,7 +1,7 @@
 <div class="inner0">
 <% if logged_in? %>
 <%= render_flash %>
-    <span class="headline">Bündel-Informationen anpassen</span>
+    <span class="headline"><%=t(:bundel_information_edit)%></span>
     <br/>
     <br/>
     <% form_for(@metapackage) do |f| %>
@@ -12,9 +12,14 @@
 	        <% if @metapackage.is_published? then %>
               <td><%= @metapackage.name %></td>	
             <% else %>
-              <td><%= f.text_field(:name, { :size => 16}) %></td>
-            <% end  %>
-        </tr>
+              <td><input id="metapackage_name" name="metapackage[name]" size="16" type="text" value="<%= @metapackage.name %>" /></td>
+            <% end  %></tr>
+            <% if (@metapackage.name_english == "" or @metapackage.name_english == nil) and I18n.locale.to_s != "en" %>
+              <tr>
+               <td><%=t(:english_name)%></td>
+              <td><input id="metapackage_name_english" name="metapackage[name_english]" size="16" type="text" value="" /></td>
+              </tr>
+            <% end %>
         <tr>
 	        <td><%=t(:view_metapackages_show_version)%></td>
 	        <td><%= f.text_field(:version, { :size => 16}) %></td>	
@@ -24,7 +29,7 @@
 	        <td><%=t(:category_with_colon)%></td>
 	        <td>
 	        	<% @categories = Category.find(:all, :order => "name")%>
-		        <%= f.collection_select(:category_id,@categories,:id,:name)%>
+		        <%= f.collection_select(:category_id,@categories,:id,:name,{:include_blank => t(:choose_category)})%>
 	        </td>
         </tr>
         <tr>
@@ -37,8 +42,18 @@
         </tr>
         <tr>
 	        <td valign='top'><%=t(:description_with_colon)%></td>
-	        <td><%= f.text_area(:description, { :rows => 12, :cols => 50 } ) %></td>	
+                <% if @metapackage.description == "" or @metapackage.description == nil %>
+	        <td><textarea id="metapackage_description" name="metapackage[description]" rows="6" cols="50"></textarea></td>
+                <% else %>
+	        <td><textarea id="metapackage_description" name="metapackage[description]" rows="6" cols="50"><%= @metapackage.description %></textarea></td>
+<% end %>
         </tr>
+ <% if (@metapackage.description_english == "" or @metapackage.description_english == nil) and I18n.locale.to_s != "en" %>
+              <tr>
+               <td valign='top'><%=t(:english_description)%></td>
+              <td><textarea id="metapackage_description_english" name="metapackage[description_english]" rows="6" cols="50"></textarea></td>
+              </tr>
+            <% end %>
 
         </table>	
 	<%= render :partial => "package_list", :locals => { :metapackage => @metapackage, :editable => true } %>

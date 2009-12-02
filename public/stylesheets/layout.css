@@ -111,6 +111,20 @@ span.headline{
 	font-weight: bold;
 }
 
+#headline{
+ position:absolute; 
+  text-align:center;
+ padding-top:70px;
+ padding-left:32.8em;
+ z-index:4;
+ }  
+.headfont{
+ font-weight:bolder;
+ font-family:Arial;
+ font-size:1.75em;
+ letter-spacing:0.05em;
+ }    
+
 table.form_table{
 
 	padding: 10px 10px 10px 10px;
@@ -1169,12 +1183,17 @@ text-align:right;
  z-index:4;
  }
 #lang{
-	position:absolute; 
+        position:absolute;
+        right:20em;
+        text-align:center;
+        padding-top:2px;
+        z-index:4;
+	/*position:absolute; 
 	right:241px;  
 	text-align:center;
 	padding-top:2px;
 	z-index:4;
-        visibility:hidden;
+        visibility:hidden;*/
 	}
 #navihead{
 	position:absolute;

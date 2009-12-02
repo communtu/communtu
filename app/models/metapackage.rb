@@ -2,7 +2,8 @@ class Metapackage < BasePackage
 
   require 'set.rb'
   require 'utils'
-  
+  require "lib/utils.rb"
+    
   has_many   :metacontents, :dependent => :destroy
   has_many   :base_packages, :through => :metacontents
   has_many   :debs # destroy via callback
@@ -15,7 +16,41 @@ class Metapackage < BasePackage
   validates_presence_of :name, :license_type, :user, :category # , :version, :description
   
   @state = { :pending => 0, :published => 1, :rejected => 2 }
-  
+
+  def name
+    trans = translation(self.name_tid)
+    if trans == "unknown"
+    trans = "Neues Bündel"
+    end
+    return trans
+  end
+
+  def name_english
+    trans = Translation.find(:first, :conditions => {:translatable_id => self.name_tid, :language_code => "en"})
+    if trans != nil
+     return trans.contents
+    else
+     return ""
+    end
+  end
+
+  def description_english
+    trans = Translation.find(:first, :conditions => {:translatable_id => self.description_tid, :language_code => "en"})
+    if trans != nil
+      return trans.contents
+    else
+      return ""              
+    end
+  end
+
+  def description
+    trans = translation(self.description_tid)
+    if trans == "unknown"
+    trans = ""
+    end
+    return trans
+  end
+
   def self.state
     @state
   end

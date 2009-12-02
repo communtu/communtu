@@ -1,4 +1,4 @@
-f=File.open("config/locales/bundles.po","w")
+f=File.open('config/locales/bundle-names2.po',"w")
 f.puts 'msgid ""'
 f.puts 'msgstr ""'
 f.puts '"Plural-Forms: n != 1\n"'
@@ -17,7 +17,7 @@ f.puts ""
 
 Metapackage.all.each do |m|
   f.puts "#: #{m.name}"
-  f.puts "msgid \"#{m.description}\""
+  f.puts "msgid \"#{m.name}\""
   f.puts 'msgstr ""'
 end
 

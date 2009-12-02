@@ -8,6 +8,12 @@ module ApplicationHelper
   def is_power_user?
     is_admin? or (logged_in? and current_user.has_role?('power user'))
   end
+
+  def new_trans_id
+    @last_trans = Translation.find(:first, :order => "translatable_id DESC")
+    last_id = @last_trans.translatable_id
+    return last_id + 1
+  end
   
   def is_current_controller? name
     (controller.controller_name <=> name) == 0 

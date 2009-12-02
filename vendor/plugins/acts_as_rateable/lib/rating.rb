@@ -1,10 +1,19 @@
 class Rating < ActiveRecord::Base
+  require "lib/utils.rb"
   belongs_to :rateable, :polymorphic => true
   
   # NOTE: Comments belong to a user
   belongs_to :user
   belongs_to :metapackage, :foreign_key => :rateable_id, :counter_cache => true
-  
+   
+    def comment
+      trans = translation(self.comment_tid)
+      if trans == "unknown"
+        trans = ""
+      end
+      return trans
+    end 
+
   validates_presence_of :comment
   
   # Helper class method to lookup all ratings assigned

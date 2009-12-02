@@ -1,63 +1,29 @@
 <div class="inner0">
 <%= render_flash %>
 <% if logged_in? %>
-<% if !@conflicts.empty?  %>
-  <div class="flash" id="error"><%=t(:controller_metapackages_conflicts)%> 
-  <%=show_version(@metapackage)%></div>
-<% end %>
-<% if @metapackage.deb_error  %>
-  <div class="flash" id="error"><%=t(:view_metapackages_show_deb_error)%>
-  <%=show_debversion(@metapackage)%></div>
-  <% if is_admin? %>
-  <p><%= link_to(t(:controller_metapackages_reset),'reset/'+@metapackage.id.to_s) %>
-  <% end %>
-<% elsif @metapackage.debianizing %>
-  <div class="flash" id="notice"><%=t(:controller_metapackages_debianizing)%>
-  <%=show_debversion(@metapackage)%></div>
-<% end %>
-<% if @metapackage.modified and !(@metapackage.debianizing and !@metapackage.deb_error and @metapackage.version==@metapackage.debianized_version) %>
-  <div class="flash" id="notice">
-    <%=t(:view_metapackages_show_modified)%>  <%=show_version(@metapackage)%> &nbsp;
-    <% if !@metapackage.debianizing %> 
-      <%=link_to t(:view_metapackages_show_save), :action => 'save', :id => @metapackage.id%>
-    <% end %>
-  </div>
-<% end %>
+
 <table width="100%">
-	<tr><td width="50%">
-			<span class="headline">   <%=h @metapackage.name %> 
+	<tr><td width="70%" valign="top">
+			<span class="headline">   <%=h @metapackage.name %>
 </span> <br />
-<font size="-3"><%=t(:view_metapackages_show_0)%><b><%= link_to @metapackage.user.login, user_path(@metapackage.user.id) %></b></font> 
+<font size="-3"><%=t(:view_metapackages_show_0)%><b><%= link_to @metapackage.user.login, user_path(@metapackage.user.id) %></b></font>
 <%=link_to (image_tag("message.png", :alt=>t(:compose_new_message),:title=>t(:compose_new_message), :mouseover=>"message_rollover.png",:border=>"0" ), {:controller=>"sent", :action=>"new", :mail_to=>@metapackage.user.id}) %>
-</td>
-	
-<% if !request.env['HTTP_REFERER'].nil? then %>
-
-     <td width="25%"></td>
-     <td width="25%" align="right">
-       <%= link_to t(:view_metapackages_show_3), request.env['HTTP_REFERER'] %>
-	 </td>  
-<% end %>
-    </tr>
-</table>
-
 <p>
   <%= @metapackage.description %>
 </p>
-
 <table>
-  <tr><td><b><%=t(:view_metapackages_show_version)%></b>
+  <tr><td valign="top"><b><%=t(:view_metapackages_show_version)%></b>
           <%= h @metapackage.version %> </td>
   <td><b><%=t(:category_with_colon)%></b>
   <%=h @metapackage.category.name %></td>
   </tr>
 
-<tr><td>
+<tr><td valign="top">
   <b><%=t(:install_by_default)%></b>
   <%=@metapackage.default_install ? t(:yes1) : t(:no1) %>
   &nbsp; &nbsp;
 </td>
-<td>
+<td valign="top">
   <b><%=t(:licence)%></b>
   <%= Package.show_license_type(@metapackage.license_type) %>
 </tr>
@@ -81,21 +47,18 @@
 	</td>
 </tr>
 <tr id="comment_<%=@metapackage.id%>" style="display:none;">
-	<td colspan="2">  
+	<td colspan="2">
 		<%= render :partial=>"rating/rating_comment" ,:locals => { :metapackage => @metapackage } %>
-	</td>
+</td>
 </tr>
-</table>
-<p>
+<tr><td><p>
     <b><%=t(:view_metapackages_show_9)%></b>
     <% if @metapackage.is_published? %>
         <%= image_tag("yes.png", :size => "22x22", :border => "0", :title => t(:published), :alt => t(:published))  %>
     <% else %>
         <%= image_tag("no.png", :size => "22x22", :border => "0", :title => t(:view_metapackages_show_12), :alt => t(:view_metapackages_show_12))  %>
     <% end %>
-</p>
-  
-<div style="position:relative; left:480px; top:-30px; height:0px;width:150px;">
+</p><div style="position:relative; left:260px; top:-30px; height:0px;width:150px;">
 <% if logged_in? and (@metapackage.owned_by? current_user or is_admin?) %>
 <%=t(:view_metapackages_show_14)%>
 <div style="position:relative; top:-22px; left:64px">
@@ -104,7 +67,7 @@
         <option value="noop">---</option>
         <option value="edit"><%=t(:view_metapackages_show_15)%></option>
         <option value="pedit"><%=t(:view_metapackages_show_16)%></option>
-        
+
         <% if not @metapackage.is_published? and !current_user.anonymous? then %>
         <option value="publish"><%=t(:view_metapackages_show_17)%></option>
         <% end %>
@@ -113,7 +76,44 @@
   </form>
   </div>
 <% end %>
-</div>
+</div></td></tr>
+</table>
+</td>
+<% if !request.env['HTTP_REFERER'].nil? then %>
+
+     <td width="25%">
+
+<% if !@conflicts.empty?  %>
+  <div class="flash" id="error"><%=t(:controller_metapackages_conflicts)%> 
+  <%=show_version(@metapackage)%></div>
+<% end %>
+<% if @metapackage.deb_error  %>
+  <div class="flash" id="error"><%=t(:view_metapackages_show_deb_error)%>
+  <%=show_debversion(@metapackage)%></div>
+  <% if is_admin? %>
+  <p><%= link_to(t(:controller_metapackages_reset),'reset/'+@metapackage.id.to_s) %>
+  <% end %>
+<% elsif @metapackage.debianizing %>
+  <div class="flash" id="notice"><%=t(:controller_metapackages_debianizing)%>
+  <%=show_debversion(@metapackage)%></div>
+<% end %>
+<% if @metapackage.modified and !(@metapackage.debianizing and !@metapackage.deb_error and @metapackage.version==@metapackage.debianized_version) %>
+  <div class="flash" id="notice">
+    <%=t(:view_metapackages_show_modified)%>  <%=show_version(@metapackage)%> &nbsp;
+    <% if !@metapackage.debianizing %> 
+      <%=t(:view_metapackages_show_save)%>
+      <% if @metapackage.name_english == "" or @metapackage.name_english == nil or @metapackage.description_english == "" or @metapackage.description_english == nil %>
+      <%=link_to (image_tag("apps/Metapackage.png", :alt=>t(:view_metapackages_show_save_3),:title=>t(:view_metapackages_show_save_3), :border=>"0" ), :action => 'edit', :id => @metapackage.id )%>
+     <% else %>
+      <%=link_to (image_tag("apps/Metapackage.png", :alt=>t(:view_metapackages_show_save_2),:title=>t(:view_metapackages_show_save_2), :border=>"0" ), :action => 'save', :id => @metapackage.id )%>
+    <% end %>
+    <% end %>
+  </div>
+<% end %>
+<% end %>
+    </tr>
+</table>
+
 
 <% if logged_in? and (@metapackage.owned_by? current_user or is_admin?) and (not @metapackage.is_published?) %>
 <p>  <%=t(:view_metapackages_show_18)%> </p>
