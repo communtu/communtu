@@ -689,7 +689,7 @@ auch installiert werden.<br /><br /> Dazu wird zunächst ein sogenanntes {{cdima
   view_metapackages_show_modified: "Das Bündel enthält Änderungen."
   view_metapackages_show_save: "Bündel als Metapaket speichern"
   view_metapackages_show_save_2: "Neues Metapaket erstellen:"
-  view_metapackages_show_save_3: "Zum Erstellen des Metapakets muss ein englischer Titel vergeben werden."
+  view_metapackages_show_save_3: "Zum Erstellen des Metapakets muss ein englischer Titel und eine englische Beschreibung vergeben werden."
   view_metapackages_show_version: "Version:"
   view_metapackages_show_version_v: "(Version {{v}})"
   view_my_mailer_mail_0: "Hallo, \n\nes wurde auf www.communtu.de ein Feedback gesendet. Der Betreff ist:"
