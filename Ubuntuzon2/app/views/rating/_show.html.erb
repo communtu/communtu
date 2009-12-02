@@ -1,5 +1,0 @@
-<% @options = params.merge(:controller => "rating", :action => "rate", :id => package.id) %>
-<% @convert = %w[one two three four five] %>
-<ul class="star-rating">
-    <li class="current-rating" style="width:<%=  package.rating*25 %>px"> Currently <%= package.rating %>/5 Stars. </li>
-</ul>

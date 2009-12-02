@@ -1,5 +1,0 @@
-<% content_tag_for(:li, comment) do %>
-      <h3><%= Account.find_by_id(comment.account_id).login %> | <%=h comment.created_at.strftime("%d.%m.%Y") %></h3>
-      <p><%= h comment.body %></p>
-<% end %>
-  
