@@ -1,391 +1,107 @@
-msgid ""
-msgstr ""
-"Project-Id-Version: \n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: 2009-09-18 10:17+0100\n"
-"Last-Translator: Timo <timo@communtu.de>\n"
-"Language-Team: Communtu <info@communtu.de>\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-
-#: Drucken
-msgid "cups-pdf # PDF-Drucke"
-msgstr "cups-pdf # pdf printing"
-
-#: Rechtschreibprüfung
-msgid "Prüfung der Rechtschreibung für ASCII und LaTeX"
-msgstr "spell checking for ASCII and LaTeX"
-
-#: Texte lesen
-msgid ".pdf und .gs Texte lesen"
-msgstr "reading .pdf und .gs text files"
-
-#: Desktop
-msgid "Verschiedene nützliche Werkzeuge"
-msgstr "several useful tools"
-
-#: Grafik
-msgid "Bilder erstellen, bearbeiten, konvertieren und scannen"
-msgstr "create, edit, convert and scan images"
-
-#: Geoinformationssysteme
-msgid "Geoinformationssysteme"
-msgstr "geographical information system [abbr.: GIS]"
-
-#: Umstieg von Windows
-msgid "Hilfe beim Umstieg von Windows auf Ubuntu"
-msgstr "Help for system changers from Windows to Ubuntu"
-
-#: Pdf
-msgid "Tools zum Lesen, Erzeugen und Bearbeiten von PDF-Dokumenten. Der acroread ist hier dabei, weil evince bei manchen Druckern keine gute Ausgabe liefert. psutils erlaubt komplexere Batch-Bearbeitung nach Wandlung in Postscript. "
-msgstr "Tools for reading, creating and editing of PDF documents.  Adobe Reader is included because the document viewer evince produces poor output. psutils is useful for batchwise working when postscript is given."
-
-#: System-Werkzeuge
-msgid "Verschiedene Utilities: Übersicht über Festplatten-Platz, Festplatten-Partitionierung und Größenänderung, Verbindung zwischen Computern, USB-Stick formatieren, Red Hat-Pakete einbinden, Komprimieren und Dekomprimiere"
-msgstr "Several utilities: viewing of harddisk space, partitioning and changing of partition size, connections between computers, pendrive formatting, embedding of rpm packages, compressing and de-compressing"
-
-#: Landkarten
-msgid "Satelitenbilder der Erde mit Zoommöglichkeit"
-msgstr "satellit views of earth with zooming"
-
-#: Spiele
-msgid "Das beliebte Linux-Spiel"
-msgstr "The popular Linux game"
-
-#: Telefonieren, Chatten, Mailen
-msgid "Kommunikation im Netz per Telefonie, E-Mail oder Chat - so erreichst Du den/die andere/n."
-msgstr "Communicating in the net by phoning, mailing and chatting - connecting to others"
-
-#: Multimedia
-msgid "Audio, Video und Brennen"
-msgstr "audio, video und burning (DVD and CD)"
-
-#: Internet
-msgid "Mailen, telefonieren, hochladen, Internetvideos ansehen, filesharing"
-msgstr "mailing, phoning, uploading, viewing of videos in the net, filesharing"
-
-#: Compilieren
-msgid "Diverse Compiler u.a., um selbst Pakete aus der Quelle installieren und compilieren zu können."
-msgstr "Several compilers inter alia to create packages out of sources, install and compile them."
-
-#: Brennen
-msgid "rippen, brennen, verwalten, inkl. Codecs für das Brennen von Musik-CDs mit MP3s u.a."
-msgstr "rip, burn, manage incl. codecs for burníng audio CDs out of mp3 files  "
-
-#: Audio-Grundlagen
-msgid "Player und Codecs, um die ganze Bandbreite existierender Audio-Medien abzuspielen. Audacity zum Aufnehmen und Bearbeiten von Audiodateien."
-msgstr "Player and codecs for all existing audio-media. Audacity for recording and editing of audiofiles."
-
-#: Video-Grundlagen
-msgid "Player und Codecs, um möglichst viele Filme und DVDs gucken zu können. Leider reicht dazu oft ein Player nicht aus."
-msgstr "Player and Codecs for viewing videos and DVDs. There is no player which plays all types of media."
-
-#: Audio erweitert
-msgid "Ubuntustudio-Audio, Amarok (auch bei Gnome-Nutzern beliebt)"
-msgstr "Ubuntustudio-Audio, Amarok (also popular for GNOME users)"
-
-#: Grafik erweitert
-msgid "Ubuntustudio-graphics"
-msgstr "Ubuntustudio-graphics"
-
-#: PC als TV und Videorekorder
-msgid "Mythbuntu"
-msgstr "Mythbuntu"
-
-#: Video erweitert
-msgid "ubuntustudio-video"
-msgstr "ubuntustudio-video"
-
-#: Ubuntustudio
-msgid "Ubuntustudio - Grafik, Audio und Video. Siehe http://ubuntustudio.org/"
-msgstr "Ubuntustudio - graphics, audio and video. see http://ubuntustudio.org/"
-
-#: Mythbuntu-Desktop
-msgid "Mythbuntu - der PC wird zum Videorekorder, siehe http://www.mythbuntu.org/. Inklusive Umgestaltung des Desktops. "
-msgstr "Mythbuntu - the computer change to video recorder, see http://www.mythbuntu.org/. Including new desktop."
-
-#: Mythbuntu
-msgid "Mythbuntu - der PC wird zum Videorekorder, siehe http://www.mythbuntu.org/. Ohne Umgestaltung des Desktops. "
-msgstr "Mythbuntu - the computer changes to a video recorder, see http://www.mythbuntu.org/. Without changing the desktop."
-
-#: Linux Mint
-msgid "Linux Mint, siehe http://www.linuxmint.co"
-msgstr "Linux Mint, see http://www.linuxmint.com"
-
-#: Edubuntu
-msgid "Lernsoftware"
-msgstr "Educational software"
-
-#: Gobuntu
-msgid "Gobuntu - Ubuntu nur mit freier Software. Wenn als Add-on installiert, bleibt soweit vorhanden nicht-freie Software installiert."
-msgstr "Gobuntu - Ubuntu - only Free Software. If used as add-on non-Free-Software is not touched"
-
-#: Kubuntu
-msgid "Kubuntu ist Ubuntu mit dem KDE-Desktop, siehe http://wiki.ubuntuusers.de/KDE"
-msgstr "Kubuntu - Ubuntu with the KDE-desktop, see http://www.kubuntu.org/"
-
-#: Xubuntu
-msgid "Xubuntu ist Ubuntu mit dem schlanken Xfce-Desktop. Besonders für ältere Rechner geeignet. Siehe http://wiki.ubuntuusers.de/Xfce"
-msgstr "Xubuntu - Ubuntu with tiny Xfce-desktop. Specially for older computers. See http://www.xubuntu.org/"
-
-#: LaTeX
-msgid "LaTeX ist ein Textsatzsystem für wissenschaftliche Texte (Artikel, Diplom- und Doktorarbeiten und Bücher). Es ist besonders für Texte mit Sonderzeichen und/oder Formeln geeignet."
-msgstr "LaTeX is a document preparation system for scientific articals, diplomas and dissertations and book producing. You can use additional characters and formula."
-
-#: Filmemachen
-msgid "Erstmal nur ein Werkzeug zum Aufnehmen von Filmen vom Bildschirm"
-msgstr "Just a tool to record desktop activities."
-
-#: Cliparts
-msgid "Clipart-Grafiken"
-msgstr "Cliparts"
-
-#: Kompressionstools
-msgid "Komprimieren und Dekomprimieren."
-msgstr "Compressing and de-compressing."
-
-#: Entwicklungs-Werkzeuge
-msgid "Entwicklungs-Werkzeuge zum Übersetzen von Paketen u.a. plus graphviz, um Graphen zu malen"
-msgstr "developmant tools for compiling of packages, graphviz for showing graphs"
-
-#: Extrafonts
-msgid "Viele weitere Schriftarten"
-msgstr "A lot of fonts"
-
-#: automatix-firefoxmplayerplugin
-msgid "Mplayer zum Filme gucken, inkl. Plugin für Mozilla Browser. Dies ist NUR die entsprechende Paketliste, die Skripts von Automatix sind NICHT enthalten. "
-msgstr "Mplayer to view videos incl. plugin for Firefox. It's just a packagelist. There are no Automatix-scripts included."
-
-#: automatix-base
-msgid "Automatix-Basisinstallation, vor allem Codecs und andere Multimedia-Pakete. Dies ist NUR die entsprechende Paketliste, die Skripts von Automatix sind NICHT enthalten. "
-msgstr "Basic Automatix-installation, especially codecs and Multimedia-packages. It's just a packagelist. There are no Automatix-scripts included."
-
-#: Ipod
-msgid "Musik hören mit dem ipod u.a. "
-msgstr "Listening to music with ipod."
-
-#: Automatix
-msgid "Automatix war eine Installationshilfe, die sich großer Beliebtheit erfreute (sie wurde sogar von der New York Times empfohlen), die aber nicht ganz den Ubuntu-Programmierstandards entsprach und inzwischen nicht mehr weiterentwickelt wird. Dies ist NUR die entsprechende Paketliste, die Skripts von Automatix sind NICHT enthalten."
-msgstr "Automatix was a programm to assist the installation of software and enjoyed great popularity (Automatix was even recommended by the New York Times). However, Automatix did not meet the Ubuntu-standards and the delevopment had been stopped. This ins only the package-list and not Automatix scripts are included."
-
-#: Ripping
-msgid "Werkzeuge zum Rippen (auf die Festplatte kopieren) von CDs und DVDs."
-msgstr "Tools for ripping of CDs and DVDs. (Copy to Harddisk)"
-
-#: Sunjava
-msgid "Java von Sun (für einige Anwendungen reicht das bei Ubuntu mitgelieferte Java nicht aus)."
-msgstr "Sun's Java-package (in the some cases the Ubuntu-package is not enough)"
-
-#: Windows-codecs
-msgid "Zum richtigen Umgang mit Daten und Signale müssen diese digital kodiert und dekodiert werden. Dieses Bündel enthält die gängigen Formate (auch die Windows Codecs und DVD Codecs)."
-msgstr "For right using of data and signals they must be coded and decoded. This bundle contains popular one (included Windows codecs and DVD codecs)."
-
-#: Dvdshrink
-msgid "Werkzeuge, um DVDs speicherplatzsparend zu komprimieren."
-msgstr "tools for compressing DVDs"
-
-#: Texte einscannen
-msgid "Texte einscannen und Texterkennung (OCR)."
-msgstr "scanning texts and character-recognition (OCR)."
-
-#: ZevenOS Beta 5
-msgid "orient an BeOS, setzt auf Schnelligkeit, Kompatibilität mit alten Rechnern und einfache Bedienung. Folgende Pakete fehlen: gambas2-gb-xml-rpc gambas2-gb-xml-xslt "
-msgstr "looks like BeOS, fast, working on older computers, simple using. Packages NOT included  gambas2-gb-xml-rpc gambas2-gb-xml-xslt "
-
-#: ZevenOS beta 6
-msgid "orient an BeOS, setzt auf Schnelligkeit, Kompatibilität mit alten Rechnern und einfache Bedienung. Neuste Version. Folgende Pakete fehlen noch: about cyberghost deskbar encode fwizard gamer-bar gscrot iceshutdown magi yavtd zeebar "
-msgstr "looks like BeOS, fast, working on old computers, simple to use. Newest version. These packages are missing: about cyberghost deskbar encode fwizard gamer-bar gscrot iceshutdown magi yavtd zeebar"
-
-#: Videoschnitt
-msgid "kino (für Einsteiger) und kdenlive (für Fortgeschrittene)"
-msgstr "kino (for beginners) and kdenlive (for advanced users)"
-
-#: Lernsoftware
-msgid "Edubuntu ohne Terminal-Server und Desktop-Bild. Edubuntu umfasst diverse Lernsoftware "
-msgstr "Edubuntu without terminal-server and desktop-background. Edubuntu contains a lot of educational software."
-
-#: texlive-full-deutsch
-msgid "LaTeX ohne die ganzen Sprachpakete"
-msgstr "LaTeX without language-packages"
-
-#: Lernsoftware 6-10 Jahre
-msgid "CD "Tasmanische Schildkröte" des Projekts Computerspende"
-msgstr "CD-image of Pinguino version 0.1 (Tasmanische Tröte). Pinguino is a distribution based on Xfce for kids (elementary school)"
-
-#: Grundlagen für Webdesign
-msgid "FTP Client, WYSIWYG Editor für HTML, Editor für CSS"
-msgstr "FTP Client, HTML-editor, CSS-Editor all WYSIWYG "
-
-#: EEE-PC für Schulen
-msgid "EEE-PC-Installation der Schule an der Hamburger Str. in Bremen"
-msgstr "for EEE-PC-Installation for the school at Hamburger Str. in Bremen, Germany"
-
-#: Internet-Radio
-msgid "tunapie - Programm zum Hören und Aufnehmen von Internetradio"
-msgstr "tunapie - Appllication for listening and recording of streamed Internetradio"
-
-#: Habu Netbook
-msgid "Vorschlag für Netbook Schule Hamburger Str. in Bremen"
-msgstr "suggestion for Netbook Installation at school Hamburger Str., Bremen, Germany"
-
-#: Tinos erster versuch
-msgid "google eart"
-msgstr "GoogleEarth"
-
-#: Oerm_Standard
-msgid "meine Standardprogramme für den täglichen Gebrauch"
-msgstr "my standard applications for daily use"
-
-#: Übersetzen
-msgid "Vokabeltrainer, Übersetzungstools"
-msgstr "trainee for vocabulary, translation-tools"
-
-#: Mathematik1
-msgid "Erstmal Geometrie und Statistik."
-msgstr "Geometry and statistics only."
-
-#: Caros Netbook
-msgid "Minimal-Software für Caros Netbook"
-msgstr "minimal software for Caros EEE-PC"
-
-#: timos bündel 3
-msgid "."
-msgstr "."
-
-#: bernds KDE 4.2
-msgid "KDE 4.2 Desktop mit viel Multimedia (Videoschnitt etc.)"
-msgstr "KDE 4.2 with a lot of multimedia-software (e.g. video cutting and more)"
-
-#: Azd325's Bündel
-msgid "rtets"
-msgstr "rtets"
-
-#: Ruby on Rails mit Mysql
-msgid "Das Web2.0-Framework Ruby on Rails plus die Mysql-Datenbank, die besser skaliert als die standardmäßig von Rails benutzte Datenbank sqlite3"
-msgstr "Web2.0-framework Ruby on Rails with MySql-database, which scales better than sqlite3-database."
-
-#: hets-dev
-msgid "Entwicklungswerkzeuge für Hets, siehe http://www.dfki.de/sks/hets"
-msgstr "development-tools for Hets see http://www.dfki.de/sks/hets (english)"
-
-#: Ubuntu Netbook Remix
-msgid "Ergänzung für Ubuntu mit GNOME Desktop für bessere Darstellung und Bedienbarkeit auf kleineren Displays. Siehe http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix . Unter Hardy und Intrepid bitte noch maximus zum Autostart hinzufügen."
-msgstr "Add-on for Ubuntus GNOME-desktop for better use on small displays see https://launchpad.net/netbook-remix . Hardy- and Intrepid-users: add maximus to the autostart. "
-
-#: Professionell Musik machen
-msgid "entnommen aus einer Diskussion zu Ubuntu-Studio und professionell Musik machen"
-msgstr "part of discussion about Ubuntu-Studio and professinal musicians"
-
-#: Chemie
-msgid "Periodensystem und Chemieprogramme"
-msgstr "periodical system and applications about chemics"
-
-#: Grundlagen
-msgid "Die Grundlagen des Filesharings: Unterstützung von Peer-to-peer, BitTorrent, eDonkey, Kademlia und Gnutella "
-msgstr "Basics of filesharings: support for peer-to-peer, BitTorrent, eDonkey, Kademlia und Gnutella."
-
-#: Java Programmierumgebung
-msgid "Eine Programmierumgebung für den/der Java-EntwicklerIn mit der IDE Eclipse"
-msgstr "development-kit for Java-developers with Eclipse"
-
-#: Text Browser
-msgid "Textbasierter Browser"
-msgstr "browser in textmode"
-
-#: Mindmaps und Organisationsdiagramme
-msgid "Mindmaps und Organisationsdiagramme anschauen und erstellen"
-msgstr "viewer and editor for mindmaps and organigrams"
-
-#: neu
-msgid "am testen"
-msgstr "testing"
-
-#: Ruby-Programmierung
-msgid "Basics für Ruby-Programmierung"
-msgstr "basics for Ruby-coding"
-
-#: ljkölutrfgkuzdr
-msgid "qwertz"
-msgstr "qwertz - the layout for german keyboards"
-
-#: minimal-ubuntu
-msgid "Minimierte Version von ubuntu-desktop (ohne OpenOffice, Evolution, Drucker, asiatische Fonts u.a.), für Computer mit wenig Platz."
-msgstr "Minimized version of Ubuntu-desktop (without OpenOffice, Evolution, printers, asian Fonts and other) for computers with poor space on harddisks."
-
-#: gnome-panel-light
-msgid "gnome-panel ohne evolution"
-msgstr "gnome-panel without evolution"
-
-#: mein testbuendel
-msgid "mein testbuendel"
-msgstr "my testbundle"
-
-#: Python-Programmierung
-msgid "Python + IDE"
-msgstr "Python + IDE"
-
-#: Gubuntu
-msgid "Gubuntu, leichtgewichtiges Ubuntu zur Installertion auf Spielepcs für mehr performance."
-msgstr "Gubuntu, lightweight Ubuntu for installation for gamers with good performance"
-
-#: Desktop PC
-msgid "Das sind die Programme, die ich standartmäßig auf meinem Desktop PC installiere"
-msgstr "standard-installation on my desktop PC"
-
-#: communtu-dev
-msgid "Entwicklungswerkzeuge für Communtu"
-msgstr "development-tools for Communtu"
-
-#: timos bündel 2
-msgid "."
-msgstr "."
-
-#: vpn
-msgid "Pakete für VPN-Client, siehe http://wiki.ubuntuusers.de/Network-Manager/VPN_Plugins"
-msgstr "packages for VPN-clients see http://ubuntuforums.org/showthread.php?t=459193"
-
-#: Bündel090526
-msgid "Meine Bündelsammlung vom 26.MAI 2009"
-msgstr "my bundles from May, 26th 2009"
-
-#: Debian-Metapaket-Bau
-msgid "Pakete, die für den Bau von Debian-Metapakten bei Communtu gebraucht werden."
-msgstr "packages, which are used for the Debian-metapackages, used by Communtu"
-
-#: Janas Bündel
-msgid "das ist einfach mein privates bündel. fällt unter keine besondere kategorie."
-msgstr "Only my private bundle, out of any category."
-
-#: LinuxMint6_0
-msgid "LinuxMint6.0 (standardinstallation aus LinuxMint-6.iso"
-msgstr "Desktop based on LinuxMint"
-
-#: deborphan
-msgid "deborphan"
-msgstr "deborphan"
-
-#: InstallationDurutti
-msgid "Die vollständige Installation auf durutti (gnome)."
-msgstr "complete installation on durutti PC"
-
-#: timos Spiele
-msgid "Battle for Wesnoth + Map edito"
-msgstr "package of Battle for Wesnoth (with editor)"
-
-#: Katrins Installation
-msgid "Ann-Katrins Installation"
-msgstr "installation of Ann-Katrins PC"
-
-#: timos Bündel
-msgid "Bündel vom 20.05.09"
-msgstr "bundle from May, 20th 2009"
-
-#: Uebersetzen
-msgid "Vokabeltrainer, Übersetzungstools"
-msgstr "vokabulary traineR, translation tools"
-
-#: Tills Standardinstallation
-msgid "Tills Standardinstallation. Moderate Unterstützung von Grafik und Multimedia und LaTeX. Entwicklung von Communtu (in Ruby on Rails) und Hets (in Haskell)."
-msgstr "Tills installation (standard) with moderate assistance on graphics and multimedia also LaTeX. Development of Communtu (in Ruby on Rails) and Hets (in Haskell)."
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+
+  <head>
+    <title>
+      Attachment – Communtu
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/raw-attachment/ticket/880/bundles.po" title="Original Format" />
+        <link rel="up" href="/ticket/880" title="Ticket #880" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/code.css" type="text/css" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search Communtu" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://en.communtu.org"><img src="/chrome/common/trac_banner.png" alt="Communtu - eases Ubuntu installations" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first">logged in as toddy</li><li><a href="/logout">Logout</a></li><li><a href="/prefs">Preferences</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li class="last"><a href="/about">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="/query">View Tickets</a></li><li><a href="/newticket">New Ticket</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/wiki">Wiki</a></li><li><a href="/search">Search</a></li><li class="last"><a href="/admin" title="Administration">Admin</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="last first"><a href="/ticket/880">Back to Ticket #880</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="attachment">
+        <h1><a href="/ticket/880">Ticket #880</a>: bundles.po</h1>
+        <table id="info" summary="Description">
+          <tbody>
+            <tr>
+              <th scope="col">
+                File bundles.po, <span title="24233 bytes">23.7 KB</span>
+                (added by timo,  <a class="timeline" href="/timeline?from=2009-12-02T15%3A24%3A00%2B0100&amp;precision=second" title="2009-12-02T15:24:00+0100 in Timeline">5 minutes</a> ago)
+              </th>
+            </tr>
+            <tr>
+              <td class="message searchable">
+                
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div id="preview" class="searchable">
+    <table class="code"><thead><tr><th class="lineno" title="Line numbers">Line</th><th class="content"> </th></tr></thead><tbody><tr><th id="L1"><a href="#L1">1</a></th><td>msgid ""</td></tr><tr><th id="L2"><a href="#L2">2</a></th><td>msgstr ""</td></tr><tr><th id="L3"><a href="#L3">3</a></th><td>"Project-Id-Version: \n"</td></tr><tr><th id="L4"><a href="#L4">4</a></th><td>"POT-Creation-Date: \n"</td></tr><tr><th id="L5"><a href="#L5">5</a></th><td>"PO-Revision-Date: \n"</td></tr><tr><th id="L6"><a href="#L6">6</a></th><td>"Last-Translator: Timo &lt;timo@communtu.de&gt;\n"</td></tr><tr><th id="L7"><a href="#L7">7</a></th><td>"Language-Team: Communtu &lt;info@communtu.de&gt;\n"</td></tr><tr><th id="L8"><a href="#L8">8</a></th><td>"MIME-Version: 1.0\n"</td></tr><tr><th id="L9"><a href="#L9">9</a></th><td>"Content-Type: text/plain; charset=iso-8859-1\n"</td></tr><tr><th id="L10"><a href="#L10">10</a></th><td>"Content-Transfer-Encoding: 8bit\n"</td></tr><tr><th id="L11"><a href="#L11">11</a></th><td></td></tr><tr><th id="L12"><a href="#L12">12</a></th><td>#: Drucken</td></tr><tr><th id="L13"><a href="#L13">13</a></th><td>msgid ""</td></tr><tr><th id="L14"><a href="#L14">14</a></th><td>"cups-pdf # PDF-Drucker\n"</td></tr><tr><th id="L15"><a href="#L15">15</a></th><td>"gtklp # f�rere Seiten auf eine ausdrucken, etc.\n"</td></tr><tr><th id="L16"><a href="#L16">16</a></th><td>"psutils # f�te und B�n"</td></tr><tr><th id="L17"><a href="#L17">17</a></th><td>"pdftk # PDFs zusammenstellen"</td></tr><tr><th id="L18"><a href="#L18">18</a></th><td>msgstr "cups-pdf # pdf-printing"</td></tr><tr><th id="L19"><a href="#L19">19</a></th><td></td></tr><tr><th id="L20"><a href="#L20">20</a></th><td>#: Rechtschreibpr�msgid "Pr�der Rechtschreibung f�II und LaTeX"</td></tr><tr><th id="L21"><a href="#L21">21</a></th><td>msgstr "spell checking for ASCII and LaTeX"</td></tr><tr><th id="L22"><a href="#L22">22</a></th><td></td></tr><tr><th id="L23"><a href="#L23">23</a></th><td>#: Texte lesen</td></tr><tr><th id="L24"><a href="#L24">24</a></th><td>msgid ".pdf und .gs Texte lesen"</td></tr><tr><th id="L25"><a href="#L25">25</a></th><td>msgstr "reading .pdf und .gs text files"</td></tr><tr><th id="L26"><a href="#L26">26</a></th><td></td></tr><tr><th id="L27"><a href="#L27">27</a></th><td>#: Desktop</td></tr><tr><th id="L28"><a href="#L28">28</a></th><td>msgid "Verschiedene n�he Werkzeuge"</td></tr><tr><th id="L29"><a href="#L29">29</a></th><td>msgstr "several useful tools"</td></tr><tr><th id="L30"><a href="#L30">30</a></th><td></td></tr><tr><th id="L31"><a href="#L31">31</a></th><td>#: Grafik</td></tr><tr><th id="L32"><a href="#L32">32</a></th><td>msgid "Bilder erstellen, bearbeiten, konvertieren und scannen"</td></tr><tr><th id="L33"><a href="#L33">33</a></th><td>msgstr "create, edit, convert and scan images"</td></tr><tr><th id="L34"><a href="#L34">34</a></th><td></td></tr><tr><th id="L35"><a href="#L35">35</a></th><td>#: Geoinformationssysteme</td></tr><tr><th id="L36"><a href="#L36">36</a></th><td>msgid "Geoinformationssysteme"</td></tr><tr><th id="L37"><a href="#L37">37</a></th><td>msgstr "geographical information system [abbr.: GIS]"</td></tr><tr><th id="L38"><a href="#L38">38</a></th><td></td></tr><tr><th id="L39"><a href="#L39">39</a></th><td>#: Umstieg von Windows</td></tr><tr><th id="L40"><a href="#L40">40</a></th><td>msgid ""</td></tr><tr><th id="L41"><a href="#L41">41</a></th><td>"Hilfe beim Umstieg von Windows auf Ubuntu. \n"</td></tr><tr><th id="L42"><a href="#L42">42</a></th><td>"Einige Windows Schriftarten\n"</td></tr><tr><th id="L43"><a href="#L43">43</a></th><td>"VirtualBox: Erlaubt unter Ubuntu ein komplettes Windows laufen zu lassen.\n"</td></tr><tr><th id="L44"><a href="#L44">44</a></th><td>"Wine: einzelne Windows-Programme direkt unter Ubuntu starten\n"</td></tr><tr><th id="L45"><a href="#L45">45</a></th><td>"Wine ist etwas leichtf�, VirtualBox erfordert hingegen eine (virtuelle) Installation von Windows, bringt daf�r auch mehr Windows-Programme zum Laufen."</td></tr><tr><th id="L46"><a href="#L46">46</a></th><td>msgstr "Help for system changers from Windows to Ubuntu"</td></tr><tr><th id="L47"><a href="#L47">47</a></th><td></td></tr><tr><th id="L48"><a href="#L48">48</a></th><td>#: Pdf</td></tr><tr><th id="L49"><a href="#L49">49</a></th><td>msgid "Tools zum Lesen, Erzeugen und Bearbeiten von PDF-Dokumenten. Der acroread ist hier dabei, weil evince bei manchen Druckern keine gute Ausgabe liefert. psutils erlaubt komplexere Batch-Bearbeitung nach Wandlung in Postscript. "</td></tr><tr><th id="L50"><a href="#L50">50</a></th><td>msgstr "Tools for reading, creating and editing of PDF documents.  Adobe Reader is included because the document viewer evince produces poor output. psutils is useful for batchwise working when postscript is given."</td></tr><tr><th id="L51"><a href="#L51">51</a></th><td></td></tr><tr><th id="L52"><a href="#L52">52</a></th><td>#: System-Werkzeuge</td></tr><tr><th id="L53"><a href="#L53">53</a></th><td>msgid "Verschiedene Utilities: �ersicht �estplatten-Platz, Festplatten-Partitionierung und Gr��erung, Verbindung zwischen Computern, USB-Stick formatieren, Red Hat-Pakete einbinden, Komprimieren und Dekomprimieren"</td></tr><tr><th id="L54"><a href="#L54">54</a></th><td>msgstr "Several utilities: viewing of harddisk space, partitioning and changing of partition size, connections between computers, pendrive formatting, embedding of rpm packages, compressing and de-compressing"</td></tr><tr><th id="L55"><a href="#L55">55</a></th><td></td></tr><tr><th id="L56"><a href="#L56">56</a></th><td>#: Landkarten</td></tr><tr><th id="L57"><a href="#L57">57</a></th><td>msgid "Satelitenbilder der Erde mit Zoomm�chkeit"</td></tr><tr><th id="L58"><a href="#L58">58</a></th><td>msgstr "satellit views of earth with zooming"</td></tr><tr><th id="L59"><a href="#L59">59</a></th><td></td></tr><tr><th id="L60"><a href="#L60">60</a></th><td>#: Spiele</td></tr><tr><th id="L61"><a href="#L61">61</a></th><td>msgid "Das beliebte Linux-Spiel"</td></tr><tr><th id="L62"><a href="#L62">62</a></th><td>msgstr "The popular Linux game"</td></tr><tr><th id="L63"><a href="#L63">63</a></th><td></td></tr><tr><th id="L64"><a href="#L64">64</a></th><td>#: Telefonieren, Chatten, Mailen</td></tr><tr><th id="L65"><a href="#L65">65</a></th><td>msgid "Kommunikation im Netz per Telefonie, E-Mail oder Chat - so erreichst Du den/die andere/n."</td></tr><tr><th id="L66"><a href="#L66">66</a></th><td>msgstr "Communicating in the net by phoning, mailing and chatting - connecting to others"</td></tr><tr><th id="L67"><a href="#L67">67</a></th><td></td></tr><tr><th id="L68"><a href="#L68">68</a></th><td>#: Multimedia</td></tr><tr><th id="L69"><a href="#L69">69</a></th><td>msgid "Audio, Video und Brennen"</td></tr><tr><th id="L70"><a href="#L70">70</a></th><td>msgstr "audio, video und burning (DVD and CD)"</td></tr><tr><th id="L71"><a href="#L71">71</a></th><td></td></tr><tr><th id="L72"><a href="#L72">72</a></th><td>#: Internet</td></tr><tr><th id="L73"><a href="#L73">73</a></th><td>msgid "Mailen, telefonieren, hochladen, Internetvideos ansehen, filesharing, twittern"</td></tr><tr><th id="L74"><a href="#L74">74</a></th><td>msgstr "mailing, phoning, uploading, viewing of videos in the net, filesharing"</td></tr><tr><th id="L75"><a href="#L75">75</a></th><td></td></tr><tr><th id="L76"><a href="#L76">76</a></th><td>#: Compilieren</td></tr><tr><th id="L77"><a href="#L77">77</a></th><td>msgid "Diverse Compiler u.a., um selbst Pakete aus der Quelle installieren und compilieren zu k�n."</td></tr><tr><th id="L78"><a href="#L78">78</a></th><td>msgstr "Several compilers inter alia to create packages out of sources, install and compile them."</td></tr><tr><th id="L79"><a href="#L79">79</a></th><td></td></tr><tr><th id="L80"><a href="#L80">80</a></th><td>#: Brennen</td></tr><tr><th id="L81"><a href="#L81">81</a></th><td>msgid "rippen, brennen, verwalten, inkl. Codecs f� Brennen von Musik-CDs mit MP3s u.a."</td></tr><tr><th id="L82"><a href="#L82">82</a></th><td>msgstr "rip, burn, manage incl. codecs for burn� audio CDs out of mp3 files  "</td></tr><tr><th id="L83"><a href="#L83">83</a></th><td></td></tr><tr><th id="L84"><a href="#L84">84</a></th><td>#: Audio-Grundlagen</td></tr><tr><th id="L85"><a href="#L85">85</a></th><td>msgid "Player und Codecs, um die ganze Bandbreite existierender Audio-Medien abzuspielen. Audacity zum Aufnehmen und Bearbeiten von Audiodateien."</td></tr><tr><th id="L86"><a href="#L86">86</a></th><td>msgstr "Player and codecs for all existing audio-media. Audacity for recording and editing of audiofiles."</td></tr><tr><th id="L87"><a href="#L87">87</a></th><td></td></tr><tr><th id="L88"><a href="#L88">88</a></th><td>#: Video-Grundlagen</td></tr><tr><th id="L89"><a href="#L89">89</a></th><td>msgid "Player und Codecs, um m�chst viele Filme und DVDs gucken zu k�n. Leider reicht dazu oft ein Player nicht aus."</td></tr><tr><th id="L90"><a href="#L90">90</a></th><td>msgstr "Player and Codecs for viewing videos and DVDs. There is no player which plays all types of media."</td></tr><tr><th id="L91"><a href="#L91">91</a></th><td></td></tr><tr><th id="L92"><a href="#L92">92</a></th><td>#: Audio erweitert</td></tr><tr><th id="L93"><a href="#L93">93</a></th><td>msgid "Ubuntustudio-Audio, Amarok (auch bei Gnome-Nutzern beliebt)"</td></tr><tr><th id="L94"><a href="#L94">94</a></th><td>msgstr "Ubuntustudio-Audio, Amarok (also popular for GNOME users)"</td></tr><tr><th id="L95"><a href="#L95">95</a></th><td></td></tr><tr><th id="L96"><a href="#L96">96</a></th><td>#: Grafik erweitert</td></tr><tr><th id="L97"><a href="#L97">97</a></th><td>msgid "Ubuntustudio-graphics"</td></tr><tr><th id="L98"><a href="#L98">98</a></th><td>msgstr "Ubuntustudio-graphics"</td></tr><tr><th id="L99"><a href="#L99">99</a></th><td></td></tr><tr><th id="L100"><a href="#L100">100</a></th><td>#: PC als TV und Videorekorder</td></tr><tr><th id="L101"><a href="#L101">101</a></th><td>msgid "Mythbuntu"</td></tr><tr><th id="L102"><a href="#L102">102</a></th><td>msgstr "Mythbuntu"</td></tr><tr><th id="L103"><a href="#L103">103</a></th><td></td></tr><tr><th id="L104"><a href="#L104">104</a></th><td>#: Video erweitert</td></tr><tr><th id="L105"><a href="#L105">105</a></th><td>msgid "ubuntustudio-video"</td></tr><tr><th id="L106"><a href="#L106">106</a></th><td>msgstr "ubuntustudio-video"</td></tr><tr><th id="L107"><a href="#L107">107</a></th><td></td></tr><tr><th id="L108"><a href="#L108">108</a></th><td>#: Ubuntustudio</td></tr><tr><th id="L109"><a href="#L109">109</a></th><td>msgid "Ubuntustudio - Grafik, Audio und Video. Siehe http://ubuntustudio.org/"</td></tr><tr><th id="L110"><a href="#L110">110</a></th><td>msgstr "Ubuntustudio - graphics, audio and video. see http://ubuntustudio.org/"</td></tr><tr><th id="L111"><a href="#L111">111</a></th><td></td></tr><tr><th id="L112"><a href="#L112">112</a></th><td>#: Mythbuntu-Desktop</td></tr><tr><th id="L113"><a href="#L113">113</a></th><td>msgid "Mythbuntu - der PC wird zum Videorekorder, siehe http://www.mythbuntu.org/. Inklusive Umgestaltung des Desktops. "</td></tr><tr><th id="L114"><a href="#L114">114</a></th><td>msgstr "Mythbuntu - the computer change to video recorder, see http://www.mythbuntu.org/. Including new desktop."</td></tr><tr><th id="L115"><a href="#L115">115</a></th><td></td></tr><tr><th id="L116"><a href="#L116">116</a></th><td>#: Mythbuntu</td></tr><tr><th id="L117"><a href="#L117">117</a></th><td>msgid "Mythbuntu - der PC wird zum Videorekorder, siehe http://www.mythbuntu.org/. Ohne Umgestaltung des Desktops. "</td></tr><tr><th id="L118"><a href="#L118">118</a></th><td>msgstr "Mythbuntu - the computer changes to a video recorder, see http://www.mythbuntu.org/. Without changing the desktop."</td></tr><tr><th id="L119"><a href="#L119">119</a></th><td></td></tr><tr><th id="L120"><a href="#L120">120</a></th><td>#: Linux Mint</td></tr><tr><th id="L121"><a href="#L121">121</a></th><td>msgid ""</td></tr><tr><th id="L122"><a href="#L122">122</a></th><td>"Linux Mint, siehe http://www.linuxmint.com\n"</td></tr><tr><th id="L123"><a href="#L123">123</a></th><td>"Folgende Pakete aus Linux Mint sind hier nicht enthalten:\n"</td></tr><tr><th id="L124"><a href="#L124">124</a></th><td>"bluez-pin compiz-check flashplayer-nonfree grub-gfxboot gtk2-engines-aurora gtk2-engines-candido libdevmapper1.02 liblaunchpad-integration0 mintartwork-bianca mintassistant mintassistant-gnome mintbackup mintdesktop mintinstall mintmenu mintsystem mintupdate mintupdate-gnome mintupload mintwifi  nspluginwrapper usplash-theme-mint"</td></tr><tr><th id="L125"><a href="#L125">125</a></th><td>msgstr "Linux Mint, see http://www.linuxmint.com"</td></tr><tr><th id="L126"><a href="#L126">126</a></th><td></td></tr><tr><th id="L127"><a href="#L127">127</a></th><td>#: Edubuntu</td></tr><tr><th id="L128"><a href="#L128">128</a></th><td>msgid "Lernsoftware"</td></tr><tr><th id="L129"><a href="#L129">129</a></th><td>msgstr "Educational software"</td></tr><tr><th id="L130"><a href="#L130">130</a></th><td></td></tr><tr><th id="L131"><a href="#L131">131</a></th><td>#: Gobuntu</td></tr><tr><th id="L132"><a href="#L132">132</a></th><td>msgid "Gobuntu - Ubuntu nur mit freier Software. Wenn als Add-on installiert, bleibt soweit vorhanden nicht-freie Software installiert."</td></tr><tr><th id="L133"><a href="#L133">133</a></th><td>msgstr "Gobuntu - Ubuntu - only Free Software. If used as add-on non-Free-Software is not touched"</td></tr><tr><th id="L134"><a href="#L134">134</a></th><td></td></tr><tr><th id="L135"><a href="#L135">135</a></th><td>#: Kubuntu</td></tr><tr><th id="L136"><a href="#L136">136</a></th><td>msgid "Kubuntu ist Ubuntu mit dem KDE-Desktop, siehe http://wiki.ubuntuusers.de/KDE"</td></tr><tr><th id="L137"><a href="#L137">137</a></th><td>msgstr "Kubuntu - Ubuntu with the KDE-desktop, see http://www.kubuntu.org/"</td></tr><tr><th id="L138"><a href="#L138">138</a></th><td></td></tr><tr><th id="L139"><a href="#L139">139</a></th><td>#: Xubuntu</td></tr><tr><th id="L140"><a href="#L140">140</a></th><td>msgid "Xubuntu ist Ubuntu mit dem schlanken Xfce-Desktop. Besonders f�ere Rechner geeignet. Siehe http://wiki.ubuntuusers.de/Xfce"</td></tr><tr><th id="L141"><a href="#L141">141</a></th><td>msgstr "Xubuntu - Ubuntu with tiny Xfce-desktop. Specially for older computers. See http://www.xubuntu.org/"</td></tr><tr><th id="L142"><a href="#L142">142</a></th><td></td></tr><tr><th id="L143"><a href="#L143">143</a></th><td>#: LaTeX</td></tr><tr><th id="L144"><a href="#L144">144</a></th><td>msgid "LaTeX ist ein Textsatzsystem f�senschaftliche Texte (Artikel, Diplom- und Doktorarbeiten und B�. Es ist besonders f�te mit Sonderzeichen und/oder Formeln geeignet."</td></tr><tr><th id="L145"><a href="#L145">145</a></th><td>msgstr "LaTeX is a document preparation system for scientific articals, diplomas and dissertations and book producing. You can use additional characters and formula."</td></tr><tr><th id="L146"><a href="#L146">146</a></th><td></td></tr><tr><th id="L147"><a href="#L147">147</a></th><td>#: Filmemachen</td></tr><tr><th id="L148"><a href="#L148">148</a></th><td>msgid "Erstmal nur ein Werkzeug zum Aufnehmen von Filmen vom Bildschirm"</td></tr><tr><th id="L149"><a href="#L149">149</a></th><td>msgstr "Just a tool to record desktop activities."</td></tr><tr><th id="L150"><a href="#L150">150</a></th><td></td></tr><tr><th id="L151"><a href="#L151">151</a></th><td>#: Cliparts</td></tr><tr><th id="L152"><a href="#L152">152</a></th><td>msgid "Clipart-Grafiken"</td></tr><tr><th id="L153"><a href="#L153">153</a></th><td>msgstr "Cliparts"</td></tr><tr><th id="L154"><a href="#L154">154</a></th><td></td></tr><tr><th id="L155"><a href="#L155">155</a></th><td>#: Kompressionstools</td></tr><tr><th id="L156"><a href="#L156">156</a></th><td>msgid "Komprimieren und Dekomprimieren."</td></tr><tr><th id="L157"><a href="#L157">157</a></th><td>msgstr "Compressing and de-compressing."</td></tr><tr><th id="L158"><a href="#L158">158</a></th><td></td></tr><tr><th id="L159"><a href="#L159">159</a></th><td>#: Entwicklungs-Werkzeuge</td></tr><tr><th id="L160"><a href="#L160">160</a></th><td>msgid "Entwicklungs-Werkzeuge zum �ersetzen von Paketen u.a. plus graphviz, um Graphen zu malen"</td></tr><tr><th id="L161"><a href="#L161">161</a></th><td>msgstr "developmant tools for compiling of packages, graphviz for showing graphs"</td></tr><tr><th id="L162"><a href="#L162">162</a></th><td></td></tr><tr><th id="L163"><a href="#L163">163</a></th><td>#: Extrafonts</td></tr><tr><th id="L164"><a href="#L164">164</a></th><td>msgid "Viele weitere Schriftarten"</td></tr><tr><th id="L165"><a href="#L165">165</a></th><td>msgstr "A lot of fonts"</td></tr><tr><th id="L166"><a href="#L166">166</a></th><td></td></tr><tr><th id="L167"><a href="#L167">167</a></th><td>#: automatix-firefoxmplayerplugin</td></tr><tr><th id="L168"><a href="#L168">168</a></th><td>msgid "Mplayer zum Filme gucken, inkl. Plugin f�illa Browser. Dies ist NUR die entsprechende Paketliste, die Skripts von Automatix sind NICHT enthalten. "</td></tr><tr><th id="L169"><a href="#L169">169</a></th><td>msgstr "Mplayer to view videos incl. plugin for Firefox. It's just a packagelist. There are no Automatix-scripts included."</td></tr><tr><th id="L170"><a href="#L170">170</a></th><td></td></tr><tr><th id="L171"><a href="#L171">171</a></th><td>#: automatix-base</td></tr><tr><th id="L172"><a href="#L172">172</a></th><td>msgid "Automatix-Basisinstallation, vor allem Codecs und andere Multimedia-Pakete. Dies ist NUR die entsprechende Paketliste, die Skripts von Automatix sind NICHT enthalten. "</td></tr><tr><th id="L173"><a href="#L173">173</a></th><td>msgstr "Basic Automatix-installation, especially codecs and Multimedia-packages. It's just a packagelist. There are no Automatix-scripts included."</td></tr><tr><th id="L174"><a href="#L174">174</a></th><td></td></tr><tr><th id="L175"><a href="#L175">175</a></th><td>#: Ipod</td></tr><tr><th id="L176"><a href="#L176">176</a></th><td>msgid "Musik h� mit dem ipod u.a. "</td></tr><tr><th id="L177"><a href="#L177">177</a></th><td>msgstr "Listening to music with ipod."</td></tr><tr><th id="L178"><a href="#L178">178</a></th><td></td></tr><tr><th id="L179"><a href="#L179">179</a></th><td>#: Automatix</td></tr><tr><th id="L180"><a href="#L180">180</a></th><td>msgid "Automatix war eine Installationshilfe, die sich gro�r Beliebtheit erfreute (sie wurde sogar von der New York Times empfohlen), die aber nicht ganz den Ubuntu-Programmierstandards entsprach und inzwischen nicht mehr weiterentwickelt wird. Dies ist NUR die entsprechende Paketliste, die Skripts von Automatix sind NICHT enthalten."</td></tr><tr><th id="L181"><a href="#L181">181</a></th><td>msgstr "Automatix was a programm to assist the installation of software and enjoyed great popularity (Automatix was even recommended by the New York Times). However, Automatix did not meet the Ubuntu-standards and the delevopment had been stopped. This ins only the package-list and not Automatix scripts are included."</td></tr><tr><th id="L182"><a href="#L182">182</a></th><td></td></tr><tr><th id="L183"><a href="#L183">183</a></th><td>#: Ripping</td></tr><tr><th id="L184"><a href="#L184">184</a></th><td>msgid "Werkzeuge zum Rippen (auf die Festplatte kopieren) von CDs und DVDs."</td></tr><tr><th id="L185"><a href="#L185">185</a></th><td>msgstr "Tools for ripping of CDs and DVDs. (Copy to Harddisk)"</td></tr><tr><th id="L186"><a href="#L186">186</a></th><td></td></tr><tr><th id="L187"><a href="#L187">187</a></th><td>#: Sunjava</td></tr><tr><th id="L188"><a href="#L188">188</a></th><td>msgid "Java von Sun (f�ige Anwendungen reicht das bei Ubuntu mitgelieferte Java nicht aus)."</td></tr><tr><th id="L189"><a href="#L189">189</a></th><td>msgstr "Sun's Java-package (in the some cases the Ubuntu-package is not enough)"</td></tr><tr><th id="L190"><a href="#L190">190</a></th><td></td></tr><tr><th id="L191"><a href="#L191">191</a></th><td>#: Windows-codecs</td></tr><tr><th id="L192"><a href="#L192">192</a></th><td>msgid "Zum richtigen Umgang mit Daten und Signale m�diese digital kodiert und dekodiert werden. Dieses B�enth� die g�igen Formate (auch die Windows Codecs und DVD Codecs)."</td></tr><tr><th id="L193"><a href="#L193">193</a></th><td>msgstr "For right using of data and signals they must be coded and decoded. This bundle contains popular one (included Windows codecs and DVD codecs)."</td></tr><tr><th id="L194"><a href="#L194">194</a></th><td></td></tr><tr><th id="L195"><a href="#L195">195</a></th><td>#: Dvdshrink</td></tr><tr><th id="L196"><a href="#L196">196</a></th><td>msgid "Werkzeuge, um DVDs speicherplatzsparend zu komprimieren."</td></tr><tr><th id="L197"><a href="#L197">197</a></th><td>msgstr "tools for compressing DVDs"</td></tr><tr><th id="L198"><a href="#L198">198</a></th><td></td></tr><tr><th id="L199"><a href="#L199">199</a></th><td>#: Texte einscannen</td></tr><tr><th id="L200"><a href="#L200">200</a></th><td>msgid "Texte einscannen und Texterkennung (OCR)."</td></tr><tr><th id="L201"><a href="#L201">201</a></th><td>msgstr "scanning texts and character-recognition (OCR)."</td></tr><tr><th id="L202"><a href="#L202">202</a></th><td></td></tr><tr><th id="L203"><a href="#L203">203</a></th><td>#: ZevenOS Beta 5</td></tr><tr><th id="L204"><a href="#L204">204</a></th><td>msgid "orient an BeOS, setzt auf Schnelligkeit, Kompatibilit�mit alten Rechnern und einfache Bedienung. Folgende Pakete fehlen: gambas2-gb-xml-rpc gambas2-gb-xml-xslt "</td></tr><tr><th id="L205"><a href="#L205">205</a></th><td>msgstr "looks like BeOS, fast, working on older computers, simple using. Packages NOT included  gambas2-gb-xml-rpc gambas2-gb-xml-xslt "</td></tr><tr><th id="L206"><a href="#L206">206</a></th><td></td></tr><tr><th id="L207"><a href="#L207">207</a></th><td>#: ZevenOS beta 6</td></tr><tr><th id="L208"><a href="#L208">208</a></th><td>msgid "orient an BeOS, setzt auf Schnelligkeit, Kompatibilit�mit alten Rechnern und einfache Bedienung. Neuste Version. Folgende Pakete fehlen noch: about cyberghost deskbar encode fwizard gamer-bar gscrot iceshutdown magi yavtd zeebar "</td></tr><tr><th id="L209"><a href="#L209">209</a></th><td>msgstr "looks like BeOS, fast, working on old computers, simple to use. Newest version. These packages are missing: about cyberghost deskbar encode fwizard gamer-bar gscrot iceshutdown magi yavtd zeebar"</td></tr><tr><th id="L210"><a href="#L210">210</a></th><td></td></tr><tr><th id="L211"><a href="#L211">211</a></th><td>#: Videoschnitt</td></tr><tr><th id="L212"><a href="#L212">212</a></th><td>msgid "kino (f�steiger) und kdenlive (f�tgeschrittene)"</td></tr><tr><th id="L213"><a href="#L213">213</a></th><td>msgstr "kino (for beginners) and kdenlive (for advanced users)"</td></tr><tr><th id="L214"><a href="#L214">214</a></th><td></td></tr><tr><th id="L215"><a href="#L215">215</a></th><td>#: Lernsoftware</td></tr><tr><th id="L216"><a href="#L216">216</a></th><td>msgid "Edubuntu ohne Terminal-Server und Desktop-Bild. Edubuntu umfasst diverse Lernsoftware "</td></tr><tr><th id="L217"><a href="#L217">217</a></th><td>msgstr "Edubuntu without terminal-server and desktop-background. Edubuntu contains a lot of educational software."</td></tr><tr><th id="L218"><a href="#L218">218</a></th><td></td></tr><tr><th id="L219"><a href="#L219">219</a></th><td>#: texlive-full-deutsch</td></tr><tr><th id="L220"><a href="#L220">220</a></th><td>msgid "LaTeX ohne die ganzen Sprachpakete"</td></tr><tr><th id="L221"><a href="#L221">221</a></th><td>msgstr "LaTeX without language-packages"</td></tr><tr><th id="L222"><a href="#L222">222</a></th><td></td></tr><tr><th id="L223"><a href="#L223">223</a></th><td>#: Lernsoftware 6-10 Jahre</td></tr><tr><th id="L224"><a href="#L224">224</a></th><td>msgid "CD 'Tasmanische Schildkr� des Projekts Computerspende"</td></tr><tr><th id="L225"><a href="#L225">225</a></th><td>msgstr "CD-image of Pinguino version 0.1 (Tasmanische Tr�. Pinguino is a distribution based on Xfce for kids (elementary school)"</td></tr><tr><th id="L226"><a href="#L226">226</a></th><td></td></tr><tr><th id="L227"><a href="#L227">227</a></th><td>#: Grundlagen f�design</td></tr><tr><th id="L228"><a href="#L228">228</a></th><td>msgid "FTP Client, WYSIWYG Editor f�L, Editor f�"</td></tr><tr><th id="L229"><a href="#L229">229</a></th><td>msgstr "FTP Client, HTML-editor, CSS-Editor all WYSIWYG "</td></tr><tr><th id="L230"><a href="#L230">230</a></th><td></td></tr><tr><th id="L231"><a href="#L231">231</a></th><td>#: EEE-PC f�ulen</td></tr><tr><th id="L232"><a href="#L232">232</a></th><td>msgid "EEE-PC-Installation der Schule an der Hamburger Str. in Bremen"</td></tr><tr><th id="L233"><a href="#L233">233</a></th><td>msgstr "for EEE-PC-Installation for the school at Hamburger Str. in Bremen, Germany"</td></tr><tr><th id="L234"><a href="#L234">234</a></th><td></td></tr><tr><th id="L235"><a href="#L235">235</a></th><td>#: Internet-Radio</td></tr><tr><th id="L236"><a href="#L236">236</a></th><td>msgid "tunapie - Programm zum H� und Aufnehmen von Internetradio"</td></tr><tr><th id="L237"><a href="#L237">237</a></th><td>msgstr "tunapie - Appllication for listening and recording of streamed Internetradio"</td></tr><tr><th id="L238"><a href="#L238">238</a></th><td></td></tr><tr><th id="L239"><a href="#L239">239</a></th><td>#: Habu Netbook</td></tr><tr><th id="L240"><a href="#L240">240</a></th><td>msgid "Vorschlag f�book Schule Hamburger Str. in Bremen"</td></tr><tr><th id="L241"><a href="#L241">241</a></th><td>msgstr "suggestion for Netbook Installation at school Hamburger Str., Bremen, Germany"</td></tr><tr><th id="L242"><a href="#L242">242</a></th><td></td></tr><tr><th id="L243"><a href="#L243">243</a></th><td>#: Tinos erster versuch</td></tr><tr><th id="L244"><a href="#L244">244</a></th><td>msgid "google eart"</td></tr><tr><th id="L245"><a href="#L245">245</a></th><td>msgstr "GoogleEarth"</td></tr><tr><th id="L246"><a href="#L246">246</a></th><td></td></tr><tr><th id="L247"><a href="#L247">247</a></th><td>#: Oerm_Standard</td></tr><tr><th id="L248"><a href="#L248">248</a></th><td>msgid "meine Standardprogramme f� t�ichen Gebrauch"</td></tr><tr><th id="L249"><a href="#L249">249</a></th><td>msgstr "my standard applications for daily use"</td></tr><tr><th id="L250"><a href="#L250">250</a></th><td></td></tr><tr><th id="L251"><a href="#L251">251</a></th><td>#: �ersetzen</td></tr><tr><th id="L252"><a href="#L252">252</a></th><td>msgid "Vokabeltrainer, �ersetzungstools"</td></tr><tr><th id="L253"><a href="#L253">253</a></th><td>msgstr "trainee for vocabulary, translation-tools"</td></tr><tr><th id="L254"><a href="#L254">254</a></th><td></td></tr><tr><th id="L255"><a href="#L255">255</a></th><td>#: Mathematik</td></tr><tr><th id="L256"><a href="#L256">256</a></th><td>msgid "Erstmal Geometrie und Statistik."</td></tr><tr><th id="L257"><a href="#L257">257</a></th><td>msgstr "Geometry and statistics only."</td></tr><tr><th id="L258"><a href="#L258">258</a></th><td></td></tr><tr><th id="L259"><a href="#L259">259</a></th><td>#: Installation HU-Berlin Rechner Berlin</td></tr><tr><th id="L260"><a href="#L260">260</a></th><td>msgid ""</td></tr><tr><th id="L261"><a href="#L261">261</a></th><td>"Stand des Rechners vom 29.06.09\n"</td></tr><tr><th id="L262"><a href="#L262">262</a></th><td>"Vorbereitung auf update"</td></tr><tr><th id="L263"><a href="#L263">263</a></th><td>msgstr "State of the computer from June 29th 0"</td></tr><tr><th id="L264"><a href="#L264">264</a></th><td></td></tr><tr><th id="L265"><a href="#L265">265</a></th><td>#: Auswertungen und Statistiken</td></tr><tr><th id="L266"><a href="#L266">266</a></th><td>msgid "Tools f�tistiken, Auswertungen, Vokabeltrainer und Charts f�steswissenschaftler."</td></tr><tr><th id="L267"><a href="#L267">267</a></th><td>msgstr "Tools for statistics, analysis, vocabular training and charts for humanists."</td></tr><tr><th id="L268"><a href="#L268">268</a></th><td></td></tr><tr><th id="L269"><a href="#L269">269</a></th><td>#: Caros Netbook</td></tr><tr><th id="L270"><a href="#L270">270</a></th><td>msgid "Minimal-Software f�os Netbook"</td></tr><tr><th id="L271"><a href="#L271">271</a></th><td>msgstr "minimal software for Caros EEE-PC"</td></tr><tr><th id="L272"><a href="#L272">272</a></th><td></td></tr><tr><th id="L273"><a href="#L273">273</a></th><td>#: timos b�3</td></tr><tr><th id="L274"><a href="#L274">274</a></th><td>msgid "."</td></tr><tr><th id="L275"><a href="#L275">275</a></th><td>msgstr "."</td></tr><tr><th id="L276"><a href="#L276">276</a></th><td></td></tr><tr><th id="L277"><a href="#L277">277</a></th><td>#: Audio-Grundlagen64</td></tr><tr><th id="L278"><a href="#L278">278</a></th><td>msgid "Audio-Grundlagen f�Bit"</td></tr><tr><th id="L279"><a href="#L279">279</a></th><td>msgstr "Basic audio (64 bit)"</td></tr><tr><th id="L280"><a href="#L280">280</a></th><td></td></tr><tr><th id="L281"><a href="#L281">281</a></th><td>#: bernds KDE 4.2</td></tr><tr><th id="L282"><a href="#L282">282</a></th><td>msgid "KDE 4.2 Desktop mit viel Multimedia (Videoschnitt etc.)"</td></tr><tr><th id="L283"><a href="#L283">283</a></th><td>msgstr "KDE 4.2 with a lot of multimedia-software (e.g. video cutting and more)"</td></tr><tr><th id="L284"><a href="#L284">284</a></th><td></td></tr><tr><th id="L285"><a href="#L285">285</a></th><td>#: Azd325's B�msgid "rtets"</td></tr><tr><th id="L286"><a href="#L286">286</a></th><td>msgstr "rtets"</td></tr><tr><th id="L287"><a href="#L287">287</a></th><td></td></tr><tr><th id="L288"><a href="#L288">288</a></th><td>#: Ruby on Rails mit Mysql</td></tr><tr><th id="L289"><a href="#L289">289</a></th><td>msgid "Das Web2.0-Framework Ruby on Rails plus die Mysql-Datenbank, die besser skaliert als die standardm�g von Rails benutzte Datenbank sqlite3"</td></tr><tr><th id="L290"><a href="#L290">290</a></th><td>msgstr "Web2.0-framework Ruby on Rails with MySql-database, which scales better than sqlite3-database."</td></tr><tr><th id="L291"><a href="#L291">291</a></th><td></td></tr><tr><th id="L292"><a href="#L292">292</a></th><td>#: hets-dev</td></tr><tr><th id="L293"><a href="#L293">293</a></th><td>msgid "Entwicklungswerkzeuge f�s, siehe http://www.dfki.de/sks/hets"</td></tr><tr><th id="L294"><a href="#L294">294</a></th><td>msgstr "development-tools for Hets see http://www.dfki.de/sks/hets (english)"</td></tr><tr><th id="L295"><a href="#L295">295</a></th><td></td></tr><tr><th id="L296"><a href="#L296">296</a></th><td>#: Ubuntu Netbook Remix</td></tr><tr><th id="L297"><a href="#L297">297</a></th><td>msgid "Erg�ung f�ntu mit GNOME Desktop f�sere Darstellung und Bedienbarkeit auf kleineren Displays. Siehe http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix . Unter Hardy und Intrepid bitte noch maximus zum Autostart hinzuf�</td></tr><tr><th id="L298"><a href="#L298">298</a></th><td>msgstr "Add-on for Ubuntus GNOME-desktop for better use on small displays see https://launchpad.net/netbook-remix . Hardy- and Intrepid-users: add maximus to the autostart. "</td></tr><tr><th id="L299"><a href="#L299">299</a></th><td></td></tr><tr><th id="L300"><a href="#L300">300</a></th><td>#: Professionell Musik machen</td></tr><tr><th id="L301"><a href="#L301">301</a></th><td>msgid "entnommen aus einer Diskussion zu Ubuntu-Studio und professionell Musik machen"</td></tr><tr><th id="L302"><a href="#L302">302</a></th><td>msgstr "part of discussion about Ubuntu-Studio and professinal musicians"</td></tr><tr><th id="L303"><a href="#L303">303</a></th><td></td></tr><tr><th id="L304"><a href="#L304">304</a></th><td>#: Chemie</td></tr><tr><th id="L305"><a href="#L305">305</a></th><td>msgid "Periodensystem und Chemieprogramme"</td></tr><tr><th id="L306"><a href="#L306">306</a></th><td>msgstr "periodical system and applications about chemics"</td></tr><tr><th id="L307"><a href="#L307">307</a></th><td></td></tr><tr><th id="L308"><a href="#L308">308</a></th><td>#: Grundlagen</td></tr><tr><th id="L309"><a href="#L309">309</a></th><td>msgid "Die Grundlagen des Filesharings: Unterst� von Peer-to-peer, BitTorrent, eDonkey, Kademlia und Gnutella "</td></tr><tr><th id="L310"><a href="#L310">310</a></th><td>msgstr "Basics of filesharings: support for peer-to-peer, BitTorrent, eDonkey, Kademlia und Gnutella."</td></tr><tr><th id="L311"><a href="#L311">311</a></th><td></td></tr><tr><th id="L312"><a href="#L312">312</a></th><td>#: Java Programmierumgebung</td></tr><tr><th id="L313"><a href="#L313">313</a></th><td>msgid "Eine Programmierumgebung f�/der Java-EntwicklerIn mit der IDE Eclipse"</td></tr><tr><th id="L314"><a href="#L314">314</a></th><td>msgstr "development-kit for Java-developers with Eclipse"</td></tr><tr><th id="L315"><a href="#L315">315</a></th><td></td></tr><tr><th id="L316"><a href="#L316">316</a></th><td>#: Text Browser</td></tr><tr><th id="L317"><a href="#L317">317</a></th><td>msgid "Textbasierter Browser f�ntu"</td></tr><tr><th id="L318"><a href="#L318">318</a></th><td>msgstr "browser in textmode"</td></tr><tr><th id="L319"><a href="#L319">319</a></th><td></td></tr><tr><th id="L320"><a href="#L320">320</a></th><td>#: Mindmaps und Organisationsdiagramme</td></tr><tr><th id="L321"><a href="#L321">321</a></th><td>msgid "Mindmaps und Organisationsdiagramme anschauen und erstellen"</td></tr><tr><th id="L322"><a href="#L322">322</a></th><td>msgstr "viewer and editor for mindmaps and organigrams"</td></tr><tr><th id="L323"><a href="#L323">323</a></th><td></td></tr><tr><th id="L324"><a href="#L324">324</a></th><td>#: neu</td></tr><tr><th id="L325"><a href="#L325">325</a></th><td>msgid "am testen"</td></tr><tr><th id="L326"><a href="#L326">326</a></th><td>msgstr "testing"</td></tr><tr><th id="L327"><a href="#L327">327</a></th><td></td></tr><tr><th id="L328"><a href="#L328">328</a></th><td>#: Ruby-Programmierung</td></tr><tr><th id="L329"><a href="#L329">329</a></th><td>msgid "Basics f�y-Programmierung"</td></tr><tr><th id="L330"><a href="#L330">330</a></th><td>msgstr "basics for Ruby-coding"</td></tr><tr><th id="L331"><a href="#L331">331</a></th><td></td></tr><tr><th id="L332"><a href="#L332">332</a></th><td>#: ljk�rfgkuzdr</td></tr><tr><th id="L333"><a href="#L333">333</a></th><td>msgid "qwertz"</td></tr><tr><th id="L334"><a href="#L334">334</a></th><td>msgstr "qwertz - the layout for german keyboards"</td></tr><tr><th id="L335"><a href="#L335">335</a></th><td></td></tr><tr><th id="L336"><a href="#L336">336</a></th><td>#: minimal-ubuntu</td></tr><tr><th id="L337"><a href="#L337">337</a></th><td>msgid "Minimierte Version von ubuntu-desktop (ohne OpenOffice, Evolution, Drucker, asiatische Fonts u.a.), f�puter mit wenig Platz."</td></tr><tr><th id="L338"><a href="#L338">338</a></th><td>msgstr "Minimized version of Ubuntu-desktop (without OpenOffice, Evolution, printers, asian Fonts and other) for computers with poor space on harddisks."</td></tr><tr><th id="L339"><a href="#L339">339</a></th><td></td></tr><tr><th id="L340"><a href="#L340">340</a></th><td>#: gnome-panel-light</td></tr><tr><th id="L341"><a href="#L341">341</a></th><td>msgid "gnome-panel ohne evolution"</td></tr><tr><th id="L342"><a href="#L342">342</a></th><td>msgstr "gnome-panel without evolution"</td></tr><tr><th id="L343"><a href="#L343">343</a></th><td></td></tr><tr><th id="L344"><a href="#L344">344</a></th><td>#: mein testbuendel</td></tr><tr><th id="L345"><a href="#L345">345</a></th><td>msgid "mein testbuendel"</td></tr><tr><th id="L346"><a href="#L346">346</a></th><td>msgstr "my testbundle"</td></tr><tr><th id="L347"><a href="#L347">347</a></th><td></td></tr><tr><th id="L348"><a href="#L348">348</a></th><td>#: Python-Programmierung</td></tr><tr><th id="L349"><a href="#L349">349</a></th><td>msgid "Python + IDE"</td></tr><tr><th id="L350"><a href="#L350">350</a></th><td>msgstr "Python + IDE"</td></tr><tr><th id="L351"><a href="#L351">351</a></th><td></td></tr><tr><th id="L352"><a href="#L352">352</a></th><td>#: Gubuntu</td></tr><tr><th id="L353"><a href="#L353">353</a></th><td>msgid "Gubuntu, leichtgewichtiges Ubuntu zur Installertion auf Spielepcs f�r performance."</td></tr><tr><th id="L354"><a href="#L354">354</a></th><td>msgstr "Gubuntu, lightweight Ubuntu for installation for gamers with good performance"</td></tr><tr><th id="L355"><a href="#L355">355</a></th><td></td></tr><tr><th id="L356"><a href="#L356">356</a></th><td>#: Desktop PC</td></tr><tr><th id="L357"><a href="#L357">357</a></th><td>msgid "Das sind die Programme, die ich standardm�g auf meinem Desktop PC installiere"</td></tr><tr><th id="L358"><a href="#L358">358</a></th><td>msgstr "standard-installation on my desktop PC"</td></tr><tr><th id="L359"><a href="#L359">359</a></th><td></td></tr><tr><th id="L360"><a href="#L360">360</a></th><td>#: communtu-dev</td></tr><tr><th id="L361"><a href="#L361">361</a></th><td>msgid "Entwicklungswerkzeuge f�muntu"</td></tr><tr><th id="L362"><a href="#L362">362</a></th><td>msgstr "development-tools for Communtu"</td></tr><tr><th id="L363"><a href="#L363">363</a></th><td></td></tr><tr><th id="L364"><a href="#L364">364</a></th><td>#: timos b�2</td></tr><tr><th id="L365"><a href="#L365">365</a></th><td>msgid "."</td></tr><tr><th id="L366"><a href="#L366">366</a></th><td>msgstr "."</td></tr><tr><th id="L367"><a href="#L367">367</a></th><td></td></tr><tr><th id="L368"><a href="#L368">368</a></th><td>#: torstens pakete</td></tr><tr><th id="L369"><a href="#L369">369</a></th><td>msgid "Torstens Rechnerinstallation Juni 2009 "</td></tr><tr><th id="L370"><a href="#L370">370</a></th><td>msgstr "Torsten's computer installation June 2009"</td></tr><tr><th id="L371"><a href="#L371">371</a></th><td></td></tr><tr><th id="L372"><a href="#L372">372</a></th><td>#: Maltes Installation</td></tr><tr><th id="L373"><a href="#L373">373</a></th><td>msgid "Pragmatisch-n�he Programme."</td></tr><tr><th id="L374"><a href="#L374">374</a></th><td>msgstr "Pragmatic and useful programs."</td></tr><tr><th id="L375"><a href="#L375">375</a></th><td></td></tr><tr><th id="L376"><a href="#L376">376</a></th><td>#: test</td></tr><tr><th id="L377"><a href="#L377">377</a></th><td>msgid "bekktest"</td></tr><tr><th id="L378"><a href="#L378">378</a></th><td>msgstr "bekktest"</td></tr><tr><th id="L379"><a href="#L379">379</a></th><td></td></tr><tr><th id="L380"><a href="#L380">380</a></th><td>#: vpn</td></tr><tr><th id="L381"><a href="#L381">381</a></th><td>msgid "Pakete f�-Client, siehe http://wiki.ubuntuusers.de/Network-Manager/VPN_Plugins"</td></tr><tr><th id="L382"><a href="#L382">382</a></th><td>msgstr "packages for VPN-clients see http://ubuntuforums.org/showthread.php?t=459193"</td></tr><tr><th id="L383"><a href="#L383">383</a></th><td></td></tr><tr><th id="L384"><a href="#L384">384</a></th><td>#: B�90526</td></tr><tr><th id="L385"><a href="#L385">385</a></th><td>msgid "Meine B�ammlung vom 26.MAI 2009"</td></tr><tr><th id="L386"><a href="#L386">386</a></th><td>msgstr "my bundles from May, 26th 2009"</td></tr><tr><th id="L387"><a href="#L387">387</a></th><td></td></tr><tr><th id="L388"><a href="#L388">388</a></th><td>#: Debian-Metapaket-Bau</td></tr><tr><th id="L389"><a href="#L389">389</a></th><td>msgid "Pakete, die f� Bau von Debian-Metapakten bei Communtu gebraucht werden."</td></tr><tr><th id="L390"><a href="#L390">390</a></th><td>msgstr "packages, which are used for the Debian-metapackages, used by Communtu"</td></tr><tr><th id="L391"><a href="#L391">391</a></th><td></td></tr><tr><th id="L392"><a href="#L392">392</a></th><td>#: chris</td></tr><tr><th id="L393"><a href="#L393">393</a></th><td>msgid "Installationderivat von Chris"</td></tr><tr><th id="L394"><a href="#L394">394</a></th><td>msgstr "Chris' installation derivative"</td></tr><tr><th id="L395"><a href="#L395">395</a></th><td></td></tr><tr><th id="L396"><a href="#L396">396</a></th><td>#: Janas B�msgid "das ist einfach mein privates b� f�t unter keine besondere kategorie."</td></tr><tr><th id="L397"><a href="#L397">397</a></th><td>msgstr "Only my private bundle, out of any category."</td></tr><tr><th id="L398"><a href="#L398">398</a></th><td></td></tr><tr><th id="L399"><a href="#L399">399</a></th><td>#: LinuxMint6_0</td></tr><tr><th id="L400"><a href="#L400">400</a></th><td>msgid "LinuxMint6.0 (standardinstallation aus LinuxMint-6.iso) +deborphan"</td></tr><tr><th id="L401"><a href="#L401">401</a></th><td>msgstr "Desktop based on LinuxMint"</td></tr><tr><th id="L402"><a href="#L402">402</a></th><td></td></tr><tr><th id="L403"><a href="#L403">403</a></th><td>#: deborphan</td></tr><tr><th id="L404"><a href="#L404">404</a></th><td>msgid "deborphan"</td></tr><tr><th id="L405"><a href="#L405">405</a></th><td>msgstr "deborphan"</td></tr><tr><th id="L406"><a href="#L406">406</a></th><td></td></tr><tr><th id="L407"><a href="#L407">407</a></th><td>#: InstallationDurutti</td></tr><tr><th id="L408"><a href="#L408">408</a></th><td>msgid "Die vollst�ige Installation auf durutti (gnome)."</td></tr><tr><th id="L409"><a href="#L409">409</a></th><td>msgstr "complete installation on durutti PC"</td></tr><tr><th id="L410"><a href="#L410">410</a></th><td></td></tr><tr><th id="L411"><a href="#L411">411</a></th><td>#: timos Spiele</td></tr><tr><th id="L412"><a href="#L412">412</a></th><td>msgid ""</td></tr><tr><th id="L413"><a href="#L413">413</a></th><td>"Battle for Wesnoth + Map editor\n"</td></tr><tr><th id="L414"><a href="#L414">414</a></th><td>"ZSNES - SNES emulator"</td></tr><tr><th id="L415"><a href="#L415">415</a></th><td>msgstr "package of Battle for Wesnoth (with editor)"</td></tr><tr><th id="L416"><a href="#L416">416</a></th><td></td></tr><tr><th id="L417"><a href="#L417">417</a></th><td>#: Katrins Installation</td></tr><tr><th id="L418"><a href="#L418">418</a></th><td>msgid "Ann-Katrins Installation"</td></tr><tr><th id="L419"><a href="#L419">419</a></th><td>msgstr "installation of Ann-Katrins PC"</td></tr><tr><th id="L420"><a href="#L420">420</a></th><td></td></tr><tr><th id="L421"><a href="#L421">421</a></th><td>#: timos B�msgid "B�vom 20.05.09"</td></tr><tr><th id="L422"><a href="#L422">422</a></th><td>msgstr "bundle from May, 20th 2009"</td></tr><tr><th id="L423"><a href="#L423">423</a></th><td></td></tr><tr><th id="L424"><a href="#L424">424</a></th><td>#: Uebersetzen</td></tr><tr><th id="L425"><a href="#L425">425</a></th><td>msgid "Vokabeltrainer, �ersetzungstools"</td></tr><tr><th id="L426"><a href="#L426">426</a></th><td>msgstr "vokabulary traineR, translation tools"</td></tr><tr><th id="L427"><a href="#L427">427</a></th><td></td></tr><tr><th id="L428"><a href="#L428">428</a></th><td>#: Tills Standardinstallation</td></tr><tr><th id="L429"><a href="#L429">429</a></th><td>msgid "Tills Standardinstallation. Moderate Unterst� von Grafik und Multimedia und LaTeX. Entwicklung von Communtu (in Ruby on Rails) und Hets (in Haskell)."</td></tr><tr><th id="L430"><a href="#L430">430</a></th><td>msgstr "Tills installation (standard) with moderate assistance on graphics and multimedia also LaTeX. Development of Communtu (in Ruby on Rails) and Hets (in Haskell)."</td></tr><tr><th id="L431"><a href="#L431">431</a></th><td></td></tr><tr><th id="L432"><a href="#L432">432</a></th><td>#: Internet-Grundlagen Linuxtag-Demo</td></tr><tr><th id="L433"><a href="#L433">433</a></th><td>msgid "Mailen, Telefonieren, RSS-Feed"</td></tr><tr><th id="L434"><a href="#L434">434</a></th><td>msgstr "e-mailing, phoning, RSS-feed"</td></tr><tr><th id="L435"><a href="#L435">435</a></th><td></td></tr><tr><th id="L436"><a href="#L436">436</a></th><td>#: Tills Installation</td></tr><tr><th id="L437"><a href="#L437">437</a></th><td>msgid "Tills Programme"</td></tr><tr><th id="L438"><a href="#L438">438</a></th><td>msgstr "Till's programs"</td></tr><tr><th id="L439"><a href="#L439">439</a></th><td></td></tr><tr><th id="L440"><a href="#L440">440</a></th><td>#: Mp3 tagging</td></tr><tr><th id="L441"><a href="#L441">441</a></th><td>msgid "M3-Tagging"</td></tr><tr><th id="L442"><a href="#L442">442</a></th><td>msgstr "MP3 tagging"</td></tr><tr><th id="L443"><a href="#L443">443</a></th><td></td></tr><tr><th id="L444"><a href="#L444">444</a></th><td>#: pakonb.panticz.de</td></tr><tr><th id="L445"><a href="#L445">445</a></th><td>msgid "pakonb default installation"</td></tr><tr><th id="L446"><a href="#L446">446</a></th><td>msgstr "pakonb default installation"</td></tr><tr><th id="L447"><a href="#L447">447</a></th><td></td></tr><tr><th id="L448"><a href="#L448">448</a></th><td>#: Neues B�</td></tr><tr><th id="L449"><a href="#L449">449</a></th><td>msgid "Ein kleines Testb�vom Linuxtag"</td></tr><tr><th id="L450"><a href="#L450">450</a></th><td>msgstr "A small testbundle from the Linuxtag"</td></tr><tr><th id="L451"><a href="#L451">451</a></th><td></td></tr><tr><th id="L452"><a href="#L452">452</a></th><td>#: Video</td></tr><tr><th id="L453"><a href="#L453">453</a></th><td>msgid "Nun geht es los!"</td></tr><tr><th id="L454"><a href="#L454">454</a></th><td>msgstr "Let's get started!"</td></tr><tr><th id="L455"><a href="#L455">455</a></th><td></td></tr><tr><th id="L456"><a href="#L456">456</a></th><td>#: v</td></tr><tr><th id="L457"><a href="#L457">457</a></th><td>msgid "s"</td></tr><tr><th id="L458"><a href="#L458">458</a></th><td>msgstr "s"</td></tr><tr><th id="L459"><a href="#L459">459</a></th><td></td></tr><tr><th id="L460"><a href="#L460">460</a></th><td>#: test-spiele</td></tr><tr><th id="L461"><a href="#L461">461</a></th><td>msgid "blah blah"</td></tr><tr><th id="L462"><a href="#L462">462</a></th><td>msgstr "blah blah"</td></tr><tr><th id="L463"><a href="#L463">463</a></th><td></td></tr><tr><th id="L464"><a href="#L464">464</a></th><td>#: Test120000</td></tr><tr><th id="L465"><a href="#L465">465</a></th><td>msgid "test"</td></tr><tr><th id="L466"><a href="#L466">466</a></th><td>msgstr "test"</td></tr><tr><th id="L467"><a href="#L467">467</a></th><td></td></tr><tr><th id="L468"><a href="#L468">468</a></th><td>#: My Dekstop</td></tr><tr><th id="L469"><a href="#L469">469</a></th><td>msgid "12345"</td></tr><tr><th id="L470"><a href="#L470">470</a></th><td>msgstr "12345"</td></tr><tr><th id="L471"><a href="#L471">471</a></th><td></td></tr><tr><th id="L472"><a href="#L472">472</a></th><td>#: ignore</td></tr><tr><th id="L473"><a href="#L473">473</a></th><td>msgid "test"</td></tr><tr><th id="L474"><a href="#L474">474</a></th><td>msgstr "test"</td></tr><tr><th id="L475"><a href="#L475">475</a></th><td></td></tr><tr><th id="L476"><a href="#L476">476</a></th><td>#: BerndsKDE42Desktop</td></tr><tr><th id="L477"><a href="#L477">477</a></th><td>msgid "Bernds Desktop (viel MM)"</td></tr><tr><th id="L478"><a href="#L478">478</a></th><td>msgstr "Bernd's desktop (much MM)"</td></tr><tr><th id="L479"><a href="#L479">479</a></th><td></td></tr><tr><th id="L480"><a href="#L480">480</a></th><td>#: Local Web Server</td></tr><tr><th id="L481"><a href="#L481">481</a></th><td>msgid "Lokaler Web-Server und Datenbank"</td></tr><tr><th id="L482"><a href="#L482">482</a></th><td>msgstr "Local webserver and database"</td></tr><tr><th id="L483"><a href="#L483">483</a></th><td></td></tr><tr><th id="L484"><a href="#L484">484</a></th><td>#: will</td></tr><tr><th id="L485"><a href="#L485">485</a></th><td>msgid "will"</td></tr><tr><th id="L486"><a href="#L486">486</a></th><td>msgstr "will"</td></tr><tr><th id="L487"><a href="#L487">487</a></th><td></td></tr><tr><th id="L488"><a href="#L488">488</a></th><td>#: timotestb�msgid "."</td></tr><tr><th id="L489"><a href="#L489">489</a></th><td>msgstr "."</td></tr><tr><th id="L490"><a href="#L490">490</a></th><td></td></tr><tr><th id="L491"><a href="#L491">491</a></th><td>#: willfq</td></tr><tr><th id="L492"><a href="#L492">492</a></th><td>msgid "willfq"</td></tr><tr><th id="L493"><a href="#L493">493</a></th><td>msgstr "willfq"</td></tr><tr><th id="L494"><a href="#L494">494</a></th><td></td></tr><tr><th id="L495"><a href="#L495">495</a></th><td>#: firefoxpdf</td></tr><tr><th id="L496"><a href="#L496">496</a></th><td>msgid "Internet tools"</td></tr><tr><th id="L497"><a href="#L497">497</a></th><td>msgstr "Internet tools"</td></tr><tr><th id="L498"><a href="#L498">498</a></th><td></td></tr><tr><th id="L499"><a href="#L499">499</a></th><td>#: Metapackage Isaac Ardilla</td></tr><tr><th id="L500"><a href="#L500">500</a></th><td>msgid "Metapackage Isaac Ardila"</td></tr><tr><th id="L501"><a href="#L501">501</a></th><td>msgstr "Metapackage Isaac Ardila"</td></tr><tr><th id="L502"><a href="#L502">502</a></th><td></td></tr><tr><th id="L503"><a href="#L503">503</a></th><td>#: test_internet</td></tr><tr><th id="L504"><a href="#L504">504</a></th><td>msgid "uzhz"</td></tr><tr><th id="L505"><a href="#L505">505</a></th><td>msgstr "uzhz"</td></tr><tr><th id="L506"><a href="#L506">506</a></th><td></td></tr><tr><th id="L507"><a href="#L507">507</a></th><td>#: Metapackage Isaac Thinki</td></tr><tr><th id="L508"><a href="#L508">508</a></th><td>msgid "Metapackage Isaac Thinki"</td></tr><tr><th id="L509"><a href="#L509">509</a></th><td>msgstr "Metapackage Isaac Thinki"</td></tr><tr><th id="L510"><a href="#L510">510</a></th><td></td></tr><tr><th id="L511"><a href="#L511">511</a></th><td>#: testtest</td></tr><tr><th id="L512"><a href="#L512">512</a></th><td>msgid "ghjgjh"</td></tr><tr><th id="L513"><a href="#L513">513</a></th><td>msgstr "ghjgjh"</td></tr><tr><th id="L514"><a href="#L514">514</a></th><td></td></tr><tr><th id="L515"><a href="#L515">515</a></th><td>#: Abiword</td></tr><tr><th id="L516"><a href="#L516">516</a></th><td>msgid "Abiword"</td></tr><tr><th id="L517"><a href="#L517">517</a></th><td>msgstr "Abiword"</td></tr><tr><th id="L518"><a href="#L518">518</a></th><td></td></tr><tr><th id="L519"><a href="#L519">519</a></th><td>#: Tills Installation2</td></tr><tr><th id="L520"><a href="#L520">520</a></th><td>msgid "Tills Komplettinstallation"</td></tr><tr><th id="L521"><a href="#L521">521</a></th><td>msgstr "Till's complete installation"</td></tr><tr><th id="L522"><a href="#L522">522</a></th><td></td></tr><tr><th id="L523"><a href="#L523">523</a></th><td>#: Social media</td></tr><tr><th id="L524"><a href="#L524">524</a></th><td>msgid "Grundstandard im Bereich Social Media"</td></tr><tr><th id="L525"><a href="#L525">525</a></th><td>msgstr "Basics in the social media field"</td></tr><tr><th id="L526"><a href="#L526">526</a></th><td></td></tr><tr><th id="L527"><a href="#L527">527</a></th><td>#: Tills Browser</td></tr><tr><th id="L528"><a href="#L528">528</a></th><td>msgid "Eine gute Browser-Variation zum Austesten von Webdesigns"</td></tr><tr><th id="L529"><a href="#L529">529</a></th><td>msgstr "A good browser for testing webdesigns"</td></tr><tr><th id="L530"><a href="#L530">530</a></th><td></td></tr><tr><th id="L531"><a href="#L531">531</a></th><td>#: KDE-Games</td></tr><tr><th id="L532"><a href="#L532">532</a></th><td>msgid "Spiele f�"</td></tr><tr><th id="L533"><a href="#L533">533</a></th><td>msgstr "Games for KDE"</td></tr><tr><th id="L534"><a href="#L534">534</a></th><td></td></tr><tr><th id="L535"><a href="#L535">535</a></th><td>#: Nach Installation</td></tr><tr><th id="L536"><a href="#L536">536</a></th><td>msgid "Einige Programme, die ich nach jeder Neuinstallation installiere."</td></tr><tr><th id="L537"><a href="#L537">537</a></th><td>msgstr "Some programs I install after each installation."</td></tr><tr><th id="L538"><a href="#L538">538</a></th><td></td></tr><tr><th id="L539"><a href="#L539">539</a></th><td>#: Juttas Buendel</td></tr><tr><th id="L540"><a href="#L540">540</a></th><td>msgid "Dies ist das Jutta Programmierbundle."</td></tr><tr><th id="L541"><a href="#L541">541</a></th><td>msgstr "This is Jutta's programming bundle."</td></tr><tr><th id="L542"><a href="#L542">542</a></th><td></td></tr><tr><th id="L543"><a href="#L543">543</a></th><td>#: teat</td></tr><tr><th id="L544"><a href="#L544">544</a></th><td>msgid "sat"</td></tr><tr><th id="L545"><a href="#L545">545</a></th><td>msgstr "sat"</td></tr><tr><th id="L546"><a href="#L546">546</a></th><td></td></tr><tr><th id="L547"><a href="#L547">547</a></th><td>#: Tills neue Installation</td></tr><tr><th id="L548"><a href="#L548">548</a></th><td>msgid "Tills Installation, erstellt beim Upgrade von Hardy auf Jaunty"</td></tr><tr><th id="L549"><a href="#L549">549</a></th><td>msgstr "Till's installation, created while upgrading from Hardy to Jaunty"</td></tr><tr><th id="L550"><a href="#L550">550</a></th><td></td></tr><tr><th id="L551"><a href="#L551">551</a></th><td>#: Grafik</td></tr><tr><th id="L552"><a href="#L552">552</a></th><td>msgid "dsfsfd"</td></tr><tr><th id="L553"><a href="#L553">553</a></th><td>msgstr "dsfsfd"</td></tr><tr><th id="L554"><a href="#L554">554</a></th><td></td></tr><tr><th id="L555"><a href="#L555">555</a></th><td>#: freemind-plugins</td></tr><tr><th id="L556"><a href="#L556">556</a></th><td>msgid "N�he Plugins f�emind, die aber gewisse Paketierungsprobleme aufweisen."</td></tr><tr><th id="L557"><a href="#L557">557</a></th><td>msgstr "Useful plugins for freemind show some problems with the package assembling."</td></tr><tr><th id="L558"><a href="#L558">558</a></th><td></td></tr><tr><th id="L559"><a href="#L559">559</a></th><td>#: Musikunterricht</td></tr><tr><th id="L560"><a href="#L560">560</a></th><td>msgid "Gute Software f� Musikunterricht."</td></tr><tr><th id="L561"><a href="#L561">561</a></th><td>msgstr "Good software for music lessons."</td></tr><tr><th id="L562"><a href="#L562">562</a></th><td></td></tr><tr><th id="L563"><a href="#L563">563</a></th><td>#: aligiii1968's B�msgid "test"</td></tr><tr><th id="L564"><a href="#L564">564</a></th><td>msgstr "test"</td></tr><tr><th id="L565"><a href="#L565">565</a></th><td></td></tr><tr><th id="L566"><a href="#L566">566</a></th><td>#: Strategie</td></tr><tr><th id="L567"><a href="#L567">567</a></th><td>msgid "Dieses B�enth� verschiedene Strategie-Spiele."</td></tr><tr><th id="L568"><a href="#L568">568</a></th><td>msgstr "This bundle contains several strategy games."</td></tr><tr><th id="L569"><a href="#L569">569</a></th><td></td></tr><tr><th id="L570"><a href="#L570">570</a></th><td>#: Simulation</td></tr><tr><th id="L571"><a href="#L571">571</a></th><td>msgid "Dieses B�enth� verschiedene Simulationen."</td></tr><tr><th id="L572"><a href="#L572">572</a></th><td>msgstr "This bundle contains several simulation games."</td></tr><tr><th id="L573"><a href="#L573">573</a></th><td></td></tr><tr><th id="L574"><a href="#L574">574</a></th><td>#: Musik</td></tr><tr><th id="L575"><a href="#L575">575</a></th><td>msgid "Dieses B�enth� momentan nur das Spiel \"Frets on Fire\", ein Guitar Hero Klon."</td></tr><tr><th id="L576"><a href="#L576">576</a></th><td>msgstr "This bundle yet only contains \"Frets on Fire\", a Guitar-Hero clone."</td></tr><tr><th id="L577"><a href="#L577">577</a></th><td></td></tr><tr><th id="L578"><a href="#L578">578</a></th><td>#: Hount</td></tr><tr><th id="L579"><a href="#L579">579</a></th><td>msgid "..."</td></tr><tr><th id="L580"><a href="#L580">580</a></th><td>msgstr "..."</td></tr><tr><th id="L581"><a href="#L581">581</a></th><td></td></tr><tr><th id="L582"><a href="#L582">582</a></th><td>#: Puzzle</td></tr><tr><th id="L583"><a href="#L583">583</a></th><td>msgid "Dieses B�beinhaltet verschiedene Puzzlespiele."</td></tr><tr><th id="L584"><a href="#L584">584</a></th><td>msgstr "This bundle contains several puzzle games."</td></tr><tr><th id="L585"><a href="#L585">585</a></th><td></td></tr><tr><th id="L586"><a href="#L586">586</a></th><td>#: Space</td></tr><tr><th id="L587"><a href="#L587">587</a></th><td>msgid "Dieses B�enth� Spiele die im Weltraum angesiedelt sind."</td></tr><tr><th id="L588"><a href="#L588">588</a></th><td>msgstr "This bundle contains games which setting is placed in space."</td></tr><tr><th id="L589"><a href="#L589">589</a></th><td></td></tr><tr><th id="L590"><a href="#L590">590</a></th><td>#: Casi Bundle</td></tr><tr><th id="L591"><a href="#L591">591</a></th><td>msgid "my linux"</td></tr><tr><th id="L592"><a href="#L592">592</a></th><td>msgstr "my linux"</td></tr><tr><th id="L593"><a href="#L593">593</a></th><td></td></tr><tr><th id="L594"><a href="#L594">594</a></th><td>#: Maltes Installation 2</td></tr><tr><th id="L595"><a href="#L595">595</a></th><td>msgid "Maltes Installation zum Update auf 9.10"</td></tr><tr><th id="L596"><a href="#L596">596</a></th><td>msgstr "Malte's installation for an update to 9.10"</td></tr><tr><th id="L597"><a href="#L597">597</a></th><td></td></tr><tr><th id="L598"><a href="#L598">598</a></th><td>#: Thinki-2009-10-28</td></tr><tr><th id="L599"><a href="#L599">599</a></th><td>msgid "Vorbereitung f� Update auf Ubuntu 09-10"</td></tr><tr><th id="L600"><a href="#L600">600</a></th><td>msgstr "preparation for an update to Ubuntu 09-10"</td></tr><tr><th id="L601"><a href="#L601">601</a></th><td></td></tr><tr><th id="L602"><a href="#L602">602</a></th><td>#: AZ-Online</td></tr><tr><th id="L603"><a href="#L603">603</a></th><td>msgid "Online-Tools"</td></tr><tr><th id="L604"><a href="#L604">604</a></th><td>msgstr "Online-Tools"</td></tr><tr><th id="L605"><a href="#L605">605</a></th><td></td></tr><tr><th id="L606"><a href="#L606">606</a></th><td>#: Uwe's Installation</td></tr><tr><th id="L607"><a href="#L607">607</a></th><td>msgid "Migration von Jaunty 32bit zu Karmic 64bit"</td></tr><tr><th id="L608"><a href="#L608">608</a></th><td>msgstr "Migration from Jaunty 32bit to Karmic 64bit"</td></tr><tr><th id="L609"><a href="#L609">609</a></th><td></td></tr><tr><th id="L610"><a href="#L610">610</a></th><td>#: n�msgid "tools"</td></tr><tr><th id="L611"><a href="#L611">611</a></th><td>msgstr "tools"</td></tr><tr><th id="L612"><a href="#L612">612</a></th><td></td></tr><tr><th id="L613"><a href="#L613">613</a></th><td>#: Musik unterrichten</td></tr><tr><th id="L614"><a href="#L614">614</a></th><td>msgid "in der Schule bew�t"</td></tr><tr><th id="L615"><a href="#L615">615</a></th><td>msgstr "approved on school"</td></tr><tr><th id="L616"><a href="#L616">616</a></th><td></td></tr><tr><th id="L617"><a href="#L617">617</a></th><td>#: meinegrafik</td></tr><tr><th id="L618"><a href="#L618">618</a></th><td>msgid "Grafikprogramme zum Layouten"</td></tr><tr><th id="L619"><a href="#L619">619</a></th><td>msgstr "Graphics software for creating layouts"</td></tr><tr><th id="L620"><a href="#L620">620</a></th><td></td></tr><tr><th id="L621"><a href="#L621">621</a></th><td>#: Grafikprogramme</td></tr><tr><th id="L622"><a href="#L622">622</a></th><td>msgid "gute Grafikbearbeitung f�gis"</td></tr><tr><th id="L623"><a href="#L623">623</a></th><td>msgstr "good graphic editing for Flugis"</td></tr><tr><th id="L624"><a href="#L624">624</a></th><td></td></tr><tr><th id="L625"><a href="#L625">625</a></th><td>#: First Person Shooter</td></tr><tr><th id="L626"><a href="#L626">626</a></th><td>msgid ""</td></tr><tr><th id="L627"><a href="#L627">627</a></th><td>"Enth� die First Person Shooter:\n"</td></tr><tr><th id="L628"><a href="#L628">628</a></th><td>"- Alien Arena\n"</td></tr><tr><th id="L629"><a href="#L629">629</a></th><td>"- Nexuiz\n"</td></tr><tr><th id="L630"><a href="#L630">630</a></th><td>"- Sauerbraten\n"</td></tr><tr><th id="L631"><a href="#L631">631</a></th><td>"- Warsow\n"</td></tr><tr><th id="L632"><a href="#L632">632</a></th><td>"- Assault Cube\n"</td></tr><tr><th id="L633"><a href="#L633">633</a></th><td>"- Blood Frontier\n"</td></tr><tr><th id="L634"><a href="#L634">634</a></th><td>"- Enemy Territory\n"</td></tr><tr><th id="L635"><a href="#L635">635</a></th><td>"- Smoking Guns\n"</td></tr><tr><th id="L636"><a href="#L636">636</a></th><td>"- True Combat Elite\n"</td></tr><tr><th id="L637"><a href="#L637">637</a></th><td>"- Urban Terror\n"</td></tr><tr><th id="L638"><a href="#L638">638</a></th><td>"- World of Padman"</td></tr><tr><th id="L639"><a href="#L639">639</a></th><td>msgstr "Contains the following First Person Shooter:\n"</td></tr><tr><th id="L640"><a href="#L640">640</a></th><td></td></tr><tr><th id="L641"><a href="#L641">641</a></th><td>#: MMORPG</td></tr><tr><th id="L642"><a href="#L642">642</a></th><td>msgid "Dieses B�enth� vier MMORPGs (Massively-Multi-Player Online Role-Playing Game)."</td></tr><tr><th id="L643"><a href="#L643">643</a></th><td>msgstr "This bundle contains four MMORPGs (Massively-Multi-Player Online Role-Playing Game)."</td></tr><tr><th id="L644"><a href="#L644">644</a></th><td></td></tr><tr><th id="L645"><a href="#L645">645</a></th><td>#: spelling-en</td></tr><tr><th id="L646"><a href="#L646">646</a></th><td>msgid "Containing spellchecking, hyphenation and thesaurus for the English language."</td></tr><tr><th id="L647"><a href="#L647">647</a></th><td>msgstr "Containing spellchecking, hyphenation and thesaurus for the English language."</td></tr><tr><th id="L648"><a href="#L648">648</a></th><td></td></tr><tr><th id="L649"><a href="#L649">649</a></th><td>#: AZ-System</td></tr><tr><th id="L650"><a href="#L650">650</a></th><td>msgid "System-Tools"</td></tr><tr><th id="L651"><a href="#L651">651</a></th><td>msgstr "System tools"</td></tr><tr><th id="L652"><a href="#L652">652</a></th><td></td></tr><tr><th id="L653"><a href="#L653">653</a></th><td>#: Maltes Installation 3</td></tr><tr><th id="L654"><a href="#L654">654</a></th><td>msgid "Weniger Zeug"</td></tr><tr><th id="L655"><a href="#L655">655</a></th><td>msgstr "Less stuff"</td></tr><tr><th id="L656"><a href="#L656">656</a></th><td></td></tr><tr><th id="L657"><a href="#L657">657</a></th><td>#: AZ-Netzwerk</td></tr><tr><th id="L658"><a href="#L658">658</a></th><td>msgid "Netzwerktools f�n System"</td></tr><tr><th id="L659"><a href="#L659">659</a></th><td>msgstr "Network tools for my system"</td></tr><tr><th id="L660"><a href="#L660">660</a></th><td></td></tr><tr><th id="L661"><a href="#L661">661</a></th><td>#: Rollenspiele</td></tr><tr><th id="L662"><a href="#L662">662</a></th><td>msgid "Dieses B�enth� Rollenspiele."</td></tr><tr><th id="L663"><a href="#L663">663</a></th><td>msgstr "This bundle contains role play games."</td></tr><tr><th id="L664"><a href="#L664">664</a></th><td></td></tr><tr><th id="L665"><a href="#L665">665</a></th><td>#: Spiele von playdeb.net</td></tr><tr><th id="L666"><a href="#L666">666</a></th><td>msgid "Dieses B�enth� alle Spiele von http://www.playdeb.net, sortiert nach Genre."</td></tr><tr><th id="L667"><a href="#L667">667</a></th><td>msgstr "This bundle contains all games from http://www.playdeb.net, ordered by genre."</td></tr><tr><th id="L668"><a href="#L668">668</a></th><td></td></tr><tr><th id="L669"><a href="#L669">669</a></th><td>#: Dungeon</td></tr><tr><th id="L670"><a href="#L670">670</a></th><td>msgid "Dieses B�enth� zwei Spiele des Dungeon-Genres."</td></tr><tr><th id="L671"><a href="#L671">671</a></th><td>msgstr "This bundle contains two Dungeon-genre games."</td></tr><tr><th id="L672"><a href="#L672">672</a></th><td></td></tr><tr><th id="L673"><a href="#L673">673</a></th><td>#: AZ-Multimedia</td></tr><tr><th id="L674"><a href="#L674">674</a></th><td>msgid "Meine Multimedia-Pakete auf Ubuntu"</td></tr><tr><th id="L675"><a href="#L675">675</a></th><td>msgstr "My multimedia-packages for Ubuntu"</td></tr><tr><th id="L676"><a href="#L676">676</a></th><td></td></tr><tr><th id="L677"><a href="#L677">677</a></th><td>#: AZ-Office</td></tr><tr><th id="L678"><a href="#L678">678</a></th><td>msgid "Meine B�ogramme"</td></tr><tr><th id="L679"><a href="#L679">679</a></th><td>msgstr "My office programs"</td></tr><tr><th id="L680"><a href="#L680">680</a></th><td></td></tr><tr><th id="L681"><a href="#L681">681</a></th><td>#: AZ-Komplett</td></tr><tr><th id="L682"><a href="#L682">682</a></th><td>msgid "Alle meine B�gesammelt"</td></tr><tr><th id="L683"><a href="#L683">683</a></th><td>msgstr "All of my bundles"</td></tr><tr><th id="L684"><a href="#L684">684</a></th><td></td></tr><tr><th id="L685"><a href="#L685">685</a></th><td>#: AZ-Sonstiges</td></tr><tr><th id="L686"><a href="#L686">686</a></th><td>msgid "Sonstige Programme, die ich nicht einordnen kann"</td></tr><tr><th id="L687"><a href="#L687">687</a></th><td>msgstr "Other programs I cannot put in other bundles"</td></tr><tr><th id="L688"><a href="#L688">688</a></th><td></td></tr></tbody></table>
+        </div>
+          <div class="buttons">
+            <form method="get" action="">
+              <div id="delete">
+                <input type="hidden" name="action" value="delete" />
+                <input type="submit" value="Delete attachment" />
+              </div>
+            </form>
+          </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/raw-attachment/ticket/880/bundles.po">Original Format</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.5</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

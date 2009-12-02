@@ -1,0 +1,32 @@
+#!/usr/bin/ruby
+#script shows which description var has
+#script/bundle_translate Uebersetzen en name
+#system 'script/bundle_translate Uebersetzen en' von console
+var = (ARGV[0])
+if (ARGV[2]) == "name"
+  f = File.open('/home/communtu/web2.0/communtu-program/config/locales/bundle-names.po')
+else
+  f = File.open('/home/communtu/web2.0/communtu-program/config/locales/bundles.po')
+end
+ while not f.eof? do
+  german = ""
+  english = ""
+   while(!f.eof? && (line = f.gets)[var]=="#{var}") do
+   german << f.gets
+   english << f.gets
+#output
+   german = german.gsub("msgid \"", "")
+   german = german.gsub("msgstr \"", "")
+   german = german.gsub("\n", "")
+   german = german.gsub("\"", "")
+   english = english.gsub("msgstr \"", "")
+   english = english.gsub("msgstr", "")
+   english = english.gsub("\n", "")
+   english = english.gsub("\"", "")   
+if (ARGV[1]) == "en"
+  print english   
+else
+  print german
+end
+   end
+ end
