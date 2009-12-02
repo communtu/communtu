@@ -28,6 +28,7 @@ class MyMailer < ActionMailer::Base
    # @body = {:title => @form_name, :comment => @form_frage}
     @headers = {}
   end
+
   def livecd(user,iso)
     @body[:url]  = iso
     @recipients  = "#{user.email}"
@@ -38,5 +39,13 @@ class MyMailer < ActionMailer::Base
     @headers = {}
   end
 
+  def livecd_failed(user)
+    @recipients  = "#{user.email}"
+    @from        = "info@communtu.org"
+    @subject     = I18n.t(:livecd_email_failed)
+    @sent_on     = Time.now
+    @body[:user] = user
+    @headers = {}
+  end
 
 end

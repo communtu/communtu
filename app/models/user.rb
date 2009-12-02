@@ -380,17 +380,29 @@ end
 
   def livecd
     system "dotlockfile -r 1000 #{RAILS_ROOT}/livecd_lock"
+    system "(echo; echo \"------------------------------------\"; echo \"Creating live CD\"; date) >> #{RAILS_ROOT}/log/livecd.log"
     ver = self.fullversion
     deb1 = RAILS_ROOT + "/" + self.install_sources
     deb2 = RAILS_ROOT + "/" + self.install_bundle_as_meta
     isobase = File.basename(deb2).gsub(/\.deb$/,'')
     iso = "#{RAILS_ROOT}/public/debs/#{isobase}.iso"
-    isourl = "http://communtu.org/debs/#{isobase}.iso"
+    baseurl = if RAILS_ROOT.index("test").nil? then "http://communtu.org" else "http://test/communtu.de" end
+    isourl = "#{baseurl}/debs/#{isobase}.iso"
     if Dir.glob(iso)[0].nil? then
-      system "#{RAILS_ROOT}/script/remaster create #{ver} #{iso} #{isobase} #{deb1} #{deb2} >> #{RAILS_ROOT}/log/livecd.log 2>&1"
+      res = system "#{RAILS_ROOT}/script/remaster create #{ver} #{iso} #{isobase} #{deb1} #{deb2} >> #{RAILS_ROOT}/log/livecd.log 2>&1"
+    else
+      res = true
     end
+    if !res then
+      system "(echo; echo \"Creation of livd CD failed\"; echo) >> #{RAILS_ROOT}/log/livecd.log"
+    end
+    system "(echo; echo \"finished at:\"; date; echo; echo) >> #{RAILS_ROOT}/log/livecd.log"
     system "dotlockfile -u #{RAILS_ROOT}/livecd_lock"
-    MyMailer.deliver_livecd(self,isourl)
+    if res then
+      MyMailer.deliver_livecd(self,isourl)
+    else
+      MyMailer.deliver_livecd_failed(self)
+    end
   end
 
   def test_livecd
@@ -401,6 +413,7 @@ end
     iso = "#{RAILS_ROOT}/public/debs/#{isobase}.iso"
     isourl = "http://communtu.org/debs/#{isobase}.iso"
     if Dir.glob(iso)[0].nil? then
+      system "echo "
       system "echo \"##{ver} #{iso} #{isobase} #{deb1} #{deb2}\" >> #{RAILS_ROOT}/log/livecd.log"
       system "echo hallo > #{iso}"
     end
