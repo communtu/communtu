@@ -386,7 +386,7 @@ end
     deb2 = RAILS_ROOT + "/" + self.install_bundle_as_meta
     isobase = File.basename(deb2).gsub(/\.deb$/,'')
     iso = "#{RAILS_ROOT}/public/debs/#{isobase}.iso"
-    baseurl = if RAILS_ROOT.index("test").nil? then "http://communtu.org" else "http://test/communtu.de" end
+    baseurl = if RAILS_ROOT.index("test").nil? then "http://communtu.org" else "http://test.communtu.de" end
     isourl = "#{baseurl}/debs/#{isobase}.iso"
     if Dir.glob(iso)[0].nil? then
       res = system "#{RAILS_ROOT}/script/remaster create #{ver} #{iso} #{isobase} #{deb1} #{deb2} >> #{RAILS_ROOT}/log/livecd.log 2>&1"
