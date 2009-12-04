@@ -19,6 +19,7 @@
   <td align="left"><font size="-3">
 <% if @userlog != nil %>
 <%= @userlog.created_at.day %>/<%= @userlog.created_at.month %>/<%= @userlog.created_at.year %>
+<a href="/users/user_statistics/<%= user.id %>"><%=t(:statistics)%></a>
 <% else %>
 <%=h user.updated_at.day %>/<%=h user.updated_at.month %>/<%=h user.updated_at.year %>
 <% end %>

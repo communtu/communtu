@@ -115,5 +115,13 @@ module ApplicationHelper
   def is_xfce?
     logged_in? and current_user.derivative.name=="Xubuntu"
   end
+
+  def locale_datetime(date_time)
+    if I18n.locale.to_s == "de"
+      date_time.strftime("%d.%m.%Y, %H:%M:%S Uhr")
+    else
+      date_time.strftime("%d.%m.%Y, %H:%M:%S")
+    end
+  end
   
 end

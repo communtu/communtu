@@ -281,6 +281,7 @@ auch installiert werden.<br /><br /> Dazu wird zunächst ein sogenanntes {{cdima
   settings: Einstellungen
   show: Anzeigen
   sources: Quellen
+  statistics: Aufrufstatistik
   subject_with_colon: "Betreff: "
   subject_without_colon: Betreff
   subtype: "Subtyp:"

@@ -9,7 +9,7 @@ class UsersController < ApplicationController
   
   before_filter :not_logged_in_required, :only => [:new, :create] 
   before_filter :login_required, :only => [:show, :edit, :update, :disable, :distroy, :enable]
-  before_filter :check_administrator_role, :only => [:index, :destroy, :enable, :disable]
+  before_filter :check_administrator_role, :only => [:index, :destroy, :enable, :disable, :user_statistics]
   
   helper :users
   helper :tabz
@@ -170,4 +170,10 @@ class UsersController < ApplicationController
     user.architecture = Architecture.browser_architecture_with_default(s)
     user.save
   end
+  
+  def user_statistics
+  @log = Userlog.find(:all, :order => "created_at DESC", :conditions => {:user_id => params[:id]})
+  @user = User.find(params[:id])
+  end
+  
 end
