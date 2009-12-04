@@ -9,7 +9,7 @@ namespace :db do
       m = Metapackage.find_by_name("Textverarbeitung")
       packages = m.all_recursive_packages << m
       ["gdmap", "pdfedit", "Acroread", "Skype", "Virtualbox"].each do |p|
-        packages << Package_find_by_name(p)
+        packages << Package.find_by_name(p)
       end
       BasePackage.all.each do |p|
         if !packages.include?(p) then p.destroy end
