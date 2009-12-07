@@ -47,6 +47,8 @@ class CartController < ApplicationController
           end
         end
         if err != ""
+          err=err.gsub("<","")
+          err=err.gsub(">","")
           flash[:error] = t(:controller_cart_2, :message => err, :url => "/home/new_repository")
         end
         redirect_to "/users/" + current_user.id.to_s + "/metapackages/2"
