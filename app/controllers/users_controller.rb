@@ -174,6 +174,13 @@ class UsersController < ApplicationController
   def user_statistics
   @log = Userlog.find(:all, :order => "created_at DESC", :conditions => {:user_id => params[:id]})
   @user = User.find(params[:id])
+  @users = User.find(:all, :conditions => {:anonymous => false})
+  @statistics = Array.new
+  c = 0
+  @users.each do |u|
+  @statistics << {:user_id => u.id, :counter => Userlog.find(:all, :order => "created_at DESC", :conditions => {:user_id => u.id}).count}
+  c = c+1
+  end
   end
   
 end
