@@ -786,6 +786,7 @@ en:
   view_home_home_23: use Communtu as a guest
   controller_categories_0: Categories
   view_home_home_24: To the imprint
+  statistics: View statistics
   view_layouts_application_11: Guestsession
   description: Description
   view_home_home_25: For questions concerning Communtu we have created a "FAQ".
@@ -819,10 +820,10 @@ en:
   view_repositories_index_5: new repository
   view_distributions_show_0: "Repositories:"
   view_layouts_application_20: Javascript is not activated! Please activate Javascript in your browser-settings.
+  view_layouts_application_21: Communtu eases Ubuntu installations
   view_metapackages_migrate_0: Wich distribution are the bundles to be migrated from?
   view_distributions_show_1: check everything
   migrate: Migrate
-  view_layouts_application_21: Communtu eases Ubuntu installations
   view_layouts_application_22: to the profile
   view_distributions_show_2: synchronise everything
   controller_metapackages_15: <option value='2'>Publish<option/>

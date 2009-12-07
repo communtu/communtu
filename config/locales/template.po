@@ -3085,6 +3085,10 @@ msgstr "Categories"
 msgid "Zum Impressum"
 msgstr "To the imprint"
 
+#: statistics
+msgid "Aufrufstatistik"
+msgstr "View statistics"
+
 #: view_layouts_application_11
 msgid "Gastzugang"
 msgstr "Guestsession"

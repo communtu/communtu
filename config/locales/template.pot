@@ -2263,6 +2263,9 @@ msgstr ""
 #: view_home_home_24
 msgid "Zum Impressum"
 msgstr ""
+#: statistics
+msgid "Aufrufstatistik"
+msgstr ""
 #: view_layouts_application_11
 msgid "Gastzugang"
 msgstr ""

@@ -2260,6 +2260,9 @@ msgstr ""
 #: view_home_home_24
 msgid "To the imprint"
 msgstr ""
+#: statistics
+msgid "View statistics"
+msgstr ""
 #: view_layouts_application_11
 msgid "Guestsession"
 msgstr ""
@@ -2359,14 +2362,14 @@ msgstr ""
 #: view_layouts_application_20
 msgid "Javascript is not activated! Please activate Javascript in your browser-settings."
 msgstr ""
+#: migrate
+msgid "Migrate"
+msgstr ""
 #: view_metapackages_migrate_0
 msgid "Wich distribution are the bundles to be migrated from?"
 msgstr ""
 #: view_distributions_show_1
 msgid "check everything"
-msgstr ""
-#: migrate
-msgid "Migrate"
 msgstr ""
 #: view_layouts_application_21
 msgid "Communtu eases Ubuntu installations"
