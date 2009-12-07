@@ -178,7 +178,7 @@ class UsersController < ApplicationController
   @statistics = Array.new
   c = 0
   @users.each do |u|
-  @statistics << {:user_id => u.id, :counter => Userlog.find(:all, :order => "created_at DESC", :conditions => {:user_id => u.id}).count}
+  @statistics << {:user_id => u.id, :counter => Userlog.find(:all, :order => "created_at DESC", :conditions => {:user_id => u.id}).length}
   c = c+1
   end
   end
