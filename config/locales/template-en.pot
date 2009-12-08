@@ -217,6 +217,9 @@ msgstr ""
 #: view_user_profiles__installation_29
 msgid " for the Konqueror and Opera browsers."
 msgstr ""
+#: view_home_faq_xfce_01
+msgid "You can find the Communtu sources under \"Applications -> System -> Software Sources -> Other Software\". They can also be deactivated here. "
+msgstr ""
 #: controller_distributions_1
 msgid "Distribution created."
 msgstr ""
@@ -228,6 +231,9 @@ msgid "A link for changing the password has been sent to your e-mail-address."
 msgstr ""
 #: view_home_contact_us_0
 msgid "Feedback"
+msgstr ""
+#: view_home_faq_xfce_02
+msgid "To reach the package manager Synaptic you navigate to \"Applications -> System -> Synaptic Package Manager\". In the lower left part you click on \"Origin\". In the list above search for \"packages.communtu.org\" and click on it. In the right part of the window you will now see all metapackages available at Communtu. To remove a metapackage from your system you make a right click on it and choose \"Mark for Removal\". With a click on \"Apply\" it will be uninstalled."
 msgstr ""
 #: controller_distributions_2
 msgid "Distribution updated."
@@ -369,6 +375,12 @@ msgid "Add sources"
 msgstr ""
 #: controller_suggestion_2
 msgid "Add repositories and keys for the user"
+msgstr ""
+#: view_home_faq_all_01
+msgid "The deactivation does not involve unstalling packages nor will updates be held back for installed software. Updates are still obtained from the official sources and those, which Communtu might have added. "
+msgstr ""
+#: view_home_faq_all_02
+msgid "Packages are not being uninstalled and can be removed as normale via Synaptic or KPackageKit."
 msgstr ""
 #: controller_suggestion_4
 msgid "Add repositories and keys for the bundle"
@@ -835,11 +847,17 @@ msgstr ""
 #: new_packages
 msgid "Newly added packages: "
 msgstr ""
+#: view_home_faq_kde_01
+msgid "You can find the Communtu sources under \"K-Menu -> Programs -> System -> Software Sources -> Other Software\". They can also be deactivated here."
+msgstr ""
 #: save_rough
 msgid "Save rough selection"
 msgstr ""
 #: view_home_derivatives_41
 msgid "Ubuntu ultimate - Ubuntu with many desktop-designs and applications."
+msgstr ""
+#: view_home_faq_kde_02
+msgid "You can access KPackageKit via \"K-Menu -> Programs -> System -> Administration -> Software Management\". From the right dropdown menu you choose \"packages.communtu.org\". The list now appearing contains every metapackage available in Communtu. To uninstall a metapackage you click on one of the installed metapackages and mark it with the X right of the entry. To remove it from your system you need to click on \"Apply\". You now see a summary of the changes that will be made and after a click on \"Ok\" they will be removed from your system."
 msgstr ""
 #: view_home_news_15
 msgid "Our blog"
@@ -872,7 +890,7 @@ msgstr ""
 msgid " - minimalist and fast version of Ubuntu for older PCs."
 msgstr ""
 #: view_home_faq_04
-msgid "A bundle, together with other bundles, can be installed as a compilation via \"Download\". A bundle can also be installed directly via the menu-entry \"Bundle\""
+msgid "There are two ways to install a bundle.<p> The first way is to click on <b>Download</b>. You will now be presented a small formular in which you can choose the tasks you want to perform with your computer. Next you have to choose which version of Ubuntu you want to use (in most cases it will be detected correctly and you only have to pick it from the list) and which GUI you use (Gnome = Ubuntu, KDE = Kubuntu, XFCE = Xubuntu). The last two steps are about the license and the security of the progams (which sources you want to be added and if the programs shall be open or closed source). You can now click on \"Save rough selection and install\" to get to the end and install the preselected bundles or you can click on \"Save rough selection\" to make a more detailed choice of the bundles being installed. Finally you need to add the Communtu sources to your system and, when this is finished, you only have to click on \"Install\" and the chosen bundles will be installed.<p> The second way is to click on <b>Bundle</b> and then on \"Published bundles\". You now see a list with every bundle created in Communtu. Here you can install a bundle directly with a click on \"Install through metapackage\", assuming you have added the sources earlier. If not, a click on \"Add sources\" will add them to your system."
 msgstr ""
 #: bundel_information_edit
 msgid "edit bundle information"
@@ -893,7 +911,7 @@ msgstr ""
 msgid "Only the owner of the bundle is allowed to perform this action."
 msgstr ""
 #: view_home_faq_05
-msgid "How do I create a bundle?"
+msgid "How can I create a bundle?"
 msgstr ""
 #: view_user_profiles__profile_data_2
 msgid "Attention: when finished, don't forget to click on the \"Save\"-button!"
@@ -905,7 +923,7 @@ msgstr ""
 msgid "new repository for"
 msgstr ""
 #: view_home_faq_06
-msgid "Click on \"Bundle\" and then you have to click \"New Bundle\". In the left box you can choose packages and add them to the bundle. When finished, you have to click on the \"Save\"-symbol in the bundle-editor. Now a new window appears in the main-window where you have to enter a meaningful name and a description. Don't forget to assign your bundle to a category."
+msgid "For this you click on <b>Bundle</b> and then on \"New bundle\". On the left side you can see a list with programs and on the right side you can see an empty list. This is the bundle editor. With a click on the Plus-icon in the left list you can add programs to your bundle. When you are finished with adding programs to your bundle you must click on the save symbol. Now you have to enter a meaningful name for your bundle, state the version of your bundle and provide a description so that other users will know what your bundle is about. In order to get the bundle rated and commented you need to publish your bundle. Attention: publish a bundle only if you are sure it will not be changed in the near future! Editing the bundle when it is published is not possible.<p> If you think that a programs fits into one of your bundles you can edit it (assuming it is not published). To do this go to <b>Bundle</b> and then to \"My bundles\". Click on the bundle you want to edit. Choose \"Edit package list\" from the dropdown list on the right side. Now you're in the bundle editor again. When finished changing your package list it needs to be saved. Raise the version number and save the bundle. It is now updated."
 msgstr ""
 #: view_user_profiles__profile_data_3
 msgid "What tasks do you want to do with your computer (only a rough choice, they can be chosen in detail later)?"
@@ -1016,7 +1034,7 @@ msgstr ""
 msgid "Here you can select how secure or comfortable your sources should be:"
 msgstr ""
 #: view_home_faq_11
-msgid "How do I save the program-list of my system?"
+msgid "How do I create a bundle with my currently installed programs? "
 msgstr ""
 #: view_cart_new_from_list_3
 msgid " can be found with the above-mentioned command. (For this, the package {{debfoster}} has to be install. The created list only contains a minimal list of (meta-)packages which are necessary to rebuild your installation.)"
@@ -1037,7 +1055,7 @@ msgstr ""
 msgid "Ubuntu versions"
 msgstr ""
 #: view_home_faq_12
-msgid "After a click on \"Bundle\" and \"New bundle\" you can find the link \"Create bundle from a packages-list\". A new page is loaded with instructions on how to upload your package-list to Communtu."
+msgid "Under <b>Bundle</b> and \"New bundle\" you can find the entry \"Create bundle from a packages-list\", which can be clicked. It is described how you can upload a package-list to Communtu. As soon as the bundle is created it is the same procedure when creating a new bundle: enter a meaningful name, state the version, add the description and save it."
 msgstr ""
 #: view_cart_new_from_list_4
 msgid "Choose the file which contains the package-list:"
@@ -1109,7 +1127,7 @@ msgstr ""
 msgid " for subnotebooks/EEE-PCs."
 msgstr ""
 #: view_home_faq_17
-msgid "How can I propose a program so it can be added to Communtu?"
+msgid "How can I suggest new programs?"
 msgstr ""
 #: view_my_mailer_repo_1
 msgid "The following reason has been stated:"
@@ -1121,7 +1139,7 @@ msgstr ""
 msgid "From:"
 msgstr ""
 #: view_home_faq_18
-msgid "If you haven't found a program via \"Bundle\" -> \"New bundle\", chances are high Communtu doesn't have the corresponding repositories containing that program. You can suggest the repository, where the program is in, to us via \"Suggest repository\" so we can implement the repository."
+msgid "This is not hard. You open up the bundle editor (reachable via <b>Bundle</b>) and click on \"Suggest repository\". Enter the link to the program and shortly tell us why we should add this program to Communtu."
 msgstr ""
 #: view_home_beteiligung_1
 msgid "Using the platform"
@@ -1130,7 +1148,7 @@ msgstr ""
 msgid "non-free"
 msgstr ""
 #: view_home_faq_19
-msgid "What are sources or repositories?"
+msgid "What is a repository?"
 msgstr ""
 #: trusted
 msgid "Ubuntu+Community"
@@ -1169,7 +1187,7 @@ msgstr ""
 msgid "Show"
 msgstr ""
 #: view_home_faq_20
-msgid "Programs within Ubuntu are provided via packages, which are located in the package-sources or repositories. Further information about <a href=\"https://help.ubuntu.com/community/Repositories\" target=\"_blank\">Repositories</a>."
+msgid "A repository is a collection of programs. With your package manager (Synaptic in Gnome and XFCE, KPackageKit in KDE) you can install programs from repositories. At the same time you receive updates for the installed programs via your package manager. Further information about repositories can be obtained <a href=\"https://help.ubuntu.com/community/Repositories/Ubuntu\" target=\"_blank\">here</a>."
 msgstr ""
 #: view_messages_show_4
 msgid "Forward"
@@ -1198,9 +1216,6 @@ msgstr ""
 #: helper_distributions_6
 msgid "delete repository"
 msgstr ""
-#: view_home_faq_22
-msgid "To find the Communtu-sources in a Gnome-based system, you navigate to \"System\" -> \"Administration\" -> \"Software Sources\" -> \"Third-Party Software\". To find the Communtu-sources in a KDE-based system, you open the K-menu and then navigate to \"Programs\" -> \"System\" -> \"Administration\" -> Software Sources\" -> \"Third-Party Software\". Here you deactivate the Communtu-sources. When deactivating the Communtu-sources, the installed programs won't be uninstalled nor are the updates. Updates are still obtained from the official sources, which may be added by Communtu."
-msgstr ""
 #: view_home_derivatives_2
 msgid "Ubuntu derivatives "
 msgstr ""
@@ -1227,9 +1242,6 @@ msgid "Show sources"
 msgstr ""
 #: new_category
 msgid "New category"
-msgstr ""
-#: view_home_faq_24
-msgid "This can be done with Synaptic. To reach Synaptic in a Gnome-based system, you open the menu \"System\" -> \"Administration\" -> \"Synaptic Package Manager\". To reach Synaptic in a KDE-based system, you open the K-menu and then navigate to \"Programs\" -> \"System\" -> \"Administration\" -> \"Software Management\". Next you choose the menu-entry \"Origin\" in the lower-left corner. In the list, which now appears above this section of Synaptic, you choose the entry \"packages.communtu.de\". In the main-part of Synaptic, on the right side of the program-window, you now have a list of the installed metapackages. To remove a metapackage you right-click it and choose \"Mark for Removal\". To finish the removal of a metapackage you now have just to click on \"Apply\" in the menu-bar above. However, the packages contained in this metapackage will not be removed! To remove these you have to choose the packages with Synaptic and remove them individually."
 msgstr ""
 #: news
 msgid "News"
@@ -1942,8 +1954,14 @@ msgstr ""
 #: view_layouts_donate
 msgid "Donate"
 msgstr ""
+#: view_home_faq_gnome_01
+msgid "You can find the Communtu sources under \"System -> Administration -> Software Sources -> Other Software\". They can also be deactivated here. "
+msgstr ""
 #: view_mailbox_show_3
 msgid "received"
+msgstr ""
+#: view_home_faq_gnome_02
+msgid "To reach the package manager Synaptic you navigate to \"System -> Administration -> Synaptic Package Manager\". In the lower left part you click on \"Origin\". In the list above search for \"packages.communtu.org\" and click on it. In the right part of the window you will now see all metapackages available at Communtu. To remove a metapackage from your system you make a right click on it and choose \"Mark for Removal\". With a click on \"Apply\" it will be uninstalled."
 msgstr ""
 #: view_mailbox_show_5
 msgid "You do not have any messages in your inbox."
@@ -2095,14 +2113,8 @@ msgstr ""
 #: view_home_icons_6
 msgid " install sources"
 msgstr ""
-#: view_home_about_10
-msgid "How can I submit my experience with programs to the Communtu-system?"
-msgstr ""
 #: model_package_9
 msgid "While the synchronization of the repository {{repo_name}} no PackageDistr-entry for the package {{package_name}} could be found."
-msgstr ""
-#: view_home_about_11
-msgid "Did you have good experience with the programs? You can merge thematic programs to a bundle and add this to the system. To do so, you choose <b>new bundle</b> below <b>Bundles</b>. Then you can add Ubuntu packages to the bundle. After you have finished, click on the floppy-icon to save the bundle. The bundle needs a name, a description and a thematic classification so that other users can use it too. Just like folders and files, the bundle can consist not only of Ubuntu packages but also of other bundles too. "
 msgstr ""
 #: view_home_about_12
 msgid "<b>Administrate bundles</b> on the left side offers an overview about the available bundles. At last, an overview about the available Ubunt versions (distributions) can be found at <b>Ubuntu versions</b>."
@@ -2112,9 +2124,6 @@ msgid " installation via shell-script"
 msgstr ""
 #: distribution
 msgid "Distribution"
-msgstr ""
-#: view_home_about_13
-msgid "Post-installation of single functions"
 msgstr ""
 #: link_community
 msgid "http://ubuntuforums.org"
@@ -2130,9 +2139,6 @@ msgid "In order to use this feature you have to be logged in. Logging in via \"G
 msgstr ""
 #: view_packages__search_0
 msgid "Search for packages"
-msgstr ""
-#: view_home_about_14
-msgid "You already have a Ubuntu-installation in use and want to add some functions? You can also use Communtu for this. You can install single bundles at <b>Bundles</b>."
 msgstr ""
 #: view_distributions_edit_0
 msgid "edit distribution"
@@ -2362,14 +2368,14 @@ msgstr ""
 #: view_layouts_application_20
 msgid "Javascript is not activated! Please activate Javascript in your browser-settings."
 msgstr ""
-#: migrate
-msgid "Migrate"
-msgstr ""
 #: view_metapackages_migrate_0
 msgid "Wich distribution are the bundles to be migrated from?"
 msgstr ""
 #: view_distributions_show_1
 msgid "check everything"
+msgstr ""
+#: migrate
+msgid "Migrate"
 msgstr ""
 #: view_layouts_application_21
 msgid "Communtu eases Ubuntu installations"

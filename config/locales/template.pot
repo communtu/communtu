@@ -217,6 +217,9 @@ msgstr ""
 #: view_user_profiles__installation_29
 msgid " konfigurieren."
 msgstr ""
+#: view_home_faq_xfce_01
+msgid "Unter \"Anwendungen -> System -> Softwarequellen von Drittanbietern\" sind die Communtu Quellen auffindbar. Hier können sie auch wieder deaktiviert werden."
+msgstr ""
 #: controller_distributions_1
 msgid "Distribution erzeugt."
 msgstr ""
@@ -228,6 +231,9 @@ msgid "Ein Link zum Andern des Passworts wurde an deine Email-Adresse geschickt.
 msgstr ""
 #: view_home_contact_us_0
 msgid "Feedbackformular"
+msgstr ""
+#: view_home_faq_xfce_02
+msgid "Die Pakerverwaltung Synaptic erreichst Du über \"Anwendungen -> System-> Synaptic-Paketverwaltung\". Wähle hier unten links den Punkt Ursprung. Suche nun in der darüber liegenden Liste \"packages.communtu.org\" und klicke es an. Auf der rechten Seite werden nun die verfügbaren Metapakete in Communtu angezeigt. Das Entfernen geht über Rechtsmausklick und dann \"Zum Entfernen vormerken\". Dies muss dann danach durch \"Anwenden\" bestätigt werden."
 msgstr ""
 #: controller_distributions_2
 msgid "Distribution aktualisiert."
@@ -369,6 +375,12 @@ msgid "Quellen hinzufügen"
 msgstr ""
 #: controller_suggestion_2
 msgid "Quellen und Schluessel hinzufuegen fuer Benutzer "
+msgstr ""
+#: view_home_faq_all_01
+msgid "Das Deaktivieren führt nicht zum Deinstallieren von Paketen noch werden dadurch die Updates für die installierten Pakete unterbrochen. Diese werden aus anderen Softwarequellen, die ggf. von Communtu installiert wurden, bedient."
+msgstr ""
+#: view_home_faq_all_02
+msgid "Die einzelnen Pakete werden dadurch nicht deinstalliert sondern lassen sich wie gewohnt über Synaptic oder KPackageKit auswählen und deinstallieren."
 msgstr ""
 #: controller_suggestion_4
 msgid "Quellen und Schluessel hinzufuegen fuer Buendel "
@@ -835,11 +847,17 @@ msgstr ""
 #: new_packages
 msgid "Neu hinzugefügte Pakete: "
 msgstr ""
+#: view_home_faq_kde_01
+msgid "Unter \"K-Menu -> Programme -> System -> Systemverwaltung -> Software-Quellen -> Softwarequellen von Drittanbietern\" sind die Communtu Quellen auffindbar. Hier können sie auch wieder deaktiviert werden."
+msgstr ""
 #: save_rough
 msgid "Grobauswahl speichern"
 msgstr ""
 #: view_home_derivatives_41
 msgid " Ubuntu ultimate  - Ubuntu mit vielen Desktop-Desgins und Programmen."
+msgstr ""
+#: view_home_faq_kde_02
+msgid "KPackageKit erreichst Du über \"K-Menu -> Programme-> System -> Systemverwaltung -> Software-Verwaltung\". Hier wählst Du rechts aus dem Ausklapp-Menü \"packages.communtu.org\" aus. Aus der Liste suchst Du nun das Metapaket aus, welches Du installiert hast und markierst es mit einem Klick auf das X rechts neben dem Eintrag. Um das Metapaket nun zu entfernen ist nur noch ein Klick auf \"Übernehmen\" notwendig. Es wird jetzt noch eine Übersicht der zu entfernenden Programme angezeigt und nach einem Klick auf \"Ok\" werden diese von deinem Computer gelöscht."
 msgstr ""
 #: view_home_news_15
 msgid "Unser Blog"
@@ -872,7 +890,7 @@ msgstr ""
 msgid " - minimalistische schnelle Ubuntu-Version für ältere PCs."
 msgstr ""
 #: view_home_faq_04
-msgid "Ein Bündel kann einmal in einer Zusammenstellung mit weiteren über den Punkt \"Download\" zum Computer hinzugefügt werden. Andererseits kann auch ein Bündel direkt installiert werden, wenn Du über den Menüpunkt \"Bündel\" gehst."
+msgid "Um ein Bündel zu installieren gibt es zwei Möglichkeiten.<p> Die erste Möglichkeit ist, dass Du auf <b>Download</b> klickst. Dort bekommst Du dann ein kleines Formular in welchem du die Aufgaben auswählst, die Du mit deinem Computer durchführen möchtest. Als Nächstes musst du deine Ubuntu-Version einstellen (diese wird in den meisten Fällen richtig erkannt und Du musst sie nur noch aus dem Menü auswählen) und welche Oberfläche Du benutzen möchtest (Gnome = Ubuntu, KDE = Kubuntu, XFCE = Xubuntu). Die letzten zwei Schritte betreffen die Lizenz und die Sicherheit der Programme, also welche Quellen du zulassen möchtest und ob deine Programme offen sind oder nicht. Du kannst nun entweder über \"Speichern\" direkt zum Abschluss des Prozesses kommen oder mit einem Klick auf \"Speichern und feiner auswählen\" noch eine genauere Auswahl treffen. Abschließend müssen die Quellen zu Deinem System hinzugefügt werden und, sobald dies abgeschlossen ist, musst du nur noch auf \"Installieren\" klicken und auf Dein System werden die von dir ausgewählten Programmen installiert.<p> Die zweite Möglichkeit ist, dass Du auf <b>Bündel</b> und dann \"Alle veröffentlichen Bündel\" klickst. Dort bekommst Du dann eine Übersicht über alle in Communtu erstellten Bündel. Hier müssen, sofern noch nicht geschehen, die Quellen hinzugefügt werden (ein Klick auf \"Quellen hinzufügen\") und dann mit einem Klick auf \"installieren mittels Metapaket\" das entsprechende Bündel installiert werden."
 msgstr ""
 #: bundel_information_edit
 msgid "Bündel Informationen bearbeiten"
@@ -893,7 +911,7 @@ msgstr ""
 msgid "Nur der Eigentümer des Bündels darf diese Aktion ausführen."
 msgstr ""
 #: view_home_faq_05
-msgid "Wie erstelle ich ein Bündel?"
+msgid "Wie kann ich ein Bündel erstellen?"
 msgstr ""
 #: view_user_profiles__profile_data_2
 msgid "Achtung: zum Schluss unten auf den 'Speichern'-Knopf klicken!"
@@ -905,7 +923,7 @@ msgstr ""
 msgid "Neues Repository für "
 msgstr ""
 #: view_home_faq_06
-msgid "Klicke dazu bitte den Punkt \"Neues Bündel\" unter \"Bündel\". Aus den Paketen im linken Fenster der Webseite kannst Du dann die einzelnen Pakete auswählen und hinzufügen. Zum Schluss muss dann auf das Speichernsymbol im Bündelbereich geklickt werden. Hier öffnet sich dann auf einer neuen Seite ein Formular, wo Du einen sinnvollen Titel und Beschreibung eingeben kannst. Bitte ordne Deinem Bündel auch eine entsprechende Kategorie zu."
+msgid "Hierfür klickst Du auf <b>Bündel</b> und dann auf \"Neues Bündel\". Links siehst Du nun eine Liste mit Programmen und rechts noch eine leere Liste. Dies ist der Bündeleditor. Mit einem Klick auf das Plus-Zeichen in der linken Liste kannst Du nun Programme zu Deinem Bündel hinzufügen. Sobald Du damit fertig bist klickst auf das Speichern-Symbol. Hier musst Du nun einen sinnvollen Namen für dein Bündel vergeben, die Version angeben und eine kleine Beschreibung eingeben damit andere Nutzer sofort wissen was für Programme in deinem Bündel sind. Damit andere Nutzer dein Bündel sehen, bewerten und installieren können muss dieses veröffentlicht werden. Dies geht erst, sobald das Bündel gespeichert ist. Achtung: bitte ein Bündel erst veröffentlichen wenn es ausgereift ist, also wenn Du der Meinung bist, hier wird sich so schnell nichts mehr ändern! Das Ändern des Bündels ist nicht mehr möglich wenn es veröffentlicht wurde.<p> Wenn Du der Meinung bist, dass dein Bündel um nützliche Programme erweitert werden kann oder ein Programm nicht mehr in dem Bündel enthalten sein soll musst Du zuerst unter <b>Bündel</b> und dann \"Meine Bündel\" das entsprechende Bündel auswählen. Rechts ist dann aus dem Aufklapp-Menü der Punkt \"Paketliste editieren\" auszuwählen. Anschließend erscheint wieder der Bündeleditor. Sobald die Paketliste bearbeitet wurde muss diese gespeichert werden. Nun muss die Version höhergesetzt werden und anschließend gespeichert werden. Das Bündel wurde nun aktualisiert."
 msgstr ""
 #: view_user_profiles__profile_data_3
 msgid "Welche Aufgaben willst du mit deinem Computer erledigen? (um grob eine Auswahl zu treffen, Feineinstellungen später möglich)"
@@ -1016,7 +1034,7 @@ msgstr ""
 msgid "Hier kannst du einstellen, wie sicher bzw. komfortabel deine Installationsquellen sein sollen"
 msgstr ""
 #: view_home_faq_11
-msgid "Wie sichere ich die Programmliste meines Gesamtsystems?"
+msgid "Wie erstelle ich ein Bündel aus meinen installierten Programmen?"
 msgstr ""
 #: view_cart_new_from_list_3
 msgid "herausfinden. (Dazu muss das Paket {{debfoster}} installiert sein. Die erzeugte Liste enthält nur eine minimale Liste von (Meta-)Paketen, die notwendig ist, um deine Installation komplett wiederherzustellen.)"
@@ -1037,7 +1055,7 @@ msgstr ""
 msgid "Ubuntu-Versionen"
 msgstr ""
 #: view_home_faq_12
-msgid "Unter \"Bündel\" und dann \"Neues Bündel\" gibt es den Punkt \"Bündel aus Paketliste\", der anzuklicken ist. Dort ist beschrieben, wie Du Deine Paketliste in Communtu hochladen kannst."
+msgid "Unter <b>Bündel</b> und dann \"Neues Bündel\" gibt es den Punkt \"Bündel aus einer Paketliste erstellen\", der anzuklicken ist. Dort ist beschrieben, wie Du Deine Paketliste in Communtu hochladen kannst. Sobald das Bündel gespeichert ist, ist der Vorgang der Gleiche wie bei einem neuen Bündel erstellen: sinnvollen Namen auswählen, Version bestimmen, Beschreibung einfügen und speichern."
 msgstr ""
 #: view_cart_new_from_list_4
 msgid "Datei, die die Paketliste enthält, auswählen:"
@@ -1090,14 +1108,14 @@ msgstr ""
 #: view_home_faq_15
 msgid "Wie kann ich ein einzelnes Programm installieren?"
 msgstr ""
+#: view_users__sidebar_8
+msgid "Fehlgeschlagene debs"
+msgstr ""
 #: view_rating_show_title_got_ratings
 msgid "von 5 Sternen"
 msgstr ""
 #: view_home_derivatives_56
 msgid "http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix"
-msgstr ""
-#: view_users__sidebar_8
-msgid "Fehlgeschlagene debs"
 msgstr ""
 #: view_home_faq_16
 msgid "Gehe dazu bitte auf den Menüpunkt \"Programme suchen\". Dort bekommst Du eine Auswahl von Programmen. Wenn Du Dein gewünschtes Programm gefunden hast, kannst Du dieses durch Klicken auf das Installationssymbol installieren.  Es ist möglich, dass Du vorher noch auf \"Quellen hinzufügen\" klicken musst, da es sein kann, dass das Programm in einer Quelle verfügabr ist, die Deinem System noch nicht bekannt ist."
@@ -1112,7 +1130,7 @@ msgstr ""
 msgid "für Subnotebooks/EEE-PCs"
 msgstr ""
 #: view_home_faq_17
-msgid "Wie kann ich Programme vorschlagen, dass diese in Communtu mit aufgenommen werden?"
+msgid "Wie kann ich einen Programmvorschlag einbringen?"
 msgstr ""
 #: view_my_mailer_repo_1
 msgid "Folgende Begründung wurde angegeben:"
@@ -1124,7 +1142,7 @@ msgstr ""
 msgid "Von:"
 msgstr ""
 #: view_home_faq_18
-msgid "Wenn Du über \"Bündel\" -> \"Neues Bündel\" ein bestimmtes Programm nicht gefunden hst, kann es daran liegen, das wir die Quelle aus dem das Programm kommt, noch nicht in Communtu eingetragen haben. Du kannst uns diese Quelle dort über den Punkt \"Repository vorschlagen\" melden, damit diese auch in Communtu eingearbeitet werden kann."
+msgid "Das ist ganz einfach. Dazu klickst Du im Bündeleditor (erreichbar wenn Du auf <b>Bündel</b> klickst) auf \"Repository vorschlagen\". Hier musst Du nun den Link zu dem Programm angeben und uns kurz erläutern, wieso wir das Programm in Communtu aufnehmen sollen."
 msgstr ""
 #: view_home_beteiligung_1
 msgid "Anwenden der Plattform"
@@ -1133,7 +1151,7 @@ msgstr ""
 msgid "non-free"
 msgstr ""
 #: view_home_faq_19
-msgid "Was sind eigentlich Quellen bzw. Repositories?"
+msgid "Was ist ein Repository?"
 msgstr ""
 #: trusted
 msgid "Ubuntu+Community"
@@ -1172,7 +1190,7 @@ msgstr ""
 msgid "Anzeigen"
 msgstr ""
 #: view_home_faq_20
-msgid "Programme werden in Ubuntu in Paketen bereitgestellt, die in sogenannten Paketquellen bzw. Repositories auf Webservern liegen.  Nähere Information zu <a href=\"http://wiki.ubuntuusers.de/Paketquellen\" target=\"_blank\">Repositorys</a>."
+msgid "Ein Repository (englisch für \"Paketquelle\") ist eine Sammlung von Programmen. Über die Paketverwaltung (in Gnome und XFCE ist dies Synaptic, in KDE ist dies KPackageKit) kannst du Programme aus den Paketquellen installieren. Gleichzeitig bekommst Du über genau die gleichen Paketquellen auch die Updates für die installierten Programme. Weitere Informationen zu Paketquellen findest du <a href=\"http://wiki.ubuntuusers.de/Paketquellen\" target=\"_blank\">hier</a>."
 msgstr ""
 #: view_messages_show_4
 msgid "Weiterleiten"
@@ -1190,7 +1208,7 @@ msgstr ""
 msgid "Konto 172 9375, Sparkasse Bremen, BLZ 290 501 01"
 msgstr ""
 #: view_home_faq_21
-msgid "Wie finde ich Communtu Quellen in meinem System?"
+msgid "Wie finde ich die Communtu-Paketquellen in meinem System?"
 msgstr ""
 #: view_home_derivatives_1
 msgid "Communtu setzt auf einer Ubuntu-Basisinstallation auf. Es gibt nun eine ganze Reihe von "
@@ -1200,9 +1218,6 @@ msgid " direkt und indirekt enthaltene Pakete"
 msgstr ""
 #: helper_distributions_6
 msgid "Repository löschen"
-msgstr ""
-#: view_home_faq_22
-msgid "Bei einem Gnome-System: Unter \"System -> Systemverwaltung -> Software-Quellen -> Softwarequellen von Drittanbietern\" sind die Communtu Quellen auffindbar. Bei einem KDE4-System sind sie unter \"K-Menu-> Programme-> System-> Systemverwaltung -> Software-Quellen -> Softwarequellen von Drittanbietern\" zu finden. Hier können sie auch wieder deaktiviert werden. Das Deaktivieren führt nicht zum Deinstallieren von Paketen noch werden dadurch die Updates für die installierten Pakete unterbrochen.  Diese werden aus anderen Softwarequellen, die ggf. von Communtu installiert wurden, bedient."
 msgstr ""
 #: view_home_derivatives_2
 msgid "Ubuntu-Derivaten"
@@ -1217,7 +1232,7 @@ msgstr ""
 msgid "zur Detailansicht"
 msgstr ""
 #: view_home_faq_23
-msgid "Wie entferne ich die Metapakete wieder?"
+msgid "Wie kann ich die Metapakete wieder entfernen?"
 msgstr ""
 #: view_home_derivatives_3
 msgid "http://wiki.ubuntuusers.de/Was_ist_Linux?#Was-sind-Derivate-einer-Distribution"
@@ -1231,9 +1246,6 @@ msgstr ""
 #: new_category
 msgid "Neue Kategorie"
 msgstr ""
-#: view_home_faq_24
-msgid "Dies kann über Synaptic erfolgen. Hierzu gehst Du bei einem Gnome-System auf \"System -> Systemverwaltung -> Synaptic-Paketverwaltung\". Bei einem KDE4-System musst Du über \"K-Menu -> Programme-> System -> Systemverwaltung -> Software-Verwaltung\" gehen. Wähle hier unten links den Punkt Ursprung. Suche nun in der darüber liegenden Liste packages.communtu.de und klicke es an. Auf der rechten Seite werden nun die verfügbaren Metapakete in Communtu angezeigt.  Das Entfernen geht über Rechtsmausklick und dann \"Zum Entfernen vormerken\". Dies muss dann danach durch \"Anwenden\" bestätigt werden.  Die einzelnen Pakete werden dadurch nicht deinstalliert, sondern lassen sich wie gewohnt über <a href=\"http://wiki.ubuntuusers.de/Synaptic\" target=\"_blank\">Synaptic</a> auswählen und deinstallieren."
-msgstr ""
 #: news
 msgid "Aktuelles"
 msgstr ""
@@ -1243,11 +1255,11 @@ msgstr ""
 #: view_home_beteiligung_9
 msgid "Momentan benötigen wir noch Unterstützung bei der Entwicklung des Projektes bei folgenden zwei Tätigkeiten:"
 msgstr ""
-#: press_archiv
-msgid "Pressearchiv"
-msgstr ""
 #: view_users__user_0
 msgid "aktivieren"
+msgstr ""
+#: press_archiv
+msgid "Pressearchiv"
 msgstr ""
 #: username
 msgid "Benutzername"
@@ -1688,7 +1700,7 @@ msgstr ""
 msgid "Diese Funktion ist für Gäste nicht verfügbar."
 msgstr ""
 #: livecd_email_body_failed
-msgid ", die Live-CD/DVD konnte leider erstellt werden. Wir kümmern uns um das Problem."
+msgid ", die Live-CD/DVD konnte leider nicht erstellt werden. Wir kümmern uns um das Problem."
 msgstr ""
 #: bundle_by_owner
 msgid "erstellte Bündel"
@@ -1945,8 +1957,14 @@ msgstr ""
 #: view_layouts_donate
 msgid "Spenden"
 msgstr ""
+#: view_home_faq_gnome_01
+msgid "Unter \"System -> Systemverwaltung -> Software-Quellen -> Softwarequellen von Drittanbietern\" sind die Communtu Quellen auffindbar. Hier können sie auch wieder deaktiviert werden."
+msgstr ""
 #: view_mailbox_show_3
 msgid "erhalten"
+msgstr ""
+#: view_home_faq_gnome_02
+msgid "Die Pakerverwaltung Synaptic erreichst Du über \"System -> Systemverwaltung -> Synaptic-Paketverwaltung\". Wähle hier unten links den Punkt Ursprung. Suche nun in der darüber liegenden Liste \"packages.communtu.org\" und klicke es an. Auf der rechten Seite werden nun die verfügbaren Metapakete in Communtu angezeigt. Das Entfernen geht über Rechtsmausklick und dann \"Zum Entfernen vormerken\". Dies muss dann danach durch \"Anwenden\" bestätigt werden."
 msgstr ""
 #: view_mailbox_show_5
 msgid "Du hast keine Nachrichten in deinem Posteingang."
@@ -2098,14 +2116,8 @@ msgstr ""
 #: view_home_icons_6
 msgid " Quellen installieren"
 msgstr ""
-#: view_home_about_10
-msgid "Wie kann ich meine Erfahrungen mit Programmen ins Communtu-System eintragen?"
-msgstr ""
 #: model_package_9
 msgid "Bei der Synchronisation des Repositories {{repo_name}} konnte kein PackageDistr-Eintrag für das Paket {{package_name}} gefunden werden."
-msgstr ""
-#: view_home_about_11
-msgid "Hast du gute Erfahrungen mit Programmen gemacht? Dann kannst du thematisch zusammengehörige Programme zu einem Bündel zusammenfassen und ins System eintragen. Dazu wählst du <b>Neues Bündel</b> unterhalb von <b>Bündel</b>. Du kannst dann Ubuntu-Pakete hinzufügen und mit Klick auf das Disketten-Symbol das Bündel im System abspeichern. Das Bündel soll einen Namen, eine Beschreibung und eine thematische Einordnung erhalten, damit andere Nutzer es auch verwenden können. Wie bei Ordnern und Dateien können Bündel nicht nur Ubuntu-Pakete, sondern auch andere Bündel enthalten. "
 msgstr ""
 #: view_home_about_12
 msgid "<b>Bündel verwalten</b> auf der linken Seitenleiste gibt dir einen Überblick über die verfügbaren Bündel. Schließlich gibt es unter <b>Ubuntu-Versionen</b> eine Übersicht über die im System verfügbaren Ubuntu-Versionen (Distributionen)."
@@ -2115,9 +2127,6 @@ msgid " Installation per Shell-Script"
 msgstr ""
 #: distribution
 msgid "Distribution"
-msgstr ""
-#: view_home_about_13
-msgid "Nachinstallation einzelner Funktionen"
 msgstr ""
 #: link_community
 msgid "http://www.ubuntuusers.de"
@@ -2133,9 +2142,6 @@ msgid "Du musst eingeloggt sein, um dieses Feature zu benutzen. Geht auch als \"
 msgstr ""
 #: view_packages__search_0
 msgid "Suche nach Paketen"
-msgstr ""
-#: view_home_about_14
-msgid "Du hast schon eine lauffähige Ubuntu-Installation und möchtest bestimmte Funktionen hinzufügen? Auch dafür kannst du Communtu benutzen. Du kannst unter <b>Bündel</b> einzelne Bündel installieren."
 msgstr ""
 #: view_distributions_edit_0
 msgid "Distribution bearbeiten"

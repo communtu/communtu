@@ -68,10 +68,12 @@ en:
   no_cookies: You don't have cookies enabled which are necessary in order to use Communtu. We recommend that you enable cookies in your webbrowser.
   controller_users_13: A Problem occured while activating this user.
   view_user_profiles__installation_29: " for the Konqueror and Opera browsers."
+  view_home_faq_xfce_01: "You can find the Communtu sources under \"Applications -> System -> Software Sources -> Other Software\". They can also be deactivated here. "
   controller_distributions_1: Distribution created.
   gpg_key: "GPG-key (optional):"
   controller_passwords_1: A link for changing the password has been sent to your e-mail-address.
   view_home_contact_us_0: Feedback
+  view_home_faq_xfce_02: To reach the package manager Synaptic you navigate to "Applications -> System -> Synaptic Package Manager". In the lower left part you click on "Origin". In the list above search for "packages.communtu.org" and click on it. In the right part of the window you will now see all metapackages available at Communtu. To remove a metapackage from your system you make a right click on it and choose "Mark for Removal". With a click on "Apply" it will be uninstalled.
   controller_distributions_2: Distribution updated.
   controller_passwords_2: No user found with this e-mail-address.
   view_home_contact_us_1: Here you have the possibility to send us suggestions and critique about Communtu.
@@ -119,6 +121,8 @@ en:
   view_categories_show_3: "Superior category:"
   add_sources: Add sources
   controller_suggestion_2: Add repositories and keys for the user
+  view_home_faq_all_01: "The deactivation does not involve unstalling packages nor will updates be held back for installed software. Updates are still obtained from the official sources and those, which Communtu might have added. "
+  view_home_faq_all_02: Packages are not being uninstalled and can be removed as normale via Synaptic or KPackageKit.
   controller_suggestion_4: Add repositories and keys for the bundle
   controller_suggestion_6: Add repositories and keys for the package
   view_users__mailbox_list_1: Mailbox
@@ -294,8 +298,10 @@ en:
   view_home_faq_01: What is a bundle?
   questionmark_conny: Click me and tell what is unclear to you.
   new_packages: "Newly added packages: "
+  view_home_faq_kde_01: You can find the Communtu sources under "K-Menu -> Programs -> System -> Software Sources -> Other Software". They can also be deactivated here.
   save_rough: Save rough selection
   view_home_derivatives_41: Ubuntu ultimate - Ubuntu with many desktop-designs and applications.
+  view_home_faq_kde_02: You can access KPackageKit via "K-Menu -> Programs -> System -> Administration -> Software Management". From the right dropdown menu you choose "packages.communtu.org". The list now appearing contains every metapackage available in Communtu. To uninstall a metapackage you click on one of the installed metapackages and mark it with the X right of the entry. To remove it from your system you need to click on "Apply". You now see a summary of the changes that will be made and after a click on "Ok" they will be removed from your system.
   view_home_news_15: Our blog
   view_home_derivatives_42: " - specialised for webservices."
   view_home_faq_02: A bundle is a compilation of software for a specific task you want to do with your computer.
@@ -306,18 +312,18 @@ en:
   view_user_profiles__profile_data_0: "Preparing the installation: adjust the preadjustments"
   view_home_news_17: Go to the blog
   view_home_derivatives_44: " - minimalist and fast version of Ubuntu for older PCs."
-  view_home_faq_04: A bundle, together with other bundles, can be installed as a compilation via "Download". A bundle can also be installed directly via the menu-entry "Bundle"
+  view_home_faq_04: There are two ways to install a bundle.<p> The first way is to click on <b>Download</b>. You will now be presented a small formular in which you can choose the tasks you want to perform with your computer. Next you have to choose which version of Ubuntu you want to use (in most cases it will be detected correctly and you only have to pick it from the list) and which GUI you use (Gnome = Ubuntu, KDE = Kubuntu, XFCE = Xubuntu). The last two steps are about the license and the security of the progams (which sources you want to be added and if the programs shall be open or closed source). You can now click on "Save rough selection and install" to get to the end and install the preselected bundles or you can click on "Save rough selection" to make a more detailed choice of the bundles being installed. Finally you need to add the Communtu sources to your system and, when this is finished, you only have to click on "Install" and the chosen bundles will be installed.<p> The second way is to click on <b>Bundle</b> and then on "Published bundles". You now see a list with every bundle created in Communtu. Here you can install a bundle directly with a click on "Install through metapackage", assuming you have added the sources earlier. If not, a click on "Add sources" will add them to your system.
   bundel_information_edit: edit bundle information
   view_metapackages_show_deb_error: While creating metapackages, an error occurred. We'll solve that problem as fast as possible.
   view_user_profiles__profile_data_1: On this page you can enter the basic settings of your computer.
   view_home_news_18: http://communtu.wordpress.com
   view_home_derivatives_45: http://wiki.ubuntuusers.de/Server_Installation (German)
   controller_metapackages_not_allowed: Only the owner of the bundle is allowed to perform this action.
-  view_home_faq_05: How do I create a bundle?
+  view_home_faq_05: How can I create a bundle?
   view_user_profiles__profile_data_2: "Attention: when finished, don't forget to click on the \"Save\"-button!"
   view_home_derivatives_46: " - Ubuntu server-version without any GUI."
   view_repositories_new_0: new repository for
-  view_home_faq_06: Click on "Bundle" and then you have to click "New Bundle". In the left box you can choose packages and add them to the bundle. When finished, you have to click on the "Save"-symbol in the bundle-editor. Now a new window appears in the main-window where you have to enter a meaningful name and a description. Don't forget to assign your bundle to a category.
+  view_home_faq_06: "For this you click on <b>Bundle</b> and then on \"New bundle\". On the left side you can see a list with programs and on the right side you can see an empty list. This is the bundle editor. With a click on the Plus-icon in the left list you can add programs to your bundle. When you are finished with adding programs to your bundle you must click on the save symbol. Now you have to enter a meaningful name for your bundle, state the version of your bundle and provide a description so that other users will know what your bundle is about. In order to get the bundle rated and commented you need to publish your bundle. Attention: publish a bundle only if you are sure it will not be changed in the near future! Editing the bundle when it is published is not possible.<p> If you think that a programs fits into one of your bundles you can edit it (assuming it is not published). To do this go to <b>Bundle</b> and then to \"My bundles\". Click on the bundle you want to edit. Choose \"Edit package list\" from the dropdown list on the right side. Now you're in the bundle editor again. When finished changing your package list it needs to be saved. Raise the version number and save the bundle. It is now updated."
   view_user_profiles__profile_data_3: What tasks do you want to do with your computer (only a rough choice, they can be chosen in detail later)?
   view_home_derivatives_47: http://en.wikipedia.org/wiki/JeOS
   view_home_faq_07: How can I rate a bundle?
@@ -354,14 +360,14 @@ en:
   view_home_derivatives_51: " - Installation of programs and version, which are not available through the official repositories."
   view_roles_edit_0: edit role
   view_user_profiles__profile_data_9: "Here you can select how secure or comfortable your sources should be:"
-  view_home_faq_11: How do I save the program-list of my system?
+  view_home_faq_11: "How do I create a bundle with my currently installed programs? "
   view_cart_new_from_list_3: " can be found with the above-mentioned command. (For this, the package {{debfoster}} has to be install. The created list only contains a minimal list of (meta-)packages which are necessary to rebuild your installation.)"
   controller_metapackages_7: Specify a version (e. g. 0.1)<br>
   view_user_profiles_help_4: You upgrade to a newer, supported, version or
   view_home_derivatives_52: " - a kind of Automatix for the ultimate edition."
   view_roles_edit_1: rolename
   view_users__sidebar_4: Ubuntu versions
-  view_home_faq_12: After a click on "Bundle" and "New bundle" you can find the link "Create bundle from a packages-list". A new page is loaded with instructions on how to upload your package-list to Communtu.
+  view_home_faq_12: "Under <b>Bundle</b> and \"New bundle\" you can find the entry \"Create bundle from a packages-list\", which can be clicked. It is described how you can upload a package-list to Communtu. As soon as the bundle is created it is the same procedure when creating a new bundle: enter a meaningful name, state the version, add the description and save it."
   view_cart_new_from_list_4: "Choose the file which contains the package-list:"
   controller_metapackages_8: With each update the version has to be increased<br>
   view_user_profiles_help_5: you expand Communtu with your version.
@@ -388,14 +394,14 @@ en:
     a suggestion for a new repository has been made at en.communtu.org:
   settings: Settings
   view_home_derivatives_57: " for subnotebooks/EEE-PCs."
-  view_home_faq_17: How can I propose a program so it can be added to Communtu?
+  view_home_faq_17: How can I suggest new programs?
   view_my_mailer_repo_1: "The following reason has been stated:"
   helper_distributions_0: free
   view_messages_show_0: "From:"
-  view_home_faq_18: If you haven't found a program via "Bundle" -> "New bundle", chances are high Communtu doesn't have the corresponding repositories containing that program. You can suggest the repository, where the program is in, to us via "Suggest repository" so we can implement the repository.
+  view_home_faq_18: This is not hard. You open up the bundle editor (reachable via <b>Bundle</b>) and click on "Suggest repository". Enter the link to the program and shortly tell us why we should add this program to Communtu.
   view_home_beteiligung_1: Using the platform
   helper_distributions_1: non-free
-  view_home_faq_19: What are sources or repositories?
+  view_home_faq_19: What is a repository?
   trusted: Ubuntu+Community
   view_home_beteiligung_2: We would be very delighted if you would use Communtu to carry out an installation. We already have many bundles which are set up to specific characteristics. Maybe one of the bundles is suitable for you. Furthermore you can upload your own package-list to share it with other users. This is the most simple way to create a bundle, but you don't have to publish it. Of course you can use Communtu only as a saving place for your package list so you can install it on an other computer.
   helper_distributions_2: synchronise repository
@@ -412,7 +418,7 @@ en:
   controller_cart_2: "The following packages couldn't be found: {{message}}<br> Please find the repositories which contain these packages and <a href=\"{{url}}\">make a suggestion to add the repository to Communtu.</a>"
   install_by_default: "Installed by default:"
   show: Show
-  view_home_faq_20: Programs within Ubuntu are provided via packages, which are located in the package-sources or repositories. Further information about <a href="https://help.ubuntu.com/community/Repositories" target="_blank">Repositories</a>.
+  view_home_faq_20: A repository is a collection of programs. With your package manager (Synaptic in Gnome and XFCE, KPackageKit in KDE) you can install programs from repositories. At the same time you receive updates for the installed programs via your package manager. Further information about repositories can be obtained <a href="https://help.ubuntu.com/community/Repositories/Ubuntu" target="_blank">here</a>.
   view_messages_show_4: Forward
   bundle: Bundle
   view_home_beteiligung_5: participate in the survey
@@ -422,7 +428,6 @@ en:
   view_home_derivatives_1: "Communtu is based on a standard-installation of Ubuntu. There are many different "
   view_packages_rdepends_1: " directly and indirectly contained packages"
   helper_distributions_6: delete repository
-  view_home_faq_22: To find the Communtu-sources in a Gnome-based system, you navigate to "System" -> "Administration" -> "Software Sources" -> "Third-Party Software". To find the Communtu-sources in a KDE-based system, you open the K-menu and then navigate to "Programs" -> "System" -> "Administration" -> Software Sources" -> "Third-Party Software". Here you deactivate the Communtu-sources. When deactivating the Communtu-sources, the installed programs won't be uninstalled nor are the updates. Updates are still obtained from the official sources, which may be added by Communtu.
   view_home_derivatives_2: "Ubuntu derivatives "
   model_message_0: Please enter a subject
   view_home_beteiligung_7: "We need feedback. Our desire is that Communtu will be used by everyone and for this we need feedback. You found an error in the system? Is there something that is incomprehensible to you? You think you could do something better? You have some suggestions for us? Feedback is accepted under "
@@ -432,7 +437,6 @@ en:
   view_home_beteiligung_8: Co-operation
   helper_distributions_8: Show sources
   new_category: New category
-  view_home_faq_24: This can be done with Synaptic. To reach Synaptic in a Gnome-based system, you open the menu "System" -> "Administration" -> "Synaptic Package Manager". To reach Synaptic in a KDE-based system, you open the K-menu and then navigate to "Programs" -> "System" -> "Administration" -> "Software Management". Next you choose the menu-entry "Origin" in the lower-left corner. In the list, which now appears above this section of Synaptic, you choose the entry "packages.communtu.de". In the main-part of Synaptic, on the right side of the program-window, you now have a list of the installed metapackages. To remove a metapackage you right-click it and choose "Mark for Removal". To finish the removal of a metapackage you now have just to click on "Apply" in the menu-bar above. However, the packages contained in this metapackage will not be removed! To remove these you have to choose the packages with Synaptic and remove them individually.
   news: News
   view_home_derivatives_4: " and many Ubuntu-users may ask themselves if they should use a derivative instead of Ubuntu. The answer is: normally the standard version of Ubuntu is completely sufficiant because with Communtu it is quite easy to install a derivative. However, this is not always a wise decision."
   view_home_beteiligung_9: "For the development of the project we currently need support with these two jobs:"
@@ -676,7 +680,9 @@ en:
   choose_bundle: Choose bundle
   controller_debs_2: Deb updated.
   view_layouts_donate: Donate
+  view_home_faq_gnome_01: "You can find the Communtu sources under \"System -> Administration -> Software Sources -> Other Software\". They can also be deactivated here. "
   view_mailbox_show_3: received
+  view_home_faq_gnome_02: To reach the package manager Synaptic you navigate to "System -> Administration -> Synaptic Package Manager". In the lower left part you click on "Origin". In the list above search for "packages.communtu.org" and click on it. In the right part of the window you will now see all metapackages available at Communtu. To remove a metapackage from your system you make a right click on it and choose "Mark for Removal". With a click on "Apply" it will be uninstalled.
   view_mailbox_show_5: You do not have any messages in your inbox.
   invalid_activation_code_entered: Invalid activation code entered.
   migrate_repository: migrate repository
@@ -731,19 +737,15 @@ en:
   model_package_7: couldn't determine URL for {{repo}}
   model_package_need_not_update: "{{url}} has not changed"
   view_home_icons_6: " install sources"
-  view_home_about_10: How can I submit my experience with programs to the Communtu-system?
   model_package_9: While the synchronization of the repository {{repo_name}} no PackageDistr-entry for the package {{package_name}} could be found.
-  view_home_about_11: "Did you have good experience with the programs? You can merge thematic programs to a bundle and add this to the system. To do so, you choose <b>new bundle</b> below <b>Bundles</b>. Then you can add Ubuntu packages to the bundle. After you have finished, click on the floppy-icon to save the bundle. The bundle needs a name, a description and a thematic classification so that other users can use it too. Just like folders and files, the bundle can consist not only of Ubuntu packages but also of other bundles too. "
   view_home_about_12: <b>Administrate bundles</b> on the left side offers an overview about the available bundles. At last, an overview about the available Ubunt versions (distributions) can be found at <b>Ubuntu versions</b>.
   view_home_icons_9: " installation via shell-script"
   distribution: Distribution
-  view_home_about_13: Post-installation of single functions
   link_community: http://ubuntuforums.org
   natur_geist_und_technik: "Natur, Geist und Technik - Verein zur F\xC3\xB6rderung der Allgemeinbildung e.V."
   fine_selection: Fine selection
   lib_system_0: In order to use this feature you have to be logged in. Logging in via "Guest session" is also possible.
   view_packages__search_0: Search for packages
-  view_home_about_14: You already have a Ubuntu-installation in use and want to add some functions? You can also use Communtu for this. You can install single bundles at <b>Bundles</b>.
   view_distributions_edit_0: edit distribution
   lib_system_1: You are not privileged to do this.
   controller_derivatives_1: Derivative created.
@@ -821,9 +823,9 @@ en:
   view_distributions_show_0: "Repositories:"
   view_layouts_application_20: Javascript is not activated! Please activate Javascript in your browser-settings.
   view_layouts_application_21: Communtu eases Ubuntu installations
-  view_metapackages_migrate_0: Wich distribution are the bundles to be migrated from?
-  view_distributions_show_1: check everything
   migrate: Migrate
+  view_distributions_show_1: check everything
+  view_metapackages_migrate_0: Wich distribution are the bundles to be migrated from?
   view_layouts_application_22: to the profile
   view_distributions_show_2: synchronise everything
   controller_metapackages_15: <option value='2'>Publish<option/>

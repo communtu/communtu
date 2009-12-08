@@ -26,10 +26,16 @@
 <p><%=t(:view_home_faq_20)%></p>
 
 <h3><%=t(:view_home_faq_21)%></h3>
-<p><%=t(:view_home_faq_22)%></p>
+<p><%=if is_gnome? then t(:view_home_faq_gnome_01)
+                   elsif is_kde? then t(:view_home_faq_kde_01)
+                   else t(:view_home_faq_xfce_01)end%></p>
+<p><%=t(:view_home_faq_all_01)%></p>
 
 <h3><%=t(:view_home_faq_23)%></h3>
-<p><%=t(:view_home_faq_24)%></p>
+<p><%=if is_gnome? then t(:view_home_faq_gnome_02)
+                   elsif is_kde? then t(:view_home_faq_kde_02)
+                   else t(:view_home_faq_xfce_02)end%></p>
+<p><%=t(:view_home_faq_all_02)%></p>
 </div>
 <%= render(:partial => 'box')%>
 <%= render(:partial => 'conny')%>

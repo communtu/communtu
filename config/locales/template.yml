@@ -348,22 +348,9 @@ auch installiert werden.<br /><br /> Dazu wird zunächst ein sogenanntes {{cdima
   view_distributions_show_3: sources.list einlesen
   view_distributions_show_4: "Repository hinzufügen"
   view_distributions_show_8: "Vor dem Löschen einer Distribution müssen alle Benutzer, die sie nutzen, ausgeloggt sein! Bist du sicher?"
-  view_home_about_10: Wie kann ich meine Erfahrungen mit Programmen ins Communtu-System eintragen?
-  view_home_about_11: "Hast du gute Erfahrungen mit Programmen gemacht? Dann kannst du thematisch zusammengehörige \
-    Programme zu einem Bündel zusammenfassen und ins System eintragen. Dazu wählst du <b>Neues Bündel</b> \
-    unterhalb von <b>Bündel</b>. Du kannst dann Ubuntu-Pakete hinzufügen und mit Klick auf das Disketten-Symbol \
-    das Bündel im System abspeichern. Das Bündel soll einen Namen, eine Beschreibung und eine \
-    thematische Einordnung erhalten, damit andere Nutzer es auch verwenden können. \
-    Wie bei Ordnern und Dateien können Bündel nicht nur Ubuntu-Pakete, sondern auch andere \
-    Bündel enthalten. "
   view_home_about_12: "<b>Bündel verwalten</b> auf der linken Seitenleiste gibt dir einen Überblick \
     über die verfügbaren Bündel. \
     Schließlich gibt es unter <b>Ubuntu-Versionen</b> eine Übersicht über die im System verfügbaren Ubuntu-Versionen (Distributionen)."
-  view_home_about_13: Nachinstallation einzelner Funktionen
-  view_home_about_14: "Du \
-    hast schon eine lauffähige Ubuntu-Installation und möchtest \
-    bestimmte Funktionen hinzufügen? Auch dafür kannst du Communtu benutzen. \
-    Du kannst unter <b>Bündel</b> einzelne Bündel installieren."
   view_home_about_16: "Um Communtu nutzen zu können, kannst du dich registrieren. \
     Das geht ganz einfach über den \"Registrieren\"-Knopf in der oberen Leiste."
   view_home_about_1: Wozu Communtu?
@@ -495,21 +482,19 @@ auch installiert werden.<br /><br /> Dazu wird zunächst ein sogenanntes {{cdima
   view_home_faq_01: Was ist ein Bündel?
   view_home_faq_02: Ein Bündel ist eine Zusammenstellung von Software für einen bestimmten Aufgabenbereich, den Du mit Deinem Rechner erledigen kannst.
   view_home_faq_03: Wie installiere ich ein Bündel?
-  view_home_faq_04: "Ein Bündel kann einmal in einer Zusammenstellung mit weiteren über den Punkt \"Download\" zum Computer hinzugefügt werden.
-  Andererseits kann auch ein Bündel direkt installiert werden, wenn Du über den Menüpunkt \"Bündel\" gehst."
-  view_home_faq_05: Wie erstelle ich ein Bündel?
-  view_home_faq_06: "Klicke dazu bitte den Punkt \"Neues Bündel\" unter \"Bündel\".
-  Aus den Paketen im linken Fenster der Webseite kannst Du dann die einzelnen Pakete auswählen und hinzufügen. Zum Schluss muss dann auf das Speichernsymbol im Bündelbereich geklickt werden.
-  Hier öffnet sich dann auf einer neuen Seite ein Formular, wo Du einen sinnvollen Titel und Beschreibung eingeben kannst. Bitte ordne Deinem Bündel auch eine entsprechende Kategorie zu."
+  view_home_faq_04: "Um ein Bündel zu installieren gibt es zwei Möglichkeiten.<p>
+Die erste Möglichkeit ist, dass Du auf <b>Download</b> klickst. Dort bekommst Du dann ein kleines Formular in welchem du die Aufgaben auswählst, die Du mit deinem Computer durchführen möchtest. Als Nächstes musst du deine Ubuntu-Version einstellen (diese wird in den meisten Fällen richtig erkannt und Du musst sie nur noch aus dem Menü auswählen) und welche Oberfläche Du benutzen möchtest (Gnome = Ubuntu, KDE = Kubuntu, XFCE = Xubuntu). Die letzten zwei Schritte betreffen die Lizenz und die Sicherheit der Programme, also welche Quellen du zulassen möchtest und ob deine Programme offen sind oder nicht. Du kannst nun entweder über \"Speichern\" direkt zum Abschluss des Prozesses kommen oder mit einem Klick auf \"Speichern und feiner auswählen\" noch eine genauere Auswahl treffen. Abschließend müssen die Quellen zu Deinem System hinzugefügt werden und, sobald dies abgeschlossen ist, musst du nur noch auf \"Installieren\" klicken und auf Dein System werden die von dir ausgewählten Programmen installiert.<p>
+Die zweite Möglichkeit ist, dass Du auf <b>Bündel</b> und dann \"Alle veröffentlichen Bündel\" klickst. Dort bekommst Du dann eine Übersicht über alle in Communtu erstellten Bündel. Hier müssen, sofern noch nicht geschehen, die Quellen hinzugefügt werden (ein Klick auf \"Quellen hinzufügen\") und dann mit einem Klick auf \"installieren mittels Metapaket\" das entsprechende Bündel installiert werden."
+  view_home_faq_05: Wie kann ich ein Bündel erstellen?
+  view_home_faq_06: "Hierfür klickst Du auf <b>Bündel</b> und dann auf \"Neues Bündel\". Links siehst Du nun eine Liste mit Programmen und rechts noch eine leere Liste. Dies ist der Bündeleditor. Mit einem Klick auf das Plus-Zeichen in der linken Liste kannst Du nun Programme zu Deinem Bündel hinzufügen. Sobald Du damit fertig bist klickst auf das Speichern-Symbol. Hier musst Du nun einen sinnvollen Namen für dein Bündel vergeben, die Version angeben und eine kleine Beschreibung eingeben damit andere Nutzer sofort wissen was für Programme in deinem Bündel sind. Damit andere Nutzer dein Bündel sehen, bewerten und installieren können muss dieses veröffentlicht werden. Dies geht erst, sobald das Bündel gespeichert ist. Achtung: bitte ein Bündel erst veröffentlichen wenn es ausgereift ist, also wenn Du der Meinung bist, hier wird sich so schnell nichts mehr ändern! Das Ändern des Bündels ist nicht mehr möglich wenn es veröffentlicht wurde.<p>
+Wenn Du der Meinung bist, dass dein Bündel um nützliche Programme erweitert werden kann oder ein Programm nicht mehr in dem Bündel enthalten sein soll musst Du zuerst unter <b>Bündel</b> und dann \"Meine Bündel\" das entsprechende Bündel auswählen. Rechts ist dann aus dem Aufklapp-Menü der Punkt \"Paketliste editieren\" auszuwählen. Anschließend erscheint wieder der Bündeleditor. Sobald die Paketliste bearbeitet wurde muss diese gespeichert werden. Nun muss die Version höhergesetzt werden und anschließend gespeichert werden. Das Bündel wurde nun aktualisiert."
   view_home_faq_07: Wie kann ich ein Bündel bewerten?
-  view_home_faq_08: "Du gehst auf den Menüpunkt \"Bündel\" und lässt Dir unter \"Veröffentlichte Bündel\" die Bündel anzeigen. Dort kannst Du bis zu fünf Sterne anklicken.
-  Danach erscheint ein Kommentarfeld, in dem Du diese Bewertung qualifizieren kannst."
+  view_home_faq_08: "Du gehst auf den Menüpunkt \"Bündel\" und lässt Dir unter \"Veröffentlichte Bündel\" die Bündel anzeigen. Dort kannst Du bis zu fünf Sterne anklicken. Danach erscheint ein Kommentarfeld, in dem Du diese Bewertung qualifizieren kannst."
   view_home_faq_09: Wie kann ich ein Bündel ändern?
   view_home_faq_10: "Du gehst auf den Menüpunkt \"Meine Bündel\" unter \"Bündel\" und läßt Dir da Deine Bündel auflisten. Das zu ändernde Bündel klickst Du nun an. Du bekommst nun alle wichtigen Informationen zu Deinem Bündel angezeigt.
   Unter \"Aktionen\" kannst Du nun dieses Bündel oder auch die Paketliste editieren. Wenn das Paket nicht veröffentlicht ist, dann kannst Du es auch löschen oder ansonsten auch veröffentlichen."
-  view_home_faq_11: Wie sichere ich die Programmliste meines Gesamtsystems?
-  view_home_faq_12: "Unter \"Bündel\" und dann \"Neues Bündel\" gibt es den Punkt \"Bündel aus Paketliste\", der anzuklicken ist.
-  Dort ist beschrieben, wie Du Deine Paketliste in Communtu hochladen kannst."
+  view_home_faq_11: Wie erstelle ich ein Bündel aus meinen installierten Programmen?
+  view_home_faq_12: "Unter <b>Bündel</b> und dann \"Neues Bündel\" gibt es den Punkt \"Bündel aus einer Paketliste erstellen\", der anzuklicken ist. Dort ist beschrieben, wie Du Deine Paketliste in Communtu hochladen kannst. Sobald das Bündel gespeichert ist, ist der Vorgang der Gleiche wie bei einem neuen Bündel erstellen: sinnvollen Namen auswählen, Version bestimmen, Beschreibung einfügen und speichern."
   view_home_faq_13: Wie finde ich Programme?
   view_home_faq_14: "Gehe dazu bitte auf den Menüpunkt \"Programme suchen\". Hier hast Du ein Suchfeld, in dem Du den Namen des gesuchten Prgramms angeben kannst.
   Weiter ist es möglich die Suche nur über Programme durchzuführen, in dem das Feld \"Nur Programme\" angeklickt wird und somit sonstige Bibliotheken nicht mehr angezeigt werden.
@@ -517,22 +502,20 @@ auch installiert werden.<br /><br /> Dazu wird zunächst ein sogenanntes {{cdima
   view_home_faq_15: Wie kann ich ein einzelnes Programm installieren?
   view_home_faq_16: "Gehe dazu bitte auf den Menüpunkt \"Programme suchen\". Dort bekommst Du eine Auswahl von Programmen. Wenn Du Dein gewünschtes Programm gefunden hast, kannst Du dieses durch Klicken auf das Installationssymbol installieren. 
   Es ist möglich, dass Du vorher noch auf \"Quellen hinzufügen\" klicken musst, da es sein kann, dass das Programm in einer Quelle verfügabr ist, die Deinem System noch nicht bekannt ist."
-  view_home_faq_17: Wie kann ich Programme vorschlagen, dass diese in Communtu mit aufgenommen werden?
-  view_home_faq_18: "Wenn Du über \"Bündel\" -> \"Neues Bündel\" ein bestimmtes Programm nicht gefunden hst, kann es daran liegen, das wir die Quelle aus dem das Programm kommt, noch nicht in Communtu eingetragen haben.
-  Du kannst uns diese Quelle dort über den Punkt \"Repository vorschlagen\" melden, damit diese auch in Communtu eingearbeitet werden kann."
-  view_home_faq_19: Was sind eigentlich Quellen bzw. Repositories?
-  view_home_faq_20: "Programme werden in Ubuntu in Paketen bereitgestellt, die in sogenannten Paketquellen bzw. Repositories auf Webservern liegen. 
-  Nähere Information zu <a href=\"http://wiki.ubuntuusers.de/Paketquellen\" target=\"_blank\">Repositorys</a>."
-  view_home_faq_21: Wie finde ich Communtu Quellen in meinem System?
-  view_home_faq_22: "Bei einem Gnome-System: Unter \"System -> Systemverwaltung -> Software-Quellen -> Softwarequellen von Drittanbietern\" sind die Communtu Quellen auffindbar.
-  Bei einem KDE4-System sind sie unter \"K-Menu-> Programme-> System-> Systemverwaltung -> Software-Quellen -> Softwarequellen von Drittanbietern\" zu finden.
-  Hier können sie auch wieder deaktiviert werden. Das Deaktivieren führt nicht zum Deinstallieren von Paketen noch werden dadurch die Updates für die installierten Pakete unterbrochen. 
-  Diese werden aus anderen Softwarequellen, die ggf. von Communtu installiert wurden, bedient."
-  view_home_faq_23: Wie entferne ich die Metapakete wieder?
-  view_home_faq_24: "Dies kann über Synaptic erfolgen. Hierzu gehst Du bei einem Gnome-System auf \"System -> Systemverwaltung -> Synaptic-Paketverwaltung\". Bei einem KDE4-System musst Du über \"K-Menu -> Programme-> System -> Systemverwaltung -> Software-Verwaltung\" gehen. Wähle hier unten links den Punkt Ursprung.
-  Suche nun in der darüber liegenden Liste packages.communtu.de und klicke es an. Auf der rechten Seite werden nun die verfügbaren Metapakete in Communtu angezeigt. 
-  Das Entfernen geht über Rechtsmausklick und dann \"Zum Entfernen vormerken\". Dies muss dann danach durch \"Anwenden\" bestätigt werden. 
-  Die einzelnen Pakete werden dadurch nicht deinstalliert, sondern lassen sich wie gewohnt über <a href=\"http://wiki.ubuntuusers.de/Synaptic\" target=\"_blank\">Synaptic</a> auswählen und deinstallieren."
+  view_home_faq_17: Wie kann ich einen Programmvorschlag einbringen?
+  view_home_faq_18: "Das ist ganz einfach. Dazu klickst Du im Bündeleditor (erreichbar wenn Du auf <b>Bündel</b> klickst) auf \"Repository vorschlagen\". Hier musst Du nun den Link zu dem Programm angeben und uns kurz erläutern, wieso wir das Programm in Communtu aufnehmen sollen."
+  view_home_faq_19: Was ist ein Repository?
+  view_home_faq_20: "Ein Repository (englisch für \"Paketquelle\") ist eine Sammlung von Programmen. Über die Paketverwaltung (in Gnome und XFCE ist dies Synaptic, in KDE ist dies KPackageKit) kannst du Programme aus den Paketquellen installieren. Gleichzeitig bekommst Du über genau die gleichen Paketquellen auch die Updates für die installierten Programme. Weitere Informationen zu Paketquellen findest du <a href=\"http://wiki.ubuntuusers.de/Paketquellen\" target=\"_blank\">hier</a>."
+  view_home_faq_21: Wie finde ich die Communtu-Paketquellen in meinem System?
+  view_home_faq_23: Wie kann ich die Metapakete wieder entfernen?
+  view_home_faq_gnome_01: "Unter \"System -> Systemverwaltung -> Software-Quellen -> Softwarequellen von Drittanbietern\" sind die Communtu Quellen auffindbar. Hier können sie auch wieder deaktiviert werden."
+  view_home_faq_gnome_02: "Die Pakerverwaltung Synaptic erreichst Du über \"System -> Systemverwaltung -> Synaptic-Paketverwaltung\". Wähle hier unten links den Punkt Ursprung. Suche nun in der darüber liegenden Liste \"packages.communtu.org\" und klicke es an. Auf der rechten Seite werden nun die verfügbaren Metapakete in Communtu angezeigt. Das Entfernen geht über Rechtsmausklick und dann \"Zum Entfernen vormerken\". Dies muss dann danach durch \"Anwenden\" bestätigt werden."
+  view_home_faq_kde_01: "Unter \"K-Menu -> Programme -> System -> Systemverwaltung -> Software-Quellen -> Softwarequellen von Drittanbietern\" sind die Communtu Quellen auffindbar. Hier können sie auch wieder deaktiviert werden."
+  view_home_faq_kde_02: "KPackageKit erreichst Du über \"K-Menu -> Programme-> System -> Systemverwaltung -> Software-Verwaltung\". Hier wählst Du rechts aus dem Ausklapp-Menü \"packages.communtu.org\" aus. Aus der Liste suchst Du nun das Metapaket aus, welches Du installiert hast und markierst es mit einem Klick auf das X rechts neben dem Eintrag. Um das Metapaket nun zu entfernen ist nur noch ein Klick auf \"Übernehmen\" notwendig. Es wird jetzt noch eine Übersicht der zu entfernenden Programme angezeigt und nach einem Klick auf \"Ok\" werden diese von deinem Computer gelöscht."
+  view_home_faq_xfce_01: "Unter \"Anwendungen -> System -> Softwarequellen von Drittanbietern\" sind die Communtu Quellen auffindbar. Hier können sie auch wieder deaktiviert werden."
+  view_home_faq_xfce_02: "Die Pakerverwaltung Synaptic erreichst Du über \"Anwendungen -> System-> Synaptic-Paketverwaltung\". Wähle hier unten links den Punkt Ursprung. Suche nun in der darüber liegenden Liste \"packages.communtu.org\" und klicke es an. Auf der rechten Seite werden nun die verfügbaren Metapakete in Communtu angezeigt. Das Entfernen geht über Rechtsmausklick und dann \"Zum Entfernen vormerken\". Dies muss dann danach durch \"Anwenden\" bestätigt werden."
+  view_home_faq_all_01: "Das Deaktivieren führt nicht zum Deinstallieren von Paketen noch werden dadurch die Updates für die installierten Pakete unterbrochen. Diese werden aus anderen Softwarequellen, die ggf. von Communtu installiert wurden, bedient."
+  view_home_faq_all_02: "Die einzelnen Pakete werden dadurch nicht deinstalliert sondern lassen sich wie gewohnt über Synaptic oder KPackageKit auswählen und deinstallieren."
   view_home_home_10: "<b>Ubuntu-Versionen</b> Übersicht über die im System verfügbaren Ubuntu-Versionen (Distributionen)."
   view_home_home_11: "<b>Benutzer verwalten</b> Hier kannst du als Admin die Rollen der Benutzer ändern. Vorsicht walten lassen!"
   view_home_home_12: "<b>Kategorien verwalten</b> Hier kannst du als Admin neue Kategorien erstellen oder die Struktur des Kategorienbaums ändern. Vorsicht walten lassen!"
@@ -873,3 +856,4 @@ auch installiert werden.<br /><br /> Dazu wird zunächst ein sogenanntes {{cdima
   you_can: "Du kannst Dich auch "
   zentrum_solidarische_oekonomie: "Zentrum für Solidarische Ökonomie"
   choose_category: "Bitte auswählen"
+  
