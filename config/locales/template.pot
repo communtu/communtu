@@ -1081,11 +1081,11 @@ msgstr ""
 #: controller_metapackages_9
 msgid "Die Beschreibung darf nicht leer sein<br>"
 msgstr ""
-#: view_home_derivatives_54
-msgid ""
-msgstr ""
 #: view_users__sidebar_6
 msgid "Kategorien verwalten"
+msgstr ""
+#: view_home_derivatives_54
+msgid ""
 msgstr ""
 #: view_home_faq_14
 msgid "Gehe dazu bitte auf den Menüpunkt \"Programme suchen\". Hier hast Du ein Suchfeld, in dem Du den Namen des gesuchten Prgramms angeben kannst. Weiter ist es möglich die Suche nur über Programme durchzuführen, in dem das Feld \"Nur Programme\" angeklickt wird und somit sonstige Bibliotheken nicht mehr angezeigt werden. Weiter ist es auch möglich eine Debian-Section auszuwählen, der die Auswahl an Programmen anhand von Kategorien vorselektiert."
@@ -1096,14 +1096,14 @@ msgstr ""
 #: announce
 msgid "announce"
 msgstr ""
+#: view_users__sidebar_7
+msgid "Derivate verwalten"
+msgstr ""
 #: confirm_new_passwd
 msgid "Neues Passwort bestätigen"
 msgstr ""
 #: view_home_derivatives_55
 msgid " - Mediacenter."
-msgstr ""
-#: view_users__sidebar_7
-msgid "Derivate verwalten"
 msgstr ""
 #: view_home_faq_15
 msgid "Wie kann ich ein einzelnes Programm installieren?"
@@ -1684,6 +1684,9 @@ msgstr ""
 #: view_packages__packagelist_2
 msgid "Suche:"
 msgstr ""
+#: cant_debianized
+msgid "Bitte gib dem Bündel einen englischen Titel und eine englische Beschreibung."
+msgstr ""
 #: edit_press_archiv
 msgid "Pressearchiv bearbeiten"
 msgstr ""
@@ -1820,7 +1823,7 @@ msgstr ""
 msgid " Freie Software (Quellen liegen offen und dürfen weiterentwickelt werden)"
 msgstr ""
 #: view_metapackages_show_save_2
-msgid "Neues Metapaket erstellen:"
+msgid "Neues Metapaket erstellen."
 msgstr ""
 #: view_home_icons_13
 msgid "Programm-Bündel"
@@ -2190,6 +2193,9 @@ msgid "  Keine fehlgeschlagenen Deb-Generierungen vorhanden! Glückwunsch!"
 msgstr ""
 #: view_home_home_13
 msgid "<b>Aktuelles</b> Hinweise auf Veranstaltungen zu Communtu, Communtu-Blog ..."
+msgstr ""
+#: help_translation
+msgid "Hilfe bei der Übersetzung - Schreib uns eine E-Mail"
 msgstr ""
 #: view_debs_index_3
 msgid "Alle fehlgeschlagenen debs erzeugen <b>Achtung: nur unter admin.communtu.de ausführen!</b>"

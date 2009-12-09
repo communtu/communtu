@@ -1681,6 +1681,9 @@ msgstr ""
 #: view_packages__packagelist_2
 msgid "Search:"
 msgstr ""
+#: cant_debianized
+msgid "To create this meta-package an English title and descriptionis needed."
+msgstr ""
 #: edit_press_archiv
 msgid "edit press archives"
 msgstr ""
@@ -1817,7 +1820,7 @@ msgstr ""
 msgid " Free software (sources are open and further development is allowed)"
 msgstr ""
 #: view_metapackages_show_save_2
-msgid "Create new meta-package:"
+msgid "Create new meta-package."
 msgstr ""
 #: view_home_icons_13
 msgid "program-bundle"
@@ -2187,6 +2190,9 @@ msgid "  There are no failed deb-generations! Congratulations!"
 msgstr ""
 #: view_home_home_13
 msgid "<b>News</b> Reference to events about Communtu, the Communtu-blog ..."
+msgstr ""
+#: help_translation
+msgid "Needing help with the translation? - Write us an e-mail!"
 msgstr ""
 #: view_debs_index_3
 msgid "Create every failed deb <b>Warning: only do this at admin.communtu.de!</b>"

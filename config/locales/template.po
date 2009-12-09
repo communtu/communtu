@@ -1493,6 +1493,10 @@ msgstr "user found"
 msgid "announce"
 msgstr "announce"
 
+#: view_users__sidebar_7
+msgid "Derivate verwalten"
+msgstr "Administrate derivatives"
+
 #: confirm_new_passwd
 msgid "Neues Passwort bestätigen"
 msgstr "Confirm new password"
@@ -1500,10 +1504,6 @@ msgstr "Confirm new password"
 #: view_home_derivatives_55
 msgid " - Mediacenter."
 msgstr " - Mediacenter."
-
-#: view_users__sidebar_7
-msgid "Derivate verwalten"
-msgstr "Administrate derivatives"
 
 #: view_home_faq_15
 msgid "Wie kann ich ein einzelnes Programm installieren?"
@@ -2303,6 +2303,10 @@ msgstr "show repository"
 msgid "Suche:"
 msgstr "Search:"
 
+#: cant_debianized
+msgid "Bitte gib dem Bündel einen englischen Titel und eine englische Beschreibung."
+msgstr "To create this meta-package an English title and descriptionis needed."
+
 #: edit_press_archiv
 msgid "Pressearchiv bearbeiten"
 msgstr "edit press archives"
@@ -2484,8 +2488,8 @@ msgid " Freie Software (Quellen liegen offen und dürfen weiterentwickelt werden
 msgstr " Free software (sources are open and further development is allowed)"
 
 #: view_metapackages_show_save_2
-msgid "Neues Metapaket erstellen:"
-msgstr "Create new meta-package:"
+msgid "Neues Metapaket erstellen."
+msgstr "Create new meta-package."
 
 #: view_home_icons_13
 msgid "Programm-Bündel"
@@ -2988,6 +2992,10 @@ msgstr "  There are no failed deb-generations! Congratulations!"
 #: view_home_home_13
 msgid "<b>Aktuelles</b> Hinweise auf Veranstaltungen zu Communtu, Communtu-Blog ..."
 msgstr "<b>News</b> Reference to events about Communtu, the Communtu-blog ..."
+
+#: help_translation
+msgid "Hilfe bei der Übersetzung - Schreib uns eine E-Mail"
+msgstr "Needing help with the translation? - Write us an e-mail!"
 
 #: view_debs_index_3
 msgid "Alle fehlgeschlagenen debs erzeugen <b>Achtung: nur unter admin.communtu.de ausführen!</b>"

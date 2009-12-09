@@ -589,6 +589,7 @@ en:
   view_packages__packagelist_1: "Programs&nbsp;only:"
   view_repositories_show_0: show repository
   view_packages__packagelist_2: "Search:"
+  cant_debianized: To create this meta-package an English title and descriptionis needed.
   edit_press_archiv: edit press archives
   four_and_fourty_letters: Between 4 and 40 letters
   view_repositories_show_4: "Package-list for {{arch}}:"
@@ -634,7 +635,7 @@ en:
   view_derivatives_show_2: "dialog-program:"
   controller_packages_1: Package created
   view_user_profiles__profile_data_14: " Free software (sources are open and further development is allowed)"
-  view_metapackages_show_save_2: "Create new meta-package:"
+  view_metapackages_show_save_2: Create new meta-package.
   view_home_icons_13: program-bundle
   view_metapackages__metalist_3: publ.
   invisible_distribution: " Invisible distribution"
@@ -762,6 +763,7 @@ en:
   view_metapackages_show_save: save bundle as a metapackage
   view_debs_index_2: "  There are no failed deb-generations! Congratulations!"
   view_home_home_13: <b>News</b> Reference to events about Communtu, the Communtu-blog ...
+  help_translation: Needing help with the translation? - Write us an e-mail!
   view_debs_index_3: "Create every failed deb <b>Warning: only do this at admin.communtu.de!</b>"
   view_home_home_14: "There is also "
   view_home_home_15: detailled information
@@ -820,8 +822,8 @@ en:
   view_layouts_application_19: https://www.paypal.com/en_GB/i/btn/btn_donate_LG.gif
   view_home_home_33: Do you want to know more about Communtu? Do you have suggestions or questions? We are looking forward to be in touch with you.
   view_repositories_index_5: new repository
-  view_distributions_show_0: "Repositories:"
   view_layouts_application_20: Javascript is not activated! Please activate Javascript in your browser-settings.
+  view_distributions_show_0: "Repositories:"
   view_layouts_application_21: Communtu eases Ubuntu installations
   migrate: Migrate
   view_distributions_show_1: check everything
