@@ -16,6 +16,7 @@ class MetapackagesController < ApplicationController
     @metapackage = Metapackage.find(params[:id])
     @meta_english_title = Translation.find(:first, :conditions => {:translatable_id => @metapackage.name_tid, :language_code => "en"})
     if @meta_english_title == nil
+#      @meta_english_title = ""
       @meta_english_title.contents = "unknown"
     end
     @conflicts = @metapackage.internal_conflicts
@@ -33,6 +34,7 @@ class MetapackagesController < ApplicationController
   # GET /metapackages/new.xml
   def new
     @metapackage = Metapackage.new
+    @metapackage.name = t(:new_bundle)
     @backlink    = request.env['HTTP_REFERER']                            
     respond_to do |format|
       format.html # new.html.erb
@@ -51,48 +53,6 @@ class MetapackagesController < ApplicationController
     @categories  = Category.find(1)
     @backlink    = request.env['HTTP_REFERER']
     @conflicts   = {}
-  end
-
-  # POST /metapackages
-  # POST /metapackages.xml
-  def create
-    @metapackage = Metapackage.new(params[:metapackage])
-    @translation_new  = Translation.new  
-    @last_trans = Translation.find(:first, :order => "translatable_id DESC")
-    last_id = @last_trans.translatable_id
-    @translation_new.translatable_id = last_id + 1
-    @metapackage.name_tid = @translation_new.translatable_id
-    @translation_new.lanuage_code = I18n.locale.to_s
-    @translation_new.save   
-    @translation_des  = Translation.new  
-    @translation_des.translatable_id = last_id + 2
-    @metapackage.description_tid = @translation_des.translatable_id
-    @translation_des.contents = ""
-    @translation_des.lanuage_code = I18n.locale.to_s
-    @translation_des.save                   
-    @metapackage.modified = true
-    if @metapackage.name==t(:new_bundle) or Metapackage.all.map{|m| m.debian_name}.include?(@metapackage.debian_name) then
-      flash[:error] = t(:controller_metapackages_2)
-      render :action => "new"
-    elsif params[:metapackage][:description].nil? or params[:metapackage][:description].empty? then
-      flash[:error] = t(:controller_metapackages_3)
-      render :action => "new"
-    else
-      #todo: check that name is unique and version is present
-      respond_to do |format|
-        if @metapackage.save
-          flash[:notice] = t(:controller_metapackages_4)
-          fork do
-            system 'echo "Metapackage.find('+@metapackage.id.to_s+').debianize" | script/console production'
-          end
-          format.html { redirect_to(@metapackage) }
-          format.xml  { render :xml => @metapackage, :status => :created, :location => @metapackage }
-        else
-          format.html { render :action => "new" }
-          format.xml  { render :xml => @metapackage.errors, :status => :unprocessable_entity }
-        end  
-      end
-    end
   end
 
   # PUT /metapackages/1
@@ -239,8 +199,16 @@ class MetapackagesController < ApplicationController
 
   def save
     @metapackage = Metapackage.find(params[:id])
+    if @metapackage.name == ""
+      @metapackage.name = t(:new_bundle)
+    end
     if !is_admin? and !check_owner(@metapackage,current_user) then
       redirect_to metapackage_path(@metapackage)
+      return
+    end
+    if @metapackage.cant_be_debianized then
+      flash[:error] = t(:cant_debianized)
+      redirect_to edit_metapackage_path(@metapackage)
       return
     end
     if !@metapackage.internal_conflicts.empty?

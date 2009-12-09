@@ -11,7 +11,7 @@ class CartController < ApplicationController
     def prepare_create
         if not editing_metapackage?
             cart      = Cart.new
-            cart.name = t(:new_bundle)
+            cart.name = t(:new_bundle)+"_"+current_user.login
             cart.save!
             
             session[:cart] = cart.id
@@ -63,7 +63,38 @@ class CartController < ApplicationController
 
             if meta.nil?
                 meta = Metapackage.new
-                meta.name            = cart.name
+		@translation_new  = Translation.new  
+    		@last_trans = Translation.find(:first, :order => "translatable_id DESC")
+    		last_id = @last_trans.translatable_id
+    		@translation_new.translatable_id = last_id + 1
+    		meta.name_tid = @translation_new.translatable_id
+    		@translation_new.language_code = I18n.locale.to_s
+		@translation_new.contents = cart.name
+    		@translation_new.save   
+    		@translation_des  = Translation.new  
+    		@translation_des.translatable_id = last_id + 2
+    		meta.description_tid = @translation_des.translatable_id
+    		@translation_des.contents = ""
+    		@translation_des.language_code = I18n.locale.to_s
+    		@translation_des.save                   
+    		  if I18n.locale.to_s != "en"
+      			translate_name = Translation.new
+      			translate_name.translatable_id = last_id + 1
+      			translate_name.contents = ""
+      			translate_name.language_code = "en"
+      			translate_name.save
+      			translate_des = Translation.new
+      			translate_des.translatable_id = last_id + 2
+      			translate_des.contents = ""
+      			translate_des.language_code = "en"
+      			translate_des.save
+    		  end
+#                if cart.name == "" or cart.name == nil
+#                meta.name = t(:new_bundle)
+#                cart.name = t(:new_bundle)
+#                else
+ #               meta.name            = cart.name
+#                end
                 meta.user_id         = current_user.id
                 meta.category_id     = 1
                 meta.version         = "0.1"

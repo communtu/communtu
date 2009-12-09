@@ -13,7 +13,7 @@ class Metapackage < BasePackage
   
   acts_as_rateable
   
-  validates_presence_of :name, :license_type, :user, :category # , :version, :description
+  validates_presence_of :license_type, :user, :category # , :version, :description
   
   @state = { :pending => 0, :published => 1, :rejected => 2 }
 
@@ -49,6 +49,10 @@ class Metapackage < BasePackage
     trans = ""
     end
     return trans
+  end
+ 
+  def cant_be_debianized
+    self.name_english == "" or self.name_english == nil or self.description_english == "" or self.description_english == nil
   end
 
   def self.state

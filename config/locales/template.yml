@@ -23,6 +23,7 @@ de:
   bundle_open_new_window: Bündel wird im neuen Fenster geöffnet.
   by_bank_transfer: "per Überweisung"
   cannot_migrate: "Kann nur migrieren, wenn die Distribution frisch ist"
+  cant_debianized: "Bitte gib dem Bündel einen englischen Titel und eine englische Beschreibung."
   category_with_colon: "Kategorie:"
   category_without_colon: Kategorie
   changed_settings: "Dieser Schritt muss neu ausgeführt werden, weil du die Einstellungen geändert hast."
@@ -165,6 +166,7 @@ de:
   helper_distributions_2: Repository synchronisieren
   helper_distributions_6: "Repository löschen"
   helper_distributions_8: "Quellen anzeigen"
+  help_translation: "Hilfe bei der Übersetzung - Schreib uns eine E-Mail"
   homepage: Startseite
   imprint: Impressum
   invisible_distribution: Unsichtbare Distribution
@@ -672,7 +674,7 @@ Wenn Du der Meinung bist, dass dein Bündel um nützliche Programme erweitert we
   view_metapackages_show_deb_error: Beim Erzeugen von Metapaketen ist ein Fehler aufgetreten. Wir kümmern uns um das Problem.
   view_metapackages_show_modified: "Das Bündel enthält Änderungen."
   view_metapackages_show_save: "Bündel als Metapaket speichern"
-  view_metapackages_show_save_2: "Neues Metapaket erstellen:"
+  view_metapackages_show_save_2: "Neues Metapaket erstellen."
   view_metapackages_show_save_3: "Zum Erstellen des Metapakets muss ein englischer Titel und eine englische Beschreibung vergeben werden."
   view_metapackages_show_version: "Version:"
   view_metapackages_show_version_v: "(Version {{v}})"

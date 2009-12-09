@@ -7,7 +7,7 @@
 			<span class="headline">   <%=h @metapackage.name %>
 </span> <br />
 <font size="-3"><%=t(:view_metapackages_show_0)%><b><%= link_to @metapackage.user.login, user_path(@metapackage.user.id) %></b></font>
-<%=link_to (image_tag("message.png", :alt=>t(:compose_new_message),:title=>t(:compose_new_message), :mouseover=>"message_rollover.png",:border=>"0" ), {:controller=>"sent", :action=>"new", :mail_to=>@metapackage.user.id}) %>
+<%=link_to(image_tag("message.png", :alt=>t(:compose_new_message),:title=>t(:compose_new_message), :mouseover=>"message_rollover.png",:border=>"0" ), {:controller=>"sent", :action=>"new", :mail_to=>@metapackage.user.id}) %>
 <p>
   <%= @metapackage.description %>
 </p>
@@ -102,11 +102,7 @@
     <%=t(:view_metapackages_show_modified)%>  <%=show_version(@metapackage)%> &nbsp;
     <% if !@metapackage.debianizing %> 
       <%=t(:view_metapackages_show_save)%>
-      <% if @metapackage.name_english == "" or @metapackage.name_english == nil or @metapackage.description_english == "" or @metapackage.description_english == nil %>
-      <%=link_to (image_tag("apps/Metapackage.png", :alt=>t(:view_metapackages_show_save_3),:title=>t(:view_metapackages_show_save_3), :border=>"0" ), :action => 'edit', :id => @metapackage.id )%>
-     <% else %>
-      <%=link_to (image_tag("apps/Metapackage.png", :alt=>t(:view_metapackages_show_save_2),:title=>t(:view_metapackages_show_save_2), :border=>"0" ), :action => 'save', :id => @metapackage.id )%>
-    <% end %>
+      <%=link_to(image_tag("apps/Metapackage.png", :alt=>t(:view_metapackages_show_save_2),:title=>t(:view_metapackages_show_save_2), :border=>"0" ), :action => 'save', :id => @metapackage.id )%>
     <% end %>
   </div>
 <% end %>
