@@ -36,7 +36,7 @@
 <% if not @package.urls.nil? and not @package.urls.empty? then %>
 <p>
   <b><%=t(:view_packages_show_11)%></b><br />
-  <%=auto_link @package.urls.gsub(/ /,'<br>'), link = :all, :target => '_blank' %>
+  <%=auto_link @package.urls.gsub(/ /,'<br />'), link = :all, :target => '_blank' %>
 </p>
 <p>
 <% end %>
@@ -47,7 +47,7 @@
   <b><%=t(:videos)%></b><br />
   <ul>
   <%for v in @package.videos %>
-    <li><%=auto_link v.url.gsub(/ /,'<br>'), link = :all, :target => '_blank' %>
+    <li><%=auto_link v.url.gsub(/ /,'<br />'), link = :all, :target => '_blank' %>
 <br />
     <%= v.description%></li>
   <% end %>

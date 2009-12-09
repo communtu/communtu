@@ -327,7 +327,7 @@ class Repository < ActiveRecord::Base
             end
             readpackage.call ""
         else
-           return {:error => I18n.t(:model_package_12,{:file=>url})+":<br><code>"+line+"</code>"}
+           return {:error => I18n.t(:model_package_12,{:file=>url})+":<br /><code>"+line+"</code>"}
         end
       end
       return {:packages => packages}

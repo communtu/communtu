@@ -27,10 +27,10 @@
   </p>
 <% if not @package.videos.empty? then %>
   <p>
-  <b><%=t(:videos)%><br></b>
+  <b><%=t(:videos)%></b><br />
   <ul>
   <%for v in @package.videos %>
-    <li><%=auto_link v.url.gsub(/ /,'<br>'), link = :all, :target => '_blank' %>
+    <li><%=auto_link v.url.gsub(/ /,'<br />'), link = :all, :target => '_blank' %>
     <%= v.description%>
 	<%= link_to t(:edit), :controller => :videos, :action => :edit, :id => v.id %></li>
   <% end %>
@@ -38,8 +38,8 @@
 <% end %>
   <p>
     <b><%=t(:view_packages_edit_8)%></b><br />
-    URL: <%= text_field_tag :video_url, "", :size => 65 %><br>
-<%=t(:view_packages_edit_9)%><br>
+    URL: <%= text_field_tag :video_url, "", :size => 65 %><br />
+<%=t(:view_packages_edit_9)%><br />
 	<%= text_area :video_descr, :v, :rows => 3, :cols => 80 %>
   </p>
     <p>

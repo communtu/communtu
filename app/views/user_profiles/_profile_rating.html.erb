@@ -5,7 +5,7 @@
 <% form_tag(user_user_profile_path(current_user) + "/update_ratings", options = {:name => "ratings", :method => :put}) do %>
 
 <h3><%=t(:rough_selection)%></h3>
-<p><%=t(:view_user_profiles__profile_data_3)%><br>
+<p><%=t(:view_user_profiles__profile_data_3)%></p>
 		<table><tr>
 		<% count = 0%>
   <% main_categories = Category.find(:all, :conditions => {:parent_id => 1, :main => true}) %>
@@ -26,13 +26,13 @@
 		  <% end %>
 		<% end %>
 		</tr>
-		</table></p>
+		</table>
     <div style="margin-top:20px;">
         <%= submit_tag t(:save_rough), :name => "rough" %>
         <%= submit_tag t(:save_rough_install), :name => "rough_install" %>
     </div>
 
-<br>
+<br />
 <h3><%=t(:fine_selection)%></h3>
 
 <p><%=t(:view_user_profiles__profile_rating_1)%><img src='/images/add.png' width='10' height='10'><%=t(:view_user_profiles__profile_rating_2)%>

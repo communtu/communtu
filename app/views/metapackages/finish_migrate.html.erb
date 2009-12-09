@@ -1,7 +1,7 @@
 <p><%=t(:view_metapackages_finish_migrate_0)%><%= @from_dist.short_name %><%=t(:view_metapackages_finish_migrate_1)%><%= @to_dist.short_name %><%=t(:view_metapackages_finish_migrate_2)%></p>
 
 <% if !(not_found_arr=@not_found.select {|meta,packages| !packages.empty?}).empty? %>	
-  <p><%=t(:view_metapackages_finish_migrate_3)%><br><br>
+  <p><%=t(:view_metapackages_finish_migrate_3)%></p>
   <table border=1, style="border-style:solid; border-width:1px; border-collapse:collapse", cellpadding=3 >
 	<tr><th><%=t(:bundle)%></th><th><%=t(:packages)%></th><tr>
     <% not_found_arr.each do |nf| %>

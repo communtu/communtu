@@ -24,11 +24,11 @@
 	    <li><% url2 = 'apt://'+metas%>
              <%= link_to t(:view_user_profiles__installation_25), url2 %>
              <% if current_user.profile_changed && current_user.profile_version > 1 %>
-		        <br><%=t(:changed_settings)%><% end %>
-		     <br><%=t(:view_user_profiles__installation_27)%><%= link_to 'apturl', t(:view_user_profiles__installation_28)%><%=t(:view_user_profiles__installation_29)%></li></ul>
+		        <br /><%=t(:changed_settings)%><% end %>
+		     <br /><%=t(:view_user_profiles__installation_27)%><%= link_to 'apturl', t(:view_user_profiles__installation_28)%><%=t(:view_user_profiles__installation_29)%></li></ul>
 	</li>
 </ol>
-<%=t(:view_user_profiles__installation_30)%><br>
+<%=t(:view_user_profiles__installation_30)%><br />
 <%=t(:view_user_profiles__installation_31, {:synaptic => package_link("Synaptic")})%><br /><br />
 <%=t(:view_user_profiles__installation_33)%>
 <%= link_to (t(:sources), user_path(current_user) + "/user_profile/tabs/4")%>

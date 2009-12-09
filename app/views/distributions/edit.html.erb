@@ -27,10 +27,10 @@
     <b><%=t(:predecessor)%></b><br />
 	<%= f.collection_select('distribution_id', Distribution.all, :id, :name)%>
   </p>
-  <p><%=t(:preliminary_distribution)%></b>&nbsp;
-    <b><%= f.check_box(:preliminary) %><br></li>
-  <p><%=t(:invisible_distribution)%></b>&nbsp;
-    <b><%= f.check_box(:invisible) %><br></li>
+  <p><b><%=t(:preliminary_distribution)%></b>&nbsp;
+    <b><%= f.check_box(:preliminary) %></b></p>
+  <p><b><%=t(:invisible_distribution)%></b>&nbsp;
+    <b><%= f.check_box(:invisible) %></b></p>
 
   <p>
     <%= f.submit t(:save) %>
