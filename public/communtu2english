@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Communtu"
+echo "Communtu (www.communtu.de)"
 echo "Script für die Installation von englisch benannten Metapaketen anstelle der deutsch benannten"
 echo "Dieses Skript hat keine Auswirkungen auf installierte Software"
 echo "Möglicherweise werden allerdings weitere Pakete installiert, falls sich Communtu-Bündel geändert haben"
