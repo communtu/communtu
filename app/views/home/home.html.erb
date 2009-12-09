@@ -5,6 +5,14 @@
 <div align="center" style="width:100%; height:48px; top:0px; background: #FF0000;"><p style="color:#FFFFFF; font-size:12px;"><%=t(:view_layouts_application_20)%></p></div>
 </noscript> 
 
+<% if I18n.locale.to_s == "de" %>
+<h2>Umstellung unseres Repositorys</h2>
+<table><tr><td>
+<%= image_tag("conny_communtu.png") %>
+</td><td>
+<p>Wir haben unser Respository auf englisch umgestellt, wodurch sich die Paket-Namen unserer Metapakate verändert haben. Hier gibt es ein Skript, welches alle installierten Communtu-Pakete auf die englisch-namigen Pakete umstellt. Wenngleich auch die Pakete mit deutschen Namen noch verfügbar sind, werden sie jedoch nicht mehr aktualisiert. Wir empfehlen deshalb, das Skript auszuführen, falls ihr schon mal mit Communtu etwas installiert habt.</p><p>Diese <a href="/communtu2english">Datei</a> bitte mit "Speichern unter" herunterladen und mit Rechtsklick unter Eigenschaften bei Zugriffsrechte den Haken bei "Datei als Programm ausführen" setzen. Dann mit Anklicken und ausführen lassen.</td></tr></table>
+<% end %>
+
 <%=t(:view_home_home_26)%>
 <br />
 <%=t(:view_home_home_27)%>
