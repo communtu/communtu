@@ -21,7 +21,12 @@ class Repository < ActiveRecord::Base
   def file_name arch
     self.dir_name + "/" + self.id.to_s + "_" + arch.name
   end
-  
+
+  # get URL of Packages.gz
+  def get_url(arch)
+    Repository.get_url_from_source(self.name,arch)[:url]
+  end
+
   # migrate a repository to a different distribution
   def migrate(dist)
     newurl = url.gsub(self.distribution.short_name.downcase, \
