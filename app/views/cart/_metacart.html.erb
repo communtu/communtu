@@ -3,7 +3,7 @@
 	<% name = cart.name %>
 	<% if cart.name == "Neues Bündel" %>
 <% else %>
-	<%=t(:name_with_colon)%><b><%= name %></b>
+	<p><%=t(:name_with_colon)%><b><%= name %></b></p>
 <% end %>
     <ul class="cartlist">
 	<% cart.base_packages.each do |package|%>

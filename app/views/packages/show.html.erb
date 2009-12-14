@@ -56,7 +56,7 @@
 
 <p>
   <b><%=t(:description_with_colon)%></b><br />
-  <%= @package.description %>
+  <%= CGI.escapeHTML(@package.description) %>
 </p>
 
 <p>
