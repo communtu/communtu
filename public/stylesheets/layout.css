@@ -696,10 +696,10 @@ div.tabz_content {
 div.cartlist {
 
     position:relative;
-    left:180px;
+    left:280px;
     top:-14px;
     height:0px;
-    width:60px;
+   /* width:60px;*/
 }
 
 ul.cartlist {
