@@ -5,6 +5,9 @@
 <%=t(:view_user_profiles__installation_1)%>
 
 <% else %>
+<p><%=t(:livecd_start_message)%><br>
+<%=current_user.selected_packages.map{|m| m.name}.join(", ") %>
+</p>
 <p><%=t(:livecd_message,:cdimage_link => (link_to t(:livecd_image), t(:livecd_image_link)))%></p>
 <p><%=link_to t(:livecd_start), "/user_profiles/create_livecd/"+ current_user.id.to_s %></p>
 <p><%=link_to t(:livecd_test), "/user_profiles/test_livecd/"+ current_user.id.to_s %></p>
