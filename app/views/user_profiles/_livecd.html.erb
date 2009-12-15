@@ -5,12 +5,13 @@
 <%=t(:view_user_profiles__installation_1)%>
 
 <% else %>
-<%cds=Dir.glob("debs"+current_user.install_name+"*.iso")%>
+<%cds=Dir.glob("public/debs"+current_user.install_name+"*.iso")%>
 <% if !cds.empty? %>
 <p><%=t(:livecd_previous_cds)%><br>
   <% baseurl = if RAILS_ROOT.index("test").nil? then "http://communtu.org" else "http://test.communtu.de" end %>
 <% for cd in cds %>
-  <%= link_to cd.split("/")[1], baseurl+"/"+cd %><br>
+  <% cdfile = cd.split("/")[2] %>
+  <%= link_to cdfile, baseurl+"/debs/"+cdfile %><br>
 <% end %>
 <% end %>
 <p><%=t(:livecd_start_message)%><br>
