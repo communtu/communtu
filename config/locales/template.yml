@@ -201,6 +201,7 @@ de:
   livecd_image_link: "http://wiki.ubuntuusers.de/CD-Images"
   livecd_message: "Über die Live-CD kann die Software dann sowohl ausprobiert als
 auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} erstellt, in Form einer iso-Datei, die du dann brennen kannst. Zum Brennen benötigst du eine CD, falls du viel Software ausgewählt hast, eine DVD.<br /><br /> Die Erstellung des Images dauert eine gewisse Zeit. Du wirst per Email benachrichtigt, sobald das Image fertig ist. Bitte achte darauf, dass in deinen Benutzereinstellungen eine gültige Email-Adresse angegeben ist."
+  livecd_previous_cds: "Bisher erstellte Live-CDs/DVDs:"
   livecd_start: "Live-CD/DVD erstellen"
   livecd_start_message: "Hier kannst du eine Live-CD/DVD erstellen lassen, die die von dir ausgewählte Software enthält. Du hast folgende Bündel ausgewählt:"
   livecd_test: "Live-CD/DVD nicht erstellen, sondern nur EMail versenden (zu Testzwecken)"
