@@ -342,6 +342,10 @@ end
     return debfile
   end
 
+  def install_name
+    BasePackage.debianize_name("communtu-install-"+self.login)
+  end
+
   def install_bundle_as_meta
     if self.selected_packages.empty? then
       return nil
@@ -350,7 +354,7 @@ end
     Dir.chdir RAILS_ROOT
     self.increase_version
 
-    name = BasePackage.debianize_name("communtu-install-"+self.login)
+    name = self.install_name
     version = self.profile_version.to_s
 
     debfile = Dir.glob("debs/#{name}/#{name}_#{version}*deb")[0]
