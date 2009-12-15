@@ -87,7 +87,7 @@
 	<!-- user -->
 <% if logged_in? %>
 <div id="person">
-		<%= link_to current_user.login, user_path(current_user.id), :alt=>t(:view_layouts_application_22),:title=>t(:view_layouts_application_22) %> 
+		<%= link_to current_user.login, user_path(current_user.id), :title=>t(:view_layouts_application_22) %> 
                 <%= link_to image_tag("/images/icon_user.png", :border => '0', :alt=>t(:view_layouts_application_22),:title=>t(:view_layouts_application_22)), user_path(current_user.id), :class => 'person' %>
                 <%= new_message? ? link_to(image_tag("icon_msg_on.png", :alt=>t(:view_layouts_application_16),:title=>t(:view_layouts_application_16), :border=>"0"), '/inbox') : link_to(image_tag("icon_msg.png", :alt=>t(:view_layouts_application_18),:title=>t(:view_layouts_application_18), :border=>"0"), '/inbox') %>
 </div>

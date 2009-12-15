@@ -25,14 +25,13 @@
 <td></td></tr><tr>
 <td valign="left"><%=t(:view_packages__packagelist_2)%></td>
 <td>
-    <input type="textbox" id="search" name="search" value="<%= session[:search]%>"/>
+    <input type="textbox" id="search" name="search" value="<%= session[:search]%>" </>
 </td>
 <td><%= link_to(t(:choose_bundle), "/bundle")%></td>
 </tr>
 </table>
 </form>
 
-<!--<div class="inner1">-->
 <table width="100%" cellspacing="0">
 
 <% if !packages.empty? then%>
@@ -61,8 +60,6 @@
 <tr><td colspan="4" style="padding-top:15px"><%= paginating_links(packages, :window_size => 10) %></td></tr>
 <% end %>
 </table>
-<!--</div>
-</div>-->
 <div class="neues_buendel">
 <div class="editorh1">
 <%=t(:new_bundle)%>
