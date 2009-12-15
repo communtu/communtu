@@ -389,7 +389,7 @@ end
     baseurl = if RAILS_ROOT.index("test").nil? then "http://communtu.org" else "http://test.communtu.de" end
     isourl = "#{baseurl}/debs/#{isobase}.iso"
     if Dir.glob(iso)[0].nil? then
-      res = system "#{RAILS_ROOT}/script/remaster create #{ver} #{iso} #{isobase} #{deb1} #{deb2} >> #{RAILS_ROOT}/log/livecd.log 2>&1"
+      res = system "sudo -u communtu #{RAILS_ROOT}/script/remaster create #{ver} #{iso} #{isobase} #{deb1} #{deb2} >> #{RAILS_ROOT}/log/livecd.log 2>&1"
     else
       res = true
     end
