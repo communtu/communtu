@@ -1,0 +1,257 @@
+\documentclass{article}
+
+\usepackage[ngerman]{babel}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[ngerman]{fixme}
+\usepackage[colorlinks, pagebackref]{hyperref}
+\usepackage{color}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\usepackage[hyper]{glossary}
+
+\begin{document}
+
+\tableofcontents
+\newpage
+
+Im folgenden werden die verschiedenen Tabellen des Communtu Datenbankschemas erl"autert, sowie ihre Beziehungen untereinander.
+
+\section{Base Package}
+\label{packages}
+
+In dieser Tabelle werden alle Pakete gespeichert, die im System vorhanden sind. Dabei fungiert die Tabelle als Speicher f"ur alle Klassen, die von BasePackage ableiten.
+
+\begin{description}
+
+\item[type] Pakete werden in der Datenbank in zwei Arten gespeichert. Native Ubuntupakete und Communtubundles. In dieser Spalte wird gespeichert, um was f"ur eine Art von Paket es sich handelt.
+\item[name] Der Name des Paketes. Dies entspricht im Falle von Ubuntupaketen dem Namen, wie er in apt auftaucht und im Falle von Bundles dem Namen, den der Ersteller gew"ahlt hat.
+\item[description] Eine Beschreibung des Paketes. Im Falle von Ubuntupaketen wird diese von der Beschreibung geerbt, wie sie in apt auftaucht.
+\item[category\_id] (Siehe \ref{categories}) Die Communtukategorie des Paketes. Die Kategorien Teilen die Pakete in Gruppen ein, die aber weniger Technisch sind, als die apt Sektionen.
+\item[license\_type] Der Lizenztyp des Paketes. Dieser Typ gibt an, ob das Paket ein Open Source (0) oder Closed Source (1) Paket ist.
+\item[security\_type] Der Sicherheitslevel gibt an, von wem das Paket verwaltet wird und wie sicher es daher f"ur den Benutzer ist. Die Level sind:
+    \begin{enumerate}
+    \item[0] Das Paket wird von Canonical maintained. Dies ist die ho"chste Sicherheitsstufe.
+    \item[1] Das Paket wird von der Debian Community maintained. 
+    \item[2] Das Paket ist ein ''third-party'' Paket und kommt z.B. aus dem Ubuntu Wiki.
+    \end{enumerate}
+\item[user\_id] Die Id des Users (\ref{users}), der das Paket erstellt hat. Dies ist ein Key in die Usertabelle.
+\item[published] Dieser Wert gibt an, ob das Paket f"ur einen anderen User, als den Ersteller sichtbar ist.
+\item[created\_at] Das Erstellugnsdatum des Paketes.
+\item[updated\_at] Das letzte mal, dass das Paket ver"andert wurde.
+\item[urls] F"ur Ubuntupakete kann hier eine Liste von URLs gespeichert werden, die als externe Links zu dem Paket angezeigt werden.
+\item[fullsection] Im Falle von Ubuntupaketen die Sektion, in dem das Paket in apt auftaucht.
+\item[section] Eine Abk"urzung f"ur die Sektion. (siehe \emph{fullsection})
+\item[icon\_file] F"ur Ubuntupakete ein Icon, das f"ur das Paket angezeigt wird. F"ur Bundles ist dies ein fixer Pfad zum Bundleicon.
+\item[is\_program] Ein Flag, das angibt, ob es sich bei einem Ubuntupaket um ein Program, oder eine Library handelt.
+\item[popcon] Ein Popularti"atswert f"ur das Paket, der automatisch durch popcon.ubuntu.com ermittelt wird.
+\item[default\_install] Wenn dieses Flag gesetzt ist, wird das Paket autmatisch f"ur eine Installation angew"ahlt, wenn die Sektion des Paketes angew"ahlt wird.
+\item[version] Die Version in der das Ubuntupaket/Bundle vorliegt.
+\item[debianized\_version] ???
+
+\end{description}
+
+\section{Kategorien}
+\label{categories}
+
+Kategorien Ordnen die im System vorhanden Pakete in Gruppen ein, die Themen- und T"atigkeitsbezogen sind. Eine Kategorie kann dabei mehrere Unterkategorien haben, um die Gruppierung verfeinern zu k"onnen.
+
+\begin{description}
+\item[name] Der Name der Kategorie, so wie er angezeigt wird.
+\item[description] Eine textuelle Beschreibung der Kategorie.
+\item[parent\_id] Ein Key, der in diese Tabelle verweist. Er verweist auf die Kategeorie, die dieser Kategorie "ubergeordnet ist.
+\item[created\_at] Erstellungsdatum der Kategorie.
+\item[updated\_at] Letztes "Anderungsdatum der Kategorie.
+\end{description}
+
+\section{Kommentare}
+\label{comment}
+
+\begin{description}
+\item[user\_id] Ein Kommentar wird mit diesem Key einem User (\ref{users}) zugeordnet, der den Komentar geposted hat.
+\item[metapackage\_id] Ein Kommentar geh"ort zu einem bestimmten Paket. Dieser Key verweist in die Pakettabelle (\ref{packages}).
+\item[comment] Ein String, der den eigentlichen Kommentar speichert.
+\item[created\_at] Erstellungsdatum des Kommnentars.
+\item[updated\_at] Letztes "Anderungsdatum des Kommentars.
+\end{description}
+
+\section{Videos}
+
+F"ur Ubuntupakete k"onnen Videos angezeigt werden, die die Funktionalit"at des Paketes illustrieren. Diese Tabelle h"allt die n"otigen Informationen hierf"ur.
+
+\begin{description}
+\item[base\_package\_id] Referenziert das Paket, zu dem das Video geh"ort (\ref{packages})
+\item[url] Eine URL, die auf das Video verweist.
+\item[description] Ein Beschreibungstext der zu dem Video angezeigt wird.
+\item[created\_at] Erstellungsdatum des Videos.
+\item[updated\_at] Letztes "Anderungsdatum des Videos.
+\end{description}
+
+\section{Derivate}
+\label{derivatives}
+
+Es existieren viele Ubuntuderivate wie Ubuntu Studio, Kubuntu oder Xubuntu. Diese Tabelle managed die Einbindung dieser Derivate in Communtu.
+
+\begin{description}
+\item[name] Der Name des Derivates.
+\item[icon\_file] Ein Icon, das dem User f"ur dieses Derivat angezeigt wird.
+\item[created\_at] Erstellungsdatum des Derivates.
+\item[updated\_at] Letztes "Anderungsdatum des Derivates.
+\item[sudo] Das sudo Kommando, das zum Installieren dieses Derivates verwendet wird.
+\item[dialog] Das Dialogkommando (zenity, kdialog), das zum installieren dieses Derivates verwendet wird.
+\end{description}
+
+\section{Distributionen}
+\label{distributions}
+
+Pakete und Bundles k"onnen f"ur verschiedene Ubuntuversionen vorhanden sein. Diese Tabelle beschreibt genau eine Ubuntuversion. Denkbar sind in Zukunft auch andere Distributionen.
+
+\begin{description}
+\item[name] Der Name der Distribution, wie er in der Oberfl"ache angezeigt wird.
+\item[description] Eine Beschreibung der Distribution, die auf der Seite der Distribution angezeigt wird.
+\item[created\_at] Erstellungsdatum der Distribution.
+\item[updated\_at] Letztes "Anderungsdatum der Distribution.
+\item[short\_name] Ein Kurzname f"ur die Distribution, der in Tabellen an anderen Stellen der GUI angezeigt wird.
+\item[url] Eine URL die auf die Seite der Distribution im Ubuntu-Wiki zeigt
+\end{description}
+
+\section{Repositories}
+\label{repositories}
+
+Zu jeder Distribution k"onnen verschiedene Repositories angegeben werden, wie das Cannonical Repository, oder ein ''third-party'' Repository. Ein Eintrag in dieser Tabelle beschreibt ein Repository.
+
+\begin{description}
+\item[distribution\_id] Ein Key, der in die Distributionstabelle verweist (\ref{distributions}). Die referenzierte Distribution ist die, f"ur das dieses Repository Pakete zur verf"ugung stellt.
+\item[security\_type] Der Sicherheitslevel des Repositories. 
+    \begin{enumerate}
+    \item[0] Die Pakete in diesem Repository werden von Canonical maintained. Dies ist die ho"chste Sicherheitsstufe.
+    \item[1] Die Pakete in diesem Repository werden von der Debian Community maintained. 
+    \item[2] Die Pakete in diesem Repository sind ''third-party'' Pakete und kommen z.B. aus dem Ubuntu Wiki.
+    \end{enumerate}
+\item[license\_type] Der Lizentyp der Pakete in diesem Repository. Dieser Typ gibt an, ob die Pakete Open Source (0) oder Closed Source (1) sind.
+\item[url] Eine Repository URL im apt Format (siehe ''man 5 sources.list'').
+\item[subtype] Typ des Repositories (main, universe, multiverse, ...)
+\item[created\_at] Erstellungsdatum des Repositories.
+\item[updated\_at] Letztes "Anderungsdatum des Repositories.
+\item[gpgkey] Der GPG Key, der f"ur die Authentifizierung dieses Repositories verwendet wird.
+\end{description}
+
+\section{Paket-Distributionen}
+
+Diese Tabelle bestimmt die Zugeh"origkeit eines Paketes zu einer Distribution.
+
+\begin{description}
+\item[package\_id] Ein Key in die Paketabelle (\ref{packages}).
+\item[distribution\_id] Ein Key in die Distributionstabelle (\ref{distributions}).
+\item]repository\_id] Das Repository, aus dem diese Distribution dieses Paket bezieht (\ref{repositories}).
+\item[created\_at] Erstellungsdatum des Tabelleneintrags.
+\item[updated\_at] Letztes "Anderungsdatum des Tabelleneintrags.
+\item[version] Die Version in der ein bestimmtes Paket vorliegt.
+\item[filename] Der Pfad im Repository zu dem Paket.
+\item[size] Die Gr"o"se des Pakets im Repository.
+\item[installedsize] Die gr"o"se des Pakets nach der Installation auf einem Benutzersystem.
+\end{description}
+
+\section{Benutzer}
+\label{users}
+
+Diese Tabelle h"allt alle Benutzer, die sich im System registriert haben. Zus"atzlich werden zu einem User die userbezogenen Einstellungen in dieser Tabelle abgelegt.
+
+\begin{description}
+\item[login] Der Nane, mit dem sich der User im System einloggt. Dieser wird auch in der Oberfl"ache zum Anzeigen verwendet.
+\item[email] Die Emailadresse, mit der sich der User angemeldet hat. Dies muss eine g"ultige Adresse sein, da ein Aktivierungslink an sie geschickt wird.
+\item[crypted\_password] Feld, das vom Userverwaltungsplugin verwendet wird.
+\item[salt] Feld, das vom Userverwaltungsplugin verwendet wird
+\item[created\_at] Erstellungsdatum des Tabelleneintrags.
+\item[updated\_at] Letzte "Anderung am Tabelleneintrag.
+\item[remember\_token] Feld, das vom Userverwaltungsplugin verwendet wird
+\item[remember\_token\_expires\_at] Feld, das vom Userverwaltungsplugin verwendet wird
+\item[activtion\_code] Feld, das vom Userverwaltungsplugin verwendet wird
+\item[activated\_at] Feld, das vom Userverwaltungsplugin verwendet wird
+\item[password\_reset\_code] Feld, das vom Userverwaltungsplugin verwendet wird
+\item[enabled] Feld, das vom Userverwaltungsplugin verwendet wird
+\item[license] Der User kann in der Oberfl"ache einstellen, welche Art von Lizenz er mindestens f"ur Pakete vorraussetzt. Die Auswahl wird in diesem Feld gespeichert.
+\item[security] In diesem Feld wird die Auswahl des Users gespeichert, bez"uglich des minimalen Sicherheitslevels, das Pakete haben m"ussen, um bei einer Installationsauswahl ber"ucksichtigt zu werden.
+\item[distribution\_id] Dieser Key verweist in die Distributionstabelle (\ref{distributions}) und stellt die Distribution dar, die der User als seine Momentane ausgew"ahlt hat. Alle Pakete die f"ur eine Installation ausge"wahlt werden, kommen aus dieser Distribution.
+\item[derivative\_id] Ein Verweis in die Derivatentabelle (\ref{derivatives}), mit der der User ausw"ahlen kann, welches Ubuntuderivat er verwenden m"ochte.
+\item[language\_id] Unbenutzt
+\item[first\_login] Feld, das vom Userverwaltungsplugin verwendet wird
+\item[template\_id] Ubenutzt
+\item[profile\_version] ???
+\item[profile\_changed] ???
+\item[anonymous] Dieses Flag gibt an, ob der User ein anonym angemeldeter User ist.
+\end{description}
+
+\section{Benutzer Profile}
+
+Ein Benutzerprofil besteht aus einer Liste von Kategorien, die der User ausw"ahlen kann. Diese bestimmen w"ahrend der Nachinstallation, welche Pakete vorausgew"ahlt werden. Zu jeder Kategorie wird zus"atzlich eine Bewertung gespeichert, die angibt, wie wichtig dem Benutzer die einzelne Kateogire ist. Die Tabelle ist eine $1$ zu $n$ Beziehung zwischen Benutzern und Kategorien. Existiert f"ur eine Kategorie keine Bewertung, geht das System von einer neutralen Bewertung aus.
+
+\begin{description}
+\item[user\_id] Ein Key in die Benutzertabelle (\ref{users})
+\item[category\_id] Ein Key in die Kategorientabelle (\ref{categories})
+\item[rating] Die Bewertung die der User dieser Kateogire zugewiesen hat.
+\item[created\_at] Erstellungsdatum des Profils.
+\item[updated\_at] Letztes "Anderungsdatum des Profils.
+\end{description}
+
+\subsection{user\_packages}
+
+Die Benutzerpakete sind die Pakete, die ein Benutzer w"ahrend des Installationsprozesses ausgew"ahlt hat. Die Tabelle ist eine $1$ zu $n$ Relation von Benutzern zu Paketen.
+
+\begin{description}
+\item[user\_id] Ein Key in die Benutzertabelle (\ref{users})
+\item[category\_id] Ein Key in die Pakettabelle (\ref{categories})
+\item[is\_selected] Ein boolescher Wert, der angibt ob das Paket, auf das dieser Eintrag verweist, zur Installation angew"ahlt ist.
+\item[created\_at] Erstellungsdatum der Auswahl.
+\item[updated\_at] Letztes "Anderungsdatum der Auswahl.
+\end{description}
+
+\section{Rollen}
+\label{roles}
+
+User k"onnen verschiedene Rollen im System einnehmen, die bestimmen, welche Rechte ihnen beim Anlegen und Publizieren von Paketen und "ahnlichen T"atigkeiten zugestanden werden. Momentan existieren nur regul"are User und Administratoren.
+
+\begin{description}
+\item[rolename] Ein Name f"ur die Rolle, der in der Oberfl"ache zum Anzeigen verwendet wird.
+\item[created\_at] Erstellungsdatum der Rolle.
+\item[updated\_at] Letztes "Anderungsdatum der Rolle.
+\end{description}
+
+\section{Cart}
+\label{carts}
+
+Ein Cart ist eine Tabelle, die zum tempor"aren Speichern von Paketen dient, um Pakete f"ur die Zusammenstellung eines Metapaketes zu sammeln.
+
+\begin{description}
+\item[name] Der Name des Carts.
+\item[created\_at] Erstellungsdatum des Carts.
+\item[updated\_at] Letztes "Anderungsdatum des Carts.
+\end{description}
+
+\section{Debian Pakete}
+
+\section{Debian Paketabh"angigkeiten}
+
+\section{Zuweisungen}
+
+Einige Tabellen im System dienen lediglich dazu $1$ zu $n$ Beziehungen zwischen den Eintr"agen aus zwei Tabellen herzustellen. Diese werden in diesem Abschnitt aufgelistet. Alle Tabellen enthalten lediglich zwei Schl"ussel in die angegebenen Tabellen.
+
+\subsection{metaconts}
+
+Ein Metapaket kann mehrere Ubuntupakete und andere Metapkete enthalten. Diese Tabelle ist eine $1$ zu $n$ Zuweisung von Paketen (\ref{packages}) zu Paketen (\ref{packages}).
+
+\subsection{metacontents\_derivatives}
+
+Der Inhalt von Metapaketen (\ref{packages}) kann aktiv oder inaktiv sein, f"ur verschiedene Derivate (\ref{derivatives}).
+
+\subsection{metacontents\_distrs}
+
+Der Inhalt von Metapaketen (\ref{packages}) kann aktiv oder inaktiv sein, f"ur verschiedene Distributionen (\ref{distributions}).
+
+\subsection{cart\_contents}
+
+Der Inhalt eines Carts (\ref{carts}) wird durch eine $1$ zu $n$ Relation beschrieben, die einem Cart mehrere Pakete (\ref{packages}) zuweist.
+
+\end{document}
