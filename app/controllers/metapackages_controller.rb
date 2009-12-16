@@ -24,6 +24,7 @@ class MetapackagesController < ApplicationController
     @distribution = current_user.distribution
     @derivative = current_user.derivative
     end
+    @categories  = Category.find(1)
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @metapackage }
@@ -158,16 +159,16 @@ class MetapackagesController < ApplicationController
     end
       @trans_update_description_english = Translation.find(:first, :conditions => { :translatable_id => @metapackage.description_tid, :language_code => "en"})
     if params[:metapackage][:description_english] != nil  
-    if @trans_update_description_english == nil
-      @trans_update_description_english = Translation.new
-      @trans_update_description_english.translatable_id = @metapackage.description_tid
-      @trans_update_description_english.contents = params[:metapackage][:description_english]
-      @trans_update_description_english.language_code = "en"
-      @trans_update_description_english.save
-    else
-      @trans_update_description_english.contents = params[:metapackage][:description_english]
-      @trans_update_description_english.save
-    end
+      if @trans_update_description_english == nil
+        @trans_update_description_english = Translation.new
+        @trans_update_description_english.translatable_id = @metapackage.description_tid
+        @trans_update_description_english.contents = params[:metapackage][:description_english]
+        @trans_update_description_english.language_code = "en"
+        @trans_update_description_english.save
+      else
+        @trans_update_description_english.contents = params[:metapackage][:description_english]
+        @trans_update_description_english.save
+      end
     end
     @metapackage.save
     # save selection of distributions and deriviatives
@@ -184,7 +185,7 @@ class MetapackagesController < ApplicationController
 #    respond_to do |format|
       # save other attributes
       if !error 
-      #@metapackage.update_attributes(params[:metapackage]) and !error
+      @metapackage.update_attributes(params[:metapackage]) and !error
         flash.delete(:error)
 #        format.html { redirect_to :action => :show, :id => @metapackage.id }
 #        format.xml  { head :ok }
