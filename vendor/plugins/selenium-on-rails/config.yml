@@ -20,20 +20,20 @@ browsers:
   #firefox: 'd:\Browser\Mozilla Firefox\firefox.exe'
   #ie: 'c:\Programme\Internet Explorer\iexplore.exe'
 
-  firefox: '/usr/bin/firefox --display=:0'
+  firefox: 'firefox --display=:0'
 
   # Mac OS X
   #firefox: '/Applications/Firefox.app/Contents/MacOS/firefox-bin'
   #safari: '/Applications/Safari.app/Contents/MacOS/Safari'
 
-host: 'test.communtu.de'
-#port_start: 3000
-#port_end: 3005
+host: 'bremer-commune.dyndns.org'
+port_start: 3002
+port_end: 3002
 #base_url_path: '/'
 #max_browser_duration: 120
 #multi_window: false
   
-result_dir: '/home/communtu/web2.0/communtu-program-test/test/reports/selenium' # the directory where the results will be stored after a test:acceptance run
+result_dir: '/home/commune/web2.0/communtu-program-test/test/reports/selenium' # the directory where the results will be stored after a test:acceptance run
 
 #fixtures_path: <%= "#{RAILS_ROOT}/spec/fixtures" %>
 #selenium_tests_path: <%= "#{RAILS_ROOT}/spec/selenium" %>
