@@ -301,6 +301,9 @@ msgstr ""
 #: name_without_colon
 msgid "Name"
 msgstr ""
+#: direct_indirect_covered_packages_warning
+msgid "Achtung! Dauert lange und sollte nur vom Admin-Server (communtu.de:3006) aus aufgerufen werden"
+msgstr ""
 #: view_home_home_7
 msgid "<b>Bündel verwalten</b> Hast du gute Erfahrungen mit Programmen gemacht? Dann kannst du sie hier thematisch bündeln, oder auch bestehende Bündel angucken. "
 msgstr ""
@@ -997,14 +1000,14 @@ msgstr ""
 #: homepage
 msgid "Startseite"
 msgstr ""
+#: view_users__sidebar_2
+msgid "Programme suchen"
+msgstr ""
 #: view_user_profiles_help_2
 msgid "Gebe dort ein: "
 msgstr ""
 #: view_home_derivatives_50
 msgid " - mit Fluxbox und verschiedenen Netzwerk-Sicherheitswerkzeugen ."
-msgstr ""
-#: view_users__sidebar_2
-msgid "Programme suchen"
 msgstr ""
 #: view_user_profiles__profile_data_8
 msgid "Über den Browser festgestellte Version: "
@@ -1042,6 +1045,9 @@ msgstr ""
 #: controller_metapackages_7
 msgid "Es muss eine Version angegeben werden (z.B. 0.1)<br>"
 msgstr ""
+#: view_users__sidebar_4
+msgid "Ubuntu-Versionen"
+msgstr ""
 #: view_user_profiles_help_4
 msgid "du machst ein Upgrade auf eine neuere Version"
 msgstr ""
@@ -1050,9 +1056,6 @@ msgid " - eine Art Automatix für die Ultimate Edition."
 msgstr ""
 #: view_roles_edit_1
 msgid "Rollenname"
-msgstr ""
-#: view_users__sidebar_4
-msgid "Ubuntu-Versionen"
 msgstr ""
 #: view_home_faq_12
 msgid "Unter <b>Bündel</b> und dann \"Neues Bündel\" gibt es den Punkt \"Bündel aus einer Paketliste erstellen\", der anzuklicken ist. Dort ist beschrieben, wie Du Deine Paketliste in Communtu hochladen kannst. Sobald das Bündel gespeichert ist, ist der Vorgang der Gleiche wie bei einem neuen Bündel erstellen: sinnvollen Namen auswählen, Version bestimmen, Beschreibung einfügen und speichern."
@@ -1063,14 +1066,14 @@ msgstr ""
 #: controller_metapackages_8
 msgid "Bei Anderungen muss die Version größer werden<br>"
 msgstr ""
+#: view_users__sidebar_5
+msgid "Benutzer verwalten"
+msgstr ""
 #: view_user_profiles_help_5
 msgid "du erweiterst Communtu um deine Version"
 msgstr ""
 #: view_home_derivatives_53
 msgid " - erlaubt schnellere Installation, da nur die aktuellsten Pakete heruntergeladen werden."
-msgstr ""
-#: view_users__sidebar_5
-msgid "Benutzer verwalten"
 msgstr ""
 #: view_home_faq_13
 msgid "Wie finde ich Programme?"
@@ -1152,6 +1155,9 @@ msgid "non-free"
 msgstr ""
 #: view_home_faq_19
 msgid "Was ist ein Repository?"
+msgstr ""
+#: livecd_start_message
+msgid "Hier kannst du eine Live-CD/DVD erstellen lassen, die die von dir ausgewählte Software enthält. Du hast folgende Bündel ausgewählt:"
 msgstr ""
 #: trusted
 msgid "Ubuntu+Community"
@@ -1975,6 +1981,9 @@ msgstr ""
 #: invalid_activation_code_entered
 msgid "Ungültiger Anderungscode eingegeben."
 msgstr ""
+#: livecd_previous_cds
+msgid "Bisher erstellte Live-CDs/DVDs:"
+msgstr ""
 #: migrate_repository
 msgid "Repository migieren"
 msgstr ""
@@ -2306,7 +2315,7 @@ msgstr ""
 msgid "Über Communtu"
 msgstr ""
 #: livecd_message
-msgid "Hier kannst du eine Live-CD/DVD erstellen lassen, die die von dir ausgewählte Software enthält. Über die Live-CD kann die Software dann sowohl ausprobiert als auch installiert werden.<br /><br /> Dazu wird zunächst ein sogenanntes {{cdimage_link}} erstellt, in Form einer iso-Datei, die du dann brennen kannst. Zum Brennen benötigst du eine CD, falls du viel Software ausgewählt hast, eine DVD.<br /><br /> Die Erstellung des Images dauert eine gewisse Zeit. Du wirst per Email benachrichtigt, sobald das Image fertig ist. Bitte achte darauf, dass in deinen Benutzereinstellungen eine gültige Email-Adresse angegeben ist."
+msgid "Über die Live-CD kann die Software dann sowohl ausprobiert als auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} erstellt, in Form einer iso-Datei, die du dann brennen kannst. Zum Brennen benötigst du eine CD, falls du viel Software ausgewählt hast, eine DVD.<br /><br /> Die Erstellung des Images dauert eine gewisse Zeit. Du wirst per Email benachrichtigt, sobald das Image fertig ist. Bitte achte darauf, dass in deinen Benutzereinstellungen eine gültige Email-Adresse angegeben ist."
 msgstr ""
 #: view_sent_show_2
 msgid "Zeitpunkt:"

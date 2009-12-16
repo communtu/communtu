@@ -301,6 +301,9 @@ msgstr ""
 #: name_without_colon
 msgid "Name"
 msgstr ""
+#: direct_indirect_covered_packages_warning
+msgid "Attention! This takes a long time and should only be done on the admin-server (communtu.org:3006)!"
+msgstr ""
 #: view_home_home_7
 msgid "<b>Administrate bundles</b> Did you have good experiences with the programs? Bundle them thematically or take a look at existing bundles."
 msgstr ""
@@ -1150,6 +1153,9 @@ msgstr ""
 #: view_home_faq_19
 msgid "What is a repository?"
 msgstr ""
+#: livecd_start_message
+msgid "Here you can create a Live-CD/DVD which contains the software chosen by you. You selected the following bundles:"
+msgstr ""
 #: trusted
 msgid "Ubuntu+Community"
 msgstr ""
@@ -1972,6 +1978,9 @@ msgstr ""
 #: invalid_activation_code_entered
 msgid "Invalid activation code entered."
 msgstr ""
+#: livecd_previous_cds
+msgid "Live-CD's/DVD's created so far:"
+msgstr ""
 #: migrate_repository
 msgid "migrate repository"
 msgstr ""
@@ -2288,7 +2297,7 @@ msgstr ""
 msgid "Category created."
 msgstr ""
 #: view_home_home_26
-msgid "You installed Ubuntu and now you are looking for programs, which run with Ubuntu?"
+msgid "You installed Ubuntu and now you are looking for programs which run with Ubuntu?"
 msgstr ""
 #: controller_categories_3
 msgid "Category updated."
@@ -2303,7 +2312,7 @@ msgstr ""
 msgid "About Communtu"
 msgstr ""
 #: livecd_message
-msgid "Here you can create a Live-CD/DVD containing the software you have chosen. With the Live-CD you can test the software you have chosen and install the system with the previous made software choice.<br /><br /> For this an ISO-file ({{cdimage_link}}) is created which you can burn. For this, you need an empty CD-R or, if you have chosen lots of software, an empty DVD-R.<br /><br />The creation of the image takes a while. You will be informed automatically when your image has been created. For this, a valid e-mail address is required to be entered in your profile."
+msgid "With the Live-CD you can test the software you have chosen and install the system with the previous made software choice. For this an ISO-file ({{cdimage_link}}) is created which you can burn. For this you need an empty CD-R or, if you have chosen lots of software, an empty DVD-R.<br /><br />The creation of the image takes a while. You will be informed automatically when your image has been created. For this, a valid e-mail address is required to be entered in your profile."
 msgstr ""
 #: view_sent_show_2
 msgid "Date:"

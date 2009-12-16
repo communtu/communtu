@@ -399,6 +399,10 @@ msgstr "<b>Installation</b> offers you a summary (bundling) of programs for the 
 msgid "Name"
 msgstr "Name"
 
+#: direct_indirect_covered_packages_warning
+msgid "Achtung! Dauert lange und sollte nur vom Admin-Server (communtu.de:3006) aus aufgerufen werden"
+msgstr "Attention! This takes a long time and should only be done on the admin-server (communtu.org:3006)!"
+
 #: view_home_home_7
 msgid "<b>Bündel verwalten</b> Hast du gute Erfahrungen mit Programmen gemacht? Dann kannst du sie hier thematisch bündeln, oder auch bestehende Bündel angucken. "
 msgstr "<b>Administrate bundles</b> Did you have good experiences with the programs? Bundle them thematically or take a look at existing bundles."
@@ -1365,6 +1369,10 @@ msgstr "Here you can create a bundle from an existing package-list. The list mus
 msgid "Startseite"
 msgstr "Start"
 
+#: view_users__sidebar_2
+msgid "Programme suchen"
+msgstr "Search programs"
+
 #: view_user_profiles_help_2
 msgid "Gebe dort ein: "
 msgstr "There you enter the following:"
@@ -1372,10 +1380,6 @@ msgstr "There you enter the following:"
 #: view_home_derivatives_50
 msgid " - mit Fluxbox und verschiedenen Netzwerk-Sicherheitswerkzeugen ."
 msgstr " - with Fluxbox and several network-tools."
-
-#: view_users__sidebar_2
-msgid "Programme suchen"
-msgstr "Search programs"
 
 #: view_user_profiles__profile_data_8
 msgid "Über den Browser festgestellte Version: "
@@ -1425,6 +1429,10 @@ msgstr " can be found with the above-mentioned command. (For this, the package {
 msgid "Es muss eine Version angegeben werden (z.B. 0.1)<br>"
 msgstr "Specify a version (e. g. 0.1)<br>"
 
+#: view_users__sidebar_4
+msgid "Ubuntu-Versionen"
+msgstr "Ubuntu versions"
+
 #: view_user_profiles_help_4
 msgid "du machst ein Upgrade auf eine neuere Version"
 msgstr "You upgrade to a newer, supported, version or"
@@ -1436,10 +1444,6 @@ msgstr " - a kind of Automatix for the ultimate edition."
 #: view_roles_edit_1
 msgid "Rollenname"
 msgstr "rolename"
-
-#: view_users__sidebar_4
-msgid "Ubuntu-Versionen"
-msgstr "Ubuntu versions"
 
 #: view_home_faq_12
 msgid "Unter <b>Bündel</b> und dann \"Neues Bündel\" gibt es den Punkt \"Bündel aus einer Paketliste erstellen\", der anzuklicken ist. Dort ist beschrieben, wie Du Deine Paketliste in Communtu hochladen kannst. Sobald das Bündel gespeichert ist, ist der Vorgang der Gleiche wie bei einem neuen Bündel erstellen: sinnvollen Namen auswählen, Version bestimmen, Beschreibung einfügen und speichern."
@@ -1453,6 +1457,10 @@ msgstr "Choose the file which contains the package-list:"
 msgid "Bei Anderungen muss die Version größer werden<br>"
 msgstr "With each update the version has to be increased<br>"
 
+#: view_users__sidebar_5
+msgid "Benutzer verwalten"
+msgstr "Administrate users"
+
 #: view_user_profiles_help_5
 msgid "du erweiterst Communtu um deine Version"
 msgstr "you expand Communtu with your version."
@@ -1460,10 +1468,6 @@ msgstr "you expand Communtu with your version."
 #: view_home_derivatives_53
 msgid " - erlaubt schnellere Installation, da nur die aktuellsten Pakete heruntergeladen werden."
 msgstr " - allows a faster installation, as only the latest packages are downloaded."
-
-#: view_users__sidebar_5
-msgid "Benutzer verwalten"
-msgstr "Administrate users"
 
 #: view_home_faq_13
 msgid "Wie finde ich Programme?"
@@ -1574,6 +1578,10 @@ msgstr "non-free"
 #: view_home_faq_19
 msgid "Was ist ein Repository?"
 msgstr "What is a repository?"
+
+#: livecd_start_message
+msgid "Hier kannst du eine Live-CD/DVD erstellen lassen, die die von dir ausgewählte Software enthält. Du hast folgende Bündel ausgewählt:"
+msgstr "Here you can create a Live-CD/DVD which contains the software chosen by you. You selected the following bundles:"
 
 #: trusted
 msgid "Ubuntu+Community"
@@ -2691,6 +2699,10 @@ msgstr "You do not have any messages in your inbox."
 msgid "Ungültiger Anderungscode eingegeben."
 msgstr "Invalid activation code entered."
 
+#: livecd_previous_cds
+msgid "Bisher erstellte Live-CDs/DVDs:"
+msgstr "Live-CD's/DVD's created so far:"
+
 #: migrate_repository
 msgid "Repository migieren"
 msgstr "migrate repository"
@@ -3123,7 +3135,7 @@ msgstr "Category created."
 
 #: view_home_home_26
 msgid "Du hast Ubuntu installiert und suchst nun nach Progammen, die unter Ubuntu laufen?"
-msgstr "You installed Ubuntu and now you are looking for programs, which run with Ubuntu?"
+msgstr "You installed Ubuntu and now you are looking for programs which run with Ubuntu?"
 
 #: controller_categories_3
 msgid "Kategorie aktualisiert."
@@ -3142,8 +3154,8 @@ msgid "Über Communtu"
 msgstr "About Communtu"
 
 #: livecd_message
-msgid "Hier kannst du eine Live-CD/DVD erstellen lassen, die die von dir ausgewählte Software enthält. Über die Live-CD kann die Software dann sowohl ausprobiert als auch installiert werden.<br /><br /> Dazu wird zunächst ein sogenanntes {{cdimage_link}} erstellt, in Form einer iso-Datei, die du dann brennen kannst. Zum Brennen benötigst du eine CD, falls du viel Software ausgewählt hast, eine DVD.<br /><br /> Die Erstellung des Images dauert eine gewisse Zeit. Du wirst per Email benachrichtigt, sobald das Image fertig ist. Bitte achte darauf, dass in deinen Benutzereinstellungen eine gültige Email-Adresse angegeben ist."
-msgstr "Here you can create a Live-CD/DVD containing the software you have chosen. With the Live-CD you can test the software you have chosen and install the system with the previous made software choice.<br /><br /> For this an ISO-file ({{cdimage_link}}) is created which you can burn. For this, you need an empty CD-R or, if you have chosen lots of software, an empty DVD-R.<br /><br />The creation of the image takes a while. You will be informed automatically when your image has been created. For this, a valid e-mail address is required to be entered in your profile."
+msgid "Über die Live-CD kann die Software dann sowohl ausprobiert als auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} erstellt, in Form einer iso-Datei, die du dann brennen kannst. Zum Brennen benötigst du eine CD, falls du viel Software ausgewählt hast, eine DVD.<br /><br /> Die Erstellung des Images dauert eine gewisse Zeit. Du wirst per Email benachrichtigt, sobald das Image fertig ist. Bitte achte darauf, dass in deinen Benutzereinstellungen eine gültige Email-Adresse angegeben ist."
+msgstr "With the Live-CD you can test the software you have chosen and install the system with the previous made software choice. For this an ISO-file ({{cdimage_link}}) is created which you can burn. For this you need an empty CD-R or, if you have chosen lots of software, an empty DVD-R.<br /><br />The creation of the image takes a while. You will be informed automatically when your image has been created. For this, a valid e-mail address is required to be entered in your profile."
 
 #: view_sent_show_2
 msgid "Zeitpunkt:"

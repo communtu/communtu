@@ -96,6 +96,7 @@ en:
   controller_passwords_8: Passwords do not match.
   view_home_home_6: <b>Installation</b> offers you a summary (bundling) of programs for the installation on your computer, according to your instructions on how you want to use your Ubuntu-PC.
   name_without_colon: Name
+  direct_indirect_covered_packages_warning: Attention! This takes a long time and should only be done on the admin-server (communtu.org:3006)!
   view_home_home_7: <b>Administrate bundles</b> Did you have good experiences with the programs? Bundle them thematically or take a look at existing bundles.
   view_metapackages_show_3: Back
   view_home_home_8: <b>Search program</b> Here you can search for single Ubuntu-programs (packages).
@@ -402,6 +403,7 @@ en:
   view_home_beteiligung_1: Using the platform
   helper_distributions_1: non-free
   view_home_faq_19: What is a repository?
+  livecd_start_message: "Here you can create a Live-CD/DVD which contains the software chosen by you. You selected the following bundles:"
   trusted: Ubuntu+Community
   view_home_beteiligung_2: We would be very delighted if you would use Communtu to carry out an installation. We already have many bundles which are set up to specific characteristics. Maybe one of the bundles is suitable for you. Furthermore you can upload your own package-list to share it with other users. This is the most simple way to create a bundle, but you don't have to publish it. Of course you can use Communtu only as a saving place for your package list so you can install it on an other computer.
   helper_distributions_2: synchronise repository
@@ -686,6 +688,7 @@ en:
   view_home_faq_gnome_02: To reach the package manager Synaptic you navigate to "System -> Administration -> Synaptic Package Manager". In the lower left part you click on "Origin". In the list above search for "packages.communtu.org" and click on it. In the right part of the window you will now see all metapackages available at Communtu. To remove a metapackage from your system you make a right click on it and choose "Mark for Removal". With a click on "Apply" it will be uninstalled.
   view_mailbox_show_5: You do not have any messages in your inbox.
   invalid_activation_code_entered: Invalid activation code entered.
+  livecd_previous_cds: "Live-CD's/DVD's created so far:"
   migrate_repository: migrate repository
   bundle_editor: bundle-editor
   description_with_colon: "Description:"
@@ -795,12 +798,12 @@ en:
   description: Description
   view_home_home_25: For questions concerning Communtu we have created a "FAQ".
   controller_categories_2: Category created.
-  view_home_home_26: You installed Ubuntu and now you are looking for programs, which run with Ubuntu?
+  view_home_home_26: You installed Ubuntu and now you are looking for programs which run with Ubuntu?
   controller_categories_3: Category updated.
   view_home_home_27: "Communtu helps you:"
   view_home_donate_why: The development of Communtu is mainly based on the effort of volunteers but it also costs money (amongst others the server and the rooms). Therefore Communtu depends on donations. Even small amounts of money help.
   view_layouts_application_13: About Communtu
-  livecd_message: Here you can create a Live-CD/DVD containing the software you have chosen. With the Live-CD you can test the software you have chosen and install the system with the previous made software choice.<br /><br /> For this an ISO-file ({{cdimage_link}}) is created which you can burn. For this, you need an empty CD-R or, if you have chosen lots of software, an empty DVD-R.<br /><br />The creation of the image takes a while. You will be informed automatically when your image has been created. For this, a valid e-mail address is required to be entered in your profile.
+  livecd_message: With the Live-CD you can test the software you have chosen and install the system with the previous made software choice. For this an ISO-file ({{cdimage_link}}) is created which you can burn. For this you need an empty CD-R or, if you have chosen lots of software, an empty DVD-R.<br /><br />The creation of the image takes a while. You will be informed automatically when your image has been created. For this, a valid e-mail address is required to be entered in your profile.
   view_sent_show_2: "Date:"
   controller_metapackages_not_changed: This bundle is already created as a metapackage and uploaded.
   donation_purpose: "Purpose: Communtu"
@@ -820,8 +823,8 @@ en:
   controller_metapackages_debianizing: The bundle is currently created as a metapackaged and uploaded. This could take a couple of minutes.
   no_save_database: "The following packages couldn't be saved in the database:"
   view_layouts_application_19: https://www.paypal.com/en_GB/i/btn/btn_donate_LG.gif
-  view_home_home_33: Do you want to know more about Communtu? Do you have suggestions or questions? We are looking forward to be in touch with you.
   view_repositories_index_5: new repository
+  view_home_home_33: Do you want to know more about Communtu? Do you have suggestions or questions? We are looking forward to be in touch with you.
   view_layouts_application_20: Javascript is not activated! Please activate Javascript in your browser-settings.
   view_distributions_show_0: "Repositories:"
   view_layouts_application_21: Communtu eases Ubuntu installations
