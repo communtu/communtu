@@ -24,7 +24,6 @@ class MetapackagesController < ApplicationController
     @distribution = current_user.distribution
     @derivative = current_user.derivative
     end
-    @categories  = Category.find(1)
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @metapackage }
@@ -185,11 +184,11 @@ class MetapackagesController < ApplicationController
 #    respond_to do |format|
       # save other attributes
       if !error 
-      @metapackage.update_attributes(params[:metapackage]) and !error
+        @metapackage.update_attributes(params[:metapackage])
         flash.delete(:error)
 #        format.html { redirect_to :action => :show, :id => @metapackage.id }
 #        format.xml  { head :ok }
-        render :action => "show"
+        redirect_to :action => :show, :id => @metapackage.id
       else
 #        format.html { render :action => "edit" }
 #        format.xml  { render :xml => @metapackage.errors, :status => :unprocessable_entity }

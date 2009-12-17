@@ -93,7 +93,7 @@ class CartController < ApplicationController
 #                meta.name = t(:new_bundle)
 #                cart.name = t(:new_bundle)
 #                else
-                meta.name            = cart.name
+#                meta.name            = cart.name
 #                end
                 meta.user_id         = current_user.id
                 meta.category_id     = 1
