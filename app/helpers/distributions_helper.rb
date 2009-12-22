@@ -73,11 +73,23 @@ module DistributionsHelper
       if is_admin?
         out += t(:helper_distributions_11) + (link_to t(:helper_distributions_12), edit_distribution_path(dist)) + " | " +\
         (link_to t(:helper_distributions_13), dist, :confirm => t(:view_distributions_show_8), :method => :delete)
-        if Repository.find_by_distribution_id(dist.id).nil? then
-          out += " | " + (link_to t(:migrate_repositories), "/distributions/migrate/"+dist.id.to_s)
-        end
-        if MetacontentsDistr.find_by_distribution_id(dist.id).nil? then
-          out += " | " + (link_to t(:migrate_bundles), "/distributions/migrate_bundles/"+dist.id.to_s)
+        noreps = Repository.find_by_distribution_id(dist.id).nil?
+        nobundles = MetacontentsDistr.find_by_distribution_id(dist.id).nil?
+        if noreps | nobundles | dist.invisible | dist.preliminary then
+          out += "<p><b>" + t(:steps_for_distribution_setup) + "</b><ul>"
+          if noreps then
+            out += "<li>" + (link_to t(:migrate_repositories), "/distributions/migrate/"+dist.id.to_s)+"</li>"
+          end
+          if nobundles then
+            out += " <li> " + t(:wait_for_sync) + " </li><li> " + (link_to t(:migrate_bundles), "/distributions/migrate_bundles/"+dist.id.to_s)+"</li>"
+          end
+          if dist.invisible then
+            out += " <li> " + t(:wait_for_debs) + " </li><li> " + (link_to t(:make_distribution_visible), "/distributions/make_visible/"+dist.id.to_s)+"</li>"
+          end
+          if dist.preliminary then
+            out += " <li> " + t(:wait_for_release) + "</li><li>" + (link_to t(:make_distribution_final), "/distributions/make_final/"+dist.id.to_s)+"</li>"
+          end
+          out += "</ul></p>"
         end
       end
      out += "<p></p>"

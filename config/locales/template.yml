@@ -206,6 +206,8 @@ auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} er
   livecd_start_message: "Hier kannst du eine Live-CD/DVD erstellen lassen, die die von dir ausgewählte Software enthält. Du hast folgende Bündel ausgewählt:"
   livecd_test: "Live-CD/DVD nicht erstellen, sondern nur EMail versenden (zu Testzwecken)"
   mailinglist: "Mailinglisten:"
+  make_distribution_visible: Distribution sichtbar machen
+  make_distribution_final: Distribution als stabil freigeben
   match_ubuntu: "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
   match_with_communtu: "Communtu - gemeinsam Ubuntu-Linux an individuelle Bedürfnisse anpassen"
   metacart_choose: Füge Programme aus der linken Spalte zu Deinem Bündel hinzu.
@@ -287,6 +289,7 @@ auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} er
   show: Anzeigen
   sources: Quellen
   statistics: Aufrufstatistik
+  steps_for_distribution_setup: Schritte für das Einrichten einer neuen Distribution
   subject_with_colon: "Betreff: "
   subject_without_colon: Betreff
   subtype: "Subtyp:"
@@ -855,6 +858,9 @@ Wenn Du der Meinung bist, dass dein Bündel um nützliche Programme erweitert we
   view_users__user_2: Rollen bearbeiten
   view_videos_edit_0: Video bearbeiten
   view_videos_show_0: "Url:"
+  wait_for_debs: auf Bau der Metapakete warten
+  wait_for_release: auf offizielles Ubuntu-Release warten
+  wait_for_sync: auf Synchronisation der Repositories warten
   we_want_you: Wir brauchen Dich
   weblinks: Weblinks
   yes1: ja

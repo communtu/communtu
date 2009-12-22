@@ -6,6 +6,7 @@ namespace :db do
     task :dump => :environment do
       # shrink database
       puts "Shrinking database, this will take some time"
+      Deb.destroy(:all)
       m = Metapackage.find_by_name("Textverarbeitung")
       packages = m.all_recursive_packages << m
       ["gdmap", "pdfedit", "Acroread", "Skype", "Virtualbox"].each do |p|

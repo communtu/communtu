@@ -66,6 +66,8 @@ ActionController::Routing::Routes.draw do |map|
 
  map.connect '/distributions/migrate/:id', :controller => 'distributions', :action => 'migrate'
  map.connect '/distributions/migrate_bundels/:id', :controller => 'distributions', :action => 'migrate_bundles'
+ map.connect '/distributions/make_visible/:id', :controller => 'distributions', :action => 'make_visible'
+map.connect '/distributions/make_final/:id', :controller => 'distributions', :action => 'make_final'
 
   map.resources :distributions do |dist|
     dist.resources :metapackages

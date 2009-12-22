@@ -53,7 +53,7 @@
 	    <% end %>
 		<% if mc.package.class == Package %>
           <tr><td colspan="2" class="<%= css %>"><font size="-2" color="#333"><%=t(:view_metapackages__package_list_1)%></font>
-            <% for d in Distribution.find(:all) %>
+            <% for d in Distribution.find_all_by_invisible(false) %>
               <% if editable then %>
 			    <% if mc.package.distributions.include?(d) %>
   	              <%= check_box_tag("distributions["+mc.package.id.to_s+"][]",d.id, mc.distributions.include?(d))%>

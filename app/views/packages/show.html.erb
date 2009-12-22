@@ -80,6 +80,7 @@
 
 <% if is_admin? %>
 <%= link_to t(:direct_indirect_covered_packages), :action => 'rdepends', :id => @package.id %>
+  <%= t(:direct_indirect_covered_packages_warning) %>
 <% end %>
 
 <p>

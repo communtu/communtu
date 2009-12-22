@@ -23,7 +23,7 @@ namespace :db do
       Deb.write_conf_distributions
     end
     task :check_debs => :environment do
-      cnt = Distribution.count * Derivative.count * Package.license_types.size * Package.security_types.size
+      cnt = Distribution.find_all_by_invisible(false).count * Derivative.count * Package.license_types.size * Package.security_types.size
       Metapackage.all.each do |m|
         puts m.name
         if !m.debianized_version.nil? then
