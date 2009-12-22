@@ -289,7 +289,7 @@ auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} er
   show: Anzeigen
   sources: Quellen
   statistics: Aufrufstatistik
-  steps_for_distribution_setup: Schritte für das Einrichten einer neuen Distribution
+  steps_for_distribution_setup: Schritte für das Einrichten einer neuen Distribution (bitte auf admin-System durchführen)
   subject_with_colon: "Betreff: "
   subject_without_colon: Betreff
   subtype: "Subtyp:"
