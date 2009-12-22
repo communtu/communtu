@@ -3,9 +3,9 @@
     if [ "$NEWSOURCES" != "" ]; then
       APTPIN="/etc/apt/preferences"
       echo  >> $APTLIST
-      echo "# Von Communtu hinzugefügte Quellen" >> $APTLIST
+      echo "# sources added by Communtu" >> $APTLIST
       echo "#" >> $APTPIN
-      echo "# Von Communtu hinzugefügte Prioritäten" >> $APTPIN
+      echo "# priorities added by Communtu" >> $APTPIN
       IFS="§"
       for source in $NEWSOURCES; do
       	echo $source >> $APTLIST
@@ -26,7 +26,7 @@
     	set +e
         sudo apt-key adv --recv-keys --keyserver $KEYSERVER $key
     	if [ "$?" != "0" ]; then
-    		echo "Konnte Schlüssel nicht installieren: "$key
+    		echo "Could not install key: "$key
     		exit 1
     	fi
     	set -e
