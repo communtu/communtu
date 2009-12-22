@@ -87,7 +87,7 @@ class Deb < ActiveRecord::Base
         begin
           # build metapackage
           archname = if homogeneous then "all" else arch.name end
-          debfile = Deb.makedeb(name,version,packages[arch],meta.description_english,codename,Derivative.find(:first),[],archname)
+          debfile = Deb.makedeb(name,version,packages[arch],meta.description_english,codename,Derivative.find(:first),[],false,archname)
 
           # make name of .deb unique by adding the codename
           # newfile = debfile.gsub("_all.deb","~"+codename+"_all.deb")
@@ -153,7 +153,7 @@ class Deb < ActiveRecord::Base
     end
     # only install sources, no packages
     codename = Deb.compute_codename(distribution,derivative,license,security)
-    Deb.makedeb(name,version,[],description,codename,derivative,repos)
+    Deb.makedeb(name,version,[],description,codename,derivative,repos,true)
   end
 
   # create file 'control'
@@ -192,7 +192,7 @@ class Deb < ActiveRecord::Base
 
   end
 
-  def self.makedeb(name,version,package_names,description,codename,derivative,repos,archname = "all")
+  def self.makedeb(name,version,package_names,description,codename,derivative,repos,script,archname = "all")
     Dir.chdir RAILS_ROOT+'/debs'
     if !File.exists?(name)
       Dir.mkdir name
@@ -234,9 +234,8 @@ class Deb < ActiveRecord::Base
     f.close
 
     # create maintainer scripts
-    if !repos.empty?
+    if script
       # add repository for communtu at the end
-      # todo: add key for communtu package server
       repos1 = repos.to_a.sort {|r1,r2| r1.url <=> r2.url}
       Deb.components.flatten.each do |component|
         repos1 << Repository.new(:url => "deb #{Deb::COMMUNTU_REPO} "+codename, :subtype => component, :gpgkey => Deb::COMMUNTU_KEY)

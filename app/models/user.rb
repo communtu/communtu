@@ -338,7 +338,7 @@ end
                  self.derivative,
                  self.license,
                  self.security)
-    debfile = Deb.makedeb(name,version,[],description,codename,self.derivative,repos)
+    debfile = Deb.makedeb(name,version,[],description,codename,self.derivative,repos,true)
     return debfile
   end
 
@@ -371,7 +371,7 @@ end
                  description,
                  codename,
                  self.derivative,
-                 [])
+                 [],false)
       self.profile_changed = false
     end
     self.save

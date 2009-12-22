@@ -1,0 +1,5 @@
+Template: communtu/install
+Type: boolean
+Default: true
+Description: Do you want to add the following sources and keys?
+.

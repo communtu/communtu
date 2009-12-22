@@ -17,6 +17,14 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.datetime "updated_at"
   end
 
+  create_table "articles", :force => true do |t|
+    t.datetime "created_at",                   :null => false
+    t.integer  "url_tid"
+    t.integer  "name_tid"
+    t.integer  "description_tid"
+    t.string   "language_code",   :limit => 3
+  end
+
   create_table "base_packages", :force => true do |t|
     t.string   "type"
     t.string   "name"
@@ -199,7 +207,7 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.string   "filename"
     t.integer  "size"
     t.integer  "installedsize"
-    t.boolean  "outdated"
+    t.boolean  "outdated",        :default => false
   end
 
   create_table "package_distrs_architectures", :force => true do |t|
@@ -207,7 +215,7 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.integer  "architecture_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "outdated"
+    t.boolean  "outdated",         :default => false
   end
 
   create_table "permissions", :force => true do |t|
