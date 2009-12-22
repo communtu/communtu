@@ -1,9 +1,0 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
-one:
-  temp_metapackages_id: 1
-  package_id: 1
-
-two:
-  temp_metapackages_id: 1
-  package_id: 1
