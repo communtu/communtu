@@ -81,7 +81,12 @@ module DistributionsHelper
             out += "<li>" + (link_to t(:migrate_repositories), "/distributions/migrate/"+dist.id.to_s)+"</li>"
           end
           if nobundles then
-            out += " <li> " + t(:wait_for_sync) + " </li><li> " + (link_to t(:migrate_bundles), "/distributions/migrate_bundles/"+dist.id.to_s)+"</li>"
+            out += " <li> " + t(:wait_for_sync)
+            if dist.repositories.map{|r| r.all_synchronized?}.all?
+              out += "&nbsp;OK"
+            end
+            out += " </li>"
+            out += "<li> " + (link_to t(:migrate_bundles), "/distributions/migrate_bundles/"+dist.id.to_s)+"</li>"
           end
           if dist.invisible then
             out += " <li> " + t(:wait_for_debs) + " </li><li> " + (link_to t(:make_distribution_visible), "/distributions/make_visible/"+dist.id.to_s)+"</li>"

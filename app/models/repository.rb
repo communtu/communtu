@@ -22,6 +22,10 @@ class Repository < ActiveRecord::Base
     self.dir_name + "/" + self.id.to_s + "_" + arch.name
   end
 
+  def all_synchronized?
+    Architecture.all.map {|a| File.exists?(file_name(a))}.all?
+  end
+
   # get URL of Packages.gz
   def get_url(arch)
     Repository.get_url_from_source(self.name,arch)[:url]
