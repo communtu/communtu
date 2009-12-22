@@ -283,6 +283,9 @@ msgstr ""
 #: view_user_profiles__installation_33
 msgid "The following"
 msgstr ""
+#: wait_for_sync
+msgid "waiting for syncronisation with repositories"
+msgstr ""
 #: controller_passwords_7
 msgid "Password not changed."
 msgstr ""
@@ -709,6 +712,9 @@ msgstr ""
 #: helper_distributions_15
 msgid "Informational page at ubuntu.com"
 msgstr ""
+#: wait_for_debs
+msgid "waiting for building of metapackages"
+msgstr ""
 #: view_users_new_8
 msgid "Yes, I want to be added to the announcement-mailinglist."
 msgstr ""
@@ -720,6 +726,9 @@ msgid "free and from the main repositories"
 msgstr ""
 #: view_layouts_application_warning
 msgid "Attention: the webserver will be down soon due to some maintenance work!"
+msgstr ""
+#: make_distribution_final
+msgid "Mark distribution as stable"
 msgstr ""
 #: view_users_new_9
 msgid "Yes, I want to be added to the discussion-mailinglist."
@@ -843,6 +852,9 @@ msgid "Communtu: notification about Live-CD/DVD"
 msgstr ""
 #: view_home_faq_01
 msgid "What is a bundle?"
+msgstr ""
+#: steps_for_distribution_setup
+msgid "Steps for setting up a new distribution (please do this on the admin-system) "
 msgstr ""
 #: questionmark_conny
 msgid "Click me and tell what is unclear to you."
@@ -1939,6 +1951,9 @@ msgstr ""
 #: view_packages_show_26
 msgid "change metapackage into bundle"
 msgstr ""
+#: make_distribution_visible
+msgid "Make distribution viewable"
+msgstr ""
 #: view_home_icons_24
 msgid "Receive a message-icon for new messages"
 msgstr ""
@@ -1971,6 +1986,9 @@ msgid "received"
 msgstr ""
 #: view_home_faq_gnome_02
 msgid "To reach the package manager Synaptic you navigate to \"System -> Administration -> Synaptic Package Manager\". In the lower left part you click on \"Origin\". In the list above search for \"packages.communtu.org\" and click on it. In the right part of the window you will now see all metapackages available at Communtu. To remove a metapackage from your system you make a right click on it and choose \"Mark for Removal\". With a click on \"Apply\" it will be uninstalled."
+msgstr ""
+#: wait_for_release
+msgid "wait for official Ubuntu release"
 msgstr ""
 #: view_mailbox_show_5
 msgid "You do not have any messages in your inbox."
@@ -2347,11 +2365,11 @@ msgstr ""
 #: view_home_home_30
 msgid "Bundle:"
 msgstr ""
-#: view_home_home_31
-msgid "Here you can choose the topics in detail, download single programs or complete bundles and you can create and manage your own bundles."
-msgstr ""
 #: package_list
 msgid "back to the package-list"
+msgstr ""
+#: view_home_home_31
+msgid "Here you can choose the topics in detail, download single programs or complete bundles and you can create and manage your own bundles."
 msgstr ""
 #: view_layouts_application_18
 msgid "no new messages"

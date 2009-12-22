@@ -90,6 +90,7 @@ en:
   controller_passwords_6: Password changed.
   view_home_home_4: More ...
   view_user_profiles__installation_33: The following
+  wait_for_sync: waiting for syncronisation with repositories
   controller_passwords_7: Password not changed.
   view_home_home_5: "The menu on the left offers the following possibilities:"
   view_user_profiles__installation_34: will be added to our system.
@@ -236,10 +237,12 @@ en:
   view_home_derivatives_29: a computer to watch TV
   new_message: New message
   helper_distributions_15: Informational page at ubuntu.com
+  wait_for_debs: waiting for building of metapackages
   view_users_new_8: Yes, I want to be added to the announcement-mailinglist.
   view_home_derivatives_30: http://en.wikipedia.org/wiki/Home_theater_PC
   helper_distributions_16: free and from the main repositories
   view_layouts_application_warning: "Attention: the webserver will be down soon due to some maintenance work!"
+  make_distribution_final: Mark distribution as stable
   view_users_new_9: Yes, I want to be added to the discussion-mailinglist.
   view_home_derivatives_31: . Because of the necessary installation of drivers, Linux MCE should be installed directly. However, Communtu can be used to install additional software.
   helper_distributions_17: free and from the community repositories
@@ -297,6 +300,7 @@ en:
   view_home_derivatives_40: " - for portable internet devices."
   livecd_email: "Communtu: notification about Live-CD/DVD"
   view_home_faq_01: What is a bundle?
+  steps_for_distribution_setup: "Steps for setting up a new distribution (please do this on the admin-system) "
   questionmark_conny: Click me and tell what is unclear to you.
   new_packages: "Newly added packages: "
   view_home_faq_kde_01: You can find the Communtu sources under "K-Menu -> Programs -> System -> Software Sources -> Other Software". They can also be deactivated here.
@@ -675,6 +679,7 @@ en:
   you_can: "You can "
   view_home_icons_23: Message-icon
   view_packages_show_26: change metapackage into bundle
+  make_distribution_visible: Make distribution viewable
   view_home_icons_24: Receive a message-icon for new messages
   controller_debs_0: Debian-packages
   controller_debs_1: Deb created.
@@ -686,6 +691,7 @@ en:
   view_home_faq_gnome_01: "You can find the Communtu sources under \"System -> Administration -> Software Sources -> Other Software\". They can also be deactivated here. "
   view_mailbox_show_3: received
   view_home_faq_gnome_02: To reach the package manager Synaptic you navigate to "System -> Administration -> Synaptic Package Manager". In the lower left part you click on "Origin". In the list above search for "packages.communtu.org" and click on it. In the right part of the window you will now see all metapackages available at Communtu. To remove a metapackage from your system you make a right click on it and choose "Mark for Removal". With a click on "Apply" it will be uninstalled.
+  wait_for_release: wait for official Ubuntu release
   view_mailbox_show_5: You do not have any messages in your inbox.
   invalid_activation_code_entered: Invalid activation code entered.
   livecd_previous_cds: "Live-CD's/DVD's created so far:"
@@ -815,14 +821,14 @@ en:
   view_repositories_index_0: "repositories "
   view_layouts_application_16: new message
   view_home_home_30: "Bundle:"
+  view_layouts_application_18: no new messages
   view_home_home_31: Here you can choose the topics in detail, download single programs or complete bundles and you can create and manage your own bundles.
   package_list: back to the package-list
-  view_layouts_application_18: no new messages
-  view_home_home_32: "Communtu:"
-  controller_metapackages_11: Couldn't delete package from bundle.
-  controller_metapackages_debianizing: The bundle is currently created as a metapackaged and uploaded. This could take a couple of minutes.
-  no_save_database: "The following packages couldn't be saved in the database:"
   view_layouts_application_19: https://www.paypal.com/en_GB/i/btn/btn_donate_LG.gif
+  no_save_database: "The following packages couldn't be saved in the database:"
+  controller_metapackages_debianizing: The bundle is currently created as a metapackaged and uploaded. This could take a couple of minutes.
+  controller_metapackages_11: Couldn't delete package from bundle.
+  view_home_home_32: "Communtu:"
   view_repositories_index_5: new repository
   view_home_home_33: Do you want to know more about Communtu? Do you have suggestions or questions? We are looking forward to be in touch with you.
   view_layouts_application_20: Javascript is not activated! Please activate Javascript in your browser-settings.

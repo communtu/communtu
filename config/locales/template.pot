@@ -271,6 +271,9 @@ msgstr ""
 #: view_home_contact_us_4
 msgid "Senden"
 msgstr ""
+#: wait_for_sync
+msgid "auf Synchronisation der Repositories warten"
+msgstr ""
 #: view_metapackages_show_0
 msgid "Bündel erstellt von "
 msgstr ""
@@ -706,6 +709,9 @@ msgstr ""
 #: new_message
 msgid "Neue Nachricht"
 msgstr ""
+#: wait_for_debs
+msgid "auf Bau der Metapakete warten"
+msgstr ""
 #: helper_distributions_15
 msgid "Wikiseite bei Ubuntuusers"
 msgstr ""
@@ -720,6 +726,9 @@ msgid "free und aus den main Paketquellen"
 msgstr ""
 #: view_layouts_application_warning
 msgid "Achtung: in Kürze werden auf diesem Webserver kurze Wartungsarbeiten durchgeführt!"
+msgstr ""
+#: make_distribution_final
+msgid "Distribution als stabil freigeben"
 msgstr ""
 #: view_users_new_9
 msgid "Ja, ich möchte die Maillingliste für Diskussionen abbonieren."
@@ -843,6 +852,9 @@ msgid "Communtu: Benachrichtigung über Live-CD/DVD"
 msgstr ""
 #: view_home_faq_01
 msgid "Was ist ein Bündel?"
+msgstr ""
+#: steps_for_distribution_setup
+msgid "Schritte für das Einrichten einer neuen Distribution (bitte auf admin-System durchführen)"
 msgstr ""
 #: questionmark_conny
 msgid "Klick mich und sag mir, was Dir unklar ist."
@@ -982,14 +994,14 @@ msgstr ""
 #: new_article
 msgid "Neuen Artikel anlegen"
 msgstr ""
+#: view_users__sidebar_1
+msgid "Bündel verwalten"
+msgstr ""
 #: view_user_profiles_help_1
 msgid "Öffne ein Terminal unter \"Anwendungen\" -> \"Zubehör\" -> \"Terminal"
 msgstr ""
 #: participation
 msgid "Beteiligungsmöglichkeiten"
-msgstr ""
-#: view_users__sidebar_1
-msgid "Bündel verwalten"
 msgstr ""
 #: view_user_profiles__profile_data_7
 msgid "Wie stelle ich die Version fest?"
@@ -1942,6 +1954,9 @@ msgstr ""
 #: view_packages_show_26
 msgid "Metapaket in Bündel wandeln"
 msgstr ""
+#: make_distribution_visible
+msgid "Distribution sichtbar machen"
+msgstr ""
 #: view_home_icons_24
 msgid "Nachrichtensymbol für Post erhalten"
 msgstr ""
@@ -1971,6 +1986,9 @@ msgid "Unter \"System -> Systemverwaltung -> Software-Quellen -> Softwarequellen
 msgstr ""
 #: view_mailbox_show_3
 msgid "erhalten"
+msgstr ""
+#: wait_for_release
+msgid "auf offizielles Ubuntu-Release warten"
 msgstr ""
 #: view_home_faq_gnome_02
 msgid "Die Pakerverwaltung Synaptic erreichst Du über \"System -> Systemverwaltung -> Synaptic-Paketverwaltung\". Wähle hier unten links den Punkt Ursprung. Suche nun in der darüber liegenden Liste \"packages.communtu.org\" und klicke es an. Auf der rechten Seite werden nun die verfügbaren Metapakete in Communtu angezeigt. Das Entfernen geht über Rechtsmausklick und dann \"Zum Entfernen vormerken\". Dies muss dann danach durch \"Anwenden\" bestätigt werden."
