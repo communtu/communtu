@@ -357,7 +357,7 @@ auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} er
   view_derivatives_show_2: "Dialog-Programm:"
   view_derivatives_show_3: "Icon file:"
   view_distributions_edit_0: Distribution bearbeiten
-  view_distributions_index_0: "Verfügbare Distributionen"
+  view_distributions_index_0: "Verfügbare Ubuntu-Versionen"
   view_distributions_show_0: "Repositories:"
   view_distributions_show_1: "alles prüfen"
   view_distributions_show_2: alles synchronisieren
