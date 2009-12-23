@@ -192,13 +192,16 @@ de:
   link_community: "http://www.ubuntuusers.de"
   link_community_title: "Externer Link: zu den Seiten von ubuntuusers"
   livecd: "Live-CD/DVD"
+  livecd_communtu_name: "Namen mit communtu- sind für LiveCDs/DVDs reserviert, die aus Bündeln erstellt werden"
   livecd_create: "Die Live-CD/DVD wird jetzt erstellt. Wir benachrichtigen dich per Email, sobald sie fertig ist."
   livecd_email: "Communtu: Benachrichtigung über Live-CD/DVD"
   livecd_email_failed: "Communtu: Erstellung der Live-CD/DVD fehlgeschlagen"
   livecd_email_body: ", die Live-CD/DVD wurde erstellt! Folge dem Link: "
   livecd_email_body_failed: ", die Live-CD/DVD konnte leider nicht erstellt werden. Wir kümmern uns um das Problem."
+  livecd_existing_name: "Dieser Name ist bereits vergeben"
   livecd_image: CD-Image
   livecd_image_link: "http://wiki.ubuntuusers.de/CD-Images"
+  livecd_incorrect_name: "Der Name der LiveCD/DVD darf nur aus Buchstaben, Zahlen, _ und - bestehen"
   livecd_message: "Über die Live-CD kann die Software dann sowohl ausprobiert als
 auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} erstellt, in Form einer iso-Datei, die du dann brennen kannst. Zum Brennen benötigst du eine CD, falls du viel Software ausgewählt hast, eine DVD.<br /><br /> Die Erstellung des Images dauert eine gewisse Zeit. Du wirst per Email benachrichtigt, sobald das Image fertig ist. Bitte achte darauf, dass in deinen Benutzereinstellungen eine gültige Email-Adresse angegeben ist."
   livecd_previous_cds: "Bisher erstellte Live-CDs/DVDs:"
@@ -242,6 +245,7 @@ auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} er
   model_user_profile_tabz_3: "Installation durchführen"
   model_user_profile_tabz_4: Voreinstellungen
   more_about_sources: "(Mehr Informationen zum Thema Schlüssel und Quellen in den Faqs)"
+  name_of_livecd: "Name der LiveCD/DVD:"
   name_with_colon: "Name: "
   name_without_colon: Name
   native: nur Ubuntu

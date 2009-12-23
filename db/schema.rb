@@ -88,6 +88,7 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.text     "comment"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "comment_tid"
   end
 
   create_table "conflicts", :force => true do |t|
@@ -155,6 +156,19 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
   create_table "languages", :force => true do |t|
     t.string   "name"
     t.string   "country_code"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "livecds", :force => true do |t|
+    t.string   "name"
+    t.integer  "distribution_id"
+    t.integer  "derivative_id"
+    t.integer  "architecture_id"
+    t.integer  "user_id"
+    t.integer  "metapackage_id"
+    t.integer  "size"
+    t.boolean  "generated",       :default => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -232,6 +246,7 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.integer  "rateable_id",                 :default => 0,  :null => false
     t.integer  "user_id",                     :default => 0,  :null => false
     t.text     "comment"
+    t.integer  "comment_tid"
   end
 
   add_index "ratings", ["user_id"], :name => "fk_ratings_user"

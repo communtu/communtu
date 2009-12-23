@@ -379,50 +379,16 @@ end
     return debfile
   end
 
-  def fullversion
-    self.derivative.name.downcase+"-"+self.distribution.name.gsub(/[a-zA-Z ]/,'')+"-desktop-"+self.architecture.name
-  end
-
-  def livecd
-    system "dotlockfile -r 1000 #{RAILS_ROOT}/livecd_lock"
-    system "(echo; echo \"------------------------------------\"; echo \"Creating live CD\"; date) >> #{RAILS_ROOT}/log/livecd.log"
-    ver = self.fullversion
-    deb1 = RAILS_ROOT + "/" + self.install_sources
-    deb2 = RAILS_ROOT + "/" + self.install_bundle_as_meta
-    isobase = File.basename(deb2).gsub(/\.deb$/,'')
-    iso = "#{RAILS_ROOT}/public/debs/#{isobase}.iso"
-    baseurl = if RAILS_ROOT.index("test").nil? then "http://communtu.org" else "http://test.communtu.de" end
-    isourl = "#{baseurl}/debs/#{isobase}.iso"
-    if Dir.glob(iso)[0].nil? then
-      res = system "sudo -u communtu #{RAILS_ROOT}/script/remaster create #{ver} #{iso} #{isobase} #{deb1} #{deb2} >> #{RAILS_ROOT}/log/livecd.log 2>&1"
-    else
-      res = true
-    end
-    if !res then
-      system "(echo; echo \"Creation of livd CD failed\"; echo) >> #{RAILS_ROOT}/log/livecd.log"
-    end
-    system "(echo; echo \"finished at:\"; date; echo; echo) >> #{RAILS_ROOT}/log/livecd.log"
-    system "dotlockfile -u #{RAILS_ROOT}/livecd_lock"
-    if res then
-      MyMailer.deliver_livecd(self,isourl)
-    else
-      MyMailer.deliver_livecd_failed(self)
-    end
+  def livecd(name)
+    srcdeb = RAILS_ROOT + "/" + self.install_sources
+    installdeb = RAILS_ROOT + "/" + self.install_bundle_as_meta
+    cd = Livecd.create({:name => name, :distribution_id => self.distribution_id, :user_id => self.id,
+                        :derivative_id => self.derivative_id, :architecture_id => self.architecture_id})
+    cd.remaster(srcdeb,installdeb)
   end
 
   def test_livecd
-    ver = self.fullversion
-    deb1 = RAILS_ROOT + "/" + self.install_sources
-    deb2 = RAILS_ROOT + "/" + self.install_bundle_as_meta
-    isobase = File.basename(deb2).gsub(/\.deb$/,'')
-    iso = "#{RAILS_ROOT}/public/debs/#{isobase}.iso"
-    isourl = "http://communtu.org/debs/#{isobase}.iso"
-    if Dir.glob(iso)[0].nil? then
-      system "echo "
-      system "echo \"##{ver} #{iso} #{isobase} #{deb1} #{deb2}\" >> #{RAILS_ROOT}/log/livecd.log"
-      system "echo hallo > #{iso}"
-    end
-    MyMailer.deliver_livecd(self,isourl)
+    MyMailer.deliver_livecd(self,"http://communtu.org/debs/testtesttest")
   end
 
 

@@ -6,6 +6,7 @@ class CreateLivecds < ActiveRecord::Migration
       t.integer :derivative_id
       t.integer :architecture_id
       t.integer :user_id
+      t.integer :metapackage_id
       t.integer :size
       t.boolean :generated, :default => false
 
