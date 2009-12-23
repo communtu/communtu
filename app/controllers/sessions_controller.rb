@@ -89,11 +89,17 @@ class SessionsController < ApplicationController
       return_to = session[:return_to]
       if return_to.nil?
         if self.current_user.first_login == 1
+          if cookies[:backlink] != nil
           redirect_to cookies[:backlink]
-          #  redirect_to user_user_profile_path(self.current_user) + "/tabs/0"
+          else
+          redirect_to user_user_profile_path(self.current_user) + "/tabs/0"
+          end        
         else
+          if cookies[:backlink] != nil
             redirect_to cookies[:backlink]
-           # redirect_to "/home"
+          else
+           redirect_to "/home"
+          end
         end
       else
         redirect_to return_to
