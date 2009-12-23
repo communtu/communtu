@@ -7,6 +7,7 @@ class CreateLivecds < ActiveRecord::Migration
       t.integer :architecture_id
       t.integer :user_id
       t.integer :size
+      t.boolean :generated, :default => false
 
       t.timestamps
     end
