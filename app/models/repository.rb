@@ -161,13 +161,20 @@ class Repository < ActiveRecord::Base
       if package["Description"].nil?
         package["Description"] = ""
       end
-
+      #is it a program
+      if package["Source"].nil? or package["Source"] == "" or package["Source"] == name
+        package["Source"] = "true"
+      else
+        package["Source"] = "false"
+      end
       # compute attributes for package
       attributes_package = { :name => name,
           :description => package["Description"],\
           :fullsection => package["Section"],\
           # use last part for :section
-          :section => package["Section"].split("/")[-1]}
+          :section => package["Section"].split("/")[-1],\
+          :is_program => package["Source"]
+          }
       # look for existing package
       p = Package.find(:first, :conditions => ["name=?",name])
       if p.nil?
@@ -344,7 +351,7 @@ class Repository < ActiveRecord::Base
   end
 
   def self.is_valid_option? option
-    option == "Version" or option == "Description" or option == "Section" \
+    option == "Version" or option == "Description" or option == "Source" or option == "Section" \
      or option == "Depends" or option == "Recommends" \
      or option == "Conflicts" or option == "Suggests" \
      or option == "Installed-Size" or option == "Size" \
