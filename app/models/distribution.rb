@@ -3,7 +3,8 @@ class Distribution < ActiveRecord::Base
   has_many :repositories, :dependent => :destroy
   has_many :metacontents_distrs, :dependent => :destroy
   has_many :debs, :dependent => :destroy
-  belongs_to :distribution
+  belongs_to :distribution # predecessor
+  has_many :livecds, :dependent => :destroy
 
   DEFAULT_DISTRO_NAME = "Jaunty"
 

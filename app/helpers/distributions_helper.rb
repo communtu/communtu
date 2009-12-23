@@ -89,7 +89,8 @@ module DistributionsHelper
             out += "<li> " + (link_to t(:migrate_bundles), "/distributions/migrate_bundles/"+dist.id.to_s)+"</li>"
           end
           if dist.invisible then
-            out += " <li> " + t(:wait_for_debs)
+            out += " <li> " + t(:wait_for_debs) + "</li>"
+            out += " <li> " + t(:prepare_livecd) + "</li>"
             if !Deb.find(:first,:conditions=>{:distribution_id => dist.id}).nil? && Deb.find(:first,:conditions=>{:distribution_id => dist.id,:generated=>false}).nil?
               out += "&nbsp;OK"
             end
@@ -97,6 +98,7 @@ module DistributionsHelper
             out += "<li> " + (link_to t(:make_distribution_visible), "/distributions/make_visible/"+dist.id.to_s)+"</li>"
           end
           if dist.preliminary then
+            out += " <li> " + t(:prepare_livecd_contd) + "</li>"
             out += " <li> " + t(:wait_for_release) + "</li><li>" + (link_to t(:make_distribution_final), "/distributions/make_final/"+dist.id.to_s)+"</li>"
           end
           out += "</ul></p>"

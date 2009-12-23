@@ -270,6 +270,8 @@ auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} er
   path: "Pfad:"
   predecessor: Vorgänger
   preliminary_distribution: "Vorläufige Distribution"
+  prepare_livecd: "LiveCD/DVD vorbereiten (isos nach $HOME/livecd/isos, script/remaster setup)"
+  prepare_livecd_contd: "bei jedem Pre-Release LiveCD/DVD neu vorbereiten"
   press_archiv: Pressearchiv
   press_archiv_editorial: Hier haben wir eine Auswahl von Artikeln aus der Presse über uns aufgelistet.
   promote_chat: Du kannst gucken, ob sich gerade jemand von uns im Chat aufhält und mit uns über den Chat kommunizieren.
