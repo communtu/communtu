@@ -10,8 +10,17 @@ class Livecd < ActiveRecord::Base
     self.derivative.name.downcase+"-"+self.distribution.name.gsub(/[a-zA-Z ]/,'')+"-desktop-"+self.architecture.name
   end
 
+  def fullname
+    "#{self.name}-#{self.fullversion}"
+  end
+
   def filename
-    "#{RAILS_ROOT}/public/debs/#{self.name}-#{self.fullversion}.iso"
+    "#{RAILS_ROOT}/public/debs/#{self.fullname}.iso"
+  end
+
+  def url
+    baseurl = if RAILS_ROOT.index("test").nil? then "http://communtu.org" else "http://test.communtu.de" end
+    return "#{baseurl}/debs/#{self.fullname}.iso"
   end
 
   def self.check_name(name)
@@ -26,24 +35,36 @@ class Livecd < ActiveRecord::Base
     end
     return nil
   end
-  
-  def remaster(srcdeb,installdeb)
+
+  def fork_remaster
+      self.pid = fork do
+        system 'echo "Livecd.find('+self.id.to_s+').remaster" | nohup script/console production'
+      end
+      self.save
+  end
+
+  def remaster
     system "dotlockfile -r 1000 #{RAILS_ROOT}/livecd_lock"
+    self.generating = true
+    self.save
     system "(echo; echo \"------------------------------------\"; echo \"Creating live CD\"; date) >> #{RAILS_ROOT}/log/livecd.log"
     ver = self.fullversion
     iso = self.filename
-    isobase = File.basename(iso)
-    baseurl = if RAILS_ROOT.index("test").nil? then "http://communtu.org" else "http://test.communtu.de" end
-    isourl = "#{baseurl}/debs/#{isobase}"
+    isourl = self.url
+    fullname = self.fullname
     if Dir.glob(iso)[0].nil? then
       res = system "sudo -u communtu #{RAILS_ROOT}/script/remaster create #{ver} #{iso} #{isobase} #{srcdeb} #{installdeb} >> #{RAILS_ROOT}/log/livecd.log 2>&1"
     else
       res = true
     end
+    system "(echo; echo \"finished at:\"; date; echo; echo) >> #{RAILS_ROOT}/log/livecd.log"
     if !res then
       system "(echo; echo \"Creation of livd CD failed\"; echo) >> #{RAILS_ROOT}/log/livecd.log"
+      self.log = IO.popen("tail -n80 #{RAILS_ROOT}/log/livecd.log").read
     end
-    system "(echo; echo \"finished at:\"; date; echo; echo) >> #{RAILS_ROOT}/log/livecd.log"
+    self.failed = !res
+    self.generating = false
+    self.save
     system "dotlockfile -u #{RAILS_ROOT}/livecd_lock"
     if res then
       self.generated = true
@@ -55,4 +76,21 @@ class Livecd < ActiveRecord::Base
     end
   end
 
+  protected
+
+  def before_destroy
+    begin
+      # if process for creating the livecd is waiting but has not started yet, kill it
+      if !self.generated and !self.generating and !self.pid.nil?
+        Process.kill("TERM", self.pid)
+        # use time for deletion of iso as waiting time
+        File.delete self.filename
+        Process.kill("KILL", self.pid)
+      else
+        # only delete the iso
+        fork do File.delete self.filename end
+      end
+    rescue
+    end
+  end
 end

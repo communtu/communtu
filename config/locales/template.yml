@@ -14,6 +14,7 @@ de:
   archive: Archiv
   are_you_sure: Bist du sicher?
   back: "zurück"
+  being_created: "wird erstellt"
   blog: Der Blog von Communtu
   blog_2: Blog
   bundle: "Bündel"
@@ -303,6 +304,7 @@ auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} er
   third_party: alle Anbieter
   to_chat: zum Chat
   total_packages: "Pakete insgesamt: "
+  total_isos_size: "Gesamtgröße der isos: "
   trusted: Ubuntu+Community
   ubuntu_derivatives: Ubuntu-Derivate
   updatedPackages: "geänderte Pakete: "

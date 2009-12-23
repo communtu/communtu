@@ -280,6 +280,8 @@ end
   #Messanger methods END
 
 
+  # installation methods
+
   def install_sources
     if self.selected_packages.empty? then
       return nil
@@ -383,8 +385,18 @@ end
     srcdeb = RAILS_ROOT + "/" + self.install_sources
     installdeb = RAILS_ROOT + "/" + self.install_bundle_as_meta
     cd = Livecd.create({:name => name, :distribution_id => self.distribution_id, :user_id => self.id,
-                        :derivative_id => self.derivative_id, :architecture_id => self.architecture_id})
-    cd.remaster(srcdeb,installdeb)
+                        :derivative_id => self.derivative_id, :architecture_id => self.architecture_id,
+                        :srcdeb => srcdeb, :installdeb => installdeb})
+    cd.fork_remaster
+  end
+
+  def bundle_to_livecd(bundle)
+    srcdeb = RAILS_ROOT + "/" + self.install_bundle_sources(bundle)
+    deb_name = bundle.debian_name
+    cd = Livecd.create({:name => deb_name, :distribution_id => self.distribution_id, :user_id => self.id,
+                        :derivative_id => self.derivative_id, :architecture_id => self.architecture_id,
+                        :srcdeb => srcdeb, :installdeb => deb_name})
+    cd.fork_remaster
   end
 
   def test_livecd

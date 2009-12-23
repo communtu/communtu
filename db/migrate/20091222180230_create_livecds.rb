@@ -8,7 +8,13 @@ class CreateLivecds < ActiveRecord::Migration
       t.integer :user_id
       t.integer :metapackage_id
       t.integer :size
+      t.string  :srcdeb
+      t.string  :installdeb
+      t.integer :pid
       t.boolean :generated, :default => false
+      t.boolean :generating, :default => false
+      t.boolean :failed, :default => false
+      t.text    :log
 
       t.timestamps
     end

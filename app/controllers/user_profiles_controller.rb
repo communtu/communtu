@@ -98,24 +98,23 @@ class UserProfilesController < ApplicationController
   end
 
   def create_livecd
-    uid = params[:id]
+    user = User.find(params[:id])
     name = params[:name]
     err = Livecd.check_name(name)
     if !err.nil? then
       flash[:error] = err
-      redirect_to user_user_profile_path(current_user) + "/tabs/3"
       #redirect_to ({:action => "livecd", :default_name => name})
-      return
+      #return
+    else
+      flash[:notice] = t(:livecd_create)
+      user.livecd(name)
     end
-    fork do
-      system 'echo "User.find('+uid.to_s+').livecd(\''+name+'\')" > log/test1.log'
-      system 'echo "User.find('+uid.to_s+').livecd(\''+name+'\')" | nohup script/console production'
-    end
+    redirect_to user_user_profile_path(current_user) + "/tabs/3"
   end
 
   def test_livecd
     uid = params[:id]
-    fork do
+    pid = fork do
       system 'echo "User.find('+uid.to_s+').test_livecd" | nohup script/console production'
     end
     render :action => 'create_livecd'

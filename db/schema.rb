@@ -168,7 +168,11 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.integer  "user_id"
     t.integer  "metapackage_id"
     t.integer  "size"
+    t.string   "srcdeb"
+    t.string   "installdeb"
+    t.integer  "pid"
     t.boolean  "generated",       :default => false
+    t.boolean  "generating",      :default => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

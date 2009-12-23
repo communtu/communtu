@@ -58,7 +58,12 @@ class SuggestionController < ApplicationController
     send_file debfile, :type => 'application/x-debian-package'
   end
 
- 
+  def bundle_to_livecd
+    if check_login then return end
+    bundle = Metapackage.find(params[:mid])
+    current_user.bundle_to_livecd(bundle)
+      redirect_to "/users/#{current_user.id}/user_profile/tabs/3"
+  end
   
   def install_apt_url
     if check_login then return end
