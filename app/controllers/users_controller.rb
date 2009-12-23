@@ -40,16 +40,22 @@ class UsersController < ApplicationController
     @user.activation_code = nil
     @user.activated_at = Time.now    
     @user.profile_version = 1
-    if params[:announce] == "1"
+    if params[:announce] == "1" and I18n.locale.to_s == "de"
       system "echo \"\" | mail -s \"announce\" -c info@toddy-franz.de -a \"FROM: #{@user.email}\" communtu-announce-de+subscribe@googlegroups.com &"
+    elsif params[:announce] == "1"
+      system "echo \"\" | mail -s \"announce\" -c info@toddy-franz.de -a \"FROM: #{@user.email}\" communtu-announce-en+subscribe@googlegroups.com &"
     end
-    if params[:discuss] == "1"
+    if params[:discuss] == "1" and I18n.locale.to_s == "de"
       system "echo \"\" | mail -s \"discuss\" -c info@toddy-franz.de -a \"FROM: #{@user.email}\" communtu-discuss-de+subscribe@googlegroups.com &"
+    elsif params[:discuss] == "1"
+      system "echo \"\" | mail -s \"discuss\" -c info@toddy-franz.de -a \"FROM: #{@user.email}\" communtu-discuss-en+subscribe@googlegroups.com &"
     end
     @user.save!
     #Uncomment to have the user logged in after creating an account - Not Recommended
     #self.current_user = @user
     flash[:notice] = t(:controller_users_1)
+    #redirect_to params[:form][:backlink]
+    cookies[:backlink] = params[:form][:backlink]
     redirect_to "/session/new"
   rescue ActiveRecord::RecordInvalid
     flash[:error] = t(:controller_users_2)
