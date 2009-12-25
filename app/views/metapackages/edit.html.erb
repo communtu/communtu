@@ -25,6 +25,14 @@
               <td><input id="metapackage_name_english" name="metapackage[name_english]" size="16" type="text" value="" /> 
                   <a href="mailto:info@communtu.de?subject=<%= @metapackage.id %>"><%= t(:help_translation) %></a></td>
               </tr>
+            <% elsif (flash[:error] != "" and I18n.locale.to_s != "en") %>
+             <tr>
+              <td>
+              <%=t(:english_name)%></td>
+              <td><input id="metapackage_name_english" name="metapackage[name_english]" size="16" type="text" value="<%= @metapackage.name_english %>" /> 
+                  <a href="mailto:info@communtu.de?subject=<%= @metapackage.id %>"><%= t(:help_translation) %></a></td>
+              </tr>
+            <% else %>
             <% end %>
         <tr>
 	        <td><%=t(:view_metapackages_show_version)%></td>
@@ -59,6 +67,13 @@
                <td valign='top'><%=t(:english_description)%></td>
               <td><textarea id="metapackage_description_english" name="metapackage[description_english]" rows="6" cols="50"></textarea></td>
               </tr>
+             <% elsif (flash[:error] != "" and I18n.locale.to_s != "en") %>
+             <tr>
+              <td valign='top'>
+              <%=t(:english_description)%></td>
+              <td><textarea id="metapackage_description_english" name="metapackage[description_english]" rows="6" cols="50"><%= @metapackage.description_english %></textarea></td>
+              </tr>
+            <% else %>
             <% end %>
 
         </table>	
