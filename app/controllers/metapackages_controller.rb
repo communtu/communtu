@@ -14,11 +14,12 @@ class MetapackagesController < ApplicationController
   # GET /metapackages/1.xml
   def show
     @metapackage = Metapackage.find(params[:id])
-    @meta_english_title = Translation.find(:first, :conditions => {:translatable_id => @metapackage.name_tid, :language_code => "en"})
-    if @meta_english_title == nil
-#      @meta_english_title = ""
-      @meta_english_title.contents = "unknown"
-    end
+      if @metapackage.name_tid == nil
+         #something get wrong - this cannot happend if the translation goes right
+         @meta_english_title = ""
+      else
+         @meta_english_title = Translation.find(:first, :conditions => {:translatable_id => @metapackage.name_tid, :language_code => "en"})
+      end
     @conflicts = @metapackage.internal_conflicts
     if logged_in?
     @distribution = current_user.distribution
