@@ -65,7 +65,12 @@
 		 <%= image_tag("/images/navi_download.png", :border => '0', :alt=>t(:view_layouts_application_27),:title=>t(:view_layouts_application_27)) %> 			<div class="navi_eins"><%= t(:view_layouts_application_24) %></div>
 <% end %>
 </a>
+<% @has_own_bundles = Metapackage.find_all_by_user_id(current_user.id) %>
+<% if @has_own_bundles.length != 0 %>
 	<%= "<a href=" + user_path(current_user) + "/metapackages/0>" %>
+<% else %>
+        <%= "<a href=" + user_path(current_user) + "/metapackages/1>" %>
+<% end %>
 <% if ((params[:controller] == "packages") or (params[:controller] == "users" and params[:action] == "metapackages") or (params[:controller] == "home" and params[:action] == "new_repository") or params[:controller] == "metapackages" or params[:controller] == "distributions" or params[:controller] == "repositories") %>
 <%= image_tag("/images/navi_buendelon.png", :border => '0', :alt=>t(:view_layouts_application_26),:title=>t(:view_layouts_application_26)) %> <div class="navi_zwei"><%= t(:view_layouts_application_23) %></div>
 <% else %>
