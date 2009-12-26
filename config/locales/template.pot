@@ -163,6 +163,9 @@ msgstr ""
 #: view_user_profiles__installation_21
 msgid "installieren der Metapakete. Bitte vorher die Quellen hinzufügen."
 msgstr ""
+#: name_of_livecd
+msgid "Name der LiveCD/DVD:"
+msgstr ""
 #: view_user_profiles__installation_23
 msgid "Pakete installieren. Es gibt zwei Alternativen:"
 msgstr ""
@@ -466,6 +469,9 @@ msgstr ""
 #: view_home_news_7
 msgid "http://groups.google.com/group/communtu-announce-de/topics?start="
 msgstr ""
+#: livecd_communtu_name
+msgid "Namen mit communtu- sind für LiveCDs/DVDs reserviert, die aus Bündeln erstellt werden"
+msgstr ""
 #: view_home_news_8
 msgid " gesammelt."
 msgstr ""
@@ -473,7 +479,7 @@ msgstr ""
 msgid "Anmelden"
 msgstr ""
 #: view_distributions_index_0
-msgid "Verfügbare Distributionen"
+msgid "Verfügbare Ubuntu-Versionen"
 msgstr ""
 #: no_admin
 msgid "Du bist kein Administrator!"
@@ -633,6 +639,9 @@ msgid "Neue Pakete: "
 msgstr ""
 #: view_users_index_0
 msgid "Alle Benutzer"
+msgstr ""
+#: prepare_livecd
+msgid "LiveCD/DVD vorbereiten (script/remaster-getisos)"
 msgstr ""
 #: view_home_derivatives_24
 msgid "Derivate, die mit der Derivats-eigenen Installations-CD installiert werden sollten:"
@@ -849,6 +858,9 @@ msgid " - für mobile Internetgeräte."
 msgstr ""
 #: livecd_email
 msgid "Communtu: Benachrichtigung über Live-CD/DVD"
+msgstr ""
+#: total_isos_size
+msgid "Gesamtgröße der isos: "
 msgstr ""
 #: view_home_faq_01
 msgid "Was ist ein Bündel?"
@@ -1093,6 +1105,9 @@ msgstr ""
 #: view_cart_new_from_list_5
 msgid "Erstellen"
 msgstr ""
+#: livecd_existing_name
+msgid "Dieser Name ist bereits vergeben"
+msgstr ""
 #: controller_metapackages_9
 msgid "Die Beschreibung darf nicht leer sein<br>"
 msgstr ""
@@ -1312,6 +1327,9 @@ msgstr ""
 #: view_home_derivatives_8
 msgid "Ebenso kannst du dort nachgucken, aus welchen Paketen ein Derivat besteht."
 msgstr ""
+#: livecd_incorrect_name
+msgid "Der Name der LiveCD/DVD darf nur aus Buchstaben, Zahlen, _ und - bestehen"
+msgstr ""
 #: save_rough_install
 msgid "Grobauswahl speichern und installieren"
 msgstr ""
@@ -1326,6 +1344,9 @@ msgid "Debian-Section:"
 msgstr ""
 #: view_home_derivatives_9
 msgid "Über Communtu sinnvoll nachinstallierbare Derivate:"
+msgstr ""
+#: prepare_livecd_contd
+msgid "bei jedem Pre-Release LiveCD/DVD neu vorbereiten (script/remaster-getisos)"
 msgstr ""
 #: view_roles_show_0
 msgid "Rollenname:"
@@ -1657,26 +1678,26 @@ msgstr ""
 #: view_users_show_2
 msgid "Nutzer seit: "
 msgstr ""
+#: view_users_show_3
+msgid "(Monat/Jahr)"
+msgstr ""
 #: view_metapackages_show_version
 msgid "Version:"
 msgstr ""
 #: subtype
 msgid "Subtyp:"
 msgstr ""
-#: view_users_show_3
-msgid "(Monat/Jahr)"
+#: view_users_show_4
+msgid "Zuletzt eingeloggt: "
 msgstr ""
 #: view_admins_test_all_0
 msgid "Folgende Repositories konnten nicht gelesen werden:"
 msgstr ""
-#: view_users_show_4
-msgid "Zuletzt eingeloggt: "
+#: view_users_show_5
+msgid "Erstellte Bündel: "
 msgstr ""
 #: view_admins_test_all_1
 msgid "Alle Repositories wurden erreicht."
-msgstr ""
-#: view_users_show_5
-msgid "Erstellte Bündel: "
 msgstr ""
 #: view_users_show_8
 msgid "Nachrichten"
@@ -1722,6 +1743,9 @@ msgid "Diese Funktion ist für Gäste nicht verfügbar."
 msgstr ""
 #: livecd_email_body_failed
 msgid ", die Live-CD/DVD konnte leider nicht erstellt werden. Wir kümmern uns um das Problem."
+msgstr ""
+#: being_created
+msgid "wird erstellt"
 msgstr ""
 #: bundle_by_owner
 msgid "erstellte Bündel"

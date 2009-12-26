@@ -163,6 +163,9 @@ msgstr ""
 #: view_user_profiles__installation_21
 msgid "Installation of the metapackages. Please add the sources first."
 msgstr ""
+#: name_of_livecd
+msgid "Name of the Live-CD/DVD:"
+msgstr ""
 #: view_user_profiles__installation_23
 msgid "Installing packages. There are two alternatives:"
 msgstr ""
@@ -466,6 +469,9 @@ msgstr ""
 #: view_home_news_7
 msgid "http://groups.google.com/group/communtu-discuss-en/topics?start="
 msgstr ""
+#: livecd_communtu_name
+msgid "Names containing \"communtu-\" are reserved for Live-CDs/DVDs created from bundles"
+msgstr ""
 #: view_home_news_8
 msgid "."
 msgstr ""
@@ -473,7 +479,7 @@ msgstr ""
 msgid "Log in"
 msgstr ""
 #: view_distributions_index_0
-msgid "Available distributions"
+msgid "Available Ubuntu-versions"
 msgstr ""
 #: no_admin
 msgid "You are not an administrator!"
@@ -633,6 +639,9 @@ msgid "New package:"
 msgstr ""
 #: view_users_index_0
 msgid "All users"
+msgstr ""
+#: prepare_livecd
+msgid "Prepare Live-CD/DVD (script/remaster-getisos)"
 msgstr ""
 #: view_home_derivatives_24
 msgid "Derivatives, which should be installed with the derivative installation-CD:"
@@ -849,6 +858,9 @@ msgid " - for portable internet devices."
 msgstr ""
 #: livecd_email
 msgid "Communtu: notification about Live-CD/DVD"
+msgstr ""
+#: total_isos_size
+msgid "Size of ISO:"
 msgstr ""
 #: view_home_faq_01
 msgid "What is a bundle?"
@@ -1093,6 +1105,9 @@ msgstr ""
 #: view_cart_new_from_list_5
 msgid "Create "
 msgstr ""
+#: livecd_existing_name
+msgid "The name is already in use!"
+msgstr ""
 #: controller_metapackages_9
 msgid "The description must not be empty<br>"
 msgstr ""
@@ -1309,6 +1324,9 @@ msgstr ""
 #: view_home_derivatives_8
 msgid "You can also take a look of which packages a derivative consists."
 msgstr ""
+#: livecd_incorrect_name
+msgid "The name of the Live-CD/DVD can contain only letters, numbers, _ and -."
+msgstr ""
 #: save_rough_install
 msgid "Save rough selection and install"
 msgstr ""
@@ -1323,6 +1341,9 @@ msgid "Debian section"
 msgstr ""
 #: view_home_derivatives_9
 msgid "With Communtu installable derivatives:"
+msgstr ""
+#: prepare_livecd_contd
+msgid "Prepare new Live-CD/DVD with every pre-release (script/remaster-getisos)"
 msgstr ""
 #: view_roles_show_0
 msgid "Rolename:"
@@ -1719,6 +1740,9 @@ msgid "This function is not available for guests."
 msgstr ""
 #: livecd_email_body_failed
 msgid "While creating metapackages, an error occurred. We'll solve that problem as fast as possible."
+msgstr ""
+#: being_created
+msgid "being created"
 msgstr ""
 #: bundle_by_owner
 msgid "Created bundles"
@@ -2341,11 +2365,11 @@ msgstr ""
 #: donation_purpose
 msgid "Purpose: Communtu"
 msgstr ""
-#: view_layouts_application_14
-msgid "Feedback to Communtu"
-msgstr ""
 #: view_home_home_28
 msgid "Download:"
+msgstr ""
+#: view_layouts_application_14
+msgid "Feedback to Communtu"
 msgstr ""
 #: allgemeinbildung
 msgid "Allgemeinbildung e.V."
@@ -2365,11 +2389,11 @@ msgstr ""
 #: view_home_home_30
 msgid "Bundle:"
 msgstr ""
-#: package_list
-msgid "back to the package-list"
-msgstr ""
 #: view_home_home_31
 msgid "Here you can choose the topics in detail, download single programs or complete bundles and you can create and manage your own bundles."
+msgstr ""
+#: package_list
+msgid "back to the package-list"
 msgstr ""
 #: view_layouts_application_18
 msgid "no new messages"

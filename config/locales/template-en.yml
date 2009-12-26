@@ -50,6 +50,7 @@ en:
   view_user_profiles_new_3: level of expert
   bundle_open_new_window: Bundle will be opend in a new window.
   view_user_profiles__installation_21: Installation of the metapackages. Please add the sources first.
+  name_of_livecd: "Name of the Live-CD/DVD:"
   view_user_profiles__installation_23: "Installing packages. There are two alternatives:"
   view_users_new_10: your first name
   view_user_profiles__installation_24: Installation via metapackage
@@ -153,9 +154,10 @@ en:
   view_user_mailer_activation_0: ", your account has been activated. Please follow this link:"
   controller_metapackages_please_regenerate: The bundle has been reset. Please raise the version and re-create the meta-package.
   view_home_news_7: http://groups.google.com/group/communtu-discuss-en/topics?start=
+  livecd_communtu_name: Names containing "communtu-" are reserved for Live-CDs/DVDs created from bundles
   view_home_news_8: .
   anmelden: Log in
-  view_distributions_index_0: Available distributions
+  view_distributions_index_0: Available Ubuntu-versions
   no_admin: You are not an administrator!
   view_metapackages_new_4: Install by default
   model_mailer_0: Welcome to Communtu
@@ -211,6 +213,7 @@ en:
   press_archiv_editorial: Here we have listed a selection of press articles about us.
   view_admins_load_packages_0: "New package:"
   view_users_index_0: All users
+  prepare_livecd: Prepare Live-CD/DVD (script/remaster-getisos)
   view_home_derivatives_24: "Derivatives, which should be installed with the derivative installation-CD:"
   view_users_index_1: "We have a total of "
   view_users_new_1: Here you have the possibility to register yourself.
@@ -299,6 +302,7 @@ en:
   view_home_news_13: http://groups.google.com/group/communtu-discuss-de/topics?start=
   view_home_derivatives_40: " - for portable internet devices."
   livecd_email: "Communtu: notification about Live-CD/DVD"
+  total_isos_size: "Size of ISO:"
   view_home_faq_01: What is a bundle?
   steps_for_distribution_setup: "Steps for setting up a new distribution (please do this on the admin-system) "
   questionmark_conny: Click me and tell what is unclear to you.
@@ -380,6 +384,7 @@ en:
   view_users__sidebar_5: Administrate users
   view_home_faq_13: How do I find programs?
   view_cart_new_from_list_5: "Create "
+  livecd_existing_name: The name is already in use!
   controller_metapackages_9: The description must not be empty<br>
   view_users__sidebar_6: Administrate categories
   view_home_faq_14: To find a program, go to "Search programs". Enter the name of the program you are looking for into the search field. If you want to search only the programs click on "Programs only" and the libraries are not searched. Furthermore it is possible to choose a Debian-section where programs are preselected.
@@ -459,6 +464,7 @@ en:
   view_home_derivatives_7: can be chosen to be installed in the category "Derivatives".
   chat: Chat
   view_home_derivatives_8: You can also take a look of which packages a derivative consists.
+  livecd_incorrect_name: The name of the Live-CD/DVD can contain only letters, numbers, _ and -.
   save_rough_install: Save rough selection and install
   passwd_no_match: The new password does not comply with the verification.
   view_my_mailer_mailerror_0: |-
@@ -467,6 +473,7 @@ en:
     The user would really like to be notified when the error has been fixed.
   debian_section: Debian section
   view_home_derivatives_9: "With Communtu installable derivatives:"
+  prepare_livecd_contd: Prepare new Live-CD/DVD with every pre-release (script/remaster-getisos)
   view_roles_show_0: "Rolename:"
   add_comment: Add comment
   livecd_create: The Live-CD/DVD is now being created. We will notify you via e-mail when this process is finished.
@@ -602,6 +609,7 @@ en:
   livecd_email_failed: "Communtu: creation of Live-CD/DVD failed."
   controller_application_0: This function is not available for guests.
   livecd_email_body_failed: While creating metapackages, an error occurred. We'll solve that problem as fast as possible.
+  being_created: being created
   bundle_by_owner: Created bundles
   view_repositories_show_6: "        OpenSource"
   view_home_mail_0: Notification in bugfixing
@@ -813,17 +821,17 @@ en:
   view_sent_show_2: "Date:"
   controller_metapackages_not_changed: This bundle is already created as a metapackage and uploaded.
   donation_purpose: "Purpose: Communtu"
+  allgemeinbildung: Allgemeinbildung e.V.
   view_layouts_application_14: Feedback to Communtu
   view_home_home_28: "Download:"
-  allgemeinbildung: Allgemeinbildung e.V.
-  view_layouts_application_15: "Logged in as "
-  view_home_home_29: To which topic do you look for programs (office, graphics, ...)? Enter your fields of interest and pre-configured bundles can be downloaded.
   view_repositories_index_0: "repositories "
+  view_home_home_29: To which topic do you look for programs (office, graphics, ...)? Enter your fields of interest and pre-configured bundles can be downloaded.
+  view_layouts_application_15: "Logged in as "
   view_layouts_application_16: new message
   view_home_home_30: "Bundle:"
   view_layouts_application_18: no new messages
-  view_home_home_31: Here you can choose the topics in detail, download single programs or complete bundles and you can create and manage your own bundles.
   package_list: back to the package-list
+  view_home_home_31: Here you can choose the topics in detail, download single programs or complete bundles and you can create and manage your own bundles.
   view_layouts_application_19: https://www.paypal.com/en_GB/i/btn/btn_donate_LG.gif
   no_save_database: "The following packages couldn't be saved in the database:"
   controller_metapackages_debianizing: The bundle is currently created as a metapackaged and uploaded. This could take a couple of minutes.
