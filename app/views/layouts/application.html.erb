@@ -131,6 +131,14 @@
 <% div_helper = 0 %>
 <% jutta = 1 %>
 <% end %>
+<% if cookies[:_communtu_session] == nil %>
+<% flash[:error] = t(:no_cookies) %>
+<div class="flash"><span id="error">
+<%= flash[:error] %>
+</span>
+</div>
+<% else %>
+<% end %>
 		<%= yield %>
 <% if jutta == 1 %>
 </div>
