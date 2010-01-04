@@ -15,9 +15,8 @@ class Package < BasePackage
   validates_presence_of :name
 
   def repositories_dist(distribution,arch)
-    pds = PackageDistr.find(:all,:conditions=>["package_id = ? and distribution_id = ?",self.id,distribution.id])
-    #new version, use after database update
-    #pds = PackageDistr.find(:all,:conditions=>["package_id = ? and distribution_id = ? and package_distrs_architectures.architecture_id = ?",self.id,distribution.id,arch.id],:include => :package_distrs_architectures)
+    #pds = PackageDistr.find(:all,:conditions=>["package_id = ? and distribution_id = ?",self.id,distribution.id])
+    pds = PackageDistr.find(:all,:conditions=>["package_id = ? and distribution_id = ? and package_distrs_architectures.architecture_id = ?",self.id,distribution.id,arch.id],:include => :package_distrs_architectures)
     return pds.map{|pd| pd.repository}
   end
 
