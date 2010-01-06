@@ -1714,6 +1714,9 @@ msgstr ""
 #: view_packages__packagelist_1
 msgid "Programs&nbsp;only:"
 msgstr ""
+#: eg
+msgid "e.g."
+msgstr ""
 #: view_repositories_show_0
 msgid "show repository"
 msgstr ""
@@ -2365,11 +2368,11 @@ msgstr ""
 #: donation_purpose
 msgid "Purpose: Communtu"
 msgstr ""
-#: view_home_home_28
-msgid "Download:"
-msgstr ""
 #: view_layouts_application_14
 msgid "Feedback to Communtu"
+msgstr ""
+#: view_home_home_28
+msgid "Download:"
 msgstr ""
 #: allgemeinbildung
 msgid "Allgemeinbildung e.V."

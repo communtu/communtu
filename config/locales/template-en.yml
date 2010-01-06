@@ -600,6 +600,7 @@ en:
   livecd_image: CD-Image
   view_categories_index_0: Category-overview
   view_packages__packagelist_1: "Programs&nbsp;only:"
+  eg: e.g.
   view_repositories_show_0: show repository
   view_packages__packagelist_2: "Search:"
   cant_debianized: To create this meta-package an English title and descriptionis needed.
@@ -822,8 +823,8 @@ en:
   controller_metapackages_not_changed: This bundle is already created as a metapackage and uploaded.
   donation_purpose: "Purpose: Communtu"
   allgemeinbildung: Allgemeinbildung e.V.
-  view_layouts_application_14: Feedback to Communtu
   view_home_home_28: "Download:"
+  view_layouts_application_14: Feedback to Communtu
   view_repositories_index_0: "repositories "
   view_home_home_29: To which topic do you look for programs (office, graphics, ...)? Enter your fields of interest and pre-configured bundles can be downloaded.
   view_layouts_application_15: "Logged in as "
