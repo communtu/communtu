@@ -1,3 +1,50 @@
-<%= render_tabz(:user_profile, 
-      {:user => current_user})
- %>
+<h2><%=t(:livecd)%></h2>
+<%= render_flash %>
+<%= render :partial => 'box' %>
+<% if current_user.selected_packages.empty? %>
+<%=t(:view_user_profiles__installation_1)%>
+
+<% else %>
+<%cds=Livecd.find_all_by_user_id(current_user.id)%>
+<% if !cds.empty? %>
+  <p><%=t(:livecd_previous_cds)%><br />
+  <table "cellpadding=5">
+  <% total = 0 %>
+  <% for cd in cds %>
+    <tr>
+    <td><%= link_to image_tag("edit-delete.png", :size => "22x22", :border => "0", :title => t(:delete)),
+               cd, :confirm => t(:are_you_sure), :method => :delete,
+               :controller => :livecd %></td>
+    <% if cd.generated %>
+      <% total += cd.size %>
+      <td><%= link_to cd.fullname, cd.url %></td>
+      <td><%= number_to_human_size(cd.size) %> </td>
+      <td><%= change_date_time(cd.updated_at).to_s %></td>
+    <% else %>
+      <td><%= cd.fullname %></td>
+      <td></td>
+      <td><%=t(:being_created)%></td>
+    <% end %>
+    </tr>
+  <% end %>
+    <tr><td></td>
+        <td align="right"><%=t(:total_isos_size)%></td>
+        <td><%= number_to_human_size(total) %></td></tr>
+  </table>
+<% end %>
+<p><%=t(:livecd_start_message)%><br />
+<i><%=current_user.selected_packages.map{|m| m.name}.join(", ") %></i>
+</p>
+<p><%=t(:livecd_message,:cdimage_link => (link_to t(:livecd_image), t(:livecd_image_link)))%></p>
+
+<p>
+<%= form_tag({:controller => :user_profiles, :action => :create_livecd, :id => current_user.id})%>
+<%= t(:name_of_livecd) %>
+<%= text_field_tag(:name,@default_name) %>
+<%= submit_tag(t(:livecd_start)) %></p>
+<p><%=link_to t(:livecd_test), "/user_profiles/test_livecd/"+ current_user.id.to_s %></p>
+<p><%=t(:view_user_profiles__installation_33)%>
+<%= link_to (t(:sources), user_path(current_user) + "/user_profile/sources")%>
+<%=t(:view_user_profiles__installation_34)%>
+</p>
+<% end %>

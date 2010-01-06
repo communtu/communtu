@@ -10,23 +10,47 @@ class UserProfilesController < ApplicationController
     
   def edit
     if check_login then return end
+    user = current_user
+    @ratings = {}
+    user.user_profiles.each do |profile|
+      @ratings.store(profile.category_id, profile.rating!=0)
+    end
+    @root = Category.find(1)
+    @selection = user.selected_packages
   end
   
-  def refine
+  def settings
     if check_login then return end
-    params[:id] = 1
+    user = current_user
+    @distributions = if user.advanced
+                     then Distribution.find_all_by_invisible(false)
+                     else Distribution.find_all_by_preliminary_and_invisible(false,false) end
+    user_agent = request.env['HTTP_USER_AGENT']
+    @dist_string = Distribution.browser_info(user_agent)+" "+
+                   Architecture.browser_info(user_agent)
   end
   
   def sources
     if check_login then return end
-    params[:id] = 2
+    user = current_user
+    metas = user.selected_packages
+    dist = user.distribution
+    license = user.license
+    security = user.security
+    @sources = {}
+    metas.each do |p|
+       p.recursive_packages_sources @sources, dist, license, security
+    end
   end
 
   def installation
     if check_login then return end
-    params[:id] = 3
+    @metas = current_user.selected_packages.uniq.map{|m| m.debian_name}.join(",")
   end
-  
+
+  def livecd
+    if check_login then return end
+  end
 
   # update the basic data of the user's software selection
   def update_data 
@@ -47,7 +71,7 @@ class UserProfilesController < ApplicationController
     user.profile_changed = true
     user.save!
     if newly_advanced then
-      redirect_to user_user_profile_path(current_user) + "/tabs/2"
+      redirect_to user_user_profile_path(current_user) + "/settings"
     else
       redirect_to user_user_profile_path(current_user) + "/refine"
     end
@@ -91,9 +115,9 @@ class UserProfilesController < ApplicationController
       end
     end
     if (!params[:rough_install].nil?) or (!params[:fine_install].nil?) then
-      redirect_to user_user_profile_path(current_user) + "/tabs/1"
+      redirect_to user_user_profile_path(current_user) + "/installation"
     else
-      redirect_to user_user_profile_path(current_user) + "/tabs/0"
+      redirect_to user_user_profile_path(current_user) + "/edit"
     end
   end
 
@@ -109,7 +133,7 @@ class UserProfilesController < ApplicationController
       flash[:notice] = t(:livecd_create)
       user.livecd(name)
     end
-    redirect_to user_user_profile_path(current_user) + "/tabs/3"
+    redirect_to user_user_profile_path(current_user) + "/livecd"
   end
 
   def test_livecd

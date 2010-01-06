@@ -1,5 +1,19 @@
-<%= render_tabz(:user_profile, 
-      {:user => current_user, 
-       :dist_string => (Distribution.browser_info(request.env['HTTP_USER_AGENT'])+" "+Architecture.browser_info(request.env['HTTP_USER_AGENT']))
-      })
- %>
+<h3><%=t(:view_user_profiles__sources_0)%></h3>
+
+<%= error_messages_for :user_profile %>
+
+
+<p><%=t(:view_user_profiles__sources_1)%></p>
+
+<ul>
+<% @sources.each do |repository,packages| %>
+<li>
+	<%= link_to(repository.name, repository_path(repository)) %>
+	<ul>
+		<% packages.uniq.each do |p|%>
+		<li> <%= p.icon(22) %> <%= link_to(p.name,package_path(p))%></li>
+		<% end %>
+	</ul>
+</li>
+<% end %>
+</ul>

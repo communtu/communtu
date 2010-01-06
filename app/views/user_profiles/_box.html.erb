@@ -8,6 +8,6 @@
          <%= current_user.architecture.name  %> <br />
          <%= Package.show_security_type(current_user.security) %> <br />
          <%= Package.show_license_type(current_user.license) %>  <br />
-         <%= link_to t(:change), user_user_profile_path(current_user) + "/tabs/2" %>
+         <%= link_to t(:change), user_user_profile_path(current_user) + "/settings" %>
  	    </div>
 </div>

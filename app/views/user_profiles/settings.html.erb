@@ -8,12 +8,12 @@
 <% form_tag user_user_profile_path(current_user) + "/update_data", options = {:name => "data", :method => :put} do %>
     <ol>	
      <li><p><%=t(:view_user_profiles__profile_data_6)%><%= link_to(t(:view_user_profiles__profile_data_7),'/user_profiles/help')%><br />
-		<% if !dist_string.nil? %>
-<%=t(:view_user_profiles__profile_data_8)%><%= dist_string %>
+		<% if !@dist_string.nil? %>
+<%=t(:view_user_profiles__profile_data_8)%><%= @dist_string %>
 		<% end %>
 </p>
         <% distrib_options = "" %>
-        <% distributions.each do |distribution| %>
+        <% @distributions.each do |distribution| %>
             <% distrib_options << "<option value='" + distribution.id.to_s + "'" + 
                                   ((current_user.distribution_id==distribution.id) ? "selected='selected'" : "") + ">" + 
                                   distribution.name + "</option>" %>
