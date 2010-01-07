@@ -7,7 +7,7 @@ class SuggestionController < ApplicationController
     if check_login then return end
     if current_user.selected_packages.empty? then
       flash[:error] = t(:controller_suggestion_1)
-      redirect_to "/users/#{self.id}/user_profile/tabs/0"
+      redirect_to "/users/#{self.id}/user_profile/edit"
       return
     end
     debfile = current_user.install_sources
@@ -46,7 +46,7 @@ class SuggestionController < ApplicationController
     if check_login then return end
     if current_user.selected_packages.empty? then
       flash[:error] = t(:controller_suggestion_1)
-      redirect_to "/users/#{current_user.id}/user_profile/tabs/0"
+      redirect_to "/users/#{current_user.id}/user_profile/edit"
       return
     end
     debfile = current_user.install_bundle_as_meta
@@ -62,7 +62,7 @@ class SuggestionController < ApplicationController
     if check_login then return end
     bundle = Metapackage.find(params[:mid])
     current_user.bundle_to_livecd(bundle)
-      redirect_to "/users/#{current_user.id}/user_profile/tabs/3"
+      redirect_to "/users/#{current_user.id}/user_profile/livecd"
   end
   
   def install_apt_url

@@ -92,7 +92,7 @@ class SessionsController < ApplicationController
           if cookies[:backlink] != nil
           redirect_to cookies[:backlink]
           else
-          redirect_to user_user_profile_path(self.current_user) + "/tabs/0"
+          redirect_to user_user_profile_path(self.current_user) + "/edit"
           end        
         else
           if cookies[:backlink] != nil
