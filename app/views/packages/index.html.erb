@@ -1,7 +1,73 @@
-<% if logged_in? %>
-<%= render :partial => "packagelist", :locals => { :packages => @packages, :distribution => @distribution, :groups => @groups } %>
-<% else %>
-<div class="inner0">
-<p><%=t(:not_logged_in)%></p>
+<%= render_flash %>
+<div class="ubuntupakete">
+<div class="editorh1">
+<%=t(:packages_for_ubuntu)%>
 </div>
+<p></p>
+<%= form_tag('/packages/search', :method => "post") %>
+<br />
+<table border="0">
+<tr>
+<td valign="left"><%=t(:debian_section)%></td>
+<td>
+    <select id="group" name="group" onchange="this.form.submit()">
+        <option>all</option>
+        <% @groups.each do |group| %>
+            <option <%= "selected='selected'" if (session[:group] == group.section) %>><%= group.section %></option>
+        <% end %>
+    </select>
+</td>
+<td><%= link_to((t:view_home_new_repository_0), '/home/new_repository') %></td></tr><tr>
+<td valign="left"><%=t(:view_packages__packagelist_1)%></td>
+<td>
+     <%= check_box_tag("programs",1,session[:programs]) %>
+</td>
+<td></td></tr><tr>
+<td valign="left"><%=t(:view_packages__packagelist_2)%></td>
+<td>
+    <input type="textbox" id="search" name="search" value="<%= session[:search]%>" </>
+</td>
+<td><%= link_to(t(:choose_bundle), "/bundle")%></td>
+</tr>
+</table>
+</form>
+
+<table width="100%" cellspacing="0">
+
+<% if !@packages.empty? then%>
+<% for package in @packages %>
+<% css=cycle("packageList0", "packageList1") %>
+  <tr> 
+  	<td class="<%= css %>"> <%= package.icon(20)%>
+  		<%= link_to(package.name, package_path(package), :title => t(:detailed_view)) %></td>
+	<td class="<%= css %>" align="middle" valign="middle">
+     <% if !package.stars.nil? %>
+        <div class='star-rating-foreign' style='width:<%= (package.stars * 25).to_i %>px; '> </div>
+     <% end %>
+	</td>
+    <td class="<%= css %>" width="30" align="right">
+<!--        <%= link_to image_tag("/images/install.png", :size => "22x22", :border => "0", :title => t(:install2), :alt => t(:install2)), "apt://"+package.name %>                          
+	    <%= link_to image_tag("/images/sources.jpg", :size => "22x22", :border => "0", :title => t(:add_sources), :alt => t(:sources)), "/users/#{current_user.id}/suggestion/install_package_sources/#{package.id}" %>
+-->		<% if editing_metapackage? %>
+		    
+			<%= link_to_remote(image_tag("/images/add.png", :size => "22x22", :border => "0", :title =>t(:add), :alt => t(:add)), \
+			        :url => user_path(current_user) + "/cart/add_to_cart/" + package.id.to_s,\
+			        :update => 'meta_cart') %>
+		<% end %>
+	</td>
+  </tr>
 <% end %>
+<tr><td colspan="4" style="padding-top:15px"><%= paginating_links(@packages, :window_size => 10) %></td></tr>
+<% end %>
+</table>
+<div class="neues_buendel">
+<div class="editorh1">
+<%=t(:new_bundle)%>
+</div>
+<br /><br /><br />
+<div align="right"><%= link_to(t(:view_cart_new_from_list_0), user_path(current_user) + "/cart/new_from_list") %></div>
+<div id="meta_cart" class="meta_cart">
+<%= render(:partial => 'cart/metacart') %>
+</div>
+</div>
+</div>

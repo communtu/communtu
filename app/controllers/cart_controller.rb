@@ -5,7 +5,7 @@ class CartController < ApplicationController
     end
     def create
         prepare_create
-        redirect_to "/users/" + current_user.id.to_s + "/metapackages/2"
+        redirect_to "/packages"
     end
 
     def prepare_create

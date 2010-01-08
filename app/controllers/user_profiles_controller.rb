@@ -1,4 +1,3 @@
-require 'user_meta_tabz'
 
 class UserProfilesController < ApplicationController
   def title
@@ -6,7 +5,6 @@ class UserProfilesController < ApplicationController
   end  
   
   helper :user_profiles  
-  helper :tabz
     
   def edit
     if check_login then return end

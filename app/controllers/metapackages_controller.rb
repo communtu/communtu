@@ -9,6 +9,17 @@ class MetapackagesController < ApplicationController
 
   @@migrations = {}
     
+  def index
+    if params[:id]=="0" then
+      user_type = 0
+    elsif is_admin? then
+      user_type = 1
+    else
+      user_type = 2
+    end
+    @user_type = user_type
+    @metapackages = sort_metalist({ :user => current_user, :session => session, :params => params }, user_type)
+  end
 
   # GET /metapackages/1
   # GET /metapackages/1.xml

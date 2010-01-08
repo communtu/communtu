@@ -17,7 +17,6 @@ ActionController::Routing::Routes.draw do |map|
   
   map.connect '/categories/show_tree', :controller => 'categories', :action => 'show_tree'
   map.resources :categories
-  map.resources :packages
   map.resources :repositories
   
   map.connect '/metapackages/save', :controller => 'metapackages', :action => 'save'
@@ -70,13 +69,9 @@ ActionController::Routing::Routes.draw do |map|
  map.connect '/distributions/make_visible/:id', :controller => 'distributions', :action => 'make_visible'
 map.connect '/distributions/make_final/:id', :controller => 'distributions', :action => 'make_final'
 
-  map.resources :distributions do |dist|
-    dist.resources :metapackages
-    dist.resources :packages  
-    dist.resources :repositories
-  end
-  
-  map.connect '/packages/rdepends', :controller => 'packages', :action => 'rdepends'
+
+  map.connect 'packages/packagelist', :controller => 'packages', :action => 'packagelist'
+  map.connect 'packages/rdepends', :controller => 'packages', :action => 'rdepends'
   map.connect 'packages/section', :controller => "packages", :action => "section", :method => :post
   map.connect 'packages/search', :controller => "packages", :action => "search", :method => :post
   map.connect 'packages/update', :controller => "packages", :action => "update", :method => :post
@@ -84,6 +79,14 @@ map.connect '/distributions/make_final/:id', :controller => 'distributions', :ac
   map.connect '/metapackages/:id/unpublish', :controller => "metapackages", :action => "unpublish", :method => :put
   map.connect '/metapackages/:id/edit_packages', :controller => "metapackages", :action => "edit_packages", :method => :put
   map.connect '/metapackages/:id/edit_action', :controller => 'metapackages', :action => 'edit_action'
+
+
+  map.resources :packages
+  map.resources :distributions do |dist|
+    dist.resources :metapackages
+    dist.resources :packages  
+    dist.resources :repositories
+  end
     
   map.resource :session
   map.resource :password
