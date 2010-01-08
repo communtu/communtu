@@ -6,9 +6,9 @@
 	<td><b><%=t(:view_distributions_show_0)%></b></td>
 	<td align="right">
 		<% if is_admin? %>
-			<%= link_to t(:view_distributions_show_1), '/admin/test_all/'+@distribution.id.to_s %>
+			<%= link_to t(:view_distributions_show_1), '/repositories/test_all/'+@distribution.id.to_s %>
 			&nbsp;&nbsp;&nbsp;&nbsp;
-			<%= link_to t(:view_distributions_show_2), '/admin/sync_all/'+@distribution.id.to_s %>
+			<%= link_to t(:view_distributions_show_2), '/repositories/sync_all/'+@distribution.id.to_s %>
 			&nbsp;&nbsp;&nbsp;&nbsp;
 			<%= link_to t(:view_distributions_show_3), '/repositories/multinew/'+@distribution.id.to_s %>
 			&nbsp;&nbsp;&nbsp;&nbsp;

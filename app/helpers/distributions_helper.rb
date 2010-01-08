@@ -36,7 +36,7 @@ module DistributionsHelper
         if is_admin?
           sync_link = (link_to (tag "img", { :src => "/images/view-refresh.png", :width => "22", :height => "22",\
             :alt => t(:helper_distributions_2), :title => t(:helper_distributions_2),:class => "link_img"}) ,\
-            { :controller => :admin, :action => :sync_package, :id => repo.id})
+            { :controller => :repositories, :action => :sync_package, :id => repo.id})
           mig_link =  (link_to (tag "img", { :src => "/images/migrate.png", :width => "22", :height => "22",\
             :alt => t(:migrate_repository), :title => t(:migrate_repository),:class => "link_img"}) ,\
              "/repositories/migrate/#{repo.id}")
