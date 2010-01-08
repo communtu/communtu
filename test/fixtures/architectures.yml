@@ -1,7 +1,13 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  name: MyString
+  name: i386
+  created_at: 2009-10-14 22:25:02
+  updated_at: 2009-10-14 22:25:02
+  id: "1"
 
 two:
-  name: MyString
+  name: amd64
+  created_at: 2009-10-14 22:25:02
+  updated_at: 2009-10-14 22:25:02
+  id: "2"
