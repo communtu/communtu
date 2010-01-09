@@ -15,7 +15,7 @@
         
        <%= render :partial => "distribution", :locals => {:user => @user, :distributions => @distributions} %>
        |
-        <% if current_user.derivative.nil? then current_user.derivative_id = 1 end %>
+
         <% Derivative.all.each do |der|%>
 	      <% selected = der == current_user.derivative %>
 		  <%= radio_button_tag('user[derivative_id]',der.id, selected)%> <%=h der.name%>

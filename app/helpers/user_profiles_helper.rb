@@ -23,13 +23,20 @@ module UserProfilesHelper
         return out
     end
 
+    def check_bundles root
+      root.default_bundles.map do |b|
+         "$('post_#{b.id}').checked=post_#{root.name}.checked"
+      end.join("; ")
+    end
+
     def show_selection_subtree2 root, selection, rating, depth
         # +check_box_tag("post[" + root.name + "]", 1, rating[root.id])
         out = "<div class='suggestionHeader'><ul class='suggestionHeader'>\n"
             out += "<li class='suggestionCollapse'>"+"<img src='/images/add.png' width='10' height='10' onclick=\"['packages" + \
                 root.name + "'].each(Element.toggle)\"></li>\n"
-            out += "<li class='suggestionHeader' onclick=\"['packages" + \
-                            root.name + "'].each(Element.toggle)\"><b>" + root.name + "</b></li>\n"
+            out += "<li class='suggestionHeader' ><b onclick=\"['packages" + \
+                            root.name + "'].each(Element.toggle)\">" + root.name + "</b>"+check_box_tag("post[" + root.name + "]", 1, rating[root.id], :onclick => ("['packages" + \
+                            root.name + "'].each(Element.show);"+check_bundles(root))) + "</li>\n"
         out += "</ul></div>\n"
         
         out += "<div class='suggestionPackages'  style='display: none' id='packages" + root.name + "'>\n"

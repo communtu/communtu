@@ -176,6 +176,15 @@ end
     self.roles.find_by_rolename(rolename) ? true : false
   end
 
+  # distributions
+
+  def possible_distributions
+    if self.advanced
+       then Distribution.find_all_by_invisible(false)
+       else Distribution.find_all_by_preliminary_and_invisible(false,false) 
+    end
+  end
+
   # update meta package selection to default given by sel
   def update_meta(m,sel)
     uid = self.id

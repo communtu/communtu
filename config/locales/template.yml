@@ -552,6 +552,7 @@ Wenn Du der Meinung bist, dass dein Bündel um nützliche Programme erweitert we
   view_home_home_27: "Communtu hilft Dir dabei:"
   view_home_home_28: "Download:"
   view_home_home_29: Zu welchem Thema suchst Du Programme (Büro, Grafik,...)? Hier kannst du deine Interessengebiete eingeben und passende vorkonfigurierte Programmbündel downloaden.
+  which_programs_do_you_need: Zu welchem Thema suchst Du Programme (Büro, Grafik,...)? Hier kannst du deine Interessengebiete eingeben und passende vorkonfigurierte Programmbündel zusammenstellen.
   view_home_home_2: Ubuntu-Linux
   view_home_home_3: " steht für ein menschliches Linux, das einfach zu benutzen ist. \
     Aber um Ubuntu wirklich gut nutzen zu können, muss man ganz schön viele Programme nachinstallieren, und es ist oft schwer, da den Überblick zu behalten. \
@@ -822,7 +823,7 @@ Wenn Du der Meinung bist, dass dein Bündel um nützliche Programme erweitert we
   view_user_profiles__profile_data_8: "Über den Browser festgestellte Version: "
   view_user_profiles__profile_data_9: Hier kannst du einstellen, wie sicher bzw. komfortabel deine Installationsquellen sein sollen
   view_user_profiles__profile_rating_0: "Auswahl der zu installierenden Programmbündel und Programme"
-  view_user_profiles__profile_rating_1: "Hier kannst du deine beabsichtigte Computer-Nutzung noch genauer angeben. \nDurch Klicken auf "
+  view_user_profiles__profile_rating_1: "Durch Klicken auf "
   view_user_profiles__profile_rating_2: " lässt \nsich ein Bereich ein- oder ausklappen."
   view_user_profiles__profile_rating_3: Achtung! Zum Schluss auf "Feinauswahl speichern" klicken.
   view_user_profiles__sources_0: "Quellen für die zu installierenden Programme"
