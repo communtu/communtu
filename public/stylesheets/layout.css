@@ -1,4 +1,8 @@
 /*the old formats*/
+.pfeil_link{
+	margin-left:0.3em;
+	
+}
 div.inner0 {
 	padding: 5px;
 	margin: 5px;
@@ -981,7 +985,7 @@ a.download:hover, a.download:active{
 .beste_buendel ul li{
  list-style-image:url(/images/star_trans.gif);
  list-style-position:outside;
- /*margin-left:-0.6em;*/  /*Verursachte die Verschiebung der besten Bündelsterne*/
+ /*margin-left:-0.6em;*/  /*Verursachte die Verschiebung der besten Bï¿½ndelsterne*/
  padding-bottom:1px;
  }
 /* allgemein */

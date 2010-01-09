@@ -18,7 +18,7 @@
   <span class="headfont"><%= t(:headline) %></span>
  </div> 
 	<div id="navihead">
-<a href="<%=t(:link_community)%>" target="_blank" title="<%=t(:link_community_title)%>"><%=t(:community_title)%></a> || 
+<%= link_to( {t(:community_title), image_tag('nach_aussen_braun.gif', {:border => '0', :alt => t(:link_community_title), :class => 'pfeil_link'}) }, t(:link_community), {:target => '_blank', :alt => t(:link_community_title), :title => t(:link_community_title)} ) %> |  
 <a href="/home/home"><%= t(:homepage) %></a> | <a href="/home/faq"><%= t(:view_layouts_application_30) %></a> | <a href="/home/contact_us"><%= t(:view_layouts_application_31) %></a> | <a href="/home/donate"><%= t(:view_layouts_donate) %></a> | 
 <% if I18n.locale.to_s == "en" %>
 <a href="http://de.communtu.org">Deutsch</a>
