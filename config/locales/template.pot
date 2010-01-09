@@ -2035,6 +2035,9 @@ msgstr ""
 #: bundle_editor
 msgid "Bündel-Editor"
 msgstr ""
+#: which_programs_do_you_need
+msgid "Zu welchem Thema suchst Du Programme (Büro, Grafik,...)? Hier kannst du deine Interessengebiete eingeben und passende vorkonfigurierte Programmbündel zusammenstellen."
+msgstr ""
 #: description_with_colon
 msgid "Beschreibung:"
 msgstr ""
@@ -2135,7 +2138,7 @@ msgstr ""
 msgid "Icons bei Communtu"
 msgstr ""
 #: view_user_profiles__profile_rating_1
-msgid "Hier kannst du deine beabsichtigte Computer-Nutzung noch genauer angeben. \nDurch Klicken auf "
+msgid "Durch Klicken auf "
 msgstr ""
 #: view_home_impressum_5
 msgid "28203 Bremen"

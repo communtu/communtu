@@ -706,6 +706,7 @@ en:
   livecd_previous_cds: "Live-CD's/DVD's created so far:"
   migrate_repository: migrate repository
   bundle_editor: bundle-editor
+  which_programs_do_you_need: To which topic do you look for programs (office, graphics, ...)? Enter your fields of interest and arrange pre-configured bundles.
   description_with_colon: "Description:"
   view_admins_sync_all_1: "Error: couldn't synchronise repositories"
   edit: Edit
@@ -739,8 +740,7 @@ en:
   view_home_impressum_4: Bauernstr. 2
   model_package_2: unknown
   view_home_icons_0: icons used in Communtu
-  view_user_profiles__profile_rating_1: "Here you can choose the use of your computer in detail. \n\
-    With a click on the "
+  view_user_profiles__profile_rating_1: "With a click on "
   view_home_impressum_5: |-
     28203 Bremen
     Germany

@@ -2032,6 +2032,9 @@ msgstr ""
 #: bundle_editor
 msgid "bundle-editor"
 msgstr ""
+#: which_programs_do_you_need
+msgid "To which topic do you look for programs (office, graphics, ...)? Enter your fields of interest and arrange pre-configured bundles."
+msgstr ""
 #: description_with_colon
 msgid "Description:"
 msgstr ""
@@ -2132,7 +2135,7 @@ msgstr ""
 msgid "icons used in Communtu"
 msgstr ""
 #: view_user_profiles__profile_rating_1
-msgid "Here you can choose the use of your computer in detail. \nWith a click on the "
+msgid "With a click on "
 msgstr ""
 #: view_home_impressum_5
 msgid "28203 Bremen\nGermany"

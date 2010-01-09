@@ -2771,6 +2771,10 @@ msgstr "migrate repository"
 msgid "Bündel-Editor"
 msgstr "bundle-editor"
 
+#: which_programs_do_you_need
+msgid "Zu welchem Thema suchst Du Programme (Büro, Grafik,...)? Hier kannst du deine Interessengebiete eingeben und passende vorkonfigurierte Programmbündel zusammenstellen."
+msgstr "To which topic do you look for programs (office, graphics, ...)? Enter your fields of interest and arrange pre-configured bundles."
+
 #: description_with_colon
 msgid "Beschreibung:"
 msgstr "Description:"
@@ -2904,12 +2908,8 @@ msgid "Icons bei Communtu"
 msgstr "icons used in Communtu"
 
 #: view_user_profiles__profile_rating_1
-msgid ""
-"Hier kannst du deine beabsichtigte Computer-Nutzung noch genauer angeben. \n"
-"Durch Klicken auf "
-msgstr ""
-"Here you can choose the use of your computer in detail. \n"
-"With a click on the "
+msgid "Durch Klicken auf "
+msgstr "With a click on "
 
 #: view_home_impressum_5
 msgid "28203 Bremen"
@@ -3357,6 +3357,13 @@ msgstr "BUNDLE"
 msgid "Installieren"
 msgstr "Install"
 
+#~ msgid ""
+#~ "Hier kannst du deine beabsichtigte Computer-Nutzung noch genauer "
+#~ "angeben. \n"
+#~ "Durch Klicken auf "
+#~ msgstr ""
+#~ "Here you can choose the use of your computer in detail. \n"
+#~ "With a click on the "
 #~ msgid ""
 #~ "Ein Bündel kann einmal in einer Zusammenstellung mit weiteren über den "
 #~ "Punkt \"Download\" zum Computer hinzugefügt werden. Andererseits kann "
