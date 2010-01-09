@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :sections
+
   map.resources :architectures
 
   map.connect '/articles/show', :controller => 'articles', :action => 'show'

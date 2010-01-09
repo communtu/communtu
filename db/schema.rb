@@ -54,6 +54,7 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.integer  "fullsection_tid"
     t.integer  "section_tid"
     t.integer  "name_tid"
+    t.integer  "section_id"
   end
 
   create_table "cart_contents", :force => true do |t|
@@ -173,6 +174,8 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.integer  "pid"
     t.boolean  "generated",       :default => false
     t.boolean  "generating",      :default => false
+    t.boolean  "failed",          :default => false
+    t.text     "log"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -271,6 +274,12 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
 
   create_table "roles", :force => true do |t|
     t.string   "rolename"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "sections", :force => true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
