@@ -1,8 +1,7 @@
 class CreateSections < ActiveRecord::Migration
   def self.up
     create_table :sections do |t|
-      t.string :name
-
+      t.string :name, :unique => true
       t.timestamps
     end
   end
