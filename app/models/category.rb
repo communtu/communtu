@@ -39,4 +39,8 @@ class Category < ActiveRecord::Base
       child.draw_tree_aux(f)
     end
   end
+
+  def default_bundles
+    BasePackage.find_all_by_default_install_and_category_id(true,self.id)
+  end
 end
