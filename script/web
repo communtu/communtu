@@ -2,11 +2,15 @@
 
 function start {
      echo "Starting mongrels server at port $1"
-     nohup script/server -p $1 >> log/server$1.log 2>&1 &
+     nohup script/server -e production -p $1 >> log/server$1.log 2>&1 &
 }
 
 function startall {
     start 3002
+    start 3003
+    start 3004
+    start 3005
+    start 3006
 }
 
 function stop {
@@ -16,6 +20,10 @@ function stop {
 
 function stopall {
     stop 3002
+    stop 3003
+    stop 3004
+    stop 3005
+    stop 3006
 }
 
 # main script
