@@ -19,8 +19,8 @@ class UserProfilesController < ApplicationController
   
   def settings
     if check_login then return end
-    user = current_user
-    @distributions = if user.advanced
+    @user = current_user
+    @distributions = if @user.advanced
                      then Distribution.find_all_by_invisible(false)
                      else Distribution.find_all_by_preliminary_and_invisible(false,false) end
     user_agent = request.env['HTTP_USER_AGENT']
@@ -28,6 +28,15 @@ class UserProfilesController < ApplicationController
                    Architecture.browser_info(user_agent)
   end
   
+  def settings_ajax
+    @user = current_user
+    @user.advanced = !params[:user].nil? and params[:user][:advanced]=="1"
+    @distributions = if @user.advanced
+                     then Distribution.find_all_by_invisible(false)
+                     else Distribution.find_all_by_preliminary_and_invisible(false,false) end
+    render :partial => "distribution", :locals => {:user => @user, :distributions => @distributions}
+  end
+
   def sources
     if check_login then return end
     user = current_user
