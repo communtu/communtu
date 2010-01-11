@@ -307,10 +307,7 @@ p, ol, ul, td {
 
 h2, h1 {
   font-family: verdana, arial, helvetica, sans-serif;
- /* font-size:   13px; */
   line-height: 22px;
- /*	word-wrap: break-word;
-	word-break: break-all; */
 }
 
 pre {
