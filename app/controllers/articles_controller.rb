@@ -14,9 +14,6 @@ class ArticlesController < ApplicationController
   # GET /articles/1.xml
   def create
     @article = Article.new
-  #  @article.created_at = params[:article][:created_at]+" 00:00:00"
-    #(params[:article])
-#    if params[:article_name] != ""
     @translation1 = Translation.new   
     @translation2 = Translation.new  
     @translation3 = Translation.new  
@@ -45,11 +42,8 @@ class ArticlesController < ApplicationController
     end
       @article.language_code = I18n.locale.to_s
       @article.save
-#    end
     respond_to do |format|
    if @article.save   
-#     flash[:notice] = t(:controller_categories_2)
-#     format.html { redirect_to(@article) }
        format.xml  { }        
    else
      format.html { render :action => "new" }
@@ -77,7 +71,6 @@ class ArticlesController < ApplicationController
   def update
     @article = Article.find(params[:id])
     @trans_update_url = Translation.find(:first, :conditions => { :translatable_id => @article.url_tid, :language_code => I18n.locale.to_s})
-   # @trans_update_url.contents = params[:article][:url]
     if @trans_update_url == nil
       @trans_update_url = Translation.new
       @trans_update_url.translatable_id = @article.url_tid
@@ -107,8 +100,6 @@ class ArticlesController < ApplicationController
       @trans_update_name.contents = params[:article][:name]
     end
     @trans_update_name.save
-#    respond_to do |format|
-#    end
     redirect_to "/articles"
   end
 

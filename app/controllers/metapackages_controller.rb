@@ -197,8 +197,6 @@ class MetapackagesController < ApplicationController
       # save other attributes
       if !error 
          @metapackage.update_attributes(:version => params[:metapackage][:version],:category_id => params[:metapackage][:category_id],:default_install => params[:metapackage][:default_install])
- #       @metapackage.update_attributes(params[:metapackage])
-#:name => params[:metapackage][:name],:description => params[:metapackage][:description],
         flash.delete(:error)
 #        format.html { redirect_to :action => :show, :id => @metapackage.id }
 #        format.xml  { head :ok }

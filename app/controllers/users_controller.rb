@@ -19,7 +19,6 @@ class UsersController < ApplicationController
   
   #This show action only allows users to view their own profile
   def show
-  #  @user = current_user
     @user = User.find(params[:id])
     @metas_user = Metapackage.find_all_by_user_id(params[:id])
   end
@@ -51,9 +50,7 @@ class UsersController < ApplicationController
     end
     @user.save!
     #Uncomment to have the user logged in after creating an account - Not Recommended
-    #self.current_user = @user
     flash[:notice] = t(:controller_users_1)
-    #redirect_to params[:form][:backlink]
     cookies[:backlink] = params[:form][:backlink]
     redirect_to "/session/new"
   rescue ActiveRecord::RecordInvalid

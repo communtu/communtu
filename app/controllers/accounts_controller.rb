@@ -24,9 +24,6 @@ class AccountsController < ApplicationController
     redirect_to login_path
   end
   
-  def edit
-  end
-  
   # Change password action  
   def update
     

@@ -89,12 +89,6 @@ class CartController < ApplicationController
       			translate_des.language_code = "en"
       			translate_des.save
     		  end
-#                if cart.name == "" or cart.name == nil
-#                meta.name = t(:new_bundle)
-#                cart.name = t(:new_bundle)
-#                else
-#                meta.name            = cart.name
-#                end
                 meta.user_id         = current_user.id
                 meta.category_id     = 1
                 meta.version         = "0.1"

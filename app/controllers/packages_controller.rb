@@ -18,10 +18,8 @@ class PackagesController < ApplicationController
   end
   
   def bundle
-    #session[:search], session[:group], session[:programs], params[:page])
     @packages = BasePackage.find(:all, :conditions => {:type => "Metapackage",:published => 1})
     @packages += BasePackage.find(:all, :conditions => {:type => "Metapackage",:user_id => current_user.id}) 
-#    @packages = @packages(session[:search], params[:page])
     respond_to do |format|
       format.html { render :action => "bundle.html.erb" }
       format.xml  { render :xml => @Packages }
