@@ -1,6 +1,6 @@
 <span class="headline"><%=t(:view_users_index_0)%></span>
 <div class="inner1">
-  <p><%=t(:view_users_index_1)%><%= @users.length %><%=t(:view_users_index_2)%></p>
+  <p><%=t(:view_users_index_1)%><%= @u.length %><%=t(:view_users_index_2)%></p>
 <table cellpadding="3">
   <tr>
     <th align="left"><%=t(:username)%></th>
@@ -9,6 +9,7 @@
     <th align="left"><%=t(:view_users_index_6)%></th>
   </tr>
   <tr><td colspan="4"><hr></td></tr>
-    <%= render :partial => 'user', :collection => @users %>
+    <%= render :partial => 'user', :collection => @users, :window_size => 10 %>
 </table>
+<%= paginating_links(@users, :window_size => 10) %>
 </div>

@@ -13,7 +13,8 @@ class UsersController < ApplicationController
   helper :users
     
   def index
-    @users = User.find(:all, :conditions => {:anonymous => false, :enabled => true})
+    @users = User.find_users(params[:page])
+    @u = User.find(:all, :conditions => {:anonymous => false, :enabled => true})
   end
   
   #This show action only allows users to view their own profile

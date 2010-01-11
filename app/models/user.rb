@@ -433,6 +433,12 @@ end
   def make_password_reset_code
     self.password_reset_code = Digest::SHA1.hexdigest( Time.now.to_s.split(//).sort_by {rand}.join )
   end
+  
+  def self.find_users(page)
+    User.find(:all, :page => {:size => 10, :current => page}, \
+        :conditions => {:anonymous => false, :enabled => true}, \
+                       :order => "created_at asc")
+  end
 
   private
   
