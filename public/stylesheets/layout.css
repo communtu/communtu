@@ -20,7 +20,6 @@ div.inner1 {
 }
 
 div.meta_cart{
-
 	margin: 15px 10px 0 0;
 	padding: 10px 5px 10px 8px;
 	border-top-style: solid;
@@ -106,7 +105,6 @@ div.meta_cart{
 	border-right-style: solid;
 	border-right-width: 1px;
 	-moz-border-radius: 10px;
-	/*min-height: 300px;*/
 	width: 150px;
 }
 
@@ -318,8 +316,6 @@ pre {
 
 a { color: #ff6309; text-decoration:underline; }
 a:visited { color: #ff6309; }
-/*a:hover { color: #ff6309; background-color:#cbcbcb; text-decoration:underline;}*/
-/*#D3CAAA;*/
 
 .fieldWithErrors {
   padding: 2px;
