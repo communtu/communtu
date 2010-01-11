@@ -1,9 +1,7 @@
 #!/bin/bash
 cd ..
 echo "download database from webserver"
-scp communtu@communtu.de:/home/communtu/web2.0/db.backup.gz .
+scp -P 22 communtu@communtu.de:/home/communtu/web2.0/db.backup.gz .
 echo "update your local database"
-gunzip -c db.backup.gz | mysql -u root -p communtu
-echo "delete the gz file"
-sleep 5s
-rm db.backup.gz
+
+(gunzip -c db.backup.gz | mysql -u root -p communtu) && echo "import complete" && echo "delete the gz file" && sleep 5 &&  rm db.backup.gz
