@@ -1,4 +1,12 @@
 <h2><%=t(:news)%></h2>
+<% if I18n.locale.to_s == "de" %>
+<h3>Umstellung unseres Repositorys</h3>
+<table><tr><td>
+<%= image_tag("conny_communtu.png") %>
+</td><td>
+<p>Wir haben unser Respository auf englisch umgestellt, wodurch sich die Paket-Namen unserer Metapakate verändert haben. Hier gibt es ein Skript, welches alle installierten Communtu-Pakete auf die englisch-namigen Pakete umstellt. Wenngleich auch die Pakete mit deutschen Namen noch verfügbar sind, werden sie jedoch nicht mehr aktualisiert. Wir empfehlen deshalb, das Skript auszuführen, falls ihr schon mal mit Communtu etwas installiert habt.</p><p>Diese <a href="/communtu2english">Datei</a> bitte mit "Speichern unter" herunterladen und mit Rechtsklick unter Eigenschaften bei Zugriffsrechte den Haken bei "Datei als Programm ausführen" setzen. Dann mit Anklicken und ausführen lassen.</p></td></tr></table>
+<% end %>
+
 <h3><%=t(:chat)%></h3>
 <p><%=t(:promote_chat)%></p>
 <p><%= link_to t(:to_chat), '/home/chat'%></p>
