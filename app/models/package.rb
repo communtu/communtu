@@ -12,6 +12,9 @@ class Package < BasePackage
 #  has_many :distributions, :through => :package_distrs
   has_many :repositories, :through => :package_distrs
   has_many :distributions, :through => :package_distrs
+
+  has_many :standard_packages
+  
   validates_presence_of :name
 
   def repositories_dist(distribution,arch)
@@ -319,5 +322,10 @@ class Package < BasePackage
       end
     end
   end
-  
+
+  def self.standard_packages(dist,der,arch)
+    Package.find(:all,:conditions => ["standard_packages.distribution_id = ? and standard_packages.derivative_id = ? and standard_packages.architecture_id = ?",
+                                      dist.id,der.id,arch.id],
+                      :include=>:standard_packages)
+  end
 end

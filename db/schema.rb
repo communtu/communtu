@@ -284,6 +284,15 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.datetime "updated_at"
   end
 
+  create_table "standard_packages", :force => true do |t|
+    t.integer  "package_id"
+    t.integer  "distribution_id"
+    t.integer  "derivative_id"
+    t.integer  "architecture_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "translations", :force => true do |t|
     t.integer  "language_id"
     t.string   "tag"
