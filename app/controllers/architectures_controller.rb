@@ -44,7 +44,7 @@ class ArchitecturesController < ApplicationController
 
     respond_to do |format|
       if @architecture.save
-        flash[:notice] = 'Architecture was successfully created.'
+        flash[:notice] = t(:architecture_successful)
         format.html { redirect_to(@architecture) }
         format.xml  { render :xml => @architecture, :status => :created, :location => @architecture }
       else
@@ -61,7 +61,7 @@ class ArchitecturesController < ApplicationController
 
     respond_to do |format|
       if @architecture.update_attributes(params[:architecture])
-        flash[:notice] = 'Architecture was successfully updated.'
+        flash[:notice] = t(:architecture_successful_updated)
         format.html { redirect_to(@architecture) }
         format.xml  { head :ok }
       else

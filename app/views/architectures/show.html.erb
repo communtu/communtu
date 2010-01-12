@@ -1,8 +1,8 @@
 <p>
-  <b>Name:</b>
+  <b><%= t(:name_with_colon)%></b>
   <%=h @architecture.name %>
 </p>
 
 
-<%= link_to 'Edit', edit_architecture_path(@architecture) %> |
-<%= link_to 'Back', architectures_path %>
+<%= link_to t(:edit), edit_architecture_path(@architecture) %> |
+<%= link_to t(:back), architectures_path %>

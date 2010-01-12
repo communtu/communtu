@@ -1,20 +1,17 @@
-<h1>Listing architectures</h1>
+<h1><%=t(:architectures)%></h1>
 
 <table>
-  <tr>
-    <th>Name</th>
-  </tr>
 
 <% for architecture in @architectures %>
   <tr>
     <td><%=h architecture.name %></td>
-    <td><%= link_to 'Show', architecture %></td>
-    <td><%= link_to 'Edit', edit_architecture_path(architecture) %></td>
-    <td><%= link_to 'Destroy', architecture, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to t(:show), architecture %></td>
+    <td><%= link_to t(:edit), edit_architecture_path(architecture) %></td>
+    <td><%= link_to t(:delete), architecture, :confirm => t(:are_you_sure), :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New architecture', new_architecture_path %>
+<%= link_to t(:new_architecture), new_architecture_path %>

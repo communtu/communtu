@@ -11,6 +11,9 @@ de:
   an: "An:"
   announce: announce
   anmelden: Anmelden
+  architecture_successful: Architektur erfolgreich angelegt.
+  architecture_successful_updated: Architektur erfolgreich aktualisiert.
+  architectures: Architekturen
   archive: Archiv
   are_you_sure: Bist du sicher?
   back: "zurück"
@@ -140,6 +143,7 @@ de:
   donation_purpose: "Verwendungszweck: Communtu"
   donation_receipt: Spendenbescheinigung kann ausgestellt werden.
   edit: Bearbeiten
+  edit_architecture: Architektur bearbeiten
   edit_press_archiv: Pressearchiv bearbeiten
   eg: z.B.
   email_with_colon: "E-Mail: "
@@ -253,6 +257,7 @@ auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} er
   native: nur Ubuntu
   natur_geist_und_technik: "Natur, Geist und Technik - Verein zur Förderung der Allgemeinbildung e.V."
   new_article: Neuen Artikel anlegen
+  new_architecture: Neue Architektur
   new_bundle: "Neues Bündel"
   new_category: Neue Kategorie
   new_derivative: Neues Derivat
@@ -308,6 +313,7 @@ auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} er
   total_isos_size: "Gesamtgröße der isos: "
   trusted: Ubuntu+Community
   ubuntu_derivatives: Ubuntu-Derivate
+  update: Aktualisieren
   updatedPackages: "geänderte Pakete: "
   url: Url
   used_in_bundles: "Wird bei Communtu in folgenden Bündeln benutzt:"
