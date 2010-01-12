@@ -88,12 +88,12 @@ class UserProfilesController < ApplicationController
     user.profile_changed = true
     user.save!
     uid = user.id
-    if (!params[:rough].nil?) or (!params[:rough_install].nil?) # update rough selection
+    #if (!params[:].nil?) or (!params[:rough_install].nil?) # update rough selection
       # get the list of categories selected via checkboxes
       if params[:categories].nil? then
         cats = []
       else
-        cats = params[:categories].map {|s| s.to_i}
+        cats = params[:categories].map {|s,v| s.to_i}
       end
       # update the data for all the main categories
       main_categories = Category.find(:all, :conditions => {:parent_id => 1, :main => true})
@@ -102,8 +102,8 @@ class UserProfilesController < ApplicationController
         # we now use 1 for selected, in the future, this can be a boolean
         if cats.include? child.id then val = 1 else val = 0 end
         user.update_rating(child,val,user.license,user.security,{:anonymous => false, :session => session},false)
-      end
-    else # update fine grained selection
+    #  end
+    #else # update fine grained selection
       #replace old list of packages...
       current_user.user_packages.each do |up|
         up.destroy
