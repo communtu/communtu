@@ -9,7 +9,7 @@
 	<% cart.base_packages.each do |package|%>
 	    <li class="cartlist">
            
-            <%= package.name %>
+            <% package.name %>
             <div class="cartlist">
 		        <%= link_to_remote((tag "img", { \
 		                :src => "/images/delete.png",\
@@ -17,7 +17,7 @@
 			            :width => 12, :height => 12}),\
 			            :url => user_path(current_user) + "/cart/rem_from_cart/" + package.id.to_s,\
 			            :update => :meta_cart) %>
-			 </div>
+<%= package.name %>			 </div>
 		
 	    </li>
 	<% end %>
