@@ -219,21 +219,25 @@ msgstr "Installation of the metapackages. Please add the sources first."
 msgid "Name der LiveCD/DVD:"
 msgstr "Name of the Live-CD/DVD:"
 
+#: view_users_new_10
+msgid "Dein Vorname"
+msgstr "your first name"
+
 #: view_user_profiles__installation_23
 msgid "Pakete installieren. Es gibt zwei Alternativen:"
 msgstr "Installing packages. There are two alternatives:"
 
-#: view_users_new_10
-msgid "Dein Vorname"
-msgstr "your first name"
+#: view_users_new_11
+msgid "Dein Nachname"
+msgstr "your last name"
 
 #: view_user_profiles__installation_24
 msgid "Installation über ein Metapaket"
 msgstr "Installation via metapackage"
 
-#: view_users_new_11
-msgid "Dein Nachname"
-msgstr "your last name"
+#: view_users_new_12
+msgid "(optional)"
+msgstr "(optional)"
 
 #: controller_users_10
 msgid "Benutzer gelöscht"
@@ -242,10 +246,6 @@ msgstr "User deleted"
 #: view_user_profiles__installation_25
 msgid "Installation über apturl"
 msgstr "Installatin via apturl"
-
-#: view_users_new_12
-msgid "(optional)"
-msgstr "(optional)"
 
 #: controller_users_11
 msgid "Es gab ein Problem mit der Löschung."
@@ -410,6 +410,10 @@ msgstr "Name"
 #: direct_indirect_covered_packages_warning
 msgid "Achtung! Dauert lange und sollte nur vom Admin-Server (communtu.de:3006) aus aufgerufen werden"
 msgstr "Attention! This takes a long time and should only be done on the admin-server (communtu.org:3006)!"
+
+#: architecture_successful_updated
+msgid "Architektur erfolgreich aktualisiert."
+msgstr "Architecture successfully updated."
 
 #: view_home_home_7
 msgid "<b>Bündel verwalten</b> Hast du gute Erfahrungen mit Programmen gemacht? Dann kannst du sie hier thematisch bündeln, oder auch bestehende Bündel angucken. "
@@ -929,6 +933,10 @@ msgstr "user not found"
 msgid "Weblinks"
 msgstr "Weblinks"
 
+#: view_users_index_6
+msgid "Rollen"
+msgstr "Roles"
+
 #: view_derivatives_edit_1
 msgid "Programm für GUI-basiertes Sudo (z.B. gksudo, kdesudo)"
 msgstr "Program for GUI-based sudo (e.g. gksudo, kdesudo)"
@@ -936,10 +944,6 @@ msgstr "Program for GUI-based sudo (e.g. gksudo, kdesudo)"
 #: helper_distributions_13
 msgid "löschen"
 msgstr "delete"
-
-#: view_users_index_6
-msgid "Rollen"
-msgstr "Roles"
 
 #: view_users_new_6
 msgid "Passwort bestätigen"
@@ -1144,6 +1148,10 @@ msgstr "Are you sure?"
 #: view_home_news_11
 msgid "Diese Liste ist für eine Diskussion rund um die Plattform gedacht.  Hier kommt etwas mehr als einmal die Woche eine E-Mail über den Verteiler.   Die Nachrichten werden in einem "
 msgstr "This list is intended for discussion about the platform. The frequency is a little higher than once a week. Posts will be collected in an "
+
+#: architecture_successful
+msgid "Architektur erfolgreich angelegt."
+msgstr "Architecture successfully created."
 
 #: livecd
 msgid "Live-CD/DVD"
@@ -1582,6 +1590,10 @@ msgstr "Settings"
 #: view_home_derivatives_57
 msgid "für Subnotebooks/EEE-PCs"
 msgstr " for subnotebooks/EEE-PCs."
+
+#: edit_architecture
+msgid "Architektur bearbeiten"
+msgstr "edit architecture"
 
 #: view_home_faq_17
 msgid "Wie kann ich einen Programmvorschlag einbringen?"
@@ -2399,6 +2411,10 @@ msgstr "Created bundles"
 msgid "        OpenSource"
 msgstr "        OpenSource"
 
+#: new_architecture
+msgid "Neue Architektur"
+msgstr "New architecture"
+
 #: view_home_mail_0
 msgid "Benachrichtigung bei Fehlerbehebung"
 msgstr "Notification in bugfixing"
@@ -2871,6 +2887,10 @@ msgstr "Sources for the soon be installed programs"
 msgid "AG Communtu"
 msgstr "AG Communtu"
 
+#: architectures
+msgid "Architekturen"
+msgstr "Architectures"
+
 #: view_rating_show_title_ratings_count
 msgid "(Basierend auf {{votes}} Bewertung(en))"
 msgstr "(Based on {{votes}} rating(s))"
@@ -3168,6 +3188,10 @@ msgstr "use Communtu as a guest"
 #: controller_categories_0
 msgid "Kategorien"
 msgstr "Categories"
+
+#: update
+msgid "Aktualisieren"
+msgstr "Refresh"
 
 #: view_home_home_24
 msgid "Zum Impressum"

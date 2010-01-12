@@ -166,26 +166,26 @@ msgstr ""
 #: name_of_livecd
 msgid "Name der LiveCD/DVD:"
 msgstr ""
+#: view_users_new_10
+msgid "Dein Vorname"
+msgstr ""
 #: view_user_profiles__installation_23
 msgid "Pakete installieren. Es gibt zwei Alternativen:"
 msgstr ""
-#: view_users_new_10
-msgid "Dein Vorname"
+#: view_users_new_11
+msgid "Dein Nachname"
 msgstr ""
 #: view_user_profiles__installation_24
 msgid "Installation über ein Metapaket"
 msgstr ""
-#: view_users_new_11
-msgid "Dein Nachname"
+#: view_users_new_12
+msgid "(optional)"
 msgstr ""
 #: controller_users_10
 msgid "Benutzer gelöscht"
 msgstr ""
 #: view_user_profiles__installation_25
 msgid "Installation über apturl"
-msgstr ""
-#: view_users_new_12
-msgid "(optional)"
 msgstr ""
 #: controller_users_11
 msgid "Es gab ein Problem mit der Löschung."
@@ -309,6 +309,9 @@ msgid "Name"
 msgstr ""
 #: direct_indirect_covered_packages_warning
 msgid "Achtung! Dauert lange und sollte nur vom Admin-Server (communtu.de:3006) aus aufgerufen werden"
+msgstr ""
+#: architecture_successful_updated
+msgid "Architektur erfolgreich aktualisiert."
 msgstr ""
 #: view_home_home_7
 msgid "<b>Bündel verwalten</b> Hast du gute Erfahrungen mit Programmen gemacht? Dann kannst du sie hier thematisch bündeln, oder auch bestehende Bündel angucken. "
@@ -694,14 +697,14 @@ msgstr ""
 #: weblinks
 msgid "Weblinks"
 msgstr ""
+#: view_users_index_6
+msgid "Rollen"
+msgstr ""
 #: view_derivatives_edit_1
 msgid "Programm für GUI-basiertes Sudo (z.B. gksudo, kdesudo)"
 msgstr ""
 #: helper_distributions_13
 msgid "löschen"
-msgstr ""
-#: view_users_index_6
-msgid "Rollen"
 msgstr ""
 #: view_users_new_6
 msgid "Passwort bestätigen"
@@ -831,6 +834,9 @@ msgid "Bist du sicher?"
 msgstr ""
 #: view_home_news_11
 msgid "Diese Liste ist für eine Diskussion rund um die Plattform gedacht.  Hier kommt etwas mehr als einmal die Woche eine E-Mail über den Verteiler.   Die Nachrichten werden in einem "
+msgstr ""
+#: architecture_successful
+msgid "Architektur erfolgreich angelegt."
 msgstr ""
 #: livecd
 msgid "Live-CD/DVD"
@@ -1158,6 +1164,9 @@ msgid "Einstellungen"
 msgstr ""
 #: view_home_derivatives_57
 msgid "für Subnotebooks/EEE-PCs"
+msgstr ""
+#: edit_architecture
+msgid "Architektur bearbeiten"
 msgstr ""
 #: view_home_faq_17
 msgid "Wie kann ich einen Programmvorschlag einbringen?"
@@ -1756,6 +1765,9 @@ msgstr ""
 #: view_repositories_show_6
 msgid "        OpenSource"
 msgstr ""
+#: new_architecture
+msgid "Neue Architektur"
+msgstr ""
 #: view_home_mail_0
 msgid "Benachrichtigung bei Fehlerbehebung"
 msgstr ""
@@ -2110,6 +2122,9 @@ msgstr ""
 #: view_home_impressum_2
 msgid "AG Communtu"
 msgstr ""
+#: architectures
+msgid "Architekturen"
+msgstr ""
 #: view_rating_show_title_ratings_count
 msgid "(Basierend auf {{votes}} Bewertung(en))"
 msgstr ""
@@ -2328,6 +2343,9 @@ msgid "nutze Communtu als Gast"
 msgstr ""
 #: controller_categories_0
 msgid "Kategorien"
+msgstr ""
+#: update
+msgid "Aktualisieren"
 msgstr ""
 #: view_home_home_24
 msgid "Zum Impressum"

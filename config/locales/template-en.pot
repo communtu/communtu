@@ -310,6 +310,9 @@ msgstr ""
 #: direct_indirect_covered_packages_warning
 msgid "Attention! This takes a long time and should only be done on the admin-server (communtu.org:3006)!"
 msgstr ""
+#: architecture_successful_updated
+msgid "Architecture successfully updated."
+msgstr ""
 #: view_home_home_7
 msgid "<b>Administrate bundles</b> Did you have good experiences with the programs? Bundle them thematically or take a look at existing bundles."
 msgstr ""
@@ -832,6 +835,9 @@ msgstr ""
 #: view_home_news_11
 msgid "This list is intended for discussion about the platform. The frequency is a little higher than once a week. Posts will be collected in an "
 msgstr ""
+#: architecture_successful
+msgid "Architecture successfully created."
+msgstr ""
 #: livecd
 msgid "Live-CD/DVD"
 msgstr ""
@@ -1155,6 +1161,9 @@ msgid "Settings"
 msgstr ""
 #: view_home_derivatives_57
 msgid " for subnotebooks/EEE-PCs."
+msgstr ""
+#: edit_architecture
+msgid "edit architecture"
 msgstr ""
 #: view_home_faq_17
 msgid "How can I suggest new programs?"
@@ -1753,6 +1762,9 @@ msgstr ""
 #: view_repositories_show_6
 msgid "        OpenSource"
 msgstr ""
+#: new_architecture
+msgid "New architecture"
+msgstr ""
 #: view_home_mail_0
 msgid "Notification in bugfixing"
 msgstr ""
@@ -2107,6 +2119,9 @@ msgstr ""
 #: view_home_impressum_2
 msgid "AG Communtu"
 msgstr ""
+#: architectures
+msgid "Architectures"
+msgstr ""
 #: view_rating_show_title_ratings_count
 msgid "(Based on {{votes}} rating(s))"
 msgstr ""
@@ -2325,6 +2340,9 @@ msgid "use Communtu as a guest"
 msgstr ""
 #: controller_categories_0
 msgid "Categories"
+msgstr ""
+#: update
+msgid "Refresh"
 msgstr ""
 #: view_home_home_24
 msgid "To the imprint"
