@@ -20,15 +20,16 @@
 <td><%= link_to((t:view_home_new_repository_0), '/home/new_repository') %></td></tr><tr>
 <td valign="left"><%=t(:view_packages__packagelist_1)%></td>
 <td>
-     <%= check_box_tag("programs",1,session[:programs]) %>
+   <%= check_box_tag("programs",1,session[:programs]) %>
 </td>
 <td></td></tr><tr>
 <td valign="left"><%=t(:view_packages__packagelist_2)%></td>
 <td>
-    <input type="textbox" id="search" name="search" value="<%= session[:search]%>" </>
+    <input type="textbox" id="search" name="search" value="<%= session[:search]%>" />
 </td>
 <td><%= link_to(t(:choose_bundle), "/bundle")%></td>
 </tr>
+<tr><td></td><td><%= t(:exact) %>  <%= check_box_tag("exact",1,session[:exact]) %></td><td></td></tr>
 </table>
 </form>
 

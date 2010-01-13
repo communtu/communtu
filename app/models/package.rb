@@ -158,12 +158,16 @@ class Package < BasePackage
     ps.map{|p| p.repositories.map{|r| r.license_type}}.flatten.max
   end
     
-  def self.find_packages(search, group, only_programs, page)
+  def self.find_packages(search, group, only_programs, exact, page)
     cond_str = "1"
     cond_vals = []
     if not search.nil?
         cond_str += " and name like ?"
-        cond_vals << "%" + search + "%"
+          if exact == "1"
+            cond_vals << search
+          else
+            cond_vals << "%" + search + "%"
+          end
     end    
     if !(group.nil? or group == "all") 
         cond_str += " and section = ?"

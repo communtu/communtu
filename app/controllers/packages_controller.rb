@@ -8,7 +8,7 @@ class PackagesController < ApplicationController
   # GET /Packages
   # GET /Packages.xml
   def index
-    @packages     = Package.find_packages(session[:search], session[:group], session[:programs], params[:page])
+    @packages     = Package.find_packages(session[:search], session[:group], session[:programs], session[:exact], params[:page])
     @groups       = Package.find(:all, :select => "DISTINCT section", :order => "section")
     
     respond_to do |format|
@@ -27,6 +27,8 @@ class PackagesController < ApplicationController
   end                                
   
   def search
+    session[:exact] = params[:exact]
+    if session[:exact].nil? then session[:exact] = false end
     session[:search] = params[:search]
     session[:programs] = params[:programs]
     if session[:programs].nil? then session[:programs] = false end
