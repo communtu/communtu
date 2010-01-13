@@ -1,51 +1,57 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :sections
+  map.root :controller => 'home', :action => 'home'
 
   map.resources :architectures
-
-  map.connect '/articles/show', :controller => 'articles', :action => 'show'
-  map.connect '/articles/edit/:id', :controller => 'articles', :action => 'edit'
-  map.connect '/articles/new', :controller => 'articles', :action => 'new'
-  map.resources :articles      
-
-  map.connect '/debs/generate', :controller => 'debs', :action => 'generate'
-  map.connect '/debs/generate_all', :controller => 'debs', :action => 'generate_all'
-  map.resources :debs
-
+  map.resources :articles
+  map.resources :categories, :collection => {:show_tree => :get}
+  map.resources :debs, :collections => {:generate => :get, :generate_all =>:get}
   map.resources :derivatives
-  map.resources :videos
+  map.connect '/distributions/migrate/:id', :controller => 'distributions', :action => 'migrate'
+  map.connect '/distributions/migrate_bundels/:id', :controller => 'distributions', :action => 'migrate_bundles'
+  map.connect '/distributions/make_visible/:id', :controller => 'distributions', :action => 'make_visible'
+  map.connect '/distributions/make_final/:id', :controller => 'distributions', :action => 'make_final'
+  map.resources :distributions do |dist|
+    dist.resources :metapackages
+    dist.resources :packages
+    dist.resources :repositories
+  end
+
+  # home controller
+  map.connect '/home',  :controller => 'home', :action => 'home'
+  map.connect '/mail/:navi', :controller => 'home', :action => 'mail'
+  map.connect '/about', :controller => 'home', :action => 'about'
+  map.connect '/contact_us', :controller => 'home', :action => 'contact_us'
+  map.connect '/cancel', :controller => 'home', :action => 'cancel'
+  map.connect '/success', :controller => 'home', :action => 'success'
 
   map.resources :livecds
-  
-  map.connect '/categories/show_tree', :controller => 'categories', :action => 'show_tree'
-  map.resources :categories
+  map.connect '/metapackages/:id/publish', :controller => "metapackages", :action => "publish", :method => :put
+  map.connect '/metapackages/:id/unpublish', :controller => "metapackages", :action => "unpublish", :method => :put
+  map.connect '/metapackages/:id/edit_packages', :controller => "metapackages", :action => "edit_packages", :method => :put
+  map.connect '/metapackages/:id/edit_action', :controller => 'metapackages', :action => 'edit_action'
+  map.resources :metapackages, :collection => {:save => :get, :immediate_conflicts => :get, :conflicts => :get,
+                                               :rdepends => :get, :action => :get, :changed => :get, :migrate => :get,
+                                               :finish_migrate => :get}
+  map.resources :messages, :member => { :reply => :get, :forward => :get }
+  map.resources :packages, :collection => {:packagelist => :get, :rdepends => :get, :search => :get, :section => :get, :bundle => :get}
+  map.resource :password
+  map.connect '/rating/rate', :controller => 'rating', :action => 'rate'
   map.resources :repositories
-  
-  map.connect '/metapackages/save', :controller => 'metapackages', :action => 'save'
-  map.connect '/metapackages/immediate_conflicts', :controller => 'metapackages', :action => 'immediate_conflicts'
-  map.connect '/metapackages/conflicts', :controller => 'metapackages', :action => 'conflicts'
-  map.connect '/metapackages/rdepends', :controller => 'metapackages', :action => 'rdepends'
-  map.connect '/metapackage/action', :controller => 'metapackages', :action => 'action'
-  map.connect '/metapackage/changed', :controller => 'metapackages', :action => 'changed'
-  map.connect '/metapackage/migrate', :controller => 'metapackages', :action => 'migrate'
-  map.connect '/metapackage/finish_migrate', :controller => 'metapackages', :action => 'finish_migrate'
-
-  map.resources :metapackages
+  map.resources :sections
+  map.resource :session
+  map.resources :sent, :mailbox
+  map.resources :videos
 
   map.connect '/user_profiles/create_livecd/:id', :controller => 'user_profiles', :action => 'create_livecd'
   map.connect '/user_profiles/test_livecd/:id', :controller => 'user_profiles', :action => 'test_livecd'
 
-  map.connect '/users/anonymous_login', :controller => 'users', :action => 'anonymous_login'
-  map.resources :users, :member => { :enable => :put } do |users|
+   map.resources :users, :member => { :enable => :put, :anonymous_login => :get} do |users|
     users.resource  :user_profile
     users.resource  :account
     users.resources :roles
   end
- map.connect '/users/:user_id/user_profile/:pack_name', :controller => 'user_profiles', :action => 'refine', :requirements => {
-                :pack_name => /#
-                  \w{15,60}
-                /x
-              }
+
+  # URLs should be adpated to controllers
   map.connect '/users/:distribution_id/suggestion', :controller => 'suggestion', :action => 'show'
   map.connect '/users/:id/suggestion/install', :controller => 'suggestion', :action => 'install'
   map.connect '/users/:id/suggestion/install_new', :controller => 'suggestion', :action => 'install_new'
@@ -58,6 +64,7 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/users/:user_id/metapackages/:id', :controller => 'users', :action => 'metapackages'
   map.connect '/users/:user_id/user_profile/edit', :controller => 'user_profiles', :action => 'edit'
   map.connect '/users/:user_id/user_profile/refine', :controller => 'user_profiles', :action => 'settings'
+  map.connect '/users/:user_id/user_profile/installation', :controller => 'user_profiles', :action => 'installation'
   map.connect '/users/:user_id/user_profile/update_data', :controller => 'user_profiles', :action => 'update_data'
   map.connect '/users/:user_id/user_profile/update_ratings', :controller => 'user_profiles', :action => 'update_ratings'  
   map.connect '/users/:user_id/user_profile/settings', :controller => 'user_profiles', :action => 'settings'
@@ -66,54 +73,8 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/users/:id/destroy', :controller => 'users', :action => 'destroy' 
   map.connect '/users/:id/show', :controller => 'users', :action => 'show'
   map.connect '/users/:id/cart/:action/:id', :controller => 'cart'
-  map.connect '/bundle', :controller => 'packages', :action => 'bundle'
 
- map.connect '/distributions/migrate/:id', :controller => 'distributions', :action => 'migrate'
- map.connect '/distributions/migrate_bundels/:id', :controller => 'distributions', :action => 'migrate_bundles'
- map.connect '/distributions/make_visible/:id', :controller => 'distributions', :action => 'make_visible'
-map.connect '/distributions/make_final/:id', :controller => 'distributions', :action => 'make_final'
-
-
-  map.connect 'packages/packagelist', :controller => 'packages', :action => 'packagelist'
-  map.connect 'packages/rdepends', :controller => 'packages', :action => 'rdepends'
-  map.connect 'packages/section', :controller => "packages", :action => "section", :method => :post
-  map.connect 'packages/search', :controller => "packages", :action => "search", :method => :post
-  map.connect 'packages/update', :controller => "packages", :action => "update", :method => :post
-  map.connect '/metapackages/:id/publish', :controller => "metapackages", :action => "publish", :method => :put
-  map.connect '/metapackages/:id/unpublish', :controller => "metapackages", :action => "unpublish", :method => :put
-  map.connect '/metapackages/:id/edit_packages', :controller => "metapackages", :action => "edit_packages", :method => :put
-  map.connect '/metapackages/:id/edit_action', :controller => 'metapackages', :action => 'edit_action'
-
-
-  map.resources :packages
-  map.resources :distributions do |dist|
-    dist.resources :metapackages
-    dist.resources :packages  
-    dist.resources :repositories
-  end
-    
-  map.resource :session
-  map.resource :password
-
-  map.root :controller => 'home', :action => 'home'
-  map.connect '/home',  :controller => 'home', :action => 'home'
-  map.connect '/mail/:navi', :controller => 'home', :action => 'mail'
-  map.connect '/about', :controller => 'home', :action => 'about'
-  map.connect '/umfrage', :controller => 'home', :action => 'umfrage'
-  map.connect '/contact_us', :controller => 'home', :action => 'contact_us'
-  map.connect '/cancel', :controller => 'home', :action => 'cancel'
-  map.connect '/success', :controller => 'home', :action => 'success'
-  map.connect '/danke/:id', :controller => 'home', :action => 'danke', :method => :get
-  map.connect '/admin/sync_package/:id', :controller => 'admins', :action => 'sync_package'
-  map.connect '/admin/sync_all/:id', :controller => 'admins', :action => 'sync_all'
-  map.connect '/admin/test_all/:id', :controller => 'admins', :action => 'test_all'
-  map.connect '/admin/repositories', :controller => 'repositories', :action => 'new'
-  map.connect '/distributions', :controller => 'distributions', :action => 'index'
-  map.connect '/rating/rate', :controller => 'rating', :action => 'rate'
-
-  map.resources :sent, :mailbox
-  map.resources :messages, :member => { :reply => :get, :forward => :get }
-
+  # from authenticated plugin
   map.activate '/activate/:id', :controller => 'accounts', :action => 'show'
   map.forgot_password '/forgot_password', :controller => 'passwords', :action => 'new'
   map.reset_password '/reset_password/:id', :controller => 'passwords', :action => 'edit'
@@ -121,10 +82,10 @@ map.connect '/distributions/make_final/:id', :controller => 'distributions', :ac
   map.signup '/signup', :controller => 'users', :action => 'new'
   map.login '/login', :controller => 'sessions', :action => 'new'
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
-  map.categories '/categories', :controller => 'categories', :action => 'new' 
   map.admin '/admin', :controller => 'admin'
   map.inbox '/inbox', :controller => "mailbox", :action => "show"
-  
+
+  # default rules
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
   
