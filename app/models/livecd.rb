@@ -53,7 +53,13 @@ class Livecd < ActiveRecord::Base
     isourl = self.url
     fullname = self.fullname
     if Dir.glob(iso)[0].nil? then
-      res = system "sudo -u communtu #{RAILS_ROOT}/script/remaster create #{ver} #{iso} #{isobase} #{srcdeb} #{installdeb} >> #{RAILS_ROOT}/log/livecd.log 2>&1"
+      # Karmic and higher need virtualisation due to requirement of sqaushfs version >= 4
+      if self.distribution_id >= 5 then
+        virt = "-v"
+      else
+        virt = ""
+      end
+      res = system "sudo -u communtu #{RAILS_ROOT}/script/remaster create #{virt} #{ver} #{iso} #{isobase} #{srcdeb} #{installdeb} >> #{RAILS_ROOT}/log/livecd.log 2>&1"
     else
       res = true
     end
