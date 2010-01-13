@@ -2,17 +2,18 @@
 
 <%= error_messages_for :user_profile %>
 <%= render :partial => 'box' %>
-<%=t(:which_programs_do_you_need)%> <%=t(:view_user_profiles__profile_rating_1)%><img src='/images/add.png' width='10' height='10'><%=t(:view_user_profiles__profile_rating_2)%>
 
 <% form_tag(user_user_profile_path(current_user) + "/update_ratings", options = {:name => "ratings", :method => :put}) do %>
 
+<%=t(:which_programs_do_you_need)%> <%=t(:view_user_profiles__profile_rating_1)%><img src='/images/add.png' width='10' height='10'><%=t(:view_user_profiles__profile_rating_2)%>
 <b><%=t(:view_user_profiles__profile_rating_3)%></b></p>
+<span align="right">
+  <%= submit_tag t(:save_selection) %>
+</span>
+
+
     <div> 
         <%= show_suggestion2(@root, @selection, @ratings) %>
     </div> 
-    <div style="margin-top:20px;">
-        <%= submit_tag t(:save_fine), :name => "fine" %>
-        <%= submit_tag t(:save_fine_install), :name => "fine_install" %>
-    </div>
 <% end %>
 

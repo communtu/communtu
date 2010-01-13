@@ -70,15 +70,10 @@ class UserProfilesController < ApplicationController
     user.distribution_id = uparams[:distribution_id]
     user.derivative_id = uparams[:derivative_id]
     user.architecture_id = uparams[:architecture_id]
-    newly_advanced = !user.advanced and uparams[:advanced]
     user.advanced = uparams[:advanced]
     user.profile_changed = true
     user.save!
-    if newly_advanced then
-      redirect_to user_user_profile_path(current_user) + "/settings"
-    else
-      redirect_to user_user_profile_path(current_user) + "/refine"
-    end
+    redirect_to user_user_profile_path(current_user) + "/installation"
   end
   
   def update_ratings
@@ -88,7 +83,6 @@ class UserProfilesController < ApplicationController
     user.profile_changed = true
     user.save!
     uid = user.id
-    #if (!params[:].nil?) or (!params[:rough_install].nil?) # update rough selection
       # get the list of categories selected via checkboxes
       if params[:categories].nil? then
         cats = []
@@ -118,11 +112,7 @@ class UserProfilesController < ApplicationController
         end
       end
     end
-    if (!params[:rough_install].nil?) or (!params[:fine_install].nil?) then
-      redirect_to user_user_profile_path(current_user) + "/installation"
-    else
-      redirect_to user_user_profile_path(current_user) + "/edit"
-    end
+    redirect_to user_user_profile_path(current_user) + "/installation"
   end
 
   def create_livecd

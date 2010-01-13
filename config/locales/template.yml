@@ -292,10 +292,7 @@ auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} er
   repository_url: "Repository-URL: "
   rough_selection: "Grobauswahl"
   save: Speichern
-  save_fine: Feinauswahl speichern
-  save_fine_install: Feinauswahl speichern und installieren
-  save_rough: Grobauswahl speichern
-  save_rough_install: Grobauswahl speichern und installieren
+  save_selection: Auswahl speichern
   security_type: "Sicherheitstyp:"
   senden: Abschicken
   settings: Einstellungen
@@ -831,7 +828,7 @@ Wenn Du der Meinung bist, dass dein Bündel um nützliche Programme erweitert we
   view_user_profiles__profile_rating_0: "Auswahl der zu installierenden Programmbündel und Programme"
   view_user_profiles__profile_rating_1: "Durch Klicken auf "
   view_user_profiles__profile_rating_2: " lässt \nsich ein Bereich ein- oder ausklappen."
-  view_user_profiles__profile_rating_3: Achtung! Zum Schluss auf "Feinauswahl speichern" klicken.
+  view_user_profiles__profile_rating_3: Achtung! Zum Schluss auf "Auswahl speichern" klicken.
   view_user_profiles__sources_0: "Quellen für die zu installierenden Programme"
   view_user_profiles__sources_1: "Hier werden die zu installierenden Programme und Pakete nach den zugehörigen \
     Quellen sortiert aufgelistet, so dass du auch sehen kannst, weshalb die jeweiligen \
