@@ -185,6 +185,10 @@ end
     end
   end
 
+  def selected_packages_uniq
+    selected_packages.uniq
+  end
+
   # update meta package selection to default given by sel
   def update_meta(m,sel)
     uid = self.id

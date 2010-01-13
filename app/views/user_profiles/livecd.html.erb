@@ -33,7 +33,7 @@
   </table>
 <% end %>
 <p><%=t(:livecd_start_message)%><br />
-<i><%=current_user.selected_packages.map{|m| m.name}.join(", ") %></i>
+<i><%=current_user.selected_packages_uniq.map{|m| m.name}.join(", ") %></i>
 </p>
 <p><%=t(:livecd_message,:cdimage_link => (link_to t(:livecd_image), t(:livecd_image_link)))%></p>
 
