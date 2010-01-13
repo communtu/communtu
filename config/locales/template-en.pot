@@ -883,9 +883,6 @@ msgstr ""
 #: view_home_faq_kde_01
 msgid "You can find the Communtu sources under \"K-Menu -> Programs -> System -> Software Sources -> Other Software\". They can also be deactivated here."
 msgstr ""
-#: save_rough
-msgid "Save rough selection"
-msgstr ""
 #: view_home_derivatives_41
 msgid "Ubuntu ultimate - Ubuntu with many desktop-designs and applications."
 msgstr ""
@@ -1336,9 +1333,6 @@ msgstr ""
 #: livecd_incorrect_name
 msgid "The name of the Live-CD/DVD can contain only letters, numbers, _ and -."
 msgstr ""
-#: save_rough_install
-msgid "Save rough selection and install"
-msgstr ""
 #: passwd_no_match
 msgid "The new password does not comply with the verification."
 msgstr ""
@@ -1713,6 +1707,9 @@ msgid "<option>0 bundles selected</option>"
 msgstr ""
 #: last_user
 msgid "We welcome out newest user"
+msgstr ""
+#: save_selection
+msgid "Save selection"
 msgstr ""
 #: livecd_image
 msgid "CD-Image"
@@ -2095,9 +2092,6 @@ msgstr ""
 #: controller_suggestion_15
 msgid "Install package"
 msgstr ""
-#: save_fine
-msgid "Save fine selection"
-msgstr ""
 #: controller_suggestion_16
 msgid "The following packages will be installed"
 msgstr ""
@@ -2109,9 +2103,6 @@ msgid "Subject must not be empty."
 msgstr ""
 #: controller_sent_1
 msgid "user does not exist"
-msgstr ""
-#: save_fine_install
-msgid "Save fine selection and install"
 msgstr ""
 #: view_user_profiles__sources_0
 msgid "Sources for the soon be installed programs"
@@ -2168,7 +2159,7 @@ msgstr ""
 msgid "Send"
 msgstr ""
 #: view_user_profiles__profile_rating_3
-msgid "Attention! When finished, don't forget to click on \"Save fine selection\"."
+msgid "Attention! When finished, don't forget to click on \"Save selection\"."
 msgstr ""
 #: view_home_icons_3
 msgid "Install package(s)."
@@ -2374,11 +2365,11 @@ msgstr ""
 #: view_home_donate_why
 msgid "The development of Communtu is mainly based on the effort of volunteers but it also costs money (amongst others the server and the rooms). Therefore Communtu depends on donations. Even small amounts of money help."
 msgstr ""
-#: view_layouts_application_13
-msgid "About Communtu"
-msgstr ""
 #: livecd_message
 msgid "With the Live-CD you can test the software you have chosen and install the system with the previous made software choice. For this an ISO-file ({{cdimage_link}}) is created which you can burn. For this you need an empty CD-R or, if you have chosen lots of software, an empty DVD-R.<br /><br />The creation of the image takes a while. You will be informed automatically when your image has been created. For this, a valid e-mail address is required to be entered in your profile."
+msgstr ""
+#: view_layouts_application_13
+msgid "About Communtu"
 msgstr ""
 #: view_sent_show_2
 msgid "Date:"

@@ -310,7 +310,6 @@ en:
   questionmark_conny: Click me and tell what is unclear to you.
   new_packages: "Newly added packages: "
   view_home_faq_kde_01: You can find the Communtu sources under "K-Menu -> Programs -> System -> Software Sources -> Other Software". They can also be deactivated here.
-  save_rough: Save rough selection
   view_home_derivatives_41: Ubuntu ultimate - Ubuntu with many desktop-designs and applications.
   view_home_faq_kde_02: You can access KPackageKit via "K-Menu -> Programs -> System -> Administration -> Software Management". From the right dropdown menu you choose "packages.communtu.org". The list now appearing contains every metapackage available in Communtu. To uninstall a metapackage you click on one of the installed metapackages and mark it with the X right of the entry. To remove it from your system you need to click on "Apply". You now see a summary of the changes that will be made and after a click on "Ok" they will be removed from your system.
   view_home_news_15: Our blog
@@ -468,7 +467,6 @@ en:
   chat: Chat
   view_home_derivatives_8: You can also take a look of which packages a derivative consists.
   livecd_incorrect_name: The name of the Live-CD/DVD can contain only letters, numbers, _ and -.
-  save_rough_install: Save rough selection and install
   passwd_no_match: The new password does not comply with the verification.
   view_my_mailer_mailerror_0: |-
     Hello, 
@@ -600,6 +598,7 @@ en:
   view_users_show_8: Message
   view_metapackages__metalist_20: <option>0 bundles selected</option>
   last_user: We welcome out newest user
+  save_selection: Save selection
   livecd_image: CD-Image
   view_categories_index_0: Category-overview
   view_packages__packagelist_1: "Programs&nbsp;only:"
@@ -727,12 +726,10 @@ en:
   ubuntu_derivatives: Ubuntu derivatives
   model_user_profile_tabz_4: Settings
   controller_suggestion_15: Install package
-  save_fine: Save fine selection
   controller_suggestion_16: The following packages will be installed
   we_want_you: We need you
   controller_sent_0: Subject must not be empty.
   controller_sent_1: user does not exist
-  save_fine_install: Save fine selection and install
   view_user_profiles__sources_0: Sources for the soon be installed programs
   view_home_impressum_2: AG Communtu
   architectures: Architectures
@@ -754,7 +751,7 @@ en:
     open or close a section to make a detailed selection."
   videos: "Videos:"
   senden: Send
-  view_user_profiles__profile_rating_3: Attention! When finished, don't forget to click on "Save fine selection".
+  view_user_profiles__profile_rating_3: Attention! When finished, don't forget to click on "Save selection".
   view_home_icons_3: Install package(s).
   model_package_6: <br> has not the right format
   register: Register
@@ -821,13 +818,13 @@ en:
   controller_categories_2: Category created.
   view_home_home_26: You installed Ubuntu and now you are looking for programs which run with Ubuntu?
   controller_categories_3: Category updated.
-  view_home_donate_why: The development of Communtu is mainly based on the effort of volunteers but it also costs money (amongst others the server and the rooms). Therefore Communtu depends on donations. Even small amounts of money help.
   view_home_home_27: "Communtu helps you:"
+  view_home_donate_why: The development of Communtu is mainly based on the effort of volunteers but it also costs money (amongst others the server and the rooms). Therefore Communtu depends on donations. Even small amounts of money help.
   donation_purpose: "Purpose: Communtu"
   controller_metapackages_not_changed: This bundle is already created as a metapackage and uploaded.
   view_sent_show_2: "Date:"
-  livecd_message: With the Live-CD you can test the software you have chosen and install the system with the previous made software choice. For this an ISO-file ({{cdimage_link}}) is created which you can burn. For this you need an empty CD-R or, if you have chosen lots of software, an empty DVD-R.<br /><br />The creation of the image takes a while. You will be informed automatically when your image has been created. For this, a valid e-mail address is required to be entered in your profile.
   view_layouts_application_13: About Communtu
+  livecd_message: With the Live-CD you can test the software you have chosen and install the system with the previous made software choice. For this an ISO-file ({{cdimage_link}}) is created which you can burn. For this you need an empty CD-R or, if you have chosen lots of software, an empty DVD-R.<br /><br />The creation of the image takes a while. You will be informed automatically when your image has been created. For this, a valid e-mail address is required to be entered in your profile.
   allgemeinbildung: Allgemeinbildung e.V.
   view_home_home_28: "Download:"
   view_layouts_application_14: Feedback to Communtu

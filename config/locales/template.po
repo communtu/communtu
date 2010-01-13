@@ -933,10 +933,6 @@ msgstr "user not found"
 msgid "Weblinks"
 msgstr "Weblinks"
 
-#: view_users_index_6
-msgid "Rollen"
-msgstr "Roles"
-
 #: view_derivatives_edit_1
 msgid "Programm für GUI-basiertes Sudo (z.B. gksudo, kdesudo)"
 msgstr "Program for GUI-based sudo (e.g. gksudo, kdesudo)"
@@ -944,6 +940,10 @@ msgstr "Program for GUI-based sudo (e.g. gksudo, kdesudo)"
 #: helper_distributions_13
 msgid "löschen"
 msgstr "delete"
+
+#: view_users_index_6
+msgid "Rollen"
+msgstr "Roles"
 
 #: view_users_new_6
 msgid "Passwort bestätigen"
@@ -1212,10 +1212,6 @@ msgstr "Newly added packages: "
 #: view_home_faq_kde_01
 msgid "Unter \"K-Menu -> Programme -> System -> Systemverwaltung -> Software-Quellen -> Softwarequellen von Drittanbietern\" sind die Communtu Quellen auffindbar. Hier können sie auch wieder deaktiviert werden."
 msgstr "You can find the Communtu sources under \"K-Menu -> Programs -> System -> Software Sources -> Other Software\". They can also be deactivated here."
-
-#: save_rough
-msgid "Grobauswahl speichern"
-msgstr "Save rough selection"
 
 #: view_home_derivatives_41
 msgid " Ubuntu ultimate  - Ubuntu mit vielen Desktop-Desgins und Programmen."
@@ -1831,10 +1827,6 @@ msgstr "You can also take a look of which packages a derivative consists."
 msgid "Der Name der LiveCD/DVD darf nur aus Buchstaben, Zahlen, _ und - bestehen"
 msgstr "The name of the Live-CD/DVD can contain only letters, numbers, _ and -."
 
-#: save_rough_install
-msgid "Grobauswahl speichern und installieren"
-msgstr "Save rough selection and install"
-
 #: passwd_no_match
 msgid "Das neue Passwort stimmt nicht mit der Bestätigung überein."
 msgstr "The new password does not comply with the verification."
@@ -2347,6 +2339,10 @@ msgstr "<option>0 bundles selected</option>"
 msgid "Wir begrüßen unseren zuletzt neu-registrierten Nutzer"
 msgstr "We welcome out newest user"
 
+#: save_selection
+msgid "Auswahl speichern"
+msgstr "Save selection"
+
 #: livecd_image
 msgid "CD-Image"
 msgstr "CD-Image"
@@ -2855,10 +2851,6 @@ msgstr "Settings"
 msgid "Pakete installieren"
 msgstr "Install package"
 
-#: save_fine
-msgid "Feinauswahl speichern"
-msgstr "Save fine selection"
-
 #: we_want_you
 msgid "Wir brauchen Dich"
 msgstr "We need you"
@@ -2874,10 +2866,6 @@ msgstr "Subject must not be empty."
 #: controller_sent_1
 msgid "Benutzer existiert nicht"
 msgstr "user does not exist"
-
-#: save_fine_install
-msgid "Feinauswahl speichern und installieren"
-msgstr "Save fine selection and install"
 
 #: view_user_profiles__sources_0
 msgid "Quellen für die zu installierenden Programme"
@@ -2958,8 +2946,8 @@ msgid "Abschicken"
 msgstr "Send"
 
 #: view_user_profiles__profile_rating_3
-msgid "Achtung! Zum Schluss auf \"Feinauswahl speichern\" klicken."
-msgstr "Attention! When finished, don't forget to click on \"Save fine selection\"."
+msgid "Achtung! Zum Schluss auf \"Auswahl speichern\" klicken."
+msgstr "Attention! When finished, don't forget to click on \"Save selection\"."
 
 #: view_home_icons_3
 msgid " Paket(e) installieren."
@@ -3381,6 +3369,12 @@ msgstr "BUNDLE"
 msgid "Installieren"
 msgstr "Install"
 
+#~ msgid "Grobauswahl speichern und installieren"
+#~ msgstr "Save rough selection and install"
+#~ msgid "Feinauswahl speichern"
+#~ msgstr "Save fine selection"
+#~ msgid "Feinauswahl speichern und installieren"
+#~ msgstr "Save fine selection and install"
 #~ msgid ""
 #~ "Hier kannst du deine beabsichtigte Computer-Nutzung noch genauer "
 #~ "angeben. \n"

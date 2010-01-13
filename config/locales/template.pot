@@ -697,14 +697,14 @@ msgstr ""
 #: weblinks
 msgid "Weblinks"
 msgstr ""
-#: view_users_index_6
-msgid "Rollen"
-msgstr ""
 #: view_derivatives_edit_1
 msgid "Programm für GUI-basiertes Sudo (z.B. gksudo, kdesudo)"
 msgstr ""
 #: helper_distributions_13
 msgid "löschen"
+msgstr ""
+#: view_users_index_6
+msgid "Rollen"
 msgstr ""
 #: view_users_new_6
 msgid "Passwort bestätigen"
@@ -882,9 +882,6 @@ msgid "Neu hinzugefügte Pakete: "
 msgstr ""
 #: view_home_faq_kde_01
 msgid "Unter \"K-Menu -> Programme -> System -> Systemverwaltung -> Software-Quellen -> Softwarequellen von Drittanbietern\" sind die Communtu Quellen auffindbar. Hier können sie auch wieder deaktiviert werden."
-msgstr ""
-#: save_rough
-msgid "Grobauswahl speichern"
 msgstr ""
 #: view_home_derivatives_41
 msgid " Ubuntu ultimate  - Ubuntu mit vielen Desktop-Desgins und Programmen."
@@ -1339,9 +1336,6 @@ msgstr ""
 #: livecd_incorrect_name
 msgid "Der Name der LiveCD/DVD darf nur aus Buchstaben, Zahlen, _ und - bestehen"
 msgstr ""
-#: save_rough_install
-msgid "Grobauswahl speichern und installieren"
-msgstr ""
 #: passwd_no_match
 msgid "Das neue Passwort stimmt nicht mit der Bestätigung überein."
 msgstr ""
@@ -1716,6 +1710,9 @@ msgid "<option>0 Bündel ausgewählt</option>"
 msgstr ""
 #: last_user
 msgid "Wir begrüßen unseren zuletzt neu-registrierten Nutzer"
+msgstr ""
+#: save_selection
+msgid "Auswahl speichern"
 msgstr ""
 #: livecd_image
 msgid "CD-Image"
@@ -2098,9 +2095,6 @@ msgstr ""
 #: controller_suggestion_15
 msgid "Pakete installieren"
 msgstr ""
-#: save_fine
-msgid "Feinauswahl speichern"
-msgstr ""
 #: we_want_you
 msgid "Wir brauchen Dich"
 msgstr ""
@@ -2112,9 +2106,6 @@ msgid "Der Betreff darf nicht leer sein."
 msgstr ""
 #: controller_sent_1
 msgid "Benutzer existiert nicht"
-msgstr ""
-#: save_fine_install
-msgid "Feinauswahl speichern und installieren"
 msgstr ""
 #: view_user_profiles__sources_0
 msgid "Quellen für die zu installierenden Programme"
@@ -2171,7 +2162,7 @@ msgstr ""
 msgid "Abschicken"
 msgstr ""
 #: view_user_profiles__profile_rating_3
-msgid "Achtung! Zum Schluss auf \"Feinauswahl speichern\" klicken."
+msgid "Achtung! Zum Schluss auf \"Auswahl speichern\" klicken."
 msgstr ""
 #: view_home_icons_3
 msgid " Paket(e) installieren."
