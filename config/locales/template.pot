@@ -1267,6 +1267,9 @@ msgstr ""
 #: view_home_beteiligung_7
 msgid "Wir benötigen Feedback. Wir möchten, dass Communtu von allen genutzt werden kann. Dazu benötigen wir Feedback. Hast Du einen Fehler auf der Plattform gefunden? Findest Du etwas unverständlich? Glaubst Du, dass wir was besser machen können? Hast Du eine Anregung für uns? Feedback ist uns Willkommen unter "
 msgstr ""
+#: exact
+msgid "Exakten Begriff finden:"
+msgstr ""
 #: detailed_view
 msgid "zur Detailansicht"
 msgstr ""

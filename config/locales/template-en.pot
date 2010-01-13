@@ -1264,6 +1264,9 @@ msgstr ""
 #: view_home_beteiligung_7
 msgid "We need feedback. Our desire is that Communtu will be used by everyone and for this we need feedback. You found an error in the system? Is there something that is incomprehensible to you? You think you could do something better? You have some suggestions for us? Feedback is accepted under "
 msgstr ""
+#: exact
+msgid "Find exact term:"
+msgstr ""
 #: detailed_view
 msgid "go to detailed view"
 msgstr ""
@@ -2365,11 +2368,11 @@ msgstr ""
 #: view_home_donate_why
 msgid "The development of Communtu is mainly based on the effort of volunteers but it also costs money (amongst others the server and the rooms). Therefore Communtu depends on donations. Even small amounts of money help."
 msgstr ""
-#: livecd_message
-msgid "With the Live-CD you can test the software you have chosen and install the system with the previous made software choice. For this an ISO-file ({{cdimage_link}}) is created which you can burn. For this you need an empty CD-R or, if you have chosen lots of software, an empty DVD-R.<br /><br />The creation of the image takes a while. You will be informed automatically when your image has been created. For this, a valid e-mail address is required to be entered in your profile."
-msgstr ""
 #: view_layouts_application_13
 msgid "About Communtu"
+msgstr ""
+#: livecd_message
+msgid "With the Live-CD you can test the software you have chosen and install the system with the previous made software choice. For this an ISO-file ({{cdimage_link}}) is created which you can burn. For this you need an empty CD-R or, if you have chosen lots of software, an empty DVD-R.<br /><br />The creation of the image takes a while. You will be informed automatically when your image has been created. For this, a valid e-mail address is required to be entered in your profile."
 msgstr ""
 #: view_sent_show_2
 msgid "Date:"

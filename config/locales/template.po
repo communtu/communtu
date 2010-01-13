@@ -1735,6 +1735,10 @@ msgstr "Please enter a subject"
 msgid "Wir benötigen Feedback. Wir möchten, dass Communtu von allen genutzt werden kann. Dazu benötigen wir Feedback. Hast Du einen Fehler auf der Plattform gefunden? Findest Du etwas unverständlich? Glaubst Du, dass wir was besser machen können? Hast Du eine Anregung für uns? Feedback ist uns Willkommen unter "
 msgstr "We need feedback. Our desire is that Communtu will be used by everyone and for this we need feedback. You found an error in the system? Is there something that is incomprehensible to you? You think you could do something better? You have some suggestions for us? Feedback is accepted under "
 
+#: exact
+msgid "Exakten Begriff finden:"
+msgstr "Find exact term:"
+
 #: detailed_view
 msgid "zur Detailansicht"
 msgstr "go to detailed view"
