@@ -45,11 +45,13 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/user_profiles/create_livecd/:id', :controller => 'user_profiles', :action => 'create_livecd'
   map.connect '/user_profiles/test_livecd/:id', :controller => 'user_profiles', :action => 'test_livecd'
 
-   map.resources :users, :member => { :enable => :put, :anonymous_login => :get} do |users|
+  map.connect '/users/anonymous_login', :controller => 'users', :action => 'anonymous_login'
+  map.resources :users, :member => { :enable => :put, :anonymous_login => :get} do |users|
     users.resource  :user_profile
     users.resource  :account
     users.resources :roles
   end
+
 
   # URLs should be adpated to controllers
   map.connect '/users/:distribution_id/suggestion', :controller => 'suggestion', :action => 'show'
