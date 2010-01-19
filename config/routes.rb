@@ -34,6 +34,7 @@ ActionController::Routing::Routes.draw do |map|
                                                :finish_migrate => :get}
   map.resources :messages, :member => { :reply => :get, :forward => :get }
   map.resources :packages, :collection => {:packagelist => :get, :rdepends => :get, :search => :get, :section => :get, :bundle => :get}
+  map.connect '/bundle', :controller => 'packages', :action => 'bundle'
   map.resource :password
   map.connect '/rating/rate', :controller => 'rating', :action => 'rate'
   map.resources :repositories
