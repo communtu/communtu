@@ -24,9 +24,9 @@ class CartController < ApplicationController
         
     def create_from_list
         if session[:cart].nil? then prepare_create end
+        err = ""
         if !params[:datei][:attachment].nil? and params[:datei][:attachment]!="" then
           cart    = Cart.find(session[:cart])
-          err = ""
           metas = {}
           Metapackage.all.each do |m|
             metas[m.debian_name] = m
