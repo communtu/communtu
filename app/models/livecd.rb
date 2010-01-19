@@ -59,7 +59,9 @@ class Livecd < ActiveRecord::Base
       else
         virt = ""
       end
-      res = system "sudo -u communtu #{RAILS_ROOT}/script/remaster create #{virt} #{ver} #{iso} #{isobase} #{srcdeb} #{installdeb} >> #{RAILS_ROOT}/log/livecd.log 2>&1"
+      remaster_call = "sudo -u communtu #{RAILS_ROOT}/script/remaster create #{virt} #{ver} #{iso} #{isobase} #{srcdeb} #{installdeb} >> #{RAILS_ROOT}/log/livecd.log 2>&1"
+      system "echo \"#{remaster_call}\" >> #{RAILS_ROOT}/log/livecd.log"
+      res = system remaster_call
     else
       res = true
     end
