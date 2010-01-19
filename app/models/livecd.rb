@@ -45,34 +45,40 @@ class Livecd < ActiveRecord::Base
 
   def remaster
     system "dotlockfile -r 1000 #{RAILS_ROOT}/livecd_lock"
-    self.generating = true
-    self.save
-    system "(echo; echo \"------------------------------------\"; echo \"Creating live CD\"; date) >> #{RAILS_ROOT}/log/livecd.log"
-    ver = self.fullversion
-    iso = self.filename
-    isourl = self.url
-    fullname = self.fullname
-    if Dir.glob(iso)[0].nil? then
-      # Karmic and higher need virtualisation due to requirement of sqaushfs version >= 4
-      if self.distribution_id >= 5 then
-        virt = "-v"
+    begin
+      self.generating = true
+      self.save
+      system "(echo; echo \"------------------------------------\"; echo \"Creating live CD\"; date) >> #{RAILS_ROOT}/log/livecd.log"
+      ver = self.fullversion
+      iso = self.filename
+      isourl = self.url
+      fullname = self.fullname
+      if Dir.glob(iso)[0].nil? then
+        # Karmic and higher need virtualisation due to requirement of sqaushfs version >= 4
+        if self.distribution_id >= 5 then
+          virt = "-v"
+        else
+          virt = ""
+        end
+        remaster_call = "sudo -u communtu #{RAILS_ROOT}/script/remaster create #{virt} #{ver} #{iso} #{self.name} #{self.srcdeb} #{self.installdeb} >> #{RAILS_ROOT}/log/livecd.log 2>&1"
+        system "echo \"#{remaster_call}\" >> #{RAILS_ROOT}/log/livecd.log"
+        res = system remaster_call
       else
-        virt = ""
+        res = true
       end
-      remaster_call = "sudo -u communtu #{RAILS_ROOT}/script/remaster create #{virt} #{ver} #{iso} #{self.name} #{self.srcdeb} #{self.installdeb} >> #{RAILS_ROOT}/log/livecd.log 2>&1"
-      system "echo \"#{remaster_call}\" >> #{RAILS_ROOT}/log/livecd.log"
-      res = system remaster_call
-    else
-      res = true
+      system "(echo; echo \"finished at:\"; date; echo; echo) >> #{RAILS_ROOT}/log/livecd.log"
+      if !res then
+        system "(echo; echo \"Creation of livd CD failed\"; echo) >> #{RAILS_ROOT}/log/livecd.log"
+        self.log = IO.popen("tail -n80 #{RAILS_ROOT}/log/livecd.log").read
+      end
+      self.failed = !res
+      self.generating = false
+      self.save
+    rescue
+      self.log = "ruby code for live CD/DVD creation crashed"
+      self.save
+      res = false
     end
-    system "(echo; echo \"finished at:\"; date; echo; echo) >> #{RAILS_ROOT}/log/livecd.log"
-    if !res then
-      system "(echo; echo \"Creation of livd CD failed\"; echo) >> #{RAILS_ROOT}/log/livecd.log"
-      self.log = IO.popen("tail -n80 #{RAILS_ROOT}/log/livecd.log").read
-    end
-    self.failed = !res
-    self.generating = false
-    self.save
     system "dotlockfile -u #{RAILS_ROOT}/livecd_lock"
     if res then
       self.generated = true
