@@ -59,16 +59,16 @@ echo >> $HOME/backup.log
 # call dar
 case $mode in
 	full)
-		(dar -c - ${paths} ${exclude} -R / -v $comp --key ${passwd} | $ssh "cat > \$HOME/${USER}/temp_${USER}_${date}_full.1.dar")  2>&1 | tee -a $HOME/backup.log
-		if [ $? -eq 0 ] 
+		(dar -c - ${paths} ${exclude} -R / -v $comp --key ${passwd} | $ssh "cat > \$HOME/${USER}/temp_${USER}_${date}_full.1.dar") 2>&1 | tee -a $HOME/backup.log
+		if [ ${PIPESTATUS[0]} -eq 0 ]
 		    then
 		    $ssh "mv \$HOME/${USER}/temp_${USER}_${date}_full.1.dar \$HOME/${USER}/backup_${USER}_${date}_full.1.dar"
 		fi
 		;;
 	diff)
 		$ssh "name=\`/bin/ls -1 \$HOME/${USER}/ | grep backup_${USER}_ | /usr/bin/sort -r | /usr/bin/head -1\`; name2=\`basename \$name .1.dar\`; dar $comp -A \$HOME/${USER}/\$name2 -C - --key ${passwd} --key-ref ${passwd}" > $HOME/CAT_$USER.1.dar
-		(dar -c - -A $HOME/CAT_$USER -v  --key ${passwd} --key-ref ${passwd} -R / ${paths} ${exclude} $comp | $ssh "cat > \$HOME/${USER}/temp_${USER}_${date}_diff.1.dar")  2>&1 | tee -a $HOME/backup.log
-		if [ $? -eq 0 ] 
+		(dar -c - -A $HOME/CAT_$USER -v  --key ${passwd} --key-ref ${passwd} -R / ${paths} ${exclude} $comp | $ssh "cat > \$HOME/${USER}/temp_${USER}_${date}_diff.1.dar") 2>&1 | tee -a $HOME/backup.log
+		if [ ${PIPESTATUS[0]} -eq 0 ]
 		    then
 		    $ssh "mv \$HOME/${USER}/temp_${USER}_${date}_diff.1.dar \$HOME/${USER}/backup_${USER}_${date}_diff.1.dar"
 		fi
