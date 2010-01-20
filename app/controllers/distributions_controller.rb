@@ -167,16 +167,16 @@ class DistributionsController < ApplicationController
 
   def make_visible
     @dist = Distribution.find(params[:id])
-    @dist.visible = false
+    @dist.invisible = false
     @dist.save
-    redirect_to(@distribution)
+    redirect_to(distributions_url)
   end
 
   def make_final
     @dist = Distribution.find(params[:id])
     @dist.preliminary = false
     @dist.save
-    redirect_to(@distribution)
+    redirect_to(distributions_url)
   end
 
 end
