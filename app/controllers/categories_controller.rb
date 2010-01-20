@@ -136,14 +136,14 @@ class CategoriesController < ApplicationController
   def destroy
     @category = Category.find(params[:id])
     @translation_link = Translation.find(:all, :conditions => { :translatable_id => @category.link_tid })
-    m = @translation_link.count
+    m = @translation_link.length
     e = 0
     m.times do
      @translation_link[e].delete
      e = e + 1
     end
     @translation_name = Translation.find(:all, :conditions => { :translatable_id => @category.name_tid })
-    m = @translation_name.count
+    m = @translation_name.length
     e = 0
     m.times do
      @translation_name[e].delete
@@ -153,7 +153,7 @@ class CategoriesController < ApplicationController
     m = @translation_des.count
     e = 0
     m.times do
-     @translation_des[e].delete
+     @translation_des[e].length
      e = e + 1
     end
     @category.delete
