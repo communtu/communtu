@@ -64,7 +64,7 @@ class Livecd < ActiveRecord::Base
         system "echo \"#{remaster_call}\" >> #{RAILS_ROOT}/log/livecd.log"
         res = system remaster_call
         # kill VM, necessary in case of abrupt exit
-        system "pkill -f kvm -daemonize .* -redir tcp:2222::22"
+        system "pkill -f \"kvm -daemonize .* -redir tcp:2222::22\""
       else
         res = true
       end
