@@ -135,7 +135,7 @@ class UserProfilesController < ApplicationController
     pid = fork do
       system 'echo "User.find('+uid.to_s+').test_livecd" | nohup script/console production'
     end
-    render :action => 'create_livecd'
+    redirect_to user_user_profile_path(current_user) + "/livecd"
   end
 
 end
