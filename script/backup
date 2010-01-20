@@ -63,6 +63,9 @@ case $mode in
 		if [ ${PIPESTATUS[0]} -eq 0 ]
 		    then
 		    $ssh "mv \$HOME/${USER}/temp_${USER}_${date}_full.1.dar \$HOME/${USER}/backup_${USER}_${date}_full.1.dar"
+		    else
+            /bin/echo -e "Server: "$(hostname)"\n"$(date) | /usr/bin/mail technik@communtu.org -s "Fehler beim Full Backup "$(hostname)
+		    
 		fi
 		;;
 	diff)
@@ -71,6 +74,8 @@ case $mode in
 		if [ ${PIPESTATUS[0]} -eq 0 ]
 		    then
 		    $ssh "mv \$HOME/${USER}/temp_${USER}_${date}_diff.1.dar \$HOME/${USER}/backup_${USER}_${date}_diff.1.dar"
+		    else
+            /bin/echo -e "Server: "$(hostname)"\n"$(date) | /usr/bin/mail technik@communtu.org -s "Fehler beim Diff Backup "$(hostname)
 		fi
 		;;
 esac
