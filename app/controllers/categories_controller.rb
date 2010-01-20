@@ -150,10 +150,10 @@ class CategoriesController < ApplicationController
      e = e + 1
     end
     @translation_des = Translation.find(:all, :conditions => { :translatable_id => @category.description_tid })
-    m = @translation_des.count
+    m = @translation_des.length
     e = 0
     m.times do
-     @translation_des[e].length
+     @translation_des[e].delete
      e = e + 1
     end
     @category.delete
