@@ -63,6 +63,8 @@ class Livecd < ActiveRecord::Base
         remaster_call = "sudo -u communtu #{RAILS_ROOT}/script/remaster create #{virt} #{ver} #{iso} #{self.name} #{self.srcdeb} #{self.installdeb} >> #{RAILS_ROOT}/log/livecd.log 2>&1"
         system "echo \"#{remaster_call}\" >> #{RAILS_ROOT}/log/livecd.log"
         res = system remaster_call
+        # kill VM, necessary in case of abrupt exit
+        system "pkill -f kvm -daemonize .* -redir tcp:2222::22"
       else
         res = true
       end
