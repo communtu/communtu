@@ -23,6 +23,8 @@ de:
   bundle: "Bündel"
   bundle_by_owner: erstellte Bündel
   bundle_editor: "Bündel-Editor"
+  bundles_with_missing_debs: Bündel mit fehlenden deb-Builds
+  bundles_with_missing_packages: Bündel mit fehlenden Paketen
   bundel_information_edit: Bündel Informationen bearbeiten
   bundle_open_new_window: Bündel wird im neuen Fenster geöffnet.
   by_bank_transfer: "per Überweisung"
@@ -150,13 +152,15 @@ de:
   email_without_colon: E-Mail
   english_description: "Englische Beschreibung:"
   english_name: "Englischer Name:"
-  exact: "Exakten Begriff finden:" 
+  exact: "Exakten Begriff finden:"
+  failed_live_cds: Fehlgeschlagene LiveCDs/DVDs
   feedback: Kommentar
   fine_selection: "Feinauswahl"
   first_sync_repos: "Bitte erst die Repositories synchronisieren. Dies geschieht normalerweise automatisch innerhalb von einer Woche. Achtung: an dieser Stelle wird nur geprüft, ob überhaupt etwas synchronisiert wurde, nicht, ob der Prozess fertig ist."
   four_and_fourty_letters: Zwischen 4 und 40 Zeichen
   gpg_key: "GPG Schlüssel (optional): "
   headline: macht Ubuntu-Installationen einfach
+  health_status: Gesundheitsstatus
   hello: Herzlich Willkommen
   helper_distributions_0: free
   helper_distributions_10: " und bearbeiten"
@@ -271,6 +275,7 @@ auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} er
   no1: nein
   no_cookies: Du hast Deine Cookies deaktiviert. Zum Nutzen von Communtu sind diese erforderlich. Wir empfehlen Dir, die Cookies wieder anzuschalten.
   no_save_database: "Die folgenden Pakete konnten nicht in der Datenbank gespeichert werden:"
+  none: Keine
   not_accepted: Die eingegebene E-Mail-Adresse hat ungültige Formate oder ist unvollständig.
   not_logged_in: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
   package_list: zurück zur Paketliste
@@ -291,6 +296,7 @@ auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} er
   questionmark_conny: Klick mich und sag mir, was Dir unklar ist.
   register: Registrieren
   repository_url: "Repository-URL: "
+  repositories_without_packages: Repositories ohne Pakete
   rough_selection: "Grobauswahl"
   save: Speichern
   save_selection: Auswahl speichern

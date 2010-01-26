@@ -385,10 +385,19 @@ class MetapackagesController < ApplicationController
     @metapackage.save
     Deb.find(:all,:conditions => ["metapackage_id = ? and generated = ?",@metapackage.id,false]).each do |d|
       d.generated = true
+
       d.save
     end
     flash[:notice] = t(:controller_metapackages_please_regenerate)
     redirect_to :action => :show, :id => params[:id]
+  end
+
+  def health_status
+    @bundles_with_missing_debs = Metapackage.find(:all,:conditions=>["debs.generated = 0"],:include=>:debs)
+    @bundles_with_missing_packages = []
+    @repositories_without_packages =
+      Repository.all.select{|r| PackageDistr.find_by_repository_id(r.id).nil?}
+    @failed_live_cds = Livecd.find_all_by_failed(true)
   end
 
   private
