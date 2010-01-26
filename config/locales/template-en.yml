@@ -161,6 +161,7 @@ en:
   view_distributions_index_0: Available Ubuntu-versions
   no_admin: You are not an administrator!
   view_metapackages_new_4: Install by default
+  bundles_with_missing_debs: Bundles with failed deb-builds
   model_mailer_0: Welcome to Communtu
   licence: "Licence:"
   model_mailer_1: Query via formular
@@ -277,6 +278,7 @@ en:
       Our anouncements and mailinglists can be found at:
     http://en.communtu.org/home/news
   view_home_derivatives_34: " - replaces the Linux core with OpenSolaris. Provides only a minimal basis to applications. The installation of additional software is left to the user; Communtu can be used for this."
+  health_status: Health status
   view_home_derivatives_35: "There are several other derivatives for which we cannot give any recommendations for installation:"
   helper_distributions_20: non-free and from the community repositories
   category_without_colon: Category
@@ -512,6 +514,7 @@ en:
   controller_users_6: Userdata changed and account made permanent.
   chat_channel: en-communtu
   model_user_meta_tabz_2: Ubuntu packages
+  bundles_with_missing_packages: Bundle with missing packages
   view_users_edit_9: "  With a click on \"save\" this account will be made permanent."
   view_metapackages_show_14: " Actions:&nbsp;&nbsp;"
   controller_metapackages_bundle_not_found: Bundle not found.
@@ -623,6 +626,7 @@ en:
   view_home_mail_1: Please contact me at the following e-mail-address concerning the bugfixing.
   view_categories_index_12: show category-tree
   view_packages_show_2: install package instantly
+  none: None
   view_passwords_edit_0: "    Password:"
   link_community_title: "External link: to the official Ubuntu Forums"
   changed_settings: This step has to be carried out again because you changed the settings.
@@ -788,6 +792,7 @@ en:
   view_debs_index_3: "Create every failed deb <b>Warning: only do this at admin.communtu.de!</b>"
   view_home_home_14: "There is also "
   view_home_home_15: detailled information
+  repositories_without_packages: Repositories without packages
   view_metapackages_rdepends_0: In bundle
   view_debs_index_5: "Create  "
   view_home_home_16: " about this project and its participants in the "
@@ -817,10 +822,11 @@ en:
   description: Description
   view_home_home_25: For questions concerning Communtu we have created a "FAQ".
   controller_categories_2: Category created.
-  view_home_home_26: You installed Ubuntu and now you are looking for programs which run with Ubuntu?
   controller_categories_3: Category updated.
-  view_home_home_27: "Communtu helps you:"
+  view_home_home_26: You installed Ubuntu and now you are looking for programs which run with Ubuntu?
+  failed_live_cds: Failed Live-CDs/DVDs
   view_home_donate_why: The development of Communtu is mainly based on the effort of volunteers but it also costs money (amongst others the server and the rooms). Therefore Communtu depends on donations. Even small amounts of money help.
+  view_home_home_27: "Communtu helps you:"
   donation_purpose: "Purpose: Communtu"
   controller_metapackages_not_changed: This bundle is already created as a metapackage and uploaded.
   view_sent_show_2: "Date:"

@@ -490,6 +490,9 @@ msgstr ""
 #: view_metapackages_new_4
 msgid "Standardmäßig installieren"
 msgstr ""
+#: bundles_with_missing_debs
+msgid "Bündel mit fehlenden deb-Builds"
+msgstr ""
 #: model_mailer_0
 msgid "Herzlich Willkommen bei Communtu"
 msgstr ""
@@ -634,14 +637,17 @@ msgstr ""
 #: view_home_derivatives_22
 msgid " - orient an BeOS, setzt auf Schnelligkeit, Kompatibilität mit alten Rechnern und einfache Bedienung. CPU mit mindestens 200 MHZ 128 MB RAM (zum Betrieb, zur Installation werden 192 MB RAM benötigt); 2 GB freier Festplattenplatz (Empfohlen: 4 GB oder mehr); 16 MB Grafikkarte (Empfohlen: Intel GMA 9xx). "
 msgstr ""
+#: view_users_index_0
+msgid "Alle Benutzer"
+msgstr ""
 #: press_archiv_editorial
 msgid "Hier haben wir eine Auswahl von Artikeln aus der Presse über uns aufgelistet."
 msgstr ""
 #: view_admins_load_packages_0
 msgid "Neue Pakete: "
 msgstr ""
-#: view_users_index_0
-msgid "Alle Benutzer"
+#: view_users_index_1
+msgid "Insgesamt haben wir "
 msgstr ""
 #: prepare_livecd
 msgid "LiveCD/DVD vorbereiten (script/remaster-getisos)"
@@ -649,17 +655,14 @@ msgstr ""
 #: view_home_derivatives_24
 msgid "Derivate, die mit der Derivats-eigenen Installations-CD installiert werden sollten:"
 msgstr ""
-#: view_users_index_1
-msgid "Insgesamt haben wir "
-msgstr ""
 #: view_users_new_1
 msgid "Hier hast du die Möglichkeit dich zu registrieren."
 msgstr ""
-#: view_home_derivatives_25
-msgid "http://wiki.ubuntuusers.de/Xfce"
-msgstr ""
 #: view_users_index_2
 msgid " angemeldete Benutzer."
+msgstr ""
+#: view_home_derivatives_25
+msgid "http://wiki.ubuntuusers.de/Xfce"
 msgstr ""
 #: view_users_new_2
 msgid "Wenn du über die Weiterentwicklung von Communtu informiert werden möchtest, dann gebe bitte deine richtige E-Mail-Adresse an."
@@ -679,6 +682,9 @@ msgstr ""
 #: view_home_derivatives_27
 msgid "http://de.wikipedia.org/wiki/LinuxMCE"
 msgstr ""
+#: view_users_index_5
+msgid "Aktiviert?"
+msgstr ""
 #: view_derivatives_edit_0
 msgid "Derivative bearbeiten"
 msgstr ""
@@ -688,23 +694,20 @@ msgstr ""
 #: view_home_derivatives_28
 msgid " - damit wird Ubuntu zum "
 msgstr ""
-#: view_users_index_5
-msgid "Aktiviert?"
-msgstr ""
 #: view_sent__user_not_exists_0
 msgid "User nicht gefunden"
 msgstr ""
 #: weblinks
 msgid "Weblinks"
 msgstr ""
+#: view_users_index_6
+msgid "Rollen"
+msgstr ""
 #: view_derivatives_edit_1
 msgid "Programm für GUI-basiertes Sudo (z.B. gksudo, kdesudo)"
 msgstr ""
 #: helper_distributions_13
 msgid "löschen"
-msgstr ""
-#: view_users_index_6
-msgid "Rollen"
 msgstr ""
 #: view_users_new_6
 msgid "Passwort bestätigen"
@@ -783,6 +786,9 @@ msgid "\nViele Grüße\n\ndas Communtu-Team\n\n  Weitere Informationen zu den Pr
 msgstr ""
 #: view_home_derivatives_34
 msgid " - ersetzt den Linux-Kern durch OpenSolaris. Stellt nur eine minimale Basis an Anwendungen bereit. Die Installation weiterer Pakete bleibt dem Benutzer überlassen; hierfür kann Communtu genutzt werden."
+msgstr ""
+#: health_status
+msgid "Gesundheitsstatus"
 msgstr ""
 #: view_home_derivatives_35
 msgid "Es gibt noch weitere Derivate zu denen wir bisher noch keine Installationsempfehlung abgeben können:"
@@ -1462,6 +1468,9 @@ msgstr ""
 #: model_user_meta_tabz_2
 msgid "Ubuntu-Pakete"
 msgstr ""
+#: bundles_with_missing_packages
+msgid "Bündel mit fehlenden Paketen"
+msgstr ""
 #: view_users_edit_9
 msgid "  Durch Klicken auf \"Speichern\" wird das Nutzerkonto zugleich dauerhaft gemacht."
 msgstr ""
@@ -1785,6 +1794,9 @@ msgid "Kategorienbaum anzeigen"
 msgstr ""
 #: view_packages_show_2
 msgid "Paket sofort installieren"
+msgstr ""
+#: none
+msgid "Keine"
 msgstr ""
 #: view_passwords_edit_0
 msgid "    Passwort:"
@@ -2272,6 +2284,9 @@ msgstr ""
 #: view_home_home_15
 msgid "genauere Infos"
 msgstr ""
+#: repositories_without_packages
+msgid "Repositories ohne Pakete"
+msgstr ""
 #: view_metapackages_rdepends_0
 msgid "Im Bündel "
 msgstr ""
@@ -2358,6 +2373,9 @@ msgid "Für Fragen zu Communtu haben wir \"Häufig gestellte Fragen\" zusammenge
 msgstr ""
 #: controller_categories_2
 msgid "Kategorie erzeugt."
+msgstr ""
+#: failed_live_cds
+msgid "Fehlgeschlagene LiveCDs/DVDs"
 msgstr ""
 #: view_home_home_26
 msgid "Du hast Ubuntu installiert und suchst nun nach Progammen, die unter Ubuntu laufen?"

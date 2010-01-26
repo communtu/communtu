@@ -490,6 +490,9 @@ msgstr ""
 #: view_metapackages_new_4
 msgid "Install by default"
 msgstr ""
+#: bundles_with_missing_debs
+msgid "Bundles with failed deb-builds"
+msgstr ""
 #: model_mailer_0
 msgid "Welcome to Communtu"
 msgstr ""
@@ -783,6 +786,9 @@ msgid "\nGreetings\n\nthe Communtu-team\n\n  Further information about the proje
 msgstr ""
 #: view_home_derivatives_34
 msgid " - replaces the Linux core with OpenSolaris. Provides only a minimal basis to applications. The installation of additional software is left to the user; Communtu can be used for this."
+msgstr ""
+#: health_status
+msgid "Health status"
 msgstr ""
 #: view_home_derivatives_35
 msgid "There are several other derivatives for which we cannot give any recommendations for installation:"
@@ -1459,6 +1465,9 @@ msgstr ""
 #: model_user_meta_tabz_2
 msgid "Ubuntu packages"
 msgstr ""
+#: bundles_with_missing_packages
+msgid "Bundle with missing packages"
+msgstr ""
 #: view_users_edit_9
 msgid "  With a click on \"save\" this account will be made permanent."
 msgstr ""
@@ -1782,6 +1791,9 @@ msgid "show category-tree"
 msgstr ""
 #: view_packages_show_2
 msgid "install package instantly"
+msgstr ""
+#: none
+msgid "None"
 msgstr ""
 #: view_passwords_edit_0
 msgid "    Password:"
@@ -2269,6 +2281,9 @@ msgstr ""
 #: view_home_home_15
 msgid "detailled information"
 msgstr ""
+#: repositories_without_packages
+msgid "Repositories without packages"
+msgstr ""
 #: view_metapackages_rdepends_0
 msgid "In bundle"
 msgstr ""
@@ -2355,6 +2370,9 @@ msgid "For questions concerning Communtu we have created a \"FAQ\"."
 msgstr ""
 #: controller_categories_2
 msgid "Category created."
+msgstr ""
+#: failed_live_cds
+msgid "Failed Live-CDs/DVDs"
 msgstr ""
 #: view_home_home_26
 msgid "You installed Ubuntu and now you are looking for programs which run with Ubuntu?"
