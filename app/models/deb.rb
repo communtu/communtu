@@ -153,7 +153,7 @@ class Deb < ActiveRecord::Base
     end
     # only install sources, no packages
     codename = Deb.compute_codename(distribution,derivative,license,security)
-    Deb.makedeb(name,version,[],description,codename,derivative,repos,true)
+    Deb.makedeb_lock(name,version,[],description,codename,derivative,repos,true)
   end
 
   # create file 'control'
@@ -192,6 +192,14 @@ class Deb < ActiveRecord::Base
 
   end
 
+  # create a debian package, using lock to prevent concurrent makes
+  def self.makedeb_lock(name,version,package_names,description,codename,derivative,repos,script,archname = "all")
+    safe_system "dotlockfile -r 1000 #{RAILS_ROOT}/debs/lock"
+    Deb.makedeb(name,version,package_names,description,codename,derivative,repos,script,archname)
+    safe_system "dotlockfile -u #{RAILS_ROOT}/debs/lock"
+  end
+
+  # create a debian package
   def self.makedeb(name,version,package_names,description,codename,derivative,repos,script,archname = "all")
     Dir.chdir RAILS_ROOT+'/debs'
     if !File.exists?(name)
