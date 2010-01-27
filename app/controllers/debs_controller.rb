@@ -98,4 +98,14 @@ class DebsController < ApplicationController
     redirect_to(debs_url)
   end
 
+  def bundle
+    @bundle = Metapackage.find(params[:id])
+    @debs = Deb.find_all_by_metapackage_id_and_generated(params[:id],false)
+  end
+
+  def generate_bundle
+    @debs = Deb.find_all_by_metapackage_id_and_generated(params[:id],false)
+    @debs.each {|deb| deb.generate}
+    redirect_to :action => 'bundle', :id => params[:id]
+  end
 end

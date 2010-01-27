@@ -4,6 +4,8 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :architectures
   map.resources :articles
   map.resources :categories, :collection => {:show_tree => :get}
+  map.connect '/debs/bundle/:id', :controller => 'debs', :action => 'bundle'
+  map.connect '/debs/generate_bundle/:id', :controller => 'debs', :action => 'generate_bundle'
   map.resources :debs, :collections => {:generate => :get, :generate_all =>:get}
   map.resources :derivatives
   map.connect '/distributions/migrate/:id', :controller => 'distributions', :action => 'migrate'

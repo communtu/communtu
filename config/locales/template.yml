@@ -158,6 +158,7 @@ de:
   fine_selection: "Feinauswahl"
   first_sync_repos: "Bitte erst die Repositories synchronisieren. Dies geschieht normalerweise automatisch innerhalb von einer Woche. Achtung: an dieser Stelle wird nur geprüft, ob überhaupt etwas synchronisiert wurde, nicht, ob der Prozess fertig ist."
   four_and_fourty_letters: Zwischen 4 und 40 Zeichen
+  generate_all_debs_for_bundle: Alle debs für das Bündel erzeugen
   gpg_key: "GPG Schlüssel (optional): "
   headline: macht Ubuntu-Installationen einfach
   health_status: Gesundheitsstatus
@@ -229,6 +230,7 @@ auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} er
   migrate_bundles: Bündel von Vorgänger übernehmen
   migrate_repository: Repository migieren
   migrate_repositories: Repositories von Vorgänger übernehmen
+  missing_debs_for_bundle: "Fehlende debs für Bündel:"
   model_mailer_0: Herzlich Willkommen bei Communtu
   model_mailer_1: Anfrage per Formular
   model_mailer_2: Dein Benutzerkonto wurde aktiviert.
