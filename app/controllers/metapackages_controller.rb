@@ -1,4 +1,5 @@
 class MetapackagesController < ApplicationController
+  require 'lib/utils.rb'
   before_filter :login_required
   before_filter :is_anonymous, :only => :publish
   before_filter :check_administrator_role, :flash => { :notice => I18n.t(:no_admin) }, :only => :reset
