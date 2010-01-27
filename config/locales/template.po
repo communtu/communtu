@@ -929,6 +929,10 @@ msgstr "edit"
 msgid " - damit wird Ubuntu zum "
 msgstr " - with this, Ubuntu is going to be "
 
+#: generate_all_debs_for_bundle
+msgid "Alle debs für das Bündel erzeugen"
+msgstr "Create all debs for this bundle"
+
 #: view_sent__user_not_exists_0
 msgid "User nicht gefunden"
 msgstr "user not found"
@@ -2910,6 +2914,10 @@ msgstr "message successfully send"
 #: model_package_0
 msgid "Freie Software"
 msgstr "Free software"
+
+#: missing_debs_for_bundle
+msgid "Fehlende debs für Bündel:"
+msgstr "Missing debs for bundle:"
 
 #: view_user_profiles__sources_1
 msgid "Hier werden die zu installierenden Programme und Pakete nach den zugehörigen Quellen sortiert aufgelistet, so dass du auch sehen kannst, weshalb die jeweiligen Quellen hinzugefügt werden."

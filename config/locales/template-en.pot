@@ -691,6 +691,9 @@ msgstr ""
 #: view_home_derivatives_28
 msgid " - with this, Ubuntu is going to be "
 msgstr ""
+#: generate_all_debs_for_bundle
+msgid "Create all debs for this bundle"
+msgstr ""
 #: view_users_index_5
 msgid "Activated?"
 msgstr ""
@@ -2137,6 +2140,9 @@ msgstr ""
 #: model_package_0
 msgid "Free software"
 msgstr ""
+#: missing_debs_for_bundle
+msgid "Missing debs for bundle:"
+msgstr ""
 #: view_user_profiles__sources_1
 msgid "The soon be installed programs and packages are shown and ordered by the appropriate sources so you can see why some sources will be added."
 msgstr ""
@@ -2359,11 +2365,11 @@ msgstr ""
 #: statistics
 msgid "View statistics"
 msgstr ""
-#: view_layouts_application_11
-msgid "Guestsession"
-msgstr ""
 #: description
 msgid "Description"
+msgstr ""
+#: view_layouts_application_11
+msgid "Guestsession"
 msgstr ""
 #: view_home_home_25
 msgid "For questions concerning Communtu we have created a \"FAQ\"."
