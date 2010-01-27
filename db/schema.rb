@@ -294,8 +294,6 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
   end
 
   create_table "translations", :force => true do |t|
-    t.integer  "language_id"
-    t.string   "tag"
     t.text     "contents"
     t.datetime "created_at"
     t.datetime "updated_at"
