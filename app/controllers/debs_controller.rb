@@ -88,13 +88,21 @@ class DebsController < ApplicationController
   
   def generate
     @deb = Deb.find(params[:id])
-    @deb.generate
+    # this may take very long, hence fork
+    flash[:notice] =  t(:deb_generation_in_background)
+    fork do
+      @deb.generate
+    end
     redirect_to(debs_url)
   end
 
   def generate_all
     @debs = Deb.find_all_by_generated(false)
-    @debs.each {|deb| deb.generate}
+    # this may take very long, hence fork
+    flash[:notice] =  t(:deb_generation_in_background)
+    fork do
+      @debs.each {|deb| deb.generate}
+    end
     redirect_to(debs_url)
   end
 
@@ -105,7 +113,11 @@ class DebsController < ApplicationController
 
   def generate_bundle
     @debs = Deb.find_all_by_metapackage_id_and_generated(params[:id],false)
-    @debs.each {|deb| deb.generate}
+    # this may take very long, hence fork
+    flash[:notice] =  t(:deb_generation_in_background)
+    fork do
+      @debs.each {|deb| deb.generate}
+    end
     redirect_to :action => 'bundle', :id => params[:id]
   end
 end

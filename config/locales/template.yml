@@ -132,6 +132,7 @@ de:
   controller_users_9: Es gab ein Problem mit der Deaktivierung dieses Benutzers.
   create: Anlegen
   creation_error: Bei der Erstellung des Pakets ist ein Fehler aufgetreten.
+  deb_generation_in_background: Debs werden im Hintergrund erzeugt (ggf. Browser-Ansicht aktualisieren)
   debian_section: "Debian-Section:"
   delete: "Löschen"
   description: "Beschreibung"
