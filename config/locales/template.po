@@ -519,6 +519,10 @@ msgstr "Add repositories and keys for the user"
 msgid "Das Deaktivieren führt nicht zum Deinstallieren von Paketen noch werden dadurch die Updates für die installierten Pakete unterbrochen. Diese werden aus anderen Softwarequellen, die ggf. von Communtu installiert wurden, bedient."
 msgstr "The deactivation does not involve unstalling packages nor will updates be held back for installed software. Updates are still obtained from the official sources and those, which Communtu might have added. "
 
+#: deb_generation_in_background
+msgid "Debs werden im Hintergrund erzeugt (ggf. Browser-Ansicht aktualisieren)"
+msgstr "Debs are being created in the background (refresh the webpage if necessary)"
+
 #: view_home_faq_all_02
 msgid "Die einzelnen Pakete werden dadurch nicht deinstalliert sondern lassen sich wie gewohnt über Synaptic oder KPackageKit auswählen und deinstallieren."
 msgstr "Packages are not being uninstalled and can be removed as normale via Synaptic or KPackageKit."

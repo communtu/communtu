@@ -126,6 +126,7 @@ en:
   add_sources: Add sources
   controller_suggestion_2: Add repositories and keys for the user
   view_home_faq_all_01: "The deactivation does not involve unstalling packages nor will updates be held back for installed software. Updates are still obtained from the official sources and those, which Communtu might have added. "
+  deb_generation_in_background: Debs are being created in the background (refresh the webpage if necessary)
   view_home_faq_all_02: Packages are not being uninstalled and can be removed as normale via Synaptic or KPackageKit.
   controller_suggestion_4: Add repositories and keys for the bundle
   controller_suggestion_6: Add repositories and keys for the package
@@ -822,8 +823,8 @@ en:
   statistics: View statistics
   controller_categories_2: Category created.
   view_home_home_25: For questions concerning Communtu we have created a "FAQ".
-  view_layouts_application_11: Guestsession
   description: Description
+  view_layouts_application_11: Guestsession
   controller_categories_3: Category updated.
   view_home_home_26: You installed Ubuntu and now you are looking for programs which run with Ubuntu?
   failed_live_cds: Failed Live-CDs/DVDs

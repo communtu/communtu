@@ -391,6 +391,9 @@ msgstr ""
 #: view_home_faq_all_01
 msgid "The deactivation does not involve unstalling packages nor will updates be held back for installed software. Updates are still obtained from the official sources and those, which Communtu might have added. "
 msgstr ""
+#: deb_generation_in_background
+msgid "Debs are being created in the background (refresh the webpage if necessary)"
+msgstr ""
 #: view_home_faq_all_02
 msgid "Packages are not being uninstalled and can be removed as normale via Synaptic or KPackageKit."
 msgstr ""
@@ -2365,11 +2368,11 @@ msgstr ""
 #: statistics
 msgid "View statistics"
 msgstr ""
-#: description
-msgid "Description"
-msgstr ""
 #: view_layouts_application_11
 msgid "Guestsession"
+msgstr ""
+#: description
+msgid "Description"
 msgstr ""
 #: view_home_home_25
 msgid "For questions concerning Communtu we have created a \"FAQ\"."

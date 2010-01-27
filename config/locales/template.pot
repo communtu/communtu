@@ -391,6 +391,9 @@ msgstr ""
 #: view_home_faq_all_01
 msgid "Das Deaktivieren führt nicht zum Deinstallieren von Paketen noch werden dadurch die Updates für die installierten Pakete unterbrochen. Diese werden aus anderen Softwarequellen, die ggf. von Communtu installiert wurden, bedient."
 msgstr ""
+#: deb_generation_in_background
+msgid "Debs werden im Hintergrund erzeugt (ggf. Browser-Ansicht aktualisieren)"
+msgstr ""
 #: view_home_faq_all_02
 msgid "Die einzelnen Pakete werden dadurch nicht deinstalliert sondern lassen sich wie gewohnt über Synaptic oder KPackageKit auswählen und deinstallieren."
 msgstr ""
