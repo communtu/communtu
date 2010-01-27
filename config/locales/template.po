@@ -132,8 +132,8 @@ msgid "uns"
 msgstr "us"
 
 #: view_layouts_application_30
-msgid "Hilfe"
-msgstr "Help"
+msgid "Hilfe/FAQ"
+msgstr "Help/FAQ"
 
 #: view_categories_edit_0
 msgid "Kategorie bearbeiten"

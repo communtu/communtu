@@ -101,7 +101,7 @@ msgstr ""
 msgid "us"
 msgstr ""
 #: view_layouts_application_30
-msgid "Help"
+msgid "Help/FAQ"
 msgstr ""
 #: view_categories_edit_0
 msgid "Edit category"
