@@ -195,8 +195,9 @@ class Deb < ActiveRecord::Base
   # create a debian package, using lock to prevent concurrent makes
   def self.makedeb_lock(name,version,package_names,description,codename,derivative,repos,script,archname = "all")
     safe_system "dotlockfile -r 1000 #{RAILS_ROOT}/debs/lock"
-    Deb.makedeb(name,version,package_names,description,codename,derivative,repos,script,archname)
+    d = Deb.makedeb(name,version,package_names,description,codename,derivative,repos,script,archname)
     safe_system "dotlockfile -u #{RAILS_ROOT}/debs/lock"
+    return d
   end
 
   # create a debian package
