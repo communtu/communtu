@@ -32,6 +32,7 @@ de:
   cant_debianized: "Bitte gib dem Bündel einen englischen Titel und eine englische Beschreibung."
   category_with_colon: "Kategorie:"
   category_without_colon: Kategorie
+  cd_failed: "Fehlgeschlagen - wir kümmern uns"
   changed_settings: "Dieser Schritt muss neu ausgeführt werden, weil du die Einstellungen geändert hast."
   change: ändern
   change_passwd: "Passwort ändern"

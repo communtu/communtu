@@ -23,7 +23,7 @@
     <% else %>
       <td><%= cd.fullname %></td>
       <td></td>
-      <td><%=t(:being_created)%></td>
+      <td><%=if cd.failed then t(:cd_failed) else t(:being_created) end%></td>
     <% end %>
     </tr>
   <% end %>
