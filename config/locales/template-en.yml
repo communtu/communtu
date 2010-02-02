@@ -17,6 +17,7 @@ en:
   controller_accounts_2: Could'nt find the activation code. Please try to create a new account.
   view_home_beteiligung_12: Programming
   view_distributions_show_8: Before a distribution can be deleted, every user must be logged out! Are you sure?
+  cd_failed: Failed - we will solve the problem
   view_layouts_application_28: Navigation Communtu
   view_roles_index_0: roles for
   view_home_beteiligung_13: Since we have many ideas for the platform's further development, we need programmers. Ideally you already have some experience with Ruby on Rails.

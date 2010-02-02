@@ -64,6 +64,9 @@ msgstr ""
 #: view_distributions_show_8
 msgid "Vor dem Löschen einer Distribution müssen alle Benutzer, die sie nutzen, ausgeloggt sein! Bist du sicher?"
 msgstr ""
+#: cd_failed
+msgid "Fehlgeschlagen - wir kümmern uns darum"
+msgstr ""
 #: view_layouts_application_28
 msgid "Navigation Communtu"
 msgstr ""

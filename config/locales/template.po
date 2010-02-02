@@ -83,6 +83,10 @@ msgstr "Programming"
 msgid "Vor dem Löschen einer Distribution müssen alle Benutzer, die sie nutzen, ausgeloggt sein! Bist du sicher?"
 msgstr "Before a distribution can be deleted, every user must be logged out! Are you sure?"
 
+#: cd_failed
+msgid "Fehlgeschlagen - wir kümmern uns darum"
+msgstr "Failed - we will solve the problem"
+
 #: view_layouts_application_28
 msgid "Navigation Communtu"
 msgstr "Navigation Communtu"

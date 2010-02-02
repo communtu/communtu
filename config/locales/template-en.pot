@@ -64,6 +64,9 @@ msgstr ""
 #: view_distributions_show_8
 msgid "Before a distribution can be deleted, every user must be logged out! Are you sure?"
 msgstr ""
+#: cd_failed
+msgid "Failed - we will solve the problem"
+msgstr ""
 #: view_layouts_application_28
 msgid "Navigation Communtu"
 msgstr ""
