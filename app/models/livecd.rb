@@ -56,11 +56,11 @@ class Livecd < ActiveRecord::Base
       if Dir.glob(iso)[0].nil? then
         # Karmic and higher need virtualisation due to requirement of sqaushfs version >= 4
         if self.distribution_id >= 5 then
-          virt = "-v"
+          virt = "-v "
         else
           virt = ""
         end
-        remaster_call = "sudo -u communtu #{RAILS_ROOT}/script/remaster create #{virt} #{ver} #{iso} #{self.name} #{self.srcdeb} #{self.installdeb} >> #{RAILS_ROOT}/log/livecd.log 2>&1"
+        remaster_call = "sudo -u communtu #{RAILS_ROOT}/script/remaster create #{virt}#{ver} #{iso} #{self.name} #{self.srcdeb} #{self.installdeb} >> #{RAILS_ROOT}/log/livecd.log 2>&1"
         system "echo \"#{remaster_call}\" >> #{RAILS_ROOT}/log/livecd.log"
         res = system remaster_call
         # kill VM, necessary in case of abrupt exit
