@@ -1,0 +1,699 @@
+Package: acroread-fonts
+Version: 9.1-0medibuntu1
+Architecture: all
+Maintainer: Medibuntu Packaging Team <medibuntu-maintainers@lists.launchpad.net>
+Installed-Size: 57316
+Depends: acroread (>= 9.1)
+Homepage: http://www.adobe.com/products/acrobat/acrrasianfontpack.html
+Priority: extra
+Section: non-free/text
+Filename: pool/non-free/a/acroread-fonts/acroread-fonts_9.1-0medibuntu1_all.deb
+Size: 41346464
+SHA256: 992fe914628c13093cacdc48f5bc714cd019d2fe97d0df8ca9a6bf95e9c5db96
+SHA1: d1a52738482cb79bc0f44de20f8a682ce7557460
+MD5sum: 107cd0053b16156e00bce952de9e1b96
+Description: Fonts for Acrobat reader - Medibuntu package
+ These fonts are needed by Acroread to correctly display a document when an
+ author does not embed the appropriate font in to the document. They are also
+ needed when the author does embed the font, but the reader of the document
+ wishes to interact in some way with its content – e.g. collaborating,
+ commenting or filling out forms.
+ .
+ The following fonts are provided:
+  - simplified chinese
+  - traditional chinese
+  - japanese
+  - korean
+  - extended fonts
+
+Package: alsa-firmware
+Version: 1.0.17-0medibuntu2.9.10.1
+Architecture: amd64
+Maintainer: Medibuntu Packaging Team <medibuntu-maintainers@lists.launchpad.net>
+Installed-Size: 7984
+Depends: alsa-firmware-loaders (>= 1.0.13-1ubuntu1)
+Recommends: alsa-tools
+Homepage: http://www.alsa-project.org/
+Priority: optional
+Section: non-free/sound
+Filename: pool/non-free/a/alsa-firmware/alsa-firmware_1.0.17-0medibuntu2.9.10.1_amd64.deb
+Size: 3309630
+SHA256: 0f857262dd4ff68bfd7301d05fb4b44080b603399b1a4d314f905d38935000fc
+SHA1: 55d58c880d6f17f2a06fe11a97cb6ee10116f6c5
+MD5sum: 4eb3f7f1eae18bbc27bd72eaff82ec63
+Description: Contains firmware for ALSA devices - Medibuntu package
+ A collection of firmwares for some sound cards:
+ aica - Sega Dreamcast AICA
+ echoaudio - Digigram Echo Audio based cards
+ emu - E-Mu based cards
+ hdsploader - RME Hammerfall DSP cards
+ maestro3 - ESS Maestro3 PCI cards
+ mixartloader - Digigram miXart cards
+ pcxhrloader - Digigram pcxhr compatible cards
+ sb16 - Sound Blaster 16 cards
+ usx2yloader - Tascam USX2Y USB cards
+ vxloader - Digigram VX cards
+ wavefront - Turtle Beach Wavefront cards
+ ymfpci - Yamaha DS-1 PCI cards
+ .
+ Therefore, it is in Medibuntu as they are non free.
+ .
+ This package isn't supported by Ubuntu: DON'T REPORT BUGS TO UBUNTU!
+ .
+ Please report any bug to our bug tracker instead:
+  https://bugs.launchpad.net/medibuntu/+bugs
+Original-Maintainer: Toby Smithe <tsmithe@ubuntu.com>
+
+Package: amrnb
+Version: 7.0.0.2-0.1medibuntu1
+Architecture: amd64
+Maintainer: Medibuntu Packaging Team <admin@lists.medibuntu.org>
+Installed-Size: 164
+Depends: libamrnb3, libc6 (>= 2.7)
+Homepage: http://www.penguin.cz/~utx/amr
+Priority: extra
+Section: non-free/sound
+Filename: pool/non-free/a/amrnb/amrnb_7.0.0.2-0.1medibuntu1_amd64.deb
+Size: 15736
+SHA256: 17955c23a5e22aff5396298cd98d79f4193aae830dc4b600d21625e6a6845b90
+SHA1: cfa921791dac9dd81b233706d5b9aa1b29999e40
+MD5sum: 759af454f7ce62c559c4d324408951bd
+Description: floating-point Adaptive Multi-Rate (AMR) speech codec - Medibuntu package
+ This floating-point codec is mainly targeted to be used in multimedia
+ applications such as the 3G-324M terminal specified in 3GPP TS 26.110, or
+ in packet-based (e.g., H.323) applications.
+ .
+ This package contains decoder and encoder.
+ .
+ This package isn't supported by Ubuntu: DON'T REPORT BUGS TO UBUNTU!
+ .
+ Please report any bug to our bug tracker instead:
+  https://bugs.launchpad.net/medibuntu/+bugs
+Original-Maintainer: Christian Marillat <marillat@debian.org>
+
+Package: amrwb
+Version: 7.0.0.3-0.0medibuntu1
+Architecture: amd64
+Maintainer: Medibuntu Packaging Team <admin@lists.medibuntu.org>
+Installed-Size: 104
+Depends: libamrwb3, libc6 (>= 2.7)
+Homepage: http://www.penguin.cz/~utx/amr
+Priority: extra
+Section: non-free/sound
+Filename: pool/non-free/a/amrwb/amrwb_7.0.0.3-0.0medibuntu1_amd64.deb
+Size: 12024
+SHA256: 09601ce00f54b9316dd6e2d72b1db790ec84fd05f3e77b2b636cbd49a4dfc894
+SHA1: 0275c404bb4e16c4d07c3c63495b180f0eeaa534
+MD5sum: 261ce74aebb94c0c5af3a29174a6f2b5
+Description: Adaptive Multi-Rate - Wideband (AMR-WB) speech codec - Medibuntu package
+ This floating-point codec is mainly targeted to be used in multimedia
+ applications such as the 3G-324M terminal specified in 3GPP TS 26.110, or
+ in packet-based (e.g., H.323) applications.
+ .
+ This package contains library files.
+ .
+ This package isn't supported by Ubuntu: DON'T REPORT BUGS TO UBUNTU!
+ .
+ Please report any bug to our bug tracker instead:
+  https://bugs.launchpad.net/medibuntu/+bugs
+Original-Maintainer: Christian Marillat <marillat@debian.org>
+
+Package: gizmo5
+Version: 3.1.0.79-0medibuntu2
+Architecture: amd64
+Maintainer: Medibuntu Packaging Team <admin@lists.medibuntu.org>
+Installed-Size: 20556
+Depends: ia32-libs (>= 1.6), lib32asound2 (>> 1.0.17), lib32gcc1 (>= 1:4.1.1), lib32stdc++6 (>= 4.1.1), lib32z1 (>= 1:1.1.4), libc6-i386 (>= 2.3.2), lib32nss-mdns
+Homepage: http://gizmo5.com/
+Priority: optional
+Section: non-free/net
+Filename: pool/non-free/g/gizmo5/gizmo5_3.1.0.79-0medibuntu2_amd64.deb
+Size: 9778554
+SHA256: 1a420c17e71fab210ea3a6deeaf56878dbcd5629f1b3d99fce2254aa20783934
+SHA1: f0fd8be2501c20027ac3ca18a34eb717a64da4ac
+MD5sum: b29b7782ac361e052e2eaa16f4bd8806
+Description: A VoIP software
+ Gizmo5 (formerly known as Gizmo Project) is an internet telephone.
+ As simple as an instant messenger. Now you're talking.
+ .
+ Make all your calls from the confort of your desktop.
+ With Gizmo, it's point, click, talk. For free.
+ .
+ Say goodbye to high price calling, and say "hello" to
+ anyone online, anywhere on earth.
+
+Package: googleearth
+Version: 5.1.3509.4636-0medibuntu1
+Architecture: amd64
+Maintainer: Medibuntu Packaging Team <medibuntu-maintainers@lists.launchpad.net>
+Installed-Size: 51668
+Pre-Depends: debconf (>= 1.4.69) | cdebconf (>= 0.39)
+Depends: ia32-libs (>= 2.4), lib32gcc1 (>= 1:4.1.1), lib32stdc++6 (>= 4.2.1), lib32z1 (>= 1:1.1.4), libc6-i386 (>= 2.4), debconf (>= 0.5) | debconf-2.0, lib32nss-mdns, ttf-dejavu | ttf-liberation | msttcorefonts, googleearth-data (= 5.1.3509.4636-0medibuntu1)
+Conflicts: googleearth-4.2, googleearth-4.2-data, googleearth-4.3, googleearth-4.3-data
+Replaces: googleearth-4.2-data, googleearth-4.3-data, googleearth-data (<= 5.0.11337.1968-0medibuntu8)
+Homepage: http://earth.google.com/
+Priority: extra
+Section: non-free/net
+Filename: pool/non-free/g/googleearth/googleearth_5.1.3509.4636-0medibuntu1_amd64.deb
+Size: 17077816
+SHA256: cb0f00a3cb7dca0595428a2e62bc52949d87cc990a0bbcb56d206e6607667848
+SHA1: fc91947e2f40dbdf99330b2a3d4fd950dd4d8029
+MD5sum: 12da49413ce1bfa5a0c81dffb8b01697
+Description: Google Earth - binary files
+ Google Earth lets you fly anywhere on Earth to view satellite imagery, maps,
+ terrain, 3D buildings, from galaxies in outer space to the canyons of the
+ ocean. You can explore rich geographical content, save your toured places,
+ and share with others.
+ .
+ This package contains binary files for Google Earth.
+ .
+ NOTE: You must accept Google Earth!'s EULA prior to successfully installing
+ this package.
+ .
+ This package isn't supported by Ubuntu: DON'T REPORT BUGS TO UBUNTU!
+ .
+ Please report any bug to Medibuntu's bug tracker instead:
+  https://bugs.launchpad.net/medibuntu/+bugs
+
+Package: googleearth-data
+Source: googleearth
+Version: 5.1.3509.4636-0medibuntu1
+Architecture: all
+Maintainer: Medibuntu Packaging Team <medibuntu-maintainers@lists.launchpad.net>
+Installed-Size: 15136
+Recommends: googleearth (= 5.1.3509.4636-0medibuntu1)
+Conflicts: googleearth-4.2-data, googleearth-4.3-data
+Homepage: http://earth.google.com/
+Priority: extra
+Section: non-free/net
+Filename: pool/non-free/g/googleearth/googleearth-data_5.1.3509.4636-0medibuntu1_all.deb
+Size: 4744822
+SHA256: 68fa5b926318112c4c5af636d5688675e197065e918e73259cc72cc99d6da376
+SHA1: fec254fdedd80bcbdb2ce8f4cf8e23ec8e373563
+MD5sum: 839c26ca1ee5777a5cb7dc82761d3ce8
+Description: Google Earth - data files
+ Google Earth lets you fly anywhere on Earth to view satellite imagery, maps,
+ terrain, 3D buildings, from galaxies in outer space to the canyons of the
+ ocean. You can explore rich geographical content, save your toured places,
+ and share with others.
+ .
+ This package contains data files for Google Earth.
+ .
+ NOTE: You must accept Google Earth!'s EULA prior to successfully installing
+ this package.
+ .
+ This package isn't supported by Ubuntu: DON'T REPORT BUGS TO UBUNTU!
+ .
+ Please report any bug to Medibuntu's bug tracker instead:
+  https://bugs.launchpad.net/medibuntu/+bugs
+
+Package: libamrnb-dev
+Source: amrnb
+Version: 7.0.0.2-0.1medibuntu1
+Architecture: amd64
+Maintainer: Medibuntu Packaging Team <admin@lists.medibuntu.org>
+Installed-Size: 744
+Depends: libamrnb3 (>= 7.0.0.2-0.1medibuntu1)
+Homepage: http://www.penguin.cz/~utx/amr
+Priority: extra
+Section: non-free/libdevel
+Filename: pool/non-free/a/amrnb/libamrnb-dev_7.0.0.2-0.1medibuntu1_amd64.deb
+Size: 242846
+SHA256: 34c0597e81900675b843971dd196b1a5324a5b3f13eaeca574874d5befbf39c7
+SHA1: 6e0de2958905b296c1d1d5e0ef5dae186fc3bbaf
+MD5sum: 6bc5d0ea4f5e65f44dc6d1cbdf115093
+Description: floating-point Adaptive Multi-Rate (AMR) speech codec - Medibuntu package
+ This floating-point codec is mainly targeted to be used in multimedia
+ applications such as the 3G-324M terminal specified in 3GPP TS 26.110, or
+ in packet-based (e.g., H.323) applications.
+ .
+ This package contains development files.
+ .
+ This package isn't supported by Ubuntu: DON'T REPORT BUGS TO UBUNTU!
+ .
+ Please report any bug to our bug tracker instead:
+  https://bugs.launchpad.net/medibuntu/+bugs
+Original-Maintainer: Christian Marillat <marillat@debian.org>
+
+Package: libamrnb3
+Source: amrnb
+Version: 7.0.0.2-0.1medibuntu1
+Architecture: amd64
+Maintainer: Medibuntu Packaging Team <admin@lists.medibuntu.org>
+Installed-Size: 324
+Depends: libc6 (>= 2.3.4)
+Homepage: http://www.penguin.cz/~utx/amr
+Priority: extra
+Section: non-free/libs
+Filename: pool/non-free/a/amrnb/libamrnb3_7.0.0.2-0.1medibuntu1_amd64.deb
+Size: 140750
+SHA256: 209c9ce3ef5fe1a4f354ad121fdce76237c0525ee7219e7d318adc7d73dafc57
+SHA1: f0d5ff8e8a2cf2464d6f698fb3d0c06771975894
+MD5sum: cc1e83e619a7dd7b29c9859db5cb5caa
+Description: floating-point Adaptive Multi-Rate (AMR) speech codec - Medibuntu package
+ This floating-point codec is mainly targeted to be used in multimedia
+ applications such as the 3G-324M terminal specified in 3GPP TS 26.110, or
+ in packet-based (e.g., H.323) applications.
+ .
+ This package contains library files.
+ .
+ This package isn't supported by Ubuntu: DON'T REPORT BUGS TO UBUNTU!
+ .
+ Please report any bug to our bug tracker instead:
+  https://bugs.launchpad.net/medibuntu/+bugs
+Original-Maintainer: Christian Marillat <marillat@debian.org>
+
+Package: libamrwb-dev
+Source: amrwb
+Version: 7.0.0.3-0.0medibuntu1
+Architecture: amd64
+Maintainer: Medibuntu Packaging Team <admin@lists.medibuntu.org>
+Installed-Size: 384
+Depends: libamrwb3 (>= 7.0.0.3-0.0medibuntu1)
+Homepage: http://www.penguin.cz/~utx/amr
+Priority: extra
+Section: non-free/libdevel
+Filename: pool/non-free/a/amrwb/libamrwb-dev_7.0.0.3-0.0medibuntu1_amd64.deb
+Size: 132574
+SHA256: 3347d90628125794af12ac0079997f47b416e6ff566430be74906d6b036525cf
+SHA1: 63e60a16ee03de91ae5227e1156607bd13fe7cf3
+MD5sum: 242e4143e16a4cd04a3e0652d9f52b53
+Description: Adaptive Multi-Rate - Wideband (AMR-WB) speech codec - Medibuntu package
+ This floating-point codec is mainly targeted to be used in multimedia
+ applications such as the 3G-324M terminal specified in 3GPP TS 26.110, or
+ in packet-based (e.g., H.323) applications.
+ .
+ This package contains development files.
+ .
+ This package isn't supported by Ubuntu: DON'T REPORT BUGS TO UBUNTU!
+ .
+ Please report any bug to our bug tracker instead:
+  https://bugs.launchpad.net/medibuntu/+bugs
+Original-Maintainer: Christian Marillat <marillat@debian.org>
+
+Package: libamrwb3
+Source: amrwb
+Version: 7.0.0.3-0.0medibuntu1
+Architecture: amd64
+Maintainer: Medibuntu Packaging Team <admin@lists.medibuntu.org>
+Installed-Size: 256
+Depends: libc6 (>= 2.4)
+Homepage: http://www.penguin.cz/~utx/amr
+Priority: extra
+Section: non-free/libs
+Filename: pool/non-free/a/amrwb/libamrwb3_7.0.0.3-0.0medibuntu1_amd64.deb
+Size: 118546
+SHA256: 93b77f5f745a8352aca32a4dba56bf12da9beb0c959b5f4a303c70847a765c0e
+SHA1: 0287011a28d5d1371c99708d477a3e487733edf0
+MD5sum: fcc4c712752d982c9675dae57e5e81f2
+Description: Adaptive Multi-Rate - Wideband (AMR-WB) speech codec - Medibuntu package
+ This floating-point codec is mainly targeted to be used in multimedia
+ applications such as the 3G-324M terminal specified in 3GPP TS 26.110, or
+ in packet-based (e.g., H.323) applications.
+ .
+ This package contains decoder and encoder.
+ .
+ This package isn't supported by Ubuntu: DON'T REPORT BUGS TO UBUNTU!
+ .
+ Please report any bug to our bug tracker instead:
+  https://bugs.launchpad.net/medibuntu/+bugs
+Original-Maintainer: Christian Marillat <marillat@debian.org>
+
+Package: libavcodec-extra-52
+Source: ffmpeg-extra
+Version: 4:0.5+svn20090706-2ubuntu3+medibuntu1
+Architecture: amd64
+Maintainer: Medibuntu Packaging Team <medibuntu-maintainers@lists.launchpad.net>
+Installed-Size: 5520
+Depends: libamrnb3, libamrwb3, libavutil-extra-49 (>= 4:0.5+svn20090706), libavutil-extra-49 (<< 4:0.5+svn20090706-99), libc6 (>= 2.7), libdirac0c2a, libfaac0 (>= 1.26), libfaad0 (>= 2.6.1), libgsm1 (>= 1.0.13), libmp3lame0, libopenjpeg2, libschroedinger-1.0-0 (>= 1.0.0), libspeex1 (>= 1.2~beta3-1), libtheora0 (>= 0.0.0.alpha7.dfsg-1.1), libvorbis0a (>= 1.1.2), libvorbisenc2 (>= 1.1.2), libx264-67 (>= 1:0.svn20090502), libxvidcore4 (>= 1:1.0.0-0.0), zlib1g (>= 1:1.1.4)
+Recommends: apport-hooks-medibuntu
+Conflicts: libavcodec-unstripped-52 (<< 4:0.5+svn20090706-2ubuntu3+medibuntu1), libavcodec52
+Replaces: libavcodec-unstripped-52 (<< 4:0.5+svn20090706-2ubuntu3+medibuntu1), libavcodec52
+Homepage: http://ffmpeg.org/
+Priority: optional
+Section: non-free/libs
+Filename: pool/non-free/f/ffmpeg-extra/libavcodec-extra-52_0.5+svn20090706-2ubuntu3+medibuntu1_amd64.deb
+Size: 2206046
+SHA256: e8d0511bbabd78d9583e1d599f1b698191dd9770cf3c83c8497e5c8b08264e59
+SHA1: d3ce74222ba300945b52572bdfb8c7485a1a7340
+MD5sum: f48301182d14dc886894b265ba93cfc0
+Description: ffmpeg codec library
+ This is the codec library from the ffmpeg project. It supports most existing
+ encoding formats (MPEG, DivX, MPEG4, AC3, DV...).
+ .
+ This package contains a unrestricted version of the libavcodec shared
+ object that should only be used by Debian packages.
+Original-Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+
+Package: libavcodec-unstripped-52
+Source: ffmpeg-extra
+Version: 4:0.5+svn20090706-2ubuntu3+medibuntu1
+Architecture: amd64
+Maintainer: Medibuntu Packaging Team <medibuntu-maintainers@lists.launchpad.net>
+Installed-Size: 80
+Depends: libavcodec-extra-52 (= 4:0.5+svn20090706-2ubuntu3+medibuntu1)
+Homepage: http://ffmpeg.org/
+Priority: optional
+Section: non-free/libs
+Filename: pool/non-free/f/ffmpeg-extra/libavcodec-unstripped-52_0.5+svn20090706-2ubuntu3+medibuntu1_amd64.deb
+Size: 39532
+SHA256: d802287aaf9fb43e66e3a80c211169e01bc839b6dbbfc36ea6919bd47475761b
+SHA1: f05c746cfa00a42e45a7e667bb36a058b49e9314
+MD5sum: 5ca02f7d80ab0e8daa1c4a42aabe4096
+Description: ffmpeg utility library - transitional package
+ This package can be safely removed if no other packages depend on this
+Original-Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+
+Package: libavdevice-extra-52
+Source: ffmpeg-extra
+Version: 4:0.5+svn20090706-2ubuntu3+medibuntu1
+Architecture: amd64
+Maintainer: Medibuntu Packaging Team <medibuntu-maintainers@lists.launchpad.net>
+Installed-Size: 140
+Depends: libasound2 (>> 1.0.18), libavcodec-extra-52 (>= 4:0.5+svn20090706), libavcodec-extra-52 (<< 4:0.5+svn20090706-99), libavformat-extra-52 (>= 4:0.5+svn20090706), libavformat-extra-52 (<< 4:0.5+svn20090706-99), libavutil-extra-49 (>= 4:0.5+svn20090706), libavutil-extra-49 (<< 4:0.5+svn20090706-99), libc6 (>= 2.7), libdc1394-22, libx11-6, libxext6
+Recommends: apport-hooks-medibuntu
+Conflicts: libavdevice-unstripped-52 (<< 4:0.5+svn20090706-2ubuntu3+medibuntu1), libavdevice52
+Replaces: libavdevice-unstripped-52 (<< 4:0.5+svn20090706-2ubuntu3+medibuntu1), libavdevice52
+Homepage: http://ffmpeg.org/
+Priority: optional
+Section: non-free/libs
+Filename: pool/non-free/f/ffmpeg-extra/libavdevice-extra-52_0.5+svn20090706-2ubuntu3+medibuntu1_amd64.deb
+Size: 57400
+SHA256: e5aa096f3a13569ca28d7228128d579320f905ca1afd9994ece72dcbdaf5663e
+SHA1: b1bb22e28f2b6622f047472e6c69ea8d9af22a2a
+MD5sum: aef2a8c3d927a633407392aef5b5d5fb
+Description: ffmpeg device handling library
+ This is the device handling library from the ffmpeg project.
+ .
+ This package contains a unrestricted version of the libavdevice shared
+ object that should only be used by Debian packages.
+Original-Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+
+Package: libavdevice-unstripped-52
+Source: ffmpeg-extra
+Version: 4:0.5+svn20090706-2ubuntu3+medibuntu1
+Architecture: amd64
+Maintainer: Medibuntu Packaging Team <medibuntu-maintainers@lists.launchpad.net>
+Installed-Size: 80
+Depends: libavdevice-extra-52 (= 4:0.5+svn20090706-2ubuntu3+medibuntu1)
+Homepage: http://ffmpeg.org/
+Priority: optional
+Section: non-free/libs
+Filename: pool/non-free/f/ffmpeg-extra/libavdevice-unstripped-52_0.5+svn20090706-2ubuntu3+medibuntu1_amd64.deb
+Size: 39542
+SHA256: 7a58482a8b4a4c0e2d82e12a4df734e676a4592f3f2b2ed6b25e4358187a2f20
+SHA1: f3d71cf7d2148a22a9ce1c7fec9bc0a37d4210c7
+MD5sum: d925afa88be53597184e28dd59c6eb1b
+Description: ffmpeg utility library - transitional package
+ This package can be safely removed if no other packages depend on this
+Original-Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+
+Package: libavfilter-extra-0
+Source: ffmpeg-extra
+Version: 4:0.5+svn20090706-2ubuntu3+medibuntu1
+Architecture: amd64
+Maintainer: Medibuntu Packaging Team <medibuntu-maintainers@lists.launchpad.net>
+Installed-Size: 116
+Depends: libavcodec-extra-52 (>= 4:0.5+svn20090706), libavcodec-extra-52 (<< 4:0.5+svn20090706-99), libavutil-extra-49 (>= 4:0.5+svn20090706), libavutil-extra-49 (<< 4:0.5+svn20090706-99), libc6 (>= 2.2.5)
+Recommends: apport-hooks-medibuntu
+Conflicts: libavfilter-unstripped-0 (<< 4:0.5+svn20090706-2ubuntu3+medibuntu1), libavfilter0
+Replaces: libavfilter-unstripped-0 (<< 4:0.5+svn20090706-2ubuntu3+medibuntu1), libavfilter0
+Homepage: http://ffmpeg.org/
+Priority: optional
+Section: non-free/libs
+Filename: pool/non-free/f/ffmpeg-extra/libavfilter-extra-0_0.5+svn20090706-2ubuntu3+medibuntu1_amd64.deb
+Size: 47046
+SHA256: f7e60f46ad0c190f991f07bb1672a3168e36cf4ac08a9147e151f1db40758711
+SHA1: 1479f755ccf2c2a8dcca996526f7d8958778c606
+MD5sum: 08e9b227cad79b3584a13ea4d938146d
+Description: ffmpeg video filtering library
+ This is the video filtering library from the ffmpeg project.
+ .
+ This package contains a unrestricted version of the libavfilter shared
+ object that should only be used by Debian packages.
+Original-Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+
+Package: libavfilter-unstripped-0
+Source: ffmpeg-extra
+Version: 4:0.5+svn20090706-2ubuntu3+medibuntu1
+Architecture: amd64
+Maintainer: Medibuntu Packaging Team <medibuntu-maintainers@lists.launchpad.net>
+Installed-Size: 80
+Depends: libavfilter-extra-0 (= 4:0.5+svn20090706-2ubuntu3+medibuntu1)
+Conflicts: libavfilter0
+Replaces: libavfilter0
+Homepage: http://ffmpeg.org/
+Priority: optional
+Section: non-free/libs
+Filename: pool/non-free/f/ffmpeg-extra/libavfilter-unstripped-0_0.5+svn20090706-2ubuntu3+medibuntu1_amd64.deb
+Size: 39548
+SHA256: 5a034da130968c0c07489c0323de84f7e41e3e27a37ad509eabb93653353f8ab
+SHA1: 2025eaf8d6d8d33bb2d171c3c0e64f51c2ecfe9f
+MD5sum: bd262a289894a0ca4dce00745c91f048
+Description: ffmpeg utility library - transitional package
+ This package can be safely removed if no other packages depend on this
+Original-Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+
+Package: libavformat-extra-52
+Source: ffmpeg-extra
+Version: 4:0.5+svn20090706-2ubuntu3+medibuntu1
+Architecture: amd64
+Maintainer: Medibuntu Packaging Team <medibuntu-maintainers@lists.launchpad.net>
+Installed-Size: 772
+Depends: libavcodec-extra-52 (>= 4:0.5+svn20090706), libavcodec-extra-52 (<< 4:0.5+svn20090706-99), libavutil-extra-49 (>= 4:0.5+svn20090706), libavutil-extra-49 (<< 4:0.5+svn20090706-99), libbz2-1.0, libc6 (>= 2.7), zlib1g (>= 1:1.1.4)
+Recommends: apport-hooks-medibuntu
+Conflicts: libavformat-unstripped-52 (<< 4:0.5+svn20090706-2ubuntu3+medibuntu1), libavformat52
+Breaks: libavcodec51
+Replaces: libavformat-unstripped-52 (<< 4:0.5+svn20090706-2ubuntu3+medibuntu1), libavformat52
+Homepage: http://ffmpeg.org/
+Priority: optional
+Section: non-free/libs
+Filename: pool/non-free/f/ffmpeg-extra/libavformat-extra-52_0.5+svn20090706-2ubuntu3+medibuntu1_amd64.deb
+Size: 366862
+SHA256: 02d771fa59c34a8a4d6d5e42b0656eb9809d9f0ad8c3fc09ae5c80157a554295
+SHA1: f2ad761f553a2a58afee33be91b8ccf5e38f0f92
+MD5sum: 1390e3ad43c505a8fcb8f4f34dcd24d1
+Description: ffmpeg file format library
+ This is the demuxer library from the ffmpeg project. It supports most
+ existing file formats (AVI, MPEG, OGG, Matroska, ASF...).
+ .
+ This package contains a unrestricted version of the libavformat shared
+ object that should only be used by Debian packages.
+Original-Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+
+Package: libavformat-unstripped-52
+Source: ffmpeg-extra
+Version: 4:0.5+svn20090706-2ubuntu3+medibuntu1
+Architecture: amd64
+Maintainer: Medibuntu Packaging Team <medibuntu-maintainers@lists.launchpad.net>
+Installed-Size: 80
+Depends: libavformat-extra-52 (= 4:0.5+svn20090706-2ubuntu3+medibuntu1)
+Homepage: http://ffmpeg.org/
+Priority: optional
+Section: non-free/libs
+Filename: pool/non-free/f/ffmpeg-extra/libavformat-unstripped-52_0.5+svn20090706-2ubuntu3+medibuntu1_amd64.deb
+Size: 39536
+SHA256: 5004d098612bbd8796721e6c865f4d65072e734b8138ea035da7ff2a5e1ac6dd
+SHA1: ed587d37e15bad09a35cd3d9ca979ed158440139
+MD5sum: ff3fd844a79c4aced91a27d672dc38b7
+Description: ffmpeg utility library - transitional package
+ This package can be safely removed if no other packages depend on this
+Original-Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+
+Package: libavutil-extra-49
+Source: ffmpeg-extra
+Version: 4:0.5+svn20090706-2ubuntu3+medibuntu1
+Architecture: amd64
+Maintainer: Medibuntu Packaging Team <medibuntu-maintainers@lists.launchpad.net>
+Installed-Size: 152
+Depends: libc6 (>= 2.4)
+Recommends: apport-hooks-medibuntu
+Conflicts: libavutil-unstripped-49 (<< 4:0.5+svn20090706-2ubuntu3+medibuntu1), libavutil49
+Replaces: libavutil-unstripped-49 (<< 4:0.5+svn20090706-2ubuntu3+medibuntu1), libavutil49
+Homepage: http://ffmpeg.org/
+Priority: optional
+Section: non-free/libs
+Filename: pool/non-free/f/ffmpeg-extra/libavutil-extra-49_0.5+svn20090706-2ubuntu3+medibuntu1_amd64.deb
+Size: 69284
+SHA256: 14513d69aafc1e24fc3b14e999c06c7b5e8c30731cfee320c7fd37c5aa565461
+SHA1: 505644de75ed0cf603813f27e1aafca477e50b41
+MD5sum: b3189a96ba2c2832424d20dff22cc7a4
+Description: ffmpeg utility library
+ This is the common utility library from the ffmpeg project. It is required
+ by all other ffmpeg libraries.
+ .
+ This package contains a unrestricted version of the libavutil shared
+ object that should only be used by Debian packages.
+Original-Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+
+Package: libavutil-unstripped-49
+Source: ffmpeg-extra
+Version: 4:0.5+svn20090706-2ubuntu3+medibuntu1
+Architecture: amd64
+Maintainer: Medibuntu Packaging Team <medibuntu-maintainers@lists.launchpad.net>
+Installed-Size: 80
+Depends: libavutil-extra-49 (= 4:0.5+svn20090706-2ubuntu3+medibuntu1)
+Homepage: http://ffmpeg.org/
+Priority: optional
+Section: non-free/libs
+Filename: pool/non-free/f/ffmpeg-extra/libavutil-unstripped-49_0.5+svn20090706-2ubuntu3+medibuntu1_amd64.deb
+Size: 39532
+SHA256: 8c90761db527d20250e163bb792149375bcda0e8141bad6ecb2c8f365e39935e
+SHA1: ce6783b7e667150b3bc88a280b9203a5c0af64d6
+MD5sum: 7bc06ecae85b74abb16b0367e2762e6f
+Description: ffmpeg utility library - transitional package
+ This package can be safely removed if no other packages depend on this
+Original-Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+
+Package: libpostproc-extra-51
+Source: ffmpeg-extra
+Version: 4:0.5+svn20090706-2ubuntu3+medibuntu1
+Architecture: amd64
+Maintainer: Medibuntu Packaging Team <medibuntu-maintainers@lists.launchpad.net>
+Installed-Size: 152
+Depends: libavutil-extra-49 (>= 4:0.5+svn20090706), libavutil-extra-49 (<< 4:0.5+svn20090706-99), libc6 (>= 2.4)
+Recommends: apport-hooks-medibuntu
+Conflicts: libpostproc-unstripped-51 (<< 4:0.5+svn20090706-2ubuntu3+medibuntu1), libpostproc51
+Replaces: libpostproc-unstripped-51 (<< 4:0.5+svn20090706-2ubuntu3+medibuntu1), libpostproc51
+Homepage: http://ffmpeg.org/
+Priority: optional
+Section: non-free/libs
+Filename: pool/non-free/f/ffmpeg-extra/libpostproc-extra-51_0.5+svn20090706-2ubuntu3+medibuntu1_amd64.deb
+Size: 56918
+SHA256: 2b68bc24b97241cd4dd75313ebeeb88d345fc4ec87d0cd089e135883e5cab908
+SHA1: 77fda4ffe9bc084511ccb07aec96ff55fc7ea4eb
+MD5sum: 677ea737434365820c7e2754c2ec9ac2
+Description: ffmpeg video postprocessing library
+ This is the video postprocessing library from the ffmpeg project.
+ .
+ This package contains a unrestricted version of the libpostproc shared
+ object that should only be used by Debian packages.
+Original-Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+
+Package: libpostproc-unstripped-51
+Source: ffmpeg-extra
+Version: 4:0.5+svn20090706-2ubuntu3+medibuntu1
+Architecture: amd64
+Maintainer: Medibuntu Packaging Team <medibuntu-maintainers@lists.launchpad.net>
+Installed-Size: 80
+Depends: libpostproc-extra-51 (= 4:0.5+svn20090706-2ubuntu3+medibuntu1)
+Homepage: http://ffmpeg.org/
+Priority: optional
+Section: non-free/libs
+Filename: pool/non-free/f/ffmpeg-extra/libpostproc-unstripped-51_0.5+svn20090706-2ubuntu3+medibuntu1_amd64.deb
+Size: 39536
+SHA256: 6408e443626c8d54f383fc1e4c4809083093d26f716bcd3d4be7fb0a786254fa
+SHA1: 450786f836b0109e4d9e727b4d07c0a7a080b1db
+MD5sum: d9ad63c3f877ce782be8eb80f7146a3e
+Description: ffmpeg utility library - transitional package
+ This package can be safely removed if no other packages depend on this
+Original-Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+
+Package: libswscale-extra-0
+Source: ffmpeg-extra
+Version: 4:0.5+svn20090706-2ubuntu3+medibuntu1
+Architecture: amd64
+Maintainer: Medibuntu Packaging Team <medibuntu-maintainers@lists.launchpad.net>
+Installed-Size: 304
+Depends: libavutil-extra-49 (>= 4:0.5+svn20090706), libavutil-extra-49 (<< 4:0.5+svn20090706-99), libc6 (>= 2.2.5)
+Recommends: apport-hooks-medibuntu
+Conflicts: libswscale-unstripped-0 (<< 4:0.5+svn20090706-2ubuntu3+medibuntu1), libswscale0
+Replaces: libswscale-unstripped-0 (<< 4:0.5+svn20090706-2ubuntu3+medibuntu1), libswscale0
+Homepage: http://ffmpeg.org/
+Priority: optional
+Section: non-free/libs
+Filename: pool/non-free/f/ffmpeg-extra/libswscale-extra-0_0.5+svn20090706-2ubuntu3+medibuntu1_amd64.deb
+Size: 118114
+SHA256: 578c89c4b2140e4fc3080147e3c17770d078ec5acff1b14fd230e0d32ffb454a
+SHA1: 30c9ce9012647c0b3619f82ffa8f9f7f7d4a35ee
+MD5sum: dc790b6a4a245e3723470bad519c8e4f
+Description: ffmpeg video scaling library
+ This is the video scaling library from the ffmpeg project.
+ .
+ This package contains a unrestricted version of the libswscale shared
+ object that should only be used by Debian packages.
+Original-Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+
+Package: libswscale-unstripped-0
+Source: ffmpeg-extra
+Version: 4:0.5+svn20090706-2ubuntu3+medibuntu1
+Architecture: amd64
+Maintainer: Medibuntu Packaging Team <medibuntu-maintainers@lists.launchpad.net>
+Installed-Size: 80
+Depends: libswscale-extra-0 (= 4:0.5+svn20090706-2ubuntu3+medibuntu1)
+Homepage: http://ffmpeg.org/
+Priority: optional
+Section: non-free/libs
+Filename: pool/non-free/f/ffmpeg-extra/libswscale-unstripped-0_0.5+svn20090706-2ubuntu3+medibuntu1_amd64.deb
+Size: 39524
+SHA256: 5404dd684d12dc20e6003b2069ce35590e2ec7c70843e9a33844b642739f067a
+SHA1: 7babf487c50206d28d629e6602ef3d3fb84cf517
+MD5sum: dbb172e212f7dec1d82ec29853682f44
+Description: ffmpeg utility library - transitional package
+ This package can be safely removed if no other packages depend on this
+Original-Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+
+Package: non-free-codecs
+Version: 4medibuntu1
+Architecture: amd64
+Maintainer: Medibuntu Packaging Team <admin@lists.medibuntu.org>
+Installed-Size: 40
+Depends: libamrnb3, libamrwb3, ubuntu-restricted-extras | kubuntu-restricted-extras | xubuntu-restricted-extras, w64codecs
+Priority: optional
+Section: non-free/metapackages
+Filename: pool/non-free/n/non-free-codecs/non-free-codecs_4medibuntu1_amd64.deb
+Size: 2822
+SHA256: f1d82e88cd70f2ac38761f153bcf18832f2b8b19b3acf40f00ba4d5540ad38cf
+SHA1: 24f2d41b4ab34076cd97847f76350712f9a2be9b
+MD5sum: 1ce69cffc15e67da949bb7fe4a6f9d4d
+Description: Non-free codecs
+ This package depends on the binaries codecs package matching your architecture
+ (w32codecs for i386 and lpia and w64codecs for amd64 systems).
+ .
+ It can be safely removed.
+
+Package: realplayer
+Source: realplay
+Version: 11.0.0-0.2medibuntu2
+Architecture: amd64
+Maintainer: Medibuntu Packaging Team <admin@lists.medibuntu.org>
+Installed-Size: 19484
+Depends: ia32-libs (>= 1.6), lib32asound2 (>> 1.0.17), lib32gcc1 (>= 1:4.1.1), lib32stdc++6 (>= 4.1.1), libc6-i386 (>= 2.3.4)
+Conflicts: helix-player
+Priority: optional
+Section: non-free/graphics
+Filename: pool/non-free/r/realplay/realplayer_11.0.0-0.2medibuntu2_amd64.deb
+Size: 8104004
+SHA256: 7679a636e853618f9fbecae87fc114a6874175c045956b3b450d9a54b97238db
+SHA1: e519bf777adb2ddc907775f522cab67890f62f02
+MD5sum: bfd0501223b5f01b0cfa3bdfe2a26402
+Description: RealPlayer 10 based on the open source Helix player
+ RealPlayer 10 for Linux is based on the open source Helix player.
+ .
+ RealPlayer 10 supports RealAudio, RealVideo 10, MP3, Ogg Vorbis and Theora,
+ H263, AAC and more. Get ready for accelerated video, full screen playback,
+ and a lot more to play.
+Original-Maintainer: Christian Marillat <marillat@debian.org>
+
+Package: w64codecs
+Version: 20071007-0medibuntu2
+Architecture: amd64
+Maintainer: Medibuntu Packaging Team <admin@lists.medibuntu.org>
+Installed-Size: 608
+Depends: libc6 (>= 2.3.2), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1)
+Suggests: mplayer
+Homepage: http://www.mplayerhq.hu/
+Priority: optional
+Section: non-free/libs
+Filename: pool/non-free/w/w64codecs/w64codecs_20071007-0medibuntu2_amd64.deb
+Size: 210424
+SHA256: c668f7b91b369c53648faa1ec09b682d701b18bb1755220dada26e1f3540f103
+SHA1: 73e9f2af152d642c76e3d81054c7aeca91e2460d
+MD5sum: 4494f52a7a33d5640e8ab99bb56454ed
+Description: Proprietary codec binaries, x86_64 version
+ This package contains the "Win32" codec binaries for the x86_64 architectures,
+ required for the decompression of video formats that have no open source
+ alternative.
+ .
+ This is in Medibuntu due to its non-free license.
+

@@ -1,6 +1,7 @@
 require 'find'
 
 class Package < BasePackage
+  belongs_to :section
 
   include PackagesHelper
 #  belongs_to :distribution

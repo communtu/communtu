@@ -167,12 +167,16 @@ class Repository < ActiveRecord::Base
       else
         package["Source"] = "false"
       end
+      # find section_tid
+      section = Section.find_or_create_by_name(package["Section"].split("/")[-1])
+
       # compute attributes for package
       attributes_package = { :name => name,
           :description => package["Description"],\
-          :fullsection => package["Section"],\
+          #  :fullsection => package["Section"],\
           # use last part for :section
-          :section => package["Section"].split("/")[-1],\
+          # TODO puchrojo
+          :section_tid => section.id,
           :is_program => package["Source"]
           }
       # look for existing package

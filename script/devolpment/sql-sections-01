@@ -1,0 +1,6 @@
+mysql -u root -p communtu <<EOFMYSQL
+INSERT INTO sections (name)
+SELECT DISTINCT section 
+FROM base_packages ;
+update sections s set created_at='2010-01-09 18:47:00', updated_at='2010-01-09 18:47:00';
+EOFMYSQL

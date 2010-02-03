@@ -282,6 +282,7 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "name_tid"
   end
 
   create_table "standard_packages", :force => true do |t|
