@@ -51,8 +51,6 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.integer  "ratings_count"
     t.integer  "description_tid"
     t.integer  "url_tid"
-    t.integer  "fullsection_tid"
-    t.integer  "section_tid"
     t.integer  "name_tid"
     t.integer  "section_id"
   end

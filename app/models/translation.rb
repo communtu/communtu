@@ -1,11 +1,10 @@
 class Translation < ActiveRecord::Base
   belongs_to(:language)
   
-  def self.new_translation(s)
+  def self.new_translation(s, l = I18n.locale.to_s)
     if s.empty? then
       return nil
     end
-    l = I18n.locale.to_s
     t = Translation.find_by_contents_and_language_code(s,l)
     if !t.nil? then
       return t
