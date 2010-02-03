@@ -60,7 +60,7 @@ class Livecd < ActiveRecord::Base
         else
           virt = ""
         end
-        remaster_call = "sudo -u communtu #{RAILS_ROOT}/script/remaster create #{virt}#{ver} #{iso} #{self.name} #{self.srcdeb} #{self.installdeb} >> #{RAILS_ROOT}/log/livecd.log 2>&1"
+        remaster_call = "#{RAILS_ROOT}/script/remaster create #{virt}#{ver} #{iso} #{self.name} #{self.srcdeb} #{self.installdeb} >> #{RAILS_ROOT}/log/livecd.log 2>&1"
         system "echo \"#{remaster_call}\" >> #{RAILS_ROOT}/log/livecd.log"
         res = system remaster_call
         # kill VM, necessary in case of abrupt exit
