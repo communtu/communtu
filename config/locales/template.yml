@@ -30,6 +30,7 @@ de:
   by_bank_transfer: "per Überweisung"
   cannot_migrate: "Kann nur migrieren, wenn die Distribution frisch ist"
   cant_debianized: "Bitte gib dem Bündel einen englischen Titel und eine englische Beschreibung."
+  category_exists: "Eine Kategorie mit diesem Namen existiert schon"
   category_with_colon: "Kategorie:"
   category_without_colon: Kategorie
   cd_failed: "Fehlgeschlagen - wir kümmern uns darum"

@@ -46,31 +46,24 @@ class CategoriesController < ApplicationController
   # POST /categories.xml
   def create
     @category = Category.new(params[:category])
-    @translation1 = Translation.new
-    @translation2 = Translation.new
-    @translation3 = Translation.new
-    @last_trans = Translation.find(:first, :order => "translatable_id DESC")
-    last_id = @last_trans.translatable_id
-    @translation1.translatable_id = last_id + 1
-    @translation1.contents = params[:category][:name]
-    @translation2.translatable_id = last_id + 2
-    @translation2.contents = params[:category][:description]
-    @translation3.translatable_id = last_id + 3
-    @translation3.contents = params[:category][:link]
-    @category.description_tid = last_id + 1
-    @category.name_tid = last_id + 1
-    @translation1.language_code = I18n.locale.to_s
-    @translation1.save
-    if @translation2.contents != ""
-      @category.description_tid = last_id + 2
-      @translation2.language_code = I18n.locale.to_s
-      @translation2.save
+    if !Category.find_by_name(params[:category][:name]).nil?
+      flash[:error] = t(:category_exists)
+      render :action => "new"
+      return
     end
-       if @translation3.contents != ""
-      @category.link_tid = last_id + 3
-      @translation3.language_code = I18n.locale.to_s
-      @translation3.save
+    @translation_name  = Translation.new_translation(params[:category][:name])
+    @translation_descr = Translation.new_translation(params[:category][:description])
+    @translation_link  = Translation.new_translation(params[:category][:link])
+
+    # enforce that description is nonempty
+    # is this necessary, Torsten?
+    if @translation_descr.nil? then
+      @translation_descr = @translation_name
     end
+
+    @category.name_tid = @translation_name.translatable_id
+    @category.description_tid = @translation_descr.translatable_id
+    @category.link_tid = @translation_link.translatable_id
 
     respond_to do |format|
       if @category.save

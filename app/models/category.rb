@@ -4,7 +4,8 @@ class Category < ActiveRecord::Base
   has_many :metapackages
   belongs_to :category, :foreign_key => 'parent_id'
   has_many :categories, :foreign_key => 'parent_id'
-
+  validates_uniqueness_of :name
+  
   def name
     translation(self.name_tid)
   end
