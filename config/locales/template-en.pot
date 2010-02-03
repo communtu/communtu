@@ -598,6 +598,9 @@ msgstr ""
 #: promote_chat
 msgid "You can look if one of us is currently in the chat and talk with us."
 msgstr ""
+#: category_exists
+msgid "A category with this name already exists."
+msgstr ""
 #: view_home_about_7
 msgid ".) There you can edit your settings. First, you have to specify the basic data, such as which Ubuntu version you want to install on your computer. Additionally, you must specify if you want to use free or commercial software. Finally you must indicate for which purposes you want to use your computer."
 msgstr ""
@@ -2362,11 +2365,11 @@ msgstr ""
 #: controller_categories_0
 msgid "Categories"
 msgstr ""
-#: update
-msgid "Refresh"
-msgstr ""
 #: view_home_home_24
 msgid "To the imprint"
+msgstr ""
+#: update
+msgid "Refresh"
 msgstr ""
 #: statistics
 msgid "View statistics"

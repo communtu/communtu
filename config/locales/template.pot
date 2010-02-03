@@ -598,6 +598,9 @@ msgstr ""
 #: promote_chat
 msgid "Du kannst gucken, ob sich gerade jemand von uns im Chat aufhält und mit uns über den Chat kommunizieren."
 msgstr ""
+#: category_exists
+msgid "Eine Kategorie mit diesem Namen existiert schon"
+msgstr ""
 #: view_home_about_7
 msgid "Dort kannst du deine Einstellungen bearbeiten. Unter den Voreinstellungen musst du zunächst eintragen, welche Ubuntu-Version du auf deinem PC installiert hast, außerdem, ob du unfreie Programme nutzen willst oder nicht. Zudem wählst du aus, für welche Aufgaben du deinen Ubuntu-PC nutzen willst. "
 msgstr ""
@@ -2146,14 +2149,14 @@ msgstr ""
 #: controller_sent_2
 msgid "Nachricht erfolgreich versendet"
 msgstr ""
+#: view_user_profiles__sources_1
+msgid "Hier werden die zu installierenden Programme und Pakete nach den zugehörigen Quellen sortiert aufgelistet, so dass du auch sehen kannst, weshalb die jeweiligen Quellen hinzugefügt werden."
+msgstr ""
 #: model_package_0
 msgid "Freie Software"
 msgstr ""
 #: missing_debs_for_bundle
 msgid "Fehlende debs für Bündel:"
-msgstr ""
-#: view_user_profiles__sources_1
-msgid "Hier werden die zu installierenden Programme und Pakete nach den zugehörigen Quellen sortiert aufgelistet, so dass du auch sehen kannst, weshalb die jeweiligen Quellen hinzugefügt werden."
 msgstr ""
 #: model_package_1
 msgid "Frei+proprietär"

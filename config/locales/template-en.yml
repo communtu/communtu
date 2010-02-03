@@ -197,6 +197,7 @@ en:
   community_title: Ubuntu Forums
   view_home_about_6: "  (This does not appear until"
   promote_chat: You can look if one of us is currently in the chat and talk with us.
+  category_exists: A category with this name already exists.
   view_home_about_7: .) There you can edit your settings. First, you have to specify the basic data, such as which Ubuntu version you want to install on your computer. Additionally, you must specify if you want to use free or commercial software. Finally you must indicate for which purposes you want to use your computer.
   view_home_derivatives_18: " is an Ubuntu spin-off with its own user community which has dedicated itself to usability. Linux Mint is quite similar to Ubuntu but has more codecs, like to watch DVDs or listen to MP3s, pre-installed. Those codecs are available via Communtu, listet at \"Sound & Video\"."
   new_distribution: New distribution
@@ -819,9 +820,9 @@ en:
   view_home_home_22: "in, or "
   view_home_home_23: use Communtu as a guest
   controller_categories_0: Categories
+  statistics: View statistics
   update: Refresh
   view_home_home_24: To the imprint
-  statistics: View statistics
   controller_categories_2: Category created.
   view_home_home_25: For questions concerning Communtu we have created a "FAQ".
   description: Description
