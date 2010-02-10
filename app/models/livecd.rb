@@ -88,7 +88,7 @@ class Livecd < ActiveRecord::Base
       self.save
       MyMailer.deliver_livecd(self.user,isourl)
     else
-      MyMailer.deliver_livecd_failed(self.user)
+      MyMailer.deliver_livecd_failed(self.user,self.fullname)
     end
   end
 

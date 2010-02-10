@@ -212,7 +212,7 @@ de:
   livecd_email: "Communtu: Benachrichtigung über Live-CD/DVD"
   livecd_email_failed: "Communtu: Erstellung der Live-CD/DVD fehlgeschlagen"
   livecd_email_body: ", die Live-CD/DVD wurde erstellt! Folge dem Link: "
-  livecd_email_body_failed: ", die Live-CD/DVD konnte leider nicht erstellt werden. Wir kümmern uns um das Problem."
+  livecd_email_body_failed: ", die Live-CD/DVD {{name}} konnte leider nicht erstellt werden. Wir kümmern uns um das Problem."
   livecd_existing_name: "Dieser Name ist bereits vergeben"
   livecd_image: CD-Image
   livecd_image_link: "http://wiki.ubuntuusers.de/CD-Images"
@@ -222,7 +222,6 @@ auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} er
   livecd_previous_cds: "Bisher erstellte Live-CDs/DVDs:"
   livecd_start: "Live-CD/DVD erstellen"
   livecd_start_message: "Hier kannst du eine Live-CD/DVD erstellen lassen, die die von dir ausgewählte Software enthält. Du hast folgende Bündel ausgewählt:"
-  livecd_test: "Live-CD/DVD nicht erstellen, sondern nur EMail versenden (zu Testzwecken)"
   mailinglist: "Mailinglisten:"
   make_distribution_visible: Distribution sichtbar machen
   make_distribution_final: Distribution als stabil freigeben

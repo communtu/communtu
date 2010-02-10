@@ -39,7 +39,8 @@ class MyMailer < ActionMailer::Base
     @headers = {}
   end
 
-  def livecd_failed(user)
+  def livecd_failed(user,name)
+    @cdname      = name
     @recipients  = "#{user.email}"
     @from        = "info@communtu.org"
     @subject     = I18n.t(:livecd_email_failed)

@@ -412,10 +412,6 @@ end
     cd.fork_remaster
   end
 
-  def test_livecd
-    MyMailer.deliver_livecd(self,"http://communtu.org/debs/testtesttest")
-  end
-
 
   protected
   

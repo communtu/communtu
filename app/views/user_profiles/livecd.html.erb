@@ -42,7 +42,6 @@
 <%= t(:name_of_livecd) %>
 <%= text_field_tag(:name,@default_name) %>
 <%= submit_tag(t(:livecd_start)) %></p>
-<p><%=link_to t(:livecd_test), "/user_profiles/test_livecd/"+ current_user.id.to_s %></p>
 <p><%=t(:view_user_profiles__installation_33)%>
 <%= link_to (t(:sources), user_path(current_user) + "/user_profile/sources")%>
 <%=t(:view_user_profiles__installation_34)%>

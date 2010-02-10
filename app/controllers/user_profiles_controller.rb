@@ -130,10 +130,4 @@ class UserProfilesController < ApplicationController
     redirect_to user_user_profile_path(current_user) + "/livecd"
   end
 
-  def test_livecd
-    uid = params[:id]
-    system 'echo "User.find('+uid.to_s+').test_livecd" | nohup script/console production'
-    redirect_to user_user_profile_path(current_user) + "/livecd"
-  end
-
 end
