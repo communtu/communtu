@@ -1411,9 +1411,6 @@ msgstr ""
 #: view_users_edit_2
 msgid "delete profile"
 msgstr ""
-#: livecd_test
-msgid "Do not create Live-CD/DVD but only send an e-mail (for testing purposes only)"
-msgstr ""
 #: view_cart_update_4
 msgid "Publish bundle"
 msgstr ""
@@ -1772,7 +1769,7 @@ msgstr ""
 msgid "This function is not available for guests."
 msgstr ""
 #: livecd_email_body_failed
-msgid "While creating metapackages, an error occurred. We'll solve that problem as fast as possible."
+msgid ", the Live-CD/DVD {{name}} couldn't be created. We'll solve that problem as fast as possible."
 msgstr ""
 #: being_created
 msgid "being created"
@@ -2365,11 +2362,11 @@ msgstr ""
 #: controller_categories_0
 msgid "Categories"
 msgstr ""
-#: view_home_home_24
-msgid "To the imprint"
-msgstr ""
 #: update
 msgid "Refresh"
+msgstr ""
+#: view_home_home_24
+msgid "To the imprint"
 msgstr ""
 #: statistics
 msgid "View statistics"

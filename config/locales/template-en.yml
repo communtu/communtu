@@ -496,7 +496,6 @@ en:
   view_sent_index_0: sent messages
   an: To
   view_users_edit_2: delete profile
-  livecd_test: Do not create Live-CD/DVD but only send an e-mail (for testing purposes only)
   view_cart_update_4: Publish bundle
   controller_users_1: Thank you for registering at Communtu! You can now log in.
   view_users_edit_3: "Username:"
@@ -619,7 +618,7 @@ en:
   view_repositories_show_4: "Package-list for {{arch}}:"
   livecd_email_failed: "Communtu: creation of Live-CD/DVD failed."
   controller_application_0: This function is not available for guests.
-  livecd_email_body_failed: While creating metapackages, an error occurred. We'll solve that problem as fast as possible.
+  livecd_email_body_failed: ", the Live-CD/DVD {{name}} couldn't be created. We'll solve that problem as fast as possible."
   being_created: being created
   bundle_by_owner: Created bundles
   view_repositories_show_6: "        OpenSource"
@@ -820,9 +819,9 @@ en:
   view_home_home_22: "in, or "
   view_home_home_23: use Communtu as a guest
   controller_categories_0: Categories
-  statistics: View statistics
   update: Refresh
   view_home_home_24: To the imprint
+  statistics: View statistics
   controller_categories_2: Category created.
   view_home_home_25: For questions concerning Communtu we have created a "FAQ".
   description: Description

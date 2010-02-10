@@ -1414,9 +1414,6 @@ msgstr ""
 #: view_users_edit_2
 msgid "Profil löschen"
 msgstr ""
-#: livecd_test
-msgid "Live-CD/DVD nicht erstellen, sondern nur EMail versenden (zu Testzwecken)"
-msgstr ""
 #: view_cart_update_4
 msgid "Bündel veröffentlichen"
 msgstr ""
@@ -1775,7 +1772,7 @@ msgstr ""
 msgid "Diese Funktion ist für Gäste nicht verfügbar."
 msgstr ""
 #: livecd_email_body_failed
-msgid ", die Live-CD/DVD konnte leider nicht erstellt werden. Wir kümmern uns um das Problem."
+msgid ", die Live-CD/DVD {{name}} konnte leider nicht erstellt werden. Wir kümmern uns um das Problem."
 msgstr ""
 #: being_created
 msgid "wird erstellt"
@@ -2149,14 +2146,14 @@ msgstr ""
 #: controller_sent_2
 msgid "Nachricht erfolgreich versendet"
 msgstr ""
-#: view_user_profiles__sources_1
-msgid "Hier werden die zu installierenden Programme und Pakete nach den zugehörigen Quellen sortiert aufgelistet, so dass du auch sehen kannst, weshalb die jeweiligen Quellen hinzugefügt werden."
-msgstr ""
 #: model_package_0
 msgid "Freie Software"
 msgstr ""
 #: missing_debs_for_bundle
 msgid "Fehlende debs für Bündel:"
+msgstr ""
+#: view_user_profiles__sources_1
+msgid "Hier werden die zu installierenden Programme und Pakete nach den zugehörigen Quellen sortiert aufgelistet, so dass du auch sehen kannst, weshalb die jeweiligen Quellen hinzugefügt werden."
 msgstr ""
 #: model_package_1
 msgid "Frei+proprietär"

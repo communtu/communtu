@@ -1937,10 +1937,6 @@ msgstr "To"
 msgid "Profil löschen"
 msgstr "delete profile"
 
-#: livecd_test
-msgid "Live-CD/DVD nicht erstellen, sondern nur EMail versenden (zu Testzwecken)"
-msgstr "Do not create Live-CD/DVD but only send an e-mail (for testing purposes only)"
-
 #: view_cart_update_4
 msgid "Bündel veröffentlichen"
 msgstr "Publish bundle"
@@ -2424,8 +2420,8 @@ msgid "Diese Funktion ist für Gäste nicht verfügbar."
 msgstr "This function is not available for guests."
 
 #: livecd_email_body_failed
-msgid ", die Live-CD/DVD konnte leider nicht erstellt werden. Wir kümmern uns um das Problem."
-msgstr "While creating metapackages, an error occurred. We'll solve that problem as fast as possible."
+msgid ", die Live-CD/DVD {{name}} konnte leider nicht erstellt werden. Wir kümmern uns um das Problem."
+msgstr ", the Live-CD/DVD {{name}} couldn't be created. We'll solve that problem as fast as possible."
 
 #: being_created
 msgid "wird erstellt"
@@ -2923,10 +2919,6 @@ msgstr "(Based on {{votes}} rating(s))"
 msgid "Nachricht erfolgreich versendet"
 msgstr "message successfully send"
 
-#: view_user_profiles__sources_1
-msgid "Hier werden die zu installierenden Programme und Pakete nach den zugehörigen Quellen sortiert aufgelistet, so dass du auch sehen kannst, weshalb die jeweiligen Quellen hinzugefügt werden."
-msgstr "The soon be installed programs and packages are shown and ordered by the appropriate sources so you can see why some sources will be added."
-
 #: model_package_0
 msgid "Freie Software"
 msgstr "Free software"
@@ -2934,6 +2926,10 @@ msgstr "Free software"
 #: missing_debs_for_bundle
 msgid "Fehlende debs für Bündel:"
 msgstr "Missing debs for bundle:"
+
+#: view_user_profiles__sources_1
+msgid "Hier werden die zu installierenden Programme und Pakete nach den zugehörigen Quellen sortiert aufgelistet, so dass du auch sehen kannst, weshalb die jeweiligen Quellen hinzugefügt werden."
+msgstr "The soon be installed programs and packages are shown and ordered by the appropriate sources so you can see why some sources will be added."
 
 #: model_package_1
 msgid "Frei+proprietär"
@@ -3416,4 +3412,10 @@ msgstr "BUNDLE"
 #: install
 msgid "Installieren"
 msgstr "Install"
+
+#~ msgid ""
+#~ "Live-CD/DVD nicht erstellen, sondern nur EMail versenden (zu Testzwecken)"
+#~ msgstr ""
+#~ "Do not create Live-CD/DVD but only send an e-mail (for testing purposes "
+#~ "only)"
 
