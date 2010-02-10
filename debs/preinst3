@@ -35,7 +35,7 @@
     
     # sync new sources
     # we get an error because we can't get the lock, but that does not matter
-    apt-get update || true
+    apt-get update 2> /dev/null || true
     ;;
 
     abort-upgrade)
