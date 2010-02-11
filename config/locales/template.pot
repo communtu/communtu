@@ -277,6 +277,9 @@ msgstr ""
 #: view_home_contact_us_4
 msgid "Senden"
 msgstr ""
+#: download
+msgid "herunterladen"
+msgstr ""
 #: wait_for_sync
 msgid "auf Synchronisation der Repositories warten"
 msgstr ""
@@ -339,6 +342,9 @@ msgid "zurück"
 msgstr ""
 #: no1
 msgid "nein"
+msgstr ""
+#: creation_in_progress
+msgid "wird gerade erstellt"
 msgstr ""
 #: view_home_impressum_11
 msgid "Mitwirkende an der AG Communtu (Alphabetische Reihenfolge):"
@@ -903,6 +909,9 @@ msgid "Unter \"K-Menu -> Programme -> System -> Systemverwaltung -> Software-Que
 msgstr ""
 #: view_home_derivatives_41
 msgid " Ubuntu ultimate  - Ubuntu mit vielen Desktop-Desgins und Programmen."
+msgstr ""
+#: based_on_bundle
+msgid "basiert auf Bündel:"
 msgstr ""
 #: view_home_faq_kde_02
 msgid "KPackageKit erreichst Du über \"K-Menu -> Programme-> System -> Systemverwaltung -> Software-Verwaltung\". Hier wählst Du rechts aus dem Ausklapp-Menü \"packages.communtu.org\" aus. Aus der Liste suchst Du nun das Metapaket aus, welches Du installiert hast und markierst es mit einem Klick auf das X rechts neben dem Eintrag. Um das Metapaket nun zu entfernen ist nur noch ein Klick auf \"Übernehmen\" notwendig. Es wird jetzt noch eine Übersicht der zu entfernenden Programme angezeigt und nach einem Klick auf \"Ok\" werden diese von deinem Computer gelöscht."
@@ -2146,32 +2155,32 @@ msgstr ""
 #: controller_sent_2
 msgid "Nachricht erfolgreich versendet"
 msgstr ""
+#: view_user_profiles__sources_1
+msgid "Hier werden die zu installierenden Programme und Pakete nach den zugehörigen Quellen sortiert aufgelistet, so dass du auch sehen kannst, weshalb die jeweiligen Quellen hinzugefügt werden."
+msgstr ""
 #: model_package_0
 msgid "Freie Software"
 msgstr ""
 #: missing_debs_for_bundle
 msgid "Fehlende debs für Bündel:"
 msgstr ""
-#: view_user_profiles__sources_1
-msgid "Hier werden die zu installierenden Programme und Pakete nach den zugehörigen Quellen sortiert aufgelistet, so dass du auch sehen kannst, weshalb die jeweiligen Quellen hinzugefügt werden."
+#: view_user_profiles__profile_rating_0
+msgid "Auswahl der zu installierenden Programmbündel und Programme"
 msgstr ""
 #: model_package_1
 msgid "Frei+proprietär"
 msgstr ""
-#: view_user_profiles__profile_rating_0
-msgid "Auswahl der zu installierenden Programmbündel und Programme"
-msgstr ""
 #: view_home_impressum_4
 msgid "Bauernstr. 2"
+msgstr ""
+#: view_user_profiles__profile_rating_1
+msgid "Durch Klicken auf "
 msgstr ""
 #: model_package_2
 msgid "Unbekannt"
 msgstr ""
 #: view_home_icons_0
 msgid "Icons bei Communtu"
-msgstr ""
-#: view_user_profiles__profile_rating_1
-msgid "Durch Klicken auf "
 msgstr ""
 #: view_home_impressum_5
 msgid "28203 Bremen"
@@ -2185,11 +2194,11 @@ msgstr ""
 #: videos
 msgid "Videos:"
 msgstr ""
-#: senden
-msgid "Abschicken"
-msgstr ""
 #: view_user_profiles__profile_rating_3
 msgid "Achtung! Zum Schluss auf \"Auswahl speichern\" klicken."
+msgstr ""
+#: senden
+msgid "Abschicken"
 msgstr ""
 #: view_home_icons_3
 msgid " Paket(e) installieren."
@@ -2214,6 +2223,9 @@ msgid "Bei der Synchronisation des Repositories {{repo_name}} konnte kein Packag
 msgstr ""
 #: view_home_about_12
 msgid "<b>Bündel verwalten</b> auf der linken Seitenleiste gibt dir einen Überblick über die verfügbaren Bündel. Schließlich gibt es unter <b>Ubuntu-Versionen</b> eine Übersicht über die im System verfügbaren Ubuntu-Versionen (Distributionen)."
+msgstr ""
+#: creation_failed
+msgid "Erzeugung fehlgeschlagen"
 msgstr ""
 #: view_home_icons_9
 msgid " Installation per Shell-Script"
@@ -2341,6 +2353,9 @@ msgstr ""
 #: view_derivatives_index_0
 msgid "Derivate auflisten"
 msgstr ""
+#: livecd_created_by
+msgid "Live-CD/DVD erstellt von: "
+msgstr ""
 #: controller_home_5
 msgid "Wir haben Deinen Vorschlag erhalten und werden Dich informieren, ob und wann wir das vorgeschlagene Repository aufnehmen werden."
 msgstr ""
@@ -2355,6 +2370,9 @@ msgid "melde"
 msgstr ""
 #: inbox
 msgid "Posteingang"
+msgstr ""
+#: creation_successful
+msgid "Erstellung war erfolgreich"
 msgstr ""
 #: view_home_home_22
 msgid " dich an, oder "

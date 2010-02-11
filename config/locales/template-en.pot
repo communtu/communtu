@@ -277,6 +277,9 @@ msgstr ""
 #: view_home_contact_us_4
 msgid "Send "
 msgstr ""
+#: download
+msgid "download"
+msgstr ""
 #: view_metapackages_show_0
 msgid "Bundle created by "
 msgstr ""
@@ -339,6 +342,9 @@ msgid "Back"
 msgstr ""
 #: no1
 msgid "no"
+msgstr ""
+#: creation_in_progress
+msgid "creation is in progress"
 msgstr ""
 #: view_home_impressum_11
 msgid "Participants of the Communtu-team (alphabetical order):"
@@ -903,6 +909,9 @@ msgid "You can find the Communtu sources under \"K-Menu -> Programs -> System ->
 msgstr ""
 #: view_home_derivatives_41
 msgid "Ubuntu ultimate - Ubuntu with many desktop-designs and applications."
+msgstr ""
+#: based_on_bundle
+msgid "Based on bundle:"
 msgstr ""
 #: view_home_faq_kde_02
 msgid "You can access KPackageKit via \"K-Menu -> Programs -> System -> Administration -> Software Management\". From the right dropdown menu you choose \"packages.communtu.org\". The list now appearing contains every metapackage available in Communtu. To uninstall a metapackage you click on one of the installed metapackages and mark it with the X right of the entry. To remove it from your system you need to click on \"Apply\". You now see a summary of the changes that will be made and after a click on \"Ok\" they will be removed from your system."
@@ -2212,6 +2221,9 @@ msgstr ""
 #: view_home_about_12
 msgid "<b>Administrate bundles</b> on the left side offers an overview about the available bundles. At last, an overview about the available Ubunt versions (distributions) can be found at <b>Ubuntu versions</b>."
 msgstr ""
+#: creation_failed
+msgid "Creation failed"
+msgstr ""
 #: view_home_icons_9
 msgid " installation via shell-script"
 msgstr ""
@@ -2338,6 +2350,9 @@ msgstr ""
 #: view_derivatives_index_0
 msgid "show derivatives"
 msgstr ""
+#: livecd_created_by
+msgid "Live-CD/DVD created by:"
+msgstr ""
 #: controller_home_5
 msgid "We received your suggestion and we will inform you if imbibe the suggested repository and when we will imbibe it."
 msgstr ""
@@ -2352,6 +2367,9 @@ msgid "log "
 msgstr ""
 #: inbox
 msgid "Inbox"
+msgstr ""
+#: creation_successful
+msgid "Creation was successful"
 msgstr ""
 #: view_home_home_22
 msgid "in, or "

@@ -88,6 +88,7 @@ en:
   controller_passwords_5: Password must not be empty.
   view_home_home_3: " stands for a human Linux that is easy to use. In order to use Ubuntu effectively, an excessive amount of programs have to be installed. It is not always easy to keep an overview. With Communtu you just specify for which purposes you want to use your computer and Communtu suggests several programs to you which will be installed automatically."
   view_home_contact_us_4: "Send "
+  download: download
   view_metapackages_show_0: "Bundle created by "
   controller_passwords_6: Password changed.
   view_home_home_4: More ...
@@ -109,6 +110,7 @@ en:
   about_us: About us
   back: Back
   no1: "no"
+  creation_in_progress: creation is in progress
   view_home_impressum_11: "Participants of the Communtu-team (alphabetical order):"
   view_rating_show_title_no_ratings: no user rating
   view_metapackages_show_8: "Rating: "
@@ -317,6 +319,7 @@ en:
   new_packages: "Newly added packages: "
   view_home_faq_kde_01: You can find the Communtu sources under "K-Menu -> Programs -> System -> Software Sources -> Other Software". They can also be deactivated here.
   view_home_derivatives_41: Ubuntu ultimate - Ubuntu with many desktop-designs and applications.
+  based_on_bundle: "Based on bundle:"
   view_home_faq_kde_02: You can access KPackageKit via "K-Menu -> Programs -> System -> Administration -> Software Management". From the right dropdown menu you choose "packages.communtu.org". The list now appearing contains every metapackage available in Communtu. To uninstall a metapackage you click on one of the installed metapackages and mark it with the X right of the entry. To remove it from your system you need to click on "Apply". You now see a summary of the changes that will be made and after a click on "Ok" they will be removed from your system.
   view_home_news_15: Our blog
   view_home_derivatives_42: " - specialised for webservices."
@@ -769,6 +772,7 @@ en:
   view_home_icons_6: " install sources"
   model_package_9: While the synchronization of the repository {{repo_name}} no PackageDistr-entry for the package {{package_name}} could be found.
   view_home_about_12: <b>Administrate bundles</b> on the left side offers an overview about the available bundles. At last, an overview about the available Ubunt versions (distributions) can be found at <b>Ubuntu versions</b>.
+  creation_failed: Creation failed
   view_home_icons_9: " installation via shell-script"
   distribution: Distribution
   link_community: http://ubuntuforums.org
@@ -811,17 +815,19 @@ en:
   controller_home_3: This does not appear to be a list with Ubuntu-packages... <br />The packagelist must contain one packagename per line
   controller_home_4: A file with the package list (one package name per line) has to be given
   view_derivatives_index_0: show derivatives
+  livecd_created_by: "Live-CD/DVD created by:"
   controller_home_5: We received your suggestion and we will inform you if imbibe the suggested repository and when we will imbibe it.
   view_home_home_20: " to create a new user or"
   security_type: "Security type:"
   view_home_home_21: "log "
   inbox: Inbox
   view_home_home_22: "in, or "
-  view_home_home_23: use Communtu as a guest
+  creation_successful: Creation was successful
   controller_categories_0: Categories
-  update: Refresh
-  view_home_home_24: To the imprint
+  view_home_home_23: use Communtu as a guest
   statistics: View statistics
+  view_home_home_24: To the imprint
+  update: Refresh
   controller_categories_2: Category created.
   view_home_home_25: For questions concerning Communtu we have created a "FAQ".
   description: Description

@@ -367,6 +367,10 @@ msgstr " stands for a human Linux that is easy to use. In order to use Ubuntu ef
 msgid "Senden"
 msgstr "Send "
 
+#: download
+msgid "herunterladen"
+msgstr "download"
+
 #: wait_for_sync
 msgid "auf Synchronisation der Repositories warten"
 msgstr "waiting for syncronisation with repositories"
@@ -450,6 +454,10 @@ msgstr "Back"
 #: no1
 msgid "nein"
 msgstr "no"
+
+#: creation_in_progress
+msgid "wird gerade erstellt"
+msgstr "creation is in progress"
 
 #: view_home_impressum_11
 msgid "Mitwirkende an der AG Communtu (Alphabetische Reihenfolge):"
@@ -1240,6 +1248,10 @@ msgstr "You can find the Communtu sources under \"K-Menu -> Programs -> System -
 #: view_home_derivatives_41
 msgid " Ubuntu ultimate  - Ubuntu mit vielen Desktop-Desgins und Programmen."
 msgstr "Ubuntu ultimate - Ubuntu with many desktop-designs and applications."
+
+#: based_on_bundle
+msgid "basiert auf Bündel:"
+msgstr "Based on bundle:"
 
 #: view_home_faq_kde_02
 msgid "KPackageKit erreichst Du über \"K-Menu -> Programme-> System -> Systemverwaltung -> Software-Verwaltung\". Hier wählst Du rechts aus dem Ausklapp-Menü \"packages.communtu.org\" aus. Aus der Liste suchst Du nun das Metapaket aus, welches Du installiert hast und markierst es mit einem Klick auf das X rechts neben dem Eintrag. Um das Metapaket nun zu entfernen ist nur noch ein Klick auf \"Übernehmen\" notwendig. Es wird jetzt noch eine Übersicht der zu entfernenden Programme angezeigt und nach einem Klick auf \"Ok\" werden diese von deinem Computer gelöscht."
@@ -2919,6 +2931,10 @@ msgstr "(Based on {{votes}} rating(s))"
 msgid "Nachricht erfolgreich versendet"
 msgstr "message successfully send"
 
+#: view_user_profiles__sources_1
+msgid "Hier werden die zu installierenden Programme und Pakete nach den zugehörigen Quellen sortiert aufgelistet, so dass du auch sehen kannst, weshalb die jeweiligen Quellen hinzugefügt werden."
+msgstr "The soon be installed programs and packages are shown and ordered by the appropriate sources so you can see why some sources will be added."
+
 #: model_package_0
 msgid "Freie Software"
 msgstr "Free software"
@@ -2927,21 +2943,21 @@ msgstr "Free software"
 msgid "Fehlende debs für Bündel:"
 msgstr "Missing debs for bundle:"
 
-#: view_user_profiles__sources_1
-msgid "Hier werden die zu installierenden Programme und Pakete nach den zugehörigen Quellen sortiert aufgelistet, so dass du auch sehen kannst, weshalb die jeweiligen Quellen hinzugefügt werden."
-msgstr "The soon be installed programs and packages are shown and ordered by the appropriate sources so you can see why some sources will be added."
+#: view_user_profiles__profile_rating_0
+msgid "Auswahl der zu installierenden Programmbündel und Programme"
+msgstr "Detailed choice of the programs and bundles that shall be installed"
 
 #: model_package_1
 msgid "Frei+proprietär"
 msgstr "free+proprietary"
 
-#: view_user_profiles__profile_rating_0
-msgid "Auswahl der zu installierenden Programmbündel und Programme"
-msgstr "Detailed choice of the programs and bundles that shall be installed"
-
 #: view_home_impressum_4
 msgid "Bauernstr. 2"
 msgstr "Bauernstr. 2"
+
+#: view_user_profiles__profile_rating_1
+msgid "Durch Klicken auf "
+msgstr "With a click on "
 
 #: model_package_2
 msgid "Unbekannt"
@@ -2950,10 +2966,6 @@ msgstr "unknown"
 #: view_home_icons_0
 msgid "Icons bei Communtu"
 msgstr "icons used in Communtu"
-
-#: view_user_profiles__profile_rating_1
-msgid "Durch Klicken auf "
-msgstr "With a click on "
 
 #: view_home_impressum_5
 msgid "28203 Bremen"
@@ -2977,13 +2989,13 @@ msgstr ""
 msgid "Videos:"
 msgstr "Videos:"
 
-#: senden
-msgid "Abschicken"
-msgstr "Send"
-
 #: view_user_profiles__profile_rating_3
 msgid "Achtung! Zum Schluss auf \"Auswahl speichern\" klicken."
 msgstr "Attention! When finished, don't forget to click on \"Save selection\"."
+
+#: senden
+msgid "Abschicken"
+msgstr "Send"
 
 #: view_home_icons_3
 msgid " Paket(e) installieren."
@@ -3016,6 +3028,10 @@ msgstr "While the synchronization of the repository {{repo_name}} no PackageDist
 #: view_home_about_12
 msgid "<b>Bündel verwalten</b> auf der linken Seitenleiste gibt dir einen Überblick über die verfügbaren Bündel. Schließlich gibt es unter <b>Ubuntu-Versionen</b> eine Übersicht über die im System verfügbaren Ubuntu-Versionen (Distributionen)."
 msgstr "<b>Administrate bundles</b> on the left side offers an overview about the available bundles. At last, an overview about the available Ubunt versions (distributions) can be found at <b>Ubuntu versions</b>."
+
+#: creation_failed
+msgid "Erzeugung fehlgeschlagen"
+msgstr "Creation failed"
 
 #: view_home_icons_9
 msgid " Installation per Shell-Script"
@@ -3185,6 +3201,10 @@ msgstr "A file with the package list (one package name per line) has to be given
 msgid "Derivate auflisten"
 msgstr "show derivatives"
 
+#: livecd_created_by
+msgid "Live-CD/DVD erstellt von: "
+msgstr "Live-CD/DVD created by:"
+
 #: controller_home_5
 msgid "Wir haben Deinen Vorschlag erhalten und werden Dich informieren, ob und wann wir das vorgeschlagene Repository aufnehmen werden."
 msgstr "We received your suggestion and we will inform you if imbibe the suggested repository and when we will imbibe it."
@@ -3204,6 +3224,10 @@ msgstr "log "
 #: inbox
 msgid "Posteingang"
 msgstr "Inbox"
+
+#: creation_successful
+msgid "Erstellung war erfolgreich"
+msgstr "Creation was successful"
 
 #: view_home_home_22
 msgid " dich an, oder "
