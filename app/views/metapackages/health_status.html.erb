@@ -16,8 +16,12 @@
   <%=t(:none)%>
 <%else%>
   <ul>
-  <%for b in @bundles_with_missing_packages%>
-   <li> <%=link_to b.name, metapackage_path(b)%></li>
+  <%  @bundles_with_missing_packages.each do |p,dists|%>
+   <li> <%=link_to b.name, package_path(p)%>: 
+        <% for d in dists %>
+          <%= link_to d.name, distribution_path(d) %>
+        <% end %>
+   </li>
   <%end%>
   </ul>
 <%end%>

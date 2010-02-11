@@ -11,6 +11,10 @@ class Distribution < ActiveRecord::Base
   def predecessor
     self.distribution
   end
+
+  def successor
+    Distribution.find_by_distribution_id(self.id)
+  end
   
   def description
     translation(self.description_tid)

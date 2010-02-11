@@ -395,7 +395,22 @@ class MetapackagesController < ApplicationController
 
   def health_status
     @bundles_with_missing_debs = Metapackage.find(:all,:conditions=>["debs.generated = 0"],:include=>:debs)
-    @bundles_with_missing_packages = []
+    @used_packages = Package.find(:all,:joins=>"INNER JOIN metacontents ON metacontents.base_package_id = base_packages.id").uniq
+    @bundles_with_missing_packages = {}
+    @used_packages.each do |p|
+      dists = p.distributions.sort{|x,y| x.id <=> y.id}
+      dists.each do |d|
+        dsuc = d.successor
+        if !dsuc.nil? then
+          if !dists.include?(dsuc) then
+            if @bundles_with_missing_packages[p].nil? then
+              @bundles_with_missing_packages[p] = []
+            end
+            @bundles_with_missing_packages[p] << d
+          end
+        end
+      end
+    end
     @repositories_without_packages =
       Repository.all.select{|r| PackageDistr.find_by_repository_id(r.id).nil?}
     @failed_live_cds = Livecd.find_all_by_failed(true)

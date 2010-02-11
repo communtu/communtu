@@ -17,6 +17,7 @@ de:
   archive: Archiv
   are_you_sure: Bist du sicher?
   back: "zurück"
+  based_on_bundle: basiert auf Bündel:
   being_created: "wird erstellt"
   blog: Der Blog von Communtu
   blog_2: Blog
@@ -134,6 +135,9 @@ de:
   controller_users_9: Es gab ein Problem mit der Deaktivierung dieses Benutzers.
   create: Anlegen
   creation_error: Bei der Erstellung des Pakets ist ein Fehler aufgetreten.
+  creation_failed: Erzeugung fehlgeschlagen
+  creation_in_progress: wird gerade erstellt
+  creation_successful: Erstellung war erfolgreich
   deb_generation_in_background: Debs werden im Hintergrund erzeugt (ggf. Browser-Ansicht aktualisieren)
   debian_section: "Debian-Section:"
   delete: "Löschen"
@@ -147,6 +151,7 @@ de:
   donation_possibility: "Spendenmöglichkeit"
   donation_purpose: "Verwendungszweck: Communtu"
   donation_receipt: Spendenbescheinigung kann ausgestellt werden.
+  download: herunterladen
   edit: Bearbeiten
   edit_architecture: Architektur bearbeiten
   edit_press_archiv: Pressearchiv bearbeiten
@@ -209,6 +214,7 @@ de:
   livecd: "Live-CD/DVD"
   livecd_communtu_name: "Namen mit communtu- sind für LiveCDs/DVDs reserviert, die aus Bündeln erstellt werden"
   livecd_create: "Die Live-CD/DVD wird jetzt erstellt. Wir benachrichtigen dich per Email, sobald sie fertig ist."
+  livecd_created_by: "Live-CD/DVD erstellt von: "
   livecd_email: "Communtu: Benachrichtigung über Live-CD/DVD"
   livecd_email_failed: "Communtu: Erstellung der Live-CD/DVD fehlgeschlagen"
   livecd_email_body: ", die Live-CD/DVD wurde erstellt! Folge dem Link: "
