@@ -26,6 +26,6 @@
 <% end %>
 <p>
 <% if !@cd.log.nil? %>
-  <%= h @cd.log %>
+  <%= (h @cd.log).gsub(/\n/,"<br />") %>
 <% end %>
 </p>
