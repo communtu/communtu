@@ -8,7 +8,7 @@ class UsersController < ApplicationController
   
   before_filter :not_logged_in_required, :only => [:new, :create] 
   before_filter :login_required, :only => [:show, :edit, :update, :disable, :distroy, :enable, :metapackages]
-  before_filter :check_administrator_role, :only => [:index, :destroy, :enable, :disable, :user_statistics]
+  before_filter :check_administrator_role, :only => [:index, :destroy, :enable, :disable, :user_statistics, :spam_users_delete]
   
   helper :users
     
@@ -100,6 +100,20 @@ class UsersController < ApplicationController
   def edit
     @user = current_user
   end
+
+  def spam_users_delete
+   system('grep -C 10 "No action responded to users" /home/communtu/web2.0/communtu-program/log/production.log|grep -o [A-Za-z0-9_-]*@[A-Za-z0-9_.-]* > ~/spam_users.txt')
+    f = File.open('/home/communtu/web2.0/spam_users.txt')  
+      while not f.eof? do  
+        ud = User.find(:first, :conditions => {:email => f.gets})   
+          if ud != ""
+            User.delete(ud.id)
+          end                      
+      end  
+    flash[:notice] = t(:spam_user_delete)
+    redirect_to '/home'            
+  end
+
   
   def update
     @user = User.find(current_user)

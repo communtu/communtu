@@ -288,6 +288,7 @@ auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} er
   none: Keine
   not_accepted: Die eingegebene E-Mail-Adresse hat ungültige Formate oder ist unvollständig.
   not_logged_in: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
+  order_number: "Sortiernummer (kleinste Zahl zu erst):"
   package_list: zurück zur Paketliste
   packages: Pakete
   packages_for_ubuntu: Pakete für Ubuntu
@@ -315,6 +316,7 @@ auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} er
   settings: Einstellungen
   show: Anzeigen
   sources: Quellen
+  spam_user_delete: Alle Spam-User gelöscht.
   statistics: Aufrufstatistik
   steps_for_distribution_setup: Schritte für das Einrichten einer neuen Distribution (bitte auf admin-System durchführen)
   subject_with_colon: "Betreff: "

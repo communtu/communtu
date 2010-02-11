@@ -25,6 +25,7 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/contact_us', :controller => 'home', :action => 'contact_us'
   map.connect '/cancel', :controller => 'home', :action => 'cancel'
   map.connect '/success', :controller => 'home', :action => 'success'
+  map.connect '/users/spam_users_delete', :controller => 'users', :action => 'spam_users_delete'
 
   map.resources :livecds
   map.connect '/metapackages/:id/publish', :controller => "metapackages", :action => "publish", :method => :put
