@@ -22,7 +22,7 @@
   <p><%= t(:creation_in_progress) %></p>
 <% end %>
 <% if @cd.failed %>
-  <p><%= t(:creation_failed) %></p>
+  <p><%= t(:creation_failed) %>  <%= link_to t(:generate_cd), :action => 'remaster' %></p>
 <% end %>
 <p>
 <% if !@cd.log.nil? %>

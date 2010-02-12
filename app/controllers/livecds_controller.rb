@@ -8,5 +8,10 @@ class LivecdsController < ApplicationController
   def show
     @cd = Livecd.find(params[:id])
   end
-  
+
+  def remaster
+    @cd = Livecd.find(params[:id])
+    @cd.fork_remaster
+    redirect_to :back
+  end
 end
