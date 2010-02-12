@@ -667,6 +667,9 @@ msgstr ""
 #: view_home_derivatives_24
 msgid "Derivatives, which should be installed with the derivative installation-CD:"
 msgstr ""
+#: spam_user_delete
+msgid "All spam users deleted."
+msgstr ""
 #: view_users_index_1
 msgid "We have a total of "
 msgstr ""
@@ -2185,6 +2188,9 @@ msgstr ""
 #: livecd_email_body
 msgid ", the Live-CD/DVD has been created. Follow this link:"
 msgstr ""
+#: order_number
+msgid "Sort by number (smallest number first):"
+msgstr ""
 #: view_user_profiles__profile_rating_2
 msgid " you can \nopen or close a section to make a detailed selection."
 msgstr ""
@@ -2359,11 +2365,11 @@ msgstr ""
 #: view_home_home_20
 msgid " to create a new user or"
 msgstr ""
-#: security_type
-msgid "Security type:"
-msgstr ""
 #: view_home_home_21
 msgid "log "
+msgstr ""
+#: security_type
+msgid "Security type:"
 msgstr ""
 #: inbox
 msgid "Inbox"

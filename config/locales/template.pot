@@ -670,6 +670,9 @@ msgstr ""
 #: view_home_derivatives_24
 msgid "Derivate, die mit der Derivats-eigenen Installations-CD installiert werden sollten:"
 msgstr ""
+#: spam_user_delete
+msgid "Alle Spam-User gelöscht."
+msgstr ""
 #: view_users_new_1
 msgid "Hier hast du die Möglichkeit dich zu registrieren."
 msgstr ""
@@ -1057,14 +1060,14 @@ msgstr ""
 #: view_users__sidebar_2
 msgid "Programme suchen"
 msgstr ""
+#: view_user_profiles__profile_data_8
+msgid "Über den Browser festgestellte Version: "
+msgstr ""
 #: view_user_profiles_help_2
 msgid "Gebe dort ein: "
 msgstr ""
 #: view_home_derivatives_50
 msgid " - mit Fluxbox und verschiedenen Netzwerk-Sicherheitswerkzeugen ."
-msgstr ""
-#: view_user_profiles__profile_data_8
-msgid "Über den Browser festgestellte Version: "
 msgstr ""
 #: view_home_faq_10
 msgid "Du gehst auf den Menüpunkt \"Meine Bündel\" unter \"Bündel\" und läßt Dir da Deine Bündel auflisten. Das zu ändernde Bündel klickst Du nun an. Du bekommst nun alle wichtigen Informationen zu Deinem Bündel angezeigt. Unter \"Aktionen\" kannst Du nun dieses Bündel oder auch die Paketliste editieren. Wenn das Paket nicht veröffentlicht ist, dann kannst Du es auch löschen oder ansonsten auch veröffentlichen."
@@ -1074,6 +1077,9 @@ msgid "Die Liste der auf deinem Computer installierten Pakete kannst du zum Beis
 msgstr ""
 #: controller_metapackages_6
 msgid "Dieser Bündel-Name ist bereits vergeben<br>"
+msgstr ""
+#: view_user_profiles__profile_data_9
+msgid "Hier kannst du einstellen, wie sicher bzw. komfortabel deine Installationsquellen sein sollen"
 msgstr ""
 #: view_user_profiles_help_3
 msgid "Wenn deine Version von Communtu nicht unterstützt wird, gibt es zwei Möglichkeiten:"
@@ -1086,9 +1092,6 @@ msgid " - Installation von Programmen und Versionen, die nicht über die offizie
 msgstr ""
 #: view_roles_edit_0
 msgid "Rolle bearbeiten"
-msgstr ""
-#: view_user_profiles__profile_data_9
-msgid "Hier kannst du einstellen, wie sicher bzw. komfortabel deine Installationsquellen sein sollen"
 msgstr ""
 #: view_home_faq_11
 msgid "Wie erstelle ich ein Bündel aus meinen installierten Programmen?"
@@ -2187,6 +2190,9 @@ msgid "28203 Bremen"
 msgstr ""
 #: livecd_email_body
 msgid ", die Live-CD/DVD wurde erstellt! Folge dem Link: "
+msgstr ""
+#: order_number
+msgid "Sortiernummer (kleinste Zahl zu erst):"
 msgstr ""
 #: view_user_profiles__profile_rating_2
 msgid " lässt \nsich ein Bereich ein- oder ausklappen."

@@ -222,6 +222,7 @@ en:
   view_users_index_0: All users
   prepare_livecd: Prepare Live-CD/DVD (script/remaster-getisos)
   view_home_derivatives_24: "Derivatives, which should be installed with the derivative installation-CD:"
+  spam_user_delete: All spam users deleted.
   view_users_index_1: "We have a total of "
   view_users_new_1: Here you have the possibility to register yourself.
   view_home_derivatives_25: http://en.wikipedia.org/wiki/Xfce
@@ -759,6 +760,7 @@ en:
     28203 Bremen
     Germany
   livecd_email_body: ", the Live-CD/DVD has been created. Follow this link:"
+  order_number: "Sort by number (smallest number first):"
   view_user_profiles__profile_rating_2: " you can \n\
     open or close a section to make a detailed selection."
   videos: "Videos:"
@@ -818,9 +820,9 @@ en:
   livecd_created_by: "Live-CD/DVD created by:"
   controller_home_5: We received your suggestion and we will inform you if imbibe the suggested repository and when we will imbibe it.
   view_home_home_20: " to create a new user or"
+  inbox: Inbox
   security_type: "Security type:"
   view_home_home_21: "log "
-  inbox: Inbox
   view_home_home_22: "in, or "
   creation_successful: Creation was successful
   controller_categories_0: Categories
