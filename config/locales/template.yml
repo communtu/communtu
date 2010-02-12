@@ -229,6 +229,7 @@ auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} er
   livecd_previous_cds: "Bisher erstellte Live-CDs/DVDs:"
   livecd_start: "Live-CD/DVD erstellen"
   livecd_start_message: "Hier kannst du eine Live-CD/DVD erstellen lassen, die die von dir ausgewählte Software enthält. Du hast folgende Bündel ausgewählt:"
+  logfile_extract: Auszug aus dem Logfile
   mailinglist: "Mailinglisten:"
   make_distribution_visible: Distribution sichtbar machen
   make_distribution_final: Distribution als stabil freigeben

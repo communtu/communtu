@@ -11,6 +11,8 @@ class LivecdsController < ApplicationController
 
   def remaster
     @cd = Livecd.find(params[:id])
+    @cd.failed = false
+    @cd.save
     @cd.fork_remaster
     redirect_to :back
   end
