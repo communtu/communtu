@@ -392,10 +392,10 @@ class MetapackagesController < ApplicationController
     flash[:notice] = t(:controller_metapackages_please_regenerate)
     redirect_to :action => :show, :id => params[:id]
   end
-
+#Package.find_by_sql("SELECT * from base_packages INNER JOIN metacontents ON metacontents.base_package_id = base_packages.id INNER JOIN metacontents_distrs ON metacontents.id = metacontents_distrs.id WHERE metacontents_distrs.distribution_id = 2").size
   def health_status
     @bundles_with_missing_debs = Metapackage.find(:all,:conditions=>["debs.generated = 0"],:include=>:debs)
-    @used_packages = Package.find(:all,:joins=>"INNER JOIN metacontents ON metacontents.base_package_id = base_packages.id").uniq
+    @used_packages = Package.find(:all,:joins=>"INNER JOIN metacontents ON metacontents.base_package_id = base_packages.id",:limit => 100).uniq
     @bundles_with_missing_packages = {}
     @used_packages.each do |p|
       dists = p.distributions.sort{|x,y| x.id <=> y.id}
