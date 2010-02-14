@@ -1168,6 +1168,9 @@ msgstr ""
 #: view_home_faq_15
 msgid "How can I install a single program?"
 msgstr ""
+#: generate_cd
+msgid "Recreate Live-CD/DVD"
+msgstr ""
 #: view_rating_show_title_got_ratings
 msgid "of 5 stars"
 msgstr ""
@@ -2245,6 +2248,9 @@ msgstr ""
 #: fine_selection
 msgid "Fine selection"
 msgstr ""
+#: logfile_extract
+msgid "Extract from the logfile"
+msgstr ""
 #: lib_system_0
 msgid "In order to use this feature you have to be logged in. Logging in via \"Guest session\" is also possible."
 msgstr ""
@@ -2365,11 +2371,11 @@ msgstr ""
 #: view_home_home_20
 msgid " to create a new user or"
 msgstr ""
-#: view_home_home_21
-msgid "log "
-msgstr ""
 #: security_type
 msgid "Security type:"
+msgstr ""
+#: view_home_home_21
+msgid "log "
 msgstr ""
 #: inbox
 msgid "Inbox"

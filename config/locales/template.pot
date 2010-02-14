@@ -1021,11 +1021,11 @@ msgstr ""
 #: view_home_faq_09
 msgid "Wie kann ich ein Bündel ändern?"
 msgstr ""
-#: view_user_profiles_help_0
-msgid "Feststellen der Ubuntu-Version"
-msgstr ""
 #: view_user_profiles__profile_data_6
 msgid "Wähle bitte deine Ubuntu-Version aus. "
+msgstr ""
+#: view_user_profiles_help_0
+msgid "Feststellen der Ubuntu-Version"
 msgstr ""
 #: view_cart_new_from_list_0
 msgid "Bündel aus einer Paketliste erstellen"
@@ -1042,14 +1042,14 @@ msgstr ""
 #: view_users__sidebar_1
 msgid "Bündel verwalten"
 msgstr ""
+#: view_user_profiles__profile_data_7
+msgid "Wie stelle ich die Version fest?"
+msgstr ""
 #: view_user_profiles_help_1
 msgid "Öffne ein Terminal unter \"Anwendungen\" -> \"Zubehör\" -> \"Terminal"
 msgstr ""
 #: participation
 msgid "Beteiligungsmöglichkeiten"
-msgstr ""
-#: view_user_profiles__profile_data_7
-msgid "Wie stelle ich die Version fest?"
 msgstr ""
 #: view_cart_new_from_list_1
 msgid "Hier kannst du ein Bündel aus einer vorhandenen Paketliste erstellen.  Die Liste muss in Form einter Textdatei vorliegen (plain text),  mit einem Paketnamen pro Zeile."
@@ -1170,6 +1170,9 @@ msgid " - Mediacenter."
 msgstr ""
 #: view_home_faq_15
 msgid "Wie kann ich ein einzelnes Programm installieren?"
+msgstr ""
+#: generate_cd
+msgid "LiveCD/DVD neu erstellen"
 msgstr ""
 #: view_users__sidebar_8
 msgid "Fehlgeschlagene debs"
@@ -2247,6 +2250,9 @@ msgid "Natur, Geist und Technik - Verein zur Förderung der Allgemeinbildung e.V
 msgstr ""
 #: fine_selection
 msgid "Feinauswahl"
+msgstr ""
+#: logfile_extract
+msgid "Auszug aus dem Logfile"
 msgstr ""
 #: lib_system_0
 msgid "Du musst eingeloggt sein, um dieses Feature zu benutzen. Geht auch als \"Gast\"."
