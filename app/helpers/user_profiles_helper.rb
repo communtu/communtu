@@ -32,7 +32,7 @@ module UserProfilesHelper
     def show_selection_subtree2 root, selection, rating, depth
         # +check_box_tag("post[" + root.name + "]", 1, rating[root.id])
         out = "<div class='suggestionHeader'><ul class='suggestionHeader'>\n"
-            out += "<li class='suggestionCollapse'>"+"<img src='/images/add.png' width='10' height='10' onclick=\"['packages" + \
+            out += "<li class='suggestionCollapse'>"+"<img src='/images/add.png' title='" + root.description + "' alt='" + root.description + "' width='10' height='10' onclick=\"['packages" + \
                 root.id.to_s + "'].each(Element.toggle)\"></li>\n"
             out += "<li class='suggestionHeader' ><b onclick=\"['packages" + \
                             root.id.to_s + "'].each(Element.toggle)\">" + root.name + "</b>"+check_box_tag("categories[" + root.id.to_s + "]", 1, rating[root.id], :onclick => ("['packages" + \
