@@ -107,6 +107,10 @@ end
     u = find :first, :conditions => ['login = ?', login] # need to get the salt
     u && u.authenticated?(password) ? u : nil  
   end
+
+  def enabled?
+    self.enabled 
+  end
  
   # Encrypts some data with the salt.
   def self.encrypt(password, salt)
