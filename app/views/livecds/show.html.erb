@@ -14,9 +14,9 @@
 <% end %>
 <% if @cd.generated %>
   <p><%= t(:creation_successful) %>, 
-      <%= link_to t(:download), cd.url %>,
-      <%= number_to_human_size(cd.size) %>,
-      <%= change_date_time(cd.updated_at).to_s %></p>
+      <%= link_to t(:download), @cd.url %>,
+      <%= number_to_human_size(@cd.size) %>,
+      <%= change_date_time(@cd.updated_at).to_s %></p>
 <% end %>
 <% if @cd.generating %>
   <p><%= t(:creation_in_progress) %></p>
