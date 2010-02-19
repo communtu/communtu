@@ -44,16 +44,20 @@ class Livecd < ActiveRecord::Base
   end
 
   def remaster
-    system "dotlockfile -r 1000 #{RAILS_ROOT}/livecd_lock"
-    begin
-      self.generating = true
-      self.save
-      system "(echo; echo \"------------------------------------\"; echo \"Creating live CD\"; date) >> #{RAILS_ROOT}/log/livecd.log"
-      ver = self.fullversion
-      iso = self.filename
-      isourl = self.url
-      fullname = self.fullname
-      if Dir.glob(iso)[0].nil? then
+    ver = self.fullversion
+    iso = self.filename
+    isourl = self.url
+    fullname = self.fullname
+    if !Dir.glob(iso)[0].nil? then
+      # iso already exists? then we are done
+      res = true
+    else
+      # need to generate iso, use lock in order to prevent parallel generation of multiple isos
+      system "dotlockfile -r 1000 #{RAILS_ROOT}/livecd_lock"
+      begin
+        self.generating = true
+        self.save
+        system "(echo; echo \"------------------------------------\"; echo \"Creating live CD\"; date) >> #{RAILS_ROOT}/log/livecd.log"
         # Karmic and higher need virtualisation due to requirement of sqaushfs version >= 4
         if self.distribution_id >= 5 then
           virt = "-v "
@@ -65,31 +69,27 @@ class Livecd < ActiveRecord::Base
         res = system remaster_call
         # kill VM, necessary in case of abrupt exit
         system "pkill -f \"kvm -daemonize .* -redir tcp:2222::22\""
-      else
-        res = true
+        system "(echo; echo \"finished at:\"; date; echo; echo) >> #{RAILS_ROOT}/log/livecd.log"
+        if !res then
+          system "(echo; echo \"Creation of livd CD failed\"; echo) >> #{RAILS_ROOT}/log/livecd.log"
+          self.log = IO.popen("tail -n80 #{RAILS_ROOT}/log/livecd.log").read
+        end
+        self.generating = false
+      rescue
+        self.log = "ruby code for live CD/DVD creation crashed"
+        res = false
       end
-      system "(echo; echo \"finished at:\"; date; echo; echo) >> #{RAILS_ROOT}/log/livecd.log"
-      if !res then
-        system "(echo; echo \"Creation of livd CD failed\"; echo) >> #{RAILS_ROOT}/log/livecd.log"
-        self.log = IO.popen("tail -n80 #{RAILS_ROOT}/log/livecd.log").read
-      end
-      self.failed = !res
-      self.generating = false
-      self.save
-    rescue
-      self.log = "ruby code for live CD/DVD creation crashed"
-      self.save
-      res = false
+      system "dotlockfile -u #{RAILS_ROOT}/livecd_lock"
     end
-    system "dotlockfile -u #{RAILS_ROOT}/livecd_lock"
+    self.failed = !res
     if res then
       self.generated = true
       self.size = File.size(self.filename)
-      self.save
       MyMailer.deliver_livecd(self.user,isourl)
     else
       MyMailer.deliver_livecd_failed(self.user,self.fullname)
     end
+    self.save
   end
 
   protected
