@@ -105,10 +105,16 @@ class UsersController < ApplicationController
    system('grep -C 10 "No action responded to users" /home/communtu/web2.0/communtu-program/log/production.log|grep -o [A-Za-z0-9_-]*@[A-Za-z0-9_.-]* > ~/spam_users.txt')
     f = File.open('/home/communtu/web2.0/spam_users.txt')  
       while not f.eof? do  
-        ud = User.find(:first, :conditions => {:email => f.gets})   
-          if ud != ""
-            User.delete(ud.id)
-          end                      
+          email = f.gets
+          email = email.gsub("\n","")
+          if User.find(:first, :conditions => {:email => email}).nil? then
+             ud = ""
+          else
+             ud = User.find(:first, :conditions => {:email => email}) 
+          end 
+            if ud.id != ""
+                User.delete(ud.id)
+            end                   
       end  
     flash[:notice] = t(:spam_user_delete)
     redirect_to '/home'            
@@ -156,12 +162,13 @@ class UsersController < ApplicationController
  
   def delete
     @user = User.find(params[:id])
-    if @user.update_attribute(:enabled, false)
-      flash[:notice] = t(:controller_users_10)
-    else
-      flash[:error] = t(:controller_users_11)
-    end
-    redirect_to '/logout'
+    @user.delete
+ #   if @user.update_attribute(:enabled, false)
+ #     flash[:notice] = t(:controller_users_10)
+ #   else
+ #     flash[:error] = t(:controller_users_11)
+ #   end
+ #   redirect_to '/logout'
   end
   
   def enable
