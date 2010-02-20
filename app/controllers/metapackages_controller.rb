@@ -5,9 +5,13 @@ class MetapackagesController < ApplicationController
   before_filter :check_administrator_role, :flash => { :notice => I18n.t(:no_admin) }, :only => :reset
 
   def title
+    if params[:action] == "show"
+    "Communtu - " + t(:bundle) + ": " + @metapackage.name
+    else
     t(:bundle)
+    end
   end
-
+  
   @@migrations = {}
     
   def index
