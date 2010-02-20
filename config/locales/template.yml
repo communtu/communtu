@@ -193,6 +193,7 @@ de:
   imprint: Impressum
   invisible_distribution: Unsichtbare Distribution
   inbox: Posteingang
+  include_programs_bundel: "Enthaltende Programme/Bündel:"
   install2: installieren
   install_by_default: "Standardmäßig installieren:"
   installing_using_script: installieren mittels Skript
@@ -286,6 +287,7 @@ auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} er
   no_admin: Du bist kein Administrator!
   no1: nein
   no_cookies: Du hast Deine Cookies deaktiviert. Zum Nutzen von Communtu sind diese erforderlich. Wir empfehlen Dir, die Cookies wieder anzuschalten.
+  no_packet_information_found: "Es konnten keine Angabe zu Paketinformationen getroffen werden."
   no_save_database: "Die folgenden Pakete konnten nicht in der Datenbank gespeichert werden:"
   none: Keine
   not_accepted: Die eingegebene E-Mail-Adresse hat ungültige Formate oder ist unvollständig.

@@ -1,0 +1,18 @@
+	<% #mcs = metapackage.metacontents.sort_by {|mc| [mc.package.ptype, mc.package.name] }
+%>
+<% mcs = Metacontent.find(:all, :conditions => {:metapackage_id => @metapackage}) %>
+<% c = 0 %>
+	<% mcs.each do |mc| %>
+<% if mc.package.is_program == true or mc.package.type == "Metapackage" %>
+<% if c == 0 %>
+<b><%=t(:include_programs_bundel)%></b><ul>
+<% end %>
+    <li><%= mc.package.name %></li>
+<% c = c + 1 %> 
+<% end %>
+	<% end %>
+<% if c == 0 %>
+<%=t(:no_packet_information_found)%>
+<% else %>
+</ul>
+<% end %>

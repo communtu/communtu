@@ -13,7 +13,8 @@ module UserProfilesHelper
             out += "<div id='selected' class='suggestionPackage'>\n"
                 out += "<ul class='suggestionPackage'>"
                 out += "<li class='suggestionPackage'> " + check_box_tag("post[" + package.id.to_s + "]", 1, selected) + "</li>\n"
-                out += "<li class='suggestionPackage'>" + link_to(package.name,metapackage_url(:id => package.id), :target => '_blank',:title => t(:bundle_open_new_window)) + "</li>\n"
+                @metapackage = package.id
+                out += "<li class='suggestionPackage'>" + link_to(package.name+"<span class='tooltip'><span class='top'></span><span class='middle'>"+(render :partial => 'package_name_list', :locals => { :metapackage => @metapackage})+"</span><span class='bottom'></span></span>",metapackage_url(:id => package.id), :target => '_blank', :class => "tt") + "</li>\n"
                 out += "</ul>"
             out += "</div>\n"
             out += "<div id='unselected' class='suggestionDescription'>"
