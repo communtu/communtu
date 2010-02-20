@@ -64,6 +64,7 @@ en:
   controller_users_12: User activated
   view_user_profiles__installation_27: "Please configure "
   view_user_profiles__installation_28: https://wiki.ubuntu.com/AptUrl
+  no_packet_information_found: No details about package information could be made.
   name_with_colon: "Name:"
   controller_distributions_0: Ubuntu distributions
   kurzname: short name
@@ -116,6 +117,7 @@ en:
   view_metapackages_show_8: "Rating: "
   match_with_communtu: Communtu - match Ubuntu to your personal needs
   view_roles__role_0: delete role
+  include_programs_bundel: "Contains the following programs/bundles:"
   view_metapackages_show_9: "Published:"
   view_roles__role_1: assign role
   view_repositories_edit_0: edit repositories
@@ -820,8 +822,8 @@ en:
   controller_home_4: A file with the package list (one package name per line) has to be given
   view_derivatives_index_0: show derivatives
   livecd_created_by: "Live-CD/DVD created by:"
-  controller_home_5: We received your suggestion and we will inform you if imbibe the suggested repository and when we will imbibe it.
   view_home_home_20: " to create a new user or"
+  controller_home_5: We received your suggestion and we will inform you if imbibe the suggested repository and when we will imbibe it.
   inbox: Inbox
   view_home_home_21: "log "
   security_type: "Security type:"

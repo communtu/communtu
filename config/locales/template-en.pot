@@ -205,6 +205,9 @@ msgstr ""
 #: view_user_profiles__installation_28
 msgid "https://wiki.ubuntu.com/AptUrl"
 msgstr ""
+#: no_packet_information_found
+msgid "No details about package information could be made."
+msgstr ""
 #: name_with_colon
 msgid "Name:"
 msgstr ""
@@ -360,6 +363,9 @@ msgid "Communtu - match Ubuntu to your personal needs"
 msgstr ""
 #: view_roles__role_0
 msgid "delete role"
+msgstr ""
+#: include_programs_bundel
+msgid "Contains the following programs/bundles:"
 msgstr ""
 #: view_metapackages_show_9
 msgid "Published:"

@@ -271,6 +271,10 @@ msgstr "Please configure "
 msgid "http://wiki.ubuntuusers.de/apturl"
 msgstr "https://wiki.ubuntu.com/AptUrl"
 
+#: no_packet_information_found
+msgid "Es konnten keine Angabe zu Paketinformationen getroffen werden."
+msgstr "No details about package information could be made."
+
 #: name_with_colon
 msgid "Name: "
 msgstr "Name:"
@@ -478,6 +482,10 @@ msgstr "Rating: "
 #: view_roles__role_0
 msgid "Rolle löschen"
 msgstr "delete role"
+
+#: include_programs_bundel
+msgid "Enthaltende Programme/Bündel:"
+msgstr "Contains the following programs/bundles:"
 
 #: view_metapackages_show_9
 msgid "Veröffentlicht: "
