@@ -174,6 +174,19 @@ class CartController < ApplicationController
         end
         render_cart
     end
+
+    def add_to_cart_box
+        if editing_metapackage?
+            package = BasePackage.find(params[:id])
+            cart    = Cart.find(session[:cart])
+            
+            content = CartContent.new
+            content.cart_id         = cart.id
+            content.base_package_id = package.id
+            content.save!
+        end
+        render_cart_box
+    end
         
     def rem_from_cart
         if editing_metapackage?
@@ -186,8 +199,14 @@ class CartController < ApplicationController
     
     def render_cart
         respond_to do |wants|
-            wants.js { render :partial => 'metacart.html.erb' }
+            wants.js { render :partial => 'metacart.html.erb'}
         end
-  end
+    end
+
+    def render_cart_box
+        respond_to do |wants|
+            wants.js { render :partial => 'metacart_box.html.erb' }
+        end
+    end
     
 end
