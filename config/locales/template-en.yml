@@ -664,6 +664,7 @@ en:
   view_home_icons_12: " Program (if not other program-icon is available)"
   view_metapackages__metalist_2: Standard
   view_packages_show_15: source/repository
+  offer_new_category: Suggestion of a new category
   view_user_profiles__installation_1: In order to install, you have to specify some things at "Preadjustment" or "Details".
   view_packages__deps_1: "          Only for "
   view_derivatives_show_2: "dialog-program:"
@@ -821,8 +822,8 @@ en:
   view_home_home_18: Click on
   controller_home_3: This does not appear to be a list with Ubuntu-packages... <br />The packagelist must contain one packagename per line
   livecd_created_by: "Live-CD/DVD created by:"
-  controller_home_4: A file with the package list (one package name per line) has to be given
   view_derivatives_index_0: show derivatives
+  controller_home_4: A file with the package list (one package name per line) has to be given
   view_home_home_20: " to create a new user or"
   controller_home_5: We received your suggestion and we will inform you if imbibe the suggested repository and when we will imbibe it.
   inbox: Inbox

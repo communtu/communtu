@@ -1906,6 +1906,9 @@ msgstr ""
 #: view_packages_show_15
 msgid "source/repository"
 msgstr ""
+#: offer_new_category
+msgid "Suggestion of a new category"
+msgstr ""
 #: view_user_profiles__installation_1
 msgid "In order to install, you have to specify some things at \"Preadjustment\" or \"Details\"."
 msgstr ""
@@ -2365,11 +2368,11 @@ msgstr ""
 #: controller_home_3
 msgid "This does not appear to be a list with Ubuntu-packages... <br />The packagelist must contain one packagename per line"
 msgstr ""
-#: view_derivatives_index_0
-msgid "show derivatives"
-msgstr ""
 #: controller_home_4
 msgid "A file with the package list (one package name per line) has to be given"
+msgstr ""
+#: view_derivatives_index_0
+msgid "show derivatives"
 msgstr ""
 #: livecd_created_by
 msgid "Live-CD/DVD created by:"

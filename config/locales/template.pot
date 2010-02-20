@@ -961,14 +961,14 @@ msgstr ""
 #: view_home_faq_04
 msgid "Um ein Bündel zu installieren gibt es zwei Möglichkeiten.<p> Die erste Möglichkeit ist, dass Du auf <b>Download</b> klickst. Dort bekommst Du dann ein kleines Formular in welchem du die Aufgaben auswählst, die Du mit deinem Computer durchführen möchtest. Als Nächstes musst du deine Ubuntu-Version einstellen (diese wird in den meisten Fällen richtig erkannt und Du musst sie nur noch aus dem Menü auswählen) und welche Oberfläche Du benutzen möchtest (Gnome = Ubuntu, KDE = Kubuntu, XFCE = Xubuntu). Die letzten zwei Schritte betreffen die Lizenz und die Sicherheit der Programme, also welche Quellen du zulassen möchtest und ob deine Programme offen sind oder nicht. Du kannst nun entweder über \"Speichern\" direkt zum Abschluss des Prozesses kommen oder mit einem Klick auf \"Speichern und feiner auswählen\" noch eine genauere Auswahl treffen. Abschließend müssen die Quellen zu Deinem System hinzugefügt werden und, sobald dies abgeschlossen ist, musst du nur noch auf \"Installieren\" klicken und auf Dein System werden die von dir ausgewählten Programmen installiert.<p> Die zweite Möglichkeit ist, dass Du auf <b>Bündel</b> und dann \"Alle veröffentlichen Bündel\" klickst. Dort bekommst Du dann eine Übersicht über alle in Communtu erstellten Bündel. Hier müssen, sofern noch nicht geschehen, die Quellen hinzugefügt werden (ein Klick auf \"Quellen hinzufügen\") und dann mit einem Klick auf \"installieren mittels Metapaket\" das entsprechende Bündel installiert werden."
 msgstr ""
+#: view_user_profiles__profile_data_1
+msgid "Auf dieser Seite kannst du die Grundeinstellungen deines Computers angeben. "
+msgstr ""
 #: bundel_information_edit
 msgid "Bündel Informationen bearbeiten"
 msgstr ""
 #: view_metapackages_show_deb_error
 msgid "Beim Erzeugen von Metapaketen ist ein Fehler aufgetreten. Wir kümmern uns um das Problem."
-msgstr ""
-#: view_user_profiles__profile_data_1
-msgid "Auf dieser Seite kannst du die Grundeinstellungen deines Computers angeben. "
 msgstr ""
 #: view_home_news_18
 msgid "http://communtu.wordpress.com"
@@ -1908,6 +1908,9 @@ msgid "Standard"
 msgstr ""
 #: view_packages_show_15
 msgid "Quelle/Repository"
+msgstr ""
+#: offer_new_category
+msgid "Vorschlag einer neuen Kategorie"
 msgstr ""
 #: view_user_profiles__installation_1
 msgid "Um etwas installieren zu können, musst du zunächst unter \"Voreinstellungen\" oder \"Detailauswahl\" etwas auswählen."

@@ -1317,6 +1317,10 @@ msgstr " - minimalist and fast version of Ubuntu for older PCs."
 msgid "Um ein Bündel zu installieren gibt es zwei Möglichkeiten.<p> Die erste Möglichkeit ist, dass Du auf <b>Download</b> klickst. Dort bekommst Du dann ein kleines Formular in welchem du die Aufgaben auswählst, die Du mit deinem Computer durchführen möchtest. Als Nächstes musst du deine Ubuntu-Version einstellen (diese wird in den meisten Fällen richtig erkannt und Du musst sie nur noch aus dem Menü auswählen) und welche Oberfläche Du benutzen möchtest (Gnome = Ubuntu, KDE = Kubuntu, XFCE = Xubuntu). Die letzten zwei Schritte betreffen die Lizenz und die Sicherheit der Programme, also welche Quellen du zulassen möchtest und ob deine Programme offen sind oder nicht. Du kannst nun entweder über \"Speichern\" direkt zum Abschluss des Prozesses kommen oder mit einem Klick auf \"Speichern und feiner auswählen\" noch eine genauere Auswahl treffen. Abschließend müssen die Quellen zu Deinem System hinzugefügt werden und, sobald dies abgeschlossen ist, musst du nur noch auf \"Installieren\" klicken und auf Dein System werden die von dir ausgewählten Programmen installiert.<p> Die zweite Möglichkeit ist, dass Du auf <b>Bündel</b> und dann \"Alle veröffentlichen Bündel\" klickst. Dort bekommst Du dann eine Übersicht über alle in Communtu erstellten Bündel. Hier müssen, sofern noch nicht geschehen, die Quellen hinzugefügt werden (ein Klick auf \"Quellen hinzufügen\") und dann mit einem Klick auf \"installieren mittels Metapaket\" das entsprechende Bündel installiert werden."
 msgstr "There are two ways to install a bundle.<p> The first way is to click on <b>Download</b>. You will now be presented a small formular in which you can choose the tasks you want to perform with your computer. Next you have to choose which version of Ubuntu you want to use (in most cases it will be detected correctly and you only have to pick it from the list) and which GUI you use (Gnome = Ubuntu, KDE = Kubuntu, XFCE = Xubuntu). The last two steps are about the license and the security of the progams (which sources you want to be added and if the programs shall be open or closed source). You can now click on \"Save rough selection and install\" to get to the end and install the preselected bundles or you can click on \"Save rough selection\" to make a more detailed choice of the bundles being installed. Finally you need to add the Communtu sources to your system and, when this is finished, you only have to click on \"Install\" and the chosen bundles will be installed.<p> The second way is to click on <b>Bundle</b> and then on \"Published bundles\". You now see a list with every bundle created in Communtu. Here you can install a bundle directly with a click on \"Install through metapackage\", assuming you have added the sources earlier. If not, a click on \"Add sources\" will add them to your system."
 
+#: view_user_profiles__profile_data_1
+msgid "Auf dieser Seite kannst du die Grundeinstellungen deines Computers angeben. "
+msgstr "On this page you can enter the basic settings of your computer."
+
 #: bundel_information_edit
 msgid "Bündel Informationen bearbeiten"
 msgstr "edit bundle information"
@@ -1324,10 +1328,6 @@ msgstr "edit bundle information"
 #: view_metapackages_show_deb_error
 msgid "Beim Erzeugen von Metapaketen ist ein Fehler aufgetreten. Wir kümmern uns um das Problem."
 msgstr "While creating metapackages, an error occurred. We'll solve that problem as fast as possible."
-
-#: view_user_profiles__profile_data_1
-msgid "Auf dieser Seite kannst du die Grundeinstellungen deines Computers angeben. "
-msgstr "On this page you can enter the basic settings of your computer."
 
 #: view_home_news_18
 msgid "http://communtu.wordpress.com"
@@ -2602,6 +2602,10 @@ msgstr "Standard"
 #: view_packages_show_15
 msgid "Quelle/Repository"
 msgstr "source/repository"
+
+#: offer_new_category
+msgid "Vorschlag einer neuen Kategorie"
+msgstr "Suggestion of a new category"
 
 #: view_user_profiles__installation_1
 msgid "Um etwas installieren zu können, musst du zunächst unter \"Voreinstellungen\" oder \"Detailauswahl\" etwas auswählen."
