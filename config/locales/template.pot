@@ -385,6 +385,9 @@ msgstr ""
 #: change
 msgid "ändern"
 msgstr ""
+#: add_to_bundle
+msgid "zum Bündel hinzufügen"
+msgstr ""
 #: view_categories_show_2
 msgid "Weitere Informationen:"
 msgstr ""

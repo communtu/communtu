@@ -124,6 +124,7 @@ en:
   view_repositories_edit_1: "Distribution:"
   view_categories_show_0: "Name: "
   change: change
+  add_to_bundle: add to bundle
   view_categories_show_2: "Further information:"
   controller_metapackages_reset: Reset bundle error manually (after solving the problems).
   controller_suggestion_1: In order to install something, you first have to choose something. Don't forget to save!
@@ -819,9 +820,9 @@ en:
   controller_home_2: We will notify you via e-mail.
   view_home_home_18: Click on
   controller_home_3: This does not appear to be a list with Ubuntu-packages... <br />The packagelist must contain one packagename per line
+  livecd_created_by: "Live-CD/DVD created by:"
   controller_home_4: A file with the package list (one package name per line) has to be given
   view_derivatives_index_0: show derivatives
-  livecd_created_by: "Live-CD/DVD created by:"
   view_home_home_20: " to create a new user or"
   controller_home_5: We received your suggestion and we will inform you if imbibe the suggested repository and when we will imbibe it.
   inbox: Inbox

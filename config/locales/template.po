@@ -511,6 +511,10 @@ msgstr "Name: "
 msgid "ändern"
 msgstr "change"
 
+#: add_to_bundle
+msgid "zum Bündel hinzufügen"
+msgstr "add to bundle"
+
 #: view_categories_show_2
 msgid "Weitere Informationen:"
 msgstr "Further information:"

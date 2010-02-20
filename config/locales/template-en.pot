@@ -385,6 +385,9 @@ msgstr ""
 #: change
 msgid "change"
 msgstr ""
+#: add_to_bundle
+msgid "add to bundle"
+msgstr ""
 #: view_categories_show_2
 msgid "Further information:"
 msgstr ""
@@ -2362,11 +2365,11 @@ msgstr ""
 #: controller_home_3
 msgid "This does not appear to be a list with Ubuntu-packages... <br />The packagelist must contain one packagename per line"
 msgstr ""
-#: controller_home_4
-msgid "A file with the package list (one package name per line) has to be given"
-msgstr ""
 #: view_derivatives_index_0
 msgid "show derivatives"
+msgstr ""
+#: controller_home_4
+msgid "A file with the package list (one package name per line) has to be given"
 msgstr ""
 #: livecd_created_by
 msgid "Live-CD/DVD created by:"
