@@ -157,7 +157,6 @@
 </div>
 <% end %>
 <% ul = Userlog.new %>
-<% #ul.refferer = request.env['HTTP_REFERER'] %>
 <% ul.refferer = request.env['REQUEST_URI'] %>
 <% if current_user != "" %>
 <% ul.user_id = current_user.id %>

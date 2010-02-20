@@ -293,6 +293,7 @@ auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} er
   none: Keine
   not_accepted: Die eingegebene E-Mail-Adresse hat ungültige Formate oder ist unvollständig.
   not_logged_in: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
+  offer_new_category: "Vorschlag einer neuen Kategorie"
   order_number: "Sortiernummer (kleinste Zahl zu erst):"
   package_list: zurück zur Paketliste
   packages: Pakete
