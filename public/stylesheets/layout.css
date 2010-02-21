@@ -1,4 +1,7 @@
 /*the old formats*/
+body
+{margin:0;padding:0;}
+
 .pfeil_link{
 	margin-left:0.3em;
 	

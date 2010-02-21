@@ -9,16 +9,16 @@
   <title><%= begin " "+controller.title rescue "" end %></title>
   <%= stylesheet_link_tag 'layout' %>
 </head>
-<body marginwidth="0" marginheight="0">
-<%= javascript_include_tag "prototype" %>
-<%= javascript_include_tag "effects" %>
+<body>
+  <%= javascript_include_tag "prototype" %>
+  <%= javascript_include_tag "effects" %>
 <div id="head">
 <!-- headlline -->
  <div id="headline">
   <span class="headfont"><%= t(:headline) %></span>
  </div> 
 	<div id="navihead">
-<%= link_to( {t(:community_title), image_tag('nach_aussen_braun.gif', {:border => '0', :alt => t(:link_community_title), :class => 'pfeil_link'}) }, t(:link_community), {:target => '_blank', :alt => t(:link_community_title), :title => t(:link_community_title)} ) %> |  
+<%= link_to( {t(:community_title), image_tag('nach_aussen_braun.gif', {:border => '0', :alt => t(:link_community_title), :class => 'pfeil_link'}) }, t(:link_community), {:target => '_blank', :title => t(:link_community_title)} ) %> |  
 <a href="/home/home"><%= t(:homepage) %></a> | <a href="/home/faq"><%= t(:view_layouts_application_30) %></a> | <a href="/home/contact_us"><%= t(:view_layouts_application_31) %></a> | <a href="/home/donate"><%= t(:view_layouts_donate) %></a> | 
 <% if I18n.locale.to_s == "en" %>
 <a href="http://de.communtu.org">Deutsch</a>
@@ -26,16 +26,6 @@
 <a href="http://en.communtu.org">English</a>
 <% end %>
 </div>
-	<!--<div id="lang">
-				
-				<form action="" method="post">
-				<select name="language">
-					<option value="german">deutsch</option>
-					<option value="english">english</option>
-
-				</select>
-				</form> 
-	</div>-->
 	
 	<!-- registrieren -->
 	<div id="register">
@@ -58,7 +48,7 @@
 <!-- hauptnavigation -->
 <div class="navi">
 	<!-- button -->
-<%= "<a href=" + user_path(current_user) + "/user_profile/edit>" %>
+<%= "<a href='" + user_path(current_user) + "/user_profile/edit'>" %>
 <% if params[:controller] == "user_profiles" %>
                  <%= image_tag("/images/navi_downloadon.png", :border => '0', :alt=>t(:view_layouts_application_27),:title=>t(:view_layouts_application_27)) %>  <div class="navi_eins"><%= t(:view_layouts_application_24) %></div>
 <% else %>   
@@ -67,9 +57,9 @@
 </a>
 <% @has_own_bundles = Metapackage.find_all_by_user_id(current_user.id) %>
 <% if @has_own_bundles.length != 0 %>
-	<%= "<a href=" + user_path(current_user) + "/metapackages/0>" %>
+	<%= "<a href='" + user_path(current_user) + "/metapackages/0'>" %>
 <% else %>
-        <%= "<a href=" + user_path(current_user) + "/metapackages/1>" %>
+        <%= "<a href='" + user_path(current_user) + "/metapackages/1'>" %>
 <% end %>
 <% if ((params[:controller] == "packages") or (params[:controller] == "users" and params[:action] == "metapackages") or (params[:controller] == "home" and params[:action] == "new_repository") or params[:controller] == "metapackages" or params[:controller] == "distributions" or params[:controller] == "repositories") %>
 <%= image_tag("/images/navi_buendelon.png", :border => '0', :alt=>t(:view_layouts_application_26),:title=>t(:view_layouts_application_26)) %> <div class="navi_zwei"><%= t(:view_layouts_application_23) %></div>
@@ -81,7 +71,7 @@
   <% if ((params[:controller] == "home" and params[:action] != "home") and (params[:controller] == "home" and params[:action] != "new_repository")) or params[:controller] == "articles" %>
  <%= image_tag("/images/navi_communtuon.png", :border => '0', :alt=>t(:view_layouts_application_28),:title=>t(:view_layouts_application_28))  %>
 
- 			<div class="navi_drei"><%= t(:view_layouts_application_25) %></div>
+ 		<div class="navi_drei">	<%= t(:view_layouts_application_25) %></div>
 		</a>
   <% else %>
 <%= image_tag("/images/navi_communtu.png", :border => '0', :alt=>t(:view_layouts_application_28),:title=>t(:view_layouts_application_28))  %>	
