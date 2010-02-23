@@ -22,7 +22,7 @@
 		    <%=h metapackage.category.name %></td>
         <td class="<%= css %>" valign="middle">
 		    <%=metapackage.default_install ?  t(:yes1) : t(:no1) %></td>
-	    <td class="<%= css %>" valign="middle" align="middle">
+	    <td class="<%= css %>" valign="middle" align="center">
 	        <% if metapackage.published == Metapackage.state[:published] %>
 	            <%= image_tag("yes.png", :size => "22x22", :border => "0", :title => t(:published), :alt => t(:published)) %>
 	        <% else %>
@@ -42,7 +42,7 @@
         		</div>
 			<%end%>
 		</td>
-		<td class="<%= css %>" valign="middle" align="middle">
+		<td class="<%= css %>" valign="middle" align="center">
 			<%= link_to image_tag("/images/install.png", :size => "18x18", :border => "0", :title => t(:view_metapackages__metalist_14), :alt => t(:install2)), "apt://#{metapackage.debian_name}" %>
             <%= link_to image_tag("/images/sources.jpg", :size => "18x18", :border => "0", :title => t(:add_sources), :alt => t(:sources)), "/users/#{current_user.id}/suggestion/install_bundle_sources/#{metapackage.id}" %>
             <% if is_power_user? %>
@@ -67,7 +67,7 @@
 	<% end %>
       </tr>
 	<tr id="comment_<%=metapackage.id%>" style="display:none;">
-		<td class="<%= css %>" aligh="left" colspan="8">  
+		<td class="<%= css %>" align="left" colspan="8">  
 			<%= render :partial=>"rating/rating_comment" ,:locals => { :metapackage => metapackage } %>
 		</td>
 	</tr>
