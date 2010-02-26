@@ -76,7 +76,7 @@ module DistributionsHelper
         noreps = Repository.find_by_distribution_id(dist.id).nil?
         nobundles = MetacontentsDistr.find_by_distribution_id(dist.id).nil?
         if noreps | nobundles | dist.invisible | dist.preliminary then
-          out += "<p><b>" + t(:steps_for_distribution_setup) + "</b><ul>"
+          out += "<p><b>" + t(:steps_for_distribution_setup) + "</b></p><ul>"
           if noreps then
             out += "<li>" + (link_to t(:migrate_repositories), "/distributions/migrate/"+dist.id.to_s)+"</li>"
           end
@@ -94,14 +94,13 @@ module DistributionsHelper
             if !Deb.find(:first,:conditions=>{:distribution_id => dist.id}).nil? && Deb.find(:first,:conditions=>{:distribution_id => dist.id,:generated=>false}).nil?
               out += "&nbsp;OK"
             end
-            out += " </li>"
             out += "<li> " + (link_to t(:make_distribution_visible), "/distributions/make_visible/"+dist.id.to_s)+"</li>"
           end
           if dist.preliminary then
             out += " <li> " + t(:prepare_livecd_contd) + "</li>"
             out += " <li> " + t(:wait_for_release) + "</li><li>" + (link_to t(:make_distribution_final), "/distributions/make_final/"+dist.id.to_s)+"</li>"
           end
-          out += "</ul></p>"
+          out += "</ul>"
         end
       end
      out += "<p></p>"

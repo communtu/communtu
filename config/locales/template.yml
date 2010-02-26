@@ -816,7 +816,7 @@ Wenn Du der Meinung bist, dass dein Bündel um nützliche Programme erweitert we
   view_user_profiles__installation_16: "Quellen und Schlüssel eintragen"
   view_user_profiles__installation_17: "Link einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer öffnen - wenn kein Prorgammdialog erscheint, wurde die Datei auf Deinem Rechner heruntergeladen. Dort kannst Du sie mit Doppelklick starten."
   view_user_profiles__installation_19: "Achtung: nach dem Anklicken dauert es eine gewisse Zeit, bis die Datei bereitgestellt wird."
-  view_user_profiles__installation_1: "Um etwas installieren zu können, musst du zunächst unter \"Voreinstellungen\" oder \"Detailauswahl\" etwas auswählen."
+  view_user_profiles__installation_1: "Um etwas installieren zu können, musst du zunächst unter \"Softwareauswahl\" etwas auswählen."
   view_user_profiles__installation_20: "Dieser Schritt wurde bereits schon einmal ausgeführt."
   view_user_profiles__installation_21: "installieren der Metapakete. Bitte vorher die Quellen hinzufügen."
   view_user_profiles__installation_23: "Pakete installieren. Es gibt zwei Alternativen:"
