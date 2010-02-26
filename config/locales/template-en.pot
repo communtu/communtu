@@ -1910,7 +1910,7 @@ msgstr ""
 msgid "Suggestion of a new category"
 msgstr ""
 #: view_user_profiles__installation_1
-msgid "In order to install, you have to specify some things at \"Preadjustment\" or \"Details\"."
+msgid "In order to install, you have to make selections under \"Software selection\"."
 msgstr ""
 #: view_packages__deps_1
 msgid "          Only for "

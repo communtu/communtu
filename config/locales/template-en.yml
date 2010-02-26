@@ -665,7 +665,7 @@ en:
   view_metapackages__metalist_2: Standard
   view_packages_show_15: source/repository
   offer_new_category: Suggestion of a new category
-  view_user_profiles__installation_1: In order to install, you have to specify some things at "Preadjustment" or "Details".
+  view_user_profiles__installation_1: In order to install, you have to make selections under "Software selection".
   view_packages__deps_1: "          Only for "
   view_derivatives_show_2: "dialog-program:"
   controller_packages_1: Package created

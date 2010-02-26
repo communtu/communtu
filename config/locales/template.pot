@@ -1913,7 +1913,7 @@ msgstr ""
 msgid "Vorschlag einer neuen Kategorie"
 msgstr ""
 #: view_user_profiles__installation_1
-msgid "Um etwas installieren zu können, musst du zunächst unter \"Voreinstellungen\" oder \"Detailauswahl\" etwas auswählen."
+msgid "Um etwas installieren zu können, musst du zunächst unter \"Softwareauswahl\" etwas auswählen."
 msgstr ""
 #: view_packages__deps_1
 msgid "          Nur für "

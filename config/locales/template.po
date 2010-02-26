@@ -2608,8 +2608,8 @@ msgid "Vorschlag einer neuen Kategorie"
 msgstr "Suggestion of a new category"
 
 #: view_user_profiles__installation_1
-msgid "Um etwas installieren zu können, musst du zunächst unter \"Voreinstellungen\" oder \"Detailauswahl\" etwas auswählen."
-msgstr "In order to install, you have to specify some things at \"Preadjustment\" or \"Details\"."
+msgid "Um etwas installieren zu können, musst du zunächst unter \"Softwareauswahl\" etwas auswählen."
+msgstr "In order to install, you have to make selections under \"Software selection\"."
 
 #: view_packages__deps_1
 msgid "          Nur für "
