@@ -465,10 +465,12 @@ en:
   view_home_beteiligung_8: Co-operation
   helper_distributions_8: Show sources
   new_category: New category
+  view_home_faq_24: Which packages are in your repository?
   news: News
   view_home_derivatives_4: " and many Ubuntu-users may ask themselves if they should use a derivative instead of Ubuntu. The answer is: normally the standard version of Ubuntu is completely sufficiant because with Communtu it is quite easy to install a derivative. However, this is not always a wise decision."
   view_home_beteiligung_9: "For the development of the project we currently need support with these two jobs:"
   press_archiv: Press archives
+  view_home_faq_25: The source packages.communtu.org contains only metapackages matching the corresponding Communtu bundle. We do not offer any software; but the repositories listed <a href="/distributions" target="_blank">here</a> are used by Communtu.
   view_users__user_0: activate
   username: Username
   view_home_derivatives_5: "Each derivative under "
@@ -737,6 +739,7 @@ en:
   controller_suggestion_11: add repository
   controller_suggestion_12: The following repositories will be added
   view_home_auth_error_0: Error with authentication
+  error_no_attachement: No file selected. The progress has been canceled.
   model_user_profile_tabz_3: Start installation
   mailinglist: "Mailinglists:"
   view_home_auth_error_1: The file you sent to Communtu couldn't be authenticated. Please try again with logging in again or filling in the form again. This could also come from disabled cookie settings.
@@ -818,8 +821,8 @@ en:
   controller_home_1: The e-mail has been sent to us. Many thanks for your message.
   view_home_home_17: imprint.
   view_metapackages_immediate_conflicts_1: " conflicts with"
-  controller_home_2: We will notify you via e-mail.
   view_home_home_18: Click on
+  controller_home_2: We will notify you via e-mail.
   controller_home_3: This does not appear to be a list with Ubuntu-packages... <br />The packagelist must contain one packagename per line
   livecd_created_by: "Live-CD/DVD created by:"
   view_derivatives_index_0: show derivatives

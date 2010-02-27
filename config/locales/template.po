@@ -1819,6 +1819,10 @@ msgstr "Show sources"
 msgid "Neue Kategorie"
 msgstr "New category"
 
+#: view_home_faq_24
+msgid "Welche Pakete liegen in Eurem Repository?"
+msgstr "Which packages are in your repository?"
+
 #: news
 msgid "Aktuelles"
 msgstr "News"
@@ -1838,6 +1842,10 @@ msgstr "activate"
 #: press_archiv
 msgid "Pressearchiv"
 msgstr "Press archives"
+
+#: view_home_faq_25
+msgid "Die Quelle packages.communtu.org enthält nur Metapakete, die den Communtu-Bündeln entsprechen. Richtige Software wird dort also nicht angeboten; dafür werden <a href=\"/distributions\" target=\"_blank\">hier</a> aufgelisteten Repositories direkt verwendet."
+msgstr "The source packages.communtu.org contains only metapackages matching the corresponding Communtu bundle. We do not offer any software; but the repositories listed <a href=\"/distributions\" target=\"_blank\">here</a> are used by Communtu."
 
 #: username
 msgid "Benutzername"
@@ -2603,6 +2611,10 @@ msgstr "Standard"
 msgid "Quelle/Repository"
 msgstr "source/repository"
 
+#: view_user_profiles__profile_data_14
+msgid " Freie Software (Quellen liegen offen und dürfen weiterentwickelt werden)"
+msgstr " Free software (sources are open and further development is allowed)"
+
 #: offer_new_category
 msgid "Vorschlag einer neuen Kategorie"
 msgstr "Suggestion of a new category"
@@ -2622,10 +2634,6 @@ msgstr "dialog-program:"
 #: controller_packages_1
 msgid "Paket erzeugt."
 msgstr "Package created"
-
-#: view_user_profiles__profile_data_14
-msgid " Freie Software (Quellen liegen offen und dürfen weiterentwickelt werden)"
-msgstr " Free software (sources are open and further development is allowed)"
 
 #: view_metapackages_show_save_2
 msgid "Neues Metapaket erstellen."
@@ -2647,6 +2655,10 @@ msgstr " Invisible distribution"
 msgid "Paket-Version"
 msgstr "package-version"
 
+#: view_user_profiles__profile_data_15
+msgid " Unfreie Lizenzen zulassen (auch kostenlos, aber Quellen liegen nicht offen - der weiche Übergang zu Linux: "
+msgstr " Allow commercial licenses (free too, but the sources are closed - the fluent change to Linux:"
+
 #: view_user_profiles__installation_2
 msgid "Aufgrund deiner Auswahl werden jetzt Programme auf deinem Computer installiert. Folgende Schritte sind dafür zu tun"
 msgstr "Because of your choice the programs will now be installed on your computer. Please follow these steps:"
@@ -2662,10 +2674,6 @@ msgstr "Package updated."
 #: controller_sessions_3
 msgid "Deine hier registrierte Distribution wurde auf {{dist_old}} geändert, weil deine alte Distribution von Ubuntu (und daher auch von Communtu) nicht mehr unterstützt wird. Wir empfehlen für deinen Computer ein <a href='http://wiki.ubuntuusers.de/Upgrade'>Upgrade</a> auf {{dist_new}}."
 msgstr "Your registered distribution was changed to {{dist_old}} because your old distribution is not supported by Ubuntu (and therefore by Communtu) anymore. We suggest an upgrade to {{dist_new}}."
-
-#: view_user_profiles__profile_data_15
-msgid " Unfreie Lizenzen zulassen (auch kostenlos, aber Quellen liegen nicht offen - der weiche Übergang zu Linux: "
-msgstr " Allow commercial licenses (free too, but the sources are closed - the fluent change to Linux:"
 
 #: view_packages_show_17
 msgid "Beinhaltet folgende Pakete (\"depends\" und \"recommends\"):"
@@ -2699,6 +2707,10 @@ msgstr "migration from repositories"
 msgid "Konflikte mit folgenden Paketen (nur solche ohne Version):"
 msgstr "Conflicts with these packages (only those without a version):"
 
+#: view_user_profiles__profile_data_17
+msgid "Speichern und feiner auswählen"
+msgstr "Save and choose packages"
+
 #: donation_receipt
 msgid "Spendenbescheinigung kann ausgestellt werden."
 msgstr "Donation receipt can be issued."
@@ -2710,10 +2722,6 @@ msgstr "Repository-URL: "
 #: controller_sessions_6
 msgid "Dein Benutzerkonto wurde noch nicht aktiviert. Der Aktivierungscode wurde dir per Email zugeschickt."
 msgstr "Your account has not been activated yet. The activation code has been sent to you via e-mail."
-
-#: view_user_profiles__profile_data_17
-msgid "Speichern und feiner auswählen"
-msgstr "Save and choose packages"
 
 #: view_home_icons_17
 msgid "externer Link"
@@ -2894,6 +2902,10 @@ msgstr "The following repositories will be added"
 #: view_home_auth_error_0
 msgid "Authentifizierungs-Fehler"
 msgstr "Error with authentication"
+
+#: error_no_attachement
+msgid "Du hast keine Datei ausgewählt. Der Vorgang wurde abgebrochen."
+msgstr "No file selected. The progress has been canceled."
 
 #: model_user_profile_tabz_3
 msgid "Installation durchführen"

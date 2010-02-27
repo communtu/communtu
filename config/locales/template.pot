@@ -1330,6 +1330,9 @@ msgstr ""
 #: new_category
 msgid "Neue Kategorie"
 msgstr ""
+#: view_home_faq_24
+msgid "Welche Pakete liegen in Eurem Repository?"
+msgstr ""
 #: news
 msgid "Aktuelles"
 msgstr ""
@@ -1344,6 +1347,9 @@ msgid "aktivieren"
 msgstr ""
 #: press_archiv
 msgid "Pressearchiv"
+msgstr ""
+#: view_home_faq_25
+msgid "Die Quelle packages.communtu.org enthält nur Metapakete, die den Communtu-Bündeln entsprechen. Richtige Software wird dort also nicht angeboten; dafür werden <a href=\"/distributions\" target=\"_blank\">hier</a> aufgelisteten Repositories direkt verwendet."
 msgstr ""
 #: username
 msgid "Benutzername"
@@ -1909,6 +1915,9 @@ msgstr ""
 #: view_packages_show_15
 msgid "Quelle/Repository"
 msgstr ""
+#: view_user_profiles__profile_data_14
+msgid " Freie Software (Quellen liegen offen und dürfen weiterentwickelt werden)"
+msgstr ""
 #: offer_new_category
 msgid "Vorschlag einer neuen Kategorie"
 msgstr ""
@@ -1923,9 +1932,6 @@ msgid "Dialog-Programm:"
 msgstr ""
 #: controller_packages_1
 msgid "Paket erzeugt."
-msgstr ""
-#: view_user_profiles__profile_data_14
-msgid " Freie Software (Quellen liegen offen und dürfen weiterentwickelt werden)"
 msgstr ""
 #: view_metapackages_show_save_2
 msgid "Neues Metapaket erstellen."
@@ -1942,6 +1948,9 @@ msgstr ""
 #: view_packages_show_16
 msgid "Paket-Version"
 msgstr ""
+#: view_user_profiles__profile_data_15
+msgid " Unfreie Lizenzen zulassen (auch kostenlos, aber Quellen liegen nicht offen - der weiche Übergang zu Linux: "
+msgstr ""
 #: view_user_profiles__installation_2
 msgid "Aufgrund deiner Auswahl werden jetzt Programme auf deinem Computer installiert. Folgende Schritte sind dafür zu tun"
 msgstr ""
@@ -1953,9 +1962,6 @@ msgid "Paket aktualisiert."
 msgstr ""
 #: controller_sessions_3
 msgid "Deine hier registrierte Distribution wurde auf {{dist_old}} geändert, weil deine alte Distribution von Ubuntu (und daher auch von Communtu) nicht mehr unterstützt wird. Wir empfehlen für deinen Computer ein <a href='http://wiki.ubuntuusers.de/Upgrade'>Upgrade</a> auf {{dist_new}}."
-msgstr ""
-#: view_user_profiles__profile_data_15
-msgid " Unfreie Lizenzen zulassen (auch kostenlos, aber Quellen liegen nicht offen - der weiche Übergang zu Linux: "
 msgstr ""
 #: view_packages_show_17
 msgid "Beinhaltet folgende Pakete (\"depends\" und \"recommends\"):"
@@ -1981,6 +1987,9 @@ msgstr ""
 #: view_packages_show_19
 msgid "Konflikte mit folgenden Paketen (nur solche ohne Version):"
 msgstr ""
+#: view_user_profiles__profile_data_17
+msgid "Speichern und feiner auswählen"
+msgstr ""
 #: donation_receipt
 msgid "Spendenbescheinigung kann ausgestellt werden."
 msgstr ""
@@ -1989,9 +1998,6 @@ msgid "Repository-URL: "
 msgstr ""
 #: controller_sessions_6
 msgid "Dein Benutzerkonto wurde noch nicht aktiviert. Der Aktivierungscode wurde dir per Email zugeschickt."
-msgstr ""
-#: view_user_profiles__profile_data_17
-msgid "Speichern und feiner auswählen"
 msgstr ""
 #: view_home_icons_17
 msgid "externer Link"
@@ -2127,6 +2133,9 @@ msgid "Folgende Paketquellen werden hinzugefügt"
 msgstr ""
 #: view_home_auth_error_0
 msgid "Authentifizierungs-Fehler"
+msgstr ""
+#: error_no_attachement
+msgid "Du hast keine Datei ausgewählt. Der Vorgang wurde abgebrochen."
 msgstr ""
 #: model_user_profile_tabz_3
 msgid "Installation durchführen"

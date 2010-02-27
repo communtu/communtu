@@ -1327,6 +1327,9 @@ msgstr ""
 #: new_category
 msgid "New category"
 msgstr ""
+#: view_home_faq_24
+msgid "Which packages are in your repository?"
+msgstr ""
 #: news
 msgid "News"
 msgstr ""
@@ -1338,6 +1341,9 @@ msgid "For the development of the project we currently need support with these t
 msgstr ""
 #: press_archiv
 msgid "Press archives"
+msgstr ""
+#: view_home_faq_25
+msgid "The source packages.communtu.org contains only metapackages matching the corresponding Communtu bundle. We do not offer any software; but the repositories listed <a href=\"/distributions\" target=\"_blank\">here</a> are used by Communtu."
 msgstr ""
 #: view_users__user_0
 msgid "activate"
@@ -2124,6 +2130,9 @@ msgid "The following repositories will be added"
 msgstr ""
 #: view_home_auth_error_0
 msgid "Error with authentication"
+msgstr ""
+#: error_no_attachement
+msgid "No file selected. The progress has been canceled."
 msgstr ""
 #: model_user_profile_tabz_3
 msgid "Start installation"
