@@ -150,7 +150,7 @@ class CartController < ApplicationController
             session[:cart] = nil
             redirect_to({:controller => 'metapackages', :action => 'edit', :id => meta.id})
         else
-        redirect_to "/users/" + current_user.id.to_s + "/metapackages/2"
+        redirect_to "/packages"
         end
         
     end

@@ -58,7 +58,7 @@ module ApplicationHelper
       cart.base_packages << p
     end
     session[:cart] = cart.id
-    redirect_to "/users/" + current_user.id.to_s + "/metapackages/2"    
+    redirect_to "/packages"   
   end
   
   def change_date_time(datum) 
