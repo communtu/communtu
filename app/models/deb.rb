@@ -325,8 +325,9 @@ class Deb < ActiveRecord::Base
   
   protected
   
-  def before_destroy
-    system "#{REPREPRO} remove #{self.codename} #{self.name}"
-  end
+# commented out, since it is not working (see #806)
+#  def before_destroy
+#     system "#{REPREPRO} remove #{self.codename} #{self.name}"
+#  end
   
 end

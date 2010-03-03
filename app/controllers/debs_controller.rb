@@ -93,7 +93,7 @@ class DebsController < ApplicationController
     fork do
       @deb.generate
     end
-    redirect_to(debs_url)
+    redirect_to(deb_path(@deb))
   end
 
   def generate_all
