@@ -26,21 +26,26 @@
 <a href="http://en.communtu.org">English</a>
 <% end %>
 </div>
-	
-	<!-- registrieren -->
-	<div id="register">
-<% if is_admin? %>
-                <a href="/categories"><%= t(:view_layouts_application_32) %></a> | <% end %>
-  <% if logged_in? %>
-                <%= link_to t(:view_layouts_application_9), logout_path  %>
-            <% else %>
-                <%= link_to t(:anmelden), '/session/new' %> | <%= link_to t(:register), '/users/new' %> | 
-<%= link_to t(:view_layouts_application_29), '/users/anonymous_login' %>
-            <% end %>
-  <% if logged_in? and current_user.anonymous? %>
-| <%= link_to t(:register), user_path(current_user.id) %>
-<% end %>
-	</div>
+  <!-- Registrieren -->
+  <div id="register">
+  <% if is_admin? %>
+    <a href="/categories"><%= t(:view_layouts_application_32) %></a> | <% end %>
+
+    <% if logged_in? %>
+      <!-- Abmelden -->
+      <%= link_to t(:view_layouts_application_9), logout_path  %> |
+
+        <% if !current_user.anonymous? %>
+          <span class="register_text">Registrieren | Gast </span>
+        <%  else %>
+          <%= link_to t(:register), '/users/new' %> |
+          <span class="register_text"> Gast </span>
+        <%  end %>
+    <% else %>
+      <%= link_to t(:anmelden), '/session/new' %> | <%= link_to t(:register), '/users/new' %> |
+      <%= link_to t(:view_layouts_application_29), '/users/anonymous_login' %>
+    <% end %>
+  </div><!-- ENDE Registrieren DIV -->
 	
 	
 </div>

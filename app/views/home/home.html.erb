@@ -27,9 +27,8 @@
 <h3><%=t(:hello)%></h3>
 <%=t(:last_user)%> <strong><%= u.login %> <%= image_tag("/images/icon_user.png") %>.</strong>
 </div>
+
 <div class="beste_buendel">
-<table><tr><td><font size="+3"><%= BasePackage.find(:all, :conditions => {:type => "Metapackage", :published => 1}).length %></font><p><%=t(:view_home_home_bundle)%></p></td>
-<td><img src="/images/apps/Metapackage.png" alt="<%=t(:view_home_home_bundle)%>" title="<%=t(:view_home_home_bundle)%>" /></td></tr></table>
 <h3><%=t(:view_home_home_rating_headline)%></h3>
 <table cellspacing="0">
       <tbody><tr><th class="packageList" align="left" valign="middle"><%=t(:bundle)%></th>
@@ -60,5 +59,18 @@
 					<p align="center"><%= link_to(image_tag("message_big.png",:size=>"60x45", :alt=>t(:view_home_home_new_message_icon),:title=>t(:view_home_home_new_message_icon), :border=>"0"), '/inbox') %></p>
 				<% end %>
 			<% end %>
+  <div class="buendel_anzahl">
+    <table>
+      <tr>
+        <td>
+          <font size="+3"><%= BasePackage.find(:all, :conditions => {:type => "Metapackage", :published => 1}).length %></font>
+            <p><%=t(:view_home_home_bundle)%></p>
+        </td>
+        <td>
+          <img src="/images/apps/Metapackage.png" alt="<%=t(:view_home_home_bundle)%>" title="<%=t(:view_home_home_bundle)%>" />
+        </td>
+      </tr>
+    </table>
+  </div>
 </div>
 

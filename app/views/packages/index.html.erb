@@ -39,7 +39,12 @@
 <% for package in @packages %>
 <% css=cycle("packageList0", "packageList1") %>
   <tr> 
-  	<td class="<%= css %>"> <%= package.icon(20)%>
+  	<td class="<%= css %>">
+          <% if (icon=package.icon(20))!="" %>
+            <%= icon %>
+          <%  else %>
+            <div class="no_package_icon"> &nbsp;</div>
+          <% end %>
   		<%= link_to(package.name, package_path(package), :title => t(:detailed_view)) %></td>
 	<td class="<%= css %>" align="middle" valign="middle">
      <% if !package.stars.nil? %>
