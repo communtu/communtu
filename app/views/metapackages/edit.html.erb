@@ -46,6 +46,13 @@
 		        <%= f.collection_select(:category_id,@categories,:id,:name,{:include_blank => t(:choose_category)})%>
 	        </td>
         </tr>
+		<tr>
+	        <td><%=t(:group_metapackage)%></td>
+	        <td>
+	        	<% @groups = Group.find(:all, :order => "name")%>
+		        <%= f.collection_select(:group_id,@groups,:id,:name,{:include_blank => t(:no_group_chosen), :selected => @metapackage.group.nil? ? nil : @metapackage.group.id })%>
+	        </td>
+        </tr>
         <tr>
 	        <td><%=t(:install_by_default)%></td>
         <% if is_admin? %>

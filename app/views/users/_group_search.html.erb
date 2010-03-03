@@ -1,0 +1,15 @@
+<p>
+	<%= list_groups %>
+	<strong><%= t(:limit_group_list)%></strong>
+</p>
+<p>	
+	<%= form_tag('/groups/search', :method => "post") %>
+		<table border="0">
+			<tr>
+				<td>
+    				<input type="textbox" id="search" name="search" value="<%= session[:search]%>" onchange="this.form.submit()">
+				</td>
+			</tr>
+		</table>
+	</form>
+</p>

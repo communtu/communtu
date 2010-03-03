@@ -124,4 +124,7 @@ module ApplicationHelper
     end
   end
   
+  def release_metapackages_from_group gid
+    Metapackage.find_by_group_id(gid).update_attribute(group_id, nil)
+  end
 end

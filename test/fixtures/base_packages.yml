@@ -1,0 +1,36 @@
+# Auto-generated template
+metapackages_001:
+  fullsection:
+  name: Drucken
+  description_tid: "147"
+  debianized_version: "0.1111"
+  updated_at: 2010-01-27 19:05:53
+  url_tid:
+  modified: "0"
+  license_type: "0"
+  section_id:
+  section_tid:
+  deb_error: "0"
+  published: "1"
+  is_program:
+  urls:
+  type: Metapackage
+  group_id: "1"
+  id: "52158"
+  fullsection_tid:
+  version: "0.1111"
+  icon_file:
+  category_id: "10"
+  description: "cups-pdf # PDF-Drucker\n\
+    gtklp # f\xC3\xBCr mehrere Seiten auf eine ausdrucken, etc.\n\
+    psutils # f\xC3\xBCr Hefte und B\xC3\xBCcher\n\
+    pdftk # PDFs zusammenstellen"
+  security_type:
+  default_install: "1"
+  user_id: "1"
+  name_tid: "146"
+  section: unknown
+  ratings_count:
+  debianizing: "0"
+  popcon:
+  created_at: 2008-06-04 18:09:41

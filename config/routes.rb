@@ -1,5 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :groups
+  map.resources :sections
   map.root :controller => 'home', :action => 'home'
+
 
   map.resources :architectures
   map.resources :articles

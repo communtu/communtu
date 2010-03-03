@@ -1,0 +1,20 @@
+<span class="headline"><%=t(:group_page_header)%><%=@group.name%></span>
+
+<%= render_flash %>
+<div class="inner1">
+
+<p>
+  <b><%=t(:group_admin)%></b>
+  <%=h @group.owner.login %>
+</p>
+
+<p>
+  <b><%=t(:group_members)%></b>
+  <%= list_members(@group) %>
+</p>
+
+
+<%= link_to 'Edit', edit_group_path(@group) %> |
+<%= link_to 'Back', groups_path %>
+
+</div>

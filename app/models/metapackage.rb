@@ -10,7 +10,8 @@ class Metapackage < BasePackage
 #  has_many   :packages, :through => :metacontents, :source => :base_package, :foreign_key => :base_package_id 
   belongs_to :category
   belongs_to :user
-  has_many :livecds, :dependent => :destroy
+  has_many :livecds, :dependent => :destroy 
+  belongs_to :group
   
   acts_as_rateable
   

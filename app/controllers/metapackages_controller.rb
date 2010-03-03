@@ -201,7 +201,7 @@ class MetapackagesController < ApplicationController
 #    respond_to do |format|
       # save other attributes
       if !error 
-         @metapackage.update_attributes(:version => params[:metapackage][:version],:category_id => params[:metapackage][:category_id],:default_install => params[:metapackage][:default_install])
+         @metapackage.update_attributes(:version => params[:metapackage][:version],:category_id => params[:metapackage][:category_id],:default_install => params[:metapackage][:default_install], :group_id => params[:metapackage][:group_id])
         flash.delete(:error)
 #        format.html { redirect_to :action => :show, :id => @metapackage.id }
 #        format.xml  { head :ok }

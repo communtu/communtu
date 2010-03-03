@@ -51,6 +51,9 @@ end
       :conditions => "user_packages.is_selected = '1'"    
   has_many :deselected_packages, :through => :user_packages, :source => :base_package, \
       :conditions => "user_packages.is_selected = '0'"    
+  #has_and_belongs_to_many :groups  
+  has_many :groupings
+  has_many :groups, :through => :groupings
 #  has_many :selected_metapackages, :through => :user_packages, :source => :base_package, \
 #      :conditions => 'user_packages.base_package.class == Metapackage AND user_packages.is_selected'    
 #  has_many :unselected_metapackages, :through => :user_packages, :source => :package_id, \
@@ -451,5 +454,35 @@ end
     self.update_attribute(:activated_at, Time.now.utc)
   self.update_attribute(:activation_code, nil)
   end    
+   
+  def before_destroy 
+    self.groups each do |group|
+      #Besitzer der Gruppe?
+      if group.owner_id == self.id
+        #Noch andere Member in der Gruppe?
+        if group.users.length == 1
+          #Gruppe kann entfernt werden
+          clean_db_from_group_data_before_destroy_user(group)
+        else
+          #Es gibt noch weitere Mitglieder in der Gruppe. Besitzer wird admin.
+          admin_id = User.first.id
+          group.update_attribute(owner_id, admin_id)
+          self.groupings.find_by_group_id(group.id).update_attribute(user_id, admin_id)
+        end
+      else
+        #Nutzer nicht der Besitzer. Seine Mitgliedschaft wird gelöscht. Gruppe bleibt erhalten.
+        #Es befinden sich noch andere Nutzer in der Gruppe, da eine Gruppe immer
+        #noch einen Besitzer hat.
+        self.groupings.find_by_group_id(group.id).destroy
+      end
+    end
+  end
+  
+  def clean_db_from_group_data_before_destroy_user(group)#
+    release_metapackages_from_group(group.id)
+    self.groupings.find_by_group_id(group.id).destroy
+    self.group.find(group.id).destroy
+  end
+   
    
 end
