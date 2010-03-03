@@ -877,6 +877,10 @@ msgstr "Install"
 msgid "Über Communtu nachinstallierbare Derivate, sinnvollerweise auf einer Xfce-basierten Installation (z.B. Xubuntu) aufzusetzen:"
 msgstr "Derivatives which are based on a Xfce-installation (like Xubuntu) and that can be post-installed with Communtu:"
 
+#: donate
+msgid "spende"
+msgstr "make a donation"
+
 #: installing_using_script
 msgid "installieren mittels Skript"
 msgstr "installing via script"
@@ -2173,6 +2177,10 @@ msgstr "Take over repositories from parent"
 msgid "Konnte keine URL feststellen"
 msgstr "could not determine URL"
 
+#: cd_donate
+msgid "Die CD/DVD-Erstellung braucht viel Server-Kapazität. Bitte {{donate_link}}, um dieses Angebot weiter zu ermöglichen."
+msgstr "Creating a CD/DVD requires a lot of server performance. Please {{donate_link}}} to keep this feature alive."
+
 #: view_layouts_application_5
 msgid "per PayPal:"
 msgstr "per PayPal:"
@@ -2555,6 +2563,10 @@ msgstr " Allow community-sources (\"universe/multiverse\", secure, more programs
 msgid "Programm"
 msgstr "program"
 
+#: view_user_profiles__profile_data_12
+msgid " Alle Quellen zulassen (etwas unsicherer: <a href=\"http://wiki.ubuntuusers.de/Fremdquellen\">Fremdpakete</a> können das System gefährden, aber noch mehr Programme/Komfort: "
+msgstr " Allow every source (slightly insecure but with even more programs/better comfort. Attention: programs installed from foreign sources can do harm to your computer!):"
+
 #: view_packages_show_8
 msgid "Beliebtheit:"
 msgstr "Popularity:"
@@ -2567,13 +2579,13 @@ msgstr "rate bundles"
 msgid "Neues Bündel"
 msgstr "New bundle"
 
-#: view_user_profiles__profile_data_12
-msgid " Alle Quellen zulassen (etwas unsicherer: <a href=\"http://wiki.ubuntuusers.de/Fremdquellen\">Fremdpakete</a> können das System gefährden, aber noch mehr Programme/Komfort: "
-msgstr " Allow every source (slightly insecure but with even more programs/better comfort. Attention: programs installed from foreign sources can do harm to your computer!):"
-
 #: yes1
 msgid "ja"
 msgstr "yes"
+
+#: view_user_profiles__profile_data_13
+msgid "Hier kannst du auswählen, welche Lizenzen du zulassen willst"
+msgstr "Here you can choose which licenses you want to accept:"
 
 #: view_packages_show_9
 msgid "/5 Sterne&nbsp;&nbsp; "
@@ -2594,10 +2606,6 @@ msgstr "sudo-program:"
 #: controller_sessions_1
 msgid "Du bist bereits angemeldet."
 msgstr "You are already logged in."
-
-#: view_user_profiles__profile_data_13
-msgid "Hier kannst du auswählen, welche Lizenzen du zulassen willst"
-msgstr "Here you can choose which licenses you want to accept:"
 
 #: view_home_icons_12
 msgid " Programm (wenn kein anderes Programm-Icon vorhanden)"

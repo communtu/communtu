@@ -655,6 +655,9 @@ msgstr ""
 #: view_home_derivatives_21
 msgid "Derivatives which are based on a Xfce-installation (like Xubuntu) and that can be post-installed with Communtu:"
 msgstr ""
+#: donate
+msgid "make a donation"
+msgstr ""
 #: installing_using_script
 msgid "installing via script"
 msgstr ""
@@ -1588,6 +1591,9 @@ msgstr ""
 #: model_package_11
 msgid "could not determine URL"
 msgstr ""
+#: cd_donate
+msgid "Creating a CD/DVD requires a lot of server performance. Please {{donate_link}}} to keep this feature alive."
+msgstr ""
 #: view_layouts_application_5
 msgid "per PayPal:"
 msgstr ""
@@ -2359,11 +2365,11 @@ msgstr ""
 #: view_metapackages_immediate_conflicts_0
 msgid "Conflicts inside bundles"
 msgstr ""
-#: controller_home_1
-msgid "The e-mail has been sent to us. Many thanks for your message."
-msgstr ""
 #: view_home_home_17
 msgid "imprint."
+msgstr ""
+#: controller_home_1
+msgid "The e-mail has been sent to us. Many thanks for your message."
 msgstr ""
 #: view_metapackages_immediate_conflicts_1
 msgid " conflicts with"

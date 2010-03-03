@@ -655,6 +655,9 @@ msgstr ""
 #: view_home_derivatives_21
 msgid "Über Communtu nachinstallierbare Derivate, sinnvollerweise auf einer Xfce-basierten Installation (z.B. Xubuntu) aufzusetzen:"
 msgstr ""
+#: donate
+msgid "spende"
+msgstr ""
 #: installing_using_script
 msgid "installieren mittels Skript"
 msgstr ""
@@ -1591,6 +1594,9 @@ msgstr ""
 #: model_package_11
 msgid "Konnte keine URL feststellen"
 msgstr ""
+#: cd_donate
+msgid "Die CD/DVD-Erstellung braucht viel Server-Kapazität. Bitte {{donate_link}}, um dieses Angebot weiter zu ermöglichen."
+msgstr ""
 #: view_layouts_application_5
 msgid "per PayPal:"
 msgstr ""
@@ -1873,6 +1879,9 @@ msgstr ""
 #: view_home_icons_10
 msgid "Programm"
 msgstr ""
+#: view_user_profiles__profile_data_12
+msgid " Alle Quellen zulassen (etwas unsicherer: <a href=\"http://wiki.ubuntuusers.de/Fremdquellen\">Fremdpakete</a> können das System gefährden, aber noch mehr Programme/Komfort: "
+msgstr ""
 #: view_packages_show_8
 msgid "Beliebtheit:"
 msgstr ""
@@ -1882,11 +1891,11 @@ msgstr ""
 #: new_bundle
 msgid "Neues Bündel"
 msgstr ""
-#: view_user_profiles__profile_data_12
-msgid " Alle Quellen zulassen (etwas unsicherer: <a href=\"http://wiki.ubuntuusers.de/Fremdquellen\">Fremdpakete</a> können das System gefährden, aber noch mehr Programme/Komfort: "
-msgstr ""
 #: yes1
 msgid "ja"
+msgstr ""
+#: view_user_profiles__profile_data_13
+msgid "Hier kannst du auswählen, welche Lizenzen du zulassen willst"
 msgstr ""
 #: view_packages_show_9
 msgid "/5 Sterne&nbsp;&nbsp; "
@@ -1902,9 +1911,6 @@ msgid "Sudo-Programm:"
 msgstr ""
 #: controller_sessions_1
 msgid "Du bist bereits angemeldet."
-msgstr ""
-#: view_user_profiles__profile_data_13
-msgid "Hier kannst du auswählen, welche Lizenzen du zulassen willst"
 msgstr ""
 #: view_home_icons_12
 msgid " Programm (wenn kein anderes Programm-Icon vorhanden)"

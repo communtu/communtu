@@ -218,6 +218,7 @@ en:
   view_accounts_edit_1: old password
   install2: Install
   view_home_derivatives_21: "Derivatives which are based on a Xfce-installation (like Xubuntu) and that can be post-installed with Communtu:"
+  donate: make a donation
   installing_using_script: installing via script
   view_home_derivatives_22: " - in some ways like BeOS, ZevenOS focuses on speed and compatibility for old computers with a simple interface. CPU with at least 200 MHz, 128 MB RAM (for operating, while installing 192 MB RAM are required), at least 2 GB free hard disk space (recommended are 4 GB free hard disk space or more), 16 MB graphic card (recommended: Intel GMA 9xx)."
   press_archiv_editorial: Here we have listed a selection of press articles about us.
@@ -555,6 +556,7 @@ en:
   metacart_choose: Please add programs from the left box to your bundle.
   migrate_repositories: Take over repositories from parent
   model_package_11: could not determine URL
+  cd_donate: Creating a CD/DVD requires a lot of server performance. Please {{donate_link}}} to keep this feature alive.
   view_layouts_application_5: "per PayPal:"
   Kommentar: "Comment:"
   model_package_12: content of {{file}} does not match with repository-syntax
@@ -818,9 +820,9 @@ en:
   view_metapackages_rdepends_1: " directly an indirectly contained bundles and packages"
   change_passwd: change password
   view_metapackages_immediate_conflicts_0: Conflicts inside bundles
+  view_metapackages_immediate_conflicts_1: " conflicts with"
   controller_home_1: The e-mail has been sent to us. Many thanks for your message.
   view_home_home_17: imprint.
-  view_metapackages_immediate_conflicts_1: " conflicts with"
   view_home_home_18: Click on
   controller_home_2: We will notify you via e-mail.
   controller_home_3: This does not appear to be a list with Ubuntu-packages... <br />The packagelist must contain one packagename per line
