@@ -35,6 +35,7 @@ de:
   category_exists: "Eine Kategorie mit diesem Namen existiert schon"
   category_with_colon: "Kategorie:"
   category_without_colon: Kategorie
+  cd_donate: Die CD/DVD-Erstellung braucht viel Server-Kapazität. Bitte {{donate_link}}, um dieses Angebot weiter zu ermöglichen.
   cd_failed: "Fehlgeschlagen - wir kümmern uns darum"
   changed_settings: "Dieser Schritt muss neu ausgeführt werden, weil du die Einstellungen geändert hast."
   change: ändern
@@ -149,6 +150,7 @@ de:
   direct_indirect_covered_packages_warning: "Achtung! Dauert lange und sollte nur vom Admin-Server (communtu.de:3006) aus aufgerufen werden"
   discuss: discuss
   distribution: Distribution
+  donate: spende
   donation_possibility: "Spendenmöglichkeit"
   donation_purpose: "Verwendungszweck: Communtu"
   donation_receipt: Spendenbescheinigung kann ausgestellt werden.

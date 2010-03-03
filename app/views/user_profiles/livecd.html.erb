@@ -38,6 +38,8 @@
 <p><%=t(:livecd_message,:cdimage_link => (link_to t(:livecd_image), t(:livecd_image_link)))%></p>
 
 <p>
+<b><%=t(:cd_donate, {:donate_link => link_to(t(:donate),'/home/donate')})%></b>
+<br>
 <%= form_tag({:controller => :user_profiles, :action => :create_livecd, :id => current_user.id})%>
 <%= t(:name_of_livecd) %>
 <%= text_field_tag(:name,@default_name) %>
