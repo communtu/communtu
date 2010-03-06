@@ -6,8 +6,8 @@
 #
 
 environments:
-  #- test
-  - development # Uncomment this line to enable in development environment. N.B. your development database will likely be altered/destroyed/abducted
+  - test
+  #- development # Uncomment this line to enable in development environment. N.B. your development database will likely be altered/destroyed/abducted
 
 #selenium_path: 'c:\selenium' #path to selenium installation. only needed if you for some reason don't want to use the bundled version of selenium core
 
