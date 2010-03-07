@@ -793,6 +793,9 @@ a.download:hover, a.download:active{
 	 list-style-position:outside;
 	 padding-bottom:0.1em;
  	}
+.buendel_anzahl{
+	margin-top:2em;
+	}
 .bemerkung{
 	color:#63605E;
 	position:absolute;
@@ -999,7 +1002,7 @@ a.download:hover, a.download:active{
 	 right:0.6em;
 	 width:17.6em;
 	 height:2em;
-	 background-color:#9FE7F7;
+	 background-color:#FEB600;
 	 text-align:right;
 	 padding-top:0.5em;
 	 padding-right:1.5em;
