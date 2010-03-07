@@ -47,7 +47,7 @@ class Livecd < ActiveRecord::Base
 
   # create the liveCD in a forked process
   def fork_remaster
-      self.pid = fork self.remaster
+      self.pid = fork do self.remaster end
       self.save
   end
 
