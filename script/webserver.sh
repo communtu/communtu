@@ -30,6 +30,8 @@ sudo gem install i18n
 cd ..
 # debian packaging
 sudo apt-get install reprepro fakeroot dpkg-dev dh-make build-essential debootstrap schroot edos-debcheck apt-mirror
+#livecd
+sudo apt-get install apt-proxy genisoimage squashfs
 #backup
 sudo apt-get install rsync
 # mysql server
