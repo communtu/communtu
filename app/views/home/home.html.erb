@@ -9,7 +9,10 @@
 <%=t(:view_home_home_26)%>
 <br />
 <%=t(:view_home_home_27)%>
-	<ul>
+<div id="conny_index"><%= image_tag("/images/conny_start.jpg") %></div>
+<div  id="liste_neben_conni">	
+<ul>
+
 		<li>
 			<a href="<%= user_path(current_user) + "/user_profile/edit" %>" class="teaser"><%=t(:view_home_home_28)%></a><br />
 			<%=t(:view_home_home_29)%>
@@ -23,10 +26,11 @@
 			<%=t(:view_home_home_33)%>
 		</li>
 	</ul>
+</div>
 <% u = User.find(:last, :conditions => {:anonymous => false}) %>
 <h3><%=t(:hello)%></h3>
 <%=t(:last_user)%> <strong><%= u.login %> <%= image_tag("/images/icon_user.png") %>.</strong>
-</div>
+
 
 <div class="beste_buendel">
 <h3><%=t(:view_home_home_rating_headline)%></h3>

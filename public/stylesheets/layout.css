@@ -5,10 +5,9 @@ body{ 	font-size:0.8em;
 	font-family:Verdana,Arial,Helvetica,sans-serif;
 	color:#451B00;
 	background-color:#fff;
-	margin-left:0em;
-	margin-right:0em;
-	margin-top:0em;
-	margin-bottom:3em;
+	margin:0;
+	padding:0;
+	height:95em;
 	}
 
 #notice{color: green;}
@@ -24,13 +23,11 @@ h2, h1, h3 {
 	}
 
 a:link, a:visited, a:active{
-	font-size:0.8em;
 	color: #000;
 	text-decoration: underline;
 	font-weight: normal;
 	}
 a:hover{
-	font-size:0.8em;
 	color: #000;
 	text-decoration: none;
 	font-weight: normal;
@@ -64,12 +61,12 @@ td {
 .pfeil_link{	margin-left:0.3em;}
 
 #headline{
-	 position:absolute;
-	  text-align:center;
-	 padding-top:70px;
-	 padding-left:32.8em;
-	 z-index:4;
-	 }
+	padding-left:30.8em;
+	padding-top:69.5px;
+	position:absolute;
+	text-align:center;
+	z-index:4;
+	}
 
 .headfont{
 	 font-weight:bolder;
@@ -794,7 +791,7 @@ a.download:hover, a.download:active{
 	 padding-bottom:0.1em;
  	}
 .buendel_anzahl{
-	margin-top:2em;
+	margin-top:3em;
 	}
 .bemerkung{
 	color:#63605E;
@@ -808,7 +805,19 @@ a.download:hover, a.download:active{
 	color:#63605E;
 	list-style-image:none;
 	}
-
+.no_package_icon{
+	width:23px;
+	height:20px;
+	float:left;
+	}
+#liste_neben_conni{
+	position:relative;
+	left:6.5em;
+	top:1em;
+	border:0;
+	padding-left:1em;
+	padding-bottom:1em;
+	}
 /**************************************************/
 /* conni */
 /**************************************************/
@@ -833,13 +842,11 @@ a.download:hover, a.download:active{
 	 padding-bottom:1em;
 	 }
 /*em*/
-.conny_index{
+#conny_index{
 	 position:absolute;
-	 left:815px;
-	 top:620px;
+	 left:-3.5em;
+	 top:6em;
 	 border:0;
-	 width:122px;
-	 height:153px;
 	 padding-right:1em;
 	 padding-bottom:1em;
 	 }
@@ -903,10 +910,10 @@ a.download:hover, a.download:active{
 	width:56em;
 	}
 .content{
+	left:4.5em;
 	position:absolute;
-	left:4em;
-	top:12em;
-	width: 77.1em;
+	top:10.9em;
+	width:75em;
 	}
 .content a{
 	color:#A33700;
@@ -928,15 +935,15 @@ a.download:hover, a.download:active{
 /**************************************************/
 
 .unternavi{
-	position:absolute;
-	left:0em;
-	top:0em;
-	width: 75em;
-	height: 4em;
-	padding-left:4em;
-	padding-top:4em;
 	background-image:url(/images/communtu_unternavi.png);
-	background-repeat: no-repeat;
+	background-repeat:no-repeat;
+	height:4em;
+	left:0;
+	padding-left:4em;
+	padding-top:3.7em;
+	position:absolute;
+	top:0;
+	width:75em;
 	z-index:1;
 	}
 .unternavi a:link,.unternavi a:visited,.unternavi a:active{
@@ -951,10 +958,10 @@ a.download:hover, a.download:active{
 	}
 
 .navi{
+	left:15.9em;
 	position:absolute;
-	top:10em;
-	left:15em;
-	width:62.8em;
+	top:10.15em;
+	width:59em;
 	z-index:2;
 	}
 .navi a{
@@ -966,48 +973,48 @@ a.download:hover, a.download:active{
 	font-weight:normal;
 	}
 .navi_eins{
+	left:4.6em;
 	position:absolute;
 	top:1.2em;
-	left:4.6em;
 	z-index:2;
 	}
 
 .navi_zwei{
 	position:absolute;
 	top:1.2em;
-	left:22em;
+	left:20.8em;
 	z-index:2;
 	}
 
 .navi_drei{
 	position:absolute;
 	top:1.2em;
-	left:37.5em;
+	left:35.6em;
 	z-index:2;
 	}
 #person{
-	position:absolute;
-	top:1em;
-	right:0.2em;
 	background-color:#D7AE9A;
-	text-align:center;
-	padding-top:0.28em;
+	border:0 solid #FFFF00;
 	padding-bottom:0.4em;
-	width:13em;
-	border:0px solid #ff0;
-	z-index:2;
+	padding-top:0.28em;
+	position:absolute;
+	right:0.32em;
+	text-align:center;
+	top:0.8em;
+	width:12.5em;
+	z-index:2
 	}
 #register{
-	 position:absolute;
-	 right:0.6em;
-	 width:17.6em;
-	 height:2em;
-	 background-color:#FEB600;
-	 text-align:right;
-	 padding-top:0.5em;
-	 padding-right:1.5em;
-	 z-index:4;
-	 }
+	background-color:#FEB600;
+	height:1.6em;
+	padding-right:1.5em;
+	padding-top:0.5em;
+	position:absolute;
+	right:0.3em;
+	text-align:right;
+	width:15.5em;
+	z-index:4;
+	}
 #lang{
         position:absolute;
         right:10em;
@@ -1028,16 +1035,16 @@ a.download:hover, a.download:active{
 #navihead{
 	position:absolute;
 	top:0.5em;
-	right:21em;
+	right:19.5em;
 	z-index:4;
 	}
 #head{
-	position:absolute;
-	left:46px;
-	width: 77.1em;
-	height: 45em;
 	background-image:url(/images/communtu_head.png);
-	background-repeat: no-repeat;
+	background-repeat:no-repeat;
+	height:11.5em;
+	left:46px;
+	position:absolute;
+	width:72em;
 	z-index:3;
 	}
 
