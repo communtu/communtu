@@ -47,7 +47,9 @@ class Livecd < ActiveRecord::Base
 
   # create the liveCD in a forked process
   def fork_remaster
-      self.pid = fork do Livecd.find(self.id).remaster end
+      self.pid = fork do
+	 	        system 'echo "Livecd.find('+self.id.to_s+').remaster" | nohup script/console production'
+      end
       self.save
   end
 
