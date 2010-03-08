@@ -2,7 +2,7 @@
 
 <%= render_flash %>
 <div class="inner1">
-	<p><%=t(:view_users_edit_3)%> <%= @user.login %> <%=link_to(image_tag("message.png", :alt=>t(:compose_new_message),:title=>t(:compose_new_message), :mouseover=>"message_rollover.png",:border=>"0" ), {:controller=>"sent", :action=>"new", :mail_to=>@user})%> </p>
+	<p><%=t(:view_users_edit_3)%> <%= @user.login %> <%=link_to (image_tag("message.png", :alt=>t(:compose_new_message),:title=>t(:compose_new_message), :mouseover=>"message_rollover.png",:border=>"0" ), {:controller=>"sent", :action=>"new", :mail_to=>@user})%> </p>
    <% if @user.id == current_user.id %>
     <% if @user.surname? %>
       <p><%=t(:name_with_colon)%><%= @user.firstname %> <%= @user.surname %></p>
@@ -25,19 +25,6 @@
 		<span class="headline"><%=t(:view_users_show_8)%></span>
 		<div class="inner1">
 			<%= render :partial => 'mailbox_list' %>
-		</div>
-		
-		<!-- Gruppen -->
-		<span class="headline"><%=t(:groups_header)%></span>
-		<div class="inner1">
-			<%= list_user_groups %>
-			
-			<p>
-				<%= link_to_function "#{t(:existing_groups)}", update_page { |page| page.visual_effect(:toggle_appear, ("group_search"),:duration => 1);}%>
-			</p>
-		<div id="group_search" style='display:none;'>
-			<%= render :partial => 'group_search' %>
-		</div>	
 		</div>
 	<% end %>
   <% end %>
