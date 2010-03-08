@@ -146,13 +146,16 @@ class CartController < ApplicationController
             end
             
             meta.update_attributes({:license_type => license, :security_type => security})
+            cart = Cart.find(session[:cart])
             cart.destroy
             session[:cart] = nil
             redirect_to({:controller => 'metapackages', :action => 'edit', :id => meta.id})
         else
-        redirect_to "/packages"
-        end
-        
+          cart = Cart.find(session[:cart])
+          cart.destroy
+          session[:cart] = nil
+          redirect_to "/packages"
+        end 
     end
     
     def clear
