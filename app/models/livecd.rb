@@ -94,6 +94,7 @@ class Livecd < ActiveRecord::Base
     if !self.failed then
       self.generated = true
       self.size = File.size(self.filename)
+      self.save
       MyMailer.deliver_livecd(self.user,isourl)
     else
       MyMailer.deliver_livecd_failed(self.user,self.fullname)
