@@ -47,7 +47,7 @@ class Livecd < ActiveRecord::Base
 
   # create the liveCD in a forked process
   def fork_remaster
-      self.pid = fork do self.remaster end
+      self.pid = fork do Livecd.find(self.id).remaster end
       self.save
   end
 
@@ -94,7 +94,6 @@ class Livecd < ActiveRecord::Base
     if !self.failed then
       self.generated = true
       self.size = File.size(self.filename)
-      self.save
       MyMailer.deliver_livecd(self.user,isourl)
     else
       MyMailer.deliver_livecd_failed(self.user,self.fullname)
