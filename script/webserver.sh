@@ -3,8 +3,8 @@
 # Es muss noch nach dem Script die Datei /etc/apache2/sites-enabled/all angepasst werden.
 # Weiter muss in der Apache-Config /etc/apache2/apache2.conf hoechstwahrscheinlich das Root-Verzeichnis
 # auskommentiert werden.
-OLDSERVER=bremer-commune.dyndns.org
-SVNSERVER=bremer-commune.dyndns.org
+OLDSERVER=communtu.org
+SVNSERVER=communtu.org
 OLDUSERNAME=communtu
 NEWUSERNAME=communtu
 # folder for web projects
@@ -19,15 +19,12 @@ sudo /etc/init.d/apache2 restart
 sudo apt-get install subversion libapache2-svn
 # rails
 sudo apt-get install ruby rdoc irb libyaml-ruby libzlib-ruby ri libopenssl-ruby sqlite3 libsqlite3-ruby
-wget http://rubyforge.org/frs/download.php/29548/rubygems-1.0.1.tgz 
-tar xzvf rubygems-1.0.1.tgz
-cd rubygems-1.0.1
-sudo ruby setup.rb
 sudo ln -s /usr/bin/gem1.8 /usr/bin/gem
 sudo gem update --system
 sudo gem install -v=2.2.2 rails -y
 sudo gem install i18n
-cd ..
+# needed for backgroundrb
+sudo gem install chronic packet
 # debian packaging
 sudo apt-get install reprepro fakeroot dpkg-dev dh-make build-essential debootstrap schroot edos-debcheck apt-mirror
 #livecd
@@ -50,6 +47,5 @@ cd ..
 scp $OLDUSERNAME@$OLDSERVER:/home/$OLDUSERNAME/web2.0/communtu-program/config/database.yml /home/$NEWUSERNAME/web2.0/communtu-program/config/database.yml
 ln -s communtu-program/public/debs/ communtu-packages
 # start rails apps
-scp $OLDUSERNAME@$OLDSERVER:/home/$OLDUSERNAME/rails-start .
 /home/$NEWUSERNAME/web2.0/communtu-program/script/web start
 
