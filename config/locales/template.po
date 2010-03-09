@@ -1018,7 +1018,7 @@ msgid "auf Bau der Metapakete warten"
 msgstr "waiting for building of metapackages"
 
 #: helper_distributions_15
-msgid "Wikiseite bei Ubuntuusers"
+msgid "Wikiseite bei ubuntuusers"
 msgstr "Informational page at ubuntu.com"
 
 #: view_users_new_8

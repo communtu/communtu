@@ -761,7 +761,7 @@ msgstr ""
 msgid "auf Bau der Metapakete warten"
 msgstr ""
 #: helper_distributions_15
-msgid "Wikiseite bei Ubuntuusers"
+msgid "Wikiseite bei ubuntuusers"
 msgstr ""
 #: view_users_new_8
 msgid "Ja, ich möchte die Maillingliste für Ankündigungen abbonieren."
