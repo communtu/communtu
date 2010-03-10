@@ -88,8 +88,8 @@ div.flash{
 	border-width: 1px;
 	border-color: #E2C890;
 	background: #FFF8D2;
-	margin: 5px 5px 5px 5px;
-	padding: 10px 10px 10px 10px;
+	margin-bottom: 0.8em;
+	padding: 0.6em;
 	}
 div.inner0 {
 	padding: 5px;
@@ -776,22 +776,23 @@ a.download:hover, a.download:active{
 .contentstart{
 	 position:absolute;
 	 left:3em;
-	 top:80px;
-	 width:480px;
+	 top:8em;
+	 width:45em;
 	 }
 .beste_buendel{
-	 position:absolute;
-	 left:51em;
-	 top:7.5em;
-	 width:25em;
+	margin-top:2.5em;
+	position:absolute;
+	left:50em;
+	top:0.5em;
+	width:22em;
  	}
 .beste_buendel ul li{
-	 list-style-image:url(/images/star_trans.gif);
-	 list-style-position:outside;
-	 padding-bottom:0.1em;
+	list-style-image:url(/images/star_trans.gif);
+	list-style-position:outside;
+	padding-bottom:0.1em;
  	}
 .buendel_anzahl{
-	margin-top:3em;
+	margin-bottom:2.5em;
 	}
 .bemerkung{
 	color:#63605E;
@@ -817,6 +818,7 @@ a.download:hover, a.download:active{
 	border:0;
 	padding-left:1em;
 	padding-bottom:1em;
+	width:37em;
 	}
 /**************************************************/
 /* conni */
@@ -844,11 +846,11 @@ a.download:hover, a.download:active{
 /*em*/
 #conny_index{
 	 position:absolute;
-	 left:-3.5em;
-	 top:6em;
+	 left:-3.8em;
+	 top:8.5em;
 	 border:0;
 	 padding-right:1em;
-	 padding-bottom:1em;
+	 padding-bottom:1.5em;
 	 }
 
 /**************************************************/
@@ -1004,16 +1006,19 @@ a.download:hover, a.download:active{
 	width:12.5em;
 	z-index:2
 	}
-#register{
+#register {
 	background-color:#FEB600;
 	height:1.6em;
-	padding-right:1.5em;
+	padding-right:1.2em;
 	padding-top:0.5em;
 	position:absolute;
 	right:0.3em;
 	text-align:right;
-	width:15.5em;
+	width:17.2em;
 	z-index:4;
+	}
+.register_text{
+	color:#666;
 	}
 #lang{
         position:absolute;
@@ -1037,6 +1042,12 @@ a.download:hover, a.download:active{
 	top:0.5em;
 	right:19.5em;
 	z-index:4;
+	}
+#navihead a:link, #navihead a:visited{
+	text-decoration: none;
+	}
+#navihead a:hover, #navihead a:active{
+	text-decoration: underline;
 	}
 #head{
 	background-image:url(/images/communtu_head.png);
