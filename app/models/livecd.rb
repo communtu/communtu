@@ -45,6 +45,13 @@ class Livecd < ActiveRecord::Base
     return nil
   end
 
+  def worker
+    MiddleMan.new_worker(:class => :livecd_worker,
+                     :args => self.id,
+                     :job_key => :livecd_worker,
+                     :singleton => true)
+  end
+  
   # create the liveCD in a forked process
   def fork_remaster
       self.pid = fork do
@@ -81,6 +88,7 @@ class Livecd < ActiveRecord::Base
         self.failed = !(system remaster_call)
         # kill VM, necessary in case of abrupt exit
         system "pkill -f \"kvm -daemonize .* -redir tcp:2222::22\""
+        system "sudo kill-kvm 2222"
         system "(echo; echo \"finished at:\"; date; echo; echo) >> #{RAILS_ROOT}/log/livecd.log"
         if self.failed then
           system "(echo; echo \"Creation of livd CD failed\"; echo) >> #{RAILS_ROOT}/log/livecd.log"
