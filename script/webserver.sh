@@ -4,7 +4,7 @@
 # Weiter muss in der Apache-Config /etc/apache2/apache2.conf hoechstwahrscheinlich das Root-Verzeichnis
 # auskommentiert werden.
 OLDSERVER=communtu.org
-SVNSERVER=communtu.org
+SVNSERVER=trac.communtu.org
 OLDUSERNAME=communtu
 NEWUSERNAME=communtu
 # folder for web projects
@@ -18,7 +18,7 @@ sudo /etc/init.d/apache2 restart
 # subversion
 sudo apt-get install subversion libapache2-svn
 # rails
-sudo apt-get install ruby rdoc irb libyaml-ruby libzlib-ruby ri libopenssl-ruby sqlite3 libsqlite3-ruby
+sudo apt-get install ruby rdoc irb libyaml-ruby libzlib-ruby ri libopenssl-ruby sqlite3 libsqlite3-ruby rubygems mongrel
 sudo ln -s /usr/bin/gem1.8 /usr/bin/gem
 sudo gem update --system
 sudo gem install -v=2.2.2 rails -y
@@ -28,18 +28,17 @@ sudo gem install chronic packet
 # debian packaging
 sudo apt-get install reprepro fakeroot dpkg-dev dh-make build-essential debootstrap schroot edos-debcheck apt-mirror
 #livecd
-sudo apt-get install apt-proxy genisoimage squashfs
+sudo apt-get install kvm apt-proxy genisoimage squashfs-tools
 #backup
 sudo apt-get install rsync
 # mysql server
 sudo apt-get install mysql-server libmysql-ruby ruby1.8-dev libmysqlclient15-dev
-sudo gem install mysql
-scp $OLDUSERNAME@$OLDSERVER:/etc/mysql/my.cnf /etc/mysql/my.cnf
+sudo scp $OLDUSERNAME@$OLDSERVER:/etc/mysql/my.cnf /etc/mysql/my.cnf
 sudo /etc/init.d/mysql reload
 mysqladmin -u root -p create communtu
-ssh $OLDUSERNAME@$OLDSERVER "mysqldump -u root -p communtu | gzip -c > /home/$OLDUSERNAME/web2.0/communtu-program/db.dump.gz"
-scp $OLDUSERNAME@$OLDSERVER:/home/$OLDUSERNAME/web2.0/communtu-program/db.dump.gz /home/$NEWUSERNAME/web2.0/communtu-program/
-gunzip -c /home/$NEWUSERNAME/web2.0/communtu-program/db.dump.gz | mysql -u root -p communtu
+ssh $OLDUSERNAME@$OLDSERVER "mysqldump -u admin -p --lock-all-tables --add-drop-table communtu | gzip -c > /home/communtu/web2.0/db.backup.gz"
+scp $OLDUSERNAME@$OLDSERVER:/home/$OLDUSERNAME/web2.0/db.backup.gz /home/$NEWUSERNAME/web2.0/communtu-program/
+gunzip -c /home/$NEWUSERNAME/web2.0/communtu-program/db.backup.gz | mysql -u root -p communtu
 # checkout rails project
 cd web2.0
 svn co http://$SVNSERVER/svn/communtu-program communtu-program --username commune 
