@@ -55,6 +55,31 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.integer  "section_id"
   end
 
+  add_index "base_packages", ["category_id", "type"], :name => "category_id"
+  add_index "base_packages", ["name"], :name => "index_base_packages_on_name"
+  add_index "base_packages", ["type", "published"], :name => "type_published"
+  add_index "base_packages", ["user_id", "type"], :name => "user_id"
+
+  create_table "bdrb_job_queues", :force => true do |t|
+    t.text     "args"
+    t.string   "worker_name"
+    t.string   "worker_method"
+    t.string   "job_key"
+    t.integer  "taken"
+    t.integer  "finished"
+    t.integer  "timeout"
+    t.integer  "priority"
+    t.datetime "submitted_at"
+    t.datetime "started_at"
+    t.datetime "finished_at"
+    t.datetime "archived_at"
+    t.string   "tag"
+    t.string   "submitter_info"
+    t.string   "runner_info"
+    t.string   "worker_key"
+    t.datetime "scheduled_at"
+  end
+
   create_table "cart_contents", :force => true do |t|
     t.integer  "cart_id"
     t.integer  "base_package_id"
@@ -90,6 +115,8 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.integer  "comment_tid"
   end
 
+  add_index "comments", ["metapackage_id"], :name => "metapackage_id"
+
   create_table "conflicts", :force => true do |t|
     t.integer  "package_id"
     t.integer  "package2_id"
@@ -120,6 +147,8 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "dependencies", ["package_distr_id", "base_package_id"], :name => "package_distr_id"
 
   create_table "derivatives", :force => true do |t|
     t.string   "name"
@@ -229,6 +258,9 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.boolean  "outdated",        :default => false
   end
 
+  add_index "package_distrs", ["package_id"], :name => "package_id"
+  add_index "package_distrs", ["repository_id"], :name => "repository_id"
+
   create_table "package_distrs_architectures", :force => true do |t|
     t.integer  "package_distr_id"
     t.integer  "architecture_id"
@@ -236,6 +268,8 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.datetime "updated_at"
     t.boolean  "outdated",         :default => false
   end
+
+  add_index "package_distrs_architectures", ["package_distr_id", "architecture_id"], :name => "package_distr_id"
 
   create_table "permissions", :force => true do |t|
     t.integer  "role_id",    :null => false
@@ -254,6 +288,7 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.integer  "comment_tid"
   end
 
+  add_index "ratings", ["rateable_id", "rateable_type"], :name => "rateable_id"
   add_index "ratings", ["user_id"], :name => "fk_ratings_user"
 
   create_table "repositories", :force => true do |t|
@@ -300,6 +335,8 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.string   "language_code"
   end
 
+  add_index "translations", ["translatable_id", "language_code"], :name => "translatable_id", :unique => true
+
   create_table "umfrage_packages", :force => true do |t|
     t.integer  "umfrage_id"
     t.string   "package"
@@ -335,6 +372,9 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "user_packages", ["id"], :name => "id"
+  add_index "user_packages", ["user_id", "package_id", "is_selected"], :name => "user_id_package_id_selected"
 
   create_table "user_profiles", :force => true do |t|
     t.integer  "user_id"
