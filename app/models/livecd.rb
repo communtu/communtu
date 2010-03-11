@@ -76,7 +76,9 @@ class Livecd < ActiveRecord::Base
         self.generating = true
         self.save
         # log to log/livecd.log
-        system "(echo; echo \"------------------------------------\"; echo \"Creating live CD\"; date) >> #{RAILS_ROOT}/log/livecd.log"
+        call = "(echo; echo \"------------------------------------\"; echo \"Creating live CD #{fullname}\"; date) >> #{RAILS_ROOT}/log/"
+        system (call+"livecd.log")
+        system (call+"livecd.short.log")
         # Karmic and higher need virtualisation due to requirement of sqaushfs version >= 4 (on the server, we have Hardy)
         if self.distribution_id >= 5 then
           virt = "-v "
@@ -89,9 +91,14 @@ class Livecd < ActiveRecord::Base
         # kill VM, necessary in case of abrupt exit
         system "pkill -f \"kvm -daemonize .* -redir tcp:2222::22\""
         system "sudo kill-kvm 2222"
-        system "(echo; echo \"finished at:\"; date; echo; echo) >> #{RAILS_ROOT}/log/livecd.log"
+        call = "(echo; echo \"finished at:\"; date; echo; echo) >> #{RAILS_ROOT}/log/"
+        system (call+"livecd.log")
+        system (call+"livecd.short.log")
+        msg = if self.failed then "failed" else "succeeded" end
+        call = "(echo; echo \"Creation of livd CD #{msg}\"; echo) >> #{RAILS_ROOT}/log/"
+        system (call+"livecd.log")
+        system (call+"livecd.short.log")
         if self.failed then
-          system "(echo; echo \"Creation of livd CD failed\"; echo) >> #{RAILS_ROOT}/log/livecd.log"
           self.log = IO.popen("tail -n80 #{RAILS_ROOT}/log/livecd.log").read
         end
       rescue
