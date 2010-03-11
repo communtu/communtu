@@ -55,3 +55,12 @@ namespace :db do
     end
   end
 end
+namespace :livecd do
+  desc 'Daemon for creating LiveCDs'
+  task :daemon => :environment do
+    loop do
+      Livecd.remaster_next
+      sleep 10
+    end
+  end
+end

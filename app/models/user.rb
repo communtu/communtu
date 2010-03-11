@@ -404,7 +404,7 @@ end
     cd = Livecd.create({:name => name, :distribution_id => self.distribution_id, :user_id => self.id,
                         :derivative_id => self.derivative_id, :architecture_id => self.architecture_id,
                         :srcdeb => srcdeb, :installdeb => installdeb})
-    cd.fork_remaster
+    # cd.fork_remaster # now done by daemon
   end
 
   def bundle_to_livecd(bundle)
@@ -413,7 +413,7 @@ end
     cd = Livecd.create({:name => deb_name, :distribution_id => self.distribution_id, :user_id => self.id,
                         :derivative_id => self.derivative_id, :architecture_id => self.architecture_id,
                         :srcdeb => srcdeb, :installdeb => deb_name})
-    cd.fork_remaster
+    # cd.fork_remaster # now done by daemon
   end
 
 

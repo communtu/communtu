@@ -122,6 +122,13 @@ class Livecd < ActiveRecord::Base
     self.save
   end
 
+  def self.remaster_next
+    cd = Livecd.find_by_generated_and_generating_and_failed(false,false,false)
+    if !cd.nil? then
+      cd.remaster
+    end
+  end
+  
   protected
 
   # cleanup of processes and iso files
