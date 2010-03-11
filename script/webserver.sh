@@ -29,6 +29,8 @@ sudo gem install chronic packet
 sudo apt-get install reprepro fakeroot dpkg-dev dh-make build-essential debootstrap schroot edos-debcheck apt-mirror
 #livecd
 sudo apt-get install kvm apt-proxy genisoimage squashfs-tools
+sudo mkdir /remaster
+# generate images and keys, see script/remaster
 #backup
 sudo apt-get install rsync
 # mysql server
