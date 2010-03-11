@@ -7,7 +7,7 @@ body{ 	font-size:0.8em;
 	background-color:#fff;
 	margin:0;
 	padding:0;
-	height:95em;
+	/*height:95em; */
 	}
 
 #notice{color: green;}
@@ -778,6 +778,7 @@ a.download:hover, a.download:active{
 	 left:3em;
 	 top:8em;
 	 width:45em;
+         padding-bottom:2em;
 	 }
 .beste_buendel{
 	margin-top:2.5em;
@@ -910,6 +911,7 @@ a.download:hover, a.download:active{
 	left:0.5em;
 	top:7em;
 	width:56em;
+        padding-bottom:2em;
 	}
 .content{
 	left:4.5em;
