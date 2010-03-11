@@ -77,7 +77,7 @@ class Livecd < ActiveRecord::Base
         self.save
         # log to log/livecd.log
         system "(echo; echo \"------------------------------------\")  >> #{RAILS_ROOT}/log/livecd.log"
-        call = "echo \"Creating live CD #{fullname}\"; date >> #{RAILS_ROOT}/log/"
+        call = "(echo \"Creating live CD #{fullname}\"; date) >> #{RAILS_ROOT}/log/"
         system (call+"livecd.log")
         system (call+"livecd.short.log")
         # Karmic and higher need virtualisation due to requirement of sqaushfs version >= 4 (on the server, we have Hardy)
