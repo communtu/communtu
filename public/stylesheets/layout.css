@@ -905,6 +905,7 @@ a.download:hover, a.download:active{
 	left:26px;
 	top:42px;
 	width: 725px;
+        padding-bottom:2em;
 	}
 .content1{
 	position:absolute;
