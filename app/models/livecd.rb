@@ -71,8 +71,8 @@ class Livecd < ActiveRecord::Base
       self.failed = false
     else
       # need to generate iso, use lock in order to prevent parallel generation of multiple isos
-      system "dotlockfile -r 1000 #{RAILS_ROOT}/livecd_lock"
       begin
+        safe_system "dotlockfile -r 1000 #{RAILS_ROOT}/livecd_lock"
         self.generating = true
         self.save
         # log to log/livecd.log
@@ -90,7 +90,6 @@ class Livecd < ActiveRecord::Base
         system "echo \"#{remaster_call}\" >> #{RAILS_ROOT}/log/livecd.log"
         self.failed = !(system remaster_call)
         # kill VM, necessary in case of abrupt exit
-        system "pkill -f \"kvm -daemonize .* -redir tcp:2222::22\""
         system "sudo kill-kvm 2222"
         system "echo  >> #{RAILS_ROOT}/log/livecd.log"
         call = "echo \"finished at:\"; date >> #{RAILS_ROOT}/log/"
