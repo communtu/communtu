@@ -144,7 +144,7 @@ class Livecd < ActiveRecord::Base
         Process.kill("KILL", self.pid)
       else
         # only delete the iso
-        fork do File.delete self.filename end
+        File.delete self.filename
       end
     rescue
     end
