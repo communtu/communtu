@@ -96,7 +96,7 @@ class Livecd < ActiveRecord::Base
         system (call+"livecd.log")
         system (call+"livecd.short.log")
         msg = if self.failed then "failed" else "succeeded" end
-        call = "echo \"Creation of livd CD #{msg}\" >> #{RAILS_ROOT}/log/"
+        call = "echo \"Creation of live CD #{msg}\" >> #{RAILS_ROOT}/log/"
         system (call+"livecd.log")
         system (call+"livecd.short.log")
         system "echo  >> #{RAILS_ROOT}/log/livecd.log"
