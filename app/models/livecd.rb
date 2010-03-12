@@ -91,6 +91,7 @@ class Livecd < ActiveRecord::Base
         self.failed = !(system remaster_call)
         # kill VM, necessary in case of abrupt exit
         system "sudo kill-kvm 2222"
+        system "sudo umount-remaster"
         system "echo  >> #{RAILS_ROOT}/log/livecd.log"
         call = "echo \"finished at:\"; date >> #{RAILS_ROOT}/log/"
         system (call+"livecd.log")
