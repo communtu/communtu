@@ -412,8 +412,10 @@ end
     deb_name = bundle.debian_name
     # ensure that debian package exists
     bundle.debianize
-    d=Deb.find_by_metapackage_id_and_distribution_id_and_derivative_id_and_architecture_id(bundle.id,
-         self.distribution_id,self.derivative_id,self.architecture_id)
+    d=Deb.find(:first,:conditions=> {:metapackage_id => bundle.id,
+                                     :distribution_id => self.distribution_id,
+                                     :derivative_id => self.derivative_id,
+                                     :architecture_id => self.architecture_id})
     if !d.generated then
       d.generate
     end
