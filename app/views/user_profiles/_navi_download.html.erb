@@ -2,7 +2,7 @@
         <%= link_to t(:model_user_profile_tabz_1), user_path(current_user) + "/user_profile/edit" %>
       | <%= link_to t(:install), user_path(current_user) + "/user_profile/installation" %>
       | <%= link_to t(:model_user_profile_tabz_4), user_path(current_user) + "/user_profile/settings" %>
-    <% if is_power_user? || current_user.distribution_id==5 && !current_user.anonymous? %>
+    <% if (current_user.distribution_id==5 || current_user.distribution_id==4) && !current_user.anonymous? %>
        | <%= link_to t(:livecd), user_path(current_user) + "/user_profile/livecd" %>
     <% end %>
 </div>
