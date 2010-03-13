@@ -410,6 +410,14 @@ end
   def bundle_to_livecd(bundle)
     srcdeb = RAILS_ROOT + "/" + self.install_bundle_sources(bundle)
     deb_name = bundle.debian_name
+    # ensure that debian package exists
+    bundle.debianize
+    d=Deb.find_by_metapackage_id_and_distribution_id_and_derivative_id_and_architecture_id(bundle.id,
+         self.distribution_id,self.derivative_id,self.architecture_id)
+    if !d.generated then
+      d.generate
+    end
+    # create live cd
     cd = Livecd.create({:name => deb_name, :distribution_id => self.distribution_id, :user_id => self.id,
                         :derivative_id => self.derivative_id, :architecture_id => self.architecture_id,
                         :srcdeb => srcdeb, :installdeb => deb_name})
