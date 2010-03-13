@@ -414,8 +414,7 @@ end
     bundle.debianize
     d=Deb.find(:first,:conditions=> {:metapackage_id => bundle.id,
                                      :distribution_id => self.distribution_id,
-                                     :derivative_id => self.derivative_id,
-                                     :architecture_id => self.architecture_id})
+                                     :derivative_id => self.derivative_id})
     if !d.generated then
       d.generate
     end
