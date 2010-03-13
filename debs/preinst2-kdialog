@@ -2,14 +2,14 @@
 
       set +e
       # test if kdialog is present
-      kdialog --version >/dev/null 2>&1
-      if [ $? = 0 ]; then
-        # if yes, display sources and keys to the user
-        kdialog --geometry 500x300 --title "Paketquellen hinzufügen" --yesno "Folgende Paketquellen und Schlüssel werden hinzugefügt\n$SOURCESKEYSDISP"
-        if [ $? != 0 ]; then
-            # abort if the user does not confirm
-            exit 1
-        fi
+#      kdialog --version >/dev/null 2>&1
+#      if [ $? = 0 ]; then
+#        # if yes, display sources and keys to the user
+#        kdialog --geometry 500x300 --title "Paketquellen hinzufügen" --yesno "Folgende Paketquellen und Schlüssel werden hinzugefügt\n$SOURCESKEYSDISP"
+#        if [ $? != 0 ]; then
+#            # abort if the user does not confirm
+#            exit 1
+#        fi
 #      else
 #        echo "Folgende Paketquellen und Schlüssel werden hinzugefügt"
 #        echo $SOURCESKEYSDISP
@@ -21,7 +21,7 @@
 #            # abort if the user does not confirm
 #            exit 1
 #        fi
-      fi
+#      fi
       set -e
 
     fi
