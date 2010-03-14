@@ -475,6 +475,9 @@ msgstr ""
 #: view_home_cancel_0
 msgid "Communtu -\n something went wrong while donating."
 msgstr ""
+#: conny_picture
+msgid "Conny Communtu's portrait"
+msgstr ""
 #: view_home_cancel_1
 msgid "Either you try a again or you use the possibility via bank transfer"
 msgstr ""
@@ -2365,11 +2368,11 @@ msgstr ""
 #: view_metapackages_immediate_conflicts_0
 msgid "Conflicts inside bundles"
 msgstr ""
-#: view_home_home_17
-msgid "imprint."
-msgstr ""
 #: controller_home_1
 msgid "The e-mail has been sent to us. Many thanks for your message."
+msgstr ""
+#: view_home_home_17
+msgid "imprint."
 msgstr ""
 #: view_metapackages_immediate_conflicts_1
 msgid " conflicts with"

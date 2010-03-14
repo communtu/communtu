@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Communtu 0.2\n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
-"Last-Translator: Timo Denissen <timo@communtu.de>\n"
+"Last-Translator: Torsten Franz <torsten.franz@bremen.de>\n"
 "Language-Team: Communtu <info@communtu.de>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -634,6 +634,10 @@ msgid ""
 msgstr ""
 "Communtu -\n"
 " something went wrong while donating."
+
+#: conny_picture
+msgid "Portrait von Conny Communtu"
+msgstr "Conny Communtu's portrait"
 
 #: view_home_cancel_1
 msgid "Endweder versuchst Du es noch einmal oder Du nutzt die Möglichkeit per Überweisung"

@@ -475,6 +475,9 @@ msgstr ""
 #: view_home_cancel_0
 msgid "Communtu -\n leider hat da etwas beim Spenden nicht funktioniert."
 msgstr ""
+#: conny_picture
+msgid "Portrait von Conny Communtu"
+msgstr ""
 #: view_home_cancel_1
 msgid "Endweder versuchst Du es noch einmal oder Du nutzt die Möglichkeit per Überweisung"
 msgstr ""

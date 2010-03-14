@@ -156,6 +156,7 @@ en:
   view_home_cancel_0: |-
     Communtu -
      something went wrong while donating.
+  conny_picture: Conny Communtu's portrait
   view_home_cancel_1: Either you try a again or you use the possibility via bank transfer
   view_home_news_5: This list is intended for general announcements from the Communtu team to the users. The frequency is a little higher than once a week. Posts will be collected in an
   used_in_bundles: "Is used at Communtu in these bundles:"
@@ -821,8 +822,8 @@ en:
   change_passwd: change password
   view_metapackages_immediate_conflicts_0: Conflicts inside bundles
   view_metapackages_immediate_conflicts_1: " conflicts with"
-  controller_home_1: The e-mail has been sent to us. Many thanks for your message.
   view_home_home_17: imprint.
+  controller_home_1: The e-mail has been sent to us. Many thanks for your message.
   view_home_home_18: Click on
   controller_home_2: We will notify you via e-mail.
   controller_home_3: This does not appear to be a list with Ubuntu-packages... <br />The packagelist must contain one packagename per line
