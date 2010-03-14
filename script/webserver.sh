@@ -33,6 +33,8 @@ sudo mkdir /remaster
 # generate images and keys, see script/remaster
 #backup
 sudo apt-get install rsync
+#Editor Console
+sudo apt-get install joe
 # mysql server
 sudo apt-get install mysql-server libmysql-ruby ruby1.8-dev libmysqlclient15-dev
 sudo scp $OLDUSERNAME@$OLDSERVER:/etc/mysql/my.cnf /etc/mysql/my.cnf
