@@ -80,8 +80,8 @@ class Livecd < ActiveRecord::Base
         call = "(echo \"Creating live CD #{fullname}\"; date) >> #{RAILS_ROOT}/log/"
         system (call+"livecd.log")
         system (call+"livecd.short.log")
-        # Karmic and higher need virtualisation due to requirement of sqaushfs version >= 4 (on the server, we have Hardy)
-        if self.distribution_id >= 5 then
+        # Jaunty and lower need virtualisation due to requirement of sqaushfs version >= 4 (on the server, we have Hardy)
+        if self.distribution_id < 5 then
           virt = "-v "
         else
           virt = ""
