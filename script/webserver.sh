@@ -52,3 +52,6 @@ ln -s communtu-program/public/debs/ communtu-packages
 # start rails apps
 /home/$NEWUSERNAME/web2.0/communtu-program/script/web start
 
+# rails server init script
+sudo cp script/rails /etc/init.d/
+sudo update-rc.d rails defaults
