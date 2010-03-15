@@ -55,3 +55,6 @@ ln -s communtu-program/public/debs/ communtu-packages
 # rails server init script
 sudo cp script/rails /etc/init.d/
 sudo update-rc.d rails defaults
+
+# keys
+scp $OLDUSERNAME@$OLDSERVER:"/home/$OLDUSERNAME/.ssh/*" /home/$NEWUSERNAME/.ssh/

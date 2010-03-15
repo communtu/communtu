@@ -109,6 +109,8 @@ class Deb < ActiveRecord::Base
           self.errmsg = nil
           self.log = IO.popen("tail -n80 #{RAILS_ROOT}/log/debianize.log").read
           self.save
+          # communtu repository has changed, hence clear apt-proxy cache
+          system "sudo clear-apt-proxy-cache-communtu"
         rescue StandardError => err
           self.generated = false
           self.errmsg = err
