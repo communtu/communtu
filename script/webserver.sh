@@ -58,3 +58,8 @@ sudo update-rc.d rails defaults
 
 # keys
 scp $OLDUSERNAME@$OLDSERVER:"/home/$OLDUSERNAME/.ssh/*" /home/$NEWUSERNAME/.ssh/
+
+#sudoers
+sudo cp script/sudoers/* /usr/bin/
+# check whether this works or visudo needs to be used
+sudo cat script/visudo >> /etc/sudoers
