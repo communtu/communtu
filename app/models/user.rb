@@ -415,8 +415,8 @@ end
     d=Deb.find(:first,:conditions=> {:metapackage_id => bundle.id,
                                      :distribution_id => self.distribution_id,
                                      :derivative_id => self.derivative_id,
-                                     :license_type => self.license_type,
-                                     :security_type => self.security_type})
+                                     :license_type => self.license,
+                                     :security_type => self.security})
     if !d.generated then
       d.generate
     end
