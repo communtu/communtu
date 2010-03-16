@@ -7,7 +7,7 @@ class Deb < ActiveRecord::Base
 
   # command for adding keys
   APT_KEY_COMMAND = "apt-key adv --recv-keys --keyserver"
-  KEYSERVER = "wwwkeys.eu.pgp.net"
+  KEYSERVER = "keyserver.ubuntu.com"
   # communtu repository
   COMMUNTU_REPO = "http://packages.communtu.org"
   COMMUNTU_KEY = "D66AFBC0"
