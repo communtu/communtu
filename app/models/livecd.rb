@@ -89,9 +89,10 @@ class Livecd < ActiveRecord::Base
         remaster_call = "#{RAILS_ROOT}/script/remaster create #{virt}#{ver} #{iso} #{self.name} #{self.srcdeb} #{self.installdeb} 2222 >> #{RAILS_ROOT}/log/livecd.log 2>&1"
         system "echo \"#{remaster_call}\" >> #{RAILS_ROOT}/log/livecd.log"
         self.failed = !(system remaster_call)
-        # kill VM, necessary in case of abrupt exit
+        # kill VM and release lock, necessary in case of abrupt exit
         system "sudo kill-kvm 2222"
         system "sudo umount-remaster"
+        system "dotlockfile -u /home/communtu/livecd/livecd2222.lock"
         system "echo  >> #{RAILS_ROOT}/log/livecd.log"
         call = "echo \"finished at:\"; date >> #{RAILS_ROOT}/log/"
         system (call+"livecd.log")
