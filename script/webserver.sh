@@ -28,7 +28,7 @@ sudo gem install chronic packet
 # debian packaging
 sudo apt-get install reprepro fakeroot dpkg-dev dh-make build-essential debootstrap schroot edos-debcheck apt-mirror
 #livecd
-sudo apt-get install kvm apt-proxy genisoimage squashfs-tools
+sudo apt-get install kvm apt-cacher libdbd-sqlite3-perl genisoimage squashfs-tools
 sudo mkdir /remaster
 # generate images and keys, see script/remaster
 #backup
@@ -49,12 +49,12 @@ svn co http://$SVNSERVER/svn/communtu-program communtu-program --username commun
 cd ..
 scp $OLDUSERNAME@$OLDSERVER:/home/$OLDUSERNAME/web2.0/communtu-program/config/database.yml /home/$NEWUSERNAME/web2.0/communtu-program/config/database.yml
 ln -s communtu-program/public/debs/ communtu-packages
-# start rails apps
-/home/$NEWUSERNAME/web2.0/communtu-program/script/web start
 
-# rails server init script
-sudo cp script/rails /etc/init.d/
-sudo update-rc.d rails defaults
+# repository of communtu packages and reprepro database
+scp -r $OLDUSERNAME@$OLDSERVER:/home/$OLDUSERNAME/web2.0/public/debs/pool /home/$NEWUSERNAME/web2.0/communtu-program/public/debs
+scp -r $OLDUSERNAME@$OLDSERVER:/home/$OLDUSERNAME/web2.0/public/debs/dists /home/$NEWUSERNAME/web2.0/communtu-program/public/debs
+scp -r $OLDUSERNAME@$OLDSERVER:/home/$OLDUSERNAME/web2.0/debs/db /home/$NEWUSERNAME/web2.0/communtu-program/debs
+scp $OLDUSERNAME@$OLDSERVER:/home/$OLDUSERNAME/web2.0/debs/distributions /home/$NEWUSERNAME/web2.0/communtu-program/debs
 
 # keys
 scp $OLDUSERNAME@$OLDSERVER:"/home/$OLDUSERNAME/.ssh/*" /home/$NEWUSERNAME/.ssh/
@@ -71,3 +71,9 @@ sudo cp script/sudoers/* /usr/bin/
 # check whether this works or visudo needs to be used
 sudo sh -c "cat script/visudo >> /etc/sudoers"
 
+# rails server init script
+sudo cp script/rails /etc/init.d/
+sudo update-rc.d rails defaults
+
+# start rails apps
+/home/$NEWUSERNAME/web2.0/communtu-program/script/web start
