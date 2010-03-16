@@ -59,7 +59,15 @@ sudo update-rc.d rails defaults
 # keys
 scp $OLDUSERNAME@$OLDSERVER:"/home/$OLDUSERNAME/.ssh/*" /home/$NEWUSERNAME/.ssh/
 
+sudo sh -c "ssh $OLDUSERNAME@$OLDSERVER \"sudo cat /root/.ssh/id_rsa\" > /root/.ssh/id_rsa"
+sudo sh -c "ssh $OLDUSERNAME@$OLDSERVER \"sudo cat /root/.ssh/id_rsa.pub\" > /root/.ssh/id_rsa.pub"
+scp $OLDUSERNAME@$OLDSERVER:"/home/$OLDUSERNAME/.gnupg/*" /home/$NEWUSERNAME/.gnupg/
+
+# old log files
+scp -r $OLDUSERNAME@$OLDSERVER:~/web2.0/$OLDUSERNAME/log /home/$NEWUSERNAME/web2.0/communtu-program/log/oldlog
+
 #sudoers
 sudo cp script/sudoers/* /usr/bin/
 # check whether this works or visudo needs to be used
-sudo cat script/visudo >> /etc/sudoers
+sudo sh -c "cat script/visudo >> /etc/sudoers"
+
