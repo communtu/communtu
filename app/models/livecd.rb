@@ -22,7 +22,7 @@ class Livecd < ActiveRecord::Base
 
   # filename of LiveCD in the file system
   def filename
-    "#{RAILS_ROOT}/public/debs/#{self.fullname}.iso"
+    "#{RAILS_ROOT}/public/isos/#{self.fullname}.iso"
   end
 
   # url of LiveCD on the communtu server

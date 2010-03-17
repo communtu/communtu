@@ -28,7 +28,14 @@ sudo gem install chronic packet
 # debian packaging
 sudo apt-get install reprepro fakeroot dpkg-dev dh-make build-essential debootstrap schroot edos-debcheck apt-mirror
 #livecd
-sudo apt-get install kvm apt-cacher libdbd-sqlite3-perl genisoimage squashfs-tools
+sudo apt-get install kvm libdbd-sqlite3-perl genisoimage squashfs-tools python-software-properties
+# fix apt-cacher bug, see https://bugs.launchpad.net/ubuntu/+source/apt-cacher/+bug/83987
+sudo add-apt-repository ppa:aperomsik/aap-ppa
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install apt-cacher
+sudo /etc/init.d/apt-cacher restart
+
 sudo mkdir /remaster
 # generate images and keys, see script/remaster
 #backup
