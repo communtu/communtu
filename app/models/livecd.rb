@@ -28,7 +28,7 @@ class Livecd < ActiveRecord::Base
   # url of LiveCD on the communtu server
   def url
     baseurl = if RAILS_ROOT.index("test").nil? then "http://communtu.org" else "http://test.communtu.de" end
-    return "#{baseurl}/debs/#{self.fullname}.iso"
+    return "#{baseurl}/isos/#{self.fullname}.iso"
   end
 
   # check if a user supplied name is acceptable
