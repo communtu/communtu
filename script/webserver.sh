@@ -20,6 +20,7 @@ sudo apt-get install subversion libapache2-svn
 # rails
 sudo apt-get install ruby rdoc irb libyaml-ruby libzlib-ruby ri libopenssl-ruby sqlite3 libsqlite3-ruby rubygems mongrel
 sudo ln -s /usr/bin/gem1.8 /usr/bin/gem
+sudo ln -s /var/lib/gems/1.8/bin/rake /usr/bin/
 sudo gem update --system
 sudo gem install -v=2.2.2 rails -y
 sudo gem install i18n
@@ -62,6 +63,7 @@ scp -r $OLDUSERNAME@$OLDSERVER:/home/$OLDUSERNAME/web2.0/public/debs/pool /home/
 scp -r $OLDUSERNAME@$OLDSERVER:/home/$OLDUSERNAME/web2.0/public/debs/dists /home/$NEWUSERNAME/web2.0/communtu-program/public/debs
 scp -r $OLDUSERNAME@$OLDSERVER:/home/$OLDUSERNAME/web2.0/debs/db /home/$NEWUSERNAME/web2.0/communtu-program/debs
 scp $OLDUSERNAME@$OLDSERVER:/home/$OLDUSERNAME/web2.0/debs/distributions /home/$NEWUSERNAME/web2.0/communtu-program/debs
+scp -r $OLDUSERNAME@$OLDSERVER:/home/communtu/web2.0/communtu-program/debs/repos /home/$NEWUSERNAME/web2.0/communtu-program/debs
 
 # keys
 scp $OLDUSERNAME@$OLDSERVER:"/home/$OLDUSERNAME/.ssh/*" /home/$NEWUSERNAME/.ssh/
@@ -84,3 +86,7 @@ sudo update-rc.d rails defaults
 
 # start rails apps
 /home/$NEWUSERNAME/web2.0/communtu-program/script/web start
+
+## add the following to crontab
+0       5       *       *       *       /home/communtu/web2.0/communtu-program/script/nightly-cron
+

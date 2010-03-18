@@ -43,6 +43,7 @@ do_it()
   sudo -u communtu /home/communtu/web2.0/communtu-program/script/web $1
   sudo -u communtu /home/communtu/web2.0/communtu-program-test/script/web $1
   sudo -u communtu /home/communtu/web2.0/communtu-program/script/livecd-daemon $1
+  sudo -u communtu /home/communtu/web2.0/communtu-program-test/script/livecd-daemon $1
 }
 
 # Function that sends a SIGHUP to the daemon/service

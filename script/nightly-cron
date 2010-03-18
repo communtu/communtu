@@ -2,12 +2,12 @@
 cd `dirname "$0"`/..
 # webalizer
 script/webalizer
-# kill old instances...
-pkill rake
-sleep 5
-pkill -2 rake
-sleep 5
-pkill -9 rake
+## kill old instances...
+#pkill rake
+#sleep 5
+#pkill -2 rake
+#sleep 5
+#pkill -9 rake
 # synchronise repositories
 script/sync_repos
 # generate debian packages
