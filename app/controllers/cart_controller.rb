@@ -61,8 +61,24 @@ class CartController < ApplicationController
         if editing_metapackage?
         
             cart = Cart.find(session[:cart])
-            meta = Metapackage.find(:first, :conditions => ["user_id = ? and name = ?", current_user.id, cart.name])
-
+            #this doesn't work for new bundle
+            t = Translation.find(:all, :conditions => ["contents = ?",cart.name]) 
+            #maybe we have more than one result than we must use all and have a hash. than we can look for each t till meta isn't nil
+            #the second only works, if the name of metapackage in the tabel metapackage get the name of the translation - that isn't good
+            if t != nil
+            m = t.length
+            l = 0
+              m.times do
+                candidate = Metapackage.find(:first, :conditions => ["user_id = ? and name_tid = ?", current_user.id, t[l].translatable_id])
+                if candidate != nil
+                  @meta = candidate
+                end
+                l = l + 1
+              end
+            else
+              @meta = Metapackage.find(:first, :conditions => ["user_id = ? and name = ?", current_user.id, cart.name])
+            end
+              meta = @meta
             if meta.nil?
                 meta = Metapackage.new
 		@translation_new  = Translation.new  
