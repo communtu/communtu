@@ -43,7 +43,7 @@
            | Gast </span>
            <% end %>
         <%  else %>
-          <%= link_to t(:register), '/users/new' %> |
+          <%= link_to t(:register), user_path(current_user.id) %> |
           <% if is_admin? %>
           <% else %>
             <span class="register_text"> Gast </span>
@@ -58,7 +58,7 @@
 	
 </div>
 
-<!-- hauptnavigation -->
+<!-- mainnavigation -->
 <div class="navi">
 	<!-- button -->
 <%= "<a href='" + user_path(current_user) + "/user_profile/edit'>" %>
