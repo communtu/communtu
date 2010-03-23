@@ -3,6 +3,10 @@
 # Es muss noch nach dem Script die Datei /etc/apache2/sites-enabled/all angepasst werden.
 # Weiter muss in der Apache-Config /etc/apache2/apache2.conf hoechstwahrscheinlich das Root-Verzeichnis
 # auskommentiert werden.
+OLDDBUSER=root
+OLDDBPASSWORD=...
+NEWDBUSER=root
+NEWDBPASSWORD=...
 OLDSERVER=communtu.org
 SVNSERVER=trac.communtu.org
 OLDUSERNAME=communtu
@@ -47,22 +51,37 @@ sudo apt-get install joe
 sudo apt-get install mysql-server libmysql-ruby ruby1.8-dev libmysqlclient15-dev
 sudo scp $OLDUSERNAME@$OLDSERVER:/etc/mysql/my.cnf /etc/mysql/my.cnf
 sudo /etc/init.d/mysql reload
-mysqladmin -u root -p create communtu
-ssh $OLDUSERNAME@$OLDSERVER "mysqldump -u admin -p --lock-all-tables --add-drop-table communtu | gzip -c > /home/communtu/web2.0/db.backup.gz"
+mysqladmin -u $NEWDBUSER --password=$NEWDBPASSWORD create communtu
+ssh $OLDUSERNAME@$OLDSERVER "mysqldump -u $OLDDBUSER --passwod=$OLDDBPASSWORD --lock-all-tables --add-drop-table communtu | gzip -c > /home/communtu/web2.0/db.backup.gz"
 scp $OLDUSERNAME@$OLDSERVER:/home/$OLDUSERNAME/web2.0/db.backup.gz /home/$NEWUSERNAME/web2.0/communtu-program/
-gunzip -c /home/$NEWUSERNAME/web2.0/communtu-program/db.backup.gz | mysql -u root -p communtu
+gunzip -c /home/$NEWUSERNAME/web2.0/communtu-program/db.backup.gz | mysql -u $NEWDBUSER --password=$NEWDBPASSWORD communtu
 # checkout rails project
 cd web2.0
-svn co http://$SVNSERVER/svn/communtu-program communtu-program --username commune 
+svn co http://$SVNSERVER/svn/communtu-program communtu-program --username commune
+echo 3002 > communtu-program/config/ports
+echo 3003 >> communtu-program/config/ports
+echo 3004 >> communtu-program/config/ports
+echo 3005 >> communtu-program/config/ports
+echo 3006 >> communtu-program/config/ports
+cp communtu-program/config/database.yml.template communtu-program/config/database.yml
+# database user and password
+sed -i 's/root/$NEWDBUSER/' communtu-program/config/database.yml
+sed -i 's/password: /password: $NEWDBPASSWORD/' communtu-program/config/database.yml
+# test system
+cp -r communtu-program communtu-program-test
+echo 3020 > communtu-program-test/config/ports
+sed -i 's/database: communtu/database: communtu-test/' communtu-program-test/config/database.yml
+mysqladmin -u $NEWDBUSER --password=$NEWDBPASSWORD create communtu-test
 cd ..
+# database configuration
 scp $OLDUSERNAME@$OLDSERVER:/home/$OLDUSERNAME/web2.0/communtu-program/config/database.yml /home/$NEWUSERNAME/web2.0/communtu-program/config/database.yml
 ln -s communtu-program/public/debs/ communtu-packages
 
 # repository of communtu packages and reprepro database
-scp -r $OLDUSERNAME@$OLDSERVER:/home/$OLDUSERNAME/web2.0/public/debs/pool /home/$NEWUSERNAME/web2.0/communtu-program/public/debs
-scp -r $OLDUSERNAME@$OLDSERVER:/home/$OLDUSERNAME/web2.0/public/debs/dists /home/$NEWUSERNAME/web2.0/communtu-program/public/debs
-scp -r $OLDUSERNAME@$OLDSERVER:/home/$OLDUSERNAME/web2.0/debs/db /home/$NEWUSERNAME/web2.0/communtu-program/debs
-scp $OLDUSERNAME@$OLDSERVER:/home/$OLDUSERNAME/web2.0/debs/distributions /home/$NEWUSERNAME/web2.0/communtu-program/debs
+scp -r $OLDUSERNAME@$OLDSERVER:/home/$OLDUSERNAME/web2.0/communtu-program/public/debs/pool /home/$NEWUSERNAME/web2.0/communtu-program/public/debs
+scp -r $OLDUSERNAME@$OLDSERVER:/home/$OLDUSERNAME/web2.0/communtu-program/public/debs/dists /home/$NEWUSERNAME/web2.0/communtu-program/public/debs
+scp -r $OLDUSERNAME@$OLDSERVER:/home/$OLDUSERNAME/web2.0/communtu-program/debs/db /home/$NEWUSERNAME/web2.0/communtu-program/debs
+scp $OLDUSERNAME@$OLDSERVER:/home/$OLDUSERNAME/web2.0/communtu-program/debs/distributions /home/$NEWUSERNAME/web2.0/communtu-program/debs
 scp -r $OLDUSERNAME@$OLDSERVER:/home/communtu/web2.0/communtu-program/debs/repos /home/$NEWUSERNAME/web2.0/communtu-program/debs
 
 # keys
@@ -73,12 +92,8 @@ sudo sh -c "ssh $OLDUSERNAME@$OLDSERVER \"sudo cat /root/.ssh/id_rsa.pub\" > /ro
 scp $OLDUSERNAME@$OLDSERVER:"/home/$OLDUSERNAME/.gnupg/*" /home/$NEWUSERNAME/.gnupg/
 
 # old log files
-scp -r $OLDUSERNAME@$OLDSERVER:~/web2.0/$OLDUSERNAME/log /home/$NEWUSERNAME/web2.0/communtu-program/log/oldlog
+scp -r $OLDUSERNAME@$OLDSERVER:~/web2.0/communtu-program/$OLDUSERNAME/log /home/$NEWUSERNAME/web2.0/communtu-program/log/oldlog
 
-#sudoers
-sudo cp script/sudoers/* /usr/bin/
-# check whether this works or visudo needs to be used
-sudo sh -c "cat script/visudo >> /etc/sudoers"
 
 # rails server init script
 sudo cp script/rails /etc/init.d/
@@ -87,6 +102,18 @@ sudo update-rc.d rails defaults
 # start rails apps
 /home/$NEWUSERNAME/web2.0/communtu-program/script/web start
 
-## add the following to crontab
-0       5       *       *       *       /home/communtu/web2.0/communtu-program/script/nightly-cron
+# security updates
+sudo cp /home/$NEWUSERNAME/web2.0/communtu-program/script/security-updates /etc/cron.daily
 
+########################## TODO MANUALLY ############################
+#sudoers
+sudo cp script/sudoers/* /usr/bin/
+# check whether this works or visudo needs to be used
+sudo sh -c "cat script/visudo >> /etc/sudoers"
+
+## add the following to user's crontab
+0       5       *       *       *       /home/communtu/web2.0/communtu-program/script/nightly-cron
+## add the following to root's crontab
+0      4       *       *       1       /sbin/reboot
+
+# check that you can log in from backup server to communtu server
