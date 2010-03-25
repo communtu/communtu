@@ -21,6 +21,12 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @metas_user = Metapackage.find_all_by_user_id(params[:id])
+    userlog = Userlog.find(:last, :conditions => {:user_id => params[:id]})
+    if userlog == nil
+      @last_action = @user.updated_at
+    else
+      @last_action = userlog.created_at
+    end
   end
     
   # render new.rhtml
