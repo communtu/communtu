@@ -12,15 +12,17 @@ SVNSERVER=trac.communtu.org
 OLDUSERNAME=communtu
 NEWUSERNAME=communtu
 # folder for web projects
+cd
 mkdir web2.0
 # apache und mail
-sudo apt-get install apache2
-#scp -r $OLDUSERNAME@$OLDSERVER:/etc/apache2/* /etc/apache2/
+sudo apt-get install apache2 webalizer
+sudo scp $OLDUSERNAME@$OLDSERVER:/etc/apache2/sites-available/communtu.conf /etc/apache2/sites-available/
+sudo a2ensite communtu.conf
 sudo apt-get install php5 libapache2-mod-python sendmail
 sudo a2enmod proxy
-sudo /etc/init.d/apache2 restart
 # subversion
 sudo apt-get install subversion libapache2-svn
+sudo /etc/init.d/apache2 restart
 # rails
 sudo apt-get install ruby rdoc irb libyaml-ruby libzlib-ruby ri libopenssl-ruby sqlite3 libsqlite3-ruby rubygems mongrel
 sudo ln -s /usr/bin/gem1.8 /usr/bin/gem
