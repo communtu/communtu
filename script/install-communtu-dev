@@ -1,0 +1,48 @@
+#!/bin/bash
+#adapt to your local settings, if needed
+dbuser=root
+backupdbplace=commune@unitopia.org:/home/commune/
+
+set -x
+# script for installing rails and commutu
+# subversion
+sudo apt-get install -y subversion
+# rails
+sudo apt-get install -y ruby rdoc irb libyaml-ruby libzlib-ruby ri libopenssl-ruby sqlite3 libsqlite3-ruby rubygems mongrel
+sudo ln -s /usr/bin/gem1.8 /usr/bin/gem
+sudo ln -s /var/lib/gems/1.8/bin/rake /usr/bin/
+sudo gem install -v=2.2.2 rails
+sudo gem install i18n
+sudo sed -i "s/deprecate :/# deprecate :/" /var/lib/gems/1.8/gems/rails-2.2.2/lib/rails_generator/secret_key_generator.rb
+# needed for backgroundrb
+sudo gem install chronic packet
+# mysql server
+sudo apt-get install -y mysql-server libmysql-ruby ruby1.8-dev libmysqlclient15-dev
+svn co http://trac.communtu.org/svn/communtu-program communtu-program
+cd communtu-program
+# setting up rails config
+cp config/database.yml.template config/database.yml
+set +x
+res=1
+while [ $res -ne 0 ]
+  do
+    echo -n "enter database password:"
+    read -s passwd
+    mysqladmin -u $dbuser --password=$passwd create communtu
+    res=$?
+  done  
+echo
+sed -i "s/password: /password: $passwd/" config/database.yml
+sed -i "s/root/$dbuser/" config/database.yml
+# setup database
+echo "copying database from server, please enter backup server password"
+set -x
+scp -P 22 $backupdbplace/db.backup.gz .
+gunzip -c db.backup.gz | mysql -u $dbuser --password=$passwd communtu
+set +x
+echo
+echo "now try:"
+echo "cd communtu-program"
+echo "script/server"
+echo "script/console"
+
