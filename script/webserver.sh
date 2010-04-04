@@ -16,6 +16,10 @@ cd
 mkdir web2.0
 # apache und mail
 sudo apt-get install apache2 webalizer
+mkdir -p webalizer/en-communtu
+mkdir -p webalizer/de-communtu
+mkdir -p webalizer/pack-communtu
+
 sudo scp $OLDUSERNAME@$OLDSERVER:/etc/apache2/sites-available/communtu.conf /etc/apache2/sites-available/
 sudo a2ensite communtu.conf
 sudo apt-get install php5 libapache2-mod-python sendmail
