@@ -14,6 +14,7 @@
 </tr>
 
     <% for metapackage in packages %>
+     <% if metapackage.name != "" %>
      <% css = cycle("packageList0", "packageList1") %>
       <tr>
         <td class="<%= css %>" valign="middle">
@@ -71,6 +72,7 @@
 			<%= render :partial=>"rating/rating_comment" ,:locals => { :metapackage => metapackage } %>
 		</td>
 	</tr>
+      <% end %>
     <% end %>
     </table>
 <% else %>
