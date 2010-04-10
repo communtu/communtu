@@ -119,6 +119,7 @@ sudo sh -c "cat script/visudo >> /etc/sudoers"
 
 ## add the following to user's crontab
 0       5       *       *       *       /home/communtu/web2.0/communtu-program/script/nightly-cron
+*       *       *       *       *       /home/communtu/web2.0/communtu-program/script/livecd-daemon-check
 ## add the following to root's crontab
 0      4       *       *       1       /sbin/reboot
 

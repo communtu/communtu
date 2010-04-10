@@ -1,5 +1,6 @@
 #!/bin/bash
-ps -aef |grep livecd:daemon |grep -v grep
+cd `dirname "$0"`/..
+ps -aef |grep livecd:daemon |grep -v grep > /dev/null
 if [ $? -ne 0 ]
   then script/livecd-daemon
 fi
