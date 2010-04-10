@@ -1,0 +1,5 @@
+#!/bin/bash
+ps -aef |grep livecd:daemon
+if [ $? -ne 0 ]
+  then script/livecd-daemon
+fi
