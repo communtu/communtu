@@ -1,5 +1,5 @@
 #!/bin/bash
-ps -aef |grep livecd:daemon
+ps -aef |grep livecd:daemon |grep -v grep
 if [ $? -ne 0 ]
   then script/livecd-daemon
 fi
