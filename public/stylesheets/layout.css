@@ -1,5 +1,5 @@
 /**************************************************/
-/* allgemein */
+/* general formats */
 /**************************************************/
 body{ 	font-size:0.8em;
 	font-family:Verdana,Arial,Helvetica,sans-serif;
@@ -81,7 +81,7 @@ pre {
 	 font-size: 11px;
 	 }
 /**************************************************/
-/* anwendungen */
+/* formats for applications */
 /**************************************************/
 div.flash{
 	border-style: dotted;
@@ -519,7 +519,7 @@ li.cartlist {
 	list-style-type: none;
 	}
 
- .rating_comment_field {
+.rating_comment_field {
  	width: 750px;
 	height: 100px;
 	margin-bottom: 10px;
@@ -668,12 +668,12 @@ a.tt:hover span.bottom{
 	}
 
 /**************************************************/
-/* downloadbereich */
+/* download  */
 /**************************************************/
 
-/* buendel */
-/*a.detail und classen download... nicht gefunden*/
-.ubuntupakete{
+/* bundle */
+/*a.detail and classen download... no found*/
+.ubuntupackets{
 	position:relative;
 	padding-left:0.8em;
 	padding-right:0.8em;
@@ -685,7 +685,7 @@ a.tt:hover span.bottom{
 	min-height: 46em;
 	border:0.2em solid #C6C6C6;
 	}
-.neues_buendel{
+.new_buendle{
 	position:absolute;
 	padding-left:0.8em;
 	padding-right:0.8em;
@@ -764,7 +764,7 @@ a.download:hover, a.download:active{
 	}
 
 /**************************************************/
-/* startseite */
+/* home  */
 /**************************************************/
 
 /*.contentstart{
@@ -780,19 +780,18 @@ a.download:hover, a.download:active{
 	 width:45em;
          padding-bottom:2em;
 	 }
-.beste_buendel{
-	margin-top:2.5em;
+.best_buendle{
 	position:absolute;
-	left:50em;
+	left:48em;
 	top:0.5em;
 	width:22em;
  	}
-.beste_buendel ul li{
+.best_buendle ul li{
 	list-style-image:url(/images/star_trans.gif);
 	list-style-position:outside;
 	padding-bottom:0.1em;
  	}
-.buendel_anzahl{
+.buendle_count{
 	margin-bottom:2.5em;
 	}
 .bemerkung{
@@ -812,7 +811,7 @@ a.download:hover, a.download:active{
 	height:20px;
 	float:left;
 	}
-#liste_neben_conni{
+#list_nextto_conni{
 	position:relative;
 	left:6.5em;
 	top:1em;
@@ -826,8 +825,8 @@ a.download:hover, a.download:active{
 /**************************************************/
 .conny_withbox{
 	 position:relative;
-	 left: 64em;
-	 top: 26.5em;
+	 left: 61em;
+	 top: 228em;
 	 border:0;
 	 width:122px;
 	 height:153px;
@@ -836,7 +835,7 @@ a.download:hover, a.download:active{
 	 }
 .conny{
 	 position:absolute;
-	 left:64em;
+	 left:61em;
 	 top:10em;
 	 border:0;
 	 width:122px;
@@ -855,12 +854,12 @@ a.download:hover, a.download:active{
 	 }
 
 /**************************************************/
-/* rechter bereich */
+/* right side */
 /**************************************************/
 
 .communtu_box{
 	 position:absolute;
-	 left:62.5em;
+	 left:58em;
 	 top:8.8em;
 	 width:11em;
 	 padding-right:1em;
@@ -877,7 +876,7 @@ a.download:hover, a.download:active{
 	 color:#fff;
 	 font-weight:bold;
 	 }
-.communtu_box_drin{
+.communtu_box_inside{
 	 width:11em;
 	 border-top:1px solid #A33700;
 	 border-top-style:dotted;
@@ -885,7 +884,7 @@ a.download:hover, a.download:active{
 	 padding-top:0.5em;
 	 padding-left:1em;
 	 }
-.communtu_box_drin ul li{
+.communtu_box_inside ul li{
 	  list-style-type: none;
 	  list-style-image: none;
 	  list-style-position: none;
@@ -896,10 +895,9 @@ a.download:hover, a.download:active{
 	}
 
 /**************************************************/
-/* layout allgemein */
+/* layout */
 /**************************************************/
 
-/*wird die klasse verwendet?*/
 .content2{
 	position:absolute;
 	left:26px;
@@ -939,7 +937,7 @@ a.download:hover, a.download:active{
 /* navigation */
 /**************************************************/
 
-.unternavi{
+.secondnavi{
 	background-image:url(/images/communtu_unternavi.png);
 	background-repeat:no-repeat;
 	height:4em;
@@ -951,12 +949,12 @@ a.download:hover, a.download:active{
 	width:75em;
 	z-index:1;
 	}
-.unternavi a:link,.unternavi a:visited,.unternavi a:active{
+.secondnavi a:link,.unternavi a:visited,.unternavi a:active{
 	color:#451B00;
 	font-weight:normal;
 	text-decoration: underline;
 	}
-.unternavi a:hover{
+.secondnavi a:hover{
 	color:#451B00;
 	font-weight:normal;
 	text-decoration: none;
