@@ -10,7 +10,7 @@
         <div class="communtu_box_line">
         <%= t(:statistics) %>
         </div>
-        <div class="communtu_box_drin">
+        <div class="communtu_box_inside">
 <% @output = @statistics.sort_by { |s| s[:counter] } %>
 <% @output.last(10).reverse_each do |s| %>
 <%=  "#{s[:counter]} => " %>
