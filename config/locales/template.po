@@ -2417,7 +2417,7 @@ msgstr "<option>0 bundles selected</option>"
 
 #: last_user
 msgid "Wir begrüßen unseren zuletzt neu-registrierten Nutzer"
-msgstr "We welcome out newest user"
+msgstr "We welcome our newest user"
 
 #: save_selection
 msgid "Auswahl speichern"
