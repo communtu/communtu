@@ -403,12 +403,21 @@ class MetapackagesController < ApplicationController
     Distribution.all.each do |d|
       nd = d.successor
       if !nd.nil?
-        ms = Package.find_by_sql("SELECT base_packages.id AS pid, package_distrs.distribution_id, metacontents.metapackage_id, COUNT(package_id) AS counter  FROM `package_distrs`  LEFT JOIN base_packages ON (base_packages.id=package_distrs.package_id) INNER JOIN metacontents ON (base_packages.id = metacontents.base_package_id) INNER JOIN metacontents_distrs ON (metacontents.id = metacontents_distrs.metacontent_id)  WHERE package_distrs.distribution_id IN (#{d.id},#{nd.id})  GROUP BY package_id HAVING counter = 1 AND distribution_id = #{d.id}")
+        ms = Package.find_by_sql("SELECT base_packages.id AS pid, package_distrs.distribution_id, metacontents.metapackage_id, \
+               COUNT(package_id) AS counter  FROM `package_distrs`  \
+               LEFT JOIN base_packages ON (base_packages.id=package_distrs.package_id) \
+               INNER JOIN metacontents ON (base_packages.id = metacontents.base_package_id) \
+               INNER JOIN metacontents_distrs ON (metacontents.id = metacontents_distrs.metacontent_id)  \
+               WHERE package_distrs.distribution_id IN (#{d.id},#{nd.id}) \
+               GROUP BY package_id HAVING counter = 1 AND distribution_id = #{d.id}")
         @bundles_with_missing_packages[d] = ms
       end
     end
     @repositories_without_packages =
       Repository.all.select{|r| PackageDistr.find_by_repository_id(r.id).nil?}
+    @repositories_incompletely_read =
+      @repositories_without_packages.select{ |r| r.empty_files?}
+    @repositories_without_packages = @repositories_without_packages - @repositories_incompletely_read
     @failed_live_cds = Livecd.find_all_by_failed(true)
   end
 

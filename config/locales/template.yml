@@ -27,7 +27,7 @@ de:
   bundle_by_owner: erstellte Bündel
   bundle_editor: "Bündel-Editor"
   bundles_with_missing_debs: Bündel mit fehlenden deb-Builds
-  bundles_with_missing_packages: Bündel mit Paketen, die bei Übergang auf neue Distribution fehlen
+  bundles_with_missing_packages: Bündel mit Paketen, die bei Übergang auf neue Distribution fehlen (ggf. durch andere ersetzen)
   bundel_information_edit: Bündel Informationen bearbeiten
   bundle_open_new_window: Bündel wird im neuen Fenster geöffnet.
   by_bank_transfer: "per Überweisung"
@@ -165,6 +165,7 @@ de:
   email_without_colon: E-Mail
   english_description: "Englische Beschreibung:"
   english_name: "Englischer Name:"
+  errors: Fehler
   error_no_attachement: "Du hast keine Datei ausgewählt. Der Vorgang wurde abgebrochen."
   exact: "Exakten Begriff finden:"
   failed_live_cds: Fehlgeschlagene LiveCDs/DVDs
@@ -318,7 +319,8 @@ auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} er
   questionmark_conny: Klick mich und sag mir, was Dir unklar ist.
   register: Registrieren
   repository_url: "Repository-URL: "
-  repositories_without_packages: Repositories ohne Pakete
+  repositories_incompletely_read: Repositories ohne Pakete (da nicht richtig eingelesen)
+  repositories_without_packages: Repositories ohne Pakete (da Repositories leer)
   rough_selection: "Grobauswahl"
   save: Speichern
   save_selection: Auswahl speichern
@@ -906,6 +908,7 @@ Wenn Du der Meinung bist, dass dein Bündel um nützliche Programme erweitert we
   wait_for_debs: auf Bau der Metapakete warten
   wait_for_release: auf offizielles Ubuntu-Release warten
   wait_for_sync: auf Synchronisation der Repositories warten
+  warnings: Warnungen
   we_want_you: Wir brauchen Dich
   weblinks: Weblinks
   yes1: ja

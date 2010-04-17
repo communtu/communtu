@@ -22,6 +22,19 @@ class Repository < ActiveRecord::Base
     self.dir_name + "/" + self.id.to_s + "_" + arch.name
   end
 
+  def empty_files?
+    Architecture.all.each do |arch|
+       begin
+         f=File.open(self.file_name arch)
+         res = f.eof?
+         f.close
+         if !res then return false end
+       rescue
+         return false
+       end
+    end
+    return true
+  end
   def all_synchronized?
     Architecture.all.map {|a| File.exists?(file_name(a))}.all?
   end

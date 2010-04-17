@@ -1,4 +1,4 @@
-<h1><%=t(:health_status)%></h1>
+<h1><%=t(:health_status)%>: <%=t(:errors)%></h1>
 
 <h2><%=t(:bundles_with_missing_debs)%></h2>
 <%if @bundles_with_missing_debs.empty?%>
@@ -10,6 +10,31 @@
   <%end%>
   </ul>
 <%end%>
+
+<h2><%=t(:failed_live_cds)%></h2>
+<%if @failed_live_cds.empty?%>
+  <%=t(:none)%>
+<%else%>
+  <ul>
+  <%for c in @failed_live_cds%>
+   <li> <%=link_to c.name, livecd_path(c)%></li>
+  <%end%>
+  </ul>
+<%end%>
+
+
+<h2><%=t(:repositories_incompletely_read)%></h2>
+<%if @repositories_incompletely_read.empty?%>
+  <%=t(:none)%>
+<%else%>
+  <ul>
+  <%for r in @repositories_incompletely_read%>
+   <li> <%=link_to r.name, repository_path(r)%></li>
+  <%end%>
+  </ul>
+<%end%>
+
+<h1><%=t(:health_status)%>: <%=t(:warnings)%></h1>
 
 <h2><%=t(:bundles_with_missing_packages)%></h2>
 <% Distribution.all.each do |d| %>
@@ -40,15 +65,3 @@
   <%end%>
   </ul>
 <%end%>
-
-<h2><%=t(:failed_live_cds)%></h2>
-<%if @failed_live_cds.empty?%>
-  <%=t(:none)%>
-<%else%>
-  <ul>
-  <%for c in @failed_live_cds%>
-   <li> <%=link_to c.name, livecd_path(c)%></li>
-  <%end%>
-  </ul>
-<%end%>
-
