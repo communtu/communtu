@@ -12,16 +12,20 @@
 <%end%>
 
 <h2><%=t(:bundles_with_missing_packages)%></h2>
-<%if @bundles_with_missing_packages.empty?%>
-  <%=t(:none)%>
-<%else%>
+<% Distribution.all.each do |d| %>
+<%if !@bundles_with_missing_packages[d].nil? and !@bundles_with_missing_packages[d].empty?%>
   <ul>
-  <%  @bundles_with_missing_packages.each do |p,dists|%>
-   <li> <%=link_to b.name, package_path(p)%>: 
-        <% for d in dists %>
-          <%= link_to d.name, distribution_path(d) %>
-        <% end %>
-   </li>
+    <li>  <%= link_to d.name, distribution_path(d) %> => <%= link_to d.successor.name, distribution_path(d.successor) %>
+      <% @bundles_with_missing_packages[d].each do |m| %>
+      <ul>
+        <% p = Package.find(m.pid) %>
+        <% meta = Metapackage.find(m.metapackage_id) %>
+        <li> <%= link_to meta.name, metapackage_path(meta) %>
+            <%=link_to p.name, package_path(p)%>
+        </li>
+       </ul>
+       <% end %>
+    </li>
   <%end%>
   </ul>
 <%end%>

@@ -399,20 +399,12 @@ class MetapackagesController < ApplicationController
 #Package.find_by_sql("SELECT * from base_packages INNER JOIN metacontents ON metacontents.base_package_id = base_packages.id INNER JOIN metacontents_distrs ON metacontents.id = metacontents_distrs.id WHERE metacontents_distrs.distribution_id = 2").size
   def health_status
     @bundles_with_missing_debs = Metapackage.find(:all,:conditions=>["debs.generated = 0"],:include=>:debs)
-    @used_packages = Package.find(:all,:joins=>"INNER JOIN metacontents ON metacontents.base_package_id = base_packages.id",:limit => 100).uniq
     @bundles_with_missing_packages = {}
-    @used_packages.each do |p|
-      dists = p.distributions.sort{|x,y| x.id <=> y.id}
-      dists.each do |d|
-        dsuc = d.successor
-        if !dsuc.nil? then
-          if !dists.include?(dsuc) then
-            if @bundles_with_missing_packages[p].nil? then
-              @bundles_with_missing_packages[p] = []
-            end
-            @bundles_with_missing_packages[p] << d
-          end
-        end
+    Distribution.all.each do |d|
+      nd = d.successor
+      if !nd.nil?
+        ms = Package.find_by_sql("SELECT base_packages.id AS pid, package_distrs.distribution_id, metacontents.metapackage_id, COUNT(package_id) AS counter  FROM `package_distrs`  LEFT JOIN base_packages ON (base_packages.id=package_distrs.package_id) INNER JOIN metacontents ON (base_packages.id = metacontents.base_package_id) INNER JOIN metacontents_distrs ON (metacontents.id = metacontents_distrs.metacontent_id)  WHERE package_distrs.distribution_id IN (#{d.id},#{nd.id})  GROUP BY package_id HAVING counter = 1 AND distribution_id = #{d.id}")
+        @bundles_with_missing_packages[d] = ms
       end
     end
     @repositories_without_packages =

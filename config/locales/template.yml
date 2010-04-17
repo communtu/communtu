@@ -27,7 +27,7 @@ de:
   bundle_by_owner: erstellte Bündel
   bundle_editor: "Bündel-Editor"
   bundles_with_missing_debs: Bündel mit fehlenden deb-Builds
-  bundles_with_missing_packages: Bündel mit fehlenden Paketen
+  bundles_with_missing_packages: Bündel mit Paketen, die bei Übergang auf neue Distribution fehlen
   bundel_information_edit: Bündel Informationen bearbeiten
   bundle_open_new_window: Bündel wird im neuen Fenster geöffnet.
   by_bank_transfer: "per Überweisung"
