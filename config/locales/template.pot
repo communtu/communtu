@@ -163,6 +163,9 @@ msgstr ""
 #: bundle_open_new_window
 msgid "Bündel wird im neuen Fenster geöffnet."
 msgstr ""
+#: repositories_incompletely_read
+msgid "Repositories ohne Pakete (da nicht richtig eingelesen)"
+msgstr ""
 #: view_user_profiles__installation_21
 msgid "installieren der Metapakete. Bitte vorher die Quellen hinzufügen."
 msgstr ""
@@ -406,6 +409,9 @@ msgstr ""
 #: controller_suggestion_2
 msgid "Quellen und Schluessel hinzufuegen fuer Benutzer "
 msgstr ""
+#: warnings
+msgid "Warnungen"
+msgstr ""
 #: view_home_faq_all_01
 msgid "Das Deaktivieren führt nicht zum Deinstallieren von Paketen noch werden dadurch die Updates für die installierten Pakete unterbrochen. Diese werden aus anderen Softwarequellen, die ggf. von Communtu installiert wurden, bedient."
 msgstr ""
@@ -450,6 +456,9 @@ msgid "Ubuntu-Nachinstallation fuer Benutzer "
 msgstr ""
 #: english_name
 msgid "Englischer Name:"
+msgstr ""
+#: errors
+msgid "Fehler"
 msgstr ""
 #: view_packages_new_3
 msgid "Version"
@@ -975,9 +984,6 @@ msgid "Bündel Informationen bearbeiten"
 msgstr ""
 #: view_metapackages_show_deb_error
 msgid "Beim Erzeugen von Metapaketen ist ein Fehler aufgetreten. Wir kümmern uns um das Problem."
-msgstr ""
-#: view_home_news_18
-msgid "http://communtu.wordpress.com"
 msgstr ""
 #: view_home_derivatives_45
 msgid "http://wiki.ubuntuusers.de/Server_Installation"
@@ -1514,7 +1520,7 @@ msgstr ""
 msgid "Ubuntu-Pakete"
 msgstr ""
 #: bundles_with_missing_packages
-msgid "Bündel mit fehlenden Paketen"
+msgid "Bündel mit Paketen, die bei Übergang auf neue Distribution fehlen (ggf. durch andere ersetzen)"
 msgstr ""
 #: view_users_edit_9
 msgid "  Durch Klicken auf \"Speichern\" wird das Nutzerkonto zugleich dauerhaft gemacht."
@@ -1762,6 +1768,9 @@ msgstr ""
 #: view_admins_test_all_1
 msgid "Alle Repositories wurden erreicht."
 msgstr ""
+#: blog_link
+msgid "http://communtu.wordpress.com"
+msgstr ""
 #: view_users_show_8
 msgid "Nachrichten"
 msgstr ""
@@ -1870,11 +1879,11 @@ msgstr ""
 #: view_packages_show_11
 msgid "Weblinks:"
 msgstr ""
-#: view_passwords_edit_2
-msgid "Neues Passwort erhalten"
-msgstr ""
 #: view_user_profiles__profile_data_10
 msgid " Nur Ubuntuquellen zulassen (\"main/restricted\", sehr sicher: Sicherheits-Updates von Ubuntu)"
+msgstr ""
+#: view_passwords_edit_2
+msgid "Neues Passwort erhalten"
 msgstr ""
 #: view_user_profiles__profile_data_11
 msgid " Auch Communityquellen zulassen (\"universe/multiverse\", auch sicher, mehr Programme/Komfort: "
@@ -2351,7 +2360,7 @@ msgstr ""
 msgid "genauere Infos"
 msgstr ""
 #: repositories_without_packages
-msgid "Repositories ohne Pakete"
+msgid "Repositories ohne Pakete (da Repositories leer)"
 msgstr ""
 #: view_metapackages_rdepends_0
 msgid "Im Bündel "

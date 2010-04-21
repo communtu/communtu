@@ -50,6 +50,7 @@ en:
   view_categories_edit_4: "Maincategory, which is shown on the first page under Download:"
   view_user_profiles_new_3: level of expert
   bundle_open_new_window: Bundle will be opend in a new window.
+  repositories_incompletely_read: Repositories without packages (couldn't read repository)
   view_user_profiles__installation_21: Installation of the metapackages. Please add the sources first.
   name_of_livecd: "Name of the Live-CD/DVD:"
   view_user_profiles__installation_23: "Installing packages. There are two alternatives:"
@@ -133,6 +134,7 @@ en:
   controller_suggestion_2: Add repositories and keys for the user
   view_home_faq_all_01: "The deactivation does not involve unstalling packages nor will updates be held back for installed software. Updates are still obtained from the official sources and those, which Communtu might have added. "
   deb_generation_in_background: Debs are being created in the background (refresh the webpage if necessary)
+  warnings: Warnings
   view_home_faq_all_02: Packages are not being uninstalled and can be removed as normale via Synaptic or KPackageKit.
   controller_suggestion_4: Add repositories and keys for the bundle
   controller_suggestion_6: Add repositories and keys for the package
@@ -146,6 +148,7 @@ en:
   view_repositories_migrate_2: " to distribution"
   controller_suggestion_8: Ubuntu post-installation for users
   english_name: "English name:"
+  errors: Error
   view_packages_new_3: Version
   view_home_news_1: Our mailinglists
   view_packages_new_4: Source
@@ -341,7 +344,6 @@ en:
   bundel_information_edit: edit bundle information
   view_metapackages_show_deb_error: While creating metapackages, an error occurred. We'll solve that problem as fast as possible.
   view_user_profiles__profile_data_1: On this page you can enter the basic settings of your computer.
-  view_home_news_18: http://communtu.wordpress.com
   view_home_derivatives_45: http://wiki.ubuntuusers.de/Server_Installation (German)
   controller_metapackages_not_allowed: Only the owner of the bundle is allowed to perform this action.
   view_home_faq_05: How can I create a bundle?
@@ -529,7 +531,7 @@ en:
   controller_users_6: Userdata changed and account made permanent.
   chat_channel: en-communtu
   model_user_meta_tabz_2: Ubuntu packages
-  bundles_with_missing_packages: Bundle with missing packages
+  bundles_with_missing_packages: "B\xC3\xBCndel with missing packages (due to changing the distribution) (may be replaced with similar packages)"
   view_users_edit_9: "  With a click on \"save\" this account will be made permanent."
   view_metapackages_show_14: " Actions:&nbsp;&nbsp;"
   controller_metapackages_bundle_not_found: Bundle not found.
@@ -615,9 +617,10 @@ en:
   view_users_show_4: "last login:"
   view_admins_test_all_1: Every repositorie could be reached.
   view_users_show_5: "Created bundles:"
+  blog_link: http://communtu.wordpress.com
   view_users_show_8: Message
   view_metapackages__metalist_20: <option>0 bundles selected</option>
-  last_user: We welcome out newest user
+  last_user: We welcome our newest user
   save_selection: Save selection
   livecd_image: CD-Image
   view_categories_index_0: Category-overview
@@ -814,13 +817,13 @@ en:
   view_debs_index_3: "Create every failed deb <b>Warning: only do this at admin.communtu.de!</b>"
   view_home_home_14: "There is also "
   view_home_home_15: detailled information
-  repositories_without_packages: Repositories without packages
+  repositories_without_packages: Repositories without packages (empty repository)
   view_metapackages_rdepends_0: In bundle
   view_debs_index_5: "Create  "
   view_home_home_16: " about this project and its participants in the "
-  view_metapackages_rdepends_1: " directly an indirectly contained bundles and packages"
-  change_passwd: change password
   view_metapackages_immediate_conflicts_0: Conflicts inside bundles
+  change_passwd: change password
+  view_metapackages_rdepends_1: " directly an indirectly contained bundles and packages"
   view_metapackages_immediate_conflicts_1: " conflicts with"
   view_home_home_17: imprint.
   controller_home_1: The e-mail has been sent to us. Many thanks for your message.

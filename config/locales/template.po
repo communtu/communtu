@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Communtu 0.2\n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
-"Last-Translator: Timo Denissen <timo.denissen@gmail.com>\n"
+"Last-Translator: Timo Denissen <timo@communtu.de>\n"
 "Language-Team: Communtu <info@communtu.de>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -214,6 +214,10 @@ msgstr "level of expert"
 #: bundle_open_new_window
 msgid "Bündel wird im neuen Fenster geöffnet."
 msgstr "Bundle will be opend in a new window."
+
+#: repositories_incompletely_read
+msgid "Repositories ohne Pakete (da nicht richtig eingelesen)"
+msgstr "Repositories without packages (couldn't read repository)"
 
 #: view_user_profiles__installation_21
 msgid "installieren der Metapakete. Bitte vorher die Quellen hinzufügen."
@@ -539,6 +543,10 @@ msgstr "Add sources"
 msgid "Quellen und Schluessel hinzufuegen fuer Benutzer "
 msgstr "Add repositories and keys for the user"
 
+#: warnings
+msgid "Warnungen"
+msgstr "Warnings"
+
 #: view_home_faq_all_01
 msgid "Das Deaktivieren führt nicht zum Deinstallieren von Paketen noch werden dadurch die Updates für die installierten Pakete unterbrochen. Diese werden aus anderen Softwarequellen, die ggf. von Communtu installiert wurden, bedient."
 msgstr "The deactivation does not involve unstalling packages nor will updates be held back for installed software. Updates are still obtained from the official sources and those, which Communtu might have added. "
@@ -598,6 +606,10 @@ msgstr "Ubuntu post-installation for users"
 #: english_name
 msgid "Englischer Name:"
 msgstr "English name:"
+
+#: errors
+msgid "Fehler"
+msgstr "Error"
 
 #: view_packages_new_3
 msgid "Version"
@@ -1337,10 +1349,6 @@ msgstr "edit bundle information"
 msgid "Beim Erzeugen von Metapaketen ist ein Fehler aufgetreten. Wir kümmern uns um das Problem."
 msgstr "While creating metapackages, an error occurred. We'll solve that problem as fast as possible."
 
-#: view_home_news_18
-msgid "http://communtu.wordpress.com"
-msgstr "http://communtu.wordpress.com"
-
 #: view_home_derivatives_45
 msgid "http://wiki.ubuntuusers.de/Server_Installation"
 msgstr "http://wiki.ubuntuusers.de/Server_Installation (German)"
@@ -2070,8 +2078,8 @@ msgid "Ubuntu-Pakete"
 msgstr "Ubuntu packages"
 
 #: bundles_with_missing_packages
-msgid "Bündel mit fehlenden Paketen"
-msgstr "Bundle with missing packages"
+msgid "Bündel mit Paketen, die bei Übergang auf neue Distribution fehlen (ggf. durch andere ersetzen)"
+msgstr "Bündel with missing packages (due to changing the distribution) (may be replaced with similar packages)"
 
 #: view_users_edit_9
 msgid "  Durch Klicken auf \"Speichern\" wird das Nutzerkonto zugleich dauerhaft gemacht."
@@ -2407,6 +2415,10 @@ msgstr "Created bundles:"
 msgid "Alle Repositories wurden erreicht."
 msgstr "Every repositorie could be reached."
 
+#: blog_link
+msgid "http://communtu.wordpress.com"
+msgstr "http://communtu.wordpress.com"
+
 #: view_users_show_8
 msgid "Nachrichten"
 msgstr "Message"
@@ -2551,13 +2563,13 @@ msgstr "    confirm password:"
 msgid "Weblinks:"
 msgstr "Weblinks:"
 
-#: view_passwords_edit_2
-msgid "Neues Passwort erhalten"
-msgstr "receive new password"
-
 #: view_user_profiles__profile_data_10
 msgid " Nur Ubuntuquellen zulassen (\"main/restricted\", sehr sicher: Sicherheits-Updates von Ubuntu)"
 msgstr " Only allow Ubuntu-sources (\"main/restricted\", very secure)"
+
+#: view_passwords_edit_2
+msgid "Neues Passwort erhalten"
+msgstr "receive new password"
 
 #: view_user_profiles__profile_data_11
 msgid " Auch Communityquellen zulassen (\"universe/multiverse\", auch sicher, mehr Programme/Komfort: "
@@ -3198,8 +3210,8 @@ msgid "genauere Infos"
 msgstr "detailled information"
 
 #: repositories_without_packages
-msgid "Repositories ohne Pakete"
-msgstr "Repositories without packages"
+msgid "Repositories ohne Pakete (da Repositories leer)"
+msgstr "Repositories without packages (empty repository)"
 
 #: view_metapackages_rdepends_0
 msgid "Im Bündel "
@@ -3492,4 +3504,7 @@ msgstr "BUNDLE"
 #: install
 msgid "Installieren"
 msgstr "Install"
+
+#~ msgid "Bündel mit fehlenden Paketen"
+#~ msgstr "Bundle with missing packages"
 

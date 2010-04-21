@@ -163,6 +163,9 @@ msgstr ""
 #: bundle_open_new_window
 msgid "Bundle will be opend in a new window."
 msgstr ""
+#: repositories_incompletely_read
+msgid "Repositories without packages (couldn't read repository)"
+msgstr ""
 #: view_user_profiles__installation_21
 msgid "Installation of the metapackages. Please add the sources first."
 msgstr ""
@@ -412,6 +415,9 @@ msgstr ""
 #: deb_generation_in_background
 msgid "Debs are being created in the background (refresh the webpage if necessary)"
 msgstr ""
+#: warnings
+msgid "Warnings"
+msgstr ""
 #: view_home_faq_all_02
 msgid "Packages are not being uninstalled and can be removed as normale via Synaptic or KPackageKit."
 msgstr ""
@@ -450,6 +456,9 @@ msgid "Ubuntu post-installation for users"
 msgstr ""
 #: english_name
 msgid "English name:"
+msgstr ""
+#: errors
+msgid "Error"
 msgstr ""
 #: view_packages_new_3
 msgid "Version"
@@ -975,9 +984,6 @@ msgid "While creating metapackages, an error occurred. We'll solve that problem 
 msgstr ""
 #: view_user_profiles__profile_data_1
 msgid "On this page you can enter the basic settings of your computer."
-msgstr ""
-#: view_home_news_18
-msgid "http://communtu.wordpress.com"
 msgstr ""
 #: view_home_derivatives_45
 msgid "http://wiki.ubuntuusers.de/Server_Installation (German)"
@@ -1511,7 +1517,7 @@ msgstr ""
 msgid "Ubuntu packages"
 msgstr ""
 #: bundles_with_missing_packages
-msgid "Bundle with missing packages"
+msgid "Bündel with missing packages (due to changing the distribution) (may be replaced with similar packages)"
 msgstr ""
 #: view_users_edit_9
 msgid "  With a click on \"save\" this account will be made permanent."
@@ -1759,6 +1765,9 @@ msgstr ""
 #: view_users_show_5
 msgid "Created bundles:"
 msgstr ""
+#: blog_link
+msgid "http://communtu.wordpress.com"
+msgstr ""
 #: view_users_show_8
 msgid "Message"
 msgstr ""
@@ -1766,7 +1775,7 @@ msgstr ""
 msgid "<option>0 bundles selected</option>"
 msgstr ""
 #: last_user
-msgid "We welcome out newest user"
+msgid "We welcome our newest user"
 msgstr ""
 #: save_selection
 msgid "Save selection"
@@ -2348,7 +2357,7 @@ msgstr ""
 msgid "detailled information"
 msgstr ""
 #: repositories_without_packages
-msgid "Repositories without packages"
+msgid "Repositories without packages (empty repository)"
 msgstr ""
 #: view_metapackages_rdepends_0
 msgid "In bundle"
