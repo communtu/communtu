@@ -1,3 +1,6 @@
+# categories are used to classify Communtu bundles
+# in the future, this could be replaced by DebTags
+
 class Category < ActiveRecord::Base
   require "lib/utils.rb"
   acts_as_tree :order => "name"

@@ -1,3 +1,6 @@
+# Ubuntu distributions like Karmic or Lucid
+# Communtu allows the contents of bundles to depend on the distribution
+
 class Distribution < ActiveRecord::Base
   require "lib/utils.rb"
   has_many :repositories, :dependent => :destroy
@@ -29,6 +32,7 @@ class Distribution < ActiveRecord::Base
     RAILS_ROOT + "/debs/repos/" + self.short_name
   end
 
+  # extract distribution from browser info string
   def self.browser_distribution(s)
     if s.nil? then
       return nil
@@ -42,6 +46,7 @@ class Distribution < ActiveRecord::Base
     return nil
   end
 
+  # extract distribution from browser info string, use default if nothing can be extracted
   def self.browser_distribution_with_default(s)
     d = Distribution.browser_distribution(s)
     if d.nil? then
@@ -51,6 +56,7 @@ class Distribution < ActiveRecord::Base
     end
   end
 
+  # extract distribution name from browser info string
   def self.browser_info(s)
     d = Distribution.browser_distribution(s)
     if d.nil? then

@@ -1,3 +1,5 @@
+# join table linking carts and packages
+
 class CartContent < ActiveRecord::Base
 
     belongs_to :cart

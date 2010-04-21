@@ -1,3 +1,5 @@
+# Comments to bundles and other things
+
 class Comment < ActiveRecord::Base
 #  require "lib/utils.rb"
   belongs_to :meta_package

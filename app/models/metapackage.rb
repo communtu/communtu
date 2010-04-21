@@ -1,3 +1,5 @@
+# Communtu bundles; subclass of base_packages
+
 class Metapackage < BasePackage
 
   require 'set.rb'

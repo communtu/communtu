@@ -1,3 +1,5 @@
+# join table linking bundles with the packages they contain
+
 class Metacontent < ActiveRecord::Base
 
     belongs_to :metapackage

@@ -1,3 +1,6 @@
+# database table for temporary storing the current selection of
+# Ubuntu packages when creating or editing a bundle
+
 class Cart < ActiveRecord::Base
 
     has_many :cart_contents, :dependent => :destroy

@@ -1,3 +1,6 @@
+# Ubuntu derivatives, like Ubuntu, Kubuntu, Xubuntu, Lubuntu
+# Communtu allows the contents of bundles to depend on the derivative
+
 class Derivative < ActiveRecord::Base
   has_many :metacontents_derivatives
   has_many :users
@@ -5,6 +8,7 @@ class Derivative < ActiveRecord::Base
 
   DEFALUT_DERIVATIVE_NAME = "Ubuntu"
 
+  # get default derivative
   def self.default
     return Derivative.find_by_name(DEFALUT_DERIVATIVE_NAME)
   end

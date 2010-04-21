@@ -1,3 +1,5 @@
+# mail messages of the Communtu messanging system
+
 class Message < ActiveRecord::Base
   belongs_to :author, :class_name => "User"
   has_many :message_copies

@@ -1,3 +1,9 @@
+# database table for storing both Ubuntu packages and Communtu bundles
+# (these two are organized as subclasses: package and metapackage).
+# Communtu bundles are often called metapackages; this should be changed
+# in the future, since the term metapackage is already used by Ubuntu,
+# and one bundle leads to many Ubuntu metapackages
+
 class BasePackage < ActiveRecord::Base
   require 'set.rb'
   require 'lib/utils.rb'

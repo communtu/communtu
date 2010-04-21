@@ -1,3 +1,5 @@
+# Ubuntu packages, subclass of class base_packages
+
 require 'find'
 
 class Package < BasePackage

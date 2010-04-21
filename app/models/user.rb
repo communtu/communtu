@@ -1,3 +1,5 @@
+# users (following the plugin lib_authenticated)
+
 require 'digest/sha1'
 class User < ActiveRecord::Base
   # Virtual attribute for the unencrypted password

@@ -1,3 +1,5 @@
+# videos describing packages
+
 class Video < ActiveRecord::Base
    require "lib/utils.rb"
   belongs_to :base_package

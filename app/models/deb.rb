@@ -1,3 +1,12 @@
+# Ubuntu (Debian) packages in the Communtu repositories
+# get objects in the database, such that creation of
+# Ubuntu packages can be better monitored, and can be
+# resumed independently of the process requiring the
+# metapackage generation
+# The class also provides methods for generation of
+# debian packages and their upload into the Communtu
+# repository using the tool reprepro.
+
 class Deb < ActiveRecord::Base
   belongs_to :metapackage
   belongs_to :distribution
@@ -18,15 +27,17 @@ class Deb < ActiveRecord::Base
     derivative.name.downcase+"-"+distribution.short_name.downcase+"-" +Package.license_components[license]+"-"+Package.security_components[security]
   end
 
-
+  # get codename in the sense of reprepro
   def codename
     Deb.compute_codename(self.distribution,self.derivative,self.license_type,self.security_type)
   end
 
+  # name of the debian package
   def name
     self.metapackage.debian_name
   end
 
+  # names of components (in the sense of reprepro)
   def self.components
     [["main","universe","free"],["restricted","multiverse","non-free"]]
   end
@@ -146,6 +157,7 @@ class Deb < ActiveRecord::Base
       safe_system "dotlockfile -u #{RAILS_ROOT}/debs/lock"
   end
 
+  # generate debian package for installation of new sources
   def self.makedeb_for_source_install(name,version,description,packages,distribution,derivative,license,security)
     #compute sources
     repos = Set.[]
@@ -298,7 +310,8 @@ class Deb < ActiveRecord::Base
   def self.clearvanished
     safe_system "#{REPREPRO} --delete clearvanished"
   end
-  
+
+  # write reprepro configuration file
   def self.write_conf_distributions
     f=File.open(RAILS_ROOT+'/debs/distributions','w')
     Distribution.all.each do |dist|
@@ -321,6 +334,8 @@ class Deb < ActiveRecord::Base
     f.close
   end
 
+  # compare versions of debian packages
+  # note that this is a special ordering relation
   def self.version_gt(v1,v2)
     system('dpkg', '--compare-versions', v1, 'gt', v2)
   end
