@@ -608,6 +608,7 @@ en:
   view_home_donate: Make a donation for Communtu
   save: Save
   view_roles_new_0: New role
+  search_package: Search packages
   view_metapackages__metalist_14: Install through metapackage. Please add the sources first.
   view_users_show_2: "user since:"
   view_metapackages_show_version: "Version:"

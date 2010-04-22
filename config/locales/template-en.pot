@@ -1738,6 +1738,9 @@ msgstr ""
 #: view_roles_new_0
 msgid "New role"
 msgstr ""
+#: search_package
+msgid "Search packages"
+msgstr ""
 #: view_metapackages__metalist_14
 msgid "Install through metapackage. Please add the sources first."
 msgstr ""

@@ -199,6 +199,10 @@ msgstr "Your old password was incorrect."
 msgid "Link für weitere Informationen"
 msgstr "Link for further information"
 
+#: view_user_profiles_new_3
+msgid "Expertenlevel"
+msgstr "level of expert"
+
 #: view_metapackages__package_list_2
 msgid "Paket/Programm aus Bündel entfernen"
 msgstr "remove package/program from bundle"
@@ -206,10 +210,6 @@ msgstr "remove package/program from bundle"
 #: view_categories_edit_4
 msgid "Hauptkategory, die auf der Startseite Download angezeigt wird:"
 msgstr "Maincategory, which is shown on the first page under Download:"
-
-#: view_user_profiles_new_3
-msgid "Expertenlevel"
-msgstr "level of expert"
 
 #: bundle_open_new_window
 msgid "Bündel wird im neuen Fenster geöffnet."
@@ -2378,6 +2378,10 @@ msgstr "Save"
 #: view_roles_new_0
 msgid "Neue Rolle"
 msgstr "New role"
+
+#: search_package
+msgid "Paket suchen"
+msgstr "Search packages"
 
 #: view_metapackages__metalist_14
 msgid "installieren mittels Metapaket. Bitte vorher die Quellen hinzufügen."

@@ -151,14 +151,14 @@ msgstr ""
 #: view_categories_edit_3
 msgid "Link für weitere Informationen"
 msgstr ""
+#: view_user_profiles_new_3
+msgid "Expertenlevel"
+msgstr ""
 #: view_metapackages__package_list_2
 msgid "Paket/Programm aus Bündel entfernen"
 msgstr ""
 #: view_categories_edit_4
 msgid "Hauptkategory, die auf der Startseite Download angezeigt wird:"
-msgstr ""
-#: view_user_profiles_new_3
-msgid "Expertenlevel"
 msgstr ""
 #: bundle_open_new_window
 msgid "Bündel wird im neuen Fenster geöffnet."
@@ -1740,6 +1740,9 @@ msgid "Speichern"
 msgstr ""
 #: view_roles_new_0
 msgid "Neue Rolle"
+msgstr ""
+#: search_package
+msgid "Paket suchen"
 msgstr ""
 #: view_metapackages__metalist_14
 msgid "installieren mittels Metapaket. Bitte vorher die Quellen hinzufügen."
