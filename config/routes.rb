@@ -41,6 +41,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resource :password
   map.connect '/rating/rate', :controller => 'rating', :action => 'rate'
   map.resources :repositories
+  map.resources :searches
   map.resources :sections
   map.resource :session
   map.resources :sent, :mailbox

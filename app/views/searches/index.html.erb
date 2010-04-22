@@ -1,0 +1,29 @@
+
+  <p style="color: green"><%= flash[:notice] %></p>
+  <p style="color: red"><%= flash[:warning] %></p>
+
+  <div id="description">
+    <h1>Ubuntu Packages Search</h1>
+    <p>Based on <a href="http://debtags.alioth.debian.org/">debtags</a> and results from the <a href="http://popcon.ubuntu.org/">Ubuntu popularity contest</a>, this search allows you to search for Ubuntu packages in natural language.</p>
+  </div>
+
+  <div id="search_form">
+  <% form_remote_tag( :html => { :id => "search" } ) do %>
+    <%= label_tag :query %>
+    <% if @result && @result[:query] %>
+      <%= text_field_tag :query, @result[:query] %>
+    <% else %>
+      <%= text_field_tag :query %>
+    <% end %>
+    <%= submit_tag "Find Packages" %>
+    <span id="precs"><% if @result && @result[:precision] %>
+      <%= check_box_tag :precision, "substrings", (@result[:precision] == "substrings") %>
+    <% else %>
+      <%= check_box_tag :precision, "substrings" %>
+    <% end %><%= label_tag "match substrings" %></span>
+    <%= observe_form( :search,
+      :frequency => 0.5#,
+      #:update => "result"
+    ) %>
+  <% end %>
+  </div>

@@ -1,0 +1,30 @@
+<% if @result && @result[:start_rendering] %>
+  <p id="tag_matches"><strong>Tag Matches:</strong>
+    <% if @result[:tags] %>
+      <span class="tag_name">'<%= @result[:tags].collect { |t| t[:name] }.compact.join("', '") %>'</span>
+    <% end %>
+  </p>
+
+  <div id="packages_and_comments">
+    <div id="package_matches">
+      <table>
+        <tr>
+          <th valign="middle" class="packageList" align="left">Packages (<%=h @result[:packages_num].to_s %>)</th>
+          <th valign="middle" class="packageList" align="left">Popularity</th>
+        </tr>
+        <% if @result[:packages] %>
+          <% @result[:packages].each do |p| %>
+          <% css = cycle("packageList0", "packageList1") %>
+        <tr>
+          <td class="<%= css %>" valign="middle">
+            <a id="package_name-<%=h p[:id] %>"><%=h p[:name] %></a>
+          </td>
+          <td class="<%= css %>" valign="middle"><%=h ((p[:p_old]) ? p[:p_old] : 0).to_s %></td>
+        </tr>
+          <% end %>
+        <% end %>
+      </table>
+    </div>
+
+  </div>
+<% end #if @start_rendering%>

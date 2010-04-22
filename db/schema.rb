@@ -53,6 +53,10 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.integer  "url_tid"
     t.integer  "name_tid"
     t.integer  "section_id"
+    t.integer  "p_vote"
+    t.integer  "p_old"
+    t.integer  "p_recent"
+    t.integer  "p_nofiles"
   end
 
   add_index "base_packages", ["category_id", "type"], :name => "category_id"
@@ -271,6 +275,11 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
 
   add_index "package_distrs_architectures", ["package_distr_id", "architecture_id"], :name => "package_distr_id"
 
+  create_table "package_tags", :force => true do |t|
+    t.integer "package_id"
+    t.integer "tag_id"
+  end
+
   create_table "permissions", :force => true do |t|
     t.integer  "role_id",    :null => false
     t.integer  "user_id",    :null => false
@@ -323,6 +332,16 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.integer  "distribution_id"
     t.integer  "derivative_id"
     t.integer  "architecture_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tags", :force => true do |t|
+    t.string   "name"
+    t.boolean  "is_facet"
+    t.string   "status"
+    t.string   "nature"
+    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

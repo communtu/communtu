@@ -324,6 +324,7 @@ auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} er
   rough_selection: "Grobauswahl"
   save: Speichern
   save_selection: Auswahl speichern
+  search_package: Paket suchen
   security_type: "Sicherheitstyp:"
   senden: Abschicken
   settings: Einstellungen
