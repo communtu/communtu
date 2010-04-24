@@ -2493,7 +2493,7 @@ msgstr ", the Live-CD/DVD {{name}} couldn't be created. We'll solve that problem
 
 #: being_created
 msgid "wird erstellt"
-msgstr "being created"
+msgstr "Creating"
 
 #: bundle_by_owner
 msgid "erstellte Bündel"

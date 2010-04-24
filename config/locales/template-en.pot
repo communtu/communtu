@@ -1823,7 +1823,7 @@ msgstr ""
 msgid ", the Live-CD/DVD {{name}} couldn't be created. We'll solve that problem as fast as possible."
 msgstr ""
 #: being_created
-msgid "being created"
+msgid "Creating"
 msgstr ""
 #: bundle_by_owner
 msgid "Created bundles"

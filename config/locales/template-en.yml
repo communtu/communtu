@@ -636,7 +636,7 @@ en:
   livecd_email_failed: "Communtu: creation of Live-CD/DVD failed."
   controller_application_0: This function is not available for guests.
   livecd_email_body_failed: ", the Live-CD/DVD {{name}} couldn't be created. We'll solve that problem as fast as possible."
-  being_created: being created
+  being_created: Creating
   bundle_by_owner: Created bundles
   view_repositories_show_6: "        OpenSource"
   new_architecture: New architecture
