@@ -48,6 +48,7 @@ de:
   compose_new_message: neue Nachricht schreiben
   confirm_new_passwd: "Neues Passwort bestätigen"
   conny_picture: "Portrait von Conny Communtu"
+  continue: Weiter
   controller_accounts_1: Dein Benutzerkonto wurde aktiviert! Du kannst dich nun einloggen.
   controller_accounts_2: Aktivierungs-Code nicht gefunden. Bitte versuche, ein neues Benutzerkonto anzulegen.
   controller_accounts_4: Bein Benutzerkontoutzerkonto wurde bereits aktiviert. Du kannst dich nun anmelden.
@@ -864,7 +865,6 @@ Wenn Du der Meinung bist, dass dein Bündel um nützliche Programme erweitert we
   view_user_profiles__profile_rating_0: "Auswahl der zu installierenden Programmbündel und Programme"
   view_user_profiles__profile_rating_1: "Durch Klicken auf "
   view_user_profiles__profile_rating_2: " lässt \nsich ein Bereich ein- oder ausklappen."
-  view_user_profiles__profile_rating_3: Achtung! Zum Schluss auf "Auswahl speichern" klicken.
   view_user_profiles__sources_0: "Quellen für die zu installierenden Programme"
   view_user_profiles__sources_1: "Hier werden die zu installierenden Programme und Pakete nach den zugehörigen \
     Quellen sortiert aufgelistet, so dass du auch sehen kannst, weshalb die jeweiligen \

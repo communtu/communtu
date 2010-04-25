@@ -1,8 +1,8 @@
 <h2><%=t(:view_user_profiles__profile_rating_0)%></h2>
 <%= form_remote_tag(:url => user_user_profile_path(current_user) + "/update_ratings", :name => "ratings", :html => {:id => "ajax"})  %>
 <%=t(:which_programs_do_you_need)%> <%=t(:view_user_profiles__profile_rating_1)%><img src='/images/add.png' width='10' height='10'><%=t(:view_user_profiles__profile_rating_2)%>
-<b><%=t(:view_user_profiles__profile_rating_3)%></b>
 
+<%= link_to t(:continue), (user_user_profile_path(current_user) + "/installation")  %>
 <div id="category_list">
 
 <%first_c=@categories[0][:category]%>
@@ -35,7 +35,7 @@
          class="user_profile_edit_bundle" >
          <%=check_box_tag("post[" + b.id.to_s + "]", 1, selected,
                :onchange => "new Ajax.Request('/users/#{current_user.id}/user_profile/update_ratings', {asynchronous:true, evalScripts:true, parameters:Form.serialize($('ajax'))});")%>
-             <%=b.name%>
+             <%=b.name%> <br /> <%= b.description %>
     </div>
 <%    end %>
   </div>
