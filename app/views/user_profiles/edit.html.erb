@@ -1,6 +1,6 @@
 <h2><%=t(:view_user_profiles__profile_rating_0)%></h2>
 <%= form_remote_tag(:url => user_user_profile_path(current_user) + "/update_ratings", :name => "ratings", :html => {:id => "ajax"})  %>
-<%=t(:which_programs_do_you_need)%> <%=t(:view_user_profiles__profile_rating_1)%><img src='/images/add.png' width='10' height='10'><%=t(:view_user_profiles__profile_rating_2)%>
+<%=t(:which_programs_do_you_need)%> <%=t(:view_user_profiles__profile_rating_1)%>
 
 <%= link_to t(:continue), (user_user_profile_path(current_user) + "/installation")  %>
 <div id="category_list">

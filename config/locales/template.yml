@@ -863,8 +863,7 @@ Wenn Du der Meinung bist, dass dein Bündel um nützliche Programme erweitert we
   view_user_profiles__profile_data_8: "Über den Browser festgestellte Version: "
   view_user_profiles__profile_data_9: Hier kannst du einstellen, wie sicher bzw. komfortabel deine Installationsquellen sein sollen
   view_user_profiles__profile_rating_0: "Auswahl der zu installierenden Programmbündel und Programme"
-  view_user_profiles__profile_rating_1: "Durch Klicken auf "
-  view_user_profiles__profile_rating_2: " lässt \nsich ein Bereich ein- oder ausklappen."
+  view_user_profiles__profile_rating_1: "Rechts findest du die Details zur links ausgewählten Kategorie."
   view_user_profiles__sources_0: "Quellen für die zu installierenden Programme"
   view_user_profiles__sources_1: "Hier werden die zu installierenden Programme und Pakete nach den zugehörigen \
     Quellen sortiert aufgelistet, so dass du auch sehen kannst, weshalb die jeweiligen \
