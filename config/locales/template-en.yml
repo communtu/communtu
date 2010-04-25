@@ -17,7 +17,7 @@ en:
   controller_accounts_2: Could'nt find the activation code. Please try to create a new account.
   view_home_beteiligung_12: Programming
   view_distributions_show_8: Before a distribution can be deleted, every user must be logged out! Are you sure?
-  cd_failed: Failed - we will solve the problem
+  cd_failed: Failed - we will solve the problem and inform you when the ISO-file is ready to download
   view_layouts_application_28: Navigation Communtu
   view_roles_index_0: roles for
   view_home_beteiligung_13: Since we have many ideas for the platform's further development, we need programmers. Ideally you already have some experience with Ruby on Rails.
@@ -201,7 +201,7 @@ en:
   view_home_about_4: How do I use Communtu?
   view_home_derivatives_16: " is Ubuntu with the KDE-Desktop"
   model_package_could_not_read: couldn't read {{url}}
-  view_home_about_5: To start, choose <b>Installation</b>.
+  view_home_about_5: To start, choose <b>Download</b>.
   view_home_derivatives_17: http://en.wikipedia.org/wiki/Linux_Mint
   community_title: Ubuntu Forums
   view_home_about_6: "  (This does not appear until"

@@ -65,7 +65,7 @@ msgstr ""
 msgid "Before a distribution can be deleted, every user must be logged out! Are you sure?"
 msgstr ""
 #: cd_failed
-msgid "Failed - we will solve the problem"
+msgid "Failed - we will solve the problem and inform you when the ISO-file is ready to download"
 msgstr ""
 #: view_layouts_application_28
 msgid "Navigation Communtu"
@@ -611,7 +611,7 @@ msgstr ""
 msgid "couldn't read {{url}}"
 msgstr ""
 #: view_home_about_5
-msgid "To start, choose <b>Installation</b>."
+msgid "To start, choose <b>Download</b>."
 msgstr ""
 #: view_home_derivatives_17
 msgid "http://en.wikipedia.org/wiki/Linux_Mint"
