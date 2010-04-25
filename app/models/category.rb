@@ -59,4 +59,17 @@ class Category < ActiveRecord::Base
       BasePackage.find_all_by_default_install_and_category_id(true,c.id)
     end).flatten
   end
+
+  def self.root
+    first
+  end
+  
+  def category_list_aux(depth=0)
+    [{:category=>self,:depth=>depth}] + self.children.map{|c| c.category_list_aux(depth+1)}.flatten
+  end
+
+  def self.category_list
+    l = root.category_list_aux
+    l[1,l.size-1]
+  end
 end

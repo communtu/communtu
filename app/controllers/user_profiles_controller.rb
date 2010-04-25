@@ -13,7 +13,11 @@ class UserProfilesController < ApplicationController
     user.user_profiles.each do |profile|
       @ratings.store(profile.category_id, profile.rating!=0)
     end
-    @root = Category.find(1)
+    
+    @categories = Category.category_list.map do |c|
+      c[:bundles] = c[:category].metapackages.select{|m| m.is_published? or m.user_id == current_user.id or is_admin? }
+      c
+    end
     @selection = user.selected_packages
   end
   
@@ -112,7 +116,8 @@ class UserProfilesController < ApplicationController
         end
       end
     end
-    redirect_to user_user_profile_path(current_user) + "/installation"
+    render :nothing => true
+    # redirect_to user_user_profile_path(current_user) + "/installation"
   end
 
   def create_livecd

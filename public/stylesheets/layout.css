@@ -1088,3 +1088,27 @@ a.download:hover, a.download:active{
 	z-index:3;
 	}
 
+    /* Hier css für user_profile edit */
+.category_active {
+    font-weight: bold;
+
+}
+
+#category_list {
+    width: 170px;
+    float: left;
+    }
+
+#category_list div{
+    cursor: hand;
+    cursor: pointer;
+    }
+
+#bundle_list {
+    margin-left: 210px;
+    width: 500px;
+    
+}
+#bundle_list div {
+border: 1px solid darkgreen;
+}

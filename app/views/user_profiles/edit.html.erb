@@ -1,19 +1,47 @@
 <h2><%=t(:view_user_profiles__profile_rating_0)%></h2>
-
-<%= error_messages_for :user_profile %>
-<%= render :partial => 'box' %>
-
-<% form_tag(user_user_profile_path(current_user) + "/update_ratings", options = {:name => "ratings", :method => :put}) do %>
-
+<%= form_remote_tag(:url => user_user_profile_path(current_user) + "/update_ratings", :name => "ratings", :html => {:id => "ajax"})  %>
 <%=t(:which_programs_do_you_need)%> <%=t(:view_user_profiles__profile_rating_1)%><img src='/images/add.png' width='10' height='10'><%=t(:view_user_profiles__profile_rating_2)%>
-<b><%=t(:view_user_profiles__profile_rating_3)%></b></p>
-<span align="right">
-  <%= submit_tag t(:save_selection) %>
-</span>
+<b><%=t(:view_user_profiles__profile_rating_3)%></b>
 
+<div id="category_list">
 
-    <div> 
-        <%= show_suggestion2(@root, @selection, @ratings) %>
-    </div> 
+<%first_c=@categories[0][:category]%>
+<%@categories.each do |c| %>
+<div id="category_<%=c[:category].id%>" 
+  style="margin-left: <%=(c[:depth]-1)*15%>px;"
+  class="user_profile_edit_cat <%=if (c[:category]==first_c) then "category_active" end%>"
+  onclick="$('bundle_list').childElements().each(Element.hide);
+    $$('div.category_active')[0].removeClassName('category_active') ;
+    $('category_bundle_<%=c[:category].id.to_s%>').show();
+    $('category_<%=c[:category].id%>').addClassName('category_active');
+    <%=check_bundles(c[:category])%>">
+<%=check_box_tag("categories[" + c[:category].id.to_s + "]", 1, @ratings[c[:category].id], 
+                 :onclick => ("$('bundle_list').childElements().each(Element.hide);
+                               $('category_bundle_"+c[:category].id.to_s+"').show();"\
+                               +check_bundles(c[:category])),
+               :onchange => "new Ajax.Request('/users/#{current_user.id}/user_profile/update_ratings', {asynchronous:true, evalScripts:true, parameters:Form.serialize($('ajax'))});")%>
+<%=c[:category].name%></div>
 <% end %>
+</div>
+
+<div id="bundle_list">
+<%first_c=@categories[0][:category]%>
+<%  @categories.each do |c| %>
+  <div id="category_bundle_<%=c[:category].id%>" 
+       style="<%=if (c[:category]!=first_c) then "display: none" end%>">
+<%    c[:bundles].each do |b| %>
+<%      selected = @selection.include? b %>
+    <div id="metapackages_<%=b.id%>"
+         class="user_profile_edit_bundle" >
+         <%=check_box_tag("post[" + b.id.to_s + "]", 1, selected,
+               :onchange => "new Ajax.Request('/users/#{current_user.id}/user_profile/update_ratings', {asynchronous:true, evalScripts:true, parameters:Form.serialize($('ajax'))});")%>
+             <%=b.name%>
+    </div>
+<%    end %>
+  </div>
+<% end %>
+</div>
+  
+
+</form>
 <p><a href="/home/contact_us/cat"><%=t(:offer_new_category)%></a></p>
