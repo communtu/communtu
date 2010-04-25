@@ -681,8 +681,8 @@ a.tt:hover span.bottom{
 	padding-bottom:0.5em;
 	left:0px;
 	top:1em;
-	width: 35em;
-	min-height: 46em;
+	width: 32em;
+	min-height: 53.5em;
 	border:0.2em solid #C6C6C6;
 	}
 .new_bundle{
@@ -691,23 +691,40 @@ a.tt:hover span.bottom{
 	padding-right:0.8em;
 	padding-top:0.5em;
 	padding-bottom:0.5em;
-	left:37.5em;
+	left:35em;
 	top:-0.14em;
-	width: 35em;
-	min-height: 46em;
+	width: 32em;
+	min-height: 53.5em;
 	border:0.2em solid #C6C6C6;
 	}
 .editorh1{
 	position:absolute;
 	left:0em;
 	top:0em;
-	width: 35em;
-	background-color:#F3F2F2;
-	font-weight:bold;
+	width: 32em;
+	background-color:#D7AE9A;	
+        font-weight:bold;
 	padding-top:0.5em;
 	padding-bottom:0.5em;
 	padding-left:0.8em;
 	padding-right:0.8em;
+	}
+.left_space{
+	padding-left:0.5em;
+	}
+.jump_list{
+	background-color:#F3F2F2;
+	padding-top:0.5em;
+	padding-bottom:0.5em;
+	padding-left:0.5em;
+	margin-top:0.5em;
+	margin-bottom:0.5em;
+	}
+.new_bundle_top{
+	margin-top:6.4em;
+        margin-bottom:6.4em;
+	padding-left:0.5em;
+	font-weight:bold;
 	}
 a.detail:link, a.detail:visited{
 	color:#6E6A69;

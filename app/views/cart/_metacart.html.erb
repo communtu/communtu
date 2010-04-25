@@ -3,34 +3,52 @@
 	<% name = cart.name %>
 	<% if cart.name == "Neues Bündel" %>
 <% else %>
-	<p><%=t(:name_with_colon)%><b><%= name %></b></p>
+	<div class="new_bundle_top"><%= name %></div>
 <% end %>
-    <ul class="cartlist">
+<table width="100%" cellspacing="0">
+<tr><td colspan="4" class="jump_list"><%= t(:metacart_choose)%></td></tr>
+  <!--  <ul class="cartlist">-->
 	<% cart.base_packages.each do |package|%>
-	    <li class="cartlist">
-           
-            <% package.name %>
-            <div class="cartlist">
-		        <%= link_to_remote((tag "img", { \
+<% if editing_metapackage? %>
+<% css=cycle("packageList0", "packageList1") %>
+  <tr> 
+  	<td class="<%= css %>">
+          <% if (icon=package.icon(20))!="" %>
+            <%= icon %>
+          <%  else %>
+            <div class="no_package_icon"> &nbsp;</div>
+          <% end %>
+  		<%= link_to(package.name, package_path(package), :title => t(:detailed_view)) %></td>
+	<td class="<%= css %>" align="middle" valign="middle">
+     <% if !package.stars.nil? %>
+        <div class='star-rating-foreign' style='width:<%= (package.stars * 25).to_i %>px; '> </div>
+     <% end %>
+	</td>
+    <td class="<%= css %>" width="30" align="right">
+		    
+			 <%= link_to_remote((tag "img", { \
 		                :src => "/images/delete.png",\
                         :class => "link_img",\
 			            :width => 12, :height => 12}),\
 			            :url => user_path(current_user) + "/cart/rem_from_cart/" + package.id.to_s,\
 			            :update => :meta_cart) %>
-<%= package.name %>			 </div>
 		
-	    </li>
+	</td>
+  </tr>
+
 	<% end %>
-	</ul>
-<br /><br />
-	<%= link_to(image_tag("save.png", :size => "16x16", :border => "0"), user_path(current_user) + "/cart/save") %>
-    <%= link_to_remote(image_tag("edit-delete.png", :size => "16x16", :border => "0"), \
+<% end %>
+</table>
+<div class="jump_list">
+<%= link_to(image_tag("icon_save.png", :size => "17x17", :border => "0"), user_path(current_user) + "/cart/save") %>
+    <%= link_to_remote(image_tag("icon_delete.png", :size => "11x17", :border => "0"), \
             :update => 'meta_cart', \
             :url => user_path(current_user) + "/cart/clear") %>
-<br /><br />
-<%= t(:metacart_choose)%>
+<%= link_to(t(:view_cart_new_from_list_0), user_path(current_user) + "/cart/new_from_list") %></div>
 <% else %>
     <div style="valign:bottom;">
-            <%= link_to(t(:new_bundle), user_path(current_user) + "/cart/create") %> <br />
+<br /><br /><br /><br /><br /><br />
+            <%= link_to(t(:new_bundle), user_path(current_user) + "/cart/create") %> <br /><br />
+<%= link_to(t(:view_cart_new_from_list_0), user_path(current_user) + "/cart/new_from_list") %>
     </div>
 <% end %>

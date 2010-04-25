@@ -242,7 +242,7 @@ auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} er
   make_distribution_final: Distribution als stabil freigeben
   match_ubuntu: "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
   match_with_communtu: "Communtu - gemeinsam Ubuntu-Linux an individuelle Bedürfnisse anpassen"
-  metacart_choose: Füge Programme aus der linken Spalte zu Deinem Bündel hinzu.
+  metacart_choose: Füge Programme zu deinem Bündel hinzu.
   migrate: Migrieren
   migrate_bundles: Bündel von Vorgänger übernehmen
   migrate_repository: Repository migieren
@@ -298,6 +298,7 @@ auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} er
   none: Keine
   not_accepted: Die eingegebene E-Mail-Adresse hat ungültige Formate oder ist unvollständig.
   not_logged_in: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
+  nothing_found_questionmark: "Nichts gefunden?"
   offer_new_category: "Vorschlag einer neuen Kategorie"
   order_number: "Sortiernummer (kleinste Zahl zu erst):"
   package_list: zurück zur Paketliste
