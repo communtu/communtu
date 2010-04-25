@@ -35,7 +35,7 @@
          class="user_profile_edit_bundle" >
          <%=check_box_tag("post[" + b.id.to_s + "]", 1, selected,
                :onchange => "new Ajax.Request('/users/#{current_user.id}/user_profile/update_ratings', {asynchronous:true, evalScripts:true, parameters:Form.serialize($('ajax'))});")%>
-             <%=b.name%> <br /> <%= b.description %>
+             <%=  link_to(b.name+"<span class='tooltip'><span class='top'></span><span class='middle'>"+(render :partial => 'bundle_description', :locals => {:bundle => b})+"</span><span class='bottom'></span></span>",metapackage_url(:id => b.id), :target => '_blank', :class => "tt")%> <br />
     </div>
 <%    end %>
   </div>
