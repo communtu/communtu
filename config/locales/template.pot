@@ -109,6 +109,9 @@ msgstr ""
 #: view_categories_edit_0
 msgid "Kategorie bearbeiten"
 msgstr ""
+#: view_user_profiles_new_0
+msgid "Neues Nutzerprofil"
+msgstr ""
 #: view_layouts_application_31
 msgid "Kontakt"
 msgstr ""
@@ -121,8 +124,8 @@ msgstr ""
 #: controller_accounts_6
 msgid "Es ist ein Fehler aufgetreten. Das Passwort wurde nicht geändert."
 msgstr ""
-#: view_user_profiles_new_0
-msgid "Neues Nutzerprofil"
+#: view_user_profiles_new_1
+msgid "Benutzer"
 msgstr ""
 #: english_description
 msgid "Englische Beschreibung:"
@@ -132,9 +135,6 @@ msgid "Admin"
 msgstr ""
 #: view_metapackages__package_list_0
 msgid "Gesamtgröße des Bündels auf der Festplatte:"
-msgstr ""
-#: view_user_profiles_new_1
-msgid "Benutzer"
 msgstr ""
 #: view_user_profiles__installation_20
 msgid "Dieser Schritt wurde bereits schon einmal ausgeführt."
@@ -390,6 +390,9 @@ msgid "ändern"
 msgstr ""
 #: add_to_bundle
 msgid "zum Bündel hinzufügen"
+msgstr ""
+#: translation_file
+msgid "Url der Übersetzungsdatei (gz Datei):"
 msgstr ""
 #: view_categories_show_2
 msgid "Weitere Informationen:"
@@ -1012,6 +1015,9 @@ msgstr ""
 #: view_home_derivatives_47
 msgid "http://wiki.ubuntuusers.de/JeOS"
 msgstr ""
+#: to_colon
+msgid "An:"
+msgstr ""
 #: view_home_faq_07
 msgid "Wie kann ich ein Bündel bewerten?"
 msgstr ""
@@ -1451,7 +1457,7 @@ msgstr ""
 msgid "verschickte Nachrichten"
 msgstr ""
 #: an
-msgid "An:"
+msgid "An"
 msgstr ""
 #: view_users_edit_2
 msgid "Profil löschen"

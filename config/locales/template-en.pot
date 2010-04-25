@@ -391,6 +391,9 @@ msgstr ""
 #: add_to_bundle
 msgid "add to bundle"
 msgstr ""
+#: translation_file
+msgid "URL to the translation-file (gz-file):"
+msgstr ""
 #: view_categories_show_2
 msgid "Further information:"
 msgstr ""
@@ -1011,6 +1014,9 @@ msgid "What tasks do you want to do with your computer (only a rough choice, the
 msgstr ""
 #: view_home_derivatives_47
 msgid "http://en.wikipedia.org/wiki/JeOS"
+msgstr ""
+#: to_colon
+msgid "To"
 msgstr ""
 #: view_home_faq_07
 msgid "How can I rate a bundle?"

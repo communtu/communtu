@@ -126,6 +126,7 @@ en:
   view_categories_show_0: "Name: "
   change: change
   add_to_bundle: add to bundle
+  translation_file: "URL to the translation-file (gz-file):"
   view_categories_show_2: "Further information:"
   controller_metapackages_reset: Reset bundle error manually (after solving the problems).
   controller_suggestion_1: In order to install something, you first have to choose something. Don't forget to save!
@@ -353,6 +354,7 @@ en:
   view_home_faq_06: "For this you click on <b>Bundle</b> and then on \"New bundle\". On the left side you can see a list with programs and on the right side you can see an empty list. This is the bundle editor. With a click on the Plus-icon in the left list you can add programs to your bundle. When you are finished with adding programs to your bundle you must click on the save symbol. Now you have to enter a meaningful name for your bundle, state the version of your bundle and provide a description so that other users will know what your bundle is about. In order to get the bundle rated and commented you need to publish your bundle. Attention: publish a bundle only if you are sure it will not be changed in the near future! Editing the bundle when it is published is not possible.<p> If you think that a programs fits into one of your bundles you can edit it (assuming it is not published). To do this go to <b>Bundle</b> and then to \"My bundles\". Click on the bundle you want to edit. Choose \"Edit package list\" from the dropdown list on the right side. Now you're in the bundle editor again. When finished changing your package list it needs to be saved. Raise the version number and save the bundle. It is now updated."
   view_user_profiles__profile_data_3: What tasks do you want to do with your computer (only a rough choice, they can be chosen in detail later)?
   view_home_derivatives_47: http://en.wikipedia.org/wiki/JeOS
+  to_colon: To
   view_home_faq_07: How can I rate a bundle?
   view_user_profiles__profile_data_4: further information
   view_home_derivatives_48: " - minimal server-version, suitable for virtualizations."
@@ -819,9 +821,9 @@ en:
   view_home_home_14: "There is also "
   view_home_home_15: detailled information
   repositories_without_packages: Repositories without packages (empty repository)
-  view_metapackages_rdepends_0: In bundle
-  view_debs_index_5: "Create  "
   view_home_home_16: " about this project and its participants in the "
+  view_debs_index_5: "Create  "
+  view_metapackages_rdepends_0: In bundle
   view_metapackages_immediate_conflicts_0: Conflicts inside bundles
   change_passwd: change password
   view_metapackages_rdepends_1: " directly an indirectly contained bundles and packages"

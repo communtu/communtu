@@ -143,6 +143,10 @@ msgstr "Help/FAQ"
 msgid "Kategorie bearbeiten"
 msgstr "Edit category"
 
+#: view_user_profiles_new_0
+msgid "Neues Nutzerprofil"
+msgstr "new profile"
+
 #: view_layouts_application_31
 msgid "Kontakt"
 msgstr "Contact"
@@ -159,9 +163,9 @@ msgstr "Attention: after clicking, it will take a moment until the file is provi
 msgid "Es ist ein Fehler aufgetreten. Das Passwort wurde nicht geändert."
 msgstr "An error occured. The password has not been changed."
 
-#: view_user_profiles_new_0
-msgid "Neues Nutzerprofil"
-msgstr "new profile"
+#: view_user_profiles_new_1
+msgid "Benutzer"
+msgstr "user"
 
 #: english_description
 msgid "Englische Beschreibung:"
@@ -174,10 +178,6 @@ msgstr "Admin"
 #: view_metapackages__package_list_0
 msgid "Gesamtgröße des Bündels auf der Festplatte:"
 msgstr "Total size of bundle on disk:"
-
-#: view_user_profiles_new_1
-msgid "Benutzer"
-msgstr "user"
 
 #: view_user_profiles__installation_20
 msgid "Dieser Schritt wurde bereits schon einmal ausgeführt."
@@ -518,6 +518,10 @@ msgstr "change"
 #: add_to_bundle
 msgid "zum Bündel hinzufügen"
 msgstr "add to bundle"
+
+#: translation_file
+msgid "Url der Übersetzungsdatei (gz Datei):"
+msgstr "URL to the translation-file (gz-file):"
 
 #: view_categories_show_2
 msgid "Weitere Informationen:"
@@ -1385,6 +1389,10 @@ msgstr "What tasks do you want to do with your computer (only a rough choice, th
 msgid "http://wiki.ubuntuusers.de/JeOS"
 msgstr "http://en.wikipedia.org/wiki/JeOS"
 
+#: to_colon
+msgid "An:"
+msgstr "To"
+
 #: view_home_faq_07
 msgid "Wie kann ich ein Bündel bewerten?"
 msgstr "How can I rate a bundle?"
@@ -1986,7 +1994,7 @@ msgid "verschickte Nachrichten"
 msgstr "sent messages"
 
 #: an
-msgid "An:"
+msgid "An"
 msgstr "To"
 
 #: view_users_edit_2
