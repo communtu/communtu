@@ -824,9 +824,9 @@ a.download:hover, a.download:active{
 /* conni */
 /**************************************************/
 .conny_withbox{
-	 position:relative;
+	 position:absolute;
 	 left: 61em;
-	 top: 228em;
+	 top: 8em;
 	 border:0;
 	 width:122px;
 	 height:153px;
@@ -837,6 +837,16 @@ a.download:hover, a.download:active{
 	 position:absolute;
 	 left:61em;
 	 top:10em;
+	 border:0;
+	 width:122px;
+	 height:153px;
+	 padding-right:1em;
+	 padding-bottom:1em;
+	 }
+.conny_about{
+	 position:absolute;
+	 left:61em;
+	 top:28em;
 	 border:0;
 	 width:122px;
 	 height:153px;
@@ -1029,11 +1039,12 @@ a.download:hover, a.download:active{
         z-index:4;
 	}
 #button_lang{
-	float:left;
-	border:1px dotted #451B00;
-	background: url(/images/submit_pfeil.gif) no-repeat;
-	background-color:#fff;
-	width:auto;
+	width:6em;
+	border:1px solid #451B00;
+	background-color:#F2E2DA;
+	color:#451B00;
+	padding-left:0.2em;
+	font-weight:normal;
 	}
 #select_lang{
 	border:1px solid #451B00;
