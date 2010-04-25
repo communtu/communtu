@@ -3,6 +3,7 @@
 <%=t(:which_programs_do_you_need)%> <%=t(:view_user_profiles__profile_rating_1)%>
 
 <%= link_to t(:continue), (user_user_profile_path(current_user) + "/installation")  %>
+<div class="user_profile_box">
 <div id="category_list">
 
 <%first_c=@categories[0][:category]%>
@@ -41,7 +42,8 @@
   </div>
 <% end %>
 </div>
-  
+<div class="clear_all"></div>
+</div>  
 
 </form>
 <p><a href="/home/contact_us/cat"><%=t(:offer_new_category)%></a></p>

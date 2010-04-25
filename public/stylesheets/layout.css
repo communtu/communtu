@@ -16,6 +16,10 @@ body{ 	font-size:0.8em;
 
 #error{	color: red;}
 
+.clear_all{
+	clear:all;
+	}
+
 .bold{font-weight:bold;}
 
 h2, h1, h3 {
@@ -1089,9 +1093,17 @@ a.download:hover, a.download:active{
 	}
 
     /* Hier css für user_profile edit */
+.user_profile_box{
+	background-color:#F3F2F2;
+	margin-top:1.5em;
+	min-height:28em;
+	padding-top:0.8em;
+	padding-bottom:0.8em;
+	padding-left:0.8em;
+	}
+
 .category_active {
     font-weight: bold;
-
 }
 
 #category_list {
@@ -1105,10 +1117,13 @@ a.download:hover, a.download:active{
     }
 
 #bundle_list {
-    margin-left: 210px;
-    width: 500px;
-    
+	background-color:#F2E2DA;
+    	margin-left:18em;
+    	width:28em;
+   	padding-left:0.4em;
+	padding-bottom:0.4em; 
 }
-#bundle_list div {
-border: 1px solid darkgreen;
-}
+.user_profile_edit_bundle{
+	padding-top:0.4em;
+	padding-bottom:0.4em;
+	}
