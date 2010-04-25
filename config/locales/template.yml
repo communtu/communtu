@@ -9,7 +9,6 @@ de:
   advanced_user: "Ich bin fortgeschrittener Benutzer und will auch unfertige Versionen von Ubuntu sehen."
   allgemeinbildung: Allgemeinbildung e.V.
   an: An
-  an: "An:"
   announce: announce
   anmelden: Anmelden
   architecture_successful: Architektur erfolgreich angelegt.
@@ -339,8 +338,10 @@ auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} er
   superior_category: "Übergeordnete Kategorie"
   third_party: alle Anbieter
   to_chat: zum Chat
+  to_colon: "An:"
   total_packages: "Pakete insgesamt: "
   total_isos_size: "Gesamtgröße der isos: "
+  translation_file: "Url der Übersetzungsdatei (gz Datei):"
   trusted: Ubuntu+Community
   ubuntu_derivatives: Ubuntu-Derivate
   update: Aktualisieren
