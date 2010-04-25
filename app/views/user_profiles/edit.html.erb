@@ -14,8 +14,7 @@
   onclick="$('bundle_list').childElements().each(Element.hide);
     $$('div.category_active')[0].removeClassName('category_active') ;
     $('category_bundle_<%=c[:category].id.to_s%>').show();
-    $('category_<%=c[:category].id%>').addClassName('category_active');
-    <%=check_bundles(c[:category])%>">
+    $('category_<%=c[:category].id%>').addClassName('category_active');">
 <%=check_box_tag("categories[" + c[:category].id.to_s + "]", 1, @ratings[c[:category].id], 
                  :onclick => ("$('bundle_list').childElements().each(Element.hide);
                                $('category_bundle_"+c[:category].id.to_s+"').show();"\
