@@ -12,7 +12,7 @@
   style="margin-left: <%=(c[:depth]-1)*15%>px;"
   class="user_profile_edit_cat <%=if (c[:category]==first_c) then "category_active" end%>"
   onclick="$('bundle_list').childElements().each(Element.hide);
-  Effect.BlindDown('category_bundle_<%=c[:category].id.to_s%>', { duration: 3.0 });
+  Effect.BlindDown('category_bundle_<%=c[:category].id.to_s%>', { duration: 0.5 });
     $$('div.category_active')[0].removeClassName('category_active') ;
     $('category_<%=c[:category].id%>').addClassName('category_active');">
 <%=check_box_tag("categories[" + c[:category].id.to_s + "]", 1, @ratings[c[:category].id], 
