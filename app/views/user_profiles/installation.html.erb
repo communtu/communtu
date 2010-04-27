@@ -1,11 +1,6 @@
 <h2><%=t(:view_user_profiles__installation_0)%></h2>
 <%= render_flash %>
 <%= render :partial => 'box' %>
-<% if current_user.profile_changed  %>  
-                  <% if current_user.profile_version > 1 %> 
-                     <p><%=t(:changed_settings)%></p><p>----------</p><% end %>  
-          <p><%=t(:view_user_profiles__installation_19)%></p><p>----------</p><% else %>  
-                   <p><%=t(:view_user_profiles__installation_20)%></p><p>----------</p><% end %>  
 <% if current_user.selected_packages.empty? %>
 <%=t(:view_user_profiles__installation_1)%>
 
