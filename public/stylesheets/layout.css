@@ -1107,7 +1107,7 @@ a.download:hover, a.download:active{
 }
 
 #category_list {
-    width: 170px;
+    width: 17em;
     float: left;
     }
 
@@ -1118,7 +1118,7 @@ a.download:hover, a.download:active{
 
 #bundle_list {
 	background-color:#F2E2DA;
-    	margin-left:18em;
+    	margin-left:19em;
     	width:28em;
    	padding-left:0.4em;
 	padding-bottom:0.4em; 
