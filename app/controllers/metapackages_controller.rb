@@ -419,6 +419,8 @@ class MetapackagesController < ApplicationController
       @repositories_without_packages.select{ |r| r.empty_files?}
     @repositories_without_packages = @repositories_without_packages - @repositories_incompletely_read
     @failed_live_cds = Livecd.find_all_by_failed(true)
+
+    ms=Metapackage.all.select{|m| Metacontent.find(:first,:conditions=>["metacontents_distrs.distribution_id = 6 and metapackage_id = ?",m.id],:include=>:metacontents_distrs).nil?}
   end
 
   private

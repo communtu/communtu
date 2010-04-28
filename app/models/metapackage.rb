@@ -191,9 +191,16 @@ class Metapackage < BasePackage
           end
         end
         if append && !mc.distributions.include?(to_dist)
-          mc.distributions << to_dist
+          MetacontentsDistr.create({:metacontent_id => mc.id, :distribution_id => to_dist.id})
+          self.modified = true
+          self.save
         end
       end
+    end
+    if self.modified then
+      self.version += ".1"
+      self.save
+      self.debianize
     end
     return not_found    
   end
