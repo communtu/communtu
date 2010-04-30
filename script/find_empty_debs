@@ -3,7 +3,7 @@
 
 cd `dirname "$0"`/..
 base=$(pwd)
-for d in public/debs/pool/*/*/*/*deb
+for d in public/debs/pool/*/*/*/*all-all*deb
   do tmp=$(mktemp -d)
      pushd $tmp > /dev/null
      dpkg -e $base/$d
