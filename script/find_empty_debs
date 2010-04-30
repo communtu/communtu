@@ -1,0 +1,15 @@
+#!/bin/bash
+# check for debs that are empty (i.e. contains no dependencies)
+
+cd `dirname "$0"`/..
+for d in public/debs/pool/*/*/*/*deb
+  do tmp=$(mktemp -d)
+     pushd $tmp
+     dpkg -e $d
+     grep Depends DEBIAN/control
+     if [ $? -ne 0 ]
+     then
+       echo $d
+     fi
+     popd
+done
