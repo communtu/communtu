@@ -1,4 +1,7 @@
 <h2><%=t(:view_user_profiles__profile_rating_0)%></h2>
+<%= error_messages_for :user_profile %>
+<%= render :partial => 'box' %>
+
 <%= form_remote_tag(:url => user_user_profile_path(current_user) + "/update_ratings", :name => "ratings", :html => {:id => "ajax"})  %>
 <%=t(:which_programs_do_you_need)%> <%=t(:view_user_profiles__profile_rating_1)%>
 
