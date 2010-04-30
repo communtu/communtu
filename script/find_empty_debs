@@ -7,11 +7,11 @@ for d in public/debs/pool/*/*/*/*deb
   do tmp=$(mktemp -d)
      pushd $tmp > /dev/null
      dpkg -e $base/$d
-     grep Depends DEBIAN/control
+     grep -q Depends DEBIAN/control
      if [ $? -ne 0 ]
      then
        echo $d
      fi
-     popd
+     popd > /dev/null
      rm -rf $tmp
 done
