@@ -158,6 +158,25 @@ class Livecd < ActiveRecord::Base
       cd.remaster
     end
   end
+
+  # register a livecd for a user
+  def register(user)
+    if !self.users.include? user
+      LivecdUser.create({:livecd_id => self.id, :user_id => user.id})
+    end
+  end
+
+  # deregister a livecd for a user; destroy cd if it has no more users
+  def deregister(user)
+    LivecdUser.find_all_by_livecd_id_and_user_id(self.id,user.id).each do |lu|
+      lu.destroy
+    end
+    # are there any other users of this live CD?
+    if self.users(force_reload=true).empty?
+      # if not, destroy live CD
+      self.destroy
+    end
+  end
   
   protected
 

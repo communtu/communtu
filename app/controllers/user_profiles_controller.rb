@@ -129,6 +129,7 @@ class UserProfilesController < ApplicationController
       redirect_to user_user_profile_path(current_user) + "/livecd"
     else
       flash[:notice] = t(:livecd_create)
+      # create new live CD
       user.livecd(name)
       redirect_to "/livecds"
     end
@@ -144,9 +145,7 @@ class UserProfilesController < ApplicationController
                                     :architecture_id => current_user.architecture.id,
                                     :license_type => current_user.license,
                                     :security_type => current_user.security})
-    if !@cd.nil?
-      LivecdUser.create({:livecd_id => @cd.id, :user_id => current_user.id})
-    end
+    @cd.register(current_user) unless @cd.nil?
   end
 
   def create_livecd_from_bundle

@@ -412,7 +412,7 @@ end
                         :derivative_id => self.derivative_id, :architecture_id => self.architecture_id,
                         :srcdeb => srcdeb, :installdeb => installdeb,
                         :license_type => self.license, :security_type => self.security})
-    LivecdUser.create({:livecd_id => cd.id, :user_id => self.id})
+    cd.register(self)
     # cd.fork_remaster # now done by daemon
     return cd
   end
@@ -446,7 +446,7 @@ end
       # cd.fork_remaster # now done by daemon
     end
     # register live CD for this user
-    LivecdUser.create({:livecd_id => cd.id, :user_id => self.id})
+    cd.register(self)
     return cd
   end
 
