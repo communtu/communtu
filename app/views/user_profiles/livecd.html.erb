@@ -5,7 +5,7 @@
   <%=t(:view_user_profiles__installation_1)%>
 
 <% else %>
-  <% if @cd.nil %>
+  <% if @cd.nil? %>
     <p><%=t(:livecd_start_message)%><br />
     <i><%=current_user.selected_packages_uniq.map{|m| m.name}.join(", ") %></i>
     </p>
