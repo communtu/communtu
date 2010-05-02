@@ -10,7 +10,7 @@ class CreateLivecdUsers < ActiveRecord::Migration
       LivecdUser.create({:livecd_id=>cd.id, :user_id=>cd.user_id})
     end
     remove_column :livecds, :user_id
-    add_column :livecds, :first_try, :default => true
+    add_column :livecds, :first_try, :boolean, :default => true
   end
 
   def self.down
