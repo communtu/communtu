@@ -58,6 +58,9 @@ class UserProfilesController < ApplicationController
 
   def livecd
     if check_login then return end
+    @cd = Livecd.find(:first,:conditions=>{"livecds.profile_version" => current_user.profile_version,
+                                           "livecd_users.user_id" => current_user.id},
+                             :include => 'livecd_users')
   end
 
   # update the basic data of the user's software selection
