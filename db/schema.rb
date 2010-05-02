@@ -202,7 +202,6 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.integer  "distribution_id"
     t.integer  "derivative_id"
     t.integer  "architecture_id"
-    t.integer  "user_id"
     t.integer  "metapackage_id"
     t.integer  "size"
     t.string   "srcdeb"
@@ -216,6 +215,7 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.datetime "updated_at"
     t.integer  "license_type"
     t.integer  "security_type"
+    t.integer  "profile_version"
   end
 
   create_table "message_copies", :force => true do |t|

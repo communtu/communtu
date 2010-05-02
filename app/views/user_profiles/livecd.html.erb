@@ -5,34 +5,8 @@
   <%=t(:view_user_profiles__installation_1)%>
 
 <% else %>
-  <% if @cd.nil? %>
-    <p><%=t(:livecd_start_message)%><br />
-    <i><%=current_user.selected_packages_uniq.map{|m| m.name}.join(", ") %></i>
-    </p>
-    <p><%=t(:livecd_message,:cdimage_link => (link_to t(:livecd_image), t(:livecd_image_link)))%></p>
-
-    <p>
-    <b><%=t(:cd_donate, {:donate_link => link_to(t(:donate),'/home/donate')})%></b>
-    <br>
-    <%= form_tag({:controller => :user_profiles, :action => :create_livecd, :id => current_user.id})%>
-      <%= t(:name_of_livecd) %>
-      <%= text_field_tag(:name,@default_name) %>
-      <%= submit_tag(t(:livecd_start)) %></p>
-      <p><%=t(:view_user_profiles__installation_33)%>
-      <%= link_to (t(:sources), user_path(current_user) + "/user_profile/sources")%>
-      <%=t(:view_user_profiles__installation_34)%>
-      </p>
-      </form>
-  <% else %>
-    <% if @cd.generated %>
-      <%=t(:cd_already_created)%>
-    <% else %>
-      <%=t(:cd_being_created)%>
-    <% end %>
-    <p>
-      <%= render :partial => 'livecd', :object => @cd %>
-    </p>
-  <% end %>
+  <%= render :partial => 'livecd_form', 
+             :locals => {:cd => @cd, :default_name => @default_name, :bundle => false} %>
 <% end %>
 
 <hr />
