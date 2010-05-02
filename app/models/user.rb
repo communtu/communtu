@@ -411,7 +411,8 @@ end
     cd = Livecd.create({:name => name, :distribution_id => self.distribution_id, 
                         :derivative_id => self.derivative_id, :architecture_id => self.architecture_id,
                         :srcdeb => srcdeb, :installdeb => installdeb,
-                        :license_type => self.license, :security_type => self.security})
+                        :license_type => self.license, :security_type => self.security,
+                        :profile_version => current_user.profile_version})
     cd.register(self)
     # cd.fork_remaster # now done by daemon
     return cd
