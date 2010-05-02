@@ -80,6 +80,7 @@ class UserProfilesController < ApplicationController
     user.advanced = uparams[:advanced]
     user.profile_changed = true
     user.save!
+    user.increase_verison
     redirect_to user_user_profile_path(current_user) + "/installation"
   end
   

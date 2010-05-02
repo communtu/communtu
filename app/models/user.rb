@@ -285,6 +285,7 @@ end
         self.profile_version += 1
       end  
     end
+    self.save
   end
   
   #Messanger methods
@@ -308,8 +309,6 @@ end
     end
 
     Dir.chdir RAILS_ROOT
-
-    self.increase_version
 
     name = BasePackage.debianize_name("communtu-add-sources-"+self.login)
     version = self.profile_version.to_s
@@ -375,7 +374,6 @@ end
     end
 
     Dir.chdir RAILS_ROOT
-    self.increase_version
 
     name = self.install_name
     version = self.profile_version.to_s
