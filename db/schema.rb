@@ -152,8 +152,6 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.datetime "updated_at"
   end
 
-  add_index "dependencies", ["package_distr_id", "base_package_id"], :name => "package_distr_id"
-
   create_table "derivatives", :force => true do |t|
     t.string   "name"
     t.string   "icon_file"
@@ -192,6 +190,13 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.datetime "updated_at"
   end
 
+  create_table "livecd_users", :force => true do |t|
+    t.integer  "livecd_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "livecds", :force => true do |t|
     t.string   "name"
     t.integer  "distribution_id"
@@ -209,6 +214,8 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.text     "log"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "license_type"
+    t.integer  "security_type"
   end
 
   create_table "message_copies", :force => true do |t|

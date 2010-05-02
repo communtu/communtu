@@ -25,6 +25,7 @@ de:
   bundle: "Bündel"
   bundle_by_owner: erstellte Bündel
   bundle_editor: "Bündel-Editor"
+  bundle_to_livecd: "LiveCD/DVD aus Bündel <i>{{name}}</i> erstellen"
   bundles_with_missing_debs: Bündel mit fehlenden deb-Builds
   bundles_with_missing_packages: Bündel mit Paketen, die bei Übergang auf neue Distribution fehlen (ggf. durch andere ersetzen)
   bundel_information_edit: Bündel Informationen bearbeiten
@@ -35,6 +36,8 @@ de:
   category_exists: "Eine Kategorie mit diesem Namen existiert schon"
   category_with_colon: "Kategorie:"
   category_without_colon: Kategorie
+  cd_already_created: Die LiveCD/DVD wurde bereits erstellt.
+  cd_being_created:  Die LiveCD/DVD wird erstellt.
   cd_donate: Die CD/DVD-Erstellung braucht viel Server-Kapazität. Bitte {{donate_link}}, um dieses Angebot weiter zu ermöglichen.
   cd_failed: "Fehlgeschlagen - wir kümmern uns darum"
   change: ändern

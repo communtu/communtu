@@ -5,33 +5,6 @@
 <%=t(:view_user_profiles__installation_1)%>
 
 <% else %>
-<%cds=Livecd.find_all_by_user_id(current_user.id)%>
-<% if !cds.empty? %>
-  <p><%=t(:livecd_previous_cds)%><br />
-  <table "cellpadding=5">
-  <% total = 0 %>
-  <% for cd in cds %>
-    <tr>
-    <td><%= link_to image_tag("edit-delete.png", :size => "22x22", :border => "0", :title => t(:delete)),
-               cd, :confirm => t(:are_you_sure), :method => :delete,
-               :controller => :livecd %></td>
-    <% if cd.generated %>
-      <% total += cd.size %>
-      <td><%= link_to cd.fullname, cd.url %></td>
-      <td><%= number_to_human_size(cd.size) %> </td>
-      <td><%= change_date_time(cd.updated_at).to_s %></td>
-    <% else %>
-      <td><%= cd.fullname %></td>
-      <td></td>
-      <td><%=if cd.failed then t(:cd_failed) else t(:being_created) end%></td>
-    <% end %>
-    </tr>
-  <% end %>
-    <tr><td></td>
-        <td align="right"><%=t(:total_isos_size)%></td>
-        <td><%= number_to_human_size(total) %></td></tr>
-  </table>
-<% end %>
 <p><%=t(:livecd_start_message)%><br />
 <i><%=current_user.selected_packages_uniq.map{|m| m.name}.join(", ") %></i>
 </p>
@@ -49,3 +22,6 @@
 <%=t(:view_user_profiles__installation_34)%>
 </p>
 <% end %>
+
+<hr />
+<%= render :partial => 'livecds' %>

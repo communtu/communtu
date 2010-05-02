@@ -6,13 +6,18 @@ class Livecd < ActiveRecord::Base
   belongs_to :distribution
   belongs_to :derivative
   belongs_to :architecture
-  belongs_to :user
   belongs_to :metapackage
-  validates_presence_of :name, :distribution, :derivative, :architecture, :user
+  has_many :livecd_users, :dependent => :destroy
+  has_many :users, :through => :livecd_users
+  validates_presence_of :name, :distribution, :derivative, :architecture
 
-  # full version of liveCD, made from derivative, distribution and architecture
+  # full version of liveCD, made from derivative, distribution, architecture, license and security
   def fullversion
-    self.derivative.name.downcase+"-"+self.distribution.name.gsub(/[a-zA-Z ]/,'')+"-desktop-"+self.architecture.name
+    self.derivative.name.downcase+"-" \
+    +(self.distribution.name.gsub(/[a-zA-Z ]/,'')) \
+    +"-desktop-"+self.architecture.name \
+    + "-" +(Package.license_components[self.license_type]) \
+    + "-" +(Package.security_components[self.security_type])
   end
 
   # unique name of liveCD
@@ -23,6 +28,21 @@ class Livecd < ActiveRecord::Base
   # filename of LiveCD in the file system
   def filename
     "#{RAILS_ROOT}/public/isos/#{self.fullname}.iso"
+  end
+
+    # full version of liveCD, made from derivative, distribution and architecture
+  def fullversion_old
+    self.derivative.name.downcase+"-"+self.distribution.name.gsub(/[a-zA-Z ]/,'')+"-desktop-"+self.architecture.name
+  end
+
+  # unique name of liveCD
+  def fullname_old
+    "#{self.name}-#{self.fullversion_old}"
+  end
+
+  # filename of LiveCD in the file system
+  def filename_old
+    "#{RAILS_ROOT}/public/isos/#{self.fullname_old}.iso"
   end
 
   # url of LiveCD on the communtu server
@@ -115,9 +135,16 @@ class Livecd < ActiveRecord::Base
     if !self.failed then
       self.generated = true
       self.size = File.size(self.filename)
-      MyMailer.deliver_livecd(self.user,isourl)
+      self.users.each do |user|
+        MyMailer.deliver_livecd(user,isourl)
+      end
     else
-      MyMailer.deliver_livecd_failed(self.user,self.fullname)
+      if self.first_try then
+        self.users.each do |user|
+          MyMailer.deliver_livecd_failed(user,self.fullname)
+        end
+        self.first_try = false
+      end
     end
     self.generating = false
     self.save

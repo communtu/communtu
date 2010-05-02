@@ -47,7 +47,8 @@ end
   belongs_to :derivative
   belongs_to :language
   belongs_to :architecture
-  has_many :livecds, :dependent => :destroy
+  has_many :livecd_users, :dependent => :destroy
+  has_many :livecds, :through => :livecd_users
   has_many :user_packages 
   has_many :selected_packages, :through => :user_packages, :source => :base_package, \
       :conditions => "user_packages.is_selected = '1'"    
@@ -401,32 +402,52 @@ end
   end
 
   def livecd(name)
-    srcdeb = RAILS_ROOT + "/" + self.install_sources
-    installdeb = RAILS_ROOT + "/" + self.install_bundle_as_meta
-    cd = Livecd.create({:name => name, :distribution_id => self.distribution_id, :user_id => self.id,
+    sources = self.install_sources
+    if sources.nil? then return nil end
+    srcdeb = RAILS_ROOT + "/" + sources
+    install = self.install_bundle_as_meta
+    if install.nil? then return nil end
+    installdeb = RAILS_ROOT + "/" + install
+    cd = Livecd.create({:name => name, :distribution_id => self.distribution_id, 
                         :derivative_id => self.derivative_id, :architecture_id => self.architecture_id,
-                        :srcdeb => srcdeb, :installdeb => installdeb})
+                        :srcdeb => srcdeb, :installdeb => installdeb,
+                        :license_type => self.license, :security_type => self.security})
+    LivecdUser.create({:livecd_id => cd.id, :user_id => self.id})
     # cd.fork_remaster # now done by daemon
+    return cd
   end
 
   def bundle_to_livecd(bundle)
-    srcdeb = RAILS_ROOT + "/" + self.install_bundle_sources(bundle)
-    deb_name = bundle.debian_name
-    # ensure that debian package exists
-    bundle.debianize
-    d=Deb.find(:first,:conditions=> {:metapackage_id => bundle.id,
-                                     :distribution_id => self.distribution_id,
-                                     :derivative_id => self.derivative_id,
-                                     :license_type => self.license,
-                                     :security_type => self.security})
-    if !d.generated then
-      d.generate
+    params = {:metapackage_id => bundle.id,
+              :distribution_id => self.distribution.id,
+              :derivative_id => self.derivative.id,
+              :architecture_id => self.architecture.id,
+              :license_type => self.license,
+              :security_type => self.security}
+    # is there already a suitable live CD?
+    cd = Livecd.find(:first,:conditions=>params)
+    # if not, create one
+    if cd.nil?
+      srcdeb = RAILS_ROOT + "/" + self.install_bundle_sources(bundle)
+      deb_name = bundle.debian_name
+      # ensure that debian package exists
+      bundle.debianize
+      params1=params.clone
+      params1.delete(:architecture_id)
+      d=Deb.find(:first,:conditions=> params1)
+      if !d.generated then
+        d.generate
+      end
+      # create live cd
+      params[:name] = deb_name
+      params[:srcdeb] = srcdeb
+      params[:installdeb] = deb_name
+      cd = Livecd.create(params)
+      # cd.fork_remaster # now done by daemon
     end
-    # create live cd
-    cd = Livecd.create({:name => deb_name, :distribution_id => self.distribution_id, :user_id => self.id,
-                        :derivative_id => self.derivative_id, :architecture_id => self.architecture_id,
-                        :srcdeb => srcdeb, :installdeb => deb_name})
-    # cd.fork_remaster # now done by daemon
+    # register live CD for this user
+    LivecdUser.create({:livecd_id => cd.id, :user_id => self.id})
+    return cd
   end
 
 

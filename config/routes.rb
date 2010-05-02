@@ -76,7 +76,9 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/users/:user_id/user_profile/settings', :controller => 'user_profiles', :action => 'settings'
   map.connect '/users/:user_id/user_profile/sources', :controller => 'user_profiles', :action => 'sources'
   map.connect '/users/:user_id/user_profile/livecd', :controller => 'user_profiles', :action => 'livecd'
-  map.connect '/users/:id/destroy', :controller => 'users', :action => 'destroy' 
+  map.connect '/users/:user_id/user_profile/bundle_to_livecd/:id', :controller => 'user_profiles', :action => 'bundle_to_livecd'
+  map.connect '/users/:user_id/user_profile/create_livecd_from_bundle/:id', :controller => 'user_profiles', :action => 'create_livecd_from_bundle'
+  map.connect '/users/:id/destroy', :controller => 'users', :action => 'destroy'
   map.connect '/users/:id/show', :controller => 'users', :action => 'show'
   map.connect '/users/:id/cart/:action/:id', :controller => 'cart'
 

@@ -1,0 +1,27 @@
+<h2><%=t(:bundle_to_livecd, :name => @bundle.name)%></h2>
+<%= render_flash %>
+<%= render :partial => 'box' %>
+
+<% if @cd.nil? %>
+
+<p>
+<b><%=t(:cd_donate, {:donate_link => link_to(t(:donate),'/home/donate')})%></b>
+<br>
+<%= form_tag("/users/#{current_user.id}/user_profile/create_livecd_from_bundle/#{@bundle.id}")%>
+<%= submit_tag(t(:livecd_start)) %></p>
+<p><%=t(:view_user_profiles__installation_33)%>
+<%= link_to(t(:sources), user_path(current_user) + "/user_profile/sources")%>
+<%=t(:view_user_profiles__installation_34)%>
+</p>
+
+<% else %>
+  <% if @cd.generated %>
+    <%=t(:cd_already_created)%>
+  <% else %>
+    <%=t(:cd_being_created)%>
+  <% end %>
+<p>
+  <%= render :partial => 'livecd', :object => @cd %>
+</p>
+<% end %>
+<%= render :partial => 'livecds' %>

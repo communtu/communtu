@@ -1,0 +1,16 @@
+<tr>
+  <td>
+      <%= link_to image_tag("edit-delete.png", :size => "22x22", :border => "0", :title => t(:delete)),
+               livecd, :confirm => t(:are_you_sure), :method => :delete,
+               :controller => :livecd %>
+  </td>
+  <% if livecd.generated %>
+    <td><%= link_to livecd.fullname, livecd.url %></td>
+    <td><%= number_to_human_size(livecd.size) %> </td>
+    <td><%= change_date_time(livecd.created_at).to_s %></td>
+  <% else %>
+    <td><%= livecd.fullname %></td>
+    <td></td>
+    <td><%=if livecd.failed then t(:cd_failed) else t(:being_created) end%></td>
+  <% end %>
+</tr>

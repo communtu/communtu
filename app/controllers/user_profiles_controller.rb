@@ -126,13 +126,32 @@ class UserProfilesController < ApplicationController
     err = Livecd.check_name(name)
     if !err.nil? then
       flash[:error] = err
-      #redirect_to ({:action => "livecd", :default_name => name})
-      #return
+      redirect_to user_user_profile_path(current_user) + "/livecd"
     else
       flash[:notice] = t(:livecd_create)
       user.livecd(name)
+      redirect_to "/livecds"
     end
-    redirect_to user_user_profile_path(current_user) + "/livecd"
   end
 
+  def bundle_to_livecd
+    if check_login then return end
+    @bundle = Metapackage.find(params[:id])
+    # check if live CD has been generated already
+    @cd = Livecd.find(:first,:conditions=>{:metapackage_id => @bundle.id,
+                                    :distribution_id => current_user.distribution.id,
+                                    :derivative_id => current_user.derivative.id,
+                                    :architecture_id => current_user.architecture.id,
+                                    :license_type => current_user.license,
+                                    :security_type => current_user.security})
+    if !@cd.nil?
+      LivecdUser.create({:livecd_id => @cd.id, :user_id => current_user.id})
+    end
+  end
+
+  def create_livecd_from_bundle
+    @bundle = Metapackage.find(params[:id])
+    current_user.bundle_to_livecd(@bundle)
+    redirect_to "/livecds"
+  end
 end
