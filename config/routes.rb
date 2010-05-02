@@ -20,6 +20,7 @@ ActionController::Routing::Routes.draw do |map|
 
   # home controller
   map.connect '/home',  :controller => 'home', :action => 'home'
+  map.connect '/faq', :controller => 'home', :action => 'faq'
   map.connect '/mail/:navi', :controller => 'home', :action => 'mail'
   map.connect '/about', :controller => 'home', :action => 'about'
   map.connect '/contact_us', :controller => 'home', :action => 'contact_us'
