@@ -11,11 +11,15 @@ class Livecd < ActiveRecord::Base
   has_many :users, :through => :livecd_users
   validates_presence_of :name, :distribution, :derivative, :architecture
 
-  # full version of liveCD, made from derivative, distribution, architecture, license and security
-  def fullversion
+  # version of liveCD, made from derivative, distribution, architecture, license and security
+  def smallversion
     self.derivative.name.downcase+"-" \
     +(self.distribution.name.gsub(/[a-zA-Z ]/,'')) \
-    +"-desktop-"+self.architecture.name \
+    +"-desktop-"+self.architecture.name
+  end
+
+  def fullversion
+    self.smallversion \
     + "-" +(Package.license_components[self.license_type]) \
     + "-" +(Package.security_components[self.security_type])
   end
@@ -28,21 +32,6 @@ class Livecd < ActiveRecord::Base
   # filename of LiveCD in the file system
   def filename
     "#{RAILS_ROOT}/public/isos/#{self.fullname}.iso"
-  end
-
-    # full version of liveCD, made from derivative, distribution and architecture
-  def fullversion_old
-    self.derivative.name.downcase+"-"+self.distribution.name.gsub(/[a-zA-Z ]/,'')+"-desktop-"+self.architecture.name
-  end
-
-  # unique name of liveCD
-  def fullname_old
-    "#{self.name}-#{self.fullversion_old}"
-  end
-
-  # filename of LiveCD in the file system
-  def filename_old
-    "#{RAILS_ROOT}/public/isos/#{self.fullname_old}.iso"
   end
 
   # url of LiveCD on the communtu server
@@ -82,7 +71,7 @@ class Livecd < ActiveRecord::Base
 
   # created liveCD, using script/remaster
   def remaster
-    ver = self.fullversion
+    ver = self.smallversion
     iso = self.filename
     isourl = self.url
     fullname = self.fullname
