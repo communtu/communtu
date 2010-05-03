@@ -8,7 +8,7 @@
 <p><%=t(:livecd_created_by)%>
   <ul>
    <% @cd.users.each do |user| %>
-     <li> <%=link_to user.login, user_path(@cd.user)%> </li>
+     <li> <%=link_to user.login, user_path(user)%> </li>
    <% end %>
    </ul>
 </p>
