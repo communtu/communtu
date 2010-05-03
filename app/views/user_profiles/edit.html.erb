@@ -14,15 +14,10 @@
 <div id="category_<%=c[:category].id%>" 
   style="margin-left: <%=(c[:depth]-1)*15%>px;"
   class="user_profile_edit_cat <%=if (c[:category]==first_c) then "category_active" end%>"
-  onclick="$('bundle_list').childElements().each(Element.hide);
-  Effect.Appear('category_bundle_<%=c[:category].id.to_s%>', { duration: 0.3 });
-    $$('div.category_active')[0].removeClassName('category_active') ;
-    $('category_<%=c[:category].id%>').addClassName('category_active');">
+  onclick="user_profile_edit_show_category(<%=c[:category].id.to_s%>);">
 <%=check_box_tag("categories[" + c[:category].id.to_s + "]", 1, @ratings[c[:category].id], 
-                 :onclick => ("$('bundle_list').childElements().each(Element.hide);
-                               $('category_bundle_"+c[:category].id.to_s+"').show();"\
-                               +check_bundles(c[:category])),
-               :onchange => "new Ajax.Request('/users/#{current_user.id}/user_profile/update_ratings', {asynchronous:true, evalScripts:true, parameters:Form.serialize($('ajax'))});")%>
+               :onclick => "user_profile_edit_show_category("+c[:category].id.to_s+"); "+check_bundles(c[:category]),
+               :onchange => "user_profile_edit_save_categories("+current_user.id.to_s+");")%>
 <%=c[:category].name%></div>
 <% end %>
 </div>
@@ -31,13 +26,13 @@
 <%first_c=@categories[0][:category]%>
 <%  @categories.each do |c| %>
   <div id="category_bundle_<%=c[:category].id%>" 
-       style="<%=if (c[:category]!=first_c) then "display: none" end%>">
+       <%=if (c[:category]!=first_c) then 'style="display: none"' else 'class="bundle_category_active"'  end%>>
 <%    c[:bundles].each do |b| %>
 <%      selected = @selection.include? b %>
     <div id="metapackages_<%=b.id%>"
          class="user_profile_edit_bundle" >
          <%=check_box_tag("post[" + b.id.to_s + "]", 1, selected,
-               :onchange => "new Ajax.Request('/users/#{current_user.id}/user_profile/update_ratings', {asynchronous:true, evalScripts:true, parameters:Form.serialize($('ajax'))});")%>
+               :onchange => "user_profile_edit_save_categories("+current_user.id.to_s+");")%>
              <%=  link_to(b.name+"<span class='tooltip'><span class='top'></span><span class='middle'>"+(render :partial => 'bundle_description', :locals => {:bundle => b})+"</span><span class='bottom'></span></span>",metapackage_url(:id => b.id), :target => '_blank', :class => "tt")%> <br />
     </div>
 <%    end %>
