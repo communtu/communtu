@@ -74,7 +74,7 @@ td {
 
 .headfont{
 	 font-weight:bolder;
-	 font-family:Arial;
+	 font-family:Arial,Verdana,Helvetica,sans-serif;
 	 font-size:1.75em;
 	 letter-spacing:0.05em;
 	 }
