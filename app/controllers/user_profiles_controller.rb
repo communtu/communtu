@@ -15,7 +15,7 @@ class UserProfilesController < ApplicationController
     end
     
     @categories = Category.category_list.map do |c|
-      c[:bundles] = c[:category].metapackages.select{|m| m.is_published? or m.user_id == current_user.id or is_admin? }
+      c[:bundles] = c[:category].metapackages.select{|m| m.is_published? or m.user_id == current_user.id }
       c
     end
     @selection = user.selected_packages
