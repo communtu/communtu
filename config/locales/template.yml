@@ -701,7 +701,6 @@ Wenn du der Meinung bist, dass dein Bündel um nützliche Programme erweitert we
   view_metapackages_finish_migrate_1: " nach "
   view_metapackages_finish_migrate_2: " migriert."
   view_metapackages_finish_migrate_3: "Folgende Pakete konnten jedoch nicht migriert werden:"
-  view_metapackages_finish_migrate_6: Weiter
   view_metapackages_immediate_conflicts_0: "Konflikte innerhalb von Bündeln"
   view_metapackages_immediate_conflicts_1: " ist in Konflikt mit "
   view_metapackages__metalist_10: Bewertung
