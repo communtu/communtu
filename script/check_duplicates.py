@@ -4,8 +4,7 @@
 Author: Timo Denissen
 E-Mail: timo@communtu.com
 About this program: 
-Todo: - Check template.yml for double values *WIP*
-      - If double entries exist, ask the user which to use and delete
+Todo: - If double entries exist, ask the user which to use and delete
         the other value(s)
         - Edit the source files accordingly to the changes
         - Give the possibility to change the key name
@@ -22,7 +21,7 @@ def arbeit():
     template_yml.close()
     new_dict = switch_keyvalue(mydict['de'])
 #    print new_dict
-    check_dict(new_dict)
+    check_dict(new_dict)    
     print 'Exit'
 
 # Check if there are multiple values for one key.
