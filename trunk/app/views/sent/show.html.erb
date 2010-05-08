@@ -1,7 +1,0 @@
-<h2><%=t(:subject_with_colon)%><%=h(@message.subject) %></h2>
-<p><strong><%=t(:to_colon)%></strong> <%= @message.recipients.map(&:login).to_sentence %></p>
-<p><strong><%=t(:view_sent_show_2)%></strong> <%= change_date_time(@message.created_at) %></p>
-
-<pre><%=h @message.body %></pre>
-
-<%= link_to t(:back), user_path(current_user.id)%>

@@ -1,2 +1,0 @@
-#!/bin/bash
-sudo pkill -f "kvm -daemonize .* -redir tcp:$1::22"

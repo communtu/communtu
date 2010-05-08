@@ -1,1 +1,0 @@
-echo 'f=File.open("packages.yml","w"); YAML.dump(Package.find(:all,:select=>"name, description"),f); f.close' | nohup script/console production

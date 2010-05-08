@@ -1,9 +1,0 @@
-#!/bin/bash
-cd `dirname "$0"`/..
-ps -aef |grep livecd:daemon |grep -v grep > /dev/null
-if [ $? -ne 0 ]
-  then 
-    script/livecd-daemon
-    date >> log/livecd.daemon.log
-    echo "restarted livecd daemon" >> log/livecd.daemon.log
-fi

@@ -1,2 +1,0 @@
-page.replace_html "star-ratings-block-#{@metapackage.id}", :partial => 'rating/rating', :locals => { :metapackage => @metapackage }
-

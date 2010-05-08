@@ -1,7 +1,0 @@
-<li><a href="<%=h article.url %>" target="_blank"><%=h article.name %></a><br />
-<%=h article.description %><% if is_admin? %> | 
-<%= link_to image_tag("edit.png", :title => t(:edit), :alt => t(:edit), :border => '0'), "/articles/edit/"+article.id.to_s %> | 
-    <%= link_to image_tag("delete.png", :title => t(:delete), :alt => t(:delete), :border => '0'), article, :confirm => t(:are_you_sure), :method => :delete %>
-
-<%end%>
-</li>
