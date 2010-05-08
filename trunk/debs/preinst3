@@ -1,0 +1,52 @@
+    
+    # add sources
+    if [ "$NEWSOURCES" != "" ]; then
+      APTPIN="/etc/apt/preferences"
+      echo  >> $APTLIST
+      echo "# sources added by Communtu" >> $APTLIST
+      echo "#" >> $APTPIN
+      echo "# priorities added by Communtu" >> $APTPIN
+      IFS="§"
+      for source in $NEWSOURCES; do
+      	echo $source >> $APTLIST
+      	# and invoke apt pinning with a low preference
+    	url=$( echo $source | cut -d " " -f 2  | cut -d / -f 3)
+    	# distribution=$( echo $source | cut -d " " -f 3 )
+    	# component=$( echo $source | cut -d " " -f 4-6 )
+    	echo "Package: *" >> $APTPIN
+	    echo "Pin: origin $url" >> $APTPIN
+        echo "Pin-Priority: 100" >> $APTPIN
+    	echo >> $APTPIN
+      done
+    fi
+
+    # add keys
+    IFS="§"
+    for key in $KEYS; do
+    	set +e
+        sudo apt-key adv --recv-keys --keyserver $KEYSERVER $key
+    	if [ "$?" != "0" ]; then
+    		echo "Could not install key: "$key
+    		exit 1
+    	fi
+    	set -e
+    done
+    IFS=" "
+    
+    # sync new sources
+    # we get an error because we can't get the lock, but that does not matter
+    apt-get update 2> /dev/null || true
+    ;;
+
+    abort-upgrade)
+    ;;
+
+    *)
+        echo "preinst called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac
+
+exit 0
+
+

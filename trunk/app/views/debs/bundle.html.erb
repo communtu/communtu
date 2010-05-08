@@ -1,0 +1,4 @@
+<h1><%=t(:missing_debs_for_bundle)%> <%=link_to @bundle.name, metapackage_path(@bundle)%></h1>
+<%= render_flash %>
+<p><%= link_to t(:generate_all_debs_for_bundle), :action => 'generate_bundle', :id => @bundle.id %></p>
+<%= render :partial => 'list', :object => @debs %>

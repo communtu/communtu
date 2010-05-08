@@ -1,0 +1,12 @@
+<%= render_flash %>
+<% if !(errs = @infos.select{|i| !i.nil? && !i[:error].nil?}).empty?%>
+<%=t(:view_admins_test_all_0)%>
+<ul>
+  <% for @info in errs do%>
+      <li><%= @info[:error]%> </li>
+  <% end %> 
+  </ul>
+<% else %>
+<%=t(:view_admins_test_all_1)%>
+<% end %> 
+

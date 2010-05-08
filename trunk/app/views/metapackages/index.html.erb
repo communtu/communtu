@@ -1,0 +1,12 @@
+<% if params[:id] == "0" %>
+<h2><%= t(:model_user_meta_tabz_0) %></h2>
+<% elsif params[:id] == "1" %>
+<h2><%= t(:model_user_meta_tabz_3) %></h2>
+<% end %>
+
+<%= render :partial => "metalist", :locals => { :packages => @metapackages } %>
+
+<% if params[:id] != "2" %>
+<%= render(:partial => '/users/conny')%>
+<%end%>
+

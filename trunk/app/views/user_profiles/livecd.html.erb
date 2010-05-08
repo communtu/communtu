@@ -1,0 +1,13 @@
+<h2><%=t(:livecd)%></h2>
+<%= render_flash %>
+<%= render :partial => 'box' %>
+<% if current_user.selected_packages.empty? %>
+  <%=t(:view_user_profiles__installation_1)%>
+
+<% else %>
+  <%= render :partial => 'livecd_form', 
+             :locals => {:cd => @cd, :default_name => @default_name, :bundle => false} %>
+<% end %>
+
+<hr />
+<%= render :partial => 'livecds' %>

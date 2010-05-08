@@ -1,0 +1,29 @@
+    if [ "$NEWSOURCES" != "" ]; then
+
+      IFS="§"
+      set +e
+      # test if zenity is present
+      zenity --version >/dev/null 2>&1
+      if [ $? = 0 ]; then
+        # if yes, display sources and keys to the user
+        zenity --list --width 1000 --height 800 --title "Paketquellen hinzufügen" --text "Folgende Paketquellen und Schlüssel werden hinzugefügt" --column "Quelle" --column "Schlüssel" $NEWSOURCESKEYS
+        if [ $? != 0 ]; then
+            # abort if the user does not confirm
+            exit 1
+        fi
+#      else
+#        echo "Folgende Paketquellen und Schlüssel werden hinzugefügt"
+#        echo $SOURCESKEYSDISP
+#        while ! [[ $abfrage == [JjNn] ]]; do
+#          echo -n "OK? (j/n) "
+#          read abfrage
+#        done
+#        if ! [[ $abfrage == [jJ] ]]; then
+#            # abort if the user does not confirm
+#            exit 1
+#        fi
+      fi
+      set -e
+
+    fi
+

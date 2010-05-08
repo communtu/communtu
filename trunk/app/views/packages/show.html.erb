@@ -1,0 +1,142 @@
+  <% if logged_in? %>
+    <div class="inner0">
+<span class="headline">
+	<%= @package.icon(35)%>
+	<%= @package.name %>
+</span>
+<br />
+<% url1 = "apt://"+@package.name %>
+<% url2 = "/users/#{current_user.id}/suggestion/install_package_sources/#{@package.id}" %>
+<%= link_to image_tag("/images/install.png", :size => "22x22", :border => "0", :title => t(:install_package_sources_first), :alt => t(:install2)), url1 %>		
+<%= link_to t(:view_packages_show_2), url1%>		
+&nbsp;&nbsp;&nbsp;&nbsp;
+            <%= link_to image_tag("/images/sources.jpg", :size => "22x22", :border => "0", :title => t(:add_sources), :alt => t(:sources)), url2 %>
+<%= link_to(t(:view_packages_show_5), url2) %>
+                <% if editing_metapackage? %>
+
+                        <%= link_to_remote((image_tag("/images/add.png", :size => "22x22", :border => "0", :title =>t(:add), :alt => t(:add)) + t(:add_to_bundle)), \
+                                :url => user_path(current_user) + "/cart/add_to_cart_box/" + @package.id.to_s,\
+                                :update => 'meta_cart_box') %>
+                <% end %>
+
+  <p>
+<table>
+	<tr><td>
+  <b>Programm:</b>
+  <%=if @package.is_program then t(:yes1) else t(:no1) end %>
+   </td>
+<% if !@package.stars.nil? %>
+     <td><b><%=t(:view_packages_show_8)%></b></td> 	
+     <td><%= number_with_precision(@package.stars, 1) %><%=t(:view_packages_show_9)%></td>
+     <td nowrap class='star-rating-foreign' style='width:<%= (@package.stars * 25).to_i %>px; '></td>
+<% end %>
+</tr>
+<tr>
+  <td>
+  <b><%=t(:debian_section)%></b>
+  <%=h @package.fullsection %>
+ </td>
+</tr></table>
+</p>
+
+
+<% if not @package.urls.nil? and not @package.urls.empty? then %>
+<p>
+  <b><%=t(:view_packages_show_11)%></b><br />
+  <%=auto_link @package.urls.gsub(/ /,'<br />'), link = :all, :target => '_blank' %>
+</p>
+<p>
+<% end %>
+
+
+<% if not @package.videos.empty? then %>
+  <p>
+  <b><%=t(:videos)%></b><br />
+  <ul>
+  <%for v in @package.videos %>
+    <li><%=auto_link v.url.gsub(/ /,'<br />'), link = :all, :target => '_blank' %>
+<br />
+    <%= v.description%></li>
+  <% end %>
+  </ul></p>
+<% end %>
+
+<p>
+  <b><%=t(:description_with_colon)%></b><br />
+  <%= CGI.escapeHTML(@package.description) %>
+</p>
+
+<p>
+  <table border=1 style="border-style:solid; border-width:1px; border-collapse:collapse" cellpadding=3 >
+  <tr><th><%=t(:distribution)%></th> <th><%=t(:view_packages_show_15)%></th> <th><%=t(:view_packages_show_16)%></th></tr>
+  <% for pd in @package.package_distrs%>
+    <tr><td><%= link_to(pd.distribution.name, distribution_path(pd.distribution)) %>
+	         </td>
+		<td><%= link_to(pd.repository.name, repository_path(pd.repository)) %>
+		     </td>
+		<td><%= pd.version %></td>	 
+    </tr>
+  <% end %>
+  </table>	
+</p>
+
+<p>
+  <b><%=t(:view_packages_show_17)%></b><br />
+  <%= render(:partial => 'deps', :object => @package.dependencies_intersection {|x| x.depends_or_recommends }) %>
+</p>
+
+<% if is_admin? %>
+<%= link_to t(:direct_indirect_covered_packages), :action => 'rdepends', :id => @package.id %>
+  <%= t(:direct_indirect_covered_packages_warning) %>
+<% end %>
+
+<p>
+<b><%=t(:view_packages_show_19)%></b><br />
+  <%= render(:partial => 'deps', :object => @package.dependencies_intersection {|x| x.conflicts }) %>
+</p>
+
+<% if !@package.metapackages.empty? then%>
+  <p>
+  <b><%=t(:used_in_bundles)%></b><br />
+  <ul>
+  <% @package.metapackages.each do |m| %>
+  <li>
+     <%= link_to  m.name, { :controller => :metapackages, :action => :show,\
+	  				:id => m.id } %>
+</li>				
+  <% end %>
+</ul>
+  </p>
+<% end %>
+
+<% if !@package.used_by.empty? then%>
+  <p>
+  <b><%=t(:view_packages_show_21)%></b><br />
+  <ul>
+  <% @package.used_by.each do |p| %>
+  <li>
+     <%= link_to  p.name, package_path(p) %>
+</li>				
+  <% end %>
+</ul>
+  </p>
+<% end %>
+
+<p>
+<%= image_tag("/images/editp.png", :size => "22x22", :border => 0, :title => t(:kommentieren), :alt => t(:kommentieren)) %>
+<%= link_to t(:kommentieren), { :controller => :packages, :action => :add_comment, \
+	    :id => @package.id } %>
+<%= show_comments @package.comments %>
+</p>
+</div>
+<%= link_to t(:edit), {:action => 'edit', :id => @package.id} %> &nbsp;&nbsp;
+
+<%= link_to t(:view_packages_show_26), {:action => 'convert', :id => @package.id} %> &nbsp;&nbsp;
+<% else %>
+<div class="inner0">
+<p><%=t(:not_logged_in)%></p> 
+</div>
+<% end %>
+<div id="meta_cart_box" class="meta_cart_box">
+<%= render(:partial => 'cart/metacart_box')%>
+</div>

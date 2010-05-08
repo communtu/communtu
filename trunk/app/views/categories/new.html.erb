@@ -1,0 +1,35 @@
+<%= render_flash %>
+<% if is_admin? %>
+<h1><%=t(:new_category)%></h1>
+
+<%= error_messages_for :category %>
+
+<% form_for(@category) do |f| %>
+  <p>
+    <b><%=t(:name_without_colon)%></b><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <b><%=t(:description)%></b><br />
+    <%= f.text_field :description %>
+  </p>
+  <p>
+    <b><%=t(:url)%></b><br />
+    <%= f.text_field :link %>
+  </p>
+
+  <p>
+    <b><%=t(:superior_category)%></b><br />
+    	<%= f.collection_select('parent_id', Category.find(:all, :order => "name"), :id, :name, {:include_blank => t(:choose_parent)})%>
+  </p>
+
+  <p>
+    <%= f.submit t(:create) %>
+  </p>
+<% end %>
+
+<%= link_to t(:back), categories_path %>
+<% else %>
+<p><%=t(:not_logged_in)%></p>
+<% end %>

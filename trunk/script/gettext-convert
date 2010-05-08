@@ -1,0 +1,15 @@
+echo "calling gettext_to_i18n"
+rake gettext_to_i18n:transform
+# correct errors of gettext_to_i18n
+sed -i 's/:tabz\]/:user_profile_tabz\]/g' app/models/user_profile_tabz.rb
+sed -i 's/:tabz\]/:user_meta_tabz\]/g' app/models/user_meta_tabz.rb
+echo "calling script/tag_convert"
+find app -name "*[rm][bl]" -exec script/tag_convert {} \; -print
+echo "calling script/tag_convert_yaml"
+script/tag_convert_yaml config/locales/template.yml
+echo "calling script/sort_yaml"
+script/sort_yaml config/locales/template.yml
+echo "calling script/yaml2po"
+script/yaml2po config/locales/template.yml config/locales/template.po
+# replace t with I18n.t in models
+find app/models -name "*.rb" -exec sed -i 's/ t(/ I18n.t(/g' {} \;

@@ -1,0 +1,54 @@
+--- 
+videos_002: 
+  created_at: 2009-04-09 23:39:43
+  updated_at: 2009-04-09 23:39:43
+  url: http://www.youtube.com/watch?v=g8bZblNTY88
+  id: "8"
+  base_package_id: "60910"
+  description: Wie konfiguriert man Evolution Mail?
+videos_003: 
+  created_at: 2009-04-09 23:43:20
+  updated_at: 2009-04-09 23:43:20
+  url: http://www.youtube.com/watch?v=zUa7DKVaA64
+  id: "9"
+  base_package_id: "62667"
+  description: "Tutorial zum Verschl\xC3\xBCsseln von E-Mails mit Thunderbird"
+videos_004: 
+  created_at: 2009-04-26 17:05:58
+  updated_at: 2009-04-26 17:05:58
+  url: http://www.tutorial-24.de/office/open_office/grundkurs-open-office-calc.html
+  id: "10"
+  base_package_id: "58796"
+  description: "Im Grundkurs Tabellenkalkulation mit Open Office 2.3 Calc erhalten Sie eine Einf\xC3\xBChrung in die wesentlichsten Anwendungen des Open Office 2.3 Calc Programms, n\xC3\xA4hmlich das erstellen von Tabellen, das rechnen mit Formeln sowie das erstellen von Diagrammen. Das Video Tutorial gliedert sich in 4 Kapitel:<br>\r\n\
+    1. Einf\xC3\xBChrung und Dateneingabe <br> \r\n\
+    2. Arbeiten mit Formeln <br> \r\n\
+    3. Rahmen und Hintergrund <br>\r\n\
+    4. Diagramme "
+videos_005: 
+  created_at: 2009-04-26 17:08:09
+  updated_at: 2009-04-26 17:08:09
+  url: http://de.youtube.com/watch?v=BcAWkXL7T4M
+  id: "11"
+  base_package_id: "58856"
+  description: "Kleines Tutorial f\xC3\xBCr die Erstellung einer Folien-Pr\xC3\xA4sentation ca. 10 min"
+videos_006: 
+  created_at: 2009-04-26 17:09:44
+  updated_at: 2009-04-26 17:09:44
+  url: http://de.youtube.com/watch?v=7lgaIPI4TvI
+  id: "12"
+  base_package_id: "59495"
+  description: Tutorial am Beispiel einer Fotomontage
+videos_007: 
+  created_at: 2009-04-26 17:11:04
+  updated_at: 2009-04-26 17:11:04
+  url: http://de.youtube.com/watch?v=-7C8Qewphn0  http://de.youtube.com/watch?v=2Y41oKIoG74
+  id: "13"
+  base_package_id: "61976"
+  description: Allgemeines Tutorial (2 Teile)
+videos_001: 
+  created_at: 2008-11-15 10:48:22
+  updated_at: 2008-12-18 01:22:09
+  url: http://www.youtube.com/watch?v=wQ2WOeehCBk
+  id: "1"
+  base_package_id: "82554"
+  description: Erste Gehversuche mit Skype

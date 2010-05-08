@@ -1,0 +1,88 @@
+<div class="inner1">
+<table width="100%" cellspacing="0">
+    <% @size_helper = 0 %>
+	<% mcs = metapackage.metacontents.sort_by {|mc| [mc.package.section, mc.package.ptype, mc.package.name] }%>
+	<% mcs.each do |mc| %>
+    <% conflicts =@conflicts[mc.package] %>
+    <% if conflicts.nil? then conflicts = [] end %>
+    <% if conflicts.empty? then %>
+      <% if editable || mc.package.class == Metapackage || (mc.distributions.include?(distribution) && mc.derivatives.include?(derivative))%>
+    	<% css = cycle("packageList0", "packageList1") %>
+	  <% else %>
+	     <% css = "packageListGrey"%>
+	  <% end %>
+    <% else %>
+        <% css=cycle("packageList0conflict", "packageList1conflict") %>
+    <% end  %>
+
+		<tr>
+			<% if mc.package.class == Package \
+                  then @contr = :packages; @icon = mc.package.icon(30) \
+                  else @contr = :metapackages; @icon = Metapackage.icon(30) \
+			           end %>	   
+			<td class="<%= css+"noborder" %>"><%= @icon %>&nbsp;<%= link_to  mc.package.name, { :controller => @contr, :action => :show,\
+					:id => mc.package.id } %>
+					<% s=mc.package.installedsize(current_user.distribution) %>
+                    <% if !s.nil? %>
+                    <% @size_helper += s %>
+                    (<%= number_to_human_size(s*1024) %>)
+                    &nbsp;
+                    <% end %>
+                    </td>
+			<td class="<%= css+"noborder" %>" align="right">
+                         <%= mc.package.section %>
+			<% if is_admin? or metapackage.user==current_user %>
+			&nbsp;&nbsp;	<%= link_to image_tag("edit-delete.png", :size => "22x22", :border => "0", :title => t(:view_metapackages__package_list_2)), { :controller => :metapackages,\
+					 :action => :remove_package, :id => metapackage.id, :package_id => mc.id  } %> 
+			<% end %>
+			</td>
+		</tr>
+        <% if !conflicts.empty? %>
+           <tr><td colspan="2" class="<%= css+"noborder" %>">
+             <%=t(:view_metapackages__package_list_conflicts) %>
+             <% for c in conflicts %>
+               &nbsp; <%= c.name %>
+             <% end %>
+           </td></tr>
+        <% end %>
+        <%if ! mc.package.description.empty? %>
+		   <tr>
+			<td colspan="2" class="<%= css+"noborder" %>">
+				<%= mc.package.description[0,170]+(mc.package.description.length<170 ? "" : " ...") %></td>
+		  </tr>
+	    <% end %>
+		<% if mc.package.class == Package %>
+          <tr><td colspan="2" class="<%= css %>"><font size="-2" color="#333"><%=t(:view_metapackages__package_list_1)%></font>
+            <% for d in Distribution.find_all_by_invisible(false) %>
+              <% if editable then %>
+			    <% if mc.package.distributions.include?(d) %>
+  	              <%= check_box_tag("distributions["+mc.package.id.to_s+"][]",d.id, mc.distributions.include?(d))%>
+                  <%= link_to d.short_name, distribution_path(d) %>
+                  <% end %>
+              <% else %>
+			    <% if mc.distributions.include?(d)%>
+                  <%= link_to d.short_name, distribution_path(d) %>&nbsp;
+                <% end %>
+              <% end %>
+            <% end %> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <% for d in Derivative.find(:all) %>
+              <% if editable then %>
+	            <%= check_box_tag("derivatives["+mc.package.id.to_s+"][]",d.id, mc.derivatives.include?(d))%>
+                <%= link_to d.name, derivative_path(d) %>
+              <% else %>
+			    <% if mc.derivatives.include?(d)%>
+                  <%= link_to d.name, derivative_path(d) %>&nbsp;
+                <% end %>
+              <% end %>
+            <% end %>
+		  </td>
+		 </tr>
+		<% end %>  
+	<% end %>
+    <tr>
+      <td class="packageList0noborder"><%=t(:view_metapackages__package_list_0)%>
+<% @size_helper = @size_helper * 1024  %>
+    <b><%= number_to_human_size(@size_helper) %></b>
+    </td></tr>
+</table>	
+</div>

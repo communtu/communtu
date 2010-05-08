@@ -1,0 +1,193 @@
+--- 
+message_copies_014: 
+  created_at: 
+  updated_at: 2009-06-25 15:11:47
+  folder_id: "863"
+  is_read: "1"
+  recipient_id: "1211"
+  id: "15"
+  message_id: "15"
+message_copies_003: 
+  created_at: 
+  updated_at: 2009-05-31 00:30:34
+  folder_id: "823"
+  is_read: "1"
+  recipient_id: "828"
+  id: "3"
+  message_id: "3"
+message_copies_015: 
+  created_at: 
+  updated_at: 2009-06-25 15:15:46
+  folder_id: "863"
+  is_read: "1"
+  recipient_id: "1211"
+  id: "16"
+  message_id: "16"
+message_copies_004: 
+  created_at: 
+  updated_at: 2009-06-08 15:04:51
+  folder_id: "734"
+  is_read: "1"
+  recipient_id: "733"
+  id: "4"
+  message_id: "4"
+message_copies_016: 
+  created_at: 
+  updated_at: 2009-06-26 11:13:04
+  folder_id: "823"
+  is_read: "1"
+  recipient_id: "828"
+  id: "18"
+  message_id: "18"
+message_copies_005: 
+  created_at: 
+  updated_at: 2009-06-05 16:03:54
+  folder_id: "823"
+  is_read: "1"
+  recipient_id: "828"
+  id: "5"
+  message_id: "5"
+message_copies_017: 
+  created_at: 
+  updated_at: 2009-06-26 11:12:37
+  folder_id: "875"
+  is_read: "1"
+  recipient_id: "1264"
+  id: "19"
+  message_id: "19"
+message_copies_006: 
+  created_at: 
+  updated_at: 2009-06-05 16:05:01
+  folder_id: "1"
+  is_read: "1"
+  recipient_id: "1"
+  id: "6"
+  message_id: "6"
+message_copies_018: 
+  created_at: 
+  updated_at: 2009-06-26 11:12:43
+  folder_id: "875"
+  is_read: "1"
+  recipient_id: "1264"
+  id: "20"
+  message_id: "20"
+message_copies_007: 
+  created_at: 
+  updated_at: 2009-06-05 16:06:55
+  folder_id: "823"
+  is_read: "1"
+  recipient_id: "828"
+  id: "7"
+  message_id: "7"
+message_copies_020: 
+  created_at: 
+  updated_at: 2009-06-26 11:13:59
+  folder_id: "875"
+  is_read: "1"
+  recipient_id: "1264"
+  id: "22"
+  message_id: "22"
+message_copies_019: 
+  created_at: 
+  updated_at: 2009-06-27 11:59:23
+  folder_id: "823"
+  is_read: "1"
+  recipient_id: "828"
+  id: "21"
+  message_id: "21"
+message_copies_008: 
+  created_at: 
+  updated_at: 2009-06-13 10:57:38
+  folder_id: "734"
+  is_read: "1"
+  recipient_id: "733"
+  id: "8"
+  message_id: "8"
+message_copies_021: 
+  created_at: 
+  updated_at: 2009-06-26 11:13:56
+  folder_id: "875"
+  is_read: "1"
+  recipient_id: "1264"
+  id: "23"
+  message_id: "23"
+message_copies_010: 
+  created_at: 
+  updated_at: 2009-06-12 23:51:50
+  folder_id: "823"
+  is_read: "1"
+  recipient_id: "828"
+  id: "10"
+  message_id: "10"
+message_copies_009: 
+  created_at: 
+  updated_at: 2009-07-07 16:29:25
+  folder_id: "33"
+  is_read: "1"
+  recipient_id: "33"
+  id: "9"
+  message_id: "9"
+message_copies_022: 
+  created_at: 
+  updated_at: 2009-07-08 19:24:41
+  folder_id: "2"
+  is_read: "1"
+  recipient_id: "2"
+  id: "24"
+  message_id: "24"
+message_copies_011: 
+  created_at: 
+  updated_at: 2009-06-12 23:52:02
+  folder_id: "823"
+  is_read: "1"
+  recipient_id: "828"
+  id: "11"
+  message_id: "11"
+message_copies_023: 
+  created_at: 
+  updated_at: 2009-07-11 23:00:58
+  folder_id: "5"
+  is_read: "1"
+  recipient_id: "5"
+  id: "25"
+  message_id: "25"
+message_copies_012: 
+  created_at: 
+  updated_at: 2009-06-23 17:15:58
+  folder_id: "823"
+  is_read: "1"
+  recipient_id: "828"
+  id: "13"
+  message_id: "13"
+message_copies_001: 
+  created_at: 
+  updated_at: 2009-05-27 19:18:12
+  folder_id: "3"
+  is_read: "0"
+  recipient_id: "3"
+  id: "1"
+  message_id: "1"
+message_copies_024: 
+  created_at: 
+  updated_at: 2009-07-22 17:15:40
+  folder_id: "823"
+  is_read: "0"
+  recipient_id: "828"
+  id: "26"
+  message_id: "26"
+message_copies_013: 
+  created_at: 
+  updated_at: 2009-06-25 10:58:43
+  folder_id: "823"
+  is_read: "1"
+  recipient_id: "828"
+  id: "14"
+  message_id: "14"
+message_copies_002: 
+  created_at: 
+  updated_at: 2009-05-28 11:26:33
+  folder_id: "4"
+  is_read: "0"
+  recipient_id: "807"
+  id: "2"
+  message_id: "2"

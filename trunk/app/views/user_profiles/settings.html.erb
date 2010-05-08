@@ -1,0 +1,67 @@
+<h3><%=t(:view_user_profiles__profile_data_0)%></h3>
+
+<%= render_flash %>
+<%= error_messages_for :user_profile %>
+
+<p><%=t(:view_user_profiles__profile_data_1)%><b><%=t(:view_user_profiles__profile_data_2) %></b></p>
+
+<% form_tag user_user_profile_path(@user) + "/update_data", options = {:name => "data", :method => :put} do %>
+    <ol>	
+     <li><p><%=t(:view_user_profiles__profile_data_6)%><%= link_to(t(:view_user_profiles__profile_data_7),'/user_profiles/help')%><br />
+		<% if !@dist_string.nil? %>
+<%=t(:view_user_profiles__profile_data_8)%><%= @dist_string %>
+		<% end %>
+</p>
+        
+       <%= render :partial => "distribution", :locals => {:user => @user, :distributions => @distributions} %>
+       |
+
+        <% Derivative.all.each do |der|%>
+	      <% selected = der == current_user.derivative %>
+		  <%= radio_button_tag('user[derivative_id]',der.id, selected)%> <%=h der.name%>
+        <% end %>
+        |
+        <% Architecture.all.each do |arch|%>
+	  	  <% selected = arch == current_user.architecture %>
+		  <%= radio_button_tag('user[architecture_id]',arch.id, selected)%> <%=h arch.name%>
+        <% end %>
+		
+	</li>
+    	<% options = Array.new(Package.security_types.length, false) %>
+		<% options[current_user.security] = true %>
+		
+     <li><p><%=t(:view_user_profiles__profile_data_9)%></p>
+        
+        <%= radio_button_tag "user[security]", "0", options[0] %><%=t(:view_user_profiles__profile_data_10)%><br />
+        <%= radio_button_tag "user[security]", "1", options[1] %><%=t(:view_user_profiles__profile_data_11)%>
+        <%= package_link "gdmap"%>, <%= package_link "pdfedit"%>, <%= package_link "Acroread"%>, ... )<br />
+        <%= radio_button_tag "user[security]", "2", options[2] %><%=t(:view_user_profiles__profile_data_12)%>
+        <%= package_link "Skype"%>, <%= package_link "Virtualbox"%>, DVDs ... )<br />
+         </li>
+    <li><div style="margin-bottom:30px">
+    	<% options = Array.new(Package.license_types.length, false) %>
+    	<% if logged_in? %>
+    		<% options[current_user.license] = true %>
+        <% elsif not session[:license].nil? %>
+            <% options[session[:license]] = true %>
+        <% else %>
+            <% options[1] = true %>
+        <% end %>
+        <p><%=t(:view_user_profiles__profile_data_13)%></p>
+        <%= radio_button_tag "user[license]", "0", options[0] %><%=t(:view_user_profiles__profile_data_14)%><br />
+        <%= radio_button_tag "user[license]", "1", options[1] %><%=t(:view_user_profiles__profile_data_15)%>
+         <%= package_link "Skype"%>, <%= package_link "Acroread"%>, ... )<br />
+        </div></li>
+    <li><%= check_box_tag "user[advanced]", 1, @user.advanced, 
+          {:onclick => remote_function(:url=>{:action=>:settings_ajax},
+                                       :checked => @user.advanced,
+                                       :update => "distributions",
+                                       :with=>'Form.Element.serialize(this)')}  %>
+         <%=t(:advanced_user)%><br /></li>
+	</ol>
+    <div style="margin-top:20px;">
+        <%= submit_tag t(:save), :name => "choose" %>
+    </div>
+<% end %>
+<%= render(:partial => 'users/conny')%>
+</div>

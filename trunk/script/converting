@@ -1,0 +1,20 @@
+#!/bin/bash
+############################
+# Author: Timo Denissen    #
+# E-Mail: timo@communtu.de #
+# Version: 2.1             #
+############################
+default=en
+language=$1
+poedit=$2
+
+script/yaml2po $default config/locales/template-en.yml config/locales/template-$language.pot
+if [ $poedit = 1 ]
+then 
+  if [ -f config/locales/template-$language.po ]
+  then poedit config/locales/template-$language.po
+  else cp config/locales/template-$language.pot config/locales/template-$language.po ; poedit config/locales/template-$language.po
+  fi
+else exit
+fi
+exit

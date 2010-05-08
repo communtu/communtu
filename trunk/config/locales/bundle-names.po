@@ -1,0 +1,783 @@
+msgid ""
+msgstr ""
+"Plural-Forms: n != 1\n"
+"Project-Id-Version: test 0.1\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Timo <timo@communtu.de>\n"
+"Language-Team: Communtu <info@communtu.de>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: Drucken
+msgid "Drucken"
+msgstr "Printing"
+
+#: Rechtschreibprüfung
+msgid "Rechtschreibprüfung"
+msgstr "Spell checker"
+
+#: Texte lesen
+msgid "Texte lesen"
+msgstr "Reading texts"
+
+#: Textverarbeitung
+msgid "Textverarbeitung"
+msgstr "Word processing"
+
+#: Desktop
+msgid "Desktop"
+msgstr "Desktop"
+
+#: Grafik
+msgid "Grafik"
+msgstr "Graphic"
+
+#: Geoinformationssysteme
+msgid "Geoinformationssysteme"
+msgstr "Geographic information system"
+
+#: Umstieg von Windows
+msgid "Umstieg von Windows"
+msgstr "Changing from Windows"
+
+#: Pdf
+msgid "Pdf"
+msgstr "Pdf"
+
+#: System-Werkzeuge
+msgid "System-Werkzeuge"
+msgstr "System-tools"
+
+#: Landkarten
+msgid "Landkarten"
+msgstr "Maps"
+
+#: Unfreie Software
+msgid "Unfreie Software"
+msgstr "Unfree software"
+
+#: Spiele
+msgid "Spiele"
+msgstr "Games"
+
+#: Telefonieren, Chatten, Mailen
+msgid "Telefonieren, Chatten, Mailen"
+msgstr "Telephoning, chatting, mailing"
+
+#: Multimedia
+msgid "Multimedia"
+msgstr "Multimedia"
+
+#: Internet
+msgid "Internet"
+msgstr "Internet"
+
+#: Compilieren
+msgid "Compilieren"
+msgstr "Compiling"
+
+#: Brennen
+msgid "Brennen"
+msgstr "Burning"
+
+#: Audio-Grundlagen
+msgid "Audio-Grundlagen"
+msgstr "Audio (basics)"
+
+#: Video-Grundlagen
+msgid "Video-Grundlagen"
+msgstr "Video (basics)"
+
+#: Audio erweitert
+msgid "Audio erweitert"
+msgstr "Audio (advanced)"
+
+#: Grafik erweitert
+msgid "Grafik erweitert"
+msgstr "Graphic (advanced)"
+
+#: PC als TV und Videorekorder
+msgid "PC als TV und Videorekorder"
+msgstr "PC as a TV and VCR"
+
+#: Video erweitert
+msgid "Video erweitert"
+msgstr "Video (advanced)"
+
+#: Ubuntustudio
+msgid "Ubuntustudio"
+msgstr "Ubuntustudio"
+
+#: Mythbuntu-Desktop
+msgid "Mythbuntu-Desktop"
+msgstr "Mythbuntu-Desktop"
+
+#: Mythbuntu
+msgid "Mythbuntu"
+msgstr "Mythbuntu"
+
+#: Linux Mint
+msgid "Linux Mint"
+msgstr "Linux Mint"
+
+#: Edubuntu
+msgid "Edubuntu"
+msgstr "Edubuntu"
+
+#: Gobuntu
+msgid "Gobuntu"
+msgstr "Gobuntu"
+
+#: Kubuntu
+msgid "Kubuntu"
+msgstr "Kubuntu"
+
+#: Xubuntu
+msgid "Xubuntu"
+msgstr "Xubuntu"
+
+#: LaTeX
+msgid "LaTeX"
+msgstr "LaTeX"
+
+#: Filmemachen
+msgid "Filmemachen"
+msgstr "making movies"
+
+#: Cliparts
+msgid "Cliparts"
+msgstr "Cliparts"
+
+#: Kompressionstools
+msgid "Kompressionstools"
+msgstr "tools for compressing"
+
+#: Entwicklungs-Werkzeuge
+msgid "Entwicklungs-Werkzeuge"
+msgstr "Development-tools"
+
+#: Extrafonts
+msgid "Extrafonts"
+msgstr "extrafonts"
+
+#: automatix-firefoxmplayerplugin
+msgid "automatix-firefoxmplayerplugin"
+msgstr "automatix-firefoxmplayerplugin"
+
+#: automatix-base
+msgid "automatix-base"
+msgstr "automatix-base"
+
+#: Ipod
+msgid "Ipod"
+msgstr "Ipod"
+
+#: Automatix
+msgid "Automatix"
+msgstr "Automatix"
+
+#: Ripping
+msgid "Ripping"
+msgstr "Ripping"
+
+#: Sunjava
+msgid "Sunjava"
+msgstr "Sunjava"
+
+#: Windows-codecs
+msgid "Windows-codecs"
+msgstr "Windows-codecs"
+
+#: Dvdshrink
+msgid "Dvdshrink"
+msgstr "Dvdshrink"
+
+#: Texte einscannen
+msgid "Texte einscannen"
+msgstr "Scanning texts"
+
+#: ZevenOS Beta 5
+msgid "ZevenOS Beta 5"
+msgstr "ZevenOS Beta 5"
+
+#: ZevenOS beta 6
+msgid "ZevenOS beta 6"
+msgstr "ZevenOS Beta 6"
+
+#: Videoschnitt
+msgid "Videoschnitt"
+msgstr "video editing"
+
+#: Lernsoftware
+msgid "Lernsoftware"
+msgstr "educational software"
+
+#: texlive-full-deutsch
+msgid "texlive-full-deutsch"
+msgstr "texlive-full-german"
+
+#: Lernsoftware 6-10 Jahre
+msgid "Lernsoftware 6-10 Jahre"
+msgstr "educational software (for children aged 6 to 10 years)"
+
+#: Grundlagen für Webdesign
+msgid "Grundlagen für Webdesign"
+msgstr "Webdesign (basics)"
+
+#: EEE-PC für Schulen
+msgid "EEE-PC für Schulen"
+msgstr "EEE-PC for schools"
+
+#: Internet-Radio
+msgid "Internet-Radio"
+msgstr "Internet-radio"
+
+#: Internet2
+msgid "Internet2"
+msgstr "Internet2"
+
+#: Büro
+msgid "Büro"
+msgstr "Office"
+
+#: Habu Netbook
+msgid "Habu Netbook"
+msgstr "Habu Netbook"
+
+#: Tinos erster versuch
+msgid "Tinos erster versuch"
+msgstr "Tino's first try"
+
+#: Oerm_Standard
+msgid "Oerm_Standard"
+msgstr "Oerm_Standard"
+
+#: Rennspiele
+msgid "Rennspiele"
+msgstr "Racing games"
+
+#: Übersetzen
+msgid "Übersetzen"
+msgstr "Translating"
+
+#: Mathematik
+msgid "Mathematik"
+msgstr "Mathematics"
+
+#: Installation HU-Berlin Rechner Berlin
+msgid "Installation HU-Berlin Rechner Berlin"
+msgstr "installation of the HU-Berlin computer Berlin"
+
+#: Auswertungen und Statistiken
+msgid "Auswertungen und Statistiken"
+msgstr "analysis and statistics"
+
+#: Caros Netbook
+msgid "Caros Netbook"
+msgstr "Caro's netbook"
+
+#: timos bündel 3
+msgid "timos bündel 3"
+msgstr "timo's bundle 3"
+
+#: bernds KDE 4.2
+msgid "bernds KDE 4.2"
+msgstr "bernd's KDE 4.2"
+
+#: Azd325's Bündel
+msgid "Azd325's Bündel"
+msgstr "Azd325's bundle"
+
+#: Neues Bündel
+msgid "Neues Bündel"
+msgstr "New bundle"
+
+#: Ruby on Rails mit Mysql
+msgid "Ruby on Rails mit Mysql"
+msgstr "Ruby on Rails with Mysql"
+
+#: hets-dev
+msgid "hets-dev"
+msgstr "hets-dev"
+
+#: Ubuntu Netbook Remix
+msgid "Ubuntu Netbook Remix"
+msgstr "Ubuntu Netbook Remix"
+
+#: Professionell Musik machen
+msgid "Professionell Musik machen"
+msgstr "make music professionally"
+
+#: gobuntu-desktop
+msgid "gobuntu-desktop"
+msgstr "gobuntu-desktop"
+
+#: Chemie
+msgid "Chemie"
+msgstr "chemistry"
+
+#: Grundlagen
+msgid "Grundlagen"
+msgstr "basics"
+
+#: Java Programmierumgebung
+msgid "Java Programmierumgebung"
+msgstr "Java programming-environment"
+
+#: Text Browser
+msgid "Text Browser"
+msgstr "text-based browser"
+
+#: Mindmaps und Organisationsdiagramme
+msgid "Mindmaps und Organisationsdiagramme"
+msgstr "Mindmaps and organigrams"
+
+#: kino
+msgid "kino"
+msgstr "cinema"
+
+#: neu
+msgid "neu"
+msgstr "new"
+
+#: Ruby-Programmierung
+msgid "Ruby-Programmierung"
+msgstr "Ruby-programming"
+
+#: ljkölutrfgkuzdr
+msgid "ljkölutrfgkuzdr"
+msgstr "ljkölutrfgkuzdr"
+
+#: minimal-ubuntu
+msgid "minimal-ubuntu"
+msgstr "minimal-ubuntu"
+
+#: gnome-panel-light
+msgid "gnome-panel-light"
+msgstr "gnome-panel-light"
+
+#: mein testbuendel
+msgid "mein testbuendel"
+msgstr "my test-bundle"
+
+#: Python-Programmierung
+msgid "Python-Programmierung"
+msgstr "Python-programming"
+
+#: Gubuntu
+msgid "Gubuntu"
+msgstr "Gubuntu"
+
+#: Desktop PC
+msgid "Desktop PC"
+msgstr "Desktop PC"
+
+#: testbündel
+msgid "testbündel"
+msgstr "test-bundle"
+
+#: communtu-dev
+msgid "communtu-dev"
+msgstr "communtu-dev"
+
+#: timos bündel 2
+msgid "timos bündel 2"
+msgstr "timo's bundle 2"
+
+#: torstens pakete
+msgid "torstens pakete"
+msgstr "torsten's packages"
+
+#: Maltes Installation
+msgid "Maltes Installation"
+msgstr "Malte's installation"
+
+#: Neues Bündel
+msgid "Neues Bündel"
+msgstr "New bundle"
+
+#: test
+msgid "test"
+msgstr "test"
+
+#: vpn
+msgid "vpn"
+msgstr "vpn"
+
+#: Carolins Standardinstallation
+msgid "Carolins Standardinstallation"
+msgstr "Carolin's standard-installation"
+
+#: Bündel090526
+msgid " Bündel090526"
+msgstr " bundle090526"
+
+#: Neues Bündel
+msgid "Neues Bündel"
+msgstr "New bundle"
+
+#: Debian-Metapaket-Bau
+msgid "Debian-Metapaket-Bau"
+msgstr "building Debian-metapackages"
+
+#: chris
+msgid "chris"
+msgstr "chris"
+
+#: Janas Bündel
+msgid "Janas Bündel"
+msgstr "Jana's bundle"
+
+#: LinuxMint6_0
+msgid "LinuxMint6_0"
+msgstr "LinuxMint6_0"
+
+#: deborphan
+msgid "deborphan"
+msgstr "deborphan"
+
+#: test
+msgid "test"
+msgstr "test"
+
+#: Neues Bündel
+msgid "Neues Bündel"
+msgstr "New bundle"
+
+#: InstallationDurutti
+msgid "InstallationDurutti"
+msgstr "InstallationDurutti"
+
+#: timos Spiele
+msgid "timos Spiele"
+msgstr "timo's games"
+
+#: Katrins Installation
+msgid "Katrins Installation"
+msgstr "katrin's installation"
+
+#: timos Bündel
+msgid "timos Bündel"
+msgstr "timo's bundle"
+
+#: Uebersetzen
+msgid "Uebersetzen"
+msgstr "Translating"
+
+#: Tills Standardinstallation
+msgid "Tills Standardinstallation"
+msgstr "Till's standard-installation"
+
+#: Internet-Grundlagen Linuxtag-Demo
+msgid "Internet-Grundlagen Linuxtag-Demo"
+msgstr "Linuxtag-Demo Internet (basics)"
+
+#: Neues Bündel
+msgid "Neues Bündel"
+msgstr "New bundle"
+
+#: Tills Installation
+msgid "Tills Installation"
+msgstr "Till's installation"
+
+#: Mp3 tagging
+msgid "Mp3 tagging"
+msgstr "tagging MP3-files"
+
+#: pakonb.panticz.de
+msgid "pakonb.panticz.de"
+msgstr "pakonb.panticz.de"
+
+#: Neues Bündel5
+msgid "Neues Bündel5"
+msgstr "New bundle5"
+
+#: Video
+msgid "Video"
+msgstr "Video"
+
+#: v
+msgid "v"
+msgstr "v"
+
+#: Neues Bündel
+msgid "Neues Bündel"
+msgstr "New bundle"
+
+#: Neues Bündel
+msgid "Neues Bündel"
+msgstr "New bundle"
+
+#: Neues Bündel
+msgid "Neues Bündel"
+msgstr "New bundle"
+
+#: test-spiele
+msgid "test-spiele"
+msgstr "test-games"
+
+#: Test120000
+msgid "Test120000"
+msgstr "Test120000"
+
+#: My Dekstop
+msgid "My Dekstop"
+msgstr "My Desktop"
+
+#: ignore
+msgid "ignore"
+msgstr "ignore"
+
+#: BerndsKDE42Desktop
+msgid "BerndsKDE42Desktop"
+msgstr "BerndsKDE42Desktop"
+
+#: Local Web Server
+msgid "Local Web Server"
+msgstr "Local Web Server"
+
+#: will
+msgid "will"
+msgstr "will"
+
+#: Internet
+msgid "Internet"
+msgstr "Internet"
+
+#: Neues Bündel
+msgid "Neues Bündel"
+msgstr "New bundle"
+
+#: _fs_karmic
+msgid "_fs_karmic"
+msgstr "_fs_karmic"
+
+#: timotestbündel
+msgid "timotestbündel"
+msgstr "timotestbundle"
+
+#: willfq
+msgid "willfq"
+msgstr "willfq"
+
+#: firefoxpdf
+msgid "firefoxpdf"
+msgstr "firefoxpdf"
+
+#: Metapackage Isaac Ardilla
+msgid "Metapackage Isaac Ardilla"
+msgstr "Metapackage Isaac Ardilla"
+
+#: test_internet
+msgid "test_internet"
+msgstr "test_internet"
+
+#: Metapackage Isaac Thinki
+msgid "Metapackage Isaac Thinki"
+msgstr "Metapackage Isaac Thinki"
+
+#: testtest
+msgid "testtest"
+msgstr "testtest"
+
+#: Neues Bündel
+msgid "Neues Bündel"
+msgstr "New bundle"
+
+#: Abiword
+msgid "Abiword"
+msgstr "Abiword"
+
+#: Neues Bündel
+msgid "Neues Bündel"
+msgstr "New bundle"
+
+#: Tills Installation2
+msgid "Tills Installation2"
+msgstr "Till's installation2"
+
+#: Social media
+msgid "Social media"
+msgstr "Social media"
+
+#: Tills Browser
+msgid "Tills Browser"
+msgstr "Tills Browser"
+
+#: KDE-Games
+msgid "KDE-Games"
+msgstr "KDE-Games"
+
+#: Nach Installation
+msgid "Nach Installation"
+msgstr "Post-installation"
+
+#: Juttas Buendel
+msgid "Juttas Buendel"
+msgstr "Jutta's bundle"
+
+#: teat
+msgid "teat"
+msgstr "teat"
+
+#: Tills neue Installation
+msgid "Tills neue Installation"
+msgstr "Till's new installation"
+
+#: Grafik
+msgid "Grafik"
+msgstr "Graphics"
+
+#: freemind-plugins
+msgid "freemind-plugins"
+msgstr "freemind-plugins"
+
+#: Musikunterricht
+msgid "Musikunterricht"
+msgstr "Music lessons"
+
+#: aligiii1968's Bündel
+msgid "aligiii1968's Bündel"
+msgstr "aligiii1968's bundle"
+
+#: Strategie
+msgid "Strategie"
+msgstr "Strategy"
+
+#: Simulation
+msgid "Simulation"
+msgstr "Simulation"
+
+#: Musik
+msgid "Musik"
+msgstr "Music"
+
+#: Hount
+msgid "Hount"
+msgstr "Hount"
+
+#: Puzzle
+msgid "Puzzle"
+msgstr "Puzzle"
+
+#: Space
+msgid "Space"
+msgstr "Space"
+
+#: Neues Bündel
+msgid "Neues Bündel"
+msgstr "New bundle"
+
+#: Casi Bundle
+msgid "Casi Bundle"
+msgstr "Casi Bundle"
+
+#: Maltes Installation 2
+msgid "Maltes Installation 2"
+msgstr "Malte's installation 2"
+
+#: Thinki-2009-10-28
+msgid "Thinki-2009-10-28"
+msgstr "Thinki-2009-10-28"
+
+#: AZ-Online
+msgid "AZ-Online"
+msgstr "AZ-Online"
+
+#: Uwe's Installation
+msgid "Uwe's Installation"
+msgstr "Uwe's installation"
+
+#: Neues Bündel
+msgid "Neues Bündel"
+msgstr "New bundel"
+
+#: Neues Bündel
+msgid "Neues Bündel"
+msgstr "New bundle"
+
+#: nützli
+msgid "nützli"
+msgstr "nützli"
+
+#: Musik unterrichten
+msgid "Musik unterrichten"
+msgstr "Teach music"
+
+#: meinegrafik
+msgid "meinegrafik"
+msgstr "mygraphics"
+
+#: Grafikprogramme
+msgid "Grafikprogramme"
+msgstr "Graphic art software"
+
+#: Neues Bündel
+msgid "Neues Bündel"
+msgstr "New bundle"
+
+#: First Person Shooter
+msgid "First Person Shooter"
+msgstr "First Person Shooter"
+
+#: MMORPG
+msgid "MMORPG"
+msgstr "MMORPG"
+
+#: Neues Bündel
+msgid "Neues Bündel"
+msgstr "New bundle"
+
+#: spelling-en
+msgid "spelling-en"
+msgstr "spelling-en"
+
+#: Neues Bündel
+msgid "Neues Bündel"
+msgstr "New bundle"
+
+#: AZ-System
+msgid "AZ-System"
+msgstr "AZ-System"
+
+#: Maltes Installation 3
+msgid "Maltes Installation 3"
+msgstr "Malte's installation 3"
+
+#: AZ-Netzwerk
+msgid "AZ-Netzwerk"
+msgstr "AZ-Network"
+
+#: Rollenspiele
+msgid "Rollenspiele"
+msgstr "Role play games"
+
+#: Spiele von playdeb.net
+msgid "Spiele von playdeb.net"
+msgstr "Games from playdeb.net"
+
+#: Dungeon
+msgid "Dungeon"
+msgstr "Dungeon"
+
+#: AZ-Multimedia
+msgid "AZ-Multimedia"
+msgstr "AZ-Multimedia"
+
+#: AZ-Office
+msgid "AZ-Office"
+msgstr "AZ-Office"
+
+#: AZ-Komplett
+msgid "AZ-Komplett"
+msgstr "AZ-Complete"
+
+#: AZ-Sonstiges
+msgid "AZ-Sonstiges"
+msgstr "AZ-Other"
+

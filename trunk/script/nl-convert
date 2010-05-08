@@ -1,0 +1,5 @@
+#!/bin/bash
+TEMP=/tmp/nl`date +%N`
+tr '\n' '\r' <$1 | sed "s/\r *')%>/')%>\r/;s/<%=_(' *\r/\r<%=_('/g" - | tr '\r' '\n' > $TEMP
+mv $TEMP $1
+

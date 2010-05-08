@@ -1,0 +1,80 @@
+
+<% if logged_in? %>
+
+<table style="height:100%;" width="100%" cellspacing="0">
+  <tr>
+    <th valign="middle" class="packageList" align="left"><%= link_to t(:name_without_colon), '?order=name' %></th>
+    <th valign="middle" class="packageList" align="left"><%= link_to t(:category_without_colon), '?order=categories.name' %></th>
+    <th valign="middle" class="packageList" align="left"><%=t(:view_metapackages__metalist_2)%></th>
+    <th valign="middle" class="packageList" align="left"><%=t(:view_metapackages__metalist_3)%></th>
+	<th valign="middle" class="packageList" align="left"><%= link_to t(:view_metapackages__metalist_10), '?order=rating' %></th>
+    <th valign="middle" class="packageList" align="left"><%=t(:install)%></th>
+	<th valign="middle" class="packageList" align="left"></th>
+  <th valign="middle" class="packageList" align="left"></th>
+</tr>
+
+    <% for metapackage in packages %>
+     <% if metapackage.name != "" %>
+     <% css = cycle("packageList0", "packageList1") %>
+      <tr>
+        <td class="<%= css %>" valign="middle">
+		    <%= link_to(metapackage.name, metapackage_path(metapackage), :title => t(:detailed_view)) %></td>
+        <td class="<%= css %>" valign="middle">
+		    <%=h metapackage.category.name %></td>
+        <td class="<%= css %>" valign="middle">
+		    <%=metapackage.default_install ?  t(:yes1) : t(:no1) %></td>
+	    <td class="<%= css %>" valign="middle" align="center">
+	        <% if metapackage.published == Metapackage.state[:published] %>
+	            <%= image_tag("yes.png", :size => "22x22", :border => "0", :title => t(:published), :alt => t(:published)) %>
+	        <% else %>
+	            <%= image_tag("no.png", :size => "22x22", :border => "0", :title => t(:view_metapackages_show_12), :alt => t(:view_metapackages_show_12)) %>
+	        <% end %>
+	    </td>
+		<td class="<%= css %>" valign="middle">
+			<% if metapackage.rated_by_user?(current_user) or current_user.anonymous?%>
+				<!-- STARS allready voted -->
+				<div class="star-ratings-block" id="star-ratings-block-<%=h metapackage.id %>">
+	            	<%= render :partial => "rating/show", :locals => { :metapackage => metapackage } %>
+	        	</div>
+			<%else%>
+				<!-- if not voted yet  -->
+				<div class="star-ratings-block" id="star-ratings-block-<%=h metapackage.id %>">
+            		<%= render :partial => "rating/rating", :locals => { :metapackage => metapackage } %>
+        		</div>
+			<%end%>
+		</td>
+		<td class="<%= css %>" valign="middle" align="center">
+			<%= link_to image_tag("/images/install.png", :size => "18x18", :border => "0", :title => t(:view_metapackages__metalist_14), :alt => t(:install2)), "apt://#{metapackage.debian_name}" %>
+            <%= link_to image_tag("/images/sources.jpg", :size => "18x18", :border => "0", :title => t(:add_sources), :alt => t(:sources)), "/users/#{current_user.id}/suggestion/install_bundle_sources/#{metapackage.id}" %>
+            <% if is_power_user? || ((current_user.distribution_id<6) && !current_user.anonymous?) %>
+              <br /> <%= link_to image_tag("/images/cd.png", :size => "18x18", :border => "0", :title => t(:livecd), :alt => t(:livecd)), "/users/#{current_user.id}/user_profile/bundle_to_livecd/#{metapackage.id}" %>
+            <% end %>
+		</td>	
+        <% if logged_in? %>
+        <td class="<%= css %>" valign="middle" width="10">
+                <% if (metapackage.user_id == current_user.id) or is_admin? %>
+                    <% if editing_metapackage? %>
+                        <%= link_to_remote(image_tag("/images/add.png", :size => "22x22", :border => "0", :title => t(:add), :alt => t(:add)), \
+                                :url => user_path(current_user) + "/cart/add_to_cart/" + metapackage.id.to_s,\
+                                :update => 'meta_cart') %>
+                        <% end %>
+                <% end %>
+	</td>
+	<td class="<%= css %>" valign="middle">
+		<% if !metapackage.is_published? and (metapackage.user_id == current_user.id or is_admin?) %>
+			<%= link_to (image_tag("edit-delete-small.png", :alt=>"",:title=>"", :border=>"0")), '/metapackages/' + metapackage.id.to_s, :method=>"delete"%>
+		<%end%>
+	</td>
+	<% end %>
+      </tr>
+	<tr id="comment_<%=metapackage.id%>" style="display:none;">
+		<td class="<%= css %>" align="left" colspan="8">  
+			<%= render :partial=>"rating/rating_comment" ,:locals => { :metapackage => metapackage } %>
+		</td>
+	</tr>
+      <% end %>
+    <% end %>
+    </table>
+<% else %>
+<p><%=t(:not_logged_in)%></p>
+<% end %>

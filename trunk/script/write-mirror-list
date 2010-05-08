@@ -1,0 +1,5 @@
+#!/bin/bash
+cd `dirname "$0"`/..
+rake db:repo:mirrorlist
+cp mirror.list /etc/apt
+

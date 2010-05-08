@@ -1,0 +1,46 @@
+#!/bin/bash
+
+function start {
+     echo "Starting mongrels server at port $1"
+     nohup script/server -e production -p $1 >> log/server$1.log 2>&1 &
+}
+
+function startall {
+  for port in $(cat config/ports); do
+    start $port
+  done
+}
+
+function stop {
+    echo "Stopping mongrels server at port $1"
+	pkill -2 -f "\-p $1"
+}
+
+function stopall {
+  for port in $(cat config/ports); do
+    stop $port
+  done
+}
+
+# main script
+
+if [ `whoami` == root ]; then
+  echo "This script must not be run as root."
+  exit 1
+fi
+cd $(dirname $0)/..
+
+case $1 in
+	start)
+		startall
+	;;
+	stop)
+		stopall
+
+	;;
+	restart)
+		stopall
+		startall
+	;;
+
+esac

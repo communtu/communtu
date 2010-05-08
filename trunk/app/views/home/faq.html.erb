@@ -1,0 +1,44 @@
+
+<h2><%=t(:view_home_faq_00)%></h2>
+
+<h3><%=t(:view_home_faq_01)%></h3>
+<p><%=t(:view_home_faq_02)%></p>
+
+<h3><%=t(:view_home_faq_03)%></h3>
+<p><%=t(:view_home_faq_04)%></p>
+
+<h3><%=t(:view_home_faq_24)%></h3>
+<p><%=t(:view_home_faq_25)%></p>
+
+<h3><%=t(:view_home_faq_05)%></h3>
+<p><%=t(:view_home_faq_06)%></p>
+
+<h3><%=t(:view_home_faq_07)%></h3>
+<p><%=t(:view_home_faq_08)%></p>
+
+<h3><%=t(:view_home_faq_09)%></h3>
+<p><%=t(:view_home_faq_10)%></p>
+
+<h3><%=t(:view_home_faq_11)%></h3>
+<p><%=t(:view_home_faq_12)%></p>
+
+<h3><%=t(:view_home_faq_17)%></h3>
+<p><%=t(:view_home_faq_18)%></p>
+<a name="a19"></a>
+<h3><%=t(:view_home_faq_19)%></h3>
+<p><%=t(:view_home_faq_20)%></p>
+
+<h3><%=t(:view_home_faq_21)%></h3>
+<p><%=if is_gnome? then t(:view_home_faq_gnome_01)
+                   elsif is_kde? then t(:view_home_faq_kde_01)
+                   else t(:view_home_faq_xfce_01)end%></p>
+<p><%=t(:view_home_faq_all_01)%></p>
+
+<h3><%=t(:view_home_faq_23)%></h3>
+<p><%=if is_gnome? then t(:view_home_faq_gnome_02)
+                   elsif is_kde? then t(:view_home_faq_kde_02)
+                   else t(:view_home_faq_xfce_02)end%></p>
+<p><%=t(:view_home_faq_all_02)%></p>
+</div>
+<%= render(:partial => 'box')%>
+<%= render(:partial => 'conny')%>

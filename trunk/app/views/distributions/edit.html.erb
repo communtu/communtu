@@ -1,0 +1,42 @@
+<% if is_admin? %>
+<h1><%=t(:view_distributions_edit_0)%></h1>
+
+<%= error_messages_for :distribution %>
+
+<% form_for(@distribution) do |f| %>
+  <p>
+    <b><%=t(:name_without_colon)%></b><br />
+    <%= f.text_field :name %>
+  </p>
+  
+  <p>
+    <b><%=t(:kurzname)%></b><br />
+    <%= f.text_field :short_name %>
+  </p>
+
+  <p>
+    <b><%=t(:url)%></b><br />
+ <input id="distribution_url" name="distribution[url]" size="30" type="text" value="<%= @distribution.url %>">    
+  </p>
+
+  <p>
+    <b><%=t(:description)%></b><br />
+<textarea name="distribution[description]" rows="5" cols="60"><%= @distribution.description %></textarea>    
+  </p>
+  <p>
+    <b><%=t(:predecessor)%></b><br />
+	<%= f.collection_select('distribution_id', Distribution.all, :id, :name)%>
+  </p>
+  <p><b><%=t(:preliminary_distribution)%></b>&nbsp;
+    <b><%= f.check_box(:preliminary) %></b></p>
+  <p><b><%=t(:invisible_distribution)%></b>&nbsp;
+    <b><%= f.check_box(:invisible) %></b></p>
+
+  <p>
+    <%= f.submit t(:save) %>
+  </p>
+<% end %>
+
+<%= link_to t(:show), @distribution %> |
+<%= link_to t(:back), distributions_path %>
+<% end %>

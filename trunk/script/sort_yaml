@@ -1,0 +1,5 @@
+#!/bin/bash
+TEMP=/tmp/sort`date +%N`
+head -n2 $1 > $TEMP
+tail -n+3  $1 | tr '\n' '\r' | sed 's/\r    /§/g' | tr '\r' '\n' | sort | sed 's/§/\n    /g'  >> $TEMP
+mv $TEMP $1

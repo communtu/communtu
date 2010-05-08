@@ -1,0 +1,20 @@
+<% common = deps.delete(:all) %>
+<% depsarr = deps.select {|rep,deps| !deps.empty?} %>
+<% if common.nil? or depsarr.nil? or (common.empty? and depsarr.empty?) %><%=t(:view_packages__deps_0)%>
+<% else %>
+  <%= render(:partial => 'package', :collection => common) %>
+  <% if !depsarr.empty? %>	
+    <ul>
+    <% depsarr.each do |rd| %>
+      <% rep = rd[0] %>
+	  <% deps = rd[1] %>
+        <li>
+<%=t(:view_packages__deps_1)%><%= link_to(rep.distribution.name, distribution_path(rep.distribution)) %>
+	              <%= link_to(rep.name, repository_path(rep)) %> :
+          <br />
+	      <%= render(:partial => 'package', :collection => deps) %>
+	    </li>
+    <% end %>
+	</ul>
+  <% end %>
+<% end %>

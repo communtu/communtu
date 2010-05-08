@@ -1,0 +1,1 @@
+echo "Repository.all.each { |r| Package.import_source r }" | script/console

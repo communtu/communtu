@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:3000/" />
+<title>simple_navigation</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">simple_navigation</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//img[@alt='Navigation Download']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//img[@alt='Klick mich und sag mir, was Dir unklar ist.']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Für Fragen zu Communtu haben wir &quot;Häufig gestellte Fragen&quot; zusammengestellt.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Impressum</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>selenium_myiframe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//img[@alt='Navigation Download']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//img[@alt='Klick mich und sag mir, was Dir unklar ist.']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Für Fragen zu Communtu haben wir &quot;Häufig gestellte Fragen&quot; zusammengestellt.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Impressum</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>suite</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Simple navigation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>name=selenium_myiframe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//img[@alt='Navigation Download']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//img[@alt='Klick mich und sag mir, was Dir unklar ist.']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Für Fragen zu Communtu haben wir &quot;Häufig gestellte Fragen&quot; zusammengestellt.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Impressum</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>suite</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Simple navigation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>name=null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>q</td>
+	<td>selenium rake tast</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>btnG</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>q</td>
+	<td>selenium rake tasks</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>btnG</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Steve's Blog: Selenium and Ruby: They actually work together!</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=exact:Class: Selenium::Rake::RemoteControlStartTask</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

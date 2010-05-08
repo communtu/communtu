@@ -1,0 +1,46 @@
+<h2><%=t(:view_user_profiles__profile_rating_0)%></h2>
+<%= error_messages_for :user_profile %>
+<%= render :partial => 'box' %>
+
+<%= form_remote_tag(:url => user_user_profile_path(current_user) + "/update_ratings", :name => "ratings", :html => {:id => "ajax"})  %>
+<%=t(:which_programs_do_you_need)%> <%=t(:view_user_profiles__profile_rating_1)%>
+
+<%= link_to t(:continue), (user_user_profile_path(current_user) + "/installation")  %>
+<div class="user_profile_box">
+<div id="category_list">
+
+<%first_c=@categories[0][:category]%>
+<%@categories.each do |c| %>
+<div id="category_<%=c[:category].id%>" 
+  style="margin-left: <%=(c[:depth]-1)*15%>px;"
+  class="user_profile_edit_cat <%=if (c[:category]==first_c) then "category_active" end%>"
+  onclick="user_profile_edit_show_category(<%=c[:category].id.to_s%>);">
+<%=check_box_tag("categories[" + c[:category].id.to_s + "]", 1, @ratings[c[:category].id], 
+               :onclick => "user_profile_edit_show_category("+c[:category].id.to_s+"); "+check_bundles(c[:category]),
+               :onchange => "user_profile_edit_save_categories("+current_user.id.to_s+");")%>
+<%=c[:category].name%></div>
+<% end %>
+</div>
+
+<div id="bundle_list">
+<%first_c=@categories[0][:category]%>
+<%  @categories.each do |c| %>
+  <div id="category_bundle_<%=c[:category].id%>" 
+       <%=if (c[:category]!=first_c) then 'style="display: none"' else 'class="bundle_category_active"'  end%>>
+<%    c[:bundles].each do |b| %>
+<%      selected = @selection.include? b %>
+    <div id="metapackages_<%=b.id%>"
+         class="user_profile_edit_bundle" >
+         <%=check_box_tag("post[" + b.id.to_s + "]", 1, selected,
+               :onchange => "user_profile_edit_save_categories("+current_user.id.to_s+");")%>
+             <%=  link_to(b.name+"<span class='tooltip'><span class='top'></span><span class='middle'>"+(render :partial => 'bundle_description', :locals => {:bundle => b})+"</span><span class='bottom'></span></span>",metapackage_url(:id => b.id), :target => '_blank', :class => "tt")%> <br />
+    </div>
+<%    end %>
+  </div>
+<% end %>
+</div>
+<div class="clear_all"></div>
+</div>  
+
+</form>
+<p><a href="/home/contact_us/cat"><%=t(:offer_new_category)%></a></p>

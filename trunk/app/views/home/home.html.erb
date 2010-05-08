@@ -1,0 +1,94 @@
+
+
+<%= render_flash %>
+<noscript>
+<div align="center" style="width:100%; height:48px; top:0px; background: #FF0000;"><p style="color:#FFFFFF; font-size:12px;"><%=t(:view_layouts_application_20)%></p></div>
+</noscript> 
+
+
+<%=t(:view_home_home_26)%>
+<br />
+<%=t(:view_home_home_27)%>
+<div id="conny_index"><%= image_tag("/images/conny_start.jpg", :title =>t(:conny_picture), :alt=>t(:conny_picture)) %></div>
+<div  id="list_nextto_conni">	
+<ul>
+
+		<li>
+			<a href="<%= user_path(current_user) + "/user_profile/edit" %>" class="teaser"><%=t(:view_home_home_28)%></a><br />
+			<%=t(:view_home_home_29)%>
+		</li>
+		<li>
+			<a href="<%= user_path(current_user) + "/metapackages/0" %>" class="teaser"><%=t(:view_home_home_30)%></a><br />
+<%=t(:view_home_home_31)%>
+		</li>
+		<li>
+			<a href="/home/about" class="teaser"><%=t(:view_home_home_32)%></a><br />
+			<%=t(:view_home_home_33)%>
+		</li>
+	</ul>
+</div>
+<% u = User.find(:last, :conditions => {:anonymous => false}) %>
+<h3><%=t(:hello)%></h3>
+<%=t(:last_user)%> <strong><%= u.login %> <%= image_tag("/images/icon_user.png") %>.</strong>
+
+
+<div class="best_buendle">
+	<div class="buendle_count">
+    <table>
+      <tr>
+        <td>
+          <font size="+3"><%= BasePackage.find(:all, :conditions => {:type => "Metapackage", :published => 1}).length %></font>
+            <p><%=t(:view_home_home_bundle)%></p>
+        </td>
+        <td>
+          <img src="/images/apps/Metapackage.png" alt="<%=t(:view_home_home_bundle)%>" title="<%=t(:view_home_home_bundle)%>" />
+        </td>
+      </tr>
+    </table>
+  </div>
+	<h3>
+		<%=t(:view_home_home_rating_headline)%>
+	</h3>
+	<table cellspacing="0">
+  	<tbody>
+			<tr>
+				<th class="packageList" align="left" valign="middle">
+					<%=t(:bundle)%>
+				</th>
+				<th valign="middle" class="packageList" align="left">
+					<%=t(:view_home_home_rating_rating)%>
+				</th>
+			</tr>
+			<% for metapackage in @metapackges do %>
+				<% css = cycle("packageList0", "packageList1") %>
+				<tr>
+        	<td class="<%= css %>" valign="middle">
+						<%= link_to metapackage.name, metapackage_path(metapackage.id) %>
+					</td>
+					<td class="<%= css %>" valign="middle">
+						<div class='star-ratings-block'>
+            	<ul class='star-rating' title='<%= number_with_precision(metapackage.rating, :precision => 2).to_s + " " + t(:view_rating_show_title_ratings_count, {:votes=>metapackage.ratings.count}) %>'>
+              	<li class='current-rating' style='width:<%= metapackage.rating*25 %>px'></li>
+            	</ul>
+         		</div>
+					</td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+	<br/>
+	<% if logged_in? and !current_user.anonymous? %>
+		<%= link_to t(:view_home_home_rating_link), '/users/'+ current_user.id.to_s + '/metapackages/1', :title=>t(:view_home_home_rating_link) %>
+	<% end %>
+	<% if logged_in? %>
+		<% if new_message?%>
+			<h4 align="center">
+				<%= t(:view_home_home_new_messages_desc) %>
+			</h4>
+			<p align="center">
+				<%= link_to(image_tag("message_big.png",:size=>"60x45", :alt=>t(:view_home_home_new_message_icon),:title=>t(:view_home_home_new_message_icon), :border=>"0"), '/inbox') %>
+			</p>
+		<% end %>
+	<% end %>
+</div>
+

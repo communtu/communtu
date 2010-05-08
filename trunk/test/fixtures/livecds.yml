@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  distribution_id: 1
+  derivative_id: 1
+  architecture_id: 1
+  user_id: 1
+
+two:
+  name: MyString
+  distribution_id: 1
+  derivative_id: 1
+  architecture_id: 1
+  user_id: 1

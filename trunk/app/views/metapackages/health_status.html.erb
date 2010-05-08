@@ -1,0 +1,67 @@
+<h1><%=t(:health_status)%>: <%=t(:errors)%></h1>
+
+<h2><%=t(:bundles_with_missing_debs)%></h2>
+<%if @bundles_with_missing_debs.empty?%>
+  <%=t(:none)%>
+<%else%>
+  <ul>
+  <%for b in @bundles_with_missing_debs%>
+   <li> <%=link_to b.name, "/debs/bundle/#{b.id}"%></li>
+  <%end%>
+  </ul>
+<%end%>
+
+<h2><%=t(:failed_live_cds)%></h2>
+<%if @failed_live_cds.empty?%>
+  <%=t(:none)%>
+<%else%>
+  <ul>
+  <%for c in @failed_live_cds%>
+   <li> <%=link_to c.name, livecd_path(c)%></li>
+  <%end%>
+  </ul>
+<%end%>
+
+
+<h2><%=t(:repositories_incompletely_read)%></h2>
+<%if @repositories_incompletely_read.empty?%>
+  <%=t(:none)%>
+<%else%>
+  <ul>
+  <%for r in @repositories_incompletely_read%>
+   <li> <%=link_to r.name, repository_path(r)%></li>
+  <%end%>
+  </ul>
+<%end%>
+
+<h1><%=t(:health_status)%>: <%=t(:warnings)%></h1>
+
+<h2><%=t(:bundles_with_missing_packages)%></h2>
+<% Distribution.all.each do |d| %>
+<%if !@bundles_with_missing_packages[d].nil? and !@bundles_with_missing_packages[d].empty?%>
+  <ul>
+    <li>  <%= link_to d.name, distribution_path(d) %> => <%= link_to d.successor.name, distribution_path(d.successor) %>
+      <% @bundles_with_missing_packages[d].each do |m| %>
+      <ul>
+        <% p = Package.find(m.pid) %>
+        <% meta = Metapackage.find(m.metapackage_id) %>
+        <li> <%= link_to meta.name, metapackage_path(meta) %>
+            <%=link_to p.name, package_path(p)%>
+        </li>
+       </ul>
+       <% end %>
+    </li>
+  <%end%>
+  </ul>
+<%end%>
+
+<h2><%=t(:repositories_without_packages)%></h2>
+<%if @repositories_without_packages.empty?%>
+  <%=t(:none)%>
+<%else%>
+  <ul>
+  <%for r in @repositories_without_packages%>
+   <li> <%=link_to r.name, repository_path(r)%></li>
+  <%end%>
+  </ul>
+<%end%>

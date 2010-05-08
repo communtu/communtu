@@ -1,0 +1,9 @@
+<%= render_flash %>
+<%= link_to t(:back), { :controller => :distributions, :action => :show,\
+	:id => @repository.distribution_id }%>
+<br />
+<br />
+<span class="headline"><%=t(:view_admins_sync_package_2)%></span>
+<%= link = (link_to (@repository.url + " " + @repository.subtype), { :controller => :repositories, :action => :show,\
+          :id => @repository.id, :distribution_id => @repository.distribution_id }) %>
+<%= render :partial => 'info', :object => @info %>

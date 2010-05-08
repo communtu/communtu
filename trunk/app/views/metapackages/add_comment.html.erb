@@ -1,0 +1,21 @@
+<%= render_flash %>
+
+<div class="inner1">
+  <% if logged_in? %>
+<table>
+<%= form_tag ("/metapackages/save_comment/" + @id.to_s) %>
+	<tr><td valign='top'><%=t(:Kommentar)%></td><td>
+		<%= text_area_tag 'input', nil, { :type => :textarea, :name => :comment, :cols => 80,\
+		:rows => 10 }%>
+	</td></tr>
+	<tr><td colspan='2' align="center">
+		<%= hidden_field_tag 'metapackage_id', @id %>
+		<%= submit_tag t(:add_comment) %>	
+	</td></tr>
+	
+</table>
+</form>
+<% else %>
+<p><%=t(:not_logged_in)%></p>
+<% end %>
+</div>

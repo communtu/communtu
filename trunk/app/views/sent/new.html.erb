@@ -1,0 +1,13 @@
+<h2><%=t(:new_message)%></h2>
+
+<%= render_flash %>
+
+<%=form_tag("/sent")%>
+  <div><%=t(:to_colon)%> <%= text_field :message,:to, {:onchange => remote_function(:url=>{:action=>:update_user_exists, :controller=>'sent'},:with=>'Form.Element.serialize(this)')} %><label id="user_exists"></label></div>
+  <p><%=t(:subject_with_colon)%><%= text_field :message,:subject %></p>
+  <p><%=t(:view_sent_new_3)%><br /> <%= text_area :message,:body %></p>
+  <p><%= submit_tag t(:senden) %></p>
+</form>
+
+<%= link_to t(:back), :back %>
+

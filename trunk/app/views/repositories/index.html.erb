@@ -1,0 +1,18 @@
+<h1><%=t(:view_repositories_index_0)%></h1>
+
+<table>
+  <tr>
+  </tr>
+
+<% for repository in @repositories %>
+  <tr>
+    <td><%= link_to t(:show), repository %></td>
+    <td><%= link_to t(:edit), edit_repository_path(repository) %></td>
+    <td><%= link_to t(:delete), repository, :confirm => t(:are_you_sure), :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to t(:view_repositories_index_5), new_repository_path %>

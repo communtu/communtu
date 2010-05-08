@@ -1,0 +1,6 @@
+#!/bin/bash
+cd `dirname "$0"`/..
+touch log/check_debs.log
+date >> log/check_debs.log
+/usr/bin/rake db:repo:check_debs RAILS_ENV=production >> log/check_debs.log 2>&1
+echo "done" >> log/check_debs.log

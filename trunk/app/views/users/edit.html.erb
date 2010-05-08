@@ -1,0 +1,33 @@
+<span class="headline"><%=t(:view_users_edit_0)%></span>
+<%= render_flash %>
+<div class="inner1">
+<% if !@user.anonymous %>
+<p><%= link_to t(:change_passwd), change_password_path %> | <%= link_to t(:view_users_edit_2), :id => @user.id, :action => 'delete' %>  </p>
+<%= error_messages_for :user %>
+<% end %>
+ 
+<% form_for :user, :url => user_url(@user), :html => { :method => :put } do |f| %>
+  <p><%=t(:view_users_edit_3)%><br /><%= f.text_field :login, :size => 60 %></p>
+<% if @user.anonymous %>
+<p><%=t(:email_with_colon)%><br /><input id="user_email" name="user[email]" size="60" type="text" /></p>
+<% else %>
+  <p><%=t(:email_with_colon)%><br /><%= f.text_field :email, :size => 60 %></p>
+<% end %>
+  <p><%=t(:view_users_new_10)%><br /><%= f.text_field :firstname, :size => 60 %></p>
+  <p><%=t(:view_users_new_11)%><br /><%= f.text_field :surname, :size => 60 %></p>
+
+<% if @user.anonymous %>
+  <p><label for="password" class="block"><%=t(:new_passwd)%></label><br />
+  <%= password_field_tag 'password', {}, :size => 45 %><br />
+  <small><%=t(:four_and_fourty_letters)%></small></p>
+ 
+  <p><label for="password_confirmation"  class="block"><%=t(:confirm_new_passwd)%></label><br />
+  <%= password_field_tag 'password_confirmation', {}, :size => 45 %></p>
+<% end %>
+  
+<%= submit_tag t(:save) %>
+<% if @user.anonymous %>
+<%=t(:view_users_edit_9)%>
+<% end %>
+<% end %>
+</div>

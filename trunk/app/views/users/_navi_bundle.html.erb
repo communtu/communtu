@@ -1,0 +1,9 @@
+<div class="secondnavi">
+        <%= link_to t(:model_user_meta_tabz_0), "/metapackages/index/0" %> |
+        <%= link_to t(:model_user_meta_tabz_3), "/metapackages/index/1" %> |
+        <%= link_to t(:new_bundle), "/cart/create" %> |
+        <%= link_to t(:view_users__sidebar_4), "/distributions" %>
+        <% if is_power_user?  %>
+         | <%= link_to t(:search_package), "/searches" %>
+        <% end %>
+</div>

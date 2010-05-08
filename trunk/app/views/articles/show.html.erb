@@ -1,0 +1,19 @@
+<span class="headline"><%=t(:press_archiv)%></span>
+<div class="inner1">
+<p><%=t(:press_archiv_editorial)%></p>
+<table cellpadding="3">
+  <tr>
+    <th align="left"><%=t(:press_date)%></th>
+    <th align="left"><%=t(:press_title)%></th>
+   <!-- <th align="left"><%=t(:view_users_index_5)%></th>
+    <th align="left"><%=t(:view_users_index_6)%></th>-->
+  </tr>
+  <tr><td colspan="2"><hr></td></tr>
+    <%= render :partial => 'article', :collection => @articles %>
+</table>
+<% if is_admin? %>
+<%=link_to(t(:new_article), '/articles/new')%>
+<% end %>
+</div>
+
+

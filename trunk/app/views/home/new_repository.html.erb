@@ -1,0 +1,11 @@
+<% if logged_in? %>
+<h3><%=t(:view_home_new_repository_0)%></h3>
+<p><%=t(:view_home_new_repository_1)%></p>
+<%= form_tag({:controller => :home, :action => :repo}, :multipart => true)%>
+<p><%=t(:view_home_new_repository_2)%><br />
+<%= text_field(:form, :name) %></p>
+<p><%=t(:view_home_new_repository_3)%><br/>
+<%= text_area(:form, :frage, :rows =>10, :cols => 80) %></p>
+<p><%= submit_tag(t(:view_home_contact_us_4)) %></p>
+</form>
+<% end %>

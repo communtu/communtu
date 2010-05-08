@@ -1,0 +1,23 @@
+<h2><%= @user.login %> (<%= @log.length %>)</h2>
+<p>Den User gibt es seit: <%= locale_datetime(@user.created_at) %>.</p>
+
+<table border="1" cellpadding="10">
+<% @log.each do |l|%>
+<tr><td><%= locale_datetime(l.created_at) %></td><td><%= l.refferer %></td></tr>
+<% end %>
+</table>
+<div class="communtu_box">
+        <div class="communtu_box_line">
+        <%= t(:statistics) %>
+        </div>
+        <div class="communtu_box_inside">
+<% @output = @statistics.sort_by { |s| s[:counter] } %>
+<% @output.last(10).reverse_each do |s| %>
+<%=  "#{s[:counter]} => " %>
+<% un = User.find(:first, :conditions => {:id => s[:user_id]})%>
+<%= un.login %>
+<br /> 
+<% end %>
+        </div>
+</div>
+
