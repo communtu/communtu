@@ -212,6 +212,9 @@ class Metapackage < BasePackage
   
   end
 
+  def icon(s)
+    Metapackage.icon(s)
+  end
 ## installation and creating debian metapackages
 
   def recursive_packages package_names, package_sources, dist, license, security

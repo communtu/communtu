@@ -13,14 +13,14 @@
 <% css=cycle("packageList0", "packageList1") %>
   <tr> 
   	<td class="<%= css %>">
-         <% #if (icon=package.icon(20))!="" 
+         <% if (icon=package.icon(20))!="" 
 %>
-            <% #= icon 
+            <%= icon 
 %>
-          <%  #else 
+          <%  else 
 %>
             <div class="no_package_icon"> &nbsp;</div>
-          <% #end 
+          <% end 
 %>
   		<%= link_to(package.name, package_path(package), :title => t(:detailed_view)) %></td>
 	<td class="<%= css %>" align="middle" valign="middle">
