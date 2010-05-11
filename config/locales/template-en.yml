@@ -34,14 +34,12 @@ en:
   view_categories_edit_0: Edit category
   view_layouts_application_31: Contact
   hello: Welcome
-  view_user_profiles__installation_19: "Attention: after clicking, it will take a moment until the file is provided."
   controller_accounts_6: An error occured. The password has not been changed.
   view_user_profiles_new_0: new profile
   english_description: "English description:"
   view_layouts_application_32: Admin
   view_metapackages__package_list_0: "Total size of bundle on disk:"
   view_user_profiles_new_1: user
-  view_user_profiles__installation_20: This step has already been carried out.
   view_metapackages__package_list_1: "available for:"
   direct_indirect_covered_packages: Direct and indirect covered packages
   controller_accounts_8: Your old password was incorrect.
@@ -161,6 +159,7 @@ en:
     Communtu -
      something went wrong while donating.
   conny_picture: Conny Communtu's portrait
+  bundle_to_livecd: Recreate Live-CD/DVD
   view_home_cancel_1: Either you try a again or you use the possibility via bank transfer
   view_home_news_5: This list is intended for general announcements from the Communtu team to the users. The frequency is a little higher than once a week. Posts will be collected in an
   used_in_bundles: "Is used at Communtu in these bundles:"
@@ -338,6 +337,7 @@ en:
   view_home_news_16: We have a blog where we post updated information about Communtu. It gets a new post about once a week. Announcement and new features will be presented here.
   view_home_derivatives_43: " - based on E17. 2D-effects even without a fast graphic card."
   view_home_faq_03: How do I install a bundle?
+  cd_being_created: Create Live-CD/DVD
   view_user_profiles__profile_data_0: "Preparing the installation: adjust the preadjustments"
   view_home_news_17: Go to the blog
   view_home_derivatives_44: " - minimalist and fast version of Ubuntu for older PCs."
@@ -443,6 +443,7 @@ en:
   subject_with_colon: "Subject:"
   view_messages_show_3: Reply
   controller_profiles_0: Installation of bundles
+  cd_already_created: Recreate Live-CD/DVD
   view_home_beteiligung_4: |-
     You think you already know a lot about Open Source programs? 
     Write your experience into the comments of the according package our maybe you have seen
@@ -513,6 +514,7 @@ en:
   an: To
   view_users_edit_2: delete profile
   view_cart_update_4: Publish bundle
+  nothing_found_questionmark: user not found
   controller_users_1: Thank you for registering at Communtu! You can now log in.
   view_users_edit_3: "Username:"
   not_logged_in: You are currently not logged in. Please click on "log in" above.
@@ -558,7 +560,7 @@ en:
   create: Create
   blog_2: Blog
   model_package_10: While the synchronization of the repository {{repo_name}} the package {{package_name}} couldn't be found.
-  metacart_choose: Please add programs from the left box to your bundle.
+  metacart_choose: Please add programs to your bundle.
   migrate_repositories: Take over repositories from parent
   model_package_11: could not determine URL
   cd_donate: Creating a CD/DVD requires a lot of server performance. Please {{donate_link}}} to keep this feature alive.
@@ -594,7 +596,6 @@ en:
   add: add
   controller_admins_0: admninistration section
   controller_repositories_2: Repository updated.
-  view_metapackages_finish_migrate_6: "Forward "
   controller_repositories_3: sources.list read.
   view_admins_show_0: Here should be an introduction to the admin area
   packages_for_ubuntu: Packages for Ubuntu
@@ -651,7 +652,6 @@ en:
   none: None
   view_passwords_edit_0: "    Password:"
   link_community_title: "External link: to the official Ubuntu Forums"
-  changed_settings: This step has to be carried out again because you changed the settings.
   third_party: all providers
   view_packages_show_5: add sources for this package
   view_home_donate_options: There are several ways of donating.
@@ -772,17 +772,14 @@ en:
   view_home_impressum_4: Bauernstr. 2
   model_package_2: unknown
   view_home_icons_0: icons used in Communtu
-  view_user_profiles__profile_rating_1: "With a click on "
+  view_user_profiles__profile_rating_1: ""
   view_home_impressum_5: |-
     28203 Bremen
     Germany
   livecd_email_body: ", the Live-CD/DVD has been created. Follow this link:"
   order_number: "Sort by number (smallest number first):"
-  view_user_profiles__profile_rating_2: " you can \n\
-    open or close a section to make a detailed selection."
   videos: "Videos:"
   senden: Send
-  view_user_profiles__profile_rating_3: Attention! When finished, don't forget to click on "Save selection".
   view_home_icons_3: Install package(s).
   model_package_6: <br> has not the right format
   register: Register
@@ -808,6 +805,7 @@ en:
   controller_derivatives_2: Derivative updated.
   view_home_about_16: In order to use Communtu you need to register yourself. To do so, just click on the "Registration"-button in the menu above.
   view_home_home_10: <b>Ubuntu-releases</b> Overview about the available Ubuntu-releases (distributions).
+  continue: "Forward "
   view_debs_index_0: Failed or running deb-generation
   view_home_home_11: <b>Administrate users</b> As an administrator you can change the role of the users. Act with caution!
   view_debs_index_1: Go back to the Communtu-menu
@@ -822,8 +820,8 @@ en:
   view_home_home_15: detailled information
   repositories_without_packages: Repositories without packages (empty repository)
   view_home_home_16: " about this project and its participants in the "
-  view_debs_index_5: "Create  "
   view_metapackages_rdepends_0: In bundle
+  view_debs_index_5: "Create  "
   view_metapackages_immediate_conflicts_0: Conflicts inside bundles
   change_passwd: change password
   view_metapackages_rdepends_1: " directly an indirectly contained bundles and packages"
@@ -837,7 +835,7 @@ en:
   view_derivatives_index_0: show derivatives
   controller_home_4: A file with the package list (one package name per line) has to be given
   view_home_home_20: " to create a new user or"
-  controller_home_5: We received your suggestion and we will inform you if imbibe the suggested repository and when we will imbibe it.
+  controller_home_5: We received your suggestion and we will inform you if  and when we will add the repository to our system.
   inbox: Inbox
   view_home_home_21: "log "
   security_type: "Security type:"
@@ -860,7 +858,7 @@ en:
   donation_purpose: "Purpose: Communtu"
   controller_metapackages_not_changed: This bundle is already created as a metapackage and uploaded.
   view_sent_show_2: "Date:"
-  livecd_message: With the Live-CD you can test the software you have chosen and install the system with the previous made software choice. For this an ISO-file ({{cdimage_link}}) is created which you can burn. For this you need an empty CD-R or, if you have chosen lots of software, an empty DVD-R.<br /><br />The creation of the image takes a while. You will be informed automatically when your image has been created. For this, a valid e-mail address is required to be entered in your profile.
+  livecd_message: With the Live-CD you can test the software you have chosen and install the system with the previous made software choice. For this, an ISO-file ({{cdimage_link}}) is created which you can burn. You need an empty CD-R or, if you have chosen lots of software, an empty DVD-R.<br /><br />The creation of the image takes a while. You will be informed automatically when your image has been created. For this, a valid e-mail address is required to be entered in your profile.
   view_layouts_application_13: About Communtu
   allgemeinbildung: Allgemeinbildung e.V.
   view_home_home_28: "Download:"
