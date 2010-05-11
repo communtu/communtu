@@ -10,7 +10,7 @@ class HomeController < ApplicationController
       :select => "base_packages.*, avg(ratings.rating) AS rating",
       :joins => "LEFT JOIN ratings ON base_packages.id = ratings.rateable_id",
       :conditions => "ratings.rateable_type = 'BasePackage'",
-      :group => "ratings.rateable_id HAVING rating >= 2",
+      :group => "ratings.rateable_id HAVING rating > 2",
       :order => "rating DESC",
       :limit => 5)
   end
