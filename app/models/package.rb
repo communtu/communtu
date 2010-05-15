@@ -21,6 +21,8 @@ class Package < BasePackage
   has_many :package_tags
   has_many :tags, :through => :package_tags, :dependent => :destroy, :class_name => 'PackageTag'
 
+  validates_presence_of :name
+  validates_uniqueness_of :name
 
   def repositories_dist(distribution,arch)
     #pds = PackageDistr.find(:all,:conditions=>["package_id = ? and distribution_id = ?",self.id,distribution.id])

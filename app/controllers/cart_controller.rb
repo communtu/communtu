@@ -23,7 +23,7 @@ class CartController < ApplicationController
     end
         
     def create_from_list
-        if session[:cart].nil? then prepare_create end
+        prepare_create
         err = ""
         if !params[:datei][:attachment].nil? and params[:datei][:attachment]!="" then
           cart    = Cart.find(session[:cart])
@@ -58,120 +58,19 @@ class CartController < ApplicationController
 
     
     def save
-        if editing_metapackage?
-        
-            cart = Cart.find(session[:cart])
-            #this doesn't work for new bundle
-            t = Translation.find(:all, :conditions => ["contents = ?",cart.name]) 
-            #maybe we have more than one result than we must use all and have a hash. than we can look for each t till meta isn't nil
-            #the second only works, if the name of metapackage in the tabel metapackage get the name of the translation - that isn't good
-            if t != nil
-            m = t.length
-            l = 0
-              m.times do
-                candidate = Metapackage.find(:first, :conditions => ["user_id = ? and name_tid = ?", current_user.id, t[l].translatable_id])
-                if candidate != nil
-                  @meta = candidate
-                end
-                l = l + 1
-              end
-            else
-              @meta = Metapackage.find(:first, :conditions => ["user_id = ? and name = ?", current_user.id, cart.name])
-            end
-              meta = @meta
-            if meta.nil?
-                meta = Metapackage.new
-		@translation_new  = Translation.new  
-    		@last_trans = Translation.find(:first, :order => "translatable_id DESC")
-    		last_id = @last_trans.translatable_id
-    		@translation_new.translatable_id = last_id + 1
-    		meta.name_tid = @translation_new.translatable_id
-    		@translation_new.language_code = I18n.locale.to_s
-		@translation_new.contents = cart.name
-    		@translation_new.save   
-    		@translation_des  = Translation.new  
-    		@translation_des.translatable_id = last_id + 2
-    		meta.description_tid = @translation_des.translatable_id
-    		@translation_des.contents = ""
-    		@translation_des.language_code = I18n.locale.to_s
-    		@translation_des.save                   
-    		  if I18n.locale.to_s != "en"
-      			translate_name = Translation.new
-      			translate_name.translatable_id = last_id + 1
-      			translate_name.contents = ""
-      			translate_name.language_code = "en"
-      			translate_name.save
-      			translate_des = Translation.new
-      			translate_des.translatable_id = last_id + 2
-      			translate_des.contents = ""
-      			translate_des.language_code = "en"
-      			translate_des.save
-    		  end
-                meta.user_id         = current_user.id
-                meta.category_id     = 1
-                meta.version         = "0.1"
-                meta.description     = ""
-                meta.default_install = false
-                meta.license_type = 0
-                meta.save!
-            end
-            
-            license = 0
-            security = 0
-            # delete packages outside cart...
-            meta.base_packages(force_reload=true).each do |p| 
-              if !cart.base_packages.include?(p) then
-                meta.base_packages(force_reload=true).delete(p)
-              end  
-            end
-            # ... and insert packages from cart
-            cart.base_packages.each do |package|
-              if !meta.base_packages.include?(package) then
-                content = Metacontent.new
-                content.metapackage_id  = meta.id
-                content.base_package_id = package.id
-                content.save!
-                # default: available in all derivatives
-                Derivative.all.each do |d|
-                  content.derivatives << d
-                end
-                if package.class == Package
-                  # default: available in all distributions of the package
-                  package.distributions.each do |d|
-                    content.distributions << d
-                  end
-                  # compute license type
-                  lic = package.repositories.map{|r| r.license_type}.max
-                  license = lic if !lic.nil? and lic > license
-                  # compute security type
-                  sec = package.repositories.map{|r| r.security_type}.max
-                  security = sec if !sec.nil? and sec > security
-                else
-                  # default: available in all distributions
-                  Distribution.all.each do |d|
-                    content.distributions << d
-                  end
-                  # compute license type
-                  lic = package.license_type
-                  license = lic if !lic.nil? and lic > license
-                  # compute security type
-                  sec = package.security_type
-                  security = sec if !sec.nil? and sec > security
-                end
-              end  
-            end
-            
-            meta.update_attributes({:license_type => license, :security_type => security})
-            cart = Cart.find(session[:cart])
-            cart.destroy
-            session[:cart] = nil
-            redirect_to({:controller => 'metapackages', :action => 'edit', :id => meta.id})
-        else
-          cart = Cart.find(session[:cart])
-          cart.destroy
-          session[:cart] = nil
-          redirect_to "/packages"
-        end 
+     cart = Cart.find(session[:cart])
+     if editing_metapackage?
+       bundle_id = cart.metapackage_id
+       if bundle_id.nil?
+         redirect_to({:controller => 'metapackages', :action => 'new'})
+       else
+         redirect_to({:controller => 'metapackages', :action => 'edit', :id => bundle_id})
+       end
+     else
+       cart.destroy
+       session[:cart] = nil
+       redirect_to "/packages"
+     end 
     end
     
     def clear

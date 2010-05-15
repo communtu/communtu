@@ -36,10 +36,6 @@ module ApplicationHelper
     is_current_controller? 'categories'
   end
   
-  def editing_metapackage?
-    not session[:cart].nil?
-  end
-  
   def render_flash
     out = ""
     
@@ -49,18 +45,7 @@ module ApplicationHelper
     
     "<div class='flash'>" << out << "</div>" if not out.empty?
   end
-  
-  def card_editor(name,packages,session,current_user)
-    cart = Cart.new
-    cart.name = name
-    cart.save
-    packages.each do |p|
-      cart.base_packages << p
-    end
-    session[:cart] = cart.id
-    redirect_to "/packages"   
-  end
-  
+    
   def change_date_time(datum) 
     if datum.nil? then
       ""
@@ -123,5 +108,91 @@ module ApplicationHelper
       date_time.strftime("%d.%m.%Y, %H:%M:%S")
     end
   end
-  
+
+  ##############################
+  # card editor methods
+  ##############################
+
+  def editing_metapackage?
+    not session[:cart].nil?
+  end
+
+  def card_editor(name,packages,session,current_user,meta_id=nil,delete_package = nil)
+    cart = Cart.new
+    cart.name = name
+    cart.metapackage_id = meta_id
+    cart.save
+    packages.each do |p|
+      if p.id != delete_package
+        cart.base_packages << p
+      end
+    end
+    session[:cart] = cart.id
+    redirect_to "/packages"
+  end
+
+  # save cart contents (i.e. package selection for a bundle) to database
+  def save_cart(meta)
+    cart = Cart.find(session[:cart])
+    license = 0
+    security = 0
+    # delete packages outside cart...
+    meta.base_packages(force_reload=true).each do |p|
+      if !cart.base_packages.include?(p) then
+        meta.base_packages(force_reload=true).delete(p)
+      end
+    end
+    # ... and insert packages from cart
+    cart.base_packages.each do |package|
+      if !meta.base_packages.include?(package) then
+        content = Metacontent.new
+        content.metapackage_id  = meta.id
+        content.base_package_id = package.id
+        content.save!
+        # default: available in all derivatives
+        Derivative.all.each do |d|
+          content.derivatives << d
+        end
+        if package.class == Package
+          # default: available in all distributions of the package
+          package.distributions.each do |d|
+            content.distributions << d
+          end
+          # compute license type
+          lic = package.repositories.map{|r| r.license_type}.max
+          license = lic if !lic.nil? and lic > license
+          # compute security type
+          sec = package.repositories.map{|r| r.security_type}.max
+          security = sec if !sec.nil? and sec > security
+        else
+          # default: available in all distributions
+          Distribution.all.each do |d|
+            content.distributions << d
+          end
+          # compute license type
+          lic = package.license_type
+          license = lic if !lic.nil? and lic > license
+          # compute security type
+          sec = package.security_type
+          security = sec if !sec.nil? and sec > security
+        end
+      end
+    end
+
+    meta.update_attributes({:license_type => license, :security_type => security})
+    cart = Cart.find(session[:cart])
+    cart.destroy
+    session[:cart] = nil
+    return meta
+  end
+
+  def check_bundle_name(name,bundle=nil)
+    # compute debian names of existing metapackages, without "communtu-" oder "communtu-private-bundle-" prefix
+    metanames = (Metapackage.all-[bundle]).map{|m| BasePackage.debianize_name(m.name)}
+    if name==t(:new_bundle) or metanames.include?(BasePackage.debianize_name(name)) then
+      return false
+    end
+    return true
+  end
+
 end

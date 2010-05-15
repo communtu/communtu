@@ -1,8 +1,13 @@
 <div class="inner1">
 <table width="100%" cellspacing="0">
-    <% @size_helper = 0 %>
-	<% mcs = metapackage.metacontents.sort_by {|mc| [mc.package.section, mc.package.ptype, mc.package.name] }%>
-	<% mcs.each do |mc| %>
+  <% @size_helper = 0 %>
+  <% if editable && editing_metapackage? %>
+     <% packages = Cart.find(session[:cart]).base_packages.clone %>
+  <% else %>
+     <% packages = nil %>
+  <% end %>
+  <% mcs = metapackage.adapt_mcs(packages) %>
+  <% mcs.each do |mc| %>
     <% conflicts =@conflicts[mc.package] %>
     <% if conflicts.nil? then conflicts = [] end %>
     <% if conflicts.empty? then %>
@@ -56,7 +61,7 @@
             <% for d in Distribution.find_all_by_invisible(false) %>
               <% if editable then %>
 			    <% if mc.package.distributions.include?(d) %>
-  	              <%= check_box_tag("distributions["+mc.package.id.to_s+"][]",d.id, mc.distributions.include?(d))%>
+  	              <%= check_box_tag("distributions["+mc.package.id.to_s+"][]",d.id, (mc.id.nil? or mc.distributions.include?(d)))%>
                   <%= link_to d.short_name, distribution_path(d) %>
                   <% end %>
               <% else %>
@@ -67,7 +72,7 @@
             <% end %> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <% for d in Derivative.find(:all) %>
               <% if editable then %>
-	            <%= check_box_tag("derivatives["+mc.package.id.to_s+"][]",d.id, mc.derivatives.include?(d))%>
+	            <%= check_box_tag("derivatives["+mc.package.id.to_s+"][]",d.id, (mc.id.nil? or mc.derivatives.include?(d)))%>
                 <%= link_to d.name, derivative_path(d) %>
               <% else %>
 			    <% if mc.derivatives.include?(d)%>
@@ -77,7 +82,7 @@
             <% end %>
 		  </td>
 		 </tr>
-		<% end %>  
+		<% end %>
 	<% end %>
     <tr>
       <td class="packageList0noborder"><%=t(:view_metapackages__package_list_0)%>

@@ -51,12 +51,13 @@ class MetapackagesController < ApplicationController
   # GET /metapackages/new.xml
   def new
     @metapackage = Metapackage.new
+    @metapackage.category_id = 1
+    @metapackage.version = "0.1"
     @metapackage.name = t(:new_bundle)
-    @backlink    = request.env['HTTP_REFERER']                            
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @metapackage }
-    end
+    @categories  = Category.find(1)
+    @backlink    = request.env['HTTP_REFERER']
+    @conflicts   = {}
+    render :action => :edit
   end
 
   # GET /metapackages/1/edit
@@ -72,12 +73,66 @@ class MetapackagesController < ApplicationController
     @conflicts   = {}
   end
 
+  def create
+    update
+  end
+
   # PUT /metapackages/1
   # PUT /metapackages/1.xml
-  def update 
+  def update
     error = false
     flash[:error] = ""
-    @metapackage = Metapackage.find(params[:id])
+    if params[:id].nil?
+      @metapackage = nil
+    else
+      @metapackage = Metapackage.find(params[:id])
+    end
+    if @metapackage.nil?
+      if check_bundle_name(params[:metapackage][:name])
+         @metapackage = Metapackage.new
+	       @translation_new  = Translation.new
+    		 @last_trans = Translation.find(:first, :order => "translatable_id DESC")
+    		 last_id = @last_trans.translatable_id
+    		 @translation_new.translatable_id = last_id + 1
+    		 @metapackage.name_tid = @translation_new.translatable_id
+    		 @translation_new.language_code = I18n.locale.to_s
+		     @translation_new.contents = params[:name]
+    		 @translation_new.save
+    		 @translation_des  = Translation.new
+    		 @translation_des.translatable_id = last_id + 2
+    		 @metapackage.description_tid = @translation_des.translatable_id
+    		 @translation_des.contents = ""
+    		 @translation_des.language_code = I18n.locale.to_s
+    		 @translation_des.save
+    		 if I18n.locale.to_s != "en"
+      			translate_name = Translation.new
+      			translate_name.translatable_id = last_id + 1
+      			translate_name.contents = ""
+      			translate_name.language_code = "en"
+      			translate_name.save
+      			translate_des = Translation.new
+      			translate_des.translatable_id = last_id + 2
+      			translate_des.contents = ""
+      			translate_des.language_code = "en"
+      			translate_des.save
+    		  end
+          @metapackage.user_id         = current_user.id
+          @metapackage.default_install = false
+          @metapackage.license_type = 0
+          @metapackage.category_id = 1
+          @metapackage.save!
+          params[:id] = @metapackage.id
+      else
+        flash[:error] += t(:controller_metapackages_6)
+        error = true
+        params[:metapackage].delete(:description_english)
+        params[:metapackage].delete(:name_english)
+        @metapackage = Metapackage.new(params[:metapackage])
+        @conflicts   = {}
+        render :action => "edit" # TODO: we should keep all the selections
+        return
+      end
+    end
     if !check_owner(@metapackage,current_user) then
       redirect_to metapackage_path(@metapackage)
       return
@@ -93,9 +148,7 @@ class MetapackagesController < ApplicationController
         error = true
       end
     else
-      # compute debian names of existing metapackages, without "communtu-" oder "communtu-private-bundle-" prefix
-      metanames = (Metapackage.all-[@metapackage]).map{|m| BasePackage.debianize_name(m.name)}
-      if params[:metapackage][:name]==t(:new_bundle) or metanames.include?(BasePackage.debianize_name(params[:metapackage][:name])) then
+      if !check_bundle_name(params[:metapackage][:name],@metapackage)
         flash[:error] += t(:controller_metapackages_6)
         error = true
       end
@@ -114,103 +167,107 @@ class MetapackagesController < ApplicationController
       flash[:error] += t(:controller_metapackages_9)
       error = true
     end  
-    # correction of nil entries
-    if params[:distributions].nil? then
-      params[:distributions] = []
-    end
-    if params[:derivatives].nil? then
-      params[:derivatives] = []
-    end
-    # mark bundle as modified
-    @metapackage.modified = true
-    if @metapackage.name_tid == nil and params[:metapackage][:name] != ""
-      @translation_new  = Translation.new
-      @translation_new.translatable_id = new_trans_id
-      @metapackage.name_tid = @translation_new.translatable_id
-      @translation_new.contents = params[:metapackage][:name]
-      @translation_new.language_code = I18n.locale.to_s
-      @translation_new.save
-    end
-    if params[:metapackage][:name] != "" and params[:metapackage][:name] != nil
-    @trans_update_name = Translation.find(:first, :conditions => { :translatable_id => @metapackage.name_tid, :language_code => I18n.locale.to_s})
-    if @trans_update_name == nil
-      @trans_update_name = Translation.new
-      @trans_update_name.translatable_id = @metapackage.name_tid
-      @trans_update_name.contents = params[:metapackage][:name]
-      @trans_update_name.language_code = I18n.locale.to_s
-      @trans_update_name.save
-    else
-      @trans_update_name.contents = params[:metapackage][:name]
-      @trans_update_name.save
-    end   
-    end
-      @trans_update_name_english = Translation.find(:first, :conditions => { :translatable_id => @metapackage.name_tid, :language_code => "en"})
-    if params[:metapackage][:name_english] != nil  
-    if @trans_update_name_english == nil
-      @trans_update_name_english = Translation.new
-      @trans_update_name_english.translatable_id = @metapackage.name_tid
-      @trans_update_name_english.contents = params[:metapackage][:name_english]
-      @trans_update_name_english.language_code = "en"
-      @trans_update_name_english.save
-    else
-      @trans_update_name_english.contents = params[:metapackage][:name_english]
-      @trans_update_name_english.save
-    end
-    end
-    if params[:metapackage][:description] != "" and params[:metapackage][:description] != nil
-    if @metapackage.description_tid == nil
-       @metapackage.description_tid = new_trans_id
-    end
-    @trans_update_des = Translation.find(:first, :conditions => { :translatable_id => @metapackage.description_tid, :language_code => I18n.locale.to_s})
-    if @trans_update_des == nil
-      @trans_update_des = Translation.new
-      @trans_update_des.translatable_id = @metapackage.description_tid
-      @trans_update_des.contents = params[:metapackage][:description]
-      @trans_update_des.language_code = I18n.locale.to_s
-      @trans_update_des.save
-    else
-      @trans_update_des.contents = params[:metapackage][:description]
-      @trans_update_des.save
-    end   
-    end
-      @trans_update_description_english = Translation.find(:first, :conditions => { :translatable_id => @metapackage.description_tid, :language_code => "en"})
-    if params[:metapackage][:description_english] != nil  
-      if @trans_update_description_english == nil
-        @trans_update_description_english = Translation.new
-        @trans_update_description_english.translatable_id = @metapackage.description_tid
-        @trans_update_description_english.contents = params[:metapackage][:description_english]
-        @trans_update_description_english.language_code = "en"
-        @trans_update_description_english.save
-      else
-        @trans_update_description_english.contents = params[:metapackage][:description_english]
-        @trans_update_description_english.save
+    if !error
+      # correction of nil entries
+      if params[:distributions].nil? then
+        params[:distributions] = []
       end
-    end
-    @metapackage.save
-    # save selection of distributions and deriviatives
-    params[:distributions].each do |p, dists|
-      mc = Metacontent.find(:first, :conditions => ["metapackage_id = ? and base_package_id = ?",@metapackage.id,p])
-      mc.metacontents_distrs.each {|d| d.destroy} # delete all distributions
-      dists.each {|d| mc.distributions << Distribution.find(d)}     # and add the selected ones
-    end
-    params[:derivatives].each do |p, ders|
-      mc = Metacontent.find(:first, :conditions => ["metapackage_id = ? and base_package_id = ?",@metapackage.id,p])
-      mc.metacontents_derivatives.each {|d| d.destroy} # delete all derivatives
-      ders.each {|d| mc.derivatives << Derivative.find(d)}             # and add the selected ones
-    end
-#    respond_to do |format|
-      # save other attributes
-      if !error 
-         @metapackage.update_attributes(:version => params[:metapackage][:version],:category_id => params[:metapackage][:category_id],:default_install => params[:metapackage][:default_install])
-        flash.delete(:error)
-#        format.html { redirect_to :action => :show, :id => @metapackage.id }
-#        format.xml  { head :ok }
-        redirect_to :action => :show, :id => @metapackage.id
-      else
-#        format.html { render :action => "edit" }
-#        format.xml  { render :xml => @metapackage.errors, :status => :unprocessable_entity }
-        render :action => "edit"
-#      end
+      if params[:derivatives].nil? then
+        params[:derivatives] = []
+      end
+      # mark bundle as modified
+      @metapackage.modified = true
+      if @metapackage.name_tid == nil and params[:metapackage][:name] != ""
+        @translation_new  = Translation.new
+        @translation_new.translatable_id = new_trans_id
+        @metapackage.name_tid = @translation_new.translatable_id
+        @translation_new.contents = params[:metapackage][:name]
+        @translation_new.language_code = I18n.locale.to_s
+        @translation_new.save
+      end
+      if params[:metapackage][:name] != "" and params[:metapackage][:name] != nil
+        @trans_update_name = Translation.find(:first, :conditions => { :translatable_id => @metapackage.name_tid, :language_code => I18n.locale.to_s})
+        if @trans_update_name == nil
+          @trans_update_name = Translation.new
+          @trans_update_name.translatable_id = @metapackage.name_tid
+          @trans_update_name.contents = params[:metapackage][:name]
+          @trans_update_name.language_code = I18n.locale.to_s
+          @trans_update_name.save
+        else
+          @trans_update_name.contents = params[:metapackage][:name]
+          @trans_update_name.save
+        end
+      end
+        @trans_update_name_english = Translation.find(:first, :conditions => { :translatable_id => @metapackage.name_tid, :language_code => "en"})
+      if params[:metapackage][:name_english] != nil
+        if @trans_update_name_english == nil
+          @trans_update_name_english = Translation.new
+          @trans_update_name_english.translatable_id = @metapackage.name_tid
+          @trans_update_name_english.contents = params[:metapackage][:name_english]
+          @trans_update_name_english.language_code = "en"
+          @trans_update_name_english.save
+        else
+          @trans_update_name_english.contents = params[:metapackage][:name_english]
+          @trans_update_name_english.save
+        end
+      end
+      if params[:metapackage][:description] != "" and params[:metapackage][:description] != nil
+        if @metapackage.description_tid == nil
+           @metapackage.description_tid = new_trans_id
+        end
+        @trans_update_des = Translation.find(:first, :conditions => { :translatable_id => @metapackage.description_tid, :language_code => I18n.locale.to_s})
+        if @trans_update_des == nil
+          @trans_update_des = Translation.new
+          @trans_update_des.translatable_id = @metapackage.description_tid
+          @trans_update_des.contents = params[:metapackage][:description]
+          @trans_update_des.language_code = I18n.locale.to_s
+          @trans_update_des.save
+        else
+          @trans_update_des.contents = params[:metapackage][:description]
+          @trans_update_des.save
+        end
+      end
+      @trans_update_description_english = Translation.find(:first, :conditions => { :translatable_id => @metapackage.description_tid, :language_code => "en"})
+      if params[:metapackage][:description_english] != nil
+        if @trans_update_description_english == nil
+          @trans_update_description_english = Translation.new
+          @trans_update_description_english.translatable_id = @metapackage.description_tid
+          @trans_update_description_english.contents = params[:metapackage][:description_english]
+          @trans_update_description_english.language_code = "en"
+          @trans_update_description_english.save
+        else
+          @trans_update_description_english.contents = params[:metapackage][:description_english]
+          @trans_update_description_english.save
+        end
+      end
+      @metapackage.save
+      if editing_metapackage?
+        save_cart(@metapackage)
+      end
+      # save selection of distributions and deriviatives
+      params[:distributions].each do |p, dists|
+        mc = Metacontent.find(:first, :conditions => ["metapackage_id = ? and base_package_id = ?",@metapackage.id,p])
+        if !mc.nil?
+          mc.metacontents_distrs.each {|d| d.destroy} # delete all distributions
+          dists.each {|d| mc.distributions << Distribution.find(d)}     # and add the selected ones
+        end
+      end
+      params[:derivatives].each do |p, ders|
+        mc = Metacontent.find(:first, :conditions => ["metapackage_id = ? and base_package_id = ?",@metapackage.id,p])
+        if !mc.nil?
+          mc.metacontents_derivatives.each {|d| d.destroy} # delete all derivatives
+          ders.each {|d| mc.derivatives << Derivative.find(d)}             # and add the selected ones
+        end
+      end
+      attrs = {:version => params[:metapackage][:version],:default_install => params[:metapackage][:default_install]}
+      if !params[:metapackage][:category_id].nil? and !params[:metapackage][:category_id].empty?
+        attrs[:category_id] = params[:metapackage][:category_id]
+      end
+      @metapackage.update_attributes(attrs)
+      flash.delete(:error)
+      redirect_to :action => :show, :id => @metapackage.id
+    else # in case of error
+      render :action => "edit" # TODO: we should keep all the selections
     end
   end
 
@@ -287,24 +344,22 @@ class MetapackagesController < ApplicationController
     redirect_to :controller => :metapackages, :action => :show
   end
   
-  def edit_packages
-    @package = Metapackage.find(params[:id]);
-    if !check_owner(@package,current_user) then
+  def edit_packages(did = nil)
+    @bundle = Metapackage.find(params[:id])
+    if !check_owner(@bundle,current_user) then
       redirect_to metapackage_path(@metapackage)
       return
     end
-    card_editor(@package.name,@package.base_packages,session,current_user)
+    card_editor(@bundle.name,@bundle.base_packages,session,current_user,@bundle.id,did.to_i)
   end
   
   def remove_package
-    if !check_owner(Metacontent.find(params[:package_id]).metapackage,current_user) then
+    mc = Metacontent.find(params[:package_id])
+    if !check_owner(mc.metapackage,current_user) then
       redirect_to :controller => :metapackages, :action => :edit, :id => params[:id]
       return
     end
-    if Metacontent.delete(params[:package_id]).nil?
-      flash[:error] = t(:controller_metapackages_11)
-    end
-    redirect_to :controller => :metapackages, :action => :edit, :id => params[:id]
+    redirect_to :controller => :metapackages, :action => :edit_action, :id => params[:id], :did => mc.base_package_id, :method=>:pedit
   end
   
   def edit_action
@@ -318,7 +373,7 @@ class MetapackagesController < ApplicationController
         if action == "edit"
             redirect_to metapackage_path(meta) + "/edit"
         elsif action == "pedit"
-            edit_packages
+            edit_packages(params[:did])
         elsif action == "publish"
           if current_user.anonymous? then
             flash[:error] = t(:controller_application_0)

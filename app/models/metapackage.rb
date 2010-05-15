@@ -209,12 +209,11 @@ class Metapackage < BasePackage
   def self.icon(size)
     s = size.to_s
     return '<img border="0" height="'+s+'" width="'+s+'" src="/images/apps/Metapackage.png"/>'
-  
   end
-
   def icon(s)
     Metapackage.icon(s)
   end
+
 ## installation and creating debian metapackages
 
   def recursive_packages package_names, package_sources, dist, license, security
@@ -315,7 +314,28 @@ class Metapackage < BasePackage
       m.debianize
     end
   end 
-    
+
+  # adpat list of metacontents (for bundle editing)
+  def adapt_mcs(packages)
+    if packages.nil? then
+      mcs = self.metacontents
+    else
+      mcs = []
+      # remove the deselected packages
+      self.metacontents.each do |mc|
+        if packages.include?(mc.package) then
+          mcs << mc
+          packages.delete(mc.package)
+        end
+      end
+      # create preliminary mcs for the new packages
+      packages.each do |p|
+        mcs << Metacontent.new({:metapackage_id => self.id, :base_package_id => p.id})
+      end
+    end
+    return mcs.sort_by {|mc| [mc.package.section, mc.package.ptype, mc.package.name]}
+  end
+
   protected
   
   # :dependent => :destroy will not work since the metapackage is needed for destroying the debs

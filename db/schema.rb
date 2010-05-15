@@ -95,6 +95,7 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "metapackage_id"
   end
 
   create_table "categories", :force => true do |t|
@@ -151,6 +152,8 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "dependencies", ["package_distr_id", "base_package_id"], :name => "package_distr_id"
 
   create_table "derivatives", :force => true do |t|
     t.string   "name"
@@ -213,6 +216,7 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.text     "log"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "first_try",       :default => true
     t.integer  "license_type"
     t.integer  "security_type"
     t.integer  "profile_version"
@@ -242,12 +246,16 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.datetime "updated_at"
   end
 
+  add_index "metacontents", ["metapackage_id", "base_package_id"], :name => "metacontents_1"
+
   create_table "metacontents_derivatives", :force => true do |t|
     t.integer  "metacontent_id"
     t.integer  "derivative_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "metacontents_derivatives", ["metacontent_id", "derivative_id"], :name => "metacontents_derivatives_1"
 
   create_table "metacontents_distrs", :force => true do |t|
     t.integer  "metacontent_id"
