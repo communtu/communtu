@@ -333,6 +333,7 @@ auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} er
   show: Anzeigen
   sources: Quellen
   spam_user_delete: Alle Spam-User gelöscht.
+  start: Start
   statistics: Aufrufstatistik
   steps_for_distribution_setup: Schritte für das Einrichten einer neuen Distribution (bitte auf admin-System durchführen)
   subject_with_colon: "Betreff: "
