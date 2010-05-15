@@ -10,7 +10,7 @@ Todo: - Edit the source files accordingly to the changes
 '''
 
 import yaml
-import codecs
+import os
 
 def arbeit():
     '''Working with the file.'''
@@ -19,7 +19,7 @@ def arbeit():
     new_dict = switch_keyvalue(mydict['de'])
     check_dict(new_dict)
     print 'Exit'
-
+    
 def check_dict(dict):
     '''Check if there are multiple values for one key.'''
     for key, value in dict.iteritems():
@@ -51,18 +51,23 @@ def edit_files(oldkey, newkey):
         oldkey = item
         sed = 'find app lib -name "*rb" -exec sed -i \'s/t(:' + oldkey + '\([^:alnum:_]\)/t(:' + newkey + '\1/g\' {} \;'
         print sed
+#        os.system(sed)
         edit_template(item)
     print '----------'
     
 def edit_template(key):
     '''Editing the template.yml and removing multiple key:value pairs.'''
-    template_yml = codecs.open('config/locales/template_short.yml', 'r', 'utf-8')
+    template_yml = open('config/locales/template_short.yml')
     template_dict_full = yaml.safe_load(template_yml)
+#    print template_dict_full
     template_dict = template_dict_full['de']
     template_yml.close()
-    template_yml = codecs.open('config/locales/template_short.yml', 'w', 'utf-8')
+#    print template_dict
+    template_yml = open('config/locales/template_short.yml', 'w')
     del template_dict[key]
-    template_yml.write(yaml.dump(template_dict_full, default_flow_style=False, encoding='utf-8'))
+#    print template_dict
+    template_yml.write(yaml.dump(template_dict_full, default_flow_style=False))
+#    print yaml.dump(template_dict_full, default_flow_style=False)
     template_yml.close()
 
 def switch_keyvalue(dict):
@@ -79,5 +84,5 @@ def switch_keyvalue(dict):
 print 'This program is beta.'
 print 'THIS IS NOT MEANT FOR PRODUCTIVE USAGE!!! YOU HAVE BEEN WARNED!!!'
 print 'Using file "config/locales/template.yml"'
-template_yml = codecs.open('config/locales/template_short.yml', 'r', 'utf-8')
+template_yml = open('config/locales/template_short.yml')
 arbeit()
