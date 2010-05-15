@@ -4,32 +4,64 @@
 Author: Timo Denissen
 E-Mail: timo@communtu.com
 About this program: 
-Todo: - If double entries exist, ask the user which to use and delete
-        the other value(s)
-        - Edit the source files accordingly to the changes
-        - Give the possibility to change the key name
+Todo: - Give the possibility to change the key name
       - GUI
 '''
 
 import yaml
+import os
 
-def arbeit():
+def file_processing():
     '''Working with the file.'''
-    mydict = yaml.load(template_yml)
+    mydict = yaml.safe_load(template_yml)
     template_yml.close()
     new_dict = switch_keyvalue(mydict['de'])
-    check_dict(new_dict)    
-    print 'Exit'
-
+    check_dict(new_dict)
+    
 def check_dict(dict):
     '''Check if there are multiple values for one key.'''
     for key, value in dict.iteritems():
         if len(value) > 1:
-            print 'Found the following duplicate values:'
-            print value, ':', key
+            print 'Please solve this conflict:'
+            multiple_string = value
+            print value, ':', key ,'\n'
+            ask_string(multiple_string)
         else:
             pass
+
+def ask_string(string):
+    '''Ask user which string to use in templaye.yml'''
+    temp_dict = {}
+    x = 1
+    for item in string:
+        temp_dict[x] = item
+        print x, item
+        x += 1
+    ask_number = input('Enter the number of the correct key: ')
+    newkey = temp_dict[ask_number]
+    string.remove(newkey)
+    oldkey_temp = string
+    edit_files(oldkey_temp, newkey)
     
+def edit_files(oldkey, newkey):
+    '''Using "sed" to remove oldkey from source files.'''
+    for item in oldkey:
+        oldkey = item
+        sed = 'find app lib -name "*rb" -exec sed -i \'s/t(:' + oldkey + '\([^:alnum:_]\)/t(:' + newkey + '\\1/g\' {} \;'
+        os.system(sed)
+        edit_template(item)
+    print '----------'
+    
+def edit_template(key):
+    '''Editing the template.yml and removing multiple key:value pairs.'''
+    template_yml = open('config/locales/template.yml')
+    template_dict_full = yaml.safe_load(template_yml)
+    template_dict = template_dict_full['de']
+    template_yml.close()
+    template_yml = open('config/locales/template.yml', 'w')
+    del template_dict[key]
+    template_yml.write(yaml.dump(template_dict_full, default_flow_style=False))
+    template_yml.close()
 
 def switch_keyvalue(dict):
     '''Switching the key:value pairs in the template.yml file.'''
@@ -41,8 +73,25 @@ def switch_keyvalue(dict):
             new_dict[value] = [key]
     return new_dict
     
+def update_template():
+    '''Clearing false encodings from template.yml'''
+    print 'Updating template.yml'
+    replace = {'\\xDC': 'Ü',
+               '\\xFC': 'ü',
+               '\\xC4': 'Ä',
+               '\\xE4': 'ä',
+               '\\xD6': 'Ö',
+               '\\xF6': 'ö',
+               '\\xDF': 'ß'}
+    for key, value in replace.iteritems():
+        wrong_key = key
+        correct_key = value
+        sed = "sed -i 's/\\" + wrong_key + "/" + correct_key + "/g' config/locales/template.yml"
+        os.system(sed)
+
 '''Choosing the file to work with.'''
-print 'This program is beta'
 print 'Using file "config/locales/template.yml"'
 template_yml = open('config/locales/template.yml')
-arbeit()
+file_processing()
+update_template()
+print 'Exit'
