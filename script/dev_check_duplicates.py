@@ -10,23 +10,21 @@ Todo: - Edit the source files accordingly to the changes
 '''
 
 import yaml
+import codecs
 
 def arbeit():
     '''Working with the file.'''
-    mydict = yaml.load(template_yml)
-#    print mydict
-#    print type(mydict)
+    mydict = yaml.safe_load(template_yml)
     template_yml.close()
     new_dict = switch_keyvalue(mydict['de'])
-#    print new_dict
     check_dict(new_dict)
     print 'Exit'
 
 def check_dict(dict):
     '''Check if there are multiple values for one key.'''
-    print 'Please solve the following conflicts:'
     for key, value in dict.iteritems():
         if len(value) > 1:
+            print 'Please solve this conflict:'
             multiple_string = value
             print value, ':', key ,'\n'
             ask_string(multiple_string)
@@ -41,28 +39,31 @@ def ask_string(string):
         temp_dict[x] = item
         print x, item
         x += 1
-#    print temp_dict
     ask_number = input('Enter the number of the correct key: ')
     newkey = temp_dict[ask_number]
-#    print newkey
-#    print 'type(newkey)'
-#    print type(newkey)
     string.remove(newkey)
     oldkey_temp = string
-#    print 'type(oldkey_temp)'
-#    print type(oldkey_temp)
-#    print oldkey_temp
     edit_files(oldkey_temp, newkey)
     
 def edit_files(oldkey, newkey):
     '''Using "sed" to remove oldkey from source files.'''
     for item in oldkey:
-#        print item
-#        print type(item)
         oldkey = item
         sed = 'find app lib -name "*rb" -exec sed -i \'s/t(:' + oldkey + '\([^:alnum:_]\)/t(:' + newkey + '\1/g\' {} \;'
         print sed
+        edit_template(item)
     print '----------'
+    
+def edit_template(key):
+    '''Editing the template.yml and removing multiple key:value pairs.'''
+    template_yml = codecs.open('config/locales/template_short.yml', 'r', 'utf-8')
+    template_dict_full = yaml.safe_load(template_yml)
+    template_dict = template_dict_full['de']
+    template_yml.close()
+    template_yml = codecs.open('config/locales/template_short.yml', 'w', 'utf-8')
+    del template_dict[key]
+    template_yml.write(yaml.dump(template_dict_full, default_flow_style=False, encoding='utf-8'))
+    template_yml.close()
 
 def switch_keyvalue(dict):
     '''Switching the key:value pairs in the template.yml file.'''
@@ -76,7 +77,7 @@ def switch_keyvalue(dict):
 
 '''Choosing the file to work with.'''
 print 'This program is beta.'
-print 'THIS IS NOT MEANT FOR PRODUCTIVE USAGE!!! YOU HAVE BEEN WARNED!'
+print 'THIS IS NOT MEANT FOR PRODUCTIVE USAGE!!! YOU HAVE BEEN WARNED!!!'
 print 'Using file "config/locales/template.yml"'
-template_yml = open('config/locales/template_short.yml')
+template_yml = codecs.open('config/locales/template_short.yml', 'r', 'utf-8')
 arbeit()
