@@ -84,12 +84,12 @@
 		</a>
 <a href="/home/about">
   <% if ((params[:controller] == "home" and params[:action] != "home") and (params[:controller] == "home" and params[:action] != "new_repository")) or params[:controller] == "articles" %>
- <%= image_tag("/images/navi_communtuon.png", :border => '0', :alt=>t(:view_layouts_application_28),:title=>t(:view_layouts_application_28))  %>
+ <%= image_tag("/images/navi_communtuon.png", :border => '0', :alt=>t(:navigation_communtu),:title=>t(:navigation_communtu))  %>
 
  		<div class="navi_drei">	<%= t(:view_layouts_application_25) %></div>
 		</a>
   <% else %>
-<%= image_tag("/images/navi_communtu.png", :border => '0', :alt=>t(:view_layouts_application_28),:title=>t(:view_layouts_application_28))  %>	
+<%= image_tag("/images/navi_communtu.png", :border => '0', :alt=>t(:navigation_communtu),:title=>t(:navigation_communtu))  %>	
  			<div class="navi_drei"><%= t(:view_layouts_application_25) %></div>
 		</a>
 <% end %>

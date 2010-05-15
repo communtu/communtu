@@ -42,12 +42,19 @@ def ask_string(string):
     string.remove(newkey)
     oldkey_temp = string
     edit_files(oldkey_temp, newkey)
+    update_template()
     
 def edit_files(oldkey, newkey):
     '''Using "sed" to remove oldkey from source files.'''
     for item in oldkey:
         oldkey = item
         sed = 'find app lib -name "*rb" -exec sed -i \'s/t(:' + oldkey + '\([^:alnum:_]\)/t(:' + newkey + '\\1/g\' {} \;'
+        print 'These files will be changed:\n'
+        os.system('grep --include=\'*rb\' "' + oldkey + '" ./app -r')
+        if raw_input('\nIs this ok? y/n ') == 'n':
+            break
+        else:
+            pass
         os.system(sed)
         edit_template(item)
     print '----------'
@@ -93,5 +100,4 @@ def update_template():
 print 'Using file "config/locales/template.yml"'
 template_yml = open('config/locales/template.yml')
 file_processing()
-update_template()
 print 'Exit'

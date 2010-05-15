@@ -1,15 +1,17 @@
 de:
-  about_us: Über uns
+  Kommentar: 'Kommentar: '
+  about_us: "Über uns"
   achtung: "Achtung! bei Communtu erst in Kürze verfügbar."
-  add_comment: "Kommentar hinzufügen"
   add: "hinzufügen"
+  add_comment: "Kommentar hinzufügen"
   add_sources: "Quellen hinzufügen"
   add_to_bundle: "zum Bündel hinzufügen"
-  advanced_user: "Ich bin fortgeschrittener Benutzer und will auch unfertige Versionen von Ubuntu sehen."
+  advanced_user: Ich bin fortgeschrittener Benutzer und will auch unfertige Versionen
+    von Ubuntu sehen.
   allgemeinbildung: Allgemeinbildung e.V.
   an: An
-  announce: announce
   anmelden: Anmelden
+  announce: announce
   architecture_successful: Architektur erfolgreich angelegt.
   architecture_successful_updated: Architektur erfolgreich aktualisiert.
   architectures: Architekturen
@@ -17,48 +19,57 @@ de:
   are_you_sure: Bist du sicher?
   back: "zurück"
   based_on_bundle: "basiert auf Bündel:"
-  being_created: "wird erstellt"
+  being_created: wird erstellt
   blog: Der Blog von Communtu
   blog_2: Blog
-  blog_link: "http://communtu.wordpress.com"
+  blog_link: http://communtu.wordpress.com
+  bundel_information_edit: "Bündel Informationen bearbeiten"
   bundle: "Bündel"
-  bundle_by_owner: erstellte Bündel
+  bundle_by_owner: "erstellte Bündel"
   bundle_editor: "Bündel-Editor"
+  bundle_open_new_window: "Bündel wird im neuen Fenster geöffnet."
   bundle_to_livecd: "LiveCD/DVD aus Bündel <i>{{name}}</i> erstellen"
-  bundles_with_missing_debs: Bündel mit fehlenden deb-Builds
-  bundles_with_missing_packages: Bündel mit Paketen, die bei Übergang auf neue Distribution fehlen (ggf. durch andere ersetzen)
-  bundel_information_edit: Bündel Informationen bearbeiten
-  bundle_open_new_window: Bündel wird im neuen Fenster geöffnet.
+  bundles_with_missing_debs: "Bündel mit fehlenden deb-Builds"
+  bundles_with_missing_packages: "Bündel mit Paketen, die bei Übergang auf neue\
+    \ Distribution fehlen (ggf. durch andere ersetzen)"
   by_bank_transfer: "per Überweisung"
-  cannot_migrate: "Kann nur migrieren, wenn die Distribution frisch ist"
-  cant_debianized: "Bitte gib dem Bündel einen englischen Titel und eine englische Beschreibung."
-  category_exists: "Eine Kategorie mit diesem Namen existiert schon"
-  category_with_colon: "Kategorie:"
+  cannot_migrate: Kann nur migrieren, wenn die Distribution frisch ist
+  cant_debianized: "Bitte gib dem Bündel einen englischen Titel und eine englische\
+    \ Beschreibung."
+  category_exists: Eine Kategorie mit diesem Namen existiert schon
+  category_with_colon: 'Kategorie:'
   category_without_colon: Kategorie
   cd_already_created: Die LiveCD/DVD wurde bereits erstellt.
-  cd_being_created:  Die LiveCD/DVD wird erstellt.
-  cd_donate: Die CD/DVD-Erstellung braucht viel Server-Kapazität. Bitte {{donate_link}}, um dieses Angebot weiter zu ermöglichen.
+  cd_being_created: Die LiveCD/DVD wird erstellt.
+  cd_donate: "Die CD/DVD-Erstellung braucht viel Server-Kapazität. Bitte {{donate_link}},\
+    \ um dieses Angebot weiter zu ermöglichen."
   cd_failed: "Fehlgeschlagen - wir kümmern uns darum"
-  change: ändern
+  change: "ändern"
   change_passwd: "Passwort ändern"
   chat: Chat
   chat_channel: de-communtu
-  choose_bundle: Bündel auswählen 
+  choose_bundle: "Bündel auswählen"
+  choose_category: "Bitte auswählen"
   choose_parent: "Wähle einen Parent aus!"
   community_title: ubuntuusers
   compose_new_message: neue Nachricht schreiben
   confirm_new_passwd: "Neues Passwort bestätigen"
-  conny_picture: "Portrait von Conny Communtu"
+  conny_picture: Portrait von Conny Communtu
   continue: Weiter
   controller_accounts_1: Dein Benutzerkonto wurde aktiviert! Du kannst dich nun einloggen.
-  controller_accounts_2: Aktivierungs-Code nicht gefunden. Bitte versuche, ein neues Benutzerkonto anzulegen.
-  controller_accounts_4: Bein Benutzerkontoutzerkonto wurde bereits aktiviert. Du kannst dich nun anmelden.
+  controller_accounts_2: Aktivierungs-Code nicht gefunden. Bitte versuche, ein neues
+    Benutzerkonto anzulegen.
+  controller_accounts_4: Bein Benutzerkontoutzerkonto wurde bereits aktiviert. Du
+    kannst dich nun anmelden.
   controller_accounts_5: Passwort aktualisiert.
-  controller_accounts_6: "Es ist ein Fehler aufgetreten. Das Passwort wurde nicht geändert."
+  controller_accounts_6: "Es ist ein Fehler aufgetreten. Das Passwort wurde nicht\
+    \ geändert."
   controller_accounts_8: Dein altes Passwort war inkorrekt.
   controller_admins_0: Administratorbereich
   controller_application_0: "Diese Funktion ist für Gäste nicht verfügbar."
-  controller_cart_2: "Folgende Pakete wurden nicht gefunden: {{message}}<br> Bitte suche die Repositories heraus, die die Pakete enthalten, und <a href=\"{{url}}\">schlage sie zur Aufnahme in Communtu vor.</a>"
+  controller_cart_2: 'Folgende Pakete wurden nicht gefunden: {{message}}<br> Bitte
+    suche die Repositories heraus, die die Pakete enthalten, und <a href="{{url}}">schlage
+    sie zur Aufnahme in Communtu vor.</a>'
   controller_categories_0: Kategorien
   controller_categories_2: Kategorie erzeugt.
   controller_categories_3: Kategorie aktualisiert.
@@ -72,32 +83,47 @@ de:
   controller_distributions_2: Distribution aktualisiert.
   controller_home_1: "Die E-Mail wurde an uns gesendet. Vielen Dank für deine Nachricht."
   controller_home_2: Wir werden uns per E-Mail bei dir melden.
-  controller_home_3: Das sieht nicht nach einer Liste von Ubuntu-Paketen aus... <br />Die Paketliste muss einen Paketnamen pro Zeile enthalten
-  controller_home_4: Es muss eine Datei mit der Paketliste (ein Paketname pro Zeile) angegeben werden
-  controller_home_5: "Wir haben deinen Vorschlag erhalten und werden dich informieren, ob und wann wir das vorgeschlagene Repository aufnehmen werden."
-  controller_messages_0: "Ursprüngliche Nachricht von {{user}} am {{datum}}  \n  \n"
+  controller_home_3: Das sieht nicht nach einer Liste von Ubuntu-Paketen aus... <br
+    />Die Paketliste muss einen Paketnamen pro Zeile enthalten
+  controller_home_4: Es muss eine Datei mit der Paketliste (ein Paketname pro Zeile)
+    angegeben werden
+  controller_home_5: Wir haben deinen Vorschlag erhalten und werden dich informieren,
+    ob und wann wir das vorgeschlagene Repository aufnehmen werden.
+  controller_messages_0: "Ursprüngliche Nachricht von {{user}} am {{datum}}  \n\
+    \  \n"
   controller_metapackages_11: "Konnte Paket nicht aus Bündel entfernen."
   controller_metapackages_15: "<option value='2'>Veröffentlichen<option/>"
   controller_metapackages_2: "Dieser Bündel-Name ist bereits vergeben!"
   controller_metapackages_3: Die Beschreibung darf nicht leer sein
-  controller_metapackages_4: "Bündel gespeichert. Es dauert ein paar Minuten, bis es auch als Metapaket verfügbar ist. "
+  controller_metapackages_4: "Bündel gespeichert. Es dauert ein paar Minuten, bis\
+    \ es auch als Metapaket verfügbar ist. "
   controller_metapackages_6: "Dieser Bündel-Name ist bereits vergeben<br>"
   controller_metapackages_7: Es muss eine Version angegeben werden (z.B. 0.1)<br>
   controller_metapackages_8: "Bei Anderungen muss die Version größer werden<br>"
   controller_metapackages_9: Die Beschreibung darf nicht leer sein<br>
-  controller_metapackages_cannot_destroy: Veröffentlichte Bündel können nicht gelöscht werden.
-  controller_metapackages_conflicts: Das Bündel enthält Pakete, die in Konflikt zueinander stehen!
-  controller_metapackages_debianizing: Das Bündel wird gerade als Metapaket erzeugt und hochgeladen. Dies dauert ein paar Minuten.
-  controller_metapackages_no_renaming: Veröffentlichte Bündel können nicht umbenannt werden.
-  controller_metapackages_no_save: Das Bündel enthält Konflikte und kann deshalb nicht als Metapaket gespeichert werden.
-  controller_metapackages_not_changed: Das Bündel wurde schon als Metapaket erzeugt und hochgeladen.
-  controller_metapackages_reset: Bündel-Fehler manuell zurücksetzen (nach Behebung des Problems).
-  controller_metapackages_please_regenerate: Das Bündel wurde zurückgesetzt. Bitte die Version hochzählen und Metapaket neu erzeugen.
-  controller_metapackages_not_allowed: Nur der Eigentümer des Bündels darf diese Aktion ausführen.
-  controller_metapackages_bundle_not_found: Bündel nicht gefunden.
+  controller_metapackages_bundle_not_found: "Bündel nicht gefunden."
+  controller_metapackages_cannot_destroy: "Veröffentlichte Bündel können\
+    \ nicht gelöscht werden."
+  controller_metapackages_conflicts: "Das Bündel enthält Pakete, die in Konflikt\
+    \ zueinander stehen!"
+  controller_metapackages_debianizing: "Das Bündel wird gerade als Metapaket erzeugt\
+    \ und hochgeladen. Dies dauert ein paar Minuten."
+  controller_metapackages_no_renaming: "Veröffentlichte Bündel können nicht\
+    \ umbenannt werden."
+  controller_metapackages_no_save: "Das Bündel enthält Konflikte und kann deshalb\
+    \ nicht als Metapaket gespeichert werden."
+  controller_metapackages_not_allowed: "Nur der Eigentümer des Bündels darf\
+    \ diese Aktion ausführen."
+  controller_metapackages_not_changed: "Das Bündel wurde schon als Metapaket erzeugt\
+    \ und hochgeladen."
+  controller_metapackages_please_regenerate: "Das Bündel wurde zurückgesetzt.\
+    \ Bitte die Version hochzählen und Metapaket neu erzeugen."
+  controller_metapackages_reset: "Bündel-Fehler manuell zurücksetzen (nach Behebung\
+    \ des Problems)."
   controller_packages_1: Paket erzeugt.
   controller_packages_2: Paket aktualisiert.
-  controller_passwords_1: "Ein Link zum Andern des Passworts wurde an deine Email-Adresse geschickt."
+  controller_passwords_1: Ein Link zum Andern des Passworts wurde an deine Email-Adresse
+    geschickt.
   controller_passwords_2: Konnte keinen Benutzer mit dieser Email-Adresse finden.
   controller_passwords_5: Passwort darf nicht leer sein.
   controller_passwords_6: "Passwort geändert."
@@ -112,27 +138,37 @@ de:
   controller_sent_1: Benutzer existiert nicht
   controller_sent_2: Nachricht erfolgreich versendet
   controller_sessions_1: Du bist bereits angemeldet.
-  controller_sessions_3: "Deine hier registrierte Distribution wurde auf {{dist_old}} geändert, weil deine alte Distribution von Ubuntu (und daher auch von Communtu) nicht mehr unterstützt wird. Wir empfehlen für deinen Computer ein <a href='http://wiki.ubuntuusers.de/Upgrade'>Upgrade</a> auf {{dist_new}}."
+  controller_sessions_3: "Deine hier registrierte Distribution wurde auf {{dist_old}}\
+    \ geändert, weil deine alte Distribution von Ubuntu (und daher auch von Communtu)\
+    \ nicht mehr unterstützt wird. Wir empfehlen für deinen Computer ein <a\
+    \ href='http://wiki.ubuntuusers.de/Upgrade'>Upgrade</a> auf {{dist_new}}."
   controller_sessions_4: Du wurdest abgemeldet.
-  controller_sessions_5: Dein Benutzername oder Passwort ist falsch. Bitte ggf. unten auf "Registrieren" klicken.
-  controller_sessions_6: Dein Benutzerkonto wurde noch nicht aktiviert. Der Aktivierungscode wurde dir per Email zugeschickt.
+  controller_sessions_5: Dein Benutzername oder Passwort ist falsch. Bitte ggf. unten
+    auf "Registrieren" klicken.
+  controller_sessions_6: Dein Benutzerkonto wurde noch nicht aktiviert. Der Aktivierungscode
+    wurde dir per Email zugeschickt.
   controller_sessions_7: "Dein Benutzerkonto wurde deaktiviert oder gelöscht."
+  controller_suggestion_1: "Um etwas installieren zu können, musst du zunächst\
+    \ etwas auswählen. Speichern nicht vergessen!"
   controller_suggestion_11: "Paketquellen hinzufügen"
   controller_suggestion_12: "Folgende Paketquellen werden hinzugefügt"
   controller_suggestion_15: Pakete installieren
   controller_suggestion_16: Folgende Pakete werden installiert
-  controller_suggestion_1: "Um etwas installieren zu können, musst du zunächst etwas auswählen. Speichern nicht vergessen!"
-  controller_suggestion_2: "Quellen und Schluessel hinzufuegen fuer Benutzer "
-  controller_suggestion_4: "Quellen und Schluessel hinzufuegen fuer Buendel "
-  controller_suggestion_6: "Quellen und Schluessel hinzufuegen fuer Paket "
-  controller_suggestion_8: "Ubuntu-Nachinstallation fuer Benutzer "
+  controller_suggestion_2: 'Quellen und Schluessel hinzufuegen fuer Benutzer '
+  controller_suggestion_4: 'Quellen und Schluessel hinzufuegen fuer Buendel '
+  controller_suggestion_6: 'Quellen und Schluessel hinzufuegen fuer Paket '
+  controller_suggestion_8: 'Ubuntu-Nachinstallation fuer Benutzer '
+  controller_users_1: "Danke für die Registrierung bei Communtu! Du kannst dich\
+    \ jetzt anmelden."
   controller_users_10: "Benutzer gelöscht"
   controller_users_11: "Es gab ein Problem mit der Löschung."
   controller_users_12: Benutzer aktiviert
   controller_users_13: Es gab ein Problem mit der Aktivierung dieses Benutzers.
-  controller_users_1: "Danke für die Registrierung bei Communtu! Du kannst dich jetzt anmelden."
   controller_users_2: Es gab ein Problem mit der Registrierung.
-  controller_users_3: "Du wurdest als Nutzer {{anonymous_user}} mit Kennwort {{anonymous_user}} eingeloggt. Bitte ggf. oben rechts auf Nutzer {{anonymous_user}} klicken und in ein dauerhaftes Nutzerkonto umwandeln; ansonsten wird das Konto nach einem Tag wieder gelöscht."
+  controller_users_3: "Du wurdest als Nutzer {{anonymous_user}} mit Kennwort {{anonymous_user}}\
+    \ eingeloggt. Bitte ggf. oben rechts auf Nutzer {{anonymous_user}} klicken und\
+    \ in ein dauerhaftes Nutzerkonto umwandeln; ansonsten wird das Konto nach einem\
+    \ Tag wieder gelöscht."
   controller_users_4: Es gab ein Problem mit dem Gastzugang.
   controller_users_5: Benutzerdaten aktualisiert
   controller_users_6: "Benutzerdaten übernommen und Benutzerkonto dauerhaft gemacht."
@@ -143,46 +179,52 @@ de:
   creation_failed: Erzeugung fehlgeschlagen
   creation_in_progress: wird gerade erstellt
   creation_successful: Erstellung war erfolgreich
-  deb_generation_in_background: Debs werden im Hintergrund erzeugt (ggf. Browser-Ansicht aktualisieren)
-  debian_section: "Debian-Section:"
+  deb_generation_in_background: Debs werden im Hintergrund erzeugt (ggf. Browser-Ansicht
+    aktualisieren)
+  debian_section: 'Debian-Section:'
   delete: "Löschen"
-  description: "Beschreibung"
-  description_with_colon: "Beschreibung:"
+  description: Beschreibung
+  description_with_colon: 'Beschreibung:'
   detailed_view: zur Detailansicht
   direct_indirect_covered_packages: Direkt und indirekt enthaltene Pakete
-  direct_indirect_covered_packages_warning: "Achtung! Dauert lange und sollte nur vom Admin-Server (communtu.de:3006) aus aufgerufen werden"
+  direct_indirect_covered_packages_warning: Achtung! Dauert lange und sollte nur vom
+    Admin-Server (communtu.de:3006) aus aufgerufen werden
   discuss: discuss
   distribution: Distribution
   donate: spende
   donation_possibility: "Spendenmöglichkeit"
-  donation_purpose: "Verwendungszweck: Communtu"
+  donation_purpose: 'Verwendungszweck: Communtu'
   donation_receipt: Spendenbescheinigung kann ausgestellt werden.
   download: herunterladen
   edit: Bearbeiten
   edit_architecture: Architektur bearbeiten
   edit_press_archiv: Pressearchiv bearbeiten
   eg: z.B.
-  email_with_colon: "E-Mail: "
+  email_with_colon: 'E-Mail: '
   email_without_colon: E-Mail
-  english_description: "Englische Beschreibung:"
-  english_name: "Englischer Name:"
-  errors: Fehler
+  english_description: 'Englische Beschreibung:'
+  english_name: 'Englischer Name:'
   error_no_attachement: "Du hast keine Datei ausgewählt. Der Vorgang wurde abgebrochen."
-  exact: "Exakten Begriff finden:"
+  errors: Fehler
+  exact: 'Exakten Begriff finden:'
   failed_live_cds: Fehlgeschlagene LiveCDs/DVDs
   feedback: Kommentar
-  fine_selection: "Feinauswahl"
-  first_sync_repos: "Bitte erst die Repositories synchronisieren. Dies geschieht normalerweise automatisch innerhalb von einer Woche. Achtung: an dieser Stelle wird nur geprüft, ob überhaupt etwas synchronisiert wurde, nicht, ob der Prozess fertig ist."
+  fine_selection: Feinauswahl
+  first_sync_repos: "Bitte erst die Repositories synchronisieren. Dies geschieht normalerweise\
+    \ automatisch innerhalb von einer Woche. Achtung: an dieser Stelle wird nur geprü\
+    ft, ob überhaupt etwas synchronisiert wurde, nicht, ob der Prozess fertig ist."
   four_and_fourty_letters: Zwischen 4 und 40 Zeichen
-  generate_all_debs_for_bundle: Alle debs für das Bündel erzeugen
+  generate_all_debs_for_bundle: "Alle debs für das Bündel erzeugen"
   generate_cd: LiveCD/DVD neu erstellen
   gpg_key: "GPG Schlüssel (optional): "
   headline: macht Ubuntu-Installationen einfach
   health_status: Gesundheitsstatus
   hello: Herzlich Willkommen
+  help_translation: "Hilfe bei der Übersetzung - Schreib uns eine E-Mail"
   helper_distributions_0: free
-  helper_distributions_10: " und bearbeiten"
-  helper_distributions_11: "<br />Distribution "
+  helper_distributions_1: non-free
+  helper_distributions_10: ' und bearbeiten'
+  helper_distributions_11: '<br />Distribution '
   helper_distributions_12: bearbeiten
   helper_distributions_13: "löschen"
   helper_distributions_15: Wikiseite bei ubuntuusers
@@ -190,65 +232,78 @@ de:
   helper_distributions_17: free und aus den Community Paketquellen
   helper_distributions_18: free und aus Third Party Paketquellen
   helper_distributions_19: non-free und aus den main Paketquellen
-  helper_distributions_1: non-free
+  helper_distributions_2: Repository synchronisieren
   helper_distributions_20: non-free und aus den Community Paketquellen
   helper_distributions_21: non-free und aus Third Party Paketquellen
-  helper_distributions_2: Repository synchronisieren
   helper_distributions_6: "Repository löschen"
-  helper_distributions_8: "Quellen anzeigen"
-  help_translation: "Hilfe bei der Übersetzung - Schreib uns eine E-Mail"
+  helper_distributions_8: Quellen anzeigen
   homepage: Startseite
   imprint: Impressum
-  invisible_distribution: Unsichtbare Distribution
   inbox: Posteingang
   include_programs_bundel: "Enthaltende Programme/Bündel:"
+  install: Installieren
   install2: installieren
   install_by_default: "Standardmäßig installieren:"
+  install_package_sources_first: "Paket installieren. Bitte ggf. vorher die Quellen\
+    \ hinzufügen."
   installing_using_script: installieren mittels Skript
-  install: Installieren
-  install_package_sources_first: "Paket installieren. Bitte ggf. vorher die Quellen hinzufügen."
   invalid_activation_code_entered: "Ungültiger Anderungscode eingegeben."
-  invalid_activation_code_please_check_again: "Ungültiger Anderungscode. Bitte den Code prüfen und nochmals versuchen. (Vielleicht hat dein Email-Programm einen Zeilenumbruch eingefügt?)"
-  Kommentar: "Kommentar: "
+  invalid_activation_code_please_check_again: "Ungültiger Anderungscode. Bitte\
+    \ den Code prüfen und nochmals versuchen. (Vielleicht hat dein Email-Programm\
+    \ einen Zeilenumbruch eingefügt?)"
+  invisible_distribution: Unsichtbare Distribution
   kommentieren: Kommentieren
   kontodaten: Konto 172 9375, Sparkasse Bremen, BLZ 290 501 01
   kurzname: Kurzname
-  last_user: Wir begrüßen unseren zuletzt neu-registrierten Nutzer
-  lib_system_0: "Du musst eingeloggt sein, um dieses Feature zu benutzen. Geht auch als \"Gast\"."
+  last_user: "Wir begrüßen unseren zuletzt neu-registrierten Nutzer"
+  lib_system_0: Du musst eingeloggt sein, um dieses Feature zu benutzen. Geht auch
+    als "Gast".
   lib_system_1: "Du hast keine Berechtigung für diese Aktion."
   lib_system_2: http://www.communtu.de
-  lib_utils_0: "System-Befehl schlug fehl: "
-  licence: "Lizenztyp:"
-  link_community: "http://www.ubuntuusers.de"
-  link_community_title: "Externer Link: zu den Seiten von ubuntuusers"
-  livecd: "Live-CD/DVD"
-  livecd_communtu_name: "Namen mit communtu- sind für LiveCDs/DVDs reserviert, die aus Bündeln erstellt werden"
-  livecd_create: "Die Live-CD/DVD wird jetzt erstellt. Wir benachrichtigen dich per Email, sobald sie fertig ist."
-  livecd_created_by: "Live-CD/DVD erstellt von: "
+  lib_utils_0: 'System-Befehl schlug fehl: '
+  licence: 'Lizenztyp:'
+  link_community: http://www.ubuntuusers.de
+  link_community_title: 'Externer Link: zu den Seiten von ubuntuusers'
+  livecd: Live-CD/DVD
+  livecd_communtu_name: "Namen mit communtu- sind für LiveCDs/DVDs reserviert,\
+    \ die aus Bündeln erstellt werden"
+  livecd_create: Die Live-CD/DVD wird jetzt erstellt. Wir benachrichtigen dich per
+    Email, sobald sie fertig ist.
+  livecd_created_by: 'Live-CD/DVD erstellt von: '
   livecd_email: "Communtu: Benachrichtigung über Live-CD/DVD"
-  livecd_email_failed: "Communtu: Erstellung der Live-CD/DVD fehlgeschlagen"
-  livecd_email_body: ", die Live-CD/DVD wurde erstellt! Folge dem Link: "
-  livecd_email_body_failed: ", die Live-CD/DVD {{name}} konnte leider nicht erstellt werden. Wir kümmern uns um das Problem."
-  livecd_existing_name: "Dieser Name ist bereits vergeben"
+  livecd_email_body: ', die Live-CD/DVD wurde erstellt! Folge dem Link: '
+  livecd_email_body_failed: ", die Live-CD/DVD {{name}} konnte leider nicht erstellt\
+    \ werden. Wir kümmern uns um das Problem."
+  livecd_email_failed: 'Communtu: Erstellung der Live-CD/DVD fehlgeschlagen'
+  livecd_existing_name: Dieser Name ist bereits vergeben
   livecd_image: CD-Image
-  livecd_image_link: "http://wiki.ubuntuusers.de/CD-Images"
-  livecd_incorrect_name: "Der Name der LiveCD/DVD darf nur aus Buchstaben, Zahlen, _ und - bestehen"
-  livecd_message: "Über eine Live-CD kann die Software sowohl ausprobiert als
-auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} erstellt, in Form einer iso-Datei, die du dann brennen kannst. Zum Brennen benötigst du eine CD, falls du viel Software ausgewählt hast, eine DVD.<br /><br /> Die Erstellung des Images dauert eine gewisse Zeit. Du wirst per Email benachrichtigt, sobald das Image fertig ist. Bitte achte darauf, dass in deinen Benutzereinstellungen eine gültige Email-Adresse angegeben ist."
-  livecd_previous_cds: "Bisher erstellte Live-CDs/DVDs:"
-  livecd_start: "Live-CD/DVD erstellen"
-  livecd_start_message: "Hier kannst du eine Live-CD/DVD erstellen lassen, die die von dir ausgewählte Software enthält. Du hast folgende Bündel ausgewählt:"
+  livecd_image_link: http://wiki.ubuntuusers.de/CD-Images
+  livecd_incorrect_name: Der Name der LiveCD/DVD darf nur aus Buchstaben, Zahlen,
+    _ und - bestehen
+  livecd_message: "Über eine Live-CD kann die Software sowohl ausprobiert als auch\
+    \ installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} erstellt,\
+    \ in Form einer iso-Datei, die du dann brennen kannst. Zum Brennen benötigst\
+    \ du eine CD, falls du viel Software ausgewählt hast, eine DVD.<br /><br />\
+    \ Die Erstellung des Images dauert eine gewisse Zeit. Du wirst per Email benachrichtigt,\
+    \ sobald das Image fertig ist. Bitte achte darauf, dass in deinen Benutzereinstellungen\
+    \ eine gültige Email-Adresse angegeben ist."
+  livecd_previous_cds: 'Bisher erstellte Live-CDs/DVDs:'
+  livecd_start: Live-CD/DVD erstellen
+  livecd_start_message: "Hier kannst du eine Live-CD/DVD erstellen lassen, die die\
+    \ von dir ausgewählte Software enthält. Du hast folgende Bündel ausgewä\
+    hlt:"
   logfile_extract: Auszug aus dem Logfile
-  mailinglist: "Mailinglisten:"
-  make_distribution_visible: Distribution sichtbar machen
+  mailinglist: 'Mailinglisten:'
   make_distribution_final: Distribution als stabil freigeben
+  make_distribution_visible: Distribution sichtbar machen
   match_ubuntu: "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
-  match_with_communtu: "Communtu - gemeinsam Ubuntu-Linux an individuelle Bedürfnisse anpassen"
-  metacart_choose: Füge Programme zu deinem Bündel hinzu.
+  match_with_communtu: "Communtu - gemeinsam Ubuntu-Linux an individuelle Bedü\
+    rfnisse anpassen"
+  metacart_choose: "Füge Programme zu deinem Bündel hinzu."
   migrate: Migrieren
-  migrate_bundles: Bündel von Vorgänger übernehmen
+  migrate_bundles: "Bündel von Vorgänger übernehmen"
+  migrate_repositories: "Repositories von Vorgänger übernehmen"
   migrate_repository: Repository migieren
-  migrate_repositories: Repositories von Vorgänger übernehmen
   missing_debs_for_bundle: "Fehlende debs für Bündel:"
   model_mailer_0: Herzlich Willkommen bei Communtu
   model_mailer_1: Anfrage per Formular
@@ -258,15 +313,17 @@ auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} er
   model_mailer_5: Vorschlag eines Repositorys
   model_message_0: Bitte einen Betreff angeben
   model_package_0: Freie Software
-  model_package_10: "Bei der Synchronisation des Repositories {{repo_name}} konnte das Paket {{package_name}} nicht gefunden werden."
+  model_package_1: "Frei+proprietär"
+  model_package_10: Bei der Synchronisation des Repositories {{repo_name}} konnte
+    das Paket {{package_name}} nicht gefunden werden.
   model_package_11: Konnte keine URL feststellen
-  model_package_12: "Inhalt von {{file}} entspricht nicht Repository-Syntax"
-  model_package_1: Frei+proprietär
+  model_package_12: Inhalt von {{file}} entspricht nicht Repository-Syntax
   model_package_2: Unbekannt
   model_package_6: <br> hat nicht das richtige Format
   model_package_7: "Konnte URL für {{repo}} nicht feststellen"
-  model_package_9: "Bei der Synchronisation des Repositories {{repo_name}} konnte kein PackageDistr-Eintrag für das Paket {{package_name}} gefunden werden."
-  model_package_could_not_read: "Konnte {{url}} nicht lesen"
+  model_package_9: "Bei der Synchronisation des Repositories {{repo_name}} konnte\
+    \ kein PackageDistr-Eintrag für das Paket {{package_name}} gefunden werden."
+  model_package_could_not_read: Konnte {{url}} nicht lesen
   model_package_need_not_update: "{{url}} hat sich nicht geändert"
   model_user_meta_tabz_0: "Meine Bündel"
   model_user_meta_tabz_1: "Alle veröffentlichten Bündel"
@@ -276,15 +333,17 @@ auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} er
   model_user_profile_tabz_1: Softwareauswahl
   model_user_profile_tabz_3: "Installation durchführen"
   model_user_profile_tabz_4: Voreinstellungen
-  more_about_sources: "(Mehr Informationen zum Thema Schlüssel und Quellen in den Faqs)"
-  name_of_livecd: "Name der LiveCD/DVD:"
-  name_with_colon: "Name: "
+  more_about_sources: "(Mehr Informationen zum Thema Schlüssel und Quellen in den\
+    \ Faqs)"
+  name_of_livecd: 'Name der LiveCD/DVD:'
+  name_with_colon: 'Name: '
   name_without_colon: Name
-  navigation_communtu: Navigation Communtu
   native: nur Ubuntu
-  natur_geist_und_technik: "Natur, Geist und Technik - Verein zur Förderung der Allgemeinbildung e.V."
-  new_article: Neuen Artikel anlegen
+  natur_geist_und_technik: "Natur, Geist und Technik - Verein zur Förderung der\
+    \ Allgemeinbildung e.V."
+  navigation_communtu: Navigation Communtu
   new_architecture: Neue Architektur
+  new_article: Neuen Artikel anlegen
   new_bundle: "Neues Bündel"
   new_category: Neue Kategorie
   new_derivative: Neues Derivat
@@ -293,59 +352,66 @@ auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} er
   new_packages: "Neu hinzugefügte Pakete: "
   new_passwd: Neues Passwort
   news: Aktuelles
-  no_admin: Du bist kein Administrator!
   no1: nein
-  no_cookies: Du hast deine Cookies deaktiviert. Zum Nutzen von Communtu sind diese erforderlich. Wir empfehlen dir, die Cookies wieder anzuschalten.
-  no_packet_information_found: "Es konnten keine Angabe zu Paketinformationen getroffen werden."
-  no_save_database: "Die folgenden Pakete konnten nicht in der Datenbank gespeichert werden:"
+  no_admin: Du bist kein Administrator!
+  no_cookies: Du hast deine Cookies deaktiviert. Zum Nutzen von Communtu sind diese
+    erforderlich. Wir empfehlen dir, die Cookies wieder anzuschalten.
+  no_packet_information_found: Es konnten keine Angabe zu Paketinformationen getroffen
+    werden.
+  no_save_database: 'Die folgenden Pakete konnten nicht in der Datenbank gespeichert
+    werden:'
   none: Keine
-  not_accepted: Die eingegebene E-Mail-Adresse hat ungültige Formate oder ist unvollständig.
+  not_accepted: "Die eingegebene E-Mail-Adresse hat ungültige Formate oder ist\
+    \ unvollständig."
   not_logged_in: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
-  nothing_found_questionmark: "Nichts gefunden?"
-  offer_new_category: "Vorschlag einer neuen Kategorie"
-  order_number: "Sortiernummer (kleinste Zahl zu erst):"
-  package_list: zurück zur Paketliste
+  nothing_found_questionmark: Nichts gefunden?
+  offer_new_category: Vorschlag einer neuen Kategorie
+  order_number: 'Sortiernummer (kleinste Zahl zu erst):'
+  package_list: "zurück zur Paketliste"
   packages: Pakete
-  packages_for_ubuntu: Pakete für Ubuntu
+  packages_for_ubuntu: "Pakete für Ubuntu"
   participation: "Beteiligungsmöglichkeiten"
-  passwd_no_match: "Das neue Passwort stimmt nicht mit der Bestätigung überein."
   passwd: Passwort
-  path: "Pfad:"
-  predecessor: Vorgänger
+  passwd_no_match: "Das neue Passwort stimmt nicht mit der Bestätigung überein."
+  path: 'Pfad:'
+  predecessor: "Vorgänger"
   preliminary_distribution: "Vorläufige Distribution"
-  prepare_livecd: "LiveCD/DVD vorbereiten (script/remaster-getisos)"
-  prepare_livecd_contd: "bei jedem Pre-Release LiveCD/DVD neu vorbereiten (script/remaster-getisos)"
+  prepare_livecd: LiveCD/DVD vorbereiten (script/remaster-getisos)
+  prepare_livecd_contd: bei jedem Pre-Release LiveCD/DVD neu vorbereiten (script/remaster-getisos)
   press_archiv: Pressearchiv
-  press_archiv_editorial: Hier haben wir eine Auswahl von Artikeln aus der Presse über uns aufgelistet.
-  promote_chat: Du kannst gucken, ob sich gerade jemand von uns im Chat aufhält und mit uns über den Chat kommunizieren.
+  press_archiv_editorial: "Hier haben wir eine Auswahl von Artikeln aus der Presse\
+    \ über uns aufgelistet."
+  promote_chat: "Du kannst gucken, ob sich gerade jemand von uns im Chat aufhä\
+    lt und mit uns über den Chat kommunizieren."
   published: "veröffentlicht"
   questionmark_conny: Klick mich und sag mir, was dir unklar ist.
   register: Registrieren
-  repository_url: "Repository-URL: "
   repositories_incompletely_read: Repositories ohne Pakete (da nicht richtig eingelesen)
   repositories_without_packages: Repositories ohne Pakete (da Repositories leer)
-  rough_selection: "Grobauswahl"
+  repository_url: 'Repository-URL: '
+  rough_selection: Grobauswahl
   save: Speichern
   save_selection: Auswahl speichern
   search_package: Paket suchen
-  security_type: "Sicherheitstyp:"
+  security_type: 'Sicherheitstyp:'
   senden: Abschicken
   settings: Einstellungen
   show: Anzeigen
   sources: Quellen
-  spam_user_delete: Alle Spam-User gelöscht.
+  spam_user_delete: "Alle Spam-User gelöscht."
   start: Start
   statistics: Aufrufstatistik
-  steps_for_distribution_setup: Schritte für das Einrichten einer neuen Distribution (bitte auf admin-System durchführen)
-  subject_with_colon: "Betreff: "
+  steps_for_distribution_setup: "Schritte für das Einrichten einer neuen Distribution\
+    \ (bitte auf admin-System durchführen)"
+  subject_with_colon: 'Betreff: '
   subject_without_colon: Betreff
-  subtype: "Subtyp:"
+  subtype: 'Subtyp:'
   superior_category: "Übergeordnete Kategorie"
   third_party: alle Anbieter
   to_chat: zum Chat
-  to_colon: "An:"
-  total_packages: "Pakete insgesamt: "
+  to_colon: 'An:'
   total_isos_size: "Gesamtgröße der isos: "
+  total_packages: 'Pakete insgesamt: '
   translation_file: "Url der Übersetzungsdatei (gz Datei):"
   trusted: Ubuntu+Community
   ubuntu_derivatives: Ubuntu-Derivate
@@ -354,545 +420,773 @@ auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} er
   url: Url
   used_in_bundles: "Wird bei Communtu in folgenden Bündeln benutzt:"
   username: Benutzername
-  videos: "Videos:"
+  videos: 'Videos:'
   view_accounts_edit_1: Altes Passwort
-  view_admins_load_packages_0: "Neue Pakete: "
+  view_admins_load_packages_0: 'Neue Pakete: '
   view_admins_show_0: Here should be an introduction to the admin area
-  view_admins_sync_all_1: "Fehler: Repositories konnten nicht synchronisiert werden"
+  view_admins_sync_all_1: 'Fehler: Repositories konnten nicht synchronisiert werden'
   view_admins_sync_all_2: Repositories synchronisiert
-  view_admins_sync_package_1: "Fehler: Repository konnte nicht synchronisiert werden"
+  view_admins_sync_package_1: 'Fehler: Repository konnte nicht synchronisiert werden'
   view_admins_sync_package_2: Repository synchronisiert
-  view_admins_sync_package_3: "Repository: "
-  view_admins_test_all_0: "Folgende Repositories konnten nicht gelesen werden:"
+  view_admins_sync_package_3: 'Repository: '
+  view_admins_test_all_0: 'Folgende Repositories konnten nicht gelesen werden:'
   view_admins_test_all_1: Alle Repositories wurden erreicht.
   view_cart__metacart_3: "Bündel aus Paketliste"
   view_cart_new_from_list_0: "Bündel aus einer Paketliste erstellen"
-  view_cart_new_from_list_1: "Hier kannst du ein Bündel aus einer vorhandenen Paketliste erstellen.  \
-    Die Liste muss in Form einter Textdatei vorliegen (plain text),  \
-    mit einem Paketnamen pro Zeile."
-  view_cart_new_from_list_2: Die Liste der auf deinem Computer installierten Pakete kannst du zum Beispiel mit
-  view_cart_new_from_list_3: "herausfinden. (Dazu muss das Paket {{debfoster}} installiert sein. Die erzeugte Liste enthält nur eine minimale Liste von (Meta-)Paketen, die notwendig ist, um deine Installation komplett wiederherzustellen.)"
+  view_cart_new_from_list_1: "Hier kannst du ein Bündel aus einer vorhandenen Paketliste\
+    \ erstellen.  Die Liste muss in Form einter Textdatei vorliegen (plain text),\
+    \  mit einem Paketnamen pro Zeile."
+  view_cart_new_from_list_2: Die Liste der auf deinem Computer installierten Pakete
+    kannst du zum Beispiel mit
+  view_cart_new_from_list_3: "herausfinden. (Dazu muss das Paket {{debfoster}} installiert\
+    \ sein. Die erzeugte Liste enthält nur eine minimale Liste von (Meta-)Paketen,\
+    \ die notwendig ist, um deine Installation komplett wiederherzustellen.)"
   view_cart_new_from_list_4: "Datei, die die Paketliste enthält, auswählen:"
   view_cart_new_from_list_5: Erstellen
-  view_cart_new_from_list_tip: "Tipp: eine große Liste kannst du auch zunächst mit einem Editor thematisch sortieren und die resultierenden Teillisten einzeln hier hochladen. Die entstehenden Bündel kannst du wiederum zu einem Bündel zusammenfassen. Dadurch entsteht ein besser strukturiertes Bündel."
+  view_cart_new_from_list_tip: "Tipp: eine große Liste kannst du auch zunächst\
+    \ mit einem Editor thematisch sortieren und die resultierenden Teillisten einzeln\
+    \ hier hochladen. Die entstehenden Bündel kannst du wiederum zu einem Bü\
+    ndel zusammenfassen. Dadurch entsteht ein besser strukturiertes Bündel."
   view_cart_update_0: "Bündel-Informationen anpassen"
   view_cart_update_1: "Bündel überschreiben, falls es existiert?"
-  view_cart_update_2: "Expertenlevel:"
+  view_cart_update_2: 'Expertenlevel:'
   view_cart_update_4: "Bündel veröffentlichen"
   view_categories_edit_0: Kategorie bearbeiten
   view_categories_edit_3: "Link für weitere Informationen"
-  view_categories_edit_4: "Hauptkategory, die auf der Startseite Download angezeigt wird:"
+  view_categories_edit_4: 'Hauptkategory, die auf der Startseite Download angezeigt
+    wird:'
   view_categories_index_0: "Kategorien-Übersicht"
   view_categories_index_12: Kategorienbaum anzeigen
-  view_categories_show_0: "Name:"
-  view_categories_show_2: "Weitere Informationen:"
+  view_categories_show_0: 'Name:'
+  view_categories_show_2: 'Weitere Informationen:'
   view_categories_show_3: "Übergeordnete Kategorie:"
   view_debs_index_0: Fehlgeschlagene oder laufende Deb-Generierungen
   view_debs_index_1: "Zurück zum Communtu-Menü"
-  view_debs_index_2: "  Keine fehlgeschlagenen Deb-Generierungen vorhanden! Glückwunsch!"
-  view_debs_index_3: "Alle fehlgeschlagenen debs erzeugen <b>Achtung: nur unter admin.communtu.de ausführen!</b>"
+  view_debs_index_2: "  Keine fehlgeschlagenen Deb-Generierungen vorhanden! Glü\
+    ckwunsch!"
+  view_debs_index_3: "Alle fehlgeschlagenen debs erzeugen <b>Achtung: nur unter admin.communtu.de\
+    \ ausführen!</b>"
   view_debs_index_5: Erzeugen
   view_derivatives_edit_0: Derivative bearbeiten
   view_derivatives_edit_1: "Programm für GUI-basiertes Sudo (z.B. gksudo, kdesudo)"
   view_derivatives_edit_2: "Programm für GUI-Dialoge (z.B. zenity, kdialog)"
   view_derivatives_index_0: Derivate auflisten
-  view_derivatives_show_1: "Sudo-Programm:"
-  view_derivatives_show_2: "Dialog-Programm:"
-  view_derivatives_show_3: "Icon file:"
+  view_derivatives_show_1: 'Sudo-Programm:'
+  view_derivatives_show_2: 'Dialog-Programm:'
+  view_derivatives_show_3: 'Icon file:'
   view_distributions_edit_0: Distribution bearbeiten
   view_distributions_index_0: "Verfügbare Ubuntu-Versionen"
-  view_distributions_show_0: "Repositories:"
+  view_distributions_show_0: 'Repositories:'
   view_distributions_show_1: "alles prüfen"
   view_distributions_show_2: alles synchronisieren
   view_distributions_show_3: sources.list einlesen
   view_distributions_show_4: "Repository hinzufügen"
-  view_distributions_show_8: "Vor dem Löschen einer Distribution müssen alle Benutzer, die sie nutzen, ausgeloggt sein! Bist du sicher?"
-  view_home_about_12: "<b>Bündel verwalten</b> auf der linken Seitenleiste gibt dir einen Überblick \
-    über die verfügbaren Bündel. \
-    Schließlich gibt es unter <b>Ubuntu-Versionen</b> eine Übersicht über die im System verfügbaren Ubuntu-Versionen (Distributionen)."
-  view_home_about_16: "Um Communtu nutzen zu können, kannst du dich registrieren. \
-    Das geht ganz einfach über den \"Registrieren\"-Knopf in der oberen Leiste."
+  view_distributions_show_8: "Vor dem Löschen einer Distribution müssen alle\
+    \ Benutzer, die sie nutzen, ausgeloggt sein! Bist du sicher?"
   view_home_about_1: Wozu Communtu?
-  view_home_about_2: "Ubuntu ist eine Linux-Distribution, die Linux einfach handhabbar und verständlich macht. \
-    Nach der Installation von Ubuntu mittels einer CD oder DVD ist dein Computer schon  \
-    gut ausgerüstet für Internet, Textverarbeitung und vieles andere."
-  view_home_about_3: "Es gibt aber auch viele Anwendungen, die erst noch nachinstalliert werden müssen, \
-    z.B. in den Bereichen Audio, Video und Grafik, damit dein Computer mit Ubuntu wirklich  \
-    benutzbar ist. Communtu macht diese Nachinstallation jetzt noch einfacher \
-    und hat zudem spezielle Bereiche für Einsteiger und Windows-Umsteiger."
+  view_home_about_12: "<b>Bündel verwalten</b> auf der linken Seitenleiste gibt\
+    \ dir einen Überblick über die verfügbaren Bündel. Schließlich\
+    \ gibt es unter <b>Ubuntu-Versionen</b> eine Übersicht über die im System\
+    \ verfügbaren Ubuntu-Versionen (Distributionen)."
+  view_home_about_16: "Um Communtu nutzen zu können, kannst du dich registrieren.\
+    \ Das geht ganz einfach über den \"Registrieren\"-Knopf in der oberen Leiste."
+  view_home_about_2: "Ubuntu ist eine Linux-Distribution, die Linux einfach handhabbar\
+    \ und verständlich macht. Nach der Installation von Ubuntu mittels einer CD\
+    \ oder DVD ist dein Computer schon  gut ausgerüstet für Internet, Textverarbeitung\
+    \ und vieles andere."
+  view_home_about_3: "Es gibt aber auch viele Anwendungen, die erst noch nachinstalliert\
+    \ werden müssen, z.B. in den Bereichen Audio, Video und Grafik, damit dein\
+    \ Computer mit Ubuntu wirklich  benutzbar ist. Communtu macht diese Nachinstallation\
+    \ jetzt noch einfacher und hat zudem spezielle Bereiche für Einsteiger und\
+    \ Windows-Umsteiger."
   view_home_about_4: Wie verwende ich Communtu?
   view_home_about_5: "Zum Starten wählst du <b>Download</b>."
-  view_home_about_6: "  (Diese erscheint erst nach einer "
-  view_home_about_7: "Dort kannst du deine Einstellungen bearbeiten. \
-    Unter den Voreinstellungen musst du zunächst eintragen, welche Ubuntu-Version du auf deinem PC installiert hast, \
-    außerdem, ob du unfreie Programme nutzen willst oder nicht. \
-    Zudem wählst du aus, für welche Aufgaben du deinen Ubuntu-PC nutzen willst. "
-  view_home_about_8: "Danach kannst du mit \"Speichern und feiner Auswählen\" noch einen detaillierteren Überblick \
-    über die installierten Bündel und Programme bekommen und die Auswahl auch noch verändern. \
-    Falls du dazu keine Lust oder Zeit hast, klicke einfach auf \"Speichern\". \
-    Dies führt dich zur Installations-Seite. \
-    Dort findest du einen Installationsknopf, mit dem die Ubuntu-Nachinstallation gestartet werden \
-    kann. Es dauert etwas, bis die Programme automatisch aus dem Internet geladen und installiert werden. Fertig ist der vielseitig einsetzbare Ubuntu-PC!"
-  view_home_about_9: "Wichtig: Man braucht schon eine schnelle Internet-Verbindung. Für Ubuntu-Nutzer, die noch ein Modem oder ähnliches \
-    nutzen, planen wir die Möglichkeit, automatisch CDs und DVDs zu erstellen."
+  view_home_about_6: '  (Diese erscheint erst nach einer '
+  view_home_about_7: "Dort kannst du deine Einstellungen bearbeiten. Unter den Voreinstellungen\
+    \ musst du zunächst eintragen, welche Ubuntu-Version du auf deinem PC installiert\
+    \ hast, außerdem, ob du unfreie Programme nutzen willst oder nicht. Zudem wä\
+    hlst du aus, für welche Aufgaben du deinen Ubuntu-PC nutzen willst. "
+  view_home_about_8: "Danach kannst du mit \"Speichern und feiner Auswählen\" noch\
+    \ einen detaillierteren Überblick über die installierten Bündel und Programme\
+    \ bekommen und die Auswahl auch noch verändern. Falls du dazu keine Lust oder\
+    \ Zeit hast, klicke einfach auf \"Speichern\". Dies führt dich zur Installations-Seite.\
+    \ Dort findest du einen Installationsknopf, mit dem die Ubuntu-Nachinstallation\
+    \ gestartet werden kann. Es dauert etwas, bis die Programme automatisch aus dem\
+    \ Internet geladen und installiert werden. Fertig ist der vielseitig einsetzbare\
+    \ Ubuntu-PC!"
+  view_home_about_9: "Wichtig: Man braucht schon eine schnelle Internet-Verbindung.\
+    \ Für Ubuntu-Nutzer, die noch ein Modem oder ähnliches nutzen, planen wir\
+    \ die Möglichkeit, automatisch CDs und DVDs zu erstellen."
   view_home_auth_error_0: Authentifizierungs-Fehler
-  view_home_auth_error_1: "Die Daten, die du an Communtu geschickt hast, konnten nicht korrekt authentifiziert werden. \
-    Bitte versuche, dich noch einmal anzumelden bzw. das entsprechende Formular noch einmal auszufüllen. Dies kann daher kommen, dass du deine Cookies nicht aktiviert hast."
-  view_home_beteiligung_10: Grafik
-  view_home_beteiligung_11: "Wir benötigen eine Person, die für das Projekt das Layout übernimmt. Dies bedeutet Grafiken einbinden und die Hauptverantwortung für das CSS übernehmen."
-  view_home_beteiligung_12: Programmierung
-  view_home_beteiligung_13: "Da wir viele Ideen für die Weiterentwicklung der Plattform haben, benötigen wir noch eine/n ProgrammiererIn. Idealerweise hast du schon Erfahrungen in Ruby on Rails sammeln können."
-  view_home_beteiligung_14: "Wir können dir auch helfen diese Programmiersprache zu lernen. Also melde dich einfach bei "
-  view_home_beteiligung_15: uns
+  view_home_auth_error_1: "Die Daten, die du an Communtu geschickt hast, konnten nicht\
+    \ korrekt authentifiziert werden. Bitte versuche, dich noch einmal anzumelden\
+    \ bzw. das entsprechende Formular noch einmal auszufüllen. Dies kann daher\
+    \ kommen, dass du deine Cookies nicht aktiviert hast."
   view_home_beteiligung_1: Anwenden der Plattform
-  view_home_beteiligung_2: "Als erstes würden wir uns natürlich freuen, wenn du Communtu nutzt, um eine Installation durchzuführen.  \
-    In unseren Bündeln gibt es schon ein paar ganz gut auf bestimmte Eigenschaften zugeschnittende Installationsvorschläge. \
-    Vielleicht ist ja etwas für dich dabei. Weiter gibt es dort auch die Möglichkeit die eigene Paketliste hochzuladen, damit diese auch anderen zur Verfügung gestellt wird. \
-    Dies ist die einfachste Form ein Bündel anzulegen. Du musst diese Paketliste aber auch nicht veröffentlichen. Du kannst Communtu auch einfach nur als Speicherort für deine Paketliste gebrauchen und dann auf anderen Rechnern dieses Bündel installieren."
+  view_home_beteiligung_10: Grafik
+  view_home_beteiligung_11: "Wir benötigen eine Person, die für das Projekt\
+    \ das Layout übernimmt. Dies bedeutet Grafiken einbinden und die Hauptverantwortung\
+    \ für das CSS übernehmen."
+  view_home_beteiligung_12: Programmierung
+  view_home_beteiligung_13: "Da wir viele Ideen für die Weiterentwicklung der Plattform\
+    \ haben, benötigen wir noch eine/n ProgrammiererIn. Idealerweise hast du schon\
+    \ Erfahrungen in Ruby on Rails sammeln können."
+  view_home_beteiligung_14: "Wir können dir auch helfen diese Programmiersprache\
+    \ zu lernen. Also melde dich einfach bei "
+  view_home_beteiligung_15: uns
+  view_home_beteiligung_2: "Als erstes würden wir uns natürlich freuen, wenn\
+    \ du Communtu nutzt, um eine Installation durchzuführen.  In unseren Bü\
+    ndeln gibt es schon ein paar ganz gut auf bestimmte Eigenschaften zugeschnittende\
+    \ Installationsvorschläge. Vielleicht ist ja etwas für dich dabei. Weiter\
+    \ gibt es dort auch die Möglichkeit die eigene Paketliste hochzuladen, damit\
+    \ diese auch anderen zur Verfügung gestellt wird. Dies ist die einfachste Form\
+    \ ein Bündel anzulegen. Du musst diese Paketliste aber auch nicht veröffentlichen.\
+    \ Du kannst Communtu auch einfach nur als Speicherort für deine Paketliste\
+    \ gebrauchen und dann auf anderen Rechnern dieses Bündel installieren."
   view_home_beteiligung_3: Wir brauchen die Informationen
-  view_home_beteiligung_4: |-
-    Du denkst, dass du schon vieles zu Open Source Programmen weisst? 
-    Dann schreibe deine Erfahrungen in den Kommentaren zu den Paketen oder hast du vielleicht ein tolles
-    Video zu dem Programm bei Youtube gesehen? Dann trag es doch gleich bei
-    den Videos zu den Programmen in Communtu ein.
+  view_home_beteiligung_4: "Du denkst, dass du schon vieles zu Open Source Programmen\
+    \ weisst? \nDann schreibe deine Erfahrungen in den Kommentaren zu den Paketen\
+    \ oder hast du vielleicht ein tolles\nVideo zu dem Programm bei Youtube gesehen?\
+    \ Dann trag es doch gleich bei\nden Videos zu den Programmen in Communtu ein."
   view_home_beteiligung_5: Umfrage zu beteiligen
-  view_home_beteiligung_7: "Wir benötigen Feedback. Wir möchten, dass Communtu von allen genutzt werden kann. Dazu benötigen wir Feedback. Hast du einen Fehler auf der Plattform gefunden? \
-    Findest du etwas unverständlich? Glaubst du, dass wir was besser machen können? Hast du eine Anregung für uns? \
-    Feedback ist uns Willkommen unter "
+  view_home_beteiligung_7: "Wir benötigen Feedback. Wir möchten, dass Communtu\
+    \ von allen genutzt werden kann. Dazu benötigen wir Feedback. Hast du einen\
+    \ Fehler auf der Plattform gefunden? Findest du etwas unverständlich? Glaubst\
+    \ du, dass wir was besser machen können? Hast du eine Anregung für uns?\
+    \ Feedback ist uns Willkommen unter "
   view_home_beteiligung_8: Mitarbeit
-  view_home_beteiligung_9: "Momentan benötigen wir noch Unterstützung bei der Entwicklung des Projektes bei folgenden zwei Tätigkeiten:"
-  view_home_cancel_0: |-
-    Communtu -
-     leider hat da etwas beim Spenden nicht funktioniert.
-  view_home_cancel_1: "Endweder versuchst du es noch einmal oder du nutzt die Möglichkeit per Überweisung"
+  view_home_beteiligung_9: "Momentan benötigen wir noch Unterstützung bei der\
+    \ Entwicklung des Projektes bei folgenden zwei Tätigkeiten:"
+  view_home_cancel_0: "Communtu -\n leider hat da etwas beim Spenden nicht funktioniert."
+  view_home_cancel_1: "Endweder versuchst du es noch einmal oder du nutzt die Mö\
+    glichkeit per Überweisung"
   view_home_contact_us_0: Feedbackformular
-  view_home_contact_us_1: "Hier hast du die Möglichkeit uns Anregungen und Kritik zu Communtu zu senden."
+  view_home_contact_us_1: "Hier hast du die Möglichkeit uns Anregungen und Kritik\
+    \ zu Communtu zu senden."
   view_home_contact_us_4: Senden
+  view_home_derivatives_1: 'Communtu setzt auf einer Ubuntu-Basisinstallation auf.
+    Es gibt nun eine ganze Reihe von '
   view_home_derivatives_10: http://wiki.ubuntuusers.de/Ubuntu_Studio
-  view_home_derivatives_11: " - Ubuntu Multimedie-Edition. \
-    Sie wird bei Communtu mitinstalliert, wenn du bei Audio, Film und/oder Grafik/Design \"erweitert\" anwählst."
-  view_home_derivatives_12: " stellt Multimedia-Paketquellen bereit, die aus rechtlichen Gründen nicht von Ubuntu selbst angeboten wird. Medibuntu wird bei Communtu mit berücksichtigt (z.B. bei Audio und Film)."
-  view_home_derivatives_13: " - der PC wird zum Videorekorder. Bei Film \"Freak\" auswählen, und es wird mitinstalliert. Empfohlen: CPU mit 2 GHz, 1024 MByte RAM, 10 GByte Festplattenplatz für das Frontend, 80+ GByte für das Backend, eine Grafikkarte mit 128 MByte RAM mit TV-Ausgang und eine unterstützte TV-Karte."
-  view_home_derivatives_14: " - Lernsoftware. Bei \"Bildung und Wissenschaft\" den Level \"erweitert\" auswählen, und es wird mitinstalliert."
+  view_home_derivatives_11: " - Ubuntu Multimedie-Edition. Sie wird bei Communtu mitinstalliert,\
+    \ wenn du bei Audio, Film und/oder Grafik/Design \"erweitert\" anwählst."
+  view_home_derivatives_12: " stellt Multimedia-Paketquellen bereit, die aus rechtlichen\
+    \ Gründen nicht von Ubuntu selbst angeboten wird. Medibuntu wird bei Communtu\
+    \ mit berücksichtigt (z.B. bei Audio und Film)."
+  view_home_derivatives_13: " - der PC wird zum Videorekorder. Bei Film \"Freak\"\
+    \ auswählen, und es wird mitinstalliert. Empfohlen: CPU mit 2 GHz, 1024 MByte\
+    \ RAM, 10 GByte Festplattenplatz für das Frontend, 80+ GByte für das Backend,\
+    \ eine Grafikkarte mit 128 MByte RAM mit TV-Ausgang und eine unterstützte TV-Karte."
+  view_home_derivatives_14: " - Lernsoftware. Bei \"Bildung und Wissenschaft\" den\
+    \ Level \"erweitert\" auswählen, und es wird mitinstalliert."
   view_home_derivatives_15: http://wiki.ubuntuusers.de/KDE
-  view_home_derivatives_16: " ist Ubuntu mit dem KDE-Desktop."
+  view_home_derivatives_16: ' ist Ubuntu mit dem KDE-Desktop.'
   view_home_derivatives_17: http://de.wikipedia.org/wiki/Linux_Mint
-  view_home_derivatives_18: " ist eine Ubuntu-Abspaltung mit eigener User-Community, die sich vor allem Benutzerfreundlichkeit auf die Fahnen schreibt. \
-    Linux Mint ähnelt Ubuntu sehr, hat aber viele Codes, z.B. für DVDs und MP3s, schon vorinstalliert. Diese Codecs gibt es allerdings auch bei Communtu, unter Unterhaltungsmedien. "
-  view_home_derivatives_1: "Communtu setzt auf einer Ubuntu-Basisinstallation auf. \
-    Es gibt nun eine ganze Reihe von "
-  view_home_derivatives_20: "Automatix war eine Installationshilfe, die sich großer Beliebtheit erfreute (sie wurde sogar von der New York Times empfohlen), die aber nicht ganz den Ubuntu-Programmierstandards entsprach und inzwischen nicht mehr weiterentwickelt wird. "
-  view_home_derivatives_21: "Über Communtu nachinstallierbare Derivate, sinnvollerweise auf einer Xfce-basierten Installation (z.B. Xubuntu) aufzusetzen:"
-  view_home_derivatives_22: " - orient an BeOS, setzt auf Schnelligkeit, Kompatibilität mit alten Rechnern und einfache Bedienung. CPU mit mindestens 200 MHZ \
-    128 MB RAM (zum Betrieb, zur Installation werden 192 MB RAM benötigt); \
-    2 GB freier Festplattenplatz (Empfohlen: 4 GB oder mehr); \
-    16 MB Grafikkarte (Empfohlen: Intel GMA 9xx). "
-  view_home_derivatives_24: "Derivate, die mit der Derivats-eigenen Installations-CD installiert werden sollten:"
-  view_home_derivatives_25: http://wiki.ubuntuusers.de/Xfce
-  view_home_derivatives_26: " - mit dem schlanken Xfce als grafischer Oberfläche - besonders für ältere Rechner geeignet: 128 MByte Arbeitsspeicher und 1,5 GB auf der Festplatte reichen aus. Sollte von CD installiert werden, um wirklich eine schlanke Installation zu haben. Nachinstallationen mit Communtu möglich."
-  view_home_derivatives_27: http://de.wikipedia.org/wiki/LinuxMCE
-  view_home_derivatives_28: " - damit wird Ubuntu zum "
-  view_home_derivatives_29: Fernsehcomputer
+  view_home_derivatives_18: " ist eine Ubuntu-Abspaltung mit eigener User-Community,\
+    \ die sich vor allem Benutzerfreundlichkeit auf die Fahnen schreibt. Linux Mint\
+    \ ähnelt Ubuntu sehr, hat aber viele Codes, z.B. für DVDs und MP3s, schon\
+    \ vorinstalliert. Diese Codecs gibt es allerdings auch bei Communtu, unter Unterhaltungsmedien. "
   view_home_derivatives_2: Ubuntu-Derivaten
-  view_home_derivatives_30: http://de.wikipedia.org/wiki/Home_Theater_Personal_Computer
-  view_home_derivatives_31: ". Aufgrund der notwendigen Treiberinstallation sollte Linux MCE direkt installiert werden, Communtu kann dann aber für die Installation weiterer Software genutzt werden."
-  view_home_derivatives_32: " ist ein Ubuntu-Derivat komplett aus freier Software. Nur für erfahrene Nutzer geeignet. Sollte mit der Gobuntu-CD installiert werden, damit es auch wirklich nur freie Software ist. Nachinstallationen mit Communtu möglich, sinnvollerweise sollten dann im Nutzerprofil \"freie Software\" angewählt werden. \
-    Dies Derivate ist in der Version 8.04 erhältlich und wird nicht weiterentwickelt."
-  view_home_derivatives_33: http://de.wikipedia.org/wiki/GNU-Varianten#Nexenta_OS
-  view_home_derivatives_34: " - ersetzt den Linux-Kern durch OpenSolaris. Stellt nur eine minimale Basis an Anwendungen bereit. Die Installation weiterer Pakete bleibt dem Benutzer überlassen; hierfür kann Communtu genutzt werden."
-  view_home_derivatives_35: "Es gibt noch weitere Derivate zu denen wir bisher noch keine Installationsempfehlung abgeben können:"
-  view_home_derivatives_36: " - eine afrikanische Ubuntu-Variante, die allerdings offenbar nicht übers Internet erhältlich ist."
-  view_home_derivatives_37: http://de.wikipedia.org/wiki/LinEx
-  view_home_derivatives_38: " - öffentliche Distribution der spanischen Region Extremadura."
-  view_home_derivatives_39: " für ältere PCs. Sie baut auf einer LXDE Oberfläche auf."
+  view_home_derivatives_20: "Automatix war eine Installationshilfe, die sich groß\
+    er Beliebtheit erfreute (sie wurde sogar von der New York Times empfohlen), die\
+    \ aber nicht ganz den Ubuntu-Programmierstandards entsprach und inzwischen nicht\
+    \ mehr weiterentwickelt wird. "
+  view_home_derivatives_21: "Über Communtu nachinstallierbare Derivate, sinnvollerweise\
+    \ auf einer Xfce-basierten Installation (z.B. Xubuntu) aufzusetzen:"
+  view_home_derivatives_22: " - orient an BeOS, setzt auf Schnelligkeit, Kompatibilitä\
+    t mit alten Rechnern und einfache Bedienung. CPU mit mindestens 200 MHZ 128 MB\
+    \ RAM (zum Betrieb, zur Installation werden 192 MB RAM benötigt); 2 GB freier\
+    \ Festplattenplatz (Empfohlen: 4 GB oder mehr); 16 MB Grafikkarte (Empfohlen:\
+    \ Intel GMA 9xx). "
+  view_home_derivatives_24: 'Derivate, die mit der Derivats-eigenen Installations-CD
+    installiert werden sollten:'
+  view_home_derivatives_25: http://wiki.ubuntuusers.de/Xfce
+  view_home_derivatives_26: " - mit dem schlanken Xfce als grafischer Oberfläche\
+    \ - besonders für ältere Rechner geeignet: 128 MByte Arbeitsspeicher und\
+    \ 1,5 GB auf der Festplatte reichen aus. Sollte von CD installiert werden, um\
+    \ wirklich eine schlanke Installation zu haben. Nachinstallationen mit Communtu\
+    \ möglich."
+  view_home_derivatives_27: http://de.wikipedia.org/wiki/LinuxMCE
+  view_home_derivatives_28: ' - damit wird Ubuntu zum '
+  view_home_derivatives_29: Fernsehcomputer
   view_home_derivatives_3: http://wiki.ubuntuusers.de/Was_ist_Linux?#Was-sind-Derivate-einer-Distribution
+  view_home_derivatives_30: http://de.wikipedia.org/wiki/Home_Theater_Personal_Computer
+  view_home_derivatives_31: ". Aufgrund der notwendigen Treiberinstallation sollte\
+    \ Linux MCE direkt installiert werden, Communtu kann dann aber für die Installation\
+    \ weiterer Software genutzt werden."
+  view_home_derivatives_32: " ist ein Ubuntu-Derivat komplett aus freier Software.\
+    \ Nur für erfahrene Nutzer geeignet. Sollte mit der Gobuntu-CD installiert\
+    \ werden, damit es auch wirklich nur freie Software ist. Nachinstallationen mit\
+    \ Communtu möglich, sinnvollerweise sollten dann im Nutzerprofil \"freie Software\"\
+    \ angewählt werden. Dies Derivate ist in der Version 8.04 erhältlich und\
+    \ wird nicht weiterentwickelt."
+  view_home_derivatives_33: http://de.wikipedia.org/wiki/GNU-Varianten#Nexenta_OS
+  view_home_derivatives_34: " - ersetzt den Linux-Kern durch OpenSolaris. Stellt nur\
+    \ eine minimale Basis an Anwendungen bereit. Die Installation weiterer Pakete\
+    \ bleibt dem Benutzer überlassen; hierfür kann Communtu genutzt werden."
+  view_home_derivatives_35: "Es gibt noch weitere Derivate zu denen wir bisher noch\
+    \ keine Installationsempfehlung abgeben können:"
+  view_home_derivatives_36: " - eine afrikanische Ubuntu-Variante, die allerdings\
+    \ offenbar nicht übers Internet erhältlich ist."
+  view_home_derivatives_37: http://de.wikipedia.org/wiki/LinEx
+  view_home_derivatives_38: " - öffentliche Distribution der spanischen Region\
+    \ Extremadura."
+  view_home_derivatives_39: " für ältere PCs. Sie baut auf einer LXDE Oberflä\
+    che auf."
+  view_home_derivatives_4: ", und viele Ubuntu-Nutzer fragen sich,  ob sie statt Ubuntu\
+    \ lieber ein Derivat benutzen sollten. Die Antwort ist: meistens fährt man\
+    \ mit dem Standard-Ubuntu ganz gut, denn Communtu erlaubt, die Derivate auf einfache\
+    \ Weise nachzuinstallieren.  Allerdings ist das nicht bei allen Derivaten gleich\
+    \ sinnvoll."
   view_home_derivatives_40: " - für mobile Internetgeräte."
-  view_home_derivatives_41: " Ubuntu ultimate  - Ubuntu mit vielen Desktop-Desgins und Programmen."
-  view_home_derivatives_42: " - spezialisiert auf Webdienste."
-  view_home_derivatives_43: " - basiert auf E17. 2D-Effekte auch ohne schnelle Grafikkarte."
-  view_home_derivatives_44: " - minimalistische schnelle Ubuntu-Version für ältere PCs."
+  view_home_derivatives_41: ' Ubuntu ultimate  - Ubuntu mit vielen Desktop-Desgins
+    und Programmen.'
+  view_home_derivatives_42: ' - spezialisiert auf Webdienste.'
+  view_home_derivatives_43: ' - basiert auf E17. 2D-Effekte auch ohne schnelle Grafikkarte.'
+  view_home_derivatives_44: " - minimalistische schnelle Ubuntu-Version für ä\
+    ltere PCs."
   view_home_derivatives_45: http://wiki.ubuntuusers.de/Server_Installation
-  view_home_derivatives_46: " - Server-Version von Ubuntu, ohne grafische Oberfläche."
+  view_home_derivatives_46: " - Server-Version von Ubuntu, ohne grafische Oberflä\
+    che."
   view_home_derivatives_47: http://wiki.ubuntuusers.de/JeOS
-  view_home_derivatives_48: " - minimale Server-Version, vor allem für Virtualisierung geeignet.."
-  view_home_derivatives_49: " - Ubuntu mit Enlightenment als Desktopumgebung."
-  view_home_derivatives_4: ", und viele Ubuntu-Nutzer fragen sich,  \
-    ob sie statt Ubuntu lieber ein Derivat benutzen sollten. \
-    Die Antwort ist: meistens fährt man mit dem Standard-Ubuntu ganz gut, denn \
-    Communtu erlaubt, die Derivate auf einfache Weise nachzuinstallieren.  \
-    Allerdings ist das nicht bei allen Derivaten gleich sinnvoll."
-  view_home_derivatives_50: " - mit Fluxbox und verschiedenen Netzwerk-Sicherheitswerkzeugen ."
-  view_home_derivatives_51: " - Installation von Programmen und Versionen, die nicht über die offiziellen Repositories erhältlich sind."
+  view_home_derivatives_48: " - minimale Server-Version, vor allem für Virtualisierung\
+    \ geeignet.."
+  view_home_derivatives_49: ' - Ubuntu mit Enlightenment als Desktopumgebung.'
+  view_home_derivatives_5: "Alle Derivate können unter der "
+  view_home_derivatives_50: ' - mit Fluxbox und verschiedenen Netzwerk-Sicherheitswerkzeugen
+    .'
+  view_home_derivatives_51: " - Installation von Programmen und Versionen, die nicht\
+    \ über die offiziellen Repositories erhältlich sind."
   view_home_derivatives_52: " - eine Art Automatix für die Ultimate Edition."
-  view_home_derivatives_53: " - erlaubt schnellere Installation, da nur die aktuellsten Pakete heruntergeladen werden."
-  view_home_derivatives_54: 
-  view_home_derivatives_55: " - Mediacenter."
+  view_home_derivatives_53: ' - erlaubt schnellere Installation, da nur die aktuellsten
+    Pakete heruntergeladen werden.'
+  view_home_derivatives_54: null
+  view_home_derivatives_55: ' - Mediacenter.'
   view_home_derivatives_56: http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix
   view_home_derivatives_57: "für Subnotebooks/EEE-PCs"
-  view_home_derivatives_5: "Alle Derivate können unter der "
   view_home_derivatives_6: Software-Auswahl
-  view_home_derivatives_7: "unter der Kategorie \"Derivate\" zur Installation ausgewählt werden."
-  view_home_derivatives_8: Ebenso kannst du dort nachgucken, aus welchen Paketen ein Derivat besteht.
+  view_home_derivatives_7: "unter der Kategorie \"Derivate\" zur Installation ausgewä\
+    hlt werden."
+  view_home_derivatives_8: Ebenso kannst du dort nachgucken, aus welchen Paketen ein
+    Derivat besteht.
   view_home_derivatives_9: "Über Communtu sinnvoll nachinstallierbare Derivate:"
-  view_home_donate: Für Communtu spenden
-  view_home_donate_why: Der Betrieb der Communtu-Webseite basiert vor allem auf dem Einsatz von Freiwilligen; er kostet aber auch Geld (u.a. für Server und Räume). Communtu ist daher auf Spenden angewiesen. Auch kleine Beträge helfen.
-  view_home_donate_options: Es gibt verschiedene Möglichkeiten, etwas zu spenden.
-  view_home_faq_00: Häufig gestellte Fragen
-  view_home_faq_01: Was ist ein Bündel?
-  view_home_faq_02: Ein Bündel ist eine Zusammenstellung von Software für einen bestimmten Aufgabenbereich, den du mit deinem Rechner erledigen kannst.
-  view_home_faq_03: Wie installiere ich ein Bündel?
-  view_home_faq_04: "Um ein Bündel zu installieren gibt es zwei Möglichkeiten.<p>
-Die erste Möglichkeit ist, dass du auf <b>Download</b> klickst. Dort bekommst du dann ein kleines Formular in welchem du die Aufgaben auswählst, die du mit deinem Computer durchführen möchtest. Als Nächstes musst du deine Ubuntu-Version einstellen (diese wird in den meisten Fällen richtig erkannt und du musst sie nur noch aus dem Menü auswählen) und welche Oberfläche du benutzen möchtest (Gnome = Ubuntu, KDE = Kubuntu, XFCE = Xubuntu). Die letzten zwei Schritte betreffen die Lizenz und die Sicherheit der Programme, also welche Quellen du zulassen möchtest und ob deine Programme offen sind oder nicht. Du kannst nun entweder über \"Speichern\" direkt zum Abschluss des Prozesses kommen oder mit einem Klick auf \"Speichern und feiner auswählen\" noch eine genauere Auswahl treffen. Abschließend müssen die Quellen zu deinem System hinzugefügt werden und, sobald dies abgeschlossen ist, musst du nur noch auf \"Installieren\" klicken und auf dein System werden die von dir ausgewählten Programmen installiert.<p>
-Die zweite Möglichkeit ist, dass du auf <b>Bündel</b> und dann \"Alle veröffentlichen Bündel\" klickst. Dort bekommst du dann eine Übersicht über alle in Communtu erstellten Bündel. Hier müssen, sofern noch nicht geschehen, die Quellen hinzugefügt werden (ein Klick auf \"Quellen hinzufügen\") und dann mit einem Klick auf \"installieren mittels Metapaket\" das entsprechende Bündel installiert werden."
-  view_home_faq_05: Wie kann ich ein Bündel erstellen?
-  view_home_faq_06: "Hierfür klickst du auf <b>Bündel</b> und dann auf \"Neues Bündel\". Links siehst du nun eine Liste mit Programmen und rechts noch eine leere Liste. Dies ist der Bündeleditor. Mit einem Klick auf das Plus-Zeichen in der linken Liste kannst du nun Programme zu deinem Bündel hinzufügen. Sobald du damit fertig bist klickst auf das Speichern-Symbol. Hier musst du nun einen sinnvollen Namen für dein Bündel vergeben, die Version angeben und eine kleine Beschreibung eingeben damit andere Nutzer sofort wissen was für Programme in deinem Bündel sind. Damit andere Nutzer dein Bündel sehen, bewerten und installieren können muss dieses veröffentlicht werden. Dies geht erst, sobald das Bündel gespeichert ist. Achtung: bitte ein Bündel erst veröffentlichen wenn es ausgereift ist, also wenn du der Meinung bist, hier wird sich so schnell nichts mehr ändern! Das Ändern des Bündels ist nicht mehr möglich wenn es veröffentlicht wurde.<p>
-Wenn du der Meinung bist, dass dein Bündel um nützliche Programme erweitert werden kann oder ein Programm nicht mehr in dem Bündel enthalten sein soll musst du zuerst unter <b>Bündel</b> und dann \"Meine Bündel\" das entsprechende Bündel auswählen. Rechts ist dann aus dem Aufklapp-Menü der Punkt \"Paketliste editieren\" auszuwählen. Anschließend erscheint wieder der Bündeleditor. Sobald die Paketliste bearbeitet wurde muss diese gespeichert werden. Nun muss die Version höhergesetzt werden und anschließend gespeichert werden. Das Bündel wurde nun aktualisiert."
-  view_home_faq_07: Wie kann ich ein Bündel bewerten?
-  view_home_faq_08: "Du gehst auf den Menüpunkt \"Bündel\" und lässt dir unter \"Veröffentlichte Bündel\" die Bündel anzeigen. Dort kannst du bis zu fünf Sterne anklicken. Danach erscheint ein Kommentarfeld, in dem du diese Bewertung qualifizieren kannst."
-  view_home_faq_09: Wie kann ich ein Bündel ändern?
-  view_home_faq_10: "Du gehst auf den Menüpunkt \"Meine Bündel\" unter \"Bündel\" und läßt dir da deine Bündel auflisten. Das zu ändernde Bündel klickst du nun an. Du bekommst nun alle wichtigen Informationen zu deinem Bündel angezeigt.
-  Unter \"Aktionen\" kannst du nun dieses Bündel oder auch die Paketliste editieren. Wenn das Paket nicht veröffentlicht ist, dann kannst du es auch löschen oder ansonsten auch veröffentlichen."
-  view_home_faq_11: Wie erstelle ich ein Bündel aus meinen installierten Programmen?
-  view_home_faq_12: "Unter <b>Bündel</b> und dann \"Neues Bündel\" gibt es den Punkt \"Bündel aus einer Paketliste erstellen\", der anzuklicken ist. Dort ist beschrieben, wie du deine Paketliste in Communtu hochladen kannst. Sobald das Bündel gespeichert ist, ist der Vorgang der Gleiche wie bei einem neuen Bündel erstellen: sinnvollen Namen auswählen, Version bestimmen, Beschreibung einfügen und speichern."
+  view_home_donate: "Für Communtu spenden"
+  view_home_donate_options: "Es gibt verschiedene Möglichkeiten, etwas zu spenden."
+  view_home_donate_why: "Der Betrieb der Communtu-Webseite basiert vor allem auf dem\
+    \ Einsatz von Freiwilligen; er kostet aber auch Geld (u.a. für Server und Rä\
+    ume). Communtu ist daher auf Spenden angewiesen. Auch kleine Beträge helfen."
+  view_home_faq_00: "Häufig gestellte Fragen"
+  view_home_faq_01: "Was ist ein Bündel?"
+  view_home_faq_02: "Ein Bündel ist eine Zusammenstellung von Software für einen\
+    \ bestimmten Aufgabenbereich, den du mit deinem Rechner erledigen kannst."
+  view_home_faq_03: "Wie installiere ich ein Bündel?"
+  view_home_faq_04: "Um ein Bündel zu installieren gibt es zwei Möglichkeiten.<p>\
+    \ Die erste Möglichkeit ist, dass du auf <b>Download</b> klickst. Dort bekommst\
+    \ du dann ein kleines Formular in welchem du die Aufgaben auswählst, die du\
+    \ mit deinem Computer durchführen möchtest. Als Nächstes musst du deine\
+    \ Ubuntu-Version einstellen (diese wird in den meisten Fällen richtig erkannt\
+    \ und du musst sie nur noch aus dem Menü auswählen) und welche Oberflä\
+    che du benutzen möchtest (Gnome = Ubuntu, KDE = Kubuntu, XFCE = Xubuntu). Die\
+    \ letzten zwei Schritte betreffen die Lizenz und die Sicherheit der Programme,\
+    \ also welche Quellen du zulassen möchtest und ob deine Programme offen sind\
+    \ oder nicht. Du kannst nun entweder über \"Speichern\" direkt zum Abschluss\
+    \ des Prozesses kommen oder mit einem Klick auf \"Speichern und feiner auswä\
+    hlen\" noch eine genauere Auswahl treffen. Abschließend müssen die Quellen\
+    \ zu deinem System hinzugefügt werden und, sobald dies abgeschlossen ist, musst\
+    \ du nur noch auf \"Installieren\" klicken und auf dein System werden die von\
+    \ dir ausgewählten Programmen installiert.<p> Die zweite Möglichkeit ist,\
+    \ dass du auf <b>Bündel</b> und dann \"Alle veröffentlichen Bündel\"\
+    \ klickst. Dort bekommst du dann eine Übersicht über alle in Communtu erstellten\
+    \ Bündel. Hier müssen, sofern noch nicht geschehen, die Quellen hinzugefü\
+    gt werden (ein Klick auf \"Quellen hinzufügen\") und dann mit einem Klick auf\
+    \ \"installieren mittels Metapaket\" das entsprechende Bündel installiert werden."
+  view_home_faq_05: "Wie kann ich ein Bündel erstellen?"
+  view_home_faq_06: "Hierfür klickst du auf <b>Bündel</b> und dann auf \"Neues\
+    \ Bündel\". Links siehst du nun eine Liste mit Programmen und rechts noch eine\
+    \ leere Liste. Dies ist der Bündeleditor. Mit einem Klick auf das Plus-Zeichen\
+    \ in der linken Liste kannst du nun Programme zu deinem Bündel hinzufügen.\
+    \ Sobald du damit fertig bist klickst auf das Speichern-Symbol. Hier musst du\
+    \ nun einen sinnvollen Namen für dein Bündel vergeben, die Version angeben\
+    \ und eine kleine Beschreibung eingeben damit andere Nutzer sofort wissen was\
+    \ für Programme in deinem Bündel sind. Damit andere Nutzer dein Bündel\
+    \ sehen, bewerten und installieren können muss dieses veröffentlicht werden.\
+    \ Dies geht erst, sobald das Bündel gespeichert ist. Achtung: bitte ein Bü\
+    ndel erst veröffentlichen wenn es ausgereift ist, also wenn du der Meinung\
+    \ bist, hier wird sich so schnell nichts mehr ändern! Das Ändern des Bü\
+    ndels ist nicht mehr möglich wenn es veröffentlicht wurde.<p> Wenn du der\
+    \ Meinung bist, dass dein Bündel um nützliche Programme erweitert werden\
+    \ kann oder ein Programm nicht mehr in dem Bündel enthalten sein soll musst\
+    \ du zuerst unter <b>Bündel</b> und dann \"Meine Bündel\" das entsprechende\
+    \ Bündel auswählen. Rechts ist dann aus dem Aufklapp-Menü der Punkt \"\
+    Paketliste editieren\" auszuwählen. Anschließend erscheint wieder der Bü\
+    ndeleditor. Sobald die Paketliste bearbeitet wurde muss diese gespeichert werden.\
+    \ Nun muss die Version höhergesetzt werden und anschließend gespeichert\
+    \ werden. Das Bündel wurde nun aktualisiert."
+  view_home_faq_07: "Wie kann ich ein Bündel bewerten?"
+  view_home_faq_08: "Du gehst auf den Menüpunkt \"Bündel\" und lässt dir\
+    \ unter \"Veröffentlichte Bündel\" die Bündel anzeigen. Dort kannst du\
+    \ bis zu fünf Sterne anklicken. Danach erscheint ein Kommentarfeld, in dem\
+    \ du diese Bewertung qualifizieren kannst."
+  view_home_faq_09: "Wie kann ich ein Bündel ändern?"
+  view_home_faq_10: "Du gehst auf den Menüpunkt \"Meine Bündel\" unter \"Bü\
+    ndel\" und läßt dir da deine Bündel auflisten. Das zu ändernde Bü\
+    ndel klickst du nun an. Du bekommst nun alle wichtigen Informationen zu deinem\
+    \ Bündel angezeigt. Unter \"Aktionen\" kannst du nun dieses Bündel oder\
+    \ auch die Paketliste editieren. Wenn das Paket nicht veröffentlicht ist, dann\
+    \ kannst du es auch löschen oder ansonsten auch veröffentlichen."
+  view_home_faq_11: "Wie erstelle ich ein Bündel aus meinen installierten Programmen?"
+  view_home_faq_12: "Unter <b>Bündel</b> und dann \"Neues Bündel\" gibt es den\
+    \ Punkt \"Bündel aus einer Paketliste erstellen\", der anzuklicken ist. Dort\
+    \ ist beschrieben, wie du deine Paketliste in Communtu hochladen kannst. Sobald\
+    \ das Bündel gespeichert ist, ist der Vorgang der Gleiche wie bei einem neuen\
+    \ Bündel erstellen: sinnvollen Namen auswählen, Version bestimmen, Beschreibung\
+    \ einfügen und speichern."
   view_home_faq_13: Wie finde ich Programme?
-  view_home_faq_14: "Gehe dazu bitte auf den Menüpunkt \"Programme suchen\". Hier hast du ein Suchfeld, in dem du den Namen des gesuchten Prgramms angeben kannst.
-  Weiter ist es möglich die Suche nur über Programme durchzuführen, in dem das Feld \"Nur Programme\" angeklickt wird und somit sonstige Bibliotheken nicht mehr angezeigt werden.
-  Weiter ist es auch möglich eine Debian-Section auszuwählen, der die Auswahl an Programmen anhand von Kategorien vorselektiert."
+  view_home_faq_14: "Gehe dazu bitte auf den Menüpunkt \"Programme suchen\". Hier\
+    \ hast du ein Suchfeld, in dem du den Namen des gesuchten Prgramms angeben kannst.\
+    \ Weiter ist es möglich die Suche nur über Programme durchzuführen, in\
+    \ dem das Feld \"Nur Programme\" angeklickt wird und somit sonstige Bibliotheken\
+    \ nicht mehr angezeigt werden. Weiter ist es auch möglich eine Debian-Section\
+    \ auszuwählen, der die Auswahl an Programmen anhand von Kategorien vorselektiert."
   view_home_faq_15: Wie kann ich ein einzelnes Programm installieren?
-  view_home_faq_16: "Gehe dazu bitte auf den Menüpunkt \"Programme suchen\". Dort bekommst du eine Auswahl von Programmen. Wenn du dein gewünschtes Programm gefunden hast, kannst du dieses durch Klicken auf das Installationssymbol installieren. 
-  Es ist möglich, dass du vorher noch auf \"Quellen hinzufügen\" klicken musst, da es sein kann, dass das Programm in einer Quelle verfügabr ist, die deinem System noch nicht bekannt ist."
+  view_home_faq_16: "Gehe dazu bitte auf den Menüpunkt \"Programme suchen\". Dort\
+    \ bekommst du eine Auswahl von Programmen. Wenn du dein gewünschtes Programm\
+    \ gefunden hast, kannst du dieses durch Klicken auf das Installationssymbol installieren.\
+    \ Es ist möglich, dass du vorher noch auf \"Quellen hinzufügen\" klicken\
+    \ musst, da es sein kann, dass das Programm in einer Quelle verfügabr ist,\
+    \ die deinem System noch nicht bekannt ist."
   view_home_faq_17: Wie kann ich einen Programmvorschlag einbringen?
-  view_home_faq_18: "Das ist ganz einfach. Dazu klickst du im Bündeleditor (erreichbar wenn du auf <b>Bündel</b> klickst) auf \"Repository vorschlagen\". Hier musst du nun den Link zu dem Programm angeben und uns kurz erläutern, wieso wir das Programm in Communtu aufnehmen sollen."
+  view_home_faq_18: "Das ist ganz einfach. Dazu klickst du im Bündeleditor (erreichbar\
+    \ wenn du auf <b>Bündel</b> klickst) auf \"Repository vorschlagen\". Hier musst\
+    \ du nun den Link zu dem Programm angeben und uns kurz erläutern, wieso wir\
+    \ das Programm in Communtu aufnehmen sollen."
   view_home_faq_19: Was ist ein Repository?
-  view_home_faq_20: "Ein Repository (englisch für \"Paketquelle\") ist eine Sammlung von Programmen. Über die Paketverwaltung (in Gnome und XFCE ist dies Synaptic, in KDE ist dies KPackageKit) kannst du Programme aus den Paketquellen installieren. Gleichzeitig bekommst du über genau die gleichen Paketquellen auch die Updates für die installierten Programme. Weitere Informationen zu Paketquellen findest du <a href=\"http://wiki.ubuntuusers.de/Paketquellen\" target=\"_blank\">hier</a>."
+  view_home_faq_20: "Ein Repository (englisch für \"Paketquelle\") ist eine Sammlung\
+    \ von Programmen. Über die Paketverwaltung (in Gnome und XFCE ist dies Synaptic,\
+    \ in KDE ist dies KPackageKit) kannst du Programme aus den Paketquellen installieren.\
+    \ Gleichzeitig bekommst du über genau die gleichen Paketquellen auch die Updates\
+    \ für die installierten Programme. Weitere Informationen zu Paketquellen findest\
+    \ du <a href=\"http://wiki.ubuntuusers.de/Paketquellen\" target=\"_blank\">hier</a>."
   view_home_faq_21: Wie finde ich die Communtu-Paketquellen in meinem System?
   view_home_faq_23: Wie kann ich die Metapakete wieder entfernen?
-  view_home_faq_24: "Welche Pakete liegen in Eurem Repository?"
-  view_home_faq_25: "Die Quelle packages.communtu.org enthält nur Metapakete, die den Communtu-Bündeln entsprechen. Richtige Software wird dort also nicht angeboten; dafür werden <a href=\"/distributions\" target=\"_blank\">hier</a> aufgelisteten Repositories direkt verwendet."
-  view_home_faq_gnome_01: "Unter \"System -> Systemverwaltung -> Software-Quellen -> Softwarequellen von Drittanbietern\" sind die Communtu Quellen auffindbar. Hier können sie auch wieder deaktiviert werden."
-  view_home_faq_gnome_02: "Die Pakerverwaltung Synaptic erreichst du über \"System -> Systemverwaltung -> Synaptic-Paketverwaltung\". Wähle hier unten links den Punkt Ursprung. Suche nun in der darüber liegenden Liste \"packages.communtu.org\" und klicke es an. Auf der rechten Seite werden nun die verfügbaren Metapakete in Communtu angezeigt. Das Entfernen geht über Rechtsmausklick und dann \"Zum Entfernen vormerken\". Dies muss dann danach durch \"Anwenden\" bestätigt werden."
-  view_home_faq_kde_01: "Unter \"K-Menu -> Programme -> System -> Systemverwaltung -> Software-Quellen -> Softwarequellen von Drittanbietern\" sind die Communtu Quellen auffindbar. Hier können sie auch wieder deaktiviert werden."
-  view_home_faq_kde_02: "KPackageKit erreichst du über \"K-Menu -> Programme-> System -> Systemverwaltung -> Software-Verwaltung\". Hier wählst du rechts aus dem Ausklapp-Menü \"packages.communtu.org\" aus. Aus der Liste suchst du nun das Metapaket aus, welches du installiert hast und markierst es mit einem Klick auf das X rechts neben dem Eintrag. Um das Metapaket nun zu entfernen ist nur noch ein Klick auf \"Übernehmen\" notwendig. Es wird jetzt noch eine Übersicht der zu entfernenden Programme angezeigt und nach einem Klick auf \"Ok\" werden diese von deinem Computer gelöscht."
-  view_home_faq_xfce_01: "Unter \"Anwendungen -> System -> Softwarequellen von Drittanbietern\" sind die Communtu Quellen auffindbar. Hier können sie auch wieder deaktiviert werden."
-  view_home_faq_xfce_02: "Die Pakerverwaltung Synaptic erreichst du über \"Anwendungen -> System-> Synaptic-Paketverwaltung\". Wähle hier unten links den Punkt Ursprung. Suche nun in der darüber liegenden Liste \"packages.communtu.org\" und klicke es an. Auf der rechten Seite werden nun die verfügbaren Metapakete in Communtu angezeigt. Das Entfernen geht über Rechtsmausklick und dann \"Zum Entfernen vormerken\". Dies muss dann danach durch \"Anwenden\" bestätigt werden."
-  view_home_faq_all_01: "Das Deaktivieren führt nicht zum Deinstallieren von Paketen noch werden dadurch die Updates für die installierten Pakete unterbrochen. Diese werden aus anderen Softwarequellen, die ggf. von Communtu installiert wurden, bedient."
-  view_home_faq_all_02: "Die einzelnen Pakete werden dadurch nicht deinstalliert sondern lassen sich wie gewohnt über Synaptic oder KPackageKit auswählen und deinstallieren."
-  view_home_home_10: "<b>Ubuntu-Versionen</b> Übersicht über die im System verfügbaren Ubuntu-Versionen (Distributionen)."
-  view_home_home_11: "<b>Benutzer verwalten</b> Hier kannst du als Admin die Rollen der Benutzer ändern. Vorsicht walten lassen!"
-  view_home_home_12: "<b>Kategorien verwalten</b> Hier kannst du als Admin neue Kategorien erstellen oder die Struktur des Kategorienbaums ändern. Vorsicht walten lassen!"
-  view_home_home_13: <b>Aktuelles</b> Hinweise auf Veranstaltungen zu Communtu, Communtu-Blog ...
-  view_home_home_14: "Es gibt auch noch "
+  view_home_faq_24: Welche Pakete liegen in Eurem Repository?
+  view_home_faq_25: "Die Quelle packages.communtu.org enthält nur Metapakete, die\
+    \ den Communtu-Bündeln entsprechen. Richtige Software wird dort also nicht\
+    \ angeboten; dafür werden <a href=\"/distributions\" target=\"_blank\">hier</a>\
+    \ aufgelisteten Repositories direkt verwendet."
+  view_home_faq_all_01: "Das Deaktivieren führt nicht zum Deinstallieren von Paketen\
+    \ noch werden dadurch die Updates für die installierten Pakete unterbrochen.\
+    \ Diese werden aus anderen Softwarequellen, die ggf. von Communtu installiert\
+    \ wurden, bedient."
+  view_home_faq_all_02: "Die einzelnen Pakete werden dadurch nicht deinstalliert sondern\
+    \ lassen sich wie gewohnt über Synaptic oder KPackageKit auswählen und deinstallieren."
+  view_home_faq_gnome_01: "Unter \"System -> Systemverwaltung -> Software-Quellen\
+    \ -> Softwarequellen von Drittanbietern\" sind die Communtu Quellen auffindbar.\
+    \ Hier können sie auch wieder deaktiviert werden."
+  view_home_faq_gnome_02: "Die Pakerverwaltung Synaptic erreichst du über \"System\
+    \ -> Systemverwaltung -> Synaptic-Paketverwaltung\". Wähle hier unten links\
+    \ den Punkt Ursprung. Suche nun in der darüber liegenden Liste \"packages.communtu.org\"\
+    \ und klicke es an. Auf der rechten Seite werden nun die verfügbaren Metapakete\
+    \ in Communtu angezeigt. Das Entfernen geht über Rechtsmausklick und dann \"\
+    Zum Entfernen vormerken\". Dies muss dann danach durch \"Anwenden\" bestätigt\
+    \ werden."
+  view_home_faq_kde_01: "Unter \"K-Menu -> Programme -> System -> Systemverwaltung\
+    \ -> Software-Quellen -> Softwarequellen von Drittanbietern\" sind die Communtu\
+    \ Quellen auffindbar. Hier können sie auch wieder deaktiviert werden."
+  view_home_faq_kde_02: "KPackageKit erreichst du über \"K-Menu -> Programme->\
+    \ System -> Systemverwaltung -> Software-Verwaltung\". Hier wählst du rechts\
+    \ aus dem Ausklapp-Menü \"packages.communtu.org\" aus. Aus der Liste suchst\
+    \ du nun das Metapaket aus, welches du installiert hast und markierst es mit einem\
+    \ Klick auf das X rechts neben dem Eintrag. Um das Metapaket nun zu entfernen\
+    \ ist nur noch ein Klick auf \"Übernehmen\" notwendig. Es wird jetzt noch eine\
+    \ Übersicht der zu entfernenden Programme angezeigt und nach einem Klick auf\
+    \ \"Ok\" werden diese von deinem Computer gelöscht."
+  view_home_faq_xfce_01: "Unter \"Anwendungen -> System -> Softwarequellen von Drittanbietern\"\
+    \ sind die Communtu Quellen auffindbar. Hier können sie auch wieder deaktiviert\
+    \ werden."
+  view_home_faq_xfce_02: "Die Pakerverwaltung Synaptic erreichst du über \"Anwendungen\
+    \ -> System-> Synaptic-Paketverwaltung\". Wähle hier unten links den Punkt\
+    \ Ursprung. Suche nun in der darüber liegenden Liste \"packages.communtu.org\"\
+    \ und klicke es an. Auf der rechten Seite werden nun die verfügbaren Metapakete\
+    \ in Communtu angezeigt. Das Entfernen geht über Rechtsmausklick und dann \"\
+    Zum Entfernen vormerken\". Dies muss dann danach durch \"Anwenden\" bestätigt\
+    \ werden."
+  view_home_home_10: "<b>Ubuntu-Versionen</b> Übersicht über die im System verfü\
+    gbaren Ubuntu-Versionen (Distributionen)."
+  view_home_home_11: "<b>Benutzer verwalten</b> Hier kannst du als Admin die Rollen\
+    \ der Benutzer ändern. Vorsicht walten lassen!"
+  view_home_home_12: "<b>Kategorien verwalten</b> Hier kannst du als Admin neue Kategorien\
+    \ erstellen oder die Struktur des Kategorienbaums ändern. Vorsicht walten lassen!"
+  view_home_home_13: <b>Aktuelles</b> Hinweise auf Veranstaltungen zu Communtu, Communtu-Blog
+    ...
+  view_home_home_14: 'Es gibt auch noch '
   view_home_home_15: genauere Infos
   view_home_home_16: " über das Projekt und über die Mitwirkenden im "
   view_home_home_17: Impressum.
-  view_home_home_18: "Klicke auf "
-  view_home_home_20: ", um einen neuen Benutzer anzulegen, oder "
+  view_home_home_18: 'Klicke auf '
+  view_home_home_2: Ubuntu-Linux
+  view_home_home_20: ', um einen neuen Benutzer anzulegen, oder '
   view_home_home_21: melde
-  view_home_home_22: " dich an, oder "
+  view_home_home_22: ' dich an, oder '
   view_home_home_23: nutze Communtu als Gast
   view_home_home_24: Zum Impressum
-  view_home_home_25: "Für Fragen zu Communtu haben wir \"Häufig gestellte Fragen\" zusammengestellt."
-  view_home_home_26: Du hast Ubuntu installiert und suchst nun nach Progammen, die unter Ubuntu laufen?
-  view_home_home_27: "Communtu hilft dir dabei:"
-  view_home_home_28: "Download:"
-  view_home_home_29: Zu welchem Thema suchst du Programme (Büro, Grafik,...)? Hier kannst du deine Interessengebiete eingeben und passende vorkonfigurierte Programmbündel downloaden.
-  which_programs_do_you_need: Zu welchem Thema suchst du Programme (Büro, Grafik,...)? Hier kannst du deine Interessengebiete eingeben und passende vorkonfigurierte Programmbündel zusammenstellen.
-  view_home_home_2: Ubuntu-Linux
-  view_home_home_3: " steht für ein menschliches Linux, das einfach zu benutzen ist. \
-    Aber um Ubuntu wirklich gut nutzen zu können, muss man ganz schön viele Programme nachinstallieren, und es ist oft schwer, da den Überblick zu behalten. \
-    Bei Communtu gibst du nur an, welche Aufgaben du mit deinem Computer erledigen willst, und Communtu schlägt dir eine \
-    ganze Reihe von Programmen vor, die automatisch installiert werden können."
+  view_home_home_25: "Für Fragen zu Communtu haben wir \"Häufig gestellte Fragen\"\
+    \ zusammengestellt."
+  view_home_home_26: Du hast Ubuntu installiert und suchst nun nach Progammen, die
+    unter Ubuntu laufen?
+  view_home_home_27: 'Communtu hilft dir dabei:'
+  view_home_home_28: 'Download:'
+  view_home_home_29: "Zu welchem Thema suchst du Programme (Büro, Grafik,...)?\
+    \ Hier kannst du deine Interessengebiete eingeben und passende vorkonfigurierte\
+    \ Programmbündel downloaden."
+  view_home_home_3: " steht für ein menschliches Linux, das einfach zu benutzen\
+    \ ist. Aber um Ubuntu wirklich gut nutzen zu können, muss man ganz schö\
+    n viele Programme nachinstallieren, und es ist oft schwer, da den Überblick\
+    \ zu behalten. Bei Communtu gibst du nur an, welche Aufgaben du mit deinem Computer\
+    \ erledigen willst, und Communtu schlägt dir eine ganze Reihe von Programmen\
+    \ vor, die automatisch installiert werden können."
   view_home_home_30: "Bündel:"
-  view_home_home_31: Hier kannst du Themen detaillierter auswählen und dazu Programme und Programmbündel laden, aber auch eigene Bündel erstellen und verwalten.
-  view_home_home_32: "Communtu:"
-  view_home_home_33: Möchtest du mehr über Communtu wissen? Hast du Anregungen, Fragen - wir freuen uns auf den Kontakt mit dir.
+  view_home_home_31: "Hier kannst du Themen detaillierter auswählen und dazu Programme\
+    \ und Programmbündel laden, aber auch eigene Bündel erstellen und verwalten."
+  view_home_home_32: 'Communtu:'
+  view_home_home_33: "Möchtest du mehr über Communtu wissen? Hast du Anregungen,\
+    \ Fragen - wir freuen uns auf den Kontakt mit dir."
   view_home_home_4: Mehr ...
   view_home_home_5: "Die Seitenleiste links bietet folgende Möglichkeiten:"
-  view_home_home_6: "<b>Installation</b> bietet dir eine Zusammenstellung (Bündelung) von Programmen für die Installation auf deinem Computer an, entsprechend deinen Angaben, für welche Aufgaben du deinen Ubuntu-PC benutzen willst."
-  view_home_home_7: "<b>Bündel verwalten</b> Hast du gute Erfahrungen mit Programmen gemacht? Dann kannst du sie hier thematisch bündeln, oder auch bestehende Bündel angucken. "
-  view_home_home_8: <b>Programme suchen</b> Hier kannst du nach einzelnen Ubuntu-Programmen (Paketen) suchen.
-  view_home_home_9: "<b>Ubuntu-Derivate</b> bietet eine Übersicht über Kubuntu, Xubuntu, Medibuntu und wie sie alle heißen ..."
-  view_home_home_bundle: "vorkonfigurierte veröffentlichte Programmbündel in Communtu"
+  view_home_home_6: "<b>Installation</b> bietet dir eine Zusammenstellung (Bündelung)\
+    \ von Programmen für die Installation auf deinem Computer an, entsprechend\
+    \ deinen Angaben, für welche Aufgaben du deinen Ubuntu-PC benutzen willst."
+  view_home_home_7: "<b>Bündel verwalten</b> Hast du gute Erfahrungen mit Programmen\
+    \ gemacht? Dann kannst du sie hier thematisch bündeln, oder auch bestehende\
+    \ Bündel angucken. "
+  view_home_home_8: <b>Programme suchen</b> Hier kannst du nach einzelnen Ubuntu-Programmen
+    (Paketen) suchen.
+  view_home_home_9: "<b>Ubuntu-Derivate</b> bietet eine Übersicht über Kubuntu,\
+    \ Xubuntu, Medibuntu und wie sie alle heißen ..."
+  view_home_home_bundle: "vorkonfigurierte veröffentlichte Programmbündel in\
+    \ Communtu"
   view_home_home_new_message_icon: zum Posteingang
   view_home_home_new_messages_desc: Du hast neue Nachrichten in deinem Posteingang.
-  view_home_home_rating_headline: Am besten bewertete Bündel
-  view_home_home_rating_link: Zum Bündel bewerten
+  view_home_home_rating_headline: "Am besten bewertete Bündel"
+  view_home_home_rating_link: "Zum Bündel bewerten"
   view_home_home_rating_rating: Wertung
   view_home_icons_0: Icons bei Communtu
   view_home_icons_10: Programm
-  view_home_icons_12: " Programm (wenn kein anderes Programm-Icon vorhanden)"
+  view_home_icons_12: ' Programm (wenn kein anderes Programm-Icon vorhanden)'
   view_home_icons_13: "Programm-Bündel"
   view_home_icons_15: " Programm-Bündel"
-  view_home_icons_16: " Migration von Repositories"
+  view_home_icons_16: ' Migration von Repositories'
   view_home_icons_17: externer Link
-  view_home_icons_19: " externer Link"
+  view_home_icons_19: ' externer Link'
   view_home_icons_20: User-Icon
-  view_home_icons_22: " User Icon"
+  view_home_icons_22: ' User Icon'
   view_home_icons_23: Nachrichtensymbol
-  view_home_icons_24: Nachrichtensymbol für Post erhalten
-  view_home_icons_3: " Paket(e) installieren."
-  view_home_icons_6: " Quellen installieren"
-  view_home_icons_9: " Installation per Shell-Script"
-  view_home_impressum_11: "Mitwirkende an der AG Communtu (Alphabetische Reihenfolge):"
+  view_home_icons_24: "Nachrichtensymbol für Post erhalten"
+  view_home_icons_3: ' Paket(e) installieren.'
+  view_home_icons_6: ' Quellen installieren'
+  view_home_icons_9: ' Installation per Shell-Script'
+  view_home_impressum_11: 'Mitwirkende an der AG Communtu (Alphabetische Reihenfolge):'
   view_home_impressum_2: AG Communtu
   view_home_impressum_4: Bauernstr. 2
   view_home_impressum_5: 28203 Bremen
   view_home_mail_0: Benachrichtigung bei Fehlerbehebung
-  view_home_mail_1: "Bitte benachrichtigt mich unter folgender E-Mail über die Fehlerbehebung."
+  view_home_mail_1: "Bitte benachrichtigt mich unter folgender E-Mail über die\
+    \ Fehlerbehebung."
   view_home_new_repository_0: Repository vorschlagen
-  view_home_new_repository_1: Du vermisst hier eine Quelle? Dann kannst du ein Repository vorschlagen.
+  view_home_new_repository_1: Du vermisst hier eine Quelle? Dann kannst du ein Repository
+    vorschlagen.
   view_home_new_repository_2: Link zum Repository
-  view_home_new_repository_3: Warum soll dies in Communtu eingebaut werden? (Bitte gebe Kontaktdaten an, wenn du über die Aufnahme informiert werden willst)
+  view_home_new_repository_3: "Warum soll dies in Communtu eingebaut werden? (Bitte\
+    \ gebe Kontaktdaten an, wenn du über die Aufnahme informiert werden willst)"
+  view_home_news_1: Unsere Mailinglisten
   view_home_news_10: communtu-discuss-de+subscribe@googlegroups.com
-  view_home_news_11: "Diese Liste ist für eine Diskussion rund um die Plattform gedacht.  Hier kommt etwas mehr als einmal die Woche eine E-Mail über den Verteiler.   Die Nachrichten werden in einem "
+  view_home_news_11: "Diese Liste ist für eine Diskussion rund um die Plattform\
+    \ gedacht.  Hier kommt etwas mehr als einmal die Woche eine E-Mail über den\
+    \ Verteiler.   Die Nachrichten werden in einem "
   view_home_news_13: http://groups.google.com/group/communtu-discuss-de/topics?start=
   view_home_news_15: Unser Blog
-  view_home_news_16: "Wir haben einen Blog, wo wir aktuelle Informationen zu Communtu eintragen. \
-    Hier wird ungefähr einmal die Woche etwas gepostet. Hier werden Ankündigungen und neue Features präsentiert."
+  view_home_news_16: "Wir haben einen Blog, wo wir aktuelle Informationen zu Communtu\
+    \ eintragen. Hier wird ungefähr einmal die Woche etwas gepostet. Hier werden\
+    \ Ankündigungen und neue Features präsentiert."
   view_home_news_17: Zum Blog
-  view_home_news_1: Unsere Mailinglisten
+  view_home_news_2: 'Um die Kommunikation mit unseren Nutzern zu verbessern, haben
+    wir Mailinglisten eingerichtet:'
   view_home_news_24: beteiligen
-  view_home_news_2: "Um die Kommunikation mit unseren Nutzern zu verbessern, haben wir Mailinglisten eingerichtet:"
   view_home_news_3: communtu-announce-de+subscribe@googlegroups.com
-  view_home_news_5: "Diese Liste ist für allgemeine Ankündigungen aus den Communtu Team für die Nutzer gedacht.  Es wir hier ungefähr einmal die Woche eine E-Mail über den Verteiler geschickt.   Die Nachrichten werden in einem "
+  view_home_news_5: "Diese Liste ist für allgemeine Ankündigungen aus den Communtu\
+    \ Team für die Nutzer gedacht.  Es wir hier ungefähr einmal die Woche eine\
+    \ E-Mail über den Verteiler geschickt.   Die Nachrichten werden in einem "
   view_home_news_7: http://groups.google.com/group/communtu-announce-de/topics?start=
-  view_home_news_8: " gesammelt."
+  view_home_news_8: ' gesammelt.'
   view_home_success_0: " Vielen Dank für die Spende"
-  view_home_success_1: "Eine Spendenbescheinigung kann ausgestellt werden. Dazu schicke uns bitte eine E-Mail mit deiner Adresse an: "
+  view_home_success_1: 'Eine Spendenbescheinigung kann ausgestellt werden. Dazu schicke
+    uns bitte eine E-Mail mit deiner Adresse an: '
   view_layouts_application_0: Communtu, Ubuntu, Installation, Installationshilfe
+  view_layouts_application_1: "Communtu passt dein Linux-Ubuntu-System an deine individuellen\
+    \ Bedürfnisse an."
   view_layouts_application_11: Gastzugang
   view_layouts_application_13: "Über Communtu"
   view_layouts_application_14: Feedback an Communtu
-  view_layouts_application_15: "angemeldet als  "
+  view_layouts_application_15: 'angemeldet als  '
   view_layouts_application_16: neue Nachricht
   view_layouts_application_18: keine neuen Nachrichten
   view_layouts_application_19: https://www.paypal.com/de_DE/DE/i/btn/btn_donate_LG.gif
-  view_layouts_application_1: "Communtu passt dein Linux-Ubuntu-System an deine individuellen Bedürfnisse an."
   view_layouts_application_2: Communtu
-  view_layouts_application_20: Javascript ist nicht aktiviert! Bitte aktiviere Javascript in deinen Browsereinstellungen.
+  view_layouts_application_20: Javascript ist nicht aktiviert! Bitte aktiviere Javascript
+    in deinen Browsereinstellungen.
   view_layouts_application_21: Communtu macht Ubuntu-Installationen einfach
   view_layouts_application_22: zum Benutzerprofil
-  view_layouts_application_23: BÜNDEL
+  view_layouts_application_23: "BÜNDEL"
   view_layouts_application_24: DOWNLOAD
   view_layouts_application_25: COMMUNTU
-  view_layouts_application_26: Navigation Bündel
+  view_layouts_application_26: "Navigation Bündel"
   view_layouts_application_27: Navigation Download
-  view_layouts_application_28: Navigation Communtu
   view_layouts_application_29: Gast
   view_layouts_application_3: Ubuntu Logo
   view_layouts_application_30: Hilfe/FAQ
   view_layouts_application_31: Kontakt
   view_layouts_application_32: Admin
-  view_layouts_application_5: "per PayPal:"
-  view_layouts_application_6: "Jetzt einfach, schnell und sicher online spenden – mit PayPal."
-  view_layouts_application_8: Start
+  view_layouts_application_5: 'per PayPal:'
+  view_layouts_application_6: "Jetzt einfach, schnell und sicher online spenden \u2013\
+    \ mit PayPal."
   view_layouts_application_9: Abmelden
-  view_layouts_application_warning: "Achtung: in Kürze werden auf diesem Webserver kurze Wartungsarbeiten durchgeführt!"
+  view_layouts_application_warning: "Achtung: in Kürze werden auf diesem Webserver\
+    \ kurze Wartungsarbeiten durchgeführt!"
   view_layouts_donate: Spenden
   view_mailbox_show_1: Von
   view_mailbox_show_3: erhalten
   view_mailbox_show_5: Du hast keine Nachrichten in deinem Posteingang.
-  view_messages_show_0: "Von:"
-  view_messages_show_2: "erhalten am:"
+  view_messages_show_0: 'Von:'
+  view_messages_show_2: 'erhalten am:'
   view_messages_show_3: Antworten
   view_messages_show_4: Weiterleiten
-  view_metapackages_edit_2: "Bitte Versionen => 1.0 nur für ausgereifte Bündel verwenden. Versionsnummern müssen stets ansteigen. 0.10 ist höher als 0.9."
-  view_metapackages_edit_gpl: "Ich stimme zu, die Bündel Information unter der <a href=\"http://www.gnu.de/documents/gpl.de.html\">GNU General public license</a> (Version 2.0 oder höher) zu veröffentlichen."
-  view_metapackages_finish_migrate_0: "Alle Bündel wurden von "
-  view_metapackages_finish_migrate_1: " nach "
-  view_metapackages_finish_migrate_2: " migriert."
-  view_metapackages_finish_migrate_3: "Folgende Pakete konnten jedoch nicht migriert werden:"
-  view_metapackages_immediate_conflicts_0: "Konflikte innerhalb von Bündeln"
-  view_metapackages_immediate_conflicts_1: " ist in Konflikt mit "
   view_metapackages__metalist_10: Bewertung
-  view_metapackages__metalist_14: "installieren mittels Metapaket. Bitte vorher die Quellen hinzufügen."
-  view_metapackages__metalist_20: "<option>0 Bündel ausgewählt</option>"
+  view_metapackages__metalist_14: "installieren mittels Metapaket. Bitte vorher die\
+    \ Quellen hinzufügen."
   view_metapackages__metalist_2: Standard
+  view_metapackages__metalist_20: "<option>0 Bündel ausgewählt</option>"
   view_metapackages__metalist_3: "Öff."
-  view_metapackages_migrate_0: "Von welcher Distribution sollen die Bündel migriert werden ?"
-  view_metapackages_migrate_1: "Zu welcher Distribution sollen die Bündel migriert werden ?"
-  view_metapackages_new_4: "Standardmäßig installieren"
   view_metapackages__package_list_0: "Gesamtgröße des Bündels auf der Festplatte:"
   view_metapackages__package_list_1: "verfügbar für:"
   view_metapackages__package_list_2: "Paket/Programm aus Bündel entfernen"
-  view_metapackages__package_list_conflicts: "Konflikte mit folgenden Paketen/Bündeln:"
+  view_metapackages__package_list_conflicts: "Konflikte mit folgenden Paketen/Bü\
+    ndeln:"
+  view_metapackages_edit_2: "Bitte Versionen => 1.0 nur für ausgereifte Bündel\
+    \ verwenden. Versionsnummern müssen stets ansteigen. 0.10 ist höher als\
+    \ 0.9."
+  view_metapackages_edit_gpl: "Ich stimme zu, die Bündel Information unter der\
+    \ <a href=\"http://www.gnu.de/documents/gpl.de.html\">GNU General public license</a>\
+    \ (Version 2.0 oder höher) zu veröffentlichen."
+  view_metapackages_finish_migrate_0: "Alle Bündel wurden von "
+  view_metapackages_finish_migrate_1: ' nach '
+  view_metapackages_finish_migrate_2: ' migriert.'
+  view_metapackages_finish_migrate_3: 'Folgende Pakete konnten jedoch nicht migriert
+    werden:'
+  view_metapackages_immediate_conflicts_0: "Konflikte innerhalb von Bündeln"
+  view_metapackages_immediate_conflicts_1: ' ist in Konflikt mit '
+  view_metapackages_migrate_0: "Von welcher Distribution sollen die Bündel migriert\
+    \ werden ?"
+  view_metapackages_migrate_1: "Zu welcher Distribution sollen die Bündel migriert\
+    \ werden ?"
+  view_metapackages_new_4: "Standardmäßig installieren"
   view_metapackages_rdepends_0: "Im Bündel "
   view_metapackages_rdepends_1: " direkt und indirekt enthaltene Bündel und Pakete"
   view_metapackages_show_0: "Bündel erstellt von "
   view_metapackages_show_12: "nicht veröffentlicht"
-  view_metapackages_show_14: "  Aktionen:&nbsp;&nbsp;"
+  view_metapackages_show_14: '  Aktionen:&nbsp;&nbsp;'
   view_metapackages_show_15: Editieren
   view_metapackages_show_16: Paketliste editieren
   view_metapackages_show_17: "Veröffentlichen"
-  view_metapackages_show_18: Wenn du das Bündel veröffentlichst, wird es für alle Nutzer zugänglich. Allerdings kann es danach nicht mehr gelöscht oder unbenannt werden.
+  view_metapackages_show_18: "Wenn du das Bündel veröffentlichst, wird es fü\
+    r alle Nutzer zugänglich. Allerdings kann es danach nicht mehr gelöscht\
+    \ oder unbenannt werden."
   view_metapackages_show_3: "Zurück"
-  view_metapackages_show_8: "Bewertung: "
+  view_metapackages_show_8: 'Bewertung: '
   view_metapackages_show_9: "Veröffentlicht: "
-  view_metapackages_show_comment_and_ratings: Neuste Kommentare und Bewertungen für dieses Bündel
-  view_metapackages_show_deb_error: Beim Erzeugen von Metapaketen ist ein Fehler aufgetreten. Wir kümmern uns um das Problem.
+  view_metapackages_show_comment_and_ratings: "Neuste Kommentare und Bewertungen fü\
+    r dieses Bündel"
+  view_metapackages_show_deb_error: "Beim Erzeugen von Metapaketen ist ein Fehler\
+    \ aufgetreten. Wir kümmern uns um das Problem."
   view_metapackages_show_modified: "Das Bündel enthält Änderungen."
   view_metapackages_show_save: "Bündel als Metapaket speichern"
-  view_metapackages_show_save_2: "Neues Metapaket erstellen."
-  view_metapackages_show_save_3: "Zum Erstellen des Metapakets muss ein englischer Titel und eine englische Beschreibung vergeben werden."
-  view_metapackages_show_version: "Version:"
-  view_metapackages_show_version_v: "(Version {{v}})"
-  view_my_mailer_mail_0: "Hallo, \n\nes wurde auf www.communtu.de ein Feedback gesendet. Der Betreff ist:"
-  view_my_mailer_mail_1: "Folgender Kommentar wurde hinterlassen:"
-  view_my_mailer_mailerror_0: "Hallo,  \n es wurde auf www.communtu.de ein Fehler gemeldet.  \nDer Benutzer möchte ganz gern, darüber benachrichtigt werden, wenn der Fehler nicht mehr auftritt."
-  view_my_mailer_repo_0: "Hallo, \n\nes wurde auf www.communtu.de ein Vorschlag für ein neues Repository gemacht:"
+  view_metapackages_show_save_2: Neues Metapaket erstellen.
+  view_metapackages_show_save_3: Zum Erstellen des Metapakets muss ein englischer
+    Titel und eine englische Beschreibung vergeben werden.
+  view_metapackages_show_version: 'Version:'
+  view_metapackages_show_version_v: (Version {{v}})
+  view_my_mailer_mail_0: "Hallo, \n\nes wurde auf www.communtu.de ein Feedback gesendet.\
+    \ Der Betreff ist:"
+  view_my_mailer_mail_1: 'Folgender Kommentar wurde hinterlassen:'
+  view_my_mailer_mailerror_0: "Hallo,  \n es wurde auf www.communtu.de ein Fehler\
+    \ gemeldet.  \nDer Benutzer möchte ganz gern, darüber benachrichtigt werden,\
+    \ wenn der Fehler nicht mehr auftritt."
+  view_my_mailer_repo_0: "Hallo, \n\nes wurde auf www.communtu.de ein Vorschlag fü\
+    r ein neues Repository gemacht:"
   view_my_mailer_repo_1: "Folgende Begründung wurde angegeben:"
-  view_packages__deps_0: "keine"
+  view_packages__deps_0: keine
   view_packages__deps_1: "          Nur für "
+  view_packages__packagelist_1: 'Nur&nbsp;Programme:'
+  view_packages__packagelist_2: 'Suche:'
+  view_packages__search_0: Suche nach Paketen
   view_packages_edit_0: Paket bearbeiten
   view_packages_edit_10: Beschreibung des Pakets
   view_packages_edit_2: Icon
-  view_packages_edit_3: "&nbsp;&nbsp;Neues Icon: "
-  view_packages_edit_4: "Ist ein Programm:"
+  view_packages_edit_3: '&nbsp;&nbsp;Neues Icon: '
+  view_packages_edit_4: 'Ist ein Programm:'
   view_packages_edit_8: Neuer Link auf ein Video
-  view_packages_edit_9: "    Beschreibung des Videos:"
+  view_packages_edit_9: '    Beschreibung des Videos:'
   view_packages_new_0: Neues Paket
   view_packages_new_3: Version
   view_packages_new_4: Quelle
   view_packages_new_6: Videos
-  view_packages__packagelist_1: "Nur&nbsp;Programme:"
-  view_packages__packagelist_2: "Suche:"
-  view_packages_rdepends_0: "Im Paket "
-  view_packages_rdepends_1: " direkt und indirekt enthaltene Pakete"
-  view_packages__search_0: Suche nach Paketen
-  view_packages_show_11: "Weblinks:"
+  view_packages_rdepends_0: 'Im Paket '
+  view_packages_rdepends_1: ' direkt und indirekt enthaltene Pakete'
+  view_packages_show_11: 'Weblinks:'
   view_packages_show_15: Quelle/Repository
   view_packages_show_16: Paket-Version
-  view_packages_show_17: "Beinhaltet folgende Pakete (\"depends\" und \"recommends\"):"
-  view_packages_show_19: "Konflikte mit folgenden Paketen (nur solche ohne Version):"
-  view_packages_show_21: "Wird in folgenden Paketen benutzt:"
-  view_packages_show_26: "Metapaket in Bündel wandeln"
+  view_packages_show_17: 'Beinhaltet folgende Pakete ("depends" und "recommends"):'
+  view_packages_show_19: 'Konflikte mit folgenden Paketen (nur solche ohne Version):'
   view_packages_show_2: Paket sofort installieren
+  view_packages_show_21: 'Wird in folgenden Paketen benutzt:'
+  view_packages_show_26: "Metapaket in Bündel wandeln"
   view_packages_show_5: "Quellen für diese Paket hinzufügen"
-  view_packages_show_8: "Beliebtheit:"
-  view_packages_show_9: "/5 Sterne&nbsp;&nbsp; "
-  view_passwords_edit_0: "    Passwort:"
+  view_packages_show_8: 'Beliebtheit:'
+  view_packages_show_9: '/5 Sterne&nbsp;&nbsp; '
+  view_passwords_edit_0: '    Passwort:'
   view_passwords_edit_1: "    Passwort bestätigen:"
   view_passwords_edit_2: Neues Passwort erhalten
   view_passwords_new_0: Passwort vergessen
-  view_passwords_new_1: "    Mit welcher Email-Adresse hast du das Benutzerkonto angelegt?"
+  view_passwords_new_1: '    Mit welcher Email-Adresse hast du das Benutzerkonto angelegt?'
   view_passwords_new_2: "Passwort zurücksetzen"
   view_rating_new_comment_cancel: Abbrechen
-  view_rating_new_comment_info: Gib bitte eine Beschreibung zu deiner Bewertung an. Diese Angabe ist <b>Pflicht</b>.
+  view_rating_new_comment_info: Gib bitte eine Beschreibung zu deiner Bewertung an.
+    Diese Angabe ist <b>Pflicht</b>.
   view_rating_rating_rate: von 5 Sternen vergeben
   view_rating_show_title_got_ratings: von 5 Sternen
   view_rating_show_title_no_ratings: noch keine User Bewertung
   view_rating_show_title_ratings_count: (Basierend auf {{votes}} Bewertung(en))
   view_repositories_edit_0: Repository bearbeiten
-  view_repositories_edit_1: "Distribution:"
+  view_repositories_edit_1: 'Distribution:'
   view_repositories_index_0: Repositories
   view_repositories_index_5: Neues Repository
-  view_repositories_migrate_1: "Kopiere Repository "
-  view_repositories_migrate_2: " nach Distribution"
+  view_repositories_migrate_1: 'Kopiere Repository '
+  view_repositories_migrate_2: ' nach Distribution'
   view_repositories_multinew_0: Einlesen
   view_repositories_new_0: "Neues Repository für "
   view_repositories_new_4: "GPG Schlüssel (Optional)"
   view_repositories_show_0: Repository anzeigen
   view_repositories_show_4: "Paketliste für {{arch}}:"
-  view_repositories_show_6: "        OpenSource"
-  view_repositories_show_7: "        kommerziell "
+  view_repositories_show_6: '        OpenSource'
+  view_repositories_show_7: '        kommerziell '
+  view_roles__role_0: "Rolle löschen"
+  view_roles__role_1: Rolle zuweisen
   view_roles_edit_0: Rolle bearbeiten
   view_roles_edit_1: Rollenname
   view_roles_index_0: "Rollen für "
-  view_roles_index_1: "Zugewiesene Rollen:"
+  view_roles_index_1: 'Zugewiesene Rollen:'
   view_roles_index_2: "Verfügbare Rollen:"
   view_roles_new_0: Neue Rolle
-  view_roles__role_0: "Rolle löschen"
-  view_roles__role_1: Rolle zuweisen
-  view_roles_show_0: "Rollenname:"
+  view_roles_show_0: 'Rollenname:'
+  view_sent__user_exists_0: User gefunden
+  view_sent__user_not_exists_0: User nicht gefunden
   view_sent_index_0: verschickte Nachrichten
   view_sent_index_3: Zeitpunkt
   view_sent_index_5: Du hast noch keine Nachrichten versendet.
-  view_sent_new_3: "Nachricht:"
-  view_sent_show_2: "Zeitpunkt:"
-  view_sent__user_exists_0: User gefunden
-  view_sent__user_not_exists_0: User nicht gefunden
-  view_sessions_new_0: "Anmelden mit Benutzernamen und Passwort:"
+  view_sent_new_3: 'Nachricht:'
+  view_sent_show_2: 'Zeitpunkt:'
+  view_sessions_new_0: 'Anmelden mit Benutzernamen und Passwort:'
   view_sessions_new_3: Benutzer auf diesem Computer dauerhaft anmelden
-  view_user_mailer_activation_0: ", dein Benutzerkonto wurde aktiviert.  Folge nun dem Link:"
-  view_user_mailer_forgot_password_0: ", um ein neues Passwort zu erhalten, folge dem Link:"
-  view_user_mailer_reset_password_0: ", du hast ein neues Passwort erhalten."
-  view_user_mailer_signup_notification_0: "Hallo und herzliche Willkommen bei Communtu!\n\n\n Du hast dich bei Communtu http://www.communtu.de\nerfolgreich registriert. Jetzt kannst du alle Features der Plattform\nbenutzen."
-  view_user_mailer_signup_notification_1: "Dein Benutzername lautet:"
-  view_user_mailer_signup_notification_2: "\nViele Grüße\n\ndas Communtu-Team\n\n  Weitere Informationen zu den Projekt insbesondere was du für Möglichkeiten der Nutzung hast, findest du in unserer FAQ-Liste unter\n http://www.communtu.de/home/faq\n\n  Unsere Ankündigungen und Mailinglisten findest du unter:\nhttp://www.communtu.de/home/news"
-  view_user_profiles_help_0: Feststellen der Ubuntu-Version
-  view_user_profiles_help_1: "Öffne ein Terminal unter \"Anwendungen\" -> \"Zubehör\" -> \"Terminal"
-  view_user_profiles_help_2: "Gebe dort ein: "
-  view_user_profiles_help_3: "Wenn deine Version von Communtu nicht unterstützt wird, gibt es zwei Möglichkeiten:"
-  view_user_profiles_help_4: du machst ein Upgrade auf eine neuere Version
-  view_user_profiles_help_5: du erweiterst Communtu um deine Version
+  view_user_mailer_activation_0: ', dein Benutzerkonto wurde aktiviert.  Folge nun
+    dem Link:'
+  view_user_mailer_forgot_password_0: ', um ein neues Passwort zu erhalten, folge
+    dem Link:'
+  view_user_mailer_reset_password_0: ', du hast ein neues Passwort erhalten.'
+  view_user_mailer_signup_notification_0: "Hallo und herzliche Willkommen bei Communtu!\n\
+    \n\n Du hast dich bei Communtu http://www.communtu.de\nerfolgreich registriert.\
+    \ Jetzt kannst du alle Features der Plattform\nbenutzen."
+  view_user_mailer_signup_notification_1: 'Dein Benutzername lautet:'
+  view_user_mailer_signup_notification_2: "\nViele Grüße\n\ndas Communtu-Team\n\
+    \n  Weitere Informationen zu den Projekt insbesondere was du für Möglichkeiten\
+    \ der Nutzung hast, findest du in unserer FAQ-Liste unter\n http://www.communtu.de/home/faq\n\
+    \n  Unsere Ankündigungen und Mailinglisten findest du unter:\nhttp://www.communtu.de/home/news"
   view_user_profiles__installation_0: Ubuntu-Nachinstallation
-  view_user_profiles__installation_13: "(Bei einem Versionswechsel muss der erste Schritt erneut ausgeführt werden, da die Communtu Quellen durch das Upgrade deaktiviert wurden.):"
+  view_user_profiles__installation_1: "Um etwas installieren zu können, musst du\
+    \ zunächst unter \"Softwareauswahl\" etwas auswählen."
+  view_user_profiles__installation_13: "(Bei einem Versionswechsel muss der erste\
+    \ Schritt erneut ausgeführt werden, da die Communtu Quellen durch das Upgrade\
+    \ deaktiviert wurden.):"
   view_user_profiles__installation_16: "Quellen und Schlüssel eintragen"
-  view_user_profiles__installation_17: "Link einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer öffnen - wenn kein Prorgammdialog erscheint, wurde die Datei auf deinem Rechner heruntergeladen. Dort kannst du sie mit Doppelklick starten."
-  view_user_profiles__installation_1: "Um etwas installieren zu können, musst du zunächst unter \"Softwareauswahl\" etwas auswählen."
-  view_user_profiles__installation_21: "installieren der Metapakete. Bitte vorher die Quellen hinzufügen."
-  view_user_profiles__installation_23: "Pakete installieren. Es gibt zwei Alternativen:"
+  view_user_profiles__installation_17: "Link einfach anklicken und dann wie vorgeschlagen\
+    \ mit dem Paket-Installer öffnen - wenn kein Prorgammdialog erscheint, wurde\
+    \ die Datei auf deinem Rechner heruntergeladen. Dort kannst du sie mit Doppelklick\
+    \ starten."
+  view_user_profiles__installation_2: "Aufgrund deiner Auswahl werden jetzt Programme\
+    \ auf deinem Computer installiert. Folgende Schritte sind dafür zu tun"
+  view_user_profiles__installation_21: "installieren der Metapakete. Bitte vorher\
+    \ die Quellen hinzufügen."
+  view_user_profiles__installation_23: 'Pakete installieren. Es gibt zwei Alternativen:'
   view_user_profiles__installation_24: "Installation über ein Metapaket"
   view_user_profiles__installation_25: "Installation über apturl"
-  view_user_profiles__installation_27: "Die Browser Konqueror und Opera bitte erst für "
+  view_user_profiles__installation_27: "Die Browser Konqueror und Opera bitte erst\
+    \ für "
   view_user_profiles__installation_28: http://wiki.ubuntuusers.de/apturl
-  view_user_profiles__installation_29: " konfigurieren."
-  view_user_profiles__installation_2: "Aufgrund deiner Auswahl werden jetzt Programme auf deinem Computer installiert. \
-    Folgende Schritte sind dafür zu tun"
-  view_user_profiles__installation_30: "Hinweis: Bitte .deb-Dateien nicht umbenennen."
-  view_user_profiles__installation_31: "Die Communtu-Metapakete können auch mittles {{synaptic}} (unter System -> Systemverwaltung) angezeigt, installiert und deinstalliert werden. Änderungen an Bündeln werden über die Ubuntu-Paketverwaltung automatisch eingespielt."
-  view_user_profiles__installation_33: Folgende  
-  view_user_profiles__installation_34: werden zu dem System hinzugefügt.
-  view_user_profiles_new_0: Neues Nutzerprofil
-  view_user_profiles_new_1: Benutzer
-  view_user_profiles_new_3: Expertenlevel
-  view_user_profiles__profile_data_0: "Installation vorbereiten: Voreinstellungen eingeben"
-  view_user_profiles__profile_data_10: " Nur Ubuntuquellen zulassen (\"main/restricted\", sehr sicher: Sicherheits-Updates von Ubuntu)"
-  view_user_profiles__profile_data_11: " Auch Communityquellen zulassen (\"universe/multiverse\", auch sicher, mehr Programme/Komfort: "
-  view_user_profiles__profile_data_12: " Alle Quellen zulassen (etwas unsicherer: <a href=\"http://wiki.ubuntuusers.de/Fremdquellen\">Fremdpakete</a> können das System gefährden, aber noch mehr Programme/Komfort: "
-  view_user_profiles__profile_data_13: "Hier kannst du auswählen, welche Lizenzen du zulassen willst"
-  view_user_profiles__profile_data_14: " Freie Software (Quellen liegen offen und dürfen weiterentwickelt werden)"
-  view_user_profiles__profile_data_15: " Unfreie Lizenzen zulassen (auch kostenlos, aber Quellen liegen nicht offen - der weiche Übergang zu Linux: "
+  view_user_profiles__installation_29: ' konfigurieren.'
+  view_user_profiles__installation_30: 'Hinweis: Bitte .deb-Dateien nicht umbenennen.'
+  view_user_profiles__installation_31: "Die Communtu-Metapakete können auch mittles\
+    \ {{synaptic}} (unter System -> Systemverwaltung) angezeigt, installiert und deinstalliert\
+    \ werden. Änderungen an Bündeln werden über die Ubuntu-Paketverwaltung\
+    \ automatisch eingespielt."
+  view_user_profiles__installation_33: Folgende
+  view_user_profiles__installation_34: "werden zu dem System hinzugefügt."
+  view_user_profiles__profile_data_0: 'Installation vorbereiten: Voreinstellungen
+    eingeben'
+  view_user_profiles__profile_data_1: 'Auf dieser Seite kannst du die Grundeinstellungen
+    deines Computers angeben. '
+  view_user_profiles__profile_data_10: ' Nur Ubuntuquellen zulassen ("main/restricted",
+    sehr sicher: Sicherheits-Updates von Ubuntu)'
+  view_user_profiles__profile_data_11: ' Auch Communityquellen zulassen ("universe/multiverse",
+    auch sicher, mehr Programme/Komfort: '
+  view_user_profiles__profile_data_12: " Alle Quellen zulassen (etwas unsicherer:\
+    \ <a href=\"http://wiki.ubuntuusers.de/Fremdquellen\">Fremdpakete</a> können\
+    \ das System gefährden, aber noch mehr Programme/Komfort: "
+  view_user_profiles__profile_data_13: "Hier kannst du auswählen, welche Lizenzen\
+    \ du zulassen willst"
+  view_user_profiles__profile_data_14: " Freie Software (Quellen liegen offen und\
+    \ dürfen weiterentwickelt werden)"
+  view_user_profiles__profile_data_15: " Unfreie Lizenzen zulassen (auch kostenlos,\
+    \ aber Quellen liegen nicht offen - der weiche Übergang zu Linux: "
   view_user_profiles__profile_data_17: "Speichern und feiner auswählen"
-  view_user_profiles__profile_data_1: "Auf dieser Seite kannst du die Grundeinstellungen deines Computers angeben. "
-  view_user_profiles__profile_data_2: "Achtung: zum Schluss unten auf den 'Speichern'-Knopf klicken!"
-  view_user_profiles__profile_data_3: "Welche Aufgaben willst du mit deinem Computer erledigen? (um grob eine Auswahl zu treffen, Feineinstellungen später möglich)"
+  view_user_profiles__profile_data_2: 'Achtung: zum Schluss unten auf den ''Speichern''-Knopf
+    klicken!'
+  view_user_profiles__profile_data_3: "Welche Aufgaben willst du mit deinem Computer\
+    \ erledigen? (um grob eine Auswahl zu treffen, Feineinstellungen später mö\
+    glich)"
   view_user_profiles__profile_data_4: Weitere Informationen
   view_user_profiles__profile_data_6: "Wähle bitte deine Ubuntu-Version aus. "
   view_user_profiles__profile_data_7: Wie stelle ich die Version fest?
   view_user_profiles__profile_data_8: "Über den Browser festgestellte Version: "
-  view_user_profiles__profile_data_9: Hier kannst du einstellen, wie sicher bzw. komfortabel deine Installationsquellen sein sollen
-  view_user_profiles__profile_rating_0: "Auswahl der zu installierenden Programmbündel und Programme"
-  view_user_profiles__profile_rating_1: "Rechts findest du die Details zur links ausgewählten Kategorie."
+  view_user_profiles__profile_data_9: Hier kannst du einstellen, wie sicher bzw. komfortabel
+    deine Installationsquellen sein sollen
+  view_user_profiles__profile_rating_0: "Auswahl der zu installierenden Programmbü\
+    ndel und Programme"
+  view_user_profiles__profile_rating_1: "Rechts findest du die Details zur links ausgewä\
+    hlten Kategorie."
   view_user_profiles__sources_0: "Quellen für die zu installierenden Programme"
-  view_user_profiles__sources_1: "Hier werden die zu installierenden Programme und Pakete nach den zugehörigen \
-    Quellen sortiert aufgelistet, so dass du auch sehen kannst, weshalb die jeweiligen \
-    Quellen hinzugefügt werden."
-  view_users_edit_0: Benuzterprofil bearbeiten
-  view_users_edit_2: "Profil löschen"
-  view_users_edit_3: "Benutzername:"
-  view_users_edit_9: "  Durch Klicken auf \"Speichern\" wird das Nutzerkonto zugleich dauerhaft gemacht."
-  view_users_index_0: Alle Benutzer
-  view_users_index_1: "Insgesamt haben wir "
-  view_users_index_2: " angemeldete Benutzer."
-  view_users_index_5: Aktiviert?
-  view_users_index_6: Rollen
+  view_user_profiles__sources_1: "Hier werden die zu installierenden Programme und\
+    \ Pakete nach den zugehörigen Quellen sortiert aufgelistet, so dass du auch\
+    \ sehen kannst, weshalb die jeweiligen Quellen hinzugefügt werden."
+  view_user_profiles_help_0: Feststellen der Ubuntu-Version
+  view_user_profiles_help_1: "Öffne ein Terminal unter \"Anwendungen\" -> \"Zubehö\
+    r\" -> \"Terminal"
+  view_user_profiles_help_2: 'Gebe dort ein: '
+  view_user_profiles_help_3: "Wenn deine Version von Communtu nicht unterstützt\
+    \ wird, gibt es zwei Möglichkeiten:"
+  view_user_profiles_help_4: du machst ein Upgrade auf eine neuere Version
+  view_user_profiles_help_5: du erweiterst Communtu um deine Version
+  view_user_profiles_new_0: Neues Nutzerprofil
+  view_user_profiles_new_1: Benutzer
+  view_user_profiles_new_3: Expertenlevel
   view_users__mailbox_list_1: Mailbox
   view_users__mailbox_list_3: Versendete Nachrichten
-  view_users_new_10: "Dein Vorname"
-  view_users_new_11: "Dein Nachname"
-  view_users_new_12: "(optional)"
-  view_users_new_1: "Hier hast du die Möglichkeit dich zu registrieren."
-  view_users_new_2: "Wenn du über die Weiterentwicklung von Communtu informiert werden möchtest, dann gebe bitte deine richtige E-Mail-Adresse an."
-  view_users_new_6: "Passwort bestätigen"
-  view_users_new_8: Ja, ich möchte die Maillingliste für Ankündigungen abbonieren.
-  view_users_new_9: Ja, ich möchte die Maillingliste für Diskussionen abbonieren.
-  view_users_show_0: Benutzer anzeigen
-  view_users_show_2: "Nutzer seit: "
-  view_users_show_3: (Monat/Jahr)
-  view_users_show_4: "Zuletzt eingeloggt: "
-  view_users_show_5: "Erstellte Bündel: "
-  view_users_show_8: Nachrichten
   view_users__sidebar_0: Installation
   view_users__sidebar_1: "Bündel verwalten"
   view_users__sidebar_2: Programme suchen
@@ -904,16 +1198,42 @@ Wenn du der Meinung bist, dass dein Bündel um nützliche Programme erweitert we
   view_users__user_0: aktivieren
   view_users__user_1: deaktivieren
   view_users__user_2: Rollen bearbeiten
+  view_users_edit_0: Benuzterprofil bearbeiten
+  view_users_edit_2: "Profil löschen"
+  view_users_edit_3: 'Benutzername:'
+  view_users_edit_9: '  Durch Klicken auf "Speichern" wird das Nutzerkonto zugleich
+    dauerhaft gemacht.'
+  view_users_index_0: Alle Benutzer
+  view_users_index_1: 'Insgesamt haben wir '
+  view_users_index_2: ' angemeldete Benutzer.'
+  view_users_index_5: Aktiviert?
+  view_users_index_6: Rollen
+  view_users_new_1: "Hier hast du die Möglichkeit dich zu registrieren."
+  view_users_new_10: Dein Vorname
+  view_users_new_11: Dein Nachname
+  view_users_new_12: (optional)
+  view_users_new_2: "Wenn du über die Weiterentwicklung von Communtu informiert\
+    \ werden möchtest, dann gebe bitte deine richtige E-Mail-Adresse an."
+  view_users_new_6: "Passwort bestätigen"
+  view_users_new_8: "Ja, ich möchte die Maillingliste für Ankündigungen abbonieren."
+  view_users_new_9: "Ja, ich möchte die Maillingliste für Diskussionen abbonieren."
+  view_users_show_0: Benutzer anzeigen
+  view_users_show_2: 'Nutzer seit: '
+  view_users_show_3: (Monat/Jahr)
+  view_users_show_4: 'Zuletzt eingeloggt: '
+  view_users_show_5: "Erstellte Bündel: "
+  view_users_show_8: Nachrichten
   view_videos_edit_0: Video bearbeiten
-  view_videos_show_0: "Url:"
+  view_videos_show_0: 'Url:'
   wait_for_debs: auf Bau der Metapakete warten
   wait_for_release: auf offizielles Ubuntu-Release warten
   wait_for_sync: auf Synchronisation der Repositories warten
   warnings: Warnungen
   we_want_you: Wir brauchen dich
   weblinks: Weblinks
+  which_programs_do_you_need: "Zu welchem Thema suchst du Programme (Büro, Grafik,...)?\
+    \ Hier kannst du deine Interessengebiete eingeben und passende vorkonfigurierte\
+    \ Programmbündel zusammenstellen."
   yes1: ja
-  you_can: "Du kannst dich auch "
+  you_can: 'Du kannst dich auch '
   zentrum_solidarische_oekonomie: "Zentrum für Solidarische Ökonomie"
-  choose_category: "Bitte auswählen"
-  
