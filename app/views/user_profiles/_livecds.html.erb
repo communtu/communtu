@@ -6,7 +6,7 @@
   <% total = 0 %>
   <% for cd in cds %>
       <%= render :partial => 'user_profiles/livecd', :object => cd %>
-      <% if cd.generated %>
+      <% if cd.generated and !cd.size.nil? %>
         <% total += cd.size %>
       <% end %>
   <% end %>
