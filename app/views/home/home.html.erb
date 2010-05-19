@@ -6,31 +6,20 @@
 </noscript> 
 
 
-<%=t(:view_home_home_26)%>
+<h2>Einfache Installationsmöglichkeiten für Ubuntu</h2>
 <br />
-<%=t(:view_home_home_27)%>
-<div id="conny_index"><%= image_tag("/images/conny_start.jpg", :title =>t(:conny_picture), :alt=>t(:conny_picture)) %></div>
-<div  id="list_nextto_conni">	
-<ul>
 
-		<li>
-			<a href="<%= user_path(current_user) + "/user_profile/edit" %>" class="teaser"><%=t(:view_home_home_28)%></a><br />
-			<%=t(:view_home_home_29)%>
-		</li>
-		<li>
-			<a href="<%= user_path(current_user) + "/metapackages/0" %>" class="teaser"><%=t(:view_home_home_30)%></a><br />
-<%=t(:view_home_home_31)%>
-		</li>
-		<li>
-			<a href="/home/about" class="teaser"><%=t(:view_home_home_32)%></a><br />
-			<%=t(:view_home_home_33)%>
-		</li>
-	</ul>
-</div>
+<table><tr><td><%= link_to(image_tag("install.png", :height => 60, :title =>t(:go_to_download), :alt=>t(:go_to_download), :border => "0"), user_path(current_user) + "/user_profile/edit") %></td><td><%= t(:search_programs_bundles) %> <%= link_to(t(:continue), user_path(current_user) + "/user_profile/edit") %>
+</td></tr><tr><td colspan="2"><hr></td></tr><tr><td><%= link_to(image_tag("cd.png", :height => 60, :title =>t(:create_your_livedvd), :alt=>t(:create_your_livedvd), :border => "0"), user_path(current_user) + "/user_profile/edit") %>
+</td><td><%= t(:make_your_livedvd) %> <%= link_to(t(:continue), user_path(current_user) + "/user_profile/edit") %></td></tr><tr><td colspan="2"><hr></td></tr><tr><td><%= link_to(image_tag("apps/Metapackage.png", :height => 60, :title =>t(:make_your_bundle), :alt=>t(:make_your_bundle), :border => "0"), "/cart/create") %>
+</td><td><%= t(:make_a_systemupgrade) %> <%= link_to(t(:continue), user_path(current_user) + "/cart/create") %></td></tr><tr><td colspan="2"><hr></td></tr>
+</table>
+<div id="conny_index"><%= image_tag("/images/conny_start.jpg", :title =>t(:conny_picture), :alt=>t(:conny_picture)) %></div>
+<div id="list_nextto_conni">   
 <% u = User.find(:last, :conditions => {:anonymous => false}) %>
 <h3><%=t(:hello)%></h3>
 <%=t(:last_user)%> <strong><%= u.login %> <%= image_tag("/images/icon_user.png") %>.</strong>
-
+</div>
 
 <div class="best_buendle">
 	<div class="buendle_count">

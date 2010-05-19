@@ -175,6 +175,7 @@ de:
   controller_users_8: Benutzer deaktiviert
   controller_users_9: Es gab ein Problem mit der Deaktivierung dieses Benutzers.
   create: Anlegen
+  create_your_livedvd: "Erstelle dir eine Live-CD"
   creation_error: Bei der Erstellung des Pakets ist ein Fehler aufgetreten.
   creation_failed: Erzeugung fehlgeschlagen
   creation_in_progress: wird gerade erstellt
@@ -216,6 +217,7 @@ de:
   four_and_fourty_letters: Zwischen 4 und 40 Zeichen
   generate_all_debs_for_bundle: "Alle debs für das Bündel erzeugen"
   generate_cd: LiveCD/DVD neu erstellen
+  go_to_download: "Gehe zur Downloadseite"
   gpg_key: "GPG Schlüssel (optional): "
   headline: macht Ubuntu-Installationen einfach
   health_status: Gesundheitsstatus
@@ -295,7 +297,10 @@ de:
   logfile_extract: Auszug aus dem Logfile
   mailinglist: 'Mailinglisten:'
   make_distribution_final: Distribution als stabil freigeben
+  make_a_systemupgrade: "Du möchtest ein System-Upgrade machen. Dann schau <a href=\"http://communtu.wordpress.com/2009/09/16/mit-communtu-ein-systemupgrade-durchfuhren/\">wie einfach das geht</a> und lade deine Paketliste bei Communtu hoch."
   make_distribution_visible: Distribution sichtbar machen
+  make_your_bundle: "Erstelle dir ein Bündel zum System-Upgrade"
+  make_your_livedvd: "Du hast noch kein Ubuntu installiert. Dann wähle hier deine Bündel aus und brenne dir eine CD, damit du sie als Live-CD und zur Installation nutzen kannst."
   match_ubuntu: "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
   match_with_communtu: "Communtu - gemeinsam Ubuntu-Linux an individuelle Bedü\
     rfnisse anpassen"
@@ -393,7 +398,8 @@ de:
   save: Speichern
   save_selection: Auswahl speichern
   search_package: Paket suchen
-  security_type: 'Sicherheitstyp:'
+  search_programs_bundles: "Du hast bereits ein Ubuntu installiert und suchst jetzt passende Programme? Hier kannst du deine Interessengebiete eingeben und passende vorkonfigurierte Programmbündel downloaden."
+  security_type: "Sicherheitstyp:"
   senden: Abschicken
   settings: Einstellungen
   show: Anzeigen
