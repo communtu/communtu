@@ -1,12 +1,12 @@
-<div class="inner0">
+<div class="inner2">
 <% if logged_in? %>
 <%= render_flash %>
-    <span class="headline"><%=t(:bundel_information_edit)%></span>
+    <span class="headline"><%=t(:bundel_edit)%></span>
     <br/>
     <br/>
     <% form_for(@metapackage) do |f| %>
         <br/>
-        <table>
+        <table width="125%">
         <tr>
 	        <td><%=t(:name_with_colon)%></td>
 	        <% if @metapackage.is_published? then %>
@@ -17,32 +17,32 @@
               <% elsif I18n.locale.to_s == "en" %>
                 <td><%= @metapackage.name %></td>
                  <% else %>
-              <td><input id="metapackage_name" name="metapackage[name]" size="16" type="text" value="<%= @metapackage.name %>" /></td>
+              <td><input id="metapackage_name" name="metapackage[name]" size="16" type="text" value="<%= @metapackage.name %>" /></td><td></td>
                  <% end %>
             <% end  %></tr>
             <% if (@metapackage.name_english == "" or @metapackage.name_english == nil) and I18n.locale.to_s != "en" %>
               <tr>
               <td><%=t(:english_name)%></td>
-              <td><input id="metapackage_name_english" name="metapackage[name_english]" size="16" type="text" value="" /> 
+              <td colspan="2"><input id="metapackage_name_english" name="metapackage[name_english]" size="16" type="text" value="" /> 
                   <a href="mailto:info@communtu.de?subject=<%= @metapackage.id %>"><%= t(:help_translation) %></a></td>
               </tr>
             <% elsif I18n.locale.to_s != "en" %>
               <tr>
               <td><%=t(:english_name)%></td>
-              <td><%= @metapackage.name_english %></td></tr>
+              <td><%= @metapackage.name_english %></td><td></td></tr>
             <% else %>            
             <% end %>
         <tr>
 	        <td><%=t(:view_metapackages_show_version)%></td>
-	        <td><%= f.text_field(:version, { :size => 16}) %></td>	
+	        <td><%= f.text_field(:version, { :size => 16}) %></td><td></td>	
         </tr>
-		<tr><td colspan=2><%=t(:view_metapackages_edit_2)%></td></tr>
+       <tr><td></td><td colspan="2"><%=t(:view_metapackages_edit_2)%></td></tr>
         <tr>
 	        <td><%=t(:category_with_colon)%></td>
 	        <td>
 	        	<% @categories = Category.find(:all, :order => "name")%>
 		        <%= f.collection_select(:category_id,@categories,:id,:name,{:include_blank => t(:choose_category)})%>
-	        </td>
+	        </td><td></td>
         </tr>
         <tr>
 	        <td><%=t(:install_by_default)%></td>
@@ -51,7 +51,7 @@
         <% else %>
             <td><%= if @metapackage.default_install then t(:yes1) else t(:no1) end  %></td>
         <% end %>
-        </tr>
+        <td></td></tr>
         <tr>
 	        <td valign='top'><%=t(:description_with_colon)%></td>
                 <% if @metapackage.description == "" or @metapackage.description == nil %>
@@ -59,18 +59,18 @@
                 <% else %>
 	        <td><textarea id="metapackage_description" name="metapackage[description]" rows="6" cols="50"><%= @metapackage.description %></textarea></td>
 <% end %>
-        </tr>
+        <td valign='top'><%= t(:description_for_description)%></td></tr>
  <% if (@metapackage.description_english == "" or @metapackage.description_english == nil) and I18n.locale.to_s != "en" %>
               <tr>
                <td valign='top'><%=t(:english_description)%></td>
-              <td><textarea id="metapackage_description_english" name="metapackage[description_english]" rows="6" cols="50"></textarea></td>
+              <td><textarea id="metapackage_description_english" name="metapackage[description_english]" rows="6" cols="50"></textarea></td><td></td>
               </tr>
              <% elsif (flash[:error] != "" and I18n.locale.to_s != "en") %>
              <tr>
               <td valign='top'>
               <%=t(:english_description)%></td>
               <td><textarea id="metapackage_description_english" name="metapackage[description_english]" rows="6" cols="50"><%= @metapackage.description_english %></textarea></td>
-              </tr>
+              <td></td></tr>
             <% else %>
             <% end %>
 

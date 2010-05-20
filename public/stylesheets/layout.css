@@ -111,6 +111,16 @@ div.inner1 {
 	height: 100%;
 	}
 
+div.inner2 {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ac873f;
+	padding: 5px;
+	margin: 5px;
+	height: 100%;
+	width: 110%;
+	}
+
 div.meta_cart{
 	margin: 15px 10px 20px 20px;
 	padding: 10px 5px 10px 8px;

@@ -23,7 +23,7 @@ de:
   blog: Der Blog von Communtu
   blog_2: Blog
   blog_link: http://communtu.wordpress.com
-  bundel_information_edit: "Bündel Informationen bearbeiten"
+  bundel_edit: "Bündel bearbeiten"
   bundle: "Bündel"
   bundle_by_owner: "erstellte Bündel"
   bundle_editor: "Bündel-Editor"
@@ -185,6 +185,7 @@ de:
   debian_section: 'Debian-Section:'
   delete: "Löschen"
   description: Beschreibung
+  description_for_description: "Bitte gib hier eine kurze Vorstellung deines Bündels ein für was für Tätigkeiten es gedacht ist. Danach kannst du auch noch auf die Vorzüge einiger Programme daraus eingehen."
   description_with_colon: 'Beschreibung:'
   detailed_view: zur Detailansicht
   direct_indirect_covered_packages: Direkt und indirekt enthaltene Pakete
