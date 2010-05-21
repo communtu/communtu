@@ -18,7 +18,6 @@ en:
   view_home_beteiligung_12: Programming
   view_distributions_show_8: Before a distribution can be deleted, every user must be logged out! Are you sure?
   cd_failed: Failed - we will solve the problem and inform you when the ISO-file is ready to download
-  view_layouts_application_28: Navigation Communtu
   view_roles_index_0: roles for
   view_home_beteiligung_13: Since we have many ideas for the platform's further development, we need programmers. Ideally you already have some experience with Ruby on Rails.
   view_user_profiles__installation_16: Add sources and keys
@@ -146,6 +145,7 @@ en:
   view_users__mailbox_list_3: "sent messages "
   view_repositories_migrate_2: " to distribution"
   controller_suggestion_8: Ubuntu post-installation for users
+  bundel_edit: edit bundle
   english_name: "English name:"
   errors: Error
   view_packages_new_3: Version
@@ -159,7 +159,7 @@ en:
     Communtu -
      something went wrong while donating.
   conny_picture: Conny Communtu's portrait
-  bundle_to_livecd: Recreate Live-CD/DVD
+  bundle_to_livecd: Create Live-CD/DVD from bundle <i>{{name}}</i>
   view_home_cancel_1: Either you try a again or you use the possibility via bank transfer
   view_home_news_5: This list is intended for general announcements from the Communtu team to the users. The frequency is a little higher than once a week. Posts will be collected in an
   used_in_bundles: "Is used at Communtu in these bundles:"
@@ -274,6 +274,7 @@ en:
     at http://en.communtu.org. You can now use every
     featrue of the platform.
   view_user_mailer_reset_password_0: ", you have received a new password."
+  make_your_bundle: Create a bundle for a system upgrade
   controller_metapackages_no_save: This bundle contains conflicts and therefor it cannot be saved as a metapackage.
   view_home_derivatives_32: " is an Ubuntu derivative consisting only of free software. Suitable only for experienced users. Should only be installed with the Gobuntu-CD so that only free software is provided. A further installation with Communtu is possible, but \"Free software\" should be selected in the user profile. This derivative is available in Ubuntu 8.04 and development is currently discontinued."
   helper_distributions_18: free and from third party repositories
@@ -324,7 +325,7 @@ en:
   total_isos_size: "Size of ISO:"
   view_home_faq_01: What is a bundle?
   steps_for_distribution_setup: "Steps for setting up a new distribution (please do this on the admin-system) "
-  questionmark_conny: Click me and tell what is unclear to you.
+  questionmark_conny: Click and tell me what is unclear to you.
   new_packages: "Newly added packages: "
   view_home_faq_kde_01: You can find the Communtu sources under "K-Menu -> Programs -> System -> Software Sources -> Other Software". They can also be deactivated here.
   view_home_derivatives_41: Ubuntu ultimate - Ubuntu with many desktop-designs and applications.
@@ -337,12 +338,12 @@ en:
   view_home_news_16: We have a blog where we post updated information about Communtu. It gets a new post about once a week. Announcement and new features will be presented here.
   view_home_derivatives_43: " - based on E17. 2D-effects even without a fast graphic card."
   view_home_faq_03: How do I install a bundle?
-  cd_being_created: Create Live-CD/DVD
+  cd_being_created: Creating Live-CD/DVD
+  search_programs_bundles: To which topic do you look for programs (office, graphics, ...)? Enter your fields of interest and pre-configured bundles can be downloaded.
   view_user_profiles__profile_data_0: "Preparing the installation: adjust the preadjustments"
   view_home_news_17: Go to the blog
   view_home_derivatives_44: " - minimalist and fast version of Ubuntu for older PCs."
   view_home_faq_04: There are two ways to install a bundle.<p> The first way is to click on <b>Download</b>. You will now be presented a small formular in which you can choose the tasks you want to perform with your computer. Next you have to choose which version of Ubuntu you want to use (in most cases it will be detected correctly and you only have to pick it from the list) and which GUI you use (Gnome = Ubuntu, KDE = Kubuntu, XFCE = Xubuntu). The last two steps are about the license and the security of the progams (which sources you want to be added and if the programs shall be open or closed source). You can now click on "Save rough selection and install" to get to the end and install the preselected bundles or you can click on "Save rough selection" to make a more detailed choice of the bundles being installed. Finally you need to add the Communtu sources to your system and, when this is finished, you only have to click on "Install" and the chosen bundles will be installed.<p> The second way is to click on <b>Bundle</b> and then on "Published bundles". You now see a list with every bundle created in Communtu. Here you can install a bundle directly with a click on "Install through metapackage", assuming you have added the sources earlier. If not, a click on "Add sources" will add them to your system.
-  bundel_information_edit: edit bundle information
   view_metapackages_show_deb_error: While creating metapackages, an error occurred. We'll solve that problem as fast as possible.
   view_user_profiles__profile_data_1: On this page you can enter the basic settings of your computer.
   view_home_derivatives_45: http://wiki.ubuntuusers.de/Server_Installation (German)
@@ -439,11 +440,12 @@ en:
   view_home_beteiligung_2: We would be very delighted if you would use Communtu to carry out an installation. We already have many bundles which are set up to specific characteristics. Maybe one of the bundles is suitable for you. Furthermore you can upload your own package-list to share it with other users. This is the most simple way to create a bundle, but you don't have to publish it. Of course you can use Communtu only as a saving place for your package list so you can install it on an other computer.
   helper_distributions_2: synchronise repository
   view_messages_show_2: "Received on:"
+  go_to_download: Go to the download page
   view_home_beteiligung_3: We need the information
   subject_with_colon: "Subject:"
   view_messages_show_3: Reply
   controller_profiles_0: Installation of bundles
-  cd_already_created: Recreate Live-CD/DVD
+  cd_already_created: The Live-CD/DVD has already been created.
   view_home_beteiligung_4: |-
     You think you already know a lot about Open Source programs? 
     Write your experience into the comments of the according package our maybe you have seen
@@ -514,7 +516,7 @@ en:
   an: To
   view_users_edit_2: delete profile
   view_cart_update_4: Publish bundle
-  nothing_found_questionmark: user not found
+  nothing_found_questionmark: Nothing found?
   controller_users_1: Thank you for registering at Communtu! You can now log in.
   view_users_edit_3: "Username:"
   not_logged_in: You are currently not logged in. Please click on "log in" above.
@@ -573,7 +575,6 @@ en:
   view_rating_new_comment_cancel: Cancel
   view_passwords_new_1: "    Which e-mail-address did you enter when you created the account?"
   view_metapackages_finish_migrate_0: All bundles were migrated from
-  view_layouts_application_8: Start
   view_passwords_new_2: reset password
   view_metapackages_finish_migrate_1: " to"
   view_sent_new_3: "Message:"
@@ -711,6 +712,8 @@ en:
   discuss: discuss
   feedback: "Comment "
   view_videos_show_0: "Url:"
+  create_your_livedvd: Create a Live-CD
+  start: Start
   view_home_icons_20: user-icon
   headline: eases Ubuntu installations
   first_sync_repos: "Please synchronise the repositories first. Normally, this is done automatically within one weak. Attention: it is only checked if anything is being synchronised at all, not if the process is finished."
@@ -746,6 +749,7 @@ en:
   choose_parent: Choose a Parent!
   model_user_profile_tabz_1: Software selection
   controller_suggestion_11: add repository
+  navigation_communtu: Navigation Communtu
   controller_suggestion_12: The following repositories will be added
   view_home_auth_error_0: Error with authentication
   error_no_attachement: No file selected. The progress has been canceled.
@@ -758,6 +762,7 @@ en:
   controller_suggestion_16: The following packages will be installed
   we_want_you: We need you
   controller_sent_0: Subject must not be empty.
+  make_your_livedvd: You don't have Ubuntu installed on your computer. Choose a bundle and create a Live-CD, with which you can install your computer.
   controller_sent_1: user does not exist
   view_user_profiles__sources_0: Sources for the soon be installed programs
   view_home_impressum_2: AG Communtu
@@ -772,7 +777,7 @@ en:
   view_home_impressum_4: Bauernstr. 2
   model_package_2: unknown
   view_home_icons_0: icons used in Communtu
-  view_user_profiles__profile_rating_1: ""
+  view_user_profiles__profile_rating_1: On the right side you can see information about the chosen category.
   view_home_impressum_5: |-
     28203 Bremen
     Germany
@@ -814,14 +819,14 @@ en:
   view_metapackages_show_save: save bundle as a metapackage
   view_debs_index_2: "  There are no failed deb-generations! Congratulations!"
   view_home_home_13: <b>News</b> Reference to events about Communtu, the Communtu-blog ...
+  view_home_home_14: "There is also "
   help_translation: Needing help with the translation? - Write us an e-mail!
   view_debs_index_3: "Create every failed deb <b>Warning: only do this at admin.communtu.de!</b>"
-  view_home_home_14: "There is also "
-  view_home_home_15: detailled information
   repositories_without_packages: Repositories without packages (empty repository)
+  view_home_home_15: detailled information
   view_home_home_16: " about this project and its participants in the "
-  view_metapackages_rdepends_0: In bundle
   view_debs_index_5: "Create  "
+  view_metapackages_rdepends_0: In bundle
   view_metapackages_immediate_conflicts_0: Conflicts inside bundles
   change_passwd: change password
   view_metapackages_rdepends_1: " directly an indirectly contained bundles and packages"
@@ -850,6 +855,7 @@ en:
   view_home_home_25: For questions concerning Communtu we have created a "FAQ".
   description: Description
   view_layouts_application_11: Guestsession
+  description_for_description: Please enter a short presentation of your bundle to show for what tasks it is meant. After that, you can go into detail of some of the programs in your bundle.
   controller_categories_3: Category updated.
   view_home_home_26: You installed Ubuntu and now you are looking for programs which run with Ubuntu?
   failed_live_cds: Failed Live-CDs/DVDs
@@ -858,6 +864,7 @@ en:
   donation_purpose: "Purpose: Communtu"
   controller_metapackages_not_changed: This bundle is already created as a metapackage and uploaded.
   view_sent_show_2: "Date:"
+  make_a_systemupgrade: You want to upgrade your system? Take a look <a href="LINK">here how easy it is</a> and upload your package list to Communtu.
   livecd_message: With the Live-CD you can test the software you have chosen and install the system with the previous made software choice. For this, an ISO-file ({{cdimage_link}}) is created which you can burn. You need an empty CD-R or, if you have chosen lots of software, an empty DVD-R.<br /><br />The creation of the image takes a while. You will be informed automatically when your image has been created. For this, a valid e-mail address is required to be entered in your profile.
   view_layouts_application_13: About Communtu
   allgemeinbildung: Allgemeinbildung e.V.

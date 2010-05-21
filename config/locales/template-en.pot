@@ -67,9 +67,6 @@ msgstr ""
 #: cd_failed
 msgid "Failed - we will solve the problem and inform you when the ISO-file is ready to download"
 msgstr ""
-#: view_layouts_application_28
-msgid "Navigation Communtu"
-msgstr ""
 #: view_roles_index_0
 msgid "roles for"
 msgstr ""
@@ -451,6 +448,9 @@ msgstr ""
 #: controller_suggestion_8
 msgid "Ubuntu post-installation for users"
 msgstr ""
+#: bundel_edit
+msgid "edit bundle"
+msgstr ""
 #: english_name
 msgid "English name:"
 msgstr ""
@@ -485,7 +485,7 @@ msgstr ""
 msgid "Conny Communtu's portrait"
 msgstr ""
 #: bundle_to_livecd
-msgid "Recreate Live-CD/DVD"
+msgid "Create Live-CD/DVD from bundle <i>{{name}}</i>"
 msgstr ""
 #: view_home_cancel_1
 msgid "Either you try a again or you use the possibility via bank transfer"
@@ -805,6 +805,9 @@ msgstr ""
 #: view_user_mailer_reset_password_0
 msgid ", you have received a new password."
 msgstr ""
+#: make_your_bundle
+msgid "Create a bundle for a system upgrade"
+msgstr ""
 #: controller_metapackages_no_save
 msgid "This bundle contains conflicts and therefor it cannot be saved as a metapackage."
 msgstr ""
@@ -926,7 +929,7 @@ msgstr ""
 msgid "Steps for setting up a new distribution (please do this on the admin-system) "
 msgstr ""
 #: questionmark_conny
-msgid "Click me and tell what is unclear to you."
+msgid "Click and tell me what is unclear to you."
 msgstr ""
 #: new_packages
 msgid "Newly added packages: "
@@ -965,7 +968,10 @@ msgstr ""
 msgid "How do I install a bundle?"
 msgstr ""
 #: cd_being_created
-msgid "Create Live-CD/DVD"
+msgid "Creating Live-CD/DVD"
+msgstr ""
+#: search_programs_bundles
+msgid "To which topic do you look for programs (office, graphics, ...)? Enter your fields of interest and pre-configured bundles can be downloaded."
 msgstr ""
 #: view_user_profiles__profile_data_0
 msgid "Preparing the installation: adjust the preadjustments"
@@ -978,9 +984,6 @@ msgid " - minimalist and fast version of Ubuntu for older PCs."
 msgstr ""
 #: view_home_faq_04
 msgid "There are two ways to install a bundle.<p> The first way is to click on <b>Download</b>. You will now be presented a small formular in which you can choose the tasks you want to perform with your computer. Next you have to choose which version of Ubuntu you want to use (in most cases it will be detected correctly and you only have to pick it from the list) and which GUI you use (Gnome = Ubuntu, KDE = Kubuntu, XFCE = Xubuntu). The last two steps are about the license and the security of the progams (which sources you want to be added and if the programs shall be open or closed source). You can now click on \"Save rough selection and install\" to get to the end and install the preselected bundles or you can click on \"Save rough selection\" to make a more detailed choice of the bundles being installed. Finally you need to add the Communtu sources to your system and, when this is finished, you only have to click on \"Install\" and the chosen bundles will be installed.<p> The second way is to click on <b>Bundle</b> and then on \"Published bundles\". You now see a list with every bundle created in Communtu. Here you can install a bundle directly with a click on \"Install through metapackage\", assuming you have added the sources earlier. If not, a click on \"Add sources\" will add them to your system."
-msgstr ""
-#: bundel_information_edit
-msgid "edit bundle information"
 msgstr ""
 #: view_metapackages_show_deb_error
 msgid "While creating metapackages, an error occurred. We'll solve that problem as fast as possible."
@@ -1261,6 +1264,9 @@ msgstr ""
 #: view_messages_show_2
 msgid "Received on:"
 msgstr ""
+#: go_to_download
+msgid "Go to the download page"
+msgstr ""
 #: view_home_beteiligung_3
 msgid "We need the information"
 msgstr ""
@@ -1274,7 +1280,7 @@ msgstr ""
 msgid "Installation of bundles"
 msgstr ""
 #: cd_already_created
-msgid "Recreate Live-CD/DVD"
+msgid "The Live-CD/DVD has already been created."
 msgstr ""
 #: view_home_beteiligung_4
 msgid "You think you already know a lot about Open Source programs? \nWrite your experience into the comments of the according package our maybe you have seen\na video of the program at YouTube? Add the video\nto the corresponding program."
@@ -1466,7 +1472,7 @@ msgstr ""
 msgid "Publish bundle"
 msgstr ""
 #: nothing_found_questionmark
-msgid "user not found"
+msgid "Nothing found?"
 msgstr ""
 #: controller_users_1
 msgid "Thank you for registering at Communtu! You can now log in."
@@ -1641,9 +1647,6 @@ msgid "    Which e-mail-address did you enter when you created the account?"
 msgstr ""
 #: view_metapackages_finish_migrate_0
 msgid "All bundles were migrated from"
-msgstr ""
-#: view_layouts_application_8
-msgid "Start"
 msgstr ""
 #: view_passwords_new_2
 msgid "reset password"
@@ -2047,6 +2050,12 @@ msgstr ""
 #: view_videos_show_0
 msgid "Url:"
 msgstr ""
+#: create_your_livedvd
+msgid "Create a Live-CD"
+msgstr ""
+#: start
+msgid "Start"
+msgstr ""
 #: view_home_icons_20
 msgid "user-icon"
 msgstr ""
@@ -2152,6 +2161,9 @@ msgstr ""
 #: controller_suggestion_11
 msgid "add repository"
 msgstr ""
+#: navigation_communtu
+msgid "Navigation Communtu"
+msgstr ""
 #: controller_suggestion_12
 msgid "The following repositories will be added"
 msgstr ""
@@ -2187,6 +2199,9 @@ msgid "We need you"
 msgstr ""
 #: controller_sent_0
 msgid "Subject must not be empty."
+msgstr ""
+#: make_your_livedvd
+msgid "You don't have Ubuntu installed on your computer. Choose a bundle and create a Live-CD, with which you can install your computer."
 msgstr ""
 #: controller_sent_1
 msgid "user does not exist"
@@ -2231,7 +2246,7 @@ msgstr ""
 msgid "icons used in Communtu"
 msgstr ""
 #: view_user_profiles__profile_rating_1
-msgid ""
+msgid "On the right side you can see information about the chosen category."
 msgstr ""
 #: view_home_impressum_5
 msgid "28203 Bremen\nGermany"
@@ -2350,11 +2365,11 @@ msgstr ""
 #: view_home_home_13
 msgid "<b>News</b> Reference to events about Communtu, the Communtu-blog ..."
 msgstr ""
-#: help_translation
-msgid "Needing help with the translation? - Write us an e-mail!"
-msgstr ""
 #: view_debs_index_3
 msgid "Create every failed deb <b>Warning: only do this at admin.communtu.de!</b>"
+msgstr ""
+#: help_translation
+msgid "Needing help with the translation? - Write us an e-mail!"
 msgstr ""
 #: view_home_home_14
 msgid "There is also "
@@ -2365,11 +2380,11 @@ msgstr ""
 #: repositories_without_packages
 msgid "Repositories without packages (empty repository)"
 msgstr ""
-#: view_debs_index_5
-msgid "Create  "
-msgstr ""
 #: view_metapackages_rdepends_0
 msgid "In bundle"
+msgstr ""
+#: view_debs_index_5
+msgid "Create  "
 msgstr ""
 #: view_home_home_16
 msgid " about this project and its participants in the "
@@ -2467,6 +2482,9 @@ msgstr ""
 #: controller_categories_3
 msgid "Category updated."
 msgstr ""
+#: description_for_description
+msgid "Please enter a short presentation of your bundle to show for what tasks it is meant. After that, you can go into detail of some of the programs in your bundle."
+msgstr ""
 #: view_home_home_27
 msgid "Communtu helps you:"
 msgstr ""
@@ -2478,6 +2496,9 @@ msgid "About Communtu"
 msgstr ""
 #: livecd_message
 msgid "With the Live-CD you can test the software you have chosen and install the system with the previous made software choice. For this, an ISO-file ({{cdimage_link}}) is created which you can burn. You need an empty CD-R or, if you have chosen lots of software, an empty DVD-R.<br /><br />The creation of the image takes a while. You will be informed automatically when your image has been created. For this, a valid e-mail address is required to be entered in your profile."
+msgstr ""
+#: make_a_systemupgrade
+msgid "You want to upgrade your system? Take a look <a href=\"LINK\">here how easy it is</a> and upload your package list to Communtu."
 msgstr ""
 #: view_sent_show_2
 msgid "Date:"
