@@ -42,7 +42,7 @@ def ask_string(string):
     string.remove(newkey)
     oldkey_temp = string
     edit_files(oldkey_temp, newkey)
-    update_template()
+#    update_template()
     
 def edit_files(oldkey, newkey):
     '''Using "sed" to remove oldkey from source files.'''
@@ -67,7 +67,8 @@ def edit_template(key):
     template_yml.close()
     template_yml = open('config/locales/template.yml', 'w')
     del template_dict[key]
-    template_yml.write(yaml.dump(template_dict_full, default_flow_style=False))
+#    print yaml.dump_all([template_dict_full], default_flow_style=False, width=300, line_break=False, allow_unicode=True, explicit_start=True)
+    yaml.dump_all([template_dict_full], stream=template_yml, default_flow_style=False, width=1024, line_break=False, allow_unicode=True, explicit_start=True)
     template_yml.close()
 
 def switch_keyvalue(dict):
