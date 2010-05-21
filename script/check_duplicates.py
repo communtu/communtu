@@ -42,7 +42,6 @@ def ask_string(string):
     string.remove(newkey)
     oldkey_temp = string
     edit_files(oldkey_temp, newkey)
-#    update_template()
     
 def edit_files(oldkey, newkey):
     '''Using "sed" to remove oldkey from source files.'''
@@ -67,8 +66,7 @@ def edit_template(key):
     template_yml.close()
     template_yml = open('config/locales/template.yml', 'w')
     del template_dict[key]
-#    print yaml.dump_all([template_dict_full], default_flow_style=False, width=300, line_break=False, allow_unicode=True, explicit_start=True)
-    yaml.dump_all([template_dict_full], stream=template_yml, default_flow_style=False, width=1024, line_break=False, allow_unicode=True, explicit_start=True)
+    yaml.dump_all([template_dict_full], stream=template_yml, default_flow_style=False, width=2048, line_break=False, allow_unicode=True, explicit_start=True)
     template_yml.close()
 
 def switch_keyvalue(dict):
@@ -80,22 +78,6 @@ def switch_keyvalue(dict):
         else:
             new_dict[value] = [key]
     return new_dict
-    
-def update_template():
-    '''Clearing false encodings from template.yml'''
-    print 'Updating template.yml'
-    replace = {'\\xDC': 'Ü',
-               '\\xFC': 'ü',
-               '\\xC4': 'Ä',
-               '\\xE4': 'ä',
-               '\\xD6': 'Ö',
-               '\\xF6': 'ö',
-               '\\xDF': 'ß'}
-    for key, value in replace.iteritems():
-        wrong_key = key
-        correct_key = value
-        sed = "sed -i 's/\\" + wrong_key + "/" + correct_key + "/g' config/locales/template.yml"
-        os.system(sed)
 
 '''Choosing the file to work with.'''
 print 'Using file "config/locales/template.yml"'
