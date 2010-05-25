@@ -360,7 +360,7 @@ end
                  self.derivative,
                  self.license,
                  self.security)
-    debfile = Deb.makedeb_lock(name,version,[],description,codename,self.derivative,repos,true)
+    debfile = Deb.makedeb_lock(name,version,[],description,self.distribution,codename,self.derivative,repos,true)
     return debfile
   end
 
@@ -390,6 +390,7 @@ end
                  version,
                  self.selected_packages.map{|p| p.debian_name},
                  description,
+                 self.distribution,
                  codename,
                  self.derivative,
                  [],false)

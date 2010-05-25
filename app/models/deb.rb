@@ -167,7 +167,7 @@ class Deb < ActiveRecord::Base
     end
     # only install sources, no packages
     codename = Deb.compute_codename(distribution,derivative,license,security)
-    Deb.makedeb_lock(name,version,[],description,codename,derivative,repos,true)
+    Deb.makedeb_lock(name,version,[],description,distribution,codename,derivative,repos,true)
   end
 
   # create file 'control'
@@ -207,15 +207,15 @@ class Deb < ActiveRecord::Base
   end
 
   # create a debian package, using lock to prevent concurrent makes
-  def self.makedeb_lock(name,version,package_names,description,codename,derivative,repos,script,archname = "all")
+  def self.makedeb_lock(name,version,package_names,description,distribution,codename,derivative,repos,script,archname = "all")
     safe_system "dotlockfile -r 1000 #{RAILS_ROOT}/debs/lock"
-    d = Deb.makedeb(name,version,package_names,description,codename,derivative,repos,script,archname)
+    d = Deb.makedeb(name,version,package_names,description,distribution,codename,derivative,repos,script,archname)
     safe_system "dotlockfile -u #{RAILS_ROOT}/debs/lock"
     return d
   end
 
   # create a debian package
-  def self.makedeb(name,version,package_names,description,codename,derivative,repos,script,archname = "all")
+  def self.makedeb(name,version,package_names,description,distribution,codename,derivative,repos,script,archname = "all")
     Dir.chdir RAILS_ROOT+'/debs'
     if !File.exists?(name)
       Dir.mkdir name
@@ -280,6 +280,15 @@ class Deb < ActiveRecord::Base
       safe_system "cp ../../../preinst1 preinst"
       # ... handling of new sources and keys ...
       f=File.open("preinst","a")
+      f.puts ""
+      f.puts "    grep -i #{distribution.short_name} /etc/issue"
+      f.puts "    if [ \"$?\" != \"0\" ]; then"
+    	f.puts "      echo 'Wrong distribution, expecting #{distribution.short_name}'"
+      f.puts "      echo 'but found:'"
+      f.puts "      cat /etc/issue"
+      f.puts "      exit 1"
+    	f.puts "    fi"
+      f.puts ""
       f.puts '    KEYS="'+keys.select{|k| !k.empty?}.join('§')+'"'
       f.puts '    SOURCESKEYS="'+urls_keys.join('§')+'"'
       f.puts '    KEYSERVER="'+Deb::KEYSERVER+'"'
