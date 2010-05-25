@@ -282,11 +282,11 @@ class Deb < ActiveRecord::Base
       f=File.open("preinst","a")
       f.puts ""
       f.puts "    set +e"
-      f.puts "    grep -i #{distribution.short_name} /etc/issue"
+      f.puts "    grep -i #{distribution.short_name} /etc/*release"
       f.puts "    if [ \"$?\" != \"0\" ]; then"
     	f.puts "      echo 'Wrong distribution, expecting #{distribution.short_name}'"
       f.puts "      echo 'but found:'"
-      f.puts "      cat /etc/issue"
+      f.puts "      cat /etc/*release"
       f.puts "      exit 1"
     	f.puts "    fi"
       f.puts "    set -e"
