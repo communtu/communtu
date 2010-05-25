@@ -319,6 +319,10 @@ msgstr "To reach the package manager Synaptic you navigate to \"Applications -> 
 msgid "Distribution aktualisiert."
 msgstr "Distribution updated."
 
+#: view_user_profiles__installation_30
+msgid "Hinweis: Bitte .deb-Dateien nicht umbenennen."
+msgstr "Advice: please don't rename the .deb-file."
+
 #: controller_passwords_2
 msgid "Konnte keinen Benutzer mit dieser Email-Adresse finden."
 msgstr "No user found with this e-mail-address."
@@ -330,10 +334,6 @@ msgstr "Here you have the possibility to send us suggestions and critique about 
 #: livecd_start
 msgid "Live-CD/DVD erstellen"
 msgstr "Create Live-CD/DVD"
-
-#: view_user_profiles__installation_30
-msgid "Hinweis: Bitte .deb-Dateien nicht umbenennen."
-msgstr "Advice: please don't rename the .deb-file."
 
 #: view_user_profiles__installation_31
 msgid "Die Communtu-Metapakete können auch mittles {{synaptic}} (unter System -> Systemverwaltung) angezeigt, installiert und deinstalliert werden. Änderungen an Bündeln werden über die Ubuntu-Paketverwaltung automatisch eingespielt."
@@ -940,6 +940,10 @@ msgstr "Here you have the possibility to register yourself."
 #: view_users_index_2
 msgid " angemeldete Benutzer."
 msgstr " registered users."
+
+#: easy_install
+msgid "Einfache Installationsmöglichkeiten für Ubuntu"
+msgstr "Easy methods of installation for Ubuntu"
 
 #: view_home_derivatives_25
 msgid "http://wiki.ubuntuusers.de/Xfce"
@@ -3277,6 +3281,10 @@ msgstr " conflicts with"
 msgid "Wir werden uns per E-Mail bei dir melden."
 msgstr "We will notify you via e-mail."
 
+#: former_participants
+msgid "Ehemalige Mitwirkende"
+msgstr "Former members"
+
 #: view_home_home_18
 msgid "Klicke auf "
 msgstr "Click on"
@@ -3395,7 +3403,7 @@ msgstr "With the Live-CD you can test the software you have chosen and install t
 
 #: make_a_systemupgrade
 msgid "Du möchtest ein System-Upgrade machen. Dann schau <a href=\"http://communtu.wordpress.com/2009/09/16/mit-communtu-ein-systemupgrade-durchfuhren/\">wie einfach das geht</a> und lade deine Paketliste bei Communtu hoch."
-msgstr "You want to upgrade your system? Take a look <a href=\"LINK\">here how easy it is</a> and upload your package list to Communtu."
+msgstr "You want to upgrade your system? Take a look <a href=\"http://encommuntu.wordpress.com/2010/05/25/how-to-use-communtu-for-a-systems-upgrade/\">here how easy it is</a> and upload your package list to Communtu."
 
 #: view_sent_show_2
 msgid "Zeitpunkt:"

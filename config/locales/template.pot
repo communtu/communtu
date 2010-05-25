@@ -241,6 +241,9 @@ msgstr ""
 #: controller_distributions_2
 msgid "Distribution aktualisiert."
 msgstr ""
+#: view_user_profiles__installation_30
+msgid "Hinweis: Bitte .deb-Dateien nicht umbenennen."
+msgstr ""
 #: controller_passwords_2
 msgid "Konnte keinen Benutzer mit dieser Email-Adresse finden."
 msgstr ""
@@ -249,9 +252,6 @@ msgid "Hier hast du die Möglichkeit uns Anregungen und Kritik zu Communtu zu se
 msgstr ""
 #: livecd_start
 msgid "Live-CD/DVD erstellen"
-msgstr ""
-#: view_user_profiles__installation_30
-msgid "Hinweis: Bitte .deb-Dateien nicht umbenennen."
 msgstr ""
 #: view_user_profiles__installation_31
 msgid "Die Communtu-Metapakete können auch mittles {{synaptic}} (unter System -> Systemverwaltung) angezeigt, installiert und deinstalliert werden. Änderungen an Bündeln werden über die Ubuntu-Paketverwaltung automatisch eingespielt."
@@ -702,6 +702,9 @@ msgid "Hier hast du die Möglichkeit dich zu registrieren."
 msgstr ""
 #: view_users_index_2
 msgid " angemeldete Benutzer."
+msgstr ""
+#: easy_install
+msgid "Einfache Installationsmöglichkeiten für Ubuntu"
 msgstr ""
 #: view_home_derivatives_25
 msgid "http://wiki.ubuntuusers.de/Xfce"
@@ -2412,6 +2415,9 @@ msgid " ist in Konflikt mit "
 msgstr ""
 #: controller_home_2
 msgid "Wir werden uns per E-Mail bei dir melden."
+msgstr ""
+#: former_participants
+msgid "Ehemalige Mitwirkende"
 msgstr ""
 #: view_home_home_18
 msgid "Klicke auf "

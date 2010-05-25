@@ -232,6 +232,7 @@ en:
   view_home_derivatives_24: "Derivatives, which should be installed with the derivative installation-CD:"
   spam_user_delete: All spam users deleted.
   view_users_index_1: "We have a total of "
+  easy_install: Easy methods of installation for Ubuntu
   view_users_new_1: Here you have the possibility to register yourself.
   view_home_derivatives_25: http://en.wikipedia.org/wiki/Xfce
   view_users_index_2: " registered users."
@@ -820,8 +821,8 @@ en:
   view_debs_index_2: "  There are no failed deb-generations! Congratulations!"
   view_home_home_13: <b>News</b> Reference to events about Communtu, the Communtu-blog ...
   view_home_home_14: "There is also "
-  help_translation: Needing help with the translation? - Write us an e-mail!
   view_debs_index_3: "Create every failed deb <b>Warning: only do this at admin.communtu.de!</b>"
+  help_translation: Needing help with the translation? - Write us an e-mail!
   repositories_without_packages: Repositories without packages (empty repository)
   view_home_home_15: detailled information
   view_home_home_16: " about this project and its participants in the "
@@ -834,6 +835,7 @@ en:
   view_home_home_17: imprint.
   controller_home_1: The e-mail has been sent to us. Many thanks for your message.
   view_home_home_18: Click on
+  former_participants: Former members
   controller_home_2: We will notify you via e-mail.
   controller_home_3: This does not appear to be a list with Ubuntu-packages... <br />The packagelist must contain one packagename per line
   livecd_created_by: "Live-CD/DVD created by:"
@@ -864,7 +866,7 @@ en:
   donation_purpose: "Purpose: Communtu"
   controller_metapackages_not_changed: This bundle is already created as a metapackage and uploaded.
   view_sent_show_2: "Date:"
-  make_a_systemupgrade: You want to upgrade your system? Take a look <a href="LINK">here how easy it is</a> and upload your package list to Communtu.
+  make_a_systemupgrade: You want to upgrade your system? Take a look <a href="http://encommuntu.wordpress.com/2010/05/25/how-to-use-communtu-for-a-systems-upgrade/">here how easy it is</a> and upload your package list to Communtu.
   livecd_message: With the Live-CD you can test the software you have chosen and install the system with the previous made software choice. For this, an ISO-file ({{cdimage_link}}) is created which you can burn. You need an empty CD-R or, if you have chosen lots of software, an empty DVD-R.<br /><br />The creation of the image takes a while. You will be informed automatically when your image has been created. For this, a valid e-mail address is required to be entered in your profile.
   view_layouts_application_13: About Communtu
   allgemeinbildung: Allgemeinbildung e.V.
