@@ -281,6 +281,7 @@ class Deb < ActiveRecord::Base
       # ... handling of new sources and keys ...
       f=File.open("preinst","a")
       f.puts ""
+      f.puts "    set +e"
       f.puts "    grep -i #{distribution.short_name} /etc/issue"
       f.puts "    if [ \"$?\" != \"0\" ]; then"
     	f.puts "      echo 'Wrong distribution, expecting #{distribution.short_name}'"
@@ -288,6 +289,7 @@ class Deb < ActiveRecord::Base
       f.puts "      cat /etc/issue"
       f.puts "      exit 1"
     	f.puts "    fi"
+      f.puts "    set -e"
       f.puts ""
       f.puts '    KEYS="'+keys.select{|k| !k.empty?}.join('§')+'"'
       f.puts '    SOURCESKEYS="'+urls_keys.join('§')+'"'
