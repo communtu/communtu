@@ -261,7 +261,7 @@ class Metapackage < BasePackage
       self.save
     end
     # abort if it does not make sense to debianize
-    if !self.modified or self.debianizing
+    if self.debianizing
       return false
     end
     self.debianized_version = self.version
@@ -274,9 +274,11 @@ class Metapackage < BasePackage
           (0..2).each do |sec|
             codename = Deb.compute_codename(dist,der,lic,sec)
             version = "#{self.version}-#{codename}"
-            deb = Deb.create({:metapackage_id => self.id, :distribution_id => dist.id, :derivative_id => der.id, 
-                              :license_type => lic, :security_type => sec, :version => self.version,
-                              :url => version, :generated => false})
+            params = {:metapackage_id => self.id, :distribution_id => dist.id, :derivative_id => der.id,
+                      :license_type => lic, :security_type => sec, :version => self.version}
+            if Deb.find(:first,:conditions=>params).nil? then
+               Deb.create(params.merge({:url => version, :generated => false}))
+            end
           end
         end
       end
