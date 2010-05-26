@@ -430,11 +430,14 @@ end
     if cd.nil?
       srcdeb = RAILS_ROOT + "/" + self.install_bundle_sources(bundle)
       deb_name = bundle.debian_name
-      # ensure that debian package exists
-      bundle.debianize
       params1=params.clone
       params1.delete(:architecture_id)
       d=Deb.find(:first,:conditions=> params1)
+      # ensure that debian package exists
+      if d.nil? then
+         bundle.debianize
+         d=Deb.find(:first,:conditions=> params1)
+      end
       if !d.generated then
         d.generate
       end

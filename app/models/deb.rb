@@ -98,7 +98,7 @@ class Deb < ActiveRecord::Base
         begin
           # build metapackage
           archname = if homogeneous then "all" else arch.name end
-          debfile = Deb.makedeb(name,version,packages[arch],meta.description_english,codename,Derivative.find(:first),[],false,archname)
+          debfile = Deb.makedeb(name,version,packages[arch],meta.description_english,dist,codename,Derivative.find(:first),[],false,archname)
 
           # make name of .deb unique by adding the codename
           # newfile = debfile.gsub("_all.deb","~"+codename+"_all.deb")
