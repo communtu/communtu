@@ -2504,7 +2504,7 @@ msgstr ""
 msgid "With the Live-CD you can test the software you have chosen and install the system with the previous made software choice. For this, an ISO-file ({{cdimage_link}}) is created which you can burn. You need an empty CD-R or, if you have chosen lots of software, an empty DVD-R.<br /><br />The creation of the image takes a while. You will be informed automatically when your image has been created. For this, a valid e-mail address is required to be entered in your profile."
 msgstr ""
 #: make_a_systemupgrade
-msgid "You want to upgrade your system? Take a look <a href=\"http://encommuntu.wordpress.com/2010/05/25/how-to-use-communtu-for-a-systems-upgrade/\">here how easy it is</a> and upload your package list to Communtu."
+msgid "You want to upgrade your system? Take a look <a href=\"http://encommuntu.wordpress.com/2009/09/16/how-to-use-communtu-for-a-systems-upgrade/\">here how easy it is</a> and upload your package list to Communtu."
 msgstr ""
 #: view_sent_show_2
 msgid "Date:"

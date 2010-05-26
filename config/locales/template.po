@@ -3403,7 +3403,7 @@ msgstr "With the Live-CD you can test the software you have chosen and install t
 
 #: make_a_systemupgrade
 msgid "Du möchtest ein System-Upgrade machen. Dann schau <a href=\"http://communtu.wordpress.com/2009/09/16/mit-communtu-ein-systemupgrade-durchfuhren/\">wie einfach das geht</a> und lade deine Paketliste bei Communtu hoch."
-msgstr "You want to upgrade your system? Take a look <a href=\"http://encommuntu.wordpress.com/2010/05/25/how-to-use-communtu-for-a-systems-upgrade/\">here how easy it is</a> and upload your package list to Communtu."
+msgstr "You want to upgrade your system? Take a look <a href=\"http://encommuntu.wordpress.com/2009/09/16/how-to-use-communtu-for-a-systems-upgrade/\">here how easy it is</a> and upload your package list to Communtu."
 
 #: view_sent_show_2
 msgid "Zeitpunkt:"
