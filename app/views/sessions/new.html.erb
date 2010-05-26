@@ -22,7 +22,7 @@ function onEnter( evt, frm ) {
 <% form_tag session_path do %>
 
 <p><label for="login"><%=t(:username)%></label><br/>
-<%= text_field_tag 'login' %></p>
+<%= text_field_tag 'login', @login %></p>
  
 <p><label for="password"><%=t(:passwd)%></label><br />
 <%= password_field_tag 'password', '', :onkeypress => "return onEnter(event,this.form);" %></p>
