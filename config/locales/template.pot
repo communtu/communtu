@@ -779,7 +779,7 @@ msgstr ""
 msgid "Wikiseite bei ubuntuusers"
 msgstr ""
 #: view_users_new_8
-msgid "Ja, ich möchte die Maillingliste für Ankündigungen abbonieren."
+msgid "Ja, ich möchte die Maillingliste für Ankündigungen abonnieren."
 msgstr ""
 #: view_home_derivatives_30
 msgid "http://de.wikipedia.org/wiki/Home_Theater_Personal_Computer"
@@ -794,7 +794,7 @@ msgstr ""
 msgid "Distribution als stabil freigeben"
 msgstr ""
 #: view_users_new_9
-msgid "Ja, ich möchte die Maillingliste für Diskussionen abbonieren."
+msgid "Ja, ich möchte die Maillingliste für Diskussionen abonnieren."
 msgstr ""
 #: view_home_derivatives_31
 msgid ". Aufgrund der notwendigen Treiberinstallation sollte Linux MCE direkt installiert werden, Communtu kann dann aber für die Installation weiterer Software genutzt werden."
