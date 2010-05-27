@@ -74,7 +74,18 @@ class Distribution < ActiveRecord::Base
     # make folder for package info
     system "mkdir -p #{self.dir_name}"
   end
-  
+
+  def before_destroy
+    pre = self.predecessor
+    suc = self.successor
+    # are we going to remove some intermediate distribution?
+    if !pre.nil? and !suc.nil? then
+      # then create a bridge
+      suc.distribution = pre
+      suc.save
+    end
+  end
+
   def after_destroy
     # generate new configuration file for reprepro
     Deb.write_conf_distributions
