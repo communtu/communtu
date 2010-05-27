@@ -109,13 +109,13 @@ class Repository < ActiveRecord::Base
 
 
   # import repository info from the url
-  def import_source
+  def import_source(force=false)
     # need lock in order to ensur that only we mark things as outdated
     safe_system "dotlockfile -r 1000 #{RAILS_ROOT}/repo_lock"
     infos = {}
     first_run = true
     Architecture.all.each do |arch|
-      infos[arch] = import_source_arch arch, first_run
+      infos[arch] = import_source_arch force, arch, first_run
       if !infos[arch]["package_count"].nil? then
         first_run = false
       end
@@ -131,7 +131,7 @@ class Repository < ActiveRecord::Base
   # these methods should not be called from outside, since they depend on proper preparation
 
   # import repository for on architecture
-  def import_source_arch arch, first_run
+  def import_source_arch force, arch, first_run
 
     distribution_id = self.distribution_id
 
@@ -146,7 +146,7 @@ class Repository < ActiveRecord::Base
 
     # read in all packages from repository
     tmp_name = (IO.popen "mktemp").read.chomp
-    packages = self.packages_to_hash url, arch, tmp_name
+    packages = self.packages_to_hash force, url, arch, tmp_name
     # errors while reading or still up-to-date? then return
     if !packages[:error].nil? or !packages[:notice].nil? then
       return packages
@@ -316,7 +316,7 @@ class Repository < ActiveRecord::Base
   end
 
   # parse Packages file at url for arch, save it in tmp_name and return infos about contained packages
-  def packages_to_hash url, arch, tmp_name
+  def packages_to_hash force, url, arch, tmp_name
     if url.nil? then return {:error => I18n.t(:model_package_11)} end
     begin
       file = open(url, 'User-Agent' => 'Ruby-Wget')
@@ -329,7 +329,7 @@ class Repository < ActiveRecord::Base
       tmp_file.close
       system "gunzip -f #{tmp_name}.gz"
       # contents unchanged? then we are done
-      if system "diff #{tmp_name} #{self.file_name arch}" then
+      if !force and system "diff #{tmp_name} #{self.file_name arch}" then
         return {:notice => I18n.t(:model_package_need_not_update,:url => url)}
       end
       file.seek(0,IO::SEEK_SET)

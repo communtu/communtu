@@ -138,6 +138,12 @@ class RepositoriesController < ApplicationController
     @info = @repository.import_source
   end
 
+  def force_sync
+    @repository = Repository.find(params[:id])
+    @info = @repository.import_source(true)
+    render :action => :sync_package
+  end
+
   def sync_all
     @distribution = Distribution.find(params[:id])
     @infos = @distribution.repositories.map { |r| r.import_source }

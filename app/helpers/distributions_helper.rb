@@ -10,6 +10,10 @@ module DistributionsHelper
             :alt => t(:helper_distributions_2), :title => t(:helper_distributions_2),:class => "link_img"}),\
             { :controller => :repositories, :action => :sync_package, :id => repo.id})
   end
+  def force_sync_link(repo)
+    link_to(t(:force_sync), 
+            { :controller => :repositories, :action => :force_sync, :id => repo.id})
+  end
   def mig_link(repo)
     link_to((tag "img", { :src => "/images/migrate.png", :width => "22", :height => "22",\
             :alt => t(:migrate_repository), :title => t(:migrate_repository),:class => "link_img"}) ,\

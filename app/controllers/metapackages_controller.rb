@@ -468,11 +468,11 @@ class MetapackagesController < ApplicationController
         @bundles_with_missing_packages[d] = ms
       end
     end
-    @repositories_without_packages =
+    @repositories_without_packages_all =
       Repository.all.select{|r| PackageDistr.find_by_repository_id(r.id).nil?}
-    @repositories_incompletely_read =
-      @repositories_without_packages.select{ |r| r.empty_files?}
-    @repositories_without_packages = @repositories_without_packages - @repositories_incompletely_read
+    @repositories_without_packages =
+      @repositories_without_packages_all.select{ |r| r.empty_files?}
+    @repositories_incompletely_read = @repositories_without_packages_all - @repositories_without_packages
     @failed_live_cds = Livecd.find_all_by_failed(true)
 
     ms=Metapackage.all.select{|m| Metacontent.find(:first,:conditions=>["metacontents_distrs.distribution_id = 6 and metapackage_id = ?",m.id],:include=>:metacontents_distrs).nil?}
