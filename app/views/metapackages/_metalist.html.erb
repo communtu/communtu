@@ -25,9 +25,9 @@
 		    <%=metapackage.default_install ?  t(:yes1) : t(:no1) %></td>
 	    <td class="<%= css %>" valign="middle" align="center">
 	        <% if metapackage.published == Metapackage.state[:published] %>
-	            <%= image_tag("yes.png", :size => "22x22", :border => "0", :title => t(:published), :alt => t(:published)) %>
+	            <%= image_tag("yes.png", :size => "16x16", :border => "0", :title => t(:published), :alt => t(:published)) %>
 	        <% else %>
-	            <%= image_tag("no.png", :size => "22x22", :border => "0", :title => t(:view_metapackages_show_12), :alt => t(:view_metapackages_show_12)) %>
+	            <%= image_tag("no.png", :size => "16x16", :border => "0", :title => t(:view_metapackages_show_12), :alt => t(:view_metapackages_show_12)) %>
 	        <% end %>
 	    </td>
 		<td class="<%= css %>" valign="middle">
@@ -54,7 +54,7 @@
         <td class="<%= css %>" valign="middle" width="10">
                 <% if (metapackage.user_id == current_user.id) or is_admin? %>
                     <% if editing_metapackage? %>
-                        <%= link_to_remote(image_tag("/images/add.png", :size => "22x22", :border => "0", :title => t(:add), :alt => t(:add)), \
+                        <%= link_to_remote(image_tag("/images/add.png", :size => "22x22", :border => "0", :title => t(:add_to_bundle), :alt => t(:add_to_bundle)), \
                                 :url => user_path(current_user) + "/cart/add_to_cart/" + metapackage.id.to_s,\
                                 :update => 'meta_cart') %>
                         <% end %>
