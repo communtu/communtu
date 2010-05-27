@@ -166,6 +166,23 @@ class Livecd < ActiveRecord::Base
       self.destroy
     end
   end
+
+  MSGS = ["Failed to fetch","could not set up","Cannot install","is not installable","not going to be installed", "Depends:"]
+  
+  def short_log
+    if log.nil?
+      return ""
+    end
+    lines = log.split("\n")
+    lines.each do |line|
+      MSGS.each do |msg|
+        if !line.index(msg).nil?
+          return line
+        end
+      end
+    end
+    return ""
+  end
   
   protected
 
