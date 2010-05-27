@@ -4,6 +4,23 @@ module DistributionsHelper
   #params:
   #repos=dist to show
   #style=div-class
+
+  def sync_link(repo)
+    link_to((tag "img", { :src => "/images/view-refresh.png", :width => "22", :height => "22",\
+            :alt => t(:helper_distributions_2), :title => t(:helper_distributions_2),:class => "link_img"}),\
+            { :controller => :repositories, :action => :sync_package, :id => repo.id})
+  end
+  def mig_link(repo)
+    link_to((tag "img", { :src => "/images/migrate.png", :width => "22", :height => "22",\
+            :alt => t(:migrate_repository), :title => t(:migrate_repository),:class => "link_img"}) ,\
+             "/repositories/migrate/#{repo.id}")
+  end
+  def del_link(repo)
+    link_to((tag "img", { :src => "/images/edit-delete.png", :width => "22", :height => "22",\
+            :alt => t(:helper_distributions_6), :title => t(:helper_distributions_6), :class => "link_img"}) ,\
+             "/repositories/destroy/#{repo.id}")
+  end
+
   def repository_view repos, style
     
     header = Array.new Package.security_types.length
@@ -34,18 +51,9 @@ module DistributionsHelper
         link = (link_to (repo.url + " " + repo.subtype), { :controller => :repositories, :action => :show,\
           :id => repo.id, :distribution_id => repo.distribution_id })
         if is_admin?
-          sync_link = (link_to (tag "img", { :src => "/images/view-refresh.png", :width => "22", :height => "22",\
-            :alt => t(:helper_distributions_2), :title => t(:helper_distributions_2),:class => "link_img"}) ,\
-            { :controller => :repositories, :action => :sync_package, :id => repo.id})
-          mig_link =  (link_to (tag "img", { :src => "/images/migrate.png", :width => "22", :height => "22",\
-            :alt => t(:migrate_repository), :title => t(:migrate_repository),:class => "link_img"}) ,\
-             "/repositories/migrate/#{repo.id}")
-          del_link =  (link_to (tag "img", { :src => "/images/edit-delete.png", :width => "22", :height => "22",\
-            :alt => t(:helper_distributions_6), :title => t(:helper_distributions_6), :class => "link_img"}) ,\
-             "/repositories/destroy/#{repo.id}")
-          row = "<tr><td class='" + css + "' valign='middle'>" + sync_link +\
+          row = "<tr><td class='" + css + "' valign='middle'>" + sync_link(repo) +\
              "</td><td class='" + css + "' valign='middle'>" + image + link + "</td>" +\
-             "<td class='" + css + "' valign='middle'>" + mig_link + "&nbsp;&nbsp;" + del_link + "</td></tr>"
+             "<td class='" + css + "' valign='middle'>" + mig_link(repo) + "&nbsp;&nbsp;" + del_link(repo) + "</td></tr>"
         else
            row = "<tr><td class='" + css + "'>" + image + link + "</td></tr>"
         end

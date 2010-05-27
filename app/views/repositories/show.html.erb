@@ -3,6 +3,12 @@
 <% if is_admin? %>
 <%= link_to t(:edit), { :action => :edit, :id => @repository.id } %>
 &nbsp;&nbsp;
+<%= sync_link(@repository) %>
+&nbsp;&nbsp;
+<%= mig_link(@repository) %>
+&nbsp;&nbsp;
+<%= del_link(@repository) %>
+&nbsp;&nbsp;
 <% end %>
 <%= link_to t(:back), { :controller => :distributions, :action => :show,\
 	:id => @repository.distribution.id } %>
