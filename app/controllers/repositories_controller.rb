@@ -109,10 +109,11 @@ class RepositoriesController < ApplicationController
   # DELETE /repositories/1.xml
   def destroy
     @repository = Repository.find(params[:id])
+    @distribution = @repository.distribution
     @repository.destroy
 
     respond_to do |format|
-      format.html { redirect_to :back }
+      format.html { redirect_to distribution_path(@distribution) }
       format.xml  { head :ok }
     end
   end
