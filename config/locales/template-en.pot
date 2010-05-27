@@ -2194,6 +2194,9 @@ msgstr ""
 #: controller_suggestion_15
 msgid "Install package"
 msgstr ""
+#: force_sync
+msgid "force synchronization of repository"
+msgstr ""
 #: controller_suggestion_16
 msgid "The following packages will be installed"
 msgstr ""

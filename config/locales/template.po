@@ -2987,6 +2987,10 @@ msgstr "Settings"
 msgid "Pakete installieren"
 msgstr "Install package"
 
+#: force_sync
+msgid "Synchronisierung des Repositories erzwingen"
+msgstr "force synchronization of repository"
+
 #: we_want_you
 msgid "Wir brauchen dich"
 msgstr "We need you"

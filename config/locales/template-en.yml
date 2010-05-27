@@ -760,6 +760,7 @@ en:
   ubuntu_derivatives: Ubuntu derivatives
   model_user_profile_tabz_4: Settings
   controller_suggestion_15: Install package
+  force_sync: force synchronization of repository
   controller_suggestion_16: The following packages will be installed
   we_want_you: We need you
   controller_sent_0: Subject must not be empty.

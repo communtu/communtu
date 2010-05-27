@@ -2197,6 +2197,9 @@ msgstr ""
 #: controller_suggestion_15
 msgid "Pakete installieren"
 msgstr ""
+#: force_sync
+msgid "Synchronisierung des Repositories erzwingen"
+msgstr ""
 #: we_want_you
 msgid "Wir brauchen dich"
 msgstr ""
