@@ -80,17 +80,30 @@ class Metapackage < BasePackage
     Metapackage.find(:all,:conditions => ["metacontents.base_package_id = ?",self.id], :include => :metacontents)
   end
 
-  def metaconents_for(package)
+  def metacontents_for(package)
     Metacontent.find(:first,:conditions => ["metapackage_id = ? and base_package_id = ?",self.id,package.id])
   end
 
   # list of packages used for generation of debian metapackage
   def package_names_for_deb(dist,der,lic,sec,arch)
-      mcs = Metacontent.find(:all,:conditions =>
-             ["metapackage_id = ? and metacontents_distrs.distribution_id = ? and metacontents_derivatives.derivative_id = ?",
-              self.id,dist.id,der.id],:include => [:metacontents_distrs, :metacontents_derivatives])
-      packages = mcs.map{|mc| mc.base_package}.select{|p| p.is_present(dist,lic,sec,arch)}.map{|p| p.debian_name}
+      ps = Package.find_by_sql("SELECT DISTINCT base_packages.id \
+               FROM `base_packages`  \
+               INNER JOIN package_distrs ON (package_distrs.package_id=base_packages.id) \
+               INNER JOIN package_distrs_architectures ON (package_distrs_architectures.package_distr_id=package_distrs.id) \
+               INNER JOIN metacontents ON (base_packages.id = metacontents.base_package_id) \
+               INNER JOIN metacontents_distrs ON (metacontents.id = metacontents_distrs.metacontent_id)  \
+               INNER JOIN metacontents_derivatives ON (metacontents.id = metacontents_derivatives.metacontent_id)  \
+               INNER JOIN repositories ON (package_distrs.repository_id=repositories.id) \
+               WHERE metacontents.metapackage_id = #{self.id} \
+                     AND package_distrs_architectures.architecture_id = #{arch.id} \
+                     AND package_distrs.distribution_id = #{dist.id} \
+                     AND metacontents_distrs.distribution_id = #{dist.id} \
+                     AND metacontents_derivatives.derivative_id = #{der.id} \
+                     AND repositories.security_type <= #{sec} \
+                     AND repositories.license_type <= #{lic}")
+      return ps.map{|p| Package.find(p).debian_name}
   end
+
 
   #conflicts within the bundle
   def internal_conflicts
@@ -99,10 +112,10 @@ class Metapackage < BasePackage
     packages.each do |p|
       cons = p.conflicting_packages & packages
       if !cons.empty? then
-        mcp = metaconents_for(p)
+        mcp = metacontents_for(p)
         newcons = cons.clone
         cons.each do |c|
-          mcc = metaconents_for(c)
+          mcc = metacontents_for(c)
           if (mcp.distributions & mcc.distributions).empty? or (mcp.derivatives & mcc.derivatives).empty?
             newcons.delete(c)
           end

@@ -10,8 +10,11 @@ class Package < BasePackage
 #  belongs_to :repository
   has_many   :comments, :foreign_key => :metapackage_id, :dependent => :destroy
   has_many :metacontents, :foreign_key => :base_package_id
+  has_many :metacontents_distrs, :through => :metacontents
+  has_many :metacontents_derivatives, :through => :metacontents
   has_many :metapackages, :through => :metacontents
   has_many :package_distrs, :foreign_key => :package_id, :dependent => :destroy
+  has_many :package_distrs_architectures, :through => :package_distrs
 #  has_many :distributions, :through => :package_distrs
   has_many :repositories, :through => :package_distrs
   has_many :distributions, :through => :package_distrs
