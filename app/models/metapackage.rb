@@ -86,11 +86,11 @@ class Metapackage < BasePackage
 
   # list of packages used for generation of debian metapackage
   def package_names_for_deb(dist,der,lic,sec,arch)
-      ps = Package.find_by_sql("SELECT DISTINCT base_packages.id \
+      ps = Package.find_by_sql("SELECT DISTINCT base_packages.id, base_packages.name \
                FROM `base_packages`  \
+               INNER JOIN metacontents ON (base_packages.id = metacontents.base_package_id) \
                INNER JOIN package_distrs ON (package_distrs.package_id=base_packages.id) \
                INNER JOIN package_distrs_architectures ON (package_distrs_architectures.package_distr_id=package_distrs.id) \
-               INNER JOIN metacontents ON (base_packages.id = metacontents.base_package_id) \
                INNER JOIN metacontents_distrs ON (metacontents.id = metacontents_distrs.metacontent_id)  \
                INNER JOIN metacontents_derivatives ON (metacontents.id = metacontents_derivatives.metacontent_id)  \
                INNER JOIN repositories ON (package_distrs.repository_id=repositories.id) \
@@ -101,7 +101,7 @@ class Metapackage < BasePackage
                      AND metacontents_derivatives.derivative_id = #{der.id} \
                      AND repositories.security_type <= #{sec} \
                      AND repositories.license_type <= #{lic}")
-      return ps.map{|p| Package.find(p).debian_name}
+      return ps.map{|p| p.debian_name}
   end
 
 
