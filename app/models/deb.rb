@@ -368,10 +368,10 @@ class Deb < ActiveRecord::Base
     # get position of deb file from reprepro
     f=IO.popen("#{REPREPRO} listfilter #{self.codename} \"Package (== #{self.name})\" | grep #{arch.name}")
     pos = f.read.chomp.split(" ")
-    if pos[0].nil? or pos[1].nil?
+    if pos[1].nil? or pos[2].nil?
       return ("Reprepro could not find deb file")
     end
-    filename_prefix = RAILS_ROOT + "/public/debs/pool/*/*/*/" + pos[0] + "*" + pos[1]
+    filename_prefix = RAILS_ROOT + "/public/debs/pool/*/*/*/" + pos[1] + "*" + pos[2]
     file = Dir.glob(filename_prefix + "*all.deb")[-1]
     if file.nil?
       file = Dir.glob(filename_prefix + "*" + arch.name + ".deb")[-1]
