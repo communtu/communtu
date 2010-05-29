@@ -359,11 +359,21 @@ class Deb < ActiveRecord::Base
   # verify whether the stored deb is still correct
   def verify
     if self.metapackage.nil?
-      puts "Deb #{self.id}: bundle does not exist"
+      puts "Deb #{self.id}: bundle with id #{self.metapackage_id} does not exist, destroying deb"
+      self.destroy
       return nil
     end
+    ok = true
     Architecture.all.each do |arch|
-      puts "Deb #{self.id}, bundle #{self.name}, arch #{arch.name}: #{verify_arch(arch)}"
+      res = "Deb #{self.id}, bundle #{self.name}, arch #{arch.name}: #{verify_arch(arch)}"
+      puts res
+      if res != "correct"
+        ok = false
+      end
+    end
+    if !ok then  # re-generate deb
+      puts "Re-generating deb"
+      self.generate
     end
     return nil
   end
