@@ -388,7 +388,7 @@ class Deb < ActiveRecord::Base
     # get dependencies from control file
     f.read.each do |line|
       if !(ind=line.index("Depends: ")).nil?
-        actual_deps = Set.new(line[ind+9,line.length].split(", "))
+        actual_deps = Set.new(line[ind+10,line.length].split(", "))
         needed_deps = Set.new(self.dependencies(arch))
         if actual_deps==needed_deps
           return "correct"
