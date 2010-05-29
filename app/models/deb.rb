@@ -390,7 +390,7 @@ class Deb < ActiveRecord::Base
     f=File.open("DEBIAN/control")
     Dir.chdir RAILS_ROOT
     needed_deps = Set.new(self.dependencies(arch))
-    actual_dpes = Set.empty
+    actual_dpes = Set.[]
     # get dependencies from control file
     f.read.each do |line|
       if !(ind=line.index("Depends: ")).nil?
