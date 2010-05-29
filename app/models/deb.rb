@@ -365,8 +365,8 @@ class Deb < ActiveRecord::Base
     end
     ok = true
     Architecture.all.each do |arch|
-      res = "Deb #{self.id}, bundle #{self.name}, arch #{arch.name}: #{verify_arch(arch)}"
-      puts res
+      res = verify_arch(arch)
+      puts "Deb #{self.id}, bundle #{self.name}, arch #{arch.name}: #{res}"
       if res != "correct"
         ok = false
       end
