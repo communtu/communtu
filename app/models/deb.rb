@@ -388,12 +388,12 @@ class Deb < ActiveRecord::Base
     # get dependencies from control file
     f.read.each do |line|
       if !(ind=line.index("Depends: ")).nil?
-        actual_deps = Set.new(line[ind+9,line.length].split(","))
+        actual_deps = Set.new(line[ind+9,line.length].split(", "))
         needed_deps = Set.new(self.dependencies(arch))
         if actual_deps==needed_deps
           return "correct"
         else
-          return ("Missing in deb file: "+(needed_deps-actual_deps).to_a.join(",")+ "superfluous in deb file: "+(actual_deps-needed_deps).to_a.join(","))
+          return ("Missing in deb file: "+(needed_deps-actual_deps).to_a.join(",")+ ", superfluous in deb file: "+(actual_deps-needed_deps).to_a.join(","))
         end
       end
     end
