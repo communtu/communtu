@@ -21,7 +21,7 @@ class Deb < ActiveRecord::Base
   COMMUNTU_REPO = "http://packages.communtu.org"
   COMMUNTU_KEY = "D66AFBC0"
   # command for uploading debs to repository
-  REPREPRO = "GNUPGHOME=/home/communtu/.gnupg reprepro -v -b #{RAILS_ROOT} --outdir public/debs --confdir debs --logdir log --dbdir debs/db --listdir debs/list"
+  REPREPRO = "GNUPGHOME=/home/communtu/.gnupg reprepro -v -b #{RAILS_ROOT} --outdir #{RAILS_ROOT}/public/debs --confdir #{RAILS_ROOT}/debs --logdir #{RAILS_ROOT}/log --dbdir #{RAILS_ROOT}/debs/db --listdir #{RAILS_ROOT}/debs/list"
 
   def self.compute_codename(distribution,derivative,license,security)
     derivative.name.downcase+"-"+distribution.short_name.downcase+"-" +Package.license_components[license]+"-"+Package.security_components[security]
@@ -366,6 +366,7 @@ class Deb < ActiveRecord::Base
   
   def verify_arch(arch)
     # get position of deb file from reprepro
+    puts("#{REPREPRO} listfilter #{self.codename} \"Package (== #{self.name}), Version (>= #{version}), Architecture (== #{arch.name})\"")
     f=IO.popen("#{REPREPRO} listfilter #{self.codename} \"Package (== #{self.name}), Version (>= #{version}), Architecture (== #{arch.name})\"")
     pos = f.read.chomp.split(" ")
     if pos[0].nil? or pos[1].nil?
