@@ -366,8 +366,7 @@ class Deb < ActiveRecord::Base
   
   def verify_arch(arch)
     # get position of deb file from reprepro
-    puts("#{REPREPRO} listfilter #{self.codename} \"Package (== #{self.name}), Version (>= #{version}), Architecture (== #{arch.name})\"")
-    f=IO.popen("#{REPREPRO} listfilter #{self.codename} \"Package (== #{self.name}), Version (>= #{version}), Architecture (== #{arch.name})\"")
+    f=IO.popen("#{REPREPRO} listfilter #{self.codename} \"Package (== #{self.name})\" | grep #{arch.name}")
     pos = f.read.chomp.split(" ")
     if pos[0].nil? or pos[1].nil?
       return ("Reprepro could not find deb file")
