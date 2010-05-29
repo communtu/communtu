@@ -358,6 +358,10 @@ class Deb < ActiveRecord::Base
 
   # verify whether the stored deb is still correct
   def verify
+    if self.metapackage.nil?
+      puts "Deb #{self.id}: bundle does not exist"
+      return nil
+    end
     Architecture.all.each do |arch|
       puts "Deb #{self.id}, bundle #{self.name}, arch #{arch.name}: #{verify_arch(arch)}"
     end
@@ -385,20 +389,29 @@ class Deb < ActiveRecord::Base
     system "dpkg-deb -e #{file}"
     f=File.open("DEBIAN/control")
     Dir.chdir RAILS_ROOT
+    needed_deps = Set.new(self.dependencies(arch))
+    actual_dpes = Set.empty
     # get dependencies from control file
     f.read.each do |line|
       if !(ind=line.index("Depends: ")).nil?
         line.chomp!
         actual_deps = Set.new(line[ind+9,line.length].split(", "))
-        needed_deps = Set.new(self.dependencies(arch))
-        if actual_deps==needed_deps
-          return "correct"
-        else
-          return ("Missing in deb file: "+(needed_deps-actual_deps).to_a.join(",")+ ", superfluous in deb file: "+(actual_deps-needed_deps).to_a.join(","))
-        end
       end
     end
-    return ("Not dependencies found in control file")
+    if actual_deps==needed_deps
+      return "correct"
+    else
+      missing = needed_deps-actual_deps
+      superfluous = actual_deps-needed_deps
+      err = ""
+      if !missing.empty?
+        err += " Missing in deb file: "+missing.to_a.join(",")
+      end
+      if !superfluous.empty?
+        err += " Superfluous in deb file: "+superfluous.to_a.join(",")
+      end
+      return err
+    end
   end
 
   
