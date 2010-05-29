@@ -42,6 +42,11 @@ class Deb < ActiveRecord::Base
     [["main","universe","free"],["restricted","multiverse","non-free"]]
   end
 
+  # names of packages we depend on
+  def dependencies(arch)
+    self.metapackage.package_names_for_deb(self.distribution,self.derivative,self.license_type,self.security_type,arch)
+  end
+  
   # generate debian package
   def generate
     meta = self.metapackage
@@ -59,7 +64,7 @@ class Deb < ActiveRecord::Base
     plist = nil
     homogeneous = true
     Architecture.all.each do |arch|
-      packages[arch] = meta.package_names_for_deb(dist,der,lic,sec,arch)
+      packages[arch] = dependencies(arch)
       if plist.nil? then
         plist = packages[arch]
       elsif plist != packages[arch] then
@@ -89,7 +94,7 @@ class Deb < ActiveRecord::Base
 
       # look for a version that does not exist yet
       v=1
-      while !IO.popen("#{REPREPRO} listfilter #{codename} \"Package (== #{name}), Version (== #{version+v.to_s})\"").read.empty?
+      while !IO.popen("#{REPREPRO} listfilter #{codename} \"Package (== #{name}), Version (>= #{version+v.to_s})\"").read.empty?
         v+=1
       end
       version += v.to_s
@@ -180,8 +185,8 @@ class Deb < ActiveRecord::Base
     f.puts "Source: #{name}"
     f.puts "Section: metapackages"
     f.puts "Priority: Optional"
-    f.puts "Maintainer: Communtu <info@communtu.de>"
-    f.puts "Homepage: www.communtu.de"
+    f.puts "Maintainer: Communtu <info@communtu.org>"
+    f.puts "Homepage: www.communtu.org"
     if version.nil? then
       f.puts
     end
@@ -350,6 +355,51 @@ class Deb < ActiveRecord::Base
   def self.version_gt(v1,v2)
     system('dpkg', '--compare-versions', v1, 'gt', v2)
   end
+
+  # verify whether the stored deb is still correct
+  def verify
+    Architecture.all.each do |arch|
+      puts "Deb #{self.id}, bundle #{self.name}, arch #{arch.name}: #{verify_arch(arch)}"
+    end
+    return nil
+  end
+  
+  def verify_arch(arch)
+    # get position of deb file from reprepro
+    f=IO.popen("#{REPREPRO} listfilter #{self.codename} \"Package (== #{self.name}), Version (>= #{version}), Architecture (== #{arch.name})\"")
+    pos = f.read.chomp.split(" ")
+    if pos[0].nil? or pos[1].nil?
+      return ("Reprepro could not find deb file")
+    end
+    filename_prefix = RAILS_ROOT + "/public/debs/pool/*/*/*/" + pos[0] + "*" + pos[1]
+    file = Dir.glob(filename_prefix + "*all.deb")[-1]
+    if file.nil?
+      file = Dir.glob(filename_prefix + "*" + arch.name + ".deb")[-1]
+    end
+    if file.nil?
+      return ("Could not find " + filename_prefix + "*"+ arch.name + ".deb")
+    end
+    # extract control file
+    tmpdir = IO.popen("mktemp -d").read.chomp
+    Dir.chdir tmpdir
+    system "dpkg-deb -e #{file}"
+    f=File.open("DEBIAN/control")
+    Dir.chdir RAILS_ROOT
+    # get dependencies from control file
+    f.read.each do |line|
+      if !(ind=line.index("Depends: ")).nil?
+        actual_deps = Set.new(line[ind+9].split(","))
+        needed_deps = Set.new(self.dependencies(arch))
+        if actual_deps==needed_deps
+          return "correct"
+        else
+          return ("Missing in deb file: "+(needed_deps-actual_deps).to_a.join(",")+ "superfluous in deb file: "+(actual_deps-needed_deps).to_a.join(","))
+        end
+      end
+    end
+    return ("Not dependencies found in control file")
+  end
+
   
   protected
   
