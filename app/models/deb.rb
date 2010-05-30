@@ -64,7 +64,7 @@ class Deb < ActiveRecord::Base
     plist = nil
     homogeneous = true
     Architecture.all.each do |arch|
-      packages[arch] = dependencies(arch)
+      packages[arch] = self.dependencies(arch)
       if plist.nil? then
         plist = packages[arch]
       elsif plist != packages[arch] then
@@ -315,7 +315,7 @@ class Deb < ActiveRecord::Base
     Dir.chdir '..'
     safe_system "echo >>  #{RAILS_ROOT}/log/debianize.log 2>&1"
     safe_system "date >>  #{RAILS_ROOT}/log/debianize.log 2>&1"
-    safe_system "dpkg-buildpackage -uc -us -rfakeroot >> #{RAILS_ROOT}/log/debianize.log 2>&1"
+    safe_system "dpkg-buildpackage -a#{archname} -uc -us -rfakeroot >> #{RAILS_ROOT}/log/debianize.log 2>&1"
 #    safe_system "dpkg-buildpackage -sgpg -k#{Deb::COMMUNTU_KEY} -rfakeroot >> #{RAILS_ROOT}/log/debianize.log 2>&1"
     Dir.chdir '../../..'
     # return filename of the newly created package
@@ -382,6 +382,7 @@ class Deb < ActiveRecord::Base
     # get position of deb file from reprepro
     f=IO.popen("#{REPREPRO} listfilter #{self.codename} \"Package (== #{self.name})\" | grep #{arch.name}")
     pos = f.read.chomp.split(" ")
+    f.close
     if pos[1].nil? or pos[2].nil?
       return ("Reprepro could not find deb file")
     end
