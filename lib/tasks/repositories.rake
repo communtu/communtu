@@ -56,6 +56,7 @@ namespace :db do
     task :verify_debs => :environment do
       Deb.all.each do |d|
         system 'echo "Deb.find('+d.id.to_s+').verify" | script/console production'
+      end
     end
   end
 end
