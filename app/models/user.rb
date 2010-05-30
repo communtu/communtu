@@ -324,7 +324,8 @@ end
                  self.distribution,
                  self.derivative,
                  self.license,
-                 self.security)
+                 self.security,
+                 self.architecture)
       self.profile_changed = false
     end
     self.save
@@ -345,7 +346,8 @@ end
                  self.distribution,
                  self.derivative,
                  self.license,
-                 self.security)
+                 self.security,
+                 self.architecture)
     return debfile
   end
 
@@ -360,7 +362,7 @@ end
                  self.derivative,
                  self.license,
                  self.security)
-    debfile = Deb.makedeb_lock(name,version,[],description,self.distribution,codename,self.derivative,repos,true)
+    debfile = Deb.makedeb_lock(name,version,[],description,self.distribution,codename,self.derivative,repos,true,self.architecture.name)
     return debfile
   end
 

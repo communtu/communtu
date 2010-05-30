@@ -229,8 +229,7 @@ class Metapackage < BasePackage
 
 ## installation and creating debian metapackages
 
-  def recursive_packages package_names, package_sources, dist, license, security
-    arch = Architecture.find(:first) # TODO: make this more generic
+  def recursive_packages package_names, package_sources, dist, arch, license, security
     self.base_packages.each do |p|
         if p.class == Package
             reps = p.repositories_dist(dist,arch).select{|r| r.security_type<=security && r.license_type<=license}
@@ -241,13 +240,12 @@ class Metapackage < BasePackage
               end
             end
         else
-            p.recursive_packages package_names, package_sources, dist, license, security
+            p.recursive_packages package_names, package_sources, dist, arch, license, security
         end
     end
   end
 
-  def recursive_packages_sources package_sources, dist, license, security
-    arch = Architecture.find(:first) # TODO: make this more generic
+  def recursive_packages_sources package_sources, dist, arch, license, security
     self.base_packages.each do |p|
         if p.class == Package
             reps = p.repositories_dist(dist,arch).select{|r| r.security_type<=security && r.license_type<=license}
@@ -261,7 +259,7 @@ class Metapackage < BasePackage
               end
             end
         else
-            p.recursive_packages_sources package_sources, dist, license, security
+            p.recursive_packages_sources package_sources, dist, arch, license, security
         end
     end
   end

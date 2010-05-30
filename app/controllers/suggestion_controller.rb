@@ -62,7 +62,8 @@ class SuggestionController < ApplicationController
     if check_login then return end
 
     dist = current_user.distribution
-    
+    arch = current_user.architecture
+
     sources          = Set.[]
     @package_sources = ""
    
@@ -70,7 +71,7 @@ class SuggestionController < ApplicationController
     packages.each do |id,unused|
     
         package = Metapackage.find(id)
-        package.recursive_packages sources, dist
+        package.recursive_packages sources, dist, arch
     end
     
     gen_package_sources sources, @package_sources

@@ -163,16 +163,16 @@ class Deb < ActiveRecord::Base
   end
 
   # generate debian package for installation of new sources
-  def self.makedeb_for_source_install(name,version,description,packages,distribution,derivative,license,security)
+  def self.makedeb_for_source_install(name,version,description,packages,distribution,derivative,license,security,arch)
     #compute sources
     repos = Set.[]
     packages.each do |p|
       package_names   = []
-      p.recursive_packages package_names, repos, distribution, license, security
+      p.recursive_packages package_names, repos, distribution, arch, license, security
     end
     # only install sources, no packages
     codename = Deb.compute_codename(distribution,derivative,license,security)
-    Deb.makedeb_lock(name,version,[],description,distribution,codename,derivative,repos,true)
+    Deb.makedeb_lock(name,version,[],description,distribution,codename,derivative,repos,true,arch.name)
   end
 
   # create file 'control'

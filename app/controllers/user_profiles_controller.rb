@@ -45,9 +45,10 @@ class UserProfilesController < ApplicationController
     dist = user.distribution
     license = user.license
     security = user.security
+    arch = user.architecture
     @sources = {}
     metas.each do |p|
-       p.recursive_packages_sources @sources, dist, license, security
+       p.recursive_packages_sources @sources, dist, arch, license, security
     end
   end
 
