@@ -315,7 +315,8 @@ class Deb < ActiveRecord::Base
     Dir.chdir '..'
     safe_system "echo >>  #{RAILS_ROOT}/log/debianize.log 2>&1"
     safe_system "date >>  #{RAILS_ROOT}/log/debianize.log 2>&1"
-    safe_system "dpkg-buildpackage -a#{archname} -uc -us -rfakeroot >> #{RAILS_ROOT}/log/debianize.log 2>&1"
+    archflag = if archname=="all" then "" else "-a#{archname}" end
+    safe_system "dpkg-buildpackage #{archflag} -uc -us -rfakeroot >> #{RAILS_ROOT}/log/debianize.log 2>&1"
 #    safe_system "dpkg-buildpackage -sgpg -k#{Deb::COMMUNTU_KEY} -rfakeroot >> #{RAILS_ROOT}/log/debianize.log 2>&1"
     Dir.chdir '../../..'
     # return filename of the newly created package
