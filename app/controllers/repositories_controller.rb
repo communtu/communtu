@@ -151,7 +151,7 @@ class RepositoriesController < ApplicationController
 
   def test_all
     @distribution = Distribution.find(params[:id])
-    @infos = @distribution.repositories.map { |r| r.test_source }
+    @infos = @distribution.test_all_repos
   end
 
 end

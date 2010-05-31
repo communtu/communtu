@@ -5,6 +5,8 @@
 class Architecture < ActiveRecord::Base
   has_many :package_distrs_architectures, :dependent => :destroy
   has_many :livecds, :dependent => :destroy
+  has_many :repositories_architectures, :dependent => :destroy
+  has_many :repositories, :through => :repositories_architectures
 
   DEFAULT_ARCH_NAME = "i386"
 

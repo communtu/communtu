@@ -67,6 +67,10 @@ class Distribution < ActiveRecord::Base
     end
   end
   
+  def test_all_repos
+    self.repositories.map { |r| r.test_sources}.flatten
+  end
+
   protected
   def after_create
     # generate new configuration file for reprepro

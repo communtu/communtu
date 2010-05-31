@@ -8,6 +8,8 @@ class Repository < ActiveRecord::Base
   belongs_to :distribution
   has_many :package_distrs, :dependent => :destroy
   has_many :packages, :through => :package_distrs
+  has_many :repositories_architectures, :dependent => :destroy
+  has_many :architectures, :through => :repositories_architectures
   validates_presence_of :license_type, :url, :distribution_id
   
   def name
@@ -93,16 +95,39 @@ class Repository < ActiveRecord::Base
     end
   end
 
+  # enter architecture
+  def set_arch(arch)
+    params = {:repository_id=>self.id,:architecture_id=>arch.id}
+    if RepositoriesArchitecture.find(:first,:conditions=>params).nil?
+      RepositoriesArchitecture.create(params)
+    end
+  end
+  # remove architecture
+  def unset_arch(arch)
+    params = {:repository_id=>self.id,:architecture_id=>arch.id}
+    RepositoriesArchitecture.find(:all,:conditions=>params).each do |x|
+      x.destroy
+    end
+  end
+
+  # test whether all sources are present
+  def test_sources
+    Architecture.all.map {|a| self.test_source(a) }
+  end
   # test whether a source is present
-  def test_source 
-    arch = Architecture.find(:first)
+  def test_source(arch)
     url  = Repository.get_url_from_source(self.name,arch)[:url]
-    if url.nil? then return {:error => I18n.t(:model_package_7,{:repo=> self.url + " " + self.subtype})} end
+    if url.nil? then 
+      unset_arch(arch)
+      return {:error => I18n.t(:model_package_7,{:repo=> self.url + " " + self.subtype})}
+    end
     begin
       file = open(url, 'User-Agent' => 'Ruby-Wget')
     rescue
+      unset_arch(arch)
       return {:error => url}
     else
+      set_arch(arch)
       return {}
     end
   end
