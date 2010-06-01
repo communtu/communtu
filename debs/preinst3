@@ -13,10 +13,20 @@
     	url=$( echo $source | cut -d " " -f 2  | cut -d / -f 3)
     	# distribution=$( echo $source | cut -d " " -f 3 )
     	# component=$( echo $source | cut -d " " -f 4-6 )
-    	echo "Package: *" >> $APTPIN
-	    echo "Pin: origin $url" >> $APTPIN
-        echo "Pin-Priority: 100" >> $APTPIN
-    	echo >> $APTPIN
+        set +e
+        echo $url | grep -q ubuntu.com
+        # not ubuntu? 
+        if [ "$?" != "0" ]; then
+          grep -q "origin $url" $APTPIN
+          # not already present? then add a low priority
+          if [ "$?" != "0" ]; then
+            echo "Package: *" >> $APTPIN
+            echo "Pin: origin $url" >> $APTPIN
+            echo "Pin-Priority: 100" >> $APTPIN
+            echo >> $APTPIN
+          fi
+        fi
+        set -e
       done
     fi
 
