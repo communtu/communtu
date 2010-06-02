@@ -330,6 +330,8 @@ class Deb < ActiveRecord::Base
 
   # write reprepro configuration file
   def self.write_conf_distributions
+    comps = Deb.components.flatten.join(" ")
+    archs = Architecture.all.map{|a| a.name}.join(" ")
     f=File.open(RAILS_ROOT+'/debs/distributions','w')
     Distribution.all.each do |dist|
       Derivative.all.each do |der|
@@ -339,9 +341,10 @@ class Deb < ActiveRecord::Base
             f.puts "Codename: #{codename}"
             f.puts "Origin: communtu"
             f.puts "Label: communtu"
-            f.puts "Architectures: i386 amd64"
-            f.puts "Components: "+Deb.components.flatten.join(" ")
+            f.puts "Architectures: "+archs
+            f.puts "Components: "+comps
             f.puts "Description: metapackages generated from communtu.de"
+            f.puts "Contents: . .gz .bz2"
             f.puts "SignWith: #{COMMUNTU_KEY}"
             f.puts 
           end
