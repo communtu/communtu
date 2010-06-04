@@ -20,6 +20,12 @@ class LivecdsController < ApplicationController
     redirect_to :back
   end
 
+  def remaster_new
+    @cd = Livecd.find(params[:id])
+    @cd.generate_sources
+    remaster
+  end
+
   def index
   end
 end

@@ -188,6 +188,7 @@ de:
   four_and_fourty_letters: Zwischen 4 und 40 Zeichen
   generate_all_debs_for_bundle: Alle debs für das Bündel erzeugen
   generate_cd: LiveCD/DVD neu erstellen
+  generate_cd_new: LiveCD/DVD mit neuen Quellen neu erstellen
   go_to_download: Gehe zur Downloadseite
   gpg_key: 'GPG Schlüssel (optional): '
   headline: macht Ubuntu-Installationen einfach

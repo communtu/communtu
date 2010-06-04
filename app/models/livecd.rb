@@ -148,6 +148,13 @@ class Livecd < ActiveRecord::Base
     end
   end
 
+  def generate_sources
+    bundle = self.metapackage
+    user = self.user
+    self.srcdeb = user.install_bundle_sources(bundle)
+    self.save
+  end
+  
   # register a livecd for a user
   def register(user)
     if !self.users.include? user
