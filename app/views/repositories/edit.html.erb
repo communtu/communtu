@@ -30,13 +30,30 @@
 		<td><%= f.text_field :subtype %></td>
 	</tr>
 	<tr>
-	<td>
- 	<td>
-    	<%= f.submit t(:save) %>
-  	</td>
+	<td />
 	</tr>
-<% end %>
 </table>
 </div>
+
+<h3><%=t(:dependent_on_repositories)%></h3>
+    <table>
+        <tr>
+      <% i=0 %>
+      <% for r in @repository.distribution.repositories %>
+        <% checked = @repository.repositories.include?(r) %>
+        <td><%=check_box_tag("repo[#{r.id.to_s}]",1,checked) %> <%= h r.name %></td>
+        <% i+=1 %>
+        <% if i==2 then %>
+          <% i=0 %>
+          </tr>
+        <% end %>
+      <% end %>
+        </tr>
+    </table>
+ 	<div>
+    	<%= f.submit t(:save) %>
+  	</div>
+<% end %>
+
 <%= link_to t(:back), { :controller => :distributions, :action => :show,\
 	:id => @repository.distribution.id } %>

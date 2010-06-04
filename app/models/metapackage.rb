@@ -104,6 +104,16 @@ class Metapackage < BasePackage
       return ps.map{|p| p.debian_name}
   end
 
+  # close a list of bundles under dependencies
+  def self.close_deps(bundles)
+    bundles.each do |b|
+      b.base_packages.each do |b1|
+        if b.class == Metapackage and !bundles.include?(b)
+          bundles << b
+        end
+      end
+    end
+  end
 
   #conflicts within the bundle
   def internal_conflicts

@@ -58,41 +58,4 @@ class SuggestionController < ApplicationController
     send_file debfile, :type => 'application/x-debian-package'
   end
   
-  def install_apt_url
-    if check_login then return end
-
-    dist = current_user.distribution
-    arch = current_user.architecture
-
-    sources          = Set.[]
-    @package_sources = ""
-   
-    packages = params[:post]
-    packages.each do |id,unused|
-    
-        package = Metapackage.find(id)
-        package.recursive_packages sources, dist, arch
-    end
-    
-    gen_package_sources sources, @package_sources
-    
-  end
-  
-  private
-  
-    def gen_package_sources sources, package_sources
-        sources.each do |repository|
-            out  = "SOURCE=\"" + repository.url + " " + repository.subtype + "\"\n"
-            out += "grep -q \"" + repository.url + ".*" + repository.subtype + "\" $APTLIST\n\n"
-            out += "if [ \"$?\" != \"0\" ]; then\n" +
-                "\tsudo sh -c \"echo $SOURCE >> $APTLIST\"\n"
-            if not repository.gpgkey.nil? && (not repository.gpgkey.empty?)
-                out += "#{sudo} #{Deb::APT_KEY_COMMAND} #{Deb::KEYSERVER} #{repository.gpgkey} \n"
-            end
-            out += "fi\n\n"
-            package_sources << out
-        end
-    end
-      
 end
-

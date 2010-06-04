@@ -166,7 +166,13 @@ class MetapackagesController < ApplicationController
     if params[:metapackage][:description].nil? or params[:metapackage][:description].empty? then
       flash[:error] += t(:controller_metapackages_9)
       error = true
-    end  
+    end
+    if editing_metapackage?
+      if check_cart(@metapackage)
+        flash[:error] += t(:circular_dependency)
+        error = true
+      end
+    end
     if !error
       # correction of nil entries
       if params[:distributions].nil? then
@@ -354,12 +360,12 @@ class MetapackagesController < ApplicationController
   end
   
   def remove_package
-    mc = Metacontent.find(params[:package_id])
-    if !check_owner(mc.metapackage,current_user) then
+    m = Metapackage.find(params[:id])
+    if !check_owner(m,current_user) then
       redirect_to :controller => :metapackages, :action => :edit, :id => params[:id]
       return
     end
-    redirect_to :controller => :metapackages, :action => :edit_action, :id => params[:id], :did => mc.base_package_id, :method=>:pedit
+    redirect_to :controller => :metapackages, :action => :edit_action, :id => params[:id], :did => params[:package_id], :method=>:pedit
   end
   
   def edit_action

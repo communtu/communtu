@@ -170,6 +170,7 @@ class Deb < ActiveRecord::Base
       package_names   = []
       p.recursive_packages package_names, repos, distribution, arch, license, security
     end
+    Repository.close_deps(repos)
     # only install sources, no packages
     codename = Deb.compute_codename(distribution,derivative,license,security)
     Deb.makedeb_lock(name,version,[],description,distribution,codename,derivative,repos,true,arch.name)

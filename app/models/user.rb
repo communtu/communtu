@@ -354,6 +354,7 @@ end
   def install_package_sources(package)
     Dir.chdir RAILS_ROOT
     repos = package.repositories_dist(self.distribution,self.architecture)
+    Repository.close_deps(repos)
     name = BasePackage.debianize_name("communtu-add-sources-#{self.login}-#{package.name}")
     version = "0.1"
     description = I18n.t(:controller_suggestion_6)+package.name

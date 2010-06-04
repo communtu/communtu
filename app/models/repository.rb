@@ -10,6 +10,8 @@ class Repository < ActiveRecord::Base
   has_many :packages, :through => :package_distrs
   has_many :repositories_architectures, :dependent => :destroy
   has_many :architectures, :through => :repositories_architectures
+  has_many :repository_dependencies
+  has_many :repositories, :through => :repository_dependencies
   validates_presence_of :license_type, :url, :distribution_id
   
   def name
@@ -59,6 +61,17 @@ class Repository < ActiveRecord::Base
                        :url => newurl,
                        :subtype => subtype,
                        :gpgkey => gpgkey})
+  end
+
+  # close list of repositories under dependencies
+  def self.close_deps(repos)
+    repos.each do |r|
+      repos1 = r.repositories.each do |r1|
+        if !repos.include?(r1)
+          repos.push(r1)
+        end
+      end
+    end
   end
 
   # write repository list for usage with apt-mirror

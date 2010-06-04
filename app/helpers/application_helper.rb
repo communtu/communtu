@@ -131,6 +131,14 @@ module ApplicationHelper
     redirect_to "/packages"
   end
 
+  # check cart contents (i.e. package selection for a bundle) for recursive dependencies
+  def check_cart(meta)
+    cart = Cart.find(session[:cart])
+    metas = cart.base_packages.select{|p| p.class == Metapackage }
+    Metapackage.close_deps(metas)
+    return metas.include?(meta)
+  end
+
   # save cart contents (i.e. package selection for a bundle) to database
   def save_cart(meta)
     cart = Cart.find(session[:cart])
@@ -178,9 +186,7 @@ module ApplicationHelper
         end
       end
     end
-
     meta.update_attributes({:license_type => license, :security_type => security})
-    cart = Cart.find(session[:cart])
     cart.destroy
     session[:cart] = nil
     return meta

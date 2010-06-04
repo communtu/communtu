@@ -7,6 +7,7 @@ de:
   add_comment: Kommentar hinzufügen
   add_sources: Quellen hinzufügen
   add_to_bundle: zum Bündel hinzufügen
+  additional_sources: Zusätzliche Quellen, die hinzugefügt werden, weil bestimmte Quellen nicht in sich abgeschlossen sind
   advanced_user: Ich bin fortgeschrittener Benutzer und will auch unfertige Versionen von Ubuntu sehen.
   allgemeinbildung: Allgemeinbildung e.V.
   an: An
@@ -24,6 +25,7 @@ de:
   blog_2: Blog
   blog_link: http://communtu.wordpress.com
   bundel_edit: Bündel bearbeiten
+  bundel_editing: zur Bündelbearbeitung
   bundle: Bündel
   bundle_by_owner: erstellte Bündel
   bundle_editor: Bündel-Editor
@@ -48,6 +50,7 @@ de:
   choose_bundle: Bündel auswählen
   choose_category: Bitte auswählen
   choose_parent: Wähle einen Parent aus!
+  circular_dependency: "Fehler: zirkuläre Abhängigkeiten zwischen Bündeln"
   community_title: ubuntuusers
   compose_new_message: neue Nachricht schreiben
   confirm_new_passwd: Neues Passwort bestätigen
@@ -150,6 +153,7 @@ de:
   deb_generation_in_background: Debs werden im Hintergrund erzeugt (ggf. Browser-Ansicht aktualisieren)
   debian_section: 'Debian-Section:'
   delete: Löschen
+  dependent_on_repositories: "Abhängig von folgenden Repositories:"
   description: Beschreibung
   description_for_description: Bitte gib hier eine kurze Vorstellung deines Bündels ein für was für Tätigkeiten es gedacht ist. Danach kannst du auch noch auf die Vorzüge einiger Programme daraus eingehen.
   description_with_colon: 'Beschreibung:'
@@ -331,6 +335,7 @@ de:
   published: veröffentlicht
   questionmark_conny: Klick mich und sag mir, was dir unklar ist.
   register: Registrieren
+  repository: Repository
   repositories_incompletely_read: Repositories ohne Pakete (da nicht richtig eingelesen)
   repositories_without_packages: Repositories ohne Pakete (da Repositories leer)
   repository_url: 'Repository-URL: '
@@ -748,7 +753,6 @@ de:
   view_repositories_multinew_0: Einlesen
   view_repositories_new_0: 'Neues Repository für '
   view_repositories_new_4: GPG Schlüssel (Optional)
-  view_repositories_show_0: Repository anzeigen
   view_repositories_show_4: 'Paketliste für {{arch}}:'
   view_repositories_show_6: '        OpenSource'
   view_repositories_show_7: '        kommerziell '

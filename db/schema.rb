@@ -336,6 +336,13 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.datetime "updated_at"
   end
 
+  create_table "repository_dependencies", :force => true do |t|
+    t.integer  "repository_id"
+    t.integer  "depends_on_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "roles", :force => true do |t|
     t.string   "rolename"
     t.datetime "created_at"

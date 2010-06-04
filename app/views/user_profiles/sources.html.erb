@@ -17,3 +17,12 @@
 </li>
 <% end %>
 </ul>
+
+<% if !@additional_sources.nil? %>
+  <%=t(:additional_sources)%><br />
+  <ul>
+    <% for repository in @additional_sources %>
+       <li><%= link_to(repository.name, repository_path(repository)) %></li>
+    <% end %>
+  </ul>
+<% end %>

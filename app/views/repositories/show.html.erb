@@ -1,4 +1,4 @@
-<span class="headline"><%=t(:view_repositories_show_0)%></span>
+<span class="headline"><%=t(:repository)%> <%=@repository.name%></span>
 <p>
 <% if is_admin? %>
 <%= link_to t(:edit), { :action => :edit, :id => @repository.id } %>
@@ -18,10 +18,6 @@
 <div class="inner0">
 <%= error_messages_for :repository %>
 <table class="form_table">
-	<tr>
-	<td><%=t(:path)%></td>
-	<td><%= @repository.name %></td>
-	</tr>
     <% Architecture.all.each do |arch| %>
   	  <tr>
 	  <td><%=t(:view_repositories_show_4, :arch => arch.name)%></td>
@@ -64,6 +60,14 @@
 </table>
 </div>
 
+<% if !@repository.repositories.nil? %>
+  <h2><%=t(:dependent_on_repositories)%></h2>
+  <ul>
+    <% for r in @repository.repositories %>
+      <li><%=link_to r.name,repository_url(r)%> </li>
+    <% end %>
+  </ul>
+<% end %>
 <h2><%=t(:packages)%></h2>
 <% @repository.packages.each do |p| %>
    <%= p.icon(35)%>

@@ -50,6 +50,9 @@ class UserProfilesController < ApplicationController
     metas.each do |p|
        p.recursive_packages_sources @sources, dist, arch, license, security
     end
+    @additional_sources = @sources.keys
+    Repository.close_deps(@additional_sources)
+    @additional_sources -= @sources.keys
   end
 
   def installation

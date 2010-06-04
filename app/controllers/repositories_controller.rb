@@ -74,6 +74,20 @@ class RepositoriesController < ApplicationController
     respond_to do |format|
       if @repository.update_attributes(params[:repository])
         flash[:notice] = t(:controller_repositories_2)
+        # update dependencies
+        @repository.repositories.each do |r|
+          if params[:repo][r.id].nil?
+            @repository.repositories.delete(r)
+          end
+        end
+        params[:repo].each do |id,x|
+          begin
+            r = Repository.find(id)
+            if !@repository.repositories.include?(r)
+              @repository.repositories << r
+            end
+          end
+        end
         format.html { redirect_to({ :controller => :distributions, :action => :show,\
           :id => @repository.distribution_id }) }
         format.xml  { head :ok }
