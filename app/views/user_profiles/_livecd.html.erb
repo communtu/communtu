@@ -9,7 +9,11 @@
     <td><%= number_to_human_size(livecd.size) %> </td>
     <td><%= change_date_time(livecd.created_at).to_s %></td>
   <% else %>
-    <td><%= livecd.fullname %></td>
+    <% if is_admin? %>
+      <td><%= link_to livecd.fullname, livecd_path(livecd) %></td>
+    <% else %>
+      <td><%= livecd.fullname %></td>
+    <% end %>
     <td></td>
     <td><%=if livecd.failed then t(:cd_failed) else t(:being_created) end%></td>
   <% end %>
