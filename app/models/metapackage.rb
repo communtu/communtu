@@ -108,8 +108,8 @@ class Metapackage < BasePackage
   def self.close_deps(bundles)
     bundles.each do |b|
       b.base_packages.each do |b1|
-        if b.class == Metapackage and !bundles.include?(b)
-          bundles << b
+        if b1.class == Metapackage and !bundles.include?(b1)
+          bundles << b1
         end
       end
     end
