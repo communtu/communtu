@@ -152,7 +152,12 @@ class Livecd < ActiveRecord::Base
     bundle = self.metapackage
     user = self.users[0]
     if !user.nil?
-      self.srcdeb = Dir.pwd+"/"+user.install_bundle_sources(bundle)
+      user.distribution_id = self.distribution.id
+      user.derivative_id = self.derivative.id
+      user.architecture_id = self.architecture.id
+      user.license = self.license_type
+      user.security = self.security_type
+      self.srcdeb = RAILS_ROOT+"/"+user.install_bundle_sources(bundle)
       self.save
     end
   end
