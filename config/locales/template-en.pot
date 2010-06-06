@@ -190,6 +190,9 @@ msgstr ""
 #: superior_category
 msgid "Superior category"
 msgstr ""
+#: repository
+msgid "repository"
+msgstr ""
 #: controller_users_12
 msgid "User activated"
 msgstr ""
@@ -516,6 +519,9 @@ msgid "Log in"
 msgstr ""
 #: view_distributions_index_0
 msgid "Available Ubuntu-versions"
+msgstr ""
+#: dependent_on_repositories
+msgid "Depends on these repositories:"
 msgstr ""
 #: no_admin
 msgid "You are not an administrator!"
@@ -1675,6 +1681,9 @@ msgstr ""
 #: view_my_mailer_mail_1
 msgid "The following comment was made:"
 msgstr ""
+#: generate_cd_new
+msgid "Recreate Live-CD/DVD with new sources"
+msgstr ""
 #: view_metapackages_finish_migrate_3
 msgid "The following packages could not be migrated:"
 msgstr ""
@@ -1810,9 +1819,6 @@ msgstr ""
 #: eg
 msgid "e.g."
 msgstr ""
-#: view_repositories_show_0
-msgid "show repository"
-msgstr ""
 #: view_packages__packagelist_2
 msgid "Search:"
 msgstr ""
@@ -1824,6 +1830,9 @@ msgid "edit press archives"
 msgstr ""
 #: four_and_fourty_letters
 msgid "Between 4 and 40 letters"
+msgstr ""
+#: circular_dependency
+msgid "Error: circular dependencies between bundles"
 msgstr ""
 #: view_repositories_show_4
 msgid "Package-list for {{arch}}:"
@@ -2209,6 +2218,9 @@ msgstr ""
 #: make_your_livedvd
 msgid "You don't have Ubuntu installed on your computer. Choose a bundle and create a Live-CD, with which you can install your computer."
 msgstr ""
+#: bundel_editing
+msgid "edit bundle"
+msgstr ""
 #: controller_sent_1
 msgid "user does not exist"
 msgstr ""
@@ -2259,6 +2271,9 @@ msgid "28203 Bremen\nGermany"
 msgstr ""
 #: livecd_email_body
 msgid ", the Live-CD/DVD has been created. Follow this link:"
+msgstr ""
+#: additional_sources
+msgid "Additional sources which will be added as some sources are not completed in themselves"
 msgstr ""
 #: order_number
 msgid "Sort by number (smallest number first):"
@@ -2345,7 +2360,7 @@ msgstr ""
 msgid "<b>Ubuntu-releases</b> Overview about the available Ubuntu-releases (distributions)."
 msgstr ""
 #: continue
-msgid "Forward "
+msgid "Continue"
 msgstr ""
 #: view_debs_index_0
 msgid "Failed or running deb-generation"

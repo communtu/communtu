@@ -235,13 +235,13 @@ msgstr "Installation via metapackage"
 msgid "(optional)"
 msgstr "(optional)"
 
-#: controller_users_10
-msgid "Benutzer gelöscht"
-msgstr "User deleted"
-
 #: view_user_profiles__installation_25
 msgid "Installation über apturl"
 msgstr "Installatin via apturl"
+
+#: controller_users_10
+msgid "Benutzer gelöscht"
+msgstr "User deleted"
 
 #: controller_users_11
 msgid "Es gab ein Problem mit der Löschung."
@@ -251,13 +251,17 @@ msgstr "A problem while deleting a user occured."
 msgid "Übergeordnete Kategorie"
 msgstr "Superior category"
 
-#: controller_users_12
-msgid "Benutzer aktiviert"
-msgstr "User activated"
+#: repository
+msgid "Repository"
+msgstr "repository"
 
 #: view_user_profiles__installation_27
 msgid "Die Browser Konqueror und Opera bitte erst für "
 msgstr "Please configure "
+
+#: controller_users_12
+msgid "Benutzer aktiviert"
+msgstr "User activated"
 
 #: view_user_profiles__installation_28
 msgid "http://wiki.ubuntuusers.de/apturl"
@@ -690,6 +694,10 @@ msgstr "Log in"
 #: view_distributions_index_0
 msgid "Verfügbare Ubuntu-Versionen"
 msgstr "Available Ubuntu-versions"
+
+#: dependent_on_repositories
+msgid "Abhängig von folgenden Repositories:"
+msgstr "Depends on these repositories:"
 
 #: no_admin
 msgid "Du bist kein Administrator!"
@@ -2295,6 +2303,10 @@ msgstr ". "
 msgid "Folgender Kommentar wurde hinterlassen:"
 msgstr "The following comment was made:"
 
+#: generate_cd_new
+msgid "LiveCD/DVD mit neuen Quellen neu erstellen"
+msgstr "Recreate Live-CD/DVD with new sources"
+
 #: view_metapackages_finish_migrate_3
 msgid "Folgende Pakete konnten jedoch nicht migriert werden:"
 msgstr "The following packages could not be migrated:"
@@ -2475,10 +2487,6 @@ msgstr "Programs&nbsp;only:"
 msgid "z.B."
 msgstr "e.g."
 
-#: view_repositories_show_0
-msgid "Repository anzeigen"
-msgstr "show repository"
-
 #: view_packages__packagelist_2
 msgid "Suche:"
 msgstr "Search:"
@@ -2494,6 +2502,10 @@ msgstr "edit press archives"
 #: four_and_fourty_letters
 msgid "Zwischen 4 und 40 Zeichen"
 msgstr "Between 4 and 40 letters"
+
+#: circular_dependency
+msgid "Fehler: zirkuläre Abhängigkeiten zwischen Bündeln"
+msgstr "Error: circular dependencies between bundles"
 
 #: view_repositories_show_4
 msgid "Paketliste für {{arch}}:"
@@ -3007,6 +3019,10 @@ msgstr "Subject must not be empty."
 msgid "Du hast noch kein Ubuntu installiert. Dann wähle hier deine Bündel aus und brenne dir eine CD, damit du sie als Live-CD und zur Installation nutzen kannst."
 msgstr "You don't have Ubuntu installed on your computer. Choose a bundle and create a Live-CD, with which you can install your computer."
 
+#: bundel_editing
+msgid "zur Bündelbearbeitung"
+msgstr "edit bundle"
+
 #: controller_sent_1
 msgid "Benutzer existiert nicht"
 msgstr "user does not exist"
@@ -3076,6 +3092,10 @@ msgstr ""
 #: livecd_email_body
 msgid ", die Live-CD/DVD wurde erstellt! Folge dem Link: "
 msgstr ", the Live-CD/DVD has been created. Follow this link:"
+
+#: additional_sources
+msgid "Zusätzliche Quellen, die hinzugefügt werden, weil bestimmte Quellen nicht in sich abgeschlossen sind"
+msgstr "Additional sources which will be added as some sources are not completed in themselves"
 
 #: order_number
 msgid "Sortiernummer (kleinste Zahl zu erst):"
@@ -3191,7 +3211,7 @@ msgstr "<b>Ubuntu-releases</b> Overview about the available Ubuntu-releases (dis
 
 #: continue
 msgid "Weiter"
-msgstr "Forward "
+msgstr "Continue"
 
 #: view_debs_index_0
 msgid "Fehlgeschlagene oder laufende Deb-Generierungen"
@@ -3548,4 +3568,7 @@ msgstr "BUNDLE"
 #: install
 msgid "Installieren"
 msgstr "Install"
+
+#~ msgid "Repository anzeigen"
+#~ msgstr "show repository"
 

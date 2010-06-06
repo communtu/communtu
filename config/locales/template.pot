@@ -178,11 +178,11 @@ msgstr ""
 #: view_users_new_12
 msgid "(optional)"
 msgstr ""
-#: controller_users_10
-msgid "Benutzer gelöscht"
-msgstr ""
 #: view_user_profiles__installation_25
 msgid "Installation über apturl"
+msgstr ""
+#: controller_users_10
+msgid "Benutzer gelöscht"
 msgstr ""
 #: controller_users_11
 msgid "Es gab ein Problem mit der Löschung."
@@ -190,11 +190,14 @@ msgstr ""
 #: superior_category
 msgid "Übergeordnete Kategorie"
 msgstr ""
-#: controller_users_12
-msgid "Benutzer aktiviert"
+#: repository
+msgid "Repository"
 msgstr ""
 #: view_user_profiles__installation_27
 msgid "Die Browser Konqueror und Opera bitte erst für "
+msgstr ""
+#: controller_users_12
+msgid "Benutzer aktiviert"
 msgstr ""
 #: view_user_profiles__installation_28
 msgid "http://wiki.ubuntuusers.de/apturl"
@@ -516,6 +519,9 @@ msgid "Anmelden"
 msgstr ""
 #: view_distributions_index_0
 msgid "Verfügbare Ubuntu-Versionen"
+msgstr ""
+#: dependent_on_repositories
+msgid "Abhängig von folgenden Repositories:"
 msgstr ""
 #: no_admin
 msgid "Du bist kein Administrator!"
@@ -1678,6 +1684,9 @@ msgstr ""
 #: view_my_mailer_mail_1
 msgid "Folgender Kommentar wurde hinterlassen:"
 msgstr ""
+#: generate_cd_new
+msgid "LiveCD/DVD mit neuen Quellen neu erstellen"
+msgstr ""
 #: view_metapackages_finish_migrate_3
 msgid "Folgende Pakete konnten jedoch nicht migriert werden:"
 msgstr ""
@@ -1813,9 +1822,6 @@ msgstr ""
 #: eg
 msgid "z.B."
 msgstr ""
-#: view_repositories_show_0
-msgid "Repository anzeigen"
-msgstr ""
 #: view_packages__packagelist_2
 msgid "Suche:"
 msgstr ""
@@ -1827,6 +1833,9 @@ msgid "Pressearchiv bearbeiten"
 msgstr ""
 #: four_and_fourty_letters
 msgid "Zwischen 4 und 40 Zeichen"
+msgstr ""
+#: circular_dependency
+msgid "Fehler: zirkuläre Abhängigkeiten zwischen Bündeln"
 msgstr ""
 #: view_repositories_show_4
 msgid "Paketliste für {{arch}}:"
@@ -2212,6 +2221,9 @@ msgstr ""
 #: make_your_livedvd
 msgid "Du hast noch kein Ubuntu installiert. Dann wähle hier deine Bündel aus und brenne dir eine CD, damit du sie als Live-CD und zur Installation nutzen kannst."
 msgstr ""
+#: bundel_editing
+msgid "zur Bündelbearbeitung"
+msgstr ""
 #: controller_sent_1
 msgid "Benutzer existiert nicht"
 msgstr ""
@@ -2262,6 +2274,9 @@ msgid "28203 Bremen"
 msgstr ""
 #: livecd_email_body
 msgid ", die Live-CD/DVD wurde erstellt! Folge dem Link: "
+msgstr ""
+#: additional_sources
+msgid "Zusätzliche Quellen, die hinzugefügt werden, weil bestimmte Quellen nicht in sich abgeschlossen sind"
 msgstr ""
 #: order_number
 msgid "Sortiernummer (kleinste Zahl zu erst):"

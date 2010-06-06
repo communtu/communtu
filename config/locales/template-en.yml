@@ -59,6 +59,7 @@ en:
   view_users_new_12: (optional)
   controller_users_11: A problem while deleting a user occured.
   superior_category: Superior category
+  repository: repository
   controller_users_12: User activated
   view_user_profiles__installation_27: "Please configure "
   view_user_profiles__installation_28: https://wiki.ubuntu.com/AptUrl
@@ -170,6 +171,7 @@ en:
   view_home_news_8: .
   anmelden: Log in
   view_distributions_index_0: Available Ubuntu-versions
+  dependent_on_repositories: "Depends on these repositories:"
   no_admin: You are not an administrator!
   view_metapackages_new_4: Install by default
   bundles_with_missing_debs: Bundles with failed deb-builds
@@ -587,6 +589,7 @@ en:
   view_layouts_application_9: Log out
   view_metapackages_finish_migrate_2: ". "
   view_my_mailer_mail_1: "The following comment was made:"
+  generate_cd_new: Recreate Live-CD/DVD with new sources
   view_metapackages_finish_migrate_3: "The following packages could not be migrated:"
   view_packages_edit_2: Icon
   controller_repositories_0: repositories
@@ -632,11 +635,11 @@ en:
   view_categories_index_0: Category-overview
   view_packages__packagelist_1: "Programs&nbsp;only:"
   eg: e.g.
-  view_repositories_show_0: show repository
   view_packages__packagelist_2: "Search:"
   cant_debianized: To create this meta-package an English title and descriptionis needed.
   edit_press_archiv: edit press archives
   four_and_fourty_letters: Between 4 and 40 letters
+  circular_dependency: "Error: circular dependencies between bundles"
   view_repositories_show_4: "Package-list for {{arch}}:"
   livecd_email_failed: "Communtu: creation of Live-CD/DVD failed."
   controller_application_0: This function is not available for guests.
@@ -765,6 +768,7 @@ en:
   we_want_you: We need you
   controller_sent_0: Subject must not be empty.
   make_your_livedvd: You don't have Ubuntu installed on your computer. Choose a bundle and create a Live-CD, with which you can install your computer.
+  bundel_editing: edit bundle
   controller_sent_1: user does not exist
   view_user_profiles__sources_0: Sources for the soon be installed programs
   view_home_impressum_2: AG Communtu
@@ -784,6 +788,7 @@ en:
     28203 Bremen
     Germany
   livecd_email_body: ", the Live-CD/DVD has been created. Follow this link:"
+  additional_sources: Additional sources which will be added as some sources are not completed in themselves
   order_number: "Sort by number (smallest number first):"
   videos: "Videos:"
   senden: Send
@@ -812,15 +817,15 @@ en:
   controller_derivatives_2: Derivative updated.
   view_home_about_16: In order to use Communtu you need to register yourself. To do so, just click on the "Registration"-button in the menu above.
   view_home_home_10: <b>Ubuntu-releases</b> Overview about the available Ubuntu-releases (distributions).
-  continue: "Forward "
+  continue: Continue
   view_debs_index_0: Failed or running deb-generation
   view_home_home_11: <b>Administrate users</b> As an administrator you can change the role of the users. Act with caution!
-  view_debs_index_1: Go back to the Communtu-menu
-  view_home_home_12: <b>Administrate categories</b> As an administrator you can create new categories or change the structure of a category-tree here. Act with caution!
   livecd_image_link: https://help.ubuntu.com/community/IsoImage
-  view_metapackages_show_save: save bundle as a metapackage
-  view_debs_index_2: "  There are no failed deb-generations! Congratulations!"
+  view_home_home_12: <b>Administrate categories</b> As an administrator you can create new categories or change the structure of a category-tree here. Act with caution!
+  view_debs_index_1: Go back to the Communtu-menu
   view_home_home_13: <b>News</b> Reference to events about Communtu, the Communtu-blog ...
+  view_debs_index_2: "  There are no failed deb-generations! Congratulations!"
+  view_metapackages_show_save: save bundle as a metapackage
   view_home_home_14: "There is also "
   view_debs_index_3: "Create every failed deb <b>Warning: only do this at admin.communtu.de!</b>"
   help_translation: Needing help with the translation? - Write us an e-mail!
