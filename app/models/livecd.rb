@@ -181,7 +181,7 @@ class Livecd < ActiveRecord::Base
     end
   end
 
-  MSGS = ["Failed to fetch","could not set up","Cannot install","is not installable","not going to be installed", "Depends:","rror","annot"]
+  MSGS = ["Failed to fetch","could not set up","Cannot install","is not installable","not going to be installed", "Depends:","Error","error","annot","Wrong"]
   
   def short_log
     if log.nil?
