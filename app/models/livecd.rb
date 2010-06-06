@@ -151,7 +151,7 @@ class Livecd < ActiveRecord::Base
   def generate_sources
     bundle = self.metapackage
     user = self.users[0]
-    if !user.nil?
+    if !user.nil? and !bundle.nil?
       user.distribution_id = self.distribution.id
       user.derivative_id = self.derivative.id
       user.architecture_id = self.architecture.id
