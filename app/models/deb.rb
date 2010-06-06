@@ -321,7 +321,7 @@ class Deb < ActiveRecord::Base
 #    safe_system "dpkg-buildpackage -sgpg -k#{Deb::COMMUNTU_KEY} -rfakeroot >> #{RAILS_ROOT}/log/debianize.log 2>&1"
     Dir.chdir '../../..'
     # return filename of the newly created package
-    return Dir.glob("debs/#{name}/#{name}_#{version}*deb")[0]
+    return Dir.glob("debs/#{name}/#{name}_#{version}*#{archname}*deb")[0]
   end
 
   # remove packages whose distribution has vanished
