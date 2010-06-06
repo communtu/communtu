@@ -100,7 +100,6 @@ class Livecd < ActiveRecord::Base
         self.failed = !(system remaster_call)
         # kill VM and release lock, necessary in case of abrupt exit
         system "sudo kill-kvm 2222"
-        system "sudo umount-remaster"
         system "dotlockfile -u /home/communtu/livecd/livecd2222.lock"
         system "echo  >> #{RAILS_ROOT}/log/livecd.log"
         call = "echo \"finished at:\"; date >> #{RAILS_ROOT}/log/"
