@@ -81,7 +81,7 @@ class Livecd < ActiveRecord::Base
     else
       # need to generate iso, use lock in order to prevent parallel generation of multiple isos
       begin
-        safe_system "dotlockfile -r 1000 #{RAILS_ROOT}/livecd_lock"
+        safe_system "dotlockfile -p -r 1000 #{RAILS_ROOT}/livecd_lock"
         self.generating = true
         self.save
         # log to log/livecd.log
@@ -181,7 +181,7 @@ class Livecd < ActiveRecord::Base
     end
   end
 
-  MSGS = ["Failed to fetch","could not set up","Cannot install","is not installable","not going to be installed", "Depends:","Error","error","annot","Wrong"]
+  MSGS = ["Failed to fetch","could not set up","Cannot install","is not installable","not going to be installed", "Depends:","Error","error","annot","Wrong","not found","Connection closed"]
   
   def short_log
     if log.nil?
