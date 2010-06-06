@@ -157,6 +157,7 @@ class Livecd < ActiveRecord::Base
       user.architecture_id = self.architecture.id
       user.license = self.license_type
       user.security = self.security_type
+      user.profile_changed = true
       self.srcdeb = RAILS_ROOT+"/"+user.install_bundle_sources(bundle)
       self.save
     end
