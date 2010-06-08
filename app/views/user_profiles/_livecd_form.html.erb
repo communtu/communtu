@@ -16,6 +16,12 @@
       <%= t(:name_of_livecd) %>
       <%= text_field_tag(:name,default_name) %>
     <% end %>
+      <% if is_power_user? %>
+        <ul>
+          <li><%= check_box_tag("iso") %> <%= t(:create_iso_image)%></li>
+          <li><%= check_box_tag("kvm") %> <%= t(:create_kvm_image)%></li>
+          <li><%= check_box_tag("usb") %> <%= t(:create_usb_image)%></li></ul><br />
+      <% end %>
       <%= submit_tag(t(:livecd_start)) %></p>
       <p><%=t(:view_user_profiles__installation_33)%>
       <%= link_to (t(:sources), user_path(current_user) + "/user_profile/sources")%>

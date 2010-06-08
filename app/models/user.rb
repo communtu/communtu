@@ -403,7 +403,7 @@ end
     return debfile
   end
 
-  def livecd(name)
+  def livecd(name,iso=false,kvm=false,usb=false)
     sources = self.install_sources
     if sources.nil? then return nil end
     srcdeb = RAILS_ROOT + "/" + sources
@@ -414,13 +414,14 @@ end
                         :derivative_id => self.derivative_id, :architecture_id => self.architecture_id,
                         :srcdeb => srcdeb, :installdeb => installdeb,
                         :license_type => self.license, :security_type => self.security,
+                        :iso => iso, :kvm => kvm, :usb => usb,
                         :profile_version => self.profile_version})
     cd.register(self)
     # cd.fork_remaster # now done by daemon
     return cd
   end
 
-  def bundle_to_livecd(bundle)
+  def bundle_to_livecd(bundle,iso=false,kvm=false,usb=false)
     params = {:metapackage_id => bundle.id,
               :distribution_id => self.distribution.id,
               :derivative_id => self.derivative.id,
@@ -449,6 +450,9 @@ end
       params[:name] = deb_name
       params[:srcdeb] = srcdeb
       params[:installdeb] = deb_name
+      params[:iso] = iso
+      params[:kvm] = kvm
+      params[:usb] = usb
       cd = Livecd.create(params)
       # cd.fork_remaster # now done by daemon
     end

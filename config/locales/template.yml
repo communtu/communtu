@@ -145,6 +145,9 @@ de:
   controller_users_8: Benutzer deaktiviert
   controller_users_9: Es gab ein Problem mit der Deaktivierung dieses Benutzers.
   create: Anlegen
+  create_iso_image: '<a href="http://ww.ubuntuusers.de/wiki/ISO">ISO-Image</a> erstellen (für CD/DVD)'
+  create_kvm_image: '<a href="http://ww.ubuntuusers.de/wiki/KVM">KVM-Image</a> erstellen (für virtuelle Maschine)'
+  create_usb_image: '<a href="http://ww.ubuntuusers.de/wiki/USB-Stick">USB-Stick-Image</a> erstellen'
   create_your_livedvd: Erstelle dir eine Live-CD
   creation_error: Bei der Erstellung des Pakets ist ein Fehler aufgetreten.
   creation_failed: Erzeugung fehlgeschlagen
@@ -223,9 +226,11 @@ de:
   invalid_activation_code_entered: Ungültiger Anderungscode eingegeben.
   invalid_activation_code_please_check_again: Ungültiger Anderungscode. Bitte den Code prüfen und nochmals versuchen. (Vielleicht hat dein Email-Programm einen Zeilenumbruch eingefügt?)
   invisible_distribution: Unsichtbare Distribution
+  iso_image: ISO-Image (für CD/DVD)
   kommentieren: Kommentieren
   kontodaten: Konto 172 9375, Sparkasse Bremen, BLZ 290 501 01
   kurzname: Kurzname
+  kvm_image: KVM-Image
   last_user: Wir begrüßen unseren zuletzt neu-registrierten Nutzer
   lib_system_0: Du musst eingeloggt sein, um dieses Feature zu benutzen. Geht auch als "Gast".
   lib_system_1: Du hast keine Berechtigung für diese Aktion.
@@ -369,6 +374,7 @@ de:
   update: Aktualisieren
   updatedPackages: 'geänderte Pakete: '
   url: Url
+  usb_image: USB-Image
   used_in_bundles: 'Wird bei Communtu in folgenden Bündeln benutzt:'
   username: Benutzername
   videos: 'Videos:'

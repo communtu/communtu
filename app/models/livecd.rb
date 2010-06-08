@@ -30,14 +30,39 @@ class Livecd < ActiveRecord::Base
   end
 
   # filename of LiveCD in the file system
-  def filename
+  def iso_image
     "#{RAILS_ROOT}/public/isos/#{self.fullname}.iso"
   end
 
-  # url of LiveCD on the communtu server
-  def url
+  # filename of kvm image in the file system
+  def kvm_image
+      "#{RAILS_ROOT}/public/isos/#{self.fullname}.kvm.img"
+  end
+
+  # filename of kvm image in the file system
+  def usb_image
+    "#{RAILS_ROOT}/public/isos/#{self.fullname}.usb.img"
+  end
+
+  # base url of LiveCD on the communtu server
+  def base_url
     baseurl = if RAILS_ROOT.index("test").nil? then "http://communtu.org" else "http://test.communtu.de" end
-    return "#{baseurl}/isos/#{self.fullname}.iso"
+    return "#{baseurl}/isos/#{self.fullname}"
+  end
+
+  # url of iso image on the communtu server
+  def iso_url
+    "#{self.base_url}.iso"
+  end
+
+  # url of kvm image on the communtu server
+  def kvm_url
+    "#{self.base_url}.kvm.img"
+  end
+
+  # url of usb image on the communtu server
+  def usb_url
+    "#{self.base_url}.usb.img"
   end
 
   # check if a user supplied name is acceptable
@@ -72,15 +97,9 @@ class Livecd < ActiveRecord::Base
   # created liveCD, using script/remaster
   def remaster
     ver = self.smallversion
-    iso = self.filename
-    isourl = self.url
     fullname = self.fullname
-    if !Dir.glob(iso)[0].nil? then
-      # iso already exists? then we are done
-      self.failed = false
-    else
-      # need to generate iso, use lock in order to prevent parallel generation of multiple isos
-      begin
+    # need to generate iso, use lock in order to prevent parallel generation of multiple isos
+    begin
         safe_system "dotlockfile -p -r 1000 #{RAILS_ROOT}/livecd_lock"
         self.generating = true
         self.save
@@ -89,13 +108,25 @@ class Livecd < ActiveRecord::Base
         call = "(echo \"Creating live CD #{fullname}\"; date) >> #{RAILS_ROOT}/log/"
         system (call+"livecd.log")
         system (call+"livecd.short.log")
+        # check if there is enough disk space (at least 25 GB)
+        while IO.popen("df | grep /local").read.split(" ")[3].to_i < 25000000
+          # destroy the oldest liveCD
+          cd=Livecd.find(:first,:order=>"created_at ASC")
+          call = "(echo \"Disk full - deleting live CD #{cd.id}\" >> #{RAILS_ROOT}/log/"
+          system (call+"livecd.log")
+          system (call+"livecd.short.log")
+          cd.destroy
+        end
         # Jaunty and lower need virtualisation due to requirement of sqaushfs version >= 4 (on the server, we have Hardy)
         if self.distribution_id < 5 then
           virt = "-v "
         else
           virt = ""
         end
-        remaster_call = "#{RAILS_ROOT}/script/remaster create #{virt}#{ver} #{iso} #{self.name} #{self.srcdeb} #{self.installdeb} 2222 >> #{RAILS_ROOT}/log/livecd.log 2>&1"
+        isoflag = self.iso ? "-iso #{self.iso_image} " : ""
+        kvmflag = self.kvm ? "-kvm #{self.kvm_image} " : ""
+        usbflag = self.sub ? "-usb #{self.usb_image} " : ""
+        remaster_call = "#{RAILS_ROOT}/script/remaster create #{virt}#{isoflag}#{kvmflag}#{usbflag}#{ver} #{self.name} #{self.srcdeb} #{self.installdeb} 2222 >> #{RAILS_ROOT}/log/livecd.log 2>&1"
         system "echo \"#{remaster_call}\" >> #{RAILS_ROOT}/log/livecd.log"
         self.failed = !(system remaster_call)
         # kill VM and release lock, necessary in case of abrupt exit
@@ -113,18 +144,26 @@ class Livecd < ActiveRecord::Base
         if self.failed then
           self.log = IO.popen("tail -n80 #{RAILS_ROOT}/log/livecd.log").read
         end
-      rescue
+    rescue
         self.log = "ruby code for live CD/DVD creation crashed"
         self.failed = true
-      end
-      system "dotlockfile -u #{RAILS_ROOT}/livecd_lock"
     end
+    system "dotlockfile -u #{RAILS_ROOT}/livecd_lock"
     # store size and inform user via email
     if !self.failed then
       self.generated = true
-      self.size = File.size(self.filename)
+      self.size = 0
+      if self.iso
+        self.size += File.size(self.iso_image)
+      end
+      if self.kvm
+        self.size += File.size(self.kvm_image)
+      end
+      if self.usb
+        self.size += File.size(self.iso_image)
+      end
       self.users.each do |user|
-        MyMailer.deliver_livecd(user,isourl)
+        MyMailer.deliver_livecd(user,livecdpath(self))
       end
     else
       if self.first_try then
@@ -201,17 +240,29 @@ class Livecd < ActiveRecord::Base
   protected
 
   # cleanup of processes and iso files
+  def delete_images
+    if self.iso
+      File.delete self.iso_image
+    end
+    if self.kvm
+      File.delete self.kvm_image
+    end
+    if self.usb
+      File.delete self.usb_image
+    end
+  end
+
   def before_destroy
     begin
       # if process for creating the livecd is waiting but has not started yet, kill it
       if !self.generated and !self.generating and !self.pid.nil?
         Process.kill("TERM", self.pid)
         # use time for deletion of iso as waiting time
-        File.delete self.filename
+        self.delete_images
         Process.kill("KILL", self.pid)
       else
         # only delete the iso
-        File.delete self.filename
+        self.delete_images
       end
     rescue
     end

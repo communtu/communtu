@@ -138,7 +138,7 @@ class UserProfilesController < ApplicationController
     else
       flash[:notice] = t(:livecd_create)
       # create new live CD
-      user.livecd(name)
+      user.livecd(name,true,params[:kvm],params[:usb])
       redirect_to "/livecds"
     end
   end
@@ -158,7 +158,7 @@ class UserProfilesController < ApplicationController
 
   def create_livecd_from_bundle
     @bundle = Metapackage.find(params[:id])
-    current_user.bundle_to_livecd(@bundle)
+    current_user.bundle_to_livecd(@bundle,true,params[:kvm],params[:usb])
     redirect_to "/livecds"
   end
 end

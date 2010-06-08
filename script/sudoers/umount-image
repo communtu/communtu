@@ -1,0 +1,3 @@
+#!/bin/bash
+kpartx -d $1
+umount /remaster

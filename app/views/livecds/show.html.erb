@@ -18,17 +18,27 @@
 <% end %>
 <% if @cd.generated %>
   <p><%= t(:creation_successful) %>, 
-      <%= link_to t(:download), @cd.url %>,
       <%= number_to_human_size(@cd.size) %>,
       <%= change_date_time(@cd.updated_at).to_s %></p>
+  <ul>
+    <li><%= link_to t(:iso_image), @cd.iso_url %></li>
+    <% if @cd.kvm %>
+      <li><%= link_to t(:kvm_image), @cd.kvm_url %></li>
+    <% end %>
+    <% if @cd.usb %>
+      <li><%= link_to t(:usb_image), @cd.usb_url %></li>
+    <% end %>
+  </ul>
 <% end %>
 <% if @cd.generating %>
   <p><%= t(:creation_in_progress) %></p>
 <% end %>
 <% if @cd.failed %>
   <p><%= t(:creation_failed) %>
- &nbsp;<%= link_to t(:generate_cd), :action => 'remaster' %>
- &nbsp;<%= link_to t(:generate_cd_new), :action => 'remaster_new' %></p>
+  <%if is_admin? %>
+     &nbsp;<%= link_to t(:generate_cd), :action => 'remaster' %>
+     &nbsp;<%= link_to t(:generate_cd_new), :action => 'remaster_new' %></p>
+  <% end %>
 <% end %>
 <p>
 <% if !@cd.log.nil? %>
