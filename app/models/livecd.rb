@@ -2,6 +2,8 @@
 # this allows for better error logging and recovery
 # note that the iso itself is stored in the file system, however
 
+require "lib/utils.rb"
+
 class Livecd < ActiveRecord::Base
   belongs_to :distribution
   belongs_to :derivative
