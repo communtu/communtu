@@ -71,4 +71,15 @@
 
  def min(x,y)
     if x <= y then x else y end
-  end
+ end
+
+ def disk_used_space( path )
+  `df -Pk #{path} |grep ^/ | awk '{print $3;}'`.
+    to_i * 1.kilobyte
+ end
+
+ def disk_free_space( path )
+  `df -Pk #{path} |grep ^/ | awk '{print $4;}'`.
+    to_i * 1.kilobyte
+ end
+ 

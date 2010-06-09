@@ -109,7 +109,8 @@ class Livecd < ActiveRecord::Base
         system (call+"livecd.log")
         system (call+"livecd.short.log")
         # check if there is enough disk space (at least 25 GB)
-        while IO.popen("df | grep /local").read.split(" ")[3].to_i < 25000000
+        iso_path = File.read(RAILS_ROOT+"/config/iso_path").chomp
+        while disk_free_space(iso_path) < 25000000000
           # destroy the oldest liveCD
           cd=Livecd.find(:first,:order=>"created_at ASC")
           call = "(echo \"Disk full - deleting live CD #{cd.id}\" >> #{RAILS_ROOT}/log/"
