@@ -602,7 +602,7 @@ msgstr ""
 msgid "Donation possibility"
 msgstr ""
 #: view_home_about_3
-msgid "There are many applications which have to be post-installed, e. g. programs for audio, video and graphics, in order to really make the computer able to use Ubuntu. Communtu helps to make the post-installation easier, and furthermore, has special sections for beginners and users coming from Windows."
+msgid "There are many applications which have to be post-installed, e. g. programs for audio, video and graphics, in order to really make the computer able to use Ubuntu. Communtu helps to make the installation of additional software easier, and furthermore, has special sections for beginners and users coming from Windows."
 msgstr ""
 #: view_home_derivatives_15
 msgid "http://en.wikipedia.org/wiki/KDE"
@@ -722,7 +722,7 @@ msgstr ""
 msgid " and edit"
 msgstr ""
 #: view_home_derivatives_26
-msgid " - with the slim Xfce as the graphical interface. Particularly suitable for older computers: 128 MB RAM and 1,5 GB free hard disk space are sufficient. Should be installed from the CD to guarantee a slim installation. Post-installation can be done with Communtu."
+msgid " - with the slim Xfce as the graphical interface. Particularly suitable for older computers: 128 MB RAM and 1,5 GB free hard disk space are sufficient. Should be installed from the CD to guarantee a slim installation. Additional software installation can be done with Communtu."
 msgstr ""
 #: predecessor
 msgid "Parent"
@@ -1928,7 +1928,7 @@ msgstr ""
 msgid "/5 stars&nbsp;&nbsp; "
 msgstr ""
 #: view_user_profiles__installation_0
-msgid "Ubuntu post-installation"
+msgid "Additional software installation for Ubuntu "
 msgstr ""
 #: yes1
 msgid "yes"

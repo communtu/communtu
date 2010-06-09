@@ -198,7 +198,7 @@ en:
   blog: The Communtu blog
   view_home_derivatives_14: " - learning software. Choose \"advanced\" under \"Education and science\" and it will be installed."
   donation_possibility: Donation possibility
-  view_home_about_3: There are many applications which have to be post-installed, e. g. programs for audio, video and graphics, in order to really make the computer able to use Ubuntu. Communtu helps to make the post-installation easier, and furthermore, has special sections for beginners and users coming from Windows.
+  view_home_about_3: There are many applications which have to be post-installed, e. g. programs for audio, video and graphics, in order to really make the computer able to use Ubuntu. Communtu helps to make the installation of additional software easier, and furthermore, has special sections for beginners and users coming from Windows.
   view_home_derivatives_15: http://en.wikipedia.org/wiki/KDE
   view_home_about_4: How do I use Communtu?
   view_home_derivatives_16: " is Ubuntu with the KDE-Desktop"
@@ -240,7 +240,7 @@ en:
   view_users_index_2: " registered users."
   view_users_new_2: If you want to be informed about the development of Communtu you have to enter a valid e-mail-address.
   helper_distributions_10: " and edit"
-  view_home_derivatives_26: " - with the slim Xfce as the graphical interface. Particularly suitable for older computers: 128 MB RAM and 1,5 GB free hard disk space are sufficient. Should be installed from the CD to guarantee a slim installation. Post-installation can be done with Communtu."
+  view_home_derivatives_26: " - with the slim Xfce as the graphical interface. Particularly suitable for older computers: 128 MB RAM and 1,5 GB free hard disk space are sufficient. Should be installed from the CD to guarantee a slim installation. Additional software installation can be done with Communtu."
   predecessor: Parent
   helper_distributions_11: "<br />Distribution "
   view_home_derivatives_27: http://en.wikipedia.org/wiki/LinuxMCE
@@ -671,7 +671,7 @@ en:
   new_bundle: New bundle
   view_user_profiles__profile_data_12: " Allow every source (slightly insecure but with even more programs/better comfort. Attention: programs installed from foreign sources can do harm to your computer!):"
   view_packages_show_9: "/5 stars&nbsp;&nbsp; "
-  view_user_profiles__installation_0: Ubuntu post-installation
+  view_user_profiles__installation_0: "Additional software installation for Ubuntu "
   yes1: "yes"
   view_packages__deps_0: none
   view_derivatives_show_1: "sudo-program:"
