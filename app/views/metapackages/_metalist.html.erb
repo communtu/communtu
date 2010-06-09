@@ -46,7 +46,7 @@
 		<td class="<%= css %>" valign="middle" align="center">
 			<%= link_to image_tag("/images/install.png", :size => "18x18", :border => "0", :title => t(:view_metapackages__metalist_14), :alt => t(:install2)), "apt://#{metapackage.debian_name}" %>
             <%= link_to image_tag("/images/sources.jpg", :size => "18x18", :border => "0", :title => t(:add_sources), :alt => t(:sources)), "/users/#{current_user.id}/suggestion/install_bundle_sources/#{metapackage.id}" %>
-            <% if is_power_user? || ((current_user.distribution_id<6) && !current_user.anonymous?) %>
+            <% if ((current_user.distribution_id<6) && !current_user.anonymous?) %>
               <br /> <%= link_to image_tag("/images/cd.png", :size => "18x18", :border => "0", :title => t(:create_your_livedvd), :alt => t(:create_your_livedvd)), "/users/#{current_user.id}/user_profile/bundle_to_livecd/#{metapackage.id}" %>
             <% end %>
 		</td>	
