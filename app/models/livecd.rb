@@ -128,7 +128,7 @@ class Livecd < ActiveRecord::Base
         end
         isoflag = self.iso ? "-iso #{self.iso_image} " : ""
         kvmflag = self.kvm ? "-kvm #{self.kvm_image} " : ""
-        usbflag = self.sub ? "-usb #{self.usb_image} " : ""
+        usbflag = self.usb ? "-usb #{self.usb_image} " : ""
         remaster_call = "#{RAILS_ROOT}/script/remaster create #{virt}#{isoflag}#{kvmflag}#{usbflag}#{ver} #{self.name} #{self.srcdeb} #{self.installdeb} 2222 >> #{RAILS_ROOT}/log/livecd.log 2>&1"
         system "echo \"#{remaster_call}\" >> #{RAILS_ROOT}/log/livecd.log"
         self.failed = !(system remaster_call)
