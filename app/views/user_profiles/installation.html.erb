@@ -18,8 +18,6 @@
 		<li><%= link_to t(:view_user_profiles__installation_24), '/suggestion/install_bundle_as_meta'%> </li>
 	    <li><% url2 = 'apt://'+@metas%>
              <%= link_to t(:view_user_profiles__installation_25), url2 %>
-             <% if current_user.profile_changed && current_user.profile_version > 1 %>
-		        <br /><%=t(:changed_settings)%><% end %>
 		     <br /><%=t(:view_user_profiles__installation_27)%><%= link_to 'apturl', t(:view_user_profiles__installation_28)%><%=t(:view_user_profiles__installation_29)%></li></ul>
 	</li>
 </ol>
