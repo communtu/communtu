@@ -100,6 +100,9 @@ scp $OLDUSERNAME@$OLDSERVER:"/home/$OLDUSERNAME/.gnupg/*" /home/$NEWUSERNAME/.gn
 # old log files
 scp -r $OLDUSERNAME@$OLDSERVER:~/web2.0/communtu-program/$OLDUSERNAME/log /home/$NEWUSERNAME/web2.0/communtu-program/log/oldlog
 
+# folder for temporary images
+sudo mkdir /local/isos/tmp
+sudo chown communtu /local/isos/tmp
 
 # rails server init script
 sudo cp script/rails /etc/init.d/

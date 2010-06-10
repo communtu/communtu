@@ -46,10 +46,15 @@ class Livecd < ActiveRecord::Base
     "#{RAILS_ROOT}/public/isos/#{self.fullname}.usb.img"
   end
 
+  def self.rails_url
+    if RAILS_ROOT.index("test").nil?
+      then "http://communtu.org"
+      else "http://test.communtu.de"
+    end
+  end
   # base url of LiveCD on the communtu server
   def base_url
-    baseurl = if RAILS_ROOT.index("test").nil? then "http://communtu.org" else "http://test.communtu.de" end
-    return "#{baseurl}/isos/#{self.fullname}"
+    return "#{Livecd.rails_url}/isos/#{self.fullname}"
   end
 
   # url of iso image on the communtu server
@@ -166,7 +171,7 @@ class Livecd < ActiveRecord::Base
         self.size += File.size(self.iso_image)
       end
       self.users.each do |user|
-        MyMailer.deliver_livecd(user,livecdpath(self))
+        MyMailer.deliver_livecd(user,"#{Livecd.rails_url}/livecds/#{self.id}")
       end
     else
       if self.first_try then
