@@ -597,7 +597,7 @@ en:
   view_sessions_new_0: "Log in with username and password:"
   controller_repositories_1: Repository created.
   view_packages_edit_4: "Is a program:"
-  view_metapackages_edit_2: Pleas use versions => 1.0 only for stable bundles. A version must always increase. 0.10 is higher than 0.9.
+  view_metapackages_edit_2: Please use versions => 1.0 only for stable bundles. A version must always increase. 0.10 is higher than 0.9.
   add: add
   controller_admins_0: admninistration section
   controller_repositories_2: Repository updated.

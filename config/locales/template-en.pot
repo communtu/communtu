@@ -1706,7 +1706,7 @@ msgstr ""
 msgid "Is a program:"
 msgstr ""
 #: view_metapackages_edit_2
-msgid "Pleas use versions => 1.0 only for stable bundles. A version must always increase. 0.10 is higher than 0.9."
+msgid "Please use versions => 1.0 only for stable bundles. A version must always increase. 0.10 is higher than 0.9."
 msgstr ""
 #: add
 msgid "add"
