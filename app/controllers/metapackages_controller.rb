@@ -53,7 +53,7 @@ class MetapackagesController < ApplicationController
     @metapackage = Metapackage.new
     @metapackage.category_id = 1
     @metapackage.version = "0.1"
-    @metapackage.name = t(:new_bundle)
+    @name = params[:name]
     @categories  = Category.find(1)
     @backlink    = request.env['HTTP_REFERER']
     @conflicts   = {}
@@ -71,6 +71,7 @@ class MetapackagesController < ApplicationController
     @categories  = Category.find(1)
     @backlink    = request.env['HTTP_REFERER']
     @conflicts   = {}
+    @name = if @metapackage.name == "" then t(:new_bundle) else  @metapackage.name end
   end
 
   def create
@@ -90,38 +91,23 @@ class MetapackagesController < ApplicationController
     if @metapackage.nil?
       if check_bundle_name(params[:metapackage][:name])
          @metapackage = Metapackage.new
-	       @translation_new  = Translation.new
-    		 @last_trans = Translation.find(:first, :order => "translatable_id DESC")
-    		 last_id = @last_trans.translatable_id
-    		 @translation_new.translatable_id = last_id + 1
+
+         @translation_new = Translation.new_translation(params[:name])
     		 @metapackage.name_tid = @translation_new.translatable_id
-    		 @translation_new.language_code = I18n.locale.to_s
-		     @translation_new.contents = params[:name]
-    		 @translation_new.save
-    		 @translation_des  = Translation.new
-    		 @translation_des.translatable_id = last_id + 2
+
+    		 @translation_des  = Translation.new_translation("")
     		 @metapackage.description_tid = @translation_des.translatable_id
-    		 @translation_des.contents = ""
-    		 @translation_des.language_code = I18n.locale.to_s
-    		 @translation_des.save
-    		 if I18n.locale.to_s != "en"
-      			translate_name = Translation.new
-      			translate_name.translatable_id = last_id + 1
-      			translate_name.contents = ""
-      			translate_name.language_code = "en"
-      			translate_name.save
-      			translate_des = Translation.new
-      			translate_des.translatable_id = last_id + 2
-      			translate_des.contents = ""
-      			translate_des.language_code = "en"
-      			translate_des.save
-    		  end
-          @metapackage.user_id         = current_user.id
-          @metapackage.default_install = false
-          @metapackage.license_type = 0
-          @metapackage.category_id = 1
-          @metapackage.save!
-          params[:id] = @metapackage.id
+
+         if I18n.locale.to_s != "en"
+      			translate_name = Translation.new_translation("",en)
+      			translate_des = Translation.new_translation("",en)
+    	   end
+         @metapackage.user_id = current_user.id
+         @metapackage.default_install = false
+         @metapackage.license_type = 0
+         @metapackage.category_id = 1
+         @metapackage.save!
+         params[:id] = @metapackage.id
       else
         flash[:error] += t(:controller_metapackages_6)
         error = true

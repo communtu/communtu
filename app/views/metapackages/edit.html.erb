@@ -12,13 +12,7 @@
 	        <% if @metapackage.is_published? then %>
               <td><%= @metapackage.name %></td>	
             <% else %>
-              <% if @metapackage.name == "" %>
-              <td><input id="metapackage_name" name="metapackage[name]" size="16" type="text" value="<%= t(:new_bundle) %>" /></td>
-              <% elsif I18n.locale.to_s == "en" %>
-                <td><%= @metapackage.name %></td>
-                 <% else %>
-              <td><input id="metapackage_name" name="metapackage[name]" size="16" type="text" value="<%= @metapackage.name %>" /></td><td></td>
-                 <% end %>
+              <td><input id="metapackage_name" name="metapackage[name]" size="16" type="text" value="<%= @name %>" /></td>
             <% end  %></tr>
             <% if (@metapackage.name_english == "" or @metapackage.name_english == nil) and I18n.locale.to_s != "en" %>
               <tr>
