@@ -145,9 +145,9 @@ de:
   controller_users_8: Benutzer deaktiviert
   controller_users_9: Es gab ein Problem mit der Deaktivierung dieses Benutzers.
   create: Anlegen
-  create_iso_image: '<a href="http://ww.ubuntuusers.de/wiki/ISO">ISO-Image</a> erstellen (für CD/DVD)'
+  create_iso_image: '<a href="http://ww.ubuntuusers.de/wiki/CD-Images">ISO-Image</a> erstellen (für CD/DVD)'
   create_kvm_image: '<a href="http://ww.ubuntuusers.de/wiki/KVM">KVM-Image</a> erstellen (für virtuelle Maschine)'
-  create_usb_image: '<a href="http://ww.ubuntuusers.de/wiki/USB-Stick">USB-Stick-Image</a> erstellen'
+  create_usb_image: '<a href="http://ww.ubuntuusers.de/wiki/Live-USB">USB-Stick-Image</a> erstellen'
   create_your_livedvd: Erstelle dir eine Live-CD
   creation_error: Bei der Erstellung des Pakets ist ein Fehler aufgetreten.
   creation_failed: Erzeugung fehlgeschlagen

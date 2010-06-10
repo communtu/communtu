@@ -260,7 +260,7 @@ msgstr ""
 msgid "Die Communtu-Metapakete können auch mittles {{synaptic}} (unter System -> Systemverwaltung) angezeigt, installiert und deinstalliert werden. Änderungen an Bündeln werden über die Ubuntu-Paketverwaltung automatisch eingespielt."
 msgstr ""
 #: create_usb_image
-msgid "<a href=\"http://ww.ubuntuusers.de/wiki/USB-Stick\">USB-Stick-Image</a> erstellen"
+msgid "<a href=\"http://ww.ubuntuusers.de/wiki/Live-USB\">USB-Stick-Image</a> erstellen"
 msgstr ""
 #: view_home_home_2
 msgid "Ubuntu-Linux"
@@ -275,7 +275,7 @@ msgstr ""
 msgid "Passwort darf nicht leer sein."
 msgstr ""
 #: create_iso_image
-msgid "<a href=\"http://ww.ubuntuusers.de/wiki/ISO\">ISO-Image</a> erstellen (für CD/DVD)"
+msgid "<a href=\"http://ww.ubuntuusers.de/wiki/CD-Images\">ISO-Image</a> erstellen (für CD/DVD)"
 msgstr ""
 #: view_home_home_3
 msgid " steht für ein menschliches Linux, das einfach zu benutzen ist. Aber um Ubuntu wirklich gut nutzen zu können, muss man ganz schön viele Programme nachinstallieren, und es ist oft schwer, da den Überblick zu behalten. Bei Communtu gibst du nur an, welche Aufgaben du mit deinem Computer erledigen willst, und Communtu schlägt dir eine ganze Reihe von Programmen vor, die automatisch installiert werden können."

@@ -983,7 +983,7 @@ msgstr ""
 msgid "To which topic do you look for programs (office, graphics, ...)? Enter your fields of interest and pre-configured bundles can be downloaded."
 msgstr ""
 #: view_user_profiles__profile_data_0
-msgid "Preparing the installation: adjust the preadjustments"
+msgid "Change settings"
 msgstr ""
 #: view_home_news_17
 msgid "Go to the blog"
@@ -1628,7 +1628,7 @@ msgstr ""
 msgid "could not determine URL"
 msgstr ""
 #: cd_donate
-msgid "Creating a CD/DVD requires a lot of server performance. Please {{donate_link}}} to keep this feature alive."
+msgid "Creating a CD/DVD requires a lot of server performance. Please {{donate_link}} to keep this feature alive."
 msgstr ""
 #: view_layouts_application_5
 msgid "per PayPal:"

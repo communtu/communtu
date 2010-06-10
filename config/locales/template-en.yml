@@ -343,7 +343,7 @@ en:
   view_home_faq_03: How do I install a bundle?
   cd_being_created: Creating Live-CD/DVD
   search_programs_bundles: To which topic do you look for programs (office, graphics, ...)? Enter your fields of interest and pre-configured bundles can be downloaded.
-  view_user_profiles__profile_data_0: "Preparing the installation: adjust the preadjustments"
+  view_user_profiles__profile_data_0: Change settings
   view_home_news_17: Go to the blog
   view_home_derivatives_44: " - minimalist and fast version of Ubuntu for older PCs."
   view_home_faq_04: There are two ways to install a bundle.<p> The first way is to click on <b>Download</b>. You will now be presented a small formular in which you can choose the tasks you want to perform with your computer. Next you have to choose which version of Ubuntu you want to use (in most cases it will be detected correctly and you only have to pick it from the list) and which GUI you use (Gnome = Ubuntu, KDE = Kubuntu, XFCE = Xubuntu). The last two steps are about the license and the security of the progams (which sources you want to be added and if the programs shall be open or closed source). You can now click on "Save rough selection and install" to get to the end and install the preselected bundles or you can click on "Save rough selection" to make a more detailed choice of the bundles being installed. Finally you need to add the Communtu sources to your system and, when this is finished, you only have to click on "Install" and the chosen bundles will be installed.<p> The second way is to click on <b>Bundle</b> and then on "Published bundles". You now see a list with every bundle created in Communtu. Here you can install a bundle directly with a click on "Install through metapackage", assuming you have added the sources earlier. If not, a click on "Add sources" will add them to your system.
@@ -568,7 +568,7 @@ en:
   metacart_choose: Please add programs to your bundle.
   migrate_repositories: Take over repositories from parent
   model_package_11: could not determine URL
-  cd_donate: Creating a CD/DVD requires a lot of server performance. Please {{donate_link}}} to keep this feature alive.
+  cd_donate: Creating a CD/DVD requires a lot of server performance. Please {{donate_link}} to keep this feature alive.
   view_layouts_application_5: "per PayPal:"
   Kommentar: "Comment:"
   model_package_12: content of {{file}} does not match with repository-syntax
