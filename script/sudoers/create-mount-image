@@ -1,12 +1,13 @@
 #!/bin/bash
 # create and mount kvm image
-totalsize=$1
-hdasize=$1-500000
-parted $1 mkpart primary ext2 1000k ${totalsize}k
+totalsize=$2
+let hdasize=$2-500000
+parted $1 mklabel msdos
+parted $1 mkpart primary ext2 1000k ${hdasize}k
 parted $1 mkpart primary linux-swap ${hdasize}k ${totalsize}k
 kpartx_out=$(kpartx -av $1)
 loop=$(echo $kpartx_out  | cut -d " " -f 3)
 device=/dev/mapper/$loop
 mkfs -t ext3 $device
-mount -o loop $device /remaster
+mount $device /remaster
 grub-install --root-directory=/remaster $device

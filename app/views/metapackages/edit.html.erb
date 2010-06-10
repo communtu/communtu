@@ -17,13 +17,13 @@
             <% if (@metapackage.name_english == "" or @metapackage.name_english == nil) and I18n.locale.to_s != "en" %>
               <tr>
               <td><%=t(:english_name)%></td>
-              <td colspan="2"><input id="metapackage_name_english" name="metapackage[name_english]" size="16" type="text" value="" /> 
+              <td colspan="2"><input id="metapackage_name_english" name="metapackage[name_english]" size="16" type="text" value="<%= @name_english %>" />
                   <a href="mailto:info@communtu.de?subject=<%= @metapackage.id %>"><%= t(:help_translation) %></a></td>
               </tr>
             <% elsif I18n.locale.to_s != "en" %>
               <tr>
               <td><%=t(:english_name)%></td>
-              <td><%= @metapackage.name_english %></td><td></td></tr>
+              <td><%= @name_english %></td><td></td></tr>
             <% else %>            
             <% end %>
         <tr>
@@ -48,24 +48,14 @@
         <td></td></tr>
         <tr>
 	        <td valign='top'><%=t(:description_with_colon)%></td>
-                <% if @metapackage.description == "" or @metapackage.description == nil %>
-	        <td><textarea id="metapackage_description" name="metapackage[description]" rows="6" cols="50"></textarea></td>
-                <% else %>
-	        <td><textarea id="metapackage_description" name="metapackage[description]" rows="6" cols="50"><%= @metapackage.description %></textarea></td>
-<% end %>
+	        <td><textarea id="metapackage_description" name="metapackage[description]" rows="6" cols="50"><%= @description %></textarea></td>
         <td valign='top'><%= t(:description_for_description)%></td></tr>
- <% if (@metapackage.description_english == "" or @metapackage.description_english == nil) and I18n.locale.to_s != "en" %>
-              <tr>
-               <td valign='top'><%=t(:english_description)%></td>
-              <td><textarea id="metapackage_description_english" name="metapackage[description_english]" rows="6" cols="50"></textarea></td><td></td>
-              </tr>
-             <% elsif (flash[:error] != "" and I18n.locale.to_s != "en") %>
+ <% if ((@metapackage.description_english == "" or @metapackage.description_english == nil) and I18n.locale.to_s != "en") or (flash[:error] != "" and I18n.locale.to_s != "en") %>
              <tr>
               <td valign='top'>
               <%=t(:english_description)%></td>
-              <td><textarea id="metapackage_description_english" name="metapackage[description_english]" rows="6" cols="50"><%= @metapackage.description_english %></textarea></td>
+              <td><textarea id="metapackage_description_english" name="metapackage[description_english]" rows="6" cols="50"><%= @description_english %></textarea></td>
               <td></td></tr>
-            <% else %>
             <% end %>
 
         </table>	

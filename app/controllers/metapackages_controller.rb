@@ -72,6 +72,9 @@ class MetapackagesController < ApplicationController
     @backlink    = request.env['HTTP_REFERER']
     @conflicts   = {}
     @name = if @metapackage.name == "" then t(:new_bundle) else  @metapackage.name end
+    @name_english = if @metapackage.name_english == "" then "new bundle" else @metapackage.name_english end
+    @description = if @metapackage.description.nil? then "" else @metapackage.description end
+    @description_english = if @metapackage.description_english.nil? then "" else @metapackage.description_english end
   end
 
   def create
@@ -88,6 +91,13 @@ class MetapackagesController < ApplicationController
     else
       @metapackage = Metapackage.find(params[:id])
     end
+    @name = params[:metapackage][:name]
+    @name_english = params[:metapackage][:name_english]
+    if @name_english.nil? and !@metapackage.nil?
+      @name_english = @metapackage.name_english
+    end
+    @description = params[:metapackage][:description]
+    @description_english = params[:metapackage][:description_english]
     if @metapackage.nil?
       if check_bundle_name(params[:metapackage][:name])
          @metapackage = Metapackage.new
@@ -149,7 +159,7 @@ class MetapackagesController < ApplicationController
       flash[:error] += t(:controller_metapackages_8)
       error = true
     end
-    if params[:metapackage][:description].nil? or params[:metapackage][:description].empty? then
+    if @description.nil? or @description.empty? then
       flash[:error] += t(:controller_metapackages_9)
       error = true
     end
@@ -203,7 +213,7 @@ class MetapackagesController < ApplicationController
           @trans_update_name_english.save
         end
       end
-      if params[:metapackage][:description] != "" and params[:metapackage][:description] != nil
+      if @description != "" and @description != nil
         if @metapackage.description_tid == nil
            @metapackage.description_tid = new_trans_id
         end
@@ -211,24 +221,24 @@ class MetapackagesController < ApplicationController
         if @trans_update_des == nil
           @trans_update_des = Translation.new
           @trans_update_des.translatable_id = @metapackage.description_tid
-          @trans_update_des.contents = params[:metapackage][:description]
+          @trans_update_des.contents = @description
           @trans_update_des.language_code = I18n.locale.to_s
           @trans_update_des.save
         else
-          @trans_update_des.contents = params[:metapackage][:description]
+          @trans_update_des.contents = @description
           @trans_update_des.save
         end
       end
       @trans_update_description_english = Translation.find(:first, :conditions => { :translatable_id => @metapackage.description_tid, :language_code => "en"})
-      if params[:metapackage][:description_english] != nil
+      if @description_english != nil
         if @trans_update_description_english == nil
           @trans_update_description_english = Translation.new
           @trans_update_description_english.translatable_id = @metapackage.description_tid
-          @trans_update_description_english.contents = params[:metapackage][:description_english]
+          @trans_update_description_english.contents = @description_english
           @trans_update_description_english.language_code = "en"
           @trans_update_description_english.save
         else
-          @trans_update_description_english.contents = params[:metapackage][:description_english]
+          @trans_update_description_english.contents = @description_english
           @trans_update_description_english.save
         end
       end
