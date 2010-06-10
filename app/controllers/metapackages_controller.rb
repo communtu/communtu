@@ -92,7 +92,7 @@ class MetapackagesController < ApplicationController
       if check_bundle_name(params[:metapackage][:name])
          @metapackage = Metapackage.new
 
-         @translation_new = Translation.new_translation(params[:name])
+         @translation_new = Translation.new_translation(params[:metapackage][:name])
     		 @metapackage.name_tid = @translation_new.translatable_id
 
     		 @translation_des  = Translation.new_translation("")
