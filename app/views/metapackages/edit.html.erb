@@ -9,12 +9,12 @@
         <table width="125%">
         <tr>
 	        <td><%=t(:name_with_colon)%></td>
-	        <% if @metapackage.is_published? then %>
+	        <% if @metapackage.is_published? and !is_admin? then %>
               <td><%= @metapackage.name %></td>	
             <% else %>
               <td><input id="metapackage_name" name="metapackage[name]" size="16" type="text" value="<%= @name %>" /></td>
             <% end  %></tr>
-            <% if (@metapackage.name_english == "" or @metapackage.name_english == nil) and I18n.locale.to_s != "en" %>
+            <% if (@metapackage.name_english == "" or @metapackage.name_english == nil or is_admin?) and I18n.locale.to_s != "en" %>
               <tr>
               <td><%=t(:english_name)%></td>
               <td colspan="2"><input id="metapackage_name_english" name="metapackage[name_english]" size="16" type="text" value="<%= @name_english %>" />
