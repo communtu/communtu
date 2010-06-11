@@ -63,8 +63,10 @@ end
 namespace :livecd do
   desc 'Daemon for creating LiveCDs'
   task :daemon => :environment do
+    ports = File.read("#{RAILS_ROOT}/config/kvm_ports").split("\n")
+    admin_ports = [ports.pop,ports.pop]
     loop do
-      Livecd.remaster_next
+      Livecd.remaster_next(ports,admin_ports)
       sleep 10
     end
   end

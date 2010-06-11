@@ -94,20 +94,20 @@ class Livecd < ActiveRecord::Base
   end
   
   # create the liveCD in a forked process
-  def fork_remaster
+  def fork_remaster(port=2222)
       self.pid = fork do
-	 	        system 'echo "Livecd.find('+self.id.to_s+').remaster" | nohup script/console production'
+	 	        system 'echo "Livecd.find('+self.id.to_s+').remaster('+port.to_s+')" | nohup script/console production'
       end
       self.save
   end
 
   # created liveCD, using script/remaster
-  def remaster
+  def remaster(port=2222)
     ver = self.smallversion
     fullname = self.fullname
     # need to generate iso, use lock in order to prevent parallel generation of multiple isos
     begin
-        safe_system "dotlockfile -p -r 1000 #{RAILS_ROOT}/livecd_lock"
+        safe_system "dotlockfile -p -r 1000 #{RAILS_ROOT}/livecd#{port}_lock"
         self.generating = true
         self.save
         # log to log/livecd.log
@@ -134,12 +134,12 @@ class Livecd < ActiveRecord::Base
         isoflag = self.iso ? "-iso #{self.iso_image} " : ""
         kvmflag = self.kvm ? "-kvm #{self.kvm_image} " : ""
         usbflag = self.usb ? "-usb #{self.usb_image} " : ""
-        remaster_call = "#{RAILS_ROOT}/script/remaster create #{virt}#{isoflag}#{kvmflag}#{usbflag}#{ver} #{self.name} #{self.srcdeb} #{self.installdeb} 2222 >> #{RAILS_ROOT}/log/livecd.log 2>&1"
+        remaster_call = "#{RAILS_ROOT}/script/remaster create #{virt}#{isoflag}#{kvmflag}#{usbflag}#{ver} #{self.name} #{self.srcdeb} #{self.installdeb} #{port} >> #{RAILS_ROOT}/log/livecd.log 2>&1"
         system "echo \"#{remaster_call}\" >> #{RAILS_ROOT}/log/livecd.log"
         self.failed = !(system remaster_call)
         # kill VM and release lock, necessary in case of abrupt exit
-        system "sudo kill-kvm 2222"
-        system "dotlockfile -u /home/communtu/livecd/livecd2222.lock"
+        system "sudo kill-kvm #{port}"
+        system "dotlockfile -u /home/communtu/livecd/livecd#{port}.lock"
         system "echo  >> #{RAILS_ROOT}/log/livecd.log"
         call = "echo \"finished at:\"; date >> #{RAILS_ROOT}/log/"
         system (call+"livecd.log")
@@ -156,7 +156,7 @@ class Livecd < ActiveRecord::Base
         self.log = "ruby code for live CD/DVD creation crashed: "+err
         self.failed = true
     end
-    system "dotlockfile -u #{RAILS_ROOT}/livecd_lock"
+    system "dotlockfile -u #{RAILS_ROOT}/livecd#{port}_lock"
     # store size and inform user via email
     if !self.failed then
       self.generated = true
@@ -185,12 +185,19 @@ class Livecd < ActiveRecord::Base
     self.save
   end
 
-  def self.remaster_next
+  def self.remaster_next(ports,admin_ports)
     cd = Livecd.find_by_generated_and_generating_and_failed(false,false,false)
     if !cd.nil? then
+      if cd.users[0].has_role?('administrator')
+        port = admin_ports.pop
+        admin_ports = [port] + admin_ports
+      else
+        port = ports.pop
+        ports = [port] + ports
+      end
       cd.generating = true
       cd.save
-      cd.remaster
+      cd.fork_remaster(port)
     end
   end
 
