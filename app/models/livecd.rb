@@ -97,7 +97,7 @@ class Livecd < ActiveRecord::Base
   def fork_remaster(port=2222)
       nice = if cd.users[0].has_role?('administrator') then "" else "nice -n +10 " end
       self.pid = fork do
-	 	        system "echo \"Livecd.find(#{self.id.to_s}).remaster(#{port.to_s})\" | #{nice} nohup script/console production'
+	 	        system "echo \"Livecd.find(#{self.id.to_s}).remaster(#{port.to_s})\" | #{nice} nohup script/console production"
       end
       self.save
   end
