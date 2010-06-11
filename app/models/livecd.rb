@@ -228,14 +228,14 @@ class Livecd < ActiveRecord::Base
     end
   end
 
-  MSGS = ["Failed to fetch","could not set up","Cannot install","is not installable","not going to be installed", "Depends:","Error","error","annot","Wrong","not found","Connection closed"]
+  MSGS = ["Failed to fetch","could not set up","Cannot install","is not installable","not going to be installed", "Depends:","Error","error","annot","Wrong","not found","Connection closed", "E:"]
   
   def short_log
     if log.nil?
       return ""
     end
     lines = log.split("\n")
-    lines.each do |line|
+    lines.reverse.each do |line|
       MSGS.each do |msg|
         if !line.index(msg).nil?
           return line
