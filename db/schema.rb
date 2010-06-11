@@ -222,6 +222,7 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.integer  "profile_version"
     t.boolean  "kvm"
     t.boolean  "usb",             :default => false
+    t.integer  "vm_pid"
   end
 
   create_table "message_copies", :force => true do |t|

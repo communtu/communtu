@@ -31,4 +31,17 @@ class LivecdsController < ApplicationController
 
   def index
   end
+
+  def start_vm
+    @cd = Livecd.find(params[:id])
+    @cd.start_vm
+    redirect_to livecd_path(@cd)
+  end
+
+  def stop_vm
+    @cd = Livecd.find(params[:id])
+    @cd.stop_vm
+    redirect_to livecd_path(@cd)
+  end
+
 end

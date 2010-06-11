@@ -358,8 +358,10 @@ de:
   sources: Quellen
   spam_user_delete: Alle Spam-User gelöscht.
   start: Start
+  start_vm: Virtuelle Maschine starten
   statistics: Aufrufstatistik
   steps_for_distribution_setup: Schritte für das Einrichten einer neuen Distribution (bitte auf admin-System durchführen)
+  stop_vm: Virtuelle Maschine stoppen
   subject_with_colon: 'Betreff: '
   subject_without_colon: Betreff
   subtype: 'Subtyp:'
@@ -872,6 +874,7 @@ de:
   view_users_show_8: Nachrichten
   view_videos_edit_0: Video bearbeiten
   view_videos_show_0: 'Url:'
+  vm_running: "virtuelle Maschine läuft unter: "
   wait_for_debs: auf Bau der Metapakete warten
   wait_for_release: auf offizielles Ubuntu-Release warten
   wait_for_sync: auf Synchronisation der Repositories warten

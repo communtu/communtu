@@ -256,7 +256,24 @@ class Livecd < ActiveRecord::Base
     end
     return ""
   end
-  
+
+  def start_vm
+    if self.vm_pid.nil?
+      self.vm_pid = fork do
+        tmpfile = IO.popen("mktemp").read.chomp
+        iso_path = File.read(RAILS_ROOT+"/config/iso_path").chomp
+        hda = iso_path+tmpfile
+        system "qemu-img create #{hda} 5G"
+        system "kvm -hda #{hda} -cdrom #{self.iso_image} -m 1000"
+      end
+    end
+  end
+
+  def stop_vm
+    system "kill #{self.vm_pid}"
+    system "kill -9 #{self.vm_pid}"
+  end
+
   protected
 
   # cleanup of processes and iso files

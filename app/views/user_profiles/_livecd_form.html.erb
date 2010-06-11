@@ -16,7 +16,7 @@
       <%= t(:name_of_livecd) %>
       <%= text_field_tag(:name,default_name) %>
     <% end %>
-      <% if is_power_user? %>
+      <% if is_power_user? and false %>
         <ul>
           <li><%= check_box_tag("iso") %> <%= t(:create_iso_image)%></li>
           <li><%= check_box_tag("kvm") %> <%= t(:create_kvm_image)%></li>
