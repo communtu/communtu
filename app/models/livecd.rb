@@ -111,18 +111,18 @@ class Livecd < ActiveRecord::Base
         self.generating = true
         self.save
         # log to log/livecd.log
-        system "(echo; echo \"------------------------------------\")  >> #{RAILS_ROOT}/log/livecd.log"
+        system "(echo; echo \"------------------------------------\")  >> #{RAILS_ROOT}/log/livecd#{port}.log"
         call = "(echo \"Creating live CD #{fullname}\"; date) >> #{RAILS_ROOT}/log/"
-        system (call+"livecd.log")
-        system (call+"livecd.short.log")
+        system (call+"livecd#{port}.log")
+        system (call+"livecd#{port}.short.log")
         # check if there is enough disk space (at least 25 GB)
         iso_path = File.read(RAILS_ROOT+"/config/iso_path").chomp
         while disk_free_space(iso_path) < 25000000000
           # destroy the oldest liveCD
           cd=Livecd.find(:first,:order=>"created_at ASC")
           call = "(echo \"Disk full - deleting live CD #{cd.id}\" >> #{RAILS_ROOT}/log/"
-          system (call+"livecd.log")
-          system (call+"livecd.short.log")
+          system (call+"livecd#{port}.log")
+          system (call+"livecd#{port}.short.log")
           cd.destroy
         end
         # Jaunty and lower need virtualisation due to requirement of sqaushfs version >= 4 (on the server, we have Hardy)
@@ -134,23 +134,23 @@ class Livecd < ActiveRecord::Base
         isoflag = self.iso ? "-iso #{self.iso_image} " : ""
         kvmflag = self.kvm ? "-kvm #{self.kvm_image} " : ""
         usbflag = self.usb ? "-usb #{self.usb_image} " : ""
-        remaster_call = "#{RAILS_ROOT}/script/remaster create #{virt}#{isoflag}#{kvmflag}#{usbflag}#{ver} #{self.name} #{self.srcdeb} #{self.installdeb} #{port} >> #{RAILS_ROOT}/log/livecd.log 2>&1"
-        system "echo \"#{remaster_call}\" >> #{RAILS_ROOT}/log/livecd.log"
+        remaster_call = "#{RAILS_ROOT}/script/remaster create #{virt}#{isoflag}#{kvmflag}#{usbflag}#{ver} #{self.name} #{self.srcdeb} #{self.installdeb} #{port} >> #{RAILS_ROOT}/log/livecd#{port}.log 2>&1"
+        system "echo \"#{remaster_call}\" >> #{RAILS_ROOT}/log/livecd#{port}.log"
         self.failed = !(system remaster_call)
         # kill VM and release lock, necessary in case of abrupt exit
         system "sudo kill-kvm #{port}"
         system "dotlockfile -u /home/communtu/livecd/livecd#{port}.lock"
-        system "echo  >> #{RAILS_ROOT}/log/livecd.log"
+        system "echo  >> #{RAILS_ROOT}/log/livecd#{port}.log"
         call = "echo \"finished at:\"; date >> #{RAILS_ROOT}/log/"
-        system (call+"livecd.log")
-        system (call+"livecd.short.log")
+        system (call+"livecd#{port}.log")
+        system (call+"livecd#{port}.short.log")
         msg = if self.failed then "failed" else "succeeded" end
         call = "echo \"Creation of live CD #{msg}\" >> #{RAILS_ROOT}/log/"
-        system (call+"livecd.log")
-        system (call+"livecd.short.log")
-        system "echo  >> #{RAILS_ROOT}/log/livecd.log"
+        system (call+"livecd#{port}.log")
+        system (call+"livecd#{port}.short.log")
+        system "echo  >> #{RAILS_ROOT}/log/livecd#{port}.log"
         if self.failed then
-          self.log = IO.popen("tail -n80 #{RAILS_ROOT}/log/livecd.log").read
+          self.log = IO.popen("tail -n80 #{RAILS_ROOT}/log/livecd#{port}.log").read
         end
     rescue StandardError => err
         self.log = "ruby code for live CD/DVD creation crashed: "+err
