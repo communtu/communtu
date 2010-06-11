@@ -95,9 +95,10 @@ class Livecd < ActiveRecord::Base
   
   # create the liveCD in a forked process
   def fork_remaster(port=2222)
-      nice = if !self.users[0].nil? and self.users[0].has_role?('administrator') then "" else "nice -n +10 " end
+      nice = self.users[0].nil? or self.users[0].has_role?('administrator')
+      nicestr = if nice then "nice -n +10 " else "" end
       self.pid = fork do
-	 	        system "echo \"Livecd.find(#{self.id.to_s}).remaster(#{port.to_s})\" | #{nice} nohup script/console production"
+	 	        system "echo \"Livecd.find(#{self.id.to_s}).remaster(#{port.to_s})\" | #{nicestr} nohup script/console production"
       end
       self.save
   end
@@ -126,6 +127,9 @@ class Livecd < ActiveRecord::Base
           system (call+"livecd#{port}.short.log")
           cd.destroy
         end
+        # normal users get nice'd
+        nice = self.users[0].nil? or self.users[0].has_role?('administrator')
+        nicestr = if nice then "-nice " else "" end
         # Jaunty and lower need virtualisation due to requirement of sqaushfs version >= 4 (on the server, we have Hardy)
         if self.distribution_id < 5 then
           virt = "-v "
@@ -135,7 +139,7 @@ class Livecd < ActiveRecord::Base
         isoflag = self.iso ? "-iso #{self.iso_image} " : ""
         kvmflag = self.kvm ? "-kvm #{self.kvm_image} " : ""
         usbflag = self.usb ? "-usb #{self.usb_image} " : ""
-        remaster_call = "#{RAILS_ROOT}/script/remaster create #{virt}#{isoflag}#{kvmflag}#{usbflag}#{ver} #{self.name} #{self.srcdeb} #{self.installdeb} #{port} >> #{RAILS_ROOT}/log/livecd#{port}.log 2>&1"
+        remaster_call = "#{RAILS_ROOT}/script/remaster create #{nicestr}#{virt}#{isoflag}#{kvmflag}#{usbflag}#{ver} #{self.name} #{self.srcdeb} #{self.installdeb} #{port} >> #{RAILS_ROOT}/log/livecd#{port}.log 2>&1"
         system "echo \"#{remaster_call}\" >> #{RAILS_ROOT}/log/livecd#{port}.log"
         self.failed = !(system remaster_call)
         # kill VM and release lock, necessary in case of abrupt exit
