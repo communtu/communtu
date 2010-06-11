@@ -38,11 +38,11 @@
       <%= link_to t(:view_layouts_application_9), logout_path  %> |
 
         <% if !current_user.anonymous? %>
-          <span class="register_text">Registrieren 
+          <span class="register_text"><%= t(:register) %>
            <% if is_admin? %>
            </span>
            <% else %>
-           | Gast </span>
+           | <%= t(:guest) %> </span>
            <% end %>
         <%  else %>
           <%= link_to t(:register), user_path(current_user.id) %> |

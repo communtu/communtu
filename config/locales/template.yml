@@ -194,6 +194,7 @@ de:
   generate_cd_new: LiveCD/DVD mit neuen Quellen neu erstellen
   go_to_download: Gehe zur Downloadseite
   gpg_key: 'GPG Schlüssel (optional): '
+  guest: Gast
   headline: macht Ubuntu-Installationen einfach
   health_status: Gesundheitsstatus
   hello: Herzlich Willkommen
