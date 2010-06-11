@@ -138,7 +138,7 @@ class MetapackagesController < ApplicationController
         flash[:error] += t(:controller_metapackages_conflicts)
         error = true
     end
-    if @metapackage.is_published? then
+    if @metapackage.is_published? and !is_admin? then
       if !params[:metapackage][:name].nil? and params[:metapackage][:name]!=@metapackage.name then
         flash[:error] += t(:controller_metapackages_no_renaming)
         error = true
