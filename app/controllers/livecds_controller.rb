@@ -14,10 +14,11 @@ class LivecdsController < ApplicationController
     @cd = Livecd.find(params[:id])
     if !@cd.generated
       @cd.failed = false
-      @cd.generating = true
+      @cd.generating = false
+      @cd.generated = false
       @cd.log = nil
       @cd.save
-      @cd.fork_remaster
+      # remastering done by daemon
     end
     redirect_to :back
   end
