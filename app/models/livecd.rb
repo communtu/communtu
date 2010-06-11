@@ -95,7 +95,7 @@ class Livecd < ActiveRecord::Base
   
   # create the liveCD in a forked process
   def fork_remaster(port=2222)
-      nice = self.users[0].nil? or !self.users[0].has_role?('administrator')
+      nice = (self.users[0].nil? or !self.users[0].has_role?('administrator'))
       nicestr = if nice then "nice -n +10 " else "" end
       self.pid = fork do
 	 	        system "echo \"Livecd.find(#{self.id.to_s}).remaster(#{port.to_s})\" | #{nicestr} nohup script/console production"
@@ -128,7 +128,7 @@ class Livecd < ActiveRecord::Base
           cd.destroy
         end
         # normal users get nice'd
-        nice = self.users[0].nil? or !self.users[0].has_role?('administrator')
+        nice = (self.users[0].nil? or !self.users[0].has_role?('administrator'))
         nicestr = if nice then "-nice " else "" end
         # Jaunty and lower need virtualisation due to requirement of sqaushfs version >= 4 (on the server, we have Hardy)
         if self.distribution_id < 5 then
