@@ -109,8 +109,8 @@ class MetapackagesController < ApplicationController
     		 @metapackage.description_tid = @translation_des.translatable_id
 
          if I18n.locale.to_s != "en"
-      			translate_name = Translation.new_translation("",en)
-      			translate_des = Translation.new_translation("",en)
+      			translate_name = Translation.new_translation("",:en)
+      			translate_des = Translation.new_translation("",:en)
     	   end
          @metapackage.user_id = current_user.id
          @metapackage.default_install = false
