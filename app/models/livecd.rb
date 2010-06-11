@@ -235,8 +235,8 @@ class Livecd < ActiveRecord::Base
       return ""
     end
     lines = log.split("\n")
-    lines.reverse.each do |line|
-      MSGS.each do |msg|
+    MSGS.each do |msg|
+      lines.reverse.each do |line|
         if !line.index(msg).nil?
           return line
         end
