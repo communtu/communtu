@@ -11,6 +11,18 @@
   </ul>
 <%end%>
 
+<h2><%=t(:bundles_with_errors)%></h2>
+<%if @bundles_with_errors.empty?%>
+  <%=t(:none)%>
+<%else%>
+  <ul>
+  <%for b in @bundles_with_errors%>
+   <li> <%=link_to b.name, "/debs/bundle/#{b.id}"%></li>
+  <%end%>
+  </ul>
+<%end%>
+
+
 <h2><%=t(:failed_live_cds)%></h2>
 <%if @failed_live_cds.empty?%>
   <%=t(:none)%>

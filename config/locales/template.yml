@@ -31,6 +31,7 @@ de:
   bundle_editor: Bündel-Editor
   bundle_open_new_window: Bündel wird im neuen Fenster geöffnet.
   bundle_to_livecd: LiveCD/DVD aus Bündel <i>{{name}}</i> erstellen
+  bundles_with_errors: Bündel mit Fehlern
   bundles_with_missing_debs: Bündel mit fehlenden deb-Builds
   bundles_with_missing_packages: Bündel mit Paketen, die bei Übergang auf neue Distribution fehlen (ggf. durch andere ersetzen)
   by_bank_transfer: per Überweisung

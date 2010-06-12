@@ -455,6 +455,7 @@ class MetapackagesController < ApplicationController
   end
 #Package.find_by_sql("SELECT * from base_packages INNER JOIN metacontents ON metacontents.base_package_id = base_packages.id INNER JOIN metacontents_distrs ON metacontents.id = metacontents_distrs.id WHERE metacontents_distrs.distribution_id = 2").size
   def health_status
+    @bundles_with_errors = (Metapackage.find_all_by_deb_error(true)).uniq
     @bundles_with_missing_debs = Metapackage.find(:all,:conditions=>["debs.generated = 0"],:include=>:debs)
     @bundles_with_missing_packages = {}
     Distribution.all.each do |d|
