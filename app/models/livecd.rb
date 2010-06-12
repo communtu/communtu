@@ -262,9 +262,9 @@ class Livecd < ActiveRecord::Base
       self.vm_pid = fork do
         tmpfile = IO.popen("mktemp").read.chomp
         iso_path = File.read(RAILS_ROOT+"/config/iso_path").chomp
-        hda = iso_path+tmpfile
-        system "qemu-img create #{hda} 5G"
-        system "kvm -hda #{hda} -cdrom #{self.iso_image} -m 1000 -vnc :1"
+        self.hda = iso_path+tmpfile
+        system "qemu-img create #{self.hda} 5G"
+        system "kvm -hda #{self.hda} -cdrom #{self.iso_image} -m 1000 -vnc :1"
       end
       self.save
     end
@@ -274,7 +274,9 @@ class Livecd < ActiveRecord::Base
     system "kill #{self.vm_pid}"
     sleep 1
     system "kill -9 #{self.vm_pid}"
+    system "rm #{self.hda}"
     self.vm_pid = nil
+    self.hda = nil
     self.save
   end
 
