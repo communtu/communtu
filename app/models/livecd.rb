@@ -266,12 +266,16 @@ class Livecd < ActiveRecord::Base
         system "qemu-img create #{hda} 5G"
         system "kvm -hda #{hda} -cdrom #{self.iso_image} -m 1000 -vnc :1"
       end
+      self.save
     end
   end
 
   def stop_vm
     system "kill #{self.vm_pid}"
+    sleep 1
     system "kill -9 #{self.vm_pid}"
+    self.vm_pid = nil
+    self.save
   end
 
   protected
