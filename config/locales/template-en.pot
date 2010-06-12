@@ -67,6 +67,9 @@ msgstr ""
 #: cd_failed
 msgid "Failed - we will solve the problem and inform you when the ISO-file is ready to download"
 msgstr ""
+#: vm_running
+msgid "virtual machine runs with:"
+msgstr ""
 #: view_roles_index_0
 msgid "roles for"
 msgstr ""
@@ -75,9 +78,6 @@ msgid "Since we have many ideas for the platform's further development, we need 
 msgstr ""
 #: view_user_profiles__installation_16
 msgid "Add sources and keys"
-msgstr ""
-#: view_layouts_application_29
-msgid "Guest"
 msgstr ""
 #: controller_accounts_4
 msgid "Your account has already been activated. You can now log in."
@@ -259,6 +259,9 @@ msgstr ""
 #: view_user_profiles__installation_31
 msgid "The Communtu-metapackages can be shown, installed and uninstalled using {{synaptic}} (go to \"System\" --> \"Administration\"). Updates of the programs inside the bundle are installed via the Ubuntu-updatemanager automatically."
 msgstr ""
+#: create_usb_image
+msgid "create <a href=\"http://en.wikipedia.org/wiki/Live-usb\">Live-USB image</a>"
+msgstr ""
 #: view_home_home_2
 msgid "Ubuntu"
 msgstr ""
@@ -270,6 +273,9 @@ msgid "(version {{v}})"
 msgstr ""
 #: controller_passwords_5
 msgid "Password must not be empty."
+msgstr ""
+#: create_iso_image
+msgid "create <a href=\"http://en.wikipedia.org/wiki/ISO_image\">ISO-image</a> (CD/DVD)"
 msgstr ""
 #: view_home_home_3
 msgid " stands for a human Linux that is easy to use. In order to use Ubuntu effectively, an excessive amount of programs have to be installed. It is not always easy to keep an overview. With Communtu you just specify for which purposes you want to use your computer and Communtu suggests several programs to you which will be installed automatically."
@@ -529,6 +535,9 @@ msgstr ""
 #: view_metapackages_new_4
 msgid "Install by default"
 msgstr ""
+#: create_kvm_image
+msgid "create <a href=\"http://wiki.ubuntu.com/kvm\">KVM-image</a> (virtual machine)"
+msgstr ""
 #: bundles_with_missing_debs
 msgid "Bundles with failed deb-builds"
 msgstr ""
@@ -781,6 +790,9 @@ msgstr ""
 #: helper_distributions_15
 msgid "Informational page at ubuntu.com"
 msgstr ""
+#: guest
+msgid "Guest"
+msgstr ""
 #: wait_for_debs
 msgid "waiting for building of metapackages"
 msgstr ""
@@ -891,6 +903,9 @@ msgid "Why should this be implemented in Communtu? (If you want to be informed a
 msgstr ""
 #: view_home_news_10
 msgid "communtu-discuss-en+subscribe@googlegroups.com"
+msgstr ""
+#: kvm_image
+msgid "KVM-Image"
 msgstr ""
 #: are_you_sure
 msgid "Are you sure?"
@@ -1714,6 +1729,9 @@ msgstr ""
 #: controller_admins_0
 msgid "admninistration section"
 msgstr ""
+#: stop_vm
+msgid "stop virtual machine"
+msgstr ""
 #: controller_repositories_2
 msgid "Repository updated."
 msgstr ""
@@ -1840,6 +1858,9 @@ msgstr ""
 #: livecd_email_failed
 msgid "Communtu: creation of Live-CD/DVD failed."
 msgstr ""
+#: usb_image
+msgid "USB-Image"
+msgstr ""
 #: controller_application_0
 msgid "This function is not available for guests."
 msgstr ""
@@ -1860,6 +1881,9 @@ msgid "New architecture"
 msgstr ""
 #: view_home_mail_0
 msgid "Notification in bugfixing"
+msgstr ""
+#: iso_image
+msgid "ISO-image (CD/DVD)"
 msgstr ""
 #: view_repositories_show_7
 msgid "        commercial "
@@ -2245,6 +2269,9 @@ msgstr ""
 #: missing_debs_for_bundle
 msgid "Missing debs for bundle:"
 msgstr ""
+#: start_vm
+msgid "start virtual machine"
+msgstr ""
 #: view_user_profiles__sources_1
 msgid "The soon be installed programs and packages are shown and ordered by the appropriate sources so you can see why some sources will be added."
 msgstr ""
@@ -2335,14 +2362,14 @@ msgstr ""
 #: view_packages__search_0
 msgid "Search for packages"
 msgstr ""
+#: controller_derivatives_1
+msgid "Derivative created."
+msgstr ""
 #: view_distributions_edit_0
 msgid "edit distribution"
 msgstr ""
 #: lib_system_1
 msgid "You are not privileged to do this."
-msgstr ""
-#: controller_derivatives_1
-msgid "Derivative created."
 msgstr ""
 #: view_metapackages_show_modified
 msgid "This bundle contains changes."

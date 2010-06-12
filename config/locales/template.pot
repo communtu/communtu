@@ -61,6 +61,9 @@ msgstr ""
 #: view_home_beteiligung_12
 msgid "Programmierung"
 msgstr ""
+#: vm_running
+msgid "virtuelle Maschine läuft unter: "
+msgstr ""
 #: view_distributions_show_8
 msgid "Vor dem Löschen einer Distribution müssen alle Benutzer, die sie nutzen, ausgeloggt sein! Bist du sicher?"
 msgstr ""
@@ -75,9 +78,6 @@ msgid "Da wir viele Ideen für die Weiterentwicklung der Plattform haben, benöt
 msgstr ""
 #: view_user_profiles__installation_16
 msgid "Quellen und Schlüssel eintragen"
-msgstr ""
-#: view_layouts_application_29
-msgid "Gast"
 msgstr ""
 #: controller_accounts_4
 msgid "Bein Benutzerkontoutzerkonto wurde bereits aktiviert. Du kannst dich nun anmelden."
@@ -793,6 +793,9 @@ msgstr ""
 #: helper_distributions_15
 msgid "Wikiseite bei ubuntuusers"
 msgstr ""
+#: guest
+msgid "Gast"
+msgstr ""
 #: view_users_new_8
 msgid "Ja, ich möchte die Maillingliste für Ankündigungen abonnieren."
 msgstr ""
@@ -841,14 +844,14 @@ msgstr ""
 #: invalid_activation_code_please_check_again
 msgid "Ungültiger Anderungscode. Bitte den Code prüfen und nochmals versuchen. (Vielleicht hat dein Email-Programm einen Zeilenumbruch eingefügt?)"
 msgstr ""
+#: view_user_mailer_signup_notification_2
+msgid "\nViele Grüße\n\ndas Communtu-Team\n\n  Weitere Informationen zu den Projekt insbesondere was du für Möglichkeiten der Nutzung hast, findest du in unserer FAQ-Liste unter\n http://www.communtu.de/home/faq\n\n  Unsere Ankündigungen und Mailinglisten findest du unter:\nhttp://www.communtu.de/home/news"
+msgstr ""
 #: view_home_derivatives_33
 msgid "http://de.wikipedia.org/wiki/GNU-Varianten#Nexenta_OS"
 msgstr ""
 #: helper_distributions_19
 msgid "non-free und aus den main Paketquellen"
-msgstr ""
-#: view_user_mailer_signup_notification_2
-msgid "\nViele Grüße\n\ndas Communtu-Team\n\n  Weitere Informationen zu den Projekt insbesondere was du für Möglichkeiten der Nutzung hast, findest du in unserer FAQ-Liste unter\n http://www.communtu.de/home/faq\n\n  Unsere Ankündigungen und Mailinglisten findest du unter:\nhttp://www.communtu.de/home/news"
 msgstr ""
 #: view_home_derivatives_34
 msgid " - ersetzt den Linux-Kern durch OpenSolaris. Stellt nur eine minimale Basis an Anwendungen bereit. Die Installation weiterer Pakete bleibt dem Benutzer überlassen; hierfür kann Communtu genutzt werden."
@@ -1729,6 +1732,9 @@ msgstr ""
 #: controller_admins_0
 msgid "Administratorbereich"
 msgstr ""
+#: stop_vm
+msgid "Virtuelle Maschine stoppen"
+msgstr ""
 #: controller_repositories_2
 msgid "Repository aktualisiert."
 msgstr ""
@@ -1951,11 +1957,11 @@ msgstr ""
 #: view_user_profiles__profile_data_13
 msgid "Hier kannst du auswählen, welche Lizenzen du zulassen willst"
 msgstr ""
-#: view_packages_show_9
-msgid "/5 Sterne&nbsp;&nbsp; "
-msgstr ""
 #: view_user_profiles__installation_0
 msgid "Ubuntu-Nachinstallation"
+msgstr ""
+#: view_packages_show_9
+msgid "/5 Sterne&nbsp;&nbsp; "
 msgstr ""
 #: view_packages__deps_0
 msgid "keine"
@@ -2268,6 +2274,9 @@ msgid "Freie Software"
 msgstr ""
 #: missing_debs_for_bundle
 msgid "Fehlende debs für Bündel:"
+msgstr ""
+#: start_vm
+msgid "Virtuelle Maschine starten"
 msgstr ""
 #: view_user_profiles__profile_rating_0
 msgid "Auswahl der zu installierenden Programmbündel und Programme"

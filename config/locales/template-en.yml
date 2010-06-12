@@ -18,10 +18,10 @@ en:
   view_home_beteiligung_12: Programming
   view_distributions_show_8: Before a distribution can be deleted, every user must be logged out! Are you sure?
   cd_failed: Failed - we will solve the problem and inform you when the ISO-file is ready to download
+  vm_running: "virtual machine runs with:"
   view_roles_index_0: roles for
   view_home_beteiligung_13: Since we have many ideas for the platform's further development, we need programmers. Ideally you already have some experience with Ruby on Rails.
   view_user_profiles__installation_16: Add sources and keys
-  view_layouts_application_29: Guest
   controller_accounts_4: Your account has already been activated. You can now log in.
   view_roles_index_1: "Assigned roles:"
   view_home_beteiligung_14: "We can also help you to learn this programming-language. You just have to contact "
@@ -82,10 +82,12 @@ en:
   livecd_start: Create Live-CD/DVD
   view_user_profiles__installation_30: "Advice: please don't rename the .deb-file."
   view_user_profiles__installation_31: The Communtu-metapackages can be shown, installed and uninstalled using {{synaptic}} (go to "System" --> "Administration"). Updates of the programs inside the bundle are installed via the Ubuntu-updatemanager automatically.
+  create_usb_image: create <a href="http://en.wikipedia.org/wiki/Live-usb">Live-USB image</a>
   view_home_home_2: Ubuntu
   view_rating_rating_rate: out of 5 stars awarded
   view_metapackages_show_version_v: (version {{v}})
   controller_passwords_5: Password must not be empty.
+  create_iso_image: create <a href="http://en.wikipedia.org/wiki/ISO_image">ISO-image</a> (CD/DVD)
   view_home_home_3: " stands for a human Linux that is easy to use. In order to use Ubuntu effectively, an excessive amount of programs have to be installed. It is not always easy to keep an overview. With Communtu you just specify for which purposes you want to use your computer and Communtu suggests several programs to you which will be installed automatically."
   view_home_contact_us_4: "Send "
   download: download
@@ -174,6 +176,7 @@ en:
   dependent_on_repositories: "Depends on these repositories:"
   no_admin: You are not an administrator!
   view_metapackages_new_4: Install by default
+  create_kvm_image: create <a href="http://wiki.ubuntu.com/kvm">KVM-image</a> (virtual machine)
   bundles_with_missing_debs: Bundles with failed deb-builds
   model_mailer_0: Welcome to Communtu
   licence: "Licence:"
@@ -260,6 +263,7 @@ en:
   view_home_derivatives_29: a computer to watch TV
   new_message: New message
   helper_distributions_15: Informational page at ubuntu.com
+  guest: Guest
   wait_for_debs: waiting for building of metapackages
   view_users_new_8: Yes, I want to be added to the announcement-mailinglist.
   view_home_derivatives_30: http://en.wikipedia.org/wiki/Home_theater_PC
@@ -313,6 +317,7 @@ en:
   view_home_derivatives_39: " for older PCs. It is based on the LXDE-GUI."
   view_home_new_repository_3: Why should this be implemented in Communtu? (If you want to be informed about the take-up, please enter your contact information)
   view_home_news_10: communtu-discuss-en+subscribe@googlegroups.com
+  kvm_image: KVM-Image
   are_you_sure: Are you sure?
   view_home_news_11: "This list is intended for discussion about the platform. The frequency is a little higher than once a week. Posts will be collected in an "
   architecture_successful: Architecture successfully created.
@@ -600,6 +605,7 @@ en:
   view_metapackages_edit_2: Please use versions => 1.0 only for stable bundles. A version must always increase. 0.10 is higher than 0.9.
   add: add
   controller_admins_0: admninistration section
+  stop_vm: stop virtual machine
   controller_repositories_2: Repository updated.
   controller_repositories_3: sources.list read.
   view_admins_show_0: Here should be an introduction to the admin area
@@ -642,6 +648,7 @@ en:
   circular_dependency: "Error: circular dependencies between bundles"
   view_repositories_show_4: "Package-list for {{arch}}:"
   livecd_email_failed: "Communtu: creation of Live-CD/DVD failed."
+  usb_image: USB-Image
   controller_application_0: This function is not available for guests.
   livecd_email_body_failed: ", the Live-CD/DVD {{name}} couldn't be created. We'll solve that problem as fast as possible."
   being_created: Creating
@@ -649,6 +656,7 @@ en:
   view_repositories_show_6: "        OpenSource"
   new_architecture: New architecture
   view_home_mail_0: Notification in bugfixing
+  iso_image: ISO-image (CD/DVD)
   view_repositories_show_7: "        commercial "
   advanced_user: I'm an advanced user and want to see the preliminary Ubuntu versions.
   view_home_mail_1: Please contact me at the following e-mail-address concerning the bugfixing.
@@ -777,6 +785,7 @@ en:
   controller_sent_2: message successfully send
   model_package_0: Free software
   missing_debs_for_bundle: "Missing debs for bundle:"
+  start_vm: start virtual machine
   view_user_profiles__sources_1: The soon be installed programs and packages are shown and ordered by the appropriate sources so you can see why some sources will be added.
   model_package_1: free+proprietary
   view_user_profiles__profile_rating_0: Detailed choice of the programs and bundles that shall be installed
@@ -809,17 +818,17 @@ en:
   logfile_extract: Extract from the logfile
   lib_system_0: In order to use this feature you have to be logged in. Logging in via "Guest session" is also possible.
   view_packages__search_0: Search for packages
+  view_metapackages_show_modified: This bundle contains changes.
   view_distributions_edit_0: edit distribution
   lib_system_1: You are not privileged to do this.
   controller_derivatives_1: Derivative created.
-  view_metapackages_show_modified: This bundle contains changes.
-  lib_system_2: http://www.communtu.de
-  controller_derivatives_2: Derivative updated.
   view_home_about_16: In order to use Communtu you need to register yourself. To do so, just click on the "Registration"-button in the menu above.
-  view_home_home_10: <b>Ubuntu-releases</b> Overview about the available Ubuntu-releases (distributions).
+  controller_derivatives_2: Derivative updated.
+  lib_system_2: http://www.communtu.de
   continue: Continue
-  view_debs_index_0: Failed or running deb-generation
+  view_home_home_10: <b>Ubuntu-releases</b> Overview about the available Ubuntu-releases (distributions).
   view_home_home_11: <b>Administrate users</b> As an administrator you can change the role of the users. Act with caution!
+  view_debs_index_0: Failed or running deb-generation
   livecd_image_link: https://help.ubuntu.com/community/IsoImage
   view_home_home_12: <b>Administrate categories</b> As an administrator you can create new categories or change the structure of a category-tree here. Act with caution!
   view_debs_index_1: Go back to the Communtu-menu

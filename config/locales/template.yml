@@ -50,7 +50,7 @@ de:
   choose_bundle: Bündel auswählen
   choose_category: Bitte auswählen
   choose_parent: Wähle einen Parent aus!
-  circular_dependency: "Fehler: zirkuläre Abhängigkeiten zwischen Bündeln"
+  circular_dependency: 'Fehler: zirkuläre Abhängigkeiten zwischen Bündeln'
   community_title: ubuntuusers
   compose_new_message: neue Nachricht schreiben
   confirm_new_passwd: Neues Passwort bestätigen
@@ -145,9 +145,9 @@ de:
   controller_users_8: Benutzer deaktiviert
   controller_users_9: Es gab ein Problem mit der Deaktivierung dieses Benutzers.
   create: Anlegen
-  create_iso_image: '<a href="http://ww.ubuntuusers.de/wiki/CD-Images">ISO-Image</a> erstellen (für CD/DVD)'
-  create_kvm_image: '<a href="http://ww.ubuntuusers.de/wiki/KVM">KVM-Image</a> erstellen (für virtuelle Maschine)'
-  create_usb_image: '<a href="http://ww.ubuntuusers.de/wiki/Live-USB">USB-Stick-Image</a> erstellen'
+  create_iso_image: <a href="http://ww.ubuntuusers.de/wiki/CD-Images">ISO-Image</a> erstellen (für CD/DVD)
+  create_kvm_image: <a href="http://ww.ubuntuusers.de/wiki/KVM">KVM-Image</a> erstellen (für virtuelle Maschine)
+  create_usb_image: <a href="http://ww.ubuntuusers.de/wiki/Live-USB">USB-Stick-Image</a> erstellen
   create_your_livedvd: Erstelle dir eine Live-CD
   creation_error: Bei der Erstellung des Pakets ist ein Fehler aufgetreten.
   creation_failed: Erzeugung fehlgeschlagen
@@ -156,7 +156,7 @@ de:
   deb_generation_in_background: Debs werden im Hintergrund erzeugt (ggf. Browser-Ansicht aktualisieren)
   debian_section: 'Debian-Section:'
   delete: Löschen
-  dependent_on_repositories: "Abhängig von folgenden Repositories:"
+  dependent_on_repositories: 'Abhängig von folgenden Repositories:'
   description: Beschreibung
   description_for_description: Bitte gib hier eine kurze Vorstellung deines Bündels ein für was für Tätigkeiten es gedacht ist. Danach kannst du auch noch auf die Vorzüge einiger Programme daraus eingehen.
   description_with_colon: 'Beschreibung:'
@@ -170,6 +170,7 @@ de:
   donation_purpose: 'Verwendungszweck: Communtu'
   donation_receipt: Spendenbescheinigung kann ausgestellt werden.
   download: herunterladen
+  easy_install: Einfache Installationsmöglichkeiten für Ubuntu
   edit: Bearbeiten
   edit_architecture: Architektur bearbeiten
   edit_press_archiv: Pressearchiv bearbeiten
@@ -180,14 +181,13 @@ de:
   english_name: 'Englischer Name:'
   error_no_attachement: Du hast keine Datei ausgewählt. Der Vorgang wurde abgebrochen.
   errors: Fehler
-  easy_install: Einfache Installationsmöglichkeiten für Ubuntu
   exact: 'Exakten Begriff finden:'
   failed_live_cds: Fehlgeschlagene LiveCDs/DVDs
   feedback: Kommentar
   fine_selection: Feinauswahl
   first_sync_repos: 'Bitte erst die Repositories synchronisieren. Dies geschieht normalerweise automatisch innerhalb von einer Woche. Achtung: an dieser Stelle wird nur geprüft, ob überhaupt etwas synchronisiert wurde, nicht, ob der Prozess fertig ist.'
   force_sync: Synchronisierung des Repositories erzwingen
-  former_participants: 'Ehemalige Mitwirkende'
+  former_participants: Ehemalige Mitwirkende
   four_and_fourty_letters: Zwischen 4 und 40 Zeichen
   generate_all_debs_for_bundle: Alle debs für das Bündel erzeugen
   generate_cd: LiveCD/DVD neu erstellen
@@ -342,9 +342,9 @@ de:
   published: veröffentlicht
   questionmark_conny: Klick mich und sag mir, was dir unklar ist.
   register: Registrieren
-  repository: Repository
   repositories_incompletely_read: Repositories ohne Pakete (da nicht richtig eingelesen)
   repositories_without_packages: Repositories ohne Pakete (da Repositories leer)
+  repository: Repository
   repository_url: 'Repository-URL: '
   rough_selection: Grobauswahl
   save: Speichern
@@ -525,11 +525,9 @@ de:
   view_home_faq_01: Was ist ein Bündel?
   view_home_faq_02: Ein Bündel ist eine Zusammenstellung von Software für einen bestimmten Aufgabenbereich, den du mit deinem Rechner erledigen kannst.
   view_home_faq_03: Wie installiere ich ein Bündel?
-  view_home_faq_04: Um ein Bündel zu installieren gibt es zwei Möglichkeiten.<p> Die erste Möglichkeit ist, dass du auf <b>Download</b> klickst. Dort bekommst du dann ein kleines Formular in welchem du die Aufgaben auswählst, die du mit deinem Computer durchführen möchtest. Als Nächstes musst du deine Ubuntu-Version einstellen (diese wird in den meisten Fällen richtig erkannt und du musst sie nur noch aus dem Menü auswählen) und welche Oberfläche du benutzen möchtest (Gnome = Ubuntu, KDE = Kubuntu, XFCE = Xubuntu). Die letzten zwei Schritte betreffen die Lizenz und die Sicherheit der Programme, also welche Quellen du zulassen möchtest und ob deine Programme offen sind oder nicht. Du kannst nun entweder über "Speichern" direkt zum Abschluss des Prozesses kommen oder mit einem Klick auf "Speichern und feiner auswählen" noch eine genauere Auswahl treffen. Abschließend müssen die Quellen zu deinem System hinzugefügt werden und, sobald dies abgeschlossen ist, musst du nur noch auf "Installieren" klicken und auf dein
-    System werden die von dir ausgewählten Programmen installiert.<p> Die zweite Möglichkeit ist, dass du auf <b>Bündel</b> und dann "Alle veröffentlichen Bündel" klickst. Dort bekommst du dann eine Übersicht über alle in Communtu erstellten Bündel. Hier müssen, sofern noch nicht geschehen, die Quellen hinzugefügt werden (ein Klick auf "Quellen hinzufügen") und dann mit einem Klick auf "installieren mittels Metapaket" das entsprechende Bündel installiert werden.
+  view_home_faq_04: Um ein Bündel zu installieren gibt es zwei Möglichkeiten.<p> Die erste Möglichkeit ist, dass du auf <b>Download</b> klickst. Dort bekommst du dann ein kleines Formular in welchem du die Aufgaben auswählst, die du mit deinem Computer durchführen möchtest. Als Nächstes musst du deine Ubuntu-Version einstellen (diese wird in den meisten Fällen richtig erkannt und du musst sie nur noch aus dem Menü auswählen) und welche Oberfläche du benutzen möchtest (Gnome = Ubuntu, KDE = Kubuntu, XFCE = Xubuntu). Die letzten zwei Schritte betreffen die Lizenz und die Sicherheit der Programme, also welche Quellen du zulassen möchtest und ob deine Programme offen sind oder nicht. Du kannst nun entweder über "Speichern" direkt zum Abschluss des Prozesses kommen oder mit einem Klick auf "Speichern und feiner auswählen" noch eine genauere Auswahl treffen. Abschließend müssen die Quellen zu deinem System hinzugefügt werden und, sobald dies abgeschlossen ist, musst du nur noch auf "Installieren" klicken und auf dein System werden die von dir ausgewählten Programmen installiert.<p> Die zweite Möglichkeit ist, dass du auf <b>Bündel</b> und dann "Alle veröffentlichen Bündel" klickst. Dort bekommst du dann eine Übersicht über alle in Communtu erstellten Bündel. Hier müssen, sofern noch nicht geschehen, die Quellen hinzugefügt werden (ein Klick auf "Quellen hinzufügen") und dann mit einem Klick auf "installieren mittels Metapaket" das entsprechende Bündel installiert werden.
   view_home_faq_05: Wie kann ich ein Bündel erstellen?
-  view_home_faq_06: 'Hierfür klickst du auf <b>Bündel</b> und dann auf "Neues Bündel". Links siehst du nun eine Liste mit Programmen und rechts noch eine leere Liste. Dies ist der Bündeleditor. Mit einem Klick auf das Plus-Zeichen in der linken Liste kannst du nun Programme zu deinem Bündel hinzufügen. Sobald du damit fertig bist klickst auf das Speichern-Symbol. Hier musst du nun einen sinnvollen Namen für dein Bündel vergeben, die Version angeben und eine kleine Beschreibung eingeben damit andere Nutzer sofort wissen was für Programme in deinem Bündel sind. Damit andere Nutzer dein Bündel sehen, bewerten und installieren können muss dieses veröffentlicht werden. Dies geht erst, sobald das Bündel gespeichert ist. Achtung: bitte ein Bündel erst veröffentlichen wenn es ausgereift ist, also wenn du der Meinung bist, hier wird sich so schnell nichts mehr ändern! Das Ändern des Bündels ist nicht mehr möglich wenn es veröffentlicht wurde.<p> Wenn du der Meinung bist, dass dein Bündel um nützliche Programme erweitert
-    werden kann oder ein Programm nicht mehr in dem Bündel enthalten sein soll musst du zuerst unter <b>Bündel</b> und dann "Meine Bündel" das entsprechende Bündel auswählen. Rechts ist dann aus dem Aufklapp-Menü der Punkt "Paketliste editieren" auszuwählen. Anschließend erscheint wieder der Bündeleditor. Sobald die Paketliste bearbeitet wurde muss diese gespeichert werden. Nun muss die Version höhergesetzt werden und anschließend gespeichert werden. Das Bündel wurde nun aktualisiert.'
+  view_home_faq_06: 'Hierfür klickst du auf <b>Bündel</b> und dann auf "Neues Bündel". Links siehst du nun eine Liste mit Programmen und rechts noch eine leere Liste. Dies ist der Bündeleditor. Mit einem Klick auf das Plus-Zeichen in der linken Liste kannst du nun Programme zu deinem Bündel hinzufügen. Sobald du damit fertig bist klickst auf das Speichern-Symbol. Hier musst du nun einen sinnvollen Namen für dein Bündel vergeben, die Version angeben und eine kleine Beschreibung eingeben damit andere Nutzer sofort wissen was für Programme in deinem Bündel sind. Damit andere Nutzer dein Bündel sehen, bewerten und installieren können muss dieses veröffentlicht werden. Dies geht erst, sobald das Bündel gespeichert ist. Achtung: bitte ein Bündel erst veröffentlichen wenn es ausgereift ist, also wenn du der Meinung bist, hier wird sich so schnell nichts mehr ändern! Das Ändern des Bündels ist nicht mehr möglich wenn es veröffentlicht wurde.<p> Wenn du der Meinung bist, dass dein Bündel um nützliche Programme erweitert werden kann oder ein Programm nicht mehr in dem Bündel enthalten sein soll musst du zuerst unter <b>Bündel</b> und dann "Meine Bündel" das entsprechende Bündel auswählen. Rechts ist dann aus dem Aufklapp-Menü der Punkt "Paketliste editieren" auszuwählen. Anschließend erscheint wieder der Bündeleditor. Sobald die Paketliste bearbeitet wurde muss diese gespeichert werden. Nun muss die Version höhergesetzt werden und anschließend gespeichert werden. Das Bündel wurde nun aktualisiert.'
   view_home_faq_07: Wie kann ich ein Bündel bewerten?
   view_home_faq_08: Du gehst auf den Menüpunkt "Bündel" und lässt dir unter "Veröffentlichte Bündel" die Bündel anzeigen. Dort kannst du bis zu fünf Sterne anklicken. Danach erscheint ein Kommentarfeld, in dem du diese Bewertung qualifizieren kannst.
   view_home_faq_09: Wie kann ich ein Bündel ändern?
@@ -651,7 +649,6 @@ de:
   view_layouts_application_25: COMMUNTU
   view_layouts_application_26: Navigation Bündel
   view_layouts_application_27: Navigation Download
-  view_layouts_application_29: Gast
   view_layouts_application_3: Ubuntu Logo
   view_layouts_application_30: Hilfe/FAQ
   view_layouts_application_31: Kontakt
@@ -874,7 +871,7 @@ de:
   view_users_show_8: Nachrichten
   view_videos_edit_0: Video bearbeiten
   view_videos_show_0: 'Url:'
-  vm_running: "virtuelle Maschine läuft unter: "
+  vm_running: 'virtuelle Maschine läuft unter: '
   wait_for_debs: auf Bau der Metapakete warten
   wait_for_release: auf offizielles Ubuntu-Release warten
   wait_for_sync: auf Synchronisation der Repositories warten

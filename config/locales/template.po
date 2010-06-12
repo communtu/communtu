@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Communtu 0.2\n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
-"Last-Translator: Till Mossakowski <till@communtu.de>\n"
+"Last-Translator: Timo Denissen <timo@communtu.de>\n"
 "Language-Team: Communtu <info@communtu.de>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -79,6 +79,10 @@ msgstr "Could'nt find the activation code. Please try to create a new account."
 msgid "Programmierung"
 msgstr "Programming"
 
+#: vm_running
+msgid "virtuelle Maschine läuft unter: "
+msgstr "virtual machine runs with:"
+
 #: view_distributions_show_8
 msgid "Vor dem Löschen einer Distribution müssen alle Benutzer, die sie nutzen, ausgeloggt sein! Bist du sicher?"
 msgstr "Before a distribution can be deleted, every user must be logged out! Are you sure?"
@@ -98,10 +102,6 @@ msgstr "Since we have many ideas for the platform's further development, we need
 #: view_user_profiles__installation_16
 msgid "Quellen und Schlüssel eintragen"
 msgstr "Add sources and keys"
-
-#: view_layouts_application_29
-msgid "Gast"
-msgstr "Guest"
 
 #: controller_accounts_4
 msgid "Bein Benutzerkontoutzerkonto wurde bereits aktiviert. Du kannst dich nun anmelden."
@@ -199,6 +199,10 @@ msgstr "remove package/program from bundle"
 msgid "Hauptkategory, die auf der Startseite Download angezeigt wird:"
 msgstr "Maincategory, which is shown on the first page under Download:"
 
+#: view_user_profiles__installation_21
+msgid "installieren der Metapakete. Bitte vorher die Quellen hinzufügen."
+msgstr "Installation of the metapackages. Please add the sources first."
+
 #: bundle_open_new_window
 msgid "Bündel wird im neuen Fenster geöffnet."
 msgstr "Bundle will be opend in a new window."
@@ -206,10 +210,6 @@ msgstr "Bundle will be opend in a new window."
 #: repositories_incompletely_read
 msgid "Repositories ohne Pakete (da nicht richtig eingelesen)"
 msgstr "Repositories without packages (couldn't read repository)"
-
-#: view_user_profiles__installation_21
-msgid "installieren der Metapakete. Bitte vorher die Quellen hinzufügen."
-msgstr "Installation of the metapackages. Please add the sources first."
 
 #: name_of_livecd
 msgid "Name der LiveCD/DVD:"
@@ -343,6 +343,10 @@ msgstr "Create Live-CD/DVD"
 msgid "Die Communtu-Metapakete können auch mittles {{synaptic}} (unter System -> Systemverwaltung) angezeigt, installiert und deinstalliert werden. Änderungen an Bündeln werden über die Ubuntu-Paketverwaltung automatisch eingespielt."
 msgstr "The Communtu-metapackages can be shown, installed and uninstalled using {{synaptic}} (go to \"System\" --> \"Administration\"). Updates of the programs inside the bundle are installed via the Ubuntu-updatemanager automatically."
 
+#: create_usb_image
+msgid "<a href=\"http://ww.ubuntuusers.de/wiki/Live-USB\">USB-Stick-Image</a> erstellen"
+msgstr "create <a href=\"http://en.wikipedia.org/wiki/Live-usb\">Live-USB image</a>"
+
 #: view_home_home_2
 msgid "Ubuntu-Linux"
 msgstr "Ubuntu"
@@ -358,6 +362,10 @@ msgstr "(version {{v}})"
 #: controller_passwords_5
 msgid "Passwort darf nicht leer sein."
 msgstr "Password must not be empty."
+
+#: create_iso_image
+msgid "<a href=\"http://ww.ubuntuusers.de/wiki/CD-Images\">ISO-Image</a> erstellen (für CD/DVD)"
+msgstr "create <a href=\"http://en.wikipedia.org/wiki/ISO_image\">ISO-image</a> (CD/DVD)"
 
 #: view_home_home_3
 msgid " steht für ein menschliches Linux, das einfach zu benutzen ist. Aber um Ubuntu wirklich gut nutzen zu können, muss man ganz schön viele Programme nachinstallieren, und es ist oft schwer, da den Überblick zu behalten. Bei Communtu gibst du nur an, welche Aufgaben du mit deinem Computer erledigen willst, und Communtu schlägt dir eine ganze Reihe von Programmen vor, die automatisch installiert werden können."
@@ -707,6 +715,10 @@ msgstr "You are not an administrator!"
 msgid "Standardmäßig installieren"
 msgstr "Install by default"
 
+#: create_kvm_image
+msgid "<a href=\"http://ww.ubuntuusers.de/wiki/KVM\">KVM-Image</a> erstellen (für virtuelle Maschine)"
+msgstr "create <a href=\"http://wiki.ubuntu.com/kvm\">KVM-image</a> (virtual machine)"
+
 #: bundles_with_missing_debs
 msgid "Bündel mit fehlenden deb-Builds"
 msgstr "Bundles with failed deb-builds"
@@ -1049,6 +1061,10 @@ msgstr "waiting for building of metapackages"
 msgid "Wikiseite bei ubuntuusers"
 msgstr "Informational page at ubuntu.com"
 
+#: guest
+msgid "Gast"
+msgstr "Guest"
+
 #: view_users_new_8
 msgid "Ja, ich möchte die Maillingliste für Ankündigungen abonnieren."
 msgstr "Yes, I want to be added to the announcement-mailinglist."
@@ -1125,14 +1141,6 @@ msgstr "Your username is:"
 msgid "Ungültiger Anderungscode. Bitte den Code prüfen und nochmals versuchen. (Vielleicht hat dein Email-Programm einen Zeilenumbruch eingefügt?)"
 msgstr "Invalid activation code. Please check the code and try again. (Perhaps you e-mail-program did a line break?)"
 
-#: view_home_derivatives_33
-msgid "http://de.wikipedia.org/wiki/GNU-Varianten#Nexenta_OS"
-msgstr "http://en.wikipedia.org/wiki/Nexenta_OS"
-
-#: helper_distributions_19
-msgid "non-free und aus den main Paketquellen"
-msgstr "non-free and from the main repositories"
-
 #: view_user_mailer_signup_notification_2
 msgid ""
 "\n"
@@ -1156,6 +1164,14 @@ msgstr ""
 "\n"
 "  Our anouncements and mailinglists can be found at:\n"
 "http://en.communtu.org/home/news"
+
+#: view_home_derivatives_33
+msgid "http://de.wikipedia.org/wiki/GNU-Varianten#Nexenta_OS"
+msgstr "http://en.wikipedia.org/wiki/Nexenta_OS"
+
+#: helper_distributions_19
+msgid "non-free und aus den main Paketquellen"
+msgstr "non-free and from the main repositories"
 
 #: view_home_derivatives_34
 msgid " - ersetzt den Linux-Kern durch OpenSolaris. Stellt nur eine minimale Basis an Anwendungen bereit. Die Installation weiterer Pakete bleibt dem Benutzer überlassen; hierfür kann Communtu genutzt werden."
@@ -1224,6 +1240,10 @@ msgstr "Why should this be implemented in Communtu? (If you want to be informed 
 #: view_home_news_10
 msgid "communtu-discuss-de+subscribe@googlegroups.com"
 msgstr "communtu-discuss-en+subscribe@googlegroups.com"
+
+#: kvm_image
+msgid "KVM-Image"
+msgstr "KVM-Image"
 
 #: are_you_sure
 msgid "Bist du sicher?"
@@ -2347,6 +2367,10 @@ msgstr "add"
 msgid "Administratorbereich"
 msgstr "admninistration section"
 
+#: stop_vm
+msgid "Virtuelle Maschine stoppen"
+msgstr "stop virtual machine"
+
 #: controller_repositories_2
 msgid "Repository aktualisiert."
 msgstr "Repository updated."
@@ -2515,6 +2539,10 @@ msgstr "Package-list for {{arch}}:"
 msgid "Communtu: Erstellung der Live-CD/DVD fehlgeschlagen"
 msgstr "Communtu: creation of Live-CD/DVD failed."
 
+#: usb_image
+msgid "USB-Image"
+msgstr "USB-Image"
+
 #: controller_application_0
 msgid "Diese Funktion ist für Gäste nicht verfügbar."
 msgstr "This function is not available for guests."
@@ -2542,6 +2570,10 @@ msgstr "New architecture"
 #: view_home_mail_0
 msgid "Benachrichtigung bei Fehlerbehebung"
 msgstr "Notification in bugfixing"
+
+#: iso_image
+msgid "ISO-Image (für CD/DVD)"
+msgstr "ISO-image (CD/DVD)"
 
 #: view_repositories_show_7
 msgid "        kommerziell "
@@ -2635,13 +2667,13 @@ msgstr "yes"
 msgid "Hier kannst du auswählen, welche Lizenzen du zulassen willst"
 msgstr "Here you can choose which licenses you want to accept:"
 
-#: view_packages_show_9
-msgid "/5 Sterne&nbsp;&nbsp; "
-msgstr "/5 stars&nbsp;&nbsp; "
-
 #: view_user_profiles__installation_0
 msgid "Ubuntu-Nachinstallation"
 msgstr "Additional software installation for Ubuntu "
+
+#: view_packages_show_9
+msgid "/5 Sterne&nbsp;&nbsp; "
+msgstr "/5 stars&nbsp;&nbsp; "
 
 #: view_packages__deps_0
 msgid "keine"
@@ -2671,13 +2703,13 @@ msgstr "source/repository"
 msgid " Freie Software (Quellen liegen offen und dürfen weiterentwickelt werden)"
 msgstr " Free software (sources are open and further development is allowed)"
 
-#: offer_new_category
-msgid "Vorschlag einer neuen Kategorie"
-msgstr "Suggestion of a new category"
-
 #: view_user_profiles__installation_1
 msgid "Um etwas installieren zu können, musst du zunächst unter \"Softwareauswahl\" etwas auswählen."
 msgstr "In order to install, you have to make selections under \"Software selection\"."
+
+#: offer_new_category
+msgid "Vorschlag einer neuen Kategorie"
+msgstr "Suggestion of a new category"
 
 #: view_packages__deps_1
 msgid "          Nur für "
@@ -3058,6 +3090,10 @@ msgstr "Free software"
 #: missing_debs_for_bundle
 msgid "Fehlende debs für Bündel:"
 msgstr "Missing debs for bundle:"
+
+#: start_vm
+msgid "Virtuelle Maschine starten"
+msgstr "start virtual machine"
 
 #: view_user_profiles__profile_rating_0
 msgid "Auswahl der zu installierenden Programmbündel und Programme"
