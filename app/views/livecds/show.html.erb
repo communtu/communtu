@@ -26,7 +26,7 @@
       <% if @cd.vm_pid.nil? %>
         <li><%= link_to t(:start_vm), :action => 'start_vm', :id => @cd.id %></li>
       <% else %>
-        <li><%= t(:vm_running) %> <%= link_to 'www.communtu.de:5901', 'www.communtu.de:5901' %>
+        <li><%= t(:vm_running) %> <%= link_to 'vnc://communtu.org:5901', 'vnc://communtu.de:5901' %>
             &nbsp; &nbsp;<%= link_to t(:stop_vm), :action => 'stop_vm', :id => @cd.id %></li>
       <% end %>
     <% end %>

@@ -274,9 +274,9 @@ class Livecd < ActiveRecord::Base
     system "kill #{self.vm_pid}"
     sleep 1
     system "kill -9 #{self.vm_pid}"
-    system "rm #{self.hda}"
+    system "rm #{self.vm_hda}"
     self.vm_pid = nil
-    self.hda = nil
+    self.vm_hda = nil
     self.save
   end
 
