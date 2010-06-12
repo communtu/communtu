@@ -264,7 +264,7 @@ class Livecd < ActiveRecord::Base
         iso_path = File.read(RAILS_ROOT+"/config/iso_path").chomp
         self.vm_hda = iso_path+tmpfile
         system "qemu-img create #{self.vm_hda} 5G"
-        system "kvm -hda #{self.vm_hda} -cdrom #{self.iso_image} -m 1000 -vnc :1"
+        exec "kvm -hda #{self.vm_hda} -cdrom #{self.iso_image} -m 1000 -vnc :1"
       end
       self.save
     end
