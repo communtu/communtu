@@ -24,10 +24,10 @@
     <li><%= link_to t(:iso_image), @cd.iso_url %></li>
     <% if is_admin? %>
       <% if @cd.vm_pid.nil? %>
-        <li><%= link_to t(:start_vm), :action => 'start_vm' %></li>
+        <li><%= link_to t(:start_vm), :action => 'start_vm', :id => @cd.id %></li>
       <% else %>
         <li><%= t(:vm_running) %> <%= link_to 'www.communtu.de:5901', 'www.communtu.de:5901' %>
-            &nbsp; &nbsp;<%= link_to t(:stop_vm), :action => 'stop_vm' %></li>
+            &nbsp; &nbsp;<%= link_to t(:stop_vm), :action => 'stop_vm', :id => @cd.id %></li>
       <% end %>
     <% end %>
     <% if @cd.kvm %>
