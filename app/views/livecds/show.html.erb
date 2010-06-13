@@ -58,7 +58,7 @@
 $SSH<br />
 chroot <%= @cd.smallversion%>/edit <br />
 gdebi -n <%=File.basename(@cd.srcdeb) %>
-<%  if !self.installdeb.index(".deb").nil? %>
+<%  if !@cd.installdeb.index(".deb").nil? %>
   gdebi -n <%= File.basename(@cd.installdeb)%>
 <% else %>
   apt-get install <%= @cd.installdeb %>
