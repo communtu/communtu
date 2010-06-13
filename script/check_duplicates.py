@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 '''
 Author: Timo Denissen
-E-Mail: timo@communtu.com
+E-Mail: timo@communtu.org
 About this program: 
 Todo: - Give the possibility to change the key name
       - GUI
@@ -37,8 +37,18 @@ def ask_string(string):
         temp_dict[x] = item
         print x, item
         x += 1
+    temp_dict[0] = 'Enter a new name.'
+    print '0', 'Enter a new name.'
+    print temp_dict
     ask_number = input('Enter the number of the correct key: ')
-    newkey = temp_dict[ask_number]
+    if ask_number == 0:
+        newkey = raw_input('Enter the new key name: ')
+        newkey = temp_dict[ask_number]
+        print 'type newkey'
+        print type(newkey)
+    else:
+        newkey = temp_dict[ask_number]
+    print newkey
     string.remove(newkey)
     oldkey_temp = string
     edit_files(oldkey_temp, newkey)
