@@ -56,7 +56,8 @@
         <%= t(:vm_running) %>. <%= t(:start_vm_instructions) %><br />
 $SSH<br />
 chroot <%= @cd.smallversion%>/edit <br />
-gdebi -n <%=File.basename(@cd.srcdeb) %></br>
+cd root<br />
+gdebi -n <%=File.basename(@cd.srcdeb) %><br />
 <%  if !@cd.installdeb.index(".deb").nil? %>
   gdebi -n <%= File.basename(@cd.installdeb)%>
 <% else %>
