@@ -47,6 +47,7 @@ class LivecdsController < ApplicationController
   def start_vm_basis
     @cd = Livecd.find(params[:id])
     @cd.start_vm_basis
+    render :action => 'show'
   end
 
 end
