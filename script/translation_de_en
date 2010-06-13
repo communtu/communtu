@@ -8,4 +8,4 @@ script/yaml2po de config/locales/template.yml config/locales/template.pot
 poedit config/locales/template.po
 script/po2yaml config/locales/template.po config/locales/template-en.yml
 script/yaml2po en config/locales/template-en.yml config/locales/template-en.pot
-echo 'svn ci muss noch auf confic/locales angewandt werden'
+echo 'Run "svn ci" for folder "config/locales"'
