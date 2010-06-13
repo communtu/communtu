@@ -289,8 +289,7 @@ class Livecd < ActiveRecord::Base
     if self.vm_pid.nil?
       self.vm_pid = fork do
         ActiveRecord::Base.connection.reconnect!
-        self.generate_hda
-        exec "kvm -hda #{self.vm_hda} -cdrom /home/communtu/livecd/isos/#{self.smallversion}.iso -m 800 -nographic -redir tcp:2200::22"
+        exec "kvm -daemonize -drive file=/home/communtu/livecd/kvm/#{self.smallversion}.img,if=virtio,boot=on,snapshot=on -smp 4 -m 800 -nographic -redir tcp:2200::22"
       end
       ActiveRecord::Base.connection.reconnect!
       system "scp -P 2200 -o StrictHostKeyChecking=no -o ConnectTimeout=500 #{self.srcdeb} #{self.smallversion}/edit/root/"
