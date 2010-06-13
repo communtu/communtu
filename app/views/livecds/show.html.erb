@@ -49,6 +49,11 @@
   <% end %>
 <% end %>
 <p>
+<% if is_admin? %>
+  <%= link_to t(:start_vm_with_livecd_basis), :action  => 'start_vm_basis', :id => @cd.id%>
+<% end %>
+</p>
+<p>
 <% if !@cd.log.nil? %>
   <h3><%=t(:logfile_extract)%></h3>
   <%= (h @cd.log).gsub(/\n/,"<br />") %>

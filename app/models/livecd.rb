@@ -257,13 +257,18 @@ class Livecd < ActiveRecord::Base
     return ""
   end
 
+  def generate_hda
+    tmpfile = IO.popen("mktemp").read.chomp
+    iso_path = File.read(RAILS_ROOT+"/config/iso_path").chomp
+    self.vm_hda = iso_path+tmpfile
+    self.save
+    system "qemu-img create #{self.vm_hda} 5G"
+  end
+
   def start_vm
     if self.vm_pid.nil?
       self.vm_pid = fork do
-        tmpfile = IO.popen("mktemp").read.chomp
-        iso_path = File.read(RAILS_ROOT+"/config/iso_path").chomp
-        self.vm_hda = iso_path+tmpfile
-        system "qemu-img create #{self.vm_hda} 5G"
+        self.generate_hda
         exec "kvm -hda #{self.vm_hda} -cdrom #{self.iso_image} -m 1000 -vnc :1"
       end
       self.save
@@ -280,6 +285,18 @@ class Livecd < ActiveRecord::Base
     self.save
   end
 
+  def start_vm_basis
+    if self.vm_pid.nil?
+      self.vm_pid = fork do
+        self.generate_hda
+        exec "kvm -hda #{self.vm_hda} -cdrom /home/communtu/livecd/isos/#{self.smallversion}.iso -m 800 -nographic -redir tcp:2200::22"
+      end
+      ActiveRecord::Base.connection.reconnect!
+      system "scp -P 2200 -o StrictHostKeyChecking=no -o ConnectTimeout=500 #{self.srcdeb} #{self.smallversion}/edit/root/"
+      system "ssh -p 2200 -o StrictHostKeyChecking=no -o ConnectTimeout=500 root@localhost \"chroot #{self.smallversion}/edit/ gdebi -n *.deb\""
+    end
+  end
+  
   protected
 
   # cleanup of processes and iso files

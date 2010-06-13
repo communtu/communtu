@@ -44,4 +44,9 @@ class LivecdsController < ApplicationController
     redirect_to livecd_path(@cd)
   end
 
+  def start_vm_basis
+    @cd = Livecd.find(params[:id])
+    @cd.start_vm_basis
+  end
+
 end
