@@ -200,7 +200,7 @@ class Deb < ActiveRecord::Base
     if !package_names.empty? then
       f.puts "Depends: " + package_names.join(", ")
     end
-    if description.empty? then
+    if description.nil? or description.empty? then
       lines = ["communtu metapackage (no further description)"]
     else
       #replace empty lines by "."
