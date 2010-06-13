@@ -50,7 +50,23 @@
 <% end %>
 <p>
 <% if is_admin? %>
-  <%= link_to t(:start_vm_with_livecd_basis), :action  => 'start_vm_basis', :id => @cd.id%>
+      <% if @cd.vm_pid.nil? %>
+        <%= link_to t(:start_vm_with_livecd_basis), :action  => 'start_vm_basis', :id => @cd.id%>
+      <% else %>
+        <li><%= t(:vm_running) %> &nbsp;
+        <%= t(:start_vm_instructions) %><br />
+$SSH<br />
+chroot <%= @cd.smallversion%>/edit <br />
+gdebi -n <%=File.basename(@cd.srcdeb) %>
+<%  if !self.installdeb.index(".deb").nil? %>
+  gdebi -n <%= File.basename(@cd.installdeb)%>
+<% else %>
+  apt-get install <%= @cd.installdeb %>
+<% end %>
+<br />
+<br />
+<%= link_to t(:stop_vm), :action => 'stop_vm', :id => @cd.id %></li>
+      <% end %>
 <% end %>
 </p>
 <p>
