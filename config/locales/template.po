@@ -1117,6 +1117,10 @@ msgstr ""
 msgid ", du hast ein neues Passwort erhalten."
 msgstr ", you have received a new password."
 
+#: view_user_mailer_signup_notification_1
+msgid "Dein Benutzername lautet:"
+msgstr "Your username is:"
+
 #: make_your_bundle
 msgid "Erstelle dir ein Bündel zum System-Upgrade"
 msgstr "Create a bundle for a system upgrade"
@@ -1132,10 +1136,6 @@ msgstr " is an Ubuntu derivative consisting only of free software. Suitable only
 #: helper_distributions_18
 msgid "free und aus Third Party Paketquellen"
 msgstr "free and from third party repositories"
-
-#: view_user_mailer_signup_notification_1
-msgid "Dein Benutzername lautet:"
-msgstr "Your username is:"
 
 #: invalid_activation_code_please_check_again
 msgid "Ungültiger Anderungscode. Bitte den Code prüfen und nochmals versuchen. (Vielleicht hat dein Email-Programm einen Zeilenumbruch eingefügt?)"
@@ -2314,6 +2314,10 @@ msgstr "Edit package"
 #: view_layouts_application_9
 msgid "Abmelden"
 msgstr "Log out"
+
+#: bundles_with_errors
+msgid "Bündel mit Fehlern"
+msgstr "Bundles with errors"
 
 #: view_metapackages_finish_migrate_2
 msgid " migriert."

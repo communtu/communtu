@@ -1690,6 +1690,9 @@ msgstr ""
 #: view_layouts_application_9
 msgid "Log out"
 msgstr ""
+#: bundles_with_errors
+msgid "Bundles with errors"
+msgstr ""
 #: view_metapackages_finish_migrate_2
 msgid ". "
 msgstr ""
@@ -2362,14 +2365,14 @@ msgstr ""
 #: view_packages__search_0
 msgid "Search for packages"
 msgstr ""
-#: controller_derivatives_1
-msgid "Derivative created."
+#: lib_system_1
+msgid "You are not privileged to do this."
 msgstr ""
 #: view_distributions_edit_0
 msgid "edit distribution"
 msgstr ""
-#: lib_system_1
-msgid "You are not privileged to do this."
+#: controller_derivatives_1
+msgid "Derivative created."
 msgstr ""
 #: view_metapackages_show_modified
 msgid "This bundle contains changes."

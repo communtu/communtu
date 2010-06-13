@@ -592,6 +592,7 @@ en:
     a feedback from en.communtu.org has arrived. The subject is:
   view_packages_edit_0: Edit package
   view_layouts_application_9: Log out
+  bundles_with_errors: Bundles with errors
   view_metapackages_finish_migrate_2: ". "
   view_my_mailer_mail_1: "The following comment was made:"
   generate_cd_new: Recreate Live-CD/DVD with new sources
@@ -819,9 +820,9 @@ en:
   lib_system_0: In order to use this feature you have to be logged in. Logging in via "Guest session" is also possible.
   view_packages__search_0: Search for packages
   view_metapackages_show_modified: This bundle contains changes.
+  controller_derivatives_1: Derivative created.
   view_distributions_edit_0: edit distribution
   lib_system_1: You are not privileged to do this.
-  controller_derivatives_1: Derivative created.
   view_home_about_16: In order to use Communtu you need to register yourself. To do so, just click on the "Registration"-button in the menu above.
   controller_derivatives_2: Derivative updated.
   lib_system_2: http://www.communtu.de
