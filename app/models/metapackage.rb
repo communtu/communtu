@@ -359,6 +359,25 @@ class Metapackage < BasePackage
     return mcs.sort_by {|mc| [mc.package.section, mc.package.ptype, mc.package.name]}
   end
 
+  def self.remove_dangling_packages
+      metas = []
+      mcds = MetacontentsDistr.find_by_sql("SELECT * \
+               FROM `metacontents_distrs`  \
+               INNER JOIN metacontents ON (metacontents.id = metacontents_distrs.metacontent_id)  \
+               INNER JOIN base_packages ON (base_packages.id = metacontents.base_package_id) \
+               WHERE (base_packages.id, metacontents_distrs.distribution_id) NOT IN (SELECT package_id, distribution_id FROM package_distrs)")
+      mcds.each do |mcd|
+        metas << mcd.metacontent.metapackage
+        mcd.destroy
+      end
+      metas.uniq.each do |m|
+        m.modified = true
+        m.version += "-dangling-removed"
+        m.save
+        m.debianize
+      end
+  end
+
   protected
   
   # :dependent => :destroy will not work since the metapackage is needed for destroying the debs

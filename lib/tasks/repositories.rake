@@ -8,6 +8,7 @@ namespace :db do
           r.import_source
         end
       end
+      Metapackage.remove_dangling_packages
     end
     desc 'Synchronise all repositories.'
     task :sync_all => :environment do
