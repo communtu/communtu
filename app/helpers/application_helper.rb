@@ -117,6 +117,14 @@ module ApplicationHelper
     not session[:cart].nil?
   end
 
+  def base_package_path(base_package)
+    if base_package.class == Metapackage
+      metapackage_path(base_package)
+    else
+      package_path(base_package)
+    end
+  end
+
   def card_editor(name,packages,session,current_user,meta_id=nil,delete_package = nil)
     cart = Cart.new
     cart.name = name
