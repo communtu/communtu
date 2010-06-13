@@ -288,6 +288,7 @@ class Livecd < ActiveRecord::Base
   def start_vm_basis
     if self.vm_pid.nil?
       self.vm_pid = fork do
+        ActiveRecord::Base.connection.reconnect!
         self.generate_hda
         exec "kvm -hda #{self.vm_hda} -cdrom /home/communtu/livecd/isos/#{self.smallversion}.iso -m 800 -nographic -redir tcp:2200::22"
       end
