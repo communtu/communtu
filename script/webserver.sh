@@ -40,6 +40,10 @@ sudo gem install chronic packet
 sudo apt-get install reprepro fakeroot dpkg-dev dh-make build-essential debootstrap schroot edos-debcheck apt-mirror
 #livecd
 sudo apt-get install kvm libdbd-sqlite3-perl genisoimage squashfs-tools python-software-properties kpartx
+
+echo 'SSH="ssh -p 2244 -o StrictHostKeyChecking=no -o ConnectTimeout=500 root@localhost"' >> ~/.bashrc
+echo 'SCP="scp -P 2244 -o StrictHostKeyChecking=no -o ConnectTimeout=500"' >> ~/.bashrc
+
 # fix apt-cacher bug, see https://bugs.launchpad.net/ubuntu/+source/apt-cacher/+bug/83987
 sudo add-apt-repository ppa:aperomsik/aap-ppa
 sudo apt-get update
