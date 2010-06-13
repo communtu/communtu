@@ -18,7 +18,7 @@ en:
   view_home_beteiligung_12: Programming
   view_distributions_show_8: Before a distribution can be deleted, every user must be logged out! Are you sure?
   cd_failed: Failed - we will solve the problem and inform you when the ISO-file is ready to download
-  vm_running: "virtual machine runs with:"
+  vm_running: virtual machine is running
   view_roles_index_0: roles for
   view_home_beteiligung_13: Since we have many ideas for the platform's further development, we need programmers. Ideally you already have some experience with Ruby on Rails.
   view_user_profiles__installation_16: Add sources and keys
@@ -303,6 +303,7 @@ en:
   view_home_derivatives_34: " - replaces the Linux core with OpenSolaris. Provides only a minimal basis to applications. The installation of additional software is left to the user; Communtu can be used for this."
   health_status: Health status
   view_home_derivatives_35: "There are several other derivatives for which we cannot give any recommendations for installation:"
+  vm_running_under: "virtual machine runs with:"
   helper_distributions_20: non-free and from the community repositories
   category_without_colon: Category
   view_home_derivatives_36: " - an African version of Ubuntu, which is apparently not available over the internet."
@@ -520,6 +521,7 @@ en:
   view_users_edit_0: edit profile
   view_cart_update_2: "Level of expert:"
   to_chat: to the chat
+  start_vm_instructions: "Follow these steps to log in on the virtual machine (please wait a minute, deb-files need to be copied):"
   view_sent_index_0: sent messages
   an: To
   view_users_edit_2: delete profile
@@ -530,6 +532,7 @@ en:
   not_logged_in: You are currently not logged in. Please click on "log in" above.
   controller_users_2: An error occured while registering.
   more_about_sources: (More information about Keys and Sources in the FAQ)
+  start_vm_with_livecd_basis: Start virtual machine based on the Live-CD settings (for debugging)
   view_sent_index_3: Date
   controller_users_3: You have been logged in as {{anonymous_user}} with the password {{anonymous_user}}. If applicable click on the username {{anonymous_user}} in the above-right corner to change the account into an permanent account, otherwise the account will be deleted after one day.
   view_cart__metacart_3: Bundle from packages-list
@@ -813,16 +816,16 @@ en:
   creation_failed: Creation failed
   view_home_icons_9: " installation via shell-script"
   distribution: Distribution
+  view_packages__search_0: Search for packages
   link_community: http://ubuntuforums.org
   natur_geist_und_technik: "Natur, Geist und Technik - Verein zur F\xC3\xB6rderung der Allgemeinbildung e.V."
   fine_selection: Fine selection
   logfile_extract: Extract from the logfile
   lib_system_0: In order to use this feature you have to be logged in. Logging in via "Guest session" is also possible.
-  view_packages__search_0: Search for packages
   view_metapackages_show_modified: This bundle contains changes.
   controller_derivatives_1: Derivative created.
-  view_distributions_edit_0: edit distribution
   lib_system_1: You are not privileged to do this.
+  view_distributions_edit_0: edit distribution
   view_home_about_16: In order to use Communtu you need to register yourself. To do so, just click on the "Registration"-button in the menu above.
   controller_derivatives_2: Derivative updated.
   lib_system_2: http://www.communtu.de

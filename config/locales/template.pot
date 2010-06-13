@@ -62,7 +62,7 @@ msgstr ""
 msgid "Programmierung"
 msgstr ""
 #: vm_running
-msgid "virtuelle Maschine läuft unter: "
+msgid "virtuelle Maschine läuft"
 msgstr ""
 #: view_distributions_show_8
 msgid "Vor dem Löschen einer Distribution müssen alle Benutzer, die sie nutzen, ausgeloggt sein! Bist du sicher?"
@@ -814,17 +814,17 @@ msgstr ""
 #: view_users_new_9
 msgid "Ja, ich möchte die Maillingliste für Diskussionen abonnieren."
 msgstr ""
-#: view_home_derivatives_31
-msgid ". Aufgrund der notwendigen Treiberinstallation sollte Linux MCE direkt installiert werden, Communtu kann dann aber für die Installation weiterer Software genutzt werden."
-msgstr ""
-#: helper_distributions_17
-msgid "free und aus den Community Paketquellen"
-msgstr ""
 #: view_user_mailer_signup_notification_0
 msgid "Hallo und herzliche Willkommen bei Communtu!\n\n\n Du hast dich bei Communtu http://www.communtu.de\nerfolgreich registriert. Jetzt kannst du alle Features der Plattform\nbenutzen."
 msgstr ""
 #: view_user_mailer_reset_password_0
 msgid ", du hast ein neues Passwort erhalten."
+msgstr ""
+#: view_home_derivatives_31
+msgid ". Aufgrund der notwendigen Treiberinstallation sollte Linux MCE direkt installiert werden, Communtu kann dann aber für die Installation weiterer Software genutzt werden."
+msgstr ""
+#: helper_distributions_17
+msgid "free und aus den Community Paketquellen"
 msgstr ""
 #: view_user_mailer_signup_notification_1
 msgid "Dein Benutzername lautet:"
@@ -858,6 +858,9 @@ msgid " - ersetzt den Linux-Kern durch OpenSolaris. Stellt nur eine minimale Bas
 msgstr ""
 #: health_status
 msgid "Gesundheitsstatus"
+msgstr ""
+#: vm_running_under
+msgid "virtuelle Maschine läuft unter: "
 msgstr ""
 #: view_home_derivatives_35
 msgid "Es gibt noch weitere Derivate zu denen wir bisher noch keine Installationsempfehlung abgeben können:"
@@ -1486,6 +1489,9 @@ msgstr ""
 #: to_chat
 msgid "zum Chat"
 msgstr ""
+#: start_vm_instructions
+msgid "So kannst du dich in die virtuelle Maschine einloggen (bitte etwas warten, bis die deb-Files kopiert wurden):"
+msgstr ""
 #: view_sent_index_0
 msgid "verschickte Nachrichten"
 msgstr ""
@@ -1515,6 +1521,9 @@ msgid "Es gab ein Problem mit der Registrierung."
 msgstr ""
 #: more_about_sources
 msgid "(Mehr Informationen zum Thema Schlüssel und Quellen in den Faqs)"
+msgstr ""
+#: start_vm_with_livecd_basis
+msgid "Virtuelle Maschine auf Basis der LiveCD-Einstellungen starten (Zur Fehlersuche)"
 msgstr ""
 #: view_sent_index_3
 msgid "Zeitpunkt"

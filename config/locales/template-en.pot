@@ -68,7 +68,7 @@ msgstr ""
 msgid "Failed - we will solve the problem and inform you when the ISO-file is ready to download"
 msgstr ""
 #: vm_running
-msgid "virtual machine runs with:"
+msgid "virtual machine is running"
 msgstr ""
 #: view_roles_index_0
 msgid "roles for"
@@ -862,6 +862,9 @@ msgstr ""
 #: view_home_derivatives_35
 msgid "There are several other derivatives for which we cannot give any recommendations for installation:"
 msgstr ""
+#: vm_running_under
+msgid "virtual machine runs with:"
+msgstr ""
 #: helper_distributions_20
 msgid "non-free and from the community repositories"
 msgstr ""
@@ -1483,6 +1486,9 @@ msgstr ""
 #: to_chat
 msgid "to the chat"
 msgstr ""
+#: start_vm_instructions
+msgid "Follow these steps to log in on the virtual machine (please wait a minute, deb-files need to be copied):"
+msgstr ""
 #: view_sent_index_0
 msgid "sent messages"
 msgstr ""
@@ -1512,6 +1518,9 @@ msgid "An error occured while registering."
 msgstr ""
 #: more_about_sources
 msgid "(More information about Keys and Sources in the FAQ)"
+msgstr ""
+#: start_vm_with_livecd_basis
+msgid "Start virtual machine based on the Live-CD settings (for debugging)"
 msgstr ""
 #: view_sent_index_3
 msgid "Date"
@@ -2347,6 +2356,9 @@ msgstr ""
 #: distribution
 msgid "Distribution"
 msgstr ""
+#: lib_system_0
+msgid "In order to use this feature you have to be logged in. Logging in via \"Guest session\" is also possible."
+msgstr ""
 #: link_community
 msgid "http://ubuntuforums.org"
 msgstr ""
@@ -2359,17 +2371,14 @@ msgstr ""
 #: logfile_extract
 msgid "Extract from the logfile"
 msgstr ""
-#: lib_system_0
-msgid "In order to use this feature you have to be logged in. Logging in via \"Guest session\" is also possible."
-msgstr ""
 #: view_packages__search_0
 msgid "Search for packages"
 msgstr ""
-#: lib_system_1
-msgid "You are not privileged to do this."
-msgstr ""
 #: view_distributions_edit_0
 msgid "edit distribution"
+msgstr ""
+#: lib_system_1
+msgid "You are not privileged to do this."
 msgstr ""
 #: controller_derivatives_1
 msgid "Derivative created."
