@@ -372,9 +372,8 @@ class Metapackage < BasePackage
       end
       metas.uniq.each do |m|
         m.modified = true
-        m.version += "-dangling-removed"
+        m.version += ".1"
         m.save
-        m.debianize
       end
   end
 
