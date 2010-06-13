@@ -50,7 +50,7 @@
              <% end %>
            </td></tr>
         <% end %>
-        <%if ! mc.package.description.empty? %>
+        <%if !mc.package.description.nil? and !mc.package.description.empty? %>
 		   <tr>
 			<td colspan="2" class="<%= css+"noborder" %>">
 				<%= mc.package.description[0,170]+(mc.package.description.length<170 ? "" : " ...") %></td>
