@@ -291,14 +291,15 @@ class Livecd < ActiveRecord::Base
         ActiveRecord::Base.connection.reconnect!
         exec "kvm -daemonize -drive file=/home/communtu/livecd/kvm/#{self.smallversion}.img,if=virtio,boot=on,snapshot=on -smp 4 -m 800 -nographic -redir tcp:2200::22"
       end
-      self.save
-      ActiveRecord::Base.connection.reconnect!
       fork do
+        ActiveRecord::Base.connection.reconnect!
         system "scp -P 2200 -o StrictHostKeyChecking=no -o ConnectTimeout=500 #{self.srcdeb} root@localhost:/root/#{self.smallversion}/edit/root/"
         if !self.installdeb.index(".deb").nil? # install deb is a deb file? then copy it, too
           system "scp -P 2200 -o StrictHostKeyChecking=no -o ConnectTimeout=500 #{self.installdeb} root@localhost:/root/#{self.smallversion}/edit/root/"
         end
       end
+      ActiveRecord::Base.connection.reconnect!
+      self.save
     end
   end
   
