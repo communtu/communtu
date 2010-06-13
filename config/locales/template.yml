@@ -874,7 +874,8 @@ de:
   view_users_show_8: Nachrichten
   view_videos_edit_0: Video bearbeiten
   view_videos_show_0: 'Url:'
-  vm_running: 'virtuelle Maschine läuft unter: '
+  vm_running: 'virtuelle Maschine läuft'
+  vm_running_under: 'virtuelle Maschine läuft unter: '
   wait_for_debs: auf Bau der Metapakete warten
   wait_for_release: auf offizielles Ubuntu-Release warten
   wait_for_sync: auf Synchronisation der Repositories warten
