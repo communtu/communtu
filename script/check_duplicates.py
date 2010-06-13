@@ -3,9 +3,8 @@
 '''
 Author: Timo Denissen
 E-Mail: timo@communtu.org
-About this program: 
-Todo: - Give the possibility to change the key name
-      - GUI
+About this program: This program is about removing multiple entries from the template.yml file.
+Todo: - GUI
 '''
 
 import yaml
@@ -25,11 +24,11 @@ def check_dict(dict):
             print 'Please solve this conflict:'
             multiple_string = value
             print value, ':', key ,'\n'
-            ask_string(multiple_string)
+            ask_string(multiple_string, key)
         else:
             pass
 
-def ask_string(string):
+def ask_string(string, key):
     '''Ask user which string to use in templaye.yml'''
     temp_dict = {}
     x = 1
@@ -37,29 +36,34 @@ def ask_string(string):
         temp_dict[x] = item
         print x, item
         x += 1
-    temp_dict[0] = 'Enter a new name.'
     print '0', 'Enter a new name.'
-    print temp_dict
     ask_number = input('Enter the number of the correct key: ')
     if ask_number == 0:
-        newkey = raw_input('Enter the new key name: ')
-        newkey = temp_dict[ask_number]
-        print 'type newkey'
-        print type(newkey)
+        newkey = raw_input('Enter a new name: ')
+        print key
+        add_to_template(newkey, key)
     else:
         newkey = temp_dict[ask_number]
-    print newkey
-    string.remove(newkey)
+        string.remove(newkey)
     oldkey_temp = string
     edit_files(oldkey_temp, newkey)
     
-def edit_files(oldkey, newkey):
+def add_to_template(user_string, new_value):
+    '''Add the new key to the template.yml'''
+    template_yml = open('config/locales/template.yml')
+    template_dict_full = yaml.safe_load(template_yml)
+    template_dict = template_dict_full['de']
+    template_yml.close()
+    template_yml = open('config/locales/template.yml', 'w')
+    template_dict[user_string] = new_value
+    yaml.dump_all([template_dict_full], stream=template_yml, default_flow_style=False, width=2048, line_break=False, allow_unicode=True, explicit_start=True)
+
+def edit_files(oldkeys, newkey):
     '''Using "sed" to remove oldkey from source files.'''
-    for item in oldkey:
-        oldkey = item
-        sed = 'find app lib -name "*rb" -exec sed -i \'s/t(:' + oldkey + '\([^:alnum:_]\)/t(:' + newkey + '\\1/g\' {} \;'
+    for item in oldkeys:
+        sed = 'find app lib -name "*rb" -exec sed -i \'s/t(:' + item + '\([^:alnum:_]\)/t(:' + newkey + '\\1/g\' {} \;'
         print 'These files will be changed:\n'
-        os.system('grep --include=\'*rb\' "' + oldkey + '" ./app -r')
+        os.system('grep --include=\'*rb\' "' + item + '" ./app -r')
         if raw_input('\nIs this ok? y/n ') == 'n':
             break
         else:
@@ -67,7 +71,7 @@ def edit_files(oldkey, newkey):
         os.system(sed)
         edit_template(item)
     print '----------'
-    
+
 def edit_template(key):
     '''Editing the template.yml and removing multiple key:value pairs.'''
     template_yml = open('config/locales/template.yml')
