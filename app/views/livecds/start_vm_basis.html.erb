@@ -1,6 +1,11 @@
 <%= t(:start_vm_instructions) %><br />
 $SSH<br />
-chroot <%= @cd.smallversion%>/edit apt-get install <%= @cd.installdeb %>
+chroot <%= @cd.smallversion%>/edit <br />
+<%  if !self.installdeb.index(".deb").nil? %>
+  gdebi -n <%= File.basename(self.installdeb)%>
+<% else %>
+  apt-get install <%= @cd.installdeb %>
+<% end %>
 <br />
 <br />
 <%= link_to t(:stop_vm), :action => 'stop_vm', :id => @cd.id %>
