@@ -4,7 +4,7 @@
 # might break everything.
 class Tag < ActiveRecord::Base
   has_many :package_tags
-  has_many :packages, :through => :package_tags, :dependent => :destroy
+  has_many :packages, :through => :package_tags
 
   validates_presence_of :name
   validates_uniqueness_of :name

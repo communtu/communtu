@@ -21,8 +21,8 @@ class Package < BasePackage
 
   has_many :standard_packages
 
-  has_many :package_tags
-  has_many :tags, :through => :package_tags, :dependent => :destroy, :class_name => 'PackageTag'
+  has_many :package_tags, :dependent => :destroy
+  has_many :tags, :through => :package_tags
 
   validates_presence_of :name
   validates_uniqueness_of :name
