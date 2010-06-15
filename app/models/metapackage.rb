@@ -366,6 +366,7 @@ class Metapackage < BasePackage
                INNER JOIN metacontents ON (metacontents.id = metacontents_distrs.metacontent_id)  \
                INNER JOIN base_packages ON (base_packages.id = metacontents.base_package_id) \
                WHERE (base_packages.id, metacontents_distrs.distribution_id) NOT IN (SELECT package_id, distribution_id FROM package_distrs)")
+      puts "Removing #{mcds.length} dangling packages from bundles"
       mcds.each do |mcd|
         metas << mcd.metacontent.metapackage
         mcd.destroy

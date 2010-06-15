@@ -342,4 +342,38 @@ class Package < BasePackage
                                       dist.id,der.id,arch.id],
                       :include=>:standard_packages)
   end
+
+  # remove all packages that have no repositories
+  def self.remove_zombies
+    # find all zombies
+    # fast query (executed daily)
+    zombies = Package.find_by_sql("SELECT base_packages.id \
+                    FROM `package_distrs` \
+                    RIGHT JOIN base_packages ON base_packages.id=package_id \
+                    WHERE base_packages.type=\"Package\" and package_distrs.id IS NULL")
+    puts "Removing #{zombies.length} zombie packages"
+    # find corresponding metacontents and metapackages
+    metas = []
+    mcs = []
+    # usually, there are no zombies, so we can afford to be slower here...
+    zombies.each do |p|
+      mcs += Metacontent.find(:all,:conditions=>{:base_package_id=>p.id})
+      metas += mcs.map{|mc| mc.metapackage}
+      p.destroy
+    end
+    # ... destroy the metacontents
+    mcs.compact.uniq.each do |mc|
+      mc.destroy
+    end
+    # .. mark metapackages as modified
+    metas.compact.uniq.each do |m|
+        m.modified = true
+        m.version += ".1"
+        m.save
+    end
+  end
 end
+
+
+
+

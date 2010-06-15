@@ -414,4 +414,10 @@ class Repository < ActiveRecord::Base
      or option == "Filename"
   end
 
+  protected
+  def before_destroy
+    RepositoryDependency.find(:all,:conditions => ["repository_id = ? or depends_on_id = ?",self.id,self.id]). each do |rd|
+      rd.destroy
+    end
+  end
 end

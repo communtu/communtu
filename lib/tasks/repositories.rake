@@ -8,6 +8,9 @@ namespace :db do
           r.import_source
         end
       end
+      MetacontentsDistr.cleanup
+      MetacontentsDerivative.cleanup
+      Package.remove_zombies
       Metapackage.remove_dangling_packages
     end
     desc 'Synchronise all repositories.'
