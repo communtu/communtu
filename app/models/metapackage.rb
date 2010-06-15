@@ -361,7 +361,7 @@ class Metapackage < BasePackage
 
   def self.remove_dangling_packages
       metas = []
-      mcds = MetacontentsDistr.find_by_sql("SELECT * \
+      mcds = MetacontentsDistr.find_by_sql("SELECT metacontents_distrs.id \
                FROM `metacontents_distrs`  \
                INNER JOIN metacontents ON (metacontents.id = metacontents_distrs.metacontent_id)  \
                INNER JOIN base_packages ON (base_packages.id = metacontents.base_package_id) \
@@ -370,7 +370,7 @@ class Metapackage < BasePackage
         metas << mcd.metacontent.metapackage
         mcd.destroy
       end
-      metas.uniq.each do |m|
+      metas.compact.uniq.each do |m|
         m.modified = true
         m.version += ".1"
         m.save
