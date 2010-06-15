@@ -2,7 +2,7 @@
 # of a particular package in a bundle holds
 
 class MetacontentsDerivative < ActiveRecord::Base
-  belongs_to :metacontents
+  belongs_to :metacontent
   belongs_to :derivative
 
   def self.cleanup
