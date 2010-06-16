@@ -129,7 +129,7 @@ class MetapackagesController < ApplicationController
         return
       end
     end
-    if !is_admin and !check_owner(@metapackage,current_user) then
+    if !is_admin? and !check_owner(@metapackage,current_user) then
       redirect_to metapackage_path(@metapackage)
       return
     end
