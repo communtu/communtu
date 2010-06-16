@@ -324,8 +324,10 @@ class Metapackage < BasePackage
     # only allow one fork at a time, in order to prevent memory leaks
     safe_system "dotlockfile -r 1000 #{RAILS_ROOT}/forklock"
     fork do
+      ActiveRecord::Base.connection.reconnect!
       system 'echo "Metapackage.find('+self.id.to_s+').generate_debs_then_unlock" | nohup script/console production'
     end
+    ActiveRecord::Base.connection.reconnect!
   end
   
   def self.debianize_all

@@ -98,8 +98,10 @@ class Livecd < ActiveRecord::Base
       nice = (self.users[0].nil? or !self.users[0].has_role?('administrator'))
       nicestr = if nice then "nice -n +10 " else "" end
       self.pid = fork do
+            ActiveRecord::Base.connection.reconnect!
 	 	        system "echo \"Livecd.find(#{self.id.to_s}).remaster(#{port.to_s})\" | #{nicestr} nohup script/console production"
       end
+      ActiveRecord::Base.connection.reconnect!
       self.save
   end
 
@@ -268,9 +270,11 @@ class Livecd < ActiveRecord::Base
   def start_vm
     if self.vm_pid.nil?
       self.vm_pid = fork do
+        ActiveRecord::Base.connection.reconnect!
         self.generate_hda
         exec "kvm -hda #{self.vm_hda} -cdrom #{self.iso_image} -m 1000 -vnc :1"
       end
+      ActiveRecord::Base.connection.reconnect!
       self.save
     end
   end

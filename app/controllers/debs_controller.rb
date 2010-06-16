@@ -91,8 +91,10 @@ class DebsController < ApplicationController
     # this may take very long, hence fork
     flash[:notice] =  t(:deb_generation_in_background)
     fork do
+      ActiveRecord::Base.connection.reconnect!
       @deb.generate
     end
+    ActiveRecord::Base.connection.reconnect!
     redirect_to(deb_path(@deb))
   end
 
@@ -101,8 +103,10 @@ class DebsController < ApplicationController
     # this may take very long, hence fork
     flash[:notice] =  t(:deb_generation_in_background)
     fork do
+      ActiveRecord::Base.connection.reconnect!
       @debs.each {|deb| deb.generate}
     end
+    ActiveRecord::Base.connection.reconnect!
     redirect_to(debs_url)
   end
 
@@ -116,8 +120,10 @@ class DebsController < ApplicationController
     # this may take very long, hence fork
     flash[:notice] =  t(:deb_generation_in_background)
     fork do
+      ActiveRecord::Base.connection.reconnect!
       @debs.each {|deb| deb.generate}
     end
+    ActiveRecord::Base.connection.reconnect!
     redirect_to :action => 'bundle', :id => params[:id]
   end
 end
