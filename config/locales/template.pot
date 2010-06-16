@@ -508,6 +508,9 @@ msgstr ""
 #: view_user_mailer_activation_0
 msgid ", dein Benutzerkonto wurde aktiviert.  Folge nun dem Link:"
 msgstr ""
+#: bundles_without_debs
+msgid "veröffentlichte Bündel ohne deb-Pakete"
+msgstr ""
 #: controller_metapackages_please_regenerate
 msgid "Das Bündel wurde zurückgesetzt. Bitte die Version hochzählen und Metapaket neu erzeugen."
 msgstr ""
@@ -1747,8 +1750,14 @@ msgstr ""
 #: stop_vm
 msgid "Virtuelle Maschine stoppen"
 msgstr ""
+#: bundles_needing_deb_generation
+msgid "Bündel, die neu als Metapaket erzeugt werden müssen"
+msgstr ""
 #: controller_repositories_2
 msgid "Repository aktualisiert."
+msgstr ""
+#: view_user_mailer_forgot_password_0
+msgid ", um ein neues Passwort zu erhalten, folge dem Link:"
 msgstr ""
 #: controller_repositories_3
 msgid "sources.list eingelesen."
@@ -1761,9 +1770,6 @@ msgid "Pakete für Ubuntu"
 msgstr ""
 #: view_sessions_new_3
 msgid "Benutzer auf diesem Computer dauerhaft anmelden"
-msgstr ""
-#: view_user_mailer_forgot_password_0
-msgid ", um ein neues Passwort zu erhalten, folge dem Link:"
 msgstr ""
 #: view_packages_edit_8
 msgid "Neuer Link auf ein Video"

@@ -679,6 +679,10 @@ msgstr "Is used at Communtu in these bundles:"
 msgid ", dein Benutzerkonto wurde aktiviert.  Folge nun dem Link:"
 msgstr ", your account has been activated. Please follow this link:"
 
+#: bundles_without_debs
+msgid "veröffentlichte Bündel ohne deb-Pakete"
+msgstr "Published bundles without deb-files."
+
 #: controller_metapackages_please_regenerate
 msgid "Das Bündel wurde zurückgesetzt. Bitte die Version hochzählen und Metapaket neu erzeugen."
 msgstr "The bundle has been reset. Please raise the version and re-create the meta-package."
@@ -2387,9 +2391,17 @@ msgstr "admninistration section"
 msgid "Virtuelle Maschine stoppen"
 msgstr "stop virtual machine"
 
+#: bundles_needing_deb_generation
+msgid "Bündel, die neu als Metapaket erzeugt werden müssen"
+msgstr "Bundles that need to be recreated as metapackages."
+
 #: controller_repositories_2
 msgid "Repository aktualisiert."
 msgstr "Repository updated."
+
+#: view_user_mailer_forgot_password_0
+msgid ", um ein neues Passwort zu erhalten, folge dem Link:"
+msgstr ", to receive a new password, please folloe the link:"
 
 #: controller_repositories_3
 msgid "sources.list eingelesen."
@@ -2406,10 +2418,6 @@ msgstr "Packages for Ubuntu"
 #: view_sessions_new_3
 msgid "Benutzer auf diesem Computer dauerhaft anmelden"
 msgstr "Log this user permanently in on this computer"
-
-#: view_user_mailer_forgot_password_0
-msgid ", um ein neues Passwort zu erhalten, folge dem Link:"
-msgstr ", to receive a new password, please folloe the link:"
 
 #: view_packages_edit_8
 msgid "Neuer Link auf ein Video"

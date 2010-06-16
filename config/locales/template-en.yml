@@ -166,6 +166,7 @@ en:
   view_home_cancel_1: Either you try a again or you use the possibility via bank transfer
   view_home_news_5: This list is intended for general announcements from the Communtu team to the users. The frequency is a little higher than once a week. Posts will be collected in an
   used_in_bundles: "Is used at Communtu in these bundles:"
+  bundles_without_debs: Published bundles without deb-files.
   view_user_mailer_activation_0: ", your account has been activated. Please follow this link:"
   controller_metapackages_please_regenerate: The bundle has been reset. Please raise the version and re-create the meta-package.
   view_home_news_7: http://groups.google.com/group/communtu-discuss-en/topics?start=
@@ -610,6 +611,7 @@ en:
   add: add
   controller_admins_0: admninistration section
   stop_vm: stop virtual machine
+  bundles_needing_deb_generation: Bundles that need to be recreated as metapackages.
   controller_repositories_2: Repository updated.
   controller_repositories_3: sources.list read.
   view_admins_show_0: Here should be an introduction to the admin area
@@ -817,11 +819,11 @@ en:
   view_home_icons_9: " installation via shell-script"
   distribution: Distribution
   view_packages__search_0: Search for packages
+  lib_system_0: In order to use this feature you have to be logged in. Logging in via "Guest session" is also possible.
+  logfile_extract: Extract from the logfile
   link_community: http://ubuntuforums.org
   natur_geist_und_technik: "Natur, Geist und Technik - Verein zur F\xC3\xB6rderung der Allgemeinbildung e.V."
   fine_selection: Fine selection
-  logfile_extract: Extract from the logfile
-  lib_system_0: In order to use this feature you have to be logged in. Logging in via "Guest session" is also possible.
   view_metapackages_show_modified: This bundle contains changes.
   controller_derivatives_1: Derivative created.
   lib_system_1: You are not privileged to do this.

@@ -505,6 +505,9 @@ msgstr ""
 #: used_in_bundles
 msgid "Is used at Communtu in these bundles:"
 msgstr ""
+#: bundles_without_debs
+msgid "Published bundles without deb-files."
+msgstr ""
 #: view_user_mailer_activation_0
 msgid ", your account has been activated. Please follow this link:"
 msgstr ""
@@ -1744,6 +1747,9 @@ msgstr ""
 #: stop_vm
 msgid "stop virtual machine"
 msgstr ""
+#: bundles_needing_deb_generation
+msgid "Bundles that need to be recreated as metapackages."
+msgstr ""
 #: controller_repositories_2
 msgid "Repository updated."
 msgstr ""
@@ -2356,20 +2362,20 @@ msgstr ""
 #: distribution
 msgid "Distribution"
 msgstr ""
-#: lib_system_0
-msgid "In order to use this feature you have to be logged in. Logging in via \"Guest session\" is also possible."
-msgstr ""
-#: link_community
-msgid "http://ubuntuforums.org"
+#: fine_selection
+msgid "Fine selection"
 msgstr ""
 #: natur_geist_und_technik
 msgid "Natur, Geist und Technik - Verein zur Förderung der Allgemeinbildung e.V."
 msgstr ""
-#: fine_selection
-msgid "Fine selection"
+#: link_community
+msgid "http://ubuntuforums.org"
 msgstr ""
 #: logfile_extract
 msgid "Extract from the logfile"
+msgstr ""
+#: lib_system_0
+msgid "In order to use this feature you have to be logged in. Logging in via \"Guest session\" is also possible."
 msgstr ""
 #: view_packages__search_0
 msgid "Search for packages"
