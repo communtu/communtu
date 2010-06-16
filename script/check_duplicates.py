@@ -32,7 +32,7 @@ def ask_string(string, key):
     x = 1
     for item in string:
         temp_dict[x] = item
-        print x , item
+        print x, item
         x += 1
     print '0', 'Enter a new name.'
     ask_number = input('Enter the number of the correct key: ')
@@ -104,12 +104,14 @@ def edit_strings():
     for key, value in template_dict.items():
         if search in key:
             count += 1
-            cache[count] = [key, value]
+            cache[count] = [key]
             print count, key + ':', value
     print '\nFound string', '"' + search + '"', count, 'times.\n'
     ask_number = input('Which string do you want to edit? ')
-    newkey = cache[ask_number]
-    print newkey
+    newkey = raw_input ('Enter the new key: ')
+    oldkey = cache[ask_number]
+    print oldkey, 'will be replaced with "' + newkey + '".'
+    edit_files(oldkey, newkey)
     
 '''Asking the user what to do'''
 open_file()
