@@ -359,8 +359,8 @@ class MetapackagesController < ApplicationController
   
   def remove_package
     m = Metapackage.find(params[:id])
-    if !check_owner(m,current_user) then
-      redirect_to :controller => :metapackages, :action => :edit, :id => params[:id]
+    if !is_admin? and !check_owner(m,current_user) then
+      redirect_to :controller => :metapackages, :action => :show, :id => params[:id]
       return
     end
     redirect_to :controller => :metapackages, :action => :edit_action, :id => params[:id], :did => params[:package_id], :method=>:pedit
