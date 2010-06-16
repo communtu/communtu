@@ -580,6 +580,9 @@ msgstr ""
 #: view_home_derivatives_11
 msgid " - Ubuntu Multimedie-Edition. Sie wird bei Communtu mitinstalliert, wenn du bei Audio, Film und/oder Grafik/Design \"erweitert\" anwählst."
 msgstr ""
+#: our_blog
+msgid "Unser Blog"
+msgstr ""
 #: model_mailer_4
 msgid "Dein Passwort wurde zurückgesetzt."
 msgstr ""
@@ -975,9 +978,6 @@ msgid "basiert auf Bündel:"
 msgstr ""
 #: view_home_faq_kde_02
 msgid "KPackageKit erreichst du über \"K-Menu -> Programme-> System -> Systemverwaltung -> Software-Verwaltung\". Hier wählst du rechts aus dem Ausklapp-Menü \"packages.communtu.org\" aus. Aus der Liste suchst du nun das Metapaket aus, welches du installiert hast und markierst es mit einem Klick auf das X rechts neben dem Eintrag. Um das Metapaket nun zu entfernen ist nur noch ein Klick auf \"Übernehmen\" notwendig. Es wird jetzt noch eine Übersicht der zu entfernenden Programme angezeigt und nach einem Klick auf \"Ok\" werden diese von deinem Computer gelöscht."
-msgstr ""
-#: view_home_news_15
-msgid "Unser Blog"
 msgstr ""
 #: view_home_derivatives_42
 msgid " - spezialisiert auf Webdienste."

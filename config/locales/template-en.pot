@@ -580,6 +580,9 @@ msgstr ""
 #: view_home_derivatives_11
 msgid " - Ubuntu multimedia-edition. This will be automatically installed when \"advanced\" is checked at audio, film and/or graphic/design."
 msgstr ""
+#: our_blog
+msgid "Our blog"
+msgstr ""
 #: model_mailer_4
 msgid "Your password has been restored."
 msgstr ""
@@ -975,9 +978,6 @@ msgid "Based on bundle:"
 msgstr ""
 #: view_home_faq_kde_02
 msgid "You can access KPackageKit via \"K-Menu -> Programs -> System -> Administration -> Software Management\". From the right dropdown menu you choose \"packages.communtu.org\". The list now appearing contains every metapackage available in Communtu. To uninstall a metapackage you click on one of the installed metapackages and mark it with the X right of the entry. To remove it from your system you need to click on \"Apply\". You now see a summary of the changes that will be made and after a click on \"Ok\" they will be removed from your system."
-msgstr ""
-#: view_home_news_15
-msgid "Our blog"
 msgstr ""
 #: view_home_derivatives_42
 msgid " - specialised for webservices."

@@ -328,6 +328,7 @@ de:
   nothing_found_questionmark: Nichts gefunden?
   offer_new_category: Vorschlag einer neuen Kategorie
   order_number: 'Sortiernummer (kleinste Zahl zu erst):'
+  our_blog: Unser Blog
   package_list: zurück zur Paketliste
   packages: Pakete
   packages_for_ubuntu: Pakete für Ubuntu
@@ -362,7 +363,7 @@ de:
   spam_user_delete: Alle Spam-User gelöscht.
   start: Start
   start_vm: Virtuelle Maschine starten
-  start_vm_instructions: "So kannst du dich in die virtuelle Maschine einloggen (bitte etwas warten, bis die deb-Files kopiert wurden):"
+  start_vm_instructions: 'So kannst du dich in die virtuelle Maschine einloggen (bitte etwas warten, bis die deb-Files kopiert wurden):'
   start_vm_with_livecd_basis: Virtuelle Maschine auf Basis der LiveCD-Einstellungen starten (Zur Fehlersuche)
   statistics: Aufrufstatistik
   steps_for_distribution_setup: Schritte für das Einrichten einer neuen Distribution (bitte auf admin-System durchführen)
@@ -625,7 +626,6 @@ de:
   view_home_news_10: communtu-discuss-de+subscribe@googlegroups.com
   view_home_news_11: 'Diese Liste ist für eine Diskussion rund um die Plattform gedacht.  Hier kommt etwas mehr als einmal die Woche eine E-Mail über den Verteiler.   Die Nachrichten werden in einem '
   view_home_news_13: http://groups.google.com/group/communtu-discuss-de/topics?start=
-  view_home_news_15: Unser Blog
   view_home_news_16: Wir haben einen Blog, wo wir aktuelle Informationen zu Communtu eintragen. Hier wird ungefähr einmal die Woche etwas gepostet. Hier werden Ankündigungen und neue Features präsentiert.
   view_home_news_17: Zum Blog
   view_home_news_2: 'Um die Kommunikation mit unseren Nutzern zu verbessern, haben wir Mailinglisten eingerichtet:'
@@ -876,7 +876,7 @@ de:
   view_users_show_8: Nachrichten
   view_videos_edit_0: Video bearbeiten
   view_videos_show_0: 'Url:'
-  vm_running: 'virtuelle Maschine läuft'
+  vm_running: virtuelle Maschine läuft
   vm_running_under: 'virtuelle Maschine läuft unter: '
   wait_for_debs: auf Bau der Metapakete warten
   wait_for_release: auf offizielles Ubuntu-Release warten

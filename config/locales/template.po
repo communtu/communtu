@@ -775,6 +775,10 @@ msgstr "Take over bundles from parent"
 msgid " - Ubuntu Multimedie-Edition. Sie wird bei Communtu mitinstalliert, wenn du bei Audio, Film und/oder Grafik/Design \"erweitert\" anwählst."
 msgstr " - Ubuntu multimedia-edition. This will be automatically installed when \"advanced\" is checked at audio, film and/or graphic/design."
 
+#: our_blog
+msgid "Unser Blog"
+msgstr "Our blog"
+
 #: model_mailer_4
 msgid "Dein Passwort wurde zurückgesetzt."
 msgstr "Your password has been restored."
@@ -1336,10 +1340,6 @@ msgstr "Based on bundle:"
 #: view_home_faq_kde_02
 msgid "KPackageKit erreichst du über \"K-Menu -> Programme-> System -> Systemverwaltung -> Software-Verwaltung\". Hier wählst du rechts aus dem Ausklapp-Menü \"packages.communtu.org\" aus. Aus der Liste suchst du nun das Metapaket aus, welches du installiert hast und markierst es mit einem Klick auf das X rechts neben dem Eintrag. Um das Metapaket nun zu entfernen ist nur noch ein Klick auf \"Übernehmen\" notwendig. Es wird jetzt noch eine Übersicht der zu entfernenden Programme angezeigt und nach einem Klick auf \"Ok\" werden diese von deinem Computer gelöscht."
 msgstr "You can access KPackageKit via \"K-Menu -> Programs -> System -> Administration -> Software Management\". From the right dropdown menu you choose \"packages.communtu.org\". The list now appearing contains every metapackage available in Communtu. To uninstall a metapackage you click on one of the installed metapackages and mark it with the X right of the entry. To remove it from your system you need to click on \"Apply\". You now see a summary of the changes that will be made and after a click on \"Ok\" they will be removed from your system."
-
-#: view_home_news_15
-msgid "Unser Blog"
-msgstr "Our blog"
 
 #: view_home_derivatives_42
 msgid " - spezialisiert auf Webdienste."
@@ -3628,7 +3628,4 @@ msgstr "BUNDLE"
 #: install
 msgid "Installieren"
 msgstr "Install"
-
-#~ msgid "Repository anzeigen"
-#~ msgstr "show repository"
 

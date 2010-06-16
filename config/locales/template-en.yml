@@ -191,6 +191,7 @@ en:
   model_mailer_3: You asked for resetting your password
   migrate_bundles: Take over bundles from parent
   view_home_derivatives_11: " - Ubuntu multimedia-edition. This will be automatically installed when \"advanced\" is checked at audio, film and/or graphic/design."
+  our_blog: Our blog
   model_mailer_4: Your password has been restored.
   view_home_home_rating_headline: Best rated bundles
   view_home_derivatives_12: " provides multimedia package-sources. Because of legal reasons they cannot be offered by Ubuntu. Medibuntu is supported by Communtu (e. g. for audio or films)."
@@ -341,7 +342,6 @@ en:
   view_home_derivatives_41: Ubuntu ultimate - Ubuntu with many desktop-designs and applications.
   based_on_bundle: "Based on bundle:"
   view_home_faq_kde_02: You can access KPackageKit via "K-Menu -> Programs -> System -> Administration -> Software Management". From the right dropdown menu you choose "packages.communtu.org". The list now appearing contains every metapackage available in Communtu. To uninstall a metapackage you click on one of the installed metapackages and mark it with the X right of the entry. To remove it from your system you need to click on "Apply". You now see a summary of the changes that will be made and after a click on "Ok" they will be removed from your system.
-  view_home_news_15: Our blog
   view_home_derivatives_42: " - specialised for webservices."
   view_home_faq_02: A bundle is a compilation of software for a specific task you want to do with your computer.
   native: only Ubuntu

@@ -3,8 +3,7 @@
 '''
 Author: Timo Denissen
 E-Mail: timo@communtu.org
-About this program: This program is about removing multiple entries from the template.yml file.
-Todo: - GUI
+About this program: This program is for removing multiple entries from the template.yml file and manual string editing.
 '''
 
 import yaml
@@ -100,18 +99,28 @@ def edit_strings():
     search = raw_input('Enter the search string: ')
     print '\nSearching for string "' + search +'".\n'
     cache = {}
+    cache_value = {}
     count = 0
-    for key, value in template_dict.items():
+    for key, value in template_dict.iteritems():
         if search in key:
             count += 1
             cache[count] = [key]
+            cache_value[count] = [value]
             print count, key + ':', value
     print '\nFound string', '"' + search + '"', count, 'times.\n'
     ask_number = input('Which string do you want to edit? ')
-    newkey = raw_input ('Enter the new key: ')
     oldkey = cache[ask_number]
+    value_newkey = str(cache_value[ask_number])[2:-2]
+    newkey = raw_input ('Enter the new key: ')
     print oldkey, 'will be replaced with "' + newkey + '".'
     edit_files(oldkey, newkey)
+    template_yml = open('config/locales/template.yml', 'w')
+    template_dict[newkey] = str([value_newkey])[2:-2]
+    safe_file(template_dict_full, template_yml)
+    if raw_input('Do you want to edit more strings? y/n ') == 'y':
+        edit_strings()
+    else:
+        print 'Exit'
     
 '''Asking the user what to do'''
 open_file()
@@ -120,7 +129,6 @@ menu = raw_input('What do you want to do? ')
 if menu == '1':
     file_processing()
 elif menu == '2':
-#    edit_strings()
-    print 'Not working yet.'
+    edit_strings()
 else:
     print 'Exit'
