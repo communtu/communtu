@@ -359,7 +359,6 @@ class Package < BasePackage
     zombies.each do |p|
       mcs += Metacontent.find(:all,:conditions=>{:base_package_id=>p.id})
       metas += mcs.map{|mc| mc.metapackage}
-      p.destroy
     end
     # ... destroy the metacontents
     mcs.compact.uniq.each do |mc|
@@ -370,6 +369,9 @@ class Package < BasePackage
         m.modified = true
         m.version += ".1"
         m.save
+    end
+    zombies.each do |p|
+      p.destroy
     end
   end
 end

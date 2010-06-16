@@ -368,7 +368,9 @@ class Metapackage < BasePackage
                WHERE (base_packages.id, metacontents_distrs.distribution_id) NOT IN (SELECT package_id, distribution_id FROM package_distrs)")
       puts "Removing #{mcds.length} dangling packages from bundles"
       mcds.each do |mcd|
-        metas << mcd.metacontent.metapackage
+        if !mcd.metacontent.nil?
+          metas << mcd.metacontent.metapackage
+        end
         mcd.destroy
       end
       metas.compact.uniq.each do |m|

@@ -278,9 +278,11 @@ class MetapackagesController < ApplicationController
     if @metapackage.name == ""
       @metapackage.name = t(:new_bundle)
     end
-    if !is_admin? and !check_owner(@metapackage,current_user) then
-      redirect_to metapackage_path(@metapackage)
-      return
+    if !is_admin?
+      if !check_owner(@metapackage,current_user) then
+        redirect_to metapackage_path(@metapackage)
+        return
+      end
     end
     if @metapackage.cant_be_debianized then
       flash[:error] = t(:cant_debianized)
