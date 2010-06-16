@@ -369,7 +369,7 @@ class MetapackagesController < ApplicationController
   def edit_action
     action = params[:method]
     meta   = Metapackage.find(params[:id])
-    if !check_owner(meta,current_user) then
+    if !is_admin and !check_owner(meta,current_user) then
       redirect_to metapackage_path(meta)
       return
     end
