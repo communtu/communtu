@@ -64,7 +64,7 @@ class MetapackagesController < ApplicationController
   def edit
     @metapackage = Metapackage.find(params[:id])
     @meta_english_title = Translation.find(:first, :conditions => {:translatable_id => @metapackage.name_tid, :language_code => "en"})
-    if !is_admin and !check_owner(@metapackage,current_user) then
+    if !is_admin? and !check_owner(@metapackage,current_user) then
       redirect_to metapackage_path(@metapackage)
       return
     end
