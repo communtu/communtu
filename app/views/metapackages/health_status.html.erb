@@ -22,6 +22,17 @@
   </ul>
 <%end%>
 
+<h2><%=t(:bundles_without_debs)%></h2>
+<%if @bundles_without_debs.empty?%>
+  <%=t(:none)%>
+<%else%>
+  <ul>
+  <%for b in @bundles_without_debs%>
+   <li> <%=link_to b.name, metapackage_path(b)%></li>
+  <%end%>
+  </ul>
+<%end%>
+
 
 <h2><%=t(:failed_live_cds)%></h2>
 <%if @failed_live_cds.empty?%>
@@ -47,6 +58,17 @@
 <%end%>
 
 <h1><%=t(:health_status)%>: <%=t(:warnings)%></h1>
+
+<h2><%=t(:bundles_needing_deb_generation)%></h2>
+<%if @modified_bundles.empty?%>
+  <%=t(:none)%>
+<%else%>
+  <ul>
+  <%for b in @modified_bundles%>
+   <li> <%=link_to b.name, metapackage_path(b)%></li>
+  <%end%>
+  </ul>
+<%end%>
 
 <h2><%=t(:bundles_with_missing_packages)%></h2>
 <% Distribution.all.each do |d| %>
