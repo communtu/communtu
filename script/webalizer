@@ -1,5 +1,5 @@
 #!/bin/bash
-webalizer -o /home/communtu/webalizer/en-communtu /var/log/apache2/en-communtu.log
-webalizer -o /home/communtu/webalizer/de-communtu /var/log/apache2/de-communtu.log
-webalizer -o /home/communtu/webalizer/pack-communtu /var/log/apache2/pack-communtu.log
+webalizer -o /home/communtu/webalizer/en-communtu /var/log/apache2/en-communtu.log*
+webalizer -o /home/communtu/webalizer/de-communtu /var/log/apache2/de-communtu.log*
+webalizer -o /home/communtu/webalizer/pack-communtu /var/log/apache2/pack-communtu.log*
 exit
