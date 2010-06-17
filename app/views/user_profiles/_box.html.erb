@@ -1,4 +1,5 @@
-<div class="communtu_box">
+<% if logged_in? %>
+  <div class="communtu_box">
 	<div class="communtu_box_line">
 	<%=t(:settings)%>
 	</div>
@@ -11,3 +12,4 @@
          <%= link_to t(:change), user_user_profile_path(current_user) + "/settings" %>
  	    </div>
 </div>
+<% end %>
