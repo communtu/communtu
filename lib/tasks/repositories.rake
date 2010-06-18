@@ -70,6 +70,8 @@ namespace :livecd do
     ports = File.read("#{RAILS_ROOT}/config/kvm_ports").split("\n")
     admin_ports = [ports.pop,ports.pop]
     loop do
+      puts "ports: #{ports}"
+      puts "admin_ports: #{admin_ports}"
       Livecd.remaster_next(ports,admin_ports)
       sleep 10
     end
