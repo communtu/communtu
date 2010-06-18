@@ -27,8 +27,9 @@ class LivecdsController < ApplicationController
 
   def remaster_new
     @cd = Livecd.find(params[:id])
-    @cd.generate_sources
-    remaster
+    if !@cd.generate_sources.nil?
+      remaster
+    end
   end
 
   def index

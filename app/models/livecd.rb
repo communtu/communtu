@@ -213,15 +213,18 @@ class Livecd < ActiveRecord::Base
   def generate_sources
     bundle = self.metapackage
     user = self.users[0]
-    if !user.nil? and !bundle.nil?
-      user.distribution_id = self.distribution.id
-      user.derivative_id = self.derivative.id
-      user.architecture_id = self.architecture.id
-      user.license = self.license_type
-      user.security = self.security_type
-      user.profile_changed = true
-      self.srcdeb = RAILS_ROOT+"/"+user.install_bundle_sources(bundle)
-      self.save
+    if !user.nil?
+      if !bundle.nil?
+        user.distribution_id = self.distribution.id
+        user.derivative_id = self.derivative.id
+        user.architecture_id = self.architecture.id
+        user.license = self.license_type
+        user.security = self.security_type
+      end
+        user.profile_changed = true
+        self.srcdeb = RAILS_ROOT+"/"+user.install_bundle_sources(bundle)
+        self.save
+      end
     end
   end
   
