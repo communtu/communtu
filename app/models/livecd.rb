@@ -196,11 +196,13 @@ class Livecd < ActiveRecord::Base
     cd = Livecd.find_by_generated_and_generating_and_failed(false,false,false)
     if !cd.nil? then
       if !cd.users[0].nil? and cd.users[0].has_role?('administrator')
-        port = admin_ports.pop
-        admin_ports = [port] + admin_ports
+        port = admin_ports[0]
+        admin_ports.delete(port)
+        admin_ports.push(port)
       else
-        port = ports.pop
-        ports = [port] + ports
+        port = ports[0]
+        ports.delete(port)
+        ports.push(port)
       end
       cd.generating = true
       cd.save
