@@ -222,6 +222,7 @@ class Livecd < ActiveRecord::Base
         user.security = self.security_type
         self.srcdeb = RAILS_ROOT+"/"+user.install_bundle_sources(bundle)
       else
+        system "rm #{self.srcdeb}"
         self.srcdeb = RAILS_ROOT+"/"+user.install_sources
       end
       user.profile_changed = true
