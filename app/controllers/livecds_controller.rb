@@ -25,6 +25,13 @@ class LivecdsController < ApplicationController
     redirect_to :back
   end
 
+  def force_remaster
+    @cd = Livecd.find(params[:id])
+    @cd.generated = false
+    @cd.save
+    remaster
+  end
+  
   def remaster_new
     @cd = Livecd.find(params[:id])
     if !@cd.generate_sources.nil?

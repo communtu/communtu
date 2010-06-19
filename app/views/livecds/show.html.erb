@@ -17,6 +17,11 @@
 <p><%=t(:based_on_bundle)%> <%=link_to @cd.metapackage.name, metapackage_path(@cd.metapackage)%> </p>
 <% end %>
 <% if @cd.generated %>
+ <% if !File.exists?(@cd.iso_image) %>
+  <p><%= t(:iso_deleted) %>
+     <%= link_to t(:generate_cd), :action => 'force_remaster', :id => @cd.id %>
+     </p>
+ <% else %>
   <p><%= t(:creation_successful) %>, 
       <%= number_to_human_size(@cd.size) %>,
       <%= change_date_time(@cd.updated_at).to_s %></p>
@@ -37,6 +42,7 @@
       <li><%= link_to t(:usb_image), @cd.usb_url %></li>
     <% end %>
   </ul>
+ <% end %>
 <% end %>
 <% if @cd.generating %>
   <p><%= t(:creation_in_progress) %></p>

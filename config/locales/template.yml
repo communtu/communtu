@@ -230,6 +230,7 @@ de:
   invalid_activation_code_entered: Ungültiger Anderungscode eingegeben.
   invalid_activation_code_please_check_again: Ungültiger Anderungscode. Bitte den Code prüfen und nochmals versuchen. (Vielleicht hat dein Email-Programm einen Zeilenumbruch eingefügt?)
   invisible_distribution: Unsichtbare Distribution
+  iso_deleted: Die ISO-Datei wurde leider aus Platzgründen gelöscht.
   iso_image: ISO-Image (für CD/DVD)
   kommentieren: Kommentieren
   kontodaten: Konto 172 9375, Sparkasse Bremen, BLZ 290 501 01
