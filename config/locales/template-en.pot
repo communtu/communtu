@@ -1417,6 +1417,9 @@ msgstr ""
 #: view_users__user_1
 msgid "deactivate"
 msgstr ""
+#: iso_deleted
+msgid "The ISO-image has beed deleted due to lack of harddisk space."
+msgstr ""
 #: view_home_derivatives_6
 msgid "Software selection"
 msgstr ""
@@ -2362,14 +2365,14 @@ msgstr ""
 #: distribution
 msgid "Distribution"
 msgstr ""
-#: fine_selection
-msgid "Fine selection"
-msgstr ""
 #: natur_geist_und_technik
 msgid "Natur, Geist und Technik - Verein zur Förderung der Allgemeinbildung e.V."
 msgstr ""
 #: link_community
 msgid "http://ubuntuforums.org"
+msgstr ""
+#: fine_selection
+msgid "Fine selection"
 msgstr ""
 #: logfile_extract
 msgid "Extract from the logfile"

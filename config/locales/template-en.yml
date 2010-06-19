@@ -495,6 +495,7 @@ en:
   view_home_derivatives_5: "Each derivative under "
   achtung: Attention! Will be available soon at Communtu.
   view_users__user_1: deactivate
+  iso_deleted: The ISO-image has beed deleted due to lack of harddisk space.
   view_home_derivatives_6: Software selection
   controller_metapackages_cannot_destroy: Released bundles cannot be deleted.
   match_ubuntu: Match Ubuntu to your personal needs
@@ -821,9 +822,9 @@ en:
   view_packages__search_0: Search for packages
   lib_system_0: In order to use this feature you have to be logged in. Logging in via "Guest session" is also possible.
   logfile_extract: Extract from the logfile
+  fine_selection: Fine selection
   link_community: http://ubuntuforums.org
   natur_geist_und_technik: "Natur, Geist und Technik - Verein zur F\xC3\xB6rderung der Allgemeinbildung e.V."
-  fine_selection: Fine selection
   view_metapackages_show_modified: This bundle contains changes.
   controller_derivatives_1: Derivative created.
   lib_system_1: You are not privileged to do this.

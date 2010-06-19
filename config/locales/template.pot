@@ -1420,6 +1420,9 @@ msgstr ""
 #: view_users__user_1
 msgid "deaktivieren"
 msgstr ""
+#: iso_deleted
+msgid "Die ISO-Datei wurde leider aus Platzgründen gelöscht."
+msgstr ""
 #: view_home_derivatives_6
 msgid "Software-Auswahl"
 msgstr ""
@@ -1759,6 +1762,9 @@ msgstr ""
 #: view_user_mailer_forgot_password_0
 msgid ", um ein neues Passwort zu erhalten, folge dem Link:"
 msgstr ""
+#: view_sessions_new_3
+msgid "Benutzer auf diesem Computer dauerhaft anmelden"
+msgstr ""
 #: controller_repositories_3
 msgid "sources.list eingelesen."
 msgstr ""
@@ -1767,9 +1773,6 @@ msgid "Here should be an introduction to the admin area"
 msgstr ""
 #: packages_for_ubuntu
 msgid "Pakete für Ubuntu"
-msgstr ""
-#: view_sessions_new_3
-msgid "Benutzer auf diesem Computer dauerhaft anmelden"
 msgstr ""
 #: view_packages_edit_8
 msgid "Neuer Link auf ein Video"

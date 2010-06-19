@@ -1939,6 +1939,10 @@ msgstr "Attention! Will be available soon at Communtu."
 msgid "deaktivieren"
 msgstr "deactivate"
 
+#: iso_deleted
+msgid "Die ISO-Datei wurde leider aus Platzgründen gelöscht."
+msgstr "The ISO-image has beed deleted due to lack of harddisk space."
+
 #: view_home_derivatives_6
 msgid "Software-Auswahl"
 msgstr "Software selection"
@@ -2403,6 +2407,10 @@ msgstr "Repository updated."
 msgid ", um ein neues Passwort zu erhalten, folge dem Link:"
 msgstr ", to receive a new password, please folloe the link:"
 
+#: view_sessions_new_3
+msgid "Benutzer auf diesem Computer dauerhaft anmelden"
+msgstr "Log this user permanently in on this computer"
+
 #: controller_repositories_3
 msgid "sources.list eingelesen."
 msgstr "sources.list read."
@@ -2414,10 +2422,6 @@ msgstr "Here should be an introduction to the admin area"
 #: packages_for_ubuntu
 msgid "Pakete für Ubuntu"
 msgstr "Packages for Ubuntu"
-
-#: view_sessions_new_3
-msgid "Benutzer auf diesem Computer dauerhaft anmelden"
-msgstr "Log this user permanently in on this computer"
 
 #: view_packages_edit_8
 msgid "Neuer Link auf ein Video"
