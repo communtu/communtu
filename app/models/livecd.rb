@@ -192,6 +192,7 @@ class Livecd < ActiveRecord::Base
     self.save
   end
 
+  # remaster the next non-generated liveCD (called from rake daemon)
   def self.remaster_next(ports,admin_ports)
     cd = Livecd.find_by_generated_and_generating_and_failed(false,false,false)
     if !cd.nil? then
@@ -210,6 +211,7 @@ class Livecd < ActiveRecord::Base
     end
   end
 
+  # re-generate srcdeb (needed in case that srcdeb is wrong for some reasons)
   def generate_sources
     bundle = self.metapackage
     user = self.users[0]
@@ -223,7 +225,21 @@ class Livecd < ActiveRecord::Base
         self.srcdeb = RAILS_ROOT+"/"+user.install_bundle_sources(bundle)
       else
         system "rm #{self.srcdeb}"
-        self.srcdeb = RAILS_ROOT+"/"+user.install_sources
+        # get list of metapackages from installdeb
+        depnames = Deb.deb_get_dependencies(self.installdeb)
+        deps = depnames.map{|n| Metapackage.find_by_name(n)}
+        name = BasePackage.debianize_name("communtu-add-sources-"+self.login)
+        version = self.profile_version.to_s
+        description = I18n.t(:controller_suggestion_2)+self.login
+        self.srcdeb = Deb.makedeb_for_source_install(name,
+                 version,
+                 description,
+                 deps,
+                 self.distribution,
+                 self.derivative,
+                 self.license,
+                 self.security,
+                 self.architecture)
       end
       user.profile_changed = true
       self.save

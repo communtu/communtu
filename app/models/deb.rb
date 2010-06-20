@@ -385,6 +385,25 @@ class Deb < ActiveRecord::Base
     return nil
   end
   
+  def self.deb_get_dependencies(file)
+    # extract control file
+    tmpdir = IO.popen("mktemp -d").read.chomp
+    Dir.chdir tmpdir
+    system "dpkg-deb -e #{file}"
+    f=File.open("DEBIAN/control")
+    Dir.chdir RAILS_ROOT
+    # empty set of deps, in case there is no Depends: section
+    deps = Set.[]
+    # get dependencies from control file
+    f.read.each do |line|
+      if !(ind=line.index("Depends: ")).nil?
+        line.chomp!
+        deps = Set.new(line[ind+9,line.length].split(", "))
+      end
+    end
+    return deps
+  end
+
   def verify_arch(arch)
     # get position of deb file from reprepro
     f=IO.popen("#{REPREPRO} listfilter #{self.codename} \"Package (== #{self.name})\" | grep #{arch.name}")
@@ -401,21 +420,8 @@ class Deb < ActiveRecord::Base
     if file.nil?
       return ("Could not find " + filename_prefix + "*"+ arch.name + ".deb")
     end
-    # extract control file
-    tmpdir = IO.popen("mktemp -d").read.chomp
-    Dir.chdir tmpdir
-    system "dpkg-deb -e #{file}"
-    f=File.open("DEBIAN/control")
-    Dir.chdir RAILS_ROOT
     needed_deps = Set.new(self.dependencies(arch))
-    actual_deps = Set.[]
-    # get dependencies from control file
-    f.read.each do |line|
-      if !(ind=line.index("Depends: ")).nil?
-        line.chomp!
-        actual_deps = Set.new(line[ind+9,line.length].split(", "))
-      end
-    end
+    actual_deps = Deb.deb_get_dependencies(file)
     if actual_deps==needed_deps
       return "correct"
     else
