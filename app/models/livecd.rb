@@ -231,7 +231,7 @@ class Livecd < ActiveRecord::Base
         name = BasePackage.debianize_name("communtu-add-sources-"+user.login)
         version = user.profile_version.to_s
         description = I18n.t(:controller_suggestion_2)+user.login
-        self.srcdeb = Deb.makedeb_for_source_install(name,
+        srcfile = Deb.makedeb_for_source_install(name,
                  version,
                  description,
                  deps,
@@ -241,6 +241,7 @@ class Livecd < ActiveRecord::Base
                  self.security_type,
                  self.architecture)
       end
+      self.srcdeb = RAILS_ROOT+"/"+srcfile
       user.profile_changed = true
       self.save
     end
