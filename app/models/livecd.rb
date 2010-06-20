@@ -228,17 +228,17 @@ class Livecd < ActiveRecord::Base
         # get list of metapackages from installdeb
         depnames = Deb.deb_get_dependencies(self.installdeb)
         deps = depnames.map{|n| Metapackage.find_by_name(n)}
-        name = BasePackage.debianize_name("communtu-add-sources-"+self.login)
-        version = self.profile_version.to_s
-        description = I18n.t(:controller_suggestion_2)+self.login
+        name = BasePackage.debianize_name("communtu-add-sources-"+user.login)
+        version = user.profile_version.to_s
+        description = I18n.t(:controller_suggestion_2)+user.login
         self.srcdeb = Deb.makedeb_for_source_install(name,
                  version,
                  description,
                  deps,
                  self.distribution,
                  self.derivative,
-                 self.license,
-                 self.security,
+                 self.license_type,
+                 self.security_type,
                  self.architecture)
       end
       user.profile_changed = true
