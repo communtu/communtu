@@ -165,6 +165,7 @@ class Livecd < ActiveRecord::Base
     end
     system "dotlockfile -u #{RAILS_ROOT}/livecd#{port}_lock"
     # store size and inform user via email
+    ActiveRecord::Base.connection.reconnect! # needed after a possibly long time
     if !self.failed then
       self.generated = true
       self.size = 0
