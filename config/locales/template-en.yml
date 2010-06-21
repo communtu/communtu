@@ -148,7 +148,7 @@ en:
   view_users__mailbox_list_3: "sent messages "
   view_repositories_migrate_2: " to distribution"
   controller_suggestion_8: Ubuntu post-installation for users
-  bundel_edit: edit bundle
+  bundel_edit: Edit bundle
   english_name: "English name:"
   errors: Error
   view_packages_new_3: Version
@@ -178,7 +178,7 @@ en:
   no_admin: You are not an administrator!
   view_metapackages_new_4: Install by default
   create_kvm_image: create <a href="http://wiki.ubuntu.com/kvm">KVM-image</a> (virtual machine)
-  bundles_with_missing_debs: Bundles with failed deb-builds
+  bundles_with_missing_debs: Bundles with missing deb-builds
   model_mailer_0: Welcome to Communtu
   licence: "Licence:"
   model_mailer_1: Query via formular
@@ -355,7 +355,7 @@ en:
   view_home_derivatives_44: " - minimalist and fast version of Ubuntu for older PCs."
   view_home_faq_04: There are two ways to install a bundle.<p> The first way is to click on <b>Download</b>. You will now be presented a small formular in which you can choose the tasks you want to perform with your computer. Next you have to choose which version of Ubuntu you want to use (in most cases it will be detected correctly and you only have to pick it from the list) and which GUI you use (Gnome = Ubuntu, KDE = Kubuntu, XFCE = Xubuntu). The last two steps are about the license and the security of the progams (which sources you want to be added and if the programs shall be open or closed source). You can now click on "Save rough selection and install" to get to the end and install the preselected bundles or you can click on "Save rough selection" to make a more detailed choice of the bundles being installed. Finally you need to add the Communtu sources to your system and, when this is finished, you only have to click on "Install" and the chosen bundles will be installed.<p> The second way is to click on <b>Bundle</b> and then on "Published bundles". You now see a list with every bundle created in Communtu. Here you can install a bundle directly with a click on "Install through metapackage", assuming you have added the sources earlier. If not, a click on "Add sources" will add them to your system.
   view_metapackages_show_deb_error: While creating metapackages, an error occurred. We'll solve that problem as fast as possible.
-  view_user_profiles__profile_data_1: On this page you can enter the basic settings of your computer.
+  view_user_profiles__profile_data_1: "On this page you can change your computer's settings. "
   view_home_derivatives_45: http://wiki.ubuntuusers.de/Server_Installation (German)
   controller_metapackages_not_allowed: Only the owner of the bundle is allowed to perform this action.
   view_home_faq_05: How can I create a bundle?
@@ -550,12 +550,12 @@ en:
   controller_users_6: Userdata changed and account made permanent.
   chat_channel: en-communtu
   model_user_meta_tabz_2: Ubuntu packages
-  bundles_with_missing_packages: "B\xC3\xBCndel with missing packages (due to changing the distribution) (may be replaced with similar packages)"
+  bundles_with_missing_packages: Bundle with missing packages due to changing the distribution (may be replaced with similar packages)
   view_users_edit_9: "  With a click on \"save\" this account will be made permanent."
   view_metapackages_show_14: " Actions:&nbsp;&nbsp;"
   controller_metapackages_bundle_not_found: Bundle not found.
   model_user_meta_tabz_3: Published bundles
-  packages: packages
+  packages: Packages
   controller_users_8: user deactivated
   new_passwd: new password
   view_metapackages_show_15: "Edit "
@@ -678,11 +678,11 @@ en:
   view_passwords_edit_1: "    confirm password:"
   view_packages_show_11: "Weblinks:"
   view_passwords_edit_2: receive new password
-  view_user_profiles__profile_data_10: " Only allow Ubuntu-sources (\"main/restricted\", very secure)"
+  view_user_profiles__profile_data_10: " Allow only Ubuntu-sources (\"main/restricted\", very secure)"
   view_user_profiles__profile_data_11: " Allow community-sources (\"universe/multiverse\", secure, more programs/better comfort):"
   view_home_icons_10: program
   view_packages_show_8: "Popularity:"
-  view_home_home_rating_link: rate bundles
+  view_home_home_rating_link: Rate bundles
   new_bundle: New bundle
   view_user_profiles__profile_data_12: " Allow every source (slightly insecure but with even more programs/better comfort. Attention: programs installed from foreign sources can do harm to your computer!):"
   view_packages_show_9: "/5 stars&nbsp;&nbsp; "
@@ -696,7 +696,7 @@ en:
   view_metapackages__metalist_2: Standard
   view_packages_show_15: source/repository
   offer_new_category: Suggestion of a new category
-  view_user_profiles__installation_1: In order to install, you have to make selections under "Software selection".
+  view_user_profiles__installation_1: In order to install software, you have to choose at least one package or bundle under "Software selection".
   view_packages__deps_1: "          Only for "
   view_derivatives_show_2: "dialog-program:"
   controller_packages_1: Package created
@@ -795,7 +795,7 @@ en:
   start_vm: start virtual machine
   view_user_profiles__sources_1: The soon be installed programs and packages are shown and ordered by the appropriate sources so you can see why some sources will be added.
   model_package_1: free+proprietary
-  view_user_profiles__profile_rating_0: Detailed choice of the programs and bundles that shall be installed
+  view_user_profiles__profile_rating_0: Selection of programs and bundles that shall be installed
   view_home_impressum_4: Bauernstr. 2
   model_package_2: unknown
   view_home_icons_0: icons used in Communtu

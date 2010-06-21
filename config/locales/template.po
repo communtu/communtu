@@ -609,7 +609,7 @@ msgstr "Ubuntu post-installation for users"
 
 #: bundel_edit
 msgid "Bündel bearbeiten"
-msgstr "edit bundle"
+msgstr "Edit bundle"
 
 #: english_name
 msgid "Englischer Name:"
@@ -725,7 +725,7 @@ msgstr "create <a href=\"http://wiki.ubuntu.com/kvm\">KVM-image</a> (virtual mac
 
 #: bundles_with_missing_debs
 msgid "Bündel mit fehlenden deb-Builds"
-msgstr "Bundles with failed deb-builds"
+msgstr "Bundles with missing deb-builds"
 
 #: model_mailer_0
 msgid "Herzlich Willkommen bei Communtu"
@@ -1391,7 +1391,7 @@ msgstr "There are two ways to install a bundle.<p> The first way is to click on 
 
 #: view_user_profiles__profile_data_1
 msgid "Auf dieser Seite kannst du die Grundeinstellungen deines Computers angeben. "
-msgstr "On this page you can enter the basic settings of your computer."
+msgstr "On this page you can change your computer's settings. "
 
 #: view_metapackages_show_deb_error
 msgid "Beim Erzeugen von Metapaketen ist ein Fehler aufgetreten. Wir kümmern uns um das Problem."
@@ -2155,7 +2155,7 @@ msgstr "Ubuntu packages"
 
 #: bundles_with_missing_packages
 msgid "Bündel mit Paketen, die bei Übergang auf neue Distribution fehlen (ggf. durch andere ersetzen)"
-msgstr "Bündel with missing packages (due to changing the distribution) (may be replaced with similar packages)"
+msgstr "Bundle with missing packages due to changing the distribution (may be replaced with similar packages)"
 
 #: view_users_edit_9
 msgid "  Durch Klicken auf \"Speichern\" wird das Nutzerkonto zugleich dauerhaft gemacht."
@@ -2175,7 +2175,7 @@ msgstr "Published bundles"
 
 #: packages
 msgid "Pakete"
-msgstr "packages"
+msgstr "Packages"
 
 #: controller_users_8
 msgid "Benutzer deaktiviert"
@@ -2657,7 +2657,7 @@ msgstr "Weblinks:"
 
 #: view_user_profiles__profile_data_10
 msgid " Nur Ubuntuquellen zulassen (\"main/restricted\", sehr sicher: Sicherheits-Updates von Ubuntu)"
-msgstr " Only allow Ubuntu-sources (\"main/restricted\", very secure)"
+msgstr " Allow only Ubuntu-sources (\"main/restricted\", very secure)"
 
 #: view_passwords_edit_2
 msgid "Neues Passwort erhalten"
@@ -2681,7 +2681,7 @@ msgstr "Popularity:"
 
 #: view_home_home_rating_link
 msgid "Zum Bündel bewerten"
-msgstr "rate bundles"
+msgstr "Rate bundles"
 
 #: new_bundle
 msgid "Neues Bündel"
@@ -2733,7 +2733,7 @@ msgstr " Free software (sources are open and further development is allowed)"
 
 #: view_user_profiles__installation_1
 msgid "Um etwas installieren zu können, musst du zunächst unter \"Softwareauswahl\" etwas auswählen."
-msgstr "In order to install, you have to make selections under \"Software selection\"."
+msgstr "In order to install software, you have to choose at least one package or bundle under \"Software selection\"."
 
 #: offer_new_category
 msgid "Vorschlag einer neuen Kategorie"
@@ -3125,7 +3125,7 @@ msgstr "start virtual machine"
 
 #: view_user_profiles__profile_rating_0
 msgid "Auswahl der zu installierenden Programmbündel und Programme"
-msgstr "Detailed choice of the programs and bundles that shall be installed"
+msgstr "Selection of programs and bundles that shall be installed"
 
 #: model_package_1
 msgid "Frei+proprietär"

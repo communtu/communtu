@@ -458,7 +458,7 @@ msgstr ""
 msgid "Ubuntu post-installation for users"
 msgstr ""
 #: bundel_edit
-msgid "edit bundle"
+msgid "Edit bundle"
 msgstr ""
 #: english_name
 msgid "English name:"
@@ -542,7 +542,7 @@ msgstr ""
 msgid "create <a href=\"http://wiki.ubuntu.com/kvm\">KVM-image</a> (virtual machine)"
 msgstr ""
 #: bundles_with_missing_debs
-msgid "Bundles with failed deb-builds"
+msgid "Bundles with missing deb-builds"
 msgstr ""
 #: model_mailer_0
 msgid "Welcome to Communtu"
@@ -1019,7 +1019,7 @@ msgstr ""
 msgid "While creating metapackages, an error occurred. We'll solve that problem as fast as possible."
 msgstr ""
 #: view_user_profiles__profile_data_1
-msgid "On this page you can enter the basic settings of your computer."
+msgid "On this page you can change your computer's settings. "
 msgstr ""
 #: view_home_derivatives_45
 msgid "http://wiki.ubuntuusers.de/Server_Installation (German)"
@@ -1574,7 +1574,7 @@ msgstr ""
 msgid "Ubuntu packages"
 msgstr ""
 #: bundles_with_missing_packages
-msgid "Bündel with missing packages (due to changing the distribution) (may be replaced with similar packages)"
+msgid "Bundle with missing packages due to changing the distribution (may be replaced with similar packages)"
 msgstr ""
 #: view_users_edit_9
 msgid "  With a click on \"save\" this account will be made permanent."
@@ -1589,7 +1589,7 @@ msgstr ""
 msgid "Published bundles"
 msgstr ""
 #: packages
-msgid "packages"
+msgid "Packages"
 msgstr ""
 #: controller_users_8
 msgid "user deactivated"
@@ -1949,7 +1949,7 @@ msgstr ""
 msgid "receive new password"
 msgstr ""
 #: view_user_profiles__profile_data_10
-msgid " Only allow Ubuntu-sources (\"main/restricted\", very secure)"
+msgid " Allow only Ubuntu-sources (\"main/restricted\", very secure)"
 msgstr ""
 #: view_user_profiles__profile_data_11
 msgid " Allow community-sources (\"universe/multiverse\", secure, more programs/better comfort):"
@@ -1961,7 +1961,7 @@ msgstr ""
 msgid "Popularity:"
 msgstr ""
 #: view_home_home_rating_link
-msgid "rate bundles"
+msgid "Rate bundles"
 msgstr ""
 #: new_bundle
 msgid "New bundle"
@@ -2003,7 +2003,7 @@ msgstr ""
 msgid "Suggestion of a new category"
 msgstr ""
 #: view_user_profiles__installation_1
-msgid "In order to install, you have to make selections under \"Software selection\"."
+msgid "In order to install software, you have to choose at least one package or bundle under \"Software selection\"."
 msgstr ""
 #: view_packages__deps_1
 msgid "          Only for "
@@ -2300,7 +2300,7 @@ msgstr ""
 msgid "free+proprietary"
 msgstr ""
 #: view_user_profiles__profile_rating_0
-msgid "Detailed choice of the programs and bundles that shall be installed"
+msgid "Selection of programs and bundles that shall be installed"
 msgstr ""
 #: view_home_impressum_4
 msgid "Bauernstr. 2"
