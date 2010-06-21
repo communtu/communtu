@@ -111,7 +111,7 @@ class Livecd < ActiveRecord::Base
     fullname = self.fullname
     # need to generate iso, use lock in order to prevent parallel generation of multiple isos
     begin
-        safe_system "dotlockfile -r 1000 #{RAILS_ROOT}/livecd#{port}_lock"
+        safe_system "dotlockfile -p -r 1000 #{RAILS_ROOT}/livecd#{port}_lock"
         self.generating = true
         self.save
         # log to log/livecd.log
