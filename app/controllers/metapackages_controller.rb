@@ -313,6 +313,12 @@ class MetapackagesController < ApplicationController
       flash[:error] = t(:controller_metapackages_cannot_destroy)
       return  
     end
+    m = Metacontent.find(:first,:conditions => ["base_package_id = ?",metapackage.id])
+    if m != nil
+      flash[:error] = t(:metapackages_cannot_destroy)
+      redirect_to metapackage_path(metapackage)
+      return
+    end
     @translation_name = Translation.find(:all, :conditions => { :translatable_id => metapackage.name_tid })
     m = @translation_name.length
     e = 0
@@ -389,10 +395,14 @@ class MetapackagesController < ApplicationController
             redirect_to metapackage_path(meta)
           end
         elsif action == "delete"
-            if !meta.is_published?
+             m = Metacontent.find(:first,:conditions => ["base_package_id = ?",meta.id])
+            if !meta.is_published? and m == nil
               meta.destroy
+	      redirect_to (user_path(current_user) + "/metapackages/0")
+	    else            
+              flash[:error] = t(:metapackages_cannot_destroy)
+	      redirect_to metapackage_path(meta)
             end
-            redirect_to (user_path(current_user) + "/metapackages/0")
         else    
             redirect_to metapackage_path(meta)
         end

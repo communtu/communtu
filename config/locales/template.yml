@@ -270,6 +270,7 @@ de:
   match_ubuntu: Ubuntu-Linux an die individuellen Bedürfnisse anpassen
   match_with_communtu: Communtu - gemeinsam Ubuntu-Linux an individuelle Bedürfnisse anpassen
   metacart_choose: Füge Programme zu deinem Bündel hinzu.
+  metapackages_cannot_destroy: Das Bündel kann nicht gelöscht werden, da es noch in einem anderen verwendet wird.
   migrate: Migrieren
   migrate_bundles: Bündel von Vorgänger übernehmen
   migrate_repositories: Repositories von Vorgänger übernehmen

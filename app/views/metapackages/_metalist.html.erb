@@ -62,7 +62,7 @@
 	</td>
 	<td class="<%= css %>" valign="middle">
 		<% if !metapackage.is_published? and (metapackage.user_id == current_user.id or is_admin?) %>
-			<%= link_to (image_tag("edit-delete-small.png", :alt=>"",:title=>"", :border=>"0")), '/metapackages/' + metapackage.id.to_s, :method=>"delete"%>
+			<%= link_to (image_tag("edit-delete-small.png", :alt=>"",:title=>"", :border=>"0")), '/metapackages/' + metapackage.id.to_s, :confirm => t(:are_you_sure), :method=>"delete"%>
 		<%end%>
 	</td>
 	<% end %>
