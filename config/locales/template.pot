@@ -1726,14 +1726,14 @@ msgstr ""
 #: view_packages_edit_2
 msgid "Icon"
 msgstr ""
+#: view_sessions_new_0
+msgid "Anmelden mit Benutzernamen und Passwort:"
+msgstr ""
 #: controller_repositories_0
 msgid "Repositorys"
 msgstr ""
 #: view_packages_edit_3
 msgid "&nbsp;&nbsp;Neues Icon: "
-msgstr ""
-#: view_sessions_new_0
-msgid "Anmelden mit Benutzernamen und Passwort:"
 msgstr ""
 #: controller_repositories_1
 msgid "Repository erzeugt."
@@ -2280,6 +2280,9 @@ msgid "AG Communtu"
 msgstr ""
 #: architectures
 msgid "Architekturen"
+msgstr ""
+#: metapackages_cannot_destroy
+msgid "Das Bündel kann nicht gelöscht werden, da es noch in einem anderen verwendet wird."
 msgstr ""
 #: view_rating_show_title_ratings_count
 msgid "(Basierend auf {{votes}} Bewertung(en))"

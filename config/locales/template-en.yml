@@ -788,6 +788,7 @@ en:
   view_user_profiles__sources_0: Sources for the soon be installed programs
   view_home_impressum_2: AG Communtu
   architectures: Architectures
+  metapackages_cannot_destroy: This bundle cannot be deleted as it is used in an other bundle.
   view_rating_show_title_ratings_count: (Based on {{votes}} rating(s))
   controller_sent_2: message successfully send
   model_package_0: Free software
@@ -823,8 +824,8 @@ en:
   lib_system_0: In order to use this feature you have to be logged in. Logging in via "Guest session" is also possible.
   logfile_extract: Extract from the logfile
   fine_selection: Fine selection
-  link_community: http://ubuntuforums.org
   natur_geist_und_technik: "Natur, Geist und Technik - Verein zur F\xC3\xB6rderung der Allgemeinbildung e.V."
+  link_community: http://ubuntuforums.org
   view_metapackages_show_modified: This bundle contains changes.
   controller_derivatives_1: Derivative created.
   lib_system_1: You are not privileged to do this.

@@ -2359,6 +2359,10 @@ msgstr "The following packages could not be migrated:"
 msgid "Icon"
 msgstr "Icon"
 
+#: view_sessions_new_0
+msgid "Anmelden mit Benutzernamen und Passwort:"
+msgstr "Log in with username and password:"
+
 #: controller_repositories_0
 msgid "Repositorys"
 msgstr "repositories"
@@ -2366,10 +2370,6 @@ msgstr "repositories"
 #: view_packages_edit_3
 msgid "&nbsp;&nbsp;Neues Icon: "
 msgstr "&nbsp;&nbsp;New icon: "
-
-#: view_sessions_new_0
-msgid "Anmelden mit Benutzernamen und Passwort:"
-msgstr "Log in with username and password:"
 
 #: controller_repositories_1
 msgid "Repository erzeugt."
@@ -3098,6 +3098,10 @@ msgstr "AG Communtu"
 #: architectures
 msgid "Architekturen"
 msgstr "Architectures"
+
+#: metapackages_cannot_destroy
+msgid "Das Bündel kann nicht gelöscht werden, da es noch in einem anderen verwendet wird."
+msgstr "This bundle cannot be deleted as it is used in an other bundle."
 
 #: view_rating_show_title_ratings_count
 msgid "(Basierend auf {{votes}} Bewertung(en))"

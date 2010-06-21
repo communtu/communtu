@@ -2278,6 +2278,9 @@ msgstr ""
 #: architectures
 msgid "Architectures"
 msgstr ""
+#: metapackages_cannot_destroy
+msgid "This bundle cannot be deleted as it is used in an other bundle."
+msgstr ""
 #: view_rating_show_title_ratings_count
 msgid "(Based on {{votes}} rating(s))"
 msgstr ""
@@ -2365,11 +2368,11 @@ msgstr ""
 #: distribution
 msgid "Distribution"
 msgstr ""
-#: natur_geist_und_technik
-msgid "Natur, Geist und Technik - Verein zur Förderung der Allgemeinbildung e.V."
-msgstr ""
 #: link_community
 msgid "http://ubuntuforums.org"
+msgstr ""
+#: natur_geist_und_technik
+msgid "Natur, Geist und Technik - Verein zur Förderung der Allgemeinbildung e.V."
 msgstr ""
 #: fine_selection
 msgid "Fine selection"
