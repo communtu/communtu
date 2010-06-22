@@ -1,6 +1,6 @@
 <h1><%=t(:health_status)%>: <%=t(:errors)%></h1>
 
-<h2><%=t(:bundles_with_missing_debs)%></h2>
+<h2><%=t(:bundles_with_missing_debs)%> (<%=@bundles_with_missing_debs.length%>)</h2>
 <%if @bundles_with_missing_debs.empty?%>
   <%=t(:none)%>
 <%else%>
@@ -11,7 +11,7 @@
   </ul>
 <%end%>
 
-<h2><%=t(:bundles_with_errors)%></h2>
+<h2><%=t(:bundles_with_errors)%> (<%=@bundles_with_errors.length%>)</h2>
 <%if @bundles_with_errors.empty?%>
   <%=t(:none)%>
 <%else%>
@@ -22,7 +22,7 @@
   </ul>
 <%end%>
 
-<h2><%=t(:bundles_without_debs)%></h2>
+<h2><%=t(:bundles_without_debs)%> (<%=@bundles_without_debs.length%>)</h2>
 <%if @bundles_without_debs.empty?%>
   <%=t(:none)%>
 <%else%>
@@ -34,7 +34,7 @@
 <%end%>
 
 
-<h2><%=t(:failed_live_cds)%></h2>
+<h2><%=t(:failed_live_cds)%> (<%=@failed_live_cds.length%>)</h2>
 <%if @failed_live_cds.empty?%>
   <%=t(:none)%>
 <%else%>
@@ -46,7 +46,7 @@
 <%end%>
 
 
-<h2><%=t(:repositories_incompletely_read)%></h2>
+<h2><%=t(:repositories_incompletely_read)%> (<%=@repositories_incompletely_read.length%>)</h2>
 <%if @repositories_incompletely_read.empty?%>
   <%=t(:none)%>
 <%else%>
@@ -59,7 +59,7 @@
 
 <h1><%=t(:health_status)%>: <%=t(:warnings)%></h1>
 
-<h2><%=t(:bundles_needing_deb_generation)%></h2>
+<h2><%=t(:bundles_needing_deb_generation)%> (<%=@modified_bundles.length%>)</h2>
 <%if @modified_bundles.empty?%>
   <%=t(:none)%>
 <%else%>
@@ -70,7 +70,8 @@
   </ul>
 <%end%>
 
-<h2><%=t(:bundles_with_missing_packages)%></h2>
+<% count =  Distribution.all.map{|d| if @bundles_with_missing_packages[d].nil? then 0 else @bundles_with_missing_packages[d].length end}.sum%>
+<h2><%=t(:bundles_with_missing_packages)%> (<%=count%>)</h2>
 <% Distribution.all.each do |d| %>
 <%if !@bundles_with_missing_packages[d].nil? and !@bundles_with_missing_packages[d].empty?%>
   <ul>
@@ -89,7 +90,7 @@
   </ul>
 <%end%>
 
-<h2><%=t(:repositories_without_packages)%></h2>
+<h2><%=t(:repositories_without_packages)%> (<%=@repositories_without_packages.length%>)</h2>
 <%if @repositories_without_packages.empty?%>
   <%=t(:none)%>
 <%else%>
