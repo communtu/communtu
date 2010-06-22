@@ -241,8 +241,8 @@ class Livecd < ActiveRecord::Base
                  self.license_type,
                  self.security_type,
                  self.architecture)
+        self.srcdeb = RAILS_ROOT+"/"+srcfile
       end
-      self.srcdeb = RAILS_ROOT+"/"+srcfile
       user.profile_changed = true
       self.save
     end
