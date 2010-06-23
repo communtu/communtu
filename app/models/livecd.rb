@@ -237,7 +237,9 @@ class Livecd < ActiveRecord::Base
         user.security = self.security_type
         self.srcdeb = RAILS_ROOT+"/"+user.install_bundle_sources(bundle)
       else
-        system "rm #{self.srcdeb}"
+        if File.exists?(self.srcdeb)
+          system "rm #{self.srcdeb}"
+        end
         # get list of metapackages from installdeb
         depnames = Deb.deb_get_dependencies(self.installdeb)
         deps = depnames.map{|n| Metapackage.all.select{|m| m.debian_name==n}.first}.compact

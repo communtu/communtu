@@ -1,0 +1,9 @@
+# Stop the service
+sudo /etc/init.d/apt-cacher stop
+# Delete old cache
+sudo rm -rf /var/cache/apt-cacher/*
+# Make the new cache hierarchy, and set its ownership properly
+sudo mkdir -p /var/cache/apt-cacher/{headers,import,packages,private,temp}
+sudo chown -R www-data:www-data /var/cache/apt-cacher
+# Restart the service
+sudo /etc/init.d/apt-cacher start
