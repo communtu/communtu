@@ -4,12 +4,14 @@
 
 <table width="100%">
 	<tr><td width="70%" valign="top">
-			<span class="headline">   <%=h @metapackage.name %>
-</span> 	<%= link_to image_tag("/images/install.png", :size => "18x18", :border => "0", :title => t(:view_metapackages__metalist_14), :alt => t(:install2)), "apt://#{@metapackage.debian_name}" %>
-            <%= link_to image_tag("/images/sources.jpg", :size => "18x18", :border => "0", :title => t(:add_sources), :alt => t(:sources)), "/users/#{current_user.id}/suggestion/install_bundle_sources/#{@metapackage.id}" %>
+			<span class="headline">   <%=h @metapackage.name %> </span> 
+            
+            <span style="position: relative; left: 350px;"><%= link_to image_tag("/images/22x22/download-deb.png", :size => "22x22", :border => "0", :title => t(:view_metapackages__metalist_14), :alt => t(:install2)), "apt://#{@metapackage.debian_name}" %>
+            <%= link_to image_tag("/images/sources.jpg", :size => "22x22", :border => "0", :title => t(:add_sources), :alt => t(:sources)), "/users/#{current_user.id}/suggestion/install_bundle_sources/#{@metapackage.id}" %>
             <% if current_user.distribution_id<7 && !current_user.anonymous? %>
-              <%= link_to image_tag("/images/cd.png", :size => "18x18", :border => "0", :title => t(:create_your_livedvd), :alt => t(:create_your_livedvd)), "/users/#{current_user.id}/user_profile/bundle_to_livecd/#{@metapackage.id}" %>
+              <%= link_to image_tag("/images/22x22/cd.png", :size => "22x22", :border => "0", :title => t(:create_your_livedvd), :alt => t(:create_your_livedvd)), "/users/#{current_user.id}/user_profile/bundle_to_livecd/#{@metapackage.id}" %>
             <%end%>
+        </span>
 <% if editing_metapackage? %>
                         <%= link_to_remote((image_tag("/images/add.png", :size => "18x18", :border => "0", :title =>t(:add_to_bundle), :alt => t(:add_to_bundle)) + ""),
                                 :url => user_path(current_user) + "/cart/add_to_cart_box/" + @metapackage.id.to_s,\
