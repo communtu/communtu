@@ -196,7 +196,18 @@ class Livecd < ActiveRecord::Base
   # remaster the next non-generated liveCD (called from rake daemon)
   def self.remaster_next(ports,admin_ports)
     cd = Livecd.find_by_generated_and_generating_and_failed(false,false,false)
+    # no current liveCD generation? 
+    if cd.nil? and Dir.glob("livecd22*lock").empty?
+      # ... then re-generate old ones
+      cd = Livecd.find(:first,:conditions=>{:failed=>true},:order => "updated_at ASC")
+      if !cd.nil? then
+        cd.generate_sources
+        cd.failed = false
+        cd.log = nil
+      end
+    end
     if !cd.nil? then
+      # get next port (use special ports for admins)
       if !cd.users[0].nil? and cd.users[0].has_role?('administrator')
         port = admin_ports[0]
         admin_ports.delete(port)
@@ -206,6 +217,7 @@ class Livecd < ActiveRecord::Base
         ports.delete(port)
         ports.push(port)
       end
+      # generate CD
       cd.generating = true
       cd.save
       cd.fork_remaster(port)
