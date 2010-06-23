@@ -1182,8 +1182,8 @@ a.download:hover, a.download:active{
 /* STANDARD */
 
 button:hover, .buttons a:hover{
-    background-color:#dff4ff;
-    border:1px solid #c2e1ef;
+    background-color:#dcaf99;
+    border:1px solid #FBF8F7;
     color:#336699;
 }
 .buttons a:active{
