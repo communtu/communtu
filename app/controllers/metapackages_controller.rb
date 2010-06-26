@@ -75,6 +75,12 @@ class MetapackagesController < ApplicationController
     @name_english = if @metapackage.name_english == "" then "new bundle" else @metapackage.name_english end
     @description = if @metapackage.description.nil? then "" else @metapackage.description end
     @description_english = if @metapackage.description_english.nil? then "" else @metapackage.description_english end
+    # destroy current cart
+    cart = Cart.find(session[:cart])
+    session[:cart] = nil
+    if !cart.nil? then
+      cart.destroy
+    end
   end
 
   def create
