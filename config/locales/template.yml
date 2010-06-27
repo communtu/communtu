@@ -354,6 +354,7 @@ de:
   repository_url: 'Repository-URL: '
   rough_selection: Grobauswahl
   save: Speichern
+  save_or_delete_bundle: Bitte erst die im Bündel-Editor getroffene Bündel-Auswahl speichern oder löschen
   save_selection: Auswahl speichern
   search_package: Paket suchen
   search_programs_bundles: Du hast bereits ein Ubuntu installiert und suchst jetzt passende Programme? Hier kannst du deine Interessengebiete eingeben und passende vorkonfigurierte Programmbündel downloaden.

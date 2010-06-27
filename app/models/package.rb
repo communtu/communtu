@@ -113,13 +113,30 @@ class Package < BasePackage
     return c
   end
 
-  #conflicts in a set of pacakges
-  def self.conflicts(packages)
+  #conflicts in a set of pacakges and distributions
+  def self.conflicts(package_dists,package_ders)
     all_cons = {}
-    packages.each do |p|
-      cons = p.conflicting_packages & packages
-      if !cons.empty? then
-        all_cons[p]=cons
+    Distribution.all.each do |dist|
+      Derivative.all.each do |der|
+        packages = []
+        package_dists.each do |p, dists|
+          if dists.map{|d| d.to_i}.include?(dist.id)
+            ders = package_ders[p]
+            if !ders.nil? and ders.map{|d| d.to_i}.include?(der.id)
+              packages << Package.find(p)
+            end
+          end
+        end
+        packages.each do |p|
+          cons = p.conflicting_packages & packages
+          if !cons.empty? then
+            if all_cons[p].nil?
+              all_cons[p]=cons
+            else
+              all_cons[p]=(all_cons[p]+cons).uniq
+            end
+          end
+        end
       end
     end
     return all_cons

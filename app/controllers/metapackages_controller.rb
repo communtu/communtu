@@ -62,15 +62,13 @@ class MetapackagesController < ApplicationController
 
   # GET /metapackages/1/edit
   def edit
-    # destroy current cart
+    # protect current cart
     if editing_metapackage?
-      cart = Cart.find(session[:cart])
-      session[:cart] = nil
-      if !cart.nil? then
-        cart.destroy
-      end
+      flash[:error] = t(:save_or_delete_bundle)
+      redirect_to '/packages'
+    else
+      edit_new_or_cart
     end
-    edit_new_or_cart
   end
 
   def edit_new_or_cart
@@ -99,6 +97,13 @@ class MetapackagesController < ApplicationController
   def update
     error = false
     flash[:error] = ""
+    # correction of nil entries
+    if params[:distributions].nil? then
+      params[:distributions] = []
+    end
+    if params[:derivatives].nil? then
+      params[:derivatives] = []
+    end
     if params[:id].nil?
       @metapackage = nil
     else
@@ -146,12 +151,7 @@ class MetapackagesController < ApplicationController
       redirect_to metapackage_path(@metapackage)
       return
     end
-    if editing_metapackage?
-      @packages = Cart.find(session[:cart]).base_packages
-      @conflicts = Package.conflicts(@packages)
-    else
-      @conflicts = @metapackage.internal_conflicts
-    end
+    @conflicts = Package.conflicts(params[:distributions],params[:derivatives])
     if !@conflicts.empty? then
         flash[:error] += t(:controller_metapackages_conflicts)
         error = true
@@ -188,13 +188,6 @@ class MetapackagesController < ApplicationController
       end
     end
     if !error
-      # correction of nil entries
-      if params[:distributions].nil? then
-        params[:distributions] = []
-      end
-      if params[:derivatives].nil? then
-        params[:derivatives] = []
-      end
       # mark bundle as modified
       @metapackage.modified = true
       if @metapackage.name_tid == nil and params[:metapackage][:name] != ""
@@ -374,6 +367,12 @@ class MetapackagesController < ApplicationController
   
   def edit_packages(did = nil)
     @bundle = Metapackage.find(params[:id])
+    # protect current cart
+    if editing_metapackage? and Cart.find(session[:cart]).metapackage!=@bundle
+      flash[:error] = t(:save_or_delete_bundle)
+      redirect_to '/packages'
+      return
+    end
     if !is_admin? and !check_owner(@bundle,current_user) then
       redirect_to metapackage_path(@metapackage)
       return
