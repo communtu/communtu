@@ -8,10 +8,18 @@ namespace :db do
           r.import_source
         end
       end
+      # cleanup database
       MetacontentsDistr.cleanup
       MetacontentsDerivative.cleanup
       Package.remove_zombies
       Metapackage.remove_dangling_packages
+      # handle old cds that are still "generating"
+      Livecd.find_all_by_generating(true).select{|cd| Time.now-cd.updated_at > 10000}.each do |cd|
+        cd.generating=false
+        cd.failed=true
+        cd.log="Error: timeout, process did not terminate"
+        cd.save
+      end
     end
     desc 'Synchronise all repositories.'
     task :sync_all => :environment do
