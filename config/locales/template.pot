@@ -352,6 +352,9 @@ msgstr ""
 #: creation_in_progress
 msgid "wird gerade erstellt"
 msgstr ""
+#: oxygen_icon_legal_notice
+msgid "Einige der Icons sind aus dem Oxygen-Iconset http://www.oxygen-icons.org"
+msgstr ""
 #: view_home_impressum_11
 msgid "Mitwirkende an der AG Communtu (Alphabetische Reihenfolge):"
 msgstr ""
@@ -2569,6 +2572,9 @@ msgstr ""
 #: view_home_donate_why
 msgid "Der Betrieb der Communtu-Webseite basiert vor allem auf dem Einsatz von Freiwilligen; er kostet aber auch Geld (u.a. für Server und Räume). Communtu ist daher auf Spenden angewiesen. Auch kleine Beträge helfen."
 msgstr ""
+#: view_sent_show_2
+msgid "Zeitpunkt:"
+msgstr ""
 #: view_layouts_application_13
 msgid "Über Communtu"
 msgstr ""
@@ -2577,9 +2583,6 @@ msgid "Über eine Live-CD kann die Software sowohl ausprobiert als auch installi
 msgstr ""
 #: make_a_systemupgrade
 msgid "Du möchtest ein System-Upgrade machen. Dann schau <a href=\"http://communtu.wordpress.com/2009/09/16/mit-communtu-ein-systemupgrade-durchfuhren/\">wie einfach das geht</a> und lade deine Paketliste bei Communtu hoch."
-msgstr ""
-#: view_sent_show_2
-msgid "Zeitpunkt:"
 msgstr ""
 #: controller_metapackages_not_changed
 msgid "Das Bündel wurde schon als Metapaket erzeugt und hochgeladen."
@@ -2616,6 +2619,9 @@ msgid "Hier kannst du Themen detaillierter auswählen und dazu Programme und Pro
 msgstr ""
 #: package_list
 msgid "zurück zur Paketliste"
+msgstr ""
+#: save_or_delete_bundle
+msgid "Bitte erst die im Bündel-Editor getroffene Bündel-Auswahl speichern oder löschen"
 msgstr ""
 #: view_layouts_application_18
 msgid "keine neuen Nachrichten"

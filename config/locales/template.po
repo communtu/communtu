@@ -467,6 +467,10 @@ msgstr "no"
 msgid "wird gerade erstellt"
 msgstr "creation is in progress"
 
+#: oxygen_icon_legal_notice
+msgid "Einige der Icons sind aus dem Oxygen-Iconset http://www.oxygen-icons.org"
+msgstr "Some icons are from the Oxygen iconset http://www.oxygen-icons.org"
+
 #: view_home_impressum_11
 msgid "Mitwirkende an der AG Communtu (Alphabetische Reihenfolge):"
 msgstr "Participants of the Communtu-team (alphabetical order):"
@@ -3485,6 +3489,10 @@ msgstr "Communtu helps you:"
 msgid "Der Betrieb der Communtu-Webseite basiert vor allem auf dem Einsatz von Freiwilligen; er kostet aber auch Geld (u.a. für Server und Räume). Communtu ist daher auf Spenden angewiesen. Auch kleine Beträge helfen."
 msgstr "The development of Communtu is mainly based on the effort of volunteers but it also costs money (amongst others the server and the rooms). Therefore Communtu depends on donations. Even small amounts of money help."
 
+#: view_sent_show_2
+msgid "Zeitpunkt:"
+msgstr "Date:"
+
 #: view_layouts_application_13
 msgid "Über Communtu"
 msgstr "About Communtu"
@@ -3496,10 +3504,6 @@ msgstr "With the Live-CD you can test the software you have chosen and install t
 #: make_a_systemupgrade
 msgid "Du möchtest ein System-Upgrade machen. Dann schau <a href=\"http://communtu.wordpress.com/2009/09/16/mit-communtu-ein-systemupgrade-durchfuhren/\">wie einfach das geht</a> und lade deine Paketliste bei Communtu hoch."
 msgstr "You want to upgrade your system? Take a look <a href=\"http://encommuntu.wordpress.com/2009/09/16/how-to-use-communtu-for-a-systems-upgrade/\">here how easy it is</a> and upload your package list to Communtu."
-
-#: view_sent_show_2
-msgid "Zeitpunkt:"
-msgstr "Date:"
 
 #: controller_metapackages_not_changed
 msgid "Das Bündel wurde schon als Metapaket erzeugt und hochgeladen."
@@ -3548,6 +3552,10 @@ msgstr "Here you can choose the topics in detail, download single programs or co
 #: package_list
 msgid "zurück zur Paketliste"
 msgstr "back to the package-list"
+
+#: save_or_delete_bundle
+msgid "Bitte erst die im Bündel-Editor getroffene Bündel-Auswahl speichern oder löschen"
+msgstr "Please save or delete the selection in the bundle editor."
 
 #: view_layouts_application_18
 msgid "keine neuen Nachrichten"

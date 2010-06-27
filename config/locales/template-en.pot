@@ -352,6 +352,9 @@ msgstr ""
 #: creation_in_progress
 msgid "creation is in progress"
 msgstr ""
+#: oxygen_icon_legal_notice
+msgid "Some icons are from the Oxygen iconset http://www.oxygen-icons.org"
+msgstr ""
 #: view_home_impressum_11
 msgid "Participants of the Communtu-team (alphabetical order):"
 msgstr ""
@@ -2566,6 +2569,9 @@ msgstr ""
 #: view_home_donate_why
 msgid "The development of Communtu is mainly based on the effort of volunteers but it also costs money (amongst others the server and the rooms). Therefore Communtu depends on donations. Even small amounts of money help."
 msgstr ""
+#: view_sent_show_2
+msgid "Date:"
+msgstr ""
 #: view_layouts_application_13
 msgid "About Communtu"
 msgstr ""
@@ -2574,9 +2580,6 @@ msgid "With the Live-CD you can test the software you have chosen and install th
 msgstr ""
 #: make_a_systemupgrade
 msgid "You want to upgrade your system? Take a look <a href=\"http://encommuntu.wordpress.com/2009/09/16/how-to-use-communtu-for-a-systems-upgrade/\">here how easy it is</a> and upload your package list to Communtu."
-msgstr ""
-#: view_sent_show_2
-msgid "Date:"
 msgstr ""
 #: controller_metapackages_not_changed
 msgid "This bundle is already created as a metapackage and uploaded."
@@ -2613,6 +2616,9 @@ msgid "Here you can choose the topics in detail, download single programs or com
 msgstr ""
 #: package_list
 msgid "back to the package-list"
+msgstr ""
+#: save_or_delete_bundle
+msgid "Please save or delete the selection in the bundle editor."
 msgstr ""
 #: view_layouts_application_18
 msgid "no new messages"

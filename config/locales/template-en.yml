@@ -113,6 +113,7 @@ en:
   back: Back
   no1: "no"
   creation_in_progress: creation is in progress
+  oxygen_icon_legal_notice: Some icons are from the Oxygen iconset http://www.oxygen-icons.org
   view_home_impressum_11: "Participants of the Communtu-team (alphabetical order):"
   view_rating_show_title_no_ratings: no user rating
   view_metapackages_show_8: "Rating: "
@@ -888,10 +889,10 @@ en:
   view_home_home_27: "Communtu helps you:"
   donation_purpose: "Purpose: Communtu"
   controller_metapackages_not_changed: This bundle is already created as a metapackage and uploaded.
-  view_sent_show_2: "Date:"
   make_a_systemupgrade: You want to upgrade your system? Take a look <a href="http://encommuntu.wordpress.com/2009/09/16/how-to-use-communtu-for-a-systems-upgrade/">here how easy it is</a> and upload your package list to Communtu.
   livecd_message: With the Live-CD you can test the software you have chosen and install the system with the previous made software choice. For this, an ISO-file ({{cdimage_link}}) is created which you can burn. You need an empty CD-R or, if you have chosen lots of software, an empty DVD-R.<br /><br />The creation of the image takes a while. You will be informed automatically when your image has been created. For this, a valid e-mail address is required to be entered in your profile.
   view_layouts_application_13: About Communtu
+  view_sent_show_2: "Date:"
   allgemeinbildung: Allgemeinbildung e.V.
   view_home_home_28: "Download:"
   view_layouts_application_14: Feedback to Communtu
@@ -901,6 +902,7 @@ en:
   view_layouts_application_16: new message
   view_home_home_30: "Bundle:"
   view_layouts_application_18: no new messages
+  save_or_delete_bundle: Please save or delete the selection in the bundle editor.
   package_list: back to the package-list
   view_home_home_31: Here you can choose the topics in detail, download single programs or complete bundles and you can create and manage your own bundles.
   view_layouts_application_19: https://www.paypal.com/en_GB/i/btn/btn_donate_LG.gif
