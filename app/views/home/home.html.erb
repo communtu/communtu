@@ -11,7 +11,7 @@
 
 <table>
     <tr>
-        <td><%= link_to(image_tag("public/images/64x64/download.png", :height => 60, :title =>t(:go_to_download), :alt=>t(:go_to_download), :border => "0"), user_path(current_user) + "/user_profile/edit") %></td>
+        <td><%= link_to(image_tag("/images/64x64/download.png", :height => 60, :title =>t(:go_to_download), :alt=>t(:go_to_download), :border => "0"), user_path(current_user) + "/user_profile/edit") %></td>
         <td><%= t(:search_programs_bundles) %> <%= link_to(t(:continue), user_path(current_user) + "/user_profile/edit") %></td>
     </tr>
     <tr>
