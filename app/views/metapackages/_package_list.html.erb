@@ -38,7 +38,7 @@
                          <%= mc.package.section %>
 			<% if is_admin? or metapackage.user==current_user %>
 			&nbsp;&nbsp;	<%= link_to image_tag("edit-delete.png", :size => "22x22", :border => "0", :title => t(:view_metapackages__package_list_2)), { :controller => :metapackages,\
-					 :action => :remove_package, :id => metapackage.id, :package_id => mc.package.id  } %>
+					 :action => :remove_package, :metapackage_id => metapackage.id, :id => mc.package.id  } %>
 			<% end %>
 			</td>
 		</tr>

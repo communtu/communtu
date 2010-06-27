@@ -113,6 +113,18 @@ class Package < BasePackage
     return c
   end
 
+  #conflicts in a set of pacakges
+  def self.conflicts(packages)
+    all_cons = {}
+    packages.each do |p|
+      cons = p.conflicting_packages & packages
+      if !cons.empty? then
+        all_cons[p]=cons
+      end
+    end
+    return all_cons
+  end
+
   def stars
     if popcon.nil? then
       nil

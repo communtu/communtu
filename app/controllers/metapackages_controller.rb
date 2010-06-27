@@ -62,6 +62,18 @@ class MetapackagesController < ApplicationController
 
   # GET /metapackages/1/edit
   def edit
+    # destroy current cart
+    if editing_metapackage?
+      cart = Cart.find(session[:cart])
+      session[:cart] = nil
+      if !cart.nil? then
+        cart.destroy
+      end
+    end
+    edit_new_or_cart
+  end
+
+  def edit_new_or_cart
     @metapackage = Metapackage.find(params[:id])
     @meta_english_title = Translation.find(:first, :conditions => {:translatable_id => @metapackage.name_tid, :language_code => "en"})
     if !is_admin? and !check_owner(@metapackage,current_user) then
@@ -75,12 +87,7 @@ class MetapackagesController < ApplicationController
     @name_english = if @metapackage.name_english == "" then "new bundle" else @metapackage.name_english end
     @description = if @metapackage.description.nil? then "" else @metapackage.description end
     @description_english = if @metapackage.description_english.nil? then "" else @metapackage.description_english end
-    # destroy current cart
-    cart = Cart.find(session[:cart])
-    session[:cart] = nil
-    if !cart.nil? then
-      cart.destroy
-    end
+    render :action => 'edit'
   end
 
   def create
@@ -139,7 +146,12 @@ class MetapackagesController < ApplicationController
       redirect_to metapackage_path(@metapackage)
       return
     end
-    @conflicts = @metapackage.internal_conflicts
+    if editing_metapackage?
+      @packages = Cart.find(session[:cart]).base_packages
+      @conflicts = Package.conflicts(@packages)
+    else
+      @conflicts = @metapackage.internal_conflicts
+    end
     if !@conflicts.empty? then
         flash[:error] += t(:controller_metapackages_conflicts)
         error = true
@@ -370,12 +382,23 @@ class MetapackagesController < ApplicationController
   end
   
   def remove_package
-    m = Metapackage.find(params[:id])
-    if !is_admin? and !check_owner(m,current_user) then
-      redirect_to metapackage_url(m)
-      return
+    if !params[:metapackage_id].nil?
+      m = Metapackage.find(params[:metapackage_id])
+      if !m.nil? and !is_admin? and !check_owner(m,current_user) then
+        redirect_to metapackage_url(m)
+        return
+      end
     end
-    redirect_to :controller => :metapackages, :action => :edit_action, :id => params[:id], :did => params[:package_id], :method=>:pedit
+    if editing_metapackage? then
+      p = Package.find(params[:id])
+      cart  = Cart.find(session[:cart])
+      if !cart.nil? and !p.nil? then
+        cart.base_packages.delete(p)
+      end
+      redirect_to :action => :edit, :id => params[:metapackage_id]
+    else
+      redirect_to :controller => :metapackages, :action => :edit_action, :id => params[:metapackage_id], :did => params[:id], :method=>:pedit
+    end
   end
   
   def edit_action

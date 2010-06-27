@@ -35,7 +35,7 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/metapackages/:id/edit_action', :controller => 'metapackages', :action => 'edit_action'
   map.resources :metapackages, :collection => {:save => :get, :immediate_conflicts => :get, :conflicts => :get,
                                                :rdepends => :get, :action => :get, :changed => :get, :migrate => :get,
-                                               :finish_migrate => :get, :health_status => :get}
+                                               :finish_migrate => :get, :health_status => :get, :edit_new_or_cart => :get}
   map.resources :messages, :member => { :reply => :get, :forward => :get }
   map.resources :packages, :collection => {:packagelist => :get, :rdepends => :get, :search => :get, :section => :get, :bundle => :get}
   map.connect '/bundle', :controller => 'packages', :action => 'bundle'

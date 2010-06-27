@@ -117,8 +117,8 @@ class Metapackage < BasePackage
 
   #conflicts within the bundle
   def internal_conflicts
-    all_cons = {}
     packages = self.base_packages
+    all_cons = {}
     packages.each do |p|
       cons = p.conflicting_packages & packages
       if !cons.empty? then
