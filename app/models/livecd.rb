@@ -107,6 +107,7 @@ class Livecd < ActiveRecord::Base
 
   # created liveCD, using script/remaster
   def remaster(port=2222)
+    ActiveRecord::Base.connection.reconnect!
     ver = self.smallversion
     fullname = self.fullname
     # need to generate iso, use lock in order to prevent parallel generation of multiple isos
