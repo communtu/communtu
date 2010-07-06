@@ -435,6 +435,7 @@ en:
     Hello, 
     
     a suggestion for a new repository has been made at en.communtu.org:
+  free_disk_space: Free disk space (root / home / isos)
   settings: Settings
   view_home_derivatives_57: " for subnotebooks/EEE-PCs."
   edit_architecture: edit architecture
@@ -568,6 +569,7 @@ en:
   view_admins_sync_package_1: "Error: couldn't synchronise repository"
   view_metapackages_show_17: Publish
   view_layouts_application_2: Communtu
+  kvm_processes: KVM processes
   view_admins_sync_package_2: repository synchronised
   view_metapackages_show_18: If you publish the bundle every user has access to this bundle. However, the bundle cannot be deleted or renamed after publishing.
   view_metapackages_show_comment_and_ratings: Latest comments and ratings for this bundle
@@ -751,6 +753,7 @@ en:
   choose_bundle: Choose bundle
   controller_debs_2: Deb updated.
   view_layouts_donate: Donate
+  zombie_processes: Zombie processes
   view_home_faq_gnome_01: "You can find the Communtu sources under \"System -> Administration -> Software Sources -> Other Software\". They can also be deactivated here. "
   view_mailbox_show_3: received
   view_home_faq_gnome_02: To reach the package manager Synaptic you navigate to "System -> Administration -> Synaptic Package Manager". In the lower left part you click on "Origin". In the list above search for "packages.communtu.org" and click on it. In the right part of the window you will now see all metapackages available at Communtu. To remove a metapackage from your system you make a right click on it and choose "Mark for Removal". With a click on "Apply" it will be uninstalled.
@@ -809,6 +812,7 @@ en:
   additional_sources: Additional sources which will be added as some sources are not completed in themselves
   order_number: "Sort by number (smallest number first):"
   videos: "Videos:"
+  server_status: Server status
   senden: Send
   view_home_icons_3: Install package(s).
   model_package_6: <br> has not the right format
@@ -818,9 +822,9 @@ en:
   view_home_icons_6: " install sources"
   model_package_9: While the synchronization of the repository {{repo_name}} no PackageDistr-entry for the package {{package_name}} could be found.
   view_home_about_12: <b>Administrate bundles</b> on the left side offers an overview about the available bundles. At last, an overview about the available Ubunt versions (distributions) can be found at <b>Ubuntu versions</b>.
-  creation_failed: Creation failed
-  view_home_icons_9: " installation via shell-script"
   distribution: Distribution
+  view_home_icons_9: " installation via shell-script"
+  creation_failed: Creation failed
   view_packages__search_0: Search for packages
   lib_system_0: In order to use this feature you have to be logged in. Logging in via "Guest session" is also possible.
   logfile_extract: Extract from the logfile

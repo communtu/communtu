@@ -1252,6 +1252,9 @@ msgstr ""
 #: view_my_mailer_repo_0
 msgid "Hallo, \n\nes wurde auf www.communtu.de ein Vorschlag für ein neues Repository gemacht:"
 msgstr ""
+#: free_disk_space
+msgid "Freier Plattenplatz (root / home / isos)"
+msgstr ""
 #: settings
 msgid "Einstellungen"
 msgstr ""
@@ -1531,11 +1534,11 @@ msgstr ""
 #: more_about_sources
 msgid "(Mehr Informationen zum Thema Schlüssel und Quellen in den Faqs)"
 msgstr ""
-#: start_vm_with_livecd_basis
-msgid "Virtuelle Maschine auf Basis der LiveCD-Einstellungen starten (Zur Fehlersuche)"
-msgstr ""
 #: view_sent_index_3
 msgid "Zeitpunkt"
+msgstr ""
+#: start_vm_with_livecd_basis
+msgid "Virtuelle Maschine auf Basis der LiveCD-Einstellungen starten (Zur Fehlersuche)"
 msgstr ""
 #: controller_users_3
 msgid "Du wurdest als Nutzer {{anonymous_user}} mit Kennwort {{anonymous_user}} eingeloggt. Bitte ggf. oben rechts auf Nutzer {{anonymous_user}} klicken und in ein dauerhaftes Nutzerkonto umwandeln; ansonsten wird das Konto nach einem Tag wieder gelöscht."
@@ -1630,6 +1633,9 @@ msgstr ""
 #: view_layouts_application_2
 msgid "Communtu"
 msgstr ""
+#: kvm_processes
+msgid "KVM-Prozesse"
+msgstr ""
 #: view_admins_sync_package_2
 msgid "Repository synchronisiert"
 msgstr ""
@@ -1693,14 +1699,14 @@ msgstr ""
 #: view_metapackages_finish_migrate_0
 msgid "Alle Bündel wurden von "
 msgstr ""
+#: view_sent_new_3
+msgid "Nachricht:"
+msgstr ""
 #: view_passwords_new_2
 msgid "Passwort zurücksetzen"
 msgstr ""
 #: view_metapackages_finish_migrate_1
 msgid " nach "
-msgstr ""
-#: view_sent_new_3
-msgid "Nachricht:"
 msgstr ""
 #: view_my_mailer_mail_0
 msgid "Hallo, \n\nes wurde auf www.communtu.de ein Feedback gesendet. Der Betreff ist:"
@@ -2167,6 +2173,9 @@ msgstr ""
 #: controller_debs_2
 msgid "Deb aktualisiert."
 msgstr ""
+#: zombie_processes
+msgid "Zobmie-Prozesse"
+msgstr ""
 #: view_layouts_donate
 msgid "Spenden"
 msgstr ""
@@ -2337,6 +2346,9 @@ msgid "Sortiernummer (kleinste Zahl zu erst):"
 msgstr ""
 #: videos
 msgid "Videos:"
+msgstr ""
+#: server_status
+msgid "Status des Servers"
 msgstr ""
 #: senden
 msgid "Abschicken"

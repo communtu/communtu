@@ -129,6 +129,7 @@ menu = raw_input('What do you want to do? ')
 if menu == '1':
     file_processing()
 elif menu == '2':
-    edit_strings()
+    #edit_strings()
+    print 'Not working!'
 else:
     print 'Exit'

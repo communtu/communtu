@@ -5,6 +5,7 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: Timo Denissen <timo@communtu.de>\n"
 "Language-Team: Communtu <info@communtu.de>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1707,6 +1708,10 @@ msgstr ""
 "\n"
 "a suggestion for a new repository has been made at en.communtu.org:"
 
+#: free_disk_space
+msgid "Freier Plattenplatz (root / home / isos)"
+msgstr "Free disk space (root / home / isos)"
+
 #: settings
 msgid "Einstellungen"
 msgstr "Settings"
@@ -2093,13 +2098,13 @@ msgstr "An error occured while registering."
 msgid "(Mehr Informationen zum Thema Schlüssel und Quellen in den Faqs)"
 msgstr "(More information about Keys and Sources in the FAQ)"
 
-#: start_vm_with_livecd_basis
-msgid "Virtuelle Maschine auf Basis der LiveCD-Einstellungen starten (Zur Fehlersuche)"
-msgstr "Start virtual machine based on the Live-CD settings (for debugging)"
-
 #: view_sent_index_3
 msgid "Zeitpunkt"
 msgstr "Date"
+
+#: start_vm_with_livecd_basis
+msgid "Virtuelle Maschine auf Basis der LiveCD-Einstellungen starten (Zur Fehlersuche)"
+msgstr "Start virtual machine based on the Live-CD settings (for debugging)"
 
 #: controller_users_3
 msgid "Du wurdest als Nutzer {{anonymous_user}} mit Kennwort {{anonymous_user}} eingeloggt. Bitte ggf. oben rechts auf Nutzer {{anonymous_user}} klicken und in ein dauerhaftes Nutzerkonto umwandeln; ansonsten wird das Konto nach einem Tag wieder gelöscht."
@@ -2225,6 +2230,10 @@ msgstr "Publish"
 msgid "Communtu"
 msgstr "Communtu"
 
+#: kvm_processes
+msgid "KVM-Prozesse"
+msgstr "KVM processes"
+
 #: view_admins_sync_package_2
 msgid "Repository synchronisiert"
 msgstr "repository synchronised"
@@ -2309,6 +2318,10 @@ msgstr "    Which e-mail-address did you enter when you created the account?"
 msgid "Alle Bündel wurden von "
 msgstr "All bundles were migrated from"
 
+#: view_sent_new_3
+msgid "Nachricht:"
+msgstr "Message:"
+
 #: view_passwords_new_2
 msgid "Passwort zurücksetzen"
 msgstr "reset password"
@@ -2316,10 +2329,6 @@ msgstr "reset password"
 #: view_metapackages_finish_migrate_1
 msgid " nach "
 msgstr " to"
-
-#: view_sent_new_3
-msgid "Nachricht:"
-msgstr "Message:"
 
 #: view_my_mailer_mail_0
 msgid ""
@@ -2947,6 +2956,10 @@ msgstr "Choose bundle"
 msgid "Deb aktualisiert."
 msgstr "Deb updated."
 
+#: zombie_processes
+msgid "Zobmie-Prozesse"
+msgstr "Zombie processes"
+
 #: view_layouts_donate
 msgid "Spenden"
 msgstr "Donate"
@@ -3176,6 +3189,10 @@ msgstr "Sort by number (smallest number first):"
 #: videos
 msgid "Videos:"
 msgstr "Videos:"
+
+#: server_status
+msgid "Status des Servers"
+msgstr "Server status"
 
 #: senden
 msgid "Abschicken"

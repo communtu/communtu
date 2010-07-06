@@ -1249,6 +1249,9 @@ msgstr ""
 #: view_my_mailer_repo_0
 msgid "Hello, \n\na suggestion for a new repository has been made at en.communtu.org:"
 msgstr ""
+#: free_disk_space
+msgid "Free disk space (root / home / isos)"
+msgstr ""
 #: settings
 msgid "Settings"
 msgstr ""
@@ -1626,6 +1629,9 @@ msgid "Publish"
 msgstr ""
 #: view_layouts_application_2
 msgid "Communtu"
+msgstr ""
+#: kvm_processes
+msgid "KVM processes"
 msgstr ""
 #: view_admins_sync_package_2
 msgid "repository synchronised"
@@ -2167,6 +2173,9 @@ msgstr ""
 #: view_layouts_donate
 msgid "Donate"
 msgstr ""
+#: zombie_processes
+msgid "Zombie processes"
+msgstr ""
 #: view_home_faq_gnome_01
 msgid "You can find the Communtu sources under \"System -> Administration -> Software Sources -> Other Software\". They can also be deactivated here. "
 msgstr ""
@@ -2334,6 +2343,9 @@ msgid "Sort by number (smallest number first):"
 msgstr ""
 #: videos
 msgid "Videos:"
+msgstr ""
+#: server_status
+msgid "Server status"
 msgstr ""
 #: senden
 msgid "Send"
