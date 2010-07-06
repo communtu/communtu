@@ -495,6 +495,14 @@ class MetapackagesController < ApplicationController
   end
 #Package.find_by_sql("SELECT * from base_packages INNER JOIN metacontents ON metacontents.base_package_id = base_packages.id INNER JOIN metacontents_distrs ON metacontents.id = metacontents_distrs.id WHERE metacontents_distrs.distribution_id = 2").size
   def health_status
+    @zombie_processes = IO.popen("ps -aef|grep defunct |wc -l").read.to_i
+    iso_path = File.read(RAILS_ROOT+"/config/iso_path").chomp
+    @kvm_processes = IO.popen("ps -aef|grep kvm|grep -v kvm").read.chomp.split("\n").count
+    @cpu_usage = IO.popen("top -b -n 1 |grep Cpu").read
+    @cpu_usage_i = @cpu_usage.split(" ")[1].split("%")[0].to_i
+    @free_isos = disk_free_space(iso_path)
+    @free_home = disk_free_space("/home")
+    @free_root = disk_free_space("/")
     @bundles_with_errors = (Metapackage.find_all_by_deb_error(true)).uniq
     @modified_bundles = Metapackage.find_all_by_modified(true) - @bundles_with_errors
     @bundles_without_debs = Metapackage.find_all_by_debianized_version_and_published(nil,true)

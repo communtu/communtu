@@ -1,3 +1,30 @@
+<h1><%=t(:health_status)%>: <%=t(:server_status)%></h1>
+
+<big>
+  <% if @zombie_processes > 100 %>
+    <div class="flash" id="error">
+  <% else %>
+    <div>
+  <% end %>
+     <%=t(:zombie_processes)%>: <%=@zombie_processes%><br />
+  </div>
+<%=t(:kvm_processes)%>: <%=@kvm_processes%><br />
+  <% if @cpu_usage_i > 75 %>
+    <div class="flash" id="error">
+  <% else %>
+    <div>
+  <% end %>
+     <%=@cpu_usage%><br />
+  </div>
+  <% if @free_root < 1000000000 or @free_home < 1000000000 or @free_isos < 10000000000 %>
+    <div class="flash" id="error">
+  <% else %>
+    <div>
+  <% end %>
+     <%=t(:free_disk_space)%>: <%=number_to_human_size(@free_root)%> / <%=number_to_human_size(@free_home)%> / <%=number_to_human_size(@free_iso)%><br />
+  </div>
+</big>
+
 <h1><%=t(:health_status)%>: <%=t(:errors)%></h1>
 
 <h2><%=t(:bundles_with_missing_debs)%> (<%=@bundles_with_missing_debs.length%>)</h2>

@@ -192,6 +192,7 @@ de:
   force_sync: Synchronisierung des Repositories erzwingen
   former_participants: Ehemalige Mitwirkende
   four_and_fourty_letters: Zwischen 4 und 40 Zeichen
+  free_disk_space: "Freier Plattenplatz (root/home/isos)"
   generate_all_debs_for_bundle: Alle debs für das Bündel erzeugen
   generate_cd: LiveCD/DVD neu erstellen
   generate_cd_new: LiveCD/DVD mit neuen Quellen neu erstellen
@@ -236,6 +237,7 @@ de:
   kontodaten: Konto 172 9375, Sparkasse Bremen, BLZ 290 501 01
   kurzname: Kurzname
   kvm_image: KVM-Image
+  kvm_processes: KVM-Prozesse
   last_user: Wir begrüßen unseren zuletzt neu-registrierten Nutzer
   lib_system_0: Du musst eingeloggt sein, um dieses Feature zu benutzen. Geht auch als "Gast".
   lib_system_1: Du hast keine Berechtigung für diese Aktion.
@@ -360,6 +362,7 @@ de:
   search_programs_bundles: Du hast bereits ein Ubuntu installiert und suchst jetzt passende Programme? Hier kannst du deine Interessengebiete eingeben und passende vorkonfigurierte Programmbündel downloaden.
   security_type: 'Sicherheitstyp:'
   senden: Abschicken
+  server_status: Status des Servers
   settings: Einstellungen
   show: Anzeigen
   sources: Quellen
@@ -892,3 +895,4 @@ de:
   you_can: 'Du kannst dich auch '
   zentrum_solidarische_oekonomie: Zentrum für Solidarische Ökonomie
   oxygen_icon_legal_notice: Einige der Icons sind aus dem Oxygen-Iconset http://www.oxygen-icons.org
+  zombie_processes: Zobmie-Prozesse
