@@ -497,7 +497,7 @@ class MetapackagesController < ApplicationController
   def health_status
     @zombie_processes = IO.popen("ps -aef|grep defunct |wc -l").read.to_i
     iso_path = File.read(RAILS_ROOT+"/config/iso_path").chomp
-    @kvm_processes = IO.popen("ps -aef|grep kvm|grep -v kvm").read.chomp.split("\n").count
+    @kvm_processes = IO.popen("ps -aef|grep kvm|grep -v grep").read.chomp.split("\n").count
     @cpu_usage = IO.popen("top -b -n 1 |grep Cpu").read
     @cpu_usage_i = @cpu_usage.split(" ")[1].split("%")[0].to_i
     @free_isos = disk_free_space(iso_path)

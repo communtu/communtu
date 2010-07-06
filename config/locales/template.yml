@@ -192,7 +192,7 @@ de:
   force_sync: Synchronisierung des Repositories erzwingen
   former_participants: Ehemalige Mitwirkende
   four_and_fourty_letters: Zwischen 4 und 40 Zeichen
-  free_disk_space: "Freier Plattenplatz (root/home/isos)"
+  free_disk_space: "Freier Plattenplatz (root / home / isos)"
   generate_all_debs_for_bundle: Alle debs für das Bündel erzeugen
   generate_cd: LiveCD/DVD neu erstellen
   generate_cd_new: LiveCD/DVD mit neuen Quellen neu erstellen
