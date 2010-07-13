@@ -1,4 +1,3 @@
-<% if is_admin? %>
 <p>
   <b><%=t(:name_with_colon)%></b>
   <%=h @derivative.name %>
@@ -20,7 +19,24 @@
   <%=h @derivative.icon_file %>
 </p>
 
+<% if is_admin? %>
+<p>
+<%= form_tag(:action => "migrate", :id => @derivative.id) %>
+<%= collection_select(:derivative, :id,Derivative.all-[@derivative],:id,:name) %>
+<%=  submit_tag t(:migrate_bundles_derivative) %>
+<%= t(:direct_indirect_covered_packages_warning) %>
+</form>
+</p>
 
+<p>
 <%= link_to t(:edit), edit_derivative_path(@derivative) %> |
+<%= link_to t(:delete), @derivative, :confirm => t(:are_you_sure), :method => :delete %> |
 <%= link_to t(:back), derivatives_path %>
+</p>
+
+<% else %>
+<p>
+<%= link_to t(:back), derivatives_path %>
+</p>
+
 <% end %>

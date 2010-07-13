@@ -274,7 +274,7 @@ class Metapackage < BasePackage
     end
   end
 
-  def debianize
+  def debianize(ders=nil)
     # start with version 0.1 if there is none
     if self.version.nil? or self.version.empty? then
       self.version = "0.1"
@@ -289,8 +289,11 @@ class Metapackage < BasePackage
     self.debianizing = true
     self.save
     # generate debs
-    Distribution.all.each do |dist|
-      Derivative.all.each do |der|
+    if ders.nil? then
+      ders = Derivative.all
+    end
+    ders.each do |der|
+      der.distributions.each do |dist|
         (0..1).each do |lic|
           (0..2).each do |sec|
             codename = Deb.compute_codename(dist,der,lic,sec)

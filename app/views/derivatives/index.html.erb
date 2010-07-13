@@ -3,15 +3,14 @@
 
 <table>
   <tr>
-    <th>Name</th>
+    <th><%=t(:name_without_colon)%></th>
+    <th><%=t(:number_of_packages_in_bundles)%></th>
   </tr>
 
 <% for derivative in @derivatives %>
   <tr>
-    <td><%=h derivative.name %></td>
-    <td><%= link_to t(:show), derivative %></td>
-    <td><%= link_to t(:edit), edit_derivative_path(derivative) %></td>
-    <td><%= link_to t(:delete), derivative, :confirm => t(:are_you_sure), :method => :delete %></td>
+    <td><%= link_to(h(derivative.name),derivative) %></td>
+    <td align="center"><%= h derivative.metacontents_derivatives.size %></td>
   </tr>
 <% end %>
 </table>

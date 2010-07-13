@@ -87,4 +87,15 @@ class DerivativesController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+  def migrate
+    der_old = Derivative.find(params[:derivative][:id])
+    der_new = Derivative.find(params[:id])
+    der_new.migrate_bundles(der_old)
+    Metapackage.all.each do |b|
+      b.debianize([der_new])
+    end
+    redirect_to(derivatives_url)
+  end
+  
 end

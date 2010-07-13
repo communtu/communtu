@@ -14,7 +14,15 @@ class Derivative < ActiveRecord::Base
   def self.default
     return Derivative.find_by_name(DEFALUT_DERIVATIVE_NAME)
   end
-  
+
+  def migrate_bundles(der)
+    MetacontentsDerivative.find_all_by_derivative_id(der.id).each do |mcd|
+      mcd_new = mcd.clone
+      mcd_new.derivative = self
+      mcd_new.save
+    end
+  end
+
   protected
   def after_create
     # generate new configuration file for reprepro

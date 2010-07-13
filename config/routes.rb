@@ -7,7 +7,7 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/debs/bundle/:id', :controller => 'debs', :action => 'bundle'
   map.connect '/debs/generate_bundle/:id', :controller => 'debs', :action => 'generate_bundle'
   map.resources :debs, :collections => {:generate => :get, :generate_all =>:get}
-  map.resources :derivatives
+  map.resources :derivatives, :collection => {:migrate => :get}
   map.connect '/distributions/migrate/:id', :controller => 'distributions', :action => 'migrate'
   map.connect '/distributions/migrate_bundels/:id', :controller => 'distributions', :action => 'migrate_bundles'
   map.connect '/distributions/make_visible/:id', :controller => 'distributions', :action => 'make_visible'

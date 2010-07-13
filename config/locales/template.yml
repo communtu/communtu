@@ -276,6 +276,7 @@ de:
   metapackages_cannot_destroy: Das Bündel kann nicht gelöscht werden, da es noch in einem anderen verwendet wird.
   migrate: Migrieren
   migrate_bundles: Bündel von Vorgänger übernehmen
+  migrate_bundles_derivative: Bündel von anderem Derivat übernehmen
   migrate_repositories: Repositories von Vorgänger übernehmen
   migrate_repository: Repository migieren
   missing_debs_for_bundle: 'Fehlende debs für Bündel:'
@@ -331,6 +332,7 @@ de:
   not_accepted: Die eingegebene E-Mail-Adresse hat ungültige Formate oder ist unvollständig.
   not_logged_in: Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden.
   nothing_found_questionmark: Nichts gefunden?
+  number_of_packages_in_bundles: Zahl der Pakete in allen Bündeln
   offer_new_category: Vorschlag einer neuen Kategorie
   order_number: 'Sortiernummer (kleinste Zahl zu erst):'
   our_blog: Unser Blog
@@ -432,7 +434,7 @@ de:
   view_derivatives_edit_0: Derivative bearbeiten
   view_derivatives_edit_1: Programm für GUI-basiertes Sudo (z.B. gksudo, kdesudo)
   view_derivatives_edit_2: Programm für GUI-Dialoge (z.B. zenity, kdialog)
-  view_derivatives_index_0: Derivate auflisten
+  view_derivatives_index_0: Übersicht der Ubuntu-Derivate
   view_derivatives_show_1: 'Sudo-Programm:'
   view_derivatives_show_2: 'Dialog-Programm:'
   view_derivatives_show_3: 'Icon file:'
@@ -847,14 +849,11 @@ de:
   view_user_profiles_new_3: Expertenlevel
   view_users__mailbox_list_1: Mailbox
   view_users__mailbox_list_3: Versendete Nachrichten
-  view_users__sidebar_0: Installation
-  view_users__sidebar_1: Bündel verwalten
   view_users__sidebar_2: Programme suchen
   view_users__sidebar_4: Ubuntu-Versionen
   view_users__sidebar_5: Benutzer verwalten
   view_users__sidebar_6: Kategorien verwalten
   view_users__sidebar_7: Derivate verwalten
-  view_users__sidebar_8: Fehlgeschlagene debs
   view_users__user_0: aktivieren
   view_users__user_1: deaktivieren
   view_users__user_2: Rollen bearbeiten

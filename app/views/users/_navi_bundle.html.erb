@@ -2,7 +2,8 @@
         <%= link_to t(:model_user_meta_tabz_0), "/metapackages/index/0" %> |
         <%= link_to t(:model_user_meta_tabz_3), "/metapackages/index/1" %> |
         <%= link_to (if editing_metapackage? then t(:bundel_editing) else t(:new_bundle) end, "/cart/create") %> |
-        <%= link_to t(:view_users__sidebar_4), "/distributions" %>
+        <%= link_to t(:view_users__sidebar_4), "/distributions" %> |
+        <%= link_to t(:view_users__sidebar_2), "/cart/create" %>
         <% if is_power_user?  %>
          | <%= link_to t(:search_package), "/searches" %>
         <% end %>
