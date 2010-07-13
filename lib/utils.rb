@@ -82,4 +82,3 @@
   `df -Pk #{path} |grep ^/ | awk '{print $4;}'`.
     to_i * 1.kilobyte
  end
- 

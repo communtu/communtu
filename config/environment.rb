@@ -74,4 +74,5 @@ config.i18n.load_path += Dir[File.join(RAILS_ROOT, 'config', 'locales', '*.{rb,y
 #["#{RAILS_ROOT}/config/locales/template.yml","#{RAILS_ROOT}/config/locales/template-en.yml","#{RAILS_ROOT}/config/locales/numbers.yml"]
 config.i18n.default_locale = :de
 AVAILABLE_LOCALES = ["de", "en"]
+SETTINGS = YAML.load_file("#{RAILS_ROOT}/config/settings.yml")
 end

@@ -121,8 +121,7 @@ class Livecd < ActiveRecord::Base
         system (call+"livecd#{port}.log")
         system (call+"livecd#{port}.short.log")
         # check if there is enough disk space (at least 25 GB)
-        iso_path = File.read(RAILS_ROOT+"/config/iso_path").chomp
-        while disk_free_space(iso_path) < 25000000000
+        while disk_free_space(SETTINGS['iso_path']) < 25000000000
           # destroy the oldest liveCD
           cd=Livecd.find(:first,:order=>"created_at ASC")
           call = "(echo \"Disk full - deleting live CD #{cd.id}\" >> #{RAILS_ROOT}/log/"
@@ -301,8 +300,7 @@ class Livecd < ActiveRecord::Base
 
   def generate_hda
     tmpfile = IO.popen("mktemp").read.chomp
-    iso_path = File.read(RAILS_ROOT+"/config/iso_path").chomp
-    self.vm_hda = iso_path+tmpfile
+    self.vm_hda = SETTINGS['iso_path']+tmpfile
     self.save
     system "qemu-img create #{self.vm_hda} 5G"
   end

@@ -16,12 +16,7 @@ class Deb < ActiveRecord::Base
 
   # command for adding keys
   APT_KEY_COMMAND = "apt-key adv --recv-keys --keyserver"
-#  KEYSERVER = "keyserver.ubuntu.com"
-  KEYSERVER = "wwwkeys.de.pgp.net"
-  # communtu repository
-  COMMUNTU_REPO = "http://packages.communtu.org"
-  COMMUNTU_KEY = "D66AFBC0"
-  # command for uploading debs to repository
+  # command for adding packages to repository
   REPREPRO = "GNUPGHOME=/home/communtu/.gnupg reprepro -v -b #{RAILS_ROOT} --outdir #{RAILS_ROOT}/public/debs --confdir #{RAILS_ROOT}/debs --logdir #{RAILS_ROOT}/log --dbdir #{RAILS_ROOT}/debs/db --listdir #{RAILS_ROOT}/debs/list"
 
   def self.compute_codename(distribution,derivative,license,security)
@@ -270,7 +265,7 @@ class Deb < ActiveRecord::Base
       # add repository for communtu at the end
       repos1 = repos.to_a.sort {|r1,r2| r1.url <=> r2.url}
       Deb.components.flatten.each do |component|
-        repos1 << Repository.new(:url => "deb #{Deb::COMMUNTU_REPO} "+codename, :subtype => component, :gpgkey => Deb::COMMUNTU_KEY)
+        repos1 << Repository.new(:url => "deb #{SETTINGS['repo']} "+codename, :subtype => component, :gpgkey => SETTINGS['repo_key'])
       end
       # get urls and keys
       urls = []
@@ -302,7 +297,7 @@ class Deb < ActiveRecord::Base
       f.puts ""
       f.puts '    KEYS="'+keys.select{|k| !k.empty?}.join('§')+'"'
       f.puts '    SOURCESKEYS="'+urls_keys.join('§')+'"'
-      f.puts '    KEYSERVER="'+Deb::KEYSERVER+'"'
+      f.puts '    KEYSERVER="'+SETTINGS['keyserver']+'"'
       f.close
       # ... selection of sources according to sources.list
       safe_system "cat ../../../preinst2 >> preinst"
@@ -349,7 +344,7 @@ class Deb < ActiveRecord::Base
             f.puts "Components: "+comps
             f.puts "Description: metapackages generated from communtu.de"
             f.puts "Contents: . .gz .bz2"
-            f.puts "SignWith: #{COMMUNTU_KEY}"
+            f.puts "SignWith: #{SETTINGS['repo_key']}"
             f.puts 
           end
         end
