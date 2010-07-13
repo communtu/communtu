@@ -1,0 +1,19 @@
+# general settings for Communtu
+
+# repo for Ubuntu deb packages
+repo: http://packages.communtu.org
+# key for signing Ubuntu deb packages
+repo_key: D66AFBC0
+# keyserver used for creation of source-install debs
+key_server: wwwkeys.de.pgp.net
+# path for storing isos (should contain enough free space)
+iso_path: /local/isos
+# ports used for liveCD creation (the last two will be for admins)
+kvm_ports:
+- 2223
+- 2224
+- 2225
+- 2226
+- 2227
+- 2228
+
