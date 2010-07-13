@@ -49,7 +49,8 @@ end
   belongs_to :architecture
   has_many :livecd_users, :dependent => :destroy
   has_many :livecds, :through => :livecd_users
-  has_many :user_packages 
+  has_many :user_packages
+  has_many :metapackages
   has_many :selected_packages, :through => :user_packages, :source => :base_package, \
       :conditions => "user_packages.is_selected = '1'"    
   has_many :deselected_packages, :through => :user_packages, :source => :base_package, \

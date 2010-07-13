@@ -4,7 +4,9 @@
 class Derivative < ActiveRecord::Base
   has_many :metacontents_derivatives
   has_many :users
-  has_many :debs, :dependent => :destroy 
+  has_many :debs, :dependent => :destroy
+  has_many :distribution_derivatives, :dependent => :destroy
+  has_many :distributions, :through => :distribution_derivatives
 
   DEFALUT_DERIVATIVE_NAME = "Ubuntu"
 

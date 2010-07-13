@@ -164,6 +164,13 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.string   "dialog"
   end
 
+  create_table "distribution_derivatives", :force => true do |t|
+    t.integer  "distribution_id"
+    t.integer  "derivative_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "distributions", :force => true do |t|
     t.string   "name"
     t.text     "description"

@@ -9,6 +9,8 @@ class Distribution < ActiveRecord::Base
   has_many :package_distrs, :dependent => :destroy
   belongs_to :distribution # predecessor
   has_many :livecds, :dependent => :destroy
+  has_many :distribution_derivatives, :dependent => :destroy
+  has_many :derivatives, :through => :distribution_derivatives
 
   DEFAULT_DISTRO_NAME = "Lucid"
 

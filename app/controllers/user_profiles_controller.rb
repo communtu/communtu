@@ -83,9 +83,16 @@ class UserProfilesController < ApplicationController
     user.architecture_id = uparams[:architecture_id]
     user.advanced = uparams[:advanced]
     user.profile_changed = true
-    user.save!
-    user.increase_version
-    redirect_to user_user_profile_path(current_user) + "/installation"
+    if user.derivative.distributions.include?(user.distribution) then
+      user.save!
+      user.increase_version
+      redirect_to user_user_profile_path(current_user) + "/installation"
+    else
+      flash[:error] = t(:distribution_derivative_mismatch, 
+                        :derivative => user.derivative.name,
+                        :distributions=> user.derivative.distributions.map{|d| d.short_name}.join(", "))
+      redirect_back_or_default('/user_profiles/settings')
+    end
   end
   
   def update_ratings

@@ -7,7 +7,7 @@ class UsersController < ApplicationController
   layout 'application'
   
   before_filter :not_logged_in_required, :only => [:new, :create] 
-  before_filter :login_required, :only => [:show, :edit, :update, :disable, :distroy, :enable, :metapackages]
+  before_filter :login_required, :only => [:show, :edit, :update, :disable, :destroy, :enable, :metapackages]
   before_filter :check_administrator_role, :only => [:index, :destroy, :enable, :disable, :user_statistics, :spam_users_delete]
   
   helper :users
@@ -20,7 +20,7 @@ class UsersController < ApplicationController
   #This show action only allows users to view their own profile
   def show
     @user = User.find(params[:id])
-    @metas_user = Metapackage.find_all_by_user_id(params[:id])
+    @metas_user = @user.metapackages
     userlog = Userlog.find(:last, :conditions => {:user_id => params[:id]})
     if userlog == nil
       @last_action = @user.updated_at
