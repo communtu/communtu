@@ -297,7 +297,7 @@ class Deb < ActiveRecord::Base
       f.puts ""
       f.puts '    KEYS="'+keys.select{|k| !k.empty?}.join('§')+'"'
       f.puts '    SOURCESKEYS="'+urls_keys.join('§')+'"'
-      f.puts '    KEYSERVER="'+SETTINGS['keyserver']+'"'
+      f.puts '    KEYSERVER="'+SETTINGS['key_server']+'"'
       f.close
       # ... selection of sources according to sources.list
       safe_system "cat ../../../preinst2 >> preinst"
