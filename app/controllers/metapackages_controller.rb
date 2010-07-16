@@ -496,7 +496,7 @@ class MetapackagesController < ApplicationController
 #Package.find_by_sql("SELECT * from base_packages INNER JOIN metacontents ON metacontents.base_package_id = base_packages.id INNER JOIN metacontents_distrs ON metacontents.id = metacontents_distrs.id WHERE metacontents_distrs.distribution_id = 2").size
   def health_status
     @zombie_processes = IO.popen("ps -aef|grep defunct |wc -l").read.to_i
-    iso_path = File.read(RAILS_ROOT+"/config/iso_path").chomp
+    iso_path = SETTINGS['iso_path']
     @kvm_processes = IO.popen("ps -aef|grep kvm|grep -v grep").read.chomp.split("\n").count
     @cpu_usage = IO.popen("top -b -n 1 |grep Cpu").read
     @cpu_usage_i = @cpu_usage.split(" ")[1].split("%")[0].to_i
