@@ -198,6 +198,7 @@ en:
   view_home_derivatives_12: " provides multimedia package-sources. Because of legal reasons they cannot be offered by Ubuntu. Medibuntu is supported by Communtu (e. g. for audio or films)."
   model_mailer_5: suggestion of a repository
   view_home_about_1: Why Communtu?
+  distribution_derivative_mismatch: "{{derivative}} is only for {{distributions]] available"
   view_metapackages__package_list_conflicts: "Conflicts with the following packages/bundles:"
   view_home_derivatives_13: " - the PC becomes a VCR. Select \"Freak\" at \"Movie\" and it will be installed. Recommended: CPU with 2 GHz, 1024 MB-RAM, 10 GB free harddisk space for the frontend, at least 80 GB for the backend, a graphic card with at least 128 MB RAM and a TV Out and a supported TV card."
   view_home_about_2: Ubuntu is a linux-based distribution which makes Linux easier to use and more comprehendible. After the installation of Ubuntu via a CD or DVD your computer is already equipped to surf the internet, to do some word processing and to do much more.
@@ -372,7 +373,6 @@ en:
   view_home_derivatives_48: " - minimal server-version, suitable for virtualizations."
   controller_metapackages_2: The bundle-name is already in use!
   view_home_faq_08: You go to "Bundle" and click on "Published bundles" to view all bundles. There you can rate a program with up to five stars and, after that, a commentbox appears where you have to enter a comment to justify your rating.
-  view_users__sidebar_0: Installation
   view_home_derivatives_49: " - Ubuntu with Enlightenment as a desktop environment."
   view_home_home_new_message_icon: to the inbox
   controller_metapackages_3: Description must not be empty
@@ -385,7 +385,6 @@ en:
   new_article: New article
   view_user_profiles_help_1: Open a new terminal. Click on "Applications" -> "Accessories" -> "Terminal"
   participation: Ways to participate
-  view_users__sidebar_1: Administrate bundles
   view_user_profiles__profile_data_7: How do I find out the version which is in use?
   view_cart_new_from_list_1: Here you can create a bundle from an existing package-list. The list must be formated as a plain text-file with only one package-name per line.
   homepage: Start
@@ -421,6 +420,7 @@ en:
   view_users__sidebar_6: Administrate categories
   view_home_faq_14: To find a program, go to "Search programs". Enter the name of the program you are looking for into the search field. If you want to search only the programs click on "Programs only" and the libraries are not searched. Furthermore it is possible to choose a Debian-section where programs are preselected.
   view_sent__user_exists_0: user found
+  number_of_packages_in_bundles: Number of packages in all bundles
   announce: announce
   confirm_new_passwd: Confirm new password
   view_home_derivatives_55: " - Mediacenter."
@@ -429,7 +429,6 @@ en:
   generate_cd: Recreate Live-CD/DVD
   view_rating_show_title_got_ratings: of 5 stars
   view_home_derivatives_56: http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix (German)
-  view_users__sidebar_8: Failed debs
   view_home_faq_16: To install a program, go to "Search programs" and you get a list of all programs. When you find the program you are looking for, you just have to click on the installation-icon. It could be that you have to add the repository of that program first. To do so, click on "Add sources" and Communtu will add the sources to your system.
   view_my_mailer_repo_0: |-
     Hello, 
@@ -531,6 +530,7 @@ en:
   view_users_edit_2: delete profile
   view_cart_update_4: Publish bundle
   nothing_found_questionmark: Nothing found?
+  migrate_bundles_derivative: Take over bundle from other derivative.
   controller_users_1: Thank you for registering at Communtu! You can now log in.
   view_users_edit_3: "Username:"
   not_logged_in: You are currently not logged in. Please click on "log in" above.
@@ -867,7 +867,7 @@ en:
   controller_home_2: We will notify you via e-mail.
   controller_home_3: This does not appear to be a list with Ubuntu-packages... <br />The packagelist must contain one packagename per line
   livecd_created_by: "Live-CD/DVD created by:"
-  view_derivatives_index_0: show derivatives
+  view_derivatives_index_0: Ubuntu derivatives
   controller_home_4: A file with the package list (one package name per line) has to be given
   view_home_home_20: " to create a new user or"
   controller_home_5: We received your suggestion and we will inform you if  and when we will add the repository to our system.

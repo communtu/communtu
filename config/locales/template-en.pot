@@ -601,6 +601,9 @@ msgstr ""
 #: view_home_about_1
 msgid "Why Communtu?"
 msgstr ""
+#: distribution_derivative_mismatch
+msgid "{{derivative}} is only for {{distributions]] available"
+msgstr ""
 #: view_metapackages__package_list_conflicts
 msgid "Conflicts with the following packages/bundles:"
 msgstr ""
@@ -1069,9 +1072,6 @@ msgstr ""
 #: view_home_faq_08
 msgid "You go to \"Bundle\" and click on \"Published bundles\" to view all bundles. There you can rate a program with up to five stars and, after that, a commentbox appears where you have to enter a comment to justify your rating."
 msgstr ""
-#: view_users__sidebar_0
-msgid "Installation"
-msgstr ""
 #: view_home_derivatives_49
 msgid " - Ubuntu with Enlightenment as a desktop environment."
 msgstr ""
@@ -1107,9 +1107,6 @@ msgid "Open a new terminal. Click on \"Applications\" -> \"Accessories\" -> \"Te
 msgstr ""
 #: participation
 msgid "Ways to participate"
-msgstr ""
-#: view_users__sidebar_1
-msgid "Administrate bundles"
 msgstr ""
 #: view_user_profiles__profile_data_7
 msgid "How do I find out the version which is in use?"
@@ -1216,6 +1213,9 @@ msgstr ""
 #: view_sent__user_exists_0
 msgid "user found"
 msgstr ""
+#: number_of_packages_in_bundles
+msgid "Number of packages in all bundles"
+msgstr ""
 #: announce
 msgid "announce"
 msgstr ""
@@ -1239,9 +1239,6 @@ msgid "of 5 stars"
 msgstr ""
 #: view_home_derivatives_56
 msgid "http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix (German)"
-msgstr ""
-#: view_users__sidebar_8
-msgid "Failed debs"
 msgstr ""
 #: view_home_faq_16
 msgid "To install a program, go to \"Search programs\" and you get a list of all programs. When you find the program you are looking for, you just have to click on the installation-icon. It could be that you have to add the repository of that program first. To do so, click on \"Add sources\" and Communtu will add the sources to your system."
@@ -1515,6 +1512,9 @@ msgid "Publish bundle"
 msgstr ""
 #: nothing_found_questionmark
 msgid "Nothing found?"
+msgstr ""
+#: migrate_bundles_derivative
+msgid "Take over bundle from other derivative."
 msgstr ""
 #: controller_users_1
 msgid "Thank you for registering at Communtu! You can now log in."
@@ -2510,7 +2510,7 @@ msgstr ""
 msgid "A file with the package list (one package name per line) has to be given"
 msgstr ""
 #: view_derivatives_index_0
-msgid "show derivatives"
+msgid "Ubuntu derivatives"
 msgstr ""
 #: livecd_created_by
 msgid "Live-CD/DVD created by:"

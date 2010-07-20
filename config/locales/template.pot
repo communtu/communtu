@@ -601,6 +601,9 @@ msgstr ""
 #: view_home_about_1
 msgid "Wozu Communtu?"
 msgstr ""
+#: distribution_derivative_mismatch
+msgid "{{derivative}} ist nur unter {{distributions}} verfügbar"
+msgstr ""
 #: view_metapackages__package_list_conflicts
 msgid "Konflikte mit folgenden Paketen/Bündeln:"
 msgstr ""
@@ -754,6 +757,9 @@ msgstr ""
 #: view_users_index_5
 msgid "Aktiviert?"
 msgstr ""
+#: view_sent__user_not_exists_0
+msgid "User nicht gefunden"
+msgstr ""
 #: view_derivatives_edit_0
 msgid "Derivative bearbeiten"
 msgstr ""
@@ -765,9 +771,6 @@ msgid " - damit wird Ubuntu zum "
 msgstr ""
 #: generate_all_debs_for_bundle
 msgid "Alle debs für das Bündel erzeugen"
-msgstr ""
-#: view_sent__user_not_exists_0
-msgid "User nicht gefunden"
 msgstr ""
 #: weblinks
 msgid "Weblinks"
@@ -1069,9 +1072,6 @@ msgstr ""
 #: view_home_faq_08
 msgid "Du gehst auf den Menüpunkt \"Bündel\" und lässt dir unter \"Veröffentlichte Bündel\" die Bündel anzeigen. Dort kannst du bis zu fünf Sterne anklicken. Danach erscheint ein Kommentarfeld, in dem du diese Bewertung qualifizieren kannst."
 msgstr ""
-#: view_users__sidebar_0
-msgid "Installation"
-msgstr ""
 #: view_home_derivatives_49
 msgid " - Ubuntu mit Enlightenment als Desktopumgebung."
 msgstr ""
@@ -1101,9 +1101,6 @@ msgid "Bündel gespeichert. Es dauert ein paar Minuten, bis es auch als Metapake
 msgstr ""
 #: new_article
 msgid "Neuen Artikel anlegen"
-msgstr ""
-#: view_users__sidebar_1
-msgid "Bündel verwalten"
 msgstr ""
 #: view_user_profiles_help_1
 msgid "Öffne ein Terminal unter \"Anwendungen\" -> \"Zubehör\" -> \"Terminal"
@@ -1210,14 +1207,17 @@ msgstr ""
 #: view_users__sidebar_6
 msgid "Kategorien verwalten"
 msgstr ""
+#: view_sent__user_exists_0
+msgid "User gefunden"
+msgstr ""
 #: view_home_derivatives_54
 msgid ""
 msgstr ""
 #: view_home_faq_14
 msgid "Gehe dazu bitte auf den Menüpunkt \"Programme suchen\". Hier hast du ein Suchfeld, in dem du den Namen des gesuchten Prgramms angeben kannst. Weiter ist es möglich die Suche nur über Programme durchzuführen, in dem das Feld \"Nur Programme\" angeklickt wird und somit sonstige Bibliotheken nicht mehr angezeigt werden. Weiter ist es auch möglich eine Debian-Section auszuwählen, der die Auswahl an Programmen anhand von Kategorien vorselektiert."
 msgstr ""
-#: view_sent__user_exists_0
-msgid "User gefunden"
+#: number_of_packages_in_bundles
+msgid "Zahl der Pakete in allen Bündeln"
 msgstr ""
 #: announce
 msgid "announce"
@@ -1236,9 +1236,6 @@ msgid "Wie kann ich ein einzelnes Programm installieren?"
 msgstr ""
 #: generate_cd
 msgid "LiveCD/DVD neu erstellen"
-msgstr ""
-#: view_users__sidebar_8
-msgid "Fehlgeschlagene debs"
 msgstr ""
 #: view_rating_show_title_got_ratings
 msgid "von 5 Sternen"
@@ -1498,14 +1495,14 @@ msgstr ""
 #: view_cart_update_2
 msgid "Expertenlevel:"
 msgstr ""
+#: view_sent_index_0
+msgid "verschickte Nachrichten"
+msgstr ""
 #: to_chat
 msgid "zum Chat"
 msgstr ""
 #: start_vm_instructions
 msgid "So kannst du dich in die virtuelle Maschine einloggen (bitte etwas warten, bis die deb-Files kopiert wurden):"
-msgstr ""
-#: view_sent_index_0
-msgid "verschickte Nachrichten"
 msgstr ""
 #: an
 msgid "An"
@@ -1518,6 +1515,9 @@ msgid "Bündel veröffentlichen"
 msgstr ""
 #: nothing_found_questionmark
 msgid "Nichts gefunden?"
+msgstr ""
+#: migrate_bundles_derivative
+msgid "Bündel von anderem Derivat übernehmen"
 msgstr ""
 #: controller_users_1
 msgid "Danke für die Registrierung bei Communtu! Du kannst dich jetzt anmelden."
@@ -2513,7 +2513,7 @@ msgstr ""
 msgid "Es muss eine Datei mit der Paketliste (ein Paketname pro Zeile) angegeben werden"
 msgstr ""
 #: view_derivatives_index_0
-msgid "Derivate auflisten"
+msgid "Übersicht der Ubuntu-Derivate"
 msgstr ""
 #: livecd_created_by
 msgid "Live-CD/DVD erstellt von: "
