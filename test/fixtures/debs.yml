@@ -1,5 +1,5 @@
 --- 
-debs_099: 
+one:
   created_at: 2009-05-04 12:16:50
   license_type: "0"
   updated_at: 2009-05-04 18:05:20
@@ -89,7 +89,7 @@ debs_099:
   url: 0.111-kubuntu-jaunty-free-all1
   distribution_id: "4"
   security_type: "2"
-  metapackage_id: "52159"
+  metapackage: one
   id: "99"
   version: "0.111"
   outdated: 
@@ -185,7 +185,7 @@ debs_100:
   url: 0.111-kubuntu-jaunty-all-native1
   distribution_id: "4"
   security_type: "0"
-  metapackage_id: "52159"
+  metapackage: one
   id: "100"
   version: "0.111"
   outdated: 

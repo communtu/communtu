@@ -1,4 +1,4 @@
-require 'test_helper'
+require File.dirname(__FILE__) + '/../test_helper'
 
 class DebsControllerTest < ActionController::TestCase
   def test_should_get_index

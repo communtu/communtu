@@ -1,0 +1,33 @@
+one:
+  p_nofiles:
+  modified: "0"
+  section: unknown
+  name:
+  p_recent:
+  deb_error: "0"
+  debianized_version: "0.2"
+  created_at: 2010-06-20 22:39:32
+  p_old:
+  url_tid:
+  fullsection:
+  urls:
+  license_type: "1"
+  section_id:
+  description_tid: "878"
+  updated_at: 2010-07-13 17:15:08
+  published: "0"
+  is_program:
+  p_vote:
+  security_type: "2"
+  id: "110599"
+  version: "0.2"
+  icon_file:
+  user_id: "7324"
+  category_id: "1"
+  type: Metapackage
+  default_install:
+  ratings_count:
+  debianizing: "1"
+  popcon:
+  description:
+  name_tid: "877"
