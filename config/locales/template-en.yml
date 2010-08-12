@@ -394,7 +394,6 @@ en:
   view_user_profiles__profile_data_8: "Via your webbrowser detected version: "
   view_home_faq_10: Click on "Bundles" -> "My bundles", which shows you your bundles, and then you click on the bundle you want to change. All important information concerning this bundle is now shown. With a click on "Actions" you can edit the bundle or the package-list. If the bundle is not published, you can delete it or publish the bundle, if you would like to do so.
   view_cart_new_from_list_2: A list of all programs installed on your computer
-  controller_metapackages_6: The bundle-name is already in use<br>
   view_user_profiles_help_3: "If you version is not supported by Communtu, you now have two possibilities:"
   view_home_news_24: participate
   view_home_derivatives_51: " - Installation of programs and version, which are not available through the official repositories."
@@ -923,6 +922,7 @@ en:
   view_distributions_show_1: check everything
   view_metapackages_migrate_0: Wich distribution are the bundles to be migrated from?
   view_layouts_application_22: to the profile
+  english_name_reserve: The English bundle name is already in use. Please choose another English name.
   view_distributions_show_2: synchronise everything
   controller_metapackages_15: <option value='2'>Publish<option/>
   view_metapackages_migrate_1: Which distribution are the bundles to be migrated to?

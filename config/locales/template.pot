@@ -1135,9 +1135,6 @@ msgstr ""
 #: view_cart_new_from_list_2
 msgid "Die Liste der auf deinem Computer installierten Pakete kannst du zum Beispiel mit"
 msgstr ""
-#: controller_metapackages_6
-msgid "Dieser Bündel-Name ist bereits vergeben<br>"
-msgstr ""
 #: view_user_profiles_help_3
 msgid "Wenn deine Version von Communtu nicht unterstützt wird, gibt es zwei Möglichkeiten:"
 msgstr ""
@@ -2685,6 +2682,9 @@ msgid "<option value='2'>Veröffentlichen<option/>"
 msgstr ""
 #: view_distributions_show_2
 msgid "alles synchronisieren"
+msgstr ""
+#: english_name_reserve
+msgid "Der englische Name ist bereits vergeben. Bitte wähle einen anderen."
 msgstr ""
 #: view_layouts_application_22
 msgid "zum Benutzerprofil"

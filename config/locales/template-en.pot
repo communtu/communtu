@@ -1135,9 +1135,6 @@ msgstr ""
 #: view_cart_new_from_list_2
 msgid "A list of all programs installed on your computer"
 msgstr ""
-#: controller_metapackages_6
-msgid "The bundle-name is already in use<br>"
-msgstr ""
 #: view_user_profiles_help_3
 msgid "If you version is not supported by Communtu, you now have two possibilities:"
 msgstr ""
@@ -2682,6 +2679,9 @@ msgid "<option value='2'>Publish<option/>"
 msgstr ""
 #: view_distributions_show_2
 msgid "synchronise everything"
+msgstr ""
+#: english_name_reserve
+msgid "The English bundle name is already in use. Please choose another English name."
 msgstr ""
 #: view_layouts_application_22
 msgid "to the profile"
