@@ -53,9 +53,12 @@ def add_to_template(user_string, new_value):
 def edit_files(oldkeys, newkey):
     '''Using "sed" to remove oldkey from source files.'''
     for item in oldkeys:
-        sed = 'find app lib -name "*rb" -exec sed -i \'s/t(:' + item + '\([^:alnum:_]\)/t(:' + newkey + '\\1/g\' {} \;'
+	'''Original string by Till'''
+#        sed = 'find app lib -name "*rb" -exec sed -i \'s|t(:' + item + '\([^:alnum:_]\)|t(:' + newkey + '\\1|g\' {} \;'
+	sed = 'find app lib -name "*rb" -exec sed -i \'s|\\b' + item + '\\b|' + newkey + '|\' {} \;'
+        print sed
         print 'These files will be changed:\n'
-        os.system('grep --include=\'*rb\' "' + item + '" ./app -r')
+        os.system('grep --include=\'*rb\' "' + item + '" ./app -rw')
         if raw_input('\nIs this ok? y/n ') == 'n':
             break
         else:
@@ -82,7 +85,13 @@ def switch_keyvalue(dict):
     
 def safe_file(dictionary, stream_file):
     '''Saving the file using yaml.dump_all'''
-    yaml.dump_all([dictionary], stream=stream_file, default_flow_style=False, width=2048, line_break=False, allow_unicode=True, explicit_start=True)
+    yaml.dump_all([dictionary], 
+		  stream=stream_file, 
+		  default_flow_style=False, 
+		  width=2048, 
+		  line_break=False, 
+		  allow_unicode=True, 
+		  explicit_start=True)
     stream_file.close()
     
 def open_file():
@@ -107,10 +116,15 @@ def edit_strings():
             cache[count] = [key]
             cache_value[count] = [value]
             print count, key + ':', value
-    print '\nFound string', '"' + search + '"', count, 'times.\n'
+    if count == '0':
+	print 'String"', search, '"not found. Please try again.\n'
+	edit_strings()
+    else:
+	print '\nFound string', '"' + search + '"', count, 'times.\n'
     ask_number = input('Which string do you want to edit? ')
     oldkey = cache[ask_number]
     value_newkey = str(cache_value[ask_number])[2:-2]
+    print 'You are about to edit', oldkey
     newkey = raw_input ('Enter the new key: ')
     print oldkey, 'will be replaced with "' + newkey + '".'
     edit_files(oldkey, newkey)
@@ -129,7 +143,6 @@ menu = raw_input('What do you want to do? ')
 if menu == '1':
     file_processing()
 elif menu == '2':
-    #edit_strings()
-    print 'Not working!'
+    edit_strings()
 else:
     print 'Exit'
