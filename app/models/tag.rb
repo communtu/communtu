@@ -1,6 +1,8 @@
 # (c) 2008-2010 by Verein Allgemeinbildung e.V., Bremen, Germany
 # use, modification or distribution only with permission of the copyright holder
 
+# Debian tags, see http://debtags.alioth.debian.org/
+
 # FIXME Known bugs:
 # There are tags that are equal to facets.
 # The Tag model currently defines :name as unique and if we change this, it

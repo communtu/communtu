@@ -2,6 +2,7 @@
 # use, modification or distribution only with permission of the copyright holder
 
 # Communtu bundles; subclass of base_packages
+# should be renamed to class Bundle in the future
 
 class Metapackage < BasePackage
 
