@@ -140,7 +140,7 @@ class MetapackagesController < ApplicationController
          @metapackage.save!
          params[:id] = @metapackage.id
       else
-        flash[:error] += t(:controller_metapackages_6)
+        flash[:error] += t(:controller_metapackages_2)
         error = true
         params[:metapackage].delete(:description_english)
         params[:metapackage].delete(:name_english)
@@ -166,7 +166,7 @@ class MetapackagesController < ApplicationController
       end
     else
       if !check_bundle_name(params[:metapackage][:name],@metapackage)
-        flash[:error] += t(:controller_metapackages_6)
+        flash[:error] += t(:controller_metapackages_2)
         error = true
       end
     end
