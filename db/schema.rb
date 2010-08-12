@@ -300,7 +300,7 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.boolean  "outdated",         :default => false
   end
 
-  add_index "package_distrs_architectures", ["package_distr_id", "architecture_id"], :name => "package_distr_id"
+#  add_index "package_distrs_architectures", ["package_distr_id", "architecture_id"], :name => "package_distr_id"
 
   create_table "package_tags", :force => true do |t|
     t.integer "package_id"

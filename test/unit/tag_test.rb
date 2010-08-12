@@ -15,7 +15,9 @@ class TagTest < ActiveSupport::TestCase
   end
 
   test "duplicate tag" do
-    assert !Tag.create(:name => "works-with-format::mp3") # validates uniqueness of name (OPTIMIZE this is kind of a bug actually, see tag model)
+    Tag.create(:name => "works-with-format::mp3")
+    t=Tag.new(:name => "works-with-format::mp3")
+    assert !t.save # validates uniqueness of name (OPTIMIZE this is kind of a bug actually, see tag model)
   end
 
   # this really is a Rails function, if save doesn't work it's not our fault..

@@ -22,7 +22,9 @@ class PackageTest < ActiveSupport::TestCase
   end
 
   test "duplicate package" do
-    assert !Package.create(:name => "thisone")
+    Package.create(:name => "thisone")
+    p=Package.new(:name => "thisone")
+    assert !p.save
   end
 
   # this really is a rails function, if create doesn't work it's beyond our responsibilities
