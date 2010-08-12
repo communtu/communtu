@@ -1,3 +1,6 @@
+# (c) 2008-2010 by Verein Allgemeinbildung e.V., Bremen, Germany
+# use, modification or distribution only with permission of the copyright holder
+
 # Ubuntu (Debian) packages in the Communtu repositories
 # get objects in the database, such that creation of
 # Ubuntu packages can be better monitored, and can be

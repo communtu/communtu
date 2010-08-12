@@ -1,3 +1,6 @@
+# (c) 2008-2010 by Verein Allgemeinbildung e.V., Bremen, Germany
+# use, modification or distribution only with permission of the copyright holder
+
 # each liveCD is stored in the database as an object of class Livecd
 # this allows for better error logging and recovery
 # note that the iso itself is stored in the file system, however

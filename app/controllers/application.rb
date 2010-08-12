@@ -1,3 +1,6 @@
+# (c) 2008-2010 by Verein Allgemeinbildung e.V., Bremen, Germany
+# use, modification or distribution only with permission of the copyright holder
+
 # Filters added to this controller apply to all controllers in the application.
 # Likewise, all the methods added will be available for all controllers.
 

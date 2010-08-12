@@ -1,3 +1,6 @@
+# (c) 2008-2010 by Verein Allgemeinbildung e.V., Bremen, Germany
+# use, modification or distribution only with permission of the copyright holder
+
 class MyMailer < ActionMailer::Base
   def mail(form_name, form_frage, current_user)
     @form_name = form_name

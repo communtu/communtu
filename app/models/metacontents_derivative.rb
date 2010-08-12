@@ -1,3 +1,6 @@
+# (c) 2008-2010 by Verein Allgemeinbildung e.V., Bremen, Germany
+# use, modification or distribution only with permission of the copyright holder
+
 # join table specifying for which derivatives the membership
 # of a particular package in a bundle holds
 

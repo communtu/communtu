@@ -1,3 +1,6 @@
+<!-- (c) 2008-2010 by Verein Allgemeinbildung e.V., Bremen, Germany  
+     use, modification or distribution only with permission of the copyright holder -->
+
 <h2><%=h @message.subject %></h2>
 	<p><strong><%=t(:view_messages_show_0)%></strong> <%=h @message.author.login %></p>
 	<p><strong><%=t(:to_colon)%></strong> <%=h @message.recipients.map(&:login).to_sentence %></p>

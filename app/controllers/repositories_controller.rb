@@ -1,3 +1,6 @@
+# (c) 2008-2010 by Verein Allgemeinbildung e.V., Bremen, Germany
+# use, modification or distribution only with permission of the copyright holder
+
 class RepositoriesController < ApplicationController
   before_filter :login_required
   before_filter :check_administrator_role, :only => [:sync_package, :sync_all, :test_all], :flash => { :notice => I18n.t(:no_admin) }

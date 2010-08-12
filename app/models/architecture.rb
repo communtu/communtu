@@ -1,3 +1,6 @@
+# (c) 2008-2010 by Verein Allgemeinbildung e.V., Bremen, Germany
+# use, modification or distribution only with permission of the copyright holder
+
 # processor architectures (i.e. i386 and amd64, perhaps more in the future)
 # since Ubuntu packages are architecture-specific, metapackages and the
 # lists of packages they are containing are architecture-specific as well

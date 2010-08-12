@@ -1,3 +1,6 @@
+<!-- (c) 2008-2010 by Verein Allgemeinbildung e.V., Bremen, Germany  
+     use, modification or distribution only with permission of the copyright holder -->
+
 <% common = deps.delete(:all) %>
 <% depsarr = deps.select {|rep,deps| !deps.empty?} %>
 <% if common.nil? or depsarr.nil? or (common.empty? and depsarr.empty?) %><%=t(:view_packages__deps_0)%>
