@@ -90,7 +90,6 @@ de:
   controller_metapackages_2: Dieser Bündel-Name ist bereits vergeben!
   controller_metapackages_3: Die Beschreibung darf nicht leer sein
   controller_metapackages_4: 'Bündel gespeichert. Es dauert ein paar Minuten, bis es auch als Metapaket verfügbar ist. '
-  controller_metapackages_6: Dieser Bündel-Name ist bereits vergeben<br>
   controller_metapackages_7: Es muss eine Version angegeben werden (z.B. 0.1)<br>
   controller_metapackages_8: Bei Anderungen muss die Version größer werden<br>
   controller_metapackages_9: Die Beschreibung darf nicht leer sein<br>
