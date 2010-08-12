@@ -112,6 +112,16 @@ module ApplicationHelper
     end
   end
 
+  # need, cause a bundle which is in a bundle doesn't deleted by a user
+  def is_in_bundle(metapackage)
+    m = Metacontent.find(:first,:conditions => ["base_package_id = ?",metapackage.id])
+    if m != nil
+      return metapackage.id  
+    else
+      return "nix"    
+    end 
+  end
+
   ##############################
   # card editor methods
   ##############################
@@ -207,6 +217,15 @@ module ApplicationHelper
     # compute debian names of existing metapackages, without "communtu-" oder "communtu-private-bundle-" prefix
     metanames = (Metapackage.all-[bundle]).map{|m| if m.name.nil? then "" else BasePackage.debianize_name(m.name) end}
     if name==t(:new_bundle) or metanames.include?(BasePackage.debianize_name(name)) then
+      return false
+    end
+    return true
+  end
+
+    def check_english_bundle_name(name_english,bundle=nil)
+    # compute debian names of existing metapackages, without "communtu-" oder "communtu-private-bundle-" prefix
+    metanames = (Metapackage.all-[bundle]).map{|m| if m.name_english.nil? then "" else BasePackage.debianize_name(m.name_english) end}
+    if name_english==t(:new_bundle) or metanames.include?(BasePackage.debianize_name(name_english)) then
       return false
     end
     return true

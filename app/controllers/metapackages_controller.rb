@@ -165,6 +165,12 @@ class MetapackagesController < ApplicationController
         error = true
       end
     else
+      if I18n.locale.to_s != "en"
+	if !check_english_bundle_name(params[:metapackage][:name_english],@metapackage)
+	  flash[:error] += t(:english_name_reserve)
+          error = true
+        end
+      end
       if !check_bundle_name(params[:metapackage][:name],@metapackage)
         flash[:error] += t(:controller_metapackages_2)
         error = true

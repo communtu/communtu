@@ -182,6 +182,7 @@ de:
   email_without_colon: E-Mail
   english_description: 'Englische Beschreibung:'
   english_name: 'Englischer Name:'
+  english_name_reserve: 'Der englische Name ist bereits vergeben. Bitte wähle einen anderen.'
   error_no_attachement: Du hast keine Datei ausgewählt. Der Vorgang wurde abgebrochen.
   errors: Fehler
   exact: 'Exakten Begriff finden:'
