@@ -4,6 +4,10 @@
 class LivecdsController < ApplicationController
   before_filter :login_required
 
+  def title
+    "Communtu: " + t(:livecd)
+  end
+  
   def destroy
     @cd = Livecd.find(params[:id])
     # detach live CD from user

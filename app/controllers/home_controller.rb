@@ -4,7 +4,25 @@
 class HomeController < ApplicationController
   
   def title
-    t(:view_layouts_application_21)
+    if params[:action] == "impressum"
+      "Communtu: " + t(:imprint)
+    elsif params[:action] == "beteiligung"
+      "Communtu: " + t(:participation)
+    elsif params[:action] == "contact_us"
+      "Communtu: " + t(:view_home_contact_us_0)
+    elsif params[:action] == "news"
+      "Communtu: " + t(:news)
+    elsif params[:action] == "chat"
+      "Communtu: " + t(:chat)
+    elsif params[:action] == "about"
+      "Communtu: " + t(:about_us)
+    elsif params[:action] == "faq"
+      "Communtu: " + t(:view_home_faq_00)
+    elsif params[:action] == "donate"
+      "Communtu: " + t(:view_home_donate)
+    else
+      t(:view_layouts_application_21)
+    end 
   end
   protect_from_forgery :only => [:create, :update, :destroy] 
   

@@ -3,7 +3,7 @@
 
 class ArticlesController < ApplicationController
   def title
-    t(:view_layouts_application_21)
+    "Communtu: " + t(:press_archiv)
   end
   def new
     @article = Article.new

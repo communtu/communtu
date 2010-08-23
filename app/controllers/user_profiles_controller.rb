@@ -4,7 +4,15 @@
 
 class UserProfilesController < ApplicationController
   def title
-    t(:controller_profiles_0)
+    if params[:controller] == "user_profiles" and params[:action] == "edit"
+      "Communtu: " + t(:model_user_profile_tabz_1)
+    elsif params[:controller] == "user_profiles" and params[:action] == "settings"
+      "Communtu: " + t(:model_user_profile_tabz_4)
+    elsif params[:controller] == "user_profiles" and params[:action] == "livecd"
+      "Communtu: " + t(:livecd)
+    else
+      t(:controller_profiles_0)
+    end
   end  
   
   helper :user_profiles  
