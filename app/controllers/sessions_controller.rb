@@ -79,7 +79,7 @@ class SessionsController < ApplicationController
   private
   
   def failed_login(message)
-    flash[:notice] = message 
+    flash[:error] = message 
     @login = params[:login]
     render :action => 'new'
   end
