@@ -16,7 +16,7 @@ class UsersController < ApplicationController
   helper :users
     
   def index
-    @users = User.find_users(params[:page])
+    @users = User.find_users(params[:page])                        
     @u = User.find(:all, :conditions => {:anonymous => false, :enabled => true})
   end
   
@@ -111,6 +111,7 @@ class UsersController < ApplicationController
   end
 
   def spam_users_delete
+   # delete the spam users - only for manual start
    system('grep -C 10 "No action responded to users" /home/communtu/web2.0/communtu-program/log/production.log|grep -o [A-Za-z0-9_-]*@[A-Za-z0-9_.-]* > ~/spam_users.txt')
     f = File.open('/home/communtu/web2.0/spam_users.txt')  
       while not f.eof? do  
