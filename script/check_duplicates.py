@@ -56,7 +56,6 @@ def edit_files(oldkeys, newkey):
 	'''Original string by Till'''
 #        sed = 'find app lib -name "*rb" -exec sed -i \'s|t(:' + item + '\([^:alnum:_]\)|t(:' + newkey + '\\1|g\' {} \;'
 	sed = 'find app lib -name "*rb" -exec sed -i \'s|\\b' + item + '\\b|' + newkey + '|\' {} \;'
-        print sed
         print 'These files will be changed:\n'
         os.system('grep --include=\'*rb\' "' + item + '" ./app -rw')
         if raw_input('\nIs this ok? y/n ') == 'n':
@@ -64,6 +63,13 @@ def edit_files(oldkeys, newkey):
         else:
             pass
         os.system(sed)
+        languages = {'en-po': 'config/locales/template-en.po', \
+                               'en-yml': 'config/locales/template-en.yml', \
+                               'fr-po': 'config/locales/template-fr.po', \
+                               'fr-yml': 'config/locales/template-fr.yml'}
+        for key, value in languages.iteritems():
+            sed_lang = 'sed -i \'s|\\b' + item + '\\b|' + newkey + '|\' ' + value
+            os.system(sed_lang)
         edit_template(item)
     print '----------'
 
@@ -112,15 +118,17 @@ def edit_strings():
     count = 0
     for key, value in template_dict.iteritems():
         if search in key:
+            if count > '10':
+                print 'Search gave to many results. Please refine your search.'
+                edit_strings()
             count += 1
             cache[count] = [key]
             cache_value[count] = [value]
             print count, key + ':', value
     if count == '0':
-	print 'String"', search, '"not found. Please try again.\n'
-	edit_strings()
+        print 'String "'+search+'" not found. Please try again.\n'
     else:
-	print '\nFound string', '"' + search + '"', count, 'times.\n'
+        print '\nFound string', '"' + search + '"', count, 'times.\n'
     ask_number = input('Which string do you want to edit? ')
     oldkey = cache[ask_number]
     value_newkey = str(cache_value[ask_number])[2:-2]
