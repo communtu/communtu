@@ -70,6 +70,7 @@ def edit_files(oldkeys, newkey):
         for key, value in languages.iteritems():
             sed_lang = 'sed -i \'s|\\b' + item + '\\b|' + newkey + '|\' ' + value
             os.system(sed_lang)
+            print 'Successfully edited file', value + '.'
         edit_template(item)
     print '----------'
 
@@ -109,27 +110,32 @@ def open_file():
     template_dict = template_dict_full['de']
     template_yml.close()
     
-def edit_strings():
+def ask_string():
     '''Manual editing of strings'''
     search = raw_input('Enter the search string: ')
     print '\nSearching for string "' + search +'".\n'
+    global cache
+    global cache_value
     cache = {}
     cache_value = {}
     count = 0
     for key, value in template_dict.iteritems():
         if search in key:
-            if count > '10':
-                print 'Search gave to many results. Please refine your search.'
-                edit_strings()
             count += 1
             cache[count] = [key]
             cache_value[count] = [value]
             print count, key + ':', value
-    if count == '0':
+    if count == 0:
         print 'String "'+search+'" not found. Please try again.\n'
+        ask_string()
+    elif count == 1:
+        edit_strings(1)
     else:
         print '\nFound string', '"' + search + '"', count, 'times.\n'
-    ask_number = input('Which string do you want to edit? ')
+        ask_number = input('Enter the string\'s number you want to edit: ')
+        edit_strings(ask_number)
+
+def edit_strings(ask_number):
     oldkey = cache[ask_number]
     value_newkey = str(cache_value[ask_number])[2:-2]
     print 'You are about to edit', oldkey
@@ -140,7 +146,7 @@ def edit_strings():
     template_dict[newkey] = str([value_newkey])[2:-2]
     safe_file(template_dict_full, template_yml)
     if raw_input('Do you want to edit more strings? y/n ') == 'y':
-        edit_strings()
+        ask_string()
     else:
         print 'Exit'
     
@@ -151,6 +157,6 @@ menu = raw_input('What do you want to do? ')
 if menu == '1':
     file_processing()
 elif menu == '2':
-    edit_strings()
+    ask_string()
 else:
     print 'Exit'
