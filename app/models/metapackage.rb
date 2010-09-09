@@ -105,7 +105,12 @@ class Metapackage < BasePackage
                      AND metacontents_derivatives.derivative_id = #{der.id} \
                      AND repositories.security_type <= #{sec} \
                      AND repositories.license_type <= #{lic}")
-      return ps.map{|p| p.debian_name}
+      ms = Metapackage.find_by_sql("SELECT DISTINCT base_packages.id, base_packages.name, base_packages.published, base_packages.name_tid \
+               FROM `base_packages`  \
+                   INNER JOIN metacontents ON (base_packages.id = metacontents.base_package_id) \
+               WHERE metacontents.metapackage_id = #{self.id}
+                     AND base_packages.type = \"Metapackage\"")
+      return (ps+ms).map{|p| p.debian_name}
   end
 
   # close a list of bundles under dependencies
