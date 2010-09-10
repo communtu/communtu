@@ -1,6 +1,6 @@
 --- 
 en: 
-  view_home_home_new_messages_desc: ""
+  view_home_home_new_messages_desc: Tu as un nouveau message dans ta boite aux lettres
   view_layouts_application_24: ""
   sources: ""
   category_with_colon: ""
@@ -233,7 +233,7 @@ en:
   view_home_derivatives_24: ""
   spam_user_delete: ""
   view_users_index_1: ""
-  easy_install: ""
+  easy_install: installer unbuntu facilement
   view_users_new_1: ""
   view_home_derivatives_25: ""
   view_users_index_2: ""

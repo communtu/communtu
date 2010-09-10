@@ -14,7 +14,7 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 
 #: view_home_home_new_messages_desc
-msgid ""
+msgid "Tu as un nouveau message dans ta boite aux lettres"
 msgstr ""
 #: view_layouts_application_24
 msgid ""
@@ -713,7 +713,7 @@ msgstr ""
 msgid ""
 msgstr ""
 #: easy_install
-msgid ""
+msgid "installer unbuntu facilement"
 msgstr ""
 #: view_users_new_1
 msgid ""

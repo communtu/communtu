@@ -11,7 +11,7 @@ msgstr ""
 
 #: view_home_home_new_messages_desc
 msgid "Du hast neue Nachrichten in deinem Posteingang."
-msgstr ""
+msgstr "Tu as un nouveau message dans ta boite aux lettres"
 
 #: view_layouts_application_24
 msgid "DOWNLOAD"
