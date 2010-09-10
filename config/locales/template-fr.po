@@ -955,7 +955,7 @@ msgstr ""
 
 #: easy_install
 msgid "Einfache Installationsmöglichkeiten für Ubuntu"
-msgstr "installer unbuntu facilement"
+msgstr "Installer Ubuntu facilement"
 
 #: view_home_derivatives_25
 msgid "http://wiki.ubuntuusers.de/Xfce"

@@ -713,7 +713,7 @@ msgstr ""
 msgid ""
 msgstr ""
 #: easy_install
-msgid "installer unbuntu facilement"
+msgid "Installer Ubuntu facilement"
 msgstr ""
 #: view_users_new_1
 msgid ""
