@@ -15,19 +15,19 @@ msgstr "Tu as un nouveau message dans ta boite aux lettres"
 
 #: view_layouts_application_24
 msgid "DOWNLOAD"
-msgstr ""
+msgstr "Telecharger"
 
 #: sources
 msgid "Quellen"
-msgstr ""
+msgstr "Source"
 
 #: category_with_colon
 msgid "Kategorie:"
-msgstr ""
+msgstr "Categorie:"
 
 #: view_layouts_application_25
 msgid "COMMUNTU"
-msgstr ""
+msgstr "COMMUNTU"
 
 #: cannot_migrate
 msgid "Kann nur migrieren, wenn die Distribution frisch ist"

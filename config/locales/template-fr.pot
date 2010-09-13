@@ -17,16 +17,16 @@ msgstr ""
 msgid "Tu as un nouveau message dans ta boite aux lettres"
 msgstr ""
 #: view_layouts_application_24
-msgid ""
+msgid "Telecharger"
 msgstr ""
 #: sources
-msgid ""
+msgid "Source"
 msgstr ""
 #: category_with_colon
-msgid ""
+msgid "Categorie:"
 msgstr ""
 #: view_layouts_application_25
-msgid ""
+msgid "COMMUNTU"
 msgstr ""
 #: cannot_migrate
 msgid ""

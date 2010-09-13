@@ -1,10 +1,10 @@
 --- 
 en: 
   view_home_home_new_messages_desc: Tu as un nouveau message dans ta boite aux lettres
-  view_layouts_application_24: ""
-  sources: ""
-  category_with_colon: ""
-  view_layouts_application_25: ""
+  view_layouts_application_24: Telecharger
+  sources: Source
+  category_with_colon: "Categorie:"
+  view_layouts_application_25: COMMUNTU
   cannot_migrate: ""
   view_home_beteiligung_10: ""
   zentrum_solidarische_oekonomie: ""
