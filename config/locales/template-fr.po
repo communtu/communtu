@@ -11,7 +11,7 @@ msgstr ""
 
 #: view_home_home_new_messages_desc
 msgid "Du hast neue Nachrichten in deinem Posteingang."
-msgstr "Tu as un nouveau message dans ta boite aux lettres"
+msgstr "Tu as un nouveau message dans ta boite de reception"
 
 #: view_layouts_application_24
 msgid "DOWNLOAD"
@@ -3200,111 +3200,111 @@ msgstr ""
 
 #: controller_derivatives_1
 msgid "Derivative erzeugt."
-msgstr ""
+msgstr "Dérivés générés."
 
 #: view_metapackages_show_modified
 msgid "Das Bündel enthält Änderungen."
-msgstr ""
+msgstr "La Liasse contient des modifications."
 
 #: lib_system_2
 msgid "http://www.communtu.de"
-msgstr ""
+msgstr "http://www.communtu.de"
 
 #: controller_derivatives_2
 msgid "Derivat aktualisiert."
-msgstr ""
+msgstr "Dérivés mis à jour."
 
 #: view_home_about_16
 msgid "Um Communtu nutzen zu können, kannst du dich registrieren. Das geht ganz einfach über den \"Registrieren\"-Knopf in der oberen Leiste."
-msgstr ""
+msgstr "Pour pouvoir utiliser Communtu, tu dois t enregistrer. Il est facile sur le \"enregistrer \"-bouton dans la barre du haut."
 
 #: view_home_home_10
 msgid "<b>Ubuntu-Versionen</b> Übersicht über die im System verfügbaren Ubuntu-Versionen (Distributionen)."
-msgstr ""
+msgstr "<b> Ubuntu-versions </ b> vue d'ensemble des versions Ubuntu disponiblent dans le systeme (distributions)."
 
 #: continue
 msgid "Weiter"
-msgstr ""
+msgstr "continuer"
 
 #: view_debs_index_0
 msgid "Fehlgeschlagene oder laufende Deb-Generierungen"
-msgstr ""
+msgstr "Échec ou les générations actuelles Deb"
 
 #: view_home_home_11
 msgid "<b>Benutzer verwalten</b> Hier kannst du als Admin die Rollen der Benutzer ändern. Vorsicht walten lassen!"
-msgstr ""
+msgstr "<b> Gérer les utilisateurs </ b> Ici, vous pouvez en tant qu'administrateur changer les rôles de l utilisateur. Soyez prudent!"
 
 #: view_debs_index_1
 msgid "Zurück zum Communtu-Menü"
-msgstr ""
+msgstr "Retour au menu Communtu"
 
 #: view_home_home_12
 msgid "<b>Kategorien verwalten</b> Hier kannst du als Admin neue Kategorien erstellen oder die Struktur des Kategorienbaums ändern. Vorsicht walten lassen!"
-msgstr ""
+msgstr "> Gérer les catégories <b> </ b> Ici, vous pouvez créer de nouvelles catégories en tant qu'administrateur ou modifier la structure de l'arborescence des catégories. Soyez prudent!"
 
 #: livecd_image_link
 msgid "http://wiki.ubuntuusers.de/CD-Images"
-msgstr ""
+msgstr "http://wiki.ubuntuusers.de/CD-Images"
 
 #: view_metapackages_show_save
 msgid "Bündel als Metapaket speichern"
-msgstr ""
+msgstr "Sauvegarder la Liasse comme un méta-paquet "
 
 #: view_debs_index_2
 msgid "  Keine fehlgeschlagenen Deb-Generierungen vorhanden! Glückwunsch!"
-msgstr ""
+msgstr "Aucune défaillance Deb-"
 
 #: view_home_home_13
 msgid "<b>Aktuelles</b> Hinweise auf Veranstaltungen zu Communtu, Communtu-Blog ..."
-msgstr ""
+msgstr "<b> Nouvelles </ b> des informations sur les événements Communtu, blog Communtu ..."
 
 #: help_translation
 msgid "Hilfe bei der Übersetzung - Schreib uns eine E-Mail"
-msgstr ""
+msgstr "Aide au niveau de la traduction - Envoie-nous un e-mail"
 
 #: view_debs_index_3
 msgid "Alle fehlgeschlagenen debs erzeugen <b>Achtung: nur unter admin.communtu.de ausführen!</b>"
-msgstr ""
+msgstr "Toutes tentatives échoué à créer des debs<b> Attention: seulement Exécuter sous admin.communtu.de que / b> "
 
 #: view_home_home_14
 msgid "Es gibt auch noch "
-msgstr ""
+msgstr "Il ya aussi"
 
 #: view_home_home_15
 msgid "genauere Infos"
-msgstr ""
+msgstr "Plus d'infos"
 
 #: repositories_without_packages
 msgid "Repositories ohne Pakete (da Repositories leer)"
-msgstr ""
+msgstr "Dépôts sans paquets (service de garde-vide)"
 
 #: view_metapackages_rdepends_0
 msgid "Im Bündel "
-msgstr ""
+msgstr "en liasse"
 
 #: view_debs_index_5
 msgid "Erzeugen"
-msgstr ""
+msgstr "Produire"
 
 #: view_home_home_16
 msgid " über das Projekt und über die Mitwirkenden im "
-msgstr ""
+msgstr "a propos du projet et des participants dans le"
 
 #: view_metapackages_rdepends_1
 msgid " direkt und indirekt enthaltene Bündel und Pakete"
-msgstr ""
+msgstr " directement et indirectement le contenus des Liasses et des paquets"
 
 #: change_passwd
 msgid "Passwort ändern"
-msgstr ""
+msgstr "Changer mot de passe"
 
 #: view_metapackages_immediate_conflicts_0
 msgid "Konflikte innerhalb von Bündeln"
-msgstr ""
+msgstr "Les conflits au sein des Liasses"
 
 #: controller_home_1
 msgid "Die E-Mail wurde an uns gesendet. Vielen Dank für deine Nachricht."
-msgstr ""
+msgstr "L'e-mail nous a été envoyé . Je te remercie pour ton message."
 
 #: view_home_home_17
 msgid "Impressum."
@@ -3312,75 +3312,75 @@ msgstr ""
 
 #: view_metapackages_immediate_conflicts_1
 msgid " ist in Konflikt mit "
-msgstr ""
+msgstr "est en conflit avec"
 
 #: controller_home_2
 msgid "Wir werden uns per E-Mail bei dir melden."
-msgstr ""
+msgstr "Nous vous contacterons par e-mail."
 
 #: former_participants
 msgid "Ehemalige Mitwirkende"
-msgstr ""
+msgstr "Anciens cotisants"
 
 #: view_home_home_18
 msgid "Klicke auf "
-msgstr ""
+msgstr "Cliquez sur"
 
 #: controller_home_3
 msgid "Das sieht nicht nach einer Liste von Ubuntu-Paketen aus... <br />Die Paketliste muss einen Paketnamen pro Zeile enthalten"
-msgstr ""
+msgstr "Ceci ne ressemble pas a une liste des paquets Ubuntu ... <br /> Le paquet doit énumérer le nom du package par ligne"
 
 #: controller_home_4
 msgid "Es muss eine Datei mit der Paketliste (ein Paketname pro Zeile) angegeben werden"
-msgstr ""
+msgstr "Il doit y avoir un fichier spécifié avec la liste des paquets(le nom du package par ligne)"
 
 #: view_derivatives_index_0
 msgid "Derivate auflisten"
-msgstr ""
+msgstr "Liste des produits dérivés"
 
 #: livecd_created_by
 msgid "Live-CD/DVD erstellt von: "
-msgstr ""
+msgstr "Live-CD/DVD Créé par:"
 
 #: controller_home_5
 msgid "Wir haben deinen Vorschlag erhalten und werden dich informieren, ob und wann wir das vorgeschlagene Repository aufnehmen werden."
-msgstr ""
+msgstr "Nous avons reçu ta proposition et  t informerons si et quand nous allons enregistrer le référentiel proposé."
 
 #: view_home_home_20
 msgid ", um einen neuen Benutzer anzulegen, oder "
-msgstr ""
+msgstr "Pour créer un nouvel utilisateur, ou"
 
 #: security_type
 msgid "Sicherheitstyp:"
-msgstr ""
+msgstr "Type de sécurité:"
 
 #: view_home_home_21
 msgid "melde"
-msgstr ""
+msgstr "login"
 
 #: inbox
 msgid "Posteingang"
-msgstr ""
+msgstr "Boîte de réception"
 
 #: creation_successful
 msgid "Erstellung war erfolgreich"
-msgstr ""
+msgstr "Création a été un succès"
 
 #: view_home_home_22
 msgid " dich an, oder "
-msgstr ""
+msgstr "à toi, ou"
 
 #: view_home_home_23
 msgid "nutze Communtu als Gast"
-msgstr ""
+msgstr "utilise Communtu en tant qu'invité"
 
 #: controller_categories_0
 msgid "Kategorien"
-msgstr ""
+msgstr "Catégories"
 
 #: update
 msgid "Aktualisieren"
-msgstr ""
+msgstr "Mettre à jour"
 
 #: view_home_home_24
 msgid "Zum Impressum"
@@ -3388,35 +3388,35 @@ msgstr ""
 
 #: statistics
 msgid "Aufrufstatistik"
-msgstr ""
+msgstr "Statistiques d'appel"
 
 #: view_layouts_application_11
 msgid "Gastzugang"
-msgstr ""
+msgstr "accès visiteur"
 
 #: description
 msgid "Beschreibung"
-msgstr ""
+msgstr "Description"
 
 #: view_home_home_25
 msgid "Für Fragen zu Communtu haben wir \"Häufig gestellte Fragen\" zusammengestellt."
-msgstr ""
+msgstr "Pour des questions concernant Communtu nous avons  dans \" Questions les plus souvent posées\"  collectés."
 
 #: controller_categories_2
 msgid "Kategorie erzeugt."
-msgstr ""
+msgstr "Catégorie généré"
 
 #: failed_live_cds
 msgid "Fehlgeschlagene LiveCDs/DVDs"
-msgstr ""
+msgstr "Échec LiveCD / DVD"
 
 #: view_home_home_26
 msgid "Du hast Ubuntu installiert und suchst nun nach Progammen, die unter Ubuntu laufen?"
-msgstr ""
+msgstr "Tu as installé Ubuntu et maintenant tu es à la recherche des progammes qui s'exécutent sur Ubuntu?"
 
 #: controller_categories_3
 msgid "Kategorie aktualisiert."
-msgstr ""
+msgstr "Catégorie mise à jour."
 
 #: description_for_description
 msgid "Bitte gib hier eine kurze Vorstellung deines Bündels ein für was für Tätigkeiten es gedacht ist. Danach kannst du auch noch auf die Vorzüge einiger Programme daraus eingehen."
@@ -3424,161 +3424,161 @@ msgstr ""
 
 #: view_home_home_27
 msgid "Communtu hilft dir dabei:"
-msgstr ""
+msgstr "Communtu te permet de:"
 
 #: view_home_donate_why
 msgid "Der Betrieb der Communtu-Webseite basiert vor allem auf dem Einsatz von Freiwilligen; er kostet aber auch Geld (u.a. für Server und Räume). Communtu ist daher auf Spenden angewiesen. Auch kleine Beträge helfen."
-msgstr ""
+msgstr "Le fonctionnement du site Communtu est basée essentiellement sur l'utilisation de bénévoles, mais il coûte de l'argent (par exemple pour les serveurs et les chambres). Communtu est donc tributaire de dons. Même de petits montants peuvent aider."
 
 #: view_layouts_application_13
 msgid "Über Communtu"
-msgstr ""
+msgstr "A propos de Communtu"
 
 #: livecd_message
 msgid "Über eine Live-CD kann die Software sowohl ausprobiert als auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} erstellt, in Form einer iso-Datei, die du dann brennen kannst. Zum Brennen benötigst du eine CD, falls du viel Software ausgewählt hast, eine DVD.<br /><br /> Die Erstellung des Images dauert eine gewisse Zeit. Du wirst per Email benachrichtigt, sobald das Image fertig ist. Bitte achte darauf, dass in deinen Benutzereinstellungen eine gültige Email-Adresse angegeben ist."
-msgstr ""
+msgstr "Via un live CD, le logiciel peut etre à la fois essaye et installé. Ceci etant, un soi-disant (()) cdimage_link est créé, sous la forme d'un fichier ISO que tu peux graver. Pour graver un CD dont tu  as besoin, si tu as sélectionné un grand nombre de logiciels, d'un DVD. <br /> <br /> La création de l'image prend un certain temps. Tu seras averti par email lorsque l'image est prête. S'il te  plait vérifie que tes  paramètres d'utilisateur spécifié dans une adresse email valide."
 
 #: make_a_systemupgrade
 msgid "Du möchtest ein System-Upgrade machen. Dann schau <a href=\"http://communtu.wordpress.com/2009/09/16/mit-communtu-ein-systemupgrade-durchfuhren/\">wie einfach das geht</a> und lade deine Paketliste bei Communtu hoch."
-msgstr ""
+msgstr "Vous voulez faire une mise à niveau du système. Ensuite, regardez <a href=\"http://communtu.wordpress.com/2009/09/16/avec-communtu-une-Amélioration du système -effectuer/\">  comme c est facile </ a> et transfere ta liste de paquets sur Communtu            "
 
 #: view_sent_show_2
 msgid "Zeitpunkt:"
-msgstr ""
+msgstr "Date:"
 
 #: controller_metapackages_not_changed
 msgid "Das Bündel wurde schon als Metapaket erzeugt und hochgeladen."
-msgstr ""
+msgstr "La Liasse a été créé comme un méta-paquet et transféré."
 
 #: donation_purpose
 msgid "Verwendungszweck: Communtu"
-msgstr ""
+msgstr "Objectif: Communtu"
 
 #: view_layouts_application_14
 msgid "Feedback an Communtu"
-msgstr ""
+msgstr "Message à Communtu"
 
 #: view_home_home_28
 msgid "Download:"
-msgstr ""
+msgstr "Télécharger:"
 
 #: allgemeinbildung
 msgid "Allgemeinbildung e.V."
-msgstr ""
+msgstr "Général e.V."
 
 #: view_layouts_application_15
 msgid "angemeldet als  "
-msgstr ""
+msgstr "enregistrés comme"
 
 #: view_home_home_29
 msgid "Zu welchem Thema suchst du Programme (Büro, Grafik,...)? Hier kannst du deine Interessengebiete eingeben und passende vorkonfigurierte Programmbündel downloaden."
-msgstr ""
+msgstr "Pour quel sujet recherches tu des programmes"
 
 #: view_repositories_index_0
 msgid "Repositories"
-msgstr ""
+msgstr "Référentiels"
 
 #: view_layouts_application_16
 msgid "neue Nachricht"
-msgstr ""
+msgstr "nouveau message"
 
 #: view_home_home_30
 msgid "Bündel:"
-msgstr ""
+msgstr "Liasse:"
 
 #: view_home_home_31
 msgid "Hier kannst du Themen detaillierter auswählen und dazu Programme und Programmbündel laden, aber auch eigene Bündel erstellen und verwalten."
-msgstr ""
+msgstr "Ici, tu peux choisir des thèmes  détaillés et  inviter des programmes et des faisceaux de programme, mais aussi créer et gérer leurs propres paquets."
 
 #: package_list
 msgid "zurück zur Paketliste"
-msgstr ""
+msgstr "retour à la liste des paquets"
 
 #: view_layouts_application_18
 msgid "keine neuen Nachrichten"
-msgstr ""
+msgstr "*aucun nouveau message "
 
 #: view_home_home_32
 msgid "Communtu:"
-msgstr ""
+msgstr "Communtu:"
 
 #: controller_metapackages_11
 msgid "Konnte Paket nicht aus Bündel entfernen."
-msgstr ""
+msgstr "Impossible de supprimer le paquet de la liasse."
 
 #: controller_metapackages_debianizing
 msgid "Das Bündel wird gerade als Metapaket erzeugt und hochgeladen. Dies dauert ein paar Minuten."
-msgstr ""
+msgstr "Le paquet a été créé comme un méta-paquet et transféré.Cela prendra quelques minutes."
 
 #: no_save_database
 msgid "Die folgenden Pakete konnten nicht in der Datenbank gespeichert werden:"
-msgstr ""
+msgstr "Les paquets suivants n'ont pas pu être stockés dans la base de données:"
 
 #: view_layouts_application_19
 msgid "https://www.paypal.com/de_DE/DE/i/btn/btn_donate_LG.gif"
-msgstr ""
+msgstr "https://www.paypal.com/de_DE/DE/i/btn/btn_donate_LG.gif"
 
 #: view_home_home_33
 msgid "Möchtest du mehr über Communtu wissen? Hast du Anregungen, Fragen - wir freuen uns auf den Kontakt mit dir."
-msgstr ""
+msgstr "Aimerais tu en savoir plus sur vous Communtu? As tu des suggestions, des questions - nous sommes impatients de t entendre."
 
 #: view_repositories_index_5
 msgid "Neues Repository"
-msgstr ""
+msgstr "Nouveau référentiel"
 
 #: view_distributions_show_0
 msgid "Repositories:"
-msgstr ""
+msgstr "Référentiels:"
 
 #: view_layouts_application_20
 msgid "Javascript ist nicht aktiviert! Bitte aktiviere Javascript in deinen Browsereinstellungen."
-msgstr ""
+msgstr "Javascript n'est pas activé! S'il vous plaît activer JavaScript dans votre navigateur."
 
 #: view_metapackages_migrate_0
 msgid "Von welcher Distribution sollen die Bündel migriert werden ?"
-msgstr ""
+msgstr "Quelle distribution pour les faisceaux à migrer?"
 
 #: view_distributions_show_1
 msgid "alles prüfen"
-msgstr ""
+msgstr "tout verifier"
 
 #: migrate
 msgid "Migrieren"
-msgstr ""
+msgstr "Émigrer"
 
 #: view_layouts_application_21
 msgid "Communtu macht Ubuntu-Installationen einfach"
-msgstr ""
+msgstr "Communtu facilite les  installations de Ubuntu"
 
 #: view_metapackages_migrate_1
 msgid "Zu welcher Distribution sollen die Bündel migriert werden ?"
-msgstr ""
+msgstr "Quelle distribution pour les faisceaux à migrer?"
 
 #: controller_metapackages_15
 msgid "<option value='2'>Veröffentlichen<option/>"
-msgstr ""
+msgstr "<option value='2'>Publier<option/>"
 
 #: view_distributions_show_2
 msgid "alles synchronisieren"
-msgstr ""
+msgstr "tout synchroniser "
 
 #: view_layouts_application_22
 msgid "zum Benutzerprofil"
-msgstr ""
+msgstr "Le profil d'utilisateur"
 
 #: view_distributions_show_3
 msgid "sources.list einlesen"
-msgstr ""
+msgstr "Lire sources.liste"
 
 #: view_distributions_show_4
 msgid "Repository hinzufügen"
-msgstr ""
+msgstr "Ajouter un référentiel"
 
 #: view_layouts_application_23
 msgid "BÜNDEL"
-msgstr ""
+msgstr "LIASSE"
 
 #: install
 msgid "Installieren"
-msgstr ""
+msgstr "Installer"
 

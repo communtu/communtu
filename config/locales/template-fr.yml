@@ -1,6 +1,6 @@
 --- 
 fr: 
-  view_home_home_new_messages_desc: Tu as un nouveau message dans ta boite aux lettres
+  view_home_home_new_messages_desc: Tu as un nouveau message dans ta boite de reception
   view_layouts_application_24: TELECHARGER
   sources: Source
   category_with_colon: "Categorie:"
@@ -787,101 +787,105 @@ fr:
   fine_selection: ""
   logfile_extract: ""
   lib_system_0: ""
-  view_metapackages_show_modified: ""
-  controller_derivatives_1: ""
+  view_metapackages_show_modified: La Liasse contient des modifications.
+  controller_derivatives_1: !binary |
+    RMOpcml2w6lzIGfDqW7DqXLDqXMu
+
   lib_system_1: ""
   view_distributions_edit_0: ""
-  view_home_about_16: ""
-  controller_derivatives_2: ""
-  lib_system_2: ""
-  continue: ""
-  view_home_home_10: ""
-  view_home_home_11: ""
-  view_debs_index_0: ""
-  livecd_image_link: ""
-  view_home_home_12: ""
-  view_debs_index_1: ""
-  view_home_home_13: ""
-  view_debs_index_2: ""
-  view_metapackages_show_save: ""
-  view_home_home_14: ""
-  view_debs_index_3: ""
-  help_translation: ""
-  repositories_without_packages: ""
-  view_home_home_15: ""
-  view_home_home_16: ""
-  view_debs_index_5: ""
-  view_metapackages_rdepends_0: ""
-  view_metapackages_immediate_conflicts_0: ""
-  change_passwd: ""
-  view_metapackages_rdepends_1: ""
-  view_metapackages_immediate_conflicts_1: ""
+  view_home_about_16: Pour pouvoir utiliser Communtu, tu dois t enregistrer. Il est facile sur le "enregistrer "-bouton dans la barre du haut.
+  controller_derivatives_2: "D\xC3\xA9riv\xC3\xA9s mis \xC3\xA0 jour."
+  lib_system_2: http://www.communtu.de
+  continue: continuer
+  view_home_home_10: <b> Ubuntu-versions </ b> vue d'ensemble des versions Ubuntu disponiblent dans le systeme (distributions).
+  view_home_home_11: "<b> G\xC3\xA9rer les utilisateurs </ b> Ici, vous pouvez en tant qu'administrateur changer les r\xC3\xB4les de l utilisateur. Soyez prudent!"
+  view_debs_index_0: "\xC3\x89chec ou les g\xC3\xA9n\xC3\xA9rations actuelles Deb"
+  livecd_image_link: http://wiki.ubuntuusers.de/CD-Images
+  view_home_home_12: "> G\xC3\xA9rer les cat\xC3\xA9gories <b> </ b> Ici, vous pouvez cr\xC3\xA9er de nouvelles cat\xC3\xA9gories en tant qu'administrateur ou modifier la structure de l'arborescence des cat\xC3\xA9gories. Soyez prudent!"
+  view_debs_index_1: Retour au menu Communtu
+  view_home_home_13: "<b> Nouvelles </ b> des informations sur les \xC3\xA9v\xC3\xA9nements Communtu, blog Communtu ..."
+  view_debs_index_2: "Aucune d\xC3\xA9faillance Deb-"
+  view_metapackages_show_save: "Sauvegarder la Liasse comme un m\xC3\xA9ta-paquet "
+  view_home_home_14: Il ya aussi
+  view_debs_index_3: "Toutes tentatives \xC3\xA9chou\xC3\xA9 \xC3\xA0 cr\xC3\xA9er des debs<b> Attention: seulement Ex\xC3\xA9cuter sous admin.communtu.de que / b> "
+  help_translation: Aide au niveau de la traduction - Envoie-nous un e-mail
+  repositories_without_packages: "D\xC3\xA9p\xC3\xB4ts sans paquets (service de garde-vide)"
+  view_home_home_15: Plus d'infos
+  view_home_home_16: a propos du projet et des participants dans le
+  view_debs_index_5: Produire
+  view_metapackages_rdepends_0: en liasse
+  view_metapackages_immediate_conflicts_0: Les conflits au sein des Liasses
+  change_passwd: Changer mot de passe
+  view_metapackages_rdepends_1: " directement et indirectement le contenus des Liasses et des paquets"
+  view_metapackages_immediate_conflicts_1: est en conflit avec
   view_home_home_17: ""
-  controller_home_1: ""
-  view_home_home_18: ""
-  former_participants: ""
-  controller_home_2: ""
-  controller_home_3: ""
-  livecd_created_by: ""
-  view_derivatives_index_0: ""
-  controller_home_4: ""
-  view_home_home_20: ""
-  controller_home_5: ""
-  inbox: ""
-  view_home_home_21: ""
-  security_type: ""
-  view_home_home_22: ""
-  creation_successful: ""
-  controller_categories_0: ""
-  view_home_home_23: ""
-  statistics: ""
+  controller_home_1: "L'e-mail nous a \xC3\xA9t\xC3\xA9 envoy\xC3\xA9 . Je te remercie pour ton message."
+  view_home_home_18: Cliquez sur
+  former_participants: Anciens cotisants
+  controller_home_2: Nous vous contacterons par e-mail.
+  controller_home_3: "Ceci ne ressemble pas a une liste des paquets Ubuntu ... <br /> Le paquet doit \xC3\xA9num\xC3\xA9rer le nom du package par ligne"
+  livecd_created_by: "Live-CD/DVD Cr\xC3\xA9\xC3\xA9 par:"
+  view_derivatives_index_0: "Liste des produits d\xC3\xA9riv\xC3\xA9s"
+  controller_home_4: "Il doit y avoir un fichier sp\xC3\xA9cifi\xC3\xA9 avec la liste des paquets(le nom du package par ligne)"
+  view_home_home_20: "Pour cr\xC3\xA9er un nouvel utilisateur, ou"
+  controller_home_5: "Nous avons re\xC3\xA7u ta proposition et  t informerons si et quand nous allons enregistrer le r\xC3\xA9f\xC3\xA9rentiel propos\xC3\xA9."
+  inbox: "Bo\xC3\xAEte de r\xC3\xA9ception"
+  view_home_home_21: login
+  security_type: "Type de s\xC3\xA9curit\xC3\xA9:"
+  view_home_home_22: "\xC3\xA0 toi, ou"
+  creation_successful: "Cr\xC3\xA9ation a \xC3\xA9t\xC3\xA9 un succ\xC3\xA8s"
+  controller_categories_0: "Cat\xC3\xA9gories"
+  view_home_home_23: "utilise Communtu en tant qu'invit\xC3\xA9"
+  statistics: Statistiques d'appel
   view_home_home_24: ""
-  update: ""
-  controller_categories_2: ""
-  view_home_home_25: ""
-  description: ""
-  view_layouts_application_11: ""
+  update: "Mettre \xC3\xA0 jour"
+  controller_categories_2: !binary |
+    Q2F0w6lnb3JpZSBnw6luw6lyw6k=
+
+  view_home_home_25: "Pour des questions concernant Communtu nous avons  dans \" Questions les plus souvent pos\xC3\xA9es\"  collect\xC3\xA9s."
+  description: Description
+  view_layouts_application_11: "acc\xC3\xA8s visiteur"
   description_for_description: ""
-  controller_categories_3: ""
-  view_home_home_26: ""
-  failed_live_cds: ""
-  view_home_donate_why: ""
-  view_home_home_27: ""
-  donation_purpose: ""
-  controller_metapackages_not_changed: ""
-  view_sent_show_2: ""
-  make_a_systemupgrade: ""
-  livecd_message: ""
-  view_layouts_application_13: ""
-  allgemeinbildung: ""
-  view_home_home_28: ""
-  view_layouts_application_14: ""
-  view_repositories_index_0: ""
-  view_home_home_29: ""
-  view_layouts_application_15: ""
-  view_layouts_application_16: ""
-  view_home_home_30: ""
-  view_layouts_application_18: ""
-  package_list: ""
-  view_home_home_31: ""
-  view_layouts_application_19: ""
-  no_save_database: ""
-  controller_metapackages_debianizing: ""
-  controller_metapackages_11: ""
-  view_home_home_32: ""
-  view_repositories_index_5: ""
-  view_home_home_33: ""
-  view_layouts_application_20: ""
-  view_distributions_show_0: ""
-  view_layouts_application_21: ""
-  migrate: ""
-  view_distributions_show_1: ""
-  view_metapackages_migrate_0: ""
-  view_layouts_application_22: ""
-  view_distributions_show_2: ""
-  controller_metapackages_15: ""
-  view_metapackages_migrate_1: ""
-  view_distributions_show_3: ""
-  install: ""
-  view_layouts_application_23: ""
-  view_distributions_show_4: ""
+  controller_categories_3: "Cat\xC3\xA9gorie mise \xC3\xA0 jour."
+  view_home_home_26: "Tu as install\xC3\xA9 Ubuntu et maintenant tu es \xC3\xA0 la recherche des progammes qui s'ex\xC3\xA9cutent sur Ubuntu?"
+  failed_live_cds: "\xC3\x89chec LiveCD / DVD"
+  view_home_donate_why: "Le fonctionnement du site Communtu est bas\xC3\xA9e essentiellement sur l'utilisation de b\xC3\xA9n\xC3\xA9voles, mais il co\xC3\xBBte de l'argent (par exemple pour les serveurs et les chambres). Communtu est donc tributaire de dons. M\xC3\xAAme de petits montants peuvent aider."
+  view_home_home_27: "Communtu te permet de:"
+  donation_purpose: "Objectif: Communtu"
+  controller_metapackages_not_changed: "La Liasse a \xC3\xA9t\xC3\xA9 cr\xC3\xA9\xC3\xA9 comme un m\xC3\xA9ta-paquet et transf\xC3\xA9r\xC3\xA9."
+  view_sent_show_2: "Date:"
+  make_a_systemupgrade: "Vous voulez faire une mise \xC3\xA0 niveau du syst\xC3\xA8me. Ensuite, regardez <a href=\"http://communtu.wordpress.com/2009/09/16/avec-communtu-une-Am\xC3\xA9lioration du syst\xC3\xA8me -effectuer/\">  comme c est facile </ a> et transfere ta liste de paquets sur Communtu            "
+  livecd_message: "Via un live CD, le logiciel peut etre \xC3\xA0 la fois essaye et install\xC3\xA9. Ceci etant, un soi-disant (()) cdimage_link est cr\xC3\xA9\xC3\xA9, sous la forme d'un fichier ISO que tu peux graver. Pour graver un CD dont tu  as besoin, si tu as s\xC3\xA9lectionn\xC3\xA9 un grand nombre de logiciels, d'un DVD. <br /> <br /> La cr\xC3\xA9ation de l'image prend un certain temps. Tu seras averti par email lorsque l'image est pr\xC3\xAAte. S'il te  plait v\xC3\xA9rifie que tes  param\xC3\xA8tres d'utilisateur sp\xC3\xA9cifi\xC3\xA9 dans une adresse email valide."
+  view_layouts_application_13: A propos de Communtu
+  allgemeinbildung: "G\xC3\xA9n\xC3\xA9ral e.V."
+  view_home_home_28: "T\xC3\xA9l\xC3\xA9charger:"
+  view_layouts_application_14: "Message \xC3\xA0 Communtu"
+  view_repositories_index_0: "R\xC3\xA9f\xC3\xA9rentiels"
+  view_home_home_29: Pour quel sujet recherches tu des programmes
+  view_layouts_application_15: "enregistr\xC3\xA9s comme"
+  view_layouts_application_16: nouveau message
+  view_home_home_30: "Liasse:"
+  view_layouts_application_18: "*aucun nouveau message "
+  package_list: "retour \xC3\xA0 la liste des paquets"
+  view_home_home_31: "Ici, tu peux choisir des th\xC3\xA8mes  d\xC3\xA9taill\xC3\xA9s et  inviter des programmes et des faisceaux de programme, mais aussi cr\xC3\xA9er et g\xC3\xA9rer leurs propres paquets."
+  view_layouts_application_19: https://www.paypal.com/de_DE/DE/i/btn/btn_donate_LG.gif
+  no_save_database: "Les paquets suivants n'ont pas pu \xC3\xAAtre stock\xC3\xA9s dans la base de donn\xC3\xA9es:"
+  controller_metapackages_debianizing: "Le paquet a \xC3\xA9t\xC3\xA9 cr\xC3\xA9\xC3\xA9 comme un m\xC3\xA9ta-paquet et transf\xC3\xA9r\xC3\xA9.Cela prendra quelques minutes."
+  controller_metapackages_11: Impossible de supprimer le paquet de la liasse.
+  view_home_home_32: "Communtu:"
+  view_repositories_index_5: "Nouveau r\xC3\xA9f\xC3\xA9rentiel"
+  view_home_home_33: Aimerais tu en savoir plus sur vous Communtu? As tu des suggestions, des questions - nous sommes impatients de t entendre.
+  view_layouts_application_20: "Javascript n'est pas activ\xC3\xA9! S'il vous pla\xC3\xAEt activer JavaScript dans votre navigateur."
+  view_distributions_show_0: "R\xC3\xA9f\xC3\xA9rentiels:"
+  view_layouts_application_21: Communtu facilite les  installations de Ubuntu
+  migrate: "\xC3\x89migrer"
+  view_distributions_show_1: tout verifier
+  view_metapackages_migrate_0: "Quelle distribution pour les faisceaux \xC3\xA0 migrer?"
+  view_layouts_application_22: Le profil d'utilisateur
+  view_distributions_show_2: "tout synchroniser "
+  controller_metapackages_15: <option value='2'>Publier<option/>
+  view_metapackages_migrate_1: "Quelle distribution pour les faisceaux \xC3\xA0 migrer?"
+  view_distributions_show_3: Lire sources.liste
+  install: Installer
+  view_layouts_application_23: LIASSE
+  view_distributions_show_4: "Ajouter un r\xC3\xA9f\xC3\xA9rentiel"
