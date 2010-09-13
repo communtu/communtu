@@ -2,7 +2,7 @@
 
 function start {
      echo "Starting mongrels server at port $1"
-     nohup script/server -e production -p $1 >> log/server$1.log 2>&1 &
+     nohup script/server -e development -p $1 >> log/server$1.log 2>&1 &
 }
 
 function startall {
