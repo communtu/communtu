@@ -3440,7 +3440,7 @@ msgstr "Via un live CD, le logiciel peut etre à la fois essaye et installé. Ce
 
 #: make_a_systemupgrade
 msgid "Du möchtest ein System-Upgrade machen. Dann schau <a href=\"http://communtu.wordpress.com/2009/09/16/mit-communtu-ein-systemupgrade-durchfuhren/\">wie einfach das geht</a> und lade deine Paketliste bei Communtu hoch."
-msgstr "Vous voulez faire une mise à niveau du système. Ensuite, regardez <a href=\"http://communtu.wordpress.com/2009/09/16/avec-communtu-une-Amélioration du système -effectuer/\">  comme c est facile </ a> et transfere ta liste de paquets sur Communtu            "
+msgstr "Tu veux faire une mise à niveau du système. Regarde <a href=\"http://communtu.wordpress.com/2009/09/16/avec-communtu-une-Amélioration du système -effectuer/\">  comment c est facile </ a> et telecharge ta liste de paquets sur Communtu.            "
 
 #: view_sent_show_2
 msgid "Zeitpunkt:"
