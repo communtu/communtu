@@ -15,7 +15,7 @@ msgstr "Tu as un nouveau message dans ta boite aux lettres"
 
 #: view_layouts_application_24
 msgid "DOWNLOAD"
-msgstr "Telecharger"
+msgstr "TELECHARGER"
 
 #: sources
 msgid "Quellen"
