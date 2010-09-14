@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Communtu 0.2\n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
-"Last-Translator: Timo Denissen <timo@communtu.de>\n"
+"Last-Translator: \n"
 "Language-Team: Communtu <info@communtu.de>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -2514,7 +2514,7 @@ msgstr "Every repositorie could be reached."
 
 #: blog_link
 msgid "http://communtu.wordpress.com"
-msgstr "http://communtu.wordpress.com"
+msgstr "http://encommuntu.wordpress.com"
 
 #: view_users_show_8
 msgid "Nachrichten"

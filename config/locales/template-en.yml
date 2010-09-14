@@ -1,5 +1,5 @@
 --- 
-en: 
+fr: 
   view_home_home_new_messages_desc: You have new messages in your inbox.
   view_layouts_application_24: DOWNLOAD
   sources: Sources
@@ -641,7 +641,7 @@ en:
   view_users_show_4: "last login:"
   view_admins_test_all_1: Every repositorie could be reached.
   view_users_show_5: "Created bundles:"
-  blog_link: http://communtu.wordpress.com
+  blog_link: http://encommuntu.wordpress.com
   view_users_show_8: Message
   view_metapackages__metalist_20: <option>0 bundles selected</option>
   last_user: We welcome our newest user
