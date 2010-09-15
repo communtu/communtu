@@ -23,7 +23,7 @@ msgstr "Source"
 
 #: category_with_colon
 msgid "Kategorie:"
-msgstr "Categorie:"
+msgstr "Catégorie:"
 
 #: view_layouts_application_25
 msgid "COMMUNTU"
@@ -2392,95 +2392,95 @@ msgstr ""
 
 #: view_cart_new_from_list_tip
 msgid "Tipp: eine große Liste kannst du auch zunächst mit einem Editor thematisch sortieren und die resultierenden Teillisten einzeln hier hochladen. Die entstehenden Bündel kannst du wiederum zu einem Bündel zusammenfassen. Dadurch entsteht ein besser strukturiertes Bündel."
-msgstr ""
+msgstr "Astuce: Tu peux également trier une grande liste de thème avec un éditeur et ensuite les sous-listes résultant peuvent être séparément télécharger ici. La compilation obtenue peut être de nouveau regrouppé en compilation. Cela crée une compilation plus structurée."
 
 #: view_users_show_0
 msgid "Benutzer anzeigen"
-msgstr ""
+msgstr "Profil de l'utilisateur"
 
 #: view_metapackages_edit_gpl
 msgid "Ich stimme zu, die Bündel Information unter der <a href=\"http://www.gnu.de/documents/gpl.de.html\">GNU General public license</a> (Version 2.0 oder höher) zu veröffentlichen."
-msgstr ""
+msgstr "J'accepte de publier les informatios de compilation sous  la<a href=\"http://www.gnu.de/documents/gpl.de.html\">licence GNU General public </ a> (version 2.0 ou supérieure) pour . publication"
 
 #: view_home_donate
 msgid "Für Communtu spenden"
-msgstr ""
+msgstr "Faire un don pour Communtu"
 
 #: save
 msgid "Speichern"
-msgstr ""
+msgstr "Sauvegarder"
 
 #: view_roles_new_0
 msgid "Neue Rolle"
-msgstr ""
+msgstr "Nouveau rôle"
 
 #: search_package
 msgid "Paket suchen"
-msgstr ""
+msgstr "Chercher le paquet"
 
 #: view_metapackages__metalist_14
 msgid "installieren mittels Metapaket. Bitte vorher die Quellen hinzufügen."
-msgstr ""
+msgstr "installation via metapaquet. S'il vous plaît ajouter les sources avant."
 
 #: view_users_show_2
 msgid "Nutzer seit: "
-msgstr ""
+msgstr "Membre depuis:"
 
 #: view_users_show_3
 msgid "(Monat/Jahr)"
-msgstr ""
+msgstr "(Mois /Année)"
 
 #: view_metapackages_show_version
 msgid "Version:"
-msgstr ""
+msgstr "Version:"
 
 #: subtype
 msgid "Subtyp:"
-msgstr ""
+msgstr "Sous-type:"
 
 #: view_users_show_4
 msgid "Zuletzt eingeloggt: "
-msgstr ""
+msgstr "Dernier visiteur:"
 
 #: view_admins_test_all_0
 msgid "Folgende Repositories konnten nicht gelesen werden:"
-msgstr ""
+msgstr "Les référentiels suivants n'ont pas pu être lu:"
 
 #: view_users_show_5
 msgid "Erstellte Bündel: "
-msgstr ""
+msgstr "Compilation créee"
 
 #: view_admins_test_all_1
 msgid "Alle Repositories wurden erreicht."
-msgstr ""
+msgstr "Tous les réferentiels ont été atteints."
 
 #: blog_link
 msgid "http://communtu.wordpress.com"
-msgstr ""
+msgstr "http://communtu.wordpress.com"
 
 #: view_users_show_8
 msgid "Nachrichten"
-msgstr ""
+msgstr "Nouvelles"
 
 #: view_metapackages__metalist_20
 msgid "<option>0 Bündel ausgewählt</option>"
-msgstr ""
+msgstr "<option>0 compilation sélectionné </option>   "
 
 #: last_user
 msgid "Wir begrüßen unseren zuletzt neu-registrierten Nutzer"
-msgstr ""
+msgstr "Bienvenue à notre dernier nouveau utilisateur enregistré"
 
 #: save_selection
 msgid "Auswahl speichern"
-msgstr ""
+msgstr "Enregistrer la sélection"
 
 #: livecd_image
 msgid "CD-Image"
-msgstr ""
+msgstr "image CD"
 
 #: view_categories_index_0
 msgid "Kategorien-Übersicht"
-msgstr ""
+msgstr "Aperçu des catégories "
 
 #: view_packages__packagelist_1
 msgid "Nur&nbsp;Programme:"
@@ -2488,427 +2488,427 @@ msgstr ""
 
 #: eg
 msgid "z.B."
-msgstr ""
+msgstr "par exemple:"
 
 #: view_packages__packagelist_2
 msgid "Suche:"
-msgstr ""
+msgstr "Recherche:"
 
 #: cant_debianized
 msgid "Bitte gib dem Bündel einen englischen Titel und eine englische Beschreibung."
-msgstr ""
+msgstr "S'il te plait  fais entrer dans la compilation un titre en anglais et une description en anglais."
 
 #: edit_press_archiv
 msgid "Pressearchiv bearbeiten"
-msgstr ""
+msgstr "Editer l'archive de presse"
 
 #: four_and_fourty_letters
 msgid "Zwischen 4 und 40 Zeichen"
-msgstr ""
+msgstr "Entre 4 et 40 caractères"
 
 #: circular_dependency
 msgid "Fehler: zirkuläre Abhängigkeiten zwischen Bündeln"
-msgstr ""
+msgstr "Erreur: dépendances circulaires entre les compilations"
 
 #: view_repositories_show_4
 msgid "Paketliste für {{arch}}:"
-msgstr ""
+msgstr "liste des paquets pour {{arch}}:"
 
 #: livecd_email_failed
 msgid "Communtu: Erstellung der Live-CD/DVD fehlgeschlagen"
-msgstr ""
+msgstr "Communtu: Impossible de créer le Live-CD/DVD"
 
 #: usb_image
 msgid "USB-Image"
-msgstr ""
+msgstr "USB Image"
 
 #: controller_application_0
 msgid "Diese Funktion ist für Gäste nicht verfügbar."
-msgstr ""
+msgstr "Cette fonctionnalité n'est pas disponible pour les visiteurs."
 
 #: livecd_email_body_failed
 msgid ", die Live-CD/DVD {{name}} konnte leider nicht erstellt werden. Wir kümmern uns um das Problem."
-msgstr ""
+msgstr ", le Live-CD/DVD {{nom}} n'a pas pu être créé. Nous nous occupons du problème."
 
 #: being_created
 msgid "wird erstellt"
-msgstr ""
+msgstr "est créé"
 
 #: bundle_by_owner
 msgid "erstellte Bündel"
-msgstr ""
+msgstr "compilation créee"
 
 #: view_repositories_show_6
 msgid "        OpenSource"
-msgstr ""
+msgstr "OpenSource"
 
 #: new_architecture
 msgid "Neue Architektur"
-msgstr ""
+msgstr "Nouvelle Architecture"
 
 #: view_home_mail_0
 msgid "Benachrichtigung bei Fehlerbehebung"
-msgstr ""
+msgstr "Notification sur le depannage"
 
 #: iso_image
 msgid "ISO-Image (für CD/DVD)"
-msgstr ""
+msgstr "Image ISO (pour les CD / DVD)"
 
 #: view_repositories_show_7
 msgid "        kommerziell "
-msgstr ""
+msgstr "commercialement"
 
 #: advanced_user
 msgid "Ich bin fortgeschrittener Benutzer und will auch unfertige Versionen von Ubuntu sehen."
-msgstr ""
+msgstr "Je suis un utilisateur expérimenté et j aimerais voir les versions inachevées de Ubuntu."
 
 #: view_home_mail_1
 msgid "Bitte benachrichtigt mich unter folgender E-Mail über die Fehlerbehebung."
-msgstr ""
+msgstr "S'il te plait informe-moi à l'adresse e-mail suivante par rapport au depannage"
 
 #: view_categories_index_12
 msgid "Kategorienbaum anzeigen"
-msgstr ""
+msgstr "Afficher la catégorie arbre"
 
 #: view_packages_show_2
 msgid "Paket sofort installieren"
-msgstr ""
+msgstr "Installer le paquet immédiatement"
 
 #: none
 msgid "Keine"
-msgstr ""
+msgstr "Aucun"
 
 #: view_passwords_edit_0
 msgid "    Passwort:"
-msgstr ""
+msgstr "Mot de passe:"
 
 #: link_community_title
 msgid "Externer Link: zu den Seiten von ubuntuusers"
-msgstr ""
+msgstr "Lien externe: les pages pour les utilisateurs de ubuntu"
 
 #: third_party
 msgid "alle Anbieter"
-msgstr ""
+msgstr "tous les fournisseurs"
 
 #: view_packages_show_5
 msgid "Quellen für diese Paket hinzufügen"
-msgstr ""
+msgstr "Ajouter les sources de ce paquet "
 
 #: view_home_donate_options
 msgid "Es gibt verschiedene Möglichkeiten, etwas zu spenden."
-msgstr ""
+msgstr "Il existe plusieurs façons de faire don de quelque chose."
 
 #: view_passwords_edit_1
 msgid "    Passwort bestätigen:"
-msgstr ""
+msgstr "Confirmer mot de passe:"
 
 #: view_packages_show_11
 msgid "Weblinks:"
-msgstr ""
+msgstr "Liens:"
 
 #: view_user_profiles__profile_data_10
 msgid " Nur Ubuntuquellen zulassen (\"main/restricted\", sehr sicher: Sicherheits-Updates von Ubuntu)"
-msgstr ""
+msgstr "N'autorisez que les sources Ubuntu (\"Main /« Réservé \", très sécurisé: mises à jour de sécurité de Ubuntu)"
 
 #: view_passwords_edit_2
 msgid "Neues Passwort erhalten"
-msgstr ""
+msgstr "Recevoir un nouveau mot de passe"
 
 #: view_user_profiles__profile_data_11
 msgid " Auch Communityquellen zulassen (\"universe/multiverse\", auch sicher, mehr Programme/Komfort: "
-msgstr ""
+msgstr "Les sources communautaires sont également authorisées (\"universe / multiverse \", également  sûre , programmes/Confort:"
 
 #: view_home_icons_10
 msgid "Programm"
-msgstr ""
+msgstr "Programme"
 
 #: view_user_profiles__profile_data_12
 msgid " Alle Quellen zulassen (etwas unsicherer: <a href=\"http://wiki.ubuntuusers.de/Fremdquellen\">Fremdpakete</a> können das System gefährden, aber noch mehr Programme/Komfort: "
-msgstr ""
+msgstr "Authoriser toutes les sources  (un peu incertaine: <a href=\"http://wiki.ubuntuusers.de/Fremdquellen\"> Paquets inconnus </ a> peuvent compromettre le système, mais plus encore programme/confort:"
 
 #: view_packages_show_8
 msgid "Beliebtheit:"
-msgstr ""
+msgstr "Popularité:"
 
 #: view_home_home_rating_link
 msgid "Zum Bündel bewerten"
-msgstr ""
+msgstr "evaluation de la compilation"
 
 #: new_bundle
 msgid "Neues Bündel"
-msgstr ""
+msgstr "Nouvelle compilation"
 
 #: yes1
 msgid "ja"
-msgstr ""
+msgstr "oui"
 
 #: view_user_profiles__profile_data_13
 msgid "Hier kannst du auswählen, welche Lizenzen du zulassen willst"
-msgstr ""
+msgstr "Ici tu peux choisir la licence que tu souhaites autoriser"
 
 #: view_user_profiles__installation_0
 msgid "Ubuntu-Nachinstallation"
-msgstr ""
+msgstr "réinstallation Ubuntu"
 
 #: view_packages_show_9
 msgid "/5 Sterne&nbsp;&nbsp; "
-msgstr ""
+msgstr "/ 5 Etoile&nbsp;&nbsp; "
 
 #: view_packages__deps_0
 msgid "keine"
-msgstr ""
+msgstr "aucune"
 
 #: view_derivatives_show_1
 msgid "Sudo-Programm:"
-msgstr ""
+msgstr "programme sudo:"
 
 #: controller_sessions_1
 msgid "Du bist bereits angemeldet."
-msgstr ""
+msgstr "Vous êtes déjà inscrit."
 
 #: view_home_icons_12
 msgid " Programm (wenn kein anderes Programm-Icon vorhanden)"
-msgstr ""
+msgstr "Programme (si aucun autre icône du programme n'est disponible)"
 
 #: view_metapackages__metalist_2
 msgid "Standard"
-msgstr ""
+msgstr "Standard"
 
 #: view_packages_show_15
 msgid "Quelle/Repository"
-msgstr ""
+msgstr "Source/Referentiel"
 
 #: view_user_profiles__profile_data_14
 msgid " Freie Software (Quellen liegen offen und dürfen weiterentwickelt werden)"
-msgstr ""
+msgstr "Logiciel libre (les sources sont disponible  et peut être développé)"
 
 #: view_user_profiles__installation_1
 msgid "Um etwas installieren zu können, musst du zunächst unter \"Softwareauswahl\" etwas auswählen."
-msgstr ""
+msgstr "Pour installer quelque chose, tu dois d'abord sous  \"sélection Software \"  sélectionner quelque chose."
 
 #: offer_new_category
 msgid "Vorschlag einer neuen Kategorie"
-msgstr ""
+msgstr "Proposition d'une nouvelle catégorie"
 
 #: view_packages__deps_1
 msgid "          Nur für "
-msgstr ""
+msgstr "Uniquement pour "
 
 #: view_derivatives_show_2
 msgid "Dialog-Programm:"
-msgstr ""
+msgstr "programme de dialogue:"
 
 #: controller_packages_1
 msgid "Paket erzeugt."
-msgstr ""
+msgstr "Paquet créé."
 
 #: view_metapackages_show_save_2
 msgid "Neues Metapaket erstellen."
-msgstr ""
+msgstr "Créer nouveau méta-paquet."
 
 #: view_home_icons_13
 msgid "Programm-Bündel"
-msgstr ""
+msgstr "Programme-compilé"
 
 #: view_metapackages__metalist_3
 msgid "Öff."
-msgstr ""
+msgstr "Ouverture."
 
 #: invisible_distribution
 msgid "Unsichtbare Distribution"
-msgstr ""
+msgstr "Distribution Invisible"
 
 #: view_packages_show_16
 msgid "Paket-Version"
-msgstr ""
+msgstr "Version du paquet"
 
 #: view_user_profiles__profile_data_15
 msgid " Unfreie Lizenzen zulassen (auch kostenlos, aber Quellen liegen nicht offen - der weiche Übergang zu Linux: "
-msgstr ""
+msgstr "licences pas gratuite permise (également gratuit, mais les sources ne sont pas ouverts - la transition en douceur vers Linux:AnhörenUmschrift)"
 
 #: view_user_profiles__installation_2
 msgid "Aufgrund deiner Auswahl werden jetzt Programme auf deinem Computer installiert. Folgende Schritte sind dafür zu tun"
-msgstr ""
+msgstr "En raison de votre choix des programmes seront être installés sur votre ordinateur. Les étapes suivantes sont á suivre"
 
 #: view_derivatives_show_3
 msgid "Icon file:"
-msgstr ""
+msgstr "Icône de fichier:"
 
 #: controller_packages_2
 msgid "Paket aktualisiert."
-msgstr ""
+msgstr "Mise à jour du paquet."
 
 #: controller_sessions_3
 msgid "Deine hier registrierte Distribution wurde auf {{dist_old}} geändert, weil deine alte Distribution von Ubuntu (und daher auch von Communtu) nicht mehr unterstützt wird. Wir empfehlen für deinen Computer ein <a href='http://wiki.ubuntuusers.de/Upgrade'>Upgrade</a> auf {{dist_new}}."
-msgstr ""
+msgstr "L'enregistrement de ta distribution a été remplacé par {{dist_old}} parce que votre ancienne distribution d'Ubuntu (et donc aussi de Communtu) n'est plus supporté. Nous recommandons un pour votre ordinateur une  <a href='http://wiki.ubuntuusers.de/Upgrade'>a mise à niveau </a> pour {{dist_new}}."
 
 #: view_packages_show_17
 msgid "Beinhaltet folgende Pakete (\"depends\" und \"recommends\"):"
-msgstr ""
+msgstr "Inclut les paquets suivants (\"dépend \" et \"recommande \"):"
 
 #: archive
 msgid "Archiv"
-msgstr ""
+msgstr "Archives"
 
 #: controller_sessions_4
 msgid "Du wurdest abgemeldet."
-msgstr ""
+msgstr "Tu as  été déconnecté."
 
 #: view_metapackages_show_save_3
 msgid "Zum Erstellen des Metapakets muss ein englischer Titel und eine englische Beschreibung vergeben werden."
-msgstr ""
+msgstr "Pour créer le méta-paquet, il faut un titre en anglais et une description en anglais ."
 
 #: view_home_icons_15
 msgid " Programm-Bündel"
-msgstr ""
+msgstr "Programme-compilé"
 
 #: controller_sessions_5
 msgid "Dein Benutzername oder Passwort ist falsch. Bitte ggf. unten auf \"Registrieren\" klicken."
-msgstr ""
+msgstr "Votre nom d'utilisateur ou mot de passe est incorrect. S'il vous plaît vers le bas sur  \"enregistrer \" bouton."
 
 #: view_home_icons_16
 msgid " Migration von Repositories"
-msgstr ""
+msgstr "Migration des referentiels"
 
 #: view_packages_show_19
 msgid "Konflikte mit folgenden Paketen (nur solche ohne Version):"
-msgstr ""
+msgstr "Conflits avec les paquets suivants (seuls ceux qui ont pas de version):"
 
 #: view_user_profiles__profile_data_17
 msgid "Speichern und feiner auswählen"
-msgstr ""
+msgstr "Enregistrer et choisir "
 
 #: donation_receipt
 msgid "Spendenbescheinigung kann ausgestellt werden."
-msgstr ""
+msgstr "reçu de don peut être délivré."
 
 #: repository_url
 msgid "Repository-URL: "
-msgstr ""
+msgstr "Referentiel-URL:"
 
 #: controller_sessions_6
 msgid "Dein Benutzerkonto wurde noch nicht aktiviert. Der Aktivierungscode wurde dir per Email zugeschickt."
-msgstr ""
+msgstr "Votre compte n'a pas été activé. Le code d'activation vous est envoyé par e-mail."
 
 #: view_home_icons_17
 msgid "externer Link"
-msgstr ""
+msgstr "lien externe"
 
 #: controller_sessions_7
 msgid "Dein Benutzerkonto wurde deaktiviert oder gelöscht."
-msgstr ""
+msgstr "Votre compte a été désactivé ou supprimé."
 
 #: view_home_icons_19
 msgid " externer Link"
-msgstr ""
+msgstr "lien externe"
 
 #: view_home_home_bundle
 msgid "vorkonfigurierte veröffentlichte Programmbündel in Communtu"
-msgstr ""
+msgstr "paquets pré-configuré dans le programme publié Communtu"
 
 #: view_packages_show_21
 msgid "Wird in folgenden Paketen benutzt:"
-msgstr ""
+msgstr "Employé dans les paquets suivants:"
 
 #: discuss
 msgid "discuss"
-msgstr ""
+msgstr "discuter"
 
 #: view_videos_show_0
 msgid "Url:"
-msgstr ""
+msgstr "Url:"
 
 #: feedback
 msgid "Kommentar"
-msgstr ""
+msgstr "Commentaire"
 
 #: create_your_livedvd
 msgid "Erstelle dir eine Live-CD"
-msgstr ""
+msgstr "Créez toi-même un Live CD"
 
 #: start
 msgid "Start"
-msgstr ""
+msgstr "Debuter"
 
 #: view_home_icons_20
 msgid "User-Icon"
-msgstr ""
+msgstr "Utilisateur-icône "
 
 #: headline
 msgid "macht Ubuntu-Installationen einfach"
-msgstr ""
+msgstr "rend l'installation de Ubuntu facile"
 
 #: first_sync_repos
 msgid "Bitte erst die Repositories synchronisieren. Dies geschieht normalerweise automatisch innerhalb von einer Woche. Achtung: an dieser Stelle wird nur geprüft, ob überhaupt etwas synchronisiert wurde, nicht, ob der Prozess fertig ist."
-msgstr ""
+msgstr "S'il vous plaît premiérement synchroniser les réferentiels. Cela se fait généralement automatiquement dans  l'intervalle d'une semaine. S'il vous plaît noter: à ce stade n'est vérifiée que si quelque chose était synchronisé, pas de savoir si le processus est terminé."
 
 #: view_home_icons_22
 msgid " User Icon"
-msgstr ""
+msgstr "Icône pour l'utilisateur"
 
 #: email_with_colon
 msgid "E-Mail: "
-msgstr ""
+msgstr "E-Mail: "
 
 #: you_can
 msgid "Du kannst dich auch "
-msgstr ""
+msgstr "Tu peux aussi t'"
 
 #: view_home_icons_23
 msgid "Nachrichtensymbol"
-msgstr ""
+msgstr "icône de message"
 
 #: view_packages_show_26
 msgid "Metapaket in Bündel wandeln"
-msgstr ""
+msgstr "Transformer le Metapaquet en compilation"
 
 #: make_distribution_visible
 msgid "Distribution sichtbar machen"
-msgstr ""
+msgstr "Rendre distribution visible"
 
 #: view_home_icons_24
 msgid "Nachrichtensymbol für Post erhalten"
-msgstr ""
+msgstr "Icône de message pour le courrier reçu"
 
 #: controller_debs_0
 msgid "Debian-Pakete"
-msgstr ""
+msgstr "les paquets Debian."
 
 #: controller_debs_1
 msgid "Deb erzeugt."
-msgstr ""
+msgstr "Deb est créé ."
 
 #: view_packages_edit_10
 msgid "Beschreibung des Pakets"
-msgstr ""
+msgstr "Description du paquet"
 
 #: view_mailbox_show_1
 msgid "Von"
-msgstr ""
+msgstr "De"
 
 #: choose_bundle
 msgid "Bündel auswählen"
-msgstr ""
+msgstr "Choisir une compilation"
 
 #: controller_debs_2
 msgid "Deb aktualisiert."
-msgstr ""
+msgstr "Deb mise à jour."
 
 #: view_layouts_donate
 msgid "Spenden"
-msgstr ""
+msgstr "Donner"
 
 #: view_home_faq_gnome_01
 msgid "Unter \"System -> Systemverwaltung -> Software-Quellen -> Softwarequellen von Drittanbietern\" sind die Communtu Quellen auffindbar. Hier können sie auch wieder deaktiviert werden."
-msgstr ""
+msgstr "Sous  \"Système -> Administration -> Sources de logiciels -> Sources de logiciels tiers \" les sources Communtu sont trouvable. Ici, ils peuvent également être désactivé à nouveau."
 
 #: view_mailbox_show_3
 msgid "erhalten"
-msgstr ""
+msgstr "obtenir"
 
 #: wait_for_release
 msgid "auf offizielles Ubuntu-Release warten"
-msgstr ""
+msgstr "attendre la liberation officielle de Ubuntu"
 
 #: view_home_faq_gnome_02
 msgid "Die Pakerverwaltung Synaptic erreichst du über \"System -> Systemverwaltung -> Synaptic-Paketverwaltung\". Wähle hier unten links den Punkt Ursprung. Suche nun in der darüber liegenden Liste \"packages.communtu.org\" und klicke es an. Auf der rechten Seite werden nun die verfügbaren Metapakete in Communtu angezeigt. Das Entfernen geht über Rechtsmausklick und dann \"Zum Entfernen vormerken\". Dies muss dann danach durch \"Anwenden\" bestätigt werden."
@@ -2916,287 +2916,287 @@ msgstr ""
 
 #: view_mailbox_show_5
 msgid "Du hast keine Nachrichten in deinem Posteingang."
-msgstr ""
+msgstr "Vous n'avez pas de messages dans votre boîte de réception."
 
 #: invalid_activation_code_entered
 msgid "Ungültiger Anderungscode eingegeben."
-msgstr ""
+msgstr "Entree invalide de mise á jour de code"
 
 #: livecd_previous_cds
 msgid "Bisher erstellte Live-CDs/DVDs:"
-msgstr ""
+msgstr "Jusqu'ici Live-CDs/DVDs créé:"
 
 #: migrate_repository
 msgid "Repository migieren"
-msgstr ""
+msgstr "remplacer le referentiel"
 
 #: bundle_editor
 msgid "Bündel-Editor"
-msgstr ""
+msgstr "Compilation-Editeur"
 
 #: which_programs_do_you_need
 msgid "Zu welchem Thema suchst du Programme (Büro, Grafik,...)? Hier kannst du deine Interessengebiete eingeben und passende vorkonfigurierte Programmbündel zusammenstellen."
-msgstr ""
+msgstr "Sur quel sujet recherche tu des programmes(bureau, graphiques ,...)? Ici tu peux entrer tes centres d'intérêt et mettre sur pied un programme adapté pré-configuré:"
 
 #: description_with_colon
 msgid "Beschreibung:"
-msgstr ""
+msgstr "Description:"
 
 #: view_admins_sync_all_1
 msgid "Fehler: Repositories konnten nicht synchronisiert werden"
-msgstr ""
+msgstr "Erreur: les referentiels n'ont pas pu être synchronisés"
 
 #: edit
 msgid "Bearbeiten"
-msgstr ""
+msgstr "Éditer"
 
 #: model_user_profile_tabz_0
 msgid "Grunddaten"
-msgstr ""
+msgstr "Les données de base"
 
 #: view_admins_sync_all_2
 msgid "Repositories synchronisiert"
-msgstr ""
+msgstr "Référentiels synchronisés"
 
 #: choose_parent
 msgid "Wähle einen Parent aus!"
-msgstr ""
+msgstr "Choisis un parent!"
 
 #: model_user_profile_tabz_1
 msgid "Softwareauswahl"
-msgstr ""
+msgstr "Sélection de Logiciel"
 
 #: controller_suggestion_11
 msgid "Paketquellen hinzufügen"
-msgstr ""
+msgstr "Ajouter les sources des paquets"
 
 #: navigation_communtu
 msgid "Navigation Communtu"
-msgstr ""
+msgstr "Navigation Communtu"
 
 #: controller_suggestion_12
 msgid "Folgende Paketquellen werden hinzugefügt"
-msgstr ""
+msgstr "Les Sources de paquets suivants seront ajoutés"
 
 #: view_home_auth_error_0
 msgid "Authentifizierungs-Fehler"
-msgstr ""
+msgstr "Erreur d'authentification"
 
 #: error_no_attachement
 msgid "Du hast keine Datei ausgewählt. Der Vorgang wurde abgebrochen."
-msgstr ""
+msgstr "Tu n'as sélectionné aucun fichier. L'opération a été interrompue."
 
 #: model_user_profile_tabz_3
 msgid "Installation durchführen"
-msgstr ""
+msgstr "Effectuer l'installation:"
 
 #: mailinglist
 msgid "Mailinglisten:"
-msgstr ""
+msgstr "Listes de diffusion:"
 
 #: view_home_auth_error_1
 msgid "Die Daten, die du an Communtu geschickt hast, konnten nicht korrekt authentifiziert werden. Bitte versuche, dich noch einmal anzumelden bzw. das entsprechende Formular noch einmal auszufüllen. Dies kann daher kommen, dass du deine Cookies nicht aktiviert hast."
-msgstr ""
+msgstr "Les données que tu as envoyé à Communtu n'ont pas pu être authentifié correctement. S'il te plaît essaye encore d'accéder au site  et rempli une fois de plus le formulaire approprié. Ce probleme vient  probablement du fait que  tu  n'ais pas activé tes cookies."
 
 #: ubuntu_derivatives
 msgid "Ubuntu-Derivate"
-msgstr ""
+msgstr "Ubuntu dérivés"
 
 #: model_user_profile_tabz_4
 msgid "Voreinstellungen"
-msgstr ""
+msgstr "pre-installations"
 
 #: controller_suggestion_15
 msgid "Pakete installieren"
-msgstr ""
+msgstr "Installer les paquets"
 
 #: force_sync
 msgid "Synchronisierung des Repositories erzwingen"
-msgstr ""
+msgstr "Forcer la synchronisation des référentiels "
 
 #: we_want_you
 msgid "Wir brauchen dich"
-msgstr ""
+msgstr "Nous avons besoin de toi"
 
 #: controller_suggestion_16
 msgid "Folgende Pakete werden installiert"
-msgstr ""
+msgstr "Les paquets suivants seront installés"
 
 #: controller_sent_0
 msgid "Der Betreff darf nicht leer sein."
-msgstr ""
+msgstr "Le sujet ne doit pas être vide."
 
 #: make_your_livedvd
 msgid "Du hast noch kein Ubuntu installiert. Dann wähle hier deine Bündel aus und brenne dir eine CD, damit du sie als Live-CD und zur Installation nutzen kannst."
-msgstr ""
+msgstr "Tu n'as pas encore installé Ubuntu. Sélectionne ta compilation ici et grave un CD  afin que  tu puisses l'utiliser comme un live-CD et aussi pour l'installation."
 
 #: bundel_editing
 msgid "zur Bündelbearbeitung"
-msgstr ""
+msgstr "pour éditer les compilations"
 
 #: controller_sent_1
 msgid "Benutzer existiert nicht"
-msgstr ""
+msgstr "L'utilisateur n'existe pas"
 
 #: view_user_profiles__sources_0
 msgid "Quellen für die zu installierenden Programme"
-msgstr ""
+msgstr "Sources pour les programmes à installer"
 
 #: view_home_impressum_2
 msgid "AG Communtu"
-msgstr ""
+msgstr "AG Communtu"
 
 #: architectures
 msgid "Architekturen"
-msgstr ""
+msgstr "Architectures"
 
 #: view_rating_show_title_ratings_count
 msgid "(Basierend auf {{votes}} Bewertung(en))"
-msgstr ""
+msgstr "(qui est Basé sur {{vote}}  Evaluation(s))"
 
 #: controller_sent_2
 msgid "Nachricht erfolgreich versendet"
-msgstr ""
+msgstr "Message envoyé avec succès"
 
 #: view_user_profiles__sources_1
 msgid "Hier werden die zu installierenden Programme und Pakete nach den zugehörigen Quellen sortiert aufgelistet, so dass du auch sehen kannst, weshalb die jeweiligen Quellen hinzugefügt werden."
-msgstr ""
+msgstr "Ici les programmes et les paquets  a installer sont triés selon les sources et  énumérées de tel sorte que tu puisses également voir pourquoi les sources pertinentes sont ajoutés."
 
 #: model_package_0
 msgid "Freie Software"
-msgstr ""
+msgstr "Logiciel Libre"
 
 #: missing_debs_for_bundle
 msgid "Fehlende debs für Bündel:"
-msgstr ""
+msgstr "il manque debs pour la liasse:"
 
 #: start_vm
 msgid "Virtuelle Maschine starten"
-msgstr ""
+msgstr "démarrer la machine virtuelle"
 
 #: view_user_profiles__profile_rating_0
 msgid "Auswahl der zu installierenden Programmbündel und Programme"
-msgstr ""
+msgstr "Sélectionez les programmes compilés et les programmes á installer"
 
 #: model_package_1
 msgid "Frei+proprietär"
-msgstr ""
+msgstr "Libre + Propriétaire"
 
 #: view_home_impressum_4
 msgid "Bauernstr. 2"
-msgstr ""
+msgstr "Bauernstr. 2"
 
 #: view_user_profiles__profile_rating_1
 msgid "Rechts findest du die Details zur links ausgewählten Kategorie."
-msgstr ""
+msgstr "A la droite tu trouveras les détails sur le lien de la catégorie sélectionnée "
 
 #: model_package_2
 msgid "Unbekannt"
-msgstr ""
+msgstr "Inconnu"
 
 #: view_home_icons_0
 msgid "Icons bei Communtu"
-msgstr ""
+msgstr "Les icônes de Communtu"
 
 #: view_home_impressum_5
 msgid "28203 Bremen"
-msgstr ""
+msgstr "28203 Bremen"
 
 #: livecd_email_body
 msgid ", die Live-CD/DVD wurde erstellt! Folge dem Link: "
-msgstr ""
+msgstr ", le Live-CD/DVD a été créé! Suis le lien:"
 
 #: additional_sources
 msgid "Zusätzliche Quellen, die hinzugefügt werden, weil bestimmte Quellen nicht in sich abgeschlossen sind"
-msgstr ""
+msgstr "Autres sources qui sont ajoutés en raison de certaines sources ne sont pas complètes."
 
 #: order_number
 msgid "Sortiernummer (kleinste Zahl zu erst):"
-msgstr ""
+msgstr "Numero classé (le plus petit nombre en premier)"
 
 #: videos
 msgid "Videos:"
-msgstr ""
+msgstr "Vidéos:"
 
 #: senden
 msgid "Abschicken"
-msgstr ""
+msgstr "Envoyer"
 
 #: view_home_icons_3
 msgid " Paket(e) installieren."
-msgstr ""
+msgstr "Installer les paquets"
 
 #: model_package_6
 msgid "<br> hat nicht das richtige Format"
-msgstr ""
+msgstr "<br> n a pas le bon format"
 
 #: register
 msgid "Registrieren"
-msgstr ""
+msgstr "S'inscrire"
 
 #: model_package_7
 msgid "Konnte URL für {{repo}} nicht feststellen"
-msgstr ""
+msgstr "ne parviens a detecter l' URL pour {{repo}}"
 
 #: model_package_need_not_update
 msgid "{{url}} hat sich nicht geändert"
-msgstr ""
+msgstr "{{url}} n'a pas changé"
 
 #: view_home_icons_6
 msgid " Quellen installieren"
-msgstr ""
+msgstr "Installer les sources"
 
 #: model_package_9
 msgid "Bei der Synchronisation des Repositories {{repo_name}} konnte kein PackageDistr-Eintrag für das Paket {{package_name}} gefunden werden."
-msgstr ""
+msgstr "Lors de la synchronisation du référentiel {{repo_name}} impossible de trouver  PackageDistr-Eintrag pour le paquet {{package_name}}"
 
 #: view_home_about_12
 msgid "<b>Bündel verwalten</b> auf der linken Seitenleiste gibt dir einen Überblick über die verfügbaren Bündel. Schließlich gibt es unter <b>Ubuntu-Versionen</b> eine Übersicht über die im System verfügbaren Ubuntu-Versionen (Distributionen)."
-msgstr ""
+msgstr "<b>Gérer la compilation </ b> La barre latérale gauche donne un aperçu des Liasses disponibles. Il existe sur <b> Ubuntu versions</ b> un aperçu des versions Ubuntu disponiblent dans le system (Distributions)."
 
 #: creation_failed
 msgid "Erzeugung fehlgeschlagen"
-msgstr ""
+msgstr "Generation a échoué"
 
 #: view_home_icons_9
 msgid " Installation per Shell-Script"
-msgstr ""
+msgstr "Installation via script shell"
 
 #: distribution
 msgid "Distribution"
-msgstr ""
+msgstr "Distribution"
 
 #: link_community
 msgid "http://www.ubuntuusers.de"
-msgstr ""
+msgstr "http://www.ubuntuusers.de"
 
 #: natur_geist_und_technik
 msgid "Natur, Geist und Technik - Verein zur Förderung der Allgemeinbildung e.V."
-msgstr ""
+msgstr "Nature, Esprit et  Technologie - Association pour la promotion de l'alphabétisation eV"
 
 #: fine_selection
 msgid "Feinauswahl"
-msgstr ""
+msgstr "Fine sélection"
 
 #: logfile_extract
 msgid "Auszug aus dem Logfile"
-msgstr ""
+msgstr "Extrait du fichier journal"
 
 #: lib_system_0
 msgid "Du musst eingeloggt sein, um dieses Feature zu benutzen. Geht auch als \"Gast\"."
-msgstr ""
+msgstr "Tu dois te connecter pour pouvoir utiliser cette fonctionnalité. Cela est aussi valable pour \"Visiteur\"."
 
 #: view_packages__search_0
 msgid "Suche nach Paketen"
-msgstr ""
+msgstr "Rechercher des paquets"
 
 #: view_distributions_edit_0
 msgid "Distribution bearbeiten"
-msgstr ""
+msgstr "Editer la distrbution"
 
 #: lib_system_1
 msgid "Du hast keine Berechtigung für diese Aktion."
-msgstr ""
+msgstr "Tu n ' as pas la permission de poursuivre cette action."
 
 #: controller_derivatives_1
 msgid "Derivative erzeugt."
@@ -3204,7 +3204,7 @@ msgstr "Dérivés générés."
 
 #: view_metapackages_show_modified
 msgid "Das Bündel enthält Änderungen."
-msgstr "La Liasse contient des modifications."
+msgstr "La compilation contient des modifications."
 
 #: lib_system_2
 msgid "http://www.communtu.de"
@@ -3212,15 +3212,15 @@ msgstr "http://www.communtu.de"
 
 #: controller_derivatives_2
 msgid "Derivat aktualisiert."
-msgstr "Dérivés mis à jour."
+msgstr "Mis à jour des dérivés."
 
 #: view_home_about_16
 msgid "Um Communtu nutzen zu können, kannst du dich registrieren. Das geht ganz einfach über den \"Registrieren\"-Knopf in der oberen Leiste."
-msgstr "Pour pouvoir utiliser Communtu, tu dois premierement t enregistrer.C est tres facile, tu dois simplement kliquer sur le  bouton\"enregistrer \" dans la barre du haut."
+msgstr "Pour pouvoir utiliser Communtu, tu dois premièrement t enregistrer. C est trés facile, tu dois simplement cliquer sur le  bouton\"enregistrer \" dans la barre du haut."
 
 #: view_home_home_10
 msgid "<b>Ubuntu-Versionen</b> Übersicht über die im System verfügbaren Ubuntu-Versionen (Distributionen)."
-msgstr "<b> Ubuntu-versions </ b> vue d'ensemble des versions Ubuntu disponiblent dans le systeme (distributions)."
+msgstr "<b> Ubuntu-versions </ b> vue d'ensemble des versions Ubuntu disponiblent dans le system (Distributions)."
 
 #: continue
 msgid "Weiter"
@@ -3228,7 +3228,7 @@ msgstr "continuer"
 
 #: view_debs_index_0
 msgid "Fehlgeschlagene oder laufende Deb-Generierungen"
-msgstr "Échec ou les générations actuelles Deb"
+msgstr "Échec ou succès dans la creation du Deb"
 
 #: view_home_home_11
 msgid "<b>Benutzer verwalten</b> Hier kannst du als Admin die Rollen der Benutzer ändern. Vorsicht walten lassen!"
@@ -3240,7 +3240,7 @@ msgstr "Retour au menu Communtu"
 
 #: view_home_home_12
 msgid "<b>Kategorien verwalten</b> Hier kannst du als Admin neue Kategorien erstellen oder die Struktur des Kategorienbaums ändern. Vorsicht walten lassen!"
-msgstr "> Gérer les catégories <b> </ b> Ici, vous pouvez créer de nouvelles catégories en tant qu'administrateur ou modifier la structure de l'arborescence des catégories. Soyez prudent!"
+msgstr "> Gérer les catégories <b> </ b> Ici, tu peux créer de nouvelles catégories en tant qu'administrateur ou modifier la structure de l'arborescence des catégories. Soyez prudent!"
 
 #: livecd_image_link
 msgid "http://wiki.ubuntuusers.de/CD-Images"
@@ -3248,7 +3248,7 @@ msgstr "http://wiki.ubuntuusers.de/CD-Images"
 
 #: view_metapackages_show_save
 msgid "Bündel als Metapaket speichern"
-msgstr "Sauvegarder la Liasse comme un méta-paquet "
+msgstr "Sauvegarder la Compilation comme un méta-paquet "
 
 #: view_debs_index_2
 msgid "  Keine fehlgeschlagenen Deb-Generierungen vorhanden! Glückwunsch!"
@@ -3256,15 +3256,15 @@ msgstr "Aucune défaillance Deb-"
 
 #: view_home_home_13
 msgid "<b>Aktuelles</b> Hinweise auf Veranstaltungen zu Communtu, Communtu-Blog ..."
-msgstr "<b> Nouvelles </ b> des informations sur les événements Communtu, blog Communtu ..."
+msgstr "<b> Actualité</ b> des informations sur les événements Communtu, blog Communtu ..."
 
 #: help_translation
 msgid "Hilfe bei der Übersetzung - Schreib uns eine E-Mail"
-msgstr "Aide au niveau de la traduction - Envoie-nous un e-mail"
+msgstr "Aide au niveau de la traduction - Envoie-nous un E-mail"
 
 #: view_debs_index_3
 msgid "Alle fehlgeschlagenen debs erzeugen <b>Achtung: nur unter admin.communtu.de ausführen!</b>"
-msgstr "Toutes tentatives échoué à créer des debs<b> Attention: seulement Exécuter sous admin.communtu.de que / b> "
+msgstr "Toutes tentatives échoué à créer des debs <b> Attention:  seulement exécuter sous admin.communtu.de que / b> "
 
 #: view_home_home_14
 msgid "Es gibt auch noch "
@@ -3276,11 +3276,11 @@ msgstr "Plus d'infos"
 
 #: repositories_without_packages
 msgid "Repositories ohne Pakete (da Repositories leer)"
-msgstr "Dépôts sans paquets (service de garde-vide)"
+msgstr "Referentiels sans paquets (service de garde-vide)"
 
 #: view_metapackages_rdepends_0
 msgid "Im Bündel "
-msgstr "en liasse"
+msgstr "En compilation"
 
 #: view_debs_index_5
 msgid "Erzeugen"
@@ -3292,7 +3292,7 @@ msgstr "a propos du projet et des participants dans le"
 
 #: view_metapackages_rdepends_1
 msgid " direkt und indirekt enthaltene Bündel und Pakete"
-msgstr " directement et indirectement le contenus des Liasses et des paquets"
+msgstr " directement et indirectement le contenus des compilationset des paquets"
 
 #: change_passwd
 msgid "Passwort ändern"
@@ -3300,15 +3300,15 @@ msgstr "Changer mot de passe"
 
 #: view_metapackages_immediate_conflicts_0
 msgid "Konflikte innerhalb von Bündeln"
-msgstr "Les conflits au sein des Liasses"
+msgstr "Les conflits au sein des compilations"
 
 #: controller_home_1
 msgid "Die E-Mail wurde an uns gesendet. Vielen Dank für deine Nachricht."
-msgstr "L'e-mail nous a été envoyé . Je te remercie pour ton message."
+msgstr "L'E-mail nous a été envoyé . Je te remercie pour ton message."
 
 #: view_home_home_17
 msgid "Impressum."
-msgstr ""
+msgstr "Mentions Légales"
 
 #: view_metapackages_immediate_conflicts_1
 msgid " ist in Konflikt mit "
@@ -3316,11 +3316,11 @@ msgstr "est en conflit avec"
 
 #: controller_home_2
 msgid "Wir werden uns per E-Mail bei dir melden."
-msgstr "Nous vous contacterons par e-mail."
+msgstr "Nous vous contacterons par E-mail."
 
 #: former_participants
 msgid "Ehemalige Mitwirkende"
-msgstr "Anciens cotisants"
+msgstr "Anciens coopérateurs"
 
 #: view_home_home_18
 msgid "Klicke auf "
@@ -3328,11 +3328,11 @@ msgstr "Cliquez sur"
 
 #: controller_home_3
 msgid "Das sieht nicht nach einer Liste von Ubuntu-Paketen aus... <br />Die Paketliste muss einen Paketnamen pro Zeile enthalten"
-msgstr "Ceci ne ressemble pas a une liste des paquets Ubuntu ... <br /> Le paquet doit énumérer le nom du package par ligne"
+msgstr "Ceci ne ressemble pas a une liste des paquets Ubuntu ... <br /> Le paquet doit contenir le nom du packet par ligne"
 
 #: controller_home_4
 msgid "Es muss eine Datei mit der Paketliste (ein Paketname pro Zeile) angegeben werden"
-msgstr "Il doit y avoir un fichier spécifié avec la liste des paquets(le nom du package par ligne)"
+msgstr "un fichier  avec la liste du paquet doit être spécifie( un seul nom de paquet par ligne)"
 
 #: view_derivatives_index_0
 msgid "Derivate auflisten"
@@ -3384,7 +3384,7 @@ msgstr "Mettre à jour"
 
 #: view_home_home_24
 msgid "Zum Impressum"
-msgstr ""
+msgstr "Mentions Légales"
 
 #: statistics
 msgid "Aufrufstatistik"
@@ -3416,11 +3416,11 @@ msgstr "Tu as installé Ubuntu et maintenant tu es à la recherche des progammes
 
 #: controller_categories_3
 msgid "Kategorie aktualisiert."
-msgstr "Catégorie mise à jour."
+msgstr "Mise à jour de la catégorie."
 
 #: description_for_description
 msgid "Bitte gib hier eine kurze Vorstellung deines Bündels ein für was für Tätigkeiten es gedacht ist. Danach kannst du auch noch auf die Vorzüge einiger Programme daraus eingehen."
-msgstr ""
+msgstr "Voici une courte présentation de ta compilation pour une activité pour laquelle elle est destinée. Ensuite, tu peux aussi profiter des avantages de certains programmes reçu d'elle."
 
 #: view_home_home_27
 msgid "Communtu hilft dir dabei:"
@@ -3440,7 +3440,7 @@ msgstr "Via un live CD, le logiciel peut etre à la fois essaye et installé. Ce
 
 #: make_a_systemupgrade
 msgid "Du möchtest ein System-Upgrade machen. Dann schau <a href=\"http://communtu.wordpress.com/2009/09/16/mit-communtu-ein-systemupgrade-durchfuhren/\">wie einfach das geht</a> und lade deine Paketliste bei Communtu hoch."
-msgstr "Tu veux faire une mise à niveau du système. Regarde <a href=\"http://communtu.wordpress.com/2009/09/16/avec-communtu-une-Amélioration du système -effectuer/\">  comment c est facile </ a> et telecharge ta liste de paquets sur Communtu.            "
+msgstr "Tu veux faire une mise à niveau du système. Alors regarde <a href=\"http://communtu.wordpress.com/2009/09/16/avec-communtu-une-Amélioration du système -effectuer/\">  comment c'est facile </ a> et télécharge ta liste de paquets sur Communtu.            "
 
 #: view_sent_show_2
 msgid "Zeitpunkt:"
@@ -3448,7 +3448,7 @@ msgstr "Date:"
 
 #: controller_metapackages_not_changed
 msgid "Das Bündel wurde schon als Metapaket erzeugt und hochgeladen."
-msgstr "La Liasse a été créé comme un méta-paquet et transféré."
+msgstr "La compilation a été créé comme un méta-paquet et transféré."
 
 #: donation_purpose
 msgid "Verwendungszweck: Communtu"
@@ -3456,7 +3456,7 @@ msgstr "Objectif: Communtu"
 
 #: view_layouts_application_14
 msgid "Feedback an Communtu"
-msgstr "Message à Communtu"
+msgstr "Méssage à Communtu"
 
 #: view_home_home_28
 msgid "Download:"
@@ -3472,11 +3472,11 @@ msgstr "enregistrés comme"
 
 #: view_home_home_29
 msgid "Zu welchem Thema suchst du Programme (Büro, Grafik,...)? Hier kannst du deine Interessengebiete eingeben und passende vorkonfigurierte Programmbündel downloaden."
-msgstr "Pour quel sujet recherches tu des programmes"
+msgstr "Sur quel sujet recherches tu des programmes  (bureau, graphiques ,...)? Ici tu peux faire entrer tes domaines d'intérêt et  télécharger les  programmes-compilés pré-configurés."
 
 #: view_repositories_index_0
 msgid "Repositories"
-msgstr "Référentiels"
+msgstr "Referentiels:"
 
 #: view_layouts_application_16
 msgid "neue Nachricht"
@@ -3484,11 +3484,11 @@ msgstr "nouveau message"
 
 #: view_home_home_30
 msgid "Bündel:"
-msgstr "Liasse:"
+msgstr "Compilation:"
 
 #: view_home_home_31
 msgid "Hier kannst du Themen detaillierter auswählen und dazu Programme und Programmbündel laden, aber auch eigene Bündel erstellen und verwalten."
-msgstr "Ici, tu peux choisir des thèmes  détaillés et  inviter des programmes et des faisceaux de programme, mais aussi créer et gérer leurs propres paquets."
+msgstr "Ici, tu peux choisir des thèmes  détaillés et  charger des programmes et des programmes compilés, mais aussi créer  sa propre compilation et l administrer ."
 
 #: package_list
 msgid "zurück zur Paketliste"
@@ -3504,11 +3504,11 @@ msgstr "Communtu:"
 
 #: controller_metapackages_11
 msgid "Konnte Paket nicht aus Bündel entfernen."
-msgstr "Impossible de supprimer le paquet de la liasse."
+msgstr "Impossible de supprimer le paquet de la compilation."
 
 #: controller_metapackages_debianizing
 msgid "Das Bündel wird gerade als Metapaket erzeugt und hochgeladen. Dies dauert ein paar Minuten."
-msgstr "Le paquet a été créé comme un méta-paquet et transféré.Cela prendra quelques minutes."
+msgstr "La compilation est transformé  en méta-paquet et transféré. Cela prendra quelques minutes."
 
 #: no_save_database
 msgid "Die folgenden Pakete konnten nicht in der Datenbank gespeichert werden:"
@@ -3536,7 +3536,7 @@ msgstr "Javascript n'est pas activé! S'il vous plaît activer JavaScript dans v
 
 #: view_metapackages_migrate_0
 msgid "Von welcher Distribution sollen die Bündel migriert werden ?"
-msgstr "Quelle distribution pour les faisceaux à migrer?"
+msgstr "Quelle distribution pour les compilationd a remplacer?"
 
 #: view_distributions_show_1
 msgid "alles prüfen"
@@ -3544,7 +3544,7 @@ msgstr "tout verifier"
 
 #: migrate
 msgid "Migrieren"
-msgstr "Émigrer"
+msgstr "Remplacer"
 
 #: view_layouts_application_21
 msgid "Communtu macht Ubuntu-Installationen einfach"
@@ -3552,7 +3552,7 @@ msgstr "Communtu facilite les  installations de Ubuntu"
 
 #: view_metapackages_migrate_1
 msgid "Zu welcher Distribution sollen die Bündel migriert werden ?"
-msgstr "Quelle distribution pour les faisceaux à migrer?"
+msgstr "Par quelle distribution les compilations vont être remplacées?"
 
 #: controller_metapackages_15
 msgid "<option value='2'>Veröffentlichen<option/>"
@@ -3576,7 +3576,7 @@ msgstr "Ajouter un référentiel"
 
 #: view_layouts_application_23
 msgid "BÜNDEL"
-msgstr "LIASSE"
+msgstr "COMPILATIONS"
 
 #: install
 msgid "Installieren"
