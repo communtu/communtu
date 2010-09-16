@@ -2528,7 +2528,7 @@ msgstr "Cette fonctionnalité n'est pas disponible pour les visiteurs."
 
 #: livecd_email_body_failed
 msgid ", die Live-CD/DVD {{name}} konnte leider nicht erstellt werden. Wir kümmern uns um das Problem."
-msgstr ", le Live-CD/DVD {{nom}} n'a pas pu être créé. Nous nous occupons du problème."
+msgstr ", le Live-CD/DVD {{name}} n'a pas pu être créé. Nous nous occupons du problème."
 
 #: being_created
 msgid "wird erstellt"
@@ -3052,7 +3052,7 @@ msgstr "Architectures"
 
 #: view_rating_show_title_ratings_count
 msgid "(Basierend auf {{votes}} Bewertung(en))"
-msgstr "(qui est Basé sur {{vote}}  Evaluation(s))"
+msgstr "(qui est Basé sur {{votes}}  Evaluation(s))"
 
 #: controller_sent_2
 msgid "Nachricht erfolgreich versendet"
@@ -3436,7 +3436,7 @@ msgstr "A propos de Communtu"
 
 #: livecd_message
 msgid "Über eine Live-CD kann die Software sowohl ausprobiert als auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} erstellt, in Form einer iso-Datei, die du dann brennen kannst. Zum Brennen benötigst du eine CD, falls du viel Software ausgewählt hast, eine DVD.<br /><br /> Die Erstellung des Images dauert eine gewisse Zeit. Du wirst per Email benachrichtigt, sobald das Image fertig ist. Bitte achte darauf, dass in deinen Benutzereinstellungen eine gültige Email-Adresse angegeben ist."
-msgstr "Via un live CD, le logiciel peut etre à la fois essaye et installé. Ceci etant, un soi-disant (()) cdimage_link est créé, sous la forme d'un fichier ISO que tu peux graver. Pour graver un CD dont tu  as besoin, si tu as sélectionné un grand nombre de logiciels, d'un DVD. <br /> <br /> La création de l'image prend un certain temps. Tu seras averti par email lorsque l'image est prête. S'il te  plait vérifie que tes  paramètres d'utilisateur spécifié dans une adresse email valide."
+msgstr "Via un live CD, le logiciel peut etre à la fois essaye et installé. Ceci etant, un soi-disant {{cdimage_link}} est créé, sous la forme d'un fichier ISO que tu peux graver. Pour graver un CD dont tu  as besoin, si tu as sélectionné un grand nombre de logiciels, d'un DVD. <br /> <br /> La création de l'image prend un certain temps. Tu seras averti par email lorsque l'image est prête. S'il te  plait vérifie que tes  paramètres d'utilisateur spécifié dans une adresse email valide."
 
 #: make_a_systemupgrade
 msgid "Du möchtest ein System-Upgrade machen. Dann schau <a href=\"http://communtu.wordpress.com/2009/09/16/mit-communtu-ein-systemupgrade-durchfuhren/\">wie einfach das geht</a> und lade deine Paketliste bei Communtu hoch."

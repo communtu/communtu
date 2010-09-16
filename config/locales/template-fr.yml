@@ -621,7 +621,7 @@ fr:
   livecd_email_failed: "Communtu: Impossible de cr\xC3\xA9er le Live-CD/DVD"
   usb_image: USB Image
   controller_application_0: "Cette fonctionnalit\xC3\xA9 n'est pas disponible pour les visiteurs."
-  livecd_email_body_failed: ", le Live-CD/DVD {{nom}} n'a pas pu \xC3\xAAtre cr\xC3\xA9\xC3\xA9. Nous nous occupons du probl\xC3\xA8me."
+  livecd_email_body_failed: ", le Live-CD/DVD {{name}} n'a pas pu \xC3\xAAtre cr\xC3\xA9\xC3\xA9. Nous nous occupons du probl\xC3\xA8me."
   being_created: !binary |
     ZXN0IGNyw6nDqQ==
 
@@ -756,7 +756,7 @@ fr:
   view_user_profiles__sources_0: "Sources pour les programmes \xC3\xA0 installer"
   view_home_impressum_2: AG Communtu
   architectures: Architectures
-  view_rating_show_title_ratings_count: "(qui est Bas\xC3\xA9 sur {{vote}}  Evaluation(s))"
+  view_rating_show_title_ratings_count: "(qui est Bas\xC3\xA9 sur {{votes}}  Evaluation(s))"
   controller_sent_2: "Message envoy\xC3\xA9 avec succ\xC3\xA8s"
   model_package_0: Logiciel Libre
   missing_debs_for_bundle: "il manque debs pour la liasse:"
@@ -859,7 +859,7 @@ fr:
   controller_metapackages_not_changed: "La compilation a \xC3\xA9t\xC3\xA9 cr\xC3\xA9\xC3\xA9 comme un m\xC3\xA9ta-paquet et transf\xC3\xA9r\xC3\xA9."
   view_sent_show_2: "Date:"
   make_a_systemupgrade: "Tu veux faire une mise \xC3\xA0 niveau du syst\xC3\xA8me. Alors regarde <a href=\"http://communtu.wordpress.com/2009/09/16/avec-communtu-une-Am\xC3\xA9lioration du syst\xC3\xA8me -effectuer/\">  comment c'est facile </ a> et t\xC3\xA9l\xC3\xA9charge ta liste de paquets sur Communtu.            "
-  livecd_message: "Via un live CD, le logiciel peut etre \xC3\xA0 la fois essaye et install\xC3\xA9. Ceci etant, un soi-disant (()) cdimage_link est cr\xC3\xA9\xC3\xA9, sous la forme d'un fichier ISO que tu peux graver. Pour graver un CD dont tu  as besoin, si tu as s\xC3\xA9lectionn\xC3\xA9 un grand nombre de logiciels, d'un DVD. <br /> <br /> La cr\xC3\xA9ation de l'image prend un certain temps. Tu seras averti par email lorsque l'image est pr\xC3\xAAte. S'il te  plait v\xC3\xA9rifie que tes  param\xC3\xA8tres d'utilisateur sp\xC3\xA9cifi\xC3\xA9 dans une adresse email valide."
+  livecd_message: "Via un live CD, le logiciel peut etre \xC3\xA0 la fois essaye et install\xC3\xA9. Ceci etant, un soi-disant {{cdimage_link}} est cr\xC3\xA9\xC3\xA9, sous la forme d'un fichier ISO que tu peux graver. Pour graver un CD dont tu  as besoin, si tu as s\xC3\xA9lectionn\xC3\xA9 un grand nombre de logiciels, d'un DVD. <br /> <br /> La cr\xC3\xA9ation de l'image prend un certain temps. Tu seras averti par email lorsque l'image est pr\xC3\xAAte. S'il te  plait v\xC3\xA9rifie que tes  param\xC3\xA8tres d'utilisateur sp\xC3\xA9cifi\xC3\xA9 dans une adresse email valide."
   view_layouts_application_13: A propos de Communtu
   allgemeinbildung: "G\xC3\xA9n\xC3\xA9ral e.V."
   view_home_home_28: "T\xC3\xA9l\xC3\xA9charger:"
