@@ -167,7 +167,7 @@ de:
   direct_indirect_covered_packages_warning: Achtung! Dauert lange und sollte nur vom Admin-Server (communtu.de:3006) aus aufgerufen werden
   discuss: discuss
   distribution: Distribution
-  distribution_derivative_mismatch: "{{derivative}} ist nur unter {{distributions}} verfügbar"
+  distribution_derivative_mismatch: '{{derivative}} ist nur unter {{distributions}} verfügbar'
   donate: spende
   donation_possibility: Spendenmöglichkeit
   donation_purpose: 'Verwendungszweck: Communtu'
@@ -182,10 +182,11 @@ de:
   email_without_colon: E-Mail
   english_description: 'Englische Beschreibung:'
   english_name: 'Englischer Name:'
-  english_name_reserve: 'Der englische Name ist bereits vergeben. Bitte wähle einen anderen.'
+  english_name_reserve: Der englische Name ist bereits vergeben. Bitte wähle einen anderen.
   error_no_attachement: Du hast keine Datei ausgewählt. Der Vorgang wurde abgebrochen.
   errors: Fehler
   exact: 'Exakten Begriff finden:'
+  failed_deb_generations: Fehlgeschlagene oder laufende Deb-Generierungen
   failed_live_cds: Fehlgeschlagene LiveCDs/DVDs
   feedback: Kommentar
   fine_selection: Feinauswahl
@@ -193,7 +194,7 @@ de:
   force_sync: Synchronisierung des Repositories erzwingen
   former_participants: Ehemalige Mitwirkende
   four_and_fourty_letters: Zwischen 4 und 40 Zeichen
-  free_disk_space: "Freier Plattenplatz (root / home / isos)"
+  free_disk_space: Freier Plattenplatz (root / home / isos)
   generate_all_debs_for_bundle: Alle debs für das Bündel erzeugen
   generate_cd: LiveCD/DVD neu erstellen
   generate_cd_new: LiveCD/DVD mit neuen Quellen neu erstellen
@@ -336,6 +337,7 @@ de:
   offer_new_category: Vorschlag einer neuen Kategorie
   order_number: 'Sortiernummer (kleinste Zahl zu erst):'
   our_blog: Unser Blog
+  oxygen_icon_legal_notice: Einige der Icons sind aus dem Oxygen-Iconset http://www.oxygen-icons.org
   package_list: zurück zur Paketliste
   packages: Pakete
   packages_for_ubuntu: Pakete für Ubuntu
@@ -426,7 +428,6 @@ de:
   view_categories_show_0: 'Name:'
   view_categories_show_2: 'Weitere Informationen:'
   view_categories_show_3: 'Übergeordnete Kategorie:'
-  view_debs_index_0: Fehlgeschlagene oder laufende Deb-Generierungen
   view_debs_index_1: Zurück zum Communtu-Menü
   view_debs_index_2: '  Keine fehlgeschlagenen Deb-Generierungen vorhanden! Glückwunsch!'
   view_debs_index_3: 'Alle fehlgeschlagenen debs erzeugen <b>Achtung: nur unter admin.communtu.de ausführen!</b>'
@@ -894,5 +895,4 @@ de:
   yes1: ja
   you_can: 'Du kannst dich auch '
   zentrum_solidarische_oekonomie: Zentrum für Solidarische Ökonomie
-  oxygen_icon_legal_notice: Einige der Icons sind aus dem Oxygen-Iconset http://www.oxygen-icons.org
   zombie_processes: Zobmie-Prozesse
