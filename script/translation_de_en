@@ -1,4 +1,8 @@
 #!/bin/bash
+
+echo "do not use this script. It breaks the french and english pages due to [2029]. First fix #1286"
+exit 1
+
 ############################
 # Author: Timo Denissen    #
 # E-Mail: timo@communtu.de #
