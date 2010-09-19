@@ -1,0 +1,2436 @@
+POPULARITY-CONTEST-0 TIME:1275515489 ID:2a51cd9c968b49aeb9a66910d4facc46 ARCH:i386 POPCONVER:1.46ubuntu1
+1275515489 1270896497 xulrunner-1.9 /usr/lib/xulrunner-1.9.0.19/components/libdbusservice.so
+1275515489 1242304455 zlib1g /lib/libz.so.1.2.3.3
+1275515489 1270896495 xulrunner-1.9-gnome-support /usr/lib/xulrunner-1.9.0.19/components/libmozgnome.so
+1275515488 1242466479 xemacs21-mule /usr/bin/xemacs-21.4.21-mule
+1275515488 1242466463 xemacs21-bin /usr/lib/xemacs-21.4.21/i486-linux-gnu/gnuserv
+1275515487 1242304492 update-notifier /usr/bin/update-notifier
+1275515487 1243693844 virtualbox-2.2 /usr/lib/virtualbox/VBoxDDU.so
+1275515487 1252468178 ure /usr/lib/ure/share/misc/types.rdb
+1275515486 1242466596 ttf-telugu-fonts /usr/share/fonts/truetype/ttf-telugu-fonts/lohit_te.ttf
+1275515486 1242304709 ttf-sazanami-gothic /usr/share/fonts/truetype/sazanami/sazanami-gothic.ttf
+1275515486 1242304717 ttf-indic-fonts-core /usr/share/fonts/truetype/ttf-indic-fonts-core/lohit_ta.ttf
+1275515486 1268991167 thunderbird /usr/lib/thunderbird/thunderbird-bin
+1275515486 1242466596 ttf-oriya-fonts /usr/share/fonts/truetype/ttf-oriya-fonts/lohit_or.ttf
+1275515486 1242304716 ttf-bitstream-vera /usr/share/fonts/truetype/ttf-bitstream-vera/VeraIt.ttf
+1275515486 1242304707 ttf-freefont /usr/share/fonts/truetype/freefont/FreeSans.ttf
+1275515486 1242304712 ttf-sazanami-mincho /usr/share/fonts/truetype/sazanami/sazanami-mincho.ttf
+1275515486 1242304714 ttf-thai-tlwg /usr/share/fonts/truetype/thai/Waree.ttf
+1275515486 1242466576 ttf-dejavu-extra /usr/share/fonts/truetype/ttf-dejavu/DejaVuSans-ExtraLight.ttf
+1275515486 1242466596 ttf-liberation /usr/share/fonts/truetype/ttf-liberation/LiberationSans-Regular.ttf
+1275515486 1242304717 ttf-dejavu-core /usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif-Bold.ttf
+1275515486 1242466596 ttf-kannada-fonts /usr/share/fonts/truetype/ttf-kannada-fonts/lohit_kn.ttf
+1275515486 1252468179 uno-libs3 /usr/lib/ure/lib/libuno_salhelpergcc3.so.3
+1275515486 1242466596 ttf-bengali-fonts /usr/share/fonts/truetype/ttf-bengali-fonts/lohit_bn.ttf
+1275515486 1242304720 ttf-unfonts-core /usr/share/fonts/truetype/unfonts/UnDotum.ttf
+1275515486 1242304706 ttf-arphic-uming /usr/share/fonts/truetype/arphic/uming.ttc
+1275515486 1258713353 totem-gstreamer /usr/lib/nautilus/extensions-2.0/libtotem-properties-page.so.gstreamer
+1275515483 1252859627 sun-java6-jre /usr/lib/jvm/java-6-sun-1.6.0.16/jre/lib/charsets.jar
+1275515483 1252859611 sun-java6-jdk /usr/lib/jvm/java-6-sun-1.6.0.16/lib/tools.jar
+1275515482 1252859622 sun-java6-bin /usr/lib/jvm/java-6-sun-1.6.0.16/jre/lib/rt.jar
+1275515482 1242466209 sound-juicer /usr/share/locale/de/LC_MESSAGES/sound-juicer.mo
+1275515482 1242304552 seahorse-plugins /usr/lib/nautilus/extensions-2.0/libnautilus-seahorse.so
+1275515481 1248183694 ruby1.8 /usr/bin/ruby1.8
+1275515481 1242304636 rhythmbox /usr/lib/xulrunner-addons/plugins/librhythmbox-itms-detection-plugin.so
+1275515481 1269478966 samba-common /usr/share/samba/valid.dat.samba3
+1275515481 1242466449 regexxer /usr/share/locale/de/LC_MESSAGES/regexxer.mo
+1275515477 1242304486 python2.6-minimal /usr/bin/python2.6
+1275515477 1242304618 python2.6 /usr/lib/python2.6/lib-dynload/pyexpat.so
+1275515476 1251893932 python-gobject /usr/lib/python-support/python-gobject/python2.6/gtk-2.0/gio/_gio.so
+1275515476 1242304612 python-notify /usr/lib/python-support/python-notify/python2.6/gtk-2.0/pynotify/_pynotify.so
+1275515476 1242304612 python-gtk2 /usr/lib/python-support/python-gtk2/python2.6/gtk-2.0/pangocairo.so
+1275515475 1258713339 pulseaudio-module-gconf /usr/lib/pulseaudio/pulse/gconf-helper
+1275515475 1242304617 python-cairo /usr/lib/python2.6/dist-packages/cairo/_cairo.so
+1275515475 1242304610 python-cups /usr/lib/python-support/python-cups/python2.6/cups.so
+1275515475 1242304610 python-dbus /usr/lib/python-support/python-dbus/python2.6/_dbus_bindings.so
+1275515475 1242304491 procps /usr/bin/top
+1275515474 1246624971 perl-base /usr/bin/perl
+1275515474 1267700217 pidgin-data /usr/share/locale/de/LC_MESSAGES/pidgin.mo
+1275515474 1242466122 phonon-backend-xine /usr/lib/kde4/plugins/phonon_backend/phonon_xine.so
+1275515473 1252468180 openoffice.org-writer /usr/lib/openoffice/basis3.1/program/libswdli.so
+1275515473 1242304491 openssh-client /usr/bin/ssh
+1275515472 1252468230 openoffice.org-help-de /usr/lib/openoffice/basis3.1/help/de/scalc.ht
+1275515472 1252468210 openoffice.org-core /usr/lib/openoffice/basis3.1/program/libcanvastoolsli.so
+1275515472 1252468188 openoffice.org-gtk /usr/lib/openoffice/basis3.1/program/gconfbe1.uno.so
+1275515471 1252468183 openoffice.org-calc /usr/lib/openoffice/basis3.1/program/libscfiltli.so
+1275515469 1242466448 nautilus-actions /usr/lib/nautilus/extensions-2.0/libnautilus-actions.so
+1275515469 1242304552 nautilus-sendto /usr/lib/nautilus/extensions-2.0/libnautilus-sendto.so
+1275515469 1244813509 netbeans /usr/share/netbeans/6.5/nb6.5/modules/org-netbeans-modules-welcome.jar
+1275515469 1263549201 network-manager-gnome /usr/bin/nm-applet
+1275515469 1242304552 nautilus-share /usr/lib/nautilus/extensions-2.0/libnautilus-share.so
+1275515469 1271020434 nautilus-dropbox /usr/lib/nautilus/extensions-2.0/libnautilus-dropbox.so
+1275515469 1242304552 notify-osd /usr/lib/notify-osd/notify-osd
+1275515469 1242302232 nautilus /usr/bin/nautilus
+1275515468 1244385261 metacity /usr/bin/metacity
+1275515468 1242304548 man-db /usr/lib/man-db/man
+1275515468 1251364731 mono-jit /usr/bin/mono
+1275515454 1242304509 libgphoto2-2 /usr/lib/libgphoto2.so.2.3.0
+1275515454 1259173489 libvorbis0a /usr/lib/libvorbis.so.0.4.0
+1275515454 1259173489 libvorbisenc2 /usr/lib/libvorbisenc.so.2.0.3
+1275515454 1242304504 libxcursor1 /usr/lib/libXcursor.so.1.0.2
+1275515454 1258028188 libqtcore4 /usr/lib/libQtCore.so.4.5.0
+1275515454 1242304504 libx11-6 /usr/lib/libX11.so.6.2.0
+1275515454 1242304551 libglib2.0-cil /usr/lib/mono/gac/glib-sharp/2.12.0.0__35e10195dab3c99f/glib-sharp.dll
+1275515454 1242304504 libxft2 /usr/lib/libXft.so.2.1.13
+1275515454 1242304514 libltdl7 /usr/lib/libltdl.so.7.2.0
+1275515454 1242466113 libstreamanalyzer0 /usr/lib/libstreamanalyzer.so.0.6.4
+1275515454 1258028186 libqt4-xml /usr/lib/libQtXml.so.4.5.0
+1275515454 1242304520 libwnck22 /usr/lib/libwnck-1.so.22.3.18
+1275515454 1254903171 libglib2.0-0 /usr/lib/libgthread-2.0.so.0.2000.1
+1275515454 1242304514 libmng1 /usr/lib/libmng.so.1.1.0.9
+1275515454 1242304503 libice6 /usr/lib/libICE.so.6.3.0
+1275515454 1242744206 libini4j-java /usr/share/java/ini4j-0.2.6.jar
+1275515454 1258713337 libpulse0 /usr/lib/libpulse.so.0.7.1
+1275515454 1259173489 libvorbisfile3 /usr/lib/libvorbisfile.so.3.2.0
+1275515454 1258028183 libqt4-dbus /usr/lib/libQtDBus.so.4.5.0
+1275515454 1249211172 libxklavier12 /usr/lib/libxklavier.so.12.2.0
+1275515454 1242302136 libsoup2.4-1 /usr/lib/libsoup-2.4.so.1.2.0
+1275515454 1242304504 libsm6 /usr/lib/libSM.so.6.0.0
+1275515454 1258028186 libqtgui4 /usr/lib/qt4/plugins/imageformats/libqtiff.so
+1275515454 1253006934 libopenexr6 /usr/lib/libIlmImf.so.6.0.0
+1275515454 1242466113 libstreams0 /usr/lib/libstreams.so.0.6.4
+1275515454 1251364732 libmono-system2.0-cil /usr/lib/mono/gac/System/2.0.0.0__b77a5c561934e089/System.dll
+1275515454 1242304504 libxpm4 /usr/lib/libXpm.so.4.11.0
+1275515454 1244813511 libnb-apisupport1-java /usr/share/netbeans/apisupport1/modules/docs/org-netbeans-modules-apisupport-project.jar
+1275515454 1242302212 libnautilus-extension1 /usr/lib/libnautilus-extension.so.1.1.0
+1275515454 1247571096 libtiff4 /usr/lib/libtiff.so.4.2.1
+1275515454 1242304504 libxau6 /usr/lib/libXau.so.6.0.0
+1275515454 1242304504 libxcomposite1 /usr/lib/libXcomposite.so.1.0.0
+1275515454 1242466119 libxine1-bin /usr/lib/xine/plugins/1.26/xineplug_decode_w32dll.so
+1275515454 1258028179 libqt4-test /usr/lib/libQtTest.so.4.5.0
+1275515454 1251364733 libmono-corlib2.0-cil /usr/lib/mono/2.0/mscorlib.dll
+1275515454 1242304542 libgnomevfs2-0 /usr/lib/gnome-vfs-2.0/modules/libfile.so
+1275515454 1242304509 libgphoto2-port0 /usr/lib/libgphoto2_port.so.0.8.0
+1275515454 1242304508 libgnome-menu2 /usr/lib/libgnome-menu.so.2.2.13
+1275515454 1242304623 libspeex1 /usr/lib/sse2/libspeex.so.1.5.0
+1275515454 1242304520 libtheora0 /usr/lib/libtheora.so.0.3.4
+1275515454 1242304504 libxss1 /usr/lib/libXss.so.1.0.0
+1275515454 1248183693 libruby1.8 /usr/lib/libruby1.8.so.1.8.7
+1275515454 1242304454 libgpg-error0 /lib/libgpg-error.so.0.3.0
+1275515454 1258028183 libqt4-opengl /usr/lib/libQtOpenGL.so.4.5.0
+1275515454 1242304519 libschroedinger-1.0-0 /usr/lib/libschroedinger-1.0.so.0.1.0
+1275515454 1255861550 libsndfile1 /usr/lib/libsndfile.so.1.0.17
+1275515454 1242302229 libwmf0.2-7-gtk /usr/lib/gtk-2.0/2.10.0/loaders/io-wmf.so
+1275515454 1268814455 libpng12-0 /usr/lib/libpng12.so.0.27.0
+1275515454 1242304519 libsmbios2 /usr/lib/libsmbios.so.2.1.0
+1275515454 1242304504 libxaw7 /usr/lib/libXaw7.so.7.0.0
+1275515454 1265884894 libmysqlclient15off /usr/lib/libmysqlclient_r.so.15.0.0
+1275515454 1242304455 libwrap0 /lib/libwrap.so.0.7.6
+1275515454 1242744203 libswingworker-java /usr/share/java/swing-worker-1.1.jar
+1275515454 1242304504 libxt6 /usr/lib/libXt.so.6.0.0
+1275515454 1251364734 libmono-posix2.0-cil /usr/lib/mono/gac/Mono.Posix/2.0.0.0__0738eb9f132ed756/Mono.Posix.dll
+1275515454 1242466121 libxine1-ffmpeg /usr/lib/xine/plugins/1.26/xineplug_dmx_mpeg_ts.so
+1275515454 1242304455 libreadline5 /lib/libreadline.so.5.2
+1275515454 1244385237 libsqlite3-0 /usr/lib/libsqlite3.so.0.8.6
+1275515454 1248183695 libopenssl-ruby1.8 /usr/lib/ruby/1.8/i486-linux/openssl.so
+1275515454 1247571094 libxcb1 /usr/lib/libxcb.so.1.1.0
+1275515454 1242304509 libgsf-1-114 /usr/lib/libgsf-1.so.114.0.11
+1275515454 1242304509 libgpod4 /usr/lib/libgpod.so.4.0.0
+1275515454 1253692315 libneon27-gnutls /usr/lib/libneon-gnutls.so.27.1.2
+1275515454 1242304504 libxfixes3 /usr/lib/libXfixes.so.3.1.0
+1275515454 1242304519 libsamplerate0 /usr/lib/libsamplerate.so.0.1.4
+1275515454 1242304514 liblaunchpad-integration1 /usr/lib/liblaunchpad-integration.so.1.0.0
+1275515454 1242304520 libvte9 /usr/lib/libvte.so.9.5.0
+1275515454 1242302138 libgweather1 /usr/lib/libgweather.so.1.4.5
+1275515454 1242304455 libusb-0.1-4 /lib/libusb-0.1.so.4.4.4
+1275515454 1249650937 libnspr4-0d /usr/lib/libplds4.so
+1275515454 1258028182 libqt4-script /usr/lib/libQtScript.so.4.5.0
+1275515454 1242304520 libtag1c2a /usr/lib/libtag.so.1.5.0
+1275515454 1242744207 libswing-layout-java /usr/share/java/swing-layout-1.0.3.jar
+1275515454 1242744211 libnb-javaparser-java /usr/share/java/javac-impl-6.5.jar
+1275515454 1242304455 libpopt0 /lib/libpopt.so.0.0.0
+1275515454 1251893931 libnss3-1d /usr/lib/libnss3.so
+1275515454 1242466119 libmodplug0c2 /usr/lib/libmodplug.so.0.0.0
+1275515454 1242304504 libxdmcp6 /usr/lib/libXdmcp.so.6.0.0
+1275515454 1242304517 libproxy0 /usr/lib/libproxy.so.0.0.0
+1275515454 1245749792 libgvfscommon0 /usr/lib/libgvfscommon.so.0.0.0
+1275515454 1258028185 libqt4-svg /usr/lib/qt4/plugins/imageformats/libqsvg.so
+1275515454 1244813516 libnb-ide10-java /usr/share/netbeans/ide10/modules/org-netbeans-modules-xml-tools.jar
+1275515454 1258028184 libqt4-webkit /usr/lib/libQtWebKit.so.4.5.0
+1275515454 1242302222 libical0 /usr/lib/libicalvcal.so.0.43.0
+1275515454 1251364732 libmono0 /usr/lib/libMonoPosixHelper.so
+1275515454 1242304520 libxcb-render-util0 /usr/lib/libxcb-render-util.so.0.0.0
+1275515454 1242744209 libnb-svnclientadapter-java /usr/share/java/svnClientAdapter-6.5.jar
+1275515454 1242304455 libselinux1 /lib/libselinux.so.1
+1275515454 1242304521 libxslt1.1 /usr/lib/libxslt.so.1.1.24
+1275515454 1242304508 libgnome-keyring0 /usr/lib/libgnome-keyring.so.0.1.1
+1275515454 1242304515 liboil0.3 /usr/lib/liboil-0.3.so.0.3.0
+1275515454 1242304520 libstdc++6 /usr/lib/libstdc++.so.6.0.10
+1275515454 1242304504 libxxf86misc1 /usr/lib/libXxf86misc.so.1.1.0
+1275515454 1247571096 libxcb-render0 /usr/lib/libxcb-render.so.0.0.0
+1275515454 1242304520 libunique-1.0-0 /usr/lib/libunique-1.0.so.0.2.6
+1275515454 1242304513 libidn11 /usr/lib/libidn.so.11.5.39
+1275515454 1250758099 libgnutls26 /usr/lib/libgnutls.so.26.4.6
+1275515454 1242304504 liborbit2 /usr/lib/libORBitCosNaming-2.so.0.1.0
+1275515454 1242304520 libtdb1 /usr/lib/libtdb.so.1.1.3
+1275515454 1242304520 libtotem-plparser12 /usr/lib/libtotem-plparser.so.12.2.5
+1275515454 1242304508 libgnome2-0 /usr/lib/libgnome-2.so.0.2600.0
+1275515454 1242304520 libtasn1-3 /usr/lib/libtasn1.so.3.0.16
+1275515454 1242302230 libwmf0.2-7 /usr/lib/libwmflite-0.2.so.7.0.1
+1275515454 1242304455 libnss-mdns /lib/libnss_mdns4_minimal.so.2
+1275515454 1258028188 libqt4-network /usr/lib/libQtNetwork.so.4.5.0
+1275515454 1242304623 libspeexdsp1 /usr/lib/sse2/libspeexdsp.so.1.5.0
+1275515454 1242304515 libnotify1 /usr/lib/libnotify.so.1.1.3
+1275515454 1242304504 libxmu6 /usr/lib/libXmu.so.6.2.0
+1275515454 1242745361 libmysql-ruby1.8 /usr/lib/ruby/1.8/i486-linux/mysql.so
+1275515454 1249748373 libsvn-java /usr/share/java/svn-javahl.jar
+1275515454 1263888577 libthai0 /usr/lib/libthai.so.0.1.1
+1275515454 1248183694 libreadline-ruby1.8 /usr/lib/ruby/1.8/i486-linux/readline.so
+1275515454 1242304604 libpango1.0-0 /usr/lib/pango/1.6.0/modules/pango-thai-lang.so
+1275515454 1242304515 libmtp8 /usr/lib/libmtp.so.8.0.0
+1275515454 1242304511 libhyphen0 /usr/lib/libhyphen.so.0.2.0
+1275515454 1242304520 libstlport4.6ldbl /usr/lib/libstlport_gcc.so.4.6
+1275515454 1242304508 libgpgme11 /usr/lib/libgpgme.so.11.6.6
+1275515454 1242304504 libxtst6 /usr/lib/libXtst.so.6.1.0
+1275515454 1242304520 libxkbfile1 /usr/lib/libxkbfile.so.1.0.2
+1275515454 1242304518 librsvg2-2 /usr/lib/librsvg-2.so.2.26.0
+1275515454 1242304542 librsvg2-common /usr/lib/gtk-2.0/2.10.0/loaders/svg_loader.so
+1275515454 1242304516 libpixman-1-0 /usr/lib/libpixman-1.so.0.13.2
+1275515454 1242304514 libldap-2.4-2 /usr/lib/libldap_r-2.4.so.2.4.1
+1275515454 1265732206 libgstreamer-plugins-base0.10-0 /usr/share/locale/de/LC_MESSAGES/gst-plugins-base-0.10.mo
+1275515454 1274347861 libkrb53 /usr/lib/libkrb5support.so.0.1
+1275515454 1246021206 libsasl2-2 /usr/lib/libsasl2.so.2.0.22
+1275515454 1246972415 libhal1 /usr/lib/libhal.so.1.0.0
+1275515454 1242304520 libstartup-notification0 /usr/lib/libstartup-notification-1.so.0.0.0
+1275515454 1242304516 libpanel-applet2-0 /usr/lib/libpanel-applet-2.so.0.2.54
+1275515454 1242304508 libgnomeui-0 /usr/lib/libgnomeui-2.so.0.2400.1
+1275515454 1242304551 libgtk2.0-cil /usr/lib/mono/gac/pango-sharp/2.12.0.0__35e10195dab3c99f/pango-sharp.dll
+1275515454 1242304504 libilmbase6 /usr/lib/libIlmThread.so.6.0.0
+1275515454 1249748373 libsvn1 /usr/lib/libsvn_diff-1.so.1.0.0
+1275515454 1242304520 libtalloc1 /usr/lib/libtalloc.so.1.2.0
+1275515454 1242304515 libnm-util1 /usr/lib/libnm-util.so.1.0.0
+1275515454 1242304516 libpolkit-grant2 /usr/lib/libpolkit-grant.so.2.0.0
+1275515454 1242304923 libvte-common /usr/share/vte/termcap/xterm
+1275515454 1242466121 libmad0 /usr/lib/libmad.so.0.2.1
+1275515454 1242304455 libncurses5 /lib/libncurses.so.5.7
+1275515454 1242304504 libxinerama1 /usr/lib/libXinerama.so.1.0.0
+1275515454 1242304508 libgnomecanvas2-0 /usr/lib/libgnomecanvas-2.so.0.2600.0
+1275515454 1269478962 libsmbclient /usr/lib/libsmbclient.so.0
+1275515454 1242304507 libgtk2.0-0 /usr/lib/libgdk_pixbuf-2.0.so.0.1600.1
+1275515454 1242304454 libkeyutils1 /lib/libkeyutils-1.2.so
+1275515454 1242304511 libhunspell-1.2-0 /usr/lib/libhunspell-1.2.so.0.0.0
+1275515454 1242302136 libgnome-desktop-2-11 /usr/lib/libgnome-desktop-2.so.11.2.4
+1275515454 1242466110 libphonon4 /usr/lib/libphonon.so.4.3.0
+1275515454 1242304514 liblcms1 /usr/lib/liblcms.so.1.0.18
+1275515454 1242466120 libxine1-misc-plugins /usr/lib/xine/plugins/1.26/post/xineplug_post_tvtime.so
+1275515454 1242304504 libxres1 /usr/lib/libXRes.so.1.0.0
+1275515454 1242304514 libjasper1 /usr/lib/libjasper.so.1.0.0
+1275515454 1242304508 libgp11-0 /usr/lib/libgp11.so.0.0.0
+1275515454 1250084116 libxml2 /usr/lib/libxml2.so.2.6.32
+1275515454 1251364734 libmono-cairo2.0-cil /usr/lib/mono/gac/Mono.Cairo/2.0.0.0__0738eb9f132ed756/Mono.Cairo.dll
+1275515454 1244385261 libtrackerclient0 /usr/lib/libtrackerclient.so.0.0.0
+1275515454 1272354774 libpostproc51 /usr/lib/i686/cmov/libpostproc.so.51.2.0
+1275515454 1242304515 libogg0 /usr/lib/libogg.so.0.5.3
+1275515454 1242744206 libjna-java /usr/lib/jni/libjnidispatch.so
+1275515454 1242304516 libpolkit2 /usr/lib/libpolkit.so.2.0.0
+1275515454 1246624983 libxi6 /usr/lib/libXi.so.6.0.0
+1275515454 1265732206 libgstreamer0.10-0 /usr/lib/libgstcontroller-0.10.so.0.21.0
+1275515454 1252468174 libpam0g /lib/libpam.so.0.81.12
+1275515454 1242304504 libxdamage1 /usr/lib/libXdamage.so.1.1.0
+1275515454 1242304510 libgsm1 /usr/lib/libgsm.so.1.0.12
+1275515454 1244813513 libnb-java2-java /usr/share/netbeans/java2/modules/org-netbeans-modules-swingapp.jar
+1275515454 1242304504 libxrender1 /usr/lib/libXrender.so.1.3.0
+1275515454 1242304455 libuuid1 /lib/libuuid.so.1.2
+1275515454 1242304504 libxext6 /usr/lib/libXext.so.6.4.0
+1275515454 1253530310 libgnomedesktop2.20-cil /usr/lib/mono/gac/gnomedesktop-sharp/2.20.0.0__35e10195dab3c99f/gnomedesktop-sharp.dll
+1275515454 1242304455 libpcre3 /lib/libpcre.so.3.12.1
+1275515454 1274509775 libpq5 /usr/lib/libpq.so.5.1
+1275515454 1242304504 libxrandr2 /usr/lib/libXrandr.so.2.2.0
+1275515454 1242744208 libnb-platform9-java /usr/share/netbeans/platform9/modules/org-netbeans-modules-settings.jar
+1275515454 1242304515 libnm-glib0 /usr/lib/libnm_glib_vpn.so.0.0.0
+1275515454 1242304516 libpolkit-dbus2 /usr/lib/libpolkit-dbus.so.2.0.0
+1275515454 1242304508 libgnomekbd3 /usr/lib/libgnomekbd.so.3.0.0
+1275515454 1258028181 libqt4-sql /usr/lib/libQtSql.so.4.5.0
+1275515454 1242304514 libjpeg62 /usr/lib/libjpeg.so.62.0.0
+1275515454 1258713338 libpulsecore9 /usr/lib/libpulsecore.so.9.0.0
+1275515454 1242304516 libpolkit-gnome0 /usr/lib/libpolkit-gnome.so.0.0.0
+1275515454 1246972415 libhal-storage1 /usr/lib/libhal-storage.so.1.0.0
+1275515454 1263549200 libssl0.9.8 /lib/i686/cmov/libssl.so.0.9.8
+1275515454 1242302136 libsoup-gnome2.4-1 /usr/lib/libsoup-gnome-2.4.so.1.2.0
+1275515454 1242744207 liblucene2-java /usr/share/java/lucene-core-2.4.0.jar
+1275515454 1242304520 libwavpack1 /usr/lib/libwavpack.so.1.0.3
+1275515454 1242304504 libxxf86vm1 /usr/lib/libXxf86vm.so.1.0.0
+1275515454 1242304509 libgpm2 /usr/lib/libgpm.so.2.0.0
+1275515454 1269478962 libwbclient0 /usr/lib/libwbclient.so.0
+1275515453 1242466464 libcompfaceg1 /usr/lib/libcompface.so.1.0.0
+1275515453 1242304507 libgail18 /usr/lib/libgailutil.so.18.0.1
+1275515453 1242302198 libfreetype6 /usr/lib/libfreetype.so.6.3.20
+1275515453 1242304542 libcanberra-gtk-module /usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so
+1275515453 1274859216 libc6 /usr/lib/gconv/UTF-32.so
+1275515453 1242304454 libattr1 /lib/libattr.so.1.1.0
+1275515453 1268814454 libaudiofile0 /usr/lib/libaudiofile.so.0.0.2
+1275515453 1264852171 libfuse2 /lib/libfuse.so.2.7.4
+1275515453 1250561411 libcurl3-gnutls /usr/lib/libcurl-gnutls.so.4.1.0
+1275515453 1242304505 libbonoboui2-0 /usr/lib/libbonoboui-2.so.0.0.0
+1275515453 1242304505 libdatrie0 /usr/lib/libdatrie.so.0.0.3
+1275515453 1242304504 libavahi-common3 /usr/lib/libavahi-common.so.3.5.0
+1275515453 1242304454 libcomerr2 /lib/libcom_err.so.2.1
+1275515453 1242304508 libgif4 /usr/lib/libgif.so.4.1.6
+1275515453 1268818930 libcups2 /usr/lib/libcups.so.2
+1275515453 1242304507 libdirectfb-1.0-0 /usr/lib/libfusion-1.0.so.0.1.0
+1275515453 1242304504 libavahi-glib1 /usr/lib/libavahi-glib.so.1.0.1
+1275515453 1242304507 libgdbm3 /usr/lib/libgdbm.so.3.0.0
+1275515453 1272354773 libavcodec52 /usr/lib/i686/cmov/libavcodec.so.52.20.0
+1275515453 1244385247 libebook1.2-9 /usr/lib/libebook-1.2.so.9.3.0
+1275515453 1274859224 libc6-i686 /lib/tls/i686/cmov/libutil-2.9.so
+1275515453 1242304505 libcairo2 /usr/lib/libcairo.so.2.10800.6
+1275515453 1242304507 libfontconfig1 /usr/lib/libfontconfig.so.1.3.0
+1275515453 1242304507 libexempi3 /usr/lib/libexempi.so.3.1.4
+1275515453 1242304506 libdbus-glib-1-2 /usr/lib/libdbus-glib-1.so.2.1.0
+1275515453 1242304505 libcroco3 /usr/lib/libcroco-0.6.so.3.0.1
+1275515453 1242304454 libcap2 /lib/libcap.so.2.11
+1275515453 1242304551 libgconf2.24-cil /usr/lib/mono/gac/gconf-sharp/2.24.0.0__35e10195dab3c99f/gconf-sharp.dll
+1275515453 1242304506 libdb4.6 /usr/lib/libdb-4.6.so
+1275515453 1242466108 libaudio2 /usr/lib/libaudio.so.2.4
+1275515453 1250561410 libcurl3 /usr/lib/libcurl.so.4.1.0
+1275515453 1242304543 libgconf2-4 /usr/lib/libgconf2-4/2/libgconfbackend-xml.so
+1275515453 1242304505 libcanberra0 /usr/lib/libcanberra.so.0.1.4
+1275515453 1244385246 libedataserver1.2-11 /usr/lib/libedataserver-1.2.so.11.0.0
+1275515453 1242304505 libcanberra-gtk0 /usr/lib/libcanberra-gtk.so.0.0.4
+1275515453 1242304506 libdrm2 /usr/lib/libdrm.so.2.4.0
+1275515453 1242304454 libgcc1 /lib/libgcc_s.so.1
+1275515453 1242304507 libesd-alsa0 /usr/lib/libesd.so.0.2.39
+1275515453 1242304507 libffi5 /usr/lib/libffi.so.5.0.8
+1275515453 1242304523 libbonobo2-0 /usr/lib/bonobo-activation/bonobo-activation-server
+1275515453 1265721073 libempathy-common /usr/share/locale/de/LC_MESSAGES/empathy.mo
+1275515453 1242304507 libgamin0 /usr/lib/libfam.so.0.0.0
+1275515453 1242304503 libflac8 /usr/lib/libFLAC.so.8.2.0
+1275515453 1242304454 libgcrypt11 /lib/libgcrypt.so.11.4.4
+1275515453 1264069799 libexpat1 /usr/lib/libexpat.so.1.5.2
+1275515453 1242302220 libevdocument1 /usr/lib/libevdocument.so.1.0.0
+1275515453 1242304504 libavahi-client3 /usr/lib/libavahi-client.so.3.2.4
+1275515453 1244385249 libedataserverui1.2-8 /usr/lib/libedataserverui-1.2.so.8.1.0
+1275515453 1244646919 libavutil-unstripped-49 /usr/lib/i686/cmov/libavutil.so.49.15.0
+1275515453 1242304507 libexif12 /usr/lib/libexif.so.12.2.0
+1275515453 1242304506 libdb4.7 /usr/lib/libdb-4.7.so
+1275515453 1244385247 libecal1.2-7 /usr/lib/libecal-1.2.so.7.2.1
+1275515453 1242304454 libbz2-1.0 /lib/libbz2.so.1.0.4
+1275515453 1242302212 libbrasero-media0 /usr/lib/nautilus/extensions-2.0/libnautilus-brasero-extension.so
+1275515453 1244385246 libcamel1.2-14 /usr/lib/libcamel-1.2.so.14.0.0
+1275515453 1247571095 libdbus-1-3 /lib/libdbus-1.so.3.4.0
+1275515453 1251893929 libgl1-mesa-glx /usr/lib/libGL.so.1.2
+1275515453 1242304508 libglade2-0 /usr/lib/libglade-2.0.so.0.0.7
+1275515453 1242304504 libbeagle1 /usr/lib/libbeagle.so.1.0.2
+1275515452 1242304542 gtk2-engines-murrine /usr/lib/gtk-2.0/2.10.0/engines/libmurrine.so
+1275515452 1249748372 libaprutil1 /usr/lib/libaprutil-1.so.0.2.12
+1275515452 1245749794 gvfs /usr/lib/gvfs/gvfs-hal-volume-monitor
+1275515452 1265732213 gstreamer0.10-plugins-good /usr/lib/gstreamer-0.10/libgstgconfelements.so
+1275515452 1268179868 gnome-screensaver /usr/bin/gnome-screensaver
+1275515452 1260547878 kdebase-runtime /usr/lib/kde4/kded_globalaccel.so
+1275515452 1242304504 libart-2.0-2 /usr/lib/libart_lgpl_2.so.2.3.20
+1275515452 1242304865 language-pack-gnome-de-base /usr/share/locale-langpack/de/LC_MESSAGES/checkbox.mo
+1275515452 1260547870 kdelibs5 /usr/lib/libthreadweaver.so.4.2.0
+1275515452 1265732207 gstreamer0.10-plugins-base /usr/lib/gstreamer-0.10/libgstaudioresample.so
+1275515452 1242304481 gnome-keyring /usr/bin/gnome-keyring-daemon
+1275515452 1242744203 libappframework-java /usr/share/java/AppFramework-1.03.jar
+1275515452 1244385266 gnome-settings-daemon /usr/lib/gnome-settings-daemon-2.0/libxsettings.so
+1275515452 1242304542 gnome-panel /usr/lib/gnome-panel/libwnck-applet.so
+1275515452 1253530311 gnome-do /usr/lib/gnome-do/libdo.so
+1275515452 1252859645 gnome-terminal /usr/bin/gnome-terminal
+1275515452 1242304870 language-pack-de-base /usr/share/locale-langpack/de/LC_MESSAGES/usbcreator.mo
+1275515452 1242304504 libatk1.0-0 /usr/lib/libatk-1.0.so.0.2609.1
+1275515452 1265732213 gstreamer0.10-pulseaudio /usr/lib/gstreamer-0.10/libgstpulse.so
+1275515452 1248278646 language-pack-kde-de-base /usr/share/locale-langpack/de/LC_MESSAGES/libphonon.mo
+1275515452 1260547868 kdelibs-bin /usr/lib/libkdeinit4_klauncher.so
+1275515452 1242304722 gsfonts /usr/share/fonts/type1/gsfonts/n019004l.pfb
+1275515452 1242304504 libasound2 /usr/lib/libasound.so.2.0.0
+1275515452 1242304522 libasound2-plugins /usr/lib/alsa-lib/libasound_module_pcm_pulse.so
+1275515452 1242304483 less /usr/bin/less
+1275515452 1242466424 labyrinth /usr/share/locale/de/LC_MESSAGES/labyrinth.mo
+1275515452 1265732210 gstreamer0.10-plugins-bad /usr/lib/gstreamer-0.10/libgstoss4audio.so
+1275515452 1242304552 gnome-mount /usr/lib/nautilus/extensions-2.0/libgnome-mount.so
+1275515452 1242302144 gnome-applets /usr/lib/gnome-applets/mixer_applet2
+1275515452 1249748371 libapr1 /usr/lib/libapr-1.so.0.2.12
+1275515452 1242304482 gnome-session /usr/bin/gnome-session
+1275515452 1242466600 latex-xft-fonts /usr/share/fonts/truetype/latex-xft-fonts/cmsy10.ttf
+1275515452 1242466419 javahelp2 /usr/share/java/jh-2.0.05.jar
+1275515452 1245749793 gvfs-backends /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+1275515452 1242304482 gnome-power-manager /usr/bin/gnome-power-manager
+1275515452 1265732207 gstreamer0.10-alsa /usr/lib/gstreamer-0.10/libgstalsa.so
+1275515452 1242304454 libacl1 /lib/libacl.so.1.1.0
+1275515452 1245749792 gvfs-fuse /usr/lib/gvfs/gvfs-fuse-daemon
+1275515451 1250094178 enigmail /usr/lib/enigmail/extension/components/libenigmime.so
+1275515451 1242304552 file-roller /usr/lib/nautilus/extensions-2.0/libnautilus-fileroller.so
+1275515451 1242302222 evince /usr/lib/nautilus/extensions-2.0/libevince-properties-page.so
+1275515451 1247571095 dbus /bin/dbus-daemon
+1275515451 1247571095 dbus-x11 /usr/bin/dbus-launch
+1275515451 1242304534 fast-user-switch-applet /usr/lib/fast-user-switch-applet/fast-user-switch-applet
+1275515451 1242304477 bluez-gnome /usr/bin/bluetooth-applet
+1275515451 1242304450 bash /bin/bash
+1275515451 1242304450 dash /bin/dash
+1275515451 1242547795 amarok /usr/lib/libamarokpud.so.1.0.0
+1275515451 1270896498 firefox-3.0-gnome-support /usr/lib/firefox-3.0.19/components/libnkgnomevfs.so
+1275515451 1270896498 firefox-3.0 /usr/lib/firefox-3.0.19/firefox
+1275335502 1242467333 latex2html /usr/share/latex2html/l2hconf.pm
+1275317529 1242304902 debconf /usr/share/perl5/Debconf/Element/Gnome/Select.pm
+1275314529 1242466188 libstdc++6-4.3-dev /usr/include/c++/4.3/debug/set.h
+1275314529 1274859214 libc6-dev /usr/include/xlocale.h
+1275028958 1242466220 gtkorphan /usr/lib/gtkorphan/gtkorphan_ops.pm
+1275028958 1242466220 libgtk2-gladexml-perl /usr/lib/perl5/auto/Gtk2/GladeXML/GladeXML.so
+1275028958 1242304607 libgtk2-perl /usr/lib/perl5/Gtk2/SimpleList.pm
+1275028958 1246624966 perl /usr/lib/perl/5.10.0/auto/POSIX/getuid.al
+1274859229 1274859225 nscd /usr/sbin/nscd <RECENT-CTIME>
+1274858782 1274264134 xserver-xorg-core /usr/lib/xorg/modules/extensions/librecord.so
+1274858782 1274264133 xserver-common /usr/lib/xorg/protocol.txt
+1274638117 1269478963 smbclient /usr/lib/cups/backend/smb
+1274638117 1268818939 cups /usr/lib/cups/backend-available/socket
+1274538355 1273215706 texlive-base-bin /usr/bin/oxdvi
+1274428910 1242466493 dillo /usr/lib/dillo/dpi/file/file.dpi
+1274347832 1274347860 libkrb5-dev /usr/bin/krb5-config <RECENT-CTIME>
+1274005007 1274004988 libpoppler-glib-dev /usr/include/poppler/glib/poppler-features.h <RECENT-CTIME>
+1274005007 1254903170 libglib2.0-dev /usr/lib/glib-2.0/include/glibconfig.h
+1274005007 1244544524 libcairo2-dev /usr/include/cairo/cairo-svg.h
+1274004999 1244544525 libgtk2.0-dev /usr/lib/pkgconfig/gdk-2.0.pc
+1274004999 1274004988 libpoppler-dev /usr/lib/pkgconfig/poppler.pc <RECENT-CTIME>
+1274004999 1246624982 libxi-dev /usr/lib/pkgconfig/xi.pc
+1274004838 1247571094 libxcb1-dev /usr/lib/pkgconfig/xcb.pc
+1274004838 1247571096 libxcb-render0-dev /usr/lib/pkgconfig/xcb-render.pc
+1274004838 1268814454 libpng12-dev /usr/lib/pkgconfig/libpng.pc
+1274003268 1274003259 pstoedit /usr/bin/pstoedit <RECENT-CTIME>
+1274003268 1274003259 libpstoedit0c2a /usr/lib/pstoedit/libp2edrvstd.so <RECENT-CTIME>
+1273341978 1273341957 libxslt1-dev /usr/include/libxslt/xsltconfig.h <RECENT-CTIME>
+1273341976 1248183692 ruby1.8-dev /usr/lib/ruby/1.8/i486-linux/st.h
+1273341976 1250084115 libxml2-dev /usr/include/libxml2/libxml/xmlsave.h
+1273231573 1273215706 texlive-omega /usr/bin/odvips <RECENT-CTIME>
+1273215811 1273215716 texlive-xetex /usr/bin/xelatex <RECENT-CTIME>
+1273215754 1273215711 texlive-metapost /usr/bin/mpost <RECENT-CTIME>
+1273215742 1273215706 texlive-formats-extra /usr/bin/eplain <RECENT-CTIME>
+1273215742 1273215706 texlive-math-extra /usr/bin/amstex <RECENT-CTIME>
+1273215742 1273215706 texlive-latex-base /usr/bin/pdflatex <RECENT-CTIME>
+1273215684 1273215708 dvipng /usr/bin/dvigif <RECENT-CTIME>
+1273215684 1273215708 libkpathsea-dev /usr/include/kpathsea/xstat.h <RECENT-CTIME>
+1273215684 1273215712 texlive-metapost-doc /usr/share/doc/texlive-doc/latex/metaplot/examples/cpoint.h <RECENT-CTIME>
+1273215684 1273215711 texlive-font-utils /usr/bin/ttf2afm <RECENT-CTIME>
+1273215684 1273215710 texlive-extra-utils /usr/bin/dvilj6 <RECENT-CTIME>
+1272807426 1252468220 openoffice.org-common /usr/lib/openoffice/program/openabout_ubuntu_sun.bmp <OLD>
+1272713251 1272713272 netpbm /usr/bin/pgmnorm <OLD>
+1272617992 1246972416 hal /usr/lib/hal/hal-storage-eject <OLD>
+1272617820 1242304543 libgpod-common /usr/lib/hal/libgpod-callout <OLD>
+1272364017 1272364038 libldap2-dev /usr/lib/libldap.a <OLD>
+1272364017 1272364037 comerr-dev /usr/include/com_err.h <OLD>
+1272364017 1272364038 libcurl4-gnutls-dev /usr/lib/libcurl.a <OLD>
+1272364017 1272364037 libidn11-dev /usr/lib/pkgconfig/libidn.pc <OLD>
+1272354778 1272354773 libavformat52 /usr/lib/i686/cmov/libavformat.so.52 <OLD>
+1272354778 1272354774 libavfilter0 /usr/lib/i686/cmov/libavfilter.so.0 <OLD>
+1272354778 1272354774 libswscale0 /usr/lib/i686/cmov/libswscale.so.0 <OLD>
+1272354778 1272354774 libavdevice52 /usr/lib/i686/cmov/libavdevice.so.52 <OLD>
+1272354750 1272354775 ffmpeg /usr/bin/qt-faststart <OLD>
+1271752900 1242466500 gfortran-4.3 /usr/lib/gcc/i486-linux-gnu/4.3/libgfortran.a <OLD>
+1271752897 1242304536 gcc-4.3 /usr/lib/gcc/i486-linux-gnu/4.3/crtbeginT.o <OLD>
+1271752892 1268814469 linux-libc-dev /usr/include/linux/limits.h <OLD>
+1271415660 1271414746 acroread /usr/bin/acroread <OLD>
+1271406919 1271404390 sudo /usr/bin/sudo <OLD>
+1271404396 1271404389 cmake /usr/lib/emacsen-common/packages/install/cmake <OLD>
+1271150343 1258713338 pulseaudio /usr/lib/pulse-0.9/modules/module-null-sink.so <OLD>
+1271020549 1242304638 uuid-runtime /usr/sbin/uuidd <OLD>
+1270900294 1270896495 firefox-3.0-branding /usr/lib/firefox-3.0.19/chrome/browser-branding.jar <OLD>
+1270748399 1270748424 tzdata /usr/sbin/tzconfig <OLD>
+1270679510 1270679496 openjdk-6-jre-lib /usr/lib/jvm/java-6-openjdk/jre/lib/charsets.jar <OLD>
+1270679509 1270679499 openjdk-6-jre-headless /usr/lib/jvm/java-6-openjdk/bin/java <OLD>
+1270679477 1270679501 openjdk-6-jre /usr/lib/jvm/java-6-openjdk/bin/policytool <OLD>
+1270679477 1270679497 icedtea-6-jre-cacao /usr/lib/jvm/java-6-openjdk/jre/lib/i386/cacao/Xusage.txt <OLD>
+1270481526 1270481527 zlib-bin /usr/bin/miniunzip <OLD>
+1270481292 1270481313 rzip /usr/bin/runzip <OLD>
+1270462452 1270462441 regionset /usr/sbin/regionset <OLD>
+1270141170 1270141170 policykit /var/lib/misc/PolicyKit.reload <OLD>
+1270130670 1251893927 libgl1-mesa-dri /usr/lib/dri/swrast_dri.so <OLD>
+1270130526 1242304629 xserver-xorg-video-vesa /usr/lib/xorg/modules/drivers/vesa_drv.so <OLD>
+1269934689 1269934669 emacs22-gtk /usr/bin/emacs22-gtk <OLD>
+1269934671 1268296561 dpkg /usr/sbin/install-info <OLD>
+1269934669 1242304530 dictionaries-common /usr/lib/emacsen-common/packages/remove/dictionaries-common <OLD>
+1269934669 1242466306 latex-cjk-common /usr/lib/emacsen-common/packages/remove/latex-cjk-common <OLD>
+1269934669 1248183718 ruby1.8-elisp /usr/lib/emacsen-common/packages/remove/ruby1.8-elisp <OLD>
+1269934669 1242466457 emacsen-common /usr/lib/emacsen-common/packages/remove/emacsen-common <OLD>
+1269934648 1269934671 emacs22-bin-common /usr/lib/emacs/22.2/i486-linux-gnu/vcdiff <OLD>
+1269478971 1269478965 winbind /usr/sbin/winbindd <OLD>
+1269383990 1269383968 odt2txt /usr/bin/odp2txt <OLD>
+1269092216 1252468187 openoffice.org-draw /usr/lib/openoffice/basis3.1/program/libsvgfilterli.so <OLD>
+1269092215 1252468184 openoffice.org-base /usr/lib/openoffice/basis3.1/program/libdbaxmlli.so <OLD>
+1269092215 1252468188 openoffice.org-math /usr/lib/openoffice/basis3.1/program/libsmdli.so <OLD>
+1269091803 1252468185 openoffice.org-base-core /usr/lib/openoffice/basis3.1/program/libdbali.so <OLD>
+1269089328 1269089221 foremost /usr/bin/foremost <OLD>
+1269086620 1269076386 ext3rminator /usr/bin/ext3rminator <OLD>
+1269010756 1269010681 ext3grep /usr/bin/ext3grep <OLD>
+1268996044 1242304476 e2fsprogs /sbin/e2fsck <OLD>
+1268933792 1242304475 ncurses-base /lib/terminfo/x/xterm-color <OLD>
+1268902339 1268818934 cups-bsd /usr/bin/lpr <OLD>
+1268819002 1268818934 hdapsd /usr/sbin/hdapsd <OLD>
+1268818940 1268818934 cups-client /usr/sbin/lpinfo <OLD>
+1268818938 1266399245 flashplugin-installer /usr/lib/nspluginwrapper/dirs.d/flashplugin-installer <OLD>
+1268818938 1242466455 kaffeine-mozilla /usr/lib/mozilla/plugins/kaffeineplugin.a <OLD>
+1268818938 1268818929 nspluginwrapper /usr/bin/nspluginwrapper <OLD>
+1268814474 1268814448 linux-image-2.6.28-18-generic /lib/modules/2.6.28-18-generic/modules.order <OLD>
+1268814416 1268814464 linux-headers-2.6.28-18 /usr/src/linux-headers-2.6.28-18/include/xen/xencomm.h <OLD>
+1268814416 1268814454 libaudiofile-dev /usr/lib/libaudiofile.a <OLD>
+1268814416 1268814463 linux-headers-2.6.28-18-generic /usr/src/linux-headers-2.6.28-18-generic/include/linux/pmic_external.h <OLD>
+1268495640 1268296573 dpkg-dev /usr/bin/dpkg-checkbuilddeps <OLD>
+1268476154 1268476150 tp-smapi-modules-2.6.28-17-generic /lib/modules/2.6.28-17-generic/extra/thinkpad_ec.ko <OLD>
+1268476144 1260013573 linux-headers-2.6.28-17 /usr/src/linux-headers-2.6.28-17/include/linux/poll.h <OLD>
+1268476144 1260013573 linux-headers-2.6.28-17-generic /usr/src/linux-headers-2.6.28-17-generic/include/linux/poll.h <OLD>
+1268475555 1242304476 wireless-tools /sbin/iwpriv <OLD>
+1268475543 1268475537 powertop /usr/sbin/powertop <OLD>
+1268149851 1243431190 git-core /usr/lib/git-core/git-whatchanged <OLD>
+1268056852 1252468194 openoffice.org-l10n-de /usr/lib/openoffice/basis3.1/program/resource/uuide.res <OLD>
+1267971724 1267971720 lirc /lib/udev/rules.d/85-lirc.rules <OLD>
+1267970467 1242466759 menu /etc/menu-methods/lang.h <OLD>
+1267970466 1242997633 autoconf2.13 /usr/share/autoconf2.13/acconfig.h <OLD>
+1267970434 1242467177 r-base-core /usr/lib/R/etc/repositories <OLD>
+1267969735 1267969727 setserial /bin/setserial <OLD>
+1267963047 1260547887 kdelibs4c2a /usr/lib/kde3/kio_uiserver.so <OLD>
+1267731403 1267724316 gsoap /usr/lib/libgsoap++.a <OLD>
+1267731260 1267724340 libpoco-dev /usr/include/Poco/XML/XMLWriter.h <OLD>
+1267731259 1242466552 zlib1g-dev /usr/include/zlibdefs.h <OLD>
+1267731259 1267731231 libssl-dev /usr/include/openssl/kssl.h <OLD>
+1267731258 1267724338 libical-dev /usr/include/ical.h <OLD>
+1267731258 1244544522 libavahi-common-dev /usr/include/avahi-common/gccmacro.h <OLD>
+1267731257 1244544522 libavahi-client-dev /usr/include/avahi-client/publish.h <OLD>
+1267724314 1267724323 libicu-dev /usr/lib/icu/Makefile.inc <OLD>
+1267724314 1267724327 libboost-wave1.37-dev /usr/lib/libboost_wave-mt.a <OLD>
+1267724314 1267724325 python-dev /usr/bin/python-config <OLD>
+1267724314 1267724321 libboost-system1.37-dev /usr/lib/libboost_system-mt.a <OLD>
+1267724314 1267724327 libboost-thread1.37-dev /usr/lib/libboost_thread-mt.a <OLD>
+1267724314 1267724322 libboost-test1.37-dev /usr/lib/libboost_unit_test_framework-mt.a <OLD>
+1267724314 1267724319 libboost1.37-dev /usr/bin/bcp <OLD>
+1267724314 1267724326 libboost-python1.37-dev /usr/bin/pyste <OLD>
+1267724314 1267724324 libboost-regex1.37-dev /usr/lib/libboost_regex-mt.a <OLD>
+1267724314 1267724316 gccxml /usr/share/gccxml-0.9/MIPSpro/7.3/stl_config.h <OLD>
+1267724314 1267724321 libboost-date-time1.37-dev /usr/lib/libboost_date_time-mt.a <OLD>
+1267724314 1267724322 libboost-graph1.37-dev /usr/lib/libboost_graph-mt.a <OLD>
+1267724314 1267724337 libboost1.37-doc /usr/share/doc/libboost1.37-doc/examples/tools/build/v2/example/qt/qt3/hello/canvas.h <OLD>
+1267724314 1267724324 libboost-iostreams1.37-dev /usr/lib/libboost_iostreams-mt.a <OLD>
+1267724314 1267724326 libboost-signals1.37-dev /usr/lib/libboost_signals-mt.a <OLD>
+1267724314 1267724317 libboost-serialization1.37-dev /usr/lib/libboost_wserialization-mt.a <OLD>
+1267724314 1267724325 python2.6-dev /usr/bin/python2.6-config <OLD>
+1267724314 1267724321 libboost-filesystem1.37-dev /usr/lib/libboost_filesystem-mt.a <OLD>
+1267724314 1267724324 libboost-program-options1.37-dev /usr/lib/libboost_program_options-mt.a <OLD>
+1267700213 1267700213 libpurple-bin /usr/bin/purple-url-handler <OLD>
+1267700213 1267700214 libpurple0 /usr/lib/purple-2/liboscar.so.0 <OLD>
+1267700213 1267700216 pidgin /usr/bin/pidgin <OLD>
+1267684931 1242466553 libswt-gnome-gtk-3.4-jni /usr/lib/jni/libswt-gnome-gtk-3448.so <OLD>
+1267684909 1242466553 libswt-mozilla-gtk-3.4-jni /usr/lib/jni/libswt-xpcominit-gtk-3448.so <OLD>
+1267684785 1242466553 libswt-cairo-gtk-3.4-jni /usr/lib/jni/libswt-cairo-gtk-3448.so <OLD>
+1267684784 1242466185 libswt-gtk-3.4-jni /usr/lib/jni/libswt-pi-gtk-3448.so <OLD>
+1267556417 1267120276 skype /usr/bin/skype <OLD>
+1267545809 1242304534 f-spot /usr/lib/f-spot/libfspotjpegtran.so.0 <OLD>
+1267545808 1242304551 libglade2.0-cil /usr/lib/mono/gtk-sharp-2.0/glade-sharp.dll <OLD>
+1267545805 1251364737 libmono-sqlite2.0-cil /usr/lib/mono/2.0/Mono.Data.SqliteClient.dll <OLD>
+1267545805 1242304551 libgnome2.24-cil /usr/lib/mono/gtk-sharp-2.0/gnome-sharp.dll <OLD>
+1267545805 1242304551 libgnome-vfs2.24-cil /usr/lib/mono/gtk-sharp-2.0/gnome-vfs-sharp.dll <OLD>
+1267545805 1251364736 libmono-system-data2.0-cil /usr/lib/mono/2.0/System.Data.dll <OLD>
+1266478202 1266478228 twolame /usr/bin/twolame <OLD>
+1266478202 1266478228 mkvtoolnix /usr/bin/mkvinfo-text <OLD>
+1266478202 1266478227 vamps /usr/bin/play_cell <OLD>
+1266478202 1266478227 mencoder /usr/bin/mencoder <OLD>
+1266354043 1266354036 vim /usr/bin/vim.basic <OLD>
+1266354014 1266354033 vim-runtime /usr/bin/gvimtutor <OLD>
+1266347655 1258028179 libqt4-sql-mysql /usr/lib/qt4/plugins/sqldrivers/libqsqlmysql.so <OLD>
+1266347655 1266347633 libqt4-sql-sqlite /usr/lib/qt4/plugins/sqldrivers/libqsqlite.so <OLD>
+1266347614 1266347635 speech-dispatcher /usr/lib/speech-dispatcher/libsdaudio.so <OLD>
+1266276460 1242466220 packagesearch /usr/lib/packagesearch/liborphanplugin.so <OLD>
+1265938183 1265884901 mysql-server-5.0 /usr/sbin/ndbd <OLD>
+1265884909 1265884894 mysql-client-5.0 /usr/bin/mysqlrepair <OLD>
+1265884899 1265884895 mysql-server-core-5.0 /usr/sbin/mysqld <OLD>
+1265884898 1265884905 libmysqlclient15-dev /usr/lib/mysql/libndbclient.so <OLD>
+1265739253 1265732216 python-gst0.10 /usr/lib/python2.6/dist-packages/gst-0.10/gst/_gst.so <OLD>
+1265733218 1265732215 libgstfarsight0.10-0 /usr/lib/farsight2-0.0/libnice-transmitter.so <OLD>
+1265733070 1265721078 telepathy-gabble /usr/lib/telepathy/telepathy-gabble <OLD>
+1265733065 1265732209 gstreamer0.10-plugins-ugly /usr/lib/gstreamer-0.10/libgstasf.so <OLD>
+1265733064 1265732214 gstreamer0.10-nice /usr/lib/gstreamer-0.10/libgstnice.so <OLD>
+1265733064 1265732207 gstreamer0.10-x /usr/lib/gstreamer-0.10/libgstximagesink.so <OLD>
+1265733064 1265732213 gstreamer0.10-gnomevfs /usr/lib/gstreamer-0.10/libgstgnomevfs.so <OLD>
+1265733064 1265732210 gstreamer0.10-sdl /usr/lib/gstreamer-0.10/libgstsdl.so <OLD>
+1265733062 1265732213 gstreamer0.10-esd /usr/lib/gstreamer-0.10/libgstesd.so <OLD>
+1265732220 1265721092 python-support /usr/lib/python2.5/site-packages/python-support.pth <OLD>
+1265732204 1265732205 check /usr/share/doc/check/example/src/money.2.h <OLD>
+1265732204 1265732214 gstreamer0.10-plugins-base-apps /usr/bin/gst-visualise-0.10 <OLD>
+1265732204 1265732205 libgstreamer0.10-0-dbg /usr/lib/debug/usr/bin/gst-inspect-0.10 <OLD>
+1265732204 1265732206 gstreamer0.10-plugins-base-dbg /usr/lib/debug/usr/lib/libgstriff-0.10.so.0.17.0 <OLD>
+1265732204 1265732210 gstreamer0.10-plugins-bad-dbg /usr/lib/debug/usr/lib/gstreamer-0.10/libgstaacparse.so <OLD>
+1265732204 1265732211 gstreamer0.10-plugins-good-dbg /usr/lib/debug/usr/lib/gstreamer-0.10/libgsteffectv.so <OLD>
+1265732204 1265732214 gstreamer0.10-tools /usr/bin/gst-inspect-0.10 <OLD>
+1265732204 1265732216 libgstreamer0.10-dev /usr/bin/gst-codec-info-0.10 <OLD>
+1265731895 1265731895 libv4l-0 /usr/lib/libv4l/ov518-decomp <OLD>
+1265731169 1265731149 pidgin-libnotify /usr/lib/purple-2/pidgin-libnotify.so <OLD>
+1265722759 1265721074 telepathy-mission-control /usr/lib/telepathy/mission-control <OLD>
+1265721098 1265721076 empathy /usr/bin/empathy <OLD>
+1265721052 1265721078 telepathy-butterfly /usr/lib/telepathy/telepathy-butterfly <OLD>
+1265721052 1265721076 python-openssl /usr/lib/python-support/python-openssl/python2.5/OpenSSL/crypto.so <OLD>
+1265721052 1265721079 telepathy-salut /usr/lib/telepathy/telepathy-salut <OLD>
+1265721052 1265721078 telepathy-haze /usr/lib/telepathy/telepathy-haze <OLD>
+1265632680 1264959833 expect /usr/lib/expect5.43/pkgIndex.tcl <OLD>
+1265375917 1242304552 libopal3.6.1 /usr/lib/opal-3.6.1/lid/vpb_lid_pwplugin.so <OLD>
+1265375917 1242304609 libpt2.6.1-plugins-v4l2 /usr/lib/ptlib-2.6.1/devices/videoinput/v4l2_pwplugin.so <OLD>
+1265375917 1242304609 libpt2.6.1-plugins-alsa /usr/lib/ptlib-2.6.1/devices/sound/alsa_pwplugin.so <OLD>
+1265360059 1265281763 linux-restricted-modules-common /sbin/lrm-manager <OLD>
+1265360059 1265359975 linux-restricted-modules-2.6.28-18-generic /lib/linux-restricted-modules/2.6.28-18-generic/ath_hal/ath_hal.mod.o <OLD>
+1265212621 1264069794 gzip /bin/uncompress <OLD>
+1264893026 1264852170 fuse-utils /bin/fusermount <OLD>
+1264676900 1264676922 java-wrappers /usr/lib/java-wrappers/jvm-list.sh <OLD>
+1264676900 1264676922 fop /usr/bin/fop-ttfreader <OLD>
+1264675577 1264675281 dhcp3-client /sbin/dhclient <OLD>
+1264675263 1264675281 dhcp3-common /usr/bin/omshell <OLD>
+1264675263 1264675282 lintian /usr/share/lintian/lib/Checker.pm <OLD>
+1264342840 1242466188 postfix /usr/lib/postfix/error <OLD>
+1264244775 1264069797 bind9-host /usr/bin/host <OLD>
+1264164424 1264164417 python2.5 /usr/lib/python2.5/plistlib.py <OLD>
+1264164422 1264164418 python2.5-minimal /usr/lib/python2.5/stringprep.py <OLD>
+1264069796 1264069797 dnsutils /usr/bin/nsupdate <OLD>
+1264069796 1264069798 libexpat1-dev /usr/lib/libexpatw.a <OLD>
+1264064822 1264064760 testdisk /usr/sbin/testdisk <OLD>
+1264062244 1242304542 gtk2-engines /usr/lib/gtk-2.0/2.10.0/engines/libthinice.so <OLD>
+1264062242 1242304542 gtk2-engines-pixbuf /usr/lib/gtk-2.0/2.10.0/engines/libpixmap.so <OLD>
+1264062241 1242304543 libgnome-window-settings1 /usr/lib/libgnome-window-settings1/libmetacity.so <OLD>
+1263913130 1252468162 libpam-modules /lib/security/pam_selinux.so <OLD>
+1263903780 1260013542 linux-image-2.6.28-17-generic /boot/System.map-2.6.28-17-generic <OLD>
+1263559050 1262954248 gimp /usr/lib/gimp/2.0/plug-ins/web-browser <OLD>
+1263557801 1263557308 gnuplot-x11 /usr/lib/gnuplot/gnuplot_x11 <OLD>
+1263557517 1242304543 libgnomeprint2.2-0 /usr/lib/libgnomeprint/2.18.6/modules/libgnomeprintlpd.so <OLD>
+1263557508 1263557507 wxmaxima /usr/bin/wxmaxima <OLD>
+1263557405 1263557396 maxima /usr/lib/maxima/5.13.0/binary-gcl/maxima <OLD>
+1263557309 1263557308 gnuplot-nox /usr/bin/gnuplot <OLD>
+1263556314 1263549208 openssl /usr/bin/c_rehash <OLD>
+1263556307 1263550855 transmission-gtk /usr/bin/transmission <OLD>
+1262716958 1242466216 w32codecs /usr/lib/codecs/wma9dmod.dll <OLD>
+1262430408 1248183694 irb1.8 /usr/lib/ruby/1.8/irb/version.rb <OLD>
+1261828060 1242304456 linux-firmware /lib/firmware/rt73.bin <OLD>
+1261662317 1257597873 qhull-bin /usr/bin/qhull <OLD>
+1261662316 1260547878 kdebase-runtime-bin-kde4 /usr/bin/kwalletd <OLD>
+1261662315 1258713340 pulseaudio-utils /usr/bin/pax11publish <OLD>
+1261662314 1257870029 fping /usr/bin/fping6 <OLD>
+1261662313 1260547890 khelpcenter4 /usr/bin/khelpcenter <OLD>
+1261662312 1260379581 parley /usr/bin/parley <OLD>
+1261662311 1258713339 pulseaudio-esound-compat /usr/bin/esd <OLD>
+1261662310 1258028180 qt4-qtconfig /usr/bin/qtconfig-qt4 <OLD>
+1261662309 1260379592 pinentry-qt /usr/bin/pinentry-qt <OLD>
+1261662304 1259173488 update-manager-core /usr/bin/do-release-upgrade <OLD>
+1261662303 1257597871 pymol /usr/bin/pymol <OLD>
+1261662302 1260379592 choqok /usr/bin/choqok <OLD>
+1261142287 1261142281 libalgorithm-diff-perl /usr/share/perl5/Algorithm/Diff.pm <OLD>
+1260640343 1242304623 syslinux /usr/lib/syslinux/mbr.bin <OLD>
+1260640337 1242304476 parted /sbin/parted <OLD>
+1260629010 1260628971 playitslowly /usr/local/bin/playitslowly <OLD>
+1260547834 1260547880 kdebase-runtime-data /usr/lib/kconf_update_bin/phonon_deviceuids_update <OLD>
+1260547834 1260547881 kdelibs-data /usr/share/apps/dcopidlng/kdocUtil.pm <OLD>
+1260367904 1260359877 ntpdate /usr/sbin/ntpdate <OLD>
+1260013672 1260013559 linux-restricted-modules-2.6.28-17-generic /lib/linux-restricted-modules/2.6.28-17-generic/ath_hal/ath_hal.mod.o <OLD>
+1260012542 1259173481 update-manager /usr/bin/update-manager <OLD>
+1259173423 1259173503 linux-headers-2.6.28-16 /usr/src/linux-headers-2.6.28-16/include/xen/xencomm.h <OLD>
+1259173423 1259173502 linux-headers-2.6.28-16-generic /usr/src/linux-headers-2.6.28-16-generic/include/linux/ipu.h <OLD>
+1258824319 1258713353 totem-plugins /usr/lib/totem/plugins/screenshot/libscreenshot.so <OLD>
+1258815449 1258713353 totem-mozilla /usr/lib/mozilla/plugins/libtotem-cone-plugin.so <OLD>
+1258803730 1258713340 pulseaudio-module-x11 /usr/lib/pulse-0.9/modules/module-x11-publish.so <OLD>
+1258803729 1258713339 pulseaudio-module-hal /usr/lib/pulse-0.9/modules/module-hal-detect.so <OLD>
+1258750163 1242304476 iproute /sbin/ss <OLD>
+1258028151 1258028180 libqt4-qt3support /usr/lib/qt4/plugins/designer/libqt3supportwidgets.so <OLD>
+1258019059 1244625908 libmagickcore1 /usr/lib/ImageMagick-6.4.5/modules-Q16/coders/yuv.so <OLD>
+1257621611 1257505142 pm-utils /usr/lib/pm-utils/sleep.d/95hdparm-apm <OLD>
+1257505114 1257505141 libhtml-parser-perl /usr/lib/perl5/auto/HTML/Parser/Parser.bs <OLD>
+1257285830 1251473126 mjpegtools /usr/bin/y4munsharp <OLD>
+1257285830 1250758098 libgnutls-dev /usr/bin/libgnutls-config <OLD>
+1257285830 1254390137 ntfsprogs /usr/bin/ntfsfix <OLD>
+1257285830 1255078139 devscripts /usr/bin/dch <OLD>
+1257285829 1253002849 libbogl-dev /usr/bin/reduce-font <OLD>
+1257285828 1256291733 poppler-utils /usr/bin/pdftohtml <OLD>
+1257285827 1257152750 libsnmp-base /usr/bin/net-snmp-config <OLD>
+1257285827 1254676658 apport /usr/bin/apport-unpack <OLD>
+1257285826 1250561411 curl /usr/bin/curl <OLD>
+1257285826 1250084118 libxml2-utils /usr/bin/xmlcatalog <OLD>
+1257285824 1252859629 automake /usr/bin/aclocal-1.10 <OLD>
+1257285824 1251893929 mesa-utils /usr/bin/glxinfo <OLD>
+1257285824 1252468186 openoffice.org-impress /usr/bin/ooimpress <OLD>
+1257285824 1253002849 libusplash-dev /usr/bin/pngtousplash <OLD>
+1257285822 1251364733 mono-2.0-gac /usr/bin/gacutil2 <OLD>
+1257285822 1251301601 dar /usr/bin/dar_xform <OLD>
+1257285821 1250561387 edos-debcheck /usr/bin/edos-builddebcheck <OLD>
+1257285820 1253002850 squashfs-tools /usr/bin/unsquashfs <OLD>
+1257285817 1251364731 mono-common /usr/bin/cli-wrapper <OLD>
+1257285815 1250506740 gv /usr/bin/gv-update-userconfig <OLD>
+1257285815 1250084117 gwibber /usr/bin/gwibber <OLD>
+1257254927 1257254752 sshfs /usr/bin/sshfs <OLD>
+1256743792 1256743775 dargui /usr/bin/dargui <OLD>
+1256743742 1256743771 libgdk-pixbuf2 /usr/lib/gdk-pixbuf/loaders/libpixbufloader-xbm.so <OLD>
+1256687308 1252468213 python-uno /usr/lib/openoffice/basis3.1/share/registry/modules/org/openoffice/Office/Scripting/Scripting-python.xcu <OLD>
+1256660135 1253863808 whiptail /usr/bin/whiptail <OLD>
+1256045931 1246624960 perl-modules /usr/share/perl/5.10.0/Digest/base.pm <OLD>
+1256045931 1256045686 libsvn-perl /usr/lib/perl5/auto/SVN/_Wc/_Wc.so <OLD>
+1256045931 1243431190 liberror-perl /usr/share/perl5/Error.pm <OLD>
+1256045931 1256045686 git-svn /usr/lib/git-core/git-svn <OLD>
+1255951649 1255335868 op-jre /usr/share/OP-jre/lib/fonts/LucidaSansDemiBold.ttf <OLD>
+1255345265 1242304637 passwd /usr/sbin/groupmod <OLD>
+1255336017 1255335876 op-submit /usr/bin/submit <OLD>
+1255336003 1255335868 op-fitch /usr/bin/fitch <OLD>
+1255335993 1255335867 op-boole /usr/bin/boole <OLD>
+1255335929 1255335877 op-tarski /usr/bin/tarski <OLD>
+1255335904 1242466174 python-simplejson /usr/lib/python-support/python-simplejson/python2.6/simplejson/_speedups.so <OLD>
+1255335903 1242466174 python-pysqlite2 /usr/lib/python2.6/dist-packages/pysqlite2/_sqlite.so <OLD>
+1255335901 1242466173 python-qt4 /usr/lib/python2.6/dist-packages/PyQt4/QtNetwork.so <OLD>
+1255335899 1242466171 python-sip4 /usr/lib/python2.6/dist-packages/sip.so <OLD>
+1255188880 1242466296 p7zip-full /usr/lib/p7zip/7z.so <OLD>
+1255116426 1242304610 python-gmenu /usr/lib/python-support/python-gmenu/python2.6/gmenu.so <OLD>
+1255003620 1254919369 wget /usr/bin/wget <OLD>
+1254992319 1242304476 util-linux /sbin/blockdev <OLD>
+1254992318 1242304638 laptop-mode-tools /usr/sbin/laptop_mode <OLD>
+1254990780 1242304609 anacron /usr/lib/pm-utils/sleep.d/95anacron <OLD>
+1254990780 1242304450 kbd /bin/chvt <OLD>
+1254990779 1242302197 bluez /usr/lib/pm-utils/sleep.d/48hid2hci <OLD>
+1254676740 1254676657 python-apport /usr/lib/python2.6/dist-packages/apport/crashdb_impl/memory.py <OLD>
+1254676739 1254676656 python-problem-report /usr/lib/python2.6/dist-packages/problem_report.py <OLD>
+1254676629 1254676673 linux-headers-2.6.28-15 /usr/src/linux-headers-2.6.28-15/include/xen/xencomm.h <OLD>
+1254676629 1254676672 linux-headers-2.6.28-15-generic /usr/src/linux-headers-2.6.28-15-generic/include/linux/mxc_v4l2.h <OLD>
+1254434595 1242466418 freemind /usr/share/freemind/lib/ant/lib/xsdlib.jar <OLD>
+1254425084 1242304476 dosfstools /sbin/mkfs.vfat <OLD>
+1254392170 1242634845 bzr /usr/lib/python2.6/dist-packages/bzrlib/_btree_serializer_c.so <OLD>
+1254257311 1254252772 cgoban /usr/games/cgoban <OLD>
+1254257305 1254252772 gnugo /usr/games/gnugo <OLD>
+1254041993 1252468220 openoffice.org-l10n-en-gb /usr/lib/openoffice/basis3.1/share/template/en-GB/presnt/GlossyUbuntu.otp <OLD>
+1253863811 1253863807 python-newt /usr/lib/python2.6/dist-packages/snack.py <OLD>
+1253745838 1253745873 libwebkit-1.0-1 /usr/lib/webkit-1.0/libexec/DumpRenderTree <OLD>
+1253542367 1253542335 sbackup /usr/sbin/simple-backup-config <OLD>
+1253530319 1253530310 libnotify0.4-cil /usr/lib/cli/notify-sharp-0.4/notify-sharp.dll.config <OLD>
+1253530278 1253530310 librsvg2-2.18-cil /usr/lib/mono/rsvg2-sharp-2.0/rsvg2-sharp.dll <OLD>
+1253530278 1253530310 libwnck2.20-cil /usr/lib/mono/wnck-sharp-2.20/wnck-sharp.dll <OLD>
+1253364935 1252468215 openoffice.org-filter-binfilter /usr/lib/openoffice/basis3.1/program/libbindetli.so <OLD>
+1253273439 1253273434 vrms /usr/bin/vrms <OLD>
+1253008700 1242304637 coreutils /usr/sbin/chroot <OLD>
+1253006924 1242304476 upstart /sbin/init <OLD>
+1253002984 1253002855 reconstructor /usr/share/reconstructor/lib/Reconstructor/__init__.py <OLD>
+1252859525 1252859603 sun-java6-demo /usr/lib/jvm/java-6-sun-1.6.0.16/demo/applets.html <OLD>
+1252859525 1252859598 sun-java6-javadb /usr/lib/jvm/java-6-sun-1.6.0.16/db/RELEASE-NOTES.html <OLD>
+1252602006 1252468170 openoffice.org-emailmerge /usr/lib/openoffice/basis3.1/share/registry/modules/org/openoffice/Office/Writer/Writer-javamail.xcu <OLD>
+1252602005 1252468229 openoffice.org-filter-mobiledev /usr/lib/openoffice/basis3.1/share/registry/modules/org/openoffice/TypeDetection/Filter/fcfg_palm_filters.xcu <OLD>
+1252602003 1252468217 openoffice.org-style-human /usr/lib/openoffice/basis3.1/share/config/images_human.zip <OLD>
+1252483724 1252468166 language-pack-en /usr/lib/xulrunner-addons/extensions/langpack-en-GB@xulrunner-1.9.ubuntu.com/install.rdf <OLD>
+1252469280 1252469263 scribus /usr/lib/scribus/profiles/GenericCMYK.icm <OLD>
+1252468202 1252468227 openoffice.org-java-common /usr/lib/openoffice/basis3.1/program/classes/XMergeBridge.jar <OLD>
+1252468202 1252468235 openoffice.org-help-en-gb /usr/lib/openoffice/basis3.1/help/en-GB/smath.ht <OLD>
+1252468202 1252468242 openoffice.org-help-en-us /usr/lib/openoffice/basis3.1/help/en/smath.ht <OLD>
+1252468202 1252468228 openoffice.org-report-builder-bin /usr/lib/openoffice/basis3.1/program/librptli.so <OLD>
+1252468177 1252468189 openoffice.org-officebean /usr/lib/openoffice/basis3.1/program/classes/officebean.jar <OLD>
+1252468172 1252468170 libpam-runtime /usr/sbin/pam-auth-update <OLD>
+1252466851 1252466830 scribus-ng /usr/lib/scribus-ng/profiles/GenericCMYK.icm <OLD>
+1252269234 1252269212 epiphany-extensions /usr/lib/epiphany-gecko/2.26/extensions/tab-states.ephy-extension <OLD>
+1252269233 1252269211 epiphany-gecko /usr/bin/epiphany-gecko <OLD>
+1252269233 1252269211 epiphany-browser /usr/bin/epiphany <OLD>
+1252093120 1242304450 net-tools /bin/netstat <OLD>
+1251893898 1251893930 dnsmasq-base /usr/sbin/dnsmasq <OLD>
+1251473206 1251473125 avidemux /usr/bin/avidemux2_gtk <OLD>
+1251364744 1242304523 libndesk-dbus-glib1.0-cil /usr/lib/cli/ndesk-dbus-glib-1.0/NDesk.DBus.GLib.dll.mdb <OLD>
+1251364744 1242304523 libndesk-dbus1.0-cil /usr/lib/cli/ndesk-dbus-1.0/NDesk.DBus.dll.mdb <OLD>
+1251364744 1242304523 libmono-addins-gui0.2-cil /usr/lib/cli/mono-addins-0.2/policy.0.3.Mono.Addins.Gui.dll <OLD>
+1251364743 1242304523 libmono-addins0.2-cil /usr/lib/cli/mono-addins-0.2/policy.0.3.Mono.Addins.Setup.dll <OLD>
+1251364742 1242304523 libgnome-keyring1.0-cil /usr/lib/cli/gnome-keyring-sharp-1.0/Gnome.Keyring.dll <OLD>
+1251364741 1251364733 mono-gac /usr/bin/gacutil <OLD>
+1251364741 1251364733 libmono-security2.0-cil /usr/lib/mono/2.0/Mono.Security.dll <OLD>
+1251364741 1242304523 libflickrnet2.1.5-cil /usr/lib/cli/flickrnet-2.1.5/FlickrNet.dll <OLD>
+1251364741 1242304523 libgmime2.2a-cil /usr/lib/cli/gmime-sharp-2.2/gmime-sharp.dll.config <OLD>
+1251364729 1251364737 libmono-system-web2.0-cil /usr/lib/mono/3.5/System.Web.Extensions.Design.dll <OLD>
+1251364729 1251364734 libmono2.0-cil /usr/lib/mono/2.0/OpenSystem.C.dll <OLD>
+1251364729 1251364736 libmono-sharpzip2.84-cil /usr/lib/mono/2.0/ICSharpCode.SharpZipLib.dll <OLD>
+1251364729 1251364738 libmono-i18n2.0-cil /usr/lib/mono/2.0/I18N.West.dll <OLD>
+1251364729 1251364734 libmono-data-tds2.0-cil /usr/lib/mono/2.0/Mono.Data.Tds.dll <OLD>
+1251364729 1251364737 libmono-getoptions2.0-cil /usr/lib/mono/2.0/Mono.GetOptions.dll <OLD>
+1251364729 1251364738 libmono-data2.0-cil /usr/lib/mono/2.0/Mono.Data.dll <OLD>
+1251291276 1242304539 gdm /usr/lib/gdm/gdmprefetch <OLD>
+1251291276 1242304475 libpam-gnome-keyring /lib/security/pam_gnome_keyring.so <OLD>
+1250492253 1250084120 python-libxml2 /usr/lib/python-support/python-libxml2/python2.6/libxml2mod.so <OLD>
+1250448837 1250448814 lynx-cur /usr/bin/lynx.cur <OLD>
+1250448786 1242304450 hostname /bin/dnsdomainname <OLD>
+1250084133 1250084114 python-egenix-mxdatetime /usr/lib/python2.6/dist-packages/mx/DateTime/timegm.py <OLD>
+1250084133 1250084113 python-egenix-mxtools /usr/lib/python2.6/dist-packages/mx/__init__.py <OLD>
+1250084082 1250084119 python-indicate /usr/lib/python2.6/dist-packages/indicate/_indicate.so <OLD>
+1250084082 1250084117 python-webkit /usr/lib/python-support/python-webkit/python2.5/gtk-2.0/webkit.so <OLD>
+1250006279 1250006276 reprepro /usr/bin/reprepro <OLD>
+1249901632 1247571096 libtiff-tools /usr/bin/tiffinfo <OLD>
+1249901632 1245749819 system-config-printer-gnome /usr/bin/my-default-printer <OLD>
+1249901632 1247061113 zoo /usr/bin/zoo <OLD>
+1249901632 1247151247 realpath /usr/bin/realpath <OLD>
+1249901631 1249748372 subversion /usr/bin/svnversion <OLD>
+1249901631 1245749786 compiz-gnome /usr/bin/gtk-window-decorator <OLD>
+1249901631 1249588339 stgit /usr/bin/stg <OLD>
+1249901631 1248183717 rdoc1.8 /usr/bin/rdoc1.8 <OLD>
+1249901631 1245749793 gvfs-bin /usr/bin/gvfs-mount <OLD>
+1249901631 1248183717 rdoc /usr/bin/rdoc <OLD>
+1249901628 1245749789 compiz-core /usr/bin/compiz-decorator <OLD>
+1249901627 1248183694 ruby /usr/bin/erb <OLD>
+1249901627 1248001184 antiword /usr/bin/kantiword <OLD>
+1249901624 1247151247 common-lisp-controller /usr/bin/clc-unregister-user-package <OLD>
+1249901623 1248183700 ri1.8 /usr/bin/ri1.8 <OLD>
+1249901623 1245749788 compiz-wrapper /usr/bin/compiz <OLD>
+1249901623 1245749790 dvipdfmx /usr/bin/extractbb <OLD>
+1249901623 1248183700 ri /usr/bin/ri <OLD>
+1249901623 1246625133 perl-doc /usr/bin/perldoc <OLD>
+1249824453 1242304475 network-manager /lib/udev/nm-modem-probe <OLD>
+1249824453 1242304475 pcmciautils /lib/udev/pcmcia-socket-startup <OLD>
+1249824453 1247834420 udev /lib/udev/write_net_rules <OLD>
+1249824453 1242304475 xserver-xorg-input-wacom /lib/udev/check_driver <OLD>
+1249824453 1242304475 alsa-utils /lib/udev/alsa-utils <OLD>
+1249740623 1242466454 kaffeine /usr/lib/kde3/libxinepart.so <OLD>
+1249211253 1249211180 linux-headers-2.6.28-14-generic /usr/src/linux-headers-2.6.28-14-generic/include/linux/textsearch.h <OLD>
+1249211253 1249211181 linux-headers-2.6.28-14 /usr/src/linux-headers-2.6.28-14/include/net/snmp.h <OLD>
+1248278588 1246625056 language-selector /usr/bin/gnome-language-selector <OLD>
+1248188061 1248183694 irb /usr/bin/irb <OLD>
+1248183644 1248183695 libgdbm-ruby1.8 /usr/lib/ruby/1.8/i486-linux/gdbm.so <OLD>
+1248183644 1248183695 libdbm-ruby1.8 /usr/lib/ruby/1.8/i486-linux/dbm.so <OLD>
+1248183644 1248183696 libtcltk-ruby1.8 /usr/lib/ruby/1.8/tcltk.rb <OLD>
+1247668490 1244889855 libnotify-bin /usr/bin/notify-send <OLD>
+1247608215 1242745360 rake /usr/lib/ruby/1.8/rake/loaders/makefile.rb <OLD>
+1247599945 1247599793 libxml-simple-ruby /usr/lib/ruby/1.8/lib/xmlsimple.rb <OLD>
+1247598591 1242745364 rails /usr/share/rails/activesupport/lib/active_support/vendor/tzinfo-0.3.8/tzinfo/definitions/Pacific/Tongatapu.rb <OLD>
+1247571060 1247571095 libdbus-1-dev /lib/libdbus-1.a <OLD>
+1247404294 1242304609 policykit-gnome /usr/lib/policykit-gnome/polkit-gnome-manager <OLD>
+1247399866 1242466223 gthumb /usr/lib/gthumb/libgthumb.so <OLD>
+1247245702 1242304920 system-tools-backends /usr/share/system-tools-backends-2.0/scripts/UsersConfig.pm <OLD>
+1247245701 1242304608 libxml-parser-perl /usr/lib/perl5/auto/XML/Parser/Expat/Expat.so <OLD>
+1247245701 1242304902 libxml-twig-perl /usr/share/perl5/XML/Twig.pm <OLD>
+1247245701 1242304608 libnet-dbus-perl /usr/lib/perl5/auto/Net/DBus/DBus.so <OLD>
+1247151269 1247151248 sbcl /usr/lib/sbcl/sb-bsd-sockets/misc.fasl <OLD>
+1247150864 1242466189 g++-4.3 /usr/lib/gcc/i486-linux-gnu/4.3/cc1plus <OLD>
+1247150474 1242304612 python-gtkhtml2 /usr/lib/python-support/python-gtkhtml2/python2.6/gtk-2.0/gtkhtml2.so <OLD>
+1246625189 1246625057 language-selector-common /usr/bin/fontconfig-voodoo <OLD>
+1246625047 1246625035 lsb-release /usr/bin/lsb_release <OLD>
+1246625040 1246625027 lsb-base /lib/lsb/init-functions <OLD>
+1246625034 1246625108 linux-headers-2.6.28-13 /usr/src/linux-headers-2.6.28-13/include/xen/xencomm.h <OLD>
+1246625034 1246625058 libcompress-raw-zlib-perl /usr/lib/perl5/auto/Compress/Raw/Zlib/autosplit.ix <OLD>
+1246625034 1246625107 linux-headers-2.6.28-13-generic /usr/src/linux-headers-2.6.28-13-generic/include/linux/mxc_v4l2.h <OLD>
+1246536473 1245749764 file /usr/bin/file <OLD>
+1246365638 1246021206 libsasl2-modules /usr/lib/sasl2/libplain.so.2 <OLD>
+1246363351 1244646916 realplayer /usr/lib/realplay-11.0.0/plugins/h263render.so <OLD>
+1245749763 1245749788 compiz-plugins /usr/lib/compiz/libzoom.so <OLD>
+1245749763 1245749820 xserver-xorg-video-intel /usr/lib/xorg/modules/drivers/i810_drv.so <OLD>
+1245684103 1242304638 xml-core /usr/sbin/update-xmlcatalog <OLD>
+1245567706 1243168391 wireshark-common /usr/lib/wireshark/plugins/wimaxasncp.so <OLD>
+1245562766 1242466590 referencer /usr/lib/referencer/pubmed.py <OLD>
+1245508625 1242304611 python-gnome2 /usr/lib/python-support/python-gnome2/python2.6/gtk-2.0/gnomevfs/_gnomevfs.so <OLD>
+1245508621 1245508613 startupmanager /usr/sbin/startupmanager <OLD>
+1245502662 1245502588 limewire-basic /usr/lib/LimeWire/libjdic.so <OLD>
+1245339244 1245337905 cssed /usr/bin/cssed <OLD>
+1244889881 1244889856 xchat /usr/lib/xchat/plugins/python.so <OLD>
+1244889855 1244889856 xchat-common /usr/include/xchat/xchat-plugin.h <OLD>
+1244839699 1243002283 rcs /usr/bin/rcsfreeze <OLD>
+1244839699 1244385214 foomatic-db-engine /usr/bin/foomatic-compiledb <OLD>
+1244839699 1243168393 kismet /usr/bin/kismet_client <OLD>
+1244839699 1242939138 mercurial-common /usr/bin/hg-ssh <OLD>
+1244839699 1242745362 libbreakpoint-ruby1.8 /usr/bin/breakpoint_client <OLD>
+1244839699 1242639535 rapidsvn /usr/bin/rapidsvn <OLD>
+1244839698 1242466597 wdiff /usr/bin/wdiff <OLD>
+1244839698 1242466452 avifile-player /usr/bin/aviplay <OLD>
+1244839698 1242466402 lyx /usr/bin/lyxclient <OLD>
+1244839698 1242634847 graphviz /usr/bin/diffimg <OLD>
+1244839698 1242466536 kakasi /usr/bin/wx2_conv <OLD>
+1244839698 1242466500 groff /usr/bin/groffer <OLD>
+1244839698 1242466553 librsvg2-bin /usr/bin/rsvg-view <OLD>
+1244839698 1242634848 ubuntu-dev-tools /usr/bin/what-patch <OLD>
+1244839698 1242466406 drgeo /usr/bin/drgeo <OLD>
+1244839698 1242634854 pbuilder /usr/bin/debuild-pbuilder <OLD>
+1244839698 1242466499 gdebi-kde /usr/bin/gdebi-kde <OLD>
+1244839698 1242466550 libhsqldb-java /usr/bin/hsqldb-querytool <OLD>
+1244839698 1242466533 ispell /usr/bin/munchlist <OLD>
+1244839698 1242466445 gdmap /usr/bin/gdmap <OLD>
+1244839698 1242466316 t1utils /usr/bin/t1unmac <OLD>
+1244839698 1242466404 libqca2 /usr/bin/qcatool2 <OLD>
+1244839698 1242466543 lacheck /usr/bin/lacheck <OLD>
+1244839698 1242466455 libgii1 /usr/bin/ggtick <OLD>
+1244839698 1242466489 dctrl-tools /usr/bin/sort-dctrl <OLD>
+1244839698 1242466580 patchutils /usr/bin/recountdiff <OLD>
+1244839698 1242466446 gpe-taskmanager /usr/bin/gpe-taskmanager <OLD>
+1244839698 1242466536 impose+ /usr/bin/psbl <OLD>
+1244839698 1242466491 dia /usr/bin/dia-normal <OLD>
+1244839698 1242466488 texlive-lang-cyrillic /usr/bin/rumakeindex <OLD>
+1244839698 1242466550 libjpeg-progs /usr/bin/exifautotran <OLD>
+1244839698 1242466597 txt2html /usr/bin/txt2html <OLD>
+1244839698 1242466450 ding /usr/bin/ding <OLD>
+1244839698 1242466494 exiv2 /usr/bin/exiv2 <OLD>
+1244839698 1242466540 kfind /usr/bin/kfind <OLD>
+1244839698 1242466316 psutils /usr/bin/showchar <OLD>
+1244839698 1242466318 tex4ht /usr/bin/t4ht <OLD>
+1244839698 1242466590 redland-utils /usr/bin/redland-db-upgrade <OLD>
+1244839698 1242466445 convmv /usr/bin/convmv <OLD>
+1244839698 1242466397 konsole /usr/bin/konsoleprofile <OLD>
+1244839698 1242466596 transfig /usr/bin/fig2mpdf <OLD>
+1244839698 1242466586 python-numpy /usr/bin/f2py2.5-dbg <OLD>
+1244839698 1242466493 dpatch /usr/bin/dpatch-get-origtargz <OLD>
+1244839698 1242466548 libgda3-bin /usr/bin/gda-test-connection-3.0 <OLD>
+1244839698 1242634835 unixodbc /usr/bin/isql <OLD>
+1244839698 1242466457 vorbis-tools /usr/bin/ogginfo <OLD>
+1244839698 1242466376 musixtex /usr/bin/musixflx <OLD>
+1244839698 1242466405 tidy /usr/bin/tidy <OLD>
+1244839698 1242466405 wml /usr/lib/wml/exec/wml_aux_tidy <OLD>
+1244839698 1242466499 kdesudo /usr/lib/kde4/libexec/kdesu <OLD>
+1244839697 1242466304 context /usr/bin/luatools <OLD>
+1244839697 1242466166 gettext /usr/bin/autopoint <OLD>
+1244839697 1242466197 libdca0 /usr/bin/dtsdec <OLD>
+1244839697 1242466289 gftp-gtk /usr/bin/gftp-gtk <OLD>
+1244839697 1242466175 arj /usr/bin/arj-register <OLD>
+1244839697 1242466196 grip /usr/bin/grip <OLD>
+1244839697 1242466155 wine /usr/bin/winemaker <OLD>
+1244839697 1242466290 gpgsm /usr/bin/scdaemon <OLD>
+1244839697 1242466218 ogmtools /usr/bin/ogminfo <OLD>
+1244839697 1242466168 rpm /usr/bin/rpmdb <OLD>
+1244839697 1242466316 lcdf-typetools /usr/bin/t1dotlessj <OLD>
+1244839697 1242466186 bibutils /usr/bin/xml2wordbib <OLD>
+1244839697 1242466203 lame /usr/bin/lame <OLD>
+1244839697 1242466167 debhelper /usr/bin/dh_prep <OLD>
+1244839697 1242466175 apt-file /usr/bin/apt-file <OLD>
+1244839697 1242466176 tcl8.5 /usr/bin/tclsh8.5 <OLD>
+1244839697 1242304493 zip /usr/bin/zipcloak <OLD>
+1244839697 1242466128 texinfo /usr/bin/texi2dvi <OLD>
+1244839697 1242466219 fakeroot /usr/bin/fakeroot-tcp <OLD>
+1244839697 1242466180 asymptote /usr/bin/xasy <OLD>
+1244839697 1242466125 tex-common /usr/bin/dh_installtex <OLD>
+1244839697 1242466277 haskell-utils /usr/bin/update-debian-haskell-files <OLD>
+1244839697 1242466224 inkscape /usr/bin/inkview <OLD>
+1244839697 1242466297 unrar /usr/bin/unrar-nonfree <OLD>
+1244839697 1242466217 cdrdao /usr/bin/toc2cddb <OLD>
+1244839697 1242466167 po-debconf /usr/bin/debconf-updatepo <OLD>
+1244839697 1242466220 debtags /usr/bin/debtags-updatecontrol <OLD>
+1244839697 1242466166 patch /usr/bin/patch <OLD>
+1244839697 1242302216 consolekit /usr/bin/ck-launch-session <OLD>
+1244839697 1242304493 unzip /usr/bin/zipinfo <OLD>
+1244839697 1242466213 vlc-nox /usr/bin/vlc-wrapper <OLD>
+1244839697 1242466112 soprano-daemon /usr/bin/sopranod <OLD>
+1244839697 1242466168 alien /usr/bin/alien <OLD>
+1244839697 1242466195 easytag-aac /usr/bin/easytag <OLD>
+1244839697 1242466279 ghc6 /usr/bin/hsc2hs6 <OLD>
+1244839696 1242304484 groff-base /usr/bin/neqn <OLD>
+1244839696 1242304486 pnm2ppa /usr/bin/pnm2ppa <OLD>
+1244839696 1242304491 x11-session-utils /usr/bin/smproxy <OLD>
+1244839696 1242304482 libgnomevfs2-bin /usr/bin/gnomevfs-df <OLD>
+1244839696 1242304493 xscreensaver-gl /usr/bin/xscreensaver-gl-helper <OLD>
+1244839696 1242304487 rss-glx /usr/bin/rss-glx_install <OLD>
+1244839696 1242304486 mousetweaks /usr/bin/pointer-capture-applet <OLD>
+1244839696 1242304488 scim /usr/bin/scim-config-agent <OLD>
+1244839696 1242304492 vino /usr/bin/vino-preferences <OLD>
+1244839696 1242304492 tsclient /usr/bin/tsclient <OLD>
+1244839696 1242304483 genisoimage /usr/bin/isovfy <OLD>
+1244839696 1242304493 xdg-utils /usr/bin/xdg-screensaver <OLD>
+1244839696 1242304493 x11-apps /usr/bin/xmore <OLD>
+1244839696 1242304493 xscreensaver-data /usr/bin/xscreensaver-getimage-video <OLD>
+1244839696 1242304491 libgnome-speech7 /usr/bin/speechd-synthesis-driver <OLD>
+1244839696 1242304487 sane-utils /usr/bin/scanimage <OLD>
+1244839696 1242304492 eject /usr/bin/volname <OLD>
+1244839696 1242304486 libparse-debianchangelog-perl /usr/bin/parsechangelog <OLD>
+1244839696 1242304832 hplip /usr/bin/hp-toolbox <OLD>
+1244839696 1242304604 ssh-askpass-gnome /usr/lib/openssh/gnome-ssh-askpass <OLD>
+1244839696 1242304493 bsdutils /usr/bin/wall <OLD>
+1244839696 1242304491 toshset /usr/bin/toshset <OLD>
+1244839696 1242304482 im-switch /usr/bin/im-switch <OLD>
+1244839696 1242304493 gnome-doc-utils /usr/bin/xml2po <OLD>
+1244839696 1242304483 lshw /usr/bin/lshw <OLD>
+1244839696 1242304486 cupsddk /usr/bin/ppdpo <OLD>
+1244839696 1242304544 libgtk2.0-bin /usr/bin/gtk-update-icon-cache <OLD>
+1244839696 1242304492 usb-creator /usr/bin/usb-creator <OLD>
+1244839696 1242304483 lockfile-progs /usr/bin/mail-unlock <OLD>
+1244839696 1242304486 ghostscript /usr/bin/ps2txt <OLD>
+1244839696 1242304482 gnome-media /usr/bin/gstreamer-properties <OLD>
+1244839696 1242304487 binutils /usr/bin/readelf <OLD>
+1244839696 1242304493 libxml-xpath-perl /usr/bin/xpath <OLD>
+1244839696 1242304493 x11-utils /usr/bin/xwininfo <OLD>
+1244839696 1242304491 xserver-xorg-input-synaptics /usr/bin/syndaemon <OLD>
+1244839696 1242304492 xfonts-utils /usr/bin/ucs2any <OLD>
+1244839696 1242304486 aspell /usr/bin/precat <OLD>
+1244839696 1242302238 gnome-system-tools /usr/bin/users-admin <OLD>
+1244839696 1242304485 onboard /usr/bin/onboard-settings <OLD>
+1244839696 1242304488 debianutils /usr/bin/select-editor <OLD>
+1244839696 1242304487 rarian-compat /usr/bin/scrollkeeper-gen-seriesid <OLD>
+1244839696 1242304483 bsdmainutils /usr/bin/lorder <OLD>
+1244839696 1242304493 x11-xserver-utils /usr/bin/xstdcmap <OLD>
+1244839696 1242304488 sg3-utils /usr/bin/scsi_stop <OLD>
+1244839696 1242304483 libwww-perl /usr/bin/lwp-rget <OLD>
+1244839696 1242304492 pciutils /usr/bin/update-pciids <OLD>
+1244839696 1242304482 gnome-utils /usr/bin/gnome-system-log <OLD>
+1244839696 1242304493 xinit /usr/bin/xinit <OLD>
+1244839696 1242304488 foo2zjs /usr/bin/slxdecode <OLD>
+1244839696 1242304487 xterm /usr/bin/resize <OLD>
+1244839696 1242304491 time /usr/bin/time <OLD>
+1244839696 1242304491 mtools /usr/bin/tgz <OLD>
+1244839696 1242304486 ppp /usr/bin/plog <OLD>
+1244839696 1242304493 xdg-user-dirs /usr/bin/xdg-user-dir <OLD>
+1244839696 1242304488 x11-xkb-utils /usr/bin/setxkbmap <OLD>
+1244839696 1242304485 obex-data-server /usr/bin/obex-data-server <OLD>
+1244839696 1242304482 pxljr /usr/bin/ijs_pxljr <OLD>
+1244839695 1242304482 gnome-pilot /usr/bin/gnome-pilot-make-password <OLD>
+1244839695 1242304480 acl /usr/bin/getfacl <OLD>
+1244839695 1242304480 gdb /usr/bin/gdbtui <OLD>
+1244839695 1242304478 diff /usr/bin/diff3 <OLD>
+1244839695 1242304478 defoma /usr/bin/dh_installdefoma <OLD>
+1244839695 1244544528 libbonoboui2-dev /usr/bin/bonobo-browser <OLD>
+1244839695 1242745374 libglade2-ruby1.8 /usr/bin/ruby-glade-create-template <OLD>
+1244839695 1242304481 gnome-control-center /usr/bin/gnome-font-viewer <OLD>
+1244839695 1244544523 liborbit2-dev /usr/bin/orbit2-config <OLD>
+1244839695 1244544521 libart-2.0-dev /usr/bin/libart2-config <OLD>
+1244839695 1244385264 sqlite3 /usr/bin/sqlite3 <OLD>
+1244839695 1242304478 esound-clients /usr/bin/esdsample <OLD>
+1244839695 1244544525 libpango1.0-dev /usr/bin/dh_pangomodules <OLD>
+1244839695 1242304482 gucharmap /usr/bin/gnome-character-map <OLD>
+1244839695 1242997631 automake1.4 /usr/bin/automake-1.4 <OLD>
+1244839695 1242304477 avahi-utils /usr/bin/avahi-set-host-name <OLD>
+1244839695 1242304481 gnome-nettool /usr/bin/gnome-nettool <OLD>
+1244839695 1244544526 libgpg-error-dev /usr/bin/gpg-error <OLD>
+1244839695 1244544526 libgcrypt11-dev /usr/bin/dumpsexp <OLD>
+1244839695 1242304478 dcraw /usr/bin/dcfujiturn16 <OLD>
+1244839695 1244385283 cron /usr/bin/crontab <OLD>
+1244839695 1244625909 imagemagick /usr/bin/identify <OLD>
+1244839695 1242304477 apt /usr/bin/apt-mark <OLD>
+1244839695 1244544531 orbit2 /usr/bin/linc-cleanup-sockets <OLD>
+1244839695 1243680881 mysql-admin /usr/bin/mysql-admin <OLD>
+1244839695 1244813520 screen-profiles /usr/bin/screen-profiles-export <OLD>
+1244839695 1242304478 fontconfig /usr/bin/fc-match <OLD>
+1244839695 1242304479 x11-xfs-utils /usr/bin/fstobdf <OLD>
+1244839695 1242304478 dvd+rw-tools /usr/bin/dvd+rw-mediainfo <OLD>
+1244839695 1242304477 bogofilter-bdb /usr/bin/bf_tar <OLD>
+1244839695 1242745352 libdbi-perl /usr/bin/dbiproxy <OLD>
+1244839695 1242302203 acpid /usr/bin/acpi_listen <OLD>
+1244839695 1242997629 autoconf /usr/bin/autoupdate <OLD>
+1244839694 1242466552 libpcre3-dev /usr/bin/pcre-config <OLD>
+1244839694 1242466554 libwmf-bin /usr/bin/wmf2eps <OLD>
+1244839694 1242466585 python-excelerator /usr/bin/py_xls2txt <OLD>
+1244839694 1242466295 lha /usr/bin/lha <OLD>
+1244839694 1242466276 libimage-size-perl /usr/bin/imgsize <OLD>
+1244839694 1242466423 libbatik-java /usr/bin/svgpp <OLD>
+1244839694 1242466289 gftp-common /usr/bin/gftp <OLD>
+1244839694 1242466550 libhtml-clean-perl /usr/bin/htmlclean <OLD>
+1244839694 1242466353 texlive-latex-extra /usr/bin/perltex <OLD>
+1244839694 1242466176 tcl8.4 /usr/bin/tclsh8.4 <OLD>
+1244839694 1242466533 guile-1.8 /usr/bin/guile-1.8 <OLD>
+1244839694 1242466305 feynmf /usr/bin/feynmf <OLD>
+1244839694 1242466456 vlc /usr/bin/svlc <OLD>
+1244839694 1242466589 python-uniconvertor /usr/bin/uniconvertor <OLD>
+1244839694 1242466176 tcl /usr/bin/tclsh-default <OLD>
+1244839694 1242466293 miro /usr/bin/miro <OLD>
+1244839694 1242466571 linklint /usr/bin/linklint <OLD>
+1244839694 1242466296 p7zip /usr/bin/p7zip <OLD>
+1244839694 1242466276 eperl /usr/bin/eperl <OLD>
+1244839694 1242466446 grsync /usr/bin/grsync-batch <OLD>
+1244839694 1242466276 iselect /usr/bin/iselect <OLD>
+1244839694 1242466405 winefish /usr/bin/winefish <OLD>
+1244839694 1242634854 reportbug /usr/bin/reportbug <OLD>
+1244839694 1242466218 toolame /usr/bin/toolame <OLD>
+1244839694 1242466277 zftp /usr/bin/zftp <OLD>
+1244839693 1242304487 grep /usr/bin/rgrep <OLD>
+1244839693 1242466185 azureus /usr/bin/azureus <OLD>
+1244839693 1242304492 unattended-upgrades /usr/bin/unattended-upgrade <OLD>
+1244839693 1242304492 vinagre /usr/bin/vinagre <OLD>
+1244839693 1242304493 vim-common /usr/bin/xxd <OLD>
+1244839693 1242466175 apt-rdepends /usr/bin/apt-rdepends <OLD>
+1244839693 1242466186 bluefish /usr/bin/bluefish <OLD>
+1244839693 1242466174 anki /usr/bin/anki <OLD>
+1244839693 1242466162 rhino /usr/bin/rhino <OLD>
+1244839693 1242304491 tasksel /usr/bin/tasksel <OLD>
+1244839693 1242304450 ed /usr/bin/red <OLD>
+1244839693 1242304491 ncurses-bin /usr/bin/tabs <OLD>
+1244839693 1242302214 brasero /usr/bin/brasero <OLD>
+1244839693 1242304487 python-rdflib /usr/bin/rdfpipe <OLD>
+1244839692 1242304479 libfribidi0 /usr/bin/fribidi <OLD>
+1244839692 1242304483 sysvinit-utils /usr/bin/lastb <OLD>
+1244839692 1242304478 psfontmgr /usr/bin/defoma-psfont-installer <OLD>
+1244839692 1242304478 python-central /usr/bin/dh_pycentral <OLD>
+1244839692 1242304478 computer-janitor-gtk /usr/bin/computer-janitor-gtk <OLD>
+1244839692 1242304479 gconf2 /usr/bin/gconf-merge-tree <OLD>
+1244839692 1242304478 dc /usr/bin/dc <OLD>
+1244839692 1242304478 min12xxw /usr/bin/esc-m <OLD>
+1244839692 1242304483 librpc-xml-perl /usr/bin/make_method <OLD>
+1244839692 1242304480 ggzcore-bin /usr/bin/ggz-wrapper <OLD>
+1244839692 1242304485 gettext-base /usr/bin/ngettext <OLD>
+1244839692 1242304483 lftp /usr/bin/lftpget <OLD>
+1244839692 1242304479 foomatic-filters /usr/lib/ppr/lib/ppromatic <OLD>
+1244839692 1242302227 gnome-about /usr/bin/gnome-about <OLD>
+1244839692 1242304482 gnupg /usr/bin/gpg-convert-from-106 <OLD>
+1244839692 1242304480 gdebi-core /usr/bin/gdebi <OLD>
+1244839692 1242304479 gconf-editor /usr/bin/gconf-editor <OLD>
+1244839692 1242304482 hpijs /usr/bin/hpijs <OLD>
+1244839692 1242304478 login /usr/bin/faillog <OLD>
+1244839692 1242304485 nvidia-common /usr/bin/nvidia-detector <OLD>
+1244839692 1242304478 xserver-xorg /usr/bin/dexconf <OLD>
+1244839692 1242304484 mscompress /usr/bin/msexpand <OLD>
+1244839692 1242304483 lp-solve /usr/bin/lp_solve <OLD>
+1244839692 1242299917 openssl-blacklist /usr/bin/openssl-vulnkey <OLD>
+1244839692 1242304483 ltrace /usr/bin/ltrace <OLD>
+1244839692 1242304486 psmisc /usr/bin/peekfd <OLD>
+1244839692 1242304638 usbutils /usr/bin/lsusb <OLD>
+1244839692 1242304486 python /usr/bin/pygettext <OLD>
+1244839692 1242304478 cups-driver-gutenprint /usr/bin/cups-calibrate <OLD>
+1244839692 1242304483 gnome-mag /usr/bin/magnifier <OLD>
+1244839692 1242304483 ucf /usr/bin/lcf <OLD>
+1244839692 1242304481 gnome-codec-install /usr/bin/gnome-codec-install <OLD>
+1244839692 1242304483 launchpad-integration /usr/bin/launchpad-integration <OLD>
+1244839692 1242466107 gawk /usr/bin/pgawk <OLD>
+1244839691 1243168393 wireshark /usr/bin/wireshark <OLD>
+1244839691 1242744202 junit /usr/bin/junit <OLD>
+1244839691 1244544522 libidl-dev /usr/bin/libIDL-config-2 <OLD>
+1244839691 1242304477 aptitude /usr/bin/aptitude-run-state-bundle <OLD>
+1244839691 1242634847 dh-buildinfo /usr/bin/dh_buildinfo <OLD>
+1244839691 1242638997 cvs /usr/bin/rcs2log <OLD>
+1244839691 1242466589 raptor-utils /usr/bin/rapper <OLD>
+1244839691 1244544528 libesd0-dev /usr/bin/esd-config <OLD>
+1244839691 1242466585 ps2eps /usr/bin/bbox <OLD>
+1244839691 1244813520 screen /usr/bin/screen <OLD>
+1244839691 1242744198 ant /usr/bin/ant <OLD>
+1244839691 1242634835 odbcinst1debian1 /usr/bin/odbcinst <OLD>
+1244839691 1242639534 gcvs /usr/bin/gcvs <OLD>
+1244839691 1242302206 gnome-app-install /usr/bin/gnome-app-install <OLD>
+1244839691 1242304477 at /usr/bin/batch <OLD>
+1244839691 1242466598 xfig /usr/bin/xfig <OLD>
+1244839691 1242466597 vuze /usr/bin/vuze <OLD>
+1244839691 1242634847 graphviz-cairo /usr/bin/dotedit <OLD>
+1244839691 1244544519 libfreetype6-dev /usr/bin/freetype-config <OLD>
+1244839691 1242302216 checkbox-gtk /usr/bin/checkbox-gtk <OLD>
+1244839691 1244544520 libxft-dev /usr/bin/xft-config <OLD>
+1244839691 1242304477 apt-utils /usr/bin/apt-ftparchive <OLD>
+1244839690 1242466488 dblatex /usr/bin/dblatex <OLD>
+1244839690 1242466404 tofrodos /usr/bin/dos2unix <OLD>
+1244839690 1242466296 rar /usr/bin/rar <OLD>
+1244839690 1242466296 unace /usr/bin/unace <OLD>
+1244839690 1242466275 mp4h /usr/bin/mp4h <OLD>
+1244839690 1242466189 g++ /usr/bin/g++ <OLD>
+1244839690 1242466176 tk8.5 /usr/bin/wish8.5 <OLD>
+1244839690 1242466222 gqview /usr/bin/gqview <OLD>
+1244839690 1242466276 slice /usr/bin/slice <OLD>
+1244839690 1242466491 diffstat /usr/bin/diffstat <OLD>
+1244839690 1242466449 utf8-migration-tool /usr/bin/utf8migrationtool <OLD>
+1244839690 1242466290 gftp-text /usr/bin/gftp-text <OLD>
+1244839690 1242466463 xemacs21-support /usr/bin/editclient <OLD>
+1244839690 1242466499 gfortran /usr/bin/gfortran <OLD>
+1244839690 1242466403 science-config /usr/bin/science-config <OLD>
+1244839690 1242466192 pfb2t1c2pfb /usr/bin/pfb2t1c <OLD>
+1244839690 1242466296 libarchive-zip-perl /usr/bin/crc32 <OLD>
+1244839690 1242466403 science-typesetting /usr/bin/science-typesetting <OLD>
+1244839689 1242304488 seahorse /usr/bin/seahorse-daemon <OLD>
+1244839689 1242304493 whois /usr/bin/whois <OLD>
+1244839689 1242304485 gnome-orca /usr/bin/orca <OLD>
+1244839689 1242304493 xinput /usr/bin/xinput <OLD>
+1244839689 1242304488 smartdimmer /usr/bin/smartdimmer <OLD>
+1244839689 1242304487 rdesktop /usr/bin/rdesktop <OLD>
+1244839689 1242304485 findutils /usr/bin/oldfind <OLD>
+1244839689 1242304488 scim-bridge-agent /usr/bin/scim-bridge <OLD>
+1244839689 1242304493 wpasupplicant /usr/bin/wpa_passphrase <OLD>
+1244839689 1242304492 iputils-tracepath /usr/bin/tracepath6 <OLD>
+1244839689 1242466166 html2text /usr/bin/html2text <OLD>
+1244839689 1242304487 mime-support /usr/bin/print <OLD>
+1244839689 1242304493 yelp /usr/bin/gnome-help <OLD>
+1244839689 1242304493 w3m /usr/bin/w3mman <OLD>
+1244839689 1242304491 telnet /usr/bin/telnet.netkit <OLD>
+1244839689 1242304493 xsltproc /usr/bin/xsltproc <OLD>
+1244839689 1242304491 tomboy /usr/bin/tomboy-panel <OLD>
+1244839689 1242304491 strace /usr/bin/strace <OLD>
+1244839688 1242304484 mtr-tiny /usr/bin/mtr <OLD>
+1244839688 1242304480 zenity /usr/bin/gdialog <OLD>
+1244839688 1242304482 info /usr/bin/infokey <OLD>
+1244839688 1242304482 gnome-system-monitor /usr/bin/gnome-system-monitor <OLD>
+1244839688 1242304485 ftp /usr/bin/pftp <OLD>
+1244839688 1242304483 grub /usr/bin/mkbimage <OLD>
+1244839688 1242304478 libenchant1c2a /usr/bin/enchant <OLD>
+1244839688 1242304476 apmd /usr/bin/apmsleep <OLD>
+1244839688 1242304483 memtest86+ /usr/bin/make-memtest86+-boot-floppy <OLD>
+1244839688 1242302215 checkbox /usr/bin/checkbox-backend <OLD>
+1244839688 1242304481 gnome-menus /usr/bin/gmenu-simple-editor <OLD>
+1244839688 1242304450 nano /bin/rnano <OLD>
+1244839688 1242304476 alacarte /usr/bin/alacarte <OLD>
+1244839688 1242304481 libgksu2-0 /usr/bin/gksu-properties <OLD>
+1244839688 1242304477 cdparanoia /usr/bin/cdparanoia <OLD>
+1244839688 1242304477 iputils-arping /usr/bin/arping <OLD>
+1244839688 1242304478 bash-completion /usr/bin/dh_bash-completion <OLD>
+1244839688 1242304478 computer-janitor /usr/bin/computer-janitor <OLD>
+1244839688 1242304479 gcc /usr/bin/gcov <OLD>
+1244839688 1242304478 desktop-file-utils /usr/bin/desktop-file-install <OLD>
+1244839687 1244544524 libdirectfb-dev /usr/bin/directfb-csource <OLD>
+1244839687 1244544526 libtasn1-3-dev /usr/bin/libtasn1-config <OLD>
+1244839687 1244544529 libgtkmm-2.4-dev /usr/bin/gtkmm-demo <OLD>
+1244839687 1244544530 libglade2-dev /usr/bin/libglade-convert <OLD>
+1244748803 1242634853 python-crypto /usr/lib/python2.6/dist-packages/Crypto/PublicKey/_fastmath.so <OLD>
+1244648454 1242304612 python-pyorbit /usr/lib/python-support/python-pyorbit/python2.6/ORBit.so <OLD>
+1244648454 1242304611 python-gnomecanvas /usr/lib/python-support/python-gnomecanvas/python2.6/gtk-2.0/gnomecanvas.so <OLD>
+1244648454 1242304611 python-gnome2-desktop /usr/lib/python-support/python-gnome2-desktop/python2.6/gtk-2.0/gnomeapplet.so <OLD>
+1244648454 1244648386 computertemp /usr/lib/gnome-applets/computertemp <OLD>
+1244648158 1244543464 hdaps-utils /usr/bin/hdaps-pivot <OLD>
+1244646921 1244646916 ingerman /usr/lib/ispell/ndeutsch.aff <OLD>
+1244625882 1244625912 perlmagick /usr/lib/perl5/auto/Image/Magick/autosplit.ix <OLD>
+1244544545 1244544531 libpanel-applet2-dev /usr/include/panel-2.0/GNOME_Panel.h <OLD>
+1244544545 1244544522 libatk1.0-dev /usr/include/atk-1.0/atk/atkvalue.h <OLD>
+1244544545 1244544523 libbonobo2-dev /usr/include/libbonobo-2.0/bonobo/bonobo-i18n.h <OLD>
+1244544545 1244544523 libpopt-dev /usr/include/popt.h <OLD>
+1244544544 1244544520 libfontconfig1-dev /usr/lib/pkgconfig/fontconfig.pc <OLD>
+1244544544 1244544521 libxrandr-dev /usr/lib/pkgconfig/xrandr.pc <OLD>
+1244544544 1244544515 libxau-dev /usr/lib/pkgconfig/xau.pc <OLD>
+1244544544 1244544517 x11proto-composite-dev /usr/lib/pkgconfig/compositeproto.pc <OLD>
+1244544544 1244544521 libxinerama-dev /usr/lib/pkgconfig/xinerama.pc <OLD>
+1244544544 1244544528 libgnomevfs2-dev /usr/lib/pkgconfig/gnome-vfs-2.0.pc <OLD>
+1244544544 1244544520 x11proto-xinerama-dev /usr/lib/pkgconfig/xineramaproto.pc <OLD>
+1244544544 1244544521 x11proto-randr-dev /usr/lib/pkgconfig/randrproto.pc <OLD>
+1244544544 1244544518 libxext-dev /usr/lib/pkgconfig/xext.pc <OLD>
+1244544544 1244544518 libxrender-dev /usr/lib/pkgconfig/xrender.pc <OLD>
+1244544544 1244544518 libxcomposite-dev /usr/lib/pkgconfig/xcomposite.pc <OLD>
+1244544544 1244544516 x11proto-input-dev /usr/lib/pkgconfig/inputproto.pc <OLD>
+1244544544 1244544517 libxfixes-dev /usr/lib/pkgconfig/xfixes.pc <OLD>
+1244544544 1244544518 x11proto-damage-dev /usr/lib/pkgconfig/damageproto.pc <OLD>
+1244544544 1244544528 libgnome2-dev /usr/lib/pkgconfig/libgnome-2.0.pc <OLD>
+1244544544 1244544518 libxcursor-dev /usr/lib/pkgconfig/xcursor.pc <OLD>
+1244544544 1244544518 libxdamage-dev /usr/lib/pkgconfig/xdamage.pc <OLD>
+1244544544 1244544526 libgail-dev /usr/lib/pkgconfig/gail.pc <OLD>
+1244544544 1244544517 x11proto-xext-dev /usr/lib/pkgconfig/xextproto.pc <OLD>
+1244544544 1244544516 x11proto-kb-dev /usr/lib/pkgconfig/kbproto.pc <OLD>
+1244544544 1244544526 libgconf2-dev /usr/lib/pkgconfig/gconf-2.0.pc <OLD>
+1244544544 1244544524 libpixman-1-dev /usr/lib/pkgconfig/pixman-1.pc <OLD>
+1244544544 1244544516 libxdmcp-dev /usr/lib/pkgconfig/xdmcp.pc <OLD>
+1244544544 1244544526 libgnomecanvas2-dev /usr/lib/pkgconfig/libgnomecanvas-2.0.pc <OLD>
+1244544544 1244544517 libx11-dev /usr/lib/pkgconfig/x11.pc <OLD>
+1244544544 1244544524 libxcb-render-util0-dev /usr/lib/pkgconfig/xcb-renderutil.pc <OLD>
+1244544544 1244544518 x11proto-render-dev /usr/lib/pkgconfig/renderproto.pc <OLD>
+1244544544 1244544517 x11proto-fixes-dev /usr/lib/pkgconfig/fixesproto.pc <OLD>
+1244544544 1244544515 x11proto-core-dev /usr/lib/pkgconfig/xproto.pc <OLD>
+1244544514 1244544529 libsigc++-2.0-dev /usr/lib/sigc++-2.0/include/sigc++config.h <OLD>
+1244544514 1244544515 libsm-dev /usr/lib/pkgconfig/sm.pc <OLD>
+1244544514 1244544522 libavahi-glib-dev /usr/include/avahi-glib/glib-malloc.h <OLD>
+1244544514 1244544530 libgconfmm-2.6-dev /usr/lib/pkgconfig/gconfmm-2.6.pc <OLD>
+1244544514 1244544530 libgnome-keyring-dev /usr/lib/pkgconfig/gnome-keyring-1.pc <OLD>
+1244544514 1244544527 libsepol1-dev /usr/include/sepol/users.h <OLD>
+1244544514 1244544516 xtrans-dev /usr/lib/pkgconfig/xtrans.pc <OLD>
+1244544514 1244544529 libglibmm-2.4-dev /usr/lib/pkgconfig/giomm-2.4.pc <OLD>
+1244544514 1244544523 libsysfs-dev /usr/include/sysfs/dlist.h <OLD>
+1244544514 1244544531 libgnomeui-dev /usr/lib/libgnomeui-2.a <OLD>
+1244544514 1244544531 libpanelappletmm-2.6-dev /usr/lib/pkgconfig/libpanelappletmm-2.6.pc <OLD>
+1244544514 1244544530 libgnomemm-2.6-dev /usr/lib/pkgconfig/libgnomemm-2.6.pc <OLD>
+1244544514 1244544529 libcairomm-1.0-dev /usr/lib/pkgconfig/cairomm-1.0.pc <OLD>
+1244544514 1244544527 libselinux1-dev /usr/lib/pkgconfig/libselinux.pc <OLD>
+1244544514 1244544529 libpangomm-1.4-dev /usr/lib/pkgconfig/pangomm-1.4.pc <OLD>
+1244544514 1244544523 libdirectfb-extra /usr/lib/directfb-1.0-0/interfaces/IDirectFBImageProvider/libidirectfbimageprovider_png.so <OLD>
+1244544514 1244544515 libice-dev /usr/lib/pkgconfig/ice.pc <OLD>
+1244543405 1242304947 linux-headers-2.6.28-11 /usr/src/linux-headers-2.6.28-11/include/linux/vermagic.h <OLD>
+1244543405 1242304947 linux-headers-2.6.28-11-generic /usr/src/linux-headers-2.6.28-11-generic/include/linux/vermagic.h <OLD>
+1244543395 1242466491 dialog /usr/bin/dialog <OLD>
+1244543393 1244543388 module-assistant /usr/bin/m-a <OLD>
+1244385255 1242304638 sgml-base /usr/sbin/update-catalog <OLD>
+1244210034 1242304478 espeak /usr/bin/espeak <OLD>
+1244127100 1242466445 gparted /usr/sbin/gparted <OLD>
+1244036734 1242466450 poedit /usr/bin/poeditor <OLD>
+1243934024 1242304450 bzip2 /bin/bunzip2 <OLD>
+1243693590 1242466492 dkms /usr/sbin/dkms <OLD>
+1243682856 1243682782 sqlitebrowser /usr/bin/sqlitebrowser <OLD>
+1243682610 1243680893 mysql-query-browser /usr/bin/mysql-query-browser <OLD>
+1243514444 1242304483 mlocate /usr/bin/mlocate <OLD>
+1243512984 1242304486 pkg-config /usr/bin/pkg-config <OLD>
+1243431189 1243431190 libdigest-sha1-perl /usr/lib/perl5/auto/Digest/SHA1/SHA1.bs <OLD>
+1243424717 1242304487 rsync /usr/bin/rsync <OLD>
+1243324373 1242467261 libgcj-common /usr/lib/security/classpath.security <OLD>
+1243324365 1242466443 pdftk /usr/bin/pdftk <OLD>
+1243169444 1242466612 cups-pdf /usr/lib/cups/backend/cups-pdf <OLD>
+1243084863 1242745361 libsqlite3-ruby1.8 /usr/lib/ruby/1.8/i486-linux/sqlite3_api.so <OLD>
+1243030491 1243030349 ibritish /usr/lib/ispell/british.hash <OLD>
+1243030168 1242466534 iamerican /usr/lib/ispell/american.hash <OLD>
+1243006081 1242304478 liblockfile1 /usr/bin/dotlockfile <OLD>
+1243003613 1243003478 deborphan /usr/bin/deborphan <OLD>
+1242997239 1242466276 m4 /usr/bin/m4 <OLD>
+1242939180 1242939138 mercurial /usr/lib/python-support/mercurial/python2.6/mercurial/osutil.so <OLD>
+1242937924 1242745362 rubygems1.8 /usr/lib/ruby/1.8/ubygems.rb <OLD>
+1242923686 1242304621 libsane /usr/lib/sane/libsane-net.so.1 <OLD>
+1242923684 1242304493 xsane /usr/lib/gimp/2.0/plug-ins/xsane <OLD>
+1242923680 1242304522 libbabl-0.0-0 /usr/lib/babl-0.0/sse-fixups.so <OLD>
+1242923680 1242304539 libgegl-0.0-0 /usr/lib/gegl-0.0/xor.so <OLD>
+1242913301 1242304493 xauth /usr/bin/xauth <OLD>
+1242911733 1242906570 debfoster /usr/bin/debfoster <OLD>
+1242906545 1242304608 libgnome2-canvas-perl /usr/lib/perl5/auto/Gnome2/Canvas/Canvas.so <OLD>
+1242906545 1242304607 libcairo-perl /usr/lib/perl5/Cairo.pm <OLD>
+1242906545 1242304608 libgnome2-vfs-perl /usr/lib/perl5/auto/Gnome2/VFS/VFS.so <OLD>
+1242906545 1242304607 libglib-perl /usr/lib/perl5/Glib.pm <OLD>
+1242906545 1242304607 libgnome2-perl /usr/lib/perl5/Gnome2.pm <OLD>
+1242906530 1242302208 apturl /usr/bin/apturl <OLD>
+1242832891 1242466592 texmacs /usr/lib/texmacs/TeXmacs/bin/maxima_detect <OLD>
+1242832565 1242304902 libtimedate-perl /usr/share/perl5/Time/Zone.pm <OLD>
+1242826791 1242304491 software-properties-gtk /usr/bin/software-properties-gtk <OLD>
+1242823555 1242745386 libmocha-ruby1.8 /usr/lib/ruby/1.8/mocha/yield_parameters.rb <OLD>
+1242823003 1242304477 bc /usr/bin/bc <OLD>
+1242823003 1242302233 splix /usr/lib/cups/filter/rastertoqpdl <OLD>
+1242822909 1242304543 hal-cups-utils /usr/lib/hal/scripts/hal_lpadmin <OLD>
+1242822909 1242304612 python-usb /usr/lib/python-support/python-usb/python2.6/usb.so <OLD>
+1242817200 1242745361 libredcloth-ruby1.8 /usr/lib/ruby/1.8/redcloth.rb <OLD>
+1242814222 1242577721 openssh-server /usr/lib/openssh/sftp-server <OLD>
+1242808495 1242304638 popularity-contest /usr/sbin/popularity-contest <OLD>
+1242747771 1242745363 libbuilder-ruby1.8 /usr/lib/ruby/1.8/builder.rb <OLD>
+1242746053 1242304492 vim-tiny /usr/bin/vim.tiny <OLD>
+1242745351 1242745376 libgtksourceview1-ruby1.8 /usr/lib/ruby/1.8/gtksourceview.rb <OLD>
+1242745351 1242745362 libmmap-ruby1.8 /usr/lib/ruby/1.8/i486-linux/mmap.so <OLD>
+1242745351 1242745352 libdbd-mysql-perl /usr/lib/perl5/auto/DBD/mysql/mysql.bs <OLD>
+1242745351 1242745378 libvte-ruby1.8 /usr/lib/ruby/1.8/vte.rb <OLD>
+1242745351 1242745374 libgconf2-ruby1.8 /usr/lib/ruby/1.8/gconf2.rb <OLD>
+1242745351 1242745362 libdaemons-ruby1.8 /usr/lib/ruby/1.8/daemonize.rb <OLD>
+1242745351 1242745351 libnet-daemon-perl /usr/share/perl5/Net/Daemon.pm <OLD>
+1242745351 1242745373 libgnomecanvas2-ruby1.8 /usr/lib/ruby/1.8/gnomecanvas2.rb <OLD>
+1242745351 1242745374 libgtkhtml2-ruby1.8 /usr/lib/ruby/1.8/i486-linux/gtkhtml2.so <OLD>
+1242745351 1242745376 libgnomevfs2-ruby1.8 /usr/lib/ruby/1.8/gnomevfs.rb <OLD>
+1242745351 1242745376 libpanel-applet2-ruby1.8 /usr/lib/ruby/1.8/panelapplet2.rb <OLD>
+1242745351 1242745373 libart2-ruby1.8 /usr/lib/ruby/1.8/i486-linux/rbart.h <OLD>
+1242745351 1242745374 libgnome2-ruby1.8 /usr/lib/ruby/1.8/gnome2.rb <OLD>
+1242745351 1242745377 libgnomeprintui2-ruby1.8 /usr/lib/ruby/1.8/gnomeprintui2.rb <OLD>
+1242745351 1242745385 libhtml-template-perl /usr/share/perl5/HTML/Template.pm <OLD>
+1242745351 1242745375 libopengl-ruby1.8 /usr/lib/ruby/1.8/i486-linux/gl.so <OLD>
+1242745351 1242745373 libcairo-ruby1.8 /usr/lib/ruby/1.8/cairo.rb <OLD>
+1242745351 1242745373 libgtk2-ruby1.8 /usr/lib/ruby/1.8/gtk2.rb <OLD>
+1242745351 1242745375 libgtkglext1-ruby1.8 /usr/lib/ruby/1.8/gtkglext.rb <OLD>
+1242745351 1242745362 libcmdparse2-ruby1.8 /usr/lib/ruby/1.8/cmdparse2.rb <OLD>
+1242745351 1242745377 librsvg2-ruby1.8 /usr/lib/ruby/1.8/rsvg2.rb <OLD>
+1242745351 1242745373 libgdk-pixbuf2-ruby1.8 /usr/lib/ruby/1.8/gdk_pixbuf2.rb <OLD>
+1242745351 1242745376 libgnomeprint2-ruby1.8 /usr/lib/ruby/1.8/gnomeprint2.rb <OLD>
+1242745351 1242745352 libplrpc-perl /usr/share/perl5/RPC/PlClient.pm <OLD>
+1242745351 1242745373 libatk1-ruby1.8 /usr/lib/ruby/1.8/atk.rb <OLD>
+1242745351 1242745373 libpango1-ruby1.8 /usr/lib/ruby/1.8/pango.rb <OLD>
+1242745351 1242745373 libglib2-ruby1.8 /usr/lib/ruby/1.8/pkg-config.rb <OLD>
+1242745351 1242745362 liblog4r-ruby1.8 /usr/lib/ruby/1.8/log4r.rb <OLD>
+1242745351 1242745363 libncurses-ruby1.8 /usr/lib/ruby/1.8/ncurses.rb <OLD>
+1242745351 1242745377 libgtk-mozembed-ruby1.8 /usr/lib/ruby/1.8/gtkmozembed.rb <OLD>
+1242744175 1242744201 libcommons-launcher-java /usr/share/doc/libcommons-launcher-java/examples/bin/LauncherBootstrap.class.gz <OLD>
+1242744175 1242744199 ant-optional-gcj /usr/lib/gcj/ant-nodeps.jar.so <OLD>
+1242744175 1242744205 libecj-java-gcj /usr/lib/gcj/eclipse-ecj.jar.so <OLD>
+1242744175 1242744202 libtomcat5.5-java /usr/share/tomcat5.5/bin/bootstrap.jar <OLD>
+1242744175 1242744205 libdb4.6-java-gcj /usr/lib/gcj/libdb4.6-java-4.6.21.jar.so <OLD>
+1242744175 1242744198 ant-gcj /usr/lib/gcj/ant.jar.so <OLD>
+1242639494 1242304483 make /usr/bin/make <OLD>
+1242639039 1242304539 ghostscript-x /usr/lib/ghostscript/8.64/X11.so <OLD>
+1242634866 1242304542 libgraphviz4 /usr/lib/graphviz/libgvplugin_xlib.so.5 <OLD>
+1242634504 1242466177 blt /usr/lib/blt2.4/pkgIndex.tcl <OLD>
+1242634502 1242466177 tk /usr/bin/wish-default <OLD>
+1242634502 1242466177 tk8.4 /usr/bin/wish8.4 <OLD>
+1242583156 1242304478 finger /usr/bin/finger <OLD>
+1242582292 1242582238 python-poppler /usr/lib/python-support/python-poppler/python2.6/poppler.so <OLD>
+1242582292 1242582246 pdfshuffler /usr/bin/pdfshuffler <OLD>
+1242582262 1242466440 pdfedit /usr/bin/pdfedit <OLD>
+1242577762 1242466449 xdu /usr/bin/xdu <OLD>
+1242550972 1242466183 audacity /usr/bin/audacity <OLD>
+1242547848 1242466122 libxine1-console /usr/lib/xine/plugins/1.26/xineplug_vo_out_fb.so <OLD>
+1242547848 1242466122 libxine1-x /usr/lib/xine/plugins/1.26/xineplug_vo_out_xxmc.so <OLD>
+1242547769 1242547797 kdemultimedia-kio-plugins /usr/lib/kde4/libaudiocd_encoder_wav.so <OLD>
+1242547769 1242547797 libkcddb4 /usr/lib/kde4/kcm_cddb.so <OLD>
+1242546289 1242304531 eog /usr/lib/eog/plugins/statusbar-date.eog-plugin <OLD>
+1242512335 1242304450 iputils-ping /bin/ping <OLD>
+1242511083 1242466214 vlc-plugin-esd /usr/lib/vlc/audio_output/libesd_plugin.so <OLD>
+1242495391 1242466196 gstreamer0.10-gnonlin /usr/lib/gstreamer-0.10/libgnl.so <OLD>
+1242495391 1242466200 gstreamer0.10-plugins-bad-multiverse /usr/lib/gstreamer-0.10/libgstmpeg2enc.so <OLD>
+1242495390 1242466202 gstreamer0.10-plugins-farsight /usr/lib/gstreamer-0.10/libfsselector.so <OLD>
+1242495390 1242466196 gstreamer0.10-ffmpeg /usr/lib/gstreamer-0.10/libgstffmpeg.so <OLD>
+1242495389 1242466452 gstreamer0.10-fluendo-mp3 /usr/lib/gstreamer-0.10/libgstflump3dec.so <OLD>
+1242495389 1242466196 gstreamer0.10-pitfdll /usr/lib/gstreamer-0.10/libpitfdll.so <OLD>
+1242495388 1242466203 gstreamer0.10-plugins-ugly-multiverse /usr/lib/gstreamer-0.10/libgstlame.so <OLD>
+1242495367 1242466221 schroot /usr/bin/schroot <OLD>
+1242482290 1242304476 mount /sbin/losetup <OLD>
+1242473994 1242466572 luatex /usr/bin/texdoc <OLD>
+1242473228 1242466447 kdiff3 /usr/bin/kdiff3 <OLD>
+1242472375 1242304623 ubuntu-system-service /usr/lib/system-service/system-service-d <OLD>
+1242470083 1242470051 truecrypt /usr/bin/truecrypt <OLD>
+1242469689 1242304475 hdparm /lib/udev/hdparm <OLD>
+1242469476 1242304479 gcalctool /usr/bin/gnome-calculator <OLD>
+1242469004 1242304483 lsof /usr/bin/lsof <OLD>
+1242468974 1242466204 libqt3-mt /usr/lib/qt3/plugins/inputmethods/libqxim.so <OLD>
+1242468972 1242466210 libsox-fmt-base /usr/lib/sox/libsox_fmt_xi.so <OLD>
+1242468972 1242466210 libsox-fmt-alsa /usr/lib/sox/libsox_fmt_alsa.so <OLD>
+1242468972 1242466209 libk3b3 /usr/lib/kde3/libk3baudiometainforenamerplugin.la <OLD>
+1242468972 1242304493 wodim /usr/bin/cdrecord <OLD>
+1242468972 1242466217 libao2 /usr/lib/ao/plugins-2/libpulse.so <OLD>
+1242468972 1242466209 libk3b3-extracodecs /usr/lib/kde3/libk3bmaddecoder.so <OLD>
+1242468972 1242466211 sox /usr/bin/soxi <OLD>
+1242468966 1242466218 k3b /usr/bin/k3b <OLD>
+1242467789 1242304623 thunderbird-locale-en-gb /usr/lib/thunderbird/extensions/langpack-en-GB@thunderbird.mozilla.org/install.rdf <OLD>
+1242467550 1242466442 libgcj9-0 /usr/lib/gcj-4.3-90/libgcj_bc.so.1 <OLD>
+1242467515 1242466190 cdd-common /usr/sbin/cdd-update-menus <OLD>
+1242467356 1242466588 python-tz /usr/lib/python-tz/test-pytz.py <OLD>
+1242467353 1242466586 python-lxml /usr/lib/python2.6/dist-packages/lxml/html/_setmixin.py <OLD>
+1242467268 1242466190 cabextract /usr/bin/cabextract <OLD>
+1242466797 1242304912 python-apt /usr/lib/python2.6/dist-packages/aptsources/sourceslist.py <OLD>
+1242466797 1242304912 python-imaging /usr/lib/python2.6/dist-packages/PIL/TiffTags.py <OLD>
+1242466796 1242304912 screen-resolution-extra /usr/lib/python2.6/dist-packages/ScreenResolution/policykit.py <OLD>
+1242466795 1242304912 python-xapian /usr/lib/python2.6/dist-packages/xapian.py <OLD>
+1242466795 1242304913 ufw /usr/lib/python2.5/site-packages/ufw/applications.py <OLD>
+1242466793 1242304913 jockey-common /usr/lib/python2.6/dist-packages/jockey/kdeui/ui_LicenseDialog.py <OLD>
+1242466793 1242304613 python-launchpad-integration /usr/lib/python2.5/site-packages/gtk-2.0/LaunchpadIntegration/__init__.py <OLD>
+1242466792 1242304912 python-pkg-resources /usr/lib/python2.5/site-packages/pkg_resources.py <OLD>
+1242466756 1242304638 update-inetd /usr/sbin/update-inetd <OLD>
+1242466725 1242466344 texlive-lang-ukenglish /var/lib/tex-common/language-cnf/texlive-lang-ukenglish.list <OLD>
+1242466725 1242466348 texlive-pictures /var/lib/tex-common/fontmap-cfg/texlive-pictures.list <OLD>
+1242466725 1242466594 tipa /var/lib/tex-common/fontmap-cfg/tipa.list <OLD>
+1242466725 1242466299 lmodern /var/lib/tex-common/fontmap-cfg/lmodern.list <OLD>
+1242466725 1242466338 texlive-fonts-recommended /var/lib/tex-common/fontmap-cfg/texlive-fonts-recommended.list <OLD>
+1242466725 1242466344 texlive-lang-german /var/lib/tex-common/language-cnf/texlive-lang-german.list <OLD>
+1242466725 1242466334 texlive-fonts-extra /var/lib/tex-common/fontmap-cfg/texlive-fonts-extra.list <OLD>
+1242466725 1242466341 texlive-games /var/lib/tex-common/fontmap-cfg/texlive-games.list <OLD>
+1242466725 1242466194 cm-super /var/lib/tex-common/fontmap-cfg/cm-super.list <OLD>
+1242466725 1242466192 cm-super-minimal /var/lib/tex-common/fontmap-cfg/cm-super-minimal.list <OLD>
+1242466725 1242466344 texlive-lang-other /var/lib/tex-common/language-cnf/texlive-lang-other.list <OLD>
+1242466724 1242466178 python-imaging-tk /usr/lib/python2.6/dist-packages/PIL/ImageTk.py <OLD>
+1242466721 1242466172 python-qt4-common /usr/lib/python2.6/dist-packages/PyQt4/__init__.py <OLD>
+1242466623 1242466536 install-package /usr/bin/install-package <OLD>
+1242466614 1242304492 shared-mime-info /usr/bin/update-mime-database <OLD>
+1242466517 1242466553 libtest-pod-perl /usr/share/perl5/Test/Pod.pm <OLD>
+1242466517 1242466546 libblas-dev /usr/include/cblas_f77.h <OLD>
+1242466517 1242466554 libxalan2-java-gcj /usr/lib/gcj/xalan2.jar.so <OLD>
+1242466517 1242466550 libjaxp1.3-java-gcj /usr/lib/gcj/jaxp-1.3.jar.so <OLD>
+1242466517 1242466554 libxerces2-java-gcj /usr/lib/gcj/xercesImpl.jar.so <OLD>
+1242466517 1242466551 libjpeg62-dev /usr/lib/libjpeg.a <OLD>
+1242466517 1242466588 python-psyco /usr/lib/python2.6/dist-packages/psyco/_psyco.so <OLD>
+1242466517 1242466535 libfile-homedir-perl /usr/share/perl5/File/HomeDir.pm <OLD>
+1242466517 1242466550 libipc-run-perl /usr/share/perl5/IPC/Run.pm <OLD>
+1242466517 1242466550 libio-pty-perl /usr/lib/perl5/auto/IO/Tty/Tty.bs <OLD>
+1242466517 1242466552 libmail-sendmail-perl /usr/share/perl5/Mail/Sendmail.pm <OLD>
+1242466517 1242466551 libsys-hostname-long-perl /usr/share/perl5/Sys/Hostname/Long.pm <OLD>
+1242466517 1242466588 python-renderpm /usr/lib/python2.6/dist-packages/_renderPM.so <OLD>
+1242466517 1242466547 libdevel-symdump-perl /usr/share/perl5/Devel/Symdump/Export.pm <OLD>
+1242466517 1242466589 python-reportlab-accel /usr/lib/python2.6/dist-packages/sgmlop.so <OLD>
+1242466517 1242466551 liblog4j1.2-java-gcj /usr/lib/gcj/log4j-1.2.15.jar.so <OLD>
+1242466517 1242466552 libpod-coverage-perl /usr/share/perl5/Pod/Coverage/Overloader.pm <OLD>
+1242466517 1242466550 libio-stringy-perl /usr/share/perl5/IO/WrapTie.pm <OLD>
+1242466517 1242466600 libauthen-sasl-perl /usr/share/perl5/Authen/SASL.pm <OLD>
+1242466517 1242466553 libterm-size-perl /usr/lib/perl5/auto/Term/Size/autosplit.ix <OLD>
+1242466517 1242466601 r-base-html /usr/lib/R/library/utils/html/nsl.html <OLD>
+1242466517 1242466549 libgii1-target-x /usr/lib/ggi/input/x.so <OLD>
+1242466517 1242466552 libparse-debcontrol-perl /usr/share/perl5/Parse/DebControl.pm <OLD>
+1242466517 1242466602 r-base-latex /usr/lib/R/library/utils/latex/nsl.tex <OLD>
+1242466517 1242466588 python-matplotlib /usr/lib/python2.6/dist-packages/matplotlib/_png.so <OLD>
+1242466517 1242466555 libyaml-syck-perl /usr/lib/perl5/auto/YAML/Syck/Syck.bs <OLD>
+1242466517 1242466549 libggi-target-x /usr/lib/ggi/helper/helper_x_vidmode.so <OLD>
+1242466517 1242466548 libgetopt-argvfile-perl /usr/share/perl5/Getopt/ArgvFile.pm <OLD>
+1242466517 1242466547 libbz2-dev /usr/include/bzlib.h <OLD>
+1242466517 1242466551 liblapack-dev /usr/lib/liblapack.a <OLD>
+1242466516 1242304476 iptables /sbin/iptables <OLD>
+1242466143 1242466411 r-cran-kernsmooth /usr/lib/R/library/KernSmooth/CONTENTS <OLD>
+1242466143 1242466184 avifile-mjpeg-plugin /usr/lib/avifile-0.7/osmjpeg.so <OLD>
+1242466143 1242466416 r-cran-sandwich /usr/lib/R/site-library/sandwich/INDEX <OLD>
+1242466143 1242466414 r-cran-abind /usr/lib/R/site-library/abind/CONTENTS <OLD>
+1242466143 1242466417 r-cran-rcmdr /usr/lib/R/site-library/Rcmdr/INDEX <OLD>
+1242466143 1242466416 r-cran-strucchange /usr/lib/R/site-library/strucchange/INDEX <OLD>
+1242466143 1242466415 r-cran-relimp /usr/lib/R/site-library/relimp/CONTENTS <OLD>
+1242466143 1242466414 r-cran-acepack /usr/lib/R/site-library/acepack/CONTENTS <OLD>
+1242466143 1242466184 avifile-win32-plugin /usr/lib/avifile-0.7/win32.so <OLD>
+1242466143 1242466278 libncurses5-dev /usr/lib/libcurses.a <OLD>
+1242466143 1242466203 gstreamer0.10-plugins-ugly-multiverse-dbg /usr/lib/debug/usr/lib/gstreamer-0.10/libgstlame.so <OLD>
+1242466143 1242466200 libquicktime1 /usr/lib/libquicktime1/lqt_vorbis.so <OLD>
+1242466143 1242466497 kdepimlibs5 /usr/lib/kde4/kio_smtp.so <OLD>
+1242466143 1242466291 python-gnome2-extras /usr/lib/python-support/python-gnome2-extras/python2.5/gtk-2.0/gtkspell.so <OLD>
+1242466143 1242466412 r-cran-nlme /usr/lib/R/library/nlme/CONTENTS <OLD>
+1242466143 1242466415 r-cran-sm /usr/lib/R/site-library/sm/INDEX <OLD>
+1242466143 1242466414 r-cran-car /usr/lib/R/site-library/car/INDEX <OLD>
+1242466143 1242466410 r-cran-boot /usr/lib/R/library/boot/CONTENTS <OLD>
+1242466143 1242466276 libcarp-clan-perl /usr/share/perl5/Carp/Clan.pm <OLD>
+1242466143 1242466278 libreadline5-dev /usr/include/readline/rltypedefs.h <OLD>
+1242466143 1242466413 r-cran-codetools /usr/lib/R/library/codetools/INDEX <OLD>
+1242466143 1242466183 libavifile-0.7c2 /usr/lib/avifile-0.7/mpeg_audiodec.so <OLD>
+1242466143 1242466292 python-libtorrent /usr/lib/python2.6/dist-packages/libtorrent.so <OLD>
+1242466143 1242466182 libjack0 /usr/lib/jack/jack_oss.so <OLD>
+1242466143 1242466414 r-cran-lmtest /usr/lib/R/site-library/lmtest/INDEX <OLD>
+1242466143 1242466175 libapt-pkg-perl /usr/lib/perl5/AptPkg.pm <OLD>
+1242466143 1242466277 libpacklib1-gfortran /usr/lib/libpacklib1-gfortran/kuesvr <OLD>
+1242466143 1242466448 mbr /sbin/install-mbr <OLD>
+1242466143 1242466415 r-cran-mvtnorm /usr/lib/R/site-library/mvtnorm/INDEX <OLD>
+1242466143 1242466410 r-cran-foreign /usr/lib/R/library/foreign/INDEX <OLD>
+1242466143 1242466175 libconfig-file-perl /usr/share/perl5/ConfigFile.pm <OLD>
+1242466143 1242466491 dia-libs /usr/lib/dia/libvdx_filter.la <OLD>
+1242466143 1242466200 gstreamer0.10-plugins-bad-multiverse-dbg /usr/lib/debug/usr/lib/gstreamer-0.10/libgstx264.so <OLD>
+1242466143 1242466411 r-cran-lattice /usr/lib/R/library/lattice/CONTENTS <OLD>
+1242466143 1242466256 openclipart-openoffice.org /usr/lib/openoffice/share/gallery/sg91.thm <OLD>
+1242466143 1242466414 r-cran-effects /usr/lib/R/site-library/effects/INDEX <OLD>
+1242466143 1242466178 python-tk /usr/lib/python2.6/lib-dynload/_tkinter.so <OLD>
+1242466143 1242466411 r-cran-vr /usr/lib/R/library/spatial/CONTENTS <OLD>
+1242466143 1242466219 debootstrap /usr/sbin/debootstrap <OLD>
+1242466143 1242466410 r-cran-cluster /usr/lib/R/library/cluster/CONTENTS <OLD>
+1242466143 1242466278 libgmp3-dev /usr/lib/libmp.a <OLD>
+1242466143 1242466447 libkonq5 /usr/lib/kde4/konq_sound.so <OLD>
+1242466143 1242466175 liblist-moreutils-perl /usr/lib/perl5/auto/List/MoreUtils/MoreUtils.bs <OLD>
+1242466143 1242466415 r-cran-rgl /usr/lib/R/site-library/rgl/INDEX <OLD>
+1242466143 1242466411 r-cran-mgcv /usr/lib/R/library/mgcv/INDEX <OLD>
+1242466143 1242466498 python-kde4 /usr/lib/python2.6/dist-packages/PyQt4/uic/widget-plugins/kde4.py <OLD>
+1242466143 1242466454 kaffeine-gstreamer /usr/lib/kde3/libgstreamerpart.so <OLD>
+1242466143 1242466414 r-cran-zoo /usr/lib/R/site-library/zoo/INDEX <OLD>
+1242466143 1242466412 r-cran-survival /usr/lib/R/library/survival/CONTENTS <OLD>
+1242466143 1242466276 libbit-vector-perl /usr/lib/perl5/auto/Bit/Vector/Vector.bs <OLD>
+1242466143 1242466415 r-cran-multcomp /usr/lib/R/site-library/multcomp/INDEX <OLD>
+1242466143 1242466413 r-cran-rpart /usr/lib/R/library/rpart/CONTENTS <OLD>
+1242466143 1242466161 java-common /usr/sbin/update-java-alternatives <OLD>
+1242466140 1242466127 texlive-base /var/lib/tex-common/fmtutil-cnf/texlive-base.list <OLD>
+1242466139 1242304549 tar /usr/lib/mime/packages/tar <OLD>
+1242466132 1242304607 libuuid-perl /usr/lib/perl5/UUID.pm <OLD>
+1242466132 1242304902 libmldbm-perl /usr/share/perl5/MLDBM/Serializer/Storable.pm <OLD>
+1242466131 1242304637 doc-base /usr/sbin/install-docs <OLD>
+1242466107 1242304483 lzma /usr/bin/unlzma <OLD>
+1242462200 1242302199 synaptic /usr/sbin/synaptic <OLD>
+1242373535 1242304638 logrotate /usr/sbin/logrotate <OLD>
+1242333404 1242302142 gnome-applets-data /usr/lib/bonobo/servers/GNOME_GWeatherApplet_Factory.server <OLD>
+1242317210 1242304476 upstart-compat-sysv /sbin/poweroff <OLD>
+1242317204 1242304476 usplash /sbin/usplash_down <OLD>
+1242316896 1242304481 gksu /usr/bin/gksudo <OLD>
+1242316893 1242304612 python-vte /usr/lib/python-support/python-vte/python2.6/gtk-2.0/vtemodule.so <OLD>
+1242316892 1242304480 gdebi /usr/bin/gdebi-gtk <OLD>
+1242311200 1242304638 apt-xapian-index /usr/sbin/update-apt-xapian-index <OLD>
+1242308647 1242304543 libgutenprint2 /usr/lib/gutenprint/5.2/modules/print-raw.so <OLD>
+1242308645 1242304525 cupsddk-drivers /usr/lib/cups/driver/drv <OLD>
+1242308638 1242302212 bluez-cups /usr/lib/cups/backend/bluetooth <OLD>
+1242308630 1242304617 python-sexy /usr/lib/python2.6/dist-packages/gtk-2.0/sexy.so <OLD>
+1242308629 1242304612 python-smbc /usr/lib/python-support/python-smbc/python2.6/smbc.so <OLD>
+1242307854 1242304539 gedit /usr/lib/gedit-2/plugin-loaders/libpythonloader.so <OLD>
+1242307835 1242304618 python-gdbm /usr/lib/python2.6/lib-dynload/gdbm.so <OLD>
+1242306624 1242304610 python-gconf /usr/lib/python-support/python-gconf/python2.6/gtk-2.0/gconf.so <OLD>
+1242306622 1242302212 bluez-gstreamer /usr/lib/gstreamer-0.10/libgstbluetooth.so <OLD>
+1242306585 1242304476 acpi-support /usr/bin/acpi_fakekey <OLD>
+1242306294 1242304476 ifupdown /sbin/ifdown <OLD>
+1242306240 1242304901 liburi-perl /usr/share/perl5/URI.pm <OLD>
+1242305401 1242304624 update-notifier-common /usr/lib/update-notifier/update-motd-updates-available <OLD>
+1242305401 1242304638 update-motd /usr/sbin/update-motd <OLD>
+1242305293 1242304522 avahi-daemon /usr/lib/avahi/avahi-daemon-check-dns.sh <OLD>
+1242305284 1242304542 scim-gtk2-immodule /usr/lib/gtk-2.0/2.10.0/immodule-files.d/scim-gtk2-immodule.immodules <OLD>
+1242305284 1242304542 scim-bridge-client-gtk /usr/lib/gtk-2.0/2.10.0/immodule-files.d/scim-bridge-client-gtk.immodules <OLD>
+1242305278 1242304610 python-glade2 /usr/lib/python-support/python-glade2/python2.6/gtk-2.0/gtk/glade.so <OLD>
+1242305271 1242304523 indicator-applet /usr/lib/bonobo/servers/GNOME_IndicatorApplet.server <OLD>
+1242305271 1242304523 gnome-panel-data /usr/lib/bonobo/servers/GNOME_NotificationAreaApplet.server <OLD>
+1242305271 1242304522 libbonobo2-common /usr/lib/bonobo/servers/Bonobo_Sample_Echo.server <OLD>
+1242305271 1242304522 contact-lookup-applet /usr/lib/bonobo/servers/GNOME_ContactLookupApplet.server <OLD>
+1242305270 1242304522 at-spi /usr/lib/bonobo/servers/Accessibility_Registry.server <OLD>
+1242305270 1242304493 xdg-user-dirs-gtk /usr/bin/xdg-user-dirs-gtk-update <OLD>
+1242305269 1242304483 jockey-gtk /usr/bin/jockey-gtk <OLD>
+1242305267 1242304542 libgnomevfs2-extra /usr/lib/gnome-vfs-2.0/modules/libftp.so <OLD>
+1242305266 1242304544 libvisual-0.4-plugins /usr/lib/libvisual-0.4/morph/morph_slide.so <OLD>
+1242305266 1242304542 gstreamer0.10-schroedinger /usr/lib/gstreamer-0.10/libgstschro.so <OLD>
+1242305257 1242304478 cpp /usr/bin/cpp <OLD>
+1242305257 1242304478 cpp-4.3 /usr/bin/i486-linux-gnu-cpp-4.3 <OLD>
+1242305255 1242304629 xserver-xorg-input-evdev /usr/lib/xorg/modules/input/evdev_drv.so <OLD>
+1242305254 1242304902 binfmt-support /usr/share/perl5/Binfmt/Lib.pm <OLD>
+1242305253 1242304628 xserver-xorg-video-radeon /usr/lib/xorg/modules/drivers/radeon_drv.so <OLD>
+1242305251 1242304638 laptop-detect /usr/sbin/laptop-detect <OLD>
+1242305251 1242304637 dmidecode /usr/sbin/dmidecode <OLD>
+1242305250 1242304476 klogd /sbin/klogd <OLD>
+1242305250 1242304475 wireless-crda /lib/udev/rules.d/85-regulatory.rules <OLD>
+1242305250 1242304475 powermgmt-base /sbin/apm_available <OLD>
+1242305250 1242304450 module-init-tools /sbin/lsmod <OLD>
+1242305250 1242304475 libpisock9 /lib/udev/rules.d/40-libpisock9.rules <OLD>
+1242305250 1242304476 sysklogd /sbin/syslogd <OLD>
+1242305249 1242304457 initscripts /lib/init/splash-functions-base <OLD>
+1242305249 1242304476 apparmor /sbin/apparmor_parser <OLD>
+1242305071 1242304637 sysv-rc /usr/sbin/invoke-rc.d <OLD>
+1242305055 1242304637 grub-common /usr/sbin/grub-probe <OLD>
+1242305050 1242305041 initramfs-tools /usr/sbin/update-initramfs <OLD>
+1242305049 1242304543 klibc-utils /usr/lib/klibc/bin/zcat <OLD>
+1242305048 1242304450 cpio /bin/cpio <OLD>
+1242305048 1242304626 usplash-theme-ubuntu /usr/lib/usplash/usplash-theme-ubuntu.so <OLD>
+1242305048 1242304475 dmsetup /lib/udev/rules.d/65-dmsetup.rules <OLD>
+1242305047 1242304543 busybox-initramfs /usr/lib/initramfs-tools/bin/busybox <OLD>
+1242305047 1242304450 ntfs-3g /sbin/mount.ntfs <OLD>
+1242305041 1242304458 linux-sound-base /lib/linux-sound-base/noOSS.modprobe.conf <OLD>
+1242305040 1242304450 mktemp /bin/mktemp <OLD>
+1242305040 1242304638 ssl-cert /usr/sbin/make-ssl-cert <OLD>
+1242305032 1242304518 libpython2.6 /usr/lib/python2.6/config/libpython2.6.so <OLD>
+1242305028 1242304450 binutils-static /bin/ld_static <OLD>
+1242305018 1242304450 console-setup /bin/setupcon <OLD>
+1242305010 1242304482 gpgv /usr/bin/gpgv <OLD>
+1242304999 1242304902 libtext-wrapi18n-perl /usr/share/perl5/Text/WrapI18N.pm <OLD>
+1242304999 1242304608 libtext-charwidth-perl /usr/lib/perl5/auto/Text/CharWidth/CharWidth.so <OLD>
+1242304999 1242304608 libtext-iconv-perl /usr/lib/perl5/auto/Text/Iconv/Iconv.so <OLD>
+1242304996 1242304636 adduser /usr/sbin/addgroup <OLD>
+1242304996 1242304608 liblocale-gettext-perl /usr/lib/perl5/auto/Locale/gettext/gettext.so <OLD>
+1242304994 1242304486 python-minimal /usr/bin/python <OLD>
+1242304989 1242304483 mawk /usr/bin/mawk <OLD>
+1242304989 1242304450 sed /bin/sed <OLD>
+1242304988 1242304638 locales /usr/sbin/locale-gen <OLD>
+1242304517 1242304486 libpaper-utils /usr/bin/paperconf <OLD>
+1242302401 1242302229 libpam-ck-connector /lib/security/pam_ck_connector.so <OLD>
+1242302355 1242299824 thunderbird-locale-de /usr/lib/thunderbird/extensions/langpack-de@thunderbird.mozilla.org/chrome.manifest <OLD>
+1242302330 1242302209 bluez-alsa /usr/lib/alsa-lib/libasound_module_pcm_bluetooth.so <OLD>
+1242302197 1242302234 compizconfig-backend-gconf /usr/lib/compizconfig/backends/libgconf.a <OLD>
+1242301823 1242299920 network-manager-pptp /usr/lib/pppd/2.4.5/nm-pptp-pppd-plugin.so <OLD>
+1242301823 1242299920 pptp-linux /usr/sbin/pptp <OLD>
+1242300072 1242299921 resolvconf /lib/resolvconf/list-records <OLD>
+1242299961 1242299921 network-manager-vpnc /usr/lib/NetworkManager/libnm-vpnc-properties.so <OLD>
+1242299961 1242299919 network-manager-openvpn /usr/lib/NetworkManager/libnm-openvpn-properties.so <OLD>
+1242299917 1242299919 openvpn-blacklist /usr/sbin/openvpn-vulnkey <OLD>
+1242299917 1242299921 vpnc /usr/sbin/vpnc-connect <OLD>
+1242299917 1242299919 openvpn /usr/include/openvpn/openvpn-plugin.h <OLD>
+1242299831 1242304963 wbritish /var/lib/dictionaries-common/wordlist/wbritish <OLD>
+1242299831 1242304963 wamerican /var/lib/dictionaries-common/wordlist/wamerican <OLD>
+1242299830 1242299825 wswiss /var/lib/dictionaries-common/wordlist/wswiss <OLD>
+1242299830 1242299825 wogerman /var/lib/dictionaries-common/wordlist/wogerman <OLD>
+1242299830 1242299825 wngerman /var/lib/dictionaries-common/wordlist/wngerman <OLD>
+1240236424 1242304963 aspell-en /usr/lib/aspell/en_US-wo_accents-only.rws <OLD>
+1240230086 1242304476 readahead /sbin/readahead-watch <OLD>
+1239984424 1242304616 ubuntu-wallpapers /usr/lib/python2.6/dist-packages/ubuntu_wallpapers-0.28.4.egg-info <OLD>
+1239942484 1242304522 apt-transport-https /usr/lib/apt/methods/https <OLD>
+1239931154 1242304543 libgail-common /usr/lib/gtk-2.0/modules/libgail.so <OLD>
+1239864276 1242304979 language-pack-en-base /var/lib/locales/supported.d/en <OLD>
+1239743006 1242304541 gnome-games /usr/lib/gnome-games/gnome-games-render-cards <OLD>
+1239706777 1242304543 indicator-messages /usr/lib/indicators/1/libmessaging.a <OLD>
+1239704242 1242304638 libpango1.0-common /usr/sbin/update-pangox-aliases <OLD>
+1239680228 1242304604 libgnome-mag2 /usr/lib/orbit-2.0/GNOME_Magnifier_module.so <OLD>
+1239212530 1242304475 alsa-base /sbin/alsa <OLD>
+1239202502 1242304608 libapparmor-perl /usr/lib/perl5/auto/LibAppArmor/LibAppArmor.so <OLD>
+1239202483 1242304638 apparmor-utils /usr/sbin/aa-unconfined <OLD>
+1239036174 1242304637 hotkey-setup /usr/sbin/dumpkeycodes <OLD>
+1238814183 1242304628 xserver-xorg-video-nv /usr/lib/xorg/modules/drivers/nv_drv.so <OLD>
+1238794853 1242304525 compiz-fusion-plugins-main /usr/lib/compiz/libworkarounds.a <OLD>
+1238549597 1242304628 xserver-xorg-video-ati /usr/lib/xorg/modules/drivers/ati_drv.so <OLD>
+1238426283 1242304612 python-gtksourceview2 /usr/lib/python-support/python-gtksourceview2/python2.5/gtksourceview2.so <OLD>
+1238393539 1242304616 human-theme /usr/lib/python2.6/dist-packages/human_theme-0.5.egg-info <OLD>
+1238164258 1242304638 tcpdump /usr/sbin/tcpdump <OLD>
+1238145171 1242304543 libgnome-media0 /usr/lib/libglade/2.0/libgnome-media-profiles.so <OLD>
+1237803622 1242304636 avahi-autoipd /usr/sbin/avahi-autoipd <OLD>
+1237803550 1242304522 libavahi-common-data /usr/lib/avahi/service-types.db <OLD>
+1237595293 1242304628 xserver-xorg-video-savage /usr/lib/xorg/modules/drivers/savage_drv.so <OLD>
+1237475864 1242304616 ubuntu-gdm-themes /usr/lib/python2.6/dist-packages/ubuntu_gdm_themes-0.32.egg-info <OLD>
+1237432333 1242304628 xserver-xorg-video-i128 /usr/lib/xorg/modules/drivers/i128_drv.so <OLD>
+1237346451 1242304610 python-brlapi /usr/lib/python-support/python-brlapi/python2.5/brlapi.so <OLD>
+1237297497 1242304638 base-passwd /usr/sbin/update-passwd <OLD>
+1237293951 1242304623 tasksel-data /usr/lib/tasksel/info/mobile-desktop.preinst <OLD>
+1236667698 1242304524 libcompizconfig0 /usr/lib/compiz/libccp.so <OLD>
+1236643430 1242304525 compiz-fusion-plugins-extra /usr/lib/compiz/libwallpaper.a <OLD>
+1236620227 1242304622 scim-modules-socket /usr/lib/scim-1.0/1.4.0/IMEngine/socket.so <OLD>
+1235766892 1242304628 xserver-xorg-video-sisusb /usr/lib/xorg/modules/drivers/sisusb_drv.so <OLD>
+1235766884 1242304629 xserver-xorg-video-vmware /usr/lib/xorg/modules/drivers/vmware_drv.so <OLD>
+1235766678 1242304628 xserver-xorg-video-sis /usr/lib/xorg/modules/drivers/sis_drv.so <OLD>
+1235766662 1242304628 xserver-xorg-video-siliconmotion /usr/lib/xorg/modules/drivers/siliconmotion_drv.so <OLD>
+1235766447 1242304628 xserver-xorg-video-s3virge /usr/lib/xorg/modules/drivers/s3virge_drv.so <OLD>
+1235766212 1242304628 xserver-xorg-video-r128 /usr/lib/xorg/modules/drivers/r128_drv.so <OLD>
+1235766207 1242304628 xserver-xorg-video-s3 /usr/lib/xorg/modules/drivers/s3_drv.so <OLD>
+1235765947 1242304628 xserver-xorg-video-neomagic /usr/lib/xorg/modules/drivers/neomagic_drv.so <OLD>
+1235765776 1242304628 xserver-xorg-video-mga /usr/lib/xorg/modules/drivers/mga_drv.so <OLD>
+1235765284 1242304629 xserver-xorg-video-geode /usr/lib/xorg/modules/drivers/ztv_drv.so <OLD>
+1235764897 1242304628 xserver-xorg-video-fbdev /usr/lib/xorg/modules/drivers/fbdev_drv.so <OLD>
+1235763950 1242304628 xserver-xorg-video-cirrus /usr/lib/xorg/modules/drivers/cirrus_laguna.so <OLD>
+1235763655 1242304628 xserver-xorg-video-ark /usr/lib/xorg/modules/drivers/ark_drv.so <OLD>
+1235763650 1242304628 xserver-xorg-video-chips /usr/lib/xorg/modules/drivers/chips_drv.so <OLD>
+1235763472 1242304627 xserver-xorg-video-apm /usr/lib/xorg/modules/drivers/apm_drv.so <OLD>
+1235403627 1242304535 gamin /usr/lib/gamin/gam_server <OLD>
+1235262280 1242304616 python-virtkey /usr/lib/python2.6/dist-packages/virtkey.so <OLD>
+1235201014 1242304551 libart2.24-cil /usr/lib/mono/gtk-sharp-2.0/art-sharp.dll <OLD>
+1235152583 1242304638 pppconfig /usr/sbin/pppconfig <OLD>
+1234938532 1242304636 radeontool /usr/sbin/avivotool <OLD>
+1234514093 1242304628 xserver-xorg-video-openchrome /usr/lib/xorg/modules/drivers/openchrome_drv.so <OLD>
+1234434077 1242304552 libgnomepanel2.24-cil /usr/lib/mono/gnome-panel-sharp-2.24/libgnomepanelsharpglue-2.so <OLD>
+1232722263 1242304629 xserver-xorg-input-mouse /usr/lib/xorg/modules/input/mouse_drv.so <OLD>
+1232542439 1242304638 vbetool /usr/sbin/vbetool <OLD>
+1230060561 1242304629 xserver-xorg-video-tdfx /usr/lib/xorg/modules/drivers/tdfx_drv.so <OLD>
+1230060435 1242304628 xserver-xorg-video-mach64 /usr/lib/xorg/modules/drivers/mach64_drv.so <OLD>
+1230060303 1242304628 xserver-xorg-video-i740 /usr/lib/xorg/modules/drivers/i740_drv.so <OLD>
+1229752493 1242304629 xserver-xorg-video-v4l /usr/lib/xorg/modules/drivers/v4l_drv.so <OLD>
+1229351589 1242304629 xserver-xorg-input-kbd /usr/lib/xorg/modules/input/kbd_drv.so <OLD>
+1229346817 1242304629 xserver-xorg-video-voodoo /usr/lib/xorg/modules/drivers/voodoo_drv.so <OLD>
+1229346813 1242304628 xserver-xorg-video-rendition /usr/lib/xorg/modules/drivers/rendition_drv.so <OLD>
+1229343456 1242304629 xserver-xorg-video-trident /usr/lib/xorg/modules/drivers/trident_drv.so <OLD>
+1229341291 1242304629 xserver-xorg-video-tseng /usr/lib/xorg/modules/drivers/tseng_drv.so <OLD>
+1228198413 1242304623 libsilc-1.1-2 /usr/lib/silc/libsilc-1.1-2/twofish.sim.so <OLD>
+1227822863 1242304637 ethtool /usr/sbin/ethtool <OLD>
+1227576198 1242304542 libgail-gnome-module /usr/lib/gtk-2.0/modules/libgail-gnome.so <OLD>
+1227397476 1242304609 libgdiplus /usr/lib/pkgconfig/libgdiplus.pc <OLD>
+1227051754 1242304624 libts-0.0-0 /usr/lib/ts/variance.so <OLD>
+1226589028 1242304608 libterm-readkey-perl /usr/lib/perl5/auto/Term/ReadKey/ReadKey.so <OLD>
+1225927670 1242304638 tcpd /usr/sbin/safe_finger <OLD>
+1225901311 1242304638 ca-certificates /usr/sbin/update-ca-certificates <OLD>
+1225857066 1242304902 libmailtools-perl /usr/share/perl5/Mail/Internet.pm <OLD>
+1225851151 1242304523 libcaca0 /usr/lib/caca/libgl_plugin.so <OLD>
+1222732342 1242304476 upstart-logd /sbin/logd <OLD>
+1222732337 1242304624 system-services /usr/lib/upstart/migrate-inittab.pl <OLD>
+1220459770 1242304902 libio-compress-base-perl /usr/share/perl5/IO/Uncompress/Base.pm <OLD>
+1220447852 1242304902 libio-compress-zlib-perl /usr/share/perl5/IO/Uncompress/Adapter/Inflate.pm <OLD>
+1220447843 1242304902 libcompress-zlib-perl /usr/share/perl5/Compress/Zlib.pm <OLD>
+1219726945 1242304638 pppoeconf /usr/sbin/pppoeconf <OLD>
+1219226229 1242304522 libaspell15 /usr/lib/aspell/texinfo-filter.so <OLD>
+1214230689 1242304542 gnome-pilot-conduits /usr/lib/gnome-pilot/conduits/libtime_conduit.a <OLD>
+1214088016 1242304450 netcat-traditional /bin/nc.traditional <OLD>
+1212562019 1242304902 libfont-afm-perl /usr/share/perl5/Font/AFM.pm <OLD>
+1210323868 1242304475 makedev /sbin/MAKEDEV <OLD>
+1209791678 1242304902 libhtml-tagset-perl /usr/share/perl5/HTML/Tagset.pm <OLD>
+1193197652 1242304902 libclass-accessor-perl /usr/share/perl5/Class/Accessor.pm <OLD>
+1187312508 1242304637 inputattach /usr/sbin/inputattach <OLD>
+1185447430 1242304476 reiserfsprogs /sbin/mkfs.reiserfs <OLD>
+1179497521 1242304609 xbitmaps /usr/lib/pkgconfig/xbitmaps.pc <OLD>
+1177731176 1242304902 libhtml-tree-perl /usr/share/perl5/HTML/Element.pm <OLD>
+1133784047 1242304902 libio-string-perl /usr/share/perl5/IO/String.pm <OLD>
+1091046964 1242304902 libtie-ixhash-perl /usr/share/perl5/Tie/IxHash.pm <OLD>
+1086162508 1242304902 libhtml-format-perl /usr/share/perl5/HTML/FormatText.pm <OLD>
+1017461578 1242304901 libfreezethaw-perl /usr/share/perl5/FreezeThaw.pm <OLD>
+0 0 libgtksourceview-common <NOFILES>
+0 0 system-config-printer-common <NOFILES>
+0 0 libvte-ruby <NOFILES>
+0 0 python-telepathy <NOFILES>
+0 0 python-dateutil <NOFILES>
+0 0 nvidia-96-modaliases <NOFILES>
+0 0 libscim8c2a <NOFILES>
+0 0 communtu-pdf <NOFILES>
+0 0 python-launchpad-bugs <NOFILES>
+0 0 hunspell-de-de <NOFILES>
+0 0 xsane-common <NOFILES>
+0 0 nvidia-180-modaliases <NOFILES>
+0 0 libvlccore0 <NOFILES>
+0 0 language-pack-kde-de <NOFILES>
+0 0 libgtkhtml3.14-19 <NOFILES>
+0 0 libmissioncontrol-server1 <NOFILES>
+0 0 libtidy-0.99-0 <NOFILES>
+0 0 sgml-data <NOFILES>
+0 0 libgtkmm-2.4-1c2a <NOFILES>
+0 0 texlive-doc-base <NOFILES>
+0 0 librpm4.4 <NOFILES>
+0 0 libpoppler-glib4 <NOFILES>
+0 0 libsvncpp1 <NOFILES>
+0 0 librsvg2-ruby <NOFILES>
+0 0 apport-gtk <NOFILES>
+0 0 texlive-science <NOFILES>
+0 0 xfig-libs <NOFILES>
+0 0 firefox <NOFILES>
+0 0 libqwtplot3d-qt3 <NOFILES>
+0 0 libntfs10 <NOFILES>
+0 0 python-cupshelpers <NOFILES>
+0 0 libjs-prototype <NOFILES>
+0 0 ubuntu-restricted-extras <NOFILES>
+0 0 libcolamd-3.2.0 <NOFILES>
+0 0 libfaad0 <NOFILES>
+0 0 libnb-platform-devel-java <NOFILES>
+0 0 openclipart-png <NOFILES>
+0 0 libgnomecanvas2-ruby <NOFILES>
+0 0 myspell-en-au <NOFILES>
+0 0 libwxbase2.8-0 <NOFILES>
+0 0 libdvdread4 <NOFILES>
+0 0 texlive-publishers-doc <NOFILES>
+0 0 linux-generic <NOFILES>
+0 0 lynx <NOFILES>
+0 0 libevview1 <NOFILES>
+0 0 vlc-data <NOFILES>
+0 0 metacity-common <NOFILES>
+0 0 libisccfg40 <NOFILES>
+0 0 libvisual-0.4-0 <NOFILES>
+0 0 liboobs-1-4 <NOFILES>
+0 0 libass1 <NOFILES>
+0 0 libgtksourceview1.0-0 <NOFILES>
+0 0 liblwres40 <NOFILES>
+0 0 libmatroska0 <NOFILES>
+0 0 libgtkspell0 <NOFILES>
+0 0 libpocofoundation6 <NOFILES>
+0 0 liblua5.1-0 <NOFILES>
+0 0 icc-profiles <NOFILES>
+0 0 libbind9-40 <NOFILES>
+0 0 cdd-dev <NOFILES>
+0 0 libcommons-modeler-java <NOFILES>
+0 0 libgnomecanvas2-common <NOFILES>
+0 0 libxcb-shm0 <NOFILES>
+0 0 ruby-full <NOFILES>
+0 0 libgnomeprint2.2-data <NOFILES>
+0 0 libcommons-logging-java <NOFILES>
+0 0 libgnome2-common <NOFILES>
+0 0 libboost-filesystem1.37.0 <NOFILES>
+0 0 communtu-mindmaps-and-organigrams <NOFILES>
+0 0 libboost-program-options1.34.1 <NOFILES>
+0 0 libgnomecups1.0-1 <NOFILES>
+0 0 libg15-1 <NOFILES>
+0 0 freeglut3 <NOFILES>
+0 0 ttf-ubuntu-title <NOFILES>
+0 0 texlive-pstricks-doc <NOFILES>
+0 0 audacity-data <NOFILES>
+0 0 libgucharmap7 <NOFILES>
+0 0 libshout3 <NOFILES>
+0 0 libstdc++5 <NOFILES>
+0 0 libgnomeprintui2.2-common <NOFILES>
+0 0 libglitz-glx1 <NOFILES>
+0 0 xorg <NOFILES>
+0 0 libraw1394-8 <NOFILES>
+0 0 mysql-gui-tools-common <NOFILES>
+0 0 librarian0 <NOFILES>
+0 0 ttf-mscorefonts-installer <NOFILES>
+0 0 base-files <NOFILES>
+0 0 libxml2-doc <NOFILES>
+0 0 nvidia-71-modaliases <NOFILES>
+0 0 libdevmapper1.02.1 <NOFILES>
+0 0 libwildmidi0 <NOFILES>
+0 0 texlive-latex-base-doc <NOFILES>
+0 0 libgnomevfs2-ruby <NOFILES>
+0 0 texlive-publishers <NOFILES>
+0 0 libcommons-digester-java <NOFILES>
+0 0 libboost-wave1.37.0 <NOFILES>
+0 0 python-antlr <NOFILES>
+0 0 libpococrypto6 <NOFILES>
+0 0 libglib1.2ldbl <NOFILES>
+0 0 texlive-generic-recommended <NOFILES>
+0 0 libpt2.6.1 <NOFILES>
+0 0 xemacs21-basesupport <NOFILES>
+0 0 language-pack-de <NOFILES>
+0 0 mono-runtime <NOFILES>
+0 0 libcryptui0 <NOFILES>
+0 0 libtar <NOFILES>
+0 0 kde-icons-oxygen <NOFILES>
+0 0 libxfont1 <NOFILES>
+0 0 xfonts-base <NOFILES>
+0 0 libgmime-2.0-2a <NOFILES>
+0 0 libapparmor1 <NOFILES>
+0 0 gnome-terminal-data <NOFILES>
+0 0 libpthread-stubs0-dev <NOFILES>
+0 0 libpango1-ruby <NOFILES>
+0 0 libpth20 <NOFILES>
+0 0 libgtksourceview2.0-0 <NOFILES>
+0 0 python-matplotlib-data <NOFILES>
+0 0 python-httplib2 <NOFILES>
+0 0 libecj-java <NOFILES>
+0 0 flashplugin-nonfree <NOFILES>
+0 0 language-support-extra-de <NOFILES>
+0 0 gnome-cards-data <NOFILES>
+0 0 libmpcdec3 <NOFILES>
+0 0 libcommons-pool-java <NOFILES>
+0 0 evolution-data-server-common <NOFILES>
+0 0 libtelepathy-glib0 <NOFILES>
+0 0 texlive-common <NOFILES>
+0 0 libokularcore1 <NOFILES>
+0 0 libxalan2-java <NOFILES>
+0 0 python-gdata <NOFILES>
+0 0 libgtkglext1-ruby <NOFILES>
+0 0 libsvga1 <NOFILES>
+0 0 libwps-0.1-1 <NOFILES>
+0 0 libboost-program-options1.37.0 <NOFILES>
+0 0 libsepol1 <NOFILES>
+0 0 libgnomeuimm-2.6-1c2a <NOFILES>
+0 0 libxapian15 <NOFILES>
+0 0 libedata-cal1.2-6 <NOFILES>
+0 0 libindicate1 <NOFILES>
+0 0 libjinglexmllite0.3-0 <NOFILES>
+0 0 libxine1 <NOFILES>
+0 0 libqthreads-12 <NOFILES>
+0 0 libopenspc0 <NOFILES>
+0 0 libgtop2-common <NOFILES>
+0 0 libpodofo0 <NOFILES>
+0 0 intltool-debian <NOFILES>
+0 0 libsdl-mixer1.2 <NOFILES>
+0 0 libpangomm-1.4-1 <NOFILES>
+0 0 ubuntu-minimal <NOFILES>
+0 0 libopengl-ruby <NOFILES>
+0 0 libqt4-designer <NOFILES>
+0 0 libgsl0ldbl <NOFILES>
+0 0 freemind-plugins-svg <NOFILES>
+0 0 communtu-changing-from-windows <NOFILES>
+0 0 libmusicbrainz4c2a <NOFILES>
+0 0 libpcsclite1 <NOFILES>
+0 0 libelf1 <NOFILES>
+0 0 libsgutils1 <NOFILES>
+0 0 language-support-writing-de <NOFILES>
+0 0 libgnome2-ruby <NOFILES>
+0 0 e2fslibs <NOFILES>
+0 0 libmusicbrainz3-6 <NOFILES>
+0 0 communtu-add-sources-admin-mindmaps-und-organisationsdiagramme <NOFILES>
+0 0 libkdeedu4 <NOFILES>
+0 0 gcj-4.3-base <NOFILES>
+0 0 ttf-wqy-zenhei <NOFILES>
+0 0 texlive-base-bin-doc <NOFILES>
+0 0 emacs22-common <NOFILES>
+0 0 ruby-gnome2 <NOFILES>
+0 0 ssh <NOFILES>
+0 0 libakonadiprivate1 <NOFILES>
+0 0 gimp-data <NOFILES>
+0 0 libpocoutil6 <NOFILES>
+0 0 libxvidcore4 <NOFILES>
+0 0 libgdl-1-0 <NOFILES>
+0 0 openoffice.org-thesaurus-en-us <NOFILES>
+0 0 libxcb-xv0 <NOFILES>
+0 0 libprotobuf3 <NOFILES>
+0 0 libcommons-cli-java <NOFILES>
+0 0 libboost-iostreams1.37.0 <NOFILES>
+0 0 python-gnupginterface <NOFILES>
+0 0 libgnome-vfsmm-2.6-1c2a <NOFILES>
+0 0 python-chardet <NOFILES>
+0 0 communtu-add-sources-till-nautilus-dropbox <NOFILES>
+0 0 kdelibs5-data <NOFILES>
+0 0 libavahi-core5 <NOFILES>
+0 0 libpocodata6 <NOFILES>
+0 0 gcc-4.2-base <NOFILES>
+0 0 texlive-music <NOFILES>
+0 0 libcommons-el-java <NOFILES>
+0 0 openclipart <NOFILES>
+0 0 libfaac0 <NOFILES>
+0 0 libgimp2.0 <NOFILES>
+0 0 example-content <NOFILES>
+0 0 gnome-session-canberra <NOFILES>
+0 0 cups-common <NOFILES>
+0 0 communtu-ruby-programming <NOFILES>
+0 0 libxpp3-java <NOFILES>
+0 0 libblas3gf <NOFILES>
+0 0 libdecoration0 <NOFILES>
+0 0 libgtkhtml-editor0 <NOFILES>
+0 0 console-terminus <NOFILES>
+0 0 texlive-science-doc <NOFILES>
+0 0 ttf-arabeyes <NOFILES>
+0 0 texlive-humanities-doc <NOFILES>
+0 0 libboost-date-time1.37.0 <NOFILES>
+0 0 libgtkhtml3.8-15 <NOFILES>
+0 0 openoffice.org-hyphenation-en-us <NOFILES>
+0 0 libsysfs2 <NOFILES>
+0 0 libsensors3 <NOFILES>
+0 0 libggzcore9 <NOFILES>
+0 0 libncursesw5 <NOFILES>
+0 0 texlive-doc-en <NOFILES>
+0 0 nautilus-data <NOFILES>
+0 0 cl-asdf <NOFILES>
+0 0 libicu38 <NOFILES>
+0 0 bluetooth <NOFILES>
+0 0 libboost-test1.37.0 <NOFILES>
+0 0 libmagick++1 <NOFILES>
+0 0 liblockdev1 <NOFILES>
+0 0 ubuntu-artwork <NOFILES>
+0 0 libgeoip1 <NOFILES>
+0 0 python-fstab <NOFILES>
+0 0 language-support-writing-en <NOFILES>
+0 0 libg15daemon-client1 <NOFILES>
+0 0 hunspell-de-med <NOFILES>
+0 0 libxp6 <NOFILES>
+0 0 libsdl-image1.2 <NOFILES>
+0 0 libboost-thread1.37.0 <NOFILES>
+0 0 communtu-system-tools <NOFILES>
+0 0 command-not-found <NOFILES>
+0 0 texlive-humanities <NOFILES>
+0 0 libbibutils0 <NOFILES>
+0 0 libebml0 <NOFILES>
+0 0 libperl5.10 <NOFILES>
+0 0 communtu-add-sources-c309 <NOFILES>
+0 0 friendly-recovery <NOFILES>
+0 0 communtu-ruby-on-rails-with-mysql <NOFILES>
+0 0 cli-common <NOFILES>
+0 0 libcommons-beanutils-java <NOFILES>
+0 0 libavahi-ui0 <NOFILES>
+0 0 libdar64-4 <NOFILES>
+0 0 libavahi-gobject0 <NOFILES>
+0 0 libglib2.0-data <NOFILES>
+0 0 libpciaccess0 <NOFILES>
+0 0 libaiksaurus-1.2-data <NOFILES>
+0 0 libnice0 <NOFILES>
+0 0 libdaemon0 <NOFILES>
+0 0 libpanelappletmm-2.6-1c2 <NOFILES>
+0 0 libavahi-compat-libdnssd1 <NOFILES>
+0 0 libzephyr3 <NOFILES>
+0 0 foomatic-db <NOFILES>
+0 0 openoffice.org <NOFILES>
+0 0 texlive-latex3 <NOFILES>
+0 0 libcdparanoia0 <NOFILES>
+0 0 mono-2.0-runtime <NOFILES>
+0 0 libwnck-common <NOFILES>
+0 0 libboost-regex1.37.0 <NOFILES>
+0 0 linux-restricted-modules-generic <NOFILES>
+0 0 mobile-broadband-provider-info <NOFILES>
+0 0 libpthread-stubs0 <NOFILES>
+0 0 libempathy23 <NOFILES>
+0 0 communtu-audio--basics- <NOFILES>
+0 0 libgda3-3 <NOFILES>
+0 0 libid3tag0 <NOFILES>
+0 0 libgnomekbd-common <NOFILES>
+0 0 libbsf-java <NOFILES>
+0 0 gftp <NOFILES>
+0 0 totem-common <NOFILES>
+0 0 libpocoodbc6 <NOFILES>
+0 0 amarok-common <NOFILES>
+0 0 libgtk2.0-common <NOFILES>
+0 0 libdotconf1.0 <NOFILES>
+0 0 libenca0 <NOFILES>
+0 0 libgnome-pilot2 <NOFILES>
+0 0 libx11-data <NOFILES>
+0 0 drgeo-doc <NOFILES>
+0 0 liblircclient0 <NOFILES>
+0 0 libxxf86dga1 <NOFILES>
+0 0 libreadline-ruby <NOFILES>
+0 0 ubuntu-keyring <NOFILES>
+0 0 libg15render1 <NOFILES>
+0 0 xemacs21 <NOFILES>
+0 0 gnome-accessibility-themes <NOFILES>
+0 0 libqhull5 <NOFILES>
+0 0 bogofilter-common <NOFILES>
+0 0 librelaxng-datatype-java <NOFILES>
+0 0 python-paramiko <NOFILES>
+0 0 gnome-games-data <NOFILES>
+0 0 libjinglep2p0.3-0 <NOFILES>
+0 0 libpcap0.8 <NOFILES>
+0 0 communtu-vpn <NOFILES>
+0 0 ruby-elisp <NOFILES>
+0 0 python-utidylib <NOFILES>
+0 0 libart2-ruby <NOFILES>
+0 0 libgdbm-ruby <NOFILES>
+0 0 kdiff3-doc <NOFILES>
+0 0 texlive-fonts-extra-doc <NOFILES>
+0 0 preview-latex-style <NOFILES>
+0 0 iso-codes <NOFILES>
+0 0 libcwidget3 <NOFILES>
+0 0 xfonts-encodings <NOFILES>
+0 0 libruby <NOFILES>
+0 0 libgcj-bc <NOFILES>
+0 0 libxmuu1 <NOFILES>
+0 0 miro-data <NOFILES>
+0 0 libglew1.5 <NOFILES>
+0 0 hunspell-de-ch <NOFILES>
+0 0 dar-docs <NOFILES>
+0 0 openoffice.org-gnome <NOFILES>
+0 0 libboost-signals1.37.0 <NOFILES>
+0 0 build-essential <NOFILES>
+0 0 r-base-dev <NOFILES>
+0 0 libguile-ltdl-1 <NOFILES>
+0 0 ubufox <NOFILES>
+0 0 texlive-pstricks <NOFILES>
+0 0 gnome-user-guide-de <NOFILES>
+0 0 python-xdg <NOFILES>
+0 0 libksba8 <NOFILES>
+0 0 libgnomeui-common <NOFILES>
+0 0 openoffice.org-thesaurus-de <NOFILES>
+0 0 libtcltk-ruby <NOFILES>
+0 0 libx264-65 <NOFILES>
+0 0 app-install-data <NOFILES>
+0 0 libusplash0 <NOFILES>
+0 0 gstreamer0.10-plugins-bad-doc <NOFILES>
+0 0 xcursor-themes <NOFILES>
+0 0 libpci3 <NOFILES>
+0 0 xfonts-75dpi <NOFILES>
+0 0 ubuntu-docs <NOFILES>
+0 0 python-reportlab <NOFILES>
+0 0 libqimageblitz4 <NOFILES>
+0 0 librdf0 <NOFILES>
+0 0 libgdict-1.0-6 <NOFILES>
+0 0 libgdl-1-common <NOFILES>
+0 0 libqdox-java <NOFILES>
+0 0 libcommons-collections3-java <NOFILES>
+0 0 libgnomeprintui2-ruby <NOFILES>
+0 0 science-tasks <NOFILES>
+0 0 libnewt0.52 <NOFILES>
+0 0 libcdaudio1 <NOFILES>
+0 0 libnl1 <NOFILES>
+0 0 libnetpbm10 <NOFILES>
+0 0 libcommons-collections-java <NOFILES>
+0 0 hicolor-icon-theme <NOFILES>
+0 0 libgdata-google1.2-1 <NOFILES>
+0 0 libgc1c2 <NOFILES>
+0 0 non-free-codecs <NOFILES>
+0 0 op-lpl-doc <NOFILES>
+0 0 libgconfmm-2.6-1c2 <NOFILES>
+0 0 libcelt0 <NOFILES>
+0 0 libtelepathy-farsight0 <NOFILES>
+0 0 libmbca0 <NOFILES>
+0 0 ca-certificates-java <NOFILES>
+0 0 libmms0 <NOFILES>
+0 0 libgd2-xpm <NOFILES>
+0 0 python-webkitgtk <NOFILES>
+0 0 libgnomecanvasmm-2.6-1c2a <NOFILES>
+0 0 libjcalendar-java <NOFILES>
+0 0 autotools-dev <NOFILES>
+0 0 libfaad2-0 <NOFILES>
+0 0 xbase-clients <NOFILES>
+0 0 texlive-doc-de <NOFILES>
+0 0 texlive-generic-extra <NOFILES>
+0 0 liblrdf0 <NOFILES>
+0 0 libboost-system1.37.0 <NOFILES>
+0 0 libkernlib1-gfortran <NOFILES>
+0 0 libfftw3-3 <NOFILES>
+0 0 libsigsegv0 <NOFILES>
+0 0 libvolume-id1 <NOFILES>
+0 0 r-recommended <NOFILES>
+0 0 wwwconfig-common <NOFILES>
+0 0 texlive-latex-extra-doc <NOFILES>
+0 0 maxima-doc <NOFILES>
+0 0 libmysql-ruby <NOFILES>
+0 0 libxmlgraphics-commons-java <NOFILES>
+0 0 netcat <NOFILES>
+0 0 libslp1 <NOFILES>
+0 0 libqt4-help <NOFILES>
+0 0 transmission-common <NOFILES>
+0 0 libboost-regex1.34.1 <NOFILES>
+0 0 libsdl1.2debian <NOFILES>
+0 0 gedit-common <NOFILES>
+0 0 gstreamer0.10-plugins-good-doc <NOFILES>
+0 0 wine-gecko <NOFILES>
+0 0 libgfortran3 <NOFILES>
+0 0 ubuntu-desktop <NOFILES>
+0 0 libzip1 <NOFILES>
+0 0 libjinglexmpp0.3-0 <NOFILES>
+0 0 gimp-help-de <NOFILES>
+0 0 libkonq5-templates <NOFILES>
+0 0 openoffice.org-thesaurus-de-ch <NOFILES>
+0 0 libgtksourceview2.0-common <NOFILES>
+0 0 libopenssl-ruby <NOFILES>
+0 0 xfonts-scalable <NOFILES>
+0 0 gnome-media-common <NOFILES>
+0 0 libwpd8c2a <NOFILES>
+0 0 libgpewidget1 <NOFILES>
+0 0 libgsf-1-common <NOFILES>
+0 0 debconf-i18n <NOFILES>
+0 0 libboost-graph1.37.0 <NOFILES>
+0 0 libgda3-common <NOFILES>
+0 0 libhesiod0 <NOFILES>
+0 0 libxv1 <NOFILES>
+0 0 libjline-java <NOFILES>
+0 0 ubuntu-standard <NOFILES>
+0 0 python-msn <NOFILES>
+0 0 libwxgtk2.8-0 <NOFILES>
+0 0 libslang2 <NOFILES>
+0 0 guile-1.8-libs <NOFILES>
+0 0 default-jre <NOFILES>
+0 0 tangerine-icon-theme <NOFILES>
+0 0 mozilla-thunderbird <NOFILES>
+0 0 libruby1.8-extras <NOFILES>
+0 0 libboost-python1.37.0 <NOFILES>
+0 0 language-pack-gnome-de <NOFILES>
+0 0 language-pack-kde-en <NOFILES>
+0 0 libudev0 <NOFILES>
+0 0 libgmyth0 <NOFILES>
+0 0 libaccess-bridge-java <NOFILES>
+0 0 communtu-mathematics <NOFILES>
+0 0 libupnp3 <NOFILES>
+0 0 evolution-documentation-en <NOFILES>
+0 0 cdd-doc <NOFILES>
+0 0 libgeronimo-stax-1.0-spec-java <NOFILES>
+0 0 communtu-development-tools <NOFILES>
+0 0 guile-1.6-libs <NOFILES>
+0 0 libkadm55 <NOFILES>
+0 0 libggzmod4 <NOFILES>
+0 0 communtu-add-sources-d717 <NOFILES>
+0 0 evolution-documentation-de <NOFILES>
+0 0 libsexy2 <NOFILES>
+0 0 gcc-4.3-base <NOFILES>
+0 0 libglu1-mesa <NOFILES>
+0 0 texlive-doc-uk <NOFILES>
+0 0 libpaper1 <NOFILES>
+0 0 python-pyatspi <NOFILES>
+0 0 python-debian <NOFILES>
+0 0 libthai-data <NOFILES>
+0 0 libclucene0ldbl <NOFILES>
+0 0 libpulse-browse0 <NOFILES>
+0 0 communtu-webdesign--basics- <NOFILES>
+0 0 dia-common <NOFILES>
+0 0 libgnomevfs2-common <NOFILES>
+0 0 readline-common <NOFILES>
+0 0 librasqal1 <NOFILES>
+0 0 python-feedparser <NOFILES>
+0 0 app-install-data-partner <NOFILES>
+0 0 communtu-windows-codecs <NOFILES>
+0 0 ko.tex-extra-hlfont <NOFILES>
+0 0 language-pack-kde-en-base <NOFILES>
+0 0 liba52-0.7.4 <NOFILES>
+0 0 default-jre-headless <NOFILES>
+0 0 language-pack-gnome-en-base <NOFILES>
+0 0 libbrlapi0.5 <NOFILES>
+0 0 gnome-mime-data <NOFILES>
+0 0 libboost-signals1.34.1 <NOFILES>
+0 0 libiw29 <NOFILES>
+0 0 libtwolame0 <NOFILES>
+0 0 libdvdcss2 <NOFILES>
+0 0 libegroupwise1.2-13 <NOFILES>
+0 0 libmetacity0 <NOFILES>
+0 0 libswt-gtk-3.4-java <NOFILES>
+0 0 libpocoxml6 <NOFILES>
+0 0 human-icon-theme <NOFILES>
+0 0 libdv4 <NOFILES>
+0 0 libsmpeg0 <NOFILES>
+0 0 firefox-gnome-support <NOFILES>
+0 0 libportaudio2 <NOFILES>
+0 0 ant-optional <NOFILES>
+0 0 libwoodstox-java <NOFILES>
+0 0 texmacs-extra-fonts <NOFILES>
+0 0 trans-de-en <NOFILES>
+0 0 libklibc <NOFILES>
+0 0 communtu-hets-dev <NOFILES>
+0 0 libboost-program-options1.35.0 <NOFILES>
+0 0 epiphany-browser-data <NOFILES>
+0 0 libapm1 <NOFILES>
+0 0 libcommons-codec-java <NOFILES>
+0 0 libcrypto++7 <NOFILES>
+0 0 libsdl1.2debian-alsa <NOFILES>
+0 0 x11-common <NOFILES>
+0 0 libgpelaunch0 <NOFILES>
+0 0 libt1-5 <NOFILES>
+0 0 libdb-je-java <NOFILES>
+0 0 libbeecrypt6 <NOFILES>
+0 0 gdm-guest-session <NOFILES>
+0 0 gnome-user-guide <NOFILES>
+0 0 libamrnb3 <NOFILES>
+0 0 libqt4-assistant <NOFILES>
+0 0 libdvdnav4 <NOFILES>
+0 0 python-wadllib <NOFILES>
+0 0 libxml-commons-external-java <NOFILES>
+0 0 libgtk-vnc-1.0-0 <NOFILES>
+0 0 python-xkit <NOFILES>
+0 0 libpkcs11-helper1 <NOFILES>
+0 0 linux-image-generic <NOFILES>
+0 0 libxine1-plugins <NOFILES>
+0 0 k3b-data <NOFILES>
+0 0 libxtrap6 <NOFILES>
+0 0 libgtkhtml2-ruby <NOFILES>
+0 0 startup-tasks <NOFILES>
+0 0 myspell-en-za <NOFILES>
+0 0 texlive <NOFILES>
+0 0 gnome-desktop-data <NOFILES>
+0 0 asymptote-doc <NOFILES>
+0 0 texlive-latex-recommended <NOFILES>
+0 0 libsoprano4 <NOFILES>
+0 0 libgtop2-7 <NOFILES>
+0 0 libijs-0.35 <NOFILES>
+0 0 imagemagick-doc <NOFILES>
+0 0 libdmx1 <NOFILES>
+0 0 libmagic1 <NOFILES>
+0 0 kdepimlibs-data <NOFILES>
+0 0 libieee1284-3 <NOFILES>
+0 0 libglade2-ruby <NOFILES>
+0 0 libmpeg2-4 <NOFILES>
+0 0 libgmp3c2 <NOFILES>
+0 0 prosper <NOFILES>
+0 0 libdns46 <NOFILES>
+0 0 netbase <NOFILES>
+0 0 libdrm-intel1 <NOFILES>
+0 0 libexchange-storage1.2-3 <NOFILES>
+0 0 xserver-xorg-input-all <NOFILES>
+0 0 texlive-bibtex-extra <NOFILES>
+0 0 xaw3dg <NOFILES>
+0 0 libjaxp1.3-java <NOFILES>
+0 0 ttf-dejavu <NOFILES>
+0 0 python-software-properties <NOFILES>
+0 0 libavalon-framework-java <NOFILES>
+0 0 libdiscid0 <NOFILES>
+0 0 libbogl0 <NOFILES>
+0 0 libglademm-2.4-1c2a <NOFILES>
+0 0 python-pmw <NOFILES>
+0 0 libnautilus-burn4 <NOFILES>
+0 0 libbonoboui2-common <NOFILES>
+0 0 libpoppler-qt4-3 <NOFILES>
+0 0 libss2 <NOFILES>
+0 0 python-sqlalchemy <NOFILES>
+0 0 language-pack-gnome-en <NOFILES>
+0 0 libamrwb3 <NOFILES>
+0 0 libept0 <NOFILES>
+0 0 libosp5 <NOFILES>
+0 0 libservlet2.3-java <NOFILES>
+0 0 xfonts-100dpi <NOFILES>
+0 0 manpages <NOFILES>
+0 0 libbeansbinding-java <NOFILES>
+0 0 lyx-common <NOFILES>
+0 0 libblkid1 <NOFILES>
+0 0 libfreemarker-java <NOFILES>
+0 0 avidemux-common <NOFILES>
+0 0 gpe-icons <NOFILES>
+0 0 espeak-data <NOFILES>
+0 0 kdebase-runtime-data-common <NOFILES>
+0 0 libarchive1 <NOFILES>
+0 0 javascript-common <NOFILES>
+0 0 op-lpl-common <NOFILES>
+0 0 libboost-filesystem1.34.1 <NOFILES>
+0 0 libopenobex1 <NOFILES>
+0 0 gconf2-common <NOFILES>
+0 0 libgdk-pixbuf2-ruby <NOFILES>
+0 0 libcommons-lang-java <NOFILES>
+0 0 python-pypdf <NOFILES>
+0 0 libatm1 <NOFILES>
+0 0 libmeanwhile1 <NOFILES>
+0 0 libgtk1.2 <NOFILES>
+0 0 liblualib50 <NOFILES>
+0 0 libmjpegtools-1.9 <NOFILES>
+0 0 diploma <NOFILES>
+0 0 libplasma3 <NOFILES>
+0 0 openprinting-ppds <NOFILES>
+0 0 libpanel-applet2-ruby <NOFILES>
+0 0 w3c-dtd-xhtml <NOFILES>
+0 0 libempathy-gtk19 <NOFILES>
+0 0 libatk1-ruby <NOFILES>
+0 0 xserver-xorg-video-all <NOFILES>
+0 0 liblpint-bonobo0 <NOFILES>
+0 0 libxvmc1 <NOFILES>
+0 0 gimp-help-common <NOFILES>
+0 0 maxima-share <NOFILES>
+0 0 libpoconet6 <NOFILES>
+0 0 xkb-data <NOFILES>
+0 0 libpisync1 <NOFILES>
+0 0 libxevie1 <NOFILES>
+0 0 x-ttcidfont-conf <NOFILES>
+0 0 liboro-java <NOFILES>
+0 0 esound-common <NOFILES>
+0 0 libkpathsea4 <NOFILES>
+0 0 libfontenc1 <NOFILES>
+0 0 parley-data <NOFILES>
+0 0 texlive-latex-recommended-doc <NOFILES>
+0 0 libxerces2-java <NOFILES>
+0 0 libcupsimage2 <NOFILES>
+0 0 libotr2 <NOFILES>
+0 0 docbook-xml <NOFILES>
+0 0 libjsch-java <NOFILES>
+0 0 liblua50 <NOFILES>
+0 0 libbcel-java <NOFILES>
+0 0 texlive-fonts-recommended-doc <NOFILES>
+0 0 pgf <NOFILES>
+0 0 libdjvulibre21 <NOFILES>
+0 0 libpoppler4 <NOFILES>
+0 0 musixlyr <NOFILES>
+0 0 rubygems <NOFILES>
+0 0 libntfs-3g49 <NOFILES>
+0 0 libempathy-gtk-common <NOFILES>
+0 0 libmikmod2 <NOFILES>
+0 0 libiptcdata0 <NOFILES>
+0 0 libdb4.6-java <NOFILES>
+0 0 libpocomysql6 <NOFILES>
+0 0 xemacs21-mulesupport <NOFILES>
+0 0 libassa3.5-5 <NOFILES>
+0 0 libgmpxx4ldbl <NOFILES>
+0 0 epiphany-data <NOFILES>
+0 0 libdc1394-22 <NOFILES>
+0 0 mysql-common <NOFILES>
+0 0 libgdata1.2-1 <NOFILES>
+0 0 libxml-commons-resolver1.1-java <NOFILES>
+0 0 freemind-plugins-help <NOFILES>
+0 0 libcommons-io-java <NOFILES>
+0 0 junit4 <NOFILES>
+0 0 libregexp-java <NOFILES>
+0 0 linux-headers-generic <NOFILES>
+0 0 libgtk2-ruby <NOFILES>
+0 0 mysql-server <NOFILES>
+0 0 python-launchpadlib <NOFILES>
+0 0 libedit2 <NOFILES>
+0 0 liblog4j1.2-java <NOFILES>
+0 0 libgnomemm-2.6-1c2 <NOFILES>
+0 0 gnome-icon-theme <NOFILES>
+0 0 libgnomekbdui3 <NOFILES>
+0 0 libgtkhtml-editor-common <NOFILES>
+0 0 libmagickwand1 <NOFILES>
+0 0 hplip-data <NOFILES>
+0 0 libsox1 <NOFILES>
+0 0 python-pyparsing <NOFILES>
+0 0 libadns1 <NOFILES>
+0 0 fontconfig-config <NOFILES>
+0 0 communtu-sunjava <NOFILES>
+0 0 libatk1.0-data <NOFILES>
+0 0 libgconf2-ruby <NOFILES>
+0 0 libboost-serialization1.37.0 <NOFILES>
+0 0 texlive-pictures-doc <NOFILES>
+0 0 libtelepathy2 <NOFILES>
+0 0 libaa1 <NOFILES>
+0 0 libisc45 <NOFILES>
+0 0 nvidia-173-modaliases <NOFILES>
+0 0 myspell-en-gb <NOFILES>
+0 0 libsnmp15 <NOFILES>
+0 0 libcommons-dbcp-java <NOFILES>
+0 0 libwxbase2.6-0 <NOFILES>
+0 0 latex-xcolor <NOFILES>
+0 0 communtu-compiling <NOFILES>
+0 0 libdbm-ruby <NOFILES>
+0 0 libgtk-mozembed-ruby <NOFILES>
+0 0 libgs8 <NOFILES>
+0 0 libpoconetssl6 <NOFILES>
+0 0 libofa0 <NOFILES>
+0 0 sysvutils <NOFILES>
+0 0 libflac++6 <NOFILES>
+0 0 libdvbpsi4 <NOFILES>
+0 0 libsidplay1 <NOFILES>
+0 0 fglrx-modaliases <NOFILES>
+0 0 kakasi-dic <NOFILES>
+0 0 libaiksaurus-1.2-0c2a <NOFILES>
+0 0 libsigc++-2.0-0c2a <NOFILES>
+0 0 libggz2 <NOFILES>
+0 0 gnome-themes-selected <NOFILES>
+0 0 libsoundtouch1c2 <NOFILES>
+0 0 bogofilter <NOFILES>
+0 0 liblapack3gf <NOFILES>
+0 0 gimp-help-en <NOFILES>
+0 0 libgfortran2 <NOFILES>
+0 0 gnome-themes-ubuntu <NOFILES>
+0 0 ttf-opensymbol <NOFILES>
+0 0 libwxgtk2.6-0 <NOFILES>
+0 0 libjgoodies-forms-java <NOFILES>
+0 0 communtu-add-sources-admin <NOFILES>
+0 0 libespeak1 <NOFILES>
+0 0 libiso9660-5 <NOFILES>
+0 0 foomatic-db-hpijs <NOFILES>
+0 0 musixtex-slurps <NOFILES>
+0 0 communtu-graphic <NOFILES>
+0 0 latex-beamer <NOFILES>
+0 0 libebackend1.2-0 <NOFILES>
+0 0 libfs6 <NOFILES>
+0 0 communtu-video--basics- <NOFILES>
+0 0 libtorrent-rasterbar2 <NOFILES>
+0 0 openoffice.org-l10n-common <NOFILES>
+0 0 ubuntu-sounds <NOFILES>
+0 0 liblzo2-2 <NOFILES>
+0 0 libiec61883-0 <NOFILES>
+0 0 libpocosqlite6 <NOFILES>
+0 0 libparted1.8-10 <NOFILES>
+0 0 libgnomeprint2-ruby <NOFILES>
+0 0 hal-info <NOFILES>
+0 0 texmacs-common <NOFILES>
+0 0 libcdio-paranoia0 <NOFILES>
+0 0 tp-smapi-source <NOFILES>
+0 0 compiz <NOFILES>
+0 0 libbluetooth3 <NOFILES>
+0 0 libffado0 <NOFILES>
+0 0 libavahi-qt3-1 <NOFILES>
+0 0 gthumb-data <NOFILES>
+0 0 libloudmouth1-0 <NOFILES>
+0 0 libid3-3.8.3c2a <NOFILES>
+0 0 libcdio-cdda0 <NOFILES>
+0 0 openoffice.org-hyphenation <NOFILES>
+0 0 libraptor1 <NOFILES>
+0 0 libvcdinfo0 <NOFILES>
+0 0 tzdata-java <NOFILES>
+0 0 communtu-add-sources-c445 <NOFILES>
+0 0 bluez-utils <NOFILES>
+0 0 libglitz1 <NOFILES>
+0 0 gnuplot <NOFILES>
+0 0 libjibx-java <NOFILES>
+0 0 command-not-found-data <NOFILES>
+0 0 libgtk1.2-common <NOFILES>
+0 0 libisccc40 <NOFILES>
+0 0 libidl0 <NOFILES>
+0 0 libxml++2.6-2 <NOFILES>
+0 0 libmx4j-java <NOFILES>
+0 0 libgcr0 <NOFILES>
+0 0 libqt4-xmlpatterns <NOFILES>
+0 0 libspectre1 <NOFILES>
+0 0 libvlc2 <NOFILES>
+0 0 openoffice.org-hyphenation-de <NOFILES>
+0 0 communtu-private-bundle-graphik <NOFILES>
+0 0 r-base <NOFILES>
+0 0 libexiv2-5 <NOFILES>
+0 0 bzrtools <NOFILES>
+0 0 libmpfr1ldbl <NOFILES>
+0 0 dmz-cursor-theme <NOFILES>
+0 0 hunspell-en-us <NOFILES>
+0 0 libsdl-ttf2.0-0 <NOFILES>
+0 0 libgnomeprintui2.2-0 <NOFILES>
+0 0 libglib2.0-doc <NOFILES>
+0 0 totem <NOFILES>
+0 0 libatspi1.0-0 <NOFILES>
+0 0 libungif4g <NOFILES>
+0 0 gstreamer0.10-plugins-base-doc <NOFILES>
+0 0 libgtkhtml2-0 <NOFILES>
+0 0 libmissioncontrol-client0 <NOFILES>
+0 0 libglibmm-2.4-1c2a <NOFILES>
+0 0 tex4ht-common <NOFILES>
+0 0 libgtkglext1 <NOFILES>
+0 0 libgadu3 <NOFILES>
+0 0 screensaver-default-images <NOFILES>
+0 0 libxcb-shape0 <NOFILES>
+0 0 freemind-plugins-time <NOFILES>
+0 0 libpcrecpp0 <NOFILES>
+0 0 freemind-doc <NOFILES>
+0 0 schroot-common <NOFILES>
+0 0 libx86-1 <NOFILES>
+0 0 libneon27 <NOFILES>
+0 0 libsqlite3-ruby <NOFILES>
+0 0 libedata-book1.2-2 <NOFILES>
+0 0 ttf-lao <NOFILES>
+0 0 libdbus-qt-1-1c2 <NOFILES>
+0 0 libgomp1 <NOFILES>
+0 0 libservlet2.4-java <NOFILES>
+0 0 phonon <NOFILES>
+0 0 cernlib-base <NOFILES>
+0 0 communtu-building-debian-metapackages <NOFILES>
+0 0 libck-connector0 <NOFILES>
+0 0 libgtksourceview1-ruby <NOFILES>
+0 0 libgweather-common <NOFILES>
+0 0 libfreebob0 <NOFILES>
+0 0 libdjvulibre-text <NOFILES>
+0 0 hunspell-de-at <NOFILES>
+0 0 libjtidy-java <NOFILES>
+0 0 gstreamer0.10-doc <NOFILES>
+0 0 msttcorefonts <NOFILES>
+0 0 language-support-translations-de <NOFILES>
+0 0 libpocozip6 <NOFILES>
+0 0 libdns45 <NOFILES>
+0 0 communtu-tools-for-compressing <NOFILES>
+0 0 libyaml-ruby <NOFILES>
+0 0 openclipart-svg <NOFILES>
+0 0 libgcj9-jar <NOFILES>
+0 0 capplets-data <NOFILES>
+0 0 gsfonts-x11 <NOFILES>
+0 0 latex-cjk-xcjk <NOFILES>
+0 0 libcommons-net-java <NOFILES>
+0 0 libmp4v2-0 <NOFILES>
+0 0 libcairomm-1.0-1 <NOFILES>
+0 0 openoffice.org-thesaurus-en-au <NOFILES>
+0 0 libspeechd2 <NOFILES>
+0 0 libavc1394-0 <NOFILES>
+0 0 libggi2 <NOFILES>
+0 0 libsqlite0 <NOFILES>
+0 0 libwpg-0.1-1 <NOFILES>
+0 0 texlive-plain-extra <NOFILES>
+0 0 libmp3lame0 <NOFILES>
+0 0 libjinglebase0.3-0 <NOFILES>
+0 0 libcdio7 <NOFILES>
+END-POPULARITY-CONTEST-0 TIME:1275515489

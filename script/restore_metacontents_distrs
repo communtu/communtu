@@ -1,0 +1,36 @@
+mcds = MetacontentsDistr.find_by_sql("SELECT * \
+               FROM `metacontents_distrs`  \
+               INNER JOIN metacontents ON (metacontents.id = metacontents_distrs.metacontent_id)  \
+               INNER JOIN base_packages ON (base_packages.id = metacontents.base_package_id) \
+               WHERE (base_packages.id, metacontents_distrs.distribution_id) NOT IN (SELECT package_id, distribution_id FROM package_distrs)");nil
+
+# in backup db
+f=File.open("mcds","w")
+f.puts(YAML.dump(MetacontentsDistr.all))
+f.close
+
+# in current db
+f=File.open("mcds")
+mcds=YAML.load(f.read)
+f.close
+metas = []
+mcds.each do |mcd|
+   params = {:metacontent_id=>mcd.ivars.to_hash["attributes"]["metacontent_id"],:distribution_id=>mcd.ivars.to_hash["attributes"]["distribution_id"]}
+#   params = {:metacontent_id=>mcd.metacontent_id,:distribution_id=>mcd.distribution_id}
+   if MetacontentsDistr.find(:first,:conditions=>params).nil? then
+      mcd1=MetacontentsDistr.new(params)
+      mc=mcd1.metacontent
+      if !mc.nil? and !mcd1.distribution.nil?
+        m=mc.metapackage
+        if !m.nil?
+          mcd1.save
+          metas << m
+        end
+      end
+   end
+end
+metas.compact.uniq.each do |m|
+        m.modified = true
+        m.version += ".1"
+        m.save
+end

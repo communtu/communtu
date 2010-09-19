@@ -1,0 +1,16 @@
+install eclipse
+
+sudo apt-get install sun-java6-jre sun-java6-jdk eclipse eclipse-pde
+sudo update-alternatives --set java /usr/lib/jvm/java-6-sun/jre/bin/java
+
+install aptana
+Help -> Install new software -> work with:
+http://download.aptana.com/tools/studio/plugin/install/studio
+
+install redrails
+
+install subversive + connector (svn 1.6)
+http://download.eclipse.org/releases/helios
+
+watch video on
+http://www.aptana.com/products/radrails

@@ -1,0 +1,4 @@
+#!/bin/bash
+newsize=$1
+qemu-img create template40G.img 40G
+dd if=template.img of=template40G.img conv=notrunc bs=1G

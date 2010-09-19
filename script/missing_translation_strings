@@ -1,0 +1,8 @@
+#!/bin/bash
+for s in $(find app lib -name "*rb" -exec grep "t(:" {} \; |sed 's/.*t(:/\n/' | sed 's/[^a-zA-Z0-9_].*//' |sort -u |tail -n +2)
+  do
+    grep -q $s: config/locales/template.yml
+    if [ $? -ne 0 ]; then
+      echo $s
+    fi
+  done
