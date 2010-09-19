@@ -184,6 +184,7 @@ de:
   english_name: 'Englischer Name:'
   english_name_reserve: Der englische Name ist bereits vergeben. Bitte wähle einen anderen.
   error_no_attachement: Du hast keine Datei ausgewählt. Der Vorgang wurde abgebrochen.
+  error_no_packages: Du hast keine Pakete ausgewählt. Der Vorgang wurde abgebrochen.
   errors: Fehler
   exact: 'Exakten Begriff finden:'
   failed_deb_generations: Fehlgeschlagene oder laufende Deb-Generierungen
@@ -342,6 +343,7 @@ de:
   packages: Pakete
   packages_for_ubuntu: Pakete für Ubuntu
   participation: Beteiligungsmöglichkeiten
+  paste_package_list: "alternativ Paketliste hierhin kopieren:"
   passwd: Passwort
   passwd_no_match: Das neue Passwort stimmt nicht mit der Bestätigung überein.
   path: 'Pfad:'

@@ -102,8 +102,8 @@ class RepositoriesController < ApplicationController
   end
 
   def multicreate
-    if !params[:datei][:name].nil?
-      params[:datei][:name].read.split("\n").each do |r|
+    if !params[:file][:name].nil?
+      params[:file][:name].read.split("\n").each do |r|
         parts = r.split(" ")
         if !parts[0].nil? && !parts[0][0].nil? && parts[0][0]!='#'[0] then
           for i in 3..parts.length-1 do

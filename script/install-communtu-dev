@@ -1,7 +1,7 @@
 #!/bin/bash
 #adapt to your local settings, if needed
 dbuser=root
-backupdbplace=commune@unitopia.org:/home/commune/
+backupdbplace=communtu@communtu.org:/home/communtu/web2.0
 
 set -x
 # script for installing rails and commutu
@@ -11,6 +11,10 @@ sudo apt-get install -y subversion
 sudo apt-get install poedit python-yaml
 # rails
 sudo apt-get install -y ruby rdoc irb libyaml-ruby libzlib-ruby ri libopenssl-ruby sqlite3 libsqlite3-ruby rubygems mongrel
+# gem 1.3.6
+sudo add-apt-repository ppa:johnf-inodes/rubygems
+sudo apt-get update
+sudo apt-get install rubygems
 sudo ln -s /usr/bin/gem1.8 /usr/bin/gem
 sudo ln -s /var/lib/gems/1.8/bin/rake /usr/bin/
 sudo gem install -v=2.2.2 rails

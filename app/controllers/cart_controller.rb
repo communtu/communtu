@@ -28,13 +28,24 @@ class CartController < ApplicationController
     def create_from_list
         prepare_create
         err = ""
-        if !params[:datei][:attachment].nil? and params[:datei][:attachment]!="" then
-          cart    = Cart.find(session[:cart])
+        package_list = ""
+        # read package list from file
+        if !params[:file][:attachment].nil? and params[:file][:attachment]!="" then
+          package_list += params[:file][:attachment].read +" "
+        end  
+        # get package list from text area
+        if !params[:package_list].nil? and params[:package_list]!="" then
+          package_list += params[:package_list]
+        end
+        # get an array of packages
+        package_list = package_list.gsub(/\n/," ").split(" ")
+        if !package_list.empty?  
+          cart = Cart.find(session[:cart])
           metas = {}
           Metapackage.all.each do |m|
             metas[m.debian_name] = m
           end
-          params[:datei][:attachment].read.split("\n").each do |n|
+          package_list.each do |n|
             package = BasePackage.find(:first, :conditions => ["name = ?",n])
             if package.nil? then
               package = metas[n]
@@ -49,7 +60,7 @@ class CartController < ApplicationController
             end  
           end
         else
-        flash[:error] = t(:error_no_attachement)
+          flash[:error] = t(:error_no_packages)
         end
         if err != ""
           err=err.gsub("<","")

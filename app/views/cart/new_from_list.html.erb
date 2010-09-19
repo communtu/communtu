@@ -1,5 +1,6 @@
-<!-- (c) 2008-2010 by Verein Allgemeinbildung e.V., Bremen, Germany  
-     use, modification or distribution only with permission of the copyright holder -->
+<% #  (c) 2008-2010 by Verein Allgemeinbildung e.V., Bremen, Germany  
+   #  use, modification or distribution only with permission of the copyright holder
+%>
 
 <h3><%=t(:view_cart_new_from_list_0)%></h3>
 
@@ -13,7 +14,11 @@ debfoster -sn | tail -n +2 | tr ' ' '\n' | sort -u > packages.list
 
 <%= form_tag({:controller => :cart, :id => :current_user.id, :action => :create_from_list}, :multipart => true)%>
 <p><%=t(:view_cart_new_from_list_4)%></p>
-<p><%= file_field(:datei, :attachment) %></p>
+<p><%= file_field(:file, :attachment) %></p>
+<p><%= t(:paste_package_list)%><br />
+<%=  text_area_tag 'package_list', nil, :size => "50x3"%>
+
+</p>
 <p><%= submit_tag(t(:view_cart_new_from_list_5)) %></p>
 </form>
 
