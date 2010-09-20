@@ -1922,23 +1922,23 @@ msgstr ""
 
 #: view_home_derivatives_7
 msgid "unter der Kategorie \"Derivate\" zur Installation ausgewählt werden."
-msgstr ""
+msgstr "sous catégorie selectionne  les \"dérivés\" à installer."
 
 #: chat
 msgid "Chat"
-msgstr ""
+msgstr "forum"
 
 #: view_home_derivatives_8
 msgid "Ebenso kannst du dort nachgucken, aus welchen Paketen ein Derivat besteht."
-msgstr ""
+msgstr "De même, tu peux aussi vérifier, de quels paquets un dérivés provient."
 
 #: livecd_incorrect_name
 msgid "Der Name der LiveCD/DVD darf nur aus Buchstaben, Zahlen, _ und - bestehen"
-msgstr ""
+msgstr "Le nom du LiveCD / DVD ne peut prendre que de lettres, chiffres, _ et -"
 
 #: passwd_no_match
 msgid "Das neue Passwort stimmt nicht mit der Bestätigung überein."
-msgstr ""
+msgstr "Le nouveau mot de passe ne correspond pas à la confirmation."
 
 #: view_my_mailer_mailerror_0
 msgid ""
@@ -1946,174 +1946,177 @@ msgid ""
 " es wurde auf www.communtu.de ein Fehler gemeldet.  \n"
 "Der Benutzer möchte ganz gern, darüber benachrichtigt werden, wenn der Fehler nicht mehr auftritt."
 msgstr ""
+"Bonjour,\n"
+"une erreur a été signalé sur www.communtu.de. \n"
+"L'utilisateur souhaite être informé lorsque l'erreur ne se produira plus."
 
 #: debian_section
 msgid "Debian-Section:"
-msgstr ""
+msgstr "Debian-section:"
 
 #: view_home_derivatives_9
 msgid "Über Communtu sinnvoll nachinstallierbare Derivate:"
-msgstr ""
+msgstr "Sur Communtu, une installation ultérieur des dérivés est nécéssaire:"
 
 #: prepare_livecd_contd
 msgid "bei jedem Pre-Release LiveCD/DVD neu vorbereiten (script/remaster-getisos)"
-msgstr ""
+msgstr " pour chaque pré-version LiveCD / DVD  préparer nouvellement (script / remaster-getisos)"
 
 #: view_roles_show_0
 msgid "Rollenname:"
-msgstr ""
+msgstr "Rôle Nom:"
 
 #: add_comment
 msgid "Kommentar hinzufügen"
-msgstr ""
+msgstr "Ajouter un commentaire"
 
 #: livecd_create
 msgid "Die Live-CD/DVD wird jetzt erstellt. Wir benachrichtigen dich per Email, sobald sie fertig ist."
-msgstr ""
+msgstr "Le Live-CD/DVD est créé. Nous t'informerons par e-mail une fois qu'il est terminé."
 
 #: view_cart_update_0
 msgid "Bündel-Informationen anpassen"
-msgstr ""
+msgstr "Ajuster les informations de compilations"
 
 #: view_home_success_0
 msgid " Vielen Dank für die Spende"
-msgstr ""
+msgstr "Je vous remercie pour le don"
 
 #: view_cart_update_1
 msgid "Bündel überschreiben, falls es existiert?"
-msgstr ""
+msgstr "Ecraser compilation, si elle existe?"
 
 #: view_home_success_1
 msgid "Eine Spendenbescheinigung kann ausgestellt werden. Dazu schicke uns bitte eine E-Mail mit deiner Adresse an: "
-msgstr ""
+msgstr "Un reçu d'impôt peut être émis. Envoie nous un e-mail avec ton adresse:"
 
 #: view_users_edit_0
 msgid "Benuzterprofil bearbeiten"
-msgstr ""
+msgstr "Benuzterprofil Modifier"
 
 #: choose_category
 msgid "Bitte auswählen"
-msgstr ""
+msgstr "S'il te plaît sélectionne"
 
 #: view_cart_update_2
 msgid "Expertenlevel:"
-msgstr ""
+msgstr "Niveau Expert:"
 
 #: to_chat
 msgid "zum Chat"
-msgstr ""
+msgstr "sur le chat, forum"
 
 #: start_vm_instructions
 msgid "So kannst du dich in die virtuelle Maschine einloggen (bitte etwas warten, bis die deb-Files kopiert wurden):"
-msgstr ""
+msgstr "Ainsi, tu peux te connecter à la machine virtuelle (s'il te plait attendre un peu jusqu'à ce que les fichiers ont été copiés deb):"
 
 #: view_sent_index_0
 msgid "verschickte Nachrichten"
-msgstr ""
+msgstr "les messages envoyés"
 
 #: an
 msgid "An"
-msgstr ""
+msgstr "À"
 
 #: view_users_edit_2
 msgid "Profil löschen"
-msgstr ""
+msgstr "Supprimer le profil"
 
 #: view_cart_update_4
 msgid "Bündel veröffentlichen"
-msgstr ""
+msgstr "Publier la compilation"
 
 #: nothing_found_questionmark
 msgid "Nichts gefunden?"
-msgstr ""
+msgstr "Rien trouvé?"
 
 #: controller_users_1
 msgid "Danke für die Registrierung bei Communtu! Du kannst dich jetzt anmelden."
-msgstr ""
+msgstr "Merci pour votre inscription à Communtu! Tu peux te connecter dès maintenant."
 
 #: view_users_edit_3
 msgid "Benutzername:"
-msgstr ""
+msgstr "Nom d'utilisateur:"
 
 #: not_logged_in
 msgid "Du bist momentan nicht eingeloggt. Bitte klicke oben auf Anmelden."
-msgstr ""
+msgstr "Tu n'est pas connecté. S'il te plaît clique ci-dessus pour vous connecter."
 
 #: controller_users_2
 msgid "Es gab ein Problem mit der Registrierung."
-msgstr ""
+msgstr "Il y eu un problème avec l'enregistrement."
 
 #: more_about_sources
 msgid "(Mehr Informationen zum Thema Schlüssel und Quellen in den Faqs)"
-msgstr ""
+msgstr "(Plus d'information sur le sujet clé et les sources principales dans la rubrique FAQ)"
 
 #: start_vm_with_livecd_basis
 msgid "Virtuelle Maschine auf Basis der LiveCD-Einstellungen starten (Zur Fehlersuche)"
-msgstr ""
+msgstr "machine virtuelle en fonction des paramètres LiveCD le départ (pour le dépannage)"
 
 #: view_sent_index_3
 msgid "Zeitpunkt"
-msgstr ""
+msgstr "Temps"
 
 #: controller_users_3
 msgid "Du wurdest als Nutzer {{anonymous_user}} mit Kennwort {{anonymous_user}} eingeloggt. Bitte ggf. oben rechts auf Nutzer {{anonymous_user}} klicken und in ein dauerhaftes Nutzerkonto umwandeln; ansonsten wird das Konto nach einem Tag wieder gelöscht."
-msgstr ""
+msgstr "Vous avez été connecté en tant qu'utilisateur {{anonymous_user}} avec mot de passe {{anonymous_user}}. S'il te plaît clique en haut a ta droite sur Utilsateur {{anonymous_user}} et le convertir en un compte d'utilisateur permanent, sinon le compte sera supprimé au bout d'un jour."
 
 #: view_cart__metacart_3
 msgid "Bündel aus Paketliste"
-msgstr ""
+msgstr "Compilation venant des liste de paquets"
 
 #: rough_selection
 msgid "Grobauswahl"
-msgstr ""
+msgstr "selection pas précise"
 
 #: controller_users_4
 msgid "Es gab ein Problem mit dem Gastzugang."
-msgstr ""
+msgstr "Il y a eu  un problème avec le compte invité."
 
 #: url
 msgid "Url"
-msgstr ""
+msgstr "Url"
 
 #: view_home_home_rating_rating
 msgid "Wertung"
-msgstr ""
+msgstr "Classement"
 
 #: view_sent_index_5
 msgid "Du hast noch keine Nachrichten versendet."
-msgstr ""
+msgstr "Vous n'a pas encore envoyé de messages."
 
 #: model_user_meta_tabz_0
 msgid "Meine Bündel"
-msgstr ""
+msgstr "Ma compilation"
 
 #: controller_users_5
 msgid "Benutzerdaten aktualisiert"
-msgstr ""
+msgstr "Mise à jour des données de l'utilisateur"
 
 #: view_metapackages_show_12
 msgid "nicht veröffentlicht"
-msgstr ""
+msgstr "pas publié"
 
 #: model_user_meta_tabz_1
 msgid "Alle veröffentlichten Bündel"
-msgstr ""
+msgstr "Tous les paquets publiés"
 
 #: controller_users_6
 msgid "Benutzerdaten übernommen und Benutzerkonto dauerhaft gemacht."
-msgstr ""
+msgstr "Les données utilisateur ont été sauvegardées et le compte d'utilisateur est pour une longue durée"
 
 #: chat_channel
 msgid "de-communtu"
-msgstr ""
+msgstr "de-communtu"
 
 #: model_user_meta_tabz_2
 msgid "Ubuntu-Pakete"
-msgstr ""
+msgstr "paquets Ubuntu"
 
 #: bundles_with_missing_packages
 msgid "Bündel mit Paketen, die bei Übergang auf neue Distribution fehlen (ggf. durch andere ersetzen)"
-msgstr ""
+msgstr "La compilation avec les paquets qui manquent dans la transition vers la nouvelle distribution (éventuellement peuvent être remplacés par d'autres)"
 
 #: view_users_edit_9
 msgid "  Durch Klicken auf \"Speichern\" wird das Nutzerkonto zugleich dauerhaft gemacht."
@@ -2287,7 +2290,7 @@ msgstr ""
 
 #: view_packages_edit_0
 msgid "Paket bearbeiten"
-msgstr "Editer les paquets"
+msgstr "Modifier les paquets"
 
 #: view_layouts_application_9
 msgid "Abmelden"
@@ -2503,7 +2506,7 @@ msgstr "S'il te plait  fais entrer dans la compilation un titre en anglais et un
 
 #: edit_press_archiv
 msgid "Pressearchiv bearbeiten"
-msgstr "Editer l'archive de presse"
+msgstr "Modifier l'archive de presse"
 
 #: four_and_fourty_letters
 msgid "Zwischen 4 und 40 Zeichen"
@@ -2951,7 +2954,7 @@ msgstr "Erreur: les referentiels n'ont pas pu être synchronisés"
 
 #: edit
 msgid "Bearbeiten"
-msgstr "Éditer"
+msgstr "Modifier"
 
 #: model_user_profile_tabz_0
 msgid "Grunddaten"
@@ -3195,7 +3198,7 @@ msgstr "Rechercher des paquets"
 
 #: view_distributions_edit_0
 msgid "Distribution bearbeiten"
-msgstr "Editer la distrbution"
+msgstr "Modifier la distrbution"
 
 #: lib_system_1
 msgid "Du hast keine Berechtigung für diese Aktion."
