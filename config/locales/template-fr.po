@@ -2456,7 +2456,7 @@ msgstr "Tous les réferentiels ont été atteints."
 
 #: blog_link
 msgid "http://communtu.wordpress.com"
-msgstr "http://communtu.wordpress.com"
+msgstr "http://encommuntu.wordpress.com "
 
 #: view_users_show_8
 msgid "Nachrichten"
@@ -2648,7 +2648,7 @@ msgstr "Ici tu peux choisir la licence que tu souhaites autoriser"
 
 #: view_user_profiles__installation_0
 msgid "Ubuntu-Nachinstallation"
-msgstr "réinstallation Ubuntu"
+msgstr "Installation ultérieur de Ubuntu"
 
 #: view_packages_show_9
 msgid "/5 Sterne&nbsp;&nbsp; "
@@ -2804,7 +2804,7 @@ msgstr "lien externe"
 
 #: view_home_home_bundle
 msgid "vorkonfigurierte veröffentlichte Programmbündel in Communtu"
-msgstr "paquets pré-configuré dans le programme publié Communtu"
+msgstr "la publication des compilations de programmes pre-configurés dans communtu"
 
 #: view_packages_show_21
 msgid "Wird in folgenden Paketen benutzt:"
@@ -2888,7 +2888,7 @@ msgstr "De"
 
 #: choose_bundle
 msgid "Bündel auswählen"
-msgstr "Choisir une compilation"
+msgstr "Selectioner une compilation"
 
 #: controller_debs_2
 msgid "Deb aktualisiert."
@@ -2900,7 +2900,7 @@ msgstr "Donner"
 
 #: view_home_faq_gnome_01
 msgid "Unter \"System -> Systemverwaltung -> Software-Quellen -> Softwarequellen von Drittanbietern\" sind die Communtu Quellen auffindbar. Hier können sie auch wieder deaktiviert werden."
-msgstr "Sous  \"Système -> Administration -> Sources de logiciels -> Sources de logiciels tiers \" les sources Communtu sont trouvable. Ici, ils peuvent également être désactivé à nouveau."
+msgstr "Sous  \"Système -> Administration -> Sources de logiciels -> Sources de logiciels tiers \" les sources Communtu sont trouvable. Ici, elles peuvent également être désactivées à nouveau."
 
 #: view_mailbox_show_3
 msgid "erhalten"
@@ -3172,7 +3172,7 @@ msgstr "http://www.ubuntuusers.de"
 
 #: natur_geist_und_technik
 msgid "Natur, Geist und Technik - Verein zur Förderung der Allgemeinbildung e.V."
-msgstr "Nature, Esprit et  Technologie - Association pour la promotion de l'alphabétisation eV"
+msgstr "Nature, Esprit et  Technologie - Association pour la promotion de la culture générale eV"
 
 #: fine_selection
 msgid "Feinauswahl"
@@ -3440,7 +3440,7 @@ msgstr "Via un live CD, le logiciel peut etre à la fois essaye et installé. Ce
 
 #: make_a_systemupgrade
 msgid "Du möchtest ein System-Upgrade machen. Dann schau <a href=\"http://communtu.wordpress.com/2009/09/16/mit-communtu-ein-systemupgrade-durchfuhren/\">wie einfach das geht</a> und lade deine Paketliste bei Communtu hoch."
-msgstr "Tu veux faire une mise à niveau du système. Alors regarde <a href=\"http://communtu.wordpress.com/2009/09/16/avec-communtu-une-Amélioration du système -effectuer/\">  comment c'est facile </ a> et télécharge ta liste de paquets sur Communtu.            "
+msgstr "Tu veux faire une mise à niveau du système. Alors regarde <http://encommuntu.wordpress.com/2009/09/16/how-to-use-communtu-for-a-systems-upgrade/> comment c'est facile </ a> et télécharge ta liste de paquets sur Communtu.            "
 
 #: view_sent_show_2
 msgid "Zeitpunkt:"
@@ -3464,7 +3464,7 @@ msgstr "Télécharger:"
 
 #: allgemeinbildung
 msgid "Allgemeinbildung e.V."
-msgstr "Général e.V."
+msgstr "Culture générale e.V."
 
 #: view_layouts_application_15
 msgid "angemeldet als  "
@@ -3488,7 +3488,7 @@ msgstr "Compilation:"
 
 #: view_home_home_31
 msgid "Hier kannst du Themen detaillierter auswählen und dazu Programme und Programmbündel laden, aber auch eigene Bündel erstellen und verwalten."
-msgstr "Ici, tu peux choisir des thèmes  détaillés et  charger des programmes et des programmes compilés, mais aussi créer  sa propre compilation et l administrer ."
+msgstr "Ici, tu peux choisir des thèmes  détaillés et  charger des programmes et des compilations programmes, mais aussi créer  sa propre compilation et l administrer ."
 
 #: package_list
 msgid "zurück zur Paketliste"

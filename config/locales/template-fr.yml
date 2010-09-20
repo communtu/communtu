@@ -603,7 +603,7 @@ fr:
   view_users_show_4: "Dernier visiteur:"
   view_admins_test_all_1: "Tous les r\xC3\xA9ferentiels ont \xC3\xA9t\xC3\xA9 atteints."
   view_users_show_5: "Compilation cr\xC3\xA9ee"
-  blog_link: http://communtu.wordpress.com
+  blog_link: "http://encommuntu.wordpress.com "
   view_users_show_8: Nouvelles
   view_metapackages__metalist_20: "<option>0 compilation s\xC3\xA9lectionn\xC3\xA9 </option>   "
   last_user: "Bienvenue \xC3\xA0 notre dernier nouveau utilisateur enregistr\xC3\xA9"
@@ -652,7 +652,7 @@ fr:
   new_bundle: Nouvelle compilation
   view_user_profiles__profile_data_12: "Authoriser toutes les sources  (un peu incertaine: <a href=\"http://wiki.ubuntuusers.de/Fremdquellen\"> Paquets inconnus </ a> peuvent compromettre le syst\xC3\xA8me, mais plus encore programme/confort:"
   view_packages_show_9: "/ 5 Etoile&nbsp;&nbsp; "
-  view_user_profiles__installation_0: "r\xC3\xA9installation Ubuntu"
+  view_user_profiles__installation_0: "Installation ult\xC3\xA9rieur de Ubuntu"
   yes1: oui
   view_packages__deps_0: aucune
   view_derivatives_show_1: "programme sudo:"
@@ -694,7 +694,7 @@ fr:
   view_home_icons_17: lien externe
   controller_sessions_7: "Votre compte a \xC3\xA9t\xC3\xA9 d\xC3\xA9sactiv\xC3\xA9 ou supprim\xC3\xA9."
   view_home_icons_19: lien externe
-  view_home_home_bundle: "paquets pr\xC3\xA9-configur\xC3\xA9 dans le programme publi\xC3\xA9 Communtu"
+  view_home_home_bundle: "la publication des compilations de programmes pre-configur\xC3\xA9s dans communtu"
   view_packages_show_21: "Employ\xC3\xA9 dans les paquets suivants:"
   discuss: discuter
   feedback: Commentaire
@@ -715,10 +715,10 @@ fr:
   controller_debs_1: "Deb est cr\xC3\xA9\xC3\xA9 ."
   view_packages_edit_10: Description du paquet
   view_mailbox_show_1: De
-  choose_bundle: Choisir une compilation
+  choose_bundle: Selectioner une compilation
   controller_debs_2: "Deb mise \xC3\xA0 jour."
   view_layouts_donate: Donner
-  view_home_faq_gnome_01: "Sous  \"Syst\xC3\xA8me -> Administration -> Sources de logiciels -> Sources de logiciels tiers \" les sources Communtu sont trouvable. Ici, ils peuvent \xC3\xA9galement \xC3\xAAtre d\xC3\xA9sactiv\xC3\xA9 \xC3\xA0 nouveau."
+  view_home_faq_gnome_01: "Sous  \"Syst\xC3\xA8me -> Administration -> Sources de logiciels -> Sources de logiciels tiers \" les sources Communtu sont trouvable. Ici, elles peuvent \xC3\xA9galement \xC3\xAAtre d\xC3\xA9sactiv\xC3\xA9es \xC3\xA0 nouveau."
   view_mailbox_show_3: obtenir
   view_home_faq_gnome_02: ""
   wait_for_release: attendre la liberation officielle de Ubuntu
@@ -787,7 +787,7 @@ fr:
   distribution: Distribution
   view_packages__search_0: Rechercher des paquets
   link_community: http://www.ubuntuusers.de
-  natur_geist_und_technik: "Nature, Esprit et  Technologie - Association pour la promotion de l'alphab\xC3\xA9tisation eV"
+  natur_geist_und_technik: "Nature, Esprit et  Technologie - Association pour la promotion de la culture g\xC3\xA9n\xC3\xA9rale eV"
   fine_selection: "Fine s\xC3\xA9lection"
   logfile_extract: Extrait du fichier journal
   lib_system_0: "Tu dois te connecter pour pouvoir utiliser cette fonctionnalit\xC3\xA9. Cela est aussi valable pour \"Visiteur\"."
@@ -858,10 +858,10 @@ fr:
   donation_purpose: "Objectif: Communtu"
   controller_metapackages_not_changed: "La compilation a \xC3\xA9t\xC3\xA9 cr\xC3\xA9\xC3\xA9 comme un m\xC3\xA9ta-paquet et transf\xC3\xA9r\xC3\xA9."
   view_sent_show_2: "Date:"
-  make_a_systemupgrade: "Tu veux faire une mise \xC3\xA0 niveau du syst\xC3\xA8me. Alors regarde <a href=\"http://communtu.wordpress.com/2009/09/16/avec-communtu-une-Am\xC3\xA9lioration du syst\xC3\xA8me -effectuer/\">  comment c'est facile </ a> et t\xC3\xA9l\xC3\xA9charge ta liste de paquets sur Communtu.            "
+  make_a_systemupgrade: "Tu veux faire une mise \xC3\xA0 niveau du syst\xC3\xA8me. Alors regarde <http://encommuntu.wordpress.com/2009/09/16/how-to-use-communtu-for-a-systems-upgrade/> comment c'est facile </ a> et t\xC3\xA9l\xC3\xA9charge ta liste de paquets sur Communtu.            "
   livecd_message: "Via un live CD, le logiciel peut etre \xC3\xA0 la fois essaye et install\xC3\xA9. Ceci etant, un soi-disant {{cdimage_link}} est cr\xC3\xA9\xC3\xA9, sous la forme d'un fichier ISO que tu peux graver. Pour graver un CD dont tu  as besoin, si tu as s\xC3\xA9lectionn\xC3\xA9 un grand nombre de logiciels, d'un DVD. <br /> <br /> La cr\xC3\xA9ation de l'image prend un certain temps. Tu seras averti par email lorsque l'image est pr\xC3\xAAte. S'il te  plait v\xC3\xA9rifie que tes  param\xC3\xA8tres d'utilisateur sp\xC3\xA9cifi\xC3\xA9 dans une adresse email valide."
   view_layouts_application_13: A propos de Communtu
-  allgemeinbildung: "G\xC3\xA9n\xC3\xA9ral e.V."
+  allgemeinbildung: "Culture g\xC3\xA9n\xC3\xA9rale e.V."
   view_home_home_28: "T\xC3\xA9l\xC3\xA9charger:"
   view_layouts_application_14: "M\xC3\xA9ssage \xC3\xA0 Communtu"
   view_repositories_index_0: "Referentiels:"
@@ -871,7 +871,7 @@ fr:
   view_home_home_30: "Compilation:"
   view_layouts_application_18: "*aucun nouveau message "
   package_list: "retour \xC3\xA0 la liste des paquets"
-  view_home_home_31: "Ici, tu peux choisir des th\xC3\xA8mes  d\xC3\xA9taill\xC3\xA9s et  charger des programmes et des programmes compil\xC3\xA9s, mais aussi cr\xC3\xA9er  sa propre compilation et l administrer ."
+  view_home_home_31: "Ici, tu peux choisir des th\xC3\xA8mes  d\xC3\xA9taill\xC3\xA9s et  charger des programmes et des compilations programmes, mais aussi cr\xC3\xA9er  sa propre compilation et l administrer ."
   view_layouts_application_19: https://www.paypal.com/de_DE/DE/i/btn/btn_donate_LG.gif
   no_save_database: "Les paquets suivants n'ont pas pu \xC3\xAAtre stock\xC3\xA9s dans la base de donn\xC3\xA9es:"
   controller_metapackages_debianizing: "La compilation est transform\xC3\xA9  en m\xC3\xA9ta-paquet et transf\xC3\xA9r\xC3\xA9. Cela prendra quelques minutes."
