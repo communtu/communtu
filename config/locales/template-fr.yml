@@ -519,74 +519,80 @@ fr:
   chat_channel: ""
   model_user_meta_tabz_2: ""
   bundles_with_missing_packages: ""
-  view_users_edit_9: ""
-  view_metapackages_show_14: ""
-  controller_metapackages_bundle_not_found: ""
-  model_user_meta_tabz_3: ""
-  packages: ""
-  controller_users_8: ""
-  new_passwd: ""
-  view_metapackages_show_15: ""
-  controller_users_9: ""
-  delete: ""
-  view_layouts_application_0: ""
-  view_metapackages_show_16: ""
-  view_layouts_application_1: ""
-  view_admins_sync_package_1: ""
-  view_metapackages_show_17: ""
-  view_layouts_application_2: ""
-  view_admins_sync_package_2: ""
-  view_metapackages_show_18: ""
-  view_metapackages_show_comment_and_ratings: ""
-  view_layouts_application_3: ""
-  view_admins_sync_package_3: ""
-  create: ""
-  blog_2: ""
-  model_package_10: ""
-  metacart_choose: ""
-  migrate_repositories: ""
-  model_package_11: ""
-  cd_donate: ""
-  view_layouts_application_5: ""
-  Kommentar: ""
-  model_package_12: ""
-  imprint: ""
-  view_layouts_application_6: ""
-  view_passwords_new_0: ""
-  view_rating_new_comment_cancel: ""
-  view_passwords_new_1: ""
-  view_metapackages_finish_migrate_0: ""
-  view_passwords_new_2: ""
-  view_metapackages_finish_migrate_1: ""
-  view_sent_new_3: ""
-  view_my_mailer_mail_0: ""
-  view_packages_edit_0: ""
-  view_layouts_application_9: ""
-  bundles_with_errors: ""
-  view_metapackages_finish_migrate_2: ""
-  view_my_mailer_mail_1: ""
-  generate_cd_new: ""
-  view_metapackages_finish_migrate_3: ""
-  view_packages_edit_2: ""
-  controller_repositories_0: ""
-  view_packages_edit_3: ""
-  view_sessions_new_0: ""
-  controller_repositories_1: ""
-  view_packages_edit_4: ""
-  view_metapackages_edit_2: ""
-  add: ""
-  controller_admins_0: ""
-  stop_vm: ""
-  controller_repositories_2: ""
-  controller_repositories_3: ""
-  view_admins_show_0: ""
-  packages_for_ubuntu: ""
-  view_sessions_new_3: ""
-  view_user_mailer_forgot_password_0: ""
-  view_packages_edit_8: ""
-  by_bank_transfer: ""
-  view_packages_edit_9: ""
-  view_metapackages__metalist_10: ""
+  view_users_edit_9: "En cliquant sur  \"Sauvegarder\" le compte d'utilisateur est \xC3\xA9galement devenu permanent."
+  view_metapackages_show_14: " Actions:&nbsp;&nbsp;"
+  controller_metapackages_bundle_not_found: "La compilation n'a pas \xC3\xA9t\xC3\xA9 trouv\xC3\xA9e."
+  model_user_meta_tabz_3: "R\xC3\xA9f\xC3\xA9rentiel publi\xC3\xA9"
+  packages: paquet
+  controller_users_8: " Utilisateur d\xC3\xA9sactiv\xC3\xA9"
+  new_passwd: Nouveau mot de passe
+  view_metapackages_show_15: "\xC3\x89diter"
+  controller_users_9: "Il y a eu un probl\xC3\xA8me avec la d\xC3\xA9sactivation de cet l'utilisateur."
+  delete: Supprimer
+  view_layouts_application_0: "Communtu, Ubuntu, installation, assistance \xC3\xA0 l'installation"
+  view_metapackages_show_16: Modification de la liste des paquets
+  view_layouts_application_1: "Communtu correspond \xC3\xA0 votre syst\xC3\xA8me Ubuntu Linux pour r\xC3\xA9pondre \xC3\xA0 vos besoins individuels."
+  view_admins_sync_package_1: "Erreur: R\xC3\xA9f\xC3\xA9rentiel n'a pas pu \xC3\xAAtre synchronis\xC3\xA9"
+  view_metapackages_show_17: Publier
+  view_layouts_application_2: Communtu
+  view_admins_sync_package_2: "R\xC3\xA9f\xC3\xA9rentiel synchronis\xC3\xA9"
+  view_metapackages_show_18: "Si vous publiez la compilation, il sera accessible \xC3\xA0 tous les utilisateurs. Toutefois, il ne peut ensuite \xC3\xAAtre supprim\xC3\xA9 ou renomm\xC3\xA9."
+  view_metapackages_show_comment_and_ratings: "Commentaires r\xC3\xA9cents et \xC3\xA9valuation pour csette compilation"
+  view_layouts_application_3: Ubuntu Logo
+  view_admins_sync_package_3: "R\xC3\xA9f\xC3\xA9rentiel:"
+  create: !binary |
+    Y3LDqWVy
+
+  blog_2: Blog
+  model_package_10: "Lors de la synchronisation du r\xC3\xA9f\xC3\xA9rentiel {{repo_name}} le paquet {{package_name}} n'a pas pu \xC3\xAAtre trouv\xC3\xA9."
+  metacart_choose: Ajoute des  programmes a ta compilation
+  migrate_repositories: "Prendre les r\xC3\xA9f\xC3\xA9rentiels du pr\xC3\xA9d\xC3\xA9cesseur"
+  model_package_11: Impossible de trouver le URL
+  cd_donate: "La cr\xC3\xA9ation de CD / DVD a besoin de beaucoup de capacit\xC3\xA9 du serveur. S'il vous pla\xC3\xAEt {{donate_link}}, pour permettre cette offre."
+  view_layouts_application_5: "via PayPal:"
+  Kommentar: "Commentaire:"
+  model_package_12: "Contenu de {{file}}  ne correspond pas \xC3\xA0 la Syntaxe r\xC3\xA9f\xC3\xA9rentielle"
+  imprint: Mentions legales
+  view_layouts_application_6: "Maintenant, rapidement, facilement et en toute s\xC3\xA9curit\xC3\xA9 un don en ligne - avec PayPal."
+  view_passwords_new_0: "Mot de passe oubli\xC3\xA9 "
+  view_rating_new_comment_cancel: " Annuler"
+  view_passwords_new_1: "Avec quelle adresse e-mail  as tu cr\xC3\xA9\xC3\xA9 le compte d'utilisateur?"
+  view_metapackages_finish_migrate_0: "Toutes les compilations ont \xC3\xA9t\xC3\xA9"
+  view_passwords_new_2: " r\xC3\xA9-initialiser le mot de passe"
+  view_metapackages_finish_migrate_1: vers
+  view_sent_new_3: "Message:"
+  view_my_mailer_mail_0: "Bonjour, \n\n un commentaire a \xC3\xA9t\xC3\xA9 envoy\xC3\xA9 \xC3\xA0 www.communtu.de . Le sujet est:"
+  view_packages_edit_0: Editer les paquets
+  view_layouts_application_9: "se d\xC3\xA9connecter"
+  bundles_with_errors: Compilation avec erreur
+  view_metapackages_finish_migrate_2: "migr\xC3\xA9s."
+  view_my_mailer_mail_1: "Le commentaire suivant a \xC3\xA9t\xC3\xA9 \xC3\xA0 laiss\xC3\xA9:"
+  generate_cd_new: "cr\xC3\xA9er un nouveau LiveCD / DVD avec de nouvelles sources "
+  view_metapackages_finish_migrate_3: "Les paquets suivants n'ont pas pu \xC3\xAAtre migr\xC3\xA9s:"
+  view_packages_edit_2: !binary |
+    SWPDtG5l
+
+  controller_repositories_0: "R\xC3\xA9f\xC3\xA9rentiels"
+  view_packages_edit_3: " &nbsp;&nbsp;Nouvelle ic\xC3\xB4ne:"
+  view_sessions_new_0: "Pour vous connecter veuillez donner l'identifiant et le mot de passe "
+  controller_repositories_1: !binary |
+    UsOpZsOpcmVudGllbCBjcsOpZQ==
+
+  view_packages_edit_4: "C'est un programme:"
+  view_metapackages_edit_2: "S'il vous pla\xC3\xAEt utiliser les versions => 1,0 seulement pour compilation mature. Les num\xC3\xA9ros de version doivent toujours augmenter. 0,10 est sup\xC3\xA9rieur \xC3\xA0 0,9."
+  add: ajouter
+  controller_admins_0: "Domaine de l'administrateur "
+  stop_vm: "arr\xC3\xAAt de la machine virtuelle"
+  controller_repositories_2: "R\xC3\xA9f\xC3\xA9rentiel mis \xC3\xA0 jour."
+  controller_repositories_3: sources.list lire.
+  view_admins_show_0: Here should be an introduction to the admin area
+  packages_for_ubuntu: Les paquets pour Ubuntu
+  view_sessions_new_3: "Enregistrer l utilisateur sur cet ordinateur pour une longue dur\xC3\xA9e"
+  view_user_mailer_forgot_password_0: "Pour obtenir un nouveau mot de passe, suivez le lien:"
+  view_packages_edit_8: "Nouveau lien vers une vid\xC3\xA9o"
+  by_bank_transfer: par virement
+  view_packages_edit_9: "Description des vid\xC3\xA9os:"
+  view_metapackages__metalist_10: evaluation
   view_cart_new_from_list_tip: "Astuce: Tu peux \xC3\xA9galement trier une grande liste de th\xC3\xA8me avec un \xC3\xA9diteur et ensuite les sous-listes r\xC3\xA9sultant peuvent \xC3\xAAtre s\xC3\xA9par\xC3\xA9ment t\xC3\xA9l\xC3\xA9charger ici. La compilation obtenue peut \xC3\xAAtre de nouveau regroupp\xC3\xA9 en compilation. Cela cr\xC3\xA9e une compilation plus structur\xC3\xA9e."
   view_users_show_0: Profil de l'utilisateur
   view_metapackages_edit_gpl: "J'accepte de publier les informatios de compilation sous  la<a href=\"http://www.gnu.de/documents/gpl.de.html\">licence GNU General public </ a> (version 2.0 ou sup\xC3\xA9rieure) pour . publication"
@@ -610,7 +616,7 @@ fr:
   save_selection: "Enregistrer la s\xC3\xA9lection"
   livecd_image: image CD
   view_categories_index_0: "Aper\xC3\xA7u des cat\xC3\xA9gories "
-  view_packages__packagelist_1: ""
+  view_packages__packagelist_1: "Seulement&nbsp;Programme:"
   eg: "par exemple:"
   view_packages__packagelist_2: "Recherche:"
   cant_debianized: S'il te plait  fais entrer dans la compilation un titre en anglais et une description en anglais.
@@ -882,7 +888,7 @@ fr:
   view_layouts_application_20: "Javascript n'est pas activ\xC3\xA9! S'il vous pla\xC3\xAEt activer JavaScript dans votre navigateur."
   view_distributions_show_0: "R\xC3\xA9f\xC3\xA9rentiels:"
   view_layouts_application_21: Communtu facilite les  installations de Ubuntu
-  migrate: Remplacer
+  migrate: migration
   view_distributions_show_1: tout verifier
   view_metapackages_migrate_0: Quelle distribution pour les compilationd a remplacer?
   view_layouts_application_22: Le profil d'utilisateur

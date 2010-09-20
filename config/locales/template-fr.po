@@ -2117,163 +2117,163 @@ msgstr ""
 
 #: view_users_edit_9
 msgid "  Durch Klicken auf \"Speichern\" wird das Nutzerkonto zugleich dauerhaft gemacht."
-msgstr ""
+msgstr "En cliquant sur  \"Sauvegarder\" le compte d'utilisateur est également devenu permanent."
 
 #: view_metapackages_show_14
 msgid "  Aktionen:&nbsp;&nbsp;"
-msgstr ""
+msgstr " Actions:&nbsp;&nbsp;"
 
 #: controller_metapackages_bundle_not_found
 msgid "Bündel nicht gefunden."
-msgstr ""
+msgstr "La compilation n'a pas été trouvée."
 
 #: model_user_meta_tabz_3
 msgid "Veröffentlichte Bündel"
-msgstr ""
+msgstr "Référentiel publié"
 
 #: packages
 msgid "Pakete"
-msgstr ""
+msgstr "paquet"
 
 #: controller_users_8
 msgid "Benutzer deaktiviert"
-msgstr ""
+msgstr " Utilisateur désactivé"
 
 #: new_passwd
 msgid "Neues Passwort"
-msgstr ""
+msgstr "Nouveau mot de passe"
 
 #: view_metapackages_show_15
 msgid "Editieren"
-msgstr ""
+msgstr "Éditer"
 
 #: controller_users_9
 msgid "Es gab ein Problem mit der Deaktivierung dieses Benutzers."
-msgstr ""
+msgstr "Il y a eu un problème avec la désactivation de cet l'utilisateur."
 
 #: delete
 msgid "Löschen"
-msgstr ""
+msgstr "Supprimer"
 
 #: view_layouts_application_0
 msgid "Communtu, Ubuntu, Installation, Installationshilfe"
-msgstr ""
+msgstr "Communtu, Ubuntu, installation, assistance à l'installation"
 
 #: view_metapackages_show_16
 msgid "Paketliste editieren"
-msgstr ""
+msgstr "Modification de la liste des paquets"
 
 #: view_layouts_application_1
 msgid "Communtu passt dein Linux-Ubuntu-System an deine individuellen Bedürfnisse an."
-msgstr ""
+msgstr "Communtu correspond à votre système Ubuntu Linux pour répondre à vos besoins individuels."
 
 #: view_admins_sync_package_1
 msgid "Fehler: Repository konnte nicht synchronisiert werden"
-msgstr ""
+msgstr "Erreur: Référentiel n'a pas pu être synchronisé"
 
 #: view_metapackages_show_17
 msgid "Veröffentlichen"
-msgstr ""
+msgstr "Publier"
 
 #: view_layouts_application_2
 msgid "Communtu"
-msgstr ""
+msgstr "Communtu"
 
 #: view_admins_sync_package_2
 msgid "Repository synchronisiert"
-msgstr ""
+msgstr "Référentiel synchronisé"
 
 #: view_metapackages_show_18
 msgid "Wenn du das Bündel veröffentlichst, wird es für alle Nutzer zugänglich. Allerdings kann es danach nicht mehr gelöscht oder unbenannt werden."
-msgstr ""
+msgstr "Si vous publiez la compilation, il sera accessible à tous les utilisateurs. Toutefois, il ne peut ensuite être supprimé ou renommé."
 
 #: view_metapackages_show_comment_and_ratings
 msgid "Neuste Kommentare und Bewertungen für dieses Bündel"
-msgstr ""
+msgstr "Commentaires récents et évaluation pour csette compilation"
 
 #: view_layouts_application_3
 msgid "Ubuntu Logo"
-msgstr ""
+msgstr "Ubuntu Logo"
 
 #: view_admins_sync_package_3
 msgid "Repository: "
-msgstr ""
+msgstr "Référentiel:"
 
 #: create
 msgid "Anlegen"
-msgstr ""
+msgstr "créer"
 
 #: blog_2
 msgid "Blog"
-msgstr ""
+msgstr "Blog"
 
 #: model_package_10
 msgid "Bei der Synchronisation des Repositories {{repo_name}} konnte das Paket {{package_name}} nicht gefunden werden."
-msgstr ""
+msgstr "Lors de la synchronisation du référentiel {{repo_name}} le paquet {{package_name}} n'a pas pu être trouvé."
 
 #: metacart_choose
 msgid "Füge Programme zu deinem Bündel hinzu."
-msgstr ""
+msgstr "Ajoute des  programmes a ta compilation"
 
 #: migrate_repositories
 msgid "Repositories von Vorgänger übernehmen"
-msgstr ""
+msgstr "Prendre les référentiels du prédécesseur"
 
 #: model_package_11
 msgid "Konnte keine URL feststellen"
-msgstr ""
+msgstr "Impossible de trouver le URL"
 
 #: cd_donate
 msgid "Die CD/DVD-Erstellung braucht viel Server-Kapazität. Bitte {{donate_link}}, um dieses Angebot weiter zu ermöglichen."
-msgstr ""
+msgstr "La création de CD / DVD a besoin de beaucoup de capacité du serveur. S'il vous plaît {{donate_link}}, pour permettre cette offre."
 
 #: view_layouts_application_5
 msgid "per PayPal:"
-msgstr ""
+msgstr "via PayPal:"
 
 #: Kommentar
 msgid "Kommentar: "
-msgstr ""
+msgstr "Commentaire:"
 
 #: model_package_12
 msgid "Inhalt von {{file}} entspricht nicht Repository-Syntax"
-msgstr ""
+msgstr "Contenu de {{file}}  ne correspond pas à la Syntaxe référentielle"
 
 #: imprint
 msgid "Impressum"
-msgstr ""
+msgstr "Mentions legales"
 
 #: view_layouts_application_6
 msgid "Jetzt einfach, schnell und sicher online spenden – mit PayPal."
-msgstr ""
+msgstr "Maintenant, rapidement, facilement et en toute sécurité un don en ligne - avec PayPal."
 
 #: view_passwords_new_0
 msgid "Passwort vergessen"
-msgstr ""
+msgstr "Mot de passe oublié "
 
 #: view_rating_new_comment_cancel
 msgid "Abbrechen"
-msgstr ""
+msgstr " Annuler"
 
 #: view_passwords_new_1
 msgid "    Mit welcher Email-Adresse hast du das Benutzerkonto angelegt?"
-msgstr ""
+msgstr "Avec quelle adresse e-mail  as tu créé le compte d'utilisateur?"
 
 #: view_metapackages_finish_migrate_0
 msgid "Alle Bündel wurden von "
-msgstr ""
+msgstr "Toutes les compilations ont été"
 
 #: view_passwords_new_2
 msgid "Passwort zurücksetzen"
-msgstr ""
+msgstr " ré-initialiser le mot de passe"
 
 #: view_metapackages_finish_migrate_1
 msgid " nach "
-msgstr ""
+msgstr "vers"
 
 #: view_sent_new_3
 msgid "Nachricht:"
-msgstr ""
+msgstr "Message:"
 
 #: view_my_mailer_mail_0
 msgid ""
@@ -2281,114 +2281,117 @@ msgid ""
 "\n"
 "es wurde auf www.communtu.de ein Feedback gesendet. Der Betreff ist:"
 msgstr ""
+"Bonjour, \n"
+"\n"
+" un commentaire a été envoyé à www.communtu.de . Le sujet est:"
 
 #: view_packages_edit_0
 msgid "Paket bearbeiten"
-msgstr ""
+msgstr "Editer les paquets"
 
 #: view_layouts_application_9
 msgid "Abmelden"
-msgstr ""
+msgstr "se déconnecter"
 
 #: bundles_with_errors
 msgid "Bündel mit Fehlern"
-msgstr ""
+msgstr "Compilation avec erreur"
 
 #: view_metapackages_finish_migrate_2
 msgid " migriert."
-msgstr ""
+msgstr "migrés."
 
 #: view_my_mailer_mail_1
 msgid "Folgender Kommentar wurde hinterlassen:"
-msgstr ""
+msgstr "Le commentaire suivant a été à laissé:"
 
 #: generate_cd_new
 msgid "LiveCD/DVD mit neuen Quellen neu erstellen"
-msgstr ""
+msgstr "créer un nouveau LiveCD / DVD avec de nouvelles sources "
 
 #: view_metapackages_finish_migrate_3
 msgid "Folgende Pakete konnten jedoch nicht migriert werden:"
-msgstr ""
+msgstr "Les paquets suivants n'ont pas pu être migrés:"
 
 #: view_packages_edit_2
 msgid "Icon"
-msgstr ""
+msgstr "Icône"
 
 #: controller_repositories_0
 msgid "Repositorys"
-msgstr ""
+msgstr "Référentiels"
 
 #: view_packages_edit_3
 msgid "&nbsp;&nbsp;Neues Icon: "
-msgstr ""
+msgstr " &nbsp;&nbsp;Nouvelle icône:"
 
 #: view_sessions_new_0
 msgid "Anmelden mit Benutzernamen und Passwort:"
-msgstr ""
+msgstr "Pour vous connecter veuillez donner l'identifiant et le mot de passe "
 
 #: controller_repositories_1
 msgid "Repository erzeugt."
-msgstr ""
+msgstr "Référentiel crée"
 
 #: view_packages_edit_4
 msgid "Ist ein Programm:"
-msgstr ""
+msgstr "C'est un programme:"
 
 #: view_metapackages_edit_2
 msgid "Bitte Versionen => 1.0 nur für ausgereifte Bündel verwenden. Versionsnummern müssen stets ansteigen. 0.10 ist höher als 0.9."
-msgstr ""
+msgstr "S'il vous plaît utiliser les versions => 1,0 seulement pour compilation mature. Les numéros de version doivent toujours augmenter. 0,10 est supérieur à 0,9."
 
 #: add
 msgid "hinzufügen"
-msgstr ""
+msgstr "ajouter"
 
 #: controller_admins_0
 msgid "Administratorbereich"
-msgstr ""
+msgstr "Domaine de l'administrateur "
 
 #: stop_vm
 msgid "Virtuelle Maschine stoppen"
-msgstr ""
+msgstr "arrêt de la machine virtuelle"
 
 #: controller_repositories_2
 msgid "Repository aktualisiert."
-msgstr ""
+msgstr "Référentiel mis à jour."
 
 #: controller_repositories_3
 msgid "sources.list eingelesen."
-msgstr ""
+msgstr "sources.list lire."
 
 #: view_admins_show_0
 msgid "Here should be an introduction to the admin area"
-msgstr ""
+msgstr "Here should be an introduction to the admin area"
 
 #: packages_for_ubuntu
 msgid "Pakete für Ubuntu"
-msgstr ""
+msgstr "Les paquets pour Ubuntu"
 
 #: view_sessions_new_3
 msgid "Benutzer auf diesem Computer dauerhaft anmelden"
-msgstr ""
+msgstr "Enregistrer l utilisateur sur cet ordinateur pour une longue durée"
 
 #: view_user_mailer_forgot_password_0
 msgid ", um ein neues Passwort zu erhalten, folge dem Link:"
-msgstr ""
+msgstr "Pour obtenir un nouveau mot de passe, suivez le lien:"
 
 #: view_packages_edit_8
 msgid "Neuer Link auf ein Video"
-msgstr ""
+msgstr "Nouveau lien vers une vidéo"
 
 #: by_bank_transfer
 msgid "per Überweisung"
-msgstr ""
+msgstr "par virement"
 
 #: view_packages_edit_9
 msgid "    Beschreibung des Videos:"
-msgstr ""
+msgstr "Description des vidéos:"
 
 #: view_metapackages__metalist_10
 msgid "Bewertung"
-msgstr ""
+msgstr "evaluation"
 
 #: view_cart_new_from_list_tip
 msgid "Tipp: eine große Liste kannst du auch zunächst mit einem Editor thematisch sortieren und die resultierenden Teillisten einzeln hier hochladen. Die entstehenden Bündel kannst du wiederum zu einem Bündel zusammenfassen. Dadurch entsteht ein besser strukturiertes Bündel."
@@ -2484,7 +2487,7 @@ msgstr "Aperçu des catégories "
 
 #: view_packages__packagelist_1
 msgid "Nur&nbsp;Programme:"
-msgstr ""
+msgstr "Seulement&nbsp;Programme:"
 
 #: eg
 msgid "z.B."
@@ -3544,7 +3547,7 @@ msgstr "tout verifier"
 
 #: migrate
 msgid "Migrieren"
-msgstr "Remplacer"
+msgstr "migration"
 
 #: view_layouts_application_21
 msgid "Communtu macht Ubuntu-Installationen einfach"
