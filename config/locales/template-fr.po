@@ -1774,147 +1774,147 @@ msgstr ""
 
 #: install_by_default
 msgid "Standardmäßig installieren:"
-msgstr ""
+msgstr "L'installation standart:"
 
 #: show
 msgid "Anzeigen"
-msgstr ""
+msgstr "Afficher"
 
 #: view_home_faq_20
 msgid "Ein Repository (englisch für \"Paketquelle\") ist eine Sammlung von Programmen. Über die Paketverwaltung (in Gnome und XFCE ist dies Synaptic, in KDE ist dies KPackageKit) kannst du Programme aus den Paketquellen installieren. Gleichzeitig bekommst du über genau die gleichen Paketquellen auch die Updates für die installierten Programme. Weitere Informationen zu Paketquellen findest du <a href=\"http://wiki.ubuntuusers.de/Paketquellen\" target=\"_blank\">hier</a>."
-msgstr ""
+msgstr "Un référentiel (en anglais pour  \"paquet source \") est une collection de programmes. À propos de la gestion de paquets (dans GNOME et Xfce c'est Synaptic, dans KDE c'est KpackageKit), tu peux installer des programmes à partir des sorces de paquets. Dans le même temps tu obtiens exactement sur le même paquet de sources, les mises à jour pour les programmes installés. Pour plus d'informations sur les sources de paquets tu peux trouver <a href=\"http://wiki.ubuntuusers.de/Paketquellen\" target=\"_blank\">ici</a>."
 
 #: view_messages_show_4
 msgid "Weiterleiten"
-msgstr ""
+msgstr "faire suivre"
 
 #: bundle
 msgid "Bündel"
-msgstr ""
+msgstr "Compilation"
 
 #: view_home_beteiligung_5
 msgid "Umfrage zu beteiligen"
-msgstr ""
+msgstr "Enquête à participer"
 
 #: view_packages_rdepends_0
 msgid "Im Paket "
-msgstr ""
+msgstr "Dans le paquet"
 
 #: kontodaten
 msgid "Konto 172 9375, Sparkasse Bremen, BLZ 290 501 01"
-msgstr ""
+msgstr "compte 172 9375, Sparkasse Bremen, boîte postale 290 501 01"
 
 #: view_home_faq_21
 msgid "Wie finde ich die Communtu-Paketquellen in meinem System?"
-msgstr ""
+msgstr "Comment puis-je trouver les sources du paquet Communtu dans mon système?"
 
 #: view_home_derivatives_1
 msgid "Communtu setzt auf einer Ubuntu-Basisinstallation auf. Es gibt nun eine ganze Reihe von "
-msgstr ""
+msgstr "Communtu est assis sur une installation de base d'Ubuntu. Il ya maintenant un certain nombre de"
 
 #: view_packages_rdepends_1
 msgid " direkt und indirekt enthaltene Pakete"
-msgstr ""
+msgstr "contenus des paquets directement et indirectement "
 
 #: helper_distributions_6
 msgid "Repository löschen"
-msgstr ""
+msgstr "Supprimer le Réferentiel"
 
 #: view_home_derivatives_2
 msgid "Ubuntu-Derivaten"
-msgstr ""
+msgstr "Dérivées d'Ubuntu"
 
 #: model_message_0
 msgid "Bitte einen Betreff angeben"
-msgstr ""
+msgstr "S'il te plaît indiquer le sujet"
 
 #: view_home_beteiligung_7
 msgid "Wir benötigen Feedback. Wir möchten, dass Communtu von allen genutzt werden kann. Dazu benötigen wir Feedback. Hast du einen Fehler auf der Plattform gefunden? Findest du etwas unverständlich? Glaubst du, dass wir was besser machen können? Hast du eine Anregung für uns? Feedback ist uns Willkommen unter "
-msgstr ""
+msgstr "Nous avons besoin de réaction. Nous voulons que Communtu puisse être utilisé par tous. Nous avons besoin de ta réaction. As-tu trouvé un erreur sur la plate-forme? Ne comprends-tu pas quelque chose? Penses-tu que nous pouvons faire mieux? Avez-vous une suggestion pour nous? Vos commentaires sont les bienvenus à"
 
 #: exact
 msgid "Exakten Begriff finden:"
-msgstr ""
+msgstr "Trouver le mot exacte:"
 
 #: detailed_view
 msgid "zur Detailansicht"
-msgstr ""
+msgstr "Vue détaillée"
 
 #: view_home_faq_23
 msgid "Wie kann ich die Metapakete wieder entfernen?"
-msgstr ""
+msgstr "Comment puis-je supprimer les méta-paquets de nouveau?"
 
 #: view_home_derivatives_3
 msgid "http://wiki.ubuntuusers.de/Was_ist_Linux?#Was-sind-Derivate-einer-Distribution"
-msgstr ""
+msgstr "http://wiki.ubuntuusers.de/c'est_quoi_Linux? # Qu'est-ce-que-une distribution dérivée)"
 
 #: view_home_beteiligung_8
 msgid "Mitarbeit"
-msgstr ""
+msgstr "Coopération"
 
 #: helper_distributions_8
 msgid "Quellen anzeigen"
-msgstr ""
+msgstr "Voir le texte source"
 
 #: new_category
 msgid "Neue Kategorie"
-msgstr ""
+msgstr "Nouvelle catégorie"
 
 #: view_home_faq_24
 msgid "Welche Pakete liegen in Eurem Repository?"
-msgstr ""
+msgstr "Quels paquets se trouvent dans votre référentiel?"
 
 #: news
 msgid "Aktuelles"
-msgstr ""
+msgstr "Actualité"
 
 #: view_home_derivatives_4
 msgid ", und viele Ubuntu-Nutzer fragen sich,  ob sie statt Ubuntu lieber ein Derivat benutzen sollten. Die Antwort ist: meistens fährt man mit dem Standard-Ubuntu ganz gut, denn Communtu erlaubt, die Derivate auf einfache Weise nachzuinstallieren.  Allerdings ist das nicht bei allen Derivaten gleich sinnvoll."
-msgstr ""
+msgstr ", et de nombreux utilisateurs d'Ubuntu se demandent si ils devraient plutôt utiliser Ubuntu au lieu d'un dérivé. La réponse est que: généralement on s ensort avec le standard d'Ubuntu assez bien, etant donné que Communtu autorise l'installation des dérivés d'une manière simple. Toutefois, cela n'est pas approprié pour tous les dérivés d'égalité."
 
 #: view_home_beteiligung_9
 msgid "Momentan benötigen wir noch Unterstützung bei der Entwicklung des Projektes bei folgenden zwei Tätigkeiten:"
-msgstr ""
+msgstr "Actuellement, nous avons encore besoin de soutien dans l'élaboration du projet pour les deux activités suivantes:"
 
 #: view_users__user_0
 msgid "aktivieren"
-msgstr ""
+msgstr "activer"
 
 #: press_archiv
 msgid "Pressearchiv"
-msgstr ""
+msgstr "Archives de presse"
 
 #: view_home_faq_25
 msgid "Die Quelle packages.communtu.org enthält nur Metapakete, die den Communtu-Bündeln entsprechen. Richtige Software wird dort also nicht angeboten; dafür werden <a href=\"/distributions\" target=\"_blank\">hier</a> aufgelisteten Repositories direkt verwendet."
-msgstr ""
+msgstr "La source  packages.communtu.org ne contienent que des méta-paquets qui correspondent à des compilations Communtu. Le Vrai logiciel  n'est pas disponible; ceci étant les référentiels <a href=\"/distributions\" target=\"_blank\"> ici </ a>  énumérés seront utilisés directement."
 
 #: username
 msgid "Benutzername"
-msgstr ""
+msgstr "Nom d'utilisateur"
 
 #: view_home_derivatives_5
 msgid "Alle Derivate können unter der "
-msgstr ""
+msgstr "Tous les  dérivés peuvent sous "
 
 #: achtung
 msgid "Achtung! bei Communtu erst in Kürze verfügbar."
-msgstr ""
+msgstr "A votre attention! disponible sur Communtu il n'y a pas longtemps"
 
 #: view_users__user_1
 msgid "deaktivieren"
-msgstr ""
+msgstr "désactiver"
 
 #: view_home_derivatives_6
 msgid "Software-Auswahl"
-msgstr ""
+msgstr "Sélection du Logiciel "
 
 #: controller_metapackages_cannot_destroy
 msgid "Veröffentlichte Bündel können nicht gelöscht werden."
-msgstr ""
+msgstr "La compilation Publiée ne peut pas être supprimé."
 
 #: match_ubuntu
 msgid "Ubuntu-Linux an die individuellen Bedürfnisse anpassen"
-msgstr ""
+msgstr "Adapter Ubuntu-Linux aux besoins individuels"
 
 #: view_users__user_2
 msgid "Rollen bearbeiten"
@@ -1956,7 +1956,7 @@ msgstr "Debian-section:"
 
 #: view_home_derivatives_9
 msgid "Über Communtu sinnvoll nachinstallierbare Derivate:"
-msgstr "Sur Communtu, une installation ultérieur des dérivés est nécéssaire:"
+msgstr "Sur Communtu, une aprés-installation des dérivés est nécéssaire:"
 
 #: prepare_livecd_contd
 msgid "bei jedem Pre-Release LiveCD/DVD neu vorbereiten (script/remaster-getisos)"
@@ -2654,7 +2654,7 @@ msgstr "Ici tu peux choisir la licence que tu souhaites autoriser"
 
 #: view_user_profiles__installation_0
 msgid "Ubuntu-Nachinstallation"
-msgstr "Installation ultérieur de Ubuntu"
+msgstr "Après-installation de Ubuntu"
 
 #: view_packages_show_9
 msgid "/5 Sterne&nbsp;&nbsp; "
@@ -3082,7 +3082,7 @@ msgstr "démarrer la machine virtuelle"
 
 #: view_user_profiles__profile_rating_0
 msgid "Auswahl der zu installierenden Programmbündel und Programme"
-msgstr "Sélectionez les programmes compilés et les programmes á installer"
+msgstr "Sélectione la compilation de programme et les programmes á installer"
 
 #: model_package_1
 msgid "Frei+proprietär"
@@ -3158,7 +3158,7 @@ msgstr "Lors de la synchronisation du référentiel {{repo_name}} impossible de 
 
 #: view_home_about_12
 msgid "<b>Bündel verwalten</b> auf der linken Seitenleiste gibt dir einen Überblick über die verfügbaren Bündel. Schließlich gibt es unter <b>Ubuntu-Versionen</b> eine Übersicht über die im System verfügbaren Ubuntu-Versionen (Distributionen)."
-msgstr "<b>Gérer la compilation </ b> La barre latérale gauche donne un aperçu des Liasses disponibles. Il existe sur <b> Ubuntu versions</ b> un aperçu des versions Ubuntu disponiblent dans le system (Distributions)."
+msgstr "<b>Gérer la compilation </ b> La barre latérale gauche donne un aperçu des compilationss disponibles. Il existe sur <b> Ubuntu versions</ b> un aperçu des versions Ubuntu disponiblent dans le system (Distributions)."
 
 #: creation_failed
 msgid "Erzeugung fehlgeschlagen"
@@ -3310,7 +3310,7 @@ msgstr "Les conflits au sein des compilations"
 
 #: controller_home_1
 msgid "Die E-Mail wurde an uns gesendet. Vielen Dank für deine Nachricht."
-msgstr "L'E-mail nous a été envoyé . Je te remercie pour ton message."
+msgstr "L'e-mail nous a été envoyé . Je te remercie pour ton message."
 
 #: view_home_home_17
 msgid "Impressum."
@@ -3322,7 +3322,7 @@ msgstr "est en conflit avec"
 
 #: controller_home_2
 msgid "Wir werden uns per E-Mail bei dir melden."
-msgstr "Nous vous contacterons par E-mail."
+msgstr "Nous te contacterons par E-mail."
 
 #: former_participants
 msgid "Ehemalige Mitwirkende"

@@ -434,91 +434,95 @@ fr:
   cd_already_created: ""
   view_home_beteiligung_4: ""
   controller_cart_2: ""
-  install_by_default: ""
-  show: ""
-  view_home_faq_20: ""
-  view_messages_show_4: ""
-  bundle: ""
-  view_home_beteiligung_5: ""
-  view_packages_rdepends_0: ""
-  kontodaten: ""
-  view_home_faq_21: ""
-  view_home_derivatives_1: ""
-  view_packages_rdepends_1: ""
-  helper_distributions_6: ""
-  view_home_derivatives_2: ""
-  model_message_0: ""
-  view_home_beteiligung_7: ""
-  exact: ""
-  detailed_view: ""
-  view_home_faq_23: ""
-  view_home_derivatives_3: ""
-  view_home_beteiligung_8: ""
-  helper_distributions_8: ""
-  new_category: ""
-  view_home_faq_24: ""
-  news: ""
-  view_home_derivatives_4: ""
-  view_home_beteiligung_9: ""
-  press_archiv: ""
-  view_home_faq_25: ""
-  view_users__user_0: ""
-  username: ""
-  view_home_derivatives_5: ""
-  achtung: ""
-  view_users__user_1: ""
-  view_home_derivatives_6: ""
-  controller_metapackages_cannot_destroy: ""
-  match_ubuntu: ""
+  install_by_default: "L'installation standart:"
+  show: Afficher
+  view_home_faq_20: "Un r\xC3\xA9f\xC3\xA9rentiel (en anglais pour  \"paquet source \") est une collection de programmes. \xC3\x80 propos de la gestion de paquets (dans GNOME et Xfce c'est Synaptic, dans KDE c'est KpackageKit), tu peux installer des programmes \xC3\xA0 partir des sorces de paquets. Dans le m\xC3\xAAme temps tu obtiens exactement sur le m\xC3\xAAme paquet de sources, les mises \xC3\xA0 jour pour les programmes install\xC3\xA9s. Pour plus d'informations sur les sources de paquets tu peux trouver <a href=\"http://wiki.ubuntuusers.de/Paketquellen\" target=\"_blank\">ici</a>."
+  view_messages_show_4: faire suivre
+  bundle: Compilation
+  view_home_beteiligung_5: "Enqu\xC3\xAAte \xC3\xA0 participer"
+  view_packages_rdepends_0: Dans le paquet
+  kontodaten: "compte 172 9375, Sparkasse Bremen, bo\xC3\xAEte postale 290 501 01"
+  view_home_faq_21: "Comment puis-je trouver les sources du paquet Communtu dans mon syst\xC3\xA8me?"
+  view_home_derivatives_1: Communtu est assis sur une installation de base d'Ubuntu. Il ya maintenant un certain nombre de
+  view_packages_rdepends_1: "contenus des paquets directement et indirectement "
+  helper_distributions_6: "Supprimer le R\xC3\xA9ferentiel"
+  view_home_derivatives_2: "D\xC3\xA9riv\xC3\xA9es d'Ubuntu"
+  model_message_0: "S'il te pla\xC3\xAEt indiquer le sujet"
+  view_home_beteiligung_7: "Nous avons besoin de r\xC3\xA9action. Nous voulons que Communtu puisse \xC3\xAAtre utilis\xC3\xA9 par tous. Nous avons besoin de ta r\xC3\xA9action. As-tu trouv\xC3\xA9 un erreur sur la plate-forme? Ne comprends-tu pas quelque chose? Penses-tu que nous pouvons faire mieux? Avez-vous une suggestion pour nous? Vos commentaires sont les bienvenus \xC3\xA0"
+  exact: "Trouver le mot exacte:"
+  detailed_view: "Vue d\xC3\xA9taill\xC3\xA9e"
+  view_home_faq_23: "Comment puis-je supprimer les m\xC3\xA9ta-paquets de nouveau?"
+  view_home_derivatives_3: "http://wiki.ubuntuusers.de/c'est_quoi_Linux? # Qu'est-ce-que-une distribution d\xC3\xA9riv\xC3\xA9e)"
+  view_home_beteiligung_8: "Coop\xC3\xA9ration"
+  helper_distributions_8: Voir le texte source
+  new_category: "Nouvelle cat\xC3\xA9gorie"
+  view_home_faq_24: "Quels paquets se trouvent dans votre r\xC3\xA9f\xC3\xA9rentiel?"
+  news: "Actualit\xC3\xA9"
+  view_home_derivatives_4: ", et de nombreux utilisateurs d'Ubuntu se demandent si ils devraient plut\xC3\xB4t utiliser Ubuntu au lieu d'un d\xC3\xA9riv\xC3\xA9. La r\xC3\xA9ponse est que: g\xC3\xA9n\xC3\xA9ralement on s ensort avec le standard d'Ubuntu assez bien, etant donn\xC3\xA9 que Communtu autorise l'installation des d\xC3\xA9riv\xC3\xA9s d'une mani\xC3\xA8re simple. Toutefois, cela n'est pas appropri\xC3\xA9 pour tous les d\xC3\xA9riv\xC3\xA9s d'\xC3\xA9galit\xC3\xA9."
+  view_home_beteiligung_9: "Actuellement, nous avons encore besoin de soutien dans l'\xC3\xA9laboration du projet pour les deux activit\xC3\xA9s suivantes:"
+  press_archiv: Archives de presse
+  view_home_faq_25: "La source  packages.communtu.org ne contienent que des m\xC3\xA9ta-paquets qui correspondent \xC3\xA0 des compilations Communtu. Le Vrai logiciel  n'est pas disponible; ceci \xC3\xA9tant les r\xC3\xA9f\xC3\xA9rentiels <a href=\"/distributions\" target=\"_blank\"> ici </ a>  \xC3\xA9num\xC3\xA9r\xC3\xA9s seront utilis\xC3\xA9s directement."
+  view_users__user_0: activer
+  username: Nom d'utilisateur
+  view_home_derivatives_5: "Tous les  d\xC3\xA9riv\xC3\xA9s peuvent sous "
+  achtung: A votre attention! disponible sur Communtu il n'y a pas longtemps
+  view_users__user_1: "d\xC3\xA9sactiver"
+  view_home_derivatives_6: "S\xC3\xA9lection du Logiciel "
+  controller_metapackages_cannot_destroy: "La compilation Publi\xC3\xA9e ne peut pas \xC3\xAAtre supprim\xC3\xA9."
+  match_ubuntu: Adapter Ubuntu-Linux aux besoins individuels
   view_users__user_2: ""
-  view_home_derivatives_7: ""
-  chat: ""
-  view_home_derivatives_8: ""
-  livecd_incorrect_name: ""
-  passwd_no_match: ""
-  view_my_mailer_mailerror_0: ""
-  debian_section: ""
-  view_home_derivatives_9: ""
-  prepare_livecd_contd: ""
-  view_roles_show_0: ""
-  add_comment: ""
-  livecd_create: ""
-  view_cart_update_0: ""
-  view_home_success_0: ""
-  view_cart_update_1: ""
-  view_home_success_1: ""
-  choose_category: ""
-  view_users_edit_0: ""
-  view_cart_update_2: ""
-  to_chat: ""
-  start_vm_instructions: ""
-  view_sent_index_0: ""
-  an: ""
-  view_users_edit_2: ""
-  view_cart_update_4: ""
-  nothing_found_questionmark: ""
-  controller_users_1: ""
-  view_users_edit_3: ""
-  not_logged_in: ""
-  controller_users_2: ""
-  more_about_sources: ""
-  start_vm_with_livecd_basis: ""
-  view_sent_index_3: ""
-  controller_users_3: ""
-  view_cart__metacart_3: ""
-  rough_selection: ""
-  controller_users_4: ""
-  url: ""
-  view_home_home_rating_rating: ""
-  view_sent_index_5: ""
-  model_user_meta_tabz_0: ""
-  controller_users_5: ""
-  view_metapackages_show_12: ""
-  model_user_meta_tabz_1: ""
-  controller_users_6: ""
-  chat_channel: ""
-  model_user_meta_tabz_2: ""
-  bundles_with_missing_packages: ""
+  view_home_derivatives_7: "sous cat\xC3\xA9gorie selectionne  les \"d\xC3\xA9riv\xC3\xA9s\" \xC3\xA0 installer."
+  chat: forum
+  view_home_derivatives_8: "De m\xC3\xAAme, tu peux aussi v\xC3\xA9rifier, de quels paquets un d\xC3\xA9riv\xC3\xA9s provient."
+  livecd_incorrect_name: Le nom du LiveCD / DVD ne peut prendre que de lettres, chiffres, _ et -
+  passwd_no_match: "Le nouveau mot de passe ne correspond pas \xC3\xA0 la confirmation."
+  view_my_mailer_mailerror_0: "Bonjour,\n\
+    une erreur a \xC3\xA9t\xC3\xA9 signal\xC3\xA9 sur www.communtu.de. \n\
+    L'utilisateur souhaite \xC3\xAAtre inform\xC3\xA9 lorsque l'erreur ne se produira plus."
+  debian_section: "Debian-section:"
+  view_home_derivatives_9: "Sur Communtu, une apr\xC3\xA9s-installation des d\xC3\xA9riv\xC3\xA9s est n\xC3\xA9c\xC3\xA9ssaire:"
+  prepare_livecd_contd: " pour chaque pr\xC3\xA9-version LiveCD / DVD  pr\xC3\xA9parer nouvellement (script / remaster-getisos)"
+  view_roles_show_0: "R\xC3\xB4le Nom:"
+  add_comment: Ajouter un commentaire
+  livecd_create: "Le Live-CD/DVD est cr\xC3\xA9\xC3\xA9. Nous t'informerons par e-mail une fois qu'il est termin\xC3\xA9."
+  view_cart_update_0: Ajuster les informations de compilations
+  view_home_success_0: Je vous remercie pour le don
+  view_cart_update_1: Ecraser compilation, si elle existe?
+  view_home_success_1: "Un re\xC3\xA7u d'imp\xC3\xB4t peut \xC3\xAAtre \xC3\xA9mis. Envoie nous un e-mail avec ton adresse:"
+  choose_category: "S'il te pla\xC3\xAEt s\xC3\xA9lectionne"
+  view_users_edit_0: Benuzterprofil Modifier
+  view_cart_update_2: "Niveau Expert:"
+  to_chat: sur le chat, forum
+  start_vm_instructions: "Ainsi, tu peux te connecter \xC3\xA0 la machine virtuelle (s'il te plait attendre un peu jusqu'\xC3\xA0 ce que les fichiers ont \xC3\xA9t\xC3\xA9 copi\xC3\xA9s deb):"
+  view_sent_index_0: "les messages envoy\xC3\xA9s"
+  an: !binary |
+    w4A=
+
+  view_users_edit_2: Supprimer le profil
+  view_cart_update_4: Publier la compilation
+  nothing_found_questionmark: "Rien trouv\xC3\xA9?"
+  controller_users_1: "Merci pour votre inscription \xC3\xA0 Communtu! Tu peux te connecter d\xC3\xA8s maintenant."
+  view_users_edit_3: "Nom d'utilisateur:"
+  not_logged_in: "Tu n'est pas connect\xC3\xA9. S'il te pla\xC3\xAEt clique ci-dessus pour vous connecter."
+  controller_users_2: "Il y eu un probl\xC3\xA8me avec l'enregistrement."
+  more_about_sources: "(Plus d'information sur le sujet cl\xC3\xA9 et les sources principales dans la rubrique FAQ)"
+  start_vm_with_livecd_basis: "machine virtuelle en fonction des param\xC3\xA8tres LiveCD le d\xC3\xA9part (pour le d\xC3\xA9pannage)"
+  view_sent_index_3: Temps
+  controller_users_3: "Vous avez \xC3\xA9t\xC3\xA9 connect\xC3\xA9 en tant qu'utilisateur {{anonymous_user}} avec mot de passe {{anonymous_user}}. S'il te pla\xC3\xAEt clique en haut a ta droite sur Utilsateur {{anonymous_user}} et le convertir en un compte d'utilisateur permanent, sinon le compte sera supprim\xC3\xA9 au bout d'un jour."
+  view_cart__metacart_3: Compilation venant des liste de paquets
+  rough_selection: "selection pas pr\xC3\xA9cise"
+  controller_users_4: "Il y a eu  un probl\xC3\xA8me avec le compte invit\xC3\xA9."
+  url: Url
+  view_home_home_rating_rating: Classement
+  view_sent_index_5: "Vous n'a pas encore envoy\xC3\xA9 de messages."
+  model_user_meta_tabz_0: Ma compilation
+  controller_users_5: "Mise \xC3\xA0 jour des donn\xC3\xA9es de l'utilisateur"
+  view_metapackages_show_12: "pas publi\xC3\xA9"
+  model_user_meta_tabz_1: "Tous les paquets publi\xC3\xA9s"
+  controller_users_6: "Les donn\xC3\xA9es utilisateur ont \xC3\xA9t\xC3\xA9 sauvegard\xC3\xA9es et le compte d'utilisateur est pour une longue dur\xC3\xA9e"
+  chat_channel: de-communtu
+  model_user_meta_tabz_2: paquets Ubuntu
+  bundles_with_missing_packages: "La compilation avec les paquets qui manquent dans la transition vers la nouvelle distribution (\xC3\xA9ventuellement peuvent \xC3\xAAtre remplac\xC3\xA9s par d'autres)"
   view_users_edit_9: "En cliquant sur  \"Sauvegarder\" le compte d'utilisateur est \xC3\xA9galement devenu permanent."
   view_metapackages_show_14: " Actions:&nbsp;&nbsp;"
   controller_metapackages_bundle_not_found: "La compilation n'a pas \xC3\xA9t\xC3\xA9 trouv\xC3\xA9e."
@@ -562,7 +566,7 @@ fr:
   view_metapackages_finish_migrate_1: vers
   view_sent_new_3: "Message:"
   view_my_mailer_mail_0: "Bonjour, \n\n un commentaire a \xC3\xA9t\xC3\xA9 envoy\xC3\xA9 \xC3\xA0 www.communtu.de . Le sujet est:"
-  view_packages_edit_0: Editer les paquets
+  view_packages_edit_0: Modifier les paquets
   view_layouts_application_9: "se d\xC3\xA9connecter"
   bundles_with_errors: Compilation avec erreur
   view_metapackages_finish_migrate_2: "migr\xC3\xA9s."
@@ -620,7 +624,7 @@ fr:
   eg: "par exemple:"
   view_packages__packagelist_2: "Recherche:"
   cant_debianized: S'il te plait  fais entrer dans la compilation un titre en anglais et une description en anglais.
-  edit_press_archiv: Editer l'archive de presse
+  edit_press_archiv: Modifier l'archive de presse
   four_and_fourty_letters: "Entre 4 et 40 caract\xC3\xA8res"
   circular_dependency: "Erreur: d\xC3\xA9pendances circulaires entre les compilations"
   view_repositories_show_4: "liste des paquets pour {{arch}}:"
@@ -658,7 +662,7 @@ fr:
   new_bundle: Nouvelle compilation
   view_user_profiles__profile_data_12: "Authoriser toutes les sources  (un peu incertaine: <a href=\"http://wiki.ubuntuusers.de/Fremdquellen\"> Paquets inconnus </ a> peuvent compromettre le syst\xC3\xA8me, mais plus encore programme/confort:"
   view_packages_show_9: "/ 5 Etoile&nbsp;&nbsp; "
-  view_user_profiles__installation_0: "Installation ult\xC3\xA9rieur de Ubuntu"
+  view_user_profiles__installation_0: "Apr\xC3\xA8s-installation de Ubuntu"
   yes1: oui
   view_packages__deps_0: aucune
   view_derivatives_show_1: "programme sudo:"
@@ -736,7 +740,7 @@ fr:
   which_programs_do_you_need: "Sur quel sujet recherche tu des programmes(bureau, graphiques ,...)? Ici tu peux entrer tes centres d'int\xC3\xA9r\xC3\xAAt et mettre sur pied un programme adapt\xC3\xA9 pr\xC3\xA9-configur\xC3\xA9:"
   description_with_colon: "Description:"
   view_admins_sync_all_1: "Erreur: les referentiels n'ont pas pu \xC3\xAAtre synchronis\xC3\xA9s"
-  edit: "\xC3\x89diter"
+  edit: Modifier
   model_user_profile_tabz_0: "Les donn\xC3\xA9es de base"
   view_admins_sync_all_2: "R\xC3\xA9f\xC3\xA9rentiels synchronis\xC3\xA9s"
   choose_parent: Choisis un parent!
@@ -769,7 +773,7 @@ fr:
   start_vm: "d\xC3\xA9marrer la machine virtuelle"
   view_user_profiles__sources_1: "Ici les programmes et les paquets  a installer sont tri\xC3\xA9s selon les sources et  \xC3\xA9num\xC3\xA9r\xC3\xA9es de tel sorte que tu puisses \xC3\xA9galement voir pourquoi les sources pertinentes sont ajout\xC3\xA9s."
   model_package_1: "Libre + Propri\xC3\xA9taire"
-  view_user_profiles__profile_rating_0: "S\xC3\xA9lectionez les programmes compil\xC3\xA9s et les programmes \xC3\xA1 installer"
+  view_user_profiles__profile_rating_0: "S\xC3\xA9lectione la compilation de programme et les programmes \xC3\xA1 installer"
   view_home_impressum_4: Bauernstr. 2
   model_package_2: Inconnu
   view_home_icons_0: "Les ic\xC3\xB4nes de Communtu"
@@ -787,7 +791,7 @@ fr:
   model_package_need_not_update: "{{url}} n'a pas chang\xC3\xA9"
   view_home_icons_6: Installer les sources
   model_package_9: "Lors de la synchronisation du r\xC3\xA9f\xC3\xA9rentiel {{repo_name}} impossible de trouver  PackageDistr-Eintrag pour le paquet {{package_name}}"
-  view_home_about_12: "<b>G\xC3\xA9rer la compilation </ b> La barre lat\xC3\xA9rale gauche donne un aper\xC3\xA7u des Liasses disponibles. Il existe sur <b> Ubuntu versions</ b> un aper\xC3\xA7u des versions Ubuntu disponiblent dans le system (Distributions)."
+  view_home_about_12: "<b>G\xC3\xA9rer la compilation </ b> La barre lat\xC3\xA9rale gauche donne un aper\xC3\xA7u des compilationss disponibles. Il existe sur <b> Ubuntu versions</ b> un aper\xC3\xA7u des versions Ubuntu disponiblent dans le system (Distributions)."
   creation_failed: "Generation a \xC3\xA9chou\xC3\xA9"
   view_home_icons_9: Installation via script shell
   distribution: Distribution
@@ -802,7 +806,7 @@ fr:
     RMOpcml2w6lzIGfDqW7DqXLDqXMu
 
   lib_system_1: Tu n ' as pas la permission de poursuivre cette action.
-  view_distributions_edit_0: Editer la distrbution
+  view_distributions_edit_0: Modifier la distrbution
   view_home_about_16: "Pour pouvoir utiliser Communtu, tu dois premi\xC3\xA8rement t enregistrer. C est tr\xC3\xA9s facile, tu dois simplement cliquer sur le  bouton\"enregistrer \" dans la barre du haut."
   controller_derivatives_2: "Mis \xC3\xA0 jour des d\xC3\xA9riv\xC3\xA9s."
   lib_system_2: http://www.communtu.de
@@ -829,10 +833,10 @@ fr:
   view_metapackages_rdepends_1: " directement et indirectement le contenus des compilationset des paquets"
   view_metapackages_immediate_conflicts_1: est en conflit avec
   view_home_home_17: "Mentions L\xC3\xA9gales"
-  controller_home_1: "L'E-mail nous a \xC3\xA9t\xC3\xA9 envoy\xC3\xA9 . Je te remercie pour ton message."
+  controller_home_1: "L'e-mail nous a \xC3\xA9t\xC3\xA9 envoy\xC3\xA9 . Je te remercie pour ton message."
   view_home_home_18: Cliquez sur
   former_participants: "Anciens coop\xC3\xA9rateurs"
-  controller_home_2: Nous vous contacterons par E-mail.
+  controller_home_2: Nous te contacterons par E-mail.
   controller_home_3: Ceci ne ressemble pas a une liste des paquets Ubuntu ... <br /> Le paquet doit contenir le nom du packet par ligne
   livecd_created_by: "Live-CD/DVD Cr\xC3\xA9\xC3\xA9 par:"
   view_derivatives_index_0: "Liste des produits d\xC3\xA9riv\xC3\xA9s"
