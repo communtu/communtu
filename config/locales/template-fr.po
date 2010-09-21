@@ -1766,11 +1766,11 @@ msgid ""
 "Dann schreibe deine Erfahrungen in den Kommentaren zu den Paketen oder hast du vielleicht ein tolles\n"
 "Video zu dem Programm bei Youtube gesehen? Dann trag es doch gleich bei\n"
 "den Videos zu den Programmen in Communtu ein."
-msgstr ""
+msgstr "Tu  penses que tu en  sais déjà beaucoup sur les programmes  Open Source \ nDans ce cas , écris tes expériences dans les commentaires sur les paquets, ou peut-être as tu  une viedeo interessanteVidéo au programme vu sur Youtube? Il a ensuite contribution de même pour \ nles vidéos pour les programmes dans un Communtu."
 
 #: controller_cart_2
 msgid "Folgende Pakete wurden nicht gefunden: {{message}}<br> Bitte suche die Repositories heraus, die die Pakete enthalten, und <a href=\"{{url}}\">schlage sie zur Aufnahme in Communtu vor.</a>"
-msgstr ""
+msgstr "Les paquets suivants n'ont pas été trouvés: {{message}} <br> S'il te plaît choisie les référentiels qui contiennent les paquets ,et<a href=\"{{url}}\"> propose de les inclure dans Communtu. </ a>"
 
 #: install_by_default
 msgid "Standardmäßig installieren:"

@@ -432,8 +432,8 @@ fr:
   view_messages_show_3: ""
   controller_profiles_0: ""
   cd_already_created: ""
-  view_home_beteiligung_4: ""
-  controller_cart_2: ""
+  view_home_beteiligung_4: "Tu  penses que tu en  sais d\xC3\xA9j\xC3\xA0 beaucoup sur les programmes  Open Source \\ nDans ce cas , \xC3\xA9cris tes exp\xC3\xA9riences dans les commentaires sur les paquets, ou peut-\xC3\xAAtre as tu  une viedeo interessanteVid\xC3\xA9o au programme vu sur Youtube? Il a ensuite contribution de m\xC3\xAAme pour \\ nles vid\xC3\xA9os pour les programmes dans un Communtu."
+  controller_cart_2: "Les paquets suivants n'ont pas \xC3\xA9t\xC3\xA9 trouv\xC3\xA9s: {{message}} <br> S'il te pla\xC3\xAEt choisie les r\xC3\xA9f\xC3\xA9rentiels qui contiennent les paquets ,et<a href=\"{{url}}\"> propose de les inclure dans Communtu. </ a>"
   install_by_default: "L'installation standart:"
   show: Afficher
   view_home_faq_20: "Un r\xC3\xA9f\xC3\xA9rentiel (en anglais pour  \"paquet source \") est une collection de programmes. \xC3\x80 propos de la gestion de paquets (dans GNOME et Xfce c'est Synaptic, dans KDE c'est KpackageKit), tu peux installer des programmes \xC3\xA0 partir des sorces de paquets. Dans le m\xC3\xAAme temps tu obtiens exactement sur le m\xC3\xAAme paquet de sources, les mises \xC3\xA0 jour pour les programmes install\xC3\xA9s. Pour plus d'informations sur les sources de paquets tu peux trouver <a href=\"http://wiki.ubuntuusers.de/Paketquellen\" target=\"_blank\">ici</a>."
