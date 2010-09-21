@@ -1555,19 +1555,19 @@ msgstr ""
 
 #: controller_metapackages_7
 msgid "Es muss eine Version angegeben werden (z.B. 0.1)<br>"
-msgstr ""
+msgstr "Il faut  donner une version (par exemple 0.1) <br>"
 
 #: view_users__sidebar_4
 msgid "Ubuntu-Versionen"
-msgstr ""
+msgstr "Versions-Ubuntu"
 
 #: view_user_profiles_help_4
 msgid "du machst ein Upgrade auf eine neuere Version"
-msgstr ""
+msgstr "tu fais une mise à niveau  d'une version plus récente"
 
 #: view_home_derivatives_52
 msgid " - eine Art Automatix für die Ultimate Edition."
-msgstr ""
+msgstr " Une sorte de Automatix pour l'édition finale."
 
 #: view_roles_edit_1
 msgid "Rollenname"
@@ -1575,95 +1575,95 @@ msgstr ""
 
 #: view_home_faq_12
 msgid "Unter <b>Bündel</b> und dann \"Neues Bündel\" gibt es den Punkt \"Bündel aus einer Paketliste erstellen\", der anzuklicken ist. Dort ist beschrieben, wie du deine Paketliste in Communtu hochladen kannst. Sobald das Bündel gespeichert ist, ist der Vorgang der Gleiche wie bei einem neuen Bündel erstellen: sinnvollen Namen auswählen, Version bestimmen, Beschreibung einfügen und speichern."
-msgstr ""
+msgstr "Sous <b>compilation</b>, puis  \"nouvelle compilation\" il y a \"compilation provenant d une liste de paquets \" qui est en cliquant . Il décrit la façon dont tu peux télécharger ta liste de paquets dans Communtu. Une fois le paquet est stocké, le processus est le même que lors de la création d'une nouvelle compilation: Choisir un nom significatif,  déterminer la version, Enregistrer et Inserer la description ."
 
 #: view_cart_new_from_list_4
 msgid "Datei, die die Paketliste enthält, auswählen:"
-msgstr ""
+msgstr "Fichier qui contient la liste des paquets, sélectionne:"
 
 #: controller_metapackages_8
 msgid "Bei Anderungen muss die Version größer werden<br>"
-msgstr ""
+msgstr "Si tu fais entreprends des changements la version doit être supérieure <br>"
 
 #: view_users__sidebar_5
 msgid "Benutzer verwalten"
-msgstr ""
+msgstr "Gérer les utilisateurs"
 
 #: view_user_profiles_help_5
 msgid "du erweiterst Communtu um deine Version"
-msgstr ""
+msgstr "tu élargis Communtu en ta version."
 
 #: view_home_derivatives_53
 msgid " - erlaubt schnellere Installation, da nur die aktuellsten Pakete heruntergeladen werden."
-msgstr ""
+msgstr "- Permet une installation plus rapide, puisque seuls les paquets les plus récents sont téléchargés."
 
 #: view_home_faq_13
 msgid "Wie finde ich Programme?"
-msgstr ""
+msgstr "Comment puis-je trouver des programmes?"
 
 #: view_cart_new_from_list_5
 msgid "Erstellen"
-msgstr ""
+msgstr "construire"
 
 #: livecd_existing_name
 msgid "Dieser Name ist bereits vergeben"
-msgstr ""
+msgstr "Ce nom est déjà pris"
 
 #: controller_metapackages_9
 msgid "Die Beschreibung darf nicht leer sein<br>"
-msgstr ""
+msgstr "La description ne doit pas être vide <br>"
 
 #: view_users__sidebar_6
 msgid "Kategorien verwalten"
-msgstr ""
+msgstr "Gérer les catégories"
 
 #: view_home_faq_14
 msgid "Gehe dazu bitte auf den Menüpunkt \"Programme suchen\". Hier hast du ein Suchfeld, in dem du den Namen des gesuchten Prgramms angeben kannst. Weiter ist es möglich die Suche nur über Programme durchzuführen, in dem das Feld \"Nur Programme\" angeklickt wird und somit sonstige Bibliotheken nicht mehr angezeigt werden. Weiter ist es auch möglich eine Debian-Section auszuwählen, der die Auswahl an Programmen anhand von Kategorien vorselektiert."
-msgstr ""
+msgstr "Aller à l'option menu \"Rechercher programmes\". Voici un champ de recherche où vous pouvez spécifier le nom des Prgramm  recherchés. Il est également possible de rechercher les programmes en cliquant sur \"Seuls les programmes\", ainsi d'autres bibliothèques ne seront plus affichées. En outre, il est également possible de sélectionner une Debian-section pour  la sélection des programmes basés sur des catégories  pré-sélectionnés."
 
 #: view_sent__user_exists_0
 msgid "User gefunden"
-msgstr ""
+msgstr "Utilisateur trouvé"
 
 #: announce
 msgid "announce"
-msgstr ""
+msgstr "annonce"
 
 #: view_users__sidebar_7
 msgid "Derivate verwalten"
-msgstr ""
+msgstr "gérer les dérivés "
 
 #: confirm_new_passwd
 msgid "Neues Passwort bestätigen"
-msgstr ""
+msgstr "Confirmer nouveau mot de passe"
 
 #: view_home_derivatives_55
 msgid " - Mediacenter."
-msgstr ""
+msgstr "- Centre des médias."
 
 #: view_home_faq_15
 msgid "Wie kann ich ein einzelnes Programm installieren?"
-msgstr ""
+msgstr "Comment puis-je installer un seul programme?"
 
 #: generate_cd
 msgid "LiveCD/DVD neu erstellen"
-msgstr ""
+msgstr "LiveCD / DVD recréer"
 
 #: view_users__sidebar_8
 msgid "Fehlgeschlagene debs"
-msgstr ""
+msgstr "debs Échec"
 
 #: view_rating_show_title_got_ratings
 msgid "von 5 Sternen"
-msgstr ""
+msgstr "de 5 étoiles"
 
 #: view_home_derivatives_56
 msgid "http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix"
-msgstr ""
+msgstr "http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix"
 
 #: view_home_faq_16
 msgid "Gehe dazu bitte auf den Menüpunkt \"Programme suchen\". Dort bekommst du eine Auswahl von Programmen. Wenn du dein gewünschtes Programm gefunden hast, kannst du dieses durch Klicken auf das Installationssymbol installieren. Es ist möglich, dass du vorher noch auf \"Quellen hinzufügen\" klicken musst, da es sein kann, dass das Programm in einer Quelle verfügabr ist, die deinem System noch nicht bekannt ist."
-msgstr ""
+msgstr "Aller sur l'option menu \"Rechercher programmes\". Là, tu as un choix de programmes. Si tu  as trouvé le programme désiré, tu  peux l'installer en cliquant sur l'icône d'installation. Il est possible que tu cliques avant sur \"Ajouter sources \" , car il peut arriver que  le programme soit dans une source, que ton système ne connait pas encore."
 
 #: view_my_mailer_repo_0
 msgid ""
@@ -1671,94 +1671,97 @@ msgid ""
 "\n"
 "es wurde auf www.communtu.de ein Vorschlag für ein neues Repository gemacht:"
 msgstr ""
+"Bonjour, \n"
+"\n"
+"une proposition d'un nouveau référentiel a été faite  sur www.communtu.de :"
 
 #: settings
 msgid "Einstellungen"
-msgstr ""
+msgstr "Paramètres"
 
 #: view_home_derivatives_57
 msgid "für Subnotebooks/EEE-PCs"
-msgstr ""
+msgstr "pour subnotebooks/EEE PC"
 
 #: edit_architecture
 msgid "Architektur bearbeiten"
-msgstr ""
+msgstr "Modifier l'architecture"
 
 #: view_home_faq_17
 msgid "Wie kann ich einen Programmvorschlag einbringen?"
-msgstr ""
+msgstr "Comment puis-je faire entrer une proposition de programme?"
 
 #: view_my_mailer_repo_1
 msgid "Folgende Begründung wurde angegeben:"
-msgstr ""
+msgstr "La raison suivante a été donnée:"
 
 #: helper_distributions_0
 msgid "free"
-msgstr ""
+msgstr "gratuit"
 
 #: view_messages_show_0
 msgid "Von:"
-msgstr ""
+msgstr "De:"
 
 #: view_home_faq_18
 msgid "Das ist ganz einfach. Dazu klickst du im Bündeleditor (erreichbar wenn du auf <b>Bündel</b> klickst) auf \"Repository vorschlagen\". Hier musst du nun den Link zu dem Programm angeben und uns kurz erläutern, wieso wir das Programm in Communtu aufnehmen sollen."
-msgstr ""
+msgstr "C'est très simple. Pour ce faire, cliquez dans l'éditeur de compilation (disponible lorsque tu  cliques sur <b> compilation/ b>)  \"proposer le référentiel\". Ici, tu dois maintenant spécifier le lien vers le programme et brièvement nous expliquer pourquoi nous devrions prendre dans le programme Communtu."
 
 #: view_home_beteiligung_1
 msgid "Anwenden der Plattform"
-msgstr ""
+msgstr "Application de la plate-forme"
 
 #: helper_distributions_1
 msgid "non-free"
-msgstr ""
+msgstr "non-free"
 
 #: view_home_faq_19
 msgid "Was ist ein Repository?"
-msgstr ""
+msgstr "Qu'est-ce qu'un référentiel?"
 
 #: livecd_start_message
 msgid "Hier kannst du eine Live-CD/DVD erstellen lassen, die die von dir ausgewählte Software enthält. Du hast folgende Bündel ausgewählt:"
-msgstr ""
+msgstr "Ici, tu peux créer un Live-CD/DVD qui contient le logiciel que vous avez sélectionné. Tu as  sélectionné la compilation suivante:"
 
 #: trusted
 msgid "Ubuntu+Community"
-msgstr ""
+msgstr "Ubuntu + Communauté"
 
 #: view_home_beteiligung_2
 msgid "Als erstes würden wir uns natürlich freuen, wenn du Communtu nutzt, um eine Installation durchzuführen.  In unseren Bündeln gibt es schon ein paar ganz gut auf bestimmte Eigenschaften zugeschnittende Installationsvorschläge. Vielleicht ist ja etwas für dich dabei. Weiter gibt es dort auch die Möglichkeit die eigene Paketliste hochzuladen, damit diese auch anderen zur Verfügung gestellt wird. Dies ist die einfachste Form ein Bündel anzulegen. Du musst diese Paketliste aber auch nicht veröffentlichen. Du kannst Communtu auch einfach nur als Speicherort für deine Paketliste gebrauchen und dann auf anderen Rechnern dieses Bündel installieren."
-msgstr ""
+msgstr "Tout d'abord, nous serions reconnaissants si vous utilisez Communtu pour effectuer une installation. Nos compilations contiennet  déja des propositions d'installation. Peut-être trouveras tu quleque chose d interressant pour toi. Ensuite, il ya aussi la possibilité de télécharger sa prore liste de paquets afin que d'autres personnes puissent en profiter. ceci est une façon plus simple de créer une compilation. Tu n as pas le droit de publier cette liste de paquets. Tu peux  simplement  utiliser Communtu comme un emplacement pour ta liste de paquets, puis installer cette compilation sur d'autres machines."
 
 #: helper_distributions_2
 msgid "Repository synchronisieren"
-msgstr ""
+msgstr "Synchroniser le référentiel"
 
 #: view_messages_show_2
 msgid "erhalten am:"
-msgstr ""
+msgstr "Reçu le:"
 
 #: go_to_download
 msgid "Gehe zur Downloadseite"
-msgstr ""
+msgstr "Aller à la page de téléchargement"
 
 #: view_home_beteiligung_3
 msgid "Wir brauchen die Informationen"
-msgstr ""
+msgstr "Nous avons besoin des information"
 
 #: subject_with_colon
 msgid "Betreff: "
-msgstr ""
+msgstr "Objet:"
 
 #: view_messages_show_3
 msgid "Antworten"
-msgstr ""
+msgstr "Réponses"
 
 #: controller_profiles_0
 msgid "Installation von Bündeln"
-msgstr ""
+msgstr "Installation des compilations"
 
 #: cd_already_created
 msgid "Die LiveCD/DVD wurde bereits erstellt."
-msgstr ""
+msgstr "Le LiveCD / DVD a déjà été créé."
 
 #: view_home_beteiligung_4
 msgid ""
@@ -1766,7 +1769,11 @@ msgid ""
 "Dann schreibe deine Erfahrungen in den Kommentaren zu den Paketen oder hast du vielleicht ein tolles\n"
 "Video zu dem Programm bei Youtube gesehen? Dann trag es doch gleich bei\n"
 "den Videos zu den Programmen in Communtu ein."
-msgstr "Tu  penses que tu en  sais déjà beaucoup sur les programmes  Open Source \ nDans ce cas , écris tes expériences dans les commentaires sur les paquets, ou peut-être as tu  une viedeo interessanteVidéo au programme vu sur Youtube? Il a ensuite contribution de même pour \ nles vidéos pour les programmes dans un Communtu."
+msgstr ""
+"Tu  penses que tu en  sais déjà beaucoup sur les programmes  Open Source \n"
+" Dans ce cas, écris tes expériences dans les commentaires sur les paquets, ou peut-être as tu  vu une \n"
+"video interessante concernant le  programme sur Youtube? alors mets dans le dans \n"
+" les programmes videos de Communt."
 
 #: controller_cart_2
 msgid "Folgende Pakete wurden nicht gefunden: {{message}}<br> Bitte suche die Repositories heraus, die die Pakete enthalten, und <a href=\"{{url}}\">schlage sie zur Aufnahme in Communtu vor.</a>"

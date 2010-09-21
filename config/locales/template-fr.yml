@@ -381,58 +381,62 @@ fr:
   view_user_profiles__profile_data_9: ""
   view_home_faq_11: ""
   view_cart_new_from_list_3: ""
-  controller_metapackages_7: ""
-  view_user_profiles_help_4: ""
-  view_home_derivatives_52: ""
+  controller_metapackages_7: Il faut  donner une version (par exemple 0.1) <br>
+  view_user_profiles_help_4: "tu fais une mise \xC3\xA0 niveau  d'une version plus r\xC3\xA9cente"
+  view_home_derivatives_52: " Une sorte de Automatix pour l'\xC3\xA9dition finale."
   view_roles_edit_1: ""
-  view_users__sidebar_4: ""
-  view_home_faq_12: ""
-  view_cart_new_from_list_4: ""
-  controller_metapackages_8: ""
-  view_user_profiles_help_5: ""
-  view_home_derivatives_53: ""
-  view_users__sidebar_5: ""
-  view_home_faq_13: ""
-  view_cart_new_from_list_5: ""
-  livecd_existing_name: ""
-  controller_metapackages_9: ""
-  view_users__sidebar_6: ""
-  view_home_faq_14: ""
-  view_sent__user_exists_0: ""
-  announce: ""
-  confirm_new_passwd: ""
-  view_home_derivatives_55: ""
-  view_users__sidebar_7: ""
-  view_home_faq_15: ""
-  generate_cd: ""
-  view_rating_show_title_got_ratings: ""
-  view_home_derivatives_56: ""
-  view_users__sidebar_8: ""
-  view_home_faq_16: ""
-  view_my_mailer_repo_0: ""
-  settings: ""
-  view_home_derivatives_57: ""
-  edit_architecture: ""
-  view_home_faq_17: ""
-  view_my_mailer_repo_1: ""
-  helper_distributions_0: ""
-  view_messages_show_0: ""
-  view_home_faq_18: ""
-  view_home_beteiligung_1: ""
-  helper_distributions_1: ""
-  view_home_faq_19: ""
-  livecd_start_message: ""
-  trusted: ""
-  view_home_beteiligung_2: ""
-  helper_distributions_2: ""
-  view_messages_show_2: ""
-  go_to_download: ""
-  view_home_beteiligung_3: ""
-  subject_with_colon: ""
-  view_messages_show_3: ""
-  controller_profiles_0: ""
-  cd_already_created: ""
-  view_home_beteiligung_4: "Tu  penses que tu en  sais d\xC3\xA9j\xC3\xA0 beaucoup sur les programmes  Open Source \\ nDans ce cas , \xC3\xA9cris tes exp\xC3\xA9riences dans les commentaires sur les paquets, ou peut-\xC3\xAAtre as tu  une viedeo interessanteVid\xC3\xA9o au programme vu sur Youtube? Il a ensuite contribution de m\xC3\xAAme pour \\ nles vid\xC3\xA9os pour les programmes dans un Communtu."
+  view_users__sidebar_4: Versions-Ubuntu
+  view_home_faq_12: "Sous <b>compilation</b>, puis  \"nouvelle compilation\" il y a \"compilation provenant d une liste de paquets \" qui est en cliquant . Il d\xC3\xA9crit la fa\xC3\xA7on dont tu peux t\xC3\xA9l\xC3\xA9charger ta liste de paquets dans Communtu. Une fois le paquet est stock\xC3\xA9, le processus est le m\xC3\xAAme que lors de la cr\xC3\xA9ation d'une nouvelle compilation: Choisir un nom significatif,  d\xC3\xA9terminer la version, Enregistrer et Inserer la description ."
+  view_cart_new_from_list_4: "Fichier qui contient la liste des paquets, s\xC3\xA9lectionne:"
+  controller_metapackages_8: "Si tu fais entreprends des changements la version doit \xC3\xAAtre sup\xC3\xA9rieure <br>"
+  view_user_profiles_help_5: "tu \xC3\xA9largis Communtu en ta version."
+  view_home_derivatives_53: "- Permet une installation plus rapide, puisque seuls les paquets les plus r\xC3\xA9cents sont t\xC3\xA9l\xC3\xA9charg\xC3\xA9s."
+  view_users__sidebar_5: "G\xC3\xA9rer les utilisateurs"
+  view_home_faq_13: Comment puis-je trouver des programmes?
+  view_cart_new_from_list_5: construire
+  livecd_existing_name: "Ce nom est d\xC3\xA9j\xC3\xA0 pris"
+  controller_metapackages_9: "La description ne doit pas \xC3\xAAtre vide <br>"
+  view_users__sidebar_6: "G\xC3\xA9rer les cat\xC3\xA9gories"
+  view_home_faq_14: "Aller \xC3\xA0 l'option menu \"Rechercher programmes\". Voici un champ de recherche o\xC3\xB9 vous pouvez sp\xC3\xA9cifier le nom des Prgramm  recherch\xC3\xA9s. Il est \xC3\xA9galement possible de rechercher les programmes en cliquant sur \"Seuls les programmes\", ainsi d'autres biblioth\xC3\xA8ques ne seront plus affich\xC3\xA9es. En outre, il est \xC3\xA9galement possible de s\xC3\xA9lectionner une Debian-section pour  la s\xC3\xA9lection des programmes bas\xC3\xA9s sur des cat\xC3\xA9gories  pr\xC3\xA9-s\xC3\xA9lectionn\xC3\xA9s."
+  view_sent__user_exists_0: "Utilisateur trouv\xC3\xA9"
+  announce: annonce
+  confirm_new_passwd: Confirmer nouveau mot de passe
+  view_home_derivatives_55: "- Centre des m\xC3\xA9dias."
+  view_users__sidebar_7: "g\xC3\xA9rer les d\xC3\xA9riv\xC3\xA9s "
+  view_home_faq_15: Comment puis-je installer un seul programme?
+  generate_cd: "LiveCD / DVD recr\xC3\xA9er"
+  view_rating_show_title_got_ratings: "de 5 \xC3\xA9toiles"
+  view_home_derivatives_56: http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix
+  view_users__sidebar_8: "debs \xC3\x89chec"
+  view_home_faq_16: "Aller sur l'option menu \"Rechercher programmes\". L\xC3\xA0, tu as un choix de programmes. Si tu  as trouv\xC3\xA9 le programme d\xC3\xA9sir\xC3\xA9, tu  peux l'installer en cliquant sur l'ic\xC3\xB4ne d'installation. Il est possible que tu cliques avant sur \"Ajouter sources \" , car il peut arriver que  le programme soit dans une source, que ton syst\xC3\xA8me ne connait pas encore."
+  view_my_mailer_repo_0: "Bonjour, \n\n\
+    une proposition d'un nouveau r\xC3\xA9f\xC3\xA9rentiel a \xC3\xA9t\xC3\xA9 faite  sur www.communtu.de :"
+  settings: "Param\xC3\xA8tres"
+  view_home_derivatives_57: pour subnotebooks/EEE PC
+  edit_architecture: Modifier l'architecture
+  view_home_faq_17: Comment puis-je faire entrer une proposition de programme?
+  view_my_mailer_repo_1: "La raison suivante a \xC3\xA9t\xC3\xA9 donn\xC3\xA9e:"
+  helper_distributions_0: gratuit
+  view_messages_show_0: "De:"
+  view_home_faq_18: "C'est tr\xC3\xA8s simple. Pour ce faire, cliquez dans l'\xC3\xA9diteur de compilation (disponible lorsque tu  cliques sur <b> compilation/ b>)  \"proposer le r\xC3\xA9f\xC3\xA9rentiel\". Ici, tu dois maintenant sp\xC3\xA9cifier le lien vers le programme et bri\xC3\xA8vement nous expliquer pourquoi nous devrions prendre dans le programme Communtu."
+  view_home_beteiligung_1: Application de la plate-forme
+  helper_distributions_1: non-free
+  view_home_faq_19: "Qu'est-ce qu'un r\xC3\xA9f\xC3\xA9rentiel?"
+  livecd_start_message: "Ici, tu peux cr\xC3\xA9er un Live-CD/DVD qui contient le logiciel que vous avez s\xC3\xA9lectionn\xC3\xA9. Tu as  s\xC3\xA9lectionn\xC3\xA9 la compilation suivante:"
+  trusted: "Ubuntu + Communaut\xC3\xA9"
+  view_home_beteiligung_2: "Tout d'abord, nous serions reconnaissants si vous utilisez Communtu pour effectuer une installation. Nos compilations contiennet  d\xC3\xA9ja des propositions d'installation. Peut-\xC3\xAAtre trouveras tu quleque chose d interressant pour toi. Ensuite, il ya aussi la possibilit\xC3\xA9 de t\xC3\xA9l\xC3\xA9charger sa prore liste de paquets afin que d'autres personnes puissent en profiter. ceci est une fa\xC3\xA7on plus simple de cr\xC3\xA9er une compilation. Tu n as pas le droit de publier cette liste de paquets. Tu peux  simplement  utiliser Communtu comme un emplacement pour ta liste de paquets, puis installer cette compilation sur d'autres machines."
+  helper_distributions_2: "Synchroniser le r\xC3\xA9f\xC3\xA9rentiel"
+  view_messages_show_2: "Re\xC3\xA7u le:"
+  go_to_download: "Aller \xC3\xA0 la page de t\xC3\xA9l\xC3\xA9chargement"
+  view_home_beteiligung_3: Nous avons besoin des information
+  subject_with_colon: "Objet:"
+  view_messages_show_3: "R\xC3\xA9ponses"
+  controller_profiles_0: Installation des compilations
+  cd_already_created: !binary |
+    TGUgTGl2ZUNEIC8gRFZEIGEgZMOpasOgIMOpdMOpIGNyw6nDqS4=
+
+  view_home_beteiligung_4: "Tu  penses que tu en  sais d\xC3\xA9j\xC3\xA0 beaucoup sur les programmes  Open Source \n Dans ce cas, \xC3\xA9cris tes exp\xC3\xA9riences dans les commentaires sur les paquets, ou peut-\xC3\xAAtre as tu  vu une \n\
+    video interessante concernant le  programme sur Youtube? alors mets dans le dans \n les programmes videos de Communt."
   controller_cart_2: "Les paquets suivants n'ont pas \xC3\xA9t\xC3\xA9 trouv\xC3\xA9s: {{message}} <br> S'il te pla\xC3\xAEt choisie les r\xC3\xA9f\xC3\xA9rentiels qui contiennent les paquets ,et<a href=\"{{url}}\"> propose de les inclure dans Communtu. </ a>"
   install_by_default: "L'installation standart:"
   show: Afficher
