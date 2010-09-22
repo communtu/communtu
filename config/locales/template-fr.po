@@ -1299,11 +1299,11 @@ msgstr ""
 
 #: view_home_derivatives_41
 msgid " Ubuntu ultimate  - Ubuntu mit vielen Desktop-Desgins und Programmen."
-msgstr ""
+msgstr "Ubuntu Ultimate - Ubuntu avec plusieurs  conceptions et programmes de bureau."
 
 #: based_on_bundle
 msgid "basiert auf Bündel:"
-msgstr ""
+msgstr "fondée sur la compilation:"
 
 #: view_home_faq_kde_02
 msgid "KPackageKit erreichst du über \"K-Menu -> Programme-> System -> Systemverwaltung -> Software-Verwaltung\". Hier wählst du rechts aus dem Ausklapp-Menü \"packages.communtu.org\" aus. Aus der Liste suchst du nun das Metapaket aus, welches du installiert hast und markierst es mit einem Klick auf das X rechts neben dem Eintrag. Um das Metapaket nun zu entfernen ist nur noch ein Klick auf \"Übernehmen\" notwendig. Es wird jetzt noch eine Übersicht der zu entfernenden Programme angezeigt und nach einem Klick auf \"Ok\" werden diese von deinem Computer gelöscht."
@@ -1311,51 +1311,51 @@ msgstr ""
 
 #: view_home_news_15
 msgid "Unser Blog"
-msgstr ""
+msgstr "Notre blog"
 
 #: view_home_derivatives_42
 msgid " - spezialisiert auf Webdienste."
-msgstr ""
+msgstr "- Spécialisée dans les services Web."
 
 #: view_home_faq_02
 msgid "Ein Bündel ist eine Zusammenstellung von Software für einen bestimmten Aufgabenbereich, den du mit deinem Rechner erledigen kannst."
-msgstr ""
+msgstr "Une compilation est un ensemble de logiciels pour un volet de tâches spécifiques que tu peux resoudre avec votre ordinateur."
 
 #: native
 msgid "nur Ubuntu"
-msgstr ""
+msgstr "Seul Ubuntu"
 
 #: view_home_news_16
 msgid "Wir haben einen Blog, wo wir aktuelle Informationen zu Communtu eintragen. Hier wird ungefähr einmal die Woche etwas gepostet. Hier werden Ankündigungen und neue Features präsentiert."
-msgstr ""
+msgstr "Nous avons un blog, où nous entrons dans les dernières informations sur Communtu. Une fois par semaine quelque chose est posté. C'est là que les annonces et les nouveautés sont présentées."
 
 #: view_home_derivatives_43
 msgid " - basiert auf E17. 2D-Effekte auch ohne schnelle Grafikkarte."
-msgstr ""
+msgstr "- Est fondé sur la E17. effets 2-D sans la carte graphique rapide."
 
 #: view_home_faq_03
 msgid "Wie installiere ich ein Bündel?"
-msgstr ""
+msgstr "Comment puis-je installer une compilation?"
 
 #: view_user_profiles__profile_data_0
 msgid "Installation vorbereiten: Voreinstellungen eingeben"
-msgstr ""
+msgstr "Installation:donner tes paramètres personnels"
 
 #: cd_being_created
 msgid "Die LiveCD/DVD wird erstellt."
-msgstr ""
+msgstr "Le LiveCD / DVD est créé."
 
 #: search_programs_bundles
 msgid "Du hast bereits ein Ubuntu installiert und suchst jetzt passende Programme? Hier kannst du deine Interessengebiete eingeben und passende vorkonfigurierte Programmbündel downloaden."
-msgstr ""
+msgstr "Tu as déjà installé un Ubuntu et cherche maintenant des programmes adaptés? Ici vous tu peux entrer tes centres d'intérêts et  télécharger un des compilations de programme pré-configurés."
 
 #: view_home_news_17
 msgid "Zum Blog"
-msgstr ""
+msgstr "Pour blog"
 
 #: view_home_derivatives_44
 msgid " - minimalistische schnelle Ubuntu-Version für ältere PCs."
-msgstr ""
+msgstr "- version rapide de Ubuntu pour les PC plus anciens."
 
 #: view_home_faq_04
 msgid "Um ein Bündel zu installieren gibt es zwei Möglichkeiten.<p> Die erste Möglichkeit ist, dass du auf <b>Download</b> klickst. Dort bekommst du dann ein kleines Formular in welchem du die Aufgaben auswählst, die du mit deinem Computer durchführen möchtest. Als Nächstes musst du deine Ubuntu-Version einstellen (diese wird in den meisten Fällen richtig erkannt und du musst sie nur noch aus dem Menü auswählen) und welche Oberfläche du benutzen möchtest (Gnome = Ubuntu, KDE = Kubuntu, XFCE = Xubuntu). Die letzten zwei Schritte betreffen die Lizenz und die Sicherheit der Programme, also welche Quellen du zulassen möchtest und ob deine Programme offen sind oder nicht. Du kannst nun entweder über \"Speichern\" direkt zum Abschluss des Prozesses kommen oder mit einem Klick auf \"Speichern und feiner auswählen\" noch eine genauere Auswahl treffen. Abschließend müssen die Quellen zu deinem System hinzugefügt werden und, sobald dies abgeschlossen ist, musst du nur noch auf \"Installieren\" klicken und auf dein System werden die von dir ausgewählten Programmen installiert.<p> Die zweite Möglichkeit ist, dass du auf <b>Bündel</b> und dann \"Alle veröffentlichen Bündel\" klickst. Dort bekommst du dann eine Übersicht über alle in Communtu erstellten Bündel. Hier müssen, sofern noch nicht geschehen, die Quellen hinzugefügt werden (ein Klick auf \"Quellen hinzufügen\") und dann mit einem Klick auf \"installieren mittels Metapaket\" das entsprechende Bündel installiert werden."
@@ -1363,39 +1363,39 @@ msgstr ""
 
 #: view_user_profiles__profile_data_1
 msgid "Auf dieser Seite kannst du die Grundeinstellungen deines Computers angeben. "
-msgstr ""
+msgstr "Sur cette page, vous pouvez entrer les paramètres de base de votre ordinateur."
 
 #: view_metapackages_show_deb_error
 msgid "Beim Erzeugen von Metapaketen ist ein Fehler aufgetreten. Wir kümmern uns um das Problem."
-msgstr ""
+msgstr "Lors de la création des metapaquets une erreur s'est produite. Nous nous occupons du problème."
 
 #: view_home_derivatives_45
 msgid "http://wiki.ubuntuusers.de/Server_Installation"
-msgstr ""
+msgstr "http://wiki.ubuntuusers.de/Server_Installation"
 
 #: controller_metapackages_not_allowed
 msgid "Nur der Eigentümer des Bündels darf diese Aktion ausführen."
-msgstr ""
+msgstr "Seul le propriétaire de la distribution doit exécuter."
 
 #: view_home_faq_05
 msgid "Wie kann ich ein Bündel erstellen?"
-msgstr ""
+msgstr "Comment puis-je créer un compilation?"
 
 #: view_user_profiles__profile_data_2
 msgid "Achtung: zum Schluss unten auf den 'Speichern'-Knopf klicken!"
-msgstr ""
+msgstr "Note: clique à la fin  sur le bouton 'Enregistrer'!"
 
 #: view_home_derivatives_46
 msgid " - Server-Version von Ubuntu, ohne grafische Oberfläche."
-msgstr ""
+msgstr "- La version Server d'Ubuntu, sans interface graphique."
 
 #: view_repositories_new_0
 msgid "Neues Repository für "
-msgstr ""
+msgstr "Nouveau référentiel pour"
 
 #: view_home_faq_06
 msgid "Hierfür klickst du auf <b>Bündel</b> und dann auf \"Neues Bündel\". Links siehst du nun eine Liste mit Programmen und rechts noch eine leere Liste. Dies ist der Bündeleditor. Mit einem Klick auf das Plus-Zeichen in der linken Liste kannst du nun Programme zu deinem Bündel hinzufügen. Sobald du damit fertig bist klickst auf das Speichern-Symbol. Hier musst du nun einen sinnvollen Namen für dein Bündel vergeben, die Version angeben und eine kleine Beschreibung eingeben damit andere Nutzer sofort wissen was für Programme in deinem Bündel sind. Damit andere Nutzer dein Bündel sehen, bewerten und installieren können muss dieses veröffentlicht werden. Dies geht erst, sobald das Bündel gespeichert ist. Achtung: bitte ein Bündel erst veröffentlichen wenn es ausgereift ist, also wenn du der Meinung bist, hier wird sich so schnell nichts mehr ändern! Das Ändern des Bündels ist nicht mehr möglich wenn es veröffentlicht wurde.<p> Wenn du der Meinung bist, dass dein Bündel um nützliche Programme erweitert werden kann oder ein Programm nicht mehr in dem Bündel enthalten sein soll musst du zuerst unter <b>Bündel</b> und dann \"Meine Bündel\" das entsprechende Bündel auswählen. Rechts ist dann aus dem Aufklapp-Menü der Punkt \"Paketliste editieren\" auszuwählen. Anschließend erscheint wieder der Bündeleditor. Sobald die Paketliste bearbeitet wurde muss diese gespeichert werden. Nun muss die Version höhergesetzt werden und anschließend gespeichert werden. Das Bündel wurde nun aktualisiert."
-msgstr ""
+msgstr "Pour cela tu devrais cliquer sur <b> compilation</b> et puis cliquer sur \" Nouvelle compilation\". A gauche, tu veras maintenant une liste de programmes et à droite une liste vide. C'est l'éditeur de compilation. En cliquant sur le signe plus dans la liste de gauche, tu peux maintenant ajouter des programmes à ta compilation. Une fois terminé, cliques sur l'icône Enregistrer. Ici tu dois maintenant attribuer un nom significatif pour ta compilation, indiquer la version et donner une petite description afin que d'autres personnes sachent quels programmes sont contenues dans ta compilation. Ta compilation doit être publiée afin que d'autres utilisateurs puissent la voir ,la noter, l'utiliser et l'installer . Cela  n'est possible que si la compilation est sauvegardée. Attention: s'il te plait  publier une compilation que si elle est mûre, et si et seulement si tu es convaincu  qu'il n yaura pas de changement dans les jours qui viennent! La modification de la compilation  n'est plus possible lorsqu'elle a été publiée. <p> Si tu es d'avis que ta compilation peut être étendue pour des progammes utiles ou alors qu'un programme doit être supprimé de la compilation, alors tu dois d'abord aller sous <b>compilation</ b>, puis \"ma compilation\" et selectioner la compilation correspondante. A droite dans le menu déroulant  tu selectiones ensuite \"éditer la liste des paquets \" . Puis retourne à l'éditeur de compilation. Aprés que la liste des paquets a été transformée, elle doit être sauvegarder. Maintenant, la version doit être élevée et ensuite sauvegardée. Le paquet a été mis à jour."
 
 #: view_user_profiles__profile_data_3
 msgid "Welche Aufgaben willst du mit deinem Computer erledigen? (um grob eine Auswahl zu treffen, Feineinstellungen später möglich)"
