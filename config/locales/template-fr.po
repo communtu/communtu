@@ -1399,147 +1399,147 @@ msgstr ""
 
 #: view_user_profiles__profile_data_3
 msgid "Welche Aufgaben willst du mit deinem Computer erledigen? (um grob eine Auswahl zu treffen, Feineinstellungen später möglich)"
-msgstr ""
+msgstr "Quelles sont les tâches veux tu accomplir avec votre ordinateur? (Pour bruts de faire un choix, réglage fin possible plus tard)"
 
 #: view_home_derivatives_47
 msgid "http://wiki.ubuntuusers.de/JeOS"
-msgstr ""
+msgstr "http://wiki.ubuntuusers.de/JeOS"
 
 #: to_colon
 msgid "An:"
-msgstr ""
+msgstr "À:"
 
 #: view_home_faq_07
 msgid "Wie kann ich ein Bündel bewerten?"
-msgstr ""
+msgstr "Comment noter une compilation?"
 
 #: view_user_profiles__profile_data_4
 msgid "Weitere Informationen"
-msgstr ""
+msgstr "Plus d'informations"
 
 #: view_home_derivatives_48
 msgid " - minimale Server-Version, vor allem für Virtualisierung geeignet.."
-msgstr ""
+msgstr "- La version minimale pour les serveurs, convient surtout pour la virtualisation .."
 
 #: controller_metapackages_2
 msgid "Dieser Bündel-Name ist bereits vergeben!"
-msgstr ""
+msgstr "Ce nom de compilation est déjà pris!"
 
 #: view_home_faq_08
 msgid "Du gehst auf den Menüpunkt \"Bündel\" und lässt dir unter \"Veröffentlichte Bündel\" die Bündel anzeigen. Dort kannst du bis zu fünf Sterne anklicken. Danach erscheint ein Kommentarfeld, in dem du diese Bewertung qualifizieren kannst."
-msgstr ""
+msgstr "Tu vas dans le menu \" compilation\" et sous \"compilation publiée \" tu peux voir toutes les compilations. Là, tu peux cliquer sur un maximum cinq étoiles. Ensuite, il apparaitra une case de commentaire où l'on peut qualifier cette évaluation."
 
 #: view_users__sidebar_0
 msgid "Installation"
-msgstr ""
+msgstr "Installation"
 
 #: view_home_derivatives_49
 msgid " - Ubuntu mit Enlightenment als Desktopumgebung."
-msgstr ""
+msgstr "- Ubuntu avec Enlightenment comme environnement de bureau."
 
 #: view_home_home_new_message_icon
 msgid "zum Posteingang"
-msgstr ""
+msgstr "vers la boîte de réception"
 
 #: controller_metapackages_3
 msgid "Die Beschreibung darf nicht leer sein"
-msgstr ""
+msgstr "La description ne doit pas être vide"
 
 #: view_home_faq_09
 msgid "Wie kann ich ein Bündel ändern?"
-msgstr ""
+msgstr "Comment puis-je changer une compilation?"
 
 #: view_user_profiles_help_0
 msgid "Feststellen der Ubuntu-Version"
-msgstr ""
+msgstr "Découvrir la version Ubuntu"
 
 #: view_user_profiles__profile_data_6
 msgid "Wähle bitte deine Ubuntu-Version aus. "
-msgstr ""
+msgstr "S'il te plaît sélectionne ta version d'Ubuntu."
 
 #: view_cart_new_from_list_0
 msgid "Bündel aus einer Paketliste erstellen"
-msgstr ""
+msgstr "Créer une compilation à partir d'une liste de paquets "
 
 #: view_repositories_new_4
 msgid "GPG Schlüssel (Optional)"
-msgstr ""
+msgstr "Clé GPG (facultatif)"
 
 #: controller_metapackages_4
 msgid "Bündel gespeichert. Es dauert ein paar Minuten, bis es auch als Metapaket verfügbar ist. "
-msgstr ""
+msgstr "Compilation sauvegardée. ca va prendre quelques minutes jusqu'à ce qu'elle soit disponible sous forme de méta-paquet."
 
 #: new_article
 msgid "Neuen Artikel anlegen"
-msgstr ""
+msgstr "Créer un nouvel article"
 
 #: view_users__sidebar_1
 msgid "Bündel verwalten"
-msgstr ""
+msgstr "Gérer la compilation"
 
 #: view_user_profiles_help_1
 msgid "Öffne ein Terminal unter \"Anwendungen\" -> \"Zubehör\" -> \"Terminal"
-msgstr ""
+msgstr "Ouvrir un terminal sous \" Applications  \"-> \"Accessoires \" -> \"Terminal"
 
 #: view_user_profiles__profile_data_7
 msgid "Wie stelle ich die Version fest?"
-msgstr ""
+msgstr "Comment puis-je déterminer la version?"
 
 #: participation
 msgid "Beteiligungsmöglichkeiten"
-msgstr ""
+msgstr "Possibilités de participation"
 
 #: view_cart_new_from_list_1
 msgid "Hier kannst du ein Bündel aus einer vorhandenen Paketliste erstellen.  Die Liste muss in Form einter Textdatei vorliegen (plain text),  mit einem Paketnamen pro Zeile."
-msgstr ""
+msgstr "Ici, tu peux créer une compilation à partir d'une liste de paquets existants. La liste doit être disponible sous la forme d'un fichier texte (texte brut), et à chaque fois un nom de paquet par ligne."
 
 #: homepage
 msgid "Startseite"
-msgstr ""
+msgstr " page d'accueil"
 
 #: view_users__sidebar_2
 msgid "Programme suchen"
-msgstr ""
+msgstr "Rechercher des programmes"
 
 #: view_user_profiles_help_2
 msgid "Gebe dort ein: "
-msgstr ""
+msgstr "Ecrit a cet endroit:"
 
 #: view_user_profiles__profile_data_8
 msgid "Über den Browser festgestellte Version: "
-msgstr ""
+msgstr "la version du navigateur:"
 
 #: view_home_derivatives_50
 msgid " - mit Fluxbox und verschiedenen Netzwerk-Sicherheitswerkzeugen ."
-msgstr ""
+msgstr "- Avec fluxbox, et divers outils de sécurité réseau."
 
 #: view_home_faq_10
 msgid "Du gehst auf den Menüpunkt \"Meine Bündel\" unter \"Bündel\" und läßt dir da deine Bündel auflisten. Das zu ändernde Bündel klickst du nun an. Du bekommst nun alle wichtigen Informationen zu deinem Bündel angezeigt. Unter \"Aktionen\" kannst du nun dieses Bündel oder auch die Paketliste editieren. Wenn das Paket nicht veröffentlicht ist, dann kannst du es auch löschen oder ansonsten auch veröffentlichen."
-msgstr ""
+msgstr "Tu vas dans le menu \"Ma compilation\" sous \"compilation \" et  là tu obtiens une liste de tes compilations. Tu cliques ensuite sur la compilation a changer. Toutes les informations concernant ta compilation seront maintenant affichées . Sous \"actions \" tu peux Maintenant  éditer cette compilation ainsi que la liste de paquets. Si le paquet n'est pas publié, alors tu peux le supprimer ou le publier."
 
 #: view_cart_new_from_list_2
 msgid "Die Liste der auf deinem Computer installierten Pakete kannst du zum Beispiel mit"
-msgstr ""
+msgstr "La liste des paquets installés sur votre ordinateur, tu  peux par exemple avec"
 
 #: controller_metapackages_6
 msgid "Dieser Bündel-Name ist bereits vergeben<br>"
-msgstr ""
+msgstr "Le nom de cette compilation est déjà pris<br>"
 
 #: view_user_profiles_help_3
 msgid "Wenn deine Version von Communtu nicht unterstützt wird, gibt es zwei Möglichkeiten:"
-msgstr ""
+msgstr "Si ta version de Communtu n'est pas soutenu, il ya deux possibilités:"
 
 #: view_user_profiles__profile_data_9
 msgid "Hier kannst du einstellen, wie sicher bzw. komfortabel deine Installationsquellen sein sollen"
-msgstr ""
+msgstr "Ici tu peux régler le degré de sécurité et de confortabilité pour tes sources d'installations"
 
 #: view_home_news_24
 msgid "beteiligen"
-msgstr ""
+msgstr "-Participer"
 
 #: view_home_derivatives_51
 msgid " - Installation von Programmen und Versionen, die nicht über die offiziellen Repositories erhältlich sind."
-msgstr ""
+msgstr "- Installation de programmes et de versions qui ne sont pas disponibles dans les référentiels officiels."
 
 #: view_roles_edit_0
 msgid "Rolle bearbeiten"
@@ -1547,11 +1547,11 @@ msgstr ""
 
 #: view_home_faq_11
 msgid "Wie erstelle ich ein Bündel aus meinen installierten Programmen?"
-msgstr ""
+msgstr "Comment puis-je créer une compilation á partir de mes programmes installés?"
 
 #: view_cart_new_from_list_3
 msgid "herausfinden. (Dazu muss das Paket {{debfoster}} installiert sein. Die erzeugte Liste enthält nur eine minimale Liste von (Meta-)Paketen, die notwendig ist, um deine Installation komplett wiederherzustellen.)"
-msgstr ""
+msgstr "découvrir. (pour cela le paquet {{debfoster}} doit être installé. La liste générée contient uniquement une liste minimale de (méta-)paquets qui sont nécessaires pour restaurer pleinement ton installation.)"
 
 #: controller_metapackages_7
 msgid "Es muss eine Version angegeben werden (z.B. 0.1)<br>"
@@ -1575,7 +1575,7 @@ msgstr ""
 
 #: view_home_faq_12
 msgid "Unter <b>Bündel</b> und dann \"Neues Bündel\" gibt es den Punkt \"Bündel aus einer Paketliste erstellen\", der anzuklicken ist. Dort ist beschrieben, wie du deine Paketliste in Communtu hochladen kannst. Sobald das Bündel gespeichert ist, ist der Vorgang der Gleiche wie bei einem neuen Bündel erstellen: sinnvollen Namen auswählen, Version bestimmen, Beschreibung einfügen und speichern."
-msgstr "Sous <b>compilation</b>, puis  \"nouvelle compilation\" il y a \"compilation provenant d une liste de paquets \" qui est en cliquant . Il décrit la façon dont tu peux télécharger ta liste de paquets dans Communtu. Une fois le paquet est stocké, le processus est le même que lors de la création d'une nouvelle compilation: Choisir un nom significatif,  déterminer la version, Enregistrer et Inserer la description ."
+msgstr "Sous <b>compilation</b>, puis  \"nouvelle compilation\" il y a un point  \"compilation provenant d une liste de paquets \" qui est cliquant . Il est  décrit la façon dont tu peux télécharger ta liste de paquets dans Communtu. Une fois le paquet  stocké, le processus est le même que lors de la création d'une nouvelle compilation: Choisir un nom significatif,  déterminer la version, Enregistrer et Inserer la description ."
 
 #: view_cart_new_from_list_4
 msgid "Datei, die die Paketliste enthält, auswählen:"
@@ -1583,7 +1583,7 @@ msgstr "Fichier qui contient la liste des paquets, sélectionne:"
 
 #: controller_metapackages_8
 msgid "Bei Anderungen muss die Version größer werden<br>"
-msgstr "Si tu fais entreprends des changements la version doit être supérieure <br>"
+msgstr "Si tu entreprends des changements la version doit être supérieure <br>"
 
 #: view_users__sidebar_5
 msgid "Benutzer verwalten"
@@ -2925,7 +2925,7 @@ msgstr "attendre la liberation officielle de Ubuntu"
 
 #: view_home_faq_gnome_02
 msgid "Die Pakerverwaltung Synaptic erreichst du über \"System -> Systemverwaltung -> Synaptic-Paketverwaltung\". Wähle hier unten links den Punkt Ursprung. Suche nun in der darüber liegenden Liste \"packages.communtu.org\" und klicke es an. Auf der rechten Seite werden nun die verfügbaren Metapakete in Communtu angezeigt. Das Entfernen geht über Rechtsmausklick und dann \"Zum Entfernen vormerken\". Dies muss dann danach durch \"Anwenden\" bestätigt werden."
-msgstr ""
+msgstr "Pour la gestion du  paquet  Synaptic tu vas aller sur  \"Système -> Administration -> Gestion du paquet  Synaptic \". Sélectionne  ci-dessous à gauche du point d'origine. Recherche maintenant dans la liste sus-jacente \"packages.communtu.org \" et clique dessus. Sur le côté droit maintenant, les méta-paquets disponibles dans Communtu seront affichés. La suppression se fait  avec un clic sur la droite de la souris et ensuite \"Sélectionner pour suppression\". Ceci doit être confirmé par \"Appliquer \"."
 
 #: view_mailbox_show_5
 msgid "Du hast keine Nachrichten in deinem Posteingang."
@@ -3017,7 +3017,7 @@ msgstr "Ubuntu dérivés"
 
 #: model_user_profile_tabz_4
 msgid "Voreinstellungen"
-msgstr "pre-installations"
+msgstr "pré-installations"
 
 #: controller_suggestion_15
 msgid "Pakete installieren"
