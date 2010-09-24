@@ -304,18 +304,18 @@ fr:
   architecture_successful: ""
   livecd: ""
   view_repositories_multinew_0: ""
-  controller_metapackages_conflicts: ""
-  view_home_faq_00: ""
-  creation_error: ""
-  kommentieren: ""
-  view_home_news_13: ""
-  view_home_derivatives_40: ""
-  livecd_email: ""
-  total_isos_size: ""
-  view_home_faq_01: ""
-  steps_for_distribution_setup: ""
-  questionmark_conny: ""
-  new_packages: ""
+  controller_metapackages_conflicts: La compilation contient des paquets qui sont en conflit les uns avec les autres!
+  view_home_faq_00: "Lea questions le plus pos\xC3\xA9es"
+  creation_error: Dans la creation du paquet, une erreur s'est produite.
+  kommentieren: " commenter"
+  view_home_news_13: http://groups.google.com/group/communtu-discuss-de/topics?start=
+  view_home_derivatives_40: "- Pour les dispositifs Internet mobile."
+  livecd_email: "Communtu: Notification sur le Live-CD/DVD"
+  total_isos_size: "Taille totale des isos:"
+  view_home_faq_01: Qu'est-ce qu'une compilation?
+  steps_for_distribution_setup: "\xC3\x89tapes \xC3\xA0 suivre pour la cr\xC3\xA9ation d'une nouvelle distribution (s'il vous pla\xC3\xAEt ex\xC3\xA9cuter sur admin-syst\xC3\xA8me)"
+  questionmark_conny: Clique sur moi et dis moi ce qui n'est pas claire.
+  new_packages: "Nouveaux paquets ajout\xC3\xA9s :"
   view_home_faq_kde_01: ""
   view_home_derivatives_41: Ubuntu Ultimate - Ubuntu avec plusieurs  conceptions et programmes de bureau.
   based_on_bundle: "fond\xC3\xA9e sur la compilation:"
@@ -438,7 +438,7 @@ fr:
     TGUgTGl2ZUNEIC8gRFZEIGEgZMOpasOgIMOpdMOpIGNyw6nDqS4=
 
   view_home_beteiligung_4: "Tu  penses que tu en sais d\xC3\xA9j\xC3\xA0 beaucoup sur les programmes Open Source \n Dans ce cas, \xC3\xA9cris tes exp\xC3\xA9riences dans les commentaires sur les paquets, ou peut-\xC3\xAAtre as tu  vu une \n\
-    video interessante concernant le  programme sur Youtube? alors mets dans le dans \n les programmes vid\xC3\xA9os de Communtu."
+    video interessante concernant le  programme sur Youtube? alors mets le dans \n les programmes vid\xC3\xA9os de Communtu."
   controller_cart_2: "Les paquets suivants n'ont pas \xC3\xA9t\xC3\xA9 trouv\xC3\xA9s: {{message}} <br> S'il te pla\xC3\xAEt choisie les r\xC3\xA9f\xC3\xA9rentiels qui contiennent les paquets ,et<a href=\"{{url}}\"> propose de les inclure dans Communtu. </ a>"
   install_by_default: "L'installation standart:"
   show: Afficher
@@ -521,7 +521,7 @@ fr:
   url: Url
   view_home_home_rating_rating: Classement
   view_sent_index_5: "Vous n'a pas encore envoy\xC3\xA9 de messages."
-  model_user_meta_tabz_0: Ma compilation
+  model_user_meta_tabz_0: Mes compilations
   controller_users_5: "Mise \xC3\xA0 jour des donn\xC3\xA9es de l'utilisateur"
   view_metapackages_show_12: "pas publi\xC3\xA9"
   model_user_meta_tabz_1: "Tous les paquets publi\xC3\xA9s"
@@ -532,7 +532,7 @@ fr:
   view_users_edit_9: "En cliquant sur  \"Sauvegarder\" le compte d'utilisateur est \xC3\xA9galement devenu permanent."
   view_metapackages_show_14: " Actions:&nbsp;&nbsp;"
   controller_metapackages_bundle_not_found: "La compilation n'a pas \xC3\xA9t\xC3\xA9 trouv\xC3\xA9e."
-  model_user_meta_tabz_3: "R\xC3\xA9f\xC3\xA9rentiel publi\xC3\xA9"
+  model_user_meta_tabz_3: "Compilations publi\xC3\xA9es"
   packages: paquet
   controller_users_8: " Utilisateur d\xC3\xA9sactiv\xC3\xA9"
   new_passwd: Nouveau mot de passe
@@ -609,7 +609,7 @@ fr:
   view_home_donate: Faire un don pour Communtu
   save: Sauvegarder
   view_roles_new_0: "Nouveau r\xC3\xB4le"
-  search_package: Chercher le paquet
+  search_package: Rechercher des paquets
   view_metapackages__metalist_14: "installation via metapaquet. S'il vous pla\xC3\xAEt ajouter les sources avant."
   view_users_show_2: "Membre depuis:"
   view_metapackages_show_version: "Version:"

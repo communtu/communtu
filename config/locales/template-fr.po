@@ -1247,51 +1247,51 @@ msgstr ""
 
 #: controller_metapackages_conflicts
 msgid "Das Bündel enthält Pakete, die in Konflikt zueinander stehen!"
-msgstr ""
+msgstr "La compilation contient des paquets qui sont en conflit les uns avec les autres!"
 
 #: view_home_faq_00
 msgid "Häufig gestellte Fragen"
-msgstr ""
+msgstr "Lea questions le plus posées"
 
 #: creation_error
 msgid "Bei der Erstellung des Pakets ist ein Fehler aufgetreten."
-msgstr ""
+msgstr "Dans la creation du paquet, une erreur s'est produite."
 
 #: kommentieren
 msgid "Kommentieren"
-msgstr ""
+msgstr " commenter"
 
 #: view_home_news_13
 msgid "http://groups.google.com/group/communtu-discuss-de/topics?start="
-msgstr ""
+msgstr "http://groups.google.com/group/communtu-discuss-de/topics?start="
 
 #: view_home_derivatives_40
 msgid " - für mobile Internetgeräte."
-msgstr ""
+msgstr "- Pour les dispositifs Internet mobile."
 
 #: livecd_email
 msgid "Communtu: Benachrichtigung über Live-CD/DVD"
-msgstr ""
+msgstr "Communtu: Notification sur le Live-CD/DVD"
 
 #: total_isos_size
 msgid "Gesamtgröße der isos: "
-msgstr ""
+msgstr "Taille totale des isos:"
 
 #: view_home_faq_01
 msgid "Was ist ein Bündel?"
-msgstr ""
+msgstr "Qu'est-ce qu'une compilation?"
 
 #: steps_for_distribution_setup
 msgid "Schritte für das Einrichten einer neuen Distribution (bitte auf admin-System durchführen)"
-msgstr ""
+msgstr "Étapes à suivre pour la création d'une nouvelle distribution (s'il vous plaît exécuter sur admin-système)"
 
 #: questionmark_conny
 msgid "Klick mich und sag mir, was dir unklar ist."
-msgstr ""
+msgstr "Clique sur moi et dis moi ce qui n'est pas claire."
 
 #: new_packages
 msgid "Neu hinzugefügte Pakete: "
-msgstr ""
+msgstr "Nouveaux paquets ajoutés :"
 
 #: view_home_faq_kde_01
 msgid "Unter \"K-Menu -> Programme -> System -> Systemverwaltung -> Software-Quellen -> Softwarequellen von Drittanbietern\" sind die Communtu Quellen auffindbar. Hier können sie auch wieder deaktiviert werden."
@@ -1772,7 +1772,7 @@ msgid ""
 msgstr ""
 "Tu  penses que tu en sais déjà beaucoup sur les programmes Open Source \n"
 " Dans ce cas, écris tes expériences dans les commentaires sur les paquets, ou peut-être as tu  vu une \n"
-"video interessante concernant le  programme sur Youtube? alors mets dans le dans \n"
+"video interessante concernant le  programme sur Youtube? alors mets le dans \n"
 " les programmes vidéos de Communtu."
 
 #: controller_cart_2
@@ -2095,7 +2095,7 @@ msgstr "Vous n'a pas encore envoyé de messages."
 
 #: model_user_meta_tabz_0
 msgid "Meine Bündel"
-msgstr "Ma compilation"
+msgstr "Mes compilations"
 
 #: controller_users_5
 msgid "Benutzerdaten aktualisiert"
@@ -2139,7 +2139,7 @@ msgstr "La compilation n'a pas été trouvée."
 
 #: model_user_meta_tabz_3
 msgid "Veröffentlichte Bündel"
-msgstr "Référentiel publié"
+msgstr "Compilations publiées"
 
 #: packages
 msgid "Pakete"
@@ -2429,7 +2429,7 @@ msgstr "Nouveau rôle"
 
 #: search_package
 msgid "Paket suchen"
-msgstr "Chercher le paquet"
+msgstr "Rechercher des paquets"
 
 #: view_metapackages__metalist_14
 msgid "installieren mittels Metapaket. Bitte vorher die Quellen hinzufügen."
