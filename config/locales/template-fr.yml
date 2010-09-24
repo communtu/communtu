@@ -338,10 +338,10 @@ fr:
   view_home_derivatives_45: http://wiki.ubuntuusers.de/Server_Installation
   controller_metapackages_not_allowed: "Seul le propri\xC3\xA9taire de la distribution doit ex\xC3\xA9cuter."
   view_home_faq_05: "Comment puis-je cr\xC3\xA9er un compilation?"
-  view_user_profiles__profile_data_2: "Note: clique \xC3\xA0 la fin  sur le bouton 'Enregistrer'!"
+  view_user_profiles__profile_data_2: "Note: clique \xC3\xA0 la fin  sur le bouton 'Sauvegarder'!"
   view_home_derivatives_46: "- La version Server d'Ubuntu, sans interface graphique."
   view_repositories_new_0: "Nouveau r\xC3\xA9f\xC3\xA9rentiel pour"
-  view_home_faq_06: "Pour cela tu devrais cliquer sur <b> compilation</b> et puis cliquer sur \" Nouvelle compilation\". A gauche, tu veras maintenant une liste de programmes et \xC3\xA0 droite une liste vide. C'est l'\xC3\xA9diteur de compilation. En cliquant sur le signe plus dans la liste de gauche, tu peux maintenant ajouter des programmes \xC3\xA0 ta compilation. Une fois termin\xC3\xA9, cliques sur l'ic\xC3\xB4ne Enregistrer. Ici tu dois maintenant attribuer un nom significatif pour ta compilation, indiquer la version et donner une petite description afin que d'autres personnes sachent quels programmes sont contenues dans ta compilation. Ta compilation doit \xC3\xAAtre publi\xC3\xA9e afin que d'autres utilisateurs puissent la voir ,la noter, l'utiliser et l'installer . Cela  n'est possible que si la compilation est sauvegard\xC3\xA9e. Attention: s'il te plait  publier une compilation que si elle est m\xC3\xBBre, et si et seulement si tu es convaincu  qu'il n yaura pas de changement dans les jours qui viennent! La modification de la compilation  n'est plus possible lorsqu'elle a \xC3\xA9t\xC3\xA9 publi\xC3\xA9e. <p> Si tu es d'avis que ta compilation peut \xC3\xAAtre \xC3\xA9tendue pour des progammes utiles ou alors qu'un programme doit \xC3\xAAtre supprim\xC3\xA9 de la compilation, alors tu dois d'abord aller sous <b>compilation</ b>, puis \"ma compilation\" et selectioner la compilation correspondante. A droite dans le menu d\xC3\xA9roulant  tu selectiones ensuite \"\xC3\xA9diter la liste des paquets \" . Puis retourne \xC3\xA0 l'\xC3\xA9diteur de compilation. Apr\xC3\xA9s que la liste des paquets a \xC3\xA9t\xC3\xA9 transform\xC3\xA9e, elle doit \xC3\xAAtre sauvegarder. Maintenant, la version doit \xC3\xAAtre \xC3\xA9lev\xC3\xA9e et ensuite sauvegard\xC3\xA9e. Le paquet a \xC3\xA9t\xC3\xA9 mis \xC3\xA0 jour."
+  view_home_faq_06: "Pour cela tu devrais cliquer sur <b> compilation</b> et puis cliquer sur \" Nouvelle compilation\". A gauche, tu veras maintenant une liste de programmes et \xC3\xA0 droite une liste vide. C'est l'\xC3\xA9diteur de compilation. En cliquant sur le signe plus dans la liste de gauche, tu peux maintenant ajouter des programmes \xC3\xA0 ta compilation. Une fois termin\xC3\xA9, cliques sur l'ic\xC3\xB4ne Sauvegarder. Ici tu dois maintenant attribuer un nom significatif pour ta compilation, indiquer la version et donner une petite description afin que d'autres personnes sachent quels programmes sont contenues dans ta compilation. Ta compilation doit \xC3\xAAtre publi\xC3\xA9e afin que d'autres utilisateurs puissent la voir ,la noter, l'utiliser et l'installer . Cela  n'est possible que si la compilation est sauvegard\xC3\xA9e. Attention: s'il te plait  publier une compilation que si elle est m\xC3\xBBre, et si et seulement si tu es convaincu  qu'il n yaura pas de changement dans les jours qui viennent! La modification de la compilation  n'est plus possible lorsqu'elle a \xC3\xA9t\xC3\xA9 publi\xC3\xA9e. <p> Si tu es d'avis que ta compilation peut \xC3\xAAtre \xC3\xA9tendue pour des progammes utiles ou alors qu'un programme doit \xC3\xAAtre supprim\xC3\xA9 de la compilation, alors tu dois d'abord aller sous <b>compilation</ b>, puis \"ma compilation\" et selectioner la compilation correspondante. A droite dans le menu d\xC3\xA9roulant  tu selectiones ensuite \"\xC3\xA9diter la liste des paquets \" . Puis retourne \xC3\xA0 l'\xC3\xA9diteur de compilation. Apr\xC3\xA9s que la liste des paquets a \xC3\xA9t\xC3\xA9 transform\xC3\xA9e, elle doit \xC3\xAAtre sauvegarder. Maintenant, la version doit \xC3\xAAtre \xC3\xA9lev\xC3\xA9e et ensuite sauvegard\xC3\xA9e. Le paquet a \xC3\xA9t\xC3\xA9 mis \xC3\xA0 jour."
   view_user_profiles__profile_data_3: "Quelles sont les t\xC3\xA2ches veux tu accomplir avec votre ordinateur? (Pour bruts de faire un choix, r\xC3\xA9glage fin possible plus tard)"
   view_home_derivatives_47: http://wiki.ubuntuusers.de/JeOS
   to_colon: !binary |
@@ -388,7 +388,7 @@ fr:
   view_home_derivatives_52: " Une sorte de Automatix pour l'\xC3\xA9dition finale."
   view_roles_edit_1: ""
   view_users__sidebar_4: Versions-Ubuntu
-  view_home_faq_12: "Sous <b>compilation</b>, puis  \"nouvelle compilation\" il y a un point  \"compilation provenant d une liste de paquets \" qui est cliquant . Il est  d\xC3\xA9crit la fa\xC3\xA7on dont tu peux t\xC3\xA9l\xC3\xA9charger ta liste de paquets dans Communtu. Une fois le paquet  stock\xC3\xA9, le processus est le m\xC3\xAAme que lors de la cr\xC3\xA9ation d'une nouvelle compilation: Choisir un nom significatif,  d\xC3\xA9terminer la version, Enregistrer et Inserer la description ."
+  view_home_faq_12: "Sous <b>compilation</b>, puis  \"nouvelle compilation\" il y a un point  \"compilation provenant d une liste de paquets \" qui est cliquant . Il est  d\xC3\xA9crit la fa\xC3\xA7on dont tu peux t\xC3\xA9l\xC3\xA9charger ta liste de paquets dans Communtu. Une fois le paquet  stock\xC3\xA9, le processus est le m\xC3\xAAme que lors de la cr\xC3\xA9ation d'une nouvelle compilation: Choisir un nom significatif,  d\xC3\xA9terminer la version, sauvegarder et Inserer la description ."
   view_cart_new_from_list_4: "Fichier qui contient la liste des paquets, s\xC3\xA9lectionne:"
   controller_metapackages_8: "Si tu entreprends des changements la version doit \xC3\xAAtre sup\xC3\xA9rieure <br>"
   view_user_profiles_help_5: "tu \xC3\xA9largis Communtu en ta version."
@@ -510,7 +510,7 @@ fr:
   controller_users_1: "Merci pour votre inscription \xC3\xA0 Communtu! Tu peux te connecter d\xC3\xA8s maintenant."
   view_users_edit_3: "Nom d'utilisateur:"
   not_logged_in: "Tu n'est pas connect\xC3\xA9. S'il te pla\xC3\xAEt clique ci-dessus pour vous connecter."
-  controller_users_2: "Il y eu un probl\xC3\xA8me avec l'enregistrement."
+  controller_users_2: "Il y eu un probl\xC3\xA8me avec l'inscription."
   more_about_sources: "(Plus d'information sur le sujet cl\xC3\xA9 et les sources principales dans la rubrique FAQ)"
   start_vm_with_livecd_basis: "machine virtuelle en fonction des param\xC3\xA8tres LiveCD le d\xC3\xA9part (pour le d\xC3\xA9pannage)"
   view_sent_index_3: Temps
@@ -622,8 +622,8 @@ fr:
   blog_link: "http://encommuntu.wordpress.com "
   view_users_show_8: Nouvelles
   view_metapackages__metalist_20: "<option>0 compilation s\xC3\xA9lectionn\xC3\xA9 </option>   "
-  last_user: "Bienvenue \xC3\xA0 notre dernier nouveau utilisateur enregistr\xC3\xA9"
-  save_selection: "Enregistrer la s\xC3\xA9lection"
+  last_user: "Bienvenue \xC3\xA0 notre dernier nouveau utilisateur inscrit"
+  save_selection: "Sauvegarder la s\xC3\xA9lection"
   livecd_image: image CD
   view_categories_index_0: "Aper\xC3\xA7u des cat\xC3\xA9gories "
   view_packages__packagelist_1: "Seulement&nbsp;Programme:"
@@ -813,7 +813,7 @@ fr:
 
   lib_system_1: Tu n ' as pas la permission de poursuivre cette action.
   view_distributions_edit_0: Modifier la distrbution
-  view_home_about_16: "Pour pouvoir utiliser Communtu, tu dois premi\xC3\xA8rement t'enregistrer. C est tr\xC3\xA9s facile, clique simplement sur le bouton \"enregistrer \" dans la barre du haut."
+  view_home_about_16: "Pour pouvoir utiliser Communtu, tu dois premi\xC3\xA8rement t'inscrire. C est tr\xC3\xA9s facile, clique simplement sur le bouton \"s'inscrire \" dans la barre du haut."
   controller_derivatives_2: "Mis \xC3\xA0 jour des d\xC3\xA9riv\xC3\xA9s."
   lib_system_2: http://www.communtu.de
   continue: continuer
