@@ -317,31 +317,31 @@ fr:
   questionmark_conny: ""
   new_packages: ""
   view_home_faq_kde_01: ""
-  view_home_derivatives_41: ""
-  based_on_bundle: ""
+  view_home_derivatives_41: Ubuntu Ultimate - Ubuntu avec plusieurs  conceptions et programmes de bureau.
+  based_on_bundle: "fond\xC3\xA9e sur la compilation:"
   view_home_faq_kde_02: ""
-  view_home_news_15: ""
-  view_home_derivatives_42: ""
-  view_home_faq_02: ""
-  native: ""
-  view_home_news_16: ""
-  view_home_derivatives_43: ""
-  view_home_faq_03: ""
-  cd_being_created: ""
-  search_programs_bundles: ""
-  view_user_profiles__profile_data_0: ""
-  view_home_news_17: ""
-  view_home_derivatives_44: ""
+  view_home_news_15: Notre blog
+  view_home_derivatives_42: "- Sp\xC3\xA9cialis\xC3\xA9e dans les services Web."
+  view_home_faq_02: "Une compilation est un ensemble de logiciels pour un volet de t\xC3\xA2ches sp\xC3\xA9cifiques que tu peux resoudre avec votre ordinateur."
+  native: Seul Ubuntu
+  view_home_news_16: "Nous avons un blog, o\xC3\xB9 nous entrons dans les derni\xC3\xA8res informations sur Communtu. Une fois par semaine quelque chose est post\xC3\xA9. C'est l\xC3\xA0 que les annonces et les nouveaut\xC3\xA9s sont pr\xC3\xA9sent\xC3\xA9es."
+  view_home_derivatives_43: "- Est fond\xC3\xA9 sur la E17. effets 2-D sans la carte graphique rapide."
+  view_home_faq_03: Comment puis-je installer une compilation?
+  cd_being_created: "Le LiveCD / DVD est cr\xC3\xA9\xC3\xA9."
+  search_programs_bundles: "Tu as d\xC3\xA9j\xC3\xA0 install\xC3\xA9 un Ubuntu et cherche maintenant des programmes adapt\xC3\xA9s? Ici vous tu peux entrer tes centres d'int\xC3\xA9r\xC3\xAAts et  t\xC3\xA9l\xC3\xA9charger un des compilations de programme pr\xC3\xA9-configur\xC3\xA9s."
+  view_user_profiles__profile_data_0: "Installation:donner tes param\xC3\xA8tres personnels"
+  view_home_news_17: Pour blog
+  view_home_derivatives_44: "- version rapide de Ubuntu pour les PC plus anciens."
   view_home_faq_04: ""
-  view_metapackages_show_deb_error: ""
-  view_user_profiles__profile_data_1: ""
-  view_home_derivatives_45: ""
-  controller_metapackages_not_allowed: ""
-  view_home_faq_05: ""
-  view_user_profiles__profile_data_2: ""
-  view_home_derivatives_46: ""
-  view_repositories_new_0: ""
-  view_home_faq_06: ""
+  view_metapackages_show_deb_error: "Lors de la cr\xC3\xA9ation des metapaquets une erreur s'est produite. Nous nous occupons du probl\xC3\xA8me."
+  view_user_profiles__profile_data_1: "Sur cette page, vous pouvez entrer les param\xC3\xA8tres de base de votre ordinateur."
+  view_home_derivatives_45: http://wiki.ubuntuusers.de/Server_Installation
+  controller_metapackages_not_allowed: "Seul le propri\xC3\xA9taire de la distribution doit ex\xC3\xA9cuter."
+  view_home_faq_05: "Comment puis-je cr\xC3\xA9er un compilation?"
+  view_user_profiles__profile_data_2: "Note: clique \xC3\xA0 la fin  sur le bouton 'Enregistrer'!"
+  view_home_derivatives_46: "- La version Server d'Ubuntu, sans interface graphique."
+  view_repositories_new_0: "Nouveau r\xC3\xA9f\xC3\xA9rentiel pour"
+  view_home_faq_06: "Pour cela tu devrais cliquer sur <b> compilation</b> et puis cliquer sur \" Nouvelle compilation\". A gauche, tu veras maintenant une liste de programmes et \xC3\xA0 droite une liste vide. C'est l'\xC3\xA9diteur de compilation. En cliquant sur le signe plus dans la liste de gauche, tu peux maintenant ajouter des programmes \xC3\xA0 ta compilation. Une fois termin\xC3\xA9, cliques sur l'ic\xC3\xB4ne Enregistrer. Ici tu dois maintenant attribuer un nom significatif pour ta compilation, indiquer la version et donner une petite description afin que d'autres personnes sachent quels programmes sont contenues dans ta compilation. Ta compilation doit \xC3\xAAtre publi\xC3\xA9e afin que d'autres utilisateurs puissent la voir ,la noter, l'utiliser et l'installer . Cela  n'est possible que si la compilation est sauvegard\xC3\xA9e. Attention: s'il te plait  publier une compilation que si elle est m\xC3\xBBre, et si et seulement si tu es convaincu  qu'il n yaura pas de changement dans les jours qui viennent! La modification de la compilation  n'est plus possible lorsqu'elle a \xC3\xA9t\xC3\xA9 publi\xC3\xA9e. <p> Si tu es d'avis que ta compilation peut \xC3\xAAtre \xC3\xA9tendue pour des progammes utiles ou alors qu'un programme doit \xC3\xAAtre supprim\xC3\xA9 de la compilation, alors tu dois d'abord aller sous <b>compilation</ b>, puis \"ma compilation\" et selectioner la compilation correspondante. A droite dans le menu d\xC3\xA9roulant  tu selectiones ensuite \"\xC3\xA9diter la liste des paquets \" . Puis retourne \xC3\xA0 l'\xC3\xA9diteur de compilation. Apr\xC3\xA9s que la liste des paquets a \xC3\xA9t\xC3\xA9 transform\xC3\xA9e, elle doit \xC3\xAAtre sauvegarder. Maintenant, la version doit \xC3\xAAtre \xC3\xA9lev\xC3\xA9e et ensuite sauvegard\xC3\xA9e. Le paquet a \xC3\xA9t\xC3\xA9 mis \xC3\xA0 jour."
   view_user_profiles__profile_data_3: "Quelles sont les t\xC3\xA2ches veux tu accomplir avec votre ordinateur? (Pour bruts de faire un choix, r\xC3\xA9glage fin possible plus tard)"
   view_home_derivatives_47: http://wiki.ubuntuusers.de/JeOS
   to_colon: !binary |
@@ -478,7 +478,7 @@ fr:
   match_ubuntu: Adapter Ubuntu-Linux aux besoins individuels
   view_users__user_2: ""
   view_home_derivatives_7: "sous cat\xC3\xA9gorie selectionne  les \"d\xC3\xA9riv\xC3\xA9s\" \xC3\xA0 installer."
-  chat: forum
+  chat: Chat
   view_home_derivatives_8: "De m\xC3\xAAme, tu peux aussi v\xC3\xA9rifier, de quels paquets un d\xC3\xA9riv\xC3\xA9s provient."
   livecd_incorrect_name: Le nom du LiveCD / DVD ne peut prendre que de lettres, chiffres, _ et -
   passwd_no_match: "Le nouveau mot de passe ne correspond pas \xC3\xA0 la confirmation."
@@ -813,7 +813,7 @@ fr:
 
   lib_system_1: Tu n ' as pas la permission de poursuivre cette action.
   view_distributions_edit_0: Modifier la distrbution
-  view_home_about_16: "Pour pouvoir utiliser Communtu, tu dois premi\xC3\xA8rement t enregistrer. C est tr\xC3\xA9s facile, tu dois simplement cliquer sur le  bouton\"enregistrer \" dans la barre du haut."
+  view_home_about_16: "Pour pouvoir utiliser Communtu, tu dois premi\xC3\xA8rement t'enregistrer. C est tr\xC3\xA9s facile, clique simplement sur le bouton \"enregistrer \" dans la barre du haut."
   controller_derivatives_2: "Mis \xC3\xA0 jour des d\xC3\xA9riv\xC3\xA9s."
   lib_system_2: http://www.communtu.de
   continue: continuer

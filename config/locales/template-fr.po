@@ -1933,7 +1933,7 @@ msgstr "sous catégorie selectionne  les \"dérivés\" à installer."
 
 #: chat
 msgid "Chat"
-msgstr "forum"
+msgstr "Chat"
 
 #: view_home_derivatives_8
 msgid "Ebenso kannst du dort nachgucken, aus welchen Paketen ein Derivat besteht."
@@ -3229,7 +3229,7 @@ msgstr "Mis à jour des dérivés."
 
 #: view_home_about_16
 msgid "Um Communtu nutzen zu können, kannst du dich registrieren. Das geht ganz einfach über den \"Registrieren\"-Knopf in der oberen Leiste."
-msgstr "Pour pouvoir utiliser Communtu, tu dois premièrement t enregistrer. C est trés facile, tu dois simplement cliquer sur le  bouton\"enregistrer \" dans la barre du haut."
+msgstr "Pour pouvoir utiliser Communtu, tu dois premièrement t'enregistrer. C est trés facile, clique simplement sur le bouton \"enregistrer \" dans la barre du haut."
 
 #: view_home_home_10
 msgid "<b>Ubuntu-Versionen</b> Übersicht über die im System verfügbaren Ubuntu-Versionen (Distributionen)."
