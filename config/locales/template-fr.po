@@ -1809,7 +1809,7 @@ msgstr "Dans le paquet"
 
 #: kontodaten
 msgid "Konto 172 9375, Sparkasse Bremen, BLZ 290 501 01"
-msgstr "compte 172 9375, Sparkasse Bremen, boîte postale 290 501 01"
+msgstr "Numéro de compte 172 9375, Sparkasse Bremen, boîte postale 290 501 01"
 
 #: view_home_faq_21
 msgid "Wie finde ich die Communtu-Paketquellen in meinem System?"
