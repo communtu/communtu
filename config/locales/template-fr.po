@@ -1721,7 +1721,7 @@ msgstr "Qu'est-ce qu'un référentiel?"
 
 #: livecd_start_message
 msgid "Hier kannst du eine Live-CD/DVD erstellen lassen, die die von dir ausgewählte Software enthält. Du hast folgende Bündel ausgewählt:"
-msgstr "Ici, tu peux créer un Live-CD/DVD qui contient le logiciel que vous avez sélectionné. Tu as  sélectionné la compilation suivante:"
+msgstr "Ici, tu peux créer un Live-CD/DVD qui contient le logiciel que vous avez sélectionné. Tu as sélectionné la compilation suivante:"
 
 #: trusted
 msgid "Ubuntu+Community"
