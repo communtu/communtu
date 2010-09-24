@@ -562,7 +562,7 @@ fr:
   view_layouts_application_5: "via PayPal:"
   Kommentar: "Commentaire:"
   model_package_12: "Contenu de {{file}}  ne correspond pas \xC3\xA0 la Syntaxe r\xC3\xA9f\xC3\xA9rentielle"
-  imprint: Mentions legales
+  imprint: "Mentions l\xC3\xA9gales"
   view_layouts_application_6: "Maintenant, rapidement, facilement et en toute s\xC3\xA9curit\xC3\xA9 un don en ligne - avec PayPal."
   view_passwords_new_0: "Mot de passe oubli\xC3\xA9 "
   view_rating_new_comment_cancel: " Annuler"
@@ -700,7 +700,7 @@ fr:
 
   view_metapackages_show_save_3: "Pour cr\xC3\xA9er le m\xC3\xA9ta-paquet, il faut un titre en anglais et une description en anglais ."
   view_home_icons_15: "Programme-compil\xC3\xA9"
-  controller_sessions_5: "Votre nom d'utilisateur ou mot de passe est incorrect. S'il vous pla\xC3\xAEt vers le bas sur  \"enregistrer \" bouton."
+  controller_sessions_5: "Votre nom d'utilisateur ou mot de passe est incorrect. S'il vous pla\xC3\xAEt vers le bas sur  \" s'inscrire \" bouton."
   view_home_icons_16: Migration des referentiels
   view_packages_show_19: "Conflits avec les paquets suivants (seuls ceux qui ont pas de version):"
   donation_receipt: "re\xC3\xA7u de don peut \xC3\xAAtre d\xC3\xA9livr\xC3\xA9."

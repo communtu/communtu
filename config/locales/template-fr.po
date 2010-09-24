@@ -2251,7 +2251,7 @@ msgstr "Contenu de {{file}}  ne correspond pas à la Syntaxe référentielle"
 
 #: imprint
 msgid "Impressum"
-msgstr "Mentions legales"
+msgstr "Mentions légales"
 
 #: view_layouts_application_6
 msgid "Jetzt einfach, schnell und sicher online spenden – mit PayPal."
@@ -2777,7 +2777,7 @@ msgstr "Programme-compilé"
 
 #: controller_sessions_5
 msgid "Dein Benutzername oder Passwort ist falsch. Bitte ggf. unten auf \"Registrieren\" klicken."
-msgstr "Votre nom d'utilisateur ou mot de passe est incorrect. S'il vous plaît vers le bas sur  \"enregistrer \" bouton."
+msgstr "Votre nom d'utilisateur ou mot de passe est incorrect. S'il vous plaît vers le bas sur  \" s'inscrire \" bouton."
 
 #: view_home_icons_16
 msgid " Migration von Repositories"
