@@ -2911,7 +2911,7 @@ msgstr "Deb mise à jour."
 
 #: view_layouts_donate
 msgid "Spenden"
-msgstr "Donner"
+msgstr "Faire un don"
 
 #: view_home_faq_gnome_01
 msgid "Unter \"System -> Systemverwaltung -> Software-Quellen -> Softwarequellen von Drittanbietern\" sind die Communtu Quellen auffindbar. Hier können sie auch wieder deaktiviert werden."

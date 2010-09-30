@@ -330,7 +330,7 @@ fr:
   view_home_derivatives_42: "- Sp\xC3\xA9cialis\xC3\xA9e dans les services Web."
   view_home_faq_02: "Une compilation est un ensemble de logiciels pour un volet de t\xC3\xA2ches sp\xC3\xA9cifiques que tu peux resoudre avec votre ordinateur."
   native: Seul Ubuntu
-  view_home_news_16: "Nous avons un blog, o\xC3\xB9 nous entrons dans les derni\xC3\xA8res informations sur Communtu. Une fois par semaine quelque chose est post\xC3\xA9. C'est l\xC3\xA0 que les annonces et les nouveaut\xC3\xA9s sont pr\xC3\xA9sent\xC3\xA9es."
+  view_home_news_16: "Nous avons un blog, o\xC3\xB9 nous mentionons les derni\xC3\xA8res informations sur Communtu. Une fois par semaine quelque chose est post\xC3\xA9. C'est l\xC3\xA0 que les annonces et les nouveaut\xC3\xA9s sont pr\xC3\xA9sent\xC3\xA9es."
   view_home_derivatives_43: "- Est fond\xC3\xA9 sur la E17. effets 2-D sans la carte graphique rapide."
   view_home_faq_03: Comment puis-je installer une compilation?
   cd_being_created: "Le LiveCD / DVD est cr\xC3\xA9\xC3\xA9."
@@ -745,7 +745,7 @@ fr:
   view_mailbox_show_1: De
   choose_bundle: Selectioner une compilation
   controller_debs_2: "Deb mise \xC3\xA0 jour."
-  view_layouts_donate: Donner
+  view_layouts_donate: Faire un don
   view_home_faq_gnome_01: "Sous  \"Syst\xC3\xA8me -> Administration -> Sources de logiciels -> Sources de logiciels tiers \" les sources Communtu sont trouvable. Ici, elles peuvent \xC3\xA9galement \xC3\xAAtre d\xC3\xA9sactiv\xC3\xA9es \xC3\xA0 nouveau."
   view_mailbox_show_3: obtenir
   view_home_faq_gnome_02: "Pour la gestion du  paquet  Synaptic tu vas aller sur  \"Syst\xC3\xA8me -> Administration -> Gestion du paquet  Synaptic \". S\xC3\xA9lectionne  ci-dessous \xC3\xA0 gauche du point d'origine. Recherche maintenant dans la liste sus-jacente \"packages.communtu.org \" et clique dessus. Sur le c\xC3\xB4t\xC3\xA9 droit maintenant, les m\xC3\xA9ta-paquets disponibles dans Communtu seront affich\xC3\xA9s. La suppression se fait  avec un clic sur la droite de la souris et ensuite \"S\xC3\xA9lectionner pour suppression\". Ceci doit \xC3\xAAtre confirm\xC3\xA9 par \"Appliquer \"."
