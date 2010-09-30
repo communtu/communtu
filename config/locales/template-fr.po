@@ -1329,7 +1329,7 @@ msgstr "Seul Ubuntu"
 
 #: view_home_news_16
 msgid "Wir haben einen Blog, wo wir aktuelle Informationen zu Communtu eintragen. Hier wird ungefähr einmal die Woche etwas gepostet. Hier werden Ankündigungen und neue Features präsentiert."
-msgstr "Nous avons un blog, où nous entrons dans les dernières informations sur Communtu. Une fois par semaine quelque chose est posté. C'est là que les annonces et les nouveautés sont présentées."
+msgstr "Nous avons un blog, où nous mentionons les dernières informations sur Communtu. Une fois par semaine quelque chose est posté. C'est là que les annonces et les nouveautés sont présentées."
 
 #: view_home_derivatives_43
 msgid " - basiert auf E17. 2D-Effekte auch ohne schnelle Grafikkarte."
