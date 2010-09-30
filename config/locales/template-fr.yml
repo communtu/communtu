@@ -734,7 +734,7 @@ fr:
   first_sync_repos: "S'il vous pla\xC3\xAEt premi\xC3\xA9rement synchroniser les r\xC3\xA9ferentiels. Cela se fait g\xC3\xA9n\xC3\xA9ralement automatiquement dans  l'intervalle d'une semaine. S'il vous pla\xC3\xAEt noter: \xC3\xA0 ce stade n'est v\xC3\xA9rifi\xC3\xA9e que si quelque chose \xC3\xA9tait synchronis\xC3\xA9, pas de savoir si le processus est termin\xC3\xA9."
   view_home_icons_22: "Ic\xC3\xB4ne pour l'utilisateur"
   email_with_colon: "E-Mail: "
-  you_can: Tu peux aussi t'
+  you_can: "Tu peux aussi "
   view_home_icons_23: "ic\xC3\xB4ne de message"
   view_packages_show_26: Transformer le Metapaquet en compilation
   make_distribution_visible: Rendre distribution visible

@@ -2867,7 +2867,7 @@ msgstr "E-Mail: "
 
 #: you_can
 msgid "Du kannst dich auch "
-msgstr "Tu peux aussi t'"
+msgstr "Tu peux aussi "
 
 #: view_home_icons_23
 msgid "Nachrichtensymbol"
