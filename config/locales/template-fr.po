@@ -415,99 +415,99 @@ msgstr "<b> Installation </ b> vous offre une collection (collimation) des progr
 
 #: name_without_colon
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 #: direct_indirect_covered_packages_warning
 msgid "Achtung! Dauert lange und sollte nur vom Admin-Server (communtu.de:3006) aus aufgerufen werden"
-msgstr ""
+msgstr "Attention! Prend beaucoup de temps et ne doit être appelé que par le serveur d'administration à partir (communtu.de: 3006) "
 
 #: architecture_successful_updated
 msgid "Architektur erfolgreich aktualisiert."
-msgstr ""
+msgstr "Mise à jour de l'architecture avec succès."
 
 #: view_home_home_7
 msgid "<b>Bündel verwalten</b> Hast du gute Erfahrungen mit Programmen gemacht? Dann kannst du sie hier thematisch bündeln, oder auch bestehende Bündel angucken. "
-msgstr ""
+msgstr "<b>Gérer les compilations</ b> As-tu une bonne expérience avec les programmes? Peux tu les compiler thématiquement ici , ou même regarder les compilations existant."
 
 #: view_metapackages_show_3
 msgid "Zurück"
-msgstr ""
+msgstr "Retour"
 
 #: view_home_home_8
 msgid "<b>Programme suchen</b> Hier kannst du nach einzelnen Ubuntu-Programmen (Paketen) suchen."
-msgstr ""
+msgstr "<b>rechercher des programme </ b> Ici, tu peux rechercher des programmes ubuntu(paquets) individuels."
 
 #: view_home_home_9
 msgid "<b>Ubuntu-Derivate</b> bietet eine Übersicht über Kubuntu, Xubuntu, Medibuntu und wie sie alle heißen ..."
-msgstr ""
+msgstr "<b> Ubuntu dérivés </ b> donne un aperçu de Kubuntu, Xubuntu, Medibuntu, et le reste d'entre eux ..."
 
 #: updatedPackages
 msgid "geänderte Pakete: "
-msgstr ""
+msgstr "Paquets changés:"
 
 #: about_us
 msgid "Über uns"
-msgstr ""
+msgstr "A propos de nous"
 
 #: back
 msgid "zurück"
-msgstr ""
+msgstr "retour"
 
 #: no1
 msgid "nein"
-msgstr ""
+msgstr "non"
 
 #: creation_in_progress
 msgid "wird gerade erstellt"
-msgstr ""
+msgstr "est en cours de création"
 
 #: view_home_impressum_11
 msgid "Mitwirkende an der AG Communtu (Alphabetische Reihenfolge):"
-msgstr ""
+msgstr "Les contributeurs a Communtu AG (ordre alphabétique):"
 
 #: view_rating_show_title_no_ratings
 msgid "noch keine User Bewertung"
-msgstr ""
+msgstr "Aucune évaluation de l'utilisateur"
 
 #: match_with_communtu
 msgid "Communtu - gemeinsam Ubuntu-Linux an individuelle Bedürfnisse anpassen"
-msgstr ""
+msgstr "Communtu - ensemble Ubuntu Linux adapté aux besoins individuels"
 
 #: view_metapackages_show_8
 msgid "Bewertung: "
-msgstr ""
+msgstr "évaluation"
 
 #: view_roles__role_0
 msgid "Rolle löschen"
-msgstr ""
+msgstr "rôle Supprimer"
 
 #: include_programs_bundel
 msgid "Enthaltende Programme/Bündel:"
-msgstr ""
+msgstr "Contenu des programmes/compilations"
 
 #: view_metapackages_show_9
 msgid "Veröffentlicht: "
-msgstr ""
+msgstr "Publié le:"
 
 #: view_roles__role_1
 msgid "Rolle zuweisen"
-msgstr ""
+msgstr "Assigner des rôles"
 
 #: view_repositories_edit_0
 msgid "Repository bearbeiten"
-msgstr ""
+msgstr "Modifier dépôt "
 
 #: view_repositories_edit_1
 msgid "Distribution:"
-msgstr ""
+msgstr "Distribution:"
 
 #: view_categories_show_0
 msgid "Name:"
-msgstr ""
+msgstr "Nom:"
 
 #: change
 msgid "ändern"
-msgstr ""
+msgstr "changer"
 
 #: add_to_bundle
 msgid "zum Bündel hinzufügen"
@@ -535,15 +535,15 @@ msgstr ""
 
 #: add_sources
 msgid "Quellen hinzufügen"
-msgstr ""
+msgstr "Ajouter les sources"
 
 #: controller_suggestion_2
 msgid "Quellen und Schluessel hinzufuegen fuer Benutzer "
-msgstr ""
+msgstr "Ajouter les sources et la clé pour l'utilisateur"
 
 #: warnings
 msgid "Warnungen"
-msgstr ""
+msgstr "Avertissements"
 
 #: view_home_faq_all_01
 msgid "Das Deaktivieren führt nicht zum Deinstallieren von Paketen noch werden dadurch die Updates für die installierten Pakete unterbrochen. Diese werden aus anderen Softwarequellen, die ggf. von Communtu installiert wurden, bedient."
@@ -551,83 +551,83 @@ msgstr ""
 
 #: deb_generation_in_background
 msgid "Debs werden im Hintergrund erzeugt (ggf. Browser-Ansicht aktualisieren)"
-msgstr ""
+msgstr "Debs sont générés dans l'arrière-plan (le cas échéant, mise à jour du navigateur )"
 
 #: view_home_faq_all_02
 msgid "Die einzelnen Pakete werden dadurch nicht deinstalliert sondern lassen sich wie gewohnt über Synaptic oder KPackageKit auswählen und deinstallieren."
-msgstr ""
+msgstr "Les paquets individuels ne seront pas supprimés, mais cela peut faire sur  Synaptic ou kpackagekit, selectioner et désinstaller."
 
 #: controller_suggestion_4
 msgid "Quellen und Schluessel hinzufuegen fuer Buendel "
-msgstr ""
+msgstr "Ajouter Sources et clé pour compilation"
 
 #: controller_suggestion_6
 msgid "Quellen und Schluessel hinzufuegen fuer Paket "
-msgstr ""
+msgstr "Ajouter les Sources et la clé pour le paquet"
 
 #: view_users__mailbox_list_1
 msgid "Mailbox"
-msgstr ""
+msgstr "Boîte aux lettres"
 
 #: controller_metapackages_no_renaming
 msgid "Veröffentlichte Bündel können nicht umbenannt werden."
-msgstr ""
+msgstr "Compilations publiées ne peuvent pas être renommées."
 
 #: not_accepted
 msgid "Die eingegebene E-Mail-Adresse hat ungültige Formate oder ist unvollständig."
-msgstr ""
+msgstr "L'adresse e-mail a un format invalide ou est incomplète."
 
 #: view_repositories_migrate_1
 msgid "Kopiere Repository "
-msgstr ""
+msgstr "Copie le dépôt"
 
 #: view_rating_new_comment_info
 msgid "Gib bitte eine Beschreibung zu deiner Bewertung an. Diese Angabe ist <b>Pflicht</b>."
-msgstr ""
+msgstr "S'il te plaît donne une description de ton évaluation. Cette information est <b>obligatoire</ b>."
 
 #: view_packages_new_0
 msgid "Neues Paket"
-msgstr ""
+msgstr "Nouveau paquet"
 
 #: view_users__mailbox_list_3
 msgid "Versendete Nachrichten"
-msgstr ""
+msgstr "Les messages envoyés"
 
 #: view_repositories_migrate_2
 msgid " nach Distribution"
-msgstr ""
+msgstr "par la distribution"
 
 #: controller_suggestion_8
 msgid "Ubuntu-Nachinstallation fuer Benutzer "
-msgstr ""
+msgstr "Ubuntu après-installation pour les utilisateurs"
 
 #: bundel_edit
 msgid "Bündel bearbeiten"
-msgstr ""
+msgstr "Modifier les compilations"
 
 #: english_name
 msgid "Englischer Name:"
-msgstr ""
+msgstr "Nom anglais:"
 
 #: errors
 msgid "Fehler"
-msgstr ""
+msgstr "Erreur"
 
 #: view_packages_new_3
 msgid "Version"
-msgstr ""
+msgstr "Version"
 
 #: view_home_news_1
 msgid "Unsere Mailinglisten"
-msgstr ""
+msgstr "Nos listes de diffusion"
 
 #: view_packages_new_4
 msgid "Quelle"
-msgstr ""
+msgstr "Source"
 
 #: compose_new_message
 msgid "neue Nachricht schreiben"
-msgstr ""
+msgstr "Ecrire un nouveau message"
 
 #: view_home_news_2
 msgid "Um die Kommunikation mit unseren Nutzern zu verbessern, haben wir Mailinglisten eingerichtet:"
@@ -635,25 +635,27 @@ msgstr ""
 
 #: view_home_news_3
 msgid "communtu-announce-de+subscribe@googlegroups.com"
-msgstr ""
+msgstr "Communtu-announce-de + subscribe@googlegroups.com)"
 
 #: view_packages_new_6
 msgid "Videos"
-msgstr ""
+msgstr "Videos"
 
 #: view_home_cancel_0
 msgid ""
 "Communtu -\n"
 " leider hat da etwas beim Spenden nicht funktioniert."
 msgstr ""
+"Communtu - \n"
+" malheureusement, il ya quelque chose ne fonctionne avec le don."
 
 #: conny_picture
 msgid "Portrait von Conny Communtu"
-msgstr ""
+msgstr "Portrait de Communtu Conny"
 
 #: bundle_to_livecd
 msgid "LiveCD/DVD aus Bündel <i>{{name}}</i> erstellen"
-msgstr ""
+msgstr "LiveCD / DVD á partir de la compilation<i>{{name}}</ i> créer"
 
 #: view_home_cancel_1
 msgid "Endweder versuchst du es noch einmal oder du nutzt die Möglichkeit per Überweisung"
@@ -665,7 +667,7 @@ msgstr ""
 
 #: used_in_bundles
 msgid "Wird bei Communtu in folgenden Bündeln benutzt:"
-msgstr ""
+msgstr "Utilisé avec Communtu dans les compilations suivantes:"
 
 #: view_user_mailer_activation_0
 msgid ", dein Benutzerkonto wurde aktiviert.  Folge nun dem Link:"
@@ -1391,7 +1393,7 @@ msgstr "- La version Server d'Ubuntu, sans interface graphique."
 
 #: view_repositories_new_0
 msgid "Neues Repository für "
-msgstr "Nouveau référentiel pour"
+msgstr "Nouveau dépôt pour"
 
 #: view_home_faq_06
 msgid "Hierfür klickst du auf <b>Bündel</b> und dann auf \"Neues Bündel\". Links siehst du nun eine Liste mit Programmen und rechts noch eine leere Liste. Dies ist der Bündeleditor. Mit einem Klick auf das Plus-Zeichen in der linken Liste kannst du nun Programme zu deinem Bündel hinzufügen. Sobald du damit fertig bist klickst auf das Speichern-Symbol. Hier musst du nun einen sinnvollen Namen für dein Bündel vergeben, die Version angeben und eine kleine Beschreibung eingeben damit andere Nutzer sofort wissen was für Programme in deinem Bündel sind. Damit andere Nutzer dein Bündel sehen, bewerten und installieren können muss dieses veröffentlicht werden. Dies geht erst, sobald das Bündel gespeichert ist. Achtung: bitte ein Bündel erst veröffentlichen wenn es ausgereift ist, also wenn du der Meinung bist, hier wird sich so schnell nichts mehr ändern! Das Ändern des Bündels ist nicht mehr möglich wenn es veröffentlicht wurde.<p> Wenn du der Meinung bist, dass dein Bündel um nützliche Programme erweitert werden kann oder ein Programm nicht mehr in dem Bündel enthalten sein soll musst du zuerst unter <b>Bündel</b> und dann \"Meine Bündel\" das entsprechende Bündel auswählen. Rechts ist dann aus dem Aufklapp-Menü der Punkt \"Paketliste editieren\" auszuwählen. Anschließend erscheint wieder der Bündeleditor. Sobald die Paketliste bearbeitet wurde muss diese gespeichert werden. Nun muss die Version höhergesetzt werden und anschließend gespeichert werden. Das Bündel wurde nun aktualisiert."
@@ -1539,7 +1541,7 @@ msgstr "-Participer"
 
 #: view_home_derivatives_51
 msgid " - Installation von Programmen und Versionen, die nicht über die offiziellen Repositories erhältlich sind."
-msgstr "- Installation de programmes et de versions qui ne sont pas disponibles dans les référentiels officiels."
+msgstr "- Installation de programmes et de versions qui ne sont pas disponibles dans les dépôts officiels."
 
 #: view_roles_edit_0
 msgid "Rolle bearbeiten"
@@ -1663,7 +1665,7 @@ msgstr "http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix"
 
 #: view_home_faq_16
 msgid "Gehe dazu bitte auf den Menüpunkt \"Programme suchen\". Dort bekommst du eine Auswahl von Programmen. Wenn du dein gewünschtes Programm gefunden hast, kannst du dieses durch Klicken auf das Installationssymbol installieren. Es ist möglich, dass du vorher noch auf \"Quellen hinzufügen\" klicken musst, da es sein kann, dass das Programm in einer Quelle verfügabr ist, die deinem System noch nicht bekannt ist."
-msgstr "Aller sur l'option menu \"Rechercher programmes\". Là, tu as un choix de programmes. Si tu  as trouvé le programme désiré, tu  peux l'installer en cliquant sur l'icône d'installation. Il est possible que tu cliques avant sur \"Ajouter sources \" , car il peut arriver que  le programme soit dans une source, que ton système ne connait pas encore."
+msgstr "Aller sur l'option menu \"Rechercher des programmes\". Là, tu as un choix de programmes. Si tu  as trouvé le programme désiré, tu  peux l'installer en cliquant sur l'icône d'installation. Il est possible que tu cliques avant sur \"Ajouter sources \" , car il peut arriver que  le programme soit dans une source, que ton système ne connait pas encore."
 
 #: view_my_mailer_repo_0
 msgid ""
@@ -1673,7 +1675,7 @@ msgid ""
 msgstr ""
 "Bonjour, \n"
 "\n"
-"une proposition d'un nouveau référentiel a été faite  sur www.communtu.de :"
+"une proposition d'un nouveau dépôt a été faite  sur www.communtu.de :"
 
 #: settings
 msgid "Einstellungen"
@@ -1689,7 +1691,7 @@ msgstr "Modifier l'architecture"
 
 #: view_home_faq_17
 msgid "Wie kann ich einen Programmvorschlag einbringen?"
-msgstr "Comment puis-je faire entrer une proposition de programme?"
+msgstr "Comment puis-je faire entrer une proposition de programmes?"
 
 #: view_my_mailer_repo_1
 msgid "Folgende Begründung wurde angegeben:"
@@ -1705,7 +1707,7 @@ msgstr "De:"
 
 #: view_home_faq_18
 msgid "Das ist ganz einfach. Dazu klickst du im Bündeleditor (erreichbar wenn du auf <b>Bündel</b> klickst) auf \"Repository vorschlagen\". Hier musst du nun den Link zu dem Programm angeben und uns kurz erläutern, wieso wir das Programm in Communtu aufnehmen sollen."
-msgstr "C'est très simple. Pour ce faire, cliquez dans l'éditeur de compilation (disponible lorsque tu  cliques sur <b> compilation/ b>)  \"proposer le référentiel\". Ici, tu dois maintenant spécifier le lien vers le programme et brièvement nous expliquer pourquoi nous devrions prendre dans le programme Communtu."
+msgstr "C'est très simple. Pour ce faire, cliquez dans l'éditeur de compilation (disponible lorsque tu  cliques sur <b> compilation/ b>)  \"proposer le dépôt\". Ici, tu dois maintenant spécifier le lien vers le programme et brièvement nous expliquer pourquoi nous devrions prendre dans le programme Communtu."
 
 #: view_home_beteiligung_1
 msgid "Anwenden der Plattform"
@@ -1717,7 +1719,7 @@ msgstr "non-free"
 
 #: view_home_faq_19
 msgid "Was ist ein Repository?"
-msgstr "Qu'est-ce qu'un référentiel?"
+msgstr "Qu'est-ce qu'un dépôt?"
 
 #: livecd_start_message
 msgid "Hier kannst du eine Live-CD/DVD erstellen lassen, die die von dir ausgewählte Software enthält. Du hast folgende Bündel ausgewählt:"
@@ -1733,7 +1735,7 @@ msgstr "Tout d'abord, nous serions heureux si tu utilises Communtu pour éffectu
 
 #: helper_distributions_2
 msgid "Repository synchronisieren"
-msgstr "Synchroniser le référentiel"
+msgstr "Synchroniser le dépôt"
 
 #: view_messages_show_2
 msgid "erhalten am:"
@@ -1789,7 +1791,7 @@ msgstr "Afficher"
 
 #: view_home_faq_20
 msgid "Ein Repository (englisch für \"Paketquelle\") ist eine Sammlung von Programmen. Über die Paketverwaltung (in Gnome und XFCE ist dies Synaptic, in KDE ist dies KPackageKit) kannst du Programme aus den Paketquellen installieren. Gleichzeitig bekommst du über genau die gleichen Paketquellen auch die Updates für die installierten Programme. Weitere Informationen zu Paketquellen findest du <a href=\"http://wiki.ubuntuusers.de/Paketquellen\" target=\"_blank\">hier</a>."
-msgstr "Un référentiel (en anglais pour  \"paquet source \") est une collection de programmes. À propos de la gestion de paquets (dans GNOME et Xfce c'est Synaptic, dans KDE c'est KpackageKit), tu peux installer des programmes à partir des sorces de paquets. Dans le même temps tu obtiens exactement sur le même paquet de sources, les mises à jour pour les programmes installés. Pour plus d'informations sur les sources de paquets tu peux trouver <a href=\"http://wiki.ubuntuusers.de/Paketquellen\" target=\"_blank\">ici</a>."
+msgstr "Un dépôt (en anglais pour  \"paquet source \") est une collection de programmes. À propos de la gestion de paquets (dans GNOME et Xfce c'est Synaptic, dans KDE c'est KpackageKit), tu peux installer des programmes à partir des sorces de paquets. Dans le même temps tu obtiens exactement sur le même paquet de sources, les mises à jour pour les programmes installés. Pour plus d'informations sur les sources de paquets tu peux trouver <a href=\"http://wiki.ubuntuusers.de/Paketquellen\" target=\"_blank\">ici</a>."
 
 #: view_messages_show_4
 msgid "Weiterleiten"
@@ -1825,7 +1827,7 @@ msgstr "contenus des paquets directement et indirectement "
 
 #: helper_distributions_6
 msgid "Repository löschen"
-msgstr "Supprimer le Réferentiel"
+msgstr "Supprimer le dépôt"
 
 #: view_home_derivatives_2
 msgid "Ubuntu-Derivaten"
@@ -1869,7 +1871,7 @@ msgstr "Nouvelle catégorie"
 
 #: view_home_faq_24
 msgid "Welche Pakete liegen in Eurem Repository?"
-msgstr "Quels paquets se trouvent dans votre référentiel?"
+msgstr "Quels paquets se trouvent dans votre dépôt?"
 
 #: news
 msgid "Aktuelles"
@@ -2179,7 +2181,7 @@ msgstr "Communtu correspond à votre système Ubuntu Linux pour répondre à vos
 
 #: view_admins_sync_package_1
 msgid "Fehler: Repository konnte nicht synchronisiert werden"
-msgstr "Erreur: Référentiel n'a pas pu être synchronisé"
+msgstr "Erreur: Dépôt n'a pas pu être synchronisé"
 
 #: view_metapackages_show_17
 msgid "Veröffentlichen"
@@ -2191,7 +2193,7 @@ msgstr "Communtu"
 
 #: view_admins_sync_package_2
 msgid "Repository synchronisiert"
-msgstr "Référentiel synchronisé"
+msgstr "Dépôt synchronisé"
 
 #: view_metapackages_show_18
 msgid "Wenn du das Bündel veröffentlichst, wird es für alle Nutzer zugänglich. Allerdings kann es danach nicht mehr gelöscht oder unbenannt werden."
@@ -2207,7 +2209,7 @@ msgstr "Ubuntu Logo"
 
 #: view_admins_sync_package_3
 msgid "Repository: "
-msgstr "Référentiel:"
+msgstr "Dépôt:"
 
 #: create
 msgid "Anlegen"
@@ -2223,7 +2225,7 @@ msgstr "Lors de la synchronisation du référentiel {{repo_name}} le paquet {{pa
 
 #: metacart_choose
 msgid "Füge Programme zu deinem Bündel hinzu."
-msgstr "Ajoute des  programmes a ta compilation"
+msgstr "Ajoute des programmes á ta compilation"
 
 #: migrate_repositories
 msgid "Repositories von Vorgänger übernehmen"
@@ -2247,7 +2249,7 @@ msgstr "Commentaire:"
 
 #: model_package_12
 msgid "Inhalt von {{file}} entspricht nicht Repository-Syntax"
-msgstr "Contenu de {{file}}  ne correspond pas à la Syntaxe référentielle"
+msgstr "Contenu de {{file}}  ne correspond pas à la Syntaxe dépôt"
 
 #: imprint
 msgid "Impressum"
@@ -2329,7 +2331,7 @@ msgstr "Icône"
 
 #: controller_repositories_0
 msgid "Repositorys"
-msgstr "Référentiels"
+msgstr "Dépôs"
 
 #: view_packages_edit_3
 msgid "&nbsp;&nbsp;Neues Icon: "
@@ -2341,7 +2343,7 @@ msgstr "Pour vous connecter veuillez donner l'identifiant et le mot de passe "
 
 #: controller_repositories_1
 msgid "Repository erzeugt."
-msgstr "Référentiel crée"
+msgstr "Dépôt crée"
 
 #: view_packages_edit_4
 msgid "Ist ein Programm:"
@@ -2365,7 +2367,7 @@ msgstr "arrêt de la machine virtuelle"
 
 #: controller_repositories_2
 msgid "Repository aktualisiert."
-msgstr "Référentiel mis à jour."
+msgstr "Dépôt mis à jour."
 
 #: controller_repositories_3
 msgid "sources.list eingelesen."
@@ -2497,7 +2499,7 @@ msgstr "Aperçu des catégories "
 
 #: view_packages__packagelist_1
 msgid "Nur&nbsp;Programme:"
-msgstr "Seulement&nbsp;Programme:"
+msgstr "Seulement&nbsp;Programmes:"
 
 #: eg
 msgid "z.B."
@@ -2637,7 +2639,7 @@ msgstr "Programme"
 
 #: view_user_profiles__profile_data_12
 msgid " Alle Quellen zulassen (etwas unsicherer: <a href=\"http://wiki.ubuntuusers.de/Fremdquellen\">Fremdpakete</a> können das System gefährden, aber noch mehr Programme/Komfort: "
-msgstr "Authoriser toutes les sources  (un peu incertaine: <a href=\"http://wiki.ubuntuusers.de/Fremdquellen\"> Paquets inconnus </ a> peuvent compromettre le système, mais plus encore programme/confort:"
+msgstr "Authoriser toutes les sources  (un peu incertaine: <a href=\"http://wiki.ubuntuusers.de/Fremdquellen\"> Paquets inconnus </ a> peuvent compromettre le système, mais plus encore programmes/confort:"
 
 #: view_packages_show_8
 msgid "Beliebtheit:"
@@ -2689,7 +2691,7 @@ msgstr "Standard"
 
 #: view_packages_show_15
 msgid "Quelle/Repository"
-msgstr "Source/Referentiel"
+msgstr "Source/dépôt"
 
 #: view_user_profiles__profile_data_14
 msgid " Freie Software (Quellen liegen offen und dürfen weiterentwickelt werden)"
@@ -2721,7 +2723,7 @@ msgstr "Créer nouveau méta-paquet."
 
 #: view_home_icons_13
 msgid "Programm-Bündel"
-msgstr "Programme-compilé"
+msgstr "Programme compilé"
 
 #: view_metapackages__metalist_3
 msgid "Öff."
@@ -2773,7 +2775,7 @@ msgstr "Pour créer le méta-paquet, il faut un titre en anglais et une descript
 
 #: view_home_icons_15
 msgid " Programm-Bündel"
-msgstr "Programme-compilé"
+msgstr "Programme compilé"
 
 #: controller_sessions_5
 msgid "Dein Benutzername oder Passwort ist falsch. Bitte ggf. unten auf \"Registrieren\" klicken."
@@ -2797,7 +2799,7 @@ msgstr "reçu de don peut être délivré."
 
 #: repository_url
 msgid "Repository-URL: "
-msgstr "Referentiel-URL:"
+msgstr "Dépôt-URL:"
 
 #: controller_sessions_6
 msgid "Dein Benutzerkonto wurde noch nicht aktiviert. Der Aktivierungscode wurde dir per Email zugeschickt."
@@ -2817,7 +2819,7 @@ msgstr "lien externe"
 
 #: view_home_home_bundle
 msgid "vorkonfigurierte veröffentlichte Programmbündel in Communtu"
-msgstr "la publication des compilations de programmes pre-configurés dans communtu"
+msgstr "la publication des compilations de programmes pré-configurés dans communtu"
 
 #: view_packages_show_21
 msgid "Wird in folgenden Paketen benutzt:"
@@ -2941,7 +2943,7 @@ msgstr "Jusqu'ici Live-CDs/DVDs créé:"
 
 #: migrate_repository
 msgid "Repository migieren"
-msgstr "remplacer le referentiel"
+msgstr "remplacer le dépôt"
 
 #: bundle_editor
 msgid "Bündel-Editor"
@@ -3089,7 +3091,7 @@ msgstr "démarrer la machine virtuelle"
 
 #: view_user_profiles__profile_rating_0
 msgid "Auswahl der zu installierenden Programmbündel und Programme"
-msgstr "Sélectione la compilation de programme et les programmes á installer"
+msgstr "Sélectione la compilation de programmes et les programmes á installer"
 
 #: model_package_1
 msgid "Frei+proprietär"
@@ -3357,7 +3359,7 @@ msgstr "Live-CD/DVD Créé par:"
 
 #: controller_home_5
 msgid "Wir haben deinen Vorschlag erhalten und werden dich informieren, ob und wann wir das vorgeschlagene Repository aufnehmen werden."
-msgstr "Nous avons reçu ta proposition et  t informerons si et quand nous allons enregistrer le référentiel proposé."
+msgstr "Nous avons reçu ta proposition et  t informerons si et quand nous allons enregistrer le dépôt proposé."
 
 #: view_home_home_20
 msgid ", um einen neuen Benutzer anzulegen, oder "
@@ -3537,7 +3539,7 @@ msgstr "Aimerais tu en savoir plus sur vous Communtu? As tu des suggestions, des
 
 #: view_repositories_index_5
 msgid "Neues Repository"
-msgstr "Nouveau référentiel"
+msgstr "Nouveau dépôt"
 
 #: view_distributions_show_0
 msgid "Repositories:"
@@ -3585,7 +3587,7 @@ msgstr "Lire sources.liste"
 
 #: view_distributions_show_4
 msgid "Repository hinzufügen"
-msgstr "Ajouter un référentiel"
+msgstr "Ajouter un dépôt"
 
 #: view_layouts_application_23
 msgid "BÜNDEL"
