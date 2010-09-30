@@ -31,367 +31,367 @@ msgstr "COMMUNTU"
 
 #: cannot_migrate
 msgid "Kann nur migrieren, wenn die Distribution frisch ist"
-msgstr ""
+msgstr "Peuvent migrer seulement si la distribution est fraîche"
 
 #: view_home_beteiligung_10
 msgid "Grafik"
-msgstr ""
+msgstr "Graphiques"
 
 #: zentrum_solidarische_oekonomie
 msgid "Zentrum für Solidarische Ökonomie"
-msgstr ""
+msgstr "Centre pour l'Economie Solidaire"
 
 #: view_user_profiles__installation_13
 msgid "(Bei einem Versionswechsel muss der erste Schritt erneut ausgeführt werden, da die Communtu Quellen durch das Upgrade deaktiviert wurden.):"
-msgstr ""
+msgstr "(Si tu changes changes de version la première étape doit être relancée, puisque les sources Communtu ont été handicapés par la mise à niveau.):"
 
 #: view_layouts_application_26
 msgid "Navigation Bündel"
-msgstr ""
+msgstr "Navigation compilation"
 
 #: controller_accounts_1
 msgid "Dein Benutzerkonto wurde aktiviert! Du kannst dich nun einloggen."
-msgstr ""
+msgstr "Ton compte a été activé! Tu peux te connecter maintenant."
 
 #: view_home_beteiligung_11
 msgid "Wir benötigen eine Person, die für das Projekt das Layout übernimmt. Dies bedeutet Grafiken einbinden und die Hauptverantwortung für das CSS übernehmen."
-msgstr ""
+msgstr "Nous avons besoin d'une personne qui sera responsable de la mise en page du projet. Cela signifie incorporer des images et la responsabilité principale pour le CSS."
 
 #: view_layouts_application_27
 msgid "Navigation Download"
-msgstr ""
+msgstr "Télécharger la navigation"
 
 #: email_without_colon
 msgid "E-Mail"
-msgstr ""
+msgstr "E-Mail"
 
 #: controller_accounts_2
 msgid "Aktivierungs-Code nicht gefunden. Bitte versuche, ein neues Benutzerkonto anzulegen."
-msgstr ""
+msgstr "Code d'activation n'a pas été trouvé. S'il te plaît essaye de créer un nouveau compte."
 
 #: view_home_beteiligung_12
 msgid "Programmierung"
-msgstr ""
+msgstr "Programmation"
 
 #: vm_running
 msgid "virtuelle Maschine läuft"
-msgstr ""
+msgstr "machine virtuelle marche"
 
 #: view_distributions_show_8
 msgid "Vor dem Löschen einer Distribution müssen alle Benutzer, die sie nutzen, ausgeloggt sein! Bist du sicher?"
-msgstr ""
+msgstr "Avant de supprimer une distribution, tous les utilisateurs qui l'utilisent doivent se déconnecter! Es-tu sûr?"
 
 #: cd_failed
 msgid "Fehlgeschlagen - wir kümmern uns darum"
-msgstr ""
+msgstr "Échec - nous nous en occupons"
 
 #: view_roles_index_0
 msgid "Rollen für "
-msgstr ""
+msgstr "Rôles pour"
 
 #: view_home_beteiligung_13
 msgid "Da wir viele Ideen für die Weiterentwicklung der Plattform haben, benötigen wir noch eine/n ProgrammiererIn. Idealerweise hast du schon Erfahrungen in Ruby on Rails sammeln können."
-msgstr ""
+msgstr "Etant donné que nous avons de nombreuses idées pour la poursuite du développement de la plate-forme, nous avons encore besoin d'un/une programmeur. Idéalement, vous avez déjà une expérience avec Ruby on Rails ."
 
 #: view_user_profiles__installation_16
 msgid "Quellen und Schlüssel eintragen"
-msgstr ""
+msgstr "Donner les sources et les clés"
 
 #: controller_accounts_4
 msgid "Bein Benutzerkontoutzerkonto wurde bereits aktiviert. Du kannst dich nun anmelden."
-msgstr ""
+msgstr "Ton compte est déjà activé. Tu peux t'inscrire dès maintenant."
 
 #: view_roles_index_1
 msgid "Zugewiesene Rollen:"
-msgstr ""
+msgstr "rôles assignés:"
 
 #: view_home_beteiligung_14
 msgid "Wir können dir auch helfen diese Programmiersprache zu lernen. Also melde dich einfach bei "
-msgstr ""
+msgstr "Nous pouvons également t'aider à apprendre cette langue. Donc, tout simplement se connecter á"
 
 #: view_user_profiles__installation_17
 msgid "Link einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer öffnen - wenn kein Prorgammdialog erscheint, wurde die Datei auf deinem Rechner heruntergeladen. Dort kannst du sie mit Doppelklick starten."
-msgstr ""
+msgstr "Cliquer sur le lien, puis comme suggéré, ouvrir avec le package d'installation - si aucun Progammdialog apparaît, le fichier a été téléchargé sur votre ordinateur. Là, tu peux le lancer en double-cliquant dessus."
 
 #: controller_accounts_5
 msgid "Passwort aktualisiert."
-msgstr ""
+msgstr "Mot de passe mise à jour."
 
 #: view_roles_index_2
 msgid "Verfügbare Rollen:"
-msgstr ""
+msgstr "rôles disponibles:"
 
 #: view_home_beteiligung_15
 msgid "uns"
-msgstr ""
+msgstr "nous"
 
 #: view_layouts_application_30
 msgid "Hilfe/FAQ"
-msgstr ""
+msgstr "Aide / FAQ"
 
 #: view_categories_edit_0
 msgid "Kategorie bearbeiten"
-msgstr ""
+msgstr "Modifier une catégorie"
 
 #: view_user_profiles_new_0
 msgid "Neues Nutzerprofil"
-msgstr ""
+msgstr "Nouveau profil de l'utilisateur"
 
 #: view_layouts_application_31
 msgid "Kontakt"
-msgstr ""
+msgstr "Contact"
 
 #: hello
 msgid "Herzlich Willkommen"
-msgstr ""
+msgstr "Bienvenue"
 
 #: controller_accounts_6
 msgid "Es ist ein Fehler aufgetreten. Das Passwort wurde nicht geändert."
-msgstr ""
+msgstr "Il y a eu une erreur. Le mot de passe n'a pas été modifié."
 
 #: view_user_profiles_new_1
 msgid "Benutzer"
-msgstr ""
+msgstr "Utilisateurs"
 
 #: english_description
 msgid "Englische Beschreibung:"
-msgstr ""
+msgstr "description en anglais:"
 
 #: view_layouts_application_32
 msgid "Admin"
-msgstr ""
+msgstr "Admin"
 
 #: view_metapackages__package_list_0
 msgid "Gesamtgröße des Bündels auf der Festplatte:"
-msgstr ""
+msgstr "Taille totale de la compilation sur le disque dur:"
 
 #: view_metapackages__package_list_1
 msgid "verfügbar für:"
-msgstr ""
+msgstr "disponible pour:"
 
 #: direct_indirect_covered_packages
 msgid "Direkt und indirekt enthaltene Pakete"
-msgstr ""
+msgstr "Directement et indirectement les paquets inclus"
 
 #: controller_accounts_8
 msgid "Dein altes Passwort war inkorrekt."
-msgstr ""
+msgstr "Votre ancien mot de passe est incorrect."
 
 #: view_categories_edit_3
 msgid "Link für weitere Informationen"
-msgstr ""
+msgstr "ien pour plus d'informations"
 
 #: view_user_profiles_new_3
 msgid "Expertenlevel"
-msgstr ""
+msgstr "Experts de haut niveau"
 
 #: view_metapackages__package_list_2
 msgid "Paket/Programm aus Bündel entfernen"
-msgstr ""
+msgstr "Supprimer Paquet/Programme de la compilation"
 
 #: view_categories_edit_4
 msgid "Hauptkategory, die auf der Startseite Download angezeigt wird:"
-msgstr ""
+msgstr "Catégorie principale qui est affichée sur la page d'accueil du téléchargement:"
 
 #: view_user_profiles__installation_21
 msgid "installieren der Metapakete. Bitte vorher die Quellen hinzufügen."
-msgstr ""
+msgstr "installer les méta-paquets. S'il te plaît il faut d'abord ajouter les sources."
 
 #: bundle_open_new_window
 msgid "Bündel wird im neuen Fenster geöffnet."
-msgstr ""
+msgstr "Compilation s'ouvrira dans une nouvelle fenêtre."
 
 #: repositories_incompletely_read
 msgid "Repositories ohne Pakete (da nicht richtig eingelesen)"
-msgstr ""
+msgstr "Dépôts sans paquets (transfert pas  correcte)"
 
 #: name_of_livecd
 msgid "Name der LiveCD/DVD:"
-msgstr ""
+msgstr "Nom du live CD / DVD:"
 
 #: view_users_new_10
 msgid "Dein Vorname"
-msgstr ""
+msgstr "Ton  prénom"
 
 #: view_user_profiles__installation_23
 msgid "Pakete installieren. Es gibt zwei Alternativen:"
-msgstr ""
+msgstr "Installer les paquets. Il existe deux alternatives:"
 
 #: view_users_new_11
 msgid "Dein Nachname"
-msgstr ""
+msgstr "Ton nom de famille"
 
 #: view_user_profiles__installation_24
 msgid "Installation über ein Metapaket"
-msgstr ""
+msgstr "Installation à partir d'un méta-paquet"
 
 #: view_users_new_12
 msgid "(optional)"
-msgstr ""
+msgstr "(Facultatif)"
 
 #: view_user_profiles__installation_25
 msgid "Installation über apturl"
-msgstr ""
+msgstr "Installation des apturl"
 
 #: controller_users_10
 msgid "Benutzer gelöscht"
-msgstr ""
+msgstr "Utilisateur supprimé"
 
 #: controller_users_11
 msgid "Es gab ein Problem mit der Löschung."
-msgstr ""
+msgstr "Il y a eu un problème lors de la suppression."
 
 #: superior_category
 msgid "Übergeordnete Kategorie"
-msgstr ""
+msgstr "Catégorie supérieure"
 
 #: repository
 msgid "Repository"
-msgstr ""
+msgstr "Dépôt"
 
 #: view_user_profiles__installation_27
 msgid "Die Browser Konqueror und Opera bitte erst für "
-msgstr ""
+msgstr "Le navigateur Konqueror et Opera seulement pour"
 
 #: controller_users_12
 msgid "Benutzer aktiviert"
-msgstr ""
+msgstr "Utilisateur activé"
 
 #: view_user_profiles__installation_28
 msgid "http://wiki.ubuntuusers.de/apturl"
-msgstr ""
+msgstr "http://wiki.ubuntuusers.de/apturl"
 
 #: no_packet_information_found
 msgid "Es konnten keine Angabe zu Paketinformationen getroffen werden."
-msgstr ""
+msgstr "Il n'y avait aucune indication pour la trousse d'information."
 
 #: name_with_colon
 msgid "Name: "
-msgstr ""
+msgstr "Nom:"
 
 #: controller_distributions_0
 msgid "Ubuntu Distributionen"
-msgstr ""
+msgstr "distributions Ubuntu"
 
 #: kurzname
 msgid "Kurzname"
-msgstr ""
+msgstr "Nom court"
 
 #: no_cookies
 msgid "Du hast deine Cookies deaktiviert. Zum Nutzen von Communtu sind diese erforderlich. Wir empfehlen dir, die Cookies wieder anzuschalten."
-msgstr ""
+msgstr "Tu as désactivé tes cookies. Pour utiliser Communtu elles sont nécessaires. Nous vous recommandons d'allumer les cookies."
 
 #: controller_users_13
 msgid "Es gab ein Problem mit der Aktivierung dieses Benutzers."
-msgstr ""
+msgstr "Il y a eu un problème avec l'activation de cet utilisateur."
 
 #: view_user_profiles__installation_29
 msgid " konfigurieren."
-msgstr ""
+msgstr "Configurer"
 
 #: view_home_faq_xfce_01
 msgid "Unter \"Anwendungen -> System -> Softwarequellen von Drittanbietern\" sind die Communtu Quellen auffindbar. Hier können sie auch wieder deaktiviert werden."
-msgstr ""
+msgstr "Sous la rubrique \"Applications -> Système - >sources de logiciels tiers \"  les sources Communtu sont  trouvables. Ici, elles peuvent également être désactivé à nouveau."
 
 #: controller_distributions_1
 msgid "Distribution erzeugt."
-msgstr ""
+msgstr "Distribution générée."
 
 #: gpg_key
 msgid "GPG Schlüssel (optional): "
-msgstr ""
+msgstr "clé GPG (facultatif):"
 
 #: controller_passwords_1
 msgid "Ein Link zum Andern des Passworts wurde an deine Email-Adresse geschickt."
-msgstr ""
+msgstr "Un lien qui te permettra de changer ton mot de passe a été envoyé à ton adresse e-mail ."
 
 #: view_home_contact_us_0
 msgid "Feedbackformular"
-msgstr ""
+msgstr "Formulaire de rétroaction"
 
 #: view_home_faq_xfce_02
 msgid "Die Pakerverwaltung Synaptic erreichst du über \"Anwendungen -> System-> Synaptic-Paketverwaltung\". Wähle hier unten links den Punkt Ursprung. Suche nun in der darüber liegenden Liste \"packages.communtu.org\" und klicke es an. Auf der rechten Seite werden nun die verfügbaren Metapakete in Communtu angezeigt. Das Entfernen geht über Rechtsmausklick und dann \"Zum Entfernen vormerken\". Dies muss dann danach durch \"Anwenden\" bestätigt werden."
-msgstr ""
+msgstr "La gestion du paquet Synaptic ce fait sur  \"Applications -> Système-> Gestion du paquet Synaptic \". Sélectionne ci-dessous, à gauche du point d'origine. Recherche maintenant dans la liste ci-dessus \"packages.communtu.org \" et clique dessus. Sur le côté droit maintenant, tous les méta-paquets disponibles sur Communtu vont être affiché. La suppression se fait en cliquant á droite de la souris puis sur \"Sélectionner pour suppression \". Cela doit être clôturé par \"Appliquer \" pour confirmer."
 
 #: controller_distributions_2
 msgid "Distribution aktualisiert."
-msgstr ""
+msgstr "Distribution mise à jour."
 
 #: view_user_profiles__installation_30
 msgid "Hinweis: Bitte .deb-Dateien nicht umbenennen."
-msgstr ""
+msgstr " Note: S'il te plaît ne pas renommer les fichiers deb."
 
 #: controller_passwords_2
 msgid "Konnte keinen Benutzer mit dieser Email-Adresse finden."
-msgstr ""
+msgstr "Aucun utilisateur avec cette adresse email n'a été trouvée."
 
 #: view_home_contact_us_1
 msgid "Hier hast du die Möglichkeit uns Anregungen und Kritik zu Communtu zu senden."
-msgstr ""
+msgstr "Ici tu as la possibilité de nous envoyer tes suggestions et critiques concernant Communtu."
 
 #: livecd_start
 msgid "Live-CD/DVD erstellen"
-msgstr ""
+msgstr "Créer live CD / DVD"
 
 #: view_user_profiles__installation_31
 msgid "Die Communtu-Metapakete können auch mittles {{synaptic}} (unter System -> Systemverwaltung) angezeigt, installiert und deinstalliert werden. Änderungen an Bündeln werden über die Ubuntu-Paketverwaltung automatisch eingespielt."
-msgstr ""
+msgstr "Les méta-paquets Communtu peuvent aussi être affichés, installés et désinstallés á travers {{synaptic}} (sous Système -> Administration). En ce qui concerne la modification des compilations, elles sont automatiquement enregistrées á travers la gestion des paquets Ubuntu."
 
 #: create_usb_image
 msgid "<a href=\"http://ww.ubuntuusers.de/wiki/Live-USB\">USB-Stick-Image</a> erstellen"
-msgstr ""
+msgstr "<a href=\"http://ww.ubuntuusers.de/wiki/Live-USB\"> USB Stick Image </ a> créer"
 
 #: view_home_home_2
 msgid "Ubuntu-Linux"
-msgstr ""
+msgstr "Ubuntu Linux"
 
 #: view_rating_rating_rate
 msgid "von 5 Sternen vergeben"
-msgstr ""
+msgstr "attribution de 5 étoiles"
 
 #: view_metapackages_show_version_v
 msgid "(Version {{v}})"
-msgstr ""
+msgstr "(Version {{v}})"
 
 #: controller_passwords_5
 msgid "Passwort darf nicht leer sein."
-msgstr ""
+msgstr "Mot de passe ne peut pas être vide."
 
 #: create_iso_image
 msgid "<a href=\"http://ww.ubuntuusers.de/wiki/CD-Images\">ISO-Image</a> erstellen (für CD/DVD)"
-msgstr ""
+msgstr "<a href=\"http://ww.ubuntuusers.de/wiki/CD-Images\"> créer une image ISO </ a> (pour les CD / DVD)"
 
 #: view_home_home_3
 msgid " steht für ein menschliches Linux, das einfach zu benutzen ist. Aber um Ubuntu wirklich gut nutzen zu können, muss man ganz schön viele Programme nachinstallieren, und es ist oft schwer, da den Überblick zu behalten. Bei Communtu gibst du nur an, welche Aufgaben du mit deinem Computer erledigen willst, und Communtu schlägt dir eine ganze Reihe von Programmen vor, die automatisch installiert werden können."
-msgstr ""
+msgstr "Linux représente un être humain, qui est facile à utiliser. Mais pour bien utiliser Ubuntu , on doit encore installer beaucoup de programmes après, et il est souvent difficile de garder un aperçu. En Communtu vous donner uniquement les tâches que vous voulez exécuter avec votre ordinateur, et  Communtu te propose un certain nombre de programmes qui peuvent être installés automatiquement."
 
 #: view_home_contact_us_4
 msgid "Senden"
-msgstr ""
+msgstr "Envoyer"
 
 #: download
 msgid "herunterladen"
-msgstr ""
+msgstr "Télécharger"
 
 #: wait_for_sync
 msgid "auf Synchronisation der Repositories warten"
-msgstr ""
+msgstr "en attente pour la synchronisation de dépôts"
 
 #: view_user_profiles__installation_33
 msgid "Folgende"
-msgstr ""
+msgstr "Ce qui suit"
 
 #: view_metapackages_show_0
 msgid "Bündel erstellt von "
-msgstr ""
+msgstr "Compilations créés par"
 
 #: controller_passwords_6
 msgid "Passwort geändert."
-msgstr ""
+msgstr "Mot de passe changé."
 
 #: view_home_home_4
 msgid "Mehr ..."
-msgstr ""
+msgstr "plus...."
 
 #: view_user_profiles__installation_34
 msgid "werden zu dem System hinzugefügt."
