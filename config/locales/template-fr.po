@@ -395,23 +395,23 @@ msgstr "plus...."
 
 #: view_user_profiles__installation_34
 msgid "werden zu dem System hinzugefügt."
-msgstr ""
+msgstr "vont être ajouté au système."
 
 #: controller_passwords_7
 msgid "Passwort nicht geändert."
-msgstr ""
+msgstr "Mot de passe pas changé."
 
 #: view_home_home_5
 msgid "Die Seitenleiste links bietet folgende Möglichkeiten:"
-msgstr ""
+msgstr "La barre latérale offre les options suivantes"
 
 #: controller_passwords_8
 msgid "Passwörter stimmen nicht überein."
-msgstr ""
+msgstr "Les mots de passe ne correspondent pas."
 
 #: view_home_home_6
 msgid "<b>Installation</b> bietet dir eine Zusammenstellung (Bündelung) von Programmen für die Installation auf deinem Computer an, entsprechend deinen Angaben, für welche Aufgaben du deinen Ubuntu-PC benutzen willst."
-msgstr ""
+msgstr "<b> Installation </ b> vous offre une collection (collimation) des programmes à installer sur ton ordinateur, selon tes spécifications,et pour quelles les tâches souhaites tu utiliser ton pc ubuntu "
 
 #: name_without_colon
 msgid "Name"
