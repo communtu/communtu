@@ -504,7 +504,7 @@ fr:
   choose_category: "S'il te pla\xC3\xAEt s\xC3\xA9lectionne"
   view_users_edit_0: Benuzterprofil Modifier
   view_cart_update_2: "Niveau Expert:"
-  to_chat: sur le chat, forum
+  to_chat: sur le chat
   start_vm_instructions: "Ainsi, tu peux te connecter \xC3\xA0 la machine virtuelle (s'il te plait attendre un peu jusqu'\xC3\xA0 ce que les fichiers ont \xC3\xA9t\xC3\xA9 copi\xC3\xA9s deb):"
   view_sent_index_0: "les messages envoy\xC3\xA9s"
   an: !binary |

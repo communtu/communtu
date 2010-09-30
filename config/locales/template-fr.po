@@ -2013,7 +2013,7 @@ msgstr "Niveau Expert:"
 
 #: to_chat
 msgid "zum Chat"
-msgstr "sur le chat, forum"
+msgstr "sur le chat"
 
 #: start_vm_instructions
 msgid "So kannst du dich in die virtuelle Maschine einloggen (bitte etwas warten, bis die deb-Files kopiert wurden):"
