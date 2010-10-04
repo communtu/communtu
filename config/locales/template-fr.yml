@@ -432,7 +432,7 @@ fr:
   view_home_faq_19: "Qu'est-ce qu'un d\xC3\xA9p\xC3\xB4t?"
   livecd_start_message: "Ici, tu peux cr\xC3\xA9er un Live-CD/DVD qui contient le logiciel que vous avez s\xC3\xA9lectionn\xC3\xA9. Tu as s\xC3\xA9lectionn\xC3\xA9 la compilation suivante:"
   trusted: "Ubuntu + Communaut\xC3\xA9"
-  view_home_beteiligung_2: "Tout d'abord, nous serions heureux si tu utilises Communtu pour \xC3\xA9ffectuer une installation. Nos compilations contiennent d\xC3\xA9ja des propositions d'installation. Peut-\xC3\xAAtre trouveras-tu quelque chose d'int\xC3\xA9rressant pour toi. Ensuite, il ya aussi la possibilit\xC3\xA9 de t\xC3\xA9l\xC3\xA9charger sa propre liste de paquets afin que d'autres personnes puissent en profiter. Ceci est une fa\xC3\xA7on plus simple de cr\xC3\xA9er une compilation. Tu n'as pas le droit de publier cette liste de paquets. Tu peux  simplement  utiliser Communtu comme un emplacement pour ta liste de paquets, puis installer cette compilation sur d'autres machines."
+  view_home_beteiligung_2: "Tout d'abord, nous serions heureux si tu utilises Communtu pour \xC3\xA9ffectuer une installation. Nos compilations contiennent d\xC3\xA9ja des propositions d'installations. Peut-\xC3\xAAtre trouveras-tu quelque chose d'int\xC3\xA9rressant pour toi. Tu as aussi la possibilit\xC3\xA9 de t\xC3\xA9l\xC3\xA9charger ta propre liste de paquets afin que d'autres personnes puissent en profiter. Ceci est une fa\xC3\xA7on tr\xC3\xA8s simple de cr\xC3\xA9er une compilation. Tu n'as pas le droit de publier cette liste de paquets. Tu as la possibilit\xC3\xA9 d'utiliser Communtu comme un emplacement d'enregistrement pour ta liste de paquets, et ensuite installer cette compilation sur d'autres machines."
   helper_distributions_2: "Synchroniser le d\xC3\xA9p\xC3\xB4t"
   view_messages_show_2: "Re\xC3\xA7u le:"
   go_to_download: "Aller \xC3\xA0 la page de t\xC3\xA9l\xC3\xA9chargement"
@@ -443,8 +443,8 @@ fr:
   cd_already_created: !binary |
     TGUgTGl2ZUNEIC8gRFZEIGEgZMOpasOgIMOpdMOpIGNyw6nDqS4=
 
-  view_home_beteiligung_4: "Tu  penses que tu en sais d\xC3\xA9j\xC3\xA0 beaucoup sur les programmes Open Source \n Dans ce cas, \xC3\xA9cris tes exp\xC3\xA9riences dans les commentaires sur les paquets, ou peut-\xC3\xAAtre as tu  vu une \n\
-    video interessante concernant le  programme sur Youtube? alors mets le dans \n les programmes vid\xC3\xA9os de Communtu."
+  view_home_beteiligung_4: "Tu  penses que tu en sais d\xC3\xA9j\xC3\xA0 beaucoup sur les programmes Open Source ? \n\
+    . Dans ce cas, commente tes exp\xC3\xA9riences sur les paquets. Peut \xC3\xAAtre as-tu  vu une \n vid\xC3\xA9o int\xC3\xA9ressante concernant le programme sur Youtube? alors mets la dans \n les programmes vid\xC3\xA9os de Communtu."
   controller_cart_2: "Les paquets suivants n'ont pas \xC3\xA9t\xC3\xA9 trouv\xC3\xA9s: {{message}} <br> S'il te pla\xC3\xAEt choisie les r\xC3\xA9f\xC3\xA9rentiels qui contiennent les paquets ,et<a href=\"{{url}}\"> propose de les inclure dans Communtu. </ a>"
   install_by_default: "L'installation standart:"
   show: Afficher

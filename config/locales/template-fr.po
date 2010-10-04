@@ -1731,7 +1731,7 @@ msgstr "Ubuntu + Communauté"
 
 #: view_home_beteiligung_2
 msgid "Als erstes würden wir uns natürlich freuen, wenn du Communtu nutzt, um eine Installation durchzuführen.  In unseren Bündeln gibt es schon ein paar ganz gut auf bestimmte Eigenschaften zugeschnittende Installationsvorschläge. Vielleicht ist ja etwas für dich dabei. Weiter gibt es dort auch die Möglichkeit die eigene Paketliste hochzuladen, damit diese auch anderen zur Verfügung gestellt wird. Dies ist die einfachste Form ein Bündel anzulegen. Du musst diese Paketliste aber auch nicht veröffentlichen. Du kannst Communtu auch einfach nur als Speicherort für deine Paketliste gebrauchen und dann auf anderen Rechnern dieses Bündel installieren."
-msgstr "Tout d'abord, nous serions heureux si tu utilises Communtu pour éffectuer une installation. Nos compilations contiennent déja des propositions d'installation. Peut-être trouveras-tu quelque chose d'intérressant pour toi. Ensuite, il ya aussi la possibilité de télécharger sa propre liste de paquets afin que d'autres personnes puissent en profiter. Ceci est une façon plus simple de créer une compilation. Tu n'as pas le droit de publier cette liste de paquets. Tu peux  simplement  utiliser Communtu comme un emplacement pour ta liste de paquets, puis installer cette compilation sur d'autres machines."
+msgstr "Tout d'abord, nous serions heureux si tu utilises Communtu pour éffectuer une installation. Nos compilations contiennent déja des propositions d'installations. Peut-être trouveras-tu quelque chose d'intérressant pour toi. Tu as aussi la possibilité de télécharger ta propre liste de paquets afin que d'autres personnes puissent en profiter. Ceci est une façon très simple de créer une compilation. Tu n'as pas le droit de publier cette liste de paquets. Tu as la possibilité d'utiliser Communtu comme un emplacement d'enregistrement pour ta liste de paquets, et ensuite installer cette compilation sur d'autres machines."
 
 #: helper_distributions_2
 msgid "Repository synchronisieren"
@@ -1772,9 +1772,9 @@ msgid ""
 "Video zu dem Programm bei Youtube gesehen? Dann trag es doch gleich bei\n"
 "den Videos zu den Programmen in Communtu ein."
 msgstr ""
-"Tu  penses que tu en sais déjà beaucoup sur les programmes Open Source \n"
-" Dans ce cas, écris tes expériences dans les commentaires sur les paquets, ou peut-être as tu  vu une \n"
-"video interessante concernant le  programme sur Youtube? alors mets le dans \n"
+"Tu  penses que tu en sais déjà beaucoup sur les programmes Open Source ? \n"
+". Dans ce cas, commente tes expériences sur les paquets. Peut être as-tu  vu une \n"
+" vidéo intéressante concernant le programme sur Youtube? alors mets la dans \n"
 " les programmes vidéos de Communtu."
 
 #: controller_cart_2
