@@ -20,7 +20,7 @@ fr:
   cd_failed: "\xC3\x89chec - nous nous en occupons"
   vm_running: machine virtuelle marche
   view_roles_index_0: "R\xC3\xB4les pour"
-  view_home_beteiligung_13: "Etant donn\xC3\xA9 que nous avons de nombreuses id\xC3\xA9es pour la poursuite du d\xC3\xA9veloppement de la plate-forme, nous avons encore besoin d'un/une programmeur. Id\xC3\xA9alement, vous avez d\xC3\xA9j\xC3\xA0 une exp\xC3\xA9rience avec Ruby on Rails ."
+  view_home_beteiligung_13: "Etant donn\xC3\xA9 que nous avons de nombreuses id\xC3\xA9es pour le d\xC3\xA9veloppement de la plate-forme, nous avons encore besoin d'un/une programmeur.  Tu as d\xC3\xA9j\xC3\xA0 une exp\xC3\xA9rience avec Ruby on Rails."
   view_user_profiles__installation_16: "Donner les sources et les cl\xC3\xA9s"
   controller_accounts_4: "Ton compte est d\xC3\xA9j\xC3\xA0 activ\xC3\xA9. Tu peux t'inscrire d\xC3\xA8s maintenant."
   view_roles_index_1: "r\xC3\xB4les assign\xC3\xA9s:"
@@ -129,15 +129,15 @@ fr:
   view_repositories_edit_1: "Distribution:"
   view_categories_show_0: "Nom:"
   change: changer
-  add_to_bundle: ""
-  translation_file: ""
-  view_categories_show_2: ""
-  controller_metapackages_reset: ""
-  controller_suggestion_1: ""
-  view_categories_show_3: ""
+  add_to_bundle: "Ajouter \xC3\xA0 la compilation"
+  translation_file: "Url du fichier de traduction (fichier gz):"
+  view_categories_show_2: "Pour plus d'informations:"
+  controller_metapackages_reset: "erreur de compilation r\xC3\xA9initialiser manuellement (apr\xC3\xA8s avoir r\xC3\xA9solu le probl\xC3\xA8me)."
+  controller_suggestion_1: "Afin d'installer quelque chose, tu dois d'abord s\xC3\xA9lectionner quelque chose. Ne pas oublier Sauvegarder !"
+  view_categories_show_3: "Cat\xC3\xA9gorie sup\xC3\xA9rieure:"
   add_sources: Ajouter les sources
   controller_suggestion_2: "Ajouter les sources et la cl\xC3\xA9 pour l'utilisateur"
-  view_home_faq_all_01: ""
+  view_home_faq_all_01: "La d\xC3\xA9sactivation ne conduit pas \xC3\xA1 la d\xC3\xA9sinstallation des paquets  parce que les mises \xC3\xA0 jour pour les paquets install\xC3\xA9s seront interrompues.Ils sont exploit\xC3\xA9s \xC3\xA0 partir d'autres sources de logiciels qui ont \xC3\xA9t\xC3\xA9 install\xC3\xA9s par Communtu."
   deb_generation_in_background: "Debs sont g\xC3\xA9n\xC3\xA9r\xC3\xA9s dans l'arri\xC3\xA8re-plan (le cas \xC3\xA9ch\xC3\xA9ant, mise \xC3\xA0 jour du navigateur )"
   warnings: Avertissements
   view_home_faq_all_02: "Les paquets individuels ne seront pas supprim\xC3\xA9s, mais cela peut faire sur  Synaptic ou kpackagekit, selectioner et d\xC3\xA9sinstaller."
@@ -159,7 +159,7 @@ fr:
   view_home_news_1: Nos listes de diffusion
   view_packages_new_4: Source
   compose_new_message: Ecrire un nouveau message
-  view_home_news_2: ""
+  view_home_news_2: "Pour am\xC3\xA9liorer la communication avec nos utilisateurs, nous avons mis en place des listes de diffusion:"
   view_home_news_3: Communtu-announce-de + subscribe@googlegroups.com)
   view_packages_new_6: Videos
   view_home_cancel_0: |-
@@ -167,41 +167,41 @@ fr:
      malheureusement, il ya quelque chose ne fonctionne avec le don.
   conny_picture: Portrait de Communtu Conny
   bundle_to_livecd: "LiveCD / DVD \xC3\xA1 partir de la compilation<i>{{name}}</ i> cr\xC3\xA9er"
-  view_home_cancel_1: ""
-  view_home_news_5: ""
+  view_home_cancel_1: "Soit tu essaies \xC3\xA0 nouveau ou alors tu fais un transfer"
+  view_home_news_5: "Cette liste est pour les annonces g\xC3\xA9n\xC3\xA9rales de l'\xC3\xA9quipe Communtu  pour les utilisateurs. Une fois par semaine, un e-mail sera envoy\xC3\xA9 par le distributeur. Les messages sont dans un"
   used_in_bundles: "Utilis\xC3\xA9 avec Communtu dans les compilations suivantes:"
-  view_user_mailer_activation_0: ""
-  controller_metapackages_please_regenerate: ""
-  view_home_news_7: ""
-  livecd_communtu_name: ""
-  view_home_news_8: ""
-  anmelden: ""
-  view_distributions_index_0: ""
-  dependent_on_repositories: ""
-  no_admin: ""
-  view_metapackages_new_4: ""
-  create_kvm_image: ""
-  bundles_with_missing_debs: ""
-  model_mailer_0: ""
-  licence: ""
-  model_mailer_1: ""
-  published: ""
-  install_package_sources_first: ""
-  preliminary_distribution: ""
-  model_mailer_2: ""
-  view_home_derivatives_10: ""
-  new_derivative: ""
-  model_mailer_3: ""
+  view_user_mailer_activation_0: ", Votre compte a \xC3\xA9t\xC3\xA9 activ\xC3\xA9. Maintenant, suis le lien:"
+  controller_metapackages_please_regenerate: "La compilation \xC3\xA1 \xC3\xA9t\xC3\xA9 remise \xC3\xA0 z\xC3\xA9ro. S'il te pla\xC3\xAEt incr\xC3\xA9mente la version en et recr\xC3\xA9e le m\xC3\xA9ta-paquet."
+  view_home_news_7: http://groups.google.com/group/communtu-announce-de/topics?start=
+  livecd_communtu_name: "Les noms avec communtu  sont r\xC3\xA9serv\xC3\xA9s pour les CD live / DVD qui sont cr\xC3\xA9\xC3\xA9s \xC3\xA0 partir de compilations"
+  view_home_news_8: "collect\xC3\xA9s."
+  anmelden: Connection
+  view_distributions_index_0: Versions disponibles d'Ubuntu
+  dependent_on_repositories: "D\xC3\xA9pend des d\xC3\xA9p\xC3\xB4ts suivants:"
+  no_admin: Tu n'est pas l'administrateur!
+  view_metapackages_new_4: "D'installation par d\xC3\xA9faut"
+  create_kvm_image: "<a href=\"http://ww.ubuntuusers.de/wiki/KVM\">KVM-Image </ a> Cr\xC3\xA9er (pour la machine virtuelle)"
+  bundles_with_missing_debs: "Compilation avec deb-Builds manquant "
+  model_mailer_0: "Bienvenue \xC3\xA0 Communtu"
+  licence: "Licence:"
+  model_mailer_1: Formulaire de demande
+  published: "publi\xC3\xA9"
+  install_package_sources_first: "Installer le paquet. S'il te pla\xC3\xAEt ajoute avant les sources si n\xC3\xA9cessaire."
+  preliminary_distribution: Distribution provisoire
+  model_mailer_2: "Votre compte a \xC3\xA9t\xC3\xA9 activ\xC3\xA9."
+  view_home_derivatives_10: http://wiki.ubuntuusers.de/Ubuntu_Studio
+  new_derivative: "Nouveau d\xC3\xA9riv\xC3\xA9"
+  model_mailer_3: "Tu as fait une demande pour r\xC3\xA9initialiser ton mot de passe"
   migrate_bundles: ""
   view_home_derivatives_11: ""
   model_mailer_4: ""
   view_home_home_rating_headline: ""
   view_home_derivatives_12: ""
   model_mailer_5: ""
-  view_home_about_1: ""
-  view_metapackages__package_list_conflicts: ""
-  view_home_derivatives_13: ""
-  view_home_about_2: ""
+  view_home_about_1: Qu'est-ce Communtu?
+  view_metapackages__package_list_conflicts: "Conflits avec les paquets/Compilations suivants :"
+  view_home_derivatives_13: " -le PC sera l'enregistreur vid\xC3\xA9o. Dans le film \"Freak \" selectionner, et il est install\xC3\xA9. Recommand\xC3\xA9: processeur \xC3\xA0 2 GHz, 1024 Mo de RAM, 10 Go d'espace disque dur pour le train avant, 80 + Go pour le back-end, une carte graphique avec 128 Mo de RAM avec sortie TV et une carte TV pris en charge."
+  view_home_about_2: "Ubuntu est une distribution Linux qui rend Linux facile \xC3\xA0 utiliser et \xC3\xA0 comprendre. Apr\xC3\xA8s l'installation de Ubuntu \xC3\xA0 l'aide d'un CD ou un DVD, ton ordinateur est d\xC3\xA9j\xC3\xA0 bien \xC3\xA9quip\xC3\xA9 pour la navigation web, traitement de texte et beaucoup plus."
   blog: ""
   view_home_derivatives_14: ""
   donation_possibility: ""
@@ -300,16 +300,16 @@ fr:
   view_home_new_repository_1: ""
   helper_distributions_21: ""
   view_home_derivatives_38: ""
-  view_home_new_repository_2: ""
-  view_home_derivatives_39: ""
-  view_home_new_repository_3: ""
-  view_home_news_10: ""
-  kvm_image: ""
-  are_you_sure: ""
-  view_home_news_11: ""
-  architecture_successful: ""
-  livecd: ""
-  view_repositories_multinew_0: ""
+  view_home_new_repository_2: "Lien vers le d\xC3\xA9p\xC3\xB4t"
+  view_home_derivatives_39: pour les ordinateurs plus anciens. Il s'appuie sur une surface LXDE.
+  view_home_new_repository_3: "Pourquoi doit-il \xC3\xAAtre int\xC3\xA9gr\xC3\xA9 dans Communtu? (S'il te pla\xC3\xAEt donne tes coordonn\xC3\xA9es si tu souhaites \xC3\xAAtre inform\xC3\xA9 de l'enregistrement)"
+  view_home_news_10: communtu-discuss-de+subscribe@googlegroups.com
+  kvm_image: KVM Image
+  are_you_sure: "Est-tu s\xC3\xBBr?"
+  view_home_news_11: "Cette liste est pour la discussion autour de la plate-forme. Ici plus d'une fois par semaine, un e-mail arrive \xC3\xA0 travers le distributeur. Les messages sont dans un"
+  architecture_successful: "Architecture cr\xC3\xA9\xC3\xA9 avec succ\xC3\xA8s."
+  livecd: Live-CD/DVD
+  view_repositories_multinew_0: Lire
   controller_metapackages_conflicts: La compilation contient des paquets qui sont en conflit les uns avec les autres!
   view_home_faq_00: "Lea questions le plus pos\xC3\xA9es"
   creation_error: Dans la creation du paquet, une erreur s'est produite.
@@ -322,7 +322,7 @@ fr:
   steps_for_distribution_setup: "\xC3\x89tapes \xC3\xA0 suivre pour la cr\xC3\xA9ation d'une nouvelle distribution (s'il vous pla\xC3\xAEt ex\xC3\xA9cuter sur admin-syst\xC3\xA8me)"
   questionmark_conny: Clique sur moi et dis moi ce qui n'est pas claire.
   new_packages: "Nouveaux paquets ajout\xC3\xA9s :"
-  view_home_faq_kde_01: ""
+  view_home_faq_kde_01: "Sous \"Menu K -> Programmes -> Syst\xC3\xA8me -> Administration -> Sources de logiciels ->sources de logiciels tiers \" les sources Communtu sont trouvables. Ici, elles peuvent \xC3\xA9galement \xC3\xAAtre d\xC3\xA9sactiv\xC3\xA9es \xC3\xA0 nouveau."
   view_home_derivatives_41: Ubuntu Ultimate - Ubuntu avec plusieurs  conceptions et programmes de bureau.
   based_on_bundle: "fond\xC3\xA9e sur la compilation:"
   view_home_faq_kde_02: "KpackageKit est dans \"Menu K -> Programmes-> Syst\xC3\xA8me -> Administration - \"> Logiciel de gestion\". Ici tu s\xC3\xA9lectionnes \xC3\xA0 droite du menu d\xC3\xA9roulant \"packages.communtu.org \". Dans la liste recherche pour le moment de le m\xC3\xA9ta-paquet, que tu as  install\xC3\xA9 et le mettre en surbrillance en cliquant sur le X \xC3\xA0 c\xC3\xB4t\xC3\xA9 de l'entr\xC3\xA9e. Pour supprimer le m\xC3\xA9ta-paquet  un simple clic sur \"Appliquer \" est suffisant. Il va maintenant avoir un aper\xC3\xA7u des programmes \xC3\xA0 supprimer, et apr\xC3\xA8s avoir cliqu\xC3\xA9 sur \"OK \" ces programmes seront supprim\xC3\xA9s de votre ordinateur."
@@ -385,14 +385,14 @@ fr:
   view_user_profiles_help_3: "Si ta version de Communtu n'est pas soutenu, il ya deux possibilit\xC3\xA9s:"
   view_home_news_24: -Participer
   view_home_derivatives_51: "- Installation de programmes et de versions qui ne sont pas disponibles dans les d\xC3\xA9p\xC3\xB4ts officiels."
-  view_roles_edit_0: ""
+  view_roles_edit_0: "Modifier un r\xC3\xB4le"
   view_user_profiles__profile_data_9: "Ici tu peux r\xC3\xA9gler le degr\xC3\xA9 de s\xC3\xA9curit\xC3\xA9 et de confortabilit\xC3\xA9 pour tes sources d'installations"
   view_home_faq_11: "Comment puis-je cr\xC3\xA9er une compilation \xC3\xA1 partir de mes programmes install\xC3\xA9s?"
   view_cart_new_from_list_3: "d\xC3\xA9couvrir. (pour cela le paquet {{debfoster}} doit \xC3\xAAtre install\xC3\xA9. La liste g\xC3\xA9n\xC3\xA9r\xC3\xA9e contient uniquement une liste minimale de (m\xC3\xA9ta-)paquets qui sont n\xC3\xA9cessaires pour restaurer pleinement ton installation.)"
   controller_metapackages_7: Il faut  donner une version (par exemple 0.1) <br>
   view_user_profiles_help_4: "tu fais une mise \xC3\xA0 niveau  d'une version plus r\xC3\xA9cente"
   view_home_derivatives_52: " Une sorte de Automatix pour l'\xC3\xA9dition finale."
-  view_roles_edit_1: ""
+  view_roles_edit_1: Nom du personnage
   view_users__sidebar_4: Versions-Ubuntu
   view_home_faq_12: "Sous <b>compilation</b>, puis  \"nouvelle compilation\" il y a un point  \"compilation provenant d une liste de paquets \" qui est cliquant . Il est  d\xC3\xA9crit la fa\xC3\xA7on dont tu peux t\xC3\xA9l\xC3\xA9charger ta liste de paquets dans Communtu. Une fois le paquet  stock\xC3\xA9, le processus est le m\xC3\xAAme que lors de la cr\xC3\xA9ation d'une nouvelle compilation: Choisir un nom significatif,  d\xC3\xA9terminer la version, sauvegarder et Inserer la description ."
   view_cart_new_from_list_4: "Fichier qui contient la liste des paquets, s\xC3\xA9lectionne:"
@@ -482,7 +482,7 @@ fr:
   view_home_derivatives_6: "S\xC3\xA9lection du Logiciel "
   controller_metapackages_cannot_destroy: "La compilation Publi\xC3\xA9e ne peut pas \xC3\xAAtre supprim\xC3\xA9."
   match_ubuntu: Adapter Ubuntu-Linux aux besoins individuels
-  view_users__user_2: ""
+  view_users__user_2: "  Modifier les R\xC3\xB4les"
   view_home_derivatives_7: "sous cat\xC3\xA9gorie selectionne  les \"d\xC3\xA9riv\xC3\xA9s\" \xC3\xA0 installer."
   chat: Chat
   view_home_derivatives_8: "De m\xC3\xAAme, tu peux aussi v\xC3\xA9rifier, de quels paquets un d\xC3\xA9riv\xC3\xA9s provient."

@@ -91,7 +91,7 @@ msgstr "Rôles pour"
 
 #: view_home_beteiligung_13
 msgid "Da wir viele Ideen für die Weiterentwicklung der Plattform haben, benötigen wir noch eine/n ProgrammiererIn. Idealerweise hast du schon Erfahrungen in Ruby on Rails sammeln können."
-msgstr "Etant donné que nous avons de nombreuses idées pour la poursuite du développement de la plate-forme, nous avons encore besoin d'un/une programmeur. Idéalement, vous avez déjà une expérience avec Ruby on Rails ."
+msgstr "Etant donné que nous avons de nombreuses idées pour le développement de la plate-forme, nous avons encore besoin d'un/une programmeur.  Tu as déjà une expérience avec Ruby on Rails."
 
 #: view_user_profiles__installation_16
 msgid "Quellen und Schlüssel eintragen"
@@ -511,27 +511,27 @@ msgstr "changer"
 
 #: add_to_bundle
 msgid "zum Bündel hinzufügen"
-msgstr ""
+msgstr "Ajouter à la compilation"
 
 #: translation_file
 msgid "Url der Übersetzungsdatei (gz Datei):"
-msgstr ""
+msgstr "Url du fichier de traduction (fichier gz):"
 
 #: view_categories_show_2
 msgid "Weitere Informationen:"
-msgstr ""
+msgstr "Pour plus d'informations:"
 
 #: controller_metapackages_reset
 msgid "Bündel-Fehler manuell zurücksetzen (nach Behebung des Problems)."
-msgstr ""
+msgstr "erreur de compilation réinitialiser manuellement (après avoir résolu le problème)."
 
 #: controller_suggestion_1
 msgid "Um etwas installieren zu können, musst du zunächst etwas auswählen. Speichern nicht vergessen!"
-msgstr ""
+msgstr "Afin d'installer quelque chose, tu dois d'abord sélectionner quelque chose. Ne pas oublier Sauvegarder !"
 
 #: view_categories_show_3
 msgid "Übergeordnete Kategorie:"
-msgstr ""
+msgstr "Catégorie supérieure:"
 
 #: add_sources
 msgid "Quellen hinzufügen"
@@ -547,7 +547,7 @@ msgstr "Avertissements"
 
 #: view_home_faq_all_01
 msgid "Das Deaktivieren führt nicht zum Deinstallieren von Paketen noch werden dadurch die Updates für die installierten Pakete unterbrochen. Diese werden aus anderen Softwarequellen, die ggf. von Communtu installiert wurden, bedient."
-msgstr ""
+msgstr "La désactivation ne conduit pas á la désinstallation des paquets  parce que les mises à jour pour les paquets installés seront interrompues.Ils sont exploités à partir d'autres sources de logiciels qui ont été installés par Communtu."
 
 #: deb_generation_in_background
 msgid "Debs werden im Hintergrund erzeugt (ggf. Browser-Ansicht aktualisieren)"
@@ -631,7 +631,7 @@ msgstr "Ecrire un nouveau message"
 
 #: view_home_news_2
 msgid "Um die Kommunikation mit unseren Nutzern zu verbessern, haben wir Mailinglisten eingerichtet:"
-msgstr ""
+msgstr "Pour améliorer la communication avec nos utilisateurs, nous avons mis en place des listes de diffusion:"
 
 #: view_home_news_3
 msgid "communtu-announce-de+subscribe@googlegroups.com"
@@ -659,11 +659,11 @@ msgstr "LiveCD / DVD á partir de la compilation<i>{{name}}</ i> créer"
 
 #: view_home_cancel_1
 msgid "Endweder versuchst du es noch einmal oder du nutzt die Möglichkeit per Überweisung"
-msgstr ""
+msgstr "Soit tu essaies à nouveau ou alors tu fais un transfer"
 
 #: view_home_news_5
 msgid "Diese Liste ist für allgemeine Ankündigungen aus den Communtu Team für die Nutzer gedacht.  Es wir hier ungefähr einmal die Woche eine E-Mail über den Verteiler geschickt.   Die Nachrichten werden in einem "
-msgstr ""
+msgstr "Cette liste est pour les annonces générales de l'équipe Communtu  pour les utilisateurs. Une fois par semaine, un e-mail sera envoyé par le distributeur. Les messages sont dans un"
 
 #: used_in_bundles
 msgid "Wird bei Communtu in folgenden Bündeln benutzt:"
@@ -671,91 +671,91 @@ msgstr "Utilisé avec Communtu dans les compilations suivantes:"
 
 #: view_user_mailer_activation_0
 msgid ", dein Benutzerkonto wurde aktiviert.  Folge nun dem Link:"
-msgstr ""
+msgstr ", Votre compte a été activé. Maintenant, suis le lien:"
 
 #: controller_metapackages_please_regenerate
 msgid "Das Bündel wurde zurückgesetzt. Bitte die Version hochzählen und Metapaket neu erzeugen."
-msgstr ""
+msgstr "La compilation á été remise à zéro. S'il te plaît incrémente la version en et recrée le méta-paquet."
 
 #: view_home_news_7
 msgid "http://groups.google.com/group/communtu-announce-de/topics?start="
-msgstr ""
+msgstr "http://groups.google.com/group/communtu-announce-de/topics?start="
 
 #: livecd_communtu_name
 msgid "Namen mit communtu- sind für LiveCDs/DVDs reserviert, die aus Bündeln erstellt werden"
-msgstr ""
+msgstr "Les noms avec communtu  sont réservés pour les CD live / DVD qui sont créés à partir de compilations"
 
 #: view_home_news_8
 msgid " gesammelt."
-msgstr ""
+msgstr "collectés."
 
 #: anmelden
 msgid "Anmelden"
-msgstr ""
+msgstr "Connection"
 
 #: view_distributions_index_0
 msgid "Verfügbare Ubuntu-Versionen"
-msgstr ""
+msgstr "Versions disponibles d'Ubuntu"
 
 #: dependent_on_repositories
 msgid "Abhängig von folgenden Repositories:"
-msgstr ""
+msgstr "Dépend des dépôts suivants:"
 
 #: no_admin
 msgid "Du bist kein Administrator!"
-msgstr ""
+msgstr "Tu n'est pas l'administrateur!"
 
 #: view_metapackages_new_4
 msgid "Standardmäßig installieren"
-msgstr ""
+msgstr "D'installation par défaut"
 
 #: create_kvm_image
 msgid "<a href=\"http://ww.ubuntuusers.de/wiki/KVM\">KVM-Image</a> erstellen (für virtuelle Maschine)"
-msgstr ""
+msgstr "<a href=\"http://ww.ubuntuusers.de/wiki/KVM\">KVM-Image </ a> Créer (pour la machine virtuelle)"
 
 #: bundles_with_missing_debs
 msgid "Bündel mit fehlenden deb-Builds"
-msgstr ""
+msgstr "Compilation avec deb-Builds manquant "
 
 #: model_mailer_0
 msgid "Herzlich Willkommen bei Communtu"
-msgstr ""
+msgstr "Bienvenue à Communtu"
 
 #: licence
 msgid "Lizenztyp:"
-msgstr ""
+msgstr "Licence:"
 
 #: model_mailer_1
 msgid "Anfrage per Formular"
-msgstr ""
+msgstr "Formulaire de demande"
 
 #: published
 msgid "veröffentlicht"
-msgstr ""
+msgstr "publié"
 
 #: install_package_sources_first
 msgid "Paket installieren. Bitte ggf. vorher die Quellen hinzufügen."
-msgstr ""
+msgstr "Installer le paquet. S'il te plaît ajoute avant les sources si nécessaire."
 
 #: preliminary_distribution
 msgid "Vorläufige Distribution"
-msgstr ""
+msgstr "Distribution provisoire"
 
 #: model_mailer_2
 msgid "Dein Benutzerkonto wurde aktiviert."
-msgstr ""
+msgstr "Votre compte a été activé."
 
 #: view_home_derivatives_10
 msgid "http://wiki.ubuntuusers.de/Ubuntu_Studio"
-msgstr ""
+msgstr "http://wiki.ubuntuusers.de/Ubuntu_Studio"
 
 #: new_derivative
 msgid "Neues Derivat"
-msgstr ""
+msgstr "Nouveau dérivé"
 
 #: model_mailer_3
 msgid "Du hast angefordert, dein Kennwort zurückzusetzen"
-msgstr ""
+msgstr "Tu as fait une demande pour réinitialiser ton mot de passe"
 
 #: migrate_bundles
 msgid "Bündel von Vorgänger übernehmen"
@@ -783,19 +783,19 @@ msgstr ""
 
 #: view_home_about_1
 msgid "Wozu Communtu?"
-msgstr ""
+msgstr "Qu'est-ce Communtu?"
 
 #: view_metapackages__package_list_conflicts
 msgid "Konflikte mit folgenden Paketen/Bündeln:"
-msgstr ""
+msgstr "Conflits avec les paquets/Compilations suivants :"
 
 #: view_home_derivatives_13
 msgid " - der PC wird zum Videorekorder. Bei Film \"Freak\" auswählen, und es wird mitinstalliert. Empfohlen: CPU mit 2 GHz, 1024 MByte RAM, 10 GByte Festplattenplatz für das Frontend, 80+ GByte für das Backend, eine Grafikkarte mit 128 MByte RAM mit TV-Ausgang und eine unterstützte TV-Karte."
-msgstr ""
+msgstr " -le PC sera l'enregistreur vidéo. Dans le film \"Freak \" selectionner, et il est installé. Recommandé: processeur à 2 GHz, 1024 Mo de RAM, 10 Go d'espace disque dur pour le train avant, 80 + Go pour le back-end, une carte graphique avec 128 Mo de RAM avec sortie TV et une carte TV pris en charge."
 
 #: view_home_about_2
 msgid "Ubuntu ist eine Linux-Distribution, die Linux einfach handhabbar und verständlich macht. Nach der Installation von Ubuntu mittels einer CD oder DVD ist dein Computer schon  gut ausgerüstet für Internet, Textverarbeitung und vieles andere."
-msgstr ""
+msgstr "Ubuntu est une distribution Linux qui rend Linux facile à utiliser et à comprendre. Après l'installation de Ubuntu à l'aide d'un CD ou un DVD, ton ordinateur est déjà bien équipé pour la navigation web, traitement de texte et beaucoup plus."
 
 #: blog
 msgid "Der Blog von Communtu"
@@ -1209,43 +1209,43 @@ msgstr ""
 
 #: view_home_new_repository_2
 msgid "Link zum Repository"
-msgstr ""
+msgstr "Lien vers le dépôt"
 
 #: view_home_derivatives_39
 msgid " für ältere PCs. Sie baut auf einer LXDE Oberfläche auf."
-msgstr ""
+msgstr "pour les ordinateurs plus anciens. Il s'appuie sur une surface LXDE."
 
 #: view_home_new_repository_3
 msgid "Warum soll dies in Communtu eingebaut werden? (Bitte gebe Kontaktdaten an, wenn du über die Aufnahme informiert werden willst)"
-msgstr ""
+msgstr "Pourquoi doit-il être intégré dans Communtu? (S'il te plaît donne tes coordonnées si tu souhaites être informé de l'enregistrement)"
 
 #: view_home_news_10
 msgid "communtu-discuss-de+subscribe@googlegroups.com"
-msgstr ""
+msgstr "communtu-discuss-de+subscribe@googlegroups.com"
 
 #: kvm_image
 msgid "KVM-Image"
-msgstr ""
+msgstr "KVM Image"
 
 #: are_you_sure
 msgid "Bist du sicher?"
-msgstr ""
+msgstr "Est-tu sûr?"
 
 #: view_home_news_11
 msgid "Diese Liste ist für eine Diskussion rund um die Plattform gedacht.  Hier kommt etwas mehr als einmal die Woche eine E-Mail über den Verteiler.   Die Nachrichten werden in einem "
-msgstr ""
+msgstr "Cette liste est pour la discussion autour de la plate-forme. Ici plus d'une fois par semaine, un e-mail arrive à travers le distributeur. Les messages sont dans un"
 
 #: architecture_successful
 msgid "Architektur erfolgreich angelegt."
-msgstr ""
+msgstr "Architecture créé avec succès."
 
 #: livecd
 msgid "Live-CD/DVD"
-msgstr ""
+msgstr "Live-CD/DVD"
 
 #: view_repositories_multinew_0
 msgid "Einlesen"
-msgstr ""
+msgstr "Lire"
 
 #: controller_metapackages_conflicts
 msgid "Das Bündel enthält Pakete, die in Konflikt zueinander stehen!"
@@ -1297,7 +1297,7 @@ msgstr "Nouveaux paquets ajoutés :"
 
 #: view_home_faq_kde_01
 msgid "Unter \"K-Menu -> Programme -> System -> Systemverwaltung -> Software-Quellen -> Softwarequellen von Drittanbietern\" sind die Communtu Quellen auffindbar. Hier können sie auch wieder deaktiviert werden."
-msgstr ""
+msgstr "Sous \"Menu K -> Programmes -> Système -> Administration -> Sources de logiciels ->sources de logiciels tiers \" les sources Communtu sont trouvables. Ici, elles peuvent également être désactivées à nouveau."
 
 #: view_home_derivatives_41
 msgid " Ubuntu ultimate  - Ubuntu mit vielen Desktop-Desgins und Programmen."
@@ -1545,7 +1545,7 @@ msgstr "- Installation de programmes et de versions qui ne sont pas disponibles 
 
 #: view_roles_edit_0
 msgid "Rolle bearbeiten"
-msgstr ""
+msgstr "Modifier un rôle"
 
 #: view_home_faq_11
 msgid "Wie erstelle ich ein Bündel aus meinen installierten Programmen?"
@@ -1573,7 +1573,7 @@ msgstr " Une sorte de Automatix pour l'édition finale."
 
 #: view_roles_edit_1
 msgid "Rollenname"
-msgstr ""
+msgstr "Nom du personnage"
 
 #: view_home_faq_12
 msgid "Unter <b>Bündel</b> und dann \"Neues Bündel\" gibt es den Punkt \"Bündel aus einer Paketliste erstellen\", der anzuklicken ist. Dort ist beschrieben, wie du deine Paketliste in Communtu hochladen kannst. Sobald das Bündel gespeichert ist, ist der Vorgang der Gleiche wie bei einem neuen Bündel erstellen: sinnvollen Namen auswählen, Version bestimmen, Beschreibung einfügen und speichern."
@@ -1927,7 +1927,7 @@ msgstr "Adapter Ubuntu-Linux aux besoins individuels"
 
 #: view_users__user_2
 msgid "Rollen bearbeiten"
-msgstr ""
+msgstr "  Modifier les Rôles"
 
 #: view_home_derivatives_7
 msgid "unter der Kategorie \"Derivate\" zur Installation ausgewählt werden."
