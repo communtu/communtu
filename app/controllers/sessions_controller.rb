@@ -89,6 +89,10 @@ class SessionsController < ApplicationController
       self.current_user.remember_me
       cookies[:auth_token] = { :value => self.current_user.remember_token , :expires => self.current_user.remember_token_expires_at }
     end
+      t=Time.now()
+      u = User.find(current_user.id)
+      u.updated_at = t
+      u.save
       return_to = session[:return_to]
       if return_to.nil?
         if self.current_user.first_login == 1
