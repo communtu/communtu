@@ -24,7 +24,7 @@ fr:
   view_user_profiles__installation_16: "Donner les sources et les cl\xC3\xA9s"
   controller_accounts_4: "Ton compte est d\xC3\xA9j\xC3\xA0 activ\xC3\xA9. Tu peux t'inscrire d\xC3\xA8s maintenant."
   view_roles_index_1: "r\xC3\xB4les assign\xC3\xA9s:"
-  view_home_beteiligung_14: "Nous pouvons \xC3\xA9galement t'aider \xC3\xA0 apprendre cette langue. Donc, tout simplement se connecter \xC3\xA1"
+  view_home_beteiligung_14: "Nous pouvons \xC3\xA9galement t'aider \xC3\xA0 apprendre cette langue. Donc, tout simplement se connecter \xC3\xA1<br>"
   view_user_profiles__installation_17: "Cliquer sur le lien, puis comme sugg\xC3\xA9r\xC3\xA9, ouvrir avec le package d'installation - si aucun Progammdialog appara\xC3\xAEt, le fichier a \xC3\xA9t\xC3\xA9 t\xC3\xA9l\xC3\xA9charg\xC3\xA9 sur votre ordinateur. L\xC3\xA0, tu peux le lancer en double-cliquant dessus."
   controller_accounts_5: "Mot de passe mise \xC3\xA0 jour."
   view_roles_index_2: "r\xC3\xB4les disponibles:"

@@ -107,7 +107,7 @@ msgstr "rôles assignés:"
 
 #: view_home_beteiligung_14
 msgid "Wir können dir auch helfen diese Programmiersprache zu lernen. Also melde dich einfach bei "
-msgstr "Nous pouvons également t'aider à apprendre cette langue. Donc, tout simplement se connecter á"
+msgstr "Nous pouvons également t'aider à apprendre cette langue. Donc, tout simplement se connecter á<br>"
 
 #: view_user_profiles__installation_17
 msgid "Link einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer öffnen - wenn kein Prorgammdialog erscheint, wurde die Datei auf deinem Rechner heruntergeladen. Dort kannst du sie mit Doppelklick starten."
