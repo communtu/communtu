@@ -24,7 +24,7 @@ fr:
   view_user_profiles__installation_16: "Donner les sources et les cl\xC3\xA9s"
   controller_accounts_4: "Ton compte est d\xC3\xA9j\xC3\xA0 activ\xC3\xA9. Tu peux t'inscrire d\xC3\xA8s maintenant."
   view_roles_index_1: "r\xC3\xB4les assign\xC3\xA9s:"
-  view_home_beteiligung_14: "Nous pouvons \xC3\xA9galement t'aider \xC3\xA0 apprendre cette langue. Donc, tout simplement se connecter \xC3\xA1<br>"
+  view_home_beteiligung_14: "Nous pouvons \xC3\xA9galement t'aider \xC3\xA0 apprendre cette langue. Donc, tout simplement se connecter \xC3\xA1"
   view_user_profiles__installation_17: "Cliquer sur le lien, puis comme sugg\xC3\xA9r\xC3\xA9, ouvrir avec le package d'installation - si aucun Progammdialog appara\xC3\xAEt, le fichier a \xC3\xA9t\xC3\xA9 t\xC3\xA9l\xC3\xA9charg\xC3\xA9 sur votre ordinateur. L\xC3\xA0, tu peux le lancer en double-cliquant dessus."
   controller_accounts_5: "Mot de passe mise \xC3\xA0 jour."
   view_roles_index_2: "r\xC3\xB4les disponibles:"
@@ -192,33 +192,33 @@ fr:
   view_home_derivatives_10: http://wiki.ubuntuusers.de/Ubuntu_Studio
   new_derivative: "Nouveau d\xC3\xA9riv\xC3\xA9"
   model_mailer_3: "Tu as fait une demande pour r\xC3\xA9initialiser ton mot de passe"
-  migrate_bundles: ""
-  view_home_derivatives_11: ""
-  model_mailer_4: ""
-  view_home_home_rating_headline: ""
-  view_home_derivatives_12: ""
-  model_mailer_5: ""
+  migrate_bundles: "Prendre les compilations des pr\xC3\xA9d\xC3\xA9cesseurs"
+  view_home_derivatives_11: "- Ubuntu Edition Multi Media. elle sera install\xC3\xA9e avec Communtu, si tu selectionnes en audio, les films et / ou le graphisme \"agrandi \" ."
+  model_mailer_4: "Ton mot de passe a \xC3\xA9t\xC3\xA9 r\xC3\xA9initialis\xC3\xA9."
+  view_home_home_rating_headline: "Compilations Les mieux \xC3\xA9valu\xC3\xA9es."
+  view_home_derivatives_12: "fournit des sources de paquets multim\xC3\xA9dia, qui ne sont pas, pour des raisons juridiques offertes par Ubuntu lui-m\xC3\xAAme. Medibuntu est  pris en consid\xC3\xA9ration \xC3\xA0 Communtu (par exemple, audio et film)."
+  model_mailer_5: "Proposition d'un d\xC3\xA9p\xC3\xB4t"
   view_home_about_1: Qu'est-ce Communtu?
   view_metapackages__package_list_conflicts: "Conflits avec les paquets/Compilations suivants :"
   view_home_derivatives_13: " -le PC sera l'enregistreur vid\xC3\xA9o. Dans le film \"Freak \" selectionner, et il est install\xC3\xA9. Recommand\xC3\xA9: processeur \xC3\xA0 2 GHz, 1024 Mo de RAM, 10 Go d'espace disque dur pour le train avant, 80 + Go pour le back-end, une carte graphique avec 128 Mo de RAM avec sortie TV et une carte TV pris en charge."
   view_home_about_2: "Ubuntu est une distribution Linux qui rend Linux facile \xC3\xA0 utiliser et \xC3\xA0 comprendre. Apr\xC3\xA8s l'installation de Ubuntu \xC3\xA0 l'aide d'un CD ou un DVD, ton ordinateur est d\xC3\xA9j\xC3\xA0 bien \xC3\xA9quip\xC3\xA9 pour la navigation web, traitement de texte et beaucoup plus."
-  blog: ""
-  view_home_derivatives_14: ""
-  donation_possibility: ""
+  blog: Le blog de Communtu
+  view_home_derivatives_14: "- Logiciel \xC3\xA9ducatif. Dans \"Education et des Sciences \" selectionner le niveau \"agrandi \" , et il est install\xC3\xA9."
+  donation_possibility: options de dons
   view_home_about_3: ""
-  view_home_derivatives_15: ""
-  view_home_about_4: ""
-  view_home_derivatives_16: ""
-  model_package_could_not_read: ""
-  view_home_about_5: ""
-  view_home_derivatives_17: ""
-  community_title: ""
-  view_home_about_6: ""
-  promote_chat: ""
-  category_exists: ""
-  view_home_about_7: ""
+  view_home_derivatives_15: http://wiki.ubuntuusers.de/KDE
+  view_home_about_4: Comment puis-je utiliser Communtu?
+  view_home_derivatives_16: ubuntu est avec le bureau KDE.
+  model_package_could_not_read: Impossible de lire {{url}}
+  view_home_about_5: "Pour commencer tu dois choisir <b> T\xC3\xA9l\xC3\xA9charger </ b>."
+  view_home_derivatives_17: http://de.wikipedia.org/wiki/Linux_Mint
+  community_title: utilisateurs  d'ubuntu
+  view_home_about_6: "(Ceci appara\xC3\xAEt seulement apr\xC3\xA8s une"
+  promote_chat: Tu peux voir si l'un de nous est dans le chat en ce moment afin de pouvoir communiquer.
+  category_exists: "Une cat\xC3\xA9gorie avec ce nom existe d\xC3\xA9j\xC3\xA0"
+  view_home_about_7: "L\xC3\xA0, tu peux modifier tes param\xC3\xA8tres. Dans les Pr\xC3\xA9f\xC3\xA9rences tu dois d'abord donnerce la version Ubuntu que tu as install\xC3\xA9 sur ton PC, m\xC3\xAAme si tu souhaites utiliser des programmes non-libre ou pas. En outre, tu choisis les t\xC3\xA2ches pour lesquelles tu souhaites utiliser ubuntu sur ton ordinateur ."
   view_home_derivatives_18: ""
-  new_distribution: ""
+  new_distribution: Nouvelle distribution
   controller_messages_0: ""
   lib_utils_0: ""
   path: ""
@@ -286,20 +286,20 @@ fr:
   view_home_derivatives_33: ""
   helper_distributions_19: ""
   view_user_mailer_signup_notification_2: ""
-  view_home_derivatives_34: ""
-  health_status: ""
-  view_home_derivatives_35: ""
-  vm_running_under: ""
-  helper_distributions_20: ""
-  category_without_colon: ""
-  view_home_derivatives_36: ""
-  view_videos_edit_0: ""
-  subject_without_colon: ""
-  view_home_new_repository_0: ""
-  view_home_derivatives_37: ""
-  view_home_new_repository_1: ""
-  helper_distributions_21: ""
-  view_home_derivatives_38: ""
+  view_home_derivatives_34: " Le noyau Linux remplac\xC3\xA9 par OpenSolaris. Fournit uniquement une base minimale d'applications. L'installation des paquets suppl\xC3\xA9mentaires est laiss\xC3\xA9 \xC3\xA0 l'utilisateur; pour cela Communtu peut \xC3\xAAtre utilis\xC3\xA9."
+  health_status: "L'\xC3\xA9tat de sant\xC3\xA9"
+  view_home_derivatives_35: "Il existe d'autres d\xC3\xA9riv\xC3\xA9s donc nous ne pouvons pas encore fournir une recommandation d'installation:"
+  vm_running_under: "machine virtuelle fonctionne sur:"
+  helper_distributions_20: "non-libre et provenant de la Communaut\xC3\xA9 des sources de paquets "
+  category_without_colon: "Cat\xC3\xA9gorie"
+  view_home_derivatives_36: "- Une variante africaine de Ubuntu, qui n'est pas disponible sur internet."
+  view_videos_edit_0: " Modifier la vid\xC3\xA9o"
+  subject_without_colon: " objet "
+  view_home_new_repository_0: "D\xC3\xA9p\xC3\xB4t proposer"
+  view_home_derivatives_37: http://de.wikipedia.org/wiki/LinEx
+  view_home_new_repository_1: "Il te manque une source ici ? Alors, vous pouvez proposer un d\xC3\xA9p\xC3\xB4t."
+  helper_distributions_21: non-gratuit et de la Third Party sources de paquets
+  view_home_derivatives_38: "- La distribution publique de la r\xC3\xA9gion espagnole d'Estr\xC3\xA9madure."
   view_home_new_repository_2: "Lien vers le d\xC3\xA9p\xC3\xB4t"
   view_home_derivatives_39: pour les ordinateurs plus anciens. Il s'appuie sur une surface LXDE.
   view_home_new_repository_3: "Pourquoi doit-il \xC3\xAAtre int\xC3\xA9gr\xC3\xA9 dans Communtu? (S'il te pla\xC3\xAEt donne tes coordonn\xC3\xA9es si tu souhaites \xC3\xAAtre inform\xC3\xA9 de l'enregistrement)"
@@ -702,7 +702,7 @@ fr:
   view_derivatives_show_3: "Ic\xC3\xB4ne de fichier:"
   controller_packages_2: "Mise \xC3\xA0 jour du paquet."
   controller_sessions_3: "L'enregistrement de ta distribution a \xC3\xA9t\xC3\xA9 remplac\xC3\xA9 par {{dist_old}} parce que votre ancienne distribution d'Ubuntu (et donc aussi de Communtu) n'est plus support\xC3\xA9. Nous recommandons un pour votre ordinateur une  <a href='http://wiki.ubuntuusers.de/Upgrade'>a mise \xC3\xA0 niveau </a> pour {{dist_new}}."
-  view_user_profiles__profile_data_15: "licences pas gratuite permise (\xC3\xA9galement gratuit, mais les sources ne sont pas ouverts - la transition en douceur vers Linux:Anh\xC3\xB6renUmschrift)"
+  view_user_profiles__profile_data_15: "Licences pas libre permise (\xC3\xA9galement gratuit, mais les sources ne sont pas ouverts - la transition en douceur vers Linux:Anh\xC3\xB6renUmschrift)"
   view_packages_show_17: "Inclut les paquets suivants (\"d\xC3\xA9pend \" et \"recommande \"):"
   archive: Archives
   controller_sessions_4: !binary |

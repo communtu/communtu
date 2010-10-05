@@ -107,7 +107,7 @@ msgstr "rôles assignés:"
 
 #: view_home_beteiligung_14
 msgid "Wir können dir auch helfen diese Programmiersprache zu lernen. Also melde dich einfach bei "
-msgstr "Nous pouvons également t'aider à apprendre cette langue. Donc, tout simplement se connecter á<br>"
+msgstr "Nous pouvons également t'aider à apprendre cette langue. Donc, tout simplement se connecter á"
 
 #: view_user_profiles__installation_17
 msgid "Link einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer öffnen - wenn kein Prorgammdialog erscheint, wurde die Datei auf deinem Rechner heruntergeladen. Dort kannst du sie mit Doppelklick starten."
@@ -759,27 +759,27 @@ msgstr "Tu as fait une demande pour réinitialiser ton mot de passe"
 
 #: migrate_bundles
 msgid "Bündel von Vorgänger übernehmen"
-msgstr ""
+msgstr "Prendre les compilations des prédécesseurs"
 
 #: view_home_derivatives_11
 msgid " - Ubuntu Multimedie-Edition. Sie wird bei Communtu mitinstalliert, wenn du bei Audio, Film und/oder Grafik/Design \"erweitert\" anwählst."
-msgstr ""
+msgstr "- Ubuntu Edition Multi Media. elle sera installée avec Communtu, si tu selectionnes en audio, les films et / ou le graphisme \"agrandi \" ."
 
 #: model_mailer_4
 msgid "Dein Passwort wurde zurückgesetzt."
-msgstr ""
+msgstr "Ton mot de passe a été réinitialisé."
 
 #: view_home_home_rating_headline
 msgid "Am besten bewertete Bündel"
-msgstr ""
+msgstr "Compilations Les mieux évaluées."
 
 #: view_home_derivatives_12
 msgid " stellt Multimedia-Paketquellen bereit, die aus rechtlichen Gründen nicht von Ubuntu selbst angeboten wird. Medibuntu wird bei Communtu mit berücksichtigt (z.B. bei Audio und Film)."
-msgstr ""
+msgstr "fournit des sources de paquets multimédia, qui ne sont pas, pour des raisons juridiques offertes par Ubuntu lui-même. Medibuntu est  pris en considération à Communtu (par exemple, audio et film)."
 
 #: model_mailer_5
 msgid "Vorschlag eines Repositorys"
-msgstr ""
+msgstr "Proposition d'un dépôt"
 
 #: view_home_about_1
 msgid "Wozu Communtu?"
@@ -799,15 +799,15 @@ msgstr "Ubuntu est une distribution Linux qui rend Linux facile à utiliser et �
 
 #: blog
 msgid "Der Blog von Communtu"
-msgstr ""
+msgstr "Le blog de Communtu"
 
 #: view_home_derivatives_14
 msgid " - Lernsoftware. Bei \"Bildung und Wissenschaft\" den Level \"erweitert\" auswählen, und es wird mitinstalliert."
-msgstr ""
+msgstr "- Logiciel éducatif. Dans \"Education et des Sciences \" selectionner le niveau \"agrandi \" , et il est installé."
 
 #: donation_possibility
 msgid "Spendenmöglichkeit"
-msgstr ""
+msgstr "options de dons"
 
 #: view_home_about_3
 msgid "Es gibt aber auch viele Anwendungen, die erst noch nachinstalliert werden müssen, z.B. in den Bereichen Audio, Video und Grafik, damit dein Computer mit Ubuntu wirklich  benutzbar ist. Communtu macht diese Nachinstallation jetzt noch einfacher und hat zudem spezielle Bereiche für Einsteiger und Windows-Umsteiger."
@@ -815,47 +815,47 @@ msgstr ""
 
 #: view_home_derivatives_15
 msgid "http://wiki.ubuntuusers.de/KDE"
-msgstr ""
+msgstr "http://wiki.ubuntuusers.de/KDE"
 
 #: view_home_about_4
 msgid "Wie verwende ich Communtu?"
-msgstr ""
+msgstr "Comment puis-je utiliser Communtu?"
 
 #: view_home_derivatives_16
 msgid " ist Ubuntu mit dem KDE-Desktop."
-msgstr ""
+msgstr "ubuntu est avec le bureau KDE."
 
 #: model_package_could_not_read
 msgid "Konnte {{url}} nicht lesen"
-msgstr ""
+msgstr "Impossible de lire {{url}}"
 
 #: view_home_about_5
 msgid "Zum Starten wählst du <b>Download</b>."
-msgstr ""
+msgstr "Pour commencer tu dois choisir <b> Télécharger </ b>."
 
 #: view_home_derivatives_17
 msgid "http://de.wikipedia.org/wiki/Linux_Mint"
-msgstr ""
+msgstr "http://de.wikipedia.org/wiki/Linux_Mint"
 
 #: community_title
 msgid "ubuntuusers"
-msgstr ""
+msgstr "utilisateurs  d'ubuntu"
 
 #: view_home_about_6
 msgid "  (Diese erscheint erst nach einer "
-msgstr ""
+msgstr "(Ceci apparaît seulement après une"
 
 #: promote_chat
 msgid "Du kannst gucken, ob sich gerade jemand von uns im Chat aufhält und mit uns über den Chat kommunizieren."
-msgstr ""
+msgstr "Tu peux voir si l'un de nous est dans le chat en ce moment afin de pouvoir communiquer."
 
 #: category_exists
 msgid "Eine Kategorie mit diesem Namen existiert schon"
-msgstr ""
+msgstr "Une catégorie avec ce nom existe déjà"
 
 #: view_home_about_7
 msgid "Dort kannst du deine Einstellungen bearbeiten. Unter den Voreinstellungen musst du zunächst eintragen, welche Ubuntu-Version du auf deinem PC installiert hast, außerdem, ob du unfreie Programme nutzen willst oder nicht. Zudem wählst du aus, für welche Aufgaben du deinen Ubuntu-PC nutzen willst. "
-msgstr ""
+msgstr "Là, tu peux modifier tes paramètres. Dans les Préférences tu dois d'abord donnerce la version Ubuntu que tu as installé sur ton PC, même si tu souhaites utiliser des programmes non-libre ou pas. En outre, tu choisis les tâches pour lesquelles tu souhaites utiliser ubuntu sur ton ordinateur ."
 
 #: view_home_derivatives_18
 msgid " ist eine Ubuntu-Abspaltung mit eigener User-Community, die sich vor allem Benutzerfreundlichkeit auf die Fahnen schreibt. Linux Mint ähnelt Ubuntu sehr, hat aber viele Codes, z.B. für DVDs und MP3s, schon vorinstalliert. Diese Codecs gibt es allerdings auch bei Communtu, unter Unterhaltungsmedien. "
@@ -863,7 +863,7 @@ msgstr ""
 
 #: new_distribution
 msgid "Neue Distribution"
-msgstr ""
+msgstr "Nouvelle distribution"
 
 #: controller_messages_0
 msgid ""
@@ -1153,59 +1153,59 @@ msgstr ""
 
 #: view_home_derivatives_34
 msgid " - ersetzt den Linux-Kern durch OpenSolaris. Stellt nur eine minimale Basis an Anwendungen bereit. Die Installation weiterer Pakete bleibt dem Benutzer überlassen; hierfür kann Communtu genutzt werden."
-msgstr ""
+msgstr " Le noyau Linux remplacé par OpenSolaris. Fournit uniquement une base minimale d'applications. L'installation des paquets supplémentaires est laissé à l'utilisateur; pour cela Communtu peut être utilisé."
 
 #: health_status
 msgid "Gesundheitsstatus"
-msgstr ""
+msgstr "L'état de santé"
 
 #: vm_running_under
 msgid "virtuelle Maschine läuft unter: "
-msgstr ""
+msgstr "machine virtuelle fonctionne sur:"
 
 #: view_home_derivatives_35
 msgid "Es gibt noch weitere Derivate zu denen wir bisher noch keine Installationsempfehlung abgeben können:"
-msgstr ""
+msgstr "Il existe d'autres dérivés donc nous ne pouvons pas encore fournir une recommandation d'installation:"
 
 #: helper_distributions_20
 msgid "non-free und aus den Community Paketquellen"
-msgstr ""
+msgstr "non-libre et provenant de la Communauté des sources de paquets "
 
 #: view_videos_edit_0
 msgid "Video bearbeiten"
-msgstr ""
+msgstr " Modifier la vidéo"
 
 #: category_without_colon
 msgid "Kategorie"
-msgstr ""
+msgstr "Catégorie"
 
 #: view_home_derivatives_36
 msgid " - eine afrikanische Ubuntu-Variante, die allerdings offenbar nicht übers Internet erhältlich ist."
-msgstr ""
+msgstr "- Une variante africaine de Ubuntu, qui n'est pas disponible sur internet."
 
 #: subject_without_colon
 msgid "Betreff"
-msgstr ""
+msgstr " objet "
 
 #: view_home_new_repository_0
 msgid "Repository vorschlagen"
-msgstr ""
+msgstr "Dépôt proposer"
 
 #: view_home_derivatives_37
 msgid "http://de.wikipedia.org/wiki/LinEx"
-msgstr ""
+msgstr "http://de.wikipedia.org/wiki/LinEx"
 
 #: view_home_new_repository_1
 msgid "Du vermisst hier eine Quelle? Dann kannst du ein Repository vorschlagen."
-msgstr ""
+msgstr "Il te manque une source ici ? Alors, vous pouvez proposer un dépôt."
 
 #: helper_distributions_21
 msgid "non-free und aus Third Party Paketquellen"
-msgstr ""
+msgstr "non-gratuit et de la Third Party sources de paquets"
 
 #: view_home_derivatives_38
 msgid " - öffentliche Distribution der spanischen Region Extremadura."
-msgstr ""
+msgstr "- La distribution publique de la région espagnole d'Estrémadure."
 
 #: view_home_new_repository_2
 msgid "Link zum Repository"
@@ -2739,7 +2739,7 @@ msgstr "Version du paquet"
 
 #: view_user_profiles__profile_data_15
 msgid " Unfreie Lizenzen zulassen (auch kostenlos, aber Quellen liegen nicht offen - der weiche Übergang zu Linux: "
-msgstr "licences pas gratuite permise (également gratuit, mais les sources ne sont pas ouverts - la transition en douceur vers Linux:AnhörenUmschrift)"
+msgstr "Licences pas libre permise (également gratuit, mais les sources ne sont pas ouverts - la transition en douceur vers Linux:AnhörenUmschrift)"
 
 #: view_user_profiles__installation_2
 msgid "Aufgrund deiner Auswahl werden jetzt Programme auf deinem Computer installiert. Folgende Schritte sind dafür zu tun"
