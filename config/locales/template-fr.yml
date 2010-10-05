@@ -272,20 +272,25 @@ fr:
   helper_distributions_16: ""
   view_layouts_application_warning: ""
   make_distribution_final: ""
-  view_users_new_9: ""
-  view_home_derivatives_31: ""
-  helper_distributions_17: ""
-  view_user_mailer_signup_notification_0: ""
-  view_user_mailer_reset_password_0: ""
-  make_your_bundle: ""
-  controller_metapackages_no_save: ""
+  view_users_new_9: "Oui, je souhaite m'abonner \xC3\xA0 la liste de diffusion pour la discussion."
+  view_home_derivatives_31: ". En raison de la n\xC3\xA9cessit\xC3\xA9 d'installation du driver Linux MCE doit \xC3\xAAtre install\xC3\xA9 directement, Communtu peut  \xC3\xAAtre utilis\xC3\xA9 pour installer des logiciels suppl\xC3\xA9mentaires."
+  helper_distributions_17: "libre et provenant de la Communaut\xC3\xA9 des sources de paquets "
+  view_user_mailer_signup_notification_0: "Bonjour et bienvenue \xC3\xA0 Communtu!\n\n\n Tu t'es enregistr\xC3\xA9 avec succ\xC3\xA8s sur Communtu http://www.communtu.de\n\
+    Maintenant tu peux utiliser toutes les fonctionnalit\xC3\xA9s de la plate-forme\n\
+    ."
+  view_user_mailer_reset_password_0: "Tu as re\xC3\xA7u un nouveau mot de passe."
+  make_your_bundle: "Cr\xC3\xA9e toi une compilation pour le syst\xC3\xA8me de mise \xC3\xA0 niveau"
+  controller_metapackages_no_save: "Le bundle contient  les conflits et ne peut donc pas \xC3\xAAtre stock\xC3\xA9s en tant que m\xC3\xA9ta-paquet."
   view_home_derivatives_32: ""
-  helper_distributions_18: ""
-  view_user_mailer_signup_notification_1: ""
-  invalid_activation_code_please_check_again: ""
-  view_home_derivatives_33: ""
-  helper_distributions_19: ""
-  view_user_mailer_signup_notification_2: ""
+  helper_distributions_18: "libre et provenant des sources de paquets Third Party "
+  view_user_mailer_signup_notification_1: "Ton nom d'utilisateur est:"
+  invalid_activation_code_please_check_again: "changement de code invalide. S'il te pla\xC3\xAEt v\xC3\xA9rifie le code et essaye \xC3\xA0 nouveau. (Peut-\xC3\xAAtre ton programme de messagerie a ins\xC3\xA9r\xC3\xA9 un saut de ligne?)"
+  view_home_derivatives_33: http://de.wikipedia.org/wiki/GNU-Varianten#Nexenta_OS
+  helper_distributions_19: non-free et provenant des sources de paquets principaux
+  view_user_mailer_signup_notification_2: "\n\
+    Cordialement\n\n\
+    l'\xC3\xA9quipe communtu \n\n Pour plus d'informations sur le projet, en particulier ce qui concerne l'utilisation, tu trouveras dans la liste FAQ\n sur http://www.communtu.de/home/faq\n\n Nos annonces et listes de diffusion peuvent \xC3\xAAtre trouv\xC3\xA9es \xC3\xA0 l'adresse:\n\
+    http://www.communtu.de/home/news"
   view_home_derivatives_34: " Le noyau Linux remplac\xC3\xA9 par OpenSolaris. Fournit uniquement une base minimale d'applications. L'installation des paquets suppl\xC3\xA9mentaires est laiss\xC3\xA9 \xC3\xA0 l'utilisateur; pour cela Communtu peut \xC3\xAAtre utilis\xC3\xA9."
   health_status: "L'\xC3\xA9tat de sant\xC3\xA9"
   view_home_derivatives_35: "Il existe d'autres d\xC3\xA9riv\xC3\xA9s donc nous ne pouvons pas encore fournir une recommandation d'installation:"

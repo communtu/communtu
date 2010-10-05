@@ -1081,7 +1081,7 @@ msgstr ""
 
 #: view_users_new_9
 msgid "Ja, ich möchte die Maillingliste für Diskussionen abonnieren."
-msgstr ""
+msgstr "Oui, je souhaite m'abonner à la liste de diffusion pour la discussion."
 
 #: view_user_mailer_signup_notification_0
 msgid ""
@@ -1092,30 +1092,36 @@ msgid ""
 "erfolgreich registriert. Jetzt kannst du alle Features der Plattform\n"
 "benutzen."
 msgstr ""
+"Bonjour et bienvenue à Communtu!\n"
+"\n"
+"\n"
+" Tu t'es enregistré avec succès sur Communtu http://www.communtu.de\n"
+"Maintenant tu peux utiliser toutes les fonctionnalités de la plate-forme\n"
+"."
 
 #: view_user_mailer_reset_password_0
 msgid ", du hast ein neues Passwort erhalten."
-msgstr ""
+msgstr "Tu as reçu un nouveau mot de passe."
 
 #: view_home_derivatives_31
 msgid ". Aufgrund der notwendigen Treiberinstallation sollte Linux MCE direkt installiert werden, Communtu kann dann aber für die Installation weiterer Software genutzt werden."
-msgstr ""
+msgstr ". En raison de la nécessité d'installation du driver Linux MCE doit être installé directement, Communtu peut  être utilisé pour installer des logiciels supplémentaires."
 
 #: helper_distributions_17
 msgid "free und aus den Community Paketquellen"
-msgstr ""
+msgstr "libre et provenant de la Communauté des sources de paquets "
 
 #: view_user_mailer_signup_notification_1
 msgid "Dein Benutzername lautet:"
-msgstr ""
+msgstr "Ton nom d'utilisateur est:"
 
 #: make_your_bundle
 msgid "Erstelle dir ein Bündel zum System-Upgrade"
-msgstr ""
+msgstr "Crée toi une compilation pour le système de mise à niveau"
 
 #: controller_metapackages_no_save
 msgid "Das Bündel enthält Konflikte und kann deshalb nicht als Metapaket gespeichert werden."
-msgstr ""
+msgstr "Le bundle contient  les conflits et ne peut donc pas être stockés en tant que méta-paquet."
 
 #: view_home_derivatives_32
 msgid " ist ein Ubuntu-Derivat komplett aus freier Software. Nur für erfahrene Nutzer geeignet. Sollte mit der Gobuntu-CD installiert werden, damit es auch wirklich nur freie Software ist. Nachinstallationen mit Communtu möglich, sinnvollerweise sollten dann im Nutzerprofil \"freie Software\" angewählt werden. Dies Derivate ist in der Version 8.04 erhältlich und wird nicht weiterentwickelt."
@@ -1123,11 +1129,11 @@ msgstr ""
 
 #: helper_distributions_18
 msgid "free und aus Third Party Paketquellen"
-msgstr ""
+msgstr "libre et provenant des sources de paquets Third Party "
 
 #: invalid_activation_code_please_check_again
 msgid "Ungültiger Anderungscode. Bitte den Code prüfen und nochmals versuchen. (Vielleicht hat dein Email-Programm einen Zeilenumbruch eingefügt?)"
-msgstr ""
+msgstr "changement de code invalide. S'il te plaît vérifie le code et essaye à nouveau. (Peut-être ton programme de messagerie a inséré un saut de ligne?)"
 
 #: view_user_mailer_signup_notification_2
 msgid ""
@@ -1142,14 +1148,24 @@ msgid ""
 "  Unsere Ankündigungen und Mailinglisten findest du unter:\n"
 "http://www.communtu.de/home/news"
 msgstr ""
+"\n"
+"Cordialement\n"
+"\n"
+"l'équipe communtu \n"
+"\n"
+" Pour plus d'informations sur le projet, en particulier ce qui concerne l'utilisation, tu trouveras dans la liste FAQ\n"
+" sur http://www.communtu.de/home/faq\n"
+"\n"
+" Nos annonces et listes de diffusion peuvent être trouvées à l'adresse:\n"
+"http://www.communtu.de/home/news"
 
 #: view_home_derivatives_33
 msgid "http://de.wikipedia.org/wiki/GNU-Varianten#Nexenta_OS"
-msgstr ""
+msgstr "http://de.wikipedia.org/wiki/GNU-Varianten#Nexenta_OS"
 
 #: helper_distributions_19
 msgid "non-free und aus den main Paketquellen"
-msgstr ""
+msgstr "non-free et provenant des sources de paquets principaux"
 
 #: view_home_derivatives_34
 msgid " - ersetzt den Linux-Kern durch OpenSolaris. Stellt nur eine minimale Basis an Anwendungen bereit. Die Installation weiterer Pakete bleibt dem Benutzer überlassen; hierfür kann Communtu genutzt werden."
