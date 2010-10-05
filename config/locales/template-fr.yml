@@ -168,7 +168,7 @@ fr:
   conny_picture: Portrait de Communtu Conny
   bundle_to_livecd: "LiveCD / DVD \xC3\xA1 partir de la compilation<i>{{name}}</ i> cr\xC3\xA9er"
   view_home_cancel_1: "Soit tu essaies \xC3\xA0 nouveau ou alors tu fais un transfer"
-  view_home_news_5: "Cette liste est pour les annonces g\xC3\xA9n\xC3\xA9rales de l'\xC3\xA9quipe Communtu  pour les utilisateurs. Une fois par semaine, un e-mail sera envoy\xC3\xA9 par le distributeur. Les messages sont dans un"
+  view_home_news_5: "Cette liste est pour les annonces g\xC3\xA9n\xC3\xA9rales venant de l'\xC3\xA9quipe Communtu  pour les utilisateurs. Au moins une fois par semaine, un E-mail est envoy\xC3\xA9 \xC3\xA0 travers le distributeur. Les messages sont dans un"
   used_in_bundles: "Utilis\xC3\xA9 avec Communtu dans les compilations suivantes:"
   view_user_mailer_activation_0: ", Votre compte a \xC3\xA9t\xC3\xA9 activ\xC3\xA9. Maintenant, suis le lien:"
   controller_metapackages_please_regenerate: "La compilation \xC3\xA1 \xC3\xA9t\xC3\xA9 remise \xC3\xA0 z\xC3\xA9ro. S'il te pla\xC3\xAEt incr\xC3\xA9mente la version en et recr\xC3\xA9e le m\xC3\xA9ta-paquet."
@@ -306,7 +306,7 @@ fr:
   view_home_news_10: communtu-discuss-de+subscribe@googlegroups.com
   kvm_image: KVM Image
   are_you_sure: "Est-tu s\xC3\xBBr?"
-  view_home_news_11: "Cette liste est pour la discussion autour de la plate-forme. Ici plus d'une fois par semaine, un e-mail arrive \xC3\xA0 travers le distributeur. Les messages sont dans un"
+  view_home_news_11: "Cette liste est pour la discussion autour de la plate-forme. Au moins une fois par semaine, un E-mail arrive \xC3\xA0 travers le distributeur. Les messages sont dans un"
   architecture_successful: "Architecture cr\xC3\xA9\xC3\xA9 avec succ\xC3\xA8s."
   livecd: Live-CD/DVD
   view_repositories_multinew_0: Lire

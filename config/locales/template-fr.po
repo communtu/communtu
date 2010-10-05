@@ -663,7 +663,7 @@ msgstr "Soit tu essaies à nouveau ou alors tu fais un transfer"
 
 #: view_home_news_5
 msgid "Diese Liste ist für allgemeine Ankündigungen aus den Communtu Team für die Nutzer gedacht.  Es wir hier ungefähr einmal die Woche eine E-Mail über den Verteiler geschickt.   Die Nachrichten werden in einem "
-msgstr "Cette liste est pour les annonces générales de l'équipe Communtu  pour les utilisateurs. Une fois par semaine, un e-mail sera envoyé par le distributeur. Les messages sont dans un"
+msgstr "Cette liste est pour les annonces générales venant de l'équipe Communtu  pour les utilisateurs. Au moins une fois par semaine, un E-mail est envoyé à travers le distributeur. Les messages sont dans un"
 
 #: used_in_bundles
 msgid "Wird bei Communtu in folgenden Bündeln benutzt:"
@@ -1233,7 +1233,7 @@ msgstr "Est-tu sûr?"
 
 #: view_home_news_11
 msgid "Diese Liste ist für eine Diskussion rund um die Plattform gedacht.  Hier kommt etwas mehr als einmal die Woche eine E-Mail über den Verteiler.   Die Nachrichten werden in einem "
-msgstr "Cette liste est pour la discussion autour de la plate-forme. Ici plus d'une fois par semaine, un e-mail arrive à travers le distributeur. Les messages sont dans un"
+msgstr "Cette liste est pour la discussion autour de la plate-forme. Au moins une fois par semaine, un E-mail arrive à travers le distributeur. Les messages sont dans un"
 
 #: architecture_successful
 msgid "Architektur erfolgreich angelegt."
