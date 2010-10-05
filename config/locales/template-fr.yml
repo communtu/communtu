@@ -210,13 +210,13 @@ fr:
   view_home_about_4: Comment puis-je utiliser Communtu?
   view_home_derivatives_16: ubuntu est avec le bureau KDE.
   model_package_could_not_read: Impossible de lire {{url}}
-  view_home_about_5: "Pour commencer tu dois choisir <b> T\xC3\xA9l\xC3\xA9charger </ b>."
+  view_home_about_5: "Pour commencer tu dois s\xC3\xA9lectionner<b> T\xC3\xA9l\xC3\xA9charger </ b>."
   view_home_derivatives_17: http://de.wikipedia.org/wiki/Linux_Mint
   community_title: utilisateurs  d'ubuntu
   view_home_about_6: "(Ceci appara\xC3\xAEt seulement apr\xC3\xA8s une"
   promote_chat: Tu peux voir si l'un de nous est dans le chat en ce moment afin de pouvoir communiquer.
   category_exists: "Une cat\xC3\xA9gorie avec ce nom existe d\xC3\xA9j\xC3\xA0"
-  view_home_about_7: "L\xC3\xA0, tu peux modifier tes param\xC3\xA8tres. Dans les Pr\xC3\xA9f\xC3\xA9rences tu dois d'abord donnerce la version Ubuntu que tu as install\xC3\xA9 sur ton PC, m\xC3\xAAme si tu souhaites utiliser des programmes non-libre ou pas. En outre, tu choisis les t\xC3\xA2ches pour lesquelles tu souhaites utiliser ubuntu sur ton ordinateur ."
+  view_home_about_7: "L\xC3\xA0, tu as la possibilt\xC3\xA9 de modifier tes param\xC3\xA8tres. Dans les Pr\xC3\xA9f\xC3\xA9rences tu dois d'abord donner la version Ubuntu que tu as install\xC3\xA9 sur ton PC, et sp\xC3\xA9cifier, si tu souhaites utiliser des programmes non-libre ou pas. En outre, tu choisis les t\xC3\xA2ches pour lesquelles tu souhaites utiliser ubuntu sur ton ordinateur ."
   view_home_derivatives_18: ""
   new_distribution: Nouvelle distribution
   controller_messages_0: ""

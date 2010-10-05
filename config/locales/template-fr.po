@@ -831,7 +831,7 @@ msgstr "Impossible de lire {{url}}"
 
 #: view_home_about_5
 msgid "Zum Starten wählst du <b>Download</b>."
-msgstr "Pour commencer tu dois choisir <b> Télécharger </ b>."
+msgstr "Pour commencer tu dois sélectionner<b> Télécharger </ b>."
 
 #: view_home_derivatives_17
 msgid "http://de.wikipedia.org/wiki/Linux_Mint"
@@ -855,7 +855,7 @@ msgstr "Une catégorie avec ce nom existe déjà"
 
 #: view_home_about_7
 msgid "Dort kannst du deine Einstellungen bearbeiten. Unter den Voreinstellungen musst du zunächst eintragen, welche Ubuntu-Version du auf deinem PC installiert hast, außerdem, ob du unfreie Programme nutzen willst oder nicht. Zudem wählst du aus, für welche Aufgaben du deinen Ubuntu-PC nutzen willst. "
-msgstr "Là, tu peux modifier tes paramètres. Dans les Préférences tu dois d'abord donnerce la version Ubuntu que tu as installé sur ton PC, même si tu souhaites utiliser des programmes non-libre ou pas. En outre, tu choisis les tâches pour lesquelles tu souhaites utiliser ubuntu sur ton ordinateur ."
+msgstr "Là, tu as la possibilté de modifier tes paramètres. Dans les Préférences tu dois d'abord donner la version Ubuntu que tu as installé sur ton PC, et spécifier, si tu souhaites utiliser des programmes non-libre ou pas. En outre, tu choisis les tâches pour lesquelles tu souhaites utiliser ubuntu sur ton ordinateur ."
 
 #: view_home_derivatives_18
 msgid " ist eine Ubuntu-Abspaltung mit eigener User-Community, die sich vor allem Benutzerfreundlichkeit auf die Fahnen schreibt. Linux Mint ähnelt Ubuntu sehr, hat aber viele Codes, z.B. für DVDs und MP3s, schon vorinstalliert. Diese Codecs gibt es allerdings auch bei Communtu, unter Unterhaltungsmedien. "
