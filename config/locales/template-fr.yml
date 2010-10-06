@@ -42,7 +42,7 @@ fr:
   view_metapackages__package_list_1: "disponible pour:"
   direct_indirect_covered_packages: Directement et indirectement les paquets inclus
   controller_accounts_8: Votre ancien mot de passe est incorrect.
-  view_categories_edit_3: ien pour plus d'informations
+  view_categories_edit_3: Lien pour plus d'informations
   view_metapackages__package_list_2: Supprimer Paquet/Programme de la compilation
   view_categories_edit_4: "Cat\xC3\xA9gorie principale qui est affich\xC3\xA9e sur la page d'accueil du t\xC3\xA9l\xC3\xA9chargement:"
   view_user_profiles_new_3: Experts de haut niveau
@@ -205,7 +205,7 @@ fr:
   blog: Le blog de Communtu
   view_home_derivatives_14: "- Logiciel \xC3\xA9ducatif. Dans \"Education et des Sciences \" selectionner le niveau \"agrandi \" , et il est install\xC3\xA9."
   donation_possibility: options de dons
-  view_home_about_3: ""
+  view_home_about_3: "Il ya aussi de nombreuses applications qui ont besoin d'\xC3\xAAtre install\xC3\xA9es plus tard encore, comme dans les domaines de l'audio, vid\xC3\xA9o et graphiques afin que ton ordinateur soit r\xC3\xA9ellement utilisable avec Ubuntu. Communtu fait cette installation ult\xC3\xA9rieur encore plus facile et poss\xC3\xA8de \xC3\xA9galement des espaces sp\xC3\xA9cifiques pour les d\xC3\xA9butants et Windows convertit."
   view_home_derivatives_15: http://wiki.ubuntuusers.de/KDE
   view_home_about_4: Comment puis-je utiliser Communtu?
   view_home_derivatives_16: ubuntu est avec le bureau KDE.
@@ -217,61 +217,66 @@ fr:
   promote_chat: Tu peux voir si l'un de nous est dans le chat en ce moment afin de pouvoir communiquer.
   category_exists: "Une cat\xC3\xA9gorie avec ce nom existe d\xC3\xA9j\xC3\xA0"
   view_home_about_7: "L\xC3\xA0, tu as la possibilt\xC3\xA9 de modifier tes param\xC3\xA8tres. Dans les Pr\xC3\xA9f\xC3\xA9rences tu dois d'abord donner la version Ubuntu que tu as install\xC3\xA9 sur ton PC, et sp\xC3\xA9cifier, si tu souhaites utiliser des programmes non-libre ou pas. En outre, tu choisis les t\xC3\xA2ches pour lesquelles tu souhaites utiliser ubuntu sur ton ordinateur ."
-  view_home_derivatives_18: ""
+  view_home_derivatives_18: "est une Ubuntu spin-off avec sa communaut\xC3\xA9 d'utilisateurs propre et se r\xC3\xA9f\xC3\xA9rant en particulier par sa Facilit\xC3\xA9 d'utilisation"
   new_distribution: Nouvelle distribution
-  controller_messages_0: ""
-  lib_utils_0: ""
-  path: ""
-  view_home_about_8: ""
-  passwd: ""
-  view_home_derivatives_20: ""
-  view_home_about_9: ""
-  view_accounts_edit_1: ""
-  install2: ""
-  view_home_derivatives_21: ""
-  donate: ""
-  installing_using_script: ""
-  view_home_derivatives_22: ""
-  press_archiv_editorial: ""
-  view_admins_load_packages_0: ""
-  view_users_index_0: ""
-  prepare_livecd: ""
-  view_home_derivatives_24: ""
-  spam_user_delete: ""
-  view_users_index_1: ""
+  controller_messages_0: |
+    Message original de {{user}}  le {{datum}}  
+      
+
+  lib_utils_0: "Syst\xC3\xA8me de commande a \xC3\xA9chou\xC3\xA9:"
+  path: "Path:"
+  view_home_about_8: "Ensuite tu as la possibilt\xC3\xA9 d'avoir avec \"Sauvegarder et fine s\xC3\xA9lection\" un aper\xC3\xA7u plus d\xC3\xA9taill\xC3\xA9 des compilations et programmes install\xC3\xA9s et aussi de modifier la s\xC3\xA9lection. Si tu n'as pas le temps ou l'\xC3\xA9nvie, il suffit de cliquer sur \"Sauvegarder \". Cela am\xC3\xA8ne \xC3\xA0 la page d'installation. Tu y trouveras un bouton installation avec lequelle Ubuntu apr\xC3\xA8s-installation peut \xC3\xAAtre d\xC3\xA9marr\xC3\xA9. Cela prend du temps pour que les programmes puissent \xC3\xAAtre t\xC3\xA9l\xC3\xA9charg\xC3\xA9s et install\xC3\xA9es automatiquement du web.Termin\xC3\xA9 est la polyvalence utilisable PC Ubuntu!"
+  passwd: Mot de passe
+  view_home_derivatives_20: "Automatix \xC3\xA9tait une aide \xC3\xA0 l'installation, qui \xC3\xA9tait tr\xC3\xA8s populaire (elle a m\xC3\xAAme \xC3\xA9t\xC3\xA9 recommand\xC3\xA9e par le New York Times),  mais elle ne repondaitpas tout \xC3\xA0 fait aux normes de programmations ubuntu et maintenant elle n'est plus d\xC3\xA9velopp\xC3\xA9e."
+  view_home_about_9: "Important: On a vraiment besoin d'une connexion Internet rapide. Pour les utilisateurs de Ubuntu qui utilisent encore un modem ou similaires, nous envisageons la possibilit\xC3\xA9 de cr\xC3\xA9er automatiquement des CD et des DVD."
+  view_accounts_edit_1: Ancien mot de passe
+  install2: Installer
+  view_home_derivatives_21: "d\xC3\xA9riv\xC3\xA9s ult\xC3\xA9rieur \xC3\xA0 installer sur communtu, plus appropri\xC3\xA9 de mettre sur une installation bas\xC3\xA9e sur Xfce (par exemple Ubuntu) :"
+  donate: Don
+  installing_using_script: Installer avec l'aide du script
+  view_home_derivatives_22: " Orient pour BeOS, s'appuie sur la vitesse, la compatibilit\xC3\xA9 avec les vieux ordinateurs et un service facile. CPU avec 200 MHz RAM 128 Mo (pour le fonctionnement, l'installation, 192 Mo de RAM), 2 Go d'espace disque disponible (recommand\xC3\xA9: 4 Go ou plus), Carte vid\xC3\xA9o 16 Mo (recommand\xC3\xA9: Intel GMA 9xx)."
+  press_archiv_editorial: "Ici, nous avons r\xC3\xA9pertori\xC3\xA9 une s\xC3\xA9lection d'articles de la presse \xC3\xA0 propos de nous."
+  view_admins_load_packages_0: Nouveaux paquets
+  view_users_index_0: Tous les utilisateurs
+  prepare_livecd: "Pr\xC3\xA9parer le liveCD/DVD (script/remaster-getisos)"
+  view_home_derivatives_24: "D\xC3\xA9riv\xC3\xA9s, qui doivent \xC3\xAAtre install\xC3\xA9 , avec le CD d'installation de l'instrument d\xC3\xA9riv\xC3\xA9 propre:"
+  spam_user_delete: "Tous les spam de l'utilisateur supprim\xC3\xA9s."
+  view_users_index_1: "Nous avons au total "
   easy_install: Installer Ubuntu facilement
-  view_users_new_1: ""
-  view_home_derivatives_25: ""
-  view_users_index_2: ""
-  view_users_new_2: ""
-  helper_distributions_10: ""
-  view_home_derivatives_26: ""
-  predecessor: ""
-  helper_distributions_11: ""
-  view_home_derivatives_27: ""
-  view_derivatives_edit_0: ""
-  helper_distributions_12: ""
-  view_home_derivatives_28: ""
-  generate_all_debs_for_bundle: ""
-  view_users_index_5: ""
-  view_sent__user_not_exists_0: ""
-  view_derivatives_edit_1: ""
-  helper_distributions_13: ""
-  weblinks: ""
-  view_users_index_6: ""
-  view_users_new_6: ""
-  view_derivatives_edit_2: ""
-  total_packages: ""
-  view_home_derivatives_29: ""
-  new_message: ""
-  helper_distributions_15: ""
-  guest: ""
-  wait_for_debs: ""
-  view_users_new_8: ""
-  view_home_derivatives_30: ""
-  helper_distributions_16: ""
-  view_layouts_application_warning: ""
-  make_distribution_final: ""
+  view_users_new_1: "Ici tu as la possibilit\xC3\xA9 de t'inscrire."
+  view_home_derivatives_25: http://wiki.ubuntuusers.de/Xfce
+  view_users_index_2: Les utilisateurs inscrits
+  view_users_new_2: "Si tu souhaites \xC3\xAAtre inform\xC3\xA9 sur le d\xC3\xA9veloppement de Communtu, s'il te pla\xC3\xAEt donne ton adresse E-mail correctement."
+  helper_distributions_10: et modifier
+  view_home_derivatives_26: "- Avec la Xfce mince comme une interface utilisateur graphique - en particulier pour les anciens ordinateurs: 128 Mo de RAM et 1,5 Go sur le disque dur suffisent. Doit \xC3\xAAtre install\xC3\xA9 \xC3\xA0 partir d'un CD, pour vraiment avoir une installation minces. Les installations ult\xC3\xA9rieures  avec Communtu sont possible."
+  predecessor: "pr\xC3\xA9d\xC3\xA9cesseurs"
+  helper_distributions_11: "<br />Distribution "
+  view_home_derivatives_27: http://de.wikipedia.org/wiki/LinuxMCE
+  view_derivatives_edit_0: "Modifier les d\xC3\xA9riv\xC3\xA9s "
+  helper_distributions_12: Modifier
+  view_home_derivatives_28: ainsi ubuntu sera
+  generate_all_debs_for_bundle: "Cr\xC3\xA9er tous les debs pour la compilation"
+  view_users_index_5: "Aktiv\xC3\xA9"
+  view_sent__user_not_exists_0: Utilisateur n existe pas
+  view_derivatives_edit_1: programme sur interface graphique pour sudo (gksudo par exemple, kdesudo)
+  helper_distributions_13: supprimer
+  weblinks: Liens Web
+  view_users_index_6: !binary |
+    UsO0bGVz
+
+  view_users_new_6: Confirmer le mot de passe
+  view_derivatives_edit_2: Programme pour les dialogues GUI (par exemple, zenity, kdialog)
+  total_packages: Les paquets au total
+  view_home_derivatives_29: "T\xC3\xA9l\xC3\xA9viseur Ordinateur"
+  new_message: "Nouveau m\xC3\xA9ssage"
+  helper_distributions_15: page Wiki pour les utilisateurs d'Ubuntu
+  guest: "Invit\xC3\xA9"
+  wait_for_debs: en attente de la construction des paquets
+  view_users_new_8: "Oui, je souhaite m'abonner \xC3\xA0 la liste de diffusion pour les annonces."
+  view_home_derivatives_30: http://de.wikipedia.org/wiki/Home_Theater_Personal_Computer
+  helper_distributions_16: libre et provenant de la source principale des paquets
+  view_layouts_application_warning: "Attention: dans quelques instants des courts travaux d'entretien seront effectu\xC3\xA9s sur ce serveur web"
+  make_distribution_final: Distribution en tant que version stable
   view_users_new_9: "Oui, je souhaite m'abonner \xC3\xA0 la liste de diffusion pour la discussion."
   view_home_derivatives_31: ". En raison de la n\xC3\xA9cessit\xC3\xA9 d'installation du driver Linux MCE doit \xC3\xAAtre install\xC3\xA9 directement, Communtu peut  \xC3\xAAtre utilis\xC3\xA9 pour installer des logiciels suppl\xC3\xA9mentaires."
   helper_distributions_17: "libre et provenant de la Communaut\xC3\xA9 des sources de paquets "
@@ -281,7 +286,7 @@ fr:
   view_user_mailer_reset_password_0: "Tu as re\xC3\xA7u un nouveau mot de passe."
   make_your_bundle: "Cr\xC3\xA9e toi une compilation pour le syst\xC3\xA8me de mise \xC3\xA0 niveau"
   controller_metapackages_no_save: "Le bundle contient  les conflits et ne peut donc pas \xC3\xAAtre stock\xC3\xA9s en tant que m\xC3\xA9ta-paquet."
-  view_home_derivatives_32: ""
+  view_home_derivatives_32: "Ubuntu est un d\xC3\xA9riv\xC3\xA9 enti\xC3\xA8rement de logiciels libres. Uniquement pour les utilisateurs exp\xC3\xA9riment\xC3\xA9s. Doit \xC3\xAAtre install\xC3\xA9 avec le CD Gobuntu afin qu'il soit vraiment un logiciels libre. Les installations Ult\xC3\xA9rieures avec Communtu sont possible et devraient \xC3\xAAtre s\xC3\xA9lectionn\xC3\xA9s dans le profil de l'utilisateur \"logiciel libre \". Ce d\xC3\xA9riv\xC3\xA9 est disponible en version 8.04 et ne sera pas d\xC3\xA9velopp\xC3\xA9."
   helper_distributions_18: "libre et provenant des sources de paquets Third Party "
   view_user_mailer_signup_notification_1: "Ton nom d'utilisateur est:"
   invalid_activation_code_please_check_again: "changement de code invalide. S'il te pla\xC3\xAEt v\xC3\xA9rifie le code et essaye \xC3\xA0 nouveau. (Peut-\xC3\xAAtre ton programme de messagerie a ins\xC3\xA9r\xC3\xA9 un saut de ligne?)"

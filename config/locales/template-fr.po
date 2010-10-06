@@ -179,7 +179,7 @@ msgstr "Votre ancien mot de passe est incorrect."
 
 #: view_categories_edit_3
 msgid "Link für weitere Informationen"
-msgstr "ien pour plus d'informations"
+msgstr "Lien pour plus d'informations"
 
 #: view_user_profiles_new_3
 msgid "Expertenlevel"
@@ -811,7 +811,7 @@ msgstr "options de dons"
 
 #: view_home_about_3
 msgid "Es gibt aber auch viele Anwendungen, die erst noch nachinstalliert werden müssen, z.B. in den Bereichen Audio, Video und Grafik, damit dein Computer mit Ubuntu wirklich  benutzbar ist. Communtu macht diese Nachinstallation jetzt noch einfacher und hat zudem spezielle Bereiche für Einsteiger und Windows-Umsteiger."
-msgstr ""
+msgstr "Il ya aussi de nombreuses applications qui ont besoin d'être installées plus tard encore, comme dans les domaines de l'audio, vidéo et graphiques afin que ton ordinateur soit réellement utilisable avec Ubuntu. Communtu fait cette installation ultérieur encore plus facile et possède également des espaces spécifiques pour les débutants et Windows convertit."
 
 #: view_home_derivatives_15
 msgid "http://wiki.ubuntuusers.de/KDE"
@@ -859,7 +859,7 @@ msgstr "Là, tu as la possibilté de modifier tes paramètres. Dans les Préfér
 
 #: view_home_derivatives_18
 msgid " ist eine Ubuntu-Abspaltung mit eigener User-Community, die sich vor allem Benutzerfreundlichkeit auf die Fahnen schreibt. Linux Mint ähnelt Ubuntu sehr, hat aber viele Codes, z.B. für DVDs und MP3s, schon vorinstalliert. Diese Codecs gibt es allerdings auch bei Communtu, unter Unterhaltungsmedien. "
-msgstr ""
+msgstr "est une Ubuntu spin-off avec sa communauté d'utilisateurs propre et se référant en particulier par sa Facilité d'utilisation"
 
 #: new_distribution
 msgid "Neue Distribution"
@@ -870,90 +870,92 @@ msgid ""
 "Ursprüngliche Nachricht von {{user}} am {{datum}}  \n"
 "  \n"
 msgstr ""
+"Message original de {{user}}  le {{datum}}  \n"
+"  \n"
 
 #: lib_utils_0
 msgid "System-Befehl schlug fehl: "
-msgstr ""
+msgstr "Système de commande a échoué:"
 
 #: path
 msgid "Pfad:"
-msgstr ""
+msgstr "Path:"
 
 #: view_home_about_8
 msgid "Danach kannst du mit \"Speichern und feiner Auswählen\" noch einen detaillierteren Überblick über die installierten Bündel und Programme bekommen und die Auswahl auch noch verändern. Falls du dazu keine Lust oder Zeit hast, klicke einfach auf \"Speichern\". Dies führt dich zur Installations-Seite. Dort findest du einen Installationsknopf, mit dem die Ubuntu-Nachinstallation gestartet werden kann. Es dauert etwas, bis die Programme automatisch aus dem Internet geladen und installiert werden. Fertig ist der vielseitig einsetzbare Ubuntu-PC!"
-msgstr ""
+msgstr "Ensuite tu as la possibilté d'avoir avec \"Sauvegarder et fine sélection\" un aperçu plus détaillé des compilations et programmes installés et aussi de modifier la sélection. Si tu n'as pas le temps ou l'énvie, il suffit de cliquer sur \"Sauvegarder \". Cela amène à la page d'installation. Tu y trouveras un bouton installation avec lequelle Ubuntu après-installation peut être démarré. Cela prend du temps pour que les programmes puissent être téléchargés et installées automatiquement du web.Terminé est la polyvalence utilisable PC Ubuntu!"
 
 #: passwd
 msgid "Passwort"
-msgstr ""
+msgstr "Mot de passe"
 
 #: view_home_derivatives_20
 msgid "Automatix war eine Installationshilfe, die sich großer Beliebtheit erfreute (sie wurde sogar von der New York Times empfohlen), die aber nicht ganz den Ubuntu-Programmierstandards entsprach und inzwischen nicht mehr weiterentwickelt wird. "
-msgstr ""
+msgstr "Automatix était une aide à l'installation, qui était très populaire (elle a même été recommandée par le New York Times),  mais elle ne repondaitpas tout à fait aux normes de programmations ubuntu et maintenant elle n'est plus développée."
 
 #: view_home_about_9
 msgid "Wichtig: Man braucht schon eine schnelle Internet-Verbindung. Für Ubuntu-Nutzer, die noch ein Modem oder ähnliches nutzen, planen wir die Möglichkeit, automatisch CDs und DVDs zu erstellen."
-msgstr ""
+msgstr "Important: On a vraiment besoin d'une connexion Internet rapide. Pour les utilisateurs de Ubuntu qui utilisent encore un modem ou similaires, nous envisageons la possibilité de créer automatiquement des CD et des DVD."
 
 #: view_accounts_edit_1
 msgid "Altes Passwort"
-msgstr ""
+msgstr "Ancien mot de passe"
 
 #: install2
 msgid "installieren"
-msgstr ""
+msgstr "Installer"
 
 #: view_home_derivatives_21
 msgid "Über Communtu nachinstallierbare Derivate, sinnvollerweise auf einer Xfce-basierten Installation (z.B. Xubuntu) aufzusetzen:"
-msgstr ""
+msgstr "dérivés ultérieur à installer sur communtu, plus approprié de mettre sur une installation basée sur Xfce (par exemple Ubuntu) :"
 
 #: donate
 msgid "spende"
-msgstr ""
+msgstr "Don"
 
 #: installing_using_script
 msgid "installieren mittels Skript"
-msgstr ""
+msgstr "Installer avec l'aide du script"
 
 #: view_home_derivatives_22
 msgid " - orient an BeOS, setzt auf Schnelligkeit, Kompatibilität mit alten Rechnern und einfache Bedienung. CPU mit mindestens 200 MHZ 128 MB RAM (zum Betrieb, zur Installation werden 192 MB RAM benötigt); 2 GB freier Festplattenplatz (Empfohlen: 4 GB oder mehr); 16 MB Grafikkarte (Empfohlen: Intel GMA 9xx). "
-msgstr ""
+msgstr " Orient pour BeOS, s'appuie sur la vitesse, la compatibilité avec les vieux ordinateurs et un service facile. CPU avec 200 MHz RAM 128 Mo (pour le fonctionnement, l'installation, 192 Mo de RAM), 2 Go d'espace disque disponible (recommandé: 4 Go ou plus), Carte vidéo 16 Mo (recommandé: Intel GMA 9xx)."
 
 #: view_users_index_0
 msgid "Alle Benutzer"
-msgstr ""
+msgstr "Tous les utilisateurs"
 
 #: press_archiv_editorial
 msgid "Hier haben wir eine Auswahl von Artikeln aus der Presse über uns aufgelistet."
-msgstr ""
+msgstr "Ici, nous avons répertorié une sélection d'articles de la presse à propos de nous."
 
 #: view_admins_load_packages_0
 msgid "Neue Pakete: "
-msgstr ""
+msgstr "Nouveaux paquets"
 
 #: view_users_index_1
 msgid "Insgesamt haben wir "
-msgstr ""
+msgstr "Nous avons au total "
 
 #: prepare_livecd
 msgid "LiveCD/DVD vorbereiten (script/remaster-getisos)"
-msgstr ""
+msgstr "Préparer le liveCD/DVD (script/remaster-getisos)"
 
 #: view_home_derivatives_24
 msgid "Derivate, die mit der Derivats-eigenen Installations-CD installiert werden sollten:"
-msgstr ""
+msgstr "Dérivés, qui doivent être installé , avec le CD d'installation de l'instrument dérivé propre:"
 
 #: spam_user_delete
 msgid "Alle Spam-User gelöscht."
-msgstr ""
+msgstr "Tous les spam de l'utilisateur supprimés."
 
 #: view_users_new_1
 msgid "Hier hast du die Möglichkeit dich zu registrieren."
-msgstr ""
+msgstr "Ici tu as la possibilité de t'inscrire."
 
 #: view_users_index_2
 msgid " angemeldete Benutzer."
-msgstr ""
+msgstr "Les utilisateurs inscrits"
 
 #: easy_install
 msgid "Einfache Installationsmöglichkeiten für Ubuntu"
@@ -961,123 +963,123 @@ msgstr "Installer Ubuntu facilement"
 
 #: view_home_derivatives_25
 msgid "http://wiki.ubuntuusers.de/Xfce"
-msgstr ""
+msgstr "http://wiki.ubuntuusers.de/Xfce"
 
 #: view_users_new_2
 msgid "Wenn du über die Weiterentwicklung von Communtu informiert werden möchtest, dann gebe bitte deine richtige E-Mail-Adresse an."
-msgstr ""
+msgstr "Si tu souhaites être informé sur le développement de Communtu, s'il te plaît donne ton adresse E-mail correctement."
 
 #: helper_distributions_10
 msgid " und bearbeiten"
-msgstr ""
+msgstr "et modifier"
 
 #: view_home_derivatives_26
 msgid " - mit dem schlanken Xfce als grafischer Oberfläche - besonders für ältere Rechner geeignet: 128 MByte Arbeitsspeicher und 1,5 GB auf der Festplatte reichen aus. Sollte von CD installiert werden, um wirklich eine schlanke Installation zu haben. Nachinstallationen mit Communtu möglich."
-msgstr ""
+msgstr "- Avec la Xfce mince comme une interface utilisateur graphique - en particulier pour les anciens ordinateurs: 128 Mo de RAM et 1,5 Go sur le disque dur suffisent. Doit être installé à partir d'un CD, pour vraiment avoir une installation minces. Les installations ultérieures  avec Communtu sont possible."
 
 #: predecessor
 msgid "Vorgänger"
-msgstr ""
+msgstr "prédécesseurs"
 
 #: helper_distributions_11
 msgid "<br />Distribution "
-msgstr ""
+msgstr "<br />Distribution "
 
 #: view_home_derivatives_27
 msgid "http://de.wikipedia.org/wiki/LinuxMCE"
-msgstr ""
+msgstr "http://de.wikipedia.org/wiki/LinuxMCE"
 
 #: view_users_index_5
 msgid "Aktiviert?"
-msgstr ""
+msgstr "Aktivé"
 
 #: view_derivatives_edit_0
 msgid "Derivative bearbeiten"
-msgstr ""
+msgstr "Modifier les dérivés "
 
 #: helper_distributions_12
 msgid "bearbeiten"
-msgstr ""
+msgstr "Modifier"
 
 #: view_home_derivatives_28
 msgid " - damit wird Ubuntu zum "
-msgstr ""
+msgstr "ainsi ubuntu sera"
 
 #: generate_all_debs_for_bundle
 msgid "Alle debs für das Bündel erzeugen"
-msgstr ""
+msgstr "Créer tous les debs pour la compilation"
 
 #: view_sent__user_not_exists_0
 msgid "User nicht gefunden"
-msgstr ""
+msgstr "Utilisateur n existe pas"
 
 #: weblinks
 msgid "Weblinks"
-msgstr ""
+msgstr "Liens Web"
 
 #: view_users_index_6
 msgid "Rollen"
-msgstr ""
+msgstr "Rôles"
 
 #: view_derivatives_edit_1
 msgid "Programm für GUI-basiertes Sudo (z.B. gksudo, kdesudo)"
-msgstr ""
+msgstr "programme sur interface graphique pour sudo (gksudo par exemple, kdesudo)"
 
 #: helper_distributions_13
 msgid "löschen"
-msgstr ""
+msgstr "supprimer"
 
 #: view_users_new_6
 msgid "Passwort bestätigen"
-msgstr ""
+msgstr "Confirmer le mot de passe"
 
 #: view_derivatives_edit_2
 msgid "Programm für GUI-Dialoge (z.B. zenity, kdialog)"
-msgstr ""
+msgstr "Programme pour les dialogues GUI (par exemple, zenity, kdialog)"
 
 #: total_packages
 msgid "Pakete insgesamt: "
-msgstr ""
+msgstr "Les paquets au total"
 
 #: view_home_derivatives_29
 msgid "Fernsehcomputer"
-msgstr ""
+msgstr "Téléviseur Ordinateur"
 
 #: new_message
 msgid "Neue Nachricht"
-msgstr ""
+msgstr "Nouveau méssage"
 
 #: wait_for_debs
 msgid "auf Bau der Metapakete warten"
-msgstr ""
+msgstr "en attente de la construction des paquets"
 
 #: helper_distributions_15
 msgid "Wikiseite bei ubuntuusers"
-msgstr ""
+msgstr "page Wiki pour les utilisateurs d'Ubuntu"
 
 #: guest
 msgid "Gast"
-msgstr ""
+msgstr "Invité"
 
 #: view_users_new_8
 msgid "Ja, ich möchte die Maillingliste für Ankündigungen abonnieren."
-msgstr ""
+msgstr "Oui, je souhaite m'abonner à la liste de diffusion pour les annonces."
 
 #: view_home_derivatives_30
 msgid "http://de.wikipedia.org/wiki/Home_Theater_Personal_Computer"
-msgstr ""
+msgstr "http://de.wikipedia.org/wiki/Home_Theater_Personal_Computer"
 
 #: helper_distributions_16
 msgid "free und aus den main Paketquellen"
-msgstr ""
+msgstr "libre et provenant de la source principale des paquets"
 
 #: view_layouts_application_warning
 msgid "Achtung: in Kürze werden auf diesem Webserver kurze Wartungsarbeiten durchgeführt!"
-msgstr ""
+msgstr "Attention: dans quelques instants des courts travaux d'entretien seront effectués sur ce serveur web"
 
 #: make_distribution_final
 msgid "Distribution als stabil freigeben"
-msgstr ""
+msgstr "Distribution en tant que version stable"
 
 #: view_users_new_9
 msgid "Ja, ich möchte die Maillingliste für Diskussionen abonnieren."
@@ -1125,7 +1127,7 @@ msgstr "Le bundle contient  les conflits et ne peut donc pas être stockés en t
 
 #: view_home_derivatives_32
 msgid " ist ein Ubuntu-Derivat komplett aus freier Software. Nur für erfahrene Nutzer geeignet. Sollte mit der Gobuntu-CD installiert werden, damit es auch wirklich nur freie Software ist. Nachinstallationen mit Communtu möglich, sinnvollerweise sollten dann im Nutzerprofil \"freie Software\" angewählt werden. Dies Derivate ist in der Version 8.04 erhältlich und wird nicht weiterentwickelt."
-msgstr ""
+msgstr "Ubuntu est un dérivé entièrement de logiciels libres. Uniquement pour les utilisateurs expérimentés. Doit être installé avec le CD Gobuntu afin qu'il soit vraiment un logiciels libre. Les installations Ultérieures avec Communtu sont possible et devraient être sélectionnés dans le profil de l'utilisateur \"logiciel libre \". Ce dérivé est disponible en version 8.04 et ne sera pas développé."
 
 #: helper_distributions_18
 msgid "free und aus Third Party Paketquellen"
