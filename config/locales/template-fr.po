@@ -43,7 +43,7 @@ msgstr "Centre pour l'Economie Solidaire"
 
 #: view_user_profiles__installation_13
 msgid "(Bei einem Versionswechsel muss der erste Schritt erneut ausgeführt werden, da die Communtu Quellen durch das Upgrade deaktiviert wurden.):"
-msgstr "(Si tu changes changes de version la première étape doit être relancée, puisque les sources Communtu ont été handicapés par la mise à niveau.):"
+msgstr "(Si tu changes de version, la première étape devra être effectuée a nouveau, parce que les sources Communtu ont été desactivées par la mise à niveau.):"
 
 #: view_layouts_application_26
 msgid "Navigation Bündel"
@@ -95,7 +95,7 @@ msgstr "Etant donné que nous avons de nombreuses idées pour le développement 
 
 #: view_user_profiles__installation_16
 msgid "Quellen und Schlüssel eintragen"
-msgstr "Donner les sources et les clés"
+msgstr "Inserer les sources et les clés"
 
 #: controller_accounts_4
 msgid "Bein Benutzerkontoutzerkonto wurde bereits aktiviert. Du kannst dich nun anmelden."
@@ -111,7 +111,7 @@ msgstr "Nous pouvons également t'aider à apprendre cette langue. Donc, tout si
 
 #: view_user_profiles__installation_17
 msgid "Link einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer öffnen - wenn kein Prorgammdialog erscheint, wurde die Datei auf deinem Rechner heruntergeladen. Dort kannst du sie mit Doppelklick starten."
-msgstr "Cliquer sur le lien, puis comme suggéré, ouvrir avec le package d'installation - si aucun Progammdialog apparaît, le fichier a été téléchargé sur votre ordinateur. Là, tu peux le lancer en double-cliquant dessus."
+msgstr "Cliquer sur le lien, puis comme proposé, ouvrir avec le package d'installation - si aucun Progamme de dialogue n'apparaît, le fichier a été téléchargé sur ton ordinateur. Là, tu peux le Démarrer en double-cliquant dessus."
 
 #: controller_accounts_5
 msgid "Passwort aktualisiert."
@@ -223,7 +223,7 @@ msgstr "Ton nom de famille"
 
 #: view_user_profiles__installation_24
 msgid "Installation über ein Metapaket"
-msgstr "Installation à partir d'un méta-paquet"
+msgstr "Installation à l'aide d'un méta-paquet"
 
 #: view_users_new_12
 msgid "(optional)"
@@ -231,7 +231,7 @@ msgstr "(Facultatif)"
 
 #: view_user_profiles__installation_25
 msgid "Installation über apturl"
-msgstr "Installation des apturl"
+msgstr "Installation à l'aide d'apturl"
 
 #: controller_users_10
 msgid "Benutzer gelöscht"
@@ -251,7 +251,7 @@ msgstr "Dépôt"
 
 #: view_user_profiles__installation_27
 msgid "Die Browser Konqueror und Opera bitte erst für "
-msgstr "Le navigateur Konqueror et Opera seulement pour"
+msgstr "Les navigateurs Konqueror et Opera configurer d'abord pour apturl"
 
 #: controller_users_12
 msgid "Benutzer aktiviert"
@@ -311,7 +311,7 @@ msgstr "Formulaire de rétroaction"
 
 #: view_home_faq_xfce_02
 msgid "Die Pakerverwaltung Synaptic erreichst du über \"Anwendungen -> System-> Synaptic-Paketverwaltung\". Wähle hier unten links den Punkt Ursprung. Suche nun in der darüber liegenden Liste \"packages.communtu.org\" und klicke es an. Auf der rechten Seite werden nun die verfügbaren Metapakete in Communtu angezeigt. Das Entfernen geht über Rechtsmausklick und dann \"Zum Entfernen vormerken\". Dies muss dann danach durch \"Anwenden\" bestätigt werden."
-msgstr "La gestion du paquet Synaptic ce fait sur  \"Applications -> Système-> Gestion du paquet Synaptic \". Sélectionne ci-dessous, à gauche du point d'origine. Recherche maintenant dans la liste ci-dessus \"packages.communtu.org \" et clique dessus. Sur le côté droit maintenant, tous les méta-paquets disponibles sur Communtu vont être affiché. La suppression se fait en cliquant á droite de la souris puis sur \"Sélectionner pour suppression \". Cela doit être clôturé par \"Appliquer \" pour confirmer."
+msgstr "La gestion du paquet Synaptic ce fait sur  \"Applications -> Système-> Gestion du paquet Synaptic \". Sélectionne ci-dessous, à gauche du point d'origine. Recherche maintenant dans la liste ci-dessus \"packages.communtu.org \" et clique dessus. Sur le côté droit maintenant, tous les méta-paquets disponibles sur Communtu vont être affiché. La suppression se fait en cliquant à droite de la souris puis sur \"Sélectionner pour suppression \". Cela doit être clôturé par \"Appliquer \" pour confirmer."
 
 #: controller_distributions_2
 msgid "Distribution aktualisiert."
@@ -319,7 +319,7 @@ msgstr "Distribution mise à jour."
 
 #: view_user_profiles__installation_30
 msgid "Hinweis: Bitte .deb-Dateien nicht umbenennen."
-msgstr " Note: S'il te plaît ne pas renommer les fichiers deb."
+msgstr " Note: Ne pas renommer les fichiers deb, s'il te plaît."
 
 #: controller_passwords_2
 msgid "Konnte keinen Benutzer mit dieser Email-Adresse finden."
@@ -335,7 +335,7 @@ msgstr "Créer live CD / DVD"
 
 #: view_user_profiles__installation_31
 msgid "Die Communtu-Metapakete können auch mittles {{synaptic}} (unter System -> Systemverwaltung) angezeigt, installiert und deinstalliert werden. Änderungen an Bündeln werden über die Ubuntu-Paketverwaltung automatisch eingespielt."
-msgstr "Les méta-paquets Communtu peuvent aussi être affichés, installés et désinstallés á travers {{synaptic}} (sous Système -> Administration). En ce qui concerne la modification des compilations, elles sont automatiquement enregistrées á travers la gestion des paquets Ubuntu."
+msgstr "Les méta-paquets Communtu peuvent aussi être affichés, installés et désinstallés à l'aide de {{synaptic}} (sous Système -> Administration). En ce qui concerne la modification des compilations, elles sont automatiquement enregistrées à l'aide de la gestion des paquets Ubuntu."
 
 #: create_usb_image
 msgid "<a href=\"http://ww.ubuntuusers.de/wiki/Live-USB\">USB-Stick-Image</a> erstellen"
@@ -379,7 +379,7 @@ msgstr "en attente pour la synchronisation de dépôts"
 
 #: view_user_profiles__installation_33
 msgid "Folgende"
-msgstr "Ce qui suit"
+msgstr "Suivante"
 
 #: view_metapackages_show_0
 msgid "Bündel erstellt von "
@@ -395,7 +395,7 @@ msgstr "plus...."
 
 #: view_user_profiles__installation_34
 msgid "werden zu dem System hinzugefügt."
-msgstr "vont être ajouté au système."
+msgstr "vont être ajoutées au système."
 
 #: controller_passwords_7
 msgid "Passwort nicht geändert."
@@ -411,7 +411,7 @@ msgstr "Les mots de passe ne correspondent pas."
 
 #: view_home_home_6
 msgid "<b>Installation</b> bietet dir eine Zusammenstellung (Bündelung) von Programmen für die Installation auf deinem Computer an, entsprechend deinen Angaben, für welche Aufgaben du deinen Ubuntu-PC benutzen willst."
-msgstr "<b> Installation </ b> vous offre une collection (collimation) des programmes à installer sur ton ordinateur, selon tes spécifications,et pour quelles les tâches souhaites tu utiliser ton pc ubuntu "
+msgstr "<b> Installation </ b> vous offre une collection (collimation) des programmes à installer sur ton ordinateur, selon tes spécifications,et pour quelles les tâches souhaites tu utiliser ton pc Ubuntu "
 
 #: name_without_colon
 msgid "Name"
@@ -435,7 +435,7 @@ msgstr "Retour"
 
 #: view_home_home_8
 msgid "<b>Programme suchen</b> Hier kannst du nach einzelnen Ubuntu-Programmen (Paketen) suchen."
-msgstr "<b>rechercher des programme </ b> Ici, tu peux rechercher des programmes ubuntu(paquets) individuels."
+msgstr "<b>rechercher des programme </ b> Ici, tu peux rechercher des programmes Ubuntu (paquets) individuels."
 
 #: view_home_home_9
 msgid "<b>Ubuntu-Derivate</b> bietet eine Übersicht über Kubuntu, Xubuntu, Medibuntu und wie sie alle heißen ..."
@@ -547,7 +547,7 @@ msgstr "Avertissements"
 
 #: view_home_faq_all_01
 msgid "Das Deaktivieren führt nicht zum Deinstallieren von Paketen noch werden dadurch die Updates für die installierten Pakete unterbrochen. Diese werden aus anderen Softwarequellen, die ggf. von Communtu installiert wurden, bedient."
-msgstr "La désactivation ne conduit pas á la désinstallation des paquets  parce que les mises à jour pour les paquets installés seront interrompues.Ils sont exploités à partir d'autres sources de logiciels qui ont été installés par Communtu."
+msgstr "La désactivation ne conduit pas à la désinstallation des paquets  parce que les mises à jour pour les paquets installés seront interrompues.Ils sont exploités à partir d'autres sources de logiciels qui ont été installés par Communtu."
 
 #: deb_generation_in_background
 msgid "Debs werden im Hintergrund erzeugt (ggf. Browser-Ansicht aktualisieren)"
@@ -599,7 +599,7 @@ msgstr "par la distribution"
 
 #: controller_suggestion_8
 msgid "Ubuntu-Nachinstallation fuer Benutzer "
-msgstr "Ubuntu après-installation pour les utilisateurs"
+msgstr "Ubuntu installation à postériori pour les utilisateurs"
 
 #: bundel_edit
 msgid "Bündel bearbeiten"
@@ -655,7 +655,7 @@ msgstr "Portrait de Communtu Conny"
 
 #: bundle_to_livecd
 msgid "LiveCD/DVD aus Bündel <i>{{name}}</i> erstellen"
-msgstr "LiveCD / DVD á partir de la compilation<i>{{name}}</ i> créer"
+msgstr "LiveCD / DVD à  partir de la compilation<i>{{name}}</ i> créer"
 
 #: view_home_cancel_1
 msgid "Endweder versuchst du es noch einmal oder du nutzt die Möglichkeit per Überweisung"
@@ -675,7 +675,7 @@ msgstr ", Votre compte a été activé. Maintenant, suis le lien:"
 
 #: controller_metapackages_please_regenerate
 msgid "Das Bündel wurde zurückgesetzt. Bitte die Version hochzählen und Metapaket neu erzeugen."
-msgstr "La compilation á été remise à zéro. S'il te plaît incrémente la version en et recrée le méta-paquet."
+msgstr "La compilation à  été remise à zéro. S'il te plaît incrémente la version en et recrée le méta-paquet."
 
 #: view_home_news_7
 msgid "http://groups.google.com/group/communtu-announce-de/topics?start="
@@ -691,7 +691,7 @@ msgstr "collectés."
 
 #: anmelden
 msgid "Anmelden"
-msgstr "Connection"
+msgstr "Connexion"
 
 #: view_distributions_index_0
 msgid "Verfügbare Ubuntu-Versionen"
@@ -811,7 +811,7 @@ msgstr "options de dons"
 
 #: view_home_about_3
 msgid "Es gibt aber auch viele Anwendungen, die erst noch nachinstalliert werden müssen, z.B. in den Bereichen Audio, Video und Grafik, damit dein Computer mit Ubuntu wirklich  benutzbar ist. Communtu macht diese Nachinstallation jetzt noch einfacher und hat zudem spezielle Bereiche für Einsteiger und Windows-Umsteiger."
-msgstr "Il ya aussi de nombreuses applications qui ont besoin d'être installées plus tard encore, comme dans les domaines de l'audio, vidéo et graphiques afin que ton ordinateur soit réellement utilisable avec Ubuntu. Communtu fait cette installation ultérieur encore plus facile et possède également des espaces spécifiques pour les débutants et Windows convertit."
+msgstr "Il ya aussi de nombreuses applications qui ont besoin d'être installées plus tard encore, comme dans les domaines de l'audio, vidéo et graphiques afin que ton ordinateur soit réellement utilisable avec Ubuntu. Communtu fait cette installation à postériori encore plus facile et possède également des espaces spécifiques pour les débutants et Windows convertit."
 
 #: view_home_derivatives_15
 msgid "http://wiki.ubuntuusers.de/KDE"
@@ -823,7 +823,7 @@ msgstr "Comment puis-je utiliser Communtu?"
 
 #: view_home_derivatives_16
 msgid " ist Ubuntu mit dem KDE-Desktop."
-msgstr "ubuntu est avec le bureau KDE."
+msgstr "Ubuntu est avec le bureau KDE."
 
 #: model_package_could_not_read
 msgid "Konnte {{url}} nicht lesen"
@@ -883,7 +883,7 @@ msgstr "Path:"
 
 #: view_home_about_8
 msgid "Danach kannst du mit \"Speichern und feiner Auswählen\" noch einen detaillierteren Überblick über die installierten Bündel und Programme bekommen und die Auswahl auch noch verändern. Falls du dazu keine Lust oder Zeit hast, klicke einfach auf \"Speichern\". Dies führt dich zur Installations-Seite. Dort findest du einen Installationsknopf, mit dem die Ubuntu-Nachinstallation gestartet werden kann. Es dauert etwas, bis die Programme automatisch aus dem Internet geladen und installiert werden. Fertig ist der vielseitig einsetzbare Ubuntu-PC!"
-msgstr "Ensuite tu as la possibilté d'avoir avec \"Sauvegarder et fine sélection\" un aperçu plus détaillé des compilations et programmes installés et aussi de modifier la sélection. Si tu n'as pas le temps ou l'énvie, il suffit de cliquer sur \"Sauvegarder \". Cela amène à la page d'installation. Tu y trouveras un bouton installation avec lequelle Ubuntu après-installation peut être démarré. Cela prend du temps pour que les programmes puissent être téléchargés et installées automatiquement du web.Terminé est la polyvalence utilisable PC Ubuntu!"
+msgstr "Ensuite tu as la possibilté d'avoir avec \"Sauvegarder et fine sélection\" un aperçu plus détaillé des compilations et programmes installés et aussi de modifier la sélection. Si tu n'as pas le temps ou l'énvie, il suffit de cliquer sur \"Sauvegarder \". Cela amène à la page d'installation. Tu y trouveras un bouton installation avec lequelle l'installation à postériori d' Ubuntu peut être démarrée. Cela prend du temps pour que les programmes puissent être téléchargés et installées automatiquement du web.Terminé est la polyvalence utilisable PC Ubuntu!"
 
 #: passwd
 msgid "Passwort"
@@ -975,7 +975,7 @@ msgstr "et modifier"
 
 #: view_home_derivatives_26
 msgid " - mit dem schlanken Xfce als grafischer Oberfläche - besonders für ältere Rechner geeignet: 128 MByte Arbeitsspeicher und 1,5 GB auf der Festplatte reichen aus. Sollte von CD installiert werden, um wirklich eine schlanke Installation zu haben. Nachinstallationen mit Communtu möglich."
-msgstr "- Avec la Xfce mince comme une interface utilisateur graphique - en particulier pour les anciens ordinateurs: 128 Mo de RAM et 1,5 Go sur le disque dur suffisent. Doit être installé à partir d'un CD, pour vraiment avoir une installation minces. Les installations ultérieures  avec Communtu sont possible."
+msgstr "- Avec la Xfce mince comme une interface utilisateur graphique - en particulier pour les anciens ordinateurs: 128 Mo de RAM et 1,5 Go sur le disque dur suffisent. Doit être installé à partir d'un CD, pour vraiment avoir une installation minces. Les installations à postériori avec Communtu sont possible."
 
 #: predecessor
 msgid "Vorgänger"
@@ -1055,7 +1055,7 @@ msgstr "en attente de la construction des paquets"
 
 #: helper_distributions_15
 msgid "Wikiseite bei ubuntuusers"
-msgstr "page Wiki pour les utilisateurs d'Ubuntu"
+msgstr "Page wiki pour les utilisateurs d'Ubuntu"
 
 #: guest
 msgid "Gast"
@@ -1123,7 +1123,7 @@ msgstr "Crée toi une compilation pour le système de mise à niveau"
 
 #: controller_metapackages_no_save
 msgid "Das Bündel enthält Konflikte und kann deshalb nicht als Metapaket gespeichert werden."
-msgstr "Le bundle contient  les conflits et ne peut donc pas être stockés en tant que méta-paquet."
+msgstr "La compilation contient les complications et ne peut donc pas être sauvegardée en tant que méta-paquet."
 
 #: view_home_derivatives_32
 msgid " ist ein Ubuntu-Derivat komplett aus freier Software. Nur für erfahrene Nutzer geeignet. Sollte mit der Gobuntu-CD installiert werden, damit es auch wirklich nur freie Software ist. Nachinstallationen mit Communtu möglich, sinnvollerweise sollten dann im Nutzerprofil \"freie Software\" angewählt werden. Dies Derivate ist in der Version 8.04 erhältlich und wird nicht weiterentwickelt."
@@ -1215,7 +1215,7 @@ msgstr "http://de.wikipedia.org/wiki/LinEx"
 
 #: view_home_new_repository_1
 msgid "Du vermisst hier eine Quelle? Dann kannst du ein Repository vorschlagen."
-msgstr "Il te manque une source ici ? Alors, vous pouvez proposer un dépôt."
+msgstr "Il te manque une source ici ? Alors, tu as possibilité de proposer un dépôt."
 
 #: helper_distributions_21
 msgid "non-free und aus Third Party Paketquellen"
@@ -1359,7 +1359,7 @@ msgstr "Comment puis-je installer une compilation?"
 
 #: view_user_profiles__profile_data_0
 msgid "Installation vorbereiten: Voreinstellungen eingeben"
-msgstr "Installation:donner tes paramètres personnels"
+msgstr "Installation: Inserer les paramètres personnels"
 
 #: cd_being_created
 msgid "Die LiveCD/DVD wird erstellt."
@@ -1367,7 +1367,7 @@ msgstr "Le LiveCD / DVD est créé."
 
 #: search_programs_bundles
 msgid "Du hast bereits ein Ubuntu installiert und suchst jetzt passende Programme? Hier kannst du deine Interessengebiete eingeben und passende vorkonfigurierte Programmbündel downloaden."
-msgstr "Tu as déjà installé un Ubuntu et cherche maintenant des programmes adaptés? Ici vous tu peux entrer tes centres d'intérêts et  télécharger un des compilations de programme pré-configurés."
+msgstr "Tu as déjà installé un Ubuntu et cherches maintenant des programmes adaptés? Ici vous tu peux entrer tes centres d'intérêts et  télécharger un des compilations de programme pré-configurés."
 
 #: view_home_news_17
 msgid "Zum Blog"
@@ -1383,7 +1383,7 @@ msgstr "Pour installer une compilation, il ya deux possibilités. <p> La premiè
 
 #: view_user_profiles__profile_data_1
 msgid "Auf dieser Seite kannst du die Grundeinstellungen deines Computers angeben. "
-msgstr "Sur cette page, vous pouvez entrer les paramètres de base de votre ordinateur."
+msgstr "Sur cette page, tu peux entrer les paramètres de base de ton ordinateur."
 
 #: view_metapackages_show_deb_error
 msgid "Beim Erzeugen von Metapaketen ist ein Fehler aufgetreten. Wir kümmern uns um das Problem."
@@ -1475,7 +1475,7 @@ msgstr "Découvrir la version Ubuntu"
 
 #: view_user_profiles__profile_data_6
 msgid "Wähle bitte deine Ubuntu-Version aus. "
-msgstr "S'il te plaît sélectionne ta version d'Ubuntu."
+msgstr " Sélectionne ta version Ubuntu s'il te plaît."
 
 #: view_cart_new_from_list_0
 msgid "Bündel aus einer Paketliste erstellen"
@@ -1515,7 +1515,7 @@ msgstr "Ici, tu peux créer une compilation à partir d'une liste de paquets exi
 
 #: homepage
 msgid "Startseite"
-msgstr " page d'accueil"
+msgstr " Page d'accueil"
 
 #: view_users__sidebar_2
 msgid "Programme suchen"
@@ -1527,7 +1527,7 @@ msgstr "Ecrit a cet endroit:"
 
 #: view_user_profiles__profile_data_8
 msgid "Über den Browser festgestellte Version: "
-msgstr "la version du navigateur:"
+msgstr "La version d'Ubuntu déterminée par le navigateur: "
 
 #: view_home_derivatives_50
 msgid " - mit Fluxbox und verschiedenen Netzwerk-Sicherheitswerkzeugen ."
@@ -1539,7 +1539,7 @@ msgstr "Tu vas dans le menu \"Ma compilation\" sous \"compilation \" et  là tu 
 
 #: view_cart_new_from_list_2
 msgid "Die Liste der auf deinem Computer installierten Pakete kannst du zum Beispiel mit"
-msgstr "La liste des paquets installés sur votre ordinateur, tu  peux par exemple avec"
+msgstr "La liste des paquets installés sur ton ordinateur, tu peux par exemple avec"
 
 #: controller_metapackages_6
 msgid "Dieser Bündel-Name ist bereits vergeben<br>"
@@ -1567,7 +1567,7 @@ msgstr "Modifier un rôle"
 
 #: view_home_faq_11
 msgid "Wie erstelle ich ein Bündel aus meinen installierten Programmen?"
-msgstr "Comment puis-je créer une compilation á partir de mes programmes installés?"
+msgstr "Comment puis-je créer une compilation à partir de mes programmes installés?"
 
 #: view_cart_new_from_list_3
 msgid "herausfinden. (Dazu muss das Paket {{debfoster}} installiert sein. Die erzeugte Liste enthält nur eine minimale Liste von (Meta-)Paketen, die notwendig ist, um deine Installation komplett wiederherzustellen.)"
@@ -2243,7 +2243,7 @@ msgstr "Lors de la synchronisation du référentiel {{repo_name}} le paquet {{pa
 
 #: metacart_choose
 msgid "Füge Programme zu deinem Bündel hinzu."
-msgstr "Ajoute des programmes á ta compilation"
+msgstr "Ajoute des programmes à ta compilation"
 
 #: migrate_repositories
 msgid "Repositories von Vorgänger übernehmen"
@@ -2357,7 +2357,7 @@ msgstr " &nbsp;&nbsp;Nouvelle icône:"
 
 #: view_sessions_new_0
 msgid "Anmelden mit Benutzernamen und Passwort:"
-msgstr "Pour vous connecter veuillez donner l'identifiant et le mot de passe "
+msgstr "Pour te connecter donnes l'identifiant et le mot de passe "
 
 #: controller_repositories_1
 msgid "Repository erzeugt."
@@ -2593,7 +2593,7 @@ msgstr "commercialement"
 
 #: advanced_user
 msgid "Ich bin fortgeschrittener Benutzer und will auch unfertige Versionen von Ubuntu sehen."
-msgstr "Je suis un utilisateur expérimenté et j aimerais voir les versions inachevées de Ubuntu."
+msgstr "Je suis un utilisateur avancé et j'aimerais aussi voir les versions inachevées d'Ubuntu."
 
 #: view_home_mail_1
 msgid "Bitte benachrichtigt mich unter folgender E-Mail über die Fehlerbehebung."
@@ -2641,7 +2641,7 @@ msgstr "Liens:"
 
 #: view_user_profiles__profile_data_10
 msgid " Nur Ubuntuquellen zulassen (\"main/restricted\", sehr sicher: Sicherheits-Updates von Ubuntu)"
-msgstr "N'autorisez que les sources Ubuntu (\"Main /« Réservé \", très sécurisé: mises à jour de sécurité de Ubuntu)"
+msgstr "N'autorise que les sources Ubuntu (\"main/restricted\", très sécurisé: Mises à jour de sécurité d'Ubuntu)"
 
 #: view_passwords_edit_2
 msgid "Neues Passwort erhalten"
@@ -2649,7 +2649,7 @@ msgstr "Recevoir un nouveau mot de passe"
 
 #: view_user_profiles__profile_data_11
 msgid " Auch Communityquellen zulassen (\"universe/multiverse\", auch sicher, mehr Programme/Komfort: "
-msgstr "Les sources communautaires sont également authorisées (\"universe / multiverse \", également  sûre , programmes/Confort:"
+msgstr "Les sources communautaires sont également autorisées (\"universe/multiverse\", également  sûre, plus de programmes/Confort:"
 
 #: view_home_icons_10
 msgid "Programm"
@@ -2657,7 +2657,7 @@ msgstr "Programme"
 
 #: view_user_profiles__profile_data_12
 msgid " Alle Quellen zulassen (etwas unsicherer: <a href=\"http://wiki.ubuntuusers.de/Fremdquellen\">Fremdpakete</a> können das System gefährden, aber noch mehr Programme/Komfort: "
-msgstr "Authoriser toutes les sources  (un peu incertaine: <a href=\"http://wiki.ubuntuusers.de/Fremdquellen\"> Paquets inconnus </ a> peuvent compromettre le système, mais plus encore programmes/confort:"
+msgstr "Authoriser toutes les sources  (un peu moins sécurisé: <a href=\"http://wiki.ubuntuusers.de/Fremdquellen\">Paquets externes</ a> peuvent compromettre le système, mais encore plus de programmes/confort:"
 
 #: view_packages_show_8
 msgid "Beliebtheit:"
@@ -2681,7 +2681,7 @@ msgstr "Ici tu peux choisir la licence que tu souhaites autoriser"
 
 #: view_user_profiles__installation_0
 msgid "Ubuntu-Nachinstallation"
-msgstr "Après-installation de Ubuntu"
+msgstr "Installation à postériori d'Ubuntu"
 
 #: view_packages_show_9
 msgid "/5 Sterne&nbsp;&nbsp; "
@@ -2713,7 +2713,7 @@ msgstr "Source/dépôt"
 
 #: view_user_profiles__profile_data_14
 msgid " Freie Software (Quellen liegen offen und dürfen weiterentwickelt werden)"
-msgstr "Logiciel libre (les sources sont disponible  et peut être développé)"
+msgstr "Logiciel libre (les sources sont disponibles  et peut être développées)"
 
 #: view_user_profiles__installation_1
 msgid "Um etwas installieren zu können, musst du zunächst unter \"Softwareauswahl\" etwas auswählen."
@@ -2757,11 +2757,11 @@ msgstr "Version du paquet"
 
 #: view_user_profiles__profile_data_15
 msgid " Unfreie Lizenzen zulassen (auch kostenlos, aber Quellen liegen nicht offen - der weiche Übergang zu Linux: "
-msgstr "Licences pas libre permise (également gratuit, mais les sources ne sont pas ouverts - la transition en douceur vers Linux:AnhörenUmschrift)"
+msgstr "Permettre des licences non-libres (également gratuites, mais les sources ne sont pas ouvertes - la transition en douceur vers Linux:"
 
 #: view_user_profiles__installation_2
 msgid "Aufgrund deiner Auswahl werden jetzt Programme auf deinem Computer installiert. Folgende Schritte sind dafür zu tun"
-msgstr "En raison de votre choix des programmes seront être installés sur votre ordinateur. Les étapes suivantes sont á suivre"
+msgstr "En raison de ton choix des programmes seront être installés sur  ton ordinateur. Les étapes suivantes sont à suivre (si"
 
 #: view_derivatives_show_3
 msgid "Icon file:"
@@ -2953,7 +2953,7 @@ msgstr "Vous n'avez pas de messages dans votre boîte de réception."
 
 #: invalid_activation_code_entered
 msgid "Ungültiger Anderungscode eingegeben."
-msgstr "Entree invalide de mise á jour de code"
+msgstr "Entree invalide de mise à jour de code"
 
 #: livecd_previous_cds
 msgid "Bisher erstellte Live-CDs/DVDs:"
@@ -2969,7 +2969,7 @@ msgstr "Compilation-Editeur"
 
 #: which_programs_do_you_need
 msgid "Zu welchem Thema suchst du Programme (Büro, Grafik,...)? Hier kannst du deine Interessengebiete eingeben und passende vorkonfigurierte Programmbündel zusammenstellen."
-msgstr "Sur quel sujet recherche tu des programmes(bureau, graphiques ,...)? Ici tu peux entrer tes centres d'intérêt et mettre sur pied un programme adapté pré-configuré:"
+msgstr "Sur quel sujet recherches-tu des programmes(bureau, graphiques,...)? Ici tu peux entrer tes centres d'intérêt et mettre sur pied un programme adapté pré-configuré:"
 
 #: description_with_colon
 msgid "Beschreibung:"
@@ -2997,7 +2997,7 @@ msgstr "Choisis un parent!"
 
 #: model_user_profile_tabz_1
 msgid "Softwareauswahl"
-msgstr "Sélection de Logiciel"
+msgstr "Sélection de logiciel"
 
 #: controller_suggestion_11
 msgid "Paketquellen hinzufügen"
@@ -3037,7 +3037,7 @@ msgstr "Ubuntu dérivés"
 
 #: model_user_profile_tabz_4
 msgid "Voreinstellungen"
-msgstr "pré-installations"
+msgstr "Prèréglages?"
 
 #: controller_suggestion_15
 msgid "Pakete installieren"
@@ -3109,7 +3109,7 @@ msgstr "démarrer la machine virtuelle"
 
 #: view_user_profiles__profile_rating_0
 msgid "Auswahl der zu installierenden Programmbündel und Programme"
-msgstr "Sélectione la compilation de programmes et les programmes á installer"
+msgstr "Sélectione la compilation de programmes et les programmes à installer"
 
 #: model_package_1
 msgid "Frei+proprietär"
@@ -3121,7 +3121,7 @@ msgstr "Bauernstr. 2"
 
 #: view_user_profiles__profile_rating_1
 msgid "Rechts findest du die Details zur links ausgewählten Kategorie."
-msgstr "A la droite tu trouveras les détails sur le lien de la catégorie sélectionnée "
+msgstr "A la droite tu trouveras les détails sur le lien de la catégorie sélectionnée à gauche"
 
 #: model_package_2
 msgid "Unbekannt"
@@ -3265,7 +3265,7 @@ msgstr "Échec ou succès dans la creation du Deb"
 
 #: view_home_home_11
 msgid "<b>Benutzer verwalten</b> Hier kannst du als Admin die Rollen der Benutzer ändern. Vorsicht walten lassen!"
-msgstr "<b> Gérer les utilisateurs </ b> Ici, vous pouvez en tant qu'administrateur changer les rôles de l utilisateur. Soyez prudent!"
+msgstr "<b> Gérer les utilisateurs </ b> Ici, tu peux en tant qu'administrateur changer les rôles de l'utilisateur. Sois prudent!"
 
 #: view_debs_index_1
 msgid "Zurück zum Communtu-Menü"
@@ -3505,7 +3505,7 @@ msgstr "enregistrés comme"
 
 #: view_home_home_29
 msgid "Zu welchem Thema suchst du Programme (Büro, Grafik,...)? Hier kannst du deine Interessengebiete eingeben und passende vorkonfigurierte Programmbündel downloaden."
-msgstr "Sur quel sujet recherches tu des programmes  (bureau, graphiques ,...)? Ici tu peux faire entrer tes domaines d'intérêt et  télécharger les  programmes-compilés pré-configurés."
+msgstr "Sur quel sujet recherches tu des programmes  (bureau, graphiques ,...)? Ici tu peux entrer tes domaines d'intérêt et  télécharger les  programmes-compilés pré-configurés."
 
 #: view_repositories_index_0
 msgid "Repositories"
@@ -3521,7 +3521,7 @@ msgstr "Compilation:"
 
 #: view_home_home_31
 msgid "Hier kannst du Themen detaillierter auswählen und dazu Programme und Programmbündel laden, aber auch eigene Bündel erstellen und verwalten."
-msgstr "Ici, tu peux choisir des thèmes  détaillés et  charger des programmes et des compilations programmes, mais aussi créer  sa propre compilation et l administrer ."
+msgstr "Ici, tu peux choisir des thèmes détaillés et charger des programmes et des compilations programmes, mais aussi créer sa propre compilation et l administrer ."
 
 #: package_list
 msgid "zurück zur Paketliste"
