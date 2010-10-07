@@ -1367,7 +1367,7 @@ msgstr "Le LiveCD / DVD est créé."
 
 #: search_programs_bundles
 msgid "Du hast bereits ein Ubuntu installiert und suchst jetzt passende Programme? Hier kannst du deine Interessengebiete eingeben und passende vorkonfigurierte Programmbündel downloaden."
-msgstr "Tu as déjà installé un Ubuntu et cherches maintenant des programmes adaptés? Ici vous tu peux entrer tes centres d'intérêts et  télécharger un des compilations de programme pré-configurés."
+msgstr "Tu as déjà installé un Ubuntu et cherches maintenant des programmes adaptés? Ici tu peux entrer tes centres d'intérêts et télécharger un des compilations de programme pré-configurés."
 
 #: view_home_news_17
 msgid "Zum Blog"
