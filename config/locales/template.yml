@@ -242,7 +242,7 @@ de:
   kvm_image: KVM-Image
   kvm_processes: KVM-Prozesse
   last_user: Wir begrüßen unseren zuletzt neu-registrierten Nutzer
-  lib_system_0: Du musst eingeloggt sein, um dieses Feature zu benutzen. Geht auch als "Gast".
+  lib_system_0: Du musst eingeloggt sein, um dieses Feature zu benutzen. Geht auch als Gastbenutzer, hierfür muss rechts oben auf "Gast" geklickt werden.
   lib_system_1: Du hast keine Berechtigung für diese Aktion.
   lib_system_2: http://www.communtu.de
   lib_utils_0: 'System-Befehl schlug fehl: '
