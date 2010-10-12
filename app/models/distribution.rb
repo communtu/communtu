@@ -78,6 +78,10 @@ class Distribution < ActiveRecord::Base
 
   protected
   def after_create
+    # register distribution for all derivatives
+    Derivative.all.each do |der|
+      der.distributions << self
+    end  
     # generate new configuration file for reprepro
     Deb.write_conf_distributions
     # make folder for package info

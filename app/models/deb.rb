@@ -336,7 +336,7 @@ class Deb < ActiveRecord::Base
     archs = Architecture.all.map{|a| a.name}.join(" ")
     f=File.open(RAILS_ROOT+'/debs/distributions','w')
     Derivative.all.each do |der|
-      der.distributions.all.each do |dist|
+      der.distributions.each do |dist|
         (0..1).each do |lic|
           (0..2).each do |sec|
             codename = Deb.compute_codename(dist,der,lic,sec)

@@ -48,7 +48,7 @@ class RepositoriesController < ApplicationController
   # GET /repositories/1/edit
   def edit
     @repository = Repository.find(params[:id])
-    @distributions = Distribution.find(:all)
+    @distributions = Distribution.all
   end
 
   # POST /repositories
