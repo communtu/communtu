@@ -53,7 +53,9 @@ namespace :db do
           end
         end
       end
-      limit = 1000
+    end  
+    task :generate_debs => :environment do
+      limit = 500
       debs = Deb.find(:all,:conditions=>{:generated=>:false},:limit=>limit)
       cnt = debs.size
       if cnt>0 then

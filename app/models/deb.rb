@@ -47,7 +47,11 @@ class Deb < ActiveRecord::Base
   end
   
   # generate debian package
-  def generate
+  def generate(force=false)
+    # already generated? then we are done (if we are not forced...)
+    if self.generated and !force
+      return
+    end
     meta = self.metapackage
     dist = self.distribution
     der = self.derivative
@@ -77,86 +81,89 @@ class Deb < ActiveRecord::Base
     end
     # create a lock in order to avoid concurrent debianizations
     safe_system "dotlockfile -r 1000 #{RAILS_ROOT}/debs/lock"
-    begin
-      # logging
-      f=File.open("#{RAILS_ROOT}/log/debianize.log","a")
-      f.puts
-      f.puts
-      f.puts "++++++++++++++++++++++ Processing version #{name}-#{version}"
-      f.puts Time.now
-      f.puts
-      f.puts "Included packages:"
-      architectures.each do |arch|
-         f.puts((if homogeneous then arch.name else "" end)+": "+packages[arch].join(", "))
-      end
-      f.close
-
-      # look for a version that does not exist yet
-      v=1
-      while !IO.popen("#{REPREPRO} listfilter #{codename} \"Package (== #{name}), Version (>= #{version+v.to_s})\"").read.empty?
-        v+=1
-      end
-      version += v.to_s
-
-      architectures.each do |arch|
-        begin
-          # build metapackage
-          archname = if homogeneous then "all" else arch.name end
-          debfile = Deb.makedeb(name,version,packages[arch],meta.description_english,dist,codename,Derivative.find(:first),[],false,archname)
-
-          # make name of .deb unique by adding the codename
-          # newfile = debfile.gsub("_all.deb","~"+codename+"_all.deb")
-          # safe_system "mv #{debfile} #{newfile}"
-          newfile = debfile
-
-          # what license types and security types are actually used in the bundle?
-          # use this info to determine the component
-          component = Deb.components[[lic,mlic].min][[sec,msec].min]
-
-          # upload metapackage
-          # todo: make name of .deb unique
-          puts "Uploading #{newfile}"
-          safe_system "#{REPREPRO} -C #{component} includedeb #{codename} #{newfile} >> #{RAILS_ROOT}/log/debianize.log 2>&1"
-          # remove package files, but not folder
-          safe_system "rm #{RAILS_ROOT}/debs/#{name}/#{name}* >/dev/null 2>&1 || true"
-          # mark this deb as susccessfully generated
-          self.generated = true
-          self.errmsg = nil
-          self.log = IO.popen("tail -n80 #{RAILS_ROOT}/log/debianize.log").read
-          self.save
-          # communtu repository has changed, hence clear apt-proxy cache
-          system "sudo clear-apt-proxy-cache-communtu"
-        rescue StandardError => err
+    # do check again (since concurrent instance could have generated it in the meantime)
+    if self.generated and !force
+      begin
+        # logging
+        f=File.open("#{RAILS_ROOT}/log/debianize.log","a")
+        f.puts
+        f.puts
+        f.puts "++++++++++++++++++++++ Processing version #{name}-#{version}"
+        f.puts Time.now
+        f.puts
+        f.puts "Included packages:"
+        architectures.each do |arch|
+           f.puts((if homogeneous then arch.name else "" end)+": "+packages[arch].join(", "))
+        end
+        f.close
+  
+        # look for a version that does not exist yet
+        v=1
+        while !IO.popen("#{REPREPRO} listfilter #{codename} \"Package (== #{name}), Version (>= #{version+v.to_s})\"").read.empty?
+          v+=1
+        end
+        version += v.to_s
+  
+        architectures.each do |arch|
+          begin
+            # build metapackage
+            archname = if homogeneous then "all" else arch.name end
+            debfile = Deb.makedeb(name,version,packages[arch],meta.description_english,dist,codename,Derivative.find(:first),[],false,archname)
+  
+            # make name of .deb unique by adding the codename
+            # newfile = debfile.gsub("_all.deb","~"+codename+"_all.deb")
+            # safe_system "mv #{debfile} #{newfile}"
+            newfile = debfile
+  
+            # what license types and security types are actually used in the bundle?
+            # use this info to determine the component
+            component = Deb.components[[lic,mlic].min][[sec,msec].min]
+  
+            # upload metapackage
+            # todo: make name of .deb unique
+            puts "Uploading #{newfile}"
+            safe_system "#{REPREPRO} -C #{component} includedeb #{codename} #{newfile} >> #{RAILS_ROOT}/log/debianize.log 2>&1"
+            # remove package files, but not folder
+            safe_system "rm #{RAILS_ROOT}/debs/#{name}/#{name}* >/dev/null 2>&1 || true"
+            # mark this deb as susccessfully generated
+            self.generated = true
+            self.errmsg = nil
+            self.log = IO.popen("tail -n80 #{RAILS_ROOT}/log/debianize.log").read
+            self.save
+            # communtu repository has changed, hence clear apt-proxy cache
+            system "sudo clear-apt-proxy-cache-communtu"
+          rescue StandardError => err
+            self.generated = false
+            self.errmsg = err
+            self.log = IO.popen("tail -n80 #{RAILS_ROOT}/log/debianize.log").read
+            self.save
+            meta.deb_error = true
+            meta.save
+          end
+        end
+        # was this the last deb to be generated for the bundle? Then mark bundle as updated
+        if Deb.find(:first,:conditions => ["metapackage_id = ? and generated = ?",meta.id,false]).nil?
+          meta.modified = false
+          meta.debianizing = false
+          meta.deb_error = false
+          meta.save
+        end
+        rescue
           self.generated = false
-          self.errmsg = err
+          self.errmsg = "unknown"
           self.log = IO.popen("tail -n80 #{RAILS_ROOT}/log/debianize.log").read
           self.save
           meta.deb_error = true
           meta.save
+          f=File.open("#{RAILS_ROOT}/log/debianize.log","a")
+          f.puts
+          f.puts "Debianizing #{name} failed! (id = #{id})"
+          f.puts
+          f.close
         end
-      end
-      # was this the last deb to be generated for the bundle? Then mark bundle as updated
-      if Deb.find(:first,:conditions => ["metapackage_id = ? and generated = ?",meta.id,false]).nil?
-        meta.modified = false
-        meta.debianizing = false
-        meta.deb_error = false
-        meta.save
-      end
-      rescue
-        self.generated = false
-        self.errmsg = "unknown"
-        self.log = IO.popen("tail -n80 #{RAILS_ROOT}/log/debianize.log").read
-        self.save
-        meta.deb_error = true
-        meta.save
-        f=File.open("#{RAILS_ROOT}/log/debianize.log","a")
-        f.puts
-        f.puts "Debianizing #{name} failed! (id = #{id})"
-        f.puts
-        f.close
-      end
-      # cleanup
-      system "rm -r #{RAILS_ROOT}/debs/#{name}*"
+        # cleanup
+        system "rm -r #{RAILS_ROOT}/debs/#{name}*"
+      end 
       # release lock
       safe_system "dotlockfile -u #{RAILS_ROOT}/debs/lock"
   end
