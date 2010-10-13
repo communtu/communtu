@@ -82,7 +82,7 @@ class Deb < ActiveRecord::Base
     # create a lock in order to avoid concurrent debianizations
     safe_system "dotlockfile -r 1000 #{RAILS_ROOT}/debs/lock"
     # do check again (since concurrent instance could have generated it in the meantime)
-    if self.generated and !force
+    if !(self.generated and !force)
       begin
         # logging
         f=File.open("#{RAILS_ROOT}/log/debianize.log","a")
