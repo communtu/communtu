@@ -25,7 +25,7 @@ fr:
   controller_accounts_4: "Ton compte est d\xC3\xA9j\xC3\xA0 activ\xC3\xA9. Tu peux t'inscrire d\xC3\xA8s maintenant."
   view_roles_index_1: "r\xC3\xB4les assign\xC3\xA9s:"
   view_home_beteiligung_14: "Nous pouvons \xC3\xA9galement t'aider \xC3\xA0 apprendre cette langue. Donc, tout simplement se connecter \xC3\xA1"
-  view_user_profiles__installation_17: "Cliquer sur le lien, puis comme propos\xC3\xA9, ouvrir avec le package d'installation - si aucun Progamme de dialogue n'appara\xC3\xAEt, le fichier a \xC3\xA9t\xC3\xA9 t\xC3\xA9l\xC3\xA9charg\xC3\xA9 sur ton ordinateur. L\xC3\xA0, tu peux le D\xC3\xA9marrer en double-cliquant dessus."
+  view_user_profiles__installation_17: "Cliquer sur le lien, puis comme propos\xC3\xA9, ouvrir avec le package d'installation - si le programme ne fait apparaitre aucune fen\xC3\xAAtre de dialogue, c'est que le fichier a \xC3\xA9t\xC3\xA9 t\xC3\xA9l\xC3\xA9charg\xC3\xA9 sur ton ordinateur. L\xC3\xA0, tu peux le D\xC3\xA9marrer en double-cliquant dessus."
   controller_accounts_5: "Mot de passe mise \xC3\xA0 jour."
   view_roles_index_2: "r\xC3\xB4les disponibles:"
   view_home_beteiligung_15: nous
@@ -77,7 +77,7 @@ fr:
   gpg_key: "cl\xC3\xA9 GPG (facultatif):"
   controller_passwords_1: "Un lien qui te permettra de changer ton mot de passe a \xC3\xA9t\xC3\xA9 envoy\xC3\xA9 \xC3\xA0 ton adresse e-mail ."
   view_home_contact_us_0: "Formulaire de r\xC3\xA9troaction"
-  view_home_faq_xfce_02: "La gestion du paquet Synaptic ce fait sur  \"Applications -> Syst\xC3\xA8me-> Gestion du paquet Synaptic \". S\xC3\xA9lectionne ci-dessous, \xC3\xA0 gauche du point d'origine. Recherche maintenant dans la liste ci-dessus \"packages.communtu.org \" et clique dessus. Sur le c\xC3\xB4t\xC3\xA9 droit maintenant, tous les m\xC3\xA9ta-paquets disponibles sur Communtu vont \xC3\xAAtre affich\xC3\xA9. La suppression se fait en cliquant \xC3\xA0 droite de la souris puis sur \"S\xC3\xA9lectionner pour suppression \". Cela doit \xC3\xAAtre cl\xC3\xB4tur\xC3\xA9 par \"Appliquer \" pour confirmer."
+  view_home_faq_xfce_02: "Le gestionnaire du paquet Synaptic ce fait sur  \"Applications -> Syst\xC3\xA8me-> Gestionnaire du paquet Synaptic \". S\xC3\xA9lectionne ci-dessous, \xC3\xA0 gauche du point d'origine. Recherche maintenant dans la liste ci-dessus \"packages.communtu.org \" et clique dessus. Sur le c\xC3\xB4t\xC3\xA9 droit maintenant, tous les m\xC3\xA9ta-paquets disponibles sur Communtu vont \xC3\xAAtre affich\xC3\xA9. La suppression se fait en cliquant \xC3\xA0 droite de la souris puis sur \"S\xC3\xA9lectionner pour suppression \". Cela doit \xC3\xAAtre cl\xC3\xB4tur\xC3\xA9 par \"Appliquer \" pour confirmer."
   controller_distributions_2: "Distribution mise \xC3\xA0 jour."
   controller_passwords_2: "Aucun utilisateur avec cette adresse email n'a \xC3\xA9t\xC3\xA9 trouv\xC3\xA9e."
   view_home_contact_us_1: "Ici tu as la possibilit\xC3\xA9 de nous envoyer tes suggestions et critiques concernant Communtu."
@@ -205,7 +205,7 @@ fr:
   blog: Le blog de Communtu
   view_home_derivatives_14: "- Logiciel \xC3\xA9ducatif. Dans \"Education et des Sciences \" selectionner le niveau \"agrandi \" , et il est install\xC3\xA9."
   donation_possibility: options de dons
-  view_home_about_3: "Il ya aussi de nombreuses applications qui ont besoin d'\xC3\xAAtre install\xC3\xA9es plus tard encore, comme dans les domaines de l'audio, vid\xC3\xA9o et graphiques afin que ton ordinateur soit r\xC3\xA9ellement utilisable avec Ubuntu. Communtu fait cette installation \xC3\xA0 post\xC3\xA9riori encore plus facile et poss\xC3\xA8de \xC3\xA9galement des espaces sp\xC3\xA9cifiques pour les d\xC3\xA9butants et Windows convertit."
+  view_home_about_3: "Mais aussi de nombreuses applications qui ont besoin d'\xC3\xAAtre install\xC3\xA9es plus tard encore, comme dans les domaines de l'audio, vid\xC3\xA9o et graphiques afin que ton ordinateur soit r\xC3\xA9ellement utilisable avec Ubuntu. Communtu fait cette installation \xC3\xA0 post\xC3\xA9riori encore plus facile et poss\xC3\xA8de \xC3\xA9galement des espaces sp\xC3\xA9cifiques pour les d\xC3\xA9butants et Windows convertit."
   view_home_derivatives_15: http://wiki.ubuntuusers.de/KDE
   view_home_about_4: Comment puis-je utiliser Communtu?
   view_home_derivatives_16: Ubuntu est avec le bureau KDE.
@@ -398,14 +398,14 @@ fr:
   view_roles_edit_0: "Modifier un r\xC3\xB4le"
   view_user_profiles__profile_data_9: "Ici tu peux r\xC3\xA9gler le degr\xC3\xA9 de s\xC3\xA9curit\xC3\xA9 et de confortabilit\xC3\xA9 pour tes sources d'installations"
   view_home_faq_11: "Comment puis-je cr\xC3\xA9er une compilation \xC3\xA0 partir de mes programmes install\xC3\xA9s?"
-  view_cart_new_from_list_3: "d\xC3\xA9couvrir. (pour cela le paquet {{debfoster}} doit \xC3\xAAtre install\xC3\xA9. La liste g\xC3\xA9n\xC3\xA9r\xC3\xA9e contient uniquement une liste minimale de (m\xC3\xA9ta-)paquets qui sont n\xC3\xA9cessaires pour restaurer pleinement ton installation.)"
+  view_cart_new_from_list_3: "d\xC3\xA9couvrir. (pour cela le paquet {{debfoster}} doit \xC3\xAAtre install\xC3\xA9. La liste g\xC3\xA9n\xC3\xA9r\xC3\xA9e contient seulement une liste minimale de (m\xC3\xA9ta-)paquets qui est n\xC3\xA9cessaire pour restaurer compl\xC3\xA8tement ton installation.)"
   controller_metapackages_7: Il faut  donner une version (par exemple 0.1) <br>
   view_user_profiles_help_4: "tu fais une mise \xC3\xA0 niveau  d'une version plus r\xC3\xA9cente"
   view_home_derivatives_52: " Une sorte de Automatix pour l'\xC3\xA9dition finale."
   view_roles_edit_1: Nom du personnage
   view_users__sidebar_4: Versions-Ubuntu
   view_home_faq_12: "Sous <b>compilation</b>, puis  \"nouvelle compilation\" il y a un point  \"compilation provenant d une liste de paquets \" qui est cliquant . Il est  d\xC3\xA9crit la fa\xC3\xA7on dont tu peux t\xC3\xA9l\xC3\xA9charger ta liste de paquets dans Communtu. Une fois le paquet  stock\xC3\xA9, le processus est le m\xC3\xAAme que lors de la cr\xC3\xA9ation d'une nouvelle compilation: Choisir un nom significatif,  d\xC3\xA9terminer la version, sauvegarder et Inserer la description ."
-  view_cart_new_from_list_4: "Fichier qui contient la liste des paquets, s\xC3\xA9lectionne:"
+  view_cart_new_from_list_4: "Fichier qui contient la liste des paquets, s\xC3\xA9lectionner:"
   controller_metapackages_8: "Si tu entreprends des changements la version doit \xC3\xAAtre sup\xC3\xA9rieure <br>"
   view_user_profiles_help_5: "tu \xC3\xA9largis Communtu en ta version."
   view_home_derivatives_53: "- Permet une installation plus rapide, puisque seuls les paquets les plus r\xC3\xA9cents sont t\xC3\xA9l\xC3\xA9charg\xC3\xA9s."

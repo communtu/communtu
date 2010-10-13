@@ -111,7 +111,7 @@ msgstr "Nous pouvons également t'aider à apprendre cette langue. Donc, tout si
 
 #: view_user_profiles__installation_17
 msgid "Link einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer öffnen - wenn kein Prorgammdialog erscheint, wurde die Datei auf deinem Rechner heruntergeladen. Dort kannst du sie mit Doppelklick starten."
-msgstr "Cliquer sur le lien, puis comme proposé, ouvrir avec le package d'installation - si aucun Progamme de dialogue n'apparaît, le fichier a été téléchargé sur ton ordinateur. Là, tu peux le Démarrer en double-cliquant dessus."
+msgstr "Cliquer sur le lien, puis comme proposé, ouvrir avec le package d'installation - si le programme ne fait apparaitre aucune fenêtre de dialogue, c'est que le fichier a été téléchargé sur ton ordinateur. Là, tu peux le Démarrer en double-cliquant dessus."
 
 #: controller_accounts_5
 msgid "Passwort aktualisiert."
@@ -311,7 +311,7 @@ msgstr "Formulaire de rétroaction"
 
 #: view_home_faq_xfce_02
 msgid "Die Pakerverwaltung Synaptic erreichst du über \"Anwendungen -> System-> Synaptic-Paketverwaltung\". Wähle hier unten links den Punkt Ursprung. Suche nun in der darüber liegenden Liste \"packages.communtu.org\" und klicke es an. Auf der rechten Seite werden nun die verfügbaren Metapakete in Communtu angezeigt. Das Entfernen geht über Rechtsmausklick und dann \"Zum Entfernen vormerken\". Dies muss dann danach durch \"Anwenden\" bestätigt werden."
-msgstr "La gestion du paquet Synaptic ce fait sur  \"Applications -> Système-> Gestion du paquet Synaptic \". Sélectionne ci-dessous, à gauche du point d'origine. Recherche maintenant dans la liste ci-dessus \"packages.communtu.org \" et clique dessus. Sur le côté droit maintenant, tous les méta-paquets disponibles sur Communtu vont être affiché. La suppression se fait en cliquant à droite de la souris puis sur \"Sélectionner pour suppression \". Cela doit être clôturé par \"Appliquer \" pour confirmer."
+msgstr "Le gestionnaire du paquet Synaptic ce fait sur  \"Applications -> Système-> Gestionnaire du paquet Synaptic \". Sélectionne ci-dessous, à gauche du point d'origine. Recherche maintenant dans la liste ci-dessus \"packages.communtu.org \" et clique dessus. Sur le côté droit maintenant, tous les méta-paquets disponibles sur Communtu vont être affiché. La suppression se fait en cliquant à droite de la souris puis sur \"Sélectionner pour suppression \". Cela doit être clôturé par \"Appliquer \" pour confirmer."
 
 #: controller_distributions_2
 msgid "Distribution aktualisiert."
@@ -811,7 +811,7 @@ msgstr "options de dons"
 
 #: view_home_about_3
 msgid "Es gibt aber auch viele Anwendungen, die erst noch nachinstalliert werden müssen, z.B. in den Bereichen Audio, Video und Grafik, damit dein Computer mit Ubuntu wirklich  benutzbar ist. Communtu macht diese Nachinstallation jetzt noch einfacher und hat zudem spezielle Bereiche für Einsteiger und Windows-Umsteiger."
-msgstr "Il ya aussi de nombreuses applications qui ont besoin d'être installées plus tard encore, comme dans les domaines de l'audio, vidéo et graphiques afin que ton ordinateur soit réellement utilisable avec Ubuntu. Communtu fait cette installation à postériori encore plus facile et possède également des espaces spécifiques pour les débutants et Windows convertit."
+msgstr "Mais aussi de nombreuses applications qui ont besoin d'être installées plus tard encore, comme dans les domaines de l'audio, vidéo et graphiques afin que ton ordinateur soit réellement utilisable avec Ubuntu. Communtu fait cette installation à postériori encore plus facile et possède également des espaces spécifiques pour les débutants et Windows convertit."
 
 #: view_home_derivatives_15
 msgid "http://wiki.ubuntuusers.de/KDE"
@@ -1571,7 +1571,7 @@ msgstr "Comment puis-je créer une compilation à partir de mes programmes insta
 
 #: view_cart_new_from_list_3
 msgid "herausfinden. (Dazu muss das Paket {{debfoster}} installiert sein. Die erzeugte Liste enthält nur eine minimale Liste von (Meta-)Paketen, die notwendig ist, um deine Installation komplett wiederherzustellen.)"
-msgstr "découvrir. (pour cela le paquet {{debfoster}} doit être installé. La liste générée contient uniquement une liste minimale de (méta-)paquets qui sont nécessaires pour restaurer pleinement ton installation.)"
+msgstr "découvrir. (pour cela le paquet {{debfoster}} doit être installé. La liste générée contient seulement une liste minimale de (méta-)paquets qui est nécessaire pour restaurer complètement ton installation.)"
 
 #: controller_metapackages_7
 msgid "Es muss eine Version angegeben werden (z.B. 0.1)<br>"
@@ -1599,7 +1599,7 @@ msgstr "Sous <b>compilation</b>, puis  \"nouvelle compilation\" il y a un point 
 
 #: view_cart_new_from_list_4
 msgid "Datei, die die Paketliste enthält, auswählen:"
-msgstr "Fichier qui contient la liste des paquets, sélectionne:"
+msgstr "Fichier qui contient la liste des paquets, sélectionner:"
 
 #: controller_metapackages_8
 msgid "Bei Anderungen muss die Version größer werden<br>"
