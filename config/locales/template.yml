@@ -258,6 +258,7 @@ de:
   livecd_email_body_failed: ', die Live-CD/DVD {{name}} konnte leider nicht erstellt werden. Wir kümmern uns um das Problem.'
   livecd_email_failed: 'Communtu: Erstellung der Live-CD/DVD fehlgeschlagen'
   livecd_existing_name: Dieser Name ist bereits vergeben
+  livecd_failed: LiveCD-Erstellung fehlgeschlagen
   livecd_image: CD-Image
   livecd_image_link: http://wiki.ubuntuusers.de/CD-Images
   livecd_incorrect_name: Der Name der LiveCD/DVD darf nur aus Buchstaben, Zahlen, _ und - bestehen

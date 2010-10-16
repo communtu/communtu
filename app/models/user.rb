@@ -449,6 +449,9 @@ end
       if !d.generated then
         d.generate
       end
+      if d.nil then
+        return nil
+      end
       d.verify
       # create live cd
       params[:name] = deb_name

@@ -176,7 +176,10 @@ class UserProfilesController < ApplicationController
 
   def create_livecd_from_bundle
     @bundle = Metapackage.find(params[:id])
-    current_user.bundle_to_livecd(@bundle,true,params[:kvm],params[:usb])
+    cd = current_user.bundle_to_livecd(@bundle,true,params[:kvm],params[:usb])
+    if cd.nil? then
+      flash[:error] = t(:livecd_failed)
+    end
     redirect_to "/livecds"
   end
 end
