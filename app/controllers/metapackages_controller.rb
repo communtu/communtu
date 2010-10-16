@@ -502,7 +502,7 @@ class MetapackagesController < ApplicationController
     flash[:notice] = t(:controller_metapackages_please_regenerate)
     redirect_to :action => :show, :id => params[:id]
   end
-#Package.find_by_sql("SELECT * from base_packages INNER JOIN metacontents ON metacontents.base_package_id = base_packages.id INNER JOIN metacontents_distrs ON metacontents.id = metacontents_distrs.id WHERE metacontents_distrs.distribution_id = 2").size
+  
   def health_status
     @zombie_processes = IO.popen("ps -aef|grep defunct |wc -l").read.to_i
     iso_path = SETTINGS['iso_path']

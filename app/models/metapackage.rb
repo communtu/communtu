@@ -321,7 +321,7 @@ class Metapackage < BasePackage
   
   def generate_debs
     # generate debian packages from debs
-    Deb.find(:all,:conditions => ["metapackage_id = ? and version = ?",self.id,self.version]).each do |deb|
+    Deb.find(:all,:conditions => ["metapackage_id = ? and version = ? and generated = ?",self.id,self.version,false]).each do |deb|
       deb.generate
     end
     return true
