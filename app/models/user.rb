@@ -446,11 +446,11 @@ end
          bundle.debianize
          d=Deb.find(:first,:conditions=> params1)
       end
+      if d.nil? then
+        return nil
+      end
       if !d.generated then
         d.generate
-      end
-      if d.nil then
-        return nil
       end
       d.verify
       # create live cd
