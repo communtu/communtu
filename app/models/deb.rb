@@ -102,7 +102,7 @@ class Deb < ActiveRecord::Base
         reprepro_call = "#{REPREPRO} listfilter #{codename} \"Package (== #{name}), Version (>= #{version+v.to_s})\""
         while !(out=IO.popen(reprepro_call).read).empty?
           v+=1
-          system "echo 'output of call\n #{reprepro_call}\nis: \in #{out}''"
+          f.puts  "output of call\n #{reprepro_call}\nis: \in #{out}"
           if v>20 then
             break
           end
