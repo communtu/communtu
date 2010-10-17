@@ -302,7 +302,7 @@ class Livecd < ActiveRecord::Base
   end
 
   def generate_hda
-    tmpfile = IO.popen("mktemp").read.chomp
+    tmpfile = IO.popen("mktemp",&:read).chomp
     self.vm_hda = SETTINGS['iso_path']+tmpfile
     self.save
     system "qemu-img create #{self.vm_hda} 5G"

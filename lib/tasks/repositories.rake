@@ -56,12 +56,12 @@ namespace :db do
     end  
     task :generate_debs => :environment do
       # concurrent instance already running? then exit
-      if IO.popen("ps -aef |grep generate_debs | grep rake | grep -v grep").read.split("\n").size<=1 then
+      if IO.popen("ps -aef |grep generate_debs | grep rake | grep -v grep",&:read).split("\n").size<=1 then
         limit = 500
         debs = Deb.find(:all,:conditions=>{:generated=>:false},:limit=>limit)
         cnt = debs.size
         if cnt>0 then
-          start_date = IO.popen("date").read.chomp
+          start_date = IO.popen("date",&:read).chomp
           system "echo 'starting at #{start_date}' >> log/generate_debs.log"
           s = if cnt==limit then "first "+limit.to_s else cnt.to_s end
           puts "  ... generating the #{s} missing debian packages"

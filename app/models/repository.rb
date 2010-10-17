@@ -186,7 +186,7 @@ class Repository < ActiveRecord::Base
     url = url[:url]
 
     # read in all packages from repository
-    tmp_name = (IO.popen "mktemp").read.chomp
+    tmp_name = (IO.popen "mktemp",&:read).chomp
     packages = self.packages_to_hash force, url, arch, tmp_name
     # errors while reading or still up-to-date? then return
     if !packages[:error].nil? or !packages[:notice].nil? then

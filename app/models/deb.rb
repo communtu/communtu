@@ -99,7 +99,7 @@ class Deb < ActiveRecord::Base
         # look for a version that does not exist yet
         v=1
         reprepro_call = "#{REPREPRO} listfilter #{codename} \"Package (== #{name}), Version (>= #{version+v.to_s})\""
-        while !(out=IO.popen(reprepro_call).read).empty?
+        while !(out=IO.popen(reprepro_call,&:read)).empty?
           v+=1
           f.puts  "output of call\n #{reprepro_call}\nis: \in #{out}"
           if v>20 then
@@ -156,7 +156,7 @@ class Deb < ActiveRecord::Base
         rescue
           self.generated = false
           self.errmsg = "unknown"
-          self.log = IO.popen("tail -n80 #{RAILS_ROOT}/log/debianize.log").read
+          self.log = IO.popen("tail -n80 #{RAILS_ROOT}/log/debianize.log",&:read)
           self.save
           meta.deb_error = true
           meta.save
@@ -398,7 +398,7 @@ class Deb < ActiveRecord::Base
   
   def self.deb_get_dependencies(file)
     # extract control file
-    tmpdir = IO.popen("mktemp -d").read.chomp
+    tmpdir = IO.popen("mktemp -d",&:read).chomp
     Dir.chdir tmpdir
     system "dpkg-deb -e #{file}"
     f=File.open("DEBIAN/control")
