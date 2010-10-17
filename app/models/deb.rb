@@ -95,7 +95,6 @@ class Deb < ActiveRecord::Base
         architectures.each do |arch|
            f.puts((if homogeneous then arch.name else "" end)+": "+packages[arch].join(", "))
         end
-        f.close
   
         # look for a version that does not exist yet
         v=1
@@ -108,6 +107,7 @@ class Deb < ActiveRecord::Base
           end
         end
         version += v.to_s
+        f.close
   
         architectures.each do |arch|
           begin
@@ -129,7 +129,7 @@ class Deb < ActiveRecord::Base
             puts "Uploading #{newfile}"
             safe_system "#{REPREPRO} -C #{component} includedeb #{codename} #{newfile} >> #{RAILS_ROOT}/log/debianize.log 2>&1"
             # remove package files, but not folder
-            safe_system "rm #{RAILS_ROOT}/debs/#{name}/#{name}* >/dev/null 2>&1 || true"
+            system "rm #{RAILS_ROOT}/debs/#{name}/#{name}* >/dev/null 2>&1 || true"
             # mark this deb as susccessfully generated
             self.generated = true
             self.errmsg = nil
