@@ -64,7 +64,7 @@ namespace :db do
         s = if cnt==limit then "first "+limit.to_s else cnt.to_s end
         puts "  ... generating the #{s} missing debian packages"
         debs.each do |d|
-           system "echo 'started at #{date}, #{cnt} left' >> log/generate_debs.log"
+           system "echo 'started at #{start_date}, #{cnt} left' >> log/generate_debs.log"
            system 'echo "Deb.find('+d.id.to_s+').generate" | script/console production'
            cnt -= 1
         end
