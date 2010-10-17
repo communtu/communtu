@@ -99,8 +99,13 @@ class Deb < ActiveRecord::Base
   
         # look for a version that does not exist yet
         v=1
-        while !IO.popen("#{REPREPRO} listfilter #{codename} \"Package (== #{name}), Version (>= #{version+v.to_s})\"").read.empty?
+        reprepro_call = "#{REPREPRO} listfilter #{codename} \"Package (== #{name}), Version (>= #{version+v.to_s})\""
+        while !(out=IO.popen(reprepro_call).read).empty?
           v+=1
+          system "echo 'output of call\n #{reprepro_call}\nis: \in #{out}''"
+          if v>20 then
+            break
+          end
         end
         version += v.to_s
   
