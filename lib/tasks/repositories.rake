@@ -56,7 +56,7 @@ namespace :db do
     end  
     task :generate_debs => :environment do
       # concurrent instance already running? then exit
-      if IO.popen("ps -aef |grep generate_debs |grep -v grep").read.chomp.empty? then
+      if IO.popen("ps -aef |grep generate_debs | grep rake | grep -v grep").read.split("\n").size<=1 then
         limit = 500
         debs = Deb.find(:all,:conditions=>{:generated=>:false},:limit=>limit)
         cnt = debs.size
