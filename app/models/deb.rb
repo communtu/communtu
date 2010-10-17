@@ -102,7 +102,7 @@ class Deb < ActiveRecord::Base
         while !(out=IO.popen(reprepro_call,&:read)).empty?
           v+=1
           f.puts  "output of call\n #{reprepro_call}\nis: \in #{out}"
-          if v>20 then
+          if v>200 then
             break
           end
         end
