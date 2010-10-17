@@ -60,7 +60,7 @@ namespace :db do
       cnt = debs.size
       if cnt>0 then
         start_date = IO.popen("date").read.chomp
-        system "echo 'starting at #{date}' >> log/generate_debs.log"
+        system "echo 'starting at #{start_date}' >> log/generate_debs.log"
         s = if cnt==limit then "first "+limit.to_s else cnt.to_s end
         puts "  ... generating the #{s} missing debian packages"
         debs.each do |d|
