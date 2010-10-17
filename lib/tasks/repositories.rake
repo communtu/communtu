@@ -56,24 +56,22 @@ namespace :db do
     end  
     task :generate_debs => :environment do
       # concurrent instance already running? then exit
-      if !IO.popen("ps -aef |grep generate_debs |grep -v grep").read.chomp.empty? then
-        return false
-      end
-      limit = 500
-      debs = Deb.find(:all,:conditions=>{:generated=>:false},:limit=>limit)
-      cnt = debs.size
-      if cnt>0 then
-        start_date = IO.popen("date").read.chomp
-        system "echo 'starting at #{start_date}' >> log/generate_debs.log"
-        s = if cnt==limit then "first "+limit.to_s else cnt.to_s end
-        puts "  ... generating the #{s} missing debian packages"
-        debs.each do |d|
-           system "echo 'started at #{start_date}, #{cnt} left' >> log/generate_debs.log"
-           system 'echo "Deb.find('+d.id.to_s+').generate" | script/console production'
-           cnt -= 1
+      if IO.popen("ps -aef |grep generate_debs |grep -v grep").read.chomp.empty? then
+        limit = 500
+        debs = Deb.find(:all,:conditions=>{:generated=>:false},:limit=>limit)
+        cnt = debs.size
+        if cnt>0 then
+          start_date = IO.popen("date").read.chomp
+          system "echo 'starting at #{start_date}' >> log/generate_debs.log"
+          s = if cnt==limit then "first "+limit.to_s else cnt.to_s end
+          puts "  ... generating the #{s} missing debian packages"
+          debs.each do |d|
+             system "echo 'started at #{start_date}, #{cnt} left' >> log/generate_debs.log"
+             system 'echo "Deb.find('+d.id.to_s+').generate" | script/console production'
+             cnt -= 1
+          end
         end
       end
-      return true
     end
     task :verify_debs => :environment do
       Deb.all.each do |d|
