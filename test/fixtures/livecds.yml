@@ -1,13 +1,13 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  name: MyString
-  distribution_id: 1
-  derivative_id: 1
-  architecture_id: 1
+  name: livecd1
+  distribution: one
+  derivative: one
+  architecture: one
 
 two:
-  name: MyString
-  distribution_id: 1
-  derivative_id: 1
-  architecture_id: 1
+  name: livecd2
+  distribution: two
+  derivative: two
+  architecture: two

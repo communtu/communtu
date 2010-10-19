@@ -1,9 +1,9 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  metacontent_id: 1
-  derivative_id: 1
+  metacontent: one
+  derivative: one
 
 two:
-  metacontent_id: 1
-  derivative_id: 1
+  metacontent: two
+  derivative: two

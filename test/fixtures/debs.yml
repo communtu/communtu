@@ -87,15 +87,14 @@ one:
 
   generated: "1"
   url: 0.111-kubuntu-jaunty-free-all1
-  distribution_id: "4"
+  distribution: one
   security_type: "2"
   metapackage: one
-  id: "99"
   version: "0.111"
   outdated: 
   errmsg: 
-  derivative_id: "2"
-debs_100: 
+  derivative: one
+two: 
   created_at: 2009-05-04 12:16:50
   license_type: "1"
   updated_at: 2009-05-04 18:05:23
@@ -183,11 +182,10 @@ debs_100:
 
   generated: "1"
   url: 0.111-kubuntu-jaunty-all-native1
-  distribution_id: "4"
+  distribution: two
   security_type: "0"
-  metapackage: one
-  id: "100"
+  metapackage: two
   version: "0.111"
   outdated: 
   errmsg: 
-  derivative_id: "2"
+  derivative: two

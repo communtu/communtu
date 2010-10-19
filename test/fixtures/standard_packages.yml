@@ -1,13 +1,13 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  package_id: 1
-  distribution_id: 1
-  derivative_id: 1
-  architecture_id: 1
+  package: one
+  distribution: one
+  derivative: one
+  architecture: one
 
 two:
-  package_id: 1
-  distribution_id: 1
-  derivative_id: 1
-  architecture_id: 1
+  package: two
+  distribution: two
+  derivative: two
+  architecture: two

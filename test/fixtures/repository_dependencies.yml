@@ -1,9 +1,10 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  repository_id: 1
-  depends_on_id: 1
+  repository: one
+  depends_on_id: <%= Fixtures.identify(:one) %>
+
 
 two:
-  repository_id: 1
-  depends_on_id: 1
+  repository: two
+  depends_on_id: <%= Fixtures.identify(:two) %>

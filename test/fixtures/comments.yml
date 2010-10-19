@@ -1,8 +1,13 @@
 --- 
-comments_001: 
+one: 
   comment: Das ist klasse!
   created_at: 2009-03-15 10:10:19
   updated_at: 2009-03-15 10:10:19
-  metapackage_id: "55643"
-  id: "2"
-  user_id: "77"
+  metapackage_id: <%= Fixtures.identify(:one) %>
+  user: one
+two: 
+  comment: Oops
+  created_at: 2009-03-15 10:10:19
+  updated_at: 2009-03-15 10:10:19
+  metapackage_id: <%= Fixtures.identify(:two) %>
+  user: two

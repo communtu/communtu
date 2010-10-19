@@ -1,9 +1,9 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  package_distr_id: 1
-  architecture_id: 1
+  package_distr: one
+  architecture: one
 
 two:
-  package_distr_id: 1
-  architecture_id: 1
+  package_distr: two
+  architecture: two

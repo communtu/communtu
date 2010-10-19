@@ -19,7 +19,6 @@ one:
   is_program:
   p_vote:
   security_type: "2"
-  id: "110599"
   version: "0.2"
   icon_file:
   user_id: "7324"
@@ -30,4 +29,36 @@ one:
   debianizing: "1"
   popcon:
   description:
-  name_tid: "877"
+  name_tid: meta_one
+two: 
+  p_nofiles: 
+  modified: "0"
+  section: unknown
+  name: ZevenOS Beta 5
+  p_recent: 
+  deb_error: "0"
+  debianized_version: 0.111.1.1.1.1.1.1
+  created_at: 2008-09-21 17:47:37
+  p_old: 
+  url_tid: 
+  fullsection: 
+  urls: 
+  license_type: "1"
+  section_id: 
+  description_tid: "241"
+  updated_at: 2010-10-16 13:39:13
+  published: "0"
+  is_program: 
+  p_vote: 
+  security_type: 
+  version: 0.111.1.1.1.1.1.1
+  icon_file: 
+  user_id: "1"
+  category_id: "26"
+  type: Metapackage
+  default_install: "0"
+  ratings_count: 
+  debianizing: "0"
+  popcon: 
+  description: "orient an BeOS, setzt auf Schnelligkeit, Kompatibilit\xC3\xA4t mit alten Rechnern und einfache Bedienung. Folgende Pakete fehlen: gambas2-gb-xml-rpc gambas2-gb-xml-xslt "
+  name_tid: meta_two

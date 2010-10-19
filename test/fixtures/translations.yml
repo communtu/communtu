@@ -19,3 +19,15 @@ World:
   language_code: en
   translatable_id: 2
 
+meta_one: 
+  language_code: de
+  translatable_id: "877"
+  created_at: 2010-06-20 22:39:32
+  updated_at: 2010-06-20 22:39:32
+  contents: kubuntu 10.04 mc vlc +++
+meta_two: 
+  language_code: de
+  translatable_id: "240"
+  created_at: 2009-12-02 23:02:16
+  updated_at: 2009-12-02 23:02:16
+  contents: ZevenOS Beta 5

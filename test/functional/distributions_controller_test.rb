@@ -13,6 +13,7 @@ class DistributionsControllerTest < ActionController::TestCase
   end
 
   def test_should_create_distribution
+    login_as(:admin)
     assert_difference('Distribution.count') do
       post :create, :distribution => { }
     end
