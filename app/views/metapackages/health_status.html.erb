@@ -48,7 +48,7 @@
 <%else%>
   <ul>
   <%for b in @bundles_with_errors%>
-   <li> <%=link_to b.name, metapackage_path(b)%></li>
+   <li> <%=link_to b.name, "/debs/bundle/#{b.id}"%></li>
   <%end%>
   </ul>
 <%end%>
