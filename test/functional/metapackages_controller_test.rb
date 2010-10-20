@@ -13,31 +13,34 @@ class MetapackagesControllerTest < ActionController::TestCase
   end
 
   def test_should_create_metapackage
+    login_as(:admin)
     assert_difference('Metapackage.count') do
-      post :create, :metapackage => { }
+      post :create, :metapackage => {:name=>"Krischans Büro-Tools", 
+                      :category_id => Category.first.object_id, :version=>"0.1", :license_type => 0,
+                      :description=>"Meine unverzichtbaren Programme und Helferlein für den Büroalltag"}
     end
 
     assert_redirected_to metapackage_path(assigns(:metapackage))
   end
 
   def test_should_show_metapackage
-    get :show, :id => metapackages(:one).id
+    get :show, :id => base_packages(:one).id
     assert_response :success
   end
 
   def test_should_get_edit
-    get :edit, :id => metapackages(:one).id
+    get :edit, :id => base_packages(:one).id
     assert_response :success
   end
 
   def test_should_update_metapackage
-    put :update, :id => metapackages(:one).id, :metapackage => { }
+    put :update, :id => base_packages(:one).id, :metapackage => { }
     assert_redirected_to metapackage_path(assigns(:metapackage))
   end
 
   def test_should_destroy_metapackage
     assert_difference('Metapackage.count', -1) do
-      delete :destroy, :id => metapackages(:one).id
+      delete :destroy, :id => base_packages(:one).id
     end
 
     assert_redirected_to metapackages_path

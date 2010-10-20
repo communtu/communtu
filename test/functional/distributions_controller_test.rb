@@ -15,10 +15,10 @@ class DistributionsControllerTest < ActionController::TestCase
   def test_should_create_distribution
     login_as(:admin)
     assert_difference('Distribution.count') do
-      post :create, :distribution => { }
+      post :create, :distribution => {:name=>"testtest",:short_name=>"test"}
     end
 
-    assert_redirected_to distribution_path(assigns(:distribution))
+    assert_redirected_to distributions_path
   end
 
   def test_should_show_distribution
