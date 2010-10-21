@@ -39,7 +39,7 @@ end
 f.close
 
 File.open(ARGV[1],"w") do |f|
-  YAML::dump({"fr" => y}, f)
+  YAML::dump({"string_for_dest_lang" => y}, f)
   f.close
 end
 
