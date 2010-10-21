@@ -1,0 +1,29 @@
+#!/bin/bash
+############################
+# Author: Timo Denissen    #
+# E-Mail: timo@communtu.de #
+# Version: 1.3             #
+############################
+
+source_lang=$1
+dest_lang=$2
+
+# Defining which file shall be used to translate from.
+if [ $source_lang = 'de' ]; then
+    template=template.yml
+else
+    template=template-$dest_lang.yml
+fi
+
+# Defining which file shall be used to translate to.
+if [ $dest_lang = 'en' ]; then
+    po_file=template.po
+else
+    po_file=template-$dest_lang.po
+fi
+
+script/yaml2po $source_lang config/locales/$template config/locales/template-$dest_lang.pot
+poedit config/locales/$po_file
+script/po2yaml config/locales/template-$dest_lang.po config/locales/template-$dest_lang.yml
+script/yaml2po en config/locales/template-$dest_lang.yml config/locales/template-$dest_lang.pot
+echo 'Run "svn ci" for folder "config/locales"'
