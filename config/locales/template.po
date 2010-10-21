@@ -104,13 +104,13 @@ msgstr "Since we have many ideas for the platform's further development, we need
 msgid "Quellen und Schlüssel eintragen"
 msgstr "Add sources and keys"
 
-#: controller_accounts_4
-msgid "Bein Benutzerkontoutzerkonto wurde bereits aktiviert. Du kannst dich nun anmelden."
-msgstr "Your account has already been activated. You can now log in."
-
 #: view_roles_index_1
 msgid "Zugewiesene Rollen:"
 msgstr "Assigned roles:"
+
+#: controller_accounts_4
+msgid "Bein Benutzerkontoutzerkonto wurde bereits aktiviert. Du kannst dich nun anmelden."
+msgstr "Your account has already been activated. You can now log in."
 
 #: view_home_beteiligung_14
 msgid "Wir können dir auch helfen diese Programmiersprache zu lernen. Also melde dich einfach bei "
@@ -120,13 +120,13 @@ msgstr "We can also help you to learn this programming-language. You just have t
 msgid "Link einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer öffnen - wenn kein Prorgammdialog erscheint, wurde die Datei auf deinem Rechner heruntergeladen. Dort kannst du sie mit Doppelklick starten."
 msgstr "Just click on the link and open the file with the recommended package-installer - if no dialog-window pops up the file has been saved on your harddisk. You can open it with a double click."
 
-#: controller_accounts_5
-msgid "Passwort aktualisiert."
-msgstr "Password has been updated."
-
 #: view_roles_index_2
 msgid "Verfügbare Rollen:"
 msgstr "Available roles:"
+
+#: controller_accounts_5
+msgid "Passwort aktualisiert."
+msgstr "Password has been updated."
 
 #: view_home_beteiligung_15
 msgid "uns"
@@ -901,6 +901,10 @@ msgstr "The followong system-command failed:"
 #: path
 msgid "Pfad:"
 msgstr "Path:"
+
+#: failed_deb_generations
+msgid "Fehlgeschlagene oder laufende Deb-Generierungen"
+msgstr "Failed or running deb-generation"
 
 #: view_home_about_8
 msgid "Danach kannst du mit \"Speichern und feiner Auswählen\" noch einen detaillierteren Überblick über die installierten Bündel und Programme bekommen und die Auswahl auch noch verändern. Falls du dazu keine Lust oder Zeit hast, klicke einfach auf \"Speichern\". Dies führt dich zur Installations-Seite. Dort findest du einen Installationsknopf, mit dem die Ubuntu-Nachinstallation gestartet werden kann. Es dauert etwas, bis die Programme automatisch aus dem Internet geladen und installiert werden. Fertig ist der vielseitig einsetzbare Ubuntu-PC!"
@@ -1998,13 +2002,13 @@ msgstr "Debian section"
 msgid "Über Communtu sinnvoll nachinstallierbare Derivate:"
 msgstr "With Communtu installable derivatives:"
 
-#: prepare_livecd_contd
-msgid "bei jedem Pre-Release LiveCD/DVD neu vorbereiten (script/remaster-getisos)"
-msgstr "Prepare new Live-CD/DVD with every pre-release (script/remaster-getisos)"
-
 #: view_roles_show_0
 msgid "Rollenname:"
 msgstr "Rolename:"
+
+#: prepare_livecd_contd
+msgid "bei jedem Pre-Release LiveCD/DVD neu vorbereiten (script/remaster-getisos)"
+msgstr "Prepare new Live-CD/DVD with every pre-release (script/remaster-getisos)"
 
 #: add_comment
 msgid "Kommentar hinzufügen"
@@ -2464,17 +2468,21 @@ msgstr "I accept to publish the bundle information under the <a href=\"http://ww
 msgid "Für Communtu spenden"
 msgstr "Make a donation for Communtu"
 
-#: save
-msgid "Speichern"
-msgstr "Save"
-
 #: view_roles_new_0
 msgid "Neue Rolle"
 msgstr "New role"
 
+#: save
+msgid "Speichern"
+msgstr "Save"
+
 #: search_package
 msgid "Paket suchen"
 msgstr "Search packages"
+
+#: error_no_packages
+msgid "Du hast keine Pakete ausgewählt. Der Vorgang wurde abgebrochen."
+msgstr "You have not selected any packages. The progress has been canceled."
 
 #: view_metapackages__metalist_14
 msgid "installieren mittels Metapaket. Bitte vorher die Quellen hinzufügen."
@@ -2627,6 +2635,10 @@ msgstr "Please contact me at the following e-mail-address concerning the bugfixi
 #: view_categories_index_12
 msgid "Kategorienbaum anzeigen"
 msgstr "show category-tree"
+
+#: livecd_failed
+msgid "LiveCD-Erstellung fehlgeschlagen"
+msgstr "Live-CD creation failed"
 
 #: view_packages_show_2
 msgid "Paket sofort installieren"
@@ -2851,6 +2863,10 @@ msgstr "Your account has not been activated yet. The activation code has been se
 #: view_home_icons_17
 msgid "externer Link"
 msgstr "external link"
+
+#: paste_package_list
+msgid "alternativ Paketliste hierhin kopieren:"
+msgstr "Paste your package list here alternativly:"
 
 #: controller_sessions_7
 msgid "Dein Benutzerkonto wurde deaktiviert oder gelöscht."
@@ -3255,8 +3271,8 @@ msgid "Auszug aus dem Logfile"
 msgstr "Extract from the logfile"
 
 #: lib_system_0
-msgid "Du musst eingeloggt sein, um dieses Feature zu benutzen. Geht auch als \"Gast\"."
-msgstr "In order to use this feature you have to be logged in. Logging in via \"Guest session\" is also possible."
+msgid "Du musst eingeloggt sein, um dieses Feature zu benutzen. Geht auch als Gastbenutzer, hierfür muss rechts oben auf \"Gast\" geklickt werden."
+msgstr "You need to be logged in to use this feature. Using this feature is also possible as a guest, logging in as guest is possible with the \"Guest\"-link in the top right corner."
 
 #: view_packages__search_0
 msgid "Suche nach Paketen"
@@ -3297,10 +3313,6 @@ msgstr "<b>Ubuntu-releases</b> Overview about the available Ubuntu-releases (dis
 #: continue
 msgid "Weiter"
 msgstr "Continue"
-
-#: view_debs_index_0
-msgid "Fehlgeschlagene oder laufende Deb-Generierungen"
-msgstr "Failed or running deb-generation"
 
 #: view_home_home_11
 msgid "<b>Benutzer verwalten</b> Hier kannst du als Admin die Rollen der Benutzer ändern. Vorsicht walten lassen!"

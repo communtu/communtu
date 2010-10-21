@@ -79,11 +79,11 @@ msgstr ""
 #: view_user_profiles__installation_16
 msgid "Quellen und Schlüssel eintragen"
 msgstr ""
-#: controller_accounts_4
-msgid "Bein Benutzerkontoutzerkonto wurde bereits aktiviert. Du kannst dich nun anmelden."
-msgstr ""
 #: view_roles_index_1
 msgid "Zugewiesene Rollen:"
+msgstr ""
+#: controller_accounts_4
+msgid "Bein Benutzerkontoutzerkonto wurde bereits aktiviert. Du kannst dich nun anmelden."
 msgstr ""
 #: view_home_beteiligung_14
 msgid "Wir können dir auch helfen diese Programmiersprache zu lernen. Also melde dich einfach bei "
@@ -91,11 +91,11 @@ msgstr ""
 #: view_user_profiles__installation_17
 msgid "Link einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer öffnen - wenn kein Prorgammdialog erscheint, wurde die Datei auf deinem Rechner heruntergeladen. Dort kannst du sie mit Doppelklick starten."
 msgstr ""
-#: controller_accounts_5
-msgid "Passwort aktualisiert."
-msgstr ""
 #: view_roles_index_2
 msgid "Verfügbare Rollen:"
+msgstr ""
+#: controller_accounts_5
+msgid "Passwort aktualisiert."
 msgstr ""
 #: view_home_beteiligung_15
 msgid "uns"
@@ -672,6 +672,9 @@ msgid "System-Befehl schlug fehl: "
 msgstr ""
 #: path
 msgid "Pfad:"
+msgstr ""
+#: failed_deb_generations
+msgid "Fehlgeschlagene oder laufende Deb-Generierungen"
 msgstr ""
 #: view_home_about_8
 msgid "Danach kannst du mit \"Speichern und feiner Auswählen\" noch einen detaillierteren Überblick über die installierten Bündel und Programme bekommen und die Auswahl auch noch verändern. Falls du dazu keine Lust oder Zeit hast, klicke einfach auf \"Speichern\". Dies führt dich zur Installations-Seite. Dort findest du einen Installationsknopf, mit dem die Ubuntu-Nachinstallation gestartet werden kann. Es dauert etwas, bis die Programme automatisch aus dem Internet geladen und installiert werden. Fertig ist der vielseitig einsetzbare Ubuntu-PC!"
@@ -1459,11 +1462,11 @@ msgstr ""
 #: view_home_derivatives_9
 msgid "Über Communtu sinnvoll nachinstallierbare Derivate:"
 msgstr ""
-#: prepare_livecd_contd
-msgid "bei jedem Pre-Release LiveCD/DVD neu vorbereiten (script/remaster-getisos)"
-msgstr ""
 #: view_roles_show_0
 msgid "Rollenname:"
+msgstr ""
+#: prepare_livecd_contd
+msgid "bei jedem Pre-Release LiveCD/DVD neu vorbereiten (script/remaster-getisos)"
 msgstr ""
 #: add_comment
 msgid "Kommentar hinzufügen"
@@ -1804,14 +1807,17 @@ msgstr ""
 #: view_home_donate
 msgid "Für Communtu spenden"
 msgstr ""
-#: save
-msgid "Speichern"
-msgstr ""
 #: view_roles_new_0
 msgid "Neue Rolle"
 msgstr ""
+#: save
+msgid "Speichern"
+msgstr ""
 #: search_package
 msgid "Paket suchen"
+msgstr ""
+#: error_no_packages
+msgid "Du hast keine Pakete ausgewählt. Der Vorgang wurde abgebrochen."
 msgstr ""
 #: view_metapackages__metalist_14
 msgid "installieren mittels Metapaket. Bitte vorher die Quellen hinzufügen."
@@ -1926,6 +1932,9 @@ msgid "Bitte benachrichtigt mich unter folgender E-Mail über die Fehlerbehebung
 msgstr ""
 #: view_categories_index_12
 msgid "Kategorienbaum anzeigen"
+msgstr ""
+#: livecd_failed
+msgid "LiveCD-Erstellung fehlgeschlagen"
 msgstr ""
 #: view_packages_show_2
 msgid "Paket sofort installieren"
@@ -2094,6 +2103,9 @@ msgid "Dein Benutzerkonto wurde noch nicht aktiviert. Der Aktivierungscode wurde
 msgstr ""
 #: view_home_icons_17
 msgid "externer Link"
+msgstr ""
+#: paste_package_list
+msgid "alternativ Paketliste hierhin kopieren:"
 msgstr ""
 #: controller_sessions_7
 msgid "Dein Benutzerkonto wurde deaktiviert oder gelöscht."
@@ -2396,7 +2408,7 @@ msgstr ""
 msgid "Auszug aus dem Logfile"
 msgstr ""
 #: lib_system_0
-msgid "Du musst eingeloggt sein, um dieses Feature zu benutzen. Geht auch als \"Gast\"."
+msgid "Du musst eingeloggt sein, um dieses Feature zu benutzen. Geht auch als Gastbenutzer, hierfür muss rechts oben auf \"Gast\" geklickt werden."
 msgstr ""
 #: view_packages__search_0
 msgid "Suche nach Paketen"
@@ -2427,9 +2439,6 @@ msgid "<b>Ubuntu-Versionen</b> Übersicht über die im System verfügbaren Ubunt
 msgstr ""
 #: continue
 msgid "Weiter"
-msgstr ""
-#: view_debs_index_0
-msgid "Fehlgeschlagene oder laufende Deb-Generierungen"
 msgstr ""
 #: view_home_home_11
 msgid "<b>Benutzer verwalten</b> Hier kannst du als Admin die Rollen der Benutzer ändern. Vorsicht walten lassen!"
