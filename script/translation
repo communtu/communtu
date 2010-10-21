@@ -2,11 +2,17 @@
 ############################
 # Author: Timo Denissen    #
 # E-Mail: timo@communtu.de #
-# Version: 1.3             #
+# Version: 1.4             #
 ############################
 
 source_lang=$1
 dest_lang=$2
+locales_folder=config/locales
+
+# Check for number of arguments
+if [ $# -lt 2 ]; then
+    echo "Usage: translation source_language destination_language"
+fi
 
 # Defining which file shall be used to translate from.
 if [ $source_lang = 'de' ]; then
@@ -22,8 +28,9 @@ else
     po_file=template-$dest_lang.po
 fi
 
-script/yaml2po $source_lang config/locales/$template config/locales/template-$dest_lang.pot
-poedit config/locales/$po_file
-script/po2yaml config/locales/template-$dest_lang.po config/locales/template-$dest_lang.yml
-script/yaml2po en config/locales/template-$dest_lang.yml config/locales/template-$dest_lang.pot
-echo 'Run "svn ci" for folder "config/locales"'
+script/yaml2po $source_lang $locales_folder/$template $locales_folder/template-$dest_lang.pot
+poedit $locales_folder/$po_file
+script/po2yaml $locales_folder/template-$dest_lang.po $locales_folder/template-$dest_lang.yml
+script/yaml2po en $locales_folder/template-$dest_lang.yml $locales_folder/template-$dest_lang.pot
+sed -i "s|string_for_dest_lang|$dest_lang|" $locales_folder/template-$dest_lang.yml
+echo "Run 'svn ci' for folder $locales_folder"
