@@ -14,7 +14,7 @@ po_file=$locales_folder/template-$dest_lang.po
 
 # Checking number of arguments
 if [ $# -lt 2 ]; then
-    echo "Usage: "
+    echo "Two language codes are needed: the first one is the language from which shall be translated, the second is the new language."
     exit 1
 fi
 
