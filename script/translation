@@ -12,6 +12,7 @@ locales_folder=config/locales
 # Check for number of arguments
 if [ $# -lt 2 ]; then
     echo "Usage: translation source_language destination_language"
+    exit 1
 fi
 
 # Defining which file shall be used to translate from.
