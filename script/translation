@@ -5,33 +5,37 @@
 # Version: 1.4             #
 ############################
 
+locales_folder=config/locales
 source_lang=$1
 dest_lang=$2
-locales_folder=config/locales
+dest_yml_file=$locales_folder/template-$dest_lang.yml
+dest_pot_file=$locales_folder/template-$dest_lang.pot
 
 # Check for number of arguments
 if [ $# -lt 2 ]; then
-    echo "Usage: translation source_language destination_language"
+    echo "Two language codes are needed: the first one is the language from which shall be translated, the second is language that shall be translated to."
     exit 1
 fi
 
 # Defining which file shall be used to translate from.
 if [ $source_lang = 'de' ]; then
-    template=template.yml
+    source_yml_file=$locales_folder/template.yml
 else
-    template=template-$dest_lang.yml
+    source_yml_file=$locales_folder/template-$dest_lang.yml
 fi
 
 # Defining which file shall be used to translate to.
 if [ $dest_lang = 'en' ]; then
-    po_file=template.po
+    pot_file=$locales_folder/template.pot
+    po_file=$locales_folder/template.po
 else
-    po_file=template-$dest_lang.po
+    pot_file=$locales_folder/template-$dest_lang.pot
+    po_file=$locales_folder/template-$dest_lang.po
 fi
 
-script/yaml2po $source_lang $locales_folder/$template $locales_folder/template-$dest_lang.pot
-poedit $locales_folder/$po_file
-script/po2yaml $locales_folder/template-$dest_lang.po $locales_folder/template-$dest_lang.yml
-script/yaml2po en $locales_folder/template-$dest_lang.yml $locales_folder/template-$dest_lang.pot
-sed -i "s|string_for_dest_lang|$dest_lang|" $locales_folder/template-$dest_lang.yml
+script/yaml2po $source_lang $source_yml_file $pot_file
+poedit $po_file
+script/po2yaml $po_file $dest_yml_file
+script/yaml2po $dest_lang $dest_yml_file $dest_pot_file
+sed -i "s|string_for_dest_lang|$dest_lang|" $dest_yml_file
 echo "Run 'svn ci' for folder $locales_folder"

@@ -21,7 +21,7 @@ fi
 if [ $source_lang = 'de' ]; then
     yml_file=$locales_folder/template.yml
 else
-    yml_file=$locales_folder/template-$dest_lang.yml
+    yml_file=$locales_folder/template-$source_lang.yml
 fi
 
 # Adding new language
