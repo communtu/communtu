@@ -147,6 +147,14 @@ de:
   controller_users_8: Benutzer deaktiviert
   controller_users_9: Es gab ein Problem mit der Deaktivierung dieses Benutzers.
   create: Anlegen
+  create_livecd_bundlepage: Möchte man hingegen nur ein bestimmtes Bündel, z. B. ein eigenes, nicht veröffentlichtes Bündel, erstellen, so muss das Bündel über <b>Bündel -&gt; Meine Bündel</b> oder <b>Veröffentlichte Bündel</b> gesucht werden. Mit einem Klick auf das CD-Symbol rechts unter Installieren wird man zum Dialogfeld für die Live-CD. Mit einem Klick auf <b>Live-CD/DVD erstellen</b> wird die Live-CD aus dem Bündel erstellt.
+  create_livecd_downloadpage: Hierfür wählt man die unter <b>Download</b> die Kategorien und die Bündel aus welche man installieren möchte. Mit einem Klick auf „Live-CD/DVD“ in der Menüführung kommt man zum Dialogfeld für die Live-CD. Hier muss noch ein Name eingetragen werden und die Live-CD/DVD mit <b>Live-CD/DVD erstellen</b> erstellt werden.
+  create_livecd_email: <i>* Hierfür ist eine existierende E-Mail-Adresse nötig!</i>
+  create_livecd_intro: 'Man kann mit Communtu auf zwei Arten eine Live-CD erstellen: über die Downloadseite und über ein Bündel direkt.'
+  create_livecd_note: Der Vorgang dauert einige Zeit und man wird per E-Mail benachrichtigt* sobald das ISO erstellt ist.
+  create_livecd_subtitle1: Erstellen über die Downloadseite
+  create_livecd_subtitle2: Erstellen über ein Bündel
+  create_livecd_title: Wie erstelle ich eine Live-CD?
   create_iso_image: <a href="http://ww.ubuntuusers.de/wiki/CD-Images">ISO-Image</a> erstellen (für CD/DVD)
   create_kvm_image: <a href="http://ww.ubuntuusers.de/wiki/KVM">KVM-Image</a> erstellen (für virtuelle Maschine)
   create_usb_image: <a href="http://ww.ubuntuusers.de/wiki/Live-USB">USB-Stick-Image</a> erstellen
