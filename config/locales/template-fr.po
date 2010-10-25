@@ -6,12 +6,12 @@ msgstr ""
 "Last-Translator: brigitte <brigitteagodi@yahoo.fr>\n"
 "Language-Team: Communtu <info@communtu.de>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: view_home_home_new_messages_desc
 msgid "Du hast neue Nachrichten in deinem Posteingang."
-msgstr "Tu as un nouveau message dans ta boite de reception"
+msgstr "Tu as de nouveaux messages dans ta boite de reception"
 
 #: view_layouts_application_24
 msgid "DOWNLOAD"
@@ -35,7 +35,7 @@ msgstr "Peuvent migrer seulement si la distribution est fraîche"
 
 #: view_home_beteiligung_10
 msgid "Grafik"
-msgstr "Graphiques"
+msgstr "Graphique"
 
 #: zentrum_solidarische_oekonomie
 msgid "Zentrum für Solidarische Ökonomie"
@@ -43,7 +43,7 @@ msgstr "Centre pour l'Economie Solidaire"
 
 #: view_user_profiles__installation_13
 msgid "(Bei einem Versionswechsel muss der erste Schritt erneut ausgeführt werden, da die Communtu Quellen durch das Upgrade deaktiviert wurden.):"
-msgstr "(Si tu changes de version, la première étape devra être effectuée a nouveau, parce que les sources Communtu ont été desactivées par la mise à niveau.):"
+msgstr "(Si tu changes de version, la première étape devrait être effectuée à nouveau, parce que les sources Communtu ont été desactivées par la mise à niveau.):"
 
 #: view_layouts_application_26
 msgid "Navigation Bündel"
@@ -51,11 +51,11 @@ msgstr "Navigation compilation"
 
 #: controller_accounts_1
 msgid "Dein Benutzerkonto wurde aktiviert! Du kannst dich nun einloggen."
-msgstr "Ton compte a été activé! Tu peux te connecter maintenant."
+msgstr "Ton compte a été activé! Tu peux maintenant te connecter ."
 
 #: view_home_beteiligung_11
 msgid "Wir benötigen eine Person, die für das Projekt das Layout übernimmt. Dies bedeutet Grafiken einbinden und die Hauptverantwortung für das CSS übernehmen."
-msgstr "Nous avons besoin d'une personne qui sera responsable de la mise en page du projet. Cela signifie incorporer des images et la responsabilité principale pour le CSS."
+msgstr "Nous avons besoin d'une personne qui sera responsable de la mise en page du projet. Cela signifie incorporer des images et s'occuper du CSS."
 
 #: view_layouts_application_27
 msgid "Navigation Download"
@@ -67,7 +67,7 @@ msgstr "E-Mail"
 
 #: controller_accounts_2
 msgid "Aktivierungs-Code nicht gefunden. Bitte versuche, ein neues Benutzerkonto anzulegen."
-msgstr "Code d'activation n'a pas été trouvé. S'il te plaît essaye de créer un nouveau compte."
+msgstr "Le Code d'activation n'a pas été trouvé. S'il te plaît essaye de créer un nouveau compte."
 
 #: view_home_beteiligung_12
 msgid "Programmierung"
@@ -91,19 +91,19 @@ msgstr "Rôles pour"
 
 #: view_home_beteiligung_13
 msgid "Da wir viele Ideen für die Weiterentwicklung der Plattform haben, benötigen wir noch eine/n ProgrammiererIn. Idealerweise hast du schon Erfahrungen in Ruby on Rails sammeln können."
-msgstr "Etant donné que nous avons de nombreuses idées pour le développement de la plate-forme, nous avons encore besoin d'un/une programmeur.  Tu as déjà une expérience avec Ruby on Rails."
+msgstr "Etant donné que nous avons de nombreuses idées pour le développement de la plate-forme, nous avons encore besoin d'un/une programmeur.  Ce serait parfait si tu as déjà une expérience avec Ruby on Rails."
 
 #: view_user_profiles__installation_16
 msgid "Quellen und Schlüssel eintragen"
 msgstr "Inserer les sources et les clés"
 
-#: controller_accounts_4
-msgid "Bein Benutzerkontoutzerkonto wurde bereits aktiviert. Du kannst dich nun anmelden."
-msgstr "Ton compte est déjà activé. Tu peux t'inscrire dès maintenant."
-
 #: view_roles_index_1
 msgid "Zugewiesene Rollen:"
 msgstr "rôles assignés:"
+
+#: controller_accounts_4
+msgid "Bein Benutzerkontoutzerkonto wurde bereits aktiviert. Du kannst dich nun anmelden."
+msgstr "Ton compte est déjà activé. Tu peux t'inscrire dès maintenant."
 
 #: view_home_beteiligung_14
 msgid "Wir können dir auch helfen diese Programmiersprache zu lernen. Also melde dich einfach bei "
@@ -113,13 +113,13 @@ msgstr "Nous pouvons également t'aider à apprendre cette langue. Donc, tout si
 msgid "Link einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer öffnen - wenn kein Prorgammdialog erscheint, wurde die Datei auf deinem Rechner heruntergeladen. Dort kannst du sie mit Doppelklick starten."
 msgstr "Cliquer sur le lien, puis comme proposé, ouvrir avec le package d'installation - si le programme ne fait apparaitre aucune fenêtre de dialogue, c'est que le fichier a été téléchargé sur ton ordinateur. Là, tu peux le Démarrer en double-cliquant dessus."
 
-#: controller_accounts_5
-msgid "Passwort aktualisiert."
-msgstr "Mot de passe mise à jour."
-
 #: view_roles_index_2
 msgid "Verfügbare Rollen:"
 msgstr "rôles disponibles:"
+
+#: controller_accounts_5
+msgid "Passwort aktualisiert."
+msgstr "Mot de passe mise à jour."
 
 #: view_home_beteiligung_15
 msgid "uns"
@@ -155,7 +155,7 @@ msgstr "Utilisateurs"
 
 #: english_description
 msgid "Englische Beschreibung:"
-msgstr "description en anglais:"
+msgstr "Description en anglais:"
 
 #: view_layouts_application_32
 msgid "Admin"
@@ -163,7 +163,7 @@ msgstr "Admin"
 
 #: view_metapackages__package_list_0
 msgid "Gesamtgröße des Bündels auf der Festplatte:"
-msgstr "Taille totale de la compilation sur le disque dur:"
+msgstr "La grosseur totale de la compilation sur le disque dur:"
 
 #: view_metapackages__package_list_1
 msgid "verfügbar für:"
@@ -175,7 +175,7 @@ msgstr "Directement et indirectement les paquets inclus"
 
 #: controller_accounts_8
 msgid "Dein altes Passwort war inkorrekt."
-msgstr "Votre ancien mot de passe est incorrect."
+msgstr "Ton ancien mot de passe était incorrect."
 
 #: view_categories_edit_3
 msgid "Link für weitere Informationen"
@@ -203,7 +203,7 @@ msgstr "Compilation s'ouvrira dans une nouvelle fenêtre."
 
 #: repositories_incompletely_read
 msgid "Repositories ohne Pakete (da nicht richtig eingelesen)"
-msgstr "Dépôts sans paquets (transfert pas  correcte)"
+msgstr "Dépôts sans paquets (transfert pas correct)"
 
 #: name_of_livecd
 msgid "Name der LiveCD/DVD:"
@@ -251,7 +251,7 @@ msgstr "Dépôt"
 
 #: view_user_profiles__installation_27
 msgid "Die Browser Konqueror und Opera bitte erst für "
-msgstr "Les navigateurs Konqueror et Opera configurer d'abord pour apturl"
+msgstr "Il faut d'abord configurer les navigateurs Konqueror et Opera pour apturl"
 
 #: controller_users_12
 msgid "Benutzer aktiviert"
@@ -263,7 +263,7 @@ msgstr "http://wiki.ubuntuusers.de/apturl"
 
 #: no_packet_information_found
 msgid "Es konnten keine Angabe zu Paketinformationen getroffen werden."
-msgstr "Il n'y avait aucune indication pour la trousse d'information."
+msgstr "Il n'y avait aucune indication pour la trousse d'informations."
 
 #: name_with_colon
 msgid "Name: "
@@ -271,7 +271,7 @@ msgstr "Nom:"
 
 #: controller_distributions_0
 msgid "Ubuntu Distributionen"
-msgstr "distributions Ubuntu"
+msgstr "Distributions Ubuntu"
 
 #: kurzname
 msgid "Kurzname"
@@ -279,11 +279,11 @@ msgstr "Nom court"
 
 #: no_cookies
 msgid "Du hast deine Cookies deaktiviert. Zum Nutzen von Communtu sind diese erforderlich. Wir empfehlen dir, die Cookies wieder anzuschalten."
-msgstr "Tu as désactivé tes cookies. Pour utiliser Communtu elles sont nécessaires. Nous vous recommandons d'allumer les cookies."
+msgstr "Tu as désactivé tes cookies. Pour utiliser Communtu elles sont nécessaires. Nous te recommandons d'allumer les cookies."
 
 #: controller_users_13
 msgid "Es gab ein Problem mit der Aktivierung dieses Benutzers."
-msgstr "Il y a eu un problème avec l'activation de cet utilisateur."
+msgstr "Il y a eu un problème lors de l'activation de cet utilisateur."
 
 #: view_user_profiles__installation_29
 msgid " konfigurieren."
@@ -299,7 +299,7 @@ msgstr "Distribution générée."
 
 #: gpg_key
 msgid "GPG Schlüssel (optional): "
-msgstr "clé GPG (facultatif):"
+msgstr "Clé GPG (facultatif):"
 
 #: controller_passwords_1
 msgid "Ein Link zum Andern des Passworts wurde an deine Email-Adresse geschickt."
@@ -323,7 +323,7 @@ msgstr " Note: Ne pas renommer les fichiers deb, s'il te plaît."
 
 #: controller_passwords_2
 msgid "Konnte keinen Benutzer mit dieser Email-Adresse finden."
-msgstr "Aucun utilisateur avec cette adresse email n'a été trouvée."
+msgstr "Aucun utilisateur avec cette adresse email n'a été trouvé."
 
 #: view_home_contact_us_1
 msgid "Hier hast du die Möglichkeit uns Anregungen und Kritik zu Communtu zu senden."
@@ -347,7 +347,7 @@ msgstr "Ubuntu Linux"
 
 #: view_rating_rating_rate
 msgid "von 5 Sternen vergeben"
-msgstr "attribution de 5 étoiles"
+msgstr " de 5 étoiles données"
 
 #: view_metapackages_show_version_v
 msgid "(Version {{v}})"
@@ -375,7 +375,7 @@ msgstr "Télécharger"
 
 #: wait_for_sync
 msgid "auf Synchronisation der Repositories warten"
-msgstr "en attente pour la synchronisation de dépôts"
+msgstr "en attente de la synchronisation des dépôts"
 
 #: view_user_profiles__installation_33
 msgid "Folgende"
@@ -411,7 +411,7 @@ msgstr "Les mots de passe ne correspondent pas."
 
 #: view_home_home_6
 msgid "<b>Installation</b> bietet dir eine Zusammenstellung (Bündelung) von Programmen für die Installation auf deinem Computer an, entsprechend deinen Angaben, für welche Aufgaben du deinen Ubuntu-PC benutzen willst."
-msgstr "<b> Installation </ b> vous offre une collection (collimation) des programmes à installer sur ton ordinateur, selon tes spécifications,et pour quelles les tâches souhaites tu utiliser ton pc Ubuntu "
+msgstr "<b> Installation </ b> vous offre une collection (collimation) des programmes à installer sur ton ordinateur, selon tes spécifications,et pour quelles les tâches souhaites tu utiliser ton PC Ubuntu "
 
 #: name_without_colon
 msgid "Name"
@@ -427,7 +427,7 @@ msgstr "Mise à jour de l'architecture avec succès."
 
 #: view_home_home_7
 msgid "<b>Bündel verwalten</b> Hast du gute Erfahrungen mit Programmen gemacht? Dann kannst du sie hier thematisch bündeln, oder auch bestehende Bündel angucken. "
-msgstr "<b>Gérer les compilations</ b> As-tu une bonne expérience avec les programmes? Peux tu les compiler thématiquement ici , ou même regarder les compilations existant."
+msgstr "<b>Gérer les compilations</ b> As-tu une bonne expérience avec les programmes? Peux tu les compiler thématiquement ici , ou même regarder les compilations existantes."
 
 #: view_metapackages_show_3
 msgid "Zurück"
@@ -460,6 +460,10 @@ msgstr "non"
 #: creation_in_progress
 msgid "wird gerade erstellt"
 msgstr "est en cours de création"
+
+#: oxygen_icon_legal_notice
+msgid "Einige der Icons sind aus dem Oxygen-Iconset http://www.oxygen-icons.org"
+msgstr "Certaines des icônes proviennent du groupe d'icône d'oxygène http://www.oxygen-icons.org"
 
 #: view_home_impressum_11
 msgid "Mitwirkende an der AG Communtu (Alphabetische Reihenfolge):"
@@ -495,7 +499,7 @@ msgstr "Assigner des rôles"
 
 #: view_repositories_edit_0
 msgid "Repository bearbeiten"
-msgstr "Modifier dépôt "
+msgstr "Modifier le dépôt "
 
 #: view_repositories_edit_1
 msgid "Distribution:"
@@ -673,6 +677,10 @@ msgstr "Utilisé avec Communtu dans les compilations suivantes:"
 msgid ", dein Benutzerkonto wurde aktiviert.  Folge nun dem Link:"
 msgstr ", Votre compte a été activé. Maintenant, suis le lien:"
 
+#: bundles_without_debs
+msgid "veröffentlichte Bündel ohne deb-Pakete"
+msgstr "Compilations publiées sans les paquets deb"
+
 #: controller_metapackages_please_regenerate
 msgid "Das Bündel wurde zurückgesetzt. Bitte die Version hochzählen und Metapaket neu erzeugen."
 msgstr "La compilation à  été remise à zéro. S'il te plaît incrémente la version en et recrée le méta-paquet."
@@ -765,6 +773,10 @@ msgstr "Prendre les compilations des prédécesseurs"
 msgid " - Ubuntu Multimedie-Edition. Sie wird bei Communtu mitinstalliert, wenn du bei Audio, Film und/oder Grafik/Design \"erweitert\" anwählst."
 msgstr "- Ubuntu Edition Multi Media. elle sera installée avec Communtu, si tu selectionnes en audio, les films et / ou le graphisme \"agrandi \" ."
 
+#: our_blog
+msgid "Unser Blog"
+msgstr "Notre blog"
+
 #: model_mailer_4
 msgid "Dein Passwort wurde zurückgesetzt."
 msgstr "Ton mot de passe a été réinitialisé."
@@ -784,6 +796,10 @@ msgstr "Proposition d'un dépôt"
 #: view_home_about_1
 msgid "Wozu Communtu?"
 msgstr "Qu'est-ce Communtu?"
+
+#: distribution_derivative_mismatch
+msgid "{{derivative}} ist nur unter {{distributions}} verfügbar"
+msgstr "{{ Dérivés}} est uniquement disponible sous{{distributions}} "
 
 #: view_metapackages__package_list_conflicts
 msgid "Konflikte mit folgenden Paketen/Bündeln:"
@@ -880,6 +896,10 @@ msgstr "Système de commande a échoué:"
 #: path
 msgid "Pfad:"
 msgstr "Path:"
+
+#: failed_deb_generations
+msgid "Fehlgeschlagene oder laufende Deb-Generierungen"
+msgstr "Échec ou succès dans la creation du Deb"
 
 #: view_home_about_8
 msgid "Danach kannst du mit \"Speichern und feiner Auswählen\" noch einen detaillierteren Überblick über die installierten Bündel und Programme bekommen und die Auswahl auch noch verändern. Falls du dazu keine Lust oder Zeit hast, klicke einfach auf \"Speichern\". Dies führt dich zur Installations-Seite. Dort findest du einen Installationsknopf, mit dem die Ubuntu-Nachinstallation gestartet werden kann. Es dauert etwas, bis die Programme automatisch aus dem Internet geladen und installiert werden. Fertig ist der vielseitig einsetzbare Ubuntu-PC!"
@@ -993,6 +1013,10 @@ msgstr "http://de.wikipedia.org/wiki/LinuxMCE"
 msgid "Aktiviert?"
 msgstr "Aktivé"
 
+#: view_sent__user_not_exists_0
+msgid "User nicht gefunden"
+msgstr "Utilisateur n existe pas"
+
 #: view_derivatives_edit_0
 msgid "Derivative bearbeiten"
 msgstr "Modifier les dérivés "
@@ -1008,10 +1032,6 @@ msgstr "ainsi ubuntu sera"
 #: generate_all_debs_for_bundle
 msgid "Alle debs für das Bündel erzeugen"
 msgstr "Créer tous les debs pour la compilation"
-
-#: view_sent__user_not_exists_0
-msgid "User nicht gefunden"
-msgstr "Utilisateur n existe pas"
 
 #: weblinks
 msgid "Weblinks"
@@ -1207,7 +1227,7 @@ msgstr " objet "
 
 #: view_home_new_repository_0
 msgid "Repository vorschlagen"
-msgstr "Dépôt proposer"
+msgstr " proposer un Dépôt"
 
 #: view_home_derivatives_37
 msgid "http://de.wikipedia.org/wiki/LinEx"
@@ -1215,7 +1235,7 @@ msgstr "http://de.wikipedia.org/wiki/LinEx"
 
 #: view_home_new_repository_1
 msgid "Du vermisst hier eine Quelle? Dann kannst du ein Repository vorschlagen."
-msgstr "Il te manque une source ici ? Alors, tu as possibilité de proposer un dépôt."
+msgstr "Tu ne trouves pas une source ici ? Alors, tu as possibilité de proposer un dépôt."
 
 #: helper_distributions_21
 msgid "non-free und aus Third Party Paketquellen"
@@ -1329,10 +1349,6 @@ msgstr "fondée sur la compilation:"
 msgid "KPackageKit erreichst du über \"K-Menu -> Programme-> System -> Systemverwaltung -> Software-Verwaltung\". Hier wählst du rechts aus dem Ausklapp-Menü \"packages.communtu.org\" aus. Aus der Liste suchst du nun das Metapaket aus, welches du installiert hast und markierst es mit einem Klick auf das X rechts neben dem Eintrag. Um das Metapaket nun zu entfernen ist nur noch ein Klick auf \"Übernehmen\" notwendig. Es wird jetzt noch eine Übersicht der zu entfernenden Programme angezeigt und nach einem Klick auf \"Ok\" werden diese von deinem Computer gelöscht."
 msgstr "KpackageKit est dans \"Menu K -> Programmes-> Système -> Administration - \"> Logiciel de gestion\". Ici tu sélectionnes à droite du menu déroulant \"packages.communtu.org \". Dans la liste recherche pour le moment de le méta-paquet, que tu as  installé et le mettre en surbrillance en cliquant sur le X à côté de l'entrée. Pour supprimer le méta-paquet  un simple clic sur \"Appliquer \" est suffisant. Il va maintenant avoir un aperçu des programmes à supprimer, et après avoir cliqué sur \"OK \" ces programmes seront supprimés de votre ordinateur."
 
-#: view_home_news_15
-msgid "Unser Blog"
-msgstr "Notre blog"
-
 #: view_home_derivatives_42
 msgid " - spezialisiert auf Webdienste."
 msgstr "- Spécialisée dans les services Web."
@@ -1378,8 +1394,8 @@ msgid " - minimalistische schnelle Ubuntu-Version für ältere PCs."
 msgstr "- version rapide de Ubuntu pour les PC plus anciens."
 
 #: view_home_faq_04
-msgid "Um ein Bündel zu installieren gibt es zwei Möglichkeiten.<p> Die erste Möglichkeit ist, dass du auf <b>Download</b> klickst. Dort bekommst du dann ein kleines Formular in welchem du die Aufgaben auswählst, die du mit deinem Computer durchführen möchtest. Als Nächstes musst du deine Ubuntu-Version einstellen (diese wird in den meisten Fällen richtig erkannt und du musst sie nur noch aus dem Menü auswählen) und welche Oberfläche du benutzen möchtest (Gnome = Ubuntu, KDE = Kubuntu, XFCE = Xubuntu). Die letzten zwei Schritte betreffen die Lizenz und die Sicherheit der Programme, also welche Quellen du zulassen möchtest und ob deine Programme offen sind oder nicht. Du kannst nun entweder über \"Speichern\" direkt zum Abschluss des Prozesses kommen oder mit einem Klick auf \"Speichern und feiner auswählen\" noch eine genauere Auswahl treffen. Abschließend müssen die Quellen zu deinem System hinzugefügt werden und, sobald dies abgeschlossen ist, musst du nur noch auf \"Installieren\" klicken und auf dein System werden die von dir ausgewählten Programmen installiert.<p> Die zweite Möglichkeit ist, dass du auf <b>Bündel</b> und dann \"Alle veröffentlichen Bündel\" klickst. Dort bekommst du dann eine Übersicht über alle in Communtu erstellten Bündel. Hier müssen, sofern noch nicht geschehen, die Quellen hinzugefügt werden (ein Klick auf \"Quellen hinzufügen\") und dann mit einem Klick auf \"installieren mittels Metapaket\" das entsprechende Bündel installiert werden."
-msgstr "Pour installer une compilation, il ya deux possibilités. <p> La première possibilité est que tu cliques sur <b> Télécharger </ b> . Là, tu auras un petit formulaire dans lequel tu sélectionneras les tâches que tu souhaites exécuter sur ton  ordinateur. Ensuite, tu dois ajuster ta version Ubuntu (ce qui est correctement identifiée dans la plupart des cas et il te suffit juste de la sélectionner dans le menu) et sélectioner la surface que tu veux utiliser (Gnome = Ubuntu, KDE = Kubuntu, Xubuntu XFCE =).  Les deux dernières étapes concernent la licence et la sécurité des programmes, de sorte que tu puisses décider quelles sources doivent être autorisées et si tes programmes sont ouverts ou non. Tu peux maintenant cliquer soit sur  \"Sauvegarder \" pour clôturer le processus ou  cliquer sur \"Sauvegarder et sélection fine\" pour une sélection plus détaillée.Enfin, les sources doivent être ajoutées à ton système, et une fois que c'est terminé, il te suffit de cliquer sur  \"Installation \" et  tes  programmes choisis seront installés. <p> La deuxième possibilité est que tu cliques sur <b>compilation<b> ensuite sur \"Toutes les compilations publiées \" .  Là, tu auras un aperçu de toutes les compilations créees sur Communtu. Ici, si ce n'est déjà fait, ajouter les sources (cliquer sur \"Ajouter sources\"), puis cliquer sur \"installation via méta-paquet\" les compilations correspondants sont installés."
+msgid "Um ein Bündel zu installieren gibt es zwei Möglichkeiten.<p> Die erste Möglichkeit ist, dass du auf <b>Download</b> klickst. Rechts siehst du dann eine kleine Box mit der Überschrift „Einstellungen“, dort kannst du auf „ändern“ klicken um z. B. deine Oberfläche (Kubuntu (KDE), Xubuntu (XFCE) oder Lubuntu (LXDE)) anzupassen oder welche Quellen und Lizenzen zugelassen werden sollen. Nach einem Klick auf Speichern musst du wieder auf <b>Download</b> klicken, um zu der Auswahlmaske zurückzukehren.<p> Hier kannst du nun eine Grobauswahl der Tätigkeiten auswählen, welche du mit deinem Computer machen möchtest. Nachdem eine Tätigkeit (z. B. Grafik) ausgewählt wird, erscheinen in der rechten Spalte alle veröffentlichten Bündel der Kategorie. Wenn ein Bündel als „Standardmäßig installiert“ markiert ist, wird es automatisch ausgewählt. Jede Änderung an der Auswahl wird sofort gespeichert. Nun kannst du die Auswahl über den Menüpunkt „Installieren“ direkt auf deinem bestehenden System installieren, zuerst müssen jedoch die Quellen hinzugefügt werden.<p> Die zweite Möglichkeit ist, dass du direkt ein einzelnes Bündel installierst. Dazu klickst du auf <b>Bündel</b> und dann <b>Alle veröffentlichen Bündel</b>. Dort bekommst du eine Übersicht über alle in Communtu erstellten Bündel. Hier müssen, sofern noch nicht geschehen, die Quellen hinzugefügt werden (ein Klick auf \"Quellen hinzufügen\") und dann mit einem Klick auf \"installieren mittels Metapaket\" das entsprechende Bündel installiert werden."
+msgstr "Il existe deux possibilités d'installer une compilation. <p> La première possibilité est que tu cliques sur <b> Télécharger </ b>. À droite, tu verras alors une petite boîte avec la rubrique \"Paramètres\", là tu peux cliquersur le bouton «modifier» pour adapter ta surface (Kubuntu (KDE), Xubuntu (XFCE) ou Lubuntu (LXDE)), ou alors spéccifier quelles sources et les licences doivent être autorisées. Après avoir cliqué sur Enregistrer, tu devrais à nouveau cliquer sur <b> Télécharger </ b>pour retourner à la fenêtre de sélection. <p> Ici, tu peux maintenant faire une sélection approximative des activités que tu aimerais faire avec ton ordinateur.  Après avoir sélectionnéune activité (graphiques, par exemple) toutes les compilations de la catégorie publiées s'affichent dans la colonne de droite. Si une compilation est marquée comme \"installé par défaut\", elle est automatiquement sélectionnée. Toute modification de la sélection est enregistrée immédiatement.  Maintenant tu peux installer ta sélection à travers \"Installer\" directement sur ton système existant, Premièrement, les sources doivent êtres ajoutées. <p> La deuxième possibilité est d'installer directement une seule compilation. Pour cela tu vas cliquer sur <b>compilation  </ b>, puis sur  <b>compilations publiées</ b>. Là, tu auras un aperçu sur toutes les compilations crées sur Communtu. Ici on doit, si cela n'a pas encore été fait, ajouter les sources (Cliques sur \"ajouter sources \"), puis avec un clic sur \" installé à l'aide du méta-paquet \" les compilations correspondantes seront installées."
 
 #: view_user_profiles__profile_data_1
 msgid "Auf dieser Seite kannst du die Grundeinstellungen deines Computers angeben. "
@@ -1449,10 +1465,6 @@ msgstr "Ce nom de compilation est déjà pris!"
 msgid "Du gehst auf den Menüpunkt \"Bündel\" und lässt dir unter \"Veröffentlichte Bündel\" die Bündel anzeigen. Dort kannst du bis zu fünf Sterne anklicken. Danach erscheint ein Kommentarfeld, in dem du diese Bewertung qualifizieren kannst."
 msgstr "Tu vas dans le menu \" compilation\" et sous \"compilation publiée \" tu peux voir toutes les compilations. Là, tu peux cliquer sur un maximum cinq étoiles. Ensuite, il apparaitra une case de commentaire où l'on peut qualifier cette évaluation."
 
-#: view_users__sidebar_0
-msgid "Installation"
-msgstr "Installation"
-
 #: view_home_derivatives_49
 msgid " - Ubuntu mit Enlightenment als Desktopumgebung."
 msgstr "- Ubuntu avec Enlightenment comme environnement de bureau."
@@ -1492,10 +1504,6 @@ msgstr "Compilation sauvegardée. ca va prendre quelques minutes jusqu'à ce qu'
 #: new_article
 msgid "Neuen Artikel anlegen"
 msgstr "Créer un nouvel article"
-
-#: view_users__sidebar_1
-msgid "Bündel verwalten"
-msgstr "Gérer la compilation"
 
 #: view_user_profiles_help_1
 msgid "Öffne ein Terminal unter \"Anwendungen\" -> \"Zubehör\" -> \"Terminal"
@@ -1541,10 +1549,6 @@ msgstr "Tu vas dans le menu \"Ma compilation\" sous \"compilation \" et  là tu 
 msgid "Die Liste der auf deinem Computer installierten Pakete kannst du zum Beispiel mit"
 msgstr "La liste des paquets installés sur ton ordinateur, tu peux par exemple avec"
 
-#: controller_metapackages_6
-msgid "Dieser Bündel-Name ist bereits vergeben<br>"
-msgstr "Le nom de cette compilation est déjà pris<br>"
-
 #: view_user_profiles_help_3
 msgid "Wenn deine Version von Communtu nicht unterstützt wird, gibt es zwei Möglichkeiten:"
 msgstr "Si ta version de Communtu n'est pas soutenu, il ya deux possibilités:"
@@ -1559,7 +1563,7 @@ msgstr "-Participer"
 
 #: view_home_derivatives_51
 msgid " - Installation von Programmen und Versionen, die nicht über die offiziellen Repositories erhältlich sind."
-msgstr "- Installation de programmes et de versions qui ne sont pas disponibles dans les dépôts officiels."
+msgstr "- Installation des programmes et des versions qui ne sont pas disponibles dans les dépôts officiels."
 
 #: view_roles_edit_0
 msgid "Rolle bearbeiten"
@@ -1637,13 +1641,17 @@ msgstr "La description ne doit pas être vide <br>"
 msgid "Kategorien verwalten"
 msgstr "Gérer les catégories"
 
+#: view_sent__user_exists_0
+msgid "User gefunden"
+msgstr "Utilisateur trouvé"
+
 #: view_home_faq_14
 msgid "Gehe dazu bitte auf den Menüpunkt \"Programme suchen\". Hier hast du ein Suchfeld, in dem du den Namen des gesuchten Prgramms angeben kannst. Weiter ist es möglich die Suche nur über Programme durchzuführen, in dem das Feld \"Nur Programme\" angeklickt wird und somit sonstige Bibliotheken nicht mehr angezeigt werden. Weiter ist es auch möglich eine Debian-Section auszuwählen, der die Auswahl an Programmen anhand von Kategorien vorselektiert."
 msgstr "Aller à l'option menu \"Rechercher programmes\". Voici un champ de recherche où vous pouvez spécifier le nom des Prgramm  recherchés. Il est également possible de rechercher les programmes en cliquant sur \"Seuls les programmes\", ainsi d'autres bibliothèques ne seront plus affichées. En outre, il est également possible de sélectionner une Debian-section pour  la sélection des programmes basés sur des catégories  pré-sélectionnés."
 
-#: view_sent__user_exists_0
-msgid "User gefunden"
-msgstr "Utilisateur trouvé"
+#: number_of_packages_in_bundles
+msgid "Zahl der Pakete in allen Bündeln"
+msgstr "Nombre de paquets dans toutes les compilations "
 
 #: announce
 msgid "announce"
@@ -1669,10 +1677,6 @@ msgstr "Comment puis-je installer un seul programme?"
 msgid "LiveCD/DVD neu erstellen"
 msgstr "LiveCD / DVD recréer"
 
-#: view_users__sidebar_8
-msgid "Fehlgeschlagene debs"
-msgstr "debs Échec"
-
 #: view_rating_show_title_got_ratings
 msgid "von 5 Sternen"
 msgstr "de 5 étoiles"
@@ -1693,7 +1697,11 @@ msgid ""
 msgstr ""
 "Bonjour, \n"
 "\n"
-"une proposition d'un nouveau dépôt a été faite  sur www.communtu.de :"
+"une proposition d'un nouveau dépôt a été faite sur www.communtu.de :"
+
+#: free_disk_space
+msgid "Freier Plattenplatz (root / home / isos)"
+msgstr "Espace disque libre (root / home / isos)"
 
 #: settings
 msgid "Einstellungen"
@@ -1725,7 +1733,7 @@ msgstr "De:"
 
 #: view_home_faq_18
 msgid "Das ist ganz einfach. Dazu klickst du im Bündeleditor (erreichbar wenn du auf <b>Bündel</b> klickst) auf \"Repository vorschlagen\". Hier musst du nun den Link zu dem Programm angeben und uns kurz erläutern, wieso wir das Programm in Communtu aufnehmen sollen."
-msgstr "C'est très simple. Pour ce faire, cliquez dans l'éditeur de compilation (disponible lorsque tu  cliques sur <b> compilation/ b>)  \"proposer le dépôt\". Ici, tu dois maintenant spécifier le lien vers le programme et brièvement nous expliquer pourquoi nous devrions prendre dans le programme Communtu."
+msgstr "C'est très simple. Pour ce faire, tu cliques dans l'éditeur de compilation (accessible en cliquant sur <b> compilation</ b>) sur  \"Proposer un dépôt\". Ici, tu dois maintenant spécifier le lien vers le programme et brièvement nous expliquer pourquoi nous devrions le mettre dans  Communtu."
 
 #: view_home_beteiligung_1
 msgid "Anwenden der Plattform"
@@ -1931,6 +1939,10 @@ msgstr "A votre attention! disponible sur Communtu il n'y a pas longtemps"
 msgid "deaktivieren"
 msgstr "désactiver"
 
+#: iso_deleted
+msgid "Die ISO-Datei wurde leider aus Platzgründen gelöscht."
+msgstr "Le fichier ISO a malheureusement été supprimé pour des raisons d'espace."
+
 #: view_home_derivatives_6
 msgid "Software-Auswahl"
 msgstr "Sélection du Logiciel "
@@ -1985,13 +1997,13 @@ msgstr "Debian-section:"
 msgid "Über Communtu sinnvoll nachinstallierbare Derivate:"
 msgstr "Sur Communtu, une aprés-installation des dérivés est nécéssaire:"
 
-#: prepare_livecd_contd
-msgid "bei jedem Pre-Release LiveCD/DVD neu vorbereiten (script/remaster-getisos)"
-msgstr " pour chaque pré-version LiveCD / DVD  préparer nouvellement (script / remaster-getisos)"
-
 #: view_roles_show_0
 msgid "Rollenname:"
 msgstr "Rôle Nom:"
+
+#: prepare_livecd_contd
+msgid "bei jedem Pre-Release LiveCD/DVD neu vorbereiten (script/remaster-getisos)"
+msgstr " pour chaque pré-version LiveCD / DVD  préparer nouvellement (script / remaster-getisos)"
 
 #: add_comment
 msgid "Kommentar hinzufügen"
@@ -2029,6 +2041,10 @@ msgstr "S'il te plaît sélectionne"
 msgid "Expertenlevel:"
 msgstr "Niveau Expert:"
 
+#: view_sent_index_0
+msgid "verschickte Nachrichten"
+msgstr "les messages envoyés"
+
 #: to_chat
 msgid "zum Chat"
 msgstr "sur le chat"
@@ -2036,10 +2052,6 @@ msgstr "sur le chat"
 #: start_vm_instructions
 msgid "So kannst du dich in die virtuelle Maschine einloggen (bitte etwas warten, bis die deb-Files kopiert wurden):"
 msgstr "Ainsi, tu peux te connecter à la machine virtuelle (s'il te plait attendre un peu jusqu'à ce que les fichiers ont été copiés deb):"
-
-#: view_sent_index_0
-msgid "verschickte Nachrichten"
-msgstr "les messages envoyés"
 
 #: an
 msgid "An"
@@ -2056,6 +2068,10 @@ msgstr "Publier la compilation"
 #: nothing_found_questionmark
 msgid "Nichts gefunden?"
 msgstr "Rien trouvé?"
+
+#: migrate_bundles_derivative
+msgid "Bündel von anderem Derivat übernehmen"
+msgstr "Prendre les compilations d'autres dérivés "
 
 #: controller_users_1
 msgid "Danke für die Registrierung bei Communtu! Du kannst dich jetzt anmelden."
@@ -2077,13 +2093,13 @@ msgstr "Il y eu un problème avec l'inscription."
 msgid "(Mehr Informationen zum Thema Schlüssel und Quellen in den Faqs)"
 msgstr "(Plus d'information sur le sujet clé et les sources principales dans la rubrique FAQ)"
 
-#: start_vm_with_livecd_basis
-msgid "Virtuelle Maschine auf Basis der LiveCD-Einstellungen starten (Zur Fehlersuche)"
-msgstr "machine virtuelle en fonction des paramètres LiveCD le départ (pour le dépannage)"
-
 #: view_sent_index_3
 msgid "Zeitpunkt"
 msgstr "Temps"
+
+#: start_vm_with_livecd_basis
+msgid "Virtuelle Maschine auf Basis der LiveCD-Einstellungen starten (Zur Fehlersuche)"
+msgstr "machine virtuelle en fonction des paramètres LiveCD le départ (pour le dépannage)"
 
 #: controller_users_3
 msgid "Du wurdest als Nutzer {{anonymous_user}} mit Kennwort {{anonymous_user}} eingeloggt. Bitte ggf. oben rechts auf Nutzer {{anonymous_user}} klicken und in ein dauerhaftes Nutzerkonto umwandeln; ansonsten wird das Konto nach einem Tag wieder gelöscht."
@@ -2191,7 +2207,7 @@ msgstr "Communtu, Ubuntu, installation, assistance à l'installation"
 
 #: view_metapackages_show_16
 msgid "Paketliste editieren"
-msgstr "Modification de la liste des paquets"
+msgstr "Editer la liste des paquets"
 
 #: view_layouts_application_1
 msgid "Communtu passt dein Linux-Ubuntu-System an deine individuellen Bedürfnisse an."
@@ -2208,6 +2224,10 @@ msgstr "Publier"
 #: view_layouts_application_2
 msgid "Communtu"
 msgstr "Communtu"
+
+#: kvm_processes
+msgid "KVM-Prozesse"
+msgstr "KVM processus"
 
 #: view_admins_sync_package_2
 msgid "Repository synchronisiert"
@@ -2293,6 +2313,10 @@ msgstr "Avec quelle adresse e-mail  as tu créé le compte d'utilisateur?"
 msgid "Alle Bündel wurden von "
 msgstr "Toutes les compilations ont été"
 
+#: view_sent_new_3
+msgid "Nachricht:"
+msgstr "Message:"
+
 #: view_passwords_new_2
 msgid "Passwort zurücksetzen"
 msgstr " ré-initialiser le mot de passe"
@@ -2300,10 +2324,6 @@ msgstr " ré-initialiser le mot de passe"
 #: view_metapackages_finish_migrate_1
 msgid " nach "
 msgstr "vers"
-
-#: view_sent_new_3
-msgid "Nachricht:"
-msgstr "Message:"
 
 #: view_my_mailer_mail_0
 msgid ""
@@ -2347,6 +2367,10 @@ msgstr "Les paquets suivants n'ont pas pu être migrés:"
 msgid "Icon"
 msgstr "Icône"
 
+#: view_sessions_new_0
+msgid "Anmelden mit Benutzernamen und Passwort:"
+msgstr "Pour te connecter donnes l'identifiant et le mot de passe "
+
 #: controller_repositories_0
 msgid "Repositorys"
 msgstr "Dépôs"
@@ -2354,10 +2378,6 @@ msgstr "Dépôs"
 #: view_packages_edit_3
 msgid "&nbsp;&nbsp;Neues Icon: "
 msgstr " &nbsp;&nbsp;Nouvelle icône:"
-
-#: view_sessions_new_0
-msgid "Anmelden mit Benutzernamen und Passwort:"
-msgstr "Pour te connecter donnes l'identifiant et le mot de passe "
 
 #: controller_repositories_1
 msgid "Repository erzeugt."
@@ -2383,9 +2403,21 @@ msgstr "Domaine de l'administrateur "
 msgid "Virtuelle Maschine stoppen"
 msgstr "arrêt de la machine virtuelle"
 
+#: bundles_needing_deb_generation
+msgid "Bündel, die neu als Metapaket erzeugt werden müssen"
+msgstr "Les compilations qui doivent être reconstruite comme un méta-paquet"
+
 #: controller_repositories_2
 msgid "Repository aktualisiert."
 msgstr "Dépôt mis à jour."
+
+#: view_user_mailer_forgot_password_0
+msgid ", um ein neues Passwort zu erhalten, folge dem Link:"
+msgstr "Pour obtenir un nouveau mot de passe, suivez le lien:"
+
+#: view_sessions_new_3
+msgid "Benutzer auf diesem Computer dauerhaft anmelden"
+msgstr "Enregistrer l utilisateur sur cet ordinateur pour une longue durée"
 
 #: controller_repositories_3
 msgid "sources.list eingelesen."
@@ -2398,14 +2430,6 @@ msgstr "Here should be an introduction to the admin area"
 #: packages_for_ubuntu
 msgid "Pakete für Ubuntu"
 msgstr "Les paquets pour Ubuntu"
-
-#: view_sessions_new_3
-msgid "Benutzer auf diesem Computer dauerhaft anmelden"
-msgstr "Enregistrer l utilisateur sur cet ordinateur pour une longue durée"
-
-#: view_user_mailer_forgot_password_0
-msgid ", um ein neues Passwort zu erhalten, folge dem Link:"
-msgstr "Pour obtenir un nouveau mot de passe, suivez le lien:"
 
 #: view_packages_edit_8
 msgid "Neuer Link auf ein Video"
@@ -2421,7 +2445,7 @@ msgstr "Description des vidéos:"
 
 #: view_metapackages__metalist_10
 msgid "Bewertung"
-msgstr "evaluation"
+msgstr "évaluation"
 
 #: view_cart_new_from_list_tip
 msgid "Tipp: eine große Liste kannst du auch zunächst mit einem Editor thematisch sortieren und die resultierenden Teillisten einzeln hier hochladen. Die entstehenden Bündel kannst du wiederum zu einem Bündel zusammenfassen. Dadurch entsteht ein besser strukturiertes Bündel."
@@ -2439,17 +2463,21 @@ msgstr "J'accepte de publier les informatios de compilation sous  la<a href=\"ht
 msgid "Für Communtu spenden"
 msgstr "Faire un don pour Communtu"
 
-#: save
-msgid "Speichern"
-msgstr "Sauvegarder"
-
 #: view_roles_new_0
 msgid "Neue Rolle"
 msgstr "Nouveau rôle"
 
+#: save
+msgid "Speichern"
+msgstr "Sauvegarder"
+
 #: search_package
 msgid "Paket suchen"
 msgstr "Rechercher des paquets"
+
+#: error_no_packages
+msgid "Du hast keine Pakete ausgewählt. Der Vorgang wurde abgebrochen."
+msgstr "Tu n'as sélectionné aucun paquet. L'opération a été interrompue."
 
 #: view_metapackages__metalist_14
 msgid "installieren mittels Metapaket. Bitte vorher die Quellen hinzufügen."
@@ -2602,6 +2630,10 @@ msgstr "S'il te plait informe-moi à l'adresse e-mail suivante par rapport au de
 #: view_categories_index_12
 msgid "Kategorienbaum anzeigen"
 msgstr "Afficher la catégorie arbre"
+
+#: livecd_failed
+msgid "LiveCD-Erstellung fehlgeschlagen"
+msgstr "Création du LiveCD a échoué"
 
 #: view_packages_show_2
 msgid "Paket sofort installieren"
@@ -2827,6 +2859,10 @@ msgstr "Votre compte n'a pas été activé. Le code d'activation vous est envoy�
 msgid "externer Link"
 msgstr "lien externe"
 
+#: paste_package_list
+msgid "alternativ Paketliste hierhin kopieren:"
+msgstr "alternativement copier la liste des paquets ici:"
+
 #: controller_sessions_7
 msgid "Dein Benutzerkonto wurde deaktiviert oder gelöscht."
 msgstr "Votre compte a été désactivé ou supprimé."
@@ -2927,6 +2963,10 @@ msgstr "Selectioner une compilation"
 msgid "Deb aktualisiert."
 msgstr "Deb mise à jour."
 
+#: zombie_processes
+msgid "Zobmie-Prozesse"
+msgstr "Zobmie processus"
+
 #: view_layouts_donate
 msgid "Spenden"
 msgstr "Faire un don"
@@ -2989,7 +3029,7 @@ msgstr "Les données de base"
 
 #: view_admins_sync_all_2
 msgid "Repositories synchronisiert"
-msgstr "Référentiels synchronisés"
+msgstr " Dépôts synchronisés"
 
 #: choose_parent
 msgid "Wähle einen Parent aus!"
@@ -3083,6 +3123,10 @@ msgstr "AG Communtu"
 msgid "Architekturen"
 msgstr "Architectures"
 
+#: metapackages_cannot_destroy
+msgid "Das Bündel kann nicht gelöscht werden, da es noch in einem anderen verwendet wird."
+msgstr "La compilation ne peut pas être supprimée car elle est utilisée dans une autre."
+
 #: view_rating_show_title_ratings_count
 msgid "(Basierend auf {{votes}} Bewertung(en))"
 msgstr "(qui est Basé sur {{votes}}  Evaluation(s))"
@@ -3121,7 +3165,7 @@ msgstr "Bauernstr. 2"
 
 #: view_user_profiles__profile_rating_1
 msgid "Rechts findest du die Details zur links ausgewählten Kategorie."
-msgstr "A la droite tu trouveras les détails sur le lien de la catégorie sélectionnée à gauche"
+msgstr "A la droite tu trouveras les détails sur la catégorie sélectionnée à gauche"
 
 #: model_package_2
 msgid "Unbekannt"
@@ -3150,6 +3194,10 @@ msgstr "Numero classé (le plus petit nombre en premier)"
 #: videos
 msgid "Videos:"
 msgstr "Vidéos:"
+
+#: server_status
+msgid "Status des Servers"
+msgstr "Statut du serveur"
 
 #: senden
 msgid "Abschicken"
@@ -3216,8 +3264,8 @@ msgid "Auszug aus dem Logfile"
 msgstr "Extrait du fichier journal"
 
 #: lib_system_0
-msgid "Du musst eingeloggt sein, um dieses Feature zu benutzen. Geht auch als \"Gast\"."
-msgstr "Tu dois te connecter pour pouvoir utiliser cette fonctionnalité. Cela est aussi valable pour \"Visiteur\"."
+msgid "Du musst eingeloggt sein, um dieses Feature zu benutzen. Geht auch als Gastbenutzer, hierfür muss rechts oben auf \"Gast\" geklickt werden."
+msgstr "Tu dois te connecter pour pouvoir utiliser cette fonctionnalité. Cela est aussi valable pour Visiteur, pour cela tu dois cliquer en haut, à ta droite sur \"Visiteur\"."
 
 #: view_packages__search_0
 msgid "Suche nach Paketen"
@@ -3258,10 +3306,6 @@ msgstr "<b> Ubuntu-versions </ b> vue d'ensemble des versions Ubuntu disponiblen
 #: continue
 msgid "Weiter"
 msgstr "continuer"
-
-#: view_debs_index_0
-msgid "Fehlgeschlagene oder laufende Deb-Generierungen"
-msgstr "Échec ou succès dans la creation du Deb"
 
 #: view_home_home_11
 msgid "<b>Benutzer verwalten</b> Hier kannst du als Admin die Rollen der Benutzer ändern. Vorsicht walten lassen!"
@@ -3368,8 +3412,8 @@ msgid "Es muss eine Datei mit der Paketliste (ein Paketname pro Zeile) angegeben
 msgstr "un fichier  avec la liste du paquet doit être spécifie( un seul nom de paquet par ligne)"
 
 #: view_derivatives_index_0
-msgid "Derivate auflisten"
-msgstr "Liste des produits dérivés"
+msgid "Übersicht der Ubuntu-Derivate"
+msgstr "Vue d'ensemble des dérivés d'Ubuntu"
 
 #: livecd_created_by
 msgid "Live-CD/DVD erstellt von: "
@@ -3461,7 +3505,11 @@ msgstr "Communtu te permet de:"
 
 #: view_home_donate_why
 msgid "Der Betrieb der Communtu-Webseite basiert vor allem auf dem Einsatz von Freiwilligen; er kostet aber auch Geld (u.a. für Server und Räume). Communtu ist daher auf Spenden angewiesen. Auch kleine Beträge helfen."
-msgstr "Le fonctionnement du site Communtu est basée essentiellement sur l'utilisation de bénévoles, mais il coûte de l'argent (par exemple pour les serveurs et les chambres). Communtu est donc tributaire de dons. Même de petits montants peuvent aider."
+msgstr "L'opération Communtu est basé surtout sur l'investissement de bénévoles; mais cette derniére coûte de l'argent (par exemple pour les serveurs et les chambres). Communtu est donc tributaire de dons. Même de petits montants peuvent aider."
+
+#: view_sent_show_2
+msgid "Zeitpunkt:"
+msgstr "Date:"
 
 #: view_layouts_application_13
 msgid "Über Communtu"
@@ -3469,19 +3517,15 @@ msgstr "A propos de Communtu"
 
 #: livecd_message
 msgid "Über eine Live-CD kann die Software sowohl ausprobiert als auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} erstellt, in Form einer iso-Datei, die du dann brennen kannst. Zum Brennen benötigst du eine CD, falls du viel Software ausgewählt hast, eine DVD.<br /><br /> Die Erstellung des Images dauert eine gewisse Zeit. Du wirst per Email benachrichtigt, sobald das Image fertig ist. Bitte achte darauf, dass in deinen Benutzereinstellungen eine gültige Email-Adresse angegeben ist."
-msgstr "Via un live CD, le logiciel peut etre à la fois essaye et installé. Ceci etant, un soi-disant {{cdimage_link}} est créé, sous la forme d'un fichier ISO que tu peux graver. Pour graver un CD dont tu  as besoin, si tu as sélectionné un grand nombre de logiciels, d'un DVD. <br /> <br /> La création de l'image prend un certain temps. Tu seras averti par email lorsque l'image est prête. S'il te  plait vérifie que tes  paramètres d'utilisateur spécifié dans une adresse email valide."
+msgstr "Via un live CD, le logiciel peut etre à la fois essayé et installé. Ceci etant, un soi-disant {{cdimage_link}} est créé, sous la forme d'un fichier ISO que tu peux graver. Pour graver un CD dont tu  as besoin, dans le cas ou tu as sélectionné un grand nombre de logiciels, d'un DVD. <br /> <br /> La création de l'image prend un certain temps. Tu seras averti par email lorsque l'image est prête. S'il te plait vérifie dans tes paramètres d'utilisateur q'une adresse Email valide a été donnée."
 
 #: make_a_systemupgrade
 msgid "Du möchtest ein System-Upgrade machen. Dann schau <a href=\"http://communtu.wordpress.com/2009/09/16/mit-communtu-ein-systemupgrade-durchfuhren/\">wie einfach das geht</a> und lade deine Paketliste bei Communtu hoch."
 msgstr "Tu veux faire une mise à niveau du système. Alors regarde <http://encommuntu.wordpress.com/2009/09/16/how-to-use-communtu-for-a-systems-upgrade/> comment c'est facile </ a> et télécharge ta liste de paquets sur Communtu.            "
 
-#: view_sent_show_2
-msgid "Zeitpunkt:"
-msgstr "Date:"
-
 #: controller_metapackages_not_changed
 msgid "Das Bündel wurde schon als Metapaket erzeugt und hochgeladen."
-msgstr "La compilation a été créé comme un méta-paquet et transféré."
+msgstr "La compilation a déja été transforméé en méta-paquet et téléchargée."
 
 #: donation_purpose
 msgid "Verwendungszweck: Communtu"
@@ -3489,7 +3533,7 @@ msgstr "Objectif: Communtu"
 
 #: view_layouts_application_14
 msgid "Feedback an Communtu"
-msgstr "Méssage à Communtu"
+msgstr "Feed-back à Communtu"
 
 #: view_home_home_28
 msgid "Download:"
@@ -3501,19 +3545,19 @@ msgstr "Culture générale e.V."
 
 #: view_layouts_application_15
 msgid "angemeldet als  "
-msgstr "enregistrés comme"
+msgstr "connecté en tant que "
 
 #: view_home_home_29
 msgid "Zu welchem Thema suchst du Programme (Büro, Grafik,...)? Hier kannst du deine Interessengebiete eingeben und passende vorkonfigurierte Programmbündel downloaden."
-msgstr "Sur quel sujet recherches tu des programmes  (bureau, graphiques ,...)? Ici tu peux entrer tes domaines d'intérêt et  télécharger les  programmes-compilés pré-configurés."
+msgstr "Sur quel sujet recherches-tu des programmes (bureau, graphiques ,...)? Ici tu peux entrer tes domaines d'intérêt et  télécharger les  programmes-compilés déja configurés."
 
 #: view_repositories_index_0
 msgid "Repositories"
-msgstr "Referentiels:"
+msgstr "Dépôts:"
 
 #: view_layouts_application_16
 msgid "neue Nachricht"
-msgstr "nouveau message"
+msgstr "nouveau méssage"
 
 #: view_home_home_30
 msgid "Bündel:"
@@ -3521,15 +3565,19 @@ msgstr "Compilation:"
 
 #: view_home_home_31
 msgid "Hier kannst du Themen detaillierter auswählen und dazu Programme und Programmbündel laden, aber auch eigene Bündel erstellen und verwalten."
-msgstr "Ici, tu peux choisir des thèmes détaillés et charger des programmes et des compilations programmes, mais aussi créer sa propre compilation et l administrer ."
+msgstr "Ici, tu as la possilité non seulement de choisir des thèmes détaillés et en plus charger des programmes et des compilations de programmes, mais aussi créer ta propre compilation et l administrer ."
 
 #: package_list
 msgid "zurück zur Paketliste"
 msgstr "retour à la liste des paquets"
 
+#: save_or_delete_bundle
+msgid "Bitte erst die im Bündel-Editor getroffene Bündel-Auswahl speichern oder löschen"
+msgstr ""
+
 #: view_layouts_application_18
 msgid "keine neuen Nachrichten"
-msgstr "*aucun nouveau message "
+msgstr "Aucuns nouveaux méssages "
 
 #: view_home_home_32
 msgid "Communtu:"
@@ -3541,7 +3589,7 @@ msgstr "Impossible de supprimer le paquet de la compilation."
 
 #: controller_metapackages_debianizing
 msgid "Das Bündel wird gerade als Metapaket erzeugt und hochgeladen. Dies dauert ein paar Minuten."
-msgstr "La compilation est transformé  en méta-paquet et transféré. Cela prendra quelques minutes."
+msgstr "La compilation sera transformée en méta-paquet et ensuite transférée. Cela prendra quelques minutes."
 
 #: no_save_database
 msgid "Die folgenden Pakete konnten nicht in der Datenbank gespeichert werden:"
@@ -3553,7 +3601,7 @@ msgstr "https://www.paypal.com/de_DE/DE/i/btn/btn_donate_LG.gif"
 
 #: view_home_home_33
 msgid "Möchtest du mehr über Communtu wissen? Hast du Anregungen, Fragen - wir freuen uns auf den Kontakt mit dir."
-msgstr "Aimerais tu en savoir plus sur vous Communtu? As tu des suggestions, des questions - nous sommes impatients de t entendre."
+msgstr "Aimerais-tu en savoir plus sur Communtu? As-tu des suggestions, des questions - nous sommes impatients de t'entendre."
 
 #: view_repositories_index_5
 msgid "Neues Repository"
@@ -3561,15 +3609,15 @@ msgstr "Nouveau dépôt"
 
 #: view_distributions_show_0
 msgid "Repositories:"
-msgstr "Référentiels:"
+msgstr "Depôts:"
 
 #: view_layouts_application_20
 msgid "Javascript ist nicht aktiviert! Bitte aktiviere Javascript in deinen Browsereinstellungen."
-msgstr "Javascript n'est pas activé! S'il vous plaît activer JavaScript dans votre navigateur."
+msgstr "Javascript n'est pas activé! S'il te plaît active JavaScript dans ton navigateur."
 
 #: view_metapackages_migrate_0
 msgid "Von welcher Distribution sollen die Bündel migriert werden ?"
-msgstr "Quelle distribution pour les compilationd a remplacer?"
+msgstr "Par quelle distribution les compilations doivent-elles être remplacées?"
 
 #: view_distributions_show_1
 msgid "alles prüfen"
@@ -3577,15 +3625,15 @@ msgstr "tout verifier"
 
 #: migrate
 msgid "Migrieren"
-msgstr "migration"
+msgstr "migrer"
 
 #: view_layouts_application_21
 msgid "Communtu macht Ubuntu-Installationen einfach"
-msgstr "Communtu facilite les  installations de Ubuntu"
+msgstr "Communtu facilite les installations d'Ubuntu"
 
 #: view_metapackages_migrate_1
 msgid "Zu welcher Distribution sollen die Bündel migriert werden ?"
-msgstr "Par quelle distribution les compilations vont être remplacées?"
+msgstr "Par quelle distribution les compilations doivent être remplacées?"
 
 #: controller_metapackages_15
 msgid "<option value='2'>Veröffentlichen<option/>"
@@ -3595,9 +3643,13 @@ msgstr "<option value='2'>Publier<option/>"
 msgid "alles synchronisieren"
 msgstr "tout synchroniser "
 
+#: english_name_reserve
+msgid "Der englische Name ist bereits vergeben. Bitte wähle einen anderen."
+msgstr "Le nom anglais est déjà pris.S'il te plaît choisis un autre."
+
 #: view_layouts_application_22
 msgid "zum Benutzerprofil"
-msgstr "Le profil d'utilisateur"
+msgstr "au profil d'utilisateur"
 
 #: view_distributions_show_3
 msgid "sources.list einlesen"
@@ -3614,4 +3666,15 @@ msgstr "COMPILATIONS"
 #: install
 msgid "Installieren"
 msgstr "Installer"
+
+#~ msgid "Installation"
+#~ msgstr "Installation"
+#~ msgid "Bündel verwalten"
+#~ msgstr "Gérer la compilation"
+#~ msgid "Dieser Bündel-Name ist bereits vergeben<br>"
+#~ msgstr "Le nom de cette compilation est déjà pris<br>"
+#~ msgid "Fehlgeschlagene debs"
+#~ msgstr "debs Échec"
+#~ msgid "Derivate auflisten"
+#~ msgstr "Liste des produits dérivés"
 
