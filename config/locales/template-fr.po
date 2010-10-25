@@ -2457,7 +2457,7 @@ msgstr "Profil de l'utilisateur"
 
 #: view_metapackages_edit_gpl
 msgid "Ich stimme zu, die Bündel Information unter der <a href=\"http://www.gnu.de/documents/gpl.de.html\">GNU General public license</a> (Version 2.0 oder höher) zu veröffentlichen."
-msgstr "J'accepte de publier les informatios de compilation sous  la <a href=\"http://www.gnu.fr/documents/gpl.fr.html\">licence GNU General public </a> (version 2.0 ou supérieure) pour publication"
+msgstr "J'accepte de publier les informatios de compilation sous  la <a href=\"http://www.gnu.fr/documents/gpl.fr.html\"> Licence GNU General public </a> (version 2.0 ou supérieure) pour publication."
 
 #: view_home_donate
 msgid "Für Communtu spenden"
