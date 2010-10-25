@@ -2905,7 +2905,7 @@ msgstr "Utilisateur-icône "
 
 #: headline
 msgid "macht Ubuntu-Installationen einfach"
-msgstr "rend l'installation de Ubuntu facile"
+msgstr "facilite l'installation d'Ubuntu "
 
 #: first_sync_repos
 msgid "Bitte erst die Repositories synchronisieren. Dies geschieht normalerweise automatisch innerhalb von einer Woche. Achtung: an dieser Stelle wird nur geprüft, ob überhaupt etwas synchronisiert wurde, nicht, ob der Prozess fertig ist."
@@ -3449,7 +3449,7 @@ msgstr "à toi, ou"
 
 #: view_home_home_23
 msgid "nutze Communtu als Gast"
-msgstr "utilise Communtu en tant qu'invité"
+msgstr "utilise Communtu en tant que visiteur"
 
 #: controller_categories_0
 msgid "Kategorien"
