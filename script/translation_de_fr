@@ -6,6 +6,6 @@
 ############################
 script/yaml2po de config/locales/template.yml config/locales/template-fr.pot
 poedit config/locales/template-fr.po
-script/po2yaml config/locales/template-fr.po config/locales/template-fr.yml
+script/po2yaml fr config/locales/template-fr.po config/locales/template-fr.yml
 script/yaml2po en config/locales/template-fr.yml config/locales/template-fr.pot
 echo 'Run "svn ci" for folder "config/locales"'

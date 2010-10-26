@@ -5,10 +5,10 @@ def end_of_trans(line)
   line.nil? || line=="\n" || line[0,2]=="#:"
 end
 
-if ARGV.size < 2 then
-  puts "usage: po2yaml2 source-file target-file"
+if ARGV.size < 3 then
+  puts "usage: po2yaml2 destination-language-code source-file target-file"
 else
-f = File.open(ARGV[0])
+f = File.open(ARGV[1])
 y = {}
 line1 = nil
 while not f.eof? do
@@ -38,8 +38,8 @@ while not f.eof? do
 end
 f.close
 
-File.open(ARGV[1],"w") do |f|
-  YAML::dump({"string_for_dest_lang" => y}, f)
+File.open(ARGV[2],"w") do |f|
+  YAML::dump({ARGV[0] => y}, f)
   f.close
 end
 

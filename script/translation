@@ -35,7 +35,7 @@ fi
 
 script/yaml2po $source_lang $source_yml_file $pot_file
 poedit $po_file
-script/po2yaml $po_file $dest_yml_file
+script/po2yaml $dest_lang $po_file $dest_yml_file
 script/yaml2po $dest_lang $dest_yml_file $dest_pot_file
-sed -i "s|string_for_dest_lang|$dest_lang|" $dest_yml_file
+#sed -i "s|string_for_dest_lang|$dest_lang|" $dest_yml_file
 echo "Run 'svn ci' for folder $locales_folder"
