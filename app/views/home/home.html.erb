@@ -2,8 +2,6 @@
    #  use, modification or distribution only with permission of the copyright holder
 %>
 
-
-
 <%= render_flash %>
 <noscript>
 <div align="center" style="width:100%; height:48px; top:0px; background: #FF0000;"><p style="color:#FFFFFF; font-size:12px;"><%=t(:view_layouts_application_20)%></p></div>
@@ -78,7 +76,7 @@
 				<% css = cycle("packageList0", "packageList1") %>
 				<tr>
         	<td class="<%= css %>" valign="middle">
-						<%= link_to metapackage.name, metapackage_path(metapackage.id) %>
+						<%= link_to metapackage.name, metapackage_path(metapackage) %>
 					</td>
 					<td class="<%= css %>" valign="middle">
 						<div class='star-ratings-block'>
