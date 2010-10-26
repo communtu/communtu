@@ -15,14 +15,14 @@ one:
   section_id:
   description_tid: "878"
   updated_at: 2010-07-13 17:15:08
-  published: "0"
+  published: false
   is_program:
   p_vote:
   security_type: "2"
   version: "0.2"
   icon_file:
-  user_id: "7324"
-  category_id: "1"
+  user: quentin
+  category: one
   type: Metapackage
   default_install:
   ratings_count:
@@ -47,14 +47,14 @@ two:
   section_id: 
   description_tid: "241"
   updated_at: 2010-10-16 13:39:13
-  published: "0"
+  published: true
   is_program: 
   p_vote: 
   security_type: 
   version: 0.111.1.1.1.1.1.1
   icon_file: 
-  user_id: "1"
-  category_id: "26"
+  user: admin
+  category: two
   type: Metapackage
   default_install: "0"
   ratings_count: 

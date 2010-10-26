@@ -39,6 +39,7 @@ class MetapackagesControllerTest < ActionController::TestCase
   end
 
   def test_should_destroy_metapackage
+    login_as(:admin)
     assert_difference('Metapackage.count', -1) do
       delete :destroy, :id => base_packages(:one).id
     end
