@@ -49,7 +49,7 @@
           <%= link_to t(:register), user_path(current_user.id) %> |
           <% if is_admin? %>
           <% else %>
-            <span class="register_text"> Gast </span>
+            <span class="register_text"> t(:guest) </span>
           <% end %>
         <%  end %>
     <% else %>
