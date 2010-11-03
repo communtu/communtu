@@ -2235,11 +2235,11 @@ msgstr "Dépôt synchronisé"
 
 #: view_metapackages_show_18
 msgid "Wenn du das Bündel veröffentlichst, wird es für alle Nutzer zugänglich. Allerdings kann es danach nicht mehr gelöscht oder unbenannt werden."
-msgstr "Si vous publiez la compilation, il sera accessible à tous les utilisateurs. Toutefois, il ne peut ensuite être supprimé ou renommé."
+msgstr "Si tu publies la compilation, elel sera accessible à tous les utilisateurs. Toutefois, elle ne pourra plus être supprimée ou renommée."
 
 #: view_metapackages_show_comment_and_ratings
 msgid "Neuste Kommentare und Bewertungen für dieses Bündel"
-msgstr "Commentaires récents et évaluation pour csette compilation"
+msgstr "Commentaires récents et évaluation de cette compilation"
 
 #: view_layouts_application_3
 msgid "Ubuntu Logo"

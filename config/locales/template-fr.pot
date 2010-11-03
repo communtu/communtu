@@ -430,6 +430,9 @@ msgstr ""
 #: view_home_faq_all_02
 msgid "Die einzelnen Pakete werden dadurch nicht deinstalliert sondern lassen sich wie gewohnt über Synaptic oder KPackageKit auswählen und deinstallieren."
 msgstr ""
+#: register_small
+msgid "registrieren"
+msgstr ""
 #: controller_suggestion_4
 msgid "Quellen und Schluessel hinzufuegen fuer Buendel "
 msgstr ""
@@ -1045,11 +1048,11 @@ msgstr ""
 #: view_user_profiles__profile_data_2
 msgid "Achtung: zum Schluss unten auf den 'Speichern'-Knopf klicken!"
 msgstr ""
-#: view_home_derivatives_46
-msgid " - Server-Version von Ubuntu, ohne grafische Oberfläche."
-msgstr ""
 #: view_repositories_new_0
 msgid "Neues Repository für "
+msgstr ""
+#: view_home_derivatives_46
+msgid " - Server-Version von Ubuntu, ohne grafische Oberfläche."
 msgstr ""
 #: view_home_faq_06
 msgid "Hierfür klickst du auf <b>Bündel</b> und dann auf \"Neues Bündel\". Links siehst du nun eine Liste mit Programmen und rechts noch eine leere Liste. Dies ist der Bündeleditor. Mit einem Klick auf das Plus-Zeichen in der linken Liste kannst du nun Programme zu deinem Bündel hinzufügen. Sobald du damit fertig bist klickst auf das Speichern-Symbol. Hier musst du nun einen sinnvollen Namen für dein Bündel vergeben, die Version angeben und eine kleine Beschreibung eingeben damit andere Nutzer sofort wissen was für Programme in deinem Bündel sind. Damit andere Nutzer dein Bündel sehen, bewerten und installieren können muss dieses veröffentlicht werden. Dies geht erst, sobald das Bündel gespeichert ist. Achtung: bitte ein Bündel erst veröffentlichen wenn es ausgereift ist, also wenn du der Meinung bist, hier wird sich so schnell nichts mehr ändern! Das Ändern des Bündels ist nicht mehr möglich wenn es veröffentlicht wurde.<p> Wenn du der Meinung bist, dass dein Bündel um nützliche Programme erweitert werden kann oder ein Programm nicht mehr in dem Bündel enthalten sein soll musst du zuerst unter <b>Bündel</b> und dann \"Meine Bündel\" das entsprechende Bündel auswählen. Rechts ist dann aus dem Aufklapp-Menü der Punkt \"Paketliste editieren\" auszuwählen. Anschließend erscheint wieder der Bündeleditor. Sobald die Paketliste bearbeitet wurde muss diese gespeichert werden. Nun muss die Version höhergesetzt werden und anschließend gespeichert werden. Das Bündel wurde nun aktualisiert."
@@ -1096,11 +1099,11 @@ msgstr ""
 #: view_user_profiles__profile_data_6
 msgid "Wähle bitte deine Ubuntu-Version aus. "
 msgstr ""
-#: view_cart_new_from_list_0
-msgid "Bündel aus einer Paketliste erstellen"
-msgstr ""
 #: view_repositories_new_4
 msgid "GPG Schlüssel (Optional)"
+msgstr ""
+#: view_cart_new_from_list_0
+msgid "Bündel aus einer Paketliste erstellen"
 msgstr ""
 #: controller_metapackages_4
 msgid "Bündel gespeichert. Es dauert ein paar Minuten, bis es auch als Metapaket verfügbar ist. "
@@ -1490,7 +1493,7 @@ msgstr ""
 msgid "Eine Spendenbescheinigung kann ausgestellt werden. Dazu schicke uns bitte eine E-Mail mit deiner Adresse an: "
 msgstr ""
 #: view_users_edit_0
-msgid "Benuzterprofil bearbeiten"
+msgid "Benutzerprofil bearbeiten"
 msgstr ""
 #: choose_category
 msgid "Bitte auswählen"
@@ -2589,6 +2592,9 @@ msgid "Beschreibung"
 msgstr ""
 #: view_home_home_25
 msgid "Für Fragen zu Communtu haben wir \"Häufig gestellte Fragen\" zusammengestellt."
+msgstr ""
+#: livecd_please_register
+msgid "Um Live-CD/DVDs zu erstellen, musst du dich erst {{register}}."
 msgstr ""
 #: controller_categories_2
 msgid "Kategorie erzeugt."
