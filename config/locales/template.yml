@@ -389,6 +389,7 @@ de:
   start_vm: Virtuelle Maschine starten
   start_vm_instructions: 'So kannst du dich in die virtuelle Maschine einloggen (bitte etwas warten, bis die deb-Files kopiert wurden):'
   start_vm_with_livecd_basis: Virtuelle Maschine auf Basis der LiveCD-Einstellungen starten (Zur Fehlersuche)
+  stars_popcon: Die Sterne sagen aus, wie stark dieses Programm von den bisherigen Ubuntu Nutzern installiert und benutzt wurde.  
   statistics: Aufrufstatistik
   steps_for_distribution_setup: Schritte für das Einrichten einer neuen Distribution (bitte auf admin-System durchführen)
   stop_vm: Virtuelle Maschine stoppen

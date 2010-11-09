@@ -29,7 +29,7 @@
 <% if !@package.stars.nil? %>
      <td><b><%=t(:view_packages_show_8)%></b></td> 	
      <td><%= number_with_precision(@package.stars, 1) %><%=t(:view_packages_show_9)%></td>
-     <td nowrap class='star-rating-foreign' style='width:<%= (@package.stars * 25).to_i %>px; '></td><td><a href="#" class="tt"><%= image_tag("24-message-info.png", :size => "18x18", :border => "0") %><span class="tooltip"><span class="top"></span><span class="middle">Die Sterne sagen aus, wie stark dieses Programm von den bisherigen Ubuntu Nutzern installiert und benutzt wurde.</span><span class="bottom"></span></span></a></td>
+     <td nowrap class='star-rating-foreign' style='width:<%= (@package.stars * 25).to_i %>px; '></td><td><a href="#" class="tt"><%= image_tag("24-message-info.png", :size => "18x18", :border => "0") %><span class="tooltip"><span class="top"></span><span class="middle"><%= t(:stars_popcon) %></span><span class="bottom"></span></span></a></td>
 <% end %>
 </tr>
 <tr>
