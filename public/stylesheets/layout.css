@@ -1224,3 +1224,10 @@ button.positive, .buttons a.positive{
     color:#fff;
 }
 
+#headlinktohome {
+    display:block;
+    height:7em;
+    position:absolute;
+    top:2em;
+    width:30em;
+}
