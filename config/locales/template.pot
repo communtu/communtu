@@ -64,14 +64,14 @@ msgstr ""
 #: vm_running
 msgid "virtuelle Maschine läuft"
 msgstr ""
+#: view_roles_index_0
+msgid "Rollen für "
+msgstr ""
 #: view_distributions_show_8
 msgid "Vor dem Löschen einer Distribution müssen alle Benutzer, die sie nutzen, ausgeloggt sein! Bist du sicher?"
 msgstr ""
 #: cd_failed
 msgid "Fehlgeschlagen - wir kümmern uns darum"
-msgstr ""
-#: view_roles_index_0
-msgid "Rollen für "
 msgstr ""
 #: view_home_beteiligung_13
 msgid "Da wir viele Ideen für die Weiterentwicklung der Plattform haben, benötigen wir noch eine/n ProgrammiererIn. Idealerweise hast du schon Erfahrungen in Ruby on Rails sammeln können."
@@ -307,6 +307,9 @@ msgstr ""
 #: controller_passwords_7
 msgid "Passwort nicht geändert."
 msgstr ""
+#: create_livecd_bundlepage
+msgid "Möchte man hingegen nur ein bestimmtes Bündel, z. B. ein eigenes, nicht veröffentlichtes Bündel, erstellen, so muss das Bündel über <b>Bündel -&gt; Meine Bündel</b> oder <b>Veröffentlichte Bündel</b> gesucht werden. Mit einem Klick auf das CD-Symbol rechts unter Installieren wird man zum Dialogfeld für die Live-CD. Mit einem Klick auf <b>Live-CD/DVD erstellen</b> wird die Live-CD aus dem Bündel erstellt."
+msgstr ""
 #: view_home_home_5
 msgid "Die Seitenleiste links bietet folgende Möglichkeiten:"
 msgstr ""
@@ -426,6 +429,9 @@ msgid "Debs werden im Hintergrund erzeugt (ggf. Browser-Ansicht aktualisieren)"
 msgstr ""
 #: view_home_faq_all_02
 msgid "Die einzelnen Pakete werden dadurch nicht deinstalliert sondern lassen sich wie gewohnt über Synaptic oder KPackageKit auswählen und deinstallieren."
+msgstr ""
+#: register_small
+msgid "registrieren"
 msgstr ""
 #: controller_suggestion_4
 msgid "Quellen und Schluessel hinzufuegen fuer Buendel "
@@ -1042,11 +1048,11 @@ msgstr ""
 #: view_user_profiles__profile_data_2
 msgid "Achtung: zum Schluss unten auf den 'Speichern'-Knopf klicken!"
 msgstr ""
-#: view_home_derivatives_46
-msgid " - Server-Version von Ubuntu, ohne grafische Oberfläche."
-msgstr ""
 #: view_repositories_new_0
 msgid "Neues Repository für "
+msgstr ""
+#: view_home_derivatives_46
+msgid " - Server-Version von Ubuntu, ohne grafische Oberfläche."
 msgstr ""
 #: view_home_faq_06
 msgid "Hierfür klickst du auf <b>Bündel</b> und dann auf \"Neues Bündel\". Links siehst du nun eine Liste mit Programmen und rechts noch eine leere Liste. Dies ist der Bündeleditor. Mit einem Klick auf das Plus-Zeichen in der linken Liste kannst du nun Programme zu deinem Bündel hinzufügen. Sobald du damit fertig bist klickst auf das Speichern-Symbol. Hier musst du nun einen sinnvollen Namen für dein Bündel vergeben, die Version angeben und eine kleine Beschreibung eingeben damit andere Nutzer sofort wissen was für Programme in deinem Bündel sind. Damit andere Nutzer dein Bündel sehen, bewerten und installieren können muss dieses veröffentlicht werden. Dies geht erst, sobald das Bündel gespeichert ist. Achtung: bitte ein Bündel erst veröffentlichen wenn es ausgereift ist, also wenn du der Meinung bist, hier wird sich so schnell nichts mehr ändern! Das Ändern des Bündels ist nicht mehr möglich wenn es veröffentlicht wurde.<p> Wenn du der Meinung bist, dass dein Bündel um nützliche Programme erweitert werden kann oder ein Programm nicht mehr in dem Bündel enthalten sein soll musst du zuerst unter <b>Bündel</b> und dann \"Meine Bündel\" das entsprechende Bündel auswählen. Rechts ist dann aus dem Aufklapp-Menü der Punkt \"Paketliste editieren\" auszuwählen. Anschließend erscheint wieder der Bündeleditor. Sobald die Paketliste bearbeitet wurde muss diese gespeichert werden. Nun muss die Version höhergesetzt werden und anschließend gespeichert werden. Das Bündel wurde nun aktualisiert."
@@ -1093,11 +1099,11 @@ msgstr ""
 #: view_user_profiles__profile_data_6
 msgid "Wähle bitte deine Ubuntu-Version aus. "
 msgstr ""
-#: view_cart_new_from_list_0
-msgid "Bündel aus einer Paketliste erstellen"
-msgstr ""
 #: view_repositories_new_4
 msgid "GPG Schlüssel (Optional)"
+msgstr ""
+#: view_cart_new_from_list_0
+msgid "Bündel aus einer Paketliste erstellen"
 msgstr ""
 #: controller_metapackages_4
 msgid "Bündel gespeichert. Es dauert ein paar Minuten, bis es auch als Metapaket verfügbar ist. "
@@ -1144,14 +1150,14 @@ msgstr ""
 #: view_user_profiles__profile_data_9
 msgid "Hier kannst du einstellen, wie sicher bzw. komfortabel deine Installationsquellen sein sollen"
 msgstr ""
+#: view_roles_edit_0
+msgid "Rolle bearbeiten"
+msgstr ""
 #: view_home_news_24
 msgid "beteiligen"
 msgstr ""
 #: view_home_derivatives_51
 msgid " - Installation von Programmen und Versionen, die nicht über die offiziellen Repositories erhältlich sind."
-msgstr ""
-#: view_roles_edit_0
-msgid "Rolle bearbeiten"
 msgstr ""
 #: view_home_faq_11
 msgid "Wie erstelle ich ein Bündel aus meinen installierten Programmen?"
@@ -1168,11 +1174,11 @@ msgstr ""
 #: view_user_profiles_help_4
 msgid "du machst ein Upgrade auf eine neuere Version"
 msgstr ""
-#: view_home_derivatives_52
-msgid " - eine Art Automatix für die Ultimate Edition."
-msgstr ""
 #: view_roles_edit_1
 msgid "Rollenname"
+msgstr ""
+#: view_home_derivatives_52
+msgid " - eine Art Automatix für die Ultimate Edition."
 msgstr ""
 #: view_home_faq_12
 msgid "Unter <b>Bündel</b> und dann \"Neues Bündel\" gibt es den Punkt \"Bündel aus einer Paketliste erstellen\", der anzuklicken ist. Dort ist beschrieben, wie du deine Paketliste in Communtu hochladen kannst. Sobald das Bündel gespeichert ist, ist der Vorgang der Gleiche wie bei einem neuen Bündel erstellen: sinnvollen Namen auswählen, Version bestimmen, Beschreibung einfügen und speichern."
@@ -1487,7 +1493,7 @@ msgstr ""
 msgid "Eine Spendenbescheinigung kann ausgestellt werden. Dazu schicke uns bitte eine E-Mail mit deiner Adresse an: "
 msgstr ""
 #: view_users_edit_0
-msgid "Benuzterprofil bearbeiten"
+msgid "Benutzerprofil bearbeiten"
 msgstr ""
 #: choose_category
 msgid "Bitte auswählen"
@@ -1903,14 +1909,17 @@ msgstr ""
 #: livecd_email_body_failed
 msgid ", die Live-CD/DVD {{name}} konnte leider nicht erstellt werden. Wir kümmern uns um das Problem."
 msgstr ""
+#: view_repositories_show_6
+msgid "        OpenSource"
+msgstr ""
 #: being_created
 msgid "wird erstellt"
 msgstr ""
 #: bundle_by_owner
 msgid "erstellte Bündel"
 msgstr ""
-#: view_repositories_show_6
-msgid "        OpenSource"
+#: view_repositories_show_7
+msgid "        kommerziell "
 msgstr ""
 #: new_architecture
 msgid "Neue Architektur"
@@ -1920,9 +1929,6 @@ msgid "Benachrichtigung bei Fehlerbehebung"
 msgstr ""
 #: iso_image
 msgid "ISO-Image (für CD/DVD)"
-msgstr ""
-#: view_repositories_show_7
-msgid "        kommerziell "
 msgstr ""
 #: advanced_user
 msgid "Ich bin fortgeschrittener Benutzer und will auch unfertige Versionen von Ubuntu sehen."
@@ -1939,8 +1945,14 @@ msgstr ""
 #: view_packages_show_2
 msgid "Paket sofort installieren"
 msgstr ""
+#: create_livecd_subtitle1
+msgid "Erstellen über die Downloadseite"
+msgstr ""
 #: none
 msgid "Keine"
+msgstr ""
+#: create_livecd_subtitle2
+msgid "Erstellen über ein Bündel"
 msgstr ""
 #: view_passwords_edit_0
 msgid "    Passwort:"
@@ -2209,6 +2221,12 @@ msgstr ""
 #: livecd_previous_cds
 msgid "Bisher erstellte Live-CDs/DVDs:"
 msgstr ""
+#: create_livecd_title
+msgid "Wie erstelle ich eine Live-CD?"
+msgstr ""
+#: create_livecd_downloadpage
+msgid "Hierfür wählt man die unter <b>Download</b> die Kategorien und die Bündel aus welche man installieren möchte. Mit einem Klick auf „Live-CD/DVD“ in der Menüführung kommt man zum Dialogfeld für die Live-CD. Hier muss noch ein Name eingetragen werden und die Live-CD/DVD mit <b>Live-CD/DVD erstellen</b> erstellt werden."
+msgstr ""
 #: migrate_repository
 msgid "Repository migieren"
 msgstr ""
@@ -2304,6 +2322,9 @@ msgid "Architekturen"
 msgstr ""
 #: metapackages_cannot_destroy
 msgid "Das Bündel kann nicht gelöscht werden, da es noch in einem anderen verwendet wird."
+msgstr ""
+#: create_livecd_intro
+msgid "Man kann mit Communtu auf zwei Arten eine Live-CD erstellen: über die Downloadseite und über ein Bündel direkt."
 msgstr ""
 #: view_rating_show_title_ratings_count
 msgid "(Basierend auf {{votes}} Bewertung(en))"
@@ -2512,6 +2533,9 @@ msgstr ""
 #: view_home_home_18
 msgid "Klicke auf "
 msgstr ""
+#: create_livecd_email
+msgid "<i>* Hierfür ist eine existierende E-Mail-Adresse nötig!</i>"
+msgstr ""
 #: controller_home_3
 msgid "Das sieht nicht nach einer Liste von Ubuntu-Paketen aus... <br />Die Paketliste muss einen Paketnamen pro Zeile enthalten"
 msgstr ""
@@ -2569,6 +2593,9 @@ msgstr ""
 #: view_home_home_25
 msgid "Für Fragen zu Communtu haben wir \"Häufig gestellte Fragen\" zusammengestellt."
 msgstr ""
+#: livecd_please_register
+msgid "Um Live-CD/DVDs zu erstellen, musst du dich erst {{register}}."
+msgstr ""
 #: controller_categories_2
 msgid "Kategorie erzeugt."
 msgstr ""
@@ -2586,6 +2613,9 @@ msgid "Bitte gib hier eine kurze Vorstellung deines Bündels ein für was für T
 msgstr ""
 #: view_home_home_27
 msgid "Communtu hilft dir dabei:"
+msgstr ""
+#: create_livecd_note
+msgid "Der Vorgang dauert einige Zeit und man wird per E-Mail benachrichtigt* sobald das ISO erstellt ist."
 msgstr ""
 #: view_home_donate_why
 msgid "Der Betrieb der Communtu-Webseite basiert vor allem auf dem Einsatz von Freiwilligen; er kostet aber auch Geld (u.a. für Server und Räume). Communtu ist daher auf Spenden angewiesen. Auch kleine Beträge helfen."

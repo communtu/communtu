@@ -97,6 +97,7 @@ en:
   view_user_profiles__installation_33: The following
   wait_for_sync: waiting for syncronisation with repositories
   controller_passwords_7: Password not changed.
+  create_livecd_bundlepage: When you want to create a Live-CD from a single bundle, e. g. you want to use a your own non-published bundle, your have to go to <b>Bundle -&gt; My bundles</b> or <b>Published bundles</b> and search for a bundle. With a click on the CD icon on the right side in the Install section you come to the Live-CD page. With a click on <b>Create Live-CD/DVD</b> a Live-CD with will be created from the selected bundle.
   view_home_home_5: "The menu on the left offers the following possibilities:"
   view_user_profiles__installation_34: will be added to our system.
   controller_passwords_8: Passwords do not match.
@@ -138,6 +139,7 @@ en:
   deb_generation_in_background: Debs are being created in the background (refresh the webpage if necessary)
   warnings: Warnings
   view_home_faq_all_02: Packages are not being uninstalled and can be removed as normale via Synaptic or KPackageKit.
+  register_small: Register
   controller_suggestion_4: Add repositories and keys for the bundle
   controller_suggestion_6: Add repositories and keys for the package
   view_users__mailbox_list_1: Mailbox
@@ -521,7 +523,7 @@ en:
   view_cart_update_1: Overwrite bundle, if it already exists?
   view_home_success_1: "We can issue a donation receipt. Please send an e-mail with your address to: "
   choose_category: Please make a choice
-  view_users_edit_0: edit profile
+  view_users_edit_0: Edit profile
   view_cart_update_2: "Level of expert:"
   to_chat: to the chat
   start_vm_instructions: "Follow these steps to log in on the virtual machine (please wait a minute, deb-files need to be copied):"
@@ -674,7 +676,9 @@ en:
   view_categories_index_12: show category-tree
   livecd_failed: Live-CD creation failed
   view_packages_show_2: install package instantly
+  create_livecd_subtitle1: Creation using the download interface
   none: None
+  create_livecd_subtitle2: Creation with bundle
   view_passwords_edit_0: "    Password:"
   link_community_title: "External link: to the official Ubuntu Forums"
   third_party: all providers
@@ -764,6 +768,8 @@ en:
   view_mailbox_show_5: You do not have any messages in your inbox.
   invalid_activation_code_entered: Invalid activation code entered.
   livecd_previous_cds: "Live-CD's/DVD's created so far:"
+  create_livecd_title: How do I create a Live-CD?
+  create_livecd_downloadpage: For this you choose the categories in the <b>Download</b> area that you want to install. With a click on "Live-CD/DVD" in the menu you can see a page where you can enter a name for your Live-CD. With a click on <b>Create Live-CD/DVD</b> the process will be started.
   migrate_repository: migrate repository
   bundle_editor: bundle-editor
   which_programs_do_you_need: To which topic do you look for programs (office, graphics, ...)? Enter your fields of interest and arrange pre-configured bundles.
@@ -796,6 +802,7 @@ en:
   view_home_impressum_2: AG Communtu
   architectures: Architectures
   metapackages_cannot_destroy: This bundle cannot be deleted as it is used in an other bundle.
+  create_livecd_intro: "You can create a Live-CD with Communtu in two different ways: using the download page or directly via a bundle."
   view_rating_show_title_ratings_count: (Based on {{votes}} rating(s))
   controller_sent_2: message successfully send
   model_package_0: Free software
@@ -814,12 +821,12 @@ en:
   livecd_email_body: ", the Live-CD/DVD has been created. Follow this link:"
   additional_sources: Additional sources which will be added as some sources are not completed in themselves
   order_number: "Sort by number (smallest number first):"
-  videos: "Videos:"
   server_status: Server status
+  videos: "Videos:"
   senden: Send
   view_home_icons_3: Install package(s).
-  model_package_6: <br> has not the right format
   register: Register
+  model_package_6: <br> has not the right format
   model_package_need_not_update: "{{url}} has not changed"
   model_package_7: couldn't determine URL for {{repo}}
   view_home_icons_6: " install sources"
@@ -868,6 +875,7 @@ en:
   former_participants: Former members
   controller_home_2: We will notify you via e-mail.
   controller_home_3: This does not appear to be a list with Ubuntu-packages... <br />The packagelist must contain one packagename per line
+  create_livecd_email: <i>* A valid e-mail address is needed!</i>
   livecd_created_by: "Live-CD/DVD created by:"
   view_derivatives_index_0: Ubuntu derivatives
   controller_home_4: A file with the package list (one package name per line) has to be given
@@ -884,6 +892,7 @@ en:
   view_home_home_24: To the imprint
   update: Refresh
   controller_categories_2: Category created.
+  livecd_please_register: To create a Live-CD/DVD you have to {{register}} first.
   view_home_home_25: For questions concerning Communtu we have created a "FAQ".
   description: Description
   view_layouts_application_11: Guestsession
@@ -892,6 +901,7 @@ en:
   view_home_home_26: You installed Ubuntu and now you are looking for programs which run with Ubuntu?
   failed_live_cds: Failed Live-CDs/DVDs
   view_home_donate_why: The development of Communtu is mainly based on the effort of volunteers but it also costs money (amongst others the server and the rooms). Therefore Communtu depends on donations. Even small amounts of money help.
+  create_livecd_note: This takes some time and you will be informed via e-mail* when the ISO is created.
   view_home_home_27: "Communtu helps you:"
   donation_purpose: "Purpose: Communtu"
   controller_metapackages_not_changed: This bundle is already created as a metapackage and uploaded.
