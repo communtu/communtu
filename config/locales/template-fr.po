@@ -743,7 +743,7 @@ msgstr "publié"
 
 #: install_package_sources_first
 msgid "Paket installieren. Bitte ggf. vorher die Quellen hinzufügen."
-msgstr "Installer le paquet. S'il te plaît ajoute avant les sources si nécessaire."
+msgstr "Installer le paquet. S'il te plaît ajouter avant les sources si nécessaire."
 
 #: preliminary_distribution
 msgid "Vorläufige Distribution"
@@ -2235,7 +2235,7 @@ msgstr "Dépôt synchronisé"
 
 #: view_metapackages_show_18
 msgid "Wenn du das Bündel veröffentlichst, wird es für alle Nutzer zugänglich. Allerdings kann es danach nicht mehr gelöscht oder unbenannt werden."
-msgstr "Si tu publies la compilation, elel sera accessible à tous les utilisateurs. Toutefois, elle ne pourra plus être supprimée ou renommée."
+msgstr "Si tu publies une compilation, elle sera accessible à tous les utilisateurs. Toutefois, elle ne pourra plus être supprimée ou renommée."
 
 #: view_metapackages_show_comment_and_ratings
 msgid "Neuste Kommentare und Bewertungen für dieses Bündel"
@@ -2733,7 +2733,7 @@ msgstr "Vous êtes déjà inscrit."
 
 #: view_home_icons_12
 msgid " Programm (wenn kein anderes Programm-Icon vorhanden)"
-msgstr "Programme (si aucun autre icône du programme n'est disponible)"
+msgstr "Programme (si aucune autre icône du programme n'est disponible)"
 
 #: view_metapackages__metalist_2
 msgid "Standard"

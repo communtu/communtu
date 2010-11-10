@@ -1,5 +1,5 @@
 --- 
-string_for_dest_lang: 
+fr: 
   view_home_home_new_messages_desc: Tu as de nouveaux messages dans ta boite de reception
   view_layouts_application_24: TELECHARGER
   sources: Source
@@ -188,7 +188,7 @@ string_for_dest_lang:
   licence: "Licence:"
   model_mailer_1: Formulaire de demande
   published: "publi\xC3\xA9"
-  install_package_sources_first: "Installer le paquet. S'il te pla\xC3\xAEt ajoute avant les sources si n\xC3\xA9cessaire."
+  install_package_sources_first: "Installer le paquet. S'il te pla\xC3\xAEt ajouter avant les sources si n\xC3\xA9cessaire."
   preliminary_distribution: Distribution provisoire
   model_mailer_2: "Votre compte a \xC3\xA9t\xC3\xA9 activ\xC3\xA9."
   view_home_derivatives_10: http://wiki.ubuntuusers.de/Ubuntu_Studio
@@ -567,8 +567,8 @@ string_for_dest_lang:
   view_layouts_application_2: Communtu
   kvm_processes: KVM processus
   view_admins_sync_package_2: "D\xC3\xA9p\xC3\xB4t synchronis\xC3\xA9"
-  view_metapackages_show_18: "Si vous publiez la compilation, il sera accessible \xC3\xA0 tous les utilisateurs. Toutefois, il ne peut ensuite \xC3\xAAtre supprim\xC3\xA9 ou renomm\xC3\xA9."
-  view_metapackages_show_comment_and_ratings: "Commentaires r\xC3\xA9cents et \xC3\xA9valuation pour csette compilation"
+  view_metapackages_show_18: "Si tu publies une compilation, elle sera accessible \xC3\xA0 tous les utilisateurs. Toutefois, elle ne pourra plus \xC3\xAAtre supprim\xC3\xA9e ou renomm\xC3\xA9e."
+  view_metapackages_show_comment_and_ratings: "Commentaires r\xC3\xA9cents et \xC3\xA9valuation de cette compilation"
   view_layouts_application_3: Ubuntu Logo
   view_admins_sync_package_3: !binary |
     RMOpcMO0dDo=
@@ -631,7 +631,7 @@ string_for_dest_lang:
   view_metapackages__metalist_10: "\xC3\xA9valuation"
   view_cart_new_from_list_tip: "Astuce: Tu peux \xC3\xA9galement trier une grande liste de th\xC3\xA8me avec un \xC3\xA9diteur et ensuite les sous-listes r\xC3\xA9sultant peuvent \xC3\xAAtre s\xC3\xA9par\xC3\xA9ment t\xC3\xA9l\xC3\xA9charger ici. La compilation obtenue peut \xC3\xAAtre de nouveau regroupp\xC3\xA9 en compilation. Cela cr\xC3\xA9e une compilation plus structur\xC3\xA9e."
   view_users_show_0: Profil de l'utilisateur
-  view_metapackages_edit_gpl: "J'accepte de publier les informatios de compilation sous  la<a href=\"http://www.gnu.de/documents/gpl.de.html\">licence GNU General public </ a> (version 2.0 ou sup\xC3\xA9rieure) pour . publication"
+  view_metapackages_edit_gpl: "J'accepte de publier les informatios de compilation sous  la <a href=\"http://www.gnu.fr/documents/gpl.fr.html\"> Licence GNU General public </a> (version 2.0 ou sup\xC3\xA9rieure) pour publication."
   view_home_donate: Faire un don pour Communtu
   save: Sauvegarder
   view_roles_new_0: "Nouveau r\xC3\xB4le"
@@ -702,7 +702,7 @@ string_for_dest_lang:
   view_derivatives_show_1: "programme sudo:"
   controller_sessions_1: "Vous \xC3\xAAtes d\xC3\xA9j\xC3\xA0 inscrit."
   view_user_profiles__profile_data_13: Ici tu peux choisir la licence que tu souhaites autoriser
-  view_home_icons_12: "Programme (si aucun autre ic\xC3\xB4ne du programme n'est disponible)"
+  view_home_icons_12: "Programme (si aucune autre ic\xC3\xB4ne du programme n'est disponible)"
   view_metapackages__metalist_2: Standard
   view_packages_show_15: "Source/d\xC3\xA9p\xC3\xB4t"
   offer_new_category: "Proposition d'une nouvelle cat\xC3\xA9gorie"
@@ -749,7 +749,7 @@ string_for_dest_lang:
   create_your_livedvd: "Cr\xC3\xA9ez toi-m\xC3\xAAme un Live CD"
   start: Debuter
   view_home_icons_20: "Utilisateur-ic\xC3\xB4ne "
-  headline: rend l'installation de Ubuntu facile
+  headline: "facilite l'installation d'Ubuntu "
   first_sync_repos: "S'il vous pla\xC3\xAEt premi\xC3\xA9rement synchroniser les r\xC3\xA9ferentiels. Cela se fait g\xC3\xA9n\xC3\xA9ralement automatiquement dans  l'intervalle d'une semaine. S'il vous pla\xC3\xAEt noter: \xC3\xA0 ce stade n'est v\xC3\xA9rifi\xC3\xA9e que si quelque chose \xC3\xA9tait synchronis\xC3\xA9, pas de savoir si le processus est termin\xC3\xA9."
   view_home_icons_22: "Ic\xC3\xB4ne pour l'utilisateur"
   email_with_colon: "E-Mail: "
@@ -888,7 +888,7 @@ string_for_dest_lang:
   view_home_home_22: "\xC3\xA0 toi, ou"
   creation_successful: "Cr\xC3\xA9ation a \xC3\xA9t\xC3\xA9 un succ\xC3\xA8s"
   controller_categories_0: "Cat\xC3\xA9gories"
-  view_home_home_23: "utilise Communtu en tant qu'invit\xC3\xA9"
+  view_home_home_23: utilise Communtu en tant que visiteur
   statistics: Statistiques d'appel
   view_home_home_24: "Mentions L\xC3\xA9gales"
   update: "Mettre \xC3\xA0 jour"
