@@ -4,6 +4,10 @@
 # join table specifying for which distributions the membership
 # of a particular package in a bundle holds
 
+# database fields: 
+# distribution_id
+# metacontent_id
+
 class MetacontentsDistr < ActiveRecord::Base
   belongs_to :metacontent
   belongs_to :distribution

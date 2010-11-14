@@ -3,5 +3,9 @@
 
 # logging of the controller actions called by a user
 
+# database fields: 
+# refferer
+# user_id
+
 class Userlog < ActiveRecord::Base
 end

@@ -4,6 +4,10 @@
 # table recording which distributions are available for a derivative
 # e.g. for Lubuntu, only Lucid is available
 
+# database fields: 
+# derivative_id
+# distribution_id
+
 class DistributionDerivative < ActiveRecord::Base
   belongs_to :distribution
   belongs_to :derivative

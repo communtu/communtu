@@ -3,6 +3,11 @@
 
 # software selection made by the user
 
+# database fields: 
+# category_id
+# rating
+# user_id
+
 class UserProfile < ActiveRecord::Base
   
   belongs_to :user

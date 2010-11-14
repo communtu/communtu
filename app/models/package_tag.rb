@@ -3,6 +3,10 @@
 
 # join table linking packages and tags (debtags)
 
+# database fields: 
+# package_id
+# tag_id
+
 class PackageTag < ActiveRecord::Base
   belongs_to :package
   belongs_to :tag

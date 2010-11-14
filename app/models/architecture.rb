@@ -5,6 +5,9 @@
 # since Ubuntu packages are architecture-specific, metapackages and the
 # lists of packages they are containing are architecture-specific as well
 
+# database fields:
+# name
+
 class Architecture < ActiveRecord::Base
   has_many :package_distrs_architectures, :dependent => :destroy
   has_many :livecds, :dependent => :destroy

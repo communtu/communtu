@@ -3,6 +3,10 @@
 
 # table recording the permissions for each user
 
+# database fields: 
+# role_id
+# user_id
+
 class Permission < ActiveRecord::Base
   belongs_to :user
   belongs_to :role

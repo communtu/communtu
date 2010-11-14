@@ -3,6 +3,16 @@
 
 # join table linking packages and distributions
 
+# database fields: 
+# distribution_id
+# filename
+# installedsize
+# outdated
+# package_id
+# repository_id
+# size
+# version
+
 class PackageDistr < ActiveRecord::Base
   belongs_to :package
   belongs_to :repository

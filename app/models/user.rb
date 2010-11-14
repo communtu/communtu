@@ -3,6 +3,32 @@
 
 # users (following the plugin lib_authenticated)
 
+# database fields: 
+# activated_at
+# activation_code
+# advanced
+# anonymous
+# architecture_id
+# crypted_password
+# derivative_id
+# distribution_id
+# email
+# enabled
+# first_login
+# firstname
+# language_id
+# license
+# login
+# password_reset_code
+# profile_changed
+# profile_version
+# remember_token
+# remember_token_expires_at
+# salt
+# security
+# surname
+# template_id
+
 require 'digest/sha1'
 class User < ActiveRecord::Base
   # Virtual attribute for the unencrypted password

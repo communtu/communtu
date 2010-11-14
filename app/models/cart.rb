@@ -4,6 +4,10 @@
 # database table for temporary storing the current selection of
 # Ubuntu packages when creating or editing a bundle
 
+# database fields: 
+# metapackage_id
+# name
+
 class Cart < ActiveRecord::Base
 
     has_many :cart_contents, :dependent => :destroy

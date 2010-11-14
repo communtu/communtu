@@ -4,6 +4,12 @@
 # Ubuntu derivatives, like Ubuntu, Kubuntu, Xubuntu, Lubuntu
 # Communtu allows the contents of bundles to depend on the derivative
 
+# database fields: 
+# dialog
+# icon_file
+# name
+# sudo
+
 class Derivative < ActiveRecord::Base
   has_many :metacontents_derivatives
   has_many :users

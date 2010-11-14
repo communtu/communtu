@@ -3,6 +3,10 @@
 
 # join table linking bundles with the packages they contain
 
+# database fields: 
+# base_package_id
+# metapackage_id
+
 class Metacontent < ActiveRecord::Base
 
     belongs_to :metapackage

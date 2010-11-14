@@ -4,6 +4,11 @@
 # more fine-grained (package-wise) software selection made by the user
 # currently not used
 
+# database fields: 
+# is_selected
+# package_id
+# user_id
+
 class UserPackage < ActiveRecord::Base
   belongs_to :user
   belongs_to :base_package, :foreign_key => :package_id

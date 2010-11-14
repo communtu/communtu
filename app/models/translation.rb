@@ -7,6 +7,11 @@
 # e.g. the name of a metapackage is realised as translatable_id
 # (there it is called name_tid, see table base_packages)
 
+# database fields: 
+# contents
+# language_code
+# translatable_id
+
 class Translation < ActiveRecord::Base
   belongs_to(:language)
   

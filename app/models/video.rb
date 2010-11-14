@@ -3,6 +3,13 @@
 
 # videos describing packages
 
+# database fields: 
+# base_package_id
+# description
+# description_tid
+# url
+# url_tid
+
 class Video < ActiveRecord::Base
    require "lib/utils.rb"
   belongs_to :base_package

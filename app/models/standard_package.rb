@@ -4,6 +4,12 @@
 # packages that are installed in a plain standard installation
 # (this varies depending on distribution, derivative and architecture)
 
+# database fields: 
+# architecture_id
+# derivative_id
+# distribution_id
+# package_id
+
 class StandardPackage < ActiveRecord::Base
   belongs_to :package
   belongs_to :distribution

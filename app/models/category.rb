@@ -4,6 +4,16 @@
 # categories are used to classify Communtu bundles
 # in the future, this could be replaced by DebTags
 
+# database fields: 
+# description
+# description_tid
+# link
+# link_tid
+# main
+# name
+# name_tid
+# parent_id
+
 class Category < ActiveRecord::Base
   require "lib/utils.rb"
   acts_as_tree :order => "name"

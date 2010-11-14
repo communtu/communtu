@@ -3,6 +3,10 @@
 
 # join table linking carts and packages
 
+# database fields:
+# base_package_id
+# cart_id
+
 class CartContent < ActiveRecord::Base
 
     belongs_to :cart

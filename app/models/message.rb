@@ -3,6 +3,11 @@
 
 # mail messages of the Communtu messanging system
 
+# database fields: 
+# author_id
+# body
+# subject
+
 class Message < ActiveRecord::Base
   belongs_to :author, :class_name => "User"
   has_many :message_copies

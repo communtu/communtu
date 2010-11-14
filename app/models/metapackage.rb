@@ -4,6 +4,8 @@
 # Communtu bundles; subclass of base_packages
 # should be renamed to class Bundle in the future
 
+# database fields: see class BasePackage 
+
 class Metapackage < BasePackage
 
   require 'set.rb'

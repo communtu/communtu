@@ -4,6 +4,11 @@
 # dependencies among Ubuntu packages
 # this table contains the transitive closure of the usual "depends" dependencies
 
+# database fields: 
+# base_package_id
+# dep_type
+# package_distr_id
+
 class Dependency < ActiveRecord::Base
   belongs_to :package_distr
   belongs_to :base_package

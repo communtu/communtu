@@ -10,6 +10,19 @@
 # debian packages and their upload into the Communtu
 # repository using the tool reprepro.
 
+# database fields: 
+# derivative_id
+# distribution_id
+# errmsg
+# generated
+# license_type
+# log
+# metapackage_id
+# outdated
+# security_type
+# url
+# version
+
 class Deb < ActiveRecord::Base
   belongs_to :metapackage
   belongs_to :distribution
@@ -93,7 +106,7 @@ class Deb < ActiveRecord::Base
         f.puts
         f.puts "Included packages:"
         architectures.each do |arch|
-           f.puts((if homogeneous then arch.name else "" end)+": "+packages[arch].join(", "))
+           f.puts((if homogeneous then "" else arch.name+": " end)+packages[arch].join(", "))
         end
   
         # look for a version that does not exist yet

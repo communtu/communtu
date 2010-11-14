@@ -5,6 +5,30 @@
 # this allows for better error logging and recovery
 # note that the iso itself is stored in the file system, however
 
+# database fields: 
+# architecture_id
+# derivative_id
+# distribution_id
+# failed
+# first_try
+# generated
+# generating
+# installdeb
+# iso
+# kvm
+# license_type
+# log
+# metapackage_id
+# name
+# pid
+# profile_version
+# security_type
+# size
+# srcdeb
+# usb
+# vm_hda
+# vm_pid
+
 require "lib/utils.rb"
 
 class Livecd < ActiveRecord::Base

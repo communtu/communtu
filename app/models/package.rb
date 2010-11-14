@@ -3,6 +3,8 @@
 
 # Ubuntu packages, subclass of class base_packages
 
+# database fields: see class BasePackage 
+
 require 'find'
 
 class Package < BasePackage

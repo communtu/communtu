@@ -3,6 +3,11 @@
 
 # press archive (articles about Communtu)
 
+# database fields:
+# language_code
+# name_tid
+# url_tid
+
 class Article < ActiveRecord::Base
    require "lib/utils.rb"
 

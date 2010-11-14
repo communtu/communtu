@@ -4,6 +4,17 @@
 # Ubuntu distributions like Karmic or Lucid
 # Communtu allows the contents of bundles to depend on the distribution
 
+# database fields: 
+# description
+# description_tid
+# distribution_id
+# invisible
+# name
+# preliminary
+# short_name
+# url
+# url_tid
+
 class Distribution < ActiveRecord::Base
   require "lib/utils.rb"
   has_many :repositories, :dependent => :destroy

@@ -7,6 +7,14 @@
 # There are tags that are equal to facets.
 # The Tag model currently defines :name as unique and if we change this, it
 # might break everything.
+
+# database fields: 
+# description
+# is_facet
+# name
+# nature
+# status
+
 class Tag < ActiveRecord::Base
   has_many :package_tags
   has_many :packages, :through => :package_tags

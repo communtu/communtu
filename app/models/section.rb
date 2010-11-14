@@ -4,6 +4,10 @@
 # debian sections, a classification of packages
 # shall be replaced by debtags
 
+# database fields: 
+# name
+# name_tid
+
 class Section < ActiveRecord::Base
   validates_uniqueness_of  :name_tid
 

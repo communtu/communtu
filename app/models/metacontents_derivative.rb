@@ -4,6 +4,10 @@
 # join table specifying for which derivatives the membership
 # of a particular package in a bundle holds
 
+# database fields: 
+# derivative_id
+# metacontent_id
+
 class MetacontentsDerivative < ActiveRecord::Base
   belongs_to :metacontent
   belongs_to :derivative

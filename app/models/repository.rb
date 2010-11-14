@@ -2,6 +2,16 @@
 # use, modification or distribution only with permission of the copyright holder
 
 # Ubuntu (and third-party) repositories
+# database fields:
+# distribution_id: distrubution of the repository 
+# security_type: 0 = Ubuntu only, 1 = also Ubuntu community, 2 = also third-party
+# license_type: 0 = free, 1 = free or proprietary 
+# url: repository url as appearing in /etc/apt/sources.list, but without subtypes 
+# subtype: last part of repository url, like "main", "universe" etc.
+# gpgkey: key for the repository, should be imported with apt-key
+# package_file: ???
+# gpgkey_tid: ???
+# url_tid: ???
 
 require 'open-uri'
 require 'zlib'

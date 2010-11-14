@@ -3,6 +3,12 @@
 
 # Comments to bundles and other things
 
+# database fields: 
+# comment
+# comment_tid
+# metapackage_id
+# user_id
+
 class Comment < ActiveRecord::Base
 #  require "lib/utils.rb"
   belongs_to :meta_package

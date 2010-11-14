@@ -7,6 +7,37 @@
 # in the future, since the term metapackage is already used by Ubuntu,
 # and one bundle leads to many Ubuntu metapackages
 
+# database fields:
+# category_id: category of the bundle, only used for Metapackage
+# deb_error: has an error occured while debianizing the bundle? Only used for Metapackage
+# debianized_version: the latest version of the bundle that has been debianozed. Only used for Metapackage
+# debianizing: the bundle is currently debianized. Only used for Metapackage
+# default_install: the bundle should be installed by default when its category is selected. Only used for Metapackage
+# description: Description as in the Ubuntu repository. Only used for Package. Should be internationalized using description_tid
+# description_tid: Internationalized description (using table Translation)
+# fullsection: Debian section of package, only used for Package
+# icon_file: location of icon illustrating the package, only used for Package
+# is_program: is the package a program (in contrast to a library)? Only used for Package
+# license_type: 0 = free, 1 = free or proprietary. Only used for Metapackage
+# modified: has the bundle been modified since the last debianization? Only used for Metapackage
+# name: only used for Package
+# name_tid: Internationalized name for bundle (using table Translation) Only used for Metapackage
+# p_nofiles: ???
+# p_old: ???
+# p_recent: ???
+# p_vote: ???
+# popcon: rating in the Ubuntu popularity contest. Only used for Package
+# published: only used for Metapackage
+# ratings_count: how many ratings? Only used for Metapackage
+# section: abbreviated Debian section, only used for Package
+# section_id: internationalized section (for future use)
+# security_type: 0 = Ubuntu only, 1 = also Ubuntu community, 2 = also third-party. Only used for Metapackage
+# type: "Package" or "Metapackage", distinguishes the two subclasses
+# url_tid: ???
+# urls: only used for Package
+# user_id: creator of the bundle, only used for Metapackage
+# version: debian version of the bundle, only used for Metapackage
+
 class BasePackage < ActiveRecord::Base
   require 'set.rb'
   require 'lib/utils.rb'

@@ -3,6 +3,10 @@
 
 # join table providing the list of users of a liveCD
 
+# database fields: 
+# livecd_id
+# user_id
+
 class LivecdUser < ActiveRecord::Base
   belongs_to :livecd
   belongs_to :user

@@ -6,6 +6,10 @@
 #  as well as indirect conflicts, via dependencies)
 # currently not used
 
+# database fields: 
+# package_id
+# package2_id
+
 class Conflict < ActiveRecord::Base
   belongs_to :base_package, :foreign_key => :package2_id
 end

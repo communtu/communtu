@@ -3,6 +3,11 @@
 
 # join table linking package_distrs and architectures
 
+# database fields: 
+# architecture_id
+# outdated
+# package_distr_id
+
 class PackageDistrsArchitecture < ActiveRecord::Base
   belongs_to :package_distr
   belongs_to :architecture
