@@ -1011,6 +1011,7 @@ a.download:hover, a.download:active{
 .navi a{
 	color:#fff;
 	font-weight:bold;
+	text-decoration: none;
 	}
 .navi a.person{
 	color:#000;
