@@ -65,36 +65,31 @@
 <!-- mainnavigation -->
 <div class="navi">
 	<!-- button -->
-<%= "<a href='" + user_path(current_user) + "/user_profile/edit'>" %>
-<% if params[:controller] == "user_profiles" %>
-                 <%= image_tag("/images/navi_downloadon.png", :border => '0', :alt=>t(:view_layouts_application_27),:title=>t(:view_layouts_application_27)) %>  <div class="navi_eins"><%= t(:view_layouts_application_24) %></div>
-<% else %>   
-		 <%= image_tag("/images/navi_download.png", :border => '0', :alt=>t(:view_layouts_application_27),:title=>t(:view_layouts_application_27)) %> 			<div class="navi_eins"><%= t(:view_layouts_application_24) %></div>
-<% end %>
-</a>
-<% @has_own_bundles = Metapackage.find_all_by_user_id(current_user.object_id) %>
-<% if @has_own_bundles.length != 0 %>
-	<%= "<a href='" + user_path(current_user) + "/metapackages/0'>" %>
-<% else %>
-        <%= "<a href='" + user_path(current_user) + "/metapackages/1'>" %>
-<% end %>
-<% if ((params[:controller] == "packages") or (params[:controller] == "users" and params[:action] == "metapackages") or (params[:controller] == "home" and params[:action] == "new_repository") or params[:controller] == "metapackages" or params[:controller] == "distributions" or params[:controller] == "repositories") %>
-<%= image_tag("/images/navi_buendelon.png", :border => '0', :alt=>t(:view_layouts_application_26),:title=>t(:view_layouts_application_26)) %> <div class="navi_zwei"><%= t(:view_layouts_application_23) %></div>
-<% else %>
-<%= image_tag("/images/navi_buendel.png", :border => '0', :alt=>t(:view_layouts_application_26),:title=>t(:view_layouts_application_26)) %> <div class="navi_zwei"><%= t(:view_layouts_application_23) %></div>
-<% end %>
-		</a>
-<a href="/home/about">
-  <% if ((params[:controller] == "home" and params[:action] != "home") and (params[:controller] == "home" and params[:action] != "new_repository")) or params[:controller] == "articles" %>
- <%= image_tag("/images/navi_communtuon.png", :border => '0', :alt=>t(:navigation_communtu),:title=>t(:navigation_communtu))  %>
+<% image = if params[:controller] == "user_profiles" then "/images/navi_downloadon.png" else "/images/navi_download.png" end %>	
+<% imagetag = image_tag(image, :border => '0', :alt=>t(:view_layouts_application_27),:title=>t(:view_layouts_application_27)) %>
+<% text = "<div class=\"navi_eins\">#{t(:view_layouts_application_24)}</div> "%>
+<%= link_to(imagetag+text,user_path(current_user) + "/user_profile/edit") %>
 
- 		<div class="navi_drei">	<%= t(:view_layouts_application_25) %></div>
-		</a>
-  <% else %>
-<%= image_tag("/images/navi_communtu.png", :border => '0', :alt=>t(:navigation_communtu),:title=>t(:navigation_communtu))  %>	
- 			<div class="navi_drei"><%= t(:view_layouts_application_25) %></div>
-		</a>
-<% end %>
+<% if ((params[:controller] == "packages") or (params[:controller] == "users" and params[:action] == "metapackages") or (params[:controller] == "home" and params[:action] == "new_repository") or params[:controller] == "metapackages" or params[:controller] == "distributions" or params[:controller] == "repositories") 
+     image = "/images/navi_buendelon.png" 
+   else 
+     image = "/images/navi_buendel.png" 
+   end %>	
+<% @has_own_bundles = Metapackage.find_all_by_user_id(current_user.object_id) %>
+<% link = if @has_own_bundles.length != 0 then "0" else "1" end %>
+<% imagetag = image_tag(image, :border => '0', :alt=>t(:view_layouts_application_26),:title=>t(:view_layouts_application_26)) %> 
+<% text = "<div class=\"navi_zwei\">#{t(:view_layouts_application_23)}</div>" %>
+<%= link_to(imagetag+text,user_path(current_user) + "/metapackages/#{link}") %>
+
+<% if ((params[:controller] == "home" and params[:action] != "home") and (params[:controller] == "home" and params[:action] != "new_repository")) or params[:controller] == "articles" %>
+   <% image = "/images/navi_communtuon.png" %>
+ <% else %>
+   <% image = "/images/navi_communtu.png" %>
+ <% end %>
+<% imagetag = image_tag(image, :border => '0', :alt=>t(:navigation_communtu),:title=>t(:navigation_communtu))  %>
+<% text = "<div class=\"navi_drei\">#{t(:view_layouts_application_25)}</div>" %>
+<%= link_to(imagetag+text,"/home/about") %>
+
 		
 	<!-- user -->
 <% if logged_in? %>
