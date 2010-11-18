@@ -95,7 +95,7 @@
 </div></td></tr>
 </table>
 </td>
-<% if !request.env['HTTP_REFERER'].nil? then %>
+<% if !request.env['HTTP_REFERER'].nil? and (@metapackage.user==current_user or is_admin?) then %>
 
      <td width="25%">
 
