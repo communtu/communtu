@@ -222,7 +222,10 @@ module ApplicationHelper
     return true
   end
 
-    def check_english_bundle_name(name_english,bundle=nil)
+  def check_english_bundle_name(name_english,bundle=nil)
+    if name_english.nil?
+      return false
+    end
     # compute debian names of existing metapackages, without "communtu-" oder "communtu-private-bundle-" prefix
     metanames = (Metapackage.all-[bundle]).map{|m| if m.name_english.nil? then "" else BasePackage.debianize_name(m.name_english) end}
     if name_english==t(:new_bundle) or metanames.include?(BasePackage.debianize_name(name_english)) then
