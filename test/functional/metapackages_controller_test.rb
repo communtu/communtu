@@ -15,7 +15,7 @@ class MetapackagesControllerTest < ActionController::TestCase
   def test_should_create_metapackage
     login_as(:admin)
     assert_difference('Metapackage.count') do
-      post :create, :metapackage => {:name=>"Krischans Büro-Tools", 
+      post :create, :metapackage => {:name=>"fancy name not existing so far", 
                       :category_id => Category.first.object_id, :version=>"0.1", :license_type => 0,
                       :description=>"Meine unverzichtbaren Programme und Helferlein für den Büroalltag"}
     end
