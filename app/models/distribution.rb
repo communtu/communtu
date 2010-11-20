@@ -5,15 +5,15 @@
 # Communtu allows the contents of bundles to depend on the distribution
 
 # database fields: 
-# description
-# description_tid
-# distribution_id
-# invisible
-# name
-# preliminary
-# short_name
-# url
-# url_tid
+# description: deprecated
+# description_tid: internationalised description, using table Translation
+# distribution_id: predecessor distribution
+# invisible: distributions should be marked invisible during setup of a new distribution
+# name: full name, like Lucid Lynx 10.04
+# preliminary: distributions should be marked preliminary if they have not been officially released yet 
+# short_name: abbreviated name, like Lucid
+# url: deprecated
+# url_tid: internationalised link to further info, using table Translation
 
 class Distribution < ActiveRecord::Base
   require "lib/utils.rb"

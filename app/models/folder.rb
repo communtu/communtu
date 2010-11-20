@@ -5,8 +5,8 @@
 
 # database fields: 
 # name
-# parent_id
-# user_id
+# parent_id: parent folder
+# user_id: owner of the folder
 
 class Folder < ActiveRecord::Base
   acts_as_tree

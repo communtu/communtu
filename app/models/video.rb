@@ -5,10 +5,10 @@
 
 # database fields: 
 # base_package_id
-# description
-# description_tid
-# url
-# url_tid
+# description: deprecated
+# description_tid: internationalised description (using table Translation)
+# url: deprecated
+# url_tid: internationalised url of the video (using table Translation)
 
 class Video < ActiveRecord::Base
    require "lib/utils.rb"

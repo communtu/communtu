@@ -5,14 +5,14 @@
 # in the future, this could be replaced by DebTags
 
 # database fields: 
-# description
-# description_tid
-# link
-# link_tid
-# main
-# name
-# name_tid
-# parent_id
+# description: deprecated
+# description_tid: localized description, using table Translation
+# link: deprecated
+# link_tid: localized link to web page of the Ubuntu community, using table Translation
+# main: flag determining whether the category is displayed as main category on the software selection page
+# name: deprecated
+# name_tid: localized name, using table Translation
+# parent_id: link to parent category (nil if we are the root)
 
 class Category < ActiveRecord::Base
   require "lib/utils.rb"

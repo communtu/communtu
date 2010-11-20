@@ -4,10 +4,10 @@
 # Comments to bundles and other things
 
 # database fields: 
-# comment
-# comment_tid
-# metapackage_id
-# user_id
+# comment: comment string (deprecated)
+# comment_tid: internationalised comment string (via table Translation)
+# metapackage_id: bundle that is being commented
+# user_id: creator of the comment
 
 class Comment < ActiveRecord::Base
 #  require "lib/utils.rb"

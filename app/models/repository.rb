@@ -11,7 +11,7 @@
 # gpgkey: key for the repository, should be imported with apt-key
 # package_file: ???
 # gpgkey_tid: ???
-# url_tid: ???
+# url_tid: for future use (localised urls)
 
 require 'open-uri'
 require 'zlib'

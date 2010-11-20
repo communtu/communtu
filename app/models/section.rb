@@ -5,8 +5,8 @@
 # shall be replaced by debtags
 
 # database fields: 
-# name
-# name_tid
+# name: deprecated
+# name_tid: internationalised name, using table Translation
 
 class Section < ActiveRecord::Base
   validates_uniqueness_of  :name_tid

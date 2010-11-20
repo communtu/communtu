@@ -4,8 +4,8 @@
 # logging of the controller actions called by a user
 
 # database fields: 
-# refferer
-# user_id
+# refferer: url (should be renamed)
+# user_id: user
 
 class Userlog < ActiveRecord::Base
 end

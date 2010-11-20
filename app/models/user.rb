@@ -4,30 +4,30 @@
 # users (following the plugin lib_authenticated)
 
 # database fields: 
-# activated_at
-# activation_code
-# advanced
-# anonymous
-# architecture_id
+# activated_at: deprecated
+# activation_code: deprecated
+# advanced: advanced users can see pre-release distributions
+# anonymous: anonymous users have generated names and less rights 
+# architecture_id: architecture that user has selected in his settings 
 # crypted_password
-# derivative_id
-# distribution_id
+# derivative_id: derivative that user has selected in his settings 
+# distribution_id: distribution that user has selected in his settings 
 # email
-# enabled
-# first_login
+# enabled: ???
+# first_login: 1 = first login
 # firstname
-# language_id
-# license
-# login
+# language_id: currently not used
+# license: as selected by the user, 0 = free, 1 = free or proprietary 
+# login: user login name
 # password_reset_code
-# profile_changed
-# profile_version
-# remember_token
+# profile_changed: has the profile changed (due to new selections of categories/bundles)
+# profile_version: version of user profile
+# remember_token: for "remember me" checkbox
 # remember_token_expires_at
-# salt
-# security
+# salt: for password encryption
+# security: as selected by the user, 0 = Ubuntu only, 1 = also Ubuntu community, 2 = also third-party
 # surname
-# template_id
+# template_id: deprecated
 
 require 'digest/sha1'
 class User < ActiveRecord::Base

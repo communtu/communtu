@@ -5,7 +5,7 @@
 
 # database fields: 
 # architecture_id
-# outdated
+# outdated: flag used during repository synchronisation
 # package_distr_id
 
 class PackageDistrsArchitecture < ActiveRecord::Base

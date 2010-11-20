@@ -2,6 +2,7 @@
 # use, modification or distribution only with permission of the copyright holder
 
 # join table linking packages and tags (debtags)
+# the structure should probably changed such that packages are linked with factes and tags
 
 # database fields: 
 # package_id

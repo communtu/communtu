@@ -5,12 +5,12 @@
 # each translatable_id can have several translations (for the different language_codes)
 # translatable_ids are stored in other tables
 # e.g. the name of a metapackage is realised as translatable_id
-# (there it is called name_tid, see table base_packages)
+# (there it is called e.g. name_tid, see table base_packages)
 
 # database fields: 
-# contents
-# language_code
-# translatable_id
+# contents: the localised string
+# language_code: two-character code for the language
+# translatable_id: the id equal to e.g. name_tid
 
 class Translation < ActiveRecord::Base
   belongs_to(:language)

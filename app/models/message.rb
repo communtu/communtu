@@ -4,7 +4,7 @@
 # mail messages of the Communtu messanging system
 
 # database fields: 
-# author_id
+# author_id: user who created the message
 # body
 # subject
 

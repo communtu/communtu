@@ -5,10 +5,10 @@
 # Communtu allows the contents of bundles to depend on the derivative
 
 # database fields: 
-# dialog
-# icon_file
+# dialog: graphical dialog program, like zenity or kdialog (should be replaced with debconf standard)
+# icon_file: for future use
 # name
-# sudo
+# sudo: graphical sudo command, like gksudo or kdesudo
 
 class Derivative < ActiveRecord::Base
   has_many :metacontents_derivatives

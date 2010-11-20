@@ -5,29 +5,31 @@
 # this allows for better error logging and recovery
 # note that the iso itself is stored in the file system, however
 
+# a liveCD can be based either on a user profile or on a bundle
+
 # database fields: 
-# architecture_id
-# derivative_id
-# distribution_id
-# failed
-# first_try
-# generated
-# generating
-# installdeb
-# iso
-# kvm
-# license_type
-# log
-# metapackage_id
+# architecture_id: architecture of the liveCD
+# derivative_id: derivative of the liveCD
+# distribution_id: distribution of the liveCD
+# failed: has build process failed?
+# first_try: is this the first try to build the liveCD? (only then a failure message is sent)
+# generated: has the liveCD been successfully built?
+# generating: currently, the liveCD is being built
+# installdeb: deb for the bundle installing the contents of the liveCD
+# iso: location of iso image file on the server
+# kvm: does the user want to have a kvm image?
+# license_type: 0 = free, 1 = free or proprietary.
+# log: relevant extract of log file
+# metapackage_id: bundle on which the liveCD is based
 # name
-# pid
-# profile_version
-# security_type
-# size
-# srcdeb
-# usb
-# vm_hda
-# vm_pid
+# pid: process id of forked process that builds the liveCD
+# profile_version: version of user profile that has been used for liveCD build
+# security_type: 0 = Ubuntu only, 1 = also Ubuntu community, 2 = also third-party.
+# size: size of the iso image
+# srcdeb: deb file for installing the sources
+# usb: does the user want to have a usb image? (deprecated)
+# vm_hda: hard disk file for virtual machine (when testing liveCD via vnc)
+# vm_pid: process id of virtual machine (when testing liveCD via vnc)
 
 require "lib/utils.rb"
 

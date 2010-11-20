@@ -11,17 +11,17 @@
 # repository using the tool reprepro.
 
 # database fields: 
-# derivative_id
-# distribution_id
-# errmsg
-# generated
-# license_type
-# log
-# metapackage_id
-# outdated
-# security_type
-# url
-# version
+# derivative_id: derivative of the package
+# distribution_id: distribution of the package
+# errmsg: error message issued during package build
+# generated: has the package successfully been generated?
+# license_type: 0 = free, 1 = free or proprietary.
+# log: relevant part of log/debianize.log
+# metapackage_id: bundle for which this package is an instance
+# outdated: is the package outdated?
+# security_type: 0 = Ubuntu only, 1 = also Ubuntu community, 2 = also third-party.
+# url: extended version, like 0.112-kubuntu-karmic-free-trusted (this field should be renamed...)
+# version: short version, like 0.112
 
 class Deb < ActiveRecord::Base
   belongs_to :metapackage

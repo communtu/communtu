@@ -1,11 +1,11 @@
 # (c) 2008-2010 by Verein Allgemeinbildung e.V., Bremen, Germany
 # use, modification or distribution only with permission of the copyright holder
 
-# join table linking bundles with the packages they contain
+# join table linking bundles with the packages and bundles they contain
 
 # database fields: 
-# base_package_id
-# metapackage_id
+# base_package_id: id of package or bundle that is contained in the bundle
+# metapackage_id: bundle
 
 class Metacontent < ActiveRecord::Base
 

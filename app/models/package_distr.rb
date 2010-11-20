@@ -4,13 +4,13 @@
 # join table linking packages and distributions
 
 # database fields: 
-# distribution_id
-# filename
-# installedsize
-# outdated
-# package_id
-# repository_id
-# size
+# distribution_id: distribution (although this can also be obtained from the repository)
+# filename: file in the repository's pool
+# installedsize: size of the package when installed on a computer, in KiB
+# outdated: flag used during repository synchronisation
+# package_id: package
+# repository_id: repository
+# size: size of the package file, in bytes
 # version
 
 class PackageDistr < ActiveRecord::Base
