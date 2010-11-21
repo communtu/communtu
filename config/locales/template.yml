@@ -831,7 +831,7 @@ de:
   view_user_profiles__installation_29: ' konfigurieren.'
   view_user_profiles__installation_30: 'Hinweis: Bitte .deb-Dateien nicht umbenennen.'
   view_user_profiles__installation_31: Die Communtu-Metapakete können auch mittles {{synaptic}} (unter System -> Systemverwaltung) angezeigt, installiert und deinstalliert werden. Änderungen an Bündeln werden über die Ubuntu-Paketverwaltung automatisch eingespielt.
-  view_user_profiles__installation_33: Folgende
+  view_user_profiles__installation_33: Diese
   view_user_profiles__installation_34: werden zu dem System hinzugefügt.
   view_user_profiles__profile_data_0: 'Installation vorbereiten: Voreinstellungen eingeben'
   view_user_profiles__profile_data_1: 'Auf dieser Seite kannst du die Grundeinstellungen deines Computers angeben. '
