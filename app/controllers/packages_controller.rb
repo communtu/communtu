@@ -202,4 +202,7 @@ if !params[:video_url].nil? then
     @dependencies = @package.structured_all_recursive_packages    
   end
 
+  def install
+    @package  = Package.find(params[:id])   
+  end
 end

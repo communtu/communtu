@@ -238,6 +238,9 @@ de:
   install2: installieren
   install_by_default: 'Standardmäßig installieren:'
   install_package_sources_first: Paket installieren. Bitte ggf. vorher die Quellen hinzufügen.
+  install_bundle: Installation des Bündels {{name}}
+  install_package: Installation des Pakets {{name}}
+  install_software: Software installieren
   installing_using_script: installieren mittels Skript
   invalid_activation_code_entered: Ungültiger Anderungscode eingegeben.
   invalid_activation_code_please_check_again: Ungültiger Anderungscode. Bitte den Code prüfen und nochmals versuchen. (Vielleicht hat dein Email-Programm einen Zeilenumbruch eingefügt?)

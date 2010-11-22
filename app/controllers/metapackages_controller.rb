@@ -540,6 +540,10 @@ class MetapackagesController < ApplicationController
     ms=Metapackage.all.select{|m| Metacontent.find(:first,:conditions=>["metacontents_distrs.distribution_id = 6 and metapackage_id = ?",m.id],:include=>:metacontents_distrs).nil?}
   end
 
+  def install
+    @metapackage  = Metapackage.find(params[:id])   
+  end
+
   private
 
   def check_owner(meta,user)

@@ -1,0 +1,4 @@
+<h2><%=t(:install_package, :name => @package.name)%></h2>
+<% url1 = "/users/#{current_user.id}/suggestion/install_package_sources/#{@package.id}" %>
+    <% url2 = 'apt://'+@package.debian_name%> 
+<%= render :partial => 'metapackages/install', :locals => {:url1 => url1, :url2 => url2} %>
