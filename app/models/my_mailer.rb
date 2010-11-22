@@ -10,7 +10,7 @@ class MyMailer < ActionMailer::Base
     @recipients = 'at@bremer-commune.de'
     @from = current_user.email
     @sent_on = Time.now
-    @subject = I18n.t(:model_mailer_1)
+    @subject = "[Communtu] " + I18n.t(:model_mailer_1)
     @body = {:title => @form_name, :comment => @form_frage}
     @headers = {}
   end
@@ -20,7 +20,7 @@ class MyMailer < ActionMailer::Base
     @recipients = 'at@bremer-commune.de'
     @from = current_user.email
     @sent_on = Time.now
-    @subject = I18n.t(:model_mailer_5)
+    @subject = "[Communtu] " + I18n.t(:model_mailer_5)
     @body = {:title => @form_name, :comment => @form_frage}
     @headers = {}
   end                              
@@ -29,7 +29,7 @@ class MyMailer < ActionMailer::Base
     @recipients = 'at@bremer-commune.de'
     @from = @form_email
     @sent_on = Time.now
-    @subject = I18n.t(:model_mailer_1)
+    @subject = "[Communtu] " + I18n.t(:model_mailer_1)
    # @body = {:title => @form_name, :comment => @form_frage}
     @headers = {}
   end
@@ -38,7 +38,7 @@ class MyMailer < ActionMailer::Base
     @body[:url]  = iso
     @recipients  = "#{user.email}"
     @from        = "info@communtu.org"
-    @subject     = I18n.t(:livecd_email)
+    @subject     = "[Communtu] " + I18n.t(:livecd_email)
     @sent_on     = Time.now
     @body[:user] = user
     @headers = {}
@@ -48,7 +48,7 @@ class MyMailer < ActionMailer::Base
     @cdname      = name
     @recipients  = "#{user.email}"
     @from        = "info@communtu.org"
-    @subject     = I18n.t(:livecd_email_failed)
+    @subject     = "[Communtu] " + I18n.t(:livecd_email_failed)
     @sent_on     = Time.now
     @body[:user] = user
     @headers = {}
@@ -56,25 +56,25 @@ class MyMailer < ActionMailer::Base
 
   def signup_notification(user)
     setup_email(user)
-    @subject    = I18n.t(:model_mailer_0)
+    @subject    = "[Communtu] " + I18n.t(:model_mailer_0)
     @body[:url]  = "http://www.communtu.de"
   end
 
   def activation(user)
     setup_email(user)
-    @subject    = I18n.t(:model_mailer_2)
+    @subject    = "[Communtu] " + I18n.t(:model_mailer_2)
     @body[:url]  = "http://www.communtu.de"
   end
 
   def forgot_password(user)
     setup_email(user)
-    @subject    = I18n.t(:model_mailer_3)
+    @subject    = "[Communtu] " + I18n.t(:model_mailer_3)
     @body[:url]  = "http://localhost:3000/reset_password/#{user.password_reset_code}"
   end
 
   def reset_password(user)
     setup_email(user)
-    @subject    = I18n.t(:model_mailer_4)
+    @subject    = "[Communtu] " + I18n.t(:model_mailer_4)
   end
 
   protected
