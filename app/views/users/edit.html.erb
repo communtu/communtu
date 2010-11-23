@@ -6,7 +6,7 @@
 <%= render_flash %>
 <div class="inner1">
 <% if !@user.anonymous %>
-<p><%= link_to t(:change_passwd), change_password_path %> | <%= link_to t(:view_users_edit_2), :id => @user.id, :action => 'delete' %>  </p>
+<p><%= link_to t(:change_passwd), change_password_path %> | <%= link_to t(:view_users_edit_2), :id => @user.id, :action => 'selfdestroy' %>  </p>
 <%= error_messages_for :user %>
 <% end %>
  

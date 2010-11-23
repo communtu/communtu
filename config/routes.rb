@@ -60,7 +60,7 @@ ActionController::Routing::Routes.draw do |map|
   end
 
 
-  # URLs should be adpated to controllers
+  # URLs should be adpated to controllers  
   map.connect '/users/:distribution_id/suggestion', :controller => 'suggestion', :action => 'show'
   map.connect '/users/:id/suggestion/install', :controller => 'suggestion', :action => 'install'
   map.connect '/users/:id/suggestion/install_new', :controller => 'suggestion', :action => 'install_new'
@@ -81,6 +81,7 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/users/:user_id/user_profile/bundle_to_livecd/:id', :controller => 'user_profiles', :action => 'bundle_to_livecd'
   map.connect '/users/:user_id/user_profile/create_livecd_from_bundle/:id', :controller => 'user_profiles', :action => 'create_livecd_from_bundle'
   map.connect '/users/:id/destroy', :controller => 'users', :action => 'destroy'
+  map.connect '/users/:id/selfdestroy', :controller => 'users', :action => 'selfdestroy'
   map.connect '/users/:id/show', :controller => 'users', :action => 'show'
   map.connect '/users/:id/cart/:action/:id', :controller => 'cart'
 

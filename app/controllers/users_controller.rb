@@ -170,15 +170,25 @@ class UsersController < ApplicationController
     redirect_to :action => 'index'
   end
  
+  def selfdestroy
+    @user = User.find(params[:id])
+    if @user.update_attribute(:enabled, false)
+      flash[:notice] = t(:controller_users_8)
+    else
+      flash[:error] = t(:controller_users_9)
+    end
+    redirect_to '/logout'
+  end                                     
+ 
   def delete
     @user = User.find(params[:id])
     @user.delete
- #   if @user.update_attribute(:enabled, false)
- #     flash[:notice] = t(:controller_users_10)
- #   else
- #     flash[:error] = t(:controller_users_11)
- #   end
- #   redirect_to '/logout'
+#    if @user.update_attribute(:enabled, false)
+#      flash[:notice] = t(:controller_users_10)
+#    else
+#      flash[:error] = t(:controller_users_11)
+#    end
+#    redirect_to '/logout'
   end
   
   def enable
