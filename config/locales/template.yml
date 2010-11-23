@@ -280,7 +280,7 @@ de:
   livecd_start_message: 'Hier kannst du eine Live-CD/DVD erstellen lassen, die die von dir ausgewählte Software enthält. Du hast folgende Bündel ausgewählt:'
   logfile_extract: Auszug aus dem Logfile
   mailinglist: 'Mailinglisten:'
-  make_a_systemupgrade: Du möchtest ein System-Upgrade machen. Dann schau <a href="http://communtu.wordpress.com/2009/09/16/mit-communtu-ein-systemupgrade-durchfuhren/">wie einfach das geht</a> und lade deine Paketliste bei Communtu hoch.
+  make_a_systemupgrade: Du möchtest ein System-Upgrade machen oder deine interessanten Programme einbringen? Dann schau <a href="http://communtu.wordpress.com/2009/09/16/mit-communtu-ein-systemupgrade-durchfuhren/">wie einfach das geht</a> und lade deine Paketliste bei Communtu hoch.
   make_distribution_final: Distribution als stabil freigeben
   make_distribution_visible: Distribution sichtbar machen
   make_your_bundle: Erstelle dir ein Bündel zum System-Upgrade
