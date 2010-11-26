@@ -352,7 +352,7 @@ class Deb < ActiveRecord::Base
 
   # remove packages whose distribution has vanished
   def self.clearvanished
-    safe_system "#{REPREPRO} --delete clearvanished"
+    safe_system "#{RAILS_ROOT}/script/clearvanished"
   end
 
   # write reprepro configuration file
