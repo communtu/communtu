@@ -1,0 +1,4 @@
+#!/bin/bash
+RAILS_ROOT=`dirname "$0"`/..
+export GNUPGHOME=/home/communtu/.gnupg 
+reprepro -v -b RAILS_ROOT --outdir RAILS_ROOT/public/debs --confdir RAILS_ROOT/debs --logdir RAILS_ROOT/log --dbdir RAILS_ROOT/debs/db --listdir RAILS_ROOT/debs/list
