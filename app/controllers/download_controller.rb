@@ -2,23 +2,50 @@
 # use, modification or distribution only with permission of the copyright holder
 
 
-class UserProfilesController < ApplicationController
+class DownloadController < ApplicationController
+    PATHS = {"install" => [{:name => I18n.t(:download_area), :action => "start"},
+             {:name => I18n.t(:model_user_profile_tabz_1), :action => "selection"},
+             {:name => I18n.t(:add_sources), :action => "prepare_install_sources"},
+             {:name => I18n.t(:controller_suggestion_15), :action => "installation"}],
+             "cd" => [{:name => I18n.t(:download_area), :action => "start"},
+             {:name => I18n.t(:model_user_profile_tabz_1), :action => "selection"},
+             {:name => "CD erstellen", :action => "livecd"},
+             {:name => "Auf Email warten", :action => "cd_email"},
+             {:name => "CD fertig", :action => "current_cd"}],
+             "usb" => [{:name => I18n.t(:download_area), :action => "start"},
+             {:name => I18n.t(:model_user_profile_tabz_1), :action => "selection"},
+             {:name => "iso erstellen", :action => "livecd"},
+             {:name => "Auf Email warten", :action => "cd_email"},
+             {:name => "iso fertig", :action => "current_cd"}
+            # {:name => "USB-Stick erstellen", :action => "usb"}
+]
+            }
+             
+
+  
   def title
-    if params[:controller] == "user_profiles" and params[:action] == "edit"
+    if params[:controller] == "download" and params[:action] == "selection"
       "Communtu: " + t(:model_user_profile_tabz_1)
-    elsif params[:controller] == "user_profiles" and params[:action] == "settings"
+    elsif params[:controller] == "download" and params[:action] == "settings"
       "Communtu: " + t(:model_user_profile_tabz_4)
-    elsif params[:controller] == "user_profiles" and params[:action] == "livecd"
+    elsif params[:controller] == "download" and params[:action] == "livecd"
       "Communtu: " + t(:livecd)
     else
       t(:controller_profiles_0)
     end
   end  
   
-  helper :user_profiles  
-    
-  def edit
+  helper :download
+  
+  def start
+    session[:path] = "installation"
+  end
+
+  def selection
     if check_login then return end
+    if !params[:path].nil?
+      session[:path] = params[:path]
+    end  
     user = current_user
     @ratings = {}
     user.user_profiles.each do |profile|
@@ -66,6 +93,10 @@ class UserProfilesController < ApplicationController
     @additional_sources -= @sources.keys
   end
 
+  def prepare_install_sources
+    if check_login then return end
+  end
+
   def installation
     if check_login then return end
     @metas = current_user.selected_packages.uniq.map{|m| m.debian_name}.join(",")
@@ -97,12 +128,12 @@ class UserProfilesController < ApplicationController
     if user.derivative.distributions.include?(user.distribution) then
       user.save!
       user.increase_version
-      redirect_to user_user_profile_path(current_user) + "/installation"
+      redirect_to "/download/installation"
     else
       flash[:error] = t(:distribution_derivative_mismatch, 
                         :derivative => user.derivative.name,
                         :distributions=> user.derivative.distributions.map{|d| d.short_name}.join(", "))
-      redirect_back_or_default('/user_profiles/settings')
+      redirect_back_or_default('/download/settings')
     end
   end
   
@@ -143,7 +174,6 @@ class UserProfilesController < ApplicationController
       end
     end
     render :nothing => true
-    # redirect_to user_user_profile_path(current_user) + "/installation"
   end
 
   def create_livecd
@@ -152,7 +182,7 @@ class UserProfilesController < ApplicationController
     err = Livecd.check_name(name)
     if !err.nil? then
       flash[:error] = err
-      redirect_to user_user_profile_path(current_user) + "/livecd"
+      redirect_to "/download/livecd"
     else
       flash[:notice] = t(:livecd_create)
       # create new live CD
@@ -181,5 +211,20 @@ class UserProfilesController < ApplicationController
       flash[:error] = t(:livecd_failed)
     end
     redirect_to "/livecds"
+  end
+  
+  def cd_email
+    @cd = current_user.current_livecd
+    if !@cd.nil? and @cd.generated 
+      redirect_to :action => 'current_cd'
+    end
+  end
+
+  def current_cd
+    @cd = current_user.current_livecd
+  end
+
+  def usb
+    @cd = current_user.current_livecd
   end
 end

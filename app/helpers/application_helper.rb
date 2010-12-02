@@ -28,7 +28,7 @@ module ApplicationHelper
   
   def on_user_page?
     (controller.controller_name == "users" or
-     controller.controller_name == "user_profiles" or
+     controller.controller_name == "download" or
      controller.controller_name == "suggestion")
   end
   

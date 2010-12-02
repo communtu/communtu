@@ -200,11 +200,7 @@ class UsersController < ApplicationController
     end
       redirect_to :action => 'index'
   end
-  
-  def metapackages
-    redirect_to "/metapackages/index/#{params[:id]}"
-  end
-  
+   
   def desc   
   end
 

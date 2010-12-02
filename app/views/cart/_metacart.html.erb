@@ -41,7 +41,7 @@
 		                :src => "/images/delete.png",\
                         :class => "link_img",\
 			            :width => 12, :height => 12}),\
-			            :url => user_path(current_user) + "/cart/rem_from_cart/" + package.id.to_s,\
+			            :url => "/cart/rem_from_cart/" + package.id.to_s,\
 			            :update => :meta_cart) %>
 		
 	</td>
@@ -51,15 +51,15 @@
 <% end %>
 </table>
 <div class="jump_list">
-<%= link_to(image_tag("icon_save.png", :size => "17x17", :border => "0"), user_path(current_user) + "/cart/save") %>
+<%= link_to(image_tag("icon_save.png", :size => "17x17", :border => "0"), "/cart/save") %>
     <%= link_to_remote(image_tag("icon_delete.png", :size => "11x17", :border => "0"), \
             :update => 'meta_cart', \
-            :url => user_path(current_user) + "/cart/clear") %>
-<%= link_to(t(:view_cart_new_from_list_0), user_path(current_user) + "/cart/new_from_list") %></div>
+            :url => "/cart/clear") %>
+<%= link_to(t(:view_cart_new_from_list_0), "/cart/new_from_list") %></div>
 <% else %>
     <div style="valign:bottom;">
 <br /><br /><br /><br /><br /><br />
-            <%= link_to(t(:new_bundle), user_path(current_user) + "/cart/create") %> <br /><br />
-<%= link_to(t(:view_cart_new_from_list_0), user_path(current_user) + "/cart/new_from_list") %>
+            <%= link_to(t(:new_bundle), "/metapackages/new") %> <br /><br />
+<%= link_to(t(:view_cart_new_from_list_0), "/cart/new_from_list") %>
     </div>
 <% end %>

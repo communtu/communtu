@@ -793,6 +793,25 @@ a.download:hover, a.download:active{
 	background-color:#F3F2F2;
 	border-top:2px solid #C6C6C6;
 	}
+	/*Navigation prealpha!*/
+.path_continue{
+	position:absolute;
+	left:48em;
+	top:0.5em;
+	width:22em;
+ 	}
+.path_back{
+	position:absolute;
+	left:40em;
+	top:0.5em;
+	width:22em;
+ 	}
+.path{
+	position:absolute;
+	left:58em;
+	top:0.5em;
+	width:22em;
+ 	}
 
 /**************************************************/
 /* home  */
@@ -901,7 +920,7 @@ a.download:hover, a.download:active{
 .communtu_box{
 	 position:absolute;
 	 left:58em;
-	 top:8.8em;
+	 top:18.8em;
 	 width:11em;
 	 padding-right:1em;
 	 padding-bottom:1em;

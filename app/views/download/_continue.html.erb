@@ -1,0 +1,10 @@
+<% path = DownloadController::PATHS[session[:path]] %>
+<% for i in 0..path.size-1 %>
+  <% if path[i][:action] == params[:action] and !path[i+1].nil?%>
+      <div class="path_continue">
+      <%= form_tag(path[i+1][:action], :method => 'get')%>	
+      <%= submit_tag(t(:continue)) %>
+	  </form>
+	  </div>
+  <% end %>
+<% end %>	

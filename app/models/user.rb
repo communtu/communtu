@@ -494,6 +494,9 @@ end
     return cd
   end
 
+  def current_livecd
+      Livecd.find(:first, :conditions=>["livecd_users.user_id = ?",self.id],:include=>"livecd_users",:order=>"livecds.id DESC")
+  end
 
   protected
   

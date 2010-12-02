@@ -4,7 +4,10 @@
 <% if current_user.anonymous? %>
 <%=t(:livecd_please_register, :register => link_to(t(:register_small), edit_user_path(current_user)))%>
 <% else %>
-  <h2><%=t(:livecd)%></h2> 
+<%= render :partial => "path"  %>
+
+  <% usb = session[:path]=="usb" %>
+  <h2><%=if usb then t(:usb) else t(:livecd) end%></h2> 
   <%= render_flash %>
   <%= render :partial => 'box' %>
   <% if current_user.selected_packages.empty? %>

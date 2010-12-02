@@ -1,0 +1,24 @@
+<% #  (c) 2008-2010 by Verein Allgemeinbildung e.V., Bremen, Germany  
+   #  use, modification or distribution only with permission of the copyright holder
+%>
+
+<%= render :partial => "path" %>
+
+<h2><%=t(:controller_suggestion_15)%></h2>
+<%= render_flash %>
+<%= render :partial => 'box' %>
+<% if current_user.selected_packages.empty? %>
+<%=t(:view_user_profiles__installation_1)%>
+
+<% else %>
+<%=t(:view_user_profiles__installation_23)%>
+     <ul>
+		<li><%= link_to t(:view_user_profiles__installation_24), '/suggestion/install_bundle_as_meta'%> </li>
+	    <li><% url2 = 'apt://'+@metas%>
+             <%= link_to t(:view_user_profiles__installation_25), url2 %>
+		     <br /><%=t(:view_user_profiles__installation_27)%><%= link_to 'apturl', t(:view_user_profiles__installation_28)%><%=t(:view_user_profiles__installation_29)%></li>
+	 </ul>
+<%=t(:view_user_profiles__installation_30)%><br />
+<%=t(:view_user_profiles__installation_31, {:synaptic => package_link("Synaptic")})%><br /><br />
+<% end %>
+</div>

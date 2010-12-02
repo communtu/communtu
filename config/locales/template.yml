@@ -44,6 +44,7 @@ de:
   category_without_colon: Kategorie
   cd_already_created: Die LiveCD/DVD wurde bereits erstellt.
   cd_being_created: Die LiveCD/DVD wird erstellt.
+  cd_created: Die LiveCD/DVD ist fertig.
   cd_donate: Die CD/DVD-Erstellung braucht viel Server-Kapazität. Bitte {{donate_link}}, um dieses Angebot weiter zu ermöglichen.
   cd_failed: Fehlgeschlagen - wir kümmern uns darum
   change: ändern
@@ -158,7 +159,9 @@ de:
   create_iso_image: <a href="http://ww.ubuntuusers.de/wiki/CD-Images">ISO-Image</a> erstellen (für CD/DVD)
   create_kvm_image: <a href="http://ww.ubuntuusers.de/wiki/KVM">KVM-Image</a> erstellen (für virtuelle Maschine)
   create_usb_image: <a href="http://ww.ubuntuusers.de/wiki/Live-USB">USB-Stick-Image</a> erstellen
-  create_your_livedvd: Erstelle dir eine Live-CD
+  create_your_livedvd: Erstelle dir eine Live-CD/DVD
+  create_your_livedvd_or_usb: Live-CD/DVD oder USB-Stick erstellen
+  create_your_usb: Erstelle dir einen USB-Stick
   creation_error: Bei der Erstellung des Pakets ist ein Fehler aufgetreten.
   creation_failed: Erzeugung fehlgeschlagen
   creation_in_progress: wird gerade erstellt
@@ -181,6 +184,7 @@ de:
   donation_purpose: 'Verwendungszweck: Communtu'
   donation_receipt: Spendenbescheinigung kann ausgestellt werden.
   download: herunterladen
+  download_area: Download-Bereich
   easy_install: Einfache Installationsmöglichkeiten für Ubuntu
   edit: Bearbeiten
   edit_architecture: Architektur bearbeiten
@@ -241,12 +245,14 @@ de:
   install_bundle: Installation des Bündels {{name}}
   install_package: Installation des Pakets {{name}}
   install_software: Software installieren
+  installation_two_steps: "Installation des Pakets in zwei Schritten:"
   installing_using_script: installieren mittels Skript
   invalid_activation_code_entered: Ungültiger Anderungscode eingegeben.
   invalid_activation_code_please_check_again: Ungültiger Anderungscode. Bitte den Code prüfen und nochmals versuchen. (Vielleicht hat dein Email-Programm einen Zeilenumbruch eingefügt?)
   invisible_distribution: Unsichtbare Distribution
   iso_deleted: Die ISO-Datei wurde leider aus Platzgründen gelöscht.
-  iso_image: ISO-Image (für CD/DVD)
+  iso_howto: Über den Link kannst du eine iso-Datei herunterladen. Diese kannst du dann unter Ubuntu z.B. mit {{brasero}} oder {{k3b}} brennen. Unter Windows gibt es ebenfalls verschiedene Brennprogramme. Bitte wähle eine Option wie "Abbild brennen" oder "iso brennen". Wenn die iso-Datei sehr groß ist, musst du eine DVD verwenden.<br /> Mit der entstandenen CD oder DVD kannst du dann <a href="http://wiki.ubuntuusers.de/Ubuntu_Installation" target="_blank">Ubuntu installieren</a>.
+  iso_image: ISO-Image 
   kommentieren: Kommentieren
   kontodaten: Konto 172 9375, Sparkasse Bremen, BLZ 290 501 01
   kurzname: Kurzname
@@ -273,18 +279,23 @@ de:
   livecd_image: CD-Image
   livecd_image_link: http://wiki.ubuntuusers.de/CD-Images
   livecd_incorrect_name: Der Name der LiveCD/DVD darf nur aus Buchstaben, Zahlen, _ und - bestehen
-  livecd_message: Über eine Live-CD kann die Software sowohl ausprobiert als auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} erstellt, in Form einer iso-Datei, die du dann brennen kannst. Zum Brennen benötigst du eine CD, falls du viel Software ausgewählt hast, eine DVD.<br /><br /> Die Erstellung des Images dauert eine gewisse Zeit. Du wirst per Email benachrichtigt, sobald das Image fertig ist. Bitte achte darauf, dass in deinen Benutzereinstellungen eine gültige Email-Adresse angegeben ist.
+  livecd_message: Über eine Live-CD kann die Software sowohl ausprobiert als auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} erstellt, die du dann brennen kannst.<br /><br /> Die Erstellung des Images dauert eine gewisse Zeit. Du wirst per Email benachrichtigt, sobald das Image fertig ist. Bitte achte darauf, dass in deinen Benutzereinstellungen eine gültige Email-Adresse angegeben ist.
+  liveusb_message: Über einen USB-Stick kann die Software sowohl ausprobiert als auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} erstellt, die du dann auf den USB-Stick übertragen kannst.<br /><br /> Die Erstellung des Images dauert eine gewisse Zeit. Du wirst per Email benachrichtigt, sobald das Image fertig ist. Bitte achte darauf, dass in deinen Benutzereinstellungen eine gültige Email-Adresse angegeben ist.
   livecd_please_register: Um Live-CD/DVDs zu erstellen, musst du dich erst {{register}}.
-  livecd_previous_cds: 'Bisher erstellte Live-CDs/DVDs:'
+  livecd_previous_cds: 'Bisher erstellte Iso-Dateien (für Live-CDs/DVDs oder USB-Sticks):'
   livecd_start: Live-CD/DVD erstellen
   livecd_start_message: 'Hier kannst du eine Live-CD/DVD erstellen lassen, die die von dir ausgewählte Software enthält. Du hast folgende Bündel ausgewählt:'
+  liveusb_start_message: 'Hier kannst du einen USB-Stick erstellen lassen, der die von dir ausgewählte Software enthält. Du hast folgende Bündel ausgewählt:'
+  liveusb_start: Iso-Datei erstellen
   logfile_extract: Auszug aus dem Logfile
   mailinglist: 'Mailinglisten:'
   make_a_systemupgrade: Du möchtest ein System-Upgrade machen oder deine interessanten Programme einbringen? Dann schau <a href="http://communtu.wordpress.com/2009/09/16/mit-communtu-ein-systemupgrade-durchfuhren/">wie einfach das geht</a> und lade deine Paketliste bei Communtu hoch.
   make_distribution_final: Distribution als stabil freigeben
   make_distribution_visible: Distribution sichtbar machen
   make_your_bundle: Erstelle dir ein Bündel zum System-Upgrade
-  make_your_livedvd: Du hast noch kein Ubuntu installiert. Dann wähle hier deine Bündel aus und brenne dir eine CD, damit du sie als Live-CD und zur Installation nutzen kannst.
+  make_your_livedvd: Du hast noch kein Ubuntu installiert. Dann wähle hier deine Bündel aus und brenne dir eine CD oder DVD, damit du sie als Live-System oder zur Installation nutzen kannst.
+  make_your_livedvd_or_usb: Du hast noch kein Ubuntu installiert. Dann wähle hier deine Bündel aus und brenne dir eine CD oder DVD oder erstelle einen USB-Stick, damit du sie als Live-System oder zur Installation nutzen kannst.
+  make_your_usb: Du kannst auch Bündel auswählen und daraus einen Live-USB-Stick erstellen.
   match_ubuntu: Ubuntu-Linux an die individuellen Bedürfnisse anpassen
   match_with_communtu: Communtu - gemeinsam Ubuntu-Linux an individuelle Bedürfnisse anpassen
   metacart_choose: Füge Programme zu deinem Bündel hinzu.
@@ -323,6 +334,7 @@ de:
   model_user_profile_tabz_4: Voreinstellungen
   more_about_sources: (Mehr Informationen zum Thema Schlüssel und Quellen in den Faqs)
   name_of_livecd: 'Name der LiveCD/DVD:'
+  name_of_usb: 'Name der Iso-Datei:'
   name_with_colon: 'Name: '
   name_without_colon: Name
   native: nur Ubuntu
@@ -360,6 +372,7 @@ de:
   passwd: Passwort
   passwd_no_match: Das neue Passwort stimmt nicht mit der Bestätigung überein.
   path: 'Pfad:'
+  please_create_cd: Bitte erst ein iso erstellen
   predecessor: Vorgänger
   preliminary_distribution: Vorläufige Distribution
   prepare_livecd: LiveCD/DVD vorbereiten (script/remaster-getisos)
@@ -411,6 +424,25 @@ de:
   update: Aktualisieren
   updatedPackages: 'geänderte Pakete: '
   url: Url
+  usb: USB-Stick
+  usb_created: Die Iso-Datei für den USB-Stick ist fertig.
+  usb_creator: "Mit dem Programm {{link}} kannst du das iso-Image auf einen USB-Stick spielen" 
+  usb_donate: Die Iso-Erstellung braucht viel Server-Kapazität. Bitte {{donate_link}}, um dieses Angebot weiter zu ermöglichen.
+  usb_howto: <h2>Wie kommt das Image auf den USB-Stick?</h2>
+    <h3>Ubuntu</h3>Wenn du bereits ein Ubuntu installiert hast kann hierfür ganz einfach der Startmedienersteller benutzt werden. 
+    Erreicht werden kann dieser über System -> Systemverwaltung -> Startmedienersteller. 
+    In dem Bereich Quellabbilddatei (*.iso) oder CD muss über den Button Weitere... das Image ausgewählt werden. 
+    Im zweiten Feld Zu verwendender Datenträger muss der USB-Stick ausgewählt werden. 
+    Abschließend kann noch ausgewählt werden ob Daten auf dem USB-Stick gespeichert werden sollen oder nicht. 
+    Mit einem Klick auf Startmedium erstellen wird das Image auf den USB-Stick kopiert. 
+    Der Vorgang kann recht lange dauern, jenachdem wie schnell Dateien auf den USB-Stick kopiert werden können. 
+    Sobald der Vorgang abgeschlossen ist wird eine Erfolgsmeldung auf dem Bildschirm erscheinen. 
+    <h3>Microsoft Windows</h3> Zuerst lädt man sich <a href="http://unetbootin.sourceforge.net" target="_blank">hier</a> den UNetbootin herunter. 
+    Sobald der Download beendet ist kann man den UNetbooin ohne Installation direkt starten. 
+    Nach einem Klick auf Abbild kann man über die drei ... rechts das Image auswählen. 
+    Über den Laufwerksbuchstaben im unteren Teil von UNetbootin muss man den richtigen USB-Stick auswählen und mit einem Klick 
+    auf OK wird das Image auf den USB-Stick kopiert. Der Vorgang kann recht lange dauern, jenachdem wie schnell Dateien auf den 
+    USB-Stick kopiert werden können. Sobald der Vorgang abgeschlossen ist wird eine Erfolgsmeldung auf dem Bildschirm erscheinen.
   usb_image: USB-Image
   used_in_bundles: 'Wird bei Communtu in folgenden Bündeln benutzt:'
   username: Benutzername
@@ -823,10 +855,10 @@ de:
   view_user_profiles__installation_1: Um etwas installieren zu können, musst du zunächst unter "Softwareauswahl" etwas auswählen.
   view_user_profiles__installation_13: '(Bei einem Versionswechsel muss der erste Schritt erneut ausgeführt werden, da die Communtu Quellen durch das Upgrade deaktiviert wurden.):'
   view_user_profiles__installation_16: Quellen und Schlüssel eintragen
-  view_user_profiles__installation_17: Link einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer öffnen - wenn kein Prorgammdialog erscheint, wurde die Datei auf deinem Rechner heruntergeladen. Dort kannst du sie mit Doppelklick starten.
-  view_user_profiles__installation_2: Aufgrund deiner Auswahl werden jetzt Programme auf deinem Computer installiert. Folgende Schritte sind dafür zu tun
+  view_user_profiles__installation_17: Link einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer öffnen - wenn kein Prorgammdialog erscheint, wurde die Datei auf deinen Rechner heruntergeladen. Dort kannst du sie mit Doppelklick starten.
+  view_user_profiles__installation_2: Aufgrund deiner Auswahl werden jetzt Programme auf deinem Computer installiert.
   view_user_profiles__installation_21: installieren der Metapakete. Bitte vorher die Quellen hinzufügen.
-  view_user_profiles__installation_23: 'Pakete installieren. Es gibt zwei Alternativen:'
+  view_user_profiles__installation_23: 'Es gibt zwei Alternativen:'
   view_user_profiles__installation_24: Installation über ein Metapaket
   view_user_profiles__installation_25: Installation über apturl
   view_user_profiles__installation_27: 'Die Browser Konqueror und Opera bitte erst für '

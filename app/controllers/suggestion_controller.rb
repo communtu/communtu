@@ -10,7 +10,7 @@ class SuggestionController < ApplicationController
     if check_login then return end
     if current_user.selected_packages.empty? then
       flash[:error] = t(:controller_suggestion_1)
-      redirect_to "/users/#{self.id}/user_profile/edit"
+      redirect_to "/download/selection"
       return
     end
     debfile = current_user.install_sources
@@ -24,7 +24,7 @@ class SuggestionController < ApplicationController
 
   def install_bundle_sources
     if check_login then return end
-    bundle = Metapackage.find(params[:mid])
+    bundle = Metapackage.find(params[:id])
     debfile = current_user.install_bundle_sources(bundle)
     if debfile.nil? then
       flash[:error] = t(:creation_error)
@@ -36,7 +36,7 @@ class SuggestionController < ApplicationController
 
   def install_package_sources
     if check_login then return end
-    package = Package.find(params[:pid])
+    package = Package.find(params[:id])
     debfile = current_user.install_package_sources(package)
     if debfile.nil? then
       flash[:error] = "Bei der Erstellung des Pakets ist ein Fehler aufgetreten."
@@ -49,7 +49,7 @@ class SuggestionController < ApplicationController
     if check_login then return end
     if current_user.selected_packages.empty? then
       flash[:error] = t(:controller_suggestion_1)
-      redirect_to "/users/#{current_user.id}/user_profile/edit"
+      redirect_to "/download/selection"
       return
     end
     debfile = current_user.install_bundle_as_meta

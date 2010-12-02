@@ -13,16 +13,16 @@
 
 <table>
     <tr>
-        <td><%= link_to(image_tag("/images/64x64/download.png", :height => 60, :title =>t(:go_to_download), :alt=>t(:go_to_download), :border => "0"), user_path(current_user) + "/user_profile/edit") %></td>
-        <td><%= t(:search_programs_bundles) %> <%= link_to(t(:continue), user_path(current_user) + "/user_profile/edit") %></td>
+        <td><%= link_to(image_tag("/images/64x64/download.png", :height => 60, :title =>t(:go_to_download), :alt=>t(:go_to_download), :border => "0"), "/download/selection?path=install") %></td>
+        <td><%= t(:search_programs_bundles) %> <%= link_to(t(:continue), "/download/selection?path=install") %></td>
     </tr>
     <tr>
         <td colspan="2"><hr /></td>
     </tr>
     <tr>
-        <td><%= link_to(image_tag("/images/64x64/cd.png", :height => 64, :width => 64, :title =>t(:create_your_livedvd), :alt=>t(:create_your_livedvd), :border => "0"), user_path(current_user) + "/user_profile/edit") %></td>
+        <td><%= link_to(image_tag("/images/64x64/usb-cd.png", :height => 64, :title =>t(:create_your_livedvd_or_usb), :alt=>t(:create_your_livedvd_or_usb), :border => "0"), "/download/start") %></td>
 
-        <td><%= t(:make_your_livedvd) %> <%= link_to(t(:continue), user_path(current_user) + "/user_profile/edit") %></td>
+        <td><%= t(:make_your_livedvd_or_usb) %> <%= link_to(t(:continue), "/download/start") %></td>
     </tr>
     
     <tr>
@@ -30,9 +30,9 @@
     </tr>
 
     <tr>
-        <td><%= link_to(image_tag("apps/Metapackage.png", :height => 60, :title =>t(:make_your_bundle), :alt=>t(:make_your_bundle), :border => "0"), "/cart/create") %></td>
+        <td><%= link_to(image_tag("apps/Metapackage.png", :height => 60, :title =>t(:make_your_bundle), :alt=>t(:make_your_bundle), :border => "0"), "/metapackages/new") %></td>
 
-        <td><%= t(:make_a_systemupgrade) %> <%= link_to(t(:continue), user_path(current_user) + "/cart/create") %></td>
+        <td><%= t(:make_a_systemupgrade) %> <%= link_to(t(:continue), "/metapackages/new") %></td>
     </tr>
     <tr>
         <td colspan="2"><hr /></td>
@@ -91,7 +91,7 @@
 	</table>
 	<br/>
 	<% if logged_in? and !current_user.anonymous? %>
-		<%= link_to t(:view_home_home_rating_link), '/users/'+ current_user.id.to_s + '/metapackages/1', :title=>t(:view_home_home_rating_link) %>
+		<%= link_to t(:view_home_home_rating_link), '/metapackages/index', :title=>t(:view_home_home_rating_link) %>
 	<% end %>
 	<% if logged_in? %>
 		<% if new_message?%>

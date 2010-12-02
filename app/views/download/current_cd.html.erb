@@ -1,0 +1,27 @@
+<% #  (c) 2008-2010 by Verein Allgemeinbildung e.V., Bremen, Germany  
+   #  use, modification or distribution only with permission of the copyright holder
+%>
+
+
+<%= render :partial => "path" %>
+<%= render :partial => 'box' %>
+
+<% usb = session[:path]=="usb" %>
+<br>
+<% if @cd.nil?%>
+  <%= t(:please_create_cd) %>
+<% else %>
+  <%= render :partial => 'livecd_form', 
+               :locals => {:cd => @cd, :default_name => @default_name, :bundle => false} %>
+
+   <% if @cd.generated %>
+     <% if usb %>
+	   <%= t(:usb_howto) %>
+	 <% else %>
+       <%= t(:iso_howto, :brasero => package_link("brasero"), :k3b => package_link("k3b"))%>
+	 <% end%> 
+    <% end %>
+	</p>
+			   
+<% end %>
+

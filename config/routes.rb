@@ -34,9 +34,10 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/metapackages/:id/edit_packages', :controller => "metapackages", :action => "edit_packages", :method => :put
   map.connect '/metapackages/:id/edit_action', :controller => 'metapackages', :action => 'edit_action'
   map.connect '/metapackages/install/:id', :controller => 'metapackages', :action => 'install'
+  map.connect '/metapackages/new', :controller => 'cart', :action => 'create'
   map.resources :metapackages, :collection => {:save => :get, :immediate_conflicts => :get, :conflicts => :get,
                                                :rdepends => :get, :action => :get, :changed => :get, :migrate => :get,
-                                               :finish_migrate => :get, :health_status => :get, :edit_new_or_cart => :get}
+                                               :finish_migrate => :get, :health_status => :get, :edit_new_or_cart => :get, :index => :get, :index_mine => :get}
   map.resources :messages, :member => { :reply => :get, :forward => :get }
   map.resources :packages, :collection => {:packagelist => :get, :rdepends => :get, :search => :get, :section => :get, :bundle => :get}
   map.connect '/bundle', :controller => 'packages', :action => 'bundle'
@@ -49,8 +50,8 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :sent, :mailbox
   map.resources :videos
 
-  map.connect '/user_profiles/create_livecd/:id', :controller => 'user_profiles', :action => 'create_livecd'
-  map.connect '/user_profiles/test_livecd/:id', :controller => 'user_profiles', :action => 'test_livecd'
+  map.connect '/download/create_livecd/:id', :controller => 'download', :action => 'create_livecd'
+  map.connect '/download/test_livecd/:id', :controller => 'download', :action => 'test_livecd'
 
   map.connect '/users/anonymous_login', :controller => 'users', :action => 'anonymous_login'
   map.resources :users, :member => { :enable => :put, :anonymous_login => :get} do |users|
@@ -58,32 +59,9 @@ ActionController::Routing::Routes.draw do |map|
     users.resource  :account
     users.resources :roles
   end
-
-
-  # URLs should be adpated to controllers  
-  map.connect '/users/:distribution_id/suggestion', :controller => 'suggestion', :action => 'show'
-  map.connect '/users/:id/suggestion/install', :controller => 'suggestion', :action => 'install'
-  map.connect '/users/:id/suggestion/install_new', :controller => 'suggestion', :action => 'install_new'
-  map.connect '/users/:id/suggestion/install_sources', :controller => 'suggestion', :action => 'install_sources'
-  map.connect '/users/:id/suggestion/install_package_sources/:pid', :controller => 'suggestion', :action => 'install_package_sources'
-  map.connect '/users/:id/suggestion/install_bundle_sources/:mid', :controller => 'suggestion', :action => 'install_bundle_sources'
-  map.connect '/users/:id/suggestion/bundle_to_livecd/:mid', :controller => 'suggestion', :action => 'bundle_to_livecd'
-  map.connect '/users/:id/suggestion/quick_install/:mid', :controller => 'suggestion', :action => 'quick_install'
-  map.connect '/users/:id/suggestion/shownew', :controller => 'suggestion', :action => 'shownew'
-  map.connect '/users/:user_id/metapackages/:id', :controller => 'users', :action => 'metapackages'
-  map.connect '/users/:user_id/user_profile/edit', :controller => 'user_profiles', :action => 'edit'
-  map.connect '/users/:user_id/user_profile/installation', :controller => 'user_profiles', :action => 'installation'
-  map.connect '/users/:user_id/user_profile/update_data', :controller => 'user_profiles', :action => 'update_data'
-  map.connect '/users/:user_id/user_profile/update_ratings', :controller => 'user_profiles', :action => 'update_ratings'  
-  map.connect '/users/:user_id/user_profile/settings', :controller => 'user_profiles', :action => 'settings'
-  map.connect '/users/:user_id/user_profile/sources', :controller => 'user_profiles', :action => 'sources'
-  map.connect '/users/:user_id/user_profile/livecd', :controller => 'user_profiles', :action => 'livecd'
-  map.connect '/users/:user_id/user_profile/bundle_to_livecd/:id', :controller => 'user_profiles', :action => 'bundle_to_livecd'
-  map.connect '/users/:user_id/user_profile/create_livecd_from_bundle/:id', :controller => 'user_profiles', :action => 'create_livecd_from_bundle'
   map.connect '/users/:id/destroy', :controller => 'users', :action => 'destroy'
   map.connect '/users/:id/selfdestroy', :controller => 'users', :action => 'selfdestroy'
   map.connect '/users/:id/show', :controller => 'users', :action => 'show'
-  map.connect '/users/:id/cart/:action/:id', :controller => 'cart'
 
   # from authenticated plugin
   map.activate '/activate/:id', :controller => 'accounts', :action => 'show'

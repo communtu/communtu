@@ -2,22 +2,25 @@
    #  use, modification or distribution only with permission of the copyright holder
 %>
 
+<% usb = session[:path]=="usb" %>
+
   <% if cd.nil? %>
     <% if !bundle %>
-      <p><%=t(:livecd_start_message)%><br />
+      <p><%=if usb then t(:liveusb_start_message) else t(:livecd_start_message) end%><br />
       <i><%=current_user.selected_packages_uniq.map{|m| m.name}.join(", ") %></i>
       </p>
     <% end %>
-    <p><%=t(:livecd_message,:cdimage_link => (link_to t(:livecd_image), t(:livecd_image_link)))%></p>
-
+    <p><%=t(if usb then :liveusb_message else :livecd_message end,
+            :cdimage_link => (link_to t(:iso_image), if usb then t(:liveusb_image_link) else t(:livecd_image_link) end, 
+                                                     :target => '_blank'))%></p>
     <p>
-    <b><%=t(:cd_donate, {:donate_link => link_to(t(:donate),'/home/donate')})%></b>
+    <b><%=t(if usb then :usb_donate else :cd_donate end, {:donate_link => link_to(t(:donate),'/home/donate')})%></b>
     <br>
     <% if bundle %>
-      <%= form_tag("/users/#{current_user.id}/user_profile/create_livecd_from_bundle/#{@bundle.id}")%>
+      <%= form_tag("/download/create_livecd_from_bundle/#{@bundle.id}")%>
     <% else %>
-    <%= form_tag({:controller => :user_profiles, :action => :create_livecd, :id => current_user.id})%>
-      <%= t(:name_of_livecd) %>
+    <%= form_tag({:controller => :download, :action => :create_livecd, :id => current_user.id})%>
+      <%= if usb then t(:name_of_usb) else t(:name_of_livecd) end %>
       <%= text_field_tag(:name,default_name) %>
     <% end %>
       <% if is_power_user? and false %>
@@ -26,15 +29,15 @@
           <li><%= check_box_tag("kvm") %> <%= t(:create_kvm_image)%></li>
           <li><%= check_box_tag("usb") %> <%= t(:create_usb_image)%></li></ul><br />
       <% end %>
-      <%= submit_tag(t(:livecd_start)) %></p>
+      <%= submit_tag(if usb then t(:liveusb_start) else t(:livecd_start) end) %></p>
       <p><%=t(:view_user_profiles__installation_33)%>
-      <%= link_to (t(:sources), user_path(current_user) + "/user_profile/sources")%>
+      <%= link_to (t(:sources), "/download/sources")%>
       <%=t(:view_user_profiles__installation_34)%>
       </p>
       </form>
   <% else %>
     <% if cd.generated %>
-      <%=t(:cd_already_created)%>
+      <%=if usb then t(:usb_created) else t(:cd_created) end%>
     <% else %>
       <%=t(:cd_being_created)%>
     <% end %>

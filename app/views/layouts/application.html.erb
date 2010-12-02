@@ -65,10 +65,10 @@
 <!-- mainnavigation -->
 <div class="navi">
 	<!-- button -->
-<% image = if params[:controller] == "user_profiles" then "/images/navi_downloadon.png" else "/images/navi_download.png" end %>	
+<% image = if params[:controller] == "download" then "/images/navi_downloadon.png" else "/images/navi_download.png" end %>	
 <% imagetag = image_tag(image, :border => '0', :alt=>t(:view_layouts_application_27),:title=>t(:view_layouts_application_27)) %>
 <% text = "<div class=\"navi_eins\">#{t(:view_layouts_application_24)}</div> "%>
-<%= link_to(imagetag+text,user_path(current_user) + "/user_profile/edit") %>
+<%= link_to(imagetag+text,"/download/start") %>
 
 <% if ((params[:controller] == "packages") or (params[:controller] == "users" and params[:action] == "metapackages") or (params[:controller] == "home" and params[:action] == "new_repository") or params[:controller] == "metapackages" or params[:controller] == "distributions" or params[:controller] == "repositories") 
      image = "/images/navi_buendelon.png" 
@@ -76,10 +76,10 @@
      image = "/images/navi_buendel.png" 
    end %>	
 <% @has_own_bundles = Metapackage.find_all_by_user_id(current_user.object_id) %>
-<% link = if @has_own_bundles.length != 0 then "0" else "1" end %>
+<% link = if @has_own_bundles.length != 0 then "index_mine" else "index" end %>
 <% imagetag = image_tag(image, :border => '0', :alt=>t(:view_layouts_application_26),:title=>t(:view_layouts_application_26)) %> 
 <% text = "<div class=\"navi_zwei\">#{t(:view_layouts_application_23)}</div>" %>
-<%= link_to(imagetag+text,user_path(current_user) + "/metapackages/#{link}") %>
+<%= link_to(imagetag+text,"/metapackages/#{link}") %>
 
 <% if ((params[:controller] == "home" and params[:action] != "home") and (params[:controller] == "home" and params[:action] != "new_repository")) or params[:controller] == "articles" %>
    <% image = "/images/navi_communtuon.png" %>
@@ -127,9 +127,6 @@
 <div class="content1">
 <% elsif ((params[:controller] == "users" and params[:action] != "metapackages" or params[:controller] == "categories" or params[:controller] == "debs" or params[:controller] == "roles") and is_admin?) %>
 <%= render(:partial => 'layouts/navi_admin') %>
-<div class="content1">
-<% elsif params[:controller] == "user_profiles" %>
-<%= render(:partial => 'navi_download') %>
 <div class="content1">
 <% elsif params[:action] == "home" %>
 <div class="contentstart">

@@ -1,5 +1,5 @@
 <h2><%=t(:install_bundle, :name => @metapackage.name)%></h2>
-<% url1 =  "/users/#{current_user.id}/suggestion/install_bundle_sources/#{@metapackage.id}" %>
+<% url1 =  "/suggestion/install_bundle_sources/#{@metapackage.id}" %>
 <% url2 = "apt://"+@metapackage.debian_name %>
 <%= render :partial => 'install', :locals => {:url1 => url1, :url2 => url2} %>
 <%=t(:view_user_profiles__installation_31, {:synaptic => package_link("Synaptic")})%>

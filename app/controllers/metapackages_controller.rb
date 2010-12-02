@@ -18,17 +18,19 @@ class MetapackagesController < ApplicationController
   @@migrations = {}
     
   def index
-    if params[:id]=="0" then
-      user_type = 0
-    elsif is_admin? then
-      user_type = 1
+    if is_admin? then
+      @user_type = 1
     else
-      user_type = 2
+      @user_type = 2
     end
-    @user_type = user_type
-    @metapackages = sort_metalist({ :user => current_user, :session => session, :params => params }, user_type)
+    @metapackages = sort_metalist({ :user => current_user, :session => session, :params => params }, @user_type)
   end
 
+  def index_mine
+    @user_type = 0
+    @metapackages = sort_metalist({ :user => current_user, :session => session, :params => params }, @user_type)
+    render :action => 'index'
+  end
   # GET /metapackages/1
   # GET /metapackages/1.xml
   def show
@@ -356,7 +358,7 @@ class MetapackagesController < ApplicationController
     metapackage.destroy
 
     respond_to do |format|
-      format.html { redirect_to(user_path(current_user) + "/metapackages/0") }
+      format.html { redirect_to("/metapackages/index_mine") }
       format.xml  { head :ok }
     end
   end
@@ -435,7 +437,7 @@ class MetapackagesController < ApplicationController
              m = Metacontent.find(:first,:conditions => ["base_package_id = ?",meta.id])
             if !meta.is_published? and m == nil
               meta.destroy
-	      redirect_to (user_path(current_user) + "/metapackages/0")
+	      redirect_to ("/metapackages/index_mine")
 	    else            
               flash[:error] = t(:metapackages_cannot_destroy)
 	      redirect_to metapackage_path(meta)

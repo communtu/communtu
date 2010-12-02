@@ -1,0 +1,16 @@
+<% #  (c) 2008-2010 by Verein Allgemeinbildung e.V., Bremen, Germany  
+   #  use, modification or distribution only with permission of the copyright holder
+%>
+
+
+<%= render :partial => "path" %>
+
+<br />
+<% if @cd.nil?%>
+  <%= t(:please_create_cd) %>
+<% else %>
+<p>  <%= t(:usb_creator, :link => link_to("usb-creator",package_path(Package.find_by_name("usb-creator"))))%> </p>
+ <p> <%= render :partial => 'livecd_form', 
+               :locals => {:cd => @cd, :default_name => @default_name, :bundle => false} %>
+ </p>			   
+<% end %>

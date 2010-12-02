@@ -1,0 +1,19 @@
+<br />
+<br />
+<div class="path">
+<ol>
+<% for node in DownloadController::PATHS[session[:path]] %>
+<li> 
+<% if params[:action] == node[:action] %>
+<i>
+<% end %>	
+ <%= link_to(node[:name],node[:action])%> </li>
+<% if params[:action] == node[:action] %>
+</i>
+<% end %>	
+<% end %>
+</ol>
+</div>
+
+<%= render :partial => "back"  %>
+<%= render :partial => "continue"  %>
