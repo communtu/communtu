@@ -394,6 +394,11 @@ class Deb < ActiveRecord::Base
       self.destroy
       return nil
     end
+    if self.distribution.nil?
+      puts "Deb #{self.id}: distribution with id #{self.distribution_id} does not exist, destroying deb"
+      self.destroy
+      return nil
+    end
     ok = true
     Architecture.all.each do |arch|
       res = verify_arch(arch)
@@ -425,6 +430,9 @@ class Deb < ActiveRecord::Base
         deps = Set.new(line[ind+9,line.length].split(", "))
       end
     end
+    f.close
+    # cleanup
+    system "rm -rf #{tmpdir}"
     return deps
   end
 

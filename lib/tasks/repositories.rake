@@ -73,9 +73,12 @@ namespace :db do
         end
       end
     end
+    desc 'Verify some repositories, rotate daily within the month.'
     task :verify_debs => :environment do
       Deb.all.each do |d|
-        system 'echo "Deb.find('+d.id.to_s+').verify" | script/console production'
+        if d.id % 30 == (Date.today-Date.today.beginning_of_year).to_i % 30
+          system 'echo "Deb.find('+d.id.to_s+').verify" | script/console production'
+        end  
       end
     end
   end
