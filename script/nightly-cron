@@ -12,3 +12,5 @@ script/webalizer
 script/sync_repos
 # generate debian packages
 script/check_debs
+# verify debian packages
+script/verify_debs
