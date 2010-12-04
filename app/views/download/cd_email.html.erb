@@ -7,7 +7,9 @@
 <%= render :partial => 'box' %>
 
 <br>
-<% if @cd.nil?%>
+<% if current_user.anonymous? and session[:path]!="install" %>
+<%=t(:livecd_please_register, :register => link_to(t(:register_small), edit_user_path(current_user)))%>
+<% elsif @cd.nil?%>
   <%= t(:please_create_cd) %>
 <% else %>
   <%= render :partial => 'livecd_form', 

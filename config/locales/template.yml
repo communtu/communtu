@@ -47,6 +47,7 @@ de:
   cd_created: Die LiveCD/DVD ist fertig.
   cd_donate: Die CD/DVD-Erstellung braucht viel Server-Kapazität. Bitte {{donate_link}}, um dieses Angebot weiter zu ermöglichen.
   cd_failed: Fehlgeschlagen - wir kümmern uns darum
+  cd_ready: CD fertig
   change: ändern
   change_passwd: Passwort ändern
   chat: Chat
@@ -148,6 +149,7 @@ de:
   controller_users_8: Benutzer deaktiviert
   controller_users_9: Es gab ein Problem mit der Deaktivierung dieses Benutzers.
   create: Anlegen
+  create_livecd: CD erstellen
   create_livecd_bundlepage: Möchte man hingegen nur ein bestimmtes Bündel, z. B. ein eigenes, nicht veröffentlichtes Bündel, erstellen, so muss das Bündel über <b>Bündel -&gt; Meine Bündel</b> oder <b>Veröffentlichte Bündel</b> gesucht werden. Mit einem Klick auf das CD-Symbol rechts unter Installieren wird man zum Dialogfeld für die Live-CD. Mit einem Klick auf <b>Live-CD/DVD erstellen</b> wird die Live-CD aus dem Bündel erstellt.
   create_livecd_downloadpage: Hierfür wählt man die unter <b>Download</b> die Kategorien und die Bündel aus welche man installieren möchte. Mit einem Klick auf „Live-CD/DVD“ in der Menüführung kommt man zum Dialogfeld für die Live-CD. Hier muss noch ein Name eingetragen werden und die Live-CD/DVD mit <b>Live-CD/DVD erstellen</b> erstellt werden.
   create_livecd_email: <i>* Hierfür ist eine existierende E-Mail-Adresse nötig!</i>
@@ -156,6 +158,7 @@ de:
   create_livecd_subtitle1: Erstellen über die Downloadseite
   create_livecd_subtitle2: Erstellen über ein Bündel
   create_livecd_title: Wie erstelle ich eine Live-CD?
+  create_iso: Iso erstellen
   create_iso_image: <a href="http://ww.ubuntuusers.de/wiki/CD-Images">ISO-Image</a> erstellen (für CD/DVD)
   create_kvm_image: <a href="http://ww.ubuntuusers.de/wiki/KVM">KVM-Image</a> erstellen (für virtuelle Maschine)
   create_usb_image: <a href="http://ww.ubuntuusers.de/wiki/Live-USB">USB-Stick-Image</a> erstellen
@@ -253,6 +256,7 @@ de:
   iso_deleted: Die ISO-Datei wurde leider aus Platzgründen gelöscht.
   iso_howto: Über den Link kannst du eine iso-Datei herunterladen. Diese kannst du dann unter Ubuntu z.B. mit {{brasero}} oder {{k3b}} brennen. Unter Windows gibt es ebenfalls verschiedene Brennprogramme. Bitte wähle eine Option wie "Abbild brennen" oder "iso brennen". Wenn die iso-Datei sehr groß ist, musst du eine DVD verwenden.<br /> Mit der entstandenen CD oder DVD kannst du dann <a href="http://wiki.ubuntuusers.de/Ubuntu_Installation" target="_blank">Ubuntu installieren</a>.
   iso_image: ISO-Image 
+  iso_ready: Iso fertig
   kommentieren: Kommentieren
   kontodaten: Konto 172 9375, Sparkasse Bremen, BLZ 290 501 01
   kurzname: Kurzname
@@ -281,7 +285,7 @@ de:
   livecd_incorrect_name: Der Name der LiveCD/DVD darf nur aus Buchstaben, Zahlen, _ und - bestehen
   livecd_message: Über eine Live-CD kann die Software sowohl ausprobiert als auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} erstellt, die du dann brennen kannst.<br /><br /> Die Erstellung des Images dauert eine gewisse Zeit. Du wirst per Email benachrichtigt, sobald das Image fertig ist. Bitte achte darauf, dass in deinen Benutzereinstellungen eine gültige Email-Adresse angegeben ist.
   liveusb_message: Über einen USB-Stick kann die Software sowohl ausprobiert als auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} erstellt, die du dann auf den USB-Stick übertragen kannst.<br /><br /> Die Erstellung des Images dauert eine gewisse Zeit. Du wirst per Email benachrichtigt, sobald das Image fertig ist. Bitte achte darauf, dass in deinen Benutzereinstellungen eine gültige Email-Adresse angegeben ist.
-  livecd_please_register: Um Live-CD/DVDs zu erstellen, musst du dich erst {{register}}.
+  livecd_please_register: Um Live-CD/DVDs oder USB-Sticks zu erstellen, musst du dich erst {{register}}.
   livecd_previous_cds: 'Bisher erstellte Iso-Dateien (für Live-CDs/DVDs oder USB-Sticks):'
   livecd_start: Live-CD/DVD erstellen
   livecd_start_message: 'Hier kannst du eine Live-CD/DVD erstellen lassen, die die von dir ausgewählte Software enthält. Du hast folgende Bündel ausgewählt:'
@@ -935,6 +939,7 @@ de:
   vm_running: virtuelle Maschine läuft
   vm_running_under: 'virtuelle Maschine läuft unter: '
   wait_for_debs: auf Bau der Metapakete warten
+  wait_for_email: Auf Email warten
   wait_for_release: auf offizielles Ubuntu-Release warten
   wait_for_sync: auf Synchronisation der Repositories warten
   warnings: Warnungen

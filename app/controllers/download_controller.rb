@@ -9,14 +9,14 @@ class DownloadController < ApplicationController
              {:name => I18n.t(:controller_suggestion_15), :action => "installation"}],
              "cd" => [{:name => I18n.t(:download_area), :action => "start"},
              {:name => I18n.t(:model_user_profile_tabz_1), :action => "selection"},
-             {:name => "CD erstellen", :action => "livecd"},
-             {:name => "Auf Email warten", :action => "cd_email"},
-             {:name => "CD fertig", :action => "current_cd"}],
+             {:name => I18n.t(:create_livecd), :action => "livecd"},
+             {:name => I18n.t(:wait_for_email), :action => "cd_email"},
+             {:name => I18n.t(:cd_ready), :action => "current_cd"}],
              "usb" => [{:name => I18n.t(:download_area), :action => "start"},
              {:name => I18n.t(:model_user_profile_tabz_1), :action => "selection"},
-             {:name => "iso erstellen", :action => "livecd"},
-             {:name => "Auf Email warten", :action => "cd_email"},
-             {:name => "iso fertig", :action => "current_cd"}
+             {:name => I18n.t(:create_iso), :action => "livecd"},
+             {:name => I18n.t(:wait_for_email), :action => "cd_email"},
+             {:name => I18n.t(:iso_ready), :action => "current_cd"}
             # {:name => "USB-Stick erstellen", :action => "usb"}
 ]
             }

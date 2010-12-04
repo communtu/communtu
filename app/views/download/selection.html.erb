@@ -5,6 +5,10 @@
 
 <%= render :partial => "path" %>
 
+<% if current_user.anonymous? and session[:path]!="install" %>
+<%=t(:livecd_please_register, :register => link_to(t(:register_small), edit_user_path(current_user)))%>
+<% else %>
+
 <h2><%=t(:view_user_profiles__profile_rating_0)%></h2>
 <%= error_messages_for :user_profile %>
 <%= render :partial => 'box' %>
@@ -50,3 +54,5 @@
 
 </form>
 <p><a href="/home/contact_us/cat"><%=t(:offer_new_category)%></a></p>
+
+<% end %>
