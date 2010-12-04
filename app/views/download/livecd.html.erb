@@ -2,6 +2,8 @@
    #  use, modification or distribution only with permission of the copyright holder
 %>
 
+<%= render_flash %>
+<%= render :partial => 'box' %>
 <%= render :partial => "path"  %>
 
 <% if current_user.anonymous? %>
@@ -10,8 +12,6 @@
 
   <% usb = session[:path]=="usb" %>
   <h2><%=if usb then t(:usb) else t(:livecd) end%></h2> 
-  <%= render_flash %>
-  <%= render :partial => 'box' %>
   <% if current_user.selected_packages.empty? %>
     <%=t(:view_user_profiles__installation_1)%>
 
