@@ -65,7 +65,8 @@
 <p>
   <table border=1 style="border-style:solid; border-width:1px; border-collapse:collapse" cellpadding=3 >
   <tr><th><%=t(:distribution)%></th> <th><%=t(:view_packages_show_15)%></th> <th><%=t(:view_packages_show_16)%></th></tr>
-  <% for pd in @package.package_distrs%>
+  <% for pd in @package.package_distrs.sort {|a,b| a.distribution.name <=> b.distribution.name}
+%>
     <tr><td><%= link_to(pd.distribution.name, distribution_path(pd.distribution)) %>
 	         </td>
 		<td><%= link_to(pd.repository.name, repository_path(pd.repository)) %>
