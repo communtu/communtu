@@ -7,7 +7,7 @@
 <%= render :partial => "path"  %>
 
 <% if current_user.anonymous? %>
-<%=t(:livecd_please_register, :register => link_to(t(:register_small), edit_user_path(current_user)))%>
+<%=t(:livecd_please_register, :register => link_to(t(:register_small), edit_user_path(current_user)), :login => link_to(t(:login_small), '/logout_login'))%>
 <% else %>
 
   <% usb = session[:path]=="usb" %>

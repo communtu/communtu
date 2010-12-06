@@ -285,13 +285,15 @@ de:
   livecd_incorrect_name: Der Name der LiveCD/DVD darf nur aus Buchstaben, Zahlen, _ und - bestehen
   livecd_message: Über eine Live-CD kann die Software sowohl ausprobiert als auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} erstellt, die du dann brennen kannst.<br /><br /> Die Erstellung des Images dauert eine gewisse Zeit. Du wirst per Email benachrichtigt, sobald das Image fertig ist. Bitte achte darauf, dass in deinen Benutzereinstellungen eine gültige Email-Adresse angegeben ist.
   liveusb_message: Über einen USB-Stick kann die Software sowohl ausprobiert als auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} erstellt, die du dann auf den USB-Stick übertragen kannst.<br /><br /> Die Erstellung des Images dauert eine gewisse Zeit. Du wirst per Email benachrichtigt, sobald das Image fertig ist. Bitte achte darauf, dass in deinen Benutzereinstellungen eine gültige Email-Adresse angegeben ist.
-  livecd_please_register: Um Live-CD/DVDs oder USB-Sticks zu erstellen, musst du dich erst {{register}}.
+  livecd_please_register: Um Live-CD/DVDs oder USB-Sticks zu erstellen, musst du dich erst {{register}} oder {{login}}.
   livecd_previous_cds: 'Bisher erstellte Iso-Dateien (für Live-CDs/DVDs oder USB-Sticks):'
   livecd_start: Live-CD/DVD erstellen
   livecd_start_message: 'Hier kannst du eine Live-CD/DVD erstellen lassen, die die von dir ausgewählte Software enthält. Du hast folgende Bündel ausgewählt:'
   liveusb_start_message: 'Hier kannst du einen USB-Stick erstellen lassen, der die von dir ausgewählte Software enthält. Du hast folgende Bündel ausgewählt:'
   liveusb_start: Iso-Datei erstellen
   logfile_extract: Auszug aus dem Logfile
+  login: Login
+  login_small: einloggen
   mailinglist: 'Mailinglisten:'
   make_a_systemupgrade: Du möchtest ein System-Upgrade machen oder deine interessanten Programme einbringen? Dann schau <a href="http://communtu.wordpress.com/2009/09/16/mit-communtu-ein-systemupgrade-durchfuhren/">wie einfach das geht</a> und lade deine Paketliste bei Communtu hoch.
   make_distribution_final: Distribution als stabil freigeben

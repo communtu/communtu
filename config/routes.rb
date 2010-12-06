@@ -71,6 +71,7 @@ ActionController::Routing::Routes.draw do |map|
   map.signup '/signup', :controller => 'users', :action => 'new'
   map.login '/login', :controller => 'sessions', :action => 'new'
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
+  map.logout_login '/logout_login', :controller => 'sessions', :action => 'destroy'
   map.admin '/admin', :controller => 'admin'
   map.inbox '/inbox', :controller => "mailbox", :action => "show"
 

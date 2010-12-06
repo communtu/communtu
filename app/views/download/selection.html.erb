@@ -8,7 +8,7 @@
 <%= render :partial => 'box' %>
 
 <% if current_user.anonymous? and session[:path]!="install" %>
-<%=t(:livecd_please_register, :register => link_to(t(:register_small), edit_user_path(current_user)))%>
+<%=t(:livecd_please_register, :register => link_to(t(:register_small), edit_user_path(current_user)), :login => link_to(t(:login_small), '/logout_login'))%>
 <% else %>
 
 <h2><%=t(:view_user_profiles__profile_rating_0)%></h2>

@@ -52,8 +52,12 @@ class SessionsController < ApplicationController
     self.current_user.save!
     
     reset_session
-       flash[:notice] = t(:controller_sessions_4)
-  redirect_to "/home"
+	  if request.env['REQUEST_URI'] == "/logout_login"
+	       redirect_to "/session/new"
+	  else
+ 	       flash[:notice] = t(:controller_sessions_4)
+	       redirect_to "/home"
+	  end
   end
   
   protected
