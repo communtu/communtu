@@ -75,10 +75,13 @@ namespace :db do
     end
     desc 'Verify some repositories, rotate daily within the month.'
     task :verify_debs => :environment do
-      Deb.all.each do |d|
-        if d.id % 30 == (Date.today-Date.today.beginning_of_year).to_i % 30
-          system 'echo "Deb.find('+d.id.to_s+').verify" | script/console production'
-        end  
+      interval = 100 # number of debs to generate by one ruby process (small=takes long, large=consumes memory)
+      debs = Deb.all.select do |d|
+        d.id % 30 == (Date.today-Date.today.beginning_of_year).to_i % 30
+      end
+      (0..debs.length / interval).each do |i|
+        debstring = debs[i*interval..(i+1)*interval-1].map{|d| d.id.to_s}.join(",")
+        system "echo \"[#{debstring}].each{|i| Deb.find(i).verify}\" | script/console production"
       end
     end
   end

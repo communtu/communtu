@@ -1,6 +1,6 @@
 #!/bin/bash
 cd `dirname "$0"`/..
-touch log/check_debs.log
-date >> log/check_debs.log
-/usr/bin/rake db:repo:verify_debs RAILS_ENV=production >> log/check_debs.log 2>&1
-echo "done" >> log/check_debs.log
+touch log/verify_debs.log
+date >> log/verify_debs.log
+/usr/bin/rake db:repo:verify_debs RAILS_ENV=production >> log/verify_debs.log 2>&1
+echo "done" >> log/verify_debs.log
