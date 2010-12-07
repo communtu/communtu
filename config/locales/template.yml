@@ -30,6 +30,7 @@ de:
   bundle_by_owner: erstellte Bündel
   bundle_editor: Bündel-Editor
   bundle_open_new_window: Bündel wird im neuen Fenster geöffnet.
+  bundle_tested: 'Bündel getestet:'
   bundle_to_livecd: LiveCD/DVD aus Bündel <i>{{name}}</i> erstellen
   bundles_needing_deb_generation: Bündel, die neu als Metapaket erzeugt werden müssen
   bundles_with_errors: Bündel mit Fehlern
@@ -419,6 +420,7 @@ de:
   subject_without_colon: Betreff
   subtype: 'Subtyp:'
   superior_category: Übergeordnete Kategorie
+  tested_bundle: 'Bündel die beliebt und getestet sind:'
   third_party: alle Anbieter
   to_chat: zum Chat
   to_colon: 'An:'
@@ -427,6 +429,7 @@ de:
   translation_file: 'Url der Übersetzungsdatei (gz Datei):'
   trusted: Ubuntu+Community
   ubuntu_derivatives: Ubuntu-Derivate
+  untested_bundle: 'Bündel die experimentiell und ungetested sind:'
   update: Aktualisieren
   updatedPackages: 'geänderte Pakete: '
   url: Url

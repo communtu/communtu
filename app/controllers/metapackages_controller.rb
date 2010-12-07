@@ -283,7 +283,7 @@ class MetapackagesController < ApplicationController
           ders.each {|d| mc.derivatives << Derivative.find(d)}             # and add the selected ones
         end
       end
-      attrs = {:version => params[:metapackage][:version],:default_install => params[:metapackage][:default_install]}
+      attrs = {:version => params[:metapackage][:version],:default_install => params[:metapackage][:default_install],:tested => params[:metapackage][:tested]}
       if !params[:metapackage][:category_id].nil? and !params[:metapackage][:category_id].empty?
         attrs[:category_id] = params[:metapackage][:category_id]
       end

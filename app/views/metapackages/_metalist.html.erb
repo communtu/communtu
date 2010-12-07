@@ -16,8 +16,9 @@
 	<th valign="middle" class="packageList" align="left"></th>
   <th valign="middle" class="packageList" align="left"></th>
 </tr>
-
-    <% for metapackage in packages %>
+<% # if we need it: .sort {|y,x| x.tested.to_s <=> y.tested.to_s} %>
+    <% for metapackage in packages
+ %>
      <% if metapackage.name != "" %>
      <% css = cycle("packageList0", "packageList1") %>
       <tr>

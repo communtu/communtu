@@ -50,6 +50,12 @@
             <td><%= if @metapackage.default_install then t(:yes1) else t(:no1) end  %></td>
         <% end %>
         <td></td></tr>
+	<% if is_admin? %>
+	<tr>
+	<td><%=t(:bundle_tested)%></td>
+	<td><%= f.check_box(:tested) %></td>
+	</tr>
+	<% end %>
         <tr>
 	        <td valign='top'><%=t(:description_with_colon)%></td>
 	        <td><textarea id="metapackage_description" name="metapackage[description]" rows="6" cols="50"><%= @description %></textarea></td>
