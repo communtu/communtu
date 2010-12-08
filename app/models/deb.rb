@@ -409,7 +409,7 @@ class Deb < ActiveRecord::Base
     end
     if !ok then  # re-generate deb
       puts "Re-generating deb"
-      self.generate
+      self.generate(true)
     end
     return nil
   end
