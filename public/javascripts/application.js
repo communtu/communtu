@@ -22,7 +22,7 @@ function user_profile_edit_show_category(id) {
 
 function user_profile_edit_save_categories(userid) {
     new Ajax.Request(
-        '/users/'+userid+'/user_profile/update_ratings', 
+        '/download/update_ratings', 
         {
             asynchronous:true, 
             evalScripts:false, 

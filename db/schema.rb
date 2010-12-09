@@ -57,6 +57,7 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.integer  "p_old"
     t.integer  "p_recent"
     t.integer  "p_nofiles"
+    t.boolean  "tested",             :default => false
   end
 
   add_index "base_packages", ["category_id", "type"], :name => "category_id"
@@ -144,6 +145,8 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.datetime "updated_at"
     t.text     "log"
   end
+
+  add_index "debs", ["metapackage_id", "distribution_id", "derivative_id"], :name => "debs_index"
 
   create_table "dependencies", :force => true do |t|
     t.integer  "package_distr_id"
@@ -300,7 +303,7 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.boolean  "outdated",         :default => false
   end
 
-#  add_index "package_distrs_architectures", ["package_distr_id", "architecture_id"], :name => "package_distr_id"
+  add_index "package_distrs_architectures", ["package_distr_id", "architecture_id"], :name => "package_distr_id"
 
   create_table "package_tags", :force => true do |t|
     t.integer "package_id"
@@ -449,6 +452,8 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.datetime "created_at",                                :null => false
     t.string   "refferer",   :limit => 240, :default => ""
   end
+
+  add_index "userlogs", ["user_id", "created_at"], :name => "user_id_date"
 
   create_table "users", :force => true do |t|
     t.string   "login"
