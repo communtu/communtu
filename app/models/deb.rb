@@ -113,8 +113,9 @@ class Deb < ActiveRecord::Base
         v=1
         reprepro_call = "#{REPREPRO} listfilter #{codename} \"Package (== #{name}), Version (>= #{version+v.to_s})\""
         while !(out=IO.popen(reprepro_call,&:read)).empty?
-          v+=1
           f.puts  "output of call\n #{reprepro_call}\nis: \in #{out}"
+          reprepro_call = "#{REPREPRO} listfilter #{codename} \"Package (== #{name}), Version (>= #{version+v.to_s})\""
+          v+=1
           if v>200 then
             break
           end
