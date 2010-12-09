@@ -130,7 +130,7 @@ class DistributionsController < ApplicationController
      @translation_des[e].delete
      e = e + 1
     end
-    @distribution.delete
+    @distribution.destroy
     
     respond_to do |format|
       format.html { redirect_to(distributions_url) }
