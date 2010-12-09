@@ -10,6 +10,9 @@
 <p><%=t(:view_user_profiles__profile_data_1)%><b><%=t(:view_user_profiles__profile_data_2) %></b></p>
 
 <% form_tag "/download/update_data", options = {:name => "data", :method => :put} do %>
+ <div class="upper_submit">
+    <%= submit_tag t(:save), :name => "choose" %>
+ </div>
     <ol>	
      <li><p><%=t(:view_user_profiles__profile_data_6)%><%= link_to(t(:view_user_profiles__profile_data_7),'/download/help')%><br />
 		<% if !@dist_string.nil? %>

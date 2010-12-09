@@ -456,7 +456,7 @@ class MetapackagesController < ApplicationController
   def finish_migrate
     @from_dist       = Distribution.find(params[:from_dist][:id])
     @to_dist         = Distribution.find(params[:to_dist][:id])
-    @backlink        = session[:backlink]
+    @backlink        = request.env['HTTP_REFERER']
     
     metas = session[:packages]
     @not_found = {}

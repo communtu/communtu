@@ -21,7 +21,6 @@ class DownloadController < ApplicationController
 ]
             }
              
-
   
   def title
     if params[:controller] == "download" and params[:action] == "selection"
@@ -60,6 +59,7 @@ class DownloadController < ApplicationController
   end
   
   def settings
+    session[:backlink] = request.env['HTTP_REFERER']
     if check_login then return end
     @user = current_user
     if @user.derivative.nil? then @user.derivative_id = 1 end
@@ -128,7 +128,7 @@ class DownloadController < ApplicationController
     if user.derivative.distributions.include?(user.distribution) then
       user.save!
       user.increase_version
-      redirect_to "/download/installation"
+      redirect_to session[:backlink]
     else
       flash[:error] = t(:distribution_derivative_mismatch, 
                         :derivative => user.derivative.name,

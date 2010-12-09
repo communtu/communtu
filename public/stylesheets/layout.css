@@ -812,6 +812,13 @@ a.download:hover, a.download:active{
 	top:0.5em;
 	width:22em;
  	}
+	
+.upper_submit{
+	position:absolute;
+	left:58em;
+	top:4.0em;
+	width:22em;
+    }
 
 /**************************************************/
 /* home  */
