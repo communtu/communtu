@@ -418,6 +418,7 @@ class Deb < ActiveRecord::Base
   
   def self.deb_get_dependencies(file)
     # extract control file
+    system "ls -l #{file}"
     tmpdir = IO.popen("mktemp -d",&:read).chomp
     Dir.chdir tmpdir
     system "dpkg-deb -e #{file}"
