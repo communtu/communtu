@@ -75,7 +75,7 @@
    else 
      image = "/images/navi_buendel.png" 
    end %>	
-<% @has_own_bundles = Metapackage.find_all_by_user_id(current_user.object_id) %>
+<% @has_own_bundles = Metapackage.find_all_by_user_id(current_user.id) %>
 <% link = if @has_own_bundles.length != 0 then "index_mine" else "index" end %>
 <% imagetag = image_tag(image, :border => '0', :alt=>t(:view_layouts_application_26),:title=>t(:view_layouts_application_26)) %> 
 <% text = "<div class=\"navi_zwei\">#{t(:view_layouts_application_23)}</div>" %>
@@ -150,7 +150,7 @@
 <% ul = Userlog.new %>
 <% ul.refferer = request.env['REQUEST_URI'] %>
 <% if current_user != "" %>
-<% ul.user_id = current_user.object_id %>
+<% ul.user_id = current_user.id %>
 <% end %>
 <% ul.save %> 
 </div>
