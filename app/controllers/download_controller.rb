@@ -187,7 +187,7 @@ class DownloadController < ApplicationController
       flash[:notice] = t(:livecd_create)
       # create new live CD
       user.livecd(name,true,params[:kvm],params[:usb])
-      redirect_to "/livecds"
+      redirect_to "/download/cd_email"
     end
   end
 

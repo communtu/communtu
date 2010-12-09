@@ -2,15 +2,24 @@
 <br />
 <div class="path">
 <ol>
-<% for node in DownloadController::PATHS[session[:path]] %>
-<li> 
-<% if params[:action] == node[:action] %>
-<i>
-<% end %>	
- <%= link_to(node[:name],node[:action])%> </li>
-<% if params[:action] == node[:action] %>
-</i>
-<% end %>	
+<% current = 1000
+   path = DownloadController::PATHS[session[:path]]%>
+<% for i in 0..path.length-1 
+   node=path[i]%>
+   <li> 
+   <% if params[:action] == node[:action] 
+      current = i%>
+      <i>
+   <% end %>	
+   <% if i-1 > current && current_user.profile_changed  %>
+      <%= node[:name]%> 
+   <% else %>
+      <%= link_to(node[:name],node[:action])%>
+   <% end %>
+   <% if params[:action] == node[:action] %>
+      </i>
+   <% end %>
+   </li>	
 <% end %>
 </ol>
 </div>

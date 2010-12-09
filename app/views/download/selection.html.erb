@@ -5,7 +5,7 @@
 
 <%= error_messages_for :user_profile %>
 <%= render :partial => "path" %>
-<%= render :partial => 'box' %>
+<%= render :partial => 'box', :locals => {:grey => false} %>
 
 <% if current_user.anonymous? and session[:path]!="install" %>
 <%=t(:livecd_please_register, :register => link_to(t(:register_small), edit_user_path(current_user)), :login => link_to(t(:login_small), '/logout_login'))%>

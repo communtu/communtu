@@ -447,6 +447,8 @@ end
                         :iso => iso, :kvm => kvm, :usb => usb,
                         :profile_version => self.profile_version})
     cd.register(self)
+    self.profile_changed = false
+    self.save
     # cd.fork_remaster # now done by daemon
     return cd
   end

@@ -934,12 +934,31 @@ a.download:hover, a.download:active{
 	 border:1px solid #A33700;
 	 background-color: #FFF8D2;
 	 }
+.communtu_box_grey{
+	 position:absolute;
+	 left:58em;
+	 top:18.8em;
+	 width:11em;
+	 padding-right:1em;
+	 padding-bottom:1em;
+	 border:1px solid #A33700;
+	 background-color: #cecece;
+	 }
 .communtu_box_line{
 	 width:11.2em;
 	 padding-left:0.9em;
 	 padding-top:0.8em;
 	 padding-bottom:0.8em;
 	 background-color: #A33700;
+	 color:#fff;
+	 font-weight:bold;
+	 }
+.communtu_box_line_grey{
+	 width:11.2em;
+	 padding-left:0.9em;
+	 padding-top:0.8em;
+	 padding-bottom:0.8em;
+	 background-color: #7d7d7d;
 	 color:#fff;
 	 font-weight:bold;
 	 }

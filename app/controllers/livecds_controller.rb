@@ -12,7 +12,7 @@ class LivecdsController < ApplicationController
     @cd = Livecd.find(params[:id])
     # detach live CD from user
     @cd.deregister(current_user)
-    redirect_to '/livecds'
+    redirect_to :back
   end
 
   def show
