@@ -141,6 +141,7 @@ class Deb < ActiveRecord::Base
             # upload metapackage
             # todo: make name of .deb unique
             puts "Uploading #{newfile}"
+            system "echo \"Uploading #{newfile}\" >> #{RAILS_ROOT}/log/debianize.log"
             safe_system "#{REPREPRO} -C #{component} includedeb #{codename} #{newfile} >> #{RAILS_ROOT}/log/debianize.log 2>&1"
             # remove package files, but not folder
             system "rm #{RAILS_ROOT}/debs/#{name}/#{name}* >/dev/null 2>&1 || true"
