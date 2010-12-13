@@ -7,7 +7,11 @@
     <div class="communtu_box_grey">
 	<div class="communtu_box_line_grey">
   <%else%>
-	<div class="communtu_box">
+    <% if params[:controller] == "download" then %> 
+      <div class="communtu_box_down">
+    <%else%>
+	  <div class="communtu_box_up">
+    <% end %>
 	<div class="communtu_box_line">
   <% end %>
 	<%=t(:settings)%>
