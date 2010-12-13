@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Communtu 0.2\n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
-"Last-Translator: \n"
+"Last-Translator: Timo Denissen <timo@communtu.de>\n"
 "Language-Team: Communtu <info@communtu.de>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -117,7 +117,7 @@ msgid "Wir können dir auch helfen diese Programmiersprache zu lernen. Also meld
 msgstr "We can also help you to learn this programming-language. You just have to contact "
 
 #: view_user_profiles__installation_17
-msgid "Link einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer öffnen - wenn kein Prorgammdialog erscheint, wurde die Datei auf deinem Rechner heruntergeladen. Dort kannst du sie mit Doppelklick starten."
+msgid "Link einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer öffnen - wenn kein Prorgammdialog erscheint, wurde die Datei auf deinen Rechner heruntergeladen. Dort kannst du sie mit Doppelklick starten."
 msgstr "Just click on the link and open the file with the recommended package-installer - if no dialog-window pops up the file has been saved on your harddisk. You can open it with a double click."
 
 #: view_roles_index_2
@@ -135,6 +135,10 @@ msgstr "us"
 #: view_layouts_application_30
 msgid "Hilfe/FAQ"
 msgstr "Help/FAQ"
+
+#: create_your_livedvd_or_usb
+msgid "Live-CD/DVD oder USB-Stick erstellen"
+msgstr "Create Live-CD/DVD or USB key"
 
 #: view_categories_edit_0
 msgid "Kategorie bearbeiten"
@@ -221,8 +225,8 @@ msgid "Dein Vorname"
 msgstr "your first name"
 
 #: view_user_profiles__installation_23
-msgid "Pakete installieren. Es gibt zwei Alternativen:"
-msgstr "Installing packages. There are two alternatives:"
+msgid "Es gibt zwei Alternativen:"
+msgstr "There are two alternatives:"
 
 #: view_users_new_11
 msgid "Dein Nachname"
@@ -348,13 +352,13 @@ msgstr "The Communtu-metapackages can be shown, installed and uninstalled using 
 msgid "<a href=\"http://ww.ubuntuusers.de/wiki/Live-USB\">USB-Stick-Image</a> erstellen"
 msgstr "create <a href=\"http://en.wikipedia.org/wiki/Live-usb\">Live-USB image</a>"
 
-#: view_home_home_2
-msgid "Ubuntu-Linux"
-msgstr "Ubuntu"
-
 #: view_rating_rating_rate
 msgid "von 5 Sternen vergeben"
 msgstr "out of 5 stars awarded"
+
+#: view_home_home_2
+msgid "Ubuntu-Linux"
+msgstr "Ubuntu"
 
 #: view_metapackages_show_version_v
 msgid "(Version {{v}})"
@@ -385,8 +389,8 @@ msgid "auf Synchronisation der Repositories warten"
 msgstr "waiting for syncronisation with repositories"
 
 #: view_user_profiles__installation_33
-msgid "Folgende"
-msgstr "The following"
+msgid "Diese"
+msgstr "These"
 
 #: view_metapackages_show_0
 msgid "Bündel erstellt von "
@@ -476,13 +480,13 @@ msgstr "creation is in progress"
 msgid "Einige der Icons sind aus dem Oxygen-Iconset http://www.oxygen-icons.org"
 msgstr "Some icons are from the Oxygen iconset http://www.oxygen-icons.org"
 
-#: view_home_impressum_11
-msgid "Mitwirkende an der AG Communtu (Alphabetische Reihenfolge):"
-msgstr "Participants of the Communtu-team (alphabetical order):"
-
 #: view_rating_show_title_no_ratings
 msgid "noch keine User Bewertung"
 msgstr "no user rating"
+
+#: view_home_impressum_11
+msgid "Mitwirkende an der AG Communtu (Alphabetische Reihenfolge):"
+msgstr "Participants of the Communtu-team (alphabetical order):"
 
 #: match_with_communtu
 msgid "Communtu - gemeinsam Ubuntu-Linux an individuelle Bedürfnisse anpassen"
@@ -516,6 +520,10 @@ msgstr "edit repositories"
 msgid "Distribution:"
 msgstr "Distribution:"
 
+#: usb_creator
+msgid "Mit dem Programm {{link}} kannst du das iso-Image auf einen USB-Stick spielen"
+msgstr "With {{link}} you can copy the ISO image onto your USB key."
+
 #: view_categories_show_0
 msgid "Name:"
 msgstr "Name: "
@@ -535,6 +543,10 @@ msgstr "URL to the translation-file (gz-file):"
 #: view_categories_show_2
 msgid "Weitere Informationen:"
 msgstr "Further information:"
+
+#: usb_donate
+msgid "Die Iso-Erstellung braucht viel Server-Kapazität. Bitte {{donate_link}}, um dieses Angebot weiter zu ermöglichen."
+msgstr "Creating an ISO image requires a lot of server performance. Please {{donate_link}} to keep this feature alive."
 
 #: controller_metapackages_reset
 msgid "Bündel-Fehler manuell zurücksetzen (nach Behebung des Problems)."
@@ -580,6 +592,10 @@ msgstr "Register"
 msgid "Quellen und Schluessel hinzufuegen fuer Buendel "
 msgstr "Add repositories and keys for the bundle"
 
+#: install_software
+msgid "Software installieren"
+msgstr "Install software"
+
 #: controller_suggestion_6
 msgid "Quellen und Schluessel hinzufuegen fuer Paket "
 msgstr "Add repositories and keys for the package"
@@ -592,10 +608,6 @@ msgstr "Mailbox"
 msgid "Veröffentlichte Bündel können nicht umbenannt werden."
 msgstr "Released bundles cannot be renamed."
 
-#: not_accepted
-msgid "Die eingegebene E-Mail-Adresse hat ungültige Formate oder ist unvollständig."
-msgstr "The entered e-mail address contains forbidden characters or is not entered completely."
-
 #: view_repositories_migrate_1
 msgid "Kopiere Repository "
 msgstr "copy repository"
@@ -603,6 +615,10 @@ msgstr "copy repository"
 #: view_rating_new_comment_info
 msgid "Gib bitte eine Beschreibung zu deiner Bewertung an. Diese Angabe ist <b>Pflicht</b>."
 msgstr "Please enter a description to your rating. This is a <b>mandatory</b> step."
+
+#: not_accepted
+msgid "Die eingegebene E-Mail-Adresse hat ungültige Formate oder ist unvollständig."
+msgstr "The entered e-mail address contains forbidden characters or is not entered completely."
 
 #: view_packages_new_0
 msgid "Neues Paket"
@@ -644,6 +660,10 @@ msgstr "Our mailinglists"
 msgid "Quelle"
 msgstr "Source"
 
+#: liveusb_message
+msgid "Über einen USB-Stick kann die Software sowohl ausprobiert als auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} erstellt, die du dann auf den USB-Stick übertragen kannst.<br /><br /> Die Erstellung des Images dauert eine gewisse Zeit. Du wirst per Email benachrichtigt, sobald das Image fertig ist. Bitte achte darauf, dass in deinen Benutzereinstellungen eine gültige Email-Adresse angegeben ist."
+msgstr "With an USB key you can test the software you have chosen and install the system with the previous made choice of software. For this, an ISO-file ({{cdimage_link}}) is created which can be copied to the key.<br /><br />The creation of the image takes a while. You will be informed automatically when your image has been created. For this, a valid e-mail address is required to be entered in your profile."
+
 #: compose_new_message
 msgid "neue Nachricht schreiben"
 msgstr "compose a new message"
@@ -651,6 +671,10 @@ msgstr "compose a new message"
 #: view_home_news_2
 msgid "Um die Kommunikation mit unseren Nutzern zu verbessern, haben wir Mailinglisten eingerichtet:"
 msgstr "To improve communication with our users we have set up some mailing lists."
+
+#: name_of_usb
+msgid "Name der Iso-Datei:"
+msgstr "Name if ISO file:"
 
 #: view_home_news_3
 msgid "communtu-announce-de+subscribe@googlegroups.com"
@@ -1146,6 +1170,10 @@ msgstr ". Because of the necessary installation of drivers, Linux MCE should be 
 msgid "free und aus den Community Paketquellen"
 msgstr "free and from the community repositories"
 
+#: liveusb_start
+msgid "Iso-Datei erstellen"
+msgstr "Create ISO file"
+
 #: view_user_mailer_signup_notification_1
 msgid "Dein Benutzername lautet:"
 msgstr "Your username is:"
@@ -1422,6 +1450,10 @@ msgstr "While creating metapackages, an error occurred. We'll solve that problem
 msgid "http://wiki.ubuntuusers.de/Server_Installation"
 msgstr "http://wiki.ubuntuusers.de/Server_Installation (German)"
 
+#: login
+msgid "Login"
+msgstr "Login"
+
 #: controller_metapackages_not_allowed
 msgid "Nur der Eigentümer des Bündels darf diese Aktion ausführen."
 msgstr "Only the owner of the bundle is allowed to perform this action."
@@ -1431,8 +1463,8 @@ msgid "Wie kann ich ein Bündel erstellen?"
 msgstr "How can I create a bundle?"
 
 #: view_user_profiles__profile_data_2
-msgid "Achtung: zum Schluss unten auf den 'Speichern'-Knopf klicken!"
-msgstr "Attention: when finished, don't forget to click on the \"Save\"-button!"
+msgid "Achtung: zum Schluss auf den 'Speichern'-Knopf klicken!"
+msgstr "Attention: when finished, don't forget to click on the 'Save'-button!"
 
 #: view_repositories_new_0
 msgid "Neues Repository für "
@@ -1848,6 +1880,10 @@ msgstr "participate in the survey"
 msgid "Im Paket "
 msgstr "In the package"
 
+#: view_packages_rdepends_1
+msgid " direkt und indirekt enthaltene Pakete"
+msgstr " directly and indirectly contained packages"
+
 #: kontodaten
 msgid "Konto 172 9375, Sparkasse Bremen, BLZ 290 501 01"
 msgstr "Bank-account: 172 9375, Sparkasse Bremen, Bank-number 290 501 01"
@@ -1859,10 +1895,6 @@ msgstr "How do I find the Communtu sources in my system?"
 #: view_home_derivatives_1
 msgid "Communtu setzt auf einer Ubuntu-Basisinstallation auf. Es gibt nun eine ganze Reihe von "
 msgstr "Communtu is based on a standard-installation of Ubuntu. There are many different "
-
-#: view_packages_rdepends_1
-msgid " direkt und indirekt enthaltene Pakete"
-msgstr " directly and indirectly contained packages"
 
 #: helper_distributions_6
 msgid "Repository löschen"
@@ -1900,6 +1932,10 @@ msgstr "http://wiki.ubuntuusers.de/Was_ist_Linux?#Was-sind-Derivate-einer-Distri
 msgid "Mitarbeit"
 msgstr "Co-operation"
 
+#: login_small
+msgid "einloggen"
+msgstr "log in"
+
 #: helper_distributions_8
 msgid "Quellen anzeigen"
 msgstr "Show sources"
@@ -1919,6 +1955,10 @@ msgstr "News"
 #: view_home_derivatives_4
 msgid ", und viele Ubuntu-Nutzer fragen sich,  ob sie statt Ubuntu lieber ein Derivat benutzen sollten. Die Antwort ist: meistens fährt man mit dem Standard-Ubuntu ganz gut, denn Communtu erlaubt, die Derivate auf einfache Weise nachzuinstallieren.  Allerdings ist das nicht bei allen Derivaten gleich sinnvoll."
 msgstr " and many Ubuntu-users may ask themselves if they should use a derivative instead of Ubuntu. The answer is: normally the standard version of Ubuntu is completely sufficiant because with Communtu it is quite easy to install a derivative. However, this is not always a wise decision."
+
+#: create_livecd
+msgid "CD erstellen"
+msgstr "Create CD"
 
 #: view_home_beteiligung_9
 msgid "Momentan benötigen wir noch Unterstützung bei der Entwicklung des Projektes bei folgenden zwei Tätigkeiten:"
@@ -1948,6 +1988,10 @@ msgstr "Each derivative under "
 msgid "Achtung! bei Communtu erst in Kürze verfügbar."
 msgstr "Attention! Will be available soon at Communtu."
 
+#: wait_for_email
+msgid "Auf Email warten"
+msgstr "Wating for e-mail"
+
 #: view_users__user_1
 msgid "deaktivieren"
 msgstr "deactivate"
@@ -1971,6 +2015,10 @@ msgstr "Match Ubuntu to your personal needs"
 #: view_users__user_2
 msgid "Rollen bearbeiten"
 msgstr "edit roles"
+
+#: install_package
+msgid "Installation des Pakets {{name}}"
+msgstr "Installation of package {{name}}"
 
 #: view_home_derivatives_7
 msgid "unter der Kategorie \"Derivate\" zur Installation ausgewählt werden."
@@ -2001,6 +2049,10 @@ msgstr ""
 "Hello, \n"
 " an error was reported on www.communtu.de. \n"
 "The user would really like to be notified when the error has been fixed."
+
+#: tested_bundle
+msgid "Bündel die beliebt und getestet sind:"
+msgstr "Popular and tested bundles:"
 
 #: debian_section
 msgid "Debian-Section:"
@@ -2082,6 +2134,10 @@ msgstr "Publish bundle"
 msgid "Nichts gefunden?"
 msgstr "Nothing found?"
 
+#: cd_ready
+msgid "CD fertig"
+msgstr "CD has finished"
+
 #: migrate_bundles_derivative
 msgid "Bündel von anderem Derivat übernehmen"
 msgstr "Take over bundle from other derivative."
@@ -2110,6 +2166,10 @@ msgstr "(More information about Keys and Sources in the FAQ)"
 msgid "Zeitpunkt"
 msgstr "Date"
 
+#: make_your_livedvd_or_usb
+msgid "Du hast noch kein Ubuntu installiert. Dann wähle hier deine Bündel aus und brenne dir eine CD oder DVD oder erstelle einen USB-Stick, damit du sie als Live-System oder zur Installation nutzen kannst."
+msgstr "You don't have Ubuntu installed on your computer. Choose a bundle and create a Live CD or copy the image on a USB key, which then can be used as a Live system or you can install your computer with it."
+
 #: start_vm_with_livecd_basis
 msgid "Virtuelle Maschine auf Basis der LiveCD-Einstellungen starten (Zur Fehlersuche)"
 msgstr "Start virtual machine based on the Live-CD settings (for debugging)"
@@ -2117,6 +2177,10 @@ msgstr "Start virtual machine based on the Live-CD settings (for debugging)"
 #: controller_users_3
 msgid "Du wurdest als Nutzer {{anonymous_user}} mit Kennwort {{anonymous_user}} eingeloggt. Bitte ggf. oben rechts auf Nutzer {{anonymous_user}} klicken und in ein dauerhaftes Nutzerkonto umwandeln; ansonsten wird das Konto nach einem Tag wieder gelöscht."
 msgstr "You have been logged in as {{anonymous_user}} with the password {{anonymous_user}}. If applicable click on the username {{anonymous_user}} in the above-right corner to change the account into an permanent account, otherwise the account will be deleted after one day."
+
+#: cd_created
+msgid "Die LiveCD/DVD ist fertig."
+msgstr "The Live CD/DVD has finished."
 
 #: view_cart__metacart_3
 msgid "Bündel aus Paketliste"
@@ -2153,6 +2217,10 @@ msgstr "user data updated"
 #: view_metapackages_show_12
 msgid "nicht veröffentlicht"
 msgstr "Not published"
+
+#: usb
+msgid "USB-Stick"
+msgstr "USB key"
 
 #: model_user_meta_tabz_1
 msgid "Alle veröffentlichten Bündel"
@@ -2198,9 +2266,17 @@ msgstr "Packages"
 msgid "Benutzer deaktiviert"
 msgstr "user deactivated"
 
+#: stars_popcon
+msgid "Die Sterne sagen aus, wie stark dieses Programm von den bisherigen Ubuntu Nutzern installiert und benutzt wurde."
+msgstr "The stars show how often the program is installed and used by the Ubuntu users."
+
 #: new_passwd
 msgid "Neues Passwort"
 msgstr "new password"
+
+#: liveusb_start_message
+msgid "Hier kannst du einen USB-Stick erstellen lassen, der die von dir ausgewählte Software enthält. Du hast folgende Bündel ausgewählt:"
+msgstr "Here you can create a USB key image which contains the software chosen by you. You selected the following bundles:"
 
 #: view_metapackages_show_15
 msgid "Editieren"
@@ -2217,6 +2293,10 @@ msgstr "Delete"
 #: view_layouts_application_0
 msgid "Communtu, Ubuntu, Installation, Installationshilfe"
 msgstr "Communtu, Ubuntu, installation, installation help"
+
+#: create_iso
+msgid "Iso erstellen"
+msgstr "Create ISO image"
 
 #: view_metapackages_show_16
 msgid "Paketliste editieren"
@@ -2306,21 +2386,29 @@ msgstr "content of {{file}} does not match with repository-syntax"
 msgid "Impressum"
 msgstr "Imprint"
 
-#: view_layouts_application_6
-msgid "Jetzt einfach, schnell und sicher online spenden – mit PayPal."
-msgstr "Donate now online using PayPal, it is easy, quick and secure."
-
-#: view_passwords_new_0
-msgid "Passwort vergessen"
-msgstr "forgotten password"
+#: usb_howto
+msgid "<h2>Wie kommt das Image auf den USB-Stick?</h2> <h3>Ubuntu</h3>Wenn du bereits ein Ubuntu installiert hast kann hierfür ganz einfach der Startmedienersteller benutzt werden. Erreicht werden kann dieser über System -> Systemverwaltung -> Startmedienersteller. In dem Bereich Quellabbilddatei (*.iso) oder CD muss über den Button Weitere... das Image ausgewählt werden. Im zweiten Feld Zu verwendender Datenträger muss der USB-Stick ausgewählt werden. Abschließend kann noch ausgewählt werden ob Daten auf dem USB-Stick gespeichert werden sollen oder nicht. Mit einem Klick auf Startmedium erstellen wird das Image auf den USB-Stick kopiert. Der Vorgang kann recht lange dauern, jenachdem wie schnell Dateien auf den USB-Stick kopiert werden können. Sobald der Vorgang abgeschlossen ist wird eine Erfolgsmeldung auf dem Bildschirm erscheinen. <h3>Microsoft Windows</h3> Zuerst lädt man sich <a href=\"http://unetbootin.sourceforge.net\" target=\"_blank\">hier</a> den UNetbootin herunter. Sobald der Download beendet ist kann man den UNetbooin ohne Installation direkt starten. Nach einem Klick auf Abbild kann man über die drei ... rechts das Image auswählen. Über den Laufwerksbuchstaben im unteren Teil von UNetbootin muss man den richtigen USB-Stick auswählen und mit einem Klick auf OK wird das Image auf den USB-Stick kopiert. Der Vorgang kann recht lange dauern, jenachdem wie schnell Dateien auf den USB-Stick kopiert werden können. Sobald der Vorgang abgeschlossen ist wird eine Erfolgsmeldung auf dem Bildschirm erscheinen."
+msgstr "<h2>How does the image can be copied to an USB key?</h2> <h3>Ubuntu</h3>If you already have Ubuntu installed you can use the Startup Disk Creator, which can be accessed via System -> Administration -> Startup Disk Creator. In the section Source disk image (.iso) or CD you can choose the ISO file when clicking on Other... Finally you can choose whether changed files shall be saved on the USB key or not. With a click on Make Startup Disk the image will be copied to the USB key. This process will take some time, mainly depending on how fast files can be written onto the USB key. When the image has been copied a success message will be shown.<h3>Microsoft Windows</h3> First you have to download the program <a href=\"http://unetbootin.sourceforge.net\" target=\"_blank\">UNetbootin</a>. When the download has finished you can start UNetbootin without installation. With a click on \"Diskimage\" and the three ... on the right side you can choose the ISO image you just have downloaded. With the dropdown menu at the bottom of Unetbootin you must choose the correct drive letter (which corresponds with the USB key you want to copy the image to. When finished a message will pop up and inform you of the successful creation."
 
 #: view_rating_new_comment_cancel
 msgid "Abbrechen"
 msgstr "Cancel"
 
+#: view_passwords_new_0
+msgid "Passwort vergessen"
+msgstr "forgotten password"
+
+#: view_layouts_application_6
+msgid "Jetzt einfach, schnell und sicher online spenden – mit PayPal."
+msgstr "Donate now online using PayPal, it is easy, quick and secure."
+
 #: view_passwords_new_1
 msgid "    Mit welcher Email-Adresse hast du das Benutzerkonto angelegt?"
 msgstr "    Which e-mail-address did you enter when you created the account?"
+
+#: iso_howto
+msgid "Über den Link kannst du eine iso-Datei herunterladen. Diese kannst du dann unter Ubuntu z.B. mit {{brasero}} oder {{k3b}} brennen. Unter Windows gibt es ebenfalls verschiedene Brennprogramme. Bitte wähle eine Option wie \"Abbild brennen\" oder \"iso brennen\". Wenn die iso-Datei sehr groß ist, musst du eine DVD verwenden.<br /> Mit der entstandenen CD oder DVD kannst du dann <a href=\"http://wiki.ubuntuusers.de/Ubuntu_Installation\" target=\"_blank\">Ubuntu installieren</a>."
+msgstr "You can download an ISO file following the link. If you use Ubuntu, you can use {{brasero}} or {{k3b}} to burn the image. If you use Microsoft Windows there are several programs for burning CDs and DVDs. Please chose an option similar to \"Burn image\" or \"Burn ISO\". If the ISO file is very large you need a DVD. <br /> Using the burned CD or DVD you can <a href=\"https://help.ubuntu.com/community/GraphicalInstall\" target=\"_blank\">install Ubuntu</a>."
 
 #: view_metapackages_finish_migrate_0
 msgid "Alle Bündel wurden von "
@@ -2500,6 +2588,10 @@ msgstr "Install through metapackage. Please add the sources first."
 msgid "Nutzer seit: "
 msgstr "user since:"
 
+#: installation_two_steps
+msgid "Installation des Pakets in zwei Schritten:"
+msgstr "Installation of the package in two steps:"
+
 #: view_users_show_3
 msgid "(Monat/Jahr)"
 msgstr "(month/year)"
@@ -2556,6 +2648,10 @@ msgstr "CD-Image"
 msgid "Kategorien-Übersicht"
 msgstr "Category-overview"
 
+#: make_your_usb
+msgid "Du kannst auch Bündel auswählen und daraus einen Live-USB-Stick erstellen."
+msgstr "You can also choose bundles and create a Live USB key from it."
+
 #: view_packages__packagelist_1
 msgid "Nur&nbsp;Programme:"
 msgstr "Programs&nbsp;only:"
@@ -2580,6 +2676,14 @@ msgstr "edit press archives"
 msgid "Zwischen 4 und 40 Zeichen"
 msgstr "Between 4 and 40 letters"
 
+#: download_area
+msgid "Download-Bereich"
+msgstr "Download:"
+
+#: usb_created
+msgid "Die Iso-Datei für den USB-Stick ist fertig."
+msgstr "The ISO file for the USB key has finished."
+
 #: circular_dependency
 msgid "Fehler: zirkuläre Abhängigkeiten zwischen Bündeln"
 msgstr "Error: circular dependencies between bundles"
@@ -2587,6 +2691,10 @@ msgstr "Error: circular dependencies between bundles"
 #: view_repositories_show_4
 msgid "Paketliste für {{arch}}:"
 msgstr "Package-list for {{arch}}:"
+
+#: install_bundle
+msgid "Installation des Bündels {{name}}"
+msgstr "Installation of bundle {{name}}"
 
 #: livecd_email_failed
 msgid "Communtu: Erstellung der Live-CD/DVD fehlgeschlagen"
@@ -2607,6 +2715,10 @@ msgstr ", the Live-CD/DVD {{name}} couldn't be created. We'll solve that problem
 #: view_repositories_show_6
 msgid "        OpenSource"
 msgstr "        OpenSource"
+
+#: create_your_usb
+msgid "Erstelle dir einen USB-Stick"
+msgstr "Create a USB key"
 
 #: being_created
 msgid "wird erstellt"
@@ -2629,8 +2741,8 @@ msgid "Benachrichtigung bei Fehlerbehebung"
 msgstr "Notification in bugfixing"
 
 #: iso_image
-msgid "ISO-Image (für CD/DVD)"
-msgstr "ISO-image (CD/DVD)"
+msgid "ISO-Image"
+msgstr "ISO image"
 
 #: advanced_user
 msgid "Ich bin fortgeschrittener Benutzer und will auch unfertige Versionen von Ubuntu sehen."
@@ -2672,25 +2784,25 @@ msgstr "    Password:"
 msgid "Externer Link: zu den Seiten von ubuntuusers"
 msgstr "External link: to the official Ubuntu Forums"
 
-#: third_party
-msgid "alle Anbieter"
-msgstr "all providers"
+#: view_passwords_edit_1
+msgid "    Passwort bestätigen:"
+msgstr "    confirm password:"
 
 #: view_packages_show_5
 msgid "Quellen für diese Paket hinzufügen"
 msgstr "add sources for this package"
 
-#: view_home_donate_options
-msgid "Es gibt verschiedene Möglichkeiten, etwas zu spenden."
-msgstr "There are several ways of donating."
-
-#: view_passwords_edit_1
-msgid "    Passwort bestätigen:"
-msgstr "    confirm password:"
-
 #: view_packages_show_11
 msgid "Weblinks:"
 msgstr "Weblinks:"
+
+#: third_party
+msgid "alle Anbieter"
+msgstr "all providers"
+
+#: view_home_donate_options
+msgid "Es gibt verschiedene Möglichkeiten, etwas zu spenden."
+msgstr "There are several ways of donating."
 
 #: view_user_profiles__profile_data_10
 msgid " Nur Ubuntuquellen zulassen (\"main/restricted\", sehr sicher: Sicherheits-Updates von Ubuntu)"
@@ -2740,6 +2852,10 @@ msgstr "Additional software installation for Ubuntu "
 msgid "/5 Sterne&nbsp;&nbsp; "
 msgstr "/5 stars&nbsp;&nbsp; "
 
+#: view_packages_show_15
+msgid "Quelle/Repository"
+msgstr "source/repository"
+
 #: view_packages__deps_0
 msgid "keine"
 msgstr "none"
@@ -2760,10 +2876,6 @@ msgstr " Program (if not other program-icon is available)"
 msgid "Standard"
 msgstr "Standard"
 
-#: view_packages_show_15
-msgid "Quelle/Repository"
-msgstr "source/repository"
-
 #: view_user_profiles__profile_data_14
 msgid " Freie Software (Quellen liegen offen und dürfen weiterentwickelt werden)"
 msgstr " Free software (sources are open and further development is allowed)"
@@ -2771,6 +2883,10 @@ msgstr " Free software (sources are open and further development is allowed)"
 #: view_user_profiles__installation_1
 msgid "Um etwas installieren zu können, musst du zunächst unter \"Softwareauswahl\" etwas auswählen."
 msgstr "In order to install software, you have to choose at least one package or bundle under \"Software selection\"."
+
+#: view_packages_show_16
+msgid "Paket-Version"
+msgstr "package-version"
 
 #: offer_new_category
 msgid "Vorschlag einer neuen Kategorie"
@@ -2804,17 +2920,17 @@ msgstr "publ."
 msgid "Unsichtbare Distribution"
 msgstr " Invisible distribution"
 
-#: view_packages_show_16
-msgid "Paket-Version"
-msgstr "package-version"
-
 #: view_user_profiles__profile_data_15
 msgid " Unfreie Lizenzen zulassen (auch kostenlos, aber Quellen liegen nicht offen - der weiche Übergang zu Linux: "
 msgstr " Allow commercial licenses (free too, but the sources are closed - the fluent change to Linux:"
 
 #: view_user_profiles__installation_2
-msgid "Aufgrund deiner Auswahl werden jetzt Programme auf deinem Computer installiert. Folgende Schritte sind dafür zu tun"
-msgstr "Because of your choice the programs will now be installed on your computer. Please follow these steps:"
+msgid "Aufgrund deiner Auswahl werden jetzt Programme auf deinem Computer installiert."
+msgstr "Due to the choice you made, programs will now be installed on your computer."
+
+#: view_packages_show_17
+msgid "Beinhaltet folgende Pakete (\"depends\" und \"recommends\"):"
+msgstr "Contains these packages (\"depends\" and \"recommends\"):"
 
 #: view_derivatives_show_3
 msgid "Icon file:"
@@ -2827,10 +2943,6 @@ msgstr "Package updated."
 #: controller_sessions_3
 msgid "Deine hier registrierte Distribution wurde auf {{dist_old}} geändert, weil deine alte Distribution von Ubuntu (und daher auch von Communtu) nicht mehr unterstützt wird. Wir empfehlen für deinen Computer ein <a href='http://wiki.ubuntuusers.de/Upgrade'>Upgrade</a> auf {{dist_new}}."
 msgstr "Your registered distribution was changed to {{dist_old}} because your old distribution is not supported by Ubuntu (and therefore by Communtu) anymore. We suggest an upgrade to {{dist_new}}."
-
-#: view_packages_show_17
-msgid "Beinhaltet folgende Pakete (\"depends\" und \"recommends\"):"
-msgstr "Contains these packages (\"depends\" and \"recommends\"):"
 
 #: archive
 msgid "Archiv"
@@ -2848,6 +2960,10 @@ msgstr "To create a meta-package an English title and descriptionis needed."
 msgid " Programm-Bündel"
 msgstr " program-bundle"
 
+#: view_packages_show_19
+msgid "Konflikte mit folgenden Paketen (nur solche ohne Version):"
+msgstr "Conflicts with these packages (only those without a version):"
+
 #: controller_sessions_5
 msgid "Dein Benutzername oder Passwort ist falsch. Bitte ggf. unten auf \"Registrieren\" klicken."
 msgstr "Your username or password is wrong. If applicable click on \"Register\" below."
@@ -2855,10 +2971,6 @@ msgstr "Your username or password is wrong. If applicable click on \"Register\" 
 #: view_home_icons_16
 msgid " Migration von Repositories"
 msgstr "migration from repositories"
-
-#: view_packages_show_19
-msgid "Konflikte mit folgenden Paketen (nur solche ohne Version):"
-msgstr "Conflicts with these packages (only those without a version):"
 
 #: view_user_profiles__profile_data_17
 msgid "Speichern und feiner auswählen"
@@ -2892,13 +3004,13 @@ msgstr "Your account has been deactivated or deleted."
 msgid " externer Link"
 msgstr " external link"
 
-#: view_home_home_bundle
-msgid "vorkonfigurierte veröffentlichte Programmbündel in Communtu"
-msgstr "Preconfigured and published bundles in Communtu"
-
 #: view_packages_show_21
 msgid "Wird in folgenden Paketen benutzt:"
 msgstr "Is used in this packages:"
+
+#: view_home_home_bundle
+msgid "vorkonfigurierte veröffentlichte Programmbündel in Communtu"
+msgstr "Preconfigured and published bundles in Communtu"
 
 #: discuss
 msgid "discuss"
@@ -2913,7 +3025,7 @@ msgid "Kommentar"
 msgstr "Comment "
 
 #: create_your_livedvd
-msgid "Erstelle dir eine Live-CD"
+msgid "Erstelle dir eine Live-CD/DVD"
 msgstr "Create a Live-CD"
 
 #: start
@@ -2940,17 +3052,21 @@ msgstr " user-icon"
 msgid "E-Mail: "
 msgstr "E-Mail:"
 
+#: iso_ready
+msgid "Iso fertig"
+msgstr "ISO images has finished"
+
 #: you_can
 msgid "Du kannst dich auch "
 msgstr "You can "
 
-#: view_home_icons_23
-msgid "Nachrichtensymbol"
-msgstr "Message-icon"
-
 #: view_packages_show_26
 msgid "Metapaket in Bündel wandeln"
 msgstr "change metapackage into bundle"
+
+#: view_home_icons_23
+msgid "Nachrichtensymbol"
+msgstr "Message-icon"
 
 #: make_distribution_visible
 msgid "Distribution sichtbar machen"
@@ -2971,6 +3087,10 @@ msgstr "Deb created."
 #: view_packages_edit_10
 msgid "Beschreibung des Pakets"
 msgstr "Package description"
+
+#: please_create_cd
+msgid "Bitte erst ein iso erstellen"
+msgstr "You must create a ISO file first."
 
 #: view_mailbox_show_1
 msgid "Von"
@@ -3017,8 +3137,8 @@ msgid "Ungültiger Anderungscode eingegeben."
 msgstr "Invalid activation code entered."
 
 #: livecd_previous_cds
-msgid "Bisher erstellte Live-CDs/DVDs:"
-msgstr "Live-CD's/DVD's created so far:"
+msgid "Bisher erstellte Iso-Dateien (für Live-CDs/DVDs oder USB-Sticks):"
+msgstr "ISO images (for Live-CDs/DVDs and USB keys) created so far:"
 
 #: create_livecd_title
 msgid "Wie erstelle ich eine Live-CD?"
@@ -3129,8 +3249,12 @@ msgid "Der Betreff darf nicht leer sein."
 msgstr "Subject must not be empty."
 
 #: make_your_livedvd
-msgid "Du hast noch kein Ubuntu installiert. Dann wähle hier deine Bündel aus und brenne dir eine CD, damit du sie als Live-CD und zur Installation nutzen kannst."
-msgstr "You don't have Ubuntu installed on your computer. Choose a bundle and create a Live-CD, with which you can install your computer."
+msgid "Du hast noch kein Ubuntu installiert. Dann wähle hier deine Bündel aus und brenne dir eine CD oder DVD, damit du sie als Live-System oder zur Installation nutzen kannst."
+msgstr "You don't have Ubuntu installed on your computer. Then choose a bundle and burn the ISO file onto an empty CD or DVD so you can test it as a Live CD or install it onto your computer."
+
+#: untested_bundle
+msgid "Bündel die experimentiell und ungetested sind:"
+msgstr "Experimental and untested bundles:"
 
 #: bundel_editing
 msgid "zur Bündelbearbeitung"
@@ -3143,6 +3267,10 @@ msgstr "user does not exist"
 #: view_user_profiles__sources_0
 msgid "Quellen für die zu installierenden Programme"
 msgstr "Sources for the soon be installed programs"
+
+#: view_rating_show_title_ratings_count
+msgid "(Basierend auf {{votes}} Bewertung(en))"
+msgstr "(Based on {{votes}} rating(s))"
 
 #: view_home_impressum_2
 msgid "AG Communtu"
@@ -3159,10 +3287,6 @@ msgstr "This bundle cannot be deleted as it is used in an other bundle."
 #: create_livecd_intro
 msgid "Man kann mit Communtu auf zwei Arten eine Live-CD erstellen: über die Downloadseite und über ein Bündel direkt."
 msgstr "You can create a Live-CD with Communtu in two different ways: using the download page or directly via a bundle."
-
-#: view_rating_show_title_ratings_count
-msgid "(Basierend auf {{votes}} Bewertung(en))"
-msgstr "(Based on {{votes}} rating(s))"
 
 #: controller_sent_2
 msgid "Nachricht erfolgreich versendet"
@@ -3233,6 +3357,10 @@ msgstr "Videos:"
 #: server_status
 msgid "Status des Servers"
 msgstr "Server status"
+
+#: bundle_tested
+msgid "Bündel getestet:"
+msgstr "Bundle tested:"
 
 #: senden
 msgid "Abschicken"
@@ -3519,8 +3647,8 @@ msgid "Für Fragen zu Communtu haben wir \"Häufig gestellte Fragen\" zusammenge
 msgstr "For questions concerning Communtu we have created a \"FAQ\"."
 
 #: livecd_please_register
-msgid "Um Live-CD/DVDs zu erstellen, musst du dich erst {{register}}."
-msgstr "To create a Live-CD/DVD you have to {{register}} first."
+msgid "Um Live-CD/DVDs oder USB-Sticks zu erstellen, musst du dich erst {{register}} oder {{login}}."
+msgstr "To create a ISO image to burn on a CD/DVD or to copy on a USB key you have to {{register}} or {{login}} first."
 
 #: controller_categories_2
 msgid "Kategorie erzeugt."
@@ -3563,12 +3691,12 @@ msgid "Über Communtu"
 msgstr "About Communtu"
 
 #: livecd_message
-msgid "Über eine Live-CD kann die Software sowohl ausprobiert als auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} erstellt, in Form einer iso-Datei, die du dann brennen kannst. Zum Brennen benötigst du eine CD, falls du viel Software ausgewählt hast, eine DVD.<br /><br /> Die Erstellung des Images dauert eine gewisse Zeit. Du wirst per Email benachrichtigt, sobald das Image fertig ist. Bitte achte darauf, dass in deinen Benutzereinstellungen eine gültige Email-Adresse angegeben ist."
-msgstr "With the Live-CD you can test the software you have chosen and install the system with the previous made software choice. For this, an ISO-file ({{cdimage_link}}) is created which you can burn. You need an empty CD-R or, if you have chosen lots of software, an empty DVD-R.<br /><br />The creation of the image takes a while. You will be informed automatically when your image has been created. For this, a valid e-mail address is required to be entered in your profile."
+msgid "Über eine Live-CD kann die Software sowohl ausprobiert als auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} erstellt, die du dann brennen kannst.<br /><br /> Die Erstellung des Images dauert eine gewisse Zeit. Du wirst per Email benachrichtigt, sobald das Image fertig ist. Bitte achte darauf, dass in deinen Benutzereinstellungen eine gültige Email-Adresse angegeben ist."
+msgstr "With the Live-CD you can test the software you have chosen and install the system with the previous made software choice. For this, an ISO file ({{cdimage_link}}) is created which you can burn to an empty CD-R. The creation of the image takes a while. You will be informed automatically when your image has been created. For this, a valid e-mail address is required to be entered in your profile."
 
 #: make_a_systemupgrade
-msgid "Du möchtest ein System-Upgrade machen. Dann schau <a href=\"http://communtu.wordpress.com/2009/09/16/mit-communtu-ein-systemupgrade-durchfuhren/\">wie einfach das geht</a> und lade deine Paketliste bei Communtu hoch."
-msgstr "You want to upgrade your system? Take a look <a href=\"http://encommuntu.wordpress.com/2009/09/16/how-to-use-communtu-for-a-systems-upgrade/\">here how easy it is</a> and upload your package list to Communtu."
+msgid "Du möchtest ein System-Upgrade machen oder deine interessanten Programme einbringen? Dann schau <a href=\"http://communtu.wordpress.com/2009/09/16/mit-communtu-ein-systemupgrade-durchfuhren/\">wie einfach das geht</a> und lade deine Paketliste bei Communtu hoch."
+msgstr "You want to upgrade your system or bring some interesting programs in? Take a look <a href=\"http://encommuntu.wordpress.com/2009/09/16/how-to-use-communtu-for-a-systems-upgrade/\">here how easy it is</a> and upload your package list to Communtu."
 
 #: controller_metapackages_not_changed
 msgid "Das Bündel wurde schon als Metapaket erzeugt und hochgeladen."
@@ -3590,6 +3718,10 @@ msgstr "Download:"
 msgid "Allgemeinbildung e.V."
 msgstr "Allgemeinbildung e.V."
 
+#: view_repositories_index_0
+msgid "Repositories"
+msgstr "repositories "
+
 #: view_layouts_application_15
 msgid "angemeldet als  "
 msgstr "Logged in as "
@@ -3597,10 +3729,6 @@ msgstr "Logged in as "
 #: view_home_home_29
 msgid "Zu welchem Thema suchst du Programme (Büro, Grafik,...)? Hier kannst du deine Interessengebiete eingeben und passende vorkonfigurierte Programmbündel downloaden."
 msgstr "To which topic do you look for programs (office, graphics, ...)? Enter your fields of interest and pre-configured bundles can be downloaded."
-
-#: view_repositories_index_0
-msgid "Repositories"
-msgstr "repositories "
 
 #: view_layouts_application_16
 msgid "neue Nachricht"
@@ -3646,13 +3774,13 @@ msgstr "The following packages couldn't be saved in the database:"
 msgid "https://www.paypal.com/de_DE/DE/i/btn/btn_donate_LG.gif"
 msgstr "https://www.paypal.com/en_GB/i/btn/btn_donate_LG.gif"
 
-#: view_home_home_33
-msgid "Möchtest du mehr über Communtu wissen? Hast du Anregungen, Fragen - wir freuen uns auf den Kontakt mit dir."
-msgstr "Do you want to know more about Communtu? Do you have suggestions or questions? We are looking forward to be in touch with you."
-
 #: view_repositories_index_5
 msgid "Neues Repository"
 msgstr "new repository"
+
+#: view_home_home_33
+msgid "Möchtest du mehr über Communtu wissen? Hast du Anregungen, Fragen - wir freuen uns auf den Kontakt mit dir."
+msgstr "Do you want to know more about Communtu? Do you have suggestions or questions? We are looking forward to be in touch with you."
 
 #: view_distributions_show_0
 msgid "Repositories:"
@@ -3714,6 +3842,10 @@ msgstr "BUNDLE"
 msgid "Installieren"
 msgstr "Install"
 
+#~ msgid "Folgende"
+#~ msgstr "The following"
+#~ msgid "ISO-Image (für CD/DVD)"
+#~ msgstr "ISO-image (CD/DVD)"
 #~ msgid "Dieser Bündel-Name ist bereits vergeben<br>"
 #~ msgstr "The bundle-name is already in use<br>"
 #~ msgid "Installation"
