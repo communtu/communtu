@@ -429,7 +429,7 @@ de:
   translation_file: 'Url der Übersetzungsdatei (gz Datei):'
   trusted: Ubuntu+Community
   ubuntu_derivatives: Ubuntu-Derivate
-  untested_bundle: 'Bündel die experimentiell und ungetested sind:'
+  untested_bundle: 'Bündel die experimentell und ungetestet sind:'
   update: Aktualisieren
   updatedPackages: 'geänderte Pakete: '
   url: Url
