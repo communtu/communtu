@@ -420,7 +420,7 @@ de:
   subject_without_colon: Betreff
   subtype: 'Subtyp:'
   superior_category: Übergeordnete Kategorie
-  tested_bundle: 'Bündel die beliebt und getestet sind:'
+  tested_bundle: 'Bündel die getestet sind:'
   third_party: alle Anbieter
   to_chat: zum Chat
   to_colon: 'An:'
@@ -429,7 +429,7 @@ de:
   translation_file: 'Url der Übersetzungsdatei (gz Datei):'
   trusted: Ubuntu+Community
   ubuntu_derivatives: Ubuntu-Derivate
-  untested_bundle: 'Bündel die experimentell und ungetestet sind:'
+  untested_bundle: 'Bündel die ungetestet sind:'
   update: Aktualisieren
   updatedPackages: 'geänderte Pakete: '
   url: Url
