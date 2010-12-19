@@ -546,6 +546,15 @@ class MetapackagesController < ApplicationController
     @metapackage  = Metapackage.find(params[:id])   
   end
 
+  def bundle_from_selection
+    prepare_create
+    cart = Cart.find(session[:cart])
+    current_user.user_packages.map(&:base_package).uniq.each do |m|
+       CartContent.create({:cart_id => cart.id, :base_package_id => m.id})
+    end
+    redirect_to "/packages"
+  end
+  
   private
 
   def check_owner(meta,user)

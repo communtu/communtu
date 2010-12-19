@@ -234,4 +234,14 @@ module ApplicationHelper
     return true
   end
 
+  def prepare_create
+        if not editing_metapackage?
+            cart      = Cart.new
+            cart.name = t(:new_bundle)+"_"+current_user.login
+            cart.save!
+            
+            session[:cart] = cart.id
+        end
+  end
+
 end

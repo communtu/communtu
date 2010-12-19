@@ -72,6 +72,10 @@
 </div>  
 
 </form>
-<p><a href="/home/contact_us/cat"><%=t(:offer_new_category)%></a></p>
+<p><%=link_to t(:offer_new_category), "/home/contact_us/cat"%></p>
 
+<p><br /><%=t(:want_to_add_package)%>
+   <%=link_to t(:want_to_add_package2), "/metapackages/bundle_from_selection"%></p>
+
+</div>  
 <% end %>

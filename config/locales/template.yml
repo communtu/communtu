@@ -948,6 +948,8 @@ de:
   wait_for_email: Auf Email warten
   wait_for_release: auf offizielles Ubuntu-Release warten
   wait_for_sync: auf Synchronisation der Repositories warten
+  want_to_add_package: Möchtest du einzelne Programme/Pakete hinzufügen? 
+  want_to_add_package2: Dann erstelle aus der Auswahl ein neues Bündel
   warnings: Warnungen
   we_want_you: Wir brauchen dich
   weblinks: Weblinks
