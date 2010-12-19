@@ -32,6 +32,7 @@ de:
   bundle_open_new_window: Bündel wird im neuen Fenster geöffnet.
   bundle_tested: 'Bündel getestet:'
   bundle_to_livecd: LiveCD/DVD aus Bündel <i>{{name}}</i> erstellen
+  bundle_to_livecd1: LiveCD/DVD aus Bündel
   bundles_needing_deb_generation: Bündel, die neu als Metapaket erzeugt werden müssen
   bundles_with_errors: Bündel mit Fehlern
   bundles_with_missing_debs: Bündel mit fehlenden deb-Builds

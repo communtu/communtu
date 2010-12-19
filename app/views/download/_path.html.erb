@@ -7,7 +7,7 @@
 <% for i in 0..path.length-1 
    node=path[i]%>
    <li> 
-   <% if params[:action] == node[:action] 
+   <% if params[:action] == node[:action].split("/")[-1]
       current = i%>
       <i>
    <% end %>	
@@ -16,7 +16,7 @@
    <% else %>
       <%= link_to(node[:name],node[:action])%>
    <% end %>
-   <% if params[:action] == node[:action] %>
+   <% if params[:action] == node[:action].split("/")[-1] %>
       </i>
    <% end %>
    </li>	

@@ -3,17 +3,12 @@
 %>
 
 <% if logged_in? %>
-  <% if grey %> 
-    <div class="communtu_box_grey">
-	<div class="communtu_box_line_grey">
-  <%else%>
     <% if params[:controller] == "download" then %> 
       <div class="communtu_box_down">
     <%else%>
 	  <div class="communtu_box_up">
     <% end %>
 	<div class="communtu_box_line">
-  <% end %>
 	<%=t(:settings)%>
 	</div>
         <div class="communtu_box_inside">
@@ -22,11 +17,7 @@
          <%= current_user.architecture.name  %> <br />
          <%= Package.show_security_type(current_user.security) %> <br />
          <%= Package.show_license_type(current_user.license) %>  <br />
-		 <% if grey %>
-           <%= t(:change) %>
-		 <% else %>
-		   <%= link_to t(:change), "/download/settings" %>
-		 <% end %>
+         <%= link_to t(:change), "/download/settings" %>
  	    </div>
 </div>
 <% end %>

@@ -14,6 +14,11 @@ class DownloadController < ApplicationController
              {:name => I18n.t(:create_livecd), :action => "livecd"},
              {:name => I18n.t(:wait_for_email), :action => "cd_email"},
              {:name => I18n.t(:cd_ready), :action => "current_cd"}],
+             "bundle_cd" => [{:name => I18n.t(:model_user_meta_tabz_3), :action => "/metapackages"},
+             {:name => I18n.t(:model_user_profile_tabz_4), :action => "/download/settings"},
+             {:name => I18n.t(:bundle_to_livecd1), :action => "/download/bundle_to_livecd"},
+             {:name => I18n.t(:wait_for_email), :action => "/download/create_livecd_from_bundle"},
+             {:name => I18n.t(:cd_ready), :action => "/download/current_cd"}],
              "usb" => [{:name => I18n.t(:download_area), :action => "start"},
              {:name => I18n.t(:model_user_profile_tabz_1), :action => "selection"},
              {:name => I18n.t(:model_user_profile_tabz_4), :action => "settings"},
@@ -197,7 +202,14 @@ class DownloadController < ApplicationController
 
   def bundle_to_livecd
     if check_login then return end
+    if !params[:path].nil?
+      session[:path] = params[:path]
+    end  
+    if params[:id].nil? then
+      params[:id] = session[:cd_bundle] 
+    end
     @bundle = Metapackage.find(params[:id])
+    session[:cd_bundle] = @bundle.id
     # check if live CD has been generated already
     @cd = Livecd.find(:first,:conditions=>{:metapackage_id => @bundle.id,
                                     :distribution_id => current_user.distribution.id,
@@ -209,12 +221,16 @@ class DownloadController < ApplicationController
   end
 
   def create_livecd_from_bundle
+    if params[:id].nil? then
+      params[:id] = session[:cd_bundle] 
+    end
     @bundle = Metapackage.find(params[:id])
+    session[:cd_bundle] = @bundle.id
     cd = current_user.bundle_to_livecd(@bundle,true,params[:kvm],params[:usb])
     if cd.nil? then
       flash[:error] = t(:livecd_failed)
     end
-    redirect_to "/livecds"
+    redirect_to "/download/cd_email"
   end
   
   def cd_email

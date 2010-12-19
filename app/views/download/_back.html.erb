@@ -1,6 +1,6 @@
 <% path = DownloadController::PATHS[session[:path]] %>
 <% for i in 0..path.size-1 %>
-  <% if path[i][:action] == params[:action] and i>0 %>
+  <% if path[i][:action].split("/")[-1] == params[:action] and i>0 %>
       <div class="path_back">
       <% j = if @back2 and !path[i-2].nil? then i-2 else i-1 end %>	
       <%= form_tag(path[j][:action], :method => 'get')%>	
