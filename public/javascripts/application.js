@@ -20,7 +20,7 @@ function user_profile_edit_show_category(id) {
     }
 }
 
-function user_profile_edit_save_categories(userid) {
+function user_profile_edit_save_categories() {
     new Ajax.Request(
         '/download/update_ratings', 
         {
@@ -29,3 +29,14 @@ function user_profile_edit_save_categories(userid) {
             parameters:Form.serialize($('ajax'))
         });
 }
+
+function download_save_settings() {
+    new Ajax.Request(
+        '/download/update_data', 
+        {
+            asynchronous:true, 
+            evalScripts:false, 
+            parameters:Form.serialize($('ajax'))
+        });
+}
+

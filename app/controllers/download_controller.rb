@@ -5,15 +5,18 @@
 class DownloadController < ApplicationController
     PATHS = {"install" => [{:name => I18n.t(:download_area), :action => "start"},
              {:name => I18n.t(:model_user_profile_tabz_1), :action => "selection"},
+             {:name => I18n.t(:model_user_profile_tabz_4), :action => "settings"},
              {:name => I18n.t(:add_sources), :action => "prepare_install_sources"},
              {:name => I18n.t(:controller_suggestion_15), :action => "installation"}],
              "cd" => [{:name => I18n.t(:download_area), :action => "start"},
              {:name => I18n.t(:model_user_profile_tabz_1), :action => "selection"},
+             {:name => I18n.t(:model_user_profile_tabz_4), :action => "settings"},
              {:name => I18n.t(:create_livecd), :action => "livecd"},
              {:name => I18n.t(:wait_for_email), :action => "cd_email"},
              {:name => I18n.t(:cd_ready), :action => "current_cd"}],
              "usb" => [{:name => I18n.t(:download_area), :action => "start"},
              {:name => I18n.t(:model_user_profile_tabz_1), :action => "selection"},
+             {:name => I18n.t(:model_user_profile_tabz_4), :action => "settings"},
              {:name => I18n.t(:create_iso), :action => "livecd"},
              {:name => I18n.t(:wait_for_email), :action => "cd_email"},
              {:name => I18n.t(:iso_ready), :action => "current_cd"}
@@ -72,6 +75,7 @@ class DownloadController < ApplicationController
   def settings_ajax
     @user = current_user
     @user.advanced = !params[:user].nil? and params[:user][:advanced]=="1"
+    @user.save
     @distributions = @user.possible_distributions
     render :partial => "distribution", :locals => {:user => @user, :distributions => @distributions}
   end
@@ -128,7 +132,7 @@ class DownloadController < ApplicationController
     if user.derivative.distributions.include?(user.distribution) then
       user.save!
       user.increase_version
-      redirect_to session[:backlink]
+    render :nothing => true
     else
       flash[:error] = t(:distribution_derivative_mismatch, 
                         :derivative => user.derivative.name,

@@ -2,35 +2,35 @@
    #  use, modification or distribution only with permission of the copyright holder
 %>
 
-<h3><%=t(:view_user_profiles__profile_data_0)%></h3>
 
 <%= render_flash %>
 <%= error_messages_for :user_profile %>
+<%= render :partial => "path" %>
 
-<p><%=t(:view_user_profiles__profile_data_1)%><b><%=t(:view_user_profiles__profile_data_2) %></b></p>
+<h2><%=t(:view_user_profiles__profile_data_0)%></h2>
 
-<% form_tag "/download/update_data", options = {:name => "data", :method => :put} do %>
- <div class="upper_submit">
-    <%= submit_tag t(:save), :name => "choose" %>
- </div>
+<%= form_remote_tag(:url => "/user_profile/update_data", :name => "data", :html => {:id => "ajax"})  %>
+
+<p><%=t(:view_user_profiles__profile_data_1)%></p>
+
     <ol>	
      <li><p><%=t(:view_user_profiles__profile_data_6)%><%= link_to(t(:view_user_profiles__profile_data_7),'/download/help')%><br />
 		<% if !@dist_string.nil? %>
 <%=t(:view_user_profiles__profile_data_8)%><%= @dist_string %>
 		<% end %>
 </p>
-        
-       <%= render :partial => "distribution", :locals => {:user => @user, :distributions => @distributions} %>
-       |
+
+<%= render :partial => 'distribution' %>
+        |
 
         <% Derivative.all.each do |der|%>
 	      <% selected = der == current_user.derivative %>
-		  <%= radio_button_tag('user[derivative_id]',der.id, selected)%> <%=h der.name%>
+		  <%= radio_button_tag('user[derivative_id]',der.id, selected, :onchange => "download_save_settings();")%> <%=h der.name%>
         <% end %>
         |
         <% Architecture.all.each do |arch|%>
 	  	  <% selected = arch == current_user.architecture %>
-		  <%= radio_button_tag('user[architecture_id]',arch.id, selected)%> <%=h arch.name%>
+		  <%= radio_button_tag('user[architecture_id]',arch.id, selected, :onchange => "download_save_settings();")%> <%=h arch.name%>
         <% end %>
 		
 	</li>
@@ -39,10 +39,10 @@
 		
      <li><p><%=t(:view_user_profiles__profile_data_9)%></p>
         
-        <%= radio_button_tag "user[security]", "0", options[0] %><%=t(:view_user_profiles__profile_data_10)%><br />
-        <%= radio_button_tag "user[security]", "1", options[1] %><%=t(:view_user_profiles__profile_data_11)%>
+        <%= radio_button_tag "user[security]", "0", options[0], :onchange => "download_save_settings();" %><%=t(:view_user_profiles__profile_data_10)%><br />
+        <%= radio_button_tag "user[security]", "1", options[1], :onchange => "download_save_settings();" %><%=t(:view_user_profiles__profile_data_11)%>
         <%= package_link "gdmap"%>, <%= package_link "pdfedit"%>, <%= package_link "Acroread"%>, ... )<br />
-        <%= radio_button_tag "user[security]", "2", options[2] %><%=t(:view_user_profiles__profile_data_12)%>
+        <%= radio_button_tag "user[security]", "2", options[2], :onchange => "download_save_settings();" %><%=t(:view_user_profiles__profile_data_12)%>
         <%= package_link "Skype"%>, <%= package_link "Virtualbox"%>, DVDs ... )<br />
          </li>
     <li><div style="margin-bottom:30px">
@@ -55,8 +55,8 @@
             <% options[1] = true %>
         <% end %>
         <p><%=t(:view_user_profiles__profile_data_13)%></p>
-        <%= radio_button_tag "user[license]", "0", options[0] %><%=t(:view_user_profiles__profile_data_14)%><br />
-        <%= radio_button_tag "user[license]", "1", options[1] %><%=t(:view_user_profiles__profile_data_15)%>
+        <%= radio_button_tag "user[license]", "0", options[0], :onchange => "download_save_settings();" %><%=t(:view_user_profiles__profile_data_14)%><br />
+        <%= radio_button_tag "user[license]", "1", options[1], :onchange => "download_save_settings();" %><%=t(:view_user_profiles__profile_data_15)%>
          <%= package_link "Skype"%>, <%= package_link "Acroread"%>, ... )<br />
         </div></li>
     <li><%= check_box_tag "user[advanced]", 1, @user.advanced, 
@@ -66,9 +66,6 @@
                                        :with=>'Form.Element.serialize(this)')}  %>
          <%=t(:advanced_user)%><br /></li>
 	</ol>
-    <div style="margin-top:20px;">
-        <%= submit_tag t(:save), :name => "choose" %>
-    </div>
-<% end %>
-<%= render(:partial => 'users/conny')%>
+
+</form>
 </div>

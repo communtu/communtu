@@ -7,7 +7,6 @@
 <h2><%=t(:add_sources)%></h2>
 <%= render_flash %>
 
-<%= render :partial => 'box', :locals => {:grey => true} %>
 <% if current_user.selected_packages.empty? %>
 <%=t(:view_user_profiles__installation_1)%>
 

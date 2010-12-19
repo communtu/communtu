@@ -3,5 +3,5 @@
 %>
 
 <span id="distributions">
-<%= collection_select(:user, :distribution_id, @distributions, :id, :name) %>
+<%= collection_select(:user, :distribution_id, @distributions, :id, :name, {}, :onchange => "download_save_settings();") %>
 </span>

@@ -877,8 +877,8 @@ de:
   view_user_profiles__installation_31: Die Communtu-Metapakete können auch mittles {{synaptic}} (unter System -> Systemverwaltung) angezeigt, installiert und deinstalliert werden. Änderungen an Bündeln werden über die Ubuntu-Paketverwaltung automatisch eingespielt.
   view_user_profiles__installation_33: Diese
   view_user_profiles__installation_34: werden zu dem System hinzugefügt.
-  view_user_profiles__profile_data_0: 'Installation vorbereiten: Voreinstellungen eingeben'
-  view_user_profiles__profile_data_1: 'Auf dieser Seite kannst du die Grundeinstellungen deines Computers angeben. '
+  view_user_profiles__profile_data_0: 'Voreinstellungen eingeben'
+  view_user_profiles__profile_data_1: 'Auf dieser Seite kannst du die Grundeinstellungen deines Computers angeben. In der Regel kannst du die Einstellungen so lassen.'
   view_user_profiles__profile_data_10: ' Nur Ubuntuquellen zulassen ("main/restricted", sehr sicher: Sicherheits-Updates von Ubuntu)'
   view_user_profiles__profile_data_11: ' Auch Communityquellen zulassen ("universe/multiverse", auch sicher, mehr Programme/Komfort: '
   view_user_profiles__profile_data_12: ' Alle Quellen zulassen (etwas unsicherer: <a href="http://wiki.ubuntuusers.de/Fremdquellen">Fremdpakete</a> können das System gefährden, aber noch mehr Programme/Komfort: '
@@ -893,7 +893,7 @@ de:
   view_user_profiles__profile_data_7: Wie stelle ich die Version fest?
   view_user_profiles__profile_data_8: 'Über den Browser festgestellte Version: '
   view_user_profiles__profile_data_9: Hier kannst du einstellen, wie sicher bzw. komfortabel deine Installationsquellen sein sollen
-  view_user_profiles__profile_rating_0: Auswahl der zu installierenden Programmbündel und Programme
+  view_user_profiles__profile_rating_0: "Softwareauswahl: Programmbündel wählen"
   view_user_profiles__profile_rating_1: Rechts findest du die Details zur links ausgewählten Kategorie.
   view_user_profiles__sources_0: Quellen für die zu installierenden Programme
   view_user_profiles__sources_1: Hier werden die zu installierenden Programme und Pakete nach den zugehörigen Quellen sortiert aufgelistet, so dass du auch sehen kannst, weshalb die jeweiligen Quellen hinzugefügt werden.
