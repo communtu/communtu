@@ -24,9 +24,6 @@
   style="margin-left: <%=(c[:depth]-1)*15%>px;"
   class="user_profile_edit_cat <%=if (c[:category]==first_c) then "category_active" end%>"
   onclick="user_profile_edit_show_category(<%=c[:category].id.to_s%>);">
-<%=check_box_tag("categories[" + c[:category].id.to_s + "]", 1, @ratings[c[:category].id], 
-               :onclick => "user_profile_edit_show_category("+c[:category].id.to_s+"); "+check_bundles(c[:category]),
-               :onchange => "user_profile_edit_save_categories();")%>
 <%=c[:category].name%></div>
 <% end %>
 </div>
@@ -38,6 +35,11 @@
 <% @var2 = t(:untested_bundle) %>
   <div id="category_bundle_<%=c[:category].id%>" 
        <%=if (c[:category]!=first_c) then 'style="display: none"' else 'class="bundle_category_active"'  end%>>
+<%=check_box_tag("categories[" + c[:category].id.to_s + "]", 1, @ratings[c[:category].id], 
+               :onclick => "user_profile_edit_show_category("+c[:category].id.to_s+"); "+check_bundles(c[:category]),
+               :onchange => "user_profile_edit_save_categories();")%>
+ <%=t(:select_default_bundles,:category=>c[:category].name)%>
+
 <%    c[:bundles].each do |b| %>
 <% if b.tested == true %>
 <%      selected = @selection.include? b %>

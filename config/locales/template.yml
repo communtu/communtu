@@ -403,6 +403,7 @@ de:
   search_package: Paket suchen
   search_programs_bundles: Du hast bereits ein Ubuntu installiert und suchst jetzt passende Programme? Hier kannst du deine Interessengebiete eingeben und passende vorkonfigurierte Programmbündel downloaden.
   security_type: 'Sicherheitstyp:'
+  select_default_bundles: Standard-Bündel für {{category}} auswählen
   senden: Abschicken
   server_status: Status des Servers
   settings: Einstellungen
