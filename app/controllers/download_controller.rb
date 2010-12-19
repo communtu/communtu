@@ -222,9 +222,11 @@ class DownloadController < ApplicationController
 
   def current_cd
     @cd = current_user.current_livecd
+    @back2 = !@cd.nil? and @cd.generated 
   end
 
   def usb
     @cd = current_user.current_livecd
+    @back2 = !@cd.nil? and @cd.generated 
   end
 end
