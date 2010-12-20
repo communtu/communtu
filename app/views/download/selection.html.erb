@@ -38,7 +38,7 @@
 <%=check_box_tag("categories[" + c[:category].id.to_s + "]", 1, @ratings[c[:category].id], 
                :onclick => "user_profile_edit_show_category("+c[:category].id.to_s+"); "+check_bundles(c[:category]),
                :onchange => "user_profile_edit_save_categories();")%>
- <%=t(:select_default_bundles,:category=>c[:category].name)%>
+ <%=t(:select_default_bundles,:category=>c[:category].name)%><br />
 
 <%    c[:bundles].each do |b| %>
 <% if b.tested == true %>
