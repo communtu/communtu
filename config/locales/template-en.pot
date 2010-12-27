@@ -247,6 +247,9 @@ msgstr ""
 #: controller_distributions_2
 msgid "Distribution updated."
 msgstr ""
+#: want_to_add_package2
+msgid "Create a new bundle from the selection"
+msgstr ""
 #: controller_passwords_2
 msgid "No user found with this e-mail-address."
 msgstr ""
@@ -324,6 +327,9 @@ msgid "<b>Installation</b> offers you a summary (bundling) of programs for the i
 msgstr ""
 #: name_without_colon
 msgid "Name"
+msgstr ""
+#: select_default_bundles
+msgid "Select standard bundles for {{category}}"
 msgstr ""
 #: direct_indirect_covered_packages_warning
 msgid "Attention! This takes a long time and should only be done on the admin-server (communtu.org:3006)!"
@@ -1040,7 +1046,7 @@ msgstr ""
 msgid "To which topic do you look for programs (office, graphics, ...)? Enter your fields of interest and pre-configured bundles can be downloaded."
 msgstr ""
 #: view_user_profiles__profile_data_0
-msgid "Change settings"
+msgid "Edit settings"
 msgstr ""
 #: view_home_news_17
 msgid "Go to the blog"
@@ -1055,7 +1061,7 @@ msgstr ""
 msgid "While creating metapackages, an error occurred. We'll solve that problem as fast as possible."
 msgstr ""
 #: view_user_profiles__profile_data_1
-msgid "On this page you can change your computer's settings. "
+msgid "On this page you can change your computer's settings. Normally you do not need to change these settings."
 msgstr ""
 #: view_home_derivatives_45
 msgid "http://wiki.ubuntuusers.de/Server_Installation (German)"
@@ -1496,7 +1502,7 @@ msgstr ""
 msgid "Hello, \n an error was reported on www.communtu.de. \nThe user would really like to be notified when the error has been fixed."
 msgstr ""
 #: tested_bundle
-msgid "Popular and tested bundles:"
+msgid "Tested bundles:"
 msgstr ""
 #: debian_section
 msgid "Debian section"
@@ -1957,6 +1963,9 @@ msgstr ""
 #: edit_press_archiv
 msgid "edit press archives"
 msgstr ""
+#: want_to_add_package
+msgid "Do you want to add single programs/packages?"
+msgstr ""
 #: four_and_fourty_letters
 msgid "Between 4 and 40 letters"
 msgstr ""
@@ -2212,6 +2221,9 @@ msgstr ""
 #: view_packages_show_21
 msgid "Is used in this packages:"
 msgstr ""
+#: bundle_to_livecd1
+msgid "Create Live-CD/DVD from bundle"
+msgstr ""
 #: discuss
 msgid "discuss"
 msgstr ""
@@ -2350,14 +2362,14 @@ msgstr ""
 #: navigation_communtu
 msgid "Navigation Communtu"
 msgstr ""
-#: controller_suggestion_12
-msgid "The following repositories will be added"
+#: error_no_attachement
+msgid "No file selected. The progress has been canceled."
 msgstr ""
 #: view_home_auth_error_0
 msgid "Error with authentication"
 msgstr ""
-#: error_no_attachement
-msgid "No file selected. The progress has been canceled."
+#: controller_suggestion_12
+msgid "The following repositories will be added"
 msgstr ""
 #: model_user_profile_tabz_3
 msgid "Start installation"
@@ -2365,11 +2377,11 @@ msgstr ""
 #: mailinglist
 msgid "Mailinglists:"
 msgstr ""
-#: ubuntu_derivatives
-msgid "Ubuntu derivatives"
-msgstr ""
 #: view_home_auth_error_1
 msgid "The file you sent to Communtu couldn't be authenticated. Please try again with logging in again or filling in the form again. This could also come from disabled cookie settings."
+msgstr ""
+#: ubuntu_derivatives
+msgid "Ubuntu derivatives"
 msgstr ""
 #: model_user_profile_tabz_4
 msgid "Settings"
@@ -2393,7 +2405,7 @@ msgstr ""
 msgid "You don't have Ubuntu installed on your computer. Then choose a bundle and burn the ISO file onto an empty CD or DVD so you can test it as a Live CD or install it onto your computer."
 msgstr ""
 #: untested_bundle
-msgid "Experimental and untested bundles:"
+msgid "Untested bundles:"
 msgstr ""
 #: bundel_editing
 msgid "edit bundle"
@@ -2435,7 +2447,7 @@ msgstr ""
 msgid "start virtual machine"
 msgstr ""
 #: view_user_profiles__profile_rating_0
-msgid "Selection of programs and bundles that shall be installed"
+msgid "Software selection: choose bundle"
 msgstr ""
 #: model_package_1
 msgid "free+proprietary"

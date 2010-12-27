@@ -78,6 +78,7 @@ en:
   view_home_contact_us_0: Feedback
   view_home_faq_xfce_02: To reach the package manager Synaptic you navigate to "Applications -> System -> Synaptic Package Manager". In the lower left part you click on "Origin". In the list above search for "packages.communtu.org" and click on it. In the right part of the window you will now see all metapackages available at Communtu. To remove a metapackage from your system you make a right click on it and choose "Mark for Removal". With a click on "Apply" it will be uninstalled.
   controller_distributions_2: Distribution updated.
+  want_to_add_package2: Create a new bundle from the selection
   controller_passwords_2: No user found with this e-mail-address.
   view_home_contact_us_1: Here you have the possibility to send us suggestions and critique about Communtu.
   livecd_start: Create Live-CD/DVD
@@ -104,6 +105,7 @@ en:
   controller_passwords_8: Passwords do not match.
   view_home_home_6: <b>Installation</b> offers you a summary (bundling) of programs for the installation on your computer, according to your instructions on how you want to use your Ubuntu-PC.
   name_without_colon: Name
+  select_default_bundles: Select standard bundles for {{category}}
   direct_indirect_covered_packages_warning: Attention! This takes a long time and should only be done on the admin-server (communtu.org:3006)!
   architecture_successful_updated: Architecture successfully updated.
   view_home_home_7: <b>Administrate bundles</b> Did you have good experiences with the programs? Bundle them thematically or take a look at existing bundles.
@@ -362,12 +364,12 @@ en:
   view_home_faq_03: How do I install a bundle?
   cd_being_created: Creating Live-CD/DVD
   search_programs_bundles: To which topic do you look for programs (office, graphics, ...)? Enter your fields of interest and pre-configured bundles can be downloaded.
-  view_user_profiles__profile_data_0: Change settings
+  view_user_profiles__profile_data_0: Edit settings
   view_home_news_17: Go to the blog
   view_home_derivatives_44: " - minimalist and fast version of Ubuntu for older PCs."
   view_home_faq_04: There are two ways to install a bundle.<p> The first way is to click on <b>Download</b>. On the right side is a small box, titled "Settings". With a click on "change" you can change the GUI (Kubuntu (KDE, Xubuntu (XFCE) or Lubuntu (LXDE) in use and what software sources and licences shall be installed. After clicking on "Save" you will need to click on <b>Download</b> again to get back to the software selection page.<p> You can now make a rough selection of the software you want to install, according to the tasks you want to perform with your computer (e. g. editing graphics). When a category is chosen a list of published bundles will appear on the right side. When a bundle is marked as "Installed by default" it will be preselected. Every change you make is saved immediately. With a click on "Install" you can install the selected bundles on your computer. If not already done, you need to install the software sources first.<p> The second way of installing with Communtu is by installing a bundle directly. To do so, click on <b>Bundle</b> and next on <b>All published bundles</b>. You now see a overview of all published bundles in Communtu sorted by the name. Again, if not already done you need to install the sources (a click on "Add sources" should do the trick) and with a click on "Install through meta-package" will install the bundle on your computer.
   view_metapackages_show_deb_error: While creating metapackages, an error occurred. We'll solve that problem as fast as possible.
-  view_user_profiles__profile_data_1: "On this page you can change your computer's settings. "
+  view_user_profiles__profile_data_1: On this page you can change your computer's settings. Normally you do not need to change these settings.
   view_home_derivatives_45: http://wiki.ubuntuusers.de/Server_Installation (German)
   login: Login
   controller_metapackages_not_allowed: Only the owner of the bundle is allowed to perform this action.
@@ -524,7 +526,7 @@ en:
     Hello, 
      an error was reported on www.communtu.de. 
     The user would really like to be notified when the error has been fixed.
-  tested_bundle: "Popular and tested bundles:"
+  tested_bundle: "Tested bundles:"
   debian_section: Debian section
   view_home_derivatives_9: "With Communtu installable derivatives:"
   prepare_livecd_contd: Prepare new Live-CD/DVD with every pre-release (script/remaster-getisos)
@@ -681,6 +683,7 @@ en:
   view_packages__packagelist_2: "Search:"
   cant_debianized: To create this meta-package an English title and descriptionis needed.
   edit_press_archiv: edit press archives
+  want_to_add_package: Do you want to add single programs/packages?
   four_and_fourty_letters: Between 4 and 40 letters
   download_area: "Download:"
   usb_created: The ISO file for the USB key has finished.
@@ -766,6 +769,7 @@ en:
   view_home_icons_19: " external link"
   view_home_home_bundle: Preconfigured and published bundles in Communtu
   view_packages_show_21: "Is used in this packages:"
+  bundle_to_livecd1: Create Live-CD/DVD from bundle
   discuss: discuss
   feedback: "Comment "
   view_videos_show_0: "Url:"
@@ -812,14 +816,14 @@ en:
   model_user_profile_tabz_1: Software selection
   controller_suggestion_11: add repository
   navigation_communtu: Navigation Communtu
+  mailinglist: "Mailinglists:"
+  model_user_profile_tabz_3: Start installation
   controller_suggestion_12: The following repositories will be added
   view_home_auth_error_0: Error with authentication
   error_no_attachement: No file selected. The progress has been canceled.
-  model_user_profile_tabz_3: Start installation
-  mailinglist: "Mailinglists:"
   model_user_profile_tabz_4: Settings
-  view_home_auth_error_1: The file you sent to Communtu couldn't be authenticated. Please try again with logging in again or filling in the form again. This could also come from disabled cookie settings.
   ubuntu_derivatives: Ubuntu derivatives
+  view_home_auth_error_1: The file you sent to Communtu couldn't be authenticated. Please try again with logging in again or filling in the form again. This could also come from disabled cookie settings.
   force_sync: force synchronization of repository
   controller_suggestion_15: Install package
   controller_suggestion_16: The following packages will be installed
@@ -828,7 +832,7 @@ en:
   controller_sent_0: Subject must not be empty.
   controller_sent_1: user does not exist
   bundel_editing: edit bundle
-  untested_bundle: "Experimental and untested bundles:"
+  untested_bundle: "Untested bundles:"
   controller_sent_2: message successfully send
   create_livecd_intro: "You can create a Live-CD with Communtu in two different ways: using the download page or directly via a bundle."
   metapackages_cannot_destroy: This bundle cannot be deleted as it is used in an other bundle.
@@ -842,7 +846,7 @@ en:
   view_user_profiles__sources_1: The soon be installed programs and packages are shown and ordered by the appropriate sources so you can see why some sources will be added.
   view_home_impressum_4: Bauernstr. 2
   model_package_1: free+proprietary
-  view_user_profiles__profile_rating_0: Selection of programs and bundles that shall be installed
+  view_user_profiles__profile_rating_0: "Software selection: choose bundle"
   order_number: "Sort by number (smallest number first):"
   additional_sources: Additional sources which will be added as some sources are not completed in themselves
   livecd_email_body: ", the Live-CD/DVD has been created. Follow this link:"

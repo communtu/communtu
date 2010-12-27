@@ -15,17 +15,12 @@ po_file=$locales_folder/template-$dest_lang.po
 # Checking number of arguments
 if [ $# -lt 2 ]; then
     echo "Two language codes are needed: the first one is the language from which shall be translated, the second is the new language."
+	echo "Example: add_new_language de ru
     exit 1
-fi
-
-if [ $source_lang = 'de' ]; then
-    yml_file=$locales_folder/template.yml
-else
-    yml_file=$locales_folder/template-$source_lang.yml
 fi
 
 # Adding new language
 touch $pot_file
 script/yaml2po $source_lang $yml_file $pot_file
 cp $pot_file $po_file
-echo "Finish"
+echo "Finished"
