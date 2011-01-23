@@ -796,20 +796,20 @@ a.download:hover, a.download:active{
 	/*Navigation prealpha!*/
 .path_continue{
 	position:absolute;
-	left:48em;
+	left:66em;
 	top:0.5em;
 	width:22em;
  	}
 .path_back{
 	position:absolute;
-	left:40em;
+	left:58em;
 	top:0.5em;
 	width:22em;
  	}
 .path{
 	position:absolute;
 	left:58em;
-	top:0.5em;
+	top:2.5em;
 	width:22em;
  	}
 	
