@@ -19,6 +19,11 @@ class DownloadController < ApplicationController
              {:name => I18n.t(:bundle_to_livecd1), :action => "/download/bundle_to_livecd"},
              {:name => I18n.t(:wait_for_email), :action => "/download/create_livecd_from_bundle"},
              {:name => I18n.t(:cd_ready), :action => "/download/current_cd"}],
+             "mybundle_cd" => [{:name => I18n.t(:model_user_meta_tabz_0), :action => "/metapackages/index_mine"},
+             {:name => I18n.t(:model_user_profile_tabz_4), :action => "/download/settings"},
+             {:name => I18n.t(:bundle_to_livecd1), :action => "/download/bundle_to_livecd"},
+             {:name => I18n.t(:wait_for_email), :action => "/download/create_livecd_from_bundle"},
+             {:name => I18n.t(:cd_ready), :action => "/download/current_cd"}],
              "usb" => [{:name => I18n.t(:download_area), :action => "start"},
              {:name => I18n.t(:model_user_profile_tabz_1), :action => "selection"},
              {:name => I18n.t(:model_user_profile_tabz_4), :action => "settings"},
@@ -67,6 +72,9 @@ class DownloadController < ApplicationController
   end
   
   def settings
+    if !params[:path].nil?
+      session[:path] = params[:path]
+    end  
     session[:backlink] = request.env['HTTP_REFERER']
     if check_login then return end
     @user = current_user
