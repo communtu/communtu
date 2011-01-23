@@ -28,20 +28,22 @@
 <% end %>
 </div>
 
-<div id="bundle_list">
+<div>
 <%first_c=@categories[0][:category]%>
 <%  @categories.each do |c| %>
 <% @var1 = t(:tested_bundle) %>
 <% @var2 = t(:untested_bundle) %>
   <div id="category_bundle_<%=c[:category].id%>" 
-       <%=if (c[:category]!=first_c) then 'style="display: none"' else 'class="bundle_category_active"'  end%>>
+       <%=if (c[:category]!=first_c) then 'style="display: none"' else 'class="bundle_category_active"' end%>>
 <%=check_box_tag("categories[" + c[:category].id.to_s + "]", 1, @ratings[c[:category].id], 
                :onclick => "user_profile_edit_show_category("+c[:category].id.to_s+"); "+check_bundles(c[:category]),
                :onchange => "user_profile_edit_save_categories();")%>
  <%=t(:select_default_bundles,:category=>c[:category].name)%><br />
 
+<div id="bundle_list">
+
 <%    c[:bundles].each do |b| %>
-<% if b.tested == true %>
+<% if b.tested %>
 <%      selected = @selection.include? b %>
 <% @var1 += "<div id=\"metapackages_{b.id}>\" class=\"user_profile_edit_bundle\" >" %>
          <% @var1 += check_box_tag("post[" + b.id.to_s + "]", 1, selected,
@@ -67,6 +69,7 @@
 <% end %>
 <%= @var2 %>
 <% end %> 
+ </div>
  </div>
 <% end %>
 </div>
