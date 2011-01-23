@@ -13,7 +13,7 @@
             <span style="position: relative; left: 350px;">
 			<%= link_to(image_tag("/images/64x64/download.png", :height => 30, :title =>t(:go_to_download), :alt=>t(:go_to_download), :border => "0"), "/metapackages/install/#{@metapackage.id}") %>
             <% if current_user.distribution_id<7 && !current_user.anonymous? %>
-              <%= link_to image_tag("/images/22x22/cd.png", :size => "30x30", :border => "0", :title => t(:create_your_livedvd), :alt => t(:create_your_livedvd)), "/download/bundle_to_livecd/#{@metapackage.id}?path=bundle_cd" %>
+              <%= link_to image_tag("/images/22x22/cd.png", :size => "30x30", :border => "0", :title => t(:create_your_livedvd), :alt => t(:create_your_livedvd)), "/download/settings/#{@metapackage.id}?path=bundle_cd" %>
             <%end%>
         </span>
 <% if editing_metapackage? %>
