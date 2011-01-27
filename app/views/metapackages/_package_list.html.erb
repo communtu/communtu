@@ -57,8 +57,12 @@
         <%if !mc.package.description.nil? and !mc.package.description.empty? %>
 		   <tr>
 			<td colspan="2" class="<%= css+"noborder" %>">
-				<%= mc.package.description[0,170]+(mc.package.description.length<170 ? "" : " ...") %></td>
-		  </tr>
+                          <%if params[:continue].nil? then%>
+				<%= mc.package.description[0,170]+(mc.package.description.length<170 ? "" : " ... "+(link_to "continue", metapackage_path(metapackage)+"?continue=true")) %></td>
+                          <%else%>
+                                <%= mc.package.description %></td>
+                          <% end %>
+                   </tr>
 	    <% end %>
 		<% if mc.package.class == Package %>
           <tr><td colspan="2" class="<%= css %>"><font size="-2" color="#333"><%=t(:view_metapackages__package_list_1)%></font>
