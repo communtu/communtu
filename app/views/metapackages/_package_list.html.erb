@@ -58,7 +58,7 @@
 		   <tr>
 			<td colspan="2" class="<%= css+"noborder" %>">
                           <%if params[:continue].nil? then%>
-				<%= mc.package.description[0,170]+(mc.package.description.length<170 ? "" : " ... "+(link_to "continue", metapackage_path(metapackage)+"?continue=true")) %></td>
+				<%= mc.package.description[0,170]+(mc.package.description.length<170 ? "" : " ... "+(link_to t(:more), metapackage_path(metapackage)+"?continue=true")) %></td>
                           <%else%>
                                 <%= mc.package.description %></td>
                           <% end %>
