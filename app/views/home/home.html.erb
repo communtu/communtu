@@ -42,7 +42,7 @@
 <div id="list_nextto_conni">   
 <% u = User.find(:last, :conditions => {:anonymous => false}) %>
 <h3><%=t(:hello)%></h3>
-<%=t(:last_user)%> <strong><%= u.login %> <%= image_tag("/images/icon_user.png") %>.</strong>
+<%=t(:last_user)%> <strong><%= link_to( u.login, user_path(u.id)) %> <%= image_tag("/images/icon_user.png") %>.</strong>
 </div>
 
 <div class="best_buendle">
