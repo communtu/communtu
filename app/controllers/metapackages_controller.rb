@@ -41,10 +41,10 @@ class MetapackagesController < ApplicationController
       else
          @meta_english_title = Translation.find(:first, :conditions => {:translatable_id => @metapackage.name_tid, :language_code => "en"})
       end
-    @conflicts = @metapackage.internal_conflicts
+    @conflicts = {} # @metapackage.internal_conflicts  # should use edos-debcheck
     if logged_in?
-    @distribution = current_user.distribution
-    @derivative = current_user.derivative
+      @distribution = current_user.distribution
+      @derivative = current_user.derivative
     end
     respond_to do |format|
       format.html # show.html.erb
