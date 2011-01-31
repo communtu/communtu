@@ -34,6 +34,7 @@ while [ $res -ne 0 ]
   do
     echo -n "enter database password:"
     read -s passwd
+    mysqladmin -u $dbuser --password=$passwd drop communtu
     mysqladmin -u $dbuser --password=$passwd create communtu
     res=$?
   done  
