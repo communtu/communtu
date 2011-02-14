@@ -398,6 +398,7 @@ de:
   repositories_without_packages: Repositories ohne Pakete (da Repositories leer)
   repository: Repository
   repository_url: 'Repository-URL: '
+  required_fields: Pflichtfelder
   rough_selection: Grobauswahl
   save: Speichern
   save_or_delete_bundle: Bitte erst die im Bündel-Editor getroffene Bündel-Auswahl speichern oder löschen
