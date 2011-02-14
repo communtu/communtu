@@ -10,11 +10,34 @@
 	<tr><td width="70%" valign="top">
 			<span class="headline">   <%=h @metapackage.name %> </span> 
             
-            <span style="position: relative; left: 350px;">
-			<%= link_to(image_tag("/images/64x64/download.png", :height => 30, :title =>t(:go_to_download), :alt=>t(:go_to_download), :border => "0"), "/metapackages/install/#{@metapackage.id}") %>
-            <% if current_user.distribution_id<7 && !current_user.anonymous? %>
-              <%= link_to image_tag("/images/22x22/cd.png", :size => "30x30", :border => "0", :title => t(:create_your_livedvd), :alt => t(:create_your_livedvd)), "/download/settings/#{@metapackage.id}?path=bundle_cd" %>
-            <%end%>
+            <span style="position: relative; left: 300px;">
+
+<table height="100%" cellspacing="10">
+<tr>
+   <td width="30% >
+  <div align="center">
+
+
+  <%= link_to(image_tag("/images/64x64/download.png", :height => 30, :title =>t(:go_to_download), :alt=>t(:go_to_download), :border => "0"), "/metapackages/install/#{@metapackage.id}")  %><br />
+ <font size="1">Download</font>
+
+  </div><br />
+</td>
+
+
+<% if current_user.distribution_id<7 && !current_user.anonymous? %>
+
+   <td>
+    <div align="center">
+              <%= link_to image_tag("/images/22x22/cd.png", :size => "30x30", :border => "0", :title => t(:create_your_livedvd), :alt => t(:create_your_livedvd)), "/download/bundle_to_livecd/#{@metapackage.id}?path=bundle_cd" %><br /> <font size="1">LiveDVD </font>
+
+    </div>
+   </td>
+  </tr>
+ <%end%>
+</table>
+
+
         </span>
 <% if editing_metapackage? %>
                         <%= link_to_remote((image_tag("/images/add.png", :size => "18x18", :border => "0", :title =>t(:add_to_bundle), :alt => t(:add_to_bundle)) + ""),
