@@ -40,7 +40,7 @@ de:
   bundles_without_debs: veröffentlichte Bündel ohne deb-Pakete
   by_bank_transfer: per Überweisung
   cannot_migrate: Kann nur migrieren, wenn die Distribution frisch ist
-  cannot_publish_bundle: Dieses Bündel kann noch nicht veröffentlicht werden, da die in ihm enthaltenen Bündel noch nicht alle veröffentlicht wurden.
+  cannot_publish_bundle: "Dieses Bündel kann noch nicht veröffentlicht werden, da folgende in ihm enthaltenen Bündel noch nicht veröffentlicht wurden: {{bundles}}"
   cant_debianized: Bitte gib dem Bündel einen englischen Titel und eine englische Beschreibung.
   category_exists: Eine Kategorie mit diesem Namen existiert schon
   category_with_colon: 'Kategorie:'
