@@ -24,8 +24,11 @@ sudo sed -i "s/deprecate :/# deprecate :/" /var/lib/gems/1.8/gems/rails-2.2.2/li
 sudo gem install chronic packet
 # mysql server
 sudo apt-get install -y mysql-server libmysql-ruby ruby1.8-dev libmysqlclient15-dev
-svn co http://trac.communtu.org/svn/communtu-program communtu-program
-cd communtu-program
+pwdpath=$(pwd)
+if [ ${pwdpath##*/} != "communtu-program" ]; then
+  svn co http://trac.communtu.org/svn/communtu-program communtu-program
+  cd communtu-program
+fi
 # setting up rails config
 cp config/database.yml.template config/database.yml
 set +x
@@ -49,7 +52,5 @@ gunzip -c db.backup.gz | mysql -u $dbuser --password=$passwd communtu
 set +x
 echo
 echo "now try:"
-echo "cd communtu-program"
 echo "script/server"
 echo "script/console"
-
