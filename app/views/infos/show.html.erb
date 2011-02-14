@@ -1,0 +1,13 @@
+<p>
+  <b>Content:</b>
+  <%= @info.content %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%=h @info.author.login %>
+</p>
+
+
+<%= link_to 'Edit', edit_info_path(@info) %> |
+<%= link_to 'Back', infos_path %>

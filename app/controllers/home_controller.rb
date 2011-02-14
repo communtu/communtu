@@ -34,6 +34,7 @@ class HomeController < ApplicationController
       :group => "ratings.rateable_id HAVING COUNT(ratings.id) > 2",
       :order => "rating DESC",
       :limit => 5)
+    @info = Info.find(:first, :conditions => ['created_at > ?', Date.today-30], :order => 'created_at DESC' )
   end
   
   def about

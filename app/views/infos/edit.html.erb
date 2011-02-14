@@ -1,0 +1,16 @@
+<h1>Editing info</h1>
+
+<% form_for(@info) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :content %><br />
+    <%= f.text_area :content %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @info %> |
+<%= link_to 'Back', infos_path %>

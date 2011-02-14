@@ -863,6 +863,18 @@ a.download:hover, a.download:active{
 	color:#63605E;
 	list-style-image:none;
 	}
+.info{
+	 position:relative;
+         padding-left:1em;
+	 padding-right:1em;
+	 padding-bottom:1em;
+	 border:1px solid #A33700;
+	 background-color: #FFF8D2;
+	 }
+.info_admin{
+         
+    font-size: 10px;
+}
 .no_package_icon{
 	width:23px;
 	height:20px;

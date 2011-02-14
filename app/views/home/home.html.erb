@@ -5,12 +5,25 @@
 <%= render_flash %>
 <noscript>
 <div align="center" style="width:100%; height:48px; top:0px; background: #FF0000;"><p style="color:#FFFFFF; font-size:12px;"><%=t(:view_layouts_application_20)%></p></div>
-</noscript> 
+</noscript>
 
+<% if !@info.nil? &&  I18n.locale.to_s == "de" then %>
+  <h1>Aktuelle News</h1>
+  <div class="info">
+    <%= @info.content %>
+      <%  if is_admin? then%>
+        <br />
+        <div class="info_admin">
+        <%=link_to "Info editieren", edit_info_path(@info) %>
+        <%=link_to "Neue Info anlegen", infos_path %>
+        </div>
+      <%end%>
+  </div>
+<%end%>
 
 <h2><%=t(:easy_install)%></h2>
-<br />
 
+<br />
 <table>
     <tr>
         <td><%= link_to(image_tag("/images/64x64/download.png", :height => 60, :title =>t(:go_to_download), :alt=>t(:go_to_download), :border => "0"), "/download/selection?path=install") %></td>
