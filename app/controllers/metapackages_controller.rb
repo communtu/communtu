@@ -364,14 +364,19 @@ class MetapackagesController < ApplicationController
   end
   
   def publish
-    package = Metapackage.find(params[:id]);
+    package = Metapackage.find(params[:id])
     if !check_owner(package,current_user) then
       redirect_to metapackage_path(package)
       return
     end
-    package.published = Metapackage.state[:published]
-    package.modified = true
-    package.save!
+    # does bundle contain some unpublished bundle?
+    if package.descendants.map{|b| b.published != Metapackage.state[:published]}.any?
+      flash[:error] = t(:cannot_publish_bundle)      
+    else
+      package.published = Metapackage.state[:published]
+      package.modified = true
+      package.save!
+    end
     
     redirect_to :controller => :metapackages, :action => :show
   end
@@ -424,15 +429,7 @@ class MetapackagesController < ApplicationController
         elsif action == "pedit"
             edit_packages(params[:did])
         elsif action == "publish"
-          if current_user.anonymous? then
-            flash[:error] = t(:controller_application_0)
-            redirect_to root_path
-          else
-            meta.published = 1
-            meta.modified = true
-            meta.save!
-            redirect_to metapackage_path(meta)
-          end
+          publish
         elsif action == "delete"
              m = Metacontent.find(:first,:conditions => ["base_package_id = ?",meta.id])
             if !meta.is_published? and m == nil

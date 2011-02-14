@@ -80,6 +80,18 @@ class Metapackage < BasePackage
   def packages
     base_packages.select{|p| p.class == Package}
   end
+
+  # contained bundles
+  def children
+    base_packages.select{|p| p.class == Metapackage}
+  end
+
+  # descendants
+  def descendants
+    children.map do |c|
+      c.children << c
+    end.flatten
+  end
   
   # metapackages using this one
   def metapackages
