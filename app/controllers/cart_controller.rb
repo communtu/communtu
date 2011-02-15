@@ -66,7 +66,7 @@ class CartController < ApplicationController
      if editing_metapackage?
        bundle_id = cart.metapackage_id
        if bundle_id.nil?
-         redirect_to({:controller => 'metapackages', :action => 'new', :name => cart.name})
+         redirect_to :controller => 'metapackages', :action => 'new_from_cart', :name => cart.name
        else
          redirect_to({:controller => 'metapackages', :action => 'edit_new_or_cart', :id => bundle_id})
        end

@@ -52,9 +52,7 @@ class MetapackagesController < ApplicationController
     end
   end
 
-  # GET /metapackages/new
-  # GET /metapackages/new.xml
-  def new
+  def new_from_cart
     @metapackage = Metapackage.new
     @metapackage.category_id = 1
     @metapackage.version = "0.1"
