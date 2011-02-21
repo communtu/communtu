@@ -67,7 +67,7 @@ class Metapackage < BasePackage
   end
   
   def is_published?
-    return self.published == Metapackage.state[:published]
+    return self.published 
   end
 
   # contained packages (without bundles)

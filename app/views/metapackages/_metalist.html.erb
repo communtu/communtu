@@ -29,7 +29,7 @@
         <td class="<%= css %>" valign="middle">
 		    <%=metapackage.default_install ?  t(:yes1) : t(:no1) %></td>
 	    <td class="<%= css %>" valign="middle" align="center">
-	        <% if metapackage.published == Metapackage.state[:published] %>
+	        <% if metapackage.published %>
 	            <%= image_tag("yes.png", :size => "16x16", :border => "0", :title => t(:published), :alt => t(:published)) %>
 	        <% else %>
 	            <%= image_tag("no.png", :size => "16x16", :border => "0", :title => t(:view_metapackages_show_12), :alt => t(:view_metapackages_show_12)) %>
