@@ -24,8 +24,6 @@ class Metapackage < BasePackage
   
   validates_presence_of :license_type, :user, :category # , :version, :description
   
-  @state = { :pending => 0, :published => 1, :rejected => 2 }
-
   def name
     trans = translation(self.name_tid)
     if trans == "unknown"
@@ -64,10 +62,6 @@ class Metapackage < BasePackage
     self.name_english == "" or self.name_english == nil or self.description_english == "" or self.description_english == nil
   end
 
-  def self.state
-    @state
-  end
-  
   def owned_by? user
     (user_id == user.id)
   end

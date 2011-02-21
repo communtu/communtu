@@ -368,12 +368,12 @@ class MetapackagesController < ApplicationController
       return
     end
     # does bundle contain some unpublished bundle?
-    unpublished_descendants = package.descendants.select{|b| b.published != Metapackage.state[:published]}
+    unpublished_descendants = package.descendants.select{|b| !b.published }
     if !unpublished_descendants.empty?
       names = unpublished_descendants.map{|b| self.class.helpers.link_to(b.name, metapackage_path(b))}.join(", ")
       flash[:error] = t(:cannot_publish_bundle, :bundles => names)      
     else
-      package.published = Metapackage.state[:published]
+      package.published = true
       package.modified = true
       package.save!
     end
