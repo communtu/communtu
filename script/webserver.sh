@@ -18,6 +18,7 @@ mkdir web2.0
 sudo apt-get install apache2 webalizer
 mkdir -p webalizer/en-communtu
 mkdir -p webalizer/de-communtu
+mkdir -p webalizer/fr-communtu
 mkdir -p webalizer/pack-communtu
 
 sudo scp $OLDUSERNAME@$OLDSERVER:/etc/apache2/sites-available/communtu.conf /etc/apache2/sites-available/
