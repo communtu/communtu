@@ -20,11 +20,13 @@
 
 <%first_c=@categories[0][:category]%>
 <%@categories.each do |c| %>
+<% if c[:category].main == true %>
 <div id="category_<%=c[:category].id%>" 
   style="margin-left: <%=(c[:depth]-1)*15%>px;"
   class="user_profile_edit_cat <%=if (c[:category]==first_c) then "category_active" end%>"
   onclick="user_profile_edit_show_category(<%=c[:category].id.to_s%>);">
 <%=c[:category].name%></div>
+<% end %>
 <% end %>
 </div>
 
