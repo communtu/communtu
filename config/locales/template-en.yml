@@ -44,6 +44,7 @@ en:
   direct_indirect_covered_packages: Direct and indirect covered packages
   controller_accounts_8: Your old password was incorrect.
   view_categories_edit_3: Link for further information
+  required_fields: mandatory fields
   view_metapackages__package_list_2: remove package/program from bundle
   view_categories_edit_4: "Maincategory, which is shown on the first page under Download:"
   view_user_profiles_new_3: level of expert
@@ -663,6 +664,7 @@ en:
   view_metapackages__metalist_14: Install through metapackage. Please add the sources first.
   installation_two_steps: "Installation of the package in two steps:"
   view_users_show_2: "user since:"
+  more: more
   view_metapackages_show_version: "Version:"
   subtype: "Subtype:"
   view_users_show_3: (month/year)
@@ -818,9 +820,9 @@ en:
   navigation_communtu: Navigation Communtu
   mailinglist: "Mailinglists:"
   model_user_profile_tabz_3: Start installation
-  controller_suggestion_12: The following repositories will be added
-  view_home_auth_error_0: Error with authentication
   error_no_attachement: No file selected. The progress has been canceled.
+  view_home_auth_error_0: Error with authentication
+  controller_suggestion_12: The following repositories will be added
   model_user_profile_tabz_4: Settings
   ubuntu_derivatives: Ubuntu derivatives
   view_home_auth_error_1: The file you sent to Communtu couldn't be authenticated. Please try again with logging in again or filling in the form again. This could also come from disabled cookie settings.
@@ -838,6 +840,7 @@ en:
   metapackages_cannot_destroy: This bundle cannot be deleted as it is used in an other bundle.
   architectures: Architectures
   view_home_impressum_2: AG Communtu
+  cannot_publish_bundle: "This bundle cannot be published, as it contains unpublished bundles: {{bundles}}"
   view_rating_show_title_ratings_count: (Based on {{votes}} rating(s))
   view_user_profiles__sources_0: Sources for the soon be installed programs
   start_vm: start virtual machine

@@ -196,6 +196,10 @@ msgstr "Link for further information"
 msgid "Expertenlevel"
 msgstr "level of expert"
 
+#: required_fields
+msgid "Pflichtfelder"
+msgstr "mandatory fields"
+
 #: view_metapackages__package_list_2
 msgid "Paket/Programm aus Bündel entfernen"
 msgstr "remove package/program from bundle"
@@ -624,13 +628,13 @@ msgstr "copy repository"
 msgid "Gib bitte eine Beschreibung zu deiner Bewertung an. Diese Angabe ist <b>Pflicht</b>."
 msgstr "Please enter a description to your rating. This is a <b>mandatory</b> step."
 
-#: not_accepted
-msgid "Die eingegebene E-Mail-Adresse hat ungültige Formate oder ist unvollständig."
-msgstr "The entered e-mail address contains forbidden characters or is not entered completely."
-
 #: view_packages_new_0
 msgid "Neues Paket"
 msgstr "New package"
+
+#: not_accepted
+msgid "Die eingegebene E-Mail-Adresse hat ungültige Formate oder ist unvollständig."
+msgstr "The entered e-mail address contains forbidden characters or is not entered completely."
 
 #: view_users__mailbox_list_3
 msgid "Versendete Nachrichten"
@@ -652,21 +656,21 @@ msgstr "Edit bundle"
 msgid "Englischer Name:"
 msgstr "English name:"
 
-#: errors
-msgid "Fehler"
-msgstr "Error"
-
 #: view_packages_new_3
 msgid "Version"
 msgstr "Version"
 
-#: view_home_news_1
-msgid "Unsere Mailinglisten"
-msgstr "Our mailinglists"
+#: errors
+msgid "Fehler"
+msgstr "Error"
 
 #: view_packages_new_4
 msgid "Quelle"
 msgstr "Source"
+
+#: view_home_news_1
+msgid "Unsere Mailinglisten"
+msgstr "Our mailinglists"
 
 #: liveusb_message
 msgid "Über einen USB-Stick kann die Software sowohl ausprobiert als auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} erstellt, die du dann auf den USB-Stick übertragen kannst.<br /><br /> Die Erstellung des Images dauert eine gewisse Zeit. Du wirst per Email benachrichtigt, sobald das Image fertig ist. Bitte achte darauf, dass in deinen Benutzereinstellungen eine gültige Email-Adresse angegeben ist."
@@ -2604,6 +2608,10 @@ msgstr "Installation of the package in two steps:"
 msgid "(Monat/Jahr)"
 msgstr "(month/year)"
 
+#: more
+msgid "mehr"
+msgstr "more"
+
 #: view_metapackages_show_version
 msgid "Version:"
 msgstr "Version:"
@@ -3287,6 +3295,10 @@ msgstr "Sources for the soon be installed programs"
 #: view_rating_show_title_ratings_count
 msgid "(Basierend auf {{votes}} Bewertung(en))"
 msgstr "(Based on {{votes}} rating(s))"
+
+#: cannot_publish_bundle
+msgid "Dieses Bündel kann noch nicht veröffentlicht werden, da folgende in ihm enthaltenen Bündel noch nicht veröffentlicht wurden: {{bundles}}"
+msgstr "This bundle cannot be published, as it contains unpublished bundles: {{bundles}}"
 
 #: view_home_impressum_2
 msgid "AG Communtu"

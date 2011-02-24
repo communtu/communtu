@@ -145,6 +145,9 @@ msgstr ""
 #: view_categories_edit_3
 msgid "Link for further information"
 msgstr ""
+#: required_fields
+msgid "mandatory fields"
+msgstr ""
 #: view_metapackages__package_list_2
 msgid "remove package/program from bundle"
 msgstr ""
@@ -1903,6 +1906,9 @@ msgstr ""
 #: view_users_show_2
 msgid "user since:"
 msgstr ""
+#: more
+msgid "more"
+msgstr ""
 #: view_metapackages_show_version
 msgid "Version:"
 msgstr ""
@@ -2362,14 +2368,14 @@ msgstr ""
 #: navigation_communtu
 msgid "Navigation Communtu"
 msgstr ""
-#: error_no_attachement
-msgid "No file selected. The progress has been canceled."
+#: controller_suggestion_12
+msgid "The following repositories will be added"
 msgstr ""
 #: view_home_auth_error_0
 msgid "Error with authentication"
 msgstr ""
-#: controller_suggestion_12
-msgid "The following repositories will be added"
+#: error_no_attachement
+msgid "No file selected. The progress has been canceled."
 msgstr ""
 #: model_user_profile_tabz_3
 msgid "Start installation"
@@ -2418,6 +2424,9 @@ msgid "Sources for the soon be installed programs"
 msgstr ""
 #: view_rating_show_title_ratings_count
 msgid "(Based on {{votes}} rating(s))"
+msgstr ""
+#: cannot_publish_bundle
+msgid "This bundle cannot be published, as it contains unpublished bundles: {{bundles}}"
 msgstr ""
 #: view_home_impressum_2
 msgid "AG Communtu"
