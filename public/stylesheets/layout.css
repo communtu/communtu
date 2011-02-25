@@ -556,7 +556,9 @@ a.tt{
 a.tt span{ display: none; }
 
 /*background:; ie hack, something must be changed in a for ie to execute it*/
-a.tt:hover{ z-index:25; color: #aaaaff; background:;}
+a.tt:hover{ 
+    z-index:25;
+    color: #aaaaff;}
 a.tt:hover span.tooltip{
     	display:block;
     	position:absolute;
@@ -882,12 +884,10 @@ a.download:hover, a.download:active{
 	}
 #list_nextto_conni{
 	position:relative;
-	left:6.5em;
+        left: 1em;
 	top:1em;
 	border:0;
-	padding-left:1em;
 	padding-bottom:1em;
-	width:37em;
 	}
 /**************************************************/
 /* conni */
@@ -924,12 +924,13 @@ a.download:hover, a.download:active{
 	 }
 /*em*/
 #conny_index{
-	 position:absolute;
+	 position:relative;
 	 left:-3.8em;
-	 top:30em;
+	 top:1em;
 	 border:0;
 	 padding-right:1em;
 	 padding-bottom:1.5em;
+         float:left;
 	 }
 
 /**************************************************/
@@ -1022,8 +1023,8 @@ a.download:hover, a.download:active{
 	}
 .content{
 	left:4.5em;
-	position:absolute;
-	top:10.9em;
+	position:relative;
+	top:6em;
 	width:75em;
 	}
 .content a{
