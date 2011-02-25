@@ -212,15 +212,24 @@ class UsersController < ApplicationController
   end
   
   def user_statistics
-  @log = Userlog.find(:all, :order => "created_at DESC", :conditions => {:user_id => params[:id]})
-  @user = User.find(params[:id])
-  @users = User.find(:all, :conditions => {:anonymous => false})
-  @statistics = Array.new
-  c = 0
-  @users.each do |u|
-  @statistics << {:user_id => u.id, :counter => Userlog.find(:all, :order => "created_at DESC", :conditions => {:user_id => u.id}).length}
-  c = c+1
+    @log = Userlog.find(:all, :order => "created_at DESC", :conditions => {:user_id => params[:id]})
+    @user = User.find(params[:id])
+    @users = User.find(:all, :conditions => {:anonymous => false})
+    @statistics = Array.new
+    c = 0
+    @users.each do |u|
+    @statistics << {:user_id => u.id, :counter => Userlog.find(:all, :order => "created_at DESC", :conditions => {:user_id => u.id}).length}
+    c = c+1
+    end
   end
+
+  def search
+    @user = User.find_by_login(params[:login])
+    if @user.nil? then
+        flash[:error] = t(:user_not_found)
+        redirect_to :back
+    else
+        redirect_to :action => :show, :id => @user.id
+    end
   end
-  
 end

@@ -21,7 +21,7 @@
         <p><%=t(:email_with_colon)%><%= @user.email %></p>
       <% end %>
 </div>
-  <% if @user.id == current_user.id %>
+  <% if @user.id == current_user.id || is_admin?%>
     <%= link_to t(:edit), edit_user_path(@user.id) %> <br /><br />
 	
 	<% if !@user.anonymous %>

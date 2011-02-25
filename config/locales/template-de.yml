@@ -406,6 +406,7 @@ de:
   save: Speichern
   save_or_delete_bundle: Bitte erst die im Bündel-Editor getroffene Bündel-Auswahl speichern oder löschen
   save_selection: Auswahl speichern
+  search: suchen
   search_package: Paket suchen
   search_programs_bundles: Du hast bereits ein Ubuntu installiert und suchst jetzt passende Programme? Hier kannst du deine Interessengebiete eingeben und passende vorkonfigurierte Programmbündel downloaden.
   security_type: 'Sicherheitstyp:'
@@ -463,6 +464,7 @@ de:
   usb_image: USB-Image
   used_in_bundles: 'Wird bei Communtu in folgenden Bündeln benutzt:'
   username: Benutzername
+  user_not_found: Benutzer konnte nicht gefunden werden
   videos: 'Videos:'
   view_accounts_edit_1: Altes Passwort
   view_admins_load_packages_0: 'Neue Pakete: '
