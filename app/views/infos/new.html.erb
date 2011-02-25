@@ -3,10 +3,9 @@
 <% form_for(@info) do |f| %>
   <%= f.error_messages %>
 
-<p>Bitte HTML-formatieren! &lt;h1>Überschrift&lt;/h1>&lt;br/>Laberlaber</p>
   <p>
-    <%= label_tag(:header) %><br />
-    <%= text_field_tag(:header) %>
+    <%= f.label(:header) %><br />
+    <%= f.text_field(:header) %>
   </p>
   <p>
     <%= f.label :content %><br />

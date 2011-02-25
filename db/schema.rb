@@ -197,6 +197,7 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
   end
 
   create_table "infos", :force => true do |t|
+    t.string   "header"
     t.text     "content"
     t.integer  "author_id"
     t.datetime "created_at"
@@ -282,13 +283,6 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
   create_table "metacontents_distrs", :force => true do |t|
     t.integer  "metacontent_id"
     t.integer  "distribution_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "news", :force => true do |t|
-    t.text     "content"
-    t.integer  "author"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

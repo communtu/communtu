@@ -1,5 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :infos
+  map.resources :infos, :collection => {:rss => :get}
 
   map.root :controller => 'home', :action => 'home'
 
@@ -40,8 +40,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :metapackages, :collection => {:save => :get, :immediate_conflicts => :get, :conflicts => :get,
                                                :rdepends => :get, :action => :get, :changed => :get, :migrate => :get,
                                                :finish_migrate => :get, :health_status => :get, :edit_new_or_cart => :get, 
-                                               :index => :get, :index_mine => :get, :bundle_from_selection => :get,
-                                               :new_from_cart => :get}
+                                               :index => :get, :index_mine => :get, :bundle_from_selection => :get}
   map.resources :messages, :member => { :reply => :get, :forward => :get }
   map.resources :packages, :collection => {:packagelist => :get, :rdepends => :get, :search => :get, :section => :get, :bundle => :get}
   map.connect '/bundle', :controller => 'packages', :action => 'bundle'
@@ -58,7 +57,7 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/download/test_livecd/:id', :controller => 'download', :action => 'test_livecd'
 
   map.connect '/users/anonymous_login', :controller => 'users', :action => 'anonymous_login'
-  map.resources :users, :member => { :enable => :put, :anonymous_login => :get} do |users|
+  map.resources :users, :member => { :enable => :put, :search => :put, :anonymous_login => :get} do |users|
     users.resource  :user_profile
     users.resource  :account
     users.resources :roles

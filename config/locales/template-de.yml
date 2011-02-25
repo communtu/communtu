@@ -172,6 +172,7 @@ de:
   creation_failed: Erzeugung fehlgeschlagen
   creation_in_progress: wird gerade erstellt
   creation_successful: Erstellung war erfolgreich
+  current_news: Aktuelle News
   deb_generation_in_background: Debs werden im Hintergrund erzeugt (ggf. Browser-Ansicht aktualisieren)
   debian_section: 'Debian-Section:'
   delete: Löschen
@@ -244,6 +245,8 @@ de:
   imprint: Impressum
   inbox: Posteingang
   include_programs_bundel: 'Enthaltende Programme/Bündel:'
+  info_edit: News editieren
+  info_new: neue News anlegen
   install: Installieren
   install2: installieren
   install_by_default: 'Standardmäßig installieren:'

@@ -43,7 +43,8 @@ class InfosController < ApplicationController
   def create
     @info = Info.new
     @info.author = current_user
-    @info.content = "<h1>"+params[:header]+"</h1><p>"+params[:info][:content]+"</p>"
+    @info.content = params[:info][:content]
+    @info.header = params[:info][:header]
 
     respond_to do |format|
       if @info.save
@@ -85,4 +86,11 @@ class InfosController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+  def rss
+    @infos = Info.find(:all, :order => "id DESC", :limit => 1)
+    render :layout => false
+    response.headers["Content-Type"] = "application/xml; charset=utf-8"
+  end
+
 end

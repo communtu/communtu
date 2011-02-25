@@ -8,17 +8,22 @@
 </noscript>
 
 <% if !@info.nil? &&  I18n.locale.to_s == "de" then %>
-  <h1>Aktuelle News</h1>
+  <h1><%=  t( :current_news)%></h1>
   <div class="info">
-    <%= @info.content %>
+    <h1> <%= @info.header %> </h1>
+    <p><%= @info.content %></p>
       <%  if is_admin? then%>
         <br />
         <div class="info_admin">
-        <%=link_to "Info editieren", edit_info_path(@info) %>
-        <%=link_to "Neue Info anlegen", infos_path %>
+        <%=link_to t(:info_edit), edit_info_path(@info) %>
+        <%=link_to t(:info_new), infos_path %>
         </div>
       <%end%>
   </div>
+<%else%>
+  <%  if is_admin? then%>
+    <%=link_to t(:info_new), infos_path %>
+  <% end %>
 <%end%>
 
 <h2><%=t(:easy_install)%></h2>

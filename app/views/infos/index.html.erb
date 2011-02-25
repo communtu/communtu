@@ -2,12 +2,14 @@
 
 <table>
   <tr>
+    <th>Header</th>
     <th>Content</th>
     <th>Author</th>
   </tr>
 
 <% for info in @infos %>
   <tr>
+    <td><%=h info.header %></td>
     <td><%=h info.content %></td>
     <td><%=h info.author_id %></td>
     <td><%= link_to 'Show', info %></td>
