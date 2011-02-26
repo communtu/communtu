@@ -205,8 +205,8 @@ msgid "Paket/Programm aus Bündel entfernen"
 msgstr "remove package/program from bundle"
 
 #: view_categories_edit_4
-msgid "Hauptkategory, die auf der Startseite Download angezeigt wird:"
-msgstr "Maincategory, which is shown on the first page under Download:"
+msgid "Kategorie, die auf der Startseite Download angezeigt wird:"
+msgstr "Category, which is shown on the first page:"
 
 #: view_user_profiles__installation_21
 msgid "installieren der Metapakete. Bitte vorher die Quellen hinzufügen."
@@ -1018,6 +1018,10 @@ msgstr "Derivatives, which should be installed with the derivative installation-
 msgid "Alle Spam-User gelöscht."
 msgstr "All spam users deleted."
 
+#: search
+msgid "suchen"
+msgstr "search"
+
 #: view_users_new_1
 msgid "Hier hast du die Möglichkeit dich zu registrieren."
 msgstr "Here you have the possibility to register yourself."
@@ -1245,6 +1249,10 @@ msgstr "non-free and from the main repositories"
 #: view_home_derivatives_34
 msgid " - ersetzt den Linux-Kern durch OpenSolaris. Stellt nur eine minimale Basis an Anwendungen bereit. Die Installation weiterer Pakete bleibt dem Benutzer überlassen; hierfür kann Communtu genutzt werden."
 msgstr " - replaces the Linux core with OpenSolaris. Provides only a minimal basis to applications. The installation of additional software is left to the user; Communtu can be used for this."
+
+#: info_edit
+msgid "News editieren"
+msgstr "Edit news message"
 
 #: health_status
 msgid "Gesundheitsstatus"
@@ -2138,6 +2146,10 @@ msgstr "To"
 msgid "Profil löschen"
 msgstr "delete profile"
 
+#: current_news
+msgid "Aktuelle News"
+msgstr "News"
+
 #: view_cart_update_4
 msgid "Bündel veröffentlichen"
 msgstr "Publish bundle"
@@ -2468,6 +2480,10 @@ msgstr ". "
 msgid "Folgender Kommentar wurde hinterlassen:"
 msgstr "The following comment was made:"
 
+#: view_packages_edit_2
+msgid "Icon"
+msgstr "Icon"
+
 #: generate_cd_new
 msgid "LiveCD/DVD mit neuen Quellen neu erstellen"
 msgstr "Recreate Live-CD/DVD with new sources"
@@ -2476,29 +2492,25 @@ msgstr "Recreate Live-CD/DVD with new sources"
 msgid "Folgende Pakete konnten jedoch nicht migriert werden:"
 msgstr "The following packages could not be migrated:"
 
-#: view_packages_edit_2
-msgid "Icon"
-msgstr "Icon"
-
 #: view_sessions_new_0
 msgid "Anmelden mit Benutzernamen und Passwort:"
 msgstr "Log in with username and password:"
-
-#: controller_repositories_0
-msgid "Repositorys"
-msgstr "repositories"
 
 #: view_packages_edit_3
 msgid "&nbsp;&nbsp;Neues Icon: "
 msgstr "&nbsp;&nbsp;New icon: "
 
-#: controller_repositories_1
-msgid "Repository erzeugt."
-msgstr "Repository created."
+#: controller_repositories_0
+msgid "Repositorys"
+msgstr "repositories"
 
 #: view_packages_edit_4
 msgid "Ist ein Programm:"
 msgstr "Is a program:"
+
+#: controller_repositories_1
+msgid "Repository erzeugt."
+msgstr "Repository created."
 
 #: view_metapackages_edit_2
 msgid "Bitte Versionen => 1.0 nur für ausgereifte Bündel verwenden. Versionsnummern müssen stets ansteigen. 0.10 ist höher als 0.9."
@@ -2548,13 +2560,13 @@ msgstr "Packages for Ubuntu"
 msgid "Neuer Link auf ein Video"
 msgstr "New link to a video"
 
-#: by_bank_transfer
-msgid "per Überweisung"
-msgstr "per bank transfer"
-
 #: view_packages_edit_9
 msgid "    Beschreibung des Videos:"
 msgstr "    Video description:"
+
+#: by_bank_transfer
+msgid "per Überweisung"
+msgstr "per bank transfer"
 
 #: view_metapackages__metalist_10
 msgid "Bewertung"
@@ -3348,6 +3360,10 @@ msgstr "free+proprietary"
 msgid "Bauernstr. 2"
 msgstr "Bauernstr. 2"
 
+#: user_not_found
+msgid "Benutzer konnte nicht gefunden werden"
+msgstr "User not found."
+
 #: view_user_profiles__profile_rating_1
 msgid "Rechts findest du die Details zur links ausgewählten Kategorie."
 msgstr "On the right side you can see information about the chosen category."
@@ -3461,6 +3477,10 @@ msgstr "You need to be logged in to use this feature. Using this feature is also
 #: view_packages__search_0
 msgid "Suche nach Paketen"
 msgstr "Search for packages"
+
+#: info_new
+msgid "neue News anlegen"
+msgstr "Create new news message"
 
 #: view_distributions_edit_0
 msgid "Distribution bearbeiten"

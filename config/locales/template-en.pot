@@ -152,7 +152,7 @@ msgstr ""
 msgid "remove package/program from bundle"
 msgstr ""
 #: view_categories_edit_4
-msgid "Maincategory, which is shown on the first page under Download:"
+msgid "Category, which is shown on the first page:"
 msgstr ""
 #: view_user_profiles_new_3
 msgid "level of expert"
@@ -757,6 +757,9 @@ msgstr ""
 #: spam_user_delete
 msgid "All spam users deleted."
 msgstr ""
+#: search
+msgid "search"
+msgstr ""
 #: view_users_index_1
 msgid "We have a total of "
 msgstr ""
@@ -906,6 +909,9 @@ msgid "\nGreetings\n\nthe Communtu-team\n\n  Further information about the proje
 msgstr ""
 #: view_home_derivatives_34
 msgid " - replaces the Linux core with OpenSolaris. Provides only a minimal basis to applications. The installation of additional software is left to the user; Communtu can be used for this."
+msgstr ""
+#: info_edit
+msgid "Edit news message"
 msgstr ""
 #: health_status
 msgid "Health status"
@@ -1560,6 +1566,9 @@ msgid "To"
 msgstr ""
 #: view_users_edit_2
 msgid "delete profile"
+msgstr ""
+#: current_news
+msgid "News"
 msgstr ""
 #: view_cart_update_4
 msgid "Publish bundle"
@@ -2464,6 +2473,9 @@ msgstr ""
 #: view_home_impressum_4
 msgid "Bauernstr. 2"
 msgstr ""
+#: user_not_found
+msgid "User not found."
+msgstr ""
 #: view_user_profiles__profile_rating_1
 msgid "On the right side you can see information about the chosen category."
 msgstr ""
@@ -2547,6 +2559,9 @@ msgid "You need to be logged in to use this feature. Using this feature is also 
 msgstr ""
 #: view_packages__search_0
 msgid "Search for packages"
+msgstr ""
+#: info_new
+msgid "Create new news message"
 msgstr ""
 #: view_distributions_edit_0
 msgid "edit distribution"

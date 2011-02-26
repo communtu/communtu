@@ -46,7 +46,7 @@ en:
   view_categories_edit_3: Link for further information
   required_fields: mandatory fields
   view_metapackages__package_list_2: remove package/program from bundle
-  view_categories_edit_4: "Maincategory, which is shown on the first page under Download:"
+  view_categories_edit_4: "Category, which is shown on the first page:"
   view_user_profiles_new_3: level of expert
   bundle_open_new_window: Bundle will be opend in a new window.
   repositories_incompletely_read: Repositories without packages (couldn't read repository)
@@ -252,6 +252,7 @@ en:
   prepare_livecd: Prepare Live-CD/DVD (script/remaster-getisos)
   view_home_derivatives_24: "Derivatives, which should be installed with the derivative installation-CD:"
   spam_user_delete: All spam users deleted.
+  search: search
   view_users_index_1: "We have a total of "
   easy_install: Easy methods of installation for Ubuntu
   view_users_new_1: Here you have the possibility to register yourself.
@@ -318,6 +319,7 @@ en:
       Our anouncements and mailinglists can be found at:
     http://en.communtu.org/home/news
   view_home_derivatives_34: " - replaces the Linux core with OpenSolaris. Provides only a minimal basis to applications. The installation of additional software is left to the user; Communtu can be used for this."
+  info_edit: Edit news message
   health_status: Health status
   view_home_derivatives_35: "There are several other derivatives for which we cannot give any recommendations for installation:"
   vm_running_under: "virtual machine runs with:"
@@ -546,6 +548,7 @@ en:
   view_sent_index_0: sent messages
   an: To
   view_users_edit_2: delete profile
+  current_news: News
   view_cart_update_4: Publish bundle
   nothing_found_questionmark: Nothing found?
   cd_ready: CD has finished
@@ -816,8 +819,8 @@ en:
   view_admins_sync_all_2: repositories synchronised
   choose_parent: Choose a Parent!
   model_user_profile_tabz_1: Software selection
-  controller_suggestion_11: add repository
   navigation_communtu: Navigation Communtu
+  controller_suggestion_11: add repository
   mailinglist: "Mailinglists:"
   model_user_profile_tabz_3: Start installation
   error_no_attachement: No file selected. The progress has been canceled.
@@ -847,6 +850,7 @@ en:
   missing_debs_for_bundle: "Missing debs for bundle:"
   model_package_0: Free software
   view_user_profiles__sources_1: The soon be installed programs and packages are shown and ordered by the appropriate sources so you can see why some sources will be added.
+  user_not_found: User not found.
   view_home_impressum_4: Bauernstr. 2
   model_package_1: free+proprietary
   view_user_profiles__profile_rating_0: "Software selection: choose bundle"
@@ -884,6 +888,7 @@ en:
   controller_derivatives_1: Derivative created.
   lib_system_1: You are not privileged to do this.
   view_distributions_edit_0: edit distribution
+  info_new: Create new news message
   view_home_about_16: In order to use Communtu you need to register yourself. To do so, just click on the "Registration"-button in the menu above.
   controller_derivatives_2: Derivative updated.
   lib_system_2: http://www.communtu.de
