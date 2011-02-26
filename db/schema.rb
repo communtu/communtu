@@ -196,14 +196,6 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.datetime "updated_at"
   end
 
-  create_table "infos", :force => true do |t|
-    t.string   "header"
-    t.text     "content"
-    t.integer  "author_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "languages", :force => true do |t|
     t.string   "name"
     t.string   "country_code"
