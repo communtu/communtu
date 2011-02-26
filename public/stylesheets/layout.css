@@ -833,9 +833,8 @@ a.download:hover, a.download:active{
 	 width:40em;
 	}*/
 .contentstart{
-	 position:absolute;
+	 position:relative;
 	 left:3em;
-	 top:8em;
 	 width:45em;
          padding-bottom:2em;
 	 }
@@ -1008,23 +1007,21 @@ a.download:hover, a.download:active{
 /**************************************************/
 
 .content2{
-	position:absolute;
+	position:relative;
 	left:26px;
-	top:42px;
 	width: 725px;
         padding-bottom:2em;
 	}
 .content1{
-	position:absolute;
+	position:relative;
 	left:0.5em;
-	top:7em;
+	top:-5em;
 	width:56em;
         padding-bottom:2em;
 	}
 .content{
 	left:4.5em;
 	position:relative;
-	top:6em;
 	width:75em;
 	}
 .content a{
@@ -1053,8 +1050,8 @@ a.download:hover, a.download:active{
 	left:0;
 	padding-left:4em;
 	padding-top:3.7em;
-	position:absolute;
-	top:0;
+	position:relative;
+	top:-5em;
 	width:75em;
 	z-index:1;
 	}
@@ -1071,8 +1068,8 @@ a.download:hover, a.download:active{
 
 .navi{
 	left:15.9em;
-	position:absolute;
-	top:10.15em;
+	position:relative;
+	top:-1.5em;
 	width:59em;
 	z-index:2;
 	}
@@ -1166,7 +1163,7 @@ a.download:hover, a.download:active{
 	background-repeat:no-repeat;
 	height:11.5em;
 	left:46px;
-	position:absolute;
+	position:relative;
 	width:72em;
 	z-index:3;
 	}
