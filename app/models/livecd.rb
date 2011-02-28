@@ -101,6 +101,15 @@ class Livecd < ActiveRecord::Base
     "#{self.base_url}.usb.img"
   end
 
+  # check whether all involved bundles have been published
+  def published
+    if self.metapackage.nil? # livdCD based on user settings
+      false # perhaps this should be true if all used bundles are published?
+    else # liveCD based on a single bundle
+      self.metapackage.published
+    end
+  end
+  
   # check if a user supplied name is acceptable
   def self.check_name(name)
     if name.match(/^communtu-.*/)
@@ -161,8 +170,8 @@ class Livecd < ActiveRecord::Base
         # normal users get nice'd
         nice = (self.users[0].nil? or !self.users[0].has_role?('administrator'))
         nicestr = if nice then "-nice " else "" end
-        # Jaunty and lower need virtualisation due to requirement of sqaushfs version >= 4 (on the server, we have Hardy)
-        if self.distribution_id < 5 then
+        # Jaunty and lower need virtualisation due to requirement of squashfs version >= 4 (on the server, we have Hardy)
+        if self.distribution.name[0] <= 74 then # 74 is "J"
           virt = "-v "
         else
           virt = ""
