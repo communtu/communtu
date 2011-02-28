@@ -127,7 +127,12 @@ module ApplicationHelper
   ##############################
 
   def editing_metapackage?
-    not session[:cart].nil?
+    if !session[:cart].nil? 
+      if Cart.find_by_id(session[:cart]).nil? # outdated cookie?
+        session[:cart] = nil # then remove it
+      end
+    end
+    return (not session[:cart].nil?)
   end
 
   def base_package_path(base_package)
