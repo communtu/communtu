@@ -67,7 +67,7 @@ class Metapackage < BasePackage
   end
   
   def is_published?
-    return self.published 
+    return self.published==1 
   end
 
   # contained packages (without bundles)

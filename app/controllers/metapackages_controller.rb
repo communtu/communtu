@@ -368,12 +368,12 @@ class MetapackagesController < ApplicationController
       return
     end
     # does bundle contain some unpublished bundle?
-    unpublished_descendants = package.descendants.select{|b| !b.published }
+    unpublished_descendants = package.descendants.select{|b| !b.is_published? }
     if !unpublished_descendants.empty?
       names = unpublished_descendants.map{|b| self.class.helpers.link_to(b.name, metapackage_path(b))}.join(", ")
       flash[:error] = t(:cannot_publish_bundle, :bundles => names)      
     else
-      package.published = true
+      package.published = 1
       package.modified = true
       package.save!
     end
@@ -513,7 +513,7 @@ class MetapackagesController < ApplicationController
     @free_root = disk_free_space("/")
     @bundles_with_errors = (Metapackage.find_all_by_deb_error(true)).uniq
     @modified_bundles = Metapackage.find_all_by_modified(true) - @bundles_with_errors
-    @bundles_without_debs = Metapackage.find_all_by_debianized_version_and_published(nil,true)
+    @bundles_without_debs = Metapackage.find_all_by_debianized_version_and_published(nil,1)
     @bundles_with_missing_debs = Metapackage.find(:all,:conditions=>["debs.generated = 0"],:include=>:debs)
     @bundles_with_missing_packages = {}
     Distribution.all.each do |d|

@@ -96,7 +96,7 @@
   <p>
   <b><%=t(:used_in_bundles)%></b><br />
   <ul>
-  <% @package.metapackages.each do |m| %>
+  <% @package.metapackages.select{|m| m.is_published?}.each do |m| %>
   <li>
      <%= link_to  m.name, { :controller => :metapackages, :action => :show,\
 	  				:id => m.id } %>

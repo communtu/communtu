@@ -102,11 +102,11 @@ class Livecd < ActiveRecord::Base
   end
 
   # check whether all involved bundles have been published
-  def published
+  def is_published?
     if self.metapackage.nil? # livdCD based on user settings
       false # perhaps this should be true if all used bundles are published?
     else # liveCD based on a single bundle
-      self.metapackage.published
+      self.metapackage.is_published?
     end
   end
   

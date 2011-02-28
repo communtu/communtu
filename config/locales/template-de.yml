@@ -462,7 +462,7 @@ de:
     auf OK wird das Image auf den USB-Stick kopiert. Der Vorgang kann recht lange dauern, jenachdem wie schnell Dateien auf den 
     USB-Stick kopiert werden können. Sobald der Vorgang abgeschlossen ist wird eine Erfolgsmeldung auf dem Bildschirm erscheinen.
   usb_image: USB-Image
-  used_in_bundles: 'Wird bei Communtu in folgenden Bündeln benutzt:'
+  used_in_bundles: 'Wird bei Communtu in folgenden veröffentlichten Bündeln benutzt:'
   username: Benutzername
   user_not_found: Benutzer konnte nicht gefunden werden
   videos: 'Videos:'
