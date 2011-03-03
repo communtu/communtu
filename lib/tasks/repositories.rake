@@ -96,4 +96,25 @@ namespace :livecd do
       sleep 10
     end
   end
+
+  desc 'Compute new database columns for old LiveCDs'
+  task :adjust_db => :environment do
+    Livecd.all.each do |cd|
+      cd.published = cd.bundles_published?
+      cd.save
+    end  
+    Dir.glob("/var/log/apache2/*-communtu.log*gz").each do |file|
+      IO.popen("gunzip -c #{file}").each do |line|
+        cdname = line.scan(/.*\/isos\/(.*).iso.*/).flatten[0]
+        if !cdname.nil?
+          puts cdname
+          Livecd.all.select{|cd| cd.fullname == cdname}.each do |cd|
+            cd.downloaded += 1
+            cd.save
+            puts cd.name
+          end
+        end
+      end
+    end
+  end
 end

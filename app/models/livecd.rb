@@ -265,7 +265,11 @@ class Livecd < ActiveRecord::Base
   
   # check whether all involved bundles have been published
   def bundles_published?
-    self.bundles.map(&:is_published?).all?
+    if self.metapackage.nil? 
+      self.users[0].selected_packages.map(&:is_published?).all?
+    else
+      self.metapackage.is_published?
+    end  
   end
 
   # re-generate srcdeb (needed in case that srcdeb is wrong for some reasons)
