@@ -255,11 +255,15 @@ class Livecd < ActiveRecord::Base
 
   # get list of metapackages, either from database or from installdeb
   def bundles
-    if self.metapackage.nil? 
-      depnames = Deb.deb_get_dependencies(self.installdeb)
-      depnames.map{|n| Metapackage.all.select{|m| m.debian_name==n}.first}.compact
-    else
-      [self.metapackage]
+    begin
+      if self.metapackage.nil? 
+        depnames = Deb.deb_get_dependencies(self.installdeb)
+        depnames.map{|n| Metapackage.all.select{|m| m.debian_name==n}.first}.compact
+      else
+        [self.metapackage]
+      end
+    rescue
+      []
     end  
   end
   

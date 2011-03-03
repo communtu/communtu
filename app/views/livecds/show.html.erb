@@ -17,9 +17,11 @@
    </ul>
 </p>
 
-<% if !@cd.metapackage.nil? %>
-<p><%=t(:based_on_bundle)%> <%=link_to @cd.metapackage.name, metapackage_path(@cd.metapackage)%> </p>
+<p><%=t(:based_on_bundle)%> 
+<% @cd.bundles.each do |b| %>
+  <%=link_to b.name, metapackage_path(b)%> &nbsp;
 <% end %>
+</p>
 <% if @cd.generated %>
  <% if !File.exists?(@cd.iso_image) %>
   <p><%= t(:iso_deleted) %>
