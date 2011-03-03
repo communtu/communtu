@@ -34,7 +34,8 @@ class HomeController < ApplicationController
       :group => "ratings.rateable_id HAVING COUNT(ratings.id) > 2",
       :order => "rating DESC",
       :limit => 5)
-    @info = Info.find(:first, :conditions => ['created_at > ?', Date.today-30], :order => 'created_at DESC' )
+    @info = Info.find(:first, :conditions => ['created_at > ?', Date.today-14], :order => 'created_at DESC' )
+    @livecds = Livecd.find(:all, :order => "Downloaded DESC", :limit => 5, :conditions => "published = true")
   end
   
   def about

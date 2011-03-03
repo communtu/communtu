@@ -21,6 +21,7 @@ de:
   back: zurück
   based_on_bundle: 'basiert auf Bündel:'
   being_created: wird erstellt
+  best_livecds: Beliebteste Live-CD
   blog: Der Blog von Communtu
   blog_2: Blog
   blog_link: http://communtu.wordpress.com
@@ -192,6 +193,7 @@ de:
   donation_receipt: Spendenbescheinigung kann ausgestellt werden.
   download: herunterladen
   download_area: Download-Bereich
+  downloads: Downloads
   easy_install: Einfache Installationsmöglichkeiten für Ubuntu
   edit: Bearbeiten
   edit_architecture: Architektur bearbeiten

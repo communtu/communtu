@@ -42,7 +42,7 @@
 
         <td><%= t(:make_your_livedvd_or_usb) %> <%= link_to(t(:continue), "/download/start") %></td>
     </tr>
-    
+
     <tr>
         <td colspan="2"><hr /></td>
     </tr>
@@ -57,7 +57,7 @@
     </tr>
 </table>
 <div id="conny_index"><%= image_tag("/images/conny_start.jpg", :title =>t(:conny_picture), :alt=>t(:conny_picture)) %></div>
-<div id="list_nextto_conni">   
+<div id="list_nextto_conni">
 <% u = User.find(:last, :conditions => {:anonymous => false}) %>
 <h3><%=t(:hello)%></h3>
 <%=t(:last_user)%> <strong><%= link_to( u.login, user_path(u.id)) %> <%= image_tag("/images/icon_user.png") %>.</strong>
@@ -121,5 +121,35 @@
 			</p>
 		<% end %>
 	<% end %>
+</div>
+
+
+<div class="best_livecd">
+  <h3>
+    <%=t(:best_livecds)%>
+  </h3>
+  <table cellspacing="0">
+    <tbody>
+      <tr>
+        <th class="livecdList" align="left" valign="middle">
+          <%=t(:livecd)%>
+        </th>
+	<th valign="middle" class="bundleList" align="left">
+          <%=t(:downloads)%>
+	</th>
+      </tr>
+      <% for livecd in @livecds do %>
+          <% css = cycle("packageList0", "packageList1") %>
+          <tr>
+            <td class="<%= css %>" valign="middle">
+              <%= link_to livecd.name, livecd_path(livecd) %>
+            </td>
+            <td class="<%= css %>" valign="middle">
+              <%=  livecd.Downloaded %>
+          </td>
+	</tr>
+      <% end %>
+    </tbody>
+  </table>
 </div>
 

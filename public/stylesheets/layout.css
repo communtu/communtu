@@ -852,6 +852,21 @@ a.download:hover, a.download:active{
 .buendle_count{
 	margin-bottom:2.5em;
 	}
+
+ .best_livecd{
+	position:absolute;
+	left:48em;
+	top:25em;
+	width:22em;
+ 	}
+.best_livecd ul li{
+	list-style-image:url(/images/star_trans.gif);
+	list-style-position:outside;
+	padding-bottom:0.1em;
+ 	}
+.livecd_count{
+	margin-bottom:2.5em;
+	}
 .bemerkung{
 	color:#63605E;
 	position:absolute;
