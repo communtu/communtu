@@ -266,7 +266,11 @@ class Livecd < ActiveRecord::Base
   # check whether all involved bundles have been published
   def bundles_published?
     if self.metapackage.nil? 
-      self.users[0].selected_packages.map(&:is_published?).all?
+      u = self.users[0]
+      if u.nil?
+        return false
+      end
+      u.selected_packages.map(&:is_published?).all?
     else
       self.metapackage.is_published?
     end  
