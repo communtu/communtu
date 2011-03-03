@@ -67,4 +67,11 @@ class LivecdsController < ApplicationController
     render :action => 'show'
   end
 
+  def download
+    @cd = Livecd.find(params[:id])
+    @cd.downloaded += 1
+    @cd.save
+    send_file @cd.iso_image, :type => "application/iso-file"
+  end
+
 end
