@@ -1,7 +1,7 @@
 <div class="path">
 <ol>
 <% current = 1000
-   path = DownloadController::PATHS[session[:path]]%>
+   path = paths[session[:path]]%>
 <% for i in 0..path.length-1 
    node=path[i]%>
    <li> 
