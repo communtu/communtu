@@ -440,12 +440,13 @@ end
     install = self.install_bundle_as_meta
     if install.nil? then return nil end
     installdeb = RAILS_ROOT + "/" + install
-    cd = Livecd.create({:name => name, :distribution_id => self.distribution_id, 
-                        :derivative_id => self.derivative_id, :architecture_id => self.architecture_id,
-                        :srcdeb => srcdeb, :installdeb => installdeb,
-                        :license_type => self.license, :security_type => self.security,
-                        :iso => iso, :kvm => kvm, :usb => usb,
-                        :profile_version => self.profile_version})
+    published = self.selected_packages.map(&:is_published?).all?
+    cd = Livecd.create(:name => name, :distribution_id => self.distribution_id, 
+                       :derivative_id => self.derivative_id, :architecture_id => self.architecture_id,
+                       :srcdeb => srcdeb, :installdeb => installdeb,
+                       :license_type => self.license, :security_type => self.security,
+                       :iso => iso, :kvm => kvm, :usb => usb,
+                       :profile_version => self.profile_version, :published => published)
     cd.register(self)
     self.profile_changed = false
     self.save
@@ -488,6 +489,7 @@ end
       params[:iso] = iso
       params[:kvm] = kvm
       params[:usb] = usb
+      params[:published] = bundle.is_published?
       cd = Livecd.create(params)
       # cd.fork_remaster # now done by daemon
     end

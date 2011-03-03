@@ -100,15 +100,6 @@ class Livecd < ActiveRecord::Base
   def usb_url
     "#{self.base_url}.usb.img"
   end
-
-  # check whether all involved bundles have been published
-  def is_published?
-    if self.metapackage.nil? # livdCD based on user settings
-      false # perhaps this should be true if all used bundles are published?
-    else # liveCD based on a single bundle
-      self.metapackage.is_published?
-    end
-  end
   
   # check if a user supplied name is acceptable
   def self.check_name(name)
@@ -262,6 +253,21 @@ class Livecd < ActiveRecord::Base
     end
   end
 
+  # get list of metapackages, either from database or from installdeb
+  def bundles
+    if self.metapackage.nil? 
+      depnames = Deb.deb_get_dependencies(self.installdeb)
+      depnames.map{|n| Metapackage.all.select{|m| m.debian_name==n}.first}.compact
+    else
+      [self.metapackage]
+    end  
+  end
+  
+  # check whether all involved bundles have been published
+  def bundles_published?
+    self.bundles.map(&:is_published?).all?
+  end
+
   # re-generate srcdeb (needed in case that srcdeb is wrong for some reasons)
   def generate_sources
     bundle = self.metapackage
@@ -278,9 +284,7 @@ class Livecd < ActiveRecord::Base
         if File.exists?(self.srcdeb)
           system "rm #{self.srcdeb}"
         end
-        # get list of metapackages from installdeb
-        depnames = Deb.deb_get_dependencies(self.installdeb)
-        deps = depnames.map{|n| Metapackage.all.select{|m| m.debian_name==n}.first}.compact
+        deps = self.bundles
         name = BasePackage.debianize_name("communtu-add-sources-"+user.login)
         version = user.profile_version.to_s
         description = I18n.t(:controller_suggestion_2)+user.login
