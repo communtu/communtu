@@ -3,6 +3,7 @@
 
 
 class DownloadController < ApplicationController
+
   def title
     if params[:controller] == "download" and params[:action] == "selection"
       "Communtu: " + t(:model_user_profile_tabz_1)
@@ -64,14 +65,26 @@ class DownloadController < ApplicationController
   def sources
     if check_login then return end
     user = current_user
-    metas = user.selected_packages
     dist = user.distribution
     license = user.license
     security = user.security
     arch = user.architecture
-    @sources = {}
-    metas.each do |p|
-       p.recursive_packages_sources @sources, dist, arch, license, security
+    if session[:path] == "install_package"
+      package = Package.find(session[:package])
+      @sources = {}
+      package.repositories_dist(dist,arch).each do |rep|
+        @sources[rep] = [package]
+      end
+    else
+      if session[:path] == "install_bundle"
+        metas = [Metapackage.find(session[:bundle])]
+      else
+        metas = user.selected_packages
+      end  
+      @sources = {}
+      metas.each do |p|
+         p.recursive_packages_sources @sources, dist, arch, license, security
+      end
     end
     @additional_sources = @sources.keys
     Repository.close_deps(@additional_sources)

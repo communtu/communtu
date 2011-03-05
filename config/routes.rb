@@ -41,9 +41,11 @@ ActionController::Routing::Routes.draw do |map|
                                                :rdepends => :get, :action => :get, :changed => :get, :migrate => :get,
                                                :finish_migrate => :get, :health_status => :get, :edit_new_or_cart => :get, 
                                                :index => :get, :index_mine => :get, :bundle_from_selection => :get,
-                                               :new_from_cart => :get}
+                                               :new_from_cart => :get, :install_current => :get, :install_current_source => :get,
+                                               :install_current_bundle => :get}
   map.resources :messages, :member => { :reply => :get, :forward => :get }
-  map.resources :packages, :collection => {:packagelist => :get, :rdepends => :get, :search => :get, :section => :get, :bundle => :get}
+  map.resources :packages, :collection => {:packagelist => :get, :rdepends => :get, :search => :get, :section => :get, :bundle => :get, :install_current => :get, :install_current_source => :get,
+                                               :install_current_package => :get}
   map.connect '/bundle', :controller => 'packages', :action => 'bundle'
   map.resource :password
   map.connect '/rating/rate', :controller => 'rating', :action => 'rate'

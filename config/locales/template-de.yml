@@ -56,6 +56,8 @@ de:
   change_passwd: Passwort ändern
   chat: Chat
   chat_channel: de-communtu
+  choice_of_bundle: Auswahl des Bündels
+  choice_of_package: Auswahl des Pakets
   choose_bundle: Bündel auswählen
   choose_category: Bitte auswählen
   choose_parent: Wähle einen Parent aus!
@@ -254,7 +256,9 @@ de:
   install_by_default: 'Standardmäßig installieren:'
   install_package_sources_first: Paket installieren. Bitte ggf. vorher die Quellen hinzufügen.
   install_bundle: Installation des Bündels {{name}}
+  install_bundle_steps: Die Installation des Bündels {{name}} geschieht in mehreren Schritten, siehe rechts.
   install_package: Installation des Pakets {{name}}
+  install_package_steps: Die Installation des Pakets {{name}} geschieht in mehreren Schritten, siehe rechts.
   install_software: Software installieren
   installation_two_steps: "Installation des Pakets in zwei Schritten:"
   installing_using_script: installieren mittels Skript
@@ -347,7 +351,7 @@ de:
   model_user_profile_tabz_3: Installation durchführen
   model_user_profile_tabz_4: Voreinstellungen
   more: mehr
-  more_about_sources: (Mehr Informationen zum Thema Schlüssel und Quellen in den Faqs)
+  more_about_sources: Mehr Informationen zum Thema Schlüssel und Quellen in den Faqs
   name_of_livecd: 'Name der LiveCD/DVD:'
   name_of_usb: 'Name der Iso-Datei:'
   name_with_colon: 'Name: '
@@ -367,6 +371,8 @@ de:
   news: Aktuelles
   no1: nein
   no_admin: Du bist kein Administrator!
+  no_bundle_selected: Kein Bündel ausgewählt
+  no_package_selected: Kein Paket ausgewählt
   no_cookies: Du hast deine Cookies deaktiviert. Zum Nutzen von Communtu sind diese erforderlich. Wir empfehlen dir, die Cookies wieder anzuschalten.
   no_packet_information_found: Es konnten keine Angabe zu Paketinformationen getroffen werden.
   no_save_database: 'Die folgenden Pakete konnten nicht in der Datenbank gespeichert werden:'
@@ -876,7 +882,7 @@ de:
   view_user_profiles__installation_1: Um etwas installieren zu können, musst du zunächst unter "Softwareauswahl" etwas auswählen.
   view_user_profiles__installation_13: '(Bei einem Versionswechsel muss der erste Schritt erneut ausgeführt werden, da die Communtu Quellen durch das Upgrade deaktiviert wurden.):'
   view_user_profiles__installation_16: Quellen und Schlüssel eintragen
-  view_user_profiles__installation_17: Link einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer öffnen - wenn kein Prorgammdialog erscheint, wurde die Datei auf deinen Rechner heruntergeladen. Dort kannst du sie mit Doppelklick starten.
+  view_user_profiles__installation_17: Diesen Link einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer öffnen - wenn kein Prorgammdialog erscheint, wurde die Datei auf deinen Rechner heruntergeladen. Dort kannst du sie mit Doppelklick starten.
   view_user_profiles__installation_2: Aufgrund deiner Auswahl werden jetzt Programme auf deinem Computer installiert.
   view_user_profiles__installation_21: installieren der Metapakete. Bitte vorher die Quellen hinzufügen.
   view_user_profiles__installation_23: 'Es gibt zwei Alternativen:'
@@ -886,9 +892,8 @@ de:
   view_user_profiles__installation_28: http://wiki.ubuntuusers.de/apturl
   view_user_profiles__installation_29: ' konfigurieren.'
   view_user_profiles__installation_30: 'Hinweis: Bitte .deb-Dateien nicht umbenennen.'
-  view_user_profiles__installation_31: Die Communtu-Metapakete können auch mittles {{synaptic}} (unter System -> Systemverwaltung) angezeigt, installiert und deinstalliert werden. Änderungen an Bündeln werden über die Ubuntu-Paketverwaltung automatisch eingespielt.
-  view_user_profiles__installation_33: Diese
-  view_user_profiles__installation_34: werden zu dem System hinzugefügt.
+  view_user_profiles__installation_31: Alle Ubuntu-Pakete und Communtu-Bündel können auch mittles {{synaptic}} (unter System -> Systemverwaltung) angezeigt, installiert und deinstalliert werden. Änderungen an Bündeln werden über die Ubuntu-Paketverwaltung automatisch eingespielt.
+  view_user_profiles__installation_34: Liste der {{sources}}, die zu deinem System hinzugefügt werden.
   view_user_profiles__profile_data_0: 'Voreinstellungen eingeben'
   view_user_profiles__profile_data_1: 'Auf dieser Seite kannst du die Grundeinstellungen deines Computers angeben. In der Regel kannst du die Einstellungen so lassen.'
   view_user_profiles__profile_data_10: ' Nur Ubuntuquellen zulassen ("main/restricted", sehr sicher: Sicherheits-Updates von Ubuntu)'

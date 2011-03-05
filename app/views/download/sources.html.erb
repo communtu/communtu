@@ -22,7 +22,7 @@
 <% end %>
 </ul>
 
-<% if !@additional_sources.nil? %>
+<% if !@additional_sources.nil? and !@additional_sources.empty? %>
   <%=t(:additional_sources)%><br />
   <ul>
     <% for repository in @additional_sources %>

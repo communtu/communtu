@@ -1,0 +1,8 @@
+<h2><%=t(:install_package, :name => @package.name)%></h2>
+
+<%= render_flash %>
+<%= render :partial => "download/path" %>
+
+<%=t(:install_package_steps, :name => @package.name)%>
+
+<%= render :partial => 'show', :locals => {:show_install => false} %>

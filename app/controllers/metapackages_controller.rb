@@ -35,6 +35,10 @@ class MetapackagesController < ApplicationController
   # GET /metapackages/1.xml
   def show
     @metapackage = Metapackage.find(params[:id])
+    show_aux
+  end
+  
+  def show_aux
       if @metapackage.name_tid == nil
          #something get wrong - this cannot happend if the translation goes right
          @meta_english_title = ""
@@ -539,10 +543,6 @@ class MetapackagesController < ApplicationController
     ms=Metapackage.all.select{|m| Metacontent.find(:first,:conditions=>["metacontents_distrs.distribution_id = 6 and metapackage_id = ?",m.id],:include=>:metacontents_distrs).nil?}
   end
 
-  def install
-    @metapackage  = Metapackage.find(params[:id])   
-  end
-
   def bundle_from_selection
     prepare_create
     cart = Cart.find(session[:cart])
@@ -550,6 +550,28 @@ class MetapackagesController < ApplicationController
        CartContent.create({:cart_id => cart.id, :base_package_id => m.id})
     end
     redirect_to "/packages"
+  end
+
+  def install
+    session[:bundle] = params[:id]
+    session[:path] = "install_bundle"
+    redirect_to :action => "install_current"
+  end
+
+  def install_current
+    @metapackage  = Metapackage.find_by_id(session[:bundle])
+    if @metapackage.nil?
+      flash[:error] = t(:no_bundle_selected)
+      redirect_to :action => 'index'
+    end
+    show_aux
+  end
+  
+  def install_current_sources
+  end
+  
+  def install_current_bundle
+    @metapackage  = Metapackage.find_by_id(session[:bundle])
   end
   
   private

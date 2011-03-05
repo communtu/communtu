@@ -54,7 +54,9 @@ class PackagesController < ApplicationController
   # GET /Packages/1.xml
   def show
     @package = Package.find(params[:id])
-    
+    show_aux
+  end  
+  def show_aux  
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @package }
@@ -203,6 +205,24 @@ if !params[:video_url].nil? then
   end
 
   def install
-    @package  = Package.find(params[:id])   
+    session[:package] = params[:id]
+    session[:path] = "install_package"
+    redirect_to :action => "install_current"
+  end
+
+  def install_current
+    @package  = Package.find_by_id(session[:package])
+    if @package.nil?
+      flash[:error] = t(:no_package_selected)
+      redirect_to :action => 'index'
+    end
+    show_aux
+  end
+  
+  def install_current_sources
+  end
+  
+  def install_current_package
+    @package = Package.find_by_id(session[:package])
   end
 end

@@ -1,0 +1,10 @@
+<% #  (c) 2008-2010 by Verein Allgemeinbildung e.V., Bremen, Germany  
+   #  use, modification or distribution only with permission of the copyright holder
+%>
+
+<%= render :partial => "download/path" %>
+
+<h2><%=t(:install_package,:name=>@package.name)%></h2>
+<%= render_flash %>
+<% url = 'apt://'+@package.debian_name%>
+<%= render :partial => 'metapackages/install', :locals => {:url => url} %>

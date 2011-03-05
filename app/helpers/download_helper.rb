@@ -46,6 +46,16 @@ module DownloadHelper
               {:name => I18n.t(:iso_ready), :action => "current_cd"}
              # {:name => "USB-Stick erstellen", :action => "usb"}
              ]
+        when "install_bundle"
+        then [{:name => I18n.t(:choice_of_bundle), :action => "/metapackages/install_current"},
+              {:name => I18n.t(:model_user_profile_tabz_4), :action => "/download/settings"},
+              {:name => I18n.t(:view_user_profiles__installation_16), :action => "/download/prepare_install_sources"},
+              {:name => I18n.t(:install_software), :action => "/metapackages/install_current_bundle"}]
+        when "install_package"
+        then [{:name => I18n.t(:choice_of_package), :action => "/packages/install_current"},
+              {:name => I18n.t(:model_user_profile_tabz_4), :action => "/download/settings"},
+              {:name => I18n.t(:view_user_profiles__installation_16), :action => "/download/prepare_install_sources"},
+              {:name => I18n.t(:install_software), :action => "/packages/install_current_package"}]
         else nil
       end  
   end           
