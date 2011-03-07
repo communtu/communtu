@@ -9,7 +9,6 @@
   <tr>
     <th valign="middle" class="packageList" align="left"><%= link_to t(:name_without_colon), '?order=name' %></th>
     <th valign="middle" class="packageList" align="left"><%= link_to t(:category_without_colon), '?order=categories.name' %></th>
-    <th valign="middle" class="packageList" align="left"><%=t(:view_metapackages__metalist_2)%></th>
     <th valign="middle" class="packageList" align="left"><%=t(:view_metapackages__metalist_3)%></th>
 	<th valign="middle" class="packageList" align="left"><%= link_to t(:view_metapackages__metalist_10), '?order=rating' %></th>
     <th valign="middle" class="packageList" align="left"><%=t(:install)%></th>
@@ -26,8 +25,6 @@
 		    <%= link_to(metapackage.name, metapackage_path(metapackage), :title => t(:detailed_view)) %></td>
         <td class="<%= css %>" valign="middle">
 		    <%=h metapackage.category.name %></td>
-        <td class="<%= css %>" valign="middle">
-		    <%=metapackage.default_install ?  t(:yes1) : t(:no1) %></td>
 	    <td class="<%= css %>" valign="middle" align="center">
 	        <% if metapackage.is_published? %>
 	            <%= image_tag("yes.png", :size => "16x16", :border => "0", :title => t(:published), :alt => t(:published)) %>
