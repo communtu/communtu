@@ -3,7 +3,11 @@
 %>
 
 <div class="conny_about">
-	<a href="/home/contact_us">
+  <%  if @faq.nil? %>
+    <a href="/home/faq">
+  <%else%>
+    <a href="/home/contact_us">
+  <%end%>
 <img src="/images/conny_questionmark.jpg" border="0" alt="<%=t(:questionmark_conny)%>" title="<%=t(:questionmark_conny)%>" />
     </a>
 </div>

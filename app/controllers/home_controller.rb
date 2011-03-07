@@ -86,4 +86,8 @@ class HomeController < ApplicationController
     redirect_to '/home'
   end
 
+  def faq
+    @faq = true
+  end
+
 end
