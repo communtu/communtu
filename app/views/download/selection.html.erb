@@ -25,7 +25,11 @@
   style="margin-left: <%=(c[:depth]-1)*15%>px;"
   class="user_profile_edit_cat <%=if (c[:category]==first_c) then "category_active" end%>"
   onclick="user_profile_edit_show_category(<%=c[:category].id.to_s%>);">
-<%=c[:category].name%></div>
+<%= "<a class='tt'>"+c[:category].name+
+        "<span class='tooltip'><span class='top'></span><span class='middle'>"+
+        c[:category].description+
+        "</span><span class='bottom'></span></span></a>" %>
+</div>
 <% end %>
 <% end %>
 </div>
