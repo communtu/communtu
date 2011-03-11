@@ -14,7 +14,7 @@
 # You should have received a copy of the GNU Affero Public License
 # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
 
-cd web2.0/communtu-program-test
+cd web2.0/communtu-test
 script/console
 f=File.open("livecds.yml","w")
 f.puts(YAML.dump(Livecd.all))
@@ -23,8 +23,8 @@ f=File.open("livecdusers.yml","w")
 f.puts(YAML.dump(LivecdUser.all))
 f.close
 quit
-mv livecd* ../communtu-program
-cd ../communtu-program
+mv livecd* ../communtu
+cd ../communtu
 script/console
 f=File.open("livecds.yml")
 cds=YAML.load(f.read);nil

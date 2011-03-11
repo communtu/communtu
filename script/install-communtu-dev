@@ -22,8 +22,8 @@ backupdbplace=communtu@communtu.org:/home/communtu/web2.0
 
 set -x
 # script for installing rails and commutu
-# subversion
-sudo apt-get install -y subversion
+# git
+sudo apt-get install -y git-core
 # translating
 sudo apt-get install poedit python-yaml
 # rails
@@ -42,9 +42,12 @@ sudo gem install chronic packet
 # mysql server
 sudo apt-get install -y mysql-server libmysql-ruby ruby1.8-dev libmysqlclient15-dev
 pwdpath=$(pwd)
-if [ ${pwdpath##*/} != "communtu-program" ]; then
-  svn co http://trac.communtu.org/svn/communtu-program communtu-program
-  cd communtu-program
+if [ ${pwdpath##*/} != "communtu" ]; then
+  # read-only version
+  git clone git://github.com/communtu/communtu.git
+  # developers should use
+  # git clone git@github.com:communtu/communtu.git
+  cd communtu
 fi
 # setting up rails config
 cp config/database.yml.template config/database.yml

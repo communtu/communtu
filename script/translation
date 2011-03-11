@@ -41,4 +41,4 @@ script/yaml2po $source_lang $source_yml_file $dest_pot_file
 poedit $dest_po_file
 script/po2yaml $dest_lang $dest_po_file $dest_yml_file
 script/yaml2po $dest_lang $dest_yml_file $dest_pot_file
-echo "Run 'svn ci' for folder $locales_folder"
+echo "Run 'git commit -a' for folder $locales_folder"

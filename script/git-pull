@@ -17,4 +17,4 @@
 # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
 
 cd `dirname "$0"`/..
-/usr/bin/svn up --non-interactive > /dev/null
+/usr/bin/git pull > /dev/null
