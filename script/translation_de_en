@@ -6,6 +6,23 @@
 # E-Mail: timo@communtu.de #
 # Version: 1.1             #
 ############################
+
+# (c) 2008-2011 byllgemeinbildung e.V., Bremen, Germany
+# This file is part of Communtu.
+
+ # Communtu is free software: you can redistribute it and/or modify
+ # it under the terms of the GNU Affero Public License as published by
+ # the Free Software Foundation, either version 3 of the License, or
+ # (at your option) any later version.
+
+ # Communtu is distributed in the hope that it will be useful,
+ # but WITHOUT ANY WARRANTY; without even the implied warranty of
+ # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ # GNU Affero Public License for more details.
+
+ # You should have received a copy of the GNU Affero Public License
+ # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
+
 script/yaml2po de config/locales/template.yml config/locales/template.pot
 poedit config/locales/template.po
 script/po2yaml en config/locales/template.po config/locales/template-en.yml

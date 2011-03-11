@@ -1,0 +1,357 @@
+#!/bin/bash
+
+# (c) 2008-2011 byllgemeinbildung e.V., Bremen, Germany
+# This file is part of Communtu.
+
+ # Communtu is free software: you can redistribute it and/or modify
+ # it under the terms of the GNU Affero Public License as published by
+ # the Free Software Foundation, either version 3 of the License, or
+ # (at your option) any later version.
+
+ # Communtu is distributed in the hope that it will be useful,
+ # but WITHOUT ANY WARRANTY; without even the implied warranty of
+ # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ # GNU Affero Public License for more details.
+
+ # You should have received a copy of the GNU Affero Public License
+ # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
+
+
+# Communtu script for live CD creation
+# based on remaster_ubuntu.sh, see http://david.decotigny.free.fr/wiki/wakka.php?wiki=RemasterUbuntu
+# (a script for live CD remastering inside a chroot environment)
+# see also https://help.ubuntu.com/community/LiveCDCustomization and the Ubuntu Customization Kit UCK
+
+# local settings (should be put into a separate config file...)
+# device for storing virtual machine (currently not needed)
+VM_DEVICE=/dev/sda6
+# servers
+NAMESERVER=134.102.200.14
+APT_PROXY=134.102.204.215
+# livecd folder
+LIVECD_FOLDER=/home/communtu/livecd
+# user for liveCDs
+LIVECD_USER=communtu
+
+CALL_DIR=`dirname $(readlink -f $0)`
+
+# get parameters and options
+NICEKVM="kvm"
+MODE=$1
+VIRT=0
+while [ ${2:0:1} == "-" ]; do
+  case "$2" in
+    -v)
+       VIRT=1
+       shift
+       ;;
+    -nice)
+       NICEKVM="nicekvm"
+       shift
+       ;;
+    -usb)
+       USB=$3
+       shift
+       shift
+       ;;
+    -iso)
+       ISO=$3
+       shift
+       shift
+       ;;
+    -kvm)
+       KVM=$3
+       shift
+       shift
+       ;;
+    *)  # unrecognized option
+       echo remaster: unknown option: $2
+       exit 1
+       ;;
+  esac
+done
+UBUNTU_VERSION=$2
+# iso volume labels can have at most 32 characters
+IMAGE_NAME=${3:0:32}
+SOURCE_DEB=$4
+INSTALL_DEB=$5
+PORT=$6
+
+echo $UBUNTU_VERSION | grep -q iso
+if [ "$?" -eq "0" ]; then
+    echo "remove the iso extension from the ubuntu version"
+  exit 1
+fi
+
+SSH="ssh -q -o StrictHostKeyChecking=no -o ConnectTimeout=500 root@localhost"
+SCP="scp -q -o StrictHostKeyChecking=no -o ConnectTimeout=500"
+REMASTER=/usr/bin/remaster_ubuntu.sh
+
+function check_root ()
+{
+  if [[ $EUID -ne 0 ]]; then
+     echo "This part of the script must be run as root" 1>&2
+     exit 1
+  fi
+}
+
+function start_vm
+{
+  echo "*** starting virtual machine"
+  sudo $NICEKVM kvm -daemonize -hda $2 -m 800 -nographic -redir tcp:$1::22
+}
+
+function start_vm_snap
+{
+  echo "*** starting virtual machine"
+  sudo $NICEKVM -daemonize -drive file=$2,if=virtio,boot=on,snapshot=on -smp 4 -m 800 -nographic -redir tcp:$1::22
+}
+
+function stop_vm 
+{
+  echo "*** stopping virtual machine"
+  $SSH -p $1 "halt"
+}
+
+function get_lock
+{
+  echo "*** waiting for lock"
+  dotlockfile -p -r 1000 livecd$1.lock
+  if [ $? -ne 0 ]
+    then echo "Cannot get lock"
+         exit 1
+  fi
+}
+
+function release_lock
+{
+  echo "*** releasing lock"
+  dotlockfile -u livecd$1.lock
+}
+
+case $MODE in
+  setup)
+##########################################################################
+# setup for a new Ubuntu Version
+##########################################################################
+
+# based on remaster_ubuntu.sh extract
+
+# use special port not used for livecd creation
+PORT=2220
+check_root
+set -x
+cd $LIVECD_FOLDER
+get_lock $PORT
+echo "*** setting up virtual machine for $UBUNTU_VERSION"
+if [ $VIRT -eq 0 ]; then  
+  cp kvm/template.img kvm/temp$UBUNTU_VERSION.img
+  echo "*** mounting first partition of the image"
+  kpartx_out=$(sudo kpartx -av kvm/temp$UBUNTU_VERSION.img |head -n +1)
+  device=/dev/mapper/$(echo $kpartx_out |cut  -d " " -f 3)
+  sudo mount $device /mnt
+  echo "*** extracting LiveCD iso"
+  sudo /usr/bin/remaster_ubuntu.sh extract isos/$UBUNTU_VERSION.iso /mnt/root/$UBUNTU_VERSION
+  echo "nameserver $NAMESERVER" > /mnt/root/$UBUNTU_VERSION/edit/etc/resolv.conf
+  echo "*** ummounting first partition of the image"
+  umount /mnt
+  sudo kpartx -d kvm/temp$UBUNTU_VERSION.img
+else
+
+  cp kvm/template-jaunty.img kvm/temp$UBUNTU_VERSION.img
+  start_vm $PORT kvm/temp$UBUNTU_VERSION.img
+  echo "*** waiting for start of virtual machine"
+  sleep 30
+  echo "*** copying script and iso image"
+  $SCP -P $PORT /usr/bin/remaster_ubuntu.sh root@localhost:/root/
+  $SCP -P $PORT isos/$UBUNTU_VERSION.iso root@localhost:/root/
+  echo "*** extracting LiveCD iso"
+  $SSH -p $PORT "apt-get install -y rsync squashfs-tools genisoimage"
+  $SSH -p $PORT "/root/remaster_ubuntu.sh extract /root/$UBUNTU_VERSION.iso /root/$UBUNTU_VERSION"
+  $SSH -p $PORT "rm /root/$UBUNTU_VERSION.iso"
+  echo "*** setting up nameserver"
+  $SSH -p $PORT "echo \"nameserver $NAMESERVER\" > /root/$UBUNTU_VERSION/edit/etc/resolv.conf"
+  $SCP -P $PORT $CALL_DIR/remaster_ubuntu.sh root@localhost:
+  stop_vm $PORT
+fi
+mv kvm/temp$UBUNTU_VERSION.img kvm/$UBUNTU_VERSION.img
+chown $LIVECD_USER kvm/$UBUNTU_VERSION.img
+release_lock $PORT
+;;
+# TODO: keep old version of img
+# start kvm on new image and test it (wait for file system check)
+
+  create)
+##########################################################################
+# remaster script for virtual machine
+##########################################################################
+
+# based on remaster_ubuntu.sh regen
+
+# note that while remaster_ubuntu.sh uses a chroot environment, here
+# we additionally encapsulate things into a virtual machine. This is
+# necessary in order to prevent the server getting spoiled by new
+# processes that are started during installation of software inside
+# the chroot environment.
+
+# We have chosen kvm since it seems to be the fastest solution
+# We use kvm in the snapshot mode
+# advantages:
+# - VMs can be started quickly
+# disadvantages:
+# - download of packages is slow (600 KB/s from the same server)
+# - completed CD must be copied into the main file system
+# alternatively, we could use normal mode
+# advantages:
+# - download of packages is fast
+# - completed CD can be directly created in main filesystem
+#   by running remaster script on the host, not inside the VM
+#   the VM disk image needs to be mounted
+# disadvantages:
+# - VMs have to be copied before start
+#    (although we could restrict this to relevant parts, not all 10GB,
+#     and we could hold a cache with copies)
+# alternatively, use no VM, and kill all processes that have
+#   been started in the chroot environment
+
+cd $LIVECD_FOLDER
+if [ ! -f $SOURCE_DEB ]
+  then echo "$SOURCE_DEB not found"
+       exit 1
+fi
+echo $INSTALL_DEB | egrep -q "\.deb$"
+ISDEB=$?
+if [ $ISDEB -eq 0 ]; then
+  if [ ! -f $INSTALL_DEB ]
+    then echo "$INSTALL_DEB not found"
+         exit 1
+  fi
+fi
+if [ ! -f kvm/$UBUNTU_VERSION.img ]
+  then echo "kvm/$UBUNTU_VERSION.img not found"
+       exit 1
+fi
+# needed to prevent errors with apt-get update
+export LANG=C
+# propagate errors
+set -e
+set -x
+get_lock $PORT
+#echo "*** copying virtual machine"
+# special command for this server
+#sudo chmod-sdx6
+#dd if=kvm/$UBUNTU_VERSION.img of=$VM_DEVICE
+start_vm_snap $PORT kvm/$UBUNTU_VERSION.img
+# kvm/$UBUNTU_VERSION.img
+echo "*** waiting for start of virtual machine"
+#sleep 10
+
+$SSH -p $PORT "echo \"nameserver $NAMESERVER\" > /root/$UBUNTU_VERSION/edit/etc/resolv.conf"
+$SSH -p $PORT "cat /root/$UBUNTU_VERSION/edit/etc/resolv.conf"
+echo "*** adding new sources and keys, using $SOURCE_DEB"
+$SCP -P $PORT $SOURCE_DEB root@localhost:/root/$UBUNTU_VERSION/edit/
+SOURCE=`basename $SOURCE_DEB`
+$SSH -p $PORT "chroot /root/$UBUNTU_VERSION/edit gdebi -n $SOURCE"
+$SSH -p $PORT "rm /root/$UBUNTU_VERSION/edit/$SOURCE"
+# apt-get update not needed - this is already done by the deb
+echo "*** setting debconf options"
+$SSH -p $PORT "chroot /root/$UBUNTU_VERSION/edit sed -i 's/Templates: templatedb/Templates: templatedb\nFrontend: readline\nPriority: critical/' /etc/debconf.conf"
+echo "*** configuring sources.list for apt-proxy"
+$SSH -p $PORT "cp /root/$UBUNTU_VERSION/edit/etc/apt/sources.list . ; chroot /root/$UBUNTU_VERSION/edit sed -i 's/http:\/\//http:\/\/$APT_PROXY:3142\//' /etc/apt/sources.list; chroot /root/$UBUNTU_VERSION/edit apt-get update"
+set +e
+$SSH -p $PORT "chroot /root/$UBUNTU_VERSION/edit mount -t proc none /proc; chroot /root/$UBUNTU_VERSION/edit mount -t sysfs none /sys"
+set -e
+if [ $ISDEB -eq 0 ]; then
+  echo "*** installing deb package $INSTALL_DEB"
+  INSTALL=`basename $INSTALL_DEB`
+  $SCP -P $PORT $INSTALL_DEB root@localhost:/root/$UBUNTU_VERSION/edit/
+  $SSH -p $PORT "chroot /root/$UBUNTU_VERSION/edit gdebi -n $INSTALL"
+  $SSH -p $PORT "rm /root/$UBUNTU_VERSION/edit/$INSTALL"
+else
+  echo "*** installing package $INSTALL_DEB from repository"
+  $SSH -p $PORT "chroot /root/$UBUNTU_VERSION/edit apt-get install -y --force-yes $INSTALL_DEB"
+fi
+# removed upgrade since some upgrades require interaction
+#$SSH -p $PORT "chroot /root/$UBUNTU_VERSION/edit apt-get -y upgrade"
+
+echo "*** reverting special settings"
+$SSH -p $PORT "cp sources.list /root/$UBUNTU_VERSION/edit/etc/apt/"
+$SSH -p $PORT "chroot /root/$UBUNTU_VERSION/edit sed -i -r 's/Frontend: readline|Priority: critical//' /etc/debconf.conf; chroot /root/$UBUNTU_VERSION/edit sh -c \"export LANG=C; apt-get update\"; rm /root/$UBUNTU_VERSION/edit/etc/resolv.conf"
+
+# create iso
+#if [ $VIRT -eq 0 ]; then
+#  # no virtualization needed: create iso directly on the host
+#  stop_vm $PORT
+##  CMD="sudo $REMASTER regen /root/$UBUNTU_VERSION $IMAGE_NAME $ISO kvm/$UBUNTU_VERSION.img $LIVECD_USER"
+#  CMD="sudo $REMASTER regen /root/$UBUNTU_VERSION $IMAGE_NAME $ISO kvm/$UBUNTU_VERSION.img $LIVECD_USER"
+#  echo "*** now executing the following command:"
+#  echo $CMD
+#  $CMD
+#else
+  if [ "x"$ISO != "x" -o "x"$USB != "x" ]
+    then echo "creating iso image"
+    # virtualization needed: create iso in the VM
+    $SSH -p $PORT "apt-get install -y squashfs-tools genisoimage"
+    $SCP -P $PORT $CALL_DIR/remaster_ubuntu.sh root@localhost:
+    $SSH -p $PORT "/root/remaster_ubuntu.sh regen /root/$UBUNTU_VERSION $IMAGE_NAME /root/new.iso"
+  fi
+  if [ "x"$ISO != "x" ]
+    then echo "*** copying iso from virtual machine to main file system"
+    $SCP -P $PORT root@localhost:/root/new.iso $ISO
+  fi
+  size=$($SSH -p $PORT "df -Pk | grep vda" | sed 's/  */ /g' | cut -d " " -f 3)
+  if [ "x"$KVM != "x" ]
+    then echo "creating kvm image"
+      qemu-img create -f raw $KVM ${size}k
+      sudo create-mount-image $KVM ${size}
+      # TODO: do the following via dd when starting kvm without snapshot option
+      $SCP -rp -P $PORT "/root/$UBUNTU_VERSION/edit/*" /remaster
+      sudo umount-image $KVM
+  fi
+  stop_vm $PORT
+#fi
+release_lock $PORT
+set +x
+;;
+
+  *)
+  echo "usage:"
+  echo "remaster setup <ubuntu-version>"
+  echo "remaster setup -v <ubuntu-version>"
+  echo "remaster create <ubuntu-version> <isofile> <cdname> <deb1> <deb2>"
+  echo "remaster create -v <ubuntu-version> <isofile> <cdname> <deb1> <deb2>"
+  ;;
+
+esac
+
+exit 0
+
+
+##########################################################################
+# prepare server for live cd; generate VM master template
+##########################################################################
+# for manual execution only!
+# install kvm
+sudo apt-get install kvm
+sudo usermod -aG kvm communtu
+mkdir -p ~/livecd/kvm
+cd ~/livecd/kvm
+qemu-img create -f raw template.img 10G
+kvm -hda template.img -cdrom ~/livecd/isos/ubuntu-9.10-server-amd64.iso -m 400 -vnc :1 -boot d
+
+# NOW START VNC CLIENT AND MANUALLY INSTALL UBUNTU, user livecd, ssh is the only server that we need
+# (this could be automated using preseed ...)
+kvm -daemonize -hda template.img -m 400 -nographic -redir tcp:2222::22 
+
+# INSIDE THE VIRTUAL MACHINE, set root password (using sudo passwd)
+ssh -p 2222 -o StrictHostKeyChecking=no livecd@localhost "sudo passwd"
+
+# enable public key authentification
+ssh-keygen -t rsa
+ssh-copy-id -i ~/.ssh/id_rsa.pub "-p 2222 root@localhost"
+sudo ssh-keygen -t rsa
+sudo ssh-copy-id -i /root/.ssh/id_rsa.pub "-p 2222 root@localhost"
+
+# stop VM
+ssh -p 2222 -o StrictHostKeyChecking=no root@localhost "halt"
+
