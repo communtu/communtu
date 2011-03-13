@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# (c) 2008-2011 by Allgemeinbildung e.V., Bremen, Germany
+# This file is part of Communtu.
+
+# Communtu is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# Communtu is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero Public License for more details.
+
+# You should have received a copy of the GNU Affero Public License
+# along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
+
+# dump minimized database for later use with rake db:load
+
+echo "script for minimizing and dumping your development database into db/data.yml"
+echo "use RAILS_ENV=production|development|test to select a database (default: development)"
+echo
+echo "this will erase part of your database!"
+while true
+do
+  echo -n " continue? (y/n): "
+  read CONFIRM
+  case $CONFIRM in
+    y|Y) break ;;
+    n|N) echo "abort"; exit 1 ;;
+    *) echo "invalid answer"
+  esac
+done
+rake db:minimize $1
+rake db:dump $1

@@ -243,8 +243,8 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.boolean  "usb",             :default => false
     t.integer  "vm_pid"
     t.string   "vm_hda"
-    t.integer  "Downloaded"
-    t.boolean  "published"
+    t.integer  "downloaded",      :default => 0
+    t.boolean  "published",       :default => false
   end
 
   create_table "message_copies", :force => true do |t|

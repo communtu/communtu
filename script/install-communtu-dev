@@ -65,11 +65,7 @@ echo
 sed -i "s/password: /password: $passwd/" config/database.yml
 sed -i "s/root/$dbuser/" config/database.yml
 # setup database
-echo "copying database from server, please enter backup server password"
-set -x
-scp -P 22 $backupdbplace/db.backup.gz .
-gunzip -c db.backup.gz | mysql -u $dbuser --password=$passwd communtu
-set +x
+rake db:load
 mkdir log
 echo
 echo "now try:"
