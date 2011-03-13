@@ -63,6 +63,7 @@ de:
   choose_parent: Wähle einen Parent aus!
   circular_dependency: 'Fehler: zirkuläre Abhängigkeiten zwischen Bündeln'
   community_title: ubuntuusers
+  communtu_is_opensource: "Communtu ist in {{rails}} geschrieben. Der Quellcode von Communtu open source; er steht unter der {{agpl}} und ist über {{github}} verfügbar. Communtu hat auch einen Bugtracker: {{trac}}."
   compose_new_message: neue Nachricht schreiben
   confirm_new_passwd: Neues Passwort bestätigen
   conny_picture: Portrait von Conny Communtu
@@ -423,6 +424,7 @@ de:
   server_status: Status des Servers
   settings: Einstellungen
   show: Anzeigen
+  source_code: Quellcode
   sources: Quellen
   spam_user_delete: Alle Spam-User gelöscht.
   start: Start
