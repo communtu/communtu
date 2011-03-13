@@ -59,7 +59,7 @@ class MyMailer < ActionMailer::Base
 
   def livecd_failed(user,name)
     @cdname      = name
-    @recipients  = "#{user.email}"
+    @recipients  = "#{user.email}, technik@communtu.org"
     @from        = "info@communtu.org"
     @subject     = "[Communtu] " + I18n.t(:livecd_email_failed)
     @sent_on     = Time.now
