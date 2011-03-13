@@ -1,6 +1,19 @@
 == Welcome to Communtu
 
-Communtu is a Web2.0 internet platform which goal is to ease access to Ubuntu-Linux. The needed knowledge on how to set up and configure a system is taken over by experienced Ubuntu users and contributed by Communtu. The user is able to create an own setup of programs and then download and install the selected software as a regular deb-file (metapackage). The installation of several systems with the same software compilation is made really easy as Communtu automatically adds the required sources and corresponding GPG-keys to the system. Upon popular request by the community, Communtu now offers the possibility to create and download your individual Ubuntu DVDs, with the software you selected. 
+Communtu is a Web2.0 internet platform which goal is to ease access to
+Ubuntu-Linux. The needed knowledge on how to set up and configure a
+system is taken over by experienced Ubuntu users and contributed by
+Communtu. The user is able to create an own setup of programs and then
+download and install the selected software as a regular deb-file
+(metapackage). The installation of several systems with the same
+software compilation is made really easy as Communtu automatically
+adds the required sources and corresponding GPG-keys to the
+system. Upon popular request by the community, Communtu now offers the
+possibility to create and download your individual Ubuntu DVDs, with
+the software you selected.
+
+For questions, mail to info@communtu.org or visit us at IRC channel 
+irc.freenode.net #communtu and #de-communtu
 
 == Communtu is written in Ruby on Rails
 
@@ -32,7 +45,7 @@ link:files/vendor/rails/actionpack/README.html.
 == Getting Started
 
 1. At the command prompt, cd into communtu and start script/install-communtu-dev to install all necessary things
-2. Start the web server: <tt>script/server</tt> (run with --help for options)
+2. Start the web server: script/server (run with --help for options)
 3. Go to http://localhost:3000/ 
 
 
