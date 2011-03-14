@@ -3838,7 +3838,7 @@ msgstr "back to the package-list"
 
 #: communtu_is_opensource
 msgid "Communtu ist in {{rails}} geschrieben. Der Quellcode von Communtu open source; er steht unter der {{agpl}} und ist über {{github}} verfügbar. Communtu hat auch einen Bugtracker: {{trac}}."
-msgstr "Communtu is written in {{rails}}. Communtu's source code is open source, published under the {{agpl}} and can be accessed via {{github}}. Communtu also has a bug tracking system: {{trac}}.source code is open source, published under the {{agpl}} and can beaccessed via {{github}}. Communtu also has a bug tracking system:{{trac}}."
+msgstr "Communtu is written in {{rails}}. Communtu's source code is open source, published under the {{agpl}} and can be accessed via {{github}}. Communtu also has a bug tracking system: {{trac}}."
 
 #: save_or_delete_bundle
 msgid "Bitte erst die im Bündel-Editor getroffene Bündel-Auswahl speichern oder löschen"

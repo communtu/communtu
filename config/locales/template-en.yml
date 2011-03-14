@@ -971,7 +971,7 @@ en:
   view_home_home_30: "Bundle:"
   view_layouts_application_18: no new messages
   save_or_delete_bundle: Please save or delete the selection in the bundle editor.
-  communtu_is_opensource: "Communtu is written in {{rails}}. Communtu's source code is open source, published under the {{agpl}} and can be accessed via {{github}}. Communtu also has a bug tracking system: {{trac}}.source code is open source, published under the {{agpl}} and can beaccessed via {{github}}. Communtu also has a bug tracking system:{{trac}}."
+  communtu_is_opensource: "Communtu is written in {{rails}}. Communtu's source code is open source, published under the {{agpl}} and can be accessed via {{github}}. Communtu also has a bug tracking system: {{trac}}."
   package_list: back to the package-list
   view_home_home_31: Here you can choose the topics in detail, download single programs or complete bundles and you can create and manage your own bundles.
   view_layouts_application_19: https://www.paypal.com/en_GB/i/btn/btn_donate_LG.gif

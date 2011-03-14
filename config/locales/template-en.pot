@@ -2822,7 +2822,7 @@ msgstr ""
 msgid "back to the package-list"
 msgstr ""
 #: communtu_is_opensource
-msgid "Communtu is written in {{rails}}. Communtu's source code is open source, published under the {{agpl}} and can be accessed via {{github}}. Communtu also has a bug tracking system: {{trac}}.source code is open source, published under the {{agpl}} and can beaccessed via {{github}}. Communtu also has a bug tracking system:{{trac}}."
+msgid "Communtu is written in {{rails}}. Communtu's source code is open source, published under the {{agpl}} and can be accessed via {{github}}. Communtu also has a bug tracking system: {{trac}}."
 msgstr ""
 #: save_or_delete_bundle
 msgid "Please save or delete the selection in the bundle editor."
