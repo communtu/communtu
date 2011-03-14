@@ -43,9 +43,8 @@
           <li><%= check_box_tag("usb") %> <%= t(:create_usb_image)%></li></ul><br />
       <% end %>
       <%= submit_tag(if usb then t(:liveusb_start) else t(:livecd_start) end) %></p>
-      <p><%=t(:view_user_profiles__installation_33)%>
-      <%= link_to (t(:sources), "/download/sources")%>
-      <%=t(:view_user_profiles__installation_34)%>
+      <p>
+      <%=t(:view_user_profiles__installation_34, :sources => link_to (t(:sources), "/download/sources"))%>
       </p>
       </form>
   <% else %>
