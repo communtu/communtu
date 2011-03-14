@@ -410,34 +410,6 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
 
   add_index "translations", ["translatable_id", "language_code"], :name => "translatable_id", :unique => true
 
-  create_table "umfrage_packages", :force => true do |t|
-    t.integer  "umfrage_id"
-    t.string   "package"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "umfrage_sources", :force => true do |t|
-    t.integer  "umfrage_id"
-    t.string   "source"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "umfrages", :force => true do |t|
-    t.boolean  "einsteiger"
-    t.boolean  "freak"
-    t.boolean  "sammler"
-    t.boolean  "musik"
-    t.boolean  "video"
-    t.boolean  "netz"
-    t.boolean  "grafik"
-    t.boolean  "spiele"
-    t.string   "email"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "user_packages", :force => true do |t|
     t.integer  "user_id"
     t.integer  "package_id"

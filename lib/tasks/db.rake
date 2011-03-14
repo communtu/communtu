@@ -2,13 +2,13 @@ namespace :db do
   desc 'Minimize database, for creating database db/data.yml for test purposes.'
   task :minimize  => :environment do
       puts "Shrinking database, this will take some time"
-      [Article,Deb,Cart,CartContent,Comment,Folder,Info,Message,MessageCopy,Userlog].each do |c|
+      [Article,Deb,Cart,CartContent,Comment,Folder,Info,Message,MessageCopy,UserPackage,Userlog].each do |c|
         puts "removing all records for #{c.to_s}"
         c.destroy_all
       end
       puts "removing most bundles"
       bundles = Metapackage.all
-      bundles.remove(Metapackage.first)
+      bundles.delete(Metapackage.first)
       bundles.each do |b|
         b.destroy
       end      

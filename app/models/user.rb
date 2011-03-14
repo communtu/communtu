@@ -82,7 +82,7 @@ end
   has_many :folders
  #Messager dependencies END
  
-  has_many :permissions
+  has_many :permissions, :dependent => :destroy
   has_many :roles, :through => :permissions
   has_many :user_profiles, :dependent => :destroy
   belongs_to :distribution

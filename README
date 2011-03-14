@@ -44,10 +44,14 @@ link:files/vendor/rails/actionpack/README.html.
 
 == Getting Started
 
-1. At the command prompt, cd into communtu and start script/install-communtu-dev to install all necessary things
-2. Start the web server: script/server (run with --help for options)
-3. Go to http://localhost:3000/ 
-
+1. At the command prompt, cd into communtu and start script/install-communtu-dev to install 
+   all necessary things
+2. in config/environment.rb, change the line (near the end) setting config.i18n.default_locale
+   to your prefered language
+3. Start the web server: script/server (run with --help for options)
+4. Go to http://localhost:3000/ 
+5. Login. The test database shipped with Communtu has two users: admin (with admin privileges) and 
+   test (a normal users). The password is the same as the login.
 
 == Web Servers
 
