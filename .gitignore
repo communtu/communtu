@@ -3,4 +3,5 @@ tmp
 *~
 .project
 nbproject
+config/database.yml
 

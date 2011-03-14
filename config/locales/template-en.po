@@ -3,12 +3,12 @@ msgstr ""
 "Project-Id-Version: Communtu 0.2\n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
-"Last-Translator: Timo Denissen <timo@communtu.de>\n"
+"Last-Translator: Till Mossakowski <till@communtu.de>\n"
 "Language-Team: Communtu <info@communtu.de>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 "Plural-Forms: n != 1\n"
 "X-Poedit-Language: German\n"
 "X-Poedit-Country: GERMANY\n"
@@ -117,7 +117,8 @@ msgid "Wir können dir auch helfen diese Programmiersprache zu lernen. Also meld
 msgstr "We can also help you to learn this programming-language. You just have to contact "
 
 #: view_user_profiles__installation_17
-msgid "Link einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer öffnen - wenn kein Prorgammdialog erscheint, wurde die Datei auf deinen Rechner heruntergeladen. Dort kannst du sie mit Doppelklick starten."
+#, fuzzy
+msgid "Diesen Link einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer öffnen - wenn kein Prorgammdialog erscheint, wurde die Datei auf deinen Rechner heruntergeladen. Dort kannst du sie mit Doppelklick starten."
 msgstr "Just click on the link and open the file with the recommended package-installer - if no dialog-window pops up the file has been saved on your harddisk. You can open it with a double click."
 
 #: view_roles_index_2
@@ -353,8 +354,14 @@ msgid "Live-CD/DVD erstellen"
 msgstr "Create Live-CD/DVD"
 
 #: view_user_profiles__installation_31
-msgid "Die Communtu-Metapakete können auch mittles {{synaptic}} (unter System -> Systemverwaltung) angezeigt, installiert und deinstalliert werden. Änderungen an Bündeln werden über die Ubuntu-Paketverwaltung automatisch eingespielt."
+#, fuzzy
+msgid "Alle Ubuntu-Pakete und Communtu-Bündel können auch mittles {{synaptic}} (unter System -> Systemverwaltung) angezeigt, installiert und deinstalliert werden. Änderungen an Bündeln werden über die Ubuntu-Paketverwaltung automatisch eingespielt."
 msgstr "The Communtu-metapackages can be shown, installed and uninstalled using {{synaptic}} (go to \"System\" --> \"Administration\"). Updates of the programs inside the bundle are installed via the Ubuntu-updatemanager automatically."
+
+#: downloads
+#, fuzzy
+msgid "Downloads"
+msgstr "Download:"
 
 #: create_usb_image
 msgid "<a href=\"http://ww.ubuntuusers.de/wiki/Live-USB\">USB-Stick-Image</a> erstellen"
@@ -396,10 +403,6 @@ msgstr "download"
 msgid "auf Synchronisation der Repositories warten"
 msgstr "waiting for syncronisation with repositories"
 
-#: view_user_profiles__installation_33
-msgid "Diese"
-msgstr "These"
-
 #: view_metapackages_show_0
 msgid "Bündel erstellt von "
 msgstr "Bundle created by "
@@ -413,7 +416,8 @@ msgid "Mehr ..."
 msgstr "More ..."
 
 #: view_user_profiles__installation_34
-msgid "werden zu dem System hinzugefügt."
+#, fuzzy
+msgid "Liste der {{sources}}, die zu deinem System hinzugefügt werden."
 msgstr "will be added to our system."
 
 #: controller_passwords_7
@@ -721,7 +725,8 @@ msgid "Diese Liste ist für allgemeine Ankündigungen aus den Communtu Team für
 msgstr "This list is intended for general announcements from the Communtu team to the users. The frequency is a little higher than once a week. Posts will be collected in an"
 
 #: used_in_bundles
-msgid "Wird bei Communtu in folgenden Bündeln benutzt:"
+#, fuzzy
+msgid "Wird bei Communtu in folgenden veröffentlichten Bündeln benutzt:"
 msgstr "Is used at Communtu in these bundles:"
 
 #: view_user_mailer_activation_0
@@ -903,6 +908,10 @@ msgstr "To start, choose <b>Download</b>."
 #: view_home_derivatives_17
 msgid "http://de.wikipedia.org/wiki/Linux_Mint"
 msgstr "http://en.wikipedia.org/wiki/Linux_Mint"
+
+#: no_package_selected
+msgid "Kein Paket ausgewählt"
+msgstr ""
 
 #: community_title
 msgid "ubuntuusers"
@@ -1518,6 +1527,11 @@ msgstr "How can I rate a bundle?"
 msgid "Weitere Informationen"
 msgstr "further information"
 
+#: choice_of_package
+#, fuzzy
+msgid "Auswahl des Pakets"
+msgstr "Package description"
+
 #: view_home_derivatives_48
 msgid " - minimale Server-Version, vor allem für Virtualisierung geeignet.."
 msgstr " - minimal server-version, suitable for virtualizations."
@@ -1746,14 +1760,6 @@ msgstr "Recreate Live-CD/DVD"
 msgid "von 5 Sternen"
 msgstr "of 5 stars"
 
-#: view_home_derivatives_56
-msgid "http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix"
-msgstr "http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix (German)"
-
-#: view_home_faq_16
-msgid "Gehe dazu bitte auf den Menüpunkt \"Programme suchen\". Dort bekommst du eine Auswahl von Programmen. Wenn du dein gewünschtes Programm gefunden hast, kannst du dieses durch Klicken auf das Installationssymbol installieren. Es ist möglich, dass du vorher noch auf \"Quellen hinzufügen\" klicken musst, da es sein kann, dass das Programm in einer Quelle verfügabr ist, die deinem System noch nicht bekannt ist."
-msgstr "To install a program, go to \"Search programs\" and you get a list of all programs. When you find the program you are looking for, you just have to click on the installation-icon. It could be that you have to add the repository of that program first. To do so, click on \"Add sources\" and Communtu will add the sources to your system."
-
 #: view_my_mailer_repo_0
 msgid ""
 "Hallo, \n"
@@ -1764,9 +1770,21 @@ msgstr ""
 "\n"
 "a suggestion for a new repository has been made at en.communtu.org:"
 
+#: view_home_derivatives_56
+msgid "http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix"
+msgstr "http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix (German)"
+
+#: view_home_faq_16
+msgid "Gehe dazu bitte auf den Menüpunkt \"Programme suchen\". Dort bekommst du eine Auswahl von Programmen. Wenn du dein gewünschtes Programm gefunden hast, kannst du dieses durch Klicken auf das Installationssymbol installieren. Es ist möglich, dass du vorher noch auf \"Quellen hinzufügen\" klicken musst, da es sein kann, dass das Programm in einer Quelle verfügabr ist, die deinem System noch nicht bekannt ist."
+msgstr "To install a program, go to \"Search programs\" and you get a list of all programs. When you find the program you are looking for, you just have to click on the installation-icon. It could be that you have to add the repository of that program first. To do so, click on \"Add sources\" and Communtu will add the sources to your system."
+
 #: free_disk_space
 msgid "Freier Plattenplatz (root / home / isos)"
 msgstr "Free disk space (root / home / isos)"
+
+#: view_my_mailer_repo_1
+msgid "Folgende Begründung wurde angegeben:"
+msgstr "The following reason has been stated:"
 
 #: settings
 msgid "Einstellungen"
@@ -1783,10 +1801,6 @@ msgstr "edit architecture"
 #: view_home_faq_17
 msgid "Wie kann ich einen Programmvorschlag einbringen?"
 msgstr "How can I suggest new programs?"
-
-#: view_my_mailer_repo_1
-msgid "Folgende Begründung wurde angegeben:"
-msgstr "The following reason has been stated:"
 
 #: helper_distributions_0
 msgid "free"
@@ -2056,10 +2070,6 @@ msgstr "You can also take a look of which packages a derivative consists."
 msgid "Der Name der LiveCD/DVD darf nur aus Buchstaben, Zahlen, _ und - bestehen"
 msgstr "The name of the Live-CD/DVD can contain only letters, numbers, _ and -."
 
-#: passwd_no_match
-msgid "Das neue Passwort stimmt nicht mit der Bestätigung überein."
-msgstr "The new password does not comply with the verification."
-
 #: view_my_mailer_mailerror_0
 msgid ""
 "Hallo,  \n"
@@ -2069,6 +2079,10 @@ msgstr ""
 "Hello, \n"
 " an error was reported on www.communtu.de. \n"
 "The user would really like to be notified when the error has been fixed."
+
+#: passwd_no_match
+msgid "Das neue Passwort stimmt nicht mit der Bestätigung überein."
+msgstr "The new password does not comply with the verification."
 
 #: tested_bundle
 msgid "Bündel die getestet sind:"
@@ -2183,7 +2197,8 @@ msgid "Es gab ein Problem mit der Registrierung."
 msgstr "An error occured while registering."
 
 #: more_about_sources
-msgid "(Mehr Informationen zum Thema Schlüssel und Quellen in den Faqs)"
+#, fuzzy
+msgid "Mehr Informationen zum Thema Schlüssel und Quellen in den Faqs"
 msgstr "(More information about Keys and Sources in the FAQ)"
 
 #: view_sent_index_3
@@ -2446,6 +2461,10 @@ msgstr "Message:"
 msgid "Passwort zurücksetzen"
 msgstr "reset password"
 
+#: view_packages_edit_0
+msgid "Paket bearbeiten"
+msgstr "Edit package"
+
 #: view_metapackages_finish_migrate_1
 msgid " nach "
 msgstr " to"
@@ -2459,10 +2478,6 @@ msgstr ""
 "Hello, \n"
 "\n"
 "a feedback from en.communtu.org has arrived. The subject is:"
-
-#: view_packages_edit_0
-msgid "Paket bearbeiten"
-msgstr "Edit package"
 
 #: view_layouts_application_9
 msgid "Abmelden"
@@ -2584,9 +2599,18 @@ msgstr "show user"
 msgid "Ich stimme zu, die Bündel Information unter der <a href=\"http://www.gnu.de/documents/gpl.de.html\">GNU General public license</a> (Version 2.0 oder höher) zu veröffentlichen."
 msgstr "I accept to publish the bundle information under the <a href=\"http://www.gnu.de/documents/gpl.de.html\">GNU General public license</a> (Version 2.0 or higher)."
 
+#: install_package_steps
+#, fuzzy
+msgid "Die Installation des Pakets {{name}} geschieht in mehreren Schritten, siehe rechts."
+msgstr "Installation of the package in two steps:"
+
 #: view_home_donate
 msgid "Für Communtu spenden"
 msgstr "Make a donation for Communtu"
+
+#: best_livecds
+msgid "Beliebteste Live-CD"
+msgstr ""
 
 #: view_roles_new_0
 msgid "Neue Rolle"
@@ -2656,6 +2680,11 @@ msgstr "http://encommuntu.wordpress.com"
 msgid "Nachrichten"
 msgstr "Message"
 
+#: no_bundle_selected
+#, fuzzy
+msgid "Kein Bündel ausgewählt"
+msgstr "Choose bundle"
+
 #: view_metapackages__metalist_20
 msgid "<option>0 Bündel ausgewählt</option>"
 msgstr "<option>0 bundles selected</option>"
@@ -2672,6 +2701,10 @@ msgstr "Save selection"
 msgid "CD-Image"
 msgstr "CD-Image"
 
+#: view_packages__packagelist_1
+msgid "Nur&nbsp;Programme:"
+msgstr "Programs&nbsp;only:"
+
 #: view_categories_index_0
 msgid "Kategorien-Übersicht"
 msgstr "Category-overview"
@@ -2680,17 +2713,13 @@ msgstr "Category-overview"
 msgid "Du kannst auch Bündel auswählen und daraus einen Live-USB-Stick erstellen."
 msgstr "You can also choose bundles and create a Live USB key from it."
 
-#: view_packages__packagelist_1
-msgid "Nur&nbsp;Programme:"
-msgstr "Programs&nbsp;only:"
+#: view_packages__packagelist_2
+msgid "Suche:"
+msgstr "Search:"
 
 #: eg
 msgid "z.B."
 msgstr "e.g."
-
-#: view_packages__packagelist_2
-msgid "Suche:"
-msgstr "Search:"
 
 #: cant_debianized
 msgid "Bitte gib dem Bündel einen englischen Titel und eine englische Beschreibung."
@@ -2796,6 +2825,11 @@ msgstr "Live-CD creation failed"
 msgid "Paket sofort installieren"
 msgstr "install package instantly"
 
+#: choice_of_bundle
+#, fuzzy
+msgid "Auswahl des Bündels"
+msgstr "New bundle"
+
 #: create_livecd_subtitle1
 msgid "Erstellen über die Downloadseite"
 msgstr "Creation using the download interface"
@@ -2811,6 +2845,10 @@ msgstr "Creation with bundle"
 #: view_passwords_edit_0
 msgid "    Passwort:"
 msgstr "    Password:"
+
+#: source_code
+msgid "Quellcode"
+msgstr "Source code"
 
 #: link_community_title
 msgid "Externer Link: zu den Seiten von ubuntuusers"
@@ -2920,13 +2958,13 @@ msgstr "In order to install software, you have to choose at least one package or
 msgid "Paket-Version"
 msgstr "package-version"
 
-#: offer_new_category
-msgid "Vorschlag einer neuen Kategorie"
-msgstr "Suggestion of a new category"
-
 #: view_packages__deps_1
 msgid "          Nur für "
 msgstr "          Only for "
+
+#: offer_new_category
+msgid "Vorschlag einer neuen Kategorie"
+msgstr "Suggestion of a new category"
 
 #: view_derivatives_show_2
 msgid "Dialog-Programm:"
@@ -3116,13 +3154,13 @@ msgstr "Receive a message-icon for new messages"
 msgid "Debian-Pakete"
 msgstr "Debian-packages"
 
-#: controller_debs_1
-msgid "Deb erzeugt."
-msgstr "Deb created."
-
 #: view_packages_edit_10
 msgid "Beschreibung des Pakets"
 msgstr "Package description"
+
+#: controller_debs_1
+msgid "Deb erzeugt."
+msgstr "Deb created."
 
 #: please_create_cd
 msgid "Bitte erst ein iso erstellen"
@@ -3179,6 +3217,10 @@ msgstr "ISO images (for Live-CDs/DVDs and USB keys) created so far:"
 #: create_livecd_title
 msgid "Wie erstelle ich eine Live-CD?"
 msgstr "How do I create a Live-CD?"
+
+#: install_bundle_steps
+msgid "Die Installation des Bündels {{name}} geschieht in mehreren Schritten, siehe rechts."
+msgstr ""
 
 #: create_livecd_downloadpage
 msgid "Hierfür wählt man die unter <b>Download</b> die Kategorien und die Bündel aus welche man installieren möchte. Mit einem Klick auf „Live-CD/DVD“ in der Menüführung kommt man zum Dialogfeld für die Live-CD. Hier muss noch ein Name eingetragen werden und die Live-CD/DVD mit <b>Live-CD/DVD erstellen</b> erstellt werden."
@@ -3454,6 +3496,10 @@ msgstr " installation via shell-script"
 msgid "Distribution"
 msgstr "Distribution"
 
+#: view_packages__search_0
+msgid "Suche nach Paketen"
+msgstr "Search for packages"
+
 #: link_community
 msgid "http://www.ubuntuusers.de"
 msgstr "http://ubuntuforums.org"
@@ -3473,10 +3519,6 @@ msgstr "Extract from the logfile"
 #: lib_system_0
 msgid "Du musst eingeloggt sein, um dieses Feature zu benutzen. Geht auch als Gastbenutzer, hierfür muss rechts oben auf \"Gast\" geklickt werden."
 msgstr "You need to be logged in to use this feature. Using this feature is also possible as a guest, logging in as guest is possible with the \"Guest\"-link in the top right corner."
-
-#: view_packages__search_0
-msgid "Suche nach Paketen"
-msgstr "Search for packages"
 
 #: info_new
 msgid "neue News anlegen"
@@ -3794,6 +3836,10 @@ msgstr "Here you can choose the topics in detail, download single programs or co
 msgid "zurück zur Paketliste"
 msgstr "back to the package-list"
 
+#: communtu_is_opensource
+msgid "Communtu ist in {{rails}} geschrieben. Der Quellcode von Communtu open source; er steht unter der {{agpl}} und ist über {{github}} verfügbar. Communtu hat auch einen Bugtracker: {{trac}}."
+msgstr "Communtu is written in {{rails}}. Communtu's source code is open source, published under the {{agpl}} and can be accessed via {{github}}. Communtu also has a bug tracking system: {{trac}}.source code is open source, published under the {{agpl}} and can beaccessed via {{github}}. Communtu also has a bug tracking system:{{trac}}."
+
 #: save_or_delete_bundle
 msgid "Bitte erst die im Bündel-Editor getroffene Bündel-Auswahl speichern oder löschen"
 msgstr "Please save or delete the selection in the bundle editor."
@@ -3890,6 +3936,8 @@ msgstr "BUNDLE"
 msgid "Installieren"
 msgstr "Install"
 
+#~ msgid "Diese"
+#~ msgstr "These"
 #~ msgid "Installation vorbereiten: Voreinstellungen eingeben"
 #~ msgstr "Change settings"
 #~ msgid "Bündel die experimentiell und ungetested sind:"

@@ -268,6 +268,9 @@ msgstr ""
 #: view_user_profiles__installation_31
 msgid "The Communtu-metapackages can be shown, installed and uninstalled using {{synaptic}} (go to \"System\" --> \"Administration\"). Updates of the programs inside the bundle are installed via the Ubuntu-updatemanager automatically."
 msgstr ""
+#: downloads
+msgid "Download:"
+msgstr ""
 #: create_usb_image
 msgid "create <a href=\"http://en.wikipedia.org/wiki/Live-usb\">Live-USB image</a>"
 msgstr ""
@@ -303,9 +306,6 @@ msgid "Password changed."
 msgstr ""
 #: view_home_home_4
 msgid "More ..."
-msgstr ""
-#: view_user_profiles__installation_33
-msgid "These"
 msgstr ""
 #: wait_for_sync
 msgid "waiting for syncronisation with repositories"
@@ -675,6 +675,9 @@ msgid "To start, choose <b>Download</b>."
 msgstr ""
 #: view_home_derivatives_17
 msgid "http://en.wikipedia.org/wiki/Linux_Mint"
+msgstr ""
+#: no_package_selected
+msgid ""
 msgstr ""
 #: community_title
 msgid "Ubuntu Forums"
@@ -1110,6 +1113,9 @@ msgid "How can I rate a bundle?"
 msgstr ""
 #: view_user_profiles__profile_data_4
 msgid "further information"
+msgstr ""
+#: choice_of_package
+msgid "Package description"
 msgstr ""
 #: view_home_derivatives_48
 msgid " - minimal server-version, suitable for virtualizations."
@@ -1891,8 +1897,14 @@ msgstr ""
 #: view_metapackages_edit_gpl
 msgid "I accept to publish the bundle information under the <a href=\"http://www.gnu.de/documents/gpl.de.html\">GNU General public license</a> (Version 2.0 or higher)."
 msgstr ""
+#: install_package_steps
+msgid "Installation of the package in two steps:"
+msgstr ""
 #: view_home_donate
 msgid "Make a donation for Communtu"
+msgstr ""
+#: best_livecds
+msgid ""
 msgstr ""
 #: save
 msgid "Save"
@@ -1941,6 +1953,9 @@ msgid "Created bundles:"
 msgstr ""
 #: blog_link
 msgid "http://encommuntu.wordpress.com"
+msgstr ""
+#: no_bundle_selected
+msgid "Choose bundle"
 msgstr ""
 #: view_users_show_8
 msgid "Message"
@@ -2050,6 +2065,9 @@ msgstr ""
 #: view_packages_show_2
 msgid "install package instantly"
 msgstr ""
+#: choice_of_bundle
+msgid "New bundle"
+msgstr ""
 #: create_livecd_subtitle1
 msgid "Creation using the download interface"
 msgstr ""
@@ -2058,6 +2076,9 @@ msgid "None"
 msgstr ""
 #: create_livecd_subtitle2
 msgid "Creation with bundle"
+msgstr ""
+#: source_code
+msgid "Source code"
 msgstr ""
 #: view_passwords_edit_0
 msgid "    Password:"
@@ -2338,6 +2359,9 @@ msgstr ""
 #: create_livecd_title
 msgid "How do I create a Live-CD?"
 msgstr ""
+#: install_bundle_steps
+msgid ""
+msgstr ""
 #: create_livecd_downloadpage
 msgid "For this you choose the categories in the <b>Download</b> area that you want to install. With a click on \"Live-CD/DVD\" in the menu you can see a page where you can enter a name for your Live-CD. With a click on <b>Create Live-CD/DVD</b> the process will be started."
 msgstr ""
@@ -2542,6 +2566,9 @@ msgstr ""
 #: distribution
 msgid "Distribution"
 msgstr ""
+#: view_packages__search_0
+msgid "Search for packages"
+msgstr ""
 #: link_community
 msgid "http://ubuntuforums.org"
 msgstr ""
@@ -2556,9 +2583,6 @@ msgid "Extract from the logfile"
 msgstr ""
 #: lib_system_0
 msgid "You need to be logged in to use this feature. Using this feature is also possible as a guest, logging in as guest is possible with the \"Guest\"-link in the top right corner."
-msgstr ""
-#: view_packages__search_0
-msgid "Search for packages"
 msgstr ""
 #: info_new
 msgid "Create new news message"
@@ -2796,6 +2820,9 @@ msgid "Here you can choose the topics in detail, download single programs or com
 msgstr ""
 #: package_list
 msgid "back to the package-list"
+msgstr ""
+#: communtu_is_opensource
+msgid "Communtu is written in {{rails}}. Communtu's source code is open source, published under the {{agpl}} and can be accessed via {{github}}. Communtu also has a bug tracking system: {{trac}}.source code is open source, published under the {{agpl}} and can beaccessed via {{github}}. Communtu also has a bug tracking system:{{trac}}."
 msgstr ""
 #: save_or_delete_bundle
 msgid "Please save or delete the selection in the bundle editor."
