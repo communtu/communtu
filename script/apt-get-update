@@ -18,7 +18,9 @@
 # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
 
 RES=1
-while [[ $RES -ne 0 ]]; do
+CNT=10
+while [[ ($RES -ne 0) && ($CNT -ne 0) ]]; do
   sudo apt-get update
   RES=$?
+  CNT=$CNT-1
 done
