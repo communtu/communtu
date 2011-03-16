@@ -25,7 +25,7 @@ en:
   controller_accounts_4: Your account has already been activated. You can now log in.
   view_roles_index_1: "Assigned roles:"
   view_home_beteiligung_14: "We can also help you to learn this programming-language. You just have to contact "
-  view_user_profiles__installation_17: Just click on the link and open the file with the recommended package-installer - if no dialog-window pops up the file has been saved on your harddisk. You can open it with a double click.
+  view_user_profiles__installation_17: Just click on the link and open the file with the recommended packag -installer - if no dialog window pops up the file has been saved on your harddisk. You can open it with a double click.
   controller_accounts_5: Password has been updated.
   view_roles_index_2: "Available roles:"
   view_home_beteiligung_15: us
@@ -84,8 +84,8 @@ en:
   view_home_contact_us_1: Here you have the possibility to send us suggestions and critique about Communtu.
   livecd_start: Create Live-CD/DVD
   view_user_profiles__installation_30: "Advice: please don't rename the .deb-file."
-  view_user_profiles__installation_31: The Communtu-metapackages can be shown, installed and uninstalled using {{synaptic}} (go to "System" --> "Administration"). Updates of the programs inside the bundle are installed via the Ubuntu-updatemanager automatically.
-  downloads: "Download:"
+  view_user_profiles__installation_31: Every Ubuntu package and Communtu bundle can be installed and uninstalled by using {{synaptic}} (go to "System" --> "Administration"). Updates of the programs inside the bundle are installed via the Ubuntu-updatemanager automatically.
+  downloads: Downloads
   create_usb_image: create <a href="http://en.wikipedia.org/wiki/Live-usb">Live-USB image</a>
   view_home_home_2: Ubuntu
   view_rating_rating_rate: out of 5 stars awarded
@@ -102,7 +102,7 @@ en:
   controller_passwords_7: Password not changed.
   create_livecd_bundlepage: When you want to create a Live-CD from a single bundle, e. g. you want to use a your own non-published bundle, your have to go to <b>Bundle -&gt; My bundles</b> or <b>Published bundles</b> and search for a bundle. With a click on the CD icon on the right side in the Install section you come to the Live-CD page. With a click on <b>Create Live-CD/DVD</b> a Live-CD with will be created from the selected bundle.
   view_home_home_5: "The menu on the left offers the following possibilities:"
-  view_user_profiles__installation_34: will be added to our system.
+  view_user_profiles__installation_34: List of {{sources}} that will be added to your system.
   controller_passwords_8: Passwords do not match.
   view_home_home_6: <b>Installation</b> offers you a summary (bundling) of programs for the installation on your computer, according to your instructions on how you want to use your Ubuntu-PC.
   name_without_colon: Name
@@ -177,7 +177,7 @@ en:
   bundle_to_livecd: Create Live-CD/DVD from bundle <i>{{name}}</i>
   view_home_cancel_1: Either you try a again or you use the possibility via bank transfer
   view_home_news_5: This list is intended for general announcements from the Communtu team to the users. The frequency is a little higher than once a week. Posts will be collected in an
-  used_in_bundles: "Is used at Communtu in these bundles:"
+  used_in_bundles: "Is used in Communtu in these published bundles:"
   bundles_without_debs: Published bundles without deb-files.
   view_user_mailer_activation_0: ", your account has been activated. Please follow this link:"
   controller_metapackages_please_regenerate: The bundle has been reset. Please raise the version and re-create the meta-package.
@@ -223,7 +223,7 @@ en:
   model_package_could_not_read: couldn't read {{url}}
   view_home_about_5: To start, choose <b>Download</b>.
   view_home_derivatives_17: http://en.wikipedia.org/wiki/Linux_Mint
-  no_package_selected: ""
+  no_package_selected: No package selected
   community_title: Ubuntu Forums
   view_home_about_6: "  (This does not appear until"
   promote_chat: You can look if one of us is currently in the chat and talk with us.
@@ -387,7 +387,7 @@ en:
   to_colon: To
   view_home_faq_07: How can I rate a bundle?
   view_user_profiles__profile_data_4: further information
-  choice_of_package: Package description
+  choice_of_package: Choose package
   view_home_derivatives_48: " - minimal server-version, suitable for virtualizations."
   controller_metapackages_2: The bundle-name is already in use!
   view_home_faq_08: You go to "Bundle" and click on "Published bundles" to view all bundles. There you can rate a program with up to five stars and, after that, a commentbox appears where you have to enter a comment to justify your rating.
@@ -559,7 +559,7 @@ en:
   view_users_edit_3: "Username:"
   not_logged_in: You are currently not logged in. Please click on "log in" above.
   controller_users_2: An error occured while registering.
-  more_about_sources: (More information about Keys and Sources in the FAQ)
+  more_about_sources: More information about keys and sources in the FAQ
   make_your_livedvd_or_usb: You don't have Ubuntu installed on your computer. Choose a bundle and create a Live CD or copy the image on a USB key, which then can be used as a Live system or you can install your computer with it.
   start_vm_with_livecd_basis: Start virtual machine based on the Live-CD settings (for debugging)
   view_sent_index_3: Date
@@ -661,9 +661,9 @@ en:
   view_cart_new_from_list_tip: "Hint: you can sort a huge list thematically and upload the sorted list in small parts. The created bundles can be merged into a new bundle. Thus a more structured bundle is created."
   view_users_show_0: show user
   view_metapackages_edit_gpl: I accept to publish the bundle information under the <a href="http://www.gnu.de/documents/gpl.de.html">GNU General public license</a> (Version 2.0 or higher).
-  install_package_steps: "Installation of the package in two steps:"
+  install_package_steps: The installation of package {{name}} is done in multiple steps, please take a look at the right side.
   view_home_donate: Make a donation for Communtu
-  best_livecds: ""
+  best_livecds: Most popular Live-CD
   save: Save
   view_roles_new_0: New role
   search_package: Search packages
@@ -680,7 +680,7 @@ en:
   view_admins_test_all_1: Every repositorie could be reached.
   view_users_show_5: "Created bundles:"
   blog_link: http://encommuntu.wordpress.com
-  no_bundle_selected: Choose bundle
+  no_bundle_selected: No bundle selected
   view_users_show_8: Message
   view_metapackages__metalist_20: <option>0 bundles selected</option>
   last_user: We welcome our newest user
@@ -717,7 +717,7 @@ en:
   view_categories_index_12: show category-tree
   livecd_failed: Live-CD creation failed
   view_packages_show_2: install package instantly
-  choice_of_bundle: New bundle
+  choice_of_bundle: Choose bundle
   create_livecd_subtitle1: Creation using the download interface
   none: None
   create_livecd_subtitle2: Creation with bundle
@@ -815,7 +815,7 @@ en:
   invalid_activation_code_entered: Invalid activation code entered.
   livecd_previous_cds: "ISO images (for Live-CDs/DVDs and USB keys) created so far:"
   create_livecd_title: How do I create a Live-CD?
-  install_bundle_steps: ""
+  install_bundle_steps: The installation of bundle {{name}} is done in multiple steps, please take a look at the right side.
   create_livecd_downloadpage: For this you choose the categories in the <b>Download</b> area that you want to install. With a click on "Live-CD/DVD" in the menu you can see a page where you can enter a name for your Live-CD. With a click on <b>Create Live-CD/DVD</b> the process will be started.
   migrate_repository: migrate repository
   bundle_editor: bundle-editor

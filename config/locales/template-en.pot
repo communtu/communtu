@@ -89,7 +89,7 @@ msgstr ""
 msgid "We can also help you to learn this programming-language. You just have to contact "
 msgstr ""
 #: view_user_profiles__installation_17
-msgid "Just click on the link and open the file with the recommended package-installer - if no dialog-window pops up the file has been saved on your harddisk. You can open it with a double click."
+msgid "Just click on the link and open the file with the recommended packag -installer - if no dialog window pops up the file has been saved on your harddisk. You can open it with a double click."
 msgstr ""
 #: controller_accounts_5
 msgid "Password has been updated."
@@ -266,10 +266,10 @@ msgstr ""
 msgid "Advice: please don't rename the .deb-file."
 msgstr ""
 #: view_user_profiles__installation_31
-msgid "The Communtu-metapackages can be shown, installed and uninstalled using {{synaptic}} (go to \"System\" --> \"Administration\"). Updates of the programs inside the bundle are installed via the Ubuntu-updatemanager automatically."
+msgid "Every Ubuntu package and Communtu bundle can be installed and uninstalled by using {{synaptic}} (go to \"System\" --> \"Administration\"). Updates of the programs inside the bundle are installed via the Ubuntu-updatemanager automatically."
 msgstr ""
 #: downloads
-msgid "Download:"
+msgid "Downloads"
 msgstr ""
 #: create_usb_image
 msgid "create <a href=\"http://en.wikipedia.org/wiki/Live-usb\">Live-USB image</a>"
@@ -320,7 +320,7 @@ msgstr ""
 msgid "The menu on the left offers the following possibilities:"
 msgstr ""
 #: view_user_profiles__installation_34
-msgid "will be added to our system."
+msgid "List of {{sources}} that will be added to your system."
 msgstr ""
 #: controller_passwords_8
 msgid "Passwords do not match."
@@ -539,7 +539,7 @@ msgstr ""
 msgid "This list is intended for general announcements from the Communtu team to the users. The frequency is a little higher than once a week. Posts will be collected in an"
 msgstr ""
 #: used_in_bundles
-msgid "Is used at Communtu in these bundles:"
+msgid "Is used in Communtu in these published bundles:"
 msgstr ""
 #: bundles_without_debs
 msgid "Published bundles without deb-files."
@@ -677,7 +677,7 @@ msgstr ""
 msgid "http://en.wikipedia.org/wiki/Linux_Mint"
 msgstr ""
 #: no_package_selected
-msgid ""
+msgid "No package selected"
 msgstr ""
 #: community_title
 msgid "Ubuntu Forums"
@@ -1115,7 +1115,7 @@ msgstr ""
 msgid "further information"
 msgstr ""
 #: choice_of_package
-msgid "Package description"
+msgid "Choose package"
 msgstr ""
 #: view_home_derivatives_48
 msgid " - minimal server-version, suitable for virtualizations."
@@ -1601,7 +1601,7 @@ msgstr ""
 msgid "An error occured while registering."
 msgstr ""
 #: more_about_sources
-msgid "(More information about Keys and Sources in the FAQ)"
+msgid "More information about keys and sources in the FAQ"
 msgstr ""
 #: make_your_livedvd_or_usb
 msgid "You don't have Ubuntu installed on your computer. Choose a bundle and create a Live CD or copy the image on a USB key, which then can be used as a Live system or you can install your computer with it."
@@ -1898,13 +1898,13 @@ msgstr ""
 msgid "I accept to publish the bundle information under the <a href=\"http://www.gnu.de/documents/gpl.de.html\">GNU General public license</a> (Version 2.0 or higher)."
 msgstr ""
 #: install_package_steps
-msgid "Installation of the package in two steps:"
+msgid "The installation of package {{name}} is done in multiple steps, please take a look at the right side."
 msgstr ""
 #: view_home_donate
 msgid "Make a donation for Communtu"
 msgstr ""
 #: best_livecds
-msgid ""
+msgid "Most popular Live-CD"
 msgstr ""
 #: save
 msgid "Save"
@@ -1955,7 +1955,7 @@ msgstr ""
 msgid "http://encommuntu.wordpress.com"
 msgstr ""
 #: no_bundle_selected
-msgid "Choose bundle"
+msgid "No bundle selected"
 msgstr ""
 #: view_users_show_8
 msgid "Message"
@@ -2066,7 +2066,7 @@ msgstr ""
 msgid "install package instantly"
 msgstr ""
 #: choice_of_bundle
-msgid "New bundle"
+msgid "Choose bundle"
 msgstr ""
 #: create_livecd_subtitle1
 msgid "Creation using the download interface"
@@ -2360,7 +2360,7 @@ msgstr ""
 msgid "How do I create a Live-CD?"
 msgstr ""
 #: install_bundle_steps
-msgid ""
+msgid "The installation of bundle {{name}} is done in multiple steps, please take a look at the right side."
 msgstr ""
 #: create_livecd_downloadpage
 msgid "For this you choose the categories in the <b>Download</b> area that you want to install. With a click on \"Live-CD/DVD\" in the menu you can see a page where you can enter a name for your Live-CD. With a click on <b>Create Live-CD/DVD</b> the process will be started."

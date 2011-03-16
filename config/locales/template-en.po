@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Communtu 0.2\n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
-"Last-Translator: Till Mossakowski <till@communtu.de>\n"
+"Last-Translator: Timo Denissen <timo@communtu.de>\n"
 "Language-Team: Communtu <info@communtu.de>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -117,9 +117,8 @@ msgid "Wir können dir auch helfen diese Programmiersprache zu lernen. Also meld
 msgstr "We can also help you to learn this programming-language. You just have to contact "
 
 #: view_user_profiles__installation_17
-#, fuzzy
 msgid "Diesen Link einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer öffnen - wenn kein Prorgammdialog erscheint, wurde die Datei auf deinen Rechner heruntergeladen. Dort kannst du sie mit Doppelklick starten."
-msgstr "Just click on the link and open the file with the recommended package-installer - if no dialog-window pops up the file has been saved on your harddisk. You can open it with a double click."
+msgstr "Just click on the link and open the file with the recommended packag -installer - if no dialog window pops up the file has been saved on your harddisk. You can open it with a double click."
 
 #: view_roles_index_2
 msgid "Verfügbare Rollen:"
@@ -354,14 +353,12 @@ msgid "Live-CD/DVD erstellen"
 msgstr "Create Live-CD/DVD"
 
 #: view_user_profiles__installation_31
-#, fuzzy
 msgid "Alle Ubuntu-Pakete und Communtu-Bündel können auch mittles {{synaptic}} (unter System -> Systemverwaltung) angezeigt, installiert und deinstalliert werden. Änderungen an Bündeln werden über die Ubuntu-Paketverwaltung automatisch eingespielt."
-msgstr "The Communtu-metapackages can be shown, installed and uninstalled using {{synaptic}} (go to \"System\" --> \"Administration\"). Updates of the programs inside the bundle are installed via the Ubuntu-updatemanager automatically."
+msgstr "Every Ubuntu package and Communtu bundle can be installed and uninstalled by using {{synaptic}} (go to \"System\" --> \"Administration\"). Updates of the programs inside the bundle are installed via the Ubuntu-updatemanager automatically."
 
 #: downloads
-#, fuzzy
 msgid "Downloads"
-msgstr "Download:"
+msgstr "Downloads"
 
 #: create_usb_image
 msgid "<a href=\"http://ww.ubuntuusers.de/wiki/Live-USB\">USB-Stick-Image</a> erstellen"
@@ -416,9 +413,8 @@ msgid "Mehr ..."
 msgstr "More ..."
 
 #: view_user_profiles__installation_34
-#, fuzzy
 msgid "Liste der {{sources}}, die zu deinem System hinzugefügt werden."
-msgstr "will be added to our system."
+msgstr "List of {{sources}} that will be added to your system."
 
 #: controller_passwords_7
 msgid "Passwort nicht geändert."
@@ -725,9 +721,8 @@ msgid "Diese Liste ist für allgemeine Ankündigungen aus den Communtu Team für
 msgstr "This list is intended for general announcements from the Communtu team to the users. The frequency is a little higher than once a week. Posts will be collected in an"
 
 #: used_in_bundles
-#, fuzzy
 msgid "Wird bei Communtu in folgenden veröffentlichten Bündeln benutzt:"
-msgstr "Is used at Communtu in these bundles:"
+msgstr "Is used in Communtu in these published bundles:"
 
 #: view_user_mailer_activation_0
 msgid ", dein Benutzerkonto wurde aktiviert.  Folge nun dem Link:"
@@ -911,7 +906,7 @@ msgstr "http://en.wikipedia.org/wiki/Linux_Mint"
 
 #: no_package_selected
 msgid "Kein Paket ausgewählt"
-msgstr ""
+msgstr "No package selected"
 
 #: community_title
 msgid "ubuntuusers"
@@ -1528,9 +1523,8 @@ msgid "Weitere Informationen"
 msgstr "further information"
 
 #: choice_of_package
-#, fuzzy
 msgid "Auswahl des Pakets"
-msgstr "Package description"
+msgstr "Choose package"
 
 #: view_home_derivatives_48
 msgid " - minimale Server-Version, vor allem für Virtualisierung geeignet.."
@@ -2197,9 +2191,8 @@ msgid "Es gab ein Problem mit der Registrierung."
 msgstr "An error occured while registering."
 
 #: more_about_sources
-#, fuzzy
 msgid "Mehr Informationen zum Thema Schlüssel und Quellen in den Faqs"
-msgstr "(More information about Keys and Sources in the FAQ)"
+msgstr "More information about keys and sources in the FAQ"
 
 #: view_sent_index_3
 msgid "Zeitpunkt"
@@ -2600,9 +2593,8 @@ msgid "Ich stimme zu, die Bündel Information unter der <a href=\"http://www.gnu
 msgstr "I accept to publish the bundle information under the <a href=\"http://www.gnu.de/documents/gpl.de.html\">GNU General public license</a> (Version 2.0 or higher)."
 
 #: install_package_steps
-#, fuzzy
 msgid "Die Installation des Pakets {{name}} geschieht in mehreren Schritten, siehe rechts."
-msgstr "Installation of the package in two steps:"
+msgstr "The installation of package {{name}} is done in multiple steps, please take a look at the right side."
 
 #: view_home_donate
 msgid "Für Communtu spenden"
@@ -2610,7 +2602,7 @@ msgstr "Make a donation for Communtu"
 
 #: best_livecds
 msgid "Beliebteste Live-CD"
-msgstr ""
+msgstr "Most popular Live-CD"
 
 #: view_roles_new_0
 msgid "Neue Rolle"
@@ -2681,9 +2673,8 @@ msgid "Nachrichten"
 msgstr "Message"
 
 #: no_bundle_selected
-#, fuzzy
 msgid "Kein Bündel ausgewählt"
-msgstr "Choose bundle"
+msgstr "No bundle selected"
 
 #: view_metapackages__metalist_20
 msgid "<option>0 Bündel ausgewählt</option>"
@@ -2826,9 +2817,8 @@ msgid "Paket sofort installieren"
 msgstr "install package instantly"
 
 #: choice_of_bundle
-#, fuzzy
 msgid "Auswahl des Bündels"
-msgstr "New bundle"
+msgstr "Choose bundle"
 
 #: create_livecd_subtitle1
 msgid "Erstellen über die Downloadseite"
@@ -3220,7 +3210,7 @@ msgstr "How do I create a Live-CD?"
 
 #: install_bundle_steps
 msgid "Die Installation des Bündels {{name}} geschieht in mehreren Schritten, siehe rechts."
-msgstr ""
+msgstr "The installation of bundle {{name}} is done in multiple steps, please take a look at the right side."
 
 #: create_livecd_downloadpage
 msgid "Hierfür wählt man die unter <b>Download</b> die Kategorien und die Bündel aus welche man installieren möchte. Mit einem Klick auf „Live-CD/DVD“ in der Menüführung kommt man zum Dialogfeld für die Live-CD. Hier muss noch ein Name eingetragen werden und die Live-CD/DVD mit <b>Live-CD/DVD erstellen</b> erstellt werden."
@@ -3938,24 +3928,33 @@ msgstr "Install"
 
 #~ msgid "Diese"
 #~ msgstr "These"
+
 #~ msgid "Installation vorbereiten: Voreinstellungen eingeben"
 #~ msgstr "Change settings"
+
 #~ msgid "Bündel die experimentiell und ungetested sind:"
 #~ msgstr "Experimental and untested bundles:"
+
 #~ msgid "Auswahl der zu installierenden Programmbündel und Programme"
 #~ msgstr "Selection of programs and bundles that shall be installed"
+
 #~ msgid "Folgende"
 #~ msgstr "The following"
+
 #~ msgid "ISO-Image (für CD/DVD)"
 #~ msgstr "ISO-image (CD/DVD)"
+
 #~ msgid "Dieser Bündel-Name ist bereits vergeben<br>"
 #~ msgstr "The bundle-name is already in use<br>"
+
 #~ msgid "Installation"
 #~ msgstr "Installation"
+
 #~ msgid "Bündel verwalten"
 #~ msgstr "Administrate bundles"
+
 #~ msgid "Fehlgeschlagene debs"
 #~ msgstr "Failed debs"
+
 #~ msgid "Derivate auflisten"
 #~ msgstr "show derivatives"
-
