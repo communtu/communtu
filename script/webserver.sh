@@ -115,6 +115,9 @@ sudo chown communtu /local/isos/tmp
 sudo cp script/rails /etc/init.d/
 sudo update-rc.d rails defaults
 
+# write distribution confs
+rake db:repo:distributions
+
 # start rails apps
 /home/$NEWUSERNAME/web2.0/communtu/script/web start
 
