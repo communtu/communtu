@@ -44,7 +44,10 @@
     IFS=" "
     
     # sync new sources
-    apt-get-update &
+    UPDATE=$(mktemp)
+    echo 'RES=1; CNT=100; while [[ ($RES -ne 0) && ($CNT -ne 0) ]]; do sudo apt-get update; RES=$?; CNT=$CNT-1; done' > $UPDATE
+    chmod +x $UPDATE
+    $UPDATE &
     ;;
 
     abort-upgrade)
