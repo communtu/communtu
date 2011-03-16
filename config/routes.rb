@@ -58,6 +58,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.connect '/download/create_livecd/:id', :controller => 'download', :action => 'create_livecd'
   map.connect '/download/test_livecd/:id', :controller => 'download', :action => 'test_livecd'
+  map.connect '/download/bundle_to_livecd', :controller => 'download', :action => 'bundle_to_livecd'
 
   map.connect '/users/anonymous_login', :controller => 'users', :action => 'anonymous_login'
   map.resources :users, :member => { :enable => :put, :search => :put, :anonymous_login => :get} do |users|
