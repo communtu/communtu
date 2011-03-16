@@ -325,6 +325,7 @@ class Deb < ActiveRecord::Base
       # create  'preinst'
       # first half of standard script ...
       safe_system "cp ../../../preinst1 preinst"
+      safe_system "cp #{RAILS_ROOT}/script/apt-get-update apt-get-update"
       # ... handling of new sources and keys ...
       f=File.open("preinst","a")
       f.puts ""
