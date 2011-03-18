@@ -160,14 +160,15 @@ class Livecd < ActiveRecord::Base
         # log to log/livecd.log
         system "(echo; echo \"------------------------------------\")  >> #{RAILS_ROOT}/log/livecd#{port}.log"
         date = IO.popen("date",&:read).chomp
-        call = "echo \"#{port}: #{date} - Creating live CD ##{self.id} #{fullname}\" >> #{RAILS_ROOT}/log/"
+        call = "echo \"#{date} - #{port}: Creating live CD ##{self.id} #{fullname}\" >> #{RAILS_ROOT}/log/"
         system (call+"livecd#{port}.log")
         system (call+"livecd.log")
         # check if there is enough disk space (at least 25 GB)
         while disk_free_space(SETTINGS['iso_path']) < 25000000000
           # destroy the oldest liveCD
           cd=Livecd.find(:first,:order=>"updated_at ASC")
-          call = "(echo \"#{port}: Disk full - deleting live CD #{cd.id}\" >> #{RAILS_ROOT}/log/"
+          date = IO.popen("date",&:read).chomp
+          call = "(echo \"#{date} - #{port}: Disk full - deleting live CD #{cd.id}\" >> #{RAILS_ROOT}/log/"
           system (call+"livecd#{port}.log")
           system (call+"livecd.log")
           cd.destroy
@@ -193,7 +194,7 @@ class Livecd < ActiveRecord::Base
         system "echo  >> #{RAILS_ROOT}/log/livecd#{port}.log"
         date = IO.popen("date",&:read).chomp
         msg = if self.failed then "failed" else "succeeded" end
-        call = "echo \"#{port}: #{date} - Creation of live CD ##{self.if} #{msg}\" >> #{RAILS_ROOT}/log/"
+        call = "echo \"#{date} - #{port}: Creation of live CD ##{self.if} #{msg}\" >> #{RAILS_ROOT}/log/"
         system (call+"livecd#{port}.log")
         system (call+"livecd.log")
         system "echo  >> #{RAILS_ROOT}/log/livecd#{port}.log"
