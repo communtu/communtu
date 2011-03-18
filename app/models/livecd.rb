@@ -194,7 +194,7 @@ class Livecd < ActiveRecord::Base
         system "echo  >> #{RAILS_ROOT}/log/livecd#{port}.log"
         date = IO.popen("date",&:read).chomp
         msg = if self.failed then "failed" else "succeeded" end
-        call = "echo \"#{date} - #{port}: Creation of live CD ##{self.if} #{msg}\" >> #{RAILS_ROOT}/log/"
+        call = "echo \"#{date} - #{port}: Creation of live CD ##{self.id} #{msg}\" >> #{RAILS_ROOT}/log/"
         system (call+"livecd#{port}.log")
         system (call+"livecd.log")
         system "echo  >> #{RAILS_ROOT}/log/livecd#{port}.log"
