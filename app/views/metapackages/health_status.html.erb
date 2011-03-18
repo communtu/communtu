@@ -79,6 +79,8 @@
 
 
 <h2><%=t(:failed_live_cds)%> (<%=@failed_live_cds.length%>)</h2>
+<pre><%= @livecd_log %></pre>
+
 <%if @failed_live_cds.empty?%>
   <%=t(:none)%>
 <%else%>

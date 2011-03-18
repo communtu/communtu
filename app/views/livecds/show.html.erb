@@ -97,6 +97,6 @@ gdebi -n <%=File.basename(@cd.srcdeb) %><br />
 <p>
 <% if !@cd.log.nil? %>
   <h3><%=t(:logfile_extract)%></h3>
-  <%= (h @cd.log).gsub(/\n/,"<br />") %>
+  <pre><%= h @cd.log %></pre>
 <% end %>
 </p>
