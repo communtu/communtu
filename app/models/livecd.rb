@@ -159,7 +159,7 @@ class Livecd < ActiveRecord::Base
         self.save
         # log to log/livecd.log
         system "(echo; echo \"------------------------------------\")  >> #{RAILS_ROOT}/log/livecd#{port}.log"
-        date = IO.popen("date",&:read)
+        date = IO.popen("date",&:read).chomp
         call = "echo \"#{port}: #{date} - Creating live CD #{fullname}\" >> #{RAILS_ROOT}/log/"
         system (call+"livecd#{port}.log")
         system (call+"livecd.log")
@@ -191,7 +191,7 @@ class Livecd < ActiveRecord::Base
         system "sudo kill-kvm #{port}"
         system "dotlockfile -u /home/communtu/livecd/livecd#{port}.lock"
         system "echo  >> #{RAILS_ROOT}/log/livecd#{port}.log"
-        date = IO.popen("date",&:read)
+        date = IO.popen("date",&:read).chomp
         call = "echo \"#{port}: #{date} - finished\" >> #{RAILS_ROOT}/log/"
         system (call+"livecd#{port}.log")
         system (call+"livecd.log")
