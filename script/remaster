@@ -253,7 +253,7 @@ $SCP -P $PORT $SOURCE_DEB root@localhost:/root/$UBUNTU_VERSION/edit/
 SOURCE=`basename $SOURCE_DEB`
 $SSH -p $PORT "chroot /root/$UBUNTU_VERSION/edit gdebi -n $SOURCE"
 $SSH -p $PORT "rm /root/$UBUNTU_VERSION/edit/$SOURCE"
-# apt-get update not needed - this is already done by the deb
+$SSH -p $PORT "apt-get update"
 echo "*** setting debconf options"
 $SSH -p $PORT "chroot /root/$UBUNTU_VERSION/edit sed -i 's/Templates: templatedb/Templates: templatedb\nFrontend: readline\nPriority: critical/' /etc/debconf.conf"
 echo "*** configuring sources.list for apt-proxy"

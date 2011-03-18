@@ -73,7 +73,7 @@ namespace :db do
     task :generate_debs => :environment do
       # concurrent instance already running? then exit
       if IO.popen("ps -aef |grep generate_debs | grep rake | grep -v grep",&:read).split("\n").size<=1 then
-        limit = 500
+        limit = 100
         debs = Deb.find(:all,:conditions=>{:generated=>:false},:limit=>limit)
         cnt = debs.size
         if cnt>0 then
@@ -84,7 +84,7 @@ namespace :db do
           debs.each do |d|
              system "date >> log/generate_debs.log"
              system "echo 'started at #{start_date}, #{cnt} left' >> log/generate_debs.log"
-             system 'echo "Deb.find('+d.id.to_s+').generate" | script/console production'
+             d.generate #system 'echo "Deb.find('+d.id.to_s+').generate" | script/console production'
              cnt -= 1
           end
         end

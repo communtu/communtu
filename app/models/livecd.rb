@@ -159,16 +159,17 @@ class Livecd < ActiveRecord::Base
         self.save
         # log to log/livecd.log
         system "(echo; echo \"------------------------------------\")  >> #{RAILS_ROOT}/log/livecd#{port}.log"
-        call = "(echo \"Creating live CD #{fullname}\"; date) >> #{RAILS_ROOT}/log/"
+        date = IO.popen("date",&:read)
+        call = "echo \"#{port}: #{date} - Creating live CD #{fullname}\" >> #{RAILS_ROOT}/log/"
         system (call+"livecd#{port}.log")
-        system (call+"livecd#{port}.short.log")
+        system (call+"livecd.log")
         # check if there is enough disk space (at least 25 GB)
         while disk_free_space(SETTINGS['iso_path']) < 25000000000
           # destroy the oldest liveCD
           cd=Livecd.find(:first,:order=>"updated_at ASC")
-          call = "(echo \"Disk full - deleting live CD #{cd.id}\" >> #{RAILS_ROOT}/log/"
+          call = "(echo \"#{port}: Disk full - deleting live CD #{cd.id}\" >> #{RAILS_ROOT}/log/"
           system (call+"livecd#{port}.log")
-          system (call+"livecd#{port}.short.log")
+          system (call+"livecd.log")
           cd.destroy
         end
         # normal users get nice'd
@@ -190,13 +191,14 @@ class Livecd < ActiveRecord::Base
         system "sudo kill-kvm #{port}"
         system "dotlockfile -u /home/communtu/livecd/livecd#{port}.lock"
         system "echo  >> #{RAILS_ROOT}/log/livecd#{port}.log"
-        call = "echo \"finished at:\"; date >> #{RAILS_ROOT}/log/"
+        date = IO.popen("date",&:read)
+        call = "echo \"#{port}: #{date} - finished\" >> #{RAILS_ROOT}/log/"
         system (call+"livecd#{port}.log")
-        system (call+"livecd#{port}.short.log")
+        system (call+"livecd.log")
         msg = if self.failed then "failed" else "succeeded" end
-        call = "echo \"Creation of live CD #{msg}\" >> #{RAILS_ROOT}/log/"
+        call = "echo \"#{port}: Creation of live CD #{msg}\" >> #{RAILS_ROOT}/log/"
         system (call+"livecd#{port}.log")
-        system (call+"livecd#{port}.short.log")
+        system (call+"livecd.log")
         system "echo  >> #{RAILS_ROOT}/log/livecd#{port}.log"
         if self.failed then
           self.log = IO.popen("tail -n80 #{RAILS_ROOT}/log/livecd#{port}.log").read
@@ -398,13 +400,14 @@ class Livecd < ActiveRecord::Base
     if self.vm_pid.nil?
       self.vm_pid = fork do
         ActiveRecord::Base.connection.reconnect!
-        exec "kvm -daemonize -drive file=/home/communtu/livecd/kvm/#{self.smallversion}.img,if=virtio,boot=on,snapshot=on -smp 4 -m 800 -nographic -redir tcp:2221::22"
-      end
-      fork do
-        ActiveRecord::Base.connection.reconnect!
-        system "scp -P 2221 -o StrictHostKeyChecking=no -o ConnectTimeout=500 #{self.srcdeb} root@localhost:/root/#{self.smallversion}/edit/root/"
+        system "kvm -daemonize -drive file=/home/communtu/livecd/kvm/#{self.smallversion}.img,if=virtio,boot=on,snapshot=on -smp 4 -m 800 -nographic -redir tcp:2221::22"
+        cmd = "scp -P 2221 -o StrictHostKeyChecking=no -o ConnectTimeout=500 #{self.srcdeb} root@localhost:/root/#{self.smallversion}/edit/root/"
+        system "echo #{cmd} >> log/vm.log"
+        system "#{cmd} >> log/vm.log"
         if !self.installdeb.index(".deb").nil? # install deb is a deb file? then copy it, too
-          system "scp -P 2221 -o StrictHostKeyChecking=no -o ConnectTimeout=500 #{self.installdeb} root@localhost:/root/#{self.smallversion}/edit/root/"
+          cmd = "scp -P 2221 -o StrictHostKeyChecking=no -o ConnectTimeout=500 #{self.installdeb} root@localhost:/root/#{self.smallversion}/edit/root/"
+          system "echo #{cmd} >> log/vm.log"
+          system "#{cmd} >> log/vm.log"
         end
       end
       ActiveRecord::Base.connection.reconnect!
