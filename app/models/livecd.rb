@@ -192,11 +192,8 @@ class Livecd < ActiveRecord::Base
         system "dotlockfile -u /home/communtu/livecd/livecd#{port}.lock"
         system "echo  >> #{RAILS_ROOT}/log/livecd#{port}.log"
         date = IO.popen("date",&:read).chomp
-        call = "echo \"#{port}: #{date} - finished\" >> #{RAILS_ROOT}/log/"
-        system (call+"livecd#{port}.log")
-        system (call+"livecd.log")
         msg = if self.failed then "failed" else "succeeded" end
-        call = "echo \"#{port}: Creation of live CD #{msg}\" >> #{RAILS_ROOT}/log/"
+        call = "echo \"#{port}: #{date} - Creation of live CD #{msg}\" >> #{RAILS_ROOT}/log/"
         system (call+"livecd#{port}.log")
         system (call+"livecd.log")
         system "echo  >> #{RAILS_ROOT}/log/livecd#{port}.log"
