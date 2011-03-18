@@ -160,7 +160,7 @@ class Livecd < ActiveRecord::Base
         # log to log/livecd.log
         system "(echo; echo \"------------------------------------\")  >> #{RAILS_ROOT}/log/livecd#{port}.log"
         date = IO.popen("date",&:read).chomp
-        call = "echo \"#{port}: #{date} - Creating live CD #{fullname}\" >> #{RAILS_ROOT}/log/"
+        call = "echo \"#{port}: #{date} - Creating live CD ##{self.id} #{fullname}\" >> #{RAILS_ROOT}/log/"
         system (call+"livecd#{port}.log")
         system (call+"livecd.log")
         # check if there is enough disk space (at least 25 GB)
