@@ -49,7 +49,7 @@ class MyMailer < ActionMailer::Base
 
   def livecd(user,iso)
     @body[:url]  = iso
-    @recipients  = "#{user.email}"
+    @recipients  = "#{user.email}, technik@communtu.org"
     @from        = "info@communtu.org"
     @subject     = "[Communtu] " + I18n.t(:livecd_email)
     @sent_on     = Time.now
