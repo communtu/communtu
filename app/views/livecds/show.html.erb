@@ -75,19 +75,30 @@
 <% end %>
 <p>
 <% if is_admin? %>
+<!--
       <% if @cd.vm_pid.nil? %>
         <%= link_to t(:start_vm_with_livecd_basis), :action  => 'start_vm_basis', :id => @cd.id%>
       <% else %>
         <%= t(:vm_running) %>. <%= t(:start_vm_instructions) %><br />
-$SSH<br />
-chroot <%= @cd.smallversion%>/edit <br />
-cd root<br />
-gdebi -n <%=File.basename(@cd.srcdeb) %><br />
+-->
+
+<%= t(:start_vm_instructions) %>
+<pre>
+kvm -daemonize -drive file=/home/communtu/livecd/kvm/<%=@cd.smallversion%>.img,if=virtio,boot=on,snapshot=on -smp 4 -m 800 -nographic -redir tcp:2221::22
+scp -P 2221 -o StrictHostKeyChecking=no -o ConnectTimeout=500 <%=@cd.srcdeb%> root@localhost:/root/<%=@cd.smallversion%>/edit/root/
+<% if !@cd.installdeb.index(".deb").nil? %>
+scp -P 2221 -o StrictHostKeyChecking=no -o ConnectTimeout=500 <%=@cd.installdeb%> root@localhost:/root/<%=@cd.smallversion%>/edit/root/
+<% end %>
+$SSH
+chroot <%= @cd.smallversion%>/edit
+cd root
+gdebi -n <%=File.basename(@cd.srcdeb) %>
 <%  if !@cd.installdeb.index(".deb").nil? %>
   gdebi -n <%= File.basename(@cd.installdeb)%>
 <% else %>
   apt-get install <%= @cd.installdeb %>
 <% end %>
+</pre>
 <br />
 <br />
 <%= link_to t(:stop_vm), :action => 'stop_vm', :id => @cd.id %></li>
