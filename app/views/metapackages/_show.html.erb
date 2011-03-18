@@ -151,11 +151,12 @@
 <%= link_to t(:direct_indirect_covered_packages), :action => 'rdepends', :id => @metapackage.id %>
 <% end %>
 
-<% if !@metapackage.metapackages.empty? then%>
+<% @published_children = @metapackage.metapackages.select{|m| m.is_published?} %>
+<% if !@published_children.empty? then%>
   <p>
   <b><%=t(:used_in_bundles)%></b><br />
   <ul>
-  <% @metapackage.metapackages.select{|m| m.is_published?}.each do |m| %>
+  <% @published_children.each do |m| %>
     <li>
        <%= link_to  m.name, { :controller => :metapackages, :action => :show,\
 	  				:id => m.id } %>
