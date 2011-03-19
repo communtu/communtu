@@ -45,7 +45,7 @@
       <%= number_to_human_size(@cd.size) %>,
       <%= change_date_time(@cd.updated_at).to_s %></p>
   <ul>
-    <li><%= link_to t(:iso_image), "/livecds/download/#{@cd.id}" %></li>
+    <li><%= link_to t(:iso_image), @cd.iso_url %></li>
     <% if is_admin? %>
       <% if @cd.vm_pid.nil? %>
         <li><%= link_to t(:start_vm), :action => 'start_vm', :id => @cd.id %></li>
