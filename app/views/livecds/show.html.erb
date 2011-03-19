@@ -80,6 +80,9 @@
         <%= link_to t(:start_vm_with_livecd_basis), :action  => 'start_vm_basis', :id => @cd.id%>
       <% else %>
         <%= t(:vm_running) %>. <%= t(:start_vm_instructions) %><br />
+<br />
+<%= link_to t(:stop_vm), :action => 'stop_vm', :id => @cd.id %></li>
+      <% end %>
 -->
 
 <%= t(:start_vm_instructions) %>
@@ -100,9 +103,6 @@ gdebi -n <%=File.basename(@cd.srcdeb) %>
 <% end %>
 </pre>
 <br />
-<br />
-<%= link_to t(:stop_vm), :action => 'stop_vm', :id => @cd.id %></li>
-      <% end %>
 <% end %>
 </p>
 <p>
