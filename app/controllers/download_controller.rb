@@ -57,7 +57,7 @@ class DownloadController < ApplicationController
     if !params[:path].nil?
       session[:path] = params[:path]
     end  
-    if params[:path]=='mybundle_cd'
+    if params[:path]=='mybundle_cd' or params[:path]=='bundle_cd'
           session[:cd_bundle] = params[:id]      
     end
     session[:backlink] = request.env['HTTP_REFERER']
