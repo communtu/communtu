@@ -213,7 +213,11 @@ class DownloadController < ApplicationController
     if params[:id].nil? then
       params[:id] = session[:cd_bundle] 
     end
-    @bundle = Metapackage.find(params[:id])
+    @bundle = Metapackage.find_by_id(params[:id])
+    if @bundle.nil? then
+      redirect_to :back
+      return
+    end
     session[:cd_bundle] = @bundle.id
     # check if live CD has been generated already
     @cd = Livecd.find(:first,:conditions=>{:metapackage_id => @bundle.id,
