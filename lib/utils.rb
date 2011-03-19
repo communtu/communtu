@@ -82,3 +82,7 @@
   `df -Pk #{path} |grep ^/ | awk '{print $4;}'`.
     to_i * 1.kilobyte
  end
+ 
+ def date_now
+   IO.popen("date",&:read).chomp
+ end

@@ -154,21 +154,19 @@ class Livecd < ActiveRecord::Base
     fullname = self.fullname
     # need to generate iso, use lock in order to prevent parallel generation of multiple isos
     begin
-        safe_system "dotlockfile -p -r 1000 #{RAILS_ROOT}/livecd#{port}_lock"
+        while not (system "dotlockfile -p -r 1000 #{RAILS_ROOT}/livecd#{port}_lock") do end
         self.generating = true
         self.save
         # log to log/livecd.log
         system "(echo; echo \"------------------------------------\")  >> #{RAILS_ROOT}/log/livecd#{port}.log"
-        date = IO.popen("date",&:read).chomp
-        call = "echo \"#{date} - #{port}: Creating live CD ##{self.id} #{fullname}\" >> #{RAILS_ROOT}/log/"
+        call = "echo \"#{date_now} - #{port}: Creating live CD ##{self.id} #{fullname}\" >> #{RAILS_ROOT}/log/"
         system (call+"livecd#{port}.log")
         system (call+"livecd.log")
         # check if there is enough disk space (at least 25 GB)
         while disk_free_space(SETTINGS['iso_path']) < 25000000000
           # destroy the oldest liveCD
           cd=Livecd.find(:first,:order=>"updated_at ASC")
-          date = IO.popen("date",&:read).chomp
-          call = "(echo \"#{date} - #{port}: Disk full - deleting live CD #{cd.id}\" >> #{RAILS_ROOT}/log/"
+          call = "(echo \"#{date_now} - #{port}: Disk full - deleting live CD #{cd.id}\" >> #{RAILS_ROOT}/log/"
           system (call+"livecd#{port}.log")
           system (call+"livecd.log")
           cd.destroy
@@ -192,9 +190,8 @@ class Livecd < ActiveRecord::Base
         system "sudo kill-kvm #{port}"
         system "dotlockfile -u /home/communtu/livecd/livecd#{port}.lock"
         system "echo  >> #{RAILS_ROOT}/log/livecd#{port}.log"
-        date = IO.popen("date",&:read).chomp
         msg = if self.failed then "failed" else "succeeded" end
-        call = "echo \"#{date} - #{port}: Creation of live CD ##{self.id} #{msg}\" >> #{RAILS_ROOT}/log/"
+        call = "echo \"#{date_now} - #{port}: Creation of live CD ##{self.id} #{msg}\" >> #{RAILS_ROOT}/log/"
         system (call+"livecd#{port}.log")
         system (call+"livecd.log")
         system "echo  >> #{RAILS_ROOT}/log/livecd#{port}.log"
