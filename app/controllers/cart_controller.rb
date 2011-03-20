@@ -34,7 +34,8 @@ class CartController < ApplicationController
         package_list = ""
         # read package list from file
         if !params[:file][:attachment].nil? and params[:file][:attachment]!="" then
-          package_list += (params[:file][:attachment].read +" ")
+          package_list += params[:file][:attachment].read
+          package_list += " "
         end  
         # get package list from text area
         if !params[:package_list].nil? and params[:package_list]!="" then
