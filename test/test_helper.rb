@@ -5,7 +5,8 @@ require 'test_help'
 require 'lib/authenticated_test_helper.rb'
 include AuthenticatedTestHelper
 
-class Test::Unit::TestCase
+#class Test::Unit::TestCase
+class ActiveSupport::TestCase # for 2.3.8
   # Transactional fixtures accelerate your tests by wrapping each test method
   # in a transaction that's rolled back on completion.  This ensures that the
   # test database remains unchanged so your fixtures don't have to be reloaded

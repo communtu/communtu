@@ -1,7 +1,7 @@
 log
+config/database.yml
 tmp
 *~
 .project
 nbproject
-config/database.yml
 
