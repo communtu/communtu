@@ -71,7 +71,11 @@ module ApplicationHelper
   end  
 
   def package_link name
-    link_to name, package_url(Package.find(:first,:conditions =>{:name => name.downcase}))
+    p = Package.find(:first,:conditions =>{:name => name.downcase})
+    if p.nil?
+      return ""
+    end
+    link_to name, package_url(p)
   end
   
   # show dependencies of a bundle or a package in structured form
@@ -262,4 +266,7 @@ module ApplicationHelper
         end
   end
 
+  def div_tag(tag,text)
+    "<div class=\"#{tag}\">#{text}</div> "
+  end
 end
