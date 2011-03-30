@@ -229,6 +229,7 @@ de:
   headline: macht Ubuntu-Installationen einfach
   health_status: Gesundheitsstatus
   hello: Herzlich Willkommen
+  hello_simple: Hallo
   help_translation: Hilfe bei der Übersetzung - Schreib uns eine E-Mail
   helper_distributions_0: free
   helper_distributions_1: non-free
@@ -288,8 +289,9 @@ de:
   livecd_create: Die Live-CD/DVD wird jetzt erstellt. Wir benachrichtigen dich per Email, sobald sie fertig ist.
   livecd_created_by: 'Live-CD/DVD erstellt von: '
   livecd_email: 'Communtu: Benachrichtigung über Live-CD/DVD'
-  livecd_email_body: ', die Live-CD/DVD wurde erstellt! Folge dem Link: '
-  livecd_email_body_failed: ', die Live-CD/DVD {{name}} konnte leider nicht erstellt werden. Wir kümmern uns um das Problem.'
+  livecd_email_body: 'Deine bei uns erstellte Live-CD/DVD bzw. das ISO Image für die Erstellung einer Live-CD/DVD oder USB Stick wurde erstellt!\n\nDen Download kannst Du unter folgendem Link aufrufen: '
+  livecd_email_body_2: 'Bei Fragen und Anregungen bitten wir Dich bei uns zu melden.\n\nWir hoffen, dass Du viel Spaß mit Deinem Ubuntu hast.\n\nLiebe Grüße,\nDein Communtu-Team'
+  livecd_email_body_failed: 'Deine bei und erstellte Live-CD/DVD bzw. das ISO Image für die Erstellung einer Live-Cd/DVD oder USB Stick {{name}} konnte leider nicht erstellt werden. Wir kümmern uns um das Problem.\n\nLiebe Grüße,\nDein Communtu-Team'
   livecd_email_failed: 'Communtu: Erstellung der Live-CD/DVD fehlgeschlagen'
   livecd_existing_name: Dieser Name ist bereits vergeben
   livecd_failed: LiveCD-Erstellung fehlgeschlagen
@@ -297,6 +299,7 @@ de:
   livecd_image_link: http://wiki.ubuntuusers.de/CD-Images
   livecd_incorrect_name: Der Name der LiveCD/DVD darf nur aus Buchstaben, Zahlen, _ und - bestehen
   livecd_message: Über eine Live-CD kann die Software sowohl ausprobiert als auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} erstellt, die du dann brennen kannst.<br /><br /> Die Erstellung des Images dauert eine gewisse Zeit. Du wirst per Email benachrichtigt, sobald das Image fertig ist. Bitte achte darauf, dass in deinen Benutzereinstellungen eine gültige Email-Adresse angegeben ist.
+  liveusb_image_link: http://wiki.ubuntuusers.de/CD-Images
   liveusb_message: Über einen USB-Stick kann die Software sowohl ausprobiert als auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} erstellt, die du dann auf den USB-Stick übertragen kannst.<br /><br /> Die Erstellung des Images dauert eine gewisse Zeit. Du wirst per Email benachrichtigt, sobald das Image fertig ist. Bitte achte darauf, dass in deinen Benutzereinstellungen eine gültige Email-Adresse angegeben ist.
   livecd_please_register: Um Live-CD/DVDs oder USB-Sticks zu erstellen, musst du dich erst {{register}} oder {{login}}.
   livecd_previous_cds: 'Bisher erstellte Iso-Dateien (für Live-CDs/DVDs oder USB-Sticks):'
