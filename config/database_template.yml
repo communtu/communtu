@@ -2,7 +2,7 @@ development:
   adapter: mysql
   database: communtu
   username: root
-  password: ********
+  password: tigerntn#7
   host: localhost
   port: 3306
   timeout: 5000	
@@ -19,7 +19,7 @@ production:
   adapter: mysql
   database: communtu
   username: root
-  password: *******
+  password: tigerntn#7
   host: localhost
   # JRuby doesn't support # JRuby doesn't support socket:
                           #socket:

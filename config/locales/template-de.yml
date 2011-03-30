@@ -310,7 +310,7 @@ de:
   logfile_extract: Auszug aus dem Logfile
   login: Login
   login_small: einloggen
-  mailinglist: 'Mailinglisten:'
+  mailinglist: 'Mailinglisten'
   make_a_systemupgrade: Du möchtest ein System-Upgrade machen oder deine interessanten Programme einbringen? Dann schau <a href="http://communtu.wordpress.com/2009/09/16/mit-communtu-ein-systemupgrade-durchfuhren/">wie einfach das geht</a> und lade deine Paketliste bei Communtu hoch.
   make_distribution_final: Distribution als stabil freigeben
   make_distribution_visible: Distribution sichtbar machen
@@ -386,6 +386,7 @@ de:
   nothing_found_questionmark: Nichts gefunden?
   number_of_packages_in_bundles: Zahl der Pakete in allen Bündeln
   offer_new_category: Vorschlag einer neuen Kategorie
+  order_mailinglist: 'Mailingliste bestellen'
   order_number: 'Sortiernummer (kleinste Zahl zu erst):'
   our_blog: Unser Blog
   oxygen_icon_legal_notice: Einige der Icons sind aus dem Oxygen-Iconset http://www.oxygen-icons.org
@@ -443,6 +444,7 @@ de:
   subtype: 'Subtyp:'
   superior_category: Übergeordnete Kategorie
   tested_bundle: 'Bündel die getestet sind:'
+  thanks_for_order: 'Danke für die Bestellung der Mailingliste(n).'
   third_party: alle Anbieter
   to_chat: zum Chat
   to_colon: 'An:'
