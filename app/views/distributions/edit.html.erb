@@ -15,7 +15,6 @@
    # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
 %>
 
-<% if is_admin? %>
 <h1><%=t(:view_distributions_edit_0)%></h1>
 
 <%= error_messages_for :distribution %>
@@ -56,4 +55,3 @@
 
 <%= link_to t(:show), @distribution %> |
 <%= link_to t(:back), distributions_path %>
-<% end %>

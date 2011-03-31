@@ -25,6 +25,18 @@ module ApplicationHelper
     is_admin? or (logged_in? and current_user.has_role?('power user'))
   end
 
+  def is_registered_user?
+    logged_in? and !current_user.anonymous?
+  end
+  
+  def current_distribution
+    if current_user.nil? or current_user==:false
+      Distribution.current
+    else
+      current_user.distribution
+    end
+  end
+  
   def new_trans_id
     @last_trans = Translation.find(:first, :order => "translatable_id DESC")
     last_id = @last_trans.translatable_id

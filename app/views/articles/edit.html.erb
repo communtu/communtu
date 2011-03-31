@@ -15,7 +15,6 @@
    # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
 %>
 
-<% if is_admin? %>
 <h1><%=t(:edit_press_archiv)%></h1>
 
 <%= error_messages_for :category %>
@@ -44,6 +43,3 @@
   </p>
 <% end %>
 
-<% else %>
-<p><%=t(:not_logged_in)%></p>
-<% end %>

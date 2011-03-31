@@ -15,7 +15,6 @@
    # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
 %>
 
-<% if logged_in? %>
 <h1><%=t(:view_categories_index_0)%></h1>
 
 <table>
@@ -45,6 +44,3 @@
 <%= link_to t(:new_category), new_category_path %>
 &nbsp;&nbsp;&nbsp;
 <%= link_to t(:view_categories_index_12), '/images/categories.png', :target => '_blank' %>
-<% else %>
-<p><%=t(:not_logged_in)%></p>
-<% end %>

@@ -15,6 +15,10 @@
 # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
 
 class ArticlesController < ApplicationController
+  before_filter :check_administrator_role, :flash => { :notice => I18n.t(:no_admin) }, 
+                :except => :index
+
+  
   def title
     "Communtu: " + t(:press_archiv)
   end
@@ -72,7 +76,7 @@ class ArticlesController < ApplicationController
   def index
     @articles = Article.find(:all, :conditions => {:language_code => I18n.locale.to_s}, :order => 'created_at DESC')
     respond_to do |format|
-      format.html # show.html.erb
+      format.html # index.html.erb
       format.xml  { render :xml => @article }
     end
   end
