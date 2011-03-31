@@ -1,11 +1,21 @@
+# SQLite version 3.x
+#   gem install sqlite3-ruby (not necessary on OS X Leopard)
+#development:
+#  adapter: sqlite3
+#  database: db/development.sqlite3
+#  timeout: 5000
+
 development:
   adapter: mysql
   database: communtu
   username: root
-  password: tigerntn#7
+  password:
   host: localhost
+  # JRuby doesn't support socket:
+  #socket: /var/run/mysqld/mysqld.sock
   port: 3306
-  timeout: 5000	
+  timeout: 5000
+
 
 # Warning: The database defined as 'test' will be erased and
 # re-generated from your development database when you run 'rake'.
@@ -19,12 +29,9 @@ production:
   adapter: mysql
   database: communtu
   username: root
-  password: tigerntn#7
+  password:
   host: localhost
-  # JRuby doesn't support # JRuby doesn't support socket:
-                          #socket:
-  ## JRuby doesn't support socket:
-  #host: 127.0.0.1
-   #socket: /var/run/mysqld/mysqld.sock
+  # JRuby doesn't support socket:
+  #socket: /var/run/mysqld/mysqld.sock
   port: 3306
   timeout: 5000
