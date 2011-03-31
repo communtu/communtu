@@ -40,7 +40,7 @@ sudo gem install chronic packet
 # debian packaging
 sudo apt-get install reprepro fakeroot dpkg-dev dh-make build-essential debootstrap schroot edos-debcheck apt-mirror
 #livecd
-sudo apt-get install kvm libdbd-sqlite3-perl genisoimage squashfs-tools python-software-properties kpartx
+sudo apt-get install kvm kvm-pxe libdbd-sqlite3-perl genisoimage squashfs-tools python-software-properties kpartx
 
 echo 'SSH="ssh -p 2221 -o StrictHostKeyChecking=no -o ConnectTimeout=500 root@localhost"' >> ~/.bashrc
 echo 'SCP="scp -P 2221 -o StrictHostKeyChecking=no -o ConnectTimeout=500"' >> ~/.bashrc
