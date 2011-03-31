@@ -65,6 +65,23 @@ class HomeController < ApplicationController
 
   def mail
   end
+  
+  def news
+      if params[:announce] == "1" and I18n.locale.to_s == "de"
+         system "echo \"\" | mail -s \"announce\" -c info@toddy-franz.de -a \"FROM: #{current_user.email}\" communtu-announce-de+subscribe@googlegroups.com &"
+         flash[:notice] = t(:thanks_for_order)
+      elsif params[:announce] == "1"
+         system "echo \"\" | mail -s \"announce\" -c info@toddy-franz.de -a \"FROM: #{current_user.email}\" communtu-announce-en+subscribe@googlegroups.com &"
+         flash[:notice] = t(:thanks_for_order)
+      end
+      if params[:discuss] == "1" and I18n.locale.to_s == "de"
+         system "echo \"\" | mail -s \"discuss\" -c info@toddy-franz.de -a \"FROM: #{current_user.email}\" communtu-discuss-de+subscribe@googlegroups.com &"
+         flash[:notice] = t(:thanks_for_order)
+      elsif params[:discuss] == "1"
+         system "echo \"\" | mail -s \"discuss\" -c info@toddy-franz.de -a \"FROM: #{current_user.email}\" communtu-discuss-en+subscribe@googlegroups.com &"
+         flash[:notice] = t(:thanks_for_order)
+      end                                        
+  end
 
   def donate
   end

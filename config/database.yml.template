@@ -9,13 +9,13 @@ development:
   adapter: mysql
   database: communtu
   username: root
-  password: 
+  password:
   host: localhost
   # JRuby doesn't support socket:
   #socket: /var/run/mysqld/mysqld.sock
   port: 3306
   timeout: 5000
-	
+
 
 # Warning: The database defined as 'test' will be erased and
 # re-generated from your development database when you run 'rake'.
@@ -29,10 +29,9 @@ production:
   adapter: mysql
   database: communtu
   username: root
-  password: 
+  password:
   host: localhost
   # JRuby doesn't support socket:
   #socket: /var/run/mysqld/mysqld.sock
   port: 3306
   timeout: 5000
-
