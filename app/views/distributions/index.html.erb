@@ -16,7 +16,6 @@
 %>
 
 <%= render_flash %>
-<% if logged_in? %>
 <div class='inner0'>
 <span class='headline'><%=t(:view_distributions_index_0)%></span><br/>
 <% for distribution in @distributions %>
@@ -27,9 +26,4 @@
 <% end %>
 
 </div>
-<% else %>
-<div class="inner0">
-<p><%=t(:not_logged_in)%></p>
-</div>
-<% end %>
 <%= render(:partial => 'home/conny')%>

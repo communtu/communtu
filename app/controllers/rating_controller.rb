@@ -15,7 +15,6 @@
 # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
 
 class RatingController < ApplicationController
-  before_filter :is_anonymous
   
   def rate
     @metapackage = Metapackage.find(params[:id])

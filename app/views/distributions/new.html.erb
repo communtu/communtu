@@ -15,7 +15,6 @@
    # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
 %>
 
-<% if is_admin? %>
 <h1><%=t(:new_distribution)%></h1>
 
 <%= error_messages_for :distribution %>
@@ -50,4 +49,3 @@
 <% end %>
 
 <%= link_to t(:back), distributions_path %>
-<% end %>

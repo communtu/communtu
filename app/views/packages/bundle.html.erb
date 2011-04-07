@@ -15,10 +15,4 @@
    # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
 %>
 
-<% if logged_in? %>
 <%= render :partial => "bundlelist", :locals => { :packages => @packages, :distribution => @distribution, :groups => @groups } %>
-<% else %>
-<div class="inner0">
-<p><%=t(:not_logged_in)%></p>
-</div>
-<% end %>

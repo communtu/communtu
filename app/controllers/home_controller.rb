@@ -87,16 +87,10 @@ class HomeController < ApplicationController
   end
   
  def email
-     @form_name = params[:form][:name]
-     @form_frage = params[:form][:frage]
-     if logged_in?
-     MyMailer.deliver_mail(@form_name, @form_frage, current_user)
-     else
-     u = User.find(3)
-     current_user = u
-     MyMailer.deliver_mail(@form_name, @form_frage, current_user)
-     current_user = ""
-     end
+    @form_name = params[:form][:name]
+    @form_frage = params[:form][:frage]
+    u = if logged_in? then current_user else User.first end
+    MyMailer.deliver_mail(@form_name, @form_frage, u)
     flash[:notice] = t(:controller_home_1)
     redirect_to params[:form][:backlink]
   end

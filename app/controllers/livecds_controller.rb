@@ -15,7 +15,8 @@
 # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
 
 class LivecdsController < ApplicationController
-  before_filter :login_required
+  before_filter :login_required, :only => [:destroy, :remaster, :force_remaster, :remaster_new]
+  before_filter :check_administrator_role, :add_flash => { :notice => I18n.t(:no_admin) }, :only => [:start_vm, :stop_vm, :start_vm_basis]
 
   def title
     "Communtu: " + t(:livecd)
@@ -78,13 +79,6 @@ class LivecdsController < ApplicationController
     @cd = Livecd.find(params[:id])
     @cd.start_vm_basis
     render :action => 'show'
-  end
-
-  def download
-    @cd = Livecd.find(params[:id])
-    @cd.downloaded += 1
-    @cd.save
-    send_file @cd.iso_image, :type => "application/iso-file"
   end
 
 end

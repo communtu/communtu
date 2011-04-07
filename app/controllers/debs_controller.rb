@@ -15,6 +15,8 @@
 # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
 
 class DebsController < ApplicationController
+  before_filter :check_administrator_role, :add_flash => { :notice => I18n.t(:no_admin) }
+
   def title
     t(:controller_debs_0)
   end

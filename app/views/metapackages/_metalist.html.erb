@@ -16,7 +16,6 @@
 %>
 
 
-<% if logged_in? %>
 
 <table style="height:100%;" width="100%" cellspacing="0">
   <tr>
@@ -46,8 +45,8 @@
 	        <% end %>
 	    </td>
 		<td class="<%= css %>" valign="middle">
-			<% if metapackage.rated_by_user?(current_user) or current_user.anonymous?%>
-				<!-- STARS allready voted -->
+			<% if false and logged_in? and metapackage.rated_by_user?(current_user) %>
+				<!-- STARS already voted -->
 				<div class="star-ratings-block" id="star-ratings-block-<%=h metapackage.id %>">
 	            	<%= render :partial => "rating/show", :locals => { :metapackage => metapackage } %>
 	        	</div>
@@ -60,7 +59,7 @@
 		</td>
 		<td class="<%= css %>" valign="middle" align="center">
 			<%= link_to(image_tag("/images/64x64/download.png", :height => 30, :title =>t(:go_to_download), :alt=>t(:go_to_download), :border => "0"), "/metapackages/install/#{metapackage.id}") %>
-            <% if !current_user.anonymous? %>
+            <% if is_registered_user? %>
 			  <% path = if params[:action]=='index_mine' then "mybundle_cd" else "bundle_cd" end %>
               <%= link_to image_tag("/images/22x22/cd.png", :size => "30x30", :border => "0", :title => t(:create_your_livedvd), :alt => t(:create_your_livedvd)), "/download/settings/#{metapackage.id}?path=#{path}" %>
             <% end %>
@@ -90,6 +89,3 @@
       <% end %>
     <% end %>
     </table>
-<% else %>
-<p><%=t(:not_logged_in)%></p>
-<% end %>

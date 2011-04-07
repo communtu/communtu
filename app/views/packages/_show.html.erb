@@ -15,7 +15,6 @@
    # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
 %>
 
-  <% if logged_in? %>
     <div class="inner0">
 <span class="headline">
 	<%= @package.icon(35)%>
@@ -144,9 +143,4 @@
 <%= link_to t(:edit), {:action => 'edit', :id => @package.id} %> &nbsp;&nbsp;
 
 <%= link_to t(:view_packages_show_26), {:action => 'convert', :id => @package.id} %> &nbsp;&nbsp;
-<% else %>
-<div class="inner0">
-<p><%=t(:not_logged_in)%></p> 
-</div>
-<% end %>
 

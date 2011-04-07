@@ -16,7 +16,6 @@
 %>
 
 <div class="inner2">
-<% if logged_in? %>
 <%= render_flash %>
     <span class="headline"><%=t(:bundel_edit)%></span>
     <br/>
@@ -87,8 +86,5 @@
         <%= submit_tag t(:save)%>
 		
 
-    <% end %>
-    <% else %>
-    <p><%=t(:not_logged_in)%></p>
     <% end %>
 </div>

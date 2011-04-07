@@ -18,7 +18,6 @@
 <%= render_flash %>
 
 <div class="inner1">
-  <% if logged_in? %>
 <table>
 <%= form_tag ("/metapackages/save_comment/" + @id.to_s) %>
 	<tr><td valign='top'><%=t(:Kommentar)%></td><td>
@@ -32,7 +31,4 @@
 	
 </table>
 </form>
-<% else %>
-<p><%=t(:not_logged_in)%></p>
-<% end %>
 </div>

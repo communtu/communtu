@@ -15,9 +15,5 @@
    # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
 %>
 
-<% if logged_in? %>
 <h2><%=t(:view_metapackages_rdepends_0)%><%= @metapackage.name %><%=t(:view_metapackages_rdepends_1)%></h2> 
 <%= show_rdependencies @dependencies %>
-<% else %>
-<p><%=t(:not_logged_in)%></p>
-<% end %>

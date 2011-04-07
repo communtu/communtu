@@ -15,8 +15,8 @@
 # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
 
 class RepositoriesController < ApplicationController
-  before_filter :login_required
-  before_filter :check_administrator_role, :only => [:sync_package, :sync_all, :test_all], :flash => { :notice => I18n.t(:no_admin) }
+  before_filter :check_administrator_role, :flash => { :notice => I18n.t(:no_admin) }, 
+                :except => :show
 
   def title
     t(:controller_repositories_0)

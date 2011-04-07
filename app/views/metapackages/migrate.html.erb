@@ -15,7 +15,6 @@
    # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
 %>
 
-<% if logged_in? %>
 <%= form_tag "/metapackage/finish_migrate" %>
     <div>
         <p><%=t(:view_metapackages_migrate_0)%></p>
@@ -29,6 +28,3 @@
         <p><%= submit_tag(t(:migrate)) %></p>
     </div>
 </form>
-<% else %>
-<p><%=t(:not_logged_in)%></p>
-<% end %>
