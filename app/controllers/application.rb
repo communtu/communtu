@@ -67,7 +67,7 @@ class ApplicationController < ActionController::Base
     end
   end         
   
-  def do_anonymous_login
+  def do_anonymous_login(forced=false)
     cookies.delete :auth_token
     # create a lock in order to avoid concurrent creation of anonymous users
     system "dotlockfile #{RAILS_ROOT}/anolock"    
@@ -94,7 +94,8 @@ class ApplicationController < ActionController::Base
     @user.save!
     # release lock
     system "dotlockfile -u #{RAILS_ROOT}/anolock"
-    flash[:notice] = t(:controller_users_3,{:anonymous_user=>@user.login})
+    flash[:notice] = if forced then t(:action_needs_login) else "" end
+    flash[:notice] += " "+t(:controller_users_3,{:anonymous_user=>@user.login})
     
     #have the user logged in 
     self.current_user = @user

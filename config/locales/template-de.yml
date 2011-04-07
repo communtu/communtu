@@ -3,6 +3,7 @@ de:
   Kommentar: 'Kommentar: '
   about_us: Über uns
   achtung: Achtung! bei Communtu erst in Kürze verfügbar.
+  action_needs_login: Für diesen Bereich ist ein Login erforderlich, damit die Konfiguration gespeichert werden kann.
   add: hinzufügen
   add_comment: Kommentar hinzufügen
   add_sources: Quellen hinzufügen
@@ -134,7 +135,7 @@ de:
   controller_sessions_5: Dein Benutzername oder Passwort ist falsch. Bitte ggf. unten auf "Registrieren" klicken.
   controller_sessions_6: Dein Benutzerkonto wurde noch nicht aktiviert. Der Aktivierungscode wurde dir per Email zugeschickt.
   controller_sessions_7: Dein Benutzerkonto wurde deaktiviert oder gelöscht.
-  controller_suggestion_1: Um etwas installieren zu können, musst du zunächst etwas auswählen. Speichern nicht vergessen!
+  controller_suggestion_1: Um etwas installieren zu können, musst du zunächst etwas auswählen.
   controller_suggestion_11: Paketquellen hinzufügen
   controller_suggestion_12: Folgende Paketquellen werden hinzugefügt
   controller_suggestion_15: Pakete installieren
@@ -301,7 +302,7 @@ de:
   livecd_message: Über eine Live-CD kann die Software sowohl ausprobiert als auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} erstellt, die du dann brennen kannst.<br /><br /> Die Erstellung des Images dauert eine gewisse Zeit. Du wirst per Email benachrichtigt, sobald das Image fertig ist. Bitte achte darauf, dass in deinen Benutzereinstellungen eine gültige Email-Adresse angegeben ist.
   liveusb_image_link: http://wiki.ubuntuusers.de/CD-Images
   liveusb_message: Über einen USB-Stick kann die Software sowohl ausprobiert als auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} erstellt, die du dann auf den USB-Stick übertragen kannst.<br /><br /> Die Erstellung des Images dauert eine gewisse Zeit. Du wirst per Email benachrichtigt, sobald das Image fertig ist. Bitte achte darauf, dass in deinen Benutzereinstellungen eine gültige Email-Adresse angegeben ist.
-  livecd_please_register: Um Live-CD/DVDs oder USB-Sticks zu erstellen, musst du dich erst {{register}} oder {{login}}.
+  livecd_please_register: Um Live-CD/DVDs oder USB-Sticks zu erstellen, musst du erst das anonyme Benutzerkonto {{register}} oder dich mit {{login}}.
   livecd_previous_cds: 'Bisher erstellte Iso-Dateien (für Live-CDs/DVDs oder USB-Sticks):'
   livecd_start: Live-CD/DVD erstellen
   livecd_start_message: 'Hier kannst du eine Live-CD/DVD erstellen lassen, die die von dir ausgewählte Software enthält. Du hast folgende Bündel ausgewählt:'
@@ -309,7 +310,7 @@ de:
   liveusb_start: Iso-Datei erstellen
   logfile_extract: Auszug aus dem Logfile
   login: Login
-  login_small: einloggen
+  login_small: einem existierenden Benutzerkonto einloggen
   mailinglist: 'Mailinglisten'
   make_a_systemupgrade: Du möchtest ein System-Upgrade machen oder deine interessanten Programme einbringen? Dann schau <a href="http://communtu.wordpress.com/2009/09/16/mit-communtu-ein-systemupgrade-durchfuhren/">wie einfach das geht</a> und lade deine Paketliste bei Communtu hoch.
   make_distribution_final: Distribution als stabil freigeben
@@ -409,7 +410,7 @@ de:
   published: veröffentlicht
   questionmark_conny: Klick mich und sag mir, was dir unklar ist.
   register: Registrieren
-  register_small: registrieren
+  register_small: in ein dauerhaftes umwandeln
   repositories_incompletely_read: Repositories ohne Pakete (da nicht richtig eingelesen)
   repositories_without_packages: Repositories ohne Pakete (da Repositories leer)
   repository: Repository

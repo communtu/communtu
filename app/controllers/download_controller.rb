@@ -36,10 +36,9 @@ class DownloadController < ApplicationController
   end
 
   def selection
-    if !logged_in? and params[:path]=="install"
-      do_anonymous_login
+    if !logged_in?
+      do_anonymous_login(true)
     end
-    if check_login then return end
     if !params[:path].nil?
       session[:path] = params[:path]
     end  
