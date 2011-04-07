@@ -21,6 +21,11 @@ class ApplicationController < ActionController::Base
   def available_locales; AVAILABLE_LOCALES; end 
   
     before_filter :set_locale
+    before_filter :log_ram # or use after_filter
+
+  def log_ram
+    logger.warn Process.pid.to_s + ': RAM USAGE: ' + `pmap #{Process.pid} | tail -1`[10,40].strip
+  end
 
   def set_locale
     I18n.locale = extract_locale_from_subdomain
