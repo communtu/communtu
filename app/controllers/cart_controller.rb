@@ -15,11 +15,15 @@
 # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
 
 class CartController < ApplicationController
-  before_filter :login_required
+  before_filter :login_required, :except => :create
+  
     def title
     t(:bundle_editor)
     end
     def create
+        if !logged_in?
+          do_anonymous_login(true)
+        end
         prepare_create
         redirect_to "/packages"
     end
