@@ -17,6 +17,9 @@
 
 class DownloadController < ApplicationController
 
+  before_filter :login_required, :only => [:cd_email,:sources,:prepare_install_sources,:installation,:livecd,:current_cd,
+                                           :update_data,:update_ratings,:create_livecd,:bundle_to_livecd,:settings]
+
   def title
     if params[:controller] == "download" and params[:action] == "selection"
       "Communtu: " + t(:model_user_profile_tabz_1)
@@ -63,7 +66,6 @@ class DownloadController < ApplicationController
           session[:cd_bundle] = params[:id]      
     end
     session[:backlink] = request.env['HTTP_REFERER']
-    if check_login then return end
     @user = current_user
     if @user.derivative.nil? then @user.derivative_id = 1 end
     @distributions = @user.possible_distributions
@@ -81,7 +83,6 @@ class DownloadController < ApplicationController
   end
 
   def sources
-    if check_login then return end
     user = current_user
     dist = user.distribution
     license = user.license
@@ -110,16 +111,13 @@ class DownloadController < ApplicationController
   end
 
   def prepare_install_sources
-    if check_login then return end
   end
 
   def installation
-    if check_login then return end
     @metas = current_user.selected_packages.uniq.map{|m| m.debian_name}.join(",")
   end
 
   def livecd
-    if check_login then return end
     @cd = Livecd.find(:first,:conditions=>{"livecds.profile_version" => current_user.profile_version,
                                            "livecd_users.user_id" => current_user.id},
                              :include => 'livecd_users')
@@ -127,7 +125,6 @@ class DownloadController < ApplicationController
 
   # update the basic data of the user's software selection
   def update_data 
-    if check_login then return end
 
     # update other user data before updating profile so changes take effect
     user = current_user
@@ -154,7 +151,6 @@ class DownloadController < ApplicationController
   end
   
   def update_ratings
-    if check_login then return end
     user = current_user
     user.first_login = 0
     user.profile_changed = true
@@ -208,7 +204,6 @@ class DownloadController < ApplicationController
   end
 
   def bundle_to_livecd
-    if check_login then return end
     if !params[:path].nil?
       session[:path] = params[:path]
     end  

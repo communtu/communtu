@@ -53,7 +53,7 @@
       <!-- log out -->
       <%= link_to t(:view_layouts_application_9), logout_path  %> |
 
-        <% if !current_user.anonymous? %>
+        <% if !is_anonymous? %>
           <span class="register_text"><%= t(:register) %>
            <% if is_admin? %>
            </span>
@@ -89,7 +89,7 @@
    else 
      image = "/images/navi_buendel.png" 
    end %>	
-<% @has_own_bundles = Metapackage.find_all_by_user_id(current_user.id) %>
+<% @has_own_bundles = if logged_in? then Metapackage.find_all_by_user_id(current_user.id) else [] end %>
 <% link = if @has_own_bundles.length != 0 then "index_mine" else "index" end %>
 <% imagetag = image_tag(image, :border => '0', :alt=>t(:view_layouts_application_26),:title=>t(:view_layouts_application_26)) %> 
 <% text = "<div class=\"navi_zwei\">#{t(:view_layouts_application_23)}</div>" %>

@@ -2,6 +2,7 @@
 <ol>
 <% current = 1000
    path = paths(session[:path])%>
+<% if !path.nil? %>   
 <% for i in 0..path.length-1 
    node=path[i]%>
    <li> 
@@ -9,7 +10,7 @@
       current = i%>
       <i>
    <% end %>	
-   <% if i-1 > current && current_user.profile_changed && !["install_bundle","install_package"].include?(session[:path])  %>
+   <% if i-1 > current && profile_changed? && !["install_bundle","install_package"].include?(session[:path])  %>
       <%= node[:name]%> 
    <% else %>
       <%= link_to(node[:name],node[:action])%>
@@ -18,6 +19,7 @@
       </i>
    <% end %>
    </li>	
+<% end %>
 <% end %>
 </ol>
 </div>

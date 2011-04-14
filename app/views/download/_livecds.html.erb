@@ -15,7 +15,7 @@
    # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
 %>
 
-<%cds=current_user.livecds.sort {|a, b| b.created_at <=> a.created_at} %>
+<%cds= if logged_in? then current_user.livecds.sort {|a, b| b.created_at <=> a.created_at} else [] end %>
 
 <% if !cds.empty? %>
   <p><%=t(:livecd_previous_cds)%><br />

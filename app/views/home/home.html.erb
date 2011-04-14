@@ -121,7 +121,7 @@
 		</tbody>
 	</table>
 	<br/>
-	<% if logged_in? and !current_user.anonymous? %>
+	<% if logged_in? and !is_anonymous? %>
 		<%= link_to t(:view_home_home_rating_link), '/metapackages/index', :title=>t(:view_home_home_rating_link) %>
 	<% end %>
 	<% if logged_in? %>

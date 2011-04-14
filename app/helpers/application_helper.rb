@@ -25,8 +25,20 @@ module ApplicationHelper
     is_admin? or (logged_in? and current_user.has_role?('power user'))
   end
 
+  def is_anonymous?
+    logged_in? and current_user.anonymous?
+  end
+
   def is_registered_user?
     logged_in? and !current_user.anonymous?
+  end
+
+  def profile_changed?
+    if logged_in?
+      current_user.profile_changed
+    else
+      false
+    end  
   end
   
   def current_distribution

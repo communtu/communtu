@@ -22,9 +22,9 @@ class UsersController < ApplicationController
   end 
   layout 'application'
   
-  before_filter :not_logged_in_required, :only => [:new, :create] 
+  before_filter :not_logged_in_required, :only => [:new, :create, :anonymous_login], :add_flash => { :notice => I18n.t(:controller_sessions_1) } 
   before_filter :login_required, :only => [:show, :edit, :update, :disable, :destroy, :enable, :metapackages]
-  before_filter :check_administrator_role, :only => [:index, :destroy, :enable, :disable, :user_statistics, :spam_users_delete]
+  before_filter :check_administrator_role, :only => [:index, :destroy, :enable, :disable, :user_statistics, :spam_users_delete], :add_flash => { :notice => I18n.t(:no_admin) }
   
   helper :users
     

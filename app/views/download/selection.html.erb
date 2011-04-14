@@ -20,13 +20,13 @@
 <%= error_messages_for :user_profile %>
 <%= render :partial => "path" %>
 
-<% if current_user.anonymous? and session[:path]!="install" %>
+<% if is_anonymous? and session[:path]!="install" %>
 <%=t(:livecd_please_register, :register => link_to(t(:register_small), edit_user_path(current_user)), :login => link_to(t(:login_small), '/logout_login'))%>
 <% else %>
 
 <h2><%=t(:view_user_profiles__profile_rating_0)%></h2>
 
-<%= form_remote_tag(:url => "/user_profile/update_ratings", :name => "ratings", :html => {:id => "ajax"})  %>
+<%= form_remote_tag(:url => "/download/update_ratings", :name => "ratings", :html => {:id => "ajax"})  %>
 <%=t(:which_programs_do_you_need)%> <%=t(:view_user_profiles__profile_rating_1)%>
 
 <div class="user_profile_box">

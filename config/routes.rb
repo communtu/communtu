@@ -62,7 +62,6 @@ ActionController::Routing::Routes.draw do |map|
 
   map.connect '/users/anonymous_login', :controller => 'users', :action => 'anonymous_login'
   map.resources :users, :member => { :enable => :put, :search => :put, :anonymous_login => :get} do |users|
-    users.resource  :user_profile
     users.resource  :account
     users.resources :roles
   end
