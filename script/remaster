@@ -104,7 +104,7 @@ function start_vm
 function start_vm_snap
 {
   echo "*** starting virtual machine"
-  sudo $NICEKVM -daemonize -drive file=$2,if=virtio,boot=on,snapshot=on,cache=unsafe -smp 4 -m 800 -net nic,model=virtio -nographic -redir tcp:$1::22
+  sudo $NICEKVM -daemonize -drive file=$2,if=virtio,boot=on,snapshot=on -smp 4 -m 800 -net nic,model=virtio -nographic -redir tcp:$1::22
 }
 
 function stop_vm 
