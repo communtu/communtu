@@ -15,7 +15,6 @@
    # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
 %>
 
-<% if logged_in? %>
 <span class="headline"><%=t(:view_packages_edit_0)%></span>
 
 <%= error_messages_for :package %>
@@ -70,8 +69,3 @@
 
 <%= link_to t(:back), package_path(@package) %>
 </div>
-<% else %>
-<div class="inner0">
-<p><%=t(:not_logged_in)%></p>
-</div>
-<% end %>

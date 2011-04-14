@@ -15,8 +15,8 @@
 # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
 
 class PackagesController < ApplicationController
-  before_filter :login_required
-  before_filter :check_administrator_role, :add_flash => { :notice => I18n.t(:no_admin) }, :only => :destroy
+  before_filter :check_administrator_role, :add_flash => { :notice => I18n.t(:no_admin) }, 
+                :only => [:new, :create, :edit, :update, :destroy]
 
   def title
     t(:packages)

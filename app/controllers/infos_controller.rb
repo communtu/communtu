@@ -43,8 +43,8 @@ class InfosController < ApplicationController
   def create
     @info = Info.new
     @info.author = current_user
-    @info.content = params[:info][:content]
-    @info.header = params[:info][:header]
+    @info.content_tid = Translation.new_translation(params[:info][:content]).translatable_id
+    @info.header_tid = Translation.new_translation(params[:info][:header]).translatable_id
 
     respond_to do |format|
       if @info.save
@@ -63,8 +63,12 @@ class InfosController < ApplicationController
   def update
     @info = Info.find(params[:id])
 
+    @info.author = current_user
+    @info.content_tid = Translation.new_translation(params[:info][:content]).translatable_id
+    @info.header_tid = Translation.new_translation(params[:info][:header]).translatable_id
+
     respond_to do |format|
-      if @info.update_attributes(params[:info])
+      if @info.save
         flash[:notice] = 'Info was successfully updated.'
         format.html { redirect_to(@info) }
         format.xml  { head :ok }
@@ -88,7 +92,7 @@ class InfosController < ApplicationController
   end
 
   def rss
-    @infos = Info.find(:all, :order => "id DESC", :limit => 1)
+    @infos = Info.find(:all, :order => "id DESC", :limit => 10)
     render :layout => false
     response.headers["Content-Type"] = "application/xml; charset=utf-8"
   end

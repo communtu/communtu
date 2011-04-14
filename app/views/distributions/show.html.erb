@@ -16,7 +16,6 @@
 %>
 
 <%= render_flash %>
-<% if logged_in? %>
 <%= dist_show @distribution, "inner0", false %>
 	<table width="100%">
 	<tr>
@@ -40,10 +39,5 @@
 	<%= link_to(t(:delete), {:controller => :distributions, :action => :destroy,\
 		:id => @distribution.id},\
 		{:method => :delete, :confirm => t(:view_distributions_show_8)} ) %>
-<% end %>
-<% else %>
-<div class="inner0">
-<p><%=t(:not_logged_in)%></p>
-</div>
 <% end %>
 <%= render(:partial => 'home/conny')%>

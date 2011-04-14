@@ -16,7 +16,6 @@
 %>
 
 <%= render_flash %>
-<% if is_admin? %>
 <h1><%=t(:new_category)%></h1>
 
 <%= error_messages_for :category %>
@@ -47,6 +46,3 @@
 <% end %>
 
 <%= link_to t(:back), categories_path %>
-<% else %>
-<p><%=t(:not_logged_in)%></p>
-<% end %>

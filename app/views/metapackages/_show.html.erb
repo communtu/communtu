@@ -17,7 +17,6 @@
 
 <div class="inner0">
 <%= render_flash %>
-<% if logged_in? %>
 
 <table width="100%">
 	<tr><td width="70%" valign="top">
@@ -26,7 +25,7 @@
 		<% if show_install %>	
             <span style="position: relative; left: 350px;">
 			  <%= link_to(image_tag("/images/64x64/download.png", :height => 30, :title =>t(:go_to_download), :alt=>t(:go_to_download), :border => "0"), "/metapackages/install/#{@metapackage.id}") %>
-              <% if current_user.distribution_id<7 && !current_user.anonymous? %>
+              <% if is_registered_user? %>
                 <%= link_to image_tag("/images/22x22/cd.png", :size => "30x30", :border => "0", :title => t(:create_your_livedvd), :alt => t(:create_your_livedvd)), "/download/settings/#{@metapackage.id}?path=bundle_cd" %>
               <%end%>
             </span>
@@ -171,7 +170,4 @@
 <%= render :partial => "package_list", :locals => { :metapackage => @metapackage, :editable => false, :distribution => @distribution, :derivative =>  @derivative} %>
 
 <%= show_ratings_and_comments @metapackage.ratings.find(:all, :limit=> 5) %>
-<% else %>
-<p><%=t(:not_logged_in)%></p>
-<% end %>
 </div>

@@ -15,7 +15,6 @@
 # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
 
 class VideosController < ApplicationController
-  before_filter :login_required
   def title
     t(:view_layouts_application_21)
   end

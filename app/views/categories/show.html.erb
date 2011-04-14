@@ -15,7 +15,6 @@
    # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
 %>
 
-<% if logged_in? %>
 <p>
 	<b>Id:</b>
 	<%=h @category.id %>
@@ -49,6 +48,3 @@
 
 <%= link_to t(:edit), edit_category_path(@category) %> |
 <%= link_to t(:back), categories_path %>
-<% else %>
-<p><%=t(:not_logged_in)%></p>
-<% end %>

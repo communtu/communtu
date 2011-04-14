@@ -65,21 +65,32 @@ class HomeController < ApplicationController
 
   def mail
   end
+  
+  def news
+      if params[:announce] == "1" and I18n.locale.to_s == "de"
+         system "echo \"\" | mail -s \"announce\" -c info@toddy-franz.de -a \"FROM: #{current_user.email}\" communtu-announce-de+subscribe@googlegroups.com &"
+         flash[:notice] = t(:thanks_for_order)
+      elsif params[:announce] == "1"
+         system "echo \"\" | mail -s \"announce\" -c info@toddy-franz.de -a \"FROM: #{current_user.email}\" communtu-announce-en+subscribe@googlegroups.com &"
+         flash[:notice] = t(:thanks_for_order)
+      end
+      if params[:discuss] == "1" and I18n.locale.to_s == "de"
+         system "echo \"\" | mail -s \"discuss\" -c info@toddy-franz.de -a \"FROM: #{current_user.email}\" communtu-discuss-de+subscribe@googlegroups.com &"
+         flash[:notice] = t(:thanks_for_order)
+      elsif params[:discuss] == "1"
+         system "echo \"\" | mail -s \"discuss\" -c info@toddy-franz.de -a \"FROM: #{current_user.email}\" communtu-discuss-en+subscribe@googlegroups.com &"
+         flash[:notice] = t(:thanks_for_order)
+      end                                        
+  end
 
   def donate
   end
   
  def email
-     @form_name = params[:form][:name]
-     @form_frage = params[:form][:frage]
-     if logged_in?
-     MyMailer.deliver_mail(@form_name, @form_frage, current_user)
-     else
-     u = User.find(3)
-     current_user = u
-     MyMailer.deliver_mail(@form_name, @form_frage, current_user)
-     current_user = ""
-     end
+    @form_name = params[:form][:name]
+    @form_frage = params[:form][:frage]
+    u = if logged_in? then current_user else User.first end
+    MyMailer.deliver_mail(@form_name, @form_frage, u)
     flash[:notice] = t(:controller_home_1)
     redirect_to params[:form][:backlink]
   end

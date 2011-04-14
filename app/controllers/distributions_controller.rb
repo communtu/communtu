@@ -15,10 +15,14 @@
 # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
 
 class DistributionsController < ApplicationController
-  
+
+  before_filter :check_administrator_role, :flash => { :notice => I18n.t(:no_admin) }, 
+                :except => [:index, :show]
+                
   def title
     t(:controller_distributions_0)
   end
+  
   # GET /distributions
   # GET /distributions.xml
   def index

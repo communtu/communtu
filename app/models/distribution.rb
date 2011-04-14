@@ -62,6 +62,11 @@ class Distribution < ActiveRecord::Base
     RAILS_ROOT + "/debs/repos/" + self.short_name
   end
 
+  # most recent stable distribution
+  def self.current
+    Distribution.find(:first,:conditions=>{:invisible=>false,:preliminary=>false},:order=>"id DESC")
+  end
+  
   # extract distribution from browser info string
   def self.browser_distribution(s)
     if s.nil? then

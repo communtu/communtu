@@ -15,5 +15,10 @@
    # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
 %>
 
-<%=h @user.login %><%=t(:livecd_email_body)%>
+<%=t(:hello_simple)%> <%=h @user.login %>,
+
+<%=t(:livecd_email_body)%>
 <%= @url %>
+
+<%=t(:livecd_email_body_2)%>
+

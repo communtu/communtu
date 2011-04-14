@@ -16,12 +16,14 @@
 %>
 
 <div class="secondnavi">
-        <%= link_to t(:model_user_meta_tabz_0), "/metapackages/index_mine" %> |
+        <% if logged_in?  %>
+          <%= link_to t(:model_user_meta_tabz_0), "/metapackages/index_mine" %> |
+        <% end %>
         <%= link_to t(:model_user_meta_tabz_3), "/metapackages/index" %> |
         <%= link_to(if editing_metapackage? then t(:bundel_editing) else t(:new_bundle) end, "/metapackages/new") %> |
         <%= link_to t(:view_users__sidebar_4), "/distributions" %> |
         <%= link_to t(:view_users__sidebar_2), "/metapackages/new" %>
-        <% if is_power_user?  %>
+        <% if false %>
          | <%= link_to t(:search_package), "/searches" %>
         <% end %>
 </div>

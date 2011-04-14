@@ -16,9 +16,9 @@
 
 class MetapackagesController < ApplicationController
   require 'lib/utils.rb'
-  before_filter :login_required
-  before_filter :is_anonymous, :only => :publish
-  before_filter :check_administrator_role, :flash => { :notice => I18n.t(:no_admin) }, :only => :reset
+  before_filter :login_required, :only => [:new_from_cart, :edit, :create, :update, :destroy, :publish, :edit_action, :remove_package]
+  before_filter :check_administrator_role, :flash => { :notice => I18n.t(:no_admin) }, 
+                :only => [:reset, :health_status, :migrate, :finish_migrate]
 
   def title
     if params[:action] == "show"
