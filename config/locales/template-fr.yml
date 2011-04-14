@@ -83,11 +83,11 @@ fr:
   view_home_contact_us_1: "Ici tu as la possibilit\xC3\xA9 de nous envoyer tes suggestions et critiques concernant Communtu."
   livecd_start: "Cr\xC3\xA9er live CD / DVD"
   view_user_profiles__installation_30: " Note: Ne pas renommer les fichiers deb, s'il te pla\xC3\xAEt."
-  view_user_profiles__installation_31: "Les m\xC3\xA9ta-paquets Communtu peuvent aussi \xC3\xAAtre affich\xC3\xA9s, install\xC3\xA9s et d\xC3\xA9sinstall\xC3\xA9s \xC3\xA0 l'aide de {{synaptic}} (sous Syst\xC3\xA8me -> Administration). En ce qui concerne la modification des compilations, elles sont automatiquement enregistr\xC3\xA9es \xC3\xA0 l'aide de la gestion des paquets Ubuntu."
+  view_user_profiles__installation_31: "Les m\xC3\xA9ta-paquets Communtu peuvent aussi \xC3\xAAtre affich\xC3\xA9s, install\xC3\xA9s et d\xC3\xA9sinstall\xC3\xA9s \xC3\xA0 l'aide de %{synaptic} (sous Syst\xC3\xA8me -> Administration). En ce qui concerne la modification des compilations, elles sont automatiquement enregistr\xC3\xA9es \xC3\xA0 l'aide de la gestion des paquets Ubuntu."
   create_usb_image: "<a href=\"http://ww.ubuntuusers.de/wiki/Live-USB\"> USB Stick Image </ a> cr\xC3\xA9er"
   view_home_home_2: Ubuntu Linux
   view_rating_rating_rate: " de 5 \xC3\xA9toiles donn\xC3\xA9es"
-  view_metapackages_show_version_v: (Version {{v}})
+  view_metapackages_show_version_v: (Version %{v})
   controller_passwords_5: "Mot de passe ne peut pas \xC3\xAAtre vide."
   create_iso_image: "<a href=\"http://ww.ubuntuusers.de/wiki/CD-Images\"> cr\xC3\xA9er une image ISO </ a> (pour les CD / DVD)"
   view_home_home_3: "Linux repr\xC3\xA9sente un \xC3\xAAtre humain, qui est facile \xC3\xA0 utiliser. Mais pour bien utiliser Ubuntu , on doit encore installer beaucoup de programmes apr\xC3\xA8s, et il est souvent difficile de garder un aper\xC3\xA7u. En Communtu vous donner uniquement les t\xC3\xA2ches que vous voulez ex\xC3\xA9cuter avec votre ordinateur, et  Communtu te propose un certain nombre de programmes qui peuvent \xC3\xAAtre install\xC3\xA9s automatiquement."
@@ -167,7 +167,7 @@ fr:
     Communtu - 
      malheureusement, il ya quelque chose ne fonctionne avec le don.
   conny_picture: Portrait de Communtu Conny
-  bundle_to_livecd: "LiveCD / DVD \xC3\xA0  partir de la compilation<i>{{name}}</ i> cr\xC3\xA9er"
+  bundle_to_livecd: "LiveCD / DVD \xC3\xA0  partir de la compilation<i>%{name}</ i> cr\xC3\xA9er"
   view_home_cancel_1: "Soit tu essaies \xC3\xA0 nouveau ou alors tu fais un transfer"
   view_home_news_5: "Cette liste est pour les annonces g\xC3\xA9n\xC3\xA9rales venant de l'\xC3\xA9quipe Communtu  pour les utilisateurs. Au moins une fois par semaine, un E-mail est envoy\xC3\xA9 \xC3\xA0 travers le distributeur. Les messages sont dans un"
   used_in_bundles: "Utilis\xC3\xA9 avec Communtu dans les compilations suivantes:"
@@ -202,7 +202,7 @@ fr:
   view_home_derivatives_12: "fournit des sources de paquets multim\xC3\xA9dia, qui ne sont pas, pour des raisons juridiques offertes par Ubuntu lui-m\xC3\xAAme. Medibuntu est  pris en consid\xC3\xA9ration \xC3\xA0 Communtu (par exemple, audio et film)."
   model_mailer_5: "Proposition d'un d\xC3\xA9p\xC3\xB4t"
   view_home_about_1: Qu'est-ce Communtu?
-  distribution_derivative_mismatch: "{{ D\xC3\xA9riv\xC3\xA9s}} est uniquement disponible sous{{distributions}} "
+  distribution_derivative_mismatch: "%{ D\xC3\xA9riv\xC3\xA9s} est uniquement disponible sous%{distributions} "
   view_metapackages__package_list_conflicts: "Conflits avec les paquets/Compilations suivants :"
   view_home_derivatives_13: " -le PC sera l'enregistreur vid\xC3\xA9o. Dans le film \"Freak \" selectionner, et il est install\xC3\xA9. Recommand\xC3\xA9: processeur \xC3\xA0 2 GHz, 1024 Mo de RAM, 10 Go d'espace disque dur pour le train avant, 80 + Go pour le back-end, une carte graphique avec 128 Mo de RAM avec sortie TV et une carte TV pris en charge."
   view_home_about_2: "Ubuntu est une distribution Linux qui rend Linux facile \xC3\xA0 utiliser et \xC3\xA0 comprendre. Apr\xC3\xA8s l'installation de Ubuntu \xC3\xA0 l'aide d'un CD ou un DVD, ton ordinateur est d\xC3\xA9j\xC3\xA0 bien \xC3\xA9quip\xC3\xA9 pour la navigation web, traitement de texte et beaucoup plus."
@@ -213,7 +213,7 @@ fr:
   view_home_derivatives_15: http://wiki.ubuntuusers.de/KDE
   view_home_about_4: Comment puis-je utiliser Communtu?
   view_home_derivatives_16: Ubuntu est avec le bureau KDE.
-  model_package_could_not_read: Impossible de lire {{url}}
+  model_package_could_not_read: Impossible de lire %{url}
   view_home_about_5: "Pour commencer tu dois s\xC3\xA9lectionner<b> T\xC3\xA9l\xC3\xA9charger </ b>."
   view_home_derivatives_17: http://de.wikipedia.org/wiki/Linux_Mint
   community_title: utilisateurs  d'ubuntu
@@ -224,7 +224,7 @@ fr:
   view_home_derivatives_18: "est une Ubuntu spin-off avec sa communaut\xC3\xA9 d'utilisateurs propre et se r\xC3\xA9f\xC3\xA9rant en particulier par sa Facilit\xC3\xA9 d'utilisation"
   new_distribution: Nouvelle distribution
   controller_messages_0: |
-    Message original de {{user}}  le {{datum}}  
+    Message original de %{user}  le %{datum}  
       
 
   lib_utils_0: "Syst\xC3\xA8me de commande a \xC3\xA9chou\xC3\xA9:"
@@ -399,7 +399,7 @@ fr:
   view_roles_edit_0: "Modifier un r\xC3\xB4le"
   view_user_profiles__profile_data_9: "Ici tu peux r\xC3\xA9gler le degr\xC3\xA9 de s\xC3\xA9curit\xC3\xA9 et de confortabilit\xC3\xA9 pour tes sources d'installations"
   view_home_faq_11: "Comment puis-je cr\xC3\xA9er une compilation \xC3\xA0 partir de mes programmes install\xC3\xA9s?"
-  view_cart_new_from_list_3: "d\xC3\xA9couvrir. (pour cela le paquet {{debfoster}} doit \xC3\xAAtre install\xC3\xA9. La liste g\xC3\xA9n\xC3\xA9r\xC3\xA9e contient seulement une liste minimale de (m\xC3\xA9ta-)paquets qui est n\xC3\xA9cessaire pour restaurer compl\xC3\xA8tement ton installation.)"
+  view_cart_new_from_list_3: "d\xC3\xA9couvrir. (pour cela le paquet %{debfoster} doit \xC3\xAAtre install\xC3\xA9. La liste g\xC3\xA9n\xC3\xA9r\xC3\xA9e contient seulement une liste minimale de (m\xC3\xA9ta-)paquets qui est n\xC3\xA9cessaire pour restaurer compl\xC3\xA8tement ton installation.)"
   controller_metapackages_7: Il faut  donner une version (par exemple 0.1) <br>
   view_user_profiles_help_4: "tu fais une mise \xC3\xA0 niveau  d'une version plus r\xC3\xA9cente"
   view_home_derivatives_52: " Une sorte de Automatix pour l'\xC3\xA9dition finale."
@@ -457,7 +457,7 @@ fr:
 
   view_home_beteiligung_4: "Tu  penses que tu en sais d\xC3\xA9j\xC3\xA0 beaucoup sur les programmes Open Source ? \n\
     . Dans ce cas, commente tes exp\xC3\xA9riences sur les paquets. Peut \xC3\xAAtre as-tu  vu une \n vid\xC3\xA9o int\xC3\xA9ressante concernant le programme sur Youtube? alors mets la dans \n les programmes vid\xC3\xA9os de Communtu."
-  controller_cart_2: "Les paquets suivants n'ont pas \xC3\xA9t\xC3\xA9 trouv\xC3\xA9s: {{message}} <br> S'il te pla\xC3\xAEt choisie les r\xC3\xA9f\xC3\xA9rentiels qui contiennent les paquets ,et<a href=\"{{url}}\"> propose de les inclure dans Communtu. </ a>"
+  controller_cart_2: "Les paquets suivants n'ont pas \xC3\xA9t\xC3\xA9 trouv\xC3\xA9s: %{message} <br> S'il te pla\xC3\xAEt choisie les r\xC3\xA9f\xC3\xA9rentiels qui contiennent les paquets ,et<a href=\"%{url}\"> propose de les inclure dans Communtu. </ a>"
   install_by_default: "L'installation standart:"
   show: Afficher
   view_home_faq_20: "Un d\xC3\xA9p\xC3\xB4t (en anglais pour  \"paquet source \") est une collection de programmes. \xC3\x80 propos de la gestion de paquets (dans GNOME et Xfce c'est Synaptic, dans KDE c'est KpackageKit), tu peux installer des programmes \xC3\xA0 partir des sorces de paquets. Dans le m\xC3\xAAme temps tu obtiens exactement sur le m\xC3\xAAme paquet de sources, les mises \xC3\xA0 jour pour les programmes install\xC3\xA9s. Pour plus d'informations sur les sources de paquets tu peux trouver <a href=\"http://wiki.ubuntuusers.de/Paketquellen\" target=\"_blank\">ici</a>."
@@ -534,7 +534,7 @@ fr:
   more_about_sources: "(Plus d'information sur le sujet cl\xC3\xA9 et les sources principales dans la rubrique FAQ)"
   start_vm_with_livecd_basis: "machine virtuelle en fonction des param\xC3\xA8tres LiveCD le d\xC3\xA9part (pour le d\xC3\xA9pannage)"
   view_sent_index_3: Temps
-  controller_users_3: "Vous avez \xC3\xA9t\xC3\xA9 connect\xC3\xA9 en tant qu'utilisateur {{anonymous_user}} avec mot de passe {{anonymous_user}}. S'il te pla\xC3\xAEt clique en haut a ta droite sur Utilsateur {{anonymous_user}} et le convertir en un compte d'utilisateur permanent, sinon le compte sera supprim\xC3\xA9 au bout d'un jour."
+  controller_users_3: "Vous avez \xC3\xA9t\xC3\xA9 connect\xC3\xA9 en tant qu'utilisateur %{anonymous_user} avec mot de passe %{anonymous_user}. S'il te pla\xC3\xAEt clique en haut a ta droite sur Utilsateur %{anonymous_user} et le convertir en un compte d'utilisateur permanent, sinon le compte sera supprim\xC3\xA9 au bout d'un jour."
   view_cart__metacart_3: Compilation venant des liste de paquets
   rough_selection: "selection pas pr\xC3\xA9cise"
   controller_users_4: "Il y a eu  un probl\xC3\xA8me avec le compte invit\xC3\xA9."
@@ -577,14 +577,14 @@ fr:
     Y3LDqWVy
 
   blog_2: Blog
-  model_package_10: "Lors de la synchronisation du r\xC3\xA9f\xC3\xA9rentiel {{repo_name}} le paquet {{package_name}} n'a pas pu \xC3\xAAtre trouv\xC3\xA9."
+  model_package_10: "Lors de la synchronisation du r\xC3\xA9f\xC3\xA9rentiel %{repo_name} le paquet %{package_name} n'a pas pu \xC3\xAAtre trouv\xC3\xA9."
   metacart_choose: "Ajoute des programmes \xC3\xA0 ta compilation"
   migrate_repositories: "Prendre les r\xC3\xA9f\xC3\xA9rentiels du pr\xC3\xA9d\xC3\xA9cesseur"
   model_package_11: Impossible de trouver le URL
-  cd_donate: "La cr\xC3\xA9ation de CD / DVD a besoin de beaucoup de capacit\xC3\xA9 du serveur. S'il vous pla\xC3\xAEt {{donate_link}}, pour permettre cette offre."
+  cd_donate: "La cr\xC3\xA9ation de CD / DVD a besoin de beaucoup de capacit\xC3\xA9 du serveur. S'il vous pla\xC3\xAEt %{donate_link}, pour permettre cette offre."
   view_layouts_application_5: "via PayPal:"
   Kommentar: "Commentaire:"
-  model_package_12: "Contenu de {{file}}  ne correspond pas \xC3\xA0 la Syntaxe d\xC3\xA9p\xC3\xB4t"
+  model_package_12: "Contenu de %{file}  ne correspond pas \xC3\xA0 la Syntaxe d\xC3\xA9p\xC3\xB4t"
   imprint: "Mentions l\xC3\xA9gales"
   view_layouts_application_6: "Maintenant, rapidement, facilement et en toute s\xC3\xA9curit\xC3\xA9 un don en ligne - avec PayPal."
   view_passwords_new_0: "Mot de passe oubli\xC3\xA9 "
@@ -660,11 +660,11 @@ fr:
   edit_press_archiv: Modifier l'archive de presse
   four_and_fourty_letters: "Entre 4 et 40 caract\xC3\xA8res"
   circular_dependency: "Erreur: d\xC3\xA9pendances circulaires entre les compilations"
-  view_repositories_show_4: "liste des paquets pour {{arch}}:"
+  view_repositories_show_4: "liste des paquets pour %{arch}:"
   livecd_email_failed: "Communtu: Impossible de cr\xC3\xA9er le Live-CD/DVD"
   usb_image: USB Image
   controller_application_0: "Cette fonctionnalit\xC3\xA9 n'est pas disponible pour les visiteurs."
-  livecd_email_body_failed: ", le Live-CD/DVD {{name}} n'a pas pu \xC3\xAAtre cr\xC3\xA9\xC3\xA9. Nous nous occupons du probl\xC3\xA8me."
+  livecd_email_body_failed: ", le Live-CD/DVD %{name} n'a pas pu \xC3\xAAtre cr\xC3\xA9\xC3\xA9. Nous nous occupons du probl\xC3\xA8me."
   being_created: !binary |
     ZXN0IGNyw6nDqQ==
 
@@ -719,7 +719,7 @@ fr:
   view_user_profiles__installation_2: "En raison de ton choix des programmes seront \xC3\xAAtre install\xC3\xA9s sur  ton ordinateur. Les \xC3\xA9tapes suivantes sont \xC3\xA0 suivre (si"
   view_derivatives_show_3: "Ic\xC3\xB4ne de fichier:"
   controller_packages_2: "Mise \xC3\xA0 jour du paquet."
-  controller_sessions_3: "L'enregistrement de ta distribution a \xC3\xA9t\xC3\xA9 remplac\xC3\xA9 par {{dist_old}} parce que votre ancienne distribution d'Ubuntu (et donc aussi de Communtu) n'est plus support\xC3\xA9. Nous recommandons un pour votre ordinateur une  <a href='http://wiki.ubuntuusers.de/Upgrade'>a mise \xC3\xA0 niveau </a> pour {{dist_new}}."
+  controller_sessions_3: "L'enregistrement de ta distribution a \xC3\xA9t\xC3\xA9 remplac\xC3\xA9 par %{dist_old} parce que votre ancienne distribution d'Ubuntu (et donc aussi de Communtu) n'est plus support\xC3\xA9. Nous recommandons un pour votre ordinateur une  <a href='http://wiki.ubuntuusers.de/Upgrade'>a mise \xC3\xA0 niveau </a> pour %{dist_new}."
   view_user_profiles__profile_data_15: "Permettre des licences non-libres (\xC3\xA9galement gratuites, mais les sources ne sont pas ouvertes - la transition en douceur vers Linux:"
   view_packages_show_17: "Inclut les paquets suivants (\"d\xC3\xA9pend \" et \"recommande \"):"
   archive: Archives
@@ -805,7 +805,7 @@ fr:
   view_home_impressum_2: AG Communtu
   architectures: Architectures
   metapackages_cannot_destroy: "La compilation ne peut pas \xC3\xAAtre supprim\xC3\xA9e car elle est utilis\xC3\xA9e dans une autre."
-  view_rating_show_title_ratings_count: "(qui est Bas\xC3\xA9 sur {{votes}}  Evaluation(s))"
+  view_rating_show_title_ratings_count: "(qui est Bas\xC3\xA9 sur %{votes}  Evaluation(s))"
   controller_sent_2: "Message envoy\xC3\xA9 avec succ\xC3\xA8s"
   model_package_0: Logiciel Libre
   missing_debs_for_bundle: "il manque debs pour la liasse:"
@@ -827,10 +827,10 @@ fr:
   view_home_icons_3: Installer les paquets
   model_package_6: <br> n a pas le bon format
   register: S'inscrire
-  model_package_need_not_update: "{{url}} n'a pas chang\xC3\xA9"
-  model_package_7: ne parviens a detecter l' URL pour {{repo}}
+  model_package_need_not_update: "%{url} n'a pas chang\xC3\xA9"
+  model_package_7: ne parviens a detecter l' URL pour %{repo}
   view_home_icons_6: Installer les sources
-  model_package_9: "Lors de la synchronisation du r\xC3\xA9f\xC3\xA9rentiel {{repo_name}} impossible de trouver  PackageDistr-Eintrag pour le paquet {{package_name}}"
+  model_package_9: "Lors de la synchronisation du r\xC3\xA9f\xC3\xA9rentiel %{repo_name} impossible de trouver  PackageDistr-Eintrag pour le paquet %{package_name}"
   view_home_about_12: "<b>G\xC3\xA9rer la compilation </ b> La barre lat\xC3\xA9rale gauche donne un aper\xC3\xA7u des compilationss disponibles. Il existe sur <b> Ubuntu versions</ b> un aper\xC3\xA7u des versions Ubuntu disponiblent dans le system (Distributions)."
   distribution: Distribution
   view_home_icons_9: Installation via script shell
@@ -907,7 +907,7 @@ fr:
   donation_purpose: "Objectif: Communtu"
   controller_metapackages_not_changed: "La compilation a d\xC3\xA9ja \xC3\xA9t\xC3\xA9 transform\xC3\xA9\xC3\xA9 en m\xC3\xA9ta-paquet et t\xC3\xA9l\xC3\xA9charg\xC3\xA9e."
   make_a_systemupgrade: "Tu veux faire une mise \xC3\xA0 niveau du syst\xC3\xA8me. Alors regarde <http://encommuntu.wordpress.com/2009/09/16/how-to-use-communtu-for-a-systems-upgrade/> comment c'est facile </ a> et t\xC3\xA9l\xC3\xA9charge ta liste de paquets sur Communtu.            "
-  livecd_message: "Via un live CD, le logiciel peut etre \xC3\xA0 la fois essay\xC3\xA9 et install\xC3\xA9. Ceci etant, un soi-disant {{cdimage_link}} est cr\xC3\xA9\xC3\xA9, sous la forme d'un fichier ISO que tu peux graver. Pour graver un CD dont tu  as besoin, dans le cas ou tu as s\xC3\xA9lectionn\xC3\xA9 un grand nombre de logiciels, d'un DVD. <br /> <br /> La cr\xC3\xA9ation de l'image prend un certain temps. Tu seras averti par email lorsque l'image est pr\xC3\xAAte. S'il te plait v\xC3\xA9rifie dans tes param\xC3\xA8tres d'utilisateur q'une adresse Email valide a \xC3\xA9t\xC3\xA9 donn\xC3\xA9e."
+  livecd_message: "Via un live CD, le logiciel peut etre \xC3\xA0 la fois essay\xC3\xA9 et install\xC3\xA9. Ceci etant, un soi-disant %{cdimage_link} est cr\xC3\xA9\xC3\xA9, sous la forme d'un fichier ISO que tu peux graver. Pour graver un CD dont tu  as besoin, dans le cas ou tu as s\xC3\xA9lectionn\xC3\xA9 un grand nombre de logiciels, d'un DVD. <br /> <br /> La cr\xC3\xA9ation de l'image prend un certain temps. Tu seras averti par email lorsque l'image est pr\xC3\xAAte. S'il te plait v\xC3\xA9rifie dans tes param\xC3\xA8tres d'utilisateur q'une adresse Email valide a \xC3\xA9t\xC3\xA9 donn\xC3\xA9e."
   view_layouts_application_13: A propos de Communtu
   view_sent_show_2: "Date:"
   allgemeinbildung: "Culture g\xC3\xA9n\xC3\xA9rale e.V."
