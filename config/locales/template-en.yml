@@ -53,6 +53,11 @@ en:
   view_user_profiles__installation_21: Installation of the metapackages. Please add the sources first.
   name_of_livecd: "Name of the Live-CD/DVD:"
   view_user_profiles__installation_23: "There are two alternatives:"
+  livecd_email_body_2: |
+    If you have questions and suggestions, don't hesitate contacting us.
+    
+    We hope you will have much fun with your Ubuntu.
+
   view_users_new_10: your first name
   view_user_profiles__installation_24: Installation via metapackage
   view_users_new_11: your last name
@@ -137,7 +142,7 @@ en:
   view_categories_show_2: "Further information:"
   usb_donate: Creating an ISO image requires a lot of server performance. Please {{donate_link}} to keep this feature alive.
   controller_metapackages_reset: Reset bundle error manually (after solving the problems).
-  controller_suggestion_1: In order to install something, you first have to choose something. Don't forget to save!
+  controller_suggestion_1: In order to install software, you have to choose at least one package.
   view_categories_show_3: "Superior category:"
   add_sources: Add sources
   controller_suggestion_2: Add repositories and keys for the user
@@ -145,7 +150,7 @@ en:
   deb_generation_in_background: Debs are being created in the background (refresh the webpage if necessary)
   warnings: Warnings
   view_home_faq_all_02: Packages are not being uninstalled and can be removed as normale via Synaptic or KPackageKit.
-  register_small: Register
+  register_small: to turn into a permanent one.
   controller_suggestion_4: Add repositories and keys for the bundle
   install_software: Install software
   controller_suggestion_6: Add repositories and keys for the package
@@ -228,6 +233,7 @@ en:
   view_home_about_6: "  (This does not appear until"
   promote_chat: You can look if one of us is currently in the chat and talk with us.
   category_exists: A category with this name already exists.
+  thanks_for_order: Thank you for enlisting in our mailinglist(s).
   view_home_about_7: .) There you can edit your settings. First, you have to specify the basic data, such as which Ubuntu version you want to install on your computer. Additionally, you must specify if you want to use free or commercial software. Finally you must indicate for which purposes you want to use your computer.
   view_home_derivatives_18: " is an Ubuntu spin-off with its own user community which has dedicated itself to usability. Linux Mint is quite similar to Ubuntu but has more codecs, like to watch DVDs or listen to MP3s, pre-installed. Those codecs are available via Communtu, listet at \"Sound & Video\"."
   new_distribution: New distribution
@@ -452,6 +458,7 @@ en:
     
     a suggestion for a new repository has been made at en.communtu.org:
   free_disk_space: Free disk space (root / home / isos)
+  hello_simple: Hello
   settings: Settings
   view_home_derivatives_57: " for subnotebooks/EEE-PCs."
   edit_architecture: edit architecture
@@ -500,7 +507,7 @@ en:
   view_home_faq_23: How do I delete the metapackages?
   view_home_derivatives_3: http://wiki.ubuntuusers.de/Was_ist_Linux?#Was-sind-Derivate-einer-Distribution (German)
   view_home_beteiligung_8: Co-operation
-  login_small: log in
+  login_small: with an existing user account.
   helper_distributions_8: Show sources
   new_category: New category
   view_home_faq_24: Which packages are in your repository?
@@ -666,6 +673,7 @@ en:
   best_livecds: Most popular Live-CD
   save: Save
   view_roles_new_0: New role
+  action_needs_login: In order to save your configuration, you need to login.
   search_package: Search packages
   error_no_packages: You have not selected any packages. The progress has been canceled.
   view_metapackages__metalist_14: Install through metapackage. Please add the sources first.
@@ -703,7 +711,9 @@ en:
   livecd_email_failed: "Communtu: creation of Live-CD/DVD failed."
   usb_image: USB-Image
   controller_application_0: This function is not available for guests.
-  livecd_email_body_failed: ", the Live-CD/DVD {{name}} couldn't be created. We'll solve that problem as fast as possible."
+  livecd_email_body_failed: |+
+    Your ISO file {{name}} couldn't be created. We will solve the problem.
+    
   create_your_usb: Create a USB key
   being_created: Creating
   bundle_by_owner: Created bundles
@@ -770,6 +780,7 @@ en:
   view_home_icons_15: " program-bundle"
   controller_sessions_5: Your username or password is wrong. If applicable click on "Register" below.
   view_home_icons_16: migration from repositories
+  order_mailinglist: Write in to mailinglist
   view_packages_show_19: "Conflicts with these packages (only those without a version):"
   donation_receipt: Donation receipt can be issued.
   repository_url: "Repository-URL: "
@@ -815,10 +826,10 @@ en:
   invalid_activation_code_entered: Invalid activation code entered.
   livecd_previous_cds: "ISO images (for Live-CDs/DVDs and USB keys) created so far:"
   create_livecd_title: How do I create a Live-CD?
-  install_bundle_steps: The installation of bundle {{name}} is done in multiple steps, please take a look at the right side.
-  create_livecd_downloadpage: For this you choose the categories in the <b>Download</b> area that you want to install. With a click on "Live-CD/DVD" in the menu you can see a page where you can enter a name for your Live-CD. With a click on <b>Create Live-CD/DVD</b> the process will be started.
-  migrate_repository: migrate repository
   bundle_editor: bundle-editor
+  migrate_repository: migrate repository
+  create_livecd_downloadpage: For this you choose the categories in the <b>Download</b> area that you want to install. With a click on "Live-CD/DVD" in the menu you can see a page where you can enter a name for your Live-CD. With a click on <b>Create Live-CD/DVD</b> the process will be started.
+  install_bundle_steps: The installation of bundle {{name}} is done in multiple steps, please take a look at the right side.
   model_user_profile_tabz_0: Base data
   edit: Edit
   view_admins_sync_all_1: "Error: couldn't synchronise repositories"
@@ -864,7 +875,10 @@ en:
   view_user_profiles__profile_rating_0: "Software selection: choose bundle"
   order_number: "Sort by number (smallest number first):"
   additional_sources: Additional sources which will be added as some sources are not completed in themselves
-  livecd_email_body: ", the Live-CD/DVD has been created. Follow this link:"
+  livecd_email_body: |-
+    The image you created at our site for creating a Live-CD/DVD or USB key has been finished!
+    
+    You can download the image file by following this link:
   view_home_impressum_5: |-
     28203 Bremen
     Germany
@@ -944,7 +958,7 @@ en:
   view_home_home_24: To the imprint
   update: Refresh
   controller_categories_2: Category created.
-  livecd_please_register: To create a ISO image to burn on a CD/DVD or to copy on a USB key you have to {{register}} or {{login}} first.
+  livecd_please_register: To create Live-CD/DVDs or USB-key images, your first have to use the anonymous account {{register}} or you need to {{login}}.
   view_home_home_25: For questions concerning Communtu we have created a "FAQ".
   description: Description
   view_layouts_application_11: Guestsession

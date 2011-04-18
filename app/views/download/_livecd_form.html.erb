@@ -24,7 +24,7 @@
       </p>
     <% end %>
     <p><%=t(if usb then :liveusb_message else :livecd_message end,
-            :cdimage_link => (link_to t(:iso_image), if usb then t(:liveusb_image_link) else t(:livecd_image_link) end, 
+            :cdimage_link => (link_to t(:iso_image), if usb then t(:livecd_image_link) else t(:livecd_image_link) end, 
                                                      :target => '_blank'))%></p>
     <p>
     <b><%=t(if usb then :usb_donate else :cd_donate end, {:donate_link => link_to(t(:donate),'/home/donate')})%></b>

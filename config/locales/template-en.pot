@@ -172,6 +172,9 @@ msgstr ""
 #: view_user_profiles__installation_23
 msgid "There are two alternatives:"
 msgstr ""
+#: livecd_email_body_2
+msgid "If you have questions and suggestions, don't hesitate contacting us.\n\nWe hope you will have much fun with your Ubuntu.\n"
+msgstr ""
 #: view_users_new_10
 msgid "your first name"
 msgstr ""
@@ -425,7 +428,7 @@ msgstr ""
 msgid "Reset bundle error manually (after solving the problems)."
 msgstr ""
 #: controller_suggestion_1
-msgid "In order to install something, you first have to choose something. Don't forget to save!"
+msgid "In order to install software, you have to choose at least one package."
 msgstr ""
 #: view_categories_show_3
 msgid "Superior category:"
@@ -449,7 +452,7 @@ msgstr ""
 msgid "Packages are not being uninstalled and can be removed as normale via Synaptic or KPackageKit."
 msgstr ""
 #: register_small
-msgid "Register"
+msgid "to turn into a permanent one."
 msgstr ""
 #: controller_suggestion_4
 msgid "Add repositories and keys for the bundle"
@@ -690,6 +693,9 @@ msgid "You can look if one of us is currently in the chat and talk with us."
 msgstr ""
 #: category_exists
 msgid "A category with this name already exists."
+msgstr ""
+#: thanks_for_order
+msgid "Thank you for enlisting in our mailinglist(s)."
 msgstr ""
 #: view_home_about_7
 msgid ".) There you can edit your settings. First, you have to specify the basic data, such as which Ubuntu version you want to install on your computer. Additionally, you must specify if you want to use free or commercial software. Finally you must indicate for which purposes you want to use your computer."
@@ -1300,6 +1306,9 @@ msgstr ""
 #: free_disk_space
 msgid "Free disk space (root / home / isos)"
 msgstr ""
+#: hello_simple
+msgid "Hello"
+msgstr ""
 #: settings
 msgid "Settings"
 msgstr ""
@@ -1433,7 +1442,7 @@ msgstr ""
 msgid "Co-operation"
 msgstr ""
 #: login_small
-msgid "log in"
+msgid "with an existing user account."
 msgstr ""
 #: helper_distributions_8
 msgid "Show sources"
@@ -1912,6 +1921,9 @@ msgstr ""
 #: view_roles_new_0
 msgid "New role"
 msgstr ""
+#: action_needs_login
+msgid "In order to save your configuration, you need to login."
+msgstr ""
 #: search_package
 msgid "Search packages"
 msgstr ""
@@ -2024,7 +2036,7 @@ msgstr ""
 msgid "This function is not available for guests."
 msgstr ""
 #: livecd_email_body_failed
-msgid ", the Live-CD/DVD {{name}} couldn't be created. We'll solve that problem as fast as possible."
+msgid "Your ISO file {{name}} couldn't be created. We will solve the problem.\n\n"
 msgstr ""
 #: create_your_usb
 msgid "Create a USB key"
@@ -2223,6 +2235,9 @@ msgid "Your username or password is wrong. If applicable click on \"Register\" b
 msgstr ""
 #: view_home_icons_16
 msgid "migration from repositories"
+msgstr ""
+#: order_mailinglist
+msgid "Write in to mailinglist"
 msgstr ""
 #: view_packages_show_19
 msgid "Conflicts with these packages (only those without a version):"
@@ -2513,7 +2528,7 @@ msgstr ""
 msgid "28203 Bremen\nGermany"
 msgstr ""
 #: livecd_email_body
-msgid ", the Live-CD/DVD has been created. Follow this link:"
+msgid "The image you created at our site for creating a Live-CD/DVD or USB key has been finished!\n\nYou can download the image file by following this link:"
 msgstr ""
 #: additional_sources
 msgid "Additional sources which will be added as some sources are not completed in themselves"
@@ -2747,7 +2762,7 @@ msgstr ""
 msgid "For questions concerning Communtu we have created a \"FAQ\"."
 msgstr ""
 #: livecd_please_register
-msgid "To create a ISO image to burn on a CD/DVD or to copy on a USB key you have to {{register}} or {{login}} first."
+msgid "To create Live-CD/DVDs or USB-key images, your first have to use the anonymous account {{register}} or you need to {{login}}."
 msgstr ""
 #: controller_categories_2
 msgid "Category created."

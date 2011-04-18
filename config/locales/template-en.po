@@ -5,10 +5,10 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: Timo Denissen <timo@communtu.de>\n"
 "Language-Team: Communtu <info@communtu.de>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
 "Plural-Forms: n != 1\n"
 "X-Poedit-Language: German\n"
 "X-Poedit-Country: GERMANY\n"
@@ -232,6 +232,19 @@ msgstr "your first name"
 msgid "Es gibt zwei Alternativen:"
 msgstr "There are two alternatives:"
 
+#: livecd_email_body_2
+msgid ""
+"Bei Fragen und Anregungen bitten wir Dich bei uns zu melden.\n"
+"\n"
+"Wir hoffen, dass Du viel Spaß mit Deinem Ubuntu hast.\n"
+"\n"
+"Liebe Grüße,\n"
+"Dein Communtu-Team"
+msgstr ""
+"If you have questions and suggestions, don't hesitate contacting us.\n"
+"\n"
+"We hope you will have much fun with your Ubuntu.\n"
+
 #: view_users_new_11
 msgid "Dein Nachname"
 msgstr "your last name"
@@ -368,13 +381,13 @@ msgstr "create <a href=\"http://en.wikipedia.org/wiki/Live-usb\">Live-USB image<
 msgid "von 5 Sternen vergeben"
 msgstr "out of 5 stars awarded"
 
-#: view_home_home_2
-msgid "Ubuntu-Linux"
-msgstr "Ubuntu"
-
 #: view_metapackages_show_version_v
 msgid "(Version {{v}})"
 msgstr "(version {{v}})"
+
+#: view_home_home_2
+msgid "Ubuntu-Linux"
+msgstr "Ubuntu"
 
 #: controller_passwords_5
 msgid "Passwort darf nicht leer sein."
@@ -565,8 +578,8 @@ msgid "Bündel-Fehler manuell zurücksetzen (nach Behebung des Problems)."
 msgstr "Reset bundle error manually (after solving the problems)."
 
 #: controller_suggestion_1
-msgid "Um etwas installieren zu können, musst du zunächst etwas auswählen. Speichern nicht vergessen!"
-msgstr "In order to install something, you first have to choose something. Don't forget to save!"
+msgid "Um etwas installieren zu können, musst du zunächst etwas auswählen."
+msgstr "In order to install software, you have to choose at least one package."
 
 #: view_categories_show_3
 msgid "Übergeordnete Kategorie:"
@@ -597,8 +610,8 @@ msgid "Die einzelnen Pakete werden dadurch nicht deinstalliert sondern lassen si
 msgstr "Packages are not being uninstalled and can be removed as normale via Synaptic or KPackageKit."
 
 #: register_small
-msgid "registrieren"
-msgstr "Register"
+msgid "in ein dauerhaftes umwandeln"
+msgstr "to turn into a permanent one."
 
 #: controller_suggestion_4
 msgid "Quellen und Schluessel hinzufuegen fuer Buendel "
@@ -923,6 +936,10 @@ msgstr "You can look if one of us is currently in the chat and talk with us."
 #: category_exists
 msgid "Eine Kategorie mit diesem Namen existiert schon"
 msgstr "A category with this name already exists."
+
+#: thanks_for_order
+msgid "Danke für die Bestellung der Mailingliste(n)."
+msgstr "Thank you for enlisting in our mailinglist(s)."
 
 #: view_home_about_7
 msgid "Dort kannst du deine Einstellungen bearbeiten. Unter den Voreinstellungen musst du zunächst eintragen, welche Ubuntu-Version du auf deinem PC installiert hast, außerdem, ob du unfreie Programme nutzen willst oder nicht. Zudem wählst du aus, für welche Aufgaben du deinen Ubuntu-PC nutzen willst. "
@@ -1780,6 +1797,10 @@ msgstr "Free disk space (root / home / isos)"
 msgid "Folgende Begründung wurde angegeben:"
 msgstr "The following reason has been stated:"
 
+#: hello_simple
+msgid "Hallo"
+msgstr "Hello"
+
 #: settings
 msgid "Einstellungen"
 msgstr "Settings"
@@ -1961,8 +1982,8 @@ msgid "Mitarbeit"
 msgstr "Co-operation"
 
 #: login_small
-msgid "einloggen"
-msgstr "log in"
+msgid "einem existierenden Benutzerkonto einloggen"
+msgstr "with an existing user account."
 
 #: helper_distributions_8
 msgid "Quellen anzeigen"
@@ -2458,10 +2479,6 @@ msgstr "reset password"
 msgid "Paket bearbeiten"
 msgstr "Edit package"
 
-#: view_metapackages_finish_migrate_1
-msgid " nach "
-msgstr " to"
-
 #: view_my_mailer_mail_0
 msgid ""
 "Hallo, \n"
@@ -2471,6 +2488,14 @@ msgstr ""
 "Hello, \n"
 "\n"
 "a feedback from en.communtu.org has arrived. The subject is:"
+
+#: view_metapackages_finish_migrate_1
+msgid " nach "
+msgstr " to"
+
+#: view_my_mailer_mail_1
+msgid "Folgender Kommentar wurde hinterlassen:"
+msgstr "The following comment was made:"
 
 #: view_layouts_application_9
 msgid "Abmelden"
@@ -2483,10 +2508,6 @@ msgstr "Bundles with errors"
 #: view_metapackages_finish_migrate_2
 msgid " migriert."
 msgstr ". "
-
-#: view_my_mailer_mail_1
-msgid "Folgender Kommentar wurde hinterlassen:"
-msgstr "The following comment was made:"
 
 #: view_packages_edit_2
 msgid "Icon"
@@ -2612,6 +2633,10 @@ msgstr "New role"
 msgid "Speichern"
 msgstr "Save"
 
+#: action_needs_login
+msgid "Für diesen Bereich ist ein Login erforderlich, damit die Konfiguration gespeichert werden kann."
+msgstr "In order to save your configuration, you need to login."
+
 #: search_package
 msgid "Paket suchen"
 msgstr "Search packages"
@@ -2636,13 +2661,13 @@ msgstr "Installation of the package in two steps:"
 msgid "(Monat/Jahr)"
 msgstr "(month/year)"
 
-#: more
-msgid "mehr"
-msgstr "more"
-
 #: view_metapackages_show_version
 msgid "Version:"
 msgstr "Version:"
+
+#: more
+msgid "mehr"
+msgstr "more"
 
 #: subtype
 msgid "Subtyp:"
@@ -2761,8 +2786,14 @@ msgid "Diese Funktion ist für Gäste nicht verfügbar."
 msgstr "This function is not available for guests."
 
 #: livecd_email_body_failed
-msgid ", die Live-CD/DVD {{name}} konnte leider nicht erstellt werden. Wir kümmern uns um das Problem."
-msgstr ", the Live-CD/DVD {{name}} couldn't be created. We'll solve that problem as fast as possible."
+msgid ""
+"Deine bei und erstellte Live-CD/DVD bzw. das ISO Image für die Erstellung einer Live-Cd/DVD oder USB Stick {{name}} konnte leider nicht erstellt werden. Wir kümmern uns um das Problem.\n"
+"\n"
+"Liebe Grüße,\n"
+"Dein Communtu-Team"
+msgstr ""
+"Your ISO file {{name}} couldn't be created. We will solve the problem.\n"
+"\n"
 
 #: view_repositories_show_6
 msgid "        OpenSource"
@@ -3004,6 +3035,10 @@ msgstr "Package updated."
 msgid "Deine hier registrierte Distribution wurde auf {{dist_old}} geändert, weil deine alte Distribution von Ubuntu (und daher auch von Communtu) nicht mehr unterstützt wird. Wir empfehlen für deinen Computer ein <a href='http://wiki.ubuntuusers.de/Upgrade'>Upgrade</a> auf {{dist_new}}."
 msgstr "Your registered distribution was changed to {{dist_old}} because your old distribution is not supported by Ubuntu (and therefore by Communtu) anymore. We suggest an upgrade to {{dist_new}}."
 
+#: view_metapackages_show_save_3
+msgid "Zum Erstellen des Metapakets muss ein englischer Titel und eine englische Beschreibung vergeben werden."
+msgstr "To create a meta-package an English title and descriptionis needed."
+
 #: archive
 msgid "Archiv"
 msgstr "archive"
@@ -3011,10 +3046,6 @@ msgstr "archive"
 #: controller_sessions_4
 msgid "Du wurdest abgemeldet."
 msgstr "You have been logged in."
-
-#: view_metapackages_show_save_3
-msgid "Zum Erstellen des Metapakets muss ein englischer Titel und eine englische Beschreibung vergeben werden."
-msgstr "To create a meta-package an English title and descriptionis needed."
 
 #: view_home_icons_15
 msgid " Programm-Bündel"
@@ -3031,6 +3062,10 @@ msgstr "Your username or password is wrong. If applicable click on \"Register\" 
 #: view_home_icons_16
 msgid " Migration von Repositories"
 msgstr "migration from repositories"
+
+#: order_mailinglist
+msgid "Mailingliste bestellen"
+msgstr "Write in to mailinglist"
 
 #: view_user_profiles__profile_data_17
 msgid "Speichern und feiner auswählen"
@@ -3169,7 +3204,7 @@ msgid "Deb aktualisiert."
 msgstr "Deb updated."
 
 #: zombie_processes
-msgid "Zobmie-Prozesse"
+msgid "Zombie-Prozesse"
 msgstr "Zombie processes"
 
 #: view_layouts_donate
@@ -3281,7 +3316,7 @@ msgid "Installation durchführen"
 msgstr "Start installation"
 
 #: mailinglist
-msgid "Mailinglisten:"
+msgid "Mailinglisten"
 msgstr "Mailinglists:"
 
 #: view_home_auth_error_1
@@ -3415,8 +3450,14 @@ msgstr ""
 "Germany"
 
 #: livecd_email_body
-msgid ", die Live-CD/DVD wurde erstellt! Folge dem Link: "
-msgstr ", the Live-CD/DVD has been created. Follow this link:"
+msgid ""
+"Deine bei uns erstellte Live-CD/DVD bzw. das ISO Image für die Erstellung einer Live-CD/DVD oder USB Stick wurde erstellt!\n"
+"\n"
+"Den Download kannst Du unter folgendem Link aufrufen: "
+msgstr ""
+"The image you created at our site for creating a Live-CD/DVD or USB key has been finished!\n"
+"\n"
+"You can download the image file by following this link:"
 
 #: additional_sources
 msgid "Zusätzliche Quellen, die hinzugefügt werden, weil bestimmte Quellen nicht in sich abgeschlossen sind"
@@ -3727,8 +3768,8 @@ msgid "Für Fragen zu Communtu haben wir \"Häufig gestellte Fragen\" zusammenge
 msgstr "For questions concerning Communtu we have created a \"FAQ\"."
 
 #: livecd_please_register
-msgid "Um Live-CD/DVDs oder USB-Sticks zu erstellen, musst du dich erst {{register}} oder {{login}}."
-msgstr "To create a ISO image to burn on a CD/DVD or to copy on a USB key you have to {{register}} or {{login}} first."
+msgid "Um Live-CD/DVDs oder USB-Sticks zu erstellen, musst du erst das anonyme Benutzerkonto {{register}} oder dich mit {{login}}."
+msgstr "To create Live-CD/DVDs or USB-key images, your first have to use the anonymous account {{register}} or you need to {{login}}."
 
 #: controller_categories_2
 msgid "Kategorie erzeugt."
@@ -3925,6 +3966,29 @@ msgstr "BUNDLE"
 #: install
 msgid "Installieren"
 msgstr "Install"
+
+#~ msgid ""
+#~ "Um etwas installieren zu können, musst du zunächst etwas auswählen. "
+#~ "Speichern nicht vergessen!"
+#~ msgstr ""
+#~ "In order to install something, you first have to choose something. Don't "
+#~ "forget to save!"
+
+#~ msgid "registrieren"
+#~ msgstr "Register"
+
+#~ msgid "einloggen"
+#~ msgstr "log in"
+
+#~ msgid ""
+#~ ", die Live-CD/DVD {{name}} konnte leider nicht erstellt werden. Wir "
+#~ "kümmern uns um das Problem."
+#~ msgstr ""
+#~ ", the Live-CD/DVD {{name}} couldn't be created. We'll solve that problem "
+#~ "as fast as possible."
+
+#~ msgid ", die Live-CD/DVD wurde erstellt! Folge dem Link: "
+#~ msgstr ", the Live-CD/DVD has been created. Follow this link:"
 
 #~ msgid "Diese"
 #~ msgstr "These"

@@ -46,7 +46,7 @@ def ask_string(string, key):
     
 def add_to_template(user_string, new_value):
     '''Add the new key to the template.yml'''
-    template_yml = open('config/locales/template.yml', 'w')
+    template_yml = open('config/locales/template-de.yml', 'w')
     template_dict[user_string] = new_value
     safe_file(template_dict_full, template_yml)
 
@@ -104,8 +104,8 @@ def safe_file(dictionary, stream_file):
 def open_file():
     global template_dict_full
     global template_dict
-    template_yml = open('config/locales/template.yml')
-    print 'Using file "config/locales/template.yml"'
+    template_yml = open('config/locales/template-de.yml')
+    print 'Using file "config/locales/template-de.yml"'
     template_dict_full = yaml.safe_load(template_yml)
     template_dict = template_dict_full['de']
     template_yml.close()
@@ -142,7 +142,7 @@ def edit_strings(ask_number):
     newkey = raw_input ('Enter the new key: ')
     print oldkey, 'will be replaced with "' + newkey + '".'
     edit_files(oldkey, newkey)
-    template_yml = open('config/locales/template.yml', 'w')
+    template_yml = open('config/locales/template-de.yml', 'w')
     template_dict[newkey] = str([value_newkey])[2:-2]
     safe_file(template_dict_full, template_yml)
     if raw_input('Do you want to edit more strings? y/n ') == 'y':
