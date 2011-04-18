@@ -30,6 +30,7 @@ fr:
   view_roles_index_2: "r\xC3\xB4les disponibles:"
   view_home_beteiligung_15: nous
   view_layouts_application_30: Aide / FAQ
+  create_your_livedvd_or_usb: "Cr\xC3\xA9er live CD / DVD"
   view_categories_edit_0: "Modifier une cat\xC3\xA9gorie"
   view_layouts_application_31: Contact
   hello: Bienvenue
@@ -43,6 +44,7 @@ fr:
   direct_indirect_covered_packages: Directement et indirectement les paquets inclus
   controller_accounts_8: "Ton ancien mot de passe \xC3\xA9tait incorrect."
   view_categories_edit_3: Lien pour plus d'informations
+  required_fields: ""
   view_metapackages__package_list_2: Supprimer Paquet/Programme de la compilation
   view_categories_edit_4: "Cat\xC3\xA9gorie principale qui est affich\xC3\xA9e sur la page d'accueil du t\xC3\xA9l\xC3\xA9chargement:"
   view_user_profiles_new_3: Experts de haut niveau
@@ -51,6 +53,7 @@ fr:
   view_user_profiles__installation_21: "installer les m\xC3\xA9ta-paquets. S'il te pla\xC3\xAEt il faut d'abord ajouter les sources."
   name_of_livecd: "Nom du live CD / DVD:"
   view_user_profiles__installation_23: "Installer les paquets. Il existe deux alternatives:"
+  livecd_email_body_2: ""
   view_users_new_10: "Ton  pr\xC3\xA9nom"
   view_user_profiles__installation_24: "Installation \xC3\xA0 l'aide d'un m\xC3\xA9ta-paquet"
   view_users_new_11: Ton nom de famille
@@ -79,17 +82,19 @@ fr:
   view_home_contact_us_0: "Formulaire de r\xC3\xA9troaction"
   view_home_faq_xfce_02: "Le gestionnaire du paquet Synaptic ce fait sur  \"Applications -> Syst\xC3\xA8me-> Gestionnaire du paquet Synaptic \". S\xC3\xA9lectionne ci-dessous, \xC3\xA0 gauche du point d'origine. Recherche maintenant dans la liste ci-dessus \"packages.communtu.org \" et clique dessus. Sur le c\xC3\xB4t\xC3\xA9 droit maintenant, tous les m\xC3\xA9ta-paquets disponibles sur Communtu vont \xC3\xAAtre affich\xC3\xA9. La suppression se fait en cliquant \xC3\xA0 droite de la souris puis sur \"S\xC3\xA9lectionner pour suppression \". Cela doit \xC3\xAAtre cl\xC3\xB4tur\xC3\xA9 par \"Appliquer \" pour confirmer."
   controller_distributions_2: "Distribution mise \xC3\xA0 jour."
+  want_to_add_package2: ""
   controller_passwords_2: "Aucun utilisateur avec cette adresse email n'a \xC3\xA9t\xC3\xA9 trouv\xC3\xA9."
   view_home_contact_us_1: "Ici tu as la possibilit\xC3\xA9 de nous envoyer tes suggestions et critiques concernant Communtu."
   livecd_start: "Cr\xC3\xA9er live CD / DVD"
   view_user_profiles__installation_30: " Note: Ne pas renommer les fichiers deb, s'il te pla\xC3\xAEt."
   view_user_profiles__installation_31: "Les m\xC3\xA9ta-paquets Communtu peuvent aussi \xC3\xAAtre affich\xC3\xA9s, install\xC3\xA9s et d\xC3\xA9sinstall\xC3\xA9s \xC3\xA0 l'aide de {{synaptic}} (sous Syst\xC3\xA8me -> Administration). En ce qui concerne la modification des compilations, elles sont automatiquement enregistr\xC3\xA9es \xC3\xA0 l'aide de la gestion des paquets Ubuntu."
-  create_usb_image: "<a href=\"http://ww.ubuntuusers.de/wiki/Live-USB\"> USB Stick Image </ a> cr\xC3\xA9er"
+  downloads: "T\xC3\xA9l\xC3\xA9charger:"
+  create_usb_image: "<a href=\"http://ww.ubuntuusers.de/wiki/Live-USB\"> USB Stick Image </a> cr\xC3\xA9er"
   view_home_home_2: Ubuntu Linux
   view_rating_rating_rate: " de 5 \xC3\xA9toiles donn\xC3\xA9es"
   view_metapackages_show_version_v: (Version {{v}})
   controller_passwords_5: "Mot de passe ne peut pas \xC3\xAAtre vide."
-  create_iso_image: "<a href=\"http://ww.ubuntuusers.de/wiki/CD-Images\"> cr\xC3\xA9er une image ISO </ a> (pour les CD / DVD)"
+  create_iso_image: "<a href=\"http://ww.ubuntuusers.de/wiki/CD-Images\"> cr\xC3\xA9er une image ISO </a> (pour les CD / DVD)"
   view_home_home_3: "Linux repr\xC3\xA9sente un \xC3\xAAtre humain, qui est facile \xC3\xA0 utiliser. Mais pour bien utiliser Ubuntu , on doit encore installer beaucoup de programmes apr\xC3\xA8s, et il est souvent difficile de garder un aper\xC3\xA7u. En Communtu vous donner uniquement les t\xC3\xA2ches que vous voulez ex\xC3\xA9cuter avec votre ordinateur, et  Communtu te propose un certain nombre de programmes qui peuvent \xC3\xAAtre install\xC3\xA9s automatiquement."
   view_home_contact_us_4: Envoyer
   download: !binary |
@@ -98,14 +103,15 @@ fr:
   view_metapackages_show_0: "Compilations cr\xC3\xA9\xC3\xA9s par"
   controller_passwords_6: "Mot de passe chang\xC3\xA9."
   view_home_home_4: plus....
-  view_user_profiles__installation_33: Suivante
   wait_for_sync: "en attente de la synchronisation des d\xC3\xA9p\xC3\xB4ts"
   controller_passwords_7: "Mot de passe pas chang\xC3\xA9."
+  create_livecd_bundlepage: ""
   view_home_home_5: "La barre lat\xC3\xA9rale offre les options suivantes"
   view_user_profiles__installation_34: "vont \xC3\xAAtre ajout\xC3\xA9es au syst\xC3\xA8me."
   controller_passwords_8: Les mots de passe ne correspondent pas.
   view_home_home_6: "<b> Installation </ b> vous offre une collection (collimation) des programmes \xC3\xA0 installer sur ton ordinateur, selon tes sp\xC3\xA9cifications,et pour quelles les t\xC3\xA2ches souhaites tu utiliser ton PC Ubuntu "
   name_without_colon: Nom
+  select_default_bundles: ""
   direct_indirect_covered_packages_warning: "Attention! Prend beaucoup de temps et ne doit \xC3\xAAtre appel\xC3\xA9 que par le serveur d'administration \xC3\xA0 partir (communtu.de: 3006) "
   architecture_successful_updated: "Mise \xC3\xA0 jour de l'architecture avec succ\xC3\xA8s."
   view_home_home_7: "<b>G\xC3\xA9rer les compilations</ b> As-tu une bonne exp\xC3\xA9rience avec les programmes? Peux tu les compiler th\xC3\xA9matiquement ici , ou m\xC3\xAAme regarder les compilations existantes."
@@ -127,14 +133,16 @@ fr:
   view_metapackages_show_9: "Publi\xC3\xA9 le:"
   view_roles__role_1: "Assigner des r\xC3\xB4les"
   view_repositories_edit_0: "Modifier le d\xC3\xA9p\xC3\xB4t "
+  usb_creator: ""
   view_repositories_edit_1: "Distribution:"
   view_categories_show_0: "Nom:"
   change: changer
   add_to_bundle: "Ajouter \xC3\xA0 la compilation"
   translation_file: "Url du fichier de traduction (fichier gz):"
   view_categories_show_2: "Pour plus d'informations:"
+  usb_donate: "La cr\xC3\xA9ation de CD / DVD a besoin de beaucoup de capacit\xC3\xA9 du serveur. S'il vous pla\xC3\xAEt {{donate_link}}, pour permettre cette offre."
   controller_metapackages_reset: "erreur de compilation r\xC3\xA9initialiser manuellement (apr\xC3\xA8s avoir r\xC3\xA9solu le probl\xC3\xA8me)."
-  controller_suggestion_1: "Afin d'installer quelque chose, tu dois d'abord s\xC3\xA9lectionner quelque chose. Ne pas oublier Sauvegarder !"
+  controller_suggestion_1: "Pour installer quelque chose, tu dois d'abord sous  \"s\xC3\xA9lection Software \"  s\xC3\xA9lectionner quelque chose."
   view_categories_show_3: "Cat\xC3\xA9gorie sup\xC3\xA9rieure:"
   add_sources: Ajouter les sources
   controller_suggestion_2: "Ajouter les sources et la cl\xC3\xA9 pour l'utilisateur"
@@ -142,7 +150,9 @@ fr:
   deb_generation_in_background: "Debs sont g\xC3\xA9n\xC3\xA9r\xC3\xA9s dans l'arri\xC3\xA8re-plan (le cas \xC3\xA9ch\xC3\xA9ant, mise \xC3\xA0 jour du navigateur )"
   warnings: Avertissements
   view_home_faq_all_02: "Les paquets individuels ne seront pas supprim\xC3\xA9s, mais cela peut faire sur  Synaptic ou kpackagekit, selectioner et d\xC3\xA9sinstaller."
+  register_small: ""
   controller_suggestion_4: "Ajouter Sources et cl\xC3\xA9 pour compilation"
+  install_software: Installer les paquets
   controller_suggestion_6: "Ajouter les Sources et la cl\xC3\xA9 pour le paquet"
   view_users__mailbox_list_1: "Bo\xC3\xAEte aux lettres"
   controller_metapackages_no_renaming: "Compilations publi\xC3\xA9es ne peuvent pas \xC3\xAAtre renomm\xC3\xA9es."
@@ -159,8 +169,10 @@ fr:
   view_packages_new_3: Version
   view_home_news_1: Nos listes de diffusion
   view_packages_new_4: Source
+  liveusb_message: "Via un live CD, le logiciel peut etre \xC3\xA0 la fois essay\xC3\xA9 et install\xC3\xA9. Ceci etant, un soi-disant {{cdimage_link}} est cr\xC3\xA9\xC3\xA9, sous la forme d'un fichier ISO que tu peux graver. Pour graver un CD dont tu  as besoin, dans le cas ou tu as s\xC3\xA9lectionn\xC3\xA9 un grand nombre de logiciels, d'un DVD. <br /> <br /> La cr\xC3\xA9ation de l'image prend un certain temps. Tu seras averti par email lorsque l'image est pr\xC3\xAAte. S'il te plait v\xC3\xA9rifie dans tes param\xC3\xA8tres d'utilisateur q'une adresse Email valide a \xC3\xA9t\xC3\xA9 donn\xC3\xA9e."
   compose_new_message: Ecrire un nouveau message
   view_home_news_2: "Pour am\xC3\xA9liorer la communication avec nos utilisateurs, nous avons mis en place des listes de diffusion:"
+  name_of_usb: ""
   view_home_news_3: Communtu-announce-de + subscribe@googlegroups.com)
   view_packages_new_6: Videos
   view_home_cancel_0: |-
@@ -182,7 +194,7 @@ fr:
   dependent_on_repositories: "D\xC3\xA9pend des d\xC3\xA9p\xC3\xB4ts suivants:"
   no_admin: Tu n'est pas l'administrateur!
   view_metapackages_new_4: "D'installation par d\xC3\xA9faut"
-  create_kvm_image: "<a href=\"http://ww.ubuntuusers.de/wiki/KVM\">KVM-Image </ a> Cr\xC3\xA9er (pour la machine virtuelle)"
+  create_kvm_image: "<a href=\"http://ww.ubuntuusers.de/wiki/KVM\">KVM-Image </a> Cr\xC3\xA9er (pour la machine virtuelle)"
   bundles_with_missing_debs: "Compilation avec deb-Builds manquant "
   model_mailer_0: "Bienvenue \xC3\xA0 Communtu"
   licence: "Licence:"
@@ -216,10 +228,12 @@ fr:
   model_package_could_not_read: Impossible de lire {{url}}
   view_home_about_5: "Pour commencer tu dois s\xC3\xA9lectionner<b> T\xC3\xA9l\xC3\xA9charger </ b>."
   view_home_derivatives_17: http://de.wikipedia.org/wiki/Linux_Mint
+  no_package_selected: ""
   community_title: utilisateurs  d'ubuntu
   view_home_about_6: "(Ceci appara\xC3\xAEt seulement apr\xC3\xA8s une"
   promote_chat: Tu peux voir si l'un de nous est dans le chat en ce moment afin de pouvoir communiquer.
   category_exists: "Une cat\xC3\xA9gorie avec ce nom existe d\xC3\xA9j\xC3\xA0"
+  thanks_for_order: ""
   view_home_about_7: "L\xC3\xA0, tu as la possibilt\xC3\xA9 de modifier tes param\xC3\xA8tres. Dans les Pr\xC3\xA9f\xC3\xA9rences tu dois d'abord donner la version Ubuntu que tu as install\xC3\xA9 sur ton PC, et sp\xC3\xA9cifier, si tu souhaites utiliser des programmes non-libre ou pas. En outre, tu choisis les t\xC3\xA2ches pour lesquelles tu souhaites utiliser ubuntu sur ton ordinateur ."
   view_home_derivatives_18: "est une Ubuntu spin-off avec sa communaut\xC3\xA9 d'utilisateurs propre et se r\xC3\xA9f\xC3\xA9rant en particulier par sa Facilit\xC3\xA9 d'utilisation"
   new_distribution: Nouvelle distribution
@@ -246,6 +260,7 @@ fr:
   prepare_livecd: "Pr\xC3\xA9parer le liveCD/DVD (script/remaster-getisos)"
   view_home_derivatives_24: "D\xC3\xA9riv\xC3\xA9s, qui doivent \xC3\xAAtre install\xC3\xA9 , avec le CD d'installation de l'instrument d\xC3\xA9riv\xC3\xA9 propre:"
   spam_user_delete: "Tous les spam de l'utilisateur supprim\xC3\xA9s."
+  search: supprimer
   view_users_index_1: "Nous avons au total "
   easy_install: Installer Ubuntu facilement
   view_users_new_1: "Ici tu as la possibilit\xC3\xA9 de t'inscrire."
@@ -289,6 +304,7 @@ fr:
     Maintenant tu peux utiliser toutes les fonctionnalit\xC3\xA9s de la plate-forme\n\
     ."
   view_user_mailer_reset_password_0: "Tu as re\xC3\xA7u un nouveau mot de passe."
+  liveusb_start: "Cr\xC3\xA9er live CD / DVD"
   make_your_bundle: "Cr\xC3\xA9e toi une compilation pour le syst\xC3\xA8me de mise \xC3\xA0 niveau"
   controller_metapackages_no_save: "La compilation contient les complications et ne peut donc pas \xC3\xAAtre sauvegard\xC3\xA9e en tant que m\xC3\xA9ta-paquet."
   view_home_derivatives_32: "Ubuntu est un d\xC3\xA9riv\xC3\xA9 enti\xC3\xA8rement de logiciels libres. Uniquement pour les utilisateurs exp\xC3\xA9riment\xC3\xA9s. Doit \xC3\xAAtre install\xC3\xA9 avec le CD Gobuntu afin qu'il soit vraiment un logiciels libre. Les installations Ult\xC3\xA9rieures avec Communtu sont possible et devraient \xC3\xAAtre s\xC3\xA9lectionn\xC3\xA9s dans le profil de l'utilisateur \"logiciel libre \". Ce d\xC3\xA9riv\xC3\xA9 est disponible en version 8.04 et ne sera pas d\xC3\xA9velopp\xC3\xA9."
@@ -302,6 +318,7 @@ fr:
     l'\xC3\xA9quipe communtu \n\n Pour plus d'informations sur le projet, en particulier ce qui concerne l'utilisation, tu trouveras dans la liste FAQ\n sur http://www.communtu.de/home/faq\n\n Nos annonces et listes de diffusion peuvent \xC3\xAAtre trouv\xC3\xA9es \xC3\xA0 l'adresse:\n\
     http://www.communtu.de/home/news"
   view_home_derivatives_34: " Le noyau Linux remplac\xC3\xA9 par OpenSolaris. Fournit uniquement une base minimale d'applications. L'installation des paquets suppl\xC3\xA9mentaires est laiss\xC3\xA9 \xC3\xA0 l'utilisateur; pour cela Communtu peut \xC3\xAAtre utilis\xC3\xA9."
+  info_edit: Editer la liste des paquets
   health_status: "L'\xC3\xA9tat de sant\xC3\xA9"
   view_home_derivatives_35: "Il existe d'autres d\xC3\xA9riv\xC3\xA9s donc nous ne pouvons pas encore fournir une recommandation d'installation:"
   vm_running_under: "machine virtuelle fonctionne sur:"
@@ -349,13 +366,14 @@ fr:
   view_home_faq_03: Comment puis-je installer une compilation?
   cd_being_created: "Le LiveCD / DVD est cr\xC3\xA9\xC3\xA9."
   search_programs_bundles: "Tu as d\xC3\xA9j\xC3\xA0 install\xC3\xA9 un Ubuntu et cherches maintenant des programmes adapt\xC3\xA9s? Ici tu peux entrer tes centres d'int\xC3\xA9r\xC3\xAAts et t\xC3\xA9l\xC3\xA9charger un des compilations de programme pr\xC3\xA9-configur\xC3\xA9s."
-  view_user_profiles__profile_data_0: "Installation: Inserer les param\xC3\xA8tres personnels"
+  view_user_profiles__profile_data_0: "Pr\xC3\xA8r\xC3\xA9glages?"
   view_home_news_17: Pour blog
   view_home_derivatives_44: "- version rapide de Ubuntu pour les PC plus anciens."
   view_home_faq_04: "Il existe deux possibilit\xC3\xA9s d'installer une compilation. <p> La premi\xC3\xA8re possibilit\xC3\xA9 est que tu cliques sur <b> T\xC3\xA9l\xC3\xA9charger </ b>. \xC3\x80 droite, tu verras alors une petite bo\xC3\xAEte avec la rubrique \"Param\xC3\xA8tres\", l\xC3\xA0 tu peux cliquersur le bouton \xC2\xABmodifier\xC2\xBB pour adapter ta surface (Kubuntu (KDE), Xubuntu (XFCE) ou Lubuntu (LXDE)), ou alors sp\xC3\xA9ccifier quelles sources et les licences doivent \xC3\xAAtre autoris\xC3\xA9es. Apr\xC3\xA8s avoir cliqu\xC3\xA9 sur Enregistrer, tu devrais \xC3\xA0 nouveau cliquer sur <b> T\xC3\xA9l\xC3\xA9charger </ b>pour retourner \xC3\xA0 la fen\xC3\xAAtre de s\xC3\xA9lection. <p> Ici, tu peux maintenant faire une s\xC3\xA9lection approximative des activit\xC3\xA9s que tu aimerais faire avec ton ordinateur.  Apr\xC3\xA8s avoir s\xC3\xA9lectionn\xC3\xA9une activit\xC3\xA9 (graphiques, par exemple) toutes les compilations de la cat\xC3\xA9gorie publi\xC3\xA9es s'affichent dans la colonne de droite. Si une compilation est marqu\xC3\xA9e comme \"install\xC3\xA9 par d\xC3\xA9faut\", elle est automatiquement s\xC3\xA9lectionn\xC3\xA9e. Toute modification de la s\xC3\xA9lection est enregistr\xC3\xA9e imm\xC3\xA9diatement.  Maintenant tu peux installer ta s\xC3\xA9lection \xC3\xA0 travers \"Installer\" directement sur ton syst\xC3\xA8me existant, Premi\xC3\xA8rement, les sources doivent \xC3\xAAtres ajout\xC3\xA9es. <p> La deuxi\xC3\xA8me possibilit\xC3\xA9 est d'installer directement une seule compilation. Pour cela tu vas cliquer sur <b>compilation  </ b>, puis sur  <b>compilations publi\xC3\xA9es</ b>. L\xC3\xA0, tu auras un aper\xC3\xA7u sur toutes les compilations cr\xC3\xA9es sur Communtu. Ici on doit, si cela n'a pas encore \xC3\xA9t\xC3\xA9 fait, ajouter les sources (Cliques sur \"ajouter sources \"), puis avec un clic sur \" install\xC3\xA9 \xC3\xA0 l'aide du m\xC3\xA9ta-paquet \" les compilations correspondantes seront install\xC3\xA9es."
   view_metapackages_show_deb_error: "Lors de la cr\xC3\xA9ation des metapaquets une erreur s'est produite. Nous nous occupons du probl\xC3\xA8me."
   view_user_profiles__profile_data_1: "Sur cette page, tu peux entrer les param\xC3\xA8tres de base de ton ordinateur."
   view_home_derivatives_45: http://wiki.ubuntuusers.de/Server_Installation
+  login: ""
   controller_metapackages_not_allowed: "Seul le propri\xC3\xA9taire de la distribution doit ex\xC3\xA9cuter."
   view_home_faq_05: "Comment puis-je cr\xC3\xA9er un compilation?"
   view_user_profiles__profile_data_2: "Note: clique \xC3\xA0 la fin  sur le bouton 'Sauvegarder'!"
@@ -369,6 +387,7 @@ fr:
 
   view_home_faq_07: Comment noter une compilation?
   view_user_profiles__profile_data_4: Plus d'informations
+  choice_of_package: Description du paquet
   view_home_derivatives_48: "- La version minimale pour les serveurs, convient surtout pour la virtualisation .."
   controller_metapackages_2: "Ce nom de compilation est d\xC3\xA9j\xC3\xA0 pris!"
   view_home_faq_08: "Tu vas dans le menu \" compilation\" et sous \"compilation publi\xC3\xA9e \" tu peux voir toutes les compilations. L\xC3\xA0, tu peux cliquer sur un maximum cinq \xC3\xA9toiles. Ensuite, il apparaitra une case de commentaire o\xC3\xB9 l'on peut qualifier cette \xC3\xA9valuation."
@@ -416,8 +435,8 @@ fr:
   livecd_existing_name: "Ce nom est d\xC3\xA9j\xC3\xA0 pris"
   controller_metapackages_9: "La description ne doit pas \xC3\xAAtre vide <br>"
   view_users__sidebar_6: "G\xC3\xA9rer les cat\xC3\xA9gories"
-  view_home_faq_14: "Aller \xC3\xA0 l'option menu \"Rechercher programmes\". Voici un champ de recherche o\xC3\xB9 vous pouvez sp\xC3\xA9cifier le nom des Prgramm  recherch\xC3\xA9s. Il est \xC3\xA9galement possible de rechercher les programmes en cliquant sur \"Seuls les programmes\", ainsi d'autres biblioth\xC3\xA8ques ne seront plus affich\xC3\xA9es. En outre, il est \xC3\xA9galement possible de s\xC3\xA9lectionner une Debian-section pour  la s\xC3\xA9lection des programmes bas\xC3\xA9s sur des cat\xC3\xA9gories  pr\xC3\xA9-s\xC3\xA9lectionn\xC3\xA9s."
   view_sent__user_exists_0: "Utilisateur trouv\xC3\xA9"
+  view_home_faq_14: "Aller \xC3\xA0 l'option menu \"Rechercher programmes\". Voici un champ de recherche o\xC3\xB9 vous pouvez sp\xC3\xA9cifier le nom des Prgramm  recherch\xC3\xA9s. Il est \xC3\xA9galement possible de rechercher les programmes en cliquant sur \"Seuls les programmes\", ainsi d'autres biblioth\xC3\xA8ques ne seront plus affich\xC3\xA9es. En outre, il est \xC3\xA9galement possible de s\xC3\xA9lectionner une Debian-section pour  la s\xC3\xA9lection des programmes bas\xC3\xA9s sur des cat\xC3\xA9gories  pr\xC3\xA9-s\xC3\xA9lectionn\xC3\xA9s."
   number_of_packages_in_bundles: "Nombre de paquets dans toutes les compilations "
   announce: annonce
   confirm_new_passwd: Confirmer nouveau mot de passe
@@ -431,6 +450,7 @@ fr:
   view_my_mailer_repo_0: "Bonjour, \n\n\
     une proposition d'un nouveau d\xC3\xA9p\xC3\xB4t a \xC3\xA9t\xC3\xA9 faite sur www.communtu.de :"
   free_disk_space: Espace disque libre (root / home / isos)
+  hello_simple: ""
   settings: "Param\xC3\xA8tres"
   view_home_derivatives_57: pour subnotebooks/EEE PC
   edit_architecture: Modifier l'architecture
@@ -457,7 +477,7 @@ fr:
 
   view_home_beteiligung_4: "Tu  penses que tu en sais d\xC3\xA9j\xC3\xA0 beaucoup sur les programmes Open Source ? \n\
     . Dans ce cas, commente tes exp\xC3\xA9riences sur les paquets. Peut \xC3\xAAtre as-tu  vu une \n vid\xC3\xA9o int\xC3\xA9ressante concernant le programme sur Youtube? alors mets la dans \n les programmes vid\xC3\xA9os de Communtu."
-  controller_cart_2: "Les paquets suivants n'ont pas \xC3\xA9t\xC3\xA9 trouv\xC3\xA9s: {{message}} <br> S'il te pla\xC3\xAEt choisie les r\xC3\xA9f\xC3\xA9rentiels qui contiennent les paquets ,et<a href=\"{{url}}\"> propose de les inclure dans Communtu. </ a>"
+  controller_cart_2: "Les paquets suivants n'ont pas \xC3\xA9t\xC3\xA9 trouv\xC3\xA9s: {{message}} <br> S'il te pla\xC3\xAEt choisie les r\xC3\xA9f\xC3\xA9rentiels qui contiennent les paquets ,et<a href=\"{{url}}\"> propose de les inclure dans Communtu. </a>"
   install_by_default: "L'installation standart:"
   show: Afficher
   view_home_faq_20: "Un d\xC3\xA9p\xC3\xB4t (en anglais pour  \"paquet source \") est une collection de programmes. \xC3\x80 propos de la gestion de paquets (dans GNOME et Xfce c'est Synaptic, dans KDE c'est KpackageKit), tu peux installer des programmes \xC3\xA0 partir des sorces de paquets. Dans le m\xC3\xAAme temps tu obtiens exactement sur le m\xC3\xAAme paquet de sources, les mises \xC3\xA0 jour pour les programmes install\xC3\xA9s. Pour plus d'informations sur les sources de paquets tu peux trouver <a href=\"http://wiki.ubuntuusers.de/Paketquellen\" target=\"_blank\">ici</a>."
@@ -478,23 +498,27 @@ fr:
   view_home_faq_23: "Comment puis-je supprimer les m\xC3\xA9ta-paquets de nouveau?"
   view_home_derivatives_3: "http://wiki.ubuntuusers.de/c'est_quoi_Linux? # Qu'est-ce-que-une distribution d\xC3\xA9riv\xC3\xA9e)"
   view_home_beteiligung_8: "Coop\xC3\xA9ration"
+  login_small: ""
   helper_distributions_8: Voir le texte source
   new_category: "Nouvelle cat\xC3\xA9gorie"
   view_home_faq_24: "Quels paquets se trouvent dans votre d\xC3\xA9p\xC3\xB4t?"
   news: "Actualit\xC3\xA9"
   view_home_derivatives_4: ", et de nombreux utilisateurs d'Ubuntu se demandent si ils devraient plut\xC3\xB4t utiliser Ubuntu au lieu d'un d\xC3\xA9riv\xC3\xA9. La r\xC3\xA9ponse est que: g\xC3\xA9n\xC3\xA9ralement on s ensort avec le standard d'Ubuntu assez bien, etant donn\xC3\xA9 que Communtu autorise l'installation des d\xC3\xA9riv\xC3\xA9s d'une mani\xC3\xA8re simple. Toutefois, cela n'est pas appropri\xC3\xA9 pour tous les d\xC3\xA9riv\xC3\xA9s d'\xC3\xA9galit\xC3\xA9."
+  create_livecd: construire
   view_home_beteiligung_9: "Actuellement, nous avons encore besoin de soutien dans l'\xC3\xA9laboration du projet pour les deux activit\xC3\xA9s suivantes:"
   press_archiv: Archives de presse
-  view_home_faq_25: "La source  packages.communtu.org ne contienent que des m\xC3\xA9ta-paquets qui correspondent \xC3\xA0 des compilations Communtu. Le Vrai logiciel  n'est pas disponible; ceci \xC3\xA9tant les r\xC3\xA9f\xC3\xA9rentiels <a href=\"/distributions\" target=\"_blank\"> ici </ a>  \xC3\xA9num\xC3\xA9r\xC3\xA9s seront utilis\xC3\xA9s directement."
+  view_home_faq_25: "La source  packages.communtu.org ne contienent que des m\xC3\xA9ta-paquets qui correspondent \xC3\xA0 des compilations Communtu. Le Vrai logiciel  n'est pas disponible; ceci \xC3\xA9tant les r\xC3\xA9f\xC3\xA9rentiels <a href=\"/distributions\" target=\"_blank\"> ici </a>  \xC3\xA9num\xC3\xA9r\xC3\xA9s seront utilis\xC3\xA9s directement."
   view_users__user_0: activer
   username: Nom d'utilisateur
   view_home_derivatives_5: "Tous les  d\xC3\xA9riv\xC3\xA9s peuvent sous "
   achtung: A votre attention! disponible sur Communtu il n'y a pas longtemps
+  wait_for_email: ""
   view_users__user_1: "d\xC3\xA9sactiver"
   iso_deleted: "Le fichier ISO a malheureusement \xC3\xA9t\xC3\xA9 supprim\xC3\xA9 pour des raisons d'espace."
   view_home_derivatives_6: "S\xC3\xA9lection du Logiciel "
   controller_metapackages_cannot_destroy: "La compilation Publi\xC3\xA9e ne peut pas \xC3\xAAtre supprim\xC3\xA9."
   match_ubuntu: Adapter Ubuntu-Linux aux besoins individuels
+  install_package: ""
   view_users__user_2: "  Modifier les R\xC3\xB4les"
   view_home_derivatives_7: "sous cat\xC3\xA9gorie selectionne  les \"d\xC3\xA9riv\xC3\xA9s\" \xC3\xA0 installer."
   chat: Chat
@@ -504,6 +528,7 @@ fr:
   view_my_mailer_mailerror_0: "Bonjour,\n\
     une erreur a \xC3\xA9t\xC3\xA9 signal\xC3\xA9 sur www.communtu.de. \n\
     L'utilisateur souhaite \xC3\xAAtre inform\xC3\xA9 lorsque l'erreur ne se produira plus."
+  tested_bundle: "Compilations cr\xC3\xA9\xC3\xA9s par"
   debian_section: "Debian-section:"
   view_home_derivatives_9: "Sur Communtu, une apr\xC3\xA9s-installation des d\xC3\xA9riv\xC3\xA9s est n\xC3\xA9c\xC3\xA9ssaire:"
   prepare_livecd_contd: " pour chaque pr\xC3\xA9-version LiveCD / DVD  pr\xC3\xA9parer nouvellement (script / remaster-getisos)"
@@ -524,17 +549,21 @@ fr:
     w4A=
 
   view_users_edit_2: Supprimer le profil
+  current_news: "Actualit\xC3\xA9"
   view_cart_update_4: Publier la compilation
   nothing_found_questionmark: "Rien trouv\xC3\xA9?"
+  cd_ready: ""
   migrate_bundles_derivative: "Prendre les compilations d'autres d\xC3\xA9riv\xC3\xA9s "
   controller_users_1: "Merci pour votre inscription \xC3\xA0 Communtu! Tu peux te connecter d\xC3\xA8s maintenant."
   view_users_edit_3: "Nom d'utilisateur:"
   not_logged_in: "Tu n'est pas connect\xC3\xA9. S'il te pla\xC3\xAEt clique ci-dessus pour vous connecter."
   controller_users_2: "Il y eu un probl\xC3\xA8me avec l'inscription."
   more_about_sources: "(Plus d'information sur le sujet cl\xC3\xA9 et les sources principales dans la rubrique FAQ)"
+  make_your_livedvd_or_usb: "Tu n'as pas encore install\xC3\xA9 Ubuntu. S\xC3\xA9lectionne ta compilation ici et grave un CD  afin que  tu puisses l'utiliser comme un live-CD et aussi pour l'installation."
   start_vm_with_livecd_basis: "machine virtuelle en fonction des param\xC3\xA8tres LiveCD le d\xC3\xA9part (pour le d\xC3\xA9pannage)"
   view_sent_index_3: Temps
   controller_users_3: "Vous avez \xC3\xA9t\xC3\xA9 connect\xC3\xA9 en tant qu'utilisateur {{anonymous_user}} avec mot de passe {{anonymous_user}}. S'il te pla\xC3\xAEt clique en haut a ta droite sur Utilsateur {{anonymous_user}} et le convertir en un compte d'utilisateur permanent, sinon le compte sera supprim\xC3\xA9 au bout d'un jour."
+  cd_created: "Le LiveCD / DVD est cr\xC3\xA9\xC3\xA9."
   view_cart__metacart_3: Compilation venant des liste de paquets
   rough_selection: "selection pas pr\xC3\xA9cise"
   controller_users_4: "Il y a eu  un probl\xC3\xA8me avec le compte invit\xC3\xA9."
@@ -544,6 +573,7 @@ fr:
   model_user_meta_tabz_0: Mes compilations
   controller_users_5: "Mise \xC3\xA0 jour des donn\xC3\xA9es de l'utilisateur"
   view_metapackages_show_12: "pas publi\xC3\xA9"
+  usb: ""
   model_user_meta_tabz_1: "Tous les paquets publi\xC3\xA9s"
   controller_users_6: "Les donn\xC3\xA9es utilisateur ont \xC3\xA9t\xC3\xA9 sauvegard\xC3\xA9es et le compte d'utilisateur est pour une longue dur\xC3\xA9e"
   chat_channel: de-communtu
@@ -555,11 +585,14 @@ fr:
   model_user_meta_tabz_3: "Compilations publi\xC3\xA9es"
   packages: paquet
   controller_users_8: " Utilisateur d\xC3\xA9sactiv\xC3\xA9"
+  stars_popcon: ""
   new_passwd: Nouveau mot de passe
+  liveusb_start_message: "Ici, tu peux cr\xC3\xA9er un Live-CD/DVD qui contient le logiciel que vous avez s\xC3\xA9lectionn\xC3\xA9. Tu as s\xC3\xA9lectionn\xC3\xA9 la compilation suivante:"
   view_metapackages_show_15: "\xC3\x89diter"
   controller_users_9: "Il y a eu un probl\xC3\xA8me avec la d\xC3\xA9sactivation de cet l'utilisateur."
   delete: Supprimer
   view_layouts_application_0: "Communtu, Ubuntu, installation, assistance \xC3\xA0 l'installation"
+  create_iso: construire
   view_metapackages_show_16: Editer la liste des paquets
   view_layouts_application_1: "Communtu correspond \xC3\xA0 votre syst\xC3\xA8me Ubuntu Linux pour r\xC3\xA9pondre \xC3\xA0 vos besoins individuels."
   view_admins_sync_package_1: "Erreur: D\xC3\xA9p\xC3\xB4t n'a pas pu \xC3\xAAtre synchronis\xC3\xA9"
@@ -586,10 +619,12 @@ fr:
   Kommentar: "Commentaire:"
   model_package_12: "Contenu de {{file}}  ne correspond pas \xC3\xA0 la Syntaxe d\xC3\xA9p\xC3\xB4t"
   imprint: "Mentions l\xC3\xA9gales"
-  view_layouts_application_6: "Maintenant, rapidement, facilement et en toute s\xC3\xA9curit\xC3\xA9 un don en ligne - avec PayPal."
+  usb_howto: ""
   view_passwords_new_0: "Mot de passe oubli\xC3\xA9 "
+  view_layouts_application_6: "Maintenant, rapidement, facilement et en toute s\xC3\xA9curit\xC3\xA9 un don en ligne - avec PayPal."
   view_rating_new_comment_cancel: " Annuler"
   view_passwords_new_1: "Avec quelle adresse e-mail  as tu cr\xC3\xA9\xC3\xA9 le compte d'utilisateur?"
+  iso_howto: ""
   view_metapackages_finish_migrate_0: "Toutes les compilations ont \xC3\xA9t\xC3\xA9"
   view_passwords_new_2: " r\xC3\xA9-initialiser le mot de passe"
   view_metapackages_finish_migrate_1: vers
@@ -632,13 +667,18 @@ fr:
   view_cart_new_from_list_tip: "Astuce: Tu peux \xC3\xA9galement trier une grande liste de th\xC3\xA8me avec un \xC3\xA9diteur et ensuite les sous-listes r\xC3\xA9sultant peuvent \xC3\xAAtre s\xC3\xA9par\xC3\xA9ment t\xC3\xA9l\xC3\xA9charger ici. La compilation obtenue peut \xC3\xAAtre de nouveau regroupp\xC3\xA9 en compilation. Cela cr\xC3\xA9e une compilation plus structur\xC3\xA9e."
   view_users_show_0: Profil de l'utilisateur
   view_metapackages_edit_gpl: "J'accepte de publier les informatios de compilation sous  la <a href=\"http://www.gnu.fr/documents/gpl.fr.html\"> Licence GNU General public </a> (version 2.0 ou sup\xC3\xA9rieure) pour publication."
+  install_package_steps: ""
   view_home_donate: Faire un don pour Communtu
+  best_livecds: "Jusqu'ici Live-CDs/DVDs cr\xC3\xA9\xC3\xA9:"
   save: Sauvegarder
   view_roles_new_0: "Nouveau r\xC3\xB4le"
+  action_needs_login: ""
   search_package: Rechercher des paquets
   error_no_packages: "Tu n'as s\xC3\xA9lectionn\xC3\xA9 aucun paquet. L'op\xC3\xA9ration a \xC3\xA9t\xC3\xA9 interrompue."
   view_metapackages__metalist_14: "installation via metapaquet. S'il vous pla\xC3\xAEt ajouter les sources avant."
+  installation_two_steps: ""
   view_users_show_2: "Membre depuis:"
+  more: ""
   view_metapackages_show_version: "Version:"
   subtype: "Sous-type:"
   view_users_show_3: "(Mois /Ann\xC3\xA9e)"
@@ -647,24 +687,31 @@ fr:
   view_admins_test_all_1: "Tous les r\xC3\xA9ferentiels ont \xC3\xA9t\xC3\xA9 atteints."
   view_users_show_5: "Compilation cr\xC3\xA9ee"
   blog_link: "http://encommuntu.wordpress.com "
+  no_bundle_selected: Selectioner une compilation
   view_users_show_8: Nouvelles
   view_metapackages__metalist_20: "<option>0 compilation s\xC3\xA9lectionn\xC3\xA9 </option>   "
   last_user: "Bienvenue \xC3\xA0 notre dernier nouveau utilisateur inscrit"
   save_selection: "Sauvegarder la s\xC3\xA9lection"
   livecd_image: image CD
   view_categories_index_0: "Aper\xC3\xA7u des cat\xC3\xA9gories "
+  make_your_usb: ""
   view_packages__packagelist_1: "Seulement&nbsp;Programmes:"
   eg: "par exemple:"
   view_packages__packagelist_2: "Recherche:"
   cant_debianized: S'il te plait  fais entrer dans la compilation un titre en anglais et une description en anglais.
   edit_press_archiv: Modifier l'archive de presse
+  want_to_add_package: ""
   four_and_fourty_letters: "Entre 4 et 40 caract\xC3\xA8res"
+  download_area: "T\xC3\xA9l\xC3\xA9charger:"
+  usb_created: ""
   circular_dependency: "Erreur: d\xC3\xA9pendances circulaires entre les compilations"
   view_repositories_show_4: "liste des paquets pour {{arch}}:"
+  install_bundle: Installation des compilations
   livecd_email_failed: "Communtu: Impossible de cr\xC3\xA9er le Live-CD/DVD"
   usb_image: USB Image
   controller_application_0: "Cette fonctionnalit\xC3\xA9 n'est pas disponible pour les visiteurs."
-  livecd_email_body_failed: ", le Live-CD/DVD {{name}} n'a pas pu \xC3\xAAtre cr\xC3\xA9\xC3\xA9. Nous nous occupons du probl\xC3\xA8me."
+  livecd_email_body_failed: ""
+  create_your_usb: "Cr\xC3\xA9ez toi-m\xC3\xAAme un Live CD"
   being_created: !binary |
     ZXN0IGNyw6nDqQ==
 
@@ -672,14 +719,18 @@ fr:
   view_repositories_show_6: OpenSource
   new_architecture: Nouvelle Architecture
   view_home_mail_0: Notification sur le depannage
-  iso_image: Image ISO (pour les CD / DVD)
+  iso_image: USB Image
   view_repositories_show_7: commercialement
   advanced_user: "Je suis un utilisateur avanc\xC3\xA9 et j'aimerais aussi voir les versions inachev\xC3\xA9es d'Ubuntu."
   view_home_mail_1: "S'il te plait informe-moi \xC3\xA0 l'adresse e-mail suivante par rapport au depannage"
   view_categories_index_12: "Afficher la cat\xC3\xA9gorie arbre"
   livecd_failed: "Cr\xC3\xA9ation du LiveCD a \xC3\xA9chou\xC3\xA9"
   view_packages_show_2: "Installer le paquet imm\xC3\xA9diatement"
+  choice_of_bundle: Nouvelle compilation
+  create_livecd_subtitle1: "Aller \xC3\xA0 la page de t\xC3\xA9l\xC3\xA9chargement"
   none: Aucun
+  create_livecd_subtitle2: "Compilation cr\xC3\xA9ee"
+  source_code: Source
   view_passwords_edit_0: "Mot de passe:"
   link_community_title: "Lien externe: les pages pour les utilisateurs de ubuntu"
   third_party: tous les fournisseurs
@@ -694,7 +745,7 @@ fr:
   view_packages_show_8: "Popularit\xC3\xA9:"
   view_home_home_rating_link: evaluation de la compilation
   new_bundle: Nouvelle compilation
-  view_user_profiles__profile_data_12: "Authoriser toutes les sources  (un peu moins s\xC3\xA9curis\xC3\xA9: <a href=\"http://wiki.ubuntuusers.de/Fremdquellen\">Paquets externes</ a> peuvent compromettre le syst\xC3\xA8me, mais encore plus de programmes/confort:"
+  view_user_profiles__profile_data_12: "Authoriser toutes les sources  (un peu moins s\xC3\xA9curis\xC3\xA9: <a href=\"http://wiki.ubuntuusers.de/Fremdquellen\">Paquets externes</a> peuvent compromettre le syst\xC3\xA8me, mais encore plus de programmes/confort:"
   view_packages_show_9: "/ 5 Etoile&nbsp;&nbsp; "
   view_user_profiles__installation_0: "Installation \xC3\xA0 post\xC3\xA9riori d'Ubuntu"
   yes1: oui
@@ -730,6 +781,7 @@ fr:
   view_home_icons_15: "Programme compil\xC3\xA9"
   controller_sessions_5: "Votre nom d'utilisateur ou mot de passe est incorrect. S'il vous pla\xC3\xAEt vers le bas sur  \" s'inscrire \" bouton."
   view_home_icons_16: Migration des referentiels
+  order_mailinglist: "Listes de diffusion:"
   view_packages_show_19: "Conflits avec les paquets suivants (seuls ceux qui ont pas de version):"
   donation_receipt: "re\xC3\xA7u de don peut \xC3\xAAtre d\xC3\xA9livr\xC3\xA9."
   repository_url: !binary |
@@ -743,6 +795,7 @@ fr:
   view_home_icons_19: lien externe
   view_home_home_bundle: "la publication des compilations de programmes pr\xC3\xA9-configur\xC3\xA9s dans communtu"
   view_packages_show_21: "Employ\xC3\xA9 dans les paquets suivants:"
+  bundle_to_livecd1: "LiveCD / DVD recr\xC3\xA9er"
   discuss: discuter
   feedback: Commentaire
   view_videos_show_0: "Url:"
@@ -753,6 +806,7 @@ fr:
   first_sync_repos: "S'il vous pla\xC3\xAEt premi\xC3\xA9rement synchroniser les r\xC3\xA9ferentiels. Cela se fait g\xC3\xA9n\xC3\xA9ralement automatiquement dans  l'intervalle d'une semaine. S'il vous pla\xC3\xAEt noter: \xC3\xA0 ce stade n'est v\xC3\xA9rifi\xC3\xA9e que si quelque chose \xC3\xA9tait synchronis\xC3\xA9, pas de savoir si le processus est termin\xC3\xA9."
   view_home_icons_22: "Ic\xC3\xB4ne pour l'utilisateur"
   email_with_colon: "E-Mail: "
+  iso_ready: ""
   you_can: "Tu peux aussi "
   view_home_icons_23: "ic\xC3\xB4ne de message"
   view_packages_show_26: Transformer le Metapaquet en compilation
@@ -761,6 +815,7 @@ fr:
   controller_debs_0: les paquets Debian.
   controller_debs_1: "Deb est cr\xC3\xA9\xC3\xA9 ."
   view_packages_edit_10: Description du paquet
+  please_create_cd: "Cr\xC3\xA9er une compilation \xC3\xA0 partir d'une liste de paquets "
   view_mailbox_show_1: De
   choose_bundle: Selectioner une compilation
   controller_debs_2: "Deb mise \xC3\xA0 jour."
@@ -773,60 +828,68 @@ fr:
   view_mailbox_show_5: "Vous n'avez pas de messages dans votre bo\xC3\xAEte de r\xC3\xA9ception."
   invalid_activation_code_entered: "Entree invalide de mise \xC3\xA0 jour de code"
   livecd_previous_cds: "Jusqu'ici Live-CDs/DVDs cr\xC3\xA9\xC3\xA9:"
-  migrate_repository: "remplacer le d\xC3\xA9p\xC3\xB4t"
+  create_livecd_title: "Cr\xC3\xA9ez toi-m\xC3\xAAme un Live CD"
   bundle_editor: Compilation-Editeur
-  which_programs_do_you_need: "Sur quel sujet recherches-tu des programmes(bureau, graphiques,...)? Ici tu peux entrer tes centres d'int\xC3\xA9r\xC3\xAAt et mettre sur pied un programme adapt\xC3\xA9 pr\xC3\xA9-configur\xC3\xA9:"
-  description_with_colon: "Description:"
-  view_admins_sync_all_1: "Erreur: les referentiels n'ont pas pu \xC3\xAAtre synchronis\xC3\xA9s"
-  edit: Modifier
+  migrate_repository: "remplacer le d\xC3\xA9p\xC3\xB4t"
+  create_livecd_downloadpage: ""
+  install_bundle_steps: ""
   model_user_profile_tabz_0: "Les donn\xC3\xA9es de base"
-  view_admins_sync_all_2: " D\xC3\xA9p\xC3\xB4ts synchronis\xC3\xA9s"
-  choose_parent: Choisis un parent!
+  edit: Modifier
+  view_admins_sync_all_1: "Erreur: les referentiels n'ont pas pu \xC3\xAAtre synchronis\xC3\xA9s"
+  description_with_colon: "Description:"
+  which_programs_do_you_need: "Sur quel sujet recherches-tu des programmes(bureau, graphiques,...)? Ici tu peux entrer tes centres d'int\xC3\xA9r\xC3\xAAt et mettre sur pied un programme adapt\xC3\xA9 pr\xC3\xA9-configur\xC3\xA9:"
   model_user_profile_tabz_1: "S\xC3\xA9lection de logiciel"
-  controller_suggestion_11: Ajouter les sources des paquets
+  choose_parent: Choisis un parent!
+  view_admins_sync_all_2: " D\xC3\xA9p\xC3\xB4ts synchronis\xC3\xA9s"
   navigation_communtu: Navigation Communtu
-  controller_suggestion_12: "Les Sources de paquets suivants seront ajout\xC3\xA9s"
-  view_home_auth_error_0: Erreur d'authentification
-  error_no_attachement: "Tu n'as s\xC3\xA9lectionn\xC3\xA9 aucun fichier. L'op\xC3\xA9ration a \xC3\xA9t\xC3\xA9 interrompue."
-  model_user_profile_tabz_3: "Effectuer l'installation:"
+  controller_suggestion_11: Ajouter les sources des paquets
   mailinglist: "Listes de diffusion:"
-  view_home_auth_error_1: "Les donn\xC3\xA9es que tu as envoy\xC3\xA9 \xC3\xA0 Communtu n'ont pas pu \xC3\xAAtre authentifi\xC3\xA9 correctement. S'il te pla\xC3\xAEt essaye encore d'acc\xC3\xA9der au site  et rempli une fois de plus le formulaire appropri\xC3\xA9. Ce probleme vient  probablement du fait que  tu  n'ais pas activ\xC3\xA9 tes cookies."
-  ubuntu_derivatives: "Ubuntu d\xC3\xA9riv\xC3\xA9s"
+  model_user_profile_tabz_3: "Effectuer l'installation:"
+  error_no_attachement: "Tu n'as s\xC3\xA9lectionn\xC3\xA9 aucun fichier. L'op\xC3\xA9ration a \xC3\xA9t\xC3\xA9 interrompue."
+  view_home_auth_error_0: Erreur d'authentification
+  controller_suggestion_12: "Les Sources de paquets suivants seront ajout\xC3\xA9s"
   model_user_profile_tabz_4: "Pr\xC3\xA8r\xC3\xA9glages?"
-  controller_suggestion_15: Installer les paquets
+  ubuntu_derivatives: "Ubuntu d\xC3\xA9riv\xC3\xA9s"
+  view_home_auth_error_1: "Les donn\xC3\xA9es que tu as envoy\xC3\xA9 \xC3\xA0 Communtu n'ont pas pu \xC3\xAAtre authentifi\xC3\xA9 correctement. S'il te pla\xC3\xAEt essaye encore d'acc\xC3\xA9der au site  et rempli une fois de plus le formulaire appropri\xC3\xA9. Ce probleme vient  probablement du fait que  tu  n'ais pas activ\xC3\xA9 tes cookies."
   force_sync: "Forcer la synchronisation des r\xC3\xA9f\xC3\xA9rentiels "
+  controller_suggestion_15: Installer les paquets
   controller_suggestion_16: "Les paquets suivants seront install\xC3\xA9s"
   we_want_you: Nous avons besoin de toi
-  controller_sent_0: "Le sujet ne doit pas \xC3\xAAtre vide."
   make_your_livedvd: "Tu n'as pas encore install\xC3\xA9 Ubuntu. S\xC3\xA9lectionne ta compilation ici et grave un CD  afin que  tu puisses l'utiliser comme un live-CD et aussi pour l'installation."
-  bundel_editing: "pour \xC3\xA9diter les compilations"
+  controller_sent_0: "Le sujet ne doit pas \xC3\xAAtre vide."
   controller_sent_1: L'utilisateur n'existe pas
-  view_user_profiles__sources_0: "Sources pour les programmes \xC3\xA0 installer"
-  view_home_impressum_2: AG Communtu
-  architectures: Architectures
-  metapackages_cannot_destroy: "La compilation ne peut pas \xC3\xAAtre supprim\xC3\xA9e car elle est utilis\xC3\xA9e dans une autre."
-  view_rating_show_title_ratings_count: "(qui est Bas\xC3\xA9 sur {{votes}}  Evaluation(s))"
+  bundel_editing: "pour \xC3\xA9diter les compilations"
+  untested_bundle: "Compilations cr\xC3\xA9\xC3\xA9s par"
   controller_sent_2: "Message envoy\xC3\xA9 avec succ\xC3\xA8s"
-  model_package_0: Logiciel Libre
-  missing_debs_for_bundle: "il manque debs pour la liasse:"
+  create_livecd_intro: ""
+  metapackages_cannot_destroy: "La compilation ne peut pas \xC3\xAAtre supprim\xC3\xA9e car elle est utilis\xC3\xA9e dans une autre."
+  architectures: Architectures
+  view_home_impressum_2: AG Communtu
+  cannot_publish_bundle: ""
+  view_rating_show_title_ratings_count: "(qui est Bas\xC3\xA9 sur {{votes}}  Evaluation(s))"
+  view_user_profiles__sources_0: "Sources pour les programmes \xC3\xA0 installer"
   start_vm: "d\xC3\xA9marrer la machine virtuelle"
+  missing_debs_for_bundle: "il manque debs pour la liasse:"
+  model_package_0: Logiciel Libre
   view_user_profiles__sources_1: "Ici les programmes et les paquets  a installer sont tri\xC3\xA9s selon les sources et  \xC3\xA9num\xC3\xA9r\xC3\xA9es de tel sorte que tu puisses \xC3\xA9galement voir pourquoi les sources pertinentes sont ajout\xC3\xA9s."
-  model_package_1: "Libre + Propri\xC3\xA9taire"
-  view_user_profiles__profile_rating_0: "S\xC3\xA9lectione la compilation de programmes et les programmes \xC3\xA0 installer"
+  user_not_found: "Les r\xC3\xA9f\xC3\xA9rentiels suivants n'ont pas pu \xC3\xAAtre lu:"
   view_home_impressum_4: Bauernstr. 2
-  model_package_2: Inconnu
-  view_home_icons_0: "Les ic\xC3\xB4nes de Communtu"
-  view_user_profiles__profile_rating_1: "A la droite tu trouveras les d\xC3\xA9tails sur la cat\xC3\xA9gorie s\xC3\xA9lectionn\xC3\xA9e \xC3\xA0 gauche"
-  view_home_impressum_5: 28203 Bremen
-  livecd_email_body: ", le Live-CD/DVD a \xC3\xA9t\xC3\xA9 cr\xC3\xA9\xC3\xA9! Suis le lien:"
-  additional_sources: "Autres sources qui sont ajout\xC3\xA9s en raison de certaines sources ne sont pas compl\xC3\xA8tes."
+  model_package_1: "Libre + Propri\xC3\xA9taire"
+  view_user_profiles__profile_rating_0: ""
   order_number: "Numero class\xC3\xA9 (le plus petit nombre en premier)"
-  videos: "Vid\xC3\xA9os:"
+  additional_sources: "Autres sources qui sont ajout\xC3\xA9s en raison de certaines sources ne sont pas compl\xC3\xA8tes."
+  livecd_email_body: ""
+  view_home_impressum_5: 28203 Bremen
+  view_home_icons_0: "Les ic\xC3\xB4nes de Communtu"
+  model_package_2: Inconnu
+  view_user_profiles__profile_rating_1: "A la droite tu trouveras les d\xC3\xA9tails sur la cat\xC3\xA9gorie s\xC3\xA9lectionn\xC3\xA9e \xC3\xA0 gauche"
+  bundle_tested: Modifier les compilations
   server_status: Statut du serveur
+  videos: "Vid\xC3\xA9os:"
   senden: Envoyer
   view_home_icons_3: Installer les paquets
-  model_package_6: <br> n a pas le bon format
   register: S'inscrire
+  model_package_6: <br> n a pas le bon format
   model_package_need_not_update: "{{url}} n'a pas chang\xC3\xA9"
   model_package_7: ne parviens a detecter l' URL pour {{repo}}
   view_home_icons_6: Installer les sources
@@ -835,18 +898,19 @@ fr:
   distribution: Distribution
   view_home_icons_9: Installation via script shell
   creation_failed: "Generation a \xC3\xA9chou\xC3\xA9"
-  view_packages__search_0: Rechercher des paquets
   lib_system_0: "Tu dois te connecter pour pouvoir utiliser cette fonctionnalit\xC3\xA9. Cela est aussi valable pour Visiteur, pour cela tu dois cliquer en haut, \xC3\xA0 ta droite sur \"Visiteur\"."
   logfile_extract: Extrait du fichier journal
   fine_selection: "Fine s\xC3\xA9lection"
   natur_geist_und_technik: "Nature, Esprit et  Technologie - Association pour la promotion de la culture g\xC3\xA9n\xC3\xA9rale eV"
   link_community: http://www.ubuntuusers.de
+  view_packages__search_0: Rechercher des paquets
   view_metapackages_show_modified: La compilation contient des modifications.
   controller_derivatives_1: !binary |
     RMOpcml2w6lzIGfDqW7DqXLDqXMu
 
   lib_system_1: Tu n ' as pas la permission de poursuivre cette action.
   view_distributions_edit_0: Modifier la distrbution
+  info_new: "Cr\xC3\xA9er un nouvel article"
   view_home_about_16: "Pour pouvoir utiliser Communtu, tu dois premi\xC3\xA8rement t'inscrire. C est tr\xC3\xA9s facile, clique simplement sur le bouton \"s'inscrire \" dans la barre du haut."
   controller_derivatives_2: "Mis \xC3\xA0 jour des d\xC3\xA9riv\xC3\xA9s."
   lib_system_2: http://www.communtu.de
@@ -877,6 +941,7 @@ fr:
   former_participants: "Anciens coop\xC3\xA9rateurs"
   controller_home_2: Nous te contacterons par E-mail.
   controller_home_3: Ceci ne ressemble pas a une liste des paquets Ubuntu ... <br /> Le paquet doit contenir le nom du packet par ligne
+  create_livecd_email: ""
   livecd_created_by: "Live-CD/DVD Cr\xC3\xA9\xC3\xA9 par:"
   view_derivatives_index_0: "Vue d'ensemble des d\xC3\xA9riv\xC3\xA9s d'Ubuntu"
   controller_home_4: "un fichier  avec la liste du paquet doit \xC3\xAAtre sp\xC3\xA9cifie( un seul nom de paquet par ligne)"
@@ -895,6 +960,7 @@ fr:
   controller_categories_2: !binary |
     Q2F0w6lnb3JpZSBnw6luw6lyw6k=
 
+  livecd_please_register: ""
   view_home_home_25: "Pour des questions concernant Communtu nous avons  dans \" Questions les plus souvent pos\xC3\xA9es\"  collect\xC3\xA9s."
   description: Description
   view_layouts_application_11: "acc\xC3\xA8s visiteur"
@@ -903,25 +969,27 @@ fr:
   view_home_home_26: "Tu as install\xC3\xA9 Ubuntu et maintenant tu es \xC3\xA0 la recherche des progammes qui s'ex\xC3\xA9cutent sur Ubuntu?"
   failed_live_cds: "\xC3\x89chec LiveCD / DVD"
   view_home_donate_why: "L'op\xC3\xA9ration Communtu est bas\xC3\xA9 surtout sur l'investissement de b\xC3\xA9n\xC3\xA9voles; mais cette derni\xC3\xA9re co\xC3\xBBte de l'argent (par exemple pour les serveurs et les chambres). Communtu est donc tributaire de dons. M\xC3\xAAme de petits montants peuvent aider."
+  create_livecd_note: ""
   view_home_home_27: "Communtu te permet de:"
   donation_purpose: "Objectif: Communtu"
   controller_metapackages_not_changed: "La compilation a d\xC3\xA9ja \xC3\xA9t\xC3\xA9 transform\xC3\xA9\xC3\xA9 en m\xC3\xA9ta-paquet et t\xC3\xA9l\xC3\xA9charg\xC3\xA9e."
-  make_a_systemupgrade: "Tu veux faire une mise \xC3\xA0 niveau du syst\xC3\xA8me. Alors regarde <http://encommuntu.wordpress.com/2009/09/16/how-to-use-communtu-for-a-systems-upgrade/> comment c'est facile </ a> et t\xC3\xA9l\xC3\xA9charge ta liste de paquets sur Communtu.            "
+  make_a_systemupgrade: "Tu veux faire une mise \xC3\xA0 niveau du syst\xC3\xA8me. Alors regarde <http://encommuntu.wordpress.com/2009/09/16/how-to-use-communtu-for-a-systems-upgrade/> comment c'est facile </a> et t\xC3\xA9l\xC3\xA9charge ta liste de paquets sur Communtu.            "
   livecd_message: "Via un live CD, le logiciel peut etre \xC3\xA0 la fois essay\xC3\xA9 et install\xC3\xA9. Ceci etant, un soi-disant {{cdimage_link}} est cr\xC3\xA9\xC3\xA9, sous la forme d'un fichier ISO que tu peux graver. Pour graver un CD dont tu  as besoin, dans le cas ou tu as s\xC3\xA9lectionn\xC3\xA9 un grand nombre de logiciels, d'un DVD. <br /> <br /> La cr\xC3\xA9ation de l'image prend un certain temps. Tu seras averti par email lorsque l'image est pr\xC3\xAAte. S'il te plait v\xC3\xA9rifie dans tes param\xC3\xA8tres d'utilisateur q'une adresse Email valide a \xC3\xA9t\xC3\xA9 donn\xC3\xA9e."
   view_layouts_application_13: A propos de Communtu
   view_sent_show_2: "Date:"
   allgemeinbildung: "Culture g\xC3\xA9n\xC3\xA9rale e.V."
   view_home_home_28: "T\xC3\xA9l\xC3\xA9charger:"
   view_layouts_application_14: "Feed-back \xC3\xA0 Communtu"
+  view_home_home_29: "Sur quel sujet recherches-tu des programmes (bureau, graphiques ,...)? Ici tu peux entrer tes domaines d'int\xC3\xA9r\xC3\xAAt et  t\xC3\xA9l\xC3\xA9charger les  programmes-compil\xC3\xA9s d\xC3\xA9ja configur\xC3\xA9s."
+  view_layouts_application_15: "connect\xC3\xA9 en tant que "
   view_repositories_index_0: !binary |
     RMOpcMO0dHM6
 
-  view_home_home_29: "Sur quel sujet recherches-tu des programmes (bureau, graphiques ,...)? Ici tu peux entrer tes domaines d'int\xC3\xA9r\xC3\xAAt et  t\xC3\xA9l\xC3\xA9charger les  programmes-compil\xC3\xA9s d\xC3\xA9ja configur\xC3\xA9s."
-  view_layouts_application_15: "connect\xC3\xA9 en tant que "
   view_layouts_application_16: "nouveau m\xC3\xA9ssage"
   view_home_home_30: "Compilation:"
   view_layouts_application_18: "Aucuns nouveaux m\xC3\xA9ssages "
   save_or_delete_bundle: ""
+  communtu_is_opensource: ""
   package_list: "retour \xC3\xA0 la liste des paquets"
   view_home_home_31: "Ici, tu as la possilit\xC3\xA9 non seulement de choisir des th\xC3\xA8mes d\xC3\xA9taill\xC3\xA9s et en plus charger des programmes et des compilations de programmes, mais aussi cr\xC3\xA9er ta propre compilation et l administrer ."
   view_layouts_application_19: https://www.paypal.com/de_DE/DE/i/btn/btn_donate_LG.gif
@@ -929,8 +997,8 @@ fr:
   controller_metapackages_debianizing: "La compilation sera transform\xC3\xA9e en m\xC3\xA9ta-paquet et ensuite transf\xC3\xA9r\xC3\xA9e. Cela prendra quelques minutes."
   controller_metapackages_11: Impossible de supprimer le paquet de la compilation.
   view_home_home_32: "Communtu:"
-  view_repositories_index_5: "Nouveau d\xC3\xA9p\xC3\xB4t"
   view_home_home_33: Aimerais-tu en savoir plus sur Communtu? As-tu des suggestions, des questions - nous sommes impatients de t'entendre.
+  view_repositories_index_5: "Nouveau d\xC3\xA9p\xC3\xB4t"
   view_layouts_application_20: "Javascript n'est pas activ\xC3\xA9! S'il te pla\xC3\xAEt active JavaScript dans ton navigateur."
   view_distributions_show_0: "Dep\xC3\xB4ts:"
   view_layouts_application_21: Communtu facilite les installations d'Ubuntu

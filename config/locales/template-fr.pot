@@ -13,3 +13,2901 @@ msgstr ""
 "X-Poedit-Country: GERMANY\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
+#: view_home_home_new_messages_desc
+msgid "Tu as de nouveaux messages dans ta boite de reception"
+msgstr ""
+#: view_layouts_application_24
+msgid "TELECHARGER"
+msgstr ""
+#: sources
+msgid "Source"
+msgstr ""
+#: category_with_colon
+msgid "Catégorie:"
+msgstr ""
+#: view_layouts_application_25
+msgid "COMMUNTU"
+msgstr ""
+#: cannot_migrate
+msgid "Peuvent migrer seulement si la distribution est fraîche"
+msgstr ""
+#: view_home_beteiligung_10
+msgid "Graphique"
+msgstr ""
+#: zentrum_solidarische_oekonomie
+msgid "Centre pour l'Economie Solidaire"
+msgstr ""
+#: view_user_profiles__installation_13
+msgid "(Si tu changes de version, la première étape devrait être effectuée à nouveau, parce que les sources Communtu ont été desactivées par la mise à niveau.):"
+msgstr ""
+#: view_layouts_application_26
+msgid "Navigation compilation"
+msgstr ""
+#: controller_accounts_1
+msgid "Ton compte a été activé! Tu peux maintenant te connecter ."
+msgstr ""
+#: view_home_beteiligung_11
+msgid "Nous avons besoin d'une personne qui sera responsable de la mise en page du projet. Cela signifie incorporer des images et s'occuper du CSS."
+msgstr ""
+#: view_layouts_application_27
+msgid "Télécharger la navigation"
+msgstr ""
+#: email_without_colon
+msgid "E-Mail"
+msgstr ""
+#: controller_accounts_2
+msgid "Le Code d'activation n'a pas été trouvé. S'il te plaît essaye de créer un nouveau compte."
+msgstr ""
+#: view_home_beteiligung_12
+msgid "Programmation"
+msgstr ""
+#: view_distributions_show_8
+msgid "Avant de supprimer une distribution, tous les utilisateurs qui l'utilisent doivent se déconnecter! Es-tu sûr?"
+msgstr ""
+#: cd_failed
+msgid "Échec - nous nous en occupons"
+msgstr ""
+#: vm_running
+msgid "machine virtuelle marche"
+msgstr ""
+#: view_roles_index_0
+msgid "Rôles pour"
+msgstr ""
+#: view_home_beteiligung_13
+msgid "Etant donné que nous avons de nombreuses idées pour le développement de la plate-forme, nous avons encore besoin d'un/une programmeur.  Ce serait parfait si tu as déjà une expérience avec Ruby on Rails."
+msgstr ""
+#: view_user_profiles__installation_16
+msgid "Inserer les sources et les clés"
+msgstr ""
+#: controller_accounts_4
+msgid "Ton compte est déjà activé. Tu peux t'inscrire dès maintenant."
+msgstr ""
+#: view_roles_index_1
+msgid "rôles assignés:"
+msgstr ""
+#: view_home_beteiligung_14
+msgid "Nous pouvons également t'aider à apprendre cette langue. Donc, tout simplement se connecter á"
+msgstr ""
+#: view_user_profiles__installation_17
+msgid "Cliquer sur le lien, puis comme proposé, ouvrir avec le package d'installation - si le programme ne fait apparaitre aucune fenêtre de dialogue, c'est que le fichier a été téléchargé sur ton ordinateur. Là, tu peux le Démarrer en double-cliquant dessus."
+msgstr ""
+#: controller_accounts_5
+msgid "Mot de passe mise à jour."
+msgstr ""
+#: view_roles_index_2
+msgid "rôles disponibles:"
+msgstr ""
+#: view_home_beteiligung_15
+msgid "nous"
+msgstr ""
+#: view_layouts_application_30
+msgid "Aide / FAQ"
+msgstr ""
+#: create_your_livedvd_or_usb
+msgid "Créer live CD / DVD"
+msgstr ""
+#: view_categories_edit_0
+msgid "Modifier une catégorie"
+msgstr ""
+#: view_layouts_application_31
+msgid "Contact"
+msgstr ""
+#: hello
+msgid "Bienvenue"
+msgstr ""
+#: controller_accounts_6
+msgid "Il y a eu une erreur. Le mot de passe n'a pas été modifié."
+msgstr ""
+#: view_user_profiles_new_0
+msgid "Nouveau profil de l'utilisateur"
+msgstr ""
+#: english_description
+msgid "Description en anglais:"
+msgstr ""
+#: view_layouts_application_32
+msgid "Admin"
+msgstr ""
+#: view_metapackages__package_list_0
+msgid "La grosseur totale de la compilation sur le disque dur:"
+msgstr ""
+#: view_user_profiles_new_1
+msgid "Utilisateurs"
+msgstr ""
+#: view_metapackages__package_list_1
+msgid "disponible pour:"
+msgstr ""
+#: direct_indirect_covered_packages
+msgid "Directement et indirectement les paquets inclus"
+msgstr ""
+#: controller_accounts_8
+msgid "Ton ancien mot de passe était incorrect."
+msgstr ""
+#: view_categories_edit_3
+msgid "Lien pour plus d'informations"
+msgstr ""
+#: required_fields
+msgid ""
+msgstr ""
+#: view_metapackages__package_list_2
+msgid "Supprimer Paquet/Programme de la compilation"
+msgstr ""
+#: view_categories_edit_4
+msgid "Catégorie principale qui est affichée sur la page d'accueil du téléchargement:"
+msgstr ""
+#: view_user_profiles_new_3
+msgid "Experts de haut niveau"
+msgstr ""
+#: bundle_open_new_window
+msgid "Compilation s'ouvrira dans une nouvelle fenêtre."
+msgstr ""
+#: repositories_incompletely_read
+msgid "Dépôts sans paquets (transfert pas correct)"
+msgstr ""
+#: view_user_profiles__installation_21
+msgid "installer les méta-paquets. S'il te plaît il faut d'abord ajouter les sources."
+msgstr ""
+#: name_of_livecd
+msgid "Nom du live CD / DVD:"
+msgstr ""
+#: view_user_profiles__installation_23
+msgid "Installer les paquets. Il existe deux alternatives:"
+msgstr ""
+#: livecd_email_body_2
+msgid ""
+msgstr ""
+#: view_users_new_10
+msgid "Ton  prénom"
+msgstr ""
+#: view_user_profiles__installation_24
+msgid "Installation à l'aide d'un méta-paquet"
+msgstr ""
+#: view_users_new_11
+msgid "Ton nom de famille"
+msgstr ""
+#: controller_users_10
+msgid "Utilisateur supprimé"
+msgstr ""
+#: view_user_profiles__installation_25
+msgid "Installation à l'aide d'apturl"
+msgstr ""
+#: view_users_new_12
+msgid "(Facultatif)"
+msgstr ""
+#: controller_users_11
+msgid "Il y a eu un problème lors de la suppression."
+msgstr ""
+#: superior_category
+msgid "Catégorie supérieure"
+msgstr ""
+#: repository
+msgid "Dépôt"
+msgstr ""
+#: controller_users_12
+msgid "Utilisateur activé"
+msgstr ""
+#: view_user_profiles__installation_27
+msgid "Il faut d'abord configurer les navigateurs Konqueror et Opera pour apturl"
+msgstr ""
+#: view_user_profiles__installation_28
+msgid "http://wiki.ubuntuusers.de/apturl"
+msgstr ""
+#: no_packet_information_found
+msgid "Il n'y avait aucune indication pour la trousse d'informations."
+msgstr ""
+#: name_with_colon
+msgid "Nom:"
+msgstr ""
+#: controller_distributions_0
+msgid "Distributions Ubuntu"
+msgstr ""
+#: kurzname
+msgid "Nom court"
+msgstr ""
+#: no_cookies
+msgid "Tu as désactivé tes cookies. Pour utiliser Communtu elles sont nécessaires. Nous te recommandons d'allumer les cookies."
+msgstr ""
+#: controller_users_13
+msgid "Il y a eu un problème lors de l'activation de cet utilisateur."
+msgstr ""
+#: view_user_profiles__installation_29
+msgid "Configurer"
+msgstr ""
+#: view_home_faq_xfce_01
+msgid "Sous la rubrique \"Applications -> Système - >sources de logiciels tiers \"  les sources Communtu sont  trouvables. Ici, elles peuvent également être désactivé à nouveau."
+msgstr ""
+#: controller_distributions_1
+msgid "Distribution générée."
+msgstr ""
+#: gpg_key
+msgid "Clé GPG (facultatif):"
+msgstr ""
+#: controller_passwords_1
+msgid "Un lien qui te permettra de changer ton mot de passe a été envoyé à ton adresse e-mail ."
+msgstr ""
+#: view_home_contact_us_0
+msgid "Formulaire de rétroaction"
+msgstr ""
+#: view_home_faq_xfce_02
+msgid "Le gestionnaire du paquet Synaptic ce fait sur  \"Applications -> Système-> Gestionnaire du paquet Synaptic \". Sélectionne ci-dessous, à gauche du point d'origine. Recherche maintenant dans la liste ci-dessus \"packages.communtu.org \" et clique dessus. Sur le côté droit maintenant, tous les méta-paquets disponibles sur Communtu vont être affiché. La suppression se fait en cliquant à droite de la souris puis sur \"Sélectionner pour suppression \". Cela doit être clôturé par \"Appliquer \" pour confirmer."
+msgstr ""
+#: controller_distributions_2
+msgid "Distribution mise à jour."
+msgstr ""
+#: want_to_add_package2
+msgid ""
+msgstr ""
+#: controller_passwords_2
+msgid "Aucun utilisateur avec cette adresse email n'a été trouvé."
+msgstr ""
+#: view_home_contact_us_1
+msgid "Ici tu as la possibilité de nous envoyer tes suggestions et critiques concernant Communtu."
+msgstr ""
+#: livecd_start
+msgid "Créer live CD / DVD"
+msgstr ""
+#: view_user_profiles__installation_30
+msgid " Note: Ne pas renommer les fichiers deb, s'il te plaît."
+msgstr ""
+#: view_user_profiles__installation_31
+msgid "Les méta-paquets Communtu peuvent aussi être affichés, installés et désinstallés à l'aide de {{synaptic}} (sous Système -> Administration). En ce qui concerne la modification des compilations, elles sont automatiquement enregistrées à l'aide de la gestion des paquets Ubuntu."
+msgstr ""
+#: downloads
+msgid "Télécharger:"
+msgstr ""
+#: create_usb_image
+msgid "<a href=\"http://ww.ubuntuusers.de/wiki/Live-USB\"> USB Stick Image </a> créer"
+msgstr ""
+#: view_home_home_2
+msgid "Ubuntu Linux"
+msgstr ""
+#: view_rating_rating_rate
+msgid " de 5 étoiles données"
+msgstr ""
+#: view_metapackages_show_version_v
+msgid "(Version {{v}})"
+msgstr ""
+#: controller_passwords_5
+msgid "Mot de passe ne peut pas être vide."
+msgstr ""
+#: create_iso_image
+msgid "<a href=\"http://ww.ubuntuusers.de/wiki/CD-Images\"> créer une image ISO </a> (pour les CD / DVD)"
+msgstr ""
+#: view_home_home_3
+msgid "Linux représente un être humain, qui est facile à utiliser. Mais pour bien utiliser Ubuntu , on doit encore installer beaucoup de programmes après, et il est souvent difficile de garder un aperçu. En Communtu vous donner uniquement les tâches que vous voulez exécuter avec votre ordinateur, et  Communtu te propose un certain nombre de programmes qui peuvent être installés automatiquement."
+msgstr ""
+#: view_home_contact_us_4
+msgid "Envoyer"
+msgstr ""
+#: download
+msgid "Télécharger"
+msgstr ""
+#: view_metapackages_show_0
+msgid "Compilations créés par"
+msgstr ""
+#: controller_passwords_6
+msgid "Mot de passe changé."
+msgstr ""
+#: view_home_home_4
+msgid "plus...."
+msgstr ""
+#: wait_for_sync
+msgid "en attente de la synchronisation des dépôts"
+msgstr ""
+#: controller_passwords_7
+msgid "Mot de passe pas changé."
+msgstr ""
+#: create_livecd_bundlepage
+msgid ""
+msgstr ""
+#: view_home_home_5
+msgid "La barre latérale offre les options suivantes"
+msgstr ""
+#: view_user_profiles__installation_34
+msgid "vont être ajoutées au système."
+msgstr ""
+#: controller_passwords_8
+msgid "Les mots de passe ne correspondent pas."
+msgstr ""
+#: view_home_home_6
+msgid "<b> Installation </ b> vous offre une collection (collimation) des programmes à installer sur ton ordinateur, selon tes spécifications,et pour quelles les tâches souhaites tu utiliser ton PC Ubuntu "
+msgstr ""
+#: name_without_colon
+msgid "Nom"
+msgstr ""
+#: select_default_bundles
+msgid ""
+msgstr ""
+#: direct_indirect_covered_packages_warning
+msgid "Attention! Prend beaucoup de temps et ne doit être appelé que par le serveur d'administration à partir (communtu.de: 3006) "
+msgstr ""
+#: architecture_successful_updated
+msgid "Mise à jour de l'architecture avec succès."
+msgstr ""
+#: view_home_home_7
+msgid "<b>Gérer les compilations</ b> As-tu une bonne expérience avec les programmes? Peux tu les compiler thématiquement ici , ou même regarder les compilations existantes."
+msgstr ""
+#: view_metapackages_show_3
+msgid "Retour"
+msgstr ""
+#: view_home_home_8
+msgid "<b>rechercher des programme </ b> Ici, tu peux rechercher des programmes Ubuntu (paquets) individuels."
+msgstr ""
+#: view_home_home_9
+msgid "<b> Ubuntu dérivés </ b> donne un aperçu de Kubuntu, Xubuntu, Medibuntu, et le reste d'entre eux ..."
+msgstr ""
+#: updatedPackages
+msgid "Paquets changés:"
+msgstr ""
+#: about_us
+msgid "A propos de nous"
+msgstr ""
+#: back
+msgid "retour"
+msgstr ""
+#: no1
+msgid "non"
+msgstr ""
+#: creation_in_progress
+msgid "est en cours de création"
+msgstr ""
+#: oxygen_icon_legal_notice
+msgid "Certaines des icônes proviennent du groupe d'icône d'oxygène http://www.oxygen-icons.org"
+msgstr ""
+#: view_home_impressum_11
+msgid "Les contributeurs a Communtu AG (ordre alphabétique):"
+msgstr ""
+#: view_rating_show_title_no_ratings
+msgid "Aucune évaluation de l'utilisateur"
+msgstr ""
+#: view_metapackages_show_8
+msgid "évaluation"
+msgstr ""
+#: match_with_communtu
+msgid "Communtu - ensemble Ubuntu Linux adapté aux besoins individuels"
+msgstr ""
+#: view_roles__role_0
+msgid "rôle Supprimer"
+msgstr ""
+#: include_programs_bundel
+msgid "Contenu des programmes/compilations"
+msgstr ""
+#: view_metapackages_show_9
+msgid "Publié le:"
+msgstr ""
+#: view_roles__role_1
+msgid "Assigner des rôles"
+msgstr ""
+#: view_repositories_edit_0
+msgid "Modifier le dépôt "
+msgstr ""
+#: usb_creator
+msgid ""
+msgstr ""
+#: view_repositories_edit_1
+msgid "Distribution:"
+msgstr ""
+#: view_categories_show_0
+msgid "Nom:"
+msgstr ""
+#: change
+msgid "changer"
+msgstr ""
+#: add_to_bundle
+msgid "Ajouter à la compilation"
+msgstr ""
+#: translation_file
+msgid "Url du fichier de traduction (fichier gz):"
+msgstr ""
+#: view_categories_show_2
+msgid "Pour plus d'informations:"
+msgstr ""
+#: usb_donate
+msgid "La création de CD / DVD a besoin de beaucoup de capacité du serveur. S'il vous plaît {{donate_link}}, pour permettre cette offre."
+msgstr ""
+#: controller_metapackages_reset
+msgid "erreur de compilation réinitialiser manuellement (après avoir résolu le problème)."
+msgstr ""
+#: controller_suggestion_1
+msgid "Pour installer quelque chose, tu dois d'abord sous  \"sélection Software \"  sélectionner quelque chose."
+msgstr ""
+#: view_categories_show_3
+msgid "Catégorie supérieure:"
+msgstr ""
+#: add_sources
+msgid "Ajouter les sources"
+msgstr ""
+#: controller_suggestion_2
+msgid "Ajouter les sources et la clé pour l'utilisateur"
+msgstr ""
+#: view_home_faq_all_01
+msgid "La désactivation ne conduit pas à la désinstallation des paquets  parce que les mises à jour pour les paquets installés seront interrompues.Ils sont exploités à partir d'autres sources de logiciels qui ont été installés par Communtu."
+msgstr ""
+#: deb_generation_in_background
+msgid "Debs sont générés dans l'arrière-plan (le cas échéant, mise à jour du navigateur )"
+msgstr ""
+#: warnings
+msgid "Avertissements"
+msgstr ""
+#: view_home_faq_all_02
+msgid "Les paquets individuels ne seront pas supprimés, mais cela peut faire sur  Synaptic ou kpackagekit, selectioner et désinstaller."
+msgstr ""
+#: register_small
+msgid ""
+msgstr ""
+#: controller_suggestion_4
+msgid "Ajouter Sources et clé pour compilation"
+msgstr ""
+#: install_software
+msgid "Installer les paquets"
+msgstr ""
+#: controller_suggestion_6
+msgid "Ajouter les Sources et la clé pour le paquet"
+msgstr ""
+#: view_users__mailbox_list_1
+msgid "Boîte aux lettres"
+msgstr ""
+#: controller_metapackages_no_renaming
+msgid "Compilations publiées ne peuvent pas être renommées."
+msgstr ""
+#: not_accepted
+msgid "L'adresse e-mail a un format invalide ou est incomplète."
+msgstr ""
+#: view_repositories_migrate_1
+msgid "Copie le dépôt"
+msgstr ""
+#: view_rating_new_comment_info
+msgid "S'il te plaît donne une description de ton évaluation. Cette information est <b>obligatoire</ b>."
+msgstr ""
+#: view_packages_new_0
+msgid "Nouveau paquet"
+msgstr ""
+#: view_users__mailbox_list_3
+msgid "Les messages envoyés"
+msgstr ""
+#: view_repositories_migrate_2
+msgid "par la distribution"
+msgstr ""
+#: controller_suggestion_8
+msgid "Ubuntu installation à postériori pour les utilisateurs"
+msgstr ""
+#: bundel_edit
+msgid "Modifier les compilations"
+msgstr ""
+#: english_name
+msgid "Nom anglais:"
+msgstr ""
+#: errors
+msgid "Erreur"
+msgstr ""
+#: view_packages_new_3
+msgid "Version"
+msgstr ""
+#: view_home_news_1
+msgid "Nos listes de diffusion"
+msgstr ""
+#: view_packages_new_4
+msgid "Source"
+msgstr ""
+#: liveusb_message
+msgid "Via un live CD, le logiciel peut etre à la fois essayé et installé. Ceci etant, un soi-disant {{cdimage_link}} est créé, sous la forme d'un fichier ISO que tu peux graver. Pour graver un CD dont tu  as besoin, dans le cas ou tu as sélectionné un grand nombre de logiciels, d'un DVD. <br /> <br /> La création de l'image prend un certain temps. Tu seras averti par email lorsque l'image est prête. S'il te plait vérifie dans tes paramètres d'utilisateur q'une adresse Email valide a été donnée."
+msgstr ""
+#: compose_new_message
+msgid "Ecrire un nouveau message"
+msgstr ""
+#: view_home_news_2
+msgid "Pour améliorer la communication avec nos utilisateurs, nous avons mis en place des listes de diffusion:"
+msgstr ""
+#: name_of_usb
+msgid ""
+msgstr ""
+#: view_home_news_3
+msgid "Communtu-announce-de + subscribe@googlegroups.com)"
+msgstr ""
+#: view_packages_new_6
+msgid "Videos"
+msgstr ""
+#: view_home_cancel_0
+msgid "Communtu - \n malheureusement, il ya quelque chose ne fonctionne avec le don."
+msgstr ""
+#: conny_picture
+msgid "Portrait de Communtu Conny"
+msgstr ""
+#: bundle_to_livecd
+msgid "LiveCD / DVD à  partir de la compilation<i>{{name}}</ i> créer"
+msgstr ""
+#: view_home_cancel_1
+msgid "Soit tu essaies à nouveau ou alors tu fais un transfer"
+msgstr ""
+#: view_home_news_5
+msgid "Cette liste est pour les annonces générales venant de l'équipe Communtu  pour les utilisateurs. Au moins une fois par semaine, un E-mail est envoyé à travers le distributeur. Les messages sont dans un"
+msgstr ""
+#: used_in_bundles
+msgid "Utilisé avec Communtu dans les compilations suivantes:"
+msgstr ""
+#: bundles_without_debs
+msgid "Compilations publiées sans les paquets deb"
+msgstr ""
+#: view_user_mailer_activation_0
+msgid ", Votre compte a été activé. Maintenant, suis le lien:"
+msgstr ""
+#: controller_metapackages_please_regenerate
+msgid "La compilation à  été remise à zéro. S'il te plaît incrémente la version en et recrée le méta-paquet."
+msgstr ""
+#: view_home_news_7
+msgid "http://groups.google.com/group/communtu-announce-de/topics?start="
+msgstr ""
+#: livecd_communtu_name
+msgid "Les noms avec communtu  sont réservés pour les CD live / DVD qui sont créés à partir de compilations"
+msgstr ""
+#: view_home_news_8
+msgid "collectés."
+msgstr ""
+#: anmelden
+msgid "Connexion"
+msgstr ""
+#: view_distributions_index_0
+msgid "Versions disponibles d'Ubuntu"
+msgstr ""
+#: dependent_on_repositories
+msgid "Dépend des dépôts suivants:"
+msgstr ""
+#: no_admin
+msgid "Tu n'est pas l'administrateur!"
+msgstr ""
+#: view_metapackages_new_4
+msgid "D'installation par défaut"
+msgstr ""
+#: create_kvm_image
+msgid "<a href=\"http://ww.ubuntuusers.de/wiki/KVM\">KVM-Image </a> Créer (pour la machine virtuelle)"
+msgstr ""
+#: bundles_with_missing_debs
+msgid "Compilation avec deb-Builds manquant "
+msgstr ""
+#: model_mailer_0
+msgid "Bienvenue à Communtu"
+msgstr ""
+#: licence
+msgid "Licence:"
+msgstr ""
+#: model_mailer_1
+msgid "Formulaire de demande"
+msgstr ""
+#: published
+msgid "publié"
+msgstr ""
+#: install_package_sources_first
+msgid "Installer le paquet. S'il te plaît ajouter avant les sources si nécessaire."
+msgstr ""
+#: preliminary_distribution
+msgid "Distribution provisoire"
+msgstr ""
+#: model_mailer_2
+msgid "Votre compte a été activé."
+msgstr ""
+#: view_home_derivatives_10
+msgid "http://wiki.ubuntuusers.de/Ubuntu_Studio"
+msgstr ""
+#: new_derivative
+msgid "Nouveau dérivé"
+msgstr ""
+#: model_mailer_3
+msgid "Tu as fait une demande pour réinitialiser ton mot de passe"
+msgstr ""
+#: migrate_bundles
+msgid "Prendre les compilations des prédécesseurs"
+msgstr ""
+#: view_home_derivatives_11
+msgid "- Ubuntu Edition Multi Media. elle sera installée avec Communtu, si tu selectionnes en audio, les films et / ou le graphisme \"agrandi \" ."
+msgstr ""
+#: our_blog
+msgid "Notre blog"
+msgstr ""
+#: model_mailer_4
+msgid "Ton mot de passe a été réinitialisé."
+msgstr ""
+#: view_home_home_rating_headline
+msgid "Compilations Les mieux évaluées."
+msgstr ""
+#: view_home_derivatives_12
+msgid "fournit des sources de paquets multimédia, qui ne sont pas, pour des raisons juridiques offertes par Ubuntu lui-même. Medibuntu est  pris en considération à Communtu (par exemple, audio et film)."
+msgstr ""
+#: model_mailer_5
+msgid "Proposition d'un dépôt"
+msgstr ""
+#: view_home_about_1
+msgid "Qu'est-ce Communtu?"
+msgstr ""
+#: distribution_derivative_mismatch
+msgid "{{ Dérivés}} est uniquement disponible sous{{distributions}} "
+msgstr ""
+#: view_metapackages__package_list_conflicts
+msgid "Conflits avec les paquets/Compilations suivants :"
+msgstr ""
+#: view_home_derivatives_13
+msgid " -le PC sera l'enregistreur vidéo. Dans le film \"Freak \" selectionner, et il est installé. Recommandé: processeur à 2 GHz, 1024 Mo de RAM, 10 Go d'espace disque dur pour le train avant, 80 + Go pour le back-end, une carte graphique avec 128 Mo de RAM avec sortie TV et une carte TV pris en charge."
+msgstr ""
+#: view_home_about_2
+msgid "Ubuntu est une distribution Linux qui rend Linux facile à utiliser et à comprendre. Après l'installation de Ubuntu à l'aide d'un CD ou un DVD, ton ordinateur est déjà bien équipé pour la navigation web, traitement de texte et beaucoup plus."
+msgstr ""
+#: blog
+msgid "Le blog de Communtu"
+msgstr ""
+#: view_home_derivatives_14
+msgid "- Logiciel éducatif. Dans \"Education et des Sciences \" selectionner le niveau \"agrandi \" , et il est installé."
+msgstr ""
+#: donation_possibility
+msgid "options de dons"
+msgstr ""
+#: view_home_about_3
+msgid "Mais aussi de nombreuses applications qui ont besoin d'être installées plus tard encore, comme dans les domaines de l'audio, vidéo et graphiques afin que ton ordinateur soit réellement utilisable avec Ubuntu. Communtu fait cette installation à postériori encore plus facile et possède également des espaces spécifiques pour les débutants et Windows convertit."
+msgstr ""
+#: view_home_derivatives_15
+msgid "http://wiki.ubuntuusers.de/KDE"
+msgstr ""
+#: view_home_about_4
+msgid "Comment puis-je utiliser Communtu?"
+msgstr ""
+#: view_home_derivatives_16
+msgid "Ubuntu est avec le bureau KDE."
+msgstr ""
+#: model_package_could_not_read
+msgid "Impossible de lire {{url}}"
+msgstr ""
+#: view_home_about_5
+msgid "Pour commencer tu dois sélectionner<b> Télécharger </ b>."
+msgstr ""
+#: view_home_derivatives_17
+msgid "http://de.wikipedia.org/wiki/Linux_Mint"
+msgstr ""
+#: no_package_selected
+msgid ""
+msgstr ""
+#: community_title
+msgid "utilisateurs  d'ubuntu"
+msgstr ""
+#: view_home_about_6
+msgid "(Ceci apparaît seulement après une"
+msgstr ""
+#: promote_chat
+msgid "Tu peux voir si l'un de nous est dans le chat en ce moment afin de pouvoir communiquer."
+msgstr ""
+#: category_exists
+msgid "Une catégorie avec ce nom existe déjà"
+msgstr ""
+#: thanks_for_order
+msgid ""
+msgstr ""
+#: view_home_about_7
+msgid "Là, tu as la possibilté de modifier tes paramètres. Dans les Préférences tu dois d'abord donner la version Ubuntu que tu as installé sur ton PC, et spécifier, si tu souhaites utiliser des programmes non-libre ou pas. En outre, tu choisis les tâches pour lesquelles tu souhaites utiliser ubuntu sur ton ordinateur ."
+msgstr ""
+#: view_home_derivatives_18
+msgid "est une Ubuntu spin-off avec sa communauté d'utilisateurs propre et se référant en particulier par sa Facilité d'utilisation"
+msgstr ""
+#: new_distribution
+msgid "Nouvelle distribution"
+msgstr ""
+#: controller_messages_0
+msgid "Message original de {{user}}  le {{datum}}  \n"
+msgstr ""
+#: lib_utils_0
+msgid "Système de commande a échoué:"
+msgstr ""
+#: path
+msgid "Path:"
+msgstr ""
+#: failed_deb_generations
+msgid "Échec ou succès dans la creation du Deb"
+msgstr ""
+#: view_home_about_8
+msgid "Ensuite tu as la possibilté d'avoir avec \"Sauvegarder et fine sélection\" un aperçu plus détaillé des compilations et programmes installés et aussi de modifier la sélection. Si tu n'as pas le temps ou l'énvie, il suffit de cliquer sur \"Sauvegarder \". Cela amène à la page d'installation. Tu y trouveras un bouton installation avec lequelle l'installation à postériori d' Ubuntu peut être démarrée. Cela prend du temps pour que les programmes puissent être téléchargés et installées automatiquement du web.Terminé est la polyvalence utilisable PC Ubuntu!"
+msgstr ""
+#: passwd
+msgid "Mot de passe"
+msgstr ""
+#: view_home_derivatives_20
+msgid "Automatix était une aide à l'installation, qui était très populaire (elle a même été recommandée par le New York Times),  mais elle ne repondaitpas tout à fait aux normes de programmations ubuntu et maintenant elle n'est plus développée."
+msgstr ""
+#: view_home_about_9
+msgid "Important: On a vraiment besoin d'une connexion Internet rapide. Pour les utilisateurs de Ubuntu qui utilisent encore un modem ou similaires, nous envisageons la possibilité de créer automatiquement des CD et des DVD."
+msgstr ""
+#: view_accounts_edit_1
+msgid "Ancien mot de passe"
+msgstr ""
+#: install2
+msgid "Installer"
+msgstr ""
+#: view_home_derivatives_21
+msgid "dérivés ultérieur à installer sur communtu, plus approprié de mettre sur une installation basée sur Xfce (par exemple Ubuntu) :"
+msgstr ""
+#: donate
+msgid "Don"
+msgstr ""
+#: installing_using_script
+msgid "Installer avec l'aide du script"
+msgstr ""
+#: view_home_derivatives_22
+msgid " Orient pour BeOS, s'appuie sur la vitesse, la compatibilité avec les vieux ordinateurs et un service facile. CPU avec 200 MHz RAM 128 Mo (pour le fonctionnement, l'installation, 192 Mo de RAM), 2 Go d'espace disque disponible (recommandé: 4 Go ou plus), Carte vidéo 16 Mo (recommandé: Intel GMA 9xx)."
+msgstr ""
+#: press_archiv_editorial
+msgid "Ici, nous avons répertorié une sélection d'articles de la presse à propos de nous."
+msgstr ""
+#: view_admins_load_packages_0
+msgid "Nouveaux paquets"
+msgstr ""
+#: view_users_index_0
+msgid "Tous les utilisateurs"
+msgstr ""
+#: prepare_livecd
+msgid "Préparer le liveCD/DVD (script/remaster-getisos)"
+msgstr ""
+#: view_home_derivatives_24
+msgid "Dérivés, qui doivent être installé , avec le CD d'installation de l'instrument dérivé propre:"
+msgstr ""
+#: spam_user_delete
+msgid "Tous les spam de l'utilisateur supprimés."
+msgstr ""
+#: search
+msgid "supprimer"
+msgstr ""
+#: view_users_index_1
+msgid "Nous avons au total "
+msgstr ""
+#: easy_install
+msgid "Installer Ubuntu facilement"
+msgstr ""
+#: view_users_new_1
+msgid "Ici tu as la possibilité de t'inscrire."
+msgstr ""
+#: view_home_derivatives_25
+msgid "http://wiki.ubuntuusers.de/Xfce"
+msgstr ""
+#: view_users_index_2
+msgid "Les utilisateurs inscrits"
+msgstr ""
+#: view_users_new_2
+msgid "Si tu souhaites être informé sur le développement de Communtu, s'il te plaît donne ton adresse E-mail correctement."
+msgstr ""
+#: helper_distributions_10
+msgid "et modifier"
+msgstr ""
+#: view_home_derivatives_26
+msgid "- Avec la Xfce mince comme une interface utilisateur graphique - en particulier pour les anciens ordinateurs: 128 Mo de RAM et 1,5 Go sur le disque dur suffisent. Doit être installé à partir d'un CD, pour vraiment avoir une installation minces. Les installations à postériori avec Communtu sont possible."
+msgstr ""
+#: predecessor
+msgid "prédécesseurs"
+msgstr ""
+#: helper_distributions_11
+msgid "<br />Distribution "
+msgstr ""
+#: view_home_derivatives_27
+msgid "http://de.wikipedia.org/wiki/LinuxMCE"
+msgstr ""
+#: view_derivatives_edit_0
+msgid "Modifier les dérivés "
+msgstr ""
+#: helper_distributions_12
+msgid "Modifier"
+msgstr ""
+#: view_home_derivatives_28
+msgid "ainsi ubuntu sera"
+msgstr ""
+#: generate_all_debs_for_bundle
+msgid "Créer tous les debs pour la compilation"
+msgstr ""
+#: view_users_index_5
+msgid "Aktivé"
+msgstr ""
+#: view_sent__user_not_exists_0
+msgid "Utilisateur n existe pas"
+msgstr ""
+#: view_derivatives_edit_1
+msgid "programme sur interface graphique pour sudo (gksudo par exemple, kdesudo)"
+msgstr ""
+#: helper_distributions_13
+msgid "supprimer"
+msgstr ""
+#: weblinks
+msgid "Liens Web"
+msgstr ""
+#: view_users_index_6
+msgid "Rôles"
+msgstr ""
+#: view_users_new_6
+msgid "Confirmer le mot de passe"
+msgstr ""
+#: view_derivatives_edit_2
+msgid "Programme pour les dialogues GUI (par exemple, zenity, kdialog)"
+msgstr ""
+#: total_packages
+msgid "Les paquets au total"
+msgstr ""
+#: view_home_derivatives_29
+msgid "Téléviseur Ordinateur"
+msgstr ""
+#: new_message
+msgid "Nouveau méssage"
+msgstr ""
+#: helper_distributions_15
+msgid "Page wiki pour les utilisateurs d'Ubuntu"
+msgstr ""
+#: guest
+msgid "Invité"
+msgstr ""
+#: wait_for_debs
+msgid "en attente de la construction des paquets"
+msgstr ""
+#: view_users_new_8
+msgid "Oui, je souhaite m'abonner à la liste de diffusion pour les annonces."
+msgstr ""
+#: view_home_derivatives_30
+msgid "http://de.wikipedia.org/wiki/Home_Theater_Personal_Computer"
+msgstr ""
+#: helper_distributions_16
+msgid "libre et provenant de la source principale des paquets"
+msgstr ""
+#: view_layouts_application_warning
+msgid "Attention: dans quelques instants des courts travaux d'entretien seront effectués sur ce serveur web"
+msgstr ""
+#: make_distribution_final
+msgid "Distribution en tant que version stable"
+msgstr ""
+#: view_users_new_9
+msgid "Oui, je souhaite m'abonner à la liste de diffusion pour la discussion."
+msgstr ""
+#: view_home_derivatives_31
+msgid ". En raison de la nécessité d'installation du driver Linux MCE doit être installé directement, Communtu peut  être utilisé pour installer des logiciels supplémentaires."
+msgstr ""
+#: helper_distributions_17
+msgid "libre et provenant de la Communauté des sources de paquets "
+msgstr ""
+#: view_user_mailer_signup_notification_0
+msgid "Bonjour et bienvenue à Communtu!\n\n\n Tu t'es enregistré avec succès sur Communtu http://www.communtu.de\nMaintenant tu peux utiliser toutes les fonctionnalités de la plate-forme\n."
+msgstr ""
+#: view_user_mailer_reset_password_0
+msgid "Tu as reçu un nouveau mot de passe."
+msgstr ""
+#: liveusb_start
+msgid "Créer live CD / DVD"
+msgstr ""
+#: make_your_bundle
+msgid "Crée toi une compilation pour le système de mise à niveau"
+msgstr ""
+#: controller_metapackages_no_save
+msgid "La compilation contient les complications et ne peut donc pas être sauvegardée en tant que méta-paquet."
+msgstr ""
+#: view_home_derivatives_32
+msgid "Ubuntu est un dérivé entièrement de logiciels libres. Uniquement pour les utilisateurs expérimentés. Doit être installé avec le CD Gobuntu afin qu'il soit vraiment un logiciels libre. Les installations Ultérieures avec Communtu sont possible et devraient être sélectionnés dans le profil de l'utilisateur \"logiciel libre \". Ce dérivé est disponible en version 8.04 et ne sera pas développé."
+msgstr ""
+#: helper_distributions_18
+msgid "libre et provenant des sources de paquets Third Party "
+msgstr ""
+#: view_user_mailer_signup_notification_1
+msgid "Ton nom d'utilisateur est:"
+msgstr ""
+#: invalid_activation_code_please_check_again
+msgid "changement de code invalide. S'il te plaît vérifie le code et essaye à nouveau. (Peut-être ton programme de messagerie a inséré un saut de ligne?)"
+msgstr ""
+#: view_home_derivatives_33
+msgid "http://de.wikipedia.org/wiki/GNU-Varianten#Nexenta_OS"
+msgstr ""
+#: helper_distributions_19
+msgid "non-free et provenant des sources de paquets principaux"
+msgstr ""
+#: view_user_mailer_signup_notification_2
+msgid "\nCordialement\n\nl'équipe communtu \n\n Pour plus d'informations sur le projet, en particulier ce qui concerne l'utilisation, tu trouveras dans la liste FAQ\n sur http://www.communtu.de/home/faq\n\n Nos annonces et listes de diffusion peuvent être trouvées à l'adresse:\nhttp://www.communtu.de/home/news"
+msgstr ""
+#: view_home_derivatives_34
+msgid " Le noyau Linux remplacé par OpenSolaris. Fournit uniquement une base minimale d'applications. L'installation des paquets supplémentaires est laissé à l'utilisateur; pour cela Communtu peut être utilisé."
+msgstr ""
+#: info_edit
+msgid "Editer la liste des paquets"
+msgstr ""
+#: health_status
+msgid "L'état de santé"
+msgstr ""
+#: view_home_derivatives_35
+msgid "Il existe d'autres dérivés donc nous ne pouvons pas encore fournir une recommandation d'installation:"
+msgstr ""
+#: vm_running_under
+msgid "machine virtuelle fonctionne sur:"
+msgstr ""
+#: helper_distributions_20
+msgid "non-libre et provenant de la Communauté des sources de paquets "
+msgstr ""
+#: category_without_colon
+msgid "Catégorie"
+msgstr ""
+#: view_home_derivatives_36
+msgid "- Une variante africaine de Ubuntu, qui n'est pas disponible sur internet."
+msgstr ""
+#: view_videos_edit_0
+msgid " Modifier la vidéo"
+msgstr ""
+#: subject_without_colon
+msgid " objet "
+msgstr ""
+#: view_home_new_repository_0
+msgid " proposer un Dépôt"
+msgstr ""
+#: view_home_derivatives_37
+msgid "http://de.wikipedia.org/wiki/LinEx"
+msgstr ""
+#: view_home_new_repository_1
+msgid "Tu ne trouves pas une source ici ? Alors, tu as possibilité de proposer un dépôt."
+msgstr ""
+#: helper_distributions_21
+msgid "non-gratuit et de la Third Party sources de paquets"
+msgstr ""
+#: view_home_derivatives_38
+msgid "- La distribution publique de la région espagnole d'Estrémadure."
+msgstr ""
+#: view_home_new_repository_2
+msgid "Lien vers le dépôt"
+msgstr ""
+#: view_home_derivatives_39
+msgid "pour les ordinateurs plus anciens. Il s'appuie sur une surface LXDE."
+msgstr ""
+#: view_home_new_repository_3
+msgid "Pourquoi doit-il être intégré dans Communtu? (S'il te plaît donne tes coordonnées si tu souhaites être informé de l'enregistrement)"
+msgstr ""
+#: view_home_news_10
+msgid "communtu-discuss-de+subscribe@googlegroups.com"
+msgstr ""
+#: kvm_image
+msgid "KVM Image"
+msgstr ""
+#: are_you_sure
+msgid "Est-tu sûr?"
+msgstr ""
+#: view_home_news_11
+msgid "Cette liste est pour la discussion autour de la plate-forme. Au moins une fois par semaine, un E-mail arrive à travers le distributeur. Les messages sont dans un"
+msgstr ""
+#: architecture_successful
+msgid "Architecture créé avec succès."
+msgstr ""
+#: livecd
+msgid "Live-CD/DVD"
+msgstr ""
+#: view_repositories_multinew_0
+msgid "Lire"
+msgstr ""
+#: controller_metapackages_conflicts
+msgid "La compilation contient des paquets qui sont en conflit les uns avec les autres!"
+msgstr ""
+#: view_home_faq_00
+msgid "Lea questions le plus posées"
+msgstr ""
+#: creation_error
+msgid "Dans la creation du paquet, une erreur s'est produite."
+msgstr ""
+#: kommentieren
+msgid " commenter"
+msgstr ""
+#: view_home_news_13
+msgid "http://groups.google.com/group/communtu-discuss-de/topics?start="
+msgstr ""
+#: view_home_derivatives_40
+msgid "- Pour les dispositifs Internet mobile."
+msgstr ""
+#: livecd_email
+msgid "Communtu: Notification sur le Live-CD/DVD"
+msgstr ""
+#: total_isos_size
+msgid "Taille totale des isos:"
+msgstr ""
+#: view_home_faq_01
+msgid "Qu'est-ce qu'une compilation?"
+msgstr ""
+#: steps_for_distribution_setup
+msgid "Étapes à suivre pour la création d'une nouvelle distribution (s'il vous plaît exécuter sur admin-système)"
+msgstr ""
+#: questionmark_conny
+msgid "Clique sur moi et dis moi ce qui n'est pas claire."
+msgstr ""
+#: new_packages
+msgid "Nouveaux paquets ajoutés :"
+msgstr ""
+#: view_home_faq_kde_01
+msgid "Sous \"Menu K -> Programmes -> Système -> Administration -> Sources de logiciels ->sources de logiciels tiers \" les sources Communtu sont trouvables. Ici, elles peuvent également être désactivées à nouveau."
+msgstr ""
+#: view_home_derivatives_41
+msgid "Ubuntu Ultimate - Ubuntu avec plusieurs  conceptions et programmes de bureau."
+msgstr ""
+#: based_on_bundle
+msgid "fondée sur la compilation:"
+msgstr ""
+#: view_home_faq_kde_02
+msgid "KpackageKit est dans \"Menu K -> Programmes-> Système -> Administration - \"> Logiciel de gestion\". Ici tu sélectionnes à droite du menu déroulant \"packages.communtu.org \". Dans la liste recherche pour le moment de le méta-paquet, que tu as  installé et le mettre en surbrillance en cliquant sur le X à côté de l'entrée. Pour supprimer le méta-paquet  un simple clic sur \"Appliquer \" est suffisant. Il va maintenant avoir un aperçu des programmes à supprimer, et après avoir cliqué sur \"OK \" ces programmes seront supprimés de votre ordinateur."
+msgstr ""
+#: view_home_derivatives_42
+msgid "- Spécialisée dans les services Web."
+msgstr ""
+#: view_home_faq_02
+msgid "Une compilation est un ensemble de logiciels pour un volet de tâches spécifiques que tu peux resoudre avec votre ordinateur."
+msgstr ""
+#: native
+msgid "Seul Ubuntu"
+msgstr ""
+#: view_home_news_16
+msgid "Nous avons un blog, où nous mentionons les dernières informations sur Communtu. Une fois par semaine quelque chose est posté. C'est là que les annonces et les nouveautés sont présentées."
+msgstr ""
+#: view_home_derivatives_43
+msgid "- Est fondé sur la E17. effets 2-D sans la carte graphique rapide."
+msgstr ""
+#: view_home_faq_03
+msgid "Comment puis-je installer une compilation?"
+msgstr ""
+#: cd_being_created
+msgid "Le LiveCD / DVD est créé."
+msgstr ""
+#: search_programs_bundles
+msgid "Tu as déjà installé un Ubuntu et cherches maintenant des programmes adaptés? Ici tu peux entrer tes centres d'intérêts et télécharger un des compilations de programme pré-configurés."
+msgstr ""
+#: view_user_profiles__profile_data_0
+msgid "Prèréglages?"
+msgstr ""
+#: view_home_news_17
+msgid "Pour blog"
+msgstr ""
+#: view_home_derivatives_44
+msgid "- version rapide de Ubuntu pour les PC plus anciens."
+msgstr ""
+#: view_home_faq_04
+msgid "Il existe deux possibilités d'installer une compilation. <p> La première possibilité est que tu cliques sur <b> Télécharger </ b>. À droite, tu verras alors une petite boîte avec la rubrique \"Paramètres\", là tu peux cliquersur le bouton «modifier» pour adapter ta surface (Kubuntu (KDE), Xubuntu (XFCE) ou Lubuntu (LXDE)), ou alors spéccifier quelles sources et les licences doivent être autorisées. Après avoir cliqué sur Enregistrer, tu devrais à nouveau cliquer sur <b> Télécharger </ b>pour retourner à la fenêtre de sélection. <p> Ici, tu peux maintenant faire une sélection approximative des activités que tu aimerais faire avec ton ordinateur.  Après avoir sélectionnéune activité (graphiques, par exemple) toutes les compilations de la catégorie publiées s'affichent dans la colonne de droite. Si une compilation est marquée comme \"installé par défaut\", elle est automatiquement sélectionnée. Toute modification de la sélection est enregistrée immédiatement.  Maintenant tu peux installer ta sélection à travers \"Installer\" directement sur ton système existant, Premièrement, les sources doivent êtres ajoutées. <p> La deuxième possibilité est d'installer directement une seule compilation. Pour cela tu vas cliquer sur <b>compilation  </ b>, puis sur  <b>compilations publiées</ b>. Là, tu auras un aperçu sur toutes les compilations crées sur Communtu. Ici on doit, si cela n'a pas encore été fait, ajouter les sources (Cliques sur \"ajouter sources \"), puis avec un clic sur \" installé à l'aide du méta-paquet \" les compilations correspondantes seront installées."
+msgstr ""
+#: view_metapackages_show_deb_error
+msgid "Lors de la création des metapaquets une erreur s'est produite. Nous nous occupons du problème."
+msgstr ""
+#: view_user_profiles__profile_data_1
+msgid "Sur cette page, tu peux entrer les paramètres de base de ton ordinateur."
+msgstr ""
+#: view_home_derivatives_45
+msgid "http://wiki.ubuntuusers.de/Server_Installation"
+msgstr ""
+#: login
+msgid ""
+msgstr ""
+#: controller_metapackages_not_allowed
+msgid "Seul le propriétaire de la distribution doit exécuter."
+msgstr ""
+#: view_home_faq_05
+msgid "Comment puis-je créer un compilation?"
+msgstr ""
+#: view_user_profiles__profile_data_2
+msgid "Note: clique à la fin  sur le bouton 'Sauvegarder'!"
+msgstr ""
+#: view_home_derivatives_46
+msgid "- La version Server d'Ubuntu, sans interface graphique."
+msgstr ""
+#: view_repositories_new_0
+msgid "Nouveau dépôt pour"
+msgstr ""
+#: view_home_faq_06
+msgid "Pour cela tu devrais cliquer sur <b> compilation</b> et puis cliquer sur \" Nouvelle compilation\". A gauche, tu veras maintenant une liste de programmes et à droite une liste vide. C'est l'éditeur de compilation. En cliquant sur le signe plus dans la liste de gauche, tu peux maintenant ajouter des programmes à ta compilation. Une fois terminé, cliques sur l'icône Sauvegarder. Ici tu dois maintenant attribuer un nom significatif pour ta compilation, indiquer la version et donner une petite description afin que d'autres personnes sachent quels programmes sont contenues dans ta compilation. Ta compilation doit être publiée afin que d'autres utilisateurs puissent la voir ,la noter, l'utiliser et l'installer . Cela  n'est possible que si la compilation est sauvegardée. Attention: s'il te plait  publier une compilation que si elle est mûre, et si et seulement si tu es convaincu  qu'il n yaura pas de changement dans les jours qui viennent! La modification de la compilation  n'est plus possible lorsqu'elle a été publiée. <p> Si tu es d'avis que ta compilation peut être étendue pour des progammes utiles ou alors qu'un programme doit être supprimé de la compilation, alors tu dois d'abord aller sous <b>compilation</ b>, puis \"ma compilation\" et selectioner la compilation correspondante. A droite dans le menu déroulant  tu selectiones ensuite \"éditer la liste des paquets \" . Puis retourne à l'éditeur de compilation. Aprés que la liste des paquets a été transformée, elle doit être sauvegarder. Maintenant, la version doit être élevée et ensuite sauvegardée. Le paquet a été mis à jour."
+msgstr ""
+#: view_user_profiles__profile_data_3
+msgid "Quelles sont les tâches veux tu accomplir avec votre ordinateur? (Pour bruts de faire un choix, réglage fin possible plus tard)"
+msgstr ""
+#: view_home_derivatives_47
+msgid "http://wiki.ubuntuusers.de/JeOS"
+msgstr ""
+#: to_colon
+msgid "À:"
+msgstr ""
+#: view_home_faq_07
+msgid "Comment noter une compilation?"
+msgstr ""
+#: view_user_profiles__profile_data_4
+msgid "Plus d'informations"
+msgstr ""
+#: choice_of_package
+msgid "Description du paquet"
+msgstr ""
+#: view_home_derivatives_48
+msgid "- La version minimale pour les serveurs, convient surtout pour la virtualisation .."
+msgstr ""
+#: controller_metapackages_2
+msgid "Ce nom de compilation est déjà pris!"
+msgstr ""
+#: view_home_faq_08
+msgid "Tu vas dans le menu \" compilation\" et sous \"compilation publiée \" tu peux voir toutes les compilations. Là, tu peux cliquer sur un maximum cinq étoiles. Ensuite, il apparaitra une case de commentaire où l'on peut qualifier cette évaluation."
+msgstr ""
+#: view_home_derivatives_49
+msgid "- Ubuntu avec Enlightenment comme environnement de bureau."
+msgstr ""
+#: view_home_home_new_message_icon
+msgid "vers la boîte de réception"
+msgstr ""
+#: controller_metapackages_3
+msgid "La description ne doit pas être vide"
+msgstr ""
+#: view_home_faq_09
+msgid "Comment puis-je changer une compilation?"
+msgstr ""
+#: view_user_profiles_help_0
+msgid "Découvrir la version Ubuntu"
+msgstr ""
+#: view_user_profiles__profile_data_6
+msgid " Sélectionne ta version Ubuntu s'il te plaît."
+msgstr ""
+#: view_cart_new_from_list_0
+msgid "Créer une compilation à partir d'une liste de paquets "
+msgstr ""
+#: view_repositories_new_4
+msgid "Clé GPG (facultatif)"
+msgstr ""
+#: controller_metapackages_4
+msgid "Compilation sauvegardée. ca va prendre quelques minutes jusqu'à ce qu'elle soit disponible sous forme de méta-paquet."
+msgstr ""
+#: new_article
+msgid "Créer un nouvel article"
+msgstr ""
+#: view_user_profiles_help_1
+msgid "Ouvrir un terminal sous \" Applications  \"-> \"Accessoires \" -> \"Terminal"
+msgstr ""
+#: participation
+msgid "Possibilités de participation"
+msgstr ""
+#: view_user_profiles__profile_data_7
+msgid "Comment puis-je déterminer la version?"
+msgstr ""
+#: view_cart_new_from_list_1
+msgid "Ici, tu peux créer une compilation à partir d'une liste de paquets existants. La liste doit être disponible sous la forme d'un fichier texte (texte brut), et à chaque fois un nom de paquet par ligne."
+msgstr ""
+#: homepage
+msgid " Page d'accueil"
+msgstr ""
+#: view_user_profiles_help_2
+msgid "Ecrit a cet endroit:"
+msgstr ""
+#: view_home_derivatives_50
+msgid "- Avec fluxbox, et divers outils de sécurité réseau."
+msgstr ""
+#: view_users__sidebar_2
+msgid "Rechercher des programmes"
+msgstr ""
+#: view_user_profiles__profile_data_8
+msgid "La version d'Ubuntu déterminée par le navigateur: "
+msgstr ""
+#: view_home_faq_10
+msgid "Tu vas dans le menu \"Ma compilation\" sous \"compilation \" et  là tu obtiens une liste de tes compilations. Tu cliques ensuite sur la compilation a changer. Toutes les informations concernant ta compilation seront maintenant affichées . Sous \"actions \" tu peux Maintenant  éditer cette compilation ainsi que la liste de paquets. Si le paquet n'est pas publié, alors tu peux le supprimer ou le publier."
+msgstr ""
+#: view_cart_new_from_list_2
+msgid "La liste des paquets installés sur ton ordinateur, tu peux par exemple avec"
+msgstr ""
+#: view_user_profiles_help_3
+msgid "Si ta version de Communtu n'est pas soutenu, il ya deux possibilités:"
+msgstr ""
+#: view_home_news_24
+msgid "-Participer"
+msgstr ""
+#: view_home_derivatives_51
+msgid "- Installation des programmes et des versions qui ne sont pas disponibles dans les dépôts officiels."
+msgstr ""
+#: view_roles_edit_0
+msgid "Modifier un rôle"
+msgstr ""
+#: view_user_profiles__profile_data_9
+msgid "Ici tu peux régler le degré de sécurité et de confortabilité pour tes sources d'installations"
+msgstr ""
+#: view_home_faq_11
+msgid "Comment puis-je créer une compilation à partir de mes programmes installés?"
+msgstr ""
+#: view_cart_new_from_list_3
+msgid "découvrir. (pour cela le paquet {{debfoster}} doit être installé. La liste générée contient seulement une liste minimale de (méta-)paquets qui est nécessaire pour restaurer complètement ton installation.)"
+msgstr ""
+#: controller_metapackages_7
+msgid "Il faut  donner une version (par exemple 0.1) <br>"
+msgstr ""
+#: view_user_profiles_help_4
+msgid "tu fais une mise à niveau  d'une version plus récente"
+msgstr ""
+#: view_home_derivatives_52
+msgid " Une sorte de Automatix pour l'édition finale."
+msgstr ""
+#: view_roles_edit_1
+msgid "Nom du personnage"
+msgstr ""
+#: view_users__sidebar_4
+msgid "Versions-Ubuntu"
+msgstr ""
+#: view_home_faq_12
+msgid "Sous <b>compilation</b>, puis  \"nouvelle compilation\" il y a un point  \"compilation provenant d une liste de paquets \" qui est cliquant . Il est  décrit la façon dont tu peux télécharger ta liste de paquets dans Communtu. Une fois le paquet  stocké, le processus est le même que lors de la création d'une nouvelle compilation: Choisir un nom significatif,  déterminer la version, sauvegarder et Inserer la description ."
+msgstr ""
+#: view_cart_new_from_list_4
+msgid "Fichier qui contient la liste des paquets, sélectionner:"
+msgstr ""
+#: controller_metapackages_8
+msgid "Si tu entreprends des changements la version doit être supérieure <br>"
+msgstr ""
+#: view_user_profiles_help_5
+msgid "tu élargis Communtu en ta version."
+msgstr ""
+#: view_home_derivatives_53
+msgid "- Permet une installation plus rapide, puisque seuls les paquets les plus récents sont téléchargés."
+msgstr ""
+#: view_users__sidebar_5
+msgid "Gérer les utilisateurs"
+msgstr ""
+#: view_home_faq_13
+msgid "Comment puis-je trouver des programmes?"
+msgstr ""
+#: view_cart_new_from_list_5
+msgid "construire"
+msgstr ""
+#: livecd_existing_name
+msgid "Ce nom est déjà pris"
+msgstr ""
+#: controller_metapackages_9
+msgid "La description ne doit pas être vide <br>"
+msgstr ""
+#: view_users__sidebar_6
+msgid "Gérer les catégories"
+msgstr ""
+#: view_sent__user_exists_0
+msgid "Utilisateur trouvé"
+msgstr ""
+#: view_home_faq_14
+msgid "Aller à l'option menu \"Rechercher programmes\". Voici un champ de recherche où vous pouvez spécifier le nom des Prgramm  recherchés. Il est également possible de rechercher les programmes en cliquant sur \"Seuls les programmes\", ainsi d'autres bibliothèques ne seront plus affichées. En outre, il est également possible de sélectionner une Debian-section pour  la sélection des programmes basés sur des catégories  pré-sélectionnés."
+msgstr ""
+#: number_of_packages_in_bundles
+msgid "Nombre de paquets dans toutes les compilations "
+msgstr ""
+#: announce
+msgid "annonce"
+msgstr ""
+#: confirm_new_passwd
+msgid "Confirmer nouveau mot de passe"
+msgstr ""
+#: view_home_derivatives_55
+msgid "- Centre des médias."
+msgstr ""
+#: view_users__sidebar_7
+msgid "gérer les dérivés "
+msgstr ""
+#: view_home_faq_15
+msgid "Comment puis-je installer un seul programme?"
+msgstr ""
+#: generate_cd
+msgid "LiveCD / DVD recréer"
+msgstr ""
+#: view_rating_show_title_got_ratings
+msgid "de 5 étoiles"
+msgstr ""
+#: view_home_derivatives_56
+msgid "http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix"
+msgstr ""
+#: view_home_faq_16
+msgid "Aller sur l'option menu \"Rechercher des programmes\". Là, tu as un choix de programmes. Si tu  as trouvé le programme désiré, tu  peux l'installer en cliquant sur l'icône d'installation. Il est possible que tu cliques avant sur \"Ajouter sources \" , car il peut arriver que  le programme soit dans une source, que ton système ne connait pas encore."
+msgstr ""
+#: view_my_mailer_repo_0
+msgid "Bonjour, \n\nune proposition d'un nouveau dépôt a été faite sur www.communtu.de :"
+msgstr ""
+#: free_disk_space
+msgid "Espace disque libre (root / home / isos)"
+msgstr ""
+#: hello_simple
+msgid ""
+msgstr ""
+#: settings
+msgid "Paramètres"
+msgstr ""
+#: view_home_derivatives_57
+msgid "pour subnotebooks/EEE PC"
+msgstr ""
+#: edit_architecture
+msgid "Modifier l'architecture"
+msgstr ""
+#: view_home_faq_17
+msgid "Comment puis-je faire entrer une proposition de programmes?"
+msgstr ""
+#: view_my_mailer_repo_1
+msgid "La raison suivante a été donnée:"
+msgstr ""
+#: helper_distributions_0
+msgid "gratuit"
+msgstr ""
+#: view_messages_show_0
+msgid "De:"
+msgstr ""
+#: view_home_faq_18
+msgid "C'est très simple. Pour ce faire, tu cliques dans l'éditeur de compilation (accessible en cliquant sur <b> compilation</ b>) sur  \"Proposer un dépôt\". Ici, tu dois maintenant spécifier le lien vers le programme et brièvement nous expliquer pourquoi nous devrions le mettre dans  Communtu."
+msgstr ""
+#: view_home_beteiligung_1
+msgid "Application de la plate-forme"
+msgstr ""
+#: helper_distributions_1
+msgid "non-free"
+msgstr ""
+#: view_home_faq_19
+msgid "Qu'est-ce qu'un dépôt?"
+msgstr ""
+#: livecd_start_message
+msgid "Ici, tu peux créer un Live-CD/DVD qui contient le logiciel que vous avez sélectionné. Tu as sélectionné la compilation suivante:"
+msgstr ""
+#: trusted
+msgid "Ubuntu + Communauté"
+msgstr ""
+#: view_home_beteiligung_2
+msgid "Tout d'abord, nous serions heureux si tu utilises Communtu pour éffectuer une installation. Nos compilations contiennent déja des propositions d'installations. Peut-être trouveras-tu quelque chose d'intérressant pour toi. Tu as aussi la possibilité de télécharger ta propre liste de paquets afin que d'autres personnes puissent en profiter. Ceci est une façon très simple de créer une compilation. Tu n'as pas le droit de publier cette liste de paquets. Tu as la possibilité d'utiliser Communtu comme un emplacement d'enregistrement pour ta liste de paquets, et ensuite installer cette compilation sur d'autres machines."
+msgstr ""
+#: helper_distributions_2
+msgid "Synchroniser le dépôt"
+msgstr ""
+#: view_messages_show_2
+msgid "Reçu le:"
+msgstr ""
+#: go_to_download
+msgid "Aller à la page de téléchargement"
+msgstr ""
+#: view_home_beteiligung_3
+msgid "Nous avons besoin des information"
+msgstr ""
+#: subject_with_colon
+msgid "Objet:"
+msgstr ""
+#: view_messages_show_3
+msgid "Réponses"
+msgstr ""
+#: controller_profiles_0
+msgid "Installation des compilations"
+msgstr ""
+#: cd_already_created
+msgid "Le LiveCD / DVD a déjà été créé."
+msgstr ""
+#: view_home_beteiligung_4
+msgid "Tu  penses que tu en sais déjà beaucoup sur les programmes Open Source ? \n. Dans ce cas, commente tes expériences sur les paquets. Peut être as-tu  vu une \n vidéo intéressante concernant le programme sur Youtube? alors mets la dans \n les programmes vidéos de Communtu."
+msgstr ""
+#: controller_cart_2
+msgid "Les paquets suivants n'ont pas été trouvés: {{message}} <br> S'il te plaît choisie les référentiels qui contiennent les paquets ,et<a href=\"{{url}}\"> propose de les inclure dans Communtu. </a>"
+msgstr ""
+#: install_by_default
+msgid "L'installation standart:"
+msgstr ""
+#: show
+msgid "Afficher"
+msgstr ""
+#: view_home_faq_20
+msgid "Un dépôt (en anglais pour  \"paquet source \") est une collection de programmes. À propos de la gestion de paquets (dans GNOME et Xfce c'est Synaptic, dans KDE c'est KpackageKit), tu peux installer des programmes à partir des sorces de paquets. Dans le même temps tu obtiens exactement sur le même paquet de sources, les mises à jour pour les programmes installés. Pour plus d'informations sur les sources de paquets tu peux trouver <a href=\"http://wiki.ubuntuusers.de/Paketquellen\" target=\"_blank\">ici</a>."
+msgstr ""
+#: view_messages_show_4
+msgid "faire suivre"
+msgstr ""
+#: bundle
+msgid "Compilation"
+msgstr ""
+#: view_home_beteiligung_5
+msgid "Enquête à participer"
+msgstr ""
+#: view_packages_rdepends_0
+msgid "Dans le paquet"
+msgstr ""
+#: kontodaten
+msgid "Numéro de compte 172 9375, Sparkasse Bremen, boîte postale 290 501 01"
+msgstr ""
+#: view_home_faq_21
+msgid "Comment puis-je trouver les sources du paquet Communtu dans mon système?"
+msgstr ""
+#: view_home_derivatives_1
+msgid "Communtu est assis sur une installation de base d'Ubuntu. Il ya maintenant un certain nombre de"
+msgstr ""
+#: view_packages_rdepends_1
+msgid "contenus des paquets directement et indirectement "
+msgstr ""
+#: helper_distributions_6
+msgid "Supprimer le dépôt"
+msgstr ""
+#: view_home_derivatives_2
+msgid "Dérivées d'Ubuntu"
+msgstr ""
+#: model_message_0
+msgid "S'il te plaît indiquer le sujet"
+msgstr ""
+#: view_home_beteiligung_7
+msgid "Nous avons besoin de réaction. Nous voulons que Communtu puisse être utilisé par tous. Nous avons besoin de ta réaction. As-tu trouvé un erreur sur la plate-forme? Ne comprends-tu pas quelque chose? Penses-tu que nous pouvons faire mieux? Avez-vous une suggestion pour nous? Vos commentaires sont les bienvenus à"
+msgstr ""
+#: exact
+msgid "Trouver le mot exacte:"
+msgstr ""
+#: detailed_view
+msgid "Vue détaillée"
+msgstr ""
+#: view_home_faq_23
+msgid "Comment puis-je supprimer les méta-paquets de nouveau?"
+msgstr ""
+#: view_home_derivatives_3
+msgid "http://wiki.ubuntuusers.de/c'est_quoi_Linux? # Qu'est-ce-que-une distribution dérivée)"
+msgstr ""
+#: view_home_beteiligung_8
+msgid "Coopération"
+msgstr ""
+#: login_small
+msgid ""
+msgstr ""
+#: helper_distributions_8
+msgid "Voir le texte source"
+msgstr ""
+#: new_category
+msgid "Nouvelle catégorie"
+msgstr ""
+#: view_home_faq_24
+msgid "Quels paquets se trouvent dans votre dépôt?"
+msgstr ""
+#: news
+msgid "Actualité"
+msgstr ""
+#: view_home_derivatives_4
+msgid ", et de nombreux utilisateurs d'Ubuntu se demandent si ils devraient plutôt utiliser Ubuntu au lieu d'un dérivé. La réponse est que: généralement on s ensort avec le standard d'Ubuntu assez bien, etant donné que Communtu autorise l'installation des dérivés d'une manière simple. Toutefois, cela n'est pas approprié pour tous les dérivés d'égalité."
+msgstr ""
+#: create_livecd
+msgid "construire"
+msgstr ""
+#: view_home_beteiligung_9
+msgid "Actuellement, nous avons encore besoin de soutien dans l'élaboration du projet pour les deux activités suivantes:"
+msgstr ""
+#: press_archiv
+msgid "Archives de presse"
+msgstr ""
+#: view_home_faq_25
+msgid "La source  packages.communtu.org ne contienent que des méta-paquets qui correspondent à des compilations Communtu. Le Vrai logiciel  n'est pas disponible; ceci étant les référentiels <a href=\"/distributions\" target=\"_blank\"> ici </a>  énumérés seront utilisés directement."
+msgstr ""
+#: view_users__user_0
+msgid "activer"
+msgstr ""
+#: username
+msgid "Nom d'utilisateur"
+msgstr ""
+#: view_home_derivatives_5
+msgid "Tous les  dérivés peuvent sous "
+msgstr ""
+#: achtung
+msgid "A votre attention! disponible sur Communtu il n'y a pas longtemps"
+msgstr ""
+#: wait_for_email
+msgid ""
+msgstr ""
+#: view_users__user_1
+msgid "désactiver"
+msgstr ""
+#: iso_deleted
+msgid "Le fichier ISO a malheureusement été supprimé pour des raisons d'espace."
+msgstr ""
+#: view_home_derivatives_6
+msgid "Sélection du Logiciel "
+msgstr ""
+#: controller_metapackages_cannot_destroy
+msgid "La compilation Publiée ne peut pas être supprimé."
+msgstr ""
+#: match_ubuntu
+msgid "Adapter Ubuntu-Linux aux besoins individuels"
+msgstr ""
+#: install_package
+msgid ""
+msgstr ""
+#: view_users__user_2
+msgid "  Modifier les Rôles"
+msgstr ""
+#: view_home_derivatives_7
+msgid "sous catégorie selectionne  les \"dérivés\" à installer."
+msgstr ""
+#: chat
+msgid "Chat"
+msgstr ""
+#: view_home_derivatives_8
+msgid "De même, tu peux aussi vérifier, de quels paquets un dérivés provient."
+msgstr ""
+#: livecd_incorrect_name
+msgid "Le nom du LiveCD / DVD ne peut prendre que de lettres, chiffres, _ et -"
+msgstr ""
+#: passwd_no_match
+msgid "Le nouveau mot de passe ne correspond pas à la confirmation."
+msgstr ""
+#: view_my_mailer_mailerror_0
+msgid "Bonjour,\nune erreur a été signalé sur www.communtu.de. \nL'utilisateur souhaite être informé lorsque l'erreur ne se produira plus."
+msgstr ""
+#: tested_bundle
+msgid "Compilations créés par"
+msgstr ""
+#: debian_section
+msgid "Debian-section:"
+msgstr ""
+#: view_home_derivatives_9
+msgid "Sur Communtu, une aprés-installation des dérivés est nécéssaire:"
+msgstr ""
+#: prepare_livecd_contd
+msgid " pour chaque pré-version LiveCD / DVD  préparer nouvellement (script / remaster-getisos)"
+msgstr ""
+#: view_roles_show_0
+msgid "Rôle Nom:"
+msgstr ""
+#: add_comment
+msgid "Ajouter un commentaire"
+msgstr ""
+#: livecd_create
+msgid "Le Live-CD/DVD est créé. Nous t'informerons par e-mail une fois qu'il est terminé."
+msgstr ""
+#: view_cart_update_0
+msgid "Ajuster les informations de compilations"
+msgstr ""
+#: view_home_success_0
+msgid "Je vous remercie pour le don"
+msgstr ""
+#: view_cart_update_1
+msgid "Ecraser compilation, si elle existe?"
+msgstr ""
+#: view_home_success_1
+msgid "Un reçu d'impôt peut être émis. Envoie nous un e-mail avec ton adresse:"
+msgstr ""
+#: choose_category
+msgid "S'il te plaît sélectionne"
+msgstr ""
+#: view_users_edit_0
+msgid "Benuzterprofil Modifier"
+msgstr ""
+#: view_cart_update_2
+msgid "Niveau Expert:"
+msgstr ""
+#: to_chat
+msgid "sur le chat"
+msgstr ""
+#: start_vm_instructions
+msgid "Ainsi, tu peux te connecter à la machine virtuelle (s'il te plait attendre un peu jusqu'à ce que les fichiers ont été copiés deb):"
+msgstr ""
+#: view_sent_index_0
+msgid "les messages envoyés"
+msgstr ""
+#: an
+msgid "À"
+msgstr ""
+#: view_users_edit_2
+msgid "Supprimer le profil"
+msgstr ""
+#: current_news
+msgid "Actualité"
+msgstr ""
+#: view_cart_update_4
+msgid "Publier la compilation"
+msgstr ""
+#: nothing_found_questionmark
+msgid "Rien trouvé?"
+msgstr ""
+#: cd_ready
+msgid ""
+msgstr ""
+#: migrate_bundles_derivative
+msgid "Prendre les compilations d'autres dérivés "
+msgstr ""
+#: controller_users_1
+msgid "Merci pour votre inscription à Communtu! Tu peux te connecter dès maintenant."
+msgstr ""
+#: view_users_edit_3
+msgid "Nom d'utilisateur:"
+msgstr ""
+#: not_logged_in
+msgid "Tu n'est pas connecté. S'il te plaît clique ci-dessus pour vous connecter."
+msgstr ""
+#: controller_users_2
+msgid "Il y eu un problème avec l'inscription."
+msgstr ""
+#: more_about_sources
+msgid "(Plus d'information sur le sujet clé et les sources principales dans la rubrique FAQ)"
+msgstr ""
+#: make_your_livedvd_or_usb
+msgid "Tu n'as pas encore installé Ubuntu. Sélectionne ta compilation ici et grave un CD  afin que  tu puisses l'utiliser comme un live-CD et aussi pour l'installation."
+msgstr ""
+#: start_vm_with_livecd_basis
+msgid "machine virtuelle en fonction des paramètres LiveCD le départ (pour le dépannage)"
+msgstr ""
+#: view_sent_index_3
+msgid "Temps"
+msgstr ""
+#: controller_users_3
+msgid "Vous avez été connecté en tant qu'utilisateur {{anonymous_user}} avec mot de passe {{anonymous_user}}. S'il te plaît clique en haut a ta droite sur Utilsateur {{anonymous_user}} et le convertir en un compte d'utilisateur permanent, sinon le compte sera supprimé au bout d'un jour."
+msgstr ""
+#: cd_created
+msgid "Le LiveCD / DVD est créé."
+msgstr ""
+#: view_cart__metacart_3
+msgid "Compilation venant des liste de paquets"
+msgstr ""
+#: rough_selection
+msgid "selection pas précise"
+msgstr ""
+#: controller_users_4
+msgid "Il y a eu  un problème avec le compte invité."
+msgstr ""
+#: url
+msgid "Url"
+msgstr ""
+#: view_home_home_rating_rating
+msgid "Classement"
+msgstr ""
+#: view_sent_index_5
+msgid "Vous n'a pas encore envoyé de messages."
+msgstr ""
+#: model_user_meta_tabz_0
+msgid "Mes compilations"
+msgstr ""
+#: controller_users_5
+msgid "Mise à jour des données de l'utilisateur"
+msgstr ""
+#: view_metapackages_show_12
+msgid "pas publié"
+msgstr ""
+#: usb
+msgid ""
+msgstr ""
+#: model_user_meta_tabz_1
+msgid "Tous les paquets publiés"
+msgstr ""
+#: controller_users_6
+msgid "Les données utilisateur ont été sauvegardées et le compte d'utilisateur est pour une longue durée"
+msgstr ""
+#: chat_channel
+msgid "de-communtu"
+msgstr ""
+#: model_user_meta_tabz_2
+msgid "paquets Ubuntu"
+msgstr ""
+#: bundles_with_missing_packages
+msgid "La compilation avec les paquets qui manquent dans la transition vers la nouvelle distribution (éventuellement peuvent être remplacés par d'autres)"
+msgstr ""
+#: view_users_edit_9
+msgid "En cliquant sur  \"Sauvegarder\" le compte d'utilisateur est également devenu permanent."
+msgstr ""
+#: view_metapackages_show_14
+msgid " Actions:&nbsp;&nbsp;"
+msgstr ""
+#: controller_metapackages_bundle_not_found
+msgid "La compilation n'a pas été trouvée."
+msgstr ""
+#: model_user_meta_tabz_3
+msgid "Compilations publiées"
+msgstr ""
+#: packages
+msgid "paquet"
+msgstr ""
+#: controller_users_8
+msgid " Utilisateur désactivé"
+msgstr ""
+#: stars_popcon
+msgid ""
+msgstr ""
+#: new_passwd
+msgid "Nouveau mot de passe"
+msgstr ""
+#: liveusb_start_message
+msgid "Ici, tu peux créer un Live-CD/DVD qui contient le logiciel que vous avez sélectionné. Tu as sélectionné la compilation suivante:"
+msgstr ""
+#: view_metapackages_show_15
+msgid "Éditer"
+msgstr ""
+#: controller_users_9
+msgid "Il y a eu un problème avec la désactivation de cet l'utilisateur."
+msgstr ""
+#: delete
+msgid "Supprimer"
+msgstr ""
+#: view_layouts_application_0
+msgid "Communtu, Ubuntu, installation, assistance à l'installation"
+msgstr ""
+#: create_iso
+msgid "construire"
+msgstr ""
+#: view_metapackages_show_16
+msgid "Editer la liste des paquets"
+msgstr ""
+#: view_layouts_application_1
+msgid "Communtu correspond à votre système Ubuntu Linux pour répondre à vos besoins individuels."
+msgstr ""
+#: view_admins_sync_package_1
+msgid "Erreur: Dépôt n'a pas pu être synchronisé"
+msgstr ""
+#: view_metapackages_show_17
+msgid "Publier"
+msgstr ""
+#: view_layouts_application_2
+msgid "Communtu"
+msgstr ""
+#: kvm_processes
+msgid "KVM processus"
+msgstr ""
+#: view_admins_sync_package_2
+msgid "Dépôt synchronisé"
+msgstr ""
+#: view_metapackages_show_18
+msgid "Si tu publies une compilation, elle sera accessible à tous les utilisateurs. Toutefois, elle ne pourra plus être supprimée ou renommée."
+msgstr ""
+#: view_metapackages_show_comment_and_ratings
+msgid "Commentaires récents et évaluation de cette compilation"
+msgstr ""
+#: view_layouts_application_3
+msgid "Ubuntu Logo"
+msgstr ""
+#: view_admins_sync_package_3
+msgid "Dépôt:"
+msgstr ""
+#: create
+msgid "créer"
+msgstr ""
+#: blog_2
+msgid "Blog"
+msgstr ""
+#: model_package_10
+msgid "Lors de la synchronisation du référentiel {{repo_name}} le paquet {{package_name}} n'a pas pu être trouvé."
+msgstr ""
+#: metacart_choose
+msgid "Ajoute des programmes à ta compilation"
+msgstr ""
+#: migrate_repositories
+msgid "Prendre les référentiels du prédécesseur"
+msgstr ""
+#: model_package_11
+msgid "Impossible de trouver le URL"
+msgstr ""
+#: cd_donate
+msgid "La création de CD / DVD a besoin de beaucoup de capacité du serveur. S'il vous plaît {{donate_link}}, pour permettre cette offre."
+msgstr ""
+#: view_layouts_application_5
+msgid "via PayPal:"
+msgstr ""
+#: Kommentar
+msgid "Commentaire:"
+msgstr ""
+#: model_package_12
+msgid "Contenu de {{file}}  ne correspond pas à la Syntaxe dépôt"
+msgstr ""
+#: imprint
+msgid "Mentions légales"
+msgstr ""
+#: usb_howto
+msgid ""
+msgstr ""
+#: view_passwords_new_0
+msgid "Mot de passe oublié "
+msgstr ""
+#: view_layouts_application_6
+msgid "Maintenant, rapidement, facilement et en toute sécurité un don en ligne - avec PayPal."
+msgstr ""
+#: view_rating_new_comment_cancel
+msgid " Annuler"
+msgstr ""
+#: view_passwords_new_1
+msgid "Avec quelle adresse e-mail  as tu créé le compte d'utilisateur?"
+msgstr ""
+#: iso_howto
+msgid ""
+msgstr ""
+#: view_metapackages_finish_migrate_0
+msgid "Toutes les compilations ont été"
+msgstr ""
+#: view_passwords_new_2
+msgid " ré-initialiser le mot de passe"
+msgstr ""
+#: view_metapackages_finish_migrate_1
+msgid "vers"
+msgstr ""
+#: view_sent_new_3
+msgid "Message:"
+msgstr ""
+#: view_my_mailer_mail_0
+msgid "Bonjour, \n\n un commentaire a été envoyé à www.communtu.de . Le sujet est:"
+msgstr ""
+#: view_packages_edit_0
+msgid "Modifier les paquets"
+msgstr ""
+#: view_layouts_application_9
+msgid "se déconnecter"
+msgstr ""
+#: bundles_with_errors
+msgid "Compilation avec erreur"
+msgstr ""
+#: view_metapackages_finish_migrate_2
+msgid "migrés."
+msgstr ""
+#: view_my_mailer_mail_1
+msgid "Le commentaire suivant a été à laissé:"
+msgstr ""
+#: generate_cd_new
+msgid "créer un nouveau LiveCD / DVD avec de nouvelles sources "
+msgstr ""
+#: view_metapackages_finish_migrate_3
+msgid "Les paquets suivants n'ont pas pu être migrés:"
+msgstr ""
+#: view_packages_edit_2
+msgid "Icône"
+msgstr ""
+#: controller_repositories_0
+msgid "Dépôs"
+msgstr ""
+#: view_packages_edit_3
+msgid " &nbsp;&nbsp;Nouvelle icône:"
+msgstr ""
+#: view_sessions_new_0
+msgid "Pour te connecter donnes l'identifiant et le mot de passe "
+msgstr ""
+#: controller_repositories_1
+msgid "Dépôt crée"
+msgstr ""
+#: view_packages_edit_4
+msgid "C'est un programme:"
+msgstr ""
+#: view_metapackages_edit_2
+msgid "S'il vous plaît utiliser les versions => 1,0 seulement pour compilation mature. Les numéros de version doivent toujours augmenter. 0,10 est supérieur à 0,9."
+msgstr ""
+#: add
+msgid "ajouter"
+msgstr ""
+#: controller_admins_0
+msgid "Domaine de l'administrateur "
+msgstr ""
+#: stop_vm
+msgid "arrêt de la machine virtuelle"
+msgstr ""
+#: bundles_needing_deb_generation
+msgid "Les compilations qui doivent être reconstruite comme un méta-paquet"
+msgstr ""
+#: controller_repositories_2
+msgid "Dépôt mis à jour."
+msgstr ""
+#: controller_repositories_3
+msgid "sources.list lire."
+msgstr ""
+#: view_admins_show_0
+msgid "Here should be an introduction to the admin area"
+msgstr ""
+#: packages_for_ubuntu
+msgid "Les paquets pour Ubuntu"
+msgstr ""
+#: view_sessions_new_3
+msgid "Enregistrer l utilisateur sur cet ordinateur pour une longue durée"
+msgstr ""
+#: view_user_mailer_forgot_password_0
+msgid "Pour obtenir un nouveau mot de passe, suivez le lien:"
+msgstr ""
+#: view_packages_edit_8
+msgid "Nouveau lien vers une vidéo"
+msgstr ""
+#: by_bank_transfer
+msgid "par virement"
+msgstr ""
+#: view_packages_edit_9
+msgid "Description des vidéos:"
+msgstr ""
+#: view_metapackages__metalist_10
+msgid "évaluation"
+msgstr ""
+#: view_cart_new_from_list_tip
+msgid "Astuce: Tu peux également trier une grande liste de thème avec un éditeur et ensuite les sous-listes résultant peuvent être séparément télécharger ici. La compilation obtenue peut être de nouveau regrouppé en compilation. Cela crée une compilation plus structurée."
+msgstr ""
+#: view_users_show_0
+msgid "Profil de l'utilisateur"
+msgstr ""
+#: view_metapackages_edit_gpl
+msgid "J'accepte de publier les informatios de compilation sous  la <a href=\"http://www.gnu.fr/documents/gpl.fr.html\"> Licence GNU General public </a> (version 2.0 ou supérieure) pour publication."
+msgstr ""
+#: install_package_steps
+msgid ""
+msgstr ""
+#: view_home_donate
+msgid "Faire un don pour Communtu"
+msgstr ""
+#: best_livecds
+msgid "Jusqu'ici Live-CDs/DVDs créé:"
+msgstr ""
+#: save
+msgid "Sauvegarder"
+msgstr ""
+#: view_roles_new_0
+msgid "Nouveau rôle"
+msgstr ""
+#: action_needs_login
+msgid ""
+msgstr ""
+#: search_package
+msgid "Rechercher des paquets"
+msgstr ""
+#: error_no_packages
+msgid "Tu n'as sélectionné aucun paquet. L'opération a été interrompue."
+msgstr ""
+#: view_metapackages__metalist_14
+msgid "installation via metapaquet. S'il vous plaît ajouter les sources avant."
+msgstr ""
+#: installation_two_steps
+msgid ""
+msgstr ""
+#: view_users_show_2
+msgid "Membre depuis:"
+msgstr ""
+#: more
+msgid ""
+msgstr ""
+#: view_metapackages_show_version
+msgid "Version:"
+msgstr ""
+#: subtype
+msgid "Sous-type:"
+msgstr ""
+#: view_users_show_3
+msgid "(Mois /Année)"
+msgstr ""
+#: view_admins_test_all_0
+msgid "Les référentiels suivants n'ont pas pu être lu:"
+msgstr ""
+#: view_users_show_4
+msgid "Dernier visiteur:"
+msgstr ""
+#: view_admins_test_all_1
+msgid "Tous les réferentiels ont été atteints."
+msgstr ""
+#: view_users_show_5
+msgid "Compilation créee"
+msgstr ""
+#: blog_link
+msgid "http://encommuntu.wordpress.com "
+msgstr ""
+#: no_bundle_selected
+msgid "Selectioner une compilation"
+msgstr ""
+#: view_users_show_8
+msgid "Nouvelles"
+msgstr ""
+#: view_metapackages__metalist_20
+msgid "<option>0 compilation sélectionné </option>   "
+msgstr ""
+#: last_user
+msgid "Bienvenue à notre dernier nouveau utilisateur inscrit"
+msgstr ""
+#: save_selection
+msgid "Sauvegarder la sélection"
+msgstr ""
+#: livecd_image
+msgid "image CD"
+msgstr ""
+#: view_categories_index_0
+msgid "Aperçu des catégories "
+msgstr ""
+#: make_your_usb
+msgid ""
+msgstr ""
+#: view_packages__packagelist_1
+msgid "Seulement&nbsp;Programmes:"
+msgstr ""
+#: eg
+msgid "par exemple:"
+msgstr ""
+#: view_packages__packagelist_2
+msgid "Recherche:"
+msgstr ""
+#: cant_debianized
+msgid "S'il te plait  fais entrer dans la compilation un titre en anglais et une description en anglais."
+msgstr ""
+#: edit_press_archiv
+msgid "Modifier l'archive de presse"
+msgstr ""
+#: want_to_add_package
+msgid ""
+msgstr ""
+#: four_and_fourty_letters
+msgid "Entre 4 et 40 caractères"
+msgstr ""
+#: download_area
+msgid "Télécharger:"
+msgstr ""
+#: usb_created
+msgid ""
+msgstr ""
+#: circular_dependency
+msgid "Erreur: dépendances circulaires entre les compilations"
+msgstr ""
+#: view_repositories_show_4
+msgid "liste des paquets pour {{arch}}:"
+msgstr ""
+#: install_bundle
+msgid "Installation des compilations"
+msgstr ""
+#: livecd_email_failed
+msgid "Communtu: Impossible de créer le Live-CD/DVD"
+msgstr ""
+#: usb_image
+msgid "USB Image"
+msgstr ""
+#: controller_application_0
+msgid "Cette fonctionnalité n'est pas disponible pour les visiteurs."
+msgstr ""
+#: livecd_email_body_failed
+msgid ""
+msgstr ""
+#: create_your_usb
+msgid "Créez toi-même un Live CD"
+msgstr ""
+#: being_created
+msgid "est créé"
+msgstr ""
+#: bundle_by_owner
+msgid "compilation créee"
+msgstr ""
+#: view_repositories_show_6
+msgid "OpenSource"
+msgstr ""
+#: new_architecture
+msgid "Nouvelle Architecture"
+msgstr ""
+#: view_home_mail_0
+msgid "Notification sur le depannage"
+msgstr ""
+#: iso_image
+msgid "USB Image"
+msgstr ""
+#: view_repositories_show_7
+msgid "commercialement"
+msgstr ""
+#: advanced_user
+msgid "Je suis un utilisateur avancé et j'aimerais aussi voir les versions inachevées d'Ubuntu."
+msgstr ""
+#: view_home_mail_1
+msgid "S'il te plait informe-moi à l'adresse e-mail suivante par rapport au depannage"
+msgstr ""
+#: view_categories_index_12
+msgid "Afficher la catégorie arbre"
+msgstr ""
+#: livecd_failed
+msgid "Création du LiveCD a échoué"
+msgstr ""
+#: view_packages_show_2
+msgid "Installer le paquet immédiatement"
+msgstr ""
+#: choice_of_bundle
+msgid "Nouvelle compilation"
+msgstr ""
+#: create_livecd_subtitle1
+msgid "Aller à la page de téléchargement"
+msgstr ""
+#: none
+msgid "Aucun"
+msgstr ""
+#: create_livecd_subtitle2
+msgid "Compilation créee"
+msgstr ""
+#: source_code
+msgid "Source"
+msgstr ""
+#: view_passwords_edit_0
+msgid "Mot de passe:"
+msgstr ""
+#: link_community_title
+msgid "Lien externe: les pages pour les utilisateurs de ubuntu"
+msgstr ""
+#: third_party
+msgid "tous les fournisseurs"
+msgstr ""
+#: view_packages_show_5
+msgid "Ajouter les sources de ce paquet "
+msgstr ""
+#: view_home_donate_options
+msgid "Il existe plusieurs façons de faire don de quelque chose."
+msgstr ""
+#: view_passwords_edit_1
+msgid "Confirmer mot de passe:"
+msgstr ""
+#: view_packages_show_11
+msgid "Liens:"
+msgstr ""
+#: view_passwords_edit_2
+msgid "Recevoir un nouveau mot de passe"
+msgstr ""
+#: view_user_profiles__profile_data_10
+msgid "N'autorise que les sources Ubuntu (\"main/restricted\", très sécurisé: Mises à jour de sécurité d'Ubuntu)"
+msgstr ""
+#: view_user_profiles__profile_data_11
+msgid "Les sources communautaires sont également autorisées (\"universe/multiverse\", également  sûre, plus de programmes/Confort:"
+msgstr ""
+#: view_home_icons_10
+msgid "Programme"
+msgstr ""
+#: view_packages_show_8
+msgid "Popularité:"
+msgstr ""
+#: view_home_home_rating_link
+msgid "evaluation de la compilation"
+msgstr ""
+#: new_bundle
+msgid "Nouvelle compilation"
+msgstr ""
+#: view_user_profiles__profile_data_12
+msgid "Authoriser toutes les sources  (un peu moins sécurisé: <a href=\"http://wiki.ubuntuusers.de/Fremdquellen\">Paquets externes</a> peuvent compromettre le système, mais encore plus de programmes/confort:"
+msgstr ""
+#: view_packages_show_9
+msgid "/ 5 Etoile&nbsp;&nbsp; "
+msgstr ""
+#: view_user_profiles__installation_0
+msgid "Installation à postériori d'Ubuntu"
+msgstr ""
+#: yes1
+msgid "oui"
+msgstr ""
+#: view_packages__deps_0
+msgid "aucune"
+msgstr ""
+#: view_derivatives_show_1
+msgid "programme sudo:"
+msgstr ""
+#: controller_sessions_1
+msgid "Vous êtes déjà inscrit."
+msgstr ""
+#: view_user_profiles__profile_data_13
+msgid "Ici tu peux choisir la licence que tu souhaites autoriser"
+msgstr ""
+#: view_home_icons_12
+msgid "Programme (si aucune autre icône du programme n'est disponible)"
+msgstr ""
+#: view_metapackages__metalist_2
+msgid "Standard"
+msgstr ""
+#: view_packages_show_15
+msgid "Source/dépôt"
+msgstr ""
+#: offer_new_category
+msgid "Proposition d'une nouvelle catégorie"
+msgstr ""
+#: view_user_profiles__installation_1
+msgid "Pour installer quelque chose, tu dois d'abord sous  \"sélection Software \"  sélectionner quelque chose."
+msgstr ""
+#: view_packages__deps_1
+msgid "Uniquement pour "
+msgstr ""
+#: view_derivatives_show_2
+msgid "programme de dialogue:"
+msgstr ""
+#: controller_packages_1
+msgid "Paquet créé."
+msgstr ""
+#: view_user_profiles__profile_data_14
+msgid "Logiciel libre (les sources sont disponibles  et peut être développées)"
+msgstr ""
+#: view_metapackages_show_save_2
+msgid "Créer nouveau méta-paquet."
+msgstr ""
+#: view_home_icons_13
+msgid "Programme compilé"
+msgstr ""
+#: view_metapackages__metalist_3
+msgid "Ouverture."
+msgstr ""
+#: invisible_distribution
+msgid "Distribution Invisible"
+msgstr ""
+#: view_packages_show_16
+msgid "Version du paquet"
+msgstr ""
+#: view_user_profiles__installation_2
+msgid "En raison de ton choix des programmes seront être installés sur  ton ordinateur. Les étapes suivantes sont à suivre (si"
+msgstr ""
+#: view_derivatives_show_3
+msgid "Icône de fichier:"
+msgstr ""
+#: controller_packages_2
+msgid "Mise à jour du paquet."
+msgstr ""
+#: controller_sessions_3
+msgid "L'enregistrement de ta distribution a été remplacé par {{dist_old}} parce que votre ancienne distribution d'Ubuntu (et donc aussi de Communtu) n'est plus supporté. Nous recommandons un pour votre ordinateur une  <a href='http://wiki.ubuntuusers.de/Upgrade'>a mise à niveau </a> pour {{dist_new}}."
+msgstr ""
+#: view_user_profiles__profile_data_15
+msgid "Permettre des licences non-libres (également gratuites, mais les sources ne sont pas ouvertes - la transition en douceur vers Linux:"
+msgstr ""
+#: view_packages_show_17
+msgid "Inclut les paquets suivants (\"dépend \" et \"recommande \"):"
+msgstr ""
+#: archive
+msgid "Archives"
+msgstr ""
+#: controller_sessions_4
+msgid "Tu as  été déconnecté."
+msgstr ""
+#: view_metapackages_show_save_3
+msgid "Pour créer le méta-paquet, il faut un titre en anglais et une description en anglais ."
+msgstr ""
+#: view_home_icons_15
+msgid "Programme compilé"
+msgstr ""
+#: controller_sessions_5
+msgid "Votre nom d'utilisateur ou mot de passe est incorrect. S'il vous plaît vers le bas sur  \" s'inscrire \" bouton."
+msgstr ""
+#: view_home_icons_16
+msgid "Migration des referentiels"
+msgstr ""
+#: order_mailinglist
+msgid "Listes de diffusion:"
+msgstr ""
+#: view_packages_show_19
+msgid "Conflits avec les paquets suivants (seuls ceux qui ont pas de version):"
+msgstr ""
+#: donation_receipt
+msgid "reçu de don peut être délivré."
+msgstr ""
+#: repository_url
+msgid "Dépôt-URL:"
+msgstr ""
+#: controller_sessions_6
+msgid "Votre compte n'a pas été activé. Le code d'activation vous est envoyé par e-mail."
+msgstr ""
+#: view_user_profiles__profile_data_17
+msgid "Enregistrer et choisir "
+msgstr ""
+#: view_home_icons_17
+msgid "lien externe"
+msgstr ""
+#: paste_package_list
+msgid "alternativement copier la liste des paquets ici:"
+msgstr ""
+#: controller_sessions_7
+msgid "Votre compte a été désactivé ou supprimé."
+msgstr ""
+#: view_home_icons_19
+msgid "lien externe"
+msgstr ""
+#: view_home_home_bundle
+msgid "la publication des compilations de programmes pré-configurés dans communtu"
+msgstr ""
+#: view_packages_show_21
+msgid "Employé dans les paquets suivants:"
+msgstr ""
+#: bundle_to_livecd1
+msgid "LiveCD / DVD recréer"
+msgstr ""
+#: discuss
+msgid "discuter"
+msgstr ""
+#: feedback
+msgid "Commentaire"
+msgstr ""
+#: view_videos_show_0
+msgid "Url:"
+msgstr ""
+#: create_your_livedvd
+msgid "Créez toi-même un Live CD"
+msgstr ""
+#: start
+msgid "Debuter"
+msgstr ""
+#: view_home_icons_20
+msgid "Utilisateur-icône "
+msgstr ""
+#: headline
+msgid "facilite l'installation d'Ubuntu "
+msgstr ""
+#: first_sync_repos
+msgid "S'il vous plaît premiérement synchroniser les réferentiels. Cela se fait généralement automatiquement dans  l'intervalle d'une semaine. S'il vous plaît noter: à ce stade n'est vérifiée que si quelque chose était synchronisé, pas de savoir si le processus est terminé."
+msgstr ""
+#: view_home_icons_22
+msgid "Icône pour l'utilisateur"
+msgstr ""
+#: email_with_colon
+msgid "E-Mail: "
+msgstr ""
+#: iso_ready
+msgid ""
+msgstr ""
+#: you_can
+msgid "Tu peux aussi "
+msgstr ""
+#: view_home_icons_23
+msgid "icône de message"
+msgstr ""
+#: view_packages_show_26
+msgid "Transformer le Metapaquet en compilation"
+msgstr ""
+#: make_distribution_visible
+msgid "Rendre distribution visible"
+msgstr ""
+#: view_home_icons_24
+msgid "Icône de message pour le courrier reçu"
+msgstr ""
+#: controller_debs_0
+msgid "les paquets Debian."
+msgstr ""
+#: controller_debs_1
+msgid "Deb est créé ."
+msgstr ""
+#: view_packages_edit_10
+msgid "Description du paquet"
+msgstr ""
+#: please_create_cd
+msgid "Créer une compilation à partir d'une liste de paquets "
+msgstr ""
+#: view_mailbox_show_1
+msgid "De"
+msgstr ""
+#: choose_bundle
+msgid "Selectioner une compilation"
+msgstr ""
+#: controller_debs_2
+msgid "Deb mise à jour."
+msgstr ""
+#: view_layouts_donate
+msgid "Faire un don"
+msgstr ""
+#: zombie_processes
+msgid "Zobmie processus"
+msgstr ""
+#: view_home_faq_gnome_01
+msgid "Sous  \"Système -> Administration -> Sources de logiciels -> Sources de logiciels tiers \" les sources Communtu sont trouvable. Ici, elles peuvent également être désactivées à nouveau."
+msgstr ""
+#: view_mailbox_show_3
+msgid "obtenir"
+msgstr ""
+#: view_home_faq_gnome_02
+msgid "Pour la gestion du  paquet  Synaptic tu vas aller sur  \"Système -> Administration -> Gestion du paquet  Synaptic \". Sélectionne  ci-dessous à gauche du point d'origine. Recherche maintenant dans la liste sus-jacente \"packages.communtu.org \" et clique dessus. Sur le côté droit maintenant, les méta-paquets disponibles dans Communtu seront affichés. La suppression se fait  avec un clic sur la droite de la souris et ensuite \"Sélectionner pour suppression\". Ceci doit être confirmé par \"Appliquer \"."
+msgstr ""
+#: wait_for_release
+msgid "attendre la liberation officielle de Ubuntu"
+msgstr ""
+#: view_mailbox_show_5
+msgid "Vous n'avez pas de messages dans votre boîte de réception."
+msgstr ""
+#: invalid_activation_code_entered
+msgid "Entree invalide de mise à jour de code"
+msgstr ""
+#: livecd_previous_cds
+msgid "Jusqu'ici Live-CDs/DVDs créé:"
+msgstr ""
+#: create_livecd_title
+msgid "Créez toi-même un Live CD"
+msgstr ""
+#: install_bundle_steps
+msgid ""
+msgstr ""
+#: create_livecd_downloadpage
+msgid ""
+msgstr ""
+#: migrate_repository
+msgid "remplacer le dépôt"
+msgstr ""
+#: bundle_editor
+msgid "Compilation-Editeur"
+msgstr ""
+#: which_programs_do_you_need
+msgid "Sur quel sujet recherches-tu des programmes(bureau, graphiques,...)? Ici tu peux entrer tes centres d'intérêt et mettre sur pied un programme adapté pré-configuré:"
+msgstr ""
+#: description_with_colon
+msgid "Description:"
+msgstr ""
+#: view_admins_sync_all_1
+msgid "Erreur: les referentiels n'ont pas pu être synchronisés"
+msgstr ""
+#: edit
+msgid "Modifier"
+msgstr ""
+#: model_user_profile_tabz_0
+msgid "Les données de base"
+msgstr ""
+#: view_admins_sync_all_2
+msgid " Dépôts synchronisés"
+msgstr ""
+#: choose_parent
+msgid "Choisis un parent!"
+msgstr ""
+#: model_user_profile_tabz_1
+msgid "Sélection de logiciel"
+msgstr ""
+#: controller_suggestion_11
+msgid "Ajouter les sources des paquets"
+msgstr ""
+#: navigation_communtu
+msgid "Navigation Communtu"
+msgstr ""
+#: controller_suggestion_12
+msgid "Les Sources de paquets suivants seront ajoutés"
+msgstr ""
+#: view_home_auth_error_0
+msgid "Erreur d'authentification"
+msgstr ""
+#: error_no_attachement
+msgid "Tu n'as sélectionné aucun fichier. L'opération a été interrompue."
+msgstr ""
+#: model_user_profile_tabz_3
+msgid "Effectuer l'installation:"
+msgstr ""
+#: mailinglist
+msgid "Listes de diffusion:"
+msgstr ""
+#: view_home_auth_error_1
+msgid "Les données que tu as envoyé à Communtu n'ont pas pu être authentifié correctement. S'il te plaît essaye encore d'accéder au site  et rempli une fois de plus le formulaire approprié. Ce probleme vient  probablement du fait que  tu  n'ais pas activé tes cookies."
+msgstr ""
+#: ubuntu_derivatives
+msgid "Ubuntu dérivés"
+msgstr ""
+#: model_user_profile_tabz_4
+msgid "Prèréglages?"
+msgstr ""
+#: controller_suggestion_15
+msgid "Installer les paquets"
+msgstr ""
+#: force_sync
+msgid "Forcer la synchronisation des référentiels "
+msgstr ""
+#: we_want_you
+msgid "Nous avons besoin de toi"
+msgstr ""
+#: controller_suggestion_16
+msgid "Les paquets suivants seront installés"
+msgstr ""
+#: controller_sent_0
+msgid "Le sujet ne doit pas être vide."
+msgstr ""
+#: make_your_livedvd
+msgid "Tu n'as pas encore installé Ubuntu. Sélectionne ta compilation ici et grave un CD  afin que  tu puisses l'utiliser comme un live-CD et aussi pour l'installation."
+msgstr ""
+#: untested_bundle
+msgid "Compilations créés par"
+msgstr ""
+#: bundel_editing
+msgid "pour éditer les compilations"
+msgstr ""
+#: controller_sent_1
+msgid "L'utilisateur n'existe pas"
+msgstr ""
+#: view_user_profiles__sources_0
+msgid "Sources pour les programmes à installer"
+msgstr ""
+#: view_rating_show_title_ratings_count
+msgid "(qui est Basé sur {{votes}}  Evaluation(s))"
+msgstr ""
+#: cannot_publish_bundle
+msgid ""
+msgstr ""
+#: view_home_impressum_2
+msgid "AG Communtu"
+msgstr ""
+#: architectures
+msgid "Architectures"
+msgstr ""
+#: metapackages_cannot_destroy
+msgid "La compilation ne peut pas être supprimée car elle est utilisée dans une autre."
+msgstr ""
+#: create_livecd_intro
+msgid ""
+msgstr ""
+#: controller_sent_2
+msgid "Message envoyé avec succès"
+msgstr ""
+#: view_user_profiles__sources_1
+msgid "Ici les programmes et les paquets  a installer sont triés selon les sources et  énumérées de tel sorte que tu puisses également voir pourquoi les sources pertinentes sont ajoutés."
+msgstr ""
+#: model_package_0
+msgid "Logiciel Libre"
+msgstr ""
+#: missing_debs_for_bundle
+msgid "il manque debs pour la liasse:"
+msgstr ""
+#: start_vm
+msgid "démarrer la machine virtuelle"
+msgstr ""
+#: view_user_profiles__profile_rating_0
+msgid ""
+msgstr ""
+#: model_package_1
+msgid "Libre + Propriétaire"
+msgstr ""
+#: view_home_impressum_4
+msgid "Bauernstr. 2"
+msgstr ""
+#: user_not_found
+msgid "Les référentiels suivants n'ont pas pu être lu:"
+msgstr ""
+#: view_user_profiles__profile_rating_1
+msgid "A la droite tu trouveras les détails sur la catégorie sélectionnée à gauche"
+msgstr ""
+#: model_package_2
+msgid "Inconnu"
+msgstr ""
+#: view_home_icons_0
+msgid "Les icônes de Communtu"
+msgstr ""
+#: view_home_impressum_5
+msgid "28203 Bremen"
+msgstr ""
+#: livecd_email_body
+msgid ""
+msgstr ""
+#: additional_sources
+msgid "Autres sources qui sont ajoutés en raison de certaines sources ne sont pas complètes."
+msgstr ""
+#: order_number
+msgid "Numero classé (le plus petit nombre en premier)"
+msgstr ""
+#: videos
+msgid "Vidéos:"
+msgstr ""
+#: server_status
+msgid "Statut du serveur"
+msgstr ""
+#: bundle_tested
+msgid "Modifier les compilations"
+msgstr ""
+#: senden
+msgid "Envoyer"
+msgstr ""
+#: view_home_icons_3
+msgid "Installer les paquets"
+msgstr ""
+#: model_package_6
+msgid "<br> n a pas le bon format"
+msgstr ""
+#: register
+msgid "S'inscrire"
+msgstr ""
+#: model_package_7
+msgid "ne parviens a detecter l' URL pour {{repo}}"
+msgstr ""
+#: model_package_need_not_update
+msgid "{{url}} n'a pas changé"
+msgstr ""
+#: view_home_icons_6
+msgid "Installer les sources"
+msgstr ""
+#: model_package_9
+msgid "Lors de la synchronisation du référentiel {{repo_name}} impossible de trouver  PackageDistr-Eintrag pour le paquet {{package_name}}"
+msgstr ""
+#: view_home_about_12
+msgid "<b>Gérer la compilation </ b> La barre latérale gauche donne un aperçu des compilationss disponibles. Il existe sur <b> Ubuntu versions</ b> un aperçu des versions Ubuntu disponiblent dans le system (Distributions)."
+msgstr ""
+#: creation_failed
+msgid "Generation a échoué"
+msgstr ""
+#: view_home_icons_9
+msgid "Installation via script shell"
+msgstr ""
+#: distribution
+msgid "Distribution"
+msgstr ""
+#: view_packages__search_0
+msgid "Rechercher des paquets"
+msgstr ""
+#: link_community
+msgid "http://www.ubuntuusers.de"
+msgstr ""
+#: natur_geist_und_technik
+msgid "Nature, Esprit et  Technologie - Association pour la promotion de la culture générale eV"
+msgstr ""
+#: fine_selection
+msgid "Fine sélection"
+msgstr ""
+#: logfile_extract
+msgid "Extrait du fichier journal"
+msgstr ""
+#: lib_system_0
+msgid "Tu dois te connecter pour pouvoir utiliser cette fonctionnalité. Cela est aussi valable pour Visiteur, pour cela tu dois cliquer en haut, à ta droite sur \"Visiteur\"."
+msgstr ""
+#: info_new
+msgid "Créer un nouvel article"
+msgstr ""
+#: view_distributions_edit_0
+msgid "Modifier la distrbution"
+msgstr ""
+#: lib_system_1
+msgid "Tu n ' as pas la permission de poursuivre cette action."
+msgstr ""
+#: controller_derivatives_1
+msgid "Dérivés générés."
+msgstr ""
+#: view_metapackages_show_modified
+msgid "La compilation contient des modifications."
+msgstr ""
+#: lib_system_2
+msgid "http://www.communtu.de"
+msgstr ""
+#: controller_derivatives_2
+msgid "Mis à jour des dérivés."
+msgstr ""
+#: view_home_about_16
+msgid "Pour pouvoir utiliser Communtu, tu dois premièrement t'inscrire. C est trés facile, clique simplement sur le bouton \"s'inscrire \" dans la barre du haut."
+msgstr ""
+#: view_home_home_10
+msgid "<b> Ubuntu-versions </ b> vue d'ensemble des versions Ubuntu disponiblent dans le system (Distributions)."
+msgstr ""
+#: continue
+msgid "continuer"
+msgstr ""
+#: view_home_home_11
+msgid "<b> Gérer les utilisateurs </ b> Ici, tu peux en tant qu'administrateur changer les rôles de l'utilisateur. Sois prudent!"
+msgstr ""
+#: view_debs_index_1
+msgid "Retour au menu Communtu"
+msgstr ""
+#: view_home_home_12
+msgid "> Gérer les catégories <b> </ b> Ici, tu peux créer de nouvelles catégories en tant qu'administrateur ou modifier la structure de l'arborescence des catégories. Soyez prudent!"
+msgstr ""
+#: livecd_image_link
+msgid "http://wiki.ubuntuusers.de/CD-Images"
+msgstr ""
+#: view_metapackages_show_save
+msgid "Sauvegarder la Compilation comme un méta-paquet "
+msgstr ""
+#: view_debs_index_2
+msgid "Aucune défaillance Deb-"
+msgstr ""
+#: view_home_home_13
+msgid "<b> Actualité</ b> des informations sur les événements Communtu, blog Communtu ..."
+msgstr ""
+#: help_translation
+msgid "Aide au niveau de la traduction - Envoie-nous un E-mail"
+msgstr ""
+#: view_debs_index_3
+msgid "Toutes tentatives échoué à créer des debs <b> Attention:  seulement exécuter sous admin.communtu.de que / b> "
+msgstr ""
+#: view_home_home_14
+msgid "Il ya aussi"
+msgstr ""
+#: view_home_home_15
+msgid "Plus d'infos"
+msgstr ""
+#: repositories_without_packages
+msgid "Referentiels sans paquets (service de garde-vide)"
+msgstr ""
+#: view_metapackages_rdepends_0
+msgid "En compilation"
+msgstr ""
+#: view_debs_index_5
+msgid "Produire"
+msgstr ""
+#: view_home_home_16
+msgid "a propos du projet et des participants dans le"
+msgstr ""
+#: view_metapackages_rdepends_1
+msgid " directement et indirectement le contenus des compilationset des paquets"
+msgstr ""
+#: change_passwd
+msgid "Changer mot de passe"
+msgstr ""
+#: view_metapackages_immediate_conflicts_0
+msgid "Les conflits au sein des compilations"
+msgstr ""
+#: controller_home_1
+msgid "L'e-mail nous a été envoyé . Je te remercie pour ton message."
+msgstr ""
+#: view_home_home_17
+msgid "Mentions Légales"
+msgstr ""
+#: view_metapackages_immediate_conflicts_1
+msgid "est en conflit avec"
+msgstr ""
+#: controller_home_2
+msgid "Nous te contacterons par E-mail."
+msgstr ""
+#: former_participants
+msgid "Anciens coopérateurs"
+msgstr ""
+#: view_home_home_18
+msgid "Cliquez sur"
+msgstr ""
+#: create_livecd_email
+msgid ""
+msgstr ""
+#: controller_home_3
+msgid "Ceci ne ressemble pas a une liste des paquets Ubuntu ... <br /> Le paquet doit contenir le nom du packet par ligne"
+msgstr ""
+#: controller_home_4
+msgid "un fichier  avec la liste du paquet doit être spécifie( un seul nom de paquet par ligne)"
+msgstr ""
+#: view_derivatives_index_0
+msgid "Vue d'ensemble des dérivés d'Ubuntu"
+msgstr ""
+#: livecd_created_by
+msgid "Live-CD/DVD Créé par:"
+msgstr ""
+#: controller_home_5
+msgid "Nous avons reçu ta proposition et  t informerons si et quand nous allons enregistrer le dépôt proposé."
+msgstr ""
+#: view_home_home_20
+msgid "Pour créer un nouvel utilisateur, ou"
+msgstr ""
+#: security_type
+msgid "Type de sécurité:"
+msgstr ""
+#: view_home_home_21
+msgid "login"
+msgstr ""
+#: inbox
+msgid "Boîte de réception"
+msgstr ""
+#: creation_successful
+msgid "Création a été un succès"
+msgstr ""
+#: view_home_home_22
+msgid "à toi, ou"
+msgstr ""
+#: view_home_home_23
+msgid "utilise Communtu en tant que visiteur"
+msgstr ""
+#: controller_categories_0
+msgid "Catégories"
+msgstr ""
+#: update
+msgid "Mettre à jour"
+msgstr ""
+#: view_home_home_24
+msgid "Mentions Légales"
+msgstr ""
+#: statistics
+msgid "Statistiques d'appel"
+msgstr ""
+#: view_layouts_application_11
+msgid "accès visiteur"
+msgstr ""
+#: description
+msgid "Description"
+msgstr ""
+#: view_home_home_25
+msgid "Pour des questions concernant Communtu nous avons  dans \" Questions les plus souvent posées\"  collectés."
+msgstr ""
+#: livecd_please_register
+msgid ""
+msgstr ""
+#: controller_categories_2
+msgid "Catégorie généré"
+msgstr ""
+#: failed_live_cds
+msgid "Échec LiveCD / DVD"
+msgstr ""
+#: view_home_home_26
+msgid "Tu as installé Ubuntu et maintenant tu es à la recherche des progammes qui s'exécutent sur Ubuntu?"
+msgstr ""
+#: controller_categories_3
+msgid "Mise à jour de la catégorie."
+msgstr ""
+#: description_for_description
+msgid "Voici une courte présentation de ta compilation pour une activité pour laquelle elle est destinée. Ensuite, tu peux aussi profiter des avantages de certains programmes reçu d'elle."
+msgstr ""
+#: view_home_home_27
+msgid "Communtu te permet de:"
+msgstr ""
+#: create_livecd_note
+msgid ""
+msgstr ""
+#: view_home_donate_why
+msgid "L'opération Communtu est basé surtout sur l'investissement de bénévoles; mais cette derniére coûte de l'argent (par exemple pour les serveurs et les chambres). Communtu est donc tributaire de dons. Même de petits montants peuvent aider."
+msgstr ""
+#: view_sent_show_2
+msgid "Date:"
+msgstr ""
+#: view_layouts_application_13
+msgid "A propos de Communtu"
+msgstr ""
+#: livecd_message
+msgid "Via un live CD, le logiciel peut etre à la fois essayé et installé. Ceci etant, un soi-disant {{cdimage_link}} est créé, sous la forme d'un fichier ISO que tu peux graver. Pour graver un CD dont tu  as besoin, dans le cas ou tu as sélectionné un grand nombre de logiciels, d'un DVD. <br /> <br /> La création de l'image prend un certain temps. Tu seras averti par email lorsque l'image est prête. S'il te plait vérifie dans tes paramètres d'utilisateur q'une adresse Email valide a été donnée."
+msgstr ""
+#: make_a_systemupgrade
+msgid "Tu veux faire une mise à niveau du système. Alors regarde <http://encommuntu.wordpress.com/2009/09/16/how-to-use-communtu-for-a-systems-upgrade/> comment c'est facile </a> et télécharge ta liste de paquets sur Communtu.            "
+msgstr ""
+#: controller_metapackages_not_changed
+msgid "La compilation a déja été transforméé en méta-paquet et téléchargée."
+msgstr ""
+#: donation_purpose
+msgid "Objectif: Communtu"
+msgstr ""
+#: view_layouts_application_14
+msgid "Feed-back à Communtu"
+msgstr ""
+#: view_home_home_28
+msgid "Télécharger:"
+msgstr ""
+#: allgemeinbildung
+msgid "Culture générale e.V."
+msgstr ""
+#: view_repositories_index_0
+msgid "Dépôts:"
+msgstr ""
+#: view_layouts_application_15
+msgid "connecté en tant que "
+msgstr ""
+#: view_home_home_29
+msgid "Sur quel sujet recherches-tu des programmes (bureau, graphiques ,...)? Ici tu peux entrer tes domaines d'intérêt et  télécharger les  programmes-compilés déja configurés."
+msgstr ""
+#: view_layouts_application_16
+msgid "nouveau méssage"
+msgstr ""
+#: view_home_home_30
+msgid "Compilation:"
+msgstr ""
+#: view_home_home_31
+msgid "Ici, tu as la possilité non seulement de choisir des thèmes détaillés et en plus charger des programmes et des compilations de programmes, mais aussi créer ta propre compilation et l administrer ."
+msgstr ""
+#: package_list
+msgid "retour à la liste des paquets"
+msgstr ""
+#: communtu_is_opensource
+msgid ""
+msgstr ""
+#: save_or_delete_bundle
+msgid ""
+msgstr ""
+#: view_layouts_application_18
+msgid "Aucuns nouveaux méssages "
+msgstr ""
+#: view_home_home_32
+msgid "Communtu:"
+msgstr ""
+#: controller_metapackages_11
+msgid "Impossible de supprimer le paquet de la compilation."
+msgstr ""
+#: controller_metapackages_debianizing
+msgid "La compilation sera transformée en méta-paquet et ensuite transférée. Cela prendra quelques minutes."
+msgstr ""
+#: no_save_database
+msgid "Les paquets suivants n'ont pas pu être stockés dans la base de données:"
+msgstr ""
+#: view_layouts_application_19
+msgid "https://www.paypal.com/de_DE/DE/i/btn/btn_donate_LG.gif"
+msgstr ""
+#: view_repositories_index_5
+msgid "Nouveau dépôt"
+msgstr ""
+#: view_home_home_33
+msgid "Aimerais-tu en savoir plus sur Communtu? As-tu des suggestions, des questions - nous sommes impatients de t'entendre."
+msgstr ""
+#: view_distributions_show_0
+msgid "Depôts:"
+msgstr ""
+#: view_layouts_application_20
+msgid "Javascript n'est pas activé! S'il te plaît active JavaScript dans ton navigateur."
+msgstr ""
+#: view_metapackages_migrate_0
+msgid "Par quelle distribution les compilations doivent-elles être remplacées?"
+msgstr ""
+#: view_distributions_show_1
+msgid "tout verifier"
+msgstr ""
+#: migrate
+msgid "migrer"
+msgstr ""
+#: view_layouts_application_21
+msgid "Communtu facilite les installations d'Ubuntu"
+msgstr ""
+#: view_metapackages_migrate_1
+msgid "Par quelle distribution les compilations doivent être remplacées?"
+msgstr ""
+#: controller_metapackages_15
+msgid "<option value='2'>Publier<option/>"
+msgstr ""
+#: view_distributions_show_2
+msgid "tout synchroniser "
+msgstr ""
+#: english_name_reserve
+msgid "Le nom anglais est déjà pris.S'il te plaît choisis un autre."
+msgstr ""
+#: view_layouts_application_22
+msgid "au profil d'utilisateur"
+msgstr ""
+#: view_distributions_show_3
+msgid "Lire sources.liste"
+msgstr ""
+#: view_distributions_show_4
+msgid "Ajouter un dépôt"
+msgstr ""
+#: view_layouts_application_23
+msgid "COMPILATIONS"
+msgstr ""
+#: install
+msgid "Installer"
+msgstr ""
