@@ -82,7 +82,12 @@ class UsersController < ApplicationController
 
   def anonymous_login
     do_anonymous_login
-    redirect_to :back
+    # prevent redirection to login page, which would give an error
+    if request.env["HTTP_REFERER"].include?("session/new")
+      redirect_to "/home"
+    else
+      redirect_to :back
+    end  
   rescue ActiveRecord::RecordInvalid
     # release lock
     system "dotlockfile -u #{RAILS_ROOT}/anolock"
