@@ -196,7 +196,7 @@ class Livecd < ActiveRecord::Base
         system (call+"livecd.log")
         system "echo  >> #{RAILS_ROOT}/log/livecd#{port}.log"
         if self.failed then
-          self.log = IO.popen("tail -n80 #{RAILS_ROOT}/log/livecd#{port}.log").read
+          self.log = IO.popen("tail -n80 #{RAILS_ROOT}/log/livecd#{port}.log",&:read)
         end
     rescue StandardError => err
         self.log = "ruby code for live CD/DVD creation crashed: "+err
