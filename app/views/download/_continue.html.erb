@@ -1,4 +1,5 @@
 <% path = paths(session[:path]) %>
+<% if !path.nil? %>   
 <% for i in 0..path.size-1 %>
   <% if path[i][:action].split("/")[-1] == params[:action] and !path[i+1].nil?%>
       <div class="path_continue">
@@ -7,4 +8,5 @@
 	  </form>
 	  </div>
   <% end %>
-<% end %>	
+<% end %>
+<% end %>
