@@ -21,7 +21,7 @@
 sudo add-apt-repository ppa:aperomsik/aap-ppa
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install apt-cacher
+sudo apt-get install -y apt-cacher
 sudo /etc/init.d/apt-cacher restart
 
 # todo: make script/sudoers/clear-apt-proxy-cache-communtu work for apt-cache server different from websever

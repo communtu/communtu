@@ -17,7 +17,7 @@
 # You should have received a copy of the GNU Affero Public License
 # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
 
-tmpfile=$(mktmp)
+tmpfile=$(mktemp)
 crontab -l > $tmpfile
 cat $1 >> $tmpfile
 crontab $tmpfile

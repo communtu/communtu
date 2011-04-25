@@ -213,6 +213,7 @@ class Repository < ActiveRecord::Base
     packages = self.packages_to_hash force, url, arch, tmp_name
     # errors while reading or still up-to-date? then return
     if !packages[:error].nil? or !packages[:notice].nil? then
+      system "rm #{tmp_name}"
       return packages
     end
 

@@ -29,7 +29,7 @@ OLDUSERNAME=communtu
 NEWUSERNAME=communtu
 
 # mysql server
-sudo apt-get install mysql-server libmysql-ruby ruby1.8-dev libmysqlclient15-dev
+sudo apt-get install -y mysql-server libmysql-ruby ruby1.8-dev libmysqlclient15-dev
 sudo scp $OLDUSERNAME@$OLDSERVER:/etc/mysql/my.cnf /etc/mysql/my.cnf
 sudo /etc/init.d/mysql reload
 mysqladmin -u $NEWDBUSER --password=$NEWDBPASSWORD create communtu

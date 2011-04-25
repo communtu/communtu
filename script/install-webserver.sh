@@ -29,7 +29,7 @@ cd
 mkdir web2.0
 
 # apache und mail
-sudo apt-get install apache2 webalizer
+sudo apt-get install -y apache2 webalizer
 mkdir -p webalizer/en-communtu
 mkdir -p webalizer/de-communtu
 mkdir -p webalizer/fr-communtu
@@ -37,15 +37,15 @@ mkdir -p webalizer/pack-communtu
 
 sudo scp $OLDUSERNAME@$OLDSERVER:/etc/apache2/sites-available/communtu.conf /etc/apache2/sites-available/
 sudo a2ensite communtu.conf
-sudo apt-get install php5 libapache2-mod-python sendmail
+sudo apt-get install -y php5 libapache2-mod-python sendmail
 sudo a2enmod proxy
 
 # git
-sudo apt-get install git-core 
+sudo apt-get install -y git-core 
 sudo /etc/init.d/apache2 restart
 
 # rails
-sudo apt-get install ruby rdoc irb libyaml-ruby libzlib-ruby ri libopenssl-ruby sqlite3 libsqlite3-ruby rubygems mongrel
+sudo apt-get install -y ruby rdoc irb libyaml-ruby libzlib-ruby ri libopenssl-ruby sqlite3 libsqlite3-ruby rubygems mongrel
 sudo ln -s /usr/bin/gem1.8 /usr/bin/gem
 sudo ln -s /var/lib/gems/1.8/bin/rake /usr/bin/
 sudo gem update --system
@@ -55,13 +55,13 @@ sudo gem install i18n
 sudo gem install chronic packet
 
 # debian packaging
-sudo apt-get install reprepro fakeroot dpkg-dev dh-make build-essential debootstrap schroot edos-debcheck apt-mirror
+sudo apt-get install -y reprepro fakeroot dpkg-dev dh-make build-essential debootstrap schroot edos-debcheck apt-mirror
 
 #backup
-sudo apt-get install rsync
+sudo apt-get install -y rsync
 
 #Editor Console
-sudo apt-get install joe
+sudo apt-get install -y joe
 
 # checkout rails project
 cd web2.0
