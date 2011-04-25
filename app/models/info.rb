@@ -1,4 +1,5 @@
 class Info < ActiveRecord::Base
+  require "lib/utils.rb"
   belongs_to :author, :class_name => 'User'
 
   def header
