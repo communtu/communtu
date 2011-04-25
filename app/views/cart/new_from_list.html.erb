@@ -26,10 +26,23 @@ debfoster -sn | tail -n +2 | tr ' ' '\n' | sort -u > packages.list
 <%=t(:view_cart_new_from_list_3,{:debfoster=>package_link("debfoster")})%>
 
 <%= form_tag({:controller => :cart, :id => :current_user.id, :action => :create_from_list}, :multipart => true)%>
-<p><%=t(:view_cart_new_from_list_4)%></p>
-<p><%= file_field(:file, :attachment) %></p>
-<p><%= t(:paste_package_list)%><br />
-<%=  text_area_tag 'package_list', nil, :size => "50x3"%>
+<table>
+	<tr>
+		<td>
+			<p><%=t(:view_cart_new_from_list_4)%></p><br />
+			<p><%= file_field(:file, :attachment) %></p>
+		</td>
+		<td>
+			<%= t(:or)%>
+		</td>
+		<td>
+			<p><%= t(:paste_package_list)%><br />
+			<%=  text_area_tag 'package_list', nil, :size => "50x3"%>
+		</td>
+	</tr>
+</table>
+
+
 
 </p>
 <p><%= submit_tag(t(:view_cart_new_from_list_5)) %></p>
