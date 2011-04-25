@@ -63,7 +63,7 @@ while [ $res -ne 0 ]
     res=$?
   done  
 echo
-sed -i "s/password: /password: $passwd/" config/database.yml
+sed -i "s/password:/password: $passwd/" config/database.yml
 sed -i "s/root/$dbuser/" config/database.yml
 set -x
 rake db:load RAILS_ENV=production # production mode is faster; production and development dbs are the same
