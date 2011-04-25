@@ -1,6 +1,4 @@
 #!/bin/bash
-# add a line to the user's crontab 
-
 # (c) 2008-2011 by Allgemeinbildung e.V., Bremen, Germany
 # This file is part of Communtu.
 
@@ -17,9 +15,8 @@
 # You should have received a copy of the GNU Affero Public License
 # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
 
-set -f
-tmpfile=$(mktemp)
-crontab -l > $tmpfile
-echo $1 >> $tmpfile
-crontab $tmpfile
-rm $tmpfile
+cd `dirname "$0"`/..
+touch log/livecd_counter.log
+date >> log/livecd_counter.log
+/usr/bin/rake livecd:counter RAILS_ENV=production >> log/livecd_counter.log 2>&1
+echo "done" >> log/livecd_counter.log

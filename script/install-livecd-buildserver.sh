@@ -17,11 +17,10 @@
 # You should have received a copy of the GNU Affero Public License
 # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
 
-# assume that current directory is rails directory
-RAILS_DIR=$(pwd)
 
 # virtual machine, CD extraction and generation tools
 sudo apt-get install -y kvm kvm-pxe kpartx libdbd-sqlite3-perl genisoimage squashfs-tools python-software-properties
+sudo adduser $USER kvm
 
 # abbreviations for logging into test VM 
 echo 'SSH="ssh -p 2221 -o StrictHostKeyChecking=no -o ConnectTimeout=500 root@localhost"' >> ~/.bashrc
@@ -30,10 +29,6 @@ echo 'SCP="scp -P 2221 -o StrictHostKeyChecking=no -o ConnectTimeout=500"' >> ~/
 # install commands with root privileges
 script/install-sudoer kill-kvm $USER
 script/install-sudoer nicekvm $USER
-
-# script for restarting the liveCD daemon
-script/add-to-crontab "*       *       *       *       *       $RAILS_DIR/livecd-daemon-check"
-
 
 # future code neeeded for the generation of kvm images
 # sudo mkdir /remaster

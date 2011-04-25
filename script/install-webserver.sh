@@ -120,6 +120,7 @@ sudo cp /home/$NEWUSERNAME/web2.0/communtu/script/security-updates /etc/cron.dai
 ## add the following to user's crontab
 script/add-to-crontab "0       5       *       *       *       /home/$NEWUSERNAME/web2.0/communtu/script/nightly-cron"
 script/add-to-crontab "*       *       *       *       *       /home/$NEWUSERNAME/web2.0/communtu/script/livecd-daemon-check"
+script/add-to-crontab "0       2       *       *       *       /home/$NEWUSERNAME/web2.0/communtu/script/livecd-counter"
 ## add the following to root's crontab
 sudo script/add-to-crontab "0      4       *       *       1       /sbin/reboot"
 
