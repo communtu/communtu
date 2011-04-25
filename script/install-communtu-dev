@@ -1,4 +1,8 @@
 #!/bin/bash
+# script for installing rails and commutu
+# use a non-blank argument to the script if you are a developer with access to the communtu.org server
+developer=$1
+
 #adapt to your local settings, if needed
 dbuser=root
 
@@ -19,7 +23,6 @@ dbuser=root
 # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
 
 set -x
-# script for installing rails and commutu
 # git
 sudo apt-get install -y git-core
 # translating
@@ -41,10 +44,13 @@ sudo gem install chronic packet
 sudo apt-get install -y mysql-server libmysql-ruby ruby1.8-dev libmysqlclient15-dev
 pwdpath=$(pwd)
 if [ ${pwdpath##*/} != "communtu" ]; then
-  # read-only version
-  git clone git://github.com/communtu/communtu.git
-  # developers should use
-  # git clone git@github.com:communtu/communtu.git
+  if [ $dev == "" ]; then
+    # read-only version
+    git clone git://github.com/communtu/communtu.git
+  else  
+    # developers version
+    git clone git@github.com:communtu/communtu.git
+  fi  
   cd communtu
 fi
 # setting up rails config
@@ -66,7 +72,13 @@ echo
 sed -i "s/password:/password: $passwd/" config/database.yml
 sed -i "s/root/$dbuser/" config/database.yml
 set -x
-rake db:load RAILS_ENV=production # production mode is faster; production and development dbs are the same
+  if [ $dev == "" ]; then
+    # test database
+    rake db:load RAILS_ENV=production # production mode is faster; production and development dbs are the same
+  else
+    # database from communtu.org
+    script/database $passwd
+  fi    
 mkdir log
 
 set +x

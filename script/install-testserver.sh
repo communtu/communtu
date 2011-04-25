@@ -1,4 +1,6 @@
 #!/bin/bash
+# script for installing communtu test server
+
 # (c) 2008-2011 by Allgemeinbildung e.V., Bremen, Germany
 # This file is part of Communtu.
 
@@ -15,19 +17,3 @@
 # You should have received a copy of the GNU Affero Public License
 # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
 
-PASSWORD=$1
-if [ $PASSWORD != "" ]; then
-    PASSWORD=--password=$PASSWORD
-fi
-  
-pushd ..
-echo "downloading database from webserver"
-scp -P 22 communtu@communtu.org:/home/communtu/web2.0/db.backup.gz .
-
-echo "updating your local database"
-gunzip -c db.backup.gz | mysql -u root -p communtu $PASSWORD
-echo "import complete"
-echo "delete the gz file"
-sleep 5
-rm db.backup.gz
-popd
