@@ -6,3 +6,4 @@ nbproject
 config/database.yml
 secret
 debs/communtu-*
+db.backup.gz

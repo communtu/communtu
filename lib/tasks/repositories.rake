@@ -134,4 +134,29 @@ namespace :livecd do
       end
     end
   end
+
+  desc 'Count new livecd-downloads from yesterday'
+  task :counter => :environment do
+    Livecd.all.each do |cd|
+      cd.published = cd.bundles_published?
+      cd.save
+    end
+    date = Date.yesterday.strftime("%d/%b/%Y")
+    puts date
+    Dir.glob("/var/log/apache2/*-communtu.log").each do |file|
+      IO.popen("#{file}").each do |line|
+        dateline = line.scan(/*[#{date}*/).flatten[0]
+        cdname = dateline.scan(/.*\/isos\/(.*).iso.*/).flatten[0]
+        if !cdname.nil?
+          puts cdname
+          Livecd.all.select{|cd| cd.fullname == cdname}.each do |cd|
+            cd.downloaded += 1
+            cd.save
+            puts cd.name
+          end
+        end
+      end
+    end
+  end
+
 end
