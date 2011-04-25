@@ -80,7 +80,9 @@ class HomeController < ApplicationController
       elsif params[:discuss] == "1"
          system "echo \"\" | mail -s \"discuss\" -c info@toddy-franz.de -a \"FROM: #{current_user.email}\" communtu-discuss-en+subscribe@googlegroups.com &"
          flash[:notice] = t(:thanks_for_order)
-      end                                        
+      end
+
+      @infos = Info.find(:all, :conditions => ['created_at > ?', Date.today-365], :order => 'created_at DESC' )
   end
 
   def donate
