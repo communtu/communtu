@@ -8,20 +8,21 @@
         <td colspan="2"><hr /></td>
     </tr>
     <tr>
-        <td><%= link_to(image_tag("/images/64x64/cd.png", :height => 64, :width => 64, :title =>t(:create_your_livedvd), :alt=>t(:create_your_livedvd), :border => "0"), "/download/selection?path=cd") %></td>
+        <td><%= link_to(image_tag("/images/64x64/usb.png", :height => 64, :width => 64, :title =>t(:create_your_usb), :alt=>t(:create_your_usb), :border => "0"), "/download/selection?path=usb") %></td>
 
-        <td><%= t(:make_your_livedvd) %> <%= link_to(t(:continue), "/download/selection?path=cd") %></td>
+        <td><%= t(:make_your_usb) %> <%= link_to(t(:continue), "/download/selection?path=usb") %></td>
     </tr>
-    
+
     <tr>
         <td colspan="2"><hr /></td>
     </tr>
 
     <tr>
-        <td><%= link_to(image_tag("/images/64x64/usb.png", :height => 64, :width => 64, :title =>t(:create_your_usb), :alt=>t(:create_your_usb), :border => "0"), "/download/selection?path=usb") %></td>
+        <td><%= link_to(image_tag("/images/64x64/cd.png", :height => 64, :width => 64, :title =>t(:create_your_livedvd), :alt=>t(:create_your_livedvd), :border => "0"), "/download/selection?path=cd") %></td>
 
-        <td><%= t(:make_your_usb) %> <%= link_to(t(:continue), "/download/selection?path=usb") %></td>
+        <td><%= t(:make_your_livedvd) %> <%= link_to(t(:continue), "/download/selection?path=cd") %></td>
     </tr>
+    
 
     <tr>
         <td colspan="2"><hr /></td>

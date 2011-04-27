@@ -198,7 +198,7 @@ de:
   download: herunterladen
   download_area: Download-Bereich
   downloads: Downloads
-  easy_install: Einfache Installationsmöglichkeiten für Ubuntu
+  easy_install: "Deine Wege zu Ubuntu:"
   edit: Bearbeiten
   edit_architecture: Architektur bearbeiten
   edit_press_archiv: Pressearchiv bearbeiten
@@ -227,7 +227,8 @@ de:
   go_to_download: Gehe zur Downloadseite
   gpg_key: 'GPG Schlüssel (optional): '
   guest: Gast
-  headline: macht Ubuntu-Installationen einfach
+#  headline: macht Ubuntu-Installationen einfach
+  headline: Ubuntu installieren leicht gemacht
   health_status: Gesundheitsstatus
   hello: Herzlich Willkommen
   hello_simple: Hallo
@@ -316,13 +317,13 @@ de:
   login: Login
   login_small: einem existierenden Benutzerkonto einloggen
   mailinglist: 'Mailinglisten'
-  make_a_systemupgrade: Du möchtest ein System-Upgrade machen oder deine interessanten Programme einbringen? Dann schau <a href="http://communtu.wordpress.com/2009/09/16/mit-communtu-ein-systemupgrade-durchfuhren/">wie einfach das geht</a> und lade deine Paketliste bei Communtu hoch.
+  make_a_systemupgrade: Du möchtest ein <b>System-Upgrade</b> machen oder deine interessanten <b>Programme einbringen</b>? Dann schau <a href="http://communtu.wordpress.com/2009/09/16/mit-communtu-ein-systemupgrade-durchfuhren/">wie einfach das geht</a> und lade deine Paketliste bei Communtu hoch.
   make_distribution_final: Distribution als stabil freigeben
   make_distribution_visible: Distribution sichtbar machen
   make_your_bundle: Erstelle dir ein Bündel zum System-Upgrade
-  make_your_livedvd: Du hast noch kein Ubuntu installiert. Dann wähle hier deine Bündel aus und brenne dir eine CD oder DVD, damit du sie als Live-System oder zur Installation nutzen kannst.
-  make_your_livedvd_or_usb: Du hast noch kein Ubuntu installiert. Dann wähle hier deine Bündel aus und brenne dir eine CD oder DVD oder erstelle einen USB-Stick, damit du sie als Live-System oder zur Installation nutzen kannst.
-  make_your_usb: Du kannst auch Bündel auswählen und daraus einen Live-USB-Stick erstellen.
+  make_your_livedvd: ... oder brenne dir eine CD oder DVD.
+  make_your_livedvd_or_usb: Du hast noch kein Ubuntu installiert. Hier bekommst du das <b>Betriebssystem Ubuntu</b>, und zwar gleich <b>mit der Software, die du brauchst</b>.
+  make_your_usb: Du hast noch kein Ubuntu installiert. Hier bekommst du das <b>Betriebssystem Ubuntu</b> zum Ausprobieren (als Live-System) oder zur Installation auf deinem Rechner. Und zwar gleich <b>mit der Software, die du brauchst</b>. Dazu wähle hier deine Software-Bündel aus und erstelle dir anschließend einen USB-Stick...
   match_ubuntu: Ubuntu-Linux an die individuellen Bedürfnisse anpassen
   match_with_communtu: Communtu - gemeinsam Ubuntu-Linux an individuelle Bedürfnisse anpassen
   metacart_choose: Füge Programme zu deinem Bündel hinzu.
@@ -427,7 +428,7 @@ de:
   save_selection: Auswahl speichern
   search: suchen
   search_package: Paket suchen
-  search_programs_bundles: Du hast bereits ein Ubuntu installiert und suchst jetzt passende Programme? Hier kannst du deine Interessengebiete eingeben und passende vorkonfigurierte Programmbündel downloaden.
+  search_programs_bundles: Du hast bereits ein Ubuntu installiert und suchst jetzt passende Programme? Hier kannst du deine Interessengebiete eingeben und <b>passende vorkonfigurierte Programmbündel downloaden</b>.
   security_type: 'Sicherheitstyp:'
   select_default_bundles: Standard-Bündel für {{category}} auswählen
   senden: Abschicken
@@ -923,7 +924,7 @@ de:
   view_user_profiles__profile_data_7: Wie stelle ich die Version fest?
   view_user_profiles__profile_data_8: 'Über den Browser festgestellte Version: '
   view_user_profiles__profile_data_9: Hier kannst du einstellen, wie sicher bzw. komfortabel deine Installationsquellen sein sollen
-  view_user_profiles__profile_rating_0: "Softwareauswahl: Programmbündel wählen"
+  view_user_profiles__profile_rating_0: "Software zusammenstellen - Programmbündel wählen"
   view_user_profiles__profile_rating_1: Rechts findest du die Details zur links ausgewählten Kategorie.
   view_user_profiles__sources_0: Quellen für die zu installierenden Programme
   view_user_profiles__sources_1: Hier werden die zu installierenden Programme und Pakete nach den zugehörigen Quellen sortiert aufgelistet, so dass du auch sehen kannst, weshalb die jeweiligen Quellen hinzugefügt werden.
