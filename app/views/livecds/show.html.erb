@@ -48,7 +48,7 @@
       <%= change_date_time(@cd.updated_at).to_s %></p>
   <ul>
     <li><%= link_to t(:iso_image), @cd.iso_url %></li>
-    <% if is_admin? %>
+    <% if is_power_user? %>
       <% if session[:vm_cd]!=@cd.id %>
         <li><%= link_to t(:start_vm), :action => 'start_vm', :id => @cd.id %></li>
       <% else %>
