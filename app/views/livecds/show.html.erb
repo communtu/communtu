@@ -52,7 +52,8 @@
       <% if session[:vm_cd]!=@cd.id %>
         <li><%= link_to t(:start_vm), :action => 'start_vm', :id => @cd.id %></li>
       <% else %>
-        <li><%= t(:vm_running_under) %> <%= link_to "vnc://communtu.org:#{session[:vm_vnc]}", "vnc://communtu.org:#{session[:vm_vnc]}" %>
+	     <% vnc = "vnc://#{request.env['SERVER_NAME']}:#{session[:vm_vnc]}" %>
+        <li><%= t(:vm_running_under) %> <%= link_to vnc, vnc %>
             &nbsp; &nbsp;<%= link_to t(:stop_vm), :action => 'stop_vm', :id => @cd.id %></li>
       <% end %>
     <% end %>

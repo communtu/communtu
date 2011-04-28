@@ -438,13 +438,13 @@ de:
   sources: Quellen
   spam_user_delete: Alle Spam-User gelöscht.
   start: Start
-  start_vm: Virtuelle Maschine starten
+  start_vm: LiveCD online ausprobieren
   start_vm_instructions: 'So kannst du dich in die virtuelle Maschine einloggen (bitte etwas warten, bis die deb-Files kopiert wurden):'
   start_vm_with_livecd_basis: Virtuelle Maschine auf Basis der LiveCD-Einstellungen starten (Zur Fehlersuche)
   stars_popcon: Die Sterne sagen aus, wie stark dieses Programm von den bisherigen Ubuntu Nutzern installiert und benutzt wurde.  
   statistics: Aufrufstatistik
   steps_for_distribution_setup: Schritte für das Einrichten einer neuen Distribution (bitte auf admin-System durchführen)
-  stop_vm: Virtuelle Maschine stoppen
+  stop_vm: Ausführung der LiveCD stoppen
   subject_with_colon: 'Betreff: '
   subject_without_colon: Betreff
   subtype: 'Subtyp:'
@@ -971,10 +971,13 @@ de:
   view_users_show_8: Nachrichten
   view_videos_edit_0: Video bearbeiten
   view_videos_show_0: 'Url:'
-  vm_active_session: Du hast bereits eine virtuelle Maschine gestartet; bitte diese erst stoppen.
+  vm_active_session: Du hast bereits eine virtuelle Maschine gestartet; bitte diese erst {{stop}}.
   vm_no_iso_found: "Die virtuelle Maschine kann nicht gestartet werden: es wurde kein Iso-Abbild gefunden"
+  vm_no_space: "Nicht genügend Platz auf dem Server, um eine virtuelle Maschine zu starten"
+  vm_no_vnc: Kein VNC-Port gefunden
   vm_running: virtuelle Maschine läuft
   vm_running_under: 'virtuelle Maschine läuft unter: '
+  vm_stop: stoppen
   vm_too_much_cpu_load: "Die virtuelle Maschine kann nicht gestartet werden: zu hohe Server-Auslastung"
   wait_for_debs: auf Bau der Metapakete warten
   wait_for_email: Auf Email warten

@@ -364,7 +364,11 @@ class Livecd < ActiveRecord::Base
   end
 
   def self.vnc(dom)
-    dom.xml_desc.scan(/graphics.*port='[0-9]+/)[0].scan(/[0-9]+/)
+    s = dom.xml_desc.scan(/graphics.*port='[0-9]+/)[0]
+    if s.nil? then
+      return I18n.t(:vm_no_vnc)
+    end
+    s.scan(/[0-9]+/)[0]
   end
   
   def vm_name(user)
@@ -374,14 +378,15 @@ class Livecd < ActiveRecord::Base
   def start_vm(user)
     # only proceed if the iso image is present, as basis of the VM
     if !File.exists?(self.iso_image)
-      return I18n.t("vm_no_iso_found")
+      return I18n.t(:vm_no_iso_found)
     end
 
     # check for cpu load and available memory 
     cpu_idle = IO.popen("top -b -n 1 |grep Cpu",&:read).scan(/[0-9.]*%id/)[0].to_i
-    free = IO.popen("free -m",&:read).scan(/buffers.cache:[ 0-9]*/)[0].split(" ")[-1].to_i
-    if cpu_idle<20 or free<600
-      return I18n.t("vm_too_much_cpu_load")
+    free = IO.popen("free -k",&:read).scan(/buffers.cache:[ 0-9]*/)[0].split(" ")[-1].to_i
+    mem = SETTINGS['vm_mem_size']
+    if cpu_idle<20 or free<2*mem
+      return I18n.t(:vm_too_much_cpu_load)
     end
     # todo: generalise to other servers; check for free space using conn.node_free_memory
 
@@ -395,14 +400,18 @@ class Livecd < ActiveRecord::Base
     end  
     if !dom.nil?
       conn.close
-      return vnc(dom)
+      return Livecd.vnc(dom)
     end
     
     # create the guest disk
     disk = SETTINGS['vm_path']+"/"+name+".qcow2"
     vm_hd_size = SETTINGS['vm_hd_size']
-    system "rm -f qcow2 #{disk}; qemu-img create -f qcow2 #{disk} #{vm_hd_size}; chmod +w #{disk}"
-    
+    if !(system "rm -f qcow2 #{disk}; qemu-img create -f qcow2 #{disk} #{vm_hd_size}")
+      return I18n.t(:vm_no_space)
+      conn.close
+    end    
+    #system "chmod +w #{disk}"
+
     # translate architecture to libvirt format
     arch = case self.architecture.name
         when "i386" then "i686"
@@ -410,7 +419,6 @@ class Livecd < ActiveRecord::Base
       end
     
     # the XML that describes the virtual machine
-    mem = SETTINGS['vm_mem_size']
     new_dom_xml = <<EOF
     <domain type='kvm'>
       <name>#{name}</name>
@@ -472,7 +480,7 @@ EOF
       return "VM error: #{err.to_s} <br>#{log}"
     end  
     conn.close
-    return vnc(dom)
+    return Livecd.vnc(dom)
   end
 
   def stop_vm(user)
