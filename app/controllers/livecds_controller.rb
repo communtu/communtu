@@ -75,7 +75,7 @@ class LivecdsController < ApplicationController
       else
         session[:vm_vnc] = msg
         session[:vm_cd] = @cd.id
-        redirect_to "vnc://#{request.env['SERVER_NAME']}:#{session[:vm_vnc]}"
+        redirect_to "vnc://#{request.env['HTTP_X_FORWARDED_HOST']}:#{session[:vm_vnc]}"
         return
       end  
     end  
