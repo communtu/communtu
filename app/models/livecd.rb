@@ -45,6 +45,7 @@
 # vm_pid: process id of virtual machine (when testing liveCD via vnc)
 
 require "lib/utils.rb"
+require 'libvirt'
 
 class Livecd < ActiveRecord::Base
   belongs_to :distribution
@@ -362,33 +363,131 @@ class Livecd < ActiveRecord::Base
     return ""
   end
 
-  def generate_hda
-    tmpfile = IO.popen("mktemp",&:read).chomp
-    self.vm_hda = SETTINGS['iso_path']+tmpfile
-    self.save
-    system "qemu-img create #{self.vm_hda} 5G"
+  def self.vnc(dom)
+    dom.xml_desc.scan(/graphics.*port='[0-9]+/)[0].scan(/[0-9]+/)
   end
-
-  def start_vm
-    if self.vm_pid.nil?
-      self.vm_pid = fork do
-        ActiveRecord::Base.connection.reconnect!
-        self.generate_hda
-        exec "kvm -hda #{self.vm_hda} -cdrom #{self.iso_image} -m 1000 -vnc :1"
-      end
-      ActiveRecord::Base.connection.reconnect!
-      self.save
+  
+  def vm_name(user)
+    "cd_#{self.id}_user_#{user.id}"
+  end
+  
+  def start_vm(user)
+    # only proceed if the iso image is present, as basis of the VM
+    if !File.exists?(self.iso_image)
+      return I18n.t("vm_no_iso_found")
     end
+
+    # check for cpu load and available memory 
+    cpu_idle = IO.popen("top -b -n 1 |grep Cpu",&:read).scan(/[0-9.]*%id/)[0].to_i
+    free = IO.popen("free -m",&:read).scan(/buffers.cache:[ 0-9]*/)[0].split(" ")[-1].to_i
+    if cpu_idle<20 or free<600
+      return I18n.t("vm_too_much_cpu_load")
+    end
+    # todo: generalise to other servers; check for free space using conn.node_free_memory
+
+    # has the vm already been created?
+    conn = Libvirt::open("qemu:///system") # TODO: generalise to other servers
+    name = vm_name(user)
+    dom = begin
+      conn.lookup_domain_by_name(name)
+    rescue
+      nil
+    end  
+    if !dom.nil?
+      conn.close
+      return vnc(dom)
+    end
+    
+    # create the guest disk
+    disk = SETTINGS['vm_path']+"/"+name+".qcow2"
+    vm_hd_size = SETTINGS['vm_hd_size']
+    system "rm -f qcow2 #{disk}; qemu-img create -f qcow2 #{disk} #{vm_hd_size}; chmod +w #{disk}"
+    
+    # translate architecture to libvirt format
+    arch = case self.architecture.name
+        when "i386" then "i686"
+        when "amd64" then "x86_64"
+      end
+    
+    # the XML that describes the virtual machine
+    mem = SETTINGS['vm_mem_size']
+    new_dom_xml = <<EOF
+    <domain type='kvm'>
+      <name>#{name}</name>
+      <memory>#{mem}</memory>
+      <currentMemory>#{mem}</currentMemory>
+      <vcpu>1</vcpu>
+      <os>
+        <type arch='#{arch}'>hvm</type>
+        <boot dev='cdrom'/>
+      </os>
+      <features>
+        <acpi/>
+        <apic/>
+        <pae/>
+      </features>
+      <clock offset='utc'/>
+      <on_poweroff>destroy</on_poweroff>
+      <on_reboot>restart</on_reboot>
+      <on_crash>restart</on_crash>
+      <devices>
+        <disk type='file' device='disk'>
+          <driver name='qemu' type='qcow2'/>
+          <source file='#{disk}'/>
+          <target dev='vda' bus='virtio'/>
+        </disk>
+        <disk type='file' device='cdrom'>
+          <driver name='qemu' type='raw'/>
+          <source file='#{self.iso_image}'/>
+          <target dev='hdc' bus='ide'/>
+          <readonly/>
+        </disk>
+        <interface type='network'>
+          <source network='default'/>
+          <target dev='vnet0'/>
+          <model type='virtio'/>
+        </interface>
+        <serial type='pty'>
+          <target port='0'/>
+        </serial>
+        <console type='pty'>
+          <target port='0'/>
+        </console>
+        <input type='mouse' bus='ps2'/>
+        <graphics type='vnc' port='-1' autoport='yes' keymap='en-us'/>
+        <video>
+          <model type='cirrus' vram='9216' heads='1'/>
+        </video>
+      </devices>
+    </domain>
+EOF
+
+    # define and start domain (vm) 
+    begin
+      dom = conn.define_domain_xml(new_dom_xml)
+      dom.create
+    rescue StandardError => err
+      conn.close
+      log = IO.popen("sudo libvirt-log #{name}",&:read)
+      return "VM error: #{err.to_s} <br>#{log}"
+    end  
+    conn.close
+    return vnc(dom)
   end
 
-  def stop_vm
-    system "kill #{self.vm_pid}"
-    sleep 1
-    system "kill -9 #{self.vm_pid}"
-    system "rm #{self.vm_hda}"
-    self.vm_pid = nil
-    self.vm_hda = nil
-    self.save
+  def stop_vm(user)
+    conn = Libvirt::open("qemu:///system") # TODO: generalise to other servers
+    name = vm_name(user)
+    dom = begin
+      conn.lookup_domain_by_name(name)
+    rescue
+      nil
+    end  
+    if !dom.nil?
+      dom.destroy # stop domain
+      dom.undefine # delete domain  
+    end  
+    conn.close
   end
 
   def start_vm_basis

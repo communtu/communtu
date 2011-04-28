@@ -8,6 +8,12 @@ repo_key: D66AFBC0
 key_server: wwwkeys.de.pgp.net
 # path for storing isos (should contain enough free space)
 iso_path: /local/isos
+# path for storing "my ubuntu online" virtual machine images (should contain enough free space)
+vm_path: /local/isos
+# size of hard disk for "my ubuntu online" virtual machines
+vm_hd_size: 100M
+# size of memory for "my ubuntu online" virtual machines, in KB
+vm_hd_size: 350000
 # ports used for liveCD creation (the last two will be for admins)
 kvm_ports:
 - 2223

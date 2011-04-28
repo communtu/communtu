@@ -19,7 +19,7 @@
 
 
 # virtual machine, CD extraction and generation tools
-sudo apt-get install -y kvm kvm-pxe kpartx libdbd-sqlite3-perl genisoimage squashfs-tools python-software-properties
+sudo apt-get install -y virtinst kvm kvm-pxe kpartx libdbd-sqlite3-perl genisoimage squashfs-tools python-software-properties 
 sudo adduser $USER kvm
 
 # abbreviations for logging into test VM 

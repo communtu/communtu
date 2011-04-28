@@ -64,14 +64,28 @@ class LivecdsController < ApplicationController
   end
 
   def start_vm
-    @cd = Livecd.find(params[:id])
-    @cd.start_vm
+    if !session[:vm_vnc].nil?
+      flash[:error] = t("vm_active_session")
+    else
+      @cd = Livecd.find(params[:id])
+      msg = @cd.start_vm(current_user)
+      if msg.to_i == 0
+        flash[:error] = msg
+      else
+        session[:vm_vnc] = msg
+        session[:vm_cd] = @cd.id
+        redirect_to "vnc://communtu.org:#{session[:vm_vnc]}"
+        return
+      end  
+    end  
     redirect_to livecd_path(@cd)
   end
 
   def stop_vm
     @cd = Livecd.find(params[:id])
-    @cd.stop_vm
+    @cd.stop_vm(current_user)
+    session[:vm_vnc] = nil
+    session[:vm_cd] = nil
     redirect_to livecd_path(@cd)
   end
 

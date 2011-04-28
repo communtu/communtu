@@ -45,7 +45,7 @@ sudo apt-get install -y git-core
 sudo /etc/init.d/apache2 restart
 
 # rails
-sudo apt-get install -y ruby rdoc irb libyaml-ruby libzlib-ruby ri libopenssl-ruby sqlite3 libsqlite3-ruby rubygems mongrel
+sudo apt-get install -y ruby rdoc irb libyaml-ruby libzlib-ruby ri libopenssl-ruby sqlite3 libsqlite3-ruby rubygems mongrel libvirt-ruby
 sudo ln -s /usr/bin/gem1.8 /usr/bin/gem
 sudo ln -s /var/lib/gems/1.8/bin/rake /usr/bin/
 sudo gem update --system
@@ -116,6 +116,9 @@ rake db:repo:distributions
 
 # security updates
 sudo cp /home/$NEWUSERNAME/web2.0/communtu/script/security-updates /etc/cron.daily
+
+# sudoers
+script/install-sudoer libvirt-log $USER
 
 ## add the following to user's crontab
 script/add-to-crontab "0       5       *       *       *       /home/$NEWUSERNAME/web2.0/communtu/script/nightly-cron"

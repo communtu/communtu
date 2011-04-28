@@ -971,8 +971,11 @@ de:
   view_users_show_8: Nachrichten
   view_videos_edit_0: Video bearbeiten
   view_videos_show_0: 'Url:'
+  vm_active_session: Du hast bereits eine virtuelle Maschine gestartet; bitte diese erst stoppen.
+  vm_no_iso_found: "Die virtuelle Maschine kann nicht gestartet werden: es wurde kein Iso-Abbild gefunden"
   vm_running: virtuelle Maschine läuft
   vm_running_under: 'virtuelle Maschine läuft unter: '
+  vm_too_much_cpu_load: "Die virtuelle Maschine kann nicht gestartet werden: zu hohe Server-Auslastung"
   wait_for_debs: auf Bau der Metapakete warten
   wait_for_email: Auf Email warten
   wait_for_release: auf offizielles Ubuntu-Release warten
