@@ -199,11 +199,9 @@ release_lock $PORT
 # advantages:
 # - VMs can be started quickly
 # disadvantages:
-# - download of packages is slow (600 KB/s from the same server)
 # - completed CD must be copied into the main file system
 # alternatively, we could use normal mode
 # advantages:
-# - download of packages is fast
 # - completed CD can be directly created in main filesystem
 #   by running remaster script on the host, not inside the VM
 #   the VM disk image needs to be mounted
@@ -251,6 +249,7 @@ $SSH -p $PORT "cat /root/$UBUNTU_VERSION/edit/etc/resolv.conf"
 echo "*** adding new sources and keys, using $SOURCE_DEB"
 $SCP -P $PORT $SOURCE_DEB root@localhost:/root/$UBUNTU_VERSION/edit/
 SOURCE=`basename $SOURCE_DEB`
+$SSH -p $PORT "chroot /root/$UBUNTU_VERSION/edit apt-get install gdebi-core"
 $SSH -p $PORT "chroot /root/$UBUNTU_VERSION/edit gdebi -n $SOURCE"
 $SSH -p $PORT "rm /root/$UBUNTU_VERSION/edit/$SOURCE"
 sleep 15
