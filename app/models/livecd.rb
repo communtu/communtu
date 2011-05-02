@@ -407,7 +407,7 @@ class Livecd < ActiveRecord::Base
     disk = SETTINGS['vm_path']+"/"+name+".qcow2"
     vm_hd_size = SETTINGS['vm_hd_size']
     # keep old user data
-    if !File.exists(disk)
+    if !File.exists?(disk)
       if !(system "qemu-img create -f qcow2 #{disk} #{vm_hd_size}")
         return I18n.t(:vm_no_space)
         conn.close
