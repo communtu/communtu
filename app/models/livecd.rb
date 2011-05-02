@@ -465,7 +465,7 @@ class Livecd < ActiveRecord::Base
           <target port='0'/>
         </console>
         <input type='mouse' bus='ps2'/>
-        <graphics type='vnc' port='-1' autoport='yes' listen='0.0.0.0'/>
+        <graphics type='vnc' port='-1' autoport='yes' listen='0.0.0.0' keymap='#{I18n.locale}'/>
         <video>
           <model type='cirrus' vram='9216' heads='1'/>
         </video>
