@@ -45,7 +45,10 @@ sudo apt-get install -y git-core
 sudo /etc/init.d/apache2 restart
 
 # rails
-sudo apt-get install -y ruby rdoc irb libyaml-ruby libzlib-ruby ri libopenssl-ruby sqlite3 libsqlite3-ruby rubygems mongrel libvirt-ruby
+sudo apt-get install -y ruby rdoc irb libyaml-ruby libzlib-ruby ri libopenssl-ruby sqlite3 libsqlite3-ruby rubygems mongrel 
+sudo apt-add-repository ppa:brightbox/experimental
+sudo apt-get update
+sudo apt-get install -y libvirt-ruby
 sudo ln -s /usr/bin/gem1.8 /usr/bin/gem
 sudo ln -s /var/lib/gems/1.8/bin/rake /usr/bin/
 sudo gem update --system

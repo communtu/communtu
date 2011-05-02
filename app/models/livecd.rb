@@ -372,7 +372,7 @@ class Livecd < ActiveRecord::Base
   end
   
   def vm_name(user)
-    "cd_#{self.id}_user_#{user.id}"
+    "cd_#{self.name}_user_#{user.login}"
   end
   
   def start_vm(user)
@@ -406,9 +406,12 @@ class Livecd < ActiveRecord::Base
     # create the guest disk
     disk = SETTINGS['vm_path']+"/"+name+".qcow2"
     vm_hd_size = SETTINGS['vm_hd_size']
-    if !(system "rm -f qcow2 #{disk}; qemu-img create -f qcow2 #{disk} #{vm_hd_size}")
-      return I18n.t(:vm_no_space)
-      conn.close
+    # keep old user data
+    if !File.exists(disk)
+      if !(system "qemu-img create -f qcow2 #{disk} #{vm_hd_size}")
+        return I18n.t(:vm_no_space)
+        conn.close
+      end  
     end    
     #system "chmod +w #{disk}"
 
@@ -492,8 +495,11 @@ EOF
       nil
     end  
     if !dom.nil?
-      dom.destroy # stop domain
-      dom.undefine # delete domain  
+      begin
+        dom.destroy # stop domain
+        dom.undefine # delete domain  
+      rescue    
+      end
     end  
     conn.close
   end
