@@ -30,3 +30,5 @@ script/sync_repos
 script/check_debs
 # verify debian packages
 script/verify_debs
+# count livecd downloads
+script/livecd_counter
