@@ -87,7 +87,8 @@
 <%= link_to t(:stop_vm), :action => 'stop_vm', :id => @cd.id %></li>
       <% end %>
 -->
-
+<hr>
+<h3><%= t(:admin_interface)%></h3>
 <%= t(:start_vm_instructions) %>
 <pre>
 kvm -daemonize -drive file=/home/communtu/livecd/kvm/<%=@cd.smallversion%>.img,if=virtio,boot=on,snapshot=on -smp 4 -m 800 -nographic -redir tcp:2221::22

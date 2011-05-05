@@ -372,7 +372,7 @@ class Livecd < ActiveRecord::Base
   end
   
   def vm_name(user)
-    "cd_#{self.name}_user_#{user.login}"
+    "cd_#{self.id}_#{self.name}_user_#{user.login}"
   end
   
   def start_vm(user)

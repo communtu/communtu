@@ -9,6 +9,7 @@ de:
   add_sources: Quellen hinzufügen
   add_to_bundle: zum Bündel hinzufügen
   additional_sources: Zusätzliche Quellen, die hinzugefügt werden, weil bestimmte Quellen nicht in sich abgeschlossen sind
+  admin_interface_for_livecd: Administrator-Interface zum Debuggen der LiveCD-Erstellung
   advanced_user: Ich bin fortgeschrittener Benutzer und will auch unfertige Versionen von Ubuntu sehen.
   allgemeinbildung: Allgemeinbildung e.V.
   an: An
