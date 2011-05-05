@@ -21,7 +21,6 @@
 </noscript>
 
 <% if !@info.nil? &&  I18n.locale.to_s == "de" then %>
-  <h1><%=  t( :current_news)%></h1>
   <div class="info">
     <h1> <%= @info.header %> </h1>
     <p><%= @info.content %></p>
