@@ -88,7 +88,7 @@
       <% end %>
 -->
 <hr>
-<h3><%= t(:admin_interface)%></h3>
+<h3><%= t(:admin_interface_for_livecd)%></h3>
 <%= t(:start_vm_instructions) %>
 <pre>
 kvm -daemonize -drive file=/home/communtu/livecd/kvm/<%=@cd.smallversion%>.img,if=virtio,boot=on,snapshot=on -smp 4 -m 800 -nographic -redir tcp:2221::22
