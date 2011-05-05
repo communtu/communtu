@@ -173,13 +173,16 @@ msgstr ""
 msgid "There are two alternatives:"
 msgstr ""
 #: livecd_email_body_2
-msgid "If you have questions and suggestions, don't hesitate contacting us.\n\nWe hope you will have much fun with your Ubuntu.\n"
+msgid ""
 msgstr ""
 #: view_users_new_10
 msgid "your first name"
 msgstr ""
 #: view_user_profiles__installation_24
 msgid "Installation via metapackage"
+msgstr ""
+#: livecd_email_body_3
+msgid ""
 msgstr ""
 #: view_users_new_11
 msgid "your last name"
@@ -352,6 +355,12 @@ msgstr ""
 #: view_home_home_8
 msgid "<b>Search program</b> Here you can search for single Ubuntu-programs (packages)."
 msgstr ""
+#: vm_no_vnc
+msgid "No VNC port found"
+msgstr ""
+#: or
+msgid ""
+msgstr ""
 #: view_home_home_9
 msgid "<b>Ubuntu derivatives</b> is a small overview about Kubuntu, Xubuntu, Medibuntu, etc."
 msgstr ""
@@ -372,6 +381,9 @@ msgid "creation is in progress"
 msgstr ""
 #: oxygen_icon_legal_notice
 msgid "Some icons are from the Oxygen iconset http://www.oxygen-icons.org"
+msgstr ""
+#: livecd_email_body_link
+msgid "You can access the download folling this link:"
 msgstr ""
 #: view_home_impressum_11
 msgid "Participants of the Communtu-team (alphabetical order):"
@@ -477,6 +489,9 @@ msgid "copy repository"
 msgstr ""
 #: view_rating_new_comment_info
 msgid "Please enter a description to your rating. This is a <b>mandatory</b> step."
+msgstr ""
+#: vm_no_space
+msgid "Not enough free space on the server to start virtual machine."
 msgstr ""
 #: view_packages_new_0
 msgid "New package"
@@ -715,6 +730,9 @@ msgstr ""
 #: path
 msgid "Path:"
 msgstr ""
+#: livecd_email_body_footer
+msgid "Greetings,"
+msgstr ""
 #: failed_deb_generations
 msgid "Failed or running deb-generation"
 msgstr ""
@@ -773,7 +791,7 @@ msgstr ""
 msgid "We have a total of "
 msgstr ""
 #: easy_install
-msgid "Easy methods of installation for Ubuntu"
+msgid "Your ways to Ubuntu"
 msgstr ""
 #: view_users_new_1
 msgid "Here you have the possibility to register yourself."
@@ -1061,7 +1079,7 @@ msgstr ""
 msgid "Creating Live-CD/DVD"
 msgstr ""
 #: search_programs_bundles
-msgid "To which topic do you look for programs (office, graphics, ...)? Enter your fields of interest and pre-configured bundles can be downloaded."
+msgid "You already have Ubuntu installed and now you are looking for suitable programs to use? Enter your fields of interest and <b>pre-configured bundles can be downloaded</b>."
 msgstr ""
 #: view_user_profiles__profile_data_0
 msgid "Edit settings"
@@ -1613,7 +1631,7 @@ msgstr ""
 msgid "More information about keys and sources in the FAQ"
 msgstr ""
 #: make_your_livedvd_or_usb
-msgid "You don't have Ubuntu installed on your computer. Choose a bundle and create a Live CD or copy the image on a USB key, which then can be used as a Live system or you can install your computer with it."
+msgid "You don't have Ubuntu installed on your computer. Here you can download the <b>operating system Ubuntu</b> with the <b>software you need</b>."
 msgstr ""
 #: start_vm_with_livecd_basis
 msgid "Start virtual machine based on the Live-CD settings (for debugging)"
@@ -1801,6 +1819,9 @@ msgstr ""
 #: view_metapackages_finish_migrate_0
 msgid "All bundles were migrated from"
 msgstr ""
+#: livecd_email_body_footer_2
+msgid "Communtu team"
+msgstr ""
 #: view_passwords_new_2
 msgid "reset password"
 msgstr ""
@@ -1862,7 +1883,7 @@ msgstr ""
 msgid "admninistration section"
 msgstr ""
 #: stop_vm
-msgid "stop virtual machine"
+msgid "Stop Live-CD"
 msgstr ""
 #: bundles_needing_deb_generation
 msgid "Bundles that need to be recreated as metapackages."
@@ -1988,7 +2009,7 @@ msgstr ""
 msgid "Category-overview"
 msgstr ""
 #: make_your_usb
-msgid "You can also choose bundles and create a Live USB key from it."
+msgid "You don't have Ubuntu installed. You can download the <b>operating system Ubuntu</b> for testing (as a live system) or for installing it on your computer, with the <b>software you need</b>. Select your software bundes and create an iso image file from it..."
 msgstr ""
 #: view_packages__packagelist_1
 msgid "Programs&nbsp;only:"
@@ -2029,6 +2050,9 @@ msgstr ""
 #: livecd_email_failed
 msgid "Communtu: creation of Live-CD/DVD failed."
 msgstr ""
+#: vm_no_iso_found
+msgid "The virtual machine cannot be started, no iso image file found."
+msgstr ""
 #: usb_image
 msgid "USB-Image"
 msgstr ""
@@ -2036,7 +2060,7 @@ msgstr ""
 msgid "This function is not available for guests."
 msgstr ""
 #: livecd_email_body_failed
-msgid "Your ISO file {{name}} couldn't be created. We will solve the problem.\n\n"
+msgid "Your created ISO file {{name}} for a Live-CD/DVD or USB key couldn't be created. We will solve the problem."
 msgstr ""
 #: create_your_usb
 msgid "Create a USB key"
@@ -2294,7 +2318,7 @@ msgstr ""
 msgid "user-icon"
 msgstr ""
 #: headline
-msgid "eases Ubuntu installations"
+msgid "Installing Ubuntu has never been easier"
 msgstr ""
 #: first_sync_repos
 msgid "Please synchronise the repositories first. Normally, this is done automatically within one weak. Attention: it is only checked if anything is being synchronised at all, not if the process is finished."
@@ -2344,11 +2368,11 @@ msgstr ""
 #: controller_debs_2
 msgid "Deb updated."
 msgstr ""
-#: view_layouts_donate
-msgid "Donate"
-msgstr ""
 #: zombie_processes
 msgid "Zombie processes"
+msgstr ""
+#: view_layouts_donate
+msgid "Donate"
 msgstr ""
 #: view_home_faq_gnome_01
 msgid "You can find the Communtu sources under \"System -> Administration -> Software Sources -> Other Software\". They can also be deactivated here. "
@@ -2356,11 +2380,11 @@ msgstr ""
 #: view_mailbox_show_3
 msgid "received"
 msgstr ""
-#: view_home_faq_gnome_02
-msgid "To reach the package manager Synaptic you navigate to \"System -> Administration -> Synaptic Package Manager\". In the lower left part you click on \"Origin\". In the list above search for \"packages.communtu.org\" and click on it. In the right part of the window you will now see all metapackages available at Communtu. To remove a metapackage from your system you make a right click on it and choose \"Mark for Removal\". With a click on \"Apply\" it will be uninstalled."
-msgstr ""
 #: wait_for_release
 msgid "wait for official Ubuntu release"
+msgstr ""
+#: view_home_faq_gnome_02
+msgid "To reach the package manager Synaptic you navigate to \"System -> Administration -> Synaptic Package Manager\". In the lower left part you click on \"Origin\". In the list above search for \"packages.communtu.org\" and click on it. In the right part of the window you will now see all metapackages available at Communtu. To remove a metapackage from your system you make a right click on it and choose \"Mark for Removal\". With a click on \"Apply\" it will be uninstalled."
 msgstr ""
 #: view_mailbox_show_5
 msgid "You do not have any messages in your inbox."
@@ -2456,7 +2480,7 @@ msgstr ""
 msgid "Subject must not be empty."
 msgstr ""
 #: make_your_livedvd
-msgid "You don't have Ubuntu installed on your computer. Then choose a bundle and burn the ISO file onto an empty CD or DVD so you can test it as a Live CD or install it onto your computer."
+msgid "... or burn it to a CD or DVD."
 msgstr ""
 #: untested_bundle
 msgid "Untested bundles:"
@@ -2501,10 +2525,10 @@ msgstr ""
 msgid "Missing debs for bundle:"
 msgstr ""
 #: start_vm
-msgid "start virtual machine"
+msgid "Try out Live-CD online"
 msgstr ""
 #: view_user_profiles__profile_rating_0
-msgid "Software selection: choose bundle"
+msgid "Software selection - choose programbundle"
 msgstr ""
 #: model_package_1
 msgid "free+proprietary"
@@ -2528,7 +2552,7 @@ msgstr ""
 msgid "28203 Bremen\nGermany"
 msgstr ""
 #: livecd_email_body
-msgid "The image you created at our site for creating a Live-CD/DVD or USB key has been finished!\n\nYou can download the image file by following this link:"
+msgid "The image you created at our site for creating a Live-CD/DVD or USB key has been finished!"
 msgstr ""
 #: additional_sources
 msgid "Additional sources which will be added as some sources are not completed in themselves"
@@ -2599,6 +2623,9 @@ msgstr ""
 #: lib_system_0
 msgid "You need to be logged in to use this feature. Using this feature is also possible as a guest, logging in as guest is possible with the \"Guest\"-link in the top right corner."
 msgstr ""
+#: view_metapackages_show_modified
+msgid "This bundle contains changes."
+msgstr ""
 #: info_new
 msgid "Create new news message"
 msgstr ""
@@ -2610,9 +2637,6 @@ msgid "You are not privileged to do this."
 msgstr ""
 #: controller_derivatives_1
 msgid "Derivative created."
-msgstr ""
-#: view_metapackages_show_modified
-msgid "This bundle contains changes."
 msgstr ""
 #: lib_system_2
 msgid "http://www.communtu.de"
@@ -2722,6 +2746,9 @@ msgstr ""
 #: view_home_home_20
 msgid " to create a new user or"
 msgstr ""
+#: vm_stop
+msgid "stop"
+msgstr ""
 #: security_type
 msgid "Security type:"
 msgstr ""
@@ -2751,6 +2778,9 @@ msgid "To the imprint"
 msgstr ""
 #: statistics
 msgid "View statistics"
+msgstr ""
+#: vm_active_session
+msgid "You already have a running virtual machine, please {{stop}} that one first."
 msgstr ""
 #: view_layouts_application_11
 msgid "Guestsession"
@@ -2798,7 +2828,7 @@ msgstr ""
 msgid "With the Live-CD you can test the software you have chosen and install the system with the previous made software choice. For this, an ISO file ({{cdimage_link}}) is created which you can burn to an empty CD-R. The creation of the image takes a while. You will be informed automatically when your image has been created. For this, a valid e-mail address is required to be entered in your profile."
 msgstr ""
 #: make_a_systemupgrade
-msgid "You want to upgrade your system or bring some interesting programs in? Take a look <a href=\"http://encommuntu.wordpress.com/2009/09/16/how-to-use-communtu-for-a-systems-upgrade/\">here how easy it is</a> and upload your package list to Communtu."
+msgid "You want to <b>upgrade your system</b> or bring some interesting programs in? Take a look <a href=\"http://encommuntu.wordpress.com/2009/09/16/how-to-use-communtu-for-a-systems-upgrade/\">here how easy it is</a> and upload your package list to Communtu."
 msgstr ""
 #: controller_metapackages_not_changed
 msgid "This bundle is already created as a metapackage and uploaded."
@@ -2865,6 +2895,9 @@ msgid "new repository"
 msgstr ""
 #: view_home_home_33
 msgid "Do you want to know more about Communtu? Do you have suggestions or questions? We are looking forward to be in touch with you."
+msgstr ""
+#: vm_too_much_cpu_load
+msgid "The virtual machine cannot be created: our server is busy."
 msgstr ""
 #: view_distributions_show_0
 msgid "Repositories:"
