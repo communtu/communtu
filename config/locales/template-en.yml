@@ -53,13 +53,10 @@ en:
   view_user_profiles__installation_21: Installation of the metapackages. Please add the sources first.
   name_of_livecd: "Name of the Live-CD/DVD:"
   view_user_profiles__installation_23: "There are two alternatives:"
-  livecd_email_body_2: |
-    If you have questions and suggestions, don't hesitate contacting us.
-    
-    We hope you will have much fun with your Ubuntu.
-
+  livecd_email_body_2: ""
   view_users_new_10: your first name
   view_user_profiles__installation_24: Installation via metapackage
+  livecd_email_body_3: ""
   view_users_new_11: your last name
   controller_users_10: User deleted
   view_user_profiles__installation_25: Installatin via apturl
@@ -117,6 +114,8 @@ en:
   view_home_home_7: <b>Administrate bundles</b> Did you have good experiences with the programs? Bundle them thematically or take a look at existing bundles.
   view_metapackages_show_3: Back
   view_home_home_8: <b>Search program</b> Here you can search for single Ubuntu-programs (packages).
+  vm_no_vnc: No VNC port found
+  or: ""
   view_home_home_9: <b>Ubuntu derivatives</b> is a small overview about Kubuntu, Xubuntu, Medibuntu, etc.
   updatedPackages: "Changed packages:"
   about_us: About us
@@ -124,6 +123,7 @@ en:
   no1: "no"
   creation_in_progress: creation is in progress
   oxygen_icon_legal_notice: Some icons are from the Oxygen iconset http://www.oxygen-icons.org
+  livecd_email_body_link: "You can access the download folling this link:"
   view_home_impressum_11: "Participants of the Communtu-team (alphabetical order):"
   view_rating_show_title_no_ratings: no user rating
   view_metapackages_show_8: "Rating: "
@@ -159,6 +159,7 @@ en:
   not_accepted: The entered e-mail address contains forbidden characters or is not entered completely.
   view_repositories_migrate_1: copy repository
   view_rating_new_comment_info: Please enter a description to your rating. This is a <b>mandatory</b> step.
+  vm_no_space: Not enough free space on the server to start virtual machine.
   view_packages_new_0: New package
   view_users__mailbox_list_3: "sent messages "
   view_repositories_migrate_2: " to distribution"
@@ -242,6 +243,7 @@ en:
 
   lib_utils_0: "The followong system-command failed:"
   path: "Path:"
+  livecd_email_body_footer: Greetings,
   failed_deb_generations: Failed or running deb-generation
   view_home_about_8: After clicking on "Save and choose packages" you can get a detailed overview of the installed bundles and programs and the possibility to change the pre-made selections. In the case you don't have the time or energy to choose the packages in detail, just click on "Save". This leads you to the installation page. There you will find a button which starts the installation process. This takes some time because the applications have to be downloaded from the internet and installed on your computer. When finished, you have an all-round Ubuntu-PC!
   passwd: Password
@@ -261,7 +263,7 @@ en:
   spam_user_delete: All spam users deleted.
   search: search
   view_users_index_1: "We have a total of "
-  easy_install: Easy methods of installation for Ubuntu
+  easy_install: Your ways to Ubuntu
   view_users_new_1: Here you have the possibility to register yourself.
   view_home_derivatives_25: http://en.wikipedia.org/wiki/Xfce
   view_users_index_2: " registered users."
@@ -373,7 +375,7 @@ en:
   view_home_derivatives_43: " - based on E17. 2D-effects even without a fast graphic card."
   view_home_faq_03: How do I install a bundle?
   cd_being_created: Creating Live-CD/DVD
-  search_programs_bundles: To which topic do you look for programs (office, graphics, ...)? Enter your fields of interest and pre-configured bundles can be downloaded.
+  search_programs_bundles: You already have Ubuntu installed and now you are looking for suitable programs to use? Enter your fields of interest and <b>pre-configured bundles can be downloaded</b>.
   view_user_profiles__profile_data_0: Edit settings
   view_home_news_17: Go to the blog
   view_home_derivatives_44: " - minimalist and fast version of Ubuntu for older PCs."
@@ -567,7 +569,7 @@ en:
   not_logged_in: You are currently not logged in. Please click on "log in" above.
   controller_users_2: An error occured while registering.
   more_about_sources: More information about keys and sources in the FAQ
-  make_your_livedvd_or_usb: You don't have Ubuntu installed on your computer. Choose a bundle and create a Live CD or copy the image on a USB key, which then can be used as a Live system or you can install your computer with it.
+  make_your_livedvd_or_usb: You don't have Ubuntu installed on your computer. Here you can download the <b>operating system Ubuntu</b> with the <b>software you need</b>.
   start_vm_with_livecd_basis: Start virtual machine based on the Live-CD settings (for debugging)
   view_sent_index_3: Date
   controller_users_3: You have been logged in as {{anonymous_user}} with the password {{anonymous_user}}. If applicable click on the username {{anonymous_user}} in the above-right corner to change the account into an permanent account, otherwise the account will be deleted after one day.
@@ -630,6 +632,7 @@ en:
   view_passwords_new_1: "    Which e-mail-address did you enter when you created the account?"
   iso_howto: You can download an ISO file following the link. If you use Ubuntu, you can use {{brasero}} or {{k3b}} to burn the image. If you use Microsoft Windows there are several programs for burning CDs and DVDs. Please chose an option similar to "Burn image" or "Burn ISO". If the ISO file is very large you need a DVD. <br /> Using the burned CD or DVD you can <a href="https://help.ubuntu.com/community/GraphicalInstall" target="_blank">install Ubuntu</a>.
   view_metapackages_finish_migrate_0: All bundles were migrated from
+  livecd_email_body_footer_2: Communtu team
   view_passwords_new_2: reset password
   view_metapackages_finish_migrate_1: " to"
   view_sent_new_3: "Message:"
@@ -653,7 +656,7 @@ en:
   view_metapackages_edit_2: Please use versions => 1.0 only for stable bundles. A version must always increase. 0.10 is higher than 0.9.
   add: add
   controller_admins_0: admninistration section
-  stop_vm: stop virtual machine
+  stop_vm: Stop Live-CD
   bundles_needing_deb_generation: Bundles that need to be recreated as metapackages.
   controller_repositories_2: Repository updated.
   controller_repositories_3: sources.list read.
@@ -695,7 +698,7 @@ en:
   save_selection: Save selection
   livecd_image: CD-Image
   view_categories_index_0: Category-overview
-  make_your_usb: You can also choose bundles and create a Live USB key from it.
+  make_your_usb: You don't have Ubuntu installed. You can download the <b>operating system Ubuntu</b> for testing (as a live system) or for installing it on your computer, with the <b>software you need</b>. Select your software bundes and create an iso image file from it...
   view_packages__packagelist_1: "Programs&nbsp;only:"
   eg: e.g.
   view_packages__packagelist_2: "Search:"
@@ -709,11 +712,10 @@ en:
   view_repositories_show_4: "Package-list for {{arch}}:"
   install_bundle: Installation of bundle {{name}}
   livecd_email_failed: "Communtu: creation of Live-CD/DVD failed."
+  vm_no_iso_found: The virtual machine cannot be started, no iso image file found.
   usb_image: USB-Image
   controller_application_0: This function is not available for guests.
-  livecd_email_body_failed: |+
-    Your ISO file {{name}} couldn't be created. We will solve the problem.
-    
+  livecd_email_body_failed: Your created ISO file {{name}} for a Live-CD/DVD or USB key couldn't be created. We will solve the problem.
   create_your_usb: Create a USB key
   being_created: Creating
   bundle_by_owner: Created bundles
@@ -799,7 +801,7 @@ en:
   create_your_livedvd: Create a Live-CD
   start: Start
   view_home_icons_20: user-icon
-  headline: eases Ubuntu installations
+  headline: Installing Ubuntu has never been easier
   first_sync_repos: "Please synchronise the repositories first. Normally, this is done automatically within one weak. Attention: it is only checked if anything is being synchronised at all, not if the process is finished."
   view_home_icons_22: " user-icon"
   email_with_colon: "E-Mail:"
@@ -818,13 +820,13 @@ en:
   controller_debs_2: Deb updated.
   view_layouts_donate: Donate
   zombie_processes: Zombie processes
-  view_home_faq_gnome_01: "You can find the Communtu sources under \"System -> Administration -> Software Sources -> Other Software\". They can also be deactivated here. "
   view_mailbox_show_3: received
+  view_home_faq_gnome_01: "You can find the Communtu sources under \"System -> Administration -> Software Sources -> Other Software\". They can also be deactivated here. "
   view_home_faq_gnome_02: To reach the package manager Synaptic you navigate to "System -> Administration -> Synaptic Package Manager". In the lower left part you click on "Origin". In the list above search for "packages.communtu.org" and click on it. In the right part of the window you will now see all metapackages available at Communtu. To remove a metapackage from your system you make a right click on it and choose "Mark for Removal". With a click on "Apply" it will be uninstalled.
   wait_for_release: wait for official Ubuntu release
-  view_mailbox_show_5: You do not have any messages in your inbox.
-  invalid_activation_code_entered: Invalid activation code entered.
   livecd_previous_cds: "ISO images (for Live-CDs/DVDs and USB keys) created so far:"
+  invalid_activation_code_entered: Invalid activation code entered.
+  view_mailbox_show_5: You do not have any messages in your inbox.
   create_livecd_title: How do I create a Live-CD?
   bundle_editor: bundle-editor
   migrate_repository: migrate repository
@@ -852,7 +854,7 @@ en:
   controller_suggestion_15: Install package
   controller_suggestion_16: The following packages will be installed
   we_want_you: We need you
-  make_your_livedvd: You don't have Ubuntu installed on your computer. Then choose a bundle and burn the ISO file onto an empty CD or DVD so you can test it as a Live CD or install it onto your computer.
+  make_your_livedvd: ... or burn it to a CD or DVD.
   controller_sent_0: Subject must not be empty.
   controller_sent_1: user does not exist
   bundel_editing: edit bundle
@@ -865,20 +867,17 @@ en:
   cannot_publish_bundle: "This bundle cannot be published, as it contains unpublished bundles: {{bundles}}"
   view_rating_show_title_ratings_count: (Based on {{votes}} rating(s))
   view_user_profiles__sources_0: Sources for the soon be installed programs
-  start_vm: start virtual machine
+  start_vm: Try out Live-CD online
   missing_debs_for_bundle: "Missing debs for bundle:"
   model_package_0: Free software
   view_user_profiles__sources_1: The soon be installed programs and packages are shown and ordered by the appropriate sources so you can see why some sources will be added.
   user_not_found: User not found.
   view_home_impressum_4: Bauernstr. 2
   model_package_1: free+proprietary
-  view_user_profiles__profile_rating_0: "Software selection: choose bundle"
+  view_user_profiles__profile_rating_0: Software selection - choose programbundle
   order_number: "Sort by number (smallest number first):"
   additional_sources: Additional sources which will be added as some sources are not completed in themselves
-  livecd_email_body: |-
-    The image you created at our site for creating a Live-CD/DVD or USB key has been finished!
-    
-    You can download the image file by following this link:
+  livecd_email_body: The image you created at our site for creating a Live-CD/DVD or USB key has been finished!
   view_home_impressum_5: |-
     28203 Bremen
     Germany
@@ -906,11 +905,11 @@ en:
   natur_geist_und_technik: "Natur, Geist und Technik - Verein zur F\xC3\xB6rderung der Allgemeinbildung e.V."
   link_community: http://ubuntuforums.org
   view_packages__search_0: Search for packages
-  view_metapackages_show_modified: This bundle contains changes.
   controller_derivatives_1: Derivative created.
   lib_system_1: You are not privileged to do this.
   view_distributions_edit_0: edit distribution
   info_new: Create new news message
+  view_metapackages_show_modified: This bundle contains changes.
   view_home_about_16: In order to use Communtu you need to register yourself. To do so, just click on the "Registration"-button in the menu above.
   controller_derivatives_2: Derivative updated.
   lib_system_2: http://www.communtu.de
@@ -950,6 +949,7 @@ en:
   inbox: Inbox
   view_home_home_21: "log "
   security_type: "Security type:"
+  vm_stop: stop
   view_home_home_22: "in, or "
   creation_successful: Creation was successful
   controller_categories_0: Categories
@@ -962,6 +962,7 @@ en:
   view_home_home_25: For questions concerning Communtu we have created a "FAQ".
   description: Description
   view_layouts_application_11: Guestsession
+  vm_active_session: You already have a running virtual machine, please {{stop}} that one first.
   description_for_description: Please enter a short presentation of your bundle to show for what tasks it is meant. After that, you can go into detail of some of the programs in your bundle.
   controller_categories_3: Category updated.
   view_home_home_26: You installed Ubuntu and now you are looking for programs which run with Ubuntu?
@@ -971,7 +972,7 @@ en:
   view_home_home_27: "Communtu helps you:"
   donation_purpose: "Purpose: Communtu"
   controller_metapackages_not_changed: This bundle is already created as a metapackage and uploaded.
-  make_a_systemupgrade: You want to upgrade your system or bring some interesting programs in? Take a look <a href="http://encommuntu.wordpress.com/2009/09/16/how-to-use-communtu-for-a-systems-upgrade/">here how easy it is</a> and upload your package list to Communtu.
+  make_a_systemupgrade: You want to <b>upgrade your system</b> or bring some interesting programs in? Take a look <a href="http://encommuntu.wordpress.com/2009/09/16/how-to-use-communtu-for-a-systems-upgrade/">here how easy it is</a> and upload your package list to Communtu.
   livecd_message: With the Live-CD you can test the software you have chosen and install the system with the previous made software choice. For this, an ISO file ({{cdimage_link}}) is created which you can burn to an empty CD-R. The creation of the image takes a while. You will be informed automatically when your image has been created. For this, a valid e-mail address is required to be entered in your profile.
   view_layouts_application_13: About Communtu
   view_sent_show_2: "Date:"
@@ -997,6 +998,7 @@ en:
   view_repositories_index_5: new repository
   view_layouts_application_20: Javascript is not activated! Please activate Javascript in your browser-settings.
   view_distributions_show_0: "Repositories:"
+  vm_too_much_cpu_load: "The virtual machine cannot be created: our server is busy."
   view_layouts_application_21: Communtu eases Ubuntu installations
   migrate: Migrate
   view_distributions_show_1: check everything

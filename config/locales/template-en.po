@@ -233,17 +233,8 @@ msgid "Es gibt zwei Alternativen:"
 msgstr "There are two alternatives:"
 
 #: livecd_email_body_2
-msgid ""
-"Bei Fragen und Anregungen bitten wir Dich bei uns zu melden.\n"
-"\n"
-"Wir hoffen, dass Du viel Spaß mit Deinem Ubuntu hast.\n"
-"\n"
-"Liebe Grüße,\n"
-"Dein Communtu-Team"
+msgid "Bei Fragen und Anregungen bitten wir Dich bei uns zu melden."
 msgstr ""
-"If you have questions and suggestions, don't hesitate contacting us.\n"
-"\n"
-"We hope you will have much fun with your Ubuntu.\n"
 
 #: view_users_new_11
 msgid "Dein Nachname"
@@ -252,6 +243,10 @@ msgstr "your last name"
 #: view_user_profiles__installation_24
 msgid "Installation über ein Metapaket"
 msgstr "Installation via metapackage"
+
+#: livecd_email_body_3
+msgid "Wir hoffen, dass Du viel Spaß mit Deinem Ubuntu hast."
+msgstr ""
 
 #: view_users_new_12
 msgid "(optional)"
@@ -473,9 +468,17 @@ msgstr "<b>Administrate bundles</b> Did you have good experiences with the progr
 msgid "Zurück"
 msgstr "Back"
 
+#: vm_no_vnc
+msgid "Kein VNC-Port gefunden"
+msgstr "No VNC port found"
+
 #: view_home_home_8
 msgid "<b>Programme suchen</b> Hier kannst du nach einzelnen Ubuntu-Programmen (Paketen) suchen."
 msgstr "<b>Search program</b> Here you can search for single Ubuntu-programs (packages)."
+
+#: or
+msgid "oder"
+msgstr ""
 
 #: view_home_home_9
 msgid "<b>Ubuntu-Derivate</b> bietet eine Übersicht über Kubuntu, Xubuntu, Medibuntu und wie sie alle heißen ..."
@@ -504,6 +507,10 @@ msgstr "creation is in progress"
 #: oxygen_icon_legal_notice
 msgid "Einige der Icons sind aus dem Oxygen-Iconset http://www.oxygen-icons.org"
 msgstr "Some icons are from the Oxygen iconset http://www.oxygen-icons.org"
+
+#: livecd_email_body_link
+msgid "Den Download kannst Du unter folgendem Link aufrufen: "
+msgstr "You can access the download folling this link:"
 
 #: view_rating_show_title_no_ratings
 msgid "noch keine User Bewertung"
@@ -632,6 +639,10 @@ msgstr "Mailbox"
 #: controller_metapackages_no_renaming
 msgid "Veröffentlichte Bündel können nicht umbenannt werden."
 msgstr "Released bundles cannot be renamed."
+
+#: vm_no_space
+msgid "Nicht genügend Platz auf dem Server, um eine virtuelle Maschine zu starten"
+msgstr "Not enough free space on the server to start virtual machine."
 
 #: view_repositories_migrate_1
 msgid "Kopiere Repository "
@@ -967,6 +978,10 @@ msgstr "The followong system-command failed:"
 msgid "Pfad:"
 msgstr "Path:"
 
+#: livecd_email_body_footer
+msgid "Liebe Grüße,"
+msgstr "Greetings,"
+
 #: failed_deb_generations
 msgid "Fehlgeschlagene oder laufende Deb-Generierungen"
 msgstr "Failed or running deb-generation"
@@ -1052,8 +1067,8 @@ msgid " angemeldete Benutzer."
 msgstr " registered users."
 
 #: easy_install
-msgid "Einfache Installationsmöglichkeiten für Ubuntu"
-msgstr "Easy methods of installation for Ubuntu"
+msgid "Deine Wege zu Ubuntu:"
+msgstr "Your ways to Ubuntu"
 
 #: view_home_derivatives_25
 msgid "http://wiki.ubuntuusers.de/Xfce"
@@ -1464,8 +1479,8 @@ msgid "Die LiveCD/DVD wird erstellt."
 msgstr "Creating Live-CD/DVD"
 
 #: search_programs_bundles
-msgid "Du hast bereits ein Ubuntu installiert und suchst jetzt passende Programme? Hier kannst du deine Interessengebiete eingeben und passende vorkonfigurierte Programmbündel downloaden."
-msgstr "To which topic do you look for programs (office, graphics, ...)? Enter your fields of interest and pre-configured bundles can be downloaded."
+msgid "Du hast bereits ein Ubuntu installiert und suchst jetzt passende Programme? Hier kannst du deine Interessengebiete eingeben und <b>passende vorkonfigurierte Programmbündel downloaden</b>."
+msgstr "You already have Ubuntu installed and now you are looking for suitable programs to use? Enter your fields of interest and <b>pre-configured bundles can be downloaded</b>."
 
 #: view_home_news_17
 msgid "Zum Blog"
@@ -2220,8 +2235,8 @@ msgid "Zeitpunkt"
 msgstr "Date"
 
 #: make_your_livedvd_or_usb
-msgid "Du hast noch kein Ubuntu installiert. Dann wähle hier deine Bündel aus und brenne dir eine CD oder DVD oder erstelle einen USB-Stick, damit du sie als Live-System oder zur Installation nutzen kannst."
-msgstr "You don't have Ubuntu installed on your computer. Choose a bundle and create a Live CD or copy the image on a USB key, which then can be used as a Live system or you can install your computer with it."
+msgid "Du hast noch kein Ubuntu installiert. Hier bekommst du das <b>Betriebssystem Ubuntu</b>, und zwar gleich <b>mit der Software, die du brauchst</b>."
+msgstr "You don't have Ubuntu installed on your computer. Here you can download the <b>operating system Ubuntu</b> with the <b>software you need</b>."
 
 #: start_vm_with_livecd_basis
 msgid "Virtuelle Maschine auf Basis der LiveCD-Einstellungen starten (Zur Fehlersuche)"
@@ -2367,6 +2382,10 @@ msgstr "Error: couldn't synchronise repository"
 msgid "Veröffentlichen"
 msgstr "Publish"
 
+#: view_metapackages_show_comment_and_ratings
+msgid "Neuste Kommentare und Bewertungen für dieses Bündel"
+msgstr "Latest comments and ratings for this bundle"
+
 #: view_layouts_application_2
 msgid "Communtu"
 msgstr "Communtu"
@@ -2382,10 +2401,6 @@ msgstr "repository synchronised"
 #: view_metapackages_show_18
 msgid "Wenn du das Bündel veröffentlichst, wird es für alle Nutzer zugänglich. Allerdings kann es danach nicht mehr gelöscht oder unbenannt werden."
 msgstr "If you publish the bundle every user has access to this bundle. However, the bundle cannot be deleted or renamed after publishing."
-
-#: view_metapackages_show_comment_and_ratings
-msgid "Neuste Kommentare und Bewertungen für dieses Bündel"
-msgstr "Latest comments and ratings for this bundle"
 
 #: view_layouts_application_3
 msgid "Ubuntu Logo"
@@ -2466,6 +2481,10 @@ msgstr "You can download an ISO file following the link. If you use Ubuntu, you 
 #: view_metapackages_finish_migrate_0
 msgid "Alle Bündel wurden von "
 msgstr "All bundles were migrated from"
+
+#: livecd_email_body_footer_2
+msgid "Dein Communtu-Team"
+msgstr "Communtu team"
 
 #: view_sent_new_3
 msgid "Nachricht:"
@@ -2554,8 +2573,8 @@ msgid "Administratorbereich"
 msgstr "admninistration section"
 
 #: stop_vm
-msgid "Virtuelle Maschine stoppen"
-msgstr "stop virtual machine"
+msgid "Ausführung der LiveCD stoppen"
+msgstr "Stop Live-CD"
 
 #: bundles_needing_deb_generation
 msgid "Bündel, die neu als Metapaket erzeugt werden müssen"
@@ -2726,8 +2745,8 @@ msgid "Kategorien-Übersicht"
 msgstr "Category-overview"
 
 #: make_your_usb
-msgid "Du kannst auch Bündel auswählen und daraus einen Live-USB-Stick erstellen."
-msgstr "You can also choose bundles and create a Live USB key from it."
+msgid "Du hast noch kein Ubuntu installiert. Hier bekommst du das <b>Betriebssystem Ubuntu</b> zum Ausprobieren (als Live-System) oder zur Installation auf deinem Rechner. Und zwar gleich <b>mit der Software, die du brauchst</b>. Dazu wähle hier deine Software-Bündel aus und erstelle dir anschließend einen USB-Stick..."
+msgstr "You don't have Ubuntu installed. You can download the <b>operating system Ubuntu</b> for testing (as a live system) or for installing it on your computer, with the <b>software you need</b>. Select your software bundes and create an iso image file from it..."
 
 #: view_packages__packagelist_2
 msgid "Suche:"
@@ -2773,6 +2792,10 @@ msgstr "Package-list for {{arch}}:"
 msgid "Installation des Bündels {{name}}"
 msgstr "Installation of bundle {{name}}"
 
+#: vm_no_iso_found
+msgid "Die virtuelle Maschine kann nicht gestartet werden: es wurde kein Iso-Abbild gefunden"
+msgstr "The virtual machine cannot be started, no iso image file found."
+
 #: livecd_email_failed
 msgid "Communtu: Erstellung der Live-CD/DVD fehlgeschlagen"
 msgstr "Communtu: creation of Live-CD/DVD failed."
@@ -2786,14 +2809,8 @@ msgid "Diese Funktion ist für Gäste nicht verfügbar."
 msgstr "This function is not available for guests."
 
 #: livecd_email_body_failed
-msgid ""
-"Deine bei und erstellte Live-CD/DVD bzw. das ISO Image für die Erstellung einer Live-Cd/DVD oder USB Stick {{name}} konnte leider nicht erstellt werden. Wir kümmern uns um das Problem.\n"
-"\n"
-"Liebe Grüße,\n"
-"Dein Communtu-Team"
-msgstr ""
-"Your ISO file {{name}} couldn't be created. We will solve the problem.\n"
-"\n"
+msgid "Deine bei und erstellte Live-CD/DVD bzw. das ISO Image für die Erstellung einer Live-Cd/DVD oder USB Stick {{name}} konnte leider nicht erstellt werden. Wir kümmern uns um das Problem."
+msgstr "Your created ISO file {{name}} for a Live-CD/DVD or USB key couldn't be created. We will solve the problem."
 
 #: view_repositories_show_6
 msgid "        OpenSource"
@@ -2983,6 +3000,10 @@ msgstr "package-version"
 msgid "          Nur für "
 msgstr "          Only for "
 
+#: view_metapackages_show_save_2
+msgid "Neues Metapaket erstellen."
+msgstr "Create new meta-package."
+
 #: offer_new_category
 msgid "Vorschlag einer neuen Kategorie"
 msgstr "Suggestion of a new category"
@@ -2994,10 +3015,6 @@ msgstr "dialog-program:"
 #: controller_packages_1
 msgid "Paket erzeugt."
 msgstr "Package created"
-
-#: view_metapackages_show_save_2
-msgid "Neues Metapaket erstellen."
-msgstr "Create new meta-package."
 
 #: view_home_icons_13
 msgid "Programm-Bündel"
@@ -3136,8 +3153,8 @@ msgid "User-Icon"
 msgstr "user-icon"
 
 #: headline
-msgid "macht Ubuntu-Installationen einfach"
-msgstr "eases Ubuntu installations"
+msgid "Ubuntu installieren leicht gemacht"
+msgstr "Installing Ubuntu has never been easier"
 
 #: first_sync_repos
 msgid "Bitte erst die Repositories synchronisieren. Dies geschieht normalerweise automatisch innerhalb von einer Woche. Achtung: an dieser Stelle wird nur geprüft, ob überhaupt etwas synchronisiert wurde, nicht, ob der Prozess fertig ist."
@@ -3352,8 +3369,8 @@ msgid "Der Betreff darf nicht leer sein."
 msgstr "Subject must not be empty."
 
 #: make_your_livedvd
-msgid "Du hast noch kein Ubuntu installiert. Dann wähle hier deine Bündel aus und brenne dir eine CD oder DVD, damit du sie als Live-System oder zur Installation nutzen kannst."
-msgstr "You don't have Ubuntu installed on your computer. Then choose a bundle and burn the ISO file onto an empty CD or DVD so you can test it as a Live CD or install it onto your computer."
+msgid "... oder brenne dir eine CD oder DVD."
+msgstr "... or burn it to a CD or DVD."
 
 #: untested_bundle
 msgid "Bündel die ungetestet sind:"
@@ -3412,12 +3429,12 @@ msgid "Fehlende debs für Bündel:"
 msgstr "Missing debs for bundle:"
 
 #: start_vm
-msgid "Virtuelle Maschine starten"
-msgstr "start virtual machine"
+msgid "LiveCD online ausprobieren"
+msgstr "Try out Live-CD online"
 
 #: view_user_profiles__profile_rating_0
-msgid "Softwareauswahl: Programmbündel wählen"
-msgstr "Software selection: choose bundle"
+msgid "Software zusammenstellen - Programmbündel wählen"
+msgstr "Software selection - choose programbundle"
 
 #: model_package_1
 msgid "Frei+proprietär"
@@ -3450,14 +3467,8 @@ msgstr ""
 "Germany"
 
 #: livecd_email_body
-msgid ""
-"Deine bei uns erstellte Live-CD/DVD bzw. das ISO Image für die Erstellung einer Live-CD/DVD oder USB Stick wurde erstellt!\n"
-"\n"
-"Den Download kannst Du unter folgendem Link aufrufen: "
-msgstr ""
-"The image you created at our site for creating a Live-CD/DVD or USB key has been finished!\n"
-"\n"
-"You can download the image file by following this link:"
+msgid "Deine bei uns erstellte Live-CD/DVD bzw. das ISO Image für die Erstellung einer Live-CD/DVD oder USB Stick wurde erstellt!"
+msgstr "The image you created at our site for creating a Live-CD/DVD or USB key has been finished!"
 
 #: additional_sources
 msgid "Zusätzliche Quellen, die hinzugefügt werden, weil bestimmte Quellen nicht in sich abgeschlossen sind"
@@ -3551,6 +3562,10 @@ msgstr "Extract from the logfile"
 msgid "Du musst eingeloggt sein, um dieses Feature zu benutzen. Geht auch als Gastbenutzer, hierfür muss rechts oben auf \"Gast\" geklickt werden."
 msgstr "You need to be logged in to use this feature. Using this feature is also possible as a guest, logging in as guest is possible with the \"Guest\"-link in the top right corner."
 
+#: view_metapackages_show_modified
+msgid "Das Bündel enthält Änderungen."
+msgstr "This bundle contains changes."
+
 #: info_new
 msgid "neue News anlegen"
 msgstr "Create new news message"
@@ -3566,10 +3581,6 @@ msgstr "You are not privileged to do this."
 #: controller_derivatives_1
 msgid "Derivative erzeugt."
 msgstr "Derivative created."
-
-#: view_metapackages_show_modified
-msgid "Das Bündel enthält Änderungen."
-msgstr "This bundle contains changes."
 
 #: lib_system_2
 msgid "http://www.communtu.de"
@@ -3715,6 +3726,10 @@ msgstr "We received your suggestion and we will inform you if  and when we will 
 msgid ", um einen neuen Benutzer anzulegen, oder "
 msgstr " to create a new user or"
 
+#: vm_stop
+msgid "stoppen"
+msgstr "stop"
+
 #: security_type
 msgid "Sicherheitstyp:"
 msgstr "Security type:"
@@ -3754,6 +3769,10 @@ msgstr "To the imprint"
 #: statistics
 msgid "Aufrufstatistik"
 msgstr "View statistics"
+
+#: vm_active_session
+msgid "Du hast bereits eine virtuelle Maschine gestartet; bitte diese erst {{stop}}."
+msgstr "You already have a running virtual machine, please {{stop}} that one first."
 
 #: view_layouts_application_11
 msgid "Gastzugang"
@@ -3816,8 +3835,8 @@ msgid "Über eine Live-CD kann die Software sowohl ausprobiert als auch installi
 msgstr "With the Live-CD you can test the software you have chosen and install the system with the previous made software choice. For this, an ISO file ({{cdimage_link}}) is created which you can burn to an empty CD-R. The creation of the image takes a while. You will be informed automatically when your image has been created. For this, a valid e-mail address is required to be entered in your profile."
 
 #: make_a_systemupgrade
-msgid "Du möchtest ein System-Upgrade machen oder deine interessanten Programme einbringen? Dann schau <a href=\"http://communtu.wordpress.com/2009/09/16/mit-communtu-ein-systemupgrade-durchfuhren/\">wie einfach das geht</a> und lade deine Paketliste bei Communtu hoch."
-msgstr "You want to upgrade your system or bring some interesting programs in? Take a look <a href=\"http://encommuntu.wordpress.com/2009/09/16/how-to-use-communtu-for-a-systems-upgrade/\">here how easy it is</a> and upload your package list to Communtu."
+msgid "Du möchtest ein <b>System-Upgrade</b> machen oder deine interessanten <b>Programme einbringen</b>? Dann schau <a href=\"http://communtu.wordpress.com/2009/09/16/mit-communtu-ein-systemupgrade-durchfuhren/\">wie einfach das geht</a> und lade deine Paketliste bei Communtu hoch."
+msgstr "You want to <b>upgrade your system</b> or bring some interesting programs in? Take a look <a href=\"http://encommuntu.wordpress.com/2009/09/16/how-to-use-communtu-for-a-systems-upgrade/\">here how easy it is</a> and upload your package list to Communtu."
 
 #: controller_metapackages_not_changed
 msgid "Das Bündel wurde schon als Metapaket erzeugt und hochgeladen."
@@ -3907,6 +3926,10 @@ msgstr "new repository"
 msgid "Möchtest du mehr über Communtu wissen? Hast du Anregungen, Fragen - wir freuen uns auf den Kontakt mit dir."
 msgstr "Do you want to know more about Communtu? Do you have suggestions or questions? We are looking forward to be in touch with you."
 
+#: vm_too_much_cpu_load
+msgid "Die virtuelle Maschine kann nicht gestartet werden: zu hohe Server-Auslastung"
+msgstr "The virtual machine cannot be created: our server is busy."
+
 #: view_distributions_show_0
 msgid "Repositories:"
 msgstr "Repositories:"
@@ -3966,6 +3989,49 @@ msgstr "BUNDLE"
 #: install
 msgid "Installieren"
 msgstr "Install"
+
+#~ msgid ""
+#~ "Bei Fragen und Anregungen bitten wir Dich bei uns zu melden.\n"
+#~ "\n"
+#~ "Wir hoffen, dass Du viel Spaß mit Deinem Ubuntu hast.\n"
+#~ "\n"
+#~ "Liebe Grüße,\n"
+#~ "Dein Communtu-Team"
+#~ msgstr ""
+#~ "If you have questions and suggestions, don't hesitate contacting us.\n"
+#~ "\n"
+#~ "We hope you will have much fun with your Ubuntu.\n"
+
+#~ msgid "Einfache Installationsmöglichkeiten für Ubuntu"
+#~ msgstr "Easy methods of installation for Ubuntu"
+
+#~ msgid ""
+#~ "Du hast noch kein Ubuntu installiert. Dann wähle hier deine Bündel aus "
+#~ "und brenne dir eine CD oder DVD oder erstelle einen USB-Stick, damit du "
+#~ "sie als Live-System oder zur Installation nutzen kannst."
+#~ msgstr ""
+#~ "You don't have Ubuntu installed on your computer. Choose a bundle and "
+#~ "create a Live CD or copy the image on a USB key, which then can be used "
+#~ "as a Live system or you can install your computer with it."
+
+#~ msgid "Virtuelle Maschine stoppen"
+#~ msgstr "stop virtual machine"
+
+#~ msgid ""
+#~ "Du kannst auch Bündel auswählen und daraus einen Live-USB-Stick erstellen."
+#~ msgstr "You can also choose bundles and create a Live USB key from it."
+
+#~ msgid ""
+#~ "Du hast noch kein Ubuntu installiert. Dann wähle hier deine Bündel aus "
+#~ "und brenne dir eine CD oder DVD, damit du sie als Live-System oder zur "
+#~ "Installation nutzen kannst."
+#~ msgstr ""
+#~ "You don't have Ubuntu installed on your computer. Then choose a bundle "
+#~ "and burn the ISO file onto an empty CD or DVD so you can test it as a "
+#~ "Live CD or install it onto your computer."
+
+#~ msgid "Virtuelle Maschine starten"
+#~ msgstr "start virtual machine"
 
 #~ msgid ""
 #~ "Um etwas installieren zu können, musst du zunächst etwas auswählen. "
