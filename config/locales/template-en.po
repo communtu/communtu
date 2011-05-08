@@ -234,7 +234,7 @@ msgstr "There are two alternatives:"
 
 #: livecd_email_body_2
 msgid "Bei Fragen und Anregungen bitten wir Dich bei uns zu melden."
-msgstr ""
+msgstr "If you have questions or suggestions we would like you to contact us."
 
 #: view_users_new_11
 msgid "Dein Nachname"
@@ -246,7 +246,7 @@ msgstr "Installation via metapackage"
 
 #: livecd_email_body_3
 msgid "Wir hoffen, dass Du viel Spaß mit Deinem Ubuntu hast."
-msgstr ""
+msgstr "We hope you have fun with your Ubuntu."
 
 #: view_users_new_12
 msgid "(optional)"
@@ -478,7 +478,7 @@ msgstr "<b>Search program</b> Here you can search for single Ubuntu-programs (pa
 
 #: or
 msgid "oder"
-msgstr ""
+msgstr "or"
 
 #: view_home_home_9
 msgid "<b>Ubuntu-Derivate</b> bietet eine Übersicht über Kubuntu, Xubuntu, Medibuntu und wie sie alle heißen ..."
@@ -532,13 +532,13 @@ msgstr "Rating: "
 msgid "Rolle löschen"
 msgstr "delete role"
 
-#: include_programs_bundel
-msgid "Enthaltende Programme/Bündel:"
-msgstr "Contains the following programs/bundles:"
-
 #: view_metapackages_show_9
 msgid "Veröffentlicht: "
 msgstr "Published:"
+
+#: include_programs_bundel
+msgid "Enthaltende Programme/Bündel:"
+msgstr "Contains the following programs/bundles:"
 
 #: view_roles__role_1
 msgid "Rolle zuweisen"
@@ -2169,6 +2169,10 @@ msgstr "Please make a choice"
 #: view_cart_update_2
 msgid "Expertenlevel:"
 msgstr "Level of expert:"
+
+#: admin_interface_for_livecd
+msgid "Administrator-Interface zum Debuggen der LiveCD-Erstellung"
+msgstr "Administrative interface for debugging the creation of LiveCDs"
 
 #: view_sent_index_0
 msgid "verschickte Nachrichten"

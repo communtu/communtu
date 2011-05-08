@@ -53,10 +53,10 @@ en:
   view_user_profiles__installation_21: Installation of the metapackages. Please add the sources first.
   name_of_livecd: "Name of the Live-CD/DVD:"
   view_user_profiles__installation_23: "There are two alternatives:"
-  livecd_email_body_2: ""
+  livecd_email_body_2: If you have questions or suggestions we would like you to contact us.
   view_users_new_10: your first name
   view_user_profiles__installation_24: Installation via metapackage
-  livecd_email_body_3: ""
+  livecd_email_body_3: We hope you have fun with your Ubuntu.
   view_users_new_11: your last name
   controller_users_10: User deleted
   view_user_profiles__installation_25: Installatin via apturl
@@ -115,7 +115,7 @@ en:
   view_metapackages_show_3: Back
   view_home_home_8: <b>Search program</b> Here you can search for single Ubuntu-programs (packages).
   vm_no_vnc: No VNC port found
-  or: ""
+  or: or
   view_home_home_9: <b>Ubuntu derivatives</b> is a small overview about Kubuntu, Xubuntu, Medibuntu, etc.
   updatedPackages: "Changed packages:"
   about_us: About us
@@ -554,6 +554,7 @@ en:
   choose_category: Please make a choice
   view_users_edit_0: Edit profile
   view_cart_update_2: "Level of expert:"
+  admin_interface_for_livecd: Administrative interface for debugging the creation of LiveCDs
   to_chat: to the chat
   start_vm_instructions: "Follow these steps to log in on the virtual machine (please wait a minute, deb-files need to be copied):"
   view_sent_index_0: sent messages
