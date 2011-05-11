@@ -431,6 +431,7 @@ class Livecd < ActiveRecord::Base
       <os>
         <type arch='#{arch}'>hvm</type>
         <boot dev='cdrom'/>
+        <boot dev='hd'/>
       </os>
       <features>
         <acpi/>
