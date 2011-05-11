@@ -173,7 +173,7 @@ msgstr ""
 msgid "There are two alternatives:"
 msgstr ""
 #: livecd_email_body_2
-msgid ""
+msgid "If you have questions or suggestions we would like you to contact us."
 msgstr ""
 #: view_users_new_10
 msgid "your first name"
@@ -182,7 +182,7 @@ msgstr ""
 msgid "Installation via metapackage"
 msgstr ""
 #: livecd_email_body_3
-msgid ""
+msgid "We hope you have fun with your Ubuntu."
 msgstr ""
 #: view_users_new_11
 msgid "your last name"
@@ -359,7 +359,7 @@ msgstr ""
 msgid "No VNC port found"
 msgstr ""
 #: or
-msgid ""
+msgid "or"
 msgstr ""
 #: view_home_home_9
 msgid "<b>Ubuntu derivatives</b> is a small overview about Kubuntu, Xubuntu, Medibuntu, etc."
@@ -1584,6 +1584,9 @@ msgid "Edit profile"
 msgstr ""
 #: view_cart_update_2
 msgid "Level of expert:"
+msgstr ""
+#: admin_interface_for_livecd
+msgid "Administrative interface for debugging the creation of LiveCDs"
 msgstr ""
 #: to_chat
 msgid "to the chat"
