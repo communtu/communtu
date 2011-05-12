@@ -71,6 +71,16 @@ class ApplicationController < ActionController::Base
       return false
     end
   end         
+
+  def check_power_user_role
+    unless logged_in? && (current_user.has_role?('power_user') || current_user.has_role?('admin'))
+      if logged_in?
+        permission_denied
+      else
+        access_denied
+      end
+    end
+  end    
   
   def do_anonymous_login(forced=false)
     cookies.delete :auth_token

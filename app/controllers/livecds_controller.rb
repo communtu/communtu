@@ -16,7 +16,8 @@
 
 class LivecdsController < ApplicationController
   before_filter :login_required, :only => [:destroy, :remaster, :force_remaster, :remaster_new]
-  before_filter :check_administrator_role, :add_flash => { :notice => I18n.t(:no_admin) }, :only => [:start_vm, :stop_vm, :start_vm_basis]
+  before_filter :check_administrator_role, :add_flash => { :notice => I18n.t(:no_admin) }, :only => [:start_vm_basis]
+  before_filter :check_power_user_role, :add_flash => { :notice => I18n.t(:no_admin) }, :only => [:start_vm, :stop_vm]
 
   def title
     "Communtu: " + t(:livecd)
