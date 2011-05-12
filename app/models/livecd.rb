@@ -430,8 +430,8 @@ class Livecd < ActiveRecord::Base
       <vcpu>1</vcpu>
       <os>
         <type arch='#{arch}'>hvm</type>
-        <boot dev='cdrom'/>
         <boot dev='hd'/>
+        <boot dev='cdrom'/>
       </os>
       <features>
         <acpi/>
