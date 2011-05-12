@@ -48,7 +48,7 @@ class HomeController < ApplicationController
       :order => "rating DESC",
       :limit => 5)
     @info = Info.find(:first, :conditions => ['created_at > ?', Date.today-14], :order => 'created_at DESC' )
-    @livecds = Livecd.find(:all, :order => "downloaded DESC", :limit => 5, :conditions => "published = true")
+    @livecds = Livecd.find(:all, :order => "downloaded DESC", :limit => 5, :conditions => {:published => true,:failed => false})
   end
   
   def about
