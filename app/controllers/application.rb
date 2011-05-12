@@ -73,13 +73,7 @@ class ApplicationController < ActionController::Base
   end         
 
   def check_power_user_role
-    unless logged_in? && (current_user.has_role?('power_user') || current_user.has_role?('admin'))
-      if logged_in?
-        permission_denied
-      else
-        access_denied
-      end
-    end
+    check_role('power user')
   end    
   
   def do_anonymous_login(forced=false)

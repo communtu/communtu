@@ -223,7 +223,8 @@ end
   end
   
   def has_role?(rolename)
-    self.roles.find_by_rolename(rolename) ? true : false
+    # an administrator has all roles
+    (self.roles.find_by_rolename(rolename) || self.roles.find_by_rolename('administrator')) ? true : false
   end
 
   # distributions
