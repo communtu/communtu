@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo mv script/kvm-nested /usr/bin/
