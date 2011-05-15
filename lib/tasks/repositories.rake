@@ -143,7 +143,7 @@ namespace :livecd do
     end
     date = Date.yesterday.strftime("%d/%b/%Y")
     puts date
-    Dir.glob("/var/log/apache2/*-communtu.log").each do |file|
+    Dir.glob("cat /var/log/apache2/*-communtu.log").each do |file|
       IO.popen("#{file}").each do |line|
         dateline = line.scan(/*[#{date}*/).flatten[0]
         cdname = dateline.scan(/.*\/isos\/(.*).iso.*/).flatten[0]
