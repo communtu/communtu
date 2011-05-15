@@ -148,6 +148,11 @@ namespace :livecd do
          scan_cds(line,date)
       end
     end
+    Dir.glob("/var/log/apache2/*-communtu.log.1").each do |file|
+      IO.popen("grep #{date} #{file}").each do |line|
+         scan_cds(line,date)
+      end
+    end
     Dir.glob("/var/log/apache2/*-communtu.log*gz").each do |file|
       IO.popen("gunzip -c #{file} | grep #{date}").each do |line|
         scan_cds(line,date)
