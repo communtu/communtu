@@ -96,7 +96,11 @@ class UsersController < ApplicationController
   end
 
   def edit
-    @user = current_user
+    if is_admin? && current_user.id != params[:id] then
+      @user = User.find(params[:id])
+    else
+      @user = current_user
+    end
   end
 
   def spam_users_delete
