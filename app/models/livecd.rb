@@ -45,7 +45,7 @@
 # vm_pid: process id of virtual machine (when testing liveCD via vnc)
 
 require "lib/utils.rb"
-require 'libvirt'
+if SETTINGS["livecd"] then require 'libvirt' end
 
 class Livecd < ActiveRecord::Base
   belongs_to :distribution

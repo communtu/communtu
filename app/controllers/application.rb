@@ -76,6 +76,13 @@ class ApplicationController < ActionController::Base
     check_role('power user')
   end    
   
+  def check_livecd_enabled
+    if !SETTINGS["livecd"]
+      flash[:error] = t(:livecd_disabled)
+      redirect_to :back
+    end  
+  end
+  
   def do_anonymous_login(forced=false)
     cookies.delete :auth_token
     # create a lock in order to avoid concurrent creation of anonymous users

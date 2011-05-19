@@ -291,6 +291,7 @@ de:
   livecd_communtu_name: Namen mit communtu- sind für LiveCDs/DVDs reserviert, die aus Bündeln erstellt werden
   livecd_create: Die Live-CD/DVD wird jetzt erstellt. Wir benachrichtigen dich per Email, sobald sie fertig ist.
   livecd_created_by: 'Live-CD/DVD erstellt von: '
+  livecd_disabled: Das Live-CD-Feature wurde abgeschaltet. Siehe config/settings.yml.
   livecd_email: 'Communtu: Benachrichtigung über Live-CD/DVD'
   livecd_email_body: 'Deine bei uns erstellte Live-CD/DVD bzw. das ISO Image für die Erstellung einer Live-CD/DVD oder USB Stick wurde erstellt!'
   livecd_email_body_2: 'Bei Fragen und Anregungen bitten wir Dich bei uns zu melden.'

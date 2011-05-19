@@ -19,6 +19,7 @@ class DownloadController < ApplicationController
 
   before_filter :login_required, :only => [:cd_email,:sources,:prepare_install_sources,:installation,:livecd,:current_cd,
                                            :update_data,:update_ratings,:create_livecd,:bundle_to_livecd,:settings]
+  before_filter :check_livecd_enabled, :only => [:create_livecd, :create_livecd_from_bundle]
 
   def title
     if params[:controller] == "download" and params[:action] == "selection"

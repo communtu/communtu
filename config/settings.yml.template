@@ -1,5 +1,7 @@
 # general settings for Communtu
 
+# activate support for livecd build and virtual machines
+livecd: false
 # repo for Ubuntu deb packages
 repo: http://packages.communtu.org
 # key for signing Ubuntu deb packages
@@ -11,9 +13,9 @@ iso_path: /local/isos
 # path for storing "my ubuntu online" virtual machine images (should contain enough free space)
 vm_path: /local/isos
 # size of hard disk for "my ubuntu online" virtual machines
-vm_hd_size: 100M
+vm_hd_size: 5G
 # size of memory for "my ubuntu online" virtual machines, in KB
-vm_mem_size: 350000
+vm_mem_size: 512000
 # ports used for liveCD creation (the last two will be for admins)
 kvm_ports:
 - 2223
