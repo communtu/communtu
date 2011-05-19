@@ -145,26 +145,25 @@ namespace :livecd do
     puts date
     Dir.glob("/var/log/apache2/*-communtu.log").each do |file|
       IO.popen("grep #{date} #{file}").each do |line|
-         scan_cds(line,date)
+         scan_cds(line)
       end
     end
     Dir.glob("/var/log/apache2/*-communtu.log.1").each do |file|
       IO.popen("grep #{date} #{file}").each do |line|
-         scan_cds(line,date)
+         scan_cds(line)
       end
     end
     Dir.glob("/var/log/apache2/*-communtu.log*gz").each do |file|
       IO.popen("gunzip -c #{file} | grep #{date}").each do |line|
-        scan_cds(line,date)
+        scan_cds(line)
       end
     end
   end
 
 end
 
-def scan_cds(line,date)
-   dateline = line.scan(/*[#{date}*/).flatten[0]
-   cdname = dateline.scan(/.*\/isos\/(.*).iso.*/).flatten[0]
+def scan_cds(line)
+   cdname = line.scan(/.*\/isos\/(.*).iso.*/).flatten[0]
    if !cdname.nil?
      puts cdname
      Livecd.all.select{|cd| cd.fullname == cdname}.each do |cd|
