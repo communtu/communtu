@@ -2485,6 +2485,9 @@ msgstr ""
 #: make_your_livedvd
 msgid "... or burn it to a CD or DVD."
 msgstr ""
+#: livecd_disabled
+msgid "Creation of Live-CDs is disabled. Check config/settings.yml."
+msgstr ""
 #: untested_bundle
 msgid "Untested bundles:"
 msgstr ""

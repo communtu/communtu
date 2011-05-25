@@ -860,6 +860,7 @@ en:
   controller_sent_1: user does not exist
   bundel_editing: edit bundle
   untested_bundle: "Untested bundles:"
+  livecd_disabled: Creation of Live-CDs is disabled. Check config/settings.yml.
   controller_sent_2: message successfully send
   create_livecd_intro: "You can create a Live-CD with Communtu in two different ways: using the download page or directly via a bundle."
   metapackages_cannot_destroy: This bundle cannot be deleted as it is used in an other bundle.

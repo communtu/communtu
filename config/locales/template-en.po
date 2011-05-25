@@ -516,6 +516,10 @@ msgstr "You can access the download folling this link:"
 msgid "noch keine User Bewertung"
 msgstr "no user rating"
 
+#: view_metapackages_show_8
+msgid "Bewertung: "
+msgstr "Rating: "
+
 #: view_home_impressum_11
 msgid "Mitwirkende an der AG Communtu (Alphabetische Reihenfolge):"
 msgstr "Participants of the Communtu-team (alphabetical order):"
@@ -523,10 +527,6 @@ msgstr "Participants of the Communtu-team (alphabetical order):"
 #: match_with_communtu
 msgid "Communtu - gemeinsam Ubuntu-Linux an individuelle Bedürfnisse anpassen"
 msgstr "Communtu - match Ubuntu to your personal needs"
-
-#: view_metapackages_show_8
-msgid "Bewertung: "
-msgstr "Rating: "
 
 #: view_roles__role_0
 msgid "Rolle löschen"
@@ -3375,6 +3375,10 @@ msgstr "Subject must not be empty."
 #: make_your_livedvd
 msgid "... oder brenne dir eine CD oder DVD."
 msgstr "... or burn it to a CD or DVD."
+
+#: livecd_disabled
+msgid "Das Live-CD-Feature wurde abgeschaltet. Siehe config/settings.yml."
+msgstr "Creation of Live-CDs is disabled. Check config/settings.yml."
 
 #: untested_bundle
 msgid "Bündel die ungetestet sind:"
