@@ -108,7 +108,9 @@ namespace :bundle do
   desc 'Check all bundles for conflicts'
   task :conflicts => :environment do
     Metapackage.all.each do |b|
+      puts "Checking for conflicts in #{b.name}"
       b.edos_conflicts
+      puts b.conflict_msg  
     end    
   end
 end  
