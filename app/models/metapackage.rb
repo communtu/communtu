@@ -215,13 +215,13 @@ class Metapackage < BasePackage
         # for each package list, compute the errors
         errs += package_lists.map do |package_names,ders|
           # get repositories needed for bundle
-          package_names = []
-          repos = Set.[]
-          self.recursive_packages package_names, repos, dist, arch, license, security
+#          package_names = []
+#          repos = Set.[]
+#          self.recursive_packages package_names, repos, dist, arch, license, security
 #          repos = dist.repositories
 #          puts repos.map(&:name)
-          repo_files = repos.map{|r| r.file_name(arch)}.join(" ")  
-#          repo_files = dist.dir_name + "/[0-9]*#{arch.name}"
+#          repo_files = repos.map{|r| r.file_name(arch)}.join(" ")  
+          repo_files = dist.dir_name + "/[0-9]*#{arch.name}"
           # generate control file for bundle
           tmpdir = IO.popen("mktemp -d",&:read).chomp
           res = ""
