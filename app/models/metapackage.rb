@@ -190,6 +190,7 @@ class Metapackage < BasePackage
   # before using this, #1212 should be fixed first, such that we can use the "current version" (and not the "debianized version") 
   def edos_conflicts(all=false)
     name = self.debian_name
+    escaped_name = name.gsub("+","\\\\+")
     bundle_names = if all then
       Metapackage.all.map(&:debian_name).join(",")
     else
@@ -218,7 +219,7 @@ class Metapackage < BasePackage
           repos = Set.[]
           self.recursive_packages package_names, repos, dist, arch, license, security
 #          repos = dist.repositories
-          puts repos.map(&:name)
+#          puts repos.map(&:name)
           repo_files = repos.map{|r| r.file_name(arch)}.join(" ")  
 #          repo_files = dist.dir_name + "/[0-9]*#{arch.name}"
           # generate control file for bundle
@@ -232,7 +233,7 @@ class Metapackage < BasePackage
                 if skip then
                   skip = /^Package:/.match(line).nil?
                 end  
-                if !/^Package: #{name}/.match(line).nil? then
+                if !/^Package: #{escaped_name}/.match(line).nil? then
                   skip = true
                 end
                 if !skip then
@@ -242,7 +243,7 @@ class Metapackage < BasePackage
             end
             Deb.write_control(name,package_names,description,1)
             call = "cat Packages #{repo_files} control | edos-debcheck -quiet -explain -checkonly #{bundle_names} |grep -v ^Depends"
-            puts tmpdir, call
+#            puts tmpdir, call
             res = IO.popen(call,&:read)
           end
           # system "rm -r #{tmpdir}"
