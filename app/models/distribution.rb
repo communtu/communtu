@@ -62,6 +62,11 @@ class Distribution < ActiveRecord::Base
     RAILS_ROOT + "/debs/repos/" + self.short_name
   end
 
+  # package files in the communtu repository
+  def package_files(arch)
+    "#{RAILS_ROOT}/public/debs/dists/ubuntu-#{self.short_name.downcase}-all-all/*/binary-#{arch.name}/Packages"
+  end
+  
   # most recent stable distribution
   def self.current
     Distribution.find(:first,:conditions=>{:invisible=>false,:preliminary=>false},:order=>"id DESC")

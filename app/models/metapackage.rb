@@ -186,25 +186,77 @@ class Metapackage < BasePackage
   end
 
   # use edos_checkdeb for detection of conflicts
-  def edos_conflicts
+  # all=true: also find conflicts in all bundles that are introduced by modifying the present one (see #542)
+  # before using this, #1212 should be fixed first, such that we can use the "current version" (and not the "debianized version") 
+  def edos_conflicts(all=false)
     name = self.debian_name
+    bundle_names = if all then
+      Metapackage.all.map(&:debian_name).join(",")
+    else
+      name
+    end  
     description = "test"
+    errs = []
+    # use largest license and security type, this should reveal all conflicts  
+    license, security = 1, 2
     Distribution.all.each do |dist|
-      package_list_list = []
-      Derivative.all.each do |der|
-        # use largest license and security type, this should reveal all conflicts  
-        package_list_list << package_names_for_deb(dist,der,1,2)
-      end
-      package_list_list.uniq.each do |package_names|
-        puts
-        puts name, dist.name
-        Dir.chdir dist.dir_name
-        # TODO: better check *all* bundles, since there can be indirect conflicts
-        Deb.write_control(name,package_names,description,1)
-        system "cat [0-9]* control | edos-debcheck -explain #{name}"
-        system "rm control"
+      Architecture.all.each do |arch|
+        # get all package lists, and decorate them with the derivatives that led to them 
+        package_lists = {}
+        Derivative.all.each do |der|
+          list = package_names_for_deb(dist,der,license,security,arch)
+          if package_lists[list].nil? then
+            package_lists[list] = [der]
+          else
+            package_lists[list] << der
+          end
+        end
+        # for each package list, compute the errors
+        errs += package_lists.map do |package_names,ders|
+          # get repositories needed for bundle
+          package_names = []
+          repos = Set.[]
+          self.recursive_packages package_names, repos, dist, arch, license, security
+#          repos = dist.repositories
+          puts repos.map(&:name)
+          repo_files = repos.map{|r| r.file_name(arch)}.join(" ")  
+#          repo_files = dist.dir_name + "/[0-9]*#{arch.name}"
+          # generate control file for bundle
+          tmpdir = IO.popen("mktemp -d",&:read).chomp
+          res = ""
+          Dir.chdir tmpdir do
+            # get all Communtu Package files, remove current bundle
+            File.open("Packages","w") do |f|
+              skip=false
+              IO.popen("cat #{dist.package_files(arch)}").each do |line|
+                if skip then
+                  skip = /^Package:/.match(line).nil?
+                end  
+                if !/^Package: #{name}/.match(line).nil? then
+                  skip = true
+                end
+                if !skip then
+                  f.puts line
+                end
+              end
+            end
+            Deb.write_control(name,package_names,description,1)
+            call = "cat Packages #{repo_files} control | edos-debcheck -quiet -explain -checkonly #{bundle_names} |grep -v ^Depends"
+            puts tmpdir, call
+            res = IO.popen(call,&:read)
+          end
+          # system "rm -r #{tmpdir}"
+          if res.include?("FAILED") then
+            "*** error for #{name} #{dist.name} #{arch.name} #{ders.map(&:name).join(",")}:\n #{res}\n"           
+          else
+            nil
+          end
+        end
       end
     end
+    self.conflict_msg = errs.select{|e| not e.nil?}.join("\n")
+    self.save
+    return self.conflict_msg
   end
 
   # this function is needed to complement is_present for class Package
@@ -269,6 +321,7 @@ class Metapackage < BasePackage
 
 ## installation and creating debian metapackages
 
+  # get all package names and all repositories that a bundle depends on
   def recursive_packages package_names, package_sources, dist, arch, license, security
     self.base_packages.each do |p|
         if p.class == Package
@@ -285,6 +338,7 @@ class Metapackage < BasePackage
     end
   end
 
+  # get all repositories that a bundle needs, each with the list of packages that lead to the need for that repository 
   def recursive_packages_sources package_sources, dist, arch, license, security
     self.base_packages.each do |p|
         if p.class == Package
