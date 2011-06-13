@@ -103,6 +103,16 @@ namespace :db do
     end
   end
 end
+
+namespace :bundle do
+  desc 'Check all bundles for conflicts'
+  task :conflicts => :environment do
+    Metapackage.all.each do |b|
+      b.edos_conflicts
+    end    
+  end
+end  
+  
 namespace :livecd do
   desc 'Daemon for creating LiveCDs'
   task :daemon => :environment do
