@@ -589,7 +589,13 @@ class MetapackagesController < ApplicationController
     @metapackage  = Metapackage.find_by_id(session[:bundle])
   end
   
-  private
+  def compute_conflicts
+    @metapackage = Metapackage.find(params[:id])
+    @metapackage.edos_conflicts
+      redirect_to :back
+  end
+
+private
 
   def check_owner(meta,user)
     if meta.nil? then

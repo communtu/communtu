@@ -36,6 +36,7 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/metapackages/:id/edit_packages', :controller => "metapackages", :action => "edit_packages", :method => :put
   map.connect '/metapackages/:id/edit_action', :controller => 'metapackages', :action => 'edit_action'
   map.connect '/metapackages/install/:id', :controller => 'metapackages', :action => 'install'
+  map.connect '/metapackages/compute_conflicts/:id', :controller => 'metapackages', :action => 'compute_conflicts'
   map.connect '/metapackages/new', :controller => 'cart', :action => 'create'
   map.resources :metapackages, :collection => {:save => :get, :immediate_conflicts => :get, :conflicts => :get,
                                                :rdepends => :get, :action => :get, :changed => :get, :migrate => :get,

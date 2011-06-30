@@ -68,7 +68,9 @@ de:
   community_title: ubuntuusers
   communtu_is_opensource: "Communtu ist in {{rails}} geschrieben. Der Quellcode von Communtu open source; er steht unter der {{agpl}} und ist über {{github}} verfügbar. Communtu hat auch einen Bugtracker: {{trac}}."
   compose_new_message: neue Nachricht schreiben
+  compute_conflicts: Konflikte neu berechnen
   confirm_new_passwd: Neues Passwort bestätigen
+  conflicts: Konflikte
   conny_picture: Portrait von Conny Communtu
   continue: Weiter
   controller_accounts_1: Dein Benutzerkonto wurde aktiviert! Du kannst dich nun einloggen.

@@ -110,10 +110,10 @@
 </div></td></tr>
 </table>
 </td>
+
 <% if !request.env['HTTP_REFERER'].nil? and (@metapackage.user==current_user or is_admin?) then %>
 
      <td width="25%">
-
 <% if !@conflicts.empty?  %>
   <div class="flash" id="error"><%=t(:controller_metapackages_conflicts)%> 
   <%=show_version(@metapackage)%></div>
@@ -141,6 +141,15 @@
     </tr>
 </table>
 
+<% if is_admin? %>
+<p>
+  <% if !@metapackage.conflict_msg.nil? and !@metapackage.conflict_msg.empty? %>
+    <%= t(:conflicts) %>
+    <pre><%=@metapackage.conflict_msg %></pre><
+  <% end %>
+  <%= link_to(t(:compute_conflicts),:action => :compute_conflicts, :id => @metapackage.id) %>
+</p>
+<% end %>
 
 <% if logged_in? and (@metapackage.owned_by? current_user or is_admin?) and (not @metapackage.is_published?) %>
 <p>  <%=t(:view_metapackages_show_18)%> </p>
