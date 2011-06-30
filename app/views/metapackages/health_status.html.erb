@@ -84,7 +84,7 @@
   <ul>
   <%for b in @bundles_with_conflicts%>
    <li> <%=link_to b.name, metapackage_path(b)%><br />
-        <%=b.conflict_msg %></li>
+        <pre><%=b.conflict_msg %></pre></li>
   <%end%>
   </ul>
 <%end%>
