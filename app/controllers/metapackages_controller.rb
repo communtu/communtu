@@ -547,6 +547,7 @@ class MetapackagesController < ApplicationController
         @bundles_with_missing_packages[d] = ms
       end
     end
+    @bundles_with_conflicts = Metapackage.find(:all,:conditions=>["conflict_msg IS NOT NULL and conflict_msg != ?",""])
     @repositories_without_packages_all =
       Repository.all.select{|r| PackageDistr.find_by_repository_id(r.id).nil?}
     @repositories_without_packages =

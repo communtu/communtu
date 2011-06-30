@@ -77,6 +77,17 @@
   </ul>
 <%end%>
 
+<h2><%=t(:bundles_with_conflicts)%> (<%=@bundles_with_conflicts.length%>)</h2>
+<%if @bundles_with_conflicts.empty?%>
+  <%=t(:none)%>
+<%else%>
+  <ul>
+  <%for b in @bundles_with_conflicts%>
+   <li> <%=link_to b.name, metapackage_path(b)%><br />
+        <%=b.conflict_msg %></li>
+  <%end%>
+  </ul>
+<%end%>
 
 <h2><%=t(:failed_live_cds)%> (<%=@failed_live_cds.length%>)</h2>
 <pre><%= @livecd_log %></pre>
