@@ -243,7 +243,7 @@ class Metapackage < BasePackage
             end
             Deb.write_control(name,package_names,description,1)
             call = "cat Packages #{repo_files} control | edos-debcheck -quiet -explain -checkonly #{bundle_names} |grep -v ^Depends"
-#            puts tmpdir, call
+            puts tmpdir, call
             res = IO.popen(call,&:read)
           end
           # system "rm -r #{tmpdir}"

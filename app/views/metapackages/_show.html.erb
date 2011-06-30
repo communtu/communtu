@@ -145,7 +145,7 @@
 <p>
   <% if !@metapackage.conflict_msg.nil? and !@metapackage.conflict_msg.empty? %>
     <%= t(:conflicts) %>
-    <pre><%=@metapackage.conflict_msg %></pre><
+    <pre><%=@metapackage.conflict_msg %></pre>
   <% end %>
   <%= link_to(t(:compute_conflicts),:action => :compute_conflicts, :id => @metapackage.id) %>
 </p>
