@@ -64,34 +64,34 @@
       half_a_minute: "eine halbe Minute"
       less_than_x_seconds:
         one: "weniger als 1 Sekunde"
-        other: "weniger als {{count}} Sekunden"
+        other: "weniger als %{count} Sekunden"
       x_seconds:
         one: "1 Sekunde"
-        other: "{{count}} Sekunden"
+        other: "%{count} Sekunden"
       less_than_x_minutes:
         one: "weniger als ein Minute"
-        other: "weniger als {{count}} Minuten"
+        other: "weniger als %{count} Minuten"
       x_minutes:
         one: "1 Minute"
-        other: "{{count}} Minuten"
+        other: "%{count} Minuten"
       ungefähr_x_hours:
         one: "ungefähr 1 Stunde"
-        other: "ungefähr {{count}} Stunden"
+        other: "ungefähr %{count} Stunden"
       x_days:
         one: "1 Tag"
-        other: "{{count}} Tage"
+        other: "%{count} Tage"
       about_x_months:
         one: "ungefähr 1 Monat"
-        other: "ungefähr {{count}} Monate"
+        other: "ungefähr %{count} Monate"
       x_months:
         one: "1 Monat"
-        other: "{{count}} Monate"
+        other: "%{count} Monate"
       about_x_Jahrs:
         one: "ungefähr 1 Jahr"
-        other: "ungefähr {{count}} Jahre"
+        other: "ungefähr %{count} Jahre"
       over_x_years:
         one: "mehr als 1 Jahr"
-        other: "mehr als {{count}} Jahre"
+        other: "mehr als %{count} Jahre"
     prompts:
       year: "Jahr"
       month: "Monat"
@@ -104,8 +104,8 @@
     errors:
       template:
         header:
-          one: "1 Fehler verhinderte das Abspeichern dieses {{model}}"
-          other: "{{count}} Fehler verhinderten das Abspeichern dieses {{model}}"
+          one: "1 Fehler verhinderte das Abspeichern dieses %{model}"
+          other: "%{count} Fehler verhinderten das Abspeichern dieses %{model}"
         # The variable :count is also available
         body: "Es gab Probleme mit folgenden Feldern:"
 
@@ -174,34 +174,34 @@
       half_a_minute: "half a minute"
       less_than_x_seconds:
         one: "less than 1 second"
-        other: "less than {{count}} seconds"
+        other: "less than %{count} seconds"
       x_seconds:
         one: "1 second"
-        other: "{{count}} seconds"
+        other: "%{count} seconds"
       less_than_x_minutes:
         one: "less than a minute"
-        other: "less than {{count}} minutes"
+        other: "less than %{count} minutes"
       x_minutes:
         one: "1 minute"
-        other: "{{count}} minutes"
+        other: "%{count} minutes"
       about_x_hours:
         one: "about 1 hour"
-        other: "about {{count}} hours"
+        other: "about %{count} hours"
       x_days:
         one: "1 day"
-        other: "{{count}} days"
+        other: "%{count} days"
       about_x_months:
         one: "about 1 month"
-        other: "about {{count}} months"
+        other: "about %{count} months"
       x_months:
         one: "1 month"
-        other: "{{count}} months"
+        other: "%{count} months"
       about_x_years:
         one: "about 1 year"
-        other: "about {{count}} years"
+        other: "about %{count} years"
       over_x_years:
         one: "over 1 year"
-        other: "over {{count}} years"
+        other: "over %{count} years"
     prompts:
       year: "Year"
       month: "Month"
@@ -214,8 +214,8 @@
     errors:
       template:
         header:
-          one: "1 error prohibited this {{model}} from being saved"
-          other: "{{count}} errors prohibited this {{model}} from being saved"
+          one: "1 error prohibited this %{model} from being saved"
+          other: "%{count} errors prohibited this %{model} from being saved"
         # The variable :count is also available
         body: "There were problems with the following fields:"
 

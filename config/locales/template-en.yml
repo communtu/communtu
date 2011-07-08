@@ -232,7 +232,7 @@ en:
   view_home_derivatives_18: " is an Ubuntu spin-off with its own user community which has dedicated itself to usability. Linux Mint is quite similar to Ubuntu but has more codecs, like to watch DVDs or listen to MP3s, pre-installed. Those codecs are available via Communtu, listet at \"Sound & Video\"."
   new_distribution: New distribution
   controller_messages_0: |
-    Original message by %{user} from %{datum}}  
+    Original message by %{user} from %{datum}  
 
   lib_utils_0: "The followong system-command failed:"
   path: "Path:"

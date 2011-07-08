@@ -940,7 +940,7 @@ msgstr "New distribution"
 msgid ""
 "Ursprüngliche Nachricht von %{user} am %{datum}  \n"
 "  \n"
-msgstr "Original message by %{user} from %{datum}}  \n"
+msgstr "Original message by %{user} from %{datum}  \n"
 
 #: lib_utils_0
 msgid "System-Befehl schlug fehl: "
