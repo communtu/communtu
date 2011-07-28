@@ -83,7 +83,9 @@ class UsersController < ApplicationController
   def anonymous_login
     do_anonymous_login
     # prevent redirection to login page, which would give an error
-    if request.env["HTTP_REFERER"].include?("session/new")
+    if request.env["HTTP_REFERER"] == nil
+      redirect_to "/home"
+    elsif request.env["HTTP_REFERER"].include?("session/new")
       redirect_to "/home"
     else
       redirect_to :back
