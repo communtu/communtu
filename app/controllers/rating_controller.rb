@@ -30,7 +30,11 @@ class RatingController < ApplicationController
       t.save                                
       @metapackage.add_rating Rating.new(:rating => params[:user_rating], :user_id => current_user.id, :comment => params[:rating][:comment], :comment_tid => @l)
     end  
-    redirect_to :back
+    if request.env["HTTP_REFERER"] == ""
+      redirect_to '/metapackages/index'
+    else
+      redirect_to :back
+    end
   end
   
 end
