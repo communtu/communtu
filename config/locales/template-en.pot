@@ -272,7 +272,7 @@ msgstr ""
 msgid "Advice: please don't rename the .deb-file."
 msgstr ""
 #: view_user_profiles__installation_31
-msgid "Every Ubuntu package and Communtu bundle can be installed and uninstalled by using {{synaptic}} (go to \"System\" --> \"Administration\"). Updates of the programs inside the bundle are installed via the Ubuntu-updatemanager automatically."
+msgid "Every Ubuntu package and Communtu bundle can be installed and uninstalled by using %{synaptic} (go to \"System\" --> \"Administration\"). Updates of the programs inside the bundle are installed via the Ubuntu-updatemanager automatically."
 msgstr ""
 #: downloads
 msgid "Downloads"
@@ -287,7 +287,7 @@ msgstr ""
 msgid "out of 5 stars awarded"
 msgstr ""
 #: view_metapackages_show_version_v
-msgid "(version {{v}})"
+msgid "(version %{v})"
 msgstr ""
 #: controller_passwords_5
 msgid "Password must not be empty."
@@ -326,7 +326,7 @@ msgstr ""
 msgid "The menu on the left offers the following possibilities:"
 msgstr ""
 #: view_user_profiles__installation_34
-msgid "List of {{sources}} that will be added to your system."
+msgid "List of %{sources} that will be added to your system."
 msgstr ""
 #: controller_passwords_8
 msgid "Passwords do not match."
@@ -338,7 +338,7 @@ msgstr ""
 msgid "Name"
 msgstr ""
 #: select_default_bundles
-msgid "Select standard bundles for {{category}}"
+msgid "Select standard bundles for %{category}"
 msgstr ""
 #: direct_indirect_covered_packages_warning
 msgid "Attention! This takes a long time and should only be done on the admin-server (communtu.org:3006)!"
@@ -413,7 +413,7 @@ msgstr ""
 msgid "edit repositories"
 msgstr ""
 #: usb_creator
-msgid "With {{link}} you can copy the ISO image onto your USB key."
+msgid "With %{link} you can copy the ISO image onto your USB key."
 msgstr ""
 #: view_repositories_edit_1
 msgid "Distribution:"
@@ -434,7 +434,7 @@ msgstr ""
 msgid "Further information:"
 msgstr ""
 #: usb_donate
-msgid "Creating an ISO image requires a lot of server performance. Please {{donate_link}} to keep this feature alive."
+msgid "Creating an ISO image requires a lot of server performance. Please %{donate_link} to keep this feature alive."
 msgstr ""
 #: controller_metapackages_reset
 msgid "Reset bundle error manually (after solving the problems)."
@@ -524,7 +524,7 @@ msgstr ""
 msgid "Source"
 msgstr ""
 #: liveusb_message
-msgid "With an USB key you can test the software you have chosen and install the system with the previous made choice of software. For this, an ISO-file ({{cdimage_link}}) is created which can be copied to the key.<br /><br />The creation of the image takes a while. You will be informed automatically when your image has been created. For this, a valid e-mail address is required to be entered in your profile."
+msgid "With an USB key you can test the software you have chosen and install the system with the previous made choice of software. For this, an ISO-file (%{cdimage_link}) is created which can be copied to the key.<br /><br />The creation of the image takes a while. You will be informed automatically when your image has been created. For this, a valid e-mail address is required to be entered in your profile."
 msgstr ""
 #: compose_new_message
 msgid "compose a new message"
@@ -548,7 +548,7 @@ msgstr ""
 msgid "Conny Communtu's portrait"
 msgstr ""
 #: bundle_to_livecd
-msgid "Create Live-CD/DVD from bundle <i>{{name}}</i>"
+msgid "Create Live-CD/DVD from bundle <i>%{name}</i>"
 msgstr ""
 #: view_home_cancel_1
 msgid "Either you try a again or you use the possibility via bank transfer"
@@ -653,7 +653,7 @@ msgstr ""
 msgid "Why Communtu?"
 msgstr ""
 #: distribution_derivative_mismatch
-msgid "{{derivative}} is only for {{distributions]] available"
+msgid "%{derivative} is only for %{distributions]] available"
 msgstr ""
 #: view_metapackages__package_list_conflicts
 msgid "Conflicts with the following packages/bundles:"
@@ -686,7 +686,7 @@ msgstr ""
 msgid " is Ubuntu with the KDE-Desktop"
 msgstr ""
 #: model_package_could_not_read
-msgid "couldn't read {{url}}"
+msgid "couldn't read %{url}"
 msgstr ""
 #: view_home_about_5
 msgid "To start, choose <b>Download</b>."
@@ -722,7 +722,7 @@ msgstr ""
 msgid "New distribution"
 msgstr ""
 #: controller_messages_0
-msgid "Original message by {{user}} from {{datum}}}  \n"
+msgid "Original message by %{user} from %{datum}}  \n"
 msgstr ""
 #: lib_utils_0
 msgid "The followong system-command failed:"
@@ -1232,7 +1232,7 @@ msgstr ""
 msgid "How do I create a bundle with my currently installed programs? "
 msgstr ""
 #: view_cart_new_from_list_3
-msgid " can be found with the above-mentioned command. (For this, the package {{debfoster}} has to be install. The created list only contains a minimal list of (meta-)packages which are necessary to rebuild your installation.)"
+msgid " can be found with the above-mentioned command. (For this, the package %{debfoster} has to be install. The created list only contains a minimal list of (meta-)packages which are necessary to rebuild your installation.)"
 msgstr ""
 #: controller_metapackages_7
 msgid "Specify a version (e. g. 0.1)<br>"
@@ -1397,7 +1397,7 @@ msgstr ""
 msgid "You think you already know a lot about Open Source programs? \nWrite your experience into the comments of the according package our maybe you have seen\na video of the program at YouTube? Add the video\nto the corresponding program."
 msgstr ""
 #: controller_cart_2
-msgid "The following packages couldn't be found: {{message}}<br> Please find the repositories which contain these packages and <a href=\"{{url}}\">make a suggestion to add the repository to Communtu.</a>"
+msgid "The following packages couldn't be found: %{message}<br> Please find the repositories which contain these packages and <a href=\"%{url}\">make a suggestion to add the repository to Communtu.</a>"
 msgstr ""
 #: install_by_default
 msgid "Installed by default:"
@@ -1520,7 +1520,7 @@ msgstr ""
 msgid "Match Ubuntu to your personal needs"
 msgstr ""
 #: install_package
-msgid "Installation of package {{name}}"
+msgid "Installation of package %{name}"
 msgstr ""
 #: view_users__user_2
 msgid "edit roles"
@@ -1643,7 +1643,7 @@ msgstr ""
 msgid "Date"
 msgstr ""
 #: controller_users_3
-msgid "You have been logged in as {{anonymous_user}} with the password {{anonymous_user}}. If applicable click on the username {{anonymous_user}} in the above-right corner to change the account into an permanent account, otherwise the account will be deleted after one day."
+msgid "You have been logged in as %{anonymous_user} with the password %{anonymous_user}. If applicable click on the username %{anonymous_user} in the above-right corner to change the account into an permanent account, otherwise the account will be deleted after one day."
 msgstr ""
 #: cd_created
 msgid "The Live CD/DVD has finished."
@@ -1775,7 +1775,7 @@ msgstr ""
 msgid "Blog"
 msgstr ""
 #: model_package_10
-msgid "While the synchronization of the repository {{repo_name}} the package {{package_name}} couldn't be found."
+msgid "While the synchronization of the repository %{repo_name} the package %{package_name} couldn't be found."
 msgstr ""
 #: metacart_choose
 msgid "Please add programs to your bundle."
@@ -1787,7 +1787,7 @@ msgstr ""
 msgid "could not determine URL"
 msgstr ""
 #: cd_donate
-msgid "Creating a CD/DVD requires a lot of server performance. Please {{donate_link}} to keep this feature alive."
+msgid "Creating a CD/DVD requires a lot of server performance. Please %{donate_link} to keep this feature alive."
 msgstr ""
 #: view_layouts_application_5
 msgid "per PayPal:"
@@ -1796,7 +1796,7 @@ msgstr ""
 msgid "Comment:"
 msgstr ""
 #: model_package_12
-msgid "content of {{file}} does not match with repository-syntax"
+msgid "content of %{file} does not match with repository-syntax"
 msgstr ""
 #: imprint
 msgid "Imprint"
@@ -1817,7 +1817,7 @@ msgstr ""
 msgid "    Which e-mail-address did you enter when you created the account?"
 msgstr ""
 #: iso_howto
-msgid "You can download an ISO file following the link. If you use Ubuntu, you can use {{brasero}} or {{k3b}} to burn the image. If you use Microsoft Windows there are several programs for burning CDs and DVDs. Please chose an option similar to \"Burn image\" or \"Burn ISO\". If the ISO file is very large you need a DVD. <br /> Using the burned CD or DVD you can <a href=\"https://help.ubuntu.com/community/GraphicalInstall\" target=\"_blank\">install Ubuntu</a>."
+msgid "You can download an ISO file following the link. If you use Ubuntu, you can use %{brasero} or %{k3b} to burn the image. If you use Microsoft Windows there are several programs for burning CDs and DVDs. Please chose an option similar to \"Burn image\" or \"Burn ISO\". If the ISO file is very large you need a DVD. <br /> Using the burned CD or DVD you can <a href=\"https://help.ubuntu.com/community/GraphicalInstall\" target=\"_blank\">install Ubuntu</a>."
 msgstr ""
 #: view_metapackages_finish_migrate_0
 msgid "All bundles were migrated from"
@@ -1931,7 +1931,7 @@ msgstr ""
 msgid "I accept to publish the bundle information under the <a href=\"http://www.gnu.de/documents/gpl.de.html\">GNU General public license</a> (Version 2.0 or higher)."
 msgstr ""
 #: install_package_steps
-msgid "The installation of package {{name}} is done in multiple steps, please take a look at the right side."
+msgid "The installation of package %{name} is done in multiple steps, please take a look at the right side."
 msgstr ""
 #: view_home_donate
 msgid "Make a donation for Communtu"
@@ -2045,10 +2045,10 @@ msgstr ""
 msgid "Error: circular dependencies between bundles"
 msgstr ""
 #: view_repositories_show_4
-msgid "Package-list for {{arch}}:"
+msgid "Package-list for %{arch}:"
 msgstr ""
 #: install_bundle
-msgid "Installation of bundle {{name}}"
+msgid "Installation of bundle %{name}"
 msgstr ""
 #: livecd_email_failed
 msgid "Communtu: creation of Live-CD/DVD failed."
@@ -2063,7 +2063,7 @@ msgstr ""
 msgid "This function is not available for guests."
 msgstr ""
 #: livecd_email_body_failed
-msgid "Your created ISO file {{name}} for a Live-CD/DVD or USB key couldn't be created. We will solve the problem."
+msgid "Your created ISO file %{name} for a Live-CD/DVD or USB key couldn't be created. We will solve the problem."
 msgstr ""
 #: create_your_usb
 msgid "Create a USB key"
@@ -2237,7 +2237,7 @@ msgstr ""
 msgid "Package updated."
 msgstr ""
 #: controller_sessions_3
-msgid "Your registered distribution was changed to {{dist_old}} because your old distribution is not supported by Ubuntu (and therefore by Communtu) anymore. We suggest an upgrade to {{dist_new}}."
+msgid "Your registered distribution was changed to %{dist_old} because your old distribution is not supported by Ubuntu (and therefore by Communtu) anymore. We suggest an upgrade to %{dist_new}."
 msgstr ""
 #: view_user_profiles__profile_data_15
 msgid " Allow commercial licenses (free too, but the sources are closed - the fluent change to Linux:"
@@ -2402,7 +2402,7 @@ msgstr ""
 msgid "How do I create a Live-CD?"
 msgstr ""
 #: install_bundle_steps
-msgid "The installation of bundle {{name}} is done in multiple steps, please take a look at the right side."
+msgid "The installation of bundle %{name} is done in multiple steps, please take a look at the right side."
 msgstr ""
 #: create_livecd_downloadpage
 msgid "For this you choose the categories in the <b>Download</b> area that you want to install. With a click on \"Live-CD/DVD\" in the menu you can see a page where you can enter a name for your Live-CD. With a click on <b>Create Live-CD/DVD</b> the process will be started."
@@ -2501,10 +2501,10 @@ msgstr ""
 msgid "Sources for the soon be installed programs"
 msgstr ""
 #: view_rating_show_title_ratings_count
-msgid "(Based on {{votes}} rating(s))"
+msgid "(Based on %{votes} rating(s))"
 msgstr ""
 #: cannot_publish_bundle
-msgid "This bundle cannot be published, as it contains unpublished bundles: {{bundles}}"
+msgid "This bundle cannot be published, as it contains unpublished bundles: %{bundles}"
 msgstr ""
 #: view_home_impressum_2
 msgid "AG Communtu"
@@ -2588,16 +2588,16 @@ msgstr ""
 msgid "Register"
 msgstr ""
 #: model_package_7
-msgid "couldn't determine URL for {{repo}}"
+msgid "couldn't determine URL for %{repo}"
 msgstr ""
 #: model_package_need_not_update
-msgid "{{url}} has not changed"
+msgid "%{url} has not changed"
 msgstr ""
 #: view_home_icons_6
 msgid " install sources"
 msgstr ""
 #: model_package_9
-msgid "While the synchronization of the repository {{repo_name}} no PackageDistr-entry for the package {{package_name}} could be found."
+msgid "While the synchronization of the repository %{repo_name} no PackageDistr-entry for the package %{package_name} could be found."
 msgstr ""
 #: view_home_about_12
 msgid "<b>Administrate bundles</b> on the left side offers an overview about the available bundles. At last, an overview about the available Ubunt versions (distributions) can be found at <b>Ubuntu versions</b>."
@@ -2786,7 +2786,7 @@ msgstr ""
 msgid "View statistics"
 msgstr ""
 #: vm_active_session
-msgid "You already have a running virtual machine, please {{stop}} that one first."
+msgid "You already have a running virtual machine, please %{stop} that one first."
 msgstr ""
 #: view_layouts_application_11
 msgid "Guestsession"
@@ -2798,7 +2798,7 @@ msgstr ""
 msgid "For questions concerning Communtu we have created a \"FAQ\"."
 msgstr ""
 #: livecd_please_register
-msgid "To create Live-CD/DVDs or USB-key images, your first have to use the anonymous account {{register}} or you need to {{login}}."
+msgid "To create Live-CD/DVDs or USB-key images, your first have to use the anonymous account %{register} or you need to %{login}."
 msgstr ""
 #: controller_categories_2
 msgid "Category created."
@@ -2831,7 +2831,7 @@ msgstr ""
 msgid "About Communtu"
 msgstr ""
 #: livecd_message
-msgid "With the Live-CD you can test the software you have chosen and install the system with the previous made software choice. For this, an ISO file ({{cdimage_link}}) is created which you can burn to an empty CD-R. The creation of the image takes a while. You will be informed automatically when your image has been created. For this, a valid e-mail address is required to be entered in your profile."
+msgid "With the Live-CD you can test the software you have chosen and install the system with the previous made software choice. For this, an ISO file (%{cdimage_link}) is created which you can burn to an empty CD-R. The creation of the image takes a while. You will be informed automatically when your image has been created. For this, a valid e-mail address is required to be entered in your profile."
 msgstr ""
 #: make_a_systemupgrade
 msgid "You want to <b>upgrade your system</b> or bring some interesting programs in? Take a look <a href=\"http://encommuntu.wordpress.com/2009/09/16/how-to-use-communtu-for-a-systems-upgrade/\">here how easy it is</a> and upload your package list to Communtu."
@@ -2873,7 +2873,7 @@ msgstr ""
 msgid "back to the package-list"
 msgstr ""
 #: communtu_is_opensource
-msgid "Communtu is written in {{rails}}. Communtu's source code is open source, published under the {{agpl}} and can be accessed via {{github}}. Communtu also has a bug tracking system: {{trac}}."
+msgid "Communtu is written in %{rails}. Communtu's source code is open source, published under the %{agpl} and can be accessed via %{github}. Communtu also has a bug tracking system: %{trac}."
 msgstr ""
 #: save_or_delete_bundle
 msgid "Please save or delete the selection in the bundle editor."

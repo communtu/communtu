@@ -269,7 +269,7 @@ msgstr ""
 msgid " Note: Ne pas renommer les fichiers deb, s'il te plaît."
 msgstr ""
 #: view_user_profiles__installation_31
-msgid "Les méta-paquets Communtu peuvent aussi être affichés, installés et désinstallés à l'aide de {{synaptic}} (sous Système -> Administration). En ce qui concerne la modification des compilations, elles sont automatiquement enregistrées à l'aide de la gestion des paquets Ubuntu."
+msgid "Les méta-paquets Communtu peuvent aussi être affichés, installés et désinstallés à l'aide de %{synaptic} (sous Système -> Administration). En ce qui concerne la modification des compilations, elles sont automatiquement enregistrées à l'aide de la gestion des paquets Ubuntu."
 msgstr ""
 #: downloads
 msgid "Télécharger:"
@@ -284,7 +284,7 @@ msgstr ""
 msgid " de 5 étoiles données"
 msgstr ""
 #: view_metapackages_show_version_v
-msgid "(Version {{v}})"
+msgid "(Version %{v})"
 msgstr ""
 #: controller_passwords_5
 msgid "Mot de passe ne peut pas être vide."
@@ -422,7 +422,7 @@ msgstr ""
 msgid "Pour plus d'informations:"
 msgstr ""
 #: usb_donate
-msgid "La création de CD / DVD a besoin de beaucoup de capacité du serveur. S'il vous plaît {{donate_link}}, pour permettre cette offre."
+msgid "La création de CD / DVD a besoin de beaucoup de capacité du serveur. S'il vous plaît %{donate_link}, pour permettre cette offre."
 msgstr ""
 #: controller_metapackages_reset
 msgid "erreur de compilation réinitialiser manuellement (après avoir résolu le problème)."
@@ -509,7 +509,7 @@ msgstr ""
 msgid "Source"
 msgstr ""
 #: liveusb_message
-msgid "Via un live CD, le logiciel peut etre à la fois essayé et installé. Ceci etant, un soi-disant {{cdimage_link}} est créé, sous la forme d'un fichier ISO que tu peux graver. Pour graver un CD dont tu  as besoin, dans le cas ou tu as sélectionné un grand nombre de logiciels, d'un DVD. <br /> <br /> La création de l'image prend un certain temps. Tu seras averti par email lorsque l'image est prête. S'il te plait vérifie dans tes paramètres d'utilisateur q'une adresse Email valide a été donnée."
+msgid "Via un live CD, le logiciel peut etre à la fois essayé et installé. Ceci etant, un soi-disant %{cdimage_link} est créé, sous la forme d'un fichier ISO que tu peux graver. Pour graver un CD dont tu  as besoin, dans le cas ou tu as sélectionné un grand nombre de logiciels, d'un DVD. <br /> <br /> La création de l'image prend un certain temps. Tu seras averti par email lorsque l'image est prête. S'il te plait vérifie dans tes paramètres d'utilisateur q'une adresse Email valide a été donnée."
 msgstr ""
 #: compose_new_message
 msgid "Ecrire un nouveau message"
@@ -533,7 +533,7 @@ msgstr ""
 msgid "Portrait de Communtu Conny"
 msgstr ""
 #: bundle_to_livecd
-msgid "LiveCD / DVD à  partir de la compilation<i>{{name}}</ i> créer"
+msgid "LiveCD / DVD à  partir de la compilation<i>%{name}</ i> créer"
 msgstr ""
 #: view_home_cancel_1
 msgid "Soit tu essaies à nouveau ou alors tu fais un transfer"
@@ -638,7 +638,7 @@ msgstr ""
 msgid "Qu'est-ce Communtu?"
 msgstr ""
 #: distribution_derivative_mismatch
-msgid "{{ Dérivés}} est uniquement disponible sous{{distributions}} "
+msgid "%{ Dérivés} est uniquement disponible sous%{distributions} "
 msgstr ""
 #: view_metapackages__package_list_conflicts
 msgid "Conflits avec les paquets/Compilations suivants :"
@@ -671,7 +671,7 @@ msgstr ""
 msgid "Ubuntu est avec le bureau KDE."
 msgstr ""
 #: model_package_could_not_read
-msgid "Impossible de lire {{url}}"
+msgid "Impossible de lire %{url}"
 msgstr ""
 #: view_home_about_5
 msgid "Pour commencer tu dois sélectionner<b> Télécharger </ b>."
@@ -707,7 +707,7 @@ msgstr ""
 msgid "Nouvelle distribution"
 msgstr ""
 #: controller_messages_0
-msgid "Message original de {{user}}  le {{datum}}  \n"
+msgid "Message original de %{user}  le %{datum}  \n"
 msgstr ""
 #: lib_utils_0
 msgid "Système de commande a échoué:"
@@ -1214,7 +1214,7 @@ msgstr ""
 msgid "Comment puis-je créer une compilation à partir de mes programmes installés?"
 msgstr ""
 #: view_cart_new_from_list_3
-msgid "découvrir. (pour cela le paquet {{debfoster}} doit être installé. La liste générée contient seulement une liste minimale de (méta-)paquets qui est nécessaire pour restaurer complètement ton installation.)"
+msgid "découvrir. (pour cela le paquet %{debfoster} doit être installé. La liste générée contient seulement une liste minimale de (méta-)paquets qui est nécessaire pour restaurer complètement ton installation.)"
 msgstr ""
 #: controller_metapackages_7
 msgid "Il faut  donner une version (par exemple 0.1) <br>"
@@ -1379,7 +1379,7 @@ msgstr ""
 msgid "Tu  penses que tu en sais déjà beaucoup sur les programmes Open Source ? \n. Dans ce cas, commente tes expériences sur les paquets. Peut être as-tu  vu une \n vidéo intéressante concernant le programme sur Youtube? alors mets la dans \n les programmes vidéos de Communtu."
 msgstr ""
 #: controller_cart_2
-msgid "Les paquets suivants n'ont pas été trouvés: {{message}} <br> S'il te plaît choisie les référentiels qui contiennent les paquets ,et<a href=\"{{url}}\"> propose de les inclure dans Communtu. </a>"
+msgid "Les paquets suivants n'ont pas été trouvés: %{message} <br> S'il te plaît choisie les référentiels qui contiennent les paquets ,et<a href=\"%{url}\"> propose de les inclure dans Communtu. </a>"
 msgstr ""
 #: install_by_default
 msgid "L'installation standart:"
@@ -1622,7 +1622,7 @@ msgstr ""
 msgid "Temps"
 msgstr ""
 #: controller_users_3
-msgid "Vous avez été connecté en tant qu'utilisateur {{anonymous_user}} avec mot de passe {{anonymous_user}}. S'il te plaît clique en haut a ta droite sur Utilsateur {{anonymous_user}} et le convertir en un compte d'utilisateur permanent, sinon le compte sera supprimé au bout d'un jour."
+msgid "Vous avez été connecté en tant qu'utilisateur %{anonymous_user} avec mot de passe %{anonymous_user}. S'il te plaît clique en haut a ta droite sur Utilsateur %{anonymous_user} et le convertir en un compte d'utilisateur permanent, sinon le compte sera supprimé au bout d'un jour."
 msgstr ""
 #: cd_created
 msgid "Le LiveCD / DVD est créé."
@@ -1754,7 +1754,7 @@ msgstr ""
 msgid "Blog"
 msgstr ""
 #: model_package_10
-msgid "Lors de la synchronisation du référentiel {{repo_name}} le paquet {{package_name}} n'a pas pu être trouvé."
+msgid "Lors de la synchronisation du référentiel %{repo_name} le paquet %{package_name} n'a pas pu être trouvé."
 msgstr ""
 #: metacart_choose
 msgid "Ajoute des programmes à ta compilation"
@@ -1766,7 +1766,7 @@ msgstr ""
 msgid "Impossible de trouver le URL"
 msgstr ""
 #: cd_donate
-msgid "La création de CD / DVD a besoin de beaucoup de capacité du serveur. S'il vous plaît {{donate_link}}, pour permettre cette offre."
+msgid "La création de CD / DVD a besoin de beaucoup de capacité du serveur. S'il vous plaît %{donate_link}, pour permettre cette offre."
 msgstr ""
 #: view_layouts_application_5
 msgid "via PayPal:"
@@ -1775,7 +1775,7 @@ msgstr ""
 msgid "Commentaire:"
 msgstr ""
 #: model_package_12
-msgid "Contenu de {{file}}  ne correspond pas à la Syntaxe dépôt"
+msgid "Contenu de %{file}  ne correspond pas à la Syntaxe dépôt"
 msgstr ""
 #: imprint
 msgid "Mentions légales"
@@ -2021,7 +2021,7 @@ msgstr ""
 msgid "Erreur: dépendances circulaires entre les compilations"
 msgstr ""
 #: view_repositories_show_4
-msgid "liste des paquets pour {{arch}}:"
+msgid "liste des paquets pour %{arch}:"
 msgstr ""
 #: install_bundle
 msgid "Installation des compilations"
@@ -2210,7 +2210,7 @@ msgstr ""
 msgid "Mise à jour du paquet."
 msgstr ""
 #: controller_sessions_3
-msgid "L'enregistrement de ta distribution a été remplacé par {{dist_old}} parce que votre ancienne distribution d'Ubuntu (et donc aussi de Communtu) n'est plus supporté. Nous recommandons un pour votre ordinateur une  <a href='http://wiki.ubuntuusers.de/Upgrade'>a mise à niveau </a> pour {{dist_new}}."
+msgid "L'enregistrement de ta distribution a été remplacé par %{dist_old} parce que votre ancienne distribution d'Ubuntu (et donc aussi de Communtu) n'est plus supporté. Nous recommandons un pour votre ordinateur une  <a href='http://wiki.ubuntuusers.de/Upgrade'>a mise à niveau </a> pour %{dist_new}."
 msgstr ""
 #: view_user_profiles__profile_data_15
 msgid "Permettre des licences non-libres (également gratuites, mais les sources ne sont pas ouvertes - la transition en douceur vers Linux:"
@@ -2471,7 +2471,7 @@ msgstr ""
 msgid "Sources pour les programmes à installer"
 msgstr ""
 #: view_rating_show_title_ratings_count
-msgid "(qui est Basé sur {{votes}}  Evaluation(s))"
+msgid "(qui est Basé sur %{votes}  Evaluation(s))"
 msgstr ""
 #: cannot_publish_bundle
 msgid ""
@@ -2558,16 +2558,16 @@ msgstr ""
 msgid "S'inscrire"
 msgstr ""
 #: model_package_7
-msgid "ne parviens a detecter l' URL pour {{repo}}"
+msgid "ne parviens a detecter l' URL pour %{repo}"
 msgstr ""
 #: model_package_need_not_update
-msgid "{{url}} n'a pas changé"
+msgid "%{url} n'a pas changé"
 msgstr ""
 #: view_home_icons_6
 msgid "Installer les sources"
 msgstr ""
 #: model_package_9
-msgid "Lors de la synchronisation du référentiel {{repo_name}} impossible de trouver  PackageDistr-Eintrag pour le paquet {{package_name}}"
+msgid "Lors de la synchronisation du référentiel %{repo_name} impossible de trouver  PackageDistr-Eintrag pour le paquet %{package_name}"
 msgstr ""
 #: view_home_about_12
 msgid "<b>Gérer la compilation </ b> La barre latérale gauche donne un aperçu des compilationss disponibles. Il existe sur <b> Ubuntu versions</ b> un aperçu des versions Ubuntu disponiblent dans le system (Distributions)."
@@ -2795,7 +2795,7 @@ msgstr ""
 msgid "A propos de Communtu"
 msgstr ""
 #: livecd_message
-msgid "Via un live CD, le logiciel peut etre à la fois essayé et installé. Ceci etant, un soi-disant {{cdimage_link}} est créé, sous la forme d'un fichier ISO que tu peux graver. Pour graver un CD dont tu  as besoin, dans le cas ou tu as sélectionné un grand nombre de logiciels, d'un DVD. <br /> <br /> La création de l'image prend un certain temps. Tu seras averti par email lorsque l'image est prête. S'il te plait vérifie dans tes paramètres d'utilisateur q'une adresse Email valide a été donnée."
+msgid "Via un live CD, le logiciel peut etre à la fois essayé et installé. Ceci etant, un soi-disant %{cdimage_link} est créé, sous la forme d'un fichier ISO que tu peux graver. Pour graver un CD dont tu  as besoin, dans le cas ou tu as sélectionné un grand nombre de logiciels, d'un DVD. <br /> <br /> La création de l'image prend un certain temps. Tu seras averti par email lorsque l'image est prête. S'il te plait vérifie dans tes paramètres d'utilisateur q'une adresse Email valide a été donnée."
 msgstr ""
 #: make_a_systemupgrade
 msgid "Tu veux faire une mise à niveau du système. Alors regarde <http://encommuntu.wordpress.com/2009/09/16/how-to-use-communtu-for-a-systems-upgrade/> comment c'est facile </a> et télécharge ta liste de paquets sur Communtu.            "

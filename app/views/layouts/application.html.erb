@@ -82,7 +82,7 @@
 <% image = if params[:controller] == "download" then "/images/navi_downloadon.png" else "/images/navi_download.png" end %>	
 <% imagetag = image_tag(image, :border => '0', :alt=>t(:view_layouts_application_27),:title=>t(:view_layouts_application_27)) %>
 <% text = "<div class=\"navi_eins\">#{t(:view_layouts_application_24)}</div> "%>
-<%= link_to(imagetag+text,"/download/start") %>
+<%= link_to(imagetag+(text.html_safe),"/download/start") %>
 
 <% if ((params[:controller] == "packages") or (params[:controller] == "users" and params[:action] == "metapackages") or (params[:controller] == "home" and params[:action] == "new_repository") or params[:controller] == "metapackages" or params[:controller] == "distributions" or params[:controller] == "repositories") 
      image = "/images/navi_buendelon.png" 
@@ -93,7 +93,7 @@
 <% link = if @has_own_bundles.length != 0 then "index_mine" else "index" end %>
 <% imagetag = image_tag(image, :border => '0', :alt=>t(:view_layouts_application_26),:title=>t(:view_layouts_application_26)) %> 
 <% text = "<div class=\"navi_zwei\">#{t(:view_layouts_application_23)}</div>" %>
-<%= link_to(imagetag+text,"/metapackages/#{link}") %>
+<%= link_to(imagetag+(text.html_safe),"/metapackages/#{link}") %>
 
 <% if ((params[:controller] == "home" and params[:action] != "home") and (params[:controller] == "home" and params[:action] != "new_repository")) or params[:controller] == "articles" %>
    <% image = "/images/navi_communtuon.png" %>
@@ -102,7 +102,7 @@
  <% end %>
 <% imagetag = image_tag(image, :border => '0', :alt=>t(:navigation_communtu),:title=>t(:navigation_communtu))  %>
 <% text = "<div class=\"navi_drei\">#{t(:view_layouts_application_25)}</div>" %>
-<%= link_to(imagetag+text,"/home/about") %>
+<%= link_to(imagetag+(text.html_safe),"/home/about") %>
 
 		
 	<!-- user -->
