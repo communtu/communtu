@@ -8,6 +8,7 @@
 RAILS_GEM_VERSION = '2.3.8' # unless defined? RAILS_GEM_VERSION
 
 # Bootstrap the Rails environment, frameworks, and default configuration
+require 'thread'
 require File.join(File.dirname(__FILE__), 'boot')
 #
 # this was commented out for switching to 2.3.8
@@ -78,7 +79,7 @@ require 'german_date_names'
 # All files from config/locales/*.rb,yml are added automatically.
 config.i18n.load_path += Dir[File.join(RAILS_ROOT, 'config', 'locales', '*.{rb,yml}')]
 #["#{RAILS_ROOT}/config/locales/template.yml","#{RAILS_ROOT}/config/locales/template-en.yml","#{RAILS_ROOT}/config/locales/numbers.yml"]
-config.i18n.default_locale = :de
+config.i18n.default_locale = :en
 AVAILABLE_LOCALES = ["de", "en","fr"]
 SETTINGS = YAML.load_file("#{RAILS_ROOT}/config/settings.yml")
 end
