@@ -578,8 +578,9 @@ class MetapackagesController < ApplicationController
     if @metapackage.nil?
       flash[:error] = t(:no_bundle_selected)
       redirect_to :action => 'index'
-    end
-    show_aux
+    else
+      show_aux
+    end  
   end
   
   def install_current_sources

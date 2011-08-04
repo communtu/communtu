@@ -34,7 +34,7 @@ de:
   bundle_editor: Bündel-Editor
   bundle_open_new_window: Bündel wird im neuen Fenster geöffnet.
   bundle_tested: 'Bündel getestet:'
-  bundle_to_livecd: LiveCD/DVD aus Bündel <i>{{name}}</i> erstellen
+  bundle_to_livecd: LiveCD/DVD aus Bündel <i>%{name}</i> erstellen
   bundle_to_livecd1: LiveCD/DVD aus Bündel
   bundles_needing_deb_generation: Bündel, die neu als Metapaket erzeugt werden müssen
   bundles_with_conflicts: Bündel mit Konflikten
@@ -44,7 +44,7 @@ de:
   bundles_without_debs: veröffentlichte Bündel ohne deb-Pakete
   by_bank_transfer: per Überweisung
   cannot_migrate: Kann nur migrieren, wenn die Distribution frisch ist
-  cannot_publish_bundle: "Dieses Bündel kann noch nicht veröffentlicht werden, da folgende in ihm enthaltenen Bündel noch nicht veröffentlicht wurden: {{bundles}}"
+  cannot_publish_bundle: "Dieses Bündel kann noch nicht veröffentlicht werden, da folgende in ihm enthaltenen Bündel noch nicht veröffentlicht wurden: %{bundles}"
   cant_debianized: Bitte gib dem Bündel einen englischen Titel und eine englische Beschreibung.
   category_exists: Eine Kategorie mit diesem Namen existiert schon
   category_with_colon: 'Kategorie:'
@@ -52,7 +52,7 @@ de:
   cd_already_created: Die LiveCD/DVD wurde bereits erstellt.
   cd_being_created: Die LiveCD/DVD wird erstellt.
   cd_created: Die LiveCD/DVD ist fertig.
-  cd_donate: Die CD/DVD-Erstellung braucht viel Server-Kapazität. Bitte {{donate_link}}, um dieses Angebot weiter zu ermöglichen.
+  cd_donate: Die CD/DVD-Erstellung braucht viel Server-Kapazität. Bitte %{donate_link}, um dieses Angebot weiter zu ermöglichen.
   cd_failed: Fehlgeschlagen - wir kümmern uns darum
   cd_ready: CD fertig
   change: ändern
@@ -66,7 +66,7 @@ de:
   choose_parent: Wähle einen Parent aus!
   circular_dependency: 'Fehler: zirkuläre Abhängigkeiten zwischen Bündeln'
   community_title: ubuntuusers
-  communtu_is_opensource: "Communtu ist in {{rails}} geschrieben. Der Quellcode von Communtu open source; er steht unter der {{agpl}} und ist über {{github}} verfügbar. Communtu hat auch einen Bugtracker: {{trac}}."
+  communtu_is_opensource: "Communtu ist in %{rails} geschrieben. Der Quellcode von Communtu open source; er steht unter der %{agpl} und ist über %{github} verfügbar. Communtu hat auch einen Bugtracker: %{trac}."
   compose_new_message: neue Nachricht schreiben
   compute_conflicts: Konflikte neu berechnen
   confirm_new_passwd: Neues Passwort bestätigen
@@ -81,7 +81,7 @@ de:
   controller_accounts_8: Dein altes Passwort war inkorrekt.
   controller_admins_0: Administratorbereich
   controller_application_0: Diese Funktion ist für Gäste nicht verfügbar.
-  controller_cart_2: 'Folgende Pakete wurden nicht gefunden: {{message}}<br> Bitte suche die Repositories heraus, die die Pakete enthalten, und <a href="{{url}}">schlage sie zur Aufnahme in Communtu vor.</a>'
+  controller_cart_2: 'Folgende Pakete wurden nicht gefunden: %{message}<br> Bitte suche die Repositories heraus, die die Pakete enthalten, und <a href="%{url}">schlage sie zur Aufnahme in Communtu vor.</a>'
   controller_categories_0: Kategorien
   controller_categories_2: Kategorie erzeugt.
   controller_categories_3: Kategorie aktualisiert.
@@ -98,7 +98,7 @@ de:
   controller_home_3: Das sieht nicht nach einer Liste von Ubuntu-Paketen aus... <br />Die Paketliste muss einen Paketnamen pro Zeile enthalten
   controller_home_4: Es muss eine Datei mit der Paketliste (ein Paketname pro Zeile) angegeben werden
   controller_home_5: Wir haben deinen Vorschlag erhalten und werden dich informieren, ob und wann wir das vorgeschlagene Repository aufnehmen werden.
-  controller_messages_0: "Ursprüngliche Nachricht von {{user}} am {{datum}}  \n  \n"
+  controller_messages_0: "Ursprüngliche Nachricht von %{user} am %{datum}  \n  \n"
   controller_metapackages_11: Konnte Paket nicht aus Bündel entfernen.
   controller_metapackages_15: <option value='2'>Veröffentlichen<option/>
   controller_metapackages_2: Dieser Bündel-Name ist bereits vergeben!
@@ -134,7 +134,7 @@ de:
   controller_sent_1: Benutzer existiert nicht
   controller_sent_2: Nachricht erfolgreich versendet
   controller_sessions_1: Du bist bereits angemeldet.
-  controller_sessions_3: Deine hier registrierte Distribution wurde auf {{dist_old}} geändert, weil deine alte Distribution von Ubuntu (und daher auch von Communtu) nicht mehr unterstützt wird. Wir empfehlen für deinen Computer ein <a href='http://wiki.ubuntuusers.de/Upgrade'>Upgrade</a> auf {{dist_new}}.
+  controller_sessions_3: Deine hier registrierte Distribution wurde auf %{dist_old} geändert, weil deine alte Distribution von Ubuntu (und daher auch von Communtu) nicht mehr unterstützt wird. Wir empfehlen für deinen Computer ein <a href='http://wiki.ubuntuusers.de/Upgrade'>Upgrade</a> auf %{dist_new}.
   controller_sessions_4: Du wurdest abgemeldet.
   controller_sessions_5: Dein Benutzername oder Passwort ist falsch. Bitte ggf. unten auf "Registrieren" klicken.
   controller_sessions_6: Dein Benutzerkonto wurde noch nicht aktiviert. Der Aktivierungscode wurde dir per Email zugeschickt.
@@ -154,7 +154,7 @@ de:
   controller_users_12: Benutzer aktiviert
   controller_users_13: Es gab ein Problem mit der Aktivierung dieses Benutzers.
   controller_users_2: Es gab ein Problem mit der Registrierung.
-  controller_users_3: Du wurdest als Nutzer {{anonymous_user}} mit Kennwort {{anonymous_user}} eingeloggt. Bitte ggf. oben rechts auf Nutzer {{anonymous_user}} klicken und in ein dauerhaftes Nutzerkonto umwandeln; ansonsten wird das Konto nach einem Tag wieder gelöscht.
+  controller_users_3: Du wurdest als Nutzer %{anonymous_user} mit Kennwort %{anonymous_user} eingeloggt. Bitte ggf. oben rechts auf Nutzer %{anonymous_user} klicken und in ein dauerhaftes Nutzerkonto umwandeln; ansonsten wird das Konto nach einem Tag wieder gelöscht.
   controller_users_4: Es gab ein Problem mit dem Gastzugang.
   controller_users_5: Benutzerdaten aktualisiert
   controller_users_6: Benutzerdaten übernommen und Benutzerkonto dauerhaft gemacht.
@@ -194,7 +194,7 @@ de:
   direct_indirect_covered_packages_warning: Achtung! Dauert lange und sollte nur vom Admin-Server (communtu.de:3006) aus aufgerufen werden
   discuss: discuss
   distribution: Distribution
-  distribution_derivative_mismatch: '{{derivative}} ist nur unter {{distributions}} verfügbar'
+  distribution_derivative_mismatch: '%{derivative} ist nur unter %{distributions} verfügbar'
   donate: spende
   donation_possibility: Spendenmöglichkeit
   donation_purpose: 'Verwendungszweck: Communtu'
@@ -263,10 +263,10 @@ de:
   install2: installieren
   install_by_default: 'Standardmäßig installieren:'
   install_package_sources_first: Paket installieren. Bitte ggf. vorher die Quellen hinzufügen.
-  install_bundle: Installation des Bündels {{name}}
-  install_bundle_steps: Die Installation des Bündels {{name}} geschieht in mehreren Schritten, siehe rechts.
-  install_package: Installation des Pakets {{name}}
-  install_package_steps: Die Installation des Pakets {{name}} geschieht in mehreren Schritten, siehe rechts.
+  install_bundle: Installation des Bündels %{name}
+  install_bundle_steps: Die Installation des Bündels %{name} geschieht in mehreren Schritten, siehe rechts.
+  install_package: Installation des Pakets %{name}
+  install_package_steps: Die Installation des Pakets %{name} geschieht in mehreren Schritten, siehe rechts.
   install_software: Software installieren
   installation_two_steps: "Installation des Pakets in zwei Schritten:"
   installing_using_script: installieren mittels Skript
@@ -274,7 +274,7 @@ de:
   invalid_activation_code_please_check_again: Ungültiger Anderungscode. Bitte den Code prüfen und nochmals versuchen. (Vielleicht hat dein Email-Programm einen Zeilenumbruch eingefügt?)
   invisible_distribution: Unsichtbare Distribution
   iso_deleted: Die ISO-Datei wurde leider aus Platzgründen gelöscht.
-  iso_howto: Über den Link kannst du eine iso-Datei herunterladen. Diese kannst du dann unter Ubuntu z.B. mit {{brasero}} oder {{k3b}} brennen. Unter Windows gibt es ebenfalls verschiedene Brennprogramme. Bitte wähle eine Option wie "Abbild brennen" oder "iso brennen". Wenn die iso-Datei sehr groß ist, musst du eine DVD verwenden.<br /> Mit der entstandenen CD oder DVD kannst du dann <a href="http://wiki.ubuntuusers.de/Ubuntu_Installation" target="_blank">Ubuntu installieren</a>.
+  iso_howto: Über den Link kannst du eine iso-Datei herunterladen. Diese kannst du dann unter Ubuntu z.B. mit %{brasero} oder %{k3b} brennen. Unter Windows gibt es ebenfalls verschiedene Brennprogramme. Bitte wähle eine Option wie "Abbild brennen" oder "iso brennen". Wenn die iso-Datei sehr groß ist, musst du eine DVD verwenden.<br /> Mit der entstandenen CD oder DVD kannst du dann <a href="http://wiki.ubuntuusers.de/Ubuntu_Installation" target="_blank">Ubuntu installieren</a>.
   iso_image: ISO-Image 
   iso_ready: Iso fertig
   kommentieren: Kommentieren
@@ -299,7 +299,7 @@ de:
   livecd_email_body: 'Deine bei uns erstellte Live-CD/DVD bzw. das ISO Image für die Erstellung einer Live-CD/DVD oder USB Stick wurde erstellt!'
   livecd_email_body_2: 'Bei Fragen und Anregungen bitten wir Dich bei uns zu melden.'
   livecd_email_body_3: 'Wir hoffen, dass Du viel Spaß mit Deinem Ubuntu hast.'
-  livecd_email_body_failed: 'Deine bei und erstellte Live-CD/DVD bzw. das ISO Image für die Erstellung einer Live-Cd/DVD oder USB Stick {{name}} konnte leider nicht erstellt werden. Wir kümmern uns um das Problem.'
+  livecd_email_body_failed: 'Deine bei und erstellte Live-CD/DVD bzw. das ISO Image für die Erstellung einer Live-Cd/DVD oder USB Stick %{name} konnte leider nicht erstellt werden. Wir kümmern uns um das Problem.'
   livecd_email_body_footer: 'Liebe Grüße,'
   livecd_email_body_footer_2: 'Dein Communtu-Team'
   livecd_email_body_link: 'Den Download kannst Du unter folgendem Link aufrufen: '
@@ -309,9 +309,9 @@ de:
   livecd_image: CD-Image
   livecd_image_link: http://wiki.ubuntuusers.de/CD-Images
   livecd_incorrect_name: Der Name der LiveCD/DVD darf nur aus Buchstaben, Zahlen, _ und - bestehen
-  livecd_message: Über eine Live-CD kann die Software sowohl ausprobiert als auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} erstellt, die du dann brennen kannst.<br /><br /> Die Erstellung des Images dauert eine gewisse Zeit. Du wirst per Email benachrichtigt, sobald das Image fertig ist. Bitte achte darauf, dass in deinen Benutzereinstellungen eine gültige Email-Adresse angegeben ist.
-  liveusb_message: Über einen USB-Stick kann die Software sowohl ausprobiert als auch installiert werden. Dazu wird zunächst ein sogenanntes {{cdimage_link}} erstellt, die du dann auf den USB-Stick übertragen kannst.<br /><br /> Die Erstellung des Images dauert eine gewisse Zeit. Du wirst per Email benachrichtigt, sobald das Image fertig ist. Bitte achte darauf, dass in deinen Benutzereinstellungen eine gültige Email-Adresse angegeben ist.
-  livecd_please_register: Um Live-CD/DVDs oder USB-Sticks zu erstellen, musst du erst das anonyme Benutzerkonto {{register}} oder dich mit {{login}}.
+  livecd_message: Über eine Live-CD kann die Software sowohl ausprobiert als auch installiert werden. Dazu wird zunächst ein sogenanntes %{cdimage_link} erstellt, die du dann brennen kannst.<br /><br /> Die Erstellung des Images dauert eine gewisse Zeit. Du wirst per Email benachrichtigt, sobald das Image fertig ist. Bitte achte darauf, dass in deinen Benutzereinstellungen eine gültige Email-Adresse angegeben ist.
+  liveusb_message: Über einen USB-Stick kann die Software sowohl ausprobiert als auch installiert werden. Dazu wird zunächst ein sogenanntes %{cdimage_link} erstellt, die du dann auf den USB-Stick übertragen kannst.<br /><br /> Die Erstellung des Images dauert eine gewisse Zeit. Du wirst per Email benachrichtigt, sobald das Image fertig ist. Bitte achte darauf, dass in deinen Benutzereinstellungen eine gültige Email-Adresse angegeben ist.
+  livecd_please_register: Um Live-CD/DVDs oder USB-Sticks zu erstellen, musst du erst das anonyme Benutzerkonto %{register} oder dich mit %{login}.
   livecd_previous_cds: 'Bisher erstellte Iso-Dateien (für Live-CDs/DVDs oder USB-Sticks):'
   livecd_start: Live-CD/DVD erstellen
   livecd_start_message: 'Hier kannst du eine Live-CD/DVD erstellen lassen, die die von dir ausgewählte Software enthält. Du hast folgende Bündel ausgewählt:'
@@ -347,15 +347,15 @@ de:
   model_message_0: Bitte einen Betreff angeben
   model_package_0: Freie Software
   model_package_1: Frei+proprietär
-  model_package_10: Bei der Synchronisation des Repositories {{repo_name}} konnte das Paket {{package_name}} nicht gefunden werden.
+  model_package_10: Bei der Synchronisation des Repositories %{repo_name} konnte das Paket %{package_name} nicht gefunden werden.
   model_package_11: Konnte keine URL feststellen
-  model_package_12: Inhalt von {{file}} entspricht nicht Repository-Syntax
+  model_package_12: Inhalt von %{file} entspricht nicht Repository-Syntax
   model_package_2: Unbekannt
   model_package_6: <br> hat nicht das richtige Format
-  model_package_7: Konnte URL für {{repo}} nicht feststellen
-  model_package_9: Bei der Synchronisation des Repositories {{repo_name}} konnte kein PackageDistr-Eintrag für das Paket {{package_name}} gefunden werden.
-  model_package_could_not_read: Konnte {{url}} nicht lesen
-  model_package_need_not_update: '{{url}} hat sich nicht geändert'
+  model_package_7: Konnte URL für %{repo} nicht feststellen
+  model_package_9: Bei der Synchronisation des Repositories %{repo_name} konnte kein PackageDistr-Eintrag für das Paket %{package_name} gefunden werden.
+  model_package_could_not_read: Konnte %{url} nicht lesen
+  model_package_need_not_update: '%{url} hat sich nicht geändert'
   model_user_meta_tabz_0: Meine Bündel
   model_user_meta_tabz_1: Alle veröffentlichten Bündel
   model_user_meta_tabz_2: Ubuntu-Pakete
@@ -434,7 +434,7 @@ de:
   search_package: Paket suchen
   search_programs_bundles: Du hast bereits ein Ubuntu installiert und suchst jetzt passende Programme? Hier kannst du deine Interessengebiete eingeben und <b>passende vorkonfigurierte Programmbündel downloaden</b>.
   security_type: 'Sicherheitstyp:'
-  select_default_bundles: Standard-Bündel für {{category}} auswählen
+  select_default_bundles: Standard-Bündel für %{category} auswählen
   senden: Abschicken
   server_status: Status des Servers
   settings: Einstellungen
@@ -470,8 +470,8 @@ de:
   url: Url
   usb: USB-Stick
   usb_created: Die Iso-Datei für den USB-Stick ist fertig.
-  usb_creator: "Mit dem Programm {{link}} kannst du das iso-Image auf einen USB-Stick spielen" 
-  usb_donate: Die Iso-Erstellung braucht viel Server-Kapazität. Bitte {{donate_link}}, um dieses Angebot weiter zu ermöglichen.
+  usb_creator: "Mit dem Programm %{link} kannst du das iso-Image auf einen USB-Stick spielen"
+  usb_donate: Die Iso-Erstellung braucht viel Server-Kapazität. Bitte %{donate_link}, um dieses Angebot weiter zu ermöglichen.
   usb_howto: <h2>Wie kommt das Image auf den USB-Stick?</h2>
     <h3>Ubuntu</h3>Wenn du bereits ein Ubuntu installiert hast kann hierfür ganz einfach der Startmedienersteller benutzt werden. 
     Erreicht werden kann dieser über System -> Systemverwaltung -> Startmedienersteller. 
@@ -506,7 +506,7 @@ de:
   view_cart_new_from_list_0: Bündel aus einer Paketliste erstellen
   view_cart_new_from_list_1: Hier kannst du ein Bündel aus einer vorhandenen Paketliste erstellen.  Die Liste muss in Form einter Textdatei vorliegen (plain text),  mit einem Paketnamen pro Zeile.
   view_cart_new_from_list_2: Die Liste der auf deinem Computer installierten Pakete kannst du zum Beispiel mit
-  view_cart_new_from_list_3: herausfinden. (Dazu muss das Paket {{debfoster}} installiert sein. Die erzeugte Liste enthält nur eine minimale Liste von (Meta-)Paketen, die notwendig ist, um deine Installation komplett wiederherzustellen.)
+  view_cart_new_from_list_3: herausfinden. (Dazu muss das Paket %{debfoster} installiert sein. Die erzeugte Liste enthält nur eine minimale Liste von (Meta-)Paketen, die notwendig ist, um deine Installation komplett wiederherzustellen.)
   view_cart_new_from_list_4: 'Datei, die die Paketliste enthält, auswählen:'
   view_cart_new_from_list_5: Erstellen
   view_cart_new_from_list_tip: 'Tipp: eine große Liste kannst du auch zunächst mit einem Editor thematisch sortieren und die resultierenden Teillisten einzeln hier hochladen. Die entstehenden Bündel kannst du wiederum zu einem Bündel zusammenfassen. Dadurch entsteht ein besser strukturiertes Bündel.'
@@ -813,7 +813,7 @@ de:
   view_metapackages_show_save_2: Neues Metapaket erstellen.
   view_metapackages_show_save_3: Zum Erstellen des Metapakets muss ein englischer Titel und eine englische Beschreibung vergeben werden.
   view_metapackages_show_version: 'Version:'
-  view_metapackages_show_version_v: (Version {{v}})
+  view_metapackages_show_version_v: (Version %{v})
   view_my_mailer_mail_0: "Hallo, \n\nes wurde auf www.communtu.de ein Feedback gesendet. Der Betreff ist:"
   view_my_mailer_mail_1: 'Folgender Kommentar wurde hinterlassen:'
   view_my_mailer_mailerror_0: "Hallo,  \n es wurde auf www.communtu.de ein Fehler gemeldet.  \nDer Benutzer möchte ganz gern, darüber benachrichtigt werden, wenn der Fehler nicht mehr auftritt."
@@ -859,7 +859,7 @@ de:
   view_rating_rating_rate: von 5 Sternen vergeben
   view_rating_show_title_got_ratings: von 5 Sternen
   view_rating_show_title_no_ratings: noch keine User Bewertung
-  view_rating_show_title_ratings_count: (Basierend auf {{votes}} Bewertung(en))
+  view_rating_show_title_ratings_count: (Basierend auf %{votes} Bewertung(en))
   view_repositories_edit_0: Repository bearbeiten
   view_repositories_edit_1: 'Distribution:'
   view_repositories_index_0: Repositories
@@ -869,7 +869,7 @@ de:
   view_repositories_multinew_0: Einlesen
   view_repositories_new_0: 'Neues Repository für '
   view_repositories_new_4: GPG Schlüssel (Optional)
-  view_repositories_show_4: 'Paketliste für {{arch}}:'
+  view_repositories_show_4: 'Paketliste für %{arch}:'
   view_repositories_show_6: '        OpenSource'
   view_repositories_show_7: '        kommerziell '
   view_roles__role_0: Rolle löschen
@@ -910,8 +910,8 @@ de:
   view_user_profiles__installation_28: http://wiki.ubuntuusers.de/apturl
   view_user_profiles__installation_29: ' konfigurieren.'
   view_user_profiles__installation_30: 'Hinweis: Bitte .deb-Dateien nicht umbenennen.'
-  view_user_profiles__installation_31: Alle Ubuntu-Pakete und Communtu-Bündel können auch mittles {{synaptic}} (unter System -> Systemverwaltung) angezeigt, installiert und deinstalliert werden. Änderungen an Bündeln werden über die Ubuntu-Paketverwaltung automatisch eingespielt.
-  view_user_profiles__installation_34: Liste der {{sources}}, die zu deinem System hinzugefügt werden.
+  view_user_profiles__installation_31: Alle Ubuntu-Pakete und Communtu-Bündel können auch mittles %{synaptic} (unter System -> Systemverwaltung) angezeigt, installiert und deinstalliert werden. Änderungen an Bündeln werden über die Ubuntu-Paketverwaltung automatisch eingespielt.
+  view_user_profiles__installation_34: Liste der %{sources}, die zu deinem System hinzugefügt werden.
   view_user_profiles__profile_data_0: 'Voreinstellungen eingeben'
   view_user_profiles__profile_data_1: 'Auf dieser Seite kannst du die Grundeinstellungen deines Computers angeben. In der Regel kannst du die Einstellungen so lassen.'
   view_user_profiles__profile_data_10: ' Nur Ubuntuquellen zulassen ("main/restricted", sehr sicher: Sicherheits-Updates von Ubuntu)'
@@ -976,7 +976,7 @@ de:
   view_users_show_8: Nachrichten
   view_videos_edit_0: Video bearbeiten
   view_videos_show_0: 'Url:'
-  vm_active_session: Du hast bereits eine virtuelle Maschine gestartet; bitte diese erst {{stop}}.
+  vm_active_session: Du hast bereits eine virtuelle Maschine gestartet; bitte diese erst %{stop}.
   vm_no_iso_found: "Die virtuelle Maschine kann nicht gestartet werden: es wurde kein Iso-Abbild gefunden"
   vm_no_space: "Nicht genügend Platz auf dem Server, um eine virtuelle Maschine zu starten"
   vm_no_vnc: Kein VNC-Port gefunden

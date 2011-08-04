@@ -124,7 +124,7 @@ class UsersController < ApplicationController
   end
 
   
-  def update
+  def update 
     @user = User.find(current_user)
     flash[:notice] = t(:controller_users_5)
     if @user.anonymous then

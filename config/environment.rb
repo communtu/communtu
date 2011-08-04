@@ -5,11 +5,15 @@
 # ENV['RAILS_ENV'] ||= 'development'
 
 # Specifies gem version of Rails to use when vendor/rails is not present
-RAILS_GEM_VERSION = '2.2.2' # unless defined? RAILS_GEM_VERSION
+RAILS_GEM_VERSION = '2.3.8' # unless defined? RAILS_GEM_VERSION
 
 # Bootstrap the Rails environment, frameworks, and default configuration
+require 'thread'
 require File.join(File.dirname(__FILE__), 'boot')
-require 'rails_generator/secret_key_generator'
+#
+# this was commented out for switching to 2.3.8
+#
+#require 'rails_generator/secret_key_generator'
 Rails::Initializer.run do |config|
   # Settings in config/environments/* take precedence over those specified here.
   # Application configuration should go into files in config/initializers
@@ -36,15 +40,18 @@ Rails::Initializer.run do |config|
   # If you change this key, all old sessions will become invalid!
   # Make sure the secret is at least 30 characters and all random, 
   # no regular words or you'll be exposed to dictionary attacks.
-  secret_file = File.join(RAILS_ROOT, "secret")
-  if File.exist?(secret_file)
-    secret = File.read(secret_file)
-  else
-    secret = Rails::SecretKeyGenerator.new("insoshi").generate_secret
-    File.open(secret_file, 'w') { |f| f.write(secret) }
-  end
+  #
+  # the lines below are commented because they cause an error when switching to 2.3.8
+  #
+#  secret_file = File.join(RAILS_ROOT, "secret")
+#  if File.exist?(secret_file)
+#    secret = File.read(secret_file)
+#  else
+#    secret = Rails::SecretKeyGenerator.new("insoshi").generate_secret
+#    File.open(secret_file, 'w') { |f| f.write(secret) }
+#  end
   config.action_controller.session = {
-    :session_key     => '_communtu_session',
+    :key     => '_communtu_session', # was session_key, changed for 2.3.8
     :secret          => '367e4806af33b2cd7ddc839f908a7ed6844a3b369ce46724a3c419a633c1c68d612692d3f441ba2b31158e167c4bb5c81a5be173e83a2d6a7f7043111be4fdfc'
   }
 
