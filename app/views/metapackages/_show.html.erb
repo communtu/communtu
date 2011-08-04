@@ -143,9 +143,13 @@
 
 <% if is_admin? %>
 <p>
-  <% if !@metapackage.conflict_msg.nil? and !@metapackage.conflict_msg.empty? %>
-    <%= t(:conflicts) %>
-    <pre><%=@metapackage.conflict_msg %></pre>
+  <% if !@metapackage.conflict_msg.nil? %>
+    <%= t(:conflicts) %>:
+	<% if @metapackage.conflict_msg.empty? %>
+	  &nbsp;<%= t(:none)%><br>
+	<% else %>
+      <pre><%=@metapackage.conflict_msg %></pre>
+	<% end %>
   <% end %>
   <%= link_to(t(:compute_conflicts),:action => :compute_conflicts, :id => @metapackage.id) %>
 </p>
