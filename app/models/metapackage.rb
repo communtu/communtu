@@ -185,19 +185,17 @@ class Metapackage < BasePackage
     end while modified
   end
 
-  # use edos_checkdeb for detection of conflicts
+  # use edos_checkdeb for detection of conflicts of a metapackage
   # all=true: also find conflicts in all bundles that are introduced by modifying the present one (see #542)
   # before using this, #1212 should be fixed first, such that we can use the "current version" (and not the "debianized version") 
   def edos_conflicts(all=false)
     name = self.debian_name
-    escaped_name = name.gsub("+","\\\\+")
     bundle_names = if all then
       Metapackage.all.map(&:debian_name).join(",")
     else
       name
     end  
-    description = "test"
-    errs = []
+    errs = ""
     # use largest license and security type, this should reveal all conflicts  
     license, security = 1, 2
     Distribution.all.each do |dist|
@@ -213,53 +211,57 @@ class Metapackage < BasePackage
           end
         end
         # for each package list, compute the errors
-        errs += package_lists.map do |package_names,ders|
-          # get repositories needed for bundle
-#          package_names = []
-#          repos = Set.[]
-#          self.recursive_packages package_names, repos, dist, arch, license, security
-#          repos = dist.repositories
-#          puts repos.map(&:name)
-#          repo_files = repos.map{|r| r.file_name(arch)}.join(" ")  
-          repo_files = dist.dir_name + "/[0-9]*#{arch.name}"
-          # generate control file for bundle
-          tmpdir = IO.popen("mktemp -d",&:read).chomp
-          res = ""
-          Dir.chdir tmpdir do
-            # get all Communtu Package files, remove current bundle
-            File.open("Packages","w") do |f|
-              skip=false
-              IO.popen("cat #{dist.package_files(arch)}").each do |line|
-                if skip then
-                  skip = /^Package:/.match(line).nil?
-                end  
-                if !/^Package: #{escaped_name}/.match(line).nil? then
-                  skip = true
-                end
-                if !skip then
-                  f.puts line
-                end
-              end
-            end
-            Deb.write_control(name,package_names,description,1)
-            call = "cat Packages #{repo_files} control | edos-debcheck -quiet -explain -checkonly #{bundle_names} |grep -v ^Depends"
-            puts tmpdir, call
-            res = IO.popen(call,&:read)
-          end
-          # system "rm -r #{tmpdir}"
-          if res.include?("FAILED") then
-            "*** error for #{name} #{dist.name} #{arch.name} #{ders.map(&:name).join(",")}:\n #{res}\n"           
-          else
-            nil
-          end
-        end
+        errs += Metapackage.call_edos(name,bundle_names,package_lists,dist,arch)
       end
     end
-    self.conflict_msg = errs.select{|e| not e.nil?}.join("\n")
+    self.conflict_msg = errs
     self.save
     return self.conflict_msg
   end
 
+  # call edos_debcheck for newly created metapackage containing packages as specified by package_list 
+  # package_list is a hash of (package_name_list,derivative_list) pairs, in order to handle
+  # check_names contains the list of (meta)packages that shall be checked for errors
+  # multiple derivatives that lead to the same package lists efficiently  
+  def self.call_edos(name,check_names,package_lists,dist,arch)
+    escaped_name = name.gsub("+","\\\\+")
+    description = "test"
+    errs = package_lists.map do |package_names,ders|
+      repo_files = dist.dir_name + "/[0-9]*#{arch.name}"
+      # generate control file for bundle
+      tmpdir = IO.popen("mktemp -d",&:read).chomp
+      res = ""
+      Dir.chdir tmpdir do
+        # get all Communtu Package files, remove current bundle
+        File.open("Packages","w") do |f|
+          skip=false
+          IO.popen("cat #{dist.package_files(arch)}").each do |line|
+            if skip then
+              skip = /^Package:/.match(line).nil?
+            end  
+            if !/^Package: #{escaped_name}/.match(line).nil? then
+              skip = true
+            end
+            if !skip then
+              f.puts line
+            end
+          end
+        end
+        Deb.write_control(name,package_names,description,1)
+        call = "cat Packages #{repo_files} control | edos-debcheck -quiet -explain -checkonly #{check_names} |grep -v ^Depends"
+        puts tmpdir, call
+        res = IO.popen(call,&:read)
+      end
+      # system "rm -r #{tmpdir}"
+      if res.include?("FAILED") then
+        "*** error for #{name} #{dist.name} #{arch.name} #{ders.map(&:name).join(",")}:\n #{res}\n"           
+      else
+        nil
+      end
+    end
+    return errs.select{|e| not e.nil?}.join("\n")
+  end
+  
   # this function is needed to complement is_present for class Package
   def is_present(distribution,licence,security,arch)
     true
