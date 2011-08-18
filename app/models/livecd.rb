@@ -526,8 +526,8 @@ EOF
   
   # use edos_checkdeb for detection of conflicts of a livecd
   def edos_conflicts
-    name = "livecdtest"
-    bundle_names = ["livecdtest"]
+    name = "livecd-"+cd.fullname
+    bundle_names = [name]
     bundle_list = self.bundles.map(&:debian_name)
     package_lists = { bundle_list => [self.derivative]}
     self.conflict_msg = Metapackage.call_edos(name,bundle_names,package_lists,self.distribution,self.architecture) 

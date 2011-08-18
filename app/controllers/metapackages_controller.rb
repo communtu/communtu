@@ -279,6 +279,7 @@ class MetapackagesController < ApplicationController
           @trans_update_description_english.save
         end
       end
+      @metapackage.conflict_msg = nil # conflicts need to be newly computed
       @metapackage.save
       if editing_metapackage?
         save_cart(@metapackage)
