@@ -593,7 +593,7 @@ class MetapackagesController < ApplicationController
   def compute_conflicts
     @metapackage = Metapackage.find(params[:id])
     @metapackage.edos_conflicts
-      redirect_to :back
+    redirect_to :back
   end
 
 private

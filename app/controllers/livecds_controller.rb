@@ -103,4 +103,10 @@ class LivecdsController < ApplicationController
     render :action => 'show'
   end
 
+  def compute_conflicts
+    @cd = Livecd.find(params[:id])
+    @cd.edos_conflicts
+    redirect_to :back
+  end
+
 end

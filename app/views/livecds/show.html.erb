@@ -88,6 +88,21 @@
       <% end %>
 -->
 <hr>
+<% if is_admin? %>
+<p>
+  <% if !@cd.conflict_msg.nil? %>
+    <%= t(:conflicts) %>:
+	<% if @cd.conflict_msg.empty? %>
+	  &nbsp;<%= t(:none)%><br>
+	<% else %>
+      <pre><%=@cd.conflict_msg %></pre>
+	<% end %>
+  <% end %>
+  <%= link_to(t(:compute_conflicts),:action => :compute_conflicts, :id => @cd.id) %>
+</p>
+<% end %>
+
+<hr>
 <h3><%= t(:admin_interface_for_livecd)%></h3>
 <%= t(:start_vm_instructions) %>
 <pre>
