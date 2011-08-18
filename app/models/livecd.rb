@@ -529,7 +529,7 @@ EOF
     name = "livecdtest"
     bundle_names = ["livecdtest"]
     bundle_list = self.bundles.map(&:debian_name)
-    package_lists = { bundle_list => self.derivative}
+    package_lists = { bundle_list => [self.derivative]}
     self.conflict_msg = Metapackage.call_edos(name,bundle_names,package_lists,self.distribution,self.architecture) 
     self.save
     return self.conflict_msg
