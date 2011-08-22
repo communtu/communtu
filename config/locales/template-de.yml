@@ -296,7 +296,7 @@ de:
   livecd_email_body: 'Deine bei uns erstellte Live-CD/DVD bzw. das ISO Image für die Erstellung einer Live-CD/DVD oder USB Stick wurde erstellt!'
   livecd_email_body_2: 'Bei Fragen und Anregungen bitten wir Dich bei uns zu melden.'
   livecd_email_body_3: 'Wir hoffen, dass Du viel Spaß mit Deinem Ubuntu hast.'
-  livecd_email_body_failed: 'Deine bei und erstellte Live-CD/DVD bzw. das ISO Image für die Erstellung einer Live-Cd/DVD oder USB Stick {{name}} konnte leider nicht erstellt werden. Wir kümmern uns um das Problem.'
+  livecd_email_body_failed: 'Deine bei uns erstellte Live-CD/DVD bzw. das ISO Image für die Erstellung einer Live-Cd/DVD oder USB Stick {{name}} konnte leider nicht erstellt werden. Wir kümmern uns um das Problem.'
   livecd_email_body_footer: 'Liebe Grüße,'
   livecd_email_body_footer_2: 'Dein Communtu-Team'
   livecd_email_body_link: 'Den Download kannst Du unter folgendem Link aufrufen: '
