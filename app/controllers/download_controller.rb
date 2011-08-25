@@ -115,7 +115,14 @@ class DownloadController < ApplicationController
   end
 
   def installation
-    @metas = current_user.selected_packages.uniq.map{|m| m.debian_name}.join(",")
+    @metas = current_user.selected_packages
+    @meta_names = @metas.uniq.map{|m| m.debian_name}.join(",")
+    @sources = {}
+    @metas.each do |p|
+       p.recursive_packages_sources @sources, current_user.distribution, current_user.architecture, current_user.license, current_user.security
+   end
+   @apt_get = @sources.values.flatten.uniq.map(&:name).join(" ")
+   @source_names = @sources.keys.uniq.map(&:name).join("\n")
   end
 
   def livecd

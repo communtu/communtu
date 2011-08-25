@@ -261,6 +261,8 @@ de:
   info_new: neue News anlegen
   install: Installieren
   install2: installieren
+  install_apt_get: "Pakete über apt-get installieren:"
+  install_apt_get_repos: "Liste der benötigten Quellen, für die /etc/apt/sources.list:"
   install_by_default: 'Standardmäßig installieren:'
   install_package_sources_first: Paket installieren. Bitte ggf. vorher die Quellen hinzufügen.
   install_bundle: Installation des Bündels %{name}

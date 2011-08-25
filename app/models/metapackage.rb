@@ -249,10 +249,10 @@ class Metapackage < BasePackage
         end
         Deb.write_control(name,package_names,description,1)
         call = "cat Packages #{repo_files} control | edos-debcheck -quiet -explain -checkonly #{check_names} |grep -v ^Depends"
-        puts tmpdir, call
+        puts call
         res = IO.popen(call,&:read)
       end
-      # system "rm -r #{tmpdir}"
+      system "rm -r #{tmpdir}"
       if res.include?("FAILED") then
         "*** error for #{name} #{dist.name} #{arch.name} #{ders.map(&:name).join(",")}:\n #{res}\n"           
       else
