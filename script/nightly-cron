@@ -15,6 +15,8 @@
 # You should have received a copy of the GNU Affero Public License
 # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
 
+export GEM_HOME=/var/lib/gems/1.8  # adapt to your ruby installation
+
 cd `dirname "$0"`/..
 # webalizer
 script/webalizer
