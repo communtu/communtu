@@ -20,12 +20,10 @@
 <table>
 <% for info in @infos %>
   <tr>
-  	<% if info.header != "unknown"%>
     <td>
       <h3><%= info.header %></h3>
       <%= info.content %>
     </td>
-	<% end %>
   </tr>
 <% end %>
 </table>
