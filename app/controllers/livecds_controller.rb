@@ -38,12 +38,7 @@ class LivecdsController < ApplicationController
   def remaster
     @cd = Livecd.find(params[:id])
     if !@cd.generated
-      @cd.failed = false
-      @cd.generating = false
-      @cd.generated = false
-      @cd.log = nil
-      @cd.save
-      # remastering done by daemon
+       @cd.mark_remaster
     end
     redirect_to :back
   end
