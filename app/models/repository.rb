@@ -149,6 +149,28 @@ class Repository < ActiveRecord::Base
     end
   end
 
+  # get all packages for a specific architecture. count = true only counts them
+  def packages_for_arch(arch,count = false)
+    search = {:conditions => ["package_distrs.repository_id = ? and package_distrs_architectures.architecture_id = ?",self.id,arch.id],
+              :include => ["package_distrs","package_distrs_architectures"]}
+    if count then
+      Package.count(search)
+    else
+      Package.find(:all,search)
+    end  
+  end
+
+  # check if number of packages is correct
+  def check_no_of_packages(arch)
+    no_repo = IO.popen("grep -c \"^Package:\" #{self.file_name(arch)}",&:read).to_i
+    no_db = packages_for_arch(arch,true)
+    if no_repo == no_db then
+      return ""
+    else
+      return "Repository #{self.id}, architecture #{arch.id}: There shoud be #{no_repo} packages, but there are #{no_db} in the database"
+    end
+  end
+
   # test whether all sources are present
   def test_sources
     Architecture.all.map {|a| self.test_source(a) }
@@ -394,7 +416,7 @@ class Repository < ActiveRecord::Base
       tmp_file.close
       system "gunzip -f #{tmp_name}.gz"
       # contents unchanged? then we are done
-      if !force and system "diff #{tmp_name} #{self.file_name arch}" then
+      if !force and system "diff -q #{tmp_name} #{self.file_name arch}" then
         return {:notice => I18n.t(:model_package_need_not_update,:url => url)}
       end
       file.seek(0,IO::SEEK_SET)

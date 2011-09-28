@@ -109,7 +109,7 @@ class Distribution < ActiveRecord::Base
   def test_all_repos
     self.repositories.map { |r| r.test_sources}.flatten
   end
-
+  
   protected
   def after_create
     # register distribution for all derivatives

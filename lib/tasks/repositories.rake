@@ -22,6 +22,13 @@ namespace :db do
         if r.id % 7 == Date.today.cwday-1 then
           puts "Synchronising repository #{r.id}"
           r.import_source
+          #check for correct number of packages
+          Architecture.all.each do |arch|
+            res = r.check_no_of_packages(arch)
+            if !res.empty
+              puts res
+            end
+          end
         end
       end
       # cleanup database
