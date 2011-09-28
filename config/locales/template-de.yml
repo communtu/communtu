@@ -223,6 +223,7 @@ de:
   first_sync_repos: 'Bitte erst die Repositories synchronisieren. Dies geschieht normalerweise automatisch innerhalb von einer Woche. Achtung: an dieser Stelle wird nur geprüft, ob überhaupt etwas synchronisiert wurde, nicht, ob der Prozess fertig ist.'
   force_sync: Synchronisierung des Repositories erzwingen
   former_participants: Ehemalige Mitwirkende
+  forum: Forum
   four_and_fourty_letters: Zwischen 4 und 40 Zeichen
   free_disk_space: Freier Plattenplatz (root / home / isos)
   generate_all_debs_for_bundle: Alle debs für das Bündel erzeugen
