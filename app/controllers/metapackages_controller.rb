@@ -196,6 +196,9 @@ class MetapackagesController < ApplicationController
     if params[:metapackage][:version].nil? or params[:metapackage][:version].empty? then
       flash[:error] += t(:controller_metapackages_7)
       error = true
+    elsif !Deb.check_version(params[:metapackage][:version]) then
+      flash[:error] += t(:illformed_version)
+      error = true
     end
     if !@metapackage.debianized_version.nil? \
        and !@metapackage.debianized_version.empty? \

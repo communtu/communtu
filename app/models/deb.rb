@@ -47,7 +47,11 @@ class Deb < ActiveRecord::Base
   APT_KEY_COMMAND = "apt-key adv --recv-keys --keyserver"
   # command for adding packages to repository
   REPREPRO = "GNUPGHOME=/home/communtu/.gnupg reprepro -v -b #{RAILS_ROOT} --outdir #{RAILS_ROOT}/public/debs --confdir #{RAILS_ROOT}/debs --logdir #{RAILS_ROOT}/log --dbdir #{RAILS_ROOT}/debs/db --listdir #{RAILS_ROOT}/debs/list"
-
+ 
+  def self.check_version(no)
+     ! /^([0-9]:)?([0-9][0-9a-zA-Z.+:~]*)(-([0-9a-zA-Z.+~]+))*/.match(no).nil?
+  end
+  
   def self.compute_codename(distribution,derivative,license,security)
     derivative.name.downcase+"-"+distribution.short_name.downcase+"-" +Package.license_components[license]+"-"+Package.security_components[security]
   end
@@ -494,5 +498,8 @@ class Deb < ActiveRecord::Base
 #  def before_destroy
 #     system "#{REPREPRO} remove #{self.codename} #{self.name}"
 #  end
+  def validate
+    errors.add("version", "has invalid format") unless Deb.check_version(version)
+  end
   
 end
