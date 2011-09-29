@@ -240,6 +240,7 @@ class Metapackage < BasePackage
   def self.call_edos(name,check_names,package_lists,dist,arch)
     pfile = dist.package_files(arch)
     if !File.exists?(pfile) then
+      puts "#{pfile} not found"
       return nil
     end
     escaped_name = name.gsub("+","\\\\+")
