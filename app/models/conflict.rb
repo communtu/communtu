@@ -24,5 +24,6 @@
 # package2_id
 
 class Conflict < ActiveRecord::Base
-  belongs_to :base_package, :foreign_key => :package2_id
+  belongs_to :bundle1, :class_name => 'Metapackage', :foreign_key => :package_id
+  belongs_to :bundle2, :class_name => 'Metapackage', :foreign_key => :package2_id
 end

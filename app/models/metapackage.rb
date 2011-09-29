@@ -168,28 +168,34 @@ class Metapackage < BasePackage
     return all_cons
   end
 
-  def self.update_conflicts
-    begin
-      puts "New iteration"
-      modified = false
-      Metapackage.all.each do |m|
-        m.base_packages.each do |p|
-          p.conflicting_packages.each do |cp|
-            if Conflict.find(:first,:conditions => {:package_id => m.id, :package2_id => cp.id}).nil?
-              modified = true
-              Conflict.create(:package_id => m.id, :package2_id => cp.id)
-            end
-          end
-        end
+  def update_conflicts
+    conflicting_bundles = []
+    # check all other bundles for conflicts
+    (Metapackage.all-[self]).each do |m|
+      conflicts = edos_conflicts(false,m)
+      # error? then abort
+      if conflicts.nil? then return false end
+      if !conflicts.empty? then
+        conflicting_bundles << m
       end
-    end while modified
+    end
+    # remove all (old) conflicts for this bundle
+    Conflict.destroy_all(["package_id = ? or package2_id = ?",self.id,self.id])
+    # enter found conflicts
+    conflicting_bundles.each do |m|
+      Conflict.create(:package_id => self.id, :package2_id => m.id)
+      Conflict.create(:package_id => m.id, :package2_id => self.id)
+    end
+    return true
   end
 
   # use edos_checkdeb for detection of conflicts of a metapackage
   # all=true: also find conflicts in all bundles that are introduced by modifying the present one (see #542)
-  # before using this, #1212 should be fixed first, such that we can use the "current version" (and not the "debianized version") 
-  def edos_conflicts(all=false)
+  # before using this, #1212 should be fixed first, such that we can use the "current version" (and not the "debianized version")
+  # bundle2: second bundle that shall be checked against the current one 
+  def edos_conflicts(all=false,bundle2=nil)
     name = self.debian_name
+    bundle2_name = if bundle2.nil? then nil else bundle2.debian_name end
     bundle_names = if all then
       Metapackage.all.map(&:debian_name).join(",")
     else
@@ -204,6 +210,9 @@ class Metapackage < BasePackage
         package_lists = {}
         Derivative.all.each do |der|
           list = package_names_for_deb(dist,der,license,security,arch)
+          if !bundle2_name.nil? then
+            list << !bundle2_name
+          end
           if package_lists[list].nil? then
             package_lists[list] = [der]
           else
@@ -211,12 +220,17 @@ class Metapackage < BasePackage
           end
         end
         # for each package list, compute the errors
-        errs += Metapackage.call_edos(name,bundle_names,package_lists,dist,arch)
+        err = Metapackage.call_edos(name,bundle_names,package_lists,dist,arch)
+        # error? the abort
+        if err.nil? then return nil end
+        errs += err
       end
     end
-    self.conflict_msg = errs
-    self.save
-    return self.conflict_msg
+    if bundle2.nil? then
+      self.conflict_msg = errs
+      self.save
+    end  
+    return errs
   end
 
   # call edos_debcheck for newly created metapackage containing packages as specified by package_list 
@@ -224,6 +238,10 @@ class Metapackage < BasePackage
   # check_names contains the list of (meta)packages that shall be checked for errors
   # multiple derivatives that lead to the same package lists efficiently  
   def self.call_edos(name,check_names,package_lists,dist,arch)
+    pfile = dist.package_files(arch)
+    if !File.exists?(pfile) then
+      return nil
+    end
     escaped_name = name.gsub("+","\\\\+")
     description = "test"
     errs = package_lists.map do |package_names,ders|
@@ -235,7 +253,7 @@ class Metapackage < BasePackage
         # get all Communtu Package files, remove current bundle
         File.open("Packages","w") do |f|
           skip=false
-          IO.popen("cat #{dist.package_files(arch)}").each do |line|
+          IO.popen("cat #{pfile}").each do |line|
             if skip then
               skip = /^Package:/.match(line).nil?
             end  

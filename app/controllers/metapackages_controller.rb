@@ -330,9 +330,10 @@ class MetapackagesController < ApplicationController
       redirect_to edit_metapackage_path(@metapackage)
       return
     end
-    if !@metapackage.internal_conflicts.empty?
-      flash[:error] = t(:controller_metapackages_no_save)
-    elsif !@metapackage.modified
+    #if !@metapackage.internal_conflicts.empty?
+    #  flash[:error] = t(:controller_metapackages_no_save)
+    #els
+    if !@metapackage.modified
       flash[:notice] = t(:controller_metapackages_not_changed)
     elsif @metapackage.debianizing
       flash[:notice] = t(:controller_metapackages_debianizing)
