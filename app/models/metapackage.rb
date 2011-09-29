@@ -478,5 +478,9 @@ class Metapackage < BasePackage
   def before_destroy
     Deb.destroy(self.debs.map{|d| d.id})
   end
-  
+
+  def validate
+    errors.add("version", "has invalid format") unless Deb.check_version(version)
+  end
+
 end

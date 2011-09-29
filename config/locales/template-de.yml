@@ -255,6 +255,7 @@ de:
   helper_distributions_6: Repository löschen
   helper_distributions_8: Quellen anzeigen
   homepage: Startseite
+  illformed_version: "Die Versionsnummer darf nur Buchstaben, Zahlen und .+:~ enthalten und muss mit einer Zahl beginnen. "
   imprint: Impressum
   inbox: Posteingang
   include_programs_bundel: 'Enthaltende Programme/Bündel:'
