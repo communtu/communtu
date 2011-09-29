@@ -238,12 +238,26 @@ class Metapackage < BasePackage
   # check_names contains the list of (meta)packages that shall be checked for errors
   # multiple derivatives that lead to the same package lists efficiently  
   def self.call_edos(name,check_names,package_lists,dist,arch)
-    pfile = dist.package_files(arch)
-    if !File.exists?(pfile) then
-      puts "#{pfile} not found"
+    escaped_name = name.gsub("+","\\\\+")
+    # get all Communtu Package files, remove current bundle
+    packages = []
+    found = false
+    skip=false
+    IO.popen("cat #{dist.package_files(arch)}").each do |line|
+      found = true
+      if skip then
+        skip = /^Package:/.match(line).nil?
+      end  
+      if !/^Package: #{escaped_name}/.match(line).nil? then
+        skip = true
+      end
+      if !skip then
+        packages << line
+      end
+    end
+    if !found then
       return nil
     end
-    escaped_name = name.gsub("+","\\\\+")
     description = "test"
     errs = package_lists.map do |package_names,ders|
       repo_files = dist.dir_name + "/[0-9]*#{arch.name}"
@@ -251,20 +265,10 @@ class Metapackage < BasePackage
       tmpdir = IO.popen("mktemp -d",&:read).chomp
       res = ""
       Dir.chdir tmpdir do
-        # get all Communtu Package files, remove current bundle
         File.open("Packages","w") do |f|
-          skip=false
-          IO.popen("cat #{pfile}").each do |line|
-            if skip then
-              skip = /^Package:/.match(line).nil?
-            end  
-            if !/^Package: #{escaped_name}/.match(line).nil? then
-              skip = true
-            end
-            if !skip then
-              f.puts line
-            end
-          end
+          packages.each do |p|
+            f.puts p
+          end  
         end
         Deb.write_control(name,package_names,description,1)
         call = "cat Packages #{repo_files} control | edos-debcheck -quiet -explain -checkonly #{check_names} |grep -v ^Depends"
