@@ -243,7 +243,8 @@ class Metapackage < BasePackage
     packages = []
     found = false
     skip=false
-    IO.popen("cat #{dist.package_files(arch)}").each do |line|
+    f=IO.popen("cat #{dist.package_files(arch)}")
+    f.each do |line|
       found = true
       if skip then
         skip = /^Package:/.match(line).nil?
@@ -255,6 +256,7 @@ class Metapackage < BasePackage
         packages << line
       end
     end
+    f.close
     if !found then
       return nil
     end
