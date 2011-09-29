@@ -136,6 +136,16 @@ class Livecd < ActiveRecord::Base
                      :singleton => true)
   end
   
+  # mark a cd for remastering
+  def mark_remaster
+    self.failed = false
+    self.generating = false
+    self.generated = false
+    self.log = nil
+    self.save
+    # remastering is now done by daemon
+  end
+
   # create the liveCD in a forked process
   def fork_remaster(port=2222)
       nice = (self.users[0].nil? or !self.users[0].has_role?('administrator'))
@@ -222,7 +232,11 @@ class Livecd < ActiveRecord::Base
         MyMailer.deliver_livecd(user,"#{Livecd.rails_url}/livecds/#{self.id}")
       end
     else
-      if self.first_try then
+      # mysql problem? then retry
+      if !self.log.nil? and self.log.include?("Mysql::Error: MySQL server has gone away") then
+        self.mark_remaster
+      # first try? then inform users about failure  
+      elsif self.first_try then
         self.users.each do |user|
           MyMailer.deliver_livecd_failed(user,self.fullname)
         end
