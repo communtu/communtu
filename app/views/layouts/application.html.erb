@@ -37,7 +37,7 @@
  </div> 
 	<div id="navihead">
 <%= link_to( {t(:community_title), image_tag('/images/nach_aussen_braun.gif', {:border => '0', :alt => t(:link_community_title), :class => 'pfeil_link'}) }, t(:link_community), {:target => '_blank', :title => t(:link_community_title)} ) %> |
-<%= link_to(t(:homepage), "/home/home") %> | <%= link_to(t(:view_layouts_application_30), "/home/faq") %> | <%= link_to(t(:view_layouts_application_31), "/home/contact_us") %> | <%= link_to(t(:view_layouts_donate), "/home/donate") %> | 
+<%= link_to(t(:homepage), "/home/home") %> | <%= link_to(t(:view_layouts_application_30), "/home/faq") %> | <%= link_to(t(:board), "http://forum.communtu.org", :popup=>true) %> | <%= link_to(t(:view_layouts_donate), "/home/donate") %> | 
 <% if I18n.locale.to_s == "en" %>
 <a href="http://de.communtu.org">Deutsch</a>
 <% else %>
