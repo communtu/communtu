@@ -1,0 +1,31 @@
+<h1>Global Search</h1>
+
+<table>
+  <tr>
+    <th>Header</th>
+    <th>Content</th>
+  </tr>
+
+<% for package in @packages %>
+  <tr>
+    <td><%= package.name %></td>
+    <td><%= package.description %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= paginating_links(@packages, :window_size => 10) %>
+Package
+<table>
+<% for package in @bundles %>
+  <tr>
+    <td><%= package.name %></td>
+    <td><%= package.description %></td>
+  </tr>
+<% end %>
+
+</table>
+
+
+<%= paginating_links(@bundles, :window_size => 10) %>
+huhu
