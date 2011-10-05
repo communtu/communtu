@@ -27,6 +27,7 @@ de:
   blog: Der Blog von Communtu
   blog_2: Blog
   blog_link: http://communtu.wordpress.com
+  board: Forum
   bundel_edit: Bündel bearbeiten
   bundel_editing: zur Bündelbearbeitung
   bundle: Bündel
@@ -72,6 +73,7 @@ de:
   confirm_new_passwd: Neues Passwort bestätigen
   conflicts: Konflikte
   conny_picture: Portrait von Conny Communtu
+  contact_form: Kontaktformular
   continue: Weiter
   controller_accounts_1: Dein Benutzerkonto wurde aktiviert! Du kannst dich nun einloggen.
   controller_accounts_2: Aktivierungs-Code nicht gefunden. Bitte versuche, ein neues Benutzerkonto anzulegen.
@@ -763,7 +765,7 @@ de:
   view_layouts_application_26: Navigation Bündel
   view_layouts_application_27: Navigation Download
   view_layouts_application_3: Ubuntu Logo
-  view_layouts_application_30: Hilfe/FAQ
+  view_layouts_application_30: Hilfe/Kontakt
   view_layouts_application_31: Kontakt
   view_layouts_application_32: Admin
   view_layouts_application_5: 'per PayPal:'
