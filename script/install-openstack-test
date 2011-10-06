@@ -1,5 +1,5 @@
 #!/bin/bash
-# perpate kvm for nested VMs
+# prepare kvm for nested VMs
 # see http://blog.jasonruiz.com/2011/01/24/kvm-nested-virtualization-support/
 
 # script with nesting flag for kvm
@@ -9,6 +9,6 @@ sudo sed -i 's/\/usr\/bin\/kvm rmix,/\/usr\/bin\/kvm rmix,\n  \/usr\/bin\/kvm\-n
 sudo apparmor_parser -r /etc/apparmor.d/usr.sbin.libvirtd
 # enable kvm nesting
 sudo service libvirt-bin stop
-sudo modprobe -r kvm_intel
-sudo modprobe kvm intel nested=1
+sudo modprobe -r kvm_amd
+sudo modprobe kvm amd nested=1
 sudo service libvirt-bin start
