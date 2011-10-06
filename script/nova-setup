@@ -1,9 +1,15 @@
-set -x
+#!/bin/bash
+
+# general settings
 IPRANGE=192.168.178.208/28
-LVMDEV=/dev/sda6
 PASSWORD=test
 USER=user
 PROJECT=project
+LVMDEV=/dev/sda6 # 
+#instead of using a new partition, instead you can take care that there is an LVM volume called nova-volumes
+
+set -x
+
 
 sudo apt-get install -y rabbitmq-server
 sudo apt-get install -y mysql-server # use password $PASSWORD
@@ -22,6 +28,15 @@ sudo apt-get update
 sudo apt-get install -y nova-common nova-doc nova-api nova-network nova-objectstore nova-scheduler nova-compute python-nova nova-volume unzip
 sudo apt-get install -y euca2ools
 sudo apt-get install -y glance python-glance-doc
+
+echo "--sql_connection=mysql://nova:nova@127.0.0.1/nova
+--libvirt_type=kvm
+--glance_host=127.0.0.1
+--image_service=nova.image.glance.GlanceImageService
+--network_manager=nova.network.manager.FlatDHCPManager
+--fixed_range=10.0.0.0/8
+--network_size=8" >> /etc/nova/nova.conf
+
 sudo nova-manage db sync
 sudo nova-manage db version
 sudo nova-manage network create 10.0.0.0/8 1 8
