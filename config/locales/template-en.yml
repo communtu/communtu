@@ -14,7 +14,7 @@ en:
   view_home_beteiligung_11: We need someone who is responsible for the project's layout. This means to integrate every graphic and to take over the main responsibility for the CSS.
   view_layouts_application_27: Navigation download
   email_without_colon: e-mail
-  controller_accounts_2: Couldn't find the activation code. Please try to create a new account.
+  controller_accounts_2: Could'nt find the activation code. Please try to create a new account.
   view_home_beteiligung_12: Programming
   view_distributions_show_8: Before a distribution can be deleted, every user must be logged out! Are you sure?
   cd_failed: Failed - we will solve the problem and inform you when the ISO-file is ready to download
@@ -239,7 +239,7 @@ en:
   view_home_derivatives_18: " is an Ubuntu spin-off with its own user community which has dedicated itself to usability. Linux Mint is quite similar to Ubuntu but has more codecs, like to watch DVDs or listen to MP3s, pre-installed. Those codecs are available via Communtu, listet at \"Sound & Video\"."
   new_distribution: New distribution
   controller_messages_0: |
-    Original message by %{user} from %{datum}}
+    Original message by %{user} from %{datum}}  
 
   lib_utils_0: "The followong system-command failed:"
   path: "Path:"
