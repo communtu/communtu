@@ -1,0 +1,40 @@
+set -x
+IPRANGE=192.168.178.208/28
+LVMDEV=/dev/sda6
+PASSWORD=test
+USER=user
+PROJECT=project
+
+sudo apt-get install -y rabbitmq-server
+sudo apt-get install -y mysql-server # use password $PASSWORD
+mysqladmin -u root -p$PASSWORD create nova
+mysql -u root -p$PASSWORD -e "GRANT ALL PRIVILEGES ON *.* TO 'nova'@'%' WITH GRANT OPTION;"
+mysql -u root -p$PASSWORD -e "SET PASSWORD FOR 'nova'@'%' = PASSWORD('nova');"
+sudo apt-get install -y python-greenlet python-mysqldb python-software-properties dnsmasq
+sudo apt-get install -y lvm2 
+sudo pvcreate $LVMDEV
+sudo vgcreate nova-volumes $LVMDEV
+sudo apt-get install -y iscsitarget
+sudo sed -i 's/false/true/g' /etc/default/iscsitarget
+sudo service iscsitarget start
+sudo add-apt-repository ppa:openstack-release/2011.3
+sudo apt-get update
+sudo apt-get install -y nova-common nova-doc nova-api nova-network nova-objectstore nova-scheduler nova-compute python-nova nova-volume unzip
+sudo apt-get install -y euca2ools
+sudo apt-get install -y glance python-glance-doc
+sudo nova-manage db sync
+sudo nova-manage db version
+sudo nova-manage network create 10.0.0.0/8 1 8
+sudo restart libvirt-bin; sudo restart nova-network; sudo restart nova-compute; sudo restart nova-api; sudo restart nova-objectstore; sudo restart nova-scheduler; sudo restart nova-volume
+sudo nova-manage user create $USER
+sudo nova-manage role add $USER cloudadmin
+sudo nova-manage project create $PROJECT $USER
+sudo nova-manage project zipfile $PROJECT $USER
+unzip nova.zip 
+. ./novarc 
+sudo nova-manage floating create $IPRANGE 
+glance  add name="lucid-64" distro="Ubuntu" is_public=True disk_format=iso < ubuntu-10.04.3-desktop-amd64.iso --host=$HOST
+euca-add-keypair $USER > $USER.pem
+chmod 600 $USER.pem 
+euca-run-instances -k $USER -t m1.tiny lucid-64
+
