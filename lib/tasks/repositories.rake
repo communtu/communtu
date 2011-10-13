@@ -25,7 +25,7 @@ namespace :db do
           #check for correct number of packages
           Architecture.all.each do |arch|
             res = r.check_no_of_packages(arch)
-            if !res.empty
+            if !res.empty?
               puts res
             end
           end
@@ -42,6 +42,13 @@ namespace :db do
         cd.failed=true
         cd.log="Error: timeout, process did not terminate"
         cd.save
+      end
+    end
+    desc 'Synchronise new distribution'
+    task :sync_new => :environment do
+      Distribution.find(:first,:order=>"id DESC").repositories.each do |r|
+        puts "Synchronising repository #{r.id}"
+        r.import_source
       end
     end
     desc 'Synchronise all repositories.'
