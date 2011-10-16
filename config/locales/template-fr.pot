@@ -2078,7 +2078,7 @@ msgstr ""
 msgid "Diese Funktion ist für Gäste nicht verfügbar."
 msgstr ""
 #: livecd_email_body_failed
-msgid "Deine bei uns erstellte Live-CD/DVD bzw. das ISO Image für die Erstellung einer Live-Cd/DVD oder USB Stick {{name}} konnte leider nicht erstellt werden. Wir kümmern uns um das Problem."
+msgid "Deine bei uns erstellte Live-CD/DVD bzw. das ISO Image für die Erstellung einer Live-Cd/DVD oder USB Stick %{name} konnte leider nicht erstellt werden. Wir kümmern uns um das Problem."
 msgstr ""
 #: view_repositories_show_6
 msgid "        OpenSource"

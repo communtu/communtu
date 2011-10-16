@@ -2837,8 +2837,8 @@ msgid "Diese Funktion ist für Gäste nicht verfügbar."
 msgstr "Cette fonctionnalité n'est pas disponible pour les visiteurs."
 
 #: livecd_email_body_failed
-msgid "Deine bei uns erstellte Live-CD/DVD bzw. das ISO Image für die Erstellung einer Live-Cd/DVD oder USB Stick {{name}} konnte leider nicht erstellt werden. Wir kümmern uns um das Problem."
-msgstr "Votre Live-CD/DVD a été créé par nous.l'image ISO pour créer une clé USB ou Live-CD/DVD {{nom}} n'a pas pu être créé. Nous nous occupons de ce problème."
+msgid "Deine bei uns erstellte Live-CD/DVD bzw. das ISO Image für die Erstellung einer Live-Cd/DVD oder USB Stick %{name} konnte leider nicht erstellt werden. Wir kümmern uns um das Problem."
+msgstr "Votre Live-CD/DVD a été créé par nous.l'image ISO pour créer une clé USB ou Live-CD/DVD %{nom} n'a pas pu être créé. Nous nous occupons de ce problème."
 
 #: view_repositories_show_6
 msgid "        OpenSource"
