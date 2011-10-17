@@ -228,6 +228,7 @@ if !params[:video_url].nil? then
     if @package.nil?
       flash[:error] = t(:no_package_selected)
       redirect_to :action => 'index'
+      return
     end
     show_aux
   end
