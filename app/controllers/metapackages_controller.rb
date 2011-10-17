@@ -171,7 +171,7 @@ class MetapackagesController < ApplicationController
       redirect_to metapackage_path(@metapackage)
       return
     end
-    @conflicts = Package.conflicts(params[:distributions],params[:derivatives])
+    @conflicts = {} # deprecated # Package.conflicts(params[:distributions],params[:derivatives])
     if !@conflicts.empty? then
         flash[:error] += t(:controller_metapackages_conflicts)
         error = true

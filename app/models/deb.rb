@@ -499,7 +499,7 @@ class Deb < ActiveRecord::Base
 #     system "#{REPREPRO} remove #{self.codename} #{self.name}"
 #  end
   def validate
-    errors.add("version", "has invalid format") unless Deb.check_version(version)
+    errors.add("version", "has invalid format") unless Deb.check_version(self.version)
   end
   
 end
