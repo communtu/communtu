@@ -505,7 +505,7 @@ class Metapackage < BasePackage
   end
 
   def validate
-    errors.add("version", "has invalid format") unless Deb.check_version(version)
+    errors.add("version", "has invalid format") unless Deb.check_version(self.version)
   end
 
 end
