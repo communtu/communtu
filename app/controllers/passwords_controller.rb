@@ -16,7 +16,7 @@
 
 class PasswordsController < ApplicationController
   def title
-    t(:view_layouts_application_21)
+    t(:headline)
   end
   layout 'application'
   before_filter :not_logged_in_required, :only => [:new, :create]

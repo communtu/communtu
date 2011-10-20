@@ -18,7 +18,7 @@ class RolesController < ApplicationController
   before_filter :check_administrator_role, :flash => { :notice => I18n.t(:no_admin) }
   
   def title
-    t(:view_layouts_application_21)
+    t(:headline)
   end
   layout 'application'
   before_filter :check_administrator_role

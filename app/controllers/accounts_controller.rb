@@ -16,7 +16,7 @@
 
 class AccountsController < ApplicationController
   def title
-    t(:view_layouts_application_21)
+    t(:headline)
   end
   layout 'application'
   before_filter :login_required, :except => :show
