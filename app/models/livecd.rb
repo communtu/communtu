@@ -117,6 +117,9 @@ class Livecd < ActiveRecord::Base
   
   # check if a user supplied name is acceptable
   def self.check_name(name)
+    if name.nil? or name.empty?
+      return I18n.t(:livecd_no_name)
+    end
     if name.match(/^communtu-.*/)
       return I18n.t(:livecd_communtu_name)
     end
