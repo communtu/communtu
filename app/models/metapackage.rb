@@ -62,7 +62,7 @@ class Metapackage < BasePackage
       trans.save
     else
       t = Translation.new_translation(name, "en")
-      self.name_tid = t.id
+      self.name_tid = t.translatable_id
       self.save
     end
   end
