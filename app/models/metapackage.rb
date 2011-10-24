@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # (c) 2008-2011 by Allgemeinbildung e.V., Bremen, Germany
 # This file is part of Communtu.
 
@@ -51,6 +52,18 @@ class Metapackage < BasePackage
      return trans.contents
     else
      return ""
+    end
+  end
+
+  def name_english=(name)
+    trans = Translation.find(:first, :conditions => {:translatable_id => self.name_tid, :language_code => "en"})
+    if trans != nil
+      trans.contents = name
+      trans.save
+    else
+      t = Translation.new_translation(name, "en")
+      self.name_tid = t.translatable_id
+      self.save
     end
   end
 
