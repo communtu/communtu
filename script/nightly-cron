@@ -18,6 +18,8 @@
 export GEM_HOME=/var/lib/gems/1.8  # adapt to your ruby installation
 
 cd `dirname "$0"`/..
+# restart web server
+script/web restart
 # webalizer
 script/webalizer
 ## kill old instances...

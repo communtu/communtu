@@ -1,16 +1,45 @@
 #!/bin/bash
 
-# general settings
+# Report on setting up an Openstack environment
+
+#the initial plan was as follows:
+#- OpenStack controller, set up using Stackops
+#- Nova computer server, set up using Stackops
+#- Nova computer server, set up using launchpad ppas (since Stackops only provides a 64 bit image) on a 32 bit Ubuntu 10.04
+
+#stackops.org was down. We still could download an iso from socurceforge, and install it. However, the configuration tool then relied on stackops.org being available, Shit happens.
+#Openstack cactus on Ubuntu 10.04 does not provide VM boot from iso.
+
+#Hence, we decided to install Openstack Diablo manually on top of Ubuntu 11.04.
+#We followed the book "Deploying Openstack", which gave a good guideline, although some of the commands did not work and needed correction. As a result, we have created a script that installs an Openstack controller.
+
+#We managed to install openstack and start some VMs via the console 
+#after some issues with publishing images: we did not manage to publish entire hard disks
+#so we had to extract the root parition and publish that, plus kernel and ramdisk
+#we did not mange to boot from a published iso either
+
+#We managed to install and run dashboard
+#We did not manage to set up the vnc connection
+#nor did we manage to install keystone properly (however, basic dashboard functionality also works without keystone)
+#it is essential to have the same user credentials in both nova and dashboard
+#nobody seems to know how to sync these credentials with keystone
+
+################################################
+# script for installing an openstack controller
+################################################
+
+# general settings, adapt them to your local circumstances
+CONTROLLER=192.168.178.224 # the controller
 IPRANGE=192.168.178.208/28
 PASSWORD=test
 USER=user
 PROJECT=project
 LVMDEV=/dev/sda6 # 
-#instead of using a new partition, instead you can take care that there is an LVM volume called nova-volumes
+#instead of using a new partition, you can take care that there is an LVM volume called nova-volumes
 
 set -x
 
-
+# install software and setup lvm and mysql
 sudo apt-get install -y rabbitmq-server
 sudo apt-get install -y mysql-server # use password $PASSWORD
 mysqladmin -u root -p$PASSWORD create nova
@@ -23,12 +52,14 @@ sudo vgcreate nova-volumes $LVMDEV
 sudo apt-get install -y iscsitarget
 sudo sed -i 's/false/true/g' /etc/default/iscsitarget
 sudo service iscsitarget start
+# get openstack diablo
 sudo add-apt-repository ppa:openstack-release/2011.3
 sudo apt-get update
 sudo apt-get install -y nova-common nova-doc nova-api nova-network nova-objectstore nova-scheduler nova-compute python-nova nova-volume unzip
 sudo apt-get install -y euca2ools
 sudo apt-get install -y glance python-glance-doc
 
+# set configuration
 echo "--sql_connection=mysql://nova:nova@127.0.0.1/nova
 --libvirt_type=kvm
 --glance_host=127.0.0.1
@@ -37,10 +68,15 @@ echo "--sql_connection=mysql://nova:nova@127.0.0.1/nova
 --fixed_range=10.0.0.0/8
 --network_size=8" >> /etc/nova/nova.conf
 
+# initialize nova
+export PATH=$PATH:/var/lib/nova/bin/
 sudo nova-manage db sync
 sudo nova-manage db version
 sudo nova-manage network create 10.0.0.0/8 1 8
-sudo restart libvirt-bin; sudo restart nova-network; sudo restart nova-compute; sudo restart nova-api; sudo restart nova-objectstore; sudo restart nova-scheduler; sudo restart nova-volume
+sudo restart libvirt-bin; sudo restart nova-network; sudo restart nova-api; sudo restart nova-objectstore; sudo restart nova-scheduler; sudo restart nova-volume
+# sudo restart nova-compute
+
+# create some user
 sudo nova-manage user create $USER
 sudo nova-manage role add $USER cloudadmin
 sudo nova-manage project create $PROJECT $USER
@@ -48,8 +84,110 @@ sudo nova-manage project zipfile $PROJECT $USER
 unzip nova.zip 
 . ./novarc 
 sudo nova-manage floating create $IPRANGE 
-glance  add name="lucid-64" distro="Ubuntu" is_public=True disk_format=iso < ubuntu-10.04.3-desktop-amd64.iso --host=$HOST
+
+exit 
+
+# other useful commands
+
+################################
+# images
+################################
+
+HARDDISK_IMAGE=myimage.img
+ISO_IMAGE=myimage.iso
+
+# add some image using glance
+glance add name="myimage-raw" distro="Ubuntu" is_public=True disk_format=raw < $HARDDISK_IMAGE --host=$CONTROLLER
+glance add name="myimage-iso" distro="Ubuntu" is_public=True disk_format=iso < $ISO_IMAGE --host=$CONTROLLER
+glance index
+
+# publish an image to nova-objectstore using one hard disk partition, kernel and ramdisk need to be provided separately
+kpartx_out=$(sudo kpartx -av $HARDDISK_IMAGE |head -n +1)
+device=/dev/mapper/$(echo $kpartx_out |cut  -d " " -f 3)
+mount $device /mnt
+cp /mnt/boot/vmlinuz-XXX kernel      # replace this with the kernel you want 
+cp /mnt/boot/initrd.img-XXX ramdisk  # replace this with the ramdisk you want
+umount $device
+dd if=$device of=$HARDDISK_IMAGE.part1
+sudo kpartx -d $HARDDISK_IMAGE
+uec-publish-image -t image i386 $HARDDISK_IMAGE.part1 communtu -K kernel -R ramdisk
+
+# publish an entire bootable image (several partition)
+# this did not work for us yet!
+euca-bundle-image -i $HARDDISK_IMAGE
+euca-upload-bundle -b mybucket -m /tmp/$HARDDISK_IMAGE.manifest.xml
+euca-register mybucket/$HARDDISK_IMAGE.manifest.xml
+
+################################
+# instances
+################################
+# start some instance
 euca-add-keypair $USER > $USER.pem
 chmod 600 $USER.pem 
-euca-run-instances -k $USER -t m1.tiny lucid-64
+euca-run-instances -k $USER -t m1.tiny myimage-raw
+instance=i-00000001 # replace this with actual instance id
+ADDR=$(euca-allocate-address) 
+euca-associate-address -i $instance $ADDR
+euca-authorize default -P tcp -p 22 -s 0.0.0.0/0
+euca-authorize default -P icmp -t -1:-1
+# ssh to the instance
+ssh -i $USER.pem $ADDR # perhaps as a different user
+# terminate the instance
+euca-terminate-instances $instance
+
+################################
+# get general infos
+################################
+nova-list
+nova-manage list
+nova image-list
+nova-volume list
+euca-describe-volumes 
+euca-describe-images
+nova-manage service list
+
+# list kvm instances
+ps -aef |grep kvm
+
+################################
+# install keystone
+################################
+apt-get install -y git-core
+git clone https://github.com/openstack/keystone.git
+
+apt-get install python-pip
+cd keystone/
+pip install -r tools/pip-requires
+
+vi etc/keystone.conf 
+
+python setup.py 
+
+keystone-manage db_sync
+keystone-manage user add $USER test
+keystone-manage tenant add tenant
+keystone-manage role add admin 
+keystone-manage role grant admin $USER
+keystone-manage token add 999888777666 $USER tenant 2015-02-05T00:00
+keystone-manage service add dash Dash OpenStackDashboard
+keystone-manage endpointTemplates add RegionOne dash http://$CONTROLLER:8001/v1.1/%tenant_id% http://$CONTROLLER:8001/v1.1/%tenant_id% http://$CONTROLLER:8001/v1.1/%tenant_id% 1 1
+
+################################
+# install dashboard
+################################
+apt-get install -y git-core
+git clone https://github.com/sleepsonthefloor/openstack-dashboard.git
+cd openstack-dashboard/
+run_tests.sh 
+vi local/local_settings.py
+# add an entry to the table django_site
+echo "INSERT INTO \"django_site\" VALUES(1,'communtu','communtu');"| sqlite3 local/dashboard_openstack.sqlite3
+tools/with_venv.sh dashboard/manage.py syncdb
+# start server
+nohup tools/with_venv.sh dashboard/manage.py runserver $CONTROLLER:8001 &
+
+# browse dashboard db
+apt-get install sqlitebrowser
+sqlitebrowser ./local/dashboard_openstack.sqlite3
+
 
