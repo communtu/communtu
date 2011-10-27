@@ -401,7 +401,7 @@ class Livecd < ActiveRecord::Base
     if test then
       # only proceed if the hard disk image is present, as basis of the VM
       if !File.exists?(self.kvm_base_image)
-        return I18n.t(:vm_no_iso_found)
+        return I18n.t(:vm_no_img_found)
       end
     else
       # only proceed if the iso image is present, as basis of the VM
@@ -460,7 +460,7 @@ class Livecd < ActiveRecord::Base
       iso = <<EOF
           <disk type='file' device='cdrom'>
             <driver name='qemu' type='raw'/>
-            <source file='#{self_iso_image}'/>
+            <source file='#{self.iso_image}'/>
             <target dev='hdc' bus='ide'/>
             <readonly/>
           </disk>

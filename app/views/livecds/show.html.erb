@@ -76,8 +76,10 @@
      &nbsp;<%= link_to t(:generate_cd_new), :action => 'remaster_new' %></p>
   <% end %>
 <% end %>
-<hr>
+
 <% if is_admin? %>
+<hr>
+<h3><%= t(:admin_interface_for_livecd)%></h3>
 <p>
   <% if !@cd.conflict_msg.nil? %>
     <%= t(:conflicts) %>:
@@ -89,11 +91,7 @@
   <% end %>
   <%= link_to(t(:compute_conflicts),:action => :compute_conflicts, :id => @cd.id) %>
 </p>
-<% end %>
 
-<% if is_admin? %>
-<hr>
-<h3><%= t(:admin_interface_for_livecd)%></h3>
 
 <p><%=t(:based_on_bundle)%> 
 <% @cd.bundles.each do |b| %>
