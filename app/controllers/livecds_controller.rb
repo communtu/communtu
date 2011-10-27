@@ -60,7 +60,7 @@ class LivecdsController < ApplicationController
   def index
   end
 
-  def start_vm
+  def start_vm(test=false)
     if !SETTINGS["livecd"]
       flash[:error] = t(:livecd_disabled)
       redirect_to :back
@@ -94,10 +94,9 @@ class LivecdsController < ApplicationController
 
   def start_vm_basis
     @cd = Livecd.find(params[:id])
-    @cd.start_vm(current_user,true)
     @cd.vm_pid = 1
     @cd.save
-    render :action => 'show'
+    start_vm(true)
   end
 
   def compute_conflicts
