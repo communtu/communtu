@@ -76,9 +76,9 @@
      &nbsp;<%= link_to t(:generate_cd_new), :action => 'remaster_new' %></p>
   <% end %>
 <% end %>
-<p>
 <% if is_admin? %>
 <!--
+<p>
       <% if @cd.vm_pid.nil? %>
         <%= link_to t(:start_vm_with_livecd_basis), :action  => 'start_vm_basis', :id => @cd.id%>
       <% else %>
@@ -86,6 +86,7 @@
 <br />
 <%= link_to t(:stop_vm), :action => 'stop_vm', :id => @cd.id %></li>
       <% end %>
+</p>
 -->
 <hr>
 <% if is_admin? %>
@@ -109,6 +110,7 @@
 <% @cd.bundles.each do |b| %>
   <%=link_to b.debian_name, metapackage_path(b)%> &nbsp;
 <% end %>
+</p>
 
 <p>
 <%= t(:start_vm_instructions) %>
