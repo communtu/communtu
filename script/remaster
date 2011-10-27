@@ -249,8 +249,7 @@ $SSH -p $PORT "cat /root/$UBUNTU_VERSION/edit/etc/resolv.conf"
 echo "*** adding new sources and keys, using $SOURCE_DEB"
 $SCP -P $PORT $SOURCE_DEB root@localhost:/root/$UBUNTU_VERSION/edit/
 SOURCE=`basename $SOURCE_DEB`
-$SSH -p $PORT "chroot /root/$UBUNTU_VERSION/edit apt-get install gdebi-core"
-$SSH -p $PORT "chroot /root/$UBUNTU_VERSION/edit gdebi -n $SOURCE"
+$SSH -p $PORT "chroot /root/$UBUNTU_VERSION/edit dpkg -i $SOURCE"
 $SSH -p $PORT "rm /root/$UBUNTU_VERSION/edit/$SOURCE"
 sleep 15
 echo "*** setting debconf options"
@@ -264,8 +263,11 @@ if [ $ISDEB -eq 0 ]; then
   echo "*** installing deb package $INSTALL_DEB"
   INSTALL=`basename $INSTALL_DEB`
   $SCP -P $PORT $INSTALL_DEB root@localhost:/root/$UBUNTU_VERSION/edit/
-  $SSH -p $PORT "chroot /root/$UBUNTU_VERSION/edit gdebi -n $INSTALL"
-  $SSH -p $PORT "rm /root/$UBUNTU_VERSION/edit/$INSTALL"
+  # hack since Ubuntu has removed gdebi-core from main
+  # we just install the dependencies from $INSTALL (we know that there is nothing more in it...)
+  $SSH -p $PORT "chroot /root/$UBUNTU_VERSION/edit dpkg-deb -e $INSTALL"
+  $SSH -p $PORT "chroot /root/$UBUNTU_VERSION/edit grep Depends DEBIAN/control | tail -c +10 | sed 's/,//g' | xargs sudo apt-get install -y --force-yes"
+  $SSH -p $PORT "rm -r /root/$UBUNTU_VERSION/edit/$INSTALL /root/$UBUNTU_VERSION/edit/DEBIAN"
 else
   echo "*** installing package $INSTALL_DEB from repository"
   $SSH -p $PORT "chroot /root/$UBUNTU_VERSION/edit apt-get install -y --force-yes $INSTALL_DEB"
