@@ -123,11 +123,13 @@ scp -P 2221 -o StrictHostKeyChecking=no -o ConnectTimeout=500 <%=@cd.installdeb%
 $SSH
 chroot <%= @cd.smallversion%>/edit
 cd root
+mount -t proc none /proc
+mount -t sysfs none /sys
 gdebi -n <%=File.basename(@cd.srcdeb) %>
 <%  if !@cd.installdeb.index(".deb").nil? %>
-  gdebi -n <%= File.basename(@cd.installdeb)%>
+gdebi -n <%= File.basename(@cd.installdeb)%>
 <% else %>
-  apt-get install <%= @cd.installdeb %>
+apt-get install <%= @cd.installdeb %>
 <% end %>
 </pre>
 <br />
