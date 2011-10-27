@@ -523,6 +523,8 @@ EOF
       return "VM error: #{err.to_s} <br>#{log}"
     end  
     conn.close
+    self.vm_pid = 1
+    self.save
     return Livecd.vnc(dom)
   end
 
@@ -542,6 +544,8 @@ EOF
       end
     end  
     conn.close
+    self.vm_pid = nil
+    self.save
   end
 
   def start_vm_basis

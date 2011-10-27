@@ -93,9 +93,6 @@ class LivecdsController < ApplicationController
   end
 
   def start_vm_basis
-    @cd = Livecd.find(params[:id])
-    @cd.vm_pid = 1
-    @cd.save
     start_vm(true)
   end
 
