@@ -432,6 +432,12 @@ class Metapackage < BasePackage
         end
       end
     end
+    # nothing to do? then mark as not debianizing
+    # otherwise, this is done by method generate of class Deb
+    if self.debs.select{|d| !d.generated}.empty? then 
+      self.debianizing=false
+      self.save 
+    end 
     return true
   end
   
