@@ -1,0 +1,203 @@
+$ rake rails:upgrade:check
+(in /home/mcodescu/communtu)
+DEPRECATION WARNING: Rake tasks in vendor/plugins/acts_as_rateable/tasks, vendor/plugins/backgroundrb/tasks, vendor/plugins/catch_cookie_exception/tasks, vendor/plugins/selenium-on-rails/tasks, and vendor/plugins/yaml_db/tasks are deprecated. Use lib/tasks instead. (called from /usr/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/tasks/rails.rb:10)
+New file needed: config/application.rb
+You need to add a config/application.rb.
+More information: http://omgbloglol.com/post/353978923/the-path-to-rails-3-approaching-the-upgrade
+
+The culprits: 
+	- config/application.rb
+
+# rails:upgrade:configuration
+
+Deprecated ERb helper calls
+Block helpers that use concat (e.g., form_for) should use <%= instead of <%.  The current form will continue to work for now, but you will get deprecation warnings since this form will go away in the future.
+More information: http://weblog.rubyonrails.org/
+
+The culprits: 
+	- app/views/architectures/edit.html.erb
+	- app/views/architectures/new.html.erb
+	- app/views/articles/create.html.erb
+	- app/views/articles/edit.html.erb
+	- app/views/articles/new.html.erb
+	- app/views/categories/edit.html.erb
+	- app/views/categories/new.html.erb
+	- app/views/debs/edit.html.erb
+	- app/views/debs/new.html.erb
+	- app/views/derivatives/edit.html.erb
+	- app/views/derivatives/new.html.erb
+	- app/views/distributions/edit.html.erb
+	- app/views/distributions/new.html.erb
+	- app/views/infos/edit.html.erb
+	- app/views/infos/new.html.erb
+	- app/views/metapackages/edit.html.erb
+	- app/views/packages/edit.html.erb
+	- app/views/rating/_rating_comment.html.erb
+	- app/views/repositories/new.html.erb
+	- app/views/roles/edit.html.erb
+	- app/views/roles/new.html.erb
+	- app/views/sections/edit.html.erb
+	- app/views/sections/new.html.erb
+	- app/views/users/edit.html.erb
+	- app/views/users/new.html.erb
+	- app/views/videos/edit.html.erb
+	- app/views/accounts/edit.html.erb
+	- app/views/passwords/edit.html.erb
+	- app/views/passwords/new.html.erb
+	- app/views/sessions/new.html.erb
+
+Deprecated constant(s)
+Constants like RAILS_ENV, RAILS_ROOT, and RAILS_DEFAULT_LOGGER are now deprecated.
+More information: http://litanyagainstfear.com/blog/2010/02/03/the-rails-module/
+
+The culprits: 
+	- app/views/my_mailer/mailerror.erb
+	- app/controllers/users_controller.rb
+	- app/controllers/application_controller.rb
+	- app/controllers/packages_controller.rb
+	- app/models/user.rb
+	- app/models/metapackage.rb
+	- app/models/distribution.rb
+	- app/models/livecd.rb
+	- app/models/repository.rb
+	- app/models/package.rb
+	- app/models/deb.rb
+	- lib/tasks/repositories.rake
+	- lib/tasks/rspec.rake
+
+Soon-to-be-deprecated ActiveRecord calls
+Methods such as find(:all), find(:first), finds with conditions, and the :joins option will soon be deprecated.
+More information: http://m.onkey.org/2010/1/22/active-record-query-interface
+
+The culprits: 
+	- app/controllers/repositories_controller.rb
+	- app/controllers/download_controller.rb
+	- app/controllers/mailbox_controller.rb
+	- app/controllers/videos_controller.rb
+	- app/controllers/searches_controller.rb
+	- app/controllers/roles_controller.rb
+	- app/controllers/architectures_controller.rb
+	- app/controllers/infos_controller.rb
+	- app/controllers/distributions_controller.rb
+	- app/controllers/users_controller.rb
+	- app/controllers/metapackages_controller.rb
+	- app/controllers/articles_controller.rb
+	- app/controllers/derivatives_controller.rb
+	- app/controllers/sent_controller.rb
+	- app/controllers/home_controller.rb
+	- app/controllers/sections_controller.rb
+	- app/controllers/packages_controller.rb
+	- app/controllers/categories_controller.rb
+	- app/models/user.rb
+	- app/models/metapackage.rb
+	- app/models/repository.rb
+	- app/models/package_distr.rb
+	- app/controllers/download_controller.rb
+	- app/controllers/videos_controller.rb
+	- app/controllers/cart_controller.rb
+	- app/controllers/distributions_controller.rb
+	- app/controllers/users_controller.rb
+	- app/controllers/rating_controller.rb
+	- app/controllers/metapackages_controller.rb
+	- app/controllers/articles_controller.rb
+	- app/controllers/home_controller.rb
+	- app/controllers/packages_controller.rb
+	- app/controllers/categories_controller.rb
+	- app/models/section.rb
+	- app/models/translation.rb
+	- app/models/user.rb
+	- app/models/metapackage.rb
+	- app/models/distribution.rb
+	- app/models/livecd.rb
+	- app/controllers/download_controller.rb
+	- app/controllers/videos_controller.rb
+	- app/controllers/cart_controller.rb
+	- app/controllers/distributions_controller.rb
+	- app/controllers/users_controller.rb
+	- app/controllers/metapackages_controller.rb
+	- app/controllers/articles_controller.rb
+	- app/controllers/home_controller.rb
+	- app/controllers/packages_controller.rb
+	- app/controllers/categories_controller.rb
+	- app/models/user.rb
+	- app/models/metapackage.rb
+	- app/controllers/home_controller.rb
+	- app/models/section.rb
+
+Deprecated AJAX helper calls
+AJAX javascript helpers have been switched to be unobtrusive and use :remote => true instead of having a seperate function to handle remote requests.
+More information: http://www.themodestrubyist.com/2010/02/24/rails-3-ujs-and-csrf-meta-tags/
+
+The culprits: 
+	- app/views/cart/_metacart.html.erb
+	- app/views/metapackages/_metalist.html.erb
+	- app/views/metapackages/_show.html.erb
+	- app/views/packages/_bundlelist.html.erb
+	- app/views/packages/_show.html.erb
+	- app/views/packages/index.html.erb
+	- app/views/download/selection.html.erb
+	- app/views/download/settings.html.erb
+	- app/views/searches/index.html.erb
+
+Deprecated ActionMailer API
+You're using the old ActionMailer API to send e-mails in a controller, model, or observer.
+More information: http://lindsaar.net/2010/1/26/new-actionmailer-api-in-rails-3
+
+The culprits: 
+	- app/models/user_observer.rb
+	- app/models/livecd.rb
+	- app/controllers/home_controller.rb
+
+## deliver_ methods should be replaced with .deliver
+
+Old ActionMailer class API
+You're using the old API in a mailer class.
+More information: http://lindsaar.net/2010/1/26/new-actionmailer-api-in-rails-3
+
+The culprits: 
+	- app/models/my_mailer.rb
+	- app/models/my_mailer.rb
+
+# use hashes, see the link, mail in Notifier example
+
+Old Rails generator API
+A plugin in the app is using the old generator API (a new one may be available at http://github.com/trydionel/rails3-generators).
+More information: http://blog.plataformatec.com.br/2010/01/discovering-rails-3-generators/
+
+The culprits: 
+	- vendor/plugins/selenium-on-rails/generators/
+	- vendor/plugins/selenium-on-rails/generators/selenium/
+	- vendor/plugins/backgroundrb/generators/
+	- vendor/plugins/backgroundrb/generators/worker/
+	- vendor/plugins/backgroundrb/generators/bdrb_migration/
+	- vendor/plugins/restful_authentication/generators/
+	- vendor/plugins/restful_authentication/generators/authenticated/
+
+# backgroundrb has a rails 3 version
+# selenium replaced, using capybara
+# restful_authentication, see below
+
+Old router API
+The router API has totally changed.
+More information: http://yehudakatz.com/2009/12/26/the-rails-3-router-rack-it-up/
+
+The culprits: 
+	- config/routes.rb
+
+
+# rake rails:upgrade:routes should fix this
+
+Known broken plugins
+At least one plugin in your app is broken (according to the wiki).  Most of project maintainers are rapidly working towards compatability, but do be aware you may encounter issues.
+More information: http://wiki.rubyonrails.org/rails/version3/plugins_and_gems
+
+The culprits: 
+	- restful_authentication
+
+Deprecated test_help path
+You now must require 'rails/test_help' not just 'test_help'.
+More information: http://weblog.rubyonrails.org/2009/9/1/gem-packaging-best-practices
+
+The culprits: 
+	- test/test_helper.rb
+
