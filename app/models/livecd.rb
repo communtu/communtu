@@ -79,6 +79,11 @@ class Livecd < ActiveRecord::Base
     "#{RAILS_ROOT}/public/isos/#{self.fullname}.iso"
   end
 
+  # filename of kvm base image in the file system
+  def kvm_base_image
+    "#{RAILS_ROOT}/livecd/kvm/#{self.smallversion}.img"
+  end
+
   # filename of kvm image in the file system
   def kvm_image
       "#{RAILS_ROOT}/public/isos/#{self.fullname}.kvm.img"
@@ -202,7 +207,7 @@ class Livecd < ActiveRecord::Base
         self.failed = !(system remaster_call)
         # kill VM and release lock, necessary in case of abrupt exit
         system "sudo kill-kvm #{port}"
-        system "dotlockfile -u /home/communtu/livecd/livecd#{port}.lock"
+      system "dotlockfile -u #{RAILS_ROOT}/livecd/livecd#{port}.lock"
         system "echo  >> #{RAILS_ROOT}/log/livecd#{port}.log"
         msg = if self.failed then "failed" else "succeeded" end
         call = "echo \"#{date_now} - #{port}: Creation of live CD ##{self.id} #{msg}\" >> #{RAILS_ROOT}/log/"
@@ -392,10 +397,17 @@ class Livecd < ActiveRecord::Base
     "cd_#{self.id}_#{self.name}_user_#{user.login}"
   end
   
-  def start_vm(user)
-    # only proceed if the iso image is present, as basis of the VM
-    if !File.exists?(self.iso_image)
-      return I18n.t(:vm_no_iso_found)
+  def start_vm(user,test=false)
+    if test then
+      # only proceed if the hard disk image is present, as basis of the VM
+      if !File.exists?(self.kvm_base_image)
+        return I18n.t(:vm_no_iso_found)
+      end
+    else
+      # only proceed if the iso image is present, as basis of the VM
+      if !File.exists?(self.iso_image)
+        return I18n.t(:vm_no_iso_found)
+      end
     end
 
     # check for cpu load and available memory 
@@ -420,17 +432,20 @@ class Livecd < ActiveRecord::Base
       return Livecd.vnc(dom)
     end
     
-    # create the guest disk
-    disk = SETTINGS['vm_path']+"/"+name+".qcow2"
-    vm_hd_size = SETTINGS['vm_hd_size']
-    # keep old user data
-    if !File.exists?(disk)
-      if !(system "qemu-img create -f qcow2 #{disk} #{vm_hd_size}")
-        return I18n.t(:vm_no_space)
-        conn.close
-      end  
-    end    
-    #system "chmod +w #{disk}"
+    if test then
+      disk = self.kvm_base_image
+    else
+      # create the guest disk
+      disk = SETTINGS['vm_path']+"/"+name+".qcow2"
+      vm_hd_size = SETTINGS['vm_hd_size']
+      # keep old user data
+      if !File.exists?(disk)
+        if !(system "qemu-img create -f qcow2 #{disk} #{vm_hd_size}")
+          return I18n.t(:vm_no_space)
+          conn.close
+        end  
+      end    
+    end
 
     # translate architecture to libvirt format
     arch = case self.architecture.name
@@ -439,6 +454,18 @@ class Livecd < ActiveRecord::Base
       end
     
     # the XML that describes the virtual machine
+    if test then 
+      iso = ""
+    else    
+      iso = <<EOF
+          <disk type='file' device='cdrom'>
+            <driver name='qemu' type='raw'/>
+            <source file='#{self_iso_image}'/>
+            <target dev='hdc' bus='ide'/>
+            <readonly/>
+          </disk>
+EOF
+    end
     new_dom_xml = <<EOF
     <domain type='kvm'>
       <name>#{name}</name>
@@ -461,16 +488,11 @@ class Livecd < ActiveRecord::Base
       <on_crash>restart</on_crash>
       <devices>
         <disk type='file' device='disk'>
-          <driver name='qemu' type='qcow2'/>
+          <driver name='qemu' type='#{if test then "raw" else "qcow2" end}'/>
           <source file='#{disk}'/>
           <target dev='vda' bus='virtio'/>
         </disk>
-        <disk type='file' device='cdrom'>
-          <driver name='qemu' type='raw'/>
-          <source file='#{self.iso_image}'/>
-          <target dev='hdc' bus='ide'/>
-          <readonly/>
-        </disk>
+        #{iso}
         <interface type='network'>
           <source network='default'/>
           <target dev='vnet0'/>
@@ -526,7 +548,7 @@ EOF
     if self.vm_pid.nil?
       self.vm_pid = fork do
         ActiveRecord::Base.connection.reconnect!
-        system "kvm -daemonize -drive file=/home/communtu/livecd/kvm/#{self.smallversion}.img,if=virtio,boot=on,snapshot=on -smp 4 -m 800 -nographic -redir tcp:2221::22"
+        system "kvm -daemonize -drive file=#{self.kvm_base_image},if=virtio,boot=on,snapshot=on -smp 4 -m 800 -nographic -redir tcp:2221::22"
         cmd = "scp -P 2221 -o StrictHostKeyChecking=no -o ConnectTimeout=500 #{self.srcdeb} root@localhost:/root/#{self.smallversion}/edit/root/"
         system "echo #{cmd} >> log/vm.log"
         system "#{cmd} >> log/vm.log"

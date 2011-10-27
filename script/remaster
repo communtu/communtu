@@ -28,12 +28,12 @@ VM_DEVICE=/dev/sda6
 # servers
 NAMESERVER=134.102.200.14
 APT_PROXY=134.102.204.215
-# livecd folder
-LIVECD_FOLDER=/home/communtu/livecd
 # user for liveCDs
 LIVECD_USER=communtu
 
 CALL_DIR=`dirname $(readlink -f $0)`
+# livecd folder
+LIVECD_FOLDER=$CALL_DIR/livecd
 
 # get parameters and options
 NICEKVM="kvm"

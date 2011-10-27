@@ -124,6 +124,9 @@ rake db:repo:distributions
 # security updates
 sudo cp /home/$NEWUSERNAME/web2.0/communtu/script/security-updates /etc/cron.daily
 
+
+# TODO: livecd/isos, livecd/kvm
+
 ########################## TODO MANUALLY ############################
 #sudoers
 sudo cp script/sudoers/* /usr/bin/
