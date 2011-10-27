@@ -257,7 +257,7 @@ $SSH -p $PORT "chroot /root/$UBUNTU_VERSION/edit sed -i 's/Templates: templatedb
 echo "*** configuring sources.list for apt-proxy"
 $SSH -p $PORT "cp /root/$UBUNTU_VERSION/edit/etc/apt/sources.list . ; chroot /root/$UBUNTU_VERSION/edit sed -i 's/http:\/\//http:\/\/$APT_PROXY:3142\//' /etc/apt/sources.list; chroot /root/$UBUNTU_VERSION/edit apt-get update"
 set +e
-$SSH -p $PORT "chroot /root/$UBUNTU_VERSION/edit mount -t proc none /proc; chroot /root/$UBUNTU_VERSION/edit mount -t sysfs none /sys"
+$SSH -p $PORT "chroot /root/$UBUNTU_VERSION/edit mount -t proc none /proc; chroot /root/$UBUNTU_VERSION/edit mount -t sysfs none /sys; chroot /root/$UBUNTU_VERSION/edit mount -t devpts devpts /dev/pts"
 set -e
 if [ $ISDEB -eq 0 ]; then
   echo "*** installing deb package $INSTALL_DEB"
