@@ -71,7 +71,7 @@ class LivecdsController < ApplicationController
       flash[:error] = t("vm_active_session",
              :stop => self.class.helpers.link_to(t(:vm_stop),"/livecds/#{session[:vm_cd]}/stop_vm"))
     else
-      msg = @cd.start_vm(current_user)
+      msg = @cd.start_vm(current_user,test)
       if msg.to_i == 0
         flash[:error] = msg
       else
