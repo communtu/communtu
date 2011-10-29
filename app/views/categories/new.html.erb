@@ -20,7 +20,7 @@
 
 <%= error_messages_for :category %>
 
-<% form_for(@category) do |f| %>
+<%= form_for(@category) do |f| %>
   <p>
     <b><%=t(:name_without_colon)%></b><br />
     <%= f.text_field :name %>

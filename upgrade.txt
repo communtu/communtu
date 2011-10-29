@@ -8,7 +8,8 @@ More information: http://omgbloglol.com/post/353978923/the-path-to-rails-3-appro
 The culprits: 
 	- config/application.rb
 
-# rails:upgrade:configuration
+# rake rails:upgrade:configuration
+# DONE!
 
 Deprecated ERb helper calls
 Block helpers that use concat (e.g., form_for) should use <%= instead of <%.  The current form will continue to work for now, but you will get deprecation warnings since this form will go away in the future.
@@ -46,24 +47,26 @@ The culprits:
 	- app/views/passwords/new.html.erb
 	- app/views/sessions/new.html.erb
 
+# DONE!
+
 Deprecated constant(s)
 Constants like RAILS_ENV, RAILS_ROOT, and RAILS_DEFAULT_LOGGER are now deprecated.
 More information: http://litanyagainstfear.com/blog/2010/02/03/the-rails-module/
 
 The culprits: 
-	- app/views/my_mailer/mailerror.erb
-	- app/controllers/users_controller.rb
-	- app/controllers/application_controller.rb
-	- app/controllers/packages_controller.rb
-	- app/models/user.rb
-	- app/models/metapackage.rb
-	- app/models/distribution.rb
-	- app/models/livecd.rb
-	- app/models/repository.rb
-	- app/models/package.rb
-	- app/models/deb.rb
-	- lib/tasks/repositories.rake
-	- lib/tasks/rspec.rake
+	- app/views/my_mailer/mailerror.erb   ---- DONE!
+	- app/controllers/users_controller.rb ---- DONE!
+	- app/controllers/application_controller.rb -- DONE!
+	- app/controllers/packages_controller.rb --DONE!
+	- app/models/user.rb --- DONE, but this: Rails.root.join("config", "database.yml") would be smarter
+	- app/models/metapackage.rb --- DONE
+	- app/models/distribution.rb  --- DONE
+	- app/models/livecd.rb        --- DONE
+	- app/models/repository.rb    --- DONE
+	- app/models/package.rb      ---- DONE
+	- app/models/deb.rb          ---- DONE
+	- lib/tasks/repositories.rake   ... DONE
+	- lib/tasks/rspec.rake         ....DONE
 
 Soon-to-be-deprecated ActiveRecord calls
 Methods such as find(:all), find(:first), finds with conditions, and the :joins option will soon be deprecated.
@@ -124,6 +127,8 @@ The culprits:
 	- app/controllers/home_controller.rb
 	- app/models/section.rb
 
+-- TO DO: this thing still works as it is, we could leave it for now
+
 Deprecated AJAX helper calls
 AJAX javascript helpers have been switched to be unobtrusive and use :remote => true instead of having a seperate function to handle remote requests.
 More information: http://www.themodestrubyist.com/2010/02/24/rails-3-ujs-and-csrf-meta-tags/
@@ -136,8 +141,10 @@ The culprits:
 	- app/views/packages/_show.html.erb
 	- app/views/packages/index.html.erb
 	- app/views/download/selection.html.erb
-	- app/views/download/settings.html.erb
+	- app/views/download/settings.html.erb   # remote_function ok?
 	- app/views/searches/index.html.erb
+
+# DONE!
 
 Deprecated ActionMailer API
 You're using the old ActionMailer API to send e-mails in a controller, model, or observer.
@@ -149,6 +156,7 @@ The culprits:
 	- app/controllers/home_controller.rb
 
 ## deliver_ methods should be replaced with .deliver
+## DONE!
 
 Old ActionMailer class API
 You're using the old API in a mailer class.

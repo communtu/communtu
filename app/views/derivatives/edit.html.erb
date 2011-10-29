@@ -18,7 +18,7 @@
 <% if is_admin? %>
 <h1><%=t(:view_derivatives_edit_0)%></h1>
 
-<% form_for(@derivative) do |f| %>
+<%= form_for(@derivative) do |f| %>
   <%= f.error_messages %>
 
   <p>

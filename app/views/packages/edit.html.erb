@@ -21,7 +21,7 @@
 <%= render_flash %>
 
 <div class="inner0">
-<% form_for(:package, @package, :url => ("/packages/update/"+@package.id.to_s), :html => { :multipart => true }) do |f| %>
+<%= form_for(:package, @package, :url => ("/packages/update/"+@package.id.to_s), :html => { :multipart => true }) do |f| %>
   <p>
     <b><%=t(:name_without_colon)%></b><br />
     <%= f.text_field :name %>

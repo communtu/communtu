@@ -23,7 +23,7 @@
 <%= error_messages_for :user %>
 <% end %>
  
-<% form_for :user, :url => user_url(@user), :html => { :method => :put } do |f| %>
+<%= form_for :user, :url => user_url(@user), :html => { :method => :put } do |f| %>
   <p><%=t(:view_users_edit_3)%><br /><%= f.text_field :login, :size => 60 %></p>
 <% if @user.anonymous %>
 <p><%=t(:email_with_colon)%><br /><input id="user_email" name="user[email]" size="60" type="text" /></p>

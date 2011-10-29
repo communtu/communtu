@@ -15,7 +15,7 @@
    # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
 %>
 
-<% form_for :rating, :html=>{:name=>"rating_comment_#{metapackage.id}"},:url=>{ :id=>metapackage.id, :action=>"rate", :controller=>"rating"} do |f| %>
+<%= form_for :rating, :html=>{:name=>"rating_comment_#{metapackage.id}"},:url=>{ :id=>metapackage.id, :action=>"rate", :controller=>"rating"} do |f| %>
 
 <p><%= t(:view_rating_new_comment_info)%></p>
 <%=t(:feedback)%>

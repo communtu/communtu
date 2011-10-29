@@ -19,14 +19,14 @@
 class UserObserver < ActiveRecord::Observer
   def after_create(user)
     if user.email[-11..-1]!="example.org"
-      MyMailer.deliver_signup_notification(user)
+      MyMailer.signup_notification(user).deliver
     end  
   end
 
   def after_save(user)
   
-    MyMailer.deliver_activation(user) if user.pending?
-    MyMailer.deliver_forgot_password(user) if user.recently_forgot_password?
-    MyMailer.deliver_reset_password(user) if user.recently_reset_password?
+    MyMailer.activation(user).deliver if user.pending?
+    MyMailer.forgot_password(user).deliver if user.recently_forgot_password?
+    MyMailer.reset_password(user).deliver if user.recently_reset_password?
   end
 end

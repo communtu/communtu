@@ -92,7 +92,7 @@ class HomeController < ApplicationController
     @form_name = params[:form][:name]
     @form_frage = params[:form][:frage]
     u = if logged_in? then current_user else User.first end
-    MyMailer.deliver_mail(@form_name, @form_frage, u)
+    MyMailer.mail(@form_name, @form_frage, u).deliver
     flash[:notice] = t(:controller_home_1)
     redirect_to params[:form][:backlink]
   end
@@ -100,14 +100,14 @@ class HomeController < ApplicationController
  def repo
      @form_name = params[:form][:name]
      @form_frage = params[:form][:frage]
-     MyMailer.deliver_repo(@form_name, @form_frage, current_user)
+     MyMailer.repo(@form_name, @form_frage, current_user).deliver
      flash[:notice] = t(:controller_home_5)
      redirect_to '/home'
  end                           
 
   def submit_mail
     @form_email = params[:form][:email]
-    MyMailer.deliver_mailerror(@form_email)
+    MyMailer.mailerror(@form_email).deliver
     flash[:notice] = t(:controller_home_2)
     redirect_to '/home'
   end

@@ -19,7 +19,7 @@
 
 <%= error_messages_for :category %>
 
-<% form_for(@article) do |f| %>
+<%= form_for(@article) do |f| %>
   <p>
     <b><%=t(:name_without_colon)%></b><br />
 <!--<input id="article_name" name="article[name]" size="50" type="text" value="<%= @article.name %>">-->

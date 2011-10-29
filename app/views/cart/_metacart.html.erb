@@ -50,12 +50,12 @@
 	</td>
     <td class="<%= css %>" width="30" align="right">
 		    
-			 <%= link_to_remote((tag "img", { \
+			 <%= link_to((tag "img", { \
 		                :src => "/images/delete.png",\
                         :class => "link_img",\
 			            :width => 12, :height => 12}),\
 			            :url => "/cart/rem_from_cart/" + package.id.to_s,\
-			            :update => :meta_cart) %>
+			            :update => :meta_cart, :remote => true ) %>
 		
 	</td>
   </tr>

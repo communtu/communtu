@@ -19,7 +19,7 @@
 
 <%= error_messages_for :role %>
 
-<% form_for(@role) do |f| %>
+<%= form_for(@role) do |f| %>
   <p>
     <b><%=t(:view_roles_edit_1)%></b><br />
     <%= f.text_field :rolename %>

@@ -445,12 +445,12 @@ class Metapackage < BasePackage
 
   def generate_debs_then_unlock
     generate_debs
-    safe_system "dotlockfile -u #{RAILS_ROOT}/forklock"
+    safe_system "dotlockfile -u " + Rails.root.to_s + "/forklock"
   end
 
   def fork_generate_debs
     # only allow one fork at a time, in order to prevent memory leaks
-    safe_system "dotlockfile -r 1000 #{RAILS_ROOT}/forklock"
+    safe_system "dotlockfile -r 1000 " + Rails.root.to_s + "/forklock"
     fork do
       ActiveRecord::Base.connection.reconnect!
       system 'echo "Metapackage.find('+self.id.to_s+').generate_debs_then_unlock" | nohup script/console production'

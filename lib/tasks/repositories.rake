@@ -69,7 +69,7 @@ namespace :db do
       Metapackage.all.each do |m|
         puts m.name
         if !m.debianized_version.nil? then
-          cmd = "grep \"Package: #{m.debian_name}$\" #{RAILS_ROOT}/public/debs/dists/*/*/binary-i386/Packages |wc -l"
+          cmd = "grep \"Package: #{m.debian_name}$\" " + Rails.root.to_s + "/public/debs/dists/*/*/binary-i386/Packages |wc -l"
           if (mcnt= IO.popen(cmd).map{|s| s}[0].to_i) != cnt then
             puts "  ... should have #{cnt.to_s} debian packages but has #{mcnt.to_s}"
           end

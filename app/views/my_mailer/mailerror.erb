@@ -17,4 +17,4 @@
 
 <%= t(:view_my_mailer_mailerror_0)%>
 
-<%= IO.popen("tail -n500 #{RAILS_ROOT}/log/#{RAILS_ENV}.log",&:read) %>
+<%= IO.popen("tail -n500 " + (Rails.root.join("log/", Rails.env.to_s).to_s) + ".log",&:read) %>
