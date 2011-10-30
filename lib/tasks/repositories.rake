@@ -42,6 +42,8 @@ namespace :db do
         cd.failed=true
         cd.log="Error: timeout, process did not terminate"
         cd.save
+        # kill VM
+        system "sudo kill-kvm #{cd.port}"
       end
     end
     desc 'Synchronise new distribution'

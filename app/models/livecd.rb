@@ -164,6 +164,8 @@ class Livecd < ActiveRecord::Base
   # created liveCD, using script/remaster
   def remaster(port=2222)
     ActiveRecord::Base.connection.reconnect!
+    self.port = port
+    self.save
     ver = self.smallversion
     fullname = self.fullname
     # need to generate iso, use lock in order to prevent parallel generation of multiple isos
@@ -200,9 +202,8 @@ class Livecd < ActiveRecord::Base
         remaster_call = "#{RAILS_ROOT}/script/remaster create #{nicestr}#{virt}#{isoflag}#{kvmflag}#{usbflag}#{ver} #{self.name} #{self.srcdeb} #{self.installdeb} #{port} >> #{RAILS_ROOT}/log/livecd#{port}.log 2>&1"
         system "echo \"#{remaster_call}\" >> #{RAILS_ROOT}/log/livecd#{port}.log"
         self.failed = !(system remaster_call)
-        # kill VM and release lock, necessary in case of abrupt exit
+        # kill VM, necessary in case of abrupt exit
         system "sudo kill-kvm #{port}"
-        system "dotlockfile -u /home/communtu/livecd/livecd#{port}.lock"
         system "echo  >> #{RAILS_ROOT}/log/livecd#{port}.log"
         msg = if self.failed then "failed" else "succeeded" end
         call = "echo \"#{date_now} - #{port}: Creation of live CD ##{self.id} #{msg}\" >> #{RAILS_ROOT}/log/"
@@ -216,6 +217,7 @@ class Livecd < ActiveRecord::Base
         self.log = "ruby code for live CD/DVD creation crashed: "+err
         self.failed = true
     end
+    # release lock
     system "dotlockfile -u #{RAILS_ROOT}/livecd#{port}_lock"
     # store size and inform user via email
     ActiveRecord::Base.connection.reconnect! # needed after a possibly long time
