@@ -232,8 +232,8 @@ class Livecd < ActiveRecord::Base
       if self.usb
         self.size += File.size(self.iso_image)
       end
-      self.users.each do |user|
-        MyMailer.deliver_livecd(user,"#{Livecd.rails_url}/livecds/#{self.id}")
+      self.livecd_users.each do |lu|
+        MyMailer.deliver_livecd(lu.user,"#{Livecd.rails_url}/livecds/#{self.id}",lu.locale)
       end
     else
       # mysql problem? then retry
@@ -241,8 +241,8 @@ class Livecd < ActiveRecord::Base
         self.mark_remaster
       # first try? then inform users about failure  
       elsif self.first_try then
-        self.users.each do |user|
-          MyMailer.deliver_livecd_failed(user,self.fullname,I18n.locale.to_s)
+        self.livecd_users.each do |lu|
+          MyMailer.deliver_livecd_failed(lu.user,self.fullname,lu.locale)
         end
         self.first_try = false
       end
@@ -348,7 +348,7 @@ class Livecd < ActiveRecord::Base
   # register a livecd for a user
   def register(user)
     if !self.users.include? user
-      LivecdUser.create({:livecd_id => self.id, :user_id => user.id})
+      LivecdUser.create({:livecd_id => self.id, :user_id => user.id, :locale => I18n.locale.to_s})
     end
   end
 

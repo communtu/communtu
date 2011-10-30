@@ -47,47 +47,49 @@ class MyMailer < ActionMailer::Base
     @headers = {}
   end
 
-  def livecd(user,iso)
+  def livecd(user,iso,locale)
     @body[:url]  = iso
     @recipients  = "#{user.email}, technik@communtu.org"
     @from        = "info@communtu.org"
-    @subject     = "[Communtu] " + I18n.t(:livecd_email, :locale => I18n.locale.to_s)
+    @subject     = "[Communtu] " + I18n.t(:livecd_email, locale)
     @sent_on     = Time.now
     @body[:user] = user
     @headers = {}
+    @locale = locale
   end
 
   def livecd_failed(user,name,locale)
     @cdname      = name
     @recipients  = "#{user.email}, technik@communtu.org"
     @from        = "info@communtu.org"
-    @subject     = "[Communtu] " + I18n.t(:livecd_email_failed, :locale => locale)
+    @subject     = "[Communtu] " + I18n.t(:livecd_email_failed, locale)
     @sent_on     = Time.now
     @body[:user] = user
     @headers = {}
+    @locale = locale
   end
 
   def signup_notification(user)
     setup_email(user)
-    @subject    = "[Communtu] " + I18n.t(:model_mailer_0, :locale => I18n.locale.to_s)
+    @subject    = "[Communtu] " + I18n.t(:model_mailer_0)
     @body[:url]  = "http://www.communtu.de"
   end
 
   def activation(user)
     setup_email(user)
-    @subject    = "[Communtu] " + I18n.t(:model_mailer_2, :locale => I18n.locale.to_s)
+    @subject    = "[Communtu] " + I18n.t(:model_mailer_2)
     @body[:url]  = "http://www.communtu.de"
   end
 
   def forgot_password(user)
     setup_email(user)
-    @subject    = "[Communtu] " + I18n.t(:model_mailer_3, :locale => I18n.locale.to_s)
+    @subject    = "[Communtu] " + I18n.t(:model_mailer_3)
     @body[:url]  = "http://localhost:3000/reset_password/#{user.password_reset_code}"
   end
 
   def reset_password(user)
     setup_email(user)
-    @subject    = "[Communtu] " + I18n.t(:model_mailer_4, :locale => I18n.locale.to_s)
+    @subject    = "[Communtu] " + I18n.t(:model_mailer_4)
   end
 
   protected
