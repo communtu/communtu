@@ -57,11 +57,11 @@ class MyMailer < ActionMailer::Base
     @headers = {}
   end
 
-  def livecd_failed(user,name)
+  def livecd_failed(user,name,locale)
     @cdname      = name
     @recipients  = "#{user.email}, technik@communtu.org"
     @from        = "info@communtu.org"
-    @subject     = "[Communtu] " + I18n.t(:livecd_email_failed, :locale => I18n.locale.to_s)
+    @subject     = "[Communtu] " + I18n.t(:livecd_email_failed, :locale => locale)
     @sent_on     = Time.now
     @body[:user] = user
     @headers = {}
