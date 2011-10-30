@@ -51,7 +51,7 @@ class MyMailer < ActionMailer::Base
     @body[:url]  = iso
     @recipients  = "#{user.email}, technik@communtu.org"
     @from        = "info@communtu.org"
-    @subject     = "[Communtu] " + I18n.t(:livecd_email, locale)
+    @subject     = "[Communtu] " + I18n.t(:livecd_email, :locale => locale)
     @sent_on     = Time.now
     @body[:user] = user
     @headers = {}
@@ -62,7 +62,7 @@ class MyMailer < ActionMailer::Base
     @cdname      = name
     @recipients  = "#{user.email}, technik@communtu.org"
     @from        = "info@communtu.org"
-    @subject     = "[Communtu] " + I18n.t(:livecd_email_failed, locale)+locale
+    @subject     = "[Communtu] " + I18n.t(:livecd_email_failed, :locale => locale)
     @sent_on     = Time.now
     @body[:user] = user
     @headers = {}
