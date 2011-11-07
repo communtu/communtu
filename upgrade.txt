@@ -183,7 +183,7 @@ The culprits:
 
 # backgroundrb has a rails 3 version
 # selenium replaced, using capybara
-# restful_authentication, see below
+# restful_authentication, try https://github.com/Satish/restful-authentication
 
 Old router API
 The router API has totally changed.
@@ -194,6 +194,7 @@ The culprits:
 
 
 # rake rails:upgrade:routes should fix this
+# DONE
 
 Known broken plugins
 At least one plugin in your app is broken (according to the wiki).  Most of project maintainers are rapidly working towards compatability, but do be aware you may encounter issues.
@@ -208,4 +209,6 @@ More information: http://weblog.rubyonrails.org/2009/9/1/gem-packaging-best-prac
 
 The culprits: 
 	- test/test_helper.rb
+
+# DONE
 
