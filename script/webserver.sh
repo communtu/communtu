@@ -127,6 +127,12 @@ sudo cp /home/$NEWUSERNAME/web2.0/communtu/script/security-updates /etc/cron.dai
 
 # TODO: livecd/isos, livecd/kvm
 
+# install libvirt 0.8.8 (for commandline feature)
+sudo apt-add-repository ppa:nutznboltz/kvm-libvirt-lts
+sudo apt-get update
+sudo apt-get install --reinstall libvirt-bin libvirt0 
+
+
 ########################## TODO MANUALLY ############################
 #sudoers
 sudo cp script/sudoers/* /usr/bin/
