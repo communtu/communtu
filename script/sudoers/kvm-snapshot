@@ -1,1 +1,1 @@
-kvm $(echo $@ | sed 's/-drive file=/-drive snapshot=on,file=/')
+/usr/bin/kvm $(echo $@ | /bin/sed 's/-drive file=/-drive snapshot=on,file=/')

@@ -454,8 +454,16 @@ class Livecd < ActiveRecord::Base
       end
     
     # the XML that describes the virtual machine
+
+    # iso image, only for non-tests
     if test then 
       iso = ""
+      redir = <<EOF
+          <qemu:commandline>
+           <qemu:arg value='-redir'/>
+           <qemu:arg value='tcp:2221::22'/>
+         </qemu:commandline>
+EOF
     else    
       iso = <<EOF
           <disk type='file' device='cdrom'>
@@ -465,10 +473,13 @@ class Livecd < ActiveRecord::Base
             <readonly/>
           </disk>
 EOF
+      redir = ""
     end
     new_dom_xml = <<EOF
     <domain type='kvm'>
       <name>#{name}</name>
+      <emulator>/usr/bin/kvm#{if test then "-snapshot" else "" end}</emulator>
+      #{redir}
       <memory>#{mem}</memory>
       <currentMemory>#{mem}</currentMemory>
       <vcpu>1</vcpu>
