@@ -1,6 +1,7 @@
 class Rating < ActiveRecord::Base
   require "lib/utils.rb"
   belongs_to :rateable, :polymorphic => true
+  validates_presence_of :rating
   
   # NOTE: Comments belong to a user
   belongs_to :user

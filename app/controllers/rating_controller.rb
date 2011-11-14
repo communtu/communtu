@@ -17,7 +17,7 @@
 class RatingController < ApplicationController
   
   def rate
-    if !params[:rating].nil?
+    if !params[:rating].nil? and !params[:rating].empty?
       @metapackage = Metapackage.find(params[:id])
       Rating.delete_all(["rateable_type = 'Metapackage' AND rateable_id = ? AND user_id = ?", @metapackage.id, current_user.id])
       t = Translation.new
