@@ -1,4 +1,4 @@
-<% #  hhh(c) 2008-2010 by Verein Allgemeinbildung e.V., Bremen, Germany
+<% # (c) 2008-2010 by Verein Allgemeinbildung e.V., Bremen, Germany
    # This file is part of Communtu.
 
    # Communtu is free software: you can redistribute it and/or modify
@@ -116,7 +116,7 @@
 </div>
 <!-- content -->
 <div class="content">
-<!--
+
 <% if logged_in? %>
 <div align="right">
 <font size="-3"><%= link_to t(:view_layouts_application_14), '/home/contact_us' %>&nbsp;&nbsp;&nbsp;<%=t(:view_layouts_application_15)%>
@@ -126,7 +126,7 @@
 	<%= new_message? ? link_to(image_tag("message_rollover.png", :alt=>t(:view_layouts_application_16),:title=>t(:view_layouts_application_16), :border=>"0"), '/inbox') : link_to(image_tag("message.png", :alt=>t(:view_layouts_application_18),:title=>t(:view_layouts_application_18), :border=>"0"), '/inbox') %>
 </div>
 <% end %>
--->
+
 <% if ((params[:controller] == "home" and params[:action] != "home") and (params[:controller] == "home" and params[:action] != "new_repository")) %>
 <%= render(:partial => 'navi_communtu') %>
 <div class="content1"> 
@@ -152,10 +152,10 @@
 %>
 <% #flash[:error] = t(:no_cookies) 
 %>
-<!--<div class="flash"><span id="error">
+<div class="flash"><span id="error">
 <% flash[:error] %>
 </span>
-</div>-->
+</div>
 		<%= yield %>
 <p></p>
 <% if div_helper != 1 %>
