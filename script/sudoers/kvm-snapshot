@@ -1,2 +1,2 @@
 #!/bin/bash
-/usr/bin/kvm $(echo $@ | /bin/sed 's/-drive file=/-drive snapshot=on,file=/')
+exec /usr/bin/kvm $(echo $@ | /bin/sed 's/-drive file=/-drive snapshot=on,file=/') 

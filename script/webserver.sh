@@ -134,7 +134,7 @@ sudo apt-get install --reinstall libvirt-bin libvirt0
 
 # special script for kvm with snapshots
 sudo cp /home/$NEWUSERNAME/web2.0/communtu/script/sudoers/kvm-snapshot /usr/bin
-sed -i 's/\/usr\/bin\/kvm rmix/\/usr\/bin\/kvm rmix,\n  \/usr\/bin\/kvm-snapshot rmix/' /etc/apparmor.d/abstractions/libvirt-qemu
+sed -i 's/\/usr\/bin\/kvm rmix/\/usr\/bin\/kvm rmix,\n  \/usr\/bin\/kvm-snapshot rmix,\n    \/bin\/sed rmix,\n  \/tmp\/** rw/' /etc/apparmor.d/abstractions/libvirt-qemu
 sudo /etc/init.d/apparmor restart
 
 ########################## TODO MANUALLY ############################
