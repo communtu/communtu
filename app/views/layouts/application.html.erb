@@ -45,12 +45,12 @@
 <% end %>
 </div>
   <!-- Registrieren -->
-  <div id="register">
+ <div id="register">
   <% if is_admin? %>
     <%= link_to(t(:view_layouts_application_32), "/categories") %>  | <% end %>
 
     <% if logged_in? %>
-      <!-- log out -->
+       log out 
       <%= link_to t(:view_layouts_application_9), logout_path  %> |
 
         <% if !is_anonymous? %>
@@ -71,7 +71,7 @@
       <%= link_to t(:anmelden), '/session/new' %> | <%= link_to t(:register), '/users/new' %> |
       <%= link_to t(:guest), '/users/anonymous_login' %>
     <% end %>
-  </div><!-- END register DIV -->
+  </div> <!-- END register DIV -->
 	
 	
 </div>
