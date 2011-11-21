@@ -157,6 +157,7 @@ class Livecd < ActiveRecord::Base
             ActiveRecord::Base.connection.reconnect!
 	 	        system "echo \"Livecd.find(#{self.id.to_s}).remaster(#{port.to_s})\" | #{nicestr} nohup script/console production"
       end
+      Process.detach(self.pid) # avoid zombie child
       ActiveRecord::Base.connection.reconnect!
       self.save
   end
