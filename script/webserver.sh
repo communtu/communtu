@@ -112,8 +112,8 @@ sudo mkdir /local/isos/tmp
 sudo chown communtu /local/isos/tmp
 
 # rails server init script
-sudo cp script/rails /etc/init.d/
-sudo update-rc.d rails defaults
+sudo cp script/communtu /etc/init.d/
+sudo update-rc.d communtu defaults
 
 # write distribution confs
 rake db:repo:distributions
@@ -132,6 +132,10 @@ sudo apt-add-repository ppa:nutznboltz/kvm-libvirt-lts
 sudo apt-get update
 sudo apt-get install --reinstall libvirt-bin libvirt0 
 
+# special script for kvm with snapshots
+sudo cp /home/$NEWUSERNAME/web2.0/communtu/script/sudoers/kvm-snapshot /usr/bin
+sed -i 's/\/usr\/bin\/kvm rmix/\/usr\/bin\/kvm rmix,\n  \/usr\/bin\/kvm-snapshot rmix/' /etc/apparmor.d/abstractions/libvirt-qemu
+sudo /etc/init.d/apparmor restart
 
 ########################## TODO MANUALLY ############################
 #sudoers

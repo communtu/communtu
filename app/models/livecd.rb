@@ -458,24 +458,24 @@ class Livecd < ActiveRecord::Base
     # iso image, only for non-tests
     if test then 
       iso = ""
-      redir = <<EOF
-          <qemu:commandline>
-           <qemu:arg value='-redir'/>
-           <qemu:arg value='tcp:2221::22'/>
-         </qemu:commandline>
-EOF
+      redir = <<-EOF
+                <qemu:commandline>
+                  <qemu:arg value='-redir'/>
+                  <qemu:arg value='tcp:2221::22'/>
+                </qemu:commandline>
+              EOF
     else    
-      iso = <<EOF
-          <disk type='file' device='cdrom'>
-            <driver name='qemu' type='raw'/>
-            <source file='#{self.iso_image}'/>
-            <target dev='hdc' bus='ide'/>
-            <readonly/>
-          </disk>
-EOF
+      iso = <<-EOF
+              <disk type='file' device='cdrom'>
+                <driver name='qemu' type='raw'/>
+                <source file='#{self.iso_image}'/>
+                <target dev='hdc' bus='ide'/>
+                <readonly/>
+              </disk>
+            EOF
       redir = ""
     end
-    new_dom_xml = <<EOF
+    new_dom_xml = <<-EOF
     <domain type='kvm'>
       <name>#{name}</name>
       <emulator>/usr/bin/kvm#{if test then "-snapshot" else "" end}</emulator>
@@ -522,7 +522,7 @@ EOF
         </video>
       </devices>
     </domain>
-EOF
+    EOF
 
     # define and start domain (vm) 
     begin
