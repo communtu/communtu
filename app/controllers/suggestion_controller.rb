@@ -16,7 +16,7 @@
 
 class SuggestionController < ApplicationController
   def title
-    t(:view_layouts_application_21)
+    t(:headline)
   end
 
   def install_sources

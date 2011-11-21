@@ -34,7 +34,7 @@ class HomeController < ApplicationController
     elsif params[:action] == "donate"
       "Communtu: " + t(:view_home_donate)
     else
-      t(:view_layouts_application_21)
+      t(:headline)
     end 
   end
   protect_from_forgery :only => [:create, :update, :destroy] 
