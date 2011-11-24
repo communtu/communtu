@@ -428,6 +428,10 @@ class Livecd < ActiveRecord::Base
       nil
     end  
     if !dom.nil?
+      # VM is already there? then ensure that it runs, and return its vnc channel
+      if !dom.active?
+        dom.create
+      end
       conn.close
       return Livecd.vnc(dom)
     end
@@ -478,8 +482,6 @@ class Livecd < ActiveRecord::Base
     new_dom_xml = <<-EOF
     <domain type='kvm'>
       <name>#{name}</name>
-      <emulator>/usr/bin/kvm#{if test then "-snapshot" else "" end}</emulator>
-      #{redir}
       <memory>#{mem}</memory>
       <currentMemory>#{mem}</currentMemory>
       <vcpu>1</vcpu>
@@ -498,6 +500,8 @@ class Livecd < ActiveRecord::Base
       <on_reboot>restart</on_reboot>
       <on_crash>restart</on_crash>
       <devices>
+        <emulator>/usr/bin/kvm#{if test then "-snapshot" else "" end}</emulator>
+        #{redir}
         <disk type='file' device='disk'>
           <driver name='qemu' type='#{if test then "raw" else "qcow2" end}'/>
           <source file='#{disk}'/>
