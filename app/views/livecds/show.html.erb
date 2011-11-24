@@ -132,6 +132,8 @@ gdebi -n <%= File.basename(@cd.installdeb)%>
 <% else %>
 apt-get install <%= @cd.installdeb %>
 <% end %>
+#to shutdown the virtual PC
+shutdown -h now
 </pre>
 <br />
 <% end %>
