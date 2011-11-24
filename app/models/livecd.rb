@@ -480,7 +480,8 @@ class Livecd < ActiveRecord::Base
       redir = ""
     end
     new_dom_xml = <<-EOF
-    <domain type='kvm'>
+    <domain type='kvm' xmlns:qemu='http://libvirt.org/schemas/domain/qemu/1.0'>
+      #{redir}
       <name>#{name}</name>
       <memory>#{mem}</memory>
       <currentMemory>#{mem}</currentMemory>
@@ -501,7 +502,6 @@ class Livecd < ActiveRecord::Base
       <on_crash>restart</on_crash>
       <devices>
         <emulator>/usr/bin/kvm#{if test then "-snapshot" else "" end}</emulator>
-        #{redir}
         <disk type='file' device='disk'>
           <driver name='qemu' type='#{if test then "raw" else "qcow2" end}'/>
           <source file='#{disk}'/>
@@ -520,7 +520,7 @@ class Livecd < ActiveRecord::Base
           <target port='0'/>
         </console>
         <input type='mouse' bus='ps2'/>
-        <graphics type='vnc' port='-1' autoport='yes' listen='0.0.0.0' keymap='#{I18n.locale}'/>
+        #{if !test then "<graphics type='vnc' port='-1' autoport='yes' listen='0.0.0.0' keymap='#{I18n.locale}'/>" end}
         <video>
           <model type='cirrus' vram='9216' heads='1'/>
         </video>

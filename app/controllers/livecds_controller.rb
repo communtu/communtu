@@ -74,7 +74,7 @@ class LivecdsController < ApplicationController
       msg = @cd.start_vm(current_user,test)
       if msg.to_i == 0
         flash[:error] = msg
-      else
+      elsif !test
         session[:vm_vnc] = msg
         session[:vm_cd] = @cd.id
         redirect_to "vnc://#{request.env['HTTP_X_FORWARDED_HOST']}:#{session[:vm_vnc]}"
