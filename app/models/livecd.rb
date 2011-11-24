@@ -465,7 +465,7 @@ class Livecd < ActiveRecord::Base
       redir = <<-EOF
                 <qemu:commandline>
                   <qemu:arg value='-redir'/>
-                  <qemu:arg value='tcp:2221::22'/>
+                  <qemu:arg value='tcp:2231::22'/>
                 </qemu:commandline>
               EOF
     else    
