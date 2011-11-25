@@ -540,7 +540,7 @@ class Livecd < ActiveRecord::Base
     conn.close
     self.vm_pid = 1
     self.save
-    return Livecd.vnc(dom)
+    if test then 1 else Livecd.vnc(dom) end
   end
 
   def stop_vm(user)
