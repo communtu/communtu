@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# release new code to the productive system
+
+echo "Releasing new code"
+echo 
+res=a
+while [ $res != "y" ]
+  do
+    echo -n "Have you tried the code on the test server? "
+    read res
+  done  
+echo
+echo "*** pulling new code"
+echo
+git pull origin master
+echo
+echo "*** migrating database"
+echo
+rake db:migrate
+echo
+echo "*** restarting web servers"
+echo
+script/web restart
