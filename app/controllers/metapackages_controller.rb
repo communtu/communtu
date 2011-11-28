@@ -75,7 +75,6 @@ class MetapackagesController < ApplicationController
     @metapackage.version = "0.1"
     @name = params[:name]
     @categories  = Category.find(1)
-    @backlink    = request.env['HTTP_REFERER']
     @conflicts   = {}
     render :action => :edit
   end
@@ -99,7 +98,6 @@ class MetapackagesController < ApplicationController
       return
     end
     @categories  = Category.find(1)
-    @backlink    = request.env['HTTP_REFERER']
     @conflicts   = {}
     @name = if @metapackage.name == "" then t(:new_bundle) else  @metapackage.name end
     @name_english = if @metapackage.name_english == "" then "new bundle" else @metapackage.name_english end
@@ -475,7 +473,6 @@ class MetapackagesController < ApplicationController
   def finish_migrate
     @from_dist       = Distribution.find(params[:from_dist][:id])
     @to_dist         = Distribution.find(params[:to_dist][:id])
-    @backlink        = request.env['HTTP_REFERER']
     
     metas = session[:packages]
     @not_found = {}
@@ -598,7 +595,7 @@ class MetapackagesController < ApplicationController
   def compute_conflicts
     @metapackage = Metapackage.find(params[:id])
     @metapackage.edos_conflicts
-    redirect_to :back
+    redirect_to session[:backlink]
   end
 
 private

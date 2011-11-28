@@ -22,6 +22,7 @@ class ApplicationController < ActionController::Base
   
     before_filter :set_locale
     before_filter :log_ram # or use after_filter
+    before_filter :save_backlink # because http_referrer isn't set anymore
 
   def log_ram
     logger.warn Process.pid.to_s + ': RAM USAGE: ' + `pmap #{Process.pid} | tail -1`[10,40].strip
@@ -29,6 +30,11 @@ class ApplicationController < ActionController::Base
 
   def set_locale
     I18n.locale = extract_locale_from_subdomain
+  end
+  
+  def save_backlink
+    session[:backlink] = session[:current_uri]
+    session[:current_uri] = request.request_uri()
   end
 
   def extract_locale_from_subdomain
@@ -79,7 +85,7 @@ class ApplicationController < ActionController::Base
   def check_livecd_enabled
     if !SETTINGS["livecd"]
       flash[:error] = t(:livecd_disabled)
-      redirect_to :back
+      redirect_to session[:backlink]
     end  
   end
   

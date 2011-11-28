@@ -83,12 +83,12 @@ class UsersController < ApplicationController
   def anonymous_login
     do_anonymous_login
     # prevent redirection to login page, which would give an error
-    if request.env["HTTP_REFERER"] == nil
+    if session[:backlink] == nil
       redirect_to "/home"
-    elsif request.env["HTTP_REFERER"].include?("session/new")
+    elsif session[:backlink].include?("session/new")
       redirect_to "/home"
     else
-      redirect_to :back
+      redirect_to session[:backlink]
     end  
   rescue ActiveRecord::RecordInvalid
     # release lock
@@ -215,7 +215,7 @@ class UsersController < ApplicationController
     @user = User.find_by_login(params[:login])
     if @user.nil? then
         flash[:error] = t(:user_not_found)
-        redirect_to :back
+        redirect_to session[:backlink]
     else
         redirect_to :action => :show, :id => @user.id
     end

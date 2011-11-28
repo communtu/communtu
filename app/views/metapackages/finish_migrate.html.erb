@@ -29,6 +29,6 @@
     <% end %>  
   </table>
 <% end %>  
-<%if !@backlink.nil? %>
-  <%= link_to(t(:continue), @backlink) %>
+<%if !session[:backlink].nil? %>
+  <%= link_to(t(:continue), session[:backlink]) %>
 <% end %>  

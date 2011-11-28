@@ -30,7 +30,7 @@
 <%= text_area(:form, :frage, :rows =>10, :cols => 80) %></p>
 <p><%= submit_tag(t(:view_home_contact_us_4)) %></p>
 <p><%=link_to t(:view_home_home_25), '/home/faq'%></p>
-<input type="hidden" id="form_backlink" name="form[backlink]" value="<%= request.env['HTTP_REFERER'] %>">
+<input type="hidden" id="form_backlink" name="form[backlink]" value="<%= session[:backlink] %>">
 </form>
 </div>
 <%= render(:partial => 'box', :locals => {:grey => false})%>

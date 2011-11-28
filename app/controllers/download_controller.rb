@@ -66,7 +66,6 @@ class DownloadController < ApplicationController
     if params[:path]=='mybundle_cd' or params[:path]=='bundle_cd'
           session[:cd_bundle] = params[:id]      
     end
-    session[:backlink] = request.env['HTTP_REFERER']
     @user = current_user
     if @user.derivative.nil? then @user.derivative_id = 1 end
     @distributions = @user.possible_distributions
@@ -220,7 +219,7 @@ class DownloadController < ApplicationController
     end
     @bundle = Metapackage.find_by_id(params[:id])
     if @bundle.nil? then
-      redirect_to :back
+      redirect_to session[:backlink]
       return
     end
     session[:cd_bundle] = @bundle.id

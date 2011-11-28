@@ -28,7 +28,7 @@ class SessionsController < ApplicationController
       redirect_to "/home"
     end
     if cookies[:backlink] == ""
-      cookies[:backlink] = request.env['HTTP_REFERER']
+      cookies[:backlink] = session[:backlink]
     end
   end
  

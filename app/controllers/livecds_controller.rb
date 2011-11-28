@@ -28,7 +28,7 @@ class LivecdsController < ApplicationController
     @cd = Livecd.find(params[:id])
     # detach live CD from user
     @cd.deregister(current_user)
-    redirect_to :back
+    redirect_to session[:backlink]
   end
 
   def show
@@ -40,7 +40,7 @@ class LivecdsController < ApplicationController
     if !@cd.generated
        @cd.mark_remaster
     end
-    redirect_to :back
+    redirect_to session[:backlink]
   end
 
   def force_remaster
@@ -63,7 +63,7 @@ class LivecdsController < ApplicationController
   def start_vm
     if !SETTINGS["livecd"]
       flash[:error] = t(:livecd_disabled)
-      redirect_to :back
+      redirect_to session[:backlink]
       return
     end
     @cd = Livecd.find(params[:id])
@@ -101,7 +101,7 @@ class LivecdsController < ApplicationController
   def compute_conflicts
     @cd = Livecd.find(params[:id])
     @cd.edos_conflicts
-    redirect_to :back
+    redirect_to session[:backlink]
   end
 
 end
