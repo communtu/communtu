@@ -1,0 +1,13 @@
+log
+tmp
+*~
+.project
+nbproject
+config/database.yml
+config/settings.yml
+secret
+debs/communtu-*
+db.backup.gz
+debs/db
+debs/repos
+debs/distributions

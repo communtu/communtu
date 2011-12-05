@@ -1,3 +1,6 @@
 rake warnings:
    DEPRECATION WARNING: Rake tasks in vendor/plugins/acts_as_rateable/tasks, vendor/plugins/backgroundrb/tasks, vendor/plugins/catch_cookie_exception/tasks, vendor/plugins/selenium-on-rails/tasks, and vendor/plugins/yaml_db/tasks are deprecated. Use lib/tasks instead. (called from /usr/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/tasks/rails.rb:10)
 4.
+
+Please install the mysql2 adapter: `gem install activerecord-mysql2-adapter` (no such file to load -- active_record/connection_adapters/mysql2_adapter) (RuntimeError)
+
