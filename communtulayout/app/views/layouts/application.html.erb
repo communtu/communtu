@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Communtulayout</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="header">
+<div class="login">Admin  | Anmelden  |  Guest</div>
+</div>
+<%= yield %>
+
+</body>
+</html>
