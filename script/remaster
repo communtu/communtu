@@ -275,7 +275,7 @@ fi
 #$SSH -p $PORT "chroot /root/$UBUNTU_VERSION/edit apt-get -y upgrade"
 
 echo "*** reverting special settings"
-$SSH -p $PORT "cp sources.list /root/$UBUNTU_VERSION/edit/etc/apt/"
+#$SSH -p $PORT "cp sources.list /root/$UBUNTU_VERSION/edit/etc/apt/"
 $SSH -p $PORT "chroot /root/$UBUNTU_VERSION/edit sed -i -r 's/Frontend: readline|Priority: critical//' /etc/debconf.conf; chroot /root/$UBUNTU_VERSION/edit sh -c \"export LANG=C; apt-get update\"; rm /root/$UBUNTU_VERSION/edit/etc/resolv.conf"
 
 # create iso
