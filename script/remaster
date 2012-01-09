@@ -166,7 +166,6 @@ else
   $SCP -P $PORT /usr/bin/remaster_ubuntu.sh root@localhost:/root/
   $SCP -P $PORT isos/$UBUNTU_VERSION.iso root@localhost:/root/
   echo "*** extracting LiveCD iso"
-  $SSH -p $PORT "apt-get install -y rsync squashfs-tools genisoimage"
   $SSH -p $PORT "/root/remaster_ubuntu.sh extract /root/$UBUNTU_VERSION.iso /root/$UBUNTU_VERSION"
   $SSH -p $PORT "rm /root/$UBUNTU_VERSION.iso"
   echo "*** setting up nameserver"
@@ -292,15 +291,15 @@ $SSH -p $PORT "chroot /root/$UBUNTU_VERSION/edit sed -i -r 's/Frontend: readline
   if [ "x"$ISO != "x" -o "x"$USB != "x" ]
     then echo "creating iso image"
     # virtualization needed: create iso in the VM
-    $SSH -p $PORT "apt-get install -y squashfs-tools genisoimage"
     $SCP -P $PORT $CALL_DIR/remaster_ubuntu.sh root@localhost:
     $SSH -p $PORT "/root/remaster_ubuntu.sh regen /root/$UBUNTU_VERSION $IMAGE_NAME /root/new.iso"
+    $SSH -p $PORT "cd /root/$UBUNTU_VERSION/extract-cd; \
+       mkisofs -r -V $IMAGE_NAME -cache-inodes -J -l \
+	   -b isolinux/isolinux.bin -c isolinux/boot.cat \
+	   -no-emul-boot -boot-load-size 4 -boot-info-table \
+	   -allow-limited-size -udf -o - ." > $ISO
   fi
-  if [ "x"$ISO != "x" ]
-    then echo "*** copying iso from virtual machine to main file system"
-    $SCP -P $PORT root@localhost:/root/new.iso $ISO
-  fi
-  size=$($SSH -p $PORT "df -Pk | grep vda" | sed 's/  */ /g' | cut -d " " -f 3)
+#  size=$($SSH -p $PORT "df -Pk | grep vda" | sed 's/  */ /g' | cut -d " " -f 3)
   if [ "x"$KVM != "x" ]
     then echo "creating kvm image"
       qemu-img create -f raw $KVM ${size}k
@@ -337,22 +336,25 @@ sudo apt-get install kvm
 sudo usermod -aG kvm communtu
 mkdir -p ~/livecd/kvm
 cd ~/livecd/kvm
-qemu-img create -f raw template.img 10G
-kvm -hda template.img -cdrom ~/livecd/isos/ubuntu-9.10-server-amd64.iso -m 400 -vnc :1 -boot d
+qemu-img create -f raw template-new.img 30G
+kvm -drive file=template-new.img,if=virtio,boot=on -cdrom ~/livecd/isos/ubuntu-10.04.3-server-amd64.iso -m 600 -vnc :1 -boot d
 
 # NOW START VNC CLIENT AND MANUALLY INSTALL UBUNTU, user livecd, ssh is the only server that we need
 # (this could be automated using preseed ...)
-kvm -daemonize -hda template.img -m 400 -nographic -redir tcp:2222::22 
+kvm -daemonize -drive file=template-new.img,if=virtio,boot=on -m 600 -nographic -redir tcp:2231::22 
 
-# INSIDE THE VIRTUAL MACHINE, set root password (using sudo passwd)
-ssh -p 2222 -o StrictHostKeyChecking=no livecd@localhost "sudo passwd"
+# ssh into the VM with user, enable root login (if not done via expert mode installation)
+ssh -p 2231 -o StrictHostKeyChecking=no test@localhost "sudo passwd"
 
 # enable public key authentification
-ssh-keygen -t rsa
+#ssh-keygen -t rsa
 ssh-copy-id -i ~/.ssh/id_rsa.pub "-p 2222 root@localhost"
 sudo ssh-keygen -t rsa
 sudo ssh-copy-id -i /root/.ssh/id_rsa.pub "-p 2222 root@localhost"
 
+# then ssh into the VM
+ssh -p 2231 -o StrictHostKeyChecking=no root@localhost "apt-get install -y rsync squashfs-tools genisoimage"
+
 # stop VM
-ssh -p 2222 -o StrictHostKeyChecking=no root@localhost "halt"
+ssh -p 2231 -o StrictHostKeyChecking=no root@localhost "halt"
 
