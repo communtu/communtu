@@ -600,6 +600,9 @@ class MetapackagesController < ApplicationController
     redirect_to :back
   end
 
+  def description
+    translation(self.description_tid)
+  end
 private
 
   def check_owner(meta,user)

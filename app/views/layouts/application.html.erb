@@ -73,6 +73,14 @@
     <% end %>
   </div><!-- END register DIV -->
 	
+  <div id=global_search>
+  	<% form_tag "/search", :method => 'get' do %>
+      <p>
+        <%= text_field_tag :search, params[:search] %>
+        <%= submit_tag "Search", :name => nil %>
+      </p>
+    <% end %>
+  </div>
 	
 </div>
 

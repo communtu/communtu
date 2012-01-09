@@ -1142,6 +1142,11 @@ a.download:hover, a.download:active{
 .register_text{
 	color:#666;
 	}
+#global_search {
+    position: absolute;
+    right: 0em;
+    top: 1.5em;
+}
 #lang{
         position:absolute;
         right:10em;

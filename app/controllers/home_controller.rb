@@ -116,4 +116,9 @@ class HomeController < ApplicationController
     @faq = true
   end
 
+  def search
+    @word = params[:search]
+    #@meta = Metapackage.find_all_by_published_and_description(1, '%'+@word+'%');
+    @meta = Metapackage.find(:all, :conditions => ['published = ? AND description LIKE ?', 1, '%'+@word+'%'])
+  end
 end

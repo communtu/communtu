@@ -29,6 +29,7 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/cancel', :controller => 'home', :action => 'cancel'
   map.connect '/success', :controller => 'home', :action => 'success'
   map.connect '/users/spam_users_delete', :controller => 'users', :action => 'spam_users_delete'
+  map.connect '/search', :controller => 'home', :action => 'search'
 
   map.resources :livecds, :member => { :remaster => :get, :force_remaster => :get, :remaster_new => :get, :start_vm => :get, :stop_vm => :get, :download => :put }
   map.connect '/metapackages/:id/publish', :controller => "metapackages", :action => "publish", :method => :put
