@@ -22,3 +22,42 @@ body{
 	height:147px;
 	
 }
+
+.headertitle{
+	position: absolute;
+	left: 400px;
+	top: 55px;
+}
+h1{
+	font-size: 20px;
+	font-family: "Arial Rounded MT Bold";
+}
+
+
+
+
+#menuline{
+	width: 150px;
+	min-height: 600px;
+	border-right: 2px black solid;
+	float: left;
+}
+#content{
+	width: 600px;
+	min-height: 600px;
+	border-right: 2px black solid;
+	float: left;
+}
+#menu{
+	width:925px;
+}
+
+.navi_text{
+	position: static;
+	margin-left: -60px;
+	margin-top: -20px;
+}
+
+.button{
+	float:left;
+}

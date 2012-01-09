@@ -4,4 +4,6 @@ class HomeController < ApplicationController
   end
   def online
   end
+  def postinstall
+  end
 end
