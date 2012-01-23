@@ -24,6 +24,7 @@
 # architecture_id: architecture of the liveCD
 # derivative_id: derivative of the liveCD
 # distribution_id: distribution of the liveCD
+# downloaded: number of downloads
 # failed: has build process failed?
 # first_try: is this the first try to build the liveCD? (only then a failure message is sent)
 # generated: has the liveCD been successfully built?

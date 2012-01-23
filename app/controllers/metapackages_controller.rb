@@ -523,7 +523,7 @@ class MetapackagesController < ApplicationController
   
   def health_status
     @livecd_log = IO.popen("tail log/livecd.log",&:read)
-    @zombie_processes = IO.popen("ps -aef|grep defunct |wc -l",&:read).to_i
+    @zombie_processes = IO.popen("ps -aef | grep defunct | grep -v grep | wc -l",&:read).to_i
     iso_path = SETTINGS['iso_path']
     @kvm_processes = IO.popen("ps -aef|grep kvm|grep -v grep",&:read).chomp.split("\n").count
     @cpu_usage = IO.popen("top -b -n 1 |grep Cpu",&:read)
