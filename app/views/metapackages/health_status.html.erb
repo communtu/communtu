@@ -100,16 +100,32 @@
 
 <li><%=t(:failed_live_cds)%> (<%=@failed_live_cds.length%>)
 <%if !@failed_live_cds.empty?%>
-<a onclick="toggle_visibility('failed_live_cds');">Show/hide</a>
-<div id="failed_live_cds" style="display:none;">
-<pre><%= @livecd_log %></pre>
-  <ul>
-  <%for c in @failed_live_cds%>
-   <li> <%=link_to c.name, livecd_path(c)%> &nbsp; 
-        <%= if !c.conflict_msg.nil? and !c.conflict_msg.empty? then "<pre>"+c.conflict_msg+"</pre>" else c.short_log end %></li>
-  <%end%>
-  </ul>
-</div>  
+	<a onclick="toggle_visibility('failed_live_cds');">Show/hide</a>
+	<div id="failed_live_cds" style="display:none;">
+	<pre><%= @livecd_log %></pre>
+	  <ul>
+	  <% @failed_live_cds.to_a.sort{|lc1,lc2| lc2[1].size <=> lc1[1].size}.each do |log_cds|%>
+	       <% log = log_cds[0]; cds = log_cds[1] %>
+		   <li>
+		   <% multi_log = (cds.map(&:short_log).uniq.size > 1)%>
+		   <%= if multi_log then log else cds[0].short_log+"<br />" end%>
+		   (<%= cds.size%>)
+		   <% if multi_log %>
+			   <ul>
+			   	<% for c in cds.sort{|cd1,cd2| cd1.short_log <=> cd2.short_log} do%>
+			   <li> <%=link_to c.id, livecd_path(c)%> &nbsp; 
+			        <%= if multi_log then c.short_log end %></li>
+			   </li>
+			   <% end %>
+			   </ul>
+		   <% else %>
+			   	<% for c in cds.sort{|cd1,cd2| cd1.short_log <=> cd2.short_log} do%>
+			      <%=link_to c.id, livecd_path(c)%> &nbsp; 
+                <% end %>
+		   <% end %>
+	  <%end%>
+	  </ul>
+	</div>  
 <%end%>
 </li>
 
