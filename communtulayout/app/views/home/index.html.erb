@@ -1,5 +1,5 @@
 <%= image_tag 'start-cd.png'%>
-<%= link_to 'Live-CD/DVD',:action=>'cd' %>
+<%= link_to 'Live-CD/DVD',:controller => "live_cds", :action=>'build' %>
 <%= image_tag 'Ubuntu.png'%>
 <%= link_to 'My Ubuntu Online',:action=>'online' %>
 <%= image_tag 'Metapackage.png'%>

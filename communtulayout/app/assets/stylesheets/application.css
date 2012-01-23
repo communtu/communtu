@@ -12,6 +12,15 @@
 body{
 	margin:0px;
 }
+#left{
+	float:left
+}
+#middle{
+	
+}
+#right{
+	float:right
+}
 .login{
 	float:right;
 	background-color:yellow;
@@ -42,12 +51,11 @@ h1{
 	border-right: 2px black solid;
 	float: left;
 }
-#content{
-	width: 600px;
+/*#content{
 	min-height: 600px;
 	border-right: 2px black solid;
 	float: left;
-}
+}*/
 #menu{
 	width:925px;
 }

@@ -54,7 +54,9 @@ Communtulayout::Application.routes.draw do
   match 'home/postinstall' => 'home#postinstall'
   match 'home/cd' => 'home#cd'
   match 'live_cds/bestof' => 'live_cds#bestof'
-  resources :live_cds
+  resources :live_cds do
+    get 'build', 'advanced_build', :on => :collection
+  end
   
   # See how all your routes lay out with "rake routes"
 

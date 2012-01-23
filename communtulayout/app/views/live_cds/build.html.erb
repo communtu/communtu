@@ -1,0 +1,36 @@
+<h1>Easy LiveCD</h1>
+<div class="left" id="categories">
+	<%@categories.each do |category|%>
+		<%= check_box_tag category%>
+		<%= category%>
+		<br />
+	<% end %>
+</div>
+<div class="middle">
+	<%= image_tag 'custom_livecd.png'%>
+
+	<%= form_tag '/live_cds/advanced_build', :method => :get%>
+	<%= button_tag 'Fortgeschritten' %>
+	</form>
+	
+</div>
+
+<div class="right" id="bestof">
+	<h2>Beliebteste LiveCDs</h2>
+	
+	<table>
+	  <tr>
+	    <th>Name</th>
+	    <th>Size</th>
+	    <th>Downloaded</th>
+	  </tr>
+	
+	<% @live_cds.each do |live_cd| %>
+	  <tr>
+	    <td><%= link_to live_cd.name, live_cd %></td>
+	    <td align="right"><%= number_to_human_size(live_cd.size) %></td>
+	    <td align="right"><%= live_cd.downloaded %></td>
+	  </tr>
+	<% end %>
+	</table>
+</div>

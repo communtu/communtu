@@ -11,7 +11,7 @@ class LiveCdsController < ApplicationController
   end
   
   def bestof
-    @live_cds = LiveCd.order("downloaded DESC").limit(10)
+    @live_cds = LiveCd.bestof
     render :action => "index"
   end
 
@@ -85,4 +85,14 @@ class LiveCdsController < ApplicationController
       format.json { head :ok }
     end
   end
+  
+  def build
+    @live_cds = LiveCd.bestof
+    @categories = LiveCd.categories
+  end
+  
+  def advanced_build
+    
+  end
+  
 end
