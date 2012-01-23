@@ -44,92 +44,108 @@
 
 <h1><%=t(:health_status)%>: <%=t(:errors)%></h1>
 
-<h2><%=t(:bundles_with_missing_debs)%> (<%=@bundles_with_missing_debs.length%>)</h2>
-<%if @bundles_with_missing_debs.empty?%>
-  <%=t(:none)%>
-<%else%>
+<ul>
+<li><%=t(:bundles_with_missing_debs)%> (<%=@bundles_with_missing_debs.length%>)
+<%if !@bundles_with_missing_debs.empty?%>
+<a onclick="toggle_visibility('bundles_with_missing_debs');">Show/hide</a>
+<div id="bundles_with_missing_debs" style="display:none;">
   <ul>
   <%for b in @bundles_with_missing_debs%>
    <li> <%=link_to b.name, "/debs/bundle/#{b.id}"%></li>
   <%end%>
   </ul>
+</div>
 <%end%>
+</li>
 
-<h2><%=t(:bundles_with_errors)%> (<%=@bundles_with_errors.length%>)</h2>
-<%if @bundles_with_errors.empty?%>
-  <%=t(:none)%>
-<%else%>
+<li><%=t(:bundles_with_errors)%> (<%=@bundles_with_errors.length%>)
+<%if !@bundles_with_errors.empty?%>
+<a onclick="toggle_visibility('bundles_with_errors');">Show/hide</a>
+<div id="bundles_with_errors" style="display:none;">
   <ul>
   <%for b in @bundles_with_errors%>
    <li> <%=link_to b.name, "/debs/bundle/#{b.id}"%></li>
   <%end%>
   </ul>
+</div>  
 <%end%>
+</li>
 
-<h2><%=t(:bundles_without_debs)%> (<%=@bundles_without_debs.length%>)</h2>
-<%if @bundles_without_debs.empty?%>
-  <%=t(:none)%>
-<%else%>
+<li><%=t(:bundles_without_debs)%> (<%=@bundles_without_debs.length%>)
+<%if !@bundles_without_debs.empty?%>
+<a onclick="toggle_visibility('bundles_without_debs');">Show/hide</a>
+<div id="bundles_without_debs" style="display:none;">
   <ul>
   <%for b in @bundles_without_debs%>
    <li> <%=link_to b.name, metapackage_path(b)%></li>
   <%end%>
   </ul>
+</div>  
 <%end%>
+</li>
 
-<h2><%=t(:bundles_with_conflicts)%> (<%=@bundles_with_conflicts.length%>)</h2>
-<%if @bundles_with_conflicts.empty?%>
-  <%=t(:none)%>
-<%else%>
+<li><%=t(:bundles_with_conflicts)%> (<%=@bundles_with_conflicts.length%>)
+<%if !@bundles_with_conflicts.empty?%>
+<a onclick="toggle_visibility('bundles_with_conflicts');">Show/hide</a>
+<div id="bundles_with_conflicts" style="display:none;">
   <ul>
   <%for b in @bundles_with_conflicts%>
    <li> <%=link_to b.name, metapackage_path(b)%><br />
         <pre><%=b.conflict_msg %></pre></li>
   <%end%>
   </ul>
+</div>  
 <%end%>
+</li>
 
-<h2><%=t(:failed_live_cds)%> (<%=@failed_live_cds.length%>)</h2>
+<li><%=t(:failed_live_cds)%> (<%=@failed_live_cds.length%>)
+<%if !@failed_live_cds.empty?%>
+<a onclick="toggle_visibility('failed_live_cds');">Show/hide</a>
+<div id="failed_live_cds" style="display:none;">
 <pre><%= @livecd_log %></pre>
-
-<%if @failed_live_cds.empty?%>
-  <%=t(:none)%>
-<%else%>
   <ul>
   <%for c in @failed_live_cds%>
    <li> <%=link_to c.name, livecd_path(c)%> &nbsp; 
         <%= if !c.conflict_msg.nil? and !c.conflict_msg.empty? then "<pre>"+c.conflict_msg+"</pre>" else c.short_log end %></li>
   <%end%>
   </ul>
+</div>  
 <%end%>
+</li>
 
-
-<h2><%=t(:repositories_incompletely_read)%> (<%=@repositories_incompletely_read.length%>)</h2>
-<%if @repositories_incompletely_read.empty?%>
-  <%=t(:none)%>
-<%else%>
+<li><%=t(:repositories_incompletely_read)%> (<%=@repositories_incompletely_read.length%>)
+<%if !@repositories_incompletely_read.empty?%>
+<a onclick="toggle_visibility('repositories_incompletely_read');">Show/hide</a>
+<div id="repositories_incompletely_read" style="display:none;">
   <ul>
   <%for r in @repositories_incompletely_read%>
    <li> <%=link_to r.name, repository_path(r)%></li>
   <%end%>
   </ul>
+</div>  
 <%end%>
+</ul>
+</li>
 
 <h1><%=t(:health_status)%>: <%=t(:warnings)%></h1>
-
-<h2><%=t(:bundles_needing_deb_generation)%> (<%=@modified_bundles.length%>)</h2>
-<%if @modified_bundles.empty?%>
-  <%=t(:none)%>
-<%else%>
+<ul>
+<li><%=t(:bundles_needing_deb_generation)%> (<%=@modified_bundles.length%>)
+<%if !@modified_bundles.empty?%>
+<a onclick="toggle_visibility('modified_bundles');">Show/hide</a>
+<div id="modified_bundles" style="display:none;">
   <ul>
   <%for b in @modified_bundles%>
    <li> <%=link_to b.name, metapackage_path(b)%></li>
   <%end%>
   </ul>
+</div>  
 <%end%>
+</li>
 
-<% count =  Distribution.all.map{|d| if @bundles_with_missing_packages[d].nil? then 0 else @bundles_with_missing_packages[d].length end}.sum%>
-<h2><%=t(:bundles_with_missing_packages)%> (<%=count%>)</h2>
+<li><%=t(:bundles_with_missing_packages)%> 
+(<%= count =  Distribution.all.map{|d| if @bundles_with_missing_packages[d].nil? then 0 else @bundles_with_missing_packages[d].length end}.sum%>)
+<a onclick="toggle_visibility('bundles_with_missing_packages');">Show/hide</a>
+<div id="bundles_with_missing_packages" style="display:none;">
 <% Distribution.all.each do |d| %>
 <%if !@bundles_with_missing_packages[d].nil? and !@bundles_with_missing_packages[d].empty?%>
   <ul>
@@ -144,17 +160,22 @@
        </ul>
        <% end %>
     </li>
-  <%end%>
   </ul>
+  <%end%>
 <%end%>
+</div>  
+</li>
 
-<h2><%=t(:repositories_without_packages)%> (<%=@repositories_without_packages.length%>)</h2>
-<%if @repositories_without_packages.empty?%>
-  <%=t(:none)%>
-<%else%>
+<li><%=t(:repositories_without_packages)%> (<%=@repositories_without_packages.length%>)
+<%if !@repositories_without_packages.empty?%>
+<a onclick="toggle_visibility('repositories_without_packages');">Show/hide</a>
+<div id="repositories_without_packages" style="display:none;">
   <ul>
   <%for r in @repositories_without_packages%>
    <li> <%=link_to r.name, repository_path(r)%></li>
   <%end%>
   </ul>
+</div>  
 <%end%>
+</li>
+</ul>
