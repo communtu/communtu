@@ -1,0 +1,2 @@
+module LiveCDsHelper
+end

@@ -8,16 +8,18 @@
 </head>
 <body>
 <div class="header">
-<div class="login">Admin  | Anmelden  |  Guest</div>
-<h1 class="headertitle">Ubuntu installieren leicht gemacht</h1>
-</div>
-<div id="navigation">
-<%=link_to(navi_link("Download","navi_download.png").html_safe, "/")%>
-<%=link_to(navi_link("Bündel","navi_bundle.png").html_safe, "/")%>
-<%=link_to(navi_link("Über uns","navi_communtu.png").html_safe, "/")%>
+	<div class="login">Admin  | Anmelden  |  Guest</div>
+	<h1 class="headertitle">Ubuntu installieren leicht gemacht</h1>
+	<div id="navigation">
+		<%=link_to(navi_link("Download","navi_download.png").html_safe, "/")%>
+		<%=link_to(navi_link("Bündel","navi_bundle.png").html_safe, "/")%>
+		<%=link_to(navi_link("Über uns","navi_communtu.png").html_safe, "/")%>
+	</div>
 </div>
 
-<%= yield %>
+<div id="content">
+	<%= yield %>
+</div>
 
 </body>
 </html>

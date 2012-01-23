@@ -6,4 +6,6 @@ class HomeController < ApplicationController
   end
   def postinstall
   end
+  def cd
+  end
 end

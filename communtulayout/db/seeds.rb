@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Emanuel', :city => cities.first)
+
+YAML.load_file("db/livecd.yml").each do |cd|
+  LiveCd.create(cd)
+end

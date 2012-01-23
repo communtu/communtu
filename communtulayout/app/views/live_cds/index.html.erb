@@ -1,0 +1,27 @@
+<h1>Listing live_cds</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Size</th>
+    <th>Downloaded</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @live_cds.each do |live_cd| %>
+  <tr>
+    <td><%= live_cd.name %></td>
+    <td><%= live_cd.size %></td>
+    <td><%= live_cd.downloaded %></td>
+    <td><%= link_to 'Show', live_cd %></td>
+    <td><%= link_to 'Edit', edit_live_cd_path(live_cd) %></td>
+    <td><%= link_to 'Destroy', live_cd, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Live cd', new_live_cd_path %>
