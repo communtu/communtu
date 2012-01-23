@@ -252,6 +252,7 @@ class Livecd < ActiveRecord::Base
     end
     self.generating = false
     self.save
+    self.init_short_log
   end
 
   # remaster the next non-generated liveCD (called from rake daemon)
