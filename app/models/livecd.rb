@@ -370,7 +370,7 @@ class Livecd < ActiveRecord::Base
   MSGS = ["Failed to fetch","could not set up","Cannot install","is not installable","not going to be installed", "Depends:","Error","error","annot","Wrong","not found","Connection closed", "E:"]
   
   def init_short_log
-    self.short_log = self.compute_short_log
+    self.short_log = self.compute_short_log.gsub(/^[ \t]*/,"")
     self.save
   end
   
