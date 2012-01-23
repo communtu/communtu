@@ -522,7 +522,7 @@ class MetapackagesController < ApplicationController
   end
   
   def health_status
-    @livecd_log = IO.popen("tail log/livecd.log",&:read)
+    @livecd_log = IO.popen("tail #{RAILS_ROOT}/log/livecd.log",&:read)
     @zombie_processes = IO.popen("ps -aef | grep defunct | grep -v grep | wc -l",&:read).to_i
     iso_path = SETTINGS['iso_path']
     @kvm_processes = IO.popen("ps -aef|grep kvm|grep -v grep",&:read).chomp.split("\n").count
@@ -555,8 +555,15 @@ class MetapackagesController < ApplicationController
     @repositories_without_packages =
       @repositories_without_packages_all.select{ |r| r.empty_files?}
     @repositories_incompletely_read = @repositories_without_packages_all - @repositories_without_packages
-    @failed_live_cds = Livecd.find_all_by_failed(true)
-
+    @failed_live_cds = {}
+    Livecd.find(:all,:conditions => {:failed=>true}).each do |cd|
+      tiny_log = cd.short_log.gsub(/^[ \t]*/,"")[0,20]
+      if @failed_live_cds[tiny_log].nil? then
+        @failed_live_cds[tiny_log] = [cd]
+      else
+        @failed_live_cds[tiny_log] << cd
+      end
+    end
     ms=Metapackage.all.select{|m| Metacontent.find(:first,:conditions=>["metacontents_distrs.distribution_id = 6 and metapackage_id = ?",m.id],:include=>:metacontents_distrs).nil?}
   end
 

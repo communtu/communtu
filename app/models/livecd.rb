@@ -369,14 +369,27 @@ class Livecd < ActiveRecord::Base
 
   MSGS = ["Failed to fetch","could not set up","Cannot install","is not installable","not going to be installed", "Depends:","Error","error","annot","Wrong","not found","Connection closed", "E:"]
   
-  def short_log
+  def init_short_log
+    self.short_log = self.compute_short_log
+    self.save
+  end
+  
+  def compute_short_log
     if log.nil?
       return ""
     end
     lines = log.split("\n")
     MSGS.each do |msg|
+      packages = []
       lines.reverse.each do |line|
+        if line[0]==32 then
+          packages << line.chomp
+        end
         if !line.index(msg).nil?
+          line.chomp!
+          if line == "Errors were encountered while processing:"
+            line += packages.join(",")
+          end
           return line
         end
       end

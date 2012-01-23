@@ -58,6 +58,7 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.integer  "p_recent"
     t.integer  "p_nofiles"
     t.boolean  "tested",             :default => false
+    t.text     "conflict_msg"
   end
 
   add_index "base_packages", ["category_id", "type"], :name => "category_id"
@@ -216,6 +217,7 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "locale"
   end
 
   create_table "livecds", :force => true do |t|
@@ -245,6 +247,9 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.string   "vm_hda"
     t.integer  "downloaded",      :default => 0
     t.boolean  "published",       :default => false
+    t.text     "conflict_msg"
+    t.integer  "port"
+    t.string   "short_log"
   end
 
   create_table "message_copies", :force => true do |t|
@@ -409,34 +414,6 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
   end
 
   add_index "translations", ["translatable_id", "language_code"], :name => "translatable_id", :unique => true
-
-  create_table "umfrage_packages", :force => true do |t|
-    t.integer  "umfrage_id"
-    t.string   "package"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "umfrage_sources", :force => true do |t|
-    t.integer  "umfrage_id"
-    t.string   "source"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "umfrages", :force => true do |t|
-    t.boolean  "einsteiger"
-    t.boolean  "freak"
-    t.boolean  "sammler"
-    t.boolean  "musik"
-    t.boolean  "video"
-    t.boolean  "netz"
-    t.boolean  "grafik"
-    t.boolean  "spiele"
-    t.string   "email"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
 
   create_table "user_packages", :force => true do |t|
     t.integer  "user_id"
