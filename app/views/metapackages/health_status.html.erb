@@ -98,7 +98,7 @@
 <%end%>
 </li>
 
-<li><%=t(:failed_live_cds)%> (<%=@failed_live_cds.length%>)
+<li><%=t(:failed_live_cds)%> (<%=@failed_live_cds_count%>)
 <%if !@failed_live_cds.empty?%>
 	<a onclick="toggle_visibility('failed_live_cds');">Show/hide</a>
 	<div id="failed_live_cds" style="display:none;">

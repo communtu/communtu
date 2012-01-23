@@ -555,9 +555,11 @@ class MetapackagesController < ApplicationController
     @repositories_without_packages =
       @repositories_without_packages_all.select{ |r| r.empty_files?}
     @repositories_incompletely_read = @repositories_without_packages_all - @repositories_without_packages
+    failed_cds = Livecd.find(:all,:conditions => {:failed=>true})
+    @failed_live_cds_count = failed_cds.size
     @failed_live_cds = {}
-    Livecd.find(:all,:conditions => {:failed=>true}).each do |cd|
-      tiny_log = cd.short_log.gsub(/^[ \t]*/,"")[0,20]
+    failed_cds.each do |cd|
+      tiny_log = cd.short_log[0,20]
       if @failed_live_cds[tiny_log].nil? then
         @failed_live_cds[tiny_log] = [cd]
       else
