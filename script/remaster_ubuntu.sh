@@ -306,15 +306,15 @@ regenerate_img () {
 	sed -i "/${f}/d" "$d/extract-cd/casper/filesystem.manifest-desktop"
     done
 
-    rm "$d/extract-cd/md5sum.txt"
-    sh -c "cd '$d/extract-cd' && find . -type f -print0 | xargs -0 md5sum > md5sum.txt"
+#    rm "$d/extract-cd/md5sum.txt"
+#    sh -c "cd '$d/extract-cd' && find . -type f -print0 | xargs -0 md5sum > md5sum.txt"
 
-    pushd "$d/extract-cd" >/dev/null
-    mkisofs -r -V "$IMAGE_NAME" -cache-inodes -J -l \
-	-b isolinux/isolinux.bin -c isolinux/boot.cat \
-	-no-emul-boot -boot-load-size 4 -boot-info-table \
-	-allow-limited-size -udf -o "$outfile" .
-    popd >/dev/null
+#    pushd "$d/extract-cd" >/dev/null
+#    mkisofs -r -V "$IMAGE_NAME" -cache-inodes -J -l \
+#	-b isolinux/isolinux.bin -c isolinux/boot.cat \
+#	-no-emul-boot -boot-load-size 4 -boot-info-table \
+#	-allow-limited-size -udf -o "$outfile" .
+#    popd >/dev/null
 
 }
 
