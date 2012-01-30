@@ -20,9 +20,9 @@
 	
 	<table>
 	  <tr>
-	    <th>Name</th>
-	    <th>Size</th>
-	    <th>Downloaded</th>
+	    <th><%= link_to "Name", :action =>:build, :order =>invert(params,"name"), :by =>:name %></th>
+	    <th><%= link_to "Size", :action =>:build, :order =>invert(params,"size"), :by =>:size %></th>
+	    <th><%= link_to "Downloaded", :action =>:build, :order =>invert(params,"downloaded"), :by =>:downloaded %></th>
 	  </tr>
 	
 	<% @live_cds.each do |live_cd| %>

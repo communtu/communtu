@@ -87,7 +87,7 @@ class LiveCdsController < ApplicationController
   end
   
   def build
-    @live_cds = LiveCd.bestof
+    @live_cds = LiveCd.bestof.our_sort_by(params)
     @categories = LiveCd.categories
   end
   
