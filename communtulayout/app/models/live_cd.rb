@@ -3,7 +3,7 @@ class LiveCd < ActiveRecord::Base
     LiveCd.order("downloaded DESC").limit(10)
   end
   def self.categories
-    ["Grafik","Multimedia","Spiele","Kommunikation","Windows"]
+    ["Büro","Grafik","Multimedia","Spiele","Kommunikation","Umstieg von Windows"]
   end
 end
 class Array
