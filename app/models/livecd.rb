@@ -167,7 +167,6 @@ class Livecd < ActiveRecord::Base
     ActiveRecord::Base.connection.reconnect!
     self.port = port
     self.save
-    ver = self.smallversion
     fullname = self.fullname
     # need to generate iso, use lock in order to prevent parallel generation of multiple isos
     begin
@@ -175,7 +174,7 @@ class Livecd < ActiveRecord::Base
         self.generating = true
         self.save
         # log to log/livecd.log
-        system "(echo; echo \"------------------------------------\")  >> #{RAILS_ROOT}/log/livecd#{port}.log"
+        log port, "\n------------------------------------"
         call = "echo \"#{date_now} - #{port}: Creating live CD ##{self.id} #{fullname}\" >> #{RAILS_ROOT}/log/"
         system (call+"livecd#{port}.log")
         system (call+"livecd.log")
@@ -188,24 +187,12 @@ class Livecd < ActiveRecord::Base
           system (call+"livecd.log")
           cd.destroy
         end
-        # normal users get nice'd
-        nice = (self.users[0].nil? or !self.users[0].has_role?('administrator'))
-        nicestr = if nice then "-nice " else "" end
-        # Jaunty and lower need virtualisation due to requirement of squashfs version >= 4 (on the server, we have Hardy)
-        if self.distribution.name[0] <= 74 then # 74 is "J"
-          virt = "-v "
-        else
-          virt = ""
-        end
-        isoflag = self.iso ? "-iso #{self.iso_image} " : ""
-        kvmflag = self.kvm ? "-kvm #{self.kvm_image} " : ""
-        usbflag = self.usb ? "-usb #{self.usb_image} " : ""
-        remaster_call = "#{RAILS_ROOT}/script/remaster create #{nicestr}#{virt}#{isoflag}#{kvmflag}#{usbflag}#{ver} #{self.name} #{self.srcdeb} #{self.installdeb} #{port} >> #{RAILS_ROOT}/log/livecd#{port}.log 2>&1"
-        system "echo \"#{remaster_call}\" >> #{RAILS_ROOT}/log/livecd#{port}.log"
-        self.failed = !(system remaster_call)
+        err = self.remaster_it(ver,port)
+        self.failed = err.empty?
+        system "echo \"#{err}\" >> #{RAILS_ROOT}/log/livecd#{port}.log"
         # kill VM, necessary in case of abrupt exit
         system "sudo kill-kvm #{port}"
-        system "echo  >> #{RAILS_ROOT}/log/livecd#{port}.log"
+        log port, ""
         msg = if self.failed then "failed" else "succeeded" end
         call = "echo \"#{date_now} - #{port}: Creation of live CD ##{self.id} #{msg}\" >> #{RAILS_ROOT}/log/"
         system (call+"livecd#{port}.log")
@@ -283,6 +270,88 @@ class Livecd < ActiveRecord::Base
       cd.fork_remaster(port)
     end
   end
+
+  def remaster_it(ver,port)
+    Dir.chdir SETTINGS["livecd_folder"]
+    if !File.exists?(self.self.srcdeb) 
+      return "#{self.srcdeb} not found"     
+    end
+    if (isdeb = !installdeb.scan(/.deb$/).empty?) then
+      if !File.exists?(self.self.installdeb) 
+        return "#{self.installdeb} not found"     
+      end
+    end      
+    if !File.exists("kvm/#{self.smallversion}.img") then
+      return "kvm/#{self.smallversion}.img not found"
+    end
+    # normal users get nice'd
+    nice = (self.users[0].nil? or !self.users[0].has_role?('administrator'))
+    nicestr = if nice then "-nice " else "" end
+
+    system_with_log port, "#{$NICEKVM}{nicestr} -daemonize -drive file=kvm/#{self.smallversion}.img,if=virtio,boot=on,snapshot=on -smp 4 -m 600 -net nic,model=virtio -net user -nographic -redir tcp:#{port}::22"
+    log port, "*** waiting for start of virtual machine"
+    
+    ssh port, "echo \"nameserver $NAMESERVER\" > /root/#{self.smallversion}/edit/etc/resolv.conf"
+    ssh port, "cat /root/#{self.smallversion}/edit/etc/resolv.conf"
+    echo "*** adding new sources and keys, using self.srcdeb"
+    scp port, "#{self.srcdeb} root@localhost:/root/#{self.smallversion}/edit/"
+    source = `basename #{self.srcdeb}`.chomp
+    ssh port, "chroot /root/#{self.smallversion}/edit dpkg -i #{source}"
+    ssh port, "rm /root/#{self.smallversion}/edit/#{source}"
+    sleep 15
+    log port, "*** setting debconf options"
+    ssh port, "chroot /root/#{self.smallversion}/edit sed -i 's/Templates: templatedb/Templates: templatedb\nFrontend: readline\nPriority: critical/' /etc/debconf.conf"
+    log port, "*** configuring sources.list for apt-proxy"
+    #ssh port, "cp /root/#{self.smallversion}/edit/etc/apt/sources.list . ; chroot /root/#{self.smallversion}/edit sed -i 's/http:\/\//http:\/\/$APT_PROXY:3142\//' /etc/apt/sources.list; chroot /root/#{self.smallversion}/edit apt-get update"
+    ssh port, "chroot /root/#{self.smallversion}/edit mount -t proc none /proc; chroot /root/#{self.smallversion}/edit mount -t sysfs none /sys; chroot /root/#{self.smallversion}/edit mount -t devpts devpts /dev/pts"
+    if isdeb then
+      log port, "*** installing deb package #{self.installdeb}"
+      install = `basename #{self.installdeb}`.chomp
+      scp port, #{self.installdeb} root@localhost:/root/#{self.smallversion}/edit/
+      # hack since Ubuntu has removed gdebi-core from main
+      # we just install the dependencies from #{install} (we know that there is nothing more in it...)
+      ssh port, "chroot /root/#{self.smallversion}/edit dpkg-deb -e #{install}"
+      ssh port, "chroot /root/#{self.smallversion}/edit grep Depends DEBIAN/control | tail -c +10 | sed 's/,//g' | xargs sudo apt-get install -y --force-yes"
+      ssh port, "rm -r /root/#{self.smallversion}/edit/#{install} /root/#{self.smallversion}/edit/DEBIAN"
+    else
+      log port, "*** installing package #{self.installdeb} from repository"
+      ssh port, "chroot /root/#{self.smallversion}/edit apt-get install -y --force-yes #{self.installdeb}"
+    end
+    # removed upgrade since some upgrades require interaction
+    #ssh port, "chroot /root/#{self.smallversion}/edit apt-get -y upgrade"
+    
+    log port, "*** reverting special settings"
+    #ssh port, "cp sources.list /root/#{self.smallversion}/edit/etc/apt/"
+    ssh port, "export LANG=C; chroot /root/#{self.smallversion}/edit sed -i -r 's/Frontend: readline|Priority: critical//' /etc/debconf.conf; chroot /root/#{self.smallversion}/edit sh -c \"export LANG=C; apt-get update\"; rm /root/#{self.smallversion}/edit/etc/resolv.conf"
+    
+    log port, "creating iso image"
+    # virtualization needed: create iso in the VM
+    scp port, $CALL_DIR/remaster_ubuntu.sh root@localhost:
+    ssh port, "/root/remaster_ubuntu.sh regen /root/#{self.smallversion} $IMAGE_NAME /root/new.iso"
+    ssh port, "\"cd /root/#{self.smallversion}/extract-cd; \
+           mkisofs -r -V $IMAGE_NAME -cache-inodes -J -l \
+         -b isolinux/isolinux.bin -c isolinux/boot.cat \
+         -no-emul-boot -boot-load-size 4 -boot-info-table \
+         -allow-limited-size -udf -o - .\" > $ISO"
+      fi
+      stop_vm port
+  end
+
+  def system_with_log(port,str)
+    safe_system("#{str} #{RAILS_ROOT}/log/livecd#{port}.log")
+  end  
+  
+  def log(port,str)
+    system "echo \"#{str}\" >> #{RAILS_ROOT}/log/livecd#{port}.log"
+  end 
+
+  def ssh(port,str)
+    system_with_log(port,"ssh -p #{port} -q -o StrictHostKeyChecking=no -o ConnectTimeout=500 root@localhost \"#{str}\"")
+  end  
+
+  def scp(port,str)
+    system_with_log(port,"scp -P #{port} -q -o StrictHostKeyChecking=no -o ConnectTimeout=500 \"#{str}\"")
+  end  
 
   # get list of metapackages, either from database or from installdeb
   def bundles
