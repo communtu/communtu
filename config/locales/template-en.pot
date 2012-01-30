@@ -101,7 +101,7 @@ msgstr ""
 msgid "us"
 msgstr ""
 #: view_layouts_application_30
-msgid "Help/FAQ"
+msgid "Contact"
 msgstr ""
 #: create_your_livedvd_or_usb
 msgid "Create Live-CD/DVD or USB key"
@@ -255,6 +255,9 @@ msgid "To reach the package manager Synaptic you navigate to \"Applications -> S
 msgstr ""
 #: controller_distributions_2
 msgid "Distribution updated."
+msgstr ""
+#: install_apt_get
+msgid "Install package"
 msgstr ""
 #: want_to_add_package2
 msgid "Create a new bundle from the selection"
@@ -621,6 +624,9 @@ msgid "Your account has been activated."
 msgstr ""
 #: view_home_derivatives_10
 msgid "https://wiki.ubuntu.com/UbuntuStudio"
+msgstr ""
+#: board
+msgid "board"
 msgstr ""
 #: new_derivative
 msgid "New derivative"
@@ -1843,6 +1849,9 @@ msgstr ""
 #: view_layouts_application_9
 msgid "Log out"
 msgstr ""
+#: livecd_no_name
+msgid "Name of the Live-CD/DVD:"
+msgstr ""
 #: bundles_with_errors
 msgid "Bundles with errors"
 msgstr ""
@@ -1893,6 +1902,9 @@ msgid "Bundles that need to be recreated as metapackages."
 msgstr ""
 #: controller_repositories_2
 msgid "Repository updated."
+msgstr ""
+#: conflicts
+msgid ""
 msgstr ""
 #: controller_repositories_3
 msgid "sources.list read."
@@ -2050,6 +2062,9 @@ msgstr ""
 #: install_bundle
 msgid "Installation of bundle %{name}"
 msgstr ""
+#: install_apt_get_repos
+msgid ""
+msgstr ""
 #: livecd_email_failed
 msgid "Communtu: creation of Live-CD/DVD failed."
 msgstr ""
@@ -2076,6 +2091,9 @@ msgid "Created bundles"
 msgstr ""
 #: view_repositories_show_6
 msgid "        OpenSource"
+msgstr ""
+#: bundles_with_conflicts
+msgid "Bundles with errors"
 msgstr ""
 #: new_architecture
 msgid "New architecture"
@@ -2248,6 +2266,9 @@ msgstr ""
 #: archive
 msgid "archive"
 msgstr ""
+#: compute_conflicts
+msgid "Conflicts inside bundles"
+msgstr ""
 #: controller_sessions_4
 msgid "You have been logged in."
 msgstr ""
@@ -2344,20 +2365,20 @@ msgstr ""
 #: view_packages_show_26
 msgid "change metapackage into bundle"
 msgstr ""
-#: make_distribution_visible
-msgid "Make distribution viewable"
-msgstr ""
 #: view_home_icons_24
 msgid "Receive a message-icon for new messages"
+msgstr ""
+#: make_distribution_visible
+msgid "Make distribution viewable"
 msgstr ""
 #: controller_debs_0
 msgid "Debian-packages"
 msgstr ""
-#: controller_debs_1
-msgid "Deb created."
-msgstr ""
 #: view_packages_edit_10
 msgid "Package description"
+msgstr ""
+#: controller_debs_1
+msgid "Deb created."
 msgstr ""
 #: please_create_cd
 msgid "You must create a ISO file first."
@@ -2458,6 +2479,9 @@ msgstr ""
 #: mailinglist
 msgid "Mailinglists:"
 msgstr ""
+#: illformed_version
+msgid ""
+msgstr ""
 #: view_home_auth_error_1
 msgid "The file you sent to Communtu couldn't be authenticated. Please try again with logging in again or filling in the form again. This could also come from disabled cookie settings."
 msgstr ""
@@ -2487,6 +2511,9 @@ msgid "... or burn it to a CD or DVD."
 msgstr ""
 #: livecd_disabled
 msgid "Creation of Live-CDs is disabled. Check config/settings.yml."
+msgstr ""
+#: contact_form
+msgid "Feedback"
 msgstr ""
 #: untested_bundle
 msgid "Untested bundles:"
@@ -2598,6 +2625,9 @@ msgid " install sources"
 msgstr ""
 #: model_package_9
 msgid "While the synchronization of the repository %{repo_name} no PackageDistr-entry for the package %{package_name} could be found."
+msgstr ""
+#: allgemeinbildung_imprint
+msgid ""
 msgstr ""
 #: view_home_about_12
 msgid "<b>Administrate bundles</b> on the left side offers an overview about the available bundles. At last, an overview about the available Ubunt versions (distributions) can be found at <b>Ubuntu versions</b>."
