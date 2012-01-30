@@ -174,7 +174,7 @@ class Livecd < ActiveRecord::Base
         self.generating = true
         self.save
         # log to log/livecd.log
-        log port, "\n------------------------------------"
+        log "\n------------------------------------"
         call = "echo \"#{date_now} - #{port}: Creating live CD ##{self.id} #{fullname}\" >> #{RAILS_ROOT}/log/"
         system (call+"livecd#{port}.log")
         system (call+"livecd.log")
@@ -187,12 +187,16 @@ class Livecd < ActiveRecord::Base
           system (call+"livecd.log")
           cd.destroy
         end
-        err = self.remaster_it(ver,port)
+        begin
+          err = self.remaster_it
+        rescue StandardError => ruby_err
+          err = "*** error during live CD creation: #{ruby_err}"
+        end 
         self.failed = err.empty?
         system "echo \"#{err}\" >> #{RAILS_ROOT}/log/livecd#{port}.log"
         # kill VM, necessary in case of abrupt exit
         system "sudo kill-kvm #{port}"
-        log port, ""
+        log ""
         msg = if self.failed then "failed" else "succeeded" end
         call = "echo \"#{date_now} - #{port}: Creation of live CD ##{self.id} #{msg}\" >> #{RAILS_ROOT}/log/"
         system (call+"livecd#{port}.log")
@@ -271,7 +275,7 @@ class Livecd < ActiveRecord::Base
     end
   end
 
-  def remaster_it(ver,port)
+  def remaster_it
     Dir.chdir SETTINGS["livecd_folder"]
     if !File.exists?(self.self.srcdeb) 
       return "#{self.srcdeb} not found"     
@@ -288,71 +292,67 @@ class Livecd < ActiveRecord::Base
     nice = (self.users[0].nil? or !self.users[0].has_role?('administrator'))
     nicestr = if nice then "-nice " else "" end
 
-    system_with_log port, "#{$NICEKVM}{nicestr} -daemonize -drive file=kvm/#{self.smallversion}.img,if=virtio,boot=on,snapshot=on -smp 4 -m 600 -net nic,model=virtio -net user -nographic -redir tcp:#{port}::22"
-    log port, "*** waiting for start of virtual machine"
+    system_with_log "#{nicestr} -daemonize -drive file=kvm/#{self.smallversion}.img,if=virtio,boot=on,snapshot=on -smp 4 -m 600 -net nic,model=virtio -net user -nographic -redir tcp:#{port}::22"
+    log "*** waiting for start of virtual machine"
     
-    ssh port, "echo \"nameserver $NAMESERVER\" > /root/#{self.smallversion}/edit/etc/resolv.conf"
-    ssh port, "cat /root/#{self.smallversion}/edit/etc/resolv.conf"
+    ssh "echo \"nameserver #{SETTINGS['nameserver']}\" > /root/#{self.smallversion}/edit/etc/resolv.conf"
+    ssh "cat /root/#{self.smallversion}/edit/etc/resolv.conf"
     echo "*** adding new sources and keys, using self.srcdeb"
-    scp port, "#{self.srcdeb} root@localhost:/root/#{self.smallversion}/edit/"
+    scp "#{self.srcdeb} root@localhost:/root/#{self.smallversion}/edit/"
     source = `basename #{self.srcdeb}`.chomp
-    ssh port, "chroot /root/#{self.smallversion}/edit dpkg -i #{source}"
-    ssh port, "rm /root/#{self.smallversion}/edit/#{source}"
+    chroot "dpkg -i #{source}"
+    ssh "rm /root/#{self.smallversion}/edit/#{source}"
     sleep 15
-    log port, "*** setting debconf options"
-    ssh port, "chroot /root/#{self.smallversion}/edit sed -i 's/Templates: templatedb/Templates: templatedb\nFrontend: readline\nPriority: critical/' /etc/debconf.conf"
-    log port, "*** configuring sources.list for apt-proxy"
-    #ssh port, "cp /root/#{self.smallversion}/edit/etc/apt/sources.list . ; chroot /root/#{self.smallversion}/edit sed -i 's/http:\/\//http:\/\/$APT_PROXY:3142\//' /etc/apt/sources.list; chroot /root/#{self.smallversion}/edit apt-get update"
-    ssh port, "chroot /root/#{self.smallversion}/edit mount -t proc none /proc; chroot /root/#{self.smallversion}/edit mount -t sysfs none /sys; chroot /root/#{self.smallversion}/edit mount -t devpts devpts /dev/pts"
+    log "*** setting debconf options"
+    chroot "sed -i 's/Templates: templatedb/Templates: templatedb\nFrontend: readline\nPriority: critical/' /etc/debconf.conf"
+    #log "*** configuring sources.list for apt-proxy"
+    #ssh "cp /root/#{self.smallversion}/edit/etc/apt/sources.list . ; chroot /root/#{self.smallversion}/edit sed -i 's/http:\/\//http:\/\/$APT_PROXY:3142\//' /etc/apt/sources.list; chroot /root/#{self.smallversion}/edit apt-get update"
+    chroot "mount -t proc none /proc"
+    chroot "mount -t sysfs none /sys"
+    chroot "mount -t devpts devpts /dev/pts"
     if isdeb then
-      log port, "*** installing deb package #{self.installdeb}"
-      install = `basename #{self.installdeb}`.chomp
-      scp port, #{self.installdeb} root@localhost:/root/#{self.smallversion}/edit/
-      # hack since Ubuntu has removed gdebi-core from main
-      # we just install the dependencies from #{install} (we know that there is nothing more in it...)
-      ssh port, "chroot /root/#{self.smallversion}/edit dpkg-deb -e #{install}"
-      ssh port, "chroot /root/#{self.smallversion}/edit grep Depends DEBIAN/control | tail -c +10 | sed 's/,//g' | xargs sudo apt-get install -y --force-yes"
-      ssh port, "rm -r /root/#{self.smallversion}/edit/#{install} /root/#{self.smallversion}/edit/DEBIAN"
+      log "*** installing deb package #{self.installdeb}"
+      bundle_names = self.bundles.map(&:debian_name).join(" ")
+      chroot "apt-get install -y --force-yes #{bundle_names}"
     else
-      log port, "*** installing package #{self.installdeb} from repository"
-      ssh port, "chroot /root/#{self.smallversion}/edit apt-get install -y --force-yes #{self.installdeb}"
+      log "*** installing package #{self.installdeb} from repository"
+      chroot "apt-get install -y --force-yes #{self.installdeb}"
     end
-    # removed upgrade since some upgrades require interaction
-    #ssh port, "chroot /root/#{self.smallversion}/edit apt-get -y upgrade"
     
-    log port, "*** reverting special settings"
-    #ssh port, "cp sources.list /root/#{self.smallversion}/edit/etc/apt/"
-    ssh port, "export LANG=C; chroot /root/#{self.smallversion}/edit sed -i -r 's/Frontend: readline|Priority: critical//' /etc/debconf.conf; chroot /root/#{self.smallversion}/edit sh -c \"export LANG=C; apt-get update\"; rm /root/#{self.smallversion}/edit/etc/resolv.conf"
+    #log "*** reverting special settings for apt-proxy"
+    #ssh "cp sources.list /root/#{self.smallversion}/edit/etc/apt/"
+    ssh "export LANG=C; chroot /root/#{self.smallversion}/edit sed -i -r 's/Frontend: readline|Priority: critical//' /etc/debconf.conf; chroot /root/#{self.smallversion}/edit sh -c \"export LANG=C; apt-get update\"; rm /root/#{self.smallversion}/edit/etc/resolv.conf"
     
-    log port, "creating iso image"
-    # virtualization needed: create iso in the VM
-    scp port, $CALL_DIR/remaster_ubuntu.sh root@localhost:
-    ssh port, "/root/remaster_ubuntu.sh regen /root/#{self.smallversion} $IMAGE_NAME /root/new.iso"
-    ssh port, "\"cd /root/#{self.smallversion}/extract-cd; \
-           mkisofs -r -V $IMAGE_NAME -cache-inodes -J -l \
+    log "creating iso image"
+    scp "#{RAILS_ROOT}/remaster_ubuntu.sh root@localhost:"
+    ssh "/root/remaster_ubuntu.sh regen /root/#{self.smallversion} #{self.name} /root/new.iso"
+    ssh "\"cd /root/#{self.smallversion}/extract-cd; \
+           mkisofs -r -V #{self.name} -cache-inodes -J -l \
          -b isolinux/isolinux.bin -c isolinux/boot.cat \
          -no-emul-boot -boot-load-size 4 -boot-info-table \
-         -allow-limited-size -udf -o - .\" > $ISO"
-      fi
-      stop_vm port
+         -allow-limited-size -udf -o - .\" > #{self.iso_image}"
+    ssh "halt"
   end
 
-  def system_with_log(port,str)
-    safe_system("#{str} #{RAILS_ROOT}/log/livecd#{port}.log")
+  def system_with_log(str)
+    safe_system("#{str} #{RAILS_ROOT}/log/livecd#{self.port}.log")
   end  
   
-  def log(port,str)
-    system "echo \"#{str}\" >> #{RAILS_ROOT}/log/livecd#{port}.log"
+  def log(str)
+    system "echo \"#{str}\" >> #{RAILS_ROOT}/log/livecd#{self.port}.log"
   end 
 
-  def ssh(port,str)
-    system_with_log(port,"ssh -p #{port} -q -o StrictHostKeyChecking=no -o ConnectTimeout=500 root@localhost \"#{str}\"")
+  def ssh(str)
+    system_with_log("ssh -p #{self.port} -q -o StrictHostKeyChecking=no -o ConnectTimeout=500 root@localhost \"#{str}\"")
   end  
 
-  def scp(port,str)
-    system_with_log(port,"scp -P #{port} -q -o StrictHostKeyChecking=no -o ConnectTimeout=500 \"#{str}\"")
+  def scp(str)
+    system_with_log(self.port,"scp -P #{self.port} -q -o StrictHostKeyChecking=no -o ConnectTimeout=500 \"#{str}\"")
   end  
 
+  def chroot(str)
+    ssh "chroot /root/#{self.smallversion}/edit #{str}"
+  end
   # get list of metapackages, either from database or from installdeb
   def bundles
     begin
