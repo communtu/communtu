@@ -1,0 +1,51 @@
+/home/communtu/web2.0/communtu/log/livecd*.log {
+  rotate 5
+  weekly
+  compress
+  missingok
+  notifempty
+}
+
+/home/communtu/web2.0/communtu/log/*deb*.log {
+  rotate 10
+  weekly
+  compress
+  missingok
+  notifempty
+}
+
+/home/communtu/web2.0/communtu/log/development.log {
+  rotate 5
+  weekly
+  compress
+  missingok
+  notifempty
+}
+/home/communtu/web2.0/communtu/log/production.log {
+  weekly
+  compress
+  missingok
+  notifempty
+}
+/home/communtu/web2.0/communtu/log/repo.log {
+  rotate 5
+  weekly
+  compress
+  missingok
+  notifempty
+}
+/home/communtu/web2.0/communtu/log/server*.log
+ {
+  rotate 1
+  weekly
+  compress
+  missingok
+  notifempty
+}
+/home/communtu/web2.0/communtu-*/log/*.log {
+  rotate 0
+  weekly
+  compress
+  missingok
+  notifempty
+}
