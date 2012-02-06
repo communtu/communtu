@@ -4,10 +4,12 @@
   <title>Communtulayout</title>
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag 'jquery-1.7.1.min.js' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div class="header">
+<div id="all"">
+  <div class="header">
 	<div class="login">Admin  | Anmelden  |  Guest</div>
 	<h1 class="headertitle">Ubuntu installieren leicht gemacht</h1>
 	<div id="navigation">
@@ -15,10 +17,11 @@
 		<%=link_to(navi_link("Bündel","navi_bundle.png").html_safe, "/")%>
 		<%=link_to(navi_link("Über uns","navi_communtu.png").html_safe, "/")%>
 	</div>
-</div>
+  </div>
 
-<div id="content">
+  <div id="content">
 	<%= yield %>
+  </div>
 </div>
 
 </body>

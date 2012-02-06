@@ -12,14 +12,23 @@
 body{
 	margin:0px;
 }
-#left{
+#all{
+	margin-left:auto;
+	margin-right:auto;
+}
+.left{
+	float:left;
+	width: 200px;
+}
+.middle{
+	width:300px;
+	float: left;
+}
+.images{
+	width:300px;
+}
+.right{
 	float:left
-}
-#middle{
-	
-}
-#right{
-	float:right
 }
 .login{
 	float:right;
@@ -68,4 +77,24 @@ h1{
 
 .button{
 	float:left;
+}
+
+.start{
+	position: absolute;
+}
+
+.hidden{
+	opacity:0;
+	-moz-opacity:0;
+	filter:alpha(opacity=0);
+}
+
+.cd{
+	 width: 300px;
+	 display: none;
+	 position: absolute; 
+}
+
+#img0{
+	display: block;
 }

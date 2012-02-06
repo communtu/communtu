@@ -7,8 +7,15 @@
 	<% end %>
 </div>
 <div class="middle">
-	<%= image_tag 'custom_livecd.png'%>
-
+ <div class="images"> 	
+	<%= image_tag 'cd.png', :class => "cd", :id=> "img0"%>
+    <%= image_tag 'rot.png', :class => "cd", :id=> "img1"%>
+	<%= image_tag 'blau.png', :class => "cd", :id=> "img2"%>
+	<%= image_tag 'gelb.png', :class => "cd", :id=> "img3"%>
+	<%= image_tag 'gruen.png', :class => "cd", :id=> "img4"%>
+	<%= image_tag 'lila.png', :class => "cd", :id=> "img5"%>
+	<%= image_tag 'rosa.png', :class => "cd", :id=> "img6"%>
+ </div>	
 	<%= form_tag '/live_cds/advanced_build', :method => :get%>
 	<%= button_tag 'Fortgeschritten' %>
 	</form>
