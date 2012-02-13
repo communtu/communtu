@@ -9,23 +9,19 @@
 //= require_tree .
 
 function rotate(i){
-		$("#start" + i).animate({opacity:1},3000);
-		document.getElementById("start"+i).style.display="block";
-		
-		$("#start" + (i+2)%3).animate({opacity:0},3000);
-		s="document.getElementById('start"+(i+2)%3+"').style.display='none'";
-		window.setTimeout(s,3000);
-		i += 1;
-		if(i>2){
-			i=0;
-	    }
+		$("#start" + i).fadeIn(3000);
+		$("#start" + (i+2)%3).fadeOut(3000);
+		i = (i+1)%3;
 		window.setTimeout("rotate("+i+")",10000);  
 } 
-
-function toggle_visibility(id) {
-       var e = document.getElementById(id);
-       if(e.style.display == 'block')
-          e.style.display = 'none';
-       else
-          e.style.display = 'block';
-    }
+	
+function showImage(id){
+	var i=0;
+	for(i=0;i<3;i++)
+	{
+		if(i==id) 
+     	  $("#start" + i).fadeIn(500);
+		else  
+     	  $("#start" + i).fadeOut(500);
+	}	  
+}
