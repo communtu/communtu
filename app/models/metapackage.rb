@@ -40,7 +40,7 @@ class Metapackage < BasePackage
   def name
     trans = translation(self.name_tid)
     if trans == "unknown"
-    trans = "Neues Bündel"
+      trans = I18n.t(:new_bundle)
     end
     return trans
   end

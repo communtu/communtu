@@ -1,16 +1,53 @@
-<h1>Suche nach <%='%'+@word+'%'%></h1>
+<h1>Suche nach "<%=@word%>"</h1>
 
+
+<%= link_to "Bundles", "#", :onclick => "searchResult('bundles')"%>
+<%= link_to "Livecds", "#", :onclick => "searchResult('livecds')"%>
+<%= link_to "Packagess", "#", :onclick => "searchResult('packages')"%>
+
+<div id="bundles">
 <table>
   <tr>
-    <th>Package</th>
+    
   </tr>
 
-<% for m in @meta %>
+<% for m in @metas %>
   <tr>
-    <td><%=m.id %></td>
-    <td><%= link_to "m.title", m %></td>
+    <td><%= link_to m.name, m %></td>
+	<td><%= m.description%></td>
   </tr>
 <% end %>
 </table>
+</div>
 
-<br />
+<div id="livecds" style="display:none;">
+<th>Livecds</th>
+<table>
+  <tr>
+  </tr>
+
+<% for m in @livecds %>
+  <tr>
+    <td><%= link_to m.name, m %></td>
+	<td><%= m.distribution.short_name%></td>
+	<td><%= m.architecture.name%></td>
+	<td><%= m.derivative.name%></td>
+  </tr>
+<% end %>
+</table>
+</div>
+
+<div id="packages" style="display:none;">
+<table>
+  <tr>
+    <th>Packages</th>
+  </tr>
+
+<% for m in @packages %>
+  <tr>
+    <td><%= link_to m.name, m %></td>
+	<td><%= m.description%></td>
+  </tr>
+<% end %>
+</table>
+</div>

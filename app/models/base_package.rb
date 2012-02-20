@@ -60,6 +60,7 @@ class BasePackage < ActiveRecord::Base
   has_many :conflicts, :foreign_key => :package_id
   has_many :conflicting_packages, :source => :base_package, :through => :conflicts
   has_many :dependencies, :dependent => :destroy
+  has_many :translations, :primary_key => :description_tid, :foreign_key => :translatable_id
 #  def name
 #    translation(self.name_tid)
 #  end

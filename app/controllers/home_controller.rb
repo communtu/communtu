@@ -119,6 +119,9 @@ class HomeController < ApplicationController
   def search
     @word = params[:search]
     #@meta = Metapackage.find_all_by_published_and_description(1, '%'+@word+'%');
-    @meta = Metapackage.find(:all, :conditions => ['published = ? AND description LIKE ?', 1, '%'+@word+'%'])
+    @metas = Metapackage.find(:all, :conditions => ['published = ? AND translations.contents LIKE ? AND translations.language_code = ?', 1, '%'+@word+'%', I18n.locale.to_s], :include => "translations")
+    @packages = Package.find(:all, :conditions => ['description LIKE ? ', '%'+@word+'%'])
+    @livecds = Livecd.find(:all, :conditions => ['metapackage_id IN (?)', @metas.map(&:id).join(",")])
+    #@livecds = Livecd.find(:all, :conditions => ['base_packages.published = ? AND translations.contents LIKE ? AND translations.language_code = ?', 1, '%'+@word+'%', I18n.locale.to_s], :include => [ "metapackage","translations"])
   end
 end

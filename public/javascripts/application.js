@@ -1,6 +1,14 @@
 // Place your application-specific JavaScript functions and classes here
 // This file is automatically included by javascript_include_tag :defaults
 
+function searchResult(tab) {
+	for (t in ["bundles", "livecds", "packages"]) {
+		if (t!=tab)
+		   $j("#bundles").slideUp()
+	}
+	$j("#"+tab).slideDown();
+}
+
 function user_profile_edit_show_category(id) {
     $$('div.category_active')[0].removeClassName('category_active') ;
     $('category_'+id).addClassName('category_active');
