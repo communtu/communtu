@@ -491,6 +491,19 @@ class Deb < ActiveRecord::Base
     end
   end
 
+  # get packages that will be installed via an apt-get command
+  # input: the output of apt-get install -s >packages>
+  def self.get_install_packages(s)
+    packages = []
+    i = s.index("The following NEW packages will be installed\n") + 45
+    s[i,s.size].split("\n").each do |line|
+      if line[0,2]=="  "
+        packages += line[2,line.size].split(" ")
+      else
+        return packages
+      end
+    end
+  end
   
   protected
   
