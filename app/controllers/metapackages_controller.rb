@@ -607,6 +607,9 @@ class MetapackagesController < ApplicationController
     redirect_to session[:backlink]
   end
 
+  def description
+    translation(self.description_tid)
+  end
 private
 
   def check_owner(meta,user)

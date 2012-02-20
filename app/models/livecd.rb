@@ -55,6 +55,7 @@ class Livecd < ActiveRecord::Base
   belongs_to :metapackage
   has_many :livecd_users, :dependent => :destroy
   has_many :users, :through => :livecd_users
+  has_many :translations, :through => :metapackage
   validates_presence_of :name, :distribution, :derivative, :architecture
 
   # version of liveCD, made from derivative, distribution, architecture, license and security
