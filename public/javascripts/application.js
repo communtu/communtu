@@ -4,9 +4,9 @@
 function searchResult(tab) {
 	for (t in ["bundles", "livecds", "packages"]) {
 		if (t!=tab)
-		   $j("#bundles").slideUp()
+		   $j("#bundles").hide();
 	}
-	$j("#"+tab).slideDown();
+	$j("#"+tab).show();
 }
 
 function user_profile_edit_show_category(id) {

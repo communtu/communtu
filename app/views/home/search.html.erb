@@ -5,7 +5,8 @@
 <%= link_to "Livecds", "#", :onclick => "searchResult('livecds')"%>
 <%= link_to "Packagess", "#", :onclick => "searchResult('packages')"%>
 
-<div id="bundles">
+<div id="bundles" style="display:block;">
+<h2>Bundles</h2>
 <table>
   <tr>
     
@@ -21,7 +22,7 @@
 </div>
 
 <div id="livecds" style="display:none;">
-<th>Livecds</th>
+<h2>Livecds</h2>
 <table>
   <tr>
   </tr>
@@ -38,9 +39,9 @@
 </div>
 
 <div id="packages" style="display:none;">
+<h2>Packages</h2>
 <table>
   <tr>
-    <th>Packages</th>
   </tr>
 
 <% for m in @packages %>
