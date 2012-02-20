@@ -2,9 +2,15 @@
 // This file is automatically included by javascript_include_tag :defaults
 
 function searchResult(tab) {
-	for (t in ["bundles", "livecds", "packages"]) {
-		if (t!=tab)
-		   $j("#bundles").hide();
+	var tabs= new Array();
+	tabs[0] = "bundles";
+	tabs[1] = "livecds";
+	tabs[2] = "packages";
+	for (i=0; i<3; i++) {
+		//alert("#"+tabs[i]);
+		if (tabs[i] != tab) 
+		$j("#" + tabs[i]).hide();
+		
 	}
 	$j("#"+tab).show();
 }
