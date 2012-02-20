@@ -230,19 +230,19 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.string   "srcdeb"
     t.string   "installdeb"
     t.integer  "pid"
-    t.boolean  "generated",       :default => false
-    t.boolean  "generating",      :default => false
-    t.boolean  "failed",          :default => false
-    t.text     "log"
+    t.boolean  "generated",                           :default => false
+    t.boolean  "generating",                          :default => false
+    t.boolean  "failed",                              :default => false
+    t.text     "log",             :limit => 16777215
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "first_try",       :default => true
+    t.boolean  "first_try",                           :default => true
     t.integer  "license_type"
     t.integer  "security_type"
     t.integer  "profile_version"
-    t.boolean  "iso",             :default => false
-    t.boolean  "kvm",             :default => false
-    t.boolean  "usb",             :default => false
+    t.boolean  "iso",                                 :default => false
+    t.boolean  "kvm",                                 :default => false
+    t.boolean  "usb",                                 :default => false
     t.integer  "vm_pid"
     t.string   "vm_hda"
     t.integer  "downloaded",      :default => 0

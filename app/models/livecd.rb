@@ -168,73 +168,54 @@ class Livecd < ActiveRecord::Base
     ActiveRecord::Base.connection.reconnect!
     self.port = port
     self.save
-    ver = self.smallversion
-    fullname = self.fullname
-    # need to generate iso, use lock in order to prevent parallel generation of multiple isos
     begin
+        # use lock in order to prevent parallel generation of multiple isos with same port
         while not (system "dotlockfile -p -r 1000 #{RAILS_ROOT}/livecd#{port}_lock") do end
         self.generating = true
+        self.log = ""
         self.save
-        # log to log/livecd.log
-        system "(echo; echo \"------------------------------------\")  >> #{RAILS_ROOT}/log/livecd#{port}.log"
-        call = "echo \"#{date_now} - #{port}: Creating live CD ##{self.id} #{fullname}\" >> #{RAILS_ROOT}/log/"
-        system (call+"livecd#{port}.log")
-        system (call+"livecd.log")
+        write_log "\n------------------------------------"
+        log_start = "#{date_now} - #{port}: Creating live CD ##{self.id} #{self.fullname}"
+        write_log log_start
+        write_log log_start, true
         # check if there is enough disk space (at least 25 GB)
         while disk_free_space(SETTINGS['iso_path']) < 25000000000
           # destroy the oldest liveCD
           cd=Livecd.find(:first,:order=>"updated_at ASC")
-          call = "(echo \"#{date_now} - #{port}: Disk full - deleting live CD #{cd.id}\" >> #{RAILS_ROOT}/log/"
-          system (call+"livecd#{port}.log")
-          system (call+"livecd.log")
+          msg = "#{date_now} - #{port}: Disk full - deleting live CD #{cd.id}"
+          write_log msg
+          write_log msg, true
           cd.destroy
         end
-        # normal users get nice'd
-        nice = (self.users[0].nil? or !self.users[0].has_role?('administrator'))
-        nicestr = if nice then "-nice " else "" end
-        # Jaunty and lower need virtualisation due to requirement of squashfs version >= 4 (on the server, we have Hardy)
-        if self.distribution.name[0] <= 74 then # 74 is "J"
-          virt = "-v "
-        else
-          virt = ""
-        end
-        isoflag = self.iso ? "-iso #{self.iso_image} " : ""
-        kvmflag = self.kvm ? "-kvm #{self.kvm_image} " : ""
-        usbflag = self.usb ? "-usb #{self.usb_image} " : ""
-        remaster_call = "#{RAILS_ROOT}/script/remaster create #{nicestr}#{virt}#{isoflag}#{kvmflag}#{usbflag}#{ver} #{self.name} #{self.srcdeb} #{self.installdeb} #{port} >> #{RAILS_ROOT}/log/livecd#{port}.log 2>&1"
-        system "echo \"#{remaster_call}\" >> #{RAILS_ROOT}/log/livecd#{port}.log"
-        self.failed = !(system remaster_call)
-        # kill VM, necessary in case of abrupt exit
-        system "sudo kill-kvm #{port}"
-        system "echo  >> #{RAILS_ROOT}/log/livecd#{port}.log"
-        msg = if self.failed then "failed" else "succeeded" end
-        call = "echo \"#{date_now} - #{port}: Creation of live CD ##{self.id} #{msg}\" >> #{RAILS_ROOT}/log/"
-        system (call+"livecd#{port}.log")
-        system (call+"livecd.log")
-        system "echo  >> #{RAILS_ROOT}/log/livecd#{port}.log"
-        if self.failed then
-          self.log = IO.popen("tail -n80 #{RAILS_ROOT}/log/livecd#{port}.log",&:read)
-        end
+        # remaster the CD
+        err = self.remaster_it
+        self.failed = !err.empty?
+        write_log err
+        write_log ""
     rescue StandardError => err
-        self.log = "ruby code for live CD/DVD creation crashed: "+err
+        write_log err.to_s
+        self.failed = true
+    rescue NoMethodError => err
+        write_log err.to_s
         self.failed = true
     end
+    msg = if self.failed then "failed" else "succeeded" end
+    msg = "#{date_now} - #{port}: Creation of live CD ##{self.id} #{msg}"
+    write_log msg
+    write_log msg, true
+    write_log "", false, true # flush logfile
+    if self.failed then
+      self.log += `grep -A 1000000 \"#{log_start}\" #{RAILS_ROOT}/log/livecd#{port}.log`
+    end
+    # kill VM, necessary in case of abrupt exit
+    system "sudo kill-kvm #{port}"
     # release lock
     system "dotlockfile -u #{RAILS_ROOT}/livecd#{port}_lock"
     # store size and inform user via email
     ActiveRecord::Base.connection.reconnect! # needed after a possibly long time
     if !self.failed then
       self.generated = true
-      self.size = 0
-      if self.iso
-        self.size += File.size(self.iso_image)
-      end
-      if self.kvm
-        self.size += File.size(self.kvm_image)
-      end
-      if self.usb
-        self.size += File.size(self.iso_image)
-      end
+      self.size = File.size(self.iso_image)
       self.livecd_users.each do |lu|
         MyMailer.deliver_livecd(lu.user,"#{Livecd.rails_url}/livecds/#{self.id}",lu.locale)
       end
@@ -286,6 +267,103 @@ class Livecd < ActiveRecord::Base
     end
   end
 
+  def remaster_it
+    Dir.chdir SETTINGS["livecd_folder"] do
+      write_log "*** checking liveCD parameters"
+      if !File.exists?(self.srcdeb) 
+        return "#{self.srcdeb} not found"     
+      end
+      if (isdeb = !installdeb.scan(/.deb$/).empty?) then
+        if !File.exists?(self.installdeb) 
+          return "#{self.installdeb} not found"     
+        end
+      end      
+      if !File.exists?("kvm/#{self.smallversion}.img") then
+        return "kvm/#{self.smallversion}.img not found"
+      end
+
+      # normal users get nice'd
+      nice = (self.users[0].nil? or !self.users[0].has_role?('administrator'))
+      nicestr = if nice then "nice -n +19 " else "" end
+      write_log "*** starting virtual machine"
+      system_with_log "#{nicestr}kvm -daemonize -drive file=kvm/#{self.smallversion}.img,if=virtio,boot=on,snapshot=on -smp 4 -m 600 -net nic,model=virtio -net user -nographic -redir tcp:#{port}::22"
+      safe_system "stty echo" # turn echo on again (kvm somehow turns it off)
+
+      write_log "*** waiting for start of virtual machine, setting nameserver"
+      ssh "echo \\\"nameserver #{SETTINGS['nameserver']}\\\" > /root/#{self.smallversion}/edit/etc/resolv.conf"
+
+      write_log "*** adding new sources and keys, using #{self.srcdeb}"
+      scp "#{self.srcdeb} root@localhost:/root/#{self.smallversion}/edit/"
+      source = `basename #{self.srcdeb}`.chomp
+      chroot "dpkg -i #{source}"
+      ssh "rm /root/#{self.smallversion}/edit/#{source}"
+      sleep 15
+
+      write_log "*** setting debconf options"
+      chroot "sed -i 's/Templates: templatedb/Templates: templatedb\\nFrontend: readline\\nPriority: critical/' /etc/debconf.conf"
+      #write_log "*** configuring sources.list for apt-proxy"
+      #ssh "cp /root/#{self.smallversion}/edit/etc/apt/sources.list . ; chroot /root/#{self.smallversion}/edit sed -i 's/http:\/\//http:\/\/$APT_PROXY:3142\//' /etc/apt/sources.list; chroot /root/#{self.smallversion}/edit apt-get update"
+
+      write_log "*** system mounts"
+      chroot "mount -t proc none /proc"
+      chroot "mount -t sysfs none /sys"
+      chroot "mount -t devpts devpts /dev/pts"
+
+      if isdeb then
+        write_log "*** installing deb package #{self.installdeb}"
+        bundle_names = self.bundles.map(&:debian_name).join(" ")
+        chroot "apt-get install -y --force-yes #{bundle_names}"
+      else
+        write_log "*** installing package #{self.installdeb} from repository"
+        chroot "apt-get install -y --force-yes #{self.installdeb}"
+      end
+    
+      write_log "*** reverting special settings"
+      #ssh "cp sources.list /root/#{self.smallversion}/edit/etc/apt/"
+      ssh "export LANG=C; chroot /root/#{self.smallversion}/edit sed -i -r 's/Frontend: readline|Priority: critical//' /etc/debconf.conf; chroot /root/#{self.smallversion}/edit sh -c \\\"export LANG=C; apt-get update\\\"; rm /root/#{self.smallversion}/edit/etc/resolv.conf"
+    
+      write_log "creating iso image"
+      scp "#{RAILS_ROOT}/script/remaster_ubuntu.sh root@localhost:"
+      ssh "/root/remaster_ubuntu.sh regen /root/#{self.smallversion} #{self.name} /root/new.iso"
+      ssh "cd /root/#{self.smallversion}/extract-cd; \
+             mkisofs -r -V #{self.name[0,25]} -cache-inodes -J -l \
+           -b isolinux/isolinux.bin -c isolinux/boot.cat \
+           -no-emul-boot -boot-load-size 4 -boot-info-table \
+           -allow-limited-size -udf -o - .", self.iso_image
+      ssh "halt"
+    end
+    return ""
+  end
+
+  def system_with_log(str)
+    write_log("+"+str)
+    safe_system("#{str} >> #{RAILS_ROOT}/log/livecd#{self.port}.log 2>&1")
+  end  
+  
+  def write_log(str,noport=false,flush=false)
+    portstr = if noport then "" else self.port.to_s end
+    File.open("#{RAILS_ROOT}/log/livecd#{portstr}.log","a") do |f|
+      f.puts str
+      if flush then f.flush end
+    end
+  end 
+
+  def ssh(str, redirect="")
+    if redirect.empty?
+      system_with_log("ssh -p #{self.port} -q -o StrictHostKeyChecking=no -o ConnectTimeout=500 root@localhost \"#{str}\"")
+    else
+      write_log("+"+str)
+      safe_system("ssh -p #{self.port} -q -o StrictHostKeyChecking=no -o ConnectTimeout=500 root@localhost \"#{str}\" > #{redirect} 2> #{RAILS_ROOT}/log/livecd#{self.port}.log")
+    end
+  end  
+
+  def scp(str)
+    system_with_log("scp -q -o StrictHostKeyChecking=no -o ConnectTimeout=500 -P #{self.port} #{str}")
+  end  
+
+  def chroot(str)
+    ssh "chroot /root/#{self.smallversion}/edit #{str}"
+  end
   # get list of metapackages, either from database or from installdeb
   def bundles
     begin
@@ -417,8 +495,8 @@ class Livecd < ActiveRecord::Base
     end
 
     # check for cpu load and available memory 
-    cpu_idle = IO.popen("top -b -n 1 |grep Cpu",&:read).scan(/[0-9.]*%id/)[0].to_i
-    free = IO.popen("free -k",&:read).scan(/buffers.cache:[ 0-9]*/)[0].split(" ")[-1].to_i
+    cpu_idle = `top -b -n 1 |grep Cpu`.scan(/[0-9.]*%id/)[0].to_i
+    free = `free -k`.scan(/buffers.cache:[ 0-9]*/)[0].split(" ")[-1].to_i
     mem = SETTINGS['vm_mem_size']
     if cpu_idle<20 or free<2*mem
       return I18n.t(:vm_too_much_cpu_load)
@@ -515,7 +593,7 @@ EOF
       dom.create
     rescue StandardError => err
       conn.close
-      log = IO.popen("sudo libvirt-log #{name}",&:read)
+      log = `sudo libvirt-log #{name}`
       return "VM error: #{err.to_s} <br>#{log}"
     end  
     conn.close
