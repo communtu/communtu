@@ -1,6 +1,6 @@
   def safe_system cmd
     if !system cmd
-      raise I18n.t(:lib_utils_0)+cmd
+      raise "The following command failed: "+cmd
     end
   end
   
