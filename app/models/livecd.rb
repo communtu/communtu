@@ -226,7 +226,7 @@ class Livecd < ActiveRecord::Base
       # first try? then inform users about failure  
       elsif self.first_try then
         self.livecd_users.each do |lu|
-          MyMailer.deliver_livecd_failed(lu.user,self.fullname,lu.locale)
+          MyMailer.deliver_livecd_failed(lu)
         end
         self.first_try = false
       end

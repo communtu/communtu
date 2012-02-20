@@ -58,15 +58,16 @@ class MyMailer < ActionMailer::Base
     @locale = locale
   end
 
-  def livecd_failed(user,name,locale)
-    @cdname      = name
-    @recipients  = "#{user.email}, technik@communtu.org"
+  def livecd_failed(lu)
+    @cdname      = lu.livecd.fullname
+    @recipients  = "#{lu.user.email}, technik@communtu.org"
     @from        = "info@communtu.org"
-    @subject     = "[Communtu] " + I18n.t(:livecd_email_failed, :locale => locale)
+    @subject     = "[Communtu] " + I18n.t(:livecd_email_failed, :locale => lu.locale)
     @sent_on     = Time.now
-    @body[:user] = user
+    @body[:user] = lu.user
     @headers = {}
-    @locale = locale
+    @locale = lu.locale
+    @id = lu.livecd.id
   end
 
   def signup_notification(user)
