@@ -424,7 +424,7 @@ class Package < BasePackage
   
   def self.prio(name)
     p=Package.find_by_name(name)
-    if p.nil? then 1 else p.priority end
+    if p.nil? or p.priority.nil? then 1 else p.priority end
   end
 end
 
