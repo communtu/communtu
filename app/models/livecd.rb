@@ -330,7 +330,7 @@ class Livecd < ActiveRecord::Base
         end          
       end
       # install packages with ascending priority
-      packages_prios.keys.sort.each do |prio|
+      packages_prios.keys.sort.{|x,y| y<=>x}.each do |prio|
         ps = packages_prios[prio]
         chroot "apt-get install -y --force-yes #{ps.join(" ")}"
       end
