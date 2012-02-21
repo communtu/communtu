@@ -320,9 +320,18 @@ class Livecd < ActiveRecord::Base
       # get all packages that are to be installed
       packages = Deb.get_install_packages(chroot "apt-get install -s #{bundles}", true)
       # sort packages by priority
-      packages = packages.map{|pname| [p,Package.prio(pname)]}.sort{|x,y| x[1]<=>y[1]}
+      packages_prios = {}
+      packages.each do |pname|
+        prio = Package.prio(pname)
+        if packages_prios[prio].nil? then
+          packages_prios[prio] = [pname]
+        else  
+          packages_prios[prio] << [pname]
+        end          
+      end
       # install packages with ascending priority
-      packages.each do |prio,ps|
+      packages_prios.keys.sort.each do |prio|
+        ps = packages_prios[prio]
         chroot "apt-get install -y --force-yes #{ps.join(" ")}"
       end
       

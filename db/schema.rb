@@ -59,6 +59,7 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.integer  "p_nofiles"
     t.boolean  "tested",             :default => false
     t.text     "conflict_msg"
+    t.integer  "priority"
   end
 
   add_index "base_packages", ["category_id", "type"], :name => "category_id"
@@ -245,8 +246,8 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.boolean  "usb",                                 :default => false
     t.integer  "vm_pid"
     t.string   "vm_hda"
-    t.integer  "downloaded",      :default => 0
-    t.boolean  "published",       :default => false
+    t.integer  "downloaded",                          :default => 0
+    t.boolean  "published",                           :default => false
     t.text     "conflict_msg"
     t.integer  "port"
     t.string   "short_log"
