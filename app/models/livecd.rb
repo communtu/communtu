@@ -271,6 +271,12 @@ class Livecd < ActiveRecord::Base
   end
 
   def remaster_it
+    if SETTINGS["livecd_folder"].nil? then
+      return "livecd_folder not defined in config/settings.yml"
+    end
+    if SETTINGS["nameserver"].nil? then
+      return "nameserver not defined in config/settings.yml"
+    end
     Dir.chdir SETTINGS["livecd_folder"] do
       write_log "*** checking liveCD parameters"
       if !File.exists?(self.srcdeb) 
@@ -290,7 +296,7 @@ class Livecd < ActiveRecord::Base
       nicestr = if nice then "nice -n +19 " else "" end
       write_log "*** starting virtual machine"
       system_with_log "#{nicestr}kvm -daemonize -drive file=kvm/#{self.smallversion}.img,if=virtio,boot=on,snapshot=on -smp 4 -m 600 -net nic,model=virtio -net user -nographic -redir tcp:#{port}::22"
-      system "stty echo" # turn echo on again (kvm somehow turns it off). Fails sometimes (why?), therefore just "system"
+      system "stty echo" # turn echo on again (kvm somehow turns it off). Fails in batch mode, therefore just "system"
 
       write_log "*** waiting for start of virtual machine, setting nameserver"
       ssh "echo \\\"nameserver #{SETTINGS['nameserver']}\\\" > /root/#{self.smallversion}/edit/etc/resolv.conf"
