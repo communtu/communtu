@@ -290,7 +290,7 @@ class Livecd < ActiveRecord::Base
       nicestr = if nice then "nice -n +19 " else "" end
       write_log "*** starting virtual machine"
       system_with_log "#{nicestr}kvm -daemonize -drive file=kvm/#{self.smallversion}.img,if=virtio,boot=on,snapshot=on -smp 4 -m 600 -net nic,model=virtio -net user -nographic -redir tcp:#{port}::22"
-      safe_system "stty echo" # turn echo on again (kvm somehow turns it off)
+      system "stty echo" # turn echo on again (kvm somehow turns it off). Fails sometimes (why?), therefore just "system"
 
       write_log "*** waiting for start of virtual machine, setting nameserver"
       ssh "echo \\\"nameserver #{SETTINGS['nameserver']}\\\" > /root/#{self.smallversion}/edit/etc/resolv.conf"
