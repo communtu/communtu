@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @bundle.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @bundle.description %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @bundle.category_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_bundle_path(@bundle) %> |
+<%= link_to 'Back', bundles_path %>

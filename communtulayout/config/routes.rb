@@ -1,5 +1,9 @@
 Communtulayout::Application.routes.draw do
 
+  resources :bundles
+
+  resources :categories
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -56,6 +60,10 @@ Communtulayout::Application.routes.draw do
   match 'live_cds/bestof' => 'live_cds#bestof'
   resources :live_cds do
     get 'build', 'advanced_build', :on => :collection
+  end
+  
+  resources :download do
+    get 'selection', :on => :collection
   end
   
   # See how all your routes lay out with "rake routes"

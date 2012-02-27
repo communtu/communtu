@@ -1,0 +1,15 @@
+<div id="categories_column">
+	<h2> Kategorien </h2>
+	<% for c in @categories do %>
+		<%= link_to c.name, :action=>"selection",:category=>c.id %> <br />
+	<% end %>
+</div>
+<div id="bundles_column">
+	<h2> Bündel </h2>
+	<% for b in @bundles do %>
+		<%= b.name %> <br />
+	<% end %>
+</div>
+<div id="overview_column">
+	<%= image_tag "cd.png", :width=>"225px" %>
+</div>

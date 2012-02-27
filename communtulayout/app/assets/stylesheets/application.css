@@ -10,7 +10,10 @@
 	position: absolute;
 }
 body{
-	margin:0px;
+	margin:0;
+	margin-left: auto;
+	margin-right: auto;	
+	width: 925px;
 }
 #all{
 	margin-left:auto;
@@ -95,4 +98,19 @@ h1{
 
 #img0{
 	display: block;
+}
+
+#categories_column{
+	float: left;
+	width: 250px;
+}
+
+#bundles_column{
+	float: left;
+    width: 	450px;
+	}
+
+#overview_column{
+	float: right;
+	width: 225px;
 }

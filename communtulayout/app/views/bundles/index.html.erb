@@ -1,0 +1,27 @@
+<h1>Listing bundles</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Category</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @bundles.each do |bundle| %>
+  <tr>
+    <td><%= bundle.name %></td>
+    <td><%= bundle.description %></td>
+    <td><%= bundle.category_id %></td>
+    <td><%= link_to 'Show', bundle %></td>
+    <td><%= link_to 'Edit', edit_bundle_path(bundle) %></td>
+    <td><%= link_to 'Destroy', bundle, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Bundle', new_bundle_path %>
