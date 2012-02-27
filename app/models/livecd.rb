@@ -45,6 +45,8 @@
 # vm_hda: hard disk file for virtual machine (when testing liveCD via vnc)
 # vm_pid: process id of virtual machine (when testing liveCD via vnc)
 
+SSH_OPTIONS = "-q -o StrictHostKeyChecking=no -o ConnectTimeout=500"
+
 require "lib/utils.rb"
 if SETTINGS["livecd"] then require 'libvirt' end
 
@@ -288,7 +290,7 @@ class Livecd < ActiveRecord::Base
       nicestr = if nice then "nice -n +19 " else "" end
       write_log "*** starting virtual machine"
       system_with_log "#{nicestr}kvm -daemonize -drive file=kvm/#{self.smallversion}.img,if=virtio,boot=on,snapshot=on -smp 4 -m 600 -net nic,model=virtio -net user -nographic -redir tcp:#{port}::22"
-      safe_system "stty echo" # turn echo on again (kvm somehow turns it off)
+      system "stty echo" # turn echo on again (kvm somehow turns it off). Fails sometimes (why?), therefore just "system"
 
       write_log "*** waiting for start of virtual machine, setting nameserver"
       ssh "echo \\\"nameserver #{SETTINGS['nameserver']}\\\" > /root/#{self.smallversion}/edit/etc/resolv.conf"
@@ -310,15 +312,29 @@ class Livecd < ActiveRecord::Base
       chroot "mount -t sysfs none /sys"
       chroot "mount -t devpts devpts /dev/pts"
 
-      if isdeb then
-        write_log "*** installing deb package #{self.installdeb}"
-        bundle_names = self.bundles.map(&:debian_name).join(" ")
-        chroot "apt-get install -y --force-yes #{bundle_names}"
-      else
-        write_log "*** installing package #{self.installdeb} from repository"
-        chroot "apt-get install -y --force-yes #{self.installdeb}"
+      bundles = if isdeb then 
+                  self.bundles.map(&:debian_name).join(" ") 
+                else self.installdeb 
+                end 
+      write_log "*** installing packages #{bundles}"
+      # get all packages that are to be installed
+      packages = Deb.get_install_packages(chroot "apt-get install -s #{bundles}", true)
+      # sort packages by priority
+      packages_prios = {}
+      packages.each do |pname|
+        prio = Package.prio(pname)
+        if packages_prios[prio].nil? then
+          packages_prios[prio] = [pname]
+        else  
+          packages_prios[prio] << [pname]
+        end          
       end
-    
+      # install packages with ascending priority
+      packages_prios.keys.sort {|x,y| y<=>x}.each do |prio|
+        ps = packages_prios[prio]
+        chroot "apt-get install -y --force-yes #{ps.join(" ")}"
+      end
+      
       write_log "*** reverting special settings"
       #ssh "cp sources.list /root/#{self.smallversion}/edit/etc/apt/"
       ssh "export LANG=C; chroot /root/#{self.smallversion}/edit sed -i -r 's/Frontend: readline|Priority: critical//' /etc/debconf.conf; chroot /root/#{self.smallversion}/edit sh -c \\\"export LANG=C; apt-get update\\\"; rm /root/#{self.smallversion}/edit/etc/resolv.conf"
@@ -351,19 +367,23 @@ class Livecd < ActiveRecord::Base
 
   def ssh(str, redirect="")
     if redirect.empty?
-      system_with_log("ssh -p #{self.port} -q -o StrictHostKeyChecking=no -o ConnectTimeout=500 root@localhost \"#{str}\"")
+      system_with_log("ssh -p #{self.port} #{SSH_OPTIONS} root@localhost \"#{str}\"")
     else
       write_log("+"+str)
-      safe_system("ssh -p #{self.port} -q -o StrictHostKeyChecking=no -o ConnectTimeout=500 root@localhost \"#{str}\" > #{redirect} 2> #{RAILS_ROOT}/log/livecd#{self.port}.log")
+      safe_system("ssh -p #{self.port} #{SSH_OPTIONS} root@localhost \"#{str}\" > #{redirect} 2> #{RAILS_ROOT}/log/livecd#{self.port}.log")
     end
   end  
 
   def scp(str)
-    system_with_log("scp -q -o StrictHostKeyChecking=no -o ConnectTimeout=500 -P #{self.port} #{str}")
+    system_with_log("scp #{SSH_OPTIONS} -P #{self.port} #{str}")
   end  
 
-  def chroot(str)
-    ssh "chroot /root/#{self.smallversion}/edit #{str}"
+  def chroot(str,return_log=false)
+    if return_log then
+      `ssh -p #{self.port} #{SSH_OPTIONS} root@localhost \"chroot /root/#{self.smallversion}/edit #{str}\"`
+    else
+      ssh "chroot /root/#{self.smallversion}/edit #{str}"
+    end  
   end
   # get list of metapackages, either from database or from installdeb
   def bundles
