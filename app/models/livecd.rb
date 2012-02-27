@@ -324,7 +324,11 @@ class Livecd < ActiveRecord::Base
                 end 
       write_log "*** installing packages #{bundles}"
       # get all packages that are to be installed
-      packages = Deb.get_install_packages(chroot "apt-get install -s #{bundles}", true)
+      apt_get_s = chroot "apt-get install -s #{bundles}"
+      write_log "*********************************************\napt-get -s gives the following output:"
+      write_log apt_get_s
+      write_log "*********************************************"
+      packages = Deb.get_install_packages(apt_get_s, true)
       if packages.empty? then packages = bundles end
       # sort packages by priority
       packages_prios = {}
