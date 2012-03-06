@@ -13,11 +13,10 @@
 	<%@categories.each do |category|%>
    		 <%= image_tag "#{category}.png", :class => "cd", :id=> "img#{category}"%>
 	<% end %>
- </div>	
-	<%= form_tag '/live_cds/advanced_build', :method => :get%>
+ </div>		
+	<%= form_tag '/download/selection', :method => :get%>
 	<%= button_tag 'Fortgeschritten' %>
 	</form>
-	
 </div>
 
 <div class="right" id="bestof">

@@ -7,7 +7,11 @@
 <div id="bundles_column">
 	<h2> Bündel </h2>
 	<% for b in @bundles do %>
-		<%= b.name %> <br />
+		<div class="bundle">
+			<%= image_tag "Metapackage.png" , :size=>"80x80" %> <br />			
+			<%= b.name[0,12]+ if b.name.length>12 then "..." else "" end %>
+		</div>
+		
 	<% end %>
 </div>
 <div id="overview_column">
