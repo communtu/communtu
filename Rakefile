@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Testuser::Application.load_tasks
+Communtu::Application.load_tasks

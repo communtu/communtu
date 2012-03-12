@@ -1029,11 +1029,9 @@ a.download:hover, a.download:active{
 	}
 .content1{
 	position:relative;
-	left:0.5em;
 	top:-5em;
-	width:56em;
-        padding-bottom:2em;
-	}
+    padding-bottom:2em;
+}
 .content{
 	position:relative;
 	width:925px;
@@ -1064,9 +1062,9 @@ a.download:hover, a.download:active{
 	padding-left:4em;
 	padding-top:3.7em;
 	position:relative;
-	top:-5em;
-	width:75em;
-	z-index:1;
+	top:-74px;
+	width:925px;
+	z-index:-1;
 	}
 .secondnavi a:link,.unternavi a:visited,.unternavi a:active{
 	color:#451B00;
@@ -1170,14 +1168,6 @@ a.download:hover, a.download:active{
 	}
 #navihead a:hover, #navihead a:active{
 	text-decoration: underline;
-	}
-#head{
-	background-image:url(communtu_head.png);
-	background-repeat:no-repeat;
-	height:11.5em;
-	position:absolute;
-	width:925px;
-	z-index:3;
 	}
 
     /* Hier css für user_profile edit */

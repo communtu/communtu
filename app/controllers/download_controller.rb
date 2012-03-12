@@ -264,6 +264,19 @@ class DownloadController < ApplicationController
   end
   
   def livecd_new
+end
+
+def livecd_pro
+    @categories=Category.all
+    
+    begin
+      @category = Category.find(params[:category])
+    rescue StandardError
+      @category = Category.first
+    end  
+      
+    @bundles = @category.metapackages
   end
+
 
 end

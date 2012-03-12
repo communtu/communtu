@@ -1,1 +1,19 @@
-<div id="categories"></div>
+<div id="categories_column">
+        <h2> Kategorien </h2>
+        <% for c in @categories do %>
+                <%= link_to c.name, :action=>"selection",:category=>c.id %> <br />
+        <% end %>
+</div>
+<div id="bundles_column">
+        <h2> Bündel </h2>
+        <% for b in @bundles do %>
+                <div class="bundle">
+                        <%= image_tag "apps/Metapackage.png" , :size=>"80x80" %> <br />                      
+                        <%= b.name[0,12]+ if b.name.length>12 then "..." else "" end %>
+                </div>
+                
+        <% end %>
+</div>
+<div id="overview_column">
+        <%= image_tag "cd.png", :width=>"225px" %>
+</div>

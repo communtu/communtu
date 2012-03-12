@@ -4,7 +4,7 @@
 
 
 .changeimg {
-	width: 925px;
+	width: 874px;
 	height: 600px;
 }
 .change_tag {
@@ -45,8 +45,9 @@
 
 
 #changeimg_box {
+	float:left;
 	height:600px;
-	width:925px;
+	width:874px;
 	border: 3px rgb(255,220,155) inset;
 }
 #change_tags {
@@ -64,4 +65,35 @@
 	text-align: center;
 	width: 925px;
 	z-index: 2;
+}
+
+#preview_pics {
+	width:925px;
+}
+.preview_pic {
+	height: 60px;
+	width: 80px;
+	float:left;
+	margin-right:10px;
+}
+.preview_link {
+	display: block;
+	float: left;
+	height:60px;
+	width:190px;
+	padding: 10px;
+	margin-left:10px;
+	margin-right:10px;
+}
+.preview_text {
+	width:100px;
+	float:left;
+}
+.preview_pic_selected {
+	height: 30px;
+	width: 40px;
+	margin-bottom:15px;
+	border-left: 3px rgb(255,220,155) inset;
+	border-top: 3px rgb(255,220,155) inset;
+	border-bottom: 3px rgb(255,220,155) inset;
 }

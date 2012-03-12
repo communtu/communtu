@@ -597,6 +597,18 @@ class MetapackagesController < ApplicationController
     @metapackage.edos_conflicts
     redirect_to session[:backlink]
   end
+  
+  def selection_new
+    @categories=Category.all
+    
+    begin
+      @category = Category.find(params[:category])
+    rescue StandardError
+      @category = Category.first
+    end  
+      
+    @bundles = @category.metapackages
+  end
 
 private
 

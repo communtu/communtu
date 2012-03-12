@@ -1,4 +1,4 @@
-Testuser::Application.routes.draw do
+Communtu::Application.routes.draw do
 
 resources :users do
       member do
@@ -101,23 +101,15 @@ end
   resources :debs
   resources :derivatives do
     collection do
-  get :migrate
-  end
-  
-  
+      get :migrate
+    end
   end
 
   match '/distributions/migrate/:id' => 'distributions#migrate'
   match '/distributions/migrate_bundels/:id' => 'distributions#migrate_bundles'
   match '/distributions/make_visible/:id' => 'distributions#make_visible'
   match '/distributions/make_final/:id' => 'distributions#make_final'
-  resources :distributions do
-  
-  
-      resources :metapackages
-    resources :packages
-    resources :repositories
-  end
+  resources :distributions
 
   match '/home' => 'home#home'
   match '/faq' => 'home#faq'
@@ -130,46 +122,46 @@ end
   resources :livecds do
   
     member do
-  get :remaster
-  get :force_remaster
-  get :remaster_new
-  put :download
-  get :start_vm
-  get :stop_vm
-  end
+      get :remaster
+      get :force_remaster
+      get :remaster_new
+      put :download
+      get :start_vm
+      get :stop_vm
+    end
   
   end
 
-  match '/metapackages/:id/publish' => 'metapackages#publish', :method => :put
-  match '/metapackages/:id/unpublish' => 'metapackages#unpublish', :method => :put
-  match '/metapackages/:id/edit_packages' => 'metapackages#edit_packages', :method => :put
-  match '/metapackages/:id/edit_action' => 'metapackages#edit_action'
   match '/metapackages/install/:id' => 'metapackages#install'
   match '/metapackages/compute_conflicts/:id' => 'metapackages#compute_conflicts'
   match '/metapackages/new' => 'cart#create'
+  match '/metapackages/selection_new' => 'metapackages#selection_new'
   resources :metapackages do
     collection do
-  get :index_mine
-  get :immediate_conflicts
-  get :bundle_from_selection
-  get :migrate
-  get :rdepends
-  get :new_from_cart
-  get :finish_migrate
-  get :action
-  get :conflicts
-  get :install_current
-  get :health_status
-  get :install_current_source
-  get :save
-  get :index
-  get :edit_new_or_cart
-  get :changed
-  get :install_current_bundle
+      get :index_mine
+      get :immediate_conflicts
+      get :bundle_from_selection
+      get :migrate
+      get :rdepends
+      get :new_from_cart
+      get :finish_migrate
+      get :action
+      get :conflicts
+      get :install_current
+      get :health_status
+      get :install_current_source
+      get :save
+      get :index
+      get :edit_new_or_cart
+      get :changed
+      get :install_current_bundle
+    end
   end
-  
-  
-  end
+
+  #match '/metapackages/:id/publish' => 'metapackages#publish', :method => :put
+  #match '/metapackages/:id/unpublish' => 'metapackages#unpublish', :method => :put
+  #match '/metapackages/:id/edit_packages' => 'metapackages#edit_packages', :method => :put
+  #match '/metapackages/:id/edit_action' => 'metapackages#edit_action'
 
   resources :messages do
   

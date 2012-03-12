@@ -6,18 +6,18 @@ imgNumber = 0;
 changeIntervalId = null;
 
 changeImg = (a, b) -> 
-	$("#changeimg_" + a ).fadeOut "slow"
-	$("#changeimg_" + b ).fadeIn "slow", (-> 
-		$("#change_tag_" + a ).css "background-color", "rgba(255,225,175,0.7)"
-		$("#change_tag_" + a ).hover (->
-			$("#change_tag_" + a ).css "background-color", "rgb(255,220,155)"), ->
-			$("#change_tag_" + a ).css "background-color", "rgba(255,225,175,0.7)"	
-		$("#change_tag_" + b ).css "background-color", "rgb(255,220,155)"
-		$("#change_tag_" + b ).hover (->
-			$("#change_tag_" + b ).css "background-color", "rgb(255,220,155)"), ->
-			$("#change_tag_" + b ).css "background-color", "rgb(255,220,155)"	
-		$("#change_circle_" + a ).attr "src", "/assets/circle.png"
-		$("#change_circle_" + b ).attr "src", "/assets/circle_active.png"
+	$j("#changeimg_" + a ).fadeOut "slow"
+	$j("#changeimg_" + b ).fadeIn "slow", (-> 
+		$j("#change_tag_" + a ).css "background-color", "rgba(255,225,175,0.7)"
+		$j("#change_tag_" + a ).hover (->
+			$j("#change_tag_" + a ).css "background-color", "rgb(255,220,155)"), ->
+			$j("#change_tag_" + a ).css "background-color", "rgba(255,225,175,0.7)"	
+		$j("#change_tag_" + b ).css "background-color", "rgb(255,220,155)"
+		$j("#change_tag_" + b ).hover (->
+			$j("#change_tag_" + b ).css "background-color", "rgb(255,220,155)"), ->
+			$j("#change_tag_" + b ).css "background-color", "rgb(255,220,155)"	
+		$j("#change_circle_" + a ).attr "src", "/assets/circle.png"
+		$j("#change_circle_" + b ).attr "src", "/assets/circle_active.png"
 	)
 	imgNumber = b
 
