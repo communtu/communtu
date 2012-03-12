@@ -104,13 +104,6 @@
 	
 </div>
 
-<!--
-<div id="navigation_bar">
-	<div class="navigation" id="navi_bundle"><%= link_to "Buendel", "bundle", :class => "navigation_link" %></div>
-	<div class="navigation" id="navi_communtu"><%= link_to "Communtu", "communtu", :class => "navigation_link" %></div>
-</div>
--->
-
 <!-- mainnavigation -->
 <div id="navigation_bar">
 	<!-- button -->
@@ -132,7 +125,9 @@
 </div>
 
 
-<% if ((params[:controller] == "home" and params[:action] != "home") and (params[:controller] == "home" and params[:action] != "new_repository")) or params[:controller] == "articles" %>
+<% navi_communtu = (params[:controller] == "home" and !["home","home_new","new_repository"].include?(params[:action]) \
+      or params[:controller] == "articles") %>
+<% if navi_communtu %>	  
    <% @style = "style='margin-top:10px'"  %>
  <% else %>
    <% @style = "" %>
@@ -164,7 +159,7 @@
 </div>
 <% end %>
 -->
-<% if ((params[:controller] == "home" and params[:action] != "home") and (params[:controller] == "home" and params[:action] != "new_repository")) %>
+<% if navi_communtu %>	  
 <%= render(:partial => 'navi_communtu') %>
 <div class="content1"> 
 <% elsif params[:controller] == "articles" %>
