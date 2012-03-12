@@ -30,6 +30,7 @@ VM_MOUNT=$(mktemp -d)
 sudo mount $device $VM_MOUNT -o loop
 
 # make squashfs file system from vm image
+chmod +w $LIVECD/casper
 mksquashfs $VM_MOUNT $LIVECD/casper/filesystem.squashfs
 chmod 444 $LIVECD/casper/filesystem.squashfs
 
