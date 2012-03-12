@@ -24,7 +24,7 @@ class RepositoriesController < ApplicationController
   # GET /repositories
   # GET /repositories.xml
   def index
-    @repositories = Repository.find.all
+    @repositories = Repository.find(:all)
 
     respond_to do |format|
       format.html # index.html.erb

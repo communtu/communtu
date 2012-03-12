@@ -20,7 +20,7 @@
 
 <table width="100%">
 	<tr><td width="70%" valign="top">
-		<span class="headline">   <%=h @metapackage.name %> </span> 
+		<span class="headline">   <%=h @metapackage.name %> (<%=h @metapackage.debian_name %>) </span> 
             
 		<% if show_install %>	
             <span style="position: relative; left: 350px;">
@@ -32,9 +32,9 @@
 		<% end %>	
 		
 <% if editing_metapackage? %>
-                        <%= link_to((image_tag("/images/add.png", :size => "18x18", :border => "0", :title =>t(:add_to_bundle), :alt => t(:add_to_bundle)) + ""),
+                        <%= link_to_remote((image_tag("/images/add.png", :size => "18x18", :border => "0", :title =>t(:add_to_bundle), :alt => t(:add_to_bundle)) + ""),
                                 :url => "/cart/add_to_cart_box/" + @metapackage.id.to_s,\
-                                :update => 'meta_cart_box', :remote=>true) %>
+                                :update => 'meta_cart_box') %>
                 <% end %>            
  <br />
 <font size="-3"><%=t(:view_metapackages_show_0)%><b><%= link_to @metapackage.user.login, user_path(@metapackage.user.id) %></b></font>
@@ -111,7 +111,7 @@
 </table>
 </td>
 
-<% if !request.env['HTTP_REFERER'].nil? and (@metapackage.user==current_user or is_admin?) then %>
+<% if !session[:backlink].nil? and (@metapackage.user==current_user or is_admin?) then %>
 
      <td width="25%">
 <% if !@conflicts.empty?  %>

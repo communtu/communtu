@@ -17,7 +17,7 @@
 class RatingController < ApplicationController
   
   def rate
-    if !params[:rating].nil?
+    if !params[:rating].nil? and !params[:rating].empty?
       @metapackage = Metapackage.find(params[:id])
       Rating.delete_all(["rateable_type = 'Metapackage' AND rateable_id = ? AND user_id = ?", @metapackage.id, current_user.id])
       t = Translation.new
@@ -30,10 +30,10 @@ class RatingController < ApplicationController
       t.save                                
       @metapackage.add_rating Rating.new(:rating => params[:user_rating], :user_id => current_user.id, :comment => params[:rating][:comment], :comment_tid => @l)
     end  
-    if request.env["HTTP_REFERER"] == ""
+    if session[:backlink] == ""
       redirect_to '/metapackages/index'
     else
-      redirect_to :back
+      redirect_to session[:backlink]
     end
   end
   

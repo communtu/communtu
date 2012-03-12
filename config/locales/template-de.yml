@@ -226,7 +226,6 @@ de:
   first_sync_repos: 'Bitte erst die Repositories synchronisieren. Dies geschieht normalerweise automatisch innerhalb von einer Woche. Achtung: an dieser Stelle wird nur geprüft, ob überhaupt etwas synchronisiert wurde, nicht, ob der Prozess fertig ist.'
   force_sync: Synchronisierung des Repositories erzwingen
   former_participants: Ehemalige Mitwirkende
-  forum: Forum
   four_and_fourty_letters: Zwischen 4 und 40 Zeichen
   free_disk_space: Freier Plattenplatz (root / home / isos)
   generate_all_debs_for_bundle: Alle debs für das Bündel erzeugen
@@ -306,7 +305,7 @@ de:
   livecd_email_body: 'Deine bei uns erstellte Live-CD/DVD bzw. das ISO Image für die Erstellung einer Live-CD/DVD oder USB Stick wurde erstellt!'
   livecd_email_body_2: 'Bei Fragen und Anregungen bitten wir Dich bei uns zu melden.'
   livecd_email_body_3: 'Wir hoffen, dass Du viel Spaß mit Deinem Ubuntu hast.'
-  livecd_email_body_failed: 'Deine bei uns erstellte Live-CD/DVD bzw. das ISO Image für die Erstellung einer Live-Cd/DVD oder USB Stick %{name} konnte leider nicht erstellt werden. Wir kümmern uns um das Problem.'
+  livecd_email_body_failed: 'Deine bei uns erstellte Live-CD/DVD bzw. das ISO Image für die Erstellung einer Live-Cd/DVD oder USB Stick %{name}, ID %{id} konnte leider nicht erstellt werden. Wir kümmern uns um das Problem.'
   livecd_email_body_footer: 'Liebe Grüße,'
   livecd_email_body_footer_2: 'Dein Communtu-Team'
   livecd_email_body_link: 'Den Download kannst Du unter folgendem Link aufrufen: '

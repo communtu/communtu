@@ -25,7 +25,7 @@
   </div>
 
   <div id="search_form">
-  <% form_tag( :html => { :id => "search" }, :remote => true ) do %>
+  <% form_remote_tag( :html => { :id => "search" } ) do %>
     <%= label_tag :query %>
     <% if @result && @result[:query] %>
       <%= text_field_tag :query, @result[:query] %>

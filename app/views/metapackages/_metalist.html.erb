@@ -68,9 +68,9 @@
         <td class="<%= css %>" valign="middle" width="10">
                 <% if (metapackage.user_id == current_user.id) or is_admin? %>
                     <% if editing_metapackage? and !metapackage.deb_error %>
-                        <%= link_to(image_tag("/images/add.png", :size => "22x22", :border => "0", :title => t(:add_to_bundle), :alt => t(:add_to_bundle)), \
+                        <%= link_to_remote(image_tag("/images/add.png", :size => "22x22", :border => "0", :title => t(:add_to_bundle), :alt => t(:add_to_bundle)), \
                                 :url => "/cart/add_to_cart/" + metapackage.id.to_s,\
-                                :update => 'meta_cart', :remote => true) %>
+                                :update => 'meta_cart') %>
                         <% end %>
                 <% end %>
 	</td>

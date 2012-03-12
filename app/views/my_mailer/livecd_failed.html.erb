@@ -15,9 +15,9 @@
    # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
 %>
 
-<%=t(:hello_simple)%> <%=h @user.login %>, 
+<%=t(:hello_simple, :locale => @locale)%> <%=h @user.login %>, 
 
-<%=t(:livecd_email_body_failed, :name => @cdname)%>
+<%=t(:livecd_email_body_failed, :name => @cdname, :locale => @locale)%>
 
-<%=t(:livecd_email_body_footer)%>
-<%=t(:livecd_email_body_footer_2)%>
+<%=t(:livecd_email_body_footer, :locale => @locale)%>
+<%=t(:livecd_email_body_footer_2, :locale => @locale)%>

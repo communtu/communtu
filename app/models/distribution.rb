@@ -59,12 +59,12 @@ class Distribution < ActiveRecord::Base
 
   # folder for storing repository information
   def dir_name
-    Rails.root.to_s + "/debs/repos/" + self.short_name
+    RAILS_ROOT + "/debs/repos/" + self.short_name
   end
 
   # package files in the communtu repository
   def package_files(arch)
-    Rails.root.to_s + "/public/debs/dists/ubuntu-#{self.short_name.downcase}-all-all/*/binary-#{arch.name}/Packages"
+    "#{RAILS_ROOT}/public/debs/dists/ubuntu-#{self.short_name.downcase}-all-all/*/binary-#{arch.name}/Packages"
   end
   
   # most recent stable distribution

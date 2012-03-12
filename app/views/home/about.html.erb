@@ -18,21 +18,21 @@
 <h2><%=t(:match_with_communtu)%></h2>
  
 <h3><%=t(:view_home_about_1)%></h3>
-<p><%=t(:view_home_about_2)%></p>
+<p><%=t(:view_home_about_2).html_safe%></p>
 
 <p><%=t(:view_home_about_3)%></p>
 
-<h3><%=t(:view_home_about_4)%></h3>
+<h3><%=t(:view_home_about_4).html_safe%></h3>
 
-<p><%=t(:view_home_about_5)%> 
+<p><%=t(:view_home_about_5).html_safe%> 
 
-<%=t(:view_home_about_7)%>
+<%=t(:view_home_about_7).html_safe%>
 </p>
 
-<p><%=t(:view_home_about_8)%>
+<p><%=t(:view_home_about_8).html_safe%>
 </p>
 
-<p><%=t(:view_home_about_9)%></p>
+<p><%=t(:view_home_about_9).html_safe%></p>
 
 <% if !logged_in? %>
     <h3><%=t(:register)%></h3>
@@ -40,11 +40,11 @@
 </p>
 <% end %>
 
-<h3><%=t(:source_code)%></h3>
+<h3><%=t(:source_code).html_safe%></h3>
 <p><%=t(:communtu_is_opensource, :rails => link_to('Ruby on Rails','http://rubyonrails.org'),
             :github => link_to('github','https://github.com/communtu/communtu'), 
             :trac =>link_to('trac.communtu.org','http://trac.communtu.org'),
-            :agpl => link_to('Affero GNU public license','http://www.gnu.org/licenses/agpl.html'))%><br />
+            :agpl => link_to('Affero GNU public license','http://www.gnu.org/licenses/agpl.html')).html_safe%><br />
 
 <h3><%=t(:imprint)%></h3>
 <p><%=t(:natur_geist_und_technik)%><br />

@@ -20,7 +20,7 @@
 
 <%= error_messages_for :repository %>
 <table>
-<%= form_for(:repository,@repository, :url => { :action => :create }) do |f| %>
+<% form_for(:repository,@repository, :url => { :action => :create }) do |f| %>
 <tr>
 	<td><%=t(:licence)%></td>
 	<td><%= select_license_type %></td>

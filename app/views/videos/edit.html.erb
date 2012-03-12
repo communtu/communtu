@@ -17,7 +17,7 @@
 
 <h1><%=t(:view_videos_edit_0)%></h1>
 
-<%= form_for @video, :url => {:action => :update } do |f| %>
+<% form_for @video, :url => {:action => :update } do |f| %>
   <%= f.error_messages %>
 
   <p>

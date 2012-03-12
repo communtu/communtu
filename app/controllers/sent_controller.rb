@@ -29,7 +29,7 @@ class SentController < ApplicationController
     @message = current_user.sent_messages.build(params[:message])
     #Looks for User login (:mail_to) from URL and fills into inputbox
     !params[:mail_to].nil? ? @message.to = User.find(params[:mail_to]).login : nil
-    session[:return_to] = request.env["HTTP_REFERER"]
+    session[:return_to] = session[:backlink]
   end
   
   def create
@@ -51,7 +51,7 @@ class SentController < ApplicationController
           flash.delete(:error)
           flash[:notice] = t(:controller_sent_2)
           #Redirects to metapackages where message was sent if successful else to new message
-          redirect_to  request.get? ? request.env["HTTP_REFERER"] : session[:return_to]
+          redirect_to  request.get? ? session[:backlink] : session[:return_to]
         end
       end
     else

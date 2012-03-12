@@ -66,7 +66,6 @@ class DownloadController < ApplicationController
     if params[:path]=='mybundle_cd' or params[:path]=='bundle_cd'
           session[:cd_bundle] = params[:id]      
     end
-    session[:backlink] = request.env['HTTP_REFERER']
     @user = current_user
     if @user.derivative.nil? then @user.derivative_id = 1 end
     @distributions = @user.possible_distributions
@@ -171,7 +170,7 @@ class DownloadController < ApplicationController
         cats = params[:categories].map {|s,v| s.to_i}
       end
       # update the data for all the main categories
-      main_categories = Category.find_by_parent_id_and_main(1, true).all
+      main_categories = Category.find(:all, :conditions => {:parent_id => 1, :main => true})
      # Category.find(1).children.each do |child|
         main_categories.each do |child|
         # we now use 1 for selected, in the future, this can be a boolean
@@ -220,7 +219,7 @@ class DownloadController < ApplicationController
     end
     @bundle = Metapackage.find_by_id(params[:id])
     if @bundle.nil? then
-      redirect_to :back
+      redirect_to session[:backlink]
       return
     end
     session[:cd_bundle] = @bundle.id

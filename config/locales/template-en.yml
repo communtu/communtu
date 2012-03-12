@@ -29,7 +29,7 @@ en:
   controller_accounts_5: Password has been updated.
   view_roles_index_2: "Available roles:"
   view_home_beteiligung_15: us
-  view_layouts_application_30: Help/FAQ
+  view_layouts_application_30: Contact
   create_your_livedvd_or_usb: Create Live-CD/DVD or USB key
   view_categories_edit_0: Edit category
   view_layouts_application_31: Contact
@@ -81,6 +81,7 @@ en:
   view_home_contact_us_0: Feedback
   view_home_faq_xfce_02: To reach the package manager Synaptic you navigate to "Applications -> System -> Synaptic Package Manager". In the lower left part you click on "Origin". In the list above search for "packages.communtu.org" and click on it. In the right part of the window you will now see all metapackages available at Communtu. To remove a metapackage from your system you make a right click on it and choose "Mark for Removal". With a click on "Apply" it will be uninstalled.
   controller_distributions_2: Distribution updated.
+  install_apt_get: Install package
   want_to_add_package2: Create a new bundle from the selection
   controller_passwords_2: No user found with this e-mail-address.
   view_home_contact_us_1: Here you have the possibility to send us suggestions and critique about Communtu.
@@ -205,6 +206,7 @@ en:
   preliminary_distribution: Preliminary distribution
   model_mailer_2: Your account has been activated.
   view_home_derivatives_10: https://wiki.ubuntu.com/UbuntuStudio
+  board: board
   new_derivative: New derivative
   model_mailer_3: You asked for resetting your password
   migrate_bundles: Take over bundles from parent
@@ -643,6 +645,7 @@ en:
     a feedback from en.communtu.org has arrived. The subject is:
   view_packages_edit_0: Edit package
   view_layouts_application_9: Log out
+  livecd_no_name: "Name of the Live-CD/DVD:"
   bundles_with_errors: Bundles with errors
   view_metapackages_finish_migrate_2: ". "
   view_my_mailer_mail_1: "The following comment was made:"
@@ -660,6 +663,7 @@ en:
   stop_vm: Stop Live-CD
   bundles_needing_deb_generation: Bundles that need to be recreated as metapackages.
   controller_repositories_2: Repository updated.
+  conflicts: ""
   controller_repositories_3: sources.list read.
   view_admins_show_0: Here should be an introduction to the admin area
   packages_for_ubuntu: Packages for Ubuntu
@@ -712,6 +716,7 @@ en:
   circular_dependency: "Error: circular dependencies between bundles"
   view_repositories_show_4: "Package-list for %{arch}:"
   install_bundle: Installation of bundle %{name}
+  install_apt_get_repos: ""
   livecd_email_failed: "Communtu: creation of Live-CD/DVD failed."
   vm_no_iso_found: The virtual machine cannot be started, no iso image file found.
   usb_image: USB-Image
@@ -721,6 +726,7 @@ en:
   being_created: Creating
   bundle_by_owner: Created bundles
   view_repositories_show_6: "        OpenSource"
+  bundles_with_conflicts: Bundles with errors
   new_architecture: New architecture
   view_home_mail_0: Notification in bugfixing
   iso_image: ISO image
@@ -778,6 +784,7 @@ en:
   view_user_profiles__profile_data_15: " Allow commercial licenses (free too, but the sources are closed - the fluent change to Linux:"
   view_packages_show_17: "Contains these packages (\"depends\" and \"recommends\"):"
   archive: archive
+  compute_conflicts: Conflicts inside bundles
   controller_sessions_4: You have been logged in.
   view_metapackages_show_save_3: To create a meta-package an English title and descriptionis needed.
   view_home_icons_15: " program-bundle"
@@ -810,15 +817,15 @@ en:
   you_can: "You can "
   view_home_icons_23: Message-icon
   view_packages_show_26: change metapackage into bundle
+  controller_debs_0: Debian-packages
   make_distribution_visible: Make distribution viewable
   view_home_icons_24: Receive a message-icon for new messages
-  controller_debs_0: Debian-packages
+  please_create_cd: You must create a ISO file first.
   controller_debs_1: Deb created.
   view_packages_edit_10: Package description
-  please_create_cd: You must create a ISO file first.
-  view_mailbox_show_1: From
-  choose_bundle: Choose bundle
   controller_debs_2: Deb updated.
+  choose_bundle: Choose bundle
+  view_mailbox_show_1: From
   view_layouts_donate: Donate
   zombie_processes: Zombie processes
   view_mailbox_show_3: received
@@ -851,6 +858,7 @@ en:
   model_user_profile_tabz_4: Settings
   ubuntu_derivatives: Ubuntu derivatives
   view_home_auth_error_1: The file you sent to Communtu couldn't be authenticated. Please try again with logging in again or filling in the form again. This could also come from disabled cookie settings.
+  illformed_version: ""
   force_sync: force synchronization of repository
   controller_suggestion_15: Install package
   controller_suggestion_16: The following packages will be installed
@@ -860,6 +868,7 @@ en:
   controller_sent_1: user does not exist
   bundel_editing: edit bundle
   untested_bundle: "Untested bundles:"
+  contact_form: Feedback
   livecd_disabled: Creation of Live-CDs is disabled. Check config/settings.yml.
   controller_sent_2: message successfully send
   create_livecd_intro: "You can create a Live-CD with Communtu in two different ways: using the download page or directly via a bundle."
@@ -896,6 +905,7 @@ en:
   model_package_need_not_update: "%{url} has not changed"
   model_package_7: couldn't determine URL for %{repo}
   view_home_icons_6: " install sources"
+  allgemeinbildung_imprint: ""
   model_package_9: While the synchronization of the repository %{repo_name} no PackageDistr-entry for the package %{package_name} could be found.
   view_home_about_12: <b>Administrate bundles</b> on the left side offers an overview about the available bundles. At last, an overview about the available Ubunt versions (distributions) can be found at <b>Ubuntu versions</b>.
   distribution: Distribution

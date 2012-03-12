@@ -43,16 +43,16 @@
 <br />
 <table>
     <tr>
-        <td><%= link_to(image_tag("/images/64x64/download.png", :height => 60, :title =>t(:go_to_download), :alt=>t(:go_to_download), :border => "0"), "/download/selection?path=install") %></td>
-        <td><%= t(:search_programs_bundles) %> <%= link_to(t(:continue), "/download/selection?path=install") %></td>
+        <td><%= link_to(image_tag("64x64/download.png", :height => 60, :title =>t(:go_to_download), :alt=>t(:go_to_download), :border => "0"), "/download/selection?path=install") %></td>
+        <td><%= t(:search_programs_bundles).html_safe %> <%= link_to(t(:continue), "/download/selection?path=install") %></td>
     </tr>
     <tr>
         <td colspan="2"><hr /></td>
     </tr>
     <tr>
-        <td><%= link_to(image_tag("/images/64x64/usb-cd.png", :height => 64, :title =>t(:create_your_livedvd_or_usb), :alt=>t(:create_your_livedvd_or_usb), :border => "0"), "/download/start") %></td>
+        <td><%= link_to(image_tag("64x64/usb-cd.png", :height => 64, :title =>t(:create_your_livedvd_or_usb), :alt=>t(:create_your_livedvd_or_usb), :border => "0"), "/download/start") %></td>
 
-        <td><%= t(:make_your_livedvd_or_usb) %> <%= link_to(t(:continue), "/download/start") %></td>
+        <td><%= t(:make_your_livedvd_or_usb).html_safe %> <%= link_to(t(:continue), "/download/start") %></td>
     </tr>
 
     <tr>
@@ -62,17 +62,17 @@
     <tr>
         <td><%= link_to(image_tag("apps/Metapackage.png", :height => 60, :title =>t(:make_your_bundle), :alt=>t(:make_your_bundle), :border => "0"), "/metapackages/new") %></td>
 
-        <td><%= t(:make_a_systemupgrade) %> <%= link_to(t(:continue), "/metapackages/new") %></td>
+        <td><%= t(:make_a_systemupgrade).html_safe %> <%= link_to(t(:continue), "/metapackages/new") %></td>
     </tr>
     <tr>
         <td colspan="2"><hr /></td>
     </tr>
 </table>
-<div id="conny_index"><%= image_tag("/images/conny_start.jpg", :title =>t(:conny_picture), :alt=>t(:conny_picture)) %></div>
+<div id="conny_index"><%= image_tag("conny_start.jpg", :title =>t(:conny_picture), :alt=>t(:conny_picture)) %></div>
 <div id="list_nextto_conni">
 <% u = User.find(:last, :conditions => {:anonymous => false}) %>
 <h3><%=t(:hello)%></h3>
-<%=t(:last_user)%> <strong><%= link_to( u.login, user_path(u.id)) %> <%= image_tag("/images/icon_user.png") %>.</strong>
+<%=t(:last_user)%> <strong><%= link_to( u.login, user_path(u.id)) %> <%= image_tag("icon_user.png") %>.</strong>
 </div>
 
 <div class="best_buendle">
@@ -84,7 +84,7 @@
             <p><%=t(:view_home_home_bundle)%></p>
         </td>
         <td>
-          <img src="/images/apps/Metapackage.png" alt="<%=t(:view_home_home_bundle)%>" title="<%=t(:view_home_home_bundle)%>" />
+          <%= image_tag("apps/Metapackage.png", :alt=>t(:view_home_home_bundle), :title=>(:view_home_home_bundle))%>
         </td>
       </tr>
     </table>

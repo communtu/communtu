@@ -43,11 +43,15 @@
 # template_id: deprecated
 
 require 'digest/sha1'
-class User < ActiveRecord::Base
-  # Virtual attribute for the unencrypted password
-  attr_accessor :password  
 
-  EmailAddress = begin
+class User < ActiveRecord::Base
+  include Authentication
+  include Authentication::ByPassword
+  include Authentication::ByCookieToken
+  include Authorization::StatefulRoles
+  set_table_name 'users'
+
+EmailAddress = begin
   qtext = '[^\\x0d\\x22\\x5c\\x80-\\xff]'
   dtext = '[^\\x0d\\x5b-\\x5d\\x80-\\xff]'
   atom = '[^\\x00-\\x20\\x22\\x28\\x29\\x2c\\x2e\\x3a-' +
@@ -64,19 +68,73 @@ class User < ActiveRecord::Base
   pattern = /\A#{addr_spec}\z/
 end  
 
-  validates_presence_of     :login, :email
-  validates_presence_of     :password,                   :if => :password_required?
-  validates_presence_of     :password_confirmation,      :if => :password_required?
-  validates_length_of       :password, :within => 4..40, :if => :password_required?
-  validates_confirmation_of :password,                   :if => :password_required?
+
+  validates :login, :presence   => true,
+                    :uniqueness => true,
+                    :length     => { :within => 3..40 },
+                    :format     => { :with => Authentication.login_regex, :message => Authentication.bad_login_message }
+
+  validates :name,  :format     => { :with => Authentication.name_regex, :message => Authentication.bad_name_message },
+                    :length     => { :maximum => 100 },
+                    :allow_nil  => true
+
+  validates :email, :presence   => true,
+                    :uniqueness => true,
+                    :format     => { :with => EmailAddress, :message => I18n.t(:not_accepted) },
+                    :length     => { :within => 6..100 }
+
+  
+# from Rails 2 branch
+#validates_presence_of     :login, :email
+#  validates_presence_of     :password,                   :if => :password_required?
+#  validates_presence_of     :password_confirmation,      :if => :password_required?
+#  validates_length_of       :password, :within => 4..40, :if => :password_required?
+#  validates_confirmation_of :password,                   :if => :password_required?
 #  validates_length_of       :firstname,    :within => 2..40
 #  validates_length_of       :surname,    :within => 2..40
-  validates_length_of       :login,    :within => 3..40
-  validates_length_of       :email,    :within => 6..100
-  validates_uniqueness_of   :login, :email, :case_sensitive => false
-  validates_format_of       :email, :with => EmailAddress, :message => I18n.t(:not_accepted)
- 
- #Messager dependencies
+#  validates_length_of       :login,    :within => 3..40
+#  validates_length_of       :email,    :within => 6..100
+#  validates_uniqueness_of   :login, :email, :case_sensitive => false
+#  validates_format_of       :email, :with => EmailAddress, :message => I18n.t(:not_accepted)
+
+
+
+  # HACK HACK HACK -- how to do attr_accessible from here?
+  # prevents a user from submitting a crafted form that bypasses activation
+  # anything else you want your user to change should be added here.
+  attr_accessible :login, :email, :name, :password, :password_confirmation
+
+  # Authenticates a user by their login name and unencrypted password.  Returns the user or nil.
+  #
+  # uff.  this is really an authorization, not authentication routine.  
+  # We really need a Dispatch Chain here or something.
+  # This will also let us return a human error message.
+  #
+  def self.authenticate(login, password)
+    return nil if login.blank? || password.blank?
+    u = find_in_state :first, :active, :conditions => {:login => login.downcase} # need to get the salt
+    u && u.authenticated?(password) ? u : nil
+  end
+
+  def login=(value)
+    write_attribute :login, (value ? value.downcase : nil)
+  end
+
+  def email=(value)
+    write_attribute :email, (value ? value.downcase : nil)
+  end
+
+  protected
+    
+  def make_activation_code
+        self.deleted_at = nil
+        self.activation_code = self.class.make_token
+  end
+
+## below from Rails2 branch
+
+
+#Messager dependencies
   has_many :sent_messages, :class_name => "Message", :foreign_key => "author_id", :dependent => :destroy
   has_many :received_messages, :class_name => "MessageCopy", :foreign_key => "recipient_id", :dependent => :destroy
   has_many :folders
@@ -352,7 +410,7 @@ end
       return nil
     end
 
-    Dir.chdir Rails.root.to_s
+    Dir.chdir RAILS_ROOT
 
     name = BasePackage.debianize_name("communtu-add-sources-"+self.login)
     version = self.profile_version.to_s
@@ -377,8 +435,7 @@ end
   end
 
   def install_bundle_sources(bundle)
-    # Dir.chdir RAILS_ROOT
-    Dir.chdir Rails.root.to_s
+    Dir.chdir RAILS_ROOT
 
     name = BasePackage.debianize_name("communtu-add-sources-#{self.login}-#{bundle.name}")
     version = self.profile_version.to_s
@@ -397,8 +454,7 @@ end
   end
 
   def install_package_sources(package)
-    #Dir.chdir RAILS_ROOT
-    Dir.chdir Rails.root.to_s
+    Dir.chdir RAILS_ROOT
     repos = package.repositories_dist(self.distribution,self.architecture)
     Repository.close_deps(repos)
     name = BasePackage.debianize_name("communtu-add-sources-#{self.login}-#{package.name}")
@@ -422,8 +478,7 @@ end
       return nil
     end
 
-    #Dir.chdir RAILS_ROOT
-    Dir.chdir Rails.root.to_s
+    Dir.chdir RAILS_ROOT
 
     name = self.install_name
     version = self.profile_version.to_s
@@ -453,10 +508,10 @@ end
   def livecd(name,iso=false,kvm=false,usb=false)
     sources = self.install_sources
     if sources.nil? then return nil end
-    srcdeb = Rails.root.to_s + "/" + sources
+    srcdeb = RAILS_ROOT + "/" + sources
     install = self.install_bundle_as_meta
     if install.nil? then return nil end
-    installdeb = Rails.root.to_s + "/" + install
+    installdeb = RAILS_ROOT + "/" + install
     published = self.selected_packages.map(&:is_published?).all?
     cd = Livecd.create(:name => name, :distribution_id => self.distribution_id, 
                        :derivative_id => self.derivative_id, :architecture_id => self.architecture_id,
@@ -482,7 +537,7 @@ end
     cd = Livecd.find(:first,:conditions=>params)
     # if not, create one
     if cd.nil?
-      srcdeb = Rails.root.to_s + "/" + self.install_bundle_sources(bundle)
+      srcdeb = RAILS_ROOT + "/" + self.install_bundle_sources(bundle)
       deb_name = bundle.debian_name
       params1=params.clone
       params1.delete(:architecture_id)
@@ -553,5 +608,5 @@ end
     self.update_attribute(:activated_at, Time.now.utc)
   self.update_attribute(:activation_code, nil)
   end    
-   
+
 end

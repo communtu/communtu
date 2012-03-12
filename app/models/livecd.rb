@@ -76,21 +76,21 @@ class Livecd < ActiveRecord::Base
 
   # filename of LiveCD in the file system
   def iso_image
-    Rails.root.to_s + "/public/isos/#{self.fullname}.iso"
+    "#{RAILS_ROOT}/public/isos/#{self.fullname}.iso"
   end
 
   # filename of kvm image in the file system
   def kvm_image
-      Rails.root.to_s + "/public/isos/#{self.fullname}.kvm.img"
+      "#{RAILS_ROOT}/public/isos/#{self.fullname}.kvm.img"
   end
 
   # filename of kvm image in the file system
   def usb_image
-    Rails.root.to_s + "/public/isos/#{self.fullname}.usb.img"
+    "#{RAILS_ROOT}/public/isos/#{self.fullname}.usb.img"
   end
 
   def self.rails_url
-    if Rails.root.to_s.index("test").nil?
+    if RAILS_ROOT.index("test").nil?
       then "http://communtu.org"
       else "http://test.communtu.de"
     end
@@ -157,6 +157,7 @@ class Livecd < ActiveRecord::Base
             ActiveRecord::Base.connection.reconnect!
 	 	        system "echo \"Livecd.find(#{self.id.to_s}).remaster(#{port.to_s})\" | #{nicestr} nohup script/console production"
       end
+      Process.detach(self.pid) # avoid zombie child
       ActiveRecord::Base.connection.reconnect!
       self.save
   end
@@ -164,23 +165,25 @@ class Livecd < ActiveRecord::Base
   # created liveCD, using script/remaster
   def remaster(port=2222)
     ActiveRecord::Base.connection.reconnect!
+    self.port = port
+    self.save
     ver = self.smallversion
     fullname = self.fullname
     # need to generate iso, use lock in order to prevent parallel generation of multiple isos
     begin
-        while not (system "dotlockfile -p -r 1000 " + Rails.root.to_s + "/livecd#{port}_lock") do end
+        while not (system "dotlockfile -p -r 1000 #{RAILS_ROOT}/livecd#{port}_lock") do end
         self.generating = true
         self.save
         # log to log/livecd.log
-        system "(echo; echo \"------------------------------------\")  >> " + Rails.root.to_s + "/log/livecd#{port}.log"
-        call = "echo \"#{date_now} - #{port}: Creating live CD ##{self.id} #{fullname}\" >> " + Rails.root.to_s + "/log/"
+        system "(echo; echo \"------------------------------------\")  >> #{RAILS_ROOT}/log/livecd#{port}.log"
+        call = "echo \"#{date_now} - #{port}: Creating live CD ##{self.id} #{fullname}\" >> #{RAILS_ROOT}/log/"
         system (call+"livecd#{port}.log")
         system (call+"livecd.log")
         # check if there is enough disk space (at least 25 GB)
         while disk_free_space(SETTINGS['iso_path']) < 25000000000
           # destroy the oldest liveCD
           cd=Livecd.find(:first,:order=>"updated_at ASC")
-          call = "(echo \"#{date_now} - #{port}: Disk full - deleting live CD #{cd.id}\" >> " + Rails.root.to_s + "/log/"
+          call = "(echo \"#{date_now} - #{port}: Disk full - deleting live CD #{cd.id}\" >> #{RAILS_ROOT}/log/"
           system (call+"livecd#{port}.log")
           system (call+"livecd.log")
           cd.destroy
@@ -197,26 +200,26 @@ class Livecd < ActiveRecord::Base
         isoflag = self.iso ? "-iso #{self.iso_image} " : ""
         kvmflag = self.kvm ? "-kvm #{self.kvm_image} " : ""
         usbflag = self.usb ? "-usb #{self.usb_image} " : ""
-        remaster_call = Rails.root.to_s + "/script/remaster create #{nicestr}#{virt}#{isoflag}#{kvmflag}#{usbflag}#{ver} #{self.name} #{self.srcdeb} #{self.installdeb} #{port} >> #{RAILS_ROOT}/log/livecd#{port}.log 2>&1"
-        system "echo \"#{remaster_call}\" >> " + Rails.root.to_s + "/log/livecd#{port}.log"
+        remaster_call = "#{RAILS_ROOT}/script/remaster create #{nicestr}#{virt}#{isoflag}#{kvmflag}#{usbflag}#{ver} #{self.name} #{self.srcdeb} #{self.installdeb} #{port} >> #{RAILS_ROOT}/log/livecd#{port}.log 2>&1"
+        system "echo \"#{remaster_call}\" >> #{RAILS_ROOT}/log/livecd#{port}.log"
         self.failed = !(system remaster_call)
-        # kill VM and release lock, necessary in case of abrupt exit
+        # kill VM, necessary in case of abrupt exit
         system "sudo kill-kvm #{port}"
-        system "dotlockfile -u /home/communtu/livecd/livecd#{port}.lock"
-        system "echo  >> " + Rails.root.to_s + "/log/livecd#{port}.log"
+        system "echo  >> #{RAILS_ROOT}/log/livecd#{port}.log"
         msg = if self.failed then "failed" else "succeeded" end
-        call = "echo \"#{date_now} - #{port}: Creation of live CD ##{self.id} #{msg}\" >> " + Rails.root.to_s + "/log/"
+        call = "echo \"#{date_now} - #{port}: Creation of live CD ##{self.id} #{msg}\" >> #{RAILS_ROOT}/log/"
         system (call+"livecd#{port}.log")
         system (call+"livecd.log")
-        system "echo  >> " + Rails.root.to_s + "/log/livecd#{port}.log"
+        system "echo  >> #{RAILS_ROOT}/log/livecd#{port}.log"
         if self.failed then
-          self.log = IO.popen("tail -n80 " + Rails.root.to_s + "/log/livecd#{port}.log",&:read)
+          self.log = IO.popen("tail -n80 #{RAILS_ROOT}/log/livecd#{port}.log",&:read)
         end
     rescue StandardError => err
         self.log = "ruby code for live CD/DVD creation crashed: "+err
         self.failed = true
     end
-    system "dotlockfile -u " + Rails.root.to_s + "/livecd#{port}_lock"
+    # release lock
+    system "dotlockfile -u #{RAILS_ROOT}/livecd#{port}_lock"
     # store size and inform user via email
     ActiveRecord::Base.connection.reconnect! # needed after a possibly long time
     if !self.failed then
@@ -231,8 +234,8 @@ class Livecd < ActiveRecord::Base
       if self.usb
         self.size += File.size(self.iso_image)
       end
-      self.users.each do |user|
-        MyMailer.livecd(user,"#{Livecd.rails_url}/livecds/#{self.id}").deliver
+      self.livecd_users.each do |lu|
+        MyMailer.deliver_livecd(lu.user,"#{Livecd.rails_url}/livecds/#{self.id}",lu.locale)
       end
     else
       # mysql problem? then retry
@@ -240,8 +243,8 @@ class Livecd < ActiveRecord::Base
         self.mark_remaster
       # first try? then inform users about failure  
       elsif self.first_try then
-        self.users.each do |user|
-          MyMailer.livecd_failed(user,self.fullname).deliver
+        self.livecd_users.each do |lu|
+          MyMailer.deliver_livecd_failed(lu.user,self.fullname,lu.locale)
         end
         self.first_try = false
       end
@@ -319,7 +322,7 @@ class Livecd < ActiveRecord::Base
         user.architecture_id = self.architecture.id
         user.license = self.license_type
         user.security = self.security_type
-        self.srcdeb = Rails.root.to_s + "/" + user.install_bundle_sources(bundle)
+        self.srcdeb = RAILS_ROOT+"/"+user.install_bundle_sources(bundle)
       else
         if File.exists?(self.srcdeb)
           system "rm #{self.srcdeb}"
@@ -337,7 +340,7 @@ class Livecd < ActiveRecord::Base
                  self.license_type,
                  self.security_type,
                  self.architecture)
-        self.srcdeb = Rails.root.to_s+"/"+srcfile
+        self.srcdeb = RAILS_ROOT+"/"+srcfile
       end
       user.profile_changed = true
       self.save
@@ -347,7 +350,7 @@ class Livecd < ActiveRecord::Base
   # register a livecd for a user
   def register(user)
     if !self.users.include? user
-      LivecdUser.create({:livecd_id => self.id, :user_id => user.id})
+      LivecdUser.create({:livecd_id => self.id, :user_id => user.id, :locale => I18n.locale.to_s})
     end
   end
 

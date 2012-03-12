@@ -16,43 +16,43 @@
 %>
 <% flash[:notice]%>
 <%= render_flash %>
-<h2><%=t(:news)%></h2>
+<h2><%=t(:news).html_safe%></h2>
 <table>
 <% for info in @infos %>
   <tr>
     <td>
       <h3><%= info.header %></h3>
-      <%= info.content %>
+      <%= info.content.html_safe %>
     </td>
   </tr>
 <% end %>
 </table>
 
-<h3><%=t(:chat)%></h3>
-<p><%=t(:promote_chat)%></p>
+<h3><%=t(:chat).html_safe%></h3>
+<p><%=t(:promote_chat).html_safe%></p>
 <p><%= link_to t(:to_chat), '/home/chat'%></p>
 <a name="mailinglist"></a>
-<h3><%=t(:view_home_news_1)%></h3>
-<p><%=t(:view_home_news_2)%></p>
+<h3><%=t(:view_home_news_1).html_safe%></h3>
+<p><%=t(:view_home_news_2).html_safe%></p>
 <% if logged_in? %>
 <form action="/home/news" method="get" value="mail">
 <%end%>
 <p><%= mail_to t(:view_home_news_3), t(:view_home_news_3) %>
-<br /><%=t(:view_home_news_5)%><%= link_to t(:archive), t(:view_home_news_7), :target=> "_blank" %><%=t(:view_home_news_8)%></p>
+<br /><%=t(:view_home_news_5).html_safe%><%= link_to t(:archive), t(:view_home_news_7), :target=> "_blank" %><%=t(:view_home_news_8)%></p>
 <% if logged_in? %>
 <p><%= check_box_tag "announce" %><label for="announce"><%=t(:view_users_new_8)%></label></p>
 <%end%>
 <p><%= mail_to t(:view_home_news_10), t(:view_home_news_10) %>
 <br /><%=t(:view_home_news_11)%><%= link_to t(:archive), t(:view_home_news_13), :target=> "_blank" %><%=t(:view_home_news_8)%></p>
 <% if logged_in? %>
-<p><%= check_box_tag "discuss" %><label for="discuss"><%=t(:view_users_new_9)%></label></p>
+<p><%= check_box_tag "discuss" %><label for="discuss"><%=t(:view_users_new_9).html_safe%></label></p>
 
 <p><%= submit_tag t(:order_mailinglist) %></p>
 </form>
 <%end%>
 
-<table><tr><td valign="top"><h3><%=t(:our_blog)%></h3>
-<p><%=t(:view_home_news_16)%></p>
+<table><tr><td valign="top"><h3><%=t(:our_blog).html_safe%></h3>
+<p><%=t(:view_home_news_16).html_safe%></p>
 <p><%= link_to t(:view_home_news_17), t(:blog_link), :target=> "_blank" %></p>
 </td><td>
   <%= link_to image_tag("blog.gif", :title => t(:blog), :alt => t(:blog), :border => '0'), t(:blog_link), :target => '_blank' %>

@@ -11,3 +11,7 @@ db.backup.gz
 debs/db
 debs/repos
 debs/distributions
+anolock
+*.rails2
+rails3.txt
+db/development.sqlite3

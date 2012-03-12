@@ -1,92 +1,70 @@
-# ActsAsRateable
-module Juixe
-  module Acts #:nodoc:
-    module Rateable #:nodoc:
-
+module ActiveRecord
+  module Acts
+    module Rateable
       def self.included(base)
-        base.extend ClassMethods  
+        base.extend(ClassMethods)
       end
+    
+      module AssignRateWithUserId
+			  def <<( rate )
+			      r = Rating.new
+			      r.rate = rate
+			      r.rateable = proxy_owner
+			      r.user_id = rate.user_id
+			      r.save
+			  end
+			end 
+			
+	    module ClassMethods
+	      def acts_as_rateable(options = {})
+	        has_many :ratings, :as => :rateable, :dependent => :destroy, :include => :rate
+	        has_many :rates, :through => :ratings, :extend => AssignRateWithUserId
+	        
+	        include ActiveRecord::Acts::Rateable::InstanceMethods
+	        extend ActiveRecord::Acts::Rateable::SingletonMethods
+	      end
+	    end
+			
+			module SingletonMethods
+				# Find all objects rated by score.
+				def find_average_of( score )
+          find(:all, :include => [:rates] ).collect {|i| i if i.average_rating.to_i == score }.compact
+				end
+			end
+			
+			module InstanceMethods
+				# Rates the object by a given score. A user object can be passed to the method.
+				def rate_it( score, user_id )
+					return unless score
+					rate = Rate.find_or_create_by_score( score.to_i )
+					rate.user_id = user_id
+					rates << rate
+				end
+				
+				# Calculates the average rating. Calculation based on the already given scores.
+				def average_rating
+					return 0 if rates.empty?
+					( rates.inject(0){|total, rate| total += rate.score }.to_f / rates.size )
+				end
 
-      module ClassMethods
-        def acts_as_rateable
-          has_many :ratings, :as => :rateable, :dependent => :destroy
-          include Juixe::Acts::Rateable::InstanceMethods
-          extend Juixe::Acts::Rateable::SingletonMethods
-        end
-      end
-      
-      # This module contains class methods
-      module SingletonMethods
-        # Helper method to lookup for ratings for a given object.
-        # This method is equivalent to obj.ratings
-        def find_ratings_for(obj)
-          rateable = ActiveRecord::Base.send(:class_name_of_active_record_descendant, self).to_s
-         
-          Rating.find(:all,
-            :conditions => ["rateable_id = ? and rateable_type = ?", obj.id, rateable],
-            :order => "created_at DESC"
-          )
-        end
-        
-        # Helper class method to lookup ratings for
-        # the mixin rateable type written by a given user.  
-        # This method is NOT equivalent to Rating.find_ratings_for_user
-        def find_ratings_by_user(user) 
-          rateable = ActiveRecord::Base.send(:class_name_of_active_record_descendant, self).to_s
-          
-          Rating.find(:all,
-            :conditions => ["user_id = ? and rateable_type = ?", user.id, rateable],
-            :order => "created_at DESC"
-          )
-        end
-        
-        # Helper class method to lookup rateable instances
-        # with a given rating.
-        def find_by_rating(rating)
-          rateable = ActiveRecord::Base.send(:class_name_of_active_record_descendant, self).to_s
-          ratings = Rating.find(:all,
-            :conditions => ["rating = ? and rateable_type = ?", rating, rateable],
-            :order => "created_at DESC"
-          )
-          rateables = []
-          ratings.each { |r|
-            rateables << r.rateable
-          }
-          rateables.uniq!
-        end
-      end
-      
-      # This module contains instance methods
-      module InstanceMethods
-        # Helper method that defaults the current time to the submitted field.
-        def add_rating(rating)
-          ratings << rating
-        end
-        
-        # Helper method that returns the average rating
-        # 
-        def rating
-          average = 0.0
-          ratings.each { |r|
-            average = average + r.rating
-          }
-          if ratings.size != 0
-            average = average / ratings.size 
-          end
-          average
-        end
-        
-        # Check to see if a user already rated this rateable
-        def rated_by_user?(user)
-          rtn = false
-          if user
-            self.ratings.each { |b|
-              rtn = true if user.id == b.user_id
-            }
-          end
-          rtn
-        end
-      end
-    end
+				# Rounds the average rating value.
+				def average_rating_round
+					average_rating.round
+				end
+		
+				# Returns the average rating in percent. The maximal score must be provided	or the default value (5) will be used.
+				# TODO make maximum_rating automatically calculated.
+				def average_rating_percent( maximum_rating = 5 )
+					f = 100 / maximum_rating.to_f
+					average_rating * f
+				end
+				
+				# Checks wheter a user rated the object or not.
+				def rated_by?( user )
+					ratings.detect {|r| r.user_id == user.id }
+				end
+			end
+			
+		end
   end
 end

@@ -1,24 +1,18 @@
-require File.dirname(__FILE__) + '/../test_helper'
+require 'test_helper'
 require 'sessions_controller'
 
 # Re-raise errors caught by the controller.
 class SessionsController; def rescue_action(e) raise e end; end
 
-class SessionsControllerTest < ActiveSupport::TestCase
+class SessionsControllerTest < ActionController::TestCase
   # Be sure to include AuthenticatedTestHelper in test/test_helper.rb instead
   # Then, you can remove it from this and the units test.
   include AuthenticatedTestHelper
 
   fixtures :users
 
-  def setup
-    @controller = SessionsController.new
-    @request    = ActionController::TestRequest.new
-    @response   = ActionController::TestResponse.new
-  end
-
   def test_should_login_and_redirect
-    post :create, :login => 'quentin', :password => 'test'
+    post :create, :login => 'quentin', :password => 'monkey'
     assert session[:user_id]
     assert_response :redirect
   end
@@ -37,19 +31,22 @@ class SessionsControllerTest < ActiveSupport::TestCase
   end
 
   def test_should_remember_me
-    post :create, :login => 'quentin', :password => 'test', :remember_me => "1"
+    @request.cookies["auth_token"] = nil
+    post :create, :login => 'quentin', :password => 'monkey', :remember_me => "1"
     assert_not_nil @response.cookies["auth_token"]
   end
 
   def test_should_not_remember_me
-    post :create, :login => 'quentin', :password => 'test', :remember_me => "0"
-    assert_nil @response.cookies["auth_token"]
+    @request.cookies["auth_token"] = nil
+    post :create, :login => 'quentin', :password => 'monkey', :remember_me => "0"
+    puts @response.cookies["auth_token"]
+    assert @response.cookies["auth_token"].blank?
   end
   
   def test_should_delete_token_on_logout
     login_as :quentin
     get :destroy
-    assert_equal @response.cookies["auth_token"], []
+    assert @response.cookies["auth_token"].blank?
   end
 
   def test_should_login_with_cookie

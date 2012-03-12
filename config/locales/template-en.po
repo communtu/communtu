@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Communtu 0.2\n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
-"Last-Translator: Timo Denissen <timo@communtu.de>\n"
+"Last-Translator: Timo Kohorst <timo-hb@arcor.de>\n"
 "Language-Team: Communtu <info@communtu.de>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -133,8 +133,9 @@ msgid "uns"
 msgstr "us"
 
 #: view_layouts_application_30
-msgid "Hilfe/FAQ"
-msgstr "Help/FAQ"
+#, fuzzy
+msgid "Hilfe/Kontakt"
+msgstr "Contact"
 
 #: create_your_livedvd_or_usb
 msgid "Live-CD/DVD oder USB-Stick erstellen"
@@ -344,6 +345,11 @@ msgstr "To reach the package manager Synaptic you navigate to \"Applications -> 
 msgid "Distribution aktualisiert."
 msgstr "Distribution updated."
 
+#: install_apt_get
+#, fuzzy
+msgid "Pakete über apt-get installieren:"
+msgstr "Install package"
+
 #: view_user_profiles__installation_30
 msgid "Hinweis: Bitte .deb-Dateien nicht umbenennen."
 msgstr "Advice: please don't rename the .deb-file."
@@ -452,6 +458,10 @@ msgstr "Name"
 msgid "Standard-Bündel für %{category} auswählen"
 msgstr "Select standard bundles for %{category}"
 
+#: view_metapackages_show_3
+msgid "Zurück"
+msgstr "Back"
+
 #: direct_indirect_covered_packages_warning
 msgid "Achtung! Dauert lange und sollte nur vom Admin-Server (communtu.de:3006) aus aufgerufen werden"
 msgstr "Attention! This takes a long time and should only be done on the admin-server (communtu.org:3006)!"
@@ -463,10 +473,6 @@ msgstr "Architecture successfully updated."
 #: view_home_home_7
 msgid "<b>Bündel verwalten</b> Hast du gute Erfahrungen mit Programmen gemacht? Dann kannst du sie hier thematisch bündeln, oder auch bestehende Bündel angucken. "
 msgstr "<b>Administrate bundles</b> Did you have good experiences with the programs? Bundle them thematically or take a look at existing bundles."
-
-#: view_metapackages_show_3
-msgid "Zurück"
-msgstr "Back"
 
 #: vm_no_vnc
 msgid "Kein VNC-Port gefunden"
@@ -831,6 +837,10 @@ msgstr "Your account has been activated."
 #: view_home_derivatives_10
 msgid "http://wiki.ubuntuusers.de/Ubuntu_Studio"
 msgstr "https://wiki.ubuntu.com/UbuntuStudio"
+
+#: board
+msgid "Forum"
+msgstr "board"
 
 #: new_derivative
 msgid "Neues Derivat"
@@ -2346,13 +2356,13 @@ msgstr "The stars show how often the program is installed and used by the Ubuntu
 msgid "Neues Passwort"
 msgstr "new password"
 
-#: liveusb_start_message
-msgid "Hier kannst du einen USB-Stick erstellen lassen, der die von dir ausgewählte Software enthält. Du hast folgende Bündel ausgewählt:"
-msgstr "Here you can create a USB key image which contains the software chosen by you. You selected the following bundles:"
-
 #: view_metapackages_show_15
 msgid "Editieren"
 msgstr "Edit "
+
+#: liveusb_start_message
+msgid "Hier kannst du einen USB-Stick erstellen lassen, der die von dir ausgewählte Software enthält. Du hast folgende Bündel ausgewählt:"
+msgstr "Here you can create a USB key image which contains the software chosen by you. You selected the following bundles:"
 
 #: controller_users_9
 msgid "Es gab ein Problem mit der Deaktivierung dieses Benutzers."
@@ -2362,6 +2372,10 @@ msgstr "An error occured while deactivating this user."
 msgid "Löschen"
 msgstr "Delete"
 
+#: view_metapackages_show_16
+msgid "Paketliste editieren"
+msgstr "Edit package list"
+
 #: view_layouts_application_0
 msgid "Communtu, Ubuntu, Installation, Installationshilfe"
 msgstr "Communtu, Ubuntu, installation, installation help"
@@ -2370,9 +2384,9 @@ msgstr "Communtu, Ubuntu, installation, installation help"
 msgid "Iso erstellen"
 msgstr "Create ISO image"
 
-#: view_metapackages_show_16
-msgid "Paketliste editieren"
-msgstr "Edit package list"
+#: view_metapackages_show_17
+msgid "Veröffentlichen"
+msgstr "Publish"
 
 #: view_layouts_application_1
 msgid "Communtu passt dein Linux-Ubuntu-System an deine individuellen Bedürfnisse an."
@@ -2382,13 +2396,13 @@ msgstr "Communtu customizes your Ubuntu system to your individual needs."
 msgid "Fehler: Repository konnte nicht synchronisiert werden"
 msgstr "Error: couldn't synchronise repository"
 
-#: view_metapackages_show_17
-msgid "Veröffentlichen"
-msgstr "Publish"
-
 #: view_metapackages_show_comment_and_ratings
 msgid "Neuste Kommentare und Bewertungen für dieses Bündel"
 msgstr "Latest comments and ratings for this bundle"
+
+#: view_metapackages_show_18
+msgid "Wenn du das Bündel veröffentlichst, wird es für alle Nutzer zugänglich. Allerdings kann es danach nicht mehr gelöscht oder unbenannt werden."
+msgstr "If you publish the bundle every user has access to this bundle. However, the bundle cannot be deleted or renamed after publishing."
 
 #: view_layouts_application_2
 msgid "Communtu"
@@ -2401,10 +2415,6 @@ msgstr "KVM processes"
 #: view_admins_sync_package_2
 msgid "Repository synchronisiert"
 msgstr "repository synchronised"
-
-#: view_metapackages_show_18
-msgid "Wenn du das Bündel veröffentlichst, wird es für alle Nutzer zugänglich. Allerdings kann es danach nicht mehr gelöscht oder unbenannt werden."
-msgstr "If you publish the bundle every user has access to this bundle. However, the bundle cannot be deleted or renamed after publishing."
 
 #: view_layouts_application_3
 msgid "Ubuntu Logo"
@@ -2524,6 +2534,11 @@ msgstr "The following comment was made:"
 msgid "Abmelden"
 msgstr "Log out"
 
+#: livecd_no_name
+#, fuzzy
+msgid "Der Name der LiveCD/DVD fehlt"
+msgstr "Name of the Live-CD/DVD:"
+
 #: bundles_with_errors
 msgid "Bündel mit Fehlern"
 msgstr "Bundles with errors"
@@ -2587,6 +2602,10 @@ msgstr "Bundles that need to be recreated as metapackages."
 #: controller_repositories_2
 msgid "Repository aktualisiert."
 msgstr "Repository updated."
+
+#: conflicts
+msgid "Konflikte"
+msgstr ""
 
 #: view_user_mailer_forgot_password_0
 msgid ", um ein neues Passwort zu erhalten, folge dem Link:"
@@ -2796,6 +2815,10 @@ msgstr "Package-list for %{arch}:"
 msgid "Installation des Bündels %{name}"
 msgstr "Installation of bundle %{name}"
 
+#: install_apt_get_repos
+msgid "Liste der benötigten Quellen, für die /etc/apt/sources.list:"
+msgstr ""
+
 #: vm_no_iso_found
 msgid "Die virtuelle Maschine kann nicht gestartet werden: es wurde kein Iso-Abbild gefunden"
 msgstr "The virtual machine cannot be started, no iso image file found."
@@ -2813,7 +2836,8 @@ msgid "Diese Funktion ist für Gäste nicht verfügbar."
 msgstr "This function is not available for guests."
 
 #: livecd_email_body_failed
-msgid "Deine bei und erstellte Live-CD/DVD bzw. das ISO Image für die Erstellung einer Live-Cd/DVD oder USB Stick %{name} konnte leider nicht erstellt werden. Wir kümmern uns um das Problem."
+#, fuzzy
+msgid "Deine bei uns erstellte Live-CD/DVD bzw. das ISO Image für die Erstellung einer Live-Cd/DVD oder USB Stick %{name} konnte leider nicht erstellt werden. Wir kümmern uns um das Problem."
 msgstr "Your created ISO file %{name} for a Live-CD/DVD or USB key couldn't be created. We will solve the problem."
 
 #: view_repositories_show_6
@@ -2831,6 +2855,11 @@ msgstr "Creating"
 #: bundle_by_owner
 msgid "erstellte Bündel"
 msgstr "Created bundles"
+
+#: bundles_with_conflicts
+#, fuzzy
+msgid "Bündel mit Konflikten"
+msgstr "Bundles with errors"
 
 #: view_repositories_show_7
 msgid "        kommerziell "
@@ -3063,6 +3092,11 @@ msgstr "To create a meta-package an English title and descriptionis needed."
 #: archive
 msgid "Archiv"
 msgstr "archive"
+
+#: compute_conflicts
+#, fuzzy
+msgid "Konflikte neu berechnen"
+msgstr "Conflicts inside bundles"
 
 #: controller_sessions_4
 msgid "Du wurdest abgemeldet."
@@ -3340,6 +3374,10 @@ msgstr "Start installation"
 msgid "Mailinglisten"
 msgstr "Mailinglists:"
 
+#: illformed_version
+msgid "Die Versionsnummer darf nur Buchstaben, Zahlen und .+:~ enthalten und muss mit einer Zahl beginnen. "
+msgstr ""
+
 #: view_home_auth_error_1
 msgid "Die Daten, die du an Communtu geschickt hast, konnten nicht korrekt authentifiziert werden. Bitte versuche, dich noch einmal anzumelden bzw. das entsprechende Formular noch einmal auszufüllen. Dies kann daher kommen, dass du deine Cookies nicht aktiviert hast."
 msgstr "The file you sent to Communtu couldn't be authenticated. Please try again with logging in again or filling in the form again. This could also come from disabled cookie settings."
@@ -3379,6 +3417,11 @@ msgstr "... or burn it to a CD or DVD."
 #: livecd_disabled
 msgid "Das Live-CD-Feature wurde abgeschaltet. Siehe config/settings.yml."
 msgstr "Creation of Live-CDs is disabled. Check config/settings.yml."
+
+#: contact_form
+#, fuzzy
+msgid "Kontaktformular"
+msgstr "Feedback"
 
 #: untested_bundle
 msgid "Bündel die ungetestet sind:"
@@ -3529,6 +3572,10 @@ msgstr " install sources"
 #: model_package_9
 msgid "Bei der Synchronisation des Repositories %{repo_name} konnte kein PackageDistr-Eintrag für das Paket %{package_name} gefunden werden."
 msgstr "While the synchronization of the repository %{repo_name} no PackageDistr-entry for the package %{package_name} could be found."
+
+#: allgemeinbildung_imprint
+msgid "Amtsgericht Bremen VR 6055<br />Finanzamt Bremen-Mitte, Steuer-Nr. 71-608-10747; Spenden sind steuerlich absetzbar<br />Vorstand: Carolin Oslath, ViSdP: Till Mossakowski"
+msgstr ""
 
 #: view_home_about_12
 msgid "<b>Bündel verwalten</b> auf der linken Seitenleiste gibt dir einen Überblick über die verfügbaren Bündel. Schließlich gibt es unter <b>Ubuntu-Versionen</b> eine Übersicht über die im System verfügbaren Ubuntu-Versionen (Distributionen)."
@@ -3997,6 +4044,9 @@ msgstr "BUNDLE"
 #: install
 msgid "Installieren"
 msgstr "Install"
+
+#~ msgid "Hilfe/FAQ"
+#~ msgstr "Help/FAQ"
 
 #~ msgid ""
 #~ "Bei Fragen und Anregungen bitten wir Dich bei uns zu melden.\n"

@@ -1,4 +1,4 @@
 # desc "Explaining what the task does"
-# task :acts_as_rateable do
+# task :acts_as_ratable do
 #   # Task goes here
 # end

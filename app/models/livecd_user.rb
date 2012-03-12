@@ -19,6 +19,7 @@
 # database fields: 
 # livecd_id
 # user_id
+# locale
 
 class LivecdUser < ActiveRecord::Base
   belongs_to :livecd

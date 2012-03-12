@@ -16,9 +16,11 @@
 
 
 class UsersController < ApplicationController
+  # Be sure to include AuthenticationSystem in Application Controller instead
   
+
   def title
-    t(:view_layouts_application_21)
+    t(:headline)
   end 
   layout 'application'
   
@@ -27,30 +29,19 @@ class UsersController < ApplicationController
   before_filter :check_administrator_role, :only => [:index, :destroy, :enable, :disable, :user_statistics, :spam_users_delete], :add_flash => { :notice => I18n.t(:no_admin) }
   
   helper :users
-    
-  def index
-    @users = User.find_users(params[:page])                        
-    @u = User.find(:all, :conditions => {:anonymous => false, :enabled => true})
-  end
   
-  #This show action only allows users to view their own profile
-  def show
-    @user = User.find(params[:id])
-    @metas_user = @user.metapackages
-    userlog = Userlog.find(:last, :conditions => {:user_id => params[:id]})
-    if userlog == nil
-      @last_action = @user.updated_at
-    else
-      @last_action = userlog.created_at
-    end
-  end
-    
+  
+  # Protect these actions behind an admin login
+  # before_filter :admin_required, :only => [:suspend, :unsuspend, :destroy, :purge]
+  before_filter :find_user, :only => [:suspend, :unsuspend, :destroy, :purge]
+  
+
   # render new.rhtml
   def new
     @user = User.new
   end
- 
-  def create
+  
+  def create_Rails2
     cookies.delete :auth_token
     @user = User.new(params[:user])
     browser_dist = Distribution.browser_distribution(request.env['HTTP_USER_AGENT'])    
@@ -83,16 +74,16 @@ class UsersController < ApplicationController
   def anonymous_login
     do_anonymous_login
     # prevent redirection to login page, which would give an error
-    if request.env["HTTP_REFERER"] == nil
+    if session[:backlink] == nil
       redirect_to "/home"
-    elsif request.env["HTTP_REFERER"].include?("session/new")
+    elsif session[:backlink].include?("session/new")
       redirect_to "/home"
     else
-      redirect_to :back
+      redirect_to session[:backlink]
     end  
   rescue ActiveRecord::RecordInvalid
     # release lock
-    system "dotlockfile -u " + Rails.root.to_s+"/anolock"
+    system "dotlockfile -u #{RAILS_ROOT}/anolock"
     flash[:error] = t(:controller_users_4)
     render :action => 'new'
   end
@@ -107,7 +98,7 @@ class UsersController < ApplicationController
 
   def spam_users_delete
    # delete the spam users - only for manual start
-   system("grep -C 10 \"No action responded to users\" "+Rails.root.to_s+"/log/production.log|grep -o [A-Za-z0-9_-]*@[A-Za-z0-9_.-]* > ~/spam_users.txt")
+   system("grep -C 10 \"No action responded to users\" #{RAILS_ROOT}/log/production.log|grep -o [A-Za-z0-9_-]*@[A-Za-z0-9_.-]* > ~/spam_users.txt")
     f = File.open('/home/communtu/web2.0/spam_users.txt')  
       while not f.eof? do  
           email = f.gets
@@ -155,7 +146,7 @@ class UsersController < ApplicationController
     end
   end
   
-  def destroy
+  def destroy_Rails2
     @user = User.find(params[:id])
     if @user.update_attribute(:enabled, false)
       flash[:notice] = t(:controller_users_8)
@@ -215,9 +206,86 @@ class UsersController < ApplicationController
     @user = User.find_by_login(params[:login])
     if @user.nil? then
         flash[:error] = t(:user_not_found)
-        redirect_to :back
+        redirect_to session[:backlink]
     else
         redirect_to :action => :show, :id => @user.id
     end
   end
+
+  def index
+    @users = User.find_users(params[:page])                        
+    @u = User.find(:all, :conditions => {:anonymous => false, :enabled => true})
+  end
+ 
+   #This show action only allows users to view their own profile
+  def show
+    @user = User.find(params[:id])
+    @metas_user = @user.metapackages
+    userlog = Userlog.find(:last, :conditions => {:user_id => params[:id]})
+    if userlog == nil
+      @last_action = @user.updated_at
+    else
+      @last_action = userlog.created_at
+    end
+  end
+
+###################################### below is rails3 code
+
+  def create
+    logout_keeping_session!
+    @user = User.new(params[:user])
+    @user.register! if @user && @user.valid?
+    success = @user && @user.valid?
+    if success && @user.errors.empty?
+      redirect_back_or_default('/', :notice => "Thanks for signing up!  We're sending you an email with your activation code.")
+    else
+      flash.now[:error]  = "We couldn't set up that account, sorry.  Please try again, or contact an admin (link is above)."
+      render :action => 'new'
+    end
+  end
+
+  def activate
+    logout_keeping_session!
+    user = User.find_by_activation_code(params[:activation_code]) unless params[:activation_code].blank?
+    case
+    when (!params[:activation_code].blank?) && user && !user.active?
+      user.activate!
+      redirect_to '/login', :notice => "Signup complete! Please sign in to continue."
+    when params[:activation_code].blank?
+      redirect_back_or_default('/', :flash => { :error => "The activation code was missing.  Please follow the URL from your email." })
+    else 
+      redirect_back_or_default('/', :flash => { :error  => "We couldn't find a user with that activation code -- check your email? Or maybe you've already activated -- try signing in." })
+    end
+  end
+
+  def suspend
+    @user.suspend! 
+    redirect_to users_path
+  end
+
+  def unsuspend
+    @user.unsuspend! 
+    redirect_to users_path
+  end
+
+  def destroy
+    @user.delete!
+    redirect_to users_path
+  end
+
+  def purge
+    @user.destroy
+    redirect_to users_path
+  end
+  
+  # There's no page here to update or destroy a user.  If you add those, be
+  # smart -- make sure you check that the visitor is authorized to do so, that they
+  # supply their old password along with a new one to update it, etc.
+
+  protected
+
+  def find_user
+    @user = User.find(params[:id])
+  end
+
 end

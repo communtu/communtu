@@ -1,104 +1,42 @@
---- 
-admin:
-  salt: 9fffdbcff6fcdf6bae610e7684262344e5cfeab8
-  activated_at: 2008-04-16 14:35:26
-  created_at: 2008-04-16 16:35:26
-  template_id: "19"
-  security: "2"
-  remember_token_expires_at: 
-  crypted_password: 4d977ee5a36c75df6c25714bcc21b2c111ef9ef5
-  license: "1"
-  password_reset_code: 
-  updated_at: 2009-07-10 18:22:50
-  anonymous: "0"
-  profile_version: "11"
-  first_login: "0"
-  distribution: one
-  activation_code: 
-  enabled: "1"
-  language_id: "1"
-  firstname: ""
-  remember_token: 
-  surname: ""
-  login: admin
-  profile_changed: "1"
-  derivative: one
-  email: info@communtu.de
-quentin: 
-  salt: cf49e5cb12455dddff86160d6630a32f6ebce464
-  activated_at: 2008-04-25 17:13:07
-  created_at: 2008-04-25 17:13:07
-  template_id: 
-  security: "2"
-  remember_token_expires_at: 
-  crypted_password: 080108dffe93cc3d0593ddebe415fc3c7033cb12
-  license: "1"
-  password_reset_code: 
-  updated_at: 2009-05-22 17:55:37
-  anonymous: "0"
-  profile_version: "3"
-  first_login: "0"
-  distribution: two
-  activation_code: 218a176ea794466205616e05e4280571cf6af8ea
-  enabled: "1"
-  language_id: "1"
-  firstname: ""
-  remember_token: 
-  surname: ""
-  login: quentin
-  profile_changed: "1"
-  derivative: two
-  email: quentin@quentin.de
-one: 
-  salt: 2af6ade6fc8084691eb6abbef56767e25f1d2fac
-  activated_at: 2008-04-26 12:49:19
-  created_at: 2008-04-26 12:49:19
-  template_id: "19"
-  security: "2"
-  remember_token_expires_at: 
-  crypted_password: bd46d4e99edec91457a50342d02c0c9b8043e657
-  license: "1"
-  password_reset_code: 
-  updated_at: 2009-05-20 17:16:30
-  anonymous: "0"
-  profile_version: "11"
-  first_login: "0"
-  distribution: three
-  activation_code: e9a07ebb63df899856c47914e5b732ec36c85ff1
-  enabled: "1"
-  language_id: "1"
-  firstname: ""
-  remember_token: 
-  surname: ""
-  login: test
-  profile_changed: "0"
-  derivative: three
-  email: info@toddy-franz.de
 
+quentin:
+  id:                        1
+  login:                     quentin
+  email:                     quentin@example.com
+  salt:                      356a192b7913b04c54574d18c28d46e6395428ab # SHA1('0')
+  crypted_password:          6480dd200db2719d431c7a25b133887ad8b46551 # 'monkey'
+  created_at:                <%= 5.days.ago.to_s :db  %>
+  remember_token_expires_at: <%= 1.days.from_now.to_s %>
+  remember_token:            77de68daecd823babbb58edb1c8e14d7106e83bb
+  activation_code:           
+  activated_at:              <%= 5.days.ago.to_s :db %>
+  state:                     active
+      
 aaron:
-  id:                        4
+  id:                        2
   login:                     aaron
   email:                     aaron@example.com
   salt:                      da4b9237bacccdf19c0760cab7aec4a8359010b0 # SHA1('1')
-  crypted_password:          c92122a33d3cc8d9a1ab6f6f1d6f8c29638328dc # 'monkey'
+  crypted_password:          8e6d13aebda15f4c76601e8e4d2178a91b53c6f0 # 'monkey'
   created_at:                <%= 1.days.ago.to_s :db %>
-  remember_token_expires_at:
-  remember_token:
-  salt: 2af6ade6fc8084691eb6abbef56767e25f1d2fac
-  activated_at: 2008-04-26 12:49:19
-  template_id: "19"
-  security: "2"
-  license: "1"
-  password_reset_code:
-  updated_at: 2009-05-20 17:16:30
-  anonymous: "0"
-  profile_version: "11"
-  first_login: "0"
-  distribution: one
-  activation_code: e9a07ebb63df899856c47914e5b732ec36c85ff1
-  enabled: "1"
-  language_id: "1"
-  firstname: ""
-  surname: ""
-  profile_changed: "0"
-  derivative: two
+  remember_token_expires_at: 
+  remember_token:            
+  activation_code:           1b6453892473a467d07372d45eb05abc2031647a
+  activated_at:              
+
+  state:                     pending
+
+
+old_password_holder:
+  id:                        3
+  login:                     old_password_holder
+  email:                     salty_dog@example.com
+  salt:                      7e3041ebc2fc05a40c60028e2c4901a81035d3cd
+  crypted_password:          00742970dc9e6319f8019fd54864d3ea740f04b1 # test
+  created_at:                <%= 1.days.ago.to_s :db %>
+
+  activation_code:           
+  activated_at:              <%= 5.days.ago.to_s :db %>
+
+
+  state:                     active

@@ -34,7 +34,7 @@ class HomeController < ApplicationController
     elsif params[:action] == "donate"
       "Communtu: " + t(:view_home_donate)
     else
-      t(:view_layouts_application_21)
+      t(:headline)
     end 
   end
   protect_from_forgery :only => [:create, :update, :destroy] 
@@ -92,7 +92,7 @@ class HomeController < ApplicationController
     @form_name = params[:form][:name]
     @form_frage = params[:form][:frage]
     u = if logged_in? then current_user else User.first end
-    MyMailer.mail(@form_name, @form_frage, u).deliver
+    MyMailer.deliver_mail(@form_name, @form_frage, u)
     flash[:notice] = t(:controller_home_1)
     redirect_to params[:form][:backlink]
   end
@@ -100,14 +100,14 @@ class HomeController < ApplicationController
  def repo
      @form_name = params[:form][:name]
      @form_frage = params[:form][:frage]
-     MyMailer.repo(@form_name, @form_frage, current_user).deliver
+     MyMailer.deliver_repo(@form_name, @form_frage, current_user)
      flash[:notice] = t(:controller_home_5)
      redirect_to '/home'
  end                           
 
   def submit_mail
     @form_email = params[:form][:email]
-    MyMailer.mailerror(@form_email).deliver
+    MyMailer.deliver_mailerror(@form_email)
     flash[:notice] = t(:controller_home_2)
     redirect_to '/home'
   end
