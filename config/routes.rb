@@ -85,7 +85,7 @@ end
   
   end
 
-  match '/' => 'home#home_new'
+  root :to => 'home#home_new'
   resources :architectures
   resources :articles
   resources :categories do

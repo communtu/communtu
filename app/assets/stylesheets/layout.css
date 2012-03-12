@@ -1023,8 +1023,8 @@ a.download:hover, a.download:active{
 
 .content2{
 	position:relative;
-	left:26px;
-	width: 725px;
+/*	left:26px; */
+	width: 925px;
         padding-bottom:2em;
 	}
 .content1{
@@ -1036,7 +1036,7 @@ a.download:hover, a.download:active{
 	}
 .content{
 	position:relative;
-	width:75em;
+	width:925px;
 	}
 .content a{
 	color:#A33700;
@@ -1176,7 +1176,7 @@ a.download:hover, a.download:active{
 	background-repeat:no-repeat;
 	height:11.5em;
 	position:absolute;
-	width:72em;
+	width:925px;
 	z-index:3;
 	}
 

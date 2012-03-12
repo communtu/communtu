@@ -16,8 +16,8 @@ changeImg = (a, b) ->
 		$("#change_tag_" + b ).hover (->
 			$("#change_tag_" + b ).css "background-color", "rgb(255,220,155)"), ->
 			$("#change_tag_" + b ).css "background-color", "rgb(255,220,155)"	
-		$("#change_circle_" + a ).attr "src", "assets/circle.png"
-		$("#change_circle_" + b ).attr "src", "assets/circle_active.png"
+		$("#change_circle_" + a ).attr "src", "/assets/circle.png"
+		$("#change_circle_" + b ).attr "src", "/assets/circle_active.png"
 	)
 	imgNumber = b
 
