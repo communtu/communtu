@@ -11,7 +11,7 @@ UBUNTU_VERSION=$2
 # architecture: i386 or amd64
 ARCHITECTURE=$3
 # name of the resulting iso
-OUT=$4
+OUT=$PWD/$4.iso
 
 # mount the standard iso 
 ISO_FOLDER=/home/communtu/livecd/isos
@@ -40,11 +40,13 @@ TEMP=$(mktemp)
 unsquashfs -lls $LIVECD/casper/filesystem.squashfs | \
 grep -v " inodes " | grep -v "unsquashfs:" | \
 awk '{print $3}' | grep -v "," > $TEMP
+set +x
   for i in `cat $TEMP`
   do
     a=$(($a+$i))
   done
-  echo $a > $LIVECD/casper/filesystem.size
+set -x
+echo $a > $LIVECD/casper/filesystem.size
   
 # build iso
 pushd $LIVECD
