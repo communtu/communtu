@@ -1,0 +1,67 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.changeimg {
+	width: 925px;
+	height: 600px;
+}
+.change_tag {
+	background-color:white;
+	margin-top: 20px;
+	border-right: 1px rgb(255,220,155) solid;
+	border-top: 1px rgb(255,220,155) solid;
+	border-bottom: 1px rgb(255,220,155) solid;
+	background-color: rgba(255,225,175,0.7);
+	padding-left:10px;
+	width: 200px;
+	font-weight: 600;
+	line-height:30px;
+	cursor: pointer;
+	display: block;
+	text-decoration: none;
+	color: black;
+}
+.change_tag:hover {
+	background-color: rgb(255,220,155);	
+}
+.change_link {
+	position: absolute;
+	display: block;
+	width: 925px;
+	height: 600px;
+	cursor:pointer;
+	z-index:1;
+}
+
+.circle {
+	height: 17px;
+	margin-left: 40px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: inline;
+}
+
+
+#changeimg_box {
+	height:600px;
+	width:925px;
+	border: 3px rgb(255,220,155) inset;
+}
+#change_tags {
+	position: absolute;
+	padding-top: 40px;
+	padding-right: 10px;
+	height: 560px;
+	background-color: rgba(0,0,0,0.1);
+	z-index:2;
+	border-right: 2px rgba(0,0,0,0.1) inset;
+}
+#change_circles {
+	position: absolute;
+	margin-top: 550px;
+	text-align: center;
+	width: 925px;
+	z-index: 2;
+}

@@ -262,4 +262,8 @@ class DownloadController < ApplicationController
     @cd = current_user.current_livecd
     @back2 = !@cd.nil? and @cd.generated 
   end
+  
+  def livecd_new
+  end
+
 end

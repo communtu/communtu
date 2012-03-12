@@ -1,0 +1,15 @@
+<div id="changeimg_box">
+	<%= link_to image_tag("changeimg_0.png", :class => "changeimg"), "#online", :class => "change_link", :id => "changeimg_0" %>
+	<%= link_to image_tag("changeimg_1.png", :class => "changeimg"), "#post", :class => "change_link", :id => "changeimg_1", :style => "display:none" %>
+	<%= link_to image_tag("changeimg_2.png", :class => "changeimg"), "create/index", :class => "change_link", :id => "changeimg_2", :style => "display:none" %>
+	<div id="change_tags">
+		<%= link_to "Ubuntu Online", "#online", :class => "change_tag", :id => "change_tag_0", :onmouseover => "changeImgTo(0)", :style => "background-color: rgb(255,220,155)" %>
+		<%= link_to "Software nachinstallieren", "#post", :class => "change_tag", :id => "change_tag_1", :onmouseover => "changeImgTo(1)" %>
+		<%= link_to "LiveCD erstellen", "/downloads/livecd_new", :class => "change_tag", :id => "change_tag_2", :onmouseover => "changeImgTo(2)" %>
+	</div>	
+	<div id="change_circles">
+		<%= image_tag "circle_active.png", :class => "circle", :id => "change_circle_0", :onclick => "changeImgTo(0)" %>
+		<%= image_tag "circle.png", :class => "circle", :id => "change_circle_1", :onclick => "changeImgTo(1)" %>
+		<%= image_tag "circle.png", :class => "circle", :id => "change_circle_2", :onclick => "changeImgTo(2)" %>
+	</div>
+</div>

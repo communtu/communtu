@@ -1,8 +1,6 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    aasm (3.0.0)
-      activerecord
     actionmailer (3.1.1)
       actionpack (= 3.1.1)
       mail (~> 2.3.0)
@@ -113,7 +111,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  aasm
   acts_as_rateable
   coffee-rails (~> 3.1.1)
   execjs

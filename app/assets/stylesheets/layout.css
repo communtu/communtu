@@ -4,10 +4,10 @@
 body{ 	font-size:0.8em;
 	font-family:Verdana,Arial,Helvetica,sans-serif;
 	color:#451B00;
-	background-color:#fff;
-	margin:0;
-	padding:0;
-	/*height:95em; */
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 925px;
 	}
 
 #notice{color: green;}
@@ -1035,7 +1035,6 @@ a.download:hover, a.download:active{
         padding-bottom:2em;
 	}
 .content{
-	left:4.5em;
 	position:relative;
 	width:75em;
 	}
@@ -1176,8 +1175,7 @@ a.download:hover, a.download:active{
 	background-image:url(communtu_head.png);
 	background-repeat:no-repeat;
 	height:11.5em;
-	left:46px;
-	position:relative;
+	position:absolute;
 	width:72em;
 	z-index:3;
 	}

@@ -74,4 +74,21 @@ module DownloadHelper
   end           
   
 
+  def coords a, b
+    c = ""
+    for i in a..b
+      if i != a
+        c += ","
+      end
+      c += (230 + (Math.sin(i* Math::PI / 180)*226)).to_s()   
+      c += "," + (230 - (Math.cos(i* Math::PI / 180)*226)).to_s()  
+    end
+    b.downto(a) { |i|
+      c += "," + (230 + (Math.sin(i* Math::PI / 180)*70)).to_s()   
+      c += "," + (230 - (Math.cos(i* Math::PI / 180)*70)).to_s()  
+    }
+    return c
+  end
+  
+  
 end

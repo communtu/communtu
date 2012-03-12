@@ -12,7 +12,7 @@ gem 'mysql'
 gem 'acts_as_rateable'
 
 gem 'json'
-gem 'aasm'#, :require => 'aasm'
+#gem 'aasm'#, :require => 'aasm'
 
 # Gems used only for assets and not required
 # in production environments by default.

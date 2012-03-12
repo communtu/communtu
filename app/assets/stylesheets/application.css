@@ -1,7 +1,72 @@
 /*
- * This is a manifest file that'll automatically include all the stylesheets available in this directory
- * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
- * the top of the compiled file, but it's generally better to create a new file per style scope.
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
  *= require_self
- *= require_tree . 
 */
+
+.navigation {
+	width: 193px;
+	height: 44px;
+	float:left;
+	text-align: center;
+	font-weight: bold;
+	background-repeat: no-repeat;
+	padding-top: 8px;		
+	margin-left:2px;
+	margin-right:2px;
+}
+.navigation:hover {
+	margin-top:10px;
+}
+.navigation_link {
+	display: block;
+	height: 100%;
+}
+
+
+#top_navigation {
+	float:right;
+	margin-right:7px;
+}
+#status_navigation {
+	background-color:rgba(255,190,0,0.3);
+}
+#head {
+	position:absolute;
+	background-image: url("communtu_head.png");
+	background-repeat: no-repeat;
+	width: 925px;
+	height: 147px;
+	margin-bottom: -17px;
+	z-index:2;
+	top:0px;
+}
+
+#navigation_bar {
+	padding-top: 130px;
+	margin-left:173px;
+	height:54px;
+	margin-bottom:30px;
+}
+#navi_download{
+	background-image: url("navi_download.png");
+}
+#navi_bundle{
+	background-image: url("navi_bundle.png");
+}
+#navi_communtu{
+	background-image: url("navi_communtu.png");
+}
+
+#navigationlink_download, #navigationlink_bundle, #navigationlink_communtu{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
