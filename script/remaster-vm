@@ -21,7 +21,7 @@ sudo mount $ISO $ISOMOUNT -o loop
 
 # extract liveCD contents
 LIVECD=$(mktemp -d)
-rsync -a $ISOMOUNT $LIVECD --exclude filesystem.squashfs
+rsync -a $ISOMOUNT/ $ISOMOUNT/.disk $LIVECD --exclude filesystem.squashfs
 
 # mount first partition of vm image
 kpartx_out=$(sudo kpartx -av $VM_IMG |head -n +1)
