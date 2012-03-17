@@ -1,5 +1,12 @@
 #!/bin/bash
 # script for creating a live CD from a VM image
+# BEWARE: the VM image is slightly changed!!!
+
+# are we root?
+if [ `whoami` != root ]; then
+  echo "This script must be run as root."
+  exit 1
+fi
 
 set -e
 set -x
@@ -14,10 +21,11 @@ ARCHITECTURE=$3
 OUT=$PWD/$4.iso
 
 # mount the standard iso 
-ISO_FOLDER=/home/communtu/livecd/isos
+#ISO_FOLDER=/home/communtu/livecd/isos
+ISO_FOLDER=/home/till/isos
 ISO=$ISO_FOLDER/ubuntu-$UBUNTU_VERSION-desktop-$ARCHITECTURE.iso
 ISOMOUNT=$(mktemp -d)
-sudo mount $ISO $ISOMOUNT -o loop
+mount $ISO $ISOMOUNT -o loop
 
 # extract liveCD contents
 LIVECD=$(mktemp -d)
@@ -27,13 +35,25 @@ rsync -a $ISOMOUNT/ $ISOMOUNT/.disk $LIVECD --exclude filesystem.squashfs
 kpartx_out=$(sudo kpartx -av $VM_IMG |head -n +1)
 device=/dev/mapper/$(echo $kpartx_out |cut  -d " " -f 3)
 VM_MOUNT=$(mktemp -d)
-sudo mount $device $VM_MOUNT -o loop
+mount $device $VM_MOUNT -o loop
+
+# write casper configuration files
+cat  > $VM_MOUNT/etc/casper.conf << __END__
+# This file should go in /etc/casper.conf
+# Supported variables are:
+# USERNAME, USERFULLNAME, HOST, BUILD_SYSTEM
+
+export USERNAME="ubuntu"
+export USERFULLNAME="Live session user"
+export HOST="ubuntu"
+export BUILD_SYSTEM="Ubuntu"
+__END__
 
 # make squashfs file system from vm image
 chmod +w $LIVECD/casper
 chmod +w $LIVECD/casper/filesystem.size
-sudo mksquashfs $VM_MOUNT $LIVECD/casper/filesystem.squashfs
-sudo chmod 444 $LIVECD/casper/filesystem.squashfs
+mksquashfs $VM_MOUNT $LIVECD/casper/filesystem.squashfs
+chmod 444 $LIVECD/casper/filesystem.squashfs
 
 # Add filesystem size
 TEMP=$(mktemp)
@@ -57,7 +77,9 @@ mkisofs -r -V communtu_classic -cache-inodes -J -l \
 popd
 
 # cleanup
-sudo umount $ISO
+sudo umount $ISOMOUNT
 sudo umount $device
 sudo kpartx -d $VM_IMG
+sudo rm -rf $LIVECD
+sudo rm -rf $ISOMOUNR
 
