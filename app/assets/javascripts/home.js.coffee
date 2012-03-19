@@ -19,6 +19,12 @@ changeImg = (a, b) ->
 		$j("#change_circle_" + a ).attr "src", "/assets/circle.png"
 		$j("#change_circle_" + b ).attr "src", "/assets/circle_active.png"
 	)
+	$j("#preview_link" + a).css "background-color", "#e5c5b5"
+	$j("#preview_link" + a).css "border-top", "10px #eeeeee solid"
+	$j("#preview_link" + a).css "border-bottom", "15px #feb600 solid"
+	$j("#preview_link" + b).css "background-color", "#feb600"
+	$j("#preview_link" + b).css "border-top", "10px #feb600 solid"
+	$j("#preview_link" + b).css "border-bottom", "15px #feb600 solid"
 	imgNumber = b
 
 @changeImgTo = (number) ->
@@ -26,10 +32,10 @@ changeImg = (a, b) ->
 		window.clearInterval changeIntervalId
 		changeImg imgNumber, number
 		imgNumber = number
-		changeIntervalId = window.setInterval (-> changeImg imgNumber, (imgNumber+1)%3) , 5000 
+#		changeIntervalId = window.setInterval (-> changeImg imgNumber, (imgNumber+1)%3) , 10000 
 	
 	
 
 
 window.onload = -> 
-	changeIntervalId = window.setInterval (-> changeImg imgNumber, (imgNumber+1)%3) , 5000 
+	changeIntervalId = window.setInterval (-> changeImg imgNumber, (imgNumber+1)%3) , 10000 
