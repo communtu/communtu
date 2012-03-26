@@ -598,7 +598,7 @@ class MetapackagesController < ApplicationController
     redirect_to session[:backlink]
   end
   
-  def selection_new
+  def selection
     @categories=Category.all
     
     begin

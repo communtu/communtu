@@ -7,7 +7,7 @@
 <div id="bundles_column">
         <h2> Bündel </h2>
         <% for b in @bundles do %>
-                <div class="bundle">
+                <div class="bundle" id="<%= b.id %>" onmouseover="bundlePopup(this.id)">
                         <%= image_tag "apps/Metapackage.png" , :size=>"80x80" %> <br />                      
                         <%= b.name[0,12]+ if b.name.length>12 then "..." else "" end %>
                 </div>

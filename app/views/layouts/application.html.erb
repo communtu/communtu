@@ -110,7 +110,7 @@
 	<!-- button -->
 <% @style = if params[:controller] == "download" then "style='margin-top:10px'" else "" end %>	
 <div class="navigation" id="navi_download" <%= @style %>>
-	<%= link_to t(:view_layouts_application_24), "/download/start", :class => "navigation_link", :id => "navigationlink_download" %>
+	<%= link_to "Downloads", "/download/start", :class => "navigation_link", :id => "navigationlink_download" %>
 </div>
 
 <% if ((params[:controller] == "packages") or (params[:controller] == "users" and params[:action] == "metapackages") or (params[:controller] == "home" and params[:action] == "new_repository") or params[:controller] == "metapackages" or params[:controller] == "distributions" or params[:controller] == "repositories") 
@@ -122,7 +122,7 @@
 <% link = if @has_own_bundles.length != 0 then "index_mine" else "index" end %>
 
 <div class="navigation" id="navi_bundle" <%= @style %>>
-	<%= link_to t(:view_layouts_application_23), "/metapackages/selection_new", :class => "navigation_link", :id => "navigationlink_bundle" %>
+	<%= link_to "Bündel verwalten", "/metapackages/selection_new", :class => "navigation_link", :id => "navigationlink_bundle" %>
 </div>
 
 
@@ -135,7 +135,7 @@
  <% end %>
 
 	<div class="navigation" id="navi_communtu" <%= @style %>>
-	<%= link_to t(:view_layouts_application_25), "/home/about", :class => "navigation_link", :id => "navigationlink_communtu" %>
+	<%= link_to "Über uns", "/home/about", :class => "navigation_link", :id => "navigationlink_communtu" %>
 </div>
 		
 	<!-- user -->

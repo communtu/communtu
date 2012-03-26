@@ -155,6 +155,7 @@ end
       get :edit_new_or_cart
       get :changed
       get :install_current_bundle
+      get :selection
     end
   end
 
