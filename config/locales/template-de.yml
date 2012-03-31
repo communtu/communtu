@@ -908,7 +908,7 @@ de:
   view_user_profiles__installation_1: Um etwas installieren zu können, musst du zunächst unter "Softwareauswahl" etwas auswählen.
   view_user_profiles__installation_13: '(Bei einem Versionswechsel muss der erste Schritt erneut ausgeführt werden, da die Communtu Quellen durch das Upgrade deaktiviert wurden.):'
   view_user_profiles__installation_16: Quellen und Schlüssel eintragen
-  view_user_profiles__installation_17: Diesen Link einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer öffnen - wenn kein Prorgammdialog erscheint, wurde die Datei auf deinen Rechner heruntergeladen. Dort kannst du sie mit Doppelklick starten.
+  view_user_profiles__installation_17: Diesen Link einfach anklicken und dann wie vorgeschlagen mit dem Paket-Installer öffnen - wenn kein Progammdialog erscheint, wurde die Datei auf deinen Rechner heruntergeladen. Dort kannst du sie mit Doppelklick starten.
   view_user_profiles__installation_2: Aufgrund deiner Auswahl werden jetzt Programme auf deinem Computer installiert.
   view_user_profiles__installation_21: installieren der Metapakete. Bitte vorher die Quellen hinzufügen.
   view_user_profiles__installation_23: 'Es gibt zwei Alternativen:'
@@ -941,7 +941,7 @@ de:
   view_user_profiles__sources_0: Quellen für die zu installierenden Programme
   view_user_profiles__sources_1: Hier werden die zu installierenden Programme und Pakete nach den zugehörigen Quellen sortiert aufgelistet, so dass du auch sehen kannst, weshalb die jeweiligen Quellen hinzugefügt werden.
   view_user_profiles_help_0: Feststellen der Ubuntu-Version
-  view_user_profiles_help_1: Öffne ein Terminal unter "Anwendungen" -> "Zubehör" -> "Terminal
+  view_user_profiles_help_1: 'Öffne ein Terminal unter "Anwendungen" -> "Zubehör" -> "Terminal" oder wenn Du Unity mit Dash verwendest, klicke auf sie und gebe "Terminal" ein und klicke auf diese Anwendung.'
   view_user_profiles_help_2: 'Gebe dort ein: '
   view_user_profiles_help_3: 'Wenn deine Version von Communtu nicht unterstützt wird, gibt es zwei Möglichkeiten:'
   view_user_profiles_help_4: du machst ein Upgrade auf eine neuere Version
