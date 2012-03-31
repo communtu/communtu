@@ -1,4 +1,4 @@
-<% #  hhh(c) 2008-2010 by Verein Allgemeinbildung e.V., Bremen, Germany
+<% #  (c) 2008-2010 by Verein Allgemeinbildung e.V., Bremen, Germany
    # This file is part of Communtu.
 
    # Communtu is free software: you can redistribute it and/or modify
@@ -81,15 +81,6 @@
     <% end %>
   </div><!-- END register DIV -->
 	
-  <!--<div id=global_search>
-  	<% form_tag "/search", :method => 'get' do %>
-      <p>
-        <%= text_field_tag :search, params[:search] %>
-        <%= submit_tag "Search", :name => nil %>
-      </p>
-    <% end %>
-  </div>-->
-	
 </div>
 
 <!-- mainnavigation -->
@@ -132,17 +123,7 @@
 </div>
 <!-- content -->
 <div class="content">
-<!--
-<% if logged_in? %>
-<div align="right">
-<font size="-3"><%= link_to t(:view_layouts_application_14), '/home/contact_us' %>&nbsp;&nbsp;&nbsp;<%=t(:view_layouts_application_15)%>
-	<%= link_to current_user.login, user_path(current_user.id) %>
-	<%= link_to image_tag("16-member.png", :border => '0', :title => current_user.login, :alt => current_user.login), user_path(current_user.id) %>
-</font>
-	<%= new_message? ? link_to(image_tag("message_rollover.png", :alt=>t(:view_layouts_application_16),:title=>t(:view_layouts_application_16), :border=>"0"), '/inbox') : link_to(image_tag("message.png", :alt=>t(:view_layouts_application_18),:title=>t(:view_layouts_application_18), :border=>"0"), '/inbox') %>
-</div>
-<% end %>
--->
+
 <% if ((params[:controller] == "home" and params[:action] != "home") and (params[:controller] == "home" and params[:action] != "new_repository")) %>
 <%= render(:partial => 'navi_communtu') %>
 <div class="content1"> 
