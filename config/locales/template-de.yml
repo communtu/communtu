@@ -417,6 +417,7 @@ de:
   passwd_no_match: Das neue Passwort stimmt nicht mit der Bestätigung überein.
   path: 'Pfad:'
   please_create_cd: Bitte erst ein iso erstellen
+  please_insert_content: Bitte fülle die Felder aus.
   predecessor: Vorgänger
   preliminary_distribution: Vorläufige Distribution
   prepare_livecd: LiveCD/DVD vorbereiten (script/remaster-getisos)
