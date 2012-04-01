@@ -231,8 +231,8 @@ end
 
   def possible_distributions
     if self.advanced
-       then Distribution.find_all_by_invisible(false)
-       else Distribution.find_all_by_preliminary_and_invisible(false,false) 
+       then Distribution.find_all_by_invisible(false, :order => "short_name DESC")
+       else Distribution.find_all_by_preliminary_and_invisible(false,false, :order => "short_name DESC") 
     end
   end
 
