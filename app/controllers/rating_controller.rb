@@ -25,9 +25,11 @@ class RatingController < ApplicationController
       @last_id = @last_trans.translatable_id
       @l = @last_id + 1
       t.contents = params[:rating][:comment]
+      t.contents = t.contents.gsub(/<\/?[^>]*>/, "")
       t.translatable_id = @l
       t.language_code = I18n.locale.to_s
       t.save                                
+      #@comment_value = strip_tags('params[:rating][:comment]');
       @metapackage.add_rating Rating.new(:rating => params[:user_rating], :user_id => current_user.id, :comment => params[:rating][:comment], :comment_tid => @l)
     end  
     if request.env["HTTP_REFERER"] == ""
