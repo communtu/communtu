@@ -89,12 +89,19 @@ class HomeController < ApplicationController
   end
   
  def email
+    if params[:form] == nil
+       redirect_to '/home/contact_us'
+    elsif params[:form][:name] == "" or params[:form][:frage] == ""
+       flash[:error] = t(:please_insert_content)
+       redirect_to '/home/contact_us'
+    else
     @form_name = params[:form][:name]
     @form_frage = params[:form][:frage]
     u = if logged_in? then current_user else User.first end
     MyMailer.deliver_mail(@form_name, @form_frage, u)
     flash[:notice] = t(:controller_home_1)
-    redirect_to params[:form][:backlink]
+    redirect_to '/home'
+    end
   end
 
  def repo
