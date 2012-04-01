@@ -2,6 +2,8 @@
 de:
   Kommentar: 'Kommentar: '
   about_us: Über uns
+  about_us_text_1: Communtu ist ein freies Projekt, dessen Wurzeln in Bremen liegen. Communtus Ursprung liegt bei den regelmäßigen Installationsparties, welche im Zentrum für solidarische Ökonomie in Bremen stattfinden. Bei diesen Parties helfen wir bei der Aktualisierung oder der (Parallel-)Installation von Ubuntu. Der Grundgedanke bei Communtu war, für Einsteiger eine Ubuntu-Installation mit allen benötigten Pakten (wie z.B. Multimedia) auf einfache Weise individuell konfigurierbar bereitzustellen. 
+  about_us_text_2: Im Frühjahr 2008 war der erste Start von Communtu. In den Anfängen war nur der Bündeleditor vorhanden sowie das Herunterladen des erstellten Bündels. Später kam dann das Hochladen von Paketlisten hinzu. Das ist nützlich, um die aktuelle Softwareinstallation zu sichern und anschließend wieder zu installieren, z.B. nachdem eine neue Ubuntu-Version installiert wurde. Im Sommer 2009 begann die Übersetzung in die englische Sprache. Im Januar 2010 bekam Communtu ein neues Aussehen, unser Maskottchen Conny und die englische Version gingen online. Auf den Chemnitzer Linuxtagen 2010 stellten wir den ersten Prototypen der individuellen Live-CD vor, was dann im Sommer 2010 auf dem Linuxtag Berlin für alle Benutzer zugänglich geschaltet wurde. 
   achtung: Achtung! bei Communtu erst in Kürze verfügbar.
   action_needs_login: Für diesen Bereich ist ein Login erforderlich, damit die Konfiguration gespeichert werden kann.
   add: hinzufügen
