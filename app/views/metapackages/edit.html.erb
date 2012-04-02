@@ -26,10 +26,10 @@
         <tr>
 	        <td><%=t(:name_with_colon)%></td>
 	        <% if @metapackage.is_published? and !is_admin? then %>
-              <td><%= @metapackage.name %></td>	
+              <td><%= @metapackage.name %>	
             <% else %>
-              <td><input id="metapackage_name" name="metapackage[name]" size="16" type="text" value="<%= @name %>" /></td>
-            <% end  %></tr>
+              <td><input id="metapackage_name" name="metapackage[name]" size="16" type="text" value="<%= @name %>" />
+            <% end  %>   <a class="tt">(?)<span class="tooltip"><span class="top"/><span class="middle"><%=t(:choose_a_title)%></span><span class="bottom"/></span></span></span></a></td></tr>
             <% if (@metapackage.name_english == "" or @metapackage.name_english == nil or is_admin?) and I18n.locale.to_s != "en" %>
               <tr>
               <td><%=t(:english_name)%></td>
@@ -44,14 +44,13 @@
             <% end %>
         <tr>
 	        <td><%=t(:view_metapackages_show_version)%></td>
-	        <td><%= f.text_field(:version, { :size => 16}) %></td><td></td>	
+	        <td><%= f.text_field(:version, { :size => 16}) %>     <a class="tt">(?)<span class="tooltip"><span class="top"/><span class="middle"><%=t(:view_metapackages_edit_2)%></span><span class="bottom"/></span></span></span></a></td><td></td>	
         </tr>
-       <tr><td></td><td colspan="2"><%=t(:view_metapackages_edit_2)%></td></tr>
         <tr>
 	        <td><%=t(:category_with_colon)%></td>
 	        <td>
 	        	<% @categories = Category.find(:all, :order => "name")%>
-		        <%= f.collection_select(:category_id,@categories,:id,:name,{:include_blank => t(:choose_category)})%>
+		        <%= f.collection_select(:category_id,@categories,:id,:name,{:include_blank => t(:choose_category)})%> <a class="tt">(?)<span class="tooltip"><span class="top"/><span class="middle"><%=t(:choose_a_category)%></span><span class="bottom"/></span></span></span></a> 
 	        </td><td></td>
         </tr>
         <tr>
