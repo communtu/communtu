@@ -67,7 +67,9 @@ module ApplicationHelper
       out << "<span id='" << key.to_s << "'>" << value << "</span><br/>"
     end
     
-    "<div class='flash'>" << out << "</div>" if not out.empty?
+    out = "<div class='flash'>" << out << "</div>" if not out.empty?
+    
+    return out.html_safe
   end
     
   def change_date_time(datum) 

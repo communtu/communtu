@@ -74,7 +74,11 @@ end
                     :length     => { :within => 3..40 },
                     :format     => { :with => Authentication.login_regex, :message => Authentication.bad_login_message }
 
-  validates :name,  :format     => { :with => Authentication.name_regex, :message => Authentication.bad_name_message },
+  validates :firstname,  :format     => { :with => Authentication.name_regex, :message => Authentication.bad_name_message },
+                    :length     => { :maximum => 100 },
+                    :allow_nil  => true
+                    
+  validates :surname,  :format     => { :with => Authentication.name_regex, :message => Authentication.bad_name_message },
                     :length     => { :maximum => 100 },
                     :allow_nil  => true
 
@@ -102,7 +106,7 @@ end
   # HACK HACK HACK -- how to do attr_accessible from here?
   # prevents a user from submitting a crafted form that bypasses activation
   # anything else you want your user to change should be added here.
-  attr_accessible :login, :email, :name, :password, :password_confirmation
+  attr_accessible :login, :email, :firstname, :surname, :password, :password_confirmation
 
   # Authenticates a user by their login name and unencrypted password.  Returns the user or nil.
   #
@@ -124,12 +128,7 @@ end
     write_attribute :email, (value ? value.downcase : nil)
   end
 
-  protected
-    
-  def make_activation_code
-        self.deleted_at = nil
-        self.activation_code = self.class.make_token
-  end
+
 
 ## below from Rails2 branch
 
@@ -575,8 +574,14 @@ end
   end
 
   protected
+      
+  def make_activation_code
+        self.deleted_at = nil
+        self.activation_code = self.class.make_token
+  end
   
   # before filter
+
   def encrypt_password
     return if password.blank?
     self.salt = Digest::SHA1.hexdigest("--#{Time.now.to_s}--#{login}--") if new_record?
