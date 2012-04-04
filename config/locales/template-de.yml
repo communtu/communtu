@@ -165,6 +165,8 @@ de:
   controller_users_6: Benutzerdaten übernommen und Benutzerkonto dauerhaft gemacht.
   controller_users_8: Benutzer deaktiviert
   controller_users_9: Es gab ein Problem mit der Deaktivierung dieses Benutzers.
+  count_users: Anzahl der User
+  count_repositories: Anzahl der Repositories
   create: Anlegen
   create_livecd: CD erstellen
   create_livecd_bundlepage: Möchte man hingegen nur ein bestimmtes Bündel, z. B. ein eigenes, nicht veröffentlichtes Bündel, erstellen, so muss das Bündel über <b>Bündel -&gt; Meine Bündel</b> oder <b>Veröffentlichte Bündel</b> gesucht werden. Mit einem Klick auf das CD-Symbol rechts unter Installieren wird man zum Dialogfeld für die Live-CD. Mit einem Klick auf <b>Live-CD/DVD erstellen</b> wird die Live-CD aus dem Bündel erstellt.
@@ -182,6 +184,7 @@ de:
   create_your_livedvd: Erstelle dir eine Live-CD/DVD
   create_your_livedvd_or_usb: Live-CD/DVD oder USB-Stick erstellen
   create_your_usb: Erstelle dir einen USB-Stick
+  created_cds: Erstellte LiveCDs
   creation_error: Bei der Erstellung des Pakets ist ein Fehler aufgetreten.
   creation_failed: Erzeugung fehlgeschlagen
   creation_in_progress: wird gerade erstellt
