@@ -74,7 +74,7 @@ msgstr "e-mail"
 
 #: controller_accounts_2
 msgid "Aktivierungs-Code nicht gefunden. Bitte versuche, ein neues Benutzerkonto anzulegen."
-msgstr "Could'nt find the activation code. Please try to create a new account."
+msgstr "Could'nt find activation code. Please try to create a new account."
 
 #: view_home_beteiligung_12
 msgid "Programmierung"
@@ -133,9 +133,8 @@ msgid "uns"
 msgstr "us"
 
 #: view_layouts_application_30
-#, fuzzy
 msgid "Hilfe/Kontakt"
-msgstr "Contact"
+msgstr "contact"
 
 #: create_your_livedvd_or_usb
 msgid "Live-CD/DVD oder USB-Stick erstellen"
@@ -346,9 +345,8 @@ msgid "Distribution aktualisiert."
 msgstr "Distribution updated."
 
 #: install_apt_get
-#, fuzzy
 msgid "Pakete über apt-get installieren:"
-msgstr "Install package"
+msgstr "Install package using apt-get"
 
 #: view_user_profiles__installation_30
 msgid "Hinweis: Bitte .deb-Dateien nicht umbenennen."
@@ -2535,9 +2533,8 @@ msgid "Abmelden"
 msgstr "Log out"
 
 #: livecd_no_name
-#, fuzzy
 msgid "Der Name der LiveCD/DVD fehlt"
-msgstr "Name of the Live-CD/DVD:"
+msgstr "LiveCD/DVD name missing"
 
 #: bundles_with_errors
 msgid "Bündel mit Fehlern"
@@ -2605,7 +2602,7 @@ msgstr "Repository updated."
 
 #: conflicts
 msgid "Konflikte"
-msgstr ""
+msgstr "conflicts"
 
 #: view_user_mailer_forgot_password_0
 msgid ", um ein neues Passwort zu erhalten, folge dem Link:"
@@ -2817,7 +2814,7 @@ msgstr "Installation of bundle %{name}"
 
 #: install_apt_get_repos
 msgid "Liste der benötigten Quellen, für die /etc/apt/sources.list:"
-msgstr ""
+msgstr "list of required sources for /etc/apt/sources.list:"
 
 #: vm_no_iso_found
 msgid "Die virtuelle Maschine kann nicht gestartet werden: es wurde kein Iso-Abbild gefunden"
@@ -2836,9 +2833,8 @@ msgid "Diese Funktion ist für Gäste nicht verfügbar."
 msgstr "This function is not available for guests."
 
 #: livecd_email_body_failed
-#, fuzzy
 msgid "Deine bei uns erstellte Live-CD/DVD bzw. das ISO Image für die Erstellung einer Live-Cd/DVD oder USB Stick %{name} konnte leider nicht erstellt werden. Wir kümmern uns um das Problem."
-msgstr "Your created ISO file %{name} for a Live-CD/DVD or USB key couldn't be created. We will solve the problem."
+msgstr "The ISO file %{name} for a Live-CD/DVD or USB key couldn't be created. We will solve the problem."
 
 #: view_repositories_show_6
 msgid "        OpenSource"
@@ -2857,7 +2853,6 @@ msgid "erstellte Bündel"
 msgstr "Created bundles"
 
 #: bundles_with_conflicts
-#, fuzzy
 msgid "Bündel mit Konflikten"
 msgstr "Bundles with errors"
 
@@ -3094,9 +3089,8 @@ msgid "Archiv"
 msgstr "archive"
 
 #: compute_conflicts
-#, fuzzy
 msgid "Konflikte neu berechnen"
-msgstr "Conflicts inside bundles"
+msgstr "Refresh conficts"
 
 #: controller_sessions_4
 msgid "Du wurdest abgemeldet."
@@ -3376,7 +3370,7 @@ msgstr "Mailinglists:"
 
 #: illformed_version
 msgid "Die Versionsnummer darf nur Buchstaben, Zahlen und .+:~ enthalten und muss mit einer Zahl beginnen. "
-msgstr ""
+msgstr "The version may contain only letters, numbers and .+:~ and it must begin with a number."
 
 #: view_home_auth_error_1
 msgid "Die Daten, die du an Communtu geschickt hast, konnten nicht korrekt authentifiziert werden. Bitte versuche, dich noch einmal anzumelden bzw. das entsprechende Formular noch einmal auszufüllen. Dies kann daher kommen, dass du deine Cookies nicht aktiviert hast."
@@ -3419,7 +3413,6 @@ msgid "Das Live-CD-Feature wurde abgeschaltet. Siehe config/settings.yml."
 msgstr "Creation of Live-CDs is disabled. Check config/settings.yml."
 
 #: contact_form
-#, fuzzy
 msgid "Kontaktformular"
 msgstr "Feedback"
 
@@ -3575,7 +3568,7 @@ msgstr "While the synchronization of the repository %{repo_name} no PackageDistr
 
 #: allgemeinbildung_imprint
 msgid "Amtsgericht Bremen VR 6055<br />Finanzamt Bremen-Mitte, Steuer-Nr. 71-608-10747; Spenden sind steuerlich absetzbar<br />Vorstand: Carolin Oslath, ViSdP: Till Mossakowski"
-msgstr ""
+msgstr "Local Court Bremen VR 6055<br />tax office Bremen-Mitte, tax number 71-608-10747; donations are tax deductible<br />chairperson: Carolin Oslath, ViSdP (Person responsible according to the German Press Law): Till Mossakowski"
 
 #: view_home_about_12
 msgid "<b>Bündel verwalten</b> auf der linken Seitenleiste gibt dir einen Überblick über die verfügbaren Bündel. Schließlich gibt es unter <b>Ubuntu-Versionen</b> eine Übersicht über die im System verfügbaren Ubuntu-Versionen (Distributionen)."
