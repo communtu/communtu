@@ -1,13 +1,5 @@
 Communtu::Application.routes.draw do
 
-resources :users do
-      member do
-        put :suspend
-        put :unsuspend
-        delete :purge
-      end
-end
-
   resource :session, :only => [:new, :create, :destroy]
 
   match 'signup' => 'users#new', :as => :signup
@@ -203,15 +195,18 @@ end
   match '/download/bundle_to_livecd' => 'download#bundle_to_livecd'
   match '/users/anonymous_login' => 'users#anonymous_login'
   resources :users do
-  
     member do
-  put :search
-  get :anonymous_login
-  put :enable
-  end
-      resource :account
-    resources :roles
-  end
+      put :search
+      get :anonymous_login
+      put :enable
+      put :suspend
+      put :unsuspend
+      delete :purge  
+    end
+  end  
+  
+  resource :account
+  resources :roles
 
   match '/users/:id/destroy' => 'users#destroy'
   match '/users/:id/selfdestroy' => 'users#selfdestroy'

@@ -94,30 +94,3 @@
     width:110px;
     height:130px;
 }
-
-/*
-copied from layout.css
-*/
-
-.secondnavi{
-	background-image:url(/images/communtu_unternavi.png);
-	background-repeat:no-repeat;
-	height:4em;
-	left:0;
-	padding-left:4em;
-	padding-top:3.7em;
-	position:relative;
-	top:-5em;
-	width:75em;
-	z-index:1;
-	}
-.secondnavi a:link,.unternavi a:visited,.unternavi a:active{
-	color:#451B00;
-	font-weight:normal;
-	text-decoration: underline;
-	}
-.secondnavi a:hover{
-	color:#451B00;
-	font-weight:normal;
-	text-decoration: none;
-	}
