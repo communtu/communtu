@@ -110,7 +110,6 @@ Communtu::Application.routes.draw do
   match '/contact_us' => 'home#contact_us'
   match '/cancel' => 'home#cancel'
   match '/success' => 'home#success'
-  match '/users/spam_users_delete' => 'users#spam_users_delete'
   resources :livecds do
   
     member do
@@ -193,7 +192,12 @@ Communtu::Application.routes.draw do
   match '/download/create_livecd/:id' => 'download#create_livecd'
   match '/download/test_livecd/:id' => 'download#test_livecd'
   match '/download/bundle_to_livecd' => 'download#bundle_to_livecd'
+  match '/users/spam_users_delete' => 'users#spam_users_delete'
   match '/users/anonymous_login' => 'users#anonymous_login'
+#  match "/users/:id" => "users#show"
+  match '/users/:id/destroy' => 'users#destroy'
+  match '/users/:id/selfdestroy' => 'users#selfdestroy'
+#  match '/users/:id/show' => 'users#show'
   resources :users do
     member do
       put :search
@@ -208,9 +212,6 @@ Communtu::Application.routes.draw do
   resource :account
   resources :roles
 
-  match '/users/:id/destroy' => 'users#destroy'
-  match '/users/:id/selfdestroy' => 'users#selfdestroy'
-  match '/users/:id/show' => 'users#show'
   match '/activate/:id' => 'accounts#show', :as => :activate
   match '/forgot_password' => 'passwords#new', :as => :forgot_password
   match '/reset_password/:id' => 'passwords#edit', :as => :reset_password

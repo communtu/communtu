@@ -9,7 +9,7 @@
         <% for b in @bundles do %>
                 <div class="bundle" id="<%= b.id %>" onmouseover="bundlePopup(this.id)">
                         <%= image_tag "apps/Metapackage.png" , :size=>"80x80" %> <br />                      
-                        <%= b.name[0,12]+ if b.name.length>12 then "..." else "" end %>
+                        <%= link_to(b.name[0,12]+ if b.name.length>12 then "..." else "" end,metapackage_path(b.id)) %>
                 </div>
                 
         <% end %>

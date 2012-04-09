@@ -72,7 +72,9 @@
 <div id="list_nextto_conni">
 <% u = User.find(:last, :conditions => {:anonymous => false}) %>
 <h3><%=t(:hello)%></h3>
-<%=t(:last_user)%> <strong><%= link_to( u.login, user_path(u.id)) %> <%= image_tag("icon_user.png") %>.</strong>
+<%=t(:last_user)%> <strong><%= link_to(
+ u.login, "/users/show/#{u.id}") %>
+ <%= image_tag("icon_user.png") %>.</strong>
 </div>
 
 <div class="best_buendle">
@@ -106,7 +108,7 @@
 				<% css = cycle("packageList0", "packageList1") %>
 				<tr>
         	<td class="<%= css %>" valign="middle">
-						<%= link_to metapackage.name, metapackage_path(metapackage) %>
+						<%= link_to metapackage.name, "/metapackages/#{metapackage.id}" %>
 					</td>
 					<td class="<%= css %>" valign="middle">
 						<div class='star-ratings-block'>
@@ -153,7 +155,7 @@
           <% css = cycle("packageList0", "packageList1") %>
           <tr>
             <td class="<%= css %>" valign="middle">
-              <%= link_to livecd.name, livecd_path(livecd) %>
+              <%= link_to livecd.name, "/livecd/#{livecd.id}" %>
             </td>
             <td class="<%= css %>" valign="middle">
               <%=  livecd.downloaded %>
