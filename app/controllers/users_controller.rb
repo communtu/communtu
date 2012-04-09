@@ -83,7 +83,7 @@ class UsersController < ApplicationController
     end  
   rescue ActiveRecord::RecordInvalid
     # release lock
-    system "dotlockfile -u #{RAILS_ROOT}/anolock"
+    system "dotlockfile -u #{Rails.root.to_s}/anolock"
     flash[:error] = t(:controller_users_4)
     render :action => 'new'
   end
@@ -98,7 +98,7 @@ class UsersController < ApplicationController
 
   def spam_users_delete
    # delete the spam users - only for manual start
-   system("grep -C 10 \"No action responded to users\" #{RAILS_ROOT}/log/production.log|grep -o [A-Za-z0-9_-]*@[A-Za-z0-9_.-]* > ~/spam_users.txt")
+   system("grep -C 10 \"No action responded to users\" #{Rails.root.to_s}/log/production.log|grep -o [A-Za-z0-9_-]*@[A-Za-z0-9_.-]* > ~/spam_users.txt")
     f = File.open('/home/communtu/web2.0/spam_users.txt')  
       while not f.eof? do  
           email = f.gets

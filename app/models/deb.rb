@@ -46,7 +46,7 @@ class Deb < ActiveRecord::Base
   # command for adding keys
   APT_KEY_COMMAND = "apt-key adv --recv-keys --keyserver"
   # command for adding packages to repository
-  REPREPRO = "GNUPGHOME=/home/communtu/.gnupg reprepro -v -b #{RAILS_ROOT} --outdir #{RAILS_ROOT}/public/debs --confdir #{RAILS_ROOT}/debs --logdir #{RAILS_ROOT}/log --dbdir #{RAILS_ROOT}/debs/db --listdir #{RAILS_ROOT}/debs/list"
+  REPREPRO = "GNUPGHOME=/home/communtu/.gnupg reprepro -v -b #{Rails.root.to_s} --outdir #{Rails.root.to_s}/public/debs --confdir #{Rails.root.to_s}/debs --logdir #{Rails.root.to_s}/log --dbdir #{Rails.root.to_s}/debs/db --listdir #{Rails.root.to_s}/debs/list"
  
   def self.check_version(no)
      ! /^([0-9]:)?([0-9][0-9a-zA-Z.+:~]*)(-([0-9a-zA-Z.+~]+))*/.match(no).nil?
@@ -110,12 +110,12 @@ class Deb < ActiveRecord::Base
       architectures = Architecture.all
     end
     # create a lock in order to avoid concurrent debianizations
-    safe_system "dotlockfile -r 1000 #{RAILS_ROOT}/debs/lock"
+    safe_system "dotlockfile -r 1000 #{Rails.root.to_s}/debs/lock"
     # do check again (since concurrent instance could have generated it in the meantime)
     if !(self.generated and !force)
       begin
         # logging
-        f=File.open("#{RAILS_ROOT}/log/debianize.log","a")
+        f=File.open("#{Rails.root.to_s}/log/debianize.log","a")
         f.puts
         f.puts
         f.puts "++++++++++++++++++++++ Processing version #{name}-#{version}"
@@ -158,21 +158,21 @@ class Deb < ActiveRecord::Base
             # upload metapackage
             # todo: make name of .deb unique
             puts "Uploading #{newfile}"
-            system "echo \"Uploading #{newfile}\" >> #{RAILS_ROOT}/log/debianize.log"
-            safe_system "#{REPREPRO} -C #{component} includedeb #{codename} #{newfile} >> #{RAILS_ROOT}/log/debianize.log 2>&1"
+            system "echo \"Uploading #{newfile}\" >> #{Rails.root.to_s}/log/debianize.log"
+            safe_system "#{REPREPRO} -C #{component} includedeb #{codename} #{newfile} >> #{Rails.root.to_s}/log/debianize.log 2>&1"
             # remove package files, but not folder
-            system "rm #{RAILS_ROOT}/debs/#{name}/#{name}* >/dev/null 2>&1 || true"
+            system "rm #{Rails.root.to_s}/debs/#{name}/#{name}* >/dev/null 2>&1 || true"
             # mark this deb as susccessfully generated
             self.generated = true
             self.errmsg = nil
-            self.log = IO.popen("tail -n80 #{RAILS_ROOT}/log/debianize.log",&:read)
+            self.log = IO.popen("tail -n80 #{Rails.root.to_s}/log/debianize.log",&:read)
             self.save
             # communtu repository has changed, hence clear apt-proxy cache
             system "sudo clear-apt-proxy-cache-communtu"
           rescue StandardError => err
             self.generated = false
             self.errmsg = err
-            self.log = IO.popen("tail -n80 #{RAILS_ROOT}/log/debianize.log"&:read)
+            self.log = IO.popen("tail -n80 #{Rails.root.to_s}/log/debianize.log"&:read)
             self.save
             meta.deb_error = true
             meta.save
@@ -188,21 +188,21 @@ class Deb < ActiveRecord::Base
         rescue
           self.generated = false
           self.errmsg = "unknown"
-          self.log = IO.popen("tail -n80 #{RAILS_ROOT}/log/debianize.log",&:read)
+          self.log = IO.popen("tail -n80 #{Rails.root.to_s}/log/debianize.log",&:read)
           self.save
           meta.deb_error = true
           meta.save
-          f=File.open("#{RAILS_ROOT}/log/debianize.log","a")
+          f=File.open("#{Rails.root.to_s}/log/debianize.log","a")
           f.puts
           f.puts "Debianizing #{name} failed! (id = #{id})"
           f.puts
           f.close
         end
         # cleanup
-        system "rm -r #{RAILS_ROOT}/debs/#{name}*"
+        system "rm -r #{Rails.root.to_s}/debs/#{name}*"
       end 
       # release lock
-      safe_system "dotlockfile -u #{RAILS_ROOT}/debs/lock"
+      safe_system "dotlockfile -u #{Rails.root.to_s}/debs/lock"
   end
 
   # generate debian package for installation of new sources
@@ -259,15 +259,15 @@ class Deb < ActiveRecord::Base
 
   # create a debian package, using lock to prevent concurrent makes
   def self.makedeb_lock(name,version,package_names,description,distribution,codename,derivative,repos,script,archname = "all")
-    safe_system "dotlockfile -r 1000 #{RAILS_ROOT}/debs/lock"
+    safe_system "dotlockfile -r 1000 #{Rails.root.to_s}/debs/lock"
     d = Deb.makedeb(name,version,package_names,description,distribution,codename,derivative,repos,script,archname)
-    safe_system "dotlockfile -u #{RAILS_ROOT}/debs/lock"
+    safe_system "dotlockfile -u #{Rails.root.to_s}/debs/lock"
     return d
   end
 
   # create a debian package
   def self.makedeb(name,version,package_names,description,distribution,codename,derivative,repos,script,archname = "all")
-    Dir.chdir RAILS_ROOT+'/debs'
+    Dir.chdir Rails.root.to_s+'/debs'
     if !File.exists?(name)
       Dir.mkdir name
     end
@@ -329,7 +329,7 @@ class Deb < ActiveRecord::Base
       # create  'preinst'
       # first half of standard script ...
       safe_system "cp ../../../preinst1 preinst"
-      safe_system "cp #{RAILS_ROOT}/script/apt-get-update apt-get-update"
+      safe_system "cp #{Rails.root.to_s}/script/apt-get-update apt-get-update"
       # ... handling of new sources and keys ...
       f=File.open("preinst","a")
       f.puts ""
@@ -360,11 +360,11 @@ class Deb < ActiveRecord::Base
 
     # build deb package
     Dir.chdir '..'
-    safe_system "echo >>  #{RAILS_ROOT}/log/debianize.log 2>&1"
-    safe_system "date >>  #{RAILS_ROOT}/log/debianize.log 2>&1"
+    safe_system "echo >>  #{Rails.root.to_s}/log/debianize.log 2>&1"
+    safe_system "date >>  #{Rails.root.to_s}/log/debianize.log 2>&1"
     archflag = if archname=="all" then "" else "-a#{archname}" end
-    safe_system "dpkg-buildpackage #{archflag} -uc -us -rfakeroot >> #{RAILS_ROOT}/log/debianize.log 2>&1"
-#    safe_system "dpkg-buildpackage -sgpg -k#{Deb::COMMUNTU_KEY} -rfakeroot >> #{RAILS_ROOT}/log/debianize.log 2>&1"
+    safe_system "dpkg-buildpackage #{archflag} -uc -us -rfakeroot >> #{Rails.root.to_s}/log/debianize.log 2>&1"
+#    safe_system "dpkg-buildpackage -sgpg -k#{Deb::COMMUNTU_KEY} -rfakeroot >> #{Rails.root.to_s}/log/debianize.log 2>&1"
     Dir.chdir '../../..'
     # return filename of the newly created package
     return Dir.glob("debs/#{name}/#{name}_#{version}*#{archname}*deb")[0]
@@ -372,14 +372,14 @@ class Deb < ActiveRecord::Base
 
   # remove packages whose distribution has vanished
   def self.clearvanished
-    safe_system "#{RAILS_ROOT}/script/clearvanished"
+    safe_system "#{Rails.root.to_s}/script/clearvanished"
   end
 
   # write reprepro configuration file
   def self.write_conf_distributions
     comps = Deb.components.flatten.join(" ")
     archs = Architecture.all.map{|a| a.name}.join(" ")
-    f=File.open(RAILS_ROOT+'/debs/distributions','w')
+    f=File.open(Rails.root.to_s+'/debs/distributions','w')
     Derivative.all.each do |der|
       der.distributions.each do |dist|
         (0..1).each do |lic|
@@ -441,7 +441,7 @@ class Deb < ActiveRecord::Base
     Dir.chdir tmpdir
     system "dpkg-deb -e #{file}"
     f=File.open("DEBIAN/control")
-    Dir.chdir RAILS_ROOT
+    Dir.chdir Rails.root.to_s
     # empty set of deps, in case there is no Depends: section
     deps = Set.[]
     # get dependencies from control file
@@ -465,7 +465,7 @@ class Deb < ActiveRecord::Base
     if pos[1].nil? or pos[2].nil?
       return ("Reprepro could not find deb file")
     end
-    filename_prefix = RAILS_ROOT + "/public/debs/pool/*/*/*/" + pos[1] + "*" + pos[2]
+    filename_prefix = Rails.root.to_s + "/public/debs/pool/*/*/*/" + pos[1] + "*" + pos[2]
     file = Dir.glob(filename_prefix + "*all.deb")[-1]
     if file.nil?
       file = Dir.glob(filename_prefix + "*" + arch.name + ".deb")[-1]

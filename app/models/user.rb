@@ -409,7 +409,7 @@ end
       return nil
     end
 
-    Dir.chdir RAILS_ROOT
+    Dir.chdir Rails.root.to_s
 
     name = BasePackage.debianize_name("communtu-add-sources-"+self.login)
     version = self.profile_version.to_s
@@ -434,7 +434,7 @@ end
   end
 
   def install_bundle_sources(bundle)
-    Dir.chdir RAILS_ROOT
+    Dir.chdir Rails.root.to_s
 
     name = BasePackage.debianize_name("communtu-add-sources-#{self.login}-#{bundle.name}")
     version = self.profile_version.to_s
@@ -453,7 +453,7 @@ end
   end
 
   def install_package_sources(package)
-    Dir.chdir RAILS_ROOT
+    Dir.chdir Rails.root.to_s
     repos = package.repositories_dist(self.distribution,self.architecture)
     Repository.close_deps(repos)
     name = BasePackage.debianize_name("communtu-add-sources-#{self.login}-#{package.name}")
@@ -477,7 +477,7 @@ end
       return nil
     end
 
-    Dir.chdir RAILS_ROOT
+    Dir.chdir Rails.root.to_s
 
     name = self.install_name
     version = self.profile_version.to_s
@@ -507,10 +507,10 @@ end
   def livecd(name,iso=false,kvm=false,usb=false)
     sources = self.install_sources
     if sources.nil? then return nil end
-    srcdeb = RAILS_ROOT + "/" + sources
+    srcdeb = Rails.root.to_s + "/" + sources
     install = self.install_bundle_as_meta
     if install.nil? then return nil end
-    installdeb = RAILS_ROOT + "/" + install
+    installdeb = Rails.root.to_s + "/" + install
     published = self.selected_packages.map(&:is_published?).all?
     cd = Livecd.create(:name => name, :distribution_id => self.distribution_id, 
                        :derivative_id => self.derivative_id, :architecture_id => self.architecture_id,
@@ -536,7 +536,7 @@ end
     cd = Livecd.find(:first,:conditions=>params)
     # if not, create one
     if cd.nil?
-      srcdeb = RAILS_ROOT + "/" + self.install_bundle_sources(bundle)
+      srcdeb = Rails.root.to_s + "/" + self.install_bundle_sources(bundle)
       deb_name = bundle.debian_name
       params1=params.clone
       params1.delete(:architecture_id)
