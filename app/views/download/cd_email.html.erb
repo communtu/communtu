@@ -20,7 +20,7 @@
 
 <br>
 <% if is_anonymous? and session[:path]!="install" %>
-<%=t(:livecd_please_register, :register => link_to(t(:register_small), edit_user_path(current_user)), :login => link_to(t(:login_small), '/logout_login'))%>
+<%=t(:livecd_please_register, :register => link_to(t(:register_small), edit_user_path(current_user)), :login => link_to(t(:login_small), '/logout_login')).html_safe%>
 <% elsif @cd.nil?%>
   <%= t(:please_create_cd) %>
 <% else %>
