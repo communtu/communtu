@@ -46,7 +46,7 @@ msgstr "Graphic"
 
 #: zentrum_solidarische_oekonomie
 msgid "Zentrum für Solidarische Ökonomie"
-msgstr "Zentrum für Solidarische Ökonomie"
+msgstr "Center for Solidarity Economy"
 
 #: view_user_profiles__installation_13
 msgid "(Bei einem Versionswechsel muss der erste Schritt erneut ausgeführt werden, da die Communtu Quellen durch das Upgrade deaktiviert wurden.):"
@@ -90,7 +90,7 @@ msgstr "roles for"
 
 #: view_distributions_show_8
 msgid "Vor dem Löschen einer Distribution müssen alle Benutzer, die sie nutzen, ausgeloggt sein! Bist du sicher?"
-msgstr "Before a distribution can be deleted, every user must be logged out! Are you sure?"
+msgstr "In order to delete a distribution, all user must be logged out! Are you sure?"
 
 #: cd_failed
 msgid "Fehlgeschlagen - wir kümmern uns darum"
@@ -530,7 +530,7 @@ msgstr "Participants of the Communtu-team (alphabetical order):"
 
 #: match_with_communtu
 msgid "Communtu - gemeinsam Ubuntu-Linux an individuelle Bedürfnisse anpassen"
-msgstr "Communtu - match Ubuntu to your personal needs"
+msgstr "Communtu - collaboratively fit Ubuntu to your personal needs"
 
 #: view_roles__role_0
 msgid "Rolle löschen"
@@ -894,7 +894,7 @@ msgstr " - the PC becomes a VCR. Select \"Freak\" at \"Movie\" and it will be in
 
 #: view_home_about_2
 msgid "Ubuntu ist eine Linux-Distribution, die Linux einfach handhabbar und verständlich macht. Nach der Installation von Ubuntu mittels einer CD oder DVD ist dein Computer schon  gut ausgerüstet für Internet, Textverarbeitung und vieles andere."
-msgstr "Ubuntu is a linux-based distribution which makes Linux easier to use and more comprehendible. After the installation of Ubuntu via a CD or DVD your computer is already equipped to surf the internet, to do some word processing and to do much more."
+msgstr "Ubuntu is a linux-based distribution which makes Linux easier to use and more comprehensible. After the installation of Ubuntu via a CD or DVD your computer is already equipped to surf the internet, do some word processing and much more."
 
 #: blog
 msgid "Der Blog von Communtu"
@@ -910,7 +910,7 @@ msgstr "Donation possibility"
 
 #: view_home_about_3
 msgid "Es gibt aber auch viele Anwendungen, die erst noch nachinstalliert werden müssen, z.B. in den Bereichen Audio, Video und Grafik, damit dein Computer mit Ubuntu wirklich  benutzbar ist. Communtu macht diese Nachinstallation jetzt noch einfacher und hat zudem spezielle Bereiche für Einsteiger und Windows-Umsteiger."
-msgstr "There are many applications which have to be post-installed, e. g. programs for audio, video and graphics, in order to really make the computer able to use Ubuntu. Communtu helps to make the installation of additional software easier, and furthermore, has special sections for beginners and users coming from Windows."
+msgstr "There are many applications, though, that users might want to add, e. g. programs for audio, video and graphics in order to take full advantage of their Ubuntu system. Communtu facilitates the installation of additional software, and even has special sections for beginners and users migrating from Windows."
 
 #: view_home_derivatives_15
 msgid "http://wiki.ubuntuusers.de/KDE"
@@ -918,7 +918,7 @@ msgstr "http://en.wikipedia.org/wiki/KDE"
 
 #: view_home_about_4
 msgid "Wie verwende ich Communtu?"
-msgstr "How do I use Communtu?"
+msgstr "How to use Communtu"
 
 #: view_home_derivatives_16
 msgid " ist Ubuntu mit dem KDE-Desktop."
@@ -930,7 +930,7 @@ msgstr "couldn't read %{url}"
 
 #: view_home_about_5
 msgid "Zum Starten wählst du <b>Download</b>."
-msgstr "To start, choose <b>Download</b>."
+msgstr "To start off, choose <b>Download</b>."
 
 #: view_home_derivatives_17
 msgid "http://de.wikipedia.org/wiki/Linux_Mint"
@@ -950,7 +950,7 @@ msgstr "  (This does not appear until"
 
 #: promote_chat
 msgid "Du kannst gucken, ob sich gerade jemand von uns im Chat aufhält und mit uns über den Chat kommunizieren."
-msgstr "You can look if one of us is currently in the chat and talk with us."
+msgstr "You can try and see if members of the communtu staff are online and get in touch using the chat."
 
 #: category_exists
 msgid "Eine Kategorie mit diesem Namen existiert schon"
@@ -958,11 +958,11 @@ msgstr "A category with this name already exists."
 
 #: thanks_for_order
 msgid "Danke für die Bestellung der Mailingliste(n)."
-msgstr "Thank you for enlisting in our mailinglist(s)."
+msgstr "Thank you for subscribing to our mailinglist(s)."
 
 #: view_home_about_7
 msgid "Dort kannst du deine Einstellungen bearbeiten. Unter den Voreinstellungen musst du zunächst eintragen, welche Ubuntu-Version du auf deinem PC installiert hast, außerdem, ob du unfreie Programme nutzen willst oder nicht. Zudem wählst du aus, für welche Aufgaben du deinen Ubuntu-PC nutzen willst. "
-msgstr ".) There you can edit your settings. First, you have to specify the basic data, such as which Ubuntu version you want to install on your computer. Additionally, you must specify if you want to use free or commercial software. Finally you must indicate for which purposes you want to use your computer."
+msgstr "There you can edit your settings: First, you'll have to specify the basic data, such as which Ubuntu version you want to install on your computer. Additionally, you must specify if you want to use free or commercial software. Finally, you must indicate for which purposes you want to use your computer."
 
 #: view_home_derivatives_18
 msgid " ist eine Ubuntu-Abspaltung mit eigener User-Community, die sich vor allem Benutzerfreundlichkeit auf die Fahnen schreibt. Linux Mint ähnelt Ubuntu sehr, hat aber viele Codes, z.B. für DVDs und MP3s, schon vorinstalliert. Diese Codecs gibt es allerdings auch bei Communtu, unter Unterhaltungsmedien. "
@@ -996,7 +996,7 @@ msgstr "Failed or running deb-generation"
 
 #: view_home_about_8
 msgid "Danach kannst du mit \"Speichern und feiner Auswählen\" noch einen detaillierteren Überblick über die installierten Bündel und Programme bekommen und die Auswahl auch noch verändern. Falls du dazu keine Lust oder Zeit hast, klicke einfach auf \"Speichern\". Dies führt dich zur Installations-Seite. Dort findest du einen Installationsknopf, mit dem die Ubuntu-Nachinstallation gestartet werden kann. Es dauert etwas, bis die Programme automatisch aus dem Internet geladen und installiert werden. Fertig ist der vielseitig einsetzbare Ubuntu-PC!"
-msgstr "After clicking on \"Save and choose packages\" you can get a detailed overview of the installed bundles and programs and the possibility to change the pre-made selections. In the case you don't have the time or energy to choose the packages in detail, just click on \"Save\". This leads you to the installation page. There you will find a button which starts the installation process. This takes some time because the applications have to be downloaded from the internet and installed on your computer. When finished, you have an all-round Ubuntu-PC!"
+msgstr "After clicking on \"Save and select packages\" you'll get a detailed overview of the bundles and programs installed as well as the chance to change previously made selections. In case you don't feel like choosing the packages in detail, just click on \"Save\". This will take you to the installation page. There you'll find a button which starts the installation process. This takes some time because the applications will have to be downloaded from the internet and installed on your computer. When finished, you have a truely vesatile Ubuntu-PC!"
 
 #: passwd
 msgid "Passwort"
@@ -1008,7 +1008,7 @@ msgstr "Automatix was a programm to assist the installation of software and enjo
 
 #: view_home_about_9
 msgid "Wichtig: Man braucht schon eine schnelle Internet-Verbindung. Für Ubuntu-Nutzer, die noch ein Modem oder ähnliches nutzen, planen wir die Möglichkeit, automatisch CDs und DVDs zu erstellen."
-msgstr "Important: a fast internet-connection is needed. For Ubuntu-users with a slow internet-connection, e. g. a modem, we intend to introduce a feature to create CDs and DVDs automatically."
+msgstr "Important: You'll need a fast internet connection. We plan to implement a feature to create CDs and DVDs automatically for Ubuntu users with a slow internet connection (like dialup)."
 
 #: view_accounts_edit_1
 msgid "Altes Passwort"
@@ -1488,7 +1488,7 @@ msgstr "Creating Live-CD/DVD"
 
 #: search_programs_bundles
 msgid "Du hast bereits ein Ubuntu installiert und suchst jetzt passende Programme? Hier kannst du deine Interessengebiete eingeben und <b>passende vorkonfigurierte Programmbündel downloaden</b>."
-msgstr "You already have Ubuntu installed and now you are looking for suitable programs to use? Enter your fields of interest and <b>pre-configured bundles can be downloaded</b>."
+msgstr "Already Ubuntu user and looking for suitable programs to use? Enter your areas of interest and <b>download pre-configured bundles</b>."
 
 #: view_home_news_17
 msgid "Zum Blog"
@@ -1636,7 +1636,7 @@ msgstr "Here you can create a bundle from an existing package-list. The list mus
 
 #: homepage
 msgid "Startseite"
-msgstr "Start"
+msgstr "home"
 
 #: view_users__sidebar_2
 msgid "Programme suchen"
@@ -2248,7 +2248,7 @@ msgstr "Date"
 
 #: make_your_livedvd_or_usb
 msgid "Du hast noch kein Ubuntu installiert. Hier bekommst du das <b>Betriebssystem Ubuntu</b>, und zwar gleich <b>mit der Software, die du brauchst</b>."
-msgstr "You don't have Ubuntu installed on your computer. Here you can download the <b>operating system Ubuntu</b> with the <b>software you need</b>."
+msgstr "Not yet using Ubuntu? You can download the <b>Ubuntu operating system </b> along with the <b>software you need</b> right here."
 
 #: start_vm_with_livecd_basis
 msgid "Virtuelle Maschine auf Basis der LiveCD-Einstellungen starten (Zur Fehlersuche)"
@@ -2256,7 +2256,7 @@ msgstr "Start virtual machine based on the Live-CD settings (for debugging)"
 
 #: controller_users_3
 msgid "Du wurdest als Nutzer %{anonymous_user} mit Kennwort %{anonymous_user} eingeloggt. Bitte ggf. oben rechts auf Nutzer %{anonymous_user} klicken und in ein dauerhaftes Nutzerkonto umwandeln; ansonsten wird das Konto nach einem Tag wieder gelöscht."
-msgstr "You have been logged in as %{anonymous_user} with the password %{anonymous_user}. If applicable click on the username %{anonymous_user} in the above-right corner to change the account into an permanent account, otherwise the account will be deleted after one day."
+msgstr "You were logged in as %{anonymous_user} with the password %{anonymous_user}. If you wish to, you can click the username %{anonymous_user} in the upper right corner and change your temporary account into a permanent one. If you don't, the account will be deleted after one day."
 
 #: cd_created
 msgid "Die LiveCD/DVD ist fertig."
@@ -2746,7 +2746,7 @@ msgstr "<option>0 bundles selected</option>"
 
 #: last_user
 msgid "Wir begrüßen unseren zuletzt neu-registrierten Nutzer"
-msgstr "We welcome our newest user"
+msgstr "Welcome to our newest user"
 
 #: save_selection
 msgid "Auswahl speichern"
@@ -3034,7 +3034,7 @@ msgstr "Create new meta-package."
 
 #: offer_new_category
 msgid "Vorschlag einer neuen Kategorie"
-msgstr "Suggestion of a new category"
+msgstr "Suggest a new category"
 
 #: view_derivatives_show_2
 msgid "Dialog-Programm:"
@@ -3122,7 +3122,7 @@ msgstr "Save and choose packages"
 
 #: donation_receipt
 msgid "Spendenbescheinigung kann ausgestellt werden."
-msgstr "Donation receipt can be issued."
+msgstr "A donation receipt can be issued."
 
 #: repository_url
 msgid "Repository-URL: "
@@ -3258,7 +3258,7 @@ msgstr "Zombie processes"
 
 #: view_layouts_donate
 msgid "Spenden"
-msgstr "Donate"
+msgstr "donate"
 
 #: view_home_faq_gnome_01
 msgid "Unter \"System -> Systemverwaltung -> Software-Quellen -> Softwarequellen von Drittanbietern\" sind die Communtu Quellen auffindbar. Hier können sie auch wieder deaktiviert werden."
@@ -3310,7 +3310,7 @@ msgstr "bundle-editor"
 
 #: which_programs_do_you_need
 msgid "Zu welchem Thema suchst du Programme (Büro, Grafik,...)? Hier kannst du deine Interessengebiete eingeben und passende vorkonfigurierte Programmbündel zusammenstellen."
-msgstr "To which topic do you look for programs (office, graphics, ...)? Enter your fields of interest and arrange pre-configured bundles."
+msgstr "Which sort of programs are you looking for (office, graphics, ...)?Enter your areas of interest below and chose from the appropriately pre-configured bundles."
 
 #: description_with_colon
 msgid "Beschreibung:"
@@ -3478,7 +3478,7 @@ msgstr "Try out Live-CD online"
 
 #: view_user_profiles__profile_rating_0
 msgid "Software zusammenstellen - Programmbündel wählen"
-msgstr "Software selection - choose programbundle"
+msgstr "Software selection - choose a bundle of programs"
 
 #: model_package_1
 msgid "Frei+proprietär"
@@ -3884,7 +3884,7 @@ msgstr "With the Live-CD you can test the software you have chosen and install t
 
 #: make_a_systemupgrade
 msgid "Du möchtest ein <b>System-Upgrade</b> machen oder deine interessanten <b>Programme einbringen</b>? Dann schau <a href=\"http://communtu.wordpress.com/2009/09/16/mit-communtu-ein-systemupgrade-durchfuhren/\">wie einfach das geht</a> und lade deine Paketliste bei Communtu hoch."
-msgstr "You want to <b>upgrade your system</b> or bring some interesting programs in? Take a look <a href=\"http://encommuntu.wordpress.com/2009/09/16/how-to-use-communtu-for-a-systems-upgrade/\">here how easy it is</a> and upload your package list to Communtu."
+msgstr "You want to <b>upgrade your system</b> or suggest interesting programs? Take a look <a href=\"http://encommuntu.wordpress.com/2009/09/16/how-to-use-communtu-for-a-systems-upgrade/\"> and find out how easy it is</a> to submit your package list to Communtu."
 
 #: controller_metapackages_not_changed
 msgid "Das Bündel wurde schon als Metapaket erzeugt und hochgeladen."
