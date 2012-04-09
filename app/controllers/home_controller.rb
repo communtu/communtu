@@ -15,7 +15,8 @@
 # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
 
 class HomeController < ApplicationController
-  
+ # before_filter :check_administrator_role, :flash => { :notice => I18n.t(:no_admin) }, 
+ #               :only => [:env]
   def title
     if params[:action] == "impressum"
       "Communtu: " + t(:imprint)
@@ -116,4 +117,6 @@ class HomeController < ApplicationController
     @faq = true
   end
 
+  def env
+  end
 end
