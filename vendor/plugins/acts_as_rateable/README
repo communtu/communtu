@@ -1,10 +1,12 @@
-Acts As Rateble
+Acts As Rateable
 =============
 
 Acts_as_rateable is a plugin released under the MIT license. 
 It makes activerecord models rateable through a polymorphic association and optionally logs which user rated which model.
 In this case, one user can rate an object once. Used on cotcot.hu for article rating, sponsored quizzes, etc.
 
+A 'free text' attribute has been added to the pure numerical rating. The 'free text' serves as
+the user's rating description or comment.
 
 Example
 =======
@@ -29,6 +31,8 @@ Now your model is extended by the plugin, you can rate it ( 1-# )or calculate th
 
 @post.rated_by?( current_user ) #=> rating || false
 
+@post.parse_ratings(:json) #=> JSOn formatted string containing the post's ratings
+
 Post.find_average_of( 4 ) #=> array of posts
 
 See acts_as_rateable.rb for further details!
@@ -38,3 +42,4 @@ See acts_as_rateable.rb for further details!
 Jinzhu - generator is compatible with rails 3.
 
 Copyright (c) 2007-2010 Ferenc Fekete, http://feketeferenc.hu , released under the MIT license
+Copyright (c) 2011 Joerg Polakowski, http://mobile-melting.de , released under the MIT license
