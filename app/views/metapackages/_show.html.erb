@@ -64,7 +64,7 @@
 		<b><%=t(:view_metapackages_show_8)%></b>
 	</td>
 	<td>
-		<% if @metapackage.rated_by_user?(current_user) %>
+		<% if @metapackage.rated_by?(current_user) %>
 			<!-- STARS allready voted -->
 			<div class="star-ratings-block" id="star-ratings-block-<%=h @metapackage.id %>">
 	        	<%= render :partial => "rating/show", :locals => { :metapackage => @metapackage } %>
@@ -142,6 +142,9 @@
 </table>
 
 <% if is_admin? %>
+<p>
+	<%=t(:mark_as_best_of)%>
+</p>
 <p>
   <% if !@metapackage.conflict_msg.nil? %>
     <%= t(:conflicts) %>:
