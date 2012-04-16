@@ -139,7 +139,7 @@ shutdown -h now
 <% end %>
 </p>
 <p>
-<% if !@cd.log.nil? %>
+<% if !@cd.log.nil? and !@cd.log.empty? %>
   <h3><%=t(:logfile_extract)%></h3>
   <pre><%= h @cd.log %></pre>
 <% end %>
