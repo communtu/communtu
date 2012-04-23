@@ -1028,10 +1028,9 @@ a.download:hover, a.download:active{
         padding-bottom:2em;
 	}
 .content1{
-	position:relative;
-	top:-5em;
-    padding-bottom:2em;
-}
+        float:left;
+	width:700px;
+	}
 .content{
 	position:relative;
 	width:925px;
@@ -1065,6 +1064,7 @@ a.download:hover, a.download:active{
 	top:-74px;
 	width:925px;
 	z-index:0;
+        margin-bottom: -74px;
 	}
 .secondnavi a:link,.unternavi a:visited,.unternavi a:active{
 	color:#451B00;
