@@ -54,6 +54,8 @@
 	margin-left:173px;
 	height:54px;
 	margin-bottom:30px;
+        position: relative;
+        z-index: 1;
 }
 #navi_download{
 	background-image: url("navi_download.png");
