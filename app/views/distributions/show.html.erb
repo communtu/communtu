@@ -16,22 +16,22 @@
 %>
 
 <%= render_flash %>
-<%= dist_show @distribution, "inner0", false %>
+<%= (dist_show @distribution, "inner0", false).html_safe %>
 	<table width="100%">
 	<tr>
-	<td><b><%=t(:view_distributions_show_0)%></b></td>
+	<td><b><%=t(:view_distributions_show_0).html_safe%></b></td>
 	<td align="right">
 		<% if is_admin? %>
-			<%= link_to t(:view_distributions_show_1), '/repositories/test_all/'+@distribution.id.to_s %>
+			<%= link_to t(:view_distributions_show_1).html_safe, '/repositories/test_all/'+@distribution.id.to_s %>
 			&nbsp;&nbsp;&nbsp;&nbsp;
-			<%= link_to t(:view_distributions_show_2), '/repositories/sync_all/'+@distribution.id.to_s %>
+			<%= link_to t(:view_distributions_show_2).html_safe, '/repositories/sync_all/'+@distribution.id.to_s %>
 			&nbsp;&nbsp;&nbsp;&nbsp;
-			<%= link_to t(:view_distributions_show_3), '/repositories/multinew/'+@distribution.id.to_s %>
+			<%= link_to t(:view_distributions_show_3).html_safe, '/repositories/multinew/'+@distribution.id.to_s %>
 			&nbsp;&nbsp;&nbsp;&nbsp;
-			<%= link_to t(:view_distributions_show_4), new_distribution_repository_path(@distribution.id) %>
+			<%= link_to t(:view_distributions_show_4).html_safe, new_distribution_repository_path(@distribution.id) %>
 		<% end %>	
 	</td></tr></table>
-<%= repository_view @distribution.repositories, "inner0" %>
+<%= (repository_view @distribution.repositories, "inner0").html_safe %>
 
 <%= link_to t(:back), distributions_path %> 
 <% if is_admin? %>
