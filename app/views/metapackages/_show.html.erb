@@ -32,9 +32,9 @@
 		<% end %>	
 		
 <% if editing_metapackage? %>
-                        <%= link_to_remote((image_tag("/images/add.png", :size => "18x18", :border => "0", :title =>t(:add_to_bundle), :alt => t(:add_to_bundle)) + ""),
+                        <%= link_to((image_tag("/images/add.png", :size => "18x18", :border => "0", :title =>t(:add_to_bundle), :alt => t(:add_to_bundle)) + ""),
                                 :url => "/cart/add_to_cart_box/" + @metapackage.id.to_s,\
-                                :update => 'meta_cart_box') %>
+                                :update => 'meta_cart_box', :remote => true) %>
                 <% end %>            
  <br />
 <font size="-3"><%=t(:view_metapackages_show_0)%><b><%= link_to @metapackage.user.login, user_path(@metapackage.user.id) %></b></font>
