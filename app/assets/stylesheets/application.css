@@ -96,3 +96,11 @@
     width:110px;
     height:130px;
 }
+
+#bundlepopup {
+    background-color: white;
+    display: none;
+    position: absolute;
+    width: 110px;
+    height: 130px;
+}

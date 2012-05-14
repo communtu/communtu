@@ -47,3 +47,11 @@ function download_save_settings() {
         });
 }
 
+function bundlePopup(id){
+    var position = $j('#'+id).position();
+    $j("#bundlepopup").css({
+        "display":"block",
+        "left":position.left,
+        "top":position.top
+    });
+}
