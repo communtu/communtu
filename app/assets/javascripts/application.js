@@ -47,11 +47,17 @@ function download_save_settings() {
         });
 }
 
-function bundlePopup(id){
+function bundlePopup(id,bid){
     var position = $j('#'+id).position();
-    $j("#bundlepopup").css({
+    $j("#bundlepopup"+bid).css({
         "display":"block",
-        "left":position.left,
+        "left":position.left+10,
         "top":position.top
+    });
+}
+
+function bundlePopupClose(bid){
+        $j("#bundlepopup"+bid).css({
+        "display":"none"
     });
 }
