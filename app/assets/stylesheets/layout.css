@@ -1118,11 +1118,12 @@ a.download:hover, a.download:active{
 	border:0 solid #FFFF00;
 	padding-bottom:0.4em;
 	padding-top:0.28em;
-	position:absolute;
+	float: right;
 	right:0.32em;
 	text-align:center;
 	top:0.8em;
 	width:12.5em;
+	height:2.6em;
 	z-index:2
 	}
 #register {
