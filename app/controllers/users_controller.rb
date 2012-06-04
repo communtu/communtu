@@ -232,16 +232,45 @@ class UsersController < ApplicationController
 ###################################### below is rails3 code
 
   def create
-    logout_keeping_session!
+    cookies.delete :auth_token
     @user = User.new(params[:user])
-    @user.register! if @user && @user.valid?
-    success = @user && @user.valid?
-    if success && @user.errors.empty?
-      redirect_back_or_default('/', :notice => "Thanks for signing up!  We're sending you an email with your activation code.")
-    else
-      flash.now[:error]  = "We couldn't set up that account, sorry.  Please try again, or contact an admin (link is above)."
-      render :action => 'new'
+    browser_dist = Distribution.browser_distribution(request.env['HTTP_USER_AGENT'])    
+    set_dist_and_arch(@user)
+    @user.derivative = Derivative.default
+    @user.enabled = true
+    @user.activation_code = nil
+    @user.activated_at = Time.now    
+    @user.profile_version = 1
+    if params[:announce] == "1" and I18n.locale.to_s == "de"
+      system "echo \"\" | mail -s \"announce\" -c info@toddy-franz.de -a \"FROM: #{@user.email}\" communtu-announce-de+subscribe@googlegroups.com &"
+    elsif params[:announce] == "1"
+      system "echo \"\" | mail -s \"announce\" -c info@toddy-franz.de -a \"FROM: #{@user.email}\" communtu-announce-en+subscribe@googlegroups.com &"
     end
+    if params[:discuss] == "1" and I18n.locale.to_s == "de"
+      system "echo \"\" | mail -s \"discuss\" -c info@toddy-franz.de -a \"FROM: #{@user.email}\" communtu-discuss-de+subscribe@googlegroups.com &"
+    elsif params[:discuss] == "1"
+      system "echo \"\" | mail -s \"discuss\" -c info@toddy-franz.de -a \"FROM: #{@user.email}\" communtu-discuss-en+subscribe@googlegroups.com &"
+    end
+    @user.save!
+    #Uncomment to have the user logged in after creating an account - Not Recommended
+    flash[:notice] = t(:controller_users_1)
+#    cookies[:backlink] = params[:form][:backlink]
+    redirect_to "/session/new"
+  rescue ActiveRecord::RecordInvalid
+    flash[:error] = t(:controller_users_2)
+    render :action => 'new'
+
+
+   # logout_keeping_session!
+   # @user = User.new(params[:user])
+   # @user.register! if @user && @user.valid?
+   # success = @user && @user.valid?
+   # if success && @user.errors.empty?
+   #   redirect_back_or_default('/', :notice => "Thanks for signing up!  We're sending you an email with your activation code.")
+   # else
+   #   flash.now[:error]  = "We couldn't set up that account, sorry.  Please try again, or contact an admin (link is above)."
+   #   render :action => 'new'
+   # end
   end
 
   def activate

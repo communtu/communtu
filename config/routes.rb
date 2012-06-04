@@ -123,6 +123,7 @@ Communtu::Application.routes.draw do
   
   end
 
+  match '/metapackages/index' => 'metapackages#index'
   match '/metapackages/install/:id' => 'metapackages#install'
   match '/metapackages/compute_conflicts/:id' => 'metapackages#compute_conflicts'
   match '/metapackages/new' => 'cart#create'
@@ -142,13 +143,14 @@ Communtu::Application.routes.draw do
       get :health_status
       get :install_current_source
       get :save
-      get :index
+      # get :index
       get :edit_new_or_cart
       get :changed
       get :install_current_bundle
       get :selection
     end
   end
+  
 
   #match '/metapackages/:id/publish' => 'metapackages#publish', :method => :put
   #match '/metapackages/:id/unpublish' => 'metapackages#unpublish', :method => :put
@@ -212,13 +214,13 @@ Communtu::Application.routes.draw do
   resource :account
   resources :roles
 
-  match '/activate/:id' => 'accounts#show', :as => :activate
+  #match '/activate/:id' => 'accounts#show', :as => :activate
   match '/forgot_password' => 'passwords#new', :as => :forgot_password
   match '/reset_password/:id' => 'passwords#edit', :as => :reset_password
   match '/change_password' => 'accounts#edit', :as => :change_password
-  match '/signup' => 'users#new', :as => :signup
-  match '/login' => 'sessions#new', :as => :login
-  match '/logout' => 'sessions#destroy', :as => :logout
+  #match '/signup' => 'users#new', :as => :signup
+  #match '/login' => 'sessions#new', :as => :login
+  #match '/logout' => 'sessions#destroy', :as => :logout
   match '/logout_login' => 'sessions#destroy', :as => :logout_login
   match '/admin' => 'admin#index', :as => :admin
   match '/inbox' => 'mailbox#show', :as => :inbox
