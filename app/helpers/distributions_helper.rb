@@ -96,6 +96,12 @@ module DistributionsHelper
     if !dist.predecessor.nil? then
       out += t(:predecessor)+": "+link_to(dist.predecessor.short_name,distribution_path(dist.predecessor))+"<br />"
     end
+    if style == "inner1"
+     out += "<br />" + t(:created_cds) +": " + dist.livecds.count.to_s+"<br />"
+     u = User.find(:all, :conditions => {:distribution_id => dist.id, :anonymous => false}) 
+     out += t(:count_users) +": " + u.count.to_s+"<br />"
+     out += t(:count_repositories) +": " + dist.repositories.count.to_s+"<br /><br />"
+    end
     if with_buttons
      out += (link_to t(:helper_distributions_8)+ if is_admin? then t(:helper_distributions_10) else "" end, dist)
       if is_admin?
