@@ -39,7 +39,7 @@ class Distribution < ActiveRecord::Base
   has_many :distribution_derivatives, :dependent => :destroy
   has_many :derivatives, :through => :distribution_derivatives
 
-  DEFAULT_DISTRO_NAME = "Lucid"
+  DEFAULT_DISTRO_NAME = "Precise"
 
   def predecessor
     self.distribution
