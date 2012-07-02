@@ -1,0 +1,190 @@
+<% # (c) 2008-2010 by Verein Allgemeinbildung e.V., Bremen, Germany
+   # This file is part of Communtu.
+
+   # Communtu is free software: you can redistribute it and/or modify
+   # it under the terms of the GNU Affero Public License as published by
+   # the Free Software Foundation, either version 3 of the License, or
+   # (at your option) any later version.
+
+   # Communtu is distributed in the hope that it will be useful,
+   # but WITHOUT ANY WARRANTY; without even the implied warranty of
+   # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   # GNU Affero Public License for more details.
+
+   # You should have received a copy of the GNU Affero Public License
+   # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
+%><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta name="keywords" content=" <%= t(:view_layouts_application_0) %>" />
+  <meta name="description" content=" <%= t(:view_layouts_application_1) %>" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <title><%= begin " "+controller.title rescue "" end %></title>
+  <%= stylesheet_link_tag 'layout' %>
+</head>
+<body>
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://de.communtu.org/infos/rss" />
+  <%= javascript_include_tag "prototype" %>
+  <%= javascript_include_tag "jquery" %>
+  <%= javascript_include_tag "effects" %>
+  <%= javascript_include_tag :defaults %>  
+  <script type="text/javascript">
+	  // this allows jquery to be called along with scriptaculous and YUI without any conflicts
+	  // the only difference is all jquery functions should be called with $j instead of $
+	  // e.g. $j('#div_id').stuff instead of $('#div_id').stuff
+	  var $j = jQuery.noConflict();  
+  </script>
+
+<div id="head">
+<%= link_to("", "/home/home", { :id => "headlinktohome", :title => "Communtu "+t(:homepage) }) %>
+<!-- headlline -->
+ <div id="headline">
+  <span class="headfont"><%= t(:headline) %></span>
+ </div> 
+	<div id="navihead">
+<%= link_to( {t(:community_title), image_tag('/images/nach_aussen_braun.gif', {:border => '0', :alt => t(:link_community_title), :class => 'pfeil_link'}) }, t(:link_community), {:target => '_blank', :title => t(:link_community_title)} ) %> |
+<%= link_to(t(:homepage), "/home/home") %> | <%= link_to(t(:view_layouts_application_30), "/home/faq") %> | <%= link_to(t(:board), "http://forum.communtu.org", :popup=>true) %> | <%= link_to(t(:view_layouts_donate), "/home/donate") %> | 
+<% if I18n.locale.to_s == "en" %>
+<a href="http://de.communtu.org">Deutsch</a>
+<% else %>
+<a href="http://en.communtu.org">English</a>
+<% end %>
+</div>
+  <!-- Registrieren -->
+  <div id="register">
+  <% if is_admin? %>
+    <%= link_to(t(:view_layouts_application_32), "/categories") %>  | <% end %>
+
+    <% if logged_in? %>
+      <!-- log out -->
+      <%= link_to t(:view_layouts_application_9), logout_path  %> |
+
+        <% if !is_anonymous? %>
+          <span class="register_text"><%= t(:register) %>
+           <% if is_admin? %>
+           </span>
+           <% else %>
+           | <%= t(:guest) %> </span>
+           <% end %>
+        <%  else %>
+          <%= link_to t(:register), user_path(current_user.id) %> |
+          <% if is_admin? %>
+          <% else %>
+            <span class="register_text"> <%= t(:guest) %> </span>
+          <% end %>
+        <%  end %>
+    <% else %>
+      <%= link_to t(:anmelden), '/session/new' %> | <%= link_to t(:register), '/users/new' %> |
+      <%= link_to t(:guest), '/users/anonymous_login' %>
+    <% end %>
+  </div><!-- END register DIV -->
+	
+  <!--<div id=global_search>
+  	<% form_tag "/search", :method => 'get' do %>
+      <p>
+        <%= text_field_tag :search, params[:search] %>
+        <%= submit_tag "Search", :name => nil %>
+      </p>
+    <% end %>
+  </div>-->
+	
+</div>
+
+<!-- mainnavigation -->
+<div class="navi">
+	<!-- button -->
+<% image = if params[:controller] == "download" then "/images/navi_downloadon.png" else "/images/navi_download.png" end %>	
+<% imagetag = image_tag(image, :border => '0', :alt=>t(:view_layouts_application_27),:title=>t(:view_layouts_application_27)) %>
+<% text = "<div class=\"navi_eins\">#{t(:view_layouts_application_24)}</div> "%>
+<%= link_to(imagetag+(text.html_safe),"/download/start") %>
+
+<% if ((params[:controller] == "packages") or (params[:controller] == "users" and params[:action] == "metapackages") or (params[:controller] == "home" and params[:action] == "new_repository") or params[:controller] == "metapackages" or params[:controller] == "distributions" or params[:controller] == "repositories") 
+     image = "/images/navi_buendelon.png" 
+   else 
+     image = "/images/navi_buendel.png" 
+   end %>	
+<% @has_own_bundles = if logged_in? then Metapackage.find_all_by_user_id(current_user.id) else [] end %>
+<% link = if @has_own_bundles.length != 0 then "index_mine" else "index" end %>
+<% imagetag = image_tag(image, :border => '0', :alt=>t(:view_layouts_application_26),:title=>t(:view_layouts_application_26)) %> 
+<% text = "<div class=\"navi_zwei\">#{t(:view_layouts_application_23)}</div>" %>
+<%= link_to(imagetag+(text.html_safe),"/metapackages/#{link}") %>
+
+<% if ((params[:controller] == "home" and params[:action] != "home") and (params[:controller] == "home" and params[:action] != "new_repository")) or params[:controller] == "articles" %>
+   <% image = "/images/navi_communtuon.png" %>
+ <% else %>
+   <% image = "/images/navi_communtu.png" %>
+ <% end %>
+<% imagetag = image_tag(image, :border => '0', :alt=>t(:navigation_communtu),:title=>t(:navigation_communtu))  %>
+<% text = "<div class=\"navi_drei\">#{t(:view_layouts_application_25)}</div>" %>
+<%= link_to(imagetag+(text.html_safe),"/home/about") %>
+
+		
+	<!-- user -->
+<% if logged_in? %>
+<div id="person">
+		<%= link_to current_user.login, user_path(current_user.id), :title=>t(:view_layouts_application_22) %> 
+                <%= link_to image_tag("/images/icon_user.png", :border => '0', :alt=>t(:view_layouts_application_22),:title=>t(:view_layouts_application_22)), user_path(current_user.id), :class => 'person' %>
+                <%= new_message? ? link_to(image_tag("icon_msg_on.png", :alt=>t(:view_layouts_application_16),:title=>t(:view_layouts_application_16), :border=>"0"), '/inbox') : link_to(image_tag("icon_msg.png", :alt=>t(:view_layouts_application_18),:title=>t(:view_layouts_application_18), :border=>"0"), '/inbox') %>
+</div>
+<% end %>
+</div>
+<!-- content -->
+<div class="content">
+<!--
+<% if logged_in? %>
+<div align="right">
+<font size="-3"><%= link_to t(:view_layouts_application_14), '/home/contact_us' %>&nbsp;&nbsp;&nbsp;<%=t(:view_layouts_application_15)%>
+	<%= link_to current_user.login, user_path(current_user.id) %>
+	<%= link_to image_tag("16-member.png", :border => '0', :title => current_user.login, :alt => current_user.login), user_path(current_user.id) %>
+</font>
+	<%= new_message? ? link_to(image_tag("message_rollover.png", :alt=>t(:view_layouts_application_16),:title=>t(:view_layouts_application_16), :border=>"0"), '/inbox') : link_to(image_tag("message.png", :alt=>t(:view_layouts_application_18),:title=>t(:view_layouts_application_18), :border=>"0"), '/inbox') %>
+</div>
+<% end %>
+-->
+<% if ((params[:controller] == "home" and params[:action] != "home") and (params[:controller] == "home" and params[:action] != "new_repository")) %>
+<%= render(:partial => 'navi_communtu') %>
+<div class="content1"> 
+<% elsif params[:controller] == "articles" %>
+<%= render(:partial => 'home/navi_communtu') %>
+<div class="content1">
+<% elsif params[:action] == "metapackages" and params[:controller] == "users" %>
+<%= render(:partial => 'navi_bundle') %>
+<div class="content1">
+<% elsif ((params[:controller] == "packages") or (params[:controller] == "users" and params[:action] == "metapackages") or (params[:controller] == "home" and params[:action] == "new_repository") or params[:controller] == "metapackages" or params[:controller] == "distributions" or params[:controller] == "repositories") or ["install_bundle","install_package"].include?(session[:path]) %>
+<%= render(:partial => 'users/navi_bundle') %>
+<div class="content1">
+<% elsif ((params[:controller] == "users" and params[:action] != "metapackages" or params[:controller] == "categories" or params[:controller] == "debs" or params[:controller] == "roles") and is_admin?) %>
+<%= render(:partial => 'layouts/navi_admin') %>
+<div class="content1">
+<% elsif params[:action] == "home" %>
+<div class="contentstart">
+<% else %>
+<div class="content2">
+<% div_helper = 0 %>
+<% end %>
+<% #if cookies[:_communtu_session] == nil 
+%>
+<% #flash[:error] = t(:no_cookies) 
+%>
+<!--<div class="flash"><span id="error">
+<% flash[:error] %>
+</span>
+</div>-->
+		<%= yield %>
+<p></p>
+<% if div_helper != 1 %>
+</div>
+<% end %>
+<% ul = Userlog.new %>
+<% ul.refferer = request.env['REQUEST_URI'] %>
+<% if current_user != "" %>
+<% ul.user_id = current_user.id %>
+<% end %>
+<% ul.save %> 
+</div>
+	  <%= debug(params) if Rails.env.development? %>
+
+ </body>
+</html>
