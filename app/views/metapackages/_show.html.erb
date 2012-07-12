@@ -23,7 +23,7 @@
 		<span class="headline">   <%=h @metapackage.name %> (<%=h @metapackage.debian_name %>) </span> 
             
 		<% if show_install %>	
-            <span style="position: relative; left: 350px;">
+            <span>
 			  <%= link_to(image_tag("/images/64x64/download.png", :height => 30, :title =>t(:go_to_download), :alt=>t(:go_to_download), :border => "0"), "/metapackages/install/#{@metapackage.id}") %>
               <% if is_registered_user? %>
                 <%= link_to image_tag("/images/30x30/cd.png", :size => "30x30", :border => "0", :title => t(:create_your_livedvd), :alt => t(:create_your_livedvd)), "/download/settings/#{@metapackage.id}?path=bundle_cd" %>
