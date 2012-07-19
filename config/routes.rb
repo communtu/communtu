@@ -113,6 +113,8 @@ Communtu::Application.routes.draw do
   resources :livecds do
   
     member do
+      get :index
+      get :show
       get :remaster
       get :force_remaster
       get :remaster_new

@@ -58,6 +58,9 @@ class LivecdsController < ApplicationController
   end
 
   def index
+    @livecds = Livecd.find_all_by_failed_and_generated(false,true) #.select do |cd|
+#      File.exists?(cd.iso_image)
+#    end  
   end
 
   def start_vm

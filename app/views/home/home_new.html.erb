@@ -3,20 +3,20 @@
 	<div id="preview_pics">
 		<%= link_to raw(
 					image_tag("changeimg_0.png", :class => "preview_pic")+
-					"<div class='preview_text'><h5>My Ubuntu online</h5>Ubuntu virtuell ausprobieren</div>".html_safe
-				), "/", :onmouseover => "changeImgTo(0)", :class => "preview_link_active", :id => "preview_link0" %>
+					"<div class='preview_text'><h5>Communtu Gallery</h5>Fertige Ubuntu-Systeme</div>".html_safe
+				), "/livecds/index", :onmouseover => "changeImgTo(0)", :class => "preview_link_active", :id => "preview_link0" %>
 			<%= link_to raw(
 					image_tag("changeimg_2.png", :class => "preview_pic")+
-					"<div class='preview_text'><h5>Ubuntu-LiveCD</h5>Eigene LiveCD herunterladen</div>".html_safe
-				), "/download/livecd_new", :onmouseover => "changeImgTo(1);hover_button()", :class => "preview_link", :id => "preview_link1" %>
+					"<div class='preview_text'><h5>Communtu Builder</h5>Mein Ubuntu zusammenstellen</div>".html_safe
+				), "/download/start", :onmouseover => "changeImgTo(1);hover_button()", :class => "preview_link", :id => "preview_link1" %>
 			<%= link_to raw(
 					image_tag("changeimg_1.png", :class => "preview_pic")+
-					"<div class='preview_text'><h5>Mein Ubuntu erweitern</h5>mit Softwarebündeln</div>".html_safe	
+					"<div class='preview_text'><h5>Communtu Bundler</h5>eigene Bündel erstellen</div>".html_safe	
 				), "/metapackages/selection", :onmouseover => "changeImgTo(2);hover_button()", :class => "preview_link", :id => "preview_link2" %>
 	</div>
 	<div id="changeimg_box">
-		<%= link_to image_tag("changeimg_0.png", :class => "changeimg"), "#online", :class => "change_link", :id => "changeimg_0" %>
+		<%= link_to image_tag("changeimg_0.png", :class => "changeimg"), "/livecds/index", :class => "change_link", :id => "changeimg_0" %>
+		<%= link_to image_tag("changeimg_1.png", :class => "changeimg"), "/download/start", :class => "change_link", :id => "changeimg_2", :style => "display:none" %>
 		<%= link_to image_tag("changeimg_2.png", :class => "changeimg"), "/metapackages/selection", :class => "change_link", :id => "changeimg_1", :style => "display:none" %>
-		<%= link_to image_tag("changeimg_1.png", :class => "changeimg"), "/download/livecd_new", :class => "change_link", :id => "changeimg_2", :style => "display:none" %>
 	</div>
 </div>

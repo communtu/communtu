@@ -22,7 +22,7 @@ class DownloadController < ApplicationController
   before_filter :check_livecd_enabled, :only => [:create_livecd, :create_livecd_from_bundle]
 
   def title
-    if params[:controller] == "download" and params[:action] == "selection"
+    if params[:controller] == "download" and params[:action] == "bundles"
       "Communtu: " + t(:model_user_profile_tabz_1)
     elsif params[:controller] == "download" and params[:action] == "settings"
       "Communtu: " + t(:model_user_profile_tabz_4)
@@ -39,7 +39,7 @@ class DownloadController < ApplicationController
     session[:path] = "installation"
   end
 
-  def selection
+  def bundles
     if !logged_in?
       do_anonymous_login(true)
     end
@@ -263,10 +263,10 @@ class DownloadController < ApplicationController
     @back2 = !@cd.nil? and @cd.generated 
   end
   
-  def livecd_new
-end
+  def start
+  end
 
-def livecd_pro
+  def livecd_pro
     @categories=Category.all
     
     begin
