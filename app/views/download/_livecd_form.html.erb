@@ -20,14 +20,15 @@
   <% if cd.nil? %>
     <% if !bundle %>
       <p><%=if usb then t(:liveusb_start_message) else t(:livecd_start_message) end%><br />
-      <i><%=current_user.selected_packages_uniq.map{|m| m.name}.join(", ") %></i>
+      <i><%= # current_user.selected_packages_uniq.map{|m| m.name}.join(", ") 
+           %></i>
       </p>
     <% end %>
     <p><%=t(if usb then :liveusb_message else :livecd_message end,
             :cdimage_link => (link_to t(:iso_image), if usb then t(:livecd_image_link) else t(:livecd_image_link) end, 
                                                      :target => '_blank'))%></p>
     <p>
-    <b><%=t(if usb then :usb_donate else :cd_donate end, {:donate_link => link_to(t(:donate),'/home/donate')})%></b>
+    <b><%=raw(t(if usb then :usb_donate else :cd_donate end, {:donate_link => link_to(t(:donate),'/home/donate')}))%></b>
     <br>
     <% if bundle %>
       <%= form_tag("/download/create_livecd_from_bundle/#{@bundle.id}")%>
@@ -44,7 +45,7 @@
       <% end %>
       <%= submit_tag(if usb then t(:liveusb_start) else t(:livecd_start) end) %></p>
       <p>
-      <%=t(:view_user_profiles__installation_34, :sources => link_to (t(:sources), "/download/sources"))%>
+      <%=raw(t(:view_user_profiles__installation_34, :sources => link_to (t(:sources), "/download/sources")))%>
       </p>
       </form>
   <% else %>

@@ -46,8 +46,13 @@
 		<br />
 		<br />
 		<br />
+        Name deiner <br />Ubuntu-Zusammenstellung: <br />
+          <%= text_field_tag(:name,current_user.login) %>
+          <br />
+		Icon auswählen<br />  
+		Icon hochladen<br />  
 		Ubuntu schon installiert? <%= link_to "Los geht's", "/download/installation" %><br />
-		Neues Ubuntu erstellen <%= link_to "Los geht's", "/livecd/show" %><br />
+		Neues Ubuntu erstellen <%= link_to "Los geht's", "/livecds/show" %><br />
 
 	</div>
 </form>

@@ -39,7 +39,7 @@
             <div class="no_package_icon"> &nbsp;</div>
           <% end 
 %>
-  		<%= link_to(package.name, base_package_path(package), :title => t(:detailed_view)) %></td>
+  		<%= link_to(package.name, "/packages/#{package.id.to_s}", :title => t(:detailed_view)) %></td>
 	<td class="<%= css %>" align="middle" valign="middle">
      <% #if !package.stars.nil? 
 %>

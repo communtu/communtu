@@ -14,7 +14,27 @@
    # You should have received a copy of the GNU Affero Public License
    # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
 %>
+<form action="">
+<div id="leftarea">
+	Erklärungen
+</div>
 
+<div id="centerarea">
+<% if @cd.nil? then%>
+Dein Ubuntu wird gebaut!
+
+      <p><%=t(:livecd_start_message)%><br />
+      <i><%= # current_user.selected_packages_uniq.map{|m| m.name}.join(", ") 
+           %></i>
+      </p>
+    <p><%=t(:livecd_message,
+            :cdimage_link => (link_to t(:iso_image), t(:livecd_image_link), 
+                                                     :target => '_blank'))%></p>
+    <p>
+    <b><%=raw(t(:cd_donate, {:donate_link => link_to(t(:donate),'/home/donate')}))%></b>
+    <br>
+      <%= submit_tag(t(:livecd_start)) %></p>
+<% else %>
 <h1><%=h @cd.fullname %></h1>
 
 <%= render_flash %>
@@ -44,8 +64,7 @@
      </p>
  <% else %>
   <p><%= t(:creation_successful) %>, 
-      <%= number_to_human_size(@cd.size) %>,
-      <%= change_date_time(@cd.updated_at).to_s %></p>
+      </p>
   <ul>
     <li><%= link_to t(:iso_image), @cd.iso_url %></li>
     <% if is_power_user? %>
@@ -146,4 +165,16 @@ shutdown -h now
 </p>
 
 
-<%= link_to "Inhalt der CD editieren", "/download/edit"%>
+
+<% end %>
+</div>
+<div id="rightarea">
+	<b>Inhalt meines Ubuntus</b> <br />
+<%= link_to " anzeigen/bearbeiten", "/download/edit"%><br />
+
+Größe: <% if !@cd.nil? %><%= number_to_human_size(@cd.size) %>,
+      <%= change_date_time(@cd.updated_at).to_s %><% end %>
+</div>
+
+
+</form>

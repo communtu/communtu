@@ -58,9 +58,13 @@ class LivecdsController < ApplicationController
   end
 
   def index
-    @livecds = Livecd.find_all_by_failed_and_generated(false,true) #.select do |cd|
-#      File.exists?(cd.iso_image)
-#    end  
+    if params[:id]=="show" then
+      render 'show'
+    else
+      @livecds = Livecd.find_all_by_failed_and_generated(false,true) #.select do |cd|
+#        File.exists?(cd.iso_image)
+#      end
+    end  
   end
 
   def start_vm
