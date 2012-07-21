@@ -37,11 +37,12 @@ module MetapackagesHelper
                 "<li class='current-rating' style='width:#{r.rating*25}px'></li>" +
             "</ul>" +
          "</div>"
-       if !r.user.nil? 
-         if r.user.enabled?
-           out += r.user.login
+       if !r.user_id.nil? 
+         user = User.find_by_id(r.user_id)
+         if user.enabled?
+           out += user.login
          else
-           out += "<strike>" + r.user.login + "</strike>"
+           out += "<strike>" + user.login + "</strike>"
          end  
        end
          out += " - " + change_date_time(r.created_at).to_s + "</td><td align='right'>" + "</td></tr><tr><td colspan='2'><hr/>" +\

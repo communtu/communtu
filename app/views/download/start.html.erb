@@ -1,13 +1,16 @@
 <form action="">
 	<div id="leftarea">
-		<input id="blaucheck" class="cdcheck" type="checkbox" onchange="toggleCd('blau')" checked /> Eins <br />
-		<input id="gelbcheck" class="cdcheck" type="checkbox" onchange="toggleCd('gelb')" checked /> Zwei <br />
-		<input id="gruencheck" class="cdcheck" type="checkbox" onchange="toggleCd('gruen')" checked /> Drei <br />
-		<input id="lilacheck" class="cdcheck" type="checkbox" onchange="toggleCd('lila')" checked /> Vier <br />
-		<input id="rosacheck" class="cdcheck" type="checkbox" onchange="toggleCd('rosa')" checked /> Fünf <br />
-		<input id="rotcheck" class="cdcheck" type="checkbox" onchange="toggleCd('rot')" checked /> Sechs <br />
+		<input id="blaucheck" class="cdcheck" type="checkbox" onchange="toggleCd('blau')" checked /> Multimedia <br />
+		<input id="gelbcheck" class="cdcheck" type="checkbox" onchange="toggleCd('gelb')" checked /> Grafik <br />
+		<input id="gruencheck" class="cdcheck" type="checkbox" onchange="toggleCd('gruen')" checked /> Office <br />
+		<input id="lilacheck" class="cdcheck" type="checkbox" onchange="toggleCd('lila')" checked /> Spiele <br />
+		<input id="rosacheck" class="cdcheck" type="checkbox" onchange="toggleCd('rosa')" checked /> Filesharing <br />
+		<input id="rotcheck" class="cdcheck" type="checkbox" onchange="toggleCd('rot')" checked /> Windows-Umstieg <br />
 		<%= link_to "mehr Auswahl", "/download/bundles" %><br />
 		<br />
+		 <%= collection_select(:user, :distribution, Distribution.all, :id, :short_name, {}, :onchange => "download_save_settings();") %><br />
+		 <%= collection_select(:user, :derivative, Derivative.all, :id, :name, {}, :onchange => "download_save_settings();") %><br />
+		 <%= collection_select(:user, :architecture, Architecture.all, :id, :name, {}, :onchange => "download_save_settings();") %><br />
 		<%= link_to "Einstellungen", "/download/settings" %><br />
 	</div>
 	
