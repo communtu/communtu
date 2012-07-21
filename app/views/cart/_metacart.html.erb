@@ -66,10 +66,11 @@
 </table>
 <div class="jump_list">
 <%= link_to(image_tag("icon_save.png", :size => "17x17", :border => "0")+" "+t(:save), "/cart/save", :class => 'save_button') %>
-    <%= link_to_remote(image_tag("icon_delete.png", :size => "11x17", :border => "0")+" "+t(:delete), \
+    <%= link_to(image_tag("icon_delete.png", :size => "11x17", :border => "0")+" "+t(:delete), \
             {:update => 'meta_cart', \
             :url => "/cart/clear"}, \
-	    {:class => 'delete_button'}) %>
+	    {:class => 'delete_button'}, \
+	    :remote => true) %>
 <%= link_to(t(:view_cart_new_from_list_0), "/cart/new_from_list") %></div>
 <% else %>
     <div style="valign:bottom;">
