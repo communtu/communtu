@@ -21,7 +21,7 @@
   <td width="10%"><%= user.enabled ? 'yes' : 'no' %>
     <% unless user == current_user %>
       <% if user.enabled %>
-        <%= link_to(t(:view_users__user_0), user_path(user.id), :method => :delete) %>
+        <%= link_to(t(:view_users__user_0), "/users/#{user.id.to_s}", :method => :delete) %>
       <% else %>
         <%= link_to(t(:view_users__user_1), enable_user_path(user.id), :method => :put) %>
       <% end %>

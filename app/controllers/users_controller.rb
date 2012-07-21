@@ -213,7 +213,8 @@ class UsersController < ApplicationController
   end
 
   def index
-    @users = User.find_users(params[:page])                        
+    @users = User.find_users(params[:page])   
+    puts "HALLO"                     
     @u = User.find(:all, :conditions => {:anonymous => false, :enabled => true})
   end
  

@@ -601,7 +601,7 @@ end
   end
   
   def self.find_users(page)
-    User.find(:all, :page => {:size => 10, :current => page}, \
+    User.paginate(:page => page, \
         :conditions => {:anonymous => false, :enabled => true}, \
                        :order => "created_at asc")
   end
