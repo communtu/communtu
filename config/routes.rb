@@ -223,7 +223,7 @@ Communtu::Application.routes.draw do
   #match '/signup' => 'users#new', :as => :signup
   #match '/login' => 'sessions#new', :as => :login
   #match '/logout' => 'sessions#destroy', :as => :logout
-  match '/logout_login' => 'sessions#destroy', :as => :logout_login
+  match '/logout_login' => 'sessions#logoutlogin', :as => :logout_login
   match '/admin' => 'admin#index', :as => :admin
   match '/inbox' => 'mailbox#show', :as => :inbox
   match '/:controller(/:action(/:id))'
