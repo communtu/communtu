@@ -119,4 +119,8 @@ class HomeController < ApplicationController
 
   def env
   end
+
+  def home_new
+  end
+
 end

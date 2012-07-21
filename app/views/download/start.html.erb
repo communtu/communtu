@@ -1,31 +1,50 @@
+<form action="">
+	<div id="leftarea">
+		<input id="blaucheck" class="cdcheck" type="checkbox" onchange="toggleCd('blau')" checked /> Eins <br />
+		<input id="gelbcheck" class="cdcheck" type="checkbox" onchange="toggleCd('gelb')" checked /> Zwei <br />
+		<input id="gruencheck" class="cdcheck" type="checkbox" onchange="toggleCd('gruen')" checked /> Drei <br />
+		<input id="lilacheck" class="cdcheck" type="checkbox" onchange="toggleCd('lila')" checked /> Vier <br />
+		<input id="rosacheck" class="cdcheck" type="checkbox" onchange="toggleCd('rosa')" checked /> Fünf <br />
+		<input id="rotcheck" class="cdcheck" type="checkbox" onchange="toggleCd('rot')" checked /> Sechs <br />
+		<%= link_to "mehr Auswahl", "/download/bundles" %><br />
+		<br />
+		<%= link_to "Einstellungen", "/download/settings" %><br />
+	</div>
+	
+	<div id="centerarea">
+		<%= image_tag "create/cd.png", :class => "cd" %>
+		<%= image_tag "create/blau.png", :class => "cd", :id => "blau" %>
+		<%= image_tag "create/gelb.png", :class => "cd", :id => "gelb" %>
+		<%= image_tag "create/gruen.png", :class => "cd", :id => "gruen" %>
+		<%= image_tag "create/lila.png", :class => "cd", :id => "lila" %>
+		<%= image_tag "create/rosa.png", :class => "cd", :id => "rosa" %>
+		<%= image_tag "create/rot.png", :class => "cd", :id => "rot" %>
+		<%= image_tag "create/transparent.png", :class => "cd", :usemap => "#cdmap" %>
+	
+		<map name="cdmap" class="cd">
+			<area id="blauarea" href="#" shape="poly" coords="<%= coords 0, 45 %>" onclick="toggleCd('blau')" />	
+			<area id="gelbarea" href="#" shape="poly" coords="<%= coords 90, 135 %>" onclick="toggleCd('gelb')" />
+			<area id="gruenarea" href="#" shape="poly" coords="<%= coords 180, 225 %>" onclick="toggleCd('gruen')" />
+			<area id="lilaarea" href="#" shape="poly" coords="<%= coords 45, 90 %>" onclick="toggleCd('lila')" />	
+			<area id="rosaarea" href="#" shape="poly" coords="<%= coords 135, 180 %>" onclick="toggleCd('rosa')" />
+			<area id="rotarea" href="#" shape="poly" coords="<%= coords 225, 360 %>" onclick="toggleCd('rot')" />
+		</map>
+		<%= link_to "mehr Auswahl", "/download/bundles" %><br />
+	</div>
+	<div id="rightarea">
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		Ubuntu schon installiert? <%= link_to "Los geht's", "/download/installation" %><br />
+		Neues Ubuntu erstellen <%= link_to "Los geht's", "/livecd/show" %><br />
 
-<table>
-    <tr>
-        <td><%= link_to(image_tag("64x64/download.png", :height => 60, :title =>t(:go_to_download), :alt=>t(:go_to_download), :border => "0"), "/download/selection?path=install") %></td>
-        <td><%= t(:search_programs_bundles).html_safe %> <%= link_to(t(:continue), "/download/selection?path=install") %></td>
-    </tr>
-    <tr>
-        <td colspan="2"><hr /></td>
-    </tr>
-    <tr>
-        <td><%= link_to(image_tag("64x64/usb.png", :height => 64, :width => 64, :title =>t(:create_your_usb), :alt=>t(:create_your_usb), :border => "0"), "/download/selection?path=usb") %></td>
-
-        <td><%= t(:make_your_usb).html_safe %> <%= link_to(t(:continue), "/download/selection?path=usb") %></td>
-    </tr>
-
-    <tr>
-        <td colspan="2"><hr /></td>
-    </tr>
-
-    <tr>
-        <td><%= link_to(image_tag("64x64/cd.png", :height => 64, :width => 64, :title =>t(:create_your_livedvd), :alt=>t(:create_your_livedvd), :border => "0"), "/download/selection?path=cd") %></td>
-
-        <td><%= t(:make_your_livedvd).html_safe %> <%= link_to(t(:continue), "/download/selection?path=cd") %></td>
-    </tr>
-    
-
-    <tr>
-        <td colspan="2"><hr /></td>
-    </tr>
-</table>
-
+	</div>
+</form>

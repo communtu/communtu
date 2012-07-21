@@ -17,5 +17,8 @@
 
 <h2><%=t(:livecd)%></h2>
 <%= render_flash %>
+<% for cd in @livecds %>
+   <%= link_to cd.name, "/livecds/show/"+cd.id.to_s %> <br />
+<% end%>
 <%= render :partial => 'download/box' %>
 <%= render :partial => 'download/livecds' %>

@@ -82,7 +82,7 @@
             <% end %>
            </span>
         <%  else %>
-          <%= link_to t(:register), user_path(current_user.id) %> |
+          <%= link_to t(:register), "/user/#{current_user.id}" %> |
           <% if !is_admin? %>
             <span class="register_text"> <%= t(:guest) %> </span>
           <% end %>
