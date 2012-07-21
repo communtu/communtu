@@ -73,7 +73,7 @@
 
     <% if logged_in? %>
       <!-- log out -->
-      <%= link_to t(:view_layouts_application_9), logout_path  %> |
+      <%= link_to t(:view_layouts_application_9), "/sessions/destroy"  %> |
 
         <% if !is_anonymous? %>
           <span class="register_text"><%= t(:register) %>
@@ -141,8 +141,8 @@
 	<!-- user -->
 <% if logged_in? %>
 <div id="person">
-		<%= link_to current_user.login, user_path(current_user.id), :title=>t(:view_layouts_application_22) %> 
-                <%= link_to image_tag("icon_user.png", :border => '0', :alt=>t(:view_layouts_application_22),:title=>t(:view_layouts_application_22)), user_path(current_user.id), :class => 'person' %>
+		<%= link_to current_user.login, "/users/#{current_user.id}", :title=>t(:view_layouts_application_22) %> 
+                <%= link_to image_tag("icon_user.png", :border => '0', :alt=>t(:view_layouts_application_22),:title=>t(:view_layouts_application_22)), "/users/#{current_user.id}", :class => 'person' %>
                 <%= new_message? ? link_to(image_tag("icon_msg_on.png", :alt=>t(:view_layouts_application_16),:title=>t(:view_layouts_application_16), :border=>"0"), '/inbox') : link_to(image_tag("icon_msg.png", :alt=>t(:view_layouts_application_18),:title=>t(:view_layouts_application_18), :border=>"0"), '/inbox') %>
 </div>
 <% end %>
@@ -153,8 +153,8 @@
 <% if logged_in? %>
 <div align="right">
 <font size="-3"><%= link_to t(:view_layouts_application_14), '/home/contact_us' %>&nbsp;&nbsp;&nbsp;<%=t(:view_layouts_application_15)%>
-	<%= link_to current_user.login, user_path(current_user.id) %>
-	<%= link_to image_tag("16-member.png", :border => '0', :title => current_user.login, :alt => current_user.login), user_path(current_user.id) %>
+	<%= link_to current_user.login, "/users/#{current_user.id}" %>
+	<%= link_to image_tag("16-member.png", :border => '0', :title => current_user.login, :alt => current_user.login), "/users/#{current_user.id}" %>
 </font>
 	<%= new_message? ? link_to(image_tag("message_rollover.png", :alt=>t(:view_layouts_application_16),:title=>t(:view_layouts_application_16), :border=>"0"), '/inbox') : link_to(image_tag("message.png", :alt=>t(:view_layouts_application_18),:title=>t(:view_layouts_application_18), :border=>"0"), '/inbox') %>
 </div>
