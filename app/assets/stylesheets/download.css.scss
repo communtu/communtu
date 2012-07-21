@@ -2,26 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#leftarea {
-	float:left;
-	font-weight: bold;
-	width: 170px;
-	height: 490px;
-	padding-top: 10px;
-	line-height: 30px;
-	border-right: 1px black solid;
-	margin-right:30px;
-	background: url("create/bgleft.png") right no-repeat;
-}
-#centerarea {
-	width: 460px;
-	height: 460px;
-	float: left;
-}
-
-#rightarea {
-	float:right;
-}
 #furtherbutton {
 	width:150px;
 	height:109px;

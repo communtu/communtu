@@ -15,10 +15,18 @@
    # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
 %>
 
-<h2><%=t(:livecd)%></h2>
+<h2>Communtu Gallery</h2>
+<div id="leftarea">
+	Suche
+</div>
+<div id="centerarea">
 <%= render_flash %>
 <% for cd in @livecds %>
-   <%= link_to cd.name, "/livecds/show/"+cd.id.to_s %> <br />
+   <%= image_tag "create/snail-100.png", :width => "15px" %> <%= link_to cd.name, "/livecds/show/"+cd.id.to_s %> <br />
 <% end%>
 <%= render :partial => 'download/box' %>
 <%= render :partial => 'download/livecds' %>
+</div>
+<div id="rightarea">
+	Erklärungen
+</div>

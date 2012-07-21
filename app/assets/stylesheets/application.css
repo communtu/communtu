@@ -110,3 +110,23 @@
     width: 220px;
 	margin: 10px;
 }
+#leftarea {
+	float:left;
+	font-weight: bold;
+	width: 170px;
+	height: 490px;
+	padding-top: 10px;
+	line-height: 30px;
+	border-right: 1px black solid;
+	margin-right:30px;
+	background: url("create/bgleft.png") right no-repeat;
+}
+#centerarea {
+	width: 460px;
+	height: 460px;
+	float: left;
+}
+
+#rightarea {
+	float:right;
+}
