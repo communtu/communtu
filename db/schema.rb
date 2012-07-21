@@ -60,7 +60,6 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.integer  "p_nofiles"
     t.boolean  "tested",             :default => false
     t.text     "conflict_msg"
-    t.integer  "priority"
     t.boolean  "best_of",            :default => false
   end
 
@@ -220,7 +219,6 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "locale"
   end
 
   create_table "livecds", :force => true do |t|
@@ -233,26 +231,24 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.string   "srcdeb"
     t.string   "installdeb"
     t.integer  "pid"
-    t.boolean  "generated",                           :default => false
-    t.boolean  "generating",                          :default => false
-    t.boolean  "failed",                              :default => false
-    t.text     "log",             :limit => 16777215
+    t.boolean  "generated",       :default => false
+    t.boolean  "generating",      :default => false
+    t.boolean  "failed",          :default => false
+    t.text     "log"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "first_try",                           :default => true
+    t.boolean  "first_try",       :default => true
     t.integer  "license_type"
     t.integer  "security_type"
     t.integer  "profile_version"
-    t.boolean  "iso",                                 :default => false
-    t.boolean  "kvm",                                 :default => false
-    t.boolean  "usb",                                 :default => false
+    t.boolean  "iso",             :default => false
+    t.boolean  "kvm",             :default => false
+    t.boolean  "usb",             :default => false
     t.integer  "vm_pid"
     t.string   "vm_hda"
-    t.integer  "downloaded",                          :default => 0
-    t.boolean  "published",                           :default => false
+    t.integer  "downloaded",      :default => 0
+    t.boolean  "published",       :default => false
     t.text     "conflict_msg"
-    t.integer  "port"
-    t.string   "short_log"
   end
 
   create_table "message_copies", :force => true do |t|
@@ -335,6 +331,10 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.datetime "updated_at"
   end
 
+  create_table "rates", :force => true do |t|
+    t.integer "score"
+  end
+
   create_table "ratings", :force => true do |t|
     t.integer  "rating",                      :default => 0
     t.datetime "created_at",                                  :null => false
@@ -343,8 +343,13 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.integer  "user_id",                     :default => 0,  :null => false
     t.text     "comment"
     t.integer  "comment_tid"
+    t.text     "free_text"
+    t.integer  "rate_id"
+    t.string   "rater_name"
   end
 
+  add_index "ratings", ["rate_id"], :name => "index_ratings_on_rate_id"
+  add_index "ratings", ["rateable_id", "rateable_type"], :name => "index_ratings_on_rateable_id_and_rateable_type"
   add_index "ratings", ["rateable_id", "rateable_type"], :name => "rateable_id"
   add_index "ratings", ["user_id"], :name => "fk_ratings_user"
 
@@ -472,6 +477,15 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.string   "firstname",                 :limit => 30, :default => ""
     t.integer  "architecture_id",                         :default => 1
     t.boolean  "advanced",                                :default => false
+    t.string   "jabber"
+    t.string   "icq"
+    t.string   "aboutMe"
+    t.string   "skype"
+    t.string   "msn"
+    t.string   "location"
+    t.string   "hobbies"
+    t.string   "uu_username"
+    t.string   "avatar"
   end
 
   create_table "videos", :force => true do |t|

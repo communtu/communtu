@@ -234,7 +234,7 @@ class Package < BasePackage
         cond_str += " and is_program = ?"
         cond_vals << '1'
     end
-    Package.paginate(:all, :page => {:size => 10, :current => page}, \
+    Package.paginate( :page => {:size => 10, :current => page}, \
                        :conditions => ([cond_str]+cond_vals), \
                        :order => "popcon desc, name asc")
   end

@@ -81,6 +81,11 @@ module ActiveRecord
         def parse_ratings(output = :xml)
           Rating.parse_as(ratings, output)
         end
+			 
+			  def ratings_count()
+			    rates.size
+			  end
+			
 			end
 			
 		end
