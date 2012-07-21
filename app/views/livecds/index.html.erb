@@ -17,16 +17,35 @@
 
 <h2>Communtu Gallery</h2>
 <div id="leftarea">
-	Suche
+	<%= form_tag "/livecds/index"%>
+	<%= collection_select(:cd, :distribution, [Distribution.new(:short_name => "alle Versionen")]+Distribution.all, :id, :short_name) %><br />
+	<%= collection_select(:cd, :derivative, [Derivative.new(:name => "alle Derivate")]+Derivative.all, :id, :name) %><br />
+	<%= collection_select(:cd, :architecture, [Architecture.new(:name => "all")]+Architecture.all, :id, :simple_name) %><br />
+	<%= submit_tag "filtern"%>
+	</form>
 </div>
 <div id="centerarea">
 <%= render_flash %>
+<% count=0 %>
+<table>
+<tr>
 <% for cd in @livecds %>
-   <%= image_tag "create/snail-100.png", :width => "15px" %> <%= link_to cd.name, "/livecds/show/"+cd.id.to_s %> <br />
+	<% count+=1%>
+   	<td>
+   		<table>
+   			<tr>
+   			<td>
+   				<%= image_tag "create/snail-100.png", :width => "35px" %>
+			</td>
+			<td>
+				<%= link_to cd.name, "/livecds/show/"+cd.id.to_s %><br /> <%= cd.derivative.name%> <%= cd.distribution.short_name%> <%= cd.architecture.simple_name%>
+			</td>
+			</tr>
+   		</table>
+	</td>
+	<% if count%3==0 then %> </tr> <tr>
+	<% end%>
 <% end%>
-<%= render :partial => 'download/box' %>
-<%= render :partial => 'download/livecds' %>
-</div>
-<div id="rightarea">
-	Erklärungen
+</tr>
+</table>
 </div>

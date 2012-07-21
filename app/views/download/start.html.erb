@@ -1,11 +1,11 @@
 <form action="">
 	<div id="leftarea">
-		<input id="blaucheck" class="cdcheck" type="checkbox" onchange="toggleCd('blau')" checked /> Multimedia <br />
-		<input id="gelbcheck" class="cdcheck" type="checkbox" onchange="toggleCd('gelb')" checked /> Grafik <br />
-		<input id="gruencheck" class="cdcheck" type="checkbox" onchange="toggleCd('gruen')" checked /> Office <br />
-		<input id="lilacheck" class="cdcheck" type="checkbox" onchange="toggleCd('lila')" checked /> Spiele <br />
-		<input id="rosacheck" class="cdcheck" type="checkbox" onchange="toggleCd('rosa')" checked /> Filesharing <br />
-		<input id="rotcheck" class="cdcheck" type="checkbox" onchange="toggleCd('rot')" checked /> Windows-Umstieg <br />
+		<%= image_tag "create/Multimedia_suess_bunt_hintergrundlos.png", :width => "40px"%><input id="blaucheck" class="cdcheck" type="checkbox" onchange="toggleCd('blau')" checked /> Multimedia <br />
+		<%= image_tag "create/Grafik_bunt_hintergrundlos.png", :width => "40px"%><input id="gelbcheck" class="cdcheck" type="checkbox" onchange="toggleCd('gelb')" checked /> Grafik <br />
+		<%= image_tag "create/Buero_bunt_hintergrundlos.png", :width => "40px"%><input id="gruencheck" class="cdcheck" type="checkbox" onchange="toggleCd('gruen')" checked /> Büro <br />
+		<%= image_tag "create/Spiele_hintergrundlos.png", :width => "30px"%><input id="lilacheck" class="cdcheck" type="checkbox" onchange="toggleCd('lila')" checked /> Spiele <br />
+		<%= image_tag "create/Filesharing.png", :width => "40px"%><input id="rosacheck" class="cdcheck" type="checkbox" onchange="toggleCd('rosa')" checked /> Filesharing <br />
+		<%= image_tag "create/Windows_verlassen_neu_bunt2.png", :width => "40px"%><input id="rotcheck" class="cdcheck" type="checkbox" onchange="toggleCd('rot')" checked /> Windows-Umstieg <br />
 		<%= link_to "mehr Auswahl", "/download/bundles" %><br />
 		<br />
 		 <%= collection_select(:user, :distribution, Distribution.all, :id, :short_name, {}, :onchange => "download_save_settings();") %><br />
@@ -15,23 +15,9 @@
 	</div>
 	
 	<div id="centerarea">
-		<%= image_tag "create/cd.png", :class => "cd" %>
-		<%= image_tag "create/blau.png", :class => "cd", :id => "blau" %>
-		<%= image_tag "create/gelb.png", :class => "cd", :id => "gelb" %>
-		<%= image_tag "create/gruen.png", :class => "cd", :id => "gruen" %>
-		<%= image_tag "create/lila.png", :class => "cd", :id => "lila" %>
-		<%= image_tag "create/rosa.png", :class => "cd", :id => "rosa" %>
-		<%= image_tag "create/rot.png", :class => "cd", :id => "rot" %>
-		<%= image_tag "create/transparent.png", :class => "cd", :usemap => "#cdmap" %>
-	
-		<map name="cdmap" class="cd">
-			<area id="blauarea" href="#" shape="poly" coords="<%= coords 0, 45 %>" onclick="toggleCd('blau')" />	
-			<area id="gelbarea" href="#" shape="poly" coords="<%= coords 90, 135 %>" onclick="toggleCd('gelb')" />
-			<area id="gruenarea" href="#" shape="poly" coords="<%= coords 180, 225 %>" onclick="toggleCd('gruen')" />
-			<area id="lilaarea" href="#" shape="poly" coords="<%= coords 45, 90 %>" onclick="toggleCd('lila')" />	
-			<area id="rosaarea" href="#" shape="poly" coords="<%= coords 135, 180 %>" onclick="toggleCd('rosa')" />
-			<area id="rotarea" href="#" shape="poly" coords="<%= coords 225, 360 %>" onclick="toggleCd('rot')" />
-		</map>
+		<%= image_tag "create/Schnecke_pur_hintergrundlos.png", :width => "500px" %>
+		<%=# image_tag "create/transparent.png", :class => "cd", :usemap => "#cdmap"
+		%>
 		<%= link_to "mehr Auswahl", "/download/bundles" %><br />
 	</div>
 	<div id="rightarea">
@@ -46,8 +32,14 @@
 		<br />
 		<br />
 		<br />
-        Name deiner <br />Ubuntu-Zusammenstellung: <br />
+		<table><tr><td>
+          <%= image_tag "create/Buendel_gut_bunt.png", :width => "35px"%>
+		  </td>
+		  <td>
+		Name deiner <br />Ubuntu-Zusammenstellung: <br />
           <%= text_field_tag(:name,current_user.login) %>
+		  </td></tr>
+		  </table>
           <br />
 		Icon auswählen<br />  
 		Icon hochladen<br />  
