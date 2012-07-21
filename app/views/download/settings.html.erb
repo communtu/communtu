@@ -54,9 +54,18 @@
         
         <%= radio_button_tag "user[security]", "0", options[0], :onchange => "download_save_settings();" %><%=t(:view_user_profiles__profile_data_10)%><br />
         <%= radio_button_tag "user[security]", "1", options[1], :onchange => "download_save_settings();" %><%=t(:view_user_profiles__profile_data_11)%>
-        <%= package_link "gdmap"%>, <%= package_link "pdfedit"%>, <%= package_link "Acroread"%>, ... )<br />
-        <%= radio_button_tag "user[security]", "2", options[2], :onchange => "download_save_settings();" %><%=t(:view_user_profiles__profile_data_12)%>
-        <%= package_link "Skype"%>, <%= package_link "Virtualbox-4.0"%>, DVDs ... )<br />
+        
+        <%= link_to "gdmap", "/packages/#{Package.find_by_name("gdmap").id.to_s}" %>,
+
+        <%= link_to "pdfedit", "/packages/#{Package.find_by_name("pdfedit").id.to_s}" %>,
+
+        <%= link_to "Acroread", "/packages/#{Package.find_by_name("Acroread").id.to_s}" %>
+        , ... )<br />
+        <%= radio_button_tag "user[security]", "2", options[2], :onchange => "download_save_settings();" %>
+        <%=t(:view_user_profiles__profile_data_12)%>
+        <%= link_to "Skype", "/packages/#{Package.find_by_name("Skype").id.to_s}" %>,
+        <%= link_to "Virtualbox-4.0", "/packages/#{Package.find_by_name("Virtualbox-4.0").id.to_s}" %>,
+        DVDs ... )<br />
          </li>
     <li><div style="margin-bottom:30px">
     	<% options = Array.new(Package.license_types.length, false) %>
@@ -70,7 +79,8 @@
         <p><%=t(:view_user_profiles__profile_data_13)%></p>
         <%= radio_button_tag "user[license]", "0", options[0], :onchange => "download_save_settings();" %><%=t(:view_user_profiles__profile_data_14)%><br />
         <%= radio_button_tag "user[license]", "1", options[1], :onchange => "download_save_settings();" %><%=t(:view_user_profiles__profile_data_15)%>
-         <%= package_link "Skype"%>, <%= package_link "Acroread"%>, ... )<br />
+         <%= link_to "Skype", "/packages/#{Package.find_by_name("Skype").id.to_s}"%>,
+         <%= link_to "Acroread", "/packages/#{Package.find_by_name("Acroread").id.to_s}"%>, ... )<br />
         </div></li>
     <li><%= check_box_tag "user[advanced]", 1, @user.advanced, 
               :data => { :remote => true, 
