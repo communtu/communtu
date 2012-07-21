@@ -77,7 +77,7 @@ Communtu::Application.routes.draw do
   
   end
 
-  root :to => 'home#home_new'
+  root :to => 'home#home'
   resources :architectures
   resources :articles
   resources :categories do
