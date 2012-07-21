@@ -49,7 +49,7 @@
 <p class="left_space"><%= link_to(t(:choose_bundle), "/bundle")%></p>
 <table width="100%" cellspacing="0">
 <% if !@packages.empty? then%>
-<tr><td colspan="4" class="jump_list"><%= paginating_links(@packages, :window_size => 10) %></td></tr>
+<tr><td colspan="4" class="jump_list"><%= will_paginate @packages) %></td></tr>
 <% for package in @packages %>
 <% css=cycle("packageList0", "packageList1") %>
   <tr> 

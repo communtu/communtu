@@ -11,6 +11,8 @@ gem 'sqlite3'
 gem 'mysql'
 gem 'acts_as_rateable'
 
+gem 'will_paginate'
+
 gem 'json'
 #gem 'aasm'#, :require => 'aasm'
 
