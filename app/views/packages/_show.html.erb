@@ -17,7 +17,7 @@
 
     <div class="inner0">
 <span class="headline">
-	<%= @package.icon(35)%>
+	<%= @package.icon(35).html_safe%>
 	<%= @package.name %>
 </span>
   <% if show_install %>
@@ -36,9 +36,16 @@
   <%=if @package.is_program then t(:yes1) else t(:no1) end %>
    </td>
 <% if !@package.stars.nil? %>
-     <td><b><%=t(:view_packages_show_8)%></b></td> 	
-     <td><%= number_with_precision(@package.stars, 1) %><%=t(:view_packages_show_9)%></td>
-     <td nowrap class='star-rating-foreign' style='width:<%= (@package.stars * 25).to_i %>px; '></td><td><a href="#" class="tt"><%= image_tag("24-message-info.png", :size => "18x18", :border => "0") %><span class="tooltip"><span class="top"></span><span class="middle"><%= t(:stars_popcon) %></span><span class="bottom"></span></span></a></td>
+     <td><b><%=t(:view_packages_show_8).html_safe%></b></td>
+     <td><%= number_with_precision(@package.stars, :precision => 1).html_safe %><%=t(:view_packages_show_9).html_safe%></td>
+     <td nowrap class='star-rating-foreign' style='width:<%= (@package.stars * 25).to_i %>px; '></td>
+     <td><a href="#" class="tt"><%= image_tag("24-message-info.png", :size => "18x18", :border => "0") %>
+         <span class="tooltip">
+            <span class="top"></span>
+            <span class="middle"><%= t(:stars_popcon).html_safe %></span>
+            <span class="bottom"></span>
+         </span>
+     </a></td>
 <% end %>
 </tr>
 <tr>

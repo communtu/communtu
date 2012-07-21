@@ -133,7 +133,7 @@
     <%=t(:view_metapackages_show_modified)%>  <%=show_version(@metapackage)%> &nbsp;
     <% if !@metapackage.debianizing %> 
       <%=t(:view_metapackages_show_save)%>
-      <%=link_to(image_tag("apps/Metapackage.png", :alt=>t(:view_metapackages_show_save_2),:title=>t(:view_metapackages_show_save_2), :border=>"0" ), :action => 'save', :id => @metapackage.id )%>
+      <%=link_to(image_tag("apps/Metapackage.png", :alt=>t(:view_metapackages_show_save_2).html_safe,:title=>t(:view_metapackages_show_save_2), :border=>"0" ), :action => 'save', :id => @metapackage.id )%>
     <% end %>
   </div>
 <% end %>
