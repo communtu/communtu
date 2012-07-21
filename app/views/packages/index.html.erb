@@ -41,7 +41,7 @@
 </tr>
 <tr><td></td><td align="right"><%= t(:exact) %>  <%= check_box_tag("exact",1,session[:exact]) %></td></tr>
 <tr>
-<td></td><td align="right"><%=t(:view_packages__packagelist_1)%>
+<td></td><td align="right"><%=t(:view_packages__packagelist_1).html_safe%>
    <%= check_box_tag("programs",1,session[:programs]) %>
 </td></tr>
 </table>
@@ -55,7 +55,7 @@
   <tr> 
   	<td class="<%= css %>">
           <% if (icon=package.icon(20))!="" %>
-            <%= icon %>
+            <%= icon.html_safe %>
           <%  else %>
             <div class="no_package_icon"> &nbsp;</div>
           <% end %>
