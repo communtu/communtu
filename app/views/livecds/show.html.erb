@@ -28,8 +28,8 @@ Dein Ubuntu wird gebaut!
            %></i>
       </p>
     <p><%=t(:livecd_message,
-            :cdimage_link => (link_to t(:iso_image), t(:livecd_image_link), 
-                                                     :target => '_blank'))%></p>
+            :cdimage_link => (link_to t(:iso_image), t(:livecd_image_link),
+                                                     :target => '_blank')).html_safe%></p>
     <p>
     <b><%=raw(t(:cd_donate, {:donate_link => link_to(t(:donate),'/home/donate')}))%></b>
     <br>
