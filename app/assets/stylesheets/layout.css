@@ -567,10 +567,10 @@ a.tt:hover span.tooltip{
 	width:200px;
 	color: #993300;
     	text-align: left;
-	filter: alpha(opacity:120);
+	/**filter: alpha(opacity:120);
 	KHTMLOpacity: 0.90;
 	MozOpacity: 0.90;
-	opacity: 0.90;
+	opacity: 0.90; **/
 	}
 a.tt:hover span.top{
 	display: block;
