@@ -21,6 +21,9 @@ class ApplicationController < ActionController::Base
                 :new_message?,
                 :received_messages?,
                 :sent_messages?,
+		:is_gnome?,
+		:is_kde?,
+		:is_xfce?,
                 :editing_metapackage?
 
   def available_locales; AVAILABLE_LOCALES; end

@@ -36,7 +36,9 @@ class DownloadController < ApplicationController
   helper :download
   
   def start
-    session[:path] = "installation"
+    if !logged_in?
+      do_anonymous_login(true)
+    end
   end
 
   def bundles
@@ -261,9 +263,6 @@ class DownloadController < ApplicationController
   def usb
     @cd = current_user.current_livecd
     @back2 = !@cd.nil? and @cd.generated 
-  end
-  
-  def start
   end
 
   def livecd_pro
