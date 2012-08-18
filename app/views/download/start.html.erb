@@ -1,13 +1,115 @@
 <%= render_flash %>
 
-<form action="">
+    <script type="text/javascript">
+    var total_items = 0;
+    var total_size = 0;
+	var bundles = new Array();
+    $j(document).ready(function() {
+
+        /* reset all items to original position */
+        $j(".item").draggable({
+            revert: true            
+        });
+		
+		/* items in the cart can be moved horizontally */
+        $j("#cart_items").draggable({
+            axis: "x"
+        });
+
+        /* turn the cart_items area into an area where items can be dropped */
+        $j("#cart_items").droppable({
+            accept: ".item",
+            activeClass: "drop-active",
+            hoverClass: "drop-hover",
+			/* callback function for the event that an item is dropped */
+            drop: function(event, ui) {
+                var item = ui.draggable.html();
+                var itemid = ui.draggable.attr("id");
+				if (bundles.indexOf(itemid) == -1) {
+					bundles.push(itemid);
+                	var html = '<div class="item icart">';
+                	html = html + '<div class="divrm">';
+                	html = html + '<a onclick="myremove(this)" class="remove '+itemid+'">&times;</a>';
+                	html = html + '<div/>'+item+'</div>';
+                	$j("#cart_items").append(html);
+                	// update total items
+                	total_items++;
+                	$j("#citem").html(total_items);
+                	// update total size
+                	var size = parseInt(ui.draggable.find(".size").html());
+                	total_size = total_size + size;
+                	$j("#csize").html(total_size);
+                	// expand cart items
+                	if (total_items > 4) {
+                    $j("#cart_items").animate({width: "+=120"}, 'slow');
+					}
+                }
+            }
+        });
+       
+        /* button moving items to the left */
+        $j("#btn_next").click(function() {
+            $j("#cart_items").animate({left: "-=100"}, 100);
+            return false;
+        });
+        /* button moving items to the right */
+        $j("#btn_prev").click(function() {
+            $j("#cart_items").animate({left: "+=100"}, 100);
+            return false;
+        });
+        /* button for clearing cart */
+        $j("#btn_clear").click(function() {
+            $j("#cart_items").fadeOut("2000", function() {
+               $j(this).html("").fadeIn("fast").css({left: 0});
+            });
+            $j("#citem").html("0");
+            $j("#csize").html("0");
+            total_items = 0;
+            total_size = 0;
+            return false;
+        });
+    });
+	
+	/* remove an item from the cart */
+    function myremove(el) {
+        var itemid = $j(el).parent().parent().attr("id");
+		var idx = bundles.indexOf(itemid); // Find the index
+        if(idx!=-1) bundle.splice(idx, 1); // Delete the id
+		$j(el).hide();
+        $j(el).parent().parent().effect("highlight", {color: "#ff0000"}, 1000);
+        $j(el).parent().parent().fadeOut('1000');
+        setTimeout(function() {
+            $j(el).parent().parent().remove();
+            // collapse cart items
+            if (total_items > 3) {
+                $j("#cart_items").animate({width: "-=120"}, 'slow');
+            }
+        }, 1100);
+
+        // update total item
+        total_items--;
+        $j("#citem").html(total_items);
+
+        // update totl size
+        var size = parseInt($j(el).parent().parent().find(".size").html());
+        total_size = total_size - size;
+        $j("#csize").html(total_size);
+    }
+    </script>
+
+      <form action="">
 	<div id="leftarea">
-		<%= image_tag "create/Multimedia_suess_bunt_hintergrundlos.png", :width => "40px"%><input id="blaucheck" class="cdcheck" type="checkbox" onchange="toggleCd('blau')" checked /> Multimedia <br />
-		<%= image_tag "create/Grafik_bunt_hintergrundlos.png", :width => "40px"%><input id="gelbcheck" class="cdcheck" type="checkbox" onchange="toggleCd('gelb')" checked /> Grafik <br />
-		<%= image_tag "create/Buero_bunt_hintergrundlos.png", :width => "40px"%><input id="gruencheck" class="cdcheck" type="checkbox" onchange="toggleCd('gruen')" checked /> Büro <br />
-		<%= image_tag "create/Spiele_hintergrundlos.png", :width => "30px"%><input id="lilacheck" class="cdcheck" type="checkbox" onchange="toggleCd('lila')" checked /> Spiele <br />
-		<%= image_tag "create/Filesharing.png", :width => "40px"%><input id="rosacheck" class="cdcheck" type="checkbox" onchange="toggleCd('rosa')" checked /> Filesharing <br />
-		<%= image_tag "create/Windows_verlassen_neu_bunt2.png", :width => "40px"%><input id="rotcheck" class="cdcheck" type="checkbox" onchange="toggleCd('rot')" checked /> Windows-Umstieg <br />
+      <div id="item_container">
+      	<% for h in @main_bundles %>
+          <div class="item" id="<%= h[:id] %>">
+              <%= image_tag h[:img], :width => "40px"%>
+              <label class="title"><%= h[:name] %></label>
+              <label class="size"><%= h[:size] %></label> 
+          </div>
+		<% end %>
+          <div class="clear"></div>
+      </div>
+
 		<%= link_to "mehr Auswahl", "/download/bundles" %><br />
 		<br />
 		 <%= collection_select(:user, :distribution, Distribution.all, :id, :short_name, {}, :onchange => "download_save_settings();") %><br />
@@ -17,7 +119,31 @@
 	</div>
 	
 	<div id="centerarea">
-		<%= image_tag "CD_Stick_sw.png", :width => "99%" %>
+		<div id="cart_container">
+          <h3>
+              <span>Meine Zusammenstellung</span>
+              <div class="clear"></div>
+          </h3>
+          <div id="cart_toolbar">
+              <div id="cart_items" class="back"></div>
+          </div>
+          <div id="navigate">
+              <div id="nav_left">
+                  <a href="" id="btn_prev"><</a>
+                  <a href="" id="btn_next">></a>
+                  <a href="" id="btn_clear">Alle löschen</a>
+              </div>
+              <div id="nav_right">
+                  <span class="sptext">
+                      <label>Bündel </label><label class="count" id="citem">0</label>
+                  </span>
+                  <span class="sptext">
+                      <label>Größe </label><label class="count" id="csize">0</label>
+                  </span>
+              </div>
+              <div class="clear"></div>
+          </div>
+      </div>
 		<%= link_to "mehr Auswahl", "/download/bundles" %><br />
 	</div>
 	<div id="rightarea">

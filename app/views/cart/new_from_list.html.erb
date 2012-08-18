@@ -23,7 +23,7 @@
 <pre>
 debfoster -sn | tail -n +2 | tr ' ' '\n' | sort -u > packages.list
 </pre>
-<%=t(:view_cart_new_from_list_3,{:debfoster=>package_link("debfoster")})%>
+<%=t(:view_cart_new_from_list_3,{:debfoster=>package_link("debfoster")}).html_safe%>
 
 <%= form_tag({:controller => :cart, :id => :current_user.id, :action => :create_from_list}, :multipart => true)%>
 <table>
