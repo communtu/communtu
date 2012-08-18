@@ -74,7 +74,7 @@ msgstr "e-mail"
 
 #: controller_accounts_2
 msgid "Aktivierungs-Code nicht gefunden. Bitte versuche, ein neues Benutzerkonto anzulegen."
-msgstr "Could'nt find activation code. Please try to create a new account."
+msgstr "Couldn't find activation code. Please try to create a new account."
 
 #: view_home_beteiligung_12
 msgid "Programmierung"

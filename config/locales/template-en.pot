@@ -13,692 +13,2174 @@ msgstr ""
 "X-Poedit-Country: GERMANY\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: view_distributions_index_0
-msgid "Available Ubuntu-versions"
-msgstr ""
-#: view_home_contact_us_0
-msgid "Feedback"
-msgstr ""
-#: required_fields
-msgid "mandatory fields"
-msgstr ""
-#: view_users__mailbox_list_3
-msgid "sent messages "
-msgstr ""
-#: view_users_edit_2
-msgid "delete profile"
-msgstr ""
-#: preliminary_distribution
-msgid "Preliminary distribution"
-msgstr ""
-#: view_home_home_23
-msgid "use Communtu as a guest"
-msgstr ""
-#: view_users_new_2
-msgid "If you want to be informed about the development of Communtu you have to enter a valid e-mail-address."
-msgstr ""
-#: view_metapackages_show_comment_and_ratings
-msgid "Latest comments and ratings for this bundle"
-msgstr ""
-#: view_packages__deps_0
-msgid "none"
-msgstr ""
-#: view_home_derivatives_22
-msgid " - in some ways like BeOS, ZevenOS focuses on speed and compatibility for old computers with a simple interface. CPU with at least 200 MHz, 128 MB RAM (for operating, while installing 192 MB RAM are required), at least 2 GB free hard disk space (recommended are 4 GB free hard disk space or more), 16 MB graphic card (recommended: Intel GMA 9xx)."
-msgstr ""
-#: donation_possibility
-msgid "Donation possibility"
-msgstr ""
-#: view_home_about_1
-msgid "Why Communtu?"
-msgstr ""
-#: to_colon
-msgid "To"
-msgstr ""
-#: view_home_about_12
-msgid "<b>Administrate bundles</b> on the left side offers an overview about the available bundles. At last, an overview about the available Ubunt versions (distributions) can be found at <b>Ubuntu versions</b>."
-msgstr ""
-#: which_programs_do_you_need
-msgid "Which sort of programs are you looking for (office, graphics, ...)?Enter your areas of interest below and chose from the appropriately pre-configured bundles."
-msgstr ""
-#: view_home_faq_02
-msgid "A bundle is a compilation of software for a specific task you want to do with your computer."
-msgstr ""
-#: view_packages_show_9
-msgid "/5 stars&nbsp;&nbsp; "
-msgstr ""
-#: sources
-msgid "Sources"
-msgstr ""
-#: start
-msgid "Start"
-msgstr ""
-#: view_home_icons_3
-msgid "Install package(s)."
-msgstr ""
-#: view_home_mail_0
-msgid "Notification in bugfixing"
-msgstr ""
-#: view_metapackages__metalist_14
-msgid "Install through metapackage. Please add the sources first."
-msgstr ""
-#: failed_live_cds
-msgid "Failed Live-CDs/DVDs"
-msgstr ""
-#: view_user_profiles__profile_data_8
-msgid "Via your webbrowser detected version: "
-msgstr ""
-#: view_passwords_edit_1
-msgid "    confirm password:"
-msgstr ""
-#: view_home_derivatives_42
-msgid " - specialised for webservices."
-msgstr ""
-#: thanks_for_order
-msgid "Thank you for subscribing to our mailinglist(s)."
-msgstr ""
-#: view_home_news_2
-msgid "To improve communication with our users we have set up some mailing lists."
-msgstr ""
-#: view_users__user_1
-msgid "deactivate"
-msgstr ""
-#: view_user_profiles__profile_data_13
-msgid "Here you can choose which licenses you want to accept:"
-msgstr ""
-#: controller_metapackages_2
-msgid "The bundle-name is already in use!"
-msgstr ""
-#: cd_already_created
-msgid "The Live-CD/DVD has already been created."
-msgstr ""
-#: choose_bundle
-msgid "Choose bundle"
+#: cd_donate
+msgid "Creating a CD/DVD requires a lot of server performance. Please %{donate_link} to keep this feature alive."
 msgstr ""
 #: view_packages_new_3
 msgid "Version"
 msgstr ""
-#: view_roles_edit_0
-msgid "edit role"
+#: view_user_profiles_help_2
+msgid "There you enter the following:"
 msgstr ""
-#: error_no_packages
-msgid "You have not selected any packages. The progress has been canceled."
-msgstr ""
-#: view_home_beteiligung_5
-msgid "participate in the survey"
-msgstr ""
-#: controller_distributions_2
-msgid "Distribution updated."
-msgstr ""
-#: install_apt_get_repos
-msgid "list of required sources for /etc/apt/sources.list:"
-msgstr ""
-#: controller_users_13
-msgid "A Problem occured while activating this user."
-msgstr ""
-#: vm_no_space
-msgid "Not enough free space on the server to start virtual machine."
-msgstr ""
-#: usb_image
-msgid "USB-Image"
-msgstr ""
-#: predecessor
-msgid "Parent"
-msgstr ""
-#: usb_howto
-msgid "<h2>How does the image can be copied to an USB key?</h2> <h3>Ubuntu</h3>If you already have Ubuntu installed you can use the Startup Disk Creator, which can be accessed via System -> Administration -> Startup Disk Creator. In the section Source disk image (.iso) or CD you can choose the ISO file when clicking on Other... Finally you can choose whether changed files shall be saved on the USB key or not. With a click on Make Startup Disk the image will be copied to the USB key. This process will take some time, mainly depending on how fast files can be written onto the USB key. When the image has been copied a success message will be shown.<h3>Microsoft Windows</h3> First you have to download the program <a href=\"http://unetbootin.sourceforge.net\" target=\"_blank\">UNetbootin</a>. When the download has finished you can start UNetbootin without installation. With a click on \"Diskimage\" and the three ... on the right side you can choose the ISO image you just have downloaded. With the dropdown menu at the bottom of Unetbootin you must choose the correct drive letter (which corresponds with the USB key you want to copy the image to. When finished a message will pop up and inform you of the successful creation."
-msgstr ""
-#: bundle
-msgid "Bundle"
-msgstr ""
-#: path
-msgid "Path:"
-msgstr ""
-#: create_iso
-msgid "Create ISO image"
-msgstr ""
-#: missing_debs_for_bundle
-msgid "Missing debs for bundle:"
-msgstr ""
-#: view_home_home_16
-msgid " about this project and its participants in the "
-msgstr ""
-#: view_metapackages__package_list_2
-msgid "remove package/program from bundle"
-msgstr ""
-#: view_packages_show_2
-msgid "install package instantly"
-msgstr ""
-#: view_messages_show_2
-msgid "Received on:"
-msgstr ""
-#: view_home_derivatives_14
-msgid " - learning software. Choose \"advanced\" under \"Education and science\" and it will be installed."
-msgstr ""
-#: an
-msgid "To"
-msgstr ""
-#: view_layouts_application_27
-msgid "Navigation download"
-msgstr ""
-#: view_admins_test_all_0
-msgid "The following repositories couldn't be read:"
-msgstr ""
-#: make_your_usb
-msgid "You don't have Ubuntu installed. You can download the <b>operating system Ubuntu</b> for testing (as a live system) or for installing it on your computer, with the <b>software you need</b>. Select your software bundes and create an iso image file from it..."
-msgstr ""
-#: view_categories_edit_3
-msgid "Link for further information"
-msgstr ""
-#: based_on_bundle
-msgid "Based on bundle:"
-msgstr ""
-#: view_home_faq_kde_01
-msgid "You can find the Communtu sources under \"K-Menu -> Programs -> System -> Software Sources -> Other Software\". They can also be deactivated here."
-msgstr ""
-#: view_users_new_11
-msgid "your last name"
-msgstr ""
-#: view_user_profiles__profile_data_1
-msgid "On this page you can change your computer's settings. Normally you do not need to change these settings."
-msgstr ""
-#: controller_users_6
-msgid "Userdata changed and account made permanent."
-msgstr ""
-#: controller_sessions_6
-msgid "Your account has not been activated yet. The activation code has been sent to you via e-mail."
-msgstr ""
-#: no_packet_information_found
-msgid "No details about package information could be made."
-msgstr ""
-#: press_archiv
-msgid "Press archives"
-msgstr ""
-#: lib_system_0
-msgid "You need to be logged in to use this feature. Using this feature is also possible as a guest, logging in as guest is possible with the \"Guest\"-link in the top right corner."
-msgstr ""
-#: view_admins_sync_all_2
-msgid "repositories synchronised"
-msgstr ""
-#: cd_being_created
-msgid "Creating Live-CD/DVD"
-msgstr ""
-#: model_package_7
-msgid "couldn't determine URL for %{repo}"
-msgstr ""
-#: view_home_derivatives_35
-msgid "There are several other derivatives for which we cannot give any recommendations for installation:"
-msgstr ""
-#: being_created
-msgid "Creating"
-msgstr ""
-#: to_chat
-msgid "to the chat"
-msgstr ""
-#: view_home_faq_15
-msgid "How can I install a single program?"
+#: admin_interface_for_livecd
+msgid "Administrative interface for debugging the creation of LiveCDs"
 msgstr ""
 #: livecd_disabled
 msgid "Creation of Live-CDs is disabled. Check config/settings.yml."
 msgstr ""
-#: kvm_image
-msgid "KVM-Image"
-msgstr ""
-#: livecd_failed
-msgid "Live-CD creation failed"
-msgstr ""
-#: hello_simple
-msgid "Hello"
-msgstr ""
-#: repository
-msgid "repository"
-msgstr ""
-#: controller_metapackages_conflicts
-msgid "This bundle contains packages, which are in conflict!"
-msgstr ""
-#: view_rating_show_title_no_ratings
-msgid "no user rating"
-msgstr ""
-#: controller_suggestion_6
-msgid "Add repositories and keys for the package"
-msgstr ""
-#: view_home_icons_24
-msgid "Receive a message-icon for new messages"
-msgstr ""
-#: view_user_profiles_new_0
-msgid "new profile"
-msgstr ""
-#: total_isos_size
-msgid "Size of ISO:"
-msgstr ""
-#: cant_debianized
-msgid "To create this meta-package an English title and descriptionis needed."
-msgstr ""
-#: total_packages
-msgid "Total packages:"
-msgstr ""
-#: model_mailer_4
-msgid "Your password has been restored."
-msgstr ""
-#: view_home_derivatives_55
-msgid " - Mediacenter."
-msgstr ""
-#: updatedPackages
-msgid "Changed packages:"
-msgstr ""
-#: no_package_selected
-msgid "No package selected"
-msgstr ""
-#: helper_distributions_20
-msgid "non-free and from the community repositories"
-msgstr ""
-#: zentrum_solidarische_oekonomie
-msgid "Center for Solidarity Economy"
-msgstr ""
-#: link_community
-msgid "http://ubuntuforums.org"
-msgstr ""
-#: view_layouts_application_20
-msgid "Javascript is not activated! Please activate Javascript in your browser-settings."
-msgstr ""
-#: create_livecd_intro
-msgid "You can create a Live-CD with Communtu in two different ways: using the download page or directly via a bundle."
-msgstr ""
-#: view_user_profiles_help_3
-msgid "If you version is not supported by Communtu, you now have two possibilities:"
-msgstr ""
-#: controller_accounts_5
-msgid "Password has been updated."
-msgstr ""
-#: view_packages_show_11
-msgid "Weblinks:"
-msgstr ""
-#: view_user_profiles__installation_28
-msgid "https://wiki.ubuntu.com/AptUrl"
-msgstr ""
-#: view_home_home_9
-msgid "<b>Ubuntu derivatives</b> is a small overview about Kubuntu, Xubuntu, Medibuntu, etc."
-msgstr ""
-#: livecd_created_by
-msgid "Live-CD/DVD created by:"
-msgstr ""
-#: view_passwords_new_2
-msgid "reset password"
-msgstr ""
-#: view_users__sidebar_7
-msgid "Administrate derivatives"
-msgstr ""
-#: announce
-msgid "announce"
-msgstr ""
-#: create_livecd_subtitle2
-msgid "Creation with bundle"
-msgstr ""
-#: view_user_profiles__profile_rating_1
-msgid "On the right side you can see information about the chosen category."
-msgstr ""
-#: oxygen_icon_legal_notice
-msgid "Some icons are from the Oxygen iconset http://www.oxygen-icons.org"
-msgstr ""
-#: distribution_derivative_mismatch
-msgid "%{derivative} is only for %{distributions]] available"
-msgstr ""
-#: description_for_description
-msgid "Please enter a short presentation of your bundle to show for what tasks it is meant. After that, you can go into detail of some of the programs in your bundle."
-msgstr ""
-#: view_home_derivatives_3
-msgid "http://wiki.ubuntuusers.de/Was_ist_Linux?#Was-sind-Derivate-einer-Distribution (German)"
-msgstr ""
-#: model_package_0
-msgid "Free software"
-msgstr ""
-#: user_not_found
-msgid "User not found."
-msgstr ""
-#: view_home_home_29
-msgid "To which topic do you look for programs (office, graphics, ...)? Enter your fields of interest and pre-configured bundles can be downloaded."
-msgstr ""
-#: view_users_new_8
-msgid "Yes, I want to be added to the announcement-mailinglist."
-msgstr ""
-#: translation_file
-msgid "URL to the translation-file (gz-file):"
-msgstr ""
-#: view_metapackages_show_15
-msgid "Edit "
-msgstr ""
-#: controller_metapackages_not_allowed
-msgid "Only the owner of the bundle is allowed to perform this action."
-msgstr ""
-#: view_home_derivatives_28
-msgid " - with this, Ubuntu is going to be "
-msgstr ""
-#: view_home_about_7
-msgid "There you can edit your settings: First, you'll have to specify the basic data, such as which Ubuntu version you want to install on your computer. Additionally, you must specify if you want to use free or commercial software. Finally, you must indicate for which purposes you want to use your computer."
-msgstr ""
-#: view_home_faq_08
-msgid "You go to \"Bundle\" and click on \"Published bundles\" to view all bundles. There you can rate a program with up to five stars and, after that, a commentbox appears where you have to enter a comment to justify your rating."
-msgstr ""
-#: chat_channel
-msgid "en-communtu"
-msgstr ""
-#: number_of_packages_in_bundles
-msgid "Number of packages in all bundles"
-msgstr ""
-#: view_home_new_repository_3
-msgid "Why should this be implemented in Communtu? (If you want to be informed about the take-up, please enter your contact information)"
-msgstr ""
-#: view_home_icons_17
-msgid "external link"
-msgstr ""
-#: eg
-msgid "e.g."
-msgstr ""
-#: vm_running_under
-msgid "virtual machine runs with:"
-msgstr ""
-#: view_cart_new_from_list_3
-msgid " can be found with the above-mentioned command. (For this, the package %{debfoster} has to be install. The created list only contains a minimal list of (meta-)packages which are necessary to rebuild your installation.)"
-msgstr ""
-#: view_home_icons_9
-msgid " installation via shell-script"
-msgstr ""
-#: controller_sent_0
-msgid "Subject must not be empty."
-msgstr ""
-#: subtype
-msgid "Subtype:"
-msgstr ""
-#: view_home_home_rating_headline
-msgid "Best rated bundles"
-msgstr ""
-#: view_user_profiles__installation_21
-msgid "Installation of the metapackages. Please add the sources first."
-msgstr ""
-#: view_home_derivatives_48
-msgid " - minimal server-version, suitable for virtualizations."
-msgstr ""
-#: not_accepted
-msgid "The entered e-mail address contains forbidden characters or is not entered completely."
-msgstr ""
-#: view_home_home_2
-msgid "Ubuntu"
-msgstr ""
-#: view_layouts_application_13
-msgid "About Communtu"
-msgstr ""
-#: view_home_news_8
-msgid "."
-msgstr ""
-#: view_home_impressum_11
-msgid "Participants of the Communtu-team (alphabetical order):"
-msgstr ""
-#: controller_passwords_5
-msgid "Password must not be empty."
-msgstr ""
-#: helper_distributions_13
-msgid "delete"
-msgstr ""
-#: controller_metapackages_8
-msgid "With each update the version has to be increased<br>"
-msgstr ""
-#: view_metapackages_show_3
-msgid "Back"
-msgstr ""
-#: view_distributions_show_4
-msgid "add repository "
-msgstr ""
-#: name_without_colon
-msgid "Name"
-msgstr ""
-#: view_mailbox_show_1
-msgid "From"
-msgstr ""
-#: english_description
-msgid "English description:"
-msgstr ""
-#: view_home_home_22
-msgid "in, or "
-msgstr ""
-#: view_users_new_1
-msgid "Here you have the possibility to register yourself."
-msgstr ""
-#: logfile_extract
-msgid "Extract from the logfile"
-msgstr ""
-#: view_home_derivatives_21
-msgid "Derivatives which are based on a Xfce-installation (like Xubuntu) and that can be post-installed with Communtu:"
-msgstr ""
-#: view_home_faq_01
-msgid "What is a bundle?"
-msgstr ""
-#: controller_suggestion_12
-msgid "The following repositories will be added"
-msgstr ""
-#: view_layouts_application_3
-msgid "Ubuntu logo"
-msgstr ""
-#: view_home_beteiligung_15
-msgid "us"
-msgstr ""
-#: view_packages_show_8
-msgid "Popularity:"
-msgstr ""
-#: back
-msgid "Back"
-msgstr ""
-#: view_home_icons_10
-msgid "program"
-msgstr ""
-#: controller_metapackages_11
-msgid "Couldn't delete package from bundle."
-msgstr ""
-#: view_user_profiles__profile_data_7
-msgid "How do I find out the version which is in use?"
-msgstr ""
-#: deb_generation_in_background
-msgid "Debs are being created in the background (refresh the webpage if necessary)"
-msgstr ""
-#: view_passwords_edit_0
-msgid "    Password:"
-msgstr ""
 #: view_sent_index_3
 msgid "Date"
 msgstr ""
-#: controller_metapackages_cannot_destroy
-msgid "Released bundles cannot be deleted."
+#: view_home_home_27
+msgid "Communtu helps you:"
 msgstr ""
-#: migrate_repository
-msgid "migrate repository"
-msgstr ""
-#: view_home_derivatives_41
-msgid "Ubuntu ultimate - Ubuntu with many desktop-designs and applications."
-msgstr ""
-#: view_home_faq_21
-msgid "How do I find the Communtu sources in my system?"
-msgstr ""
-#: view_home_home_new_messages_desc
-msgid "You have new messages in your inbox."
-msgstr ""
-#: view_home_donate_why
-msgid "The development of Communtu is mainly based on the effort of volunteers but it also costs money (amongst others the server and the rooms). Therefore Communtu depends on donations. Even small amounts of money help."
-msgstr ""
-#: view_home_news_1
-msgid "Our mailinglists"
-msgstr ""
-#: view_users__user_0
-msgid "activate"
-msgstr ""
-#: view_user_profiles__profile_data_12
-msgid " Allow every source (slightly insecure but with even more programs/better comfort. Attention: programs installed from foreign sources can do harm to your computer!):"
-msgstr ""
-#: view_home_donate_options
-msgid "There are several ways of donating."
-msgstr ""
-#: livecd_start_message
-msgid "Here you can create a Live-CD/DVD which contains the software chosen by you. You selected the following bundles:"
-msgstr ""
-#: make_your_bundle
-msgid "Create a bundle for a system upgrade"
-msgstr ""
-#: new_derivative
-msgid "New derivative"
-msgstr ""
-#: controller_distributions_1
-msgid "Distribution created."
-msgstr ""
-#: view_user_mailer_activation_0
-msgid ", your account has been activated. Please follow this link:"
-msgstr ""
-#: model_user_meta_tabz_3
-msgid "Published bundles"
-msgstr ""
-#: view_home_beteiligung_4
-msgid "You think you already know a lot about Open Source programs? \nWrite your experience into the comments of the according package our maybe you have seen\na video of the program at YouTube? Add the video\nto the corresponding program."
-msgstr ""
-#: promote_chat
-msgid "You can try and see if members of the communtu staff are online and get in touch using the chat."
-msgstr ""
-#: controller_users_12
-msgid "User activated"
-msgstr ""
-#: migrate_repositories
-msgid "Take over repositories from parent"
-msgstr ""
-#: name_of_livecd
-msgid "Name of the Live-CD/DVD:"
-msgstr ""
-#: no_bundle_selected
-msgid "No bundle selected"
-msgstr ""
-#: new_article
-msgid "New article"
-msgstr ""
-#: cannot_publish_bundle
-msgid "This bundle cannot be published, as it contains unpublished bundles: %{bundles}"
-msgstr ""
-#: controller_metapackages_not_changed
-msgid "This bundle is already created as a metapackage and uploaded."
-msgstr ""
-#: want_to_add_package2
-msgid "Create a new bundle from the selection"
-msgstr ""
-#: repositories_incompletely_read
-msgid "Repositories without packages (couldn't read repository)"
-msgstr ""
-#: view_categories_index_0
-msgid "Category-overview"
-msgstr ""
-#: guest
-msgid "Guest"
-msgstr ""
-#: new_packages
-msgid "Newly added packages: "
-msgstr ""
-#: view_home_home_15
-msgid "detailled information"
-msgstr ""
-#: view_user_profiles__installation_34
-msgid "List of %{sources} that will be added to your system."
-msgstr ""
-#: view_packages__search_0
-msgid "Search for packages"
-msgstr ""
-#: steps_for_distribution_setup
-msgid "Steps for setting up a new distribution (please do this on the admin-system) "
-msgstr ""
-#: easy_install
-msgid "Your ways to Ubuntu"
-msgstr ""
-#: make_your_livedvd
-msgid "... or burn it to a CD or DVD."
-msgstr ""
-#: view_home_derivatives_13
-msgid " - the PC becomes a VCR. Select \"Freak\" at \"Movie\" and it will be installed. Recommended: CPU with 2 GHz, 1024 MB-RAM, 10 GB free harddisk space for the frontend, at least 80 GB for the backend, a graphic card with at least 128 MB RAM and a TV Out and a supported TV card."
-msgstr ""
-#: view_layouts_application_26
-msgid "Navigation bundle"
-msgstr ""
-#: view_home_cancel_1
-msgid "Either you try a again or you use the possibility via bank transfer"
-msgstr ""
-#: view_metapackages__package_list_1
-msgid "available for:"
-msgstr ""
-#: view_users_show_5
-msgid "Created bundles:"
-msgstr ""
-#: create_livecd
-msgid "Create CD"
-msgstr ""
-#: view_packages_show_17
-msgid "Contains these packages (\"depends\" and \"recommends\"):"
-msgstr ""
-#: view_home_auth_error_1
-msgid "The file you sent to Communtu couldn't be authenticated. Please try again with logging in again or filling in the form again. This could also come from disabled cookie settings."
+#: view_mailbox_show_3
+msgid "received"
 msgstr ""
 #: view_home_home_new_message_icon
 msgid "to the inbox"
 msgstr ""
-#: view_packages_rdepends_1
-msgid " directly and indirectly contained packages"
+#: controller_accounts_6
+msgid "An error occured. The password has not been changed."
 msgstr ""
-#: communtu_is_opensource
-msgid "Communtu is written in %{rails}. Communtu's source code is open source, published under the %{agpl} and can be accessed via %{github}. Communtu also has a bug tracking system: %{trac}."
+#: create_livecd_subtitle1
+msgid "Creation using the download interface"
 msgstr ""
-#: view_users_new_10
-msgid "your first name"
+#: view_cart_update_1
+msgid "Overwrite bundle, if it already exists?"
+msgstr ""
+#: view_user_profiles__installation_2
+msgid "Due to the choice you made, programs will now be installed on your computer."
+msgstr ""
+#: install_package
+msgid "Installation of package %{name}"
+msgstr ""
+#: view_messages_show_2
+msgid "Received on:"
+msgstr ""
+#: model_mailer_1
+msgid "Query via formular"
+msgstr ""
+#: view_user_profiles__profile_data_7
+msgid "How do I find out the version which is in use?"
+msgstr ""
+#: choose_category
+msgid "Please make a choice"
+msgstr ""
+#: fine_selection
+msgid "Fine selection"
+msgstr ""
+#: helper_distributions_21
+msgid "non-free and from third party repositories"
+msgstr ""
+#: stars_popcon
+msgid "The stars show how often the program is installed and used by the Ubuntu users."
+msgstr ""
+#: view_home_derivatives_24
+msgid "Derivatives, which should be installed with the derivative installation-CD:"
+msgstr ""
+#: view_user_profiles__profile_rating_1
+msgid "On the right side you can see information about the chosen category."
+msgstr ""
+#: livecd_image
+msgid "CD-Image"
+msgstr ""
+#: direct_indirect_covered_packages_warning
+msgid "Attention! This takes a long time and should only be done on the admin-server (communtu.org:3006)!"
+msgstr ""
+#: view_layouts_application_22
+msgid "to the profile"
+msgstr ""
+#: view_user_profiles__installation_21
+msgid "Installation of the metapackages. Please add the sources first."
+msgstr ""
+#: view_users_edit_3
+msgid "Username:"
+msgstr ""
+#: save
+msgid "Save"
+msgstr ""
+#: new_derivative
+msgid "New derivative"
+msgstr ""
+#: archive
+msgid "archive"
+msgstr ""
+#: view_derivatives_index_0
+msgid "Ubuntu derivatives"
+msgstr ""
+#: view_home_news_2
+msgid "To improve communication with our users we have set up some mailing lists."
+msgstr ""
+#: view_rating_new_comment_info
+msgid "Please enter a description to your rating. This is a <b>mandatory</b> step."
+msgstr ""
+#: livecd_image_link
+msgid "https://help.ubuntu.com/community/IsoImage"
+msgstr ""
+#: view_home_faq_15
+msgid "How can I install a single program?"
+msgstr ""
+#: view_users_show_3
+msgid "(month/year)"
+msgstr ""
+#: view_rating_new_comment_cancel
+msgid "Cancel"
+msgstr ""
+#: edit_architecture
+msgid "edit architecture"
+msgstr ""
+#: view_derivatives_edit_2
+msgid "Program for GUI-dialogs (e.g. zenity, kdialog)"
+msgstr ""
+#: view_metapackages__metalist_2
+msgid "Standard"
+msgstr ""
+#: model_user_profile_tabz_4
+msgid "Settings"
+msgstr ""
+#: continue
+msgid "Continue"
+msgstr ""
+#: view_home_derivatives_44
+msgid " - minimalist and fast version of Ubuntu for older PCs."
+msgstr ""
+#: view_repositories_edit_0
+msgid "edit repositories"
+msgstr ""
+#: bundle_to_livecd
+msgid "Create Live-CD/DVD from bundle <i>%{name}</i>"
+msgstr ""
+#: create_livecd_title
+msgid "How do I create a Live-CD?"
+msgstr ""
+#: view_metapackages_new_4
+msgid "Install by default"
+msgstr ""
+#: view_users__user_2
+msgid "edit roles"
+msgstr ""
+#: model_user_meta_tabz_1
+msgid "All published bundles"
+msgstr ""
+#: view_home_auth_error_1
+msgid "The file you sent to Communtu couldn't be authenticated. Please try again with logging in again or filling in the form again. This could also come from disabled cookie settings."
+msgstr ""
+#: Kommentar
+msgid "Comment:"
+msgstr ""
+#: view_users_new_11
+msgid "your last name"
+msgstr ""
+#: view_home_news_16
+msgid "We have a blog where we post updated information about Communtu. It gets a new post about once a week. Announcement and new features will be presented here."
+msgstr ""
+#: controller_metapackages_conflicts
+msgid "This bundle contains packages, which are in conflict!"
+msgstr ""
+#: want_to_add_package
+msgid "Do you want to add single programs/packages?"
+msgstr ""
+#: model_package_10
+msgid "While the synchronization of the repository %{repo_name} the package %{package_name} couldn't be found."
+msgstr ""
+#: view_home_home_20
+msgid " to create a new user or"
+msgstr ""
+#: controller_repositories_2
+msgid "Repository updated."
+msgstr ""
+#: view_users__sidebar_5
+msgid "Administrate users"
+msgstr ""
+#: view_admins_show_0
+msgid "Here should be an introduction to the admin area"
+msgstr ""
+#: controller_home_4
+msgid "A file with the package list (one package name per line) has to be given"
+msgstr ""
+#: view_metapackages_rdepends_0
+msgid "In bundle"
+msgstr ""
+#: view_home_faq_xfce_01
+msgid "You can find the Communtu sources under \"Applications -> System -> Software Sources -> Other Software\". They can also be deactivated here. "
+msgstr ""
+#: prepare_livecd_contd
+msgid "Prepare new Live-CD/DVD with every pre-release (script/remaster-getisos)"
 msgstr ""
 #: view_user_profiles__profile_data_0
 msgid "Edit settings"
 msgstr ""
-#: controller_users_5
-msgid "user data updated"
+#: view_home_about_4
+msgid "How to use Communtu"
 msgstr ""
-#: vm_active_session
-msgid "You already have a running virtual machine, please %{stop} that one first."
+#: english_name_reserve
+msgid "The English bundle name is already in use. Please choose another English name."
 msgstr ""
-#: installation_two_steps
-msgid "Installation of the package in two steps:"
+#: questionmark_conny
+msgid "Click and tell me what is unclear to you."
 msgstr ""
-#: controller_sessions_5
-msgid "Your username or password is wrong. If applicable click on \"Register\" below."
+#: iso_howto
+msgid "You can download an ISO file following the link. If you use Ubuntu, you can use %{brasero} or %{k3b} to burn the image. If you use Microsoft Windows there are several programs for burning CDs and DVDs. Please chose an option similar to \"Burn image\" or \"Burn ISO\". If the ISO file is very large you need a DVD. <br /> Using the burned CD or DVD you can <a href=\"https://help.ubuntu.com/community/GraphicalInstall\" target=\"_blank\">install Ubuntu</a>."
 msgstr ""
-#: view_admins_sync_all_1
-msgid "Error: couldn't synchronise repositories"
+#: sources
+msgid "Sources"
 msgstr ""
-#: view_debs_index_5
-msgid "Create  "
+#: view_home_beteiligung_4
+msgid "You think you already know a lot about Open Source programs? \nWrite your experience into the comments of the according package our maybe you have seen\na video of the program at YouTube? Add the video\nto the corresponding program."
 msgstr ""
-#: view_home_derivatives_9
-msgid "With Communtu installable derivatives:"
+#: view_user_profiles__profile_data_11
+msgid " Allow community-sources (\"universe/multiverse\", secure, more programs/better comfort):"
 msgstr ""
-#: model_package_6
-msgid "<br> has not the right format"
+#: view_home_cancel_1
+msgid "Either you try a again or you use the possibility via bank transfer"
 msgstr ""
-#: view_categories_show_3
-msgid "Superior category:"
+#: view_home_derivatives_17
+msgid "http://en.wikipedia.org/wiki/Linux_Mint"
 msgstr ""
-#: view_home_derivatives_34
-msgid " - replaces the Linux core with OpenSolaris. Provides only a minimal basis to applications. The installation of additional software is left to the user; Communtu can be used for this."
+#: stop_vm
+msgid "Stop Live-CD"
 msgstr ""
-#: view_repositories_migrate_2
-msgid " to distribution"
+#: conflicts
+msgid "conflicts"
 msgstr ""
-#: view_home_faq_14
-msgid "To find a program, go to \"Search programs\". Enter the name of the program you are looking for into the search field. If you want to search only the programs click on \"Programs only\" and the libraries are not searched. Furthermore it is possible to choose a Debian-section where programs are preselected."
+#: packages_for_ubuntu
+msgid "Packages for Ubuntu"
 msgstr ""
-#: view_home_home_rating_rating
-msgid "Rating"
+#: view_layouts_application_15
+msgid "Logged in as "
+msgstr ""
+#: steps_for_distribution_setup
+msgid "Steps for setting up a new distribution (please do this on the admin-system) "
+msgstr ""
+#: livecd_communtu_name
+msgid "Names containing \"communtu-\" are reserved for Live-CDs/DVDs created from bundles"
+msgstr ""
+#: model_package_9
+msgid "While the synchronization of the repository %{repo_name} no PackageDistr-entry for the package %{package_name} could be found."
+msgstr ""
+#: view_home_home_9
+msgid "<b>Ubuntu derivatives</b> is a small overview about Kubuntu, Xubuntu, Medibuntu, etc."
+msgstr ""
+#: category_exists
+msgid "A category with this name already exists."
+msgstr ""
+#: helper_distributions_8
+msgid "Show sources"
+msgstr ""
+#: discuss
+msgid "discuss"
+msgstr ""
+#: view_home_faq_07
+msgid "How can I rate a bundle?"
+msgstr ""
+#: delete
+msgid "Delete"
+msgstr ""
+#: generate_cd
+msgid "Recreate Live-CD/DVD"
+msgstr ""
+#: controller_metapackages_reset
+msgid "Reset bundle error manually (after solving the problems)."
+msgstr ""
+#: description_with_colon
+msgid "Description:"
+msgstr ""
+#: view_packages_show_26
+msgid "change metapackage into bundle"
+msgstr ""
+#: new_article
+msgid "New article"
+msgstr ""
+#: view_home_derivatives_37
+msgid "http://en.wikipedia.org/wiki/LinEx"
+msgstr ""
+#: select_default_bundles
+msgid "Select standard bundles for %{category}"
+msgstr ""
+#: view_users_new_9
+msgid "Yes, I want to be added to the discussion-mailinglist."
+msgstr ""
+#: view_home_derivatives_4
+msgid " and many Ubuntu-users may ask themselves if they should use a derivative instead of Ubuntu. The answer is: normally the standard version of Ubuntu is completely sufficiant because with Communtu it is quite easy to install a derivative. However, this is not always a wise decision."
+msgstr ""
+#: hello
+msgid "Welcome"
+msgstr ""
+#: new_architecture
+msgid "New architecture"
+msgstr ""
+#: view_user_profiles__installation_34
+msgid "List of %{sources} that will be added to your system."
+msgstr ""
+#: create_kvm_image
+msgid "create <a href=\"http://wiki.ubuntu.com/kvm\">KVM-image</a> (virtual machine)"
+msgstr ""
+#: view_passwords_edit_0
+msgid "    Password:"
+msgstr ""
+#: view_debs_index_1
+msgid "Go back to the Communtu-menu"
+msgstr ""
+#: view_home_home_13
+msgid "<b>News</b> Reference to events about Communtu, the Communtu-blog ..."
+msgstr ""
+#: view_home_icons_22
+msgid " user-icon"
+msgstr ""
+#: invalid_activation_code_entered
+msgid "Invalid activation code entered."
+msgstr ""
+#: view_my_mailer_mailerror_0
+msgid "Hello, \n an error was reported on www.communtu.de. \nThe user would really like to be notified when the error has been fixed."
+msgstr ""
+#: livecd_start
+msgid "Create Live-CD/DVD"
+msgstr ""
+#: register
+msgid "Register"
+msgstr ""
+#: view_users__mailbox_list_3
+msgid "sent messages "
+msgstr ""
+#: view_home_derivatives_57
+msgid " for subnotebooks/EEE-PCs."
+msgstr ""
+#: controller_categories_0
+msgid "Categories"
+msgstr ""
+#: bundles_with_conflicts
+msgid "Bundles with errors"
+msgstr ""
+#: view_home_derivatives_10
+msgid "https://wiki.ubuntu.com/UbuntuStudio"
+msgstr ""
+#: controller_users_8
+msgid "user deactivated"
+msgstr ""
+#: four_and_fourty_letters
+msgid "Between 4 and 40 letters"
+msgstr ""
+#: go_to_download
+msgid "Go to the download page"
+msgstr ""
+#: view_home_home_33
+msgid "Do you want to know more about Communtu? Do you have suggestions or questions? We are looking forward to be in touch with you."
+msgstr ""
+#: model_package_2
+msgid "unknown"
+msgstr ""
+#: statistics
+msgid "View statistics"
+msgstr ""
+#: livecd_email_body_footer
+msgid "Greetings,"
+msgstr ""
+#: view_home_home_2
+msgid "Ubuntu"
+msgstr ""
+#: helper_distributions_1
+msgid "non-free"
 msgstr ""
 #: info_edit
 msgid "Edit news message"
 msgstr ""
-#: view_cart_update_2
-msgid "Level of expert:"
+#: view_home_new_repository_3
+msgid "Why should this be implemented in Communtu? (If you want to be informed about the take-up, please enter your contact information)"
 msgstr ""
-#: view_home_icons_23
-msgid "Message-icon"
+#: view_home_faq_00
+msgid "Frequently Asked Questions"
+msgstr ""
+#: change
+msgid "change"
+msgstr ""
+#: view_metapackages_show_17
+msgid "Publish"
+msgstr ""
+#: repository_url
+msgid "Repository-URL: "
+msgstr ""
+#: liveusb_start_message
+msgid "Here you can create a USB key image which contains the software chosen by you. You selected the following bundles:"
+msgstr ""
+#: view_users_new_2
+msgid "If you want to be informed about the development of Communtu you have to enter a valid e-mail-address."
+msgstr ""
+#: view_home_mail_1
+msgid "Please contact me at the following e-mail-address concerning the bugfixing."
+msgstr ""
+#: view_home_derivatives_30
+msgid "http://en.wikipedia.org/wiki/Home_theater_PC"
+msgstr ""
+#: view_packages_show_9
+msgid "/5 stars&nbsp;&nbsp; "
+msgstr ""
+#: controller_application_0
+msgid "This function is not available for guests."
+msgstr ""
+#: description_for_description
+msgid "Please enter a short presentation of your bundle to show for what tasks it is meant. After that, you can go into detail of some of the programs in your bundle."
+msgstr ""
+#: view_distributions_show_3
+msgid "read sources.list"
+msgstr ""
+#: controller_sessions_4
+msgid "You have been logged in."
+msgstr ""
+#: view_layouts_application_3
+msgid "Ubuntu logo"
+msgstr ""
+#: view_metapackages_show_comment_and_ratings
+msgid "Latest comments and ratings for this bundle"
+msgstr ""
+#: view_packages_show_19
+msgid "Conflicts with these packages (only those without a version):"
+msgstr ""
+#: view_metapackages_show_save
+msgid "save bundle as a metapackage"
+msgstr ""
+#: view_home_faq_21
+msgid "How do I find the Communtu sources in my system?"
+msgstr ""
+#: view_user_profiles__installation_27
+msgid "Please configure "
+msgstr ""
+#: view_users_edit_9
+msgid "  With a click on \"save\" this account will be made permanent."
+msgstr ""
+#: view_categories_index_0
+msgid "Category-overview"
+msgstr ""
+#: controller_passwords_2
+msgid "No user found with this e-mail-address."
+msgstr ""
+#: register_small
+msgid "to turn into a permanent one."
+msgstr ""
+#: view_home_news_8
+msgid "."
+msgstr ""
+#: view_home_derivatives_50
+msgid " - with Fluxbox and several network-tools."
+msgstr ""
+#: livecd_email_body_2
+msgid "If you have questions or suggestions we would like you to contact us."
+msgstr ""
+#: view_metapackages__package_list_1
+msgid "available for:"
+msgstr ""
+#: view_metapackages_finish_migrate_0
+msgid "All bundles were migrated from"
+msgstr ""
+#: view_home_icons_15
+msgid " program-bundle"
+msgstr ""
+#: kommentieren
+msgid "Comment"
+msgstr ""
+#: view_home_beteiligung_13
+msgid "Since we have many ideas for the platform's further development, we need programmers. Ideally you already have some experience with Ruby on Rails."
+msgstr ""
+#: controller_users_1
+msgid "Thank you for registering at Communtu! You can now log in."
+msgstr ""
+#: participation
+msgid "Ways to participate"
+msgstr ""
+#: search_programs_bundles
+msgid "Already Ubuntu user and looking for suitable programs to use? Enter your areas of interest and <b>download pre-configured bundles</b>."
+msgstr ""
+#: by_bank_transfer
+msgid "per bank transfer"
+msgstr ""
+#: bundles_with_missing_debs
+msgid "Bundles with missing deb-builds"
+msgstr ""
+#: view_home_icons_0
+msgid "icons used in Communtu"
+msgstr ""
+#: view_repositories_multinew_0
+msgid "read"
+msgstr ""
+#: view_user_profiles_help_1
+msgid "Open a new terminal. Click on \"Applications\" -> \"Accessories\" -> \"Terminal\""
+msgstr ""
+#: exact
+msgid "Find exact term:"
+msgstr ""
+#: view_user_mailer_forgot_password_0
+msgid ", to receive a new password, please folloe the link:"
+msgstr ""
+#: view_home_home_26
+msgid "You installed Ubuntu and now you are looking for programs which run with Ubuntu?"
+msgstr ""
+#: view_categories_show_3
+msgid "Superior category:"
+msgstr ""
+#: repositories_without_packages
+msgid "Repositories without packages (empty repository)"
+msgstr ""
+#: install_bundle
+msgid "Installation of bundle %{name}"
+msgstr ""
+#: view_cart_update_0
+msgid "edit bundle-information"
+msgstr ""
+#: view_user_profiles__installation_1
+msgid "In order to install software, you have to choose at least one package or bundle under \"Software selection\"."
+msgstr ""
+#: install_by_default
+msgid "Installed by default:"
+msgstr ""
+#: controller_accounts_5
+msgid "Password has been updated."
+msgstr ""
+#: view_packages_show_2
+msgid "install package instantly"
+msgstr ""
+#: natur_geist_und_technik
+msgid "Natur, Geist und Technik - Verein zur Förderung der Allgemeinbildung e.V."
+msgstr ""
+#: view_user_profiles__profile_data_6
+msgid "Please select an Ubuntu version. "
+msgstr ""
+#: helper_distributions_20
+msgid "non-free and from the community repositories"
+msgstr ""
+#: model_mailer_0
+msgid "Welcome to Communtu"
+msgstr ""
+#: view_packages_edit_0
+msgid "Edit package"
+msgstr ""
+#: view_metapackages_migrate_1
+msgid "Which distribution are the bundles to be migrated to?"
+msgstr ""
+#: controller_metapackages_15
+msgid "<option value='2'>Publish<option/>"
+msgstr ""
+#: view_home_impressum_5
+msgid "28203 Bremen\nGermany"
+msgstr ""
+#: view_user_profiles__profile_rating_0
+msgid "Software selection - choose a bundle of programs"
+msgstr ""
+#: view_users_edit_2
+msgid "delete profile"
+msgstr ""
+#: new_packages
+msgid "Newly added packages: "
+msgstr ""
+#: view_layouts_application_21
+msgid "Communtu eases Ubuntu installations"
+msgstr ""
+#: view_user_profiles__profile_data_17
+msgid "Save and choose packages"
+msgstr ""
+#: view_home_news_1
+msgid "Our mailinglists"
+msgstr ""
+#: cd_created
+msgid "The Live CD/DVD has finished."
+msgstr ""
+#: iso_image
+msgid "ISO image"
+msgstr ""
+#: view_repositories_migrate_2
+msgid " to distribution"
+msgstr ""
+#: view_users_show_2
+msgid "user since:"
+msgstr ""
+#: match_with_communtu
+msgid "Communtu - collaboratively fit Ubuntu to your personal needs"
+msgstr ""
+#: view_home_faq_14
+msgid "To find a program, go to \"Search programs\". Enter the name of the program you are looking for into the search field. If you want to search only the programs click on \"Programs only\" and the libraries are not searched. Furthermore it is possible to choose a Debian-section where programs are preselected."
+msgstr ""
+#: action_needs_login
+msgid "In order to save your configuration, you need to login."
+msgstr ""
+#: passwd_no_match
+msgid "The new password does not comply with the verification."
+msgstr ""
+#: create_iso_image
+msgid "create <a href=\"http://en.wikipedia.org/wiki/ISO_image\">ISO-image</a> (CD/DVD)"
+msgstr ""
+#: no1
+msgid "no"
+msgstr ""
+#: view_categories_edit_4
+msgid "Category, which is shown on the first page:"
+msgstr ""
+#: view_derivatives_edit_1
+msgid "Program for GUI-based sudo (e.g. gksudo, kdesudo)"
+msgstr ""
+#: view_home_derivatives_43
+msgid " - based on E17. 2D-effects even without a fast graphic card."
+msgstr ""
+#: architectures
+msgid "Architectures"
+msgstr ""
+#: model_user_profile_tabz_3
+msgid "Start installation"
+msgstr ""
+#: name_of_usb
+msgid "Name if ISO file:"
+msgstr ""
+#: view_home_about_12
+msgid "<b>Administrate bundles</b> on the left side offers an overview about the available bundles. At last, an overview about the available Ubunt versions (distributions) can be found at <b>Ubuntu versions</b>."
+msgstr ""
+#: login_small
+msgid "with an existing user account."
+msgstr ""
+#: model_user_meta_tabz_0
+msgid "My bundles"
+msgstr ""
+#: view_home_auth_error_0
+msgid "Error with authentication"
+msgstr ""
+#: view_users__user_1
+msgid "deactivate"
+msgstr ""
+#: description
+msgid "Description"
+msgstr ""
+#: view_users_new_10
+msgid "your first name"
+msgstr ""
+#: migrate_repository
+msgid "migrate repository"
+msgstr ""
+#: view_users__sidebar_4
+msgid "Ubuntu versions"
+msgstr ""
+#: create_your_usb
+msgid "Create a USB key"
+msgstr ""
+#: view_admins_sync_package_3
+msgid "Repository: "
+msgstr ""
+#: donation_purpose
+msgid "Purpose: Communtu"
+msgstr ""
+#: controller_home_3
+msgid "This does not appear to be a list with Ubuntu-packages... <br />The packagelist must contain one packagename per line"
+msgstr ""
+#: predecessor
+msgid "Parent"
+msgstr ""
+#: controller_repositories_1
+msgid "Repository created."
+msgstr ""
+#: controller_profiles_0
+msgid "Installation of bundles"
+msgstr ""
+#: view_home_about_3
+msgid "There are many applications, though, that users might want to add, e. g. programs for audio, video and graphics in order to take full advantage of their Ubuntu system. Communtu facilitates the installation of additional software, and even has special sections for beginners and users migrating from Windows."
+msgstr ""
+#: view_user_profiles__profile_data_10
+msgid " Allow only Ubuntu-sources (\"main/restricted\", very secure)"
+msgstr ""
+#: helper_distributions_13
+msgid "delete"
+msgstr ""
+#: view_home_beteiligung_3
+msgid "We need the information"
+msgstr ""
+#: view_packages__deps_1
+msgid "          Only for "
+msgstr ""
+#: new_bundle
+msgid "New bundle"
+msgstr ""
+#: view_home_cancel_0
+msgid "Communtu -\n something went wrong while donating."
+msgstr ""
+#: view_home_derivatives_16
+msgid " is Ubuntu with the KDE-Desktop"
+msgstr ""
+#: controller_metapackages_4
+msgid "Bundle saved. It could take a couple of minutes until it is available as a metapackage."
+msgstr ""
+#: view_layouts_application_14
+msgid "Feedback to Communtu"
+msgstr ""
+#: dependent_on_repositories
+msgid "Depends on these repositories:"
+msgstr ""
+#: view_home_success_1
+msgid "We can issue a donation receipt. Please send an e-mail with your address to: "
+msgstr ""
+#: view_user_profiles__installation_13
+msgid "(When changing the version, the first step has to be done twice, because the Communtu-sources will be deactivated by the upgrade.):"
+msgstr ""
+#: zentrum_solidarische_oekonomie
+msgid "Center for Solidarity Economy"
+msgstr ""
+#: architecture_successful
+msgid "Architecture successfully created."
+msgstr ""
+#: view_home_home_8
+msgid "<b>Search program</b> Here you can search for single Ubuntu-programs (packages)."
+msgstr ""
+#: view_home_faq_06
+msgid "For this you click on <b>Bundle</b> and then on \"New bundle\". On the left side you can see a list with programs and on the right side you can see an empty list. This is the bundle editor. With a click on the Plus-icon in the left list you can add programs to your bundle. When you are finished with adding programs to your bundle you must click on the save symbol. Now you have to enter a meaningful name for your bundle, state the version of your bundle and provide a description so that other users will know what your bundle is about. In order to get the bundle rated and commented you need to publish your bundle. Attention: publish a bundle only if you are sure it will not be changed in the near future! Editing the bundle when it is published is not possible.<p> If you think that a programs fits into one of your bundles you can edit it (assuming it is not published). To do this go to <b>Bundle</b> and then to \"My bundles\". Click on the bundle you want to edit. Choose \"Edit package list\" from the dropdown list on the right side. Now you're in the bundle editor again. When finished changing your package list it needs to be saved. Raise the version number and save the bundle. It is now updated."
+msgstr ""
+#: contact_form
+msgid "Feedback"
+msgstr ""
+#: save_selection
+msgid "Save selection"
+msgstr ""
+#: install_apt_get_repos
+msgid "list of required sources for /etc/apt/sources.list:"
+msgstr ""
+#: view_home_derivatives_36
+msgid " - an African version of Ubuntu, which is apparently not available over the internet."
+msgstr ""
+#: view_users_new_8
+msgid "Yes, I want to be added to the announcement-mailinglist."
+msgstr ""
+#: view_metapackages_edit_2
+msgid "Please use versions => 1.0 only for stable bundles. A version must always increase. 0.10 is higher than 0.9."
+msgstr ""
+#: view_home_derivatives_3
+msgid "http://wiki.ubuntuusers.de/Was_ist_Linux?#Was-sind-Derivate-einer-Distribution (German)"
+msgstr ""
+#: view_layouts_application_9
+msgid "Log out"
+msgstr ""
+#: view_layouts_donate
+msgid "donate"
+msgstr ""
+#: error_no_attachement
+msgid "No file selected. The progress has been canceled."
+msgstr ""
+#: to_chat
+msgid "to the chat"
+msgstr ""
+#: view_home_home_12
+msgid "<b>Administrate categories</b> As an administrator you can create new categories or change the structure of a category-tree here. Act with caution!"
+msgstr ""
+#: download_area
+msgid "Download:"
+msgstr ""
+#: last_user
+msgid "Welcome to our newest user"
+msgstr ""
+#: view_cart_new_from_list_5
+msgid "Create "
+msgstr ""
+#: controller_passwords_8
+msgid "Passwords do not match."
+msgstr ""
+#: view_users_index_2
+msgid " registered users."
+msgstr ""
+#: view_home_derivatives_56
+msgid "http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix (German)"
+msgstr ""
+#: debian_section
+msgid "Debian section"
+msgstr ""
+#: no_package_selected
+msgid "No package selected"
+msgstr ""
+#: our_blog
+msgid "Our blog"
+msgstr ""
+#: view_home_icons_6
+msgid " install sources"
+msgstr ""
+#: usb_donate
+msgid "Creating an ISO image requires a lot of server performance. Please %{donate_link} to keep this feature alive."
+msgstr ""
+#: livecd_email_body_failed
+msgid "The ISO file %{name} for a Live-CD/DVD or USB key couldn't be created. We will solve the problem."
+msgstr ""
+#: livecd_incorrect_name
+msgid "The name of the Live-CD/DVD can contain only letters, numbers, _ and -."
+msgstr ""
+#: view_home_home_32
+msgid "Communtu:"
+msgstr ""
+#: model_package_1
+msgid "free+proprietary"
+msgstr ""
+#: controller_suggestion_2
+msgid "Add repositories and keys for the user"
+msgstr ""
+#: bundles_with_missing_packages
+msgid "Bundle with missing packages due to changing the distribution (may be replaced with similar packages)"
+msgstr ""
+#: architecture_successful_updated
+msgid "Architecture successfully updated."
+msgstr ""
+#: helper_distributions_0
+msgid "free"
+msgstr ""
+#: view_home_new_repository_2
+msgid "Link to the repository"
+msgstr ""
+#: view_metapackages_show_16
+msgid "Edit package list"
+msgstr ""
+#: about_us
+msgid "About us"
+msgstr ""
+#: view_home_mail_0
+msgid "Notification in bugfixing"
+msgstr ""
+#: illformed_version
+msgid "The version may contain only letters, numbers and .+:~ and it must begin with a number."
+msgstr ""
+#: view_users_new_1
+msgid "Here you have the possibility to register yourself."
+msgstr ""
+#: view_metapackages_show_save_3
+msgid "To create a meta-package an English title and descriptionis needed."
+msgstr ""
+#: view_packages_show_8
+msgid "Popularity:"
+msgstr ""
+#: view_distributions_show_2
+msgid "synchronise everything"
+msgstr ""
+#: error_no_packages
+msgid "You have not selected any packages. The progress has been canceled."
+msgstr ""
+#: download
+msgid "download"
+msgstr ""
+#: controller_sessions_3
+msgid "Your registered distribution was changed to %{dist_old} because your old distribution is not supported by Ubuntu (and therefore by Communtu) anymore. We suggest an upgrade to %{dist_new}."
+msgstr ""
+#: view_home_derivatives_29
+msgid "a computer to watch TV"
+msgstr ""
+#: metacart_choose
+msgid "Please add programs to your bundle."
+msgstr ""
+#: view_layouts_application_2
+msgid "Communtu"
+msgstr ""
+#: creation_error
+msgid "While creating the package an error occured."
+msgstr ""
+#: view_home_faq_20
+msgid "A repository is a collection of programs. With your package manager (Synaptic in Gnome and XFCE, KPackageKit in KDE) you can install programs from repositories. At the same time you receive updates for the installed programs via your package manager. Further information about repositories can be obtained <a href=\"https://help.ubuntu.com/community/Repositories/Ubuntu\" target=\"_blank\">here</a>."
+msgstr ""
+#: view_layouts_application_27
+msgid "Navigation download"
+msgstr ""
+#: view_home_news_7
+msgid "http://groups.google.com/group/communtu-discuss-en/topics?start="
+msgstr ""
+#: board
+msgid "board"
+msgstr ""
+#: controller_passwords_1
+msgid "A link for changing the password has been sent to your e-mail-address."
+msgstr ""
+#: install_package_sources_first
+msgid "Install package. If necessary please add the sources beforehand."
+msgstr ""
+#: controller_users_13
+msgid "A Problem occured while activating this user."
+msgstr ""
+#: headline
+msgid "Installing Ubuntu has never been easier"
+msgstr ""
+#: controller_admins_0
+msgid "admninistration section"
+msgstr ""
+#: view_metapackages__package_list_0
+msgid "Total size of bundle on disk:"
+msgstr ""
+#: view_users_show_8
+msgid "Message"
+msgstr ""
+#: livecd
+msgid "Live-CD/DVD"
+msgstr ""
+#: view_home_beteiligung_12
+msgid "Programming"
+msgstr ""
+#: installation_two_steps
+msgid "Installation of the package in two steps:"
+msgstr ""
+#: view_home_derivatives_49
+msgid " - Ubuntu with Enlightenment as a desktop environment."
+msgstr ""
+#: guest
+msgid "Guest"
+msgstr ""
+#: choice_of_bundle
+msgid "Choose bundle"
+msgstr ""
+#: install_bundle_steps
+msgid "The installation of bundle %{name} is done in multiple steps, please take a look at the right side."
+msgstr ""
+#: livecd_please_register
+msgid "To create Live-CD/DVDs or USB-key images, your first have to use the anonymous account %{register} or you need to %{login}."
+msgstr ""
+#: order_mailinglist
+msgid "Write in to mailinglist"
+msgstr ""
+#: view_categories_index_12
+msgid "show category-tree"
+msgstr ""
+#: view_user_profiles_help_0
+msgid "Determination of the Ubuntu version"
+msgstr ""
+#: view_home_home_bundle
+msgid "Preconfigured and published bundles in Communtu"
+msgstr ""
+#: view_home_home_25
+msgid "For questions concerning Communtu we have created a \"FAQ\"."
+msgstr ""
+#: view_categories_show_2
+msgid "Further information:"
+msgstr ""
+#: health_status
+msgid "Health status"
+msgstr ""
+#: livecd_failed
+msgid "Live-CD creation failed"
+msgstr ""
+#: view_mailbox_show_1
+msgid "From"
+msgstr ""
+#: controller_accounts_4
+msgid "Your account has already been activated. You can now log in."
+msgstr ""
+#: view_user_profiles__installation_0
+msgid "Additional software installation for Ubuntu "
+msgstr ""
+#: view_messages_show_0
+msgid "From:"
+msgstr ""
+#: view_home_about_9
+msgid "Important: You'll need a fast internet connection. We plan to implement a feature to create CDs and DVDs automatically for Ubuntu users with a slow internet connection (like dialup)."
+msgstr ""
+#: view_home_derivatives_22
+msgid " - in some ways like BeOS, ZevenOS focuses on speed and compatibility for old computers with a simple interface. CPU with at least 200 MHz, 128 MB RAM (for operating, while installing 192 MB RAM are required), at least 2 GB free hard disk space (recommended are 4 GB free hard disk space or more), 16 MB graphic card (recommended: Intel GMA 9xx)."
+msgstr ""
+#: view_packages_show_11
+msgid "Weblinks:"
+msgstr ""
+#: info_new
+msgid "Create new news message"
+msgstr ""
+#: livecd_previous_cds
+msgid "ISO images (for Live-CDs/DVDs and USB keys) created so far:"
+msgstr ""
+#: helper_distributions_19
+msgid "non-free and from the main repositories"
+msgstr ""
+#: view_layouts_application_20
+msgid "Javascript is not activated! Please activate Javascript in your browser-settings."
+msgstr ""
+#: view_home_beteiligung_9
+msgid "For the development of the project we currently need support with these two jobs:"
+msgstr ""
+#: view_metapackages_migrate_0
+msgid "Wich distribution are the bundles to be migrated from?"
+msgstr ""
+#: livecd_created_by
+msgid "Live-CD/DVD created by:"
+msgstr ""
+#: generate_cd_new
+msgid "Recreate Live-CD/DVD with new sources"
+msgstr ""
+#: view_home_impressum_4
+msgid "Bauernstr. 2"
+msgstr ""
+#: eg
+msgid "e.g."
+msgstr ""
+#: make_your_livedvd_or_usb
+msgid "Not yet using Ubuntu? You can download the <b>Ubuntu operating system </b> along with the <b>software you need</b> right here."
+msgstr ""
+#: none
+msgid "None"
+msgstr ""
+#: view_home_faq_13
+msgid "How do I find programs?"
+msgstr ""
+#: view_repositories_migrate_1
+msgid "copy repository"
+msgstr ""
+#: view_home_derivatives_42
+msgid " - specialised for webservices."
+msgstr ""
+#: achtung
+msgid "Attention! Will be available soon at Communtu."
+msgstr ""
+#: livecd_email_body
+msgid "The image you created at our site for creating a Live-CD/DVD or USB key has been finished!"
+msgstr ""
+#: view_categories_edit_3
+msgid "Link for further information"
+msgstr ""
+#: installing_using_script
+msgid "installing via script"
+msgstr ""
+#: view_derivatives_edit_0
+msgid "edit derivative"
+msgstr ""
+#: create_iso
+msgid "Create ISO image"
+msgstr ""
+#: view_home_contact_us_4
+msgid "Send "
+msgstr ""
+#: view_users__user_0
+msgid "activate"
+msgstr ""
+#: view_packages_rdepends_1
+msgid " directly and indirectly contained packages"
+msgstr ""
+#: blog_2
+msgid "Blog"
+msgstr ""
+#: repository
+msgid "repository"
+msgstr ""
+#: easy_install
+msgid "Your ways to Ubuntu"
+msgstr ""
+#: no_admin
+msgid "You are not an administrator!"
+msgstr ""
+#: view_home_derivatives_9
+msgid "With Communtu installable derivatives:"
+msgstr ""
+#: view_packages__search_0
+msgid "Search for packages"
+msgstr ""
+#: controller_repositories_0
+msgid "repositories"
+msgstr ""
+#: controller_home_2
+msgid "We will notify you via e-mail."
+msgstr ""
+#: view_admins_sync_package_2
+msgid "repository synchronised"
+msgstr ""
+#: search_package
+msgid "Search packages"
+msgstr ""
+#: view_repositories_new_4
+msgid "GPG-key (optional)"
+msgstr ""
+#: include_programs_bundel
+msgid "Contains the following programs/bundles:"
+msgstr ""
+#: used_in_bundles
+msgid "Is used in Communtu in these published bundles:"
+msgstr ""
+#: view_home_about_2
+msgid "Ubuntu is a linux-based distribution which makes Linux easier to use and more comprehensible. After the installation of Ubuntu via a CD or DVD your computer is already equipped to surf the internet, do some word processing and much more."
+msgstr ""
+#: view_home_home_18
+msgid "Click on"
+msgstr ""
+#: bundles_with_errors
+msgid "Bundles with errors"
+msgstr ""
+#: helper_distributions_12
+msgid "edit"
+msgstr ""
+#: view_home_beteiligung_2
+msgid "We would be very delighted if you would use Communtu to carry out an installation. We already have many bundles which are set up to specific characteristics. Maybe one of the bundles is suitable for you. Furthermore you can upload your own package-list to share it with other users. This is the most simple way to create a bundle, but you don't have to publish it. Of course you can use Communtu only as a saving place for your package list so you can install it on an other computer."
+msgstr ""
+#: view_home_faq_kde_02
+msgid "You can access KPackageKit via \"K-Menu -> Programs -> System -> Administration -> Software Management\". From the right dropdown menu you choose \"packages.communtu.org\". The list now appearing contains every metapackage available in Communtu. To uninstall a metapackage you click on one of the installed metapackages and mark it with the X right of the entry. To remove it from your system you need to click on \"Apply\". You now see a summary of the changes that will be made and after a click on \"Ok\" they will be removed from your system."
+msgstr ""
+#: chat_channel
+msgid "en-communtu"
+msgstr ""
+#: view_home_derivatives_15
+msgid "http://en.wikipedia.org/wiki/KDE"
+msgstr ""
+#: view_packages__deps_0
+msgid "none"
+msgstr ""
+#: cd_already_created
+msgid "The Live-CD/DVD has already been created."
+msgstr ""
+#: view_layouts_application_13
+msgid "About Communtu"
+msgstr ""
+#: view_home_success_0
+msgid " Thank you for your donation"
+msgstr ""
+#: more
+msgid "more"
+msgstr ""
+#: community_title
+msgid "Ubuntu Forums"
+msgstr ""
+#: we_want_you
+msgid "We need you"
+msgstr ""
+#: controller_metapackages_3
+msgid "Description must not be empty"
+msgstr ""
+#: model_package_7
+msgid "couldn't determine URL for %{repo}"
+msgstr ""
+#: controller_suggestion_8
+msgid "Ubuntu post-installation for users"
+msgstr ""
+#: bundles_needing_deb_generation
+msgid "Bundles that need to be recreated as metapackages."
+msgstr ""
+#: view_home_home_7
+msgid "<b>Administrate bundles</b> Did you have good experiences with the programs? Bundle them thematically or take a look at existing bundles."
+msgstr ""
+#: view_home_faq_05
+msgid "How can I create a bundle?"
+msgstr ""
+#: view_metapackages_immediate_conflicts_1
+msgid " conflicts with"
+msgstr ""
+#: helper_distributions_6
+msgid "delete repository"
+msgstr ""
+#: packages
+msgid "Packages"
+msgstr ""
+#: vm_active_session
+msgid "You already have a running virtual machine, please %{stop} that one first."
+msgstr ""
+#: yes1
+msgid "yes"
+msgstr ""
+#: view_home_derivatives_35
+msgid "There are several other derivatives for which we cannot give any recommendations for installation:"
+msgstr ""
+#: repositories_incompletely_read
+msgid "Repositories without packages (couldn't read repository)"
+msgstr ""
+#: failed_live_cds
+msgid "Failed Live-CDs/DVDs"
+msgstr ""
+#: wait_for_email
+msgid "Wating for e-mail"
+msgstr ""
+#: view_home_donate
+msgid "Make a donation for Communtu"
+msgstr ""
+#: view_distributions_show_8
+msgid "In order to delete a distribution, all user must be logged out! Are you sure?"
+msgstr ""
+#: controller_cart_2
+msgid "The following packages couldn't be found: %{message}<br> Please find the repositories which contain these packages and <a href=\"%{url}\">make a suggestion to add the repository to Communtu.</a>"
+msgstr ""
+#: start_vm_with_livecd_basis
+msgid "Start virtual machine based on the Live-CD settings (for debugging)"
+msgstr ""
+#: view_home_derivatives_2
+msgid "Ubuntu derivatives "
+msgstr ""
+#: view_sent__user_exists_0
+msgid "user found"
+msgstr ""
+#: view_admins_test_all_1
+msgid "Every repositorie could be reached."
+msgstr ""
+#: make_distribution_visible
+msgid "Make distribution viewable"
+msgstr ""
+#: create_livecd_note
+msgid "This takes some time and you will be informed via e-mail* when the ISO is created."
+msgstr ""
+#: direct_indirect_covered_packages
+msgid "Direct and indirect covered packages"
+msgstr ""
+#: view_cart_new_from_list_4
+msgid "Choose the file which contains the package-list:"
+msgstr ""
+#: view_home_home_11
+msgid "<b>Administrate users</b> As an administrator you can change the role of the users. Act with caution!"
+msgstr ""
+#: view_home_icons_20
+msgid "user-icon"
+msgstr ""
+#: view_rating_show_title_got_ratings
+msgid "of 5 stars"
+msgstr ""
+#: controller_passwords_7
+msgid "Password not changed."
+msgstr ""
+#: view_users_index_1
+msgid "We have a total of "
+msgstr ""
+#: view_home_derivatives_55
+msgid " - Mediacenter."
+msgstr ""
+#: view_users__mailbox_list_1
+msgid "Mailbox"
+msgstr ""
+#: press_archiv
+msgid "Press archives"
+msgstr ""
+#: view_rating_show_title_no_ratings
+msgid "no user rating"
+msgstr ""
+#: change_passwd
+msgid "change password"
+msgstr ""
+#: controller_users_6
+msgid "Userdata changed and account made permanent."
+msgstr ""
+#: controller_metapackages_not_allowed
+msgid "Only the owner of the bundle is allowed to perform this action."
+msgstr ""
+#: back
+msgid "Back"
+msgstr ""
+#: vm_stop
+msgid "stop"
+msgstr ""
+#: install2
+msgid "Install"
+msgstr ""
+#: show
+msgid "Show"
+msgstr ""
+#: help_translation
+msgid "Needing help with the translation? - Write us an e-mail!"
+msgstr ""
+#: model_package_0
+msgid "Free software"
+msgstr ""
+#: view_home_home_31
+msgid "Here you can choose the topics in detail, download single programs or complete bundles and you can create and manage your own bundles."
+msgstr ""
+#: controller_suggestion_1
+msgid "In order to install software, you have to choose at least one package."
+msgstr ""
+#: view_home_new_repository_1
+msgid "You're missing some sources? You can suggest a repository to us."
+msgstr ""
+#: view_cart__metacart_3
+msgid "Bundle from packages-list"
+msgstr ""
+#: view_metapackages_show_15
+msgid "Edit "
+msgstr ""
+#: allgemeinbildung
+msgid "Allgemeinbildung e.V."
+msgstr ""
+#: subject_with_colon
+msgid "Subject:"
+msgstr ""
+#: usb
+msgid "USB key"
+msgstr ""
+#: livecd_email_body_link
+msgid "You can access the download folling this link:"
+msgstr ""
+#: view_metapackages_show_save_2
+msgid "Create new meta-package."
+msgstr ""
+#: controller_suggestion_12
+msgid "The following repositories will be added"
+msgstr ""
+#: username
+msgid "Username"
+msgstr ""
+#: view_distributions_show_1
+msgid "check everything"
+msgstr ""
+#: model_mailer_5
+msgid "suggestion of a repository"
+msgstr ""
+#: view_roles__role_1
+msgid "assign role"
+msgstr ""
+#: create_livecd
+msgid "Create CD"
+msgstr ""
+#: view_layouts_application_1
+msgid "Communtu customizes your Ubuntu system to your individual needs."
+msgstr ""
+#: url
+msgid "URL"
+msgstr ""
+#: view_packages_show_17
+msgid "Contains these packages (\"depends\" and \"recommends\"):"
+msgstr ""
+#: thanks_for_order
+msgid "Thank you for subscribing to our mailinglist(s)."
+msgstr ""
+#: view_home_derivatives_28
+msgid " - with this, Ubuntu is going to be "
+msgstr ""
+#: make_a_systemupgrade
+msgid "You want to <b>upgrade your system</b> or suggest interesting programs? Take a look <a href=\"http://encommuntu.wordpress.com/2009/09/16/how-to-use-communtu-for-a-systems-upgrade/\"> and find out how easy it is</a> to submit your package list to Communtu."
+msgstr ""
+#: view_layouts_application_26
+msgid "Navigation bundle"
+msgstr ""
+#: view_user_profiles__installation_25
+msgid "Installatin via apturl"
+msgstr ""
+#: vm_running
+msgid "virtual machine is running"
+msgstr ""
+#: view_metapackages_show_3
+msgid "Back"
+msgstr ""
+#: creation_failed
+msgid "Creation failed"
+msgstr ""
+#: view_metapackages_show_deb_error
+msgid "While creating metapackages, an error occurred. We'll solve that problem as fast as possible."
+msgstr ""
+#: controller_users_12
+msgid "User activated"
+msgstr ""
+#: view_home_faq_19
+msgid "What is a repository?"
+msgstr ""
+#: creation_in_progress
+msgid "creation is in progress"
+msgstr ""
+#: view_home_icons_13
+msgid "program-bundle"
+msgstr ""
+#: view_home_beteiligung_11
+msgid "We need someone who is responsible for the project's layout. This means to integrate every graphic and to take over the main responsibility for the CSS."
+msgstr ""
+#: view_home_derivatives_48
+msgid " - minimal server-version, suitable for virtualizations."
+msgstr ""
+#: view_metapackages__metalist_10
+msgid "Rating "
+msgstr ""
+#: name_without_colon
+msgid "Name"
+msgstr ""
+#: view_packages_new_0
+msgid "New package"
+msgstr ""
+#: view_repositories_show_7
+msgid "        commercial "
+msgstr ""
+#: view_distributions_index_0
+msgid "Available Ubuntu-versions"
+msgstr ""
+#: view_sent_index_0
+msgid "sent messages"
+msgstr ""
+#: view_home_home_24
+msgid "To the imprint"
+msgstr ""
+#: news
+msgid "News"
+msgstr ""
+#: best_livecds
+msgid "Most popular Live-CD"
+msgstr ""
+#: new_distribution
+msgid "New distribution"
+msgstr ""
+#: view_user_profiles__profile_data_4
+msgid "further information"
+msgstr ""
+#: view_sessions_new_3
+msgid "Log this user permanently in on this computer"
+msgstr ""
+#: view_home_about_8
+msgid "After clicking on \"Save and select packages\" you'll get a detailed overview of the bundles and programs installed as well as the chance to change previously made selections. In case you don't feel like choosing the packages in detail, just click on \"Save\". This will take you to the installation page. There you'll find a button which starts the installation process. This takes some time because the applications will have to be downloaded from the internet and installed on your computer. When finished, you have a truely vesatile Ubuntu-PC!"
+msgstr ""
+#: make_your_livedvd
+msgid "... or burn it to a CD or DVD."
+msgstr ""
+#: add_to_bundle
+msgid "add to bundle"
+msgstr ""
+#: view_home_derivatives_21
+msgid "Derivatives which are based on a Xfce-installation (like Xubuntu) and that can be post-installed with Communtu:"
+msgstr ""
+#: create_livecd_email
+msgid "<i>* A valid e-mail address is needed!</i>"
+msgstr ""
+#: helper_distributions_18
+msgid "free and from third party repositories"
+msgstr ""
+#: view_user_profiles__profile_data_15
+msgid " Allow commercial licenses (free too, but the sources are closed - the fluent change to Linux:"
+msgstr ""
+#: view_users_edit_0
+msgid "Edit profile"
+msgstr ""
+#: view_home_beteiligung_8
+msgid "Co-operation"
+msgstr ""
+#: view_my_mailer_mail_1
+msgid "The following comment was made:"
+msgstr ""
+#: view_home_faq_all_02
+msgid "Packages are not being uninstalled and can be removed as normale via Synaptic or KPackageKit."
+msgstr ""
+#: kvm_processes
+msgid "KVM processes"
+msgstr ""
+#: view_repositories_index_0
+msgid "repositories "
+msgstr ""
+#: view_layouts_application_19
+msgid "https://www.paypal.com/en_GB/i/btn/btn_donate_LG.gif"
+msgstr ""
+#: view_home_faq_12
+msgid "Under <b>Bundle</b> and \"New bundle\" you can find the entry \"Create bundle from a packages-list\", which can be clicked. It is described how you can upload a package-list to Communtu. As soon as the bundle is created it is the same procedure when creating a new bundle: enter a meaningful name, state the version, add the description and save it."
+msgstr ""
+#: view_users_show_0
+msgid "show user"
+msgstr ""
+#: path
+msgid "Path:"
+msgstr ""
+#: controller_metapackages_9
+msgid "The description must not be empty<br>"
+msgstr ""
+#: make_distribution_final
+msgid "Mark distribution as stable"
+msgstr ""
+#: link_community_title
+msgid "External link: to the official Ubuntu Forums"
+msgstr ""
+#: view_user_profiles_new_3
+msgid "level of expert"
+msgstr ""
+#: nothing_found_questionmark
+msgid "Nothing found?"
+msgstr ""
+#: view_home_derivatives_41
+msgid "Ubuntu ultimate - Ubuntu with many desktop-designs and applications."
+msgstr ""
+#: model_package_could_not_read
+msgid "couldn't read %{url}"
+msgstr ""
+#: model_user_profile_tabz_1
+msgid "Software selection"
+msgstr ""
+#: creation_successful
+msgid "Creation was successful"
+msgstr ""
+#: allgemeinbildung_imprint
+msgid "Local Court Bremen VR 6055<br />tax office Bremen-Mitte, tax number 71-608-10747; donations are tax deductible<br />chairperson: Carolin Oslath, ViSdP (Person responsible according to the German Press Law): Till Mossakowski"
+msgstr ""
+#: vm_too_much_cpu_load
+msgid "The virtual machine cannot be created: our server is busy."
+msgstr ""
+#: view_home_news_13
+msgid "http://groups.google.com/group/communtu-discuss-de/topics?start="
+msgstr ""
+#: view_packages_rdepends_0
+msgid "In the package"
+msgstr ""
+#: view_home_derivatives_8
+msgid "You can also take a look of which packages a derivative consists."
+msgstr ""
+#: category_with_colon
+msgid "Category:"
+msgstr ""
+#: view_debs_index_5
+msgid "Create  "
+msgstr ""
+#: kontodaten
+msgid "Bank-account: 172 9375, Sparkasse Bremen, Bank-number 290 501 01"
+msgstr ""
+#: view_admins_sync_package_1
+msgid "Error: couldn't synchronise repository"
+msgstr ""
+#: controller_home_1
+msgid "The e-mail has been sent to us. Many thanks for your message."
+msgstr ""
+#: view_users__sidebar_2
+msgid "Search programs"
+msgstr ""
+#: view_sent_new_3
+msgid "Message:"
+msgstr ""
+#: confirm_new_passwd
+msgid "Confirm new password"
+msgstr ""
+#: donation_receipt
+msgid "A donation receipt can be issued."
+msgstr ""
+#: view_home_about_1
+msgid "Why Communtu?"
+msgstr ""
+#: view_home_home_17
+msgid "imprint."
+msgstr ""
+#: based_on_bundle
+msgid "Based on bundle:"
+msgstr ""
+#: vm_no_vnc
+msgid "No VNC port found"
+msgstr ""
+#: lib_system_2
+msgid "http://www.communtu.de"
+msgstr ""
+#: view_user_mailer_signup_notification_2
+msgid "\nGreetings\n\nthe Communtu-team\n\n  Further information about the project and your possibilities to use Communtu can be found at\n http://en.communtu.org/home/faq\n\n  Our anouncements and mailinglists can be found at:\nhttp://en.communtu.org/home/news"
+msgstr ""
+#: add
+msgid "add"
+msgstr ""
+#: view_home_faq_kde_01
+msgid "You can find the Communtu sources under \"K-Menu -> Programs -> System -> Software Sources -> Other Software\". They can also be deactivated here."
+msgstr ""
+#: required_fields
+msgid "mandatory fields"
+msgstr ""
+#: helper_distributions_11
+msgid "<br />Distribution "
+msgstr ""
+#: view_home_beteiligung_1
+msgid "Using the platform"
+msgstr ""
+#: cannot_migrate
+msgid "Can only migrate to fresh distribution"
+msgstr ""
+#: view_home_derivatives_14
+msgid " - learning software. Choose \"advanced\" under \"Education and science\" and it will be installed."
+msgstr ""
+#: controller_packages_2
+msgid "Package updated."
+msgstr ""
+#: donate
+msgid "make a donation"
+msgstr ""
+#: controller_metapackages_2
+msgid "The bundle-name is already in use!"
+msgstr ""
+#: start
+msgid "Start"
+msgstr ""
+#: email_with_colon
+msgid "E-Mail:"
+msgstr ""
+#: view_home_home_6
+msgid "<b>Installation</b> offers you a summary (bundling) of programs for the installation on your computer, according to your instructions on how you want to use your Ubuntu-PC."
+msgstr ""
+#: model_package_6
+msgid "<br> has not the right format"
+msgstr ""
+#: kvm_image
+msgid "KVM-Image"
+msgstr ""
+#: view_home_faq_04
+msgid "There are two ways to install a bundle.<p> The first way is to click on <b>Download</b>. On the right side is a small box, titled \"Settings\". With a click on \"change\" you can change the GUI (Kubuntu (KDE, Xubuntu (XFCE) or Lubuntu (LXDE) in use and what software sources and licences shall be installed. After clicking on \"Save\" you will need to click on <b>Download</b> again to get back to the software selection page.<p> You can now make a rough selection of the software you want to install, according to the tasks you want to perform with your computer (e. g. editing graphics). When a category is chosen a list of published bundles will appear on the right side. When a bundle is marked as \"Installed by default\" it will be preselected. Every change you make is saved immediately. With a click on \"Install\" you can install the selected bundles on your computer. If not already done, you need to install the software sources first.<p> The second way of installing with Communtu is by installing a bundle directly. To do so, click on <b>Bundle</b> and next on <b>All published bundles</b>. You now see a overview of all published bundles in Communtu sorted by the name. Again, if not already done you need to install the sources (a click on \"Add sources\" should do the trick) and with a click on \"Install through meta-package\" will install the bundle on your computer."
+msgstr ""
+#: view_metapackages_immediate_conflicts_0
+msgid "Conflicts inside bundles"
+msgstr ""
+#: first_sync_repos
+msgid "Please synchronise the repositories first. Normally, this is done automatically within one weak. Attention: it is only checked if anything is being synchronised at all, not if the process is finished."
+msgstr ""
+#: view_users_new_6
+msgid "confirm password"
+msgstr ""
+#: login
+msgid "Login"
+msgstr ""
+#: view_home_derivatives_34
+msgid " - replaces the Linux core with OpenSolaris. Provides only a minimal basis to applications. The installation of additional software is left to the user; Communtu can be used for this."
+msgstr ""
+#: cant_debianized
+msgid "To create this meta-package an English title and descriptionis needed."
+msgstr ""
+#: view_user_profiles__installation_31
+msgid "Every Ubuntu package and Communtu bundle can be installed and uninstalled by using %{synaptic} (go to \"System\" --> \"Administration\"). Updates of the programs inside the bundle are installed via the Ubuntu-updatemanager automatically."
+msgstr ""
+#: view_home_derivatives_1
+msgid "Communtu is based on a standard-installation of Ubuntu. There are many different "
+msgstr ""
+#: controller_distributions_2
+msgid "Distribution updated."
+msgstr ""
+#: view_admins_test_all_0
+msgid "The following repositories couldn't be read:"
+msgstr ""
+#: view_layouts_application_32
+msgid "Admin"
+msgstr ""
+#: invalid_activation_code_please_check_again
+msgid "Invalid activation code. Please check the code and try again. (Perhaps you e-mail-program did a line break?)"
+msgstr ""
+#: controller_metapackages_no_save
+msgid "This bundle contains conflicts and therefor it cannot be saved as a metapackage."
+msgstr ""
+#: view_home_faq_25
+msgid "The source packages.communtu.org contains only metapackages matching the corresponding Communtu bundle. We do not offer any software; but the repositories listed <a href=\"/distributions\" target=\"_blank\">here</a> are used by Communtu."
+msgstr ""
+#: view_cart_new_from_list_3
+msgid " can be found with the above-mentioned command. (For this, the package %{debfoster} has to be install. The created list only contains a minimal list of (meta-)packages which are necessary to rebuild your installation.)"
+msgstr ""
+#: view_home_home_10
+msgid "<b>Ubuntu-releases</b> Overview about the available Ubuntu-releases (distributions)."
+msgstr ""
+#: view_metapackages_show_9
+msgid "Published:"
+msgstr ""
+#: controller_passwords_6
+msgid "Password changed."
+msgstr ""
+#: migrate
+msgid "Migrate"
+msgstr ""
+#: view_users_index_0
+msgid "All users"
+msgstr ""
+#: choose_parent
+msgid "Choose a Parent!"
+msgstr ""
+#: view_user_profiles__sources_1
+msgid "The soon be installed programs and packages are shown and ordered by the appropriate sources so you can see why some sources will be added."
+msgstr ""
+#: view_home_icons_19
+msgid " external link"
+msgstr ""
+#: cd_ready
+msgid "CD has finished"
+msgstr ""
+#: controller_users_5
+msgid "user data updated"
+msgstr ""
+#: blog_link
+msgid "http://encommuntu.wordpress.com"
+msgstr ""
+#: view_layouts_application_warning
+msgid "Attention: the webserver will be down soon due to some maintenance work!"
+msgstr ""
+#: create_livecd_intro
+msgid "You can create a Live-CD with Communtu in two different ways: using the download page or directly via a bundle."
+msgstr ""
+#: to_colon
+msgid "To"
+msgstr ""
+#: view_home_home_30
+msgid "Bundle:"
+msgstr ""
+#: choose_bundle
+msgid "Choose bundle"
+msgstr ""
+#: install
+msgid "Install"
+msgstr ""
+#: distribution_derivative_mismatch
+msgid "%{derivative} is only for %{distributions]] available"
+msgstr ""
+#: view_packages_new_6
+msgid "Videos"
+msgstr ""
+#: new_category
+msgid "New category"
+msgstr ""
+#: view_user_profiles_help_5
+msgid "you expand Communtu with your version."
+msgstr ""
+#: view_home_new_repository_0
+msgid "Suggest repository"
+msgstr ""
+#: view_admins_sync_all_2
+msgid "repositories synchronised"
+msgstr ""
+#: superior_category
+msgid "Superior category"
+msgstr ""
+#: add_comment
+msgid "Add comment"
+msgstr ""
+#: view_home_home_rating_rating
+msgid "Rating"
+msgstr ""
+#: view_metapackages_show_14
+msgid " Actions:&nbsp;&nbsp;"
+msgstr ""
+#: third_party
+msgid "all providers"
+msgstr ""
+#: no_save_database
+msgid "The following packages couldn't be saved in the database:"
+msgstr ""
+#: view_cart_update_4
+msgid "Publish bundle"
+msgstr ""
+#: controller_suggestion_11
+msgid "add repository"
+msgstr ""
+#: view_distributions_show_0
+msgid "Repositories:"
+msgstr ""
+#: view_packages_edit_4
+msgid "Is a program:"
+msgstr ""
+#: model_mailer_4
+msgid "Your password has been restored."
+msgstr ""
+#: view_roles__role_0
+msgid "delete role"
+msgstr ""
+#: view_passwords_new_2
+msgid "reset password"
+msgstr ""
+#: create_livecd_bundlepage
+msgid "When you want to create a Live-CD from a single bundle, e. g. you want to use a your own non-published bundle, your have to go to <b>Bundle -&gt; My bundles</b> or <b>Published bundles</b> and search for a bundle. With a click on the CD icon on the right side in the Install section you come to the Live-CD page. With a click on <b>Create Live-CD/DVD</b> a Live-CD with will be created from the selected bundle."
+msgstr ""
+#: published
+msgid "published"
+msgstr ""
+#: advanced_user
+msgid "I'm an advanced user and want to see the preliminary Ubuntu versions."
+msgstr ""
+#: controller_sessions_1
+msgid "You are already logged in."
+msgstr ""
+#: view_packages_show_16
+msgid "package-version"
+msgstr ""
+#: view_home_derivatives_27
+msgid "http://en.wikipedia.org/wiki/LinuxMCE"
+msgstr ""
+#: bundles_without_debs
+msgid "Published bundles without deb-files."
+msgstr ""
+#: view_layouts_application_0
+msgid "Communtu, Ubuntu, installation, installation help"
+msgstr ""
+#: view_user_profiles__installation_24
+msgid "Installation via metapackage"
+msgstr ""
+#: view_layouts_application_25
+msgid "COMMUNTU"
+msgstr ""
+#: controller_users_11
+msgid "A problem while deleting a user occured."
+msgstr ""
+#: view_home_news_5
+msgid "This list is intended for general announcements from the Communtu team to the users. The frequency is a little higher than once a week. Posts will be collected in an"
+msgstr ""
+#: view_home_faq_18
+msgid "This is not hard. You open up the bundle editor (reachable via <b>Bundle</b>) and click on \"Suggest repository\". Enter the link to the program and shortly tell us why we should add this program to Communtu."
+msgstr ""
+#: view_home_icons_12
+msgid " Program (if not other program-icon is available)"
+msgstr ""
+#: view_home_beteiligung_10
+msgid "Graphic"
+msgstr ""
+#: view_accounts_edit_1
+msgid "old password"
+msgstr ""
+#: view_home_derivatives_47
+msgid "http://en.wikipedia.org/wiki/JeOS"
+msgstr ""
+#: view_home_about_16
+msgid "In order to use Communtu you need to register yourself. To do so, just click on the \"Registration\"-button in the menu above."
+msgstr ""
+#: downloads
+msgid "Downloads"
+msgstr ""
+#: updatedPackages
+msgid "Changed packages:"
+msgstr ""
+#: install_package_steps
+msgid "The installation of package %{name} is done in multiple steps, please take a look at the right side."
+msgstr ""
+#: view_repositories_show_6
+msgid "        OpenSource"
+msgstr ""
+#: total_isos_size
+msgid "Size of ISO:"
+msgstr ""
+#: view_categories_show_0
+msgid "Name: "
+msgstr ""
+#: view_home_home_23
+msgid "use Communtu as a guest"
+msgstr ""
+#: not_logged_in
+msgid "You are currently not logged in. Please click on \"log in\" above."
+msgstr ""
+#: compose_new_message
+msgid "compose a new message"
+msgstr ""
+#: controller_accounts_2
+msgid "Couldn't find activation code. Please try to create a new account."
+msgstr ""
+#: create
+msgid "Create"
+msgstr ""
+#: view_home_about_7
+msgid "There you can edit your settings: First, you'll have to specify the basic data, such as which Ubuntu version you want to install on your computer. Additionally, you must specify if you want to use free or commercial software. Finally, you must indicate for which purposes you want to use your computer."
+msgstr ""
+#: controller_debs_2
+msgid "Deb updated."
+msgstr ""
+#: view_user_profiles__profile_data_3
+msgid "What tasks do you want to do with your computer (only a rough choice, they can be chosen in detail later)?"
+msgstr ""
+#: view_home_derivatives_20
+msgid "Automatix was a programm to assist the installation of software and enjoyed great popularity (Automatix was even recommended by the New York Times). However, Automatix did not meet the Ubuntu-standards and the development has been stopped."
+msgstr ""
+#: controller_derivatives_2
+msgid "Derivative updated."
+msgstr ""
+#: view_home_impressum_2
+msgid "AG Communtu"
+msgstr ""
+#: anmelden
+msgid "Log in"
+msgstr ""
+#: view_home_faq_all_01
+msgid "The deactivation does not involve unstalling packages nor will updates be held back for installed software. Updates are still obtained from the official sources and those, which Communtu might have added. "
+msgstr ""
+#: view_my_mailer_mail_0
+msgid "Hello, \n\na feedback from en.communtu.org has arrived. The subject is:"
+msgstr ""
+#: view_home_beteiligung_7
+msgid "We need feedback. Our desire is that Communtu will be used by everyone and for this we need feedback. You found an error in the system? Is there something that is incomprehensible to you? You think you could do something better? You have some suggestions for us? Feedback is accepted under "
+msgstr ""
+#: view_user_profiles__profile_data_14
+msgid " Free software (sources are open and further development is allowed)"
+msgstr ""
+#: helper_distributions_17
+msgid "free and from the community repositories"
+msgstr ""
+#: oxygen_icon_legal_notice
+msgid "Some icons are from the Oxygen iconset http://www.oxygen-icons.org"
+msgstr ""
+#: zombie_processes
+msgid "Zombie processes"
+msgstr ""
+#: number_of_packages_in_bundles
+msgid "Number of packages in all bundles"
+msgstr ""
+#: iso_ready
+msgid "ISO images has finished"
+msgstr ""
+#: controller_sent_2
+msgid "message successfully send"
+msgstr ""
+#: controller_metapackages_8
+msgid "With each update the version has to be increased<br>"
+msgstr ""
+#: view_layouts_application_18
+msgid "no new messages"
+msgstr ""
+#: view_videos_show_0
+msgid "Url:"
+msgstr ""
+#: settings
+msgid "Settings"
+msgstr ""
+#: view_home_faq_11
+msgid "How do I create a bundle with my currently installed programs? "
+msgstr ""
+#: view_user_profiles__installation_17
+msgid "Just click on the link and open the file with the recommended packag -installer - if no dialog window pops up the file has been saved on your harddisk. You can open it with a double click."
+msgstr ""
+#: an
+msgid "To"
+msgstr ""
+#: lib_utils_0
+msgid "The followong system-command failed:"
+msgstr ""
+#: model_user_profile_tabz_0
+msgid "Base data"
+msgstr ""
+#: migrate_repositories
+msgid "Take over repositories from parent"
+msgstr ""
+#: create_usb_image
+msgid "create <a href=\"http://en.wikipedia.org/wiki/Live-usb\">Live-USB image</a>"
+msgstr ""
+#: ubuntu_derivatives
+msgid "Ubuntu derivatives"
+msgstr ""
+#: view_home_derivatives_40
+msgid " - for portable internet devices."
+msgstr ""
+#: no_packet_information_found
+msgid "No details about package information could be made."
+msgstr ""
+#: livecd_email_body_footer_2
+msgid "Communtu team"
+msgstr ""
+#: please_create_cd
+msgid "You must create a ISO file first."
+msgstr ""
+#: more_about_sources
+msgid "More information about keys and sources in the FAQ"
+msgstr ""
+#: view_home_derivatives_7
+msgid "can be chosen to be installed in the category \"Derivatives\"."
+msgstr ""
+#: communtu_is_opensource
+msgid "Communtu is written in %{rails}. Communtu's source code is open source, published under the %{agpl} and can be accessed via %{github}. Communtu also has a bug tracking system: %{trac}."
+msgstr ""
+#: view_metapackages_show_version_v
+msgid "(version %{v})"
+msgstr ""
+#: view_home_home_16
+msgid " about this project and its participants in the "
+msgstr ""
+#: view_user_mailer_signup_notification_1
+msgid "Your username is:"
+msgstr ""
+#: view_users_index_6
+msgid "Roles"
+msgstr ""
+#: lib_system_1
+msgid "You are not privileged to do this."
+msgstr ""
+#: create_livecd_downloadpage
+msgid "For this you choose the categories in the <b>Download</b> area that you want to install. With a click on \"Live-CD/DVD\" in the menu you can see a page where you can enter a name for your Live-CD. With a click on <b>Create Live-CD/DVD</b> the process will be started."
+msgstr ""
+#: view_user_mailer_activation_0
+msgid ", your account has been activated. Please follow this link:"
+msgstr ""
+#: helper_distributions_10
+msgid " and edit"
+msgstr ""
+#: controller_categories_3
+msgid "Category updated."
+msgstr ""
+#: no_bundle_selected
+msgid "No bundle selected"
+msgstr ""
+#: add_sources
+msgid "Add sources"
+msgstr ""
+#: view_home_derivatives_13
+msgid " - the PC becomes a VCR. Select \"Freak\" at \"Movie\" and it will be installed. Recommended: CPU with 2 GHz, 1024 MB-RAM, 10 GB free harddisk space for the frontend, at least 80 GB for the backend, a graphic card with at least 128 MB RAM and a TV Out and a supported TV card."
+msgstr ""
+#: controller_packages_1
+msgid "Package created"
+msgstr ""
+#: subject_without_colon
+msgid "Subject"
+msgstr ""
+#: want_to_add_package2
+msgid "Create a new bundle from the selection"
+msgstr ""
+#: controller_metapackages_no_renaming
+msgid "Released bundles cannot be renamed."
+msgstr ""
+#: view_layouts_application_11
+msgid "Guestsession"
+msgstr ""
+#: controller_suggestion_6
+msgid "Add repositories and keys for the package"
+msgstr ""
+#: view_home_home_5
+msgid "The menu on the left offers the following possibilities:"
+msgstr ""
+#: hello_simple
+msgid "Hello"
+msgstr ""
+#: generate_all_debs_for_bundle
+msgid "Create all debs for this bundle"
+msgstr ""
+#: vm_no_space
+msgid "Not enough free space on the server to start virtual machine."
+msgstr ""
+#: controller_metapackages_debianizing
+msgid "The bundle is currently created as a metapackaged and uploaded. This could take a couple of minutes."
+msgstr ""
+#: view_home_faq_03
+msgid "How do I install a bundle?"
+msgstr ""
+#: not_accepted
+msgid "The entered e-mail address contains forbidden characters or is not entered completely."
+msgstr ""
+#: view_home_home_new_messages_desc
+msgid "You have new messages in your inbox."
+msgstr ""
+#: controller_metapackages_not_changed
+msgid "This bundle is already created as a metapackage and uploaded."
+msgstr ""
+#: view_home_derivatives_33
+msgid "http://en.wikipedia.org/wiki/Nexenta_OS"
+msgstr ""
+#: view_user_profiles__installation_30
+msgid "Advice: please don't rename the .deb-file."
+msgstr ""
+#: controller_distributions_1
+msgid "Distribution created."
+msgstr ""
+#: current_news
+msgid "News"
+msgstr ""
+#: view_layouts_application_6
+msgid "Donate now online using PayPal, it is easy, quick and secure."
+msgstr ""
+#: controller_sessions_7
+msgid "Your account has been deactivated or deleted."
+msgstr ""
+#: update
+msgid "Refresh"
+msgstr ""
+#: view_home_faq_gnome_02
+msgid "To reach the package manager Synaptic you navigate to \"System -> Administration -> Synaptic Package Manager\". In the lower left part you click on \"Origin\". In the list above search for \"packages.communtu.org\" and click on it. In the right part of the window you will now see all metapackages available at Communtu. To remove a metapackage from your system you make a right click on it and choose \"Mark for Removal\". With a click on \"Apply\" it will be uninstalled."
+msgstr ""
+#: view_rating_rating_rate
+msgid "out of 5 stars awarded"
+msgstr ""
+#: usb_howto
+msgid "<h2>How does the image can be copied to an USB key?</h2> <h3>Ubuntu</h3>If you already have Ubuntu installed you can use the Startup Disk Creator, which can be accessed via System -> Administration -> Startup Disk Creator. In the section Source disk image (.iso) or CD you can choose the ISO file when clicking on Other... Finally you can choose whether changed files shall be saved on the USB key or not. With a click on Make Startup Disk the image will be copied to the USB key. This process will take some time, mainly depending on how fast files can be written onto the USB key. When the image has been copied a success message will be shown.<h3>Microsoft Windows</h3> First you have to download the program <a href=\"http://unetbootin.sourceforge.net\" target=\"_blank\">UNetbootin</a>. When the download has finished you can start UNetbootin without installation. With a click on \"Diskimage\" and the three ... on the right side you can choose the ISO image you just have downloaded. With the dropdown menu at the bottom of Unetbootin you must choose the correct drive letter (which corresponds with the USB key you want to copy the image to. When finished a message will pop up and inform you of the successful creation."
+msgstr ""
+#: view_layouts_application_31
+msgid "Contact"
+msgstr ""
+#: view_distributions_edit_0
+msgid "edit distribution"
+msgstr ""
+#: view_home_faq_24
+msgid "Which packages are in your repository?"
+msgstr ""
+#: view_cart_new_from_list_2
+msgid "A list of all programs installed on your computer"
+msgstr ""
+#: liveusb_start
+msgid "Create ISO file"
+msgstr ""
+#: create_your_livedvd
+msgid "Create a Live-CD"
+msgstr ""
+#: controller_passwords_5
+msgid "Password must not be empty."
+msgstr ""
+#: view_metapackages_show_8
+msgid "Rating: "
+msgstr ""
+#: search
+msgid "search"
+msgstr ""
+#: view_roles_index_2
+msgid "Available roles:"
+msgstr ""
+#: view_metapackages_finish_migrate_3
+msgid "The following packages could not be migrated:"
+msgstr ""
+#: preliminary_distribution
+msgid "Preliminary distribution"
+msgstr ""
+#: view_home_derivatives_53
+msgid " - allows a faster installation, as only the latest packages are downloaded."
+msgstr ""
+#: view_user_profiles__sources_0
+msgid "Sources for the soon be installed programs"
+msgstr ""
+#: controller_users_4
+msgid "An error occurred with the guest session."
+msgstr ""
+#: announce
+msgid "announce"
+msgstr ""
+#: view_roles_edit_1
+msgid "rolename"
+msgstr ""
+#: videos
+msgid "Videos:"
+msgstr ""
+#: view_videos_edit_0
+msgid "edit video"
+msgstr ""
+#: invisible_distribution
+msgid " Invisible distribution"
+msgstr ""
+#: view_home_home_rating_link
+msgid "Rate bundles"
+msgstr ""
+#: view_metapackages_show_version
+msgid "Version:"
+msgstr ""
+#: iso_deleted
+msgid "The ISO-image has beed deleted due to lack of harddisk space."
+msgstr ""
+#: view_home_icons_3
+msgid "Install package(s)."
+msgstr ""
+#: view_derivatives_show_3
+msgid "icon-file:"
+msgstr ""
+#: former_participants
+msgid "Former members"
+msgstr ""
+#: wait_for_debs
+msgid "waiting for building of metapackages"
+msgstr ""
+#: view_admins_sync_all_1
+msgid "Error: couldn't synchronise repositories"
+msgstr ""
+#: view_user_profiles_help_4
+msgid "You upgrade to a newer, supported, version or"
+msgstr ""
+#: which_programs_do_you_need
+msgid "Which sort of programs are you looking for (office, graphics, ...)?Enter your areas of interest below and chose from the appropriately pre-configured bundles."
+msgstr ""
+#: livecd_email
+msgid "Communtu: notification about Live-CD/DVD"
+msgstr ""
+#: view_sent_index_5
+msgid "You haven't sent any messages yet."
+msgstr ""
+#: view_home_home_29
+msgid "To which topic do you look for programs (office, graphics, ...)? Enter your fields of interest and pre-configured bundles can be downloaded."
+msgstr ""
+#: blog
+msgid "The Communtu blog"
+msgstr ""
+#: compute_conflicts
+msgid "Refresh conficts"
+msgstr ""
+#: view_messages_show_4
+msgid "Forward"
+msgstr ""
+#: bundel_editing
+msgid "edit bundle"
+msgstr ""
+#: view_mailbox_show_5
+msgid "You do not have any messages in your inbox."
+msgstr ""
+#: create_your_livedvd_or_usb
+msgid "Create Live-CD/DVD or USB key"
+msgstr ""
+#: controller_accounts_8
+msgid "Your old password was incorrect."
+msgstr ""
+#: model_mailer_3
+msgid "You asked for resetting your password"
+msgstr ""
+#: translation_file
+msgid "URL to the translation-file (gz-file):"
+msgstr ""
+#: view_passwords_new_1
+msgid "    Which e-mail-address did you enter when you created the account?"
+msgstr ""
+#: view_packages_edit_3
+msgid "&nbsp;&nbsp;New icon: "
+msgstr ""
+#: view_packages_show_5
+msgid "add sources for this package"
+msgstr ""
+#: view_metapackages__package_list_conflicts
+msgid "Conflicts with the following packages/bundles:"
+msgstr ""
+#: view_user_profiles__profile_data_9
+msgid "Here you can select how secure or comfortable your sources should be:"
 msgstr ""
 #: source_code
 msgid "Source code"
@@ -706,1367 +2188,695 @@ msgstr ""
 #: view_rating_show_title_ratings_count
 msgid "(Based on %{votes} rating(s))"
 msgstr ""
-#: achtung
-msgid "Attention! Will be available soon at Communtu."
-msgstr ""
-#: passwd
-msgid "Password"
-msgstr ""
-#: want_to_add_package
-msgid "Do you want to add single programs/packages?"
-msgstr ""
-#: stop_vm
-msgid "Stop Live-CD"
-msgstr ""
-#: model_mailer_3
-msgid "You asked for resetting your password"
-msgstr ""
-#: view_home_faq_gnome_02
-msgid "To reach the package manager Synaptic you navigate to \"System -> Administration -> Synaptic Package Manager\". In the lower left part you click on \"Origin\". In the list above search for \"packages.communtu.org\" and click on it. In the right part of the window you will now see all metapackages available at Communtu. To remove a metapackage from your system you make a right click on it and choose \"Mark for Removal\". With a click on \"Apply\" it will be uninstalled."
-msgstr ""
-#: repositories_without_packages
-msgid "Repositories without packages (empty repository)"
-msgstr ""
-#: view_user_profiles_help_2
-msgid "There you enter the following:"
-msgstr ""
-#: controller_profiles_0
-msgid "Installation of bundles"
-msgstr ""
-#: view_rating_new_comment_info
-msgid "Please enter a description to your rating. This is a <b>mandatory</b> step."
-msgstr ""
-#: email_with_colon
-msgid "E-Mail:"
-msgstr ""
-#: architecture_successful_updated
-msgid "Architecture successfully updated."
-msgstr ""
-#: view_user_profiles__installation_27
-msgid "Please configure "
-msgstr ""
-#: view_home_home_8
-msgid "<b>Search program</b> Here you can search for single Ubuntu-programs (packages)."
-msgstr ""
-#: view_layouts_application_19
-msgid "https://www.paypal.com/en_GB/i/btn/btn_donate_LG.gif"
-msgstr ""
-#: controller_accounts_4
-msgid "Your account has already been activated. You can now log in."
-msgstr ""
-#: mailinglist
-msgid "Mailinglists:"
-msgstr ""
-#: view_my_mailer_repo_1
-msgid "The following reason has been stated:"
-msgstr ""
-#: model_user_profile_tabz_4
-msgid "Settings"
-msgstr ""
-#: view_users__sidebar_6
-msgid "Administrate categories"
-msgstr ""
-#: helper_distributions_19
-msgid "non-free and from the main repositories"
-msgstr ""
-#: dependent_on_repositories
-msgid "Depends on these repositories:"
-msgstr ""
-#: view_passwords_new_1
-msgid "    Which e-mail-address did you enter when you created the account?"
-msgstr ""
-#: view_metapackages_show_save_3
-msgid "To create a meta-package an English title and descriptionis needed."
-msgstr ""
-#: view_metapackages_show_9
-msgid "Published:"
-msgstr ""
-#: create_livecd_subtitle1
-msgid "Creation using the download interface"
-msgstr ""
-#: view_user_profiles__profile_rating_0
-msgid "Software selection - choose a bundle of programs"
-msgstr ""
-#: anmelden
-msgid "Log in"
-msgstr ""
-#: save_selection
-msgid "Save selection"
-msgstr ""
-#: view_home_derivatives_2
-msgid "Ubuntu derivatives "
-msgstr ""
-#: bundles_with_errors
-msgid "Bundles with errors"
-msgstr ""
-#: view_home_impressum_5
-msgid "28203 Bremen\nGermany"
-msgstr ""
-#: current_news
-msgid "News"
-msgstr ""
-#: bundles_with_missing_debs
-msgid "Bundles with missing deb-builds"
-msgstr ""
-#: you_can
-msgid "You can "
-msgstr ""
-#: livecd_existing_name
-msgid "The name is already in use!"
-msgstr ""
-#: view_metapackages_show_modified
-msgid "This bundle contains changes."
-msgstr ""
-#: download_area
-msgid "Download:"
-msgstr ""
-#: view_metapackages_show_14
-msgid " Actions:&nbsp;&nbsp;"
-msgstr ""
-#: new_passwd
-msgid "new password"
-msgstr ""
-#: view_home_home_28
-msgid "Download:"
-msgstr ""
-#: view_home_about_6
-msgid "  (This does not appear until"
-msgstr ""
-#: creation_failed
-msgid "Creation failed"
-msgstr ""
-#: view_home_derivatives_27
-msgid "http://en.wikipedia.org/wiki/LinuxMCE"
-msgstr ""
-#: create_livecd_title
-msgid "How do I create a Live-CD?"
-msgstr ""
-#: repository_url
-msgid "Repository-URL: "
-msgstr ""
-#: view_home_news_11
-msgid "This list is intended for discussion about the platform. The frequency is a little higher than once a week. Posts will be collected in an "
-msgstr ""
-#: livecd_communtu_name
-msgid "Names containing \"communtu-\" are reserved for Live-CDs/DVDs created from bundles"
-msgstr ""
-#: view_home_faq_07
-msgid "How can I rate a bundle?"
-msgstr ""
-#: view_derivatives_show_3
-msgid "icon-file:"
-msgstr ""
-#: view_metapackages__metalist_20
-msgid "<option>0 bundles selected</option>"
-msgstr ""
-#: view_home_new_repository_2
-msgid "Link to the repository"
-msgstr ""
-#: view_home_icons_16
-msgid "migration from repositories"
-msgstr ""
-#: new_category
-msgid "New category"
-msgstr ""
-#: view_layouts_application_9
-msgid "Log out"
-msgstr ""
-#: former_participants
-msgid "Former members"
-msgstr ""
-#: view_cart_new_from_list_2
-msgid "A list of all programs installed on your computer"
-msgstr ""
-#: rough_selection
-msgid "Rough selection"
-msgstr ""
-#: view_users_index_2
-msgid " registered users."
-msgstr ""
-#: vm_too_much_cpu_load
-msgid "The virtual machine cannot be created: our server is busy."
-msgstr ""
-#: controller_derivatives_2
-msgid "Derivative updated."
-msgstr ""
-#: view_home_derivatives_47
-msgid "http://en.wikipedia.org/wiki/JeOS"
-msgstr ""
-#: controller_repositories_3
-msgid "sources.list read."
-msgstr ""
-#: creation_in_progress
-msgid "creation is in progress"
-msgstr ""
-#: donation_receipt
-msgid "A donation receipt can be issued."
-msgstr ""
-#: controller_metapackages_7
-msgid "Specify a version (e. g. 0.1)<br>"
-msgstr ""
-#: view_home_news_7
-msgid "http://groups.google.com/group/communtu-discuss-en/topics?start="
-msgstr ""
-#: view_roles_index_2
-msgid "Available roles:"
-msgstr ""
-#: helper_distributions_12
-msgid "edit"
-msgstr ""
-#: livecd_image
-msgid "CD-Image"
-msgstr ""
-#: view_distributions_show_3
-msgid "read sources.list"
-msgstr ""
-#: bundle_to_livecd
-msgid "Create Live-CD/DVD from bundle <i>%{name}</i>"
-msgstr ""
-#: model_package_12
-msgid "content of %{file} does not match with repository-syntax"
-msgstr ""
-#: no1
-msgid "no"
-msgstr ""
-#: view_users_edit_0
-msgid "Edit profile"
-msgstr ""
-#: view_users__mailbox_list_1
-msgid "Mailbox"
-msgstr ""
-#: third_party
-msgid "all providers"
-msgstr ""
-#: view_metapackages_edit_2
-msgid "Please use versions => 1.0 only for stable bundles. A version must always increase. 0.10 is higher than 0.9."
-msgstr ""
-#: view_home_home_21
-msgid "log "
-msgstr ""
-#: liveusb_start_message
-msgid "Here you can create a USB key image which contains the software chosen by you. You selected the following bundles:"
-msgstr ""
-#: creation_successful
-msgid "Creation was successful"
-msgstr ""
-#: licence
-msgid "Licence:"
-msgstr ""
-#: controller_home_5
-msgid "We received your suggestion and we will inform you if  and when we will add the repository to our system."
-msgstr ""
-#: view_home_derivatives_20
-msgid "Automatix was a programm to assist the installation of software and enjoyed great popularity (Automatix was even recommended by the New York Times). However, Automatix did not meet the Ubuntu-standards and the development has been stopped."
-msgstr ""
-#: view_layouts_application_32
-msgid "Admin"
-msgstr ""
-#: force_sync
-msgid "force synchronization of repository"
-msgstr ""
-#: view_metapackages_rdepends_1
-msgid " directly an indirectly contained bundles and packages"
-msgstr ""
-#: view_home_faq_00
-msgid "Frequently Asked Questions"
-msgstr ""
-#: name_of_usb
-msgid "Name if ISO file:"
-msgstr ""
-#: controller_suggestion_11
-msgid "add repository"
-msgstr ""
-#: view_home_beteiligung_14
-msgid "We can also help you to learn this programming-language. You just have to contact "
-msgstr ""
-#: view_layouts_application_2
-msgid "Communtu"
-msgstr ""
-#: view_user_profiles__installation_2
-msgid "Due to the choice you made, programs will now be installed on your computer."
-msgstr ""
-#: view_packages_edit_4
-msgid "Is a program:"
-msgstr ""
-#: view_metapackages_show_version
-msgid "Version:"
-msgstr ""
-#: last_user
-msgid "Welcome to our newest user"
-msgstr ""
-#: about_us
-msgid "About us"
-msgstr ""
-#: view_user_profiles__profile_data_6
-msgid "Please select an Ubuntu version. "
-msgstr ""
-#: view_home_derivatives_40
-msgid " - for portable internet devices."
-msgstr ""
-#: view_cart__metacart_3
-msgid "Bundle from packages-list"
-msgstr ""
-#: view_metapackages__metalist_3
-msgid "publ."
-msgstr ""
-#: view_repositories_index_0
-msgid "repositories "
-msgstr ""
-#: view_user_profiles__profile_data_11
-msgid " Allow community-sources (\"universe/multiverse\", secure, more programs/better comfort):"
-msgstr ""
-#: view_home_faq_20
-msgid "A repository is a collection of programs. With your package manager (Synaptic in Gnome and XFCE, KPackageKit in KDE) you can install programs from repositories. At the same time you receive updates for the installed programs via your package manager. Further information about repositories can be obtained <a href=\"https://help.ubuntu.com/community/Repositories/Ubuntu\" target=\"_blank\">here</a>."
-msgstr ""
-#: migrate
-msgid "Migrate"
-msgstr ""
-#: start_vm
-msgid "Try out Live-CD online"
-msgstr ""
-#: view_user_profiles__installation_13
-msgid "(When changing the version, the first step has to be done twice, because the Communtu-sources will be deactivated by the upgrade.):"
-msgstr ""
-#: headline
-msgid "Installing Ubuntu has never been easier"
-msgstr ""
-#: controller_distributions_0
-msgid "Ubuntu distributions"
-msgstr ""
-#: statistics
-msgid "View statistics"
-msgstr ""
-#: questionmark_conny
-msgid "Click and tell me what is unclear to you."
-msgstr ""
-#: view_home_beteiligung_3
-msgid "We need the information"
-msgstr ""
-#: view_home_news_24
-msgid "participate"
-msgstr ""
-#: model_user_meta_tabz_2
-msgid "Ubuntu packages"
-msgstr ""
-#: warnings
-msgid "Warnings"
-msgstr ""
-#: controller_users_11
-msgid "A problem while deleting a user occured."
-msgstr ""
-#: news
-msgid "News"
-msgstr ""
-#: start_vm_with_livecd_basis
-msgid "Start virtual machine based on the Live-CD settings (for debugging)"
-msgstr ""
-#: view_repositories_multinew_0
-msgid "read"
-msgstr ""
-#: we_want_you
-msgid "We need you"
-msgstr ""
-#: view_home_donate
-msgid "Make a donation for Communtu"
-msgstr ""
-#: livecd_email_body_footer_2
-msgid "Communtu team"
-msgstr ""
-#: install_bundle_steps
-msgid "The installation of bundle %{name} is done in multiple steps, please take a look at the right side."
-msgstr ""
-#: view_repositories_new_0
-msgid "new repository for"
-msgstr ""
-#: view_home_home_14
-msgid "There is also "
-msgstr ""
-#: view_home_derivatives_12
-msgid " provides multimedia package-sources. Because of legal reasons they cannot be offered by Ubuntu. Medibuntu is supported by Communtu (e. g. for audio or films)."
-msgstr ""
-#: view_metapackages__package_list_0
-msgid "Total size of bundle on disk:"
-msgstr ""
-#: view_home_cancel_0
-msgid "Communtu -\n something went wrong while donating."
-msgstr ""
-#: view_users_show_4
-msgid "last login:"
-msgstr ""
-#: cd_created
-msgid "The Live CD/DVD has finished."
-msgstr ""
-#: view_messages_show_0
-msgid "From:"
-msgstr ""
-#: ubuntu_derivatives
-msgid "Ubuntu derivatives"
-msgstr ""
-#: view_layouts_application_25
-msgid "COMMUNTU"
-msgstr ""
-#: iso_image
-msgid "ISO image"
-msgstr ""
-#: view_packages_show_16
-msgid "package-version"
-msgstr ""
-#: view_home_auth_error_0
-msgid "Error with authentication"
-msgstr ""
-#: view_packages_rdepends_0
-msgid "In the package"
-msgstr ""
-#: migrate_bundles
-msgid "Take over bundles from parent"
-msgstr ""
-#: wait_for_debs
-msgid "waiting for building of metapackages"
-msgstr ""
-#: controller_sessions_4
-msgid "You have been logged in."
-msgstr ""
-#: controller_users_4
-msgid "An error occurred with the guest session."
-msgstr ""
-#: view_home_derivatives_8
-msgid "You can also take a look of which packages a derivative consists."
-msgstr ""
-#: exact
-msgid "Find exact term:"
-msgstr ""
-#: install_bundle
-msgid "Installation of bundle %{name}"
-msgstr ""
-#: view_packages__packagelist_2
-msgid "Search:"
-msgstr ""
-#: match_with_communtu
-msgid "Communtu - collaboratively fit Ubuntu to your personal needs"
-msgstr ""
-#: view_home_derivatives_33
-msgid "http://en.wikipedia.org/wiki/Nexenta_OS"
-msgstr ""
-#: controller_categories_3
-msgid "Category updated."
-msgstr ""
-#: tested_bundle
-msgid "Tested bundles:"
-msgstr ""
-#: view_repositories_migrate_1
-msgid "copy repository"
-msgstr ""
-#: view_categories_show_2
-msgid "Further information:"
-msgstr ""
-#: kurzname
-msgid "short name"
-msgstr ""
-#: kontodaten
-msgid "Bank-account: 172 9375, Sparkasse Bremen, Bank-number 290 501 01"
-msgstr ""
-#: create_iso_image
-msgid "create <a href=\"http://en.wikipedia.org/wiki/ISO_image\">ISO-image</a> (CD/DVD)"
-msgstr ""
-#: model_message_0
-msgid "Please enter a subject"
-msgstr ""
-#: weblinks
-msgid "Weblinks"
-msgstr ""
-#: change
-msgid "change"
-msgstr ""
-#: hello
-msgid "Welcome"
-msgstr ""
-#: save
-msgid "Save"
-msgstr ""
-#: view_home_faq_13
-msgid "How do I find programs?"
-msgstr ""
-#: zombie_processes
-msgid "Zombie processes"
-msgstr ""
-#: controller_suggestion_4
-msgid "Add repositories and keys for the bundle"
-msgstr ""
-#: view_home_icons_22
-msgid " user-icon"
-msgstr ""
-#: bundle_by_owner
-msgid "Created bundles"
-msgstr ""
-#: view_cart_update_1
-msgid "Overwrite bundle, if it already exists?"
-msgstr ""
-#: usb
-msgid "USB key"
-msgstr ""
-#: view_home_news_17
-msgid "Go to the blog"
-msgstr ""
-#: wait_for_release
-msgid "wait for official Ubuntu release"
-msgstr ""
-#: category_with_colon
-msgid "Category:"
-msgstr ""
-#: package_list
-msgid "back to the package-list"
-msgstr ""
-#: admin_interface_for_livecd
-msgid "Administrative interface for debugging the creation of LiveCDs"
-msgstr ""
-#: vm_no_iso_found
-msgid "The virtual machine cannot be started, no iso image file found."
-msgstr ""
-#: url
-msgid "URL"
-msgstr ""
-#: view_home_derivatives_53
-msgid " - allows a faster installation, as only the latest packages are downloaded."
-msgstr ""
-#: model_mailer_2
-msgid "Your account has been activated."
-msgstr ""
-#: view_roles_new_0
-msgid "New role"
-msgstr ""
-#: new_architecture
-msgid "New architecture"
-msgstr ""
-#: view_home_faq_gnome_01
-msgid "You can find the Communtu sources under \"System -> Administration -> Software Sources -> Other Software\". They can also be deactivated here. "
-msgstr ""
-#: view_user_profiles_help_1
-msgid "Open a new terminal. Click on \"Applications\" -> \"Accessories\" -> \"Terminal\""
-msgstr ""
-#: allgemeinbildung_imprint
-msgid "Local Court Bremen VR 6055<br />tax office Bremen-Mitte, tax number 71-608-10747; donations are tax deductible<br />chairperson: Carolin Oslath, ViSdP (Person responsible according to the German Press Law): Till Mossakowski"
-msgstr ""
-#: view_home_home_7
-msgid "<b>Administrate bundles</b> Did you have good experiences with the programs? Bundle them thematically or take a look at existing bundles."
-msgstr ""
-#: view_layouts_application_18
-msgid "no new messages"
-msgstr ""
-#: create_livecd_note
-msgid "This takes some time and you will be informed via e-mail* when the ISO is created."
-msgstr ""
-#: view_my_mailer_repo_0
-msgid "Hello, \n\na suggestion for a new repository has been made at en.communtu.org:"
-msgstr ""
-#: model_user_profile_tabz_3
-msgid "Start installation"
-msgstr ""
-#: view_passwords_new_0
-msgid "forgotten password"
-msgstr ""
-#: view_users__sidebar_5
-msgid "Administrate users"
-msgstr ""
-#: helper_distributions_18
-msgid "free and from third party repositories"
-msgstr ""
-#: view_sessions_new_3
-msgid "Log this user permanently in on this computer"
-msgstr ""
-#: view_metapackages_show_8
-msgid "Rating: "
-msgstr ""
-#: view_metapackages_show_save_2
-msgid "Create new meta-package."
-msgstr ""
-#: view_home_derivatives_1
-msgid "Communtu is based on a standard-installation of Ubuntu. There are many different "
-msgstr ""
-#: view_home_contact_us_4
-msgid "Send "
-msgstr ""
-#: view_home_impressum_4
-msgid "Bauernstr. 2"
-msgstr ""
-#: cd_ready
-msgid "CD has finished"
-msgstr ""
-#: advanced_user
-msgid "I'm an advanced user and want to see the preliminary Ubuntu versions."
-msgstr ""
-#: view_users_new_6
-msgid "confirm password"
-msgstr ""
-#: view_metapackages_finish_migrate_3
-msgid "The following packages could not be migrated:"
-msgstr ""
-#: view_home_home_27
-msgid "Communtu helps you:"
-msgstr ""
-#: view_admins_sync_package_3
-msgid "Repository: "
-msgstr ""
-#: category_exists
-msgid "A category with this name already exists."
-msgstr ""
-#: server_status
-msgid "Server status"
-msgstr ""
-#: view_home_about_5
-msgid "To start off, choose <b>Download</b>."
+#: view_packages_show_15
+msgid "source/repository"
 msgstr ""
 #: view_home_derivatives_26
 msgid " - with the slim Xfce as the graphical interface. Particularly suitable for older computers: 128 MB RAM and 1,5 GB free hard disk space are sufficient. Should be installed from the CD to guarantee a slim installation. Additional software installation can be done with Communtu."
 msgstr ""
-#: participation
-msgid "Ways to participate"
-msgstr ""
-#: packages
-msgid "Packages"
-msgstr ""
-#: view_home_news_10
-msgid "communtu-discuss-en+subscribe@googlegroups.com"
-msgstr ""
-#: view_home_faq_06
-msgid "For this you click on <b>Bundle</b> and then on \"New bundle\". On the left side you can see a list with programs and on the right side you can see an empty list. This is the bundle editor. With a click on the Plus-icon in the left list you can add programs to your bundle. When you are finished with adding programs to your bundle you must click on the save symbol. Now you have to enter a meaningful name for your bundle, state the version of your bundle and provide a description so that other users will know what your bundle is about. In order to get the bundle rated and commented you need to publish your bundle. Attention: publish a bundle only if you are sure it will not be changed in the near future! Editing the bundle when it is published is not possible.<p> If you think that a programs fits into one of your bundles you can edit it (assuming it is not published). To do this go to <b>Bundle</b> and then to \"My bundles\". Click on the bundle you want to edit. Choose \"Edit package list\" from the dropdown list on the right side. Now you're in the bundle editor again. When finished changing your package list it needs to be saved. Raise the version number and save the bundle. It is now updated."
-msgstr ""
-#: circular_dependency
-msgid "Error: circular dependencies between bundles"
-msgstr ""
-#: view_home_about_16
-msgid "In order to use Communtu you need to register yourself. To do so, just click on the \"Registration\"-button in the menu above."
-msgstr ""
-#: distribution
-msgid "Distribution"
-msgstr ""
-#: view_derivatives_show_2
-msgid "dialog-program:"
-msgstr ""
-#: view_home_new_repository_1
-msgid "You're missing some sources? You can suggest a repository to us."
-msgstr ""
-#: livecd_email
-msgid "Communtu: notification about Live-CD/DVD"
-msgstr ""
-#: view_home_icons_15
-msgid " program-bundle"
-msgstr ""
-#: view_cart_new_from_list_1
-msgid "Here you can create a bundle from an existing package-list. The list must be formated as a plain text-file with only one package-name per line."
-msgstr ""
-#: feedback
-msgid "Comment "
-msgstr ""
-#: view_users_index_1
-msgid "We have a total of "
-msgstr ""
-#: register_small
-msgid "to turn into a permanent one."
-msgstr ""
-#: make_distribution_final
-msgid "Mark distribution as stable"
-msgstr ""
-#: controller_derivatives_1
-msgid "Derivative created."
-msgstr ""
-#: view_home_derivatives_46
-msgid " - Ubuntu server-version without any GUI."
-msgstr ""
-#: controller_repositories_2
-msgid "Repository updated."
-msgstr ""
-#: view_sent_show_2
-msgid "Date:"
-msgstr ""
-#: view_layouts_application_11
-msgid "Guestsession"
-msgstr ""
-#: helper_distributions_11
-msgid "<br />Distribution "
-msgstr ""
-#: view_user_profiles__profile_data_17
-msgid "Save and choose packages"
-msgstr ""
-#: view_derivatives_index_0
-msgid "Ubuntu derivatives"
-msgstr ""
-#: view_roles_index_1
-msgid "Assigned roles:"
-msgstr ""
-#: view_distributions_show_2
-msgid "synchronise everything"
-msgstr ""
-#: wait_for_sync
-msgid "waiting for syncronisation with repositories"
-msgstr ""
-#: stars_popcon
-msgid "The stars show how often the program is installed and used by the Ubuntu users."
-msgstr ""
-#: view_home_beteiligung_9
-msgid "For the development of the project we currently need support with these two jobs:"
-msgstr ""
-#: errors
-msgid "Error"
-msgstr ""
-#: or
-msgid "or"
-msgstr ""
-#: model_package_11
-msgid "could not determine URL"
-msgstr ""
-#: view_metapackages__package_list_conflicts
-msgid "Conflicts with the following packages/bundles:"
-msgstr ""
-#: controller_home_4
-msgid "A file with the package list (one package name per line) has to be given"
-msgstr ""
-#: view_home_home_20
-msgid " to create a new user or"
-msgstr ""
-#: generate_all_debs_for_bundle
-msgid "Create all debs for this bundle"
-msgstr ""
-#: install_package_sources_first
-msgid "Install package. If necessary please add the sources beforehand."
-msgstr ""
-#: livecd_incorrect_name
-msgid "The name of the Live-CD/DVD can contain only letters, numbers, _ and -."
-msgstr ""
-#: action_needs_login
-msgid "In order to save your configuration, you need to login."
-msgstr ""
-#: livecd_email_body
-msgid "The image you created at our site for creating a Live-CD/DVD or USB key has been finished!"
-msgstr ""
-#: imprint
-msgid "Imprint"
-msgstr ""
-#: controller_debs_2
-msgid "Deb updated."
-msgstr ""
-#: view_layouts_application_31
-msgid "Contact"
-msgstr ""
-#: view_metapackages_rdepends_0
-msgid "In bundle"
-msgstr ""
-#: add_to_bundle
-msgid "add to bundle"
-msgstr ""
-#: view_user_profiles__installation_1
-msgid "In order to install software, you have to choose at least one package or bundle under \"Software selection\"."
-msgstr ""
-#: model_package_could_not_read
-msgid "couldn't read %{url}"
-msgstr ""
-#: view_packages_edit_3
-msgid "&nbsp;&nbsp;New icon: "
-msgstr ""
-#: view_home_beteiligung_13
-msgid "Since we have many ideas for the platform's further development, we need programmers. Ideally you already have some experience with Ruby on Rails."
-msgstr ""
-#: view_home_derivatives_18
-msgid " is an Ubuntu spin-off with its own user community which has dedicated itself to usability. Linux Mint is quite similar to Ubuntu but has more codecs, like to watch DVDs or listen to MP3s, pre-installed. Those codecs are available via Communtu, listet at \"Sound & Video\"."
-msgstr ""
-#: view_layouts_application_1
-msgid "Communtu customizes your Ubuntu system to your individual needs."
-msgstr ""
-#: make_your_livedvd_or_usb
-msgid "Not yet using Ubuntu? You can download the <b>Ubuntu operating system </b> along with the <b>software you need</b> right here."
-msgstr ""
-#: view_home_icons_0
-msgid "icons used in Communtu"
-msgstr ""
-#: add_comment
-msgid "Add comment"
-msgstr ""
-#: liveusb_start
-msgid "Create ISO file"
-msgstr ""
-#: view_metapackages_show_deb_error
-msgid "While creating metapackages, an error occurred. We'll solve that problem as fast as possible."
-msgstr ""
-#: start_vm_instructions
-msgid "Follow these steps to log in on the virtual machine (please wait a minute, deb-files need to be copied):"
-msgstr ""
-#: view_metapackages__metalist_2
-msgid "Standard"
-msgstr ""
-#: livecd_no_name
-msgid "LiveCD/DVD name missing"
-msgstr ""
-#: no_cookies
-msgid "You don't have cookies enabled which are necessary in order to use Communtu. We recommend that you enable cookies in your webbrowser."
-msgstr ""
-#: view_user_profiles__profile_data_10
-msgid " Allow only Ubuntu-sources (\"main/restricted\", very secure)"
-msgstr ""
-#: view_home_derivatives_39
-msgid " for older PCs. It is based on the LXDE-GUI."
-msgstr ""
-#: new_distribution
-msgid "New distribution"
-msgstr ""
-#: view_packages_new_0
-msgid "New package"
-msgstr ""
-#: helper_distributions_2
-msgid "synchronise repository"
-msgstr ""
-#: view_roles_show_0
-msgid "Rolename:"
-msgstr ""
-#: category_without_colon
-msgid "Category"
-msgstr ""
-#: view_home_faq_19
-msgid "What is a repository?"
-msgstr ""
-#: model_user_meta_tabz_1
-msgid "All published bundles"
-msgstr ""
-#: view_home_beteiligung_2
-msgid "We would be very delighted if you would use Communtu to carry out an installation. We already have many bundles which are set up to specific characteristics. Maybe one of the bundles is suitable for you. Furthermore you can upload your own package-list to share it with other users. This is the most simple way to create a bundle, but you don't have to publish it. Of course you can use Communtu only as a saving place for your package list so you can install it on an other computer."
-msgstr ""
-#: controller_metapackages_reset
-msgid "Reset bundle error manually (after solving the problems)."
-msgstr ""
-#: controller_users_10
-msgid "User deleted"
-msgstr ""
-#: order_mailinglist
-msgid "Write in to mailinglist"
-msgstr ""
-#: english_name
-msgid "English name:"
-msgstr ""
-#: view_accounts_edit_1
-msgid "old password"
-msgstr ""
-#: more_about_sources
-msgid "More information about keys and sources in the FAQ"
-msgstr ""
-#: view_home_home_13
-msgid "<b>News</b> Reference to events about Communtu, the Communtu-blog ..."
-msgstr ""
-#: add
-msgid "add"
-msgstr ""
-#: view_repositories_show_7
-msgid "        commercial "
-msgstr ""
-#: controller_metapackages_no_save
-msgid "This bundle contains conflicts and therefor it cannot be saved as a metapackage."
-msgstr ""
-#: by_bank_transfer
-msgid "per bank transfer"
-msgstr ""
-#: view_users_show_3
-msgid "(month/year)"
-msgstr ""
-#: view_home_derivatives_11
-msgid " - Ubuntu multimedia-edition. This will be automatically installed when \"advanced\" is checked at audio, film and/or graphic/design."
+#: view_user_profiles__installation_23
+msgid "There are two alternatives:"
 msgstr ""
 #: view_layouts_application_24
 msgid "DOWNLOAD"
 msgstr ""
-#: controller_cart_2
-msgid "The following packages couldn't be found: %{message}<br> Please find the repositories which contain these packages and <a href=\"%{url}\">make a suggestion to add the repository to Communtu.</a>"
-msgstr ""
-#: view_categories_edit_0
-msgid "Edit category"
-msgstr ""
-#: view_packages_show_15
-msgid "source/repository"
-msgstr ""
-#: usb_created
-msgid "The ISO file for the USB key has finished."
-msgstr ""
-#: yes1
-msgid "yes"
-msgstr ""
-#: bundle_tested
-msgid "Bundle tested:"
-msgstr ""
-#: controller_users_3
-msgid "You were logged in as %{anonymous_user} with the password %{anonymous_user}. If you wish to, you can click the username %{anonymous_user} in the upper right corner and change your temporary account into a permanent one. If you don't, the account will be deleted after one day."
-msgstr ""
-#: edit_press_archiv
-msgid "edit press archives"
-msgstr ""
-#: controller_sessions_3
-msgid "Your registered distribution was changed to %{dist_old} because your old distribution is not supported by Ubuntu (and therefore by Communtu) anymore. We suggest an upgrade to %{dist_new}."
-msgstr ""
-#: view_home_derivatives_7
-msgid "can be chosen to be installed in the category \"Derivatives\"."
-msgstr ""
-#: view_user_mailer_forgot_password_0
-msgid ", to receive a new password, please folloe the link:"
-msgstr ""
-#: view_debs_index_3
-msgid "Create every failed deb <b>Warning: only do this at admin.communtu.de!</b>"
-msgstr ""
-#: view_packages__packagelist_1
-msgid "Programs&nbsp;only:"
-msgstr ""
-#: view_home_derivatives_32
-msgid " is an Ubuntu derivative consisting only of free software. Suitable only for experienced users. Should only be installed with the Gobuntu-CD so that only free software is provided. A further installation with Communtu is possible, but \"Free software\" should be selected in the user profile. This derivative is available in Ubuntu 8.04 and development is currently discontinued."
-msgstr ""
-#: controller_categories_2
-msgid "Category created."
-msgstr ""
-#: livecd_previous_cds
-msgid "ISO images (for Live-CDs/DVDs and USB keys) created so far:"
-msgstr ""
-#: view_home_home_33
-msgid "Do you want to know more about Communtu? Do you have suggestions or questions? We are looking forward to be in touch with you."
-msgstr ""
-#: make_a_systemupgrade
-msgid "You want to <b>upgrade your system</b> or suggest interesting programs? Take a look <a href=\"http://encommuntu.wordpress.com/2009/09/16/how-to-use-communtu-for-a-systems-upgrade/\"> and find out how easy it is</a> to submit your package list to Communtu."
-msgstr ""
-#: view_layouts_donate
-msgid "donate"
-msgstr ""
-#: view_home_faq_all_02
-msgid "Packages are not being uninstalled and can be removed as normale via Synaptic or KPackageKit."
-msgstr ""
-#: view_home_faq_12
-msgid "Under <b>Bundle</b> and \"New bundle\" you can find the entry \"Create bundle from a packages-list\", which can be clicked. It is described how you can upload a package-list to Communtu. As soon as the bundle is created it is the same procedure when creating a new bundle: enter a meaningful name, state the version, add the description and save it."
-msgstr ""
-#: untested_bundle
-msgid "Untested bundles:"
-msgstr ""
-#: view_cart_update_0
-msgid "edit bundle-information"
-msgstr ""
-#: blog_2
-msgid "Blog"
-msgstr ""
-#: controller_messages_0
-msgid "Original message by %{user} from %{datum}}  \n"
-msgstr ""
-#: liveusb_message
-msgid "With an USB key you can test the software you have chosen and install the system with the previous made choice of software. For this, an ISO-file (%{cdimage_link}) is created which can be copied to the key.<br /><br />The creation of the image takes a while. You will be informed automatically when your image has been created. For this, a valid e-mail address is required to be entered in your profile."
-msgstr ""
-#: blog_link
-msgid "http://encommuntu.wordpress.com"
-msgstr ""
-#: view_home_news_16
-msgid "We have a blog where we post updated information about Communtu. It gets a new post about once a week. Announcement and new features will be presented here."
-msgstr ""
-#: view_user_profiles__sources_1
-msgid "The soon be installed programs and packages are shown and ordered by the appropriate sources so you can see why some sources will be added."
-msgstr ""
-#: kvm_processes
-msgid "KVM processes"
-msgstr ""
-#: cd_failed
-msgid "Failed - we will solve the problem and inform you when the ISO-file is ready to download"
-msgstr ""
-#: view_home_derivatives_52
-msgid " - a kind of Automatix for the ultimate edition."
-msgstr ""
-#: cannot_migrate
-msgid "Can only migrate to fresh distribution"
-msgstr ""
-#: nothing_found_questionmark
-msgid "Nothing found?"
-msgstr ""
-#: model_mailer_1
-msgid "Query via formular"
-msgstr ""
-#: generate_cd_new
-msgid "Recreate Live-CD/DVD with new sources"
-msgstr ""
-#: four_and_fourty_letters
-msgid "Between 4 and 40 letters"
-msgstr ""
-#: email_without_colon
-msgid "e-mail"
-msgstr ""
-#: view_user_profiles_help_0
-msgid "Determination of the Ubuntu version"
-msgstr ""
-#: view_user_profiles__installation_25
-msgid "Installatin via apturl"
-msgstr ""
-#: controller_packages_2
-msgid "Package updated."
-msgstr ""
-#: view_home_home_6
-msgid "<b>Installation</b> offers you a summary (bundling) of programs for the installation on your computer, according to your instructions on how you want to use your Ubuntu-PC."
-msgstr ""
-#: controller_accounts_2
-msgid "Could'nt find activation code. Please try to create a new account."
-msgstr ""
-#: view_users__sidebar_4
-msgid "Ubuntu versions"
-msgstr ""
-#: description_with_colon
-msgid "Description:"
-msgstr ""
-#: helper_distributions_17
-msgid "free and from the community repositories"
-msgstr ""
-#: offer_new_category
-msgid "Suggest a new category"
-msgstr ""
-#: archive
-msgid "archive"
-msgstr ""
-#: livecd_email_body_3
-msgid "We hope you have fun with your Ubuntu."
-msgstr ""
-#: trusted
-msgid "Ubuntu+Community"
-msgstr ""
-#: view_distributions_show_8
-msgid "In order to delete a distribution, all user must be logged out! Are you sure?"
-msgstr ""
-#: select_default_bundles
-msgid "Select standard bundles for %{category}"
-msgstr ""
-#: architecture_successful
-msgid "Architecture successfully created."
-msgstr ""
-#: view_mailbox_show_5
-msgid "You do not have any messages in your inbox."
-msgstr ""
-#: view_metapackages_immediate_conflicts_1
-msgid " conflicts with"
-msgstr ""
-#: view_metapackages_finish_migrate_2
-msgid ". "
-msgstr ""
-#: view_metapackages_show_12
-msgid "Not published"
-msgstr ""
-#: view_admins_sync_package_2
-msgid "repository synchronised"
-msgstr ""
-#: view_home_home_26
-msgid "You installed Ubuntu and now you are looking for programs which run with Ubuntu?"
-msgstr ""
-#: none
-msgid "None"
-msgstr ""
-#: view_home_about_4
-msgid "How to use Communtu"
-msgstr ""
-#: view_home_derivatives_25
-msgid "http://en.wikipedia.org/wiki/Xfce"
-msgstr ""
-#: order_number
-msgid "Sort by number (smallest number first):"
-msgstr ""
-#: bundles_without_debs
-msgid "Published bundles without deb-files."
-msgstr ""
-#: livecd_create
-msgid "The Live-CD/DVD is now being created. We will notify you via e-mail when this process is finished."
-msgstr ""
-#: view_home_faq_05
-msgid "How can I create a bundle?"
-msgstr ""
-#: view_home_new_repository_0
-msgid "Suggest repository"
-msgstr ""
-#: view_packages_edit_9
-msgid "    Video description:"
-msgstr ""
-#: controller_suggestion_16
-msgid "The following packages will be installed"
-msgstr ""
-#: view_derivatives_show_1
-msgid "sudo-program:"
-msgstr ""
-#: view_cart_new_from_list_0
-msgid "Create bundle from a packages-list"
-msgstr ""
-#: health_status
-msgid "Health status"
-msgstr ""
-#: vm_no_vnc
-msgid "No VNC port found"
-msgstr ""
-#: subject_without_colon
-msgid "Subject"
-msgstr ""
-#: new_bundle
-msgid "New bundle"
-msgstr ""
-#: view_home_icons_6
-msgid " install sources"
-msgstr ""
-#: choose_parent
-msgid "Choose a Parent!"
-msgstr ""
-#: controller_metapackages_15
-msgid "<option value='2'>Publish<option/>"
-msgstr ""
-#: invisible_distribution
-msgid " Invisible distribution"
-msgstr ""
-#: view_users_index_0
-msgid "All users"
-msgstr ""
-#: view_rating_show_title_got_ratings
-msgid "of 5 stars"
-msgstr ""
-#: controller_repositories_1
-msgid "Repository created."
-msgstr ""
-#: view_home_derivatives_45
-msgid "http://wiki.ubuntuusers.de/Server_Installation (German)"
-msgstr ""
-#: natur_geist_und_technik
-msgid "Natur, Geist und Technik - Verein zur Förderung der Allgemeinbildung e.V."
-msgstr ""
-#: controller_passwords_2
-msgid "No user found with this e-mail-address."
-msgstr ""
-#: view_home_faq_25
-msgid "The source packages.communtu.org contains only metapackages matching the corresponding Communtu bundle. We do not offer any software; but the repositories listed <a href=\"/distributions\" target=\"_blank\">here</a> are used by Communtu."
-msgstr ""
-#: view_roles_index_0
-msgid "roles for"
-msgstr ""
-#: view_home_news_5
-msgid "This list is intended for general announcements from the Communtu team to the users. The frequency is a little higher than once a week. Posts will be collected in an"
-msgstr ""
-#: helper_distributions_10
-msgid " and edit"
-msgstr ""
 #: view_repositories_index_5
 msgid "new repository"
 msgstr ""
-#: view_distributions_show_1
-msgid "check everything"
+#: total_packages
+msgid "Total packages:"
 msgstr ""
-#: view_packages_new_6
-msgid "Videos"
+#: install_software
+msgid "Install software"
 msgstr ""
-#: free_disk_space
-msgid "Free disk space (root / home / isos)"
+#: gpg_key
+msgid "GPG-key (optional):"
 msgstr ""
-#: helper_distributions_8
-msgid "Show sources"
+#: migrate_bundles_derivative
+msgid "Take over bundle from other derivative."
 msgstr ""
-#: bundel_editing
-msgid "edit bundle"
+#: detailed_view
+msgid "go to detailed view"
 msgstr ""
-#: view_metapackages_show_0
-msgid "Bundle created by "
+#: controller_users_10
+msgid "User deleted"
 msgstr ""
-#: model_package_10
-msgid "While the synchronization of the repository %{repo_name} the package %{package_name} couldn't be found."
+#: view_sent_show_2
+msgid "Date:"
 msgstr ""
-#: view_home_beteiligung_8
-msgid "Co-operation"
+#: view_users_show_5
+msgid "Created bundles:"
 msgstr ""
-#: illformed_version
-msgid "The version may contain only letters, numbers and .+:~ and it must begin with a number."
+#: view_home_faq_17
+msgid "How can I suggest new programs?"
 msgstr ""
-#: lib_utils_0
-msgid "The followong system-command failed:"
+#: livecd_no_name
+msgid "LiveCD/DVD name missing"
 msgstr ""
-#: view_distributions_edit_0
-msgid "edit distribution"
+#: view_home_derivatives_46
+msgid " - Ubuntu server-version without any GUI."
 msgstr ""
-#: navigation_communtu
-msgid "Navigation Communtu"
+#: you_can
+msgid "You can "
 msgstr ""
-#: controller_home_3
-msgid "This does not appear to be a list with Ubuntu-packages... <br />The packagelist must contain one packagename per line"
+#: model_user_meta_tabz_3
+msgid "Published bundles"
 msgstr ""
-#: more
-msgid "more"
+#: spam_user_delete
+msgid "All spam users deleted."
 msgstr ""
-#: compute_conflicts
-msgid "Refresh conficts"
+#: view_sent__user_not_exists_0
+msgid "user not found"
 msgstr ""
-#: view_layouts_application_30
-msgid "contact"
+#: model_package_12
+msgid "content of %{file} does not match with repository-syntax"
 msgstr ""
-#: no_save_database
-msgid "The following packages couldn't be saved in the database:"
+#: view_home_home_22
+msgid "in, or "
 msgstr ""
-#: blog
-msgid "The Communtu blog"
+#: view_users__sidebar_7
+msgid "Administrate derivatives"
+msgstr ""
+#: controller_accounts_1
+msgid "Your account has been activated. You can now log in."
+msgstr ""
+#: view_home_about_6
+msgid "  (This does not appear until"
 msgstr ""
 #: controller_debs_1
 msgid "Deb created."
 msgstr ""
-#: create_livecd_downloadpage
-msgid "For this you choose the categories in the <b>Download</b> area that you want to install. With a click on \"Live-CD/DVD\" in the menu you can see a page where you can enter a name for your Live-CD. With a click on <b>Create Live-CD/DVD</b> the process will be started."
+#: name_with_colon
+msgid "Name:"
 msgstr ""
-#: view_packages_show_21
-msgid "Is used in this packages:"
+#: view_user_profiles__profile_data_2
+msgid "Attention: when finished, don't forget to click on the 'Save'-button!"
 msgstr ""
-#: view_user_profiles__installation_0
-msgid "Additional software installation for Ubuntu "
+#: bundle_to_livecd1
+msgid "Create Live-CD/DVD from bundle"
 msgstr ""
-#: view_home_beteiligung_12
-msgid "Programming"
+#: errors
+msgid "Error"
 msgstr ""
-#: view_home_derivatives_17
-msgid "http://en.wikipedia.org/wiki/Linux_Mint"
+#: homepage
+msgid "home"
 msgstr ""
-#: view_layouts_application_0
-msgid "Communtu, Ubuntu, installation, installation help"
+#: view_metapackages_edit_gpl
+msgid "I accept to publish the bundle information under the <a href=\"http://www.gnu.de/documents/gpl.de.html\">GNU General public license</a> (Version 2.0 or higher)."
 msgstr ""
-#: view_packages_edit_2
-msgid "Icon"
+#: controller_derivatives_1
+msgid "Derivative created."
 msgstr ""
-#: view_packages_show_5
-msgid "add sources for this package"
+#: view_my_mailer_repo_1
+msgid "The following reason has been stated:"
 msgstr ""
-#: view_repositories_edit_1
-msgid "Distribution:"
+#: view_home_donate_why
+msgid "The development of Communtu is mainly based on the effort of volunteers but it also costs money (amongst others the server and the rooms). Therefore Communtu depends on donations. Even small amounts of money help."
 msgstr ""
-#: senden
-msgid "Send"
+#: helper_distributions_16
+msgid "free and from the main repositories"
 msgstr ""
-#: view_derivatives_edit_2
-msgid "Program for GUI-dialogs (e.g. zenity, kdialog)"
+#: view_user_profiles__profile_data_13
+msgid "Here you can choose which licenses you want to accept:"
 msgstr ""
-#: bundles_with_conflicts
-msgid "Bundles with errors"
+#: no_cookies
+msgid "You don't have cookies enabled which are necessary in order to use Communtu. We recommend that you enable cookies in your webbrowser."
 msgstr ""
-#: board
-msgid "board"
+#: controller_metapackages_11
+msgid "Couldn't delete package from bundle."
 msgstr ""
-#: view_metapackages__metalist_10
-msgid "Rating "
+#: match_ubuntu
+msgid "Match Ubuntu to your personal needs"
 msgstr ""
-#: view_user_profiles__profile_data_4
-msgid "further information"
+#: category_without_colon
+msgid "Category"
+msgstr ""
+#: view_user_profiles__installation_16
+msgid "Add sources and keys"
+msgstr ""
+#: imprint
+msgid "Imprint"
+msgstr ""
+#: controller_metapackages_7
+msgid "Specify a version (e. g. 0.1)<br>"
 msgstr ""
 #: view_packages_edit_10
 msgid "Package description"
 msgstr ""
-#: controller_users_9
-msgid "An error occured while deactivating this user."
+#: controller_sent_1
+msgid "user does not exist"
 msgstr ""
-#: view_sent_index_0
-msgid "sent messages"
+#: view_home_faq_10
+msgid "Click on \"Bundles\" -> \"My bundles\", which shows you your bundles, and then you click on the bundle you want to change. All important information concerning this bundle is now shown. With a click on \"Actions\" you can edit the bundle or the package-list. If the bundle is not published, you can delete it or publish the bundle, if you would like to do so."
 msgstr ""
-#: first_sync_repos
-msgid "Please synchronise the repositories first. Normally, this is done automatically within one weak. Attention: it is only checked if anything is being synchronised at all, not if the process is finished."
+#: view_user_profiles_new_1
+msgid "user"
 msgstr ""
-#: view_metapackages_show_save
-msgid "save bundle as a metapackage"
+#: trusted
+msgid "Ubuntu+Community"
 msgstr ""
-#: view_home_derivatives_38
-msgid " - public distribution for the Spanish region of Extremadura."
+#: free_disk_space
+msgid "Free disk space (root / home / isos)"
 msgstr ""
-#: helper_distributions_1
-msgid "non-free"
+#: view_categories_edit_0
+msgid "Edit category"
 msgstr ""
-#: view_home_beteiligung_1
-msgid "Using the platform"
+#: view_home_faq_09
+msgid "How can I change a bundle?"
 msgstr ""
-#: view_home_faq_18
-msgid "This is not hard. You open up the bundle editor (reachable via <b>Bundle</b>) and click on \"Suggest repository\". Enter the link to the program and shortly tell us why we should add this program to Communtu."
+#: cannot_publish_bundle
+msgid "This bundle cannot be published, as it contains unpublished bundles: %{bundles}"
 msgstr ""
-#: model_user_meta_tabz_0
-msgid "My bundles"
+#: view_home_news_11
+msgid "This list is intended for discussion about the platform. The frequency is a little higher than once a week. Posts will be collected in an "
 msgstr ""
-#: login_small
-msgid "with an existing user account."
+#: package_list
+msgid "back to the package-list"
 msgstr ""
-#: view_user_profiles_new_3
-msgid "level of expert"
+#: bundle_open_new_window
+msgid "Bundle will be opend in a new window."
 msgstr ""
-#: view_home_home_rating_link
-msgid "Rate bundles"
+#: make_your_bundle
+msgid "Create a bundle for a system upgrade"
+msgstr ""
+#: view_home_derivatives_39
+msgid " for older PCs. It is based on the LXDE-GUI."
+msgstr ""
+#: bundle
+msgid "Bundle"
+msgstr ""
+#: view_home_contact_us_1
+msgid "Here you have the possibility to send us suggestions and critique about Communtu."
 msgstr ""
 #: security_type
 msgid "Security type:"
 msgstr ""
-#: show
-msgid "Show"
+#: server_status
+msgid "Server status"
 msgstr ""
-#: install2
-msgid "Install"
-msgstr ""
-#: livecd_image_link
-msgid "https://help.ubuntu.com/community/IsoImage"
-msgstr ""
-#: donation_purpose
-msgid "Purpose: Communtu"
-msgstr ""
-#: controller_metapackages_please_regenerate
-msgid "The bundle has been reset. Please raise the version and re-create the meta-package."
-msgstr ""
-#: view_rating_new_comment_cancel
-msgid "Cancel"
-msgstr ""
-#: view_repositories_show_6
-msgid "        OpenSource"
-msgstr ""
-#: wait_for_email
-msgid "Wating for e-mail"
-msgstr ""
-#: view_home_home_12
-msgid "<b>Administrate categories</b> As an administrator you can create new categories or change the structure of a category-tree here. Act with caution!"
-msgstr ""
-#: view_user_profiles__installation_31
-msgid "Every Ubuntu package and Communtu bundle can be installed and uninstalled by using %{synaptic} (go to \"System\" --> \"Administration\"). Updates of the programs inside the bundle are installed via the Ubuntu-updatemanager automatically."
-msgstr ""
-#: donate
-msgid "make a donation"
-msgstr ""
-#: view_users_show_2
-msgid "user since:"
-msgstr ""
-#: view_home_derivatives_10
-msgid "https://wiki.ubuntu.com/UbuntuStudio"
-msgstr ""
-#: update
-msgid "Refresh"
-msgstr ""
-#: view_layouts_application_23
-msgid "BUNDLE"
-msgstr ""
-#: view_my_mailer_mailerror_0
-msgid "Hello, \n an error was reported on www.communtu.de. \nThe user would really like to be notified when the error has been fixed."
-msgstr ""
-#: controller_accounts_8
-msgid "Your old password was incorrect."
-msgstr ""
-#: controller_users_2
-msgid "An error occured while registering."
-msgstr ""
-#: create_livecd_bundlepage
-msgid "When you want to create a Live-CD from a single bundle, e. g. you want to use a your own non-published bundle, your have to go to <b>Bundle -&gt; My bundles</b> or <b>Published bundles</b> and search for a bundle. With a click on the CD icon on the right side in the Install section you come to the Live-CD page. With a click on <b>Create Live-CD/DVD</b> a Live-CD with will be created from the selected bundle."
-msgstr ""
-#: packages_for_ubuntu
-msgid "Packages for Ubuntu"
-msgstr ""
-#: conny_picture
-msgid "Conny Communtu's portrait"
+#: view_passwords_edit_2
+msgid "receive new password"
 msgstr ""
 #: view_home_derivatives_6
 msgid "Software selection"
 msgstr ""
-#: view_debs_index_2
-msgid "  There are no failed deb-generations! Congratulations!"
+#: controller_messages_0
+msgid "Original message by %{user} from %{datum}}  \n"
 msgstr ""
-#: livecd_start
-msgid "Create Live-CD/DVD"
+#: view_debs_index_3
+msgid "Create every failed deb <b>Warning: only do this at admin.communtu.de!</b>"
 msgstr ""
-#: view_categories_show_0
-msgid "Name: "
+#: view_home_home_15
+msgid "detailled information"
+msgstr ""
+#: view_home_icons_24
+msgid "Receive a message-icon for new messages"
+msgstr ""
+#: mailinglist
+msgid "Mailinglists:"
+msgstr ""
+#: view_user_mailer_signup_notification_0
+msgid "Hello and welcome to Communtu!\n\n\n You successfully registered yourselfe\nat http://en.communtu.org. You can now use every\nfeatrue of the platform."
+msgstr ""
+#: view_users_index_5
+msgid "Activated?"
+msgstr ""
+#: view_packages__packagelist_2
+msgid "Search:"
+msgstr ""
+#: lib_system_0
+msgid "You need to be logged in to use this feature. Using this feature is also possible as a guest, logging in as guest is possible with the \"Guest\"-link in the top right corner."
+msgstr ""
+#: bundle_tested
+msgid "Bundle tested:"
+msgstr ""
+#: controller_categories_2
+msgid "Category created."
+msgstr ""
+#: controller_metapackages_cannot_destroy
+msgid "Released bundles cannot be deleted."
+msgstr ""
+#: view_home_derivatives_12
+msgid " provides multimedia package-sources. Because of legal reasons they cannot be offered by Ubuntu. Medibuntu is supported by Communtu (e. g. for audio or films)."
+msgstr ""
+#: navigation_communtu
+msgid "Navigation Communtu"
+msgstr ""
+#: chat
+msgid "Chat"
+msgstr ""
+#: donation_possibility
+msgid "Donation possibility"
+msgstr ""
+#: view_home_icons_9
+msgid " installation via shell-script"
+msgstr ""
+#: view_roles_show_0
+msgid "Rolename:"
+msgstr ""
+#: view_home_home_4
+msgid "More ..."
+msgstr ""
+#: wait_for_sync
+msgid "waiting for syncronisation with repositories"
+msgstr ""
+#: senden
+msgid "Send"
+msgstr ""
+#: view_metapackages_show_modified
+msgid "This bundle contains changes."
+msgstr ""
+#: view_home_faq_02
+msgid "A bundle is a compilation of software for a specific task you want to do with your computer."
+msgstr ""
+#: choice_of_package
+msgid "Choose package"
+msgstr ""
+#: warnings
+msgid "Warnings"
+msgstr ""
+#: logfile_extract
+msgid "Extract from the logfile"
+msgstr ""
+#: view_packages_show_21
+msgid "Is used in this packages:"
+msgstr ""
+#: controller_suggestion_16
+msgid "The following packages will be installed"
+msgstr ""
+#: email_without_colon
+msgid "e-mail"
+msgstr ""
+#: view_home_derivatives_32
+msgid " is an Ubuntu derivative consisting only of free software. Suitable only for experienced users. Should only be installed with the Gobuntu-CD so that only free software is provided. A further installation with Communtu is possible, but \"Free software\" should be selected in the user profile. This derivative is available in Ubuntu 8.04 and development is currently discontinued."
+msgstr ""
+#: controller_distributions_0
+msgid "Ubuntu distributions"
+msgstr ""
+#: tested_bundle
+msgid "Tested bundles:"
+msgstr ""
+#: view_packages_edit_9
+msgid "    Video description:"
+msgstr ""
+#: link_community
+msgid "http://ubuntuforums.org"
+msgstr ""
+#: view_layouts_application_30
+msgid "contact"
+msgstr ""
+#: view_layouts_application_5
+msgid "per PayPal:"
+msgstr ""
+#: view_home_faq_gnome_01
+msgid "You can find the Communtu sources under \"System -> Administration -> Software Sources -> Other Software\". They can also be deactivated here. "
+msgstr ""
+#: controller_sessions_6
+msgid "Your account has not been activated yet. The activation code has been sent to you via e-mail."
+msgstr ""
+#: view_user_profiles__installation_29
+msgid " for the Konqueror and Opera browsers."
+msgstr ""
+#: are_you_sure
+msgid "Are you sure?"
+msgstr ""
+#: bundel_edit
+msgid "Edit bundle"
+msgstr ""
+#: view_home_faq_23
+msgid "How do I delete the metapackages?"
+msgstr ""
+#: view_cart_new_from_list_1
+msgid "Here you can create a bundle from an existing package-list. The list must be formated as a plain text-file with only one package-name per line."
+msgstr ""
+#: view_roles_index_1
+msgid "Assigned roles:"
+msgstr ""
+#: view_home_icons_17
+msgid "external link"
+msgstr ""
+#: view_metapackages_finish_migrate_2
+msgid ". "
+msgstr ""
+#: livecd_create
+msgid "The Live-CD/DVD is now being created. We will notify you via e-mail when this process is finished."
+msgstr ""
+#: view_home_derivatives_52
+msgid " - a kind of Automatix for the ultimate edition."
+msgstr ""
+#: promote_chat
+msgid "You can try and see if members of the communtu staff are online and get in touch using the chat."
+msgstr ""
+#: kurzname
+msgid "short name"
+msgstr ""
+#: vm_running_under
+msgid "virtual machine runs with:"
+msgstr ""
+#: view_home_beteiligung_15
+msgid "us"
+msgstr ""
+#: controller_users_3
+msgid "You were logged in as %{anonymous_user} with the password %{anonymous_user}. If you wish to, you can click the username %{anonymous_user} in the upper right corner and change your temporary account into a permanent one. If you don't, the account will be deleted after one day."
+msgstr ""
+#: view_roles_edit_0
+msgid "edit role"
+msgstr ""
+#: view_derivatives_show_2
+msgid "dialog-program:"
+msgstr ""
+#: offer_new_category
+msgid "Suggest a new category"
+msgstr ""
+#: view_metapackages__metalist_14
+msgid "Install through metapackage. Please add the sources first."
+msgstr ""
+#: migrate_bundles
+msgid "Take over bundles from parent"
+msgstr ""
+#: native
+msgid "only Ubuntu"
+msgstr ""
+#: view_user_profiles_help_3
+msgid "If you version is not supported by Communtu, you now have two possibilities:"
+msgstr ""
+#: view_packages_new_4
+msgid "Source"
+msgstr ""
+#: wait_for_release
+msgid "wait for official Ubuntu release"
+msgstr ""
+#: view_home_donate_options
+msgid "There are several ways of donating."
+msgstr ""
+#: deb_generation_in_background
+msgid "Debs are being created in the background (refresh the webpage if necessary)"
+msgstr ""
+#: view_metapackages_show_12
+msgid "Not published"
+msgstr ""
+#: view_home_home_28
+msgid "Download:"
+msgstr ""
+#: feedback
+msgid "Comment "
+msgstr ""
+#: view_messages_show_3
+msgid "Reply"
+msgstr ""
+#: create_livecd_subtitle2
+msgid "Creation with bundle"
+msgstr ""
+#: view_cart_update_2
+msgid "Level of expert:"
+msgstr ""
+#: paste_package_list
+msgid "Paste your package list here alternativly:"
+msgstr ""
+#: view_user_profiles__profile_data_8
+msgid "Via your webbrowser detected version: "
+msgstr ""
+#: model_mailer_2
+msgid "Your account has been activated."
+msgstr ""
+#: view_passwords_new_0
+msgid "forgotten password"
+msgstr ""
+#: view_packages_edit_2
+msgid "Icon"
+msgstr ""
+#: view_home_derivatives_25
+msgid "http://en.wikipedia.org/wiki/Xfce"
+msgstr ""
+#: model_message_0
+msgid "Please enter a subject"
+msgstr ""
+#: view_layouts_application_23
+msgid "BUNDLE"
+msgstr ""
+#: view_metapackages_show_0
+msgid "Bundle created by "
+msgstr ""
+#: view_home_news_3
+msgid "communtu-announce-en+subscribe@googlegroups.com"
+msgstr ""
+#: view_home_icons_10
+msgid "program"
+msgstr ""
+#: view_users_show_4
+msgid "last login:"
+msgstr ""
+#: order_number
+msgid "Sort by number (smallest number first):"
+msgstr ""
+#: english_name
+msgid "English name:"
+msgstr ""
+#: view_home_faq_16
+msgid "To install a program, go to \"Search programs\" and you get a list of all programs. When you find the program you are looking for, you just have to click on the installation-icon. It could be that you have to add the repository of that program first. To do so, click on \"Add sources\" and Communtu will add the sources to your system."
+msgstr ""
+#: controller_metapackages_please_regenerate
+msgid "The bundle has been reset. Please raise the version and re-create the meta-package."
+msgstr ""
+#: metapackages_cannot_destroy
+msgid "This bundle cannot be deleted as it is used in an other bundle."
+msgstr ""
+#: weblinks
+msgid "Weblinks"
+msgstr ""
+#: bundle_editor
+msgid "bundle-editor"
+msgstr ""
+#: view_user_mailer_reset_password_0
+msgid ", you have received a new password."
+msgstr ""
+#: view_home_derivatives_45
+msgid "http://wiki.ubuntuusers.de/Server_Installation (German)"
+msgstr ""
+#: view_metapackages__metalist_3
+msgid "publ."
+msgstr ""
+#: missing_debs_for_bundle
+msgid "Missing debs for bundle:"
+msgstr ""
+#: circular_dependency
+msgid "Error: circular dependencies between bundles"
+msgstr ""
+#: view_repositories_edit_1
+msgid "Distribution:"
+msgstr ""
+#: view_users_new_12
+msgid "(optional)"
+msgstr ""
+#: view_home_news_17
+msgid "Go to the blog"
+msgstr ""
+#: model_user_meta_tabz_2
+msgid "Ubuntu packages"
+msgstr ""
+#: view_repositories_show_4
+msgid "Package-list for %{arch}:"
+msgstr ""
+#: model_package_11
+msgid "could not determine URL"
+msgstr ""
+#: view_home_home_21
+msgid "log "
+msgstr ""
+#: view_admins_load_packages_0
+msgid "New package:"
+msgstr ""
+#: model_package_need_not_update
+msgid "%{url} has not changed"
+msgstr ""
+#: controller_home_5
+msgid "We received your suggestion and we will inform you if  and when we will add the repository to our system."
+msgstr ""
+#: view_metapackages_rdepends_1
+msgid " directly an indirectly contained bundles and packages"
+msgstr ""
+#: controller_repositories_3
+msgid "sources.list read."
+msgstr ""
+#: view_users__sidebar_6
+msgid "Administrate categories"
 msgstr ""
 #: view_home_faq_xfce_02
 msgid "To reach the package manager Synaptic you navigate to \"Applications -> System -> Synaptic Package Manager\". In the lower left part you click on \"Origin\". In the list above search for \"packages.communtu.org\" and click on it. In the right part of the window you will now see all metapackages available at Communtu. To remove a metapackage from your system you make a right click on it and choose \"Mark for Removal\". With a click on \"Apply\" it will be uninstalled."
 msgstr ""
-#: view_home_home_32
-msgid "Communtu:"
+#: controller_debs_0
+msgid "Debian-packages"
 msgstr ""
-#: view_home_derivatives_31
-msgid ". Because of the necessary installation of drivers, Linux MCE should be installed directly. However, Communtu can be used to install additional software."
+#: view_home_about_5
+msgid "To start off, choose <b>Download</b>."
+msgstr ""
+#: view_sessions_new_0
+msgid "Log in with username and password:"
+msgstr ""
+#: view_user_profiles__profile_data_1
+msgid "On this page you can change your computer's settings. Normally you do not need to change these settings."
+msgstr ""
+#: subtype
+msgid "Subtype:"
+msgstr ""
+#: bundle_by_owner
+msgid "Created bundles"
+msgstr ""
+#: usb_image
+msgid "USB-Image"
+msgstr ""
+#: prepare_livecd
+msgid "Prepare Live-CD/DVD (script/remaster-getisos)"
+msgstr ""
+#: view_my_mailer_repo_0
+msgid "Hello, \n\na suggestion for a new repository has been made at en.communtu.org:"
+msgstr ""
+#: liveusb_message
+msgid "With an USB key you can test the software you have chosen and install the system with the previous made choice of software. For this, an ISO-file (%{cdimage_link}) is created which can be copied to the key.<br /><br />The creation of the image takes a while. You will be informed automatically when your image has been created. For this, a valid e-mail address is required to be entered in your profile."
+msgstr ""
+#: view_home_beteiligung_5
+msgid "participate in the survey"
+msgstr ""
+#: view_user_profiles__profile_data_12
+msgid " Allow every source (slightly insecure but with even more programs/better comfort. Attention: programs installed from foreign sources can do harm to your computer!):"
+msgstr ""
+#: passwd
+msgid "Password"
+msgstr ""
+#: helper_distributions_15
+msgid "Informational page at ubuntu.com"
+msgstr ""
+#: new_message
+msgid "New message"
+msgstr ""
+#: view_home_derivatives_18
+msgid " is an Ubuntu spin-off with its own user community which has dedicated itself to usability. Linux Mint is quite similar to Ubuntu but has more codecs, like to watch DVDs or listen to MP3s, pre-installed. Those codecs are available via Communtu, listet at \"Sound & Video\"."
+msgstr ""
+#: save_or_delete_bundle
+msgid "Please save or delete the selection in the bundle editor."
+msgstr ""
+#: view_layouts_application_16
+msgid "new message"
+msgstr ""
+#: controller_sent_0
+msgid "Subject must not be empty."
+msgstr ""
+#: view_user_profiles_new_0
+msgid "new profile"
+msgstr ""
+#: make_your_usb
+msgid "You don't have Ubuntu installed. You can download the <b>operating system Ubuntu</b> for testing (as a live system) or for installing it on your computer, with the <b>software you need</b>. Select your software bundes and create an iso image file from it..."
+msgstr ""
+#: untested_bundle
+msgid "Untested bundles:"
+msgstr ""
+#: name_of_livecd
+msgid "Name of the Live-CD/DVD:"
+msgstr ""
+#: or
+msgid "or"
+msgstr ""
+#: view_home_faq_08
+msgid "You go to \"Bundle\" and click on \"Published bundles\" to view all bundles. There you can rate a program with up to five stars and, after that, a commentbox appears where you have to enter a comment to justify your rating."
+msgstr ""
+#: usb_created
+msgid "The ISO file for the USB key has finished."
+msgstr ""
+#: being_created
+msgid "Creating"
+msgstr ""
+#: cd_being_created
+msgid "Creating Live-CD/DVD"
+msgstr ""
+#: force_sync
+msgid "force synchronization of repository"
+msgstr ""
+#: view_home_contact_us_0
+msgid "Feedback"
+msgstr ""
+#: install_apt_get
+msgid "Install package using apt-get"
+msgstr ""
+#: view_home_news_10
+msgid "communtu-discuss-en+subscribe@googlegroups.com"
+msgstr ""
+#: view_home_derivatives_38
+msgid " - public distribution for the Spanish region of Extremadura."
+msgstr ""
+#: view_home_derivatives_5
+msgid "Each derivative under "
+msgstr ""
+#: view_passwords_edit_1
+msgid "    confirm password:"
+msgstr ""
+#: press_archiv_editorial
+msgid "Here we have listed a selection of press articles about us."
+msgstr ""
+#: licence
+msgid "Licence:"
+msgstr ""
+#: view_debs_index_2
+msgid "  There are no failed deb-generations! Congratulations!"
+msgstr ""
+#: view_home_home_rating_headline
+msgid "Best rated bundles"
+msgstr ""
+#: livecd_start_message
+msgid "Here you can create a Live-CD/DVD which contains the software chosen by you. You selected the following bundles:"
+msgstr ""
+#: view_repositories_new_0
+msgid "new repository for"
+msgstr ""
+#: conny_picture
+msgid "Conny Communtu's portrait"
+msgstr ""
+#: view_home_home_14
+msgid "There is also "
+msgstr ""
+#: view_home_icons_23
+msgid "Message-icon"
+msgstr ""
+#: user_not_found
+msgid "User not found."
+msgstr ""
+#: view_packages__packagelist_1
+msgid "Programs&nbsp;only:"
+msgstr ""
+#: vm_no_iso_found
+msgid "The virtual machine cannot be started, no iso image file found."
+msgstr ""
+#: view_metapackages__metalist_20
+msgid "<option>0 bundles selected</option>"
+msgstr ""
+#: livecd_message
+msgid "With the Live-CD you can test the software you have chosen and install the system with the previous made software choice. For this, an ISO file (%{cdimage_link}) is created which you can burn to an empty CD-R. The creation of the image takes a while. You will be informed automatically when your image has been created. For this, a valid e-mail address is required to be entered in your profile."
+msgstr ""
+#: edit
+msgid "Edit"
+msgstr ""
+#: failed_deb_generations
+msgid "Failed or running deb-generation"
+msgstr ""
+#: view_home_derivatives_11
+msgid " - Ubuntu multimedia-edition. This will be automatically installed when \"advanced\" is checked at audio, film and/or graphic/design."
+msgstr ""
+#: controller_users_9
+msgid "An error occured while deactivating this user."
+msgstr ""
+#: new_passwd
+msgid "new password"
+msgstr ""
+#: controller_suggestion_4
+msgid "Add repositories and keys for the bundle"
+msgstr ""
+#: view_home_home_3
+msgid " stands for a human Linux that is easy to use. In order to use Ubuntu effectively, an excessive amount of programs have to be installed. It is not always easy to keep an overview. With Communtu you just specify for which purposes you want to use your computer and Communtu suggests several programs to you which will be installed automatically."
+msgstr ""
+#: helper_distributions_2
+msgid "synchronise repository"
+msgstr ""
+#: view_home_faq_01
+msgid "What is a bundle?"
 msgstr ""
 #: usb_creator
 msgid "With %{link} you can copy the ISO image onto your USB key."
@@ -2074,909 +2884,99 @@ msgstr ""
 #: view_metapackages_show_18
 msgid "If you publish the bundle every user has access to this bundle. However, the bundle cannot be deleted or renamed after publishing."
 msgstr ""
-#: view_home_faq_all_01
-msgid "The deactivation does not involve unstalling packages nor will updates be held back for installed software. Updates are still obtained from the official sources and those, which Communtu might have added. "
+#: controller_suggestion_15
+msgid "Install package"
 msgstr ""
-#: view_home_faq_11
-msgid "How do I create a bundle with my currently installed programs? "
+#: edit_press_archiv
+msgid "edit press archives"
 msgstr ""
-#: best_livecds
-msgid "Most popular Live-CD"
+#: view_home_derivatives_31
+msgid ". Because of the necessary installation of drivers, Linux MCE should be installed directly. However, Communtu can be used to install additional software."
 msgstr ""
-#: livecd_message
-msgid "With the Live-CD you can test the software you have chosen and install the system with the previous made software choice. For this, an ISO file (%{cdimage_link}) is created which you can burn to an empty CD-R. The creation of the image takes a while. You will be informed automatically when your image has been created. For this, a valid e-mail address is required to be entered in your profile."
+#: english_description
+msgid "English description:"
 msgstr ""
-#: native
-msgid "only Ubuntu"
-msgstr ""
-#: community_title
-msgid "Ubuntu Forums"
-msgstr ""
-#: controller_suggestion_2
-msgid "Add repositories and keys for the user"
-msgstr ""
-#: view_home_icons_20
-msgid "user-icon"
-msgstr ""
-#: create_your_livedvd
-msgid "Create a Live-CD"
-msgstr ""
-#: view_user_profiles__sources_0
-msgid "Sources for the soon be installed programs"
-msgstr ""
-#: register
-msgid "Register"
-msgstr ""
-#: choice_of_bundle
-msgid "Choose bundle"
-msgstr ""
-#: view_user_mailer_signup_notification_2
-msgid "\nGreetings\n\nthe Communtu-team\n\n  Further information about the project and your possibilities to use Communtu can be found at\n http://en.communtu.org/home/faq\n\n  Our anouncements and mailinglists can be found at:\nhttp://en.communtu.org/home/news"
-msgstr ""
-#: model_mailer_0
-msgid "Welcome to Communtu"
-msgstr ""
-#: view_home_derivatives_51
-msgid " - Installation of programs and version, which are not available through the official repositories."
-msgstr ""
-#: fine_selection
-msgid "Fine selection"
-msgstr ""
-#: livecd_email_body_failed
-msgid "The ISO file %{name} for a Live-CD/DVD or USB key couldn't be created. We will solve the problem."
-msgstr ""
-#: view_users_index_6
-msgid "Roles"
-msgstr ""
-#: create_kvm_image
-msgid "create <a href=\"http://wiki.ubuntu.com/kvm\">KVM-image</a> (virtual machine)"
-msgstr ""
-#: view_home_home_5
-msgid "The menu on the left offers the following possibilities:"
-msgstr ""
-#: controller_metapackages_no_renaming
-msgid "Released bundles cannot be renamed."
-msgstr ""
-#: view_user_profiles__installation_24
-msgid "Installation via metapackage"
-msgstr ""
-#: view_layouts_application_16
-msgid "new message"
-msgstr ""
-#: controller_accounts_1
-msgid "Your account has been activated. You can now log in."
-msgstr ""
-#: controller_packages_1
-msgid "Package created"
-msgstr ""
-#: view_my_mailer_mail_1
-msgid "The following comment was made:"
-msgstr ""
-#: livecd_email_body_2
-msgid "If you have questions or suggestions we would like you to contact us."
-msgstr ""
-#: view_admins_show_0
-msgid "Here should be an introduction to the admin area"
-msgstr ""
-#: controller_passwords_8
-msgid "Passwords do not match."
-msgstr ""
-#: helper_distributions_16
-msgid "free and from the main repositories"
-msgstr ""
-#: model_user_profile_tabz_1
-msgid "Software selection"
-msgstr ""
-#: view_metapackages_migrate_1
-msgid "Which distribution are the bundles to be migrated to?"
-msgstr ""
-#: install
-msgid "Install"
-msgstr ""
-#: chat
-msgid "Chat"
-msgstr ""
-#: view_home_impressum_2
-msgid "AG Communtu"
-msgstr ""
-#: install_package
-msgid "Installation of package %{name}"
-msgstr ""
-#: additional_sources
-msgid "Additional sources which will be added as some sources are not completed in themselves"
-msgstr ""
-#: view_metapackages_immediate_conflicts_0
-msgid "Conflicts inside bundles"
-msgstr ""
-#: view_metapackages_finish_migrate_1
-msgid " to"
-msgstr ""
-#: view_admins_sync_package_1
-msgid "Error: couldn't synchronise repository"
-msgstr ""
-#: view_home_home_25
-msgid "For questions concerning Communtu we have created a \"FAQ\"."
-msgstr ""
-#: view_home_derivatives_24
-msgid "Derivatives, which should be installed with the derivative installation-CD:"
-msgstr ""
-#: link_community_title
-msgid "External link: to the official Ubuntu Forums"
-msgstr ""
-#: published
-msgid "published"
-msgstr ""
-#: view_home_about_3
-msgid "There are many applications, though, that users might want to add, e. g. programs for audio, video and graphics in order to take full advantage of their Ubuntu system. Communtu facilitates the installation of additional software, and even has special sections for beginners and users migrating from Windows."
-msgstr ""
-#: username
-msgid "Username"
-msgstr ""
-#: view_home_faq_04
-msgid "There are two ways to install a bundle.<p> The first way is to click on <b>Download</b>. On the right side is a small box, titled \"Settings\". With a click on \"change\" you can change the GUI (Kubuntu (KDE, Xubuntu (XFCE) or Lubuntu (LXDE) in use and what software sources and licences shall be installed. After clicking on \"Save\" you will need to click on <b>Download</b> again to get back to the software selection page.<p> You can now make a rough selection of the software you want to install, according to the tasks you want to perform with your computer (e. g. editing graphics). When a category is chosen a list of published bundles will appear on the right side. When a bundle is marked as \"Installed by default\" it will be preselected. Every change you make is saved immediately. With a click on \"Install\" you can install the selected bundles on your computer. If not already done, you need to install the software sources first.<p> The second way of installing with Communtu is by installing a bundle directly. To do so, click on <b>Bundle</b> and next on <b>All published bundles</b>. You now see a overview of all published bundles in Communtu sorted by the name. Again, if not already done you need to install the sources (a click on \"Add sources\" should do the trick) and with a click on \"Install through meta-package\" will install the bundle on your computer."
-msgstr ""
-#: press_archiv_editorial
-msgid "Here we have listed a selection of press articles about us."
-msgstr ""
-#: create_your_usb
-msgid "Create a USB key"
+#: view_roles_new_0
+msgid "New role"
 msgstr ""
 #: view_packages_edit_8
 msgid "New link to a video"
 msgstr ""
-#: controller_suggestion_15
-msgid "Install package"
+#: rough_selection
+msgid "Rough selection"
 msgstr ""
-#: view_layouts_application_6
-msgid "Donate now online using PayPal, it is easy, quick and secure."
+#: start_vm
+msgid "Try out Live-CD online"
 msgstr ""
-#: view_user_mailer_reset_password_0
-msgid ", you have received a new password."
+#: cd_failed
+msgid "Failed - we will solve the problem and inform you when the ISO-file is ready to download"
 msgstr ""
-#: view_home_icons_13
-msgid "program-bundle"
+#: view_distributions_show_4
+msgid "add repository "
 msgstr ""
-#: bundle_open_new_window
-msgid "Bundle will be opend in a new window."
+#: distribution
+msgid "Distribution"
 msgstr ""
-#: view_cart_new_from_list_tip
-msgid "Hint: you can sort a huge list thematically and upload the sorted list in small parts. The created bundles can be merged into a new bundle. Thus a more structured bundle is created."
+#: controller_sessions_5
+msgid "Your username or password is wrong. If applicable click on \"Register\" below."
 msgstr ""
-#: controller_repositories_0
-msgid "repositories"
+#: livecd_existing_name
+msgid "The name is already in use!"
 msgstr ""
-#: view_home_derivatives_44
-msgid " - minimalist and fast version of Ubuntu for older PCs."
-msgstr ""
-#: install_software
-msgid "Install software"
-msgstr ""
-#: view_user_profiles__profile_data_15
-msgid " Allow commercial licenses (free too, but the sources are closed - the fluent change to Linux:"
-msgstr ""
-#: controller_passwords_1
-msgid "A link for changing the password has been sent to your e-mail-address."
-msgstr ""
-#: view_home_faq_24
-msgid "Which packages are in your repository?"
-msgstr ""
-#: controller_metapackages_4
-msgid "Bundle saved. It could take a couple of minutes until it is available as a metapackage."
-msgstr ""
-#: prepare_livecd
-msgid "Prepare Live-CD/DVD (script/remaster-getisos)"
-msgstr ""
-#: view_distributions_show_0
-msgid "Repositories:"
-msgstr ""
-#: view_user_profiles__installation_17
-msgid "Just click on the link and open the file with the recommended packag -installer - if no dialog window pops up the file has been saved on your harddisk. You can open it with a double click."
-msgstr ""
-#: view_roles__role_1
-msgid "assign role"
-msgstr ""
-#: view_home_beteiligung_7
-msgid "We need feedback. Our desire is that Communtu will be used by everyone and for this we need feedback. You found an error in the system? Is there something that is incomprehensible to you? You think you could do something better? You have some suggestions for us? Feedback is accepted under "
-msgstr ""
-#: passwd_no_match
-msgid "The new password does not comply with the verification."
-msgstr ""
-#: please_create_cd
-msgid "You must create a ISO file first."
-msgstr ""
-#: controller_home_2
-msgid "We will notify you via e-mail."
-msgstr ""
-#: not_logged_in
-msgid "You are currently not logged in. Please click on \"log in\" above."
-msgstr ""
-#: install_package_steps
-msgid "The installation of package %{name} is done in multiple steps, please take a look at the right side."
-msgstr ""
-#: view_categories_index_12
-msgid "show category-tree"
-msgstr ""
-#: iso_howto
-msgid "You can download an ISO file following the link. If you use Ubuntu, you can use %{brasero} or %{k3b} to burn the image. If you use Microsoft Windows there are several programs for burning CDs and DVDs. Please chose an option similar to \"Burn image\" or \"Burn ISO\". If the ISO file is very large you need a DVD. <br /> Using the burned CD or DVD you can <a href=\"https://help.ubuntu.com/community/GraphicalInstall\" target=\"_blank\">install Ubuntu</a>."
-msgstr ""
-#: livecd_email_body_footer
-msgid "Greetings,"
-msgstr ""
-#: view_sent_new_3
-msgid "Message:"
-msgstr ""
-#: controller_debs_0
-msgid "Debian-packages"
-msgstr ""
-#: view_repositories_new_4
-msgid "GPG-key (optional)"
-msgstr ""
-#: detailed_view
-msgid "go to detailed view"
-msgstr ""
-#: install_apt_get
-msgid "Install package using apt-get"
-msgstr ""
-#: view_home_home_18
-msgid "Click on"
-msgstr ""
-#: direct_indirect_covered_packages_warning
-msgid "Attention! This takes a long time and should only be done on the admin-server (communtu.org:3006)!"
-msgstr ""
-#: are_you_sure
-msgid "Are you sure?"
-msgstr ""
-#: livecd_email_body_link
-msgid "You can access the download folling this link:"
-msgstr ""
-#: view_users_show_8
-msgid "Message"
-msgstr ""
-#: view_messages_show_4
-msgid "Forward"
-msgstr ""
-#: view_home_derivatives_16
-msgid " is Ubuntu with the KDE-Desktop"
-msgstr ""
-#: view_home_beteiligung_11
-msgid "We need someone who is responsible for the project's layout. This means to integrate every graphic and to take over the main responsibility for the CSS."
-msgstr ""
-#: invalid_activation_code_entered
-msgid "Invalid activation code entered."
-msgstr ""
-#: spam_user_delete
-msgid "All spam users deleted."
-msgstr ""
-#: continue
-msgid "Continue"
-msgstr ""
-#: view_repositories_edit_0
-msgid "edit repositories"
-msgstr ""
-#: view_derivatives_edit_1
-msgid "Program for GUI-based sudo (e.g. gksudo, kdesudo)"
-msgstr ""
-#: english_name_reserve
-msgid "The English bundle name is already in use. Please choose another English name."
-msgstr ""
-#: view_user_profiles__profile_data_3
-msgid "What tasks do you want to do with your computer (only a rough choice, they can be chosen in detail later)?"
-msgstr ""
-#: invalid_activation_code_please_check_again
-msgid "Invalid activation code. Please check the code and try again. (Perhaps you e-mail-program did a line break?)"
-msgstr ""
-#: controller_users_8
-msgid "user deactivated"
-msgstr ""
-#: lib_system_2
-msgid "http://www.communtu.de"
-msgstr ""
-#: gpg_key
-msgid "GPG-key (optional):"
-msgstr ""
-#: videos
-msgid "Videos:"
-msgstr ""
-#: edit_architecture
-msgid "edit architecture"
-msgstr ""
-#: helper_distributions_0
-msgid "free"
-msgstr ""
-#: model_package_9
-msgid "While the synchronization of the repository %{repo_name} no PackageDistr-entry for the package %{package_name} could be found."
-msgstr ""
-#: view_home_derivatives_37
-msgid "http://en.wikipedia.org/wiki/LinEx"
-msgstr ""
-#: view_home_faq_17
-msgid "How can I suggest new programs?"
-msgstr ""
-#: model_package_need_not_update
-msgid "%{url} has not changed"
-msgstr ""
-#: controller_suggestion_8
-msgid "Ubuntu post-installation for users"
-msgstr ""
-#: search_package
-msgid "Search packages"
-msgstr ""
-#: compose_new_message
-msgid "compose a new message"
-msgstr ""
-#: go_to_download
-msgid "Go to the download page"
-msgstr ""
-#: view_home_home_11
-msgid "<b>Administrate users</b> As an administrator you can change the role of the users. Act with caution!"
-msgstr ""
-#: view_user_profiles__installation_30
-msgid "Advice: please don't rename the .deb-file."
-msgstr ""
-#: view_home_derivatives_57
-msgid " for subnotebooks/EEE-PCs."
-msgstr ""
-#: view_layouts_application_22
-msgid "to the profile"
-msgstr ""
-#: discuss
-msgid "discuss"
-msgstr ""
-#: view_admins_load_packages_0
-msgid "New package:"
-msgstr ""
-#: name_with_colon
-msgid "Name:"
-msgstr ""
-#: add_sources
-msgid "Add sources"
-msgstr ""
-#: view_user_profiles_help_5
-msgid "you expand Communtu with your version."
-msgstr ""
-#: contact_form
-msgid "Feedback"
-msgstr ""
-#: no_admin
-msgid "You are not an administrator!"
-msgstr ""
-#: controller_users_1
-msgid "Thank you for registering at Communtu! You can now log in."
-msgstr ""
-#: livecd
-msgid "Live-CD/DVD"
-msgstr ""
-#: controller_sessions_1
-msgid "You are already logged in."
-msgstr ""
-#: bundles_needing_deb_generation
-msgid "Bundles that need to be recreated as metapackages."
-msgstr ""
-#: view_debs_index_1
-msgid "Go back to the Communtu-menu"
-msgstr ""
-#: livecd_please_register
-msgid "To create Live-CD/DVDs or USB-key images, your first have to use the anonymous account %{register} or you need to %{login}."
-msgstr ""
-#: view_home_derivatives_5
-msgid "Each derivative under "
-msgstr ""
-#: view_home_home_31
-msgid "Here you can choose the topics in detail, download single programs or complete bundles and you can create and manage your own bundles."
-msgstr ""
-#: view_videos_show_0
-msgid "Url:"
-msgstr ""
-#: controller_metapackages_bundle_not_found
-msgid "Bundle not found."
-msgstr ""
-#: model_package_2
-msgid "unknown"
-msgstr ""
-#: view_home_faq_xfce_01
-msgid "You can find the Communtu sources under \"Applications -> System -> Software Sources -> Other Software\". They can also be deactivated here. "
-msgstr ""
-#: view_home_derivatives_30
-msgid "http://en.wikipedia.org/wiki/Home_theater_PC"
-msgstr ""
-#: controller_categories_0
-msgid "Categories"
-msgstr ""
-#: match_ubuntu
-msgid "Match Ubuntu to your personal needs"
-msgstr ""
-#: our_blog
-msgid "Our blog"
-msgstr ""
-#: view_metapackages_show_17
-msgid "Publish"
-msgstr ""
-#: view_home_faq_10
-msgid "Click on \"Bundles\" -> \"My bundles\", which shows you your bundles, and then you click on the bundle you want to change. All important information concerning this bundle is now shown. With a click on \"Actions\" you can edit the bundle or the package-list. If the bundle is not published, you can delete it or publish the bundle, if you would like to do so."
-msgstr ""
-#: prepare_livecd_contd
-msgid "Prepare new Live-CD/DVD with every pre-release (script/remaster-getisos)"
-msgstr ""
-#: bundles_with_missing_packages
-msgid "Bundle with missing packages due to changing the distribution (may be replaced with similar packages)"
-msgstr ""
-#: architectures
-msgid "Architectures"
-msgstr ""
-#: controller_suggestion_1
-msgid "In order to install software, you have to choose at least one package."
-msgstr ""
-#: view_home_about_9
-msgid "Important: You'll need a fast internet connection. We plan to implement a feature to create CDs and DVDs automatically for Ubuntu users with a slow internet connection (like dialup)."
-msgstr ""
-#: view_home_icons_19
-msgid " external link"
-msgstr ""
-#: view_user_mailer_signup_notification_1
-msgid "Your username is:"
-msgstr ""
-#: view_home_derivatives_50
-msgid " - with Fluxbox and several network-tools."
-msgstr ""
-#: iso_deleted
-msgid "The ISO-image has beed deleted due to lack of harddisk space."
-msgstr ""
-#: view_cart_new_from_list_5
-msgid "Create "
-msgstr ""
-#: controller_sent_2
-msgid "message successfully send"
-msgstr ""
-#: view_home_success_1
-msgid "We can issue a donation receipt. Please send an e-mail with your address to: "
-msgstr ""
-#: view_users_index_5
-msgid "Activated?"
-msgstr ""
-#: view_layouts_application_15
-msgid "Logged in as "
+#: start_vm_instructions
+msgid "Follow these steps to log in on the virtual machine (please wait a minute, deb-files need to be copied):"
 msgstr ""
 #: livecd_email_failed
 msgid "Communtu: creation of Live-CD/DVD failed."
 msgstr ""
-#: view_user_profiles__installation_23
-msgid "There are two alternatives:"
+#: view_cart_new_from_list_0
+msgid "Create bundle from a packages-list"
 msgstr ""
-#: view_home_home_4
-msgid "More ..."
+#: view_user_profiles__installation_28
+msgid "https://wiki.ubuntu.com/AptUrl"
 msgstr ""
-#: edit
-msgid "Edit"
+#: view_home_impressum_11
+msgid "Participants of the Communtu-team (alphabetical order):"
 msgstr ""
-#: view_layouts_application_warning
-msgid "Attention: the webserver will be down soon due to some maintenance work!"
-msgstr ""
-#: view_videos_edit_0
-msgid "edit video"
-msgstr ""
-#: controller_passwords_7
-msgid "Password not changed."
-msgstr ""
-#: helper_distributions_15
-msgid "Informational page at ubuntu.com"
-msgstr ""
-#: paste_package_list
-msgid "Paste your package list here alternativly:"
-msgstr ""
-#: model_user_profile_tabz_0
-msgid "Base data"
-msgstr ""
-#: view_my_mailer_mail_0
-msgid "Hello, \n\na feedback from en.communtu.org has arrived. The subject is:"
-msgstr ""
-#: view_users__sidebar_2
-msgid "Search programs"
-msgstr ""
-#: view_metapackages_migrate_0
-msgid "Wich distribution are the bundles to be migrated from?"
-msgstr ""
-#: view_home_home_bundle
-msgid "Preconfigured and published bundles in Communtu"
-msgstr ""
-#: view_sessions_new_0
-msgid "Log in with username and password:"
-msgstr ""
-#: debian_section
-msgid "Debian section"
-msgstr ""
-#: choose_category
-msgid "Please make a choice"
-msgstr ""
-#: metapackages_cannot_destroy
-msgid "This bundle cannot be deleted as it is used in an other bundle."
-msgstr ""
-#: view_home_contact_us_1
-msgid "Here you have the possibility to send us suggestions and critique about Communtu."
-msgstr ""
-#: delete
-msgid "Delete"
-msgstr ""
-#: create_usb_image
-msgid "create <a href=\"http://en.wikipedia.org/wiki/Live-usb\">Live-USB image</a>"
-msgstr ""
-#: view_mailbox_show_3
-msgid "received"
-msgstr ""
-#: create_your_livedvd_or_usb
-msgid "Create Live-CD/DVD or USB key"
-msgstr ""
-#: view_users_edit_3
-msgid "Username:"
-msgstr ""
-#: view_home_home_24
-msgid "To the imprint"
-msgstr ""
-#: settings
-msgid "Settings"
-msgstr ""
-#: view_packages__deps_1
-msgid "          Only for "
-msgstr ""
-#: view_metapackages_finish_migrate_0
-msgid "All bundles were migrated from"
-msgstr ""
-#: view_sent__user_exists_0
-msgid "user found"
-msgstr ""
-#: view_home_about_2
-msgid "Ubuntu is a linux-based distribution which makes Linux easier to use and more comprehensible. After the installation of Ubuntu via a CD or DVD your computer is already equipped to surf the internet, do some word processing and much more."
-msgstr ""
-#: create_livecd_email
-msgid "<i>* A valid e-mail address is needed!</i>"
-msgstr ""
-#: iso_ready
-msgid "ISO images has finished"
-msgstr ""
-#: choice_of_package
-msgid "Choose package"
-msgstr ""
-#: view_packages_show_26
-msgid "change metapackage into bundle"
-msgstr ""
-#: migrate_bundles_derivative
-msgid "Take over bundle from other derivative."
-msgstr ""
-#: view_home_faq_03
-msgid "How do I install a bundle?"
-msgstr ""
-#: view_home_icons_12
-msgid " Program (if not other program-icon is available)"
-msgstr ""
-#: conflicts
-msgid "conflicts"
-msgstr ""
-#: allgemeinbildung
-msgid "Allgemeinbildung e.V."
-msgstr ""
-#: view_layouts_application_5
-msgid "per PayPal:"
-msgstr ""
-#: search_programs_bundles
-msgid "Already Ubuntu user and looking for suitable programs to use? Enter your areas of interest and <b>download pre-configured bundles</b>."
-msgstr ""
-#: view_home_mail_1
-msgid "Please contact me at the following e-mail-address concerning the bugfixing."
-msgstr ""
-#: view_user_profiles__profile_data_9
-msgid "Here you can select how secure or comfortable your sources should be:"
-msgstr ""
-#: view_metapackages_edit_gpl
-msgid "I accept to publish the bundle information under the <a href=\"http://www.gnu.de/documents/gpl.de.html\">GNU General public license</a> (Version 2.0 or higher)."
-msgstr ""
-#: search
-msgid "search"
-msgstr ""
-#: controller_application_0
-msgid "This function is not available for guests."
-msgstr ""
-#: view_sent_index_5
-msgid "You haven't sent any messages yet."
-msgstr ""
-#: controller_admins_0
-msgid "admninistration section"
-msgstr ""
-#: view_rating_rating_rate
-msgid "out of 5 stars awarded"
-msgstr ""
-#: view_passwords_edit_2
-msgid "receive new password"
-msgstr ""
-#: view_home_derivatives_43
-msgid " - based on E17. 2D-effects even without a fast graphic card."
-msgstr ""
-#: view_home_faq_23
-msgid "How do I delete the metapackages?"
-msgstr ""
-#: controller_metapackages_3
-msgid "Description must not be empty"
-msgstr ""
-#: view_home_news_3
-msgid "communtu-announce-en+subscribe@googlegroups.com"
-msgstr ""
-#: creation_error
-msgid "While creating the package an error occured."
-msgstr ""
-#: view_users__user_2
-msgid "edit roles"
-msgstr ""
-#: view_user_profiles__profile_data_14
-msgid " Free software (sources are open and further development is allowed)"
-msgstr ""
-#: new_message
-msgid "New message"
-msgstr ""
-#: make_distribution_visible
-msgid "Make distribution viewable"
-msgstr ""
-#: helper_distributions_6
-msgid "delete repository"
-msgstr ""
-#: view_packages_new_4
-msgid "Source"
-msgstr ""
-#: view_roles_edit_1
-msgid "rolename"
-msgstr ""
-#: view_user_profiles__installation_16
-msgid "Add sources and keys"
-msgstr ""
-#: view_roles__role_0
-msgid "delete role"
-msgstr ""
-#: controller_home_1
-msgid "The e-mail has been sent to us. Many thanks for your message."
-msgstr ""
-#: controller_metapackages_debianizing
-msgid "The bundle is currently created as a metapackaged and uploaded. This could take a couple of minutes."
-msgstr ""
-#: direct_indirect_covered_packages
-msgid "Direct and indirect covered packages"
-msgstr ""
-#: view_home_home_17
-msgid "imprint."
+#: view_roles_index_0
+msgid "roles for"
 msgstr ""
 #: inbox
 msgid "Inbox"
 msgstr ""
-#: error_no_attachement
-msgid "No file selected. The progress has been canceled."
+#: view_cart_new_from_list_tip
+msgid "Hint: you can sort a huge list thematically and upload the sorted list in small parts. The created bundles can be merged into a new bundle. Thus a more structured bundle is created."
 msgstr ""
-#: kommentieren
-msgid "Comment"
+#: livecd_email_body_3
+msgid "We hope you have fun with your Ubuntu."
 msgstr ""
-#: bundle_editor
-msgid "bundle-editor"
+#: view_metapackages__package_list_2
+msgid "remove package/program from bundle"
 msgstr ""
-#: install_by_default
-msgid "Installed by default:"
+#: view_metapackages_finish_migrate_1
+msgid " to"
 msgstr ""
-#: help_translation
-msgid "Needing help with the translation? - Write us an e-mail!"
+#: view_home_icons_16
+msgid "migration from repositories"
 msgstr ""
-#: view_messages_show_3
-msgid "Reply"
+#: view_home_derivatives_51
+msgid " - Installation of programs and version, which are not available through the official repositories."
 msgstr ""
-#: view_home_derivatives_15
-msgid "http://en.wikipedia.org/wiki/KDE"
+#: view_home_beteiligung_14
+msgid "We can also help you to learn this programming-language. You just have to contact "
 msgstr ""
-#: view_home_beteiligung_10
-msgid "Graphic"
+#: controller_users_2
+msgid "An error occured while registering."
 msgstr ""
-#: bundle_to_livecd1
-msgid "Create Live-CD/DVD from bundle"
+#: additional_sources
+msgid "Additional sources which will be added as some sources are not completed in themselves"
 msgstr ""
-#: homepage
-msgid "home"
+#: view_derivatives_show_1
+msgid "sudo-program:"
 msgstr ""
-#: view_packages_edit_0
-msgid "Edit package"
+#: controller_metapackages_bundle_not_found
+msgid "Bundle not found."
 msgstr ""
-#: usb_donate
-msgid "Creating an ISO image requires a lot of server performance. Please %{donate_link} to keep this feature alive."
-msgstr ""
-#: view_categories_edit_4
-msgid "Category, which is shown on the first page:"
-msgstr ""
-#: view_derivatives_edit_0
-msgid "edit derivative"
-msgstr ""
-#: view_admins_test_all_1
-msgid "Every repositorie could be reached."
-msgstr ""
-#: view_packages_show_19
-msgid "Conflicts with these packages (only those without a version):"
-msgstr ""
-#: view_users_new_12
-msgid "(optional)"
-msgstr ""
-#: view_home_faq_kde_02
-msgid "You can access KPackageKit via \"K-Menu -> Programs -> System -> Administration -> Software Management\". From the right dropdown menu you choose \"packages.communtu.org\". The list now appearing contains every metapackage available in Communtu. To uninstall a metapackage you click on one of the installed metapackages and mark it with the X right of the entry. To remove it from your system you need to click on \"Apply\". You now see a summary of the changes that will be made and after a click on \"Ok\" they will be removed from your system."
-msgstr ""
-#: view_user_profiles__profile_data_2
-msgid "Attention: when finished, don't forget to click on the 'Save'-button!"
-msgstr ""
-#: failed_deb_generations
-msgid "Failed or running deb-generation"
-msgstr ""
-#: controller_sessions_7
-msgid "Your account has been deactivated or deleted."
-msgstr ""
-#: lib_system_1
-msgid "You are not privileged to do this."
-msgstr ""
-#: description
-msgid "Description"
-msgstr ""
-#: create
-msgid "Create"
-msgstr ""
-#: view_home_derivatives_36
-msgid " - an African version of Ubuntu, which is apparently not available over the internet."
-msgstr ""
-#: view_home_faq_16
-msgid "To install a program, go to \"Search programs\" and you get a list of all programs. When you find the program you are looking for, you just have to click on the installation-icon. It could be that you have to add the repository of that program first. To do so, click on \"Add sources\" and Communtu will add the sources to your system."
-msgstr ""
-#: view_cart_update_4
-msgid "Publish bundle"
-msgstr ""
-#: view_user_profiles_new_1
-msgid "user"
-msgstr ""
-#: Kommentar
-msgid "Comment:"
-msgstr ""
-#: save_or_delete_bundle
-msgid "Please save or delete the selection in the bundle editor."
-msgstr ""
-#: view_metapackages_new_4
-msgid "Install by default"
-msgstr ""
-#: downloads
-msgid "Downloads"
-msgstr ""
-#: used_in_bundles
-msgid "Is used in Communtu in these published bundles:"
-msgstr ""
-#: model_mailer_5
-msgid "suggestion of a repository"
-msgstr ""
-#: view_home_home_10
-msgid "<b>Ubuntu-releases</b> Overview about the available Ubuntu-releases (distributions)."
-msgstr ""
-#: view_repositories_show_4
-msgid "Package-list for %{arch}:"
-msgstr ""
-#: view_home_derivatives_56
-msgid "http://wiki.ubuntuusers.de/Ubuntu_Netbook_Remix (German)"
-msgstr ""
-#: view_layouts_application_21
-msgid "Communtu eases Ubuntu installations"
-msgstr ""
-#: vm_running
-msgid "virtual machine is running"
-msgstr ""
-#: helper_distributions_21
-msgid "non-free and from third party repositories"
-msgstr ""
-#: view_sent__user_not_exists_0
-msgid "user not found"
-msgstr ""
-#: view_user_profiles_help_4
-msgid "You upgrade to a newer, supported, version or"
-msgstr ""
-#: view_users_show_0
-msgid "show user"
-msgstr ""
-#: info_new
-msgid "Create new news message"
-msgstr ""
-#: generate_cd
-msgid "Recreate Live-CD/DVD"
-msgstr ""
-#: controller_accounts_6
-msgid "An error occured. The password has not been changed."
-msgstr ""
-#: view_user_profiles__installation_29
-msgid " for the Konqueror and Opera browsers."
-msgstr ""
-#: vm_stop
-msgid "stop"
-msgstr ""
-#: login
-msgid "Login"
-msgstr ""
-#: download
-msgid "download"
-msgstr ""
-#: view_home_derivatives_4
-msgid " and many Ubuntu-users may ask themselves if they should use a derivative instead of Ubuntu. The answer is: normally the standard version of Ubuntu is completely sufficiant because with Communtu it is quite easy to install a derivative. However, this is not always a wise decision."
-msgstr ""
-#: change_passwd
-msgid "change password"
-msgstr ""
-#: view_home_home_30
-msgid "Bundle:"
-msgstr ""
-#: confirm_new_passwd
-msgid "Confirm new password"
-msgstr ""
-#: model_package_1
-msgid "free+proprietary"
-msgstr ""
-#: subject_with_colon
-msgid "Subject:"
-msgstr ""
-#: view_users_edit_9
-msgid "  With a click on \"save\" this account will be made permanent."
-msgstr ""
-#: view_metapackages_show_16
-msgid "Edit package list"
-msgstr ""
-#: metacart_choose
-msgid "Please add programs to your bundle."
-msgstr ""
-#: view_users_new_9
-msgid "Yes, I want to be added to the discussion-mailinglist."
-msgstr ""
-#: view_home_about_8
-msgid "After clicking on \"Save and select packages\" you'll get a detailed overview of the bundles and programs installed as well as the chance to change previously made selections. In case you don't feel like choosing the packages in detail, just click on \"Save\". This will take you to the installation page. There you'll find a button which starts the installation process. This takes some time because the applications will have to be downloaded from the internet and installed on your computer. When finished, you have a truely vesatile Ubuntu-PC!"
-msgstr ""
-#: view_home_derivatives_29
-msgid "a computer to watch TV"
-msgstr ""
-#: view_home_news_13
-msgid "http://groups.google.com/group/communtu-discuss-de/topics?start="
-msgstr ""
-#: view_home_faq_09
-msgid "How can I change a bundle?"
-msgstr ""
-#: include_programs_bundel
-msgid "Contains the following programs/bundles:"
-msgstr ""
-#: view_user_mailer_signup_notification_0
-msgid "Hello and welcome to Communtu!\n\n\n You successfully registered yourselfe\nat http://en.communtu.org. You can now use every\nfeatrue of the platform."
-msgstr ""
-#: view_cart_new_from_list_4
-msgid "Choose the file which contains the package-list:"
-msgstr ""
-#: view_home_success_0
-msgid " Thank you for your donation"
-msgstr ""
-#: controller_sent_1
-msgid "user does not exist"
-msgstr ""
-#: installing_using_script
-msgid "installing via script"
-msgstr ""
-#: view_home_derivatives_49
-msgid " - Ubuntu with Enlightenment as a desktop environment."
-msgstr ""
-#: bundel_edit
-msgid "Edit bundle"
-msgstr ""
-#: view_home_home_3
-msgid " stands for a human Linux that is easy to use. In order to use Ubuntu effectively, an excessive amount of programs have to be installed. It is not always easy to keep an overview. With Communtu you just specify for which purposes you want to use your computer and Communtu suggests several programs to you which will be installed automatically."
-msgstr ""
-#: view_layouts_application_14
-msgid "Feedback to Communtu"
-msgstr ""
-#: superior_category
-msgid "Superior category"
-msgstr ""
-#: cd_donate
-msgid "Creating a CD/DVD requires a lot of server performance. Please %{donate_link} to keep this feature alive."
-msgstr ""
-#: controller_metapackages_9
-msgid "The description must not be empty<br>"
-msgstr ""
-#: view_metapackages_show_version_v
-msgid "(version %{v})"
-msgstr ""
-#: controller_passwords_6
-msgid "Password changed."
+#: view_home_news_24
+msgid "participate"
 msgstr ""
