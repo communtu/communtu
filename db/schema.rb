@@ -60,6 +60,7 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.integer  "p_nofiles"
     t.boolean  "tested",             :default => false
     t.text     "conflict_msg"
+    t.integer  "priority"
     t.boolean  "best_of",            :default => false
   end
 
@@ -219,6 +220,7 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "locale"
   end
 
   create_table "livecds", :force => true do |t|
@@ -231,24 +233,26 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.string   "srcdeb"
     t.string   "installdeb"
     t.integer  "pid"
-    t.boolean  "generated",       :default => false
-    t.boolean  "generating",      :default => false
-    t.boolean  "failed",          :default => false
-    t.text     "log"
+    t.boolean  "generated",                           :default => false
+    t.boolean  "generating",                          :default => false
+    t.boolean  "failed",                              :default => false
+    t.text     "log",             :limit => 16777215
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "first_try",       :default => true
+    t.boolean  "first_try",                           :default => true
     t.integer  "license_type"
     t.integer  "security_type"
     t.integer  "profile_version"
-    t.boolean  "iso",             :default => false
-    t.boolean  "kvm",             :default => false
-    t.boolean  "usb",             :default => false
+    t.boolean  "iso",                                 :default => false
+    t.boolean  "kvm",                                 :default => false
+    t.boolean  "usb",                                 :default => false
     t.integer  "vm_pid"
     t.string   "vm_hda"
-    t.integer  "downloaded",      :default => 0
-    t.boolean  "published",       :default => false
+    t.integer  "downloaded",                          :default => 0
+    t.boolean  "published",                           :default => false
     t.text     "conflict_msg"
+    t.integer  "port"
+    t.string   "short_log"
   end
 
   create_table "message_copies", :force => true do |t|
@@ -477,15 +481,6 @@ ActiveRecord::Schema.define(:version => 2008122700000000) do
     t.string   "firstname",                 :limit => 30, :default => ""
     t.integer  "architecture_id",                         :default => 1
     t.boolean  "advanced",                                :default => false
-    t.string   "jabber"
-    t.string   "icq"
-    t.string   "aboutMe"
-    t.string   "skype"
-    t.string   "msn"
-    t.string   "location"
-    t.string   "hobbies"
-    t.string   "uu_username"
-    t.string   "avatar"
   end
 
   create_table "videos", :force => true do |t|
