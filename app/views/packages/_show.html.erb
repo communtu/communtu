@@ -21,14 +21,14 @@
 	<%= @package.name %>
 </span>
   <% if show_install %>
-	<%= link_to((image_tag("/images/64x64/download.png",
+	<%= link_to((image_tag("64x64/download.png",
                               :height => 30,
                               :title =>t(:go_to_download),
                               :alt=>t(:go_to_download),
                               :border => "0")).html_safe, "/packages/install/#{@package.id}") %>
   <% end %>		
                 <% if editing_metapackage? %>
-			<%= link_to((image_tag("/images/add.png", :size => "18x18", :border => "0", :title =>t(:add_to_bundle), :alt => t(:add_to_bundle)) + ""),
+			<%= link_to((image_tag("add.png", :size => "18x18", :border => "0", :title =>t(:add_to_bundle), :alt => t(:add_to_bundle)) + ""),
                                 :url => "/cart/add_to_cart_box/" + @package.id.to_s,\
                                 :update => 'meta_cart_box', :remote => true) %>
                 <% end %>
@@ -145,7 +145,7 @@
 <% end %>
 
 <p>
-<%= image_tag("/images/editp.png", :size => "22x22", :border => 0, :title => t(:kommentieren), :alt => t(:kommentieren)) %>
+<%= image_tag("editp.png", :size => "22x22", :border => 0, :title => t(:kommentieren), :alt => t(:kommentieren)) %>
 <%= link_to t(:kommentieren), { :controller => :packages, :action => :add_comment, \
 	    :id => @package.id } %>
 <%= show_comments @package.comments %>

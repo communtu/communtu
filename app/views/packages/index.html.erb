@@ -66,11 +66,11 @@
      <% end %>
 	</td>
     <td class="<%= css %>" width="30" align="right">
-<!--        <%= link_to image_tag("/images/install.png", :size => "22x22", :border => "0", :title => t(:install2), :alt => t(:install2)), "apt://"+package.name %>                          
-	    <%= link_to image_tag("/images/sources.jpg", :size => "22x22", :border => "0", :title => t(:add_sources), :alt => t(:sources)), "/suggestion/install_package_sources/#{package.id}" %>
+<!--        <%= link_to image_tag("install.png", :size => "22x22", :border => "0", :title => t(:install2), :alt => t(:install2)), "apt://"+package.name %>                          
+	    <%= link_to image_tag("sources.jpg", :size => "22x22", :border => "0", :title => t(:add_sources), :alt => t(:sources)), "/suggestion/install_package_sources/#{package.id}" %>
 -->		<% if editing_metapackage? %>
 		    
-			<%= link_to(image_tag("/images/add.png", :size => "22x22", :border => "0", :title =>t(:add), :alt => t(:add)), \
+			<%= link_to(image_tag("add.png", :size => "22x22", :border => "0", :title =>t(:add), :alt => t(:add)), \
 			        :url => "/cart/add_to_cart/" + package.id.to_s,\
 			        :update => 'meta_cart', :remote => true) %>
 		<% end %>
