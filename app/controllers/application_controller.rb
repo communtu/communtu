@@ -16,7 +16,6 @@ class ApplicationController < ActionController::Base
                 :on_admin_page?,
                 :render_flash,
                 :change_date_time,
-                :package_link,
                 :show_rdependencies,
                 :new_message?,
                 :received_messages?,
@@ -222,14 +221,6 @@ def is_admin?
       datum.strftime("%d.%m.%Y %H:%M")
     end  
   end  
-
-  def package_link name
-    p = Package.find(:first,:conditions =>{:name => name.downcase})
-    if p.nil?
-      return ""
-    end
-    link_to name, package_url(p)
-  end
   
   # show dependencies of a bundle or a package in structured form
   def show_rdependencies deps
