@@ -45,3 +45,143 @@
     margin-top: 7px;
     position: absolute;
 }
+
+        #item_container {
+            width: 99%;
+            margin: 0 auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .item {
+            background: #fff;
+            float: left;
+            padding: 5px;
+            margin: 5px;
+            cursor: move;
+            -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.5);
+            -moz-box-shadow: 0 1px 2px rgba(0,0,0,.5);
+            box-shadow: 0 1px 2px rgba(0,0,0,.5);
+            -webkit-border-radius: .5em;
+            -moz-border-radius: .5em;
+            border-radius: .5em;
+            z-index: 5;
+        }
+        .title, .size {
+            display: block;
+            text-align: center;
+            font-size: 14px;
+            letter-spacing: -1px;
+            font-weight: bold;
+            cursor: move;
+        }
+        .size {
+            color: #0099cc;
+            margin-top: 5px;
+            -webkit-border-radius: .5em;
+            -moz-border-radius: .5em;
+            border-radius: .5em;
+        }
+        .icart, .icart label {
+            cursor: e-resize;
+        }
+        .divrm {
+            text-align: right;
+        }
+        .remove {
+            text-decoration: none;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 20px;
+            position: relative;
+            top: -7px;
+        }
+        .remove:hover {
+            color: #999;
+        }
+        .clear {
+            clear: both;
+        }
+        #cart_container {
+            margin: 0 auto;
+            width: 495px;
+        }
+        #cart_title span {
+            border: 8px solid #666;
+            border-bottom-width: 0;
+            background: #333;
+            display: block;
+            float: left;
+            color: #fff;
+            font-size: 11px;
+            font-weight: bold;
+            padding: 5px 10px;
+            -webkit-border-radius: .5em .5em 0 0;
+            -moz-border-radius: .5em .5em 0 0;
+            border-radius: .5em .5em 0 0;
+        }
+        #cart_toolbar {
+            overflow: hidden;
+            height: 550px;
+            z-index: -2;
+            width: 99%;
+            background: #ffffff;
+        }
+		/* area for items (bundles)*/
+        #cart_items {
+            background-image: url("CD_Stick.neu2.sw.png");
+            height: 390px;
+            width: 550px;
+            position: relative;
+            padding: 0 0 0 2px;
+            z-index: 0;
+            cursor: e-resize;
+            border-width: 0 2px;
+        }
+        .back {
+            background: #e9e9e9;
+        }
+        #navigate {
+            width: 463px;
+            margin: 0 auto;
+            padding: 10px;
+            font-size: 14px;
+            background: #333;
+            font-weight: bold;
+        }
+        #nav_left {
+            float: left;
+        }
+        #nav_left a {
+            padding: 4px 8px;
+            background: #fff;
+            -webkit-border-radius: .5em;
+            -moz-border-radius: .5em;
+            border-radius: .5em;
+            text-decoration: none;
+            color:#0099cc;
+        }
+        #nav_left a:hover {
+            background: #666;
+            color: #fff;
+        }
+        #nav_right {
+            float: right;
+        }
+        .sptext {
+            background: #ffffff;
+            padding: 4px 8px;
+            margin-left: 8px;            
+            -webkit-border-radius: .5em;
+            -moz-border-radius: .5em;
+            border-radius: .5em;
+            color: #666;
+        }
+        .count {
+            color: #0099cc;
+        }
+        .drop-active {
+            background: #ffff99;
+        }
+        .drop-hover {
+            background: #ffff66;
+        }

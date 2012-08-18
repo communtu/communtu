@@ -39,6 +39,12 @@ class DownloadController < ApplicationController
     if !logged_in?
       do_anonymous_login(true)
     end
+    @main_bundles = [{:img => "create/Multimedia_suess_bunt_hintergrundlos.png", :name =>"Multimedia", :size => 200, :id => 1},
+    {:img => "create/Grafik_bunt_hintergrundlos.png", :name =>"Grafik", :size => 300, :id => 2},
+    {:img => "create/Buero_bunt_hintergrundlos.png", :name =>"Büro", :size => 400, :id => 3},
+    {:img => "create/Spiele_hintergrundlos.png", :name => "Spiele", :size => 500, :id => 4},
+    {:img => "create/Filesharing.png", :name=> "Filesharing", :size => 600, :id => 5},
+    {:img => "create/Windows_verlassen_neu_bunt2.png", :name =>"Windows-Umstieg", :size => 700, :id => 6}]
   end
 
   def bundles
