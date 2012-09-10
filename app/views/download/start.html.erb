@@ -25,12 +25,13 @@
             drop: function(event, ui) {
                 var item = ui.draggable.html();
                 var itemid = ui.draggable.attr("id");
+				/* is the item not yet in the cart? */
 				if (bundles.indexOf(itemid) == -1) {
 					bundles.push(itemid);
-                	var html = '<div class="item icart">';
+                	var html = '<div class="item icart" id="'+itemid+'">';
                 	html = html + '<div class="divrm">';
                 	html = html + '<a onclick="myremove(this)" class="remove '+itemid+'">&times;</a>';
-                	html = html + '<div/>'+item+'</div>';
+                	html = html + '</div>'+item+'</div>';
                 	$j("#cart_items").append(html);
                 	// update total items
                 	total_items++;
@@ -74,7 +75,7 @@
     function myremove(el) {
         var itemid = $j(el).parent().parent().attr("id");
 		var idx = bundles.indexOf(itemid); // Find the index
-        if(idx!=-1) bundle.splice(idx, 1); // Delete the id
+        if(idx!=-1) bundles.splice(idx, 1); // Delete the id
 		$j(el).hide();
         $j(el).parent().parent().effect("highlight", {color: "#ff0000"}, 1000);
         $j(el).parent().parent().fadeOut('1000');
