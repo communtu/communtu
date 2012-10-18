@@ -58,19 +58,19 @@
 			<%end%>
 		</td>
 		<td class="<%= css %>" valign="middle" align="center">
-			<%= link_to(image_tag("/images/64x64/download.png", :height => 30, :title =>t(:go_to_download), :alt=>t(:go_to_download), :border => "0"), "/metapackages/install/#{metapackage.id}") %>
+			<%= link_to(image_tag("64x64/download.png", :height => 30, :title =>t(:go_to_download), :alt=>t(:go_to_download), :border => "0"), "/metapackages/install/#{metapackage.id}") %>
             <% if is_registered_user? %>
 			  <% path = if params[:action]=='index_mine' then "mybundle_cd" else "bundle_cd" end %>
-              <%= link_to image_tag("/images/22x22/cd.png", :size => "30x30", :border => "0", :title => t(:create_your_livedvd), :alt => t(:create_your_livedvd)), "/download/settings/#{metapackage.id}?path=#{path}" %>
+              <%= link_to image_tag("64x64/cd.png", :size => "30x30", :border => "0", :title => t(:create_your_livedvd), :alt => t(:create_your_livedvd)), "/download/settings/#{metapackage.id}?path=#{path}" %>
             <% end %>
 		</td>	
         <% if logged_in? %>
         <td class="<%= css %>" valign="middle" width="10">
                 <% if (metapackage.user_id == current_user.id) or is_admin? %>
                     <% if editing_metapackage? and !metapackage.deb_error %>
-                        <%= link_to_remote(image_tag("/images/add.png", :size => "22x22", :border => "0", :title => t(:add_to_bundle), :alt => t(:add_to_bundle)), \
+                        <%= link_to(image_tag("add.png", :size => "22x22", :border => "0", :title => t(:add_to_bundle), :alt => t(:add_to_bundle)), \
                                 :url => "/cart/add_to_cart/" + metapackage.id.to_s,\
-                                :update => 'meta_cart') %>
+                                :update => 'meta_cart', :remote => true) %>
                         <% end %>
                 <% end %>
 	</td>

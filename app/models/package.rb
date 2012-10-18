@@ -234,7 +234,7 @@ class Package < BasePackage
         cond_str += " and is_program = ?"
         cond_vals << '1'
     end
-    Package.find(:all, :page => {:size => 10, :current => page}, \
+    Package.paginate( :page => page, \
                        :conditions => ([cond_str]+cond_vals), \
                        :order => "popcon desc, name asc")
   end
@@ -294,7 +294,7 @@ class Package < BasePackage
              iname+=".png"
            end
            found = true
-           path = RAILS_ROOT + "/public/images/apps/"
+           path = Rails.root.to_s + "/public/images/apps/"
            if !FileTest.file?(path+iname) then 
              if FileTest.file?(path+iname+".png") then iname +=".png"
              else iname = chop_extension(iname)

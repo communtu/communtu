@@ -1,13 +1,5 @@
 Communtu::Application.routes.draw do
 
-resources :users do
-      member do
-        put :suspend
-        put :unsuspend
-        delete :purge
-      end
-end
-
   resource :session, :only => [:new, :create, :destroy]
 
   match 'signup' => 'users#new', :as => :signup
@@ -85,7 +77,7 @@ end
   
   end
 
-  root :to => 'home#home_new'
+  root :to => 'home#home'
   resources :architectures
   resources :articles
   resources :categories do
@@ -118,10 +110,11 @@ end
   match '/contact_us' => 'home#contact_us'
   match '/cancel' => 'home#cancel'
   match '/success' => 'home#success'
-  match '/users/spam_users_delete' => 'users#spam_users_delete'
   resources :livecds do
   
     member do
+      get :index
+      get :show
       get :remaster
       get :force_remaster
       get :remaster_new
@@ -132,6 +125,7 @@ end
   
   end
 
+  match '/metapackages/index' => 'metapackages#index'
   match '/metapackages/install/:id' => 'metapackages#install'
   match '/metapackages/compute_conflicts/:id' => 'metapackages#compute_conflicts'
   match '/metapackages/new' => 'cart#create'
@@ -151,12 +145,14 @@ end
       get :health_status
       get :install_current_source
       get :save
-      get :index
+      # get :index
       get :edit_new_or_cart
       get :changed
       get :install_current_bundle
+      get :selection
     end
   end
+  
 
   #match '/metapackages/:id/publish' => 'metapackages#publish', :method => :put
   #match '/metapackages/:id/unpublish' => 'metapackages#unpublish', :method => :put
@@ -200,29 +196,34 @@ end
   match '/download/create_livecd/:id' => 'download#create_livecd'
   match '/download/test_livecd/:id' => 'download#test_livecd'
   match '/download/bundle_to_livecd' => 'download#bundle_to_livecd'
+  match '/users/spam_users_delete' => 'users#spam_users_delete'
   match '/users/anonymous_login' => 'users#anonymous_login'
-  resources :users do
-  
-    member do
-  put :search
-  get :anonymous_login
-  put :enable
-  end
-      resource :account
-    resources :roles
-  end
-
+#  match "/users/:id" => "users#show"
   match '/users/:id/destroy' => 'users#destroy'
   match '/users/:id/selfdestroy' => 'users#selfdestroy'
-  match '/users/:id/show' => 'users#show'
-  match '/activate/:id' => 'accounts#show', :as => :activate
+#  match '/users/:id/show' => 'users#show'
+  resources :users do
+    member do
+      put :search
+      get :anonymous_login
+      put :enable
+      put :suspend
+      put :unsuspend
+      delete :purge  
+    end
+  end  
+  
+  resource :account
+  resources :roles
+
+  #match '/activate/:id' => 'accounts#show', :as => :activate
   match '/forgot_password' => 'passwords#new', :as => :forgot_password
   match '/reset_password/:id' => 'passwords#edit', :as => :reset_password
   match '/change_password' => 'accounts#edit', :as => :change_password
-  match '/signup' => 'users#new', :as => :signup
-  match '/login' => 'sessions#new', :as => :login
-  match '/logout' => 'sessions#destroy', :as => :logout
-  match '/logout_login' => 'sessions#destroy', :as => :logout_login
+  #match '/signup' => 'users#new', :as => :signup
+  #match '/login' => 'sessions#new', :as => :login
+  #match '/logout' => 'sessions#destroy', :as => :logout
+  match '/logout_login' => 'sessions#logoutlogin', :as => :logout_login
   match '/admin' => 'admin#index', :as => :admin
   match '/inbox' => 'mailbox#show', :as => :inbox
   match '/:controller(/:action(/:id))'

@@ -42,7 +42,7 @@
                   then @contr = :packages; @icon = mc.package.icon(30) \
                   else @contr = :metapackages; @icon = Metapackage.icon(30) \
 			           end %>	   
-			<td class="<%= css+"noborder" %>"><%= @icon %>&nbsp;<%= link_to  mc.package.name, { :controller => @contr, :action => :show,\
+			<td class="<%= css+"noborder" %>"><%= @icon.html_safe %>&nbsp;<%= link_to  mc.package.name, { :controller => @contr, :action => :show,\
 					:id => mc.package.id } %>
 					<% s=mc.package.installedsize(current_distribution) %>
                     <% if !s.nil? %>
@@ -52,7 +52,7 @@
                     <% end %>
                     </td>
 			<td class="<%= css+"noborder" %>" align="right">
-                         <%= mc.package.section %>
+                         <%= mc.package.section.html_safe %>
 			<% if is_admin? or metapackage.user==current_user %>
 			&nbsp;&nbsp;	<%= link_to image_tag("edit-delete.png", :size => "22x22", :border => "0", :title => t(:view_metapackages__package_list_2)), { :controller => :metapackages,\
 					 :action => :remove_package, :metapackage_id => metapackage.id, :id => mc.package.id  } %>
@@ -71,9 +71,9 @@
 		   <tr>
 			<td colspan="2" class="<%= css+"noborder" %>">
                           <%if params[:continue].nil? and !metapackage.id.nil? then%>
-				<%= mc.package.description[0,170]+(mc.package.description.length<170 ? "" : " ... "+(link_to t(:more), metapackage_path(metapackage)+"?continue=true")) %></td>
+				<%= (mc.package.description[0,170]+(mc.package.description.length<170 ? "" : " ... "+(link_to t(:more), metapackage_path(metapackage)+"?continue=true"))).html_safe %></td>
                           <%else%>
-                                <%= mc.package.description %></td>
+                                <%= mc.package.description.html_safe %></td>
                           <% end %>
                    </tr>
 	    <% end %>

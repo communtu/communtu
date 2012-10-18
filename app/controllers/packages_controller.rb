@@ -148,7 +148,7 @@ if !params[:video_url].nil? then
     if !params[:package][:icon_file].nil? && (params[:package][:icon_file].size > 1) then
        # file name without full path
        icon_file = params[:package][:icon_file].original_filename.split("/")[-1]
-       path = RAILS_ROOT + '/public/images/apps/'
+       path = Rails.root.to_s + '/public/images/apps/'
        # avoid duplicate file names
        while FileTest.file?(path + icon_file)
          icon_file = "x"+icon_file

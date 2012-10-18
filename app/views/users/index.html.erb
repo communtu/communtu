@@ -33,5 +33,5 @@
   <tr><td colspan="4"><hr /></td></tr>
     <%= render :partial => 'user', :collection => @users, :window_size => 10 %>
 </table>
-<%= paginating_links(@users, :window_size => 10) %>
+<%= will_paginate @users %>
 </div>

@@ -564,7 +564,9 @@ class MetapackagesController < ApplicationController
     prepare_create
     cart = Cart.find(session[:cart])
     current_user.user_packages.map(&:base_package).uniq.each do |m|
-       CartContent.create({:cart_id => cart.id, :base_package_id => m.id})
+       if !m.nil?
+         CartContent.create({:cart_id => cart.id, :base_package_id => m.id})
+       end
     end
     redirect_to "/packages"
   end
@@ -598,7 +600,7 @@ class MetapackagesController < ApplicationController
     redirect_to session[:backlink]
   end
   
-  def selection_new
+  def selection
     @categories=Category.all
     
     begin

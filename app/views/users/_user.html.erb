@@ -20,14 +20,10 @@
   <td align="left" width="35%"><%=h user.email %></td>
   <td width="10%"><%= user.enabled ? 'yes' : 'no' %>
     <% unless user == current_user %>
-      <% if user.enabled %>
-        <%= link_to(t(:view_users__user_0), user_path(user.id), :method => :delete) %>
-      <% else %>
-        <%= link_to(t(:view_users__user_1), enable_user_path(user.id), :method => :put) %>
-      <% end %>
+        <%= link_to(t(:view_users__user_1), "/users/#{user.id.to_s}", :method => :delete) %>
     <% end %>
   </td>
-  <td width="20%"><%= link_to t(:view_users__user_2), user_roles_path(user) %></td>
+  <td width="20%"><%= link_to t(:view_users__user_2), "/users/#{user.id.to_s}/roles" %></td>
 </tr>
 <tr>
   <td align="left"><font size="-3">

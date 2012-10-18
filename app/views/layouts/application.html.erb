@@ -24,7 +24,7 @@
   <title><%= begin " "+controller.title rescue "" end %></title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   
-  <%= stylesheet_link_tag 'layout' %>
+  <%= stylesheet_link_tag "layout" %>
   <%= stylesheet_link_tag params[:controller] %>
   <%= javascript_include_tag "application" %>
   <script type="text/javascript">
@@ -43,7 +43,7 @@
   <link rel="alternate" type="application/rss+xml" title="RSS" href="http://de.communtu.org/infos/rss" />
 
 <div id="head">
-<%= link_to("", "/home/home_new", { :id => "headlinktohome", :title => "Communtu "+t(:homepage) }).html_safe %>
+<%= link_to("", "/home/home", { :id => "headlinktohome", :title => "Communtu "+t(:homepage) }).html_safe %>
 <!-- headlline -->
  <div id="headline">
   <span class="headfont"><%= t(:headline).html_safe %></span>
@@ -56,7 +56,7 @@
                         :class => "pfeil_link"}
                       )).html_safe , 
              t(:link_community), {:target => '_blank', :title => t(:link_community_title)} ) %> |
-	<%= link_to(t(:homepage).html_safe, "/home/home_new") %> | 
+	<%= link_to(t(:homepage).html_safe, "/home/home") %> | 
 	<%= link_to(t(:view_layouts_application_30).html_safe, "/home/faq") %> |
 	<%= link_to(t(:board).html_safe, "http://forum.communtu.org", :popup=>true) %> | 
 	<%= link_to(t(:view_layouts_donate).html_safe, "/home/donate") %> | 
@@ -73,7 +73,7 @@
 
     <% if logged_in? %>
       <!-- log out -->
-      <%= link_to t(:view_layouts_application_9), logout_path  %> |
+      <%= link_to t(:view_layouts_application_9), "/sessions/destroy"  %> |
 
         <% if !is_anonymous? %>
           <span class="register_text"><%= t(:register) %>
@@ -82,7 +82,7 @@
             <% end %>
            </span>
         <%  else %>
-          <%= link_to t(:register), user_path(current_user.id) %> |
+          <%= link_to t(:register), "/user/#{current_user.id}" %> |
           <% if !is_admin? %>
             <span class="register_text"> <%= t(:guest) %> </span>
           <% end %>
@@ -122,11 +122,11 @@
 <% link = if @has_own_bundles.length != 0 then "index_mine" else "index" end %>
 
 <div class="navigation" id="navi_bundle" <%= @style %>>
-	<%= link_to t(:view_layouts_application_23), "/metapackages/selection_new", :class => "navigation_link", :id => "navigationlink_bundle" %>
+	<%= link_to "Programme bündeln", "/metapackages/selection", :class => "navigation_link", :id => "navigationlink_bundle" %>
 </div>
 
 
-<% navi_communtu = (params[:controller] == "home" and !["home","home_new","new_repository"].include?(params[:action]) \
+<% navi_communtu = (params[:controller] == "home" and !["home","home","new_repository"].include?(params[:action]) \
       or params[:controller] == "articles") %>
 <% if navi_communtu %>	  
    <% @style = "style='margin-top:10px'"  %>
@@ -135,14 +135,14 @@
  <% end %>
 
 	<div class="navigation" id="navi_communtu" <%= @style %>>
-	<%= link_to t(:view_layouts_application_25), "/home/about", :class => "navigation_link", :id => "navigationlink_communtu" %>
+	<%= link_to "Über uns", "/home/about", :class => "navigation_link", :id => "navigationlink_communtu" %>
 </div>
 		
 	<!-- user -->
 <% if logged_in? %>
 <div id="person">
-		<%= link_to current_user.login, user_path(current_user.id), :title=>t(:view_layouts_application_22) %> 
-                <%= link_to image_tag("icon_user.png", :border => '0', :alt=>t(:view_layouts_application_22),:title=>t(:view_layouts_application_22)), user_path(current_user.id), :class => 'person' %>
+		<%= link_to current_user.login, "/users/#{current_user.id}", :title=>t(:view_layouts_application_22) %> 
+                <%= link_to image_tag("icon_user.png", :border => '0', :alt=>t(:view_layouts_application_22),:title=>t(:view_layouts_application_22)), "/users/#{current_user.id}", :class => 'person' %>
                 <%= new_message? ? link_to(image_tag("icon_msg_on.png", :alt=>t(:view_layouts_application_16),:title=>t(:view_layouts_application_16), :border=>"0"), '/inbox') : link_to(image_tag("icon_msg.png", :alt=>t(:view_layouts_application_18),:title=>t(:view_layouts_application_18), :border=>"0"), '/inbox') %>
 </div>
 <% end %>
@@ -151,14 +151,14 @@
 <% if logged_in? %>
 <div align="right">
 <font size="-3"><%= link_to t(:view_layouts_application_14), '/home/contact_us' %>&nbsp;&nbsp;&nbsp;<%=t(:view_layouts_application_15)%>
-	<%= link_to current_user.login, user_path(current_user.id) %>
-	<%= link_to image_tag("16-member.png", :border => '0', :title => current_user.login, :alt => current_user.login), user_path(current_user.id) %>
+	<%= link_to current_user.login, "/users/#{current_user.id}" %>
+	<%= link_to image_tag("16-member.png", :border => '0', :title => current_user.login, :alt => current_user.login), "/users/#{current_user.id}" %>
 </font>
 	<%= new_message? ? link_to(image_tag("message_rollover.png", :alt=>t(:view_layouts_application_16),:title=>t(:view_layouts_application_16), :border=>"0"), '/inbox') : link_to(image_tag("message.png", :alt=>t(:view_layouts_application_18),:title=>t(:view_layouts_application_18), :border=>"0"), '/inbox') %>
 </div>
 <% end %>
 -->
-<% if navi_communtu %>	  
+<% if navi_communtu %>
 <%= render(:partial => 'home/navi_communtu') %>
 <% elsif params[:controller] == "articles" %>
 <% elsif params[:action] == "metapackages" and params[:controller] == "users" %>

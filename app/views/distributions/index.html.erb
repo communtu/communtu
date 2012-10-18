@@ -17,12 +17,12 @@
 
 <%= render_flash %>
 <div class='inner0'>
-<span class='headline'><%=t(:view_distributions_index_0)%></span><br/>
+<span class='headline'><%=t(:view_distributions_index_0).html_safe%></span><br/>
 <% for distribution in @distributions %>
- <%= dist_show distribution, "inner1" %>
+ <%= (dist_show distribution, "inner1").html_safe %>
 <% end %>
 <% if is_admin? %>
-<%= link_to t(:new_distribution), new_distribution_path %>
+<%= link_to t(:new_distribution).html_safe, new_distribution_path %>
 <% end %>
 
 </div>

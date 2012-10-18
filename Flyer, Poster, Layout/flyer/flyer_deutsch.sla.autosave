@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SCRIBUSUTF8NEW Version="1.5.0.svn">
+    <DOCUMENT ANZPAGES="2" PAGEWIDTH="858.897637795276" PAGEHEIGHT="612.289133858268" BORDERLEFT="8.50393700787402" BORDERRIGHT="8.50393700787402" BORDERTOP="8.50393700787402" BORDERBOTTOM="8.50393700787402" PRESET="0" BleedTop="0" BleedLeft="0" BleedRight="0" BleedBottom="0" ORIENTATION="1" PAGESIZE="A4" FIRSTNUM="1" BOOK="2" AUTOSPALTEN="1" ABSTSPALTEN="11" UNITS="1" DFONT="Arial Regular" DSIZE="12" DCOL="1" DGAP="0" TabFill="" TabWidth="36" AUTHOR="" COMMENTS="" KEYWORDS="" PUBLISHER="" DOCDATE="" DOCTYPE="" DOCFORMAT="" DOCIDENT="" DOCSOURCE="" DOCLANGINFO="" DOCRELATION="" DOCCOVER="" DOCRIGHTS="" DOCCONTRIB="" TITLE="" SUBJECT="" VHOCH="33" VHOCHSC="66" VTIEF="33" VTIEFSC="66" VKAPIT="75" BASEGRID="14.4" BASEO="0" AUTOL="20" UnderlinePos="-1" UnderlineWidth="-1" StrikeThruPos="-1" StrikeThruWidth="-1" GROUPC="1" HCMS="0" DPSo="0" DPSFo="0" DPuse="0" DPgam="0" DPbla="1" DPMo="" DPPr="" DPIn="" DPInCMYK="" DPIn2="" DPIn3="" DISc="1" DIIm="0" ALAYER="0" LANGUAGE="English" MINWORDLEN="3" HYCOUNT="2" AUTOMATIC="1" AUTOCHECK="0" GUIDELOCK="0" SnapToGuides="0" SnapToGrid="0" MINGRID="20.0012598425197" MAJGRID="100.00062992126" SHOWGRID="0" SHOWGUIDES="1" showcolborders="0" SHOWFRAME="0" SHOWLAYERM="0" SHOWMARGIN="1" SHOWBASE="0" SHOWPICT="1" SHOWControl="0" SHOWLINK="1" rulerMode="1" showrulers="1" showBleed="1" rulerXoffset="0" rulerYoffset="0" GuideRad="10" GRAB="4" POLYC="4" POLYF="0.707106781186548" POLYR="0" POLYIR="0" POLYCUR="0" POLYOCUR="0" POLYS="0" arcStartAngle="30" arcSweepAngle="300" spiralStartAngle="0" spiralEndAngle="1080" spiralFactor="1.2" AutoSave="1" AutoSaveTime="600000" ScratchBottom="20.0012598425197" ScratchLeft="100.00062992126" ScratchRight="100.00062992126" ScratchTop="20.0012598425197" GapHorizontal="0" GapVertical="39.9996850393701" StartArrow="0" EndArrow="0" PEN="Black" BRUSH="None" PENLINE="d" PENTEXT="Black" StrokeText="Black" TextBackGround="None" TextLineColor="None" TextBackGroundShade="100" TextLineShade="100" TextPenShade="100" TextStrokeShade="100" STIL="1" STILLINE="1" WIDTH="1" WIDTHLINE="1" PENSHADE="100" LINESHADE="100" BRUSHSHADE="100" MAGMIN="10" MAGMAX="3200" MAGSTEP="200" CPICT="None" PICTSHADE="100" PICTSCX="1" PICTSCY="1" PSCALE="1" PASPECT="1" EmbeddedPath="0" HalfRes="1" dispX="0.154" dispY="0.154" constrain="15" MINORC="#00ff00" MAJORC="#00ff00" GuideC="#000080" BaseC="#c0c0c0" BACKG="0" PAGEC="#ffffff" MARGC="#0000ff" RANDF="0" currentProfile="PostScript" calligrapicPenFillColor="Black" calligrapicPenLineColor="Black" calligrapicPenFillColorShade="100" calligrapicPenLineColorShade="100" calligrapicPenLineWidth="1" calligrapicPenAngle="0" calligrapicPenWidth="10" calligrapicPenStyle="1">
+        <CheckProfile Name="PDF 1.3" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0"/>
+        <CheckProfile Name="PDF 1.4" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0"/>
+        <CheckProfile Name="PDF 1.5" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0"/>
+        <CheckProfile Name="PDF/X-3" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="1" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0"/>
+        <CheckProfile Name="PostScript" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0"/>
+        <COLOR NAME="Black" CMYK="#000000ff"/>
+        <COLOR NAME="Blue" RGB="#0000ff"/>
+        <COLOR NAME="Cool Black" CMYK="#990000ff"/>
+        <COLOR NAME="Cyan" CMYK="#ff000000"/>
+        <COLOR NAME="Green" RGB="#00ff00"/>
+        <COLOR NAME="Magenta" CMYK="#00ff0000"/>
+        <COLOR NAME="Red" RGB="#ff0000"/>
+        <COLOR NAME="Registration" CMYK="#ffffffff" Register="1"/>
+        <COLOR NAME="Rich Black" CMYK="#996666ff"/>
+        <COLOR NAME="Warm Black" CMYK="#00994cff"/>
+        <COLOR NAME="White" CMYK="#00000000"/>
+        <COLOR NAME="Yellow" CMYK="#0000ff00"/>
+        <HYPHEN/>
+        <STYLE NAME="Default Paragraph Style" DefaultStyle="1" ALIGN="0" LINESPMode="0" LINESP="15" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" DROP="0" DROPLIN="2" DROPDIST="0"/>
+        <STYLE NAME="Bulletpoints" PARENT="Default Paragraph Style">
+            <Tabs Type="0" Pos="8.50393700787402" Fill=""/>
+        </STYLE>
+        <CHARSTYLE CNAME="Default Character Style" DefaultStyle="1" FONT="Arial Regular" FONTSIZE="12" FEATURES="inherit" FCOLOR="Black" FSHADE="100" SCOLOR="Black" SSHADE="100" TXTSHX="5" TXTSHY="-5" TXTOUT="1" TXTULP="-0.1" TXTULW="-0.1" TXTSTP="-0.1" TXTSTW="-0.1" SCALEH="100" SCALEV="100" BASEO="0" KERN="0" LANGUAGE="English"/>
+        <LAYERS NUMMER="0" LEVEL="0" NAME="Background" SICHTBAR="1" DRUCKEN="1" EDIT="1" FLOW="1" TRANS="1" BLEND="0" OUTL="0" LAYERC="#000000"/>
+        <Printer firstUse="1" toFile="0" useAltPrintCommand="0" outputSeparations="0" useSpotColors="0" useColor="0" mirrorH="1" mirrorV="1" useICC="1" doGCR="1" doClip="1" setDevParam="1" useDocBleeds="1" cropMarks="1" bleedMarks="1" registrationMarks="1" colorMarks="1" includePDFMarks="1" PSLevel="-1251794048" PDLanguage="-1251794048" markOffset="6.73819999999999" BleedTop="0" BleedLeft="0" BleedRight="0" BleedBottom="0" printer="" filename="" separationName="" printerCommand=""/>
+        <PDF firstUse="0" Thumbnails="0" Articles="0" Bookmarks="0" Compress="1" CMethod="0" Quality="0" MirrorH="0" MirrorV="0" Clip="0" RotateDeg="0" PresentMode="0" RecalcPic="0" Grayscale="0" RGBMode="1" UseProfiles="0" UseProfiles2="0" Binding="0" PicRes="300" Resolution="300" Version="14" Intent="1" Intent2="0" SolidP="" ImageP="" PrintP="" InfoString="" BTop="0" BLeft="0" BRight="0" BBottom="0" useDocBleeds="0" cropMarks="0" bleedMarks="0" registrationMarks="0" colorMarks="0" docInfoMarks="0" markOffset="0" ImagePr="0" PassOwner="" PassUser="" Permissions="-4" Encrypt="0" UseLayers="0" UseLpi="0" UseSpotColors="1" doMultiFile="0" displayBookmarks="0" displayFullscreen="0" displayLayers="0" displayThumbs="0" hideMenuBar="0" hideToolBar="0" fitWindow="0" openAfterExport="0" PageLayout="0" openAction="">
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <LPI Color="" Frequency="10" Angle="0" SpotFunction="0"/>
+            <LPI Color="Black" Frequency="133" Angle="45" SpotFunction="3"/>
+            <LPI Color="Cyan" Frequency="133" Angle="105" SpotFunction="3"/>
+            <LPI Color="Magenta" Frequency="133" Angle="75" SpotFunction="3"/>
+            <LPI Color="Yellow" Frequency="133" Angle="90" SpotFunction="3"/>
+        </PDF>
+        <DocItemAttributes/>
+        <TablesOfContents/>
+        <PageSets>
+            <Set Name="Single Page" FirstPage="0" Rows="1" Columns="1"/>
+            <Set Name="Double Sided" FirstPage="1" Rows="1" Columns="2">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+            <Set Name="3-Fold" FirstPage="0" Rows="1" Columns="3">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Middle"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+            <Set Name="4-Fold" FirstPage="0" Rows="1" Columns="4">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Middle Left"/>
+                <PageNames Name="Middle Right"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+        </PageSets>
+        <Sections>
+            <Section Number="0" Name="0" From="0" To="1" Type="Type_1_2_3" Start="1" Reversed="0" Active="1" FillChar="0" FieldWidth="0"/>
+        </Sections>
+        <MASTERPAGE PAGEXPOS="100.00062992126" PAGEYPOS="20.0012598425197" PAGEWIDTH="841.89" PAGEHEIGHT="595.28" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" NUM="0" NAM="Normal Left" MNAM="" Size="A4" Orientation="1" LEFT="1" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0"/>
+        <MASTERPAGE PAGEXPOS="100.00062992126" PAGEYPOS="20.0012598425197" PAGEWIDTH="841.89" PAGEHEIGHT="595.28" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" NUM="1" NAM="Normal Right" MNAM="" Size="A4" Orientation="1" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0"/>
+        <MASTERPAGE PAGEXPOS="100.00062992126" PAGEYPOS="20.0012598425197" PAGEWIDTH="841.89" PAGEHEIGHT="595.28" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" NUM="2" NAM="Normal Middle" MNAM="" Size="A4" Orientation="1" LEFT="2" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="20.0012598425197" PAGEWIDTH="841.89" PAGEHEIGHT="595.28" BORDERLEFT="8.50393700787402" BORDERRIGHT="8.50393700787402" BORDERTOP="8.50393700787402" BORDERBOTTOM="8.50393700787402" NUM="0" NAM="" MNAM="Normal Left" Size="A4" Orientation="1" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="2" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0"/>
+        <PAGE PAGEXPOS="941.89062992126" PAGEYPOS="20.0012598425197" PAGEWIDTH="841.89" PAGEHEIGHT="595.28" BORDERLEFT="8.50393700787402" BORDERRIGHT="8.50393700787402" BORDERTOP="8.50393700787402" BORDERBOTTOM="8.50393700787402" NUM="1" NAM="" MNAM="Normal Middle" Size="A4" Orientation="1" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="2" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0"/>
+        <PAGEOBJECT XPOS="100.00062992126" YPOS="20.0012598425197" OwnPage="0" PTYPE="2" WIDTH="842" HEIGHT="264" FRTYPE="0" CLIPEDIT="1" PWIDTH="1" PLINEART="1" ANNAME="Background_top" LOCALSCX="0.240022805017104" LOCALSCY="0.404287901990812" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="0" Pagenumber="0" PFILE="images/background_top.png" IRENDER="0" EMBEDDED="0" path="M0 0 L842 0 L842 264 L0 264 L0 0 Z" copath="M0 0 L842 0 L842 264 L0 264 L0 0 L842 0 L842 264 L0 264 L0 0 Z" gXpos="0" gYpos="0" gWidth="842" gHeight="595" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="100.00062992126" YPOS="567.087874015748" OwnPage="0" PTYPE="2" WIDTH="842" HEIGHT="47.9133858267716" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="background_bottom" LOCALSCX="0.24" LOCALSCY="0.24" LOCALX="0" LOCALY="-1.94422572178514" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="images/background_bottom.png" IRENDER="0" EMBEDDED="0" path="M0 0 L842 0 L842 47.9134 L0 47.9134 L0 0 Z" copath="M0 0 L842 0 L842 47.9134 L0 47.9134 L0 0 L842 0 L842 47.9134 L0 47.9134 L0 0 Z" gXpos="0" gYpos="546.62" gWidth="842" gHeight="595" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="825" YPOS="147" OwnPage="0" PTYPE="2" WIDTH="94.5006299212596" HEIGHT="97.5888858010393" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="circle_of_friends" LOCALSCX="0.205883725318648" LOCALSCY="0.205883725318648" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="images/circle_of_friends.png" IRENDER="0" EMBEDDED="0" path="M0 0 L94.5006 0 L94.5006 97.5889 L0 97.5889 L0 0 Z" copath="M0 0 L94.5006 0 L94.5006 97.5889 L0 97.5889 L0 0 L94.5006 0 L94.5006 97.5889 L0 97.5889 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="683.937637795275" YPOS="391.919291338583" OwnPage="0" PTYPE="2" WIDTH="137.881889763779" HEIGHT="183.75125984252" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.181423539162867" LOCALSCY="0.181423539162867" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="images/conny.jpg" IRENDER="0" EMBEDDED="0" path="M0 0 L137.882 0 L137.882 183.751 L0 183.751 L0 0 Z" copath="M0 0 L137.882 0 L137.882 183.751 L0 183.751 L0 0 L137.882 0 L137.882 183.751 L0 183.751 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="394.00062992126" YPOS="40.0012598425197" OwnPage="0" PTYPE="4" WIDTH="270" HEIGHT="225.5" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L270 0 L270 225.5 L0 225.5 L0 0 Z" copath="M0 0 L270 0 L270 225.5 L0 225.5 L0 0 L270 0 L270 225.5 L0 225.5 L0 0 Z" gXpos="-1" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="Du hast Fragen, Vorschläge, Ideen oder Kritik"/>
+            <para/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="zu "/>
+            <ITEXT FONT="Liberation Sans Bold" FONTSIZE="10" CH="Communtu"/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="?"/>
+            <para/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="Dann melde dich bei uns:"/>
+            <para/>
+            <para/>
+            <para/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="Natur, Geist und Technik - Verein zur Förder-"/>
+            <para/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="ung der Allgemeinbildung e.V."/>
+            <para/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="AG Communtu"/>
+            <para/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="Bauernstraße 2"/>
+            <para/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="28203 Bremen"/>
+            <para/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="0421-6201605"/>
+            <para/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="E-Mail: info@communtu.de"/>
+            <para/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="IRC: #de-communtu auf irc.freenode.net"/>
+            <trail/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="114.00062992126" YPOS="40.0012598425197" OwnPage="0" PTYPE="4" WIDTH="270" HEIGHT="225" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L270 0 L270 225 L0 225 L0 0 Z" copath="M0 0 L270 0 L270 225 L0 225 L0 0 L270 0 L270 225 L0 225 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT FONT="Liberation Sans Bold" FONTSIZE="10" CH="Communtu"/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH=" ist eine Web2.0-Plattform, welche"/>
+            <para/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="die Nachinstallation von Programmen für die"/>
+            <para/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="Linux-Distribution Ubuntu vereinfacht. Communtu ist freie Software."/>
+            <para/>
+            <para/>
+            <ITEXT FONT="Liberation Sans Bold" FONTSIZE="10" CH="Die Plattform für:"/>
+            <para/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="•"/>
+            <tab FONT="Liberation Sans Regular" FONTSIZE="10"/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="einfache Software-Installation durch die"/>
+            <para PARENT="Bulletpoints"/>
+            <tab FONT="Liberation Sans Regular" FONTSIZE="10"/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="Auswahl von Aufgaben, die mit dem"/>
+            <para PARENT="Bulletpoints"/>
+            <tab FONT="Liberation Sans Regular" FONTSIZE="10"/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="Computer erledigt werden sollen"/>
+            <para PARENT="Bulletpoints"/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="•"/>
+            <tab FONT="Liberation Sans Regular" FONTSIZE="10"/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="Erstellung individueller Bündel,"/>
+            <para PARENT="Bulletpoints"/>
+            <tab FONT="Liberation Sans Regular" FONTSIZE="10"/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="Metapakete und Live-CDs"/>
+            <para PARENT="Bulletpoints"/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="•"/>
+            <tab FONT="Liberation Sans Regular" FONTSIZE="10"/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="Bewertung von Programmbündeln"/>
+            <para PARENT="Bulletpoints"/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="•"/>
+            <tab FONT="Liberation Sans Regular" FONTSIZE="10"/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="Erfahrungsaustausch zu Programmen"/>
+            <para PARENT="Bulletpoints"/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="•"/>
+            <tab FONT="Liberation Sans Regular" FONTSIZE="10"/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="Automatische Eintragung von benötigten"/>
+            <para PARENT="Bulletpoints"/>
+            <tab FONT="Liberation Sans Regular" FONTSIZE="10"/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="Schlüsseln und Paketquellen"/>
+            <trail PARENT="Bulletpoints"/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="670.25062992126" YPOS="70.7512598425197" OwnPage="0" PTYPE="4" WIDTH="243.75" HEIGHT="55.75" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L243.75 0 L243.75 55.75 L0 55.75 L0 0 Z" copath="M0 0 L243.75 0 L243.75 55.75 L0 55.75 L0 0 L243.75 0 L243.75 55.75 L0 55.75 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT FONT="Liberation Sans Bold" FONTSIZE="28" CH="Communtu"/>
+            <para ALIGN="1"/>
+            <para/>
+            <ITEXT CH="Ubuntu installieren leicht gemacht"/>
+            <trail ALIGN="1"/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="108.504566929134" YPOS="296.25125984252" OwnPage="0" PTYPE="2" WIDTH="179.951166073999" HEIGHT="53.75" FRTYPE="0" CLIPEDIT="1" PWIDTH="1" PLINEART="1" ANNAME="bundle" LOCALSCX="0.310796487174437" LOCALSCY="0.310796487174437" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="images/bundel.png" IRENDER="0" EMBEDDED="0" path="M0 0 L179.951 0 L179.951 53.75 L0 53.75 L0 0 Z" copath="M0 0 L179.951 0 L179.951 53.75 L0 53.75 L0 0 L179.951 0 L179.951 53.75 L0 53.75 L0 0 Z" gXpos="0" gYpos="0" gWidth="267.410787401575" gHeight="204.5" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="143.967646261959" YPOS="303.50125984252" OwnPage="0" PTYPE="4" WIDTH="102.795006985014" HEIGHT="23.25" FRTYPE="0" CLIPEDIT="1" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L102.795 0 L102.795 23.25 L0 23.25 L0 0 Z" copath="M0 0 L102.795 0 L102.795 23.25 L0 23.25 L0 0 L102.795 0 L102.795 23.25 L0 23.25 L0 0 Z" gXpos="35.4630793328254" gYpos="7.25" gWidth="267.410787401575" gHeight="204.5" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT FONT="Liberation Sans Bold" FONTSIZE="13" FCOLOR="White" FSHADE="100" CH="BÜNDEL"/>
+            <trail ALIGN="1"/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="381.00062992126" YPOS="296.25125984252" OwnPage="0" PTYPE="2" WIDTH="187.75" HEIGHT="53.75" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="communtu" LOCALSCX="0.32426597582038" LOCALSCY="0.32426597582038" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="images/communtu.png" IRENDER="0" EMBEDDED="0" path="M0 0 L187.75 0 L187.75 53.75 L0 53.75 L0 0 Z" copath="M0 0 L187.75 0 L187.75 53.75 L0 53.75 L0 0 L187.75 0 L187.75 53.75 L0 53.75 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="418.00062992126" YPOS="303.50125984252" OwnPage="0" PTYPE="4" WIDTH="107.25" HEIGHT="23.25" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L107.25 0 L107.25 23.25 L0 23.25 L0 0 Z" copath="M0 0 L107.25 0 L107.25 23.25 L0 23.25 L0 0 L107.25 0 L107.25 23.25 L0 23.25 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT FONT="Liberation Sans Bold" FCOLOR="White" FSHADE="100" CH="COMMUNTU"/>
+            <trail ALIGN="1"/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="119.965367030734" YPOS="351.50125984252" OwnPage="0" PTYPE="4" WIDTH="258.784632969266" HEIGHT="149.25" FRTYPE="0" CLIPEDIT="1" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L258.785 0 L258.785 149.25 L0 149.25 L0 0 Z" copath="M0 0 L258.785 0 L258.785 149.25 L0 149.25 L0 0 L258.785 0 L258.785 149.25 L0 149.25 L0 0 Z" gXpos="8.62615443230887" gYpos="55.25" gWidth="267.410787401575" gHeight="204.5" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT FONTSIZE="10" CH="Anhand der Angaben, welche Aufgaben du mit"/>
+            <para ALIGN="0"/>
+            <ITEXT FONTSIZE="10" CH="deinem Computer erledigen möchtest, schlägt"/>
+            <para ALIGN="0"/>
+            <ITEXT FONTSIZE="10" CH="Communtu dir Programme vor, di"/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="e"/>
+            <ITEXT FONTSIZE="10" CH=" automatisch"/>
+            <para ALIGN="0"/>
+            <ITEXT FONTSIZE="10" CH="installiert werden können (inkl. dem Hinzufügen"/>
+            <para ALIGN="0"/>
+            <ITEXT FONTSIZE="10" CH="von weiteren Paketquellen und Schlüsseln)."/>
+            <para ALIGN="0"/>
+            <ITEXT FONTSIZE="10" CH="Gleichzeitig ist es aber auch möglich, die Auswahl"/>
+            <para ALIGN="0"/>
+            <ITEXT FONTSIZE="10" CH="zu verfeinern und detailliertere Informationen"/>
+            <para ALIGN="0"/>
+            <ITEXT FONTSIZE="10" CH="zu den einzelnen Programmbündeln oder Paketen"/>
+            <para ALIGN="0"/>
+            <ITEXT FONTSIZE="10" CH="abzurufen. Es ist auch möglich, eigene Programm-"/>
+            <para ALIGN="0"/>
+            <ITEXT FONTSIZE="10" CH="bündel oder individuelle Live-CDs zu erstellen."/>
+            <trail ALIGN="0"/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="389.331338582677" YPOS="453.920551181102" OwnPage="0" PTYPE="4" WIDTH="270" HEIGHT="105" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L270 0 L270 105 L0 105 L0 0 Z" copath="M0 0 L270 0 L270 105 L0 105 L0 0 L270 0 L270 105 L0 105 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="Spendenmöglichkeit:"/>
+            <para/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="Allgemeinbildung e.V."/>
+            <para/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="Konto: 172 9375"/>
+            <para/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="BLZ: 290 501 01"/>
+            <para/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="Sparkasse Bremen"/>
+            <para/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="Verwendungszweck: Communtu"/>
+            <para/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="Spendenbescheinigung kann ausgestellt werden."/>
+            <trail/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="114.00062992126" YPOS="580.00125984252" OwnPage="0" PTYPE="4" WIDTH="119.99937007874" HEIGHT="16.7500000000001" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L119.999 0 L119.999 16.75 L0 16.75 L0 0 Z" copath="M0 0 L119.999 0 L119.999 16.75 L0 16.75 L0 0 L119.999 0 L119.999 16.75 L0 16.75 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT FONT="Liberation Sans Bold" FONTSIZE="13" CH="www.communtu.de"/>
+            <trail/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="807" YPOS="580.00125984252" OwnPage="0" PTYPE="4" WIDTH="121.00062992126" HEIGHT="16.75" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L121.001 0 L121.001 16.75 L0 16.75 L0 0 Z" copath="M0 0 L121.001 0 L121.001 16.75 L0 16.75 L0 0 L121.001 0 L121.001 16.75 L0 16.75 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT FONT="Liberation Sans Bold" FONTSIZE="13" CH="www.communtu.de"/>
+            <trail/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="450.00062992126" YPOS="580.00125984252" OwnPage="0" PTYPE="4" WIDTH="122.99937007874" HEIGHT="16.75" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L122.999 0 L122.999 16.75 L0 16.75 L0 0 Z" copath="M0 0 L122.999 0 L122.999 16.75 L0 16.75 L0 0 L122.999 0 L122.999 16.75 L0 16.75 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT FONT="Liberation Sans Bold" FONTSIZE="13" CH="www.communtu.de"/>
+            <trail/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="1223.14062992126" YPOS="31.4048031496063" OwnPage="1" PTYPE="2" WIDTH="187.75" HEIGHT="53.75" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="download" LOCALSCX="0.32426597582038" LOCALSCY="0.32426597582038" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="images/download.png" IRENDER="0" EMBEDDED="0" path="M0 0 L187.75 0 L187.75 53.75 L0 53.75 L0 0 Z" copath="M0 0 L187.75 0 L187.75 53.75 L0 53.75 L0 0 L187.75 0 L187.75 53.75 L0 53.75 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="958.725275590551" YPOS="85.562283464567" OwnPage="1" PTYPE="4" WIDTH="253.11" HEIGHT="531.876692913386" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L253.11 0 L253.11 531.877 L0 531.877 L0 0 Z" copath="M0 0 L253.11 0 L253.11 531.877 L0 531.877 L0 0 L253.11 0 L253.11 531.877 L0 531.877 L0 0 Z" gXpos="0" gYpos="5.66929133858267" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT FONT="Liberation Sans Bold" FONTSIZE="10" CH="Wer kennt das Problem nicht"/>
+            <ITEXT FONT="Liberation Sans Bold" CH="?"/>
+            <para/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="Ich möchte etwas Bestimmtes (z.B. Multimedia oder Grafik) mit meinem Computer machen und weiß nicht, welche Programmen ich dafür benötige."/>
+            <para/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="Communtu bietet Dir hier eine Vorauswahl an Programmen an, welche für diese Tätigkeiten genau passend sind."/>
+            <para/>
+            <para/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="Um mit der Installation der Programme zu beginnen, klickst Du auf &quot;Download&quot;. Hier wählst Du aus, wie du die Programme oder auch ein komplettes Ubuntu-Betriebssystem mit den Programmen installieren möchtest"/>
+            <ITEXT CH=":"/>
+            <para/>
+            <para/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="•"/>
+            <tab FONT="Liberation Sans Regular" FONTSIZE="10"/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="Wenn du bereits ein Ubuntu installiert hast, wählst du"/>
+            <para PARENT="Bulletpoints"/>
+            <tab FONT="Liberation Sans Regular" FONTSIZE="10"/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="die Nachinstallation aus."/>
+            <para PARENT="Bulletpoints"/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="•"/>
+            <tab FONT="Liberation Sans Regular" FONTSIZE="10"/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="Wenn du Ubuntu von einem USB-Stick installieren"/>
+            <para PARENT="Bulletpoints"/>
+            <tab FONT="Liberation Sans Regular" FONTSIZE="10"/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="möchtest, wählst du den USB-Stick aus."/>
+            <para PARENT="Bulletpoints"/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="•"/>
+            <tab FONT="Liberation Sans Regular" FONTSIZE="10"/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="Wenn du Ubuntu von einer CD installieren möchtest"/>
+            <ITEXT CH=","/>
+            <para PARENT="Bulletpoints"/>
+            <tab FONT="Liberation Sans Regular" FONTSIZE="10"/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH=" wählst du die Live-CD aus."/>
+            <para PARENT="Bulletpoints"/>
+            <para/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="Für die Erstellung einer ISO-Datei (zum Brennen auf"/>
+            <para/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="eine CD/DVD oder zum Kopieren auf einen USB-Stick)"/>
+            <para/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="musst du dich anmelden."/>
+            <para/>
+            <para/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="Auf der Download-Seite links kannst du nun die Aufgaben auswählen, welche du mit deinem Computer erledigen möchtest. Sobald du einen Aufgabenbereich ausgewählt hast, erscheint rechts eine Übersicht über die veröffentlichten Bündel für diese Kategorie."/>
+            <trail/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="1260.14062992126" YPOS="38.6548031496063" OwnPage="1" PTYPE="4" WIDTH="107.25" HEIGHT="23.25" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L107.25 0 L107.25 23.25 L0 23.25 L0 0 Z" copath="M0 0 L107.25 0 L107.25 23.25 L0 23.25 L0 0 L107.25 0 L107.25 23.25 L0 23.25 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT FONT="Liberation Sans Bold" FONTSIZE="13" FCOLOR="White" FSHADE="100" CH="DOWNLOAD"/>
+            <trail ALIGN="1"/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="1223.66992125984" YPOS="79.8916535433071" OwnPage="1" PTYPE="2" WIDTH="509.580078740157" HEIGHT="296.095196850394" FRTYPE="0" CLIPEDIT="0" PWIDTH="0" PCOLOR2="Black" SHADE2="20" PLINEART="1" ANNAME="software_selection" LOCALSCX="0.211194862232806" LOCALSCY="0.211194862232806" LOCALX="2.36748183508654" LOCALY="-1.72099151980551" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="images/software_selection.png" IRENDER="0" EMBEDDED="0" path="M0 0 L509.58 0 L509.58 296.095 L0 296.095 L0 0 Z" copath="M0 0 L509.58 0 L509.58 296.095 L0 296.095 L0 0 L509.58 0 L509.58 296.095 L0 296.095 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="1227.22133858268" YPOS="390.146929133858" OwnPage="1" PTYPE="4" WIDTH="271.863307086614" HEIGHT="227.191653543307" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L271.863 0 L271.863 227.192 L0 227.192 L0 0 Z" copath="M0 0 L271.863 0 L271.863 227.192 L0 227.192 L0 0 L271.863 0 L271.863 227.192 L0 227.192 L0 0 Z" gXpos="0" gYpos="11.3385826771654" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="Zu jeder Kategorie kannst du mit einem Klick die wichtigsten Bündel auswählen (Standard- Bündel) und/oder weitere Bündel. Was in einem Bündel enthalten ist, zeigt Communtu an, sobald du mit der Maus darübergehst."/>
+            <para/>
+            <para/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" CH="Im nächsten Schritt kannst du Angaben zu deinem Computer machen, z. B. welche Version von Ubuntu du benutzt, welche Oberfläche (z. B. KDE oder Gnome) du benutzt (oder benutzen möchtest) oder ob du nur offene und freie Programme (z. B. GIMP) oder auch unfreie Software (z. B. Google Earth) installieren möchtest."/>
+            <trail/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="1513.5" YPOS="389.48031496063" OwnPage="1" PTYPE="4" WIDTH="246" HEIGHT="162.75" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L246 0 L246 162.75 L0 162.75 L0 0 Z" copath="M0 0 L246 0 L246 162.75 L0 162.75 L0 0 L246 0 L246 162.75 L0 162.75 L0 0 Z" gXpos="0" gYpos="8.50393700787402" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" SCALEV="100" CH="Abschließend kannst du entweder die Bündelauswahl installieren oder aber eine ISO-Abbild-Datei erstellen um diese auf eine DVD zu brennen oder mit einem geeignetem Programm (z.B. usb-creator) auf einen USB-Stick zu kopieren."/>
+            <para/>
+            <para/>
+            <ITEXT FONT="Liberation Sans Regular" FONTSIZE="10" SCALEV="100" CH="Neu: Communtu Classic Edition – stelle dir deine auf dem gewohnten Ubuntu-Desktop (Gnome) basierende LiveCD oder DVD zusammen. Für alle, die (noch) nicht auf Unity umsteigen wollen oder die Gnome und Unity parallel verwenden möchten."/>
+            <trail/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="941.890393700792" YPOS="567.08787404252" OwnPage="0" PTYPE="2" WIDTH="842" HEIGHT="47.91338583" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Copy of background_bottom" LOCALSCX="0.24" LOCALSCY="0.24" LOCALX="0" LOCALY="-1.944225722" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="images/background_bottom.png" IRENDER="0" EMBEDDED="0" path="M0 0 L842 0 L842 47.9134 L0 47.9134 L0 0 Z" copath="M0 0 L842 0 L842 47.9134 L0 47.9134 L0 0 L842 0 L842 47.9134 L0 47.9134 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="1223.25" YPOS="80.25" OwnPage="1" PTYPE="6" WIDTH="510" HEIGHT="295.5" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" path="M0 0 L510 0 L510 295.5 L0 295.5 L0 0 Z" copath="M0 0 L510 0 L510 295.5 L0 295.5 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
+    </DOCUMENT>
+</SCRIBUSUTF8NEW>

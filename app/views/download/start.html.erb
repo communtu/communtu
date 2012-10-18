@@ -1,31 +1,177 @@
+<%= render_flash %>
 
-<table>
-    <tr>
-        <td><%= link_to(image_tag("64x64/download.png", :height => 60, :title =>t(:go_to_download), :alt=>t(:go_to_download), :border => "0"), "/download/selection?path=install") %></td>
-        <td><%= t(:search_programs_bundles).html_safe %> <%= link_to(t(:continue), "/download/selection?path=install") %></td>
-    </tr>
-    <tr>
-        <td colspan="2"><hr /></td>
-    </tr>
-    <tr>
-        <td><%= link_to(image_tag("64x64/usb.png", :height => 64, :width => 64, :title =>t(:create_your_usb), :alt=>t(:create_your_usb), :border => "0"), "/download/selection?path=usb") %></td>
+    <script type="text/javascript">
+    var total_items = 0;
+    var total_size = 0;
+	var bundles = new Array();
+    $j(document).ready(function() {
 
-        <td><%= t(:make_your_usb).html_safe %> <%= link_to(t(:continue), "/download/selection?path=usb") %></td>
-    </tr>
+        /* reset all items to original position */
+        $j(".item").draggable({
+            revert: true            
+        });
+		
+		/* items in the cart can be moved horizontally */
+        $j("#cart_items").draggable({
+            axis: "x"
+        });
 
-    <tr>
-        <td colspan="2"><hr /></td>
-    </tr>
+        /* turn the cart_items area into an area where items can be dropped */
+        $j("#cart_items").droppable({
+            accept: ".item",
+            activeClass: "drop-active",
+            hoverClass: "drop-hover",
+			/* callback function for the event that an item is dropped */
+            drop: function(event, ui) {
+                var item = ui.draggable.html();
+                var itemid = ui.draggable.attr("id");
+				/* is the item not yet in the cart? */
+				if (bundles.indexOf(itemid) == -1) {
+					bundles.push(itemid);
+                	var html = '<div class="item icart" id="'+itemid+'">';
+                	html = html + '<div class="divrm">';
+                	html = html + '<a onclick="myremove(this)" class="remove '+itemid+'">&times;</a>';
+                	html = html + '</div>'+item+'</div>';
+                	$j("#cart_items").append(html);
+                	// update total items
+                	total_items++;
+                	$j("#citem").html(total_items);
+                	// update total size
+                	var size = parseInt(ui.draggable.find(".size").html());
+                	total_size = total_size + size;
+                	$j("#csize").html(total_size);
+                	// expand cart items
+                	if (total_items > 4) {
+                    $j("#cart_items").animate({width: "+=120"}, 'slow');
+					}
+                }
+            }
+        });
+       
+        /* button moving items to the left */
+        $j("#btn_next").click(function() {
+            $j("#cart_items").animate({left: "-=100"}, 100);
+            return false;
+        });
+        /* button moving items to the right */
+        $j("#btn_prev").click(function() {
+            $j("#cart_items").animate({left: "+=100"}, 100);
+            return false;
+        });
+        /* button for clearing cart */
+        $j("#btn_clear").click(function() {
+            $j("#cart_items").fadeOut("2000", function() {
+               $j(this).html("").fadeIn("fast").css({left: 0});
+            });
+            $j("#citem").html("0");
+            $j("#csize").html("0");
+            total_items = 0;
+            total_size = 0;
+            return false;
+        });
+    });
+	
+	/* remove an item from the cart */
+    function myremove(el) {
+        var itemid = $j(el).parent().parent().attr("id");
+		var idx = bundles.indexOf(itemid); // Find the index
+        if(idx!=-1) bundles.splice(idx, 1); // Delete the id
+		$j(el).hide();
+        $j(el).parent().parent().effect("highlight", {color: "#ff0000"}, 1000);
+        $j(el).parent().parent().fadeOut('1000');
+        setTimeout(function() {
+            $j(el).parent().parent().remove();
+            // collapse cart items
+            if (total_items > 3) {
+                $j("#cart_items").animate({width: "-=120"}, 'slow');
+            }
+        }, 1100);
 
-    <tr>
-        <td><%= link_to(image_tag("64x64/cd.png", :height => 64, :width => 64, :title =>t(:create_your_livedvd), :alt=>t(:create_your_livedvd), :border => "0"), "/download/selection?path=cd") %></td>
+        // update total item
+        total_items--;
+        $j("#citem").html(total_items);
 
-        <td><%= t(:make_your_livedvd).html_safe %> <%= link_to(t(:continue), "/download/selection?path=cd") %></td>
-    </tr>
-    
+        // update totl size
+        var size = parseInt($j(el).parent().parent().find(".size").html());
+        total_size = total_size - size;
+        $j("#csize").html(total_size);
+    }
+    </script>
 
-    <tr>
-        <td colspan="2"><hr /></td>
-    </tr>
-</table>
+      <form action="">
+	<div id="leftarea">
+      <div id="item_container">
+      	<% for h in @main_bundles %>
+          <div class="item" id="<%= h[:id] %>">
+              <%= image_tag h[:img], :width => "40px"%>
+              <label class="title"><%= h[:name] %></label>
+              <label class="size"><%= h[:size] %></label> 
+          </div>
+		<% end %>
+          <div class="clear"></div>
+      </div>
 
+		<%= link_to "mehr Auswahl", "/download/bundles" %><br />
+		<br />
+		 <%= collection_select(:user, :distribution, Distribution.all, :id, :short_name, {}, :onchange => "download_save_settings();") %><br />
+		 <%= collection_select(:user, :derivative, Derivative.all, :id, :name, {}, :onchange => "download_save_settings();") %><br />
+		 <%= collection_select(:user, :architecture, Architecture.all, :id, :name, {}, :onchange => "download_save_settings();") %><br />
+		<%= link_to "Einstellungen", "/download/settings" %><br />
+	</div>
+	
+	<div id="centerarea">
+		<div id="cart_container">
+          <h3>
+              <span>Meine Zusammenstellung</span>
+              <div class="clear"></div>
+          </h3>
+          <div id="cart_toolbar">
+              <div id="cart_items" class="back"></div>
+          </div>
+          <div id="navigate">
+              <div id="nav_left">
+                  <a href="" id="btn_prev"><</a>
+                  <a href="" id="btn_next">></a>
+                  <a href="" id="btn_clear">Alle löschen</a>
+              </div>
+              <div id="nav_right">
+                  <span class="sptext">
+                      <label>Bündel </label><label class="count" id="citem">0</label>
+                  </span>
+                  <span class="sptext">
+                      <label>Größe </label><label class="count" id="csize">0</label>
+                  </span>
+              </div>
+              <div class="clear"></div>
+          </div>
+      </div>
+		<%= link_to "mehr Auswahl", "/download/bundles" %><br />
+	</div>
+	<div id="rightarea">
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<table><tr><td>
+          <%= image_tag "create/Buendel_gut_bunt.png", :width => "35px"%>
+		  </td>
+		  <td>
+		Name deiner <br />Ubuntu-Zusammenstellung: <br />
+          <%= text_field_tag(:name,current_user.login) %>
+		  </td></tr>
+		  </table>
+          <br />
+		Icon auswählen<br />  
+		Icon hochladen<br />  
+		Ubuntu schon installiert? <%= link_to "Los geht's", "/download/installation" %><br />
+		Neues Ubuntu erstellen <%= link_to "Los geht's", "/livecds/show" %><br />
+
+	</div>
+</form>

@@ -67,5 +67,12 @@ class Architecture < ActiveRecord::Base
       return a.name
     end
   end
+  def simple_name
+    case self.name
+      when "i386" then "32 bit"
+      when "amd64" then "64 bit"
+      when "all" then "alle Architekturen"
+    end
+  end
 
 end

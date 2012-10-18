@@ -16,9 +16,9 @@
 %>
 
 <div class="secondnavi">
-	<a href="/home/about"><%=t(:about_us)%></a> |
-	<a href="/home/news"><%=t(:news)%></a> |
-	<a href="/home/contact_us"><%=t(:view_layouts_application_31)%></a> |
-	<a href="/home/impressum"><%=t(:imprint)%></a> |
-        <a href="/articles"><%=t(:press_archiv)%></a>
+	<%= link_to t(:about_us), "/home/about" %> |
+	<%= link_to t(:news), "/home/news" %> |
+	<%= link_to t(:view_layouts_application_31), "/home/contact_us" %> |
+	<%= link_to t(:imprint), "/home/impressum" %> |
+        <%= link_to t(:press_archiv), "/articles" %>
 </div>

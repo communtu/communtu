@@ -18,7 +18,7 @@
 <div class="content1">
 <h3><%=t(:view_home_contact_us_0)%></h3>
 <p><%=t(:view_home_contact_us_1)%></p>
-<%= form_tag({:controller => :home, :action => :email}, :multipart => true)%>
+<%= form_tag("/home/email", :multipart => true)%>
 <p><%=t(:subject_without_colon)%>
 <% a = request.env['REQUEST_URI'] %>
 <% b = a.gsub("cat","") %>

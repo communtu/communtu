@@ -567,10 +567,10 @@ a.tt:hover span.tooltip{
 	width:200px;
 	color: #993300;
     	text-align: left;
-	filter: alpha(opacity:120);
+	/**filter: alpha(opacity:120);
 	KHTMLOpacity: 0.90;
 	MozOpacity: 0.90;
-	opacity: 0.90;
+	opacity: 0.90; **/
 	}
 a.tt:hover span.top{
 	display: block;
@@ -1119,11 +1119,12 @@ a.download:hover, a.download:active{
 	border:0 solid #FFFF00;
 	padding-bottom:0.4em;
 	padding-top:0.28em;
-	position:absolute;
+	float: right;
 	right:0.32em;
 	text-align:center;
 	top:0.8em;
 	width:12.5em;
+	height:2.6em;
 	z-index:2
 	}
 #register {

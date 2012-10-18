@@ -74,7 +74,11 @@ end
                     :length     => { :within => 3..40 },
                     :format     => { :with => Authentication.login_regex, :message => Authentication.bad_login_message }
 
-  validates :name,  :format     => { :with => Authentication.name_regex, :message => Authentication.bad_name_message },
+  validates :firstname,  :format     => { :with => Authentication.name_regex, :message => Authentication.bad_name_message },
+                    :length     => { :maximum => 100 },
+                    :allow_nil  => true
+                    
+  validates :surname,  :format     => { :with => Authentication.name_regex, :message => Authentication.bad_name_message },
                     :length     => { :maximum => 100 },
                     :allow_nil  => true
 
@@ -102,7 +106,7 @@ end
   # HACK HACK HACK -- how to do attr_accessible from here?
   # prevents a user from submitting a crafted form that bypasses activation
   # anything else you want your user to change should be added here.
-  attr_accessible :login, :email, :name, :password, :password_confirmation
+  attr_accessible :login, :email, :firstname, :surname, :password, :password_confirmation
 
   # Authenticates a user by their login name and unencrypted password.  Returns the user or nil.
   #
@@ -124,12 +128,7 @@ end
     write_attribute :email, (value ? value.downcase : nil)
   end
 
-  protected
-    
-  def make_activation_code
-        self.deleted_at = nil
-        self.activation_code = self.class.make_token
-  end
+
 
 ## below from Rails2 branch
 
@@ -246,13 +245,13 @@ end
   def remember_me_until(time)
     self.remember_token_expires_at = time
     self.remember_token            = encrypt("#{email}--#{remember_token_expires_at}")
-    save(false)
+    save(:validate=> false)
   end
  
   def forget_me
     self.remember_token_expires_at = nil
     self.remember_token            = nil
-    save(false)
+    save(:validate=> false)
   end
   
   def forgot_password
@@ -410,7 +409,7 @@ end
       return nil
     end
 
-    Dir.chdir RAILS_ROOT
+    Dir.chdir Rails.root.to_s
 
     name = BasePackage.debianize_name("communtu-add-sources-"+self.login)
     version = self.profile_version.to_s
@@ -435,7 +434,7 @@ end
   end
 
   def install_bundle_sources(bundle)
-    Dir.chdir RAILS_ROOT
+    Dir.chdir Rails.root.to_s
 
     name = BasePackage.debianize_name("communtu-add-sources-#{self.login}-#{bundle.name}")
     version = self.profile_version.to_s
@@ -454,7 +453,7 @@ end
   end
 
   def install_package_sources(package)
-    Dir.chdir RAILS_ROOT
+    Dir.chdir Rails.root.to_s
     repos = package.repositories_dist(self.distribution,self.architecture)
     Repository.close_deps(repos)
     name = BasePackage.debianize_name("communtu-add-sources-#{self.login}-#{package.name}")
@@ -478,7 +477,7 @@ end
       return nil
     end
 
-    Dir.chdir RAILS_ROOT
+    Dir.chdir Rails.root.to_s
 
     name = self.install_name
     version = self.profile_version.to_s
@@ -508,10 +507,10 @@ end
   def livecd(name,iso=false,kvm=false,usb=false)
     sources = self.install_sources
     if sources.nil? then return nil end
-    srcdeb = RAILS_ROOT + "/" + sources
+    srcdeb = Rails.root.to_s + "/" + sources
     install = self.install_bundle_as_meta
     if install.nil? then return nil end
-    installdeb = RAILS_ROOT + "/" + install
+    installdeb = Rails.root.to_s + "/" + install
     published = self.selected_packages.map(&:is_published?).all?
     cd = Livecd.create(:name => name, :distribution_id => self.distribution_id, 
                        :derivative_id => self.derivative_id, :architecture_id => self.architecture_id,
@@ -537,7 +536,7 @@ end
     cd = Livecd.find(:first,:conditions=>params)
     # if not, create one
     if cd.nil?
-      srcdeb = RAILS_ROOT + "/" + self.install_bundle_sources(bundle)
+      srcdeb = Rails.root.to_s + "/" + self.install_bundle_sources(bundle)
       deb_name = bundle.debian_name
       params1=params.clone
       params1.delete(:architecture_id)
@@ -575,8 +574,14 @@ end
   end
 
   protected
+      
+  def make_activation_code
+        self.deleted_at = nil
+        self.activation_code = self.class.make_token
+  end
   
   # before filter
+
   def encrypt_password
     return if password.blank?
     self.salt = Digest::SHA1.hexdigest("--#{Time.now.to_s}--#{login}--") if new_record?
@@ -596,7 +601,7 @@ end
   end
   
   def self.find_users(page)
-    User.find(:all, :page => {:size => 10, :current => page}, \
+    User.paginate(:page => page, \
         :conditions => {:anonymous => false, :enabled => true}, \
                        :order => "created_at asc")
   end

@@ -197,7 +197,7 @@ class Repository < ActiveRecord::Base
   # import repository info from the url
   def import_source(force=false)
     # need lock in order to ensur that only we mark things as outdated
-    safe_system "dotlockfile -r 1000 #{RAILS_ROOT}/repo_lock"
+    safe_system "dotlockfile -r 1000 #{Rails.root.to_s}/repo_lock"
     infos = {}
     first_run = true
     Architecture.all.each do |arch|
@@ -209,7 +209,7 @@ class Repository < ActiveRecord::Base
     # remove orphans
     PackageDistrsArchitecture.destroy_all(:outdated => true)
     PackageDistr.destroy_all(:outdated => true)
-    safe_system "dotlockfile -u #{RAILS_ROOT}/repo_lock"
+    safe_system "dotlockfile -u #{Rails.root.to_s}/repo_lock"
     return infos
   end
 

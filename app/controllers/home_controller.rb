@@ -15,7 +15,8 @@
 # along with Communtu.  If not, see <http://www.gnu.org/licenses/>.
 
 class HomeController < ApplicationController
-  
+ # before_filter :check_administrator_role, :flash => { :notice => I18n.t(:no_admin) }, 
+ #               :only => [:env]
   def title
     if params[:action] == "impressum"
       "Communtu: " + t(:imprint)
@@ -39,7 +40,7 @@ class HomeController < ApplicationController
   end
   protect_from_forgery :only => [:create, :update, :destroy] 
   
-  def home
+  def home_old
     @metapackges = Metapackage.find(:all,
       :select => "base_packages.*, avg(ratings.rating) AS rating",
       :joins => "LEFT JOIN ratings ON base_packages.id = ratings.rateable_id",
@@ -114,6 +115,12 @@ class HomeController < ApplicationController
 
   def faq
     @faq = true
+  end
+
+  def env
+  end
+
+  def home
   end
 
 end

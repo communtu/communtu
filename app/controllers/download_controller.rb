@@ -22,7 +22,7 @@ class DownloadController < ApplicationController
   before_filter :check_livecd_enabled, :only => [:create_livecd, :create_livecd_from_bundle]
 
   def title
-    if params[:controller] == "download" and params[:action] == "selection"
+    if params[:controller] == "download" and params[:action] == "bundles"
       "Communtu: " + t(:model_user_profile_tabz_1)
     elsif params[:controller] == "download" and params[:action] == "settings"
       "Communtu: " + t(:model_user_profile_tabz_4)
@@ -36,10 +36,18 @@ class DownloadController < ApplicationController
   helper :download
   
   def start
-    session[:path] = "installation"
+    if !logged_in?
+      do_anonymous_login(true)
+    end
+    @main_bundles = [{:img => "create/Multimedia_suess_bunt_hintergrundlos.png", :name =>"Multimedia", :size => 200, :id => 1},
+    {:img => "create/Grafik_bunt_hintergrundlos.png", :name =>"Grafik", :size => 300, :id => 2},
+    {:img => "create/Buero_bunt_hintergrundlos.png", :name =>"Büro", :size => 400, :id => 3},
+    {:img => "create/Spiele_hintergrundlos.png", :name => "Spiele", :size => 500, :id => 4},
+    {:img => "create/Filesharing.png", :name=> "Filesharing", :size => 600, :id => 5},
+    {:img => "create/Windows_verlassen_neu_bunt2.png", :name =>"Windows-Umstieg", :size => 700, :id => 6}]
   end
 
-  def selection
+  def bundles
     if !logged_in?
       do_anonymous_login(true)
     end
@@ -262,11 +270,8 @@ class DownloadController < ApplicationController
     @cd = current_user.current_livecd
     @back2 = !@cd.nil? and @cd.generated 
   end
-  
-  def livecd_new
-end
 
-def livecd_pro
+  def livecd_pro
     @categories=Category.all
     
     begin

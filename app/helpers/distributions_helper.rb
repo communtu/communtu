@@ -22,7 +22,7 @@ module DistributionsHelper
   #style=div-class
 
   def sync_link(repo)
-    link_to((tag "img", { :src => "/images/view-refresh.png", :width => "22", :height => "22",\
+    link_to((tag "img", { :src => "view-refresh.png", :width => "22", :height => "22",\
             :alt => t(:helper_distributions_2), :title => t(:helper_distributions_2),:class => "link_img"}),\
             { :controller => :repositories, :action => :sync_package, :id => repo.id})
   end
@@ -31,12 +31,12 @@ module DistributionsHelper
             { :controller => :repositories, :action => :force_sync, :id => repo.id})
   end
   def mig_link(repo)
-    link_to((tag "img", { :src => "/images/migrate.png", :width => "22", :height => "22",\
+    link_to((tag "img", { :src => "migrate.png", :width => "22", :height => "22",\
             :alt => t(:migrate_repository), :title => t(:migrate_repository),:class => "link_img"}) ,\
              "/repositories/migrate/#{repo.id}")
   end
   def del_link(repo)
-    link_to((tag "img", { :src => "/images/edit-delete.png", :width => "22", :height => "22",\
+    link_to((tag "img", { :src => "edit-delete.png", :width => "22", :height => "22",\
             :alt => t(:helper_distributions_6), :title => t(:helper_distributions_6), :class => "link_img"}) ,\
              "/repositories/destroy/#{repo.id}")
   end
@@ -67,7 +67,7 @@ module DistributionsHelper
               end
       #  pic = if repo.license_type == 0 then "Tux2.png" else "24-security-lock.png" end
         #title = if repo.license_type == 0 then t(:helper_distributions_0) else t(:helper_distributions_1) end
-        image = '<img border="0" height=24 src="/images/'+pic+'" title="'+title+'"/>'
+        image = '<img border="0" height=24 src="'+pic+'" title="'+title+'"/>'
         link = (link_to (repo.url + " " + repo.subtype), { :controller => :repositories, :action => :show,\
           :id => repo.id, :distribution_id => repo.distribution_id })
         if is_admin?
