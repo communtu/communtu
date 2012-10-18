@@ -43,31 +43,31 @@
   <link rel="alternate" type="application/rss+xml" title="RSS" href="http://de.communtu.org/infos/rss" />
 
 <div id="head">
-<%= link_to("", "/home/home", { :id => "headlinktohome", :title => "Communtu "+t(:homepage) }).html_safe %>
+<%= link_to("", "/home/home_new", { :id => "headlinktohome", :title => "Communtu "+t(:homepage) }).html_safe %>
 <!-- headlline -->
  <div id="headline">
   <span class="headfont"><%= t(:headline).html_safe %></span>
  </div> 
-	<div id="navihead">
-<%= link_to( (t(:community_title)+ 
+ <div id="navihead">
+	<%= link_to( (t(:community_title)+ 
              image_tag("nach_aussen_braun.gif", 
                        {:border => '0', 
                         :alt => t(:link_community_title), 
                         :class => "pfeil_link"}
                       )).html_safe , 
              t(:link_community), {:target => '_blank', :title => t(:link_community_title)} ) %> |
-<%= link_to(t(:homepage).html_safe, "/home/home") %> | 
-<%= link_to(t(:view_layouts_application_30).html_safe, "/home/faq") %> |
-<%= link_to(t(:board).html_safe, "http://forum.communtu.org", :popup=>true) %> | 
-<%= link_to(t(:view_layouts_donate).html_safe, "/home/donate") %> | 
-<% if I18n.locale.to_s == "en" %>
-<a href="http://de.communtu.org">Deutsch</a>
-<% else %>
-<a href="http://en.communtu.org">English</a>
-<% end %>
+	<%= link_to(t(:homepage).html_safe, "/home/home_new") %> | 
+	<%= link_to(t(:view_layouts_application_30).html_safe, "/home/faq") %> |
+	<%= link_to(t(:board).html_safe, "http://forum.communtu.org", :popup=>true) %> | 
+	<%= link_to(t(:view_layouts_donate).html_safe, "/home/donate") %> | 
+	<% if I18n.locale.to_s == "en" %>
+		<a href="http://de.communtu.org">Deutsch</a>
+	<% else %>
+		<a href="http://en.communtu.org">English</a>
+	<% end %>
 </div>
   <!-- Registrieren -->
-  <div id="register">
+<div id="register">
   <% if is_admin? %>
     <%= link_to(t(:view_layouts_application_32), "/categories") %>  | <% end %>
 
@@ -92,7 +92,7 @@
 	  <%= link_to t(:register), '/users/new' %> |
       <%= link_to t(:guest), '/users/anonymous_login' %>
     <% end %>
-  </div><!-- END register DIV -->
+</div><!-- END register DIV -->
 	
   <!--<div id=global_search>
   	<% form_tag "/search", :method => 'get' do %>
@@ -108,12 +108,12 @@
 <!-- mainnavigation -->
 <div id="navigation_bar">
 	<!-- button -->
-<% @style = if params[:controller] == "download" then "style='margin-top:10px'" else "" end %>	
-<div class="navigation" id="navi_download" <%= @style %>>
-	<%= link_to t(:view_layouts_application_24), "/download/start", :class => "navigation_link", :id => "navigationlink_download" %>
-</div>
+	<% @style = if params[:controller] == "download" then "style='margin-top:10px'" else "" end %>	
+	<div class="navigation" id="navi_download" <%= @style %>>
+		<%= link_to t(:view_layouts_application_24), "/download/start", :class => "navigation_link", :id => "navigationlink_download" %>
+	</div>
 
-<% if ((params[:controller] == "packages") or (params[:controller] == "users" and params[:action] == "metapackages") or (params[:controller] == "home" and params[:action] == "new_repository") or params[:controller] == "metapackages" or params[:controller] == "distributions" or params[:controller] == "repositories") 
+	<% if ((params[:controller] == "packages") or (params[:controller] == "users" and params[:action] == "metapackages") or (params[:controller] == "home" and params[:action] == "new_repository") or params[:controller] == "metapackages" or params[:controller] == "distributions" or params[:controller] == "repositories") 
      @style = "style='margin-top:10px'" 
    else
      @style = ""
@@ -147,8 +147,6 @@
 </div>
 <% end %>
 </div>
-<!-- content -->
-<div class="content">
 <!--
 <% if logged_in? %>
 <div align="right">
@@ -161,25 +159,16 @@
 <% end %>
 -->
 <% if navi_communtu %>	  
-<%= render(:partial => 'navi_communtu') %>
-<div class="content1"> 
-<% elsif params[:controller] == "articles" %>
 <%= render(:partial => 'home/navi_communtu') %>
-<div class="content1">
+<% elsif params[:controller] == "articles" %>
 <% elsif params[:action] == "metapackages" and params[:controller] == "users" %>
 <%= render(:partial => 'navi_bundle') %>
-<div class="content1">
 <% elsif ((params[:controller] == "packages") or (params[:controller] == "users" and params[:action] == "metapackages") or (params[:controller] == "home" and params[:action] == "new_repository") or params[:controller] == "metapackages" or params[:controller] == "distributions" or params[:controller] == "repositories") or ["install_bundle","install_package"].include?(session[:path]) %>
 <%= render(:partial => 'users/navi_bundle') %>
-<div class="content1">
 <% elsif ((params[:controller] == "users" and params[:action] != "metapackages" or params[:controller] == "categories" or params[:controller] == "debs" or params[:controller] == "roles") and is_admin?) %>
 <%= render(:partial => 'layouts/navi_admin') %>
-<div class="content1">
 <% elsif params[:action] == "home" %>
-<div class="contentstart">
 <% else %>
-<div class="content2">
-<% div_helper = 0 %>
 <% end %>
 <% #if cookies[:_communtu_session] == nil 
 %>
@@ -189,10 +178,12 @@
 <% flash[:error] %>
 </span>
 </div>-->
+
+<!-- content -->
+<div class="content">
+
 		<%= yield %>
-<% if div_helper != 1 %>
 </div>
-<% end %>
 <% ul = Userlog.new %>
 <% ul.refferer = request.env['REQUEST_URI'] %>
 <% if !current_user.nil? %>
