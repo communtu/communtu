@@ -28,7 +28,7 @@
 				/* is the item not yet in the cart? */
 				if (bundles.indexOf(itemid) == -1) {
 					bundles.push(itemid);
-                	var html = '<div class="item icart" id="'+itemid+'">';
+                	var html = '<div class="item icart" style="clear:both;width:5em" id="'+itemid+'">';
                 	html = html + '<div class="divrm">';
                 	html = html + '<a onclick="myremove(this)" class="remove '+itemid+'">&times;</a>';
                 	html = html + '</div>'+item+'</div>';
@@ -76,7 +76,7 @@
         var itemid = $j(el).parent().parent().attr("id");
 		var idx = bundles.indexOf(itemid); // Find the index
         if(idx!=-1) bundles.splice(idx, 1); // Delete the id
-		$j(el).hide();
+//		$j(el).hide();
         $j(el).parent().parent().effect("highlight", {color: "#ff0000"}, 1000);
         $j(el).parent().parent().fadeOut('1000');
         setTimeout(function() {
@@ -102,7 +102,7 @@
 	<div id="leftarea">
       <div id="item_container">
       	<% for h in @main_bundles %>
-          <div class="item" id="<%= h[:id] %>">
+          <div class="item" id="<%= h[:id] %>" style="width:5em;height:130px">
               <%= image_tag h[:img], :width => "40px"%>
               <label class="title"><%= h[:name] %></label>
               <label class="size"><%= h[:size] %></label> 
