@@ -61,32 +61,16 @@ class LivecdsController < ApplicationController
     if params[:id]=="show" then
       render 'show'
     else
-      @livecds = Livecd.where(:failed => false, :generated => true) #.select do |cd|
-#        File.exists?(cd.iso_image)
-#      end
-      @params = {}
-      if !params[:cd].nil? 
-        @distribution_id = params[:cd][:distribution]
-      end  
-      if !params[:cd].nil? 
-        @derivative = params[:cd][:derivative]
-      end  
-      if !params[:cd].nil? 
-        @architecture = params[:cd][:architecture]
-      end  
-      if ! @distribution_id.blank?
-          @livecds = @livecds.where(:distribution_id => @distribution_id)
-          @params[:distribution] = Distribution.find(@distribution_id)
+      if(!params[:cd].nil?)
+        @livecds = Livecd.scoped.where(:failed => false, :generated => true)
+        @livecds = @livecds.where(:distribution_id => params[:cd][:distribution]) if !params[:cd][:distribution].blank?
+        @livecds = @livecds.where(:derivative_id => params[:cd][:derivative]) if !params[:cd][:derivative].blank?
+        @livecds = @livecds.where(:architecture_id => params[:cd][:architecture]) if !params[:cd][:architecture].blank?
+
+        @livecds = @livecds.paginate(:page => params[:page], :per_page => 15).order('id DESC')
+      else
+        @livecds = Livecd.paginate(:page => params[:page], :per_page => 15).order('id DESC')
       end
-      if ! @derivative_id.blank?
-          @livecds = @livecds.where(:derivative_id => @derivative_id)
-          @params[:derivative] = Derivative.find(@derivative_id)
-      end
-      if ! @architecture_id.blank?
-          @livecds = @livecds.where(:architecture_id => @architecture_id)
-          @params[:architecture] = Architecture.find(@architecture_id)
-      end
-      @cd = Livecd.new(@params)
     end  
   end
 
