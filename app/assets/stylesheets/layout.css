@@ -1065,7 +1065,7 @@ a.download:hover, a.download:active{
 	position:relative;
 	top:-74px;
 	width:925px;
-	z-index:1;
+	z-index:0;
 	}
 .secondnavi a:link,.unternavi a:visited,.unternavi a:active{
 	color:#451B00;
