@@ -609,7 +609,7 @@ class MetapackagesController < ApplicationController
       @category = Category.first
     end  
       
-    @bundles = @category.metapackages
+    @bundles = @category.metapackages.paginate(:page => params[:page],:per_page => 12)
   end
 
 private

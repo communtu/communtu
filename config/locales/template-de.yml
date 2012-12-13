@@ -1,5 +1,9 @@
 ---
 de:
+  will_paginate:
+    previous_label: zurück
+    next_label: weiter
+    page_gap: ...
   Kommentar: 'Kommentar: '
   about_us: Über uns
   achtung: Achtung! bei Communtu erst in Kürze verfügbar.

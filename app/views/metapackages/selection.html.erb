@@ -6,6 +6,7 @@
 </div>
 <div id="bundles_column">
         <h2> Bündel </h2>
+        <%= will_paginate @bundles %>
         <% for b in @bundles do %>
                 <div class="bundle" id="<%= b.id %>" onmouseover="bundlePopup(this.id,<%=b.id%>)">
                         <%= image_tag "apps/Metapackage.png" , :size=>"80x80" %> <br />                      
