@@ -38,7 +38,7 @@ a:hover{
 	}
 
 ul li{
-	list-style-image:url(/images/liste-pfeil.gif);
+	list-style-image:url(../images/liste-pfeil.gif);
 	list-style-position:outside;
 	margin-left:-0.8em;
 	padding-left:0.3em;
@@ -222,13 +222,13 @@ th.profileTableHeading {
     	border-color: #ac873f;
 	border-right-style: solid;
 	border-right-width: 1px;
-	background-image: url(/images/table-head.png);
+	background-image: url(../images/table-head.png);
 	background-repeat: repeat-x;
 	}
 
 th.profileTableHeadingRight {
     	border-color: #ac873f;
-	background-image: url(/images/table-head.png);
+	background-image: url(../images/table-head.png);
 	background-repeat: repeat-x;
 	}
 
@@ -575,18 +575,18 @@ a.tt:hover span.tooltip{
 a.tt:hover span.top{
 	display: block;
 	padding: 30px 8px 0;
-    	background: url(/images/bubble.gif) no-repeat top;
+    	background: url(../images/bubble.gif) no-repeat top;
 	}
 a.tt:hover span.middle{ /* different middle bg for stretch */
 	display: block;
 	padding: 0 8px;
-	background: url(/images/bubble_filler.gif) repeat bottom;
+	background: url(../images/bubble_filler.gif) repeat bottom;
 	}
 a.tt:hover span.bottom{
 	display: block;
 	padding:3px 8px 10px;
 	color: #548912;
-    	background: url(/images/bubble.gif) no-repeat bottom;
+    	background: url(../images/bubble.gif) no-repeat bottom;
 	}
 
 /**************************************************/
@@ -598,7 +598,7 @@ a.tt:hover span.bottom{
         padding:0px;
         width: 125px;
         height: 30px;
-        background: url(/images/star2.gif) top left repeat-x;
+        background: url(../images/star2.gif) top left repeat-x;
     	}
 .star-ratings-block {
 	width: 125px;
@@ -611,7 +611,7 @@ a.tt:hover span.bottom{
         width: 125px;
         height: 25px;
         position: relative;
-        background: url(/images/star_trans.gif) top left repeat-x;
+        background: url(../images/star_trans.gif) top left repeat-x;
     	}
 .star-rating li{
         padding:0px;
@@ -631,7 +631,7 @@ a.tt:hover span.bottom{
         padding: 0px;
     	}
 .star-rating li a:hover{
-        background: url(/images/star_trans.gif) left center;
+        background: url(../images/star_trans.gif) left center;
         z-index: 2;
         left: 0px;
         border:none;
@@ -667,7 +667,7 @@ a.tt:hover span.bottom{
         width: 125px;
     	}
 .star-rating li.current-rating{
-        background: url(/images/star_trans.gif) left bottom;
+        background: url(../images/star_trans.gif) left bottom;
         position: absolute;
         height: 25px;
         display: block;
@@ -676,7 +676,7 @@ a.tt:hover span.bottom{
     }
 .star-rating li.current-rating-rated {
 	position: absolute;
-	background: url(/images/stars-rated.gif) repeat-x left bottom;
+	background: url(../images/stars-rated.gif) repeat-x left bottom;
 	height: 25px;
 	display: block;
 	text-indent: -9000px;
@@ -845,7 +845,7 @@ a.download:hover, a.download:active{
 	width:22em;
  	}
 .best_buendle ul li{
-	list-style-image:url(/images/star_trans.gif);
+	list-style-image:url(../images/star_trans.gif);
 	list-style-position:outside;
 	padding-bottom:0.1em;
  	}
@@ -860,7 +860,7 @@ a.download:hover, a.download:active{
 	width:22em;
  	}
 .best_livecd ul li{
-	list-style-image:url(/images/star_trans.gif);
+	list-style-image:url(../images/star_trans.gif);
 	list-style-position:outside;
 	padding-bottom:0.1em;
  	}
@@ -1058,7 +1058,7 @@ a.download:hover, a.download:active{
 /**************************************************/
 
 .secondnavi{
-	background-image:url(/images/communtu_unternavi.png);
+	background-image:url(../images/communtu_unternavi.png);
 	background-repeat:no-repeat;
 	height:4em;
 	left:0;
@@ -1178,7 +1178,7 @@ a.download:hover, a.download:active{
 	text-decoration: underline;
 	}
 #head{
-	background-image:url(/images/communtu_head.png);
+	background-image:url(../images/communtu_head.png);
 	background-repeat:no-repeat;
 	height:11.5em;
 	left:46px;
