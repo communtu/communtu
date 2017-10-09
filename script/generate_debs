@@ -1,6 +1,0 @@
-#!/bin/bash
-cd `/usr/bin/dirname "$0"`/..
-/usr/bin/touch log/generate_debs.log
-date >> log/generate_debs.log
-/usr/bin/rake db:repo:generate_debs RAILS_ENV=production >> log/generate_debs.log 2>&1
-echo "done" >> log/generate_debs.log

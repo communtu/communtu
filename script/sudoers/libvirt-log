@@ -1,2 +1,0 @@
-#!/bin/bash
-sudo tail -n 3 /var/log/libvirt/qemu/$1.log

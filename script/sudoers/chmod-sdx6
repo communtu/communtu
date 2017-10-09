@@ -1,4 +1,0 @@
-chmod 666 /dev/sda6
-chmod 666 /dev/sdb6
-chmod 666 /dev/sdc6
-chmod 666 /dev/sdd6
